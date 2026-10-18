@@ -10,7 +10,7 @@ export const MAINTAINER_EMAIL = 'info@guidasanita.it';
 // Statistiche senza cookie con GoatCounter: il nome scelto creando l'account su
 // goatcounter.com (es. 'guidasanita' → https://guidasanita.goatcounter.com).
 // Vuoto = non si conta niente.
-export const GOATCOUNTER_CODE = '';
+export const GOATCOUNTER_CODE = 'guidasanita';
 
 // Conta una pagina vista o un evento. Manda solo indirizzo della pagina, titolo e
 // sito di provenienza: niente risposte, niente dati scritti nei moduli.
