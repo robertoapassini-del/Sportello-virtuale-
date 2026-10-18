@@ -23,7 +23,7 @@ const INIZIO = { label: 'Inizio', href: 'index.html' };
 // Ogni pagina: file, area attiva nel menu, percorso (senza la pagina stessa).
 const pages = [
   { file: 'index.html', trail: [] },
-  ...['fonti.html', 'privacy.html', 'note-legali.html'].map((file) => ({ file, trail: [INIZIO] })),
+  ...['fonti.html', 'privacy.html', 'note-legali.html', 'numeri-utili/index.html'].map((file) => ({ file, trail: [INIZIO] })),
   ...reg.groups.map((g) => ({ file: `${g.page}/index.html`, area: g.id, trail: [INIZIO], group: g })),
   ...reg.modules.map((m) => {
     const g = groupById[m.group];

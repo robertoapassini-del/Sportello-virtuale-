@@ -39,6 +39,13 @@ Requisiti completi: [SPEC.md](SPEC.md).
 - Nei file `data/` le cose da verificare vanno **solo** nel campo `todo` (non viene mostrato). Un test
   controlla che nessun «TODO» arrivi agli utenti.
 
+## Regola per i numeri di telefono
+
+**Solo numeri e sedi confermati da una fonte ufficiale**, controllati anche per chiusure e traslochi, e
+ricontrollati ogni 3 mesi. Procedura completa: [docs/regola-numeri.md](docs/regola-numeri.md). Il test
+`tests/contatti.test.mjs` blocca i numeri senza pagina ufficiale, data o prova, e quelli controllati più di
+92 giorni fa.
+
 ## Provarlo sul tuo computer
 
 Le pagine leggono file JSON, quindi serve un piccolo server locale (aprire il file direttamente non funziona):
@@ -81,6 +88,7 @@ npm run test:combinazioni
 | `cure-palliative/`, `js/palliative.js` | Modulo 11: cure palliative, richiesta scritta |
 | `prevenzione/`, `js/prevenzione.js` | Modulo 12: screening e vaccini gratuiti per età |
 | `medico-famiglia/`, `js/medico.js` | Modulo 13: scelta del medico o del pediatra |
+| `numeri-utili/`, `js/numeri.js`, `data/numeri.json` | Numeri utili nazionali e, per provincia, i contatti dell'ASP (`contacts` in `asp-sicilia.json`) |
 | `js/flow.js` | Navigazione comune ai moduli nuovi (schermate, Indietro, Ascolta, Fonti) |
 | `js/engine.js` | Regole sulle date (funzioni pure, testate) |
 | `js/letters.js` | Modelli di lettera (DA VERIFICARE con il legale) |

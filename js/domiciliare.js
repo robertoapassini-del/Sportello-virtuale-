@@ -3,7 +3,7 @@
 // prepariamo un sollecito al distretto. Non chiediamo la malattia.
 import { todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
 import { genericRequest, mailtoHref } from './letters.js';
-import { noPecBox, esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton, personFields, reportErrorHref, generalContact } from './common.js';
+import { noPecBox, esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
 
 const ROOT = '../';
@@ -46,7 +46,80 @@ const screens = {
       <p class="lead say">Per chi non può muoversi, l'ASP manda a casa infermieri, fisioterapisti e medici. Si chiama assistenza domiciliare (ADI) ed è gratis.</p>
       <p class="say">Ti spieghiamo come chiederla e cosa fare se nessuno viene.</p>
       <button type="button" class="btn primary big" data-go="province">▶️ Comincia</button>
+      <button type="button" class="btn choice" data-go="tips"><span class="ico" aria-hidden="true">📋</span><span class="txt">Consigli pratici <small>Prelievo a casa, infermiere privato, uscita dall'ospedale, ossigeno, dialisi</small></span></button>
       <p class="muted say">Non salviamo niente. Non chiediamo la malattia.</p>`,
+  }),
+
+  // Consigli pratici: uguali in tutta la Sicilia, non serve la provincia.
+  tips: () => ({
+    html: `
+      <div class="hero" aria-hidden="true">📋</div>
+      <h1>Consigli pratici</h1>
+      <p class="lead say">Le cose da sapere per curare una persona a casa. Tocca un titolo per aprirlo.</p>
+
+      <details class="card">
+        <summary>🩹 Serve solo una medicazione o una puntura</summary>
+        <ul class="clean">
+          <li class="say">Per una cosa semplice (una medicazione, le iniezioni, il cambio del catetere) non serve tutta l'assistenza domiciliare: esistono le <strong>cure domiciliari di base</strong>, senza la visita della équipe.</li>
+          <li class="say">Si chiede sempre al <strong>medico di famiglia</strong>: manda lui la richiesta al distretto.</li>
+          <li class="say">Chiedi al medico se c'è qualcosa da pagare e quanto tempo ci vuole: cambia da una zona all'altra.</li>
+        </ul>
+      </details>
+
+      <details class="card">
+        <summary>🧪 Il prelievo del sangue a casa</summary>
+        <ul class="clean">
+          <li class="say"><strong>Con l'ASP:</strong> il medico di famiglia scrive sulla ricetta che la persona <strong>non può camminare e non può essere trasportata</strong>. Poi chiedi al medico o al PUA del distretto come mandarla. Ad Enna, per esempio, dal 2026 lo fa la Casa della Comunità.</li>
+          <li class="say"><strong>Da privato:</strong> con la ricetta, chiama un laboratorio (meglio se convenzionato con l'ASP) e chiedi se fa prelievi a casa. Di solito si paga a parte la venuta a casa, anche se sei esente dal ticket. Chiedi il prezzo prima.</li>
+        </ul>
+      </details>
+
+      <details class="card">
+        <summary>🧑 Prendere un infermiere privato</summary>
+        <ul class="clean">
+          <li class="say"><strong>Controlla che sia davvero infermiere:</strong> deve essere iscritto all'albo. Lo puoi vedere su internet: scegli la provincia e scrivi il nome. <a href="https://www.fnopi.it/gli-ordini-provinciali/ricerca-albo/" target="_blank" rel="noopener">💻 Cerca nell'albo degli infermieri (FNOPI)</a></li>
+          <li class="say"><strong>Chi fa cosa:</strong> l'<strong>infermiere</strong> fa punture, flebo, medicazioni e catetere. L'<strong>OSS</strong> (operatore socio-sanitario) aiuta a lavarsi, vestirsi e muoversi, ma non fa le cure. La <strong>badante</strong> fa compagnia e aiuta in casa.</li>
+          <li class="say"><strong>Puoi scaricare dalle tasse il 19%</strong> di quello che spendi per l'infermiere, anche senza ricetta. Servono due cose: la <strong>fattura</strong>, con scritto «infermiere» e cosa ha fatto, e il <strong>pagamento con carta, bancomat o bonifico</strong>. Se paghi in contanti, non puoi scaricarlo.</li>
+          <li class="say">Anche la badante si può scaricare, per chi non è autosufficiente e con alcuni limiti. Chiedi a un CAF o a un patronato.</li>
+        </ul>
+      </details>
+
+      <details class="card">
+        <summary>🏥 Prima di uscire dall'ospedale</summary>
+        <p class="say">Se la persona torna a casa e non è autonoma, chiedi al reparto la <strong>dimissione protetta</strong>: l'ospedale avvisa il distretto prima dell'uscita, così l'aiuto a casa parte subito. Prima di uscire chiedi:</p>
+        <ul class="clean">
+          <li class="say">la <strong>lettera di dimissione</strong>, con le medicine scritte bene: nome, quanto e a che ora;</li>
+          <li class="say">le <strong>prime medicine</strong> dalla farmacia dell'ospedale;</li>
+          <li class="say">le ricette per <strong>letto, materasso, carrozzina</strong>, cateteri, medicazioni e, se serve, <strong>ossigeno</strong>;</li>
+          <li class="say">le <strong>visite di controllo</strong> già prenotate;</li>
+          <li class="say">il <strong>nome e il telefono</strong> di chi seguirà la persona a casa;</li>
+          <li class="say">come tornare a casa, se la persona non cammina.</li>
+        </ul>
+      </details>
+
+      <details class="card">
+        <summary>🫁 L'ossigeno a casa</summary>
+        <ul class="clean">
+          <li class="say"><strong>Le bombole</strong> le può prescrivere anche il medico di famiglia, con la ricetta. Si prendono in farmacia.</li>
+          <li class="say"><strong>Per l'ossigeno ogni giorno</strong> (ossigeno liquido o apparecchio) serve il <strong>piano terapeutico</strong> dello specialista, di solito il pneumologo. Poi lo porta a casa la ditta scelta dall'ASP.</li>
+          <li class="say">Se l'ossigeno non arriva, chiama il servizio farmaceutico dell'ASP o l'URP.</li>
+        </ul>
+      </details>
+
+      <details class="card">
+        <summary>🚚 Il trasporto per la dialisi</summary>
+        <ul class="clean">
+          <li class="say">In Sicilia il trasporto per la dialisi lo <strong>paga l'ASP</strong>. Lo fanno associazioni e ditte iscritte in un elenco della Regione.</li>
+          <li class="say">Se vai con la tua auto, l'ASP ti <strong>rimborsa i chilometri</strong> da casa al centro dialisi.</li>
+          <li class="say">Serve un certificato del medico di famiglia. Chiedi al centro dialisi come fare la domanda.</li>
+          <li class="say">Per le altre visite, il trasporto in ambulanza è gratis solo nelle emergenze (112). Per una visita programmata, chiedi prima al distretto chi paga.</li>
+        </ul>
+        <p><a href="https://regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/dipartimento-pianificazione-strategica/altri-contenuti/albo-trasporto-emodializzati" target="_blank" rel="noopener">💻 Elenco della Regione per il trasporto dei dializzati</a></p>
+      </details>
+
+      <p class="say">Per i numeri del PUA e della guardia medica: <a href="../numeri-utili/index.html">📞 Numeri utili</a>.</p>
+      <button type="button" class="btn primary" data-go="province">▶️ Come chiedere l'assistenza a casa</button>
+      ${disclaimer(rules.last_verified)}`,
   }),
 
   province: () => ({
@@ -68,7 +141,7 @@ const screens = {
       <div class="hero" aria-hidden="true">👨‍⚕️</div>
       <h1>Si parte dal medico di famiglia</h1>
       ${steps()}
-      ${asp().phones.map((p) => callButton(p.label, p.number)).join('')}
+      ${aspCalls(asp(), ['casa'])}
       <p class="say">Quando la richiesta è partita, torna qui con la data: ti diciamo quando sollecitare.</p>
       ${disclaimer(rules.last_verified)}
       ${restartBtn()}`,
@@ -85,7 +158,7 @@ const screens = {
           <li class="say"><strong>Chiama il PUA del distretto</strong> e chiedi perché si è interrotta e quando riprende. Segnati nome e data.</li>
           <li class="say"><strong>Se non cambia niente:</strong> reclamo all'URP dell'ASP di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''}. Puoi usare la lettera qui sotto.</li>
         </ol>
-        ${a.phones.map((p) => callButton(p.label, p.number)).join('')}
+        ${aspCalls(a, ['casa'])}
         <button type="button" class="btn primary" data-go="letter">✍️ Scriviamo la lettera insieme</button>
         ${disclaimer(rules.last_verified)}`,
     };
@@ -131,7 +204,7 @@ const screens = {
           <li class="say"><strong>Chiedi al medico di famiglia</strong> di sollecitare anche lui: la sua telefonata pesa.</li>
           ${late ? `<li class="say"><strong>Manda un sollecito scritto</strong> al distretto e all'URP dell'ASP di ${esc(a.province)}. Lo scriviamo insieme.</li>` : ''}
         </ol>
-        ${a.phones.map((p) => callButton(p.label, p.number)).join('')}
+        ${aspCalls(a, ['casa'])}
         ${late ? '<button type="button" class="btn primary" data-go="letter">✍️ Scriviamo il sollecito insieme</button>' : ''}
         ${disclaimer(rules.last_verified)}`,
     };

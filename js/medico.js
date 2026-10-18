@@ -3,7 +3,7 @@
 import { medicoChoice, todayISO } from './engine.js';
 import { genericRequest, mailtoHref } from './letters.js';
 import {
-  noPecBox, esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, callButton, personFields, reportErrorHref, generalContact,
+  noPecBox, esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, aspCalls, officeBox, personFields, reportErrorHref, generalContact,
 } from './common.js';
 import { createFlow, choice, restartBtn, progress, letterButtons } from './flow.js';
 
@@ -41,6 +41,9 @@ function whoText() {
 }
 
 const ageBands = { '0-5': 2, '6-13': 10, '14-15': 14, '16+': 40 };
+
+// Sportelli «scelta e revoca» del distretto (contacts con topic «anagrafe»).
+const sportelli = (a) => officeBox(a, 'anagrafe', '📍 Gli sportelli «scelta e revoca»', 'Vai a quello del distretto dove abiti. Spesso è lo stesso sportello delle esenzioni dal ticket.');
 
 const screens = {
   intro: () => ({
@@ -92,6 +95,7 @@ const screens = {
         <h2 class="say">Dove si fa</h2>
         <p class="say">${esc(a.scelta_medico.how)}</p>
         ${a.scelta_medico.url ? `<a class="btn" href="${esc(a.scelta_medico.url)}" target="_blank" rel="noopener">💻 Sito dell'ASP</a>` : ''}
+        ${sportelli(a)}
         ${bring}
         <h2 class="say">Come scegliere</h2>
         <ul class="clean say">
@@ -99,7 +103,7 @@ const screens = {
           <li>Ogni medico può avere al massimo circa ${rules.max_patients_medico} pazienti, ogni pediatra circa ${rules.max_patients_pediatra}: se è pieno, non può prenderti.</li>
           <li>Chiedi a vicini e parenti, e guarda gli orari dello studio e se fa visite a casa.</li>
         </ul>
-        ${a.phones.map((p) => callButton(p.label, p.number)).join('')}
+        ${aspCalls(a)}
         ${disclaimer(rules.last_verified)}
         ${restartBtn()}`,
     };
@@ -119,7 +123,7 @@ const screens = {
           <li class="say"><strong>Se ancora niente: scrivi all'ASP.</strong> L'ASP deve garantire a tutti un medico o un pediatra. Prepariamo noi la lettera.</li>
         </ol>
         <button type="button" class="btn primary" data-go="letter">✍️ Scriviamo la lettera insieme</button>
-        ${a.phones.map((p) => callButton(p.label, p.number)).join('')}
+        ${sportelli(a) || aspCalls(a)}
         ${disclaimer(rules.last_verified)}`,
     };
   },

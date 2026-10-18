@@ -1,7 +1,7 @@
 {
   "region": "Sicilia",
   "last_verified": "2026-10-18",
-  "note": "PEC costruite sul formato standard INPS (direzione.provinciale.<città>@postacert.inps.gov.it). TODO-VERIFY ciascuna sulla pagina 'Sedi' di inps.it o su IndicePA prima del lancio.",
+  "note": "Indirizzi, orari e PEC delle direzioni provinciali dagli estratti delle pagine sedi di inps.it (18/10/2026): le PEC nel formato direzione.provinciale.<città>@postacert.inps.gov.it sono confermate. Per andare allo sportello si prenota (MyINPS, app, 803 164 / 06 164164) o alla «Prima accoglienza».",
   "sources": [
     {
       "label": "Dipartimento per le politiche in favore delle persone con disabilità – province della sperimentazione",
@@ -23,8 +23,12 @@
       "regime": "old",
       "regime_since": null,
       "pec": "direzione.provinciale.agrigento@postacert.inps.gov.it",
-      "address": null,
-      "status": "todo"
+      "address": "Via Picone 20/30, Agrigento",
+      "status": "ok",
+      "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.010000.010000-elencoStruttureInps.html",
+      "verified": "2026-10-18",
+      "proof": "estratto",
+      "pec_verified": true
     },
     {
       "id": "caltanissetta",
@@ -32,8 +36,12 @@
       "regime": "new",
       "regime_since": "2026-03-01",
       "pec": "direzione.provinciale.caltanissetta@postacert.inps.gov.it",
-      "address": null,
-      "status": "todo"
+      "address": "Via Senatore Giuseppe Alessi 14, Caltanissetta",
+      "status": "ok",
+      "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.180000.180000-elencoStruttureInps.html",
+      "verified": "2026-10-18",
+      "proof": "estratto",
+      "pec_verified": true
     },
     {
       "id": "catania",
@@ -41,8 +49,13 @@
       "regime": "new",
       "regime_since": "2026-03-01",
       "pec": "direzione.provinciale.catania@postacert.inps.gov.it",
-      "address": null,
-      "status": "todo"
+      "address": "Viale della Libertà 137, Catania",
+      "status": "ok",
+      "hours": "Dal lunedì al venerdì 8:30–12:30",
+      "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.210000.210000-elencoStruttureInps.html",
+      "verified": "2026-10-18",
+      "proof": "estratto",
+      "pec_verified": true
     },
     {
       "id": "enna",
@@ -50,8 +63,13 @@
       "regime": "old",
       "regime_since": null,
       "pec": "direzione.provinciale.enna@postacert.inps.gov.it",
-      "address": null,
-      "status": "todo"
+      "address": "Viale Diaz 23, Enna",
+      "status": "ok",
+      "hours": "Dal lunedì al venerdì 8:30–12:30",
+      "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.280000.280000-elencoStruttureInps.html",
+      "verified": "2026-10-18",
+      "proof": "estratto",
+      "pec_verified": true
     },
     {
       "id": "messina",
@@ -59,8 +77,13 @@
       "regime": "new",
       "regime_since": "2026-03-01",
       "pec": "direzione.provinciale.messina@postacert.inps.gov.it",
-      "address": null,
-      "status": "todo"
+      "address": "Via Vittorio Emanuele 100, Messina",
+      "status": "ok",
+      "hours": "Dal lunedì al venerdì 8:30–12:30",
+      "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.480000.480000-elencoStruttureInps.html",
+      "verified": "2026-10-18",
+      "proof": "estratto",
+      "pec_verified": true
     },
     {
       "id": "palermo",
@@ -68,8 +91,13 @@
       "regime": "new",
       "regime_since": "2025-09-30",
       "pec": "direzione.provinciale.palermo@postacert.inps.gov.it",
-      "address": null,
-      "status": "todo"
+      "address": "Via Laurana 59, Palermo",
+      "status": "ok",
+      "hours": "Dal lunedì al venerdì 8:30–12:30",
+      "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.550000.550000-elencoStruttureInps.html",
+      "verified": "2026-10-18",
+      "proof": "estratto",
+      "pec_verified": true
     },
     {
       "id": "ragusa",
@@ -77,8 +105,13 @@
       "regime": "old",
       "regime_since": null,
       "pec": "direzione.provinciale.ragusa@postacert.inps.gov.it",
-      "address": null,
-      "status": "todo"
+      "address": "Via Leonardo da Vinci 25, Ragusa",
+      "status": "ok",
+      "hours": "Dal lunedì al venerdì 8:30–12:30",
+      "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.650000.650000-elencoStruttureInps.html",
+      "verified": "2026-10-18",
+      "proof": "estratto",
+      "pec_verified": true
     },
     {
       "id": "siracusa",
@@ -86,8 +119,13 @@
       "regime": "old",
       "regime_since": null,
       "pec": "direzione.provinciale.siracusa@postacert.inps.gov.it",
-      "address": null,
-      "status": "todo"
+      "address": "Corso Gelone 90, Siracusa",
+      "status": "ok",
+      "hours": "Dal lunedì al venerdì 8:30–12:30",
+      "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.760000.760000-elencoStruttureInps.html",
+      "verified": "2026-10-18",
+      "proof": "estratto",
+      "pec_verified": true
     },
     {
       "id": "trapani",
@@ -95,8 +133,18 @@
       "regime": "old",
       "regime_since": null,
       "pec": "direzione.provinciale.trapani@postacert.inps.gov.it",
-      "address": null,
-      "status": "todo"
+      "address": "Via Scontrino 28, Trapani",
+      "status": "ok",
+      "hours": "Dal lunedì al venerdì 8:30–12:30",
+      "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.820000.820000-elencoStruttureInps.html",
+      "verified": "2026-10-18",
+      "proof": "estratto",
+      "pec_verified": true
     }
+  ],
+  "todo": [
+    "Palermo: dal 29/05/2025 il pubblico entrerebbe da via degli Orti, dietro via Laurana (solo giornale, LiveSicilia 27/05/2025): verificare.",
+    "Agrigento e Caltanissetta: orari non trovati.",
+    "Agenzia INPS di Caltagirone chiusa per lavori fino a maggio 2027 (solo giornale)."
   ]
 }

@@ -3,7 +3,7 @@
 // Scritto con delicatezza: spesso chi legge sta assistendo una persona molto malata.
 import { todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
 import { genericRequest, mailtoHref } from './letters.js';
-import { noPecBox, esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton, personFields, reportErrorHref, generalContact } from './common.js';
+import { noPecBox, esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
 
 const ROOT = '../';
@@ -71,7 +71,7 @@ const screens = {
       <div class="hero" aria-hidden="true">🤲</div>
       <h1>Come funziona</h1>
       ${whatIs()}
-      ${asp().phones.map((p) => callButton(p.label, p.number)).join('')}
+      ${aspCalls(asp(), ['palliative', 'casa'])}
       <button type="button" class="btn primary" data-go="letter">✍️ Prepara una richiesta scritta</button>
       ${disclaimer(rules.last_verified)}
       ${restartBtn()}`,
@@ -89,7 +89,7 @@ const screens = {
           <li class="say"><strong>Se è già seguita dalla rete</strong>, chiama il numero di reperibilità che vi hanno dato: serve anche per questo.</li>
         </ol>
         <div class="notice urgent"><p class="say">Se la situazione precipita, chiama il <a href="tel:112">112</a>.</p></div>
-        ${a.phones.map((p) => callButton(p.label, p.number)).join('')}
+        ${aspCalls(a, ['palliative', 'casa'])}
         ${whatIs()}
         ${disclaimer(rules.last_verified)}
         ${restartBtn()}`,
@@ -132,7 +132,7 @@ const screens = {
           <li class="say"><strong>Chiama l'ASP</strong> e chiedi il numero della rete cure palliative o dell'hospice della tua zona.</li>
           ${late ? `<li class="say"><strong>Manda una richiesta scritta</strong> all'ASP di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''}. La scriviamo insieme.</li>` : ''}
         </ol>
-        ${a.phones.map((p) => callButton(p.label, p.number)).join('')}
+        ${aspCalls(a, ['palliative', 'casa'])}
         ${late ? '<button type="button" class="btn primary" data-go="letter">✍️ Scriviamo la richiesta insieme</button>' : ''}
         ${disclaimer(rules.last_verified)}`,
     };

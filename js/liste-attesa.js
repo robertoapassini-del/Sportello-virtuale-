@@ -5,7 +5,7 @@
 import { checkWaiting, callbackDeadline, maxWaitDays, todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
 import { tutelaLetter, tutelaReminder, mailtoHref } from './letters.js';
 import { noPecBox,
-  esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton,
+  esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton, aspCalls,
   personFields, reportErrorHref, generalContact, choice, helpBox, listenButton, speakScreen, stopSpeaking, sourcesBox, moreHelp, hideHeadingEmoji,
 } from './common.js';
 import { RICETTA_SVG } from './ricetta-svg.js';
@@ -108,7 +108,7 @@ function aspSteps(a) {
   } else {
     sendBtn = '<button type="button" class="btn primary" data-go="letter">✍️ Scriviamo la lettera insieme</button>';
   }
-  const phones = a.phones.map((p) => callButton(p.label, p.number)).join('');
+  const phones = aspCalls(a);
 
   const contacts = [];
   for (const e of a.emails) contacts.push(`<li>Email: ${mailLink(e)}</li>`);

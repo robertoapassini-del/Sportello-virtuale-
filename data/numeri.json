@@ -1,0 +1,209 @@
+{
+  "name": "Numeri utili nazionali e regionali",
+  "last_verified": "2026-10-18",
+  "_note": "Campi mostrati agli utenti: title, what, hours, cost, number, url, url_label. Solo numeri confermati su fonte ufficiale o ospedaliera. Le cose da verificare vanno SOLO in 'todo' (non viene mostrato).",
+  "official_domains": [
+    "interno.gov.it",
+    "1522.eu",
+    "azzurro.it",
+    "telefonoamico.it",
+    "iss.it",
+    "uniticontrolaids.it",
+    "inps.it",
+    "sanita.finanze.it",
+    "regione.sicilia.it"
+  ],
+  "todo": "Da ricontrollare: 116117 in Sicilia (non attivo al 18/10/2026, D.A. 934/2026); 1500 Ministero e Filo d'Argento Auser 800 995988 (solo fonti secondarie, non pubblicati); orari di Telefono Amico (sito h24, comunicato 2025 9-24); orari del numero ISS dipendenze 800 940789. Centri antiveleni tolti dalla pagina il 18/10/2026 su richiesta: in Sicilia non c'è un CAV.",
+  "groups": [
+    {
+      "id": "urgenze",
+      "title": "Se stai male adesso",
+      "items": [
+        {
+          "title": "Emergenza: ambulanza, polizia, vigili del fuoco",
+          "number": "112",
+          "what": "È il numero unico per ogni emergenza. Funziona in tutta la Sicilia, anche da cellulare senza credito. Se chiami il 118 ti passano comunque al 112.",
+          "hours": "Sempre, giorno e notte",
+          "cost": "Gratis",
+          "url": "https://www.interno.gov.it/it/notizie/attivo-anche-palermo-numero-emergenza-unico-europeo-112",
+          "url_label": "Ministero dell'Interno – 112",
+          "verified": "2026-10-18",
+          "proof": "pagina"
+        }
+      ]
+    },
+    {
+      "id": "ascolto",
+      "title": "Per parlare con qualcuno",
+      "items": [
+        {
+          "title": "Violenza e stalking",
+          "number": "1522",
+          "what": "Per chi subisce violenza in casa o fuori, o è perseguitato. Rispondono donne preparate, anche in altre lingue. Non resta traccia sulla bolletta.",
+          "hours": "Sempre, giorno e notte",
+          "cost": "Gratis",
+          "url": "https://www.1522.eu",
+          "url_label": "1522.eu",
+          "verified": "2026-10-18",
+          "proof": "pagina"
+        },
+        {
+          "title": "Bambini in pericolo",
+          "number": "114",
+          "what": "Se un bambino o un ragazzo è in pericolo, anche su internet.",
+          "hours": "Sempre, giorno e notte",
+          "cost": "Gratis",
+          "url": "https://azzurro.it",
+          "url_label": "Telefono Azzurro",
+          "verified": "2026-10-18",
+          "proof": "pagina"
+        },
+        {
+          "title": "Telefono Azzurro: ascolto per ragazzi e genitori",
+          "number": "19696",
+          "what": "Per bambini, ragazzi e famiglie che hanno bisogno di parlare.",
+          "hours": "Sempre, giorno e notte",
+          "cost": "Gratis",
+          "url": "https://azzurro.it",
+          "url_label": "Telefono Azzurro",
+          "verified": "2026-10-18",
+          "proof": "pagina"
+        },
+        {
+          "title": "Telefono Amico: quando sei triste o solo",
+          "number": "02 2327 2327",
+          "what": "Volontari che ascoltano, anche se hai brutti pensieri. Non giudicano.",
+          "hours": "Controlla gli orari sul sito",
+          "cost": "Paghi solo la telefonata",
+          "url": "https://www.telefonoamico.it",
+          "url_label": "telefonoamico.it",
+          "verified": "2026-10-18",
+          "proof": "pagina"
+        },
+        {
+          "title": "Droghe, alcol, fumo, gioco d'azzardo",
+          "number": "800 940789",
+          "what": "Numero dell'Istituto Superiore di Sanità per tutte le dipendenze. Anche per i familiari. Non devi dire come ti chiami.",
+          "hours": "Dal lunedì al venerdì",
+          "cost": "Gratis",
+          "url": "https://www.iss.it/numeri-verdi",
+          "url_label": "ISS – numeri verdi",
+          "verified": "2026-10-18",
+          "proof": "pagina"
+        },
+        {
+          "title": "Smettere di fumare",
+          "number": "800 554088",
+          "what": "Ti dicono dove sono i centri antifumo gratuiti più vicini.",
+          "hours": "Dal lunedì al venerdì, 10–16",
+          "cost": "Gratis",
+          "url": "https://www.iss.it/numeri-verdi/-/asset_publisher/LXvuDqwiaG9G/content/id/3858513",
+          "url_label": "ISS – Telefono Verde contro il Fumo",
+          "verified": "2026-10-18",
+          "proof": "pagina"
+        },
+        {
+          "title": "AIDS e malattie sessuali",
+          "number": "800 861061",
+          "what": "Domande su test, contagio e cure. Non devi dire come ti chiami.",
+          "hours": "Dal lunedì al venerdì, 13–18",
+          "cost": "Gratis",
+          "url": "https://www.uniticontrolaids.it",
+          "url_label": "uniticontrolaids.it",
+          "verified": "2026-10-18",
+          "proof": "pagina"
+        }
+      ]
+    },
+    {
+      "id": "uffici",
+      "title": "Uffici e pratiche",
+      "items": [
+        {
+          "title": "INPS da telefono fisso",
+          "number": "803 164",
+          "what": "Invalidità, pensioni, assegni, a che punto è una domanda.",
+          "hours": "Operatore dal lunedì al venerdì 8–20, sabato 8–14",
+          "cost": "Gratis",
+          "url": "https://www.inps.it/it/it/sedi-e-contatti/contatti/contact-center-multicanale.html",
+          "url_label": "INPS – contatti",
+          "verified": "2026-10-18",
+          "proof": "pagina"
+        },
+        {
+          "title": "INPS da cellulare",
+          "number": "06 164164",
+          "what": "Lo stesso servizio, quando chiami dal cellulare.",
+          "hours": "Operatore dal lunedì al venerdì 8–20, sabato 8–14",
+          "cost": "Costa come una telefonata normale",
+          "url": "https://www.inps.it/it/it/sedi-e-contatti/contatti/contact-center-multicanale.html",
+          "url_label": "INPS – contatti",
+          "verified": "2026-10-18",
+          "proof": "pagina"
+        },
+        {
+          "title": "Tessera sanitaria persa o rovinata",
+          "number": "800 030 070",
+          "what": "Per chiedere una nuova tessera sanitaria o avere aiuto.",
+          "hours": "Dal lunedì al sabato, 8–20",
+          "cost": "Gratis",
+          "url": "https://sistemats1.sanita.finanze.it/portale/contatti",
+          "url_label": "Sistema Tessera Sanitaria",
+          "verified": "2026-10-18",
+          "proof": "pagina"
+        },
+        {
+          "title": "Regione Siciliana: numero verde per i cittadini",
+          "number": "800 894318",
+          "what": "Informazioni generali sugli uffici della Regione, anche sul Fascicolo sanitario elettronico.",
+          "hours": "",
+          "cost": "Gratis",
+          "url": "https://www.regione.sicilia.it/temi/salute",
+          "url_label": "Regione Siciliana – Salute",
+          "verified": "2026-10-18",
+          "proof": "pagina"
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "title": "Prenotare visite ed esami su internet",
+      "what": "Il sito della Regione per prenotare con la ricetta. Serve SPID o carta d'identità elettronica. In farmacia possono prenotare per te.",
+      "url": "https://sovracup.regione.sicilia.it/home",
+      "url_label": "SovraCUP Sicilia"
+    },
+    {
+      "title": "Fascicolo sanitario elettronico",
+      "what": "Qui trovi referti, ricette e vaccini. Serve SPID o carta d'identità elettronica.",
+      "url": "https://www.regione.sicilia.it/fascicolosanitario",
+      "url_label": "Fascicolo sanitario – Sicilia"
+    }
+  ],
+  "notes": [
+    "Il numero 116117 per la guardia medica in Sicilia non funziona ancora. Per la guardia medica usa il numero della tua zona: lo trovi sopra, scegliendo la tua provincia.",
+    "Farmacie di turno: non c'è un numero unico. Guarda il cartello sulla porta di qualsiasi farmacia, oppure il sito dell'Ordine dei farmacisti o di Federfarma della tua provincia."
+  ],
+  "sources": [
+    {
+      "label": "Ministero dell'Interno – 112 attivo in Sicilia",
+      "url": "https://www.interno.gov.it/it/notizie/attivo-anche-palermo-numero-emergenza-unico-europeo-112"
+    },
+    {
+      "label": "Regione Siciliana – D.A. n. 934 del 23/07/2026 (116117)",
+      "url": "https://www.regione.sicilia.it/index%2ephp/system/files/2026-08/D.A.%20n.934%20del%2023%20luglio%202026.pdf"
+    },
+    {
+      "label": "INPS – Contact center",
+      "url": "https://www.inps.it/it/it/sedi-e-contatti/contatti/contact-center-multicanale.html"
+    },
+    {
+      "label": "Sistema Tessera Sanitaria – contatti",
+      "url": "https://sistemats1.sanita.finanze.it/portale/contatti"
+    },
+    {
+      "label": "Istituto Superiore di Sanità – numeri verdi",
+      "url": "https://www.iss.it/numeri-verdi"
+    }
+  ]
+}

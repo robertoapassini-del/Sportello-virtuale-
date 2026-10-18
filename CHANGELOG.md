@@ -2,6 +2,50 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 18/10/2026 — sportelli «scelta e revoca» ed esenzioni
+- Topic `anagrafe` in `asp-sicilia.json` per tutte le 9 ASP (51 sportelli): compaiono nel modulo medico di famiglia e in «Numeri utili». Esclusi i dati in contrasto (elenco nei `todo`).
+- `scelta_medico` aggiornato: cambio medico online a Catania (ASPConTe), Messina (SPID), Trapani e Caltanissetta (sportello online con PIN), Ragusa (servizi online); Siracusa per email.
+- Agrigento: tolto l'ufficio protesi 0922 407568 (pagina 2022), che sulla pagina 2024 è il numero dell'anagrafe.
+
+## 18/10/2026 — uffici negli altri moduli: cartelle cliniche, screening, sedi INPS
+- Nuovo riquadro comune `officeBox` (`js/common.js`): mostra gli uffici di un argomento con indirizzo e orari, oppure niente se l'ASP non ha dati confermati.
+- **Cartella clinica:** uffici cartelle cliniche di 14 ospedali (topic `cartelle`), anche delle aziende ospedaliere (nuovo campo `official_domains` per i loro siti). Policlinico Catania e Policlinico Martino Messina: prima copia gratis.
+- **Prevenzione:** numero dello screening di 8 ASP su 9 (topic `screening`); Enna non pubblicato (estratto con numero sbagliato).
+- **Invalidità / Numeri utili:** sede INPS di ogni provincia (indirizzo, orari, pagina inps.it) in `inps-sicilia.json`; le 9 PEC `direzione.provinciale.<città>@postacert.inps.gov.it` sono confermate, tolta la nota «stiamo ancora controllando». Test anche per le sedi INPS.
+- **Medico di famiglia ed esenzione ticket:** pronti i riquadri per gli sportelli «scelta e revoca» (topic `anagrafe`); l'esenzione rimanda a «Numeri utili».
+- `npm run da-verificare` crea `docs/da-verificare.md`: i numeri da rileggere da una connessione italiana.
+
+## 18/10/2026 — uffici protesi e ausili; verifica di tutte le 9 ASP completata
+- **Uffici protesi e ausili** (`contacts`, topic `protesica`, con indirizzo e orari) per tutte le 9 ASP: compaiono nel modulo ausili («Dov'è l'ufficio protesi e ausili»: spiegazione iniziale, «20 giorni passati», «non consegnato») e in «Numeri utili». Esclusi i dati in contrasto (orari Catania, pannoloni Messina, indirizzo Nicosia, pomeriggio Bagheria) e quelli di attribuzione incerta: elenco nei `todo`.
+- Sotto ogni pulsante «Chiama» ora ci sono indirizzo e orari (`address`, `hours`).
+- **Nuovo tipo di prova `archivio`**: copia della pagina ufficiale su web.archive.org, con la data in `archived`.
+- **Ragusa:** tolto 800 296339 (fonte 2024); aggiunti guardia medica di Ragusa, PUA di Modica, Comiso, Vittoria.
+- **Siracusa:** CUP 0931 484848 → numero unico **0931 312525** (dal 20/09/2023); aggiunti centralino, URP di distretto, sedi dei PUA.
+- **Trapani:** PUA Marsala → 0923 717760 (Casa della Comunità, piazza Francesco Pizzo); Mazara → 0923 677267; Castelvetrano → 0924 930601; Alcamo → 0924 599542; URP della città di Trapani non pubblicato (tre numeri diversi).
+- **Agrigento:** «guardia medica» 0922 407758 era il pronto soccorso pediatrico → guardia medica di Agrigento 0922 407764, più San Leone e Giardina Gallotti; disdetta 0922 407699 confermata; «cabina di regia» 0922 407365 non esiste.
+- **Caltanissetta:** tolto 0934 506666 (nessuna fonte); URP 0934 506126; PUA di San Cataldo, Gela, Mussomeli.
+- **Enna:** guardia medica di Enna spostata il 14/02/2025 in via Trieste (vecchio Umberto I), 0935 500896; aggiunti centralino, URP, PUA 0935 520559. WhatsApp CUP non pubblicato (solo giornali).
+
+## 18/10/2026 — regola dei numeri e verifica di tutte le ASP
+- **Nuova regola** [docs/regola-numeri.md](docs/regola-numeri.md): solo numeri da fonte ufficiale o confermati per telefono; per ogni numero si cercano anche chiusure e traslochi; ricontrollo ogni 3 mesi. Ogni numero ha `url`, `verified`, `proof` (`telefono` / `pagina` / `estratto`). Il test `tests/contatti.test.mjs` fallisce se mancano, se l'url non è ufficiale o se il controllo ha più di 92 giorni.
+- I siti di molte ASP **bloccano chi si collega dall'estero** (verificato con check-host.net da Milano: tutti e 9 rispondono dall'Italia). Dove non si leggono, si usa l'estratto della ricerca (`proof: "estratto"`), da confermare per telefono.
+- **Tolti i centri antiveleni** dalla pagina «Numeri utili»: in Sicilia non c'è un centro antiveleni.
+- **Palermo** (pagine lette): numeri confermati; aggiunti i PUA di Carini (Casa di Comunità di via Ponticelli), Partinico, Termini Imerese, Misilmeri, Corleone, Lercara Friddi, Petralia Sottana.
+- **Catania** (estratti): CUP 800 954414 dal 12/01/2026 lun–ven 8–16:45, sabato chiuso (aspct.it news 25833); tasto 2 per classi U e B confermato; orari URP tolti perché due pagine ASP non coincidono.
+- **Messina** (estratti): tolti 090 3653440 (legato sia a via Saffi chiusa sia a via del Vespro) e guardia medica centro 090 45077 (un avviso ASP dà via Sacra Famiglia 7, 090 2932510); cure palliative a casa 090 3652097: dal 25/03/2026 l'ufficio non riceve di persona.
+
+## 18/10/2026 — Messina: PUA trasferito in via del Vespro
+- La Casa di Comunità di via Saffi 2 ha chiuso il 30/05/2026: PUA, assistenza infermieristica e ambulatori sono alla Casa di Comunità di via del Vespro (piano terra). Nuovi contatti: **PUA Messina Nord, via del Vespro 14, 090 3653510** (lun–ven 8:30–12, lun e mer 15–17; pagina del Distretto di Messina) e **Casa della Comunità di via del Vespro 14, 090 3653440** (il numero è passato alla nuova sede; pagina contatti dell'ASP). `pua_url` punta alla pagina del Distretto. Letti dall'estratto di ricerca perché il sito ASP non si apriva: da confermare con una telefonata.
+- Fonti: https://old.asp.messina.it/?p=497924 · https://www.asp.messina.it/?page_id=249137 · https://www.asp.messina.it/asp-contatti/
+
+## 18/10/2026 — numeri utili e consigli pratici per l'aiuto a casa
+- **Nuova pagina «Numeri utili»** (`numeri-utili/`, `js/numeri.js`, `data/numeri.json`): 112, 1522, 114, 19696, Telefono Amico, ISS (dipendenze 800 940789, fumo, AIDS), INPS, tessera sanitaria, numero verde della Regione; poi la provincia e i numeri della propria ASP divisi per argomento, ognuno con il link alla pagina ufficiale. Link dal riquadro «Chi può aiutarti», dai moduli e dalla ricerca (non nella pagina iniziale).
+- **116117 non attivo in Sicilia** (D.A. n. 934 del 23/07/2026): lo diciamo. Non c'è un numero unico per guardia medica né per le farmacie di turno.
+- **`asp-sicilia.json`: nuovi campi** `contacts` (topic: cup, urp, centralino, guardia, casa, palliative; con orari e url), `site_url`, `guardia_medica_url`, `pua_url`. I campi `phones` non cambiano. Numeri presi dai siti ufficiali delle ASP (alcuni siti non si aprivano: in quel caso dall'estratto della pagina ufficiale); quelli trovati solo sui giornali non sono pubblicati e sono in `todo`.
+- I moduli che mostrano i numeri dell'ASP usano `aspCalls` (`js/common.js`): ADI mostra anche i PUA, cure palliative anche reti e hospice; sotto c'è il link «Tutti i numeri dell'ASP».
+- **Assistenza domiciliare: schermata «Consigli pratici»**: medicazione o puntura (cure domiciliari di base), prelievo a casa, infermiere privato (albo FNOPI, infermiere/OSS/badante, detrazione 19% con fattura e pagamento tracciabile), dimissione protetta, ossigeno, trasporto per la dialisi.
+- Da verificare (in `todo`/`notes_internal`): numeri di Enna (sito irraggiungibile), centralino di Ragusa e Siracusa, URP di Trapani, 0922 407699 e 0922 407365 di Agrigento; ticket per prelievo e prestazioni a domicilio; chi paga l'ambulanza per le visite programmate.
+
 ## 18/10/2026 — cartella clinica: 7 giorni
 - `rules-cartella.json`: `deadline_days` da 30 a **7** (L. 24/2017 «legge Gelli», art. 4, comma 3: la direzione sanitaria fornisce la documentazione disponibile entro 7 giorni; le integrazioni entro 30, nuovo campo `integration_days`).
 - Il ricorso al TAR resta sull'art. 25 L. 241/1990 (silenzio dopo 30 giorni, poi 30 giorni per il ricorso).
