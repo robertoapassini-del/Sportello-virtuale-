@@ -228,3 +228,5 @@ main { overflow-wrap: anywhere; }
 details.fonti { margin: 12px 0 8px; padding: 10px 16px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border); font-size: 0.9rem; }
 details.fonti ul { margin: 8px 0; }
 details.fonti li { margin: 8px 0; }
+ul.icon-list li > :not(.ico) { flex: 1 1 auto; min-width: 0; }
+ul.icon-list li > strong { flex: 0 1 auto; }

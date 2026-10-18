@@ -1,0 +1,28 @@
+{
+  "name": "Regole per l'esenzione dal ticket per reddito (visite ed esami)",
+  "last_verified": "2026-10-18",
+  "income_year_note": "Il reddito è quello complessivo del nucleo familiare dell'anno precedente, lordo (quello che c'è sulla dichiarazione dei redditi o sulla CU).",
+  "codes": {
+    "E01": { "label": "Bambini sotto i 6 anni e persone sopra i 65 anni", "income_max": 36151.98 },
+    "E02": { "label": "Disoccupati iscritti al centro per l'impiego, e familiari a carico", "income_base": 8263.31, "income_with_spouse": 11362.05, "income_per_child": 516.46 },
+    "E03": { "label": "Chi ha l'assegno sociale (o la pensione sociale), e familiari a carico", "income_max": null },
+    "E04": { "label": "Chi ha più di 60 anni con la pensione al minimo, e familiari a carico", "income_base": 8263.31, "income_with_spouse": 11362.05, "income_per_child": 516.46 }
+  },
+  "valid_until": "31 marzo dell'anno dopo",
+  "other_exemptions": [
+    { "code": "C01", "text": "Invalidità civile al 100%: non paghi il ticket per visite ed esami." },
+    { "code": "C02", "text": "Invalidità civile dal 67% al 99%: non paghi il ticket per visite ed esami." },
+    { "code": "C03", "text": "Minore con indennità di frequenza: non paghi il ticket per visite ed esami." },
+    { "code": "0xx", "text": "Malattia cronica nell'elenco del Ministero (per esempio diabete, ipertensione grave, asma): non paghi le visite e gli esami per quella malattia. La chiede il medico, la rilascia l'ASP." },
+    { "code": "048", "text": "Tumore: non paghi visite ed esami legati alla malattia e ai controlli." },
+    { "code": "M", "text": "Gravidanza: visite ed esami del percorso nascita gratuiti." },
+    { "code": "D", "text": "Esami di prevenzione (screening) nelle fasce di età previste: gratuiti." }
+  ],
+  "notes_internal": "TODO-VERIFY: soglie aggiornate (DM 11/12/2009; art. 8 c. 16 L. 537/1993) e codici C01-C03 con il legale/ASP. In Sicilia l'esenzione farmaci per reddito ha regole regionali: non calcolarla.",
+  "sources": [
+    { "label": "Ministero della Salute – Esenzioni per reddito (E01, E02, E03, E04)", "url": "https://www.salute.gov.it" },
+    { "label": "L. 537/1993, art. 8, comma 16 (esenzione per reddito)", "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1993-12-24;537" },
+    { "label": "Sistema Tessera Sanitaria – esenzioni per reddito", "url": "https://sistemats1.sanita.finanze.it" },
+    { "label": "Regione Siciliana – Assessorato della Salute", "url": "https://www.regione.sicilia.it" }
+  ]
+}

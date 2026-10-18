@@ -202,3 +202,46 @@ test('scadenza semplice (cartella clinica 30 giorni, ausili 20 giorni)', async (
   const l2 = ausiliReminder({ aspName: 'Palermo', person: { fullName: 'Maria Rossi', isDelegate: true, delegateName: 'Luca' }, device: 'carrozzina', requestDate: '2026-09-20', deadline: '2026-10-10', today: '2026-10-18' });
   assert.match(l2, /carrozzina/); assert.match(l2, /10\/10\/2026/); assert.match(l2, /Luca/); assert.match(l2, /DPCM 12\/01\/2017/);
 });
+
+test('mesi e euro', async () => {
+  const { addMonths, formatEuro } = await import('../js/engine.js');
+  assert.equal(addMonths('2026-04-18', 6), '2026-10-18');
+  assert.equal(addMonths('2026-08-31', 6), '2027-02-28'); // il 31 febbraio non esiste
+  assert.equal(addMonths('2027-08-31', 6), '2028-02-29'); // anno bisestile
+  assert.equal(addMonths('2026-10-18', 6), '2027-04-18');
+  assert.equal(formatEuro(36151.98), '36.151,98 €');
+});
+
+test('esenzione ticket per reddito', async () => {
+  const { esenzioneReddito } = await import('../js/engine.js');
+  const r = load('../data/rules-esenzione.json');
+  const e = (o) => esenzioneReddito(r, o);
+  assert.deepEqual(e({ ageBand: 'over65', status: 'none', income: 36151.98 }).codes, ['E01']); // uguale alla soglia: sì
+  assert.deepEqual(e({ ageBand: 'over65', status: 'none', income: 36151.99 }).codes, []);      // un centesimo in più: no
+  assert.deepEqual(e({ ageBand: 'under6', status: 'none', income: 20000 }).codes, ['E01']);
+  assert.deepEqual(e({ ageBand: '6to59', status: 'none', income: 1000 }).codes, []);
+  assert.deepEqual(e({ ageBand: '6to59', status: 'disoccupato', income: 8263.31 }).codes, ['E02']);
+  assert.deepEqual(e({ ageBand: '6to59', status: 'disoccupato', income: 8263.32 }).codes, []);
+  assert.deepEqual(e({ ageBand: '6to59', status: 'disoccupato', spouse: true, income: 11362.05 }).codes, ['E02']);
+  assert.deepEqual(e({ ageBand: '6to59', status: 'disoccupato', spouse: true, children: 2, income: 11362.05 + 2 * 516.46 }).codes, ['E02']);
+  assert.deepEqual(e({ ageBand: '6to59', status: 'disoccupato', spouse: false, children: 1, income: 8263.31 + 516.46 + 0.01 }).codes, []);
+  assert.deepEqual(e({ ageBand: '6to59', status: 'sociale', income: 99999 }).codes, ['E03']);      // senza limite di reddito
+  assert.deepEqual(e({ ageBand: '60to65', status: 'minimo', income: 8000 }).codes, ['E04']);
+  assert.deepEqual(e({ ageBand: '6to59', status: 'minimo', income: 8000 }).codes, []);            // E04 solo sopra i 60
+  assert.deepEqual(e({ ageBand: 'over65', status: 'minimo', income: 8000 }).codes, ['E01', 'E04']);
+  const m = e({ ageBand: 'over65', status: 'disoccupato', income: null });
+  assert.deepEqual(m.codes, []); assert.deepEqual(m.maybe, ['E01', 'E02']);
+  assert.equal(m.thresholds.E01, 36151.98);
+});
+
+test('ricorso: 6 mesi dal verbale', async () => {
+  const { ricorsoDeadline } = await import('../js/engine.js');
+  const r = load('../data/rules-ricorso.json');
+  assert.equal(r.appeal_months, 6);
+  const a = ricorsoDeadline(r, { verbaleDate: '2026-04-18', today: '2026-10-18' });
+  assert.equal(a.deadline, '2026-10-18'); assert.equal(a.status, 'waiting'); assert.equal(a.daysLeft, 0);
+  assert.equal(ricorsoDeadline(r, { verbaleDate: '2026-04-17', today: '2026-10-18' }).status, 'passed');
+  assert.equal(ricorsoDeadline(r, { verbaleDate: '2026-10-01', today: '2026-10-18' }).daysLeft, 165);
+  assert.equal(ricorsoDeadline(r, { verbaleDate: '2026-12-01', today: '2026-10-18' }).error, 'future');
+  for (const s of [...r.sources, ...load('../data/rules-esenzione.json').sources]) assert.match(s.url, /^https:\/\//);
+});

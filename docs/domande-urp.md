@@ -123,6 +123,12 @@ Oggi sul sito (verificato): modulo ufficiale per email a percorsoditutela@asppal
 23. Rispettate i 20 giorni per l'autorizzazione? Se passano senza risposta, considerate l'autorizzazione concessa (silenzio-assenso)?
 24. Quanti giorni ha il fornitore per consegnare, da contratto? E per i pannoloni e le traverse, la consegna è a casa?
 
+**Esenzione ticket (modulo 5)**
+
+25. Dov'è lo sportello esenzioni? Serve appuntamento? L'autocertificazione per reddito si può fare online?
+26. Le esenzioni per reddito arrivano automaticamente dal Sistema Tessera Sanitaria o le rilasciate voi?
+27. Per i farmaci, in Sicilia, l'esenzione per reddito come funziona? Quali codici?
+
 ---
 
 ## 3. INPS — invalidità civile
@@ -136,6 +142,8 @@ Gli indirizzi PEC sul sito sono stati costruiti sul formato standard dell'INPS: 
 3. Nelle province con la procedura vecchia (visita della commissione ASP), il sollecito va all'**INPS** o alla **commissione medico-legale dell'ASP**?
 4. Nella procedura vecchia, c'è una regola su **entro quanti giorni** deve arrivare la chiamata alla visita (non oncologici)?
 5. Agrigento, Enna, Ragusa, Siracusa e Trapani passano alla nuova procedura INPS il **1° gennaio 2027**: è confermato?
+
+6. Il termine di 6 mesi per il ricorso contro il verbale vale anche con la nuova procedura (D.Lgs. 62/2024)? Da quando si conta: dal ricevimento della raccomandata o della PEC?
 
 **PEC da confermare**
 

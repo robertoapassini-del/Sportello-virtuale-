@@ -6,6 +6,8 @@ Sito gratuito che aiuta le persone in Sicilia a far valere i tempi massimi di at
 - **Modulo 2 – Invalidità civile:** la visita per l'invalidità non arriva entro i tempi di legge.
 - **Modulo 3 – Cartella clinica e referti:** l'ospedale non consegna la copia entro 30 giorni (L. 241/1990).
 - **Modulo 4 – Ausili e protesi:** l'ASP non autorizza carrozzina, letto, pannoloni ecc. entro 20 giorni (DPCM 12/01/2017).
+- **Modulo 5 – Esenzione ticket:** calcolo dell'esenzione per età e reddito (codici E01–E04) e come ottenerla.
+- **Modulo 6 – Ricorso invalidità:** 6 mesi dal verbale per il ricorso; quanto tempo resta e cosa fare.
 
 Requisiti completi: [SPEC.md](SPEC.md).
 
@@ -58,6 +60,8 @@ npm run test:combinazioni
 | `invalidita/`, `js/invalidita.js` | Modulo 2: scadenza, sollecito all'INPS, cosa portare |
 | `cartella-clinica/`, `js/cartella.js` | Modulo 3: scadenza 30 giorni, sollecito all'ospedale |
 | `ausili/`, `js/ausili.js` | Modulo 4: scadenza 20 giorni, sollecito all'ASP, consegna |
+| `esenzione-ticket/`, `js/esenzione.js` | Modulo 5: calcolo esenzione per reddito |
+| `ricorso-invalidita/`, `js/ricorso.js` | Modulo 6: scadenza di 6 mesi per il ricorso |
 | `js/flow.js` | Navigazione comune ai moduli nuovi (schermate, Indietro, Ascolta, Fonti) |
 | `js/engine.js` | Regole sulle date (funzioni pure, testate) |
 | `js/letters.js` | Modelli di lettera (DA VERIFICARE con il legale) |

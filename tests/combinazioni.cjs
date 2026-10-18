@@ -127,6 +127,39 @@ for (const m of M34) {
   }
 }
 
+// Modulo 5: esenzione ticket (calcolo indipendente dal sito).
+const ESE = JSON.parse(fs.readFileSync(path.join(DATA, 'rules-esenzione.json'), 'utf8')).codes;
+function expectedCodes({ ageBand, status, spouse, children, income }) {
+  const fam = (k) => ESE[k].income_base + (spouse ? ESE[k].income_with_spouse - ESE[k].income_base : 0) + ESE[k].income_per_child * children;
+  const codes = [], maybe = [];
+  const has = income !== null;
+  if (ageBand === 'under6' || ageBand === 'over65') (has ? (income <= ESE.E01.income_max && codes.push('E01')) : maybe.push('E01'));
+  if (status === 'disoccupato') (has ? (income <= fam('E02') && codes.push('E02')) : maybe.push('E02'));
+  if (status === 'sociale') codes.push('E03');
+  if (status === 'minimo' && (ageBand === '60to65' || ageBand === 'over65')) (has ? (income <= fam('E04') && codes.push('E04')) : maybe.push('E04'));
+  return { codes, maybe, fam };
+}
+const AGE = { under6: /^Meno di 6/, '6to59': /^Da 6 a 59/, '60to65': /^Da 60 a 65/, over65: /^Più di 65/ };
+const STATUS = { disoccupato: /^Disoccupato/, sociale: /assegno sociale/, minimo: /pensione al minimo/, none: /^Nessuna di queste/ };
+for (const ageBand of Object.keys(AGE)) for (const status of Object.keys(STATUS)) for (const spouse of [false, true]) for (const children of [0, 2]) {
+  const { fam } = expectedCodes({ ageBand, status, spouse, children, income: 0 });
+  const incomes = new Set([null, 0, 5000, 36151.98, 36151.99, 100000, fam('E02'), fam('E02') + 1]);
+  for (const income of incomes) {
+    const exp = expectedCodes({ ageBand, status, spouse, children, income });
+    cases.push({ mod: 5, name: `ESE ${ageBand} · ${status} · coniuge ${spouse} · figli ${children} · reddito ${income}`, ageBand, status, spouse, children, income, exp });
+  }
+}
+// Modulo 6: ricorso entro 6 mesi.
+const addM = (iso, n) => { const [y, m, d] = iso.split('-').map(Number); const t = new Date(Date.UTC(y, m - 1 + n, 1)); const last = new Date(Date.UTC(t.getUTCFullYear(), t.getUTCMonth() + 1, 0)).getUTCDate(); t.setUTCDate(Math.min(d, last)); return t.toISOString().slice(0, 10); };
+cases.push({ mod: 6, name: 'RIC · senza verbale', path: 'notyet', expectH1: 'Prima serve il verbale' });
+cases.push({ mod: 6, name: 'RIC · verbale oggi', verbale: TODAY, expectH1: 'Sei ancora in tempo', deadline: addM(TODAY, 6) });
+cases.push({ mod: 6, name: 'RIC · verbale 5 mesi fa (31 giorni: non urgente)', verbale: addM(TODAY, -5), expectH1: 'Sei ancora in tempo', deadline: addM(TODAY, 1) });
+cases.push({ mod: 6, name: 'RIC · mancano 10 giorni (urgente)', verbale: add(addM(TODAY, -6), 10), expectH1: 'Muoviti subito: manca poco', deadline: add(TODAY, 10) });
+cases.push({ mod: 6, name: 'RIC · scade oggi', verbale: addM(TODAY, -6), expectH1: 'Muoviti subito: manca poco', deadline: TODAY, today: true });
+cases.push({ mod: 6, name: 'RIC · scaduto ieri', verbale: add(addM(TODAY, -6), -1), expectH1: 'I 6 mesi sono passati', deadline: add(TODAY, -1) });
+cases.push({ mod: 6, name: 'RIC · scaduto da un anno', verbale: addM(TODAY, -18), expectH1: 'I 6 mesi sono passati', deadline: addM(TODAY, -12) });
+cases.push({ mod: 6, name: 'RIC · data nel futuro', verbale: add(TODAY, 1), expectReqError: true });
+
 // ---------- esecuzione ----------
 const BAD_TEXT = /undefined|\bnull\b|NaN|TODO|VERIFY|\[object/;
 
@@ -266,6 +299,52 @@ async function runCase(page, c) {
       await btn(/Torna indietro/);
       if (!(await h1()).length) problems.push('Indietro non funziona');
     }
+    return problems;
+  }
+
+  // ---- modulo 5: esenzione ----
+  if (c.mod === 5) {
+    await page.goto(`${BASE}esenzione-ticket/index.html`);
+    await btn(/Comincia/);
+    await btn(AGE[c.ageBand]);
+    await btn(STATUS[c.status]);
+    if (c.spouse) await page.check('input[name=spouse]');
+    await page.fill('#children', String(c.children));
+    await btn(/Avanti/);
+    if (c.income === null) await page.click('#no-income');
+    else { await page.fill('#income', String(c.income)); await btn(/Controlla/); }
+    const got = await h1();
+    const text = await checkScreen('risultato');
+    const found = ['E01', 'E02', 'E03', 'E04'].filter((k) => new RegExp(`(Codice|codice) ${k}\\b`).test(text));
+    if (c.exp.codes.length) {
+      if (!got.startsWith('Non devi pagare')) problems.push(`atteso esente (${c.exp.codes}), trovato «${got}»`);
+      if (found.join() !== c.exp.codes.join()) problems.push(`codici attesi ${c.exp.codes} trovati ${found}`);
+    } else if (c.exp.maybe.length) {
+      if (!got.startsWith('Dipende dal reddito')) problems.push(`atteso «Dipende dal reddito», trovato «${got}»`);
+      if (found.join() !== c.exp.maybe.join()) problems.push(`codici attesi ${c.exp.maybe} trovati ${found}`);
+    } else if (!got.startsWith('Per il reddito non c')) problems.push(`atteso «nessuna esenzione», trovato «${got}»`);
+    return problems;
+  }
+
+  // ---- modulo 6: ricorso ----
+  if (c.mod === 6) {
+    await page.goto(`${BASE}ricorso-invalidita/index.html`);
+    await btn(/Comincia/);
+    if (c.path === 'notyet') await btn(/^No, aspetto/);
+    else {
+      await btn(/^Sì, ce l/);
+      await page.fill('#verbaleDate', c.verbale);
+      await btn(/Controlla/);
+      if (c.expectReqError) {
+        if (!(await page.locator('#v-form-error').isVisible())) problems.push('giorno nel futuro accettato');
+        return problems;
+      }
+    }
+    const got = await h1();
+    if (!got.includes(c.expectH1)) problems.push(`titolo atteso «${c.expectH1}», trovato «${got}»`);
+    const text = await checkScreen('risultato');
+    if (c.deadline && !text.includes(fmt(c.deadline))) problems.push(`scadenza attesa ${fmt(c.deadline)} non mostrata`);
+    if (c.today && !text.includes('Scade oggi')) problems.push('manca «Scade oggi»');
     return problems;
   }
 

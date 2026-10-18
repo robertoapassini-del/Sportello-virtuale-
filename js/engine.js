@@ -142,3 +142,59 @@ export function simpleDeadline({ fromDate, days, today }) {
   const deadline = addDays(fromDate, days);
   return withPassed({ days, from: fromDate, deadline }, today);
 }
+
+// --- Modulo 5: esenzione ticket per reddito ------------------------------
+// Aggiunge n mesi a una data; se il giorno non esiste (31 → 30), prende l'ultimo del mese.
+export function addMonths(iso, n) {
+  const t = parseDate(iso);
+  if (t === null) return null;
+  const d = new Date(t);
+  const day = d.getUTCDate();
+  d.setUTCDate(1);
+  d.setUTCMonth(d.getUTCMonth() + n);
+  const last = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth() + 1, 0)).getUTCDate();
+  d.setUTCDate(Math.min(day, last));
+  return toISO(d.getTime());
+}
+
+export function formatEuro(n) {
+  return `${n.toLocaleString('it-IT', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} €`;
+}
+
+// ageBand: 'under6' | '6to59' | '60to65' | 'over65'
+// status:  'none' | 'disoccupato' | 'sociale' | 'minimo'   (anche se si è a carico di chi ha quella condizione)
+// income:  numero (reddito familiare lordo anno precedente) oppure null se non lo sa
+export function esenzioneReddito(rules, { ageBand, status, spouse = false, children = 0, income = null }) {
+  const c = rules.codes;
+  const fam = (code) => c[code].income_base + (spouse ? c[code].income_with_spouse - c[code].income_base : 0) + c[code].income_per_child * children;
+  const out = { codes: [], maybe: [], thresholds: {} };
+  const hasIncome = typeof income === 'number' && Number.isFinite(income) && income >= 0;
+
+  if (ageBand === 'under6' || ageBand === 'over65') {
+    out.thresholds.E01 = c.E01.income_max;
+    if (!hasIncome) out.maybe.push('E01');
+    else if (income <= c.E01.income_max) out.codes.push('E01');
+  }
+  if (status === 'disoccupato') {
+    out.thresholds.E02 = fam('E02');
+    if (!hasIncome) out.maybe.push('E02');
+    else if (income <= out.thresholds.E02) out.codes.push('E02');
+  }
+  if (status === 'sociale') out.codes.push('E03');
+  if (status === 'minimo' && (ageBand === '60to65' || ageBand === 'over65')) {
+    out.thresholds.E04 = fam('E04');
+    if (!hasIncome) out.maybe.push('E04');
+    else if (income <= out.thresholds.E04) out.codes.push('E04');
+  }
+  return out;
+}
+
+// --- Modulo 6: ricorso contro il verbale di invalidità --------------------
+export function ricorsoDeadline(rules, { verbaleDate, today }) {
+  if (!parseDate(verbaleDate)) return { status: 'error', error: 'date' };
+  if (today && daysBetween(verbaleDate, today) < 0) return { status: 'error', error: 'future' };
+  const deadline = addMonths(verbaleDate, rules.appeal_months);
+  const r = withPassed({ from: verbaleDate, deadline, months: rules.appeal_months }, today);
+  if (today && r.status === 'waiting') r.daysLeft = daysBetween(today, deadline);
+  return r;
+}
