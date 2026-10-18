@@ -222,6 +222,10 @@ test('mesi e euro', async () => {
   assert.equal(addMonths('2027-08-31', 6), '2028-02-29'); // anno bisestile
   assert.equal(addMonths('2026-10-18', 6), '2027-04-18');
   assert.equal(formatEuro(36151.98), '36.151,98 €');
+  assert.equal(formatEuro(8263.31), '8.263,31 €'); // anche sotto 10.000
+  assert.equal(formatEuro(516.46), '516,46 €');
+  assert.equal(formatEuro(0), '0,00 €');
+  assert.equal(formatEuro(1234567.5), '1.234.567,50 €');
 });
 
 test('esenzione ticket per reddito', async () => {

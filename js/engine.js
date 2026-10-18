@@ -166,8 +166,11 @@ export function addMonths(iso, n) {
   return toISO(d.getTime());
 }
 
+// Sempre con il punto delle migliaia: toLocaleString('it-IT') lo omette sotto 10.000
+// («8263,31 €» ma «36.151,98 €») e cambia da un browser all'altro.
 export function formatEuro(n) {
-  return `${n.toLocaleString('it-IT', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} €`;
+  const [int, dec] = Math.abs(n).toFixed(2).split('.');
+  return `${n < 0 ? '-' : ''}${int.replace(/\B(?=(\d{3})+$)/g, '.')},${dec} €`;
 }
 
 // ageBand: 'under6' | '6to59' | '60to64' | '65plus'
