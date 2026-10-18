@@ -175,7 +175,7 @@ table.fields { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
 table.fields th, table.fields td { text-align: left; vertical-align: top; padding: 8px; border-bottom: 1px solid var(--border); }
 table.fields th { width: 40%; }
 
-.ricetta { width: 100%; height: auto; max-width: 520px; display: block; margin: 8px auto; }
+.ricetta { width: 100%; height: auto; max-width: 520px; display: block; margin: 8px 0 16px; }
 
 
 /* Footer */
