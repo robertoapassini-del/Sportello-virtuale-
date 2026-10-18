@@ -1,0 +1,20 @@
+{
+  "region": "Sicilia",
+  "last_verified": "2026-10-18",
+  "note": "PEC costruite sul formato standard INPS (direzione.provinciale.<città>@postacert.inps.gov.it). TODO-VERIFY ciascuna sulla pagina 'Sedi' di inps.it o su IndicePA prima del lancio.",
+  "sources": [
+    { "label": "Dipartimento per le politiche in favore delle persone con disabilità – province della sperimentazione", "url": "https://disabilita.governo.it" },
+    { "label": "INPS messaggio n. 639/2026", "url": "https://www.inps.it" }
+  ],
+  "provinces": [
+    { "id": "agrigento", "name": "Agrigento", "regime": "old", "regime_since": null, "pec": "direzione.provinciale.agrigento@postacert.inps.gov.it", "address": null, "status": "todo" },
+    { "id": "caltanissetta", "name": "Caltanissetta", "regime": "new", "regime_since": "2026-03-01", "pec": "direzione.provinciale.caltanissetta@postacert.inps.gov.it", "address": null, "status": "todo" },
+    { "id": "catania", "name": "Catania", "regime": "new", "regime_since": "2026-03-01", "pec": "direzione.provinciale.catania@postacert.inps.gov.it", "address": null, "status": "todo" },
+    { "id": "enna", "name": "Enna", "regime": "old", "regime_since": null, "pec": "direzione.provinciale.enna@postacert.inps.gov.it", "address": null, "status": "todo" },
+    { "id": "messina", "name": "Messina", "regime": "new", "regime_since": "2026-03-01", "pec": "direzione.provinciale.messina@postacert.inps.gov.it", "address": null, "status": "todo" },
+    { "id": "palermo", "name": "Palermo", "regime": "new", "regime_since": "2025-09-30", "pec": "direzione.provinciale.palermo@postacert.inps.gov.it", "address": null, "status": "todo" },
+    { "id": "ragusa", "name": "Ragusa", "regime": "old", "regime_since": null, "pec": "direzione.provinciale.ragusa@postacert.inps.gov.it", "address": null, "status": "todo" },
+    { "id": "siracusa", "name": "Siracusa", "regime": "old", "regime_since": null, "pec": "direzione.provinciale.siracusa@postacert.inps.gov.it", "address": null, "status": "todo" },
+    { "id": "trapani", "name": "Trapani", "regime": "old", "regime_since": null, "pec": "direzione.provinciale.trapani@postacert.inps.gov.it", "address": null, "status": "todo" }
+  ]
+}

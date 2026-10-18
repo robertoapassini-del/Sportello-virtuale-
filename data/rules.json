@@ -1,0 +1,27 @@
+{
+  "name": "Regole nazionali tempi di attesa",
+  "source": "PNGLA 2026-2028 (DM 26/06/2026, GU n. 195 del 24/08/2026, S.O. n. 32)",
+  "last_verified": "2026-10-18",
+  "max_wait_days": {
+    "U": 3,
+    "B": 10,
+    "D_visit": 30,
+    "D_exam": 60,
+    "P": 120
+  },
+  "class_labels": {
+    "U": "U – Urgente (72 ore)",
+    "B": "B – Breve (10 giorni)",
+    "D": "D – Differibile (30 giorni visite, 60 giorni esami)",
+    "P": "P – Programmabile (120 giorni)"
+  },
+  "callback_days": {
+    "B": 5,
+    "D_visit": 10,
+    "D_exam": 15,
+    "P": 30
+  },
+  "prescription_validity_days": 180,
+  "reminder_after_days": 10,
+  "regional_plan_due": "2026-12-22"
+}

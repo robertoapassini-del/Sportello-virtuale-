@@ -1,0 +1,22 @@
+{
+  "name": "Regole tempi accertamento invalidità civile",
+  "last_verified": "2026-10-18",
+  "new_regime": {
+    "legal_basis": "art. 6 D.Lgs. 62/2024",
+    "deadline_days": { "oncological": 15, "minor": 30, "other": 90 },
+    "extra_documents_days_before_visit": 7
+  },
+  "old_regime": {
+    "domanda_window_days": 90,
+    "oncological_visit_days": 15,
+    "oncological_legal_basis": "art. 6 L. 80/2006",
+    "ordinary_convocation_days": 30,
+    "ordinary_note": "Valore indicativo citato dagli operatori del settore. TODO-VERIFY base legale (DPR 698/1994) con il legale."
+  },
+  "full_national_application": "2027-01-01",
+  "inps_contacts": {
+    "contact_center_fixed": "803 164",
+    "contact_center_mobile": "06 164164",
+    "inps_risponde_url": "https://www.inps.it/it/it/contatti.html"
+  }
+}

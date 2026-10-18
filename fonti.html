@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fonti – Diritto in Tempo</title>
+<meta name="description" content="Fonti ufficiali e date di verifica.">
+<meta name="theme-color" content="#0b5c8a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%8F%B1%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap"><a href="index.html">⏱ Diritto in Tempo</a><nav><a href="liste-attesa/">Liste d'attesa</a><a href="invalidita/">Invalidità</a></nav></div></header>
+<main class="wrap" id="app">
+<h1>Fonti e date di verifica</h1>
+<p>Tutte le informazioni sulle ASP e sull'INPS sono raccolte a mano dai siti ufficiali. Ogni scheda mostra la data dell'ultima verifica. Obiettivo: nessuna informazione più vecchia di 3 mesi.</p>
+<h2>Norme</h2>
+<ul class="clean">
+<li>Piano Nazionale di Governo delle Liste d'Attesa (PNGLA) 2026-2028 – DM 26/06/2026, GU n. 195 del 24/08/2026, S.O. n. 32.</li>
+<li>D.L. 73/2024, convertito dalla L. 107/2024 (liste d'attesa).</li>
+<li>D.Lgs. 124/1998, art. 3, commi 10 e 13.</li>
+<li>Regione Siciliana, D.A. n. 212 del 28/02/2024.</li>
+<li>D.Lgs. 62/2024 (riforma disabilità, valutazione di base); L. 80/2006 (pazienti oncologici); L. 114/2014.</li>
+</ul>
+<h2>Schede ASP e INPS</h2>
+<div id="sources-list"><p>Caricamento…</p></div>
+<p class="muted">Hai trovato un errore? <a href="mailto:info@dirittointempo.it?subject=Segnala%20un%20errore">Scrivici</a>.</p>
+</main>
+<footer class="site-footer" id="site-footer"></footer>
+<noscript><div class="wrap"><p>Per usare Diritto in Tempo attiva JavaScript nel browser. Nessun dato viene inviato.</p></div></noscript>
+<script type="module">
+import { renderFooter, loadJSON, esc } from "./js/common.js";
+import { formatIt } from "./js/engine.js";
+renderFooter("");
+const [asp, inps, rules, rinv] = await Promise.all(["asp-sicilia", "inps-sicilia", "rules", "rules-invalidita"].map((n) => loadJSON(`data/${n}.json`)));
+const st = { verified: "Verificato", partial: "Verificato in parte", todo: "Da verificare" };
+const link = (s) => s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>` : esc(s.label);
+document.getElementById("sources-list").innerHTML = `
+  <table class="fields"><thead><tr><th>ASP</th><th>Stato e verifica</th></tr></thead><tbody>
+  ${asp.asl.map((a) => `<tr><td><strong>${esc(a.name)}</strong><br>${a.sources.map(link).join("<br>")}</td>
+    <td><span class="badge ${esc(a.status)}">${st[a.status]}</span><br>${formatIt(a.last_verified)}</td></tr>`).join("")}
+  </tbody></table>
+  <h3>INPS Sicilia (invalidità civile)</h3>
+  <p>${esc(inps.note)}</p><p>${inps.sources.map(link).join(" · ")} – verifica ${formatIt(inps.last_verified)}</p>
+  <h3>Regole</h3>
+  <p>Tempi massimi: ${esc(rules.source)} – verifica ${formatIt(rules.last_verified)}.<br>
+  Invalidità civile: ${esc(rinv.new_regime.legal_basis)} – verifica ${formatIt(rinv.last_verified)}.</p>`;
+</script>
+</body>
+</html>
