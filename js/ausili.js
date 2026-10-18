@@ -4,7 +4,7 @@
 import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween, art } from './engine.js';
 import { ausiliReminder, mailtoHref } from './letters.js';
 import { noPecBox,
-  esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton, personFields, reportErrorHref, generalContact,
+  esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, officeBox, personFields, reportErrorHref, generalContact,
 } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
 
@@ -25,7 +25,7 @@ function sources() {
     if (a.info_url) items.push({ label: `${a.name} – sito ufficiale`, url: a.info_url });
     items.push(...a.sources);
   }
-  return [items, { verified: rules.last_verified, note: a ? 'I contatti degli uffici protesica dei distretti sono ancora da raccogliere.' : '' }];
+  return [items, { verified: rules.last_verified, note: a && !(a.contacts || []).some((c) => c.topic === 'protesica') ? 'I contatti degli uffici protesica di questa ASP non sono ancora confermati.' : '' }];
 }
 
 const steps = () => `
@@ -36,6 +36,9 @@ const steps = () => `
     <li class="say"><strong>L'autorizzazione.</strong> L'ASP deve rispondere entro <strong>${rules.authorization_days} giorni</strong>. Se non risponde, vale come un sì.</li>
     <li class="say"><strong>La consegna.</strong> Un fornitore convenzionato ti porta l'ausilio. Poi il medico lo controlla (si chiama collaudo).</li>
   </ol>`;
+
+// Uffici protesi e ausili della provincia, con indirizzo e orari.
+const protesica = (a) => officeBox(a, 'protesica', "🏥 Dov'è l'ufficio protesi e ausili", 'Vai o chiama quello del tuo distretto.');
 
 const screens = {
   intro: () => ({
@@ -76,7 +79,8 @@ const screens = {
       <div class="hero" aria-hidden="true">🩺</div>
       <h1>Si parte dallo specialista</h1>
       ${steps()}
-      <div class="notice info"><p class="say">Il medico di famiglia può darti l'impegnativa per la visita dallo specialista. Un patronato o l'URP dell'ASP ti dicono dov'è l'ufficio protesica del tuo distretto.</p></div>
+      <div class="notice info"><p class="say">Il medico di famiglia può darti l'impegnativa per la visita dallo specialista.${(asp().contacts || []).some((c) => c.topic === 'protesica') ? '' : " Un patronato o l'URP dell'ASP ti dicono dov'è l'ufficio protesica del tuo distretto."}</p></div>
+      ${protesica(asp())}
       <p class="say">Quando hai la ricevuta della domanda, torna qui: ti diciamo entro quando l'ASP deve rispondere.</p>
       ${disclaimer(rules.last_verified)}
       ${restartBtn()}`,
@@ -131,7 +135,7 @@ const screens = {
           <li class="say"><strong>Se ancora niente:</strong> reclamo all'URP dell'ASP di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''},
             un patronato, oppure Cittadinanzattiva (<a href="https://www.cittadinanzattiva.it" target="_blank" rel="noopener">cittadinanzattiva.it</a>).</li>
         </ol>
-        ${a.phones.map((p) => callButton(p.label, p.number)).join('')}
+        ${protesica(a) || aspCalls(a)}
         <button type="button" class="btn primary" data-go="letter">✍️ Scriviamo il sollecito insieme</button>
         ${disclaimer(rules.last_verified)}`,
     };
@@ -151,7 +155,7 @@ const screens = {
           <li class="say"><strong>Se il tempo è passato:</strong> reclamo scritto all'ASP (URP${generalContact(a) ? `: ${mailLink(generalContact(a))}` : ''}). Un patronato può aiutarti.</li>
         </ol>
         <div class="notice info"><p class="say">Quando l'ausilio arriva, il medico deve controllarlo (collaudo) entro ${rules.collaudo_days} giorni. Se non va bene, può essere sostituito.</p></div>
-        ${a.phones.map((p) => callButton(p.label, p.number)).join('')}
+        ${protesica(a) || aspCalls(a)}
         ${disclaimer(rules.last_verified)}
         ${restartBtn()}`,
     };

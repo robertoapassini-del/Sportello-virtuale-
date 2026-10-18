@@ -1,7 +1,7 @@
 // Modulo 12 — prevenzione gratuita per età: screening oncologici e vaccini.
 // Regole fisse per età e sesso. Non chiediamo la malattia.
 import { prevenzione } from './engine.js';
-import { esc, loadJSON, disclaimer, renderFooter, readForm, callButton } from './common.js';
+import { esc, loadJSON, disclaimer, renderFooter, readForm, callButton, officeBox } from './common.js';
 import { createFlow, choice, restartBtn, progress } from './flow.js';
 
 const ROOT = '../';
@@ -66,7 +66,8 @@ const screens = {
   result: () => {
     const r = prevenzione(rules, { age: state.age, sex: state.sex });
     const a = data.asl.find((x) => x.id === state.province);
-    const num = rules.screening_numbers[state.province];
+    const scr = (a.contacts || []).find((c) => c.topic === 'screening');
+    const num = scr ? scr.number : rules.screening_numbers[state.province];
     const later = r.later.slice(0, 3).map((x) => `<li class="say"><span class="ico" aria-hidden="true">${x.icon}</span><span>${esc(x.title)}: <strong>dai ${x.min} anni</strong></span></li>`).join('');
     const none = !r.screening.length && !r.vaccines.length;
     return {
@@ -87,7 +88,7 @@ const screens = {
           <li class="say"><strong>Per gli esami contro i tumori</strong> chiama il numero dello screening dell'ASP di ${esc(a.province)}${num ? `: <strong>${esc(num)}</strong>` : ' (te lo dà il CUP o l\'URP)'}. Se hai ricevuto una lettera di invito, c'è scritto il numero.</li>
           <li class="say"><strong>Per i vaccini</strong> puoi andare anche al centro vaccinale dell'ASP o, dove c'è il servizio, in farmacia.</li>
         </ol>
-        ${num ? callButton('Numero verde screening', num) : ''}
+        ${scr ? officeBox(a, 'screening', '🎗️ Prenotare gli esami contro i tumori') : num ? callButton('Numero verde screening', num) : ''}
         ${later ? `<details class="card"><summary>Cosa arriverà più avanti</summary><ul class="icon-list">${later}</ul></details>` : ''}
         <div class="notice info"><p class="say">Se hai una malattia cronica, sei incinta o lavori con persone fragili, alcuni vaccini sono gratis anche prima di queste età. Chiedi al medico.</p></div>
         ${disclaimer(rules.last_verified)}

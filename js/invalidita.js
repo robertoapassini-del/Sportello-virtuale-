@@ -48,6 +48,14 @@ app.addEventListener('click', (e) => {
 
 const prov = () => inps.provinces.find((p) => p.id === state.province);
 
+// Sede INPS della provincia: indirizzo, orari e come prenotare lo sportello.
+const inpsSede = (p) => (p.address ? `<div class="card">
+    <h3 class="say" style="margin-top:0">🏛️ La sede INPS di ${esc(p.name)}</h3>
+    <p class="say">📍 ${esc(p.address)}${p.hours ? `<br>${esc(p.hours)}` : ''}</p>
+    <p class="say">Per parlare con qualcuno allo sportello bisogna <strong>prenotare</strong>: con l'app INPS, sul sito (MyINPS) o al telefono 803 164 (gratis da fisso).</p>
+    ${p.url ? `<p><a href="${esc(p.url)}" target="_blank" rel="noopener">💻 La pagina della sede sul sito INPS</a></p>` : ''}
+  </div>` : '');
+
 // Fonti della schermata: le leggi + le pagine ufficiali su INPS e province.
 function screenSources() {
   const items = [...rules.sources, ...inps.sources];
@@ -304,8 +312,9 @@ const screens = {
             <li class="delegate-note"${person.isDelegate ? '' : ' hidden'}><span class="ico" aria-hidden="true">📝</span> Allega: la delega firmata e il tuo documento</li>
           </ul>
         </div>
-        <p class="muted">Indirizzo PEC: ${mailLink(p.pec)} (stiamo ancora controllando questo indirizzo) ·
+        <p class="muted">Indirizzo PEC: ${mailLink(p.pec)}${p.pec_verified ? '' : ' (stiamo ancora controllando questo indirizzo)'} ·
         <a href="${esc(reportErrorHref(`INPS ${p.name}`))}">Segnala un errore</a></p>
+        ${inpsSede(p)}
         ${disclaimer(rules.last_verified)}
         ${restartBtn()}`,
       mount() {

@@ -5,7 +5,7 @@
 import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
 import { cartellaReminder, mailtoHref } from './letters.js';
 import { noPecBox,
-  esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton, personFields, reportErrorHref, generalContact,
+  esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, officeBox, personFields, reportErrorHref, generalContact,
 } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
 
@@ -148,7 +148,7 @@ const screens = {
           <li class="say"><strong>Se ancora niente:</strong> reclamo all'URP dell'ASP di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''}, oppure a Cittadinanzattiva
             (<a href="https://www.cittadinanzattiva.it" target="_blank" rel="noopener">cittadinanzattiva.it</a>). ${tarText()}</li>
         </ol>
-        ${a.phones.map((p) => callButton(p.label, p.number)).join('')}
+        ${officeBox(a, 'cartelle', '🏥 Gli uffici cartelle cliniche', "Chiama quello dell'ospedale dove c'è stato il ricovero.") || aspCalls(a)}
         <button type="button" class="btn primary" data-go="letter">✍️ Scriviamo il sollecito insieme</button>
         ${disclaimer(rules.last_verified)}`,
     };

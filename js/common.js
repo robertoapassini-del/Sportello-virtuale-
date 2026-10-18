@@ -51,6 +51,12 @@ export function reportErrorHref(context) {
   return `mailto:${MAINTAINER_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
 
+// Cartella principale del sito vista dalla pagina ('' o '../'), presa dal foglio di stile.
+export function siteRoot() {
+  const css = document.querySelector('link[rel="stylesheet"][href$="css/style.css"]');
+  return css ? css.getAttribute('href').replace(/css\/style\.css$/, '') : '';
+}
+
 // Riquadro "Chi può aiutarmi?", uguale in tutte le pagine.
 export function helpBox() {
   return `<details class="help">
@@ -61,6 +67,7 @@ export function helpBox() {
       <li><span class="ico" aria-hidden="true">👨‍⚕️</span> Il tuo medico di famiglia</li>
       <li><span class="ico" aria-hidden="true">🏢</span> Un patronato (per esempio INCA, ACLI, INAS). È gratis.</li>
       <li><span class="ico" aria-hidden="true">🏥</span> L'ufficio URP della tua ASP: è l'ufficio che ascolta i cittadini</li>
+      <li><span class="ico" aria-hidden="true">📞</span> <a href="${siteRoot()}numeri-utili/index.html">I numeri utili: guardia medica, CUP, ASP, INPS</a></li>
     </ul>
     <p>Puoi mostrare questa pagina a chi ti aiuta.</p>
   </details>`;
@@ -309,6 +316,27 @@ export function phoneLink(number) {
 export function callButton(label, number) {
   return `<a class="btn choice call" href="tel:${esc(number.replace(/\s+/g, ''))}">
     <span class="ico" aria-hidden="true">📞</span><span class="txt">${esc(label)}<small>${esc(number)}</small></span></a>`;
+}
+
+// Pulsanti «Chiama» di un'ASP: i numeri generali (phones) e quelli degli argomenti
+// chiesti (contacts con topic, per esempio 'casa' o 'palliative'), senza doppioni.
+// Sotto, il link a tutti i numeri dell'ASP nella pagina «Numeri utili».
+export function aspCalls(a, topics = []) {
+  const seen = new Set();
+  const list = [...(a.contacts || []).filter((c) => topics.includes(c.topic)), ...a.phones]
+    .filter((p) => !seen.has(p.number) && seen.add(p.number));
+  const info = (p) => [p.address && `📍 ${esc(p.address)}`, p.hours && esc(p.hours)].filter(Boolean).join('<br>');
+  return `${list.map((p) => `${callButton(p.label, p.number)}${info(p) ? `<p class="muted call-info">${info(p)}</p>` : ''}`).join('')}
+    <p><a href="${siteRoot()}numeri-utili/index.html#${esc(a.id)}">📞 Tutti i numeri dell'${esc(a.name)}: guardia medica, CUP, URP</a></p>`;
+}
+
+// Riquadro «Dov'è l'ufficio»: i contatti dell'ASP di un argomento, con titolo e una frase.
+// Vuoto se l'ASP non ha contatti confermati per quell'argomento.
+export function officeBox(a, topic, title, intro = '') {
+  if (!(a.contacts || []).some((c) => c.topic === topic)) return '';
+  return `<h2 class="say">${title}</h2>
+    ${intro ? `<p class="say">${esc(intro)}</p>` : ''}
+    ${aspCalls(a, [topic])}`;
 }
 
 // Indirizzo generale dell'ASP (URP o PEC del protocollo), per le richieste che NON sono

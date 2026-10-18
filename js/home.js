@@ -64,12 +64,18 @@ function render() {
     ${helpBox()}${sourcesBox(rulesSources, {})}`;
 }
 
+// La pagina «Numeri utili» non è un modulo, ma la ricerca deve trovarla.
+const NUMERI = {
+  id: 'numeri-utili', icon: '📞', title: 'Numeri utili', small: 'Guardia medica, CUP, ASP, INPS',
+  keywords: 'numero numeri telefono chiamare guardia medica notte cup urp centralino inps tessera sanitaria farmacia turno violenza 1522 112 118 116117 pua',
+};
+
 function showResults(text) {
   const box = document.getElementById('q-box');
   const list = document.getElementById('q-results');
   const words = text.toLowerCase().split(/\s+/).filter((w) => w.length >= 3);
   if (!words.length) { box.hidden = true; list.innerHTML = ''; return; }
-  const hits = reg.modules.filter((m) => {
+  const hits = [NUMERI, ...reg.modules].filter((m) => {
     const hay = `${m.title} ${m.small} ${m.keywords}`.toLowerCase();
     return words.some((w) => hay.includes(w));
   });
