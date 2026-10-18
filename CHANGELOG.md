@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 18/10/2026 — nuovo nome: Aiuto Sanità
+- Il sito si chiama ora «Aiuto Sanità» (prima «Diritto in Tempo»).
+- Frase «Siamo volontari: non siamo l'ASP né l'INPS» nella pagina iniziale, nel piè di pagina e in «Chi siamo».
+
 ## 18/10/2026 — voce senza emoji
 - Il pulsante «Ascolta» non legge più le emoji (diceva per esempio «puntina arrotondata dove abiti»).
 - Il test delle combinazioni ora preme «Ascolta» in ogni schermata e controlla il testo letto.

@@ -1,4 +1,4 @@
-# Diritto in Tempo
+# Aiuto Sanità
 
 Sito gratuito che aiuta le persone in Sicilia a far valere i tempi massimi di attesa:
 
