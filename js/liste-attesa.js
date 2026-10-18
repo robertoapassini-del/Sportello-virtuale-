@@ -6,7 +6,7 @@ import { checkWaiting, callbackDeadline, maxWaitDays, todayISO, formatIt, parseD
 import { tutelaLetter, tutelaReminder, mailtoHref } from './letters.js';
 import {
   esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton,
-  personFields, reportErrorHref, choice, helpBox, listenButton, speakScreen, stopSpeaking, sourcesBox,
+  personFields, reportErrorHref, choice, helpBox, listenButton, speakScreen, stopSpeaking, sourcesBox, moreHelp,
 } from './common.js';
 import { RICETTA_SVG } from './ricetta-svg.js';
 
@@ -44,7 +44,7 @@ function render() {
   stopSpeaking();
   const s = screens[current]();
   const backBtn = current === 'intro' ? '' : '<button type="button" class="back" data-action="back">← Torna indietro</button>';
-  app.innerHTML = `<div class="topbar">${backBtn}${listenButton()}</div>${s.html}${helpBox()}${screenSources()}`;
+  app.innerHTML = `<div class="topbar">${backBtn}${listenButton()}</div>${s.html}${moreHelp()}${helpBox()}${screenSources()}`;
   if (s.mount) s.mount();
   window.scrollTo(0, 0);
   const h1 = app.querySelector('h1');

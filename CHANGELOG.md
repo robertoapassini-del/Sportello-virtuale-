@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 18/10/2026 — pagina iniziale a scelta guidata
+- Prima una sola domanda con 4 grandi riquadri, poi al massimo 4 scelte. Elenco dei moduli in `data/moduli.json`.
+- Casella «Scrivi una parola» per chi aiuta; pulsante Ascolta anche in home.
+- In fondo a ogni schermata: «Ti serve altro? Torna all'inizio».
+
 ## 18/10/2026 — cinque moduli suggeriti dagli utenti
 - **Assegno di inclusione** (`rules-adi.json`): famiglia, 5 anni di residenza, ISEE ≤ 10.140 €; domanda INPS/patronato/CAF.
   Da verificare: soglie 2026 (ISEE, reddito, patrimonio).

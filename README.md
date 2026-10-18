@@ -60,7 +60,7 @@ npm run test:combinazioni
 
 | Percorso | Cos'è |
 |---|---|
-| `index.html` | Pagina iniziale: scegli il problema |
+| `index.html`, `js/home.js`, `data/moduli.json` | Pagina iniziale: scelta guidata in 2 passi, ricerca per parola |
 | `liste-attesa/`, `js/liste-attesa.js` | Modulo 1: domande, risultato, lettera, «E adesso?» |
 | `invalidita/`, `js/invalidita.js` | Modulo 2: scadenza, sollecito all'INPS, cosa portare |
 | `cartella-clinica/`, `js/cartella.js` | Modulo 3: scadenza 30 giorni, sollecito all'ospedale |

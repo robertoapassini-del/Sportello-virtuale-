@@ -230,3 +230,7 @@ details.fonti ul { margin: 8px 0; }
 details.fonti li { margin: 8px 0; }
 ul.icon-list li > :not(.ico) { flex: 1 1 auto; min-width: 0; }
 ul.icon-list li > strong { flex: 0 1 auto; }
+.more-help { margin-top: 20px; }
+details.search { margin-top: 20px; }
+details.search input[type="search"] { margin: 8px 0 12px; }
+button.btn.choice { width: 100%; }

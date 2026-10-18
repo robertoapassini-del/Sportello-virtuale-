@@ -68,6 +68,11 @@ export async function renderSources(root = '') {
   } catch { el.innerHTML = ''; }
 }
 
+// «Ti serve altro?»: torna alla scelta guidata. In fondo a ogni schermata dei moduli.
+export function moreHelp() {
+  return `<a class="btn center more-help no-say" href="../index.html">🏠 Ti serve altro? Torna all'inizio</a>`;
+}
+
 // root: percorso relativo verso la cartella principale ('' oppure '../').
 export function renderFooter(root = '') {
   const el = document.getElementById('site-footer');

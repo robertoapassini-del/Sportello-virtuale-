@@ -1,0 +1,21 @@
+{
+  "groups": [
+    { "id": "cure", "icon": "🩺", "title": "Una visita, un esame, una medicina", "small": "Appuntamenti lontani, ticket, piano terapeutico, referti" },
+    { "id": "casa", "icon": "🏠", "title": "Aiuto a casa per una persona malata", "small": "Infermiere a casa, carrozzina, letto, pannoloni, cure palliative" },
+    { "id": "invalidita", "icon": "♿", "title": "Invalidità e aiuti economici", "small": "Visita INPS, verbale sbagliato, assegno di inclusione" },
+    { "id": "documenti", "icon": "🛂", "title": "Permesso di soggiorno", "small": "Quando e come rinnovarlo" }
+  ],
+  "modules": [
+    { "id": "liste-attesa", "group": "cure", "icon": "📅", "title": "La visita o l'esame è troppo lontano", "small": "Il CUP mi ha dato un appuntamento tra tanto tempo", "keywords": "visita esame appuntamento cup prenotazione lista attesa lontano tempi ricetta priorità tutela" },
+    { "id": "esenzione-ticket", "group": "cure", "icon": "🎫", "title": "Devo pagare il ticket?", "small": "Esenzione per età o per reddito", "keywords": "ticket pagare esenzione reddito età pensione disoccupato gratis" },
+    { "id": "piano-terapeutico", "group": "cure", "icon": "💊", "title": "La medicina con il piano terapeutico", "small": "Cos'è e quando rinnovarlo", "keywords": "medicina farmaco piano terapeutico rinnovo scadenza specialista ricetta" },
+    { "id": "cartella-clinica", "group": "cure", "icon": "📁", "title": "Non mi danno la cartella clinica o i referti", "small": "L'ho chiesta all'ospedale e non arriva", "keywords": "cartella clinica referti documenti ospedale copia radiografia esami ricovero" },
+    { "id": "assistenza-domiciliare", "group": "casa", "icon": "🏠", "title": "Serve un infermiere o un medico a casa", "small": "Assistenza domiciliare dell'ASP", "keywords": "infermiere casa domicilio assistenza domiciliare adi fisioterapia allettato anziano" },
+    { "id": "ausili", "group": "casa", "icon": "🦽", "title": "La carrozzina, il letto o i pannoloni non arrivano", "small": "Ho fatto la domanda all'ASP e aspetto", "keywords": "carrozzina letto pannoloni ausili protesi deambulatore materasso apparecchio acustico plantari" },
+    { "id": "cure-palliative", "group": "casa", "icon": "🕊️", "title": "Cure palliative a casa o in hospice", "small": "Per una malattia grave e avanzata", "keywords": "cure palliative hospice dolore terapia malattia grave tumore fine vita" },
+    { "id": "invalidita", "group": "invalidita", "icon": "♿", "title": "La visita per l'invalidità non arriva", "small": "Il medico ha mandato il certificato all'INPS", "keywords": "invalidità inps visita certificato commissione legge 104 handicap accompagnamento" },
+    { "id": "ricorso-invalidita", "group": "invalidita", "icon": "⚖️", "title": "Il verbale di invalidità è sbagliato", "small": "Ho 6 mesi per il ricorso: quanto mi resta?", "keywords": "verbale ricorso invalidità percentuale sbagliato avvocato giudice aggravamento" },
+    { "id": "assegno-inclusione", "group": "invalidita", "icon": "🪪", "title": "Ho diritto all'assegno di inclusione?", "small": "Le condizioni e come fare la domanda", "keywords": "assegno inclusione soldi reddito cittadinanza isee aiuto economico poveri" },
+    { "id": "permesso-soggiorno", "group": "documenti", "icon": "🛂", "title": "Quando rinnovo il permesso di soggiorno?", "small": "60 giorni prima della scadenza: calcola la data", "keywords": "permesso soggiorno rinnovo questura kit poste straniero scadenza" }
+  ]
+}

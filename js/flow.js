@@ -1,6 +1,6 @@
 // Navigazione comune ai moduli: schermate, Indietro, Ricomincia, Ascolta,
 // riquadri Aiuto e Fonti. Le risposte restano in memoria finché la pagina è aperta.
-import { esc, helpBox, listenButton, speakScreen, stopSpeaking, sourcesBox, choice } from './common.js';
+import { esc, helpBox, listenButton, speakScreen, stopSpeaking, sourcesBox, choice, moreHelp } from './common.js';
 
 export { choice };
 
@@ -12,7 +12,7 @@ export function createFlow({ app, screens, state, sources, first = 'intro' }) {
     stopSpeaking();
     const s = screens[current]();
     const backBtn = current === first ? '' : '<button type="button" class="back" data-action="back">← Torna indietro</button>';
-    app.innerHTML = `<div class="topbar">${backBtn}${listenButton()}</div>${s.html}${helpBox()}${sourcesBox(...sources())}`;
+    app.innerHTML = `<div class="topbar">${backBtn}${listenButton()}</div>${s.html}${moreHelp()}${helpBox()}${sourcesBox(...sources())}`;
     if (s.mount) s.mount();
     window.scrollTo(0, 0);
     const h1 = app.querySelector('h1');
