@@ -498,7 +498,7 @@ const screens = {
             (<a href="https://www.cittadinanzattiva.it" target="_blank" rel="noopener">cittadinanzattiva.it</a>) oppure
             Associazione Luca Coscioni (<a href="https://www.associazionelucacoscioni.it" target="_blank" rel="noopener">associazionelucacoscioni.it</a>).</li>
           <li class="say"><strong>Scrivi alla Regione Siciliana</strong>, ufficio URP dell'Assessorato della Salute
-            (<a href="https://www.regione.sicilia.it" target="_blank" rel="noopener">regione.sicilia.it</a>).</li>
+            (<a href="https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute" target="_blank" rel="noopener">regione.sicilia.it</a>).</li>
         </ol>
         <div class="notice warn"><p class="say">💶 Vai dal privato a pagamento <strong>solo se l'ASP te lo scrive</strong>. Altrimenti potresti non avere i soldi indietro.</p></div>
         <div class="card">

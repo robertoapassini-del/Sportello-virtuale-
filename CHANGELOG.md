@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 18/10/2026 — link precisi nelle fonti
+- 29 link nei file `data/*.json` e 1 in `js/liste-attesa.js` portavano alla home del sito: ora portano alla pagina specifica (Ministero della Salute, INPS, Gazzetta Ufficiale, Garante privacy, Regione Siciliana – Assessorato Salute, Ministero del Lavoro, Giustizia, AIFA, Riforma disabilità, Tessera Sanitaria, SISAC, Federazione Cure Palliative). Tutti aperti e controllati il 18/10/2026.
+- Restano sulla home: Ministero della Salute per cartella clinica e scelta del medico (non c'è una pagina dedicata), Osservatorio Nazionale Screening.
+- Province della sperimentazione: il link elenca solo le 40 province della terza fase.
+
 ## 18/10/2026 — nome: Guida Sanità
 - «Ci penso io» prometteva troppo (il sito spiega, non fa la pratica al posto tuo). Nuovo nome «Guida Sanità» (la frase «Niente panico.» è stata provata e tolta). Dominio guidasanita.it libero al 18/10/2026.
 - Email segnaposto: info@guidasanita.it.
