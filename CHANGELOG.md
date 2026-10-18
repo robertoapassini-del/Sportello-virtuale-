@@ -2,6 +2,35 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 18/10/2026 — pagina più larga sul computer
+- Testata, banda e piè di pagina larghi fino a 56rem (`--page`); il testo dei moduli resta nella colonna di lettura di 42rem (`--maxw`), allineata a sinistra, come NHS.uk.
+- Home e pagine delle aree (`data-wide`): da 768px in su i riquadri sono su 2 colonne; in home «Le domande più frequenti» e «Stai male adesso?» stanno affiancati. Sul telefono non cambia niente.
+
+## 18/10/2026 — urgenze, domande frequenti, «Ti è stata utile?»
+- **Home: riquadro rosso «Stai male adesso?»**: il sito non serve per le urgenze; se è grave chiama il 112; la sera, di notte e nei festivi la guardia medica.
+- **Home: «Le domande più frequenti»** con la freccia verde: visita troppo lontana, ticket, visita per l'invalidità in ritardo (elenco `FREQUENTI` in `js/home.js`).
+- **In fondo a ogni pagina: «Questa pagina ti è stata utile? Sì / No».** La risposta non viene registrata (niente server, niente statistiche); con «No» compare un link per scriverci un'email, se si vuole.
+- **«Informazioni controllate il …»** sotto la domanda: la data `last_verified` più vecchia tra i file di dati della pagina. Pagine delle aree: i loro moduli; home: tutti; privacy, fonti e chi siamo: nessuna data.
+- `data/moduli.json`: ogni modulo ha ora `data`, l'elenco dei suoi file in `data/` (servono per la data del controllo). Se un modulo inizia a usare un altro file di dati, aggiungerlo qui.
+
+## 18/10/2026 — banda colorata e icone disegnate
+- **Banda verde acqua in alto** con icona grande, titolo e frase principale: nella home, nelle pagine delle aree, in privacy, fonti e chi siamo, e nella prima schermata e nel risultato di ogni modulo. Le schermate con le domande restano senza banda. La crea `bandify` in `js/common.js`, senza toccare i moduli.
+- **Icone disegnate al posto delle emoji** (93 icone Lucide, licenza ISC, `fonts/LICENSE-lucide.txt`): uguali su tutti i telefoni, di un solo colore. Verde, rosso e giallo solo per «sì», «no» e «attenzione». Nei file si continuano a scrivere le emoji: le sostituisce `iconize` in `js/common.js`. Le lettere non vengono toccate.
+- Il titolo che riceve il focus a ogni schermata non mostra più il contorno del browser.
+
+## 18/10/2026 — pagine delle aree e percorso «Inizio › Area»
+- **4 pagine vere per le aree**: `visite-esami/`, `prevenzione-medico/`, `aiuto-a-casa/`, `invalidita-aiuti/`. Si possono condividere, Google le trova, e funzionano anche senza JavaScript. Prima erano schermate create al momento (`?gruppo=casa`); i vecchi link portano alla pagina nuova.
+- **Percorso sotto la testata** in tutte le pagine tranne la home: sul computer «Inizio › Aiuto a casa», sul telefono solo «‹ Aiuto a casa».
+- **Una sola ricerca**: quella nella testata. In home i risultati compaiono sopra i riquadri mentre si scrive.
+- `data/moduli.json`: ogni area ha ora `page` (cartella), `short` (nome nel menu) e `intro` (frase in alto nella pagina dell'area).
+- Nuovo `npm run pagine` (`tools/pagine.mjs`): rifà testata, percorso, pagine delle aree e `sitemap.xml` (ora 20 pagine).
+
+## 18/10/2026 — testata, colori e riquadri sul modello NHS.uk
+- **Testata nuova in tutte le 16 pagine**: verde acqua scuro, logo, ricerca sempre visibile (porta alla pagina iniziale con `?q=parola`) e le 4 aree (Visite ed esami, Prevenzione, Aiuto a casa, Invalidità). L'area della pagina aperta è sottolineata.
+- **Un colore = un ruolo**: titoli neri, link verde acqua sottolineati, pulsanti d'azione («Comincia», «Controlla», «Scriviamo la lettera») verdi pieni.
+- **Pagina grigio chiaro con riquadri bianchi** e un bordo spesso sotto, al posto delle ombre leggere. Campi con bordo scuro, più visibili.
+- Corretto lo spazio sopra il contenuto (`main.wrap` non aveva il margine in alto).
+
 ## 18/10/2026 — mappa del sito per Google
 - Nuovo `sitemap.xml` con tutte le 16 pagine, da indicare in Google Search Console. Se si aggiunge un modulo, aggiungerlo anche qui.
 

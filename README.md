@@ -61,7 +61,10 @@ npm run test:combinazioni
 
 | Percorso | Cos'è |
 |---|---|
-| `index.html`, `js/home.js`, `data/moduli.json` | Pagina iniziale: scelta guidata in 2 passi, ricerca per parola |
+| `index.html`, `js/home.js`, `data/moduli.json` | Pagina iniziale: 4 riquadri (uno per area), risultati della ricerca |
+| `visite-esami/`, `prevenzione-medico/`, `aiuto-a-casa/`, `invalidita-aiuti/`, `js/area.js` | Pagine delle 4 aree con l'elenco dei moduli. **Create da `npm run pagine`**: non modificarle a mano |
+| `tools/pagine.mjs` | Rifà testata, percorso «Inizio › Area», pagine delle aree e `sitemap.xml` da `data/moduli.json`. Rilanciarlo con `npm run pagine` dopo aver aggiunto o cambiato un modulo |
+| `js/icons.js`, `tools/icone.mjs` | Icone disegnate (Lucide, licenza ISC in `fonts/LICENSE-lucide.txt`). Nei testi si scrivono emoji; `iconize` in `js/common.js` le sostituisce sullo schermo. Per una nuova emoji: aggiungerla in `tools/icone.mjs`, poi `npm install --no-save lucide-static && npm run icone` |
 | `liste-attesa/`, `js/liste-attesa.js` | Modulo 1: domande, risultato, lettera, «E adesso?» |
 | `invalidita/`, `js/invalidita.js` | Modulo 2: scadenza, sollecito all'INPS, cosa portare |
 | `cartella-clinica/`, `js/cartella.js` | Modulo 3: scadenza 30 giorni, sollecito all'ospedale |

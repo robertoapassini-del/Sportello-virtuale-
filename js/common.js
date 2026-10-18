@@ -1,6 +1,7 @@
 // Funzioni comuni del sito: testo sicuro, caricamento dati, piè di pagina,
 // lettura ad alta voce, copia e stampa. Niente qui invia dati a qualcuno.
 import { formatIt } from './engine.js';
+import { ICONS } from './icons.js';
 
 // TODO: sostituire con l'indirizzo dedicato quando il dominio esiste (SPEC 8, 9.0).
 export const MAINTAINER_EMAIL = 'info@guidasanita.it';
@@ -103,6 +104,54 @@ export function renderFooter(root = '') {
     </nav>
     <p>Il sito è libero: codice con licenza MIT, testi con licenza CC BY 4.0.</p>
   </div>`;
+  renderFeedback(el, root);
+}
+
+// «Questa pagina ti è stata utile?» sopra il piè di pagina, come NHS.uk.
+// Non registriamo la risposta (niente server, niente statistiche): con «No»
+// si può scriverci un'email, se si vuole. Sotto, la data dell'ultimo controllo.
+function renderFeedback(footer, root) {
+  if (document.getElementById('page-feedback')) return;
+  footer.insertAdjacentHTML('beforebegin', `<section class="page-feedback no-say" id="page-feedback" aria-labelledby="fb-q"><div class="wrap">
+    <div class="fb-box" aria-live="polite">
+      <h2 id="fb-q">Questa pagina ti è stata utile?</h2>
+      <div class="fb-buttons"><button type="button" data-fb="si">Sì</button><button type="button" data-fb="no">No</button></div>
+      <p class="muted">Non registriamo la risposta.</p>
+    </div>
+    <p class="fb-checked" hidden></p>
+  </div></section>`);
+  const box = document.querySelector('#page-feedback .fb-box');
+  box.addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-fb]');
+    if (!b) return;
+    box.innerHTML = b.dataset.fb === 'si'
+      ? '<p><strong>Grazie!</strong> Puoi mostrare questa pagina anche a chi ne ha bisogno.</p>'
+      : `<p><strong>Ci dispiace.</strong> Se vuoi, <a href="${esc(reportErrorHref(document.title))}">scrivici cosa non andava</a>: si apre il tuo programma di posta e decidi tu se mandare.</p>
+         <p class="muted">Non scrivere dati sulla tua salute.</p>`;
+  });
+  checkedDate(root).then((d) => {
+    if (!d) return;
+    const p = document.querySelector('#page-feedback .fb-checked');
+    p.textContent = `Informazioni controllate il ${formatIt(d)}.`;
+    p.hidden = false;
+  }).catch(() => {});
+}
+
+// Data dell'ultimo controllo della pagina: la più vecchia tra i file di dati che usa
+// (data/moduli.json → "data"). Pagina di un'area: i suoi moduli. Home: tutti.
+// Privacy, fonti e chi siamo: nessuna data.
+async function checkedDate(root) {
+  const parts = location.pathname.split('/').filter(Boolean);
+  const file = /\.html$/.test(parts[parts.length - 1] || '') ? parts.pop() : 'index.html';
+  const slug = root ? parts[parts.length - 1] : (file === 'index.html' ? '' : null);
+  if (slug === null) return null;
+  const reg = await loadJSON(`${root}data/moduli.json`);
+  const group = reg.groups.find((g) => g.page === slug);
+  const mods = !slug ? reg.modules : reg.modules.filter((m) => (group ? m.group === group.id : m.id === slug));
+  const files = [...new Set(mods.flatMap((m) => m.data || []))];
+  const data = await Promise.all(files.map((f) => loadJSON(`${root}data/${f}.json`)));
+  const dates = data.flatMap((d) => JSON.stringify(d).match(/"last_verified":"\d{4}-\d{2}-\d{2}"/g) || []).map((s) => s.slice(-11, -1));
+  return dates.sort()[0] || null;
 }
 
 // Pulsante di scelta con icona (icon = '' → senza icona, per gli elenchi tutti uguali
@@ -276,4 +325,79 @@ export function personFields(p = {}, legend = 'I dati della persona') {
       Allega anche la fotocopia dei documenti di tutti e due.</p>
     </div>
   </fieldset>`;
+}
+
+// ---------- Icone e banda colorata ----------
+// Nei testi del sito le icone sono scritte come emoji (comode da leggere nel codice).
+// Qui, appena compaiono sullo schermo, diventano icone disegnate tutte uguali (js/icons.js):
+// le emoji cambiano aspetto da un telefono all'altro. Le lettere non si toccano.
+
+const emojiRe = new RegExp(
+  Object.keys(ICONS)
+    .flatMap((e) => (e.includes('\uFE0F') ? [e, e.replace(/\uFE0F/g, '')] : [e]))
+    .sort((a, b) => b.length - a.length)
+    .map((e) => e.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+    .join('|'),
+  'gu',
+);
+const hasEmoji = new RegExp(emojiRe.source, 'u');
+const iconOf = (e) => ICONS[e] || ICONS[`${e}\uFE0F`];
+const SKIP = 'script, style, textarea, .letter, #print-area, svg';
+
+function iconSvg([inner, tone]) {
+  const t = document.createElement('template');
+  t.innerHTML = `<svg class="i${tone ? ` i-${tone}` : ''}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">${inner}</svg>`;
+  return t.content.firstChild;
+}
+
+export function iconize(root) {
+  if (root.nodeType === 3) root = root.parentElement;
+  if (!root || root.closest?.(SKIP)) return;
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+    acceptNode: (n) => (hasEmoji.test(n.data) && !n.parentElement.closest(SKIP) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT),
+  });
+  const nodes = [];
+  for (let n = walker.nextNode(); n; n = walker.nextNode()) nodes.push(n);
+  for (const n of nodes) {
+    const frag = document.createDocumentFragment();
+    let last = 0;
+    for (const m of n.data.matchAll(emojiRe)) {
+      frag.append(n.data.slice(last, m.index), iconSvg(iconOf(m[0])));
+      last = m.index + m[0].length;
+    }
+    frag.append(n.data.slice(last));
+    n.replaceWith(frag);
+  }
+}
+
+// Banda colorata in alto (come NHS.uk): icona grande, titolo e frase principale.
+// Solo nelle schermate con l'icona grande (inizio e risultato di un modulo) e nelle
+// pagine con data-band (le aree); le schermate con le domande restano semplici.
+function bandify() {
+  const app = document.getElementById('app');
+  const h1 = app && app.querySelector(':scope > h1');
+  if (!h1) return;
+  const hero = h1.previousElementSibling?.classList.contains('hero') ? h1.previousElementSibling : null;
+  if (!hero && !app.hasAttribute('data-band')) return;
+  let start = hero || h1;
+  const top = start.previousElementSibling;
+  if (top && top.classList.contains('topbar') && top === app.firstElementChild) start = top;
+  const items = [];
+  for (let n = start; n; n = n.nextElementSibling) { items.push(n); if (n === h1) break; }
+  for (let n = h1.nextElementSibling; n && n.matches('p.lead'); n = n.nextElementSibling) items.push(n);
+  const focused = document.activeElement;
+  const band = document.createElement('div');
+  band.className = 'page-band';
+  start.before(band);
+  band.append(...items);
+  if (focused && band.contains(focused)) focused.focus({ preventScroll: true });
+}
+
+if (typeof document !== 'undefined') {
+  iconize(document.body);
+  bandify();
+  new MutationObserver((changes) => {
+    for (const c of changes) c.addedNodes.forEach((n) => iconize(n));
+    bandify();
+  }).observe(document.body, { childList: true, subtree: true });
 }

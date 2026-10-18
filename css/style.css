@@ -7,12 +7,22 @@
 
 /* Guida Sanità — mobile first, large readable text. */
 :root {
-  /* Stile morbido: bianco e verde acqua, angoli arrotondati, carattere tondo. */
-  --bg: #ffffff;
+  /* Ispirato a NHS.uk: pagina grigio chiaro, riquadri bianchi, un colore = un ruolo.
+     Testo e titoli: quasi nero. Link: verde acqua scuro, sottolineati.
+     Pulsanti d'azione: verde pieno. Testata: verde acqua scuro. */
+  --bg: #f0f4f5;
   --surface: #ffffff;
-  --text: #263548;
-  --muted: #5d6878;
-  --border: #e1eeec;
+  --text: #212b32;
+  --muted: #4c6272;
+  --border: #d8dde0;
+  --border-strong: #aeb7bd;
+  --input-border: #4c6272;
+  --link: #0b5f5c;
+  --link-hover: #073f3d;
+  --action: #007f3b;
+  --action-dark: #00401e;
+  --header: #0b5f5c;
+  --header-dark: #084a47;
   --primary: #0f7c78;
   --primary-dark: #0b5f5c;
   --primary-ink: #ffffff;
@@ -25,9 +35,10 @@
   --warn-soft: #fff6e2;
   --bad: #a3271f;
   --bad-soft: #fdeeed;
-  --radius: 18px;
-  --shadow: 0 6px 24px rgba(15, 90, 85, 0.09);
-  --maxw: 42rem;
+  --radius: 8px;
+  --shadow: none;
+  --maxw: 42rem;  /* colonna di lettura */
+  --page: 56rem;  /* larghezza della pagina: testata, banda, home, aree, piè di pagina */
   font-size: 125%; /* 20px: testo grande */
 }
 
@@ -49,18 +60,10 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   outline-offset: 2px;
 }
 
-.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 16px; }
+.wrap { max-width: var(--page); margin: 0 auto; padding: 0 16px; }
 
-.site-header {
-  background: var(--primary);
-  color: var(--primary-ink);
-}
-.site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 12px; padding-bottom: 12px; }
-.site-header a { color: inherit; text-decoration: none; font-weight: 700; font-size: 1.1rem; white-space: nowrap; }
-.site-header nav { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 4px 12px; }
-.site-header nav a { font-weight: 500; font-size: 0.85rem; text-decoration: underline; }
 
-main { padding: 24px 0 40px; }
+main, main.wrap { padding-top: 24px; padding-bottom: 40px; }
 
 h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 12px; }
 h2 { font-size: 1.25rem; line-height: 1.3; margin: 28px 0 10px; }
@@ -174,9 +177,6 @@ table.fields th { width: 40%; }
 
 .ricetta { width: 100%; height: auto; max-width: 520px; display: block; margin: 8px auto; }
 
-.home-cards { display: grid; gap: 16px; }
-@media (min-width: 640px) { .home-cards { grid-template-columns: 1fr 1fr; } }
-.home-cards .card h2 { margin-top: 0; }
 
 /* Footer */
 .site-footer { border-top: 1px solid var(--border); background: #f1efe9; font-size: 0.85rem; color: var(--muted); padding: 20px 0 32px; }
@@ -247,59 +247,97 @@ details.search { margin-top: 20px; }
 details.search input[type="search"] { margin: 8px 0 12px; }
 button.btn.choice { width: 100%; }
 
-/* ---- Tema: bianco e verde acqua, riquadri morbidi ---- */
-.site-header { background: #fff; color: var(--text); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 10; box-shadow: 0 2px 12px rgba(15, 90, 85, 0.05); }
-.site-header .wrap { padding-top: 14px; padding-bottom: 14px; }
-.site-header a.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--text); font-weight: 800; font-size: 1.3rem; letter-spacing: -0.01em; }
+/* ---- Tema ispirato a NHS.uk: testata piena, pagina grigia, riquadri bianchi ---- */
+
+/* Testata: logo e ricerca sopra, le 4 aree sotto (2×2 sul telefono, in fila sul computer). */
+.site-header { background: var(--header); color: #fff; }
+.header-top { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; padding-top: 12px; padding-bottom: 12px; }
+.site-header a.brand { display: inline-flex; align-items: center; gap: 10px; color: #fff; font-weight: 800; font-size: 1.25rem; letter-spacing: -0.01em; text-decoration: none; white-space: nowrap; }
+.site-header a.brand:hover > span { text-decoration: underline; }
 .brand-mark { width: 40px; height: 40px; flex: none; }
-.site-header nav a { color: var(--primary); font-weight: 700; text-decoration: none; }
+.brand-tag { display: inline-block; margin-left: 4px; padding: 0 8px; border-radius: 4px; background: rgba(255, 255, 255, 0.16); font-size: 0.75rem; font-weight: 700; vertical-align: 2px; }
+.header-search { display: flex; flex: 1 1 100%; min-width: 0; }
+@media (min-width: 640px) { .header-search { flex: 0 1 18rem; margin-left: auto; } }
+.site-header .header-search input[type="search"] {
+  flex: 1; min-width: 0; min-height: 44px; margin: 0; padding: 6px 12px; border: 2px solid #fff; border-right: none;
+  border-radius: 6px 0 0 6px; background: #fff; color: var(--text); font: inherit; font-size: 0.85rem;
+}
+.header-search button {
+  flex: none; width: 48px; min-height: 44px; border: 2px solid #fff; border-radius: 0 6px 6px 0;
+  background: var(--primary-soft); color: var(--header); cursor: pointer; display: flex; align-items: center; justify-content: center;
+}
+.header-search button:hover { background: var(--tint); }
+.site-header input:focus-visible, .site-header button:focus-visible, .site-header a:focus-visible { outline: 4px solid #ffeb3b; outline-offset: 0; }
 
-h1, h2 { color: var(--primary); font-weight: 800; letter-spacing: -0.01em; }
+.header-nav { background: var(--header-dark); }
+.header-nav ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; }
+@media (min-width: 640px) { .header-nav ul { display: flex; gap: 4px; } }
+.header-nav a {
+  display: block; padding: 10px 12px; color: #fff; font-weight: 700; font-size: 0.85rem; white-space: normal;
+  text-decoration: none; border-bottom: 4px solid transparent;
+}
+.header-nav li:nth-child(odd) a { padding-left: 0; }
+@media (min-width: 640px) { .header-nav li a { padding: 12px 14px 8px; } .header-nav li:first-child a { padding-left: 0; } }
+.header-nav a:hover { text-decoration: underline; }
+.header-nav a[aria-current] { border-bottom-color: #fff; }
+
+/* Testo: titoli neri, link verde acqua sottolineati (si capisce subito cosa si clicca). */
+h1, h2, h3, legend { color: var(--text); font-weight: 800; letter-spacing: -0.01em; }
 h1 { font-size: 1.7rem; }
-h3 { color: var(--text); font-weight: 800; }
 .lead { color: var(--text); }
-a { color: var(--primary); }
+a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--link-hover); text-decoration-thickness: 3px; }
 
-.hero-band { margin: -24px -16px 8px; padding: 28px 16px 24px; background: linear-gradient(180deg, #ffffff 0%, #f1faf8 45%, var(--tint) 100%); border-radius: 0 0 28px 28px; }
-.hero { display: inline-flex; align-items: center; justify-content: center; width: 4.6rem; height: 4.6rem; font-size: 2.6rem; border-radius: 50%; background: linear-gradient(180deg, #fff, var(--primary-soft)); box-shadow: var(--shadow); }
+.hero { display: inline-flex; align-items: center; justify-content: center; width: 4.6rem; height: 4.6rem; font-size: 2.6rem; border-radius: 50%; background: var(--surface); border: 1px solid var(--border); }
 
-.card, details.card, details.fonti { border: none; border-radius: var(--radius); box-shadow: var(--shadow); background: var(--surface); }
-details.help { background: var(--ok-soft); border: none; box-shadow: var(--shadow); border-radius: var(--radius); }
-.notice { border-radius: var(--radius); border-left-width: 5px; }
+/* Riquadri: bianchi su fondo grigio, con un bordo spesso sotto al posto dell'ombra. */
+.card, details.card, details.fonti { background: var(--surface); border: none; border-bottom: 4px solid var(--border); border-radius: var(--radius); box-shadow: none; }
+details.help { background: var(--ok-soft); border: none; border-left: 6px solid var(--ok); border-radius: 0 var(--radius) var(--radius) 0; box-shadow: none; }
+.notice { border-radius: 0 var(--radius) var(--radius) 0; border-left-width: 6px; }
+.notice.info { background: var(--surface); border-color: var(--primary); }
 
-.btn { border-radius: var(--radius); border: 1px solid var(--border); box-shadow: var(--shadow); color: var(--primary); font-weight: 700; }
-.btn:hover { background: var(--primary-soft); }
-.btn.primary { border-radius: 999px; border: none; background: var(--primary); color: #fff; box-shadow: 0 6px 18px rgba(15, 124, 120, 0.3); }
-.btn.primary:hover { background: var(--primary-dark); filter: none; }
-.btn.center { border-radius: 999px; }
-.btn.choice { background: #fff; color: var(--primary); border: 1px solid var(--border); }
+/* Scelte (portano avanti): riquadro bianco, testo come un link. */
+.btn { border-radius: var(--radius); border: none; border-bottom: 4px solid var(--border); box-shadow: none; background: var(--surface); color: var(--link); font-weight: 700; }
+.btn:hover { background: var(--surface); border-bottom-color: var(--border-strong); color: var(--link-hover); }
+.btn:hover .txt { text-decoration: underline; }
+.btn:active { transform: translateY(2px); border-bottom-width: 2px; margin-bottom: 8px; }
+.btn.choice { background: var(--surface); color: var(--link); border: none; border-bottom: 4px solid var(--border); }
 .btn.choice .ico { width: 3rem; height: 3rem; display: inline-flex; align-items: center; justify-content: center; font-size: 1.6rem; border-radius: 50%; background: var(--primary-soft); }
 .btn.choice small { color: var(--muted); }
 .btn.call { color: var(--ok); }
 .btn.call .ico { background: var(--ok-soft); }
+.btn.center { border-radius: var(--radius); }
+
+/* Pulsante d'azione (Comincia, Controlla, Scriviamo la lettera): verde pieno, un solo colore in tutto il sito. */
+.btn.primary { border: none; border-radius: var(--radius); background: var(--action); color: #fff; box-shadow: 0 4px 0 var(--action-dark); margin-bottom: 10px; }
+.btn.primary:hover { background: #00662f; color: #fff; filter: none; border: none; }
+.btn.primary:hover .txt { text-decoration: none; }
+.btn.primary:active { transform: translateY(4px); box-shadow: none; border: none; margin-bottom: 10px; }
 .letter-ico { background: #fff4b8; }
 
-.listen { border: none; background: var(--primary-soft); color: var(--primary); font-weight: 800; }
-.back { color: var(--primary); font-weight: 700; text-decoration: none; }
+.listen { border: 2px solid var(--link); background: var(--surface); color: var(--link); font-weight: 800; }
+.listen:hover { background: var(--primary-soft); }
+.back { color: var(--link); font-weight: 700; text-decoration: underline; }
 
+/* Campi: bordo scuro e ben visibile, sfondo bianco. */
 input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="number"], input[type="search"], select, textarea {
-  border-radius: 14px; border: 2px solid var(--border); font-family: inherit;
+  border-radius: 4px; border: 2px solid var(--input-border); background: var(--surface); font-family: inherit;
 }
 input[type="number"], input[type="search"] { width: 100%; min-height: 48px; padding: 10px 12px; font: inherit; }
-input:focus, select:focus, textarea:focus { border-color: var(--primary); }
-fieldset { border: 1px solid var(--border); border-radius: var(--radius); }
-legend { color: var(--primary); }
+input:focus, select:focus, textarea:focus { border-color: var(--text); box-shadow: inset 0 0 0 2px var(--text); }
+fieldset { background: var(--surface); border: none; border-bottom: 4px solid var(--border); border-radius: var(--radius); }
 
 ol.big-steps > li::before { background: var(--primary); }
 ol.big-steps > li { border-bottom-color: var(--border); }
 .progress .dot.on { background: var(--primary); }
-.progress .dot { background: var(--tint); }
+.progress .dot { background: var(--border-strong); }
 
-.letter { border-radius: var(--radius); border: 1px solid var(--border); box-shadow: var(--shadow); }
+.letter { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: none; }
+table.fields { background: var(--surface); }
 table.fields th, table.fields td { border-bottom-color: var(--border); }
 
-.site-footer { background: #f3faf9; border-top: none; }
-.site-footer a { color: var(--primary); }
+.site-footer { background: #e8edee; border-top: 4px solid var(--header); color: var(--muted); }
+.site-footer a { color: var(--link); }
 
 /* ---- Avvisi: un colore = un significato, uguale in tutto il sito (come le «care card» NHS) ----
    info   = consiglio o aiuto (verde acqua)
@@ -314,15 +352,10 @@ table.fields th, table.fields td { border-bottom-color: var(--border); }
 .btn.choice:not(:has(.ico)) { padding-left: 22px; }
 
 /* ---- Pagina iniziale: le scelte subito visibili sul telefono ---- */
-.home-intro { margin: -8px 0 4px; }
 .home-intro h1 { margin-bottom: 6px; }
 .home-intro .lead { font-size: 1.05rem; margin-bottom: 8px; }
 .home-trust { font-size: 0.9rem; color: var(--muted); margin: 0 0 14px; }
 .home-trust strong { color: var(--text); }
-.home-search { margin: 4px 0 18px; }
-.home-search label { margin: 0 0 4px; font-size: 0.95rem; }
-.home-search input[type="search"] { margin: 0; }
-#q-results:not(:empty) { margin-top: 10px; }
 .home-about { margin-top: 24px; }
 /* Senza JavaScript si vede il contenuto scritto nella pagina (titolo, descrizione,
    elenco dei moduli); con JavaScript solo «Un momento…» finché la pagina è pronta. */
@@ -331,3 +364,105 @@ table.fields th, table.fields td { border-bottom-color: var(--border); }
 .js .static-fallback { display: none; }
 .static-list { padding-left: 1.2rem; }
 .static-list li { margin: 8px 0; }
+
+/* ---- Percorso «Inizio › Area» sotto la testata (come NHS.uk) ----
+   Sul computer tutto il percorso; sul telefono solo il link al livello sopra. */
+.breadcrumb { background: var(--surface); border-bottom: 1px solid var(--border); font-size: 0.85rem; }
+.breadcrumb .wrap { padding-top: 10px; padding-bottom: 10px; }
+.breadcrumb ol { display: none; list-style: none; margin: 0; padding: 0; flex-wrap: wrap; }
+.breadcrumb li + li::before { content: "›"; margin: 0 10px; color: var(--muted); }
+.breadcrumb-back { display: inline-block; font-weight: 700; padding: 4px 0; }
+@media (min-width: 640px) { .breadcrumb ol { display: flex; } .breadcrumb-back { display: none; } }
+
+/* ---- Pagine delle aree (visite-esami/, aiuto-a-casa/, …) ---- */
+ul.area-list { list-style: none; padding: 0; margin: 20px 0 8px; }
+ul.area-list li { margin: 0; }
+ul.area-others { padding-left: 1.2rem; margin: 0 0 12px; }
+ul.area-others li { margin: 8px 0; }
+
+/* Risultati della ricerca in home, sopra i 4 riquadri. */
+.home-results { margin: 8px 0 24px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+.home-results h2 { margin-top: 0; }
+
+/* ---- Icone disegnate (al posto delle emoji, vedi iconize in js/common.js) ----
+   Un solo colore, quello del testo intorno; verde, rosso e giallo solo quando
+   l'icona vuol dire «sì», «no» o «attenzione». */
+svg.i { width: 1.15em; height: 1.15em; vertical-align: -0.2em; flex: none; }
+.ico svg.i { width: 1em; height: 1em; vertical-align: middle; }
+.btn.choice .ico, ul.icon-list .ico, details > summary .ico { color: var(--link); }
+.i-ok { color: var(--ok); }
+.i-bad { color: var(--bad); }
+.i-warn { color: #b26b00; }
+.btn.primary .i, .notice.urgent .i { color: inherit; }
+.hero { color: var(--link); }
+.hero svg.i { width: 0.95em; height: 0.95em; }
+details.help .ico { color: var(--ok); }
+
+/* ---- Banda colorata in alto: icona, titolo e frase principale (come NHS.uk) ----
+   Il colore arriva fino ai bordi dello schermo ma il testo resta nella colonna. */
+.page-band {
+  --band: #0f7c78;
+  background: var(--band); color: #fff;
+  box-shadow: 0 0 0 100vmax var(--band); clip-path: inset(0 -100vmax);
+  margin: 0 0 24px; padding: 20px 0 26px;
+}
+.page-band:first-child { margin-top: -24px; }
+.page-band h1, .page-band p, .page-band strong { color: #fff; }
+.page-band h1 { margin-bottom: 8px; }
+.page-band .lead, .page-band .home-trust { color: #e3f4f1; margin-bottom: 0; }
+.page-band .topbar { margin-bottom: 4px; }
+.page-band .back { color: #fff; }
+.page-band .listen { background: transparent; border-color: #fff; color: #fff; }
+.page-band .listen:hover { background: rgba(255, 255, 255, 0.14); }
+.page-band .hero { background: #fff; border: none; margin-top: 0; }
+.page-band a:focus-visible, .page-band button:focus-visible { outline-color: #ffeb3b; }
+
+/* Il titolo riceve il focus a ogni schermata (per i lettori di schermo), ma non è
+   un elemento da cliccare: niente contorno. */
+h1[tabindex="-1"]:focus { outline: none; }
+
+/* ---- Home: riquadro urgenze (rosso, come le «care card» urgenti di NHS.uk) ---- */
+.care-urgent { margin: 28px 0; background: var(--surface); border: 3px solid var(--bad); border-radius: var(--radius); overflow: hidden; }
+.care-urgent h2 { margin: 0; padding: 12px 16px; background: var(--bad); color: #fff; font-size: 1.15rem; }
+.care-urgent .care-body { padding: 14px 16px 6px; }
+.care-urgent ul { padding-left: 1.2rem; margin: 0 0 10px; }
+.care-urgent li { margin: 6px 0; }
+.care-urgent a { color: var(--bad); }
+
+/* ---- Link d'azione con la freccia verde (domande frequenti) ---- */
+ul.action-links { list-style: none; padding: 0; margin: 0 0 24px; }
+ul.action-links li { margin: 4px 0; }
+.action-link { display: inline-flex; align-items: center; gap: 14px; min-height: 48px; padding: 4px 0; color: var(--text); font-weight: 800; text-decoration: none; }
+.action-link .arrow { flex: none; width: 40px; height: 40px; border-radius: 50%; background: var(--action); color: #fff; display: inline-flex; align-items: center; justify-content: center; font-size: 1.3rem; }
+.action-link .arrow svg.i { width: 1em; height: 1em; vertical-align: 0; }
+.action-link:hover { color: var(--text); }
+.action-link:hover .txt { text-decoration: underline; text-decoration-thickness: 3px; }
+
+/* ---- «Questa pagina ti è stata utile?» e data del controllo, sopra il piè di pagina ---- */
+.page-feedback { padding: 8px 0 24px; }
+.page-feedback .fb-box { background: var(--surface); border-bottom: 4px solid var(--border); border-radius: var(--radius); padding: 14px 18px; }
+.page-feedback h2 { font-size: 1.05rem; margin: 0 0 10px; }
+.fb-buttons { display: flex; gap: 10px; margin-bottom: 8px; }
+.fb-buttons button {
+  min-width: 88px; min-height: 48px; padding: 8px 18px; border: 2px solid var(--link); border-radius: var(--radius);
+  background: var(--surface); color: var(--link); font: inherit; font-weight: 800; cursor: pointer;
+}
+.fb-buttons button:hover { background: var(--primary-soft); }
+.page-feedback .fb-box > :last-child { margin-bottom: 0; }
+.fb-checked { margin: 12px 0 0; color: var(--muted); font-size: 0.9rem; }
+
+/* ---- Larghezza (come NHS.uk): pagina larga, testo in una colonna di lettura a sinistra ----
+   Home e pagine delle aree (data-wide) usano tutta la larghezza: riquadri su 2 colonne. */
+#app > *, .page-feedback .wrap > * { max-width: var(--maxw); }
+#app > .page-band, #app[data-wide] > .area-grid, #app[data-wide] > .home-row, #app[data-wide] > .home-results, #app[data-wide] > ul.area-list { max-width: none; }
+.page-band > * { max-width: var(--maxw); }
+ul.area-list li { display: flex; }
+ul.area-list li > .btn { flex: 1; }
+@media (min-width: 768px) {
+  .area-grid, ul.area-list, #q-results { display: grid; grid-template-columns: 1fr 1fr; gap: 0 16px; }
+  #q-results > p { grid-column: 1 / -1; }
+  .home-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0 32px; align-items: start; }
+  .home-row > .care-urgent { order: 2; }
+  .home-row > .care-urgent, .home-row > .frequent { margin-top: 28px; }
+  .home-row .frequent h2 { margin-top: 0; }
+}

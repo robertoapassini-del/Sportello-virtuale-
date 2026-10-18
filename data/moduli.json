@@ -2,24 +2,36 @@
   "groups": [
     {
       "id": "cure",
+      "page": "visite-esami",
+      "short": "Visite ed esami",
+      "intro": "Hai una ricetta e l'appuntamento è troppo lontano? Non sai se devi pagare il ticket? Qui trovi cosa ti spetta e come chiederlo.",
       "icon": "🩺",
       "title": "Una visita, un esame, una medicina",
       "small": "Appuntamenti lontani, ticket, piano terapeutico, referti"
     },
     {
       "id": "prevenzione",
+      "page": "prevenzione-medico",
+      "short": "Prevenzione",
+      "intro": "I controlli e i vaccini che puoi fare gratis. E come scegliere o cambiare il medico di famiglia o il pediatra.",
       "icon": "🛡️",
       "title": "Prevenzione e medico di famiglia",
       "small": "Controlli e vaccini gratis, scegliere il medico o il pediatra"
     },
     {
       "id": "casa",
+      "page": "aiuto-a-casa",
+      "short": "Aiuto a casa",
+      "intro": "Una persona della famiglia è malata e deve essere curata a casa? Qui trovi come chiedere l'infermiere, gli ausili e le cure palliative.",
       "icon": "🏠",
       "title": "Aiuto a casa per una persona malata",
       "small": "Infermiere a casa, carrozzina, letto, pannoloni, cure palliative"
     },
     {
       "id": "invalidita",
+      "page": "invalidita-aiuti",
+      "short": "Invalidità",
+      "intro": "La visita per l'invalidità, il verbale e gli aiuti economici. Ti diciamo i tempi di legge e cosa fare.",
       "icon": "♿",
       "title": "Invalidità e aiuti economici",
       "small": "Visita INPS, verbale sbagliato, assegno di inclusione"
@@ -29,6 +41,7 @@
     {
       "id": "liste-attesa",
       "group": "cure",
+      "data": ["rules", "asp-sicilia"],
       "icon": "📅",
       "title": "La visita o l'esame è troppo lontano",
       "small": "Il CUP mi ha dato un appuntamento tra tanto tempo",
@@ -37,6 +50,7 @@
     {
       "id": "esenzione-ticket",
       "group": "cure",
+      "data": ["rules-esenzione"],
       "icon": "🎫",
       "title": "Devo pagare il ticket?",
       "small": "Esenzione per età o per reddito",
@@ -45,6 +59,7 @@
     {
       "id": "piano-terapeutico",
       "group": "cure",
+      "data": ["rules-piano"],
       "icon": "💊",
       "title": "La medicina con il piano terapeutico",
       "small": "Cos'è e quando rinnovarlo",
@@ -53,6 +68,7 @@
     {
       "id": "cartella-clinica",
       "group": "cure",
+      "data": ["rules-cartella", "asp-sicilia"],
       "icon": "📁",
       "title": "Non mi danno la cartella clinica o i referti",
       "small": "L'ho chiesta all'ospedale e non arriva",
@@ -61,6 +77,7 @@
     {
       "id": "prevenzione",
       "group": "prevenzione",
+      "data": ["rules-prevenzione", "asp-sicilia"],
       "icon": "🛡️",
       "title": "Quali controlli e vaccini posso fare gratis?",
       "small": "Esami contro i tumori e vaccini per la tua età",
@@ -69,6 +86,7 @@
     {
       "id": "medico-famiglia",
       "group": "prevenzione",
+      "data": ["rules-medico", "asp-sicilia"],
       "icon": "👨‍⚕️",
       "title": "Scegliere o cambiare il medico di famiglia o il pediatra",
       "small": "Come si fa e cosa fare se non trovi posto",
@@ -77,6 +95,7 @@
     {
       "id": "assistenza-domiciliare",
       "group": "casa",
+      "data": ["rules-domiciliare", "asp-sicilia"],
       "icon": "🏠",
       "title": "Serve un infermiere o un medico a casa",
       "small": "Assistenza domiciliare dell'ASP",
@@ -85,6 +104,7 @@
     {
       "id": "ausili",
       "group": "casa",
+      "data": ["rules-ausili", "asp-sicilia"],
       "icon": "🦽",
       "title": "La carrozzina, il letto o i pannoloni non arrivano",
       "small": "Ho fatto la domanda all'ASP e aspetto",
@@ -93,6 +113,7 @@
     {
       "id": "cure-palliative",
       "group": "casa",
+      "data": ["rules-palliative", "asp-sicilia"],
       "icon": "🕊️",
       "title": "Cure palliative a casa o in hospice",
       "small": "Per una malattia grave e avanzata",
@@ -101,6 +122,7 @@
     {
       "id": "invalidita",
       "group": "invalidita",
+      "data": ["rules-invalidita", "inps-sicilia"],
       "icon": "♿",
       "title": "La visita per l'invalidità non arriva",
       "small": "Il medico ha mandato il certificato all'INPS",
@@ -109,6 +131,7 @@
     {
       "id": "ricorso-invalidita",
       "group": "invalidita",
+      "data": ["rules-ricorso"],
       "icon": "⚖️",
       "title": "Il verbale di invalidità è sbagliato",
       "small": "Ho 6 mesi per il ricorso: quanto mi resta?",
@@ -117,6 +140,7 @@
     {
       "id": "assegno-inclusione",
       "group": "invalidita",
+      "data": ["rules-adi"],
       "icon": "🪪",
       "title": "Ho diritto all'assegno di inclusione?",
       "small": "Le condizioni e come fare la domanda",

@@ -8,6 +8,8 @@
   "scripts": {
     "test": "node --test tests/*.test.mjs",
     "test:combinazioni": "node tests/combinazioni.cjs",
+    "pagine": "node tools/pagine.mjs",
+    "icone": "node tools/icone.mjs",
     "start": "npx --yes serve -l 8080 ."
   }
 }
