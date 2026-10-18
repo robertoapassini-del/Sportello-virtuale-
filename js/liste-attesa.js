@@ -4,7 +4,7 @@
 // Testi: italiano semplice, frasi brevi, un'idea per frase.
 import { checkWaiting, callbackDeadline, maxWaitDays, todayISO, formatIt, parseDate, daysBetween, addDays } from './engine.js';
 import { tutelaLetter, tutelaReminder, mailtoHref } from './letters.js';
-import {
+import { noPecBox,
   esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton,
   personFields, reportErrorHref, choice, helpBox, listenButton, speakScreen, stopSpeaking, sourcesBox, moreHelp,
 } from './common.js';
@@ -445,6 +445,7 @@ const screens = {
           <a class="btn center${official ? ' primary' : ''}" id="mail-btn" href="#">📧 Manda per email</a>
         </div>
         <p class="say" id="send-hint"></p>
+        ${noPecBox()}
         <div class="card">
           <h3 class="say" style="margin-top:0">Prima di mandarla</h3>
           <ul class="icon-list say">
@@ -513,6 +514,7 @@ const screens = {
             <a class="btn center" id="rmail-btn" href="#">📧 Manda per email</a>
           </div>
           <p class="muted">Usa i dati che hai scritto prima. Se mancano, lascia vuoto e scrivi a penna.</p>
+          ${noPecBox()}
         </div>
         ${disclaimer(a.last_verified)}
         ${restartBtn('Fai un altro controllo')}`,

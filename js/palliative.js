@@ -3,7 +3,7 @@
 // Scritto con delicatezza: spesso chi legge sta assistendo una persona molto malata.
 import { todayISO, formatIt, parseDate, daysBetween } from './engine.js';
 import { genericRequest, mailtoHref } from './letters.js';
-import { esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton, personFields, reportErrorHref, generalContact } from './common.js';
+import { noPecBox, esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton, personFields, reportErrorHref, generalContact } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
 
 const ROOT = '../';
@@ -159,6 +159,7 @@ const screens = {
         <div id="preview" class="letter"></div>
         ${letterButtons()}
         <p class="say" id="send-hint"></p>
+        ${noPecBox()}
         <p class="muted"><a href="${esc(reportErrorHref(`Cure palliative ${a.name}`))}">Segnala un errore</a></p>
         ${disclaimer(rules.last_verified)}
         ${restartBtn()}`,

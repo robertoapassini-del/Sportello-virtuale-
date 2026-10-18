@@ -4,7 +4,7 @@
 // Testi: italiano semplice, frasi brevi, un'idea per frase.
 import { invRegime, invDeadline, todayISO, formatIt, parseDate, daysBetween } from './engine.js';
 import { inpsReminder, mailtoHref } from './letters.js';
-import {
+import { noPecBox,
   esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton,
   personFields, reportErrorHref, choice, helpBox, listenButton, speakScreen, stopSpeaking, sourcesBox, moreHelp,
 } from './common.js';
@@ -296,6 +296,7 @@ const screens = {
           <a class="btn center" id="mail-btn" href="#">📧 Manda per email</a>
         </div>
         <p class="say">📨 L'indirizzo dell'INPS è una PEC (una email speciale). <strong>Se non hai la PEC, porta la lettera a un patronato</strong>: la mandano loro.</p>
+        ${noPecBox()}
         <div class="card">
           <h3 class="say" style="margin-top:0">Prima di mandarla</h3>
           <ul class="icon-list say">

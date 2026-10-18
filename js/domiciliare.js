@@ -3,7 +3,7 @@
 // prepariamo un sollecito al distretto. Non chiediamo la malattia.
 import { todayISO, formatIt, parseDate, daysBetween, addDays } from './engine.js';
 import { genericRequest, mailtoHref } from './letters.js';
-import { esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton, personFields, reportErrorHref, generalContact } from './common.js';
+import { noPecBox, esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton, personFields, reportErrorHref, generalContact } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
 
 const ROOT = '../';
@@ -158,6 +158,7 @@ const screens = {
         <div id="preview" class="letter"></div>
         ${letterButtons()}
         <p class="say" id="send-hint"></p>
+        ${noPecBox()}
         <div class="card"><h3 class="say" style="margin-top:0">Prima di mandarla</h3>
           <ul class="icon-list say">
             <li><span class="ico" aria-hidden="true">🖊️</span> Firma la lettera</li>

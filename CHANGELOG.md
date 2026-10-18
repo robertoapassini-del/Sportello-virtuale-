@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 18/10/2026 — «Non hai la PEC?»
+- Sotto ogni lettera, un riquadro con 4 modi per mandarla senza PEC: patronato, a mano con timbro, raccomandata A/R, familiare con delega.
+- Il test delle combinazioni controlla che ci sia in ogni schermata con una lettera.
+
 ## 18/10/2026 — nome definitivo: Ci penso io
 - «Cosa mi spetta» era già usato da un sito di bonus. Nuovo nome «Ci penso io» (dominio cipensoio.it).
 - Email segnaposto: info@cipensoio.it.

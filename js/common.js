@@ -73,6 +73,21 @@ export function moreHelp() {
   return `<a class="btn center more-help no-say" href="../index.html">🏠 Ti serve altro? Torna all'inizio</a>`;
 }
 
+// Riquadro «Non hai la PEC?»: sotto ogni lettera. Modi validi per mandarla lo stesso.
+export function noPecBox() {
+  return `<details class="card no-pec">
+    <summary><span class="ico" aria-hidden="true">📨</span> Non hai la PEC? Ecco 4 modi per mandarla lo stesso</summary>
+    <p>La PEC è un'email speciale che vale come una raccomandata. Un'email normale mandata a un indirizzo PEC spesso viene rifiutata. Ecco cosa puoi fare:</p>
+    <ul class="icon-list">
+      <li><span class="ico" aria-hidden="true">🏢</span><span><strong>Patronato</strong> (INCA, ACLI, INAS…): porti la lettera firmata e i documenti, la mandano loro con la loro PEC. È gratis.</span></li>
+      <li><span class="ico" aria-hidden="true">🏥</span><span><strong>A mano</strong>: porti la lettera all'ufficio (URP, distretto, ospedale) e ti fai dare una copia con <strong>timbro e data</strong>. Quella copia è la tua prova.</span></li>
+      <li><span class="ico" aria-hidden="true">✉️</span><span><strong>Raccomandata con ricevuta di ritorno</strong> (A/R), dall'ufficio postale. Costa pochi euro. Conserva la ricevuta.</span></li>
+      <li><span class="ico" aria-hidden="true">👨‍👩‍👧</span><span><strong>Un familiare con la PEC</strong> può mandarla per te. Allega la delega firmata e i documenti di tutti e due.</span></li>
+    </ul>
+    <p class="muted">Se fai spesso pratiche, una PEC tua costa circa 5–10 € l'anno (Poste, Aruba, Register e altri).</p>
+  </details>`;
+}
+
 // root: percorso relativo verso la cartella principale ('' oppure '../').
 export function renderFooter(root = '') {
   const el = document.getElementById('site-footer');
