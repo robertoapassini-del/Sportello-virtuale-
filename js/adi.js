@@ -132,7 +132,7 @@ const screens = {
         <div class="hero" aria-hidden="true">✅</div>
         <h1>Le condizioni principali ci sono</h1>
         <div class="notice ok">
-          <p class="say">Famiglia, residenza e ISEE (${formatEuro(state.isee)}, sotto il limite di ${formatEuro(rules.isee_max)}) vanno bene.</p>
+          <p class="say">Famiglia, residenza e ISEE (${formatEuro(state.isee)}, entro il limite di ${formatEuro(rules.isee_max)}) vanno bene.</p>
           <p class="say">L'INPS controlla anche reddito, casa e risparmi: il patronato lo verifica con te prima di mandare la domanda.</p>
         </div>
         ${caf}

@@ -2,7 +2,7 @@
 // Regola: la direzione sanitaria consegna la documentazione disponibile entro 7 giorni,
 // le integrazioni entro 30 (art. 4 c. 3 L. 24/2017). Ricorso: art. 25 L. 241/1990.
 // Non chiediamo mai la malattia: solo il nome della struttura e le date.
-import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween, art } from './engine.js';
+import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
 import { cartellaReminder, mailtoHref } from './letters.js';
 import { noPecBox,
   esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton, personFields, reportErrorHref, generalContact,
@@ -107,6 +107,15 @@ const screens = {
   }),
 
   result: () => {
+    // Ricorso al TAR (art. 25 L. 241/1990): dopo integration_days giorni di silenzio, entro gli appeal_days giorni successivi.
+    const tarText = () => {
+      const from = addDays(state.requestDate, rules.integration_days);
+      const until = addDays(from, rules.appeal_days);
+      const waited = daysBetween(state.requestDate, todayISO());
+      if (waited < rules.integration_days) return `Se dopo ${rules.integration_days} giorni dalla richiesta (${formatIt(from)}) non hai ancora niente, un avvocato può fare ricorso al TAR fino ${art('al', until)}${formatIt(until)}.`;
+      if (daysBetween(todayISO(), until) >= 0) return `Con un avvocato puoi fare ricorso al TAR fino ${art('al', until)}<strong>${formatIt(until)}</strong>.`;
+      return `Il tempo per il ricorso al TAR su questa richiesta è finito ${art('il', until)}${formatIt(until)}. Puoi fare una nuova richiesta scritta: da quella ripartono i tempi.`;
+    };
     const d = deadline();
     const a = asp();
     if (d.status === 'error') return { html: `<h1>Controlla la data</h1>${restartBtn()}` };
@@ -137,7 +146,7 @@ const screens = {
           <li class="say"><strong>Telefona o vai all'ufficio cartelle cliniche</strong> con la ricevuta. Spesso basta questo.</li>
           <li class="say"><strong>Manda una lettera di sollecito</strong> alla Direzione sanitaria dell'ospedale. La scriviamo insieme.</li>
           <li class="say"><strong>Se ancora niente:</strong> reclamo all'URP dell'ASP di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''}, oppure a Cittadinanzattiva
-            (<a href="https://www.cittadinanzattiva.it" target="_blank" rel="noopener">cittadinanzattiva.it</a>). Se dopo ${rules.integration_days} giorni dalla richiesta non hai ancora niente, un avvocato può fare ricorso al TAR nei ${rules.appeal_days} giorni successivi.</li>
+            (<a href="https://www.cittadinanzattiva.it" target="_blank" rel="noopener">cittadinanzattiva.it</a>). ${tarText()}</li>
         </ol>
         ${a.phones.map((p) => callButton(p.label, p.number)).join('')}
         <button type="button" class="btn primary" data-go="letter">✍️ Scriviamo il sollecito insieme</button>

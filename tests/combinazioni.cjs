@@ -153,10 +153,13 @@ for (const ageBand of Object.keys(AGE)) for (const status of Object.keys(STATUS)
 const addM = (iso, n) => { const [y, m, d] = iso.split('-').map(Number); const t = new Date(Date.UTC(y, m - 1 + n, 1)); const last = new Date(Date.UTC(t.getUTCFullYear(), t.getUTCMonth() + 1, 0)).getUTCDate(); t.setUTCDate(Math.min(d, last)); return t.toISOString().slice(0, 10); };
 cases.push({ mod: 6, name: 'RIC · senza verbale', path: 'notyet', expectH1: 'Prima serve il verbale' });
 cases.push({ mod: 6, name: 'RIC · verbale oggi', verbale: TODAY, expectH1: 'Sei ancora in tempo', deadline: addM(TODAY, 6) });
-cases.push({ mod: 6, name: 'RIC · verbale 5 mesi fa (31 giorni: non urgente)', verbale: addM(TODAY, -5), expectH1: 'Sei ancora in tempo', deadline: addM(TODAY, 1) });
-cases.push({ mod: 6, name: 'RIC · mancano 10 giorni (urgente)', verbale: add(addM(TODAY, -6), 10), expectH1: 'Muoviti subito: manca poco', deadline: add(TODAY, 10) });
-cases.push({ mod: 6, name: 'RIC · scade oggi', verbale: addM(TODAY, -6), expectH1: 'Muoviti subito: manca poco', deadline: TODAY, today: true });
-cases.push({ mod: 6, name: 'RIC · scaduto ieri', verbale: add(addM(TODAY, -6), -1), expectH1: 'I 6 mesi sono passati', deadline: add(TODAY, -1) });
+// Il verbale che scade proprio in quel giorno (a fine mese non sempre esiste: 31/08 → 28/02 → 28/08).
+const verbaleFor = (deadline) => { for (let n = 170; n <= 190; n++) { const v = add(TODAY, -n); if (addM(v, 6) === deadline) return v; } return null; };
+cases.push({ mod: 6, name: 'RIC · verbale 100 giorni fa (non urgente)', verbale: add(TODAY, -100), expectH1: 'Sei ancora in tempo', deadline: addM(add(TODAY, -100), 6) });
+for (const [off, h1, name] of [[31, 'Sei ancora in tempo', 'mancano 31 giorni'], [30, 'Muoviti subito: manca poco', 'mancano 30 giorni (urgente)'], [10, 'Muoviti subito: manca poco', 'mancano 10 giorni (urgente)'], [0, 'Muoviti subito: manca poco', 'scade oggi'], [-1, 'I 6 mesi sono passati', 'scaduto ieri']]) {
+  const v = verbaleFor(add(TODAY, off));
+  if (v) cases.push({ mod: 6, name: `RIC · ${name}`, verbale: v, expectH1: h1, deadline: add(TODAY, off), today: off === 0 });
+}
 cases.push({ mod: 6, name: 'RIC · scaduto da un anno', verbale: addM(TODAY, -18), expectH1: 'I 6 mesi sono passati', deadline: addM(TODAY, -12) });
 cases.push({ mod: 6, name: 'RIC · data nel futuro', verbale: add(TODAY, 1), expectReqError: true });
 

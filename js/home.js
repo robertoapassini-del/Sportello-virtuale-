@@ -109,8 +109,8 @@ app.addEventListener('click', (e) => {
       showResults(hq.value);
       document.getElementById('q-box').scrollIntoView({ block: 'start' });
     });
-    // Ricerca partita da un'altra pagina (?q=carrozzina).
-    const asked = params.get('q');
+    // Ricerca partita da un'altra pagina: index.html#q=carrozzina (o ?q= senza JavaScript).
+    const asked = new URLSearchParams(location.hash.slice(1)).get('q') || params.get('q');
     if (asked) { hq.value = asked; showResults(asked); }
   }
 })();

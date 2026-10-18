@@ -34,6 +34,7 @@ const pages = [
 function header(root, area) {
   const nav = reg.groups.map((g) => `<li><a href="${root}${g.page}/index.html"${g.id === area ? ' aria-current="true"' : ''}>${esc(g.short)}</a></li>`).join('');
   return `<header class="site-header">
+<a class="skip-link" href="#app">Vai al contenuto</a>
 <div class="wrap header-top"><a class="brand" href="${root}index.html">${MARK}<span>Guida Sanità <span class="brand-tag">Sicilia</span></span></a>
 <form class="header-search" role="search" action="${root}index.html"><label for="hq" class="sr-only">Cerca nel sito</label><input type="search" id="hq" name="q" placeholder="Cerca: ticket, carrozzina…" autocomplete="off"><button type="submit" aria-label="Cerca"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg></button></form></div>
 <nav class="header-nav" aria-label="Argomenti"><div class="wrap"><ul>${nav}</ul></div></nav>
@@ -86,6 +87,9 @@ ${others.map((o) => `<li><a href="${root}${o.page}/index.html">${esc(o.title)}</
 `;
 }
 
+const base = read('sitemap.xml').match(/<loc>(.*?)<\/loc>/)[1];
+const pageUrl = (file) => base + file.replace(/(^|\/)index\.html$/, '$1');
+
 for (const p of pages) {
   const root = p.file.includes('/') ? '../' : '';
   let html = p.group ? areaPage(p.group, root) : read(p.file);
@@ -93,12 +97,13 @@ for (const p of pages) {
   const re = /<header class="site-header">[\s\S]*?<\/header>(\n<nav class="breadcrumb"[\s\S]*?<\/nav>)?/;
   if (!re.test(html)) throw new Error(`Testata non trovata in ${p.file}`);
   html = html.replace(re, () => top).replace('<meta name="theme-color" content="#ffffff">', '<meta name="theme-color" content="#0b5f5c">');
+  // Indirizzo canonico: «/x/» e «/x/index.html» sono la stessa pagina per Google.
+  html = html.replace(/<link rel="canonical"[^>]*>\n/, '').replace(/(<link rel="stylesheet")/, `<link rel="canonical" href="${pageUrl(p.file)}">\n$1`);
   write(p.file, html);
   console.log('ok', p.file);
 }
 
-const base = read('sitemap.xml').match(/<loc>(.*?)<\/loc>/)[1];
-const urls = pages.map((p) => base + p.file.replace(/(^|\/)index\.html$/, '$1')).sort((a, b) => (a === base ? -1 : b === base ? 1 : a.localeCompare(b)));
+const urls = pages.map((p) => pageUrl(p.file)).sort((a, b) => (a === base ? -1 : b === base ? 1 : a.localeCompare(b)));
 write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.map((u) => `  <url><loc>${u}</loc></url>`).join('\n')}

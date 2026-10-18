@@ -36,7 +36,7 @@ const bring = `
 function whoText() {
   const c = medicoChoice(rules, { age: state.age });
   if (c === 'pediatra') return `Fino a ${rules.pediatra_only_until} anni il bambino deve avere il <strong>pediatra</strong>.`;
-  if (c === 'pediatra-o-medico') return `Tra ${rules.pediatra_only_until} e ${rules.pediatra_or_medico_until} anni puoi scegliere il <strong>pediatra</strong> o il <strong>medico di famiglia</strong>.`;
+  if (c === 'pediatra-o-medico') return `Tra ${rules.pediatra_only_until} e ${rules.pediatra_or_medico_until - 1} anni puoi scegliere il <strong>pediatra</strong> o il <strong>medico di famiglia</strong>.`;
   return `Dai ${rules.pediatra_or_medico_until} anni si passa al <strong>medico di famiglia</strong>. Il pediatra si può tenere fino a ${rules.pediatra_extension_until} anni solo in casi particolari (per esempio malattie croniche): chiedi allo sportello.`;
 }
 

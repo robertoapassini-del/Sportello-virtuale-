@@ -20,9 +20,13 @@ let pageCounted = false;
 export function count(path, { title = '', event = false } = {}) {
   if (!GOATCOUNTER_CODE || !/^https?:$/.test(location.protocol)) return;
   if (/^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname)) return;
-  const q = new URLSearchParams({ p: path, t: title, rnd: Math.random().toString(36).slice(2) });
+  const q = new URLSearchParams({ p: path.replace(/\/index\.html$/, '/'), t: title, rnd: Math.random().toString(36).slice(2) });
   if (event) q.set('e', 'true');
-  else if (document.referrer && !document.referrer.startsWith(location.origin)) q.set('r', document.referrer);
+  else {
+    let from = '';
+    try { from = new URL(document.referrer).origin; } catch { /* nessuna provenienza */ }
+    if (from && from !== location.origin) q.set('r', from);
+  }
   try { new Image().src = `https://${GOATCOUNTER_CODE}.goatcounter.com/count?${q}`; } catch { /* non importa */ }
 }
 
@@ -416,6 +420,15 @@ function bandify() {
 }
 
 if (typeof document !== 'undefined') {
+  // Ricerca nella testata dalle altre pagine: si va alla home con il testo dopo «#»
+  // (index.html#q=…), che il browser non manda al server. In home la gestisce home.js.
+  document.addEventListener('submit', (e) => {
+    const form = e.target;
+    if (e.defaultPrevented || !form.matches('.header-search')) return;
+    e.preventDefault();
+    const q = form.elements.q.value.trim();
+    location.href = `${form.getAttribute('action')}${q ? `#q=${encodeURIComponent(q)}` : ''}`;
+  });
   iconize(document.body);
   bandify();
   new MutationObserver((changes) => {
