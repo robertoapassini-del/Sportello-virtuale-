@@ -18,7 +18,6 @@ const intro = () => `
   <section class="hero-band">
   <div class="topbar">${listenButton()}</div>
   <h1>Guida Sanità</h1>
-  <p class="tagline say">Niente panico.</p>
   <p class="lead say">Sanità, cure e invalidità: ti diciamo cosa ti spetta, entro quando e come chiederlo. Con parole semplici.</p>
   <div class="notice info"><p class="say">✅ È gratis. 🤝 Siamo volontari: <strong>non siamo l'ASP, l'INPS né un altro ufficio pubblico</strong>. 🔒 Non salviamo niente. 📍 Per ora vale solo in Sicilia.</p></div>
   </section>`;

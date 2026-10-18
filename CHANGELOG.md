@@ -3,7 +3,7 @@
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
 ## 18/10/2026 — nome: Guida Sanità
-- «Ci penso io» prometteva troppo (il sito spiega, non fa la pratica al posto tuo). Nuovo nome «Guida Sanità», frase «Niente panico.» (omaggio alla Guida galattica per autostoppisti). Dominio guidasanita.it libero al 18/10/2026.
+- «Ci penso io» prometteva troppo (il sito spiega, non fa la pratica al posto tuo). Nuovo nome «Guida Sanità» (la frase «Niente panico.» è stata provata e tolta). Dominio guidasanita.it libero al 18/10/2026.
 - Email segnaposto: info@guidasanita.it.
 
 ## 18/10/2026 — nuovo logo
