@@ -1,7 +1,7 @@
 // Modulo 10 — assistenza domiciliare integrata (ADI): «come la chiedo all'ASP?».
 // Non c'è un numero di giorni fissato dalla legge: spieghiamo i passi e, se nessuno viene,
 // prepariamo un sollecito al distretto. Non chiediamo la malattia.
-import { todayISO, formatIt, parseDate, daysBetween, addDays } from './engine.js';
+import { todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
 import { genericRequest, mailtoHref } from './letters.js';
 import { noPecBox, esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton, personFields, reportErrorHref, generalContact } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
@@ -118,10 +118,10 @@ const screens = {
         <div class="hero" aria-hidden="true">${late ? '⚠️' : '⏳'}</div>
         <h1>${late ? 'Aspetti da troppo: sollecita' : 'La richiesta è partita'}</h1>
         <div class="notice ${late ? 'bad' : 'info'}">
-          <p class="say">Hai fatto la richiesta il ${esc(formatIt(state.requestDate))}: sono passati <strong>${days(waited)}</strong>.</p>
+          <p class="say">Hai fatto la richiesta ${art('il', state.requestDate)}${esc(formatIt(state.requestDate))}: sono passati <strong>${days(waited)}</strong>.</p>
           <p class="say">La legge non fissa un numero di giorni per la valutazione a casa. ${late
             ? `Ma ${rules.reminder_after_days} giorni senza notizie sono troppi: è il momento di sollecitare.`
-            : `Se entro il <strong>${esc(formatIt(remindOn))}</strong> nessuno ti ha chiamato, torna qui per sollecitare.`}</p>
+            : `Se entro ${art('il', remindOn)}<strong>${esc(formatIt(remindOn))}</strong> nessuno ti ha chiamato, torna qui per sollecitare.`}</p>
         </div>
         <h2 class="say">Cosa fare</h2>
         <ol class="big-steps">
@@ -164,7 +164,7 @@ const screens = {
             <li><span class="ico" aria-hidden="true">🖊️</span> Firma la lettera</li>
             <li><span class="ico" aria-hidden="true">🪪</span> Allega: documento d'identità (fotocopia o foto)</li>
             <li><span class="ico" aria-hidden="true">📄</span> Allega: copia della richiesta del medico, se ce l'hai</li>
-            ${person.isDelegate ? '<li><span class="ico" aria-hidden="true">📝</span> Allega: la delega firmata e il tuo documento</li>' : ''}
+            <li class="delegate-note"${person.isDelegate ? '' : ' hidden'}><span class="ico" aria-hidden="true">📝</span> Allega: la delega firmata e il tuo documento</li>
           </ul></div>
         <p class="muted"><a href="${esc(reportErrorHref(`Assistenza domiciliare ${a.name}`))}">Segnala un errore</a></p>
         ${disclaimer(rules.last_verified)}
@@ -176,6 +176,7 @@ const screens = {
           for (const k of ['district', 'doctor']) { state[k] = v[k]; delete v[k]; }
           Object.assign(person, v);
           form.querySelector('.delegate-fields').hidden = !person.isDelegate;
+          document.querySelectorAll('.delegate-note').forEach((li) => { li.hidden = !person.isDelegate; });
           const premise = isReminder
             ? [`in data ${formatIt(state.requestDate)} il medico di medicina generale${state.doctor ? ` (dott. ${state.doctor})` : ''} ha inoltrato richiesta di attivazione dell'assistenza domiciliare integrata`,
                'alla data odierna non è stata effettuata la valutazione domiciliare né è pervenuta alcuna comunicazione',
@@ -186,7 +187,7 @@ const screens = {
           const text = genericRequest({
             to: `Azienda Sanitaria Provinciale di ${a.province}\n${state.district ? `Distretto – ${state.district} – ` : ''}Punto Unico di Accesso\ne p.c. Ufficio Relazioni con il Pubblico`,
             address: to, person,
-            subject: isReminder ? `SOLLECITO – Attivazione assistenza domiciliare integrata (richiesta del ${formatIt(state.requestDate)})` : 'Richiesta di rivalutazione del piano di assistenza domiciliare integrata',
+            subject: isReminder ? `SOLLECITO – Attivazione assistenza domiciliare integrata (richiesta ${art('del', state.requestDate)}${formatIt(state.requestDate)})` : 'Richiesta di rivalutazione del piano di assistenza domiciliare integrata',
             premise,
             request: isReminder
               ? 'la valutazione domiciliare e l\'attivazione dell\'assistenza nel più breve tempo possibile, e di essere informato/a per iscritto sui tempi previsti.'
@@ -199,7 +200,7 @@ const screens = {
           document.getElementById('mail-btn').href = mailtoHref(to, `${isReminder ? 'Sollecito' : 'Richiesta'} assistenza domiciliare${person.fullName ? ` – ${person.fullName}` : ''}`,
             `Buongiorno,\nin allegato la lettera firmata, con i documenti.\n\nCordiali saluti\n${person.fullName || ''}`);
           document.getElementById('send-hint').innerHTML = to
-            ? `📧 L'email si apre indirizzata a ${esc(to)}${/@pec\./.test(to) ? ' (è una PEC: se non hai la PEC, consegna la lettera a mano al distretto o all\'URP)' : ''}. Chiedi sempre una ricevuta.`
+            ? `📧 L'email si apre indirizzata a ${esc(to)}${to === a.pec || /@pec\./.test(to) ? ' (è una PEC: se non hai la PEC, consegna la lettera a mano al distretto o all\'URP)' : ''}. Chiedi sempre una ricevuta.`
             : '🏥 <strong>Stampa la lettera e consegnala al PUA del distretto o all\'URP dell\'ASP.</strong> Fatti dare una ricevuta con la data.';
         };
         form.addEventListener('input', update); form.addEventListener('change', update); update();
@@ -216,6 +217,6 @@ let flow;
   try { [rules, data] = await Promise.all([loadJSON(`${ROOT}data/rules-domiciliare.json`), loadJSON(`${ROOT}data/asp-sicilia.json`)]); } catch {
     app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>'; return;
   }
-  flow = createFlow({ app, screens, state, sources });
+  flow = createFlow({ app, screens, state, sources, person });
   flow.render();
 })();

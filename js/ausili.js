@@ -1,7 +1,7 @@
 // Modulo 4 — ausili e protesi: «la carrozzina non arriva».
 // Regola: l'ASP autorizza entro 20 giorni; se non risponde, l'autorizzazione vale lo stesso
 // (art. 18 DPCM 12/01/2017). Non chiediamo mai la malattia.
-import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween } from './engine.js';
+import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween, art } from './engine.js';
 import { ausiliReminder, mailtoHref } from './letters.js';
 import { noPecBox,
   esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton, personFields, reportErrorHref, generalContact,
@@ -109,7 +109,7 @@ const screens = {
           <div class="hero" aria-hidden="true">⏳</div>
           <h1>Non è ancora tardi</h1>
           <div class="notice ok">
-            <p class="say">L'ASP deve rispondere entro il <strong>${esc(formatIt(d.deadline))}</strong> (${rules.authorization_days} giorni dalla domanda).</p>
+            <p class="say">L'ASP deve rispondere entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong> (${rules.authorization_days} giorni dalla domanda).</p>
             <p class="say">Se a quella data non hai notizie, torna qui.</p>
           </div>
           ${disclaimer(rules.last_verified)}
@@ -119,14 +119,14 @@ const screens = {
     return {
       html: `
         <div class="hero" aria-hidden="true">⚠️</div>
-        <h1>I 20 giorni sono passati: l'autorizzazione vale lo stesso</h1>
+        <h1>I ${rules.authorization_days} giorni sono passati: l'autorizzazione vale lo stesso</h1>
         <div class="notice bad">
-          <p class="say">L'ASP doveva rispondere entro il <strong>${esc(formatIt(d.deadline))}</strong>. Sono passati <strong>${days(d.daysLate)} in più</strong>.</p>
+          <p class="say">L'ASP doveva rispondere entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>. Sono passati <strong>${days(d.daysLate)} in più</strong>.</p>
           <p class="say">Per la legge, se l'ASP non risponde in tempo <strong>l'autorizzazione si considera data</strong>. Ora deve partire la consegna.</p>
         </div>
         <h2 class="say">Cosa fare, in ordine</h2>
         <ol class="big-steps">
-          <li class="say"><strong>Telefona o vai all'ufficio protesica</strong> con la ricevuta. Di' che i 20 giorni sono passati.</li>
+          <li class="say"><strong>Telefona o vai all'ufficio protesica</strong> con la ricevuta. Di' che i ${rules.authorization_days} giorni sono passati.</li>
           <li class="say"><strong>Manda una lettera di sollecito</strong> all'ASP. La scriviamo insieme.</li>
           <li class="say"><strong>Se ancora niente:</strong> reclamo all'URP dell'ASP di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''},
             un patronato, oppure Cittadinanzattiva (<a href="https://www.cittadinanzattiva.it" target="_blank" rel="noopener">cittadinanzattiva.it</a>).</li>
@@ -181,7 +181,7 @@ const screens = {
           ${personFields(person, 'La persona che ha bisogno dell\'ausilio')}
         </form>
         <h2>📄 Ecco il tuo sollecito</h2>
-        <p class="muted">La lettera usa le parole degli uffici. In breve dice: «I 20 giorni sono passati, l'autorizzazione vale, consegnate».</p>
+        <p class="muted">La lettera usa le parole degli uffici. In breve dice: «I ${rules.authorization_days} giorni sono passati, l'autorizzazione vale, consegnate».</p>
         <div id="preview" class="letter"></div>
         ${letterButtons()}
         <p class="say" id="send-hint"></p>
@@ -192,7 +192,7 @@ const screens = {
             <li><span class="ico" aria-hidden="true">🖊️</span> Firma la lettera</li>
             <li><span class="ico" aria-hidden="true">🪪</span> Allega: documento d'identità (fotocopia o foto)</li>
             <li><span class="ico" aria-hidden="true">📄</span> Allega: copia della prescrizione e della ricevuta</li>
-            ${person.isDelegate ? '<li><span class="ico" aria-hidden="true">📝</span> Allega: la delega firmata e il tuo documento</li>' : ''}
+            <li class="delegate-note"${person.isDelegate ? '' : ' hidden'}><span class="ico" aria-hidden="true">📝</span> Allega: la delega firmata e il tuo documento</li>
           </ul>
         </div>
         <p class="muted"><a href="${esc(reportErrorHref(`Ausili ${a.name}`))}">Segnala un errore</a></p>
@@ -205,9 +205,10 @@ const screens = {
           for (const k of ['device', 'prescriber', 'protocol']) { state[k] = v[k]; delete v[k]; }
           Object.assign(person, v);
           form.querySelector('.delegate-fields').hidden = !person.isDelegate;
+          document.querySelectorAll('.delegate-note').forEach((li) => { li.hidden = !person.isDelegate; });
           const text = ausiliReminder({
             aspName: a.province, address: to, person, device: state.device, requestDate: state.requestDate,
-            protocol: state.protocol, prescriber: state.prescriber, deadline: deadline().deadline, today: todayISO(),
+            protocol: state.protocol, prescriber: state.prescriber, deadline: deadline().deadline, days: rules.authorization_days, today: todayISO(),
           });
           state.letterText = text;
           document.getElementById('preview').textContent = text;
@@ -237,6 +238,6 @@ let flow;
     app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>';
     return;
   }
-  flow = createFlow({ app, screens, state, sources });
+  flow = createFlow({ app, screens, state, sources, person });
   flow.render();
 })();

@@ -1,7 +1,7 @@
 // Modulo 6 — ricorso contro il verbale di invalidità: «il verbale è sbagliato».
 // Regola: il ricorso al giudice va fatto entro 6 mesi dal verbale. Niente lettera:
 // serve un avvocato (o un patronato che lo trova). Non chiediamo la malattia.
-import { ricorsoDeadline, todayISO, formatIt, parseDate, daysBetween, formatEuro } from './engine.js';
+import { ricorsoDeadline, todayISO, formatIt, parseDate, daysBetween, formatEuro, art } from './engine.js';
 import { esc, loadJSON, disclaimer, renderFooter, readForm } from './common.js';
 import { createFlow, choice, restartBtn, days, dateForm, showError } from './flow.js';
 
@@ -98,7 +98,7 @@ const screens = {
           <div class="hero" aria-hidden="true">${urgent ? '🚨' : '⏰'}</div>
           <h1>${urgent ? 'Muoviti subito: manca poco' : 'Sei ancora in tempo'}</h1>
           <div class="notice ${urgent ? 'bad' : 'ok'}">
-            <p class="say">Puoi fare ricorso <strong>fino al ${esc(formatIt(d.deadline))}</strong>.</p>
+            <p class="say">Puoi fare ricorso <strong>${art('fino al', d.deadline)}${esc(formatIt(d.deadline))}</strong>.</p>
             <p class="say">${d.daysLeft === 0 ? '<strong>Scade oggi.</strong>' : `Mancano <strong>${days(d.daysLeft)}</strong>.`}</p>
             <p class="say">L'avvocato ha bisogno di qualche settimana per preparare tutto: non aspettare l'ultimo momento.</p>
           </div>
@@ -114,7 +114,7 @@ const screens = {
         <div class="hero" aria-hidden="true">⌛</div>
         <h1>I ${rules.appeal_months} mesi sono passati</h1>
         <div class="notice bad">
-          <p class="say">Il tempo per il ricorso è finito il <strong>${esc(formatIt(d.deadline))}</strong>, ${days(d.daysLate)} fa.</p>
+          <p class="say">Il tempo per il ricorso è finito ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>, ${days(d.daysLate)} fa.</p>
           <p class="say">Contro questo verbale non si può più fare ricorso.</p>
         </div>
         <h2 class="say">Cosa puoi fare adesso</h2>

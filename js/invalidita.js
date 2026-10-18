@@ -2,7 +2,7 @@
 // Non chiede mai la malattia: basta sapere se è oncologica, un minore o altro.
 // Le risposte restano solo in memoria e si cancellano quando si chiude la pagina.
 // Testi: italiano semplice, frasi brevi, un'idea per frase.
-import { invRegime, invDeadline, todayISO, formatIt, parseDate, daysBetween } from './engine.js';
+import { invRegime, invDeadline, todayISO, formatIt, parseDate, daysBetween, art } from './engine.js';
 import { inpsReminder, mailtoHref } from './letters.js';
 import { noPecBox,
   esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton,
@@ -22,7 +22,7 @@ const nav = createNav({ first: 'intro', show: paint });
 const go = nav.go;
 const back = nav.back;
 const render = nav.render;
-const restart = () => nav.restart(() => { for (const k of Object.keys(state)) delete state[k]; });
+const restart = () => nav.restart(() => { for (const o of [state, person]) for (const k of Object.keys(o)) delete o[k]; });
 
 function paint(current) {
   stopSpeaking();
@@ -216,11 +216,11 @@ const screens = {
       const body = d.status === 'passed'
         ? `<div class="hero" aria-hidden="true">⏰</div>
            <h1>Il tempo per la domanda è finito</h1>
-           <div class="notice bad"><p class="say">Bisognava fare la domanda entro il <strong>${esc(formatIt(d.deadline))}</strong>.</p>
+           <div class="notice bad"><p class="say">Bisognava fare la domanda entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>.</p>
            <p class="say">Di solito serve un nuovo certificato. Chiedi al tuo medico o a un patronato.</p></div>`
         : `<div class="hero" aria-hidden="true">📝</div>
            <h1>Prima devi fare la domanda</h1>
-           <div class="notice warn"><p class="say">Hai tempo fino al <strong>${esc(formatIt(d.deadline))}</strong>.</p>
+           <div class="notice warn"><p class="say">Hai tempo ${art('fino al', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>.</p>
            <p class="say">Dopo quel giorno il certificato non vale più.</p></div>
            <p class="say">Vai a un patronato: fa la domanda per te, gratis.</p>`;
       return { html: `${body}${patronato}${inpsCalls()}${disclaimer(rules.last_verified)}${restartBtn()}` };
@@ -235,7 +235,7 @@ const screens = {
       return {
         html: `<div class="hero" aria-hidden="true">✅</div>
           <h1>Non è ancora tardi</h1>
-          <div class="notice ok"><p class="say">${whatFuture} entro il <strong>${esc(formatIt(d.deadline))}</strong>.</p>
+          <div class="notice ok"><p class="say">${whatFuture} entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>.</p>
           <p class="say">Se non arriva niente, torna qui quel giorno.</p></div>
           ${note}${legal}${patronato}${afterVerbale}${disclaimer(rules.last_verified)}${restartBtn()}`,
       };
@@ -245,7 +245,7 @@ const screens = {
       html: `<div class="hero" aria-hidden="true">⚠️</div>
         <h1>È tardi! Puoi sollecitare l'INPS</h1>
         <div class="notice bad">
-          <p class="say">${what} entro il <strong>${esc(formatIt(d.deadline))}</strong>.</p>
+          <p class="say">${what} entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>.</p>
           <p class="say">Sono passati <strong>${days(d.daysLate)} in più</strong>.</p>
         </div>
         ${note}${legal}
@@ -301,7 +301,7 @@ const screens = {
             <li><span class="ico" aria-hidden="true">🪪</span> Allega: documento d'identità (fotocopia o foto)</li>
             <li><span class="ico" aria-hidden="true">📄</span> Allega: ricevuta del certificato</li>
             ${r === 'old' ? '<li><span class="ico" aria-hidden="true">🧾</span> Allega: ricevuta della domanda</li>' : ''}
-            ${person.isDelegate ? '<li><span class="ico" aria-hidden="true">📝</span> Allega: la delega firmata e il tuo documento</li>' : ''}
+            <li class="delegate-note"${person.isDelegate ? '' : ' hidden'}><span class="ico" aria-hidden="true">📝</span> Allega: la delega firmata e il tuo documento</li>
           </ul>
         </div>
         <p class="muted">Indirizzo PEC: ${mailLink(p.pec)} (stiamo ancora controllando questo indirizzo) ·
@@ -316,6 +316,7 @@ const screens = {
           delete v.certNumber; delete v.domandaNumber;
           Object.assign(person, v);
           form.querySelector('.delegate-fields').hidden = !person.isDelegate;
+          document.querySelectorAll('.delegate-note').forEach((li) => { li.hidden = !person.isDelegate; });
           const text = inpsReminder({
             provinceName: p.name, inpsPec: p.pec, person, certNumber: state.certNumber, certDate: state.certDate,
             domandaDate: state.domandaDate, domandaNumber: state.domandaNumber, regime: r, deadlineInfo: deadline(), today: todayISO(),

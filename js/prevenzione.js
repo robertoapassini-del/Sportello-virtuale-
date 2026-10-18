@@ -19,7 +19,7 @@ const screens = {
       <div class="hero" aria-hidden="true">🛡️</div>
       <h1>Quali controlli e vaccini puoi fare gratis?</h1>
       <p class="lead say">Ci sono esami contro i tumori e vaccini che il Servizio sanitario offre gratis, in base all'età. Molte persone non lo sanno.</p>
-      <p class="say">Con 2 domande ti diciamo quali sono i tuoi e come prenotarli.</p>
+      <p class="say">Con 3 domande ti diciamo quali sono i tuoi e come prenotarli.</p>
       <button type="button" class="btn primary big" data-go="sex">▶️ Comincia</button>
       <p class="muted say">È gratis. Non salviamo niente. Non chiediamo la malattia.</p>`,
   }),

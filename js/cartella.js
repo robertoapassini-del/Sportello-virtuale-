@@ -1,7 +1,7 @@
 // Modulo 3 — cartella clinica e referti: «non me li danno».
 // Regola: l'ospedale o l'ASP deve rispondere entro 30 giorni (art. 25 L. 241/1990).
 // Non chiediamo mai la malattia: solo il nome della struttura e le date.
-import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween } from './engine.js';
+import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween, art } from './engine.js';
 import { cartellaReminder, mailtoHref } from './letters.js';
 import { noPecBox,
   esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton, personFields, reportErrorHref, generalContact,
@@ -115,7 +115,7 @@ const screens = {
           <div class="hero" aria-hidden="true">⏳</div>
           <h1>Non è ancora tardi</h1>
           <div class="notice ok">
-            <p class="say">Devono darti ${whatLabel[state.what]} entro il <strong>${esc(formatIt(d.deadline))}</strong> (${rules.deadline_days} giorni dalla richiesta).</p>
+            <p class="say">Devono darti ${whatLabel[state.what]} entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong> (${rules.deadline_days} giorni dalla richiesta).</p>
             <p class="say">Se a quella data non hai niente, torna qui.</p>
           </div>
           <p class="say">Nel frattempo puoi telefonare all'ufficio cartelle cliniche e chiedere a che punto è.</p>
@@ -128,7 +128,7 @@ const screens = {
         <div class="hero" aria-hidden="true">⚠️</div>
         <h1>Sono in ritardo: puoi sollecitare</h1>
         <div class="notice bad">
-          <p class="say">Dovevano darti ${whatLabel[state.what]} entro il <strong>${esc(formatIt(d.deadline))}</strong>.</p>
+          <p class="say">Dovevano darti ${whatLabel[state.what]} entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>.</p>
           <p class="say">Sono passati <strong>${days(d.daysLate)} in più</strong>.</p>
         </div>
         <h2 class="say">Cosa fare, in ordine</h2>
@@ -136,7 +136,7 @@ const screens = {
           <li class="say"><strong>Telefona o vai all'ufficio cartelle cliniche</strong> con la ricevuta. Spesso basta questo.</li>
           <li class="say"><strong>Manda una lettera di sollecito</strong> alla Direzione sanitaria dell'ospedale. La scriviamo insieme.</li>
           <li class="say"><strong>Se ancora niente:</strong> reclamo all'URP dell'ASP di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''}, oppure a Cittadinanzattiva
-            (<a href="https://www.cittadinanzattiva.it" target="_blank" rel="noopener">cittadinanzattiva.it</a>). Un avvocato può fare ricorso al TAR entro 30 giorni.</li>
+            (<a href="https://www.cittadinanzattiva.it" target="_blank" rel="noopener">cittadinanzattiva.it</a>). Un avvocato può fare ricorso al TAR entro ${rules.appeal_days} giorni.</li>
         </ol>
         ${a.phones.map((p) => callButton(p.label, p.number)).join('')}
         <button type="button" class="btn primary" data-go="letter">✍️ Scriviamo il sollecito insieme</button>
@@ -180,7 +180,7 @@ const screens = {
             <li><span class="ico" aria-hidden="true">🖊️</span> Firma la lettera</li>
             <li><span class="ico" aria-hidden="true">🪪</span> Allega: documento d'identità (fotocopia o foto)</li>
             <li><span class="ico" aria-hidden="true">🧾</span> Allega: copia della prima richiesta o della ricevuta</li>
-            ${person.isDelegate ? '<li><span class="ico" aria-hidden="true">📝</span> Allega: la delega firmata e il tuo documento</li>' : ''}
+            <li class="delegate-note"${person.isDelegate ? '' : ' hidden'}><span class="ico" aria-hidden="true">📝</span> Allega: la delega firmata e il tuo documento</li>
           </ul>
         </div>
         <p class="muted">Se l'ospedale è dell'ASP, la PEC generale è ${a.pec ? mailLink(a.pec) : 'da chiedere all\'URP'}. I grandi ospedali (Policlinico, Cannizzaro, Papardo, Civico, Villa Sofia…) hanno una PEC loro: cercala sul sito dell'ospedale.
@@ -194,11 +194,12 @@ const screens = {
           for (const k of ['structure', 'structureEmail', 'episode', 'protocol']) { state[k] = v[k]; delete v[k]; }
           Object.assign(person, v);
           form.querySelector('.delegate-fields').hidden = !person.isDelegate;
+          document.querySelectorAll('.delegate-note').forEach((li) => { li.hidden = !person.isDelegate; });
           const d = deadline();
           const text = cartellaReminder({
             structure: state.structure ? `Direzione Sanitaria – ${state.structure}` : '', address: state.structureEmail, person,
             requestDate: state.requestDate, protocol: state.protocol, what: whatLabel[state.what].replace(/^(la|i) /, ''),
-            episode: state.episode, deadline: d.deadline, today: todayISO(),
+            episode: state.episode, deadline: d.deadline, days: rules.deadline_days, today: todayISO(),
           });
           state.letterText = text;
           document.getElementById('preview').textContent = text;
@@ -228,6 +229,6 @@ let flow;
     app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>';
     return;
   }
-  flow = createFlow({ app, screens, state, sources });
+  flow = createFlow({ app, screens, state, sources, person });
   flow.render();
 })();

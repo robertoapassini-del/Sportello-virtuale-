@@ -1,11 +1,11 @@
 // Modelli di lettera (testo semplice). Funzioni pure: niente pagina.
 // TODO-VERIFY: ogni modello va approvato dal legale prima del lancio.
-import { formatIt } from './engine.js';
+import { formatIt, art } from './engine.js';
 
 const blank = (v, placeholder = '__________') => (v && String(v).trim()) || placeholder;
 
 function personBlock(p) {
-  return `Il/La sottoscritto/a ${blank(p.fullName)}, nato/a a ${blank(p.birthPlace)} il ${p.birthDate ? formatIt(p.birthDate) : '__________'}, ` +
+  return `Il/La sottoscritto/a ${blank(p.fullName)}, nato/a a ${blank(p.birthPlace)} ${art('il', p.birthDate)}${p.birthDate ? formatIt(p.birthDate) : '__________'}, ` +
     `codice fiscale ${blank(p.cf)},\nresidente in ${blank(p.address)}, tel. ${blank(p.phone)}, email ${blank(p.email)},`;
 }
 
@@ -25,7 +25,7 @@ export function tutelaLetter({ aspName, aspAddress, person: p, service, nre, cls
     ? `- in data ${requestDate ? formatIt(requestDate) : '__________'} ha richiesto la prenotazione tramite i canali ufficiali e non gli/le è
   stata proposta alcuna data, né è stato/a ricontattato/a entro il termine previsto;`
     : `- in data ${formatIt(bookingDate)} ha richiesto la prenotazione tramite i canali ufficiali e la prima
-  disponibilità proposta è il ${formatIt(appointmentDate)}, oltre il tempo massimo previsto;`;
+  disponibilità proposta è ${art('il', appointmentDate)}${formatIt(appointmentDate)}, oltre il tempo massimo previsto;`;
   const attach = 'copia del documento di identità; ricetta; foglio/promemoria di prenotazione' +
     (p.isDelegate ? '; delega e documento del delegato' : '');
   return `Spett.le Azienda Sanitaria Provinciale di ${aspName}
@@ -59,7 +59,7 @@ export function tutelaReminder({ aspName, aspAddress, person: p, service, nre, c
   return `Spett.le Azienda Sanitaria Provinciale di ${aspName}
 ${aspAddress || ''}
 
-Oggetto: SOLLECITO – Richiesta di attivazione del percorso di tutela del ${firstRequestDate ? formatIt(firstRequestDate) : '__________'}
+Oggetto: SOLLECITO – Richiesta di attivazione del percorso di tutela ${art('del', firstRequestDate)}${firstRequestDate ? formatIt(firstRequestDate) : '__________'}
 (prestazione "${blank(service)}", ricetta n. ${blank(nre)}, classe di priorità ${cls})
 
 ${personBlock(p)}
@@ -72,7 +72,7 @@ SOLLECITA
 un riscontro nel più breve tempo possibile e l'erogazione della prestazione secondo quanto previsto
 dal Piano Nazionale di Governo delle Liste d'Attesa 2026-2028.
 ${delegateBlock(p)}
-Allega: copia della richiesta del ${firstRequestDate ? formatIt(firstRequestDate) : '__________'} e relativi allegati.
+Allega: copia della richiesta ${art('del', firstRequestDate)}${firstRequestDate ? formatIt(firstRequestDate) : '__________'} e relativi allegati.
 
 ${signature(p, today)}
 `;
@@ -84,8 +84,8 @@ export function inpsReminder({ provinceName, inpsPec, person: p, certNumber, cer
     ? `- in data ${formatIt(certDate)} è stato trasmesso all'INPS il certificato medico introduttivo n. ${blank(certNumber)},\n  che ai sensi del D.Lgs. 62/2024 costituisce domanda di accertamento;`
     : `- in data ${formatIt(certDate)} è stato trasmesso all'INPS il certificato medico introduttivo n. ${blank(certNumber)}\n  e in data ${domandaDate ? formatIt(domandaDate) : '__________'} è stata presentata la relativa domanda (n. ${blank(domandaNumber)});`;
   const term = deadlineInfo.legal
-    ? `- ai sensi dell'${deadlineInfo.legal}, la visita/il procedimento doveva svolgersi entro ${deadlineInfo.days} giorni,\n  cioè entro il ${formatIt(deadlineInfo.deadline)};`
-    : `- secondo i tempi indicati dalla normativa vigente, la convocazione era attesa entro il ${formatIt(deadlineInfo.deadline)};`;
+    ? `- ai sensi dell'${deadlineInfo.legal}, la visita/il procedimento doveva svolgersi entro ${deadlineInfo.days} giorni,\n  cioè entro ${art('il', deadlineInfo.deadline)}${formatIt(deadlineInfo.deadline)};`
+    : `- secondo i tempi indicati dalla normativa vigente, la convocazione era attesa entro ${art('il', deadlineInfo.deadline)}${formatIt(deadlineInfo.deadline)};`;
   const attach = 'copia del documento di identità; ricevuta di trasmissione del certificato medico' +
     (regime === 'old' ? '; ricevuta della domanda' : '') +
     (p.isDelegate ? '; delega e documento del delegato' : '');
@@ -93,7 +93,7 @@ export function inpsReminder({ provinceName, inpsPec, person: p, certNumber, cer
 ${inpsPec || ''}
 
 Oggetto: Sollecito convocazione a visita per accertamento sanitario (invalidità civile / handicap)
-– certificato medico n. ${blank(certNumber)} del ${formatIt(certDate)}
+– certificato medico n. ${blank(certNumber)} ${art('del', certDate)}${formatIt(certDate)}
 
 ${personBlock(p)}
 
@@ -122,37 +122,37 @@ export function mailtoHref(to, subject, body) {
 }
 
 // Modulo 3 — sollecito per la copia della cartella clinica o dei referti.
-export function cartellaReminder({ structure, address, person: p, requestDate, protocol, what, episode, deadline, today }) {
+export function cartellaReminder({ structure, address, person: p, requestDate, protocol, what, episode, deadline, days = 30, today }) {
   return `Spett.le ${blank(structure, 'Direzione Sanitaria di __________')}
 ${address || ''}
 
-Oggetto: SOLLECITO – Richiesta di copia di ${blank(what, 'cartella clinica')} presentata il ${requestDate ? formatIt(requestDate) : '__________'}
+Oggetto: SOLLECITO – Richiesta di copia di ${blank(what, 'cartella clinica')} presentata ${art('il', requestDate)}${requestDate ? formatIt(requestDate) : '__________'}
 (art. 25 L. 241/1990)
 
 ${personBlock(p)}
 
 PREMESSO CHE
 - in data ${requestDate ? formatIt(requestDate) : '__________'} ha chiesto copia di ${blank(what, 'cartella clinica')}${episode ? ` relativa a ${episode}` : ''}${protocol ? ` (ricevuta/protocollo n. ${protocol})` : ''};
-- ai sensi dell'art. 25 della L. 241/1990 la richiesta deve essere evasa entro 30 giorni, cioè entro il ${deadline ? formatIt(deadline) : '__________'};
+- ai sensi dell'art. 25 della L. 241/1990 la richiesta deve essere evasa entro ${days} giorni, cioè entro ${art('il', deadline)}${deadline ? formatIt(deadline) : '__________'};
 - alla data odierna non ha ricevuto quanto richiesto né alcuna comunicazione;
 
 SOLLECITA
 la consegna della documentazione richiesta nel più breve tempo possibile e chiede di essere informato/a
 per iscritto su data e modalità di ritiro, nonché sull'eventuale costo di riproduzione.
 ${delegateBlock(p)}
-Allega: copia del documento di identità; copia della richiesta del ${requestDate ? formatIt(requestDate) : '__________'}${p.isDelegate ? '; delega e documento del delegato' : ''}.
+Allega: copia del documento di identità; copia della richiesta ${art('del', requestDate)}${requestDate ? formatIt(requestDate) : '__________'}${p.isDelegate ? '; delega e documento del delegato' : ''}.
 
 ${signature(p, today)}
 `;
 }
 
 // Modulo 4 — sollecito all'ASP per l'autorizzazione di un ausilio o di una protesi.
-export function ausiliReminder({ aspName, address, person: p, device, requestDate, protocol, prescriber, deadline, today }) {
+export function ausiliReminder({ aspName, address, person: p, device, requestDate, protocol, prescriber, deadline, days = 20, today }) {
   return `Spett.le Azienda Sanitaria Provinciale di ${aspName}
 Ufficio Assistenza Protesica
 ${address || ''}
 
-Oggetto: SOLLECITO – Autorizzazione alla fornitura di ${blank(device, 'ausilio/protesi')} richiesta il ${requestDate ? formatIt(requestDate) : '__________'}
+Oggetto: SOLLECITO – Autorizzazione alla fornitura di ${blank(device, 'ausilio/protesi')} richiesta ${art('il', requestDate)}${requestDate ? formatIt(requestDate) : '__________'}
 (art. 18 DPCM 12/01/2017)
 
 ${personBlock(p)}
@@ -160,7 +160,7 @@ ${personBlock(p)}
 PREMESSO CHE
 - in data ${requestDate ? formatIt(requestDate) : '__________'} ha presentato richiesta di autorizzazione alla fornitura di ${blank(device, 'ausilio/protesi')},
   su prescrizione ${prescriber ? `del/della ${prescriber}` : 'dello specialista del Servizio sanitario'}${protocol ? ` (ricevuta/protocollo n. ${protocol})` : ''};
-- ai sensi dell'art. 18 del DPCM 12/01/2017 l'autorizzazione va rilasciata entro 20 giorni dalla richiesta, cioè entro il ${deadline ? formatIt(deadline) : '__________'},
+- ai sensi dell'art. 18 del DPCM 12/01/2017 l'autorizzazione va rilasciata entro ${days} giorni dalla richiesta, cioè entro ${art('il', deadline)}${deadline ? formatIt(deadline) : '__________'},
   e, decorso tale termine senza risposta, si intende concessa;
 - alla data odierna non ha ricevuto l'autorizzazione né alcuna comunicazione;
 
@@ -168,7 +168,7 @@ CHIEDE
 il rilascio immediato dell'autorizzazione (o la conferma che si è formata per silenzio-assenso) e l'avvio della fornitura,
 con indicazione del fornitore e dei tempi di consegna.
 ${delegateBlock(p)}
-Allega: copia del documento di identità; copia della prescrizione e della richiesta del ${requestDate ? formatIt(requestDate) : '__________'}${p.isDelegate ? '; delega e documento del delegato' : ''}.
+Allega: copia del documento di identità; copia della prescrizione e della richiesta ${art('del', requestDate)}${requestDate ? formatIt(requestDate) : '__________'}${p.isDelegate ? '; delega e documento del delegato' : ''}.
 
 ${signature(p, today)}
 `;

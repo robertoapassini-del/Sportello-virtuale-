@@ -1,7 +1,7 @@
 // Funzioni comuni del sito: testo sicuro, caricamento dati, piè di pagina,
 // lettura ad alta voce, copia e stampa. L'unica cosa inviata è il conteggio
 // anonimo delle visite e dei «Sì / No» (vedi count()): mai quello che scrivi.
-import { formatIt } from './engine.js';
+import { formatIt, art } from './engine.js';
 import { ICONS } from './icons.js';
 
 // TODO: sostituire con l'indirizzo dedicato quando il dominio esiste (SPEC 8, 9.0).
@@ -38,7 +38,7 @@ export async function loadJSON(path) {
 
 export function disclaimer(date) {
   return `<p class="muted">Queste sono informazioni generali, non il parere di un avvocato o di un medico.
-  Controlla sempre con la tua ASP. Informazioni aggiornate al ${esc(formatIt(date))}.</p>`;
+  Controlla sempre con la tua ASP. Informazioni aggiornate ${art('al', date)}${esc(formatIt(date))}.</p>`;
 }
 
 export function reportErrorHref(context) {
@@ -73,7 +73,7 @@ export function sourcesBox(items, { verified, note } = {}) {
     <ul class="clean">${list.map((s) => `<li>${s.url
       ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>`
       : esc(s.label)}</li>`).join('')}</ul>
-    ${verified ? `<p class="muted">Controllate il ${esc(formatIt(verified))}.${note ? ` ${esc(note)}` : ''}</p>` : ''}
+    ${verified ? `<p class="muted">Controllate ${art('il', verified)}${esc(formatIt(verified))}.${note ? ` ${esc(note)}` : ''}</p>` : ''}
     <p class="muted">I link aprono i siti ufficiali in una nuova scheda.</p>
   </details>`;
 }
@@ -154,7 +154,7 @@ function renderFeedback(footer, root) {
   checkedDate(root).then((d) => {
     if (!d) return;
     const p = document.querySelector('#page-feedback .fb-checked');
-    p.textContent = `Informazioni controllate il ${formatIt(d)}.`;
+    p.textContent = `Informazioni controllate ${art('il', d)}${formatIt(d)}.`;
     p.hidden = false;
   }).catch(() => {});
 }

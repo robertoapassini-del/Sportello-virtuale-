@@ -215,6 +215,7 @@ table.fields th { width: 40%; }
 .grid2 .btn.choice { min-height: 60px; }
 
 ul.icon-list { list-style: none; padding: 0; margin: 0 0 12px; }
+[hidden] { display: none !important; }
 ul.icon-list li { display: flex; gap: 12px; align-items: flex-start; margin: 10px 0; }
 ul.icon-list .ico { font-size: 1.5rem; line-height: 1.2; flex: none; width: 2rem; text-align: center; }
 

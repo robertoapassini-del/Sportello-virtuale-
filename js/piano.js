@@ -1,6 +1,6 @@
 // Modulo 9 — piano terapeutico: «come lo chiedo, quando lo rinnovo?».
 // Non chiediamo né la malattia né il nome della medicina: solo la data di scadenza del piano.
-import { pianoStatus, todayISO, formatIt, parseDate } from './engine.js';
+import { pianoStatus, todayISO, formatIt, parseDate, art } from './engine.js';
 import { esc, loadJSON, disclaimer, renderFooter, readForm } from './common.js';
 import { createFlow, choice, restartBtn, days, dateForm, showError } from './flow.js';
 
@@ -78,11 +78,11 @@ const screens = {
     const r = pianoStatus(rules, { expiryDate: state.expiryDate, today: todayISO() });
     const box = {
       ok: ['🗓️', 'Hai tempo: segnati la data', 'ok',
-        `Il piano scade il <strong>${esc(formatIt(state.expiryDate))}</strong>. Prenota la visita per il rinnovo <strong>entro il ${esc(formatIt(r.bookBy))}</strong>, così la fai prima della scadenza.`],
+        `Il piano scade ${art('il', state.expiryDate)}<strong>${esc(formatIt(state.expiryDate))}</strong>. Prenota la visita per il rinnovo <strong>entro ${art('il', r.bookBy)}${esc(formatIt(r.bookBy))}</strong>, così la fai prima della scadenza.`],
       soon: ['⏰', 'Prenota adesso il rinnovo', 'warn',
-        `Il piano scade il <strong>${esc(formatIt(state.expiryDate))}</strong>, ${r.toExpiry === 0 ? '<strong>oggi</strong>' : `tra ${days(r.toExpiry)}`}. Chiama subito per la visita dallo specialista: le liste possono essere lunghe.`],
+        `Il piano scade ${art('il', state.expiryDate)}<strong>${esc(formatIt(state.expiryDate))}</strong>, ${r.toExpiry === 0 ? '<strong>oggi</strong>' : `tra ${days(r.toExpiry)}`}. Chiama subito per la visita dallo specialista: le liste possono essere lunghe.`],
       expired: ['⚠️', 'Il piano è scaduto', 'bad',
-        `Il piano è scaduto il <strong>${esc(formatIt(state.expiryDate))}</strong>, ${days(r.daysOverdue)} fa. Fino al rinnovo il medico di famiglia non può prescrivere la medicina con il Servizio sanitario. Chiama subito lo specialista o il centro che l'ha fatto e chiedi un appuntamento urgente per il rinnovo.`],
+        `Il piano è scaduto ${art('il', state.expiryDate)}<strong>${esc(formatIt(state.expiryDate))}</strong>, ${days(r.daysOverdue)} fa. Fino al rinnovo il medico di famiglia non può prescrivere la medicina con il Servizio sanitario. Chiama subito lo specialista o il centro che l'ha fatto e chiedi un appuntamento urgente per il rinnovo.`],
     }[r.status];
     return {
       html: `

@@ -179,7 +179,7 @@ const screens = {
           document.getElementById('mail-btn').href = mailtoHref(to, `Richiesta assegnazione ${kind}${person.fullName ? ` – ${person.fullName}` : ''}`,
             `Buongiorno,\nin allegato la richiesta firmata, con i documenti.\n\nCordiali saluti\n${person.fullName || ''}`);
           document.getElementById('send-hint').innerHTML = to
-            ? `📧 L'email si apre indirizzata a ${esc(to)}. Chiedi sempre una ricevuta.`
+            ? `📧 L'email si apre indirizzata a ${esc(to)}${to === a.pec || /@pec\./.test(to) ? ' (è una PEC: se non hai la PEC, consegna la lettera a mano allo sportello o all\'URP)' : ''}. Chiedi sempre una ricevuta.`
             : '🏥 <strong>Stampa la lettera e consegnala allo sportello o all\'URP.</strong> Fatti dare una copia con timbro e data.';
         };
         form.addEventListener('input', update); form.addEventListener('change', update); update();
@@ -196,6 +196,6 @@ let flow;
   try { [rules, data] = await Promise.all([loadJSON(`${ROOT}data/rules-medico.json`), loadJSON(`${ROOT}data/asp-sicilia.json`)]); } catch {
     app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>'; return;
   }
-  flow = createFlow({ app, screens, state, sources });
+  flow = createFlow({ app, screens, state, sources, person });
   flow.render();
 })();

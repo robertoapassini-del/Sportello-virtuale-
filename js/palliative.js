@@ -1,7 +1,7 @@
 // Modulo 11 — cure palliative e terapia del dolore: «come si attivano?».
 // Diritto della L. 38/2010. Spieghiamo i passi, i numeri da chiamare e una lettera di richiesta.
 // Scritto con delicatezza: spesso chi legge sta assistendo una persona molto malata.
-import { todayISO, formatIt, parseDate, daysBetween } from './engine.js';
+import { todayISO, formatIt, parseDate, daysBetween, art } from './engine.js';
 import { genericRequest, mailtoHref } from './letters.js';
 import { noPecBox, esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton, personFields, reportErrorHref, generalContact } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
@@ -121,7 +121,7 @@ const screens = {
         <div class="hero" aria-hidden="true">${late ? '⚠️' : '⏳'}</div>
         <h1>${late ? 'Troppo tempo: sollecita oggi' : 'La richiesta è partita'}</h1>
         <div class="notice ${late ? 'bad' : 'info'}">
-          <p class="say">Richiesta del ${esc(formatIt(state.requestDate))}: sono passati <strong>${days(waited)}</strong>.</p>
+          <p class="say">Richiesta ${art('del', state.requestDate)}${esc(formatIt(state.requestDate))}: sono passati <strong>${days(waited)}</strong>.</p>
           <p class="say">Le cure palliative devono partire in pochi giorni. ${late ? 'Non aspettare oltre.' : `Se entro ${rules.reminder_after_days} giorni dalla richiesta nessuno si è fatto vivo, sollecita.`}</p>
         </div>
         <h2 class="say">Cosa fare</h2>
@@ -190,7 +190,7 @@ const screens = {
           document.getElementById('mail-btn').href = mailtoHref(to, `${isReminder ? 'Sollecito' : 'Richiesta'} attivazione cure palliative${person.fullName ? ` – ${person.fullName}` : ''}`,
             `Buongiorno,\nin allegato la richiesta firmata, con i documenti.\n\nCordiali saluti\n${person.fullName || ''}`);
           document.getElementById('send-hint').innerHTML = to
-            ? `📧 L'email si apre indirizzata a ${esc(to)}${/@pec\./.test(to) ? ' (è una PEC: se non hai la PEC, consegna la lettera a mano)' : ''}. Chiama comunque: una telefonata del medico è spesso la via più veloce.`
+            ? `📧 L'email si apre indirizzata a ${esc(to)}${to === a.pec || /@pec\./.test(to) ? ' (è una PEC: se non hai la PEC, consegna la lettera a mano)' : ''}. Chiama comunque: una telefonata del medico è spesso la via più veloce.`
             : '🏥 <strong>Stampa la lettera e consegnala all\'URP dell\'ASP o al distretto.</strong> Chiama comunque: una telefonata del medico è spesso la via più veloce.';
         };
         form.addEventListener('input', update); form.addEventListener('change', update); update();
@@ -207,6 +207,6 @@ let flow;
   try { [rules, data] = await Promise.all([loadJSON(`${ROOT}data/rules-palliative.json`), loadJSON(`${ROOT}data/asp-sicilia.json`)]); } catch {
     app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>'; return;
   }
-  flow = createFlow({ app, screens, state, sources });
+  flow = createFlow({ app, screens, state, sources, person });
   flow.render();
 })();

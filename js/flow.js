@@ -63,7 +63,8 @@ export function createNav({ first, show }) {
   };
 }
 
-export function createFlow({ app, screens, state, sources, first = 'intro' }) {
+// person (facoltativo): i dati per le lettere, cancellati anche loro con «Ricomincia».
+export function createFlow({ app, screens, state, sources, first = 'intro', person }) {
   const nav = createNav({ first, show: (current) => paint(current) });
 
   function paint(current) {
@@ -80,7 +81,7 @@ export function createFlow({ app, screens, state, sources, first = 'intro' }) {
   const render = nav.render;
   const go = nav.go;
   const back = nav.back;
-  const restart = () => nav.restart(() => { for (const k of Object.keys(state)) delete state[k]; });
+  const restart = () => nav.restart(() => { for (const o of [state, person]) if (o) for (const k of Object.keys(o)) delete o[k]; });
 
   app.addEventListener('click', (e) => {
     const btn = e.target.closest('button[data-go], button[data-action]');

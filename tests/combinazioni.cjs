@@ -284,7 +284,8 @@ async function runCase(page, c) {
       if (!text.includes(`entro ${c.cbDays} giorni`)) problems.push(`giorni di richiamata attesi ${c.cbDays}`);
       if (c.cbStatus) {
         const dl = fmt(add(c.req, c.cbDays));
-        const want = c.cbStatus === 'waiting' ? `deve richiamarti entro il ${dl}` : `Dovevano richiamarti entro il ${dl}`;
+        const il = /^(08|11)\//.test(dl) ? "l'" : 'il ';
+        const want = c.cbStatus === 'waiting' ? `deve richiamarti entro ${il}${dl}` : `Dovevano richiamarti entro ${il}${dl}`;
         if (!text.includes(want)) problems.push(`atteso «${want}»`);
       }
     }

@@ -46,6 +46,15 @@ export function formatIt(iso) {
   return `${d}/${m}/${y}`;
 }
 
+// Articolo o preposizione davanti a una data scritta in cifre: «il 18/10» ma
+// «l'11/10» e «l'08/10» (si leggono «undici», «otto»). prep: 'il', 'del', 'al',
+// 'dal', 'nel', 'fino al'… Restituisce il testo da mettere prima della data,
+// con lo spazio o l'apostrofo. Senza data (campo vuoto) resta «il ».
+export function art(prep, iso) {
+  if (!parseDate(iso) || !['08', '11'].includes(iso.slice(8, 10))) return `${prep} `;
+  return prep.replace(/\bil$/, "l'").replace(/l$/, "ll'");
+}
+
 // --- Modulo 1: liste d'attesa -------------------------------------------
 
 // Per la classe 'D' serve sapere se è una visita o un esame.

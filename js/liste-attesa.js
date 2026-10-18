@@ -2,11 +2,11 @@
 // Le risposte restano solo in memoria (oggetti `state` e `person`) e si
 // cancellano quando si chiude la pagina. Niente viene inviato.
 // Testi: italiano semplice, frasi brevi, un'idea per frase.
-import { checkWaiting, callbackDeadline, maxWaitDays, todayISO, formatIt, parseDate, daysBetween, addDays } from './engine.js';
+import { checkWaiting, callbackDeadline, maxWaitDays, todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
 import { tutelaLetter, tutelaReminder, mailtoHref } from './letters.js';
 import { noPecBox,
   esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton,
-  personFields, reportErrorHref, choice, helpBox, listenButton, speakScreen, stopSpeaking, sourcesBox, moreHelp, hideHeadingEmoji,
+  personFields, reportErrorHref, generalContact, choice, helpBox, listenButton, speakScreen, stopSpeaking, sourcesBox, moreHelp, hideHeadingEmoji,
 } from './common.js';
 import { RICETTA_SVG } from './ricetta-svg.js';
 import { createNav } from './flow.js';
@@ -25,7 +25,7 @@ const nav = createNav({ first: 'intro', show: paint });
 const go = nav.go;
 const back = nav.back;
 const render = nav.render;
-const restart = () => nav.restart(() => { for (const k of Object.keys(state)) delete state[k]; });
+const restart = () => nav.restart(() => { for (const o of [state, person]) for (const k of Object.keys(o)) delete o[k]; });
 
 function paint(current) {
   stopSpeaking();
@@ -153,7 +153,7 @@ function aspSteps(a) {
     <p>La regola dice che la visita va fatta in tempo in strutture pubbliche o convenzionate.
     Se non c'è posto, si fa in ospedale «in intramoenia» pagando solo il ticket
     (Piano nazionale liste d'attesa 2026-2028; D.Lgs. 124/1998, art. 3).</p>
-    <p class="muted">Controllato il ${esc(formatIt(a.last_verified))}.
+    <p class="muted">Controllato ${art('il', a.last_verified)}${esc(formatIt(a.last_verified))}.
       ${a.sources.map((s) => (s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">Fonte</a>` : `Fonte: ${esc(s.label)}`)).join(' · ')}
       · <a href="${esc(reportErrorHref(a.name))}">Segnala un errore</a></p>
   </details>`;
@@ -229,10 +229,10 @@ const screens = {
       <p class="say">Cerca la casella «Priorità». C'è una lettera: U, B, D oppure P.</p>
       <p class="muted">Nel disegno è nel riquadro giallo.</p>
       ${RICETTA_SVG}
-      ${choice('<b class="letter-ico">U</b>', 'Lettera U', { cls: 'U', kind: null }, 'cup', 'Urgente: entro 3 giorni')}
-      ${choice('<b class="letter-ico">B</b>', 'Lettera B', { cls: 'B', kind: null }, 'cup', 'Entro 10 giorni')}
-      ${choice('<b class="letter-ico">D</b>', 'Lettera D', { cls: 'D' }, 'kind', 'Entro 1 mese (visite) o 2 mesi (esami)')}
-      ${choice('<b class="letter-ico">P</b>', 'Lettera P', { cls: 'P', kind: null }, 'cup', 'Entro 4 mesi')}
+      ${choice('<b class="letter-ico">U</b>', 'Lettera U', { cls: 'U', kind: null }, 'cup', `Urgente: entro ${days(rules.max_wait_days.U)}`)}
+      ${choice('<b class="letter-ico">B</b>', 'Lettera B', { cls: 'B', kind: null }, 'cup', `Entro ${days(rules.max_wait_days.B)}`)}
+      ${choice('<b class="letter-ico">D</b>', 'Lettera D', { cls: 'D' }, 'kind', `Entro ${days(rules.max_wait_days.D_visit)} (visite) o ${days(rules.max_wait_days.D_exam)} (esami)`)}
+      ${choice('<b class="letter-ico">P</b>', 'Lettera P', { cls: 'P', kind: null }, 'cup', `Entro ${days(rules.max_wait_days.P)}`)}
       ${choice('🤷', 'Non c\'è nessuna lettera, o non la trovo', { cls: null }, 'noClass')}`,
   }),
 
@@ -321,8 +321,8 @@ const screens = {
         <h1>Va tutto bene</h1>
         <div class="notice ok">
           <p class="say">La tua data rispetta la legge.</p>
-          <p class="say">Il limite era il <strong>${esc(formatIt(r.deadline))}</strong>.
-          Il tuo appuntamento è il <strong>${esc(formatIt(state.appointmentDate))}</strong>.</p>
+          <p class="say">Il limite era ${art('il', r.deadline)}<strong>${esc(formatIt(r.deadline))}</strong>.
+          Il tuo appuntamento è ${art('il', state.appointmentDate)}<strong>${esc(formatIt(state.appointmentDate))}</strong>.</p>
         </div>
         <p class="say">Tieni il foglio della prenotazione. Se ti spostano l'appuntamento più avanti, torna qui.</p>
         <p class="say">Un consiglio: quando hai una ricetta, prenota subito.</p>
@@ -339,8 +339,8 @@ const screens = {
         <div class="hero" aria-hidden="true">⚠️</div>
         <h1>La data è troppo lontana. Hai diritto a fare prima!</h1>
         <div class="notice bad">
-          <p class="say">La visita andava fatta entro il <strong>${esc(formatIt(r.deadline))}</strong>.</p>
-          <p class="say">Il tuo appuntamento è il <strong>${esc(formatIt(state.appointmentDate))}</strong>:
+          <p class="say">La visita andava fatta entro ${art('il', r.deadline)}<strong>${esc(formatIt(r.deadline))}</strong>.</p>
+          <p class="say">Il tuo appuntamento è ${art('il', state.appointmentDate)}<strong>${esc(formatIt(state.appointmentDate))}</strong>:
           <strong>${days(r.excess)} di troppo</strong>.</p>
         </div>
         <p class="say">Puoi chiedere all'ASP di farti fare la visita prima. Se serve, la fai in ospedale pagando solo il ticket.</p>
@@ -357,7 +357,7 @@ const screens = {
         html: `
           <div class="hero" aria-hidden="true">🚨</div>
           <h1>Lettera U: è urgente</h1>
-          <p class="say">La visita va fatta entro 3 giorni. Non aspettare.</p>
+          <p class="say">La visita va fatta entro ${days(rules.max_wait_days.U)}. Non aspettare.</p>
           ${aspSteps(a)}
           <div class="notice urgent"><p class="say">Se stai male, chiama il tuo medico. Se è grave, chiama il <a href="tel:112">112</a>.</p></div>
           ${disclaimer(a.last_verified)}
@@ -367,10 +367,10 @@ const screens = {
     const cb = callbackDeadline(rules, { cls: state.cls, kind: state.kind, requestDate: state.requestDate, today: todayISO() });
     let status = '';
     if (cb.status === 'waiting') {
-      status = `<div class="notice info"><p class="say">📞 L'ASP deve richiamarti entro il <strong>${esc(formatIt(cb.deadline))}</strong>.</p>
+      status = `<div class="notice info"><p class="say">📞 L'ASP deve richiamarti entro ${art('il', cb.deadline)}<strong>${esc(formatIt(cb.deadline))}</strong>.</p>
         <p class="say">Se non ti chiamano, torna qui quel giorno.</p></div>`;
     } else if (cb.status === 'passed') {
-      status = `<div class="notice bad"><p class="say">⚠️ Dovevano richiamarti entro il <strong>${esc(formatIt(cb.deadline))}</strong>. Non l'hanno fatto.</p>
+      status = `<div class="notice bad"><p class="say">⚠️ Dovevano richiamarti entro ${art('il', cb.deadline)}<strong>${esc(formatIt(cb.deadline))}</strong>. Non l'hanno fatto.</p>
         <p class="say">Ora puoi chiedere all'ASP di farti fare la visita in tempo.</p></div>
         ${aspSteps(a)}
         ${warnings()}`;
@@ -439,7 +439,7 @@ const screens = {
           <ul class="icon-list say">
             <li><span class="ico" aria-hidden="true">🖊️</span> Firma ${official ? 'il modulo' : 'la lettera'}</li>
             ${a.documents_required.filter((d) => !/lettera/i.test(d)).map((d) => `<li><span class="ico" aria-hidden="true">${docIcon(d)}</span> Allega: ${esc(d)}</li>`).join('')}
-            ${person.isDelegate ? '<li><span class="ico" aria-hidden="true">📝</span> Allega: la delega firmata e il tuo documento</li>' : ''}
+            <li class="delegate-note"${person.isDelegate ? '' : ' hidden'}><span class="ico" aria-hidden="true">📝</span> Allega: la delega firmata e il tuo documento</li>
           </ul>
         </div>
         <button type="button" class="btn primary" data-go="after">⏳ Fatto! E adesso?</button>
@@ -452,6 +452,7 @@ const screens = {
           delete v.service; delete v.nre;
           Object.assign(person, v);
           form.querySelector('.delegate-fields').hidden = !person.isDelegate;
+          document.querySelectorAll('.delegate-note').forEach((li) => { li.hidden = !person.isDelegate; });
           updateLetter(a, official);
         };
         form.addEventListener('input', update);
@@ -467,8 +468,11 @@ const screens = {
     const a = asp();
     const today = todayISO();
     if (!state.firstRequestDate) state.firstRequestDate = today;
-    const remindOn = formatIt(addDays(state.firstRequestDate, rules.reminder_after_days));
-    const urp = a.emails[0] || a.pec;
+    const remindTitle = () => {
+      const on = addDays(state.firstRequestDate, rules.reminder_after_days);
+      return `Se nessuno ti risponde entro ${art('il', on)}${formatIt(on)}`;
+    };
+    const urp = generalContact(a);
     return {
       html: `
         <div class="hero" aria-hidden="true">⏳</div>
@@ -478,7 +482,7 @@ const screens = {
           ${a.what_next.map((w) => `<li class="say"><span class="ico" aria-hidden="true">👉</span> ${esc(w)}</li>`).join('')}
           <li class="say"><span class="ico" aria-hidden="true">🗂️</span> Conserva una copia di tutto quello che hai mandato.</li>
         </ul>
-        <h2 class="say">Se nessuno ti risponde entro il ${esc(remindOn)}</h2>
+        <h2 class="say" id="remind-title">${esc(remindTitle())}</h2>
         <ol class="big-steps">
           <li class="say"><strong>Manda un sollecito</strong>: una seconda lettera per ricordarlo all'ASP. La trovi qui sotto, già pronta.</li>
           <li class="say"><strong>Fai un reclamo</strong> all'ufficio URP della tua ASP${urp ? ` (${mailLink(urp)})` : ''}.</li>
@@ -493,7 +497,8 @@ const screens = {
           <h2 style="margin-top:0">📄 Il sollecito, già pronto</h2>
           <form id="rem-form" novalidate>
             <label for="firstRequestDate">Che giorno hai mandato la prima richiesta?</label>
-            <input type="date" id="firstRequestDate" name="firstRequestDate" value="${esc(state.firstRequestDate)}" max="${today}">
+            <input type="date" id="firstRequestDate" name="firstRequestDate" value="${esc(state.firstRequestDate)}" max="${today}" aria-describedby="rem-form-error">
+            <p class="field-error" id="rem-form-error" role="alert" hidden></p>
           </form>
           <div id="reminder" class="letter"></div>
           <div class="btn-row three">
@@ -509,13 +514,19 @@ const screens = {
       mount() {
         const update = () => {
           const v = readForm(document.getElementById('rem-form'));
-          if (parseDate(v.firstRequestDate) && daysBetween(v.firstRequestDate, today) >= 0) state.firstRequestDate = v.firstRequestDate;
+          const ok = parseDate(v.firstRequestDate) && daysBetween(v.firstRequestDate, today) >= 0;
+          if (ok) state.firstRequestDate = v.firstRequestDate;
+          const err = document.getElementById('rem-form-error');
+          err.hidden = ok;
+          err.textContent = ok ? '' : `Scrivi una data giusta, non dopo oggi. Per ora usiamo ${art('il', state.firstRequestDate)}${formatIt(state.firstRequestDate)}.`;
+          document.getElementById('remind-title').textContent = remindTitle();
           const text = tutelaReminder({
             aspName: a.province, aspAddress: a.send_to || a.pec || '', person, service: state.service, nre: state.nre,
             cls: classText(), firstRequestDate: state.firstRequestDate, today,
           });
           state.reminderText = text;
           document.getElementById('reminder').textContent = text;
+          document.getElementById('rmail-btn').hidden = !(a.send_to || a.pec);
           document.getElementById('rmail-btn').href = mailtoHref(a.send_to || a.pec || '',
             `SOLLECITO – Richiesta percorso di tutela${person.fullName ? ` – ${person.fullName}` : ''}`,
             `Buongiorno,\nin allegato il sollecito firmato.\n\nCordiali saluti\n${person.fullName || ''}`);

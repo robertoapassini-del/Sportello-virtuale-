@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import {
   parseDate, daysBetween, addDays, formatIt, checkWaiting, callbackDeadline,
-  invRegime, invDeadline, maxWaitDays,
+  invRegime, invDeadline, maxWaitDays, art,
 } from '../js/engine.js';
 import { tutelaLetter, inpsReminder, mailtoHref } from '../js/letters.js';
 import { stripEmoji } from '../js/common.js';
@@ -22,6 +22,18 @@ test('date helpers', () => {
   assert.equal(addDays('2026-12-25', 10), '2027-01-04');
   assert.equal(addDays('2028-02-28', 1), '2028-02-29'); // leap year
   assert.equal(formatIt('2026-10-18'), '18/10/2026');
+});
+
+test("«il 18/10» ma «l'11/10» e «l'08/10»", () => {
+  assert.equal(art('il', '2026-10-18'), 'il ');
+  assert.equal(art('il', '2026-10-11'), "l'");
+  assert.equal(art('il', '2026-10-08'), "l'");
+  assert.equal(art('il', '2026-10-01'), 'il ');
+  assert.equal(art('del', '2026-10-11'), "dell'");
+  assert.equal(art('al', '2026-10-08'), "all'");
+  assert.equal(art('fino al', '2026-11-11'), "fino all'");
+  assert.equal(art('il', ''), 'il ');
+  assert.equal(art('il', undefined), 'il ');
 });
 
 test('max wait per class', () => {
