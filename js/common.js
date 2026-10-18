@@ -105,11 +105,31 @@ export function renderFooter(root = '') {
   </div>`;
 }
 
-// Pulsante di scelta con icona. set = valori da salvare, next = schermata successiva.
+// Pulsante di scelta con icona (icon = '' → senza icona, per gli elenchi tutti uguali
+// come le province). set = valori da salvare, next = schermata successiva.
+// Lo spazio prima di <small> serve ai lettori di schermo: «Lettera B, Entro 10 giorni».
 export function choice(icon, label, set, next, small = '') {
   return `<button type="button" class="btn choice" data-set='${esc(JSON.stringify(set))}' data-go="${next}">
-    <span class="ico" aria-hidden="true">${icon}</span>
-    <span class="txt">${esc(label)}${small ? `<small>${esc(small)}</small>` : ''}</span></button>`;
+    ${icon ? `<span class="ico" aria-hidden="true">${icon}</span>` : ''}
+    <span class="txt">${esc(label)}${small ? ` <small>${esc(small)}</small>` : ''}</span></button>`;
+}
+
+// Le emoji all'inizio dei titoli restano visibili ma i lettori di schermo non le leggono
+// (altrimenti dicono per esempio «puntina arrotondata, Dove abiti?»).
+const LEADING_EMOJI = /^\s*((?:[\p{Extended_Pictographic}\p{Regional_Indicator}\u{1F3FB}-\u{1F3FF}⃣️‍])+)\s*/u;
+export function hideHeadingEmoji(root) {
+  for (const h of root.querySelectorAll('h1, h2, h3')) {
+    const t = h.firstChild;
+    if (!t || t.nodeType !== 3) continue;
+    const m = t.textContent.match(LEADING_EMOJI);
+    if (!m) continue;
+    t.textContent = t.textContent.slice(m[0].length);
+    const span = document.createElement('span');
+    span.setAttribute('aria-hidden', 'true');
+    span.className = 'h-ico';
+    span.textContent = `${m[1]} `;
+    h.insertBefore(span, t);
+  }
 }
 
 // ---------- Lettura ad alta voce ----------

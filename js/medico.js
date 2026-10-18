@@ -55,7 +55,7 @@ const screens = {
   province: () => ({
     html: `${progress(1, 3)}
       <h1>📍 Dove abita la persona?</h1>
-      <div class="grid2">${[...data.asl].sort((a, b) => a.province.localeCompare(b.province)).map((a) => choice('📍', a.province, { province: a.id }, 'who')).join('')}</div>`,
+      <div class="grid2">${[...data.asl].sort((a, b) => a.province.localeCompare(b.province)).map((a) => choice('', a.province, { province: a.id }, 'who')).join('')}</div>`,
   }),
 
   who: () => ({
@@ -87,7 +87,7 @@ const screens = {
       html: `
         <div class="hero" aria-hidden="true">✅</div>
         <h1>Ecco come fare a ${esc(a.province)}</h1>
-        <div class="notice ok"><p class="say">${whoText()}</p></div>
+        <div class="notice info"><p class="say">${whoText()}</p></div>
         ${extra}
         <h2 class="say">Dove si fa</h2>
         <p class="say">${esc(a.scelta_medico.how)}</p>
@@ -111,7 +111,7 @@ const screens = {
       html: `
         <div class="hero" aria-hidden="true">🚫</div>
         <h1>Se non trovi nessuno con posti liberi</h1>
-        <div class="notice ok"><p class="say">${whoText()}</p></div>
+        <div class="notice info"><p class="say">${whoText()}</p></div>
         <ol class="big-steps">
           <li class="say"><strong>Chiedi allo sportello «scelta e revoca»</strong> l'elenco completo, anche dei comuni vicini dello stesso distretto: a volte c'è posto poco lontano.</li>
           <li class="say"><strong>Chiedi una deroga:</strong> in alcuni casi un medico può superare il limite di pazienti (per esempio per un familiare di un suo paziente, o per un neonato).</li>

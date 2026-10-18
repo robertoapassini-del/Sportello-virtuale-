@@ -13,7 +13,7 @@ const state = {};
 const sources = () => [rules.sources, { verified: rules.last_verified }];
 const deadline = () => ricorsoDeadline(rules, { verbaleDate: state.verbaleDate, today: todayISO() });
 
-const patronato = `<div class="notice ok">
+const patronato = `<div class="notice info">
   <p class="say">🏢 <strong>Un patronato ti aiuta gratis.</strong> Per esempio INCA, ACLI, INAS. Legge il verbale con te e ti manda da un avvocato convenzionato.</p></div>`;
 
 const howItWorks = () => `

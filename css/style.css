@@ -300,3 +300,34 @@ table.fields th, table.fields td { border-bottom-color: var(--border); }
 
 .site-footer { background: #f3faf9; border-top: none; }
 .site-footer a { color: var(--primary); }
+
+/* ---- Avvisi: un colore = un significato, uguale in tutto il sito (come le «care card» NHS) ----
+   info   = consiglio o aiuto (verde acqua)
+   ok     = sei nei tempi / hai diritto (verde)
+   warn   = attenzione (giallo)
+   bad    = in ritardo, scaduto, errore (rosso chiaro)
+   urgent = stai male: chiama il medico o il 112 (rosso pieno, testo bianco) */
+.notice.urgent { background: var(--bad); border-color: #6e1712; color: #fff; }
+.notice.urgent a { color: #fff; font-weight: 800; }
+
+/* Pulsanti senza icona (elenchi tutti uguali, come le province). */
+.btn.choice:not(:has(.ico)) { padding-left: 22px; }
+
+/* ---- Pagina iniziale: le scelte subito visibili sul telefono ---- */
+.home-intro { margin: -8px 0 4px; }
+.home-intro h1 { margin-bottom: 6px; }
+.home-intro .lead { font-size: 1.05rem; margin-bottom: 8px; }
+.home-trust { font-size: 0.9rem; color: var(--muted); margin: 0 0 14px; }
+.home-trust strong { color: var(--text); }
+.home-search { margin: 4px 0 18px; }
+.home-search label { margin: 0 0 4px; font-size: 0.95rem; }
+.home-search input[type="search"] { margin: 0; }
+#q-results:not(:empty) { margin-top: 10px; }
+.home-about { margin-top: 24px; }
+/* Senza JavaScript si vede il contenuto scritto nella pagina (titolo, descrizione,
+   elenco dei moduli); con JavaScript solo «Un momento…» finché la pagina è pronta. */
+.js-only { display: none; }
+.js .js-only { display: block; }
+.js .static-fallback { display: none; }
+.static-list { padding-left: 1.2rem; }
+.static-list li { margin: 8px 0; }

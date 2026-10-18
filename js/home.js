@@ -1,5 +1,6 @@
 // Pagina iniziale: scelta guidata. Prima 4 grandi riquadri, poi al massimo 4 scelte.
-// In più una casella «Scrivi una parola» per chi aiuta, e il pulsante Ascolta.
+// In più una casella di ricerca sempre aperta per chi aiuta, e il pulsante Ascolta.
+// Ogni gruppo ha il suo indirizzo (?gruppo=casa) per poterlo condividere.
 import { esc, loadJSON, renderFooter, helpBox, listenButton, speakScreen, stopSpeaking, sourcesBox } from './common.js';
 import { createNav } from './flow.js';
 
@@ -10,46 +11,55 @@ let current = { screen: 'groups' };
 const nav = createNav({ first: 'groups', show: (screen) => { current = { screen }; render(); } });
 
 function card(href, icon, title, small) {
-  return `<a class="btn choice" href="${esc(href)}"><span class="ico" aria-hidden="true">${icon}</span><span class="txt">${esc(title)}${small ? `<small>${esc(small)}</small>` : ''}</span></a>`;
+  return `<a class="btn choice" href="${esc(href)}"><span class="ico" aria-hidden="true">${icon}</span><span class="txt">${esc(title)}${small ? ` <small>${esc(small)}</small>` : ''}</span></a>`;
 }
 function groupBtn(g) {
-  return `<button type="button" class="btn choice" data-group="${esc(g.id)}"><span class="ico" aria-hidden="true">${g.icon}</span><span class="txt">${esc(g.title)}<small>${esc(g.small)}</small></span></button>`;
+  return `<button type="button" class="btn choice" data-group="${esc(g.id)}"><span class="ico" aria-hidden="true">${g.icon}</span><span class="txt">${esc(g.title)} <small>${esc(g.small)}</small></span></button>`;
 }
 
+// Prima schermata: la domanda e le 4 scelte subito, come la home di NHS.uk.
+// Chi siamo in una riga; il resto sotto le scelte.
 const intro = () => `
-  <section class="hero-band">
+  <section class="home-intro">
   <div class="topbar">${listenButton()}</div>
-  <h1>Guida Sanità</h1>
-  <p class="lead say">Sanità, cure e invalidità: ti diciamo cosa ti spetta, entro quando e come chiederlo. Con parole semplici.</p>
-  <div class="notice info"><p class="say">✅ È gratis. 🤝 Siamo volontari: <strong>non siamo l'ASP, l'INPS né un altro ufficio pubblico</strong>. 🔒 Non salviamo niente. 📍 Per ora vale solo in Sicilia.</p></div>
+  <h1 class="say">Di cosa hai bisogno?</h1>
+  <p class="home-trust say">Gratis. Siamo volontari: <strong>non siamo l'ASP né l'INPS</strong>. Per ora solo in Sicilia.</p>
   </section>`;
 
+// La ricerca è sempre aperta: serve soprattutto a chi aiuta un familiare.
 const search = `
-  <details class="card search">
-    <summary><span class="ico" aria-hidden="true">🔎</span> Oppure scrivi una parola</summary>
-    <label for="q" class="sr-only">Cerca</label>
+  <div class="home-search">
+    <label for="q">Oppure cerca una parola</label>
     <input type="search" id="q" placeholder="Per esempio: carrozzina, ticket, referti" autocomplete="off">
     <div id="q-results" aria-live="polite"></div>
-  </details>`;
+  </div>`;
+
+const about = `
+  <div class="notice info home-about"><p class="say">Sanità, cure e invalidità: ti diciamo cosa ti spetta, entro quando e come chiederlo. Con parole semplici.</p></div>`;
 
 function render() {
   stopSpeaking();
   let html;
   if (current.screen === 'groups') {
     html = `${intro()}
-      <h2 class="say">Di cosa hai bisogno?</h2>
       ${reg.groups.map(groupBtn).join('')}
-      ${search}`;
+      ${search}
+      ${about}`;
   } else {
     const g = reg.groups.find((x) => x.id === current.screen);
     const mods = reg.modules.filter((m) => m.group === g.id);
-    html = `<button type="button" class="back" data-back="1">← Torna indietro</button>
+    html = `<div class="topbar"><button type="button" class="back" data-back="1">← Torna indietro</button>${listenButton()}</div>
       <h1><span aria-hidden="true">${g.icon}</span> ${esc(g.title)}</h1>
       <p class="say">Scegli quello che ti somiglia di più.</p>
       ${mods.map((m) => card(`${m.id}/index.html`, m.icon, m.title, m.small)).join('')}`;
   }
-  app.innerHTML = `${current.screen === 'groups' ? '' : `<div class="topbar">${listenButton()}</div>`}${html}${helpBox()}${sourcesBox(rulesSources, {})}`;
+  app.innerHTML = `${html}${helpBox()}${sourcesBox(rulesSources, {})}`;
   window.scrollTo(0, 0);
+  if (current.screen !== 'groups') {
+    const h1 = app.querySelector('h1');
+    h1.setAttribute('tabindex', '-1');
+    h1.focus({ preventScroll: true });
+  }
   const q = document.getElementById('q');
   if (q) q.addEventListener('input', () => showResults(q.value));
 }
@@ -71,7 +81,7 @@ app.addEventListener('click', (e) => {
   const listen = e.target.closest('button[data-action="listen"]');
   if (listen) return speakScreen(app);
   const g = e.target.closest('button[data-group]');
-  if (g) { nav.go(g.dataset.group); return; }
+  if (g) { nav.go(g.dataset.group, `?gruppo=${encodeURIComponent(g.dataset.group)}`); return; }
   if (e.target.closest('button[data-back]')) nav.back();
 });
 
@@ -83,6 +93,15 @@ app.addEventListener('click', (e) => {
     rulesSources = (await Promise.all(names.map((n) => loadJSON(`data/${n}.json`)))).flatMap((r) => r.sources);
   } catch {
     app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>';
+    return;
+  }
+  // Link condiviso a un gruppo (?gruppo=casa): la home sotto, il gruppo sopra,
+  // così «Torna indietro» porta alle 4 scelte e non fuori dal sito.
+  const wanted = new URLSearchParams(location.search).get('gruppo');
+  if (wanted && reg.groups.some((g) => g.id === wanted)) {
+    history.replaceState(history.state, '', location.pathname);
+    render();
+    nav.go(wanted, `?gruppo=${encodeURIComponent(wanted)}`);
     return;
   }
   render();

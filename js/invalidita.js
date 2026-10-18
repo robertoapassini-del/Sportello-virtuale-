@@ -6,7 +6,7 @@ import { invRegime, invDeadline, todayISO, formatIt, parseDate, daysBetween } fr
 import { inpsReminder, mailtoHref } from './letters.js';
 import { noPecBox,
   esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton,
-  personFields, reportErrorHref, choice, helpBox, listenButton, speakScreen, stopSpeaking, sourcesBox, moreHelp,
+  personFields, reportErrorHref, choice, helpBox, listenButton, speakScreen, stopSpeaking, sourcesBox, moreHelp, hideHeadingEmoji,
 } from './common.js';
 import { createNav } from './flow.js';
 
@@ -29,6 +29,7 @@ function paint(current) {
   const s = screens[current]();
   const backBtn = current === 'intro' ? '' : '<button type="button" class="back" data-action="back">← Torna indietro</button>';
   app.innerHTML = `<div class="topbar">${backBtn}${listenButton()}</div>${s.html}${moreHelp()}${helpBox()}${screenSources()}`;
+  hideHeadingEmoji(app);
   if (s.mount) s.mount();
   window.scrollTo(0, 0);
   const h1 = app.querySelector('h1');
@@ -67,7 +68,7 @@ function progress(n) {
   return `<p class="progress"><span aria-hidden="true">${dots}</span> Domanda ${n} di 4</p>`;
 }
 
-const patronato = `<div class="notice ok">
+const patronato = `<div class="notice info">
   <p class="say">🏢 <strong>Un patronato ti aiuta gratis.</strong> Per esempio INCA, ACLI o INAS. Segue la tua pratica e può sollecitare l'INPS per te.</p></div>`;
 
 function inpsCalls() {
@@ -122,7 +123,7 @@ const screens = {
     html: `${progress(1)}
       <h1>📍 Dove abiti?</h1>
       <p class="say">Scegli la tua provincia.</p>
-      <div class="grid2">${inps.provinces.map((p) => choice('📍', p.name, { province: p.id }, 'certDate')).join('')}</div>`,
+      <div class="grid2">${inps.provinces.map((p) => choice('', p.name, { province: p.id }, 'certDate')).join('')}</div>`,
   }),
 
   certDate: () => ({

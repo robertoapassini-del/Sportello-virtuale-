@@ -2,6 +2,15 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 18/10/2026 — design sul modello NHS.uk
+- **Pagina iniziale**: titolo «Di cosa hai bisogno?» e le 4 scelte subito visibili sul telefono; chi siamo in una riga sopra, la descrizione sotto le scelte. Tolto il nome ripetuto nel titolo.
+- **Ricerca sempre aperta** (prima era nascosta in «Oppure scrivi una parola»).
+- **Ogni gruppo ha un indirizzo** da condividere (per esempio `?gruppo=casa`). Tornando indietro da un modulo si ritrova il gruppo aperto.
+- **Meno emoji ripetute**: le province non hanno più la puntina accanto a ogni nome. Le emoji all'inizio dei titoli restano visibili ma i lettori di schermo non le leggono.
+- **Avvisi: un colore = un significato** (`css/style.css`): info = consiglio o aiuto, ok = sei nei tempi, warn = attenzione, bad = in ritardo, nuovo **urgent** (rosso pieno) = stai male, chiama il medico o il 112. I riquadri «patronato/CAF» passano da ok a info.
+- **Lettori di schermo**: «Lettera B, Entro 10 giorni» invece di «Lettera BEntro 10 giorni» (spazio prima della spiegazione in tutti i pulsanti).
+- **Senza JavaScript** la pagina iniziale mostra l'elenco di tutti i moduli come link, e ogni modulo il suo titolo e la descrizione (prima: solo «Un momento…»).
+
 ## 18/10/2026 — tasto Indietro del telefono
 - Prima il tasto Indietro del telefono (o del browser) faceva uscire dal modulo e si perdevano le risposte. Ora torna alla domanda precedente, come «← Torna indietro»; il tasto Avanti la riapre. Vale per tutti i moduli e per i gruppi della pagina iniziale (`createNav` in `js/flow.js`).
 - L'indirizzo della pagina non cambia. Dopo «Ricomincia» o se ricarichi la pagina, le schermate vecchie riportano all'inizio.

@@ -55,7 +55,7 @@ const screens = {
   province: () => ({
     html: `${progress(1, 2)}
       <h1>📍 Dove abita la persona?</h1>
-      <div class="grid2">${[...data.asl].sort((a, b) => a.province.localeCompare(b.province)).map((a) => choice('📍', a.province, { province: a.id }, 'stage')).join('')}</div>`,
+      <div class="grid2">${[...data.asl].sort((a, b) => a.province.localeCompare(b.province)).map((a) => choice('', a.province, { province: a.id }, 'stage')).join('')}</div>`,
   }),
 
   stage: () => ({
@@ -88,7 +88,7 @@ const screens = {
           <li class="say"><strong>Chiedi la terapia del dolore</strong> o l'attivazione delle cure palliative: è un diritto (legge 38/2010).</li>
           <li class="say"><strong>Se è già seguita dalla rete</strong>, chiama il numero di reperibilità che vi hanno dato: serve anche per questo.</li>
         </ol>
-        <div class="notice bad"><p class="say">Se la situazione precipita, chiama il <a href="tel:112">112</a>.</p></div>
+        <div class="notice urgent"><p class="say">Se la situazione precipita, chiama il <a href="tel:112">112</a>.</p></div>
         ${a.phones.map((p) => callButton(p.label, p.number)).join('')}
         ${whatIs()}
         ${disclaimer(rules.last_verified)}

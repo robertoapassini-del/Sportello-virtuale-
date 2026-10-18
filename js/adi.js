@@ -11,7 +11,7 @@ let rules;
 const state = {};
 const sources = () => [rules.sources, { verified: rules.last_verified, note: 'Le cifre cambiano ogni anno: controlla sempre con il patronato o sul sito INPS.' }];
 
-const caf = `<div class="notice ok"><p class="say">🏢 <strong>Un patronato o un CAF fa la domanda gratis</strong> (per esempio INCA, ACLI, INAS, CAF CGIL o CISL). Ti fanno anche l'ISEE, che serve per la domanda.</p></div>`;
+const caf = `<div class="notice info"><p class="say">🏢 <strong>Un patronato o un CAF fa la domanda gratis</strong> (per esempio INCA, ACLI, INAS, CAF CGIL o CISL). Ti fanno anche l'ISEE, che serve per la domanda.</p></div>`;
 
 const howTo = () => `
   <h2 class="say">Come si chiede</h2>

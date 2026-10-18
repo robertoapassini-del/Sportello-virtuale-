@@ -57,7 +57,7 @@ const screens = {
   province: () => ({
     html: `${progress(1, 3)}
       <h1>📍 In quale provincia è l'ospedale?</h1>
-      <div class="grid2">${[...data.asl].sort((a, b) => a.province.localeCompare(b.province)).map((a) => choice('📍', a.province, { province: a.id }, 'what')).join('')}</div>`,
+      <div class="grid2">${[...data.asl].sort((a, b) => a.province.localeCompare(b.province)).map((a) => choice('', a.province, { province: a.id }, 'what')).join('')}</div>`,
   }),
 
   what: () => ({
