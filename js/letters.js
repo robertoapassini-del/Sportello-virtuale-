@@ -1,5 +1,5 @@
-// Letter templates (plain text). Pure functions: no DOM.
-// TODO-VERIFY: every template must be approved by the lawyer before launch.
+// Modelli di lettera (testo semplice). Funzioni pure: niente pagina.
+// TODO-VERIFY: ogni modello va approvato dal legale prima del lancio.
 import { formatIt } from './engine.js';
 
 const blank = (v, placeholder = '__________') => (v && String(v).trim()) || placeholder;
@@ -19,7 +19,7 @@ function signature(p, today) {
   return `${blank(p.city, '[luogo]')}, ${formatIt(today)}                                   Firma ______________________`;
 }
 
-// Module 1 — request to activate the percorso di tutela (SPEC section 7).
+// Modulo 1 — richiesta di attivazione del percorso di tutela (SPEC sezione 7).
 export function tutelaLetter({ aspName, aspAddress, person: p, service, nre, cls, maxDays, bookingDate, appointmentDate, noDateOffered, requestDate, today }) {
   const booking = noDateOffered
     ? `- in data ${requestDate ? formatIt(requestDate) : '__________'} ha richiesto la prenotazione tramite i canali ufficiali e non gli/le è
@@ -54,7 +54,7 @@ ${signature(p, today)}
 `;
 }
 
-// Module 1 — reminder (sollecito) if the ASP did not answer.
+// Modulo 1 — sollecito se l'ASP non risponde.
 export function tutelaReminder({ aspName, aspAddress, person: p, service, nre, cls, firstRequestDate, today }) {
   return `Spett.le Azienda Sanitaria Provinciale di ${aspName}
 ${aspAddress || ''}
@@ -78,7 +78,7 @@ ${signature(p, today)}
 `;
 }
 
-// Module 2 — reminder to INPS when the disability assessment visit does not arrive.
+// Modulo 2 — sollecito all'INPS quando la visita di invalidità non arriva.
 export function inpsReminder({ provinceName, inpsPec, person: p, certNumber, certDate, domandaDate, domandaNumber, regime, deadlineInfo, today }) {
   const premise = regime === 'new'
     ? `- in data ${formatIt(certDate)} è stato trasmesso all'INPS il certificato medico introduttivo n. ${blank(certNumber)},\n  che ai sensi del D.Lgs. 62/2024 costituisce domanda di accertamento;`
@@ -113,7 +113,7 @@ ${signature(p, today)}
 }
 
 export function mailtoHref(to, subject, body) {
-  // Keep the URL short enough for phone mail apps; very long bodies get truncated.
+  // L'indirizzo deve restare corto per le app di posta del telefono; testi troppo lunghi vengono tolti.
   const maxBody = 1800;
   const b = body && body.length > maxBody ? '' : body;
   const params = [`subject=${encodeURIComponent(subject)}`];

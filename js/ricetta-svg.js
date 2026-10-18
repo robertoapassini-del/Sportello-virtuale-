@@ -1,5 +1,5 @@
-// Hand-drawn sample of an electronic prescription reminder (promemoria).
-// Deliberately simplified and labelled as a sample: never use a real prescription image.
+// Disegno di esempio del promemoria della ricetta elettronica.
+// Volutamente semplificato e segnato come fac-simile: mai usare l'immagine di una ricetta vera.
 export const RICETTA_SVG = `
 <svg class="ricetta" viewBox="0 0 520 300" role="img" aria-labelledby="ric-title ric-desc" xmlns="http://www.w3.org/2000/svg">
   <title id="ric-title">Disegno di esempio di una ricetta</title>

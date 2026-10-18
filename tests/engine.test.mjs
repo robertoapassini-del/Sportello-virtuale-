@@ -154,3 +154,11 @@ test('letters fill in the facts', () => {
   assert.match(i, /29\/09\/2026/);
   assert.ok(mailtoHref('a@b.it', 'Oggetto è', 'ciao').startsWith('mailto:a@b.it?subject=Oggetto%20%C3%A8&body=ciao'));
 });
+
+test('i testi mostrati agli utenti non contengono note interne (TODO)', () => {
+  const shown = (a) => JSON.stringify([a.how_to, a.documents_required, a.what_next, a.notes, a.details, a.fast_track, a.phones]);
+  for (const a of asp.asl) {
+    assert.doesNotMatch(shown(a), /TODO|VERIFY/i, a.id);
+    assert.ok(Array.isArray(a.todo) && Array.isArray(a.details), a.id);
+  }
+});

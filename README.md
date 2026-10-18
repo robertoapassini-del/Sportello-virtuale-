@@ -1,57 +1,70 @@
 # Diritto in Tempo
 
-A free, static website that helps people in Sicily use their legal right to a medical visit or exam within the
-maximum waiting time on their prescription (module 1, **liste d'attesa**), and to know the legal deadline for the
-disability assessment visit (module 2, **invalidità civile**). Full requirements: [SPEC.md](SPEC.md).
+Sito gratuito che aiuta le persone in Sicilia a far valere i tempi massimi di attesa:
 
-- **No backend, no database, no cookies, no AI.** Everything runs in the browser; nothing is saved or sent.
-- **The computer decides with fixed rules** (`js/engine.js`), never an AI.
-- All ASP/INPS details are maintained by hand in `data/*.json`, each with a `last_verified` date and source.
+- **Modulo 1 – Liste d'attesa:** la visita o l'esame è troppo lontano rispetto alla classe di priorità della ricetta.
+- **Modulo 2 – Invalidità civile:** la visita per l'invalidità non arriva entro i tempi di legge.
 
-## Run it on your computer
+Requisiti completi: [SPEC.md](SPEC.md).
 
-The pages load JSON files, so they need a tiny local web server (opening the file directly won't work):
+## Principi
+
+- **Semplicissimo per tutti**, anche per chi legge poco: frasi brevi, una sola domanda per schermata, pulsanti
+  grandi con icone, pulsante **🔊 Ascolta** che legge la pagina ad alta voce, riquadro «Chi può aiutarti».
+- **Niente server, niente database, niente cookie, niente intelligenza artificiale.** Tutto funziona nel browser;
+  niente viene salvato o inviato.
+- **Decide il computer con regole fisse** (`js/engine.js`).
+- I dati di ASP e INPS si aggiornano a mano nei file `data/*.json`, ognuno con data di verifica e fonte.
+
+## Regole per scrivere i testi
+
+- Frasi brevi, un'idea per frase, parole di tutti i giorni (es. «foglio della prenotazione», non «promemoria»).
+- Le parole tecniche (PEC, URP, CUP) si spiegano la prima volta.
+- I riferimenti di legge vanno nei riquadri «Per saperne di più», non nel testo principale.
+- Le lettere per gli uffici restano in linguaggio formale: sono per l'ASP o l'INPS, non per l'utente.
+- Nei file `data/` le cose da verificare vanno **solo** nel campo `todo` (non viene mostrato). Un test
+  controlla che nessun «TODO» arrivi agli utenti.
+
+## Provarlo sul tuo computer
+
+Le pagine leggono file JSON, quindi serve un piccolo server locale (aprire il file direttamente non funziona):
 
 ```bash
-python3 -m http.server 8080      # or: npm start
-# then open http://localhost:8080
+python3 -m http.server 8080      # oppure: npm start
+# poi apri http://localhost:8080
 ```
 
-## Tests
+## Test
 
 ```bash
 npm test
 ```
 
-Covers every class (U, B, D-visit, D-exam, P) for: same day, exactly at the limit, one day over; Result C call-back
-deadlines; invalidità regimes and 15/30/90-day deadlines; data-file completeness; letter generation.
+## Struttura
 
-## Project layout
-
-| Path | What it is |
+| Percorso | Cos'è |
 |---|---|
-| `index.html` | Home: choose a module |
-| `liste-attesa/`, `js/liste-attesa.js` | Module 1 question flow, results, letter, "E adesso?" |
-| `invalidita/`, `js/invalidita.js` | Module 2 flow, deadline, INPS reminder letter |
-| `js/engine.js` | Date rules (pure functions, tested) |
-| `js/letters.js` | Letter templates (TODO-VERIFY: lawyer review) |
-| `js/common.js` | Footer, disclaimer, copy/print, maintainer email |
-| `data/rules.json`, `data/rules-invalidita.json` | National rules |
-| `data/asp-sicilia.json`, `data/inps-sicilia.json` | Hand-maintained contacts per ASP / INPS office |
-| `privacy.html`, `note-legali.html`, `fonti.html` | Privacy, legal notes, sources & verification dates |
+| `index.html` | Pagina iniziale: scegli il problema |
+| `liste-attesa/`, `js/liste-attesa.js` | Modulo 1: domande, risultato, lettera, «E adesso?» |
+| `invalidita/`, `js/invalidita.js` | Modulo 2: scadenza, sollecito all'INPS, cosa portare |
+| `js/engine.js` | Regole sulle date (funzioni pure, testate) |
+| `js/letters.js` | Modelli di lettera (DA VERIFICARE con il legale) |
+| `js/common.js` | Piè di pagina, aiuto, lettura ad alta voce, copia/stampa |
+| `data/*.json` | Regole nazionali e contatti di ASP e INPS |
+| `privacy.html`, `note-legali.html`, `fonti.html` | Privacy, chi siamo, fonti |
 
-## Publish on GitHub Pages (free)
+## Pubblicarlo gratis su GitHub Pages
 
-Repository → **Settings → Pages** → Source: *Deploy from a branch* → pick the branch and `/ (root)` → Save.
-All links are relative, so it also works under `https://<user>.github.io/<repo>/`.
+Repository → **Settings → Pages** → *Deploy from a branch* → scegli il ramo e `/ (root)` → Save.
 
-## Before public launch (from the spec)
+## Prima del lancio
 
-- Search the code and data for `TODO` / `TODO-VERIFY` and resolve each (phone the URP offices, lawyer review).
-- Replace `MAINTAINER_EMAIL` in `js/common.js` and the placeholders in `note-legali.html`.
-- Re-check all ASP data after Sicily adopts its new regional plan (≈ 22 Dec 2026), then every 3 months
-  (see SPEC §9b). Log every data change in `CHANGELOG.md`.
+- Cerca `TODO` nel codice e nei dati e risolvi ogni punto (telefonate agli URP, revisione del legale).
+- Sostituisci `MAINTAINER_EMAIL` in `js/common.js` e il nome del responsabile in `note-legali.html`.
+- Fai provare il sito a qualche persona anziana e annota dove si blocca.
+- Ricontrolla i dati delle ASP dopo il nuovo piano regionale (≈ 22/12/2026), poi ogni 3 mesi.
+  Annota ogni modifica in `CHANGELOG.md`.
 
-## Licence
+## Licenza
 
-Code: MIT ([LICENSE](LICENSE)). Content: CC BY 4.0.
+Codice: MIT ([LICENSE](LICENSE)). Testi: CC BY 4.0.

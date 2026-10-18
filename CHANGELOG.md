@@ -1,10 +1,15 @@
-# Changelog
+# Registro delle modifiche
 
-Every change to `data/*.json` must be logged here with its source.
+Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
-## 2026-10-18 — first version (MVP)
-- Module 1 (liste d'attesa) and module 2 (invalidità civile) built from SPEC.md v2.2.
-- `data/asp-sicilia.json`: 9 ASPs from the research of 18/10/2026 (Palermo verified; Ragusa, Caltanissetta, Messina,
-  Siracusa, Agrigento, Catania partial; Trapani, Enna todo). Sources listed in each entry.
-- `data/inps-sicilia.json`: regimes per province from the Dipartimento disabilità list + INPS msg. 639/2026.
-  PEC addresses built on INPS's standard format — all TODO-VERIFY.
+## 18/10/2026 — testi semplificati
+- Tutti i testi riscritti in italiano semplice; pulsanti con icone; pulsante «Ascolta»; riquadro «Chi può aiutarti».
+- `data/asp-sicilia.json`: nuovi campi `details` (informazioni in più) e `todo` (note interne, non mostrate).
+  Testi `how_to`, `what_next`, `notes` riscritti. Nessun contatto cambiato.
+
+## 18/10/2026 — prima versione (MVP)
+- Modulo 1 (liste d'attesa) e modulo 2 (invalidità civile) costruiti da SPEC.md v2.2.
+- `data/asp-sicilia.json`: 9 ASP dalla ricerca del 18/10/2026 (Palermo verificata; Ragusa, Caltanissetta, Messina,
+  Siracusa, Agrigento, Catania in parte; Trapani, Enna da verificare). Fonti in ogni scheda.
+- `data/inps-sicilia.json`: procedura per provincia dall'elenco del Dipartimento disabilità + messaggio INPS 639/2026.
+  Indirizzi PEC costruiti sul formato standard INPS — tutti da verificare.

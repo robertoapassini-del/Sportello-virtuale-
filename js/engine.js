@@ -1,7 +1,7 @@
-// Diritto in Tempo — rules engine.
-// Pure functions only: no DOM, no network. Used by the browser and by the tests.
-// Dates are handled as 'YYYY-MM-DD' strings and computed in UTC to avoid
-// daylight-saving surprises.
+// Diritto in Tempo — motore delle regole.
+// Solo funzioni pure: niente pagina, niente rete. Usate dal browser e dai test.
+// Le date sono stringhe 'AAAA-MM-GG' calcolate in UTC, per evitare sorprese
+// con l'ora legale.
 
 const DAY_MS = 24 * 60 * 60 * 1000;
 
@@ -10,7 +10,7 @@ export function parseDate(s) {
   const [y, m, d] = s.split('-').map(Number);
   const t = Date.UTC(y, m - 1, d);
   const back = new Date(t);
-  // Reject impossible dates such as 2026-02-31.
+  // Rifiuta date impossibili come 2026-02-31.
   if (back.getUTCFullYear() !== y || back.getUTCMonth() !== m - 1 || back.getUTCDate() !== d) return null;
   return t;
 }
@@ -20,7 +20,7 @@ export function toISO(t) {
 }
 
 export function todayISO(now = new Date()) {
-  // Local calendar date of the user, not UTC.
+  // Data del calendario dell'utente, non UTC.
   const y = now.getFullYear();
   const m = String(now.getMonth() + 1).padStart(2, '0');
   const d = String(now.getDate()).padStart(2, '0');
@@ -46,9 +46,9 @@ export function formatIt(iso) {
   return `${d}/${m}/${y}`;
 }
 
-// --- Module 1: liste d'attesa -------------------------------------------
+// --- Modulo 1: liste d'attesa -------------------------------------------
 
-// 'D' needs to know if it is a visit or a diagnostic exam.
+// Per la classe 'D' serve sapere se è una visita o un esame.
 export function classKey(cls, kind) {
   if (cls === 'D') {
     if (kind === 'visit') return 'D_visit';
@@ -64,7 +64,7 @@ export function maxWaitDays(rules, cls, kind) {
   return rules.max_wait_days[key] ?? null;
 }
 
-// Equal to the limit = still within; one day more = exceeded.
+// Uguale al limite = ancora nei tempi; un giorno in più = superato.
 export function checkWaiting(rules, { cls, kind, bookingDate, appointmentDate }) {
   const limit = maxWaitDays(rules, cls, kind);
   if (limit === null) return { status: 'error', error: 'class' };
@@ -76,7 +76,7 @@ export function checkWaiting(rules, { cls, kind, bookingDate, appointmentDate })
   return { status: 'within', days, limit, deadline, excess: 0 };
 }
 
-// Result C: no date offered → the ASP must call back within N days (PNGLA 2026-2028).
+// Risultato C: nessuna data → l'ASP deve richiamare entro N giorni (PNGLA 2026-2028).
 export function callbackDeadline(rules, { cls, kind, requestDate, today }) {
   const key = classKey(cls, kind);
   const n = key ? rules.callback_days[key] : undefined;
@@ -88,7 +88,7 @@ export function callbackDeadline(rules, { cls, kind, requestDate, today }) {
   return { status: passed ? 'passed' : 'waiting', days: n, deadline };
 }
 
-// --- Module 2: invalidità civile ----------------------------------------
+// --- Modulo 2: invalidità civile ----------------------------------------
 
 // province: { regime: 'new'|'old', regime_since: 'YYYY-MM-DD'|null }
 export function invRegime(province, certDate, fullNationalDate = '2027-01-01') {
@@ -101,7 +101,7 @@ export function invRegime(province, certDate, fullNationalDate = '2027-01-01') {
 }
 
 // category: 'oncological' | 'minor' | 'other'
-// Returns what deadline applies and whether it has passed.
+// Restituisce quale scadenza vale e se è passata.
 export function invDeadline(rulesInv, { regime, category, certDate, domandaDate, today }) {
   if (!parseDate(certDate)) return { status: 'error', error: 'date' };
   if (today && daysBetween(certDate, today) < 0) return { status: 'error', error: 'future' };
@@ -113,7 +113,7 @@ export function invDeadline(rulesInv, { regime, category, certDate, domandaDate,
     return withPassed({ kind: 'conclusion', days: n, from: certDate, deadline, legal: rulesInv.new_regime.legal_basis, indicative: false }, today);
   }
 
-  // Old regime: first the domanda (within 90 days of the certificate), then the visit.
+  // Procedura vecchia: prima la domanda (entro 90 giorni dal certificato), poi la visita.
   const old = rulesInv.old_regime;
   if (!domandaDate) {
     const deadline = addDays(certDate, old.domanda_window_days);
