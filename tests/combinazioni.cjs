@@ -114,13 +114,27 @@ async function runCase(page, c) {
     const m = text.match(BAD_TEXT);
     if (m) problems.push(`${label}: testo sospetto «${m[0]}»`);
     if (await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1)) problems.push(`${label}: la pagina esce dallo schermo`);
+    // «Ascolta»: la voce deve leggere qualcosa, senza emoji.
+    window_speech: {
+      await page.evaluate(() => { window.__spoken = []; });
+      const listen = page.locator('button[data-action="listen"]');
+      if (!(await listen.count())) { problems.push(`${label}: manca il pulsante Ascolta`); break window_speech; }
+      await listen.click();
+      const spoken = await page.evaluate(() => window.__spoken.join(' '));
+      if (spoken.length < 10) problems.push(`${label}: la voce non legge niente`);
+      const emo = spoken.match(/[\p{Extended_Pictographic}\uFE0F\u200D]/u);
+      if (emo) problems.push(`${label}: la voce legge un'emoji «${emo[0]}»`);
+      await listen.click(); // ferma la voce
+    }
     return text;
   };
 
   if (c.mod === 1) {
     await page.goto(`${BASE}liste-attesa/index.html`);
     await btn(/Comincia/);
+    if (c.access === 'followup' && c.p === 'Palermo') await checkScreen('domanda provincia');
     await btn(new RegExp(`^${c.p}$`));
+    if (c.access === 'followup' && c.p === 'Palermo') await checkScreen('domanda prima volta');
     if (c.access === 'followup') await btn(/^No, è un controllo/);
     else if (c.access === 'unknown-followup') { await btn(/^Non lo so/); await btn(/^È un controllo/); }
     else if (c.access === 'unknown-first') { await btn(/^Non lo so/); await btn(/^È la prima volta/); }
@@ -288,6 +302,18 @@ async function runCase(page, c) {
   const queue = [...cases];
   await Promise.all(Array.from({ length: WORKERS }, async () => {
     const ctx = await browser.newContext({ ...devices['iPhone SE'] });
+    // Finta voce del telefono: registra cosa verrebbe letto.
+    await ctx.addInitScript(() => {
+      let speaking = false;
+      window.__spoken = [];
+      window.SpeechSynthesisUtterance = function (text) { this.text = text; };
+      Object.defineProperty(window, 'speechSynthesis', { value: {
+        get speaking() { return speaking; },
+        speak(u) { window.__spoken.push(u.text); speaking = true; },
+        cancel() { speaking = false; },
+        getVoices() { return []; },
+      } });
+    });
     const page = await ctx.newPage();
     page.on('pageerror', (e) => jsErrors.push(e.message));
     while (queue.length) {

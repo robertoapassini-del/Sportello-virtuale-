@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 18/10/2026 — voce senza emoji
+- Il pulsante «Ascolta» non legge più le emoji (diceva per esempio «puntina arrotondata dove abiti»).
+- Il test delle combinazioni ora preme «Ascolta» in ogni schermata e controlla il testo letto.
+
 ## 18/10/2026 — controllo di tutte le combinazioni
 - `data/asp-sicilia.json`: il fast track ha ora testo e telefono per ogni classe. Corregge Catania classe U,
   che mostrava il numero verde 800 954414 (valido solo per la classe B). Nessun contatto cambiato.

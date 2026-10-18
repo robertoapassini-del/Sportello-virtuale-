@@ -75,10 +75,19 @@ export function listenButton() {
   return canSpeak ? '<button type="button" class="listen" data-action="listen" aria-label="Ascolta questa pagina">🔊 Ascolta</button>' : '';
 }
 
+// Toglie le emoji dal testo da leggere: la voce le pronuncerebbe a parole
+// (per esempio 📍 = «puntina arrotondata»).
+export function stripEmoji(text) {
+  return text
+    .replace(/[\p{Extended_Pictographic}\p{Regional_Indicator}\u{1F3FB}-\u{1F3FF}\u20E3\uFE0F\u200D]/gu, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 function plainText(el) {
   const c = el.cloneNode(true);
   c.querySelectorAll('.ico, .no-say').forEach((x) => x.remove());
-  return c.textContent.replace(/\s+/g, ' ').trim();
+  return stripEmoji(c.textContent);
 }
 
 export function stopSpeaking() {
