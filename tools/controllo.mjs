@@ -1,6 +1,7 @@
 // Controllo automatico: non cambia mai il sito, segnala solo cosa ricontrollare a mano.
 // - Novità dalle fonti (ogni giorno): Gazzetta Ufficiale e INPS, filtrate per parole chiave dei moduli.
 // - Link e date (il lunedì, o con --tutto): link rotti nei file data/*.json e nelle pagine,
+//   riprovati da un server in Italia (check-host.net) se non rispondono, perché molti siti ASP bloccano l'estero;
 //   e campi last_verified più vecchi di MAX_GIORNI.
 // Uso: npm run controllo           (stampa il resoconto)
 //      npm run controllo -- --tutto (anche link e date, qualunque giorno sia)
@@ -144,22 +145,68 @@ async function provaLink(u) {
   }
 }
 
+// Molti siti ASP bloccano chi si collega dall'estero (GitHub controlla dagli Stati Uniti):
+// i link che non rispondono si riprovano da un server a Milano con check-host.net.
+const CHECK_HOST = 'https://check-host.net';
+const NODO_ITALIA = 'it2.node.check-host.net';
+const pausa = (ms) => new Promise((r) => setTimeout(r, ms));
+
+async function provaDallItalia(urls) {
+  const esiti = new Map();
+  const richieste = [];
+  for (const u of urls) {
+    try {
+      const r = await fetch(`${CHECK_HOST}/check-http?host=${encodeURIComponent(u)}&node=${NODO_ITALIA}`,
+        { headers: { Accept: 'application/json', 'User-Agent': UA }, signal: AbortSignal.timeout(20000) });
+      const id = (await r.json()).request_id;
+      if (id) richieste.push({ u, id });
+    } catch { /* resta «non verificabile» */ }
+    await pausa(1000); // check-host limita le richieste troppo ravvicinate
+  }
+  for (let giro = 0; giro < 6 && richieste.some((x) => !esiti.has(x.u)); giro++) {
+    await pausa(5000);
+    for (const { u, id } of richieste.filter((x) => !esiti.has(x.u))) {
+      try {
+        const r = await fetch(`${CHECK_HOST}/check-result/${id}`,
+          { headers: { Accept: 'application/json', 'User-Agent': UA }, signal: AbortSignal.timeout(20000) });
+        const v = (await r.json())[NODO_ITALIA];
+        if (!v) continue; // ancora in corso
+        // v = [[1 se ha risposto, secondi, messaggio, codice HTTP, ip]]
+        const [ok, , messaggio, codice] = v[0] || [];
+        const n = Number(codice);
+        esiti.set(u, ok === 1 && n > 0 && n < 400 ? { funziona: true } : { funziona: false, motivo: n ? `errore ${n}` : 'non risponde' });
+      } catch { /* riprova al giro dopo */ }
+    }
+  }
+  return esiti;
+}
+
 async function linkRotti() {
   const dove = raccogliLink();
   const urls = [...dove.keys()];
-  const esiti = [];
+  const falliti = [];
   let i = 0;
   await Promise.all(Array.from({ length: 8 }, async () => {
     while (i < urls.length) {
       const u = urls[i++];
       const r = await provaLink(u);
       // 401/403/429: il sito blocca i controlli automatici, non vuol dire che il link sia rotto.
-      if (r.stato === 0 || (r.stato >= 400 && ![401, 403, 429].includes(r.stato))) {
-        esiti.push({ url: u, ...r, file: [...dove.get(u)].sort() });
-      }
+      if (r.stato === 0 || (r.stato >= 400 && ![401, 403, 429].includes(r.stato))) falliti.push({ url: u, ...r });
     }
   }));
-  return { totale: urls.length, rotti: esiti.sort((a, b) => a.url.localeCompare(b.url)) };
+
+  const italia = await provaDallItalia(falliti.map((x) => x.url));
+  const rotti = [], nonVerificabili = [];
+  let soloItalia = 0;
+  for (const f of falliti) {
+    const it = italia.get(f.url);
+    const voce = { ...f, file: [...dove.get(f.url)].sort() };
+    if (!it) nonVerificabili.push(voce);
+    else if (it.funziona) soloItalia++;
+    else rotti.push({ ...voce, motivo: `${it.motivo} anche dall'Italia` });
+  }
+  const ordina = (a) => a.sort((x, y) => x.url.localeCompare(y.url));
+  return { totale: urls.length, rotti: ordina(rotti), nonVerificabili: ordina(nonVerificabili), soloItalia };
 }
 
 // ---------- Resoconti ----------
@@ -184,11 +231,15 @@ function testoLink(link, date) {
   if (link) {
     s += `## Link da sistemare (${link.rotti.length} su ${link.totale} controllati)\n\n`;
     if (!link.rotti.length) s += 'Nessuno. 👍\n';
-    for (const l of link.rotti) {
-      const motivo = l.stato ? `errore ${l.stato}` : `non raggiungibile (${l.errore})`;
-      s += `- [ ] ${l.url} — ${motivo} — in ${l.file.map((f) => `\`${f}\``).join(', ')}\n`;
+    for (const l of link.rotti) s += `- [ ] ${l.url} — ${l.motivo} — in ${l.file.map((f) => `\`${f}\``).join(', ')}\n`;
+    s += '\nOgni link è stato riprovato anche da un server in Italia. Può comunque essere un guasto passeggero: ' +
+      'aprilo dal browser prima di cambiarlo.\n';
+    if (link.soloItalia) s += `\n${link.soloItalia} link non rispondono dall'estero ma dall'Italia funzionano: tutto a posto.\n`;
+    if (link.nonVerificabili.length) {
+      s += `\n### Non verificabili dall'Italia (${link.nonVerificabili.length})\n\nIl server di prova in Italia non ha risposto: aprili tu dal browser.\n\n`;
+      for (const l of link.nonVerificabili) s += `- [ ] ${l.url} — in ${l.file.map((f) => `\`${f}\``).join(', ')}\n`;
     }
-    s += '\n«Non raggiungibile» può essere un problema passeggero del sito: riprova dal browser prima di cambiare il link.\n\n';
+    s += '\n';
   }
   s += `## Dati non verificati da più di ${MAX_GIORNI} giorni (${date.length})\n\n`;
   if (!date.length) s += 'Nessuno. 👍\n';
@@ -233,11 +284,11 @@ if (!TOKEN || !REPO) {
 
   if (tutto) {
     const aperta = esistenti.find((x) => x.state === 'open' && x.title === TITOLO_LINK);
-    const problemi = link.rotti.length + date.length;
+    const problemi = link.rotti.length + link.nonVerificabili.length + date.length;
     const body = testoLink(link, date);
     if (problemi && aperta) await gh('PATCH', `/issues/${aperta.number}`, { body });
     else if (problemi) console.log(`Aperta issue link: ${(await gh('POST', '/issues', { title: TITOLO_LINK, body, labels: [LABEL] })).html_url}`);
     else if (aperta) await gh('PATCH', `/issues/${aperta.number}`, { body, state: 'closed' });
-    console.log(`Link rotti: ${link.rotti.length}/${link.totale}; date vecchie: ${date.length}.`);
+    console.log(`Link rotti: ${link.rotti.length}/${link.totale} (bloccati solo dall'estero: ${link.soloItalia}; non verificabili: ${link.nonVerificabili.length}); date vecchie: ${date.length}.`);
   }
 }
