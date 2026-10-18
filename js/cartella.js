@@ -1,5 +1,6 @@
 // Modulo 3 — cartella clinica e referti: «non me li danno».
-// Regola: l'ospedale o l'ASP deve rispondere entro 30 giorni (art. 25 L. 241/1990).
+// Regola: la direzione sanitaria consegna la documentazione disponibile entro 7 giorni,
+// le integrazioni entro 30 (art. 4 c. 3 L. 24/2017). Ricorso: art. 25 L. 241/1990.
 // Non chiediamo mai la malattia: solo il nome della struttura e le date.
 import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween, art } from './engine.js';
 import { cartellaReminder, mailtoHref } from './letters.js';
@@ -116,7 +117,7 @@ const screens = {
           <h1>Non è ancora tardi</h1>
           <div class="notice ok">
             <p class="say">Devono darti ${whatLabel[state.what]} entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong> (${rules.deadline_days} giorni dalla richiesta).</p>
-            <p class="say">Se a quella data non hai niente, torna qui.</p>
+            <p class="say">Se a quella data non hai niente, torna qui. Se manca solo qualche foglio, il resto deve arrivare entro ${rules.integration_days} giorni dalla richiesta.</p>
           </div>
           <p class="say">Nel frattempo puoi telefonare all'ufficio cartelle cliniche e chiedere a che punto è.</p>
           ${disclaimer(rules.last_verified)}
@@ -136,7 +137,7 @@ const screens = {
           <li class="say"><strong>Telefona o vai all'ufficio cartelle cliniche</strong> con la ricevuta. Spesso basta questo.</li>
           <li class="say"><strong>Manda una lettera di sollecito</strong> alla Direzione sanitaria dell'ospedale. La scriviamo insieme.</li>
           <li class="say"><strong>Se ancora niente:</strong> reclamo all'URP dell'ASP di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''}, oppure a Cittadinanzattiva
-            (<a href="https://www.cittadinanzattiva.it" target="_blank" rel="noopener">cittadinanzattiva.it</a>). Un avvocato può fare ricorso al TAR entro ${rules.appeal_days} giorni.</li>
+            (<a href="https://www.cittadinanzattiva.it" target="_blank" rel="noopener">cittadinanzattiva.it</a>). Se dopo ${rules.integration_days} giorni dalla richiesta non hai ancora niente, un avvocato può fare ricorso al TAR nei ${rules.appeal_days} giorni successivi.</li>
         </ol>
         ${a.phones.map((p) => callButton(p.label, p.number)).join('')}
         <button type="button" class="btn primary" data-go="letter">✍️ Scriviamo il sollecito insieme</button>
@@ -199,7 +200,7 @@ const screens = {
           const text = cartellaReminder({
             structure: state.structure ? `Direzione Sanitaria – ${state.structure}` : '', address: state.structureEmail, person,
             requestDate: state.requestDate, protocol: state.protocol, what: whatLabel[state.what].replace(/^(la|i) /, ''),
-            episode: state.episode, deadline: d.deadline, days: rules.deadline_days, today: todayISO(),
+            episode: state.episode, deadline: d.deadline, days: rules.deadline_days, integrationDays: rules.integration_days, today: todayISO(),
           });
           state.letterText = text;
           document.getElementById('preview').textContent = text;

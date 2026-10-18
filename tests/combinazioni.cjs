@@ -102,9 +102,9 @@ for (const pr of inps.provinces) {
   cases.push({ mod: 2, name: `INV ${pr.name} · certificato nel futuro`, pr, p: pr.name, cert: add(TODAY, 1), expectCertError: true });
 }
 
-// Moduli 3 (cartella clinica, 30 giorni) e 4 (ausili, 20 giorni).
+// Moduli 3 (cartella clinica, 7 giorni) e 4 (ausili, 20 giorni).
 const M34 = [
-  { mod: 3, url: 'cartella-clinica/index.html', days: 30, late: 'Sono in ritardo: puoi sollecitare', ok: 'Non è ancora tardi' },
+  { mod: 3, url: 'cartella-clinica/index.html', days: 7, late: 'Sono in ritardo: puoi sollecitare', ok: 'Non è ancora tardi' },
   { mod: 4, url: 'ausili/index.html', days: 20, late: "I 20 giorni sono passati: l'autorizzazione vale lo stesso", ok: 'Non è ancora tardi' },
 ];
 for (const m of M34) {

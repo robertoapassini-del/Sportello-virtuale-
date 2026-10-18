@@ -4,7 +4,7 @@ Sito gratuito che dice alle persone in Sicilia cosa spetta loro, entro quando e 
 
 - **Modulo 1 – Liste d'attesa:** la visita o l'esame è troppo lontano rispetto alla classe di priorità della ricetta.
 - **Modulo 2 – Invalidità civile:** la visita per l'invalidità non arriva entro i tempi di legge.
-- **Modulo 3 – Cartella clinica e referti:** l'ospedale non consegna la copia entro 30 giorni (L. 241/1990).
+- **Modulo 3 – Cartella clinica e referti:** l'ospedale non consegna la copia entro 7 giorni (L. 24/2017, art. 4).
 - **Modulo 4 – Ausili e protesi:** l'ASP non autorizza carrozzina, letto, pannoloni ecc. entro 20 giorni (DPCM 12/01/2017).
 - **Modulo 5 – Esenzione ticket:** calcolo dell'esenzione per età e reddito (codici E01–E04) e come ottenerla.
 - **Modulo 6 – Ricorso invalidità:** 6 mesi dal verbale per il ricorso; quanto tempo resta e cosa fare.
@@ -68,7 +68,7 @@ npm run test:combinazioni
 | `js/icons.js`, `tools/icone.mjs` | Icone disegnate (Lucide, licenza ISC in `fonts/LICENSE-lucide.txt`). Nei testi si scrivono emoji; `iconize` in `js/common.js` le sostituisce sullo schermo. Per una nuova emoji: aggiungerla in `tools/icone.mjs`, poi `npm install --no-save lucide-static && npm run icone` |
 | `liste-attesa/`, `js/liste-attesa.js` | Modulo 1: domande, risultato, lettera, «E adesso?» |
 | `invalidita/`, `js/invalidita.js` | Modulo 2: scadenza, sollecito all'INPS, cosa portare |
-| `cartella-clinica/`, `js/cartella.js` | Modulo 3: scadenza 30 giorni, sollecito all'ospedale |
+| `cartella-clinica/`, `js/cartella.js` | Modulo 3: scadenza 7 giorni, sollecito all'ospedale |
 | `ausili/`, `js/ausili.js` | Modulo 4: scadenza 20 giorni, sollecito all'ASP, consegna |
 | `esenzione-ticket/`, `js/esenzione.js` | Modulo 5: calcolo esenzione per reddito |
 | `ricorso-invalidita/`, `js/ricorso.js` | Modulo 6: scadenza di 6 mesi per il ricorso |

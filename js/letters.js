@@ -122,18 +122,19 @@ export function mailtoHref(to, subject, body) {
 }
 
 // Modulo 3 — sollecito per la copia della cartella clinica o dei referti.
-export function cartellaReminder({ structure, address, person: p, requestDate, protocol, what, episode, deadline, days = 30, today }) {
+export function cartellaReminder({ structure, address, person: p, requestDate, protocol, what, episode, deadline, days = 7, integrationDays = 30, today }) {
   return `Spett.le ${blank(structure, 'Direzione Sanitaria di __________')}
 ${address || ''}
 
 Oggetto: SOLLECITO – Richiesta di copia di ${blank(what, 'cartella clinica')} presentata ${art('il', requestDate)}${requestDate ? formatIt(requestDate) : '__________'}
-(art. 25 L. 241/1990)
+(art. 4, comma 3, L. 24/2017)
 
 ${personBlock(p)}
 
 PREMESSO CHE
 - in data ${requestDate ? formatIt(requestDate) : '__________'} ha chiesto copia di ${blank(what, 'cartella clinica')}${episode ? ` relativa a ${episode}` : ''}${protocol ? ` (ricevuta/protocollo n. ${protocol})` : ''};
-- ai sensi dell'art. 25 della L. 241/1990 la richiesta deve essere evasa entro ${days} giorni, cioè entro ${art('il', deadline)}${deadline ? formatIt(deadline) : '__________'};
+- ai sensi dell'art. 4, comma 3, della L. 24/2017 la direzione sanitaria fornisce la documentazione sanitaria disponibile
+  entro ${days} giorni dalla richiesta, cioè entro ${art('il', deadline)}${deadline ? formatIt(deadline) : '__________'}, e le eventuali integrazioni entro ${integrationDays} giorni;
 - alla data odierna non ha ricevuto quanto richiesto né alcuna comunicazione;
 
 SOLLECITA

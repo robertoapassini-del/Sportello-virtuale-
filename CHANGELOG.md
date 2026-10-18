@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 18/10/2026 — cartella clinica: 7 giorni
+- `rules-cartella.json`: `deadline_days` da 30 a **7** (L. 24/2017 «legge Gelli», art. 4, comma 3: la direzione sanitaria fornisce la documentazione disponibile entro 7 giorni; le integrazioni entro 30, nuovo campo `integration_days`).
+- Il ricorso al TAR resta sull'art. 25 L. 241/1990 (silenzio dopo 30 giorni, poi 30 giorni per il ricorso).
+- Fonte: https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2017-03-08;24
+
 ## 18/10/2026 — statistiche anonime (GoatCounter)
 - **Si contano le pagine viste e i «Sì / No» di «Ti è stata utile?»** con GoatCounter, senza cookie e senza script da altri siti (richiesta «pixel» da `count()` in `js/common.js`). Non si manda mai quello che l'utente scrive. Non conta su localhost.
 - Si attiva scrivendo il nome dell'account in `GOATCOUNTER_CODE` (`js/common.js`); finché è vuoto non si conta niente.

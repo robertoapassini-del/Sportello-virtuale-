@@ -193,12 +193,13 @@ test('ogni fonte ha un nome e un link https', () => {
   for (const a of asp.asl) assert.ok(a.sources.some((s) => s.url) || a.info_url, `${a.id}: nessun link ufficiale`);
 });
 
-test('scadenza semplice (cartella clinica 30 giorni, ausili 20 giorni)', async () => {
+test('scadenza semplice (cartella clinica 7 giorni, ausili 20 giorni)', async () => {
   const { simpleDeadline } = await import('../js/engine.js');
   const { cartellaReminder, ausiliReminder } = await import('../js/letters.js');
   const rc = load('../data/rules-cartella.json');
   const ra = load('../data/rules-ausili.json');
-  assert.equal(rc.deadline_days, 30);
+  assert.equal(rc.deadline_days, 7);
+  assert.equal(rc.integration_days, 30);
   assert.equal(ra.authorization_days, 20);
   const r = simpleDeadline({ fromDate: '2026-09-01', days: 30, today: '2026-10-01' });
   assert.equal(r.deadline, '2026-10-01');
@@ -210,7 +211,7 @@ test('scadenza semplice (cartella clinica 30 giorni, ausili 20 giorni)', async (
   assert.equal(simpleDeadline({ fromDate: 'boh', days: 20 }).error, 'date');
   for (const s of [...rc.sources, ...ra.sources]) assert.match(s.url, /^https:\/\//);
   const l1 = cartellaReminder({ structure: 'Ospedale Civico', person: { fullName: 'Maria Rossi' }, requestDate: '2026-09-01', what: 'cartella clinica', deadline: '2026-10-01', today: '2026-10-18' });
-  assert.match(l1, /Maria Rossi/); assert.match(l1, /01\/10\/2026/); assert.match(l1, /L\. 241\/1990/);
+  assert.match(l1, /Maria Rossi/); assert.match(l1, /01\/10\/2026/); assert.match(l1, /L\. 24\/2017/); assert.match(l1, /entro 7 giorni/);
   const l2 = ausiliReminder({ aspName: 'Palermo', person: { fullName: 'Maria Rossi', isDelegate: true, delegateName: 'Luca' }, device: 'carrozzina', requestDate: '2026-09-20', deadline: '2026-10-10', today: '2026-10-18' });
   assert.match(l2, /carrozzina/); assert.match(l2, /10\/10\/2026/); assert.match(l2, /Luca/); assert.match(l2, /DPCM 12\/01\/2017/);
 });
