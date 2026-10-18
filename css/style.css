@@ -1,20 +1,32 @@
+/* Carattere Nunito, incluso nel sito (licenza SIL OFL, vedi fonts/OFL-Nunito.txt):
+   niente viene caricato da altri siti. */
+@font-face { font-family: "Nunito"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/nunito-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Nunito"; font-style: normal; font-weight: 600; font-display: swap; src: url("../fonts/nunito-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Nunito"; font-style: normal; font-weight: 700; font-display: swap; src: url("../fonts/nunito-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Nunito"; font-style: normal; font-weight: 800; font-display: swap; src: url("../fonts/nunito-latin-800-normal.woff2") format("woff2"); }
+
 /* Ci penso io — mobile first, large readable text. */
 :root {
-  --bg: #fbfaf7;
+  /* Stile ispirato a Unimamma: bianco, viola, angoli morbidi, carattere tondo. */
+  --bg: #ffffff;
   --surface: #ffffff;
-  --text: #1d2228;
-  --muted: #56606b;
-  --border: #d9dde2;
-  --primary: #0b5c8a;
+  --text: #263548;
+  --muted: #5d6878;
+  --border: #ece4f0;
+  --primary: #8b3fa3;
+  --primary-dark: #6f2f85;
   --primary-ink: #ffffff;
-  --primary-soft: #e6f1f8;
+  --primary-soft: #f6ecfa;
+  --lilac: #e9c9f5;
+  --pink: #e8508a;
   --ok: #1e6b3a;
-  --ok-soft: #e7f4ec;
+  --ok-soft: #eaf6ee;
   --warn: #8a5a00;
-  --warn-soft: #fff4dc;
+  --warn-soft: #fff6e2;
   --bad: #a3271f;
-  --bad-soft: #fdeceb;
-  --radius: 12px;
+  --bad-soft: #fdeeed;
+  --radius: 18px;
+  --shadow: 0 6px 24px rgba(80, 40, 100, 0.09);
   --maxw: 42rem;
   font-size: 125%; /* 20px: testo grande */
 }
@@ -27,7 +39,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.55;
 }
 
@@ -234,3 +246,57 @@ ul.icon-list li > strong { flex: 0 1 auto; }
 details.search { margin-top: 20px; }
 details.search input[type="search"] { margin: 8px 0 12px; }
 button.btn.choice { width: 100%; }
+
+/* ---- Tema: bianco e viola, riquadri morbidi (stile Unimamma) ---- */
+.site-header { background: #fff; color: var(--text); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 10; box-shadow: 0 2px 12px rgba(80, 40, 100, 0.05); }
+.site-header .wrap { padding-top: 14px; padding-bottom: 14px; }
+.site-header a.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--text); font-weight: 800; font-size: 1.3rem; letter-spacing: -0.01em; }
+.brand-mark { width: 34px; height: 34px; flex: none; border-radius: 50% 50% 50% 12%; background: linear-gradient(135deg, var(--pink), var(--primary)); box-shadow: inset -6px -6px 0 rgba(255, 255, 255, 0.18); }
+.site-header nav a { color: var(--primary); font-weight: 700; text-decoration: none; }
+
+h1, h2 { color: var(--primary); font-weight: 800; letter-spacing: -0.01em; }
+h1 { font-size: 1.7rem; }
+h3 { color: var(--text); font-weight: 800; }
+.lead { color: var(--text); }
+a { color: var(--primary); }
+
+.hero-band { margin: -24px -16px 8px; padding: 28px 16px 24px; background: linear-gradient(180deg, #ffffff 0%, #faf3fd 45%, var(--lilac) 100%); border-radius: 0 0 28px 28px; }
+.hero { display: inline-flex; align-items: center; justify-content: center; width: 4.6rem; height: 4.6rem; font-size: 2.6rem; border-radius: 50%; background: linear-gradient(180deg, #fff, var(--primary-soft)); box-shadow: var(--shadow); }
+
+.card, details.card, details.fonti { border: none; border-radius: var(--radius); box-shadow: var(--shadow); background: var(--surface); }
+details.help { background: var(--ok-soft); border: none; box-shadow: var(--shadow); border-radius: var(--radius); }
+.notice { border-radius: var(--radius); border-left-width: 5px; }
+
+.btn { border-radius: var(--radius); border: 1px solid var(--border); box-shadow: var(--shadow); color: var(--primary); font-weight: 700; }
+.btn:hover { background: var(--primary-soft); }
+.btn.primary { border-radius: 999px; border: none; background: var(--primary); color: #fff; box-shadow: 0 6px 18px rgba(139, 63, 163, 0.3); }
+.btn.primary:hover { background: var(--primary-dark); filter: none; }
+.btn.center { border-radius: 999px; }
+.btn.choice { background: #fff; color: var(--primary); border: 1px solid var(--border); }
+.btn.choice .ico { width: 3rem; height: 3rem; display: inline-flex; align-items: center; justify-content: center; font-size: 1.6rem; border-radius: 50%; background: var(--primary-soft); }
+.btn.choice small { color: var(--muted); }
+.btn.call { color: var(--ok); }
+.btn.call .ico { background: var(--ok-soft); }
+.letter-ico { background: #fff4b8; }
+
+.listen { border: none; background: var(--primary-soft); color: var(--primary); font-weight: 800; }
+.back { color: var(--primary); font-weight: 700; text-decoration: none; }
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="number"], input[type="search"], select, textarea {
+  border-radius: 14px; border: 2px solid var(--border); font-family: inherit;
+}
+input[type="number"], input[type="search"] { width: 100%; min-height: 48px; padding: 10px 12px; font: inherit; }
+input:focus, select:focus, textarea:focus { border-color: var(--primary); }
+fieldset { border: 1px solid var(--border); border-radius: var(--radius); }
+legend { color: var(--primary); }
+
+ol.big-steps > li::before { background: var(--primary); }
+ol.big-steps > li { border-bottom-color: var(--border); }
+.progress .dot.on { background: var(--primary); }
+.progress .dot { background: var(--lilac); }
+
+.letter { border-radius: var(--radius); border: 1px solid var(--border); box-shadow: var(--shadow); }
+table.fields th, table.fields td { border-bottom-color: var(--border); }
+
+.site-footer { background: #faf5fc; border-top: none; }
+.site-footer a { color: var(--primary); }

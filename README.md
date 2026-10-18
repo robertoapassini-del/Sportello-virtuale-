@@ -79,6 +79,7 @@ npm run test:combinazioni
 | `js/letters.js` | Modelli di lettera (DA VERIFICARE con il legale) |
 | `js/common.js` | Piè di pagina, aiuto, lettura ad alta voce, copia/stampa |
 | `data/*.json` | Regole nazionali e contatti di ASP e INPS |
+| `fonts/` | Carattere Nunito incluso nel sito (licenza SIL OFL) |
 | `privacy.html`, `note-legali.html`, `fonti.html` | Privacy, chi siamo, fonti |
 
 ## Pubblicarlo gratis su GitHub Pages

@@ -14,10 +14,13 @@ function groupBtn(g) {
   return `<button type="button" class="btn choice" data-group="${esc(g.id)}"><span class="ico" aria-hidden="true">${g.icon}</span><span class="txt">${esc(g.title)}<small>${esc(g.small)}</small></span></button>`;
 }
 
-const intro = `
+const intro = () => `
+  <section class="hero-band">
+  <div class="topbar">${listenButton()}</div>
   <h1>Ci penso io</h1>
   <p class="lead say">Sanità, cure e invalidità: ti diciamo cosa ti spetta, entro quando e come chiederlo. Con parole semplici.</p>
-  <div class="notice info"><p class="say">✅ È gratis. 🤝 Siamo volontari: <strong>non siamo l'ASP, l'INPS né un altro ufficio pubblico</strong>. 🔒 Non salviamo niente. 📍 Per ora vale solo in Sicilia.</p></div>`;
+  <div class="notice info"><p class="say">✅ È gratis. 🤝 Siamo volontari: <strong>non siamo l'ASP, l'INPS né un altro ufficio pubblico</strong>. 🔒 Non salviamo niente. 📍 Per ora vale solo in Sicilia.</p></div>
+  </section>`;
 
 const search = `
   <details class="card search">
@@ -31,7 +34,7 @@ function render() {
   stopSpeaking();
   let html;
   if (current.screen === 'groups') {
-    html = `${intro}
+    html = `${intro()}
       <h2 class="say">Di cosa hai bisogno?</h2>
       ${reg.groups.map(groupBtn).join('')}
       ${search}`;
@@ -43,7 +46,7 @@ function render() {
       <p class="say">Scegli quello che ti somiglia di più.</p>
       ${mods.map((m) => card(`${m.id}/index.html`, m.icon, m.title, m.small)).join('')}`;
   }
-  app.innerHTML = `<div class="topbar">${listenButton()}</div>${html}${helpBox()}${sourcesBox(rulesSources, {})}`;
+  app.innerHTML = `${current.screen === 'groups' ? '' : `<div class="topbar">${listenButton()}</div>`}${html}${helpBox()}${sourcesBox(rulesSources, {})}`;
   window.scrollTo(0, 0);
   const q = document.getElementById('q');
   if (q) q.addEventListener('input', () => showResults(q.value));
