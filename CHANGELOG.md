@@ -3,7 +3,7 @@
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
 ## 18/10/2026 — nuovo aspetto
-- Stile ispirato a Unimamma: sfondo bianco, titoli viola, carattere tondo Nunito, sfumatura lilla in home, riquadri e pulsanti arrotondati con ombra leggera, logo con segno sfumato rosa–viola.
+- Stile ispirato a Unimamma, in **verde acqua** (#0F7C78): sfondo bianco, titoli verde acqua, carattere tondo Nunito, sfumatura verde menta in home, riquadri e pulsanti arrotondati con ombra leggera, logo con segno sfumato verde acqua.
 - Il carattere Nunito è incluso nel sito (`fonts/`, licenza SIL OFL): nessun file caricato da siti esterni.
 
 ## 18/10/2026 — solo salute
