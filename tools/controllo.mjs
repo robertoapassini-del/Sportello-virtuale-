@@ -158,9 +158,11 @@ async function provaDallItalia(urls) {
     try {
       const r = await fetch(`${CHECK_HOST}/check-http?host=${encodeURIComponent(u)}&node=${NODO_ITALIA}`,
         { headers: { Accept: 'application/json', 'User-Agent': UA }, signal: AbortSignal.timeout(20000) });
-      const id = (await r.json()).request_id;
+      const testo = await r.text();
+      const id = testo.startsWith('{') ? JSON.parse(testo).request_id : null;
       if (id) richieste.push({ u, id });
-    } catch { /* resta «non verificabile» */ }
+      else console.warn(`check-host non ha accettato ${u}: ${r.status} ${testo.slice(0, 150)}`);
+    } catch (e) { console.warn(`check-host non raggiungibile per ${u}: ${e.message}`); }
     await pausa(1000); // check-host limita le richieste troppo ravvicinate
   }
   for (let giro = 0; giro < 12 && richieste.some((x) => !esiti.has(x.u)); giro++) {
@@ -170,9 +172,9 @@ async function provaDallItalia(urls) {
         const r = await fetch(`${CHECK_HOST}/check-result/${id}`,
           { headers: { Accept: 'application/json', 'User-Agent': UA }, signal: AbortSignal.timeout(20000) });
         const v = (await r.json())[NODO_ITALIA];
-        if (!v) continue; // ancora in corso
+        if (!v) { if (giro === 11) console.warn(`check-host senza risposta per ${u}`); continue; } // ancora in corso
         // v = [[1 se ha risposto, secondi, messaggio, codice HTTP, ip]]
-        const [ok, , messaggio, codice] = v[0] || [];
+        const [ok, , , codice] = v[0] || [];
         const n = Number(codice);
         esiti.set(u, ok === 1 && n > 0 && n < 400 ? { funziona: true } : { funziona: false, motivo: n ? `errore ${n}` : 'non risponde' });
       } catch { /* riprova al giro dopo */ }
