@@ -1,0 +1,21 @@
+name: Controllo automatico
+# Ogni mattina cerca novità in Gazzetta Ufficiale e INPS; il lunedì controlla anche link e date di verifica.
+# Non modifica il sito: apre o aggiorna issue con l'etichetta «controllo-automatico».
+on:
+  schedule:
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+jobs:
+  controllo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node tools/controllo.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

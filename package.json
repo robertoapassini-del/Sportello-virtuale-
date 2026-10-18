@@ -10,6 +10,7 @@
     "test:combinazioni": "node tests/combinazioni.cjs",
     "pagine": "node tools/pagine.mjs",
     "icone": "node tools/icone.mjs",
+    "controllo": "node tools/controllo.mjs",
     "start": "npx --yes serve -l 8080 ."
   }
 }

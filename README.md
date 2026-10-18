@@ -26,6 +26,9 @@ Requisiti completi: [SPEC.md](SPEC.md).
   «Sì / No» di «Ti è stata utile?» con GoatCounter (`GOATCOUNTER_CODE` in `js/common.js`).
 - **Decide il computer con regole fisse** (`js/engine.js`).
 - I dati di ASP e INPS si aggiornano a mano nei file `data/*.json`, ognuno con data di verifica e fonte.
+- **Controllo automatico** (`.github/workflows/controllo.yml`, `tools/controllo.mjs`): ogni mattina cerca novità in
+  Gazzetta Ufficiale e INPS legate ai moduli; il lunedì controlla link rotti e `last_verified` più vecchi di 6 mesi.
+  Non cambia mai il sito: apre issue con l'etichetta `controllo-automatico`. Per provarlo: `npm run controllo -- --tutto`.
 
 ## Regole per scrivere i testi
 
