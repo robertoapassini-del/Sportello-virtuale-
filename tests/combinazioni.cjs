@@ -133,13 +133,13 @@ function expectedCodes({ ageBand, status, spouse, children, income }) {
   const fam = (k) => ESE[k].income_base + (spouse ? ESE[k].income_with_spouse - ESE[k].income_base : 0) + ESE[k].income_per_child * children;
   const codes = [], maybe = [];
   const has = income !== null;
-  if (ageBand === 'under6' || ageBand === 'over65') (has ? (income <= ESE.E01.income_max && codes.push('E01')) : maybe.push('E01'));
+  if (ageBand === 'under6' || ageBand === '65plus') (has ? (income <= ESE.E01.income_max && codes.push('E01')) : maybe.push('E01'));
   if (status === 'disoccupato') (has ? (income <= fam('E02') && codes.push('E02')) : maybe.push('E02'));
   if (status === 'sociale') codes.push('E03');
-  if (status === 'minimo' && (ageBand === '60to65' || ageBand === 'over65')) (has ? (income <= fam('E04') && codes.push('E04')) : maybe.push('E04'));
+  if (status === 'minimo') (has ? (income <= fam('E04') && codes.push('E04')) : maybe.push('E04'));
   return { codes, maybe, fam };
 }
-const AGE = { under6: /^Meno di 6/, '6to59': /^Da 6 a 59/, '60to65': /^Da 60 a 65/, over65: /^Più di 65/ };
+const AGE = { under6: /^Meno di 6/, '6to59': /^Da 6 a 59/, '60to64': /^Da 60 a 64/, '65plus': /^65 anni o più/ };
 const STATUS = { disoccupato: /^Disoccupato/, sociale: /assegno sociale/, minimo: /pensione al minimo/, none: /^Nessuna di queste/ };
 for (const ageBand of Object.keys(AGE)) for (const status of Object.keys(STATUS)) for (const spouse of [false, true]) for (const children of [0, 2]) {
   const { fam } = expectedCodes({ ageBand, status, spouse, children, income: 0 });

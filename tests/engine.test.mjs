@@ -228,8 +228,8 @@ test('esenzione ticket per reddito', async () => {
   const { esenzioneReddito } = await import('../js/engine.js');
   const r = load('../data/rules-esenzione.json');
   const e = (o) => esenzioneReddito(r, o);
-  assert.deepEqual(e({ ageBand: 'over65', status: 'none', income: 36151.98 }).codes, ['E01']); // uguale alla soglia: sì
-  assert.deepEqual(e({ ageBand: 'over65', status: 'none', income: 36151.99 }).codes, []);      // un centesimo in più: no
+  assert.deepEqual(e({ ageBand: '65plus', status: 'none', income: 36151.98 }).codes, ['E01']); // uguale alla soglia: sì
+  assert.deepEqual(e({ ageBand: '65plus', status: 'none', income: 36151.99 }).codes, []);      // un centesimo in più: no
   assert.deepEqual(e({ ageBand: 'under6', status: 'none', income: 20000 }).codes, ['E01']);
   assert.deepEqual(e({ ageBand: '6to59', status: 'none', income: 1000 }).codes, []);
   assert.deepEqual(e({ ageBand: '6to59', status: 'disoccupato', income: 8263.31 }).codes, ['E02']);
@@ -238,10 +238,10 @@ test('esenzione ticket per reddito', async () => {
   assert.deepEqual(e({ ageBand: '6to59', status: 'disoccupato', spouse: true, children: 2, income: 11362.05 + 2 * 516.46 }).codes, ['E02']);
   assert.deepEqual(e({ ageBand: '6to59', status: 'disoccupato', spouse: false, children: 1, income: 8263.31 + 516.46 + 0.01 }).codes, []);
   assert.deepEqual(e({ ageBand: '6to59', status: 'sociale', income: 99999 }).codes, ['E03']);      // senza limite di reddito
-  assert.deepEqual(e({ ageBand: '60to65', status: 'minimo', income: 8000 }).codes, ['E04']);
-  assert.deepEqual(e({ ageBand: '6to59', status: 'minimo', income: 8000 }).codes, []);            // E04 solo sopra i 60
-  assert.deepEqual(e({ ageBand: 'over65', status: 'minimo', income: 8000 }).codes, ['E01', 'E04']);
-  const m = e({ ageBand: 'over65', status: 'disoccupato', income: null });
+  assert.deepEqual(e({ ageBand: '60to64', status: 'minimo', income: 8000 }).codes, ['E04']);
+  assert.deepEqual(e({ ageBand: '6to59', status: 'minimo', income: 8000 }).codes, ['E04']);       // a carico di chi ha la pensione al minimo
+  assert.deepEqual(e({ ageBand: '65plus', status: 'minimo', income: 8000 }).codes, ['E01', 'E04']);
+  const m = e({ ageBand: '65plus', status: 'disoccupato', income: null });
   assert.deepEqual(m.codes, []); assert.deepEqual(m.maybe, ['E01', 'E02']);
   assert.equal(m.thresholds.E01, 36151.98);
 });

@@ -170,7 +170,7 @@ export function formatEuro(n) {
   return `${n.toLocaleString('it-IT', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} €`;
 }
 
-// ageBand: 'under6' | '6to59' | '60to65' | 'over65'
+// ageBand: 'under6' | '6to59' | '60to64' | '65plus'
 // status:  'none' | 'disoccupato' | 'sociale' | 'minimo'   (anche se si è a carico di chi ha quella condizione)
 // income:  numero (reddito familiare lordo anno precedente) oppure null se non lo sa
 export function esenzioneReddito(rules, { ageBand, status, spouse = false, children = 0, income = null }) {
@@ -179,7 +179,7 @@ export function esenzioneReddito(rules, { ageBand, status, spouse = false, child
   const out = { codes: [], maybe: [], thresholds: {} };
   const hasIncome = typeof income === 'number' && Number.isFinite(income) && income >= 0;
 
-  if (ageBand === 'under6' || ageBand === 'over65') {
+  if (ageBand === 'under6' || ageBand === '65plus') {
     out.thresholds.E01 = c.E01.income_max;
     if (!hasIncome) out.maybe.push('E01');
     else if (income <= c.E01.income_max) out.codes.push('E01');
@@ -190,7 +190,9 @@ export function esenzioneReddito(rules, { ageBand, status, spouse = false, child
     else if (income <= out.thresholds.E02) out.codes.push('E02');
   }
   if (status === 'sociale') out.codes.push('E03');
-  if (status === 'minimo' && (ageBand === '60to65' || ageBand === 'over65')) {
+  // «minimo» = pensione al minimo con più di 60 anni: l'età è quella di chi ha la pensione,
+  // che può essere un'altra persona (il familiare a carico ha l'esenzione anche lui).
+  if (status === 'minimo') {
     out.thresholds.E04 = fam('E04');
     if (!hasIncome) out.maybe.push('E04');
     else if (income <= out.thresholds.E04) out.codes.push('E04');

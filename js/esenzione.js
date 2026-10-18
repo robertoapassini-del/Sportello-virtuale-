@@ -12,7 +12,7 @@ const state = {};
 
 const sources = () => [rules.sources, { verified: rules.last_verified }];
 
-const ageText = { under6: 'meno di 6 anni', '6to59': 'tra 6 e 59 anni', '60to65': 'tra 60 e 65 anni', over65: 'più di 65 anni' };
+const ageText = { under6: 'meno di 6 anni', '6to59': 'tra 6 e 59 anni', '60to64': 'tra 60 e 64 anni', '65plus': '65 anni o più' };
 
 const howToGet = () => `
   <h2 class="say">Come si ottiene</h2>
@@ -47,11 +47,11 @@ const screens = {
   age: () => ({
     html: `${progress(1, 4)}
       <h1>🎂 Quanti anni ha la persona?</h1>
-      <p class="say">Chi deve fare la visita o l'esame.</p>
+      <p class="say">Chi deve fare la visita o l'esame. Conta l'età già compiuta: chi ha fatto 65 anni sceglie «65 anni o più».</p>
       ${choice('👶', 'Meno di 6 anni', { ageBand: 'under6' }, 'status')}
       ${choice('🧑', 'Da 6 a 59 anni', { ageBand: '6to59' }, 'status')}
-      ${choice('🧓', 'Da 60 a 65 anni', { ageBand: '60to65' }, 'status')}
-      ${choice('👵', 'Più di 65 anni', { ageBand: 'over65' }, 'status')}`,
+      ${choice('🧓', 'Da 60 a 64 anni', { ageBand: '60to64' }, 'status')}
+      ${choice('👵', '65 anni o più', { ageBand: '65plus' }, 'status')}`,
   }),
 
   status: () => ({
@@ -157,7 +157,7 @@ const screens = {
     if (r.thresholds.E01) why.push(`per età il limite è ${thr('E01')} e il reddito è più alto`);
     if (r.thresholds.E02) why.push(`per i disoccupati il limite è ${thr('E02')} e il reddito è più alto`);
     if (r.thresholds.E04) why.push(`per la pensione al minimo il limite è ${thr('E04')} e il reddito è più alto`);
-    if (!why.length) why.push(`l'esenzione per reddito vale solo sotto i 6 anni, sopra i 65 anni (reddito fino a ${formatEuro(c.E01.income_max)}), per i disoccupati, per chi ha l'assegno sociale o la pensione al minimo`);
+    if (!why.length) why.push(`l'esenzione per reddito vale solo sotto i 6 anni, dai 65 anni in su (reddito fino a ${formatEuro(c.E01.income_max)}), per i disoccupati, per chi ha l'assegno sociale o la pensione al minimo`);
     return {
       html: `
         <div class="hero" aria-hidden="true">💳</div>
