@@ -40,6 +40,13 @@ python3 -m http.server 8080      # oppure: npm start
 npm test
 ```
 
+Prova completa di **tutte le combinazioni** di risposte (9 province, tutte le classi, date al limite esatto,
+entrambi i moduli) in un browser vero, con il sito avviato su `localhost:8080`:
+
+```bash
+npm run test:combinazioni
+```
+
 ## Struttura
 
 | Percorso | Cos'è |

@@ -214,8 +214,9 @@
         { "label": "Per disdire una prenotazione", "number": "0922 407699" }
       ],
       "fast_track": {
-        "by_class": { "B": "Chiedi al CUP la «corsia veloce» (si chiama fast track) per la classe B." },
-        "phone": null
+        "by_class": {
+          "B": { "text": "Chiedi al CUP la «corsia veloce» (si chiama fast track) per la classe B.", "phone": null }
+        }
       },
       "how_to": "Firma la lettera e mandala per email a urp@aspag.it. Oppure portala di persona all'ufficio URP.",
       "form_fields": [],
@@ -248,10 +249,9 @@
       "phones": [{ "label": "CUP numero verde (premi il tasto 2)", "number": "800 954414" }],
       "fast_track": {
         "by_class": {
-          "U": "Con la classe U puoi andare direttamente negli ambulatori dell'ASP.",
-          "B": "Con la classe B chiama il numero verde 800 954414 e premi il tasto 2. Un operatore ti trova un posto in tempo."
-        },
-        "phone": "800 954414"
+          "U": { "text": "Con la classe U puoi andare direttamente negli ambulatori dell'ASP.", "phone": null },
+          "B": { "text": "Con la classe B chiama il numero verde 800 954414 e premi il tasto 2. Un operatore ti trova un posto in tempo.", "phone": "800 954414" }
+        }
       },
       "how_to": "Chiama l'ASP e chiedi di attivare il «percorso di tutela». Puoi anche mandare la lettera con la PEC a protocollo@pec.aspct.it.",
       "form_fields": [],
@@ -284,10 +284,9 @@
       "phones": [],
       "fast_track": {
         "by_class": {
-          "U": "Vai allo sportello «Fast Track» del CUP. C'è in ogni CUP.",
-          "B": "Vai allo sportello «Fast Track» del CUP. C'è in ogni CUP."
-        },
-        "phone": null
+          "U": { "text": "Vai allo sportello «Fast Track» del CUP. C'è in ogni CUP.", "phone": null },
+          "B": { "text": "Vai allo sportello «Fast Track» del CUP. C'è in ogni CUP.", "phone": null }
+        }
       },
       "how_to": "Vai al CUP o all'ufficio URP dell'ASP. Chiedi di attivare le «prestazioni garantite» (è il percorso di tutela).",
       "form_fields": [],

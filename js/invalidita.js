@@ -181,6 +181,7 @@ const screens = {
           const v = readForm(e.target);
           const err = document.getElementById('dom-error');
           if (!parseDate(v.domandaDate)) { err.textContent = 'Scrivi il giorno della domanda.'; err.hidden = false; return; }
+          if (daysBetween(v.domandaDate, todayISO()) < 0) { err.textContent = 'Questo giorno non è ancora arrivato. Controlla la data.'; err.hidden = false; return; }
           if (daysBetween(state.certDate, v.domandaDate) < 0) { err.textContent = 'La domanda non può essere prima del certificato. Controlla le date.'; err.hidden = false; return; }
           state.domandaDate = v.domandaDate;
           go('convocation');

@@ -2,6 +2,12 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 18/10/2026 — controllo di tutte le combinazioni
+- `data/asp-sicilia.json`: il fast track ha ora testo e telefono per ogni classe. Corregge Catania classe U,
+  che mostrava il numero verde 800 954414 (valido solo per la classe B). Nessun contatto cambiato.
+- Il sito non accetta più giorni nel futuro per prenotazione, richiesta al CUP e domanda INPS.
+- Nuovo test `tests/combinazioni.cjs` (948 percorsi).
+
 ## 18/10/2026 — testi semplificati
 - Tutti i testi riscritti in italiano semplice; pulsanti con icone; pulsante «Ascolta»; riquadro «Chi può aiutarti».
 - `data/asp-sicilia.json`: nuovi campi `details` (informazioni in più) e `todo` (note interne, non mostrate).

@@ -117,8 +117,8 @@ function aspSteps(a) {
   return `
   ${ft ? `<div class="notice info">
       <h2 class="say" style="margin-top:0">🚀 Prima prova questo</h2>
-      <p class="say">${esc(ft)}</p>
-      ${a.fast_track.phone ? callButton('Chiama', a.fast_track.phone) : ''}
+      <p class="say">${esc(ft.text)}</p>
+      ${ft.phone ? callButton('Chiama', ft.phone) : ''}
       <p class="say">Se non funziona, segui i passi qui sotto.</p>
     </div>` : ''}
   <h2 class="say">Cosa fare: 3 passi</h2>
@@ -292,6 +292,11 @@ const screens = {
         e.preventDefault();
         const v = readForm(form);
         const err = document.getElementById('dates-error');
+        if (parseDate(v.bookingDate) && daysBetween(v.bookingDate, todayISO()) < 0) {
+          err.textContent = 'Il giorno della prenotazione non può essere nel futuro. Controlla la data.';
+          err.hidden = false;
+          return;
+        }
         const r = checkWaiting(rules, { cls: state.cls, kind: state.kind, bookingDate: v.bookingDate, appointmentDate: v.appointmentDate });
         if (r.status === 'error') {
           err.textContent = r.error === 'order'
@@ -377,6 +382,7 @@ const screens = {
         <form id="req-form" novalidate>
           <label for="requestDate">Che giorno hai chiesto la prenotazione al CUP?</label>
           <input type="date" id="requestDate" name="requestDate" value="${esc(state.requestDate || '')}" max="${todayISO()}">
+          <p class="field-error" id="req-error" role="alert" hidden></p>
           <button type="submit" class="btn primary">✔️ Calcola</button>
         </form>
         ${status}
@@ -385,7 +391,9 @@ const screens = {
         document.getElementById('req-form').addEventListener('submit', (e) => {
           e.preventDefault();
           const v = readForm(e.target);
-          if (!parseDate(v.requestDate)) return;
+          const err = document.getElementById('req-error');
+          if (!parseDate(v.requestDate)) { err.textContent = 'Scrivi il giorno.'; err.hidden = false; return; }
+          if (daysBetween(v.requestDate, todayISO()) < 0) { err.textContent = 'Questo giorno non è ancora arrivato. Controlla la data.'; err.hidden = false; return; }
           state.requestDate = v.requestDate;
           render();
         });
