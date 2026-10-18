@@ -165,9 +165,9 @@ Fields per ASP: `id`, `name`, `channel` (`email` | `pec` | `online_portal` | `ur
 - **Best UX:** pre-fill the official PDF fields (or show the user exactly what to write), then mailto.
 
 ### Ragusa — status: PARTIAL (press Aug 2026 + official page)
-- Channel: **online portal** with **SPID or CIE** on www.asp.rg.it (since 10 Aug 2026), automatic receipt.
+- Channel: **online portal** with **SPID or CIE** on asp.rg.it (since 10 Aug 2026), automatic receipt.
   Paper form still accepted via URP during transition.
-- Info + form: https://www.asp.rg.it/liste-attesa
+- Info + form: https://asp.rg.it/liste-attesa
 - Documents: prescription with priority class; CUP booking showing the limit exceeded.
 - Patient pays at most the ticket. Follow-ups excluded.
 - **Best UX:** link to portal + checklist. No letter needed. **TODO-VERIFY** direct portal URL.
