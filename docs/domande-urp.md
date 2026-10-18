@@ -110,6 +110,19 @@ Oggi sul sito (verificato): modulo ufficiale per email a percorsoditutela@asppal
 - [ ] L'indirizzo **percorsoditutela@asppalermo.org** e il **modulo di agosto 2026** sono ancora quelli giusti?
 - [ ] Richiamate sempre **entro 48 ore**?
 
+**Cartella clinica e referti (modulo 3)**
+
+18. Dove si chiede la copia della cartella clinica negli ospedali dell'ASP? C'è un modulo? Si può chiedere per email o PEC? A quale indirizzo?
+19. Quanto costa la copia? Entro quanti giorni la consegnate di solito?
+20. Un figlio può ritirarla per un genitore con una delega semplice? Serve una delega firmata davanti a un impiegato?
+
+**Ausili e protesi (modulo 4)**
+
+21. Dov'è l'ufficio «assistenza protesica» di ogni distretto? Telefono, email, orari?
+22. La domanda di autorizzazione si può mandare per email o PEC? A quale indirizzo?
+23. Rispettate i 20 giorni per l'autorizzazione? Se passano senza risposta, considerate l'autorizzazione concessa (silenzio-assenso)?
+24. Quanti giorni ha il fornitore per consegnare, da contratto? E per i pannoloni e le traverse, la consegna è a casa?
+
 ---
 
 ## 3. INPS — invalidità civile

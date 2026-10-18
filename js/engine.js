@@ -133,3 +133,12 @@ function withPassed(r, today) {
   const late = daysBetween(r.deadline, today);
   return { status: late > 0 ? 'passed' : 'waiting', daysLate: Math.max(0, late), ...r };
 }
+
+// --- Moduli 3 e 4: scadenza semplice -------------------------------------
+// Una data di partenza + N giorni → la scadenza, e se oggi è già passata.
+export function simpleDeadline({ fromDate, days, today }) {
+  if (!parseDate(fromDate)) return { status: 'error', error: 'date' };
+  if (today && daysBetween(fromDate, today) < 0) return { status: 'error', error: 'future' };
+  const deadline = addDays(fromDate, days);
+  return withPassed({ days, from: fromDate, deadline }, today);
+}

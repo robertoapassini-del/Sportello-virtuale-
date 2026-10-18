@@ -4,6 +4,8 @@ Sito gratuito che aiuta le persone in Sicilia a far valere i tempi massimi di at
 
 - **Modulo 1 – Liste d'attesa:** la visita o l'esame è troppo lontano rispetto alla classe di priorità della ricetta.
 - **Modulo 2 – Invalidità civile:** la visita per l'invalidità non arriva entro i tempi di legge.
+- **Modulo 3 – Cartella clinica e referti:** l'ospedale non consegna la copia entro 30 giorni (L. 241/1990).
+- **Modulo 4 – Ausili e protesi:** l'ASP non autorizza carrozzina, letto, pannoloni ecc. entro 20 giorni (DPCM 12/01/2017).
 
 Requisiti completi: [SPEC.md](SPEC.md).
 
@@ -54,6 +56,9 @@ npm run test:combinazioni
 | `index.html` | Pagina iniziale: scegli il problema |
 | `liste-attesa/`, `js/liste-attesa.js` | Modulo 1: domande, risultato, lettera, «E adesso?» |
 | `invalidita/`, `js/invalidita.js` | Modulo 2: scadenza, sollecito all'INPS, cosa portare |
+| `cartella-clinica/`, `js/cartella.js` | Modulo 3: scadenza 30 giorni, sollecito all'ospedale |
+| `ausili/`, `js/ausili.js` | Modulo 4: scadenza 20 giorni, sollecito all'ASP, consegna |
+| `js/flow.js` | Navigazione comune ai moduli nuovi (schermate, Indietro, Ascolta, Fonti) |
 | `js/engine.js` | Regole sulle date (funzioni pure, testate) |
 | `js/letters.js` | Modelli di lettera (DA VERIFICARE con il legale) |
 | `js/common.js` | Piè di pagina, aiuto, lettura ad alta voce, copia/stampa |

@@ -2,6 +2,15 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 18/10/2026 — due nuovi moduli
+- **Cartella clinica e referti**: scadenza di 30 giorni dalla richiesta scritta (art. 25 L. 241/1990), come chiedere,
+  sollecito alla Direzione sanitaria. Nuovo file `data/rules-cartella.json`.
+- **Ausili e protesi**: autorizzazione dell'ASP entro 20 giorni, poi silenzio-assenso (art. 18 DPCM 12/01/2017),
+  percorso «autorizzato ma non consegnato», sollecito all'ufficio protesica. Nuovo file `data/rules-ausili.json`.
+- Da verificare con il legale: commi esatti del silenzio-assenso e del silenzio-rigetto. Da raccogliere: contatti
+  degli uffici protesica e cartelle cliniche (vedi `docs/domande-urp.md`).
+- Test delle combinazioni: ora 1074 percorsi.
+
 ## 18/10/2026 — fonti in ogni pagina
 - Riquadro «Da dove vengono queste informazioni» in fondo a ogni schermata, con i link alle leggi
   (normattiva.it, Gazzetta Ufficiale, Ministero della Salute) e alle pagine ufficiali dell'ASP scelta o dell'INPS.

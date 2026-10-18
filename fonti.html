@@ -26,10 +26,10 @@
 import { renderFooter, loadJSON, esc } from "./js/common.js";
 import { formatIt } from "./js/engine.js";
 renderFooter("");
-const [asp, inps, rules, rinv] = await Promise.all(["asp-sicilia", "inps-sicilia", "rules", "rules-invalidita"].map((n) => loadJSON(`data/${n}.json`)));
+const [asp, inps, rules, rinv, rcar, raus] = await Promise.all(["asp-sicilia", "inps-sicilia", "rules", "rules-invalidita", "rules-cartella", "rules-ausili"].map((n) => loadJSON(`data/${n}.json`)));
 const st = { verified: "Controllato", partial: "Controllato in parte", todo: "Da controllare" };
 const link = (s) => s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>` : esc(s.label);
-document.getElementById("laws-list").innerHTML = [...rules.sources, ...rinv.sources].map((s) => `<li>${link(s)}</li>`).join("");
+document.getElementById("laws-list").innerHTML = [...rules.sources, ...rinv.sources, ...rcar.sources, ...raus.sources].map((s) => `<li>${link(s)}</li>`).join("");
 document.getElementById("sources-list").innerHTML = `
   <table class="fields"><thead><tr><th>ASP</th><th>Stato</th></tr></thead><tbody>
   ${asp.asl.map((a) => `<tr><td><strong>${esc(a.name)}</strong><br>${a.sources.map(link).join("<br>")}</td>
@@ -41,7 +41,9 @@ document.getElementById("sources-list").innerHTML = `
   <p>Controllato il ${formatIt(inps.last_verified)}.</p>
   <h3>Regole</h3>
   <p>Tempi massimi: ${esc(rules.source)} – controllato il ${formatIt(rules.last_verified)}.<br>
-  Invalidità civile: ${esc(rinv.new_regime.legal_basis)} – controllato il ${formatIt(rinv.last_verified)}.</p>`;
+  Invalidità civile: ${esc(rinv.new_regime.legal_basis)} – controllato il ${formatIt(rinv.last_verified)}.<br>
+  Cartella clinica: ${esc(rcar.legal_basis)} – controllato il ${formatIt(rcar.last_verified)}.<br>
+  Ausili e protesi: ${esc(raus.legal_basis)} – controllato il ${formatIt(raus.last_verified)}.</p>`;
 </script>
 </body>
 </html>

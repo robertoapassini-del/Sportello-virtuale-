@@ -62,8 +62,9 @@ export async function renderSources(root = '') {
   const el = document.getElementById('fonti');
   if (!el) return;
   try {
-    const [r1, r2] = await Promise.all([loadJSON(`${root}data/rules.json`), loadJSON(`${root}data/rules-invalidita.json`)]);
-    el.innerHTML = sourcesBox([...r1.sources, ...r2.sources], { verified: r1.last_verified });
+    const names = ['rules', 'rules-invalidita', 'rules-cartella', 'rules-ausili'];
+    const all = await Promise.all(names.map((n) => loadJSON(`${root}data/${n}.json`)));
+    el.innerHTML = sourcesBox(all.flatMap((r) => r.sources), { verified: all[0].last_verified });
   } catch { el.innerHTML = ''; }
 }
 

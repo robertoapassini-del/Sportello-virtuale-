@@ -120,3 +120,56 @@ export function mailtoHref(to, subject, body) {
   if (b) params.push(`body=${encodeURIComponent(b)}`);
   return `mailto:${to || ''}?${params.join('&')}`;
 }
+
+// Modulo 3 — sollecito per la copia della cartella clinica o dei referti.
+export function cartellaReminder({ structure, address, person: p, requestDate, protocol, what, episode, deadline, today }) {
+  return `Spett.le ${blank(structure, 'Direzione Sanitaria di __________')}
+${address || ''}
+
+Oggetto: SOLLECITO – Richiesta di copia di ${blank(what, 'cartella clinica')} presentata il ${requestDate ? formatIt(requestDate) : '__________'}
+(art. 25 L. 241/1990)
+
+${personBlock(p)}
+
+PREMESSO CHE
+- in data ${requestDate ? formatIt(requestDate) : '__________'} ha chiesto copia di ${blank(what, 'cartella clinica')}${episode ? ` relativa a ${episode}` : ''}${protocol ? ` (ricevuta/protocollo n. ${protocol})` : ''};
+- ai sensi dell'art. 25 della L. 241/1990 la richiesta deve essere evasa entro 30 giorni, cioè entro il ${deadline ? formatIt(deadline) : '__________'};
+- alla data odierna non ha ricevuto quanto richiesto né alcuna comunicazione;
+
+SOLLECITA
+la consegna della documentazione richiesta nel più breve tempo possibile e chiede di essere informato/a
+per iscritto su data e modalità di ritiro, nonché sull'eventuale costo di riproduzione.
+${delegateBlock(p)}
+Allega: copia del documento di identità; copia della richiesta del ${requestDate ? formatIt(requestDate) : '__________'}${p.isDelegate ? '; delega e documento del delegato' : ''}.
+
+${signature(p, today)}
+`;
+}
+
+// Modulo 4 — sollecito all'ASP per l'autorizzazione di un ausilio o di una protesi.
+export function ausiliReminder({ aspName, address, person: p, device, requestDate, protocol, prescriber, deadline, today }) {
+  return `Spett.le Azienda Sanitaria Provinciale di ${aspName}
+Ufficio Assistenza Protesica
+${address || ''}
+
+Oggetto: SOLLECITO – Autorizzazione alla fornitura di ${blank(device, 'ausilio/protesi')} richiesta il ${requestDate ? formatIt(requestDate) : '__________'}
+(art. 18 DPCM 12/01/2017)
+
+${personBlock(p)}
+
+PREMESSO CHE
+- in data ${requestDate ? formatIt(requestDate) : '__________'} ha presentato richiesta di autorizzazione alla fornitura di ${blank(device, 'ausilio/protesi')},
+  su prescrizione ${prescriber ? `del/della ${prescriber}` : 'dello specialista del Servizio sanitario'}${protocol ? ` (ricevuta/protocollo n. ${protocol})` : ''};
+- ai sensi dell'art. 18 del DPCM 12/01/2017 l'autorizzazione va rilasciata entro 20 giorni dalla richiesta, cioè entro il ${deadline ? formatIt(deadline) : '__________'},
+  e, decorso tale termine senza risposta, si intende concessa;
+- alla data odierna non ha ricevuto l'autorizzazione né alcuna comunicazione;
+
+CHIEDE
+il rilascio immediato dell'autorizzazione (o la conferma che si è formata per silenzio-assenso) e l'avvio della fornitura,
+con indicazione del fornitore e dei tempi di consegna.
+${delegateBlock(p)}
+Allega: copia del documento di identità; copia della prescrizione e della richiesta del ${requestDate ? formatIt(requestDate) : '__________'}${p.isDelegate ? '; delega e documento del delegato' : ''}.
+
+${signature(p, today)}
+`;
+}

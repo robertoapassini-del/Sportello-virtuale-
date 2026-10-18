@@ -102,6 +102,31 @@ for (const pr of inps.provinces) {
   cases.push({ mod: 2, name: `INV ${pr.name} · certificato nel futuro`, pr, p: pr.name, cert: add(TODAY, 1), expectCertError: true });
 }
 
+// Moduli 3 (cartella clinica, 30 giorni) e 4 (ausili, 20 giorni).
+const M34 = [
+  { mod: 3, url: 'cartella-clinica/index.html', days: 30, late: 'Sono in ritardo: puoi sollecitare', ok: 'Non è ancora tardi' },
+  { mod: 4, url: 'ausili/index.html', days: 20, late: "I 20 giorni sono passati: l'autorizzazione vale lo stesso", ok: 'Non è ancora tardi' },
+];
+for (const m of M34) {
+  for (const a of asp.asl) {
+    const p = a.province;
+    const base = { mod: m.mod, m, p, a };
+    if (m.mod === 3) {
+      cases.push({ ...base, name: `CART ${p} · non ancora chiesta`, path: 'none', expectH1: 'Prima fai la richiesta per iscritto' });
+      cases.push({ ...base, name: `CART ${p} · chiesta a voce`, path: 'voice', expectH1: 'Prima fai la richiesta per iscritto' });
+    } else {
+      cases.push({ ...base, name: `AUS ${p} · senza prescrizione`, path: 'none', expectH1: 'Si parte dallo specialista' });
+      cases.push({ ...base, name: `AUS ${p} · autorizzato non consegnato`, path: 'authorized', expectH1: 'Autorizzato ma non consegnato' });
+    }
+    const tag = m.mod === 3 ? 'CART' : 'AUS';
+    cases.push({ ...base, name: `${tag} ${p} · richiesta oggi`, path: 'date', req: TODAY, expectH1: m.ok, deadline: add(TODAY, m.days) });
+    cases.push({ ...base, name: `${tag} ${p} · scade oggi`, path: 'date', req: add(TODAY, -m.days), expectH1: m.ok, deadline: TODAY });
+    cases.push({ ...base, name: `${tag} ${p} · scaduta ieri`, path: 'date', req: add(TODAY, -m.days - 1), expectH1: m.late, deadline: add(TODAY, -1), late: 1, full: true });
+    cases.push({ ...base, name: `${tag} ${p} · scaduta da 40 giorni`, path: 'date', req: add(TODAY, -m.days - 40), expectH1: m.late, late: 40 });
+    cases.push({ ...base, name: `${tag} ${p} · data nel futuro`, path: 'date', req: add(TODAY, 1), expectReqError: true });
+  }
+}
+
 // ---------- esecuzione ----------
 const BAD_TEXT = /undefined|\bnull\b|NaN|TODO|VERIFY|\[object/;
 
@@ -240,6 +265,55 @@ async function runCase(page, c) {
       await checkScreen('E adesso');
       await btn(/Torna indietro/);
       if (!(await h1()).length) problems.push('Indietro non funziona');
+    }
+    return problems;
+  }
+
+  // ---- moduli 3 e 4 ----
+  if (c.mod === 3 || c.mod === 4) {
+    await page.goto(BASE + c.m.url);
+    await btn(/Comincia/);
+    await btn(new RegExp(`^${c.p}$`));
+    if (c.mod === 3) {
+      await btn(/^La cartella clinica/);
+      if (c.path === 'none') await btn(/^No, non ancora/);
+      else if (c.path === 'voice') await btn(/solo a voce/);
+      else await btn(/^Sì, ho già fatto/);
+    } else {
+      if (c.path === 'none') await btn(/^Non ho ancora la prescrizione/);
+      else if (c.path === 'authorized') await btn(/ha detto sì/);
+      else await btn(/^Ho fatto la domanda/);
+    }
+    if (c.path === 'date') {
+      await page.fill('#requestDate', c.req);
+      await btn(/Controlla/);
+      if (c.expectReqError) {
+        if (!(await page.locator('#req-form-error').isVisible())) problems.push('giorno nel futuro accettato');
+        return problems;
+      }
+    }
+    const got = await h1();
+    if (!got.includes(c.expectH1)) problems.push(`titolo atteso «${c.expectH1}», trovato «${got}»`);
+    const text = await checkScreen('risultato');
+    if (c.deadline && !text.includes(fmt(c.deadline))) problems.push(`scadenza attesa ${fmt(c.deadline)} non mostrata`);
+    if (c.late && !text.includes(`${c.late} ${c.late === 1 ? 'giorno' : 'giorni'} in più`)) problems.push(`giorni di ritardo attesi ${c.late}`);
+    if (c.full) {
+      await btn(/Scriviamo il sollecito insieme/);
+      await page.fill('#f-fullName', 'Maria Rossi');
+      await page.check('input[name=isDelegate]');
+      await page.fill('#f-delegateName', 'Luca Rossi');
+      if (c.mod === 3) { await page.fill('#f-structure', 'Ospedale di prova'); await page.fill('#f-structureEmail', 'prova@example.org'); }
+      else await page.fill('#f-device', 'carrozzina di prova');
+      const t = await page.locator('#preview').innerText();
+      const wants = ['Maria Rossi', 'Luca Rossi', fmt(c.req), fmt(c.deadline), c.mod === 3 ? 'Ospedale di prova' : `Azienda Sanitaria Provinciale di ${c.p}`];
+      for (const w of wants) if (!t.includes(w)) problems.push(`sollecito senza «${w}»`);
+      if (/undefined|NaN|null/.test(t)) problems.push('sollecito con testo sospetto');
+      const mail = await page.locator('#mail-btn').getAttribute('href');
+      const to = c.mod === 3 ? 'prova@example.org' : (c.a.pec || '');
+      if (!mail.startsWith(`mailto:${to}?`)) problems.push(`email al destinatario sbagliato: ${mail.slice(0, 60)}`);
+      await checkScreen('sollecito');
+      await btn(/Torna indietro/);
+      if (!(await h1()).includes(c.expectH1)) problems.push('Indietro non torna al risultato');
     }
     return problems;
   }
