@@ -2,6 +2,12 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 18/10/2026 — Catania: pagine sparite dal sito dell'ASP
+- Fonte: pagina ufficiale «ADI, Cure palliative, RSA» (https://www.aspct.it/azienda/dipartimenti/dipartimenti-sanitari/dipartimento-delle-cure-intermedie-domiciliari-e-della-speci/u-o-c-coordinamento-e-controllo-adi-cure-palliative-rsa-e-lu/adi-cure-palliative-rsa/) e pagina «Contatti» (https://www.aspct.it/azienda/contatti/), lette per intero; nessuna notizia di chiusure o traslochi.
+- URP numero verde 800 279761: la pagina `organizzazione/urp.aspx` non esiste più (404) → pagina «Contatti», prova `pagina`.
+- Tolto il centralino 095 2541111: non è più su nessuna pagina ufficiale (solo giornali del 2020).
+- Tolto il PUA del PTA San Luigi 095 8250212: la pagina `cosa_fare_per/cure-palliative-domiciliari.aspx` non esiste più e il numero non è sulla pagina nuova. Al suo posto: UVM di Catania (cure a casa e RSA, PTA San Luigi) 095 8250259 e UVP (cure palliative a casa, via Vecchia Ognina 14) 095 2540624.
+
 ## 18/10/2026 — sportelli «scelta e revoca» ed esenzioni
 - Topic `anagrafe` in `asp-sicilia.json` per tutte le 9 ASP (51 sportelli): compaiono nel modulo medico di famiglia e in «Numeri utili». Esclusi i dati in contrasto (elenco nei `todo`).
 - `scelta_medico` aggiornato: cambio medico online a Catania (ASPConTe), Messina (SPID), Trapani e Caltanissetta (sportello online con PIN), Ragusa (servizi online); Siracusa per email.
