@@ -163,7 +163,7 @@ async function provaDallItalia(urls) {
     } catch { /* resta «non verificabile» */ }
     await pausa(1000); // check-host limita le richieste troppo ravvicinate
   }
-  for (let giro = 0; giro < 6 && richieste.some((x) => !esiti.has(x.u)); giro++) {
+  for (let giro = 0; giro < 12 && richieste.some((x) => !esiti.has(x.u)); giro++) {
     await pausa(5000);
     for (const { u, id } of richieste.filter((x) => !esiti.has(x.u))) {
       try {
