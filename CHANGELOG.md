@@ -2,6 +2,9 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 18/10/2026 — nuovo logo
+- Simbolo: una mano che sostiene un cuore, in verde acqua (`logo.svg`). Anche come icona della scheda del browser.
+
 ## 18/10/2026 — nuovo aspetto
 - Stile ispirato a Unimamma, in **verde acqua** (#0F7C78): sfondo bianco, titoli verde acqua, carattere tondo Nunito, sfumatura verde menta in home, riquadri e pulsanti arrotondati con ombra leggera, logo con segno sfumato verde acqua.
 - Il carattere Nunito è incluso nel sito (`fonts/`, licenza SIL OFL): nessun file caricato da siti esterni.
