@@ -22,7 +22,8 @@ Requisiti completi: [SPEC.md](SPEC.md).
 - **Semplicissimo per tutti**, anche per chi legge poco: frasi brevi, una sola domanda per schermata, pulsanti
   grandi con icone, pulsante **🔊 Ascolta** che legge la pagina ad alta voce, riquadro «Chi può aiutarti».
 - **Niente server, niente database, niente cookie, niente intelligenza artificiale.** Tutto funziona nel browser;
-  niente viene salvato o inviato.
+  quello che scrive l'utente non viene salvato né inviato. Si contano solo, in forma anonima, le pagine viste e i
+  «Sì / No» di «Ti è stata utile?» con GoatCounter (`GOATCOUNTER_CODE` in `js/common.js`).
 - **Decide il computer con regole fisse** (`js/engine.js`).
 - I dati di ASP e INPS si aggiornano a mano nei file `data/*.json`, ognuno con data di verifica e fonte.
 

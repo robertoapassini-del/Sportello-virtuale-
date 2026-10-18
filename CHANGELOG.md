@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 18/10/2026 — statistiche anonime (GoatCounter)
+- **Si contano le pagine viste e i «Sì / No» di «Ti è stata utile?»** con GoatCounter, senza cookie e senza script da altri siti (richiesta «pixel» da `count()` in `js/common.js`). Non si manda mai quello che l'utente scrive. Non conta su localhost.
+- Si attiva scrivendo il nome dell'account in `GOATCOUNTER_CODE` (`js/common.js`); finché è vuoto non si conta niente.
+- Privacy e testo sotto «Ti è stata utile?» aggiornati: non diciamo più «non contiamo chi visita» né «non registriamo la risposta».
+
 ## 18/10/2026 — pagina più larga sul computer
 - Testata, banda e piè di pagina larghi fino a 56rem (`--page`); il testo dei moduli resta nella colonna di lettura di 42rem (`--maxw`), allineata a sinistra, come NHS.uk.
 - Home e pagine delle aree (`data-wide`): da 768px in su i riquadri sono su 2 colonne; in home «Le domande più frequenti» e «Stai male adesso?» stanno affiancati. Sul telefono non cambia niente.

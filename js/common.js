@@ -1,10 +1,30 @@
 // Funzioni comuni del sito: testo sicuro, caricamento dati, piè di pagina,
-// lettura ad alta voce, copia e stampa. Niente qui invia dati a qualcuno.
+// lettura ad alta voce, copia e stampa. L'unica cosa inviata è il conteggio
+// anonimo delle visite e dei «Sì / No» (vedi count()): mai quello che scrivi.
 import { formatIt } from './engine.js';
 import { ICONS } from './icons.js';
 
 // TODO: sostituire con l'indirizzo dedicato quando il dominio esiste (SPEC 8, 9.0).
 export const MAINTAINER_EMAIL = 'info@guidasanita.it';
+
+// Statistiche senza cookie con GoatCounter: il nome scelto creando l'account su
+// goatcounter.com (es. 'guidasanita' → https://guidasanita.goatcounter.com).
+// Vuoto = non si conta niente.
+export const GOATCOUNTER_CODE = '';
+
+// Conta una pagina vista o un evento. Manda solo indirizzo della pagina, titolo e
+// sito di provenienza: niente risposte, niente dati scritti nei moduli.
+// Usa il «pixel» di GoatCounter (nessuno script da altri siti). Sul computer
+// di chi sviluppa (localhost) non conta.
+let pageCounted = false;
+export function count(path, { title = '', event = false } = {}) {
+  if (!GOATCOUNTER_CODE || !/^https?:$/.test(location.protocol)) return;
+  if (/^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname)) return;
+  const q = new URLSearchParams({ p: path, t: title, rnd: Math.random().toString(36).slice(2) });
+  if (event) q.set('e', 'true');
+  else if (document.referrer && !document.referrer.startsWith(location.origin)) q.set('r', document.referrer);
+  try { new Image().src = `https://${GOATCOUNTER_CODE}.goatcounter.com/count?${q}`; } catch { /* non importa */ }
+}
 
 export function esc(v) {
   return String(v ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -105,18 +125,19 @@ export function renderFooter(root = '') {
     <p>Il sito è libero: codice con licenza MIT, testi con licenza CC BY 4.0.</p>
   </div>`;
   renderFeedback(el, root);
+  if (!pageCounted) { pageCounted = true; count(location.pathname, { title: document.title }); }
 }
 
 // «Questa pagina ti è stata utile?» sopra il piè di pagina, come NHS.uk.
-// Non registriamo la risposta (niente server, niente statistiche): con «No»
-// si può scriverci un'email, se si vuole. Sotto, la data dell'ultimo controllo.
+// Contiamo solo quanti «Sì» e quanti «No» per pagina (evento GoatCounter
+// «utile-si/…» o «utile-no/…»): con «No» si può scriverci un'email, se si vuole. Sotto, la data dell'ultimo controllo.
 function renderFeedback(footer, root) {
   if (document.getElementById('page-feedback')) return;
   footer.insertAdjacentHTML('beforebegin', `<section class="page-feedback no-say" id="page-feedback" aria-labelledby="fb-q"><div class="wrap">
     <div class="fb-box" aria-live="polite">
       <h2 id="fb-q">Questa pagina ti è stata utile?</h2>
       <div class="fb-buttons"><button type="button" data-fb="si">Sì</button><button type="button" data-fb="no">No</button></div>
-      <p class="muted">Non registriamo la risposta.</p>
+      <p class="muted">Contiamo solo quanti Sì e quanti No, senza sapere chi sei.</p>
     </div>
     <p class="fb-checked" hidden></p>
   </div></section>`);
@@ -124,6 +145,7 @@ function renderFeedback(footer, root) {
   box.addEventListener('click', (e) => {
     const b = e.target.closest('button[data-fb]');
     if (!b) return;
+    count(`utile-${b.dataset.fb}${location.pathname}`, { title: `Utile: ${b.dataset.fb === 'si' ? 'Sì' : 'No'} – ${document.title}`, event: true });
     box.innerHTML = b.dataset.fb === 'si'
       ? '<p><strong>Grazie!</strong> Puoi mostrare questa pagina anche a chi ne ha bisogno.</p>'
       : `<p><strong>Ci dispiace.</strong> Se vuoi, <a href="${esc(reportErrorHref(document.title))}">scrivici cosa non andava</a>: si apre il tuo programma di posta e decidi tu se mandare.</p>
