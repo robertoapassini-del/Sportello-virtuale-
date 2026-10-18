@@ -129,6 +129,13 @@ Oggi sul sito (verificato): modulo ufficiale per email a percorsoditutela@asppal
 26. Le esenzioni per reddito arrivano automaticamente dal Sistema Tessera Sanitaria o le rilasciate voi?
 27. Per i farmaci, in Sicilia, l'esenzione per reddito come funziona? Quali codici?
 
+**Assistenza domiciliare e cure palliative (moduli 10 e 11)**
+
+28. Dov'è il PUA (Punto Unico di Accesso) di ogni distretto? Telefono, email, orari?
+29. Quanti giorni passano di solito tra la richiesta del medico e la valutazione a casa (UVM)? C'è un termine fissato dalla Regione?
+30. Qual è il numero della rete cure palliative e degli hospice della provincia? Chi può attivarla (medico di famiglia, specialista, reparto)?
+31. A quale indirizzo vanno le richieste scritte per ADI e cure palliative? Va bene l'URP?
+
 ---
 
 ## 3. INPS — invalidità civile
@@ -162,6 +169,17 @@ Gli indirizzi PEC sul sito sono stati costruiti sul formato standard dell'INPS: 
 Le PEC si possono controllare anche da soli, su **indicepa.gov.it** (cerca «INPS») o sulla pagina «Sedi» di **inps.it**.
 
 ---
+
+## 3b. Questura e Prefettura — permesso di soggiorno (modulo 8)
+
+1. Quali tipi di permesso si rinnovano con il kit postale e quali solo in Questura?
+2. Quanto costa oggi il rinnovo, in tutto?
+3. Una domanda presentata dopo la scadenza (entro 60 giorni) viene accettata?
+
+## 3c. CAF / patronato — assegno di inclusione (modulo 7)
+
+1. Quali sono le soglie di quest'anno (ISEE, reddito, patrimonio)?
+2. Dopo la domanda, in quanto tempo arriva la convocazione dei servizi sociali?
 
 ## 4. Regione Siciliana
 

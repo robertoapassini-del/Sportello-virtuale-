@@ -8,6 +8,11 @@ Sito gratuito che aiuta le persone in Sicilia a far valere i tempi massimi di at
 - **Modulo 4 – Ausili e protesi:** l'ASP non autorizza carrozzina, letto, pannoloni ecc. entro 20 giorni (DPCM 12/01/2017).
 - **Modulo 5 – Esenzione ticket:** calcolo dell'esenzione per età e reddito (codici E01–E04) e come ottenerla.
 - **Modulo 6 – Ricorso invalidità:** 6 mesi dal verbale per il ricorso; quanto tempo resta e cosa fare.
+- **Modulo 7 – Assegno di inclusione:** condizioni principali (famiglia, residenza, ISEE) e come fare domanda.
+- **Modulo 8 – Permesso di soggiorno:** rinnovo 60 giorni prima della scadenza; dove, come, cosa portare.
+- **Modulo 9 – Piano terapeutico:** cos'è, chi lo fa, quando prenotare il rinnovo.
+- **Modulo 10 – Assistenza domiciliare (ADI):** come si chiede al distretto; sollecito dopo 30 giorni.
+- **Modulo 11 – Cure palliative:** diritto della L. 38/2010, attivazione a casa o in hospice, richiesta scritta.
 
 Requisiti completi: [SPEC.md](SPEC.md).
 
@@ -62,6 +67,11 @@ npm run test:combinazioni
 | `ausili/`, `js/ausili.js` | Modulo 4: scadenza 20 giorni, sollecito all'ASP, consegna |
 | `esenzione-ticket/`, `js/esenzione.js` | Modulo 5: calcolo esenzione per reddito |
 | `ricorso-invalidita/`, `js/ricorso.js` | Modulo 6: scadenza di 6 mesi per il ricorso |
+| `assegno-inclusione/`, `js/adi.js` | Modulo 7: condizioni per l'assegno di inclusione |
+| `permesso-soggiorno/`, `js/permesso.js` | Modulo 8: quando rinnovare il permesso |
+| `piano-terapeutico/`, `js/piano.js` | Modulo 9: piano terapeutico e rinnovo |
+| `assistenza-domiciliare/`, `js/domiciliare.js` | Modulo 10: ADI, sollecito al distretto |
+| `cure-palliative/`, `js/palliative.js` | Modulo 11: cure palliative, richiesta scritta |
 | `js/flow.js` | Navigazione comune ai moduli nuovi (schermate, Indietro, Ascolta, Fonti) |
 | `js/engine.js` | Regole sulle date (funzioni pure, testate) |
 | `js/letters.js` | Modelli di lettera (DA VERIFICARE con il legale) |

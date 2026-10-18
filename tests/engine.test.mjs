@@ -245,3 +245,32 @@ test('ricorso: 6 mesi dal verbale', async () => {
   assert.equal(ricorsoDeadline(r, { verbaleDate: '2026-12-01', today: '2026-10-18' }).error, 'future');
   for (const s of [...r.sources, ...load('../data/rules-esenzione.json').sources]) assert.match(s.url, /^https:\/\//);
 });
+
+test('assegno di inclusione, permesso, piano terapeutico', async () => {
+  const { adiCheck, permessoStatus, pianoStatus } = await import('../js/engine.js');
+  const { genericRequest } = await import('../js/letters.js');
+  const ra = load('../data/rules-adi.json'); const rp = load('../data/rules-permesso.json'); const rt = load('../data/rules-piano.json');
+  assert.equal(adiCheck(ra, { household: true, residency: true, isee: 10140 }).status, 'yes');
+  assert.equal(adiCheck(ra, { household: true, residency: true, isee: 10140.01 }).status, 'no');
+  assert.deepEqual(adiCheck(ra, { household: false, residency: false, isee: 50000 }).reasons, ['household', 'residency', 'isee']);
+  assert.equal(adiCheck(ra, { household: true, residency: true, isee: null }).status, 'maybe');
+  assert.equal(adiCheck(ra, { household: null, residency: true, isee: 5000 }).status, 'maybe');
+
+  const T = '2026-10-18';
+  assert.deepEqual(permessoStatus(rp, { expiryDate: '2027-01-18', today: T }).status, 'early');  // 92 giorni
+  assert.equal(permessoStatus(rp, { expiryDate: '2026-12-17', today: T }).status, 'now');        // 60 giorni
+  assert.equal(permessoStatus(rp, { expiryDate: '2026-12-18', today: T }).status, 'early');      // 61 giorni
+  assert.equal(permessoStatus(rp, { expiryDate: T, today: T }).status, 'now');
+  assert.equal(permessoStatus(rp, { expiryDate: '2026-08-19', today: T }).status, 'late');       // scaduto da 60
+  assert.equal(permessoStatus(rp, { expiryDate: '2026-08-18', today: T }).status, 'expired');    // da 61
+  assert.equal(permessoStatus(rp, { expiryDate: '2027-01-18', today: T }).startBy, '2026-11-19');
+
+  assert.equal(pianoStatus(rt, { expiryDate: '2027-01-18', today: T }).status, 'ok');
+  assert.equal(pianoStatus(rt, { expiryDate: '2026-12-17', today: T }).status, 'soon');
+  assert.equal(pianoStatus(rt, { expiryDate: '2026-10-17', today: T }).status, 'expired');
+  assert.equal(pianoStatus(rt, { expiryDate: '2027-01-18', today: T }).bookBy, '2026-11-19');
+
+  const l = genericRequest({ to: 'Distretto', subject: 'Richiesta', person: { fullName: 'Maria Rossi' }, premise: ['a', 'b'], request: 'x', attachments: ['y'], today: T });
+  assert.match(l, /Maria Rossi/); assert.match(l, /- a;\n- b;/); assert.match(l, /Allega: y\./);
+  for (const r of [ra, rp, rt, load('../data/rules-domiciliare.json'), load('../data/rules-palliative.json')]) for (const s of r.sources) assert.match(s.url, /^https:\/\//);
+});

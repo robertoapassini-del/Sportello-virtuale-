@@ -160,6 +160,35 @@ cases.push({ mod: 6, name: 'RIC · scaduto ieri', verbale: add(addM(TODAY, -6), 
 cases.push({ mod: 6, name: 'RIC · scaduto da un anno', verbale: addM(TODAY, -18), expectH1: 'I 6 mesi sono passati', deadline: addM(TODAY, -12) });
 cases.push({ mod: 6, name: 'RIC · data nel futuro', verbale: add(TODAY, 1), expectReqError: true });
 
+// Modulo 7: assegno di inclusione.
+const RADI = JSON.parse(fs.readFileSync(path.join(DATA, 'rules-adi.json'), 'utf8'));
+for (const household of [true, false, null]) for (const residency of [true, false, null]) for (const isee of [null, 0, RADI.isee_max, RADI.isee_max + 1, 50000]) {
+  const no = household === false || residency === false || (isee !== null && isee > RADI.isee_max);
+  const exp = no ? 'no' : (isee === null || household === null || residency === null) ? 'maybe' : 'yes';
+  cases.push({ mod: 7, name: `ADI · famiglia ${household} · residenza ${residency} · ISEE ${isee}`, household, residency, isee, exp });
+}
+// Modulo 8: permesso di soggiorno. Modulo 9: piano terapeutico.
+for (const [off, exp] of [[120, 'Hai tempo'], [61, 'Hai tempo'], [60, 'È il momento'], [0, 'È il momento'], [-1, 'È scaduto da poco'], [-60, 'È scaduto da poco'], [-61, 'È scaduto da più di 60'], [-400, 'È scaduto da più di 60']]) {
+  cases.push({ mod: 8, name: `PERM · scadenza tra ${off} giorni`, expiry: add(TODAY, off), expectH1: exp, startBy: add(add(TODAY, off), -60) });
+}
+for (const [off, exp] of [[120, 'Hai tempo'], [61, 'Hai tempo'], [60, 'Prenota adesso'], [0, 'Prenota adesso'], [-1, 'Il piano è scaduto'], [-200, 'Il piano è scaduto']]) {
+  cases.push({ mod: 9, name: `PIANO · scadenza tra ${off} giorni`, expiry: add(TODAY, off), expectH1: exp });
+}
+cases.push({ mod: 9, name: 'PIANO · prima volta', first: true, expectH1: 'Si parte dallo specialista' });
+// Moduli 10 e 11: per ogni provincia, i percorsi principali.
+for (const a of asp.asl) {
+  const p = a.province;
+  cases.push({ mod: 10, p, a, name: `DOM ${p} · come si chiede`, path: 'none', expectH1: 'Si parte dal medico di famiglia' });
+  cases.push({ mod: 10, p, a, name: `DOM ${p} · interrotta`, path: 'reduced', expectH1: "Se l'assistenza si ferma o non basta", letter: true });
+  cases.push({ mod: 10, p, a, name: `DOM ${p} · richiesta da 10 giorni`, path: 'date', req: add(TODAY, -10), expectH1: 'La richiesta è partita' });
+  cases.push({ mod: 10, p, a, name: `DOM ${p} · richiesta da 31 giorni`, path: 'date', req: add(TODAY, -31), expectH1: 'Aspetti da troppo', letter: true });
+  cases.push({ mod: 10, p, a, name: `DOM ${p} · data nel futuro`, path: 'date', req: add(TODAY, 1), expectReqError: true });
+  cases.push({ mod: 11, p, a, name: `PAL ${p} · come funziona`, path: 'none', expectH1: 'Come funziona', letter: true });
+  cases.push({ mod: 11, p, a, name: `PAL ${p} · dolore`, path: 'pain', expectH1: 'Il dolore si può curare' });
+  cases.push({ mod: 11, p, a, name: `PAL ${p} · richiesta da 3 giorni`, path: 'date', req: add(TODAY, -3), expectH1: 'La richiesta è partita' });
+  cases.push({ mod: 11, p, a, name: `PAL ${p} · richiesta da 8 giorni`, path: 'date', req: add(TODAY, -8), expectH1: 'Troppo tempo', letter: true });
+}
+
 // ---------- esecuzione ----------
 const BAD_TEXT = /undefined|\bnull\b|NaN|TODO|VERIFY|\[object/;
 
@@ -345,6 +374,69 @@ async function runCase(page, c) {
     const text = await checkScreen('risultato');
     if (c.deadline && !text.includes(fmt(c.deadline))) problems.push(`scadenza attesa ${fmt(c.deadline)} non mostrata`);
     if (c.today && !text.includes('Scade oggi')) problems.push('manca «Scade oggi»');
+    return problems;
+  }
+
+  // ---- modulo 7: assegno di inclusione ----
+  if (c.mod === 7) {
+    await page.goto(`${BASE}assegno-inclusione/index.html`);
+    await btn(/Comincia/);
+    await btn(c.household === true ? /^Sì$/ : c.household === false ? /^No, nessuna/ : /^Non lo so/);
+    await btn(c.residency === true ? /^Sì$/ : c.residency === false ? /^No$/ : /^Non sono sicuro/);
+    if (c.isee === null) await page.click('#no-isee'); else { await page.fill('#isee', String(c.isee)); await btn(/Controlla/); }
+    const got = await h1();
+    const want = { yes: 'Le condizioni principali ci sono', maybe: 'Forse sì', no: 'Con questi dati non ci sono le condizioni' }[c.exp];
+    if (!got.startsWith(want)) problems.push(`atteso «${want}», trovato «${got}»`);
+    await checkScreen('risultato');
+    return problems;
+  }
+  // ---- moduli 8 e 9: permesso / piano ----
+  if (c.mod === 8 || c.mod === 9) {
+    await page.goto(`${BASE}${c.mod === 8 ? 'permesso-soggiorno' : 'piano-terapeutico'}/index.html`);
+    await btn(/Comincia/);
+    if (c.mod === 9) await btn(c.first ? /^No, devo farlo/ : /^Sì, ce l/);
+    if (!c.first) { await page.fill('#expiryDate', c.expiry); await btn(/Controlla/); }
+    const got = await h1();
+    if (!got.startsWith(c.expectH1)) problems.push(`titolo atteso «${c.expectH1}», trovato «${got}»`);
+    const text = await checkScreen('risultato');
+    if (c.expiry && !text.includes(fmt(c.expiry))) problems.push('data di scadenza non mostrata');
+    if (c.startBy && c.expectH1 === 'Hai tempo' && !text.includes(fmt(c.startBy))) problems.push(`data entro cui cominciare attesa ${fmt(c.startBy)}`);
+    return problems;
+  }
+  // ---- moduli 10 e 11: domiciliare / palliative ----
+  if (c.mod === 10 || c.mod === 11) {
+    await page.goto(`${BASE}${c.mod === 10 ? 'assistenza-domiciliare' : 'cure-palliative'}/index.html`);
+    await btn(/Comincia/);
+    await btn(new RegExp(`^${c.p}$`));
+    if (c.path === 'none') await btn(c.mod === 10 ? /^Non ho ancora chiesto/ : /come funziona/);
+    else if (c.path === 'reduced') await btn(/si è interrotta/);
+    else if (c.path === 'pain') await btn(/Il dolore non/);
+    else {
+      await btn(c.mod === 10 ? /ha mandato la richiesta/ : /ha fatto la richiesta/);
+      await page.fill('#requestDate', c.req);
+      await btn(/Controlla/);
+      if (c.expectReqError) {
+        if (!(await page.locator('#req-form-error').isVisible())) problems.push('giorno nel futuro accettato');
+        return problems;
+      }
+    }
+    const got = await h1();
+    if (!got.startsWith(c.expectH1)) problems.push(`titolo atteso «${c.expectH1}», trovato «${got}»`);
+    await checkScreen('risultato');
+    if (c.letter) {
+      await btn(/Scriviamo (il sollecito|la lettera|la richiesta) insieme|Prepara una richiesta scritta/);
+      await page.fill('#f-fullName', 'Maria Rossi');
+      await page.check('input[name=isDelegate]'); await page.fill('#f-delegateName', 'Luca Rossi');
+      const t = await page.locator('#preview').innerText();
+      for (const w of ['Maria Rossi', 'Luca Rossi', `Azienda Sanitaria Provinciale di ${c.p}`]) if (!t.includes(w)) problems.push(`lettera senza «${w}»`);
+      if (c.req && !t.includes(fmt(c.req))) problems.push('lettera senza data della richiesta');
+      if (/undefined|NaN|null/.test(t)) problems.push('lettera con testo sospetto');
+      const mail = await page.locator('#mail-btn').getAttribute('href');
+      const urp = c.a.emails.find((e) => /urp/i.test(e)) || c.a.pec || c.a.emails[0] || '';
+      if (!mail.startsWith(`mailto:${urp}?`)) problems.push(`email al destinatario sbagliato: ${mail.slice(0, 60)}`);
+      if (/percorsoditutela|percorso\.tutela/.test(mail)) problems.push('email alla casella del percorso di tutela (sbagliata per questo modulo)');
+      await checkScreen('lettera');
+    }
     return problems;
   }
 

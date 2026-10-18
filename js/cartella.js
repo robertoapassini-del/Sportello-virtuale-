@@ -4,7 +4,7 @@
 import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween } from './engine.js';
 import { cartellaReminder, mailtoHref } from './letters.js';
 import {
-  esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton, personFields, reportErrorHref,
+  esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton, personFields, reportErrorHref, generalContact,
 } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
 
@@ -135,7 +135,7 @@ const screens = {
         <ol class="big-steps">
           <li class="say"><strong>Telefona o vai all'ufficio cartelle cliniche</strong> con la ricevuta. Spesso basta questo.</li>
           <li class="say"><strong>Manda una lettera di sollecito</strong> alla Direzione sanitaria dell'ospedale. La scriviamo insieme.</li>
-          <li class="say"><strong>Se ancora niente:</strong> reclamo all'URP dell'ASP di ${esc(a.province)}${a.emails[0] || a.pec ? ` (${mailLink(a.emails[0] || a.pec)})` : ''}, oppure a Cittadinanzattiva
+          <li class="say"><strong>Se ancora niente:</strong> reclamo all'URP dell'ASP di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''}, oppure a Cittadinanzattiva
             (<a href="https://www.cittadinanzattiva.it" target="_blank" rel="noopener">cittadinanzattiva.it</a>). Un avvocato può fare ricorso al TAR entro 30 giorni.</li>
         </ol>
         ${a.phones.map((p) => callButton(p.label, p.number)).join('')}

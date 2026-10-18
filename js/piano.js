@@ -1,0 +1,107 @@
+// Modulo 9 — piano terapeutico: «come lo chiedo, quando lo rinnovo?».
+// Non chiediamo né la malattia né il nome della medicina: solo la data di scadenza del piano.
+import { pianoStatus, todayISO, formatIt, parseDate } from './engine.js';
+import { esc, loadJSON, disclaimer, renderFooter, readForm } from './common.js';
+import { createFlow, choice, restartBtn, days, dateForm, showError } from './flow.js';
+
+const ROOT = '../';
+const app = document.getElementById('app');
+let rules;
+const state = {};
+const sources = () => [rules.sources, { verified: rules.last_verified }];
+
+const whatIs = () => `
+  <h2 class="say">Cos'è e come funziona</h2>
+  <ol class="big-steps">
+    <li class="say"><strong>Alcune medicine</strong> il medico di famiglia può prescriverle solo se c'è un <strong>piano terapeutico</strong>: un foglio scritto da uno <strong>specialista del Servizio sanitario</strong> (in ospedale o in un centro autorizzato), non da un medico privato.</li>
+    <li class="say"><strong>Il piano ha una scadenza</strong>, scritta sul foglio: di solito ${rules.typical_duration_months.join(' o ')} mesi.</li>
+    <li class="say"><strong>Con il piano valido</strong>, il medico di famiglia ti fa la ricetta ogni mese. Tieni una copia del piano: a volte la farmacia la chiede.</li>
+    <li class="say"><strong>Prima che scada</strong> serve una nuova visita dallo specialista per rinnovarlo. Se scade, il medico non può più fare la ricetta con il Servizio sanitario.</li>
+  </ol>
+  <div class="notice warn"><p class="say">⚠️ La visita per il rinnovo è una <strong>visita di controllo</strong>: può avere tempi lunghi e non c'è la garanzia dei tempi massimi. Per questo va prenotata con largo anticipo, almeno ${rules.book_before_days} giorni prima.</p></div>
+  <details class="card">
+    <summary>Se la visita non si trova in tempo</summary>
+    <ul class="clean">
+      <li>Chiedi al reparto o al centro che ha fatto il piano: spesso hanno un'agenda riservata ai rinnovi.</li>
+      <li>Chiedi al medico di famiglia di contattare lo specialista: a volte il piano si rinnova senza visita, con i referti recenti.</li>
+      <li>Chiedi alla farmacia dell'ASP (servizio farmaceutico) se nella tua provincia esistono proroghe.</li>
+      <li>Non interrompere la cura da solo: parlane con il medico.</li>
+    </ul>
+  </details>`;
+
+const screens = {
+  intro: () => ({
+    html: `
+      <div class="hero" aria-hidden="true">💊</div>
+      <h1>La medicina con il piano terapeutico</h1>
+      <p class="lead say">Il medico ti ha detto che serve un «piano terapeutico»? O ne hai uno che sta per scadere?</p>
+      <p class="say">Ti spieghiamo cos'è, chi lo fa e quando prenotare il rinnovo per non restare senza medicina.</p>
+      <button type="button" class="btn primary big" data-go="have">▶️ Comincia</button>
+      <p class="muted say">È gratis. Non salviamo niente. Non ti chiediamo né la malattia né la medicina.</p>`,
+  }),
+
+  have: () => ({
+    html: `
+      <h1>📄 Hai già un piano terapeutico?</h1>
+      ${choice('✅', 'Sì, ce l\'ho', { have: true }, 'date', 'Voglio sapere quando rinnovarlo')}
+      ${choice('❌', 'No, devo farlo per la prima volta', { have: false }, 'first')}`,
+  }),
+
+  first: () => ({
+    html: `
+      <div class="hero" aria-hidden="true">👨‍⚕️</div>
+      <h1>Si parte dallo specialista</h1>
+      <p class="say">Chiedi al medico di famiglia l'impegnativa per la visita dallo specialista giusto. Alla visita, lo specialista scrive il piano.</p>
+      ${whatIs()}
+      <p class="say">Quando hai il piano, torna qui con la data di scadenza: ti diciamo quando prenotare il rinnovo.</p>
+      ${disclaimer(rules.last_verified)}
+      ${restartBtn()}`,
+  }),
+
+  date: () => ({
+    html: `
+      <h1>📅 Quando scade il piano?</h1>
+      <p class="say">La data è scritta sul foglio, vicino a «valido fino al» o «durata».</p>
+      ${dateForm({ id: 'exp-form', name: 'expiryDate', label: 'Data di scadenza del piano', value: state.expiryDate, button: '✔️ Controlla' })}`,
+    mount() {
+      document.getElementById('exp-form').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const v = readForm(e.target);
+        if (!parseDate(v.expiryDate)) return showError('exp-form', 'Scrivi la data.');
+        state.expiryDate = v.expiryDate;
+        flow.go('result');
+      });
+    },
+  }),
+
+  result: () => {
+    const r = pianoStatus(rules, { expiryDate: state.expiryDate, today: todayISO() });
+    const box = {
+      ok: ['🗓️', 'Hai tempo: segnati la data', 'ok',
+        `Il piano scade il <strong>${esc(formatIt(state.expiryDate))}</strong>. Prenota la visita per il rinnovo <strong>entro il ${esc(formatIt(r.bookBy))}</strong>, così la fai prima della scadenza.`],
+      soon: ['⏰', 'Prenota adesso il rinnovo', 'warn',
+        `Il piano scade il <strong>${esc(formatIt(state.expiryDate))}</strong>, ${r.toExpiry === 0 ? '<strong>oggi</strong>' : `tra ${days(r.toExpiry)}`}. Chiama subito per la visita dallo specialista: le liste possono essere lunghe.`],
+      expired: ['⚠️', 'Il piano è scaduto', 'bad',
+        `Il piano è scaduto il <strong>${esc(formatIt(state.expiryDate))}</strong>, ${days(r.daysOverdue)} fa. Fino al rinnovo il medico di famiglia non può prescrivere la medicina con il Servizio sanitario. Chiama subito lo specialista o il centro che l'ha fatto e chiedi un appuntamento urgente per il rinnovo.`],
+    }[r.status];
+    return {
+      html: `
+        <div class="hero" aria-hidden="true">${box[0]}</div>
+        <h1>${box[1]}</h1>
+        <div class="notice ${box[2]}"><p class="say">${box[3]}</p></div>
+        ${whatIs()}
+        ${disclaimer(rules.last_verified)}
+        ${restartBtn()}`,
+    };
+  },
+};
+
+let flow;
+(async function init() {
+  renderFooter(ROOT);
+  try { rules = await loadJSON(`${ROOT}data/rules-piano.json`); } catch {
+    app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>'; return;
+  }
+  flow = createFlow({ app, screens, state, sources });
+  flow.render();
+})();

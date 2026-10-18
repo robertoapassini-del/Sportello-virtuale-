@@ -62,7 +62,7 @@ export async function renderSources(root = '') {
   const el = document.getElementById('fonti');
   if (!el) return;
   try {
-    const names = ['rules', 'rules-invalidita', 'rules-cartella', 'rules-ausili', 'rules-esenzione', 'rules-ricorso'];
+    const names = ['rules', 'rules-invalidita', 'rules-cartella', 'rules-ausili', 'rules-esenzione', 'rules-ricorso', 'rules-adi', 'rules-permesso', 'rules-piano', 'rules-domiciliare', 'rules-palliative'];
     const all = await Promise.all(names.map((n) => loadJSON(`${root}data/${n}.json`)));
     el.innerHTML = sourcesBox(all.flatMap((r) => r.sources), { verified: all[0].last_verified });
   } catch { el.innerHTML = ''; }
@@ -194,6 +194,12 @@ export function phoneLink(number) {
 export function callButton(label, number) {
   return `<a class="btn choice call" href="tel:${esc(number.replace(/\s+/g, ''))}">
     <span class="ico" aria-hidden="true">📞</span><span class="txt">${esc(label)}<small>${esc(number)}</small></span></a>`;
+}
+
+// Indirizzo generale dell'ASP (URP o PEC del protocollo), per le richieste che NON sono
+// il percorso di tutela: alcune ASP hanno una casella dedicata solo alle liste d'attesa.
+export function generalContact(a) {
+  return a.emails.find((e) => /urp/i.test(e)) || a.pec || a.emails[0] || '';
 }
 
 export function mailLink(addr) {

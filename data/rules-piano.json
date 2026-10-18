@@ -1,0 +1,24 @@
+{
+  "name": "Regole per il piano terapeutico",
+  "last_verified": "2026-10-18",
+  "book_before_days": 60,
+  "typical_duration_months": [
+    6,
+    12
+  ],
+  "notes_internal": "TODO-VERIFY: durata massima per tipo di farmaco (note AIFA) e se in Sicilia esistono proroghe automatiche.",
+  "sources": [
+    {
+      "label": "AIFA – Note e piani terapeutici",
+      "url": "https://www.aifa.gov.it"
+    },
+    {
+      "label": "Ministero della Salute – Farmaci e prescrizione",
+      "url": "https://www.salute.gov.it"
+    },
+    {
+      "label": "Regione Siciliana – Assessorato della Salute",
+      "url": "https://www.regione.sicilia.it"
+    }
+  ]
+}

@@ -173,3 +173,25 @@ Allega: copia del documento di identità; copia della prescrizione e della richi
 ${signature(p, today)}
 `;
 }
+
+// Richiesta o sollecito generico a un ufficio (distretto, PUA, rete cure palliative).
+export function genericRequest({ to, address, subject, person: p, premise = [], request, attachments = [], today }) {
+  const att = [...attachments, ...(p.isDelegate ? ['delega e documento del delegato'] : [])];
+  return `Spett.le ${blank(to, '__________')}
+${address || ''}
+
+Oggetto: ${subject}
+
+${personBlock(p)}
+
+PREMESSO CHE
+${premise.map((l) => `- ${l};`).join('\n')}
+
+CHIEDE
+${request}
+${delegateBlock(p)}
+Allega: ${att.length ? att.join('; ') : 'copia del documento di identità'}.
+
+${signature(p, today)}
+`;
+}

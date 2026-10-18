@@ -1,0 +1,40 @@
+{
+  "name": "Regole per il rinnovo del permesso di soggiorno",
+  "last_verified": "2026-10-18",
+  "renew_before_days": 60,
+  "late_tolerance_days": 60,
+  "legal_basis": "art. 5, comma 4, D.Lgs. 286/1998: la domanda di rinnovo va presentata almeno 60 giorni prima della scadenza",
+  "cost_note": "circa 70–130 € in tutto (marca da bollo, spese postali e contributo che dipende dal tipo di permesso)",
+  "kit_types": [
+    "lavoro",
+    "famiglia",
+    "studio",
+    "attesa occupazione",
+    "lungo periodo (carta di soggiorno)"
+  ],
+  "questura_types": [
+    "asilo e protezione",
+    "cure mediche",
+    "minori",
+    "motivi umanitari e casi speciali"
+  ],
+  "notes_internal": "TODO-VERIFY: tipi di permesso che passano dal kit postale e quelli solo in Questura; costi aggiornati; tolleranza dei 60 giorni dopo la scadenza (prassi, non legge).",
+  "sources": [
+    {
+      "label": "D.Lgs. 286/1998, art. 5 (Testo unico immigrazione: rinnovo del permesso)",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1998-07-25;286"
+    },
+    {
+      "label": "Polizia di Stato – Permesso di soggiorno",
+      "url": "https://www.poliziadistato.it"
+    },
+    {
+      "label": "Portale Immigrazione – kit postale e stato della pratica",
+      "url": "https://www.portaleimmigrazione.it"
+    },
+    {
+      "label": "Ministero dell'Interno – Immigrazione",
+      "url": "https://www.interno.gov.it"
+    }
+  ]
+}

@@ -4,7 +4,7 @@
 import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween } from './engine.js';
 import { ausiliReminder, mailtoHref } from './letters.js';
 import {
-  esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton, personFields, reportErrorHref,
+  esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton, personFields, reportErrorHref, generalContact,
 } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
 
@@ -128,7 +128,7 @@ const screens = {
         <ol class="big-steps">
           <li class="say"><strong>Telefona o vai all'ufficio protesica</strong> con la ricevuta. Di' che i 20 giorni sono passati.</li>
           <li class="say"><strong>Manda una lettera di sollecito</strong> all'ASP. La scriviamo insieme.</li>
-          <li class="say"><strong>Se ancora niente:</strong> reclamo all'URP dell'ASP di ${esc(a.province)}${a.emails[0] || a.pec ? ` (${mailLink(a.emails[0] || a.pec)})` : ''},
+          <li class="say"><strong>Se ancora niente:</strong> reclamo all'URP dell'ASP di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''},
             un patronato, oppure Cittadinanzattiva (<a href="https://www.cittadinanzattiva.it" target="_blank" rel="noopener">cittadinanzattiva.it</a>).</li>
         </ol>
         ${a.phones.map((p) => callButton(p.label, p.number)).join('')}
@@ -148,7 +148,7 @@ const screens = {
         <ol class="big-steps">
           <li class="say"><strong>Chiama il fornitore</strong> scritto sull'autorizzazione e chiedi la data di consegna.</li>
           <li class="say"><strong>Chiama l'ufficio protesica dell'ASP</strong> e chiedi quanti giorni ha il fornitore per consegnare.</li>
-          <li class="say"><strong>Se il tempo è passato:</strong> reclamo scritto all'ASP (URP${a.emails[0] || a.pec ? `: ${mailLink(a.emails[0] || a.pec)}` : ''}). Un patronato può aiutarti.</li>
+          <li class="say"><strong>Se il tempo è passato:</strong> reclamo scritto all'ASP (URP${generalContact(a) ? `: ${mailLink(generalContact(a))}` : ''}). Un patronato può aiutarti.</li>
         </ol>
         <div class="notice info"><p class="say">Quando l'ausilio arriva, il medico deve controllarlo (collaudo) entro ${rules.collaudo_days} giorni. Se non va bene, può essere sostituito.</p></div>
         ${a.phones.map((p) => callButton(p.label, p.number)).join('')}

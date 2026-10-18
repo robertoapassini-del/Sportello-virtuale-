@@ -1,0 +1,33 @@
+{
+  "name": "Regole per l'assegno di inclusione (ADI)",
+  "last_verified": "2026-10-18",
+  "isee_max": 10140,
+  "income_max_base": 6500,
+  "income_max_elderly": 8190,
+  "residency_years": 5,
+  "residency_continuous_years": 2,
+  "duration_months": 18,
+  "renewal_months": 12,
+  "pause_months": 1,
+  "household_conditions": [
+    "un minorenne",
+    "una persona con almeno 60 anni",
+    "una persona con disabilità",
+    "una persona seguita dai servizi sociali o sanitari (con certificato)"
+  ],
+  "notes_internal": "TODO-VERIFY: soglie 2026 (ISEE, reddito × scala di equivalenza, patrimonio), durata e pausa. Valori del 2025.",
+  "sources": [
+    {
+      "label": "INPS – Assegno di inclusione: requisiti e domanda",
+      "url": "https://www.inps.it"
+    },
+    {
+      "label": "D.L. 48/2023, convertito dalla L. 85/2023 (istituisce l'assegno di inclusione)",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2023-05-04;48"
+    },
+    {
+      "label": "Ministero del Lavoro – Assegno di inclusione",
+      "url": "https://www.lavoro.gov.it"
+    }
+  ]
+}
