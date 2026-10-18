@@ -1,11 +1,13 @@
 // Pagina iniziale: scelta guidata. Prima 4 grandi riquadri, poi al massimo 4 scelte.
 // In più una casella «Scrivi una parola» per chi aiuta, e il pulsante Ascolta.
 import { esc, loadJSON, renderFooter, helpBox, listenButton, speakScreen, stopSpeaking, sourcesBox } from './common.js';
+import { createNav } from './flow.js';
 
 const app = document.getElementById('app');
 let reg;
 let rulesSources = [];
 let current = { screen: 'groups' };
+const nav = createNav({ first: 'groups', show: (screen) => { current = { screen }; render(); } });
 
 function card(href, icon, title, small) {
   return `<a class="btn choice" href="${esc(href)}"><span class="ico" aria-hidden="true">${icon}</span><span class="txt">${esc(title)}${small ? `<small>${esc(small)}</small>` : ''}</span></a>`;
@@ -69,8 +71,8 @@ app.addEventListener('click', (e) => {
   const listen = e.target.closest('button[data-action="listen"]');
   if (listen) return speakScreen(app);
   const g = e.target.closest('button[data-group]');
-  if (g) { current = { screen: g.dataset.group }; render(); return; }
-  if (e.target.closest('button[data-back]')) { current = { screen: 'groups' }; render(); }
+  if (g) { nav.go(g.dataset.group); return; }
+  if (e.target.closest('button[data-back]')) nav.back();
 });
 
 (async function init() {

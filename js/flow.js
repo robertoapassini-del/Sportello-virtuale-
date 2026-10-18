@@ -4,11 +4,68 @@ import { esc, helpBox, listenButton, speakScreen, stopSpeaking, sourcesBox, choi
 
 export { choice };
 
-export function createFlow({ app, screens, state, sources, first = 'intro' }) {
-  const history = [];
+// Schermate collegate alla cronologia del browser: il tasto Indietro del
+// telefono torna alla schermata precedente invece di uscire dal modulo.
+// L'indirizzo non cambia. Le voci di cronologia di una sessione precedente
+// (pagina ricaricata, «Ricomincia») riportano alla prima schermata.
+export function createNav({ first, show }) {
+  const newGen = () => `${Date.now()}-${Math.random()}`;
+  let gen = newGen();
+  let stack = [];
   let current = first;
 
-  function render() {
+  function draw() {
+    try { show(current); } catch (err) {
+      console.error(err);
+      stack = [];
+      current = first;
+      history.replaceState({ screen: first, stack, gen }, '');
+      show(first);
+    }
+  }
+  history.replaceState({ screen: first, stack, gen }, '');
+  window.addEventListener('popstate', (e) => {
+    const s = e.state;
+    if (!s || !s.screen) return;
+    if (s.gen === gen) {
+      current = s.screen;
+      stack = s.stack || [];
+    } else {
+      current = first;
+      stack = [];
+      history.replaceState({ screen: first, stack, gen }, '');
+    }
+    draw();
+  });
+
+  return {
+    get current() { return current; },
+    go(screen) {
+      stack = [...stack, current];
+      current = screen;
+      history.pushState({ screen, stack, gen }, '');
+      draw();
+    },
+    back() {
+      if (stack.length) history.back();
+      else { current = first; draw(); }
+    },
+    // `clear` svuota le risposte prima di tornare alla prima schermata.
+    restart(clear) {
+      if (clear) clear();
+      const n = stack.length;
+      gen = newGen();
+      if (n) history.go(-n);
+      else { current = first; history.replaceState({ screen: first, stack, gen }, ''); draw(); }
+    },
+    render: draw,
+  };
+}
+
+export function createFlow({ app, screens, state, sources, first = 'intro' }) {
+  const nav = createNav({ first, show: (current) => paint(current) });
+
+  function paint(current) {
     stopSpeaking();
     const s = screens[current]();
     const backBtn = current === first ? '' : '<button type="button" class="back" data-action="back">← Torna indietro</button>';
@@ -18,14 +75,10 @@ export function createFlow({ app, screens, state, sources, first = 'intro' }) {
     const h1 = app.querySelector('h1');
     if (h1) { h1.setAttribute('tabindex', '-1'); h1.focus({ preventScroll: true }); }
   }
-  function go(screen) { history.push(current); current = screen; render(); }
-  function back() { current = history.pop() || first; render(); }
-  function restart() {
-    for (const k of Object.keys(state)) delete state[k];
-    history.length = 0;
-    current = first;
-    render();
-  }
+  const render = nav.render;
+  const go = nav.go;
+  const back = nav.back;
+  const restart = () => nav.restart(() => { for (const k of Object.keys(state)) delete state[k]; });
 
   app.addEventListener('click', (e) => {
     const btn = e.target.closest('button[data-go], button[data-action]');

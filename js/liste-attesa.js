@@ -9,6 +9,7 @@ import { noPecBox,
   personFields, reportErrorHref, choice, helpBox, listenButton, speakScreen, stopSpeaking, sourcesBox, moreHelp,
 } from './common.js';
 import { RICETTA_SVG } from './ricetta-svg.js';
+import { createNav } from './flow.js';
 
 const ROOT = '../';
 const app = document.getElementById('app');
@@ -17,30 +18,16 @@ let rules;
 let data;
 const state = {};
 const person = {};
-const history = [];
-let current = 'intro';
 
 // ---------- navigazione ----------
 
-function go(screen) {
-  history.push(current);
-  current = screen;
-  render();
-}
+const nav = createNav({ first: 'intro', show: paint });
+const go = nav.go;
+const back = nav.back;
+const render = nav.render;
+const restart = () => nav.restart(() => { for (const k of Object.keys(state)) delete state[k]; });
 
-function back() {
-  current = history.pop() || 'intro';
-  render();
-}
-
-function restart() {
-  for (const k of Object.keys(state)) delete state[k];
-  history.length = 0;
-  current = 'intro';
-  render();
-}
-
-function render() {
+function paint(current) {
   stopSpeaking();
   const s = screens[current]();
   const backBtn = current === 'intro' ? '' : '<button type="button" class="back" data-action="back">← Torna indietro</button>';

@@ -8,6 +8,7 @@ import { noPecBox,
   esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton,
   personFields, reportErrorHref, choice, helpBox, listenButton, speakScreen, stopSpeaking, sourcesBox, moreHelp,
 } from './common.js';
+import { createNav } from './flow.js';
 
 const ROOT = '../';
 const app = document.getElementById('app');
@@ -16,19 +17,14 @@ let rules;
 let inps;
 const state = {};
 const person = {};
-const history = [];
-let current = 'intro';
 
-function go(screen) { history.push(current); current = screen; render(); }
-function back() { current = history.pop() || 'intro'; render(); }
-function restart() {
-  for (const k of Object.keys(state)) delete state[k];
-  history.length = 0;
-  current = 'intro';
-  render();
-}
+const nav = createNav({ first: 'intro', show: paint });
+const go = nav.go;
+const back = nav.back;
+const render = nav.render;
+const restart = () => nav.restart(() => { for (const k of Object.keys(state)) delete state[k]; });
 
-function render() {
+function paint(current) {
   stopSpeaking();
   const s = screens[current]();
   const backBtn = current === 'intro' ? '' : '<button type="button" class="back" data-action="back">← Torna indietro</button>';
