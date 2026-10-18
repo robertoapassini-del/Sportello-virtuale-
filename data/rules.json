@@ -23,5 +23,27 @@
   },
   "prescription_validity_days": 180,
   "reminder_after_days": 10,
-  "regional_plan_due": "2026-12-22"
+  "regional_plan_due": "2026-12-22",
+  "sources": [
+    {
+      "label": "Piano Nazionale di Governo delle Liste d'Attesa 2026-2028 (Ministero della Salute)",
+      "url": "https://www.salute.gov.it"
+    },
+    {
+      "label": "Gazzetta Ufficiale n. 195 del 24/08/2026, S.O. n. 32 (DM 26/06/2026)",
+      "url": "https://www.gazzettaufficiale.it"
+    },
+    {
+      "label": "D.Lgs. 124/1998, art. 3 (visita in intramoenia pagando solo il ticket)",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1998-04-29;124"
+    },
+    {
+      "label": "D.L. 73/2024, convertito dalla L. 107/2024 (liste d'attesa)",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2024-06-07;73"
+    },
+    {
+      "label": "SovraCUP Regione Siciliana (prenotazioni)",
+      "url": "https://sovracup.regione.sicilia.it"
+    }
+  ]
 }

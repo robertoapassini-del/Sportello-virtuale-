@@ -2,6 +2,13 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 18/10/2026 — fonti in ogni pagina
+- Riquadro «Da dove vengono queste informazioni» in fondo a ogni schermata, con i link alle leggi
+  (normattiva.it, Gazzetta Ufficiale, Ministero della Salute) e alle pagine ufficiali dell'ASP scelta o dell'INPS.
+- `data/rules.json`, `data/rules-invalidita.json`, `data/inps-sicilia.json`: nuovo campo `sources` con i link.
+- `data/asp-sicilia.json`: aggiunto il sito ufficiale per Trapani ed Enna (indirizzi da confermare).
+- Nota: i link non sono stati aperti dall'ambiente di sviluppo (rete bloccata): vanno provati a mano.
+
 ## 18/10/2026 — nuovo nome: Aiuto Sanità
 - Il sito si chiama ora «Aiuto Sanità» (prima «Diritto in Tempo»).
 - Frase «Siamo volontari: non siamo l'ASP né l'INPS» nella pagina iniziale, nel piè di pagina e in «Chi siamo».

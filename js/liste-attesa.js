@@ -6,7 +6,7 @@ import { checkWaiting, callbackDeadline, maxWaitDays, todayISO, formatIt, parseD
 import { tutelaLetter, tutelaReminder, mailtoHref } from './letters.js';
 import {
   esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton,
-  personFields, reportErrorHref, choice, helpBox, listenButton, speakScreen, stopSpeaking,
+  personFields, reportErrorHref, choice, helpBox, listenButton, speakScreen, stopSpeaking, sourcesBox,
 } from './common.js';
 import { RICETTA_SVG } from './ricetta-svg.js';
 
@@ -44,7 +44,7 @@ function render() {
   stopSpeaking();
   const s = screens[current]();
   const backBtn = current === 'intro' ? '' : '<button type="button" class="back" data-action="back">← Torna indietro</button>';
-  app.innerHTML = `<div class="topbar">${backBtn}${listenButton()}</div>${s.html}${helpBox()}`;
+  app.innerHTML = `<div class="topbar">${backBtn}${listenButton()}</div>${s.html}${helpBox()}${screenSources()}`;
   if (s.mount) s.mount();
   window.scrollTo(0, 0);
   const h1 = app.querySelector('h1');
@@ -62,6 +62,20 @@ app.addEventListener('click', (e) => {
 });
 
 // ---------- aiuti ----------
+
+// Fonti della schermata: le leggi + le pagine ufficiali dell'ASP scelta.
+function screenSources() {
+  const a = state.province ? asp() : null;
+  const items = [];
+  if (a) {
+    if (a.info_url) items.push({ label: `${a.name} – pagina sul percorso di tutela`, url: a.info_url });
+    if (a.form_url && a.form_url !== a.info_url) items.push({ label: `${a.name} – modulo ufficiale`, url: a.form_url });
+    if (a.portal_url && a.portal_url !== a.info_url) items.push({ label: `${a.name} – portale per la richiesta`, url: a.portal_url });
+    items.push(...a.sources);
+  }
+  items.push(...rules.sources);
+  return sourcesBox(items, { verified: a ? a.last_verified : rules.last_verified });
+}
 
 const asp = () => data.asl.find((a) => a.id === state.province);
 const limit = () => maxWaitDays(rules, state.cls, state.kind);

@@ -114,6 +114,9 @@ async function runCase(page, c) {
     const m = text.match(BAD_TEXT);
     if (m) problems.push(`${label}: testo sospetto «${m[0]}»`);
     if (await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1)) problems.push(`${label}: la pagina esce dallo schermo`);
+    // Riquadro «Fonti» con almeno un link ufficiale.
+    const nLinks = await page.locator('details.fonti a[href^="http"]').count();
+    if (!nLinks) problems.push(`${label}: manca il riquadro Fonti con i link`);
     // «Ascolta»: la voce deve leggere qualcosa, senza emoji.
     window_speech: {
       await page.evaluate(() => { window.__spoken = []; });

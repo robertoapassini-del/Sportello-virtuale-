@@ -170,3 +170,13 @@ test('la voce non legge le emoji', () => {
   assert.equal(stripEmoji('Lettera U: entro 3 giorni, 72 ore. Numero 800 954414 #1'), 'Lettera U: entro 3 giorni, 72 ore. Numero 800 954414 #1');
   assert.equal(stripEmoji('Perché è già così?'), 'Perché è già così?');
 });
+
+test('ogni fonte ha un nome e un link https', () => {
+  const all = [...rules.sources, ...rulesInv.sources, ...inps.sources, ...asp.asl.flatMap((a) => a.sources)];
+  assert.ok(rules.sources.length >= 3 && rulesInv.sources.length >= 3);
+  for (const s of all) {
+    assert.ok(s.label && s.label.length > 5, JSON.stringify(s));
+    if (s.url) assert.match(s.url, /^https:\/\//, s.label);
+  }
+  for (const a of asp.asl) assert.ok(a.sources.some((s) => s.url) || a.info_url, `${a.id}: nessun link ufficiale`);
+});

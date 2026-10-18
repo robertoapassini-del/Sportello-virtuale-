@@ -6,7 +6,7 @@ import { invRegime, invDeadline, todayISO, formatIt, parseDate, daysBetween } fr
 import { inpsReminder, mailtoHref } from './letters.js';
 import {
   esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton,
-  personFields, reportErrorHref, choice, helpBox, listenButton, speakScreen, stopSpeaking,
+  personFields, reportErrorHref, choice, helpBox, listenButton, speakScreen, stopSpeaking, sourcesBox,
 } from './common.js';
 
 const ROOT = '../';
@@ -32,7 +32,7 @@ function render() {
   stopSpeaking();
   const s = screens[current]();
   const backBtn = current === 'intro' ? '' : '<button type="button" class="back" data-action="back">← Torna indietro</button>';
-  app.innerHTML = `<div class="topbar">${backBtn}${listenButton()}</div>${s.html}${helpBox()}`;
+  app.innerHTML = `<div class="topbar">${backBtn}${listenButton()}</div>${s.html}${helpBox()}${screenSources()}`;
   if (s.mount) s.mount();
   window.scrollTo(0, 0);
   const h1 = app.querySelector('h1');
@@ -50,6 +50,15 @@ app.addEventListener('click', (e) => {
 });
 
 const prov = () => inps.provinces.find((p) => p.id === state.province);
+
+// Fonti della schermata: le leggi + le pagine ufficiali su INPS e province.
+function screenSources() {
+  const items = [...rules.sources, ...inps.sources];
+  return sourcesBox(items, {
+    verified: rules.last_verified,
+    note: state.province ? 'Gli indirizzi PEC dell\'INPS sono ancora da confermare con l\'ufficio.' : '',
+  });
+}
 const regime = () => invRegime(prov(), state.certDate, rules.full_national_application);
 const deadline = () => invDeadline(rules, {
   regime: regime(), category: state.category, certDate: state.certDate, domandaDate: state.domandaDate, today: todayISO(),

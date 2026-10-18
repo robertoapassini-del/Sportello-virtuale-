@@ -41,6 +41,32 @@ export function helpBox() {
   </details>`;
 }
 
+// Riquadro «Fonti»: le pagine ufficiali da cui vengono le informazioni della schermata.
+// items: [{ label, url }] — se url manca, il nome resta come testo.
+export function sourcesBox(items, { verified, note } = {}) {
+  const seen = new Set();
+  const list = items.filter((s) => s && s.label && !seen.has(s.url || s.label) && seen.add(s.url || s.label));
+  if (!list.length) return '';
+  return `<details class="fonti no-say">
+    <summary><span class="ico" aria-hidden="true">📚</span> Da dove vengono queste informazioni</summary>
+    <ul class="clean">${list.map((s) => `<li>${s.url
+      ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>`
+      : esc(s.label)}</li>`).join('')}</ul>
+    ${verified ? `<p class="muted">Controllate il ${esc(formatIt(verified))}.${note ? ` ${esc(note)}` : ''}</p>` : ''}
+    <p class="muted">I link aprono i siti ufficiali in una nuova scheda.</p>
+  </details>`;
+}
+
+// Pagine fisse: carica le regole e mostra il riquadro Fonti dentro #fonti.
+export async function renderSources(root = '') {
+  const el = document.getElementById('fonti');
+  if (!el) return;
+  try {
+    const [r1, r2] = await Promise.all([loadJSON(`${root}data/rules.json`), loadJSON(`${root}data/rules-invalidita.json`)]);
+    el.innerHTML = sourcesBox([...r1.sources, ...r2.sources], { verified: r1.last_verified });
+  } catch { el.innerHTML = ''; }
+}
+
 // root: percorso relativo verso la cartella principale ('' oppure '../').
 export function renderFooter(root = '') {
   const el = document.getElementById('site-footer');

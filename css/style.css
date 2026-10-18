@@ -225,3 +225,6 @@ details.help .ico { font-size: 1.5rem; }
 p.notice { margin: 12px 0; }
 .back, .listen { white-space: nowrap; }
 main { overflow-wrap: anywhere; }
+details.fonti { margin: 12px 0 8px; padding: 10px 16px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border); font-size: 0.9rem; }
+details.fonti ul { margin: 8px 0; }
+details.fonti li { margin: 8px 0; }

@@ -3,7 +3,11 @@
   "last_verified": "2026-10-18",
   "new_regime": {
     "legal_basis": "art. 6 D.Lgs. 62/2024",
-    "deadline_days": { "oncological": 15, "minor": 30, "other": 90 },
+    "deadline_days": {
+      "oncological": 15,
+      "minor": 30,
+      "other": 90
+    },
     "extra_documents_days_before_visit": 7
   },
   "old_regime": {
@@ -18,5 +22,31 @@
     "contact_center_fixed": "803 164",
     "contact_center_mobile": "06 164164",
     "inps_risponde_url": "https://www.inps.it/it/it/contatti.html"
-  }
+  },
+  "sources": [
+    {
+      "label": "D.Lgs. 62/2024, art. 6 (tempi 90/30/15 giorni)",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-05-03;62"
+    },
+    {
+      "label": "Riforma disabilità – Valutazione di base (riformadisabilita.gov.it)",
+      "url": "https://www.riformadisabilita.gov.it"
+    },
+    {
+      "label": "Province della sperimentazione (disabilita.governo.it)",
+      "url": "https://disabilita.governo.it"
+    },
+    {
+      "label": "L. 80/2006, art. 6 (malati oncologici: visita entro 15 giorni)",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2006-03-09;80"
+    },
+    {
+      "label": "L. 114/2014 (benefici fino alla visita di revisione)",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-08-11;114"
+    },
+    {
+      "label": "INPS – Invalidità civile e contatti",
+      "url": "https://www.inps.it"
+    }
+  ]
 }

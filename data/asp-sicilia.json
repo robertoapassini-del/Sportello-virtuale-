@@ -18,28 +18,72 @@
       "channel": "email",
       "letter_mode": "official_form",
       "send_to": "percorsoditutela@asppalermo.org",
-      "emails": ["percorsoditutela@asppalermo.org"],
+      "emails": [
+        "percorsoditutela@asppalermo.org"
+      ],
       "pec": "protocollo.pec@asppa.it",
       "form_url": "https://www.asppalermo.org/wp-content/uploads/2026/08/Modulo-Richiesta-Accesso-al-Percorso-di-Tutela-revisionato-1.pdf",
       "info_url": "https://www.asppalermo.org/novita/percorso-di-tutela-lasp-di-palermo-garantisce-tempi-certi-per-le-prestazioni-specialistiche/",
       "portal_url": null,
-      "phones": [{ "label": "Centralino ASP", "number": "091 7031111" }],
+      "phones": [
+        {
+          "label": "Centralino ASP",
+          "number": "091 7031111"
+        }
+      ],
       "fast_track": null,
       "how_to": "Compila il modulo dell'ASP. Poi mandalo per email a percorsoditutela@asppalermo.org.",
       "form_fields": [
-        { "label": "Cognome e Nome", "source": "fullName" },
-        { "label": "Codice Fiscale", "source": "cf" },
-        { "label": "Indirizzo", "source": "address" },
-        { "label": "Telefono", "source": "phone" },
-        { "label": "Email", "source": "email" },
-        { "label": "PEC", "source": "pec" },
-        { "label": "Carta d'Identità (n°, data, rilasciata da)", "source": "idDoc" },
-        { "label": "Prestazione e numero prescrizione", "source": "serviceAndNre" },
-        { "label": "Motivazione", "fixed": "Impossibilità di accesso nei tempi previsti dal SSN" },
-        { "label": "Data", "source": "today" },
-        { "label": "Firma", "fixed": "Firma con la penna" }
+        {
+          "label": "Cognome e Nome",
+          "source": "fullName"
+        },
+        {
+          "label": "Codice Fiscale",
+          "source": "cf"
+        },
+        {
+          "label": "Indirizzo",
+          "source": "address"
+        },
+        {
+          "label": "Telefono",
+          "source": "phone"
+        },
+        {
+          "label": "Email",
+          "source": "email"
+        },
+        {
+          "label": "PEC",
+          "source": "pec"
+        },
+        {
+          "label": "Carta d'Identità (n°, data, rilasciata da)",
+          "source": "idDoc"
+        },
+        {
+          "label": "Prestazione e numero prescrizione",
+          "source": "serviceAndNre"
+        },
+        {
+          "label": "Motivazione",
+          "fixed": "Impossibilità di accesso nei tempi previsti dal SSN"
+        },
+        {
+          "label": "Data",
+          "source": "today"
+        },
+        {
+          "label": "Firma",
+          "fixed": "Firma con la penna"
+        }
       ],
-      "documents_required": ["Documento d'identità (fotocopia o foto)", "Ricetta", "Foglio della prenotazione"],
+      "documents_required": [
+        "Documento d'identità (fotocopia o foto)",
+        "Ricetta",
+        "Foglio della prenotazione"
+      ],
       "what_next": [
         "L'ASP ti telefona entro 2 giorni.",
         "Ti trova un posto in un ospedale o ambulatorio della provincia."
@@ -52,7 +96,10 @@
       ],
       "todo": [],
       "sources": [
-        { "label": "ASP Palermo – Percorso di tutela (agg. 19/08/2026)", "url": "https://www.asppalermo.org/novita/percorso-di-tutela-lasp-di-palermo-garantisce-tempi-certi-per-le-prestazioni-specialistiche/" }
+        {
+          "label": "ASP Palermo – Percorso di tutela (agg. 19/08/2026)",
+          "url": "https://www.asppalermo.org/novita/percorso-di-tutela-lasp-di-palermo-garantisce-tempi-certi-per-le-prestazioni-specialistiche/"
+        }
       ],
       "last_verified": "2026-10-18",
       "status": "verified"
@@ -73,17 +120,30 @@
       "fast_track": null,
       "how_to": "Fai la richiesta sul sito dell'ASP, con SPID o carta d'identità elettronica. Se non sai usarlo, vai all'ufficio URP dell'ASP: c'è ancora il modulo di carta.",
       "form_fields": [],
-      "documents_required": ["Ricetta", "Foglio della prenotazione"],
+      "documents_required": [
+        "Ricetta",
+        "Foglio della prenotazione"
+      ],
       "what_next": [
         "Il sito ti dà subito una ricevuta.",
         "Paghi al massimo il ticket."
       ],
       "notes": [],
-      "details": ["Il servizio online è attivo dal 10 agosto 2026."],
-      "todo": ["Indirizzo diretto del portale."],
+      "details": [
+        "Il servizio online è attivo dal 10 agosto 2026."
+      ],
+      "todo": [
+        "Indirizzo diretto del portale."
+      ],
       "sources": [
-        { "label": "ASP Ragusa – Liste d'attesa", "url": "https://www.asp.rg.it/liste-attesa" },
-        { "label": "Quotidiano di Ragusa, 07/08/2026", "url": null }
+        {
+          "label": "ASP Ragusa – Liste d'attesa",
+          "url": "https://www.asp.rg.it/liste-attesa"
+        },
+        {
+          "label": "Quotidiano di Ragusa, 07/08/2026",
+          "url": null
+        }
       ],
       "last_verified": "2026-10-18",
       "status": "partial"
@@ -95,23 +155,51 @@
       "channel": "email",
       "letter_mode": "official_form",
       "send_to": "percorso.tutela@asp.cl.it",
-      "emails": ["percorso.tutela@asp.cl.it"],
+      "emails": [
+        "percorso.tutela@asp.cl.it"
+      ],
       "pec": "protocollo.asp.cl@pec.asp.cl.it",
       "form_url": "https://www.asp.cl.it/servizi/moduli/moduli_fase02.aspx?ID=78346",
       "info_url": "https://www.asp.cl.it/servizi/Menu/dinamica.aspx?idSezione=18109&idArea=84323&idCat=84329&ID=84329&TipoElemento=categoria",
       "portal_url": null,
-      "phones": [{ "label": "CUP", "number": "0934 506506" }],
+      "phones": [
+        {
+          "label": "CUP",
+          "number": "0934 506506"
+        }
+      ],
       "fast_track": null,
       "how_to": "Compila il modulo dell'ASP (si chiama MOD-01). Poi mandalo per email a percorso.tutela@asp.cl.it.",
       "form_fields": [
-        { "label": "Nome e cognome", "source": "fullName" },
-        { "label": "Codice fiscale", "source": "cf" },
-        { "label": "Email", "source": "email" },
-        { "label": "Telefono", "source": "phone" },
-        { "label": "Prestazione e numero ricetta", "source": "serviceAndNre" },
-        { "label": "Data", "source": "today" }
+        {
+          "label": "Nome e cognome",
+          "source": "fullName"
+        },
+        {
+          "label": "Codice fiscale",
+          "source": "cf"
+        },
+        {
+          "label": "Email",
+          "source": "email"
+        },
+        {
+          "label": "Telefono",
+          "source": "phone"
+        },
+        {
+          "label": "Prestazione e numero ricetta",
+          "source": "serviceAndNre"
+        },
+        {
+          "label": "Data",
+          "source": "today"
+        }
       ],
-      "documents_required": ["Ricetta", "Foglio della prenotazione"],
+      "documents_required": [
+        "Ricetta",
+        "Foglio della prenotazione"
+      ],
       "what_next": [
         "L'ASP ti risponde per email.",
         "A volte l'ASP ti autorizza ad andare da un privato e ti dice quanti soldi ti restituisce. Vai solo dopo l'autorizzazione scritta."
@@ -121,9 +209,14 @@
         "Il vecchio indirizzo areacomunicazione@asp.cl.it non vale più.",
         "Per avere i soldi indietro si usa il modulo MOD-02, da mandare a gestione.liste@asp.cl.it."
       ],
-      "todo": ["Campi esatti del modulo MOD-01."],
+      "todo": [
+        "Campi esatti del modulo MOD-01."
+      ],
       "sources": [
-        { "label": "ASP Caltanissetta – Ambiti di garanzia e percorso di tutela (Regolamento agg. 15/09/2025)", "url": "https://www.asp.cl.it/servizi/Menu/dinamica.aspx?idSezione=18109&idArea=84323&idCat=84329&ID=84329&TipoElemento=categoria" }
+        {
+          "label": "ASP Caltanissetta – Ambiti di garanzia e percorso di tutela (Regolamento agg. 15/09/2025)",
+          "url": "https://www.asp.cl.it/servizi/Menu/dinamica.aspx?idSezione=18109&idArea=84323&idCat=84329&ID=84329&TipoElemento=categoria"
+        }
       ],
       "last_verified": "2026-10-18",
       "status": "partial"
@@ -149,17 +242,30 @@
         "Patti – Sant'Agata di Militello – Mistretta"
       ],
       "form_fields": [],
-      "documents_required": ["Documento d'identità (fotocopia o foto)", "Ricetta", "Foglio della prenotazione"],
-      "what_next": ["L'ASP ti cerca un posto nella tua zona."],
-      "notes": ["Se non hai la PEC, è meglio andare di persona all'URP."],
-      "details": ["Vale solo se hai preso la prima data offerta (dal call center, dall'app o in farmacia)."],
+      "documents_required": [
+        "Documento d'identità (fotocopia o foto)",
+        "Ricetta",
+        "Foglio della prenotazione"
+      ],
+      "what_next": [
+        "L'ASP ti cerca un posto nella tua zona."
+      ],
+      "notes": [
+        "Se non hai la PEC, è meglio andare di persona all'URP."
+      ],
+      "details": [
+        "Vale solo se hai preso la prima data offerta (dal call center, dall'app o in farmacia)."
+      ],
       "todo": [
         "Indirizzo e orari dell'URP di Messina città.",
         "Elenco completo dei documenti.",
         "Se un'email normale verso la PEC è accettata."
       ],
       "sources": [
-        { "label": "ASP Messina – Liste di attesa, Percorso di tutela", "url": "https://www.asp.messina.it/?page_id=397594" }
+        {
+          "label": "ASP Messina – Liste di attesa, Percorso di tutela",
+          "url": "https://www.asp.messina.it/?page_id=397594"
+        }
       ],
       "last_verified": "2026-10-18",
       "status": "partial"
@@ -171,28 +277,49 @@
       "channel": "email",
       "letter_mode": "letter",
       "send_to": "urp.siracusa@asp.sr.it",
-      "emails": ["urp.siracusa@asp.sr.it", "percorsoditutela@asp.sr.it"],
+      "emails": [
+        "urp.siracusa@asp.sr.it",
+        "percorsoditutela@asp.sr.it"
+      ],
       "pec": "urp.siracusa@pec.asp.sr.it",
       "form_url": null,
       "info_url": "https://www.asp.sr.it/Servizi-e-prestazioni/Percorso-di-tutela",
       "portal_url": null,
       "phones": [
-        { "label": "URP (premi il tasto 3)", "number": "0931 312525" },
-        { "label": "CUP", "number": "0931 484848" }
+        {
+          "label": "URP (premi il tasto 3)",
+          "number": "0931 312525"
+        },
+        {
+          "label": "CUP",
+          "number": "0931 484848"
+        }
       ],
       "fast_track": null,
       "how_to": "Firma la lettera e mandala per email a urp.siracusa@asp.sr.it. Oppure portala di persona all'ufficio URP.",
       "form_fields": [],
-      "documents_required": ["Lettera firmata", "Documento d'identità (fotocopia o foto)", "Ricetta", "Foglio della prenotazione"],
+      "documents_required": [
+        "Lettera firmata",
+        "Documento d'identità (fotocopia o foto)",
+        "Ricetta",
+        "Foglio della prenotazione"
+      ],
       "what_next": [
         "L'ASP ti cerca un posto in tempo.",
         "Vai da un privato solo se l'ASP te lo scrive (o se non ti risponde in tempo)."
       ],
       "notes": [],
-      "details": ["Per domande e rimborsi c'è anche l'email percorsoditutela@asp.sr.it."],
-      "todo": ["Il regolamento 2024 cita un modulo online con SPID: verificare se è attivo."],
+      "details": [
+        "Per domande e rimborsi c'è anche l'email percorsoditutela@asp.sr.it."
+      ],
+      "todo": [
+        "Il regolamento 2024 cita un modulo online con SPID: verificare se è attivo."
+      ],
       "sources": [
-        { "label": "ASP Siracusa – Percorso di tutela", "url": "https://www.asp.sr.it/Servizi-e-prestazioni/Percorso-di-tutela" }
+        {
+          "label": "ASP Siracusa – Percorso di tutela",
+          "url": "https://www.asp.sr.it/Servizi-e-prestazioni/Percorso-di-tutela"
+        }
       ],
       "last_verified": "2026-10-18",
       "status": "partial"
@@ -204,24 +331,41 @@
       "channel": "urp",
       "letter_mode": "letter",
       "send_to": "urp@aspag.it",
-      "emails": ["urp@aspag.it"],
+      "emails": [
+        "urp@aspag.it"
+      ],
       "pec": "protocollo@pec.aspag.it",
       "form_url": "https://www.aspag.it/urp-nel-territorio-ufficio-relazioni-con-il-pubblico/",
       "info_url": "https://www.aspag.it/urp-nel-territorio-ufficio-relazioni-con-il-pubblico/",
       "portal_url": null,
       "phones": [
-        { "label": "Centralino ASP", "number": "0922 407111" },
-        { "label": "Per disdire una prenotazione", "number": "0922 407699" }
+        {
+          "label": "Centralino ASP",
+          "number": "0922 407111"
+        },
+        {
+          "label": "Per disdire una prenotazione",
+          "number": "0922 407699"
+        }
       ],
       "fast_track": {
         "by_class": {
-          "B": { "text": "Chiedi al CUP la «corsia veloce» (si chiama fast track) per la classe B.", "phone": null }
+          "B": {
+            "text": "Chiedi al CUP la «corsia veloce» (si chiama fast track) per la classe B.",
+            "phone": null
+          }
         }
       },
       "how_to": "Firma la lettera e mandala per email a urp@aspag.it. Oppure portala di persona all'ufficio URP.",
       "form_fields": [],
-      "documents_required": ["Documento d'identità (fotocopia o foto)", "Ricetta", "Foglio della prenotazione"],
-      "what_next": ["L'ASP ti cerca un posto in tempo."],
+      "documents_required": [
+        "Documento d'identità (fotocopia o foto)",
+        "Ricetta",
+        "Foglio della prenotazione"
+      ],
+      "what_next": [
+        "L'ASP ti cerca un posto in tempo."
+      ],
       "notes": [],
       "details": [
         "L'ASP ha anche un suo modulo, sulla pagina dell'URP.",
@@ -229,7 +373,10 @@
       ],
       "todo": [],
       "sources": [
-        { "label": "ASP Agrigento – URP (Delibera n. 426 del 10/09/2024)", "url": "https://www.aspag.it/urp-nel-territorio-ufficio-relazioni-con-il-pubblico/" }
+        {
+          "label": "ASP Agrigento – URP (Delibera n. 426 del 10/09/2024)",
+          "url": "https://www.aspag.it/urp-nel-territorio-ufficio-relazioni-con-il-pubblico/"
+        }
       ],
       "last_verified": "2026-10-18",
       "status": "partial"
@@ -246,25 +393,45 @@
       "form_url": null,
       "info_url": "https://www.aspct.it/azienda/direzione-generale/u-o-c-coordinamento-dello-staff/urp-e-comunicazione/percorsotutela/",
       "portal_url": null,
-      "phones": [{ "label": "CUP numero verde (premi il tasto 2)", "number": "800 954414" }],
+      "phones": [
+        {
+          "label": "CUP numero verde (premi il tasto 2)",
+          "number": "800 954414"
+        }
+      ],
       "fast_track": {
         "by_class": {
-          "U": { "text": "Con la classe U puoi andare direttamente negli ambulatori dell'ASP.", "phone": null },
-          "B": { "text": "Con la classe B chiama il numero verde 800 954414 e premi il tasto 2. Un operatore ti trova un posto in tempo.", "phone": "800 954414" }
+          "U": {
+            "text": "Con la classe U puoi andare direttamente negli ambulatori dell'ASP.",
+            "phone": null
+          },
+          "B": {
+            "text": "Con la classe B chiama il numero verde 800 954414 e premi il tasto 2. Un operatore ti trova un posto in tempo.",
+            "phone": "800 954414"
+          }
         }
       },
       "how_to": "Chiama l'ASP e chiedi di attivare il «percorso di tutela». Puoi anche mandare la lettera con la PEC a protocollo@pec.aspct.it.",
       "form_fields": [],
-      "documents_required": ["Documento d'identità (fotocopia o foto)", "Ricetta", "Foglio della prenotazione"],
+      "documents_required": [
+        "Documento d'identità (fotocopia o foto)",
+        "Ricetta",
+        "Foglio della prenotazione"
+      ],
       "what_next": [],
       "notes": [],
-      "details": ["Regole dell'ASP: Delibera n. 1650 del 31/10/2024, aggiornata con Delibera n. 77 del 22/01/2025."],
+      "details": [
+        "Regole dell'ASP: Delibera n. 1650 del 31/10/2024, aggiornata con Delibera n. 77 del 22/01/2025."
+      ],
       "todo": [
         "Canale per le classi D e P (chiamare l'URP). L'app ASPConTe non è confermata per il percorso di tutela.",
         "URP 800 279761 / urp@aspct.it (trovati su un sito non ufficiale)."
       ],
       "sources": [
-        { "label": "ASP Catania – Percorso di Tutela", "url": "https://www.aspct.it/azienda/direzione-generale/u-o-c-coordinamento-dello-staff/urp-e-comunicazione/percorsotutela/" }
+        {
+          "label": "ASP Catania – Percorso di Tutela",
+          "url": "https://www.aspct.it/azienda/direzione-generale/u-o-c-coordinamento-dello-staff/urp-e-comunicazione/percorsotutela/"
+        }
       ],
       "last_verified": "2026-10-18",
       "status": "partial"
@@ -284,19 +451,42 @@
       "phones": [],
       "fast_track": {
         "by_class": {
-          "U": { "text": "Vai allo sportello «Fast Track» del CUP. C'è in ogni CUP.", "phone": null },
-          "B": { "text": "Vai allo sportello «Fast Track» del CUP. C'è in ogni CUP.", "phone": null }
+          "U": {
+            "text": "Vai allo sportello «Fast Track» del CUP. C'è in ogni CUP.",
+            "phone": null
+          },
+          "B": {
+            "text": "Vai allo sportello «Fast Track» del CUP. C'è in ogni CUP.",
+            "phone": null
+          }
         }
       },
       "how_to": "Vai al CUP o all'ufficio URP dell'ASP. Chiedi di attivare le «prestazioni garantite» (è il percorso di tutela).",
       "form_fields": [],
-      "documents_required": ["Documento d'identità (fotocopia o foto)", "Ricetta", "Foglio della prenotazione"],
-      "what_next": ["L'ASP deve farti fare la visita in un altro centro o in ospedale, a sue spese."],
+      "documents_required": [
+        "Documento d'identità (fotocopia o foto)",
+        "Ricetta",
+        "Foglio della prenotazione"
+      ],
+      "what_next": [
+        "L'ASP deve farti fare la visita in un altro centro o in ospedale, a sue spese."
+      ],
       "notes": [],
       "details": [],
-      "todo": ["Canale per le classi D e P (chiamare URP/CUP).", "PEC generale da IndicePA."],
+      "todo": [
+        "Canale per le classi D e P (chiamare URP/CUP).",
+        "PEC generale da IndicePA.",
+        "Confermare l'indirizzo del sito ufficiale e trovare la pagina sul percorso di tutela."
+      ],
       "sources": [
-        { "label": "LiveSicilia (Fast Track); Trapanisi.it, luglio 2026 (Prestazioni garantite)", "url": null }
+        {
+          "label": "Sito ufficiale ASP Trapani",
+          "url": "https://www.asptrapani.it"
+        },
+        {
+          "label": "LiveSicilia (Fast Track); Trapanisi.it, luglio 2026 (Prestazioni garantite)",
+          "url": null
+        }
       ],
       "last_verified": "2026-10-18",
       "status": "todo"
@@ -314,19 +504,44 @@
       "info_url": null,
       "portal_url": null,
       "phones": [
-        { "label": "CUP", "number": "0935 520810" },
-        { "label": "CUP numero verde", "number": "800 679977" }
+        {
+          "label": "CUP",
+          "number": "0935 520810"
+        },
+        {
+          "label": "CUP numero verde",
+          "number": "800 679977"
+        }
       ],
       "fast_track": null,
       "how_to": "Chiama il CUP o vai all'ufficio URP dell'ASP. Chiedi di attivare il «percorso di tutela».",
       "form_fields": [],
-      "documents_required": ["Documento d'identità (fotocopia o foto)", "Ricetta", "Foglio della prenotazione"],
+      "documents_required": [
+        "Documento d'identità (fotocopia o foto)",
+        "Ricetta",
+        "Foglio della prenotazione"
+      ],
       "what_next": [],
-      "notes": ["Attenzione ai messaggi falsi che dicono di essere il «CUP». Usa solo i numeri scritti qui."],
-      "details": ["Il CUP ha anche un numero WhatsApp ufficiale: 331 2661877."],
-      "todo": ["Canale (chiamare l'URP).", "PEC generale da IndicePA."],
+      "notes": [
+        "Attenzione ai messaggi falsi che dicono di essere il «CUP». Usa solo i numeri scritti qui."
+      ],
+      "details": [
+        "Il CUP ha anche un numero WhatsApp ufficiale: 331 2661877."
+      ],
+      "todo": [
+        "Canale (chiamare l'URP).",
+        "PEC generale da IndicePA.",
+        "Confermare l'indirizzo del sito ufficiale e trovare la pagina sul percorso di tutela."
+      ],
       "sources": [
-        { "label": "La Sicilia, 12/10/2026 (contatti CUP); PAA 2024-2026", "url": null }
+        {
+          "label": "Sito ufficiale ASP Enna",
+          "url": "https://www.aspenna.it"
+        },
+        {
+          "label": "La Sicilia, 12/10/2026 (contatti CUP); PAA 2024-2026",
+          "url": null
+        }
       ],
       "last_verified": "2026-10-18",
       "status": "todo"

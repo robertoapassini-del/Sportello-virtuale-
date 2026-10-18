@@ -15,13 +15,7 @@
 <h1>Da dove prendiamo le informazioni</h1>
 <p>Copiamo a mano le informazioni dai siti ufficiali delle ASP e dell'INPS. Per ogni ASP scriviamo il giorno in cui le abbiamo controllate. Le ricontrolliamo almeno ogni 3 mesi.</p>
 <h2>Le leggi</h2>
-<ul class="clean">
-<li>Piano Nazionale di Governo delle Liste d'Attesa (PNGLA) 2026-2028 – DM 26/06/2026, GU n. 195 del 24/08/2026, S.O. n. 32.</li>
-<li>D.L. 73/2024, convertito dalla L. 107/2024 (liste d'attesa).</li>
-<li>D.Lgs. 124/1998, art. 3, commi 10 e 13.</li>
-<li>Regione Siciliana, D.A. n. 212 del 28/02/2024.</li>
-<li>D.Lgs. 62/2024 (riforma della disabilità); L. 80/2006 (malati di tumore); L. 114/2014.</li>
-</ul>
+<ul class="clean" id="laws-list"><li>Un momento…</li></ul>
 <h2>ASP e INPS</h2>
 <div id="sources-list"><p>Un momento…</p></div>
 <p class="muted">Hai trovato un errore? <a href="mailto:info@aiutosanita.it?subject=Segnala%20un%20errore">Scrivici</a>.</p>
@@ -35,6 +29,7 @@ renderFooter("");
 const [asp, inps, rules, rinv] = await Promise.all(["asp-sicilia", "inps-sicilia", "rules", "rules-invalidita"].map((n) => loadJSON(`data/${n}.json`)));
 const st = { verified: "Controllato", partial: "Controllato in parte", todo: "Da controllare" };
 const link = (s) => s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>` : esc(s.label);
+document.getElementById("laws-list").innerHTML = [...rules.sources, ...rinv.sources].map((s) => `<li>${link(s)}</li>`).join("");
 document.getElementById("sources-list").innerHTML = `
   <table class="fields"><thead><tr><th>ASP</th><th>Stato</th></tr></thead><tbody>
   ${asp.asl.map((a) => `<tr><td><strong>${esc(a.name)}</strong><br>${a.sources.map(link).join("<br>")}</td>
@@ -42,7 +37,8 @@ document.getElementById("sources-list").innerHTML = `
   </tbody></table>
   <h3>INPS Sicilia (invalidità civile)</h3>
   <p>Gli indirizzi PEC dell'INPS sono ancora da controllare uno per uno.</p>
-  <p>${inps.sources.map(link).join(" · ")} – controllato il ${formatIt(inps.last_verified)}</p>
+  <ul class="clean">${inps.sources.map((s) => `<li>${link(s)}</li>`).join("")}</ul>
+  <p>Controllato il ${formatIt(inps.last_verified)}.</p>
   <h3>Regole</h3>
   <p>Tempi massimi: ${esc(rules.source)} – controllato il ${formatIt(rules.last_verified)}.<br>
   Invalidità civile: ${esc(rinv.new_regime.legal_basis)} – controllato il ${formatIt(rinv.last_verified)}.</p>`;
