@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 18/10/2026 — link corretti dopo prova dal telefono
+- ASP Enna: www.aspenna.it non si apre → sostituito con www.asp.enna.it (da confermare).
+- INPS: la pagina contatti non si apre → sostituita con la pagina iniziale www.inps.it.
+- Tutti gli altri 30 link esterni aperti e funzionanti (prova del 18/10/2026).
+
 ## 18/10/2026 — due nuovi moduli
 - **Cartella clinica e referti**: scadenza di 30 giorni dalla richiesta scritta (art. 25 L. 241/1990), come chiedere,
   sollecito alla Direzione sanitaria. Nuovo file `data/rules-cartella.json`.
