@@ -3,7 +3,7 @@
 Creato da `npm run da-verificare`. Per ogni pagina: aprila, controlla numero, indirizzo e orari, e cerca le notizie di chiusure o traslochi.
 Se è tutto giusto, nel file di dati metti `"proof": "pagina"`, la data di oggi in `verified` e togli `archived`.
 
-**Totale: 106 numeri.**
+**Totale: 103 numeri.**
 
 ## ASP Palermo (2)
 
@@ -185,17 +185,12 @@ Se è tutto giusto, nel file di dati metti `"proof": "pagina"`, la data di oggi 
   - Screening Siracusa: orari della segreteria in contrasto; call center 0931 312525 tasto 2 solo da giornale. (18/10/2026)
   - Scelta e revoca / esenzioni (18/10/2026): Siracusa scelta e revoca: indirizzo viale Epipoli 72 o corso Gelone 17 in contrasto (non pubblicato). Lentini e Noto: solo numeri del distretto. Si può fare anche per email al distretto (es. sceltaerevoca.distrettosiracusa@asp.sr.it).
 
-## ASP Catania (15)
+## ASP Catania (12)
 
 - [ ] <https://www.aspct.it/comunicazione/news/default.aspx?news=25833>
   - CUP: prenotare visite ed esami (numero verde): **800 954414** (Dal lunedì al venerdì 8–16:45 (dal 12/01/2026 il sabato è chiuso) · solo estratto)
-- [ ] <https://www.aspct.it/organizzazione/urp.aspx>
-  - URP: ufficio per i cittadini (numero verde): **800 279761** (solo estratto)
-  - Centralino ASP: **095 2541111** (solo estratto)
 - [ ] <https://www.aspct.it/azienda/dipartimenti/dipartimenti-sanitari/dipartimento-delle-attivit-territoriali-integrazione-ospedal/uoc-cure-prim/cure-primarie-e-integrazione-socio-sanitaria/guardia-medica.aspx>
   - Guardia medica: ufficio continuità assistenziale: **095 2545811** (solo estratto)
-- [ ] <https://www.aspct.it/cosa_fare_per/cure-palliative-domiciliari.aspx>
-  - PUA del PTA San Luigi: **095 8250212** (Dal lunedì al venerdì 8–13 · solo estratto)
 - [ ] <https://www.aspct.it/comunicazione/news/default.aspx?news=20346>
   - Protesi e ausili: Catania (PTA San Luigi): **095 8250328** (Viale Fleming 24, edificio A, sala «Verga», Catania · Telefono solo la mattina · solo estratto)
   - Pannoloni: attivare la fornitura (numero verde): **800 392989** (Lunedì, martedì e giovedì 8:30–12 · solo estratto)
