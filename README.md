@@ -67,6 +67,7 @@ Repository → **Settings → Pages** → *Deploy from a branch* → scegli il r
 ## Prima del lancio
 
 - Cerca `TODO` nel codice e nei dati e risolvi ogni punto (telefonate agli URP, revisione del legale).
+  Le domande da fare al telefono sono in [docs/domande-urp.md](docs/domande-urp.md).
 - Sostituisci `MAINTAINER_EMAIL` in `js/common.js` e il nome del responsabile in `note-legali.html`.
 - Fai provare il sito a qualche persona anziana e annota dove si blocca.
 - Ricontrolla i dati delle ASP dopo il nuovo piano regionale (≈ 22/12/2026), poi ogni 3 mesi.
