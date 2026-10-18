@@ -155,15 +155,19 @@ async function provaDallItalia(urls) {
   const esiti = new Map();
   const richieste = [];
   for (const u of urls) {
-    try {
-      const r = await fetch(`${CHECK_HOST}/check-http?host=${encodeURIComponent(u)}&node=${NODO_ITALIA}`,
-        { headers: { Accept: 'application/json', 'User-Agent': UA }, signal: AbortSignal.timeout(20000) });
-      const testo = await r.text();
-      const id = testo.startsWith('{') ? JSON.parse(testo).request_id : null;
-      if (id) richieste.push({ u, id });
-      else console.warn(`check-host non ha accettato ${u}: ${r.status} ${testo.slice(0, 150)}`);
-    } catch (e) { console.warn(`check-host non raggiungibile per ${u}: ${e.message}`); }
-    await pausa(1000); // check-host limita le richieste troppo ravvicinate
+    for (let tentativo = 0; tentativo < 4; tentativo++) {
+      try {
+        const r = await fetch(`${CHECK_HOST}/check-http?host=${encodeURIComponent(u)}&node=${NODO_ITALIA}`,
+          { headers: { Accept: 'application/json', 'User-Agent': UA }, signal: AbortSignal.timeout(20000) });
+        const testo = await r.text();
+        const id = testo.startsWith('{') ? JSON.parse(testo).request_id : null;
+        if (id) { richieste.push({ u, id }); break; }
+        if (testo.includes('limit_exceeded') && tentativo < 3) { await pausa(15000); continue; }
+        console.warn(`check-host non ha accettato ${u}: ${r.status} ${testo.slice(0, 150)}`);
+      } catch (e) { console.warn(`check-host non raggiungibile per ${u}: ${e.message}`); }
+      break;
+    }
+    await pausa(2000); // check-host limita le richieste troppo ravvicinate
   }
   for (let giro = 0; giro < 12 && richieste.some((x) => !esiti.has(x.u)); giro++) {
     await pausa(5000);
