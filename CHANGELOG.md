@@ -3,7 +3,7 @@
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
 ## 18/10/2026 — link corretti dopo prova dal telefono
-- ASP Enna: www.aspenna.it non si apre → sostituito con www.asp.enna.it (da confermare).
+- ASP Enna: www.aspenna.it è l'indirizzo giusto ma il 18/10/2026 il sito non si apriva (problema del sito, non del link). Lasciato com'è.
 - INPS: la pagina contatti non si apre → sostituita con la pagina iniziale www.inps.it.
 - Tutti gli altri 30 link esterni aperti e funzionanti (prova del 18/10/2026).
 
