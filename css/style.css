@@ -5,7 +5,7 @@
 @font-face { font-family: "Nunito"; font-style: normal; font-weight: 700; font-display: swap; src: url("../fonts/nunito-latin-700-normal.woff2") format("woff2"); }
 @font-face { font-family: "Nunito"; font-style: normal; font-weight: 800; font-display: swap; src: url("../fonts/nunito-latin-800-normal.woff2") format("woff2"); }
 
-/* Ci penso io — mobile first, large readable text. */
+/* Guida Sanità — mobile first, large readable text. */
 :root {
   /* Stile morbido: bianco e verde acqua, angoli arrotondati, carattere tondo. */
   --bg: #ffffff;
@@ -300,3 +300,4 @@ table.fields th, table.fields td { border-bottom-color: var(--border); }
 
 .site-footer { background: #f3faf9; border-top: none; }
 .site-footer a { color: var(--primary); }
+.tagline { font-size: 1.35rem; font-weight: 800; color: #12907f; margin: -6px 0 10px; letter-spacing: 0.01em; }

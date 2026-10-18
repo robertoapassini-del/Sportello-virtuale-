@@ -1,4 +1,4 @@
-// Ci penso io — motore delle regole.
+// Guida Sanità — motore delle regole.
 // Solo funzioni pure: niente pagina, niente rete. Usate dal browser e dai test.
 // Le date sono stringhe 'AAAA-MM-GG' calcolate in UTC, per evitare sorprese
 // con l'ora legale.
