@@ -1,6 +1,6 @@
-# Aiuto Sanità
+# Cosa mi spetta
 
-Sito gratuito che aiuta le persone in Sicilia a far valere i tempi massimi di attesa:
+Sito gratuito che dice alle persone in Sicilia cosa spetta loro, entro quando e come chiederlo: sanità, invalidità, aiuti economici, documenti. Moduli:
 
 - **Modulo 1 – Liste d'attesa:** la visita o l'esame è troppo lontano rispetto alla classe di priorità della ricetta.
 - **Modulo 2 – Invalidità civile:** la visita per l'invalidità non arriva entro i tempi di legge.

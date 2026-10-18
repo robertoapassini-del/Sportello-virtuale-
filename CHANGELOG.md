@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 18/10/2026 — nuovo nome: Cosa mi spetta
+- Il sito copre anche aiuti economici e documenti, non solo sanità: da «Aiuto Sanità» a «Cosa mi spetta».
+- Email segnaposto: info@cosamispetta.it (dominio da verificare).
+
 ## 18/10/2026 — pagina iniziale a scelta guidata
 - Prima una sola domanda con 4 grandi riquadri, poi al massimo 4 scelte. Elenco dei moduli in `data/moduli.json`.
 - Casella «Scrivi una parola» per chi aiuta; pulsante Ascolta anche in home.
