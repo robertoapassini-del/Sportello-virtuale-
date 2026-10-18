@@ -222,3 +222,31 @@ export function pianoStatus(rules, { expiryDate, today }) {
   const status = toExpiry < 0 ? 'expired' : toExpiry <= rules.book_before_days ? 'soon' : 'ok';
   return { status, bookBy, toExpiry, daysOverdue: Math.max(0, -toExpiry) };
 }
+
+// --- Modulo 12: prevenzione gratuita per età -----------------------------
+// sex: 'F' | 'M'. Restituisce gli screening e i vaccini gratuiti per quell'età,
+// e quelli che arriveranno più avanti (con l'età da cui partono).
+export function prevenzione(rules, { age, sex }) {
+  const out = { screening: [], vaccines: [], later: [] };
+  if (!Number.isInteger(age) || age < 0 || age > 120) return null;
+  for (const s of rules.screening) {
+    if (s.sex !== '*' && s.sex !== sex) continue;
+    if (age >= s.min && age <= s.max) out.screening.push(s);
+    else if (age < s.min) out.later.push({ ...s, kind: 'screening' });
+  }
+  for (const v of rules.vaccines) {
+    if (age >= v.min) out.vaccines.push(v);
+    else out.later.push({ ...v, kind: 'vaccine' });
+  }
+  out.later.sort((a, b) => a.min - b.min);
+  return out;
+}
+
+// --- Modulo 13: medico di famiglia o pediatra ----------------------------
+// Chi può scegliere cosa, in base all'età.
+export function medicoChoice(rules, { age }) {
+  if (!Number.isInteger(age) || age < 0 || age > 120) return null;
+  if (age < rules.pediatra_only_until) return 'pediatra';
+  if (age < rules.pediatra_or_medico_until) return 'pediatra-o-medico';
+  return 'medico';
+}

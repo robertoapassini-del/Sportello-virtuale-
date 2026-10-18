@@ -1,0 +1,28 @@
+{
+  "name": "Regole per scegliere o cambiare il medico di famiglia o il pediatra",
+  "last_verified": "2026-10-18",
+  "pediatra_only_until": 6,
+  "pediatra_or_medico_until": 14,
+  "pediatra_extension_until": 16,
+  "max_patients_medico": 1500,
+  "max_patients_pediatra": 880,
+  "temporary_months": [
+    3,
+    12
+  ],
+  "notes_internal": "TODO-VERIFY: massimali e deroghe (ACN medicina generale e pediatria); canale di scelta per ogni ASP (sportello scelta/revoca, email, app ASPConTe a Catania dal 2025, portale); regole per i domiciliati (scelta temporanea).",
+  "sources": [
+    {
+      "label": "Accordo collettivo nazionale – Medicina generale (SISAC)",
+      "url": "https://www.sisac.info"
+    },
+    {
+      "label": "Ministero della Salute – Medico di medicina generale e pediatra",
+      "url": "https://www.salute.gov.it"
+    },
+    {
+      "label": "Sistema Tessera Sanitaria",
+      "url": "https://sistemats1.sanita.finanze.it"
+    }
+  ]
+}

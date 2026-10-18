@@ -186,6 +186,19 @@ for (const a of asp.asl) {
   cases.push({ mod: 11, p, a, name: `PAL ${p} · richiesta da 8 giorni`, path: 'date', req: add(TODAY, -8), expectH1: 'Troppo tempo', letter: true });
 }
 
+// Modulo 12: prevenzione (calcolo indipendente).
+const RPRE = JSON.parse(fs.readFileSync(path.join(DATA, 'rules-prevenzione.json'), 'utf8'));
+for (const sex of ['F', 'M']) for (const age of [0, 17, 18, 24, 25, 29, 30, 49, 50, 59, 60, 64, 65, 69, 70, 90]) {
+  const exp = [...RPRE.screening.filter((x) => (x.sex === '*' || x.sex === sex) && age >= x.min && age <= x.max), ...RPRE.vaccines.filter((v) => age >= v.min)].map((x) => x.title);
+  const notExp = [...RPRE.screening, ...RPRE.vaccines].map((x) => x.title).filter((t) => !exp.includes(t));
+  cases.push({ mod: 12, name: `PREV ${sex} ${age} anni`, sex, age, exp, notExp, p: asp.asl[(age + (sex === 'F' ? 3 : 0)) % 9].province });
+}
+// Modulo 13: medico di famiglia.
+for (const a of asp.asl) for (const band of ['0-5', '6-13', '14-15', '16+']) for (const sit of ['change', 'retire', 'full', 'temporary']) {
+  if (sit === 'temporary' && band !== '16+') continue;
+  cases.push({ mod: 13, a, p: a.province, band, sit, name: `MED ${a.province} · ${band} · ${sit}`, letter: sit === 'full' && (band === '0-5' || band === '16+') });
+}
+
 // ---------- esecuzione ----------
 const BAD_TEXT = /undefined|\bnull\b|NaN|TODO|VERIFY|\[object/;
 
@@ -434,6 +447,49 @@ async function runCase(page, c) {
       const urp = c.a.emails.find((e) => /urp/i.test(e)) || c.a.pec || c.a.emails[0] || '';
       if (!mail.startsWith(`mailto:${urp}?`)) problems.push(`email al destinatario sbagliato: ${mail.slice(0, 60)}`);
       if (/percorsoditutela|percorso\.tutela/.test(mail)) problems.push('email alla casella del percorso di tutela (sbagliata per questo modulo)');
+      await checkScreen('lettera');
+    }
+    return problems;
+  }
+
+  // ---- modulo 12: prevenzione ----
+  if (c.mod === 12) {
+    await page.goto(`${BASE}prevenzione/index.html`);
+    await btn(/Comincia/);
+    await btn(c.sex === 'F' ? /^Una donna/ : /^Un uomo/);
+    await page.fill('#age', String(c.age)); await btn(/Avanti/);
+    await btn(new RegExp(`^${c.p}$`));
+    const text = await checkScreen('risultato');
+    const main = await page.locator('main').innerText();
+    const body = main.split('Come prenotare')[0];
+    for (const t of c.exp) if (!body.includes(t)) problems.push(`manca «${t}»`);
+    for (const t of c.notExp) if (body.includes(t)) problems.push(`mostrato per errore «${t}»`);
+    if (c.p === 'Catania' && !text.includes('800 894 007')) problems.push('manca il numero screening di Catania');
+    if (text.includes('tasto 2')) problems.push('mostrato il numero CUP della classe B');
+    return problems;
+  }
+  // ---- modulo 13: medico di famiglia ----
+  if (c.mod === 13) {
+    await page.goto(`${BASE}medico-famiglia/index.html`);
+    await btn(/Comincia/);
+    await btn(new RegExp(`^${c.p}$`));
+    await btn({ '0-5': /sotto i 6 anni/, '6-13': /da 6 a 13/, '14-15': /14 o 15/, '16+': /^Un adulto/ }[c.band]);
+    await btn({ change: /^Voglio cambiare/, retire: /va in pensione/, full: /Non trovo nessuno/, temporary: /per studio o lavoro/ }[c.sit]);
+    const got = await h1();
+    const want = c.sit === 'full' ? 'Se non trovi nessuno' : `Ecco come fare a ${c.p}`;
+    if (!got.startsWith(want)) problems.push(`titolo atteso «${want}», trovato «${got}»`);
+    const text = await checkScreen('risultato');
+    const who = { '0-5': 'deve avere il pediatra', '6-13': 'puoi scegliere il pediatra o il medico di famiglia', '14-15': 'si passa al medico di famiglia', '16+': 'si passa al medico di famiglia' }[c.band];
+    if (!text.includes(who)) problems.push(`atteso «${who}»`);
+    if (c.letter) {
+      await btn(/Scriviamo la lettera insieme/);
+      await page.fill('#f-fullName', 'Maria Rossi'); await page.fill('#f-comune', 'Comune di prova');
+      if (c.band !== '16+') await page.fill('#f-child', 'Luca Rossi');
+      const t = await page.locator('#preview').innerText();
+      const wants = ['Maria Rossi', 'Comune di prova', `Azienda Sanitaria Provinciale di ${c.p}`, c.band === '16+' ? 'medico di medicina generale' : 'pediatra di libera scelta'];
+      if (c.band !== '16+') wants.push('Luca Rossi');
+      for (const w of wants) if (!t.includes(w)) problems.push(`lettera senza «${w}»`);
+      if (/undefined|NaN|null/.test(t)) problems.push('lettera con testo sospetto');
       await checkScreen('lettera');
     }
     return problems;

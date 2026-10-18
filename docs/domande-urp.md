@@ -136,6 +136,13 @@ Oggi sul sito (verificato): modulo ufficiale per email a percorsoditutela@asppal
 30. Qual è il numero della rete cure palliative e degli hospice della provincia? Chi può attivarla (medico di famiglia, specialista, reparto)?
 31. A quale indirizzo vanno le richieste scritte per ADI e cure palliative? Va bene l'URP?
 
+**Prevenzione e medico di famiglia (moduli 12 e 13)**
+
+32. Qual è il numero verde per prenotare gli screening (mammografia, pap test/HPV, colon)? Quali fasce di età usate?
+33. Il vaccino antinfluenzale è gratis da quale età quest'anno? Si fa anche in farmacia?
+34. La scelta o il cambio del medico di famiglia si può fare online o per email? Dove sono gli sportelli «scelta e revoca»?
+35. Se non c'è nessun pediatra o medico con posti liberi, cosa fate? A chi si scrive?
+
 ---
 
 ## 3. INPS — invalidità civile

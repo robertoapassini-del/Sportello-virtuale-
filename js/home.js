@@ -74,7 +74,7 @@ app.addEventListener('click', (e) => {
   renderFooter('');
   try {
     reg = await loadJSON('data/moduli.json');
-    const names = ['rules', 'rules-invalidita', 'rules-cartella', 'rules-ausili', 'rules-esenzione', 'rules-ricorso', 'rules-adi', 'rules-piano', 'rules-domiciliare', 'rules-palliative'];
+    const names = ['rules', 'rules-invalidita', 'rules-cartella', 'rules-ausili', 'rules-esenzione', 'rules-ricorso', 'rules-adi', 'rules-piano', 'rules-domiciliare', 'rules-palliative', 'rules-prevenzione', 'rules-medico'];
     rulesSources = (await Promise.all(names.map((n) => loadJSON(`data/${n}.json`)))).flatMap((r) => r.sources);
   } catch {
     app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>';

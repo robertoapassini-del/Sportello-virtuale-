@@ -157,7 +157,7 @@ test('letters fill in the facts', () => {
 });
 
 test('i testi mostrati agli utenti non contengono note interne (TODO)', () => {
-  const shown = (a) => JSON.stringify([a.how_to, a.documents_required, a.what_next, a.notes, a.details, a.fast_track, a.phones]);
+  const shown = (a) => JSON.stringify([a.how_to, a.documents_required, a.what_next, a.notes, a.details, a.fast_track, a.phones, a.scelta_medico]);
   for (const a of asp.asl) {
     assert.doesNotMatch(shown(a), /TODO|VERIFY/i, a.id);
     assert.ok(Array.isArray(a.todo) && Array.isArray(a.details), a.id);
@@ -266,4 +266,32 @@ test('assegno di inclusione, piano terapeutico', async () => {
   const l = genericRequest({ to: 'Distretto', subject: 'Richiesta', person: { fullName: 'Maria Rossi' }, premise: ['a', 'b'], request: 'x', attachments: ['y'], today: T });
   assert.match(l, /Maria Rossi/); assert.match(l, /- a;\n- b;/); assert.match(l, /Allega: y\./);
   for (const r of [ra, rt, load('../data/rules-domiciliare.json'), load('../data/rules-palliative.json')]) for (const s of r.sources) assert.match(s.url, /^https:\/\//);
+});
+
+test('prevenzione per età e sesso; medico o pediatra', async () => {
+  const { prevenzione, medicoChoice } = await import('../js/engine.js');
+  const r = load('../data/rules-prevenzione.json');
+  const ids = (o) => [...o.screening, ...o.vaccines].map((x) => x.id).sort().join(',');
+  assert.equal(ids(prevenzione(r, { age: 49, sex: 'F' })), 'hpv,tetano');
+  assert.equal(ids(prevenzione(r, { age: 50, sex: 'F' })), 'colon,hpv,mammografia,tetano');
+  assert.equal(ids(prevenzione(r, { age: 50, sex: 'M' })), 'colon,tetano');
+  assert.equal(ids(prevenzione(r, { age: 29, sex: 'F' })), 'pap,tetano');
+  assert.equal(ids(prevenzione(r, { age: 30, sex: 'F' })), 'hpv,tetano');
+  assert.equal(ids(prevenzione(r, { age: 24, sex: 'F' })), 'tetano');
+  assert.equal(ids(prevenzione(r, { age: 59, sex: 'M' })), 'colon,tetano');
+  assert.equal(ids(prevenzione(r, { age: 60, sex: 'M' })), 'colon,influenza,tetano');
+  assert.equal(ids(prevenzione(r, { age: 64, sex: 'F' })), 'colon,hpv,influenza,mammografia,tetano');
+  assert.equal(ids(prevenzione(r, { age: 65, sex: 'F' })), 'colon,influenza,mammografia,pneumococco,tetano,zoster');
+  assert.equal(ids(prevenzione(r, { age: 69, sex: 'F' })), 'colon,influenza,mammografia,pneumococco,tetano,zoster');
+  assert.equal(ids(prevenzione(r, { age: 70, sex: 'F' })), 'influenza,pneumococco,tetano,zoster');
+  assert.equal(ids(prevenzione(r, { age: 10, sex: 'M' })), '');
+  assert.equal(prevenzione(r, { age: 40, sex: 'M' }).later[0].min, 50);
+  assert.equal(prevenzione(r, { age: -1, sex: 'M' }), null);
+  const m = load('../data/rules-medico.json');
+  assert.equal(medicoChoice(m, { age: 0 }), 'pediatra');
+  assert.equal(medicoChoice(m, { age: 5 }), 'pediatra');
+  assert.equal(medicoChoice(m, { age: 6 }), 'pediatra-o-medico');
+  assert.equal(medicoChoice(m, { age: 13 }), 'pediatra-o-medico');
+  assert.equal(medicoChoice(m, { age: 14 }), 'medico');
+  for (const s of [...r.sources, ...m.sources]) assert.match(s.url, /^https:\/\//);
 });

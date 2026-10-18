@@ -94,7 +94,9 @@
         "Chi ha una disabilità, una malattia cronica o un tumore in cura può chiedere un posto vicino a casa.",
         "Se non c'è posto, fai la visita in ospedale «in intramoenia» pagando solo il ticket."
       ],
-      "todo": [],
+      "todo": [
+        "Scelta e revoca del medico: confermare se si può fare online o per email, e indirizzi degli sportelli."
+      ],
       "sources": [
         {
           "label": "ASP Palermo – Percorso di tutela (agg. 19/08/2026)",
@@ -102,7 +104,11 @@
         }
       ],
       "last_verified": "2026-10-18",
-      "status": "verified"
+      "status": "verified",
+      "scelta_medico": {
+        "how": "Vai allo sportello «scelta e revoca» del distretto sanitario del tuo comune (spesso dove c'è il CUP), con tessera sanitaria e documento. Puoi chiedere il nome dei medici liberi della tua zona.",
+        "url": null
+      }
     },
     {
       "id": "ragusa",
@@ -133,7 +139,8 @@
         "Il servizio online è attivo dal 10 agosto 2026."
       ],
       "todo": [
-        "Indirizzo diretto del portale."
+        "Indirizzo diretto del portale.",
+        "Scelta e revoca del medico: confermare se si può fare online o per email, e indirizzi degli sportelli."
       ],
       "sources": [
         {
@@ -146,7 +153,11 @@
         }
       ],
       "last_verified": "2026-10-18",
-      "status": "partial"
+      "status": "partial",
+      "scelta_medico": {
+        "how": "Vai allo sportello «scelta e revoca» del distretto sanitario del tuo comune (spesso dove c'è il CUP), con tessera sanitaria e documento. Puoi chiedere il nome dei medici liberi della tua zona.",
+        "url": null
+      }
     },
     {
       "id": "caltanissetta",
@@ -210,7 +221,8 @@
         "Per avere i soldi indietro si usa il modulo MOD-02, da mandare a gestione.liste@asp.cl.it."
       ],
       "todo": [
-        "Campi esatti del modulo MOD-01."
+        "Campi esatti del modulo MOD-01.",
+        "Scelta e revoca del medico: confermare se si può fare online o per email, e indirizzi degli sportelli."
       ],
       "sources": [
         {
@@ -219,7 +231,11 @@
         }
       ],
       "last_verified": "2026-10-18",
-      "status": "partial"
+      "status": "partial",
+      "scelta_medico": {
+        "how": "Vai allo sportello «scelta e revoca» del distretto sanitario del tuo comune (spesso dove c'è il CUP), con tessera sanitaria e documento. Puoi chiedere il nome dei medici liberi della tua zona.",
+        "url": null
+      }
     },
     {
       "id": "messina",
@@ -259,7 +275,8 @@
       "todo": [
         "Indirizzo e orari dell'URP di Messina città.",
         "Elenco completo dei documenti.",
-        "Se un'email normale verso la PEC è accettata."
+        "Se un'email normale verso la PEC è accettata.",
+        "Scelta e revoca del medico: confermare se si può fare online o per email, e indirizzi degli sportelli."
       ],
       "sources": [
         {
@@ -268,7 +285,11 @@
         }
       ],
       "last_verified": "2026-10-18",
-      "status": "partial"
+      "status": "partial",
+      "scelta_medico": {
+        "how": "Vai allo sportello «scelta e revoca» del distretto sanitario del tuo comune (spesso dove c'è il CUP), con tessera sanitaria e documento. Puoi chiedere il nome dei medici liberi della tua zona.",
+        "url": null
+      }
     },
     {
       "id": "siracusa",
@@ -313,7 +334,8 @@
         "Per domande e rimborsi c'è anche l'email percorsoditutela@asp.sr.it."
       ],
       "todo": [
-        "Il regolamento 2024 cita un modulo online con SPID: verificare se è attivo."
+        "Il regolamento 2024 cita un modulo online con SPID: verificare se è attivo.",
+        "Scelta e revoca del medico: confermare se si può fare online o per email, e indirizzi degli sportelli."
       ],
       "sources": [
         {
@@ -322,7 +344,11 @@
         }
       ],
       "last_verified": "2026-10-18",
-      "status": "partial"
+      "status": "partial",
+      "scelta_medico": {
+        "how": "Vai allo sportello «scelta e revoca» del distretto sanitario del tuo comune (spesso dove c'è il CUP), con tessera sanitaria e documento. Puoi chiedere il nome dei medici liberi della tua zona.",
+        "url": null
+      }
     },
     {
       "id": "agrigento",
@@ -371,7 +397,9 @@
         "L'ASP ha anche un suo modulo, sulla pagina dell'URP.",
         "Malati cronici che hanno bisogno di controlli prima: Cabina unica di regia, 0922 407365."
       ],
-      "todo": [],
+      "todo": [
+        "Scelta e revoca del medico: confermare se si può fare online o per email, e indirizzi degli sportelli."
+      ],
       "sources": [
         {
           "label": "ASP Agrigento – URP (Delibera n. 426 del 10/09/2024)",
@@ -379,7 +407,11 @@
         }
       ],
       "last_verified": "2026-10-18",
-      "status": "partial"
+      "status": "partial",
+      "scelta_medico": {
+        "how": "Vai allo sportello «scelta e revoca» del distretto sanitario del tuo comune (spesso dove c'è il CUP), con tessera sanitaria e documento. Puoi chiedere il nome dei medici liberi della tua zona.",
+        "url": null
+      }
     },
     {
       "id": "catania",
@@ -425,7 +457,8 @@
       ],
       "todo": [
         "Canale per le classi D e P (chiamare l'URP). L'app ASPConTe non è confermata per il percorso di tutela.",
-        "URP 800 279761 / urp@aspct.it (trovati su un sito non ufficiale)."
+        "URP 800 279761 / urp@aspct.it (trovati su un sito non ufficiale).",
+        "Scelta e revoca del medico: confermare se si può fare online o per email, e indirizzi degli sportelli."
       ],
       "sources": [
         {
@@ -434,7 +467,11 @@
         }
       ],
       "last_verified": "2026-10-18",
-      "status": "partial"
+      "status": "partial",
+      "scelta_medico": {
+        "how": "Si può fare anche online con l'app ASPConTe dell'ASP, oppure allo sportello «scelta e revoca» del distretto con tessera sanitaria e documento.",
+        "url": "https://www.aspct.it"
+      }
     },
     {
       "id": "trapani",
@@ -476,7 +513,8 @@
       "todo": [
         "Canale per le classi D e P (chiamare URP/CUP).",
         "PEC generale da IndicePA.",
-        "Confermare l'indirizzo del sito ufficiale e trovare la pagina sul percorso di tutela."
+        "Confermare l'indirizzo del sito ufficiale e trovare la pagina sul percorso di tutela.",
+        "Scelta e revoca del medico: confermare se si può fare online o per email, e indirizzi degli sportelli."
       ],
       "sources": [
         {
@@ -489,7 +527,11 @@
         }
       ],
       "last_verified": "2026-10-18",
-      "status": "todo"
+      "status": "todo",
+      "scelta_medico": {
+        "how": "Vai allo sportello «scelta e revoca» del distretto sanitario del tuo comune (spesso dove c'è il CUP), con tessera sanitaria e documento. Puoi chiedere il nome dei medici liberi della tua zona.",
+        "url": null
+      }
     },
     {
       "id": "enna",
@@ -531,7 +573,8 @@
       "todo": [
         "Canale (chiamare l'URP).",
         "PEC generale da IndicePA.",
-        "Sito ufficiale www.aspenna.it: indirizzo giusto, ma il 18/10/2026 non si apriva (problema del sito). Riprovare più avanti."
+        "Sito ufficiale www.aspenna.it: indirizzo giusto, ma il 18/10/2026 non si apriva (problema del sito). Riprovare più avanti.",
+        "Scelta e revoca del medico: confermare se si può fare online o per email, e indirizzi degli sportelli."
       ],
       "sources": [
         {
@@ -544,7 +587,11 @@
         }
       ],
       "last_verified": "2026-10-18",
-      "status": "todo"
+      "status": "todo",
+      "scelta_medico": {
+        "how": "Vai allo sportello «scelta e revoca» del distretto sanitario del tuo comune (spesso dove c'è il CUP), con tessera sanitaria e documento. Puoi chiedere il nome dei medici liberi della tua zona.",
+        "url": null
+      }
     }
   ]
 }

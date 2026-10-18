@@ -11,6 +11,8 @@ Sito gratuito che dice alle persone in Sicilia cosa spetta loro, entro quando e 
 - **Modulo 7 – Assegno di inclusione:** condizioni principali (famiglia, residenza, ISEE) e come fare domanda.
 - **Modulo 9 – Piano terapeutico:** cos'è, chi lo fa, quando prenotare il rinnovo.
 - **Modulo 10 – Assistenza domiciliare (ADI):** come si chiede al distretto; sollecito dopo 30 giorni.
+- **Modulo 12 – Prevenzione gratuita:** screening e vaccini gratuiti per età e sesso, come prenotarli.
+- **Modulo 13 – Medico di famiglia e pediatra:** come scegliere o cambiare, scelta temporanea, lettera se non c'è posto.
 - **Modulo 11 – Cure palliative:** diritto della L. 38/2010, attivazione a casa o in hospice, richiesta scritta.
 
 Requisiti completi: [SPEC.md](SPEC.md).
@@ -70,6 +72,8 @@ npm run test:combinazioni
 | `piano-terapeutico/`, `js/piano.js` | Modulo 9: piano terapeutico e rinnovo |
 | `assistenza-domiciliare/`, `js/domiciliare.js` | Modulo 10: ADI, sollecito al distretto |
 | `cure-palliative/`, `js/palliative.js` | Modulo 11: cure palliative, richiesta scritta |
+| `prevenzione/`, `js/prevenzione.js` | Modulo 12: screening e vaccini gratuiti per età |
+| `medico-famiglia/`, `js/medico.js` | Modulo 13: scelta del medico o del pediatra |
 | `js/flow.js` | Navigazione comune ai moduli nuovi (schermate, Indietro, Ascolta, Fonti) |
 | `js/engine.js` | Regole sulle date (funzioni pure, testate) |
 | `js/letters.js` | Modelli di lettera (DA VERIFICARE con il legale) |

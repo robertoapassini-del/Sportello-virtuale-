@@ -7,6 +7,12 @@
       "small": "Appuntamenti lontani, ticket, piano terapeutico, referti"
     },
     {
+      "id": "prevenzione",
+      "icon": "🛡️",
+      "title": "Prevenzione e medico di famiglia",
+      "small": "Controlli e vaccini gratis, scegliere il medico o il pediatra"
+    },
+    {
       "id": "casa",
       "icon": "🏠",
       "title": "Aiuto a casa per una persona malata",
@@ -51,6 +57,22 @@
       "title": "Non mi danno la cartella clinica o i referti",
       "small": "L'ho chiesta all'ospedale e non arriva",
       "keywords": "cartella clinica referti documenti ospedale copia radiografia esami ricovero"
+    },
+    {
+      "id": "prevenzione",
+      "group": "prevenzione",
+      "icon": "🛡️",
+      "title": "Quali controlli e vaccini posso fare gratis?",
+      "small": "Esami contro i tumori e vaccini per la tua età",
+      "keywords": "prevenzione screening mammografia pap test hpv colon tumore vaccino influenza pneumococco zoster fuoco sant'antonio tetano gratis"
+    },
+    {
+      "id": "medico-famiglia",
+      "group": "prevenzione",
+      "icon": "👨‍⚕️",
+      "title": "Scegliere o cambiare il medico di famiglia o il pediatra",
+      "small": "Come si fa e cosa fare se non trovi posto",
+      "keywords": "medico di famiglia pediatra cambiare scegliere revoca bambino pensione studente posto"
     },
     {
       "id": "assistenza-domiciliare",
