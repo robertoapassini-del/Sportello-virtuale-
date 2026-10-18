@@ -214,21 +214,6 @@ export function adiCheck(rules, { household, residency, isee }) {
   return { status: 'yes', reasons: [] };
 }
 
-// --- Modulo 8: permesso di soggiorno --------------------------------------
-// Dalla scadenza del permesso: quando cominciare il rinnovo e in che situazione si è oggi.
-export function permessoStatus(rules, { expiryDate, today }) {
-  if (!parseDate(expiryDate)) return { status: 'error', error: 'date' };
-  const startBy = addDays(expiryDate, -rules.renew_before_days);
-  const lateUntil = addDays(expiryDate, rules.late_tolerance_days);
-  const toExpiry = daysBetween(today, expiryDate);
-  let status;
-  if (toExpiry > rules.renew_before_days) status = 'early';      // c'è tempo, ma si può già fare
-  else if (toExpiry >= 0) status = 'now';                         // dentro i 60 giorni: fare subito
-  else if (-toExpiry <= rules.late_tolerance_days) status = 'late'; // scaduto da poco: ancora possibile
-  else status = 'expired';                                        // scaduto da più di 60 giorni
-  return { status, startBy, lateUntil, toExpiry, daysOverdue: Math.max(0, -toExpiry) };
-}
-
 // --- Modulo 9: piano terapeutico ------------------------------------------
 export function pianoStatus(rules, { expiryDate, today }) {
   if (!parseDate(expiryDate)) return { status: 'error', error: 'date' };

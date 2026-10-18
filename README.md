@@ -1,6 +1,6 @@
 # Ci penso io
 
-Sito gratuito che dice alle persone in Sicilia cosa spetta loro, entro quando e come chiederlo: sanità, invalidità, aiuti economici, documenti. Moduli:
+Sito gratuito che dice alle persone in Sicilia cosa spetta loro, entro quando e come chiederlo: sanità, cure e invalidità. Moduli:
 
 - **Modulo 1 – Liste d'attesa:** la visita o l'esame è troppo lontano rispetto alla classe di priorità della ricetta.
 - **Modulo 2 – Invalidità civile:** la visita per l'invalidità non arriva entro i tempi di legge.
@@ -9,7 +9,6 @@ Sito gratuito che dice alle persone in Sicilia cosa spetta loro, entro quando e 
 - **Modulo 5 – Esenzione ticket:** calcolo dell'esenzione per età e reddito (codici E01–E04) e come ottenerla.
 - **Modulo 6 – Ricorso invalidità:** 6 mesi dal verbale per il ricorso; quanto tempo resta e cosa fare.
 - **Modulo 7 – Assegno di inclusione:** condizioni principali (famiglia, residenza, ISEE) e come fare domanda.
-- **Modulo 8 – Permesso di soggiorno:** rinnovo 60 giorni prima della scadenza; dove, come, cosa portare.
 - **Modulo 9 – Piano terapeutico:** cos'è, chi lo fa, quando prenotare il rinnovo.
 - **Modulo 10 – Assistenza domiciliare (ADI):** come si chiede al distretto; sollecito dopo 30 giorni.
 - **Modulo 11 – Cure palliative:** diritto della L. 38/2010, attivazione a casa o in hospice, richiesta scritta.
@@ -68,7 +67,6 @@ npm run test:combinazioni
 | `esenzione-ticket/`, `js/esenzione.js` | Modulo 5: calcolo esenzione per reddito |
 | `ricorso-invalidita/`, `js/ricorso.js` | Modulo 6: scadenza di 6 mesi per il ricorso |
 | `assegno-inclusione/`, `js/adi.js` | Modulo 7: condizioni per l'assegno di inclusione |
-| `permesso-soggiorno/`, `js/permesso.js` | Modulo 8: quando rinnovare il permesso |
 | `piano-terapeutico/`, `js/piano.js` | Modulo 9: piano terapeutico e rinnovo |
 | `assistenza-domiciliare/`, `js/domiciliare.js` | Modulo 10: ADI, sollecito al distretto |
 | `cure-palliative/`, `js/palliative.js` | Modulo 11: cure palliative, richiesta scritta |

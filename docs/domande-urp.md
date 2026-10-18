@@ -170,12 +170,6 @@ Le PEC si possono controllare anche da soli, su **indicepa.gov.it** (cerca «INP
 
 ---
 
-## 3b. Questura e Prefettura — permesso di soggiorno (modulo 8)
-
-1. Quali tipi di permesso si rinnovano con il kit postale e quali solo in Questura?
-2. Quanto costa oggi il rinnovo, in tutto?
-3. Una domanda presentata dopo la scadenza (entro 60 giorni) viene accettata?
-
 ## 3c. CAF / patronato — assegno di inclusione (modulo 7)
 
 1. Quali sono le soglie di quest'anno (ISEE, reddito, patrimonio)?

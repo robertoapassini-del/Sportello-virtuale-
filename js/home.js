@@ -16,7 +16,7 @@ function groupBtn(g) {
 
 const intro = `
   <h1>Ci penso io</h1>
-  <p class="lead say">Sanità, invalidità, aiuti economici, documenti: ti diciamo cosa ti spetta, entro quando e come chiederlo. Con parole semplici.</p>
+  <p class="lead say">Sanità, cure e invalidità: ti diciamo cosa ti spetta, entro quando e come chiederlo. Con parole semplici.</p>
   <div class="notice info"><p class="say">✅ È gratis. 🤝 Siamo volontari: <strong>non siamo l'ASP, l'INPS né un altro ufficio pubblico</strong>. 🔒 Non salviamo niente. 📍 Per ora vale solo in Sicilia.</p></div>`;
 
 const search = `
@@ -74,7 +74,7 @@ app.addEventListener('click', (e) => {
   renderFooter('');
   try {
     reg = await loadJSON('data/moduli.json');
-    const names = ['rules', 'rules-invalidita', 'rules-cartella', 'rules-ausili', 'rules-esenzione', 'rules-ricorso', 'rules-adi', 'rules-permesso', 'rules-piano', 'rules-domiciliare', 'rules-palliative'];
+    const names = ['rules', 'rules-invalidita', 'rules-cartella', 'rules-ausili', 'rules-esenzione', 'rules-ricorso', 'rules-adi', 'rules-piano', 'rules-domiciliare', 'rules-palliative'];
     rulesSources = (await Promise.all(names.map((n) => loadJSON(`data/${n}.json`)))).flatMap((r) => r.sources);
   } catch {
     app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>';

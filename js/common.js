@@ -62,7 +62,7 @@ export async function renderSources(root = '') {
   const el = document.getElementById('fonti');
   if (!el) return;
   try {
-    const names = ['rules', 'rules-invalidita', 'rules-cartella', 'rules-ausili', 'rules-esenzione', 'rules-ricorso', 'rules-adi', 'rules-permesso', 'rules-piano', 'rules-domiciliare', 'rules-palliative'];
+    const names = ['rules', 'rules-invalidita', 'rules-cartella', 'rules-ausili', 'rules-esenzione', 'rules-ricorso', 'rules-adi', 'rules-piano', 'rules-domiciliare', 'rules-palliative'];
     const all = await Promise.all(names.map((n) => loadJSON(`${root}data/${n}.json`)));
     el.innerHTML = sourcesBox(all.flatMap((r) => r.sources), { verified: all[0].last_verified });
   } catch { el.innerHTML = ''; }

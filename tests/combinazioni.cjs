@@ -167,10 +167,7 @@ for (const household of [true, false, null]) for (const residency of [true, fals
   const exp = no ? 'no' : (isee === null || household === null || residency === null) ? 'maybe' : 'yes';
   cases.push({ mod: 7, name: `ADI · famiglia ${household} · residenza ${residency} · ISEE ${isee}`, household, residency, isee, exp });
 }
-// Modulo 8: permesso di soggiorno. Modulo 9: piano terapeutico.
-for (const [off, exp] of [[120, 'Hai tempo'], [61, 'Hai tempo'], [60, 'È il momento'], [0, 'È il momento'], [-1, 'È scaduto da poco'], [-60, 'È scaduto da poco'], [-61, 'È scaduto da più di 60'], [-400, 'È scaduto da più di 60']]) {
-  cases.push({ mod: 8, name: `PERM · scadenza tra ${off} giorni`, expiry: add(TODAY, off), expectH1: exp, startBy: add(add(TODAY, off), -60) });
-}
+// Modulo 9: piano terapeutico.
 for (const [off, exp] of [[120, 'Hai tempo'], [61, 'Hai tempo'], [60, 'Prenota adesso'], [0, 'Prenota adesso'], [-1, 'Il piano è scaduto'], [-200, 'Il piano è scaduto']]) {
   cases.push({ mod: 9, name: `PIANO · scadenza tra ${off} giorni`, expiry: add(TODAY, off), expectH1: exp });
 }
@@ -392,9 +389,9 @@ async function runCase(page, c) {
     await checkScreen('risultato');
     return problems;
   }
-  // ---- moduli 8 e 9: permesso / piano ----
-  if (c.mod === 8 || c.mod === 9) {
-    await page.goto(`${BASE}${c.mod === 8 ? 'permesso-soggiorno' : 'piano-terapeutico'}/index.html`);
+  // ---- modulo 9: piano terapeutico ----
+  if (c.mod === 9) {
+    await page.goto(`${BASE}piano-terapeutico/index.html`);
     await btn(/Comincia/);
     if (c.mod === 9) await btn(c.first ? /^No, devo farlo/ : /^Sì, ce l/);
     if (!c.first) { await page.fill('#expiryDate', c.expiry); await btn(/Controlla/); }

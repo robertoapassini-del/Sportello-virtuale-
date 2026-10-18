@@ -26,10 +26,10 @@
 import { renderFooter, loadJSON, esc } from "./js/common.js";
 import { formatIt } from "./js/engine.js";
 renderFooter("");
-const [asp, inps, rules, rinv, rcar, raus, rese, rric, radi, rper, rpia, rdom, rpal] = await Promise.all(["asp-sicilia", "inps-sicilia", "rules", "rules-invalidita", "rules-cartella", "rules-ausili", "rules-esenzione", "rules-ricorso", "rules-adi", "rules-permesso", "rules-piano", "rules-domiciliare", "rules-palliative"].map((n) => loadJSON(`data/${n}.json`)));
+const [asp, inps, rules, rinv, rcar, raus, rese, rric, radi, rpia, rdom, rpal] = await Promise.all(["asp-sicilia", "inps-sicilia", "rules", "rules-invalidita", "rules-cartella", "rules-ausili", "rules-esenzione", "rules-ricorso", "rules-adi", "rules-piano", "rules-domiciliare", "rules-palliative"].map((n) => loadJSON(`data/${n}.json`)));
 const st = { verified: "Controllato", partial: "Controllato in parte", todo: "Da controllare" };
 const link = (s) => s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>` : esc(s.label);
-document.getElementById("laws-list").innerHTML = [rules, rinv, rcar, raus, rese, rric, radi, rper, rpia, rdom, rpal].flatMap((r) => r.sources).map((s) => `<li>${link(s)}</li>`).join("");
+document.getElementById("laws-list").innerHTML = [rules, rinv, rcar, raus, rese, rric, radi, rpia, rdom, rpal].flatMap((r) => r.sources).map((s) => `<li>${link(s)}</li>`).join("");
 document.getElementById("sources-list").innerHTML = `
   <table class="fields"><thead><tr><th>ASP</th><th>Stato</th></tr></thead><tbody>
   ${asp.asl.map((a) => `<tr><td><strong>${esc(a.name)}</strong><br>${a.sources.map(link).join("<br>")}</td>
@@ -47,7 +47,6 @@ document.getElementById("sources-list").innerHTML = `
   Esenzione ticket: soglie E01-E04 – controllato il ${formatIt(rese.last_verified)}.<br>
   Ricorso invalidità: ${esc(rric.legal_basis)} – controllato il ${formatIt(rric.last_verified)}.<br>
   Assegno di inclusione: ISEE fino a ${radi.isee_max} € – controllato il ${formatIt(radi.last_verified)}.<br>
-  Permesso di soggiorno: ${esc(rper.legal_basis)} – controllato il ${formatIt(rper.last_verified)}.<br>
   Piano terapeutico – controllato il ${formatIt(rpia.last_verified)}.<br>
   Assistenza domiciliare: ${esc(rdom.legal_basis)} – controllato il ${formatIt(rdom.last_verified)}.<br>
   Cure palliative: ${esc(rpal.legal_basis)} – controllato il ${formatIt(rpal.last_verified)}.</p>`;
