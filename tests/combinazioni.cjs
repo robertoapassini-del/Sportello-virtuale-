@@ -178,11 +178,14 @@ for (const a of asp.asl) {
   cases.push({ mod: 10, p, a, name: `DOM ${p} · come si chiede`, path: 'none', expectH1: 'Si parte dal medico di famiglia' });
   cases.push({ mod: 10, p, a, name: `DOM ${p} · interrotta`, path: 'reduced', expectH1: "Se l'assistenza si ferma o non basta", letter: true });
   cases.push({ mod: 10, p, a, name: `DOM ${p} · richiesta da 10 giorni`, path: 'date', req: add(TODAY, -10), expectH1: 'La richiesta è partita' });
+  cases.push({ mod: 10, p, a, name: `DOM ${p} · richiesta da 29 giorni`, path: 'date', req: add(TODAY, -29), expectH1: 'La richiesta è partita' });
+  cases.push({ mod: 10, p, a, name: `DOM ${p} · richiesta da 30 giorni`, path: 'date', req: add(TODAY, -30), expectH1: 'Aspetti da troppo', letter: true });
   cases.push({ mod: 10, p, a, name: `DOM ${p} · richiesta da 31 giorni`, path: 'date', req: add(TODAY, -31), expectH1: 'Aspetti da troppo', letter: true });
   cases.push({ mod: 10, p, a, name: `DOM ${p} · data nel futuro`, path: 'date', req: add(TODAY, 1), expectReqError: true });
   cases.push({ mod: 11, p, a, name: `PAL ${p} · come funziona`, path: 'none', expectH1: 'Come funziona', letter: true });
   cases.push({ mod: 11, p, a, name: `PAL ${p} · dolore`, path: 'pain', expectH1: 'Il dolore si può curare' });
   cases.push({ mod: 11, p, a, name: `PAL ${p} · richiesta da 3 giorni`, path: 'date', req: add(TODAY, -3), expectH1: 'La richiesta è partita' });
+  cases.push({ mod: 11, p, a, name: `PAL ${p} · richiesta da 7 giorni`, path: 'date', req: add(TODAY, -7), expectH1: 'Troppo tempo', letter: true });
   cases.push({ mod: 11, p, a, name: `PAL ${p} · richiesta da 8 giorni`, path: 'date', req: add(TODAY, -8), expectH1: 'Troppo tempo', letter: true });
 }
 

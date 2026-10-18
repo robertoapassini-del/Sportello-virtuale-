@@ -112,7 +112,9 @@ const screens = {
     const a = asp();
     const waited = daysBetween(state.requestDate, todayISO());
     const remindOn = addDays(state.requestDate, rules.reminder_after_days);
-    const late = waited > rules.reminder_after_days;
+    // Il giorno stesso della scadenza si può già sollecitare. Prima, niente sollecito:
+    // la lettera direbbe «non è stata effettuata la valutazione» troppo presto.
+    const late = waited >= rules.reminder_after_days;
     return {
       html: `
         <div class="hero" aria-hidden="true">${late ? '⚠️' : '⏳'}</div>
@@ -127,10 +129,10 @@ const screens = {
         <ol class="big-steps">
           <li class="say"><strong>Chiama il PUA del distretto</strong> e chiedi a che punto è la richiesta. Se non sai il numero, chiama l'ASP e chiedi del PUA del tuo comune.</li>
           <li class="say"><strong>Chiedi al medico di famiglia</strong> di sollecitare anche lui: la sua telefonata pesa.</li>
-          <li class="say"><strong>Manda un sollecito scritto</strong> al distretto e all'URP dell'ASP di ${esc(a.province)}. Lo scriviamo insieme.</li>
+          ${late ? `<li class="say"><strong>Manda un sollecito scritto</strong> al distretto e all'URP dell'ASP di ${esc(a.province)}. Lo scriviamo insieme.</li>` : ''}
         </ol>
         ${a.phones.map((p) => callButton(p.label, p.number)).join('')}
-        <button type="button" class="btn primary" data-go="letter">✍️ Scriviamo il sollecito insieme</button>
+        ${late ? '<button type="button" class="btn primary" data-go="letter">✍️ Scriviamo il sollecito insieme</button>' : ''}
         ${disclaimer(rules.last_verified)}`,
     };
   },

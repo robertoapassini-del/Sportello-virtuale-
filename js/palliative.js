@@ -1,7 +1,7 @@
 // Modulo 11 — cure palliative e terapia del dolore: «come si attivano?».
 // Diritto della L. 38/2010. Spieghiamo i passi, i numeri da chiamare e una lettera di richiesta.
 // Scritto con delicatezza: spesso chi legge sta assistendo una persona molto malata.
-import { todayISO, formatIt, parseDate, daysBetween, art } from './engine.js';
+import { todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
 import { genericRequest, mailtoHref } from './letters.js';
 import { noPecBox, esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton, personFields, reportErrorHref, generalContact } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
@@ -115,23 +115,25 @@ const screens = {
   result: () => {
     const a = asp();
     const waited = daysBetween(state.requestDate, todayISO());
-    const late = waited > rules.reminder_after_days;
+    // Il giorno stesso della scadenza si può già sollecitare; prima, niente sollecito scritto.
+    const late = waited >= rules.reminder_after_days;
+    const remindOn = addDays(state.requestDate, rules.reminder_after_days);
     return {
       html: `
         <div class="hero" aria-hidden="true">${late ? '⚠️' : '⏳'}</div>
         <h1>${late ? 'Troppo tempo: sollecita oggi' : 'La richiesta è partita'}</h1>
         <div class="notice ${late ? 'bad' : 'info'}">
           <p class="say">Richiesta ${art('del', state.requestDate)}${esc(formatIt(state.requestDate))}: sono passati <strong>${days(waited)}</strong>.</p>
-          <p class="say">Le cure palliative devono partire in pochi giorni. ${late ? 'Non aspettare oltre.' : `Se entro ${rules.reminder_after_days} giorni dalla richiesta nessuno si è fatto vivo, sollecita.`}</p>
+          <p class="say">Le cure palliative devono partire in pochi giorni. ${late ? 'Non aspettare oltre.' : `Se entro ${art('il', remindOn)}<strong>${esc(formatIt(remindOn))}</strong> nessuno si è fatto vivo, torna qui per sollecitare per iscritto.`}</p>
         </div>
         <h2 class="say">Cosa fare</h2>
         <ol class="big-steps">
           <li class="say"><strong>Chiama il medico che ha fatto la richiesta</strong> e chiedigli di telefonare lui alla rete cure palliative.</li>
           <li class="say"><strong>Chiama l'ASP</strong> e chiedi il numero della rete cure palliative o dell'hospice della tua zona.</li>
-          <li class="say"><strong>Manda una richiesta scritta</strong> all'ASP di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''}. La scriviamo insieme.</li>
+          ${late ? `<li class="say"><strong>Manda una richiesta scritta</strong> all'ASP di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''}. La scriviamo insieme.</li>` : ''}
         </ol>
         ${a.phones.map((p) => callButton(p.label, p.number)).join('')}
-        <button type="button" class="btn primary" data-go="letter">✍️ Scriviamo la richiesta insieme</button>
+        ${late ? '<button type="button" class="btn primary" data-go="letter">✍️ Scriviamo la richiesta insieme</button>' : ''}
         ${disclaimer(rules.last_verified)}`,
     };
   },
