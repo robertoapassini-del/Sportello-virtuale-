@@ -3,7 +3,7 @@
 import { formatIt } from './engine.js';
 
 // TODO: sostituire con l'indirizzo dedicato quando il dominio esiste (SPEC 8, 9.0).
-export const MAINTAINER_EMAIL = 'info@cosamispetta.it';
+export const MAINTAINER_EMAIL = 'info@cipensoio.it';
 
 export function esc(v) {
   return String(v ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -21,7 +21,7 @@ export function disclaimer(date) {
 }
 
 export function reportErrorHref(context) {
-  const subject = `Segnala un errore – ${context || 'Cosa mi spetta'}`;
+  const subject = `Segnala un errore – ${context || 'Ci penso io'}`;
   const body = 'Scrivi qui l\'errore (non scrivere dati sulla tua salute):\n\n';
   return `mailto:${MAINTAINER_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
@@ -79,7 +79,7 @@ export function renderFooter(root = '') {
   if (!el) return;
   el.innerHTML = `<div class="wrap">
     <p>🔒 <strong>Non salviamo niente.</strong> Quello che scrivi resta sul tuo telefono e si cancella quando chiudi la pagina.</p>
-    <p><strong>Cosa mi spetta è fatto da volontari. Non siamo l'ASP, l'INPS né un altro ufficio pubblico.</strong> Diamo informazioni generali, non il parere di un avvocato o di un medico.</p>
+    <p><strong>Ci penso io è fatto da volontari. Non siamo l'ASP, l'INPS né un altro ufficio pubblico.</strong> Diamo informazioni generali, non il parere di un avvocato o di un medico.</p>
     <nav aria-label="Informazioni">
       <a href="${root}privacy.html">Privacy</a>
       <a href="${root}fonti.html">Da dove prendiamo le informazioni</a>

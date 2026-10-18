@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 18/10/2026 — nome definitivo: Ci penso io
+- «Cosa mi spetta» era già usato da un sito di bonus. Nuovo nome «Ci penso io» (dominio cipensoio.it).
+- Email segnaposto: info@cipensoio.it.
+
 ## 18/10/2026 — nuovo nome: Cosa mi spetta
 - Il sito copre anche aiuti economici e documenti, non solo sanità: da «Aiuto Sanità» a «Cosa mi spetta».
 - Email segnaposto: info@cosamispetta.it (dominio da verificare).
