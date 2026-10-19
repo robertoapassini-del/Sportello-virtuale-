@@ -1,4 +1,5 @@
 // Modulo 9 — piano terapeutico: «come lo chiedo, quando lo rinnovo?».
+// Prima la risposta: la pagina mostra subito la risposta scritta; il conto della scadenza parte dal pulsante.
 // Non chiediamo né la malattia né il nome della medicina: solo la data di scadenza del piano.
 import { pianoStatus, todayISO, formatIt, parseDate, art } from './engine.js';
 import { esc, loadJSON, disclaimer, renderFooter, readForm } from './common.js';
@@ -6,6 +7,8 @@ import { createFlow, choice, restartBtn, days, dateForm, showError } from './flo
 
 const ROOT = '../';
 const app = document.getElementById('app');
+// La risposta scritta della pagina: è la prima schermata del percorso.
+const answerHtml = app.innerHTML;
 let rules;
 const state = {};
 const sources = () => [rules.sources, { verified: rules.last_verified }];
@@ -31,15 +34,9 @@ const whatIs = () => `
   </details>`;
 
 const screens = {
-  intro: () => ({
-    html: `
-      <div class="hero" aria-hidden="true">💊</div>
-      <h1>La medicina con il piano terapeutico</h1>
-      <p class="lead say">Il medico ti ha detto che serve un «piano terapeutico»? O ne hai uno che sta per scadere?</p>
-      <p class="say">Ti spieghiamo cos'è, chi lo fa e quando prenotare il rinnovo per non restare senza medicina.</p>
-      <button type="button" class="btn primary big" data-go="have">▶️ Comincia</button>
-      <p class="muted say">È gratis. Non salviamo niente. Non ti chiediamo né la malattia né la medicina.</p>`,
-  }),
+  // Prima schermata: la risposta scritta che è già nella pagina (vedi index.html).
+  // Così «Ricomincia» e il tasto Indietro riportano alla risposta, non a una presentazione.
+  intro: () => ({ html: answerHtml }),
 
   have: () => ({
     html: `
