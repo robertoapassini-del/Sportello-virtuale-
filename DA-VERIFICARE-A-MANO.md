@@ -1,0 +1,93 @@
+# Da verificare o completare a mano
+
+Cose rimaste aperte dopo il lavoro del 19 ottobre 2026. Non sono cifre che cambiano ogni anno
+(quelle sono in [CIFRE-DA-CONTROLLARE.md](CIFRE-DA-CONTROLLARE.md)): sono controlli da fare una volta,
+decisioni da prendere e pezzi da completare.
+
+Perché servono: i siti ufficiali (normattiva, INPS, ASP, Regione, Garante) **non si aprono dall'estero**.
+Molti dati sono stati presi dai risultati di ricerca su quei siti, senza leggere la pagina intera.
+Vanno riletti da una connessione italiana o confermati per telefono.
+
+Quando chiudi un punto: correggi il sito se serve, scrivi la modifica in `CHANGELOG.md` e cancella la riga da qui.
+
+## 1. Decisioni da prendere
+
+- [ ] **Ausili: 20 giorni e silenzio-assenso.** Il sito (pagina `ausili/`, lettera di sollecito in `js/letters.js`,
+  `data/rules-ausili.json`, README) dice che dopo 20 giorni l'autorizzazione si intende data, «per il DPCM 12/01/2017».
+  Dalle ricerche risulta che:
+  - il DPCM 12/01/2017 (allegato 12, art. 1) **lascia alle Regioni** il tempo massimo per l'autorizzazione;
+  - i 20 giorni con silenzio-assenso erano nel **vecchio DM 332/1999, art. 4**;
+  - il DPCM ha un silenzio-assenso solo di **5 giorni**, per gli ausili dell'elenco 1 prescritti durante il ricovero.
+  
+  Da fare: trovare la regola della **Regione Siciliana** (decreto assessoriale sull'assistenza protesica) e leggere
+  il testo dell'allegato 12 ([PDF del Ministero](https://www.salute.gov.it/new/sites/default/files/Allegato%2012%20Modalita%CC%80%20di%20erogazione%20delle%20prestazioni%20di%20assistenza%20protesica.pdf),
+  [Gazzetta Ufficiale n. 65 del 18/03/2017](https://www.gazzettaufficiale.it/eli/gu/2017/03/18/65/so/15/sg/pdf)).
+  Poi decidere come riscrivere testo e lettera (meglio con il legale).
+- [ ] **«Ti è stata utile? Sì / No».** Oggi conta i Sì e i No con GoatCounter (senza cookie, senza dati personali).
+  Scegliere: tenerlo così (proposta), oppure non contare niente e lasciare solo il link «scrivici».
+- [ ] **Redirect 301 vero per `/…/index.html`.** GitHub Pages non lo permette: ora c'è un reindirizzamento fatto dal
+  browser. Se davanti al sito c'è Cloudflare (o un servizio simile), aggiungere lì una regola:
+  indirizzi che finiscono con `/index.html` → stesso indirizzo senza `index.html`, codice 301.
+  Poi controllare che `https://guidasanita.it/liste-attesa/index.html` non mostri più la versione vecchia
+  (può essere anche una copia vecchia nella cache del browser o del CDN: svuotarla).
+
+## 2. Da confermare (telefono o pagina letta dall'Italia)
+
+### Liste d'attesa
+- [ ] **ASP Trapani:** le richieste del percorso di tutela («prestazioni garantite») vanno davvero a
+  `comunicazione@asptrapani.it`? PEC `direzione.generale@pec.asptrapani.it`. Pagina:
+  [Percorsi di tutela](https://www.asptrapani.it/servizi/Menu/dinamica.aspx?idSezione=17900&idArea=17901&idCat=28961&ID=47241&TipoElemento=pagina).
+  Se c'è un modulo, aggiungerlo in `form_url` (`data/asp-sicilia.json`).
+- [ ] **ASP Enna:** le richieste vanno a `responsabile.urp@asp.enna.it`? PEC `protocollo.generale@pec.asp.enna.it`.
+  Leggere il «Regolamento liste di attesa e percorsi di tutela» e il «PAGLA 2025» sulla
+  [pagina Liste di attesa](https://www.aspenna.it/category/servizi/liste-di-attesa/): forse c'è una casella o un modulo apposta.
+- [ ] Dopo la conferma: in `data/asp-sicilia.json` togliere la nota nei `todo` di Enna e Trapani.
+
+### Prevenzione
+- [ ] **Screening gratuito dell'epatite C** (nati 1969–1989, e chi è seguito dal SerD o è in carcere a ogni età).
+  Proroga nazionale fino al 31/12/2026, ma nessuna pagina siciliana del 2025–2026. Chiedere alla Regione o a un'ASP
+  se è ancora attivo in Sicilia. **Se sì, aggiungerlo** alla pagina `prevenzione/` (prelievo gratis in un laboratorio
+  pubblico o convenzionato, senza ricetta; campagna [bastapensarci.it](https://www.bastapensarci.it)).
+- [ ] **Età di Pap test e test HPV:** l'[ASP Trapani](https://screeningoncologici.asptrapani.it/screening/screening-per-il-tumore-della-cervice-uterina/)
+  scrive 25–33 (Pap) e 34–64 (HPV), le altre ASP 25–29 e 30–64. Chiarire con la Regione (decreto D.A. n. 1845) quale vale.
+- [ ] **Test automatico della prevenzione:** `npm run test:combinazioni` ha 4 errori già presenti prima del 19/10/2026
+  («manca il numero screening di Catania», «mostrato il numero CUP della classe B»). Capire se è sbagliato il test
+  o la pagina (numero 800 894 007 in `data/rules-prevenzione.json`).
+
+### Piano terapeutico
+- [ ] **Ticket nella DPC:** il sito dice che chi non è esente può pagare il ticket della Regione anche per le medicine
+  «per conto» dell'ASP. Viene dal [decalogo DPC dell'ASP Enna del 2022](https://www.aspenna.it/wp-content/uploads/2022/08/decalogo-DPC-2022-DEFINITIVO.pdf).
+  Controllare sull'[accordo DPC approvato con D.A. 367/2025](https://www.regione.sicilia.it/sites/default/files/2025-05/Allegato%20al%20D.A.%20n.367%20del%2003%20aprile%202025%20-%20Accordo.pdf).
+- [ ] **«Arriva in un giorno o due»:** stesso decalogo (24 ore lavorative). Confermare che vale ancora.
+
+### Cartella clinica
+- [ ] **Fascicolo Sanitario «gratis»:** nessuna pagina siciliana lo dice in modo esplicito (ma non c'è nessun costo).
+  Rileggere le [domande frequenti della Regione](https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/dipartimento-pianificazione-strategica/fascicolo-sanitario-elettronico-domande-frequenti).
+- [ ] **Prima copia gratis (art. 15 GDPR):** rileggere le [FAQ del Garante](https://www.garanteprivacy.it/garante/doc.jsp?ID=10086913)
+  per intero. Valutare con il legale se aggiungere la richiesta «ai sensi dell'art. 15 GDPR» anche nella lettera di sollecito
+  (`js/letters.js`, che oggi parla di «eventuale costo di riproduzione»).
+
+### Medico di famiglia
+- [ ] **Massimale del pediatra:** il sito dice «circa 880». Dalle ricerche: dal 2022 è 880, fino a 1.000 con deroghe
+  (ACN pediatria, art. 36). Leggere l'ACN pediatria del **18/03/2026** su [sisac.info](https://www.sisac.info) per vedere se è
+  cambiato, e completare la frase sulle deroghe se serve.
+
+### Ricorso invalidità
+- [ ] **Art. 152 disp. att. c.p.c.:** testo preso dai risultati di ricerca. Rileggerlo su
+  [Normattiva](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1941-12-18;1368) e far controllare al legale
+  la frase «non paghi le spese legali dell'INPS» (vale salvo «comportamento temerario»; il reddito è quello IRPEF della famiglia).
+
+### Assegno di inclusione
+- [ ] **Messaggio INPS n. 2437 del 22/07/2026** sui rinnovi: non letto. Controllare che non cambi quello che c'è scritto.
+- [ ] Dal 2026 l'ADI usa il nuovo **«ISEE per l'inclusione»** (più leggero sulla casa). Valutare se dirlo nella guida.
+
+## 3. Da completare (già noti prima)
+
+- [ ] **Numeri di telefono** da confermare dall'Italia: elenco in [docs/da-verificare.md](docs/da-verificare.md)
+  (si rifà con `npm run da-verificare`). Regola: [docs/regola-numeri.md](docs/regola-numeri.md).
+- [ ] **Lettere** (`js/letters.js`): da far rivedere a un legale prima del lancio (sono segnate «DA VERIFICARE»).
+- [ ] **Campi `todo` e `notes_internal`** nei file `data/*.json`: ogni ASP ha la sua lista (sportelli mancanti,
+  numeri in contrasto). Cercare `TODO` nel codice e nei dati.
+- [ ] **Domande da fare al telefono agli URP:** [docs/domande-urp.md](docs/domande-urp.md).
+- [ ] **Nuovo piano regionale delle liste d'attesa** (atteso entro il 22/12/2026): ricontrollare tempi e contatti di tutte le ASP.
+- [ ] **Prova con persone anziane:** far usare il sito a qualcuno e annotare dove si blocca.
