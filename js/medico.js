@@ -49,7 +49,7 @@ const screens = {
   intro: () => ({
     html: `
       <div class="hero" aria-hidden="true">👨‍⚕️</div>
-      <h1>Scegliere o cambiare il medico di famiglia o il pediatra</h1>
+      <h1>Scegliere o cambiare il medico di base o il pediatra</h1>
       <p class="lead say">Puoi cambiare medico quando vuoi, anche senza dire il motivo. Ti diciamo come si fa nella tua provincia e cosa fare se non trovi posto.</p>
       <button type="button" class="btn primary big" data-go="province">▶️ Comincia</button>
       <p class="muted say">È gratis. Non salviamo niente.</p>`,
