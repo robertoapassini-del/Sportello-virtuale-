@@ -1,4 +1,6 @@
 // Modulo 5 — esenzione dal ticket per reddito: «devo pagare il ticket?».
+// Esperimento «prima la risposta»: la pagina mostra subito la risposta scritta;
+// il calcolo a domande parte dal pulsante «Fai il conto» e salta la presentazione.
 // Calcolo con regole fisse nazionali (codici E01-E04). Nessuna lettera.
 // Non chiediamo la malattia: le esenzioni per malattia le mostriamo solo come informazione.
 import { esenzioneReddito, formatEuro } from './engine.js';
@@ -7,6 +9,8 @@ import { createFlow, choice, restartBtn, progress } from './flow.js';
 
 const ROOT = '../';
 const app = document.getElementById('app');
+// La risposta scritta della pagina: è la prima schermata del calcolo.
+const answerHtml = app.innerHTML;
 let rules;
 const state = {};
 
@@ -31,18 +35,9 @@ const otherExemptions = () => `
   </details>`;
 
 const screens = {
-  intro: () => ({
-    html: `
-      <div class="hero" aria-hidden="true">🎫</div>
-      <h1>Devi pagare il ticket?</h1>
-      <p class="lead say">Molte persone pagano visite ed esami senza sapere che non dovrebbero.</p>
-      <p class="say">Con 4 domande ti diciamo se hai diritto all'esenzione per età o per reddito, e come ottenerla.</p>
-      <div class="notice info">
-        <p class="say"><strong>Ti serve un numero:</strong> il reddito di tutta la famiglia dell'anno scorso. Lo trovi sulla dichiarazione dei redditi (730 o CU). Se non lo sai, va bene lo stesso: ti diciamo il limite.</p>
-      </div>
-      <button type="button" class="btn primary big" data-go="age">▶️ Comincia</button>
-      <p class="muted say">È gratis. Non salviamo niente. Vale per visite ed esami, non per le medicine.</p>`,
-  }),
+  // Prima schermata: la risposta scritta che è già nella pagina (vedi index.html).
+  // Così «Ricomincia» e il tasto Indietro riportano alla risposta, non a una presentazione.
+  intro: () => ({ html: answerHtml }),
 
   age: () => ({
     html: `${progress(1, 4)}

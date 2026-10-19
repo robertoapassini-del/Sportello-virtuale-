@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 19/10/2026 — esenzione ticket: esperimento «prima la risposta»
+- Nessun dato cambiato. La pagina mostra subito la risposta scritta (i 4 casi E01–E04 con i limiti, come si ottiene, le altre esenzioni); il calcolo a domande parte dal pulsante «Fai il conto» e con «Ricomincia» torna alla risposta.
+- Serve a confrontare le due impostazioni (risposta subito / percorso subito) sul telefono prima di decidere per tutte le pagine. Vedi `docs/ricerche-frequenti.md`.
+
 ## 19/10/2026 — parole cercate su Google (medico di base, CUP, rinnovo esenzione, legge 104)
 - Fonte: Google Trends, Sicilia, ultimi 12 mesi (dettagli in `docs/ricerche-frequenti.md`); ASPConTe dell'ASP Catania già in `asp-sicilia.json` (nota del 18/10/2026) e notizie di LiveUniversity Catania (13/05/2025, 17/04/2025).
 - `moduli.json`: titolo «medico di base» al posto di «medico di famiglia»; parole per la ricerca interna (medico di base, deroga, SovraCUP, ASPConTe, over 65, rinnovo, delega, fascicolo sanitario, contrassegno).
