@@ -2,6 +2,12 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 20/10/2026 — regola per le cifre di legge: coerenza e provenienza
+- Nuovo test `tests/cifre.test.mjs`: ogni cifra scritta nella guida o nel js di un modulo deve essere uguale a quella in `data/`; esempi e arrotondamenti sono dichiarati nel test. Nessun valore cambiato. Regola: [docs/regola-cifre.md](docs/regola-cifre.md).
+- In ogni `data/rules*.json` il blocco `provenienza`: per ogni cifra la pagina ufficiale, la data del controllo, la prova (`testo` / `estratto` / `secondaria` / `sito`) e la data di ricontrollo `review_by`. Nuovo test `tests/provenienza.test.mjs`: fallisce se manca la scheda o se `review_by` è passata (si prova con `OGGI=2027-02-01 npm test`). Le prove sono `estratto` quasi ovunque: i testi ufficiali vanno riletti per intero.
+- Nuovi campi che prima erano solo nel testo delle guide, valori invariati: `age_limits` (esenzione: 6, 65, 60 anni), `household_min_age` 60 e `elderly_age` 67 (assegno di inclusione), `detrazione` 19% e 129,11 € (assistenza domiciliare), `minor_age` 18 (invalidità), `every_years` 10 (antitetanica).
+- `tools/pagine.mjs --controlla` non segnala più come «non aggiornate» le pagine salvate da git con fine riga Windows.
+
 ## 20/10/2026 — tutte le guide: prima la risposta, poi pagine corte
 - Nessun dato cambiato. Tutti i 12 moduli hanno ora la stessa impostazione dell'esenzione ticket: in cima la risposta scritta (leggibile anche senza JavaScript), il percorso a domande parte da un pulsante e torna alla risposta con «Ricomincia», la guida lunga è divisa in 2–4 pagine corte con l'indice «In questa guida».
 - Pagine nuove: liste-attesa (3), medico-famiglia (4), cartella-clinica (3), piano-terapeutico (3), prevenzione (2), invalidita (3), ricorso-invalidita (3), assegno-inclusione (3), assistenza-domiciliare (4, compresi i consigli pratici), ausili (3), cure-palliative (3). Sitemap: 59 pagine.

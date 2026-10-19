@@ -6,6 +6,29 @@
   "gratuito_patrocinio_income": 13659.64,
   "no_legal_costs_income": 27319.28,
   "notes_internal": "Gratuito patrocinio: 13.659,64 € dal DM Giustizia 22/04/2025 (GU n. 159 dell'11/07/2025); prossimo aggiornamento ISTAT previsto nel 2027. Niente spese legali se si perde (art. 152 disp. att. c.p.c.): reddito fino al doppio, 27.319,28 €. TODO-VERIFY con il legale: termine di 6 mesi anche nella nuova procedura (D.Lgs. 62/2024); se nel verbale c'è 'rivedibile' il ricorso resta possibile.",
+  "provenienza": {
+    "appeal_months": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2003-09-30;269",
+      "verified": "2026-10-19",
+      "proof": "estratto",
+      "review_by": "2027-10-19",
+      "nota": "D.L. 269/2003, art. 42, comma 3. Da confermare con il legale che vale anche nella nuova procedura."
+    },
+    "gratuito_patrocinio_income": {
+      "url": "https://www.gazzettaufficiale.it/gazzetta/serie_generale/caricaDettaglio?dataPubblicazioneGazzetta=2025-07-11&numeroGazzetta=159",
+      "verified": "2026-10-19",
+      "proof": "estratto",
+      "review_by": "2027-07-31",
+      "nota": "DM Giustizia 22/04/2025. Aggiornamento ISTAT ogni due anni: il prossimo nel 2027."
+    },
+    "no_legal_costs_income": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1941-12-18;1368",
+      "verified": "2026-10-19",
+      "proof": "estratto",
+      "review_by": "2027-07-31",
+      "nota": "Art. 152 disp. att. c.p.c.: il doppio del gratuito patrocinio. Testo preso dai risultati di ricerca, da rileggere."
+    }
+  },
   "sources": [
     { "label": "D.L. 269/2003, art. 42 (ricorso entro 6 mesi, niente ricorso amministrativo)", "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2003-09-30;269" },
     { "label": "Codice di procedura civile, art. 445-bis (accertamento tecnico preventivo)", "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1940-10-28;1443" },

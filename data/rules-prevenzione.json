@@ -74,6 +74,7 @@
       "title": "Richiamo antitetanico (tetano, difterite, pertosse)",
       "min": 18,
       "every": "ogni 10 anni",
+      "every_years": 10,
       "how": "Al centro vaccinale dell'ASP."
     }
   ],
@@ -81,6 +82,61 @@
     "catania": "800 894 007"
   },
   "notes_internal": "Fasce di età controllate il 19/10/2026 (ASP Palermo, ASP Catania): in Sicilia mammografia e colon restano 50-69, nessuna estensione a 45-74 o 74 trovata. ASP Trapani scrive Pap 25-33 e HPV 34-64: da chiarire con la Regione. Screening HCV (nati 1969-1989): proroga nazionale al 31/12/2026, ma nessuna pagina siciliana del 2025-2026: non pubblicato. TODO-VERIFY: influenza gratuita da 60 anni (circolare ministeriale stagionale); pneumococco e zoster per la coorte dei 65enni e oltre secondo calendario regionale; numeri verdi screening delle altre 8 ASP.",
+  "provenienza": {
+    "screening.mammografia": {
+      "url": "https://screening.asppalermo.org/",
+      "verified": "2026-10-19",
+      "proof": "testo",
+      "review_by": "2027-10-19",
+      "nota": "Pagina ASP Palermo letta il 19/10/2026; stesse età su ASP Catania. Ricontrollare con il nuovo Piano regionale della prevenzione."
+    },
+    "screening.colon": {
+      "url": "https://screening.asppalermo.org/",
+      "verified": "2026-10-19",
+      "proof": "testo",
+      "review_by": "2027-10-19"
+    },
+    "screening.pap": {
+      "url": "https://screening.asppalermo.org/",
+      "verified": "2026-10-19",
+      "proof": "testo",
+      "review_by": "2027-01-31",
+      "nota": "ASP Trapani scrive 25-33 (Pap) e 34-64 (HPV): da chiarire con la Regione (D.A. 1845)."
+    },
+    "screening.hpv": {
+      "url": "https://screening.asppalermo.org/",
+      "verified": "2026-10-19",
+      "proof": "testo",
+      "review_by": "2027-01-31",
+      "nota": "Vedi screening.pap."
+    },
+    "vaccines.influenza": {
+      "url": "https://www.salute.gov.it/new/it/tema/vaccinazioni/piano-nazionale-prevenzione-vaccinale/",
+      "verified": "2026-10-19",
+      "proof": "estratto",
+      "review_by": "2026-11-30",
+      "nota": "Età dalla circolare influenza del Ministero, che esce ogni anno: rileggerla ogni autunno."
+    },
+    "vaccines.pneumococco": {
+      "url": "https://www.salute.gov.it/new/it/tema/vaccinazioni/piano-nazionale-prevenzione-vaccinale/",
+      "verified": "2026-10-19",
+      "proof": "estratto",
+      "review_by": "2027-01-31",
+      "nota": "Calendario vaccinale regionale: coorte dei 65enni."
+    },
+    "vaccines.zoster": {
+      "url": "https://www.salute.gov.it/new/it/tema/vaccinazioni/piano-nazionale-prevenzione-vaccinale/",
+      "verified": "2026-10-19",
+      "proof": "estratto",
+      "review_by": "2027-01-31"
+    },
+    "vaccines.tetano": {
+      "url": "https://www.salute.gov.it/new/it/tema/vaccinazioni/piano-nazionale-prevenzione-vaccinale/",
+      "verified": "2026-10-19",
+      "proof": "estratto",
+      "review_by": "2027-10-19"
+    }
+  },
   "sources": [
     {
       "label": "ASP Palermo – Screening oncologici: età ed esami",

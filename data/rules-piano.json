@@ -7,6 +7,21 @@
     12
   ],
   "notes_internal": "TODO-VERIFY: durata massima per tipo di farmaco (note AIFA) e se in Sicilia esistono proroghe automatiche.",
+  "provenienza": {
+    "book_before_days": {
+      "verified": "2026-10-19",
+      "proof": "sito",
+      "review_by": "2027-10-19",
+      "nota": "Scelta del sito: con quanto anticipo consigliamo di prenotare il rinnovo."
+    },
+    "typical_duration_months": {
+      "url": "https://www.aifa.gov.it/note-aifa",
+      "verified": "2026-10-19",
+      "proof": "secondaria",
+      "review_by": "2027-10-19",
+      "nota": "Durata tipica dei piani (6 o 12 mesi): dipende dal farmaco (note AIFA)."
+    }
+  },
   "sources": [
     {
       "label": "AIFA – Note e piani terapeutici",

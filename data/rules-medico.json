@@ -11,6 +11,48 @@
     12
   ],
   "notes_internal": "TODO-VERIFY: massimali e deroghe (ACN medicina generale e pediatria); canale di scelta per ogni ASP (sportello scelta/revoca, email, app ASPConTe a Catania dal 2025, portale); regole per i domiciliati (scelta temporanea).",
+  "provenienza": {
+    "pediatra_only_until": {
+      "url": "https://www.sisac.info/anteprimaNewsHome.do?tipo=WEB&idArea=201011221610481056&idNews=20260624094802420",
+      "verified": "2026-10-18",
+      "proof": "estratto",
+      "review_by": "2027-03-31",
+      "nota": "ACN pediatria. Controllare l'ACN del 18/03/2026."
+    },
+    "pediatra_or_medico_until": {
+      "url": "https://www.sisac.info/anteprimaNewsHome.do?tipo=WEB&idArea=201011221610481056&idNews=20260624094802420",
+      "verified": "2026-10-18",
+      "proof": "estratto",
+      "review_by": "2027-03-31"
+    },
+    "pediatra_extension_until": {
+      "url": "https://www.sisac.info/anteprimaNewsHome.do?tipo=WEB&idArea=201011221610481056&idNews=20260624094802420",
+      "verified": "2026-10-18",
+      "proof": "estratto",
+      "review_by": "2027-03-31"
+    },
+    "max_patients_medico": {
+      "url": "https://www.sisac.info/anteprimaNewsHome.do?tipo=WEB&idArea=201011221610481056&idNews=20260624094802420",
+      "verified": "2026-10-18",
+      "proof": "estratto",
+      "review_by": "2027-03-31",
+      "nota": "ACN medicina generale."
+    },
+    "max_patients_pediatra": {
+      "url": "https://www.sisac.info/anteprimaNewsHome.do?tipo=WEB&idArea=201011221610481056&idNews=20260624094802420",
+      "verified": "2026-10-18",
+      "proof": "estratto",
+      "review_by": "2027-03-31",
+      "nota": "880, fino a 1.000 con deroghe (ACN 2022, art. 36). Da rileggere nell'ACN del 18/03/2026."
+    },
+    "temporary_months": {
+      "url": "https://www.sisac.info/anteprimaNewsHome.do?tipo=WEB&idArea=201011221610481056&idNews=20260624094802420",
+      "verified": "2026-10-18",
+      "proof": "secondaria",
+      "review_by": "2027-03-31",
+      "nota": "Scelta temporanea da 3 a 12 mesi: dalle pagine delle ASP."
+    }
+  },
   "sources": [
     {
       "label": "Accordo collettivo nazionale – Medicina generale (SISAC)",
