@@ -74,11 +74,25 @@
 </header>
 <nav class="breadcrumb" aria-label="Sei qui"><div class="wrap"><ol><li><a href="../">Inizio</a></li><li><a href="../visite-esami/">Visite ed esami</a></li></ol><a class="breadcrumb-back" href="../visite-esami/"><span aria-hidden="true">‹ </span>Visite ed esami</a></div></nav>
 <main class="wrap" id="app">
-<div class="static-fallback">
-<h1>Esenzione ticket</h1>
-<p class="lead">Molte persone pagano il ticket per visite ed esami senza sapere che non dovrebbero. Con l'<strong>esenzione ticket per reddito</strong> (codici <strong>E01, E02, E03, E04</strong>) non paghi, in base all'età, alla situazione e al reddito della famiglia.</p>
+<!-- Esperimento «prima la risposta»: la risposta scritta sta qui, visibile subito anche senza JavaScript.
+     Il calcolo a domande (js/esenzione.js) parte dal pulsante e, con «Ricomincia», torna a questa risposta. -->
+<div class="risposta">
+<h1>Devo pagare il ticket?</h1>
+<p class="lead say">Dipende dall'età, dalla situazione e dal reddito della famiglia. Molte persone pagano il ticket per visite ed esami senza sapere che non dovrebbero.</p>
+<div class="notice ok">
+<p class="say"><strong>Non paghi il ticket per visite ed esami</strong> se sei in uno di questi casi (conta il reddito di tutta la famiglia dell'anno scorso):</p>
+<ul>
+<li class="say"><strong>Bambino sotto i 6 anni</strong> o <strong>persona di 65 anni o più</strong>, con reddito fino a 36.151,98 euro (codice E01).</li>
+<li class="say"><strong>Disoccupato</strong> iscritto al centro per l'impiego, con reddito fino a 8.263,31 euro (11.362,05 con il coniuge a carico, più 516,46 per ogni figlio) (codice E02).</li>
+<li class="say"><strong>Chi ha l'assegno sociale</strong>, senza limite di reddito (codice E03).</li>
+<li class="say"><strong>Chi ha più di 60 anni con la pensione al minimo</strong>, con gli stessi limiti dei disoccupati (codice E04).</li>
+</ul>
+<p class="say">Vale anche per i familiari a carico. Non vale per le medicine.</p>
 </div>
-<p class="js-only">Un momento…</p>
+<p class="js-only"><button type="button" class="btn primary big" data-go="age">✔️ Fai il conto per la tua situazione</button></p>
+<p class="say"><strong>Come si ottiene:</strong> chiedi al medico di famiglia, che spesso ce l'ha già nel computer. Altrimenti vai allo sportello esenzioni dell'ASP con tessera sanitaria e documento e firmi l'autocertificazione. <a href="#ottenere">Leggi i passi uno per uno</a>.</p>
+<p class="say">Se non sei in nessuno di questi casi, puoi avere un'<a href="#altre">esenzione per altri motivi</a>: una malattia cronica, un'invalidità, la gravidanza, gli esami di prevenzione.</p>
+</div>
 </main>
 <section class="wrap guida" id="guida" aria-labelledby="guida-titolo">
 <h2 id="guida-titolo">La guida passo passo: esenzione dal ticket per reddito</h2>
@@ -106,7 +120,7 @@
 <p>Il reddito che conta è quello di <strong>tutta la famiglia</strong> dell'<strong>anno scorso</strong>, lordo. Conta chi è nello stesso stato di famiglia e a carico. Lo trovi sulla dichiarazione dei redditi (il modello <strong>730</strong> o Redditi) o sulla <strong>CU</strong> della pensione.</p>
 <p>Le domande in alto in questa pagina fanno il conto per te: scrivi l'età, la situazione, la famiglia e il reddito. Se non sai il reddito, ti diciamo il limite.</p>
 
-<h3>4. Come si ottiene</h3>
+<h3 id="ottenere">4. Come si ottiene</h3>
 <ol>
 <li><strong>Chiedi al medico di famiglia.</strong> Spesso l'esenzione per reddito è già nel suo computer: la mette sulla ricetta e non devi fare niente.</li>
 <li><strong>Se non c'è, vai allo sportello esenzioni dell'ASP</strong>, nel distretto o al CUP. Porta la tessera sanitaria e la carta d'identità. Firmi un foglio in cui dichiari il reddito: si chiama <strong>autocertificazione</strong>. È gratis. In alcune ASP si può chiedere anche online: a Catania, per esempio, con il servizio <strong>ASPConTe</strong>. Per sapere dov'è lo sportello, guarda <a href="../numeri-utili/">i numeri utili</a>.</li>
@@ -117,7 +131,7 @@
 <p>L'esenzione per reddito vale fino al <strong>31 marzo dell'anno dopo</strong>. Poi va controllata di nuovo.</p>
 <p><strong>Il rinnovo dell'esenzione ticket:</strong> ogni anno, dopo il 31 marzo, chiedi al medico di famiglia se vede ancora l'esenzione nel suo computer. Se non c'è più, rifai l'autocertificazione allo sportello esenzioni dell'ASP, come al punto 4.</p>
 
-<h3>6. Le altre esenzioni</h3>
+<h3 id="altre">6. Le altre esenzioni</h3>
 <p>Queste esenzioni non dipendono dal reddito. Chiedi al medico di famiglia o allo sportello esenzioni dell'ASP.</p>
 <ul>
 <li><strong>C01</strong> – invalidità civile al 100%: non paghi il ticket per visite ed esami.</li>
