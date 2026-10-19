@@ -28,12 +28,7 @@ const ECCEZIONI = {
     { testo: /circa 4 mesi$/, perche: 'classe P: 120 giorni arrotondati in mesi', valore: (d) => Math.round(d.rules.max_wait_days.P / 30), unita: 'mesi' },
   ],
   'esenzione-ticket': [
-    { testo: /Ho 67 anni$/, perche: 'esempio nelle domande frequenti: una persona oltre i 65 anni' },
     { testo: /invalidità civile (al 100|dal 67|dal 67% al 99)%$/, perche: 'percentuali di invalidità dei codici C01 e C02: sono nel testo di other_exemptions' },
-  ],
-  'ricorso-invalidita': [
-    { testo: /circa 13\.660 euro$/, perche: 'gratuito patrocinio arrotondato alle decine', valore: (d) => Math.round(d['rules-ricorso'].gratuito_patrocinio_income / 10) * 10, unita: '€' },
-    { testo: /circa 27\.300 euro$/, perche: 'doppio del gratuito patrocinio arrotondato alle centinaia', valore: (d) => Math.round(d['rules-ricorso'].no_legal_costs_income / 100) * 100, unita: '€' },
   ],
   'assistenza-domiciliare': [
     { testo: /1\.129,11 euro$/, perche: 'esempio: 1.000 € di spese più la franchigia', valore: (d) => 1000 + d['rules-domiciliare'].detrazione.franchigia, unita: '€' },
@@ -41,7 +36,12 @@ const ECCEZIONI = {
     { testo: /190 euro$/, perche: 'esempio: la percentuale di detrazione su 1.000 €', valore: (d) => (1000 * d['rules-domiciliare'].detrazione.percent) / 100, unita: '€' },
   ],
   invalidita: [
-    { testo: /hai (<strong>)?6 mesi$/, perche: 'termine del ricorso: sta nel modulo ricorso-invalidita', valore: (d, tutti) => tutti['rules-ricorso'].appeal_months, unita: 'mesi' },
+    { testo: /[Hh]ai (<strong>)?6 mesi$/, perche: 'termine del ricorso: sta nel modulo ricorso-invalidita', valore: (d, tutti) => tutti['rules-ricorso'].appeal_months, unita: 'mesi' },
+  ],
+  'ricorso-invalidita': [
+    { testo: /circa 13\.660 euro$/, perche: 'gratuito patrocinio arrotondato alle decine', valore: (d) => Math.round(d['rules-ricorso'].gratuito_patrocinio_income / 10) * 10, unita: '€' },
+    { testo: /circa 27\.300 euro$/, perche: 'doppio del gratuito patrocinio arrotondato alle centinaia', valore: (d) => Math.round(d['rules-ricorso'].no_legal_costs_income / 100) * 100, unita: '€' },
+    { testo: /devono dartela entro 7 giorni$/, perche: 'copia della cartella clinica: sta nel modulo cartella-clinica', valore: (d, tutti) => tutti['rules-cartella'].deadline_days, unita: 'giorni' },
   ],
   'medico-famiglia': [
     { testo: /a Trapani, dopo un cambio bisogna aspettare 30 giorni$/, perche: 'regola della sola ASP Trapani, scritta nel testo di asp-sicilia.json (scelta_medico)' },
@@ -97,7 +97,15 @@ for (const m of reg.modules) {
     const guida = html.match(/<section class="wrap guida" id="guida"[\s\S]*?<\/section>/);
     assert.ok(guida, `${m.id}: manca la guida scritta`);
     const js = jsDelModulo(html);
-    const fonti = [[`${m.id}/index.html`, testoVisibile(guida[0])], ...(js ? [[`js/${js}`, read(`js/${js}`).replace(/\s+/g, ' ')]] : [])];
+    // La pagina principale (la guida scritta), le pagine corte della guida (moduli.json → "pages") e il js.
+    const fonti = [[`${m.id}/index.html`, testoVisibile(guida[0])]];
+    for (const sp of m.pages || []) {
+      const f = `${m.id}/${sp.id}/index.html`;
+      const main = read(f).match(/<main[^>]*>[\s\S]*?<\/main>/);
+      assert.ok(main, `${f}: manca <main>`);
+      fonti.push([f, testoVisibile(main[0])]);
+    }
+    if (js) fonti.push([`js/${js}`, read(`js/${js}`).replace(/\s+/g, ' ')]);
     const eccezioni = [...ECCEZIONI['*'], ...(ECCEZIONI[m.id] || [])].map((e) => ({ ...e, usata: false }));
     const errori = [];
     for (const [file, testo] of fonti) {
