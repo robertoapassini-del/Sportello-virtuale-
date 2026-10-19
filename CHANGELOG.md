@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 19/10/2026 — prevenzione: età degli screening controllate
+- Fonti: ASP Palermo (https://screening.asppalermo.org/), ASP Catania (https://www.aspct.it/comunicazione/eventi/salute-donna/). In Sicilia mammografia e sangue occulto restano 50–69 anni: nessuna estensione a 45–74 o 74. Età non cambiate.
+- ASP Trapani scrive Pap test 25–33 e test HPV 34–64: nella guida una frase dice che qualche ASP può avere età un po' diverse.
+- Screening gratuito dell'epatite C (nati 1969–1989): proroga nazionale al 31/12/2026, ma nessuna pagina siciliana del 2025–2026. Non aggiunto: da verificare con la Regione.
+
 ## 19/10/2026 — assegno di inclusione: niente più mese di stop
 - Fonte: INPS, messaggio n. 640 del 23/02/2026 (https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.03.assegno-di-inclusione-addio-al-mese-di-stop.html) e Ministero del Lavoro (https://www.lavoro.gov.it/notizie/pagine/adi-cosa-cambia-con-la-legge-di-bilancio-2026); L. 199/2025, art. 1 c. 160.
 - `rules-adi.json`: tolto `pause_months`; nuovo `renewal_first_month_percent` = 50 (il primo mese del rinnovo è la metà). Soglie (ISEE 10.140 €, reddito 6.500 € × scala, 8.190 € con tutti sopra i 67 anni) confermate per il 2026.
