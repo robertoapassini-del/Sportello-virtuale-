@@ -8,6 +8,7 @@
     "E03": { "label": "Chi ha l'assegno sociale (o la pensione sociale), e familiari a carico", "income_max": null },
     "E04": { "label": "Chi ha più di 60 anni con la pensione al minimo, e familiari a carico", "income_base": 8263.31, "income_with_spouse": 11362.05, "income_per_child": 516.46 }
   },
+  "age_limits": { "child_under": 6, "elderly_from": 65, "minimo_over": 60 },
   "valid_until": "31 marzo dell'anno dopo",
   "other_exemptions": [
     { "code": "C01", "text": "Invalidità civile al 100%: non paghi il ticket per visite ed esami." },
@@ -19,6 +20,34 @@
     { "code": "D", "text": "Esami di prevenzione (screening) nelle fasce di età previste: gratuiti." }
   ],
   "notes_internal": "TODO-VERIFY: E01 dai 65 anni compiuti (la legge dice «superiore a 65 anni»: confermare con ASP/Sistema TS che vale dal compleanno); soglie aggiornate (DM 11/12/2009; art. 8 c. 16 L. 537/1993) e codici C01-C03 con il legale/ASP. In Sicilia l'esenzione farmaci per reddito ha regole regionali: non calcolarla.",
+  "provenienza": {
+    "codes.E01": {
+      "url": "https://www.salute.gov.it/new/it/tema/esenzioni-dal-ticket/esenzioni-reddito/",
+      "verified": "2026-10-18",
+      "proof": "estratto",
+      "review_by": "2027-01-31",
+      "nota": "Soglie del DM 11/12/2009, ferme da anni: ricontrollare comunque ogni anno."
+    },
+    "codes.E02": {
+      "url": "https://www.salute.gov.it/new/it/tema/esenzioni-dal-ticket/esenzioni-reddito/",
+      "verified": "2026-10-18",
+      "proof": "estratto",
+      "review_by": "2027-01-31"
+    },
+    "codes.E04": {
+      "url": "https://www.salute.gov.it/new/it/tema/esenzioni-dal-ticket/esenzioni-reddito/",
+      "verified": "2026-10-18",
+      "proof": "estratto",
+      "review_by": "2027-01-31"
+    },
+    "age_limits": {
+      "url": "https://www.salute.gov.it/new/it/tema/esenzioni-dal-ticket/esenzioni-reddito/",
+      "verified": "2026-10-18",
+      "proof": "estratto",
+      "review_by": "2027-01-31",
+      "nota": "E01 sotto i 6 anni e dai 65; E04 oltre i 60. DA VERIFICARE: la legge dice «superiore a 65 anni», il sito conta dal compleanno."
+    }
+  },
   "sources": [
     { "label": "Ministero della Salute – Esenzioni per reddito (E01, E02, E03, E04)", "url": "https://www.salute.gov.it/new/it/tema/esenzioni-dal-ticket/esenzioni-reddito/" },
     { "label": "L. 537/1993, art. 8, comma 16 (esenzione per reddito)", "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1993-12-24;537" },

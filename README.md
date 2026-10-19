@@ -61,6 +61,15 @@ ricontrollati ogni 3 mesi. Procedura completa: [docs/regola-numeri.md](docs/rego
 `tests/contatti.test.mjs` blocca i numeri senza pagina ufficiale, data o prova, e quelli controllati più di
 92 giorni fa.
 
+## Regola per le cifre di legge
+
+**Ogni cifra mostrata** (soglie di reddito, giorni, mesi, età, percentuali) vive in `data/rules*.json` con
+la sua scheda nel blocco `provenienza`: pagina ufficiale, data del controllo, come è stata controllata
+(`testo`, `estratto`, `secondaria`, `sito`) e la data entro cui ricontrollarla (`review_by`). Procedura
+completa: [docs/regola-cifre.md](docs/regola-cifre.md). Due test la fanno rispettare: `tests/cifre.test.mjs`
+blocca una cifra scritta nella guida o nel js che non è uguale a quella nei dati, e
+`tests/provenienza.test.mjs` blocca una cifra senza scheda o con `review_by` passata.
+
 ## Provarlo sul tuo computer
 
 Le pagine leggono file JSON, quindi serve un piccolo server locale (aprire il file direttamente non funziona):
@@ -75,6 +84,8 @@ python3 -m http.server 8080      # oppure: npm start
 ```bash
 npm test
 ```
+
+Per vedere quali cifre e numeri andranno ricontrollati entro una certa data: `OGGI=2027-02-01 npm test`.
 
 Prova completa di **tutte le combinazioni** di risposte (9 province, tutte le classi, date al limite esatto,
 entrambi i moduli) in un browser vero, con il sito avviato su `localhost:8080`:

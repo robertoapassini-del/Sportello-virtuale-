@@ -24,6 +24,42 @@
   "prescription_validity_days": 180,
   "reminder_after_days": 10,
   "regional_plan_due": "2026-12-22",
+  "provenienza": {
+    "max_wait_days": {
+      "url": "https://www.salute.gov.it/new/it/tema/liste-di-attesa/piano-nazionale-governo-liste-di-attesa/",
+      "verified": "2026-10-18",
+      "proof": "estratto",
+      "review_by": "2026-12-22",
+      "nota": "Tempi del PNGLA 2026-2028. Il piano regionale siciliano, atteso entro il 22/12/2026, può cambiarli."
+    },
+    "callback_days": {
+      "url": "https://www.salute.gov.it/new/it/tema/liste-di-attesa/piano-nazionale-governo-liste-di-attesa/",
+      "verified": "2026-10-18",
+      "proof": "estratto",
+      "review_by": "2026-12-22",
+      "nota": "Tempi entro cui l'ASP richiama dopo la richiesta del percorso di tutela."
+    },
+    "prescription_validity_days": {
+      "url": "https://sovracup.regione.sicilia.it",
+      "verified": "2026-10-18",
+      "proof": "estratto",
+      "review_by": "2026-12-22",
+      "nota": "Validità della ricetta per la prenotazione: decreto regionale (SPEC.md § 4.3)."
+    },
+    "reminder_after_days": {
+      "verified": "2026-10-18",
+      "proof": "sito",
+      "review_by": "2027-10-19",
+      "nota": "Scelta del sito: dopo quanti giorni senza risposta consigliamo il sollecito."
+    },
+    "regional_plan_due": {
+      "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/24/26A04113/sg",
+      "verified": "2026-10-18",
+      "proof": "estratto",
+      "review_by": "2026-12-22",
+      "nota": "120 giorni dall'entrata in vigore del PNGLA: da quel giorno ricontrollare tutto il modulo."
+    }
+  },
   "sources": [
     {
       "label": "Piano Nazionale di Governo delle Liste d'Attesa 2026-2028 (Ministero della Salute)",

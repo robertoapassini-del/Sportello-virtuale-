@@ -17,7 +17,8 @@ const CHECK = process.argv.includes('--controlla');
 const read = (f) => fs.readFileSync(path.join(SITE, f), 'utf8');
 const stale = [];
 const write = (f, s) => {
-  if (CHECK) { if (read(f) !== s) stale.push(f); return; }
+  // Su Windows git può salvare i file con CR LF: si confronta il testo senza i CR.
+  if (CHECK) { if (read(f).replace(/\r\n/g, '\n') !== s) stale.push(f); return; }
   fs.mkdirSync(path.dirname(path.join(SITE, f)), { recursive: true });
   fs.writeFileSync(path.join(SITE, f), s);
   console.log('ok', f);

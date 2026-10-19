@@ -8,7 +8,8 @@
       "minor": 30,
       "other": 90
     },
-    "extra_documents_days_before_visit": 7
+    "extra_documents_days_before_visit": 7,
+    "minor_age": 18
   },
   "old_regime": {
     "domanda_window_days": 90,
@@ -22,6 +23,56 @@
     "contact_center_fixed": "803 164",
     "contact_center_mobile": "06 164164",
     "inps_risponde_url": "https://www.inps.it/it/it/sedi-e-contatti/contatti/inps-risponde.html"
+  },
+  "provenienza": {
+    "new_regime.deadline_days": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-05-03;62",
+      "verified": "2026-10-18",
+      "proof": "estratto",
+      "review_by": "2027-01-01",
+      "nota": "D.Lgs. 62/2024, art. 6. Dal 01/01/2027 vale in tutta Italia: ricontrollare il modulo."
+    },
+    "new_regime.extra_documents_days_before_visit": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-05-03;62",
+      "verified": "2026-10-18",
+      "proof": "estratto",
+      "review_by": "2027-01-01"
+    },
+    "new_regime.minor_age": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-05-03;62",
+      "verified": "2026-10-18",
+      "proof": "estratto",
+      "review_by": "2027-01-01",
+      "nota": "Minorenne: sotto i 18 anni."
+    },
+    "old_regime.domanda_window_days": {
+      "url": "https://riformadisabilita.gov.it/valutazione-di-base/",
+      "verified": "2026-10-18",
+      "proof": "estratto",
+      "review_by": "2027-01-01",
+      "nota": "Vecchia procedura: domanda all'INPS entro 90 giorni dal certificato. Finisce il 31/12/2026."
+    },
+    "old_regime.oncological_visit_days": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2006-03-09;80",
+      "verified": "2026-10-18",
+      "proof": "estratto",
+      "review_by": "2027-01-01",
+      "nota": "L. 80/2006, art. 6."
+    },
+    "old_regime.ordinary_convocation_days": {
+      "url": "https://riformadisabilita.gov.it/valutazione-di-base/",
+      "verified": "2026-10-18",
+      "proof": "secondaria",
+      "review_by": "2027-01-01",
+      "nota": "Valore indicativo citato dagli operatori, senza base di legge trovata (DPR 698/1994 da verificare)."
+    },
+    "full_national_application": {
+      "url": "https://riformadisabilita.gov.it/valutazione-di-base/",
+      "verified": "2026-10-18",
+      "proof": "estratto",
+      "review_by": "2027-01-01",
+      "nota": "Data in cui la riforma vale ovunque: i decreti di proroga escono spesso a fine anno."
+    }
   },
   "sources": [
     {
