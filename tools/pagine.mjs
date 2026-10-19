@@ -153,6 +153,19 @@ function shareBar(html, url) {
 `;
 }
 
+// Piè di pagina scritto nell'HTML, uguale a quello di js/common.js (renderFooter, che poi lo sostituisce):
+// così «Chi siamo», privacy e contatti si vedono anche senza JavaScript.
+const EMAIL = read('js/common.js').match(/MAINTAINER_EMAIL = '(.*?)'/)[1];
+const footer = (root) => `<footer class="site-footer" id="site-footer"><div class="wrap">
+<p><strong>Guida Sanità è fatto da volontari. Non siamo l'ASP, l'INPS né un altro ufficio pubblico.</strong> Diamo informazioni generali, non il parere di un avvocato o di un medico.</p>
+<nav aria-label="Informazioni">
+<a href="${root}privacy.html">Privacy</a>
+<a href="${root}fonti.html">Da dove prendiamo le informazioni</a>
+<a href="${root}note-legali.html">Chi siamo</a>
+<a href="mailto:${EMAIL}">Scrivici: ${EMAIL}</a>
+</nav>
+</div></footer>`;
+
 // Fonti e data del controllo in fondo alla guida scritta: dai file data/ del modulo (data/moduli.json).
 const dataFile = (f) => JSON.parse(read(`data/${f}.json`));
 const dateIt = (d) => { const [y, m, g] = d.split('-').map(Number); return `${g === 1 ? '1º' : g} ${['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno', 'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre'][m - 1]} ${y}`; };
@@ -251,7 +264,7 @@ for (const p of pages) {
   const faq = faqJsonLd(html);
   if (faq) html = html.replace(/<link rel="stylesheet"/, (m) => `${faq}${m}`);
   html = html.replace(/<!-- condividi[\s\S]*?<!-- \/condividi -->\n/, '')
-    .replace(/<footer class="site-footer"/, () => `${shareBar(html, url)}<footer class="site-footer"`);
+    .replace(/<footer class="site-footer"[\s\S]*?<\/footer>/, () => `${shareBar(html, url)}${footer(root)}`);
   html = html.replace(/<!-- blocco:([a-z-]+)[^>]*-->[\s\S]*?<!-- \/blocco:\1 -->/g, (_, name) => {
     if (!BLOCKS[name]) throw new Error(`Blocco sconosciuto «${name}» in ${p.file}`);
     return `<!-- blocco:${name} (creato da tools/pagine.mjs) -->\n${BLOCKS[name]()}\n<!-- /blocco:${name} -->`;
