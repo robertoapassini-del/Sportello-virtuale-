@@ -36,6 +36,21 @@ Requisiti completi: [SPEC.md](SPEC.md).
 - Le parole tecniche (PEC, URP, CUP) si spiegano la prima volta.
 - I riferimenti di legge vanno nei riquadri «Per saperne di più», non nel testo principale.
 - Le lettere per gli uffici restano in linguaggio formale: sono per l'ASP o l'INPS, non per l'utente.
+- Oltre alle parole semplici, nella guida scritta di ogni pagina vanno anche i **termini tecnici** che la gente
+  cerca su Google (es. «percorso di tutela», «classi di priorità U, B, D, P», «tempi massimi di attesa», «PEC all'ASP»),
+  spiegati la prima volta.
+
+## Pagine leggibili anche senza JavaScript
+
+- Ogni modulo ha nell'HTML, sotto `<main id="app">`, la **guida passo passo** scritta (`<section class="guida" id="guida">`):
+  è quello che vede Google e chi non ha JavaScript. Le domande interattive compaiono sopra. Se cambi una regola in
+  `data/`, ricontrolla anche il testo della guida.
+- Le parti della guida che vengono dai dati (tabella delle classi di priorità, come chiedere il percorso di tutela in
+  ogni ASP, «Numeri utili», fonti e data del controllo) sono tra `<!-- blocco:nome -->` e si rifanno con `npm run pagine`.
+- In fondo a ogni pagina: **Condividi su WhatsApp** (un link, funziona anche senza JavaScript) e **Stampa** (con
+  «Stampa la guida» si stampa solo la guida, con l'indirizzo della pagina in fondo al foglio).
+- Link interni sempre all'indirizzo della cartella (`../liste-attesa/`), mai a `index.html`.
+- `npm test` controlla tutto questo e che le pagine siano aggiornate (`node tools/pagine.mjs --controlla`).
 - Nei file `data/` le cose da verificare vanno **solo** nel campo `todo` (non viene mostrato). Un test
   controlla che nessun «TODO» arrivi agli utenti.
 
@@ -74,7 +89,7 @@ npm run test:combinazioni
 |---|---|
 | `index.html`, `js/home.js`, `data/moduli.json` | Pagina iniziale: 4 riquadri (uno per area), risultati della ricerca |
 | `visite-esami/`, `prevenzione-medico/`, `aiuto-a-casa/`, `invalidita-aiuti/`, `js/area.js` | Pagine delle 4 aree con l'elenco dei moduli. **Create da `npm run pagine`**: non modificarle a mano |
-| `tools/pagine.mjs` | Rifà testata, percorso «Inizio › Area», pagine delle aree e `sitemap.xml` da `data/moduli.json`. Rilanciarlo con `npm run pagine` dopo aver aggiunto o cambiato un modulo |
+| `tools/pagine.mjs` | Rifà testata, percorso «Inizio › Area», pagine delle aree, anteprima per i messaggi (`og:`), barra «Condividi / Stampa», i blocchi della guida scritta presi dai dati e `sitemap.xml`. Rilanciarlo con `npm run pagine` dopo aver aggiunto o cambiato un modulo |
 | `js/icons.js`, `tools/icone.mjs` | Icone disegnate (Lucide, licenza ISC in `fonts/LICENSE-lucide.txt`). Nei testi si scrivono emoji; `iconize` in `js/common.js` le sostituisce sullo schermo. Per una nuova emoji: aggiungerla in `tools/icone.mjs`, poi `npm install --no-save lucide-static && npm run icone` |
 | `liste-attesa/`, `js/liste-attesa.js` | Modulo 1: domande, risultato, lettera, «E adesso?» |
 | `invalidita/`, `js/invalidita.js` | Modulo 2: scadenza, sollecito all'INPS, cosa portare |

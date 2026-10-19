@@ -66,7 +66,7 @@ const screens = {
       <h1>Prima serve il verbale</h1>
       <p class="say">Il ricorso si può fare solo dopo aver ricevuto il verbale. I ${rules.appeal_months} mesi partono da quel giorno.</p>
       <p class="say">Se la visita non arriva, c'è un'altra pagina che ti aiuta:</p>
-      <a class="btn choice" href="../invalidita/index.html"><span class="ico" aria-hidden="true">♿</span><span class="txt">La visita per l'invalidità non arriva</span></a>
+      <a class="btn choice" href="../invalidita/"><span class="ico" aria-hidden="true">♿</span><span class="txt">La visita per l'invalidità non arriva</span></a>
       ${disclaimer(rules.last_verified)}
       ${restartBtn()}`,
   }),

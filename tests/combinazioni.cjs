@@ -104,8 +104,8 @@ for (const pr of inps.provinces) {
 
 // Moduli 3 (cartella clinica, 7 giorni) e 4 (ausili, 20 giorni).
 const M34 = [
-  { mod: 3, url: 'cartella-clinica/index.html', days: 7, late: 'Sono in ritardo: puoi sollecitare', ok: 'Non è ancora tardi' },
-  { mod: 4, url: 'ausili/index.html', days: 20, late: "I 20 giorni sono passati: l'autorizzazione vale lo stesso", ok: 'Non è ancora tardi' },
+  { mod: 3, url: 'cartella-clinica/', days: 7, late: 'Sono in ritardo: puoi sollecitare', ok: 'Non è ancora tardi' },
+  { mod: 4, url: 'ausili/', days: 20, late: "I 20 giorni sono passati: l'autorizzazione vale lo stesso", ok: 'Non è ancora tardi' },
 ];
 for (const m of M34) {
   for (const a of asp.asl) {
@@ -238,7 +238,7 @@ async function runCase(page, c) {
   };
 
   if (c.mod === 1) {
-    await page.goto(`${BASE}liste-attesa/index.html`);
+    await page.goto(`${BASE}liste-attesa/`);
     await btn(/Comincia/);
     if (c.access === 'followup' && c.p === 'Palermo') await checkScreen('domanda provincia');
     await btn(new RegExp(`^${c.p}$`));
@@ -352,7 +352,7 @@ async function runCase(page, c) {
 
   // ---- modulo 5: esenzione ----
   if (c.mod === 5) {
-    await page.goto(`${BASE}esenzione-ticket/index.html`);
+    await page.goto(`${BASE}esenzione-ticket/`);
     await btn(/Comincia/);
     await btn(AGE[c.ageBand]);
     await btn(STATUS[c.status]);
@@ -376,7 +376,7 @@ async function runCase(page, c) {
 
   // ---- modulo 6: ricorso ----
   if (c.mod === 6) {
-    await page.goto(`${BASE}ricorso-invalidita/index.html`);
+    await page.goto(`${BASE}ricorso-invalidita/`);
     await btn(/Comincia/);
     if (c.path === 'notyet') await btn(/^No, aspetto/);
     else {
@@ -398,7 +398,7 @@ async function runCase(page, c) {
 
   // ---- modulo 7: assegno di inclusione ----
   if (c.mod === 7) {
-    await page.goto(`${BASE}assegno-inclusione/index.html`);
+    await page.goto(`${BASE}assegno-inclusione/`);
     await btn(/Comincia/);
     await btn(c.household === true ? /^Sì$/ : c.household === false ? /^No, nessuna/ : /^Non lo so/);
     await btn(c.residency === true ? /^Sì$/ : c.residency === false ? /^No$/ : /^Non sono sicuro/);
@@ -411,7 +411,7 @@ async function runCase(page, c) {
   }
   // ---- modulo 9: piano terapeutico ----
   if (c.mod === 9) {
-    await page.goto(`${BASE}piano-terapeutico/index.html`);
+    await page.goto(`${BASE}piano-terapeutico/`);
     await btn(/Comincia/);
     if (c.mod === 9) await btn(c.first ? /^No, devo farlo/ : /^Sì, ce l/);
     if (!c.first) { await page.fill('#expiryDate', c.expiry); await btn(/Controlla/); }
@@ -424,7 +424,7 @@ async function runCase(page, c) {
   }
   // ---- moduli 10 e 11: domiciliare / palliative ----
   if (c.mod === 10 || c.mod === 11) {
-    await page.goto(`${BASE}${c.mod === 10 ? 'assistenza-domiciliare' : 'cure-palliative'}/index.html`);
+    await page.goto(`${BASE}${c.mod === 10 ? 'assistenza-domiciliare' : 'cure-palliative'}/`);
     await btn(/Comincia/);
     await btn(new RegExp(`^${c.p}$`));
     if (c.path === 'none') await btn(c.mod === 10 ? /^Non ho ancora chiesto/ : /come funziona/);
@@ -461,7 +461,7 @@ async function runCase(page, c) {
 
   // ---- modulo 12: prevenzione ----
   if (c.mod === 12) {
-    await page.goto(`${BASE}prevenzione/index.html`);
+    await page.goto(`${BASE}prevenzione/`);
     await btn(/Comincia/);
     await btn(c.sex === 'F' ? /^Una donna/ : /^Un uomo/);
     await page.fill('#age', String(c.age)); await btn(/Avanti/);
@@ -477,7 +477,7 @@ async function runCase(page, c) {
   }
   // ---- modulo 13: medico di famiglia ----
   if (c.mod === 13) {
-    await page.goto(`${BASE}medico-famiglia/index.html`);
+    await page.goto(`${BASE}medico-famiglia/`);
     await btn(/Comincia/);
     await btn(new RegExp(`^${c.p}$`));
     await btn({ '0-5': /sotto i 6 anni/, '6-13': /da 6 a 13/, '14-15': /14 o 15/, '16+': /^Un adulto/ }[c.band]);
@@ -552,7 +552,7 @@ async function runCase(page, c) {
   }
 
   // ---- modulo 2 ----
-  await page.goto(`${BASE}invalidita/index.html`);
+  await page.goto(`${BASE}invalidita/`);
   await btn(/Comincia/);
   await btn(new RegExp(`^${c.p}$`));
   await page.fill('#certDate', c.cert);

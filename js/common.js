@@ -67,7 +67,7 @@ export function helpBox() {
       <li><span class="ico" aria-hidden="true">👨‍⚕️</span> Il tuo medico di famiglia</li>
       <li><span class="ico" aria-hidden="true">🏢</span> Un patronato (per esempio INCA, ACLI, INAS). È gratis.</li>
       <li><span class="ico" aria-hidden="true">🏥</span> L'ufficio URP della tua ASP: è l'ufficio che ascolta i cittadini</li>
-      <li><span class="ico" aria-hidden="true">📞</span> <a href="${siteRoot()}numeri-utili/index.html">I numeri utili: guardia medica, CUP, ASP, INPS</a></li>
+      <li><span class="ico" aria-hidden="true">📞</span> <a href="${siteRoot()}numeri-utili/">I numeri utili: guardia medica, CUP, ASP, INPS</a></li>
     </ul>
     <p>Puoi mostrare questa pagina a chi ti aiuta.</p>
   </details>`;
@@ -102,7 +102,7 @@ export async function renderSources(root = '') {
 
 // «Ti serve altro?»: torna alla scelta guidata. In fondo a ogni schermata dei moduli.
 export function moreHelp() {
-  return `<a class="btn center more-help no-say" href="../index.html">🏠 Ti serve altro? Torna all'inizio</a>`;
+  return `<a class="btn center more-help no-say" href="../">🏠 Ti serve altro? Torna all'inizio</a>`;
 }
 
 // Riquadro «Non hai la PEC?»: sotto ogni lettera. Modi validi per mandarla lo stesso.
@@ -327,7 +327,7 @@ export function aspCalls(a, topics = []) {
     .filter((p) => !seen.has(p.number) && seen.add(p.number));
   const info = (p) => [p.address && `📍 ${esc(p.address)}`, p.hours && esc(p.hours)].filter(Boolean).join('<br>');
   return `${list.map((p) => `${callButton(p.label, p.number)}${info(p) ? `<p class="muted call-info">${info(p)}</p>` : ''}`).join('')}
-    <p><a href="${siteRoot()}numeri-utili/index.html#${esc(a.id)}">📞 Tutti i numeri dell'${esc(a.name)}: guardia medica, CUP, URP</a></p>`;
+    <p><a href="${siteRoot()}numeri-utili/#${esc(a.id)}">📞 Tutti i numeri dell'${esc(a.name)}: guardia medica, CUP, URP</a></p>`;
 }
 
 // Riquadro «Dov'è l'ufficio»: i contatti dell'ASP di un argomento, con titolo e una frase.
@@ -449,13 +449,25 @@ function bandify() {
 
 if (typeof document !== 'undefined') {
   // Ricerca nella testata dalle altre pagine: si va alla home con il testo dopo «#»
-  // (index.html#q=…), che il browser non manda al server. In home la gestisce home.js.
+  // (./#q=…), che il browser non manda al server. In home la gestisce home.js.
   document.addEventListener('submit', (e) => {
     const form = e.target;
     if (e.defaultPrevented || !form.matches('.header-search')) return;
     e.preventDefault();
     const q = form.elements.q.value.trim();
     location.href = `${form.getAttribute('action')}${q ? `#q=${encodeURIComponent(q)}` : ''}`;
+  });
+  // «Stampa la guida» (barra in fondo alla pagina, creata da tools/pagine.mjs): sul foglio
+  // va solo la guida scritta, senza le domande. «Stampa questa pagina»: tutta la pagina.
+  document.addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-action="print-page"]');
+    if (!b) return;
+    const only = b.dataset.print === 'guida';
+    if (only) document.body.classList.add('printing-guide');
+    const done = () => { document.body.classList.remove('printing-guide'); window.removeEventListener('afterprint', done); };
+    window.addEventListener('afterprint', done);
+    window.print();
+    setTimeout(done, 1000);
   });
   iconize(document.body);
   bandify();

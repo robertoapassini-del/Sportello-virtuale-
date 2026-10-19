@@ -108,7 +108,7 @@ const afterVerbale = `
     la pensione di invalidità, l'aiuto per trovare lavoro, il permesso per il parcheggio.</p>
     <p>Chiedi a un patronato o guarda il sito <a href="https://www.inps.it" target="_blank" rel="noopener">inps.it</a>.</p>
     <p>Se il foglio del risultato ha una scadenza, i tuoi aiuti continuano fino alla nuova visita (legge 114/2014).</p>
-    <p>Se il verbale ti sembra sbagliato, hai <strong>6 mesi</strong> per il ricorso: <a href="../ricorso-invalidita/index.html">controlla quanto tempo ti resta</a>.</p>
+    <p>Se il verbale ti sembra sbagliato, hai <strong>6 mesi</strong> per il ricorso: <a href="../ricorso-invalidita/">controlla quanto tempo ti resta</a>.</p>
     <p class="muted">Noi non calcoliamo percentuali né importi.</p>
   </details>`;
 

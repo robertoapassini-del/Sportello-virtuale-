@@ -2,6 +2,12 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 19/10/2026 — pagine leggibili senza JavaScript, WhatsApp, stampa
+- Ogni modulo ha la guida passo passo scritta nell'HTML (per Google e per chi non ha JavaScript), con anche i termini tecnici che la gente cerca. Titoli e descrizioni delle pagine riscritti con le stesse parole.
+- Liste d'attesa: tabella delle classi U, B, D, P (da `rules.json`) e come chiedere il percorso di tutela in ogni ASP (da `asp-sicilia.json`), creati da `npm run pagine`. «Numeri utili»: tutti i numeri anche senza JavaScript.
+- Pulsanti «Condividi su WhatsApp» e «Stampa» su ogni pagina; anteprima del link (`og:title`, `og:description`); versione stampabile.
+- Link interni senza `index.html` (`../liste-attesa/`), come l'indirizzo canonico.
+
 ## 18/10/2026 — Catania: pagine sparite dal sito dell'ASP
 - Fonte: pagina ufficiale «ADI, Cure palliative, RSA» (https://www.aspct.it/azienda/dipartimenti/dipartimenti-sanitari/dipartimento-delle-cure-intermedie-domiciliari-e-della-speci/u-o-c-coordinamento-e-controllo-adi-cure-palliative-rsa-e-lu/adi-cure-palliative-rsa/) e pagina «Contatti» (https://www.aspct.it/azienda/contatti/), lette per intero; nessuna notizia di chiusure o traslochi.
 - URP numero verde 800 279761: la pagina `organizzazione/urp.aspx` non esiste più (404) → pagina «Contatti», prova `pagina`.

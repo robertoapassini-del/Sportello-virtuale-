@@ -1,5 +1,5 @@
 // Pagina iniziale: la domanda e 4 grandi riquadri, uno per area. Ogni riquadro porta
-// alla pagina dell'area (per esempio visite-esami/index.html), come la home di NHS.uk.
+// alla pagina dell'area (per esempio visite-esami/), come la home di NHS.uk.
 // La ricerca è nella testata: qui i risultati compaiono mentre si scrive.
 import { esc, loadJSON, renderFooter, helpBox, listenButton, speakScreen, sourcesBox } from './common.js';
 
@@ -38,7 +38,7 @@ const frequent = () => `
   <section class="frequent">
   <h2 class="say">Le domande più frequenti</h2>
   <ul class="action-links">${FREQUENTI.map(([id, text]) => `
-    <li><a class="action-link" href="${id}/index.html"><span class="arrow" aria-hidden="true">▶️</span><span class="txt say">${esc(text)}</span></a></li>`).join('')}
+    <li><a class="action-link" href="${id}/"><span class="arrow" aria-hidden="true">▶️</span><span class="txt say">${esc(text)}</span></a></li>`).join('')}
   </ul>
   </section>`;
 
@@ -58,7 +58,7 @@ const urgent = `
 function render() {
   app.innerHTML = `${intro()}
     ${results}
-    <div class="area-grid">${reg.groups.map((g) => card(`${g.page}/index.html`, g.icon, g.title, g.small)).join('')}</div>
+    <div class="area-grid">${reg.groups.map((g) => card(`${g.page}/`, g.icon, g.title, g.small)).join('')}</div>
     <div class="home-row">${urgent}${frequent()}</div>
     ${about}
     ${helpBox()}${sourcesBox(rulesSources, {})}`;
@@ -82,7 +82,7 @@ function showResults(text) {
   box.hidden = false;
   document.getElementById('q-title').textContent = `Risultati per «${text.trim()}»`;
   list.innerHTML = hits.length
-    ? hits.map((m) => card(`${m.id}/index.html`, m.icon, m.title, m.small)).join('')
+    ? hits.map((m) => card(`${m.id}/`, m.icon, m.title, m.small)).join('')
     : '<p class="muted">Non abbiamo trovato niente con questa parola. Prova con un\'altra, oppure scegli uno dei riquadri qui sotto.</p>';
 }
 
@@ -103,7 +103,7 @@ app.addEventListener('click', (e) => {
   const params = new URLSearchParams(location.search);
   // Vecchi link ai gruppi (?gruppo=casa): ora ogni area ha la sua pagina.
   const old = reg.groups.find((g) => g.id === params.get('gruppo'));
-  if (old) { location.replace(`${old.page}/index.html`); return; }
+  if (old) { location.replace(`${old.page}/`); return; }
 
   render();
   // In questa pagina la ricerca della testata non ricarica: mostra i risultati subito.
@@ -115,7 +115,7 @@ app.addEventListener('click', (e) => {
       showResults(hq.value);
       document.getElementById('q-box').scrollIntoView({ block: 'start' });
     });
-    // Ricerca partita da un'altra pagina: index.html#q=carrozzina (o ?q= senza JavaScript).
+    // Ricerca partita da un'altra pagina: ./#q=carrozzina (o ?q= senza JavaScript).
     const asked = new URLSearchParams(location.hash.slice(1)).get('q') || params.get('q');
     if (asked) { hq.value = asked; showResults(asked); }
   }

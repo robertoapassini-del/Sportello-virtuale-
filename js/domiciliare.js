@@ -34,7 +34,7 @@ const steps = () => `
     <ul class="clean">
       <li>Comprende: medicazioni, prelievi, terapie, fisioterapia, controllo di cateteri e sondini, educazione dei familiari.</li>
       <li>Non comprende la badante né l'aiuto per pulizie e spesa: per quelli si chiede al <strong>Comune</strong> (servizio sociale, SAD) e, se c'è l'invalidità, l'indennità di accompagnamento.</li>
-      <li>Per i malati gravi in fase avanzata esistono le <a href="../cure-palliative/index.html">cure palliative a casa</a>.</li>
+      <li>Per i malati gravi in fase avanzata esistono le <a href="../cure-palliative/">cure palliative a casa</a>.</li>
     </ul>
   </details>`;
 
@@ -117,7 +117,7 @@ const screens = {
         <p><a href="https://regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/dipartimento-pianificazione-strategica/altri-contenuti/albo-trasporto-emodializzati" target="_blank" rel="noopener">💻 Elenco della Regione per il trasporto dei dializzati</a></p>
       </details>
 
-      <p class="say">Per i numeri del PUA e della guardia medica: <a href="../numeri-utili/index.html">📞 Numeri utili</a>.</p>
+      <p class="say">Per i numeri del PUA e della guardia medica: <a href="../numeri-utili/">📞 Numeri utili</a>.</p>
       <button type="button" class="btn primary" data-go="province">▶️ Come chiedere l'assistenza a casa</button>
       ${disclaimer(rules.last_verified)}`,
   }),

@@ -18,7 +18,7 @@ const howToGet = () => `
   <h2 class="say">Come si ottiene</h2>
   <ol class="big-steps">
     <li class="say"><strong>Chiedi al medico di famiglia.</strong> Spesso l'esenzione per reddito è già nel suo computer: la mette sulla ricetta e non devi fare niente.</li>
-    <li class="say"><strong>Se non c'è, vai allo sportello esenzioni dell'ASP</strong> (nel distretto o al CUP) con tessera sanitaria e carta d'identità. Firmi un foglio in cui dichiari il reddito (autocertificazione). È gratis. <a href="../numeri-utili/index.html">📍 Dov'è lo sportello nella tua provincia</a></li>
+    <li class="say"><strong>Se non c'è, vai allo sportello esenzioni dell'ASP</strong> (nel distretto o al CUP) con tessera sanitaria e carta d'identità. Firmi un foglio in cui dichiari il reddito (autocertificazione). È gratis. <a href="../numeri-utili/">📍 Dov'è lo sportello nella tua provincia</a></li>
     <li class="say"><strong>Quando prenoti, di' che hai l'esenzione.</strong> Deve essere scritta sulla ricetta, altrimenti il ticket lo paghi.</li>
   </ol>
   <div class="notice warn"><p class="say">⚠️ L'esenzione vale fino al <strong>${esc(rules.valid_until)}</strong>. Poi va controllata di nuovo. Se dichiari un reddito falso, devi restituire i soldi e paghi una multa.</p></div>`;

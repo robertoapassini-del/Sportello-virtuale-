@@ -187,12 +187,36 @@ table.fields th { width: 40%; }
 .skip-link:focus { top: 8px; outline: 3px solid #212b32; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
+/* ---- Guida scritta nella pagina: si legge anche senza JavaScript (e la legge Google).
+   Le domande passo passo, con JavaScript, compaiono sopra. ---- */
+.guida { margin-top: 36px; margin-bottom: 8px; }
+.guida > h2:first-child { margin-top: 0; padding-top: 20px; border-top: 4px solid var(--border); }
+.guida .guida-intro { font-size: 1.05rem; }
+.guida dl { margin: 0 0 12px; }
+.guida dt { font-weight: 700; margin-top: 10px; }
+.guida dd { margin: 0 0 4px; }
+.guida table { width: 100%; border-collapse: collapse; background: var(--surface); margin: 8px 0 16px; font-size: 0.95rem; }
+.guida th, .guida td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--border); }
+.guida ol, .guida ul:not(.clean) { padding-left: 1.3rem; }
+.guida li { margin: 6px 0; }
+
+/* ---- Condividi su WhatsApp / Stampa (creata da tools/pagine.mjs) ---- */
+.share-bar { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; margin-bottom: 24px; }
+.share-bar .btn { width: auto; flex: 1 1 14rem; margin: 0; display: inline-flex; align-items: center; justify-content: center; gap: 10px; text-align: center; }
+.share-bar .btn .i { width: 1.4em; height: 1.4em; flex: none; }
+.btn.share-wa, .btn.share-wa:hover { background: #0b6b3a; color: #fff; border-bottom-color: #063d21; }
+.btn.share-wa:hover .txt, .btn.share-wa:hover { text-decoration: underline; }
+.js-inline { display: none !important; }
+.js .js-inline { display: inline-flex !important; }
+.print-url { display: none; }
+
 /* Print only the letter ("Scarica PDF" = browser print → Salva come PDF). */
 #print-area { display: none; }
 @media print {
   body.printing > *:not(#print-area) { display: none !important; }
   body.printing #print-area { display: block; white-space: pre-wrap; font-family: "Times New Roman", serif; font-size: 12pt; line-height: 1.45; color: #000; }
   @page { margin: 2cm; }
+
 }
 
 /* ---- Semplicità: pulsanti grandi con icone, lettura ad alta voce ---- */
@@ -468,4 +492,25 @@ ul.area-list li > .btn { flex: 1; }
   .home-row > .care-urgent { order: 2; }
   .home-row > .care-urgent, .home-row > .frequent { margin-top: 28px; }
   .home-row .frequent h2 { margin-top: 0; }
+}
+
+/* Versione stampabile (in fondo al file, così vale sopra le altre regole). */
+@media print {
+  /* Pagina stampata: niente menu, ricerca, pulsanti e piè di pagina. */
+  body { background: #fff; color: #000; font-size: 11pt; }
+  .header-search, .header-nav, .breadcrumb, .skip-link, .share-bar .btn, .page-feedback, .site-footer,
+  .topbar, .more-help, details.help, .listen, .back, noscript { display: none !important; }
+  .site-header, .page-band { background: none !important; color: #000 !important; border: none !important; }
+  .site-header .brand, .site-header .brand-tag { color: #000 !important; }
+  .wrap { max-width: none; padding: 0; }
+  .card, .notice, .btn, details.fonti { break-inside: avoid; }
+  .guida h2, .guida h3 { break-after: avoid; }
+  .guida { margin-top: 12pt; }
+  .guida a[href^="http"]::after, .guida a[href^="mailto:"]::after { content: " (" attr(href) ")"; font-size: 9pt; word-break: break-all; }
+  .print-url { display: block; margin: 12pt 0 0; font-size: 9pt; }
+  .share-bar { display: block; margin: 0; }
+  a { color: #000; }
+  /* «Stampa la guida»: solo la guida, senza le domande passo passo. */
+  body.printing-guide #app { display: none !important; }
+  body.printing-guide .guida > h2:first-child { border-top: none; padding-top: 0; }
 }
