@@ -1,4 +1,5 @@
 // Modulo 1 — liste d'attesa. Domande → risultato → lettera → "E adesso?".
+// Prima la risposta: la pagina mostra subito la risposta scritta; il conto e la lettera partono dal pulsante.
 // Le risposte restano solo in memoria (oggetti `state` e `person`) e si
 // cancellano quando si chiude la pagina. Niente viene inviato.
 // Testi: italiano semplice, frasi brevi, un'idea per frase.
@@ -13,6 +14,8 @@ import { createNav } from './flow.js';
 
 const ROOT = '../';
 const app = document.getElementById('app');
+// La risposta scritta della pagina: è la prima schermata del percorso.
+const answerHtml = app.innerHTML;
 
 let rules;
 let data;
@@ -170,22 +173,9 @@ function docIcon(d) {
 // ---------- schermate ----------
 
 const screens = {
-  intro: () => ({
-    html: `
-      <div class="hero" aria-hidden="true">📅</div>
-      <h1>La visita è troppo lontana?</h1>
-      <p class="lead say">Il medico ti ha dato una ricetta. Il CUP ti ha dato un appuntamento tra tanto tempo?</p>
-      <p class="say">La legge dice che hai diritto a farla prima. Ti aiutiamo a capire cosa fare. Bastano poche domande.</p>
-      <div class="notice info">
-        <p class="say"><strong>Prendi questi fogli:</strong></p>
-        <ul class="icon-list say">
-          <li><span class="ico" aria-hidden="true">📄</span> La ricetta</li>
-          <li><span class="ico" aria-hidden="true">🧾</span> Il foglio della prenotazione</li>
-        </ul>
-      </div>
-      <button type="button" class="btn primary big" data-go="province">▶️ Comincia</button>
-      <p class="muted say">È gratis. Non salviamo niente.</p>`,
-  }),
+  // Prima schermata: la risposta scritta che è già nella pagina (vedi index.html).
+  // Così «Ricomincia» e il tasto Indietro riportano alla risposta, non a una presentazione.
+  intro: () => ({ html: answerHtml }),
 
   province: () => ({
     html: `${progress(1)}

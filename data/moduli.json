@@ -41,31 +41,64 @@
     {
       "id": "liste-attesa",
       "group": "cure",
-      "data": ["rules", "asp-sicilia"],
+      "data": [
+        "rules",
+        "asp-sicilia"
+      ],
       "icon": "📅",
       "title": "La visita o l'esame è troppo lontano",
       "small": "Il CUP mi ha dato un appuntamento tra tanto tempo",
-      "keywords": "visita esame appuntamento cup prenotazione prenotare sovracup aspconte disdire lista attesa lontano tempi ricetta priorità tutela"
+      "keywords": "visita esame appuntamento cup prenotazione prenotare sovracup aspconte disdire lista attesa lontano tempi ricetta priorità tutela percorso di tutela intramoenia sollecito",
+      "pages": [
+        {
+          "id": "tempi-massimi",
+          "title": "Quanto puoi aspettare: le classi U, B, D e P"
+        },
+        {
+          "id": "percorso-di-tutela",
+          "title": "Come chiedere il percorso di tutela all'ASP"
+        },
+        {
+          "id": "nessuna-risposta",
+          "title": "Se il CUP non ti dà una data o nessuno risponde"
+        }
+      ]
     },
     {
       "id": "esenzione-ticket",
       "group": "cure",
-      "data": ["rules-esenzione"],
+      "data": [
+        "rules-esenzione"
+      ],
       "icon": "🎫",
       "title": "Devo pagare il ticket?",
       "small": "Esenzione per età o per reddito",
       "keywords": "ticket pagare esenzione reddito età over 65 anziani pensione disoccupato rinnovo delega aspconte gratis patologia malattia cronica invalidità gravidanza 048",
       "pages": [
-        { "id": "chi-ha-diritto", "title": "Chi ha diritto: i codici E01, E02, E03 ed E04" },
-        { "id": "come-chiedere", "title": "Come si chiede l'esenzione" },
-        { "id": "rinnovo", "title": "Quanto dura e come si rinnova" },
-        { "id": "altre-esenzioni", "title": "Esenzione per malattia, invalidità, gravidanza" }
+        {
+          "id": "chi-ha-diritto",
+          "title": "Chi ha diritto: i codici E01, E02, E03 ed E04"
+        },
+        {
+          "id": "come-chiedere",
+          "title": "Come si chiede l'esenzione"
+        },
+        {
+          "id": "rinnovo",
+          "title": "Quanto dura e come si rinnova"
+        },
+        {
+          "id": "altre-esenzioni",
+          "title": "Esenzione per malattia, invalidità, gravidanza"
+        }
       ]
     },
     {
       "id": "piano-terapeutico",
       "group": "cure",
-      "data": ["rules-piano"],
+      "data": [
+        "rules-piano"
+      ],
       "icon": "💊",
       "title": "La medicina con il piano terapeutico",
       "small": "Cos'è e quando rinnovarlo",
@@ -74,7 +107,10 @@
     {
       "id": "cartella-clinica",
       "group": "cure",
-      "data": ["rules-cartella", "asp-sicilia"],
+      "data": [
+        "rules-cartella",
+        "asp-sicilia"
+      ],
       "icon": "📁",
       "title": "Non mi danno la cartella clinica o i referti",
       "small": "L'ho chiesta all'ospedale e non arriva",
@@ -83,7 +119,10 @@
     {
       "id": "prevenzione",
       "group": "prevenzione",
-      "data": ["rules-prevenzione", "asp-sicilia"],
+      "data": [
+        "rules-prevenzione",
+        "asp-sicilia"
+      ],
       "icon": "🛡️",
       "title": "Quali controlli e vaccini posso fare gratis?",
       "small": "Esami contro i tumori e vaccini per la tua età",
@@ -92,7 +131,10 @@
     {
       "id": "medico-famiglia",
       "group": "prevenzione",
-      "data": ["rules-medico", "asp-sicilia"],
+      "data": [
+        "rules-medico",
+        "asp-sicilia"
+      ],
       "icon": "👨‍⚕️",
       "title": "Scegliere o cambiare il medico di base o il pediatra",
       "small": "Come si fa e cosa fare se non trovi posto",
@@ -101,7 +143,10 @@
     {
       "id": "assistenza-domiciliare",
       "group": "casa",
-      "data": ["rules-domiciliare", "asp-sicilia"],
+      "data": [
+        "rules-domiciliare",
+        "asp-sicilia"
+      ],
       "icon": "🏠",
       "title": "Serve un infermiere o un medico a casa",
       "small": "Assistenza domiciliare dell'ASP",
@@ -110,7 +155,10 @@
     {
       "id": "ausili",
       "group": "casa",
-      "data": ["rules-ausili", "asp-sicilia"],
+      "data": [
+        "rules-ausili",
+        "asp-sicilia"
+      ],
       "icon": "🦽",
       "title": "La carrozzina, il letto o i pannoloni non arrivano",
       "small": "Ho fatto la domanda all'ASP e aspetto",
@@ -119,7 +167,10 @@
     {
       "id": "cure-palliative",
       "group": "casa",
-      "data": ["rules-palliative", "asp-sicilia"],
+      "data": [
+        "rules-palliative",
+        "asp-sicilia"
+      ],
       "icon": "🕊️",
       "title": "Cure palliative a casa o in hospice",
       "small": "Per una malattia grave e avanzata",
@@ -128,7 +179,10 @@
     {
       "id": "invalidita",
       "group": "invalidita",
-      "data": ["rules-invalidita", "inps-sicilia"],
+      "data": [
+        "rules-invalidita",
+        "inps-sicilia"
+      ],
       "icon": "♿",
       "title": "La visita per l'invalidità non arriva",
       "small": "Il medico ha mandato il certificato all'INPS",
@@ -137,7 +191,9 @@
     {
       "id": "ricorso-invalidita",
       "group": "invalidita",
-      "data": ["rules-ricorso"],
+      "data": [
+        "rules-ricorso"
+      ],
       "icon": "⚖️",
       "title": "Il verbale di invalidità è sbagliato",
       "small": "Ho 6 mesi per il ricorso: quanto mi resta?",
@@ -146,7 +202,9 @@
     {
       "id": "assegno-inclusione",
       "group": "invalidita",
-      "data": ["rules-adi"],
+      "data": [
+        "rules-adi"
+      ],
       "icon": "🪪",
       "title": "Ho diritto all'assegno di inclusione?",
       "small": "Le condizioni e come fare la domanda",
