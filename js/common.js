@@ -3,6 +3,7 @@
 // anonimo delle visite e dei «Sì / No» (vedi count()): mai quello che scrivi.
 import { formatIt, art } from './engine.js';
 import { ICONS } from './icons.js';
+import { checkWith } from './controlla.js';
 
 // TODO: sostituire con l'indirizzo dedicato quando il dominio esiste (SPEC 8, 9.0).
 export const MAINTAINER_EMAIL = 'info@guidasanita.it';
@@ -40,9 +41,11 @@ export async function loadJSON(path) {
   return res.json();
 }
 
+// L'ufficio a cui chiedere conferma dipende dal modulo (js/controlla.js): la cartella della pagina.
 export function disclaimer(date) {
+  const slug = location.pathname.split('/').filter(Boolean).filter((x) => x !== 'index.html').pop() || '';
   return `<p class="muted">Queste sono informazioni generali, non il parere di un avvocato o di un medico.
-  Controlla sempre con la tua ASP. Informazioni aggiornate ${art('al', date)}${esc(formatIt(date))}.</p>`;
+  ${checkWith(slug)} Informazioni aggiornate ${art('al', date)}${esc(formatIt(date))}.</p>`;
 }
 
 export function reportErrorHref(context) {

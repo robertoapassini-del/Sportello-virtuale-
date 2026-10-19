@@ -10,6 +10,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { checkWith } from '../js/controlla.js';
 
 const SITE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const CHECK = process.argv.includes('--controlla');
@@ -165,7 +166,7 @@ function guideSources(m) {
 <ul class="clean">
 ${list.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a></li>`).join('\n')}
 </ul>
-<p class="muted">Sono informazioni generali, non il parere di un avvocato o di un medico. Controlla sempre con la tua ASP.${dates.length ? ` Informazioni controllate il ${dateIt(dates[0])}.` : ''}</p>
+<p class="muted">Sono informazioni generali, non il parere di un avvocato o di un medico. ${checkWith(m.id)}${dates.length ? ` Informazioni controllate il ${dateIt(dates[0])}.` : ''}</p>
 <!-- /fonti -->`;
 }
 

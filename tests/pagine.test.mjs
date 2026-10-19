@@ -73,3 +73,10 @@ test('sitemap.xml ha tutte le pagine e robots.txt la indica', () => {
   assert.doesNotMatch(sitemap, /index\.html/);
   assert.match(read('robots.txt'), /^Sitemap: https:\/\/guidasanita\.it\/sitemap\.xml$/m);
 });
+
+test('l\'avviso finale dice a chi chiedere conferma, guida per guida', () => {
+  const want = { invalidita: "l'INPS o con un patronato", 'ricorso-invalidita': "l'INPS o con un patronato", 'assegno-inclusione': "l'INPS o con un patronato", 'cartella-clinica': "l'ospedale o con la tua ASP" };
+  for (const m of reg.modules) {
+    assert.ok(read(`${m.id}/index.html`).replace(/&#39;/g, "'").includes(`Controlla sempre con ${want[m.id] || 'la tua ASP'}.`), m.id);
+  }
+});
