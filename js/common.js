@@ -324,9 +324,10 @@ export function callButton(label, number) {
 // Pulsanti «Chiama» di un'ASP: i numeri generali (phones) e quelli degli argomenti
 // chiesti (contacts con topic, per esempio 'casa' o 'palliative'), senza doppioni.
 // Sotto, il link a tutti i numeri dell'ASP nella pagina «Numeri utili».
-export function aspCalls(a, topics = []) {
+// onlyTopics: solo i numeri degli argomenti, senza quelli generali (per officeBox).
+export function aspCalls(a, topics = [], { onlyTopics = false } = {}) {
   const seen = new Set();
-  const list = [...(a.contacts || []).filter((c) => topics.includes(c.topic)), ...a.phones]
+  const list = [...(a.contacts || []).filter((c) => topics.includes(c.topic)), ...(onlyTopics ? [] : a.phones)]
     .filter((p) => !seen.has(p.number) && seen.add(p.number));
   const info = (p) => [p.address && `📍 ${esc(p.address)}`, p.hours && esc(p.hours)].filter(Boolean).join('<br>');
   return `${list.map((p) => `${callButton(p.label, p.number)}${info(p) ? `<p class="muted call-info">${info(p)}</p>` : ''}`).join('')}
@@ -334,12 +335,13 @@ export function aspCalls(a, topics = []) {
 }
 
 // Riquadro «Dov'è l'ufficio»: i contatti dell'ASP di un argomento, con titolo e una frase.
-// Vuoto se l'ASP non ha contatti confermati per quell'argomento.
+// Solo i numeri di quell'ufficio: i numeri generali (per esempio il CUP con «tasto 2»,
+// che vale per le visite urgenti) qui confondono. Vuoto se l'ASP non ha contatti confermati per quell'argomento.
 export function officeBox(a, topic, title, intro = '') {
   if (!(a.contacts || []).some((c) => c.topic === topic)) return '';
   return `<h2 class="say">${title}</h2>
     ${intro ? `<p class="say">${esc(intro)}</p>` : ''}
-    ${aspCalls(a, [topic])}`;
+    ${aspCalls(a, [topic], { onlyTopics: true })}`;
 }
 
 // Indirizzo generale dell'ASP (URP o PEC del protocollo), per le richieste che NON sono

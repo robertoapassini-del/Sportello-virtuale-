@@ -471,7 +471,7 @@ async function runCase(page, c) {
     const body = main.split('Come prenotare')[0];
     for (const t of c.exp) if (!body.includes(t)) problems.push(`manca «${t}»`);
     for (const t of c.notExp) if (body.includes(t)) problems.push(`mostrato per errore «${t}»`);
-    if (c.p === 'Catania' && !text.includes('800 894 007')) problems.push('manca il numero screening di Catania');
+    if (c.p === 'Catania' && !text.replace(/\s/g, '').includes('800894007')) problems.push('manca il numero screening di Catania');
     if (text.includes('tasto 2')) problems.push('mostrato il numero CUP della classe B');
     return problems;
   }
