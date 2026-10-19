@@ -86,7 +86,8 @@ async function novita() {
 }
 
 // ---------- Date di verifica ----------
-const fileDati = () => fs.readdirSync(path.join(SITE, 'data')).filter((f) => f.endsWith('.json')).map((f) => `data/${f}`);
+// Tutti i file di dati, anche nelle sottocartelle (data/regioni/<regione>/).
+const fileDati = () => fs.readdirSync(path.join(SITE, 'data'), { recursive: true }).map(String).filter((f) => f.endsWith('.json')).map((f) => `data/${f.replace(/\\/g, '/')}`);
 
 function dateVecchie() {
   const out = [];

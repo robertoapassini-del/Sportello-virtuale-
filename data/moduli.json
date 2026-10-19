@@ -41,7 +41,7 @@
     {
       "id": "liste-attesa",
       "group": "cure",
-      "data": ["rules", "asp-sicilia"],
+      "data": ["rules", "regioni/sicilia/asp"],
       "icon": "📅",
       "title": "La visita o l'esame è troppo lontano",
       "small": "Il CUP mi ha dato un appuntamento tra tanto tempo",
@@ -68,7 +68,7 @@
     {
       "id": "cartella-clinica",
       "group": "cure",
-      "data": ["rules-cartella", "asp-sicilia"],
+      "data": ["rules-cartella", "regioni/sicilia/asp"],
       "icon": "📁",
       "title": "Non mi danno la cartella clinica o i referti",
       "small": "L'ho chiesta all'ospedale e non arriva",
@@ -77,7 +77,7 @@
     {
       "id": "prevenzione",
       "group": "prevenzione",
-      "data": ["rules-prevenzione", "asp-sicilia"],
+      "data": ["rules-prevenzione", "regioni/sicilia/asp"],
       "icon": "🛡️",
       "title": "Quali controlli e vaccini posso fare gratis?",
       "small": "Esami contro i tumori e vaccini per la tua età",
@@ -86,7 +86,7 @@
     {
       "id": "medico-famiglia",
       "group": "prevenzione",
-      "data": ["rules-medico", "asp-sicilia"],
+      "data": ["rules-medico", "regioni/sicilia/asp"],
       "icon": "👨‍⚕️",
       "title": "Scegliere o cambiare il medico di base o il pediatra",
       "small": "Come si fa e cosa fare se non trovi posto",
@@ -95,7 +95,7 @@
     {
       "id": "assistenza-domiciliare",
       "group": "casa",
-      "data": ["rules-domiciliare", "asp-sicilia"],
+      "data": ["rules-domiciliare", "regioni/sicilia/asp"],
       "icon": "🏠",
       "title": "Serve un infermiere o un medico a casa",
       "small": "Assistenza domiciliare dell'ASP",
@@ -104,7 +104,7 @@
     {
       "id": "ausili",
       "group": "casa",
-      "data": ["rules-ausili", "asp-sicilia"],
+      "data": ["rules-ausili", "regioni/sicilia/asp"],
       "icon": "🦽",
       "title": "La carrozzina, il letto o i pannoloni non arrivano",
       "small": "Ho fatto la domanda all'ASP e aspetto",
@@ -113,7 +113,7 @@
     {
       "id": "cure-palliative",
       "group": "casa",
-      "data": ["rules-palliative", "asp-sicilia"],
+      "data": ["rules-palliative", "regioni/sicilia/asp"],
       "icon": "🕊️",
       "title": "Cure palliative a casa o in hospice",
       "small": "Per una malattia grave e avanzata",
@@ -122,7 +122,7 @@
     {
       "id": "invalidita",
       "group": "invalidita",
-      "data": ["rules-invalidita", "inps-sicilia"],
+      "data": ["rules-invalidita", "regioni/sicilia/inps"],
       "icon": "♿",
       "title": "La visita per l'invalidità non arriva",
       "small": "Il medico ha mandato il certificato all'INPS",

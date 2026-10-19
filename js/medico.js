@@ -3,7 +3,7 @@
 import { medicoChoice, todayISO } from './engine.js';
 import { genericRequest, mailtoHref } from './letters.js';
 import {
-  noPecBox, esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, aspCalls, officeBox, personFields, reportErrorHref, generalContact,
+  noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, aspCalls, officeBox, personFields, reportErrorHref, generalContact,
 } from './common.js';
 import { createFlow, choice, restartBtn, progress, letterButtons } from './flow.js';
 
@@ -197,7 +197,7 @@ const screens = {
 let flow;
 (async function init() {
   renderFooter(ROOT);
-  try { [rules, data] = await Promise.all([loadJSON(`${ROOT}data/rules-medico.json`), loadJSON(`${ROOT}data/asp-sicilia.json`)]); } catch {
+  try { [rules, data] = await Promise.all([loadJSON(`${ROOT}data/rules-medico.json`), loadRegional(ROOT, 'asp')]); } catch {
     app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>'; return;
   }
   flow = createFlow({ app, screens, state, sources, person });

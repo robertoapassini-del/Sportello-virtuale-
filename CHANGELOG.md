@@ -2,6 +2,12 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 19/10/2026 — primo passo verso tutte le regioni (nessun dato cambiato)
+- Proposta completa in `docs/regioni.md`: struttura dei dati per regione, scelta della regione ricordata nel browser, testi nazionali e regionali, indirizzi delle pagine, marchio.
+- `data/asp-sicilia.json` → `data/regioni/sicilia/asp.json`, `data/inps-sicilia.json` → `data/regioni/sicilia/inps.json`; nuovo `data/regioni/index.json` con l'elenco delle regioni (attiva solo la Sicilia).
+- `js/common.js`: `loadRegional(root, nome)` carica i file della regione in uso; i moduli non scrivono più «sicilia» nei percorsi.
+- Marchio: «Guida Sanità» senza «Sicilia» in testata, anteprima dei messaggi (`og:site_name`) e riga stampata. «Sicilia» resta nei testi che parlano della regione.
+
 ## 19/10/2026 — parole cercate su Google (medico di base, CUP, rinnovo esenzione, legge 104)
 - Fonte: Google Trends, Sicilia, ultimi 12 mesi (dettagli in `docs/ricerche-frequenti.md`); ASPConTe dell'ASP Catania già in `asp-sicilia.json` (nota del 18/10/2026) e notizie di LiveUniversity Catania (13/05/2025, 17/04/2025).
 - `moduli.json`: titolo «medico di base» al posto di «medico di famiglia»; parole per la ricerca interna (medico di base, deroga, SovraCUP, ASPConTe, over 65, rinnovo, delega, fascicolo sanitario, contrassegno).

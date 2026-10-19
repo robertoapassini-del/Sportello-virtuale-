@@ -49,7 +49,7 @@ function header(root, area) {
   const nav = reg.groups.map((g) => `<li><a href="${root}${g.page}/"${g.id === area ? ' aria-current="true"' : ''}>${esc(g.short)}</a></li>`).join('');
   return `<header class="site-header">
 <a class="skip-link" href="#app">Vai al contenuto</a>
-<div class="wrap header-top"><a class="brand" href="${href(root, '')}">${MARK}<span>Guida Sanità <span class="brand-tag">Sicilia</span></span></a>
+<div class="wrap header-top"><a class="brand" href="${href(root, '')}">${MARK}<span>Guida Sanità</span></a>
 <form class="header-search" role="search" action="${href(root, '')}"><label for="hq" class="sr-only">Cerca nel sito</label><input type="search" id="hq" name="q" placeholder="Cerca: ticket, carrozzina…" autocomplete="off"><button type="submit" aria-label="Cerca"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.6"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg></button></form></div>
 <nav class="header-nav" aria-label="Argomenti"><div class="wrap"><ul>${nav}</ul></div></nav>
 </header>`;
@@ -109,7 +109,7 @@ function openGraph(html, url) {
   const title = html.match(/<title>(.*?)<\/title>/)[1];
   const desc = html.match(/<meta name="description" content="(.*?)">/)[1];
   return `<meta property="og:type" content="website">
-<meta property="og:site_name" content="Guida Sanità Sicilia">
+<meta property="og:site_name" content="Guida Sanità">
 <meta property="og:locale" content="it_IT">
 <meta property="og:title" content="${title}">
 <meta property="og:description" content="${desc}">
@@ -147,7 +147,7 @@ function shareBar(html, url) {
 <div class="wrap share-bar no-say">
 <a class="btn share-wa" href="https://wa.me/?text=${encodeURIComponent(text)}" target="_blank" rel="noopener">${WA_ICON} Condividi su WhatsApp</a>
 <button type="button" class="btn share-print js-inline" data-action="print-page"${guide ? ' data-print="guida"' : ''}>🖨️ ${guide ? 'Stampa la guida' : 'Stampa questa pagina'}</button>
-<p class="print-url">Guida Sanità Sicilia, gratis e fatta da volontari: ${url}</p>
+<p class="print-url">Guida Sanità, gratis e fatta da volontari: ${url}</p>
 </div>
 <!-- /condividi -->
 `;
@@ -168,6 +168,10 @@ const footer = (root) => `<footer class="site-footer" id="site-footer"><div clas
 
 // Fonti e data del controllo in fondo alla guida scritta: dai file data/ del modulo (data/moduli.json).
 const dataFile = (f) => JSON.parse(read(`data/${f}.json`));
+// File di una regione (data/regioni/<id>/): per ora la regione predefinita dell'indice (docs/regioni.md).
+const regioni = dataFile('regioni/index');
+const REGIONE = regioni.default;
+const regionalFile = (name) => dataFile(`regioni/${REGIONE}/${name}`);
 const dateIt = (d) => { const [y, m, g] = d.split('-').map(Number); return `${g === 1 ? '1º' : g} ${['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno', 'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre'][m - 1]} ${y}`; };
 function guideSources(m) {
   const files = (m.data || []).map(dataFile);
@@ -203,9 +207,9 @@ ${rows.map(([c, n, t, cb]) => `<tr><th scope="row">${c} – ${n}</th><td>${esc(t
 </tbody>
 </table>`;
   },
-  // Liste d'attesa: come chiedere il percorso di tutela in ogni provincia (data/asp-sicilia.json).
+  // Liste d'attesa: come chiedere il percorso di tutela in ogni provincia (data/regioni/<regione>/asp.json).
   'asp-tutela': () => {
-    const d = dataFile('asp-sicilia');
+    const d = regionalFile('asp');
     const list = [...d.asl].sort((a, b) => a.province.localeCompare(b.province));
     const links = (a) => [...new Set([a.info_url, a.form_url, a.portal_url].filter(Boolean))]
       .map((u, i) => `<a href="${esc(u)}" target="_blank" rel="noopener">${u === a.form_url && u !== a.info_url ? 'Modulo ufficiale' : u === a.portal_url ? 'Sito per la richiesta' : 'Pagina ufficiale'}${i ? '' : ` dell'${esc(a.name)}`}</a>`).join(' · ');
@@ -215,10 +219,10 @@ ${list.map((a) => `<dt id="tutela-${esc(a.id)}">${esc(a.province)} – ${esc(a.n
 </dl>`;
   },
   // Numeri utili senza JavaScript: gli stessi numeri della pagina interattiva (js/numeri.js),
-  // da data/numeri.json e dai contatti delle ASP (data/asp-sicilia.json). Va dentro static-fallback.
+  // da data/numeri.json e dai contatti delle ASP (data/regioni/<regione>/asp.json). Va dentro static-fallback.
   numeri: () => {
     const nums = dataFile('numeri');
-    const d = dataFile('asp-sicilia');
+    const d = regionalFile('asp');
     const tel = (n) => `<a href="tel:${esc(n.replace(/\s+/g, ''))}">${esc(n)}</a>`;
     const extra = (n) => [n.what, n.address, n.hours, n.cost].filter(Boolean).map(esc).join(' · ');
     const one = (n) => `<li><strong>${esc(n.title || n.label)}</strong>: ${tel(n.number)}${extra(n) ? `<br>${extra(n)}` : ''}</li>`;

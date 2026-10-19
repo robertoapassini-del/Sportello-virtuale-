@@ -5,7 +5,7 @@
 import { invRegime, invDeadline, todayISO, formatIt, parseDate, daysBetween, art } from './engine.js';
 import { inpsReminder, mailtoHref } from './letters.js';
 import { noPecBox,
-  esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton,
+  esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton,
   personFields, reportErrorHref, choice, helpBox, listenButton, speakScreen, stopSpeaking, sourcesBox, moreHelp, hideHeadingEmoji,
 } from './common.js';
 import { createNav } from './flow.js';
@@ -370,7 +370,7 @@ const screens = {
 (async function init() {
   renderFooter(ROOT);
   try {
-    [rules, inps] = await Promise.all([loadJSON(`${ROOT}data/rules-invalidita.json`), loadJSON(`${ROOT}data/inps-sicilia.json`)]);
+    [rules, inps] = await Promise.all([loadJSON(`${ROOT}data/rules-invalidita.json`), loadRegional(ROOT, 'inps')]);
   } catch {
     app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>';
     return;

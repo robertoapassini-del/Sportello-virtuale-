@@ -1,0 +1,26 @@
+{
+  "_note": "Elenco delle regioni. Solo quelle con attiva=true hanno la cartella data/regioni/<id>/ con i dati. asl_label = come si chiama l'azienda sanitaria nella regione. Proposta completa in docs/regioni.md.",
+  "default": "sicilia",
+  "regioni": [
+    { "id": "abruzzo", "name": "Abruzzo", "attiva": false, "asl_label": "ASL" },
+    { "id": "basilicata", "name": "Basilicata", "attiva": false, "asl_label": "ASL" },
+    { "id": "calabria", "name": "Calabria", "attiva": false, "asl_label": "ASP" },
+    { "id": "campania", "name": "Campania", "attiva": false, "asl_label": "ASL" },
+    { "id": "emilia-romagna", "name": "Emilia-Romagna", "attiva": false, "asl_label": "AUSL" },
+    { "id": "friuli-venezia-giulia", "name": "Friuli-Venezia Giulia", "attiva": false, "asl_label": "Azienda sanitaria" },
+    { "id": "lazio", "name": "Lazio", "attiva": false, "asl_label": "ASL" },
+    { "id": "liguria", "name": "Liguria", "attiva": false, "asl_label": "ASL" },
+    { "id": "lombardia", "name": "Lombardia", "attiva": false, "asl_label": "ATS" },
+    { "id": "marche", "name": "Marche", "attiva": false, "asl_label": "AST" },
+    { "id": "molise", "name": "Molise", "attiva": false, "asl_label": "ASREM" },
+    { "id": "piemonte", "name": "Piemonte", "attiva": false, "asl_label": "ASL" },
+    { "id": "puglia", "name": "Puglia", "attiva": false, "asl_label": "ASL" },
+    { "id": "sardegna", "name": "Sardegna", "attiva": false, "asl_label": "ASL" },
+    { "id": "sicilia", "name": "Sicilia", "attiva": true, "asl_label": "ASP", "asl_label_long": "Azienda sanitaria provinciale", "files": { "asl": "asp", "inps": "inps" } },
+    { "id": "toscana", "name": "Toscana", "attiva": false, "asl_label": "ASL" },
+    { "id": "trentino-alto-adige", "name": "Trentino-Alto Adige", "attiva": false, "asl_label": "Azienda sanitaria" },
+    { "id": "umbria", "name": "Umbria", "attiva": false, "asl_label": "USL" },
+    { "id": "valle-d-aosta", "name": "Valle d'Aosta", "attiva": false, "asl_label": "USL" },
+    { "id": "veneto", "name": "Veneto", "attiva": false, "asl_label": "ULSS" }
+  ]
+}

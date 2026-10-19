@@ -41,6 +41,13 @@ export async function loadJSON(path) {
   return res.json();
 }
 
+// Regione in uso. Per ora solo la Sicilia; in futuro la sceglie l'utente e il browser la ricorda
+// (docs/regioni.md). I dati di ogni regione sono in data/regioni/<id>/ (elenco in data/regioni/index.json).
+export const REGIONE_DEFAULT = 'sicilia';
+export function regione() { return REGIONE_DEFAULT; }
+export const regionalPath = (root, name) => `${root}data/regioni/${regione()}/${name}.json`;
+export const loadRegional = (root, name) => loadJSON(regionalPath(root, name));
+
 // L'ufficio a cui chiedere conferma dipende dal modulo (js/controlla.js): la cartella della pagina.
 export function disclaimer(date) {
   const slug = location.pathname.split('/').filter(Boolean).filter((x) => x !== 'index.html').pop() || '';

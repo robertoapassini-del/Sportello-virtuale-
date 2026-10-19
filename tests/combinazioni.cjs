@@ -17,8 +17,8 @@ const { chromium, devices } = loadPlaywright();
 
 const BASE = process.argv[2] || 'http://localhost:8080/';
 const DATA = path.join(__dirname, '..', 'data');
-const asp = JSON.parse(fs.readFileSync(path.join(DATA, 'asp-sicilia.json'), 'utf8'));
-const inps = JSON.parse(fs.readFileSync(path.join(DATA, 'inps-sicilia.json'), 'utf8'));
+const asp = JSON.parse(fs.readFileSync(path.join(DATA, 'regioni', 'sicilia', 'asp.json'), 'utf8'));
+const inps = JSON.parse(fs.readFileSync(path.join(DATA, 'regioni', 'sicilia', 'inps.json'), 'utf8'));
 
 // ---------- calcoli indipendenti (non usano js/engine.js) ----------
 const pad = (n) => String(n).padStart(2, '0');

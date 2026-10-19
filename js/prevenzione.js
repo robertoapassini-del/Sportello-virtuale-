@@ -1,7 +1,7 @@
 // Modulo 12 — prevenzione gratuita per età: screening oncologici e vaccini.
 // Regole fisse per età e sesso. Non chiediamo la malattia.
 import { prevenzione } from './engine.js';
-import { esc, loadJSON, disclaimer, renderFooter, readForm, callButton, officeBox } from './common.js';
+import { esc, loadJSON, loadRegional, disclaimer, renderFooter, readForm, callButton, officeBox } from './common.js';
 import { createFlow, choice, restartBtn, progress } from './flow.js';
 
 const ROOT = '../';
@@ -100,7 +100,7 @@ const screens = {
 let flow;
 (async function init() {
   renderFooter(ROOT);
-  try { [rules, data] = await Promise.all([loadJSON(`${ROOT}data/rules-prevenzione.json`), loadJSON(`${ROOT}data/asp-sicilia.json`)]); } catch {
+  try { [rules, data] = await Promise.all([loadJSON(`${ROOT}data/rules-prevenzione.json`), loadRegional(ROOT, 'asp')]); } catch {
     app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>'; return;
   }
   flow = createFlow({ app, screens, state, sources });

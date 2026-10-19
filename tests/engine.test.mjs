@@ -11,8 +11,8 @@ import { stripEmoji } from '../js/common.js';
 const load = (p) => JSON.parse(readFileSync(new URL(p, import.meta.url), 'utf8'));
 const rules = load('../data/rules.json');
 const rulesInv = load('../data/rules-invalidita.json');
-const asp = load('../data/asp-sicilia.json');
-const inps = load('../data/inps-sicilia.json');
+const asp = load('../data/regioni/sicilia/asp.json');
+const inps = load('../data/regioni/sicilia/inps.json');
 
 test('date helpers', () => {
   assert.equal(parseDate('2026-02-31'), null);

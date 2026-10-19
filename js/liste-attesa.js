@@ -5,7 +5,7 @@
 import { checkWaiting, callbackDeadline, maxWaitDays, todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
 import { tutelaLetter, tutelaReminder, mailtoHref } from './letters.js';
 import { noPecBox,
-  esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton, aspCalls,
+  esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton, aspCalls,
   personFields, reportErrorHref, generalContact, choice, helpBox, listenButton, speakScreen, stopSpeaking, sourcesBox, moreHelp, hideHeadingEmoji,
 } from './common.js';
 import { RICETTA_SVG } from './ricetta-svg.js';
@@ -589,7 +589,7 @@ function updateLetter(a, official) {
 (async function init() {
   renderFooter(ROOT);
   try {
-    [rules, data] = await Promise.all([loadJSON(`${ROOT}data/rules.json`), loadJSON(`${ROOT}data/asp-sicilia.json`)]);
+    [rules, data] = await Promise.all([loadJSON(`${ROOT}data/rules.json`), loadRegional(ROOT, 'asp')]);
   } catch {
     app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>';
     return;

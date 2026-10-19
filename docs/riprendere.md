@@ -5,7 +5,7 @@ Nota per continuare da un altro computer o in una nuova sessione con Claude.
 ## Fatto
 
 - Pagina **Numeri utili** (`numeri-utili/`, `js/numeri.js`, `data/numeri.json`) e contatti delle ASP per argomento
-  (`contacts` in `data/asp-sicilia.json`: cup, urp, centralino, guardia, casa, palliative, protesica, cartelle, screening, anagrafe).
+  (`contacts` in `data/regioni/sicilia/asp.json`: cup, urp, centralino, guardia, casa, palliative, protesica, cartelle, screening, anagrafe).
 - **Regola dei numeri**: [regola-numeri.md](regola-numeri.md). Solo fonti ufficiali, controllo di chiusure e traslochi,
   ogni numero con `url`, `verified`, `proof`. Il test `tests/contatti.test.mjs` la fa rispettare.
 - Riquadri «dov'è l'ufficio» nei moduli: ausili (uffici protesi), assistenza domiciliare (PUA), cure palliative,
