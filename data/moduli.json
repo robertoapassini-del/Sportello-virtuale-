@@ -102,7 +102,21 @@
       "icon": "💊",
       "title": "La medicina con il piano terapeutico",
       "small": "Cos'è e quando rinnovarlo",
-      "keywords": "medicina farmaco piano terapeutico rinnovo scadenza specialista ricetta"
+      "keywords": "medicina farmaco piano terapeutico rinnovo scadenza specialista ricetta dpc distribuzione diretta farmacia asp aifa",
+      "pages": [
+        {
+          "id": "cos-e",
+          "title": "Cos'è il piano terapeutico e chi lo fa"
+        },
+        {
+          "id": "dove-prendere-la-medicina",
+          "title": "Dove si prende la medicina: farmacia dell'ASP o DPC"
+        },
+        {
+          "id": "rinnovo",
+          "title": "Scadenza e rinnovo: prenota 60 giorni prima"
+        }
+      ]
     },
     {
       "id": "cartella-clinica",
@@ -140,7 +154,17 @@
       "icon": "🛡️",
       "title": "Quali controlli e vaccini posso fare gratis?",
       "small": "Esami contro i tumori e vaccini per la tua età",
-      "keywords": "prevenzione screening mammografia pap test hpv colon tumore vaccino influenza pneumococco zoster fuoco sant'antonio tetano gratis"
+      "keywords": "prevenzione screening mammografia pap test hpv colon tumore vaccino influenza pneumococco zoster fuoco sant'antonio tetano gratis consultorio kit lettera invito calendario vaccinale",
+      "pages": [
+        {
+          "id": "screening",
+          "title": "Gli esami gratis contro i tumori, per età"
+        },
+        {
+          "id": "vaccini",
+          "title": "I vaccini gratis per adulti e bambini, dove farli"
+        }
+      ]
     },
     {
       "id": "medico-famiglia",
@@ -218,7 +242,21 @@
       "icon": "♿",
       "title": "La visita per l'invalidità non arriva",
       "small": "Il medico ha mandato il certificato all'INPS",
-      "keywords": "invalidità invalidità civile inps visita certificato commissione legge 104 handicap accompagnamento indennità contrassegno"
+      "keywords": "invalidità invalidità civile inps visita certificato commissione legge 104 handicap accompagnamento indennità contrassegno valutazione di base riforma disabilità patronato pec verbale revisione",
+      "pages": [
+        {
+          "id": "procedura",
+          "title": "Nuovo regime o vecchia procedura: quale vale per te"
+        },
+        {
+          "id": "sollecito",
+          "title": "La visita è in ritardo: come sollecitare l'INPS"
+        },
+        {
+          "id": "visita-e-verbale",
+          "title": "Cosa portare alla visita e cosa c'è nel verbale"
+        }
+      ]
     },
     {
       "id": "ricorso-invalidita",
@@ -229,7 +267,21 @@
       "icon": "⚖️",
       "title": "Il verbale di invalidità è sbagliato",
       "small": "Ho 6 mesi per il ricorso: quanto mi resta?",
-      "keywords": "verbale ricorso invalidità percentuale sbagliato avvocato giudice aggravamento"
+      "keywords": "verbale ricorso invalidità percentuale sbagliato avvocato giudice aggravamento atp accertamento tecnico preventivo gratuito patrocinio arretrati",
+      "pages": [
+        {
+          "id": "come-funziona",
+          "title": "Come funziona il ricorso: giudice, ATP, costi"
+        },
+        {
+          "id": "cosa-serve",
+          "title": "Da quando contano i 6 mesi e cosa portare"
+        },
+        {
+          "id": "sei-mesi-passati",
+          "title": "Se i 6 mesi sono passati: aggravamento e revisione"
+        }
+      ]
     },
     {
       "id": "assegno-inclusione",
