@@ -190,6 +190,7 @@ table.fields th { width: 40%; }
 /* ---- Guida scritta nella pagina: si legge anche senza JavaScript (e la legge Google).
    Le domande passo passo, con JavaScript, compaiono sopra. ---- */
 .guida { margin-top: 36px; margin-bottom: 8px; }
+.guida > * { max-width: var(--maxw); }
 .guida > h2:first-child { margin-top: 0; padding-top: 20px; border-top: 4px solid var(--border); }
 .guida .guida-intro { font-size: 1.05rem; }
 .guida dl { margin: 0 0 12px; }
