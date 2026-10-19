@@ -50,9 +50,6 @@ Quando chiudi un punto: correggi il sito se serve, scrivi la modifica in `CHANGE
   pubblico o convenzionato, senza ricetta; campagna [bastapensarci.it](https://www.bastapensarci.it)).
 - [ ] **Età di Pap test e test HPV:** l'[ASP Trapani](https://screeningoncologici.asptrapani.it/screening/screening-per-il-tumore-della-cervice-uterina/)
   scrive 25–33 (Pap) e 34–64 (HPV), le altre ASP 25–29 e 30–64. Chiarire con la Regione (decreto D.A. n. 1845) quale vale.
-- [ ] **Test automatico della prevenzione:** `npm run test:combinazioni` ha 4 errori già presenti prima del 19/10/2026
-  («manca il numero screening di Catania», «mostrato il numero CUP della classe B»). Capire se è sbagliato il test
-  o la pagina (numero 800 894 007 in `data/rules-prevenzione.json`).
 
 ### Piano terapeutico
 - [ ] **Ticket nella DPC:** il sito dice che chi non è esente può pagare il ticket della Regione anche per le medicine
