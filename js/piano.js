@@ -16,6 +16,7 @@ const whatIs = () => `
     <li class="say"><strong>Alcune medicine</strong> il medico di famiglia può prescriverle solo se c'è un <strong>piano terapeutico</strong>: un foglio scritto da uno <strong>specialista del Servizio sanitario</strong> (in ospedale o in un centro autorizzato), non da un medico privato.</li>
     <li class="say"><strong>Il piano ha una scadenza</strong>, scritta sul foglio: di solito ${rules.typical_duration_months.join(' o ')} mesi.</li>
     <li class="say"><strong>Con il piano valido</strong>, il medico di famiglia ti fa la ricetta ogni mese. Tieni una copia del piano: a volte la farmacia la chiede.</li>
+    <li class="say"><strong>Dove prendi la medicina:</strong> molte medicine con il piano non si prendono come le altre. A volte si ritirano alla <strong>farmacia dell'ASP</strong> («distribuzione diretta»). Altre volte le dà la tua farmacia <strong>per conto dell'ASP</strong> («DPC»): la farmacia la ordina e di solito arriva in un giorno o due. Chiedi al medico o al farmacista quale vale per la tua medicina.</li>
     <li class="say"><strong>Prima che scada</strong> serve una nuova visita dallo specialista per rinnovarlo. Se scade, il medico non può più fare la ricetta con il Servizio sanitario.</li>
   </ol>
   <div class="notice warn"><p class="say">⚠️ La visita per il rinnovo è una <strong>visita di controllo</strong>: può avere tempi lunghi e non c'è la garanzia dei tempi massimi. Per questo va prenotata con largo anticipo, almeno ${rules.book_before_days} giorni prima.</p></div>
