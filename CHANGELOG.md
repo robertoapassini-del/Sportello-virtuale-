@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 20/10/2026 — esenzione ticket: la guida diventa 4 pagine corte (modello NHS.uk)
+- Nessun dato cambiato. La guida lunga sotto la risposta è divisa in pagine che rispondono a una domanda ciascuna: `chi-ha-diritto/`, `come-chiedere/`, `rinnovo/`, `altre-esenzioni/`. Nella pagina principale resta la risposta, il calcolo e l'indice «In questa guida».
+- Le «Domande frequenti» sono diventate titoli e punti dentro le pagine (niente FAQPage per questo modulo).
+- `tools/pagine.mjs`: un modulo può avere `pages` in `data/moduli.json`; il blocco `guida-indice` crea l'elenco delle pagine; sitemap, testata e percorso «Sei qui» anche per le pagine corte.
+
 ## 19/10/2026 — numeri e link riletti da una connessione italiana
 - Fonte: le pagine ufficiali delle ASP (e degli ospedali), aperte oggi da una connessione italiana. Ogni numero confermato ha ora la pagina esatta in `url` e `proof: "pagina"`.
 - Tre ASP hanno un sito nuovo nel 2026 e i vecchi indirizzi non funzionano più: **Caltanissetta** (www.asp.cl.it/it), **Enna** (dal 01/03/2026: le vecchie pagine dicono «Pagina non trovata») e **Messina** (le vecchie pagine `?page_id=` mostrano la home; il vecchio sito resta su old.asp.messina.it). Tutti i link sostituiti.

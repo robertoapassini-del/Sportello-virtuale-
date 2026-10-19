@@ -47,6 +47,9 @@ Requisiti completi: [SPEC.md](SPEC.md).
   `data/`, ricontrolla anche il testo della guida.
 - Le parti della guida che vengono dai dati (tabella delle classi di priorità, come chiedere il percorso di tutela in
   ogni ASP, «Numeri utili», fonti e data del controllo) sono tra `<!-- blocco:nome -->` e si rifanno con `npm run pagine`.
+- Una guida lunga si può dividere in **pagine corte**, una per domanda (come fa NHS.uk): in `data/moduli.json` il modulo
+  ha `pages` (`id` e `title`), ogni pagina sta in `modulo/pagina/index.html` e ha l'elenco `<!-- blocco:guida-indice -->`.
+  Esempio: `esenzione-ticket/`. Nella pagina principale restano la risposta breve, il calcolo e l'indice.
 - In fondo a ogni pagina: **Condividi su WhatsApp** (un link, funziona anche senza JavaScript) e **Stampa** (con
   «Stampa la guida» si stampa solo la guida, con l'indirizzo della pagina in fondo al foglio).
 - Link interni sempre all'indirizzo della cartella (`../liste-attesa/`), mai a `index.html`.

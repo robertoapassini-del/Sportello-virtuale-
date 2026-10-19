@@ -39,9 +39,14 @@ const pages = [
   { file: 'index.html', trail: [] },
   ...['fonti.html', 'privacy.html', 'note-legali.html', 'numeri-utili/index.html'].map((file) => ({ file, trail: [INIZIO] })),
   ...reg.groups.map((g) => ({ file: `${g.page}/index.html`, area: g.id, trail: [INIZIO], group: g })),
-  ...reg.modules.map((m) => {
+  ...reg.modules.flatMap((m) => {
     const g = groupById[m.group];
-    return { file: `${m.id}/index.html`, area: g.id, trail: [INIZIO, { label: g.short, href: `${g.page}/` }], module: m };
+    const trail = [INIZIO, { label: g.short, href: `${g.page}/` }];
+    return [
+      { file: `${m.id}/index.html`, area: g.id, trail, module: m },
+      // Pagine corte della guida di un modulo (moduli.json → "pages"): /modulo/pagina/.
+      ...(m.pages || []).map((sp) => ({ file: `${m.id}/${sp.id}/index.html`, area: g.id, trail: [...trail, { label: m.title, href: `${m.id}/` }], module: m, sub: sp })),
+    ];
   }),
 ];
 
@@ -186,6 +191,18 @@ ${list.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${
 // Parti della guida scritta che vengono dai file data/ (così i numeri restano giusti):
 // nella pagina si scrive <!-- blocco:nome --><!-- /blocco:nome --> e qui si riempie.
 const BLOCKS = {
+  // «In questa guida»: l'elenco delle pagine corte di un modulo (moduli.json → "pages"),
+  // con la pagina in cui si è scritta senza link. Vale nella pagina del modulo e in ogni pagina corta.
+  'guida-indice': (p) => {
+    const m = p.module;
+    const up = p.sub ? '../' : '';
+    const items = [{ id: '', title: m.title }, ...(m.pages || [])].map((sp) => {
+      const here = (p.sub ? p.sub.id : '') === sp.id;
+      const href = sp.id ? `${up}${sp.id}/` : (up || './');
+      return here ? `<li aria-current="page"><strong>${esc(sp.title)}</strong></li>` : `<li><a href="${href}">${esc(sp.title)}</a></li>`;
+    });
+    return `<ol class="guida-indice">\n${items.join('\n')}\n</ol>`;
+  },
   // Liste d'attesa: tempi massimi per classe di priorità (data/rules.json).
   'classi-priorita': () => {
     const r = dataFile('rules');
@@ -248,7 +265,7 @@ ${list.map((a) => `<dt id="tutela-${esc(a.id)}">${esc(a.province)} – ${esc(a.n
 };
 
 for (const p of pages) {
-  const root = p.file.includes('/') ? '../' : '';
+  const root = '../'.repeat(p.file.split('/').length - 1);
   let html = p.group ? areaPage(p.group, root) : read(p.file).replace(/\r\n/g, '\n');
   const top = header(root, p.area) + breadcrumb(root, p.trail);
   const re = /<header class="site-header">[\s\S]*?<\/header>(\n<nav class="breadcrumb"[\s\S]*?<\/nav>)?/;
@@ -267,7 +284,7 @@ for (const p of pages) {
     .replace(/<footer class="site-footer"[\s\S]*?<\/footer>/, () => `${shareBar(html, url)}${footer(root)}`);
   html = html.replace(/<!-- blocco:([a-z-]+)[^>]*-->[\s\S]*?<!-- \/blocco:\1 -->/g, (_, name) => {
     if (!BLOCKS[name]) throw new Error(`Blocco sconosciuto «${name}» in ${p.file}`);
-    return `<!-- blocco:${name} (creato da tools/pagine.mjs) -->\n${BLOCKS[name]()}\n<!-- /blocco:${name} -->`;
+    return `<!-- blocco:${name} (creato da tools/pagine.mjs) -->\n${BLOCKS[name](p)}\n<!-- /blocco:${name} -->`;
   });
   if (p.module) {
     if (!/<!-- fonti[\s\S]*?<!-- \/fonti -->/.test(html)) throw new Error(`Guida scritta (id="guida" con <!-- fonti --><!-- /fonti -->) non trovata in ${p.file}`);

@@ -11,7 +11,8 @@ const site = new URL('../', import.meta.url);
 const read = (f) => readFileSync(new URL(f, site), 'utf8');
 const reg = JSON.parse(read('data/moduli.json'));
 const html = ['index.html', 'fonti.html', 'privacy.html', 'note-legali.html', 'numeri-utili/index.html',
-  ...reg.groups.map((g) => `${g.page}/index.html`), ...reg.modules.map((m) => `${m.id}/index.html`)];
+  ...reg.groups.map((g) => `${g.page}/index.html`), ...reg.modules.map((m) => `${m.id}/index.html`),
+  ...reg.modules.flatMap((m) => (m.pages || []).map((sp) => `${m.id}/${sp.id}/index.html`))];
 const words = (s) => s.replace(/<script[\s\S]*?<\/script>/g, '').replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length;
 
 test('le pagine sono aggiornate con npm run pagine', () => {
@@ -23,7 +24,9 @@ test('ogni modulo ha la guida scritta nella pagina', () => {
     const page = read(`${m.id}/index.html`);
     const g = page.match(/<section class="wrap guida" id="guida"[\s\S]*?<\/section>/);
     assert.ok(g, `${m.id}: manca <section class="wrap guida" id="guida">`);
-    assert.ok(words(g[0]) >= 300, `${m.id}: la guida è troppo corta (${words(g[0])} parole)`);
+    // Un modulo diviso in pagine corte (moduli.json → "pages") ha nella pagina principale solo l'indice.
+    const min = m.pages ? 60 : 300;
+    assert.ok(words(g[0]) >= min, `${m.id}: la guida è troppo corta (${words(g[0])} parole)`);
     assert.match(g[0], /<h2 id="guida-titolo">/, `${m.id}: la guida non ha il titolo`);
     assert.doesNotMatch(page, /Torna all'inizio<\/a><\/p>\n<\/div>/, `${m.id}: il testo senza JavaScript è ancora quello vecchio`);
   }
@@ -56,6 +59,8 @@ test('le «Domande frequenti» sono anche nei dati strutturati FAQPage', () => {
   for (const m of reg.modules) {
     const page = read(`${m.id}/index.html`);
     const dl = page.match(/<h3>Domande frequenti<\/h3>\s*<dl>([\s\S]*?)<\/dl>/);
+    // Un modulo diviso in pagine corte può non avere le domande frequenti: le domande sono i titoli delle pagine.
+    if (!dl && m.pages) { assert.doesNotMatch(page, /"@type": "FAQPage"/, `${m.id}: dati FAQPage senza domande`); continue; }
     assert.ok(dl, `${m.id}: manca la sezione «Domande frequenti»`);
     const ld = page.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/);
     assert.ok(ld, `${m.id}: mancano i dati FAQPage`);
