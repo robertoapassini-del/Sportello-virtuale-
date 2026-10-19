@@ -20,6 +20,18 @@ Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 - Restano solo da estratto (da confermare per telefono): i 4 PUA di Ragusa (solo giornale del 2019), il centralino di Caltanissetta, le cartelle dell'Ospedale Civico di Palermo. Dubbi nuovi nei `todo` delle ASP («Verifica 19/10/2026»).
 - `tools/controllo.mjs`: il controllo dei link riconosce anche le pagine che rispondono ma sono sbagliate («Pagina non trovata», rimando alla home, home mostrata al posto della pagina).
 
+## 19/10/2026 — esenzione ticket: esperimento «prima la risposta»
+- Nessun dato cambiato. La pagina mostra subito la risposta scritta (i 4 casi E01–E04 con i limiti, come si ottiene, le altre esenzioni); il calcolo a domande parte dal pulsante «Fai il conto» e con «Ricomincia» torna alla risposta.
+- Serve a confrontare le due impostazioni (risposta subito / percorso subito) sul telefono prima di decidere per tutte le pagine. Vedi `docs/ricerche-frequenti.md`.
+
+## 19/10/2026 — parole cercate su Google (medico di base, CUP, rinnovo esenzione, legge 104)
+- Fonte: Google Trends, Sicilia, ultimi 12 mesi (dettagli in `docs/ricerche-frequenti.md`); ASPConTe dell'ASP Catania già in `asp-sicilia.json` (nota del 18/10/2026) e notizie di LiveUniversity Catania (13/05/2025, 17/04/2025).
+- `moduli.json`: titolo «medico di base» al posto di «medico di famiglia»; parole per la ricerca interna (medico di base, deroga, SovraCUP, ASPConTe, over 65, rinnovo, delega, fascicolo sanitario, contrassegno).
+- Medico: «medico di base» in titolo e testo, «scelta in deroga», cambio online con ASPConTe a Catania, 2 domande frequenti nuove.
+- Liste d'attesa: «prenotazione al CUP / SovraCUP» in titolo e testo, ASPConTe a Catania, domanda frequente sulla prima data offerta.
+- Esenzione ticket: «over 65» e «rinnovo» nel titolo, come controllare il rinnovo dopo il 31 marzo, delega per un familiare, ASPConTe.
+- Invalidità: invalidità, legge 104, accompagnamento e contrassegno sono riconoscimenti diversi; nuova domanda frequente.
+
 ## 19/10/2026 — piano terapeutico: distribuzione diretta e DPC
 - Fonti: Regione Siciliana, pagina DPC (https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/dipartimento-pianificazione-strategica/dpc) e accordo approvato con D.A. n. 367 del 03/04/2025; AIFA (L. 405/2001, art. 8); decalogo DPC dell'ASP Enna con Federfarma (2022: consegna in 24 ore lavorative, ticket fisso per chi non è esente).
 - Nuovo passo «Dove prendi la medicina» (farmacia dell'ASP o farmacia «per conto» dell'ASP) e nuova domanda frequente.
