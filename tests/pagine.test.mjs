@@ -5,6 +5,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
+import { fileURLToPath } from 'node:url';
 
 const site = new URL('../', import.meta.url);
 const read = (f) => readFileSync(new URL(f, site), 'utf8');
@@ -14,7 +15,7 @@ const html = ['index.html', 'fonti.html', 'privacy.html', 'note-legali.html', 'n
 const words = (s) => s.replace(/<script[\s\S]*?<\/script>/g, '').replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length;
 
 test('le pagine sono aggiornate con npm run pagine', () => {
-  execFileSync(process.execPath, [new URL('tools/pagine.mjs', site).pathname, '--controlla'], { stdio: 'pipe' });
+  execFileSync(process.execPath, [fileURLToPath(new URL('tools/pagine.mjs', site)), '--controlla'], { stdio: 'pipe' });
 });
 
 test('ogni modulo ha la guida scritta nella pagina', () => {

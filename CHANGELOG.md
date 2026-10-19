@@ -2,6 +2,24 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 19/10/2026 — numeri e link riletti da una connessione italiana
+- Fonte: le pagine ufficiali delle ASP (e degli ospedali), aperte oggi da una connessione italiana. Ogni numero confermato ha ora la pagina esatta in `url` e `proof: "pagina"`.
+- Tre ASP hanno un sito nuovo nel 2026 e i vecchi indirizzi non funzionano più: **Caltanissetta** (www.asp.cl.it/it), **Enna** (dal 01/03/2026: le vecchie pagine dicono «Pagina non trovata») e **Messina** (le vecchie pagine `?page_id=` mostrano la home; il vecchio sito resta su old.asp.messina.it). Tutti i link sostituiti.
+- Numeri cambiati:
+  - Ragusa: URP 0932 234203 → **0932 234204** (trasferito all'ex Ospedale Civile, avviso 27/04/2026); protesi Ragusa 0932 234756 (è la ventiloterapia) → **0932 234759**; anagrafe Modica 448732 → **0932 448710** (via V. Veneto 10); anagrafe Vittoria 999615 → **0932 999713**, nuova sede via Generale Cascino dal 27/07/2026.
+  - Caltanissetta: guardia medica sede 1 0934 506580 → **0934 597332** (tabella guardie mediche); protesi Mussomeli 0934 506479 (è l'ufficio presidi per diabete e celiachia) → **0934 506487**.
+  - Messina: PUA 090 3653510 (vecchia sede di via Saffi) → **090 3653440**, Casa della Comunità di via del Vespro 14.
+  - Siracusa: centro screening 0931 484332 → **0931 312525 tasto 2**, nuova sede ex ONP padiglione 4 dal 18/03/2026; cartelle Umberto I 0931 724043 → **0931 724264**; protesi Siracusa 0931 484373 → **0931 484611** (Medicina Riabilitativa, ex ONP); presidi Augusta 0931 989363 → **0931 989373**.
+  - Enna: anagrafe Enna 0935 520568 → **0935 520489** (guida del distretto); protesi Regalbuto 0935 911137 (è l'esenzione ticket) → **0935 911129**; protesi Nicosia 0935 671627 → **0935 671661**; protesi Piazza Armerina 0935 981812 → **0935 981781** (pagina del 04/06/2026); guardia medica di Enna stesso numero ma sede tornata all'ex INAM, via Calascibetta 1 (dal 30/01/2026); orari del CUP 8:15–17.
+  - Catania: protesi Caltagirone 0933 353035 → **0933 353036**.
+  - Palermo: cartelle Ospedale Cervello 091 6802080 → **091 7802080**.
+- Numeri tolti (su nessuna pagina ufficiale, o non dell'ufficio indicato): Siracusa URP 0931 744310, 0931 484387 e 0931 890527 (numeri generali dei distretti), Lentini 095 909922; Catania guardia medica 095 2545811 (sostituito dai numeri dei presidi di Catania).
+- Orari e indirizzi aggiornati dove la pagina ufficiale li dà diversi (es. screening Ragusa 8:30–12:30, pannoloni Catania lun/mer/ven, URP Catania).
+- Aggiunti numeri ufficiali che mancavano: sportelli scelta e revoca (Catania via La Marmora, Messina e provincia, San Cataldo, Mussomeli, Melilli), guardie mediche di Catania, Messina e Augusta, uffici protesi della provincia di Messina e della Medicina Riabilitativa di Siracusa, cartelle cliniche di Villa Sofia, CTO, Lentini, Avola, Augusta e Noto, centralini degli ospedali di Ragusa, Modica e Vittoria, e altri.
+- Cambio del medico online: ora c'è anche a Caltanissetta, Siracusa e Palermo (SPID o CIE); Messina solo dal lunedì al venerdì 8–20. Testi `scelta_medico` corretti.
+- Restano solo da estratto (da confermare per telefono): i 4 PUA di Ragusa (solo giornale del 2019), il centralino di Caltanissetta, le cartelle dell'Ospedale Civico di Palermo. Dubbi nuovi nei `todo` delle ASP («Verifica 19/10/2026»).
+- `tools/controllo.mjs`: il controllo dei link riconosce anche le pagine che rispondono ma sono sbagliate («Pagina non trovata», rimando alla home, home mostrata al posto della pagina).
+
 ## 19/10/2026 — esenzione ticket: esperimento «prima la risposta»
 - Nessun dato cambiato. La pagina mostra subito la risposta scritta (i 4 casi E01–E04 con i limiti, come si ottiene, le altre esenzioni); il calcolo a domande parte dal pulsante «Fai il conto» e con «Ricomincia» torna alla risposta.
 - Serve a confrontare le due impostazioni (risposta subito / percorso subito) sul telefono prima di decidere per tutte le pagine. Vedi `docs/ricerche-frequenti.md`.
