@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 19/10/2026 — assegno di inclusione: niente più mese di stop
+- Fonte: INPS, messaggio n. 640 del 23/02/2026 (https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.03.assegno-di-inclusione-addio-al-mese-di-stop.html) e Ministero del Lavoro (https://www.lavoro.gov.it/notizie/pagine/adi-cosa-cambia-con-la-legge-di-bilancio-2026); L. 199/2025, art. 1 c. 160.
+- `rules-adi.json`: tolto `pause_months`; nuovo `renewal_first_month_percent` = 50 (il primo mese del rinnovo è la metà). Soglie (ISEE 10.140 €, reddito 6.500 € × scala, 8.190 € con tutti sopra i 67 anni) confermate per il 2026.
+- Guida e schermate: rinnovo senza mese di stop, domanda dal mese dopo l'ultimo pagamento; nuova domanda frequente.
+
 ## 19/10/2026 — pagine leggibili senza JavaScript, WhatsApp, stampa
 - Ogni modulo ha la guida passo passo scritta nell'HTML (per Google e per chi non ha JavaScript), con anche i termini tecnici che la gente cerca. Titoli e descrizioni delle pagine riscritti con le stesse parole.
 - Liste d'attesa: tabella delle classi U, B, D, P (da `rules.json`) e come chiedere il percorso di tutela in ogni ASP (da `asp-sicilia.json`), creati da `npm run pagine`. «Numeri utili»: tutti i numeri anche senza JavaScript.
