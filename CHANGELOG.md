@@ -2,6 +2,12 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 19/10/2026 — liste d'attesa: Enna e Trapani
+- Fonti (estratti di ricerca: i siti delle due ASP non si aprono dall'estero): ASP Trapani, pagina «Percorsi di tutela» (https://www.asptrapani.it/servizi/Menu/dinamica.aspx?idSezione=17900&idArea=17901&idCat=28961&ID=47241&TipoElemento=pagina); ASP Enna, pagina «Liste di attesa» (https://www.aspenna.it/category/servizi/liste-di-attesa/) e pagina URP; elenco PEC delle ASP della Regione (https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/aziende-sanitarie-provinciali-sicilia).
+- Trapani: `info_url`, email comunicazione@asptrapani.it, PEC direzione.generale@pec.asptrapani.it.
+- Enna: `info_url`, email responsabile.urp@asp.enna.it, PEC protocollo.generale@pec.asp.enna.it.
+- Da confermare per telefono (nei `todo`).
+
 ## 19/10/2026 — ricorso invalidità: nuova soglia del gratuito patrocinio, niente spese se si perde
 - Fonte: DM Giustizia 22/04/2025, GU n. 159 dell'11/07/2025 (https://www.gazzettaufficiale.it/gazzetta/serie_generale/caricaDettaglio?dataPubblicazioneGazzetta=2025-07-11&numeroGazzetta=159), ripreso dai siti dei tribunali (giustizia.it).
 - `rules-ricorso.json`: `gratuito_patrocinio_income` 12.838,01 → **13.659,64 €**; nuovo `no_legal_costs_income` = 27.319,28 € (il doppio, art. 152 disp. att. c.p.c.).
