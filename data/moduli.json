@@ -206,7 +206,25 @@
       "icon": "🏠",
       "title": "Serve un infermiere o un medico a casa",
       "small": "Assistenza domiciliare dell'ASP",
-      "keywords": "infermiere casa domicilio assistenza domiciliare adi fisioterapia allettato anziano"
+      "keywords": "infermiere casa domicilio assistenza domiciliare adi fisioterapia allettato anziano pua uvm dimissione protetta prelievo ossigeno dialisi badante oss detrazione",
+      "pages": [
+        {
+          "id": "come-chiederla",
+          "title": "Come si chiede: medico, PUA, valutazione a casa"
+        },
+        {
+          "id": "dimissione-protetta",
+          "title": "Prima di uscire dall'ospedale: la dimissione protetta"
+        },
+        {
+          "id": "sollecito",
+          "title": "Se nessuno viene o l'assistenza si ferma"
+        },
+        {
+          "id": "consigli-pratici",
+          "title": "Consigli pratici: prelievo a casa, infermiere privato, ossigeno, dialisi"
+        }
+      ]
     },
     {
       "id": "ausili",
@@ -218,7 +236,21 @@
       "icon": "🦽",
       "title": "La carrozzina, il letto o i pannoloni non arrivano",
       "small": "Ho fatto la domanda all'ASP e aspetto",
-      "keywords": "carrozzina letto pannoloni ausili protesi deambulatore materasso apparecchio acustico plantari"
+      "keywords": "carrozzina letto pannoloni ausili protesi deambulatore materasso apparecchio acustico plantari protesica silenzio assenso collaudo fornitore incontinenza montascale sollevatore",
+      "pages": [
+        {
+          "id": "come-chiederli",
+          "title": "Dalla prescrizione dello specialista alla domanda all'ASP"
+        },
+        {
+          "id": "20-giorni",
+          "title": "L'autorizzazione entro 20 giorni e il sollecito"
+        },
+        {
+          "id": "consegna-e-collaudo",
+          "title": "La consegna del fornitore e il collaudo"
+        }
+      ]
     },
     {
       "id": "cure-palliative",
@@ -230,7 +262,21 @@
       "icon": "🕊️",
       "title": "Cure palliative a casa o in hospice",
       "small": "Per una malattia grave e avanzata",
-      "keywords": "cure palliative hospice dolore terapia malattia grave tumore fine vita"
+      "keywords": "cure palliative hospice dolore terapia malattia grave tumore fine vita reperibilità terapia del dolore oppioidi legge 38 rete locale",
+      "pages": [
+        {
+          "id": "cosa-sono",
+          "title": "Cosa sono, per chi, a casa o in hospice"
+        },
+        {
+          "id": "come-attivarle",
+          "title": "Come si attivano e cosa fare se non partono"
+        },
+        {
+          "id": "dolore",
+          "title": "Se il dolore non è controllato"
+        }
+      ]
     },
     {
       "id": "invalidita",
@@ -292,7 +338,21 @@
       "icon": "🪪",
       "title": "Ho diritto all'assegno di inclusione?",
       "small": "Le condizioni e come fare la domanda",
-      "keywords": "assegno inclusione soldi reddito cittadinanza isee aiuto economico poveri"
+      "keywords": "assegno inclusione soldi reddito cittadinanza isee aiuto economico poveri carta di inclusione caf patronato spid rinnovo supporto formazione lavoro",
+      "pages": [
+        {
+          "id": "requisiti",
+          "title": "Chi ha diritto: famiglia, residenza, ISEE e reddito"
+        },
+        {
+          "id": "domanda",
+          "title": "Come fare la domanda: ISEE, patronato, Comune, Carta"
+        },
+        {
+          "id": "durata-e-rinnovo",
+          "title": "Quanto dura e come si rinnova"
+        }
+      ]
     }
   ]
 }
