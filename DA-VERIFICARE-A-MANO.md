@@ -38,9 +38,10 @@ Quando chiudi un punto: correggi il sito se serve, scrivi la modifica in `CHANGE
   `comunicazione@asptrapani.it`? PEC `direzione.generale@pec.asptrapani.it`. Pagina:
   [Percorsi di tutela](https://www.asptrapani.it/servizi/Menu/dinamica.aspx?idSezione=17900&idArea=17901&idCat=28961&ID=47241&TipoElemento=pagina).
   Se c'è un modulo, aggiungerlo in `form_url` (`data/asp-sicilia.json`).
-- [ ] **ASP Enna:** le richieste vanno a `responsabile.urp@asp.enna.it`? PEC `protocollo.generale@pec.asp.enna.it`.
-  Leggere il «Regolamento liste di attesa e percorsi di tutela» e il «PAGLA 2025» sulla
-  [pagina Liste di attesa](https://www.aspenna.it/category/servizi/liste-di-attesa/): forse c'è una casella o un modulo apposta.
+- [ ] **ASP Enna:** oggi il sito manda le richieste a `responsabile.urp@asp.enna.it`. Letto dall'Italia il 19/10/2026: il
+  regolamento aziendale dice che la richiesta va al **protocollo** (PEC `protocollo.generale@pec.asp.enna.it`), non all'URP.
+  Decidere se cambiare `send_to`. Pagina: [Liste di attesa](https://www.aspenna.it/amministrazione-trasparente/servizi-erogati/liste-di-attesa)
+  (sito nuovo dal 01/03/2026). Nessun modulo online.
 - [ ] Dopo la conferma: in `data/asp-sicilia.json` togliere la nota nei `todo` di Enna e Trapani.
 
 ### Prevenzione
@@ -54,7 +55,9 @@ Quando chiudi un punto: correggi il sito se serve, scrivi la modifica in `CHANGE
 ### Piano terapeutico
 - [ ] **Ticket nella DPC:** il sito dice che chi non è esente può pagare il ticket della Regione anche per le medicine
   «per conto» dell'ASP. Viene dal [decalogo DPC dell'ASP Enna del 2022](https://www.aspenna.it/wp-content/uploads/2022/08/decalogo-DPC-2022-DEFINITIVO.pdf).
-  Controllare sull'[accordo DPC approvato con D.A. 367/2025](https://www.regione.sicilia.it/sites/default/files/2025-05/Allegato%20al%20D.A.%20n.367%20del%2003%20aprile%202025%20-%20Accordo.pdf).
+  Controllare sull'accordo DPC approvato con D.A. 367/2025: il PDF della Regione non c'è più (404 anche dall'Italia,
+  19/10/2026) e la [pagina DPC](https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/dipartimento-pianificazione-strategica/dpc)
+  non lo collega. Chiederlo alla Regione o cercarlo nella GURS.
 - [ ] **«Arriva in un giorno o due»:** stesso decalogo (24 ore lavorative). Confermare che vale ancora.
 
 ### Cartella clinica
@@ -80,8 +83,11 @@ Quando chiudi un punto: correggi il sito se serve, scrivi la modifica in `CHANGE
 
 ## 3. Da completare (già noti prima)
 
-- [ ] **Numeri di telefono** da confermare dall'Italia: elenco in [docs/da-verificare.md](docs/da-verificare.md)
-  (si rifà con `npm run da-verificare`). Regola: [docs/regola-numeri.md](docs/regola-numeri.md).
+- [ ] **Numeri di telefono:** il 19/10/2026, da una connessione italiana, sono stati riletti tutti sulle pagine ufficiali
+  (vedi `CHANGELOG.md`). Ne restano **6** senza pagina ufficiale, da confermare per telefono: elenco in
+  [docs/da-verificare.md](docs/da-verificare.md) (si rifà con `npm run da-verificare`). Regola: [docs/regola-numeri.md](docs/regola-numeri.md).
+  I dubbi nuovi (sedi spostate nelle Case di Comunità, numeri in contrasto tra due pagine) sono nei `todo` delle ASP,
+  alle righe «Verifica 19/10/2026».
 - [ ] **Lettere** (`js/letters.js`): da far rivedere a un legale prima del lancio (sono segnate «DA VERIFICARE»).
 - [ ] **Campi `todo` e `notes_internal`** nei file `data/*.json`: ogni ASP ha la sua lista (sportelli mancanti,
   numeri in contrasto). Cercare `TODO` nel codice e nei dati.
