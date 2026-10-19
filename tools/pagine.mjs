@@ -10,6 +10,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { checkWith } from '../js/controlla.js';
 
 const SITE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const CHECK = process.argv.includes('--controlla');
@@ -116,6 +117,25 @@ function openGraph(html, url) {
 `;
 }
 
+const HEAD_SCRIPT = "<script>document.documentElement.className += ' js';if(/\\/index\\.html$/.test(location.pathname))location.replace(location.pathname.slice(0,-10)+location.search+location.hash);</script>";
+
+// Dati strutturati FAQPage per Google: le stesse domande e risposte della sezione
+// «Domande frequenti» della guida scritta (<h3>Domande frequenti</h3> e poi <dl>).
+const plain = (s) => s.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim()
+  .replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
+function faqJsonLd(html) {
+  const dl = html.match(/<h3>Domande frequenti<\/h3>\s*<dl>([\s\S]*?)<\/dl>/);
+  if (!dl) return '';
+  const qa = [...dl[1].matchAll(/<dt>([\s\S]*?)<\/dt>\s*<dd>([\s\S]*?)<\/dd>/g)];
+  if (!qa.length) return '';
+  const data = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: qa.map(([, q, a]) => ({ '@type': 'Question', name: plain(q), acceptedAnswer: { '@type': 'Answer', text: plain(a) } })),
+  };
+  return `<script type="application/ld+json">\n${JSON.stringify(data, null, 1).replace(/</g, '\\u003c')}\n</script>\n`;
+}
+
 // «Condividi su WhatsApp» (funziona anche senza JavaScript: è un link) e «Stampa».
 // Sotto, l'indirizzo della pagina: si vede solo sul foglio stampato.
 const WA_ICON = '<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>';
@@ -133,6 +153,19 @@ function shareBar(html, url) {
 `;
 }
 
+// Piè di pagina scritto nell'HTML, uguale a quello di js/common.js (renderFooter, che poi lo sostituisce):
+// così «Chi siamo», privacy e contatti si vedono anche senza JavaScript.
+const EMAIL = read('js/common.js').match(/MAINTAINER_EMAIL = '(.*?)'/)[1];
+const footer = (root) => `<footer class="site-footer" id="site-footer"><div class="wrap">
+<p><strong>Guida Sanità è fatto da volontari. Non siamo l'ASP, l'INPS né un altro ufficio pubblico.</strong> Diamo informazioni generali, non il parere di un avvocato o di un medico.</p>
+<nav aria-label="Informazioni">
+<a href="${root}privacy.html">Privacy</a>
+<a href="${root}fonti.html">Da dove prendiamo le informazioni</a>
+<a href="${root}note-legali.html">Chi siamo</a>
+<a href="mailto:${EMAIL}">Scrivici: ${EMAIL}</a>
+</nav>
+</div></footer>`;
+
 // Fonti e data del controllo in fondo alla guida scritta: dai file data/ del modulo (data/moduli.json).
 const dataFile = (f) => JSON.parse(read(`data/${f}.json`));
 const dateIt = (d) => { const [y, m, g] = d.split('-').map(Number); return `${g === 1 ? '1º' : g} ${['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno', 'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre'][m - 1]} ${y}`; };
@@ -146,7 +179,7 @@ function guideSources(m) {
 <ul class="clean">
 ${list.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a></li>`).join('\n')}
 </ul>
-<p class="muted">Sono informazioni generali, non il parere di un avvocato o di un medico. Controlla sempre con la tua ASP.${dates.length ? ` Informazioni controllate il ${dateIt(dates[0])}.` : ''}</p>
+<p class="muted">Sono informazioni generali, non il parere di un avvocato o di un medico. ${checkWith(m.id)}${dates.length ? ` Informazioni controllate il ${dateIt(dates[0])}.` : ''}</p>
 <!-- /fonti -->`;
 }
 
@@ -225,8 +258,13 @@ for (const p of pages) {
   const url = pageUrl(p.file);
   html = html.replace(/<link rel="canonical"[^>]*>\n/, '').replace(/<meta property="og:[^>]*>\n/g, '')
     .replace(/<link rel="stylesheet"/, (m) => `<link rel="canonical" href="${url}">\n${openGraph(html, url)}${m}`);
+  // «/x/index.html» → «/x/»: GitHub Pages non fa redirect 301, quindi lo fa il browser appena apre la pagina.
+  html = html.replace(/<script>document\.documentElement\.className[^<]*<\/script>/, () => HEAD_SCRIPT);
+  html = html.replace(/<script type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>\n/, '');
+  const faq = faqJsonLd(html);
+  if (faq) html = html.replace(/<link rel="stylesheet"/, (m) => `${faq}${m}`);
   html = html.replace(/<!-- condividi[\s\S]*?<!-- \/condividi -->\n/, '')
-    .replace(/<footer class="site-footer"/, () => `${shareBar(html, url)}<footer class="site-footer"`);
+    .replace(/<footer class="site-footer"[\s\S]*?<\/footer>/, () => `${shareBar(html, url)}${footer(root)}`);
   html = html.replace(/<!-- blocco:([a-z-]+)[^>]*-->[\s\S]*?<!-- \/blocco:\1 -->/g, (_, name) => {
     if (!BLOCKS[name]) throw new Error(`Blocco sconosciuto «${name}» in ${p.file}`);
     return `<!-- blocco:${name} (creato da tools/pagine.mjs) -->\n${BLOCKS[name]()}\n<!-- /blocco:${name} -->`;

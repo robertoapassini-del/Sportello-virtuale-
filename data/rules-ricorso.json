@@ -1,14 +1,17 @@
 {
   "name": "Regole per il ricorso contro il verbale di invalidità civile",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "appeal_months": 6,
   "legal_basis": "art. 42, comma 3, D.L. 269/2003 (conv. L. 326/2003): ricorso al giudice entro 6 mesi dal verbale; art. 445-bis c.p.c.: prima si fa l'accertamento tecnico preventivo (ATP)",
-  "gratuito_patrocinio_income": 12838.01,
-  "notes_internal": "TODO-VERIFY con il legale: termine di 6 mesi anche nella nuova procedura (D.Lgs. 62/2024); soglia del gratuito patrocinio aggiornata; se nel verbale c'è 'rivedibile' il ricorso resta possibile.",
+  "gratuito_patrocinio_income": 13659.64,
+  "no_legal_costs_income": 27319.28,
+  "notes_internal": "Gratuito patrocinio: 13.659,64 € dal DM Giustizia 22/04/2025 (GU n. 159 dell'11/07/2025); prossimo aggiornamento ISTAT previsto nel 2027. Niente spese legali se si perde (art. 152 disp. att. c.p.c.): reddito fino al doppio, 27.319,28 €. TODO-VERIFY con il legale: termine di 6 mesi anche nella nuova procedura (D.Lgs. 62/2024); se nel verbale c'è 'rivedibile' il ricorso resta possibile.",
   "sources": [
     { "label": "D.L. 269/2003, art. 42 (ricorso entro 6 mesi, niente ricorso amministrativo)", "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2003-09-30;269" },
     { "label": "Codice di procedura civile, art. 445-bis (accertamento tecnico preventivo)", "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1940-10-28;1443" },
     { "label": "INPS – Invalidità civile: verbale e ricorso", "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.51293.ricorso-giurisdizionale.html" },
+    { "label": "Disposizioni di attuazione del c.p.c., art. 152 (con reddito basso niente spese legali anche se si perde)", "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1941-12-18;1368" },
+    { "label": "Gazzetta Ufficiale n. 159 dell'11/07/2025 – DM 22/04/2025: nuovo limite di reddito per il gratuito patrocinio", "url": "https://www.gazzettaufficiale.it/gazzetta/serie_generale/caricaDettaglio?dataPubblicazioneGazzetta=2025-07-11&numeroGazzetta=159" },
     { "label": "Ministero della Giustizia – Patrocinio a spese dello Stato", "url": "https://www.giustizia.it/giustizia/page/it/patrocinio_a_spese_dello_stato_nei_giudizi_civili_e_amministrativi" }
   ]
 }

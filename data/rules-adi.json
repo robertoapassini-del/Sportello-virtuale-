@@ -1,6 +1,6 @@
 {
   "name": "Regole per l'assegno di inclusione (ADI)",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "isee_max": 10140,
   "income_max_base": 6500,
   "income_max_elderly": 8190,
@@ -8,15 +8,23 @@
   "residency_continuous_years": 2,
   "duration_months": 18,
   "renewal_months": 12,
-  "pause_months": 1,
+  "renewal_first_month_percent": 50,
   "household_conditions": [
     "un minorenne",
     "una persona con almeno 60 anni",
     "una persona con disabilità",
     "una persona seguita dai servizi sociali o sanitari (con certificato)"
   ],
-  "notes_internal": "TODO-VERIFY: soglie 2026 (ISEE, reddito × scala di equivalenza, patrimonio), durata e pausa. Valori del 2025.",
+  "notes_internal": "Soglie della L. 207/2024 (dal 2025), uguali nel 2026. Dal 2026 (L. 199/2025, art. 1 c. 160; INPS messaggio 640/2026) non c'è più il mese di stop prima del rinnovo: la prima mensilità del rinnovo è al 50%. Dal 2026 l'ISEE per l'ADI è il nuovo «ISEE per l'inclusione» (L. 199/2025 c. 208, INPS messaggio 102/2026).",
   "sources": [
+    {
+      "label": "INPS – Assegno di inclusione: addio al mese di stop (messaggio n. 640 del 23/02/2026)",
+      "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.03.assegno-di-inclusione-addio-al-mese-di-stop.html"
+    },
+    {
+      "label": "Ministero del Lavoro – ADI: cosa cambia con la Legge di Bilancio 2026",
+      "url": "https://www.lavoro.gov.it/notizie/pagine/adi-cosa-cambia-con-la-legge-di-bilancio-2026"
+    },
     {
       "label": "INPS – Assegno di inclusione: requisiti e domanda",
       "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.assegno-di-inclusione-adi.html"

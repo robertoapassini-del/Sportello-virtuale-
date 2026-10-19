@@ -124,6 +124,10 @@ Repository → **Settings → Pages** → *Deploy from a branch* → scegli il r
 - Fai provare il sito a qualche persona anziana e annota dove si blocca.
 - Ricontrolla i dati delle ASP dopo il nuovo piano regionale (≈ 22/12/2026), poi ogni 3 mesi.
   Annota ogni modifica in `CHANGELOG.md`.
+- Ogni gennaio (e dopo la legge di bilancio) ricontrolla le cifre che cambiano: elenco con pagine e fonti in
+  [CIFRE-DA-CONTROLLARE.md](CIFRE-DA-CONTROLLARE.md).
+- Controlli e decisioni ancora aperti (ausili, screening epatite C, contatti di Enna e Trapani…):
+  [DA-VERIFICARE-A-MANO.md](DA-VERIFICARE-A-MANO.md).
 
 ## Licenza
 

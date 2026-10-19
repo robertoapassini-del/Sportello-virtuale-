@@ -80,6 +80,7 @@ const screens = {
           <li class="say"><strong>Controlla che sia davvero infermiere:</strong> deve essere iscritto all'albo. Lo puoi vedere su internet: scegli la provincia e scrivi il nome. <a href="https://www.fnopi.it/gli-ordini-provinciali/ricerca-albo/" target="_blank" rel="noopener">💻 Cerca nell'albo degli infermieri (FNOPI)</a></li>
           <li class="say"><strong>Chi fa cosa:</strong> l'<strong>infermiere</strong> fa punture, flebo, medicazioni e catetere. L'<strong>OSS</strong> (operatore socio-sanitario) aiuta a lavarsi, vestirsi e muoversi, ma non fa le cure. La <strong>badante</strong> fa compagnia e aiuta in casa.</li>
           <li class="say"><strong>Puoi scaricare dalle tasse il 19%</strong> di quello che spendi per l'infermiere, anche senza ricetta. Servono due cose: la <strong>fattura</strong>, con scritto «infermiere» e cosa ha fatto, e il <strong>pagamento con carta, bancomat o bonifico</strong>. Se paghi in contanti, non puoi scaricarlo.</li>
+          <li class="say">Il 19% si calcola solo sulla parte che <strong>supera 129,11 euro</strong>. Questi 129,11 euro si tolgono una volta sola all'anno, sommando tutte le spese mediche della famiglia fiscale: per esempio, se in un anno spendi 1.129,11 euro, scarichi il 19% di 1.000 euro, cioè 190 euro.</li>
           <li class="say">Anche la badante si può scaricare, per chi non è autosufficiente e con alcuni limiti. Chiedi a un CAF o a un patronato.</li>
         </ul>
       </details>

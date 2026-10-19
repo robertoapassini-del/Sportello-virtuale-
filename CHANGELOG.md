@@ -2,6 +2,39 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 19/10/2026 — piano terapeutico: distribuzione diretta e DPC
+- Fonti: Regione Siciliana, pagina DPC (https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/dipartimento-pianificazione-strategica/dpc) e accordo approvato con D.A. n. 367 del 03/04/2025; AIFA (L. 405/2001, art. 8); decalogo DPC dell'ASP Enna con Federfarma (2022: consegna in 24 ore lavorative, ticket fisso per chi non è esente).
+- Nuovo passo «Dove prendi la medicina» (farmacia dell'ASP o farmacia «per conto» dell'ASP) e nuova domanda frequente.
+
+## 19/10/2026 — cartella clinica: Fascicolo Sanitario e prima copia gratis
+- Fonti: Garante privacy, FAQ sull'accesso alle cartelle cliniche (dicembre 2024, https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/10086913): «l'interessato può ottenere gratuitamente la prima copia della cartella clinica recante i propri dati personali (art. 12, par. 5 del RGPD)»; Regione Siciliana, Fascicolo Sanitario Elettronico (https://www.regione.sicilia.it/fascicolosanitario) e sue domande frequenti (accesso con SPID, CIE o CNS).
+- Nuovo passo 1: guardare prima nel Fascicolo Sanitario Elettronico. Passo «ricevuta e costo» → «ricevuta e prima copia gratis» (art. 15 GDPR); due domande frequenti cambiate o nuove.
+
+## 19/10/2026 — assistenza domiciliare: franchigia di 129,11 euro
+- Fonte: Agenzia delle Entrate (https://www.agenziaentrate.gov.it/portale/le-spese-sanitarie-e-i-mezzi-di-ausilio): «19% della differenza tra il totale della somma spesa e la franchigia di 129,11 euro».
+- Infermiere privato: il 19% si detrae sulla parte oltre 129,11 euro, una volta all'anno per tutte le spese mediche; esempio con i numeri.
+
+## 19/10/2026 — liste d'attesa: Enna e Trapani
+- Fonti (estratti di ricerca: i siti delle due ASP non si aprono dall'estero): ASP Trapani, pagina «Percorsi di tutela» (https://www.asptrapani.it/servizi/Menu/dinamica.aspx?idSezione=17900&idArea=17901&idCat=28961&ID=47241&TipoElemento=pagina); ASP Enna, pagina «Liste di attesa» (https://www.aspenna.it/category/servizi/liste-di-attesa/) e pagina URP; elenco PEC delle ASP della Regione (https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/aziende-sanitarie-provinciali-sicilia).
+- Trapani: `info_url`, email comunicazione@asptrapani.it, PEC direzione.generale@pec.asptrapani.it.
+- Enna: `info_url`, email responsabile.urp@asp.enna.it, PEC protocollo.generale@pec.asp.enna.it.
+- Da confermare per telefono (nei `todo`).
+
+## 19/10/2026 — ricorso invalidità: nuova soglia del gratuito patrocinio, niente spese se si perde
+- Fonte: DM Giustizia 22/04/2025, GU n. 159 dell'11/07/2025 (https://www.gazzettaufficiale.it/gazzetta/serie_generale/caricaDettaglio?dataPubblicazioneGazzetta=2025-07-11&numeroGazzetta=159), ripreso dai siti dei tribunali (giustizia.it).
+- `rules-ricorso.json`: `gratuito_patrocinio_income` 12.838,01 → **13.659,64 €**; nuovo `no_legal_costs_income` = 27.319,28 € (il doppio, art. 152 disp. att. c.p.c.).
+- Guida e schermate: con reddito basso non si pagano le spese legali anche se si perde (dichiarazione nel ricorso); nuova domanda frequente.
+
+## 19/10/2026 — prevenzione: età degli screening controllate
+- Fonti: ASP Palermo (https://screening.asppalermo.org/), ASP Catania (https://www.aspct.it/comunicazione/eventi/salute-donna/). In Sicilia mammografia e sangue occulto restano 50–69 anni: nessuna estensione a 45–74 o 74. Età non cambiate.
+- ASP Trapani scrive Pap test 25–33 e test HPV 34–64: nella guida una frase dice che qualche ASP può avere età un po' diverse.
+- Screening gratuito dell'epatite C (nati 1969–1989): proroga nazionale al 31/12/2026, ma nessuna pagina siciliana del 2025–2026. Non aggiunto: da verificare con la Regione.
+
+## 19/10/2026 — assegno di inclusione: niente più mese di stop
+- Fonte: INPS, messaggio n. 640 del 23/02/2026 (https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.03.assegno-di-inclusione-addio-al-mese-di-stop.html) e Ministero del Lavoro (https://www.lavoro.gov.it/notizie/pagine/adi-cosa-cambia-con-la-legge-di-bilancio-2026); L. 199/2025, art. 1 c. 160.
+- `rules-adi.json`: tolto `pause_months`; nuovo `renewal_first_month_percent` = 50 (il primo mese del rinnovo è la metà). Soglie (ISEE 10.140 €, reddito 6.500 € × scala, 8.190 € con tutti sopra i 67 anni) confermate per il 2026.
+- Guida e schermate: rinnovo senza mese di stop, domanda dal mese dopo l'ultimo pagamento; nuova domanda frequente.
+
 ## 19/10/2026 — pagine leggibili senza JavaScript, WhatsApp, stampa
 - Ogni modulo ha la guida passo passo scritta nell'HTML (per Google e per chi non ha JavaScript), con anche i termini tecnici che la gente cerca. Titoli e descrizioni delle pagine riscritti con le stesse parole.
 - Liste d'attesa: tabella delle classi U, B, D, P (da `rules.json`) e come chiedere il percorso di tutela in ogni ASP (da `asp-sicilia.json`), creati da `npm run pagine`. «Numeri utili»: tutti i numeri anche senza JavaScript.

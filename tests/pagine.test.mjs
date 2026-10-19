@@ -44,3 +44,39 @@ test('i link interni non puntano a index.html', () => {
     assert.equal(bad, null, `${f}: ${bad && bad.join(', ')}`);
   }
 });
+
+test('«/x/index.html» porta subito a «/x/» (GitHub Pages non fa redirect 301)', () => {
+  for (const f of html.filter((x) => x.endsWith('index.html'))) {
+    assert.match(read(f), /location\.replace\(location\.pathname\.slice\(0,-10\)/, `${f}: manca il reindirizzamento`);
+  }
+});
+
+test('le «Domande frequenti» sono anche nei dati strutturati FAQPage', () => {
+  for (const m of reg.modules) {
+    const page = read(`${m.id}/index.html`);
+    const dl = page.match(/<h3>Domande frequenti<\/h3>\s*<dl>([\s\S]*?)<\/dl>/);
+    assert.ok(dl, `${m.id}: manca la sezione «Domande frequenti»`);
+    const ld = page.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/);
+    assert.ok(ld, `${m.id}: mancano i dati FAQPage`);
+    const data = JSON.parse(ld[1]);
+    assert.equal(data['@type'], 'FAQPage');
+    assert.equal(data.mainEntity.length, (dl[1].match(/<dt>/g) || []).length, `${m.id}: domande diverse`);
+  }
+});
+
+test('sitemap.xml ha tutte le pagine e robots.txt la indica', () => {
+  const sitemap = read('sitemap.xml');
+  for (const f of html) {
+    const url = `https://guidasanita.it/${f.replace(/(^|\/)index\.html$/, '$1')}`;
+    assert.ok(sitemap.includes(`<loc>${url}</loc>`), `sitemap.xml: manca ${url}`);
+  }
+  assert.doesNotMatch(sitemap, /index\.html/);
+  assert.match(read('robots.txt'), /^Sitemap: https:\/\/guidasanita\.it\/sitemap\.xml$/m);
+});
+
+test('l\'avviso finale dice a chi chiedere conferma, guida per guida', () => {
+  const want = { invalidita: "l'INPS o con un patronato", 'ricorso-invalidita': "l'INPS o con un patronato", 'assegno-inclusione': "l'INPS o con un patronato", 'cartella-clinica': "l'ospedale o con la tua ASP" };
+  for (const m of reg.modules) {
+    assert.ok(read(`${m.id}/index.html`).replace(/&#39;/g, "'").includes(`Controlla sempre con ${want[m.id] || 'la tua ASP'}.`), m.id);
+  }
+});

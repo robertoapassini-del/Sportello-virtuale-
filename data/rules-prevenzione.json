@@ -1,6 +1,6 @@
 {
   "name": "Prevenzione gratuita per età: screening oncologici e vaccini",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-19",
   "screening": [
     {
       "id": "mammografia",
@@ -80,8 +80,12 @@
   "screening_numbers": {
     "catania": "800 894 007"
   },
-  "notes_internal": "TODO-VERIFY: fasce di età in Sicilia (alcune regioni estendono mammografia 45-74 e colon fino a 74); influenza gratuita da 60 anni (circolare ministeriale stagionale); pneumococco e zoster per la coorte dei 65enni e oltre secondo calendario regionale; numeri verdi screening delle altre 8 ASP.",
+  "notes_internal": "Fasce di età controllate il 19/10/2026 (ASP Palermo, ASP Catania): in Sicilia mammografia e colon restano 50-69, nessuna estensione a 45-74 o 74 trovata. ASP Trapani scrive Pap 25-33 e HPV 34-64: da chiarire con la Regione. Screening HCV (nati 1969-1989): proroga nazionale al 31/12/2026, ma nessuna pagina siciliana del 2025-2026: non pubblicato. TODO-VERIFY: influenza gratuita da 60 anni (circolare ministeriale stagionale); pneumococco e zoster per la coorte dei 65enni e oltre secondo calendario regionale; numeri verdi screening delle altre 8 ASP.",
   "sources": [
+    {
+      "label": "ASP Palermo – Screening oncologici: età ed esami",
+      "url": "https://screening.asppalermo.org/"
+    },
     {
       "label": "Ministero della Salute – Screening oncologici",
       "url": "https://www.salute.gov.it/new/it/tema/tumori-e-screening/"

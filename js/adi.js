@@ -24,8 +24,8 @@ const howTo = () => `
   <details class="card">
     <summary>Quanto dura e cosa controllano</summary>
     <ul class="clean">
-      <li>Dura <strong>${rules.duration_months} mesi</strong>. Poi si ferma per ${rules.pause_months} mese e si può rinnovare per altri ${rules.renewal_months}.</li>
-      <li>Oltre all'ISEE, controllano il reddito della famiglia (limite di circa ${formatEuro(rules.income_max_base)} l'anno per una persona sola, di più per le famiglie numerose e per chi ha più di 67 anni o una disabilità), la casa e i risparmi.</li>
+      <li>Dura <strong>${rules.duration_months} mesi</strong>. Poi si può rinnovare per altri ${rules.renewal_months} mesi, senza più il mese di stop: la domanda di rinnovo si fa dal mese dopo l'ultimo pagamento. Il primo mese del rinnovo arriva la metà (${rules.renewal_first_month_percent}%), poi l'importo intero.</li>
+      <li>Oltre all'ISEE, controllano il reddito della famiglia (limite di circa ${formatEuro(rules.income_max_base)} l'anno per una persona sola, di più per le famiglie numerose, per chi è in affitto e per le famiglie con tutti sopra i 67 anni: ${formatEuro(rules.income_max_elderly)}), la casa e i risparmi.</li>
       <li>Chi può lavorare (tra 18 e 59 anni, senza carichi di cura) deve iscriversi ai percorsi per il lavoro.</li>
       <li>Se la situazione cambia (lavoro, nascite, trasloco) va comunicato all'INPS.</li>
     </ul>
