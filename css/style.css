@@ -201,6 +201,12 @@ table.fields th { width: 40%; }
 .guida ol, .guida ul:not(.clean) { padding-left: 1.3rem; }
 .guida li { margin: 6px 0; }
 
+/* ---- «In questa guida»: le pagine corte di un modulo (creato da tools/pagine.mjs) ---- */
+ol.guida-indice { padding-left: 1.4rem; margin: 0 0 20px; }
+ol.guida-indice li { margin: 10px 0; font-size: 1.05rem; }
+main.guida { padding-top: 24px; }
+main.guida h2 { margin-top: 28px; }
+
 /* ---- Condividi su WhatsApp / Stampa (creata da tools/pagine.mjs) ---- */
 .share-bar { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; margin-bottom: 24px; }
 .share-bar .btn { width: auto; flex: 1 1 14rem; margin: 0; display: inline-flex; align-items: center; justify-content: center; gap: 10px; text-align: center; }

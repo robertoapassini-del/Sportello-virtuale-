@@ -54,7 +54,13 @@
       "icon": "🎫",
       "title": "Devo pagare il ticket?",
       "small": "Esenzione per età o per reddito",
-      "keywords": "ticket pagare esenzione reddito età over 65 anziani pensione disoccupato rinnovo delega aspconte gratis"
+      "keywords": "ticket pagare esenzione reddito età over 65 anziani pensione disoccupato rinnovo delega aspconte gratis patologia malattia cronica invalidità gravidanza 048",
+      "pages": [
+        { "id": "chi-ha-diritto", "title": "Chi ha diritto: i codici E01, E02, E03 ed E04" },
+        { "id": "come-chiedere", "title": "Come si chiede l'esenzione" },
+        { "id": "rinnovo", "title": "Quanto dura e come si rinnova" },
+        { "id": "altre-esenzioni", "title": "Esenzione per malattia, invalidità, gravidanza" }
+      ]
     },
     {
       "id": "piano-terapeutico",
