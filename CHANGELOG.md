@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 19/10/2026 — cartella clinica: Fascicolo Sanitario e prima copia gratis
+- Fonti: Garante privacy, FAQ sull'accesso alle cartelle cliniche (dicembre 2024, https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/10086913): «l'interessato può ottenere gratuitamente la prima copia della cartella clinica recante i propri dati personali (art. 12, par. 5 del RGPD)»; Regione Siciliana, Fascicolo Sanitario Elettronico (https://www.regione.sicilia.it/fascicolosanitario) e sue domande frequenti (accesso con SPID, CIE o CNS).
+- Nuovo passo 1: guardare prima nel Fascicolo Sanitario Elettronico. Passo «ricevuta e costo» → «ricevuta e prima copia gratis» (art. 15 GDPR); due domande frequenti cambiate o nuove.
+
 ## 19/10/2026 — assistenza domiciliare: franchigia di 129,11 euro
 - Fonte: Agenzia delle Entrate (https://www.agenziaentrate.gov.it/portale/le-spese-sanitarie-e-i-mezzi-di-ausilio): «19% della differenza tra il totale della somma spesa e la franchigia di 129,11 euro».
 - Infermiere privato: il 19% si detrae sulla parte oltre 129,11 euro, una volta all'anno per tutte le spese mediche; esempio con i numeri.

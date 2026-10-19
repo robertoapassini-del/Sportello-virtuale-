@@ -34,10 +34,11 @@ function sources() {
 const howToAsk = () => `
   <h2 class="say">Come si chiede</h2>
   <ol class="big-steps">
+    <li class="say"><strong>Prima guarda nel Fascicolo Sanitario Elettronico</strong> (FSE): molti referti si scaricano già lì, gratis, con SPID, CIE o CNS. <a href="https://www.regione.sicilia.it/fascicolosanitario" target="_blank" rel="noopener">💻 Fascicolo Sanitario della Regione Siciliana</a></li>
     <li class="say"><strong>Vai all'ufficio cartelle cliniche</strong> dell'ospedale (a volte si chiama «Direzione sanitaria» o «Archivio»). Oppure all'URP. Molti ospedali hanno anche un modulo sul sito.</li>
     <li class="say"><strong>Porta la carta d'identità.</strong> Se chiedi per un familiare, serve una <strong>delega firmata</strong> da lui e la copia del suo documento. Se la persona è morta, serve una dichiarazione di essere erede.</li>
     <li class="say"><strong>Chiedi una ricevuta</strong> con il giorno della richiesta. Da quel giorno partono i ${rules.deadline_days} giorni.</li>
-    <li class="say"><strong>Chiedi quanto costa.</strong> La copia si paga (di solito pochi euro, di più se ci sono le immagini). Il referto di una visita o di un esame fatto da poco è spesso gratis.</li>
+    <li class="say"><strong>La prima copia dei tuoi dati è gratis</strong> se scrivi che la chiedi «ai sensi dell'art. 15 del Regolamento UE 2016/679 (GDPR)». Lo dice il Garante della privacy. Le copie in più si possono pagare. Se l'ospedale ti chiede soldi per la prima copia, fagli vedere questa regola.</li>
   </ol>`;
 
 const screens = {
