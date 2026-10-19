@@ -1,4 +1,5 @@
 // Modulo 7 — assegno di inclusione: «ho diritto all'assegno?».
+// Prima la risposta: la pagina mostra subito la risposta scritta; il controllo delle condizioni parte dal pulsante.
 // Controllo delle condizioni principali con regole fisse. Niente lettera: la domanda si fa
 // all'INPS (o gratis con un patronato o un CAF).
 import { adiCheck, formatEuro } from './engine.js';
@@ -7,6 +8,8 @@ import { createFlow, choice, restartBtn, progress } from './flow.js';
 
 const ROOT = '../';
 const app = document.getElementById('app');
+// La risposta scritta della pagina: è la prima schermata del percorso.
+const answerHtml = app.innerHTML;
 let rules;
 const state = {};
 const sources = () => [rules.sources, { verified: rules.last_verified, note: 'Le cifre cambiano ogni anno: controlla sempre con il patronato o sul sito INPS.' }];
@@ -32,16 +35,9 @@ const howTo = () => `
   </details>`;
 
 const screens = {
-  intro: () => ({
-    html: `
-      <div class="hero" aria-hidden="true">🪪</div>
-      <h1>Hai diritto all'assegno di inclusione?</h1>
-      <p class="lead say">È un aiuto economico ogni mese per le famiglie con pochi soldi.</p>
-      <p class="say">Con 3 domande ti diciamo se ci sono le condizioni principali e come fare la domanda.</p>
-      <div class="notice info"><p class="say"><strong>Ti serve un numero:</strong> l'ISEE della famiglia. Se non ce l'hai, va bene lo stesso: ti diciamo il limite.</p></div>
-      <button type="button" class="btn primary big" data-go="household">▶️ Comincia</button>
-      <p class="muted say">È gratis. Non salviamo niente.</p>`,
-  }),
+  // Prima schermata: la risposta scritta che è già nella pagina (vedi index.html).
+  // Così «Ricomincia» e il tasto Indietro riportano alla risposta, non a una presentazione.
+  intro: () => ({ html: answerHtml }),
 
   household: () => ({
     html: `${progress(1, 3)}

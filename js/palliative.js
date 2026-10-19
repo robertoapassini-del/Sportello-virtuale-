@@ -1,4 +1,5 @@
 // Modulo 11 — cure palliative e terapia del dolore: «come si attivano?».
+// Prima la risposta: la pagina mostra subito la risposta scritta; il percorso per provincia parte dal pulsante.
 // Diritto della L. 38/2010. Spieghiamo i passi, i numeri da chiamare e una lettera di richiesta.
 // Scritto con delicatezza: spesso chi legge sta assistendo una persona molto malata.
 import { todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
@@ -8,6 +9,8 @@ import { createFlow, choice, restartBtn, days, progress, dateForm, showError, le
 
 const ROOT = '../';
 const app = document.getElementById('app');
+// La risposta scritta della pagina: è la prima schermata del percorso.
+const answerHtml = app.innerHTML;
 let rules;
 let data;
 const state = {};
@@ -42,15 +45,9 @@ const whatIs = () => `
   </details>`;
 
 const screens = {
-  intro: () => ({
-    html: `
-      <div class="hero" aria-hidden="true">🕊️</div>
-      <h1>Cure palliative: aiuto a casa o in hospice</h1>
-      <p class="lead say">Quando una malattia è grave e avanzata, la persona ha diritto a non soffrire e a essere curata a casa o in hospice, gratis.</p>
-      <p class="say">Ti spieghiamo come si chiedono e cosa fare se non si attivano.</p>
-      <button type="button" class="btn primary big" data-go="province">▶️ Comincia</button>
-      <p class="muted say">Non salviamo niente. Non chiediamo la malattia.</p>`,
-  }),
+  // Prima schermata: la risposta scritta che è già nella pagina (vedi index.html).
+  // Così «Ricomincia» e il tasto Indietro riportano alla risposta, non a una presentazione.
+  intro: () => ({ html: answerHtml }),
 
   province: () => ({
     html: `${progress(1, 2)}

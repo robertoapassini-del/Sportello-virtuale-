@@ -1,4 +1,5 @@
 // Modulo 6 — ricorso contro il verbale di invalidità: «il verbale è sbagliato».
+// Prima la risposta: la pagina mostra subito la risposta scritta; il conto dei 6 mesi parte dal pulsante.
 // Regola: il ricorso al giudice va fatto entro 6 mesi dal verbale. Niente lettera:
 // serve un avvocato (o un patronato che lo trova). Non chiediamo la malattia.
 import { ricorsoDeadline, todayISO, formatIt, parseDate, daysBetween, formatEuro, art } from './engine.js';
@@ -7,6 +8,8 @@ import { createFlow, choice, restartBtn, days, dateForm, showError } from './flo
 
 const ROOT = '../';
 const app = document.getElementById('app');
+// La risposta scritta della pagina: è la prima schermata del percorso.
+const answerHtml = app.innerHTML;
 let rules;
 const state = {};
 
@@ -39,19 +42,9 @@ const aggravamento = `
   </details>`;
 
 const screens = {
-  intro: () => ({
-    html: `
-      <div class="hero" aria-hidden="true">⚖️</div>
-      <h1>Il verbale di invalidità è sbagliato?</h1>
-      <p class="lead say">La percentuale è troppo bassa, o ti hanno detto di no?</p>
-      <p class="say">Puoi fare ricorso, ma <strong>solo entro ${rules.appeal_months} mesi</strong> da quando hai ricevuto il verbale. Dopo, non si può più. Ti diciamo quanto tempo ti resta e cosa fare.</p>
-      <div class="notice info">
-        <p class="say"><strong>Prendi questo foglio:</strong></p>
-        <ul class="icon-list say"><li><span class="ico" aria-hidden="true">📄</span> Il verbale, con la busta o l'email con cui è arrivato</li></ul>
-      </div>
-      <button type="button" class="btn primary big" data-go="received">▶️ Comincia</button>
-      <p class="muted say">Non giudichiamo il verbale. Non salviamo niente. Non chiediamo la malattia.</p>`,
-  }),
+  // Prima schermata: la risposta scritta che è già nella pagina (vedi index.html).
+  // Così «Ricomincia» e il tasto Indietro riportano alla risposta, non a una presentazione.
+  intro: () => ({ html: answerHtml }),
 
   received: () => ({
     html: `

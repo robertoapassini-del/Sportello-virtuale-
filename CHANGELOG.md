@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 20/10/2026 — tutte le guide: prima la risposta, poi pagine corte
+- Nessun dato cambiato. Tutti i 12 moduli hanno ora la stessa impostazione dell'esenzione ticket: in cima la risposta scritta (leggibile anche senza JavaScript), il percorso a domande parte da un pulsante e torna alla risposta con «Ricomincia», la guida lunga è divisa in 2–4 pagine corte con l'indice «In questa guida».
+- Pagine nuove: liste-attesa (3), medico-famiglia (4), cartella-clinica (3), piano-terapeutico (3), prevenzione (2), invalidita (3), ricorso-invalidita (3), assegno-inclusione (3), assistenza-domiciliare (4, compresi i consigli pratici), ausili (3), cure-palliative (3). Sitemap: 59 pagine.
+- Le «Domande frequenti» sono diventate titoli dentro le pagine: niente più FAQPage nei moduli. I testi delle guide sono gli stessi di prima, riordinati per domanda; frasi nuove solo per legare le pagine.
+
 ## 20/10/2026 — esenzione ticket: la guida diventa 4 pagine corte (modello NHS.uk)
 - Nessun dato cambiato. La guida lunga sotto la risposta è divisa in pagine che rispondono a una domanda ciascuna: `chi-ha-diritto/`, `come-chiedere/`, `rinnovo/`, `altre-esenzioni/`. Nella pagina principale resta la risposta, il calcolo e l'indice «In questa guida».
 - Le «Domande frequenti» sono diventate titoli e punti dentro le pagine (niente FAQPage per questo modulo).
