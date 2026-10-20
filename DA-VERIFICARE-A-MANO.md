@@ -97,6 +97,21 @@ Non fatto perché impossibile dall'estero: il controllo dei 370 link esterni (`n
   [Normattiva](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1941-12-18;1368) e far controllare al legale
   la frase «non paghi le spese legali dell'INPS» (vale salvo «comportamento temerario»; il reddito è quello IRPEF della famiglia).
 
+### Legge 104 (modulo nuovo del 20/10/2026, scritto senza aprire le pagine ufficiali)
+- [ ] **Tutte le cifre di `data/rules-legge104.json`** hanno `proof: "secondaria"`: rileggere per intero dall'Italia
+  [L. 104/1992, art. 3 e 33](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1992-02-05;104),
+  [D.Lgs. 151/2001, art. 42 c. 5 e art. 33](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2001-03-26;151),
+  le schede INPS su permessi e congedo straordinario e la guida dell'Agenzia delle Entrate; poi portare a `"testo"`.
+- [ ] **Agevolazioni auto:** controllare nella guida dell'Agenzia delle Entrate l'elenco esatto delle disabilità che
+  ci danno diritto (la pagina `agevolazioni/` lo riassume in un riquadro) e i limiti di cilindrata.
+- [ ] **Parole nuove del verbale** dopo il D.Lgs. 62/2024 («necessità di sostegno elevato o molto elevato» al posto
+  della gravità): confermare la dicitura esatta e da quando compare nei verbali delle province siciliane della
+  sperimentazione (pagina `cos-e/` e schermata «Non lo so» in `js/legge104.js`).
+- [ ] **Permessi per figli sotto i 3 anni:** confermare le tre alternative (2 ore al giorno, 3 giorni al mese,
+  prolungamento del congedo parentale) sulla scheda INPS.
+- [ ] **Diritti sul lavoro** (sede vicina, niente trasferimento, rifiuto del lavoro notturno, priorità per il lavoro
+  da casa): far rileggere la pagina `permessi-e-congedo/` al legale.
+
 ### Assegno di inclusione
 - [ ] **Messaggio INPS n. 2437 del 22/07/2026** sui rinnovi: non letto. Controllare che non cambi quello che c'è scritto.
 - [ ] Dal 2026 l'ADI usa il nuovo **«ISEE per l'inclusione»** (più leggero sulla casa). Valutare se dirlo nella guida.

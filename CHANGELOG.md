@@ -2,6 +2,13 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 20/10/2026 — nuovo modulo 14: legge 104
+- Perché: «legge 104» è la parola più cercata in Sicilia tra quelle legate al sito (docs/ricerche-frequenti.md), e finora compariva solo di sfuggita nel modulo invalidità.
+- Nuovo `data/rules-legge104.json`: permessi (3 giorni al mese; 2 ore al giorno per il lavoratore con disabilità grave e per i genitori di figli sotto i 3 anni; prolungamento del congedo parentale fino ai 12 anni), familiari entro il 2° grado (3° grado se genitori o coniuge hanno 65 anni o più), congedo straordinario fino a 2 anni, auto (IVA 4%, detrazione 19% fino a 18.075,99 €, ogni 4 anni), IVA 4% sugli ausili. Fonti: L. 104/1992 art. 3 e 33; D.Lgs. 151/2001 art. 42 e 33; D.Lgs. 105/2022; schede INPS su permessi e congedo; guida dell'Agenzia delle Entrate; riformadisabilita.gov.it.
+- **Tutte le cifre hanno `proof: "secondaria"`**: scritte senza poter aprire le pagine ufficiali (rete chiusa dall'ambiente di lavoro). Vanno rilette per intero dall'Italia prima di dare la pagina per buona: elenco in DA-VERIFICARE-A-MANO.md. `review_by` 31/01/2027.
+- Pagina `legge-104/` con la risposta scritta e il percorso a due domande (per chi; cosa dice il verbale: comma 3, comma 1, nessun verbale, non lo so), più 4 pagine corte: cos'è e come si legge il verbale, permessi e congedo, agevolazioni, come si chiede. Area «Invalidità e aiuti economici», dopo il ricorso. Sitemap: 64 pagine.
+- `tests/combinazioni.cjs`: 12 casi nuovi per il modulo; `js/controlla.js`: l'avviso finale rimanda all'INPS o al patronato.
+
 ## 20/10/2026 — controllo totale dopo il rifacimento: tre cose rimesse a posto
 - Nessun dato cambiato. Controllo di cifre, testi, link e funzioni delle 59 pagine rispetto alla versione prima delle pagine corte: nessuna cifra e nessun testo perso (le «Domande frequenti» vivono dentro le pagine).
 - Le 38 pagine corte caricano ora `js/guida.js` al posto del solo `js/common.js`: tornano «Questa pagina ti è stata utile?», il conteggio anonimo della visita e il pulsante «🔊 Ascolta», che legge tutta la guida (titoli, paragrafi ed elenchi; non l'indice né le fonti).

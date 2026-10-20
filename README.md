@@ -14,6 +14,7 @@ Sito gratuito che dice alle persone in Sicilia cosa spetta loro, entro quando e 
 - **Modulo 12 – Prevenzione gratuita:** screening e vaccini gratuiti per età e sesso, come prenotarli.
 - **Modulo 13 – Medico di famiglia e pediatra:** come scegliere o cambiare, scelta temporanea, lettera se non c'è posto.
 - **Modulo 11 – Cure palliative:** diritto della L. 38/2010, attivazione a casa o in hospice, richiesta scritta.
+- **Modulo 14 – Legge 104:** comma 1 o comma 3, permessi di 3 giorni, congedo di 2 anni, agevolazioni, come si chiede.
 
 Requisiti completi: [SPEC.md](SPEC.md).
 
@@ -120,6 +121,7 @@ npm run test:combinazioni
 | `cure-palliative/`, `js/palliative.js` | Modulo 11: cure palliative, richiesta scritta |
 | `prevenzione/`, `js/prevenzione.js` | Modulo 12: screening e vaccini gratuiti per età |
 | `medico-famiglia/`, `js/medico.js` | Modulo 13: scelta del medico o del pediatra |
+| `legge-104/`, `js/legge104.js` | Modulo 14: legge 104, cosa spetta secondo il verbale |
 | `numeri-utili/`, `js/numeri.js`, `data/numeri.json` | Numeri utili nazionali e, per provincia, i contatti dell'ASP (`contacts` in `asp-sicilia.json`) |
 | `js/flow.js` | Navigazione comune ai moduli nuovi (schermate, Indietro, Ascolta, Fonti) |
 | `js/engine.js` | Regole sulle date (funzioni pure, testate) |

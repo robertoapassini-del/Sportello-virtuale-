@@ -1,0 +1,93 @@
+{
+  "name": "Regole della legge 104/1992: permessi, congedo e agevolazioni per le persone con disabilità e chi le assiste",
+  "last_verified": "2026-10-20",
+  "legal_basis": "L. 104/1992, art. 3 (comma 1: handicap; comma 3: handicap in situazione di gravità) e art. 33 (permessi); D.Lgs. 151/2001, art. 42, comma 5 (congedo straordinario) e art. 33 (prolungamento del congedo parentale); D.Lgs. 105/2022 (convivente di fatto, più lavoratori per la stessa persona); D.Lgs. 62/2024 (nuova valutazione di base e nuove parole nel verbale)",
+  "permessi": {
+    "days_per_month": 3,
+    "hours_per_day": 2,
+    "child_hours_until_age": 3,
+    "parental_extension_until_age": 12
+  },
+  "family": {
+    "degree": 2,
+    "extended_degree": 3,
+    "extended_age": 65
+  },
+  "congedo": {
+    "years": 2
+  },
+  "auto": {
+    "iva_percent": 4,
+    "detrazione_percent": 19,
+    "detrazione_max": 18075.99,
+    "every_years": 4
+  },
+  "ausili_iva_percent": 4,
+  "notes_internal": "Scritto il 20/10/2026 senza poter aprire le pagine ufficiali (rete chiusa): tutte le cifre vanno rilette per intero dall'Italia e portate a proof 'testo'. TODO-VERIFY: (1) nuove parole del verbale dopo il D.Lgs. 62/2024 («necessità di sostegno elevato o molto elevato» al posto di «gravità», art. 3 comma 3) e da quando valgono nelle province siciliane della sperimentazione; (2) tetto annuo del congedo straordinario (cambia ogni anno: non lo scriviamo); (3) elenco esatto delle disabilità che danno diritto alle agevolazioni auto (guida Agenzia delle Entrate); (4) permessi per figli sotto i 3 anni: alternativa fra 2 ore al giorno, 3 giorni al mese e prolungamento del congedo parentale.",
+  "provenienza": {
+    "permessi.days_per_month": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1992-02-05;104",
+      "verified": "2026-10-20",
+      "proof": "secondaria",
+      "review_by": "2027-01-31",
+      "nota": "L. 104/1992, art. 33, comma 3: tre giorni di permesso mensile retribuito, anche frazionabili in ore. Scritto senza poter aprire la pagina: rileggere il testo e portare a «testo»."
+    },
+    "permessi.hours_per_day": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1992-02-05;104",
+      "verified": "2026-10-20",
+      "proof": "secondaria",
+      "review_by": "2027-01-31",
+      "nota": "Art. 33, comma 6 (lavoratore con disabilità grave: due ore al giorno o tre giorni al mese) e comma 2 (genitori di figli sotto i 3 anni). Da rileggere."
+    },
+    "permessi.child_hours_until_age": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1992-02-05;104",
+      "verified": "2026-10-20",
+      "proof": "secondaria",
+      "review_by": "2027-01-31",
+      "nota": "Art. 33, comma 2: figli fino a tre anni. Da rileggere."
+    },
+    "permessi.parental_extension_until_age": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2001-03-26;151",
+      "verified": "2026-10-20",
+      "proof": "secondaria",
+      "review_by": "2027-01-31",
+      "nota": "D.Lgs. 151/2001, art. 33: prolungamento del congedo parentale fino ai 12 anni del bambino con disabilità grave. Da rileggere."
+    },
+    "family": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1992-02-05;104",
+      "verified": "2026-10-20",
+      "proof": "secondaria",
+      "review_by": "2027-01-31",
+      "nota": "Art. 33, comma 3: parenti o affini entro il secondo grado; entro il terzo grado se i genitori o il coniuge della persona hanno compiuto 65 anni, o mancano, o hanno patologie invalidanti. Il convivente di fatto è stato aggiunto dal D.Lgs. 105/2022. Da rileggere."
+    },
+    "congedo.years": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2001-03-26;151",
+      "verified": "2026-10-20",
+      "proof": "secondaria",
+      "review_by": "2027-01-31",
+      "nota": "D.Lgs. 151/2001, art. 42, comma 5: fino a due anni nell'arco della vita lavorativa, anche frazionati. Il tetto annuo dell'indennità cambia ogni anno e non viene scritto. Da rileggere."
+    },
+    "auto": {
+      "url": "https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/disabili-agevolazioni-veicoli",
+      "verified": "2026-10-20",
+      "proof": "secondaria",
+      "review_by": "2027-01-31",
+      "nota": "Guida dell'Agenzia delle Entrate sulle agevolazioni per le persone con disabilità: IVA al 4%, detrazione del 19% su una spesa massima di 18.075,99 euro, una volta ogni quattro anni, esenzione dal bollo e dall'imposta di trascrizione. Vale solo per alcune disabilità (non per tutte le persone con la 104): elenco da rileggere nella guida. Legge di bilancio: ricontrollare a gennaio."
+    },
+    "ausili_iva_percent": {
+      "url": "https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/disabili-agevolazioni-veicoli",
+      "verified": "2026-10-20",
+      "proof": "secondaria",
+      "review_by": "2027-01-31",
+      "nota": "IVA al 4% su ausili tecnici e informatici per le persone con disabilità (DPR 633/1972, tabella A, parte II, n. 31 e 41-quater), con prescrizione del medico. Da rileggere nella guida dell'Agenzia delle Entrate (sezione «ausili tecnici e informatici»)."
+    }
+  },
+  "sources": [
+    { "label": "L. 104/1992 – legge quadro sull'handicap: art. 3 (comma 1 e comma 3) e art. 33 (permessi)", "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1992-02-05;104" },
+    { "label": "D.Lgs. 151/2001, art. 42 (congedo straordinario fino a due anni) e art. 33 (prolungamento del congedo parentale)", "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2001-03-26;151" },
+    { "label": "INPS – Permessi legge 104 per lavoratori dipendenti con disabilità e familiari", "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.permessi-legge-104-per-lavoratori-dipendenti-con-disabilita-e-familiari-50585.permessi-legge-104-per-lavoratori-dipendenti-con-disabilita-e-familiari.html" },
+    { "label": "INPS – Congedo straordinario per assistere familiari con disabilità grave", "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.congedo-straordinario-per-assistere-familiari-disabili-50600.congedo-straordinario-per-assistere-familiari-disabili.html" },
+    { "label": "Agenzia delle Entrate – Agevolazioni per le persone con disabilità (auto, ausili, spese)", "url": "https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/disabili-agevolazioni-veicoli" },
+    { "label": "Riforma della disabilità (D.Lgs. 62/2024): la nuova valutazione di base e le province in cui è partita", "url": "https://riformadisabilita.gov.it/valutazione-di-base/" }
+  ]
+}

@@ -36,6 +36,7 @@ Ultimo controllo di questo elenco: 19 ottobre 2026.
 | Screening epatite C (nati 1969–1989) | **Non pubblicato**: proroga nazionale al 31/12/2026, nessuna pagina siciliana recente | (da aggiungere a `prevenzione/` se confermato) | — | Regione Siciliana, ASP, [bastapensarci.it](https://www.bastapensarci.it) | Ogni anno (proroghe) |
 | Vaccini gratis per età | Influenza da 60 anni; pneumococco e zoster da 65; antitetanica ogni 10 anni | `prevenzione/` | `rules-prevenzione.json` → `vaccines` | Circolare influenza del Ministero della Salute (ogni anno); calendario vaccinale regionale | Ogni autunno |
 | Liste d'attesa: tempi massimi per classe | U 72 ore, B 10 giorni, D 30/60 giorni, P 120 giorni | `liste-attesa/` (tabella creata da `npm run pagine`) | `rules.json` → `max_wait_days`, `callback_days` | [Piano nazionale liste d'attesa 2026–2028](https://www.salute.gov.it/new/it/tema/liste-di-attesa/piano-nazionale-governo-liste-di-attesa/) | Nuovo piano nazionale o regionale (piano regionale atteso entro il 22/12/2026: `regional_plan_due`) |
+| Legge 104: agevolazioni auto | IVA 4%; detrazione 19% fino a 18.075,99 €; ogni 4 anni | `legge-104/` | `rules-legge104.json` → `auto`, `ausili_iva_percent` | [Agenzia delle Entrate – agevolazioni per le persone con disabilità](https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/disabili-agevolazioni-veicoli) | Legge di bilancio (raro). **Da rileggere per intero: scritte senza aprire la pagina** |
 
 ## Cifre ferme da anni (ricontrollare comunque una volta l'anno)
 
@@ -50,6 +51,7 @@ Ultimo controllo di questo elenco: 19 ottobre 2026.
 | Ricorso invalidità | 6 mesi dal verbale | `ricorso-invalidita/` | `rules-ricorso.json` → `appeal_months` | D.L. 269/2003, art. 42 |
 | Invalidità: tempi della visita | 15 / 30 / 90 giorni (nuovo regime) | `invalidita/` | `rules-invalidita.json` | D.Lgs. 62/2024, art. 6 |
 | Contact center INPS | 803 164 (fisso), 06 164164 (cellulare) | `invalidita/`, `numeri-utili/` | `rules-invalidita.json` → `inps_contacts` | [inps.it](https://www.inps.it) |
+| Legge 104: permessi e congedo | 3 giorni al mese; 2 ore al giorno; figli sotto i 3 anni; congedo parentale fino a 12 anni; parenti entro il 2° grado, 3° se genitori/coniuge hanno 65 anni; congedo straordinario 2 anni | `legge-104/` | `rules-legge104.json` → `permessi`, `family`, `congedo` | [L. 104/1992, art. 33](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1992-02-05;104); [D.Lgs. 151/2001, art. 42](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2001-03-26;151); [INPS – permessi 104](https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.permessi-legge-104-per-lavoratori-dipendenti-con-disabilita-e-familiari-50585.permessi-legge-104-per-lavoratori-dipendenti-con-disabilita-e-familiari.html). **Da rileggere per intero: scritte senza aprire la pagina** |
 
 ## Note aperte
 

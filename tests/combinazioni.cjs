@@ -208,6 +208,13 @@ for (const a of asp.asl) for (const band of ['0-5', '6-13', '14-15', '16+']) for
 // ---------- esecuzione ----------
 const BAD_TEXT = /undefined|\bnull\b|NaN|TODO|VERIFY|\[object/;
 
+// ---- modulo 14: legge 104 (per chi × cosa dice il verbale) ----
+for (const who of ['self', 'family', 'info']) {
+  for (const [v, expectH1] of [['c3', 'Con il comma 3'], ['c1', 'Con il comma 1'], ['none', 'Prima serve il verbale'], ['unknown', 'Cerca questa riga']]) {
+    cases.push({ mod: 14, name: `L104 ${who} · ${v}`, who, v, expectH1 });
+  }
+}
+
 async function runCase(page, c) {
   const problems = [];
   const btn = (name) => page.getByRole('button', { name }).first().click();
@@ -550,6 +557,23 @@ async function runCase(page, c) {
       await btn(/Torna indietro/);
       if (!(await h1()).includes(c.expectH1)) problems.push('Indietro non torna al risultato');
     }
+    return problems;
+  }
+
+  // ---- modulo 14: legge 104 ----
+  if (c.mod === 14) {
+    await page.goto(`${BASE}legge-104/`);
+    await start();
+    await btn({ self: /^Per me/, family: /^Assisto un familiare/, info: /^Nessuno dei due/ }[c.who]);
+    await btn({ c3: /^Art\. 3, comma 3/, c1: /^Art\. 3, comma 1/, none: /^Non c'è ancora/, unknown: /^Non lo so/ }[c.v]);
+    const got = await h1();
+    if (!got.includes(c.expectH1)) problems.push(`titolo atteso «${c.expectH1}», trovato «${got}»`);
+    const text = await checkScreen('risultato');
+    if (c.v === 'c3' && !text.includes('3 giorni al mese')) problems.push('mancano i 3 giorni di permesso');
+    if (c.v === 'c3' && c.who === 'family' && !text.includes('2 anni')) problems.push('manca il congedo di 2 anni');
+    if (c.v === 'c3' && c.who === 'self' && !text.includes('2 ore al giorno')) problems.push('mancano le 2 ore al giorno');
+    if (c.v === 'c1' && text.includes('Congedo straordinario')) problems.push('congedo mostrato per errore con il comma 1');
+    if (c.v === 'unknown') { await btn(/Ho trovato la riga/); if (!(await h1()).includes('Cosa c\'è scritto nel verbale')) problems.push('il ritorno alla domanda non funziona'); }
     return problems;
   }
 
