@@ -6,6 +6,8 @@ Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 - Nessun dato cambiato. Controllo di cifre, testi, link e funzioni delle 59 pagine rispetto alla versione prima delle pagine corte: nessuna cifra e nessun testo perso (le «Domande frequenti» vivono dentro le pagine).
 - Le 38 pagine corte caricano ora `js/guida.js` al posto del solo `js/common.js`: tornano «Questa pagina ti è stata utile?», il conteggio anonimo della visita e il pulsante «🔊 Ascolta», che legge tutta la guida (titoli, paragrafi ed elenchi; non l'indice né le fonti).
 - Il pulsante che avvia il percorso a domande è scritto nell'HTML con `disabled` e si sblocca quando il modulo ha caricato i dati (`enableStart` in `js/common.js`, chiamata da `js/flow.js`, `js/invalidita.js`, `js/liste-attesa.js`). Prima un tocco arrivato sulla connessione lenta andava perso o dava errore (`rules` non ancora caricato).
+- La ricerca nella home trova anche le pagine corte, per titolo (es. «pediatra» → «Pediatra o medico di base: dipende dall'età»); le parole lunghe si confrontano senza l'ultima lettera («rinnovo» trova «rinnova»).
+- `tools/pagine.mjs`: tolto il generatore dei dati FAQPage, senza uso da quando le «Domande frequenti» sono titoli dentro le pagine; il test ora controlla solo che non restino dati FAQPage.
 - `tests/combinazioni.cjs` cercava ancora il vecchio pulsante «Comincia» e andava in timeout su tutti i 1903 casi: ora preme il pulsante di avvio della risposta scritta. Il controllo sul numero CUP di Catania nella prevenzione guarda il numero (800 954414), non le parole «tasto 2», che compaiono anche nello screening di Siracusa.
 
 ## 20/10/2026 — regola per le cifre di legge: coerenza e provenienza
