@@ -191,6 +191,11 @@ ${list.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${
 // Parti della guida scritta che vengono dai file data/ (così i numeri restano giusti):
 // nella pagina si scrive <!-- blocco:nome --><!-- /blocco:nome --> e qui si riempie.
 const BLOCKS = {
+  // Home senza JavaScript: le aree con i loro moduli (prima era scritto a mano e restava indietro).
+  'home-elenco': () => reg.groups.map((g) => {
+    const mods = reg.modules.filter((m) => m.group === g.id);
+    return `<h2><a href="${g.page}/">${esc(g.title)}</a></h2><ul class="static-list">${mods.map((m) => `<li><a href="${m.id}/">${esc(m.title)}</a></li>`).join('')}</ul>`;
+  }).join('\n'),
   // «In questa guida»: l'elenco delle pagine corte di un modulo (moduli.json → "pages"),
   // con la pagina in cui si è scritta senza link. Vale nella pagina del modulo e in ogni pagina corta.
   'guida-indice': (p) => {

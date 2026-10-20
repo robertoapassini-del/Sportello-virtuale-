@@ -2,6 +2,13 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 20/10/2026 — dieci temi nuovi e la quinta area «Tessera e ricette»
+- Fonti: ricerca web del 20/10/2026 su siti ufficiali e di informazione (dettagli e punti aperti in `DA-VERIFICARE-A-MANO.md`, sezione «Temi nuovi»); i file `data/rules-*.json` dei temi nuovi hanno solo le fonti, nessuna cifra usata dai calcoli.
+- Nuova area `tessera-e-ricette/` con: tessera sanitaria (rinnovo, duplicato, TEAM), fascicolo sanitario e ricetta elettronica, prenotare e disdire al CUP.
+- In Invalidità: legge 104 (come si ottiene, permessi, congedo straordinario), indennità di accompagnamento (requisiti, domanda e AP70), contrassegno disabili (come si chiede, cosa permette).
+- In Visite ed esami: curarsi fuori dalla Sicilia e all'estero, il dentista nel Servizio sanitario, psicologo e salute mentale (servizi dell'ASP, bonus psicologo). In Aiuto a casa: la RSA (come si entra, chi paga).
+- Sono moduli «solo testo» (`static` in `moduli.json`): risposta in cima e pagine corte, senza percorso a domande. L'elenco della home senza JavaScript ora lo crea `pagine.mjs` (blocco `home-elenco`). Il test sull'avviso finale usa `js/controlla.js`.
+
 ## 20/10/2026 — tutte le guide: prima la risposta, poi pagine corte
 - Nessun dato cambiato. Tutti i 12 moduli hanno ora la stessa impostazione dell'esenzione ticket: in cima la risposta scritta (leggibile anche senza JavaScript), il percorso a domande parte da un pulsante e torna alla risposta con «Ricomincia», la guida lunga è divisa in 2–4 pagine corte con l'indice «In questa guida».
 - Pagine nuove: liste-attesa (3), medico-famiglia (4), cartella-clinica (3), piano-terapeutico (3), prevenzione (2), invalidita (3), ricorso-invalidita (3), assegno-inclusione (3), assistenza-domiciliare (4, compresi i consigli pratici), ausili (3), cure-palliative (3). Sitemap: 59 pagine.
