@@ -51,6 +51,8 @@ Requisiti completi: [SPEC.md](SPEC.md).
   ha `pages` (`id` e `title`), ogni pagina sta in `modulo/pagina/index.html` e ha l'elenco `<!-- blocco:guida-indice -->`.
   Tutti i moduli sono fatti così. Nella pagina principale restano la risposta breve (nel `<main>`, visibile anche senza
   JavaScript: è anche la prima schermata del percorso, `answerHtml` nel `js/`), il pulsante che avvia il percorso e l'indice.
+  Il pulsante di avvio è scritto con `disabled` e si sblocca quando i dati sono caricati (`enableStart`). Le pagine corte
+  caricano `js/guida.js`: piè di pagina con «Ti è stata utile?», conteggio della visita e «Ascolta» che legge la guida.
 - In fondo a ogni pagina: **Condividi su WhatsApp** (un link, funziona anche senza JavaScript) e **Stampa** (con
   «Stampa la guida» si stampa solo la guida, con l'indirizzo della pagina in fondo al foglio).
 - Link interni sempre all'indirizzo della cartella (`../liste-attesa/`), mai a `index.html`.

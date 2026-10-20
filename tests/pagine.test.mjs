@@ -55,18 +55,9 @@ test('«/x/index.html» porta subito a «/x/» (GitHub Pages non fa redirect 301
   }
 });
 
-test('le «Domande frequenti» sono anche nei dati strutturati FAQPage', () => {
+test('niente dati FAQPage: le domande frequenti sono i titoli delle pagine corte', () => {
   for (const m of reg.modules) {
-    const page = read(`${m.id}/index.html`);
-    const dl = page.match(/<h3>Domande frequenti<\/h3>\s*<dl>([\s\S]*?)<\/dl>/);
-    // Un modulo diviso in pagine corte può non avere le domande frequenti: le domande sono i titoli delle pagine.
-    if (!dl && m.pages) { assert.doesNotMatch(page, /"@type": "FAQPage"/, `${m.id}: dati FAQPage senza domande`); continue; }
-    assert.ok(dl, `${m.id}: manca la sezione «Domande frequenti»`);
-    const ld = page.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/);
-    assert.ok(ld, `${m.id}: mancano i dati FAQPage`);
-    const data = JSON.parse(ld[1]);
-    assert.equal(data['@type'], 'FAQPage');
-    assert.equal(data.mainEntity.length, (dl[1].match(/<dt>/g) || []).length, `${m.id}: domande diverse`);
+    assert.doesNotMatch(read(`${m.id}/index.html`), /"@type": "FAQPage"/, `${m.id}: dati FAQPage senza domande`);
   }
 });
 

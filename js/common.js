@@ -262,6 +262,31 @@ export function speakScreen(root) {
   synth.speak(u);
 }
 
+// Pagine di solo testo (le pagine corte della guida): legge titoli, paragrafi ed elenchi,
+// saltando indice, fonti e quello che è segnato .no-say.
+export function speakGuide(root) {
+  if (!canSpeak) return;
+  const synth = window.speechSynthesis;
+  if (synth.speaking) { synth.cancel(); return; }
+  const parts = [...root.querySelectorAll('h1, h2, h3, p, li')]
+    .filter((el) => !el.closest('.no-say, .topbar, .guida-indice, details, nav'))
+    .map(plainText)
+    .filter(Boolean);
+  const u = new SpeechSynthesisUtterance(parts.join('. '));
+  u.lang = 'it-IT';
+  u.rate = 0.9;
+  const voices = synth.getVoices().filter((v) => v.lang && v.lang.toLowerCase().startsWith('it'));
+  const voice = voices.find((v) => v.localService) || voices[0];
+  if (voice) u.voice = voice;
+  synth.speak(u);
+}
+
+// I pulsanti che avviano il percorso sono scritti nell'HTML con `disabled`: si sbloccano
+// solo quando il modulo ha caricato i dati, così un tocco arrivato prima non va perso.
+export function enableStart(root) {
+  root.querySelectorAll('button[data-go][disabled]').forEach((b) => { b.disabled = false; });
+}
+
 // ---------- Copia e stampa ----------
 
 export async function copyText(text, button) {
