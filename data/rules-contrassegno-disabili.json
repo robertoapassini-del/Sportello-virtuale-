@@ -4,13 +4,15 @@
   "durata_anni": 5,
   "iva_auto_percent": 4,
   "detrazione_percent": 19,
+  "palermo_istruttoria_euro": 5,
+  "palermo_ztl_giorni": 15,
   "provenienza": {
     "durata_anni": {
-      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1992-12-16;495",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1992-12-16;495~art381",
       "verified": "2026-10-20",
-      "proof": "estratto",
+      "proof": "testo",
       "review_by": "2027-10-20",
-      "nota": "DPR 495/1992, art. 381, comma 3: validità 5 anni, rinnovo con certificato del medico curante."
+      "nota": "Art. 381, commi 3 e 4: validità 5 anni, rinnovo con certificato del medico curante; contrassegno temporaneo per il periodo indicato dal medico. Posto auto riservato: comma 5."
     },
     "iva_auto_percent": {
       "url": "https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/disabili",
@@ -25,6 +27,20 @@
       "proof": "estratto",
       "review_by": "2027-01-31",
       "nota": "Detrazione IRPEF del 19% per auto e ausili delle persone con disabilità."
+    },
+    "palermo_istruttoria_euro": {
+      "url": "https://docs.comune.palermo.it/assistenza-sociale-dettaglio.php?cat=323",
+      "verified": "2026-10-20",
+      "proof": "estratto",
+      "review_by": "2027-10-20",
+      "nota": "Modulo 2025 del Comune di Palermo: diritti di istruttoria 5 euro. Domanda alla Circoscrizione."
+    },
+    "palermo_ztl_giorni": {
+      "url": "https://web.comune.palermo.it/polizia-municipale.php",
+      "verified": "2026-10-20",
+      "proof": "estratto",
+      "review_by": "2027-10-20",
+      "nota": "ZTL di Palermo per chi non è residente: email all'ufficio ZTL entro 15 giorni dal passaggio con libretto e CUDE."
     }
   },
   "sources": [
@@ -33,12 +49,12 @@
       "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1992-12-16;495"
     },
     {
-      "label": "Comune di Palermo – Contrassegno per persone con disabilità",
-      "url": "https://www.comune.palermo.it"
+      "label": "Comune di Palermo – Contrassegno di parcheggio per disabili",
+      "url": "https://docs.comune.palermo.it/assistenza-sociale-dettaglio.php?cat=323"
     },
     {
-      "label": "Comune di Catania – Contrassegno disabili",
-      "url": "https://www.comune.catania.it"
+      "label": "Normattiva – Codice della strada, art. 188 (sosta gratuita sulle strisce blu)",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1992-04-30;285~art188"
     }
   ]
 }

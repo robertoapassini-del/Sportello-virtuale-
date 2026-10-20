@@ -23,37 +23,38 @@
   ],
   "bonus_uso_mesi": 9,
   "detrazione_percent": 19,
+  "prima_seduta_giorni": 60,
   "provenienza": {
     "bonus_max": {
-      "url": "https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.contributo-per-sostenere-le-spese-relative-a-sessioni-di-psicoterapia-bonus-psicologo-.html",
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.contributo-per-sostenere-le-spese-relative-a-sessioni-di-psicoterapia-bonus-psicologo.html",
       "verified": "2026-10-20",
       "proof": "estratto",
       "review_by": "2027-01-31",
       "nota": "Contributo fino a 1.500 euro (DM 24/11/2022 e seguenti)."
     },
     "bonus_per_seduta": {
-      "url": "https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.contributo-per-sostenere-le-spese-relative-a-sessioni-di-psicoterapia-bonus-psicologo-.html",
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.contributo-per-sostenere-le-spese-relative-a-sessioni-di-psicoterapia-bonus-psicologo.html",
       "verified": "2026-10-20",
       "proof": "estratto",
       "review_by": "2027-01-31",
       "nota": "Massimo 50 euro a seduta."
     },
     "bonus_isee_max": {
-      "url": "https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.contributo-per-sostenere-le-spese-relative-a-sessioni-di-psicoterapia-bonus-psicologo-.html",
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.contributo-per-sostenere-le-spese-relative-a-sessioni-di-psicoterapia-bonus-psicologo.html",
       "verified": "2026-10-20",
-      "proof": "estratto",
+      "proof": "testo",
       "review_by": "2027-01-31",
-      "nota": "ISEE fino a 50.000 euro."
+      "nota": "Scheda INPS (aggiornata al 3/12/2025): ISEE in corso di validità non superiore a 50mila euro."
     },
     "bonus_tiers": {
-      "url": "https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.contributo-per-sostenere-le-spese-relative-a-sessioni-di-psicoterapia-bonus-psicologo-.html",
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.contributo-per-sostenere-le-spese-relative-a-sessioni-di-psicoterapia-bonus-psicologo.html",
       "verified": "2026-10-20",
       "proof": "secondaria",
       "review_by": "2027-01-31",
       "nota": "Fasce: 1.500 euro fino a 15.000 di ISEE, 1.000 fino a 30.000, 500 fino a 50.000. Lette su siti di informazione: da confermare sulla pagina INPS."
     },
     "bonus_uso_mesi": {
-      "url": "https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.contributo-per-sostenere-le-spese-relative-a-sessioni-di-psicoterapia-bonus-psicologo-.html",
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.contributo-per-sostenere-le-spese-relative-a-sessioni-di-psicoterapia-bonus-psicologo.html",
       "verified": "2026-10-20",
       "proof": "secondaria",
       "review_by": "2027-01-31",
@@ -65,12 +66,19 @@
       "proof": "estratto",
       "review_by": "2027-01-31",
       "nota": "Detrazione IRPEF del 19% delle spese sanitarie."
+    },
+    "prima_seduta_giorni": {
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.contributo-per-sostenere-le-spese-relative-a-sessioni-di-psicoterapia-bonus-psicologo.html",
+      "verified": "2026-10-20",
+      "proof": "estratto",
+      "review_by": "2027-01-31",
+      "nota": "Prima seduta entro 60 giorni dall'accoglimento, pena la decadenza (istruzioni INPS 2025)."
     }
   },
   "sources": [
     {
-      "label": "INPS – Contributo per sostenere le spese relative a sessioni di psicoterapia (bonus psicologo)",
-      "url": "https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.contributo-per-sostenere-le-spese-relative-a-sessioni-di-psicoterapia-bonus-psicologo-.html"
+      "label": "INPS – Contributo per sessioni di psicoterapia (bonus psicologo)",
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.contributo-per-sostenere-le-spese-relative-a-sessioni-di-psicoterapia-bonus-psicologo.html"
     },
     {
       "label": "Ministero della Salute – Salute mentale",

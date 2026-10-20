@@ -5,18 +5,18 @@
   "team_certificate_months": 6,
   "provenienza": {
     "validity_years": {
-      "url": "https://sistemats1.sanita.finanze.it/portale/tessera-sanitaria",
+      "url": "https://sistemats1.sanita.finanze.it/portale/it/tessera-sanitaria/faq-sulla-team",
       "verified": "2026-10-20",
-      "proof": "estratto",
+      "proof": "testo",
       "review_by": "2027-10-20",
-      "nota": "Durata di 6 anni; per i nuovi nati la prima tessera dura meno."
+      "nota": "FAQ del Sistema TS: la TEAM (e quindi la tessera) vale sei anni, salvo diversa indicazione della Regione/ASL."
     },
     "team_certificate_months": {
       "url": "https://www.salute.gov.it/portale/assistenzaSanitaria/dettaglioContenutiAssistenzaSanitaria.jsp?lingua=italiano&id=1096&area=Assistenza%20sanitaria&menu=vuoto",
       "verified": "2026-10-20",
       "proof": "secondaria",
       "review_by": "2027-10-20",
-      "nota": "Certificato sostitutivo provvisorio della TEAM: 6 mesi secondo le guide lette; da confermare sulla pagina del Ministero."
+      "nota": "Le FAQ del Sistema TS confermano il certificato sostitutivo chiesto all'ASL, senza dire la durata: 6 mesi viene dalle guide. Da confermare."
     }
   },
   "sources": [
@@ -25,12 +25,16 @@
       "url": "https://www.agenziaentrate.gov.it/portale/web/guest/schede/istanze/tessera-sanitaria"
     },
     {
-      "label": "Sistema Tessera Sanitaria – La tessera",
-      "url": "https://sistemats1.sanita.finanze.it/portale/tessera-sanitaria"
+      "label": "Sistema Tessera Sanitaria – FAQ sulla TEAM",
+      "url": "https://sistemats1.sanita.finanze.it/portale/it/tessera-sanitaria/faq-sulla-team"
     },
     {
       "label": "Ministero della Salute – Tessera europea di assicurazione malattia (TEAM)",
       "url": "https://www.salute.gov.it/portale/assistenzaSanitaria/dettaglioContenutiAssistenzaSanitaria.jsp?lingua=italiano&id=1096&area=Assistenza%20sanitaria&menu=vuoto"
+    },
+    {
+      "label": "Agenzia delle Entrate – Guida «La tessera sanitaria»",
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/d/guest/guida_tessera_sanitaria_052025"
     }
   ]
 }

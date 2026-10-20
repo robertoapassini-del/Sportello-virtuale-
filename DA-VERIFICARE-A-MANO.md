@@ -10,32 +10,35 @@ Vanno riletti da una connessione italiana o confermati per telefono.
 
 Quando chiudi un punto: correggi il sito se serve, scrivi la modifica in `CHANGELOG.md` e cancella la riga da qui.
 
-## 0. Temi nuovi del 20/10/2026: da rileggere su fonti ufficiali
+## 0. Temi nuovi del 20/10/2026: letti sulle fonti ufficiali, cosa resta aperto
 
-Le dieci pagine nuove (tessera, fascicolo e ricetta, CUP, 104, accompagnamento, contrassegno, cure fuori regione, RSA,
-dentista, psicologo) sono scritte da ricerche web del 20/10/2026, in gran parte su siti di informazione: le fonti
-ufficiali non si aprivano. Da controllare prima di dirle sicure:
+Il 20/10/2026, dal browser di Roberto (connessione italiana), sono state lette per intero: la scheda INPS dell'indennità
+di accompagnamento, le schede INPS dei permessi 104 e del congedo straordinario, la scheda INPS del bonus psicologo, la
+legge 106/2025 (artt. 1–3), l'art. 3 del D.L. 73/2024 (disdetta CUP), l'art. 381 del DPR 495/1992 (contrassegno), le FAQ
+del Sistema TS sulla TEAM e le FAQ della Regione sul Fascicolo. Le pagine sono state corrette di conseguenza (vedi
+`CHANGELOG.md`). Resta da fare:
 
-- [ ] **Accompagnamento 2026**: importo (551,53 o 552,57 euro: due fonti diverse; sul sito dice «circa 550»), regola del ricovero
-  gratuito oltre un mese, AP70 nel nuovo regime della riforma (circolari INPS 153/2025 e messaggio 628/2026).
-- [ ] **Legge 104**: le 10 ore l'anno in più dal 2026 e il congedo non retribuito di 24 mesi (L. 106/2025); tetto del congedo
-  straordinario 2026 (circ. INPS 6/2026 e 47/2026); l'ordine dei familiari per il congedo e la regola della convivenza.
-- [ ] **Contrassegno**: strisce blu gratis (L. 156/2021), marca da bollo solo per il temporaneo, procedure online di Palermo,
-  Catania e Messina (le pagine dei Comuni non sono state aperte), costo della visita medico-legale nelle ASP siciliane.
-- [ ] **CUP / disdetta**: la regola siciliana sulla mancata disdetta e le eccezioni (il sito riporta la regola nazionale del
-  D.L. 73/2024, art. 3: 2 giorni lavorativi, ticket anche per gli esenti). Esistenza di un numero verde del SovraCUP.
-- [ ] **Tessera sanitaria**: duplicato allo sportello dell'ASP e tessera provvisoria di carta (varia per ASP); certificato
-  sostitutivo TEAM di 6 mesi; dove si chiede il PIN della CNS in Sicilia.
-- [ ] **Fascicolo**: delega a un familiare adulto (come si fa nel FSE della Regione Siciliana); modulo per segnalare un
-  documento mancante; validità della ricetta per visite ed esami in Sicilia (sul sito: «di solito fino a un anno»).
-- [ ] **Cure fuori regione**: esiste un contributo regionale per viaggio e alloggio (notizia 2023, 1,7 milioni, mai trovato il
-  decreto)? La pagina dice che non c'è un rimborso automatico. Direttiva prot. 9368 dell'11/02/2026 letta solo in estratto.
-- [ ] **RSA**: retta regionale (D.A. 1058/2025 letto in parte), ISEE «ristretto», regola sull'accompagnamento quando la famiglia
-  paga la quota alberghiera, regolamenti comunali per l'integrazione.
-- [ ] **Dentista**: soglia ISEE per la vulnerabilità sociale in Sicilia (sul sito: «intorno agli 8.000 euro in molte regioni»),
-  ticket dai 6 ai 14 anni, ambulatori odontoiatrici delle ASP.
-- [ ] **Psicologo**: importi e fasce ISEE del bonus 2026 (1.500/1.000/500; 50 euro a seduta), finestra delle domande,
-  tempo per usarlo; accesso diretto ai CSM nelle ASP siciliane; Telefono Amico non citato con il numero (regola dei numeri).
+- [ ] **Accompagnamento**: la regola «100% tra 18 e 65 anni» non è nella scheda INPS (che parla di invalidi totali): confermare
+  con un patronato o nella L. 18/1980. Circolare INPS 153/2025 non letta (l'importo 551,53 è confermato dalla scheda).
+- [ ] **Legge 104**: tetto 2026 del congedo straordinario (circ. INPS 6/2026 e 47/2026); sul sito c'è solo «poco sopra i
+  57.000 euro» per il 2025.
+- [ ] **Contrassegno**: pagine ufficiali di Catania e Messina (letta solo Palermo: Circoscrizione, 5 euro, ZTL entro 15 giorni);
+  costo della visita medico-legale nelle ASP siciliane; conferma dell'art. 188, comma 3-bis, del Codice della strada
+  (strisce blu gratis), citato ma non letto.
+- [ ] **CUP / disdetta**: la regola siciliana (il D.L. rimanda a linee di indirizzo del Ministero: cercare il decreto e
+  l'applicazione delle ASP); esistenza di un numero verde del SovraCUP.
+- [ ] **Tessera sanitaria**: durata del certificato sostitutivo TEAM (6 mesi: dalle guide, non dalle FAQ); duplicato allo
+  sportello dell'ASP e tessera provvisoria di carta; dove si chiede il PIN della CNS in Sicilia.
+- [ ] **Fascicolo**: validità della ricetta per visite ed esami in Sicilia (sul sito: «di solito fino a un anno»); i 5 giorni per
+  caricare i referti (DM 7/9/2023, letto solo nelle notizie).
+- [ ] **Cure fuori regione**: contributo regionale per viaggio e alloggio (notizia 2023: mai trovato il decreto); il PDF della
+  direttiva prot. 9368 dell'11/02/2026 non si apre più dal sito della Regione (letta solo in estratto).
+- [ ] **RSA**: il D.A. 1058/2025 si scarica solo come file (non letto); ISEE «ristretto»; regola sull'accompagnamento quando la
+  famiglia paga la quota alberghiera; regolamenti comunali per l'integrazione.
+- [ ] **Dentista**: soglia ISEE per la vulnerabilità sociale in Sicilia (sul sito «intorno agli 8.000 euro in molte regioni»);
+  ticket dai 6 ai 14 anni; allegato 4C del DPCM 2017 letto solo tramite delibere regionali.
+- [ ] **Psicologo**: finestra delle domande 2026 (nel 2025: 15 settembre – 14 novembre); i 270 giorni per usare il bonus;
+  accesso diretto ai CSM nelle ASP siciliane.
 
 ## Controllo totale del 20/10/2026 (fatto, PR #14)
 

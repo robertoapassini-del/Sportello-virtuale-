@@ -47,7 +47,6 @@ const ECCEZIONI = {
     { testo: /la copia ti spetta entro 7 giorni$/, perche: 'copia della cartella clinica: sta nel modulo cartella-clinica', valore: (d, tutti) => tutti['rules-cartella'].deadline_days, unita: 'giorni' },
   ],
   'legge-104': [
-    { testo: /hai 6 mesi$/, perche: 'termine del ricorso: sta nel modulo ricorso-invalidita', valore: (d, tutti) => tutti['rules-ricorso'].appeal_months, unita: 'mesi' },
     { testo: /poco sopra i 57\.000 euro$/, perche: 'tetto 2025 del congedo straordinario, arrotondato: il valore esatto è nelle circolari INPS di gennaio, non nei dati (cambia ogni anno)' },
   ],
   'medico-famiglia': [

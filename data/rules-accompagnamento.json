@@ -5,14 +5,16 @@
   "eta_adulti_max": 65,
   "rivalutazione_percent_2026": 1.4,
   "mensilita": 12,
-  "pagamento_mesi_max": 2,
+  "importo_mensile_2026": 551.53,
+  "ricovero_giorni": 29,
+  "liquidazione_giorni": 45,
   "provenienza": {
     "invalidita_percent": {
-      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1980-02-11;18",
+      "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.indennit-di-accompagnamento-agli-invalidi-civili.html",
       "verified": "2026-10-20",
-      "proof": "estratto",
+      "proof": "testo",
       "review_by": "2027-10-20",
-      "nota": "L. 18/1980, art. 1: invalidi totali con impossibilità di deambulare o di compiere gli atti quotidiani."
+      "nota": "Inabilità totale e permanente (100%) più impossibilità di deambulare o di compiere gli atti quotidiani."
     },
     "eta_adulti_max": {
       "url": "https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.indennita-di-accompagnamento-per-invalidi-civili-50612.html",
@@ -29,24 +31,38 @@
       "nota": "Circolare INPS 153 del 19/12/2025: +1,4% per il 2026. L'importo mensile (551,53 o 552,57 euro secondo le fonti) non è scritto sul sito: dice «circa 550». Da leggere la circolare."
     },
     "mensilita": {
-      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1980-02-11;18",
+      "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.indennit-di-accompagnamento-agli-invalidi-civili.html",
       "verified": "2026-10-20",
-      "proof": "estratto",
+      "proof": "testo",
       "review_by": "2027-10-20",
-      "nota": "12 mensilità, nessuna tredicesima."
+      "nota": "12 mensilità dal primo giorno del mese dopo la domanda."
     },
-    "pagamento_mesi_max": {
-      "url": "https://www.inps.it",
+    "importo_mensile_2026": {
+      "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.indennit-di-accompagnamento-agli-invalidi-civili.html",
       "verified": "2026-10-20",
-      "proof": "sito",
+      "proof": "testo",
+      "review_by": "2027-01-31",
+      "nota": "Scheda INPS aggiornata al 20/07/2026: «Per il 2026 l'importo dell'indennità è di 551,53 euro». Cambia ogni gennaio."
+    },
+    "ricovero_giorni": {
+      "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.indennit-di-accompagnamento-agli-invalidi-civili.html",
+      "verified": "2026-10-20",
+      "proof": "testo",
       "review_by": "2027-10-20",
-      "nota": "Tempo indicativo (1–2 mesi) dopo il modulo AP70, dall'esperienza dei patronati: non è un termine di legge."
+      "nota": "Sospesa in caso di ricovero a totale carico dello Stato per più di 29 giorni."
+    },
+    "liquidazione_giorni": {
+      "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.indennit-di-accompagnamento-agli-invalidi-civili.html",
+      "verified": "2026-10-20",
+      "proof": "testo",
+      "review_by": "2027-10-20",
+      "nota": "45 giorni dalla domanda di pagamento completa."
     }
   },
   "sources": [
     {
-      "label": "INPS – Indennità di accompagnamento per invalidi civili",
-      "url": "https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.indennita-di-accompagnamento-per-invalidi-civili-50612.html"
+      "label": "INPS – Indennità di accompagnamento agli invalidi civili",
+      "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.indennit-di-accompagnamento-agli-invalidi-civili.html"
     },
     {
       "label": "Normattiva – Legge 18/1980",
