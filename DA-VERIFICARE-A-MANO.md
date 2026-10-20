@@ -37,6 +37,26 @@ ufficiali non si aprivano. Da controllare prima di dirle sicure:
 - [ ] **Psicologo**: importi e fasce ISEE del bonus 2026 (1.500/1.000/500; 50 euro a seduta), finestra delle domande,
   tempo per usarlo; accesso diretto ai CSM nelle ASP siciliane; Telefono Amico non citato con il numero (regola dei numeri).
 
+## Controllo totale del 20/10/2026 (fatto, PR #14)
+
+Dopo il passaggio a «prima la risposta» e alle pagine corte è stato rifatto il controllo di tutto il sito, confrontando
+le 12 guide vecchie (una pagina) con le 59 pagine nuove. **Nessuna cifra, nessun testo e nessun link ufficiale è andato
+perso**; i valori nei `data/` coincidono con [CIFRE-DA-CONTROLLARE.md](CIFRE-DA-CONTROLLARE.md). Nessuno dei punti qui sotto
+è stato chiuso da quel controllo: restano tutti da fare a mano.
+
+Trovato e già sistemato (non c'è più niente da fare):
+
+- [x] Le 38 pagine corte non avviavano il piè di pagina: mancavano «Ti è stata utile?», il conteggio della visita e
+  «Ascolta». Ora caricano `js/guida.js`.
+- [x] Il pulsante che avvia il percorso a domande era cliccabile prima che i dati fossero caricati (un tocco si perdeva
+  o dava errore). Ora è `disabled` finché i dati non arrivano (`enableStart`).
+- [x] `npm run test:combinazioni` cercava il vecchio pulsante «Comincia»: era fermo dal rifacimento. Riadattato,
+  1903 casi su 1903 passano. Resta un test manuale, da lanciare dopo ogni modifica ai percorsi.
+- [x] La ricerca nella home non vedeva i titoli delle pagine corte; il generatore FAQPage era rimasto senza uso.
+
+Non fatto perché impossibile dall'estero: il controllo dei 370 link esterni (`npm run controllo -- --tutto`) ha dato
+«non verificabile» per tutti. Lo fa il workflow del lunedì da GitHub; da rileggere la issue `controllo-automatico`.
+
 ## 1. Decisioni da prendere
 
 - [ ] **Ausili: 20 giorni e silenzio-assenso.** Il sito (pagina `ausili/`, lettera di sollecito in `js/letters.js`,

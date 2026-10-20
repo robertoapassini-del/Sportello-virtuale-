@@ -9,6 +9,20 @@ Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 - In Visite ed esami: curarsi fuori dalla Sicilia e all'estero, il dentista nel Servizio sanitario, psicologo e salute mentale (servizi dell'ASP, bonus psicologo). In Aiuto a casa: la RSA (come si entra, chi paga).
 - Sono moduli «solo testo» (`static` in `moduli.json`): risposta in cima e pagine corte, senza percorso a domande. L'elenco della home senza JavaScript ora lo crea `pagine.mjs` (blocco `home-elenco`). Il test sull'avviso finale usa `js/controlla.js`.
 
+## 20/10/2026 — controllo totale dopo il rifacimento: tre cose rimesse a posto
+- Nessun dato cambiato. Controllo di cifre, testi, link e funzioni delle 59 pagine rispetto alla versione prima delle pagine corte: nessuna cifra e nessun testo perso (le «Domande frequenti» vivono dentro le pagine).
+- Le 38 pagine corte caricano ora `js/guida.js` al posto del solo `js/common.js`: tornano «Questa pagina ti è stata utile?», il conteggio anonimo della visita e il pulsante «🔊 Ascolta», che legge tutta la guida (titoli, paragrafi ed elenchi; non l'indice né le fonti).
+- Il pulsante che avvia il percorso a domande è scritto nell'HTML con `disabled` e si sblocca quando il modulo ha caricato i dati (`enableStart` in `js/common.js`, chiamata da `js/flow.js`, `js/invalidita.js`, `js/liste-attesa.js`). Prima un tocco arrivato sulla connessione lenta andava perso o dava errore (`rules` non ancora caricato).
+- La ricerca nella home trova anche le pagine corte, per titolo (es. «pediatra» → «Pediatra o medico di base: dipende dall'età»); le parole lunghe si confrontano senza l'ultima lettera («rinnovo» trova «rinnova»).
+- `tools/pagine.mjs`: tolto il generatore dei dati FAQPage, senza uso da quando le «Domande frequenti» sono titoli dentro le pagine; il test ora controlla solo che non restino dati FAQPage.
+- `tests/combinazioni.cjs` cercava ancora il vecchio pulsante «Comincia» e andava in timeout su tutti i 1903 casi: ora preme il pulsante di avvio della risposta scritta. Il controllo sul numero CUP di Catania nella prevenzione guarda il numero (800 954414), non le parole «tasto 2», che compaiono anche nello screening di Siracusa.
+
+## 20/10/2026 — regola per le cifre di legge: coerenza e provenienza
+- Nuovo test `tests/cifre.test.mjs`: ogni cifra scritta nella guida o nel js di un modulo deve essere uguale a quella in `data/`; esempi e arrotondamenti sono dichiarati nel test. Nessun valore cambiato. Regola: [docs/regola-cifre.md](docs/regola-cifre.md).
+- In ogni `data/rules*.json` il blocco `provenienza`: per ogni cifra la pagina ufficiale, la data del controllo, la prova (`testo` / `estratto` / `secondaria` / `sito`) e la data di ricontrollo `review_by`. Nuovo test `tests/provenienza.test.mjs`: fallisce se manca la scheda o se `review_by` è passata (si prova con `OGGI=2027-02-01 npm test`). Le prove sono `estratto` quasi ovunque: i testi ufficiali vanno riletti per intero.
+- Nuovi campi che prima erano solo nel testo delle guide, valori invariati: `age_limits` (esenzione: 6, 65, 60 anni), `household_min_age` 60 e `elderly_age` 67 (assegno di inclusione), `detrazione` 19% e 129,11 € (assistenza domiciliare), `minor_age` 18 (invalidità), `every_years` 10 (antitetanica).
+- `tools/pagine.mjs --controlla` non segnala più come «non aggiornate» le pagine salvate da git con fine riga Windows.
+
 ## 20/10/2026 — tutte le guide: prima la risposta, poi pagine corte
 - Nessun dato cambiato. Tutti i 12 moduli hanno ora la stessa impostazione dell'esenzione ticket: in cima la risposta scritta (leggibile anche senza JavaScript), il percorso a domande parte da un pulsante e torna alla risposta con «Ricomincia», la guida lunga è divisa in 2–4 pagine corte con l'indice «In questa guida».
 - Pagine nuove: liste-attesa (3), medico-famiglia (4), cartella-clinica (3), piano-terapeutico (3), prevenzione (2), invalidita (3), ricorso-invalidita (3), assegno-inclusione (3), assistenza-domiciliare (4, compresi i consigli pratici), ausili (3), cure-palliative (3). Sitemap: 59 pagine.

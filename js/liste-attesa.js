@@ -7,7 +7,7 @@ import { checkWaiting, callbackDeadline, maxWaitDays, todayISO, formatIt, parseD
 import { tutelaLetter, tutelaReminder, mailtoHref } from './letters.js';
 import { noPecBox,
   esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton, aspCalls,
-  personFields, reportErrorHref, generalContact, choice, helpBox, listenButton, speakScreen, stopSpeaking, sourcesBox, moreHelp, hideHeadingEmoji,
+  personFields, reportErrorHref, generalContact, choice, helpBox, listenButton, speakScreen, stopSpeaking, sourcesBox, moreHelp, hideHeadingEmoji, enableStart,
 } from './common.js';
 import { RICETTA_SVG } from './ricetta-svg.js';
 import { createNav } from './flow.js';
@@ -35,6 +35,7 @@ function paint(current) {
   const s = screens[current]();
   const backBtn = current === 'intro' ? '' : '<button type="button" class="back" data-action="back">← Torna indietro</button>';
   app.innerHTML = `<div class="topbar">${backBtn}${listenButton()}</div>${s.html}${moreHelp()}${helpBox()}${screenSources()}`;
+  enableStart(app);
   hideHeadingEmoji(app);
   if (s.mount) s.mount();
   window.scrollTo(0, 0);

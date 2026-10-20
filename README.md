@@ -57,6 +57,8 @@ Requisiti completi: [SPEC.md](SPEC.md).
   ha `pages` (`id` e `title`), ogni pagina sta in `modulo/pagina/index.html` e ha l'elenco `<!-- blocco:guida-indice -->`.
   Tutti i moduli sono fatti così. Nella pagina principale restano la risposta breve (nel `<main>`, visibile anche senza
   JavaScript: è anche la prima schermata del percorso, `answerHtml` nel `js/`), il pulsante che avvia il percorso e l'indice.
+  Il pulsante di avvio è scritto con `disabled` e si sblocca quando i dati sono caricati (`enableStart`). Le pagine corte
+  caricano `js/guida.js`: piè di pagina con «Ti è stata utile?», conteggio della visita e «Ascolta» che legge la guida.
 - In fondo a ogni pagina: **Condividi su WhatsApp** (un link, funziona anche senza JavaScript) e **Stampa** (con
   «Stampa la guida» si stampa solo la guida, con l'indirizzo della pagina in fondo al foglio).
 - Link interni sempre all'indirizzo della cartella (`../liste-attesa/`), mai a `index.html`.
@@ -70,6 +72,15 @@ Requisiti completi: [SPEC.md](SPEC.md).
 ricontrollati ogni 3 mesi. Procedura completa: [docs/regola-numeri.md](docs/regola-numeri.md). Il test
 `tests/contatti.test.mjs` blocca i numeri senza pagina ufficiale, data o prova, e quelli controllati più di
 92 giorni fa.
+
+## Regola per le cifre di legge
+
+**Ogni cifra mostrata** (soglie di reddito, giorni, mesi, età, percentuali) vive in `data/rules*.json` con
+la sua scheda nel blocco `provenienza`: pagina ufficiale, data del controllo, come è stata controllata
+(`testo`, `estratto`, `secondaria`, `sito`) e la data entro cui ricontrollarla (`review_by`). Procedura
+completa: [docs/regola-cifre.md](docs/regola-cifre.md). Due test la fanno rispettare: `tests/cifre.test.mjs`
+blocca una cifra scritta nella guida o nel js che non è uguale a quella nei dati, e
+`tests/provenienza.test.mjs` blocca una cifra senza scheda o con `review_by` passata.
 
 ## Provarlo sul tuo computer
 
@@ -85,6 +96,8 @@ python3 -m http.server 8080      # oppure: npm start
 ```bash
 npm test
 ```
+
+Per vedere quali cifre e numeri andranno ricontrollati entro una certa data: `OGGI=2027-02-01 npm test`.
 
 Prova completa di **tutte le combinazioni** di risposte (9 province, tutte le classi, date al limite esatto,
 entrambi i moduli) in un browser vero, con il sito avviato su `localhost:8080`:

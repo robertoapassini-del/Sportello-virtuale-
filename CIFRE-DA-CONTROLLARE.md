@@ -3,11 +3,18 @@
 Promemoria per il giro di **gennaio** (e dopo ogni legge di bilancio, a fine dicembre).
 Per ogni cifra: dove si trova, il campo nei file `data/` e la fonte ufficiale da rileggere.
 
+Dal 20/10/2026 ogni cifra ha anche la sua scheda nel blocco `provenienza` del file `data/`, con la data
+`review_by` entro cui va ricontrollata: `npm test` fallisce da solo quando è ora. Regola completa e
+procedura: [docs/regola-cifre.md](docs/regola-cifre.md). Questo elenco resta la vista per argomento,
+con le pagine ufficiali da rileggere.
+
 Come si aggiorna una cifra:
 
 1. Cambia il valore nel file `data/…json` (le schermate lo leggono da lì).
 2. Cambia lo stesso numero nella guida scritta della pagina (`<cartella>/index.html`): lì è scritto a mano.
-3. Metti la data di oggi in `last_verified` del file `data/` e aggiungi la fonte in `sources`.
+   Il test `tests/cifre.test.mjs` ti dice se ne hai dimenticato uno.
+3. Aggiorna la scheda in `provenienza` (`verified`, `proof`, `review_by`), metti la data di oggi in
+   `last_verified` e aggiungi la fonte in `sources`.
 4. `npm run pagine` (rifà fonti e «Informazioni controllate il…») e poi `npm test`.
 5. Scrivi la modifica in `CHANGELOG.md`, con la fonte.
 

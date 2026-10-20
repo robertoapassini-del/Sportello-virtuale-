@@ -75,14 +75,19 @@ function showResults(text) {
   const list = document.getElementById('q-results');
   const words = text.toLowerCase().split(/\s+/).filter((w) => w.length >= 3);
   if (!words.length) { box.hidden = true; list.innerHTML = ''; return; }
-  const hits = [NUMERI, ...reg.modules].filter((m) => {
-    const hay = `${m.title} ${m.small} ${m.keywords}`.toLowerCase();
-    return words.some((w) => hay.includes(w));
-  });
+  // «rinnovo» trova anche «rinnova»: per le parole lunghe si confronta senza l'ultima lettera.
+  const stem = (w) => (w.length >= 6 ? w.slice(0, -1) : w);
+  const found = (hay) => words.some((w) => hay.toLowerCase().includes(stem(w)));
+  const hits = [];
+  for (const m of [NUMERI, ...reg.modules]) {
+    if (found(`${m.title} ${m.small} ${m.keywords}`)) hits.push({ href: `${m.id}/`, icon: m.icon, title: m.title, small: m.small });
+    // Le pagine corte della guida (moduli.json → "pages"): si cercano per titolo.
+    for (const sp of m.pages || []) if (found(sp.title)) hits.push({ href: `${m.id}/${sp.id}/`, icon: m.icon, title: sp.title, small: m.title });
+  }
   box.hidden = false;
   document.getElementById('q-title').textContent = `Risultati per «${text.trim()}»`;
   list.innerHTML = hits.length
-    ? hits.map((m) => card(`${m.id}/`, m.icon, m.title, m.small)).join('')
+    ? hits.map((h) => card(h.href, h.icon, h.title, h.small)).join('')
     : '<p class="muted">Non abbiamo trovato niente con questa parola. Prova con un\'altra, oppure scegli uno dei riquadri qui sotto.</p>';
 }
 

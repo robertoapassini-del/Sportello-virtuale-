@@ -17,7 +17,8 @@ const CHECK = process.argv.includes('--controlla');
 const read = (f) => fs.readFileSync(path.join(SITE, f), 'utf8');
 const stale = [];
 const write = (f, s) => {
-  if (CHECK) { if (read(f) !== s) stale.push(f); return; }
+  // Su Windows git può salvare i file con CR LF: si confronta il testo senza i CR.
+  if (CHECK) { if (read(f).replace(/\r\n/g, '\n') !== s) stale.push(f); return; }
   fs.mkdirSync(path.dirname(path.join(SITE, f)), { recursive: true });
   fs.writeFileSync(path.join(SITE, f), s);
   console.log('ok', f);
@@ -123,23 +124,6 @@ function openGraph(html, url) {
 }
 
 const HEAD_SCRIPT = "<script>document.documentElement.className += ' js';if(/\\/index\\.html$/.test(location.pathname))location.replace(location.pathname.slice(0,-10)+location.search+location.hash);</script>";
-
-// Dati strutturati FAQPage per Google: le stesse domande e risposte della sezione
-// «Domande frequenti» della guida scritta (<h3>Domande frequenti</h3> e poi <dl>).
-const plain = (s) => s.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim()
-  .replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
-function faqJsonLd(html) {
-  const dl = html.match(/<h3>Domande frequenti<\/h3>\s*<dl>([\s\S]*?)<\/dl>/);
-  if (!dl) return '';
-  const qa = [...dl[1].matchAll(/<dt>([\s\S]*?)<\/dt>\s*<dd>([\s\S]*?)<\/dd>/g)];
-  if (!qa.length) return '';
-  const data = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: qa.map(([, q, a]) => ({ '@type': 'Question', name: plain(q), acceptedAnswer: { '@type': 'Answer', text: plain(a) } })),
-  };
-  return `<script type="application/ld+json">\n${JSON.stringify(data, null, 1).replace(/</g, '\\u003c')}\n</script>\n`;
-}
 
 // «Condividi su WhatsApp» (funziona anche senza JavaScript: è un link) e «Stampa».
 // Sotto, l'indirizzo della pagina: si vede solo sul foglio stampato.
@@ -282,9 +266,8 @@ for (const p of pages) {
     .replace(/<link rel="stylesheet"/, (m) => `<link rel="canonical" href="${url}">\n${openGraph(html, url)}${m}`);
   // «/x/index.html» → «/x/»: GitHub Pages non fa redirect 301, quindi lo fa il browser appena apre la pagina.
   html = html.replace(/<script>document\.documentElement\.className[^<]*<\/script>/, () => HEAD_SCRIPT);
+  // Dati FAQPage di una versione precedente: non ci sono più «Domande frequenti», le domande sono i titoli delle pagine.
   html = html.replace(/<script type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>\n/, '');
-  const faq = faqJsonLd(html);
-  if (faq) html = html.replace(/<link rel="stylesheet"/, (m) => `${faq}${m}`);
   html = html.replace(/<!-- condividi[\s\S]*?<!-- \/condividi -->\n/, '')
     .replace(/<footer class="site-footer"[\s\S]*?<\/footer>/, () => `${shareBar(html, url)}${footer(root)}`);
   html = html.replace(/<!-- blocco:([a-z-]+)[^>]*-->[\s\S]*?<!-- \/blocco:\1 -->/g, (_, name) => {
