@@ -1,6 +1,24 @@
 {
   "name": "Tessera sanitaria: rinnovo, duplicato, TEAM",
   "last_verified": "2026-10-20",
+  "validity_years": 6,
+  "team_certificate_months": 6,
+  "provenienza": {
+    "validity_years": {
+      "url": "https://sistemats1.sanita.finanze.it/portale/tessera-sanitaria",
+      "verified": "2026-10-20",
+      "proof": "estratto",
+      "review_by": "2027-10-20",
+      "nota": "Durata di 6 anni; per i nuovi nati la prima tessera dura meno."
+    },
+    "team_certificate_months": {
+      "url": "https://www.salute.gov.it/portale/assistenzaSanitaria/dettaglioContenutiAssistenzaSanitaria.jsp?lingua=italiano&id=1096&area=Assistenza%20sanitaria&menu=vuoto",
+      "verified": "2026-10-20",
+      "proof": "secondaria",
+      "review_by": "2027-10-20",
+      "nota": "Certificato sostitutivo provvisorio della TEAM: 6 mesi secondo le guide lette; da confermare sulla pagina del Ministero."
+    }
+  },
   "sources": [
     {
       "label": "Agenzia delle Entrate – Tessera sanitaria",

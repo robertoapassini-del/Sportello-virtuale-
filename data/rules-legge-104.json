@@ -1,6 +1,64 @@
 {
   "name": "Legge 104: handicap, permessi, congedo",
   "last_verified": "2026-10-20",
+  "permessi_giorni_mese": 3,
+  "permessi_ore_giorno": 2,
+  "prolungamento_figlio_anni": 3,
+  "ore_extra_anno_2026": 10,
+  "congedo_anni": 2,
+  "congedo_non_retribuito_mesi": 24,
+  "datore_risposta_giorni": 30,
+  "provenienza": {
+    "permessi_giorni_mese": {
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.permessi-retribuiti-legge-104-per-lavoratori-dipendenti-e-familiari-di-persone-con-disabilita-grave.html",
+      "verified": "2026-10-20",
+      "proof": "estratto",
+      "review_by": "2027-01-31",
+      "nota": "L. 104/1992, art. 33, comma 3."
+    },
+    "permessi_ore_giorno": {
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.permessi-retribuiti-legge-104-per-lavoratori-dipendenti-e-familiari-di-persone-con-disabilita-grave.html",
+      "verified": "2026-10-20",
+      "proof": "estratto",
+      "review_by": "2027-01-31",
+      "nota": "L. 104/1992, art. 33, comma 2 (2 ore al giorno in alternativa ai 3 giorni)."
+    },
+    "prolungamento_figlio_anni": {
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.permessi-retribuiti-legge-104-per-lavoratori-dipendenti-e-familiari-di-persone-con-disabilita-grave.html",
+      "verified": "2026-10-20",
+      "proof": "estratto",
+      "review_by": "2027-01-31",
+      "nota": "Figli con handicap grave fino a 3 anni: prolungamento del congedo parentale o 2 ore al giorno."
+    },
+    "ore_extra_anno_2026": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025;106",
+      "verified": "2026-10-20",
+      "proof": "secondaria",
+      "review_by": "2027-01-31",
+      "nota": "L. 106/2025, dal 1/1/2026: 10 ore l'anno di permesso retribuito per visite ed esami. Letto solo su siti di informazione: da confermare sul testo."
+    },
+    "congedo_anni": {
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.congedo-straordinario-per-assistere-familiari-con-disabilita-grave-50625.html",
+      "verified": "2026-10-20",
+      "proof": "estratto",
+      "review_by": "2027-01-31",
+      "nota": "D.Lgs. 151/2001, art. 42, comma 5: fino a 2 anni nella vita lavorativa."
+    },
+    "congedo_non_retribuito_mesi": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025;106",
+      "verified": "2026-10-20",
+      "proof": "secondaria",
+      "review_by": "2027-01-31",
+      "nota": "L. 106/2025: congedo non retribuito fino a 24 mesi. Da confermare sul testo."
+    },
+    "datore_risposta_giorni": {
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.congedo-straordinario-per-assistere-familiari-con-disabilita-grave-50625.html",
+      "verified": "2026-10-20",
+      "proof": "estratto",
+      "review_by": "2027-01-31",
+      "nota": "Il datore di lavoro concede il congedo entro 30 giorni dalla richiesta."
+    }
+  },
   "sources": [
     {
       "label": "INPS – Permessi legge 104",

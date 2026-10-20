@@ -1,6 +1,32 @@
 {
   "name": "Dentista nel Servizio sanitario",
   "last_verified": "2026-10-20",
+  "eta_minori_max": 14,
+  "isee_vulnerabilita_sociale": 8000,
+  "detrazione_percent": 19,
+  "provenienza": {
+    "eta_minori_max": {
+      "url": "https://www.salute.gov.it/portale/lea/dettaglioContenutiLea.jsp?lingua=italiano&id=4706&area=Lea&menu=ambulatoriale",
+      "verified": "2026-10-20",
+      "proof": "estratto",
+      "review_by": "2027-10-20",
+      "nota": "DPCM 12/01/2017, art. 9: programmi di tutela della salute odontoiatrica in età evolutiva (0–14 anni)."
+    },
+    "isee_vulnerabilita_sociale": {
+      "url": "https://www.salute.gov.it/portale/lea/dettaglioContenutiLea.jsp?lingua=italiano&id=4706&area=Lea&menu=ambulatoriale",
+      "verified": "2026-10-20",
+      "proof": "secondaria",
+      "review_by": "2027-01-31",
+      "nota": "Soglia ISEE della vulnerabilità sociale: la fissa la Regione; 8.000 euro è il valore citato dalle guide per molte regioni. Sul sito è scritto «intorno agli 8.000 euro in molte regioni». Da verificare per la Sicilia."
+    },
+    "detrazione_percent": {
+      "url": "https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/detrazioni-spese-sanitarie",
+      "verified": "2026-10-20",
+      "proof": "estratto",
+      "review_by": "2027-01-31",
+      "nota": "Detrazione IRPEF del 19% delle spese sanitarie."
+    }
+  },
   "sources": [
     {
       "label": "Ministero della Salute – Assistenza odontoiatrica nei LEA",

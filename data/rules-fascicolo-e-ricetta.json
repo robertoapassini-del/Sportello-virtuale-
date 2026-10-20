@@ -1,6 +1,24 @@
 {
   "name": "Fascicolo Sanitario Elettronico e ricetta elettronica",
   "last_verified": "2026-10-20",
+  "prescription_drug_days": 30,
+  "referti_upload_days": 5,
+  "provenienza": {
+    "prescription_drug_days": {
+      "url": "https://sistemats1.sanita.finanze.it/portale/ricetta-dematerializzata",
+      "verified": "2026-10-20",
+      "proof": "estratto",
+      "review_by": "2027-10-20",
+      "nota": "Validità della ricetta per i farmaci: 30 giorni dalla compilazione."
+    },
+    "referti_upload_days": {
+      "url": "https://www.fascicolosanitario.gov.it",
+      "verified": "2026-10-20",
+      "proof": "secondaria",
+      "review_by": "2027-03-31",
+      "nota": "FSE 2.0: i referti vanno caricati entro 5 giorni dalla prestazione (notizie del marzo 2026 sul DM 7/9/2023)."
+    }
+  },
   "sources": [
     {
       "label": "Regione Siciliana – Fascicolo Sanitario Elettronico",

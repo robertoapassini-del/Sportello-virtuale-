@@ -18,7 +18,7 @@ Come si aggiorna una cifra:
 4. `npm run pagine` (rifà fonti e «Informazioni controllate il…») e poi `npm test`.
 5. Scrivi la modifica in `CHANGELOG.md`, con la fonte.
 
-Ultimo controllo di questo elenco: 19 ottobre 2026.
+Ultimo controllo di questo elenco: 20 ottobre 2026.
 
 ## Cifre che cambiano spesso (ogni anno o ogni due anni)
 
@@ -36,6 +36,10 @@ Ultimo controllo di questo elenco: 19 ottobre 2026.
 | Screening epatite C (nati 1969–1989) | **Non pubblicato**: proroga nazionale al 31/12/2026, nessuna pagina siciliana recente | (da aggiungere a `prevenzione/` se confermato) | — | Regione Siciliana, ASP, [bastapensarci.it](https://www.bastapensarci.it) | Ogni anno (proroghe) |
 | Vaccini gratis per età | Influenza da 60 anni; pneumococco e zoster da 65; antitetanica ogni 10 anni | `prevenzione/` | `rules-prevenzione.json` → `vaccines` | Circolare influenza del Ministero della Salute (ogni anno); calendario vaccinale regionale | Ogni autunno |
 | Liste d'attesa: tempi massimi per classe | U 72 ore, B 10 giorni, D 30/60 giorni, P 120 giorni | `liste-attesa/` (tabella creata da `npm run pagine`) | `rules.json` → `max_wait_days`, `callback_days` | [Piano nazionale liste d'attesa 2026–2028](https://www.salute.gov.it/new/it/tema/liste-di-attesa/piano-nazionale-governo-liste-di-attesa/) | Nuovo piano nazionale o regionale (piano regionale atteso entro il 22/12/2026: `regional_plan_due`) |
+| Accompagnamento: rivalutazione annuale (importo 2026 «circa 550 €», non scritto nei dati) | +1,4% | `accompagnamento/` | `rules-accompagnamento.json` → `rivalutazione_percent_2026` | [INPS – indennità di accompagnamento](https://www.inps.it) (circolare 153 del 19/12/2025) | ogni dicembre |
+| Legge 104: ore in più l'anno dal 2026 e congedo non retribuito | 10 ore; 24 mesi | `legge-104/` | `rules-legge-104.json` → `ore_extra_anno_2026`, `congedo_non_retribuito_mesi` | L. 106/2025 (**secondaria**: da leggere il testo) | legge di bilancio |
+| Bonus psicologo: tetto, fasce ISEE, per seduta, tempo per usarlo | 1.500 € (ISEE ≤ 15.000), 1.000 € (≤ 30.000), 500 € (≤ 50.000); 50 €/seduta; 9 mesi | `psicologo/` | `rules-psicologo.json` → `bonus_*` | [INPS – bonus psicologo](https://www.inps.it) | ogni anno, con il decreto di riparto |
+| Dentista: soglia ISEE della vulnerabilità sociale (**secondaria**, da verificare per la Sicilia) | 8.000 € | `dentista/` | `rules-dentista.json` → `isee_vulnerabilita_sociale` | LEA, DPCM 12/01/2017 art. 9; delibere della Regione | legge di bilancio |
 
 ## Cifre ferme da anni (ricontrollare comunque una volta l'anno)
 
@@ -50,6 +54,14 @@ Ultimo controllo di questo elenco: 19 ottobre 2026.
 | Ricorso invalidità | 6 mesi dal verbale | `ricorso-invalidita/` | `rules-ricorso.json` → `appeal_months` | D.L. 269/2003, art. 42 |
 | Invalidità: tempi della visita | 15 / 30 / 90 giorni (nuovo regime) | `invalidita/` | `rules-invalidita.json` | D.Lgs. 62/2024, art. 6 |
 | Contact center INPS | 803 164 (fisso), 06 164164 (cellulare) | `invalidita/`, `numeri-utili/` | `rules-invalidita.json` → `inps_contacts` | [inps.it](https://www.inps.it) |
+| Tessera sanitaria: durata; certificato sostitutivo TEAM | 6 anni; 6 mesi | `tessera-sanitaria/` | `rules-tessera-sanitaria.json` | [Sistema TS](https://sistemats1.sanita.finanze.it); Ministero della Salute (TEAM) |
+| Ricetta elettronica per farmaci: validità; referti nel Fascicolo | 30 giorni; 5 giorni dalla prestazione | `fascicolo-e-ricetta/` | `rules-fascicolo-e-ricetta.json` | DM 2/11/2011; DM 7/9/2023 (FSE 2.0) |
+| CUP: disdetta | 2 giorni lavorativi prima (ticket anche agli esenti) | `prenotare-cup/` | `rules-prenotare-cup.json` → `disdetta_working_days` | D.L. 73/2024, art. 3 |
+| Legge 104: permessi e congedo straordinario | 3 giorni al mese o 2 ore al giorno; figli fino a 3 anni; congedo 2 anni; datore risponde in 30 giorni | `legge-104/` | `rules-legge-104.json` | L. 104/1992 art. 33; D.Lgs. 151/2001 art. 42 |
+| Accompagnamento: requisiti e mensilità | 100% di invalidità (18–65 anni); 12 mensilità | `accompagnamento/` | `rules-accompagnamento.json` | L. 18/1980 |
+| Contrassegno disabili: durata; IVA e detrazione sull'auto (legge 104) | 5 anni; 4%; 19% | `contrassegno-disabili/` | `rules-contrassegno-disabili.json` | DPR 495/1992 art. 381; Agenzia delle Entrate |
+| Cure all'estero: rimborso | entro 30 giorni dal rientro | `cure-fuori-regione/` | `rules-cure-fuori-regione.json` | Direttiva assessoriale prot. 9368 dell'11/02/2026 |
+| Dentista: età dei minori nei LEA; detrazione | 14 anni; 19% | `dentista/` | `rules-dentista.json` | DPCM 12/01/2017 art. 9 |
 
 ## Note aperte
 

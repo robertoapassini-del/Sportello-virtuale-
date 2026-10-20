@@ -2,9 +2,10 @@
 // Qui si avviano le stesse cose delle altre pagine: il piè di pagina con
 // «Questa pagina ti è stata utile?», il conteggio anonimo della visita e il
 // pulsante «🔊 Ascolta», che legge la guida ad alta voce.
-import { renderFooter, listenButton, speakGuide } from './common.js';
+import { renderFooter, listenButton, speakGuide, siteRoot } from './common.js';
 
-const ROOT = '../../';
+// Cartella principale del sito ('../' per i moduli solo testo, '../../' per le pagine corte).
+const ROOT = siteRoot();
 const app = document.getElementById('app');
 
 renderFooter(ROOT);
