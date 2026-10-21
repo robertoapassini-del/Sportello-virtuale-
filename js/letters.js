@@ -154,14 +154,15 @@ Ufficio Assistenza Protesica
 ${address || ''}
 
 Oggetto: SOLLECITO – Autorizzazione alla fornitura di ${blank(device, 'ausilio/protesi')} richiesta ${art('il', requestDate)}${requestDate ? formatIt(requestDate) : '__________'}
-(art. 18 DPCM 12/01/2017)
+(art. 18 DPCM 12/01/2017 e disposizioni regionali sull'assistenza protesica)
 
 ${personBlock(p)}
 
 PREMESSO CHE
 - in data ${requestDate ? formatIt(requestDate) : '__________'} ha presentato richiesta di autorizzazione alla fornitura di ${blank(device, 'ausilio/protesi')},
   su prescrizione ${prescriber ? `del/della ${prescriber}` : 'dello specialista del Servizio sanitario'}${protocol ? ` (ricevuta/protocollo n. ${protocol})` : ''};
-- ai sensi dell'art. 18 del DPCM 12/01/2017 l'autorizzazione va rilasciata entro ${days} giorni dalla richiesta, cioè entro ${art('il', deadline)}${deadline ? formatIt(deadline) : '__________'},
+- ai sensi dell'art. 18 del DPCM 12/01/2017 il tempo massimo per l'autorizzazione è fissato dalla Regione, e secondo le disposizioni regionali
+  sull'assistenza protesica l'autorizzazione va rilasciata entro ${days} giorni dalla richiesta, cioè entro ${art('il', deadline)}${deadline ? formatIt(deadline) : '__________'},
   e, decorso tale termine senza risposta, si intende concessa;
 - alla data odierna non ha ricevuto l'autorizzazione né alcuna comunicazione;
 

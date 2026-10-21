@@ -1,7 +1,7 @@
 // Modulo 4 — ausili e protesi: «la carrozzina non arriva».
 // Prima la risposta: la pagina mostra subito la risposta scritta; il conto e il sollecito partono dal pulsante.
-// Regola: l'azienda sanitaria (ASL) autorizza entro 20 giorni; se non risponde, l'autorizzazione vale lo stesso
-// (art. 18 DPCM 12/01/2017). Non chiediamo mai la malattia.
+// Regola: il tempo per autorizzare lo fissa la Regione (art. 18 DPCM 12/01/2017). Il conto si fa solo per la Sicilia
+// (si arriva scegliendo una provincia siciliana): 20 giorni, poi silenzio-assenso. Non chiediamo mai la malattia.
 import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween, art } from './engine.js';
 import { ausiliReminder, mailtoHref } from './letters.js';
 import { noPecBox,

@@ -4,7 +4,7 @@
 // Calcolo con regole fisse nazionali (codici E01-E04). Nessuna lettera.
 // Non chiediamo la malattia: le esenzioni per malattia le mostriamo solo come informazione.
 import { esenzioneReddito, formatEuro } from './engine.js';
-import { esc, loadJSON, loadRegioni, disclaimer, renderFooter, readForm, aslLabel, regione, regioneNonPronta } from './common.js';
+import { esc, loadJSON, loadRegioni, disclaimer, renderFooter, readForm, aslLabel } from './common.js';
 import { createFlow, choice, restartBtn, progress } from './flow.js';
 
 const ROOT = '../';
@@ -15,8 +15,6 @@ let rules;
 const state = {};
 
 const sources = () => [rules.sources, { verified: rules.last_verified }];
-// La scadenza del 31 marzo l'abbiamo controllata solo per la Sicilia: alle altre regioni non la diciamo.
-const inSicilia = () => regione() === 'sicilia' && !regioneNonPronta();
 
 const ageText = { under6: 'meno di 6 anni', '6to59': 'tra 6 e 59 anni', '60to64': 'tra 60 e 64 anni', '65plus': '65 anni o più' };
 
@@ -27,9 +25,7 @@ const howToGet = () => `
     <li><strong>Se non c'è, vai allo sportello esenzioni dell'${aslLabel()}</strong> (nel distretto o al CUP) con tessera sanitaria e carta d'identità. Firmi un foglio in cui dichiari il reddito (autocertificazione). È gratis. <a href="../numeri-utili/">📍 Dov'è lo sportello nella tua provincia</a></li>
     <li><strong>Quando prenoti, di' che hai l'esenzione.</strong> Deve essere scritta sulla ricetta, altrimenti il ticket lo paghi.</li>
   </ol>
-  <div class="notice warn"><p>⚠️ ${inSicilia()
-    ? `In Sicilia l'esenzione vale fino al <strong>${esc(rules.valid_until)}</strong>. Poi va controllata di nuovo.`
-    : `L'esenzione va controllata di nuovo dopo un po': chiedi all'${aslLabel()} fino a quando vale.`} Se dichiari un reddito falso, devi restituire i soldi e paghi una multa.</p></div>`;
+  <div class="notice warn"><p>⚠️ L'esenzione vale fino al <strong>${esc(rules.valid_until)}</strong>, poi va controllata di nuovo (alcune Regioni la prorogano: chiedi all'${aslLabel()}). Se dichiari un reddito falso, devi restituire i soldi e paghi una multa.</p></div>`;
 
 const otherExemptions = () => `
   <details class="card">

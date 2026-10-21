@@ -73,6 +73,10 @@ Non fatto perché impossibile dall'estero: il controllo dei 370 link esterni (`n
   il testo dell'allegato 12 ([PDF del Ministero](https://www.salute.gov.it/new/sites/default/files/Allegato%2012%20Modalita%CC%80%20di%20erogazione%20delle%20prestazioni%20di%20assistenza%20protesica.pdf),
   [Gazzetta Ufficiale n. 65 del 18/03/2017](https://www.gazzettaufficiale.it/eli/gu/2017/03/18/65/so/15/sg/pdf)).
   Poi decidere come riscrivere testo e lettera (meglio con il legale).
+  **21/10/2026:** il sito ora dice che il tempo lo fissa la Regione e dà i 20 giorni con silenzio-assenso solo come
+  regola siciliana (D.A. 20/12/2011, direttive sul DM 332/1999); la lettera cita l'art. 18 e le disposizioni regionali.
+  Resta da leggere il testo del D.A. per confermare 20 giorni, silenzio-assenso e collaudo in Sicilia
+  ([procedure dell'ASP Catania](https://www.aspct.it/azienda/dipartimenti/dipartimenti-sanitari/dipartimento-di-riabilitazione/informazioni-generali/allegati/linee-guida-protesi-DM-332-99.pdf)).
 - [ ] **«Ti è stata utile? Sì / No».** Oggi conta i Sì e i No con GoatCounter (senza cookie, senza dati personali).
   Scegliere: tenerlo così (proposta), oppure non contare niente e lasciare solo il link «scrivici».
 - [ ] **Redirect 301 vero per `/…/index.html`.** GitHub Pages non lo permette: ora c'è un reindirizzamento fatto dal
