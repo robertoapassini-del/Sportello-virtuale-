@@ -284,7 +284,7 @@ const screens = {
         e.preventDefault();
         const v = readForm(form);
         const err = document.getElementById('dates-error');
-        if (parseDate(v.bookingDate) && daysBetween(v.bookingDate, todayISO()) < 0) {
+        if (parseDate(v.bookingDate) !== null && daysBetween(v.bookingDate, todayISO()) < 0) {
           err.textContent = 'Il giorno della prenotazione non può essere nel futuro. Controlla la data.';
           err.hidden = false;
           return;
@@ -384,7 +384,7 @@ const screens = {
           e.preventDefault();
           const v = readForm(e.target);
           const err = document.getElementById('req-error');
-          if (!parseDate(v.requestDate)) { err.textContent = 'Scrivi il giorno.'; err.hidden = false; return; }
+          if (parseDate(v.requestDate) === null) { err.textContent = 'Scrivi il giorno.'; err.hidden = false; return; }
           if (daysBetween(v.requestDate, todayISO()) < 0) { err.textContent = 'Questo giorno non è ancora arrivato. Controlla la data.'; err.hidden = false; return; }
           state.requestDate = v.requestDate;
           render();
@@ -504,7 +504,7 @@ const screens = {
       mount() {
         const update = () => {
           const v = readForm(document.getElementById('rem-form'));
-          const ok = parseDate(v.firstRequestDate) && daysBetween(v.firstRequestDate, today) >= 0;
+          const ok = parseDate(v.firstRequestDate) !== null && daysBetween(v.firstRequestDate, today) >= 0;
           if (ok) state.firstRequestDate = v.firstRequestDate;
           const err = document.getElementById('rem-form-error');
           err.hidden = ok;

@@ -174,7 +174,7 @@ const screens = {
       document.getElementById('req-form').addEventListener('submit', (e) => {
         e.preventDefault();
         const v = readForm(e.target);
-        if (!parseDate(v.requestDate)) return showError('req-form', 'Scrivi il giorno.');
+        if (parseDate(v.requestDate) === null) return showError('req-form', 'Scrivi il giorno.');
         if (daysBetween(v.requestDate, todayISO()) < 0) return showError('req-form', 'Questo giorno non è ancora arrivato. Controlla la data.');
         state.requestDate = v.requestDate;
         flow.go('result');

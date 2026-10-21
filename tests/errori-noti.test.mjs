@@ -34,6 +34,8 @@ const ERRORI = [
   [/l'ASL autorizza entro 20 giorni|L'articolo 18 dice che l'ASL autorizza entro/, 'ausili: i 20 giorni non sono del DPCM, sono una regola regionale (Sicilia)'],
   [/Per ora solo in Sicilia/, 'il sito vale in tutta Italia'],
   [/Fino a \$\{rules\.pediatra_only_until\} anni/, 'pediatra: «sotto i 6 anni» (tra 6 e 13 si può scegliere)'],
+  [/!parseDate\(/, 'parseDate() del 01/01/1970 vale 0 (falso): si controlla con «=== null» (audit del 21/10/2026)'],
+  [/secondo i tempi indicati dalla normativa vigente/, 'i 30 giorni della vecchia procedura INPS sono indicativi (rules-invalidita.json): la lettera non li cita come norma'],
 ];
 
 test('nessuno degli errori già trovati è tornato', () => {

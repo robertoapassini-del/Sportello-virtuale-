@@ -74,7 +74,7 @@ const screens = {
       document.getElementById('v-form').addEventListener('submit', (e) => {
         e.preventDefault();
         const v = readForm(e.target);
-        if (!parseDate(v.verbaleDate)) return showError('v-form', 'Scrivi il giorno.');
+        if (parseDate(v.verbaleDate) === null) return showError('v-form', 'Scrivi il giorno.');
         if (daysBetween(v.verbaleDate, todayISO()) < 0) return showError('v-form', 'Questo giorno non è ancora arrivato. Controlla la data.');
         state.verbaleDate = v.verbaleDate;
         flow.go('result');
@@ -92,7 +92,7 @@ const screens = {
           <div class="hero" aria-hidden="true">${urgent ? '🚨' : '⏰'}</div>
           <h1>${urgent ? 'Muoviti subito: manca poco' : 'Sei ancora in tempo'}</h1>
           <div class="notice ${urgent ? 'bad' : 'ok'}">
-            <p>Puoi fare ricorso <strong>${art('fino al', d.deadline)}${esc(formatIt(d.deadline))}</strong>.</p>
+            <p>Puoi fare ricorso <strong>${art('fino al', d.deadline)}${esc(formatIt(d.deadline))}</strong>.${d.slittato ? ' (I mesi finivano di sabato, di domenica o in un giorno festivo: il termine passa al primo giorno lavorativo.)' : ''}</p>
             <p>${d.daysLeft === 0 ? '<strong>Scade oggi.</strong>' : `Mancano <strong>${days(d.daysLeft)}</strong>.`}</p>
             <p>L'avvocato ha bisogno di qualche settimana per preparare tutto: non aspettare l'ultimo momento.</p>
           </div>

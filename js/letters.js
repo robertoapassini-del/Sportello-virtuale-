@@ -85,7 +85,7 @@ export function inpsReminder({ provinceName, inpsPec, person: p, certNumber, cer
     : `- in data ${formatIt(certDate)} è stato trasmesso all'INPS il certificato medico introduttivo n. ${blank(certNumber)}\n  e in data ${domandaDate ? formatIt(domandaDate) : '__________'} è stata presentata la relativa domanda (n. ${blank(domandaNumber)});`;
   const term = deadlineInfo.legal
     ? `- ai sensi dell'${deadlineInfo.legal}, la visita/il procedimento doveva svolgersi entro ${deadlineInfo.days} giorni,\n  cioè entro ${art('il', deadlineInfo.deadline)}${formatIt(deadlineInfo.deadline)};`
-    : `- secondo i tempi indicati dalla normativa vigente, la convocazione era attesa entro ${art('il', deadlineInfo.deadline)}${formatIt(deadlineInfo.deadline)};`;
+    : `- sono trascorsi oltre ${deadlineInfo.days} giorni dalla presentazione della domanda (termine indicato come ordinario per la convocazione,\n  scaduto ${art('il', deadlineInfo.deadline)}${formatIt(deadlineInfo.deadline)}) senza che sia pervenuta alcuna convocazione;`;
   const attach = 'copia del documento di identità; ricevuta di trasmissione del certificato medico' +
     (regime === 'old' ? '; ricevuta della domanda' : '') +
     (p.isDelegate ? '; delega e documento del delegato' : '');

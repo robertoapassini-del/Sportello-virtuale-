@@ -65,7 +65,7 @@ const screens = {
       document.getElementById('exp-form').addEventListener('submit', (e) => {
         e.preventDefault();
         const v = readForm(e.target);
-        if (!parseDate(v.expiryDate)) return showError('exp-form', 'Scrivi la data.');
+        if (parseDate(v.expiryDate) === null) return showError('exp-form', 'Scrivi la data.');
         state.expiryDate = v.expiryDate;
         flow.go('result');
       });

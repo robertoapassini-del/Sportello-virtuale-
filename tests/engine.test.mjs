@@ -243,13 +243,25 @@ test('esenzione ticket per reddito', async () => {
   assert.equal(m.thresholds.E01, 36151.98);
 });
 
+test('date del 01/01/1970: parseDate vale 0, ma la data esiste', () => {
+  assert.equal(parseDate('1970-01-01'), 0);
+  assert.equal(formatIt('1970-01-01'), '01/01/1970');
+  assert.equal(art('il', '1970-01-01'), 'il ');
+});
+
 test('ricorso: 6 mesi dal verbale', async () => {
   const { ricorsoDeadline } = await import('../js/engine.js');
   const r = load('../data/rules-ricorso.json');
   assert.equal(r.appeal_months, 6);
-  const a = ricorsoDeadline(r, { verbaleDate: '2026-04-18', today: '2026-10-18' });
-  assert.equal(a.deadline, '2026-10-18'); assert.equal(a.status, 'waiting'); assert.equal(a.daysLeft, 0);
-  assert.equal(ricorsoDeadline(r, { verbaleDate: '2026-04-17', today: '2026-10-18' }).status, 'passed');
+  const a = ricorsoDeadline(r, { verbaleDate: '2026-04-21', today: '2026-10-21' });
+  assert.equal(a.deadline, '2026-10-21'); assert.equal(a.status, 'waiting'); assert.equal(a.daysLeft, 0); assert.equal(a.slittato, false);
+  assert.equal(ricorsoDeadline(r, { verbaleDate: '2026-04-20', today: '2026-10-21' }).status, 'passed');
+  // Sabato, domenica e festivi: il termine slitta al primo giorno lavorativo (art. 155 c.p.c.).
+  const dom = ricorsoDeadline(r, { verbaleDate: '2026-04-18', today: '2026-10-19' });
+  assert.equal(dom.deadline, '2026-10-19'); assert.equal(dom.status, 'waiting'); assert.equal(dom.slittato, true);
+  assert.equal(ricorsoDeadline(r, { verbaleDate: '2026-06-08', today: '2026-12-09' }).deadline, '2026-12-09'); // 8/12 Immacolata
+  assert.equal(ricorsoDeadline(r, { verbaleDate: '2026-09-29', today: '2026-10-01' }).deadline, '2027-03-30'); // 29/3/2027 Lunedì dell'Angelo
+  assert.equal(ricorsoDeadline(r, { verbaleDate: '2026-04-04', today: '2026-10-01' }).deadline, '2026-10-05'); // 4/10/2026 domenica
   assert.equal(ricorsoDeadline(r, { verbaleDate: '2026-10-01', today: '2026-10-18' }).daysLeft, 165);
   assert.equal(ricorsoDeadline(r, { verbaleDate: '2026-12-01', today: '2026-10-18' }).error, 'future');
   for (const s of [...r.sources, ...load('../data/rules-esenzione.json').sources]) assert.match(s.url, /^https:\/\//);
