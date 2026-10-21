@@ -1,28 +1,18 @@
 {
  "regione": "veneto",
- "aggiornato": "2026-10-21T19:07:54.094Z",
+ "aggiornato": "2026-10-21T20:25:56.101Z",
  "pagine": [
   {
    "asl": "regione-veneto",
    "url": "https://salute.regione.veneto.it/",
    "controllata": "2026-10-21",
-   "http": 200,
-   "file": "regione-veneto/1389b495f3c8.txt",
-   "titolo": "Homepage | Regione del Veneto",
-   "sha": "38d4bb4f68cc9d9c1b5462d721cecfad8e940df5ac703f7c131f358af75d7c6b",
-   "caratteri": 9479,
-   "cambiata": false
+   "http": 403
   },
   {
    "asl": "regione-veneto",
    "url": "https://salute.regione.veneto.it/servizi",
    "controllata": "2026-10-21",
-   "http": 200,
-   "file": "regione-veneto/257a9a26b81a.txt",
-   "titolo": "Servizio socio sanitario | Regione del Veneto",
-   "sha": "30337ee55bc2ddee2d1a6f0f278eac0ca108bd8988a9b00d5071405b4d89045d",
-   "caratteri": 16495,
-   "cambiata": false
+   "http": 403
   },
   {
    "asl": "regione-veneto",
@@ -51,12 +41,7 @@
    "asl": "regione-veneto",
    "url": "https://salute.regione.veneto.it/lista-faq/presso-quali-strutture-sanitarie-posso-prenotare-visite-ed-esami",
    "controllata": "2026-10-21",
-   "http": 200,
-   "file": "regione-veneto/56c44e95d54c.txt",
-   "titolo": "Presso quali strutture sanitarie posso prenotare visite ed esami? | Regione del Veneto",
-   "sha": "a4f3f38737f675ad5f1e1d59c23c42880231630d06a5229a65a80cc3bfb65646",
-   "caratteri": 3930,
-   "cambiata": false
+   "http": 403
   },
   {
    "asl": "regione-veneto",
@@ -68,23 +53,13 @@
    "asl": "regione-veneto",
    "url": "https://salute.regione.veneto.it/notizie/116117-attivo-tutta-la-regione",
    "controllata": "2026-10-21",
-   "http": 200,
-   "file": "regione-veneto/fc6652b9130c.txt",
-   "titolo": "116117 attivo in tutta la regione | Regione del Veneto",
-   "sha": "26d4682e78ae544e1b72dc9926a0bc34e0abee72883579c52cad112121de6b2f",
-   "caratteri": 5067,
-   "cambiata": false
+   "http": 403
   },
   {
    "asl": "regione-veneto",
    "url": "https://salute.regione.veneto.it/fse-e-servizi-online/fascicolo-sanitario-elettronico-regionale",
    "controllata": "2026-10-21",
-   "http": 200,
-   "file": "regione-veneto/e22af149bf27.txt",
-   "titolo": "Fascicolo Sanitario Elettronico regionale | Regione del Veneto",
-   "sha": "62d57b5bd3de27c3768262307ae7d4af3f5d3e85eac34bc08152a5ef8da9da3d",
-   "caratteri": 11336,
-   "cambiata": false
+   "http": 403
   },
   {
    "asl": "regione-veneto",
