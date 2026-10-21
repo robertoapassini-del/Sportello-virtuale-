@@ -1,6 +1,6 @@
 {
  "regione": "lombardia",
- "aggiornato": "2026-10-21T22:14:32.596Z",
+ "aggiornato": "2026-10-21T23:15:50.614Z",
  "pagine": [
   {
    "asl": "bergamo",
@@ -566,7 +566,7 @@
    "titolo": "Case di Comunità – ASST Lecco",
    "sha": "12cbefa1ceb4be89803682fa815675e6220c03af4f3525c32f8cf95095b1ea05",
    "caratteri": 21482,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "lecco",
@@ -599,7 +599,7 @@
    "titolo": "PRENOTAZIONI – ASST Lecco",
    "sha": "23f4691825b0f6fd9eff560956ed7be8e811214ef9ec60f75b4b505d1bcf470f",
    "caratteri": 27126,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "lecco",
@@ -610,7 +610,7 @@
    "titolo": "COMUNICAZIONE INTERNA E UFFICIO RELAZIONI CON IL PUBBLICO – ASST Lecco",
    "sha": "0b2239d896dee6c367906ea1f73d0c8cc2964f08de5a3ff3aaf12317791ff164",
    "caratteri": 24688,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "lodi",
@@ -1051,7 +1051,7 @@
    "titolo": "Cure domiciliari / Cure palliative",
    "sha": "b15b0bdc2baa8fb2da2b95d6ddb1690199764e8d78cc16c9ff0691cd86c91319",
    "caratteri": 7457,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "monza-brianza",
@@ -1337,9 +1337,9 @@
    "http": 200,
    "file": "varese/8f9749388b3f.txt",
    "titolo": "URP - Varese - ASST Settelaghi - ASST Settelaghi",
-   "sha": "179787374e91ab73de88b792e7de5f597c51eadd13f2717e72f09847f677c743",
-   "caratteri": 3512,
-   "cambiata": false
+   "sha": "8b6da6fec4227bb433b5cca28e4dab76105e82c992f6d6c7101d9ab0020f8b32",
+   "caratteri": 3514,
+   "cambiata": true
   },
   {
    "asl": "varese",
@@ -1348,9 +1348,9 @@
    "http": 200,
    "file": "varese/b23b552c097c.txt",
    "titolo": "PRENOTAZIONE visite e esami con SSN - ASST Settelaghi - ASST Settelaghi",
-   "sha": "a5411addd1d6ef08638030a82e7bea2d2f6bd076f5cc3a318a4e9761caf39e2d",
-   "caratteri": 12778,
-   "cambiata": false
+   "sha": "2bad4548fd3d86a11d9acd46d61bad8252674a84f341c7bf6667b624a1ec815d",
+   "caratteri": 12799,
+   "cambiata": true
   },
   {
    "asl": "varese",
@@ -1374,6 +1374,138 @@
    "sha": "fb876e2da271cd631ff4398e1c3039dbf9a413e77e1d37eff356dad6c23b18a2",
    "caratteri": 6013,
    "cambiata": false
+  },
+  {
+   "asl": "inps-lombardia",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.120000.120000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-lombardia/70326cb4d494.txt",
+   "titolo": "Portale Inps - Bergamo",
+   "sha": "284fccc541969ff69f49ce0571b4cef61ad7d1b0caf960cbd665364fcd66bb6d",
+   "caratteri": 43809,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-lombardia",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.150000.150000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-lombardia/1391dcdcb5df.txt",
+   "titolo": "Portale Inps - Brescia",
+   "sha": "286eccdb39432ccf595818157d454fd152f2702d22bbf803021dcb1e21323f65",
+   "caratteri": 43011,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-lombardia",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.240000.240000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-lombardia/dd036e8febf1.txt",
+   "titolo": "Portale Inps - Como",
+   "sha": "cf2edbc403f98b12a365b165fba8adb40f250c331cf2399bf5c667c535f5f744",
+   "caratteri": 44453,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-lombardia",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.260000.260000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-lombardia/9d66e35b5317.txt",
+   "titolo": "Portale Inps - Cremona",
+   "sha": "ff6aad3d5152e9d261ba3770268f02c5244c8bc341b5185e4da0220743b3fd1c",
+   "caratteri": 43394,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-lombardia",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.240100.240100-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-lombardia/96c4bbb4f040.txt",
+   "titolo": "Portale Inps - Lecco",
+   "sha": "07cb4ba7b8d898b610d291e4fd371f6fd2ab7edef6c8503aaab6dfe8cbd80088",
+   "caratteri": 43430,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-lombardia",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.492700.492700-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-lombardia/a826291d09ed.txt",
+   "titolo": "Portale Inps - Lodi",
+   "sha": "912e2fbc9e31d472ced73b79c99ce488dd7fc7814cff77d3407d67b236696995",
+   "caratteri": 42823,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-lombardia",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.450000.450000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-lombardia/db0acf691493.txt",
+   "titolo": "Portale Inps - Mantova",
+   "sha": "10082b1ddf8077294bd0aeaeef363fd5a3c4791d908fb764fa075f50d4959382",
+   "caratteri": 42942,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-lombardia",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.490000.490000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-lombardia/3008e48e9076.txt",
+   "titolo": "Portale Inps - Milano",
+   "sha": "8341a4ddf6382b67aabbb8642c1010757e2d530bb8cb4091d75778392accab35",
+   "caratteri": 42408,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-lombardia",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.490100.490100-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-lombardia/2568d902f50f.txt",
+   "titolo": "Portale Inps - Monza",
+   "sha": "a8a65975d58dc1a7ae917bd7e6d420ab04caf4f8aec40e2ba25310f558812a47",
+   "caratteri": 42418,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-lombardia",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.570000.570000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-lombardia/2604eea040d8.txt",
+   "titolo": "Portale Inps - Pavia",
+   "sha": "3fca4e0ea843eeb76f7d7be02432b08db2e7d2896946fc49009f68cb880fa215",
+   "caratteri": 43319,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-lombardia",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.770000.770000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-lombardia/151197a163d2.txt",
+   "titolo": "Portale Inps - Sondrio",
+   "sha": "9fa1eef1db03c51cb3bd980fff6ff6749f75ab66cbc6561f221bdca962f0f914",
+   "caratteri": 43806,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-lombardia",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.870000.870000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-lombardia/8860644db4ec.txt",
+   "titolo": "Portale Inps - Varese",
+   "sha": "06593e2ef32a88bb881876a5ff80e475f0fca376e37a3a5a7dfce568026418de",
+   "caratteri": 43809,
+   "cambiata": true
   }
  ]
 }

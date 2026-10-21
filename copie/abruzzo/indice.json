@@ -1,6 +1,6 @@
 {
  "regione": "abruzzo",
- "aggiornato": "2026-10-21T22:01:14.874Z",
+ "aggiornato": "2026-10-21T23:01:09.089Z",
  "pagine": [
   {
    "asl": "chieti",
@@ -243,7 +243,7 @@
    "http": 200,
    "file": "teramo/05b30d65a47c.txt",
    "titolo": "ASL Teramo",
-   "sha": "3a381e042ffff8abf543b785a2de85f9a2be7e6086c097079e073433000c7e3a",
+   "sha": "442ce2bbb7681ec26fc9838db2898f3ebd1d79735d554ebf750187a59c14c33e",
    "caratteri": 4679,
    "cambiata": true
   },
@@ -254,7 +254,7 @@
    "http": 200,
    "file": "teramo/1a6c122acb81.txt",
    "titolo": "ASL Teramo | Guardia medica",
-   "sha": "5f917772e8e3cfefa1cb2c0b1d9908a656719a3bb88c81305aea789a6e386080",
+   "sha": "0f683ea4060adb60fc7de49fdff28007fdda1afc4f866748dc77c106280d0577",
    "caratteri": 3898,
    "cambiata": true
   },
@@ -265,7 +265,7 @@
    "http": 200,
    "file": "teramo/0b60fd7c1527.txt",
    "titolo": "Cure Domiciliari – ADI – Azienda Sanitaria Locale di Teramo",
-   "sha": "1fe736d117859692eed56084906ca0631a3c3c41c025b6aa3c6af06e3ab91b6e",
+   "sha": "59a9ed15873d1aac8e2fc0e27773ace4994654fcc5e7467edff04d04abb5384f",
    "caratteri": 9214,
    "cambiata": true
   },
@@ -276,7 +276,7 @@
    "http": 200,
    "file": "teramo/f58daad63724.txt",
    "titolo": "ASL Teramo | Come fare per… Cittadini Utenti",
-   "sha": "6d4bc7aab249485fe9ffaeef24c37b17a07d4103ed960a29e95d80dc6b7065a0",
+   "sha": "822a4ba13935f4dc8ccd958c4b8ff3aaae5151f368355cbf15a9f09433b4a4d3",
    "caratteri": 50330,
    "cambiata": true
   },
@@ -287,7 +287,7 @@
    "http": 200,
    "file": "teramo/b5041cabb133.txt",
    "titolo": "Contatti – Azienda Sanitaria Locale di Teramo",
-   "sha": "d677a21e23c27d770339c62607742e6304f2b5e94da51a669ada54e71f48109b",
+   "sha": "44bee7d233963043e67c57e10b3a558286dec4ac8033d26e339d8cb70ad721f4",
    "caratteri": 4551,
    "cambiata": true
   },
@@ -302,6 +302,50 @@
    "sha": "34f6104934ed1d970143c6b5ad16627c9d9be5ec182b8f5a8f03d5a7a8bde35e",
    "caratteri": 4861,
    "cambiata": false
+  },
+  {
+   "asl": "inps-abruzzo",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.230000.230000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-abruzzo/1aae2a6048be.txt",
+   "titolo": "Portale Inps - Chieti",
+   "sha": "dfcc40d67bced92061223b1f2d192e89be73bbe98bdc5546990077c640c6f99e",
+   "caratteri": 42919,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-abruzzo",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.380000.380000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-abruzzo/f48da065c3e3.txt",
+   "titolo": "Portale Inps - L'Aquila",
+   "sha": "a9d22524c1a84dc71a42ec1bba927caf4bb88f2de2dcec4bb2464ec526143411",
+   "caratteri": 43150,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-abruzzo",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.600000.600000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-abruzzo/2d8e6a49f566.txt",
+   "titolo": "Portale Inps - Pescara",
+   "sha": "76e32945976eebfc9378c86cbd16f946acbe151b6868258a79078cf82c2a7035",
+   "caratteri": 43285,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-abruzzo",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.790000.790000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-abruzzo/26ef3dea343a.txt",
+   "titolo": "Portale Inps - Teramo",
+   "sha": "bae31c607e85cbc301e1c53b7cab9c3f3652aac6f2476b6515499b5a8d8f177c",
+   "caratteri": 42729,
+   "cambiata": true
   }
  ]
 }

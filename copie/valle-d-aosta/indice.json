@@ -1,6 +1,6 @@
 {
  "regione": "valle-d-aosta",
- "aggiornato": "2026-10-21T22:32:03.575Z",
+ "aggiornato": "2026-10-21T23:37:06.376Z",
  "pagine": [
   {
    "asl": "aosta",
@@ -9,7 +9,7 @@
    "http": 200,
    "file": "aosta/8c0e7f3ef863.txt",
    "titolo": "Home",
-   "sha": "ceeda922ae16c25777e7b4fd5d49b909c1c10618894636f235b14a3a2a4f7d8b",
+   "sha": "02b31890648c051236932d143363a915e15590d492cc58e229916c251500c4d3",
    "caratteri": 8437,
    "cambiata": true
   },
@@ -67,6 +67,17 @@
    "sha": "9002c9458d9732298c0b7881328325a19a2f712793af8f56e9dc0eeec0205f31",
    "caratteri": 13724,
    "cambiata": false
+  },
+  {
+   "asl": "inps-valle-d-aosta",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.040000.040000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-valle-d-aosta/e6e8f6ff64ba.txt",
+   "titolo": "Portale Inps - Aosta",
+   "sha": "1ad74caed0b0de60a7b7469601c7cefb4f75cf9cf81307f802b690366535dc41",
+   "caratteri": 43701,
+   "cambiata": true
   }
  ]
 }

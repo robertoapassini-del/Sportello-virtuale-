@@ -1,6 +1,6 @@
 {
  "regione": "trentino-alto-adige",
- "aggiornato": "2026-10-21T22:31:08.760Z",
+ "aggiornato": "2026-10-21T23:36:05.094Z",
  "pagine": [
   {
    "asl": "bolzano",
@@ -18,23 +18,13 @@
    "asl": "bolzano",
    "url": "https://home.sabes.it/it/prenotazione-me.asp",
    "controllata": "2026-10-21",
-   "http": 200,
-   "file": "bolzano/3eb4ebd291fc.txt",
-   "titolo": "Prenotazione | Azienda Sanitaria dell'Alto Adige",
-   "sha": "05ff7201f7b12e094c1b11e4feebf3363f00d4ab73cdbf1be189792578d66fb8",
-   "caratteri": 9264,
-   "cambiata": false
+   "http": 503
   },
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/servizi.asp",
    "controllata": "2026-10-21",
-   "http": 200,
-   "file": "bolzano/436fa81472bf.txt",
-   "titolo": "Servizi | Azienda Sanitaria dell'Alto Adige",
-   "sha": "1391d906e7a71ff2c37d1866915a13f8a9365fe89fa9486b75ac1658dc9b7bd3",
-   "caratteri": 6993,
-   "cambiata": false
+   "http": 503
   },
   {
    "asl": "trento",
@@ -90,6 +80,28 @@
    "sha": "200f1f0b4db72456f5a8409fcfe7c0594111ed94951d37b13ad52375861c7d1e",
    "caratteri": 8315,
    "cambiata": false
+  },
+  {
+   "asl": "inps-trentino-alto-adige",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.140000.140000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-trentino-alto-adige/a69e8cd675ec.txt",
+   "titolo": "Portale Inps - Bolzano",
+   "sha": "ff3667c7221231c79f60956926c5f48661733eb3c4dcc8c6ce8de916b758c777",
+   "caratteri": 43573,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-trentino-alto-adige",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.830000.830000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-trentino-alto-adige/5f9dac6f2002.txt",
+   "titolo": "Portale Inps - Trento",
+   "sha": "7e44ae0f1ea42ff7d56f68c5b3b74be8d529ac5d45945116a1ea118a2be47378",
+   "caratteri": 43405,
+   "cambiata": true
   }
  ]
 }

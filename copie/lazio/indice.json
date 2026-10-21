@@ -1,6 +1,6 @@
 {
  "regione": "lazio",
- "aggiornato": "2026-10-21T22:09:36.135Z",
+ "aggiornato": "2026-10-21T23:10:23.929Z",
  "pagine": [
   {
    "asl": "frosinone",
@@ -70,7 +70,7 @@
    "titolo": "Home",
    "sha": "3e2804757fc9db2de6f9da5a3d02d07077fa22e2e32b38262cb7c77c15f27962",
    "caratteri": 8067,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -93,7 +93,7 @@
    "titolo": "Assistenza domiciliare",
    "sha": "b6ddac0c47a61d3c33bf08f1ed3223fa65d8e8b116a83d63b8f755927eded658",
    "caratteri": 6594,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -115,7 +115,7 @@
    "titolo": "Ufficio relazioni con il pubblico",
    "sha": "b80bfbc03a389613298dbca272767962b15ad300792adb16519b50d2bfa6e861",
    "caratteri": 5866,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -126,7 +126,7 @@
    "titolo": "CUP",
    "sha": "025fe44ba73c6d6f9199e385750bdd274a125e600deb1b843a5200a1670d2113",
    "caratteri": 8945,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "rieti",
@@ -237,7 +237,7 @@
    "http": 200,
    "file": "roma/e0d930024e6e.txt",
    "titolo": "Punto Unico di Accesso (PUA)",
-   "sha": "c5282c5d72ea767e149577c7f158a58c79ea3da91ffe5dcf69ea92e5ec9f7a98",
+   "sha": "c05801c8143d65e5772758c48cca5cb7b5aab7d58e335de74f2791b6bd281c65",
    "caratteri": 22475,
    "cambiata": true
   },
@@ -314,7 +314,7 @@
    "http": 200,
    "file": "roma/2b46e5d8fe38.txt",
    "titolo": "ASL Roma 2 - Punto Unico di Accesso - PUA",
-   "sha": "1da51213efab5f6c60f3399808bff66c61c1cc31a017a87b117b86374841de91",
+   "sha": "083a089d3485aa4ab277d7a945b3db37438e44827642c522c44e0d8463c29d50",
    "caratteri": 12653,
    "cambiata": true
   },
@@ -439,6 +439,61 @@
    "sha": "6976d3a435461ab2a018eee549f10f2a608165fc3acde8c9ea0536aed4cc475b",
    "caratteri": 9306,
    "cambiata": false
+  },
+  {
+   "asl": "inps-lazio",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.708100.708100-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-lazio/e67fc7da2073.txt",
+   "titolo": "Portale Inps - DCM Roma",
+   "sha": "e2fcb8173869676302a4863f5275a0a61ebdc258fbe505c85b8b1a6056171718",
+   "caratteri": 42184,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-lazio",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.330000.330000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-lazio/1301fbc34025.txt",
+   "titolo": "Portale Inps - Frosinone",
+   "sha": "2c9d7a4849c23e4b09845c5e0ed62c4909af6ce1eca5f5e7e55efd4543016ca6",
+   "caratteri": 42857,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-lazio",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.400000.400000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-lazio/b31306f599a8.txt",
+   "titolo": "Portale Inps - Latina",
+   "sha": "805162c26d1edc0a48bec0c3cb6b31680cf9bc616b9d62ba38ccd92e5b9df296",
+   "caratteri": 42617,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-lazio",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.690000.690000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-lazio/d4c8f02aaec3.txt",
+   "titolo": "Portale Inps - Rieti",
+   "sha": "230f1d855628b7cb2410a51cf6cb21cdf4a4ddd0ac048a9702d8c65bd9776b5a",
+   "caratteri": 43373,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-lazio",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.920000.920000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-lazio/cc03e6649745.txt",
+   "titolo": "Portale Inps - Viterbo",
+   "sha": "3bc5d609861bd454ec3731aa946de9e1738971389b113b597523c6d150257963",
+   "caratteri": 43318,
+   "cambiata": true
   }
  ]
 }

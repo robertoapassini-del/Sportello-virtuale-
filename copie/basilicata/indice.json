@@ -1,6 +1,6 @@
 {
  "regione": "basilicata",
- "aggiornato": "2026-10-21T22:01:37.352Z",
+ "aggiornato": "2026-10-21T23:01:34.971Z",
  "pagine": [
   {
    "asl": "matera",
@@ -134,6 +134,28 @@
    "sha": "6315812a5131c3151907b14bdc0ba37c92e0ff54f1244b39e76dd14a3a851232",
    "caratteri": 8651,
    "cambiata": false
+  },
+  {
+   "asl": "inps-basilicata",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.470000.470000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-basilicata/d37e344b6702.txt",
+   "titolo": "Portale Inps - Matera",
+   "sha": "3e84b7d6af56e3590a29a0e2473ac43be6a415125eeef394c618202dde81e96a",
+   "caratteri": 42721,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-basilicata",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.640000.640000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-basilicata/156c6d3cae70.txt",
+   "titolo": "Portale Inps - Potenza",
+   "sha": "68906b155d44d5c1692e669a2885c01c1e3657afbcf3d57a1e032d2418d883c8",
+   "caratteri": 42998,
+   "cambiata": true
   }
  ]
 }

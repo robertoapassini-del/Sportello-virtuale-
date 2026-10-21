@@ -1,6 +1,6 @@
 {
  "regione": "calabria",
- "aggiornato": "2026-10-21T22:02:31.049Z",
+ "aggiornato": "2026-10-21T23:02:38.366Z",
  "pagine": [
   {
    "asl": "catanzaro",
@@ -121,7 +121,7 @@
    "titolo": "Centro Unico di Prenotazione Online - Azienda Sanitaria Provinciale di Crotone",
    "sha": "53ae8d7edadd1469381c4ac75ee3c5a5389f2b10c0f2ef7ad60a625c57703d82",
    "caratteri": 8094,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "cosenza",
@@ -260,6 +260,61 @@
    "sha": "abd090276a4cfdd1416483f60a1cb3bc7f9898e2fba6293d9bd995e29018273a",
    "caratteri": 4913,
    "cambiata": false
+  },
+  {
+   "asl": "inps-calabria",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.220000.220000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-calabria/2cdf96ccbd11.txt",
+   "titolo": "Portale Inps - Catanzaro",
+   "sha": "07b3f88e5fc4bc0087a690101109a7ad491d162f0a258eb89dac0fbc93970fd1",
+   "caratteri": 42959,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-calabria",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.250000.250000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-calabria/08f56fe93380.txt",
+   "titolo": "Portale Inps - Cosenza",
+   "sha": "22713d260d0eb501e1e4a250f72f005dc1984d69758adaf176a4b31ae80a621f",
+   "caratteri": 43715,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-calabria",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.220300.220300-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-calabria/d47ccfa83bb7.txt",
+   "titolo": "Portale Inps - Crotone",
+   "sha": "3f76dc91ceb5f32eeac7b4cee87b5459b00efb8f87d05103bba32d12844c39a5",
+   "caratteri": 42675,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-calabria",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.670000.670000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-calabria/80cdf6a50097.txt",
+   "titolo": "Portale Inps - Reggio Calabria",
+   "sha": "a3d685e6fe9a80b4b2c5578fcab9e5947fa27f92ff459fd5e4e638f73e10c566",
+   "caratteri": 43123,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-calabria",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.220200.220200-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-calabria/38e0f1048510.txt",
+   "titolo": "Portale Inps - Vibo Valentia",
+   "sha": "02f437927f97c1e66cc926f90181ce78be4bef117a0499535e9bf1c8677e08c5",
+   "caratteri": 43093,
+   "cambiata": true
   }
  ]
 }

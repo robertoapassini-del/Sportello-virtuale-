@@ -1,6 +1,6 @@
 {
  "regione": "umbria",
- "aggiornato": "2026-10-21T22:31:48.598Z",
+ "aggiornato": "2026-10-21T23:36:49.737Z",
  "pagine": [
   {
    "asl": "perugia",
@@ -201,6 +201,28 @@
    "sha": "46f779065d620da77a030cf72f4d57c00e8042b3aa5cac004a48ec45621aeae6",
    "caratteri": 3357,
    "cambiata": false
+  },
+  {
+   "asl": "inps-umbria",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.580000.580000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-umbria/6cbf15e2c757.txt",
+   "titolo": "Portale Inps - Perugia",
+   "sha": "7b2dd9d3f366bc5383a61a3dc7deb60172ddd6fc15bd38bdff35ba53fea2c00e",
+   "caratteri": 42631,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-umbria",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.800000.800000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-umbria/1c8ee5e76c1a.txt",
+   "titolo": "Portale Inps - Terni",
+   "sha": "6f7178e9d8d46e0f60ba8b000a511f49892fd240eeea1dcd8ce794b5b0432cc9",
+   "caratteri": 42744,
+   "cambiata": true
   }
  ]
 }

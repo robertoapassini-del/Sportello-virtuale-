@@ -1,6 +1,6 @@
 {
  "regione": "liguria",
- "aggiornato": "2026-10-21T22:10:32.200Z",
+ "aggiornato": "2026-10-21T23:11:29.171Z",
  "pagine": [
   {
    "asl": "genova",
@@ -42,9 +42,9 @@
    "http": 200,
    "file": "genova/6d2ea13a4aa5.txt",
    "titolo": "giunta - Sanità, al via in Liguria il nuovo numero 116117 per i casi meno urgenti. Attivo nel Tigullio da questa sera, martedì 16 dicembre - Regione Liguria",
-   "sha": "bef6e795af3e0aecd60b6647b692daea69457b063d796414ba4b481b577db129",
+   "sha": "46c50a77544836930ae0fda54e55c7f64408aaea55900979cc85bb6fefc61b5e",
    "caratteri": 4675,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "genova",
@@ -53,9 +53,9 @@
    "http": 200,
    "file": "genova/97c265ccde78.txt",
    "titolo": "salute - prenotazione visite ed esami col cup - Regione Liguria",
-   "sha": "64514e28de374b3852c085a051692c4d610345dbc0d416c62999838fa6819d96",
+   "sha": "cc106ff2037ee0bd279b45a1fc5d1cc7b04414d9ab1ec176113e2929a6e2f57c",
    "caratteri": 4869,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "genova",
@@ -196,9 +196,9 @@
    "http": 200,
    "file": "imperia/51c7b22af737.txt",
    "titolo": "salute - Numeri utili delle Case della Comunità - Regione Liguria",
-   "sha": "8d077b68328d286e8c5c7125a1a01432475326494ca851e12c2309561b0c4e48",
+   "sha": "2a7a97b29ec5dac6d0a761efe600511eb9abfb538dd7df6d3db1ec9022bd7859",
    "caratteri": 4359,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "la-spezia",
@@ -328,9 +328,9 @@
    "http": 200,
    "file": "savona/51c7b22af737.txt",
    "titolo": "salute - Numeri utili delle Case della Comunità - Regione Liguria",
-   "sha": "8d077b68328d286e8c5c7125a1a01432475326494ca851e12c2309561b0c4e48",
+   "sha": "2a7a97b29ec5dac6d0a761efe600511eb9abfb538dd7df6d3db1ec9022bd7859",
    "caratteri": 4359,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "savona",
@@ -342,6 +342,50 @@
    "sha": "4df5d6cd5f90fcb7d900406dc15a4941ea903c83d0716a0ae49c3b9c5701483c",
    "caratteri": 11345,
    "cambiata": false
+  },
+  {
+   "asl": "inps-liguria",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.340000.340000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-liguria/bccb17acbe95.txt",
+   "titolo": "Portale Inps - Genova",
+   "sha": "75a1d686735bf3604ece7fc4d6985822a01516b9eedb7b3a7465d6b9fc5b26a4",
+   "caratteri": 42916,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-liguria",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.370000.370000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-liguria/24d20411a908.txt",
+   "titolo": "Portale Inps - Imperia",
+   "sha": "0854f2cafafec6f0b627cbde2577629da97370be30f1deeab7a7aab341e495d7",
+   "caratteri": 43038,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-liguria",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.390000.390000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-liguria/71813be1aa16.txt",
+   "titolo": "Portale Inps - La Spezia",
+   "sha": "943bd20e96aae44aa0a2825ac22765a1bbbb8359a41c1feeff9da93b4369a9b0",
+   "caratteri": 43073,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-liguria",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.740000.740000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-liguria/f98af32d3cde.txt",
+   "titolo": "Portale Inps - Savona",
+   "sha": "621259250030ee61edd7d12f4a1f7154d5bc74e7cc04702a67b9dce9d2bc9078",
+   "caratteri": 43179,
+   "cambiata": true
   }
  ]
 }

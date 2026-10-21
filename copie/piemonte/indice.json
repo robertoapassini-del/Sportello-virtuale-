@@ -1,6 +1,6 @@
 {
  "regione": "piemonte",
- "aggiornato": "2026-10-21T22:19:00.739Z",
+ "aggiornato": "2026-10-21T23:22:58.390Z",
  "pagine": [
   {
    "asl": "alessandria",
@@ -193,34 +193,22 @@
    "asl": "cuneo",
    "url": "https://www.aslcn1.it/",
    "controllata": "2026-10-21",
-   "http": 200,
-   "file": "cuneo/3fc58134788d.txt",
-   "titolo": "ASL CN 1 - Portale dell'Azienda Sanitaria Locale: Home",
-   "sha": "830336d8fe5167984aef1ac075a2e6b5c443dbdd40e5434cb6f05e7725980656",
-   "caratteri": 13647,
-   "cambiata": false
+   "http": 0,
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "cuneo",
    "url": "https://www.aslcn1.it/assistenza-territoriale/servizi-territoriali-distrettuali/continuita-assistenziale-guardia-medica",
    "controllata": "2026-10-21",
-   "http": 200,
-   "file": "cuneo/9821d0bddcd7.txt",
-   "titolo": "ASL CN 1 - Portale dell'Azienda Sanitaria Locale: Continuità assistenziale - Guardia medica",
-   "sha": "13a15373154c3896551742a5d489195c254cd35b844e836f7454bf90ad382d25",
-   "caratteri": 10923,
-   "cambiata": false
+   "http": 0,
+   "errore": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received"
   },
   {
    "asl": "cuneo",
    "url": "https://www.aslcn1.it/assistenza-territoriale/assistenza-domiciliare",
    "controllata": "2026-10-21",
-   "http": 200,
-   "file": "cuneo/c5bf11299fb3.txt",
-   "titolo": "ASL CN 1 - Portale dell'Azienda Sanitaria Locale: ADI, ADP, ADI UOCP,",
-   "sha": "4b6c4c44fe016e0fa36c239a28a935899abb7d81099f046797c095e17fb3c74c",
-   "caratteri": 14767,
-   "cambiata": false
+   "http": 0,
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "cuneo",
@@ -237,12 +225,8 @@
    "asl": "cuneo",
    "url": "https://www.aslcn1.it/urp/ufficio-relazioni-con-il-pubblico",
    "controllata": "2026-10-21",
-   "http": 200,
-   "file": "cuneo/574949a733e9.txt",
-   "titolo": "ASL CN 1 - Portale dell'Azienda Sanitaria Locale: Ufficio Relazioni con il pubblico",
-   "sha": "d23f01d81fa73b3d68f84595677d0258ab33b830c551db670f1ed6a877550508",
-   "caratteri": 15158,
-   "cambiata": false
+   "http": 0,
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "cuneo",
@@ -285,7 +269,7 @@
    "certificato": "non valido",
    "file": "novara/42ffdf775f1d.txt",
    "titolo": "Continuità assistenziale (ex Guardia medica) | A.S.L. TO3",
-   "sha": "fdc0d7b06af0bc5dde92fc238aa90c3fabf6cf61f98dfe1b156de741f7adb854",
+   "sha": "541ad801aead1ba4eb0ee4faf73f389373dfefed897fe89d706c47874d6b9303",
    "caratteri": 3110,
    "cambiata": true
   },
@@ -331,7 +315,7 @@
    "titolo": "Azienda Sanitaria Locale \"Città di Torino\"",
    "sha": "717907348c15221288d1f29080eb64dbcee2a728ea24d297de4b8db01aece9b6",
    "caratteri": 9133,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -396,7 +380,7 @@
    "certificato": "non valido",
    "file": "torino/53d58dce5be6.txt",
    "titolo": "U.R.P. | A.S.L. TO3",
-   "sha": "18bd5f24daea5de31001d95624d1474d38f1127d00e8a6481760c4b9f7c644a1",
+   "sha": "c4a50c276c6e8ef8c4de8c169bec25d6d009a7c08a5d6e5a1ca2328ad465219b",
    "caratteri": 7182,
    "cambiata": true
   },
@@ -430,7 +414,7 @@
    "certificato": "non valido",
    "file": "torino/42ffdf775f1d.txt",
    "titolo": "Continuità assistenziale (ex Guardia medica) | A.S.L. TO3",
-   "sha": "fdc0d7b06af0bc5dde92fc238aa90c3fabf6cf61f98dfe1b156de741f7adb854",
+   "sha": "541ad801aead1ba4eb0ee4faf73f389373dfefed897fe89d706c47874d6b9303",
    "caratteri": 3110,
    "cambiata": true
   },
@@ -475,7 +459,7 @@
    "certificato": "non valido",
    "file": "torino/47f0299742b3.txt",
    "titolo": "Assistenza a domicilio | A.S.L. TO3",
-   "sha": "0b44c0d84f47e5a77be4950358ca633d9613339e361cc3dddd4e3289d87b40ab",
+   "sha": "da5e99abe593f6fe382a17ac86a79b02faddd7c8317d12016339e5c6b362efc1",
    "caratteri": 6250,
    "cambiata": true
   },
@@ -505,7 +489,8 @@
    "asl": "verbano-cusio-ossola",
    "url": "https://www.aslvco.it/",
    "controllata": "2026-10-21",
-   "http": 403
+   "http": 403,
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "verbano-cusio-ossola",
@@ -515,7 +500,7 @@
    "certificato": "non valido",
    "file": "verbano-cusio-ossola/42ffdf775f1d.txt",
    "titolo": "Continuità assistenziale (ex Guardia medica) | A.S.L. TO3",
-   "sha": "fdc0d7b06af0bc5dde92fc238aa90c3fabf6cf61f98dfe1b156de741f7adb854",
+   "sha": "541ad801aead1ba4eb0ee4faf73f389373dfefed897fe89d706c47874d6b9303",
    "caratteri": 3110,
    "cambiata": true
   },
@@ -595,6 +580,94 @@
    "sha": "c1dc04fabd57a81520ca7b3c8959121e086ac076d0b0b18601eb4ab570a571c3",
    "caratteri": 5838,
    "cambiata": false
+  },
+  {
+   "asl": "inps-piemonte",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.020000.020000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-piemonte/e8e14d7db11e.txt",
+   "titolo": "Portale Inps - Alessandria",
+   "sha": "943781acdb4e27134b817091a6d89ccc9b40a3f124d3a2e6de5c8a9bae043248",
+   "caratteri": 43708,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-piemonte",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.070000.070000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-piemonte/b2f1df4ac8b6.txt",
+   "titolo": "Portale Inps - Asti",
+   "sha": "5150e38068dc2068bba2c4d161bd139136a803e337f67e4aa30d028e61068af2",
+   "caratteri": 43832,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-piemonte",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.890100.890100-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-piemonte/f92ea6cf4e7d.txt",
+   "titolo": "Portale Inps - Biella",
+   "sha": "ea6e48cee386a431cea2199bc636130e4cb47c86b27b80ea2b6d76e9eb6b7ae0",
+   "caratteri": 43698,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-piemonte",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.270000.270000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-piemonte/64f608fceefc.txt",
+   "titolo": "Portale Inps - Cuneo",
+   "sha": "fc1b63f519ee8f6302e444a62640bee6790a603baa46952e67ecfdbee187794d",
+   "caratteri": 43319,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-piemonte",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.520000.520000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-piemonte/f63847ba4875.txt",
+   "titolo": "Portale Inps - Novara",
+   "sha": "498d1250e4adc137b8916424b95fc8e158079308f99c78b73fc065a1cb54048f",
+   "caratteri": 44021,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-piemonte",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.810000.810000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-piemonte/4140edbdb478.txt",
+   "titolo": "Portale Inps - Torino",
+   "sha": "c577b430ea864cace990094ba5fbc005cf1e44f20b4e5391363e697d73eb9c19",
+   "caratteri": 42509,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-piemonte",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.520100.520100-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-piemonte/85312275bc99.txt",
+   "titolo": "Portale Inps - Verbano-Cusio-Ossola",
+   "sha": "8e02b1aa488bd952ff63cc823db8134a498ed8851276ec2001658594c8ed43b9",
+   "caratteri": 43729,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-piemonte",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.890000.890000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-piemonte/31e1d8a334cb.txt",
+   "titolo": "Portale Inps - Vercelli",
+   "sha": "f935102838345f7dd2a6425a90d18409d14d13fba755b494eccbb7f2c76b1dda",
+   "caratteri": 43368,
+   "cambiata": true
   }
  ]
 }

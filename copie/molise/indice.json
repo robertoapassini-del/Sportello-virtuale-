@@ -1,6 +1,6 @@
 {
  "regione": "molise",
- "aggiornato": "2026-10-21T22:17:05.454Z",
+ "aggiornato": "2026-10-21T23:18:53.817Z",
  "pagine": [
   {
    "asl": "campobasso",
@@ -55,7 +55,7 @@
    "titolo": "URP – l’Ufficio relazioni con il pubblico di ASReM – Asrem",
    "sha": "319e10c1097ab33784efa8435ae1033f281ffd84a74bfb771eb8bd3637a01874",
    "caratteri": 13376,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "campobasso",
@@ -143,7 +143,7 @@
    "titolo": "URP – l’Ufficio relazioni con il pubblico di ASReM – Asrem",
    "sha": "319e10c1097ab33784efa8435ae1033f281ffd84a74bfb771eb8bd3637a01874",
    "caratteri": 13376,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "isernia",
@@ -155,6 +155,28 @@
    "sha": "42a54ef32f58f7a176bbe2c49f6dc420657a29045d400028d9067d42db0a9be1",
    "caratteri": 27051,
    "cambiata": false
+  },
+  {
+   "asl": "inps-molise",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.190000.190000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-molise/6e2ad1e8f959.txt",
+   "titolo": "Portale Inps - Campobasso",
+   "sha": "6ef1a68674585321a3a6e5355eb48f93ddc103001607c58be23c6b08d321b6ee",
+   "caratteri": 43560,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-molise",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.940000.940000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-molise/61c583b52205.txt",
+   "titolo": "Portale Inps - Isernia",
+   "sha": "ce0f4436889c59242a599961b5c88c5e59613ffa9a8e0b0a030f368b4fa0de7e",
+   "caratteri": 43516,
+   "cambiata": true
   }
  ]
 }

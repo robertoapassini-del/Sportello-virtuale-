@@ -1,6 +1,6 @@
 {
  "regione": "toscana",
- "aggiornato": "2026-10-21T22:30:54.804Z",
+ "aggiornato": "2026-10-21T23:35:47.564Z",
  "pagine": [
   {
    "asl": "arezzo",
@@ -97,9 +97,9 @@
    "http": 200,
    "file": "firenze/394d839724e9.txt",
    "titolo": "Guardia Medica",
-   "sha": "8c32474b91a7963457fab60bdb5855a75539bf5e913d543b17dce70ad98efaba",
+   "sha": "9ec7ef23bb66ad31092371a1b5f80435f729808d47bbca07612a81e31148b797",
    "caratteri": 1181,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "firenze",
@@ -438,9 +438,9 @@
    "http": 200,
    "file": "pistoia/394d839724e9.txt",
    "titolo": "Guardia Medica",
-   "sha": "8c32474b91a7963457fab60bdb5855a75539bf5e913d543b17dce70ad98efaba",
+   "sha": "9ec7ef23bb66ad31092371a1b5f80435f729808d47bbca07612a81e31148b797",
    "caratteri": 1181,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "pistoia",
@@ -493,9 +493,9 @@
    "http": 200,
    "file": "prato/394d839724e9.txt",
    "titolo": "Guardia Medica",
-   "sha": "8c32474b91a7963457fab60bdb5855a75539bf5e913d543b17dce70ad98efaba",
+   "sha": "9ec7ef23bb66ad31092371a1b5f80435f729808d47bbca07612a81e31148b797",
    "caratteri": 1181,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "prato",
@@ -595,6 +595,116 @@
    "sha": "bbfa5c6438e5c593dafacccad8fbc51432b9f904e1fef27d61695b12a29eb05d",
    "caratteri": 4614,
    "cambiata": false
+  },
+  {
+   "asl": "inps-toscana",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.050000.050000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-toscana/51776bd7bb1c.txt",
+   "titolo": "Portale Inps - Arezzo",
+   "sha": "290f5cbc4ea47395a16689fbbec91554e7bb676f8c3cde41f315324bcf2b4ad3",
+   "caratteri": 42965,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-toscana",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.300000.300000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-toscana/91f14325ae92.txt",
+   "titolo": "Portale Inps - Firenze",
+   "sha": "eefa9390a3980a30f64328cb99880060b54705fd3b2247ea68ed0f3221859f42",
+   "caratteri": 42651,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-toscana",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.360000.360000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-toscana/eaea4310950c.txt",
+   "titolo": "Portale Inps - Grosseto",
+   "sha": "528b98126bd1e7148360cd910613471be9de582435808bce4243612708a844fc",
+   "caratteri": 42767,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-toscana",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.420000.420000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-toscana/2a8cc2abb5e8.txt",
+   "titolo": "Portale Inps - Livorno",
+   "sha": "b15f7ecbe423a7337a7673cd0d416f65446debcf41ee24f542f98cd9c3582da6",
+   "caratteri": 42445,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-toscana",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.430000.430000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-toscana/f2cc4faac5d4.txt",
+   "titolo": "Portale Inps - Lucca",
+   "sha": "df4e188f3e81422618345ef4fc3d5d9685a64908b9b818921898a9b03577f364",
+   "caratteri": 42995,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-toscana",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.460000.460000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-toscana/0e459f35dc93.txt",
+   "titolo": "Portale Inps - Massa Carrara",
+   "sha": "39c4b043b0157671e1df690ee1dad8d30063848accd0bd3cd068433b130032d5",
+   "caratteri": 42440,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-toscana",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.620000.620000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-toscana/1b2539d0e346.txt",
+   "titolo": "Portale Inps - Pisa",
+   "sha": "318c70b8f7a95e5716be8575f51c363cc64332515485c8a0da8a9aa00d324055",
+   "caratteri": 42802,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-toscana",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.630000.630000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-toscana/ebd6b6a2e87b.txt",
+   "titolo": "Portale Inps - Pistoia",
+   "sha": "51d2a728eb4e5e3b3d001c9695e6ba4f8396929f3f8892d36c125a6ce6e2ce4c",
+   "caratteri": 42526,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-toscana",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.300100.300100-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-toscana/b07a2fbc70f0.txt",
+   "titolo": "Portale Inps - Prato",
+   "sha": "2ed40f97916cfdd11ea9f8841d6b61453c57187ae9c4e0f2a49ff003ddd40153",
+   "caratteri": 42481,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-toscana",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.750000.750000-elencoStruttureInps.html",
+   "controllata": "2026-10-21",
+   "http": 200,
+   "file": "inps-toscana/2b83365b734c.txt",
+   "titolo": "Portale Inps - Siena",
+   "sha": "245396ebfbe8d051983d91b83a3709a00ad7641c89e9c26ed961fa0d2580da7d",
+   "caratteri": 42769,
+   "cambiata": true
   }
  ]
 }
