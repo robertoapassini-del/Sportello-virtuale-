@@ -2,6 +2,13 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — Controllate quattro regole: ausili, esenzione, ricetta, screening
+- Ausili (`data/rules-ausili.json`, pagine `ausili/`, lettera di sollecito): il DPCM 12/01/2017 (art. 18) lascia alle Regioni il tempo per l'autorizzazione; i 20 giorni con silenzio-assenso (e il collaudo entro 20 giorni) ora sono indicati come regola della Sicilia (D.A. 20/12/2011 sul DM 332/1999). La lettera non attribuisce più i 20 giorni al DPCM. Fonte aggiunta: procedure dell'ASP Catania. Il testo del D.A. resta da leggere (DA-VERIFICARE-A-MANO.md).
+- Esenzione ticket per reddito: la scadenza del 31 marzo dell'anno dopo vale in tutta Italia (la scrivono ASL di regioni diverse), con proroghe decise da alcune Regioni. Fonti aggiunte: AUSL Piacenza, ASL Città di Torino.
+- Ricetta per visite ed esami: 180 giorni per prenotare, regola nazionale per le ricette dal 30/12/2024 (Gazzetta Ufficiale), salvo tempi più brevi della Regione; prima la pagina diceva «di solito fino a un anno». Nuovo campo `prescription_specialist_days` in `data/rules-fascicolo-e-ricetta.json`.
+- Screening: le età (mammografia 50-69, Pap test 25-29, HPV 30-64, colon 50-69) sono quelle nazionali dei LEA; alcune Regioni le allargano. Fonte aggiunta: ISS EpiCentro.
+- Tutte controllate con la ricerca web (estratti), perché da qui i siti italiani non si aprono.
+
 ## 21/10/2026 — Il sito parla a tutta Italia, non solo alla Sicilia
 - Guide: titoli, descrizioni e introduzioni valide in tutta Italia; «ASP» usato come nome generico diventa «ASL». Le cose solo siciliane (SovraCUP, ASPConTe, delibere della Regione, uffici delle ASP) restano, segnate «In Sicilia».
 - Chi sceglie una regione vede la sigla giusta (ASL, ATS, USL…) e «nel Lazio», «nelle Marche»; chi non ha ancora scelto vede testi generici.

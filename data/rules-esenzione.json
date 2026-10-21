@@ -40,6 +40,13 @@
       "proof": "estratto",
       "review_by": "2027-01-31"
     },
+    "valid_until": {
+      "url": "https://www.ausl.pc.it/it/come-fare-per/esenzioni-e-contributi/esenzioni/esenzioni-dal-pagamento-del-ticket",
+      "verified": "2026-10-21",
+      "proof": "estratto",
+      "review_by": "2027-01-31",
+      "nota": "31 marzo dell'anno dopo: lo scrivono ASL di regioni diverse (AUSL Piacenza, ASL Città di Torino, ASL3 Genovese, ASP Palermo), quindi regola nazionale (verifica annuale del DM 11/12/2009). Alcune Regioni prorogano (es. Piemonte per E01, E03, E04): il sito lo dice in generale. Controllato con la ricerca web, pagine non lette dall'Italia."
+    },
     "age_limits": {
       "url": "https://www.salute.gov.it/new/it/tema/esenzioni-dal-ticket/esenzioni-reddito/",
       "verified": "2026-10-18",
@@ -52,6 +59,8 @@
     { "label": "Ministero della Salute – Esenzioni per reddito (E01, E02, E03, E04)", "url": "https://www.salute.gov.it/new/it/tema/esenzioni-dal-ticket/esenzioni-reddito/" },
     { "label": "L. 537/1993, art. 8, comma 16 (esenzione per reddito)", "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1993-12-24;537" },
     { "label": "Sistema Tessera Sanitaria – esenzioni per reddito", "url": "https://sistemats1.sanita.finanze.it/portale/esenzioni-da-reddito-cittadini" },
+    { "label": "AUSL Piacenza – Esenzione ticket per reddito (validità fino al 31 marzo)", "url": "https://www.ausl.pc.it/it/come-fare-per/esenzioni-e-contributi/esenzioni/esenzioni-dal-pagamento-del-ticket" },
+    { "label": "ASL Città di Torino – Esenzione ticket per reddito", "url": "https://www.aslcittaditorino.it/prestazioni/esenzione-ticket-per-reddito/" },
     { "label": "Regione Siciliana – Assessorato della Salute", "url": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute" }
   ]
 }
