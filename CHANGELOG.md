@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — Molise: i numeri utili di Campobasso e Isernia
+- 34 numeri dell'ASReM (CUP-PASS, PUA, scelta del medico, URP), controllati nelle copie delle pagine ufficiali del 21/10/2026.
+- Guardia medica: 116117 in tutto il Molise dal 06/10/2026; Call Center Sanitario 800 639595 (da cellulare 0875 752626).
+- Sedi INPS di Campobasso e Isernia.
+
 ## 21/10/2026 — Trentino-Alto Adige: i numeri utili di Trento e Bolzano
 - 24 numeri di Asuit (Trento, ex APSS) e dell'Azienda sanitaria dell'Alto Adige, controllati nelle copie delle pagine ufficiali del 21/10/2026.
 - Trento: 116117 per la guardia medica, CUP 0461 379400, i PUA delle sedi. Bolzano: per ora solo il CUPP 100100 e pochi altri numeri (le pagine dell'azienda non si sono lasciate copiare).

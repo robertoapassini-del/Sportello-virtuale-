@@ -1,0 +1,447 @@
+{
+ "region": "Molise",
+ "model": "ASReM",
+ "_note": "Numeri dell'ASReM per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili. Il 116117 è attivo in tutto il Molise dal 06/10/2026; Call Center Sanitario regionale 800 639595 (da cellulare 0875 752626).",
+ "asl": [
+  {
+   "id": "campobasso",
+   "name": "ASReM – Azienda Sanitaria Regionale del Molise",
+   "site_url": "https://www.asrem.molise.it/",
+   "official_domains": [
+    "asrem.molise.it",
+    "asrem.org",
+    "regione.molise.it",
+    "fse.regione.molise.it"
+   ],
+   "guardia_medica_url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/22433",
+   "pua_url": "https://www.asrem.molise.it/servizi-per-il-cittadino/pua/",
+   "emails": [
+    "urp@asrem.org",
+    "cupmolise@asrem.org"
+   ],
+   "pec": "asrem@pec.it",
+   "province": "Campobasso",
+   "phones": [
+    {
+     "label": "Centralino ASReM – Azienda Sanitaria Regionale del Molise",
+     "number": "0874 4091",
+     "url": "https://www.asrem.molise.it/contatti/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale) in tutto il Molise: numero unico 116117, gratuito, per cure mediche non urgenti",
+     "number": "116117",
+     "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/22433",
+     "hours": "Tutti i giorni, 24 ore su 24",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP della Regione Molise (Call Center Sanitario): prenotare, spostare o annullare visite ed esami – da telefono fisso, numero verde gratuito",
+     "number": "800 639595",
+     "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/17990",
+     "hours": "Dal lunedì al venerdì 8–17",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP della Regione Molise (Call Center Sanitario): prenotare visite ed esami – da cellulare",
+     "number": "0875 752626",
+     "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/17990",
+     "hours": "Dal lunedì al venerdì 8–17",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASReM: ufficio per i cittadini, informazioni e reclami",
+     "number": "0874 409149",
+     "url": "https://www.asrem.molise.it/servizi-per-il-cittadino/urp/",
+     "address": "Presidio Ospedaliero «A. Cardarelli», Viale Luigi Montalbò, Campobasso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening oncologici gratuiti dell'ASReM (seno, collo dell'utero, colon-retto): informazioni",
+     "number": "0874 409160",
+     "url": "https://www.asrem.molise.it/",
+     "hours": "Dalle 10 alle 12",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP-PASS dell'ASReM a Campobasso (Via Ugo Petrella): sportello prenotazioni",
+     "number": "0874 409697",
+     "url": "https://www.asrem.molise.it/lazienda/i-distretti-socio-sanitari/distretto-socio-sanitario-di-campobasso/",
+     "hours": "Dal lunedì al venerdì 8–13.30 e 14–17.30; sabato chiuso",
+     "address": "Via Ugo Petrella 1, Campobasso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP-PASS dell'ASReM a Campobasso (Via Gramsci): sportello prenotazioni",
+     "number": "0874 481859",
+     "url": "https://www.asrem.molise.it/lazienda/i-distretti-socio-sanitari/distretto-socio-sanitario-di-campobasso/",
+     "hours": "Dal lunedì al venerdì 8.15–18; sabato 8.15–13",
+     "address": "Via Gramsci, Campobasso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP-PASS dell'ASReM a Bojano: sportello prenotazioni",
+     "number": "0874 752327",
+     "url": "https://www.asrem.molise.it/lazienda/i-distretti-socio-sanitari/distretto-socio-sanitario-di-campobasso/",
+     "hours": "Dal lunedì al venerdì 8–14; lunedì e mercoledì anche 14.30–17.30",
+     "address": "Via Colle Bellavista, Bojano",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP-PASS dell'ASReM a Trivento: sportello prenotazioni",
+     "number": "0874 872500",
+     "url": "https://www.asrem.molise.it/lazienda/i-distretti-socio-sanitari/distretto-socio-sanitario-di-campobasso/",
+     "hours": "Dal lunedì al venerdì 8.15–18; sabato 8.15–13",
+     "address": "Via Acquasantianni, Trivento",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP-PASS dell'ASReM a Termoli (Distretto di Termoli): sportello prenotazioni",
+     "number": "0875 717875",
+     "url": "https://www.asrem.molise.it/lazienda/i-distretti-socio-sanitari/distretto-socio-sanitario-di-termoli/i-contatti-del-distretto-di-termoli/",
+     "hours": "Dal lunedì al venerdì 8.15–12.30; lunedì e mercoledì anche 15–17",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP-PASS dell'ASReM a Larino (Distretto di Termoli): sportello prenotazioni",
+     "number": "0874 827389",
+     "url": "https://www.asrem.molise.it/lazienda/i-distretti-socio-sanitari/distretto-socio-sanitario-di-termoli/i-contatti-del-distretto-di-termoli/",
+     "hours": "Dal lunedì al venerdì 8–12.15; sabato 8–12",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASReM a Campobasso: cure domiciliari (ADI) e assistenza a casa",
+     "number": "0874 409790",
+     "url": "https://www.asrem.molise.it/servizi-per-il-cittadino/pua/",
+     "hours": "Risposta al telefono martedì e giovedì 12.45–13.30",
+     "address": "Via Ugo Petrella 1, Campobasso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASReM a Termoli: cure domiciliari (ADI) e assistenza a casa",
+     "number": "0875 717612",
+     "url": "https://www.asrem.molise.it/servizi-per-il-cittadino/pua/",
+     "hours": "Lunedì, martedì, giovedì e venerdì 9–12; mercoledì 15.30–16.30",
+     "address": "Via del Molinello 1, Termoli",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASReM a Larino: cure domiciliari (ADI) e assistenza a casa",
+     "number": "0874 827372",
+     "url": "https://www.asrem.molise.it/servizi-per-il-cittadino/pua/",
+     "hours": "Dal lunedì al venerdì 8.30–13",
+     "address": "Via Lualdi, Larino",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Scelta e revoca del medico – ASReM, Distretto di Termoli (sede di Termoli)",
+     "number": "0875 717635",
+     "url": "https://www.asrem.molise.it/lazienda/i-distretti-socio-sanitari/distretto-socio-sanitario-di-termoli/i-contatti-del-distretto-di-termoli/",
+     "hours": "Dal lunedì al venerdì 8.30–12; lunedì e mercoledì anche 15–16",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Scelta e revoca del medico – ASReM, Distretto di Termoli (sede di Larino)",
+     "number": "0874 827735",
+     "url": "https://www.asrem.molise.it/lazienda/i-distretti-socio-sanitari/distretto-socio-sanitario-di-termoli/i-contatti-del-distretto-di-termoli/",
+     "hours": "Lunedì, martedì e giovedì 9–12",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Segreteria del Distretto sanitario di Campobasso (ASReM)",
+     "number": "0874 409658",
+     "url": "https://www.asrem.molise.it/lazienda/i-distretti-socio-sanitari/distretto-socio-sanitario-di-campobasso/",
+     "address": "Via Petrella 1 (primo piano), Campobasso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Direzione del Distretto sanitario di Termoli (ASReM)",
+     "number": "0875 717622",
+     "url": "https://www.asrem.molise.it/lazienda/i-distretti-socio-sanitari/distretto-socio-sanitario-di-termoli/",
+     "hours": "Segreteria dal lunedì al venerdì 9–12",
+     "address": "Via del Molinello 1, Termoli",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASReM – Contatti",
+     "url": "https://www.asrem.molise.it/contatti/"
+    },
+    {
+     "label": "ASReM – URP",
+     "url": "https://www.asrem.molise.it/servizi-per-il-cittadino/urp/"
+    },
+    {
+     "label": "ASReM – PUA, Porta unica d’accesso",
+     "url": "https://www.asrem.molise.it/servizi-per-il-cittadino/pua/"
+    },
+    {
+     "label": "ASReM – Home (screening)",
+     "url": "https://www.asrem.molise.it/"
+    },
+    {
+     "label": "Regione Molise – 116117, cure mediche non urgenti",
+     "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/22433"
+    },
+    {
+     "label": "Regione Molise – Call Center Sanitario (CUP)",
+     "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/17990"
+    },
+    {
+     "label": "ASReM – Distretto di Campobasso",
+     "url": "https://www.asrem.molise.it/lazienda/i-distretti-socio-sanitari/distretto-socio-sanitario-di-campobasso/"
+    },
+    {
+     "label": "ASReM – Distretto di Termoli",
+     "url": "https://www.asrem.molise.it/lazienda/i-distretti-socio-sanitari/distretto-socio-sanitario-di-termoli/"
+    },
+    {
+     "label": "ASReM – Contatti del Distretto di Termoli",
+     "url": "https://www.asrem.molise.it/lazienda/i-distretti-socio-sanitari/distretto-socio-sanitario-di-termoli/i-contatti-del-distretto-di-termoli/"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "116117: la pagina della Regione Molise (IDPagina/22433) dice che dal 6 ottobre 2026 il 116117 è attivo in tutto il Molise, 24 ore su 24, e sostituisce tutti i numeri delle ex guardie mediche (centrale al Polo dell'Emergenza di Isernia, con la COCAP di medici di medicina generale). Per questo non ho messo i vecchi numeri locali di guardia medica.",
+    "CUP: il numero unico è il Call Center Sanitario regionale, 800 639 595 da fisso e 0875 75 26 26 da cellulare, lunedì–venerdì 8–17 (pagine Regione IDPagina/17990 e 780; la stessa cosa è in un articolo ASReM del 2021). Gli sportelli CUP-PASS dei distretti hanno anche numeri propri.",
+    "Mancano i numeri dei singoli ospedali (Ospedale «A. Cardarelli» di Campobasso, Ospedale di Termoli): nelle copie c'è solo il centralino unico ASReM 0874 4091.",
+    "La pagina CUP-PASS dell'ASReM contiene solo l'elenco dei medici di base del servizio PASS, nessun numero CUP: non usata.",
+    "Distretto di Campobasso: i numeri di scelta del medico ed esenzioni sono solo nella Carta dei servizi 2019 (PDF non copiato).",
+    "Provincia di Campobasso = Distretto di Campobasso + Distretto di Termoli (Termoli, Larino, Montenero, Castelmauro, Santa Croce di Magliano)."
+   ]
+  },
+  {
+   "id": "isernia",
+   "name": "ASReM – Azienda Sanitaria Regionale del Molise",
+   "site_url": "https://www.asrem.molise.it/",
+   "official_domains": [
+    "asrem.molise.it",
+    "asrem.org",
+    "regione.molise.it",
+    "fse.regione.molise.it"
+   ],
+   "guardia_medica_url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/22433",
+   "pua_url": "https://www.asrem.molise.it/servizi-per-il-cittadino/pua/",
+   "emails": [
+    "urp@asrem.org",
+    "cupmolise@asrem.org"
+   ],
+   "pec": "asrem@pec.it",
+   "province": "Isernia",
+   "phones": [
+    {
+     "label": "Centralino ASReM – Azienda Sanitaria Regionale del Molise",
+     "number": "0874 4091",
+     "url": "https://www.asrem.molise.it/contatti/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Distretto sanitario di Isernia (ASReM): sede di Isernia",
+     "number": "0865 4421",
+     "url": "https://www.asrem.molise.it/lazienda/i-distretti-socio-sanitari/distretto-socio-sanitario-di-isernia/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale) in tutto il Molise: numero unico 116117, gratuito, per cure mediche non urgenti",
+     "number": "116117",
+     "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/22433",
+     "hours": "Tutti i giorni, 24 ore su 24",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP della Regione Molise (Call Center Sanitario): prenotare, spostare o annullare visite ed esami – da telefono fisso, numero verde gratuito",
+     "number": "800 639595",
+     "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/17990",
+     "hours": "Dal lunedì al venerdì 8–17",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP della Regione Molise (Call Center Sanitario): prenotare visite ed esami – da cellulare",
+     "number": "0875 752626",
+     "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/17990",
+     "hours": "Dal lunedì al venerdì 8–17",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASReM: ufficio per i cittadini, informazioni e reclami",
+     "number": "0874 409149",
+     "url": "https://www.asrem.molise.it/servizi-per-il-cittadino/urp/",
+     "address": "Presidio Ospedaliero «A. Cardarelli», Viale Luigi Montalbò, Campobasso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening oncologici gratuiti dell'ASReM (seno, collo dell'utero, colon-retto): informazioni",
+     "number": "0874 409160",
+     "url": "https://www.asrem.molise.it/",
+     "hours": "Dalle 10 alle 12",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP-PASS dell'ASReM a Isernia (Distretto di Isernia): sportello prenotazioni",
+     "number": "0865 442582",
+     "url": "https://www.asrem.molise.it/lazienda/i-distretti-socio-sanitari/distretto-socio-sanitario-di-isernia/",
+     "hours": "Dal lunedì al venerdì 8.15–13.45 e 14.15–17.15; sabato chiuso (aperto in ospedale 8.15–11.45)",
+     "address": "Largo Cappuccini 1, Isernia",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASReM a Isernia: cure domiciliari (ADI) e assistenza agli anziani",
+     "number": "0865 442503",
+     "url": "https://www.asrem.molise.it/servizi-per-il-cittadino/pua/",
+     "hours": "Dal lunedì al venerdì 9–12.30; martedì e giovedì anche 15–16.30",
+     "address": "Largo Cappuccini 1, Isernia",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASReM a Venafro: cure domiciliari (ADI)",
+     "number": "0865 907702",
+     "url": "https://www.asrem.molise.it/servizi-per-il-cittadino/pua/",
+     "hours": "Dal lunedì al venerdì 8.30–12.30; martedì e giovedì anche 15–17",
+     "address": "Via Colonia Giulia 20, Venafro",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASReM ad Agnone: cure domiciliari (ADI)",
+     "number": "0865 722232",
+     "url": "https://www.asrem.molise.it/servizi-per-il-cittadino/pua/",
+     "hours": "Dal lunedì al venerdì 8.30–12.30; martedì e giovedì anche 15.30–17",
+     "address": "Via Marconi 22 (Ospedale Caracciolo, 1° piano), Agnone",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASReM a Frosolone: cure domiciliari (ADI)",
+     "number": "0865 722015",
+     "url": "https://www.asrem.molise.it/servizi-per-il-cittadino/pua/",
+     "hours": "Dal lunedì al venerdì 8.30–12.30; martedì e giovedì anche 14.30–16.30",
+     "address": "C.da Sant'Anna 22 (Casa della Comunità), Frosolone",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Scelta e revoca del medico – ASReM, Distretto di Isernia",
+     "number": "0865 442585",
+     "url": "https://www.asrem.molise.it/lazienda/i-distretti-socio-sanitari/distretto-socio-sanitario-di-isernia/",
+     "hours": "Lunedì, mercoledì e venerdì 9–12.30; martedì 9–12.30 e 15–17; giovedì chiuso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Esenzione ticket per reddito – ASReM, Distretto di Isernia",
+     "number": "0865 442584",
+     "url": "https://www.asrem.molise.it/lazienda/i-distretti-socio-sanitari/distretto-socio-sanitario-di-isernia/",
+     "hours": "Lunedì, mercoledì e venerdì 9.30–12.30; martedì 9.30–12.30 e 15–17; giovedì chiuso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "protesica",
+     "label": "Assistenza protesica (protesi e ausili) – ASReM, Distretto di Isernia",
+     "number": "0865 442581",
+     "url": "https://www.asrem.molise.it/lazienda/i-distretti-socio-sanitari/distretto-socio-sanitario-di-isernia/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASReM – Contatti",
+     "url": "https://www.asrem.molise.it/contatti/"
+    },
+    {
+     "label": "ASReM – URP",
+     "url": "https://www.asrem.molise.it/servizi-per-il-cittadino/urp/"
+    },
+    {
+     "label": "ASReM – PUA, Porta unica d’accesso",
+     "url": "https://www.asrem.molise.it/servizi-per-il-cittadino/pua/"
+    },
+    {
+     "label": "ASReM – Home (screening)",
+     "url": "https://www.asrem.molise.it/"
+    },
+    {
+     "label": "Regione Molise – 116117, cure mediche non urgenti",
+     "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/22433"
+    },
+    {
+     "label": "Regione Molise – Call Center Sanitario (CUP)",
+     "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/17990"
+    },
+    {
+     "label": "ASReM – Distretto di Isernia",
+     "url": "https://www.asrem.molise.it/lazienda/i-distretti-socio-sanitari/distretto-socio-sanitario-di-isernia/"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "Mancano i numeri dei singoli ospedali (Ospedale di Isernia, Ospedale Caracciolo di Agnone): nelle copie c'è solo il centralino unico ASReM 0874 4091.",
+    "Le sedi di guardia medica Isernia–Venafro–Agnone sono solo citate, senza numeri; comunque dal 6 ottobre 2026 vale il 116117."
+   ]
+  }
+ ]
+}

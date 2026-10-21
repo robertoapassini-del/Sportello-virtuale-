@@ -12,7 +12,7 @@
     { "id": "liguria", "name": "Liguria", "attiva": true, "asl_label": "ATS", "moduli": ["numeri-utili"] },
     { "id": "lombardia", "name": "Lombardia", "attiva": true, "asl_label": "ATS", "moduli": ["numeri-utili"] },
     { "id": "marche", "name": "Marche", "in": "nelle Marche", "attiva": false, "asl_label": "AST" },
-    { "id": "molise", "name": "Molise", "attiva": false, "asl_label": "ASREM" },
+    { "id": "molise", "name": "Molise", "attiva": true, "asl_label": "ASREM", "moduli": ["numeri-utili"] },
     { "id": "piemonte", "name": "Piemonte", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili"] },
     { "id": "puglia", "name": "Puglia", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili"] },
     { "id": "sardegna", "name": "Sardegna", "attiva": false, "asl_label": "ASL" },
