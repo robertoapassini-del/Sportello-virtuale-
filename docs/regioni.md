@@ -180,6 +180,13 @@ di aziende sanitarie. Lo facciamo in tre pezzi, ognuno con un compito solo:
    indirizzo, codice HTTP, titolo, impronta del testo, se è cambiata). Niente AI qui: è uno script semplice.
    Si presenta con nome e sito nel `User-Agent`, una pagina alla volta, una pausa tra una pagina e l'altra, mai
    portali di prenotazione, login o CAPTCHA. Se un'ASL chiede di smettere, si toglie dalla lista.
+   **Copia a richiesta, senza aspettare la notte:** `tools/copie-se-serve.sh` gira sul server ogni 15 minuti.
+   Se in `main` sono cambiati `data/regioni/`, `tools/copie.mjs` o `tools/copie-richiesta.txt`, rifà subito
+   la copia con lo stesso comando della notte; altrimenti esce senza fare niente. Basta quindi unire una pull
+   request: nessuno deve entrare nel server. Per forzare una copia si cambia `tools/copie-richiesta.txt`.
+   Si installa una volta, con una riga in `crontab -e` sul server:
+   `*/15 * * * * /opt/guidasanita/tools/copie-se-serve.sh "<comando delle 3:30>" >> /opt/guidasanita/copie-se-serve.log 2>&1`.
+   La prima volta che gira fa subito una copia; non parte se un'altra copia è già in corso.
 2. **Claude confronta e propone.** Una routine settimanale di Claude Code (cloud, inclusa nell'abbonamento) legge
    le copie, le confronta con `data/regioni/<regione>/*.json` e apre una pull request: per ogni numero trovato
    nella pagina ufficiale aggiorna `verified` e `proof: "pagina"`; per ogni numero non trovato, pagina rotta
