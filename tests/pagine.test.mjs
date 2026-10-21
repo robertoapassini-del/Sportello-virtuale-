@@ -99,7 +99,7 @@ const SIGLE = [
   ['SAD', /servizio di assistenza domiciliare/i],
 ];
 // Pagine che un altro lavoro sta riscrivendo: da togliere appena hanno la spiegazione.
-const SIGLE_DA_FARE = { 'cartella-clinica/ritardo/index.html': ['PEC', 'TAR'] };
+const SIGLE_DA_FARE = {};
 test('ogni sigla (PEC, ISEE, CUP, TAR, PUA, SAD) è spiegata nella pagina dove compare', () => {
   const pagine = read('sitemap.xml').match(/<loc>(.*?)<\/loc>/g)
     .map((x) => x.slice(5, -6).replace('https://guidasanita.it/', '')).map((u) => (u === '' || u.endsWith('/') ? `${u}index.html` : u));

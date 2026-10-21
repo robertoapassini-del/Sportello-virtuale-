@@ -92,7 +92,7 @@ const warnings = () => `
   <div class="card">
     <h2 style="margin-top:0">❗ Importante</h2>
     <ul class="icon-list">
-      <li><span class="ico" aria-hidden="true">💶</span> Non andare dal privato a pagamento prima di mandare la richiesta, e poi solo se l'${aslLabel()} te lo scrive. Potresti non avere i soldi indietro.</li>
+      <li><span class="ico" aria-hidden="true">💶</span> Vai dal privato a pagamento solo se l'${aslLabel()} te lo scrive: altrimenti potresti non avere i soldi indietro.</li>
       <li><span class="ico" aria-hidden="true">🧾</span> Conserva il foglio della prenotazione.</li>
       <li><span class="ico" aria-hidden="true">📅</span> Non perdere l'appuntamento che hai già. Se non ci vai, disdicilo: altrimenti potresti pagare il ticket.</li>
     </ul>

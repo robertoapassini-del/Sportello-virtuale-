@@ -62,11 +62,11 @@ const ERRORI = [
   // Audit dei testi del 21/10/2026 (sera).
   [/"number": "800 \d{3} \d{3}"/, 'numeri verdi: «800 123456» (docs/regola-numeri.md)'],
   [/circa \d{4,}\b|circa \$\{rules\.max_patients/, 'migliaia con il punto: «circa 1.500»'],
-  [/[Ii]l conto in questa guida/, '«Il percorso in questa guida»: il modulo non è solo un conto', null, ['cartella-clinica/ritardo/index.html']],
+  [/[Ii]l conto in questa guida/, '«Il percorso in questa guida»: il modulo non è solo un conto'],
   [/\(Punto Unico di Accesso\)|\bpap test\b/, '«(Punto unico di accesso)», «Pap test»', /"keywords"/],
   [/\bad (?=[EIOU][a-z])|\b([Uu]na|[Dd]ella|[Nn]ella|[Aa]lla|[Dd]alla|[Ll]a) équipe\b/, "«a Enna» («ad» solo davanti alla A), «un'équipe», «dell'équipe»"],
   [/\b([Gg]uarda|vale la pagina) <a [^>]*>(la visita è|il verbale è|la visita per l.invalidità non)/, 'il titolo di una pagina non va dentro la frase come link: «Leggi cosa fare se …»'],
-  [/Non andare dal privato a pagamento prima di/, "liste d'attesa: «Vai dal privato a pagamento solo se l'ASL te lo scrive»", null, ['js/liste-attesa.js']],
+  [/Non andare dal privato a pagamento prima di/, "liste d'attesa: «Vai dal privato a pagamento solo se l'ASL te lo scrive»"],
   [/"title": "(Non mi danno|Ho diritto|[^"]*l'ho persa|[^"]*posso fare)/, "titoli in data/moduli.json come l'h1 della pagina: si dà del tu («Non ti danno», «l'hai persa»)"],
 ];
 

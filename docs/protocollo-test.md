@@ -59,3 +59,7 @@ tutti i controlli verdi.
 - 21/10/2026 — `tools/confronta-copie.mjs` e il job «copie» nella CI: un audit sulle copie delle pagine ufficiali ha trovato
   in Sicilia PEC e indirizzi di invio sbagliati (Trapani, Agrigento, Siracusa), orari incompleti o di un altro ufficio e
   14 numeri con un url che non li conteneva.
+- 21/10/2026 — audit dei testi: in `pagine.test.mjs` le sigle (PEC, ISEE, CUP, TAR, PUA, SAD) spiegate nella pagina dove
+  compaiono; in `browser.cjs` il riquadro «Chi può aiutarti» delle pagine delle aree dice «ASP» in Sicilia; in
+  `errori-noti.test.mjs` «della ASL», numeri verdi con lo spazio in mezzo, migliaia senza punto, titoli di pagina come
+  link dentro la frase, «ad Enna», «una équipe», titoli di `moduli.json` diversi dall'h1.
