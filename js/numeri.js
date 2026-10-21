@@ -33,9 +33,10 @@ const link = (l) => `<div class="card num">
     <p>${ext(l.url, l.url_label)}</p>
   </div>`;
 
-// Contatti dell'azienda sanitaria divisi per argomento (campo contacts, topic).
-const TOPICS = [
-  ['guardia', '🩺 Guardia medica', "Di solito risponde la sera dalle 20 alle 8, nei fine settimana e nei giorni di festa. Ogni zona ha il suo numero: se il tuo non c'è, guarda l'elenco sul sito dell'ASP."],
+// Contatti dell'azienda sanitaria divisi per argomento (campo contacts, topic). È una funzione
+// perché i testi usano la sigla dell'azienda sanitaria della regione scelta.
+const topics = () => [
+  ['guardia', '🩺 Guardia medica', `Di solito risponde la sera dalle 20 alle 8, nei fine settimana e nei giorni di festa. Ogni zona ha il suo numero: se il tuo non c'è, guarda l'elenco sul sito dell'${aslLabel()}.`],
   ['cup', '📅 Prenotare visite ed esami (CUP)', 'Tieni pronta la ricetta e la tessera sanitaria.'],
   ['urp', '🏥 Ufficio per i cittadini (URP)', 'Per reclami, informazioni e quando non sai a chi chiedere.'],
   ['casa', '🏠 Infermiere e cure a casa (PUA)', "Il PUA è lo sportello del distretto per l'assistenza a casa. Chiama quello del tuo comune."],
@@ -69,7 +70,7 @@ function aspBlock(a) {
   const contacts = a.contacts || [];
   return `<section id="asp-numeri" aria-labelledby="asp-title">
     <h2 id="asp-title">📍 ${esc(a.name)}</h2>
-    ${TOPICS.map(([t, title, tip]) => {
+    ${topics().map(([t, title, tip]) => {
       const list = contacts.filter((c) => c.topic === t);
       if (!list.length && t !== 'guardia') return '';
       return `<h3>${title}</h3>

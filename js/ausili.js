@@ -5,7 +5,7 @@
 import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween, art } from './engine.js';
 import { ausiliReminder, mailtoHref } from './letters.js';
 import { noPecBox,
-  esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, officeBox, personFields, reportErrorHref, generalContact,
+  esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, officeBox, personFields, reportErrorHref, generalContact, aslLabel, aslIntestazione,
 } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
 
@@ -28,15 +28,15 @@ function sources() {
     if (a.info_url) items.push({ label: `${a.name} – sito ufficiale`, url: a.info_url });
     items.push(...a.sources);
   }
-  return [items, { verified: rules.last_verified, note: a && !(a.contacts || []).some((c) => c.topic === 'protesica') ? 'I contatti degli uffici protesica di questa ASP non sono ancora confermati.' : '' }];
+  return [items, { verified: rules.last_verified, note: a && !(a.contacts || []).some((c) => c.topic === 'protesica') ? `I contatti degli uffici protesica di questa ${aslLabel()} non sono ancora confermati.` : '' }];
 }
 
 const steps = () => `
   <h2>Come funziona</h2>
   <ol class="big-steps">
     <li><strong>La prescrizione.</strong> La scrive ${esc(rules.who_prescribes)}. Di solito serve avere l'invalidità riconosciuta, o la domanda già fatta.</li>
-    <li><strong>La domanda all'ASP.</strong> Porti la prescrizione all'ufficio «assistenza protesica» del tuo distretto. Chiedi una ricevuta con la data.</li>
-    <li><strong>L'autorizzazione.</strong> L'ASP deve rispondere entro <strong>${rules.authorization_days} giorni</strong>. Se non risponde, vale come un sì.</li>
+    <li><strong>La domanda all'${aslLabel()}.</strong> Porti la prescrizione all'ufficio «assistenza protesica» del tuo distretto. Chiedi una ricevuta con la data.</li>
+    <li><strong>L'autorizzazione.</strong> L'${aslLabel()} deve rispondere entro <strong>${rules.authorization_days} giorni</strong>. Se non risponde, vale come un sì.</li>
     <li><strong>La consegna.</strong> Un fornitore convenzionato ti porta l'ausilio. Poi il medico lo controlla (si chiama collaudo).</li>
   </ol>`;
 
@@ -59,8 +59,8 @@ const screens = {
     html: `${progress(2, 3)}
       <h1>A che punto sei?</h1>
       ${choice('📄', 'Non ho ancora la prescrizione', { stage: 'none' }, 'howto', 'Non so da dove cominciare')}
-      ${choice('🧾', 'Ho fatto la domanda all\'ASP e aspetto la risposta', { stage: 'requested' }, 'date')}
-      ${choice('✅', 'L\'ASP ha detto sì, ma l\'ausilio non arriva', { stage: 'authorized' }, 'delivery')}`,
+      ${choice('🧾', `Ho fatto la domanda all'${aslLabel()} e aspetto la risposta`, { stage: 'requested' }, 'date')}
+      ${choice('✅', `L'${aslLabel()} ha detto sì, ma l'ausilio non arriva`, { stage: 'authorized' }, 'delivery')}`,
   }),
 
   howto: () => ({
@@ -68,16 +68,16 @@ const screens = {
       <div class="hero" aria-hidden="true">🩺</div>
       <h1>Si parte dallo specialista</h1>
       ${steps()}
-      <div class="notice info"><p>Il medico di famiglia può darti l'impegnativa per la visita dallo specialista.${(asp().contacts || []).some((c) => c.topic === 'protesica') ? '' : " Un patronato o l'URP dell'ASP ti dicono dov'è l'ufficio protesica del tuo distretto."}</p></div>
+      <div class="notice info"><p>Il medico di famiglia può darti l'impegnativa per la visita dallo specialista.${(asp().contacts || []).some((c) => c.topic === 'protesica') ? '' : ` Un patronato o l'URP dell'${aslLabel()} ti dicono dov'è l'ufficio protesica del tuo distretto.`}</p></div>
       ${protesica(asp())}
-      <p>Quando hai la ricevuta della domanda, torna qui: ti diciamo entro quando l'ASP deve rispondere.</p>
+      <p>Quando hai la ricevuta della domanda, torna qui: ti diciamo entro quando l'${aslLabel()} deve rispondere.</p>
       ${disclaimer(rules.last_verified)}
       ${restartBtn()}`,
   }),
 
   date: () => ({
     html: `${progress(3, 3)}
-      <h1>🧾 Che giorno hai fatto la domanda all'ASP?</h1>
+      <h1>🧾 Che giorno hai fatto la domanda all'${aslLabel()}?</h1>
       <p>È scritto sulla ricevuta.</p>
       ${dateForm({ id: 'req-form', name: 'requestDate', label: 'Giorno della domanda', value: state.requestDate, button: '✔️ Controlla', max: todayISO() })}`,
     mount() {
@@ -102,7 +102,7 @@ const screens = {
           <div class="hero" aria-hidden="true">⏳</div>
           <h1>Non è ancora tardi</h1>
           <div class="notice ok">
-            <p>L'ASP deve rispondere entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong> (${rules.authorization_days} giorni dalla domanda).</p>
+            <p>L'${aslLabel()} deve rispondere entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong> (${rules.authorization_days} giorni dalla domanda).</p>
             <p>Se a quella data non hai notizie, torna qui.</p>
           </div>
           ${disclaimer(rules.last_verified)}
@@ -114,14 +114,14 @@ const screens = {
         <div class="hero" aria-hidden="true">⚠️</div>
         <h1>I ${rules.authorization_days} giorni sono passati: l'autorizzazione vale lo stesso</h1>
         <div class="notice bad">
-          <p>L'ASP doveva rispondere entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>. Sono passati <strong>${days(d.daysLate)} in più</strong>.</p>
-          <p>Per la legge, se l'ASP non risponde in tempo <strong>l'autorizzazione si considera data</strong>. Ora deve partire la consegna.</p>
+          <p>L'${aslLabel()} doveva rispondere entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>. Sono passati <strong>${days(d.daysLate)} in più</strong>.</p>
+          <p>Per la legge, se l'${aslLabel()} non risponde in tempo <strong>l'autorizzazione si considera data</strong>. Ora deve partire la consegna.</p>
         </div>
         <h2>Cosa fare, in ordine</h2>
         <ol class="big-steps">
           <li><strong>Telefona o vai all'ufficio protesica</strong> con la ricevuta. Di' che i ${rules.authorization_days} giorni sono passati.</li>
-          <li><strong>Manda una lettera di sollecito</strong> all'ASP. La scriviamo insieme.</li>
-          <li><strong>Se ancora niente:</strong> reclamo all'URP dell'ASP di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''},
+          <li><strong>Manda una lettera di sollecito</strong> all'${aslLabel()}. La scriviamo insieme.</li>
+          <li><strong>Se ancora niente:</strong> reclamo all'URP dell'${aslLabel()} di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''},
             un patronato, oppure Cittadinanzattiva (<a href="https://www.cittadinanzattiva.it" target="_blank" rel="noopener">cittadinanzattiva.it</a>).</li>
         </ol>
         ${protesica(a) || aspCalls(a)}
@@ -136,12 +136,12 @@ const screens = {
       html: `
         <div class="hero" aria-hidden="true">🚚</div>
         <h1>Autorizzato ma non consegnato</h1>
-        <p>I tempi di consegna li fissa l'ASP nel contratto con il fornitore: non c'è un numero di giorni uguale per tutti.</p>
+        <p>I tempi di consegna li fissa l'${aslLabel()} nel contratto con il fornitore: non c'è un numero di giorni uguale per tutti.</p>
         <h2>Cosa fare, in ordine</h2>
         <ol class="big-steps">
           <li><strong>Chiama il fornitore</strong> scritto sull'autorizzazione e chiedi la data di consegna.</li>
-          <li><strong>Chiama l'ufficio protesica dell'ASP</strong> e chiedi quanti giorni ha il fornitore per consegnare.</li>
-          <li><strong>Se il tempo è passato:</strong> reclamo scritto all'ASP (URP${generalContact(a) ? `: ${mailLink(generalContact(a))}` : ''}). Un patronato può aiutarti.</li>
+          <li><strong>Chiama l'ufficio protesica dell'${aslLabel()}</strong> e chiedi quanti giorni ha il fornitore per consegnare.</li>
+          <li><strong>Se il tempo è passato:</strong> reclamo scritto all'${aslLabel()} (URP${generalContact(a) ? `: ${mailLink(generalContact(a))}` : ''}). Un patronato può aiutarti.</li>
         </ol>
         <div class="notice info"><p>Quando l'ausilio arriva, il medico deve controllarlo (collaudo) entro ${rules.collaudo_days} giorni. Se non va bene, può essere sostituito.</p></div>
         ${protesica(a) || aspCalls(a)}
@@ -156,7 +156,7 @@ const screens = {
     return {
       html: `
         <h1>✍️ Scriviamo il sollecito insieme</h1>
-        <p>Scrivi i dati qui sotto. Noi li mettiamo nella lettera per l'ASP di ${esc(a.province)}.</p>
+        <p>Scrivi i dati qui sotto. Noi li mettiamo nella lettera per l'${aslLabel()} di ${esc(a.province)}.</p>
         <div class="notice info">
           <p>🔒 I dati restano sul tuo telefono. Noi non li vediamo. Non chiediamo la malattia.</p>
           <p>Non sai qualcosa? Lascia vuoto. Dopo aver stampato, lo scrivi a penna.</p>
@@ -200,6 +200,7 @@ const screens = {
           form.querySelector('.delegate-fields').hidden = !person.isDelegate;
           document.querySelectorAll('.delegate-note').forEach((li) => { li.hidden = !person.isDelegate; });
           const text = ausiliReminder({
+            ente: aslIntestazione(),
             aspName: a.province, address: to, person, device: state.device, requestDate: state.requestDate,
             protocol: state.protocol, prescriber: state.prescriber, deadline: deadline().deadline, days: rules.authorization_days, today: todayISO(),
           });
@@ -209,8 +210,8 @@ const screens = {
             `Sollecito autorizzazione ausilio${state.device ? ` – ${state.device}` : ''}${person.fullName ? ` – ${person.fullName}` : ''}`,
             `Buongiorno,\nin allegato il sollecito firmato, con i documenti.\n\nCordiali saluti\n${person.fullName || ''}`);
           document.getElementById('send-hint').innerHTML = to
-            ? `📨 L'indirizzo dell'ASP è una PEC (${esc(to)}). <strong>Se non hai la PEC, stampa la lettera e consegnala all'ufficio protesica o all'URP</strong>, facendoti dare una ricevuta.`
-            : '🏥 <strong>Stampa la lettera e consegnala all\'ufficio protesica o all\'URP dell\'ASP.</strong> Fatti dare una ricevuta con la data.';
+            ? `📨 L'indirizzo dell'${aslLabel()} è una PEC (${esc(to)}). <strong>Se non hai la PEC, stampa la lettera e consegnala all'ufficio protesica o all'URP</strong>, facendoti dare una ricevuta.`
+            : `🏥 <strong>Stampa la lettera e consegnala all'ufficio protesica o all'URP dell'${aslLabel()}.</strong> Fatti dare una ricevuta con la data.`;
         };
         form.addEventListener('input', update);
         form.addEventListener('change', update);

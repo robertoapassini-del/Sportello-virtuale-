@@ -20,7 +20,7 @@ function signature(p, today) {
 }
 
 // Modulo 1 — richiesta di attivazione del percorso di tutela (SPEC sezione 7).
-export function tutelaLetter({ aspName, aspAddress, person: p, service, nre, cls, maxDays, bookingDate, appointmentDate, noDateOffered, requestDate, today }) {
+export function tutelaLetter({ ente = 'Azienda Sanitaria Provinciale', aspName, aspAddress, person: p, service, nre, cls, maxDays, bookingDate, appointmentDate, noDateOffered, requestDate, today }) {
   const booking = noDateOffered
     ? `- in data ${requestDate ? formatIt(requestDate) : '__________'} ha richiesto la prenotazione tramite i canali ufficiali e non gli/le è
   stata proposta alcuna data, né è stato/a ricontattato/a entro il termine previsto;`
@@ -28,7 +28,7 @@ export function tutelaLetter({ aspName, aspAddress, person: p, service, nre, cls
   disponibilità proposta è ${art('il', appointmentDate)}${formatIt(appointmentDate)}, oltre il tempo massimo previsto;`;
   const attach = 'copia del documento di identità; ricetta; foglio/promemoria di prenotazione' +
     (p.isDelegate ? '; delega e documento del delegato' : '');
-  return `Spett.le Azienda Sanitaria Provinciale di ${aspName}
+  return `Spett.le ${ente} di ${aspName}
 ${aspAddress || ''}
 
 Oggetto: Richiesta di attivazione del percorso di tutela per prestazione di primo accesso
@@ -55,8 +55,8 @@ ${signature(p, today)}
 }
 
 // Modulo 1 — sollecito se l'ASP non risponde.
-export function tutelaReminder({ aspName, aspAddress, person: p, service, nre, cls, firstRequestDate, today }) {
-  return `Spett.le Azienda Sanitaria Provinciale di ${aspName}
+export function tutelaReminder({ ente = 'Azienda Sanitaria Provinciale', aspName, aspAddress, person: p, service, nre, cls, firstRequestDate, today }) {
+  return `Spett.le ${ente} di ${aspName}
 ${aspAddress || ''}
 
 Oggetto: SOLLECITO – Richiesta di attivazione del percorso di tutela ${art('del', firstRequestDate)}${firstRequestDate ? formatIt(firstRequestDate) : '__________'}
@@ -148,8 +148,8 @@ ${signature(p, today)}
 }
 
 // Modulo 4 — sollecito all'ASP per l'autorizzazione di un ausilio o di una protesi.
-export function ausiliReminder({ aspName, address, person: p, device, requestDate, protocol, prescriber, deadline, days = 20, today }) {
-  return `Spett.le Azienda Sanitaria Provinciale di ${aspName}
+export function ausiliReminder({ ente = 'Azienda Sanitaria Provinciale', aspName, address, person: p, device, requestDate, protocol, prescriber, deadline, days = 20, today }) {
+  return `Spett.le ${ente} di ${aspName}
 Ufficio Assistenza Protesica
 ${address || ''}
 

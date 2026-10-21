@@ -4,7 +4,7 @@
 // Calcolo con regole fisse nazionali (codici E01-E04). Nessuna lettera.
 // Non chiediamo la malattia: le esenzioni per malattia le mostriamo solo come informazione.
 import { esenzioneReddito, formatEuro } from './engine.js';
-import { esc, loadJSON, disclaimer, renderFooter, readForm } from './common.js';
+import { esc, loadJSON, disclaimer, renderFooter, readForm, aslLabel } from './common.js';
 import { createFlow, choice, restartBtn, progress } from './flow.js';
 
 const ROOT = '../';
@@ -22,7 +22,7 @@ const howToGet = () => `
   <h2>Come si ottiene</h2>
   <ol class="big-steps">
     <li><strong>Chiedi al medico di famiglia.</strong> Spesso l'esenzione per reddito è già nel suo computer: la mette sulla ricetta e non devi fare niente.</li>
-    <li><strong>Se non c'è, vai allo sportello esenzioni dell'ASP</strong> (nel distretto o al CUP) con tessera sanitaria e carta d'identità. Firmi un foglio in cui dichiari il reddito (autocertificazione). È gratis. <a href="../numeri-utili/">📍 Dov'è lo sportello nella tua provincia</a></li>
+    <li><strong>Se non c'è, vai allo sportello esenzioni dell'${aslLabel()}</strong> (nel distretto o al CUP) con tessera sanitaria e carta d'identità. Firmi un foglio in cui dichiari il reddito (autocertificazione). È gratis. <a href="../numeri-utili/">📍 Dov'è lo sportello nella tua provincia</a></li>
     <li><strong>Quando prenoti, di' che hai l'esenzione.</strong> Deve essere scritta sulla ricetta, altrimenti il ticket lo paghi.</li>
   </ol>
   <div class="notice warn"><p>⚠️ L'esenzione vale fino al <strong>${esc(rules.valid_until)}</strong>. Poi va controllata di nuovo. Se dichiari un reddito falso, devi restituire i soldi e paghi una multa.</p></div>`;
@@ -30,7 +30,7 @@ const howToGet = () => `
 const otherExemptions = () => `
   <details class="card">
     <summary>Altre esenzioni: invalidità, malattie, gravidanza</summary>
-    <p>Queste non dipendono dal reddito. Chiedi al medico di famiglia o allo sportello esenzioni dell'ASP.</p>
+    <p>Queste non dipendono dal reddito. Chiedi al medico di famiglia o allo sportello esenzioni dell'${aslLabel()}.</p>
     <ul class="clean">${rules.other_exemptions.map((o) => `<li><strong>${esc(o.code)}</strong> – ${esc(o.text)}</li>`).join('')}</ul>
   </details>`;
 
@@ -160,7 +160,7 @@ const screens = {
         <div class="notice warn"><p>Con i dati che hai scritto (${esc(ageText[state.ageBand])}), ${esc(why.join('; '))}.</p></div>
         <p>Ma potresti non pagare per <strong>altri motivi</strong>: una malattia cronica, un'invalidità, la gravidanza, gli esami di prevenzione. Guarda qui sotto.</p>
         ${otherExemptions()}
-        <div class="notice info"><p>Se la situazione è cambiata (per esempio hai perso il lavoro quest'anno), chiedi allo sportello esenzioni dell'ASP: in alcuni casi conta la situazione di adesso.</p></div>
+        <div class="notice info"><p>Se la situazione è cambiata (per esempio hai perso il lavoro quest'anno), chiedi allo sportello esenzioni dell'${aslLabel()}: in alcuni casi conta la situazione di adesso.</p></div>
         ${disclaimer(rules.last_verified)}
         ${restartBtn()}`,
     };

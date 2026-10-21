@@ -6,7 +6,7 @@
 import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
 import { cartellaReminder, mailtoHref } from './letters.js';
 import { noPecBox,
-  esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, officeBox, personFields, reportErrorHref, generalContact,
+  esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, officeBox, personFields, reportErrorHref, generalContact, aslLabel, regioneInfo, regioneLink, regione,
 } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
 
@@ -37,7 +37,7 @@ function sources() {
 const howToAsk = () => `
   <h2>Come si chiede</h2>
   <ol class="big-steps">
-    <li><strong>Prima guarda nel Fascicolo Sanitario Elettronico</strong> (FSE): molti referti si scaricano già lì, gratis, con SPID, CIE o CNS. <a href="https://www.regione.sicilia.it/fascicolosanitario" target="_blank" rel="noopener">💻 Fascicolo Sanitario della Regione Siciliana</a></li>
+    <li><strong>Prima guarda nel Fascicolo Sanitario Elettronico</strong> (FSE): molti referti si scaricano già lì, gratis, con SPID, CIE o CNS. ${regioneLink('fse') ? `<a href="${esc(regioneLink('fse'))}" target="_blank" rel="noopener">💻 Fascicolo Sanitario della ${esc(regioneInfo().ente || 'tua Regione')}</a>` : ''}</li>
     <li><strong>Vai all'ufficio cartelle cliniche</strong> dell'ospedale (a volte si chiama «Direzione sanitaria» o «Archivio»). Oppure all'URP. Molti ospedali hanno anche un modulo sul sito.</li>
     <li><strong>Porta la carta d'identità.</strong> Se chiedi per un familiare, serve una <strong>delega firmata</strong> da lui e la copia del suo documento. Se la persona è morta, serve una dichiarazione di essere erede.</li>
     <li><strong>Chiedi una ricevuta</strong> con il giorno della richiesta. Da quel giorno partono i ${rules.deadline_days} giorni.</li>
@@ -139,7 +139,7 @@ const screens = {
         <ol class="big-steps">
           <li><strong>Telefona o vai all'ufficio cartelle cliniche</strong> con la ricevuta. Spesso basta questo.</li>
           <li><strong>Manda una lettera di sollecito</strong> alla Direzione sanitaria dell'ospedale. La scriviamo insieme.</li>
-          <li><strong>Se ancora niente:</strong> reclamo all'URP dell'ASP di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''}, oppure a Cittadinanzattiva
+          <li><strong>Se ancora niente:</strong> reclamo all'URP dell'${aslLabel()} di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''}, oppure a Cittadinanzattiva
             (<a href="https://www.cittadinanzattiva.it" target="_blank" rel="noopener">cittadinanzattiva.it</a>). ${tarText()}</li>
         </ol>
         ${officeBox(a, 'cartelle', '🏥 Gli uffici cartelle cliniche', "Chiama quello dell'ospedale dove c'è stato il ricovero.") || aspCalls(a)}
@@ -187,7 +187,7 @@ const screens = {
             <li class="delegate-note"${person.isDelegate ? '' : ' hidden'}><span class="ico" aria-hidden="true">📝</span> Allega: la delega firmata e il tuo documento</li>
           </ul>
         </div>
-        <p class="muted">Se l'ospedale è dell'ASP, la PEC generale è ${a.pec ? mailLink(a.pec) : 'da chiedere all\'URP'}. I grandi ospedali (Policlinico, Cannizzaro, Papardo, Civico, Villa Sofia…) hanno una PEC loro: cercala sul sito dell'ospedale.
+        <p class="muted">Se l'ospedale è dell'${aslLabel()}, la PEC generale è ${a.pec ? mailLink(a.pec) : 'da chiedere all\'URP'}. I grandi ospedali${regione() === 'sicilia' ? ' (Policlinico, Cannizzaro, Papardo, Civico, Villa Sofia…)' : ''} hanno una PEC loro: cercala sul sito dell'ospedale.
           <a href="${esc(reportErrorHref(`Cartella clinica ${a.name}`))}">Segnala un errore</a></p>
         ${disclaimer(rules.last_verified)}
         ${restartBtn()}`,
