@@ -7,7 +7,7 @@ import { checkWaiting, callbackDeadline, maxWaitDays, todayISO, formatIt, parseD
 import { tutelaLetter, tutelaReminder, mailtoHref } from './letters.js';
 import { noPecBox,
   esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton, aspCalls,
-  personFields, reportErrorHref, generalContact, choice, helpBox, listenButton, speakScreen, stopSpeaking, sourcesBox, moreHelp, hideHeadingEmoji, enableStart,
+  personFields, reportErrorHref, generalContact, choice, helpBox, sourcesBox, moreHelp, hideHeadingEmoji, enableStart,
 } from './common.js';
 import { RICETTA_SVG } from './ricetta-svg.js';
 import { createNav, withRegion, regionAction } from './flow.js';
@@ -31,10 +31,9 @@ const render = nav.render;
 const restart = () => nav.restart(() => { for (const o of [state, person]) for (const k of Object.keys(o)) delete o[k]; });
 
 function paint(current) {
-  stopSpeaking();
   const s = screens[current]();
-  const backBtn = current === 'intro' ? '' : '<button type="button" class="back" data-action="back">← Torna indietro</button>';
-  app.innerHTML = `<div class="topbar">${backBtn}${listenButton()}</div>${s.html}${regionLink(current, state)}${moreHelp()}${helpBox()}${screenSources()}`;
+  const backBtn = current === 'intro' ? '' : '<div class="topbar"><button type="button" class="back" data-action="back">← Torna indietro</button></div>';
+  app.innerHTML = `${backBtn}${s.html}${regionLink(current, state)}${moreHelp()}${helpBox()}${screenSources()}`;
   enableStart(app);
   hideHeadingEmoji(app);
   if (s.mount) s.mount();
@@ -48,7 +47,6 @@ app.addEventListener('click', (e) => {
   if (!btn) return;
   if (btn.dataset.action === 'back') return back();
   if (btn.dataset.action === 'restart') return restart();
-  if (btn.dataset.action === 'listen') return speakScreen(app);
   if (regionAction(btn, nav)) return;
   if (btn.dataset.set) Object.assign(state, JSON.parse(btn.dataset.set));
   if (btn.dataset.go) go(btn.dataset.go);

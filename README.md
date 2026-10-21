@@ -26,7 +26,7 @@ Requisiti completi: [SPEC.md](SPEC.md).
 ## Principi
 
 - **Semplicissimo per tutti**, anche per chi legge poco: frasi brevi, una sola domanda per schermata, pulsanti
-  grandi con icone, pulsante **🔊 Ascolta** che legge la pagina ad alta voce, riquadro «Chi può aiutarti».
+  grandi con icone, riquadro «Chi può aiutarti».
 - **Niente server, niente database, niente cookie, niente intelligenza artificiale.** Tutto funziona nel browser;
   quello che scrive l'utente non viene salvato né inviato. Si contano solo, in forma anonima, le pagine viste e i
   «Sì / No» di «Ti è stata utile?» con GoatCounter (`GOATCOUNTER_CODE` in `js/common.js`).
@@ -63,7 +63,7 @@ Requisiti completi: [SPEC.md](SPEC.md).
   Tutti i moduli sono fatti così. Nella pagina principale restano la risposta breve (nel `<main>`, visibile anche senza
   JavaScript: è anche la prima schermata del percorso, `answerHtml` nel `js/`), il pulsante che avvia il percorso e l'indice.
   Il pulsante di avvio è scritto con `disabled` e si sblocca quando i dati sono caricati (`enableStart`). Le pagine corte
-  caricano `js/guida.js`: piè di pagina con «Ti è stata utile?», conteggio della visita e «Ascolta» che legge la guida.
+  caricano `js/guida.js`: piè di pagina con «Ti è stata utile?» e conteggio della visita.
 - In fondo a ogni pagina: **Condividi su WhatsApp** (un link, funziona anche senza JavaScript) e **Stampa** (con
   «Stampa la guida» si stampa solo la guida, con l'indirizzo della pagina in fondo al foglio).
 - Link interni sempre all'indirizzo della cartella (`../liste-attesa/`), mai a `index.html`.
@@ -132,10 +132,10 @@ npm run test:combinazioni
 | `prevenzione/`, `js/prevenzione.js` | Modulo 12: screening e vaccini gratuiti per età |
 | `medico-famiglia/`, `js/medico.js` | Modulo 13: scelta del medico o del pediatra |
 | `numeri-utili/`, `js/numeri.js`, `data/numeri.json` | Numeri utili nazionali e, per provincia, i contatti dell'ASP (`contacts` in `data/regioni/sicilia/asp.json`) |
-| `js/flow.js` | Navigazione comune ai moduli nuovi (schermate, Indietro, Ascolta, Fonti) |
+| `js/flow.js` | Navigazione comune ai moduli nuovi (schermate, Indietro, Fonti) |
 | `js/engine.js` | Regole sulle date (funzioni pure, testate) |
 | `js/letters.js` | Modelli di lettera (DA VERIFICARE con il legale) |
-| `js/common.js` | Piè di pagina, aiuto, lettura ad alta voce, copia/stampa |
+| `js/common.js` | Piè di pagina, aiuto, copia/stampa |
 | `data/*.json` | Regole nazionali |
 | `data/regioni/index.json`, `data/regioni/sicilia/` | Elenco delle regioni e, per ogni regione attiva, i contatti di ASP e INPS. Come aggiungere una regione: [docs/regioni.md](docs/regioni.md) |
 | `fonts/` | Carattere Nunito incluso nel sito (licenza SIL OFL) |

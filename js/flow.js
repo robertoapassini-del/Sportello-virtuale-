@@ -1,7 +1,7 @@
-// Navigazione comune ai moduli: schermate, Indietro, Ricomincia, Ascolta,
+// Navigazione comune ai moduli: schermate, Indietro, Ricomincia,
 // riquadri Aiuto e Fonti. Le risposte restano in memoria finché la pagina è aperta.
 import {
-  esc, helpBox, listenButton, speakScreen, stopSpeaking, sourcesBox, choice, moreHelp, hideHeadingEmoji, enableStart,
+  esc, helpBox, sourcesBox, choice, moreHelp, hideHeadingEmoji, enableStart,
   MAINTAINER_EMAIL, regioni, regioniAttive, regioneScelta, regioneInfo, regioneDeiDati, setRegione,
 } from './common.js';
 
@@ -138,10 +138,9 @@ export function createFlow({ app, screens, state, sources, first = 'intro', pers
   const regionLink = withRegion(screens);
 
   function paint(current) {
-    stopSpeaking();
     const s = screens[current]();
-    const backBtn = current === first ? '' : '<button type="button" class="back" data-action="back">← Torna indietro</button>';
-    app.innerHTML = `<div class="topbar">${backBtn}${listenButton()}</div>${s.html}${regionLink(current, state)}${moreHelp()}${helpBox()}${sourcesBox(...sources())}`;
+    const backBtn = current === first ? '' : '<div class="topbar"><button type="button" class="back" data-action="back">← Torna indietro</button></div>';
+    app.innerHTML = `${backBtn}${s.html}${regionLink(current, state)}${moreHelp()}${helpBox()}${sourcesBox(...sources())}`;
     enableStart(app);
     hideHeadingEmoji(app);
     if (s.mount) s.mount();
@@ -159,7 +158,6 @@ export function createFlow({ app, screens, state, sources, first = 'intro', pers
     if (!btn) return;
     if (btn.dataset.action === 'back') return back();
     if (btn.dataset.action === 'restart') return restart();
-    if (btn.dataset.action === 'listen') return speakScreen(app);
     if (regionAction(btn, nav)) return;
     if (btn.dataset.set) Object.assign(state, JSON.parse(btn.dataset.set));
     if (btn.dataset.go) go(btn.dataset.go);

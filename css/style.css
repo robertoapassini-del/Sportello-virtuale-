@@ -233,13 +233,8 @@ main.guida h2 { margin-top: 28px; }
 
 }
 
-/* ---- Semplicità: pulsanti grandi con icone, lettura ad alta voce ---- */
+/* ---- Semplicità: pulsanti grandi con icone ---- */
 .topbar { display: flex; justify-content: space-between; align-items: center; gap: 8px; min-height: 48px; margin-bottom: 8px; }
-.listen {
-  margin-left: auto; min-height: 48px; padding: 8px 16px; border-radius: 999px;
-  border: 2px solid var(--primary); background: var(--primary-soft); color: var(--primary);
-  font: inherit; font-weight: 700; cursor: pointer;
-}
 .hero { font-size: 3.5rem; line-height: 1; margin: 8px 0 12px; }
 .btn.big { min-height: 64px; font-size: 1.2rem; }
 .btn.choice { display: flex; align-items: center; gap: 14px; min-height: 68px; font-size: 1.1rem; }
@@ -276,7 +271,7 @@ details > summary { cursor: pointer; font-weight: 700; min-height: 48px; display
 details.help { margin: 28px 0 8px; padding: 12px 16px; border-radius: var(--radius); background: var(--ok-soft); border: 2px solid var(--ok); }
 details.help .ico { font-size: 1.5rem; }
 p.notice { margin: 12px 0; }
-.back, .listen { white-space: nowrap; }
+.back { white-space: nowrap; }
 main { overflow-wrap: anywhere; }
 details.fonti { margin: 12px 0 8px; padding: 10px 16px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border); font-size: 0.9rem; }
 details.fonti ul { margin: 8px 0; }
@@ -357,8 +352,6 @@ details.help { background: var(--ok-soft); border: none; border-left: 6px solid 
 .btn.primary:active { transform: translateY(4px); box-shadow: none; border: none; margin-bottom: 10px; }
 .letter-ico { background: #fff4b8; }
 
-.listen { border: 2px solid var(--link); background: var(--surface); color: var(--link); font-weight: 800; }
-.listen:hover { background: var(--primary-soft); }
 .back { color: var(--link); font-weight: 700; text-decoration: underline; }
 
 /* Campi: bordo scuro e ben visibile, sfondo bianco. */
@@ -454,8 +447,6 @@ details.help .ico { color: var(--ok); }
 .page-band .lead, .page-band .home-trust { color: #fff; margin-bottom: 0; }
 .page-band .topbar { margin-bottom: 4px; }
 .page-band .back { color: #fff; }
-.page-band .listen { background: transparent; border-color: #fff; color: #fff; }
-.page-band .listen:hover { background: rgba(255, 255, 255, 0.14); }
 .page-band .hero { background: #fff; border: none; margin-top: 0; }
 .page-band a:focus-visible, .page-band button:focus-visible { outline-color: #ffeb3b; }
 
@@ -514,7 +505,7 @@ ul.area-list li > .btn { flex: 1; }
   /* Pagina stampata: niente menu, ricerca, pulsanti e piè di pagina. */
   body { background: #fff; color: #000; font-size: 11pt; }
   .header-search, .header-nav, .breadcrumb, .skip-link, .share-bar .btn, .page-feedback, .site-footer,
-  .topbar, .more-help, details.help, .listen, .back, noscript { display: none !important; }
+  .topbar, .more-help, details.help, .back, noscript { display: none !important; }
   .site-header, .page-band { background: none !important; color: #000 !important; border: none !important; }
   .site-header .brand, .site-header .brand-tag { color: #000 !important; }
   .wrap { max-width: none; padding: 0; }
