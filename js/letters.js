@@ -23,7 +23,7 @@ function signature(p, today) {
 export function tutelaLetter({ ente = 'Azienda Sanitaria Provinciale', aspName, aspAddress, person: p, service, nre, cls, maxDays, bookingDate, appointmentDate, noDateOffered, requestDate, today }) {
   const booking = noDateOffered
     ? `- in data ${requestDate ? formatIt(requestDate) : '__________'} ha richiesto la prenotazione tramite i canali ufficiali e non gli/le è
-  stata proposta alcuna data, né è stato/a ricontattato/a entro il termine previsto;`
+  stata proposta alcuna data${cls === 'U' || !requestDate ? '' : ', né è stato/a ricontattato/a entro il termine previsto'};`
     : `- in data ${formatIt(bookingDate)} ha richiesto la prenotazione tramite i canali ufficiali e la prima
   disponibilità proposta è ${art('il', appointmentDate)}${formatIt(appointmentDate)}, oltre il tempo massimo previsto;`;
   const attach = 'copia del documento di identità; ricetta; foglio/promemoria di prenotazione' +
@@ -127,13 +127,13 @@ export function cartellaReminder({ structure, address, person: p, requestDate, p
 ${address || ''}
 
 Oggetto: SOLLECITO – Richiesta di copia di ${blank(what, 'cartella clinica')} presentata ${art('il', requestDate)}${requestDate ? formatIt(requestDate) : '__________'}
-(art. 4, comma 3, L. 24/2017)
+(art. 4, comma 2, L. 24/2017)
 
 ${personBlock(p)}
 
 PREMESSO CHE
 - in data ${requestDate ? formatIt(requestDate) : '__________'} ha chiesto copia di ${blank(what, 'cartella clinica')}${episode ? ` relativa a ${episode}` : ''}${protocol ? ` (ricevuta/protocollo n. ${protocol})` : ''};
-- ai sensi dell'art. 4, comma 3, della L. 24/2017 la direzione sanitaria fornisce la documentazione sanitaria disponibile
+- ai sensi dell'art. 4, comma 2, della L. 24/2017 la direzione sanitaria fornisce la documentazione sanitaria disponibile
   entro ${days} giorni dalla richiesta, cioè entro ${art('il', deadline)}${deadline ? formatIt(deadline) : '__________'}, e le eventuali integrazioni entro ${integrationDays} giorni;
 - alla data odierna non ha ricevuto quanto richiesto né alcuna comunicazione;
 
@@ -154,14 +154,14 @@ Ufficio Assistenza Protesica
 ${address || ''}
 
 Oggetto: SOLLECITO – Autorizzazione alla fornitura di ${blank(device, 'ausilio/protesi')} richiesta ${art('il', requestDate)}${requestDate ? formatIt(requestDate) : '__________'}
-(art. 18 DPCM 12/01/2017 e disposizioni regionali sull'assistenza protesica)
+(DPCM 12/01/2017, allegato 12, e disposizioni regionali sull'assistenza protesica)
 
 ${personBlock(p)}
 
 PREMESSO CHE
 - in data ${requestDate ? formatIt(requestDate) : '__________'} ha presentato richiesta di autorizzazione alla fornitura di ${blank(device, 'ausilio/protesi')},
   su prescrizione ${prescriber ? `del/della ${prescriber}` : 'dello specialista del Servizio sanitario'}${protocol ? ` (ricevuta/protocollo n. ${protocol})` : ''};
-- ai sensi dell'art. 18 del DPCM 12/01/2017 il tempo massimo per l'autorizzazione è fissato dalla Regione, e secondo le disposizioni regionali
+- ai sensi del DPCM 12/01/2017 (allegato 12) il tempo massimo per l'autorizzazione è fissato dalla Regione, e secondo le disposizioni regionali
   sull'assistenza protesica l'autorizzazione va rilasciata entro ${days} giorni dalla richiesta, cioè entro ${art('il', deadline)}${deadline ? formatIt(deadline) : '__________'},
   e, decorso tale termine senza risposta, si intende concessa;
 - alla data odierna non ha ricevuto l'autorizzazione né alcuna comunicazione;
