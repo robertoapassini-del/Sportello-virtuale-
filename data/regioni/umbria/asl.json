@@ -1,0 +1,756 @@
+{
+ "region": "Umbria",
+ "model": "USL",
+ "_note": "Numeri delle USL Umbria 1 e Umbria 2 per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili. Il 116117 vale solo nel Distretto del Perugino; altrove restano i numeri di guardia medica. CUP regionale (NUS) 800 636363, da cellulare 075 5402963.",
+ "asl": [
+  {
+   "id": "perugia",
+   "name": "USL Umbria 1 (e USL Umbria 2 per Foligno, Spoleto e Valnerina)",
+   "province": "Perugia",
+   "site_url": "https://www.uslumbria1.it/",
+   "official_domains": [
+    "uslumbria1.it",
+    "uslumbria2.it",
+    "regione.umbria.it",
+    "insalute.regione.umbria.it",
+    "salute.regione.umbria.it",
+    "accessounico.regione.umbria.it",
+    "cupumbria.it"
+   ],
+   "guardia_medica_url": "https://www.uslumbria1.it/servizio/guardia-medica-continuita-assistenziale/",
+   "pua_url": "https://www.uslumbria1.it/servizio/assistenza-e-cure-domiciliari/",
+   "emails": [
+    "urp@uslumbria1.it",
+    "urp@uslumbria2.it"
+   ],
+   "pec": "aslumbria1@postacert.umbria.it",
+   "phones": [
+    {
+     "label": "Centralino USL Umbria 1",
+     "number": "075 5411",
+     "url": "https://www.uslumbria1.it/azienda/per-il-cittadino/elenco-telefonico/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino Ospedale di Foligno (USL Umbria 2)",
+     "number": "0742 3391",
+     "url": "https://www.uslumbria2.it/pagine/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino Ospedale di Spoleto (USL Umbria 2)",
+     "number": "0743 2101",
+     "url": "https://www.uslumbria2.it/pagine/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Distretto della Valnerina, Norcia (USL Umbria 2)",
+     "number": "0743 8151",
+     "url": "https://www.uslumbria2.it/pagine/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "NUS Numero Umbria Sanità (CUP regionale): prenotare visite ed esami, numero verde da telefono fisso",
+     "number": "800 636363",
+     "url": "https://accessounico.regione.umbria.it/it/enti-partecipanti/enti/regione-umbria/salute/prenotare-una-prestazione-sanitaria/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "NUS Numero Umbria Sanità (CUP regionale): prenotare visite ed esami da cellulare",
+     "number": "075 5402963",
+     "hours": "Dal lunedì al venerdì 8–18 (giorni feriali)",
+     "url": "https://www.regione.umbria.it/salute/prenotazione-visite-specialistiche-on-line",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP della USL Umbria 1: ufficio per i cittadini, reclami",
+     "number": "075 5412153",
+     "hours": "Dal lunedì al venerdì 8.30–12.30",
+     "url": "https://www.uslumbria1.it/u-r-p/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP della USL Umbria 1 – Ospedale di Assisi",
+     "number": "075 8139309",
+     "url": "https://www.uslumbria1.it/u-r-p/punti-di-ascolto-urp/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP della USL Umbria 1 – Poliambulatorio Europa, Perugia",
+     "number": "075 5412858",
+     "hours": "Dal lunedì al venerdì 8.30–12.30",
+     "url": "https://www.uslumbria1.it/u-r-p/punti-di-ascolto-urp/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP della USL Umbria 1 – Distretto del Perugino",
+     "number": "075 5412868",
+     "hours": "Dal lunedì al venerdì 8.30–12.30",
+     "url": "https://www.uslumbria1.it/u-r-p/punti-di-ascolto-urp/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP della USL Umbria 1 – Distretto Media Valle del Tevere",
+     "number": "075 8858358",
+     "hours": "Dal lunedì al venerdì 8.30–12.30",
+     "url": "https://www.uslumbria1.it/u-r-p/punti-di-ascolto-urp/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP della USL Umbria 1 – Ospedale di Castiglione del Lago",
+     "number": "075 9526261",
+     "url": "https://www.uslumbria1.it/u-r-p/punti-di-ascolto-urp/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP della USL Umbria 2 (anche per Foligno, Spoleto e Valnerina): ufficio per i cittadini, reclami",
+     "number": "0744 204841",
+     "hours": "Dal lunedì al venerdì 11–12.30",
+     "url": "https://www.uslumbria2.it/pagine/urp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP della USL Umbria 2 – sede Valnerina (Distretto di Norcia)",
+     "number": "0743 8151",
+     "hours": "Lunedì 8.30–13.30 e 15.30–17.30",
+     "url": "https://www.uslumbria2.it/pagine/urp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Distretto di Foligno (USL Umbria 2)",
+     "number": "0742 339536",
+     "url": "https://www.uslumbria2.it/pagine/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Distretto di Spoleto (USL Umbria 2)",
+     "number": "0743 210467",
+     "url": "https://www.uslumbria2.it/pagine/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 1 – Distretto del Perugino (Perugia, Corciano, Torgiano): numero 116117",
+     "number": "116117",
+     "hours": "Notti 20–8; sabati, prefestivi e festivi 8–20",
+     "address": "Via della Pallotta 42 c/o Centro Servizi Grocco, Perugia; Ponte San Giovanni c/o Centro Commerciale Apogeo",
+     "url": "https://www.uslumbria1.it/servizio/guardia-medica-continuita-assistenziale/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 1 – Fascia Appenninica (Costacciaro, Fossato di Vico, Sigillo, Scheggia e Pascelupo)",
+     "number": "075 8933197",
+     "address": "Via Masaccio, Scheggia e Pascelupo",
+     "url": "https://www.uslumbria1.it/servizio/guardia-medica-continuita-assistenziale/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 1 – Gualdo Tadino",
+     "number": "075 8934259",
+     "address": "Piazzale dei Giardini, Gualdo Tadino",
+     "url": "https://www.uslumbria1.it/servizio/guardia-medica-continuita-assistenziale/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 1 – Gubbio",
+     "number": "075 8933468",
+     "address": "Largo San Francesco, Gubbio",
+     "url": "https://www.uslumbria1.it/servizio/guardia-medica-continuita-assistenziale/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 1 – Città di Castello",
+     "number": "075 8932203",
+     "address": "Via Vasari 5 c/o Casa della Comunità (notti); Via L. Angelini 10 (prefestivi e festivi 8–20)",
+     "url": "https://www.uslumbria1.it/servizio/guardia-medica-continuita-assistenziale/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 1 – Pietralunga",
+     "number": "075 5416168",
+     "address": "Via Cesare Battisti, Pietralunga",
+     "url": "https://www.uslumbria1.it/servizio/guardia-medica-continuita-assistenziale/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 1 – San Giustino",
+     "number": "075 8932481",
+     "address": "Via Fabbrini 2, San Giustino",
+     "url": "https://www.uslumbria1.it/servizio/guardia-medica-continuita-assistenziale/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 1 – Umbertide",
+     "number": "075 8935741",
+     "address": "Largo Cimabue 2, Umbertide",
+     "url": "https://www.uslumbria1.it/servizio/guardia-medica-continuita-assistenziale/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 1 – Assisi (Santa Maria degli Angeli)",
+     "number": "075 5413274",
+     "address": "Viale Patrono d'Italia 43, Santa Maria degli Angeli",
+     "url": "https://www.uslumbria1.it/servizio/guardia-medica-continuita-assistenziale/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 1 – Valfabbrica",
+     "number": "075 5416178",
+     "address": "Via Roma, Valfabbrica",
+     "url": "https://www.uslumbria1.it/servizio/guardia-medica-continuita-assistenziale/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 1 – Todi",
+     "number": "075 5414223",
+     "address": "Via Matteotti, Todi",
+     "url": "https://www.uslumbria1.it/servizio/guardia-medica-continuita-assistenziale/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 1 – Marsciano",
+     "number": "075 5414565",
+     "address": "Via Piccolotti, Marsciano",
+     "url": "https://www.uslumbria1.it/servizio/guardia-medica-continuita-assistenziale/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 1 – Città della Pieve",
+     "number": "075 5415850",
+     "address": "Via Beato Giacomo Villa, Città della Pieve",
+     "url": "https://www.uslumbria1.it/servizio/guardia-medica-continuita-assistenziale/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 1 – Panicale (solo prefestivi e festivi di giorno)",
+     "number": "075 5415616",
+     "address": "Casa della Comunità di Tavernelle, Via M. L. King 14",
+     "url": "https://www.uslumbria1.it/servizio/guardia-medica-continuita-assistenziale/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 1 – Magione",
+     "number": "075 5415120",
+     "address": "Piazza Simoncini, Magione",
+     "url": "https://www.uslumbria1.it/servizio/guardia-medica-continuita-assistenziale/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 1 – Passignano (solo prefestivi e festivi di giorno)",
+     "number": "075 5415751",
+     "address": "Via della Pieve, Passignano",
+     "url": "https://www.uslumbria1.it/servizio/guardia-medica-continuita-assistenziale/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 1 – Castiglione del Lago",
+     "number": "075 5415674",
+     "address": "P.zza Gramsci, Castiglione del Lago",
+     "url": "https://www.uslumbria1.it/servizio/guardia-medica-continuita-assistenziale/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 2 – Foligno (Foligno, Bevagna, Montefalco; anche Colfiorito e Sellano, Nocera Umbra, Valtopina, Gaifana, Spello, Trevi)",
+     "number": "0742 339010",
+     "url": "https://www.uslumbria2.it/servizi/guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 2 – Gualdo Cattaneo (Gualdo Cattaneo, Bastardo, Giano dell’Umbria)",
+     "number": "0742 920316",
+     "url": "https://www.uslumbria2.it/servizi/guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 2 – Spoleto (Spoleto, Campello sul Clitunno, Castel Ritaldi, Sant’Anatolia di Narco, Scheggino, Vallo di Nera)",
+     "number": "0743 210240",
+     "url": "https://www.uslumbria2.it/servizi/guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 2 – Norcia (Norcia e Preci)",
+     "number": "0743 815270",
+     "url": "https://www.uslumbria2.it/servizi/guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 2 – Cascia (Cascia; Poggiodomo nei feriali)",
+     "number": "0743 7506206",
+     "url": "https://www.uslumbria2.it/servizi/guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 2 – Cerreto di Spoleto (Cerreto di Spoleto; Poggiodomo nei fine settimana)",
+     "number": "0743 7506282",
+     "url": "https://www.uslumbria2.it/servizi/guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 2 – Monteleone di Spoleto (Monteleone di Spoleto; Poggiodomo nei fine settimana)",
+     "number": "0743 799005",
+     "url": "https://www.uslumbria2.it/servizi/guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA cure domiciliari USL Umbria 1 – Gubbio",
+     "number": "075 9239641",
+     "hours": "Dal lunedì al sabato 7.30–19.30",
+     "url": "https://www.uslumbria1.it/servizio/assistenza-e-cure-domiciliari/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA cure domiciliari USL Umbria 1 – Gualdo Tadino e Fascia Appenninica",
+     "number": "075 9109318",
+     "hours": "Dal lunedì al sabato 8.30–13.30",
+     "url": "https://www.uslumbria1.it/servizio/assistenza-e-cure-domiciliari/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA cure domiciliari USL Umbria 1 – Città di Castello",
+     "number": "075 8932585",
+     "hours": "Martedì e giovedì 9–12",
+     "url": "https://www.uslumbria1.it/servizio/assistenza-e-cure-domiciliari/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA cure domiciliari USL Umbria 1 – Umbertide",
+     "number": "075 9425128",
+     "hours": "Dal lunedì al sabato 8.30–12.30",
+     "url": "https://www.uslumbria1.it/servizio/assistenza-e-cure-domiciliari/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA cure domiciliari USL Umbria 1 – Distretto Assisano",
+     "number": "075 8139560",
+     "hours": "Dal lunedì al sabato 10–18",
+     "url": "https://www.uslumbria1.it/servizio/assistenza-e-cure-domiciliari/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA cure domiciliari USL Umbria 1 – Media Valle del Tevere (Marsciano)",
+     "number": "075 5416160",
+     "hours": "Dal lunedì al venerdì 10.30–13.30",
+     "url": "https://www.uslumbria1.it/servizio/assistenza-e-cure-domiciliari/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA cure domiciliari USL Umbria 1 – Perugia, Ponte Felcino",
+     "number": "075 5412537",
+     "hours": "Dal lunedì al sabato 8–13",
+     "url": "https://www.uslumbria1.it/servizio/assistenza-e-cure-domiciliari/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA cure domiciliari USL Umbria 1 – Perugia Centro",
+     "number": "075 5412641",
+     "url": "https://www.uslumbria1.it/servizio/assistenza-e-cure-domiciliari/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA cure domiciliari USL Umbria 1 – Perugia Sud-Ovest (San Sisto, Madonna Alta, Castel del Piano)",
+     "number": "075 5412280",
+     "hours": "Dal lunedì al sabato 9.30–12",
+     "url": "https://www.uslumbria1.it/servizio/assistenza-e-cure-domiciliari/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA cure domiciliari USL Umbria 1 – Ellera-Corciano",
+     "number": "075 5412502",
+     "hours": "Dal lunedì al sabato 8–12.30",
+     "url": "https://www.uslumbria1.it/servizio/assistenza-e-cure-domiciliari/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA cure domiciliari USL Umbria 1 – Trasimeno (Panicale)",
+     "number": "075 9526611",
+     "hours": "Dal lunedì al venerdì 8–13",
+     "url": "https://www.uslumbria1.it/servizio/assistenza-e-cure-domiciliari/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "palliative",
+     "label": "Hospice di Perugia (USL Umbria 1)",
+     "number": "075 5412400",
+     "url": "https://www.uslumbria1.it/azienda/per-il-cittadino/elenco-telefonico/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "USL Umbria 1 – Elenco telefonico",
+     "url": "https://www.uslumbria1.it/azienda/per-il-cittadino/elenco-telefonico/"
+    },
+    {
+     "label": "USL Umbria 1 – Guardia medica / Continuità assistenziale",
+     "url": "https://www.uslumbria1.it/servizio/guardia-medica-continuita-assistenziale/"
+    },
+    {
+     "label": "USL Umbria 1 – URP",
+     "url": "https://www.uslumbria1.it/u-r-p/"
+    },
+    {
+     "label": "USL Umbria 1 – Punti URP territoriali",
+     "url": "https://www.uslumbria1.it/u-r-p/punti-di-ascolto-urp/"
+    },
+    {
+     "label": "USL Umbria 1 – Assistenza e cure domiciliari",
+     "url": "https://www.uslumbria1.it/servizio/assistenza-e-cure-domiciliari/"
+    },
+    {
+     "label": "USL Umbria 2 – Contatti",
+     "url": "https://www.uslumbria2.it/pagine/contatti"
+    },
+    {
+     "label": "USL Umbria 2 – URP",
+     "url": "https://www.uslumbria2.it/pagine/urp"
+    },
+    {
+     "label": "USL Umbria 2 – Guardia medica",
+     "url": "https://www.uslumbria2.it/servizi/guardia-medica"
+    },
+    {
+     "label": "Regione Umbria – Prenotare una prestazione sanitaria (NUS)",
+     "url": "https://accessounico.regione.umbria.it/it/enti-partecipanti/enti/regione-umbria/salute/prenotare-una-prestazione-sanitaria/"
+    },
+    {
+     "label": "Regione Umbria – Prenotazione visite specialistiche on line",
+     "url": "https://www.regione.umbria.it/salute/prenotazione-visite-specialistiche-on-line"
+    },
+    {
+     "label": "Umbria in Salute – Centrale operativa 116117 (giugno 2025)",
+     "url": "https://insalute.regione.umbria.it/novita/umbria-nasce-la-centrale-operativa-116117-per-le-cure-mediche-non-urgenti/"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "116117: la Regione (notizia del 12/06/2025 su insalute.regione.umbria.it) ha approvato la Centrale Operativa 116117, gestita dalla USL Umbria 1, «pienamente operativa entro il 31/12/2025» e collaudo entro marzo 2026. Nelle copie NON c’è una pagina regionale che dica che è attivo in tutta l’Umbria. L’unica pagina che lo usa è quella della guardia medica USL Umbria 1 (agg. 15/09/2026): 116117 solo per il Distretto del Perugino (Perugia, Corciano, Torgiano); gli altri distretti della USL 1 e tutta la USL Umbria 2 (pagina agg. 13/07/2026) hanno ancora numeri locali. Per questo ho messo i numeri locali con la zona e il 116117 solo per il Perugino. Se la Regione pubblica che il 116117 vale per tutta la regione, togliere i numeri locali.",
+    "CUP: in Umbria il CUP regionale è il NUS – Numero Umbria Sanità: 800 636363 (numero verde da fisso) e 075 5402963 da cellulare, dal lunedì al venerdì 8–18 nei giorni feriali (pagine Regione e USL). Le USL non hanno un numero CUP telefonico proprio: hanno sportelli CUP e FarmaCUP. Prenotazione online su www.cupumbria.it e app UmbriaFacile.",
+    "Guardia medica USL Umbria 1: l’Elenco telefonico (agg. 22/04/2026) ha numeri diversi (es. Gubbio 075 9239468, Perugia 075 36584) da quelli della pagina Guardia medica (agg. 15/09/2026): ho usato quelli della pagina Guardia medica, più recente. Bastia Umbra: sede indicata ma senza numero.",
+    "Cure palliative USL Umbria 1: la pagina è del 05/09/2023, non usata; messo solo l’Hospice di Perugia dall’Elenco telefonico.",
+    "USL Umbria 2 (Foligno, Spoleto, Valnerina): nessun numero PUA/cure domiciliari nelle copie (la pagina «Accedere al servizio di assistenza domiciliare» rimanda ai Centri di salute senza numeri). Gli sportelli CUP della USL 2 nelle copie non hanno numeri di telefono.",
+    "Mancano protesica, anagrafe/scelta del medico, cartelle cliniche, screening: non ci sono nelle copie."
+   ]
+  },
+  {
+   "id": "terni",
+   "name": "USL Umbria 2",
+   "province": "Terni",
+   "site_url": "https://www.uslumbria2.it/",
+   "official_domains": [
+    "uslumbria1.it",
+    "uslumbria2.it",
+    "regione.umbria.it",
+    "insalute.regione.umbria.it",
+    "salute.regione.umbria.it",
+    "accessounico.regione.umbria.it",
+    "cupumbria.it"
+   ],
+   "guardia_medica_url": "https://www.uslumbria2.it/servizi/guardia-medica",
+   "emails": [
+    "urp@uslumbria2.it"
+   ],
+   "pec": "aslumbria2@postacert.umbria.it",
+   "phones": [
+    {
+     "label": "Centralino USL Umbria 2 – sede centrale di Terni",
+     "number": "0744 2041",
+     "url": "https://www.uslumbria2.it/pagine/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino Ospedale di Orvieto (USL Umbria 2)",
+     "number": "0763 3071",
+     "url": "https://www.uslumbria2.it/pagine/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino Ospedale di Narni (USL Umbria 2)",
+     "number": "0744 7401",
+     "url": "https://www.uslumbria2.it/pagine/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino Ospedale di Amelia e Distretto di Narni e Amelia (USL Umbria 2)",
+     "number": "0744 9011",
+     "url": "https://www.uslumbria2.it/pagine/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "NUS Numero Umbria Sanità (CUP regionale): prenotare visite ed esami, numero verde da telefono fisso",
+     "number": "800 636363",
+     "url": "https://accessounico.regione.umbria.it/it/enti-partecipanti/enti/regione-umbria/salute/prenotare-una-prestazione-sanitaria/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "NUS Numero Umbria Sanità (CUP regionale): prenotare visite ed esami da cellulare",
+     "number": "075 5402963",
+     "hours": "Dal lunedì al venerdì 8–18 (giorni feriali)",
+     "url": "https://www.regione.umbria.it/salute/prenotazione-visite-specialistiche-on-line",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Numero verde CUP per prenotare (indicato dall’Ospedale di Orvieto)",
+     "number": "800 636363",
+     "hours": "Dal lunedì al venerdì 8–18",
+     "url": "https://www.uslumbria2.it/pagine/informazioni-utili-e-contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP della USL Umbria 2: ufficio per i cittadini, reclami",
+     "number": "0744 204841",
+     "hours": "Dal lunedì al venerdì 11–12.30",
+     "address": "Viale Bramante 37, primo piano, scala B, Terni",
+     "url": "https://www.uslumbria2.it/pagine/urp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP della USL Umbria 2 – telefono del martedì e giovedì pomeriggio",
+     "number": "0763 307756",
+     "hours": "Martedì e giovedì 14.30–17.30",
+     "url": "https://www.uslumbria2.it/pagine/urp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Distretto di Terni (USL Umbria 2)",
+     "number": "0744 204807",
+     "url": "https://www.uslumbria2.it/pagine/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Distretto di Orvieto (USL Umbria 2)",
+     "number": "0763 307422",
+     "url": "https://www.uslumbria2.it/pagine/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 2 – Terni (Terni, Acquasparta, Arrone, Ferentillo, Montefranco, Polino, San Venanzo, Stroncone)",
+     "number": "0744 275888",
+     "url": "https://www.uslumbria2.it/servizi/guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Notti feriali 20–8; dal sabato e prefestivi ore 8 fino alle 8 del giorno dopo il festivo",
+     "address": "Casa della Comunità, Viale Trieste 46, Terni"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 2 – Narni (Narni, Otricoli, Calvi dell’Umbria)",
+     "number": "0744 740329",
+     "url": "https://www.uslumbria2.it/servizi/guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Notti feriali 20–8; dal sabato e prefestivi ore 8 fino alle 8 del giorno dopo il festivo",
+     "address": "Via Dei Cappuccini Nuovi 1, Narni"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 2 – Amelia (Amelia, Attigliano, Giove, Lugnano in Teverina, Penna in Teverina)",
+     "number": "0744 901203",
+     "url": "https://www.uslumbria2.it/servizi/guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Notti feriali 20–8; dal sabato e prefestivi ore 8 fino alle 8 del giorno dopo il festivo",
+     "address": "Casa della Comunità, Strada Amelia-Giove 5/B, Amelia"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 2 – Montecastrilli (Montecastrilli, Acquasparta, Avigliano Umbro)",
+     "number": "0744 901595",
+     "url": "https://www.uslumbria2.it/servizi/guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Notti feriali 20–8; dal sabato e prefestivi ore 8 fino alle 8 del giorno dopo il festivo",
+     "address": "Via G. Verdi 2, Montecastrilli"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 2 – Montecchio (Alviano, Guardea, Baschi, Montecchio)",
+     "number": "0744 901589",
+     "url": "https://www.uslumbria2.it/servizi/guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Notti feriali 20–8; dal sabato e prefestivi ore 8 fino alle 8 del giorno dopo il festivo",
+     "address": "Via Della Selciata 15, Montecchio"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 2 – Orvieto (Orvieto e Porano)",
+     "number": "0763 301884",
+     "url": "https://www.uslumbria2.it/servizi/guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Notti feriali 20–8; dal sabato e prefestivi ore 8 fino alle 8 del giorno dopo il festivo",
+     "address": "Via Monte Rosa 13/33, Orvieto"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 2 – Castel Viscardo – Monterubiaglio (Allerona, Castel Giorgio, Castel Viscardo)",
+     "number": "0763 626180",
+     "url": "https://www.uslumbria2.it/servizi/guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Notti feriali 20–8; dal sabato e prefestivi ore 8 fino alle 8 del giorno dopo il festivo",
+     "address": "Via del Giardino, Monterubiaglio"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica USL Umbria 2 – Fabro (Fabro, Ficulle, Montegabbione, Monteleone d’Orvieto, Parrano)",
+     "number": "0763 307585",
+     "url": "https://www.uslumbria2.it/servizi/guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Notti feriali 20–8; dal sabato e prefestivi ore 8 fino alle 8 del giorno dopo il festivo",
+     "address": "Via A. Gramsci 22, Fabro"
+    }
+   ],
+   "sources": [
+    {
+     "label": "USL Umbria 2 – Contatti",
+     "url": "https://www.uslumbria2.it/pagine/contatti"
+    },
+    {
+     "label": "USL Umbria 2 – URP",
+     "url": "https://www.uslumbria2.it/pagine/urp"
+    },
+    {
+     "label": "USL Umbria 2 – Guardia medica",
+     "url": "https://www.uslumbria2.it/servizi/guardia-medica"
+    },
+    {
+     "label": "USL Umbria 2 – Ospedale di Orvieto, informazioni e contatti",
+     "url": "https://www.uslumbria2.it/pagine/informazioni-utili-e-contatti"
+    },
+    {
+     "label": "Regione Umbria – Prenotare una prestazione sanitaria (NUS)",
+     "url": "https://accessounico.regione.umbria.it/it/enti-partecipanti/enti/regione-umbria/salute/prenotare-una-prestazione-sanitaria/"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "116117 non ancora indicato per la provincia di Terni: la pagina Guardia medica della USL Umbria 2 (agg. 13/07/2026) dà ancora i numeri locali. Vedi nota sulla voce Perugia.",
+    "Guardia medica Arrone (0744 275888) ha lo stesso numero di Terni: messo solo Terni con Arrone tra i comuni.",
+    "Mancano numeri PUA/cure domiciliari, cure palliative, protesica, anagrafe, cartelle cliniche, screening della USL Umbria 2: non ci sono nelle copie. Gli sportelli CUP di Terni, Narni-Amelia e Orvieto nelle copie non hanno numeri."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,68 @@
+{
+ "region": "Abruzzo",
+ "last_verified": "2026-10-21",
+ "note": "Indirizzi e PEC delle sedi INPS dalle pagine «sedi» di inps.it, copiate il 21/10/2026 dal server in Italia. Per andare allo sportello si prenota (MyINPS, app, 803 164 / 06 164164). regime (riforma della disabilità) da verificare: finché è null il modulo invalidità non va attivato per questa regione.",
+ "sources": [
+  {
+   "label": "INPS – sedi e contatti in Abruzzo",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.380000.380000-elencoStruttureInps.html"
+  }
+ ],
+ "provinces": [
+  {
+   "id": "chieti",
+   "name": "Chieti",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.chieti@postacert.inps.gov.it",
+   "address": "Via Domenico Spezioli 12, Chieti",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.230000.230000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "laquila",
+   "name": "L'Aquila",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.laquila@postacert.inps.gov.it",
+   "address": "Corso Federico II 68, L'Aquila",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.380000.380000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "pescara",
+   "name": "Pescara",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.pescara@postacert.inps.gov.it",
+   "address": "Via R. Paolucci 35, Pescara",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.600000.600000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "teramo",
+   "name": "Teramo",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.teramo@postacert.inps.gov.it",
+   "address": "Via Oberdan 32, Teramo",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.790000.790000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  }
+ ],
+ "todo": [
+  "Riforma della disabilità: verificare quali province sono nella sperimentazione e da quando (campo regime)."
+ ]
+}

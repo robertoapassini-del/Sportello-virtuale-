@@ -1,0 +1,68 @@
+{
+ "region": "Friuli-Venezia Giulia",
+ "last_verified": "2026-10-21",
+ "note": "Indirizzi e PEC delle sedi INPS dalle pagine «sedi» di inps.it, copiate il 21/10/2026 dal server in Italia. Per andare allo sportello si prenota (MyINPS, app, 803 164 / 06 164164). regime (riforma della disabilità) da verificare: finché è null il modulo invalidità non va attivato per questa regione.",
+ "sources": [
+  {
+   "label": "INPS – sedi e contatti in Friuli-Venezia Giulia",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.850000.850000-elencoStruttureInps.html"
+  }
+ ],
+ "provinces": [
+  {
+   "id": "gorizia",
+   "name": "Gorizia",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.gorizia@postacert.inps.gov.it",
+   "address": "Piazza Della Vittoria 1, Gorizia",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.350000.350000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "pordenone",
+   "name": "Pordenone",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.pordenone@postacert.inps.gov.it",
+   "address": "Piazzetta Del Portello 8, Pordenone",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.930000.930000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "trieste",
+   "name": "Trieste",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.trieste@postacert.inps.gov.it",
+   "address": "Via Lorenzo Ghiberti 4, Trieste",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.850000.850000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "udine",
+   "name": "Udine",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.udine@postacert.inps.gov.it",
+   "address": "Via Savorgnana 37, Udine",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.860000.860000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  }
+ ],
+ "todo": [
+  "Riforma della disabilità: verificare quali province sono nella sperimentazione e da quando (campo regime)."
+ ]
+}

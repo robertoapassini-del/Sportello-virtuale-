@@ -1,0 +1,68 @@
+{
+ "region": "Liguria",
+ "last_verified": "2026-10-21",
+ "note": "Indirizzi e PEC delle sedi INPS dalle pagine «sedi» di inps.it, copiate il 21/10/2026 dal server in Italia. Per andare allo sportello si prenota (MyINPS, app, 803 164 / 06 164164). regime (riforma della disabilità) da verificare: finché è null il modulo invalidità non va attivato per questa regione.",
+ "sources": [
+  {
+   "label": "INPS – sedi e contatti in Liguria",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.340000.340000-elencoStruttureInps.html"
+  }
+ ],
+ "provinces": [
+  {
+   "id": "genova",
+   "name": "Genova",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.genova@postacert.inps.gov.it",
+   "address": "Piazza Della Vittoria 6R, Genova",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.340000.340000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "imperia",
+   "name": "Imperia",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.imperia@postacert.inps.gov.it",
+   "address": "Viale Della Rimembranza 25, Imperia",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.370000.370000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "la-spezia",
+   "name": "La Spezia",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.laspezia@postacert.inps.gov.it",
+   "address": "Viale Giuseppe Mazzini 63, La Spezia",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.390000.390000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "savona",
+   "name": "Savona",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.savona@postacert.inps.gov.it",
+   "address": "Piazza Guglielmo Marconi 6, Savona",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.740000.740000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  }
+ ],
+ "todo": [
+  "Riforma della disabilità: verificare quali province sono nella sperimentazione e da quando (campo regime)."
+ ]
+}

@@ -1,0 +1,286 @@
+{
+ "region": "Basilicata",
+ "model": "ASP e ASM",
+ "_note": "Numeri dell'ASP Basilicata (Potenza) e dell'ASM (Matera), letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili. Il 116117 è attivo in tutta la Basilicata; CUP regionale 800 814814.",
+ "asl": [
+  {
+   "id": "matera",
+   "name": "ASM Matera (Azienda Sanitaria Locale di Matera)",
+   "province": "Matera",
+   "site_url": "https://www.asmbasilicata.it/",
+   "official_domains": [
+    "asmbasilicata.it",
+    "regione.basilicata.it",
+    "salute.basilicata.it"
+   ],
+   "guardia_medica_url": "https://www.asmbasilicata.it/servizio/guardia-medica-servizio-di-continuita-assistenziale/",
+   "emails": [
+    "urp@asmbasilicata.it"
+   ],
+   "pec": "asmbasilicata@cert.ruparbasilicata.it",
+   "phones": [
+    {
+     "label": "Centralino dell'ASM Matera",
+     "number": "0835 253111",
+     "url": "https://www.asmbasilicata.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino dell'ASM Matera (secondo numero)",
+     "number": "0835 252111",
+     "url": "https://www.asmbasilicata.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "116117: numero unico regionale per cure mediche non urgenti e guardia medica, gratuito, 24 ore su 24",
+     "number": "116117",
+     "hours": "24 ore su 24, tutti i giorni",
+     "url": "https://agr.regione.basilicata.it/post/latronico-sul-numero-europeo-armonizzato",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP regionale della Basilicata (numero verde): prenotare visite ed esami",
+     "number": "800 814814",
+     "hours": "Dal lunedì al venerdì 7–19, sabato 7–14",
+     "url": "https://www.asmbasilicata.it/servizio/prenotazioni-e-ticket/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASM Matera: ufficio per i cittadini, reclami",
+     "number": "0835 253645",
+     "address": "Sede centrale ASM, 1° piano, Via Montescaglioso, Matera",
+     "hours": "Dal lunedì al venerdì 9–12; martedì 15:30–16:30",
+     "url": "https://www.asmbasilicata.it/ufficio-relazioni-con-il-pubblico-urp/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "Punto informativo URP dell'ASM all'ospedale di Policoro",
+     "number": "0835 986333",
+     "address": "Presidio Ospedaliero «Giovanni Paolo II», piano terra, Viale Salerno, Policoro",
+     "hours": "Dal lunedì al sabato 9–13",
+     "url": "https://www.asmbasilicata.it/chi-siamo/punto-informativo-ufficio-relazioni-con-il-pubblico-urp-policoro/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ospedale di Policoro (ASM)",
+     "number": "0835 986111",
+     "address": "Viale Salerno 26, Policoro",
+     "url": "https://www.asmbasilicata.it/servizio/guardia-medica-servizio-di-continuita-assistenziale/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASM Matera – Home (contatti)",
+     "url": "https://www.asmbasilicata.it/"
+    },
+    {
+     "label": "ASM Matera – Prenotazioni e ticket",
+     "url": "https://www.asmbasilicata.it/servizio/prenotazioni-e-ticket/"
+    },
+    {
+     "label": "ASM Matera – URP",
+     "url": "https://www.asmbasilicata.it/ufficio-relazioni-con-il-pubblico-urp/"
+    },
+    {
+     "label": "ASM Matera – URP Policoro",
+     "url": "https://www.asmbasilicata.it/chi-siamo/punto-informativo-ufficio-relazioni-con-il-pubblico-urp-policoro/"
+    },
+    {
+     "label": "ASM Matera – Guardia medica",
+     "url": "https://www.asmbasilicata.it/servizio/guardia-medica-servizio-di-continuita-assistenziale/"
+    },
+    {
+     "label": "AGR Basilicata – Attivo il 116117",
+     "url": "https://agr.regione.basilicata.it/post/latronico-sul-numero-europeo-armonizzato"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "La pagina guardia medica dell'ASM (pubblicata 16/12/2025) elenca ancora i numeri per comune e non nomina il 116117: non li ho messi perché la Regione dice che il 116117 è attivo in tutta la Basilicata.",
+    "Mancano: PUA / cure domiciliari (ADI), protesica, scelta del medico, cartelle cliniche, screening dell'ASM: nelle copie ci sono solo orari senza numero. Una pagina ASM (vecchio sito) dà 404."
+   ]
+  },
+  {
+   "id": "potenza",
+   "name": "ASP Basilicata (Azienda Sanitaria Locale di Potenza)",
+   "province": "Potenza",
+   "site_url": "https://www.aspbasilicata.it/",
+   "official_domains": [
+    "aspbasilicata.it",
+    "regione.basilicata.it",
+    "salute.basilicata.it"
+   ],
+   "guardia_medica_url": "https://www.aspbasilicata.it/come-fare-per/continuita-assistenziale-ex-guardia-medica/",
+   "pua_url": "https://www.aspbasilicata.it/amministrazione-trasparente/attivita-e-procedimenti/tipologia-dei-procedimento/cure-domiciliari/",
+   "emails": [],
+   "pec": "protocollo@pec.aspbasilicata.it",
+   "phones": [
+    {
+     "label": "Centralino dell'ASP Basilicata (Potenza)",
+     "number": "0971 310111",
+     "url": "https://www.aspbasilicata.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "116117: numero unico regionale per cure mediche non urgenti e guardia medica, gratuito, 24 ore su 24",
+     "number": "116117",
+     "hours": "24 ore su 24, tutti i giorni",
+     "url": "https://agr.regione.basilicata.it/post/latronico-sul-numero-europeo-armonizzato",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP regionale della Basilicata (numero verde): prenotare visite ed esami",
+     "number": "800 814814",
+     "hours": "Dal lunedì al venerdì 7–19, sabato 7–14",
+     "url": "https://www.regione.basilicata.it/centro-unico-di-prenotazione-centro-servizi-regione-basilicata/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASP Basilicata, sede di Potenza: ufficio per i cittadini",
+     "number": "0971 310527",
+     "address": "Via Torraca, 85100 Potenza",
+     "url": "https://www.aspbasilicata.it/servizi-per-i-cittadini/urp-e-comunicazione/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASP Basilicata, sede di Potenza (secondo numero)",
+     "number": "0971 310592",
+     "address": "Via Torraca, 85100 Potenza",
+     "url": "https://www.aspbasilicata.it/servizi-per-i-cittadini/urp-e-comunicazione/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASP Basilicata, sede di Lagonegro",
+     "number": "0973 48528",
+     "address": "Via Piano dei Lippi 1, 85042 Lagonegro",
+     "hours": "Lunedì, mercoledì e venerdì 9–12; lunedì 15:30–17",
+     "url": "https://www.aspbasilicata.it/servizi-per-i-cittadini/urp-e-comunicazione/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASP Basilicata, sede di Lagonegro: numero verde",
+     "number": "800 013504",
+     "url": "https://www.aspbasilicata.it/servizi-per-i-cittadini/urp-e-comunicazione/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari e palliative (ADI) dell'ASP, sede di Potenza",
+     "number": "0971 310317",
+     "address": "Corso Umberto I, Potenza",
+     "hours": "Dal lunedì al venerdì 10–13; lunedì e giovedì 16–17",
+     "url": "https://www.aspbasilicata.it/amministrazione-trasparente/attivita-e-procedimenti/tipologia-dei-procedimento/cure-domiciliari/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari e palliative (ADI) dell'ASP, sede di Venosa",
+     "number": "0972 39461",
+     "address": "Ospedale di Venosa, I piano, Via Appia",
+     "hours": "Dal lunedì al venerdì 10–13; lunedì e giovedì 16–17",
+     "url": "https://www.aspbasilicata.it/amministrazione-trasparente/attivita-e-procedimenti/tipologia-dei-procedimento/cure-domiciliari/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari e palliative (ADI) dell'ASP, sede di Villa d'Agri",
+     "number": "0975 312437",
+     "address": "Via C. Colombo, Villa d'Agri",
+     "hours": "Dal lunedì al venerdì 10–13; lunedì e giovedì 16–17",
+     "url": "https://www.aspbasilicata.it/amministrazione-trasparente/attivita-e-procedimenti/tipologia-dei-procedimento/cure-domiciliari/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari e palliative (ADI) dell'ASP, sede di Lauria",
+     "number": "0973 621421",
+     "address": "Via XXV Aprile, Lauria",
+     "hours": "Dal lunedì al venerdì 10–13; martedì 16–17",
+     "url": "https://www.aspbasilicata.it/amministrazione-trasparente/attivita-e-procedimenti/tipologia-dei-procedimento/cure-domiciliari/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari e palliative (ADI) dell'ASP, sede di Senise",
+     "number": "0973 641300",
+     "address": "Via G. Amendola, Senise",
+     "hours": "Dal lunedì al venerdì 10–13; martedì 16–17",
+     "url": "https://www.aspbasilicata.it/amministrazione-trasparente/attivita-e-procedimenti/tipologia-dei-procedimento/cure-domiciliari/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASP Basilicata – Home (contatti)",
+     "url": "https://www.aspbasilicata.it/"
+    },
+    {
+     "label": "ASP Basilicata – URP e Comunicazione",
+     "url": "https://www.aspbasilicata.it/servizi-per-i-cittadini/urp-e-comunicazione/"
+    },
+    {
+     "label": "ASP Basilicata – CUP e pagamento ticket",
+     "url": "https://www.aspbasilicata.it/servizi-per-i-cittadini/cup-e-pagamento-ticket/"
+    },
+    {
+     "label": "ASP Basilicata – Cure domiciliari",
+     "url": "https://www.aspbasilicata.it/amministrazione-trasparente/attivita-e-procedimenti/tipologia-dei-procedimento/cure-domiciliari/"
+    },
+    {
+     "label": "ASP Basilicata – DEU 118 (stato del 116117)",
+     "url": "https://www.aspbasilicata.it/organizzazione/azienda/dipartimenti/dipartimento-emergenza-urgenza-118/"
+    },
+    {
+     "label": "Regione Basilicata – Centro Unico di Prenotazione",
+     "url": "https://www.regione.basilicata.it/centro-unico-di-prenotazione-centro-servizi-regione-basilicata/"
+    },
+    {
+     "label": "AGR Basilicata – Attivo il 116117",
+     "url": "https://agr.regione.basilicata.it/post/latronico-sul-numero-europeo-armonizzato"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "116117: la Regione (AGR, 11 agosto 2026) scrive che dal 25 maggio il 116117 è attivo in tutta la Basilicata, gratuito e H24; anche la pagina 118 dell'ASP dice «Il NEA 116117 è attualmente attivo». È in una prima fase (triage telefonico, orientamento, trasferimento alla guardia medica competente quando è in turno), gestito dalla Centrale Operativa 118. Per questo non ho messo i vecchi numeri locali di guardia medica (la pagina «Guardia medica» dell'ASP li elenca ancora per comune).",
+    "CUP: c'è un unico call center regionale, numero verde 800 814 814 (lunedì–venerdì 7–19, sabato 7–14), confermato da Regione, ASP e ASM. Non ho trovato numeri CUP telefonici propri delle aziende: solo sportelli di persona.",
+    "Il numero verde 800 013 504 nella pagina URP dell'ASP è scritto sotto la sede di Lagonegro: non è chiaro se valga per tutta l'ASP.",
+    "Mancano: email URP generica dell'ASP (sulla pagina ci sono solo indirizzi personali e PEC), protesica, scelta del medico, cartelle cliniche, screening. La pagina «Contatti» dell'ASP non è stata copiata (errore), la Carta dei servizi (PDF) non è stata letta."
+   ]
+  }
+ ]
+}

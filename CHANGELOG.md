@@ -2,6 +2,58 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — Sardegna: i numeri utili delle 8 ASL
+- 73 numeri delle ASL (centralino, URP, CUP, PUA), controllati nelle copie delle pagine ufficiali del 21/10/2026.
+- Guardia medica: 116117 in 6 ASL su 8; per Medio Campidano e Cagliari le pagine non sono d'accordo e per ora non c'è un numero. CUP regionale 1533 da fisso.
+- Sedi INPS delle 8 zone.
+
+## 21/10/2026 — Umbria: i numeri utili di Perugia e Terni
+- 71 numeri delle USL Umbria 1 e 2, controllati nelle copie delle pagine ufficiali del 21/10/2026.
+- Guardia medica: i numeri delle zone (il 116117 vale solo nel Perugino); CUP regionale NUS 800 636363.
+- Sedi INPS di Perugia e Terni.
+
+## 21/10/2026 — Abruzzo: i numeri utili delle 4 province
+- 40 numeri delle ASL, controllati nelle copie delle pagine ufficiali del 21/10/2026.
+- Guardia medica: 116117 in tutto l'Abruzzo; CUP unico 800 827827 (da cellulare 0872 226).
+- Sedi INPS delle 4 province.
+
+## 21/10/2026 — Friuli-Venezia Giulia: i numeri utili delle 4 province
+- 42 numeri di ASUGI, ASUFC e ASFO, controllati nelle copie delle pagine ufficiali del 21/10/2026.
+- Guardia medica: 116117 in tutta la regione; Call center unico salute e sociale 0434 223522.
+- Sedi INPS delle 4 province.
+
+## 21/10/2026 — Basilicata: i numeri utili di Potenza e Matera
+- 19 numeri dell'ASP e dell'ASM, controllati nelle copie delle pagine ufficiali del 21/10/2026.
+- Guardia medica: 116117 in tutta la regione; CUP regionale 800 814814.
+- Sedi INPS di Potenza e Matera.
+
+## 21/10/2026 — Molise: i numeri utili di Campobasso e Isernia
+- 34 numeri dell'ASReM (CUP-PASS, PUA, scelta del medico, URP), controllati nelle copie delle pagine ufficiali del 21/10/2026.
+- Guardia medica: 116117 in tutto il Molise dal 06/10/2026; Call Center Sanitario 800 639595 (da cellulare 0875 752626).
+- Sedi INPS di Campobasso e Isernia.
+
+## 21/10/2026 — Trentino-Alto Adige: i numeri utili di Trento e Bolzano
+- 24 numeri di Asuit (Trento, ex APSS) e dell'Azienda sanitaria dell'Alto Adige, controllati nelle copie delle pagine ufficiali del 21/10/2026.
+- Trento: 116117 per la guardia medica, CUP 0461 379400, i PUA delle sedi. Bolzano: per ora solo il CUPP 100100 e pochi altri numeri (le pagine dell'azienda non si sono lasciate copiare).
+- Sedi INPS di Trento e Bolzano.
+
+## 21/10/2026 — Calabria: i numeri utili delle 5 province
+- 31 numeri delle ASP, controllati nelle copie delle pagine ufficiali del 21/10/2026.
+- Guardia medica: 116117 in tutta la regione (dal 28/07/2026); CUP regionale 0961 789789.
+- Vibo Valentia: per ora solo centralino e 116117 (il sito dell'ASP non si è lasciato copiare).
+- Sedi INPS delle 5 province.
+
+## 21/10/2026 — Liguria: i numeri utili delle 4 province
+- 47 numeri di ATS Liguria (le ex ASL sono ora aree sociosanitarie), controllati nelle copie delle pagine ufficiali del 21/10/2026.
+- Prenotazioni: CUP Liguria 010 5383400. Guardia medica: 116117 solo nel Tigullio, numeri locali nelle altre aree.
+- Il nome dell'azienda sanitaria in Liguria ora è ATS.
+- Sedi INPS delle 4 province.
+
+## 21/10/2026 — Valle d'Aosta: i numeri utili
+- 13 numeri dell'Azienda USL (centralino, CUP, URP, sportelli di scelta del medico), controllati nelle copie delle pagine ufficiali del 21/10/2026.
+- Guardia medica: in Valle d'Aosta si chiama il 112.
+- Sede INPS di Aosta.
+
 ## 21/10/2026 — Piemonte: i numeri utili delle 8 province
 - 108 numeri delle ASL (le quattro di Torino insieme nella provincia di Torino, CN1 e CN2 a Cuneo), controllati nelle copie delle pagine ufficiali del 21/10/2026.
 - Guardia medica: 116117 in tutta la regione; prenotazioni al CUP Piemonte 800 000 500.
