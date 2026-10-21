@@ -171,7 +171,7 @@ function guideSources(m) {
 <ul class="clean">
 ${list.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a></li>`).join('\n')}
 </ul>
-<p class="muted">Sono informazioni generali, non il parere di un avvocato o di un medico. ${checkWith(m.id, 'azienda sanitaria (ASL)')}${dates.length ? ` Informazioni controllate il ${dateIt(dates[0])}.` : ''}</p>
+<p class="muted">Sono informazioni generali, non il parere di un avvocato o di un medico. ${checkWith(m.id)}${dates.length ? ` Informazioni controllate il ${dateIt(dates[0])}.` : ''}</p>
 <!-- /fonti -->`;
 }
 

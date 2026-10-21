@@ -3,7 +3,7 @@
 // È il modulo di prova per più regioni (docs/regioni.md, passo 3): cambiando regione i dati si ricaricano
 // senza ricaricare la pagina; per una regione non ancora attiva resta la parte nazionale e l'invito a scriverci.
 // La provincia scelta va nell'indirizzo (#palermo), così la pagina si può condividere.
-import { esc, loadJSON, loadRegional, renderFooter, helpBox, sourcesBox, callButton, hideHeadingEmoji, aslLabel, regioneInfo, inRegione, regione, regioneDeiDati, regioneNonPronta } from './common.js';
+import { esc, loadJSON, loadRegional, renderFooter, helpBox, sourcesBox, callButton, hideHeadingEmoji, aslLabel, regioneInfo, inRegione, regione, regioneDeiDati, regioneNonPronta, setRegione } from './common.js';
 import { needsRegion, regionChoices, changeRegionLink, regionAction, regionMissing } from './flow.js';
 
 const ROOT = '../';
@@ -140,9 +140,17 @@ async function ridisegna() {
   document.getElementById('regione')?.scrollIntoView({ block: 'start' });
 }
 
+// Arrivati da un'altra pagina per cambiare regione (numeri-utili/?torna=/pagina/#regione): scelta la regione,
+// si torna lì. Solo indirizzi di questo sito («/…», mai «//altro-sito»).
+const torna = (() => {
+  const t = new URLSearchParams(location.search).get('torna');
+  return t && /^\/(?!\/)/.test(t) ? t : '';
+})();
+
 app.addEventListener('click', (e) => {
   // Scelta della regione: la pagina ha una schermata sola, «Cambia regione» la ridisegna.
   const btn = e.target.closest('button[data-action="region"], button[data-action="change-region"]');
+  if (btn && btn.dataset.action === 'region' && torna) { setRegione(btn.dataset.region); location.assign(torna); return; }
   if (btn) regionAction(btn, { current: 'province', render: ridisegna, go: ridisegna });
 });
 

@@ -397,6 +397,12 @@ table.fields th, table.fields td { border-bottom-color: var(--border); }
 .js-only { display: none; }
 .js .js-only { display: block; }
 .js .static-fallback { display: none; }
+/* Finché js/common.js non ha messo le icone disegnate e la banda colorata, la pagina non si vede:
+   altrimenti per un attimo comparirebbero le emoji e la pagina senza banda. Se lo script non parte,
+   dopo 1,5 secondi si vede comunque (animazione). common.js aggiunge la classe «pronto». */
+.js:not(.pronto) body > * { visibility: hidden; animation: gs-mostra 0s 1.5s forwards; }
+@keyframes gs-mostra { to { visibility: visible; } }
+
 .static-list { padding-left: 1.2rem; }
 .static-list li { margin: 8px 0; }
 
