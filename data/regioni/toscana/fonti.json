@@ -1,0 +1,293 @@
+{
+ "_note": "Toscana in preparazione: solo gli indirizzi delle pagine ufficiali da far copiare al server in Italia (tools/copie.mjs). Dalle homepage (site_url) il server segue anche i link su contatti, URP, CUP, guardia medica, PUA e cure domiciliari. Indirizzi trovati con il motore di ricerca, nessuna pagina ancora letta: i numeri si scrivono solo leggendo le copie (docs/regola-numeri.md). Le province delle aziende vanno confermate sulle pagine.",
+ "asl": [
+  {
+   "id": "regione-toscana",
+   "name": "Regione Toscana",
+   "tipo": "regione",
+   "pagine": [
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.toscana.it/salute"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.toscana.it/prenotare-visite-ed-esami"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.toscana.it/-/cup-telefonico"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.toscana.it/-/cup-online"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.toscana.it/numero-unico-europeo-per-le-cure-non-urgenti-116117"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.toscana.it/-/servizio-di-continuit%C3%A0-assistenziale-guardia-medica"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.toscana.it/it/-/nuovo-numero-del-servizio-di-continuit%C3%A0-assistenziale"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.toscana.it/emergenza-e-112"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.toscana.it/-/fascicolo-sanitario-elettronico"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://fascicolosanitario.regione.toscana.it/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.toscana.it/-/toscana-salute"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.toscana.it/-/accesso-ai-servizi-on-line"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.toscana.it/-/infosanita"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.toscana.it/cittadini-per-la-salute"
+    }
+   ]
+  },
+  {
+   "id": "inps-toscana",
+   "name": "INPS: sedi in Toscana",
+   "tipo": "inps",
+   "pagine": [
+    {
+     "tipo": "arezzo",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.050000.050000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "firenze",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.300000.300000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "grosseto",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.360000.360000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "livorno",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.420000.420000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "lucca",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.430000.430000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "massa-carrara",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.460000.460000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "pisa",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.620000.620000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "pistoia",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.630000.630000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "prato",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.300100.300100-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "siena",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.750000.750000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "toscana (direzione regionale)",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.308000.308000-elencoStruttureInps.html"
+    }
+   ]
+  },
+  {
+   "id": "usl-toscana-centro",
+   "name": "Azienda USL Toscana Centro",
+   "tipo": "asl",
+   "province": [
+    "Firenze",
+    "Prato",
+    "Pistoia",
+    "Empoli"
+   ],
+   "site_url": "https://www.uslcentro.toscana.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.uslcentro.toscana.it/urp"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.uslcentro.toscana.it/urp?view=category&id=569"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://uslcentro.toscana.it/index.php/numeri-utili/10052-cup-call-center"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.uslcentro.toscana.it/diagnosi-e-cura/la-prenotazione-di-visite-e-esami"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.uslcentro.toscana.it/diagnosi-e-cura/la-prenotazione-di-visite-e-esami/prenotare-un-esame-o-visita/come-prenotare-le-prestazioni-specialistiche"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.uslcentro.toscana.it/prenotare-visite-ed-esami"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.uslcentro.toscana.it/diagnosi-e-cura/la-prenotazione-di-visite-e-esami/prenotare-un-esame-o-visita/liste-di-attesa"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.uslcentro.toscana.it/guardia-medica/guardia-medica-sedi-territoriali"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://uslcentro.toscana.it/urp?catid=569&id=21057%3Acontatti-guardia-medica&view=article"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.uslcentro.toscana.it/emergenza-e-urgenza/guardia-medica-turistica"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.uslcentro.toscana.it/dipartimento-servizi-sociali/accesso-al-servizio-punti-unici-di-accesso-e-segretariato-sociale/operatore-del-punto-insieme"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.uslcentro.toscana.it/dipartimento-servizi-sociali/disabilita/disabilita-accesso-e-percorsi"
+    }
+   ]
+  },
+  {
+   "id": "usl-toscana-nord-ovest",
+   "name": "Azienda USL Toscana Nord Ovest",
+   "tipo": "asl",
+   "province": [
+    "Livorno",
+    "Lucca",
+    "Massa-Carrara",
+    "Pisa",
+    "Versilia"
+   ],
+   "site_url": "https://www.uslnordovest.toscana.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.uslnordovest.toscana.it/urp"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.uslnordovest.toscana.it/index.php?option=com_content&view=article&id=5&catid=37"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.uslnordovest.toscana.it/urp/reclami-e-segnalazioni"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.uslnordovest.toscana.it/come-fare-per/prenotare-visite-ed-esami-3"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.uslnordovest.toscana.it/sportelli-cup"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.uslnordovest.toscana.it/come-fare-per/zerocode-prenotare-prelievi-sportelli-cup-ritiro-farmaci"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.uslnordovest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.uslnordovest.toscana.it/come-fare-per/accedere-ai-servizi-per-gli-anziani-non-autosufficienti"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.uslnordovest.toscana.it/servizi-e-strutture/casa-della-comunita"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.uslnordovest.toscana.it/servizi-online"
+    }
+   ]
+  },
+  {
+   "id": "usl-toscana-sud-est",
+   "name": "Azienda USL Toscana Sud Est",
+   "tipo": "asl",
+   "province": [
+    "Arezzo",
+    "Grosseto",
+    "Siena"
+   ],
+   "site_url": "https://www.uslsudest.toscana.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.uslsudest.toscana.it/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.uslsudest.toscana.it/ufficio-relazioni-con-il-pubblico/urp-arezzo"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.uslsudest.toscana.it/ufficio-relazioni-con-il-pubblico/urp-grosseto"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.uslsudest.toscana.it/ufficio-relazioni-con-il-pubblico/urp-siena"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.uslsudest.toscana.it/index.php/numeri-utili"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.uslsudest.toscana.it/punto-informazione"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.uslsudest.toscana.it/come-fare-per/prenotare-visite-o-esami"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.uslsudest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.uslsudest.toscana.it/servizi-e-strutture/punti-unici-di-accesso-pua"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.uslsudest.toscana.it/servizi-e-strutture/assistenza-domiciliare"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.uslsudest.toscana.it/servizi-e-strutture/assistenza-domiciliare/provincia-di-arezzo"
+    }
+   ]
+  }
+ ]
+}

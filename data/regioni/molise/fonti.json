@@ -1,0 +1,135 @@
+{
+ "_note": "Molise in preparazione: solo gli indirizzi delle pagine ufficiali da far copiare al server in Italia (tools/copie.mjs). Dalle homepage (site_url) il server segue anche i link su contatti, URP, CUP, guardia medica, PUA e cure domiciliari. Indirizzi trovati con il motore di ricerca, nessuna pagina ancora letta: i numeri si scrivono solo leggendo le copie (docs/regola-numeri.md). Le province delle aziende vanno confermate sulle pagine.",
+ "asl": [
+  {
+   "id": "regione-molise",
+   "name": "Regione Molise",
+   "tipo": "regione",
+   "pagine": [
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/35"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/129"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/780"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/17990"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/18220"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/22433"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/18139"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/18807"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/18189"
+    }
+   ]
+  },
+  {
+   "id": "inps-molise",
+   "name": "INPS: sedi in Molise",
+   "tipo": "inps",
+   "pagine": [
+    {
+     "tipo": "campobasso",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.190000.190000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "isernia",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.940000.940000-elencoStruttureInps.html"
+    }
+   ]
+  },
+  {
+   "id": "asrem",
+   "name": "ASReM - Azienda Sanitaria Regionale del Molise",
+   "tipo": "asl",
+   "province": [
+    "Campobasso",
+    "Isernia"
+   ],
+   "site_url": "https://www.asrem.molise.it/",
+   "pagine": [
+    {
+     "tipo": "contatti",
+     "url": "https://www.asrem.molise.it/contatti/"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.asrem.molise.it/servizi-per-il-cittadino/urp/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asrem.molise.it/servizi-per-il-cittadino/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asrem.molise.it/servizi-per-il-cittadino/cup-pass/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asrem.molise.it/2021/06/03/call-center-sanitario/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asrem.molise.it/servizi-per-il-cittadino/fascicolo-sanitario-elettronico/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asrem.molise.it/lazienda/i-distretti-socio-sanitari/cure-domiciliari/cure-domiciliari-distretto-di-termoli/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asrem.molise.it/servizi-per-il-cittadino/modulistica/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asrem.molise.it/lazienda/i-distretti-socio-sanitari/distretto-socio-sanitario-di-campobasso/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asrem.molise.it/lazienda/i-distretti-socio-sanitari/distretto-socio-sanitario-di-isernia/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asrem.molise.it/lazienda/i-distretti-socio-sanitari/distretto-socio-sanitario-di-termoli/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.asrem.molise.it/lazienda/i-distretti-socio-sanitari/distretto-socio-sanitario-di-termoli/i-contatti-del-distretto-di-termoli/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asrem.molise.it/lazienda/i-distretti-socio-sanitari/distretto-socio-sanitario-di-termoli/gli-orari-degli-ambulatori-distrettuali/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asrem.molise.it/lazienda/i-distretti-socio-sanitari/i-consultori-familiari/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asrem.molise.it/servizi-per-il-cittadino/screening-e-prevenzione/le-vaccinazioni/"
+    }
+   ]
+  }
+ ]
+}

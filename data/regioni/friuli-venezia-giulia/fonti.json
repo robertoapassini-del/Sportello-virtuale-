@@ -1,0 +1,225 @@
+{
+ "_note": "Friuli-Venezia Giulia in preparazione: solo gli indirizzi delle pagine ufficiali da far copiare al server in Italia (tools/copie.mjs). Dalle homepage (site_url) il server segue anche i link su contatti, URP, CUP, guardia medica, PUA e cure domiciliari. Indirizzi trovati con il motore di ricerca, nessuna pagina ancora letta: i numeri si scrivono solo leggendo le copie (docs/regola-numeri.md). Le province delle aziende vanno confermate sulle pagine.",
+ "asl": [
+  {
+   "id": "regione-friuli-venezia-giulia",
+   "name": "Regione Friuli-Venezia Giulia",
+   "tipo": "regione",
+   "pagine": [
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/sistema-sociale-sanitario/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/interventi-socio-sanitari/FOGLIA24/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/liste-di-attesa/argomento.html"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://arcs.sanita.fvg.it/it/servizio-sanitario-regionale-friuli-venezia-giulia-fvg/cup-regionale/call-center-per-la-prenotazioni-di-visite-ed-esami"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://arcs.sanita.fvg.it/it/servizio-sanitario-regionale-friuli-venezia-giulia-fvg/cup-regionale/prenotazione-di-esami-e-visite-ed-annullo"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://arcs.sanita.fvg.it/it/informazioni-per-i-cittadini/come-contattare-il-cup-e-prenotare-una-prestazione-sanitaria"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/sistema-sociale-sanitario/FOGLIA12/articolo.html"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://arcs.sanita.fvg.it/it/notizie/116117-numero-unico-europeo-la-sanita-non-urgente"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://arcs.sanita.fvg.it/it/informazioni-per-i-cittadini/ufficio-relazioni-con-il-pubblico-urp"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://arcs.sanita.fvg.it/en/aree-tematiche/sistema-sanitario-regionale/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://sesamo.sanita.fvg.it/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://sesamo.sanita.fvg.it/sesamo/res/brochure/html_version/sesamo-brochure-a/pagina-4.html"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/GEN/amministrazione-trasparente/FOGLIA16/FOGLIA5/"
+    }
+   ]
+  },
+  {
+   "id": "inps-friuli-venezia-giulia",
+   "name": "INPS: sedi in Friuli-Venezia Giulia",
+   "tipo": "inps",
+   "pagine": [
+    {
+     "tipo": "trieste",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.850000.850000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "gorizia",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.350000.350000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "udine",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.860000.860000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "pordenone",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.930000.930000-elencoStruttureInps.html"
+    }
+   ]
+  },
+  {
+   "id": "asugi",
+   "name": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI)",
+   "tipo": "asl",
+   "province": [
+    "Trieste",
+    "Gorizia"
+   ],
+   "site_url": "https://asugi.sanita.fvg.it/",
+   "pagine": [
+    {
+     "tipo": "contatti",
+     "url": "https://asugi.sanita.fvg.it/it/schede/menu_azienda/azienda_informa/contatti_principali.html"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://asugi.sanita.fvg.it/it/strutture/a_direz_generale/creaus/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://asugi.sanita.fvg.it/it/schede/s_dg_staff/creaus_numeroverde_sanita.html"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://asugi.sanita.fvg.it/it/servizi/sportelli_cup.html"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://asugi.sanita.fvg.it/it/servizi/gut_numero_unico.html"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://asugi.sanita.fvg.it/it/news/2026_01_16_numero_unico_servizi_sanitari_non_urgenti.html"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://asugi.sanita.fvg.it/it/strutture/direz_sanitaria/dad/area_isontina/go_dist_alto_isontino/pua_ai/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://asugi.sanita.fvg.it/it/schede/pagine_nuove/nuove_pagine/SID.html"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://asugi.sanita.fvg.it/it/strutture/direz_serv_sociosan/dad/area_giuliana/SC_Dist_Trieste1/sc_tut_sal_adulti_anziani_d1/ss_cure_amb_dom_d1"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://asugi.sanita.fvg.it/it/servizi/index.html"
+    }
+   ]
+  },
+  {
+   "id": "asufc",
+   "name": "Azienda sanitaria universitaria Friuli Centrale (ASU FC)",
+   "tipo": "asl",
+   "province": [
+    "Udine"
+   ],
+   "site_url": "https://asufc.sanita.fvg.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://asufc.sanita.fvg.it/de/strutture/dir_generale/strut_staff_dir_gen/ufficio_comunicazione/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://asufc.sanita.fvg.it/it/schede/cup.html"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://asufc.sanita.fvg.it/it/schede/guardia_medica.html"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://asufc.sanita.fvg.it/it/news/116117.html"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://asufc.sanita.fvg.it/it/servizi/infermiere_comunita.html"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://asufc.sanita.fvg.it/it/schede/cdc.html"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://asufc.sanita.fvg.it/it/schede/distretti.html"
+    }
+   ]
+  },
+  {
+   "id": "asfo",
+   "name": "Azienda sanitaria Friuli Occidentale (AS FO)",
+   "tipo": "asl",
+   "province": [
+    "Pordenone"
+   ],
+   "site_url": "https://asfo.sanita.fvg.it/",
+   "pagine": [
+    {
+     "tipo": "contatti",
+     "url": "https://asfo.sanita.fvg.it/it/servizi/contatti.html"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://asfo.sanita.fvg.it/it/servizi/prenotazione_prestazioni.html"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://asfo.sanita.fvg.it/it/servizi/prenotazione_prestazioni_ambulatoriali.html"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://asfo.sanita.fvg.it/it/servizi/guardia_medica.html"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://asfo.sanita.fvg.it/it/news/2026_04_13-01.html"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://asfo.sanita.fvg.it/it/servizi/punto_unico_accesso.html"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://asfo.sanita.fvg.it/it/strutture/direzione_sanitaria/assist_territ/distretti/punto_unico_accesso/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://asfo.sanita.fvg.it/it/strutture/direzione_sanitaria/assist_territ/distretti/assist_inferm_territ/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://asfo.sanita.fvg.it/it/strutture/direzione_sanitaria/assist_territ/distretti/"
+    }
+   ]
+  }
+ ]
+}

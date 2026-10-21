@@ -1,0 +1,227 @@
+{
+ "_note": "Abruzzo in preparazione: solo gli indirizzi delle pagine ufficiali da far copiare al server in Italia (tools/copie.mjs). Dalle homepage (site_url) il server segue anche i link su contatti, URP, CUP, guardia medica, PUA e cure domiciliari. Indirizzi trovati con il motore di ricerca, nessuna pagina ancora letta: i numeri si scrivono solo leggendo le copie (docs/regola-numeri.md). Le province delle aziende vanno confermate sulle pagine.",
+ "asl": [
+  {
+   "id": "regione-abruzzo",
+   "name": "Regione Abruzzo",
+   "tipo": "regione",
+   "pagine": [
+    {
+     "tipo": "regione",
+     "url": "https://sanita.regione.abruzzo.it/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://sanita.regione.abruzzo.it/canale-cittadini"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://sanita.regione.abruzzo.it/aziende_sanitarie"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://sanita.regione.abruzzo.it/canale-assistenza-territoriale/cup"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://trasparenza.regione.abruzzo.it/servizi-erogati/carta-servizi/servizio-online-sportello-centro-unico-prenotazioni-regionale"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://sanita.regione.abruzzo.it/servizi-online"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.abruzzo.it/notizie/attivo-da-oggi-il-nuovo-numero-unico-116117-l-assistenza-sanitaria-non-urgente"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://sanita.regione.abruzzo.it/fse"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.abruzzo.it/content/servizio-line-fascicolo-sanitario-elettronico"
+    }
+   ]
+  },
+  {
+   "id": "inps-abruzzo",
+   "name": "INPS: sedi in Abruzzo",
+   "tipo": "inps",
+   "pagine": [
+    {
+     "tipo": "l'aquila",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.380000.380000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "chieti",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.230000.230000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "pescara",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.600000.600000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "teramo",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.790000.790000-elencoStruttureInps.html"
+    }
+   ]
+  },
+  {
+   "id": "asl-avezzano-sulmona-laquila",
+   "name": "ASL 1 Avezzano - Sulmona - L'Aquila",
+   "tipo": "asl",
+   "province": [
+    "L'Aquila"
+   ],
+   "site_url": "https://www.asl1abruzzo.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.asl1abruzzo.it/pagina529_urp.html"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.asl1abruzzo.it/pagina314_contatti.html"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asl1abruzzo.it/pagina65_informazioni-per-lutenza.html"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asl1abruzzo.it/pagina509_prenota-e-disdici-telefonicamente.html"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asl1abruzzo.it/pagina536_liste-dattesa.html"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asl1abruzzo.it/pagina37_continuit-assistenziale-ex-guardia-medica.html"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asl1abruzzo.it/pagina516_cure-domiciliari.html"
+    }
+   ]
+  },
+  {
+   "id": "asl-lanciano-vasto-chieti",
+   "name": "ASL 2 Lanciano - Vasto - Chieti",
+   "tipo": "asl",
+   "province": [
+    "Chieti"
+   ],
+   "site_url": "https://www.asl2abruzzo.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.info.asl2abruzzo.it/urp/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asl2abruzzo.it/centro-unico-di-prenotazione-cup/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asl2abruzzo.it/come-fare-per/usare-il-cup-online-e-pagare-il-ticket/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asl2abruzzo.it/strutture/continuita-assistenziale/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asl2abruzzo.it/assistenza-domiciliare-in-provincia-di-chieti-cambia-il-modello-liberta-di-scelta-per-chi-si-cura-a-casa/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asl2abruzzo.it/strutture/altre-strutture-del-territorio/sede-di-chieti/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asl2abruzzo.it/strutture/altre-strutture-del-territorio/sede-di-lanciano/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asl2abruzzo.it/strutture/altre-strutture-del-territorio/sede-di-vasto/"
+    }
+   ]
+  },
+  {
+   "id": "asl-pescara",
+   "name": "ASL Pescara",
+   "tipo": "asl",
+   "province": [
+    "Pescara"
+   ],
+   "site_url": "https://www.asl.pe.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.asl.pe.it/Sezione.jsp?idSezione=59"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asl.pe.it/Sezione.jsp?titolo=CUP+ASL+Pescara&idSezione=1006"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asl.pe.it/DettaglioStruttura.jsp?id=4&idSezione=11"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asl.pe.it/Sezione.jsp?idSezione=898"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asl.pe.it/Sezione.jsp?titolo=faq&idSezione=1762"
+    }
+   ]
+  },
+  {
+   "id": "asl-teramo",
+   "name": "ASL Teramo",
+   "tipo": "asl",
+   "province": [
+    "Teramo"
+   ],
+   "site_url": "https://www.aslteramo.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aslteramo.it/uo_complesse/ufficio-relazioni-con-il-pubblico/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aslteramo.it/contatti/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aslteramo.it/cittadini-utenti/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslteramo.it/prenotazioni/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslteramo.it/prenotazioni/informazioni-sui-cup/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslteramo.it/servizi-sanitari/guardia-medica/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslteramo.it/faqwd/118-pronto-soccorso-e-guardia-medica-come-attivare-i-servizi-di-urgenzaemergenza-sanitaria/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aslteramo.it/servizio-cure-domiciliari-adi/"
+    }
+   ]
+  }
+ ]
+}

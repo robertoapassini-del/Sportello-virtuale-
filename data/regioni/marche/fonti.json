@@ -1,0 +1,302 @@
+{
+ "_note": "Marche in preparazione: solo gli indirizzi delle pagine ufficiali da far copiare al server in Italia (tools/copie.mjs). Dalle homepage (site_url) il server segue anche i link su contatti, URP, CUP, guardia medica, PUA e cure domiciliari. Indirizzi trovati con il motore di ricerca, nessuna pagina ancora letta: i numeri si scrivono solo leggendo le copie (docs/regola-numeri.md). Le province delle aziende vanno confermate sulle pagine.",
+ "asl": [
+  {
+   "id": "regione-marche",
+   "name": "Regione Marche",
+   "tipo": "regione",
+   "pagine": [
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.marche.it/Regione-Utile/Salute"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.marche.it/Regione-Utile/Salute/Servizi-delle-AST"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.marche.it/Regione-Utile/Salute/Strumenti-di-accesso-a-myCUPMarche"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.marche.it/Entra-in-Regione/URP/La-Regione-risponde/Faq/Post/86528/Come-posso-prenotare-una-prestazione-sanitaria-on-line-tramite-il-portale-o-l-App-MyCupMarche"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.marche.it/News-ed-Eventi/Post/111991/CUP-Marche-occhio-alle-truffe"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.marche.it/News-ed-Eventi/Post/112848/Attenzione-a-falsi-SMS-e-chiamate-da-numeri-che-iniziano-per-899-e-si-spacciano-per-il-servizio-CUP-non-rispondere-n%C3%A9-richiamare"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.marche.it/News-ed-Eventi/Post/112351/Progetto-definitivo-per-la-realizzazione-della-centrale-operativa-regionale-NEA-116117-Numero-europeo-armonizzato-per-cure-mediche-non-urgenti"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.marche.it/ars/Aree-di-Attivit%C3%A0/Area-Emergenza"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.marche.it/Regione-Utile/Salute/Fascicolo-Sanitario-Elettronico"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.marche.it/Entra-in-Regione/URP/La-Regione-risponde/Faq/Post/86533/Cos-%C3%A8-il-Fascicolo-Sanitario-Elettronico"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.marche.it/Entra-in-Regione/URP/La-Regione-risponde/Faq/Post/86534/Come-si-accede-al-Fascicolo-Sanitario-Elettronico"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://fse-classic.sanita.marche.it/web/portal/fascicolo-sanitario-elettronico"
+    }
+   ]
+  },
+  {
+   "id": "inps-marche",
+   "name": "INPS: sedi in Marche",
+   "tipo": "inps",
+   "pagine": [
+    {
+     "tipo": "ancona",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.030000.030000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "pesaro e urbino",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.590000.590000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "pesaro e urbino (agenzia urbino)",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.590004.590004-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "macerata",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.440000.440000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "fermo",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.060001.060001-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "ascoli piceno",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.060000.060000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "marche (direzione regionale)",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.038000.038000-elencoStruttureInps.html"
+    }
+   ]
+  },
+  {
+   "id": "ast-pesaro-urbino",
+   "name": "AST Pesaro Urbino",
+   "tipo": "asl",
+   "province": [
+    "Pesaro e Urbino"
+   ],
+   "site_url": "https://www.astpu.marche.it/it",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.astpu.marche.it/it/organizzazione/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.astpu.marche.it/it/organizzazione/uffici-di-staff/urp-e-comunicazione"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.astpu.marche.it/it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.astpu.marche.it/it/strutture/uffici-amministrativi"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.astpu.marche.it/it/come-fare-per/prenotare-disdire-o-spostare-una-visita-esame-diagnostico"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.astpu.marche.it/it/strutture/guardia-medica-continuita-assistenziale"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.astpu.marche.it/it/strutture/uffici-amministrativi/punto-unico-di-accesso-pua-pesaro"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astpu.marche.it/it/utenti/prestatori-di-cura"
+    }
+   ]
+  },
+  {
+   "id": "ast-ancona",
+   "name": "AST Ancona",
+   "tipo": "asl",
+   "province": [
+    "Ancona"
+   ],
+   "site_url": "https://www.astancona.marche.it",
+   "pagine": [
+    {
+     "tipo": "contatti",
+     "url": "https://www.astancona.marche.it/it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.astancona.marche.it/it/organizzazione/unita-operativa-complessa/comunicazione-formazione-e-urp"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.astancona.marche.it/it/come-fare-per/prenotare-visite-ed-esami"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.astancona.marche.it/it/organizzazione/centro-unico-prenotazioni"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.astancona.marche.it/it/servizi-e-prestazioni/servizi-territoriali/servizio-di-continuita-assistenziale"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.astancona.marche.it/it/servizi-e-prestazioni/servizi-territoriali/punto-unico-di-accesso-pua"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.astancona.marche.it/it/servizi-e-prestazioni/servizi-territoriali/cure-domiciliari-distretto-ancona"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astancona.marche.it/it/servizi-e-prestazioni/servizi-territoriali"
+    }
+   ]
+  },
+  {
+   "id": "ast-macerata",
+   "name": "AST Macerata",
+   "tipo": "asl",
+   "province": [
+    "Macerata"
+   ],
+   "site_url": "https://www.astmc.marche.it/it",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.astmc.marche.it/it/organizzazione/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.astmc.marche.it/it/organizzazione/unita-operativa-complessa/ufficio-relazioni-con-il-pubblico-urp"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.astmc.marche.it/it/servizi-e-prestazioni/sportelli-front-office/sedi-anagrafe-prenotazioni-cassa"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.astmc.marche.it/it/ast-comunica/notizie/attenzione-sms-fraudolenti-a-nome-del-cup-marche"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.astmc.marche.it/it/organizzazione/unita-operativa-complessa/uoc-organizzazione-dei-servizi-sanitari-di-base-distretto-macerata"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astmc.marche.it/it/strutture/altre-strutture"
+    }
+   ]
+  },
+  {
+   "id": "ast-fermo",
+   "name": "AST Fermo",
+   "tipo": "asl",
+   "province": [
+    "Fermo"
+   ],
+   "site_url": "https://www.astfm.marche.it",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.astfm.marche.it/it/organizzazione/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.astfm.marche.it/it/organizzazione/uffici-di-staff/urp"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.astfm.marche.it/it/organizzazione/centro-unico-prenotazioni"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/sportelli-front-office/sportelli-cup-presidio-ospedaliero-fermo"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/visite-e-prestazioni-specialistiche/guardia-medica-turistica"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.astfm.marche.it/it/strutture/altre-strutture/santa-vittoria-in-matenano-sede-continuita-assistenziale"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/sportelli-front-office/p-u-a"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/servizi-domiciliari/cure-domiciliari"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/servizi-amministrativi/fascicolo-sanitario-elettronico"
+    }
+   ]
+  },
+  {
+   "id": "ast-ascoli-piceno",
+   "name": "AST Ascoli Piceno",
+   "tipo": "asl",
+   "province": [
+    "Ascoli Piceno"
+   ],
+   "site_url": "https://www.astap.marche.it/it",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.astap.marche.it/it/organizzazione/uffici-di-staff/ufficio-relazioni-con-il-pubblico-urp"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.astap.marche.it/it/come-fare-per/prenotare-disdire-o-spostare-una-visita-esame-diagnostico"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.astap.marche.it/it/servizi-e-prestazioni/sportelli-front-office/centro-unico-prenotazioni"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.astap.marche.it/it/organizzazione/unita-operativa-complessa/uoc-cure-primarie"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.astap.marche.it/it/servizi-e-prestazioni/servizi-domiciliari/adi-assistenza-domiciliare-integrata-ap"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.astap.marche.it/it/servizi-e-prestazioni/servizi-domiciliari/adi-assistenza-domiciliare-integrata-sbt"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astap.marche.it/it/organizzazione/unita-operativa-complessa/uoc-distretto-di-ascoli-piceno"
+    }
+   ]
+  }
+ ]
+}

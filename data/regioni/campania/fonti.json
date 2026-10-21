@@ -1,0 +1,304 @@
+{
+ "_note": "Campania in preparazione: solo gli indirizzi delle pagine ufficiali da far copiare al server in Italia (tools/copie.mjs). Dalle homepage (site_url) il server segue anche i link su contatti, URP, CUP, guardia medica, PUA e cure domiciliari. Indirizzi trovati con il motore di ricerca, nessuna pagina ancora letta: i numeri si scrivono solo leggendo le copie (docs/regola-numeri.md). Le province delle aziende vanno confermate sulle pagine.",
+ "asl": [
+  {
+   "id": "regione-campania",
+   "name": "Regione Campania",
+   "tipo": "regione",
+   "pagine": [
+    {
+     "tipo": "regione",
+     "url": "https://sinfonia.regione.campania.it/preview/cup"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://portale.soresa.it/notizie/La-nuova-App-SINFONIA-Salute"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.campania.it/comunicazione/area-stampa/comunicati/06032026-comunicato-n-117-provvedimenti-giunta-regionale"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.campania.it/regione/uffici-e-organizzazione/2040000-direzione-generale-tutela-salute-coordinamento-sistema-sanitario-regionale"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.campania.it/imprese/it/tematiche/fascicolo-sanitario-elettronico/fascicolo-sanitario-elettronico-fse"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.campania.it/regione-informa/notizie/fascicolo-sanitario-elettronico-20-cos-perche-esprimere-consenso"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.campania.it/aree-tematiche/sanita/sanita-digitale"
+    }
+   ]
+  },
+  {
+   "id": "inps-campania",
+   "name": "INPS: sedi in Campania",
+   "tipo": "inps",
+   "pagine": [
+    {
+     "tipo": "regionale",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.518000.518000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "napoli",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.510000.510000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "avellino",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.080000.080000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "benevento",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.110000.110000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "caserta",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.200000.200000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "salerno",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.720000.720000-elencoStruttureInps.html"
+    }
+   ]
+  },
+  {
+   "id": "asl-avellino",
+   "name": "ASL Avellino",
+   "tipo": "asl",
+   "province": [
+    "Avellino"
+   ],
+   "site_url": "https://www.aslavellino.it/index.php/it/",
+   "pagine": [
+    {
+     "tipo": "contatti",
+     "url": "https://www.aslavellino.it/index.php/it/contatti-1"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.aslavellino.it/index.php/it/contatti-1/urp"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aslavellino.it/index.php/it/contatti-1/numeri-utili"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aslavellino.it/index.php/it/contatti-1/sedi-e-orari"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslavellino.it/index.php/it/contatti-1/cup"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslavellino.it/index.php/it/come-fare-per/prenotazioni-pagamenti-e-disdette-1"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslavellino.it/index.php/it/azienda/strutture-2/continuita-assistenziale-ex-guardia-medica"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aslavellino.it/index.php/it/azienda/l-amministrazione/servizi-centrali/area-sanitaria/u-o-c-coordinamento-socio-sanitario"
+    }
+   ]
+  },
+  {
+   "id": "asl-benevento",
+   "name": "ASL Benevento",
+   "tipo": "asl",
+   "province": [
+    "Benevento"
+   ],
+   "site_url": "https://www.aslbenevento.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aslbenevento.it/unita-operativa/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aslbenevento.it/servizio-strutturale/centralino-aziendale"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslbenevento.it/servizio-strutturale/cup-aziendale"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslbenevento.it/notizie/informativa-prenotazione-visite-ed-esami"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslbenevento.it/notizie/comunicato-presidio-di-continuita-assistenziale-ex-guardia-medica"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aslbenevento.it/servizi-funzionali/lista-servizi-funzionali/assistenza-sociosanitaria-domiciliare-e-territoriale"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aslbenevento.it/aree-centrali/distretto-sanitario-benevento"
+    }
+   ]
+  },
+  {
+   "id": "asl-caserta",
+   "name": "ASL Caserta",
+   "tipo": "asl",
+   "province": [
+    "Caserta"
+   ],
+   "site_url": "https://www.aslcaserta.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aslcaserta.it/index.php/u-r-p-16/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aslcaserta.it/index.php/telefono-e-posta-elettronica/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslcaserta.it/index.php/cup/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslcaserta.it/index.php/punti-di-prenotazione-attivi/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslcaserta.it/index.php/assistenza-sanitaria-di-base-20/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://portalesalute.aslcaserta.it/servizi-asl-caserta/adi-distretto-12-e-13-caserta/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://portalesalute.aslcaserta.it/"
+    }
+   ]
+  },
+  {
+   "id": "asl-napoli-1-centro",
+   "name": "ASL Napoli 1 Centro",
+   "tipo": "asl",
+   "province": [
+    "Napoli (città)"
+   ],
+   "site_url": "https://www.aslnapoli1centro.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aslnapoli1centro.it/urp_1"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslnapoli1centro.it/cup"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslnapoli1centro.it/come-faccio-per-prenotare-visite-ed-esami-"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslnapoli1centro.it/guardia-medica-emergenza-territoriale"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aslnapoli1centro.it/come-richiedere-visite-a-domicilio-"
+    }
+   ]
+  },
+  {
+   "id": "asl-napoli-2-nord",
+   "name": "ASL Napoli 2 Nord",
+   "tipo": "asl",
+   "province": [
+    "Napoli (nord)"
+   ],
+   "site_url": "https://www.aslnapoli2nord.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aslnapoli2nord.it/azienda/direzione-sanitaria/u-o-c-comunicazione-marketing-ed-urp/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslnapoli2nord.it/servizio/numero-verde-prenotazioni-visite/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslnapoli2nord.it/la-continuita-assistenziale-guardia-medica/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aslnapoli2nord.it/servizio/porta-unica-di-accesso/"
+    }
+   ]
+  },
+  {
+   "id": "asl-napoli-3-sud",
+   "name": "ASL Napoli 3 Sud",
+   "tipo": "asl",
+   "province": [
+    "Napoli (sud)"
+   ],
+   "site_url": "https://www.aslnapoli3sud.it/",
+   "pagine": [
+    {
+     "tipo": "cup",
+     "url": "https://www.aslnapoli3sud.it/en/-/c.u.p.-centro-unico-di-prenotazione"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslnapoli3sud.it/continuit%C3%A0-assistenziale-ex-guardia-medica"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://aslnapoli3sud.it/en/web/guest/direttore-59/assistenza-domiciliare-cure-palliative"
+    }
+   ]
+  },
+  {
+   "id": "asl-salerno",
+   "name": "ASL Salerno",
+   "tipo": "asl",
+   "province": [
+    "Salerno"
+   ],
+   "site_url": "https://www.aslsalerno.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aslsalerno.it/pagina2573_contatti-urp.html"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aslsalerno.it/pagina2_azienda.html"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslsalerno.it/pagina2382_cupticket.html"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslsalerno.it/archivio2_come-fare-per_0_122.html"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aslsalerno.it/archivio2_come-fare-per_0_108.html"
+    }
+   ]
+  }
+ ]
+}
