@@ -23,6 +23,8 @@ const asp = () => data.asl.find((a) => a.id === state.province);
 const deadline = () => simpleDeadline({ fromDate: state.requestDate, days: rules.deadline_days, today: todayISO() });
 
 const whatLabel = { cartella: 'la cartella clinica', referti: 'i referti o le immagini', altro: 'i documenti sanitari' };
+// Senza articoli, per l'oggetto e il testo della lettera.
+const whatPlain = { cartella: 'cartella clinica', referti: 'referti o immagini', altro: 'documenti sanitari' };
 
 function sources() {
   const a = state.province ? asp() : null;
@@ -108,7 +110,7 @@ const screens = {
       const waited = daysBetween(state.requestDate, todayISO());
       if (waited < rules.integration_days) return `Se dopo ${rules.integration_days} giorni dalla richiesta (${formatIt(from)}) non hai ancora niente, un avvocato può fare ricorso al TAR fino ${art('al', until)}${formatIt(until)}.`;
       if (daysBetween(todayISO(), until) >= 0) return `Con un avvocato puoi fare ricorso al TAR fino ${art('al', until)}<strong>${formatIt(until)}</strong>.`;
-      return `Il tempo per il ricorso al TAR su questa richiesta è finito ${art('il', until)}${formatIt(until)}. Puoi fare una nuova richiesta scritta: da quella ripartono i tempi.`;
+      return `Il tempo per il ricorso al TAR su questa richiesta è finito ${art('il', until)}${formatIt(until)}. Puoi fare una nuova richiesta scritta: da quella ripartono i ${rules.deadline_days} giorni; se il termine per il ricorso si riapra, chiedilo a un avvocato o a un'associazione.`;
     };
     const d = deadline();
     const a = asp();
@@ -133,7 +135,7 @@ const screens = {
         <h1>Sono in ritardo: puoi sollecitare</h1>
         <div class="notice bad">
           <p>Dovevano darti ${whatLabel[state.what]} entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>.</p>
-          <p>Sono passati <strong>${days(d.daysLate)} in più</strong>.</p>
+          <p>${d.daysLate === 1 ? 'È passato' : 'Sono passati'} <strong>${days(d.daysLate)} in più</strong>.</p>
         </div>
         <h2>Cosa fare, in ordine</h2>
         <ol class="big-steps">
@@ -202,13 +204,13 @@ const screens = {
           const d = deadline();
           const text = cartellaReminder({
             structure: state.structure ? `Direzione Sanitaria – ${state.structure}` : '', address: state.structureEmail, person,
-            requestDate: state.requestDate, protocol: state.protocol, what: whatLabel[state.what].replace(/^(la|i) /, ''),
+            requestDate: state.requestDate, protocol: state.protocol, what: whatPlain[state.what],
             episode: state.episode, deadline: d.deadline, days: rules.deadline_days, integrationDays: rules.integration_days, today: todayISO(),
           });
           state.letterText = text;
           document.getElementById('preview').textContent = text;
           document.getElementById('mail-btn').href = mailtoHref(state.structureEmail || '',
-            `Sollecito copia ${whatLabel[state.what].replace(/^(la|i) /, '')}${person.fullName ? ` – ${person.fullName}` : ''}`,
+            `Sollecito copia ${whatPlain[state.what]}${person.fullName ? ` – ${person.fullName}` : ''}`,
             `Buongiorno,\nin allegato il sollecito firmato, con i documenti.\n\nCordiali saluti\n${person.fullName || ''}`);
           document.getElementById('send-hint').innerHTML = state.structureEmail
             ? `📧 L'email si apre indirizzata a ${esc(state.structureEmail)}. Se è una PEC e non hai la PEC, stampa la lettera e consegnala a mano, facendoti dare una ricevuta.`

@@ -7,7 +7,7 @@ import { checkWaiting, callbackDeadline, maxWaitDays, todayISO, formatIt, parseD
 import { tutelaLetter, tutelaReminder, mailtoHref } from './letters.js';
 import { noPecBox,
   esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton, aspCalls,
-  personFields, reportErrorHref, generalContact, choice, helpBox, sourcesBox, moreHelp, hideHeadingEmoji, enableStart, aslLabel, aslIntestazione, regioneInfo, regioneLink,
+  personFields, reportErrorHref, generalContact, choice, helpBox, sourcesBox, moreHelp, hideHeadingEmoji, enableStart, aslLabel, aslIntestazione, regione, regioneInfo, regioneLink,
 } from './common.js';
 import { RICETTA_SVG } from './ricetta-svg.js';
 import { createNav, withRegion, regionAction } from './flow.js';
@@ -150,7 +150,7 @@ function aspSteps(a) {
   </ol>
   <details class="card">
     <summary>Per saperne di più su ${esc(a.name)}</summary>
-    ${a.sub_areas ? `<p>L'${aslLabel()} divide la provincia in 3 zone: ${a.sub_areas.map(esc).join('; ')}.</p>` : ''}
+    ${a.sub_areas ? `<p>L'${aslLabel()} divide la provincia in ${a.sub_areas.length} zone: ${a.sub_areas.map(esc).join('; ')}.</p>` : ''}
     ${a.details.length ? `<ul class="clean">${a.details.map((d) => `<li>${esc(d)}</li>`).join('')}</ul>` : ''}
     ${contacts.length ? `<ul class="clean">${contacts.join('')}</ul>` : ''}
     <p>La regola dice che la visita va fatta in tempo in strutture pubbliche o convenzionate.
@@ -411,7 +411,7 @@ const screens = {
             <legend>La ricetta</legend>
             <label for="f-service">Cosa c'è scritto sulla ricetta?<span class="hint">Per esempio «Visita cardiologica»</span></label>
             <input id="f-service" name="service" type="text" value="${esc(state.service || '')}">
-            <label for="f-nre">Numero della ricetta<span class="hint">Il codice lungo in alto, che inizia con 190…</span></label>
+            <label for="f-nre">Numero della ricetta<span class="hint">${regione() === 'sicilia' ? 'Il codice lungo in alto, che inizia con 190…' : 'Il codice lungo in alto (NRE)'}</span></label>
             <input id="f-nre" name="nre" type="text" value="${esc(state.nre || '')}" autocapitalize="characters">
           </fieldset>
         </form>
@@ -479,8 +479,8 @@ const screens = {
           <li><strong>Chiedi aiuto a un'associazione</strong> di pazienti: Cittadinanzattiva
             (<a href="https://www.cittadinanzattiva.it" target="_blank" rel="noopener">cittadinanzattiva.it</a>) oppure
             Associazione Luca Coscioni (<a href="https://www.associazionelucacoscioni.it" target="_blank" rel="noopener">associazionelucacoscioni.it</a>).</li>
-          <li><strong>Scrivi alla ${esc(regioneInfo().ente || 'tua Regione')}</strong>, ufficio URP dell'Assessorato della Salute${regioneLink('assessorato') ? `
-            (<a href="${esc(regioneLink('assessorato'))}" target="_blank" rel="noopener">${esc(new URL(regioneLink('assessorato')).hostname.replace(/^www\./, ''))}</a>)` : ''}.</li>
+          <li>${regioneLink('assessorato') || regione() === 'sicilia' ? `<strong>Scrivi alla ${esc(regioneInfo().ente || 'tua Regione')}</strong>, ufficio URP dell'Assessorato della Salute${regioneLink('assessorato') ? `
+            (<a href="${esc(regioneLink('assessorato'))}" target="_blank" rel="noopener">${esc(new URL(regioneLink('assessorato')).hostname.replace(/^www\./, ''))}</a>)` : ''}.` : '<strong>Scrivi alla tua Regione</strong> (guarda il sito della Regione per l\'ufficio giusto).'}</li>
         </ol>
         <div class="notice warn"><p>💶 Vai dal privato a pagamento <strong>solo se l'${aslLabel()} te lo scrive</strong>. Altrimenti potresti non avere i soldi indietro.</p></div>
         <div class="card">
@@ -569,7 +569,10 @@ function updateLetter(a, official) {
   preview.innerHTML = `<div class="letter">${esc(text)}</div>`;
   const to = a.send_to || '';
   mail.href = mailtoHref(to, subject, `Buongiorno,\nin allegato la richiesta di attivazione del percorso di tutela, firmata, con i documenti.${signoff}`);
-  if (!to) {
+  const howToEmail = (a.how_to || '').match(/[\w.+-]+@[\w-]+(?:\.[\w-]+)+/);
+  if (!to && howToEmail) {
+    hint.innerHTML = `📧 Puoi scrivere all'indirizzo indicato sopra; per sicurezza stampa la lettera e portala anche all'ufficio URP, facendoti dare una ricevuta.`;
+  } else if (!to) {
     hint.innerHTML = `🏥 Per questa ${aslLabel()} non abbiamo ancora un indirizzo sicuro. <strong>Stampa la lettera e portala all'ufficio URP</strong> o al CUP.`;
   } else if (a.channel === 'pec' || /@pec\./.test(to)) {
     hint.innerHTML = `📨 L'indirizzo dell'${aslLabel()} è una PEC (una email speciale). <strong>Se non hai la PEC, stampa la lettera e portala all'ufficio URP.</strong>`;

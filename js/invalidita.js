@@ -64,7 +64,7 @@ function screenSources() {
   const items = [...rules.sources, ...inps.sources];
   return sourcesBox(items, {
     verified: rules.last_verified,
-    note: state.province ? 'Gli indirizzi PEC dell\'INPS sono ancora da confermare con l\'ufficio.' : '',
+    note: state.province && prov() && !prov().pec_verified ? 'Gli indirizzi PEC dell\'INPS sono ancora da confermare con l\'ufficio.' : '',
   });
 }
 const regime = () => invRegime(prov(), state.certDate, rules.full_national_application);
@@ -227,8 +227,12 @@ const screens = {
       return { html: `${body}${patronato}${inpsCalls()}${disclaimer(rules.last_verified)}${restartBtn()}` };
     }
 
-    const what = d.kind === 'conclusion' ? 'La visita e il risultato dovevano arrivare' : 'La chiamata per la visita doveva arrivare';
-    const whatFuture = d.kind === 'conclusion' ? 'La visita e il risultato devono arrivare' : 'La chiamata per la visita deve arrivare';
+    // Procedura vecchia con tumore: la legge fissa la data della visita, non della chiamata.
+    const visitDate = d.kind === 'visit' && state.category === 'oncological';
+    const what = d.kind === 'conclusion' ? 'La visita e il risultato dovevano arrivare'
+      : visitDate ? 'La visita doveva arrivare' : 'La chiamata per la visita doveva arrivare';
+    const whatFuture = d.kind === 'conclusion' ? 'La visita e il risultato devono arrivare'
+      : visitDate ? 'La visita deve arrivare' : 'La chiamata per la visita deve arrivare';
     const note = d.indicative ? '<p class="muted">Questa data è indicativa: per questo caso la legge non è precisa.</p>' : '';
     const legal = d.legal ? `<p class="muted">Regola: ${esc(d.legal)}.</p>` : '';
 
@@ -247,7 +251,7 @@ const screens = {
         <h1>È tardi! Puoi sollecitare l'INPS</h1>
         <div class="notice bad">
           <p>${what} entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>.</p>
-          <p>Sono passati <strong>${days(d.daysLate)} in più</strong>.</p>
+          <p>${d.daysLate === 1 ? 'È passato' : 'Sono passati'} <strong>${days(d.daysLate)} in più</strong>.</p>
         </div>
         ${note}${legal}
         <h2>Cosa fare, in ordine</h2>

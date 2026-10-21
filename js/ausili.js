@@ -1,6 +1,6 @@
 // Modulo 4 — ausili e protesi: «la carrozzina non arriva».
 // Prima la risposta: la pagina mostra subito la risposta scritta; il conto e il sollecito partono dal pulsante.
-// Regola: il tempo per autorizzare lo fissa la Regione (art. 18 DPCM 12/01/2017). Il conto si fa solo per la Sicilia
+// Regola: il tempo per autorizzare lo fissa la Regione (DPCM 12/01/2017, art. 17-19 e allegato 12). Il conto si fa solo per la Sicilia
 // (si arriva scegliendo una provincia siciliana): 20 giorni, poi silenzio-assenso. Non chiediamo mai la malattia.
 import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween, art } from './engine.js';
 import { ausiliReminder, mailtoHref } from './letters.js';
@@ -114,7 +114,7 @@ const screens = {
         <div class="hero" aria-hidden="true">⚠️</div>
         <h1>I ${rules.authorization_days} giorni sono passati: l'autorizzazione vale lo stesso</h1>
         <div class="notice bad">
-          <p>L'${aslLabel()} doveva rispondere entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>. Sono passati <strong>${days(d.daysLate)} in più</strong>.</p>
+          <p>L'${aslLabel()} doveva rispondere entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>. ${d.daysLate === 1 ? 'È passato' : 'Sono passati'} <strong>${days(d.daysLate)} in più</strong>.</p>
           <p>Per la legge, se l'${aslLabel()} non risponde in tempo <strong>l'autorizzazione si considera data</strong>. Ora deve partire la consegna.</p>
         </div>
         <h2>Cosa fare, in ordine</h2>
