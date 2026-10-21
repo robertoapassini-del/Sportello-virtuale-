@@ -9,6 +9,8 @@
   "duration_months": 18,
   "renewal_months": 12,
   "renewal_first_month_percent": 50,
+  "household_min_age": 60,
+  "elderly_age": 67,
   "household_conditions": [
     "un minorenne",
     "una persona con almeno 60 anni",
@@ -16,6 +18,71 @@
     "una persona seguita dai servizi sociali o sanitari (con certificato)"
   ],
   "notes_internal": "Soglie della L. 207/2024 (dal 2025), uguali nel 2026. Dal 2026 (L. 199/2025, art. 1 c. 160; INPS messaggio 640/2026) non c'è più il mese di stop prima del rinnovo: la prima mensilità del rinnovo è al 50%. Dal 2026 l'ISEE per l'ADI è il nuovo «ISEE per l'inclusione» (L. 199/2025 c. 208, INPS messaggio 102/2026).",
+  "provenienza": {
+    "isee_max": {
+      "url": "https://www.lavoro.gov.it/notizie/pagine/adi-cosa-cambia-con-la-legge-di-bilancio-2026",
+      "verified": "2026-10-19",
+      "proof": "estratto",
+      "review_by": "2027-01-31"
+    },
+    "income_max_base": {
+      "url": "https://www.lavoro.gov.it/notizie/pagine/adi-cosa-cambia-con-la-legge-di-bilancio-2026",
+      "verified": "2026-10-19",
+      "proof": "estratto",
+      "review_by": "2027-01-31"
+    },
+    "income_max_elderly": {
+      "url": "https://www.lavoro.gov.it/notizie/pagine/adi-cosa-cambia-con-la-legge-di-bilancio-2026",
+      "verified": "2026-10-19",
+      "proof": "estratto",
+      "review_by": "2027-01-31"
+    },
+    "elderly_age": {
+      "url": "https://www.lavoro.gov.it/notizie/pagine/adi-cosa-cambia-con-la-legge-di-bilancio-2026",
+      "verified": "2026-10-19",
+      "proof": "estratto",
+      "review_by": "2027-01-31",
+      "nota": "Età da cui vale la soglia di reddito più alta (tutti i componenti)."
+    },
+    "household_min_age": {
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.assegno-di-inclusione-adi.html",
+      "verified": "2026-10-19",
+      "proof": "estratto",
+      "review_by": "2027-01-31",
+      "nota": "Età del componente che dà diritto all'ADI."
+    },
+    "residency_years": {
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.assegno-di-inclusione-adi.html",
+      "verified": "2026-10-19",
+      "proof": "estratto",
+      "review_by": "2027-01-31"
+    },
+    "residency_continuous_years": {
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.assegno-di-inclusione-adi.html",
+      "verified": "2026-10-19",
+      "proof": "estratto",
+      "review_by": "2027-01-31"
+    },
+    "duration_months": {
+      "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.03.assegno-di-inclusione-addio-al-mese-di-stop.html",
+      "verified": "2026-10-19",
+      "proof": "estratto",
+      "review_by": "2027-01-31"
+    },
+    "renewal_months": {
+      "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.03.assegno-di-inclusione-addio-al-mese-di-stop.html",
+      "verified": "2026-10-19",
+      "proof": "estratto",
+      "review_by": "2027-01-31"
+    },
+    "renewal_first_month_percent": {
+      "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.03.assegno-di-inclusione-addio-al-mese-di-stop.html",
+      "verified": "2026-10-19",
+      "proof": "estratto",
+      "review_by": "2027-01-31",
+      "nota": "Messaggio INPS 640/2026. Il messaggio 2437 del 22/07/2026 sui rinnovi non è stato letto."
+    }
+  },
   "sources": [
     {
       "label": "INPS – Assegno di inclusione: addio al mese di stop (messaggio n. 640 del 23/02/2026)",

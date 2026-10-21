@@ -1,4 +1,5 @@
 // Modulo 3 — cartella clinica e referti: «non me li danno».
+// Prima la risposta: la pagina mostra subito la risposta scritta; il conto e il sollecito partono dal pulsante.
 // Regola: la direzione sanitaria consegna la documentazione disponibile entro 7 giorni,
 // le integrazioni entro 30 (art. 4 c. 3 L. 24/2017). Ricorso: art. 25 L. 241/1990.
 // Non chiediamo mai la malattia: solo il nome della struttura e le date.
@@ -11,6 +12,8 @@ import { createFlow, choice, restartBtn, days, progress, dateForm, showError, le
 
 const ROOT = '../';
 const app = document.getElementById('app');
+// La risposta scritta della pagina: è la prima schermata del percorso.
+const answerHtml = app.innerHTML;
 let rules;
 let data;
 const state = {};
@@ -42,19 +45,9 @@ const howToAsk = () => `
   </ol>`;
 
 const screens = {
-  intro: () => ({
-    html: `
-      <div class="hero" aria-hidden="true">📁</div>
-      <h1>Non ti danno la cartella clinica o i referti?</h1>
-      <p class="lead say">Hai chiesto una copia all'ospedale, ma non arriva?</p>
-      <p class="say">La legge dice che devono dartela entro <strong>${rules.deadline_days} giorni</strong>. Ti aiutiamo a capire se sono in ritardo e cosa fare.</p>
-      <div class="notice info">
-        <p class="say"><strong>Prendi questo foglio, se ce l'hai:</strong></p>
-        <ul class="icon-list say"><li><span class="ico" aria-hidden="true">🧾</span> La ricevuta della richiesta</li></ul>
-      </div>
-      <button type="button" class="btn primary big" data-go="province">▶️ Comincia</button>
-      <p class="muted say">È gratis. Non salviamo niente.</p>`,
-  }),
+  // Prima schermata: la risposta scritta che è già nella pagina (vedi index.html).
+  // Così «Ricomincia» e il tasto Indietro riportano alla risposta, non a una presentazione.
+  intro: () => ({ html: answerHtml }),
 
   province: () => ({
     html: `${progress(1, 3)}

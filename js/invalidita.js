@@ -1,4 +1,5 @@
 // Modulo 2 — invalidità civile: "la visita non arriva".
+// Prima la risposta: la pagina mostra subito la risposta scritta; il conto e il sollecito partono dal pulsante.
 // Non chiede mai la malattia: basta sapere se è oncologica, un minore o altro.
 // Le risposte restano solo in memoria e si cancellano quando si chiude la pagina.
 // Testi: italiano semplice, frasi brevi, un'idea per frase.
@@ -6,12 +7,14 @@ import { invRegime, invDeadline, todayISO, formatIt, parseDate, daysBetween, art
 import { inpsReminder, mailtoHref } from './letters.js';
 import { noPecBox,
   esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton,
-  personFields, reportErrorHref, choice, helpBox, listenButton, speakScreen, stopSpeaking, sourcesBox, moreHelp, hideHeadingEmoji,
+  personFields, reportErrorHref, choice, helpBox, listenButton, speakScreen, stopSpeaking, sourcesBox, moreHelp, hideHeadingEmoji, enableStart,
 } from './common.js';
 import { createNav } from './flow.js';
 
 const ROOT = '../';
 const app = document.getElementById('app');
+// La risposta scritta della pagina: è la prima schermata del percorso.
+const answerHtml = app.innerHTML;
 
 let rules;
 let inps;
@@ -29,6 +32,7 @@ function paint(current) {
   const s = screens[current]();
   const backBtn = current === 'intro' ? '' : '<button type="button" class="back" data-action="back">← Torna indietro</button>';
   app.innerHTML = `<div class="topbar">${backBtn}${listenButton()}</div>${s.html}${moreHelp()}${helpBox()}${screenSources()}`;
+  enableStart(app);
   hideHeadingEmoji(app);
   if (s.mount) s.mount();
   window.scrollTo(0, 0);
@@ -113,19 +117,9 @@ const afterVerbale = `
   </details>`;
 
 const screens = {
-  intro: () => ({
-    html: `
-      <div class="hero" aria-hidden="true">♿</div>
-      <h1>Aspetti la visita per l'invalidità?</h1>
-      <p class="lead say">Il medico ha mandato il certificato all'INPS. Ma la visita non arriva?</p>
-      <p class="say">La legge dice entro quando deve arrivare. Ti aiutiamo a capire se è tardi e cosa fare.</p>
-      <div class="notice info">
-        <p class="say"><strong>Prendi questo foglio:</strong></p>
-        <ul class="icon-list say"><li><span class="ico" aria-hidden="true">📄</span> La ricevuta del certificato che ti ha dato il medico</li></ul>
-      </div>
-      <button type="button" class="btn primary big" data-go="province">▶️ Comincia</button>
-      <p class="muted say">Non ti chiediamo la malattia. Non diciamo quanta invalidità ti spetta. Non salviamo niente.</p>`,
-  }),
+  // Prima schermata: la risposta scritta che è già nella pagina (vedi index.html).
+  // Così «Ricomincia» e il tasto Indietro riportano alla risposta, non a una presentazione.
+  intro: () => ({ html: answerHtml }),
 
   province: () => ({
     html: `${progress(1)}

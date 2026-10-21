@@ -1,4 +1,5 @@
 // Modulo 13 — scegliere o cambiare il medico di famiglia o il pediatra.
+// Prima la risposta: la pagina mostra subito la risposta scritta; il percorso per provincia parte dal pulsante.
 // Regole nazionali (età) + canale di ogni ASP. Lettera all'ASP se non si trova un pediatra.
 import { medicoChoice, todayISO } from './engine.js';
 import { genericRequest, mailtoHref } from './letters.js';
@@ -9,6 +10,8 @@ import { createFlow, choice, restartBtn, progress, letterButtons } from './flow.
 
 const ROOT = '../';
 const app = document.getElementById('app');
+// La risposta scritta della pagina: è la prima schermata del percorso.
+const answerHtml = app.innerHTML;
 let rules;
 let data;
 const state = {};
@@ -46,14 +49,9 @@ const ageBands = { '0-5': 2, '6-13': 10, '14-15': 14, '16+': 40 };
 const sportelli = (a) => officeBox(a, 'anagrafe', '📍 Gli sportelli «scelta e revoca»', 'Vai a quello del distretto dove abiti. Spesso è lo stesso sportello delle esenzioni dal ticket.');
 
 const screens = {
-  intro: () => ({
-    html: `
-      <div class="hero" aria-hidden="true">👨‍⚕️</div>
-      <h1>Scegliere o cambiare il medico di base o il pediatra</h1>
-      <p class="lead say">Puoi cambiare medico quando vuoi, anche senza dire il motivo. Ti diciamo come si fa nella tua provincia e cosa fare se non trovi posto.</p>
-      <button type="button" class="btn primary big" data-go="province">▶️ Comincia</button>
-      <p class="muted say">È gratis. Non salviamo niente.</p>`,
-  }),
+  // Prima schermata: la risposta scritta che è già nella pagina (vedi index.html).
+  // Così «Ricomincia» e il tasto Indietro riportano alla risposta, non a una presentazione.
+  intro: () => ({ html: answerHtml }),
 
   province: () => ({
     html: `${progress(1, 3)}

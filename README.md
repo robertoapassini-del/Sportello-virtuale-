@@ -15,6 +15,12 @@ Sito gratuito che dice alle persone in Sicilia cosa spetta loro, entro quando e 
 - **Modulo 13 – Medico di famiglia e pediatra:** come scegliere o cambiare, scelta temporanea, lettera se non c'è posto.
 - **Modulo 11 – Cure palliative:** diritto della L. 38/2010, attivazione a casa o in hospice, richiesta scritta.
 
+Temi **solo testo** (`static` in `data/moduli.json`: risposta in cima e pagine corte, senza percorso a domande), aggiunti il 20/10/2026:
+
+- Area **Tessera e ricette** (`tessera-e-ricette/`): tessera sanitaria (`tessera-sanitaria/`), fascicolo sanitario e ricetta elettronica (`fascicolo-e-ricetta/`), prenotare e disdire al CUP (`prenotare-cup/`).
+- In **Invalidità**: legge 104 (`legge-104/`), indennità di accompagnamento (`accompagnamento/`), contrassegno disabili (`contrassegno-disabili/`).
+- In **Visite ed esami**: curarsi fuori dalla Sicilia (`cure-fuori-regione/`), dentista (`dentista/`), psicologo (`psicologo/`). In **Aiuto a casa**: RSA (`rsa/`).
+
 Requisiti completi: [SPEC.md](SPEC.md).
 
 ## Principi
@@ -52,6 +58,12 @@ Requisiti completi: [SPEC.md](SPEC.md).
   `data/`, ricontrolla anche il testo della guida.
 - Le parti della guida che vengono dai dati (tabella delle classi di priorità, come chiedere il percorso di tutela in
   ogni ASP, «Numeri utili», fonti e data del controllo) sono tra `<!-- blocco:nome -->` e si rifanno con `npm run pagine`.
+- Una guida lunga si può dividere in **pagine corte**, una per domanda (come fa NHS.uk): in `data/moduli.json` il modulo
+  ha `pages` (`id` e `title`), ogni pagina sta in `modulo/pagina/index.html` e ha l'elenco `<!-- blocco:guida-indice -->`.
+  Tutti i moduli sono fatti così. Nella pagina principale restano la risposta breve (nel `<main>`, visibile anche senza
+  JavaScript: è anche la prima schermata del percorso, `answerHtml` nel `js/`), il pulsante che avvia il percorso e l'indice.
+  Il pulsante di avvio è scritto con `disabled` e si sblocca quando i dati sono caricati (`enableStart`). Le pagine corte
+  caricano `js/guida.js`: piè di pagina con «Ti è stata utile?», conteggio della visita e «Ascolta» che legge la guida.
 - In fondo a ogni pagina: **Condividi su WhatsApp** (un link, funziona anche senza JavaScript) e **Stampa** (con
   «Stampa la guida» si stampa solo la guida, con l'indirizzo della pagina in fondo al foglio).
 - Link interni sempre all'indirizzo della cartella (`../liste-attesa/`), mai a `index.html`.
@@ -65,6 +77,15 @@ Requisiti completi: [SPEC.md](SPEC.md).
 ricontrollati ogni 3 mesi. Procedura completa: [docs/regola-numeri.md](docs/regola-numeri.md). Il test
 `tests/contatti.test.mjs` blocca i numeri senza pagina ufficiale, data o prova, e quelli controllati più di
 92 giorni fa.
+
+## Regola per le cifre di legge
+
+**Ogni cifra mostrata** (soglie di reddito, giorni, mesi, età, percentuali) vive in `data/rules*.json` con
+la sua scheda nel blocco `provenienza`: pagina ufficiale, data del controllo, come è stata controllata
+(`testo`, `estratto`, `secondaria`, `sito`) e la data entro cui ricontrollarla (`review_by`). Procedura
+completa: [docs/regola-cifre.md](docs/regola-cifre.md). Due test la fanno rispettare: `tests/cifre.test.mjs`
+blocca una cifra scritta nella guida o nel js che non è uguale a quella nei dati, e
+`tests/provenienza.test.mjs` blocca una cifra senza scheda o con `review_by` passata.
 
 ## Provarlo sul tuo computer
 
@@ -80,6 +101,8 @@ python3 -m http.server 8080      # oppure: npm start
 ```bash
 npm test
 ```
+
+Per vedere quali cifre e numeri andranno ricontrollati entro una certa data: `OGGI=2027-02-01 npm test`.
 
 Prova completa di **tutte le combinazioni** di risposte (9 province, tutte le classi, date al limite esatto,
 entrambi i moduli) in un browser vero, con il sito avviato su `localhost:8080`:

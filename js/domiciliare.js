@@ -1,4 +1,5 @@
 // Modulo 10 — assistenza domiciliare integrata (ADI): «come la chiedo all'ASP?».
+// Prima la risposta: la pagina mostra subito la risposta scritta; percorso e consigli pratici partono dai pulsanti.
 // Non c'è un numero di giorni fissato dalla legge: spieghiamo i passi e, se nessuno viene,
 // prepariamo un sollecito al distretto. Non chiediamo la malattia.
 import { todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
@@ -8,6 +9,8 @@ import { createFlow, choice, restartBtn, days, progress, dateForm, showError, le
 
 const ROOT = '../';
 const app = document.getElementById('app');
+// La risposta scritta della pagina: è la prima schermata del percorso.
+const answerHtml = app.innerHTML;
 let rules;
 let data;
 const state = {};
@@ -39,16 +42,9 @@ const steps = () => `
   </details>`;
 
 const screens = {
-  intro: () => ({
-    html: `
-      <div class="hero" aria-hidden="true">🏠</div>
-      <h1>Serve un infermiere o un medico a casa?</h1>
-      <p class="lead say">Per chi non può muoversi, l'ASP manda a casa infermieri, fisioterapisti e medici. Si chiama assistenza domiciliare (ADI) ed è gratis.</p>
-      <p class="say">Ti spieghiamo come chiederla e cosa fare se nessuno viene.</p>
-      <button type="button" class="btn primary big" data-go="province">▶️ Comincia</button>
-      <button type="button" class="btn choice" data-go="tips"><span class="ico" aria-hidden="true">📋</span><span class="txt">Consigli pratici <small>Prelievo a casa, infermiere privato, uscita dall'ospedale, ossigeno, dialisi</small></span></button>
-      <p class="muted say">Non salviamo niente. Non chiediamo la malattia.</p>`,
-  }),
+  // Prima schermata: la risposta scritta che è già nella pagina (vedi index.html).
+  // Così «Ricomincia» e il tasto Indietro riportano alla risposta, non a una presentazione.
+  intro: () => ({ html: answerHtml }),
 
   // Consigli pratici: uguali in tutta la Sicilia, non serve la provincia.
   tips: () => ({

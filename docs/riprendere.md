@@ -14,7 +14,7 @@ Nota per continuare da un altro computer o in una nuova sessione con Claude.
 
 ## Da fare
 
-1. **Dall'Italia** (i siti delle ASP bloccano chi si collega dall'estero): aprire le pagine di
+1. **Fatto il 19/10/2026 dall'Italia** (vedi CHANGELOG): restano 6 numeri da telefonare. Per il giro successivo: aprire le pagine di
    [da-verificare.md](da-verificare.md) e, per ogni numero confermato, mettere `"proof": "pagina"` e la data.
    Rifare l'elenco con `npm run da-verificare`.
 2. **Sportelli «scelta e revoca» ed esenzioni** (topic `anagrafe`): inseriti per tutte le 9 ASP il 18/10/2026, molti

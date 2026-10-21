@@ -34,6 +34,7 @@ const PAROLE = [
   'assistenza domiciliare', 'cure palliative', 'hospice', 'ausili', 'protesi', 'nomenclatore',
   'piano terapeutico', 'medico di medicina generale', 'medici di medicina generale', 'pediatr',
   'screening', 'vaccin', 'cartella clinica', 'fascicolo sanitario', 'regione siciliana',
+  'tessera sanitaria', 'ricetta elettronica', 'ricetta dematerializzata', 'disdetta', 'contrassegno', 'residenze sanitarie', /\brsa\b/, 'odontoiatr', 'bonus psicologo',
 ];
 
 const norm = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[’'`]/g, ' ');
@@ -134,11 +135,50 @@ function raccogliLink() {
   return dove;
 }
 
+// Pagine che rispondono 200 ma non sono quella giusta: «pagina non trovata», o rimando alla home
+// (succede quando un'ASP cambia sito: Enna e Messina nel 2026).
+const NON_TROVATA = /pagina non trovata|pagina richiesta non esiste|page not found|404 not found/i;
+const testoPagina = (html) => html.replace(/<(script|style)[\s\S]*?<\/\1>/gi, ' ').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
+// origine → home { url, testo, link }, per riconoscere le pagine che mostrano la home senza cambiare indirizzo
+const home = new Map();
+const quantiLink = (html) => (html.match(/<a\s/gi) || []).length;
+async function leggiHome(origine) {
+  if (!home.has(origine)) {
+    home.set(origine, scarica(origine + '/')
+      .then(async (r) => { const html = await r.text(); return { url: r.url, testo: testoPagina(html), link: quantiLink(html) }; })
+      .catch(() => ({ url: '', testo: '', link: 0 })));
+  }
+  return home.get(origine);
+}
+async function paginaSbagliata(u, r, html) {
+  const prima = new URL(u), dopo = new URL(r.url || u);
+  const radice = (x) => /^(\/(it|home))?(\/(index\.\w+)?)?$/.test(x.pathname) && !x.search;
+  if (radice(prima)) return null;
+  if (radice(dopo)) return 'rimanda alla home';
+  const testo = testoPagina(html);
+  if (NON_TROVATA.test(testo)) return 'pagina «non trovata»';
+  // Uguale alla home a parte pochi caratteri (inizio e fine in comune per il 98% del testo).
+  // Non vale se la home rimanda proprio a questa pagina, né per le pagine di controllo anti-robot
+  // (salute.gov.it), che sono tutte uguali e quasi senza link.
+  const { url: urlHome, testo: h, link } = await leggiHome(dopo.origin);
+  if (urlHome !== dopo.href && link >= 20 && quantiLink(html) >= 20) {
+    let a = 0, z = 0;
+    while (a < h.length && h[a] === testo[a]) a++;
+    while (z < h.length - a && h[h.length - 1 - z] === testo[testo.length - 1 - z]) z++;
+    if (a + z >= Math.max(h.length, testo.length) * 0.98) return 'mostra la home';
+  }
+  return null;
+}
+
 async function provaLink(u) {
   for (let tentativo = 0; tentativo < 2; tentativo++) {
     try {
-      let r = await scarica(u, { method: 'HEAD' });
-      if (r.status >= 400) r = await scarica(u); // molti siti pubblici non rispondono bene a HEAD
+      let r = await scarica(u); // GET: serve il testo per riconoscere le pagine «non trovata»
+      const html = /html/.test(r.headers.get('content-type') || '') ? await r.text() : '';
+      if (r.status < 400 && html) {
+        const motivo = await paginaSbagliata(u, r, html);
+        if (motivo) return { stato: r.status, sbagliata: motivo };
+      }
       return { stato: r.status };
     } catch (e) {
       if (tentativo === 1) return { stato: 0, errore: e.cause?.code || e.name || e.message };
@@ -191,19 +231,21 @@ async function provaDallItalia(urls) {
 async function linkRotti() {
   const dove = raccogliLink();
   const urls = [...dove.keys()];
-  const falliti = [];
+  const falliti = [], sbagliate = [];
   let i = 0;
   await Promise.all(Array.from({ length: 8 }, async () => {
     while (i < urls.length) {
       const u = urls[i++];
       const r = await provaLink(u);
+      if (r.sbagliata) sbagliate.push({ url: u, ...r });
       // 401/403/429: il sito blocca i controlli automatici, non vuol dire che il link sia rotto.
-      if (r.stato === 0 || (r.stato >= 400 && ![401, 403, 429].includes(r.stato))) falliti.push({ url: u, ...r });
+      else if (r.stato === 0 || (r.stato >= 400 && ![401, 403, 429].includes(r.stato))) falliti.push({ url: u, ...r });
     }
   }));
 
   const italia = await provaDallItalia(falliti.map((x) => x.url));
-  const rotti = [], nonVerificabili = [];
+  // Le pagine sbagliate hanno risposto, quindi non è un blocco dall'estero: sono da sistemare subito.
+  const rotti = sbagliate.map((s) => ({ ...s, file: [...dove.get(s.url)].sort(), motivo: s.sbagliata })), nonVerificabili = [];
   let soloItalia = 0;
   for (const f of falliti) {
     const it = italia.get(f.url);

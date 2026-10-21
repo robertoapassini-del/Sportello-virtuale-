@@ -1,0 +1,102 @@
+{
+  "name": "Legge 104: handicap, permessi, congedo",
+  "last_verified": "2026-10-20",
+  "permessi_giorni_mese": 3,
+  "permessi_ore_giorno": 2,
+  "prolungamento_figlio_anni": 3,
+  "ore_extra_anno_2026": 10,
+  "congedo_anni": 2,
+  "congedo_non_retribuito_mesi": 24,
+  "inps_risposta_giorni": 30,
+  "permessi_orario_minimo_ore": 6,
+  "l106_invalidita_min_percent": 74,
+  "permessi_ore_giorno_ridotto": 1,
+  "provenienza": {
+    "permessi_giorni_mese": {
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50098.indennit-per-permessi-fruiti-dai-lavoratori-per-assistere-familiari-disabili-in-situazione-di-gravit-o-fruiti-dai-lavoratori-disabili.html",
+      "verified": "2026-10-20",
+      "proof": "testo",
+      "review_by": "2027-01-31",
+      "nota": "L. 104/1992, art. 33: tre giorni al mese, anche a ore; familiari fino al terzo grado."
+    },
+    "permessi_ore_giorno": {
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50098.indennit-per-permessi-fruiti-dai-lavoratori-per-assistere-familiari-disabili-in-situazione-di-gravit-o-fruiti-dai-lavoratori-disabili.html",
+      "verified": "2026-10-20",
+      "proof": "testo",
+      "review_by": "2027-01-31",
+      "nota": "2 ore al giorno con orario di almeno 6 ore, 1 ora con orario inferiore."
+    },
+    "prolungamento_figlio_anni": {
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.permessi-retribuiti-legge-104-per-lavoratori-dipendenti-e-familiari-di-persone-con-disabilita-grave.html",
+      "verified": "2026-10-20",
+      "proof": "estratto",
+      "review_by": "2027-01-31",
+      "nota": "Figli con handicap grave fino a 3 anni: prolungamento del congedo parentale o 2 ore al giorno."
+    },
+    "ore_extra_anno_2026": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-07-18;106",
+      "verified": "2026-10-20",
+      "proof": "testo",
+      "review_by": "2027-01-31",
+      "nota": "L. 106/2025, art. 2: 10 ore annue dal 1/1/2026 per lavoratori con malattie oncologiche, invalidanti o croniche con invalidità ≥ 74%, e genitori di figli minorenni nelle stesse condizioni. Non è una regola della 104."
+    },
+    "congedo_anni": {
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50097.indennit-per-congedi-straordinari-assistenza-familiari-disabili-.html",
+      "verified": "2026-10-20",
+      "proof": "testo",
+      "review_by": "2027-01-31",
+      "nota": "Massimo due anni nella vita lavorativa, complessivi fra tutti gli aventi diritto per ogni disabile; niente raddoppio."
+    },
+    "congedo_non_retribuito_mesi": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-07-18;106",
+      "verified": "2026-10-20",
+      "proof": "testo",
+      "review_by": "2027-01-31",
+      "nota": "L. 106/2025, art. 1: congedo fino a 24 mesi, non retribuito, per il lavoratore malato (invalidità ≥ 74%)."
+    },
+    "permessi_orario_minimo_ore": {
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50098.indennit-per-permessi-fruiti-dai-lavoratori-per-assistere-familiari-disabili-in-situazione-di-gravit-o-fruiti-dai-lavoratori-disabili.html",
+      "verified": "2026-10-20",
+      "proof": "testo",
+      "review_by": "2027-01-31"
+    },
+    "inps_risposta_giorni": {
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50097.indennit-per-congedi-straordinari-assistenza-familiari-disabili-.html",
+      "verified": "2026-10-20",
+      "proof": "testo",
+      "review_by": "2027-10-20",
+      "nota": "Termine ordinario di 30 giorni (L. 241/1990) per il provvedimento INPS."
+    },
+    "l106_invalidita_min_percent": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-07-18;106",
+      "verified": "2026-10-20",
+      "proof": "testo",
+      "review_by": "2027-01-31"
+    },
+    "permessi_ore_giorno_ridotto": {
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50098.indennit-per-permessi-fruiti-dai-lavoratori-per-assistere-familiari-disabili-in-situazione-di-gravit-o-fruiti-dai-lavoratori-disabili.html",
+      "verified": "2026-10-20",
+      "proof": "testo",
+      "review_by": "2027-01-31",
+      "nota": "1 ora al giorno se l'orario è inferiore a 6 ore."
+    }
+  },
+  "sources": [
+    {
+      "label": "INPS – Permessi per lavoratori disabili e familiari (legge 104)",
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50098.indennit-per-permessi-fruiti-dai-lavoratori-per-assistere-familiari-disabili-in-situazione-di-gravit-o-fruiti-dai-lavoratori-disabili.html"
+    },
+    {
+      "label": "INPS – Congedo straordinario per assistere familiari con disabilità grave",
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50097.indennit-per-congedi-straordinari-assistenza-familiari-disabili-.html"
+    },
+    {
+      "label": "Normattiva – Legge 104/1992",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1992-02-05;104"
+    },
+    {
+      "label": "Normattiva – Legge 106/2025 (malattie oncologiche, invalidanti e croniche)",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-07-18;106"
+    }
+  ]
+}

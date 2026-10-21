@@ -211,6 +211,8 @@ const BAD_TEXT = /undefined|\bnull\b|NaN|TODO|VERIFY|\[object/;
 async function runCase(page, c) {
   const problems = [];
   const btn = (name) => page.getByRole('button', { name }).first().click();
+  // Il pulsante che avvia il percorso è nella risposta scritta (HTML): si sblocca quando i dati sono caricati.
+  const start = () => page.locator('main button.btn.primary.big[data-go]').first().click();
   const h1 = async () => (await page.locator('h1').first().innerText()).trim();
   const checkScreen = async (label) => {
     const text = await page.locator('main').innerText();
@@ -239,7 +241,7 @@ async function runCase(page, c) {
 
   if (c.mod === 1) {
     await page.goto(`${BASE}liste-attesa/`);
-    await btn(/Comincia/);
+    await start();
     if (c.access === 'followup' && c.p === 'Palermo') await checkScreen('domanda provincia');
     await btn(new RegExp(`^${c.p}$`));
     if (c.access === 'followup' && c.p === 'Palermo') await checkScreen('domanda prima volta');
@@ -353,7 +355,7 @@ async function runCase(page, c) {
   // ---- modulo 5: esenzione ----
   if (c.mod === 5) {
     await page.goto(`${BASE}esenzione-ticket/`);
-    await btn(/Comincia/);
+    await start();
     await btn(AGE[c.ageBand]);
     await btn(STATUS[c.status]);
     if (c.spouse) await page.check('input[name=spouse]');
@@ -377,7 +379,7 @@ async function runCase(page, c) {
   // ---- modulo 6: ricorso ----
   if (c.mod === 6) {
     await page.goto(`${BASE}ricorso-invalidita/`);
-    await btn(/Comincia/);
+    await start();
     if (c.path === 'notyet') await btn(/^No, aspetto/);
     else {
       await btn(/^Sì, ce l/);
@@ -399,7 +401,7 @@ async function runCase(page, c) {
   // ---- modulo 7: assegno di inclusione ----
   if (c.mod === 7) {
     await page.goto(`${BASE}assegno-inclusione/`);
-    await btn(/Comincia/);
+    await start();
     await btn(c.household === true ? /^Sì$/ : c.household === false ? /^No, nessuna/ : /^Non lo so/);
     await btn(c.residency === true ? /^Sì$/ : c.residency === false ? /^No$/ : /^Non sono sicuro/);
     if (c.isee === null) await page.click('#no-isee'); else { await page.fill('#isee', String(c.isee)); await btn(/Controlla/); }
@@ -412,7 +414,7 @@ async function runCase(page, c) {
   // ---- modulo 9: piano terapeutico ----
   if (c.mod === 9) {
     await page.goto(`${BASE}piano-terapeutico/`);
-    await btn(/Comincia/);
+    await start();
     if (c.mod === 9) await btn(c.first ? /^No, devo farlo/ : /^Sì, ce l/);
     if (!c.first) { await page.fill('#expiryDate', c.expiry); await btn(/Controlla/); }
     const got = await h1();
@@ -425,7 +427,7 @@ async function runCase(page, c) {
   // ---- moduli 10 e 11: domiciliare / palliative ----
   if (c.mod === 10 || c.mod === 11) {
     await page.goto(`${BASE}${c.mod === 10 ? 'assistenza-domiciliare' : 'cure-palliative'}/`);
-    await btn(/Comincia/);
+    await start();
     await btn(new RegExp(`^${c.p}$`));
     if (c.path === 'none') await btn(c.mod === 10 ? /^Non ho ancora chiesto/ : /come funziona/);
     else if (c.path === 'reduced') await btn(/si è interrotta/);
@@ -462,7 +464,7 @@ async function runCase(page, c) {
   // ---- modulo 12: prevenzione ----
   if (c.mod === 12) {
     await page.goto(`${BASE}prevenzione/`);
-    await btn(/Comincia/);
+    await start();
     await btn(c.sex === 'F' ? /^Una donna/ : /^Un uomo/);
     await page.fill('#age', String(c.age)); await btn(/Avanti/);
     await btn(new RegExp(`^${c.p}$`));
@@ -472,13 +474,13 @@ async function runCase(page, c) {
     for (const t of c.exp) if (!body.includes(t)) problems.push(`manca «${t}»`);
     for (const t of c.notExp) if (body.includes(t)) problems.push(`mostrato per errore «${t}»`);
     if (c.p === 'Catania' && !text.replace(/\s/g, '').includes('800894007')) problems.push('manca il numero screening di Catania');
-    if (text.includes('tasto 2')) problems.push('mostrato il numero CUP della classe B');
+    if (text.replace(/\s/g, '').includes('800954414')) problems.push('mostrato il numero CUP della classe B');
     return problems;
   }
   // ---- modulo 13: medico di famiglia ----
   if (c.mod === 13) {
     await page.goto(`${BASE}medico-famiglia/`);
-    await btn(/Comincia/);
+    await start();
     await btn(new RegExp(`^${c.p}$`));
     await btn({ '0-5': /sotto i 6 anni/, '6-13': /da 6 a 13/, '14-15': /14 o 15/, '16+': /^Un adulto/ }[c.band]);
     await btn({ change: /^Voglio cambiare/, retire: /va in pensione/, full: /Non trovo nessuno/, temporary: /per studio o lavoro/ }[c.sit]);
@@ -505,7 +507,7 @@ async function runCase(page, c) {
   // ---- moduli 3 e 4 ----
   if (c.mod === 3 || c.mod === 4) {
     await page.goto(BASE + c.m.url);
-    await btn(/Comincia/);
+    await start();
     await btn(new RegExp(`^${c.p}$`));
     if (c.mod === 3) {
       await btn(/^La cartella clinica/);
@@ -553,7 +555,7 @@ async function runCase(page, c) {
 
   // ---- modulo 2 ----
   await page.goto(`${BASE}invalidita/`);
-  await btn(/Comincia/);
+  await start();
   await btn(new RegExp(`^${c.p}$`));
   await page.fill('#certDate', c.cert);
   await btn(/Avanti/);

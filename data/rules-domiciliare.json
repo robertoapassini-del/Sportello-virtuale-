@@ -3,7 +3,23 @@
   "last_verified": "2026-10-19",
   "legal_basis": "art. 22 DPCM 12/01/2017 (LEA): cure domiciliari; nessun numero di giorni fissato dalla legge nazionale",
   "reminder_after_days": 30,
+  "detrazione": { "percent": 19, "franchigia": 129.11 },
   "notes_internal": "TODO-VERIFY: tempi di valutazione UVM fissati dalla Regione Siciliana; contatti dei PUA per distretto. Consigli pratici (schermata tips) da verificare: ticket per la singola prestazione infermieristica e per il prelievo SSN a domicilio; prelievo SSN fuori da Enna; chi paga l'ambulanza per visite programmate; importi rimborso km dialisi; procedure ossigeno nelle altre ASP.",
+  "provenienza": {
+    "reminder_after_days": {
+      "verified": "2026-10-19",
+      "proof": "sito",
+      "review_by": "2027-10-19",
+      "nota": "Scelta del sito: dopo quanti giorni senza risposta consigliamo il sollecito al distretto."
+    },
+    "detrazione": {
+      "url": "https://www.agenziaentrate.gov.it/portale/le-spese-sanitarie-e-i-mezzi-di-ausilio",
+      "verified": "2026-10-19",
+      "proof": "estratto",
+      "review_by": "2027-01-31",
+      "nota": "Detrazione IRPEF delle spese sanitarie: 19% sopra la franchigia di 129,11 €."
+    }
+  },
   "sources": [
     {
       "label": "DPCM 12/01/2017 – LEA, art. 22 (cure domiciliari)",

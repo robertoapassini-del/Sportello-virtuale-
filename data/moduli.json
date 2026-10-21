@@ -35,116 +35,545 @@
       "icon": "♿",
       "title": "Invalidità e aiuti economici",
       "small": "Visita INPS, verbale sbagliato, assegno di inclusione"
+    },
+    {
+      "id": "servizi",
+      "page": "tessera-e-ricette",
+      "short": "Tessera e ricette",
+      "intro": "La tessera sanitaria scaduta o persa, il fascicolo sanitario e la ricetta elettronica, prenotare e disdire al CUP. Le cose pratiche che servono a tutti.",
+      "icon": "🪪",
+      "title": "Tessera sanitaria, ricette e prenotazioni",
+      "small": "Tessera scaduta o persa, fascicolo e ricetta elettronica, prenotare e disdire"
     }
   ],
   "modules": [
     {
       "id": "liste-attesa",
       "group": "cure",
-      "data": ["rules", "regioni/sicilia/asp"],
+      "data": [
+        "rules",
+        "regioni/sicilia/asp"
+      ],
       "icon": "📅",
       "title": "La visita o l'esame è troppo lontano",
       "small": "Il CUP mi ha dato un appuntamento tra tanto tempo",
-      "keywords": "visita esame appuntamento cup prenotazione prenotare sovracup aspconte disdire lista attesa lontano tempi ricetta priorità tutela"
+      "keywords": "visita esame appuntamento cup prenotazione prenotare sovracup aspconte disdire lista attesa lontano tempi ricetta priorità tutela percorso di tutela intramoenia sollecito",
+      "pages": [
+        {
+          "id": "tempi-massimi",
+          "title": "Quanto puoi aspettare: le classi U, B, D e P"
+        },
+        {
+          "id": "percorso-di-tutela",
+          "title": "Come chiedere il percorso di tutela all'ASP"
+        },
+        {
+          "id": "nessuna-risposta",
+          "title": "Se il CUP non ti dà una data o nessuno risponde"
+        }
+      ]
     },
     {
       "id": "esenzione-ticket",
       "group": "cure",
-      "data": ["rules-esenzione"],
+      "data": [
+        "rules-esenzione"
+      ],
       "icon": "🎫",
       "title": "Devo pagare il ticket?",
       "small": "Esenzione per età o per reddito",
-      "keywords": "ticket pagare esenzione reddito età over 65 anziani pensione disoccupato rinnovo delega aspconte gratis"
+      "keywords": "ticket pagare esenzione reddito età over 65 anziani pensione disoccupato rinnovo delega aspconte gratis patologia malattia cronica invalidità gravidanza 048",
+      "pages": [
+        {
+          "id": "chi-ha-diritto",
+          "title": "Chi ha diritto: i codici E01, E02, E03 ed E04"
+        },
+        {
+          "id": "come-chiedere",
+          "title": "Come si chiede l'esenzione"
+        },
+        {
+          "id": "rinnovo",
+          "title": "Quanto dura e come si rinnova"
+        },
+        {
+          "id": "altre-esenzioni",
+          "title": "Esenzione per malattia, invalidità, gravidanza"
+        }
+      ]
     },
     {
       "id": "piano-terapeutico",
       "group": "cure",
-      "data": ["rules-piano"],
+      "data": [
+        "rules-piano"
+      ],
       "icon": "💊",
       "title": "La medicina con il piano terapeutico",
       "small": "Cos'è e quando rinnovarlo",
-      "keywords": "medicina farmaco piano terapeutico rinnovo scadenza specialista ricetta"
+      "keywords": "medicina farmaco piano terapeutico rinnovo scadenza specialista ricetta dpc distribuzione diretta farmacia asp aifa",
+      "pages": [
+        {
+          "id": "cos-e",
+          "title": "Cos'è il piano terapeutico e chi lo fa"
+        },
+        {
+          "id": "dove-prendere-la-medicina",
+          "title": "Dove si prende la medicina: farmacia dell'ASP o DPC"
+        },
+        {
+          "id": "rinnovo",
+          "title": "Scadenza e rinnovo: prenota 60 giorni prima"
+        }
+      ]
     },
     {
       "id": "cartella-clinica",
       "group": "cure",
-      "data": ["rules-cartella", "regioni/sicilia/asp"],
+      "data": [
+        "rules-cartella",
+        "regioni/sicilia/asp"
+      ],
       "icon": "📁",
       "title": "Non mi danno la cartella clinica o i referti",
       "small": "L'ho chiesta all'ospedale e non arriva",
-      "keywords": "cartella clinica referti documenti ospedale copia radiografia esami ricovero fascicolo sanitario elettronico fse"
+      "keywords": "cartella clinica referti documenti ospedale copia radiografia esami ricovero fascicolo sanitario elettronico fse spid cie cns ricetta elettronica nre garante privacy tar",
+      "pages": [
+        {
+          "id": "fascicolo-sanitario",
+          "title": "Vedere i referti online nel Fascicolo Sanitario"
+        },
+        {
+          "id": "come-chiedere",
+          "title": "Come chiedere la copia all'ospedale, prima copia gratis"
+        },
+        {
+          "id": "ritardo",
+          "title": "Sono in ritardo: sollecito, reclamo, ricorso"
+        }
+      ]
     },
     {
       "id": "prevenzione",
       "group": "prevenzione",
-      "data": ["rules-prevenzione", "regioni/sicilia/asp"],
+      "data": [
+        "rules-prevenzione",
+        "regioni/sicilia/asp"
+      ],
       "icon": "🛡️",
       "title": "Quali controlli e vaccini posso fare gratis?",
       "small": "Esami contro i tumori e vaccini per la tua età",
-      "keywords": "prevenzione screening mammografia pap test hpv colon tumore vaccino influenza pneumococco zoster fuoco sant'antonio tetano gratis"
+      "keywords": "prevenzione screening mammografia pap test hpv colon tumore vaccino influenza pneumococco zoster fuoco sant'antonio tetano gratis consultorio kit lettera invito calendario vaccinale",
+      "pages": [
+        {
+          "id": "screening",
+          "title": "Gli esami gratis contro i tumori, per età"
+        },
+        {
+          "id": "vaccini",
+          "title": "I vaccini gratis per adulti e bambini, dove farli"
+        }
+      ]
     },
     {
       "id": "medico-famiglia",
       "group": "prevenzione",
-      "data": ["rules-medico", "regioni/sicilia/asp"],
+      "data": [
+        "rules-medico",
+        "regioni/sicilia/asp"
+      ],
       "icon": "👨‍⚕️",
       "title": "Scegliere o cambiare il medico di base o il pediatra",
       "small": "Come si fa e cosa fare se non trovi posto",
-      "keywords": "medico di base medico di famiglia pediatra cambiare cambio scegliere scelta revoca deroga online aspconte bambino pensione studente posto"
+      "keywords": "medico di base medico di famiglia pediatra cambiare cambio scegliere scelta revoca deroga online aspconte bambino pensione studente posto massimale temporanea fuori sede",
+      "pages": [
+        {
+          "id": "come-si-fa",
+          "title": "Dove e come si fa: sportello o online, cosa portare"
+        },
+        {
+          "id": "pediatra",
+          "title": "Pediatra o medico di base: dipende dall'età"
+        },
+        {
+          "id": "scelta-temporanea",
+          "title": "Studenti e lavoratori fuori sede, medico in pensione"
+        },
+        {
+          "id": "nessun-posto",
+          "title": "Se non trovi un medico con posti liberi"
+        }
+      ]
     },
     {
       "id": "assistenza-domiciliare",
       "group": "casa",
-      "data": ["rules-domiciliare", "regioni/sicilia/asp"],
+      "data": [
+        "rules-domiciliare",
+        "regioni/sicilia/asp"
+      ],
       "icon": "🏠",
       "title": "Serve un infermiere o un medico a casa",
       "small": "Assistenza domiciliare dell'ASP",
-      "keywords": "infermiere casa domicilio assistenza domiciliare adi fisioterapia allettato anziano"
+      "keywords": "infermiere casa domicilio assistenza domiciliare adi fisioterapia allettato anziano pua uvm dimissione protetta prelievo ossigeno dialisi badante oss detrazione",
+      "pages": [
+        {
+          "id": "come-chiederla",
+          "title": "Come si chiede: medico, PUA, valutazione a casa"
+        },
+        {
+          "id": "dimissione-protetta",
+          "title": "Prima di uscire dall'ospedale: la dimissione protetta"
+        },
+        {
+          "id": "sollecito",
+          "title": "Se nessuno viene o l'assistenza si ferma"
+        },
+        {
+          "id": "consigli-pratici",
+          "title": "Consigli pratici: prelievo a casa, infermiere privato, ossigeno, dialisi"
+        }
+      ]
     },
     {
       "id": "ausili",
       "group": "casa",
-      "data": ["rules-ausili", "regioni/sicilia/asp"],
+      "data": [
+        "rules-ausili",
+        "regioni/sicilia/asp"
+      ],
       "icon": "🦽",
       "title": "La carrozzina, il letto o i pannoloni non arrivano",
       "small": "Ho fatto la domanda all'ASP e aspetto",
-      "keywords": "carrozzina letto pannoloni ausili protesi deambulatore materasso apparecchio acustico plantari"
+      "keywords": "carrozzina letto pannoloni ausili protesi deambulatore materasso apparecchio acustico plantari protesica silenzio assenso collaudo fornitore incontinenza montascale sollevatore",
+      "pages": [
+        {
+          "id": "come-chiederli",
+          "title": "Dalla prescrizione dello specialista alla domanda all'ASP"
+        },
+        {
+          "id": "20-giorni",
+          "title": "L'autorizzazione entro 20 giorni e il sollecito"
+        },
+        {
+          "id": "consegna-e-collaudo",
+          "title": "La consegna del fornitore e il collaudo"
+        }
+      ]
     },
     {
       "id": "cure-palliative",
       "group": "casa",
-      "data": ["rules-palliative", "regioni/sicilia/asp"],
+      "data": [
+        "rules-palliative",
+        "regioni/sicilia/asp"
+      ],
       "icon": "🕊️",
       "title": "Cure palliative a casa o in hospice",
       "small": "Per una malattia grave e avanzata",
-      "keywords": "cure palliative hospice dolore terapia malattia grave tumore fine vita"
+      "keywords": "cure palliative hospice dolore terapia malattia grave tumore fine vita reperibilità terapia del dolore oppioidi legge 38 rete locale",
+      "pages": [
+        {
+          "id": "cosa-sono",
+          "title": "Cosa sono, per chi, a casa o in hospice"
+        },
+        {
+          "id": "come-attivarle",
+          "title": "Come si attivano e cosa fare se non partono"
+        },
+        {
+          "id": "dolore",
+          "title": "Se il dolore non è controllato"
+        }
+      ]
     },
     {
       "id": "invalidita",
       "group": "invalidita",
-      "data": ["rules-invalidita", "regioni/sicilia/inps"],
+      "data": [
+        "rules-invalidita",
+        "regioni/sicilia/inps"
+      ],
       "icon": "♿",
       "title": "La visita per l'invalidità non arriva",
       "small": "Il medico ha mandato il certificato all'INPS",
-      "keywords": "invalidità invalidità civile inps visita certificato commissione legge 104 handicap accompagnamento indennità contrassegno"
+      "keywords": "invalidità invalidità civile inps visita certificato commissione legge 104 handicap accompagnamento indennità contrassegno valutazione di base riforma disabilità patronato pec verbale revisione",
+      "pages": [
+        {
+          "id": "procedura",
+          "title": "Nuovo regime o vecchia procedura: quale vale per te"
+        },
+        {
+          "id": "sollecito",
+          "title": "La visita è in ritardo: come sollecitare l'INPS"
+        },
+        {
+          "id": "visita-e-verbale",
+          "title": "Cosa portare alla visita e cosa c'è nel verbale"
+        }
+      ]
     },
     {
       "id": "ricorso-invalidita",
       "group": "invalidita",
-      "data": ["rules-ricorso"],
+      "data": [
+        "rules-ricorso"
+      ],
       "icon": "⚖️",
       "title": "Il verbale di invalidità è sbagliato",
       "small": "Ho 6 mesi per il ricorso: quanto mi resta?",
-      "keywords": "verbale ricorso invalidità percentuale sbagliato avvocato giudice aggravamento"
+      "keywords": "verbale ricorso invalidità percentuale sbagliato avvocato giudice aggravamento atp accertamento tecnico preventivo gratuito patrocinio arretrati",
+      "pages": [
+        {
+          "id": "come-funziona",
+          "title": "Come funziona il ricorso: giudice, ATP, costi"
+        },
+        {
+          "id": "cosa-serve",
+          "title": "Da quando contano i 6 mesi e cosa portare"
+        },
+        {
+          "id": "sei-mesi-passati",
+          "title": "Se i 6 mesi sono passati: aggravamento e revisione"
+        }
+      ]
     },
     {
       "id": "assegno-inclusione",
       "group": "invalidita",
-      "data": ["rules-adi"],
+      "data": [
+        "rules-adi"
+      ],
       "icon": "🪪",
       "title": "Ho diritto all'assegno di inclusione?",
       "small": "Le condizioni e come fare la domanda",
-      "keywords": "assegno inclusione soldi reddito cittadinanza isee aiuto economico poveri"
+      "keywords": "assegno inclusione soldi reddito cittadinanza isee aiuto economico poveri carta di inclusione caf patronato spid rinnovo supporto formazione lavoro",
+      "pages": [
+        {
+          "id": "requisiti",
+          "title": "Chi ha diritto: famiglia, residenza, ISEE e reddito"
+        },
+        {
+          "id": "domanda",
+          "title": "Come fare la domanda: ISEE, patronato, Comune, Carta"
+        },
+        {
+          "id": "durata-e-rinnovo",
+          "title": "Quanto dura e come si rinnova"
+        }
+      ]
+    },
+    {
+      "id": "tessera-sanitaria",
+      "group": "servizi",
+      "static": true,
+      "data": [
+        "rules-tessera-sanitaria"
+      ],
+      "icon": "🪪",
+      "title": "La tessera sanitaria è scaduta o l'ho persa",
+      "small": "Rinnovo, duplicato, uso all'estero",
+      "keywords": "tessera sanitaria scaduta smarrita persa rubata duplicato rinnovo team estero cns codice fiscale agenzia entrate",
+      "pages": [
+        {
+          "id": "smarrita",
+          "title": "Persa, rubata o rotta: il duplicato"
+        },
+        {
+          "id": "estero",
+          "title": "All'estero: la TEAM"
+        }
+      ]
+    },
+    {
+      "id": "fascicolo-e-ricetta",
+      "group": "servizi",
+      "static": true,
+      "data": [
+        "rules-fascicolo-e-ricetta"
+      ],
+      "icon": "💻",
+      "title": "Il fascicolo sanitario e la ricetta elettronica",
+      "small": "Vedere referti e ricette online, andare in farmacia senza foglio",
+      "keywords": "fascicolo sanitario elettronico fse ricetta elettronica dematerializzata nre promemoria spid cie cns referti online consenso delega",
+      "pages": [
+        {
+          "id": "fascicolo-sanitario",
+          "title": "Entrare nel Fascicolo: SPID, consenso, delega"
+        },
+        {
+          "id": "ricetta-elettronica",
+          "title": "La ricetta elettronica: NRE, farmacia, quanto dura"
+        }
+      ]
+    },
+    {
+      "id": "prenotare-cup",
+      "group": "servizi",
+      "static": true,
+      "data": [
+        "rules-prenotare-cup"
+      ],
+      "icon": "📅",
+      "title": "Prenotare, spostare o disdire una visita al CUP",
+      "small": "SovraCUP, farmacia, telefono. Se non disdici paghi il ticket",
+      "keywords": "cup prenotare prenotazione sovracup disdire disdetta spostare appuntamento farmacia numero verde aspconte ticket mancata disdetta",
+      "pages": [
+        {
+          "id": "disdire",
+          "title": "Spostare o disdire: entro quando, e cosa succede se non lo fai"
+        }
+      ]
+    },
+    {
+      "id": "legge-104",
+      "group": "invalidita",
+      "static": true,
+      "data": [
+        "rules-legge-104"
+      ],
+      "icon": "📋",
+      "title": "La legge 104: permessi e congedo per chi assiste",
+      "small": "Cos'è, come si ottiene, i 3 giorni al mese, il congedo di 2 anni",
+      "keywords": "legge 104 permessi 3 giorni congedo straordinario handicap grave caregiver assistere familiare inps datore di lavoro agevolazioni",
+      "pages": [
+        {
+          "id": "come-si-ottiene",
+          "title": "Come si ottiene: la visita e il verbale"
+        },
+        {
+          "id": "permessi",
+          "title": "I permessi: 3 giorni al mese, chi e come"
+        },
+        {
+          "id": "congedo-straordinario",
+          "title": "Il congedo straordinario: 2 anni retribuiti"
+        }
+      ]
+    },
+    {
+      "id": "accompagnamento",
+      "group": "invalidita",
+      "static": true,
+      "data": [
+        "rules-accompagnamento"
+      ],
+      "icon": "🤲",
+      "title": "L'indennità di accompagnamento",
+      "small": "Chi ne ha diritto, quanto è, come si chiede",
+      "keywords": "indennità di accompagnamento accompagno importo 2026 invalidità 100% non autosufficiente ap70 inps ricovero minori frequenza",
+      "pages": [
+        {
+          "id": "requisiti",
+          "title": "Chi ne ha diritto: requisiti, bambini, ricovero"
+        },
+        {
+          "id": "domanda-e-pagamento",
+          "title": "Come si chiede e quando arriva: il modulo AP70"
+        }
+      ]
+    },
+    {
+      "id": "contrassegno-disabili",
+      "group": "invalidita",
+      "static": true,
+      "data": [
+        "rules-contrassegno-disabili"
+      ],
+      "icon": "♿",
+      "title": "Il contrassegno disabili per l'auto",
+      "small": "Chi ne ha diritto, come si chiede al Comune, cosa permette",
+      "keywords": "contrassegno disabili cude pass parcheggio auto ztl strisce blu posto riservato comune medico legale asp rinnovo",
+      "pages": [
+        {
+          "id": "come-si-chiede",
+          "title": "Come si chiede: ASP e Comune, rinnovo"
+        },
+        {
+          "id": "cosa-permette",
+          "title": "Cosa permette: posti riservati, ZTL, strisce blu, posto sotto casa"
+        }
+      ]
+    },
+    {
+      "id": "cure-fuori-regione",
+      "group": "cure",
+      "static": true,
+      "data": [
+        "rules-cure-fuori-regione"
+      ],
+      "icon": "🚚",
+      "title": "Curarsi fuori dalla Sicilia",
+      "small": "Cosa paga il Servizio sanitario, chi può aiutare per viaggio e alloggio",
+      "keywords": "cure fuori regione mobilità sanitaria viaggio della speranza nord ospedale altra regione rimborso viaggio alloggio estero transfrontaliera",
+      "pages": [
+        {
+          "id": "estero",
+          "title": "Le cure all'estero: in Europa e fuori"
+        }
+      ]
+    },
+    {
+      "id": "rsa",
+      "group": "casa",
+      "static": true,
+      "data": [
+        "rules-rsa"
+      ],
+      "icon": "🏥",
+      "title": "La RSA: quando a casa non ce la si fa più",
+      "small": "Come si entra, chi paga, dopo il ricovero",
+      "keywords": "rsa residenza sanitaria assistita casa di riposo lungodegenza anziano non autosufficiente retta quota sociale uvm dimissione comune",
+      "pages": [
+        {
+          "id": "come-si-entra",
+          "title": "Come si entra: medico, valutazione, lista"
+        },
+        {
+          "id": "quanto-si-paga",
+          "title": "Quanto si paga: quota sanitaria e quota alberghiera"
+        }
+      ]
+    },
+    {
+      "id": "dentista",
+      "group": "cure",
+      "static": true,
+      "data": [
+        "rules-dentista"
+      ],
+      "icon": "🩺",
+      "title": "Il dentista con il Servizio sanitario",
+      "small": "Chi ha diritto alle cure gratis o con il ticket: bambini, malati gravi, pochi soldi",
+      "keywords": "dentista gratis asp odontoiatria ticket bambini minori ortodonzia estrazione dentiera isee vulnerabilità",
+      "pages": [
+        {
+          "id": "chi-ha-diritto",
+          "title": "Chi ha diritto e cosa è compreso"
+        }
+      ]
+    },
+    {
+      "id": "psicologo",
+      "group": "cure",
+      "static": true,
+      "data": [
+        "rules-psicologo"
+      ],
+      "icon": "🗣️",
+      "title": "Uno psicologo o un aiuto per la mente",
+      "small": "I servizi gratis dell'ASP, il bonus psicologo, a chi chiedere subito",
+      "keywords": "psicologo psicoterapia gratis asp centro salute mentale csm consultorio neuropsichiatria infantile bonus psicologo inps isee ansia depressione",
+      "pages": [
+        {
+          "id": "servizi-asp",
+          "title": "I servizi gratis dell'ASP: CSM, consultorio, ragazzi"
+        },
+        {
+          "id": "bonus-psicologo",
+          "title": "Il bonus psicologo dell'INPS"
+        }
+      ]
     }
   ]
 }

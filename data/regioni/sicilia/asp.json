@@ -339,12 +339,30 @@
         {
           "topic": "cartelle",
           "label": "Ospedale Cervello: archivio cartelle cliniche",
-          "number": "091 6802080",
+          "number": "091 7802080",
           "address": "Via Trabucco 180, Palermo",
-          "hours": "Lunedì, mercoledì e venerdì 9–13",
+          "hours": "Sportello lunedì, mercoledì e venerdì 9–13. Telefono lunedì, mercoledì e venerdì 11–13",
           "url": "https://www.ospedaliriunitipalermo.it/come-fare-per/richiedere-la-copia-della-cartella-clinica/",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "cartelle",
+          "label": "Ospedale Villa Sofia: archivio cartelle cliniche",
+          "number": "091 7804074",
+          "hours": "Sportello lunedì, mercoledì e venerdì 8:30–12; martedì e giovedì 15–16. Telefono lunedì, mercoledì e venerdì 12:30–14",
+          "url": "https://www.ospedaliriunitipalermo.it/come-fare-per/richiedere-la-copia-della-cartella-clinica/",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "cartelle",
+          "label": "CTO Palermo: archivio cartelle cliniche",
+          "number": "091 7808403",
+          "hours": "Sportello lunedì, mercoledì e venerdì 8:30–12:30. Telefono lunedì, mercoledì e venerdì 12:30–14",
+          "url": "https://www.ospedaliriunitipalermo.it/come-fare-per/richiedere-la-copia-della-cartella-clinica/",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "screening",
@@ -561,12 +579,12 @@
         "Se non c'è posto, fai la visita in ospedale «in intramoenia» pagando solo il ticket."
       ],
       "todo": [
-        "Scelta e revoca del medico: confermare se si può fare online o per email, e indirizzi degli sportelli.",
         "Pagina PUA del 05/08/2024: altri PUA potrebbero essersi spostati nelle Case di Comunità (come Carini, via Ponticelli). Il Distretto 42 ha anche 091 7035308, 7036761, 7037202, 7032443. Confermare per telefono.",
         "Uffici protesi (18/10/2026): CARAD dei distretti da pagine lette. Bagheria: pomeriggio incerto (non pubblicato). Mancano Monreale, Altofonte, Belmonte Mezzagno, Piana degli Albanesi (solo email d42…@asppalermo.org). Le domande si fanno anche online.",
-        "Cartelle cliniche (18/10/2026): Villa Sofia/CTO: solo fax ed email @villasofia.it (dominio vecchio), non pubblicati. Civico: email prof.riabilitative@ dubbia; Di Cristina: accettazione amministrativa, lun e ven 11–13.",
         "Screening Palermo: WhatsApp 334 6899411 sulla pagina; email screening@ (pagina) o coscreening@ (estratto); cervice 091 7034536 solo giornale. (18/10/2026)",
-        "Scelta e revoca / esenzioni (18/10/2026): esenzioni del PTA Guadagna (via Arcoleo 25 o 5, civico in contrasto) non pubblicate; cambio medico online su sportello.asppalermo.org non verificato; esenzione per reddito anche online sul Sistema TS o tramite CAF."
+        "Verifica 19/10/2026: Civico 091 6664562: il numero non è sulle pagine di arnascivico.it; confermare per telefono o mettere l'URP del Civico (800 272028).",
+        "Verifica 19/10/2026: Cervello: correggere 091 6802080 in 091 7802080 e verificare l'indirizzo 'Via Trabucco 180' (non è sulla pagina).",
+        "Verifica 19/10/2026: CTO: il secondo numero '091 78008931' sulla pagina sembra un refuso (cifra in più): non usarlo."
       ],
       "sources": [
         {
@@ -574,11 +592,11 @@
           "url": "https://www.asppalermo.org/novita/percorso-di-tutela-lasp-di-palermo-garantisce-tempi-certi-per-le-prestazioni-specialistiche/"
         }
       ],
-      "last_verified": "2026-10-18",
+      "last_verified": "2026-10-19",
       "status": "verified",
       "scelta_medico": {
-        "how": "Vai allo sportello «scelta e revoca» del distretto sanitario del tuo comune (spesso dove c'è il CUP), con tessera sanitaria e documento. Puoi chiedere il nome dei medici liberi della tua zona.",
-        "url": null
+        "how": "Se sei maggiorenne puoi farlo online sullo Sportello dell'ASP («Cambio Medico Online»), con SPID o CIE. Oppure allo sportello «scelta e revoca» del distretto sanitario del tuo comune, con tessera sanitaria e documento. Puoi chiedere il nome dei medici liberi della tua zona.",
+        "url": "https://sportello.asppalermo.org/"
       },
       "official_domains": [
         "arnascivico.it",
@@ -595,9 +613,9 @@
       "send_to": null,
       "emails": [],
       "pec": null,
-      "form_url": "https://asp.rg.it/liste-attesa",
+      "form_url": "https://asp.rg.it/servizi-online/",
       "info_url": "https://asp.rg.it/liste-attesa",
-      "portal_url": "https://asp.rg.it/liste-attesa",
+      "portal_url": "https://asp.rg.it/servizi-online/",
       "phones": [],
       "site_url": "https://asp.rg.it/",
       "contacts": [
@@ -607,17 +625,17 @@
           "number": "0932 658702",
           "hours": "Dal lunedì al venerdì 8:30–13; martedì e giovedì anche 15–17",
           "url": "https://asp.rg.it/cup.html",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "urp",
           "label": "URP: ufficio per i cittadini",
-          "number": "0932 234203",
-          "address": "Piazza Igea 1, Ragusa",
+          "number": "0932 234204",
+          "address": "Ex Ospedale Civile, piano terra, ingresso sud da Piazza Caduti di Nassiriya, Ragusa",
           "url": "https://asp.rg.it/azienda/area-staff/uos-comunicazione-urp-e-ufficio-stampa",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "guardia",
@@ -625,8 +643,8 @@
           "number": "0932 623946",
           "address": "Piazza Igea 3, Ragusa",
           "url": "https://asp.rg.it/guardia-medica.html",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "casa",
@@ -667,12 +685,12 @@
         {
           "topic": "protesica",
           "label": "Protesi e ausili: Ragusa",
-          "number": "0932 234756",
+          "number": "0932 234759",
           "address": "Via Paestum 41, piano terra, Ragusa",
-          "hours": "Lunedì e mercoledì 8:30–12:30; martedì e giovedì 8:30–12:30 e 15–17",
-          "url": "https://asp.rg.it/news/3569-servizio-assistenza-integrativa-protesica-ragusa-nuovi-orari.html",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "hours": "Dal lunedì al venerdì 8:30–12:30; martedì e giovedì anche 15–17",
+          "url": "https://asp.rg.it/servizio-di-assistenza-integrativa-protesica-ed-handicap.html",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "protesica",
@@ -680,9 +698,9 @@
           "number": "0932 234762",
           "address": "Via Paestum 41, piano terra, Ragusa",
           "hours": "Martedì, mercoledì e giovedì 9–12:30",
-          "url": "https://asp.rg.it/news/3569-servizio-assistenza-integrativa-protesica-ragusa-nuovi-orari.html",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://asp.rg.it/servizio-di-assistenza-integrativa-protesica-ed-handicap.html",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "protesica",
@@ -691,8 +709,8 @@
           "address": "Via Aldo Moro 3, Modica",
           "hours": "Lunedì, mercoledì e venerdì 8:30–12:30; giovedì 15–17",
           "url": "https://asp.rg.it/servizio-di-assistenza-integrativa-protesica-ed-handicap.html",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "protesica",
@@ -701,43 +719,92 @@
           "address": "Via Roma, ex ospedale vecchio, Comiso",
           "hours": "Dal lunedì al venerdì, solo la mattina",
           "url": "https://asp.rg.it/servizio-di-assistenza-integrativa-protesica-ed-handicap.html",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "protesica",
+          "label": "Esenzioni per patologia e presidi per diabetici: Ragusa",
+          "number": "0932 234755",
+          "address": "Via Paestum 41, Ragusa",
+          "hours": "Lunedì, martedì e giovedì 8:30–12:30",
+          "url": "https://asp.rg.it/servizio-di-assistenza-integrativa-protesica-ed-handicap.html",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "screening",
           "label": "Screening: numero verde",
           "number": "800 050510",
-          "hours": "Dal lunedì al venerdì 9–12",
+          "hours": "Prenotazioni dal lunedì al venerdì 8:30–12:30; martedì e giovedì anche 15–17",
           "url": "https://asp.rg.it/dipartimenti/dipartimento-prevenzione/centro-gestione-screening.html",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "anagrafe",
-          "label": "Ragusa: anagrafe assistiti ed esenzioni",
+          "label": "Ragusa: anagrafe assistiti (scelta e revoca)",
           "number": "0932 234830",
           "address": "Via Dante 112, Ragusa",
           "url": "https://asp.rg.it/anagrafe-assistiti",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "hours": "Dal lunedì al venerdì 8:30–12"
         },
         {
           "topic": "anagrafe",
           "label": "Modica: anagrafe assistiti",
-          "number": "0932 448732",
+          "number": "0932 448710",
           "url": "https://asp.rg.it/anagrafe-assistiti",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "address": "Via Vittorio Veneto 10, Modica",
+          "hours": "Dal lunedì al venerdì 8:30–12; martedì e giovedì anche 15–17"
         },
         {
           "topic": "anagrafe",
           "label": "Vittoria: anagrafe assistiti",
-          "number": "0932 999615",
-          "address": "Via dell'Acate 1, Vittoria",
+          "number": "0932 999713",
+          "address": "Via Generale Cascino, piano terra, Vittoria",
           "url": "https://asp.rg.it/anagrafe-assistiti",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "hours": "Dal lunedì al venerdì 8:30–12:30; martedì e giovedì anche 15–17"
+        },
+        {
+          "topic": "centralino",
+          "label": "Centralino ospedali di Ragusa (Paternò Arezzo e Giovanni Paolo II)",
+          "number": "0932 600111",
+          "url": "https://asp.rg.it/ospedali",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "centralino",
+          "label": "Centralino Ospedale Maggiore di Modica",
+          "number": "0932 448111",
+          "address": "Via Resistenza Partigiana, Modica",
+          "url": "https://asp.rg.it/ospedali",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "centralino",
+          "label": "Centralino Ospedale Guzzardi di Vittoria",
+          "number": "0932 999111",
+          "address": "Via Papa Giovanni XXIII, Vittoria",
+          "url": "https://asp.rg.it/ospedali",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "palliative",
+          "label": "Cure palliative: Ragusa (RSA, contrada Rito)",
+          "number": "0932 600619",
+          "address": "C/da Rito (O.M.P.A.), Ragusa",
+          "url": "https://asp.rg.it/distretti/distretto-sanitario-ragusa",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         }
       ],
       "fast_track": null,
@@ -756,13 +823,15 @@
         "Il servizio online è attivo dal 10 agosto 2026."
       ],
       "todo": [
-        "Indirizzo diretto del portale.",
-        "Scelta e revoca del medico: confermare se si può fare online o per email, e indirizzi degli sportelli.",
-        "Contatti: centralino ASP non trovato; guardia medica Ragusa 0932 623946 solo da giornale (non pubblicato); mancano pagina guardia medica e pagina PUA.",
         "Verifica 18/10/2026: tolto il numero verde 800 296339 (unica fonte ufficiale del 2024). Centralino aziendale non trovato su fonte ufficiale (0932 234111 solo su elenchi). PUA di Monterosso Almo spostato nel 2026 nella Casa della Comunità: numero da trovare. Nessuna pagina PUA dedicata: url = home.",
-        "Uffici protesi (18/10/2026): Avviso n. 2248 dell'ufficio di Vittoria non letto. Modica: Casa della Comunità aperta il 15/06/2026 in piazzale Baden Powell (giornale): controllare se la protesica si sposta.",
         "Cartelle cliniche (18/10/2026): Ospedale Giovanni Paolo II: ufficio non trovato; regolamento del 02/05/2024 con le tariffe.",
-        "Scelta e revoca / esenzioni (18/10/2026): Orari di Ragusa in contrasto; Modica: civico 10 o 25 e orari in contrasto; Vittoria: avviso 1723 non letto. Giornali: sportello scelta e revoca nella Casa della Comunità di Acate (dal 20/04/2026) e Casa della Comunità di Modica (15/06/2026)."
+        "Verifica 19/10/2026: Numeri dei PUA (Ragusa, Modica, Comiso, Vittoria) solo da giornale del 2019: confermare con una telefonata o toglierli.",
+        "Verifica 19/10/2026: PUA di Monterosso Almo ora nella Casa della Comunità di via Padre Pio (dal 22/05/2026): numero non trovato.",
+        "Verifica 19/10/2026: Casa della Comunità di Acate (via Vittorio Veneto 98, dal 20/04/2026) con PUA e CUP: numero non trovato; nessuna fonte ufficiale per uno sportello scelta e revoca ad Acate.",
+        "Verifica 19/10/2026: Esenzioni ticket per reddito: Ragusa in via Paestum 41, Vittoria in via Giurato 2 (avvisi aprile 2026); si possono chiedere anche online. Rivedere l'etichetta 'anagrafe assistiti ed esenzioni'.",
+        "Verifica 19/10/2026: Cartelle cliniche: richiesta online della copia nei Servizi online ('Rilascio copia Cartella Clinica'); ufficio e telefono dell'ospedale Giovanni Paolo II ancora non trovati (il regolamento del 2024 non ha numeri). Tariffe: cartella 20 euro, spedizione 10 euro.",
+        "Verifica 19/10/2026: Assistenza servizi online: due numeri ufficiali diversi (0932 658758 sulla pagina servizi-online, 0932 608408 tasto 5 su servizi-prestazioni): chiarire.",
+        "Verifica 19/10/2026: Verificare se 0932 614461 (piè di pagina 'Contatti') è il centralino aziendale."
       ],
       "sources": [
         {
@@ -774,7 +843,7 @@
           "url": null
         }
       ],
-      "last_verified": "2026-10-18",
+      "last_verified": "2026-10-19",
       "status": "partial",
       "scelta_medico": {
         "how": "Si può fare online nei «Servizi online» del sito dell'ASP (ti registri con codice fiscale, cellulare ed email). Oppure allo sportello anagrafe assistiti del distretto, con tessera sanitaria e documento.",
@@ -793,33 +862,31 @@
         "percorso.tutela@asp.cl.it"
       ],
       "pec": "protocollo.asp.cl@pec.asp.cl.it",
-      "form_url": "https://www.asp.cl.it/servizi/moduli/moduli_fase02.aspx?ID=78346",
-      "info_url": "https://www.asp.cl.it/servizi/Menu/dinamica.aspx?idSezione=18109&idArea=84323&idCat=84329&ID=84329&TipoElemento=categoria",
+      "form_url": "https://www.asp.cl.it/it/liste-attesa/ambiti-garanzia",
+      "info_url": "https://www.asp.cl.it/it/liste-attesa/ambiti-garanzia",
       "portal_url": null,
       "phones": [
         {
           "label": "CUP",
           "number": "0934 506506",
-          "url": "https://www.asp.cl.it/it",
-          "verified": "2026-10-18",
-          "proof": "archivio",
-          "archived": "2026-05-07",
+          "url": "https://www.asp.cl.it/it/cup",
+          "verified": "2026-10-19",
+          "proof": "pagina",
           "hours": "Dal lunedì al venerdì 8:15–13:15 e 14:15–17:15"
         }
       ],
       "site_url": "https://www.asp.cl.it/",
-      "guardia_medica_url": "https://www.asp.cl.it/servizi/Menu/dinamica.aspx?idSezione=18206&idArea=16741&idCat=16998&ID=17025&TipoElemento=categoria",
-      "pua_url": "https://www.asp.cl.it/servizi/Menu/dinamica.aspx?idSezione=616&idArea=16919&idCat=16926&ID=33104&TipoElemento=pagina",
+      "guardia_medica_url": "https://www.asp.cl.it/it/servizio-guardie-mediche",
+      "pua_url": "https://www.asp.cl.it/it/dip-funz-cur-prim-int/serv-dom-res-sem",
       "contacts": [
         {
           "topic": "cup",
           "label": "CUP: prenotare o disdire visite ed esami",
           "number": "0934 506506",
           "hours": "Dal lunedì al venerdì 8:15–13:15 e 14:15–17:15",
-          "url": "https://www.asp.cl.it/it",
-          "verified": "2026-10-18",
-          "proof": "archivio",
-          "archived": "2026-05-07"
+          "url": "https://www.asp.cl.it/it/cup",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "urp",
@@ -827,10 +894,19 @@
           "number": "0934 506126",
           "address": "Via Cusmano 1, palazzina B, Caltanissetta",
           "hours": "Dal lunedì al venerdì 9–13; lunedì e giovedì anche 15:30–17",
-          "url": "https://www.asp.cl.it/servizi/Menu/dinamica.aspx?idSezione=616&idArea=16919&idCat=16925&ID=16935&TipoElemento=categoria",
-          "verified": "2026-10-18",
-          "proof": "archivio",
-          "archived": "2025-11-10"
+          "url": "https://www.asp.cl.it/it/urp",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "urp",
+          "label": "URP Ospedale Sant'Elia, Caltanissetta",
+          "number": "0934 559201",
+          "address": "Via Luigi Russo 6, edificio A, Caltanissetta",
+          "hours": "Dal lunedì al venerdì 9–13",
+          "url": "https://www.asp.cl.it/it/urp",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "centralino",
@@ -844,19 +920,19 @@
         {
           "topic": "guardia",
           "label": "Guardia medica di Caltanissetta (sede 1)",
-          "number": "0934 506580",
-          "url": "https://www.asp.cl.it/servizi/Menu/dinamica.aspx?idSezione=18206&idArea=16741&idCat=16998&ID=17025&TipoElemento=categoria",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "number": "0934 597332",
+          "url": "https://www.asp.cl.it/it/servizio-guardie-mediche",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "guardia",
           "label": "Guardia medica di Caltanissetta (sede 2, Villaggio Santa Barbara)",
           "number": "0934 567153",
-          "address": "Corso Italia 32, Villaggio Santa Barbara",
-          "url": "https://www.asp.cl.it/servizi/Menu/dinamica.aspx?idSezione=18206&idArea=16741&idCat=16998&ID=17025&TipoElemento=categoria",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "address": "Corso Italia 32 / Piazza delle Zolfare, Villaggio Santa Barbara, Caltanissetta",
+          "url": "https://www.asp.cl.it/it/servizio-guardie-mediche",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "casa",
@@ -864,123 +940,148 @@
           "number": "0934 506831",
           "address": "Via Malta 71, Caltanissetta",
           "hours": "Dal lunedì al venerdì 9–12",
-          "url": "https://www.asp.cl.it/servizi/Menu/dinamica.aspx?idSezione=616&idArea=16919&idCat=16926&ID=33104&TipoElemento=pagina",
-          "verified": "2026-10-18",
-          "proof": "archivio",
-          "archived": "2025-11-18"
+          "url": "https://www.asp.cl.it/it/dip-funz-cur-prim-int/serv-dom-res-sem",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "casa",
           "label": "Assistenza domiciliare (ADI) di Caltanissetta",
           "number": "0934 506829",
-          "url": "https://www.asp.cl.it/servizi/Menu/dinamica.aspx?idSezione=616&idArea=16919&idCat=16926&ID=33104&TipoElemento=pagina",
-          "verified": "2026-10-18",
-          "proof": "archivio",
-          "archived": "2025-11-18"
+          "url": "https://www.asp.cl.it/it/dip-funz-cur-prim-int/serv-dom-res-sem",
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "address": "Via Malta 71, Caltanissetta"
         },
         {
           "topic": "casa",
           "label": "PUA di San Cataldo",
           "number": "0934 506531",
           "hours": "Dal lunedì al venerdì 9–12",
-          "url": "https://www.asp.cl.it/servizi/Menu/dinamica.aspx?idSezione=616&idArea=16919&idCat=16926&ID=33104&TipoElemento=pagina",
-          "verified": "2026-10-18",
-          "proof": "archivio",
-          "archived": "2025-11-18"
+          "url": "https://www.asp.cl.it/it/dip-funz-cur-prim-int/serv-dom-res-sem",
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "address": "Via Belvedere 1, San Cataldo"
         },
         {
           "topic": "casa",
           "label": "PUA di Gela",
           "number": "0933 816124",
           "hours": "Dal lunedì al venerdì 9–12",
-          "url": "https://www.asp.cl.it/servizi/Menu/dinamica.aspx?idSezione=616&idArea=16919&idCat=16926&ID=33104&TipoElemento=pagina",
-          "verified": "2026-10-18",
-          "proof": "archivio",
-          "archived": "2025-11-18"
+          "url": "https://www.asp.cl.it/it/dip-funz-cur-prim-int/serv-dom-res-sem",
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "address": "Via Parioli 46, Gela"
         },
         {
           "topic": "casa",
           "label": "PUA di Mussomeli",
           "number": "0934 506481",
           "hours": "Dal lunedì al venerdì 9–12",
-          "url": "https://www.asp.cl.it/servizi/Menu/dinamica.aspx?idSezione=616&idArea=16919&idCat=16926&ID=33104&TipoElemento=pagina",
-          "verified": "2026-10-18",
-          "proof": "archivio",
-          "archived": "2025-11-18"
+          "url": "https://www.asp.cl.it/it/dip-funz-cur-prim-int/serv-dom-res-sem",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "palliative",
           "label": "Hospice di San Cataldo",
           "number": "0934 512261",
           "address": "Ospedale Raimondi, padiglione B, secondo piano, San Cataldo",
-          "url": "https://www.asp.cl.it/servizi/Menu/dinamica.aspx?idSezione=616&idArea=16919&idCat=16926&ID=33104&TipoElemento=pagina",
-          "verified": "2026-10-18",
-          "proof": "archivio",
-          "archived": "2025-11-18"
+          "url": "https://www.asp.cl.it/it/dip-funz-cur-prim-int/serv-dom-res-sem",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "palliative",
           "label": "Hospice di Gela",
           "number": "0933 831544",
           "address": "Ospedale Vittorio Emanuele III, via Palazzi 173, secondo piano ala est, Gela",
-          "url": "https://www.asp.cl.it/servizi/Menu/dinamica.aspx?idSezione=616&idArea=16919&idCat=16926&ID=33104&TipoElemento=pagina",
-          "verified": "2026-10-18",
-          "proof": "archivio",
-          "archived": "2025-11-18"
+          "url": "https://www.asp.cl.it/it/dip-funz-cur-prim-int/serv-dom-res-sem",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "protesica",
-          "label": "Protesi e ausili: San Cataldo",
+          "label": "Presidi e ausili (diabete, stomie, medicazioni): San Cataldo",
           "number": "0934 506527",
           "hours": "Lunedì 15–16:30; martedì 9:30–12:30; giovedì 9–12:30 e 15–16:30",
           "url": "https://www.asp.cl.it/it/distretto-sanitario-sancataldo/pres-san-cat",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "protesica",
           "label": "Protesi e ausili: Mussomeli",
-          "number": "0934 506479",
-          "hours": "Dal lunedì al venerdì 8:30–13:30",
-          "url": "https://www.asp.cl.it/",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "number": "0934 506487",
+          "hours": "Lunedì e mercoledì 9–13",
+          "url": "https://www.asp.cl.it/it/distretto-sanitario-mussomeli/pres-muss",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "protesica",
           "label": "Ausili e presidi: Gela",
           "number": "0933 816125",
-          "url": "https://www.asp.cl.it/",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://www.asp.cl.it/it/distretto-sanitario-gela/pres-san-gel",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "protesica",
+          "label": "Protesi e ausili (UOS Medicina protesica): San Cataldo",
+          "number": "0934 512277",
+          "hours": "Lunedì, mercoledì e venerdì 8:30–10",
+          "url": "https://www.asp.cl.it/it/distretto-sanitario-sancataldo/pres-san-cat/med-prot",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "protesica",
+          "label": "Servizio neuroriabilitativo e protesico: Gela",
+          "number": "0933 901158",
+          "address": "Via Madonna del Rosario, Gela",
+          "hours": "Dal lunedì al venerdì 8:30–13",
+          "url": "https://www.asp.cl.it/it/distretto-sanitario-gela/pres-san-gel/pol",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "cartelle",
           "label": "Ospedale Sant'Elia: archivio cartelle cliniche",
           "number": "0934 559905",
           "address": "Ospedale Sant'Elia, edificio F, Caltanissetta",
-          "url": "https://www.asp.cl.it/servizi/Menu/dinamica.aspx?idSezione=17522&idArea=17529&idCat=17597&ID=17597&TipoElemento=categoria",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://www.asp.cl.it/it/po_caltanissetta/inf-ut",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "screening",
           "label": "Centro screening",
           "number": "0934 506056",
-          "address": "Via Cusmano 1, palazzo B, Caltanissetta",
+          "address": "Via Cusmano 1, palazzina B, Caltanissetta",
+          "hours": "Dal lunedì al venerdì 9–13; lunedì e giovedì anche 14:30–17",
+          "url": "https://www.asp.cl.it/it/dir-az/uos-coordinamento-screening",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "screening",
+          "label": "Screening colon-retto (Ospedale Sant'Elia)",
+          "number": "0934 559410",
+          "address": "Ospedale Sant'Elia, 6° piano, via Luigi Russo 6, Caltanissetta",
           "hours": "Dal lunedì al venerdì 9–13",
-          "url": "https://screening.asp.cl.it/",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://www.asp.cl.it/it/dir-az/uos-screening-carcinoma-del-colonretto",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "anagrafe",
           "label": "Caltanissetta: anagrafe (scelta e revoca) ed esenzioni per reddito",
           "number": "0934 506524",
-          "address": "Viale Luigi Monaco 109, Caltanissetta",
-          "url": "https://www.asp.cl.it/servizi/Menu/dinamica.aspx?idSezione=18206&idArea=16741&idCat=16998&ID=16998&TipoElemento=categoria",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "address": "Via Luigi Monaco 109, Caltanissetta",
+          "url": "https://www.asp.cl.it/it/distretto-sanitario-caltanissetta/pres-san-cal",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "anagrafe",
@@ -988,9 +1089,47 @@
           "number": "0934 506819",
           "address": "Via Malta, Caltanissetta",
           "hours": "Dal lunedì al venerdì 9–11:30",
-          "url": "https://www.asp.cl.it/servizi/Menu/dinamica.aspx?idSezione=18206&idArea=16741&idCat=16998&ID=16998&TipoElemento=categoria",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://www.asp.cl.it/it/distretto-sanitario-caltanissetta/pres-san-cal",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "anagrafe",
+          "label": "San Cataldo: anagrafe (scelta e revoca), tessera sanitaria, esenzione invalidi",
+          "number": "0934 506516",
+          "address": "Via Belvedere 1, San Cataldo",
+          "hours": "Da martedì a giovedì 8:30–12; lunedì e giovedì 15–17",
+          "url": "https://www.asp.cl.it/it/distretto-sanitario-sancataldo/pres-san-cat",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "anagrafe",
+          "label": "San Cataldo: esenzione per malattia",
+          "number": "0934 506514",
+          "address": "Via Belvedere 1, San Cataldo",
+          "hours": "Martedì, mercoledì e giovedì 8:30–12:30",
+          "url": "https://www.asp.cl.it/it/distretto-sanitario-sancataldo/pres-san-cat",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "anagrafe",
+          "label": "Mussomeli: anagrafe (scelta e revoca medico e pediatra)",
+          "number": "0934 506455",
+          "hours": "Dal lunedì al venerdì 8:30–13:30",
+          "url": "https://www.asp.cl.it/it/distretto-sanitario-mussomeli/pres-muss",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "anagrafe",
+          "label": "Mussomeli: esenzione per patologia, infortunio, invalidità",
+          "number": "0934 506457",
+          "hours": "Dal lunedì al venerdì 8:30–13:30",
+          "url": "https://www.asp.cl.it/it/distretto-sanitario-mussomeli/pres-muss",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         }
       ],
       "fast_track": null,
@@ -1036,24 +1175,28 @@
       ],
       "todo": [
         "Campi esatti del modulo MOD-01.",
-        "Scelta e revoca del medico: confermare se si può fare online o per email, e indirizzi degli sportelli.",
-        "Verifica 18/10/2026: tolto 0934 506666 «cure palliative» (nessuna fonte): si passa dai PUA. URP: numero verde 800 061840 tolto (solo un estratto senza pagina), messo il fisso 0934 506126. Guardia medica sede 1: indirizzo non pubblicato (ASP: viale Regina Margherita 36 dal 2023; giornale 05/07/2026: via Malta). Casa di Comunità temporanea, trasloco previsto in via Malta.",
-        "Uffici protesi (18/10/2026): Caltanissetta città: trovato solo l'ufficio presidi (diabete, stomie, medicazioni) in via Luigi Monaco 109, 0934 506571, e protesi acustiche 0934 510315; carrozzine e letti non trovati. Gela: indirizzo via Parioli 46 da verificare.",
         "Cartelle cliniche (18/10/2026): Orari in contrasto (pagina vs Carta dei servizi), non pubblicati. 0933 880259 è di un altro presidio (Gela?).",
-        "Screening Caltanissetta: pomeriggi in contrasto (non pubblicati); colon 0934 559410, mammella 0934 559459. (18/10/2026)",
-        "Scelta e revoca / esenzioni (18/10/2026): Caltanissetta: orari e secondo numero in contrasto (non pubblicati). Gela: 0933 816128 o 816127 in contrasto, non pubblicato. Altri presidi non trovati. Il sito potrebbe essere stato rifatto (file 2025-12): verificare gli url dinamica.aspx."
+        "Verifica 19/10/2026: Centralino ASP 0934 506111 non trovato sul nuovo sito: confermare con telefonata o sostituire con rimando (centralini ospedali: Sant'Elia 0934 559111, Gela 0933 831111).",
+        "Verifica 19/10/2026: Guardia medica Caltanissetta sede 1: la tabella ufficiale dice viale Regina Margherita 36 / 0934 597332, ma la CdC si è trasferita in via Malta 71 il 09/04/2026: telefonare per sede e numero.",
+        "Verifica 19/10/2026: Gela anagrafe: 0933 816165 o 0933 816128? Entrambi sulla pagina del Presidio di Gela.",
+        "Verifica 19/10/2026: Cartelle cliniche Sant'Elia: orari della pagina (lun e mer 8:30-12:30, ven 10:30-12:30) diversi dalla Carta dei servizi (lun-ven 8:30-13:30, lun e mer 15:30-17:30).",
+        "Verifica 19/10/2026: Hospice San Cataldo: 0934 512261 (pagina ADI) o 0934 512325 (pagina Hospice)? Entrambi ufficiali.",
+        "Verifica 19/10/2026: PUA Caltanissetta/San Cataldo/Mussomeli: la pagina generale PUA dà numeri diversi (506829/506851/506809; 506539/506528; 506482) da quelli della pagina ADI (506831; 506531; 506481).",
+        "Verifica 19/10/2026: Campi esatti del modulo MOD-01: il Regolamento PDF è una scansione, non letto.",
+        "Verifica 19/10/2026: Mazzarino: guardia medica trasferita dall'ospedale S. Stefano alla Casa della Comunità in via Roma (avviso 13/07/2026), ma la tabella guardie dice ancora 'Via Dante (Ospedale)'.",
+        "Verifica 19/10/2026: Modulo Mod-01 del percorso di tutela: sul nuovo sito non c'è un link diretto (c'è solo il Regolamento, scansione). form_url punta alla pagina «Ambiti di garanzia»: trovare il modulo o chiederlo all'URP."
       ],
       "sources": [
         {
           "label": "ASP Caltanissetta – Ambiti di garanzia e percorso di tutela (Regolamento agg. 15/09/2025)",
-          "url": "https://www.asp.cl.it/servizi/Menu/dinamica.aspx?idSezione=18109&idArea=84323&idCat=84329&ID=84329&TipoElemento=categoria"
+          "url": "https://www.asp.cl.it/it/liste-attesa/ambiti-garanzia"
         }
       ],
-      "last_verified": "2026-10-18",
+      "last_verified": "2026-10-19",
       "status": "partial",
       "scelta_medico": {
-        "how": "Si può fare online sullo sportello dell'ASP (ti registri e ricevi un codice per SMS), se sei maggiorenne. Oppure allo sportello anagrafe del distretto, con tessera sanitaria e documento.",
-        "url": "https://sportello.asp.cl.it/release/index/cambioMedico"
+        "how": "Si può fare online sul sito dell'ASP, entrando con SPID o CIE (anche per i figli). Oppure allo sportello anagrafe del distretto, con tessera sanitaria e documento.",
+        "url": "https://www.asp.cl.it/it/scelta-medici-pediatri"
       }
     },
     {
@@ -1065,73 +1208,115 @@
       "send_to": "protocollogenerale@pec.asp.messina.it",
       "emails": [],
       "pec": "protocollogenerale@pec.asp.messina.it",
-      "form_url": "https://www.asp.messina.it/?page_id=397594",
-      "info_url": "https://www.asp.messina.it/?page_id=397594",
+      "form_url": "https://www.asp.messina.it/altri-contenuti/allegati-altri-contenuti/allegati-liste-di-attesa/Modello-di-domanda.pdf",
+      "info_url": "https://www.asp.messina.it/altri-contenuti/liste-di-attesa.aspx",
       "portal_url": null,
       "phones": [],
       "site_url": "https://www.asp.messina.it/",
-      "guardia_medica_url": "https://www.asp.messina.it/?page_id=124994",
-      "pua_url": "https://www.asp.messina.it/?page_id=249137",
+      "guardia_medica_url": "https://old.asp.messina.it/?page_id=124994",
+      "pua_url": "https://www.asp.messina.it/strutture/casa-della-comunita-di-via-del-vespro-a-messina.aspx",
       "contacts": [
         {
           "topic": "cup",
           "label": "CUP da telefono fisso (numero verde)",
           "number": "800 332277",
           "hours": "Dal lunedì al venerdì 7–19, sabato 7–14",
-          "url": "https://www.asp.messina.it/?page_id=983",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://www.asp.messina.it/urp/cup-centro-unico-prenotazioni.aspx",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "cup",
           "label": "CUP da cellulare",
           "number": "0941 1898059",
           "hours": "Dal lunedì al venerdì 7–19, sabato 7–14",
-          "url": "https://www.asp.messina.it/?page_id=983",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://www.asp.messina.it/urp/cup-centro-unico-prenotazioni.aspx",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "urp",
           "label": "URP: ufficio per i cittadini",
           "number": "090 3652811",
-          "url": "https://www.asp.messina.it/?page_id=1425",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://www.asp.messina.it/urp/cos-e-l-urp-ufficio-relazioni-con-il-pubblico.aspx",
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "address": "Via Giuseppe La Farina 263/n, piano 1, Messina",
+          "hours": "Dal lunedì al venerdì 9–13; lunedì e mercoledì anche 15–17"
+        },
+        {
+          "topic": "urp",
+          "label": "URP Milazzo",
+          "number": "090 9290638",
+          "address": "Via Marina Garibaldi, Milazzo",
+          "hours": "Lunedì e mercoledì 11–14; martedì, giovedì e venerdì 9–13; martedì e giovedì anche 15–17",
+          "url": "https://www.asp.messina.it/urp/cos-e-l-urp-ufficio-relazioni-con-il-pubblico.aspx",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "urp",
+          "label": "URP Lipari",
+          "number": "090 9885419",
+          "address": "Via Sant'Anna, c/o Ospedale Civile, Lipari",
+          "hours": "Dal lunedì al sabato 9–13",
+          "url": "https://www.asp.messina.it/urp/cos-e-l-urp-ufficio-relazioni-con-il-pubblico.aspx",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "urp",
+          "label": "URP Sant'Agata di Militello",
+          "number": "0941 720219",
+          "address": "Via Medici, Sant'Agata di Militello",
+          "url": "https://www.asp.messina.it/urp/cos-e-l-urp-ufficio-relazioni-con-il-pubblico.aspx",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "centralino",
           "label": "Centralino ASP",
           "number": "090 3651",
-          "url": "https://www.asp.messina.it/?page_id=276037",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://www.asp.messina.it/",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "casa",
-          "label": "PUA Messina Nord (via del Vespro 14)",
-          "number": "090 3653510",
-          "hours": "Dal lunedì al venerdì 8:30–12; lunedì e mercoledì anche 15–17",
-          "url": "https://www.asp.messina.it/?page_id=249137",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "label": "PUA – Casa della Comunità di via del Vespro 14 (piano terra)",
+          "number": "090 3653440",
+          "hours": "Casa della Comunità aperta tutti i giorni 8–20 (orari dello sportello PUA non pubblicati)",
+          "url": "https://www.asp.messina.it/strutture/casa-della-comunita-di-via-del-vespro-a-messina.aspx",
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "address": "Via del Vespro 14, piano terra, Messina"
+        },
+        {
+          "topic": "casa",
+          "label": "Casa della Comunità di via del Vespro (secondo numero)",
+          "number": "090 3653515",
+          "address": "Via del Vespro 14, Messina",
+          "hours": "Tutti i giorni 8–20",
+          "url": "https://www.asp.messina.it/strutture/casa-della-comunita-di-via-del-vespro-a-messina.aspx",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "palliative",
           "label": "Cure palliative a casa (solo per telefono)",
           "number": "090 3652097",
-          "url": "https://www.asp.messina.it/?p=144331",
+          "url": "https://old.asp.messina.it/?p=144331",
           "hours": "Dal 25/03/2026 l'ufficio non riceve di persona: per andarci di persona, il PUA di via del Vespro 14",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "palliative",
           "label": "Hospice del Papardo",
           "number": "090 3993852",
-          "url": "https://www.asp.messina.it/?page_id=149731",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://www.asp.messina.it/personale/alessandro-grippa.aspx",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "protesica",
@@ -1139,35 +1324,89 @@
           "number": "090 3652510",
           "address": "Viale Giostra 13, piano terra, Messina",
           "hours": "Lunedì 8:30–11:30 e 15:30–17; mercoledì e venerdì 8:30–11:30",
-          "url": "https://www.asp.messina.it/?page_id=303191",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://old.asp.messina.it/?p=124577",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "protesica",
           "label": "Protesi e ausili: Milazzo",
           "number": "090 9290718",
-          "hours": "Il giovedì non riceve il pubblico",
-          "url": "https://www.asp.messina.it/?page_id=303249",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "hours": "Lunedì, martedì, mercoledì e venerdì 8:30–12; martedì anche 15–17. Il giovedì non riceve",
+          "url": "https://old.asp.messina.it/?p=124593",
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "address": "Via G. B. Impallomeni 45, Milazzo"
         },
         {
           "topic": "protesica",
           "label": "Protesi e ausili: Barcellona Pozzo di Gotto",
           "number": "090 9751546",
-          "url": "https://www.asp.messina.it/?page_id=303249",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://old.asp.messina.it/?p=124629",
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "address": "Via Salvatore Cattafi 72, piano 0, Barcellona Pozzo di Gotto",
+          "hours": "Dal lunedì al giovedì 9:30–12; mercoledì anche 15:30–17"
         },
         {
           "topic": "protesica",
           "label": "Protesi e ausili: Patti",
           "number": "0941 244735",
-          "address": "Via Carlo Cattaneo, Patti",
-          "url": "https://www.asp.messina.it/?p=124673",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "address": "Via Carlo Cattaneo 1 (ex INAM), piano 0, Patti",
+          "url": "https://old.asp.messina.it/?p=124645",
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "hours": "Dal lunedì al venerdì 8:30–13:30"
+        },
+        {
+          "topic": "protesica",
+          "label": "Presidi per diabetici, incontinenti, stomie (pannoloni): Messina",
+          "number": "090 3652506",
+          "address": "Viale Giostra 13 (ex ospedale Mandalari), piano 0, Messina",
+          "hours": "Dal lunedì al venerdì 8:30–11:30; lunedì anche 15:30–17",
+          "url": "https://old.asp.messina.it/?p=186163",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "protesica",
+          "label": "Protesi e ausili: Sant'Agata di Militello",
+          "number": "0941 720544",
+          "address": "Via Catania 14, Sant'Agata di Militello",
+          "hours": "Martedì e giovedì 8:30–12",
+          "url": "https://old.asp.messina.it/?p=124673",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "protesica",
+          "label": "Protesi e ausili: Lipari",
+          "number": "090 9885306",
+          "address": "Via San Giorgio, piano 0, Lipari",
+          "hours": "Lunedì, mercoledì e giovedì 9–12; giovedì anche 15–17",
+          "url": "https://old.asp.messina.it/?p=124609",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "protesica",
+          "label": "Protesi e ausili: Mistretta",
+          "number": "0921 389471",
+          "address": "Via Giovanni Verga 3, Mistretta",
+          "hours": "Dal lunedì al venerdì 9–12 (ritiro e consegna pratiche martedì e giovedì)",
+          "url": "https://old.asp.messina.it/?p=124657",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "protesica",
+          "label": "Protesi e ausili: distretto di Taormina (sede di Sant'Alessio Siculo)",
+          "number": "0942 614961",
+          "address": "Contrada Sena 3, piano 0, Sant'Alessio Siculo",
+          "hours": "Lunedì, martedì, giovedì e venerdì 8:30–12; martedì anche 15–16:30",
+          "url": "https://old.asp.messina.it/?p=124292",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "cartelle",
@@ -1176,43 +1415,145 @@
           "address": "Padiglione L, piano terra, via Consolare Valeria, Messina",
           "hours": "Dal lunedì al venerdì 9–12. La prima copia è gratis; pronta in 7 giorni",
           "url": "https://www.polime.it/Come-fare-per/Richiedere-le-Cartelle-Cliniche",
-          "verified": "2026-10-18",
+          "verified": "2026-10-19",
           "proof": "pagina"
         },
         {
           "topic": "screening",
           "label": "Centro screening",
           "number": "090 3652444",
-          "address": "Piazza della Repubblica, Palazzo Satellite, Messina",
-          "hours": "Dal lunedì al venerdì 9–12",
-          "url": "https://www.asp.messina.it/?page_id=219196",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "address": "Piazza della Repubblica, Palazzo Satellite, 4° piano, Messina",
+          "url": "https://www.asp.messina.it/servizi-e-prestazioni/screening-per-la-prevenzione-dei-tumori.aspx",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "anagrafe",
           "label": "Messina: anagrafe assistiti (scelta e revoca)",
           "number": "090 3652448",
-          "url": "https://www.asp.messina.it/?page_id=230407",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://www.asp.messina.it/come-fare-per/scelta-e-revoca-del-medico-di-medicina-generale-medico-di-famiglia-e-pediatra-libera-scelta-new.aspx",
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "address": "Via Tommaso Capra 1 (Palazzo Satellite), piano 3, Messina",
+          "hours": "Dal lunedì al venerdì 8:30–12, con numero eliminacode (massimo 50 utenti la mattina)"
         },
         {
           "topic": "anagrafe",
           "label": "Milazzo: anagrafe ed esenzioni",
           "number": "090 9290726",
-          "address": "Via Giovanni Battista Impallomeni, angolo via Quartiere, Milazzo",
-          "url": "https://www.asp.messina.it/?page_id=249142",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "address": "Via G. B. Impallomeni, Milazzo",
+          "url": "https://www.asp.messina.it/come-fare-per/scelta-e-revoca-del-medico-di-medicina-generale-medico-di-famiglia-e-pediatra-libera-scelta-new.aspx",
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "hours": "Lunedì, martedì, mercoledì e venerdì 8:30–12, su appuntamento"
         },
         {
           "topic": "anagrafe",
           "label": "Barcellona Pozzo di Gotto: anagrafe assistiti",
           "number": "090 9751530",
-          "url": "https://www.asp.messina.it/?page_id=230418",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://www.asp.messina.it/come-fare-per/scelta-e-revoca-del-medico-di-medicina-generale-medico-di-famiglia-e-pediatra-libera-scelta-new.aspx",
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "address": "Via Salvatore Cattafi, piano 0, Barcellona Pozzo di Gotto",
+          "hours": "Lunedì, martedì, mercoledì e venerdì 8:30–12 (giovedì chiuso); lunedì e mercoledì anche 15:30–17"
+        },
+        {
+          "topic": "anagrafe",
+          "label": "Messina: esenzione ticket per reddito",
+          "number": "090 3653857",
+          "address": "Via Diciannovesimo Fanteria, Messina",
+          "hours": "Martedì e giovedì 8:30–12",
+          "url": "https://www.asp.messina.it/come-fare-per/rilascio-esenzione-ticket-sanitario-per-reddito-eta-disoccupazione-e-pensioni-al-minimo-socia.aspx",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "anagrafe",
+          "label": "Patti: anagrafe assistiti (scelta e revoca)",
+          "number": "0941 244724",
+          "address": "Via Carlo Cattaneo (ex INAM), piano 0, Patti",
+          "hours": "Dal lunedì al venerdì 8:30–11:30",
+          "url": "https://www.asp.messina.it/come-fare-per/scelta-e-revoca-del-medico-di-medicina-generale-medico-di-famiglia-e-pediatra-libera-scelta-new.aspx",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "anagrafe",
+          "label": "Sant'Agata di Militello: anagrafe assistiti",
+          "number": "0941 720544",
+          "address": "Via Pitillo, Sant'Agata di Militello",
+          "hours": "Dal lunedì al venerdì 8:30–11:30",
+          "url": "https://www.asp.messina.it/come-fare-per/scelta-e-revoca-del-medico-di-medicina-generale-medico-di-famiglia-e-pediatra-libera-scelta-new.aspx",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "anagrafe",
+          "label": "Lipari: anagrafe assistiti",
+          "number": "090 9885329",
+          "address": "Via San Giorgio 1, piano 0, Lipari",
+          "hours": "Lunedì, mercoledì, giovedì e venerdì 8:30–12; giovedì anche 15:30–17",
+          "url": "https://www.asp.messina.it/come-fare-per/scelta-e-revoca-del-medico-di-medicina-generale-medico-di-famiglia-e-pediatra-libera-scelta-new.aspx",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "anagrafe",
+          "label": "Mistretta: anagrafe assistiti",
+          "number": "0921 389468",
+          "address": "Via Giovanni Verga 3, Mistretta",
+          "hours": "Lunedì e mercoledì 9–12",
+          "url": "https://www.asp.messina.it/come-fare-per/scelta-e-revoca-del-medico-di-medicina-generale-medico-di-famiglia-e-pediatra-libera-scelta-new.aspx",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "anagrafe",
+          "label": "Distretto di Taormina (sede di Francavilla di Sicilia): anagrafe assistiti",
+          "number": "0942 614600",
+          "address": "Via Roma 44, Francavilla di Sicilia",
+          "hours": "Dal lunedì al venerdì 8:30–11; martedì anche 15–17",
+          "url": "https://www.asp.messina.it/come-fare-per/scelta-e-revoca-del-medico-di-medicina-generale-medico-di-famiglia-e-pediatra-libera-scelta-new.aspx",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "anagrafe",
+          "label": "Sant'Alessio Siculo: anagrafe assistiti",
+          "number": "0942 614959",
+          "address": "Contrada Sena 3, Sant'Alessio Siculo",
+          "hours": "Dal lunedì al venerdì 8:30–12; martedì anche 15–16:30",
+          "url": "https://www.asp.messina.it/come-fare-per/scelta-e-revoca-del-medico-di-medicina-generale-medico-di-famiglia-e-pediatra-libera-scelta-new.aspx",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "guardia",
+          "label": "Guardia medica Messina Sud",
+          "number": "090 2932510",
+          "address": "Via Sacra Famiglia 7, Messina",
+          "hours": "Notte 20–8 tutti i giorni; sabato e prefestivi dalle 10; domenica e festivi dalle 8",
+          "url": "https://www.asp.messina.it/strutture/presidio-continuita-assistenziale-ex-guardia-medica-messina-sud.aspx",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "guardia",
+          "label": "Guardia medica Messina Centro",
+          "number": "090 45077",
+          "hours": "Notte 20–8 tutti i giorni; sabato e prefestivi dalle 10; domenica e festivi dalle 8",
+          "url": "https://www.asp.messina.it/strutture/presidio-continuita-assistenziale-ex-guardia-medica-messina-centro.aspx",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "guardia",
+          "label": "Guardia medica Messina Nord",
+          "number": "090 59606",
+          "hours": "Notte 20–8 tutti i giorni; sabato e prefestivi dalle 10; domenica e festivi dalle 8",
+          "url": "https://www.asp.messina.it/strutture/presidio-continuita-assistenziale-ex-guardia-medica-messina-nord.aspx",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         }
       ],
       "fast_track": null,
@@ -1238,33 +1579,29 @@
         "Vale solo se hai preso la prima data offerta (dal call center, dall'app o in farmacia)."
       ],
       "todo": [
-        "Indirizzo e orari dell'URP di Messina città.",
-        "Elenco completo dei documenti.",
         "Se un'email normale verso la PEC è accettata.",
-        "Scelta e revoca del medico: confermare se si può fare online o per email, e indirizzi degli sportelli.",
-        "PUA di Messina: via Saffi 2 chiusa il 30/05/2026, servizi in via del Vespro 14 (avviso https://old.asp.messina.it/?p=497924). Numeri 090 3653510 (PUA Messina Nord, pagina Distretto) e 090 3653440 (Casa della Comunità, pagina contatti) letti il 18/10/2026 solo dall'estratto di ricerca: il sito ASP rifiutava la connessione. Confermare con una telefonata.",
-        "Tolto 090 3653440: gli estratti lo legano al PUA di via Saffi (chiuso), la pagina contatti alla Casa di Comunità di via del Vespro. Verificare per telefono.",
-        "Tolta la guardia medica di Messina centro 090 45077 (via Garibaldi 240): un avviso ASP del 2019 dice via Sacra Famiglia 7, 090 2932510. Verificare per telefono.",
-        "URP: la pagina URP di Messina città dà anche 090 3652771 (via La Farina 263/n). PUA di Pistunina: numero non trovato.",
-        "Uffici protesi (18/10/2026): Numero pannoloni di Messina in contrasto (090 3653517 o 090 3652517): non pubblicato. Sant'Agata di Militello, Taormina (sede a Francavilla), Lipari, Mistretta: forse numeri generali del distretto, non pubblicati.",
         "Cartelle cliniche (18/10/2026): Policlinico: numero diretto 090 2212441 solo da estratto. Papardo: richiesta all'ufficio ticket (2° piano), telefono non trovato. IRCCS Bonino Pulejo: niente.",
-        "Screening Messina: nessun numero verde; altri numeri 090 3652452 / 3652453; per la cervice si chiama il consultorio. (18/10/2026)",
-        "Scelta e revoca / esenzioni (18/10/2026): Messina: indirizzo via Tommaso Capra 1 e orari solo da fonti non ufficiali; Barcellona: civico 72 o 40 in contrasto; progetto «Asp in Comune» (sportelli nei Comuni) senza sedi. Patti, Sant'Agata, Mistretta, Lipari, Taormina non trovati."
+        "Verifica 19/10/2026: Guardia medica Messina: il nuovo sito mette Centro (090 45077) e Nord (090 59606) entrambe in via del Vespro 14; il vecchio sito diceva via Garibaldi 240 e via Risorgimento 22. Confermare per telefono prima di pubblicare gli indirizzi.",
+        "Verifica 19/10/2026: PUA via del Vespro: orari dello sportello PUA non indicati (la CdC è aperta 8–20 tutti i giorni). Chiedere al 090 3653440.",
+        "Verifica 19/10/2026: Screening: la pagina dà «orari del servizio» lun–ven 9–20, non 9–12. Verificare quale orario pubblicare.",
+        "Verifica 19/10/2026: Milazzo anagrafe: civico in contrasto (Impallomeni 1 sul nuovo sito, 45 per altri uffici, «angolo via Quartiere» per la segreteria).",
+        "Verifica 19/10/2026: Cartelle cliniche ospedali ASP: il nuovo sito dà solo email per presidio (es. cartellecliniche.milazzo@asp.messina.it), nessun telefono.",
+        "Verifica 19/10/2026: Se un'email normale verso la PEC è accettata: non risolto, le pagine non lo dicono."
       ],
       "sources": [
         {
           "label": "ASP Messina – Liste di attesa, Percorso di tutela",
-          "url": "https://www.asp.messina.it/?page_id=397594"
+          "url": "https://www.asp.messina.it/altri-contenuti/liste-di-attesa.aspx"
         },
         {
           "label": "ASP Messina – Chiusura della Casa di Comunità di via Saffi e trasferimento in via del Vespro",
           "url": "https://old.asp.messina.it/?p=497924"
         }
       ],
-      "last_verified": "2026-10-18",
+      "last_verified": "2026-10-19",
       "status": "partial",
       "scelta_medico": {
-        "how": "Si può fare online con SPID, a qualsiasi ora. Oppure allo sportello «scelta e revoca» (anagrafe assistiti) del distretto, con tessera sanitaria e documento.",
+        "how": "Si può fare online con SPID o CIE, dal lunedì al venerdì 8–20. Oppure allo sportello «scelta e revoca» (anagrafe assistiti) del distretto, con tessera sanitaria e documento.",
         "url": "https://sceltamedico.asp.messina.it/login"
       },
       "official_domains": [
@@ -1284,20 +1621,20 @@
         "percorsoditutela@asp.sr.it"
       ],
       "pec": "urp.siracusa@pec.asp.sr.it",
-      "form_url": null,
+      "form_url": "https://servizi.asp.sr.it/lang/it/servizi/percorso-di-tutela/access",
       "info_url": "https://www.asp.sr.it/Servizi-e-prestazioni/Percorso-di-tutela",
-      "portal_url": null,
+      "portal_url": "https://portalesalute.asp.sr.it",
       "phones": [
         {
           "label": "Numero unico dell'ASP: CUP e URP (tasto 3)",
           "number": "0931 312525",
-          "url": "https://www.asp.sr.it/Azienda/Strutture-Organizzative/UOS-Comunicazione-e-Informazione-URP",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://www.asp.sr.it/Organizzazione/Direzione-Generale/Staff-Direzione-Generale/U.O.S.-Comunicazione-e-Informazione-URP",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         }
       ],
       "site_url": "https://www.asp.sr.it/",
-      "guardia_medica_url": "https://www.asp.sr.it/Azienda/Guardie-Mediche",
+      "guardia_medica_url": "https://www.asp.sr.it/Organizzazione/Documenti/Dataset/Guardie-Mediche",
       "pua_url": "https://www.asp.sr.it/Servizi-e-prestazioni/Punto-Unico-di-Accesso-P.U.A",
       "contacts": [
         {
@@ -1306,56 +1643,54 @@
           "number": "0931 312525",
           "hours": "Dal lunedì al venerdì 8–13; martedì e giovedì anche 15–17",
           "url": "https://www.asp.sr.it/Servizi-e-prestazioni/CUP-Centro-Unico-Prenotazione",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "urp",
           "label": "URP: stesso numero unico, poi premi il tasto 3",
           "number": "0931 312525",
-          "url": "https://www.asp.sr.it/Azienda/Strutture-Organizzative/UOS-Comunicazione-e-Informazione-URP",
-          "verified": "2026-10-18",
-          "proof": "estratto"
-        },
-        {
-          "topic": "urp",
-          "label": "URP di Siracusa",
-          "number": "0931 744310",
-          "url": "https://www.asp.sr.it/Azienda/Strutture-Organizzative/UOS-Comunicazione-e-Informazione-URP",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://www.asp.sr.it/Organizzazione/Direzione-Generale/Staff-Direzione-Generale/U.O.S.-Comunicazione-e-Informazione-URP",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "urp",
           "label": "URP di Augusta",
           "number": "0931 989123",
-          "url": "https://www.asp.sr.it/Azienda/Strutture-Organizzative/UOS-Comunicazione-e-Informazione-URP",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://www.asp.sr.it/Organizzazione/Direzione-Generale/Staff-Direzione-Generale/U.O.S.-Comunicazione-e-Informazione-URP",
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "address": "Ospedale Muscatello, padiglione A, piano terra, contrada Granatello, Augusta",
+          "hours": "Dal lunedì al venerdì 8:30–12:30; martedì e giovedì anche 15:30–17"
         },
         {
           "topic": "urp",
           "label": "URP di Lentini",
           "number": "095 909525",
-          "url": "https://www.asp.sr.it/Azienda/Strutture-Organizzative/UOS-Comunicazione-e-Informazione-URP",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://www.asp.sr.it/Organizzazione/Direzione-Generale/Staff-Direzione-Generale/U.O.S.-Comunicazione-e-Informazione-URP",
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "address": "Ospedale di Lentini, SS 194, contrada Colle Roggio, Lentini",
+          "hours": "Dal lunedì al venerdì 8:30–12:30; martedì e giovedì anche 15:30–17"
         },
         {
           "topic": "urp",
           "label": "URP di Noto",
           "number": "0931 890340",
-          "url": "https://www.asp.sr.it/Azienda/Strutture-Organizzative/UOS-Comunicazione-e-Informazione-URP",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://www.asp.sr.it/Organizzazione/Direzione-Generale/Staff-Direzione-Generale/U.O.S.-Comunicazione-e-Informazione-URP",
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "address": "Ospedale Trigona, Noto",
+          "hours": "Dal lunedì al venerdì 8:30–12:30; martedì e giovedì anche 15:30–17"
         },
         {
           "topic": "centralino",
           "label": "Centralino",
           "number": "0931 724111",
           "url": "https://www.asp.sr.it/",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "casa",
@@ -1364,17 +1699,18 @@
           "address": "Corso Gelone 17, primo piano, Siracusa",
           "hours": "Dal lunedì al venerdì 9–12",
           "url": "https://www.asp.sr.it/Servizi-e-prestazioni/Punto-Unico-di-Accesso-P.U.A",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "casa",
           "label": "PUA di Augusta",
           "number": "0931 989137",
-          "address": "Contrada Granatello, padiglione B, ospedale Muscatello, Augusta",
+          "address": "Casa di Comunità HUB, ospedale Muscatello, contrada Granatello, Augusta",
           "url": "https://www.asp.sr.it/Servizi-e-prestazioni/Punto-Unico-di-Accesso-P.U.A",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "hours": "Lunedì, mercoledì e giovedì 8–12; martedì 15–16:30"
         },
         {
           "topic": "casa",
@@ -1382,8 +1718,8 @@
           "number": "095 909907",
           "address": "Piazza Aldo Moro 1, Lentini",
           "url": "https://www.asp.sr.it/Servizi-e-prestazioni/Punto-Unico-di-Accesso-P.U.A",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "casa",
@@ -1391,8 +1727,17 @@
           "number": "0931 890525",
           "address": "Via dei Mille 98, Noto",
           "url": "https://www.asp.sr.it/Servizi-e-prestazioni/Punto-Unico-di-Accesso-P.U.A",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "casa",
+          "label": "PUA di Pachino",
+          "number": "0931 890809",
+          "address": "Viale Quasimodo, Pachino",
+          "url": "https://www.asp.sr.it/Servizi-e-prestazioni/Punto-Unico-di-Accesso-P.U.A",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "palliative",
@@ -1400,80 +1745,122 @@
           "number": "0931 724573",
           "address": "Viale Epipoli 72, Siracusa",
           "url": "https://www.asp.sr.it/Organizzazione/Direzione-Generale/Direzione-Sanitaria/Area-Ospedaliera/Presidio-Ospedaliero-A.-Rizza-Siracusa/Hospice-e-Cure-Palliative",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "protesica",
-          "label": "Protesi e ausili: Siracusa",
-          "number": "0931 484373",
-          "url": "https://www.asp.sr.it/",
-          "verified": "2026-10-18",
-          "proof": "estratto"
-        },
-        {
-          "topic": "protesica",
-          "label": "Presidi e ausili: Siracusa",
-          "number": "0931 484387",
-          "address": "Corso Gelone 17, Siracusa",
-          "hours": "Dal lunedì al venerdì 8:30–12:30; martedì e giovedì anche 15–17",
-          "url": "https://www.asp.sr.it/",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "label": "Protesi e ausili: Medicina Riabilitativa di Siracusa",
+          "number": "0931 484611",
+          "url": "https://www.asp.sr.it/Organizzazione/Direzione-Generale/Direzione-Sanitaria/Area-Sanitaria-Territoriale/Dipartimento-dell-Assistenza-Distrettuale-e-dell-Integrazione-Socio-Sanitaria-ADISS/U.O.C.-Medicina-Riabilitativa",
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "address": "Ex ONP, traversa La Pizzuta, Siracusa",
+          "hours": "Venerdì 8:30–12; martedì 15–17"
         },
         {
           "topic": "protesica",
           "label": "Presidi e ausili: Augusta",
-          "number": "0931 989363",
-          "address": "Ospedale Muscatello, padiglione B, primo piano, Augusta",
-          "hours": "Lunedì 8–12; martedì 8–12 e 15–16:30; giovedì 8–12",
-          "url": "https://www.asp.sr.it/",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "number": "0931 989373",
+          "address": "Casa di Comunità HUB, ospedale Muscatello, contrada Granatello, Augusta",
+          "hours": "Lunedì, martedì e giovedì 8–12; martedì anche 15–16:30",
+          "url": "https://www.asp.sr.it/Organizzazione/Direzione-Generale/Direzione-Sanitaria/Area-Sanitaria-Territoriale/Dipartimento-dell-Assistenza-Distrettuale-e-dell-Integrazione-Socio-Sanitaria-ADISS/U.O.C.-Distretto-di-Augusta",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "protesica",
-          "label": "Presidi e ausili: Noto",
-          "number": "0931 890527",
+          "label": "Protesi e ausili: Medicina Riabilitativa di Noto",
+          "number": "0931 892424",
           "address": "Ospedale Trigona, via dei Mille, Noto",
-          "url": "https://www.asp.sr.it/",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "hours": "Venerdì 8:30–12; martedì 15–17",
+          "url": "https://www.asp.sr.it/Organizzazione/Direzione-Generale/Direzione-Sanitaria/Area-Sanitaria-Territoriale/Dipartimento-dell-Assistenza-Distrettuale-e-dell-Integrazione-Socio-Sanitaria-ADISS/U.O.C.-Medicina-Riabilitativa",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "protesica",
-          "label": "Presidi e ausili: Lentini",
-          "number": "095 909922",
-          "address": "Ospedale di Lentini, strada statale Ragusana",
-          "url": "https://www.asp.sr.it/",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "label": "Protesi e ausili: Medicina Riabilitativa di Lentini",
+          "number": "095 909812",
+          "address": "Ospedale di Lentini, contrada Colle Roggio, Lentini",
+          "hours": "Venerdì 8:30–12; martedì 15–17",
+          "url": "https://www.asp.sr.it/Organizzazione/Direzione-Generale/Direzione-Sanitaria/Area-Sanitaria-Territoriale/Dipartimento-dell-Assistenza-Distrettuale-e-dell-Integrazione-Socio-Sanitaria-ADISS/U.O.C.-Medicina-Riabilitativa",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "protesica",
+          "label": "Protesi e ausili: Medicina Riabilitativa di Augusta",
+          "number": "0931 989313",
+          "address": "Ospedale Muscatello, nuovo padiglione, contrada Granatello, Augusta",
+          "hours": "Venerdì 8:30–12; martedì 15–17",
+          "url": "https://www.asp.sr.it/Organizzazione/Direzione-Generale/Direzione-Sanitaria/Area-Sanitaria-Territoriale/Dipartimento-dell-Assistenza-Distrettuale-e-dell-Integrazione-Socio-Sanitaria-ADISS/U.O.C.-Medicina-Riabilitativa",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "cartelle",
-          "label": "Ospedale Umberto I: archivio clinico",
-          "number": "0931 724043",
+          "label": "Ospedale Umberto I: cartelle cliniche (accettazione)",
+          "number": "0931 724264",
           "url": "https://www.asp.sr.it/Come-fare-per/Ritiro-Cartelle-Cliniche",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "hours": "Dal lunedì al venerdì 10–12"
+        },
+        {
+          "topic": "cartelle",
+          "label": "Ospedale di Lentini: cartelle cliniche",
+          "number": "095 909118",
+          "hours": "Dal lunedì al venerdì 8:30–11; martedì e giovedì anche 15:30–17",
+          "url": "https://www.asp.sr.it/Come-fare-per/Ritiro-Cartelle-Cliniche",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "cartelle",
+          "label": "Ospedale di Avola: cartelle cliniche",
+          "number": "0931 582249",
+          "hours": "Dal lunedì al venerdì 8:30–12:30; martedì e giovedì anche 15–17",
+          "url": "https://www.asp.sr.it/Come-fare-per/Ritiro-Cartelle-Cliniche",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "cartelle",
+          "label": "Ospedale di Augusta: cartelle cliniche",
+          "number": "0931 989034",
+          "hours": "Lunedì, mercoledì e venerdì 10–12",
+          "url": "https://www.asp.sr.it/Come-fare-per/Ritiro-Cartelle-Cliniche",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "cartelle",
+          "label": "Ospedale di Noto: cartelle cliniche",
+          "number": "0931 890238",
+          "hours": "Lunedì e mercoledì 8:30–12:30; giovedì 8:30–12:30 e 15–17",
+          "url": "https://www.asp.sr.it/Come-fare-per/Ritiro-Cartelle-Cliniche",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "screening",
-          "label": "Centro screening",
-          "number": "0931 484332",
-          "address": "Ospedale Rizza, viale Epipoli 74, Siracusa",
-          "url": "https://screening.asp.sr.it/",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "label": "Centro screening: numero unico, poi premi il tasto 2",
+          "number": "0931 312525",
+          "address": "Ex ONP, padiglione 4, traversa La Pizzuta, Siracusa",
+          "url": "https://www.asp.sr.it/Organizzazione/Direzione-Generale/Direzione-Sanitaria/Alle-Dirette-Dipendenze-della-DS/Centro-Gestionale-Screening",
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "hours": "Telefono dal lunedì al giovedì 8:30–12:30. Sportello: lunedì–giovedì 8:30–13; martedì anche 14:45–16:30"
         },
         {
           "topic": "anagrafe",
           "label": "Siracusa (anche Floridia, Solarino, Priolo): scelta e revoca",
           "number": "0931 484391",
           "hours": "Dal lunedì al venerdì 8:30–12:30; martedì e giovedì anche 15–17",
-          "url": "https://www.asp.sr.it/Servizi-e-prestazioni/Scelta-e-Revoca",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://www.asp.sr.it/Servizi-e-prestazioni/Scelta-o-cambio-Medico-Pediatra",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "anagrafe",
@@ -1481,19 +1868,39 @@
           "number": "0931 484113",
           "address": "Poliambulatorio del PTA, ospedale Rizza, viale Epipoli 72, Siracusa",
           "hours": "Dal lunedì al venerdì 8:30–12:30; martedì e giovedì anche 15–17",
-          "url": "https://www.asp.sr.it/Servizi-e-prestazioni/Esenzione-Ticket",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://www.asp.sr.it/Servizi-e-prestazioni/Esenzione-Ticket-per-Reddito-Patologia",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "anagrafe",
           "label": "Augusta (anche Melilli, Villasmundo): scelta del medico",
           "number": "0931 989135",
-          "address": "Ospedale Muscatello, padiglione B, primo piano, stanza D, Augusta",
+          "address": "Casa di Comunità HUB, ospedale Muscatello, contrada Granatello, Augusta",
           "hours": "Lunedì, martedì e giovedì 8–12; martedì anche 15–16:30",
-          "url": "https://www.asp.sr.it/Azienda/Strutture-Organizzative/Distretto-Sanitario-Augusta",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://www.asp.sr.it/Organizzazione/Direzione-Generale/Direzione-Sanitaria/Area-Sanitaria-Territoriale/Dipartimento-dell-Assistenza-Distrettuale-e-dell-Integrazione-Socio-Sanitaria-ADISS/U.O.C.-Distretto-di-Augusta",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "anagrafe",
+          "label": "Melilli: scelta del medico, esenzioni, presidi (Casa di Comunità)",
+          "number": "0931 989433",
+          "address": "Casa di Comunità, via Martiri di Via Fani, Melilli",
+          "hours": "Dal lunedì al venerdì 8:30–12:30; martedì e giovedì anche 15–16:30",
+          "url": "https://www.asp.sr.it/Organizzazione/Direzione-Generale/Direzione-Sanitaria/Area-Sanitaria-Territoriale/Dipartimento-dell-Assistenza-Distrettuale-e-dell-Integrazione-Socio-Sanitaria-ADISS/U.O.C.-Distretto-di-Augusta",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "guardia",
+          "label": "Guardia medica di Augusta",
+          "number": "0931 989906",
+          "address": "Ospedale Muscatello, padiglione B, piano terra (area Pronto Soccorso), Augusta",
+          "hours": "Tutti i giorni 20–8; sabato e domenica 8–20; prefestivi 10–20",
+          "url": "https://www.asp.sr.it/Organizzazione/Direzione-Generale/Direzione-Sanitaria/Area-Sanitaria-Territoriale/Dipartimento-dell-Assistenza-Distrettuale-e-dell-Integrazione-Socio-Sanitaria-ADISS/U.O.C.-Distretto-di-Augusta",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         }
       ],
       "fast_track": null,
@@ -1514,14 +1921,14 @@
         "Per domande e rimborsi c'è anche l'email percorsoditutela@asp.sr.it."
       ],
       "todo": [
-        "Il regolamento 2024 cita un modulo online con SPID: verificare se è attivo.",
-        "Scelta e revoca del medico: confermare se si può fare online o per email, e indirizzi degli sportelli.",
-        "Contatti: centralino 0931 724111 o 0931 484111 da chiarire (non pubblicato).",
         "Verifica 18/10/2026: CUP 0931 484848 sostituito con il numero unico 0931 312525 (dal 20/09/2023; la pagina cup.asp.sr.it/telefonicamente mostra ancora il vecchio). Giornali: CUP e cassa spostati nella Casa della Comunità ex ONP (04/09/2026); previsti traslochi delle guardie mediche di Siracusa città e PUA integrati nelle Case della Comunità: controllare a ogni giro.",
-        "Uffici protesi (18/10/2026): Le domande di protesica vanno alla UOS Medicina Riabilitativa del distretto (email medprot.sr / medprot.augusta / medprot.noto / medprot.lentini @asp.sr.it): indirizzi e orari non trovati.",
-        "Cartelle cliniche (18/10/2026): Email dmpo.accettazione@asp.sr.it; orari e costo non trovati.",
-        "Screening Siracusa: orari della segreteria in contrasto; call center 0931 312525 tasto 2 solo da giornale. (18/10/2026)",
-        "Scelta e revoca / esenzioni (18/10/2026): Siracusa scelta e revoca: indirizzo viale Epipoli 72 o corso Gelone 17 in contrasto (non pubblicato). Lentini e Noto: solo numeri del distretto. Si può fare anche per email al distretto (es. sceltaerevoca.distrettosiracusa@asp.sr.it)."
+        "Scelta e revoca / esenzioni (18/10/2026): Siracusa scelta e revoca: indirizzo viale Epipoli 72 o corso Gelone 17 in contrasto (non pubblicato). Lentini e Noto: solo numeri del distretto. Si può fare anche per email al distretto (es. sceltaerevoca.distrettosiracusa@asp.sr.it).",
+        "Verifica 19/10/2026: Scelta e revoca a Siracusa: la pagina del servizio (12/02/2026) dice ospedale Rizza, la pagina dell'ufficio ASB (30/09/2026) dice ex ONP, traversa La Pizzuta. Telefonare allo 0931 484391 per confermare la sede prima di pubblicare l'indirizzo.",
+        "Verifica 19/10/2026: PUA di Siracusa: la pagina indica sia corso Gelone 17 (9-12) sia «Area ex Onp, via Corfù» (8:30-13 dal 01/11/2024). Confermare la sede per telefono.",
+        "Verifica 19/10/2026: Guardie mediche di Siracusa città: il comunicato del 04/09/2026 annuncia il trasferimento nelle due Case della Comunità dell'ex ONP. Il dataset ufficiale (fermo al 2024) indica ancora Umberto I (0931 724276) e Rizza (0931 484629). Ricontrollare a ogni giro.",
+        "Verifica 19/10/2026: Lentini: il numero di presidi e ausili 095 909922 non si trova su nessuna pagina ufficiale. Sostituirlo con la Medicina Riabilitativa (095 909812) oppure con la segreteria del distretto (095 909187).",
+        "Verifica 19/10/2026: CUP di Siracusa città: lo sportello è passato all'ex ONP (04/09/2026), ma la pagina CUP indica ancora l'ospedale Rizza. Aggiornare l'indirizzo quando lo riporterà la pagina ufficiale.",
+        "Verifica 19/10/2026: Tolti 0931 484387 e 0931 890527 (sono i numeri generali dei distretti di Siracusa e Noto, non uffici presidi) e 095 909922 (Lentini, su nessuna pagina ufficiale; al suo posto la Medicina Riabilitativa 095 909812). Presidi (incontinenza, diabete) a Siracusa: ASI al PTA del Rizza, 0931 484113 (stesso numero dell'esenzione ticket): valutare se aggiungerlo come «protesica»."
       ],
       "sources": [
         {
@@ -1529,11 +1936,11 @@
           "url": "https://www.asp.sr.it/Servizi-e-prestazioni/Percorso-di-tutela"
         }
       ],
-      "last_verified": "2026-10-18",
+      "last_verified": "2026-10-19",
       "status": "partial",
       "scelta_medico": {
-        "how": "Si può fare anche per email, mandando i documenti all'indirizzo del distretto (per Siracusa: sceltaerevoca.distrettosiracusa@asp.sr.it). Oppure allo sportello «scelta e revoca» del distretto, con tessera sanitaria e documento.",
-        "url": "https://www.asp.sr.it/Servizi-e-prestazioni/Scelta-e-Revoca"
+        "how": "Si può fare online con SPID o CIE, sul Portale della Salute dell'ASP. Oppure per email, mandando i documenti all'indirizzo del distretto (per Siracusa: sceltaerevoca.distrettosiracusa@asp.sr.it), o allo sportello «scelta e revoca» del distretto, con tessera sanitaria e documento.",
+        "url": "https://www.asp.sr.it/Servizi-e-prestazioni/Scelta-o-cambio-Medico-Pediatra"
       }
     },
     {
@@ -1893,8 +2300,8 @@
         {
           "label": "CUP numero verde (premi il tasto 2)",
           "number": "800 954414",
-          "verified": "2026-10-18",
-          "proof": "estratto",
+          "verified": "2026-10-19",
+          "proof": "pagina",
           "url": "https://www.aspct.it/comunicazione/news/default.aspx?news=25833"
         }
       ],
@@ -1907,24 +2314,27 @@
           "number": "800 954414",
           "hours": "Dal lunedì al venerdì 8–16:45 (dal 12/01/2026 il sabato è chiuso)",
           "url": "https://www.aspct.it/comunicazione/news/default.aspx?news=25833",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "urp",
           "label": "URP: ufficio per i cittadini (numero verde)",
           "number": "800 279761",
-          "url": "https://www.aspct.it/azienda/contatti/",
-          "verified": "2026-10-18",
-          "proof": "pagina"
+          "url": "https://www.aspct.it/azienda/direzione-generale/u-o-c-coordinamento-dello-staff/urp-e-comunicazione/punti-urp/default.aspx",
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "hours": "Dal lunedì al venerdì 9:30–12; lunedì anche 15–16:30"
         },
         {
-          "topic": "guardia",
-          "label": "Guardia medica: ufficio continuità assistenziale",
-          "number": "095 2545811",
-          "url": "https://www.aspct.it/azienda/dipartimenti/dipartimenti-sanitari/dipartimento-delle-attivit-territoriali-integrazione-ospedal/uoc-cure-prim/cure-primarie-e-integrazione-socio-sanitaria/guardia-medica.aspx",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "topic": "urp",
+          "label": "Punto URP del Distretto di Catania (PTA San Luigi)",
+          "number": "095 8250305",
+          "address": "Viale Fleming 24, edificio A (ex Ospedale San Luigi), Catania",
+          "hours": "Martedì 15–16; venerdì 10–12",
+          "url": "https://www.aspct.it/azienda/dipartimenti/dipartimenti-sanitari/dipartimento-delle-attivit-territoriali-integrazione-ospedal/distretti-sanitari/catania/catania-servizi-distretto/",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "casa",
@@ -1933,7 +2343,26 @@
           "hours": "Martedì 15:30–17:30; giovedì 9–12:30",
           "address": "PTA San Luigi, viale Fleming, Catania",
           "url": "https://www.aspct.it/azienda/dipartimenti/dipartimenti-sanitari/dipartimento-delle-cure-intermedie-domiciliari-e-della-speci/u-o-c-coordinamento-e-controllo-adi-cure-palliative-rsa-e-lu/adi-cure-palliative-rsa/",
-          "verified": "2026-10-18",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "casa",
+          "label": "PUA del PTA San Luigi (Catania)",
+          "number": "095 8250212",
+          "address": "Viale Fleming 24, Catania",
+          "hours": "Dal lunedì al venerdì 8–13",
+          "url": "https://www.aspct.it/azienda/dipartimenti/dipartimenti-sanitari/dipartimento-delle-attivit-territoriali-integrazione-ospedal/pta/pta-s-luigi-catania/",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "casa",
+          "label": "PUA della Casa di Comunità San Giorgio-Librino (Catania)",
+          "number": "095 09389803",
+          "address": "Stradale San Giorgio 105 – Viale Biagio Pecorino 5, Catania",
+          "url": "https://www.aspct.it/azienda/dipartimenti/dipartimenti-sanitari/dipartimento-delle-attivit-territoriali-integrazione-ospedal/pta/pta-librino-s-giorgio-catania/",
+          "verified": "2026-10-19",
           "proof": "pagina"
         },
         {
@@ -1943,47 +2372,48 @@
           "hours": "Martedì e giovedì 9:30–12:30",
           "address": "Via Vecchia Ognina 14, piano terra, Catania",
           "url": "https://www.aspct.it/azienda/dipartimenti/dipartimenti-sanitari/dipartimento-delle-cure-intermedie-domiciliari-e-della-speci/u-o-c-coordinamento-e-controllo-adi-cure-palliative-rsa-e-lu/adi-cure-palliative-rsa/",
-          "verified": "2026-10-18",
+          "verified": "2026-10-19",
           "proof": "pagina"
         },
         {
           "topic": "protesica",
           "label": "Protesi e ausili: Catania (PTA San Luigi)",
           "number": "095 8250328",
-          "address": "Viale Fleming 24, edificio A, sala «Verga», Catania",
-          "hours": "Telefono solo la mattina",
-          "url": "https://www.aspct.it/comunicazione/news/default.aspx?news=20346",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "address": "Viale Fleming 24, edificio A (ex Ospedale San Luigi), Catania",
+          "hours": "Telefono solo la mattina. Sportello martedì e giovedì 8:30–11:30; mercoledì 15–16:30",
+          "url": "https://www.aspct.it/azienda/dipartimenti/dipartimenti-sanitari/dipartimento-delle-attivit-territoriali-integrazione-ospedal/distretti-sanitari/catania/catania-servizi-distretto/",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "protesica",
           "label": "Pannoloni: attivare la fornitura (numero verde)",
           "number": "800 392989",
-          "hours": "Lunedì, martedì e giovedì 8:30–12",
-          "url": "https://www.aspct.it/comunicazione/news/default.aspx?news=20346",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "hours": "Lunedì, mercoledì e venerdì 8:30–12",
+          "url": "https://www.aspct.it/azienda/dipartimenti/dipartimenti-sanitari/dipartimento-delle-attivit-territoriali-integrazione-ospedal/distretti-sanitari/catania/catania-servizi-distretto/",
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "address": "Viale Fleming 24, edificio A (ex Ospedale San Luigi), Catania"
         },
         {
           "topic": "protesica",
           "label": "Protesi e ausili: Acireale",
           "number": "095 7677950",
           "address": "Via Martinez 19, Acireale",
-          "hours": "Martedì 8–12 e 15–17; giovedì 8–12",
-          "url": "https://www.aspct.it/",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "hours": "Martedì 14:30–16:30; giovedì 8–12",
+          "url": "https://www.aspct.it/azienda/dipartimenti/dipartimenti-sanitari/dipartimento-delle-attivit-territoriali-integrazione-ospedal/distretti-sanitari/acireale/acireale-servizi-distretto/",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "protesica",
           "label": "Protesi e ausili: Caltagirone",
-          "number": "0933 353035",
+          "number": "0933 353036",
           "address": "Piazza Marconi 2, Caltagirone",
           "hours": "Lunedì e giovedì 8:30–12; martedì 16–18",
-          "url": "https://www.aspct.it/",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://www.aspct.it/azienda/dipartimenti/dipartimenti-sanitari/dipartimento-delle-attivit-territoriali-integrazione-ospedal/distretti-sanitari/caltagirone/caltagirone-servizi-distretto/",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "protesica",
@@ -1991,9 +2421,9 @@
           "number": "095 7975714",
           "address": "Via Mario Carrara 2, Paternò",
           "hours": "Dal lunedì al venerdì 8:30–12",
-          "url": "https://www.aspct.it/",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://www.aspct.it/azienda/dipartimenti/dipartimenti-sanitari/dipartimento-delle-attivit-territoriali-integrazione-ospedal/distretti-sanitari/patern/patern-servizi-distretto/",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "cartelle",
@@ -2001,18 +2431,19 @@
           "number": "095 7594231",
           "hours": "Sportello: lunedì–mercoledì 8–12, martedì anche 15–17. Telefono: giovedì e venerdì 12–13",
           "url": "https://www.ao-garibaldi.ct.it/utente/richiesta-documentazione-sanitaria/",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "address": "Padiglione 11, piano terra, P.O. Garibaldi-Centro, Piazza Santa Maria di Gesù 5, Catania"
         },
         {
           "topic": "cartelle",
           "label": "Ospedale Garibaldi Nesima: ufficio cartelle cliniche",
           "number": "095 7595285",
-          "address": "Via Palermo 636, Catania",
+          "address": "Corpo E, piano terra, P.O. Garibaldi-Nesima, Via Palermo 636, Catania",
           "hours": "Sportello: lunedì–mercoledì 8–12, martedì anche 15–17. Telefono: giovedì e venerdì 12–13",
           "url": "https://www.ao-garibaldi.ct.it/utente/richiesta-documentazione-sanitaria/",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "cartelle",
@@ -2021,7 +2452,7 @@
           "address": "Edificio F2, piano terra, via Messina 829, Catania",
           "hours": "Sportello dal lunedì al venerdì 8:30–13, lunedì e mercoledì anche 14:30–17. Telefono 11–13",
           "url": "https://www.aocannizzaro.it/utente/accettazione-ricoveri-e-cartelle-cliniche/default.aspx",
-          "verified": "2026-10-18",
+          "verified": "2026-10-19",
           "proof": "pagina"
         },
         {
@@ -2031,7 +2462,7 @@
           "address": "Edificio 1, piano terra, via Santa Sofia 78, Catania",
           "hours": "Dal lunedì al venerdì 8:30–13:30; giovedì anche 15:30–17. La prima copia è gratis",
           "url": "https://www.policlinicorodolicosanmarco.it/utente/copia-cartelle-cliniche/",
-          "verified": "2026-10-18",
+          "verified": "2026-10-19",
           "proof": "pagina"
         },
         {
@@ -2039,9 +2470,9 @@
           "label": "Ospedale San Marco: cartelle cliniche (direzione medica)",
           "number": "095 4794370",
           "address": "Edificio A, piano 5, scala A2, viale Carlo Azeglio Ciampi, Catania",
-          "hours": "Dal lunedì al venerdì 10–12. La prima copia è gratis",
+          "hours": "Sportello dal lunedì al venerdì 10–12. Telefono lunedì, mercoledì e venerdì 12–14. La prima copia è gratis",
           "url": "https://www.policlinicorodolicosanmarco.it/utente/copia-cartelle-cliniche/",
-          "verified": "2026-10-18",
+          "verified": "2026-10-19",
           "proof": "pagina"
         },
         {
@@ -2049,9 +2480,9 @@
           "label": "Screening: numero verde",
           "number": "800 894007",
           "hours": "Dal lunedì al venerdì 8:30–13; lunedì anche 15–17:30",
-          "url": "https://www.aspct.it/",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://www.aspct.it/comunicazione/news/default.aspx?news=28761",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "anagrafe",
@@ -2059,8 +2490,9 @@
           "number": "095 7677345",
           "address": "Via Martinez 19, Acireale",
           "url": "https://www.aspct.it/azienda/dipartimenti/dipartimenti-sanitari/dipartimento-delle-attivit-territoriali-integrazione-ospedal/distretti-sanitari/acireale/acireale-servizi-distretto/",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "hours": "Martedì 14:30–16:30 (mattina chiuso); da mercoledì a venerdì 8:30–12"
         },
         {
           "topic": "anagrafe",
@@ -2068,8 +2500,55 @@
           "number": "0933 353060",
           "hours": "Lunedì, martedì, mercoledì e venerdì 8:30–12:30; martedì anche 15:30–17:30. Giovedì chiuso",
           "url": "https://www.aspct.it/azienda/dipartimenti/dipartimenti-sanitari/dipartimento-delle-attivit-territoriali-integrazione-ospedal/distretti-sanitari/caltagirone/caltagirone-servizi-distretto/",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "address": "Piazza Marconi 1, Caltagirone"
+        },
+        {
+          "topic": "anagrafe",
+          "label": "Catania città: scelta e revoca del medico (via La Marmora)",
+          "number": "095 2545162",
+          "address": "Via Alessandro La Marmora 23 (locali vicino all'Ufficio Informazioni del Padiglione A), Catania",
+          "hours": "Anagrafe assistiti: martedì e giovedì 7:45–12:30 e 14:30–17:30",
+          "url": "https://www.aspct.it/azienda/dipartimenti/dipartimenti-sanitari/dipartimento-delle-attivit-territoriali-integrazione-ospedal/distretti-sanitari/catania/catania-servizi-distretto/",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "anagrafe",
+          "label": "Caltagirone: esenzioni ticket per patologia",
+          "number": "0933 353062",
+          "address": "Piazza Marconi 2, Caltagirone",
+          "url": "https://www.aspct.it/azienda/dipartimenti/dipartimenti-sanitari/dipartimento-delle-attivit-territoriali-integrazione-ospedal/distretti-sanitari/caltagirone/caltagirone-servizi-distretto/",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "guardia",
+          "label": "Guardia medica Catania – PTA San Luigi",
+          "number": "095 8250165",
+          "address": "Viale Fleming (PTA San Luigi), Catania",
+          "url": "https://www.aspct.it/azienda/dipartimenti/dipartimenti-sanitari/dipartimento-delle-attivit-territoriali-integrazione-ospedal/uoc-cure-prim/cure-primarie-e-integrazione-socio-sanitaria/guardia-medica.aspx",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "guardia",
+          "label": "Guardia medica Catania – ex Corso Italia (ora edificio GM San Luigi)",
+          "number": "095 382113",
+          "address": "Viale Fleming (edificio GM San Luigi), Catania",
+          "url": "https://www.aspct.it/azienda/dipartimenti/dipartimenti-sanitari/dipartimento-delle-attivit-territoriali-integrazione-ospedal/uoc-cure-prim/cure-primarie-e-integrazione-socio-sanitaria/guardia-medica.aspx",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "guardia",
+          "label": "Guardia medica Catania – Librino",
+          "number": "095 8183924",
+          "address": "Stradale San Giorgio 105, Catania",
+          "url": "https://www.aspct.it/azienda/dipartimenti/dipartimenti-sanitari/dipartimento-delle-attivit-territoriali-integrazione-ospedal/uoc-cure-prim/cure-primarie-e-integrazione-socio-sanitaria/guardia-medica.aspx",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         }
       ],
       "fast_track": {
@@ -2098,13 +2577,12 @@
       ],
       "todo": [
         "Canale per le classi D e P (chiamare l'URP). L'app ASPConTe non è confermata per il percorso di tutela.",
-        "URP 800 279761 / urp@aspct.it (trovati su un sito non ufficiale).",
-        "Scelta e revoca del medico: confermare se si può fare online o per email, e indirizzi degli sportelli.",
-        "URP 800 279761: due pagine ASP danno orari diversi (lun–ven 8:30–12:30 e mar 15:30–17:30, oppure lun/mar/gio 9:30–13 e mar 16–18): orari tolti, verificare. Tasto 2 del CUP: vale per le classi U e B.",
-        "Uffici protesi (18/10/2026): Catania al PTA San Luigi (data del trasloco 17/02, anno 2025 o 2026 non chiaro; orari in contrasto, non pubblicati). La pagina «Richiesta protesi» ha ancora la vecchia sede di via Santa Maria La Grande 3: non usarla. Non pubblicati: Palagonia e Bronte (vecchio sito), Gravina (solo PEC), Adrano e Giarre (attribuzione incerta).",
-        "Cartelle cliniche (18/10/2026): Garibaldi: prima copia gratis ma chiede la ricevuta di pagamento per email (contrasto). Tempi Cannizzaro 30/15 giorni solo da estratto.",
-        "Screening Catania: prenotazione online con SPID su screeningapp.aspct.it (estratto). (18/10/2026)",
-        "Scelta e revoca / esenzioni (18/10/2026): Catania città: dal 01/04/2026 sportelli in via La Marmora 23 (martedì), PTA Librino-San Giorgio (martedì e giovedì pomeriggio), Motta Sant'Anastasia e Misterbianco (martedì e giovedì mattina), news 27094: telefoni non trovati, non pubblicati. Online con ASPConTe (24 ore). Caltagirone: civico 1 o 2 in contrasto."
+        "Verifica 19/10/2026: Guardia medica 095 2545811: non trovato su nessuna pagina ufficiale; chiamare per conferma o sostituirlo con i numeri degli ambulatori di Catania (095 8250165, 095 382113, 095 8183924).",
+        "Verifica 19/10/2026: UVP cure palliative: indirizzo in contrasto tra pagina ADI (via Vecchia Ognina 14, rev. 08/07/2026) e pagina Distretto (via Pasubio 19, rev. 18/09/2026). Confermare per telefono.",
+        "Verifica 19/10/2026: Canale per le classi D e P: la delibera 77/2025 è una scansione; leggerla a mano o chiedere all'URP.",
+        "Verifica 19/10/2026: Motta Sant'Anastasia: la pagina (rev. 02/2025) ha orari vecchi; numero 095 306252 da confermare per telefono.",
+        "Verifica 19/10/2026: PUA San Giorgio: orari nella tabella poco chiari (lun–dom 8–13:30 e 14:30–18?); confermare.",
+        "Verifica 19/10/2026: Tolto 095 2545811 (guardia medica, su nessuna pagina ufficiale): al suo posto i numeri dei presidi di Catania dalla pagina guardia medica. Motta Sant'Anastasia, anagrafe 095 306252: da confermare per telefono. Cure palliative UVP: indirizzo in contrasto (via Vecchia Ognina 14 o via Pasubio 19)."
       ],
       "sources": [
         {
@@ -2112,11 +2590,11 @@
           "url": "https://www.aspct.it/azienda/direzione-generale/u-o-c-coordinamento-dello-staff/urp-e-comunicazione/percorsotutela/"
         }
       ],
-      "last_verified": "2026-10-18",
+      "last_verified": "2026-10-19",
       "status": "partial",
       "scelta_medico": {
-        "how": "Si può fare online, a qualsiasi ora, con il servizio ASPConTe dell'ASP (con SPID). Oppure allo sportello «scelta e revoca» del distretto, con tessera sanitaria e documento.",
-        "url": "https://www.aspct.it"
+        "how": "Si può fare online, a qualsiasi ora, con il servizio ASPConTe dell'ASP (con SPID, o registrandoti con codice via SMS). Oppure allo sportello «scelta e revoca» del distretto, con tessera sanitaria e documento.",
+        "url": "https://www.aspct.it/aspconte/servizi-territoriali/"
       },
       "official_domains": [
         "ao-garibaldi.ct.it",
@@ -2445,25 +2923,24 @@
       ],
       "pec": "protocollo.generale@pec.asp.enna.it",
       "form_url": null,
-      "info_url": "https://www.aspenna.it/category/servizi/liste-di-attesa/",
-      "portal_url": null,
+      "info_url": "https://www.aspenna.it/amministrazione-trasparente/servizi-erogati/liste-di-attesa",
+      "portal_url": "https://cupweb.asp.enna.it/",
       "phones": [
         {
           "label": "CUP",
           "number": "0935 520810",
-          "url": "https://www.aspenna.it/distretto-sanitario-di-enna/",
-          "verified": "2026-10-18",
-          "proof": "archivio",
-          "archived": "2026-01-14",
-          "hours": "Operatori dal lunedì al venerdì 9–17"
+          "url": "https://www.aspenna.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/cup-prenotazione-prestazioni-sanitarie",
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "hours": "Call center dal lunedì al venerdì 8:15–17"
         },
         {
           "label": "CUP numero verde",
           "number": "800 679977",
-          "url": "https://www.aspenna.it/distretto-sanitario-di-enna/",
-          "verified": "2026-10-18",
-          "proof": "archivio",
-          "archived": "2026-01-14"
+          "url": "https://www.aspenna.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/cup-prenotazione-prestazioni-sanitarie",
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "hours": "Dal lunedì al venerdì 8:15–17"
         }
       ],
       "site_url": "https://www.aspenna.it/",
@@ -2472,59 +2949,101 @@
           "topic": "cup",
           "label": "CUP: prenotare visite ed esami",
           "number": "0935 520810",
-          "hours": "Operatori dal lunedì al venerdì 9–17",
-          "url": "https://www.aspenna.it/distretto-sanitario-di-enna/",
-          "verified": "2026-10-18",
-          "proof": "archivio",
-          "archived": "2026-01-14"
+          "hours": "Call center dal lunedì al venerdì 8:15–17",
+          "url": "https://www.aspenna.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/cup-prenotazione-prestazioni-sanitarie",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "cup",
           "label": "CUP numero verde (solo da telefono fisso)",
           "number": "800 679977",
-          "url": "https://www.aspenna.it/distretto-sanitario-di-enna/",
-          "verified": "2026-10-18",
-          "proof": "archivio",
-          "archived": "2026-01-14"
+          "url": "https://www.aspenna.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/cup-prenotazione-prestazioni-sanitarie",
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "hours": "Dal lunedì al venerdì 8:15–17"
         },
         {
           "topic": "urp",
           "label": "URP di Enna (numero verde)",
           "number": "800 319141",
-          "hours": "Dal lunedì al venerdì 9–11; giovedì anche 15:30–17:30",
-          "url": "https://www.aspenna.it/urp-3/",
-          "verified": "2026-10-18",
-          "proof": "archivio",
-          "archived": "2026-05-16"
+          "hours": "Dal lunedì al venerdì 9–11; giovedì anche 15:30–17",
+          "url": "https://www.aspenna.it/servizi-e-prestazioni/comunicazione/urp-e-comunicazione",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "urp",
           "label": "URP di Enna",
           "number": "0935 516760",
           "address": "Ospedale Umberto I, Enna",
-          "url": "https://www.aspenna.it/urp-3/",
-          "verified": "2026-10-18",
-          "proof": "archivio",
-          "archived": "2026-05-16"
+          "url": "https://www.aspenna.it/servizi-e-prestazioni/comunicazione/urp-e-comunicazione",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "urp",
+          "label": "URP di Enna (secondo numero fisso)",
+          "number": "0935 516791",
+          "address": "Ospedale Umberto I, Enna",
+          "url": "https://www.aspenna.it/servizi-e-prestazioni/comunicazione/urp-e-comunicazione",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "urp",
+          "label": "URP di Piazza Armerina (numero verde)",
+          "number": "800 519520",
+          "address": "Ospedale Chiello, Piazza Armerina",
+          "hours": "Dal lunedì al venerdì 9–11; giovedì anche 15:30–17:30",
+          "url": "https://www.aspenna.it/servizi-e-prestazioni/comunicazione/urp-e-comunicazione",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "urp",
+          "label": "URP di Piazza Armerina",
+          "number": "0935 981386",
+          "address": "Ospedale Chiello, Piazza Armerina",
+          "url": "https://www.aspenna.it/servizi-e-prestazioni/comunicazione/urp-e-comunicazione",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "urp",
+          "label": "URP di Leonforte (Distretto di Agira)",
+          "number": "0935 664390",
+          "hours": "Al telefono: dal lunedì al venerdì 9–11; giovedì anche 15:30–17:30",
+          "url": "https://www.aspenna.it/servizi-e-prestazioni/comunicazione/urp-e-comunicazione",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "urp",
+          "label": "URP di Nicosia",
+          "number": "0935 671620",
+          "address": "Casa di Comunità, piazza San Francesco di Paola 1, Nicosia",
+          "hours": "Al telefono: dal lunedì al venerdì 9–11",
+          "url": "https://www.aspenna.it/servizi-e-prestazioni/comunicazione/urp-e-comunicazione",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "centralino",
           "label": "Centralino ASP",
           "number": "0935 520111",
-          "url": "https://www.aspenna.it/urp-3/",
-          "verified": "2026-10-18",
-          "proof": "archivio",
-          "archived": "2026-05-16"
+          "url": "https://www.aspenna.it/",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "guardia",
           "label": "Guardia medica di Enna e Pergusa",
           "number": "0935 500896",
-          "address": "Vecchio ospedale Umberto I, via Trieste, piano terra (Enna Alta)",
-          "url": "https://www.aspenna.it/2025/02/13/trasferimento-guardia-medica-enna/",
-          "verified": "2026-10-18",
-          "proof": "archivio",
-          "archived": "2026-05-16"
+          "address": "Poliambulatorio ex INAM, via Calascibetta 1, Enna",
+          "url": "https://www.aspenna.it/strutture/guardia-medica-continuita-assistenziale/guardia-medica-di-enna-e-pergusa",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "casa",
@@ -2532,10 +3051,36 @@
           "number": "0935 520559",
           "address": "Viale Diaz 49, Enna",
           "hours": "Dal lunedì al venerdì 8:30–13:30; lunedì e giovedì anche 15–17",
-          "url": "https://www.aspenna.it/distretto-sanitario-di-enna/",
-          "verified": "2026-10-18",
-          "proof": "archivio",
-          "archived": "2026-01-14"
+          "url": "https://www.aspenna.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/assistenza-domiciliare-integrata-adi",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "casa",
+          "label": "Cure a casa: PUA di Nicosia",
+          "number": "0935 671624",
+          "hours": "Dal lunedì al venerdì 8:30–13:30; lunedì e giovedì anche 15–17",
+          "url": "https://www.aspenna.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/assistenza-domiciliare-integrata-adi",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "casa",
+          "label": "Cure a casa: PUA del Distretto di Agira (Leonforte)",
+          "number": "0935 664390",
+          "hours": "Dal lunedì al venerdì 8:30–12:30; lunedì e giovedì anche 15–17",
+          "url": "https://www.aspenna.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/assistenza-domiciliare-integrata-adi",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "casa",
+          "label": "Cure a casa: PUA di Piazza Armerina",
+          "number": "0935 981224",
+          "hours": "Dal lunedì al venerdì 8:30–13:30; lunedì e giovedì anche 15–17",
+          "url": "https://www.aspenna.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/assistenza-domiciliare-integrata-adi",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "protesica",
@@ -2543,96 +3088,186 @@
           "number": "0935 520403",
           "address": "Viale Diaz 49, poliambulatorio ex INAM, Enna",
           "hours": "Martedì 8:30–12; giovedì 8:30–12 e 15:30–17:30",
-          "url": "https://www.aspenna.it/distretto-sanitario-di-enna/",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://www.aspenna.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/assistenza-protesica-e-integrativa",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "protesica",
           "label": "Protesi e ausili: Piazza Armerina",
-          "number": "0935 981812",
+          "number": "0935 981781",
           "address": "Ospedale Chiello, corpo F, contrada Bellia, Piazza Armerina",
-          "url": "https://www.aspenna.it/distretto-sanitario-di-piazza-armerina/",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://www.aspenna.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/assistenza-protesica-e-integrativa",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "protesica",
           "label": "Protesi e ausili: Nicosia",
-          "number": "0935 671627",
-          "url": "https://www.aspenna.it/presidio-territoriale-di-assistenza-di-nicosia/",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "number": "0935 671661",
+          "url": "https://www.aspenna.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/assistenza-protesica-e-integrativa",
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "address": "Distretto sanitario, piazza San Francesco di Paola 1, Nicosia"
         },
         {
           "topic": "protesica",
           "label": "Protesi e ausili: Agira",
           "number": "0935 697029",
-          "url": "https://www.aspenna.it/distretto-sanitario-di-agira/",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://www.aspenna.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/assistenza-protesica-e-integrativa",
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "address": "Poliambulatorio, via Vittorio Emanuele 56, Agira"
         },
         {
           "topic": "protesica",
           "label": "Protesi e ausili: Leonforte",
           "number": "0935 664322",
-          "url": "https://www.aspenna.it/distretto-sanitario-di-agira/",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://www.aspenna.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/assistenza-protesica-e-integrativa",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "protesica",
           "label": "Protesi e ausili: Regalbuto",
-          "number": "0935 911137",
-          "url": "https://www.aspenna.it/distretto-sanitario-di-agira/",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "number": "0935 911129",
+          "url": "https://www.aspenna.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/assistenza-protesica-e-integrativa",
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "address": "Poliambulatorio, via Frate Andrea del Guasto, Regalbuto"
+        },
+        {
+          "topic": "protesica",
+          "label": "Protesi e ausili: Barrafranca",
+          "number": "0934 404013",
+          "address": "Poliambulatorio, corso Italia, Barrafranca",
+          "url": "https://www.aspenna.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/assistenza-protesica-e-integrativa",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "protesica",
+          "label": "Protesi e ausili: Aidone",
+          "number": "0935 981275",
+          "address": "Poliambulatorio, via Martiri d'Ungheria 2, Aidone",
+          "url": "https://www.aspenna.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/assistenza-protesica-e-integrativa",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "protesica",
+          "label": "Protesi e ausili: Pietraperzia",
+          "number": "0934 403147",
+          "address": "Poliambulatorio, via Carmine 1, Pietraperzia",
+          "url": "https://www.aspenna.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/assistenza-protesica-e-integrativa",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "anagrafe",
           "label": "Enna: anagrafe assistiti (scelta e revoca)",
-          "number": "0935 520568",
-          "address": "Viale Diaz 49, angolo via Calascibetta, poliambulatorio ex INAM, Enna",
-          "url": "https://www.aspenna.it/distretto-sanitario-di-enna/",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "number": "0935 520489",
+          "address": "Poliambulatorio ex INAM, via Calascibetta 1 (angolo viale Diaz), piano terra, Enna",
+          "url": "https://storage.aspenna.it/repository/3624b6cf-8ac2-4855-915e-862db7709526--Guida-utenti-Distretto-Sanitario-Enna.pdf",
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "hours": "Martedì 8:30–12; giovedì 8:30–12 e 15:30–17:30"
         },
         {
           "topic": "anagrafe",
           "label": "Piazza Armerina: anagrafe assistiti",
           "number": "0935 981805",
           "address": "Ospedale Chiello, corpo F, Piazza Armerina",
-          "hours": "Dal lunedì al venerdì 9–11",
-          "url": "https://www.aspenna.it/distretto-sanitario-di-piazza-armerina/",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "hours": "Al telefono: martedì e giovedì 9–12:30",
+          "url": "https://www.aspenna.it/come-fare-per/scegliere-cambiare-o-revocare-il-medico-di-medicina-generale-nel-distretto-di-piazza-armerina",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "anagrafe",
           "label": "Nicosia: anagrafe assistiti",
           "number": "0935 671665",
           "address": "Piazza San Francesco di Paola, Nicosia",
-          "url": "https://www.aspenna.it/distretto-sanitario-di-nicosia/",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://www.aspenna.it/come-fare-per/scegliere-cambiare-o-revocare-il-medico-di-medicina-generale-nel-distretto-di-nicosia",
+          "verified": "2026-10-19",
+          "proof": "pagina",
+          "hours": "Al telefono: lunedì, mercoledì e venerdì 9–10"
         },
         {
           "topic": "anagrafe",
           "label": "Leonforte: anagrafe assistiti",
           "number": "0935 664389",
           "address": "Contrada San Giovanni, Leonforte",
-          "url": "https://www.aspenna.it/distretto-sanitario-di-agira/",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://www.aspenna.it/come-fare-per/esenzione-ticket",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         },
         {
           "topic": "anagrafe",
           "label": "Agira: anagrafe assistiti",
           "number": "0935 697043",
           "address": "Via Vittorio Emanuele 56, Agira",
-          "url": "https://www.aspenna.it/distretto-sanitario-di-agira/",
-          "verified": "2026-10-18",
-          "proof": "estratto"
+          "url": "https://www.aspenna.it/come-fare-per/esenzione-ticket",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "anagrafe",
+          "label": "Enna: esenzione ticket per reddito",
+          "number": "0935 520521",
+          "address": "Viale Diaz 49, ingresso da via Calascibetta, Enna",
+          "hours": "Martedì 8:30–12; giovedì 8:30–12 e 15:30–17:30",
+          "url": "https://storage.aspenna.it/repository/3624b6cf-8ac2-4855-915e-862db7709526--Guida-utenti-Distretto-Sanitario-Enna.pdf",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "anagrafe",
+          "label": "Enna: esenzione ticket per patologia",
+          "number": "0935 520404",
+          "address": "Viale Diaz 49, ingresso da via Calascibetta, Enna",
+          "hours": "Martedì 8:30–12; giovedì 8:30–12 e 15:30–17:30",
+          "url": "https://storage.aspenna.it/repository/3624b6cf-8ac2-4855-915e-862db7709526--Guida-utenti-Distretto-Sanitario-Enna.pdf",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "screening",
+          "label": "Centro screening oncologici (numero verde, da fisso)",
+          "number": "800 404960",
+          "hours": "Lunedì e giovedì 9–13 e 15:30–17; martedì, mercoledì e venerdì 9–13",
+          "url": "https://www.aspenna.it/come-fare-per/contattare-il-centro-screening",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "screening",
+          "label": "Centro screening oncologici (da cellulare)",
+          "number": "331 2661542",
+          "hours": "Lunedì e giovedì 9–13 e 15:30–17; martedì, mercoledì e venerdì 9–13",
+          "url": "https://www.aspenna.it/come-fare-per/contattare-il-centro-screening",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "cartelle",
+          "label": "Cartelle cliniche: Ospedale Umberto I di Enna",
+          "number": "0935 516725",
+          "address": "Ospedale Umberto I, Enna",
+          "hours": "Lunedì e giovedì 10–12 e 15:30–17",
+          "url": "https://www.aspenna.it/come-fare-per/ritiro-cartelle-cliniche",
+          "verified": "2026-10-19",
+          "proof": "pagina"
+        },
+        {
+          "topic": "cartelle",
+          "label": "Cartelle cliniche: Ospedale Basilotta di Nicosia",
+          "number": "0935 671286",
+          "address": "Direzione sanitaria, Ospedale Basilotta, Nicosia",
+          "hours": "Lunedì e giovedì 8–14 e 14:30–17:30; martedì, mercoledì e venerdì 8–14",
+          "url": "https://www.aspenna.it/come-fare-per/ritiro-cartelle-cliniche",
+          "verified": "2026-10-19",
+          "proof": "pagina"
         }
       ],
       "fast_track": null,
@@ -2652,15 +3287,15 @@
       ],
       "todo": [
         "Canale (chiamare l'URP).",
-        "Sito ufficiale www.aspenna.it: indirizzo giusto, ma il 18/10/2026 non si apriva (problema del sito). Riprovare più avanti.",
-        "Scelta e revoca del medico: confermare se si può fare online o per email, e indirizzi degli sportelli.",
-        "Contatti: CUP 0935 520810 e 800 679977 solo da fonti secondarie (sito ASP con certificato scaduto il 18/10/2026); centralino 0935 520111 o 516111 da chiarire; mancano URP, guardia medica, PUA.",
-        "Verifica 18/10/2026 (copie web.archive.org): WhatsApp CUP 331 2661877 solo da comunicato riportato dai giornali (13/10/2026), non pubblicato. URP di Piazza Armerina 0935 981386 / 800 519520, Leonforte 0935 664390 / 800 418467, Nicosia 0935 671620 sulla stessa pagina (16/05/2026): da aggiungere dopo conferma. Pagina distretto ha ancora la vecchia sede della guardia medica (ex INAM, 0935 500869). Hospice di Enna: numero non trovato. Nicosia: guardia medica nella Casa di Comunità dal 16/01/2026 (giornale).",
-        "Uffici protesi (18/10/2026): Nicosia: due indirizzi in contrasto (non pubblicato). Piazza Armerina: guida del 2018. Mancano gli orari fuori Enna.",
-        "Cartelle cliniche (18/10/2026): Ospedale Umberto I: ufficio della direzione medica, contatti diretti non trovati (pagina del 2010).",
-        "Screening Enna: l'estratto dà «800 520810» (probabile errore) e cellulari 331 2661542 / 331 2661674: non pubblicati (18/10/2026).",
-        "Scelta e revoca / esenzioni (18/10/2026): Enna: orari in contrasto (non pubblicati); avviso uffici del 19/02/2024 e pagina sportelli esenzione del 27/03/2025 non letti. Cambio medico per email: cambiomedico.enna@asp.enna.it (notizia 2020).",
-        "Liste d'attesa (19/10/2026, da estratto di ricerca): pagina «Liste di attesa» con il Regolamento liste di attesa e percorsi di tutela e il PAGLA 2025 (testi non letti); nessuna casella dedicata alla tutela. Email URP aziendale responsabile.urp@asp.enna.it (pagina URP); PEC protocollo.generale@pec.asp.enna.it (anche nell'elenco PEC della Regione). URP di sede: urp.enna@, urp.piazzaarmerina@, urp.leonforte@, urp.nicosia@asp.enna.it (non pubblicati). Confermare per telefono."
+        "Verifica 19/10/2026: Protesi Piazza Armerina: la pagina del servizio (06/2026) dà 0935 981781, la guida PDF (09/2025) 0935 981812. Nicosia: la pagina dà 0935 671661, la guida 0935 671662. Confermare per telefono quale è giusto.",
+        "Verifica 19/10/2026: Leonforte: da giugno 2026 scelta del medico, protesica, PUA e URP sono nella Casa di Comunità di via Passarello 6 (notizia ASP 08/06/2026). Confermare che i numeri 0935 664389 e 664322 valgono anche nella nuova sede.",
+        "Verifica 19/10/2026: Anagrafe di Enna: la guida dà due orari diversi per il giovedì pomeriggio (15:30–17:00 e 15:30–17:30). Confermare per telefono.",
+        "Verifica 19/10/2026: Distretto di Agira: non c'è una pagina «scegliere/cambiare il medico» e nemmeno un'email per il cambio online.",
+        "Verifica 19/10/2026: WhatsApp CUP 331 2661877: ancora non pubblicato sul sito ASP (solo sui giornali, es. La Sicilia).",
+        "Verifica 19/10/2026: Cure palliative/hospice: la pagina ufficiale non ha numeri. Per Nicosia la carta dei servizi (PDF 2025) dà ADI e cure palliative 0935/671657-671659: da confermare.",
+        "Verifica 19/10/2026: Canale per la tutela: il regolamento liste di attesa dice di scrivere al protocollo; valutare se aggiornare channel/how_to (oggi URP).",
+        "Verifica 19/10/2026: Leonforte: dall'08/06/2026 protesica, scelta del medico, PUA e URP sarebbero nella Casa di Comunità di via Passarello 6 (notizia ASP), ma la pagina del servizio dice ancora PTA: indirizzo non pubblicato, confermare per telefono.",
+        "Verifica 19/10/2026: Percorso di tutela: il regolamento aziendale dice che la richiesta va al protocollo (PEC protocollo.generale@pec.asp.enna.it), non all'URP: valutare se cambiare send_to."
       ],
       "sources": [
         {
@@ -2672,17 +3307,17 @@
           "url": null
         }
       ],
-      "last_verified": "2026-10-18",
+      "last_verified": "2026-10-19",
       "status": "todo",
       "scelta_medico": {
-        "how": "Vai allo sportello «scelta e revoca» del distretto sanitario del tuo comune (spesso dove c'è il CUP), con tessera sanitaria e documento. Puoi chiedere il nome dei medici liberi della tua zona.",
-        "url": null
+        "how": "Nel distretto di Enna puoi mandare i moduli per email a cambiomedico.enna@asp.enna.it (nel distretto di Nicosia a distrettosan.nicosia@asp.enna.it). Oppure vai allo sportello «scelta e revoca» del distretto del tuo comune, con tessera sanitaria e documento. Puoi chiedere il nome dei medici liberi della tua zona.",
+        "url": "https://www.aspenna.it/come-fare-per/scegliere-cambiare-o-revocare-il-medico-di-medicina-generale-nel-distretto-di-enna"
       },
       "official_domains": [
         "asp.enna.it"
       ],
-      "guardia_medica_url": "https://www.aspenna.it/guardie-mediche-2/",
-      "pua_url": "https://www.aspenna.it/distretto-sanitario-di-enna/"
+      "guardia_medica_url": "https://www.aspenna.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/continuita-assistenziale-guardia-medica",
+      "pua_url": "https://www.aspenna.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/assistenza-domiciliare-integrata-adi"
     }
   ]
 }

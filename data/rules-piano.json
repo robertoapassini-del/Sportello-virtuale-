@@ -7,6 +7,21 @@
     12
   ],
   "notes_internal": "TODO-VERIFY: durata massima per tipo di farmaco (note AIFA) e se in Sicilia esistono proroghe automatiche.",
+  "provenienza": {
+    "book_before_days": {
+      "verified": "2026-10-19",
+      "proof": "sito",
+      "review_by": "2027-10-19",
+      "nota": "Scelta del sito: con quanto anticipo consigliamo di prenotare il rinnovo."
+    },
+    "typical_duration_months": {
+      "url": "https://www.aifa.gov.it/note-aifa",
+      "verified": "2026-10-19",
+      "proof": "secondaria",
+      "review_by": "2027-10-19",
+      "nota": "Durata tipica dei piani (6 o 12 mesi): dipende dal farmaco (note AIFA)."
+    }
+  },
   "sources": [
     {
       "label": "AIFA – Note e piani terapeutici",
@@ -19,10 +34,6 @@
     {
       "label": "Regione Siciliana – Distribuzione per conto (DPC) dei farmaci",
       "url": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/dipartimento-pianificazione-strategica/dpc"
-    },
-    {
-      "label": "Regione Siciliana – Accordo DPC approvato con D.A. n. 367 del 3 aprile 2025",
-      "url": "https://www.regione.sicilia.it/sites/default/files/2025-05/Allegato%20al%20D.A.%20n.367%20del%2003%20aprile%202025%20-%20Accordo.pdf"
     },
     {
       "label": "AIFA – Distribuzione diretta e per conto (L. 405/2001, art. 8)",

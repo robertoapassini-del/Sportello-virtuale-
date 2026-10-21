@@ -6,6 +6,10 @@ export const CHECK_WITH = {
   'ricorso-invalidita': "con l'INPS o con un patronato",
   'assegno-inclusione': "con l'INPS o con un patronato",
   'cartella-clinica': "con l'ospedale o con la tua ASP",
+  'contrassegno-disabili': "con il tuo Comune o con la tua ASP",
+  'accompagnamento': "con l'INPS o con un patronato",
+  'legge-104': "con l'INPS o con un patronato",
+  'tessera-sanitaria': "con l'Agenzia delle Entrate o con la tua ASP",
 };
 
 export const checkWith = (slug) => `Controlla sempre ${CHECK_WITH[slug] || 'con la tua ASP'}.`;

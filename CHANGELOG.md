@@ -2,11 +2,79 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — copie notturne delle pagine ufficiali e controllo settimanale assistito
+- Server in Italia (Aruba Cloud) che ogni notte salva in testo le pagine ufficiali delle ASP nel branch `copie-siti` (`tools/copie.mjs`); routine settimanale di Claude che le confronta con i dati e apre una pull request. Nessun dato cambiato. Come funziona: `docs/regioni.md`, sezione 8.
+- Test del 21/10/2026 dal server: 110 pagine su 134 rispondono; Messina ha il certificato installato male (si legge lo stesso), i vecchi indirizzi `dinamica.aspx` di Caltanissetta non esistono più (sito nuovo), una pagina di Siracusa dà 404: da aggiornare.
+- `SPEC.md`: principio 5 riscritto (mai CUP, login o CAPTCHA; pagine informative sì, con educazione).
+
 ## 19/10/2026 — primo passo verso tutte le regioni (nessun dato cambiato)
 - Proposta completa in `docs/regioni.md`: struttura dei dati per regione, scelta della regione ricordata nel browser, testi nazionali e regionali, indirizzi delle pagine, marchio.
 - `data/asp-sicilia.json` → `data/regioni/sicilia/asp.json`, `data/inps-sicilia.json` → `data/regioni/sicilia/inps.json`; nuovo `data/regioni/index.json` con l'elenco delle regioni (attiva solo la Sicilia).
 - `js/common.js`: `loadRegional(root, nome)` carica i file della regione in uso; i moduli non scrivono più «sicilia» nei percorsi.
 - Marchio: «Guida Sanità» senza «Sicilia» in testata, anteprima dei messaggi (`og:site_name`) e riga stampata. «Sicilia» resta nei testi che parlano della regione.
+
+## 20/10/2026 — temi nuovi: controllo sulle fonti ufficiali
+- Fonti lette per intero dal browser: scheda INPS accompagnamento (aggiornata al 20/07/2026), schede INPS permessi 104 (50098) e congedo straordinario (50097), scheda INPS bonus psicologo, L. 106/2025 artt. 1–3 (Normattiva), D.L. 73/2024 art. 3 (Normattiva), DPR 495/1992 art. 381 (Normattiva), FAQ TEAM del Sistema TS, FAQ FSE della Regione Siciliana (27/05/2026), modulo 2025 del Comune di Palermo.
+- **Accompagnamento**: importo 2026 scritto per esteso (551,53 €); sospensione per ricovero gratuito oltre 29 giorni (non «un mese»); permesso di soggiorno di almeno un anno (non «di lungo periodo»); INPS chiude la pratica entro 45 giorni dalla domanda di pagamento (tolto «1–2 mesi»).
+- **Legge 104**: la L. 106/2025 (10 ore l'anno, congedo non retribuito fino a 24 mesi) vale per i lavoratori con malattie oncologiche, invalidanti o croniche con invalidità dal 74%, non per chi assiste con la 104: corrette le tre pagine. Familiari fino al terzo grado; 2 ore al giorno solo con orario di almeno 6 ore (1 ora altrimenti); i 30 giorni sono il termine dell'INPS, non del datore di lavoro.
+- **Fascicolo**: in Sicilia la delega per un adulto non è ancora attiva (arriverà con il sistema nazionale); per i minori serve il modulo al pediatra o all'ASP; consenso nella sezione «Privacy» o con modulo al medico; tolto il «modulo per segnalare un documento mancante».
+- **Contrassegno**: a Palermo la domanda va alla Circoscrizione (5 euro di istruttoria), non alla Polizia municipale; tolta la marca da bollo; ZTL di Palermo: email entro 15 giorni. Art. 381: 5 anni e rinnovo con il medico curante confermati sul testo.
+- **Tessera**: duplicato anche in PDF dal Sistema TS; chiedere il duplicato disattiva la tessera vecchia; in Svizzera e Francia si paga e si chiede il rimborso; i 6 mesi del certificato sostitutivo restano da confermare.
+- **Bonus psicologo**: prima seduta entro 60 giorni dall'accoglimento. **Dentista**: ortodonzia solo per minori in condizione di vulnerabilità. **CUP**: disdetta e ticket per chi non si presenta confermati sul testo del D.L. 73/2024.
+- Cosa resta aperto: `DA-VERIFICARE-A-MANO.md`, sezione 0.
+
+## 20/10/2026 — dieci temi nuovi e la quinta area «Tessera e ricette»
+- Fonti: ricerca web del 20/10/2026 su siti ufficiali e di informazione (dettagli e punti aperti in `DA-VERIFICARE-A-MANO.md`, sezione «Temi nuovi»); i file `data/rules-*.json` dei temi nuovi hanno solo le fonti, nessuna cifra usata dai calcoli.
+- Nuova area `tessera-e-ricette/` con: tessera sanitaria (rinnovo, duplicato, TEAM), fascicolo sanitario e ricetta elettronica, prenotare e disdire al CUP.
+- In Invalidità: legge 104 (come si ottiene, permessi, congedo straordinario), indennità di accompagnamento (requisiti, domanda e AP70), contrassegno disabili (come si chiede, cosa permette).
+- In Visite ed esami: curarsi fuori dalla Sicilia e all'estero, il dentista nel Servizio sanitario, psicologo e salute mentale (servizi dell'ASP, bonus psicologo). In Aiuto a casa: la RSA (come si entra, chi paga).
+- Sono moduli «solo testo» (`static` in `moduli.json`): risposta in cima e pagine corte, senza percorso a domande. L'elenco della home senza JavaScript ora lo crea `pagine.mjs` (blocco `home-elenco`). Il test sull'avviso finale usa `js/controlla.js`.
+
+## 20/10/2026 — controllo totale dopo il rifacimento: tre cose rimesse a posto
+- Nessun dato cambiato. Controllo di cifre, testi, link e funzioni delle 59 pagine rispetto alla versione prima delle pagine corte: nessuna cifra e nessun testo perso (le «Domande frequenti» vivono dentro le pagine).
+- Le 38 pagine corte caricano ora `js/guida.js` al posto del solo `js/common.js`: tornano «Questa pagina ti è stata utile?», il conteggio anonimo della visita e il pulsante «🔊 Ascolta», che legge tutta la guida (titoli, paragrafi ed elenchi; non l'indice né le fonti).
+- Il pulsante che avvia il percorso a domande è scritto nell'HTML con `disabled` e si sblocca quando il modulo ha caricato i dati (`enableStart` in `js/common.js`, chiamata da `js/flow.js`, `js/invalidita.js`, `js/liste-attesa.js`). Prima un tocco arrivato sulla connessione lenta andava perso o dava errore (`rules` non ancora caricato).
+- La ricerca nella home trova anche le pagine corte, per titolo (es. «pediatra» → «Pediatra o medico di base: dipende dall'età»); le parole lunghe si confrontano senza l'ultima lettera («rinnovo» trova «rinnova»).
+- `tools/pagine.mjs`: tolto il generatore dei dati FAQPage, senza uso da quando le «Domande frequenti» sono titoli dentro le pagine; il test ora controlla solo che non restino dati FAQPage.
+- `tests/combinazioni.cjs` cercava ancora il vecchio pulsante «Comincia» e andava in timeout su tutti i 1903 casi: ora preme il pulsante di avvio della risposta scritta. Il controllo sul numero CUP di Catania nella prevenzione guarda il numero (800 954414), non le parole «tasto 2», che compaiono anche nello screening di Siracusa.
+
+## 20/10/2026 — regola per le cifre di legge: coerenza e provenienza
+- Nuovo test `tests/cifre.test.mjs`: ogni cifra scritta nella guida o nel js di un modulo deve essere uguale a quella in `data/`; esempi e arrotondamenti sono dichiarati nel test. Nessun valore cambiato. Regola: [docs/regola-cifre.md](docs/regola-cifre.md).
+- In ogni `data/rules*.json` il blocco `provenienza`: per ogni cifra la pagina ufficiale, la data del controllo, la prova (`testo` / `estratto` / `secondaria` / `sito`) e la data di ricontrollo `review_by`. Nuovo test `tests/provenienza.test.mjs`: fallisce se manca la scheda o se `review_by` è passata (si prova con `OGGI=2027-02-01 npm test`). Le prove sono `estratto` quasi ovunque: i testi ufficiali vanno riletti per intero.
+- Nuovi campi che prima erano solo nel testo delle guide, valori invariati: `age_limits` (esenzione: 6, 65, 60 anni), `household_min_age` 60 e `elderly_age` 67 (assegno di inclusione), `detrazione` 19% e 129,11 € (assistenza domiciliare), `minor_age` 18 (invalidità), `every_years` 10 (antitetanica).
+- `tools/pagine.mjs --controlla` non segnala più come «non aggiornate» le pagine salvate da git con fine riga Windows.
+
+## 20/10/2026 — tutte le guide: prima la risposta, poi pagine corte
+- Nessun dato cambiato. Tutti i 12 moduli hanno ora la stessa impostazione dell'esenzione ticket: in cima la risposta scritta (leggibile anche senza JavaScript), il percorso a domande parte da un pulsante e torna alla risposta con «Ricomincia», la guida lunga è divisa in 2–4 pagine corte con l'indice «In questa guida».
+- Pagine nuove: liste-attesa (3), medico-famiglia (4), cartella-clinica (3), piano-terapeutico (3), prevenzione (2), invalidita (3), ricorso-invalidita (3), assegno-inclusione (3), assistenza-domiciliare (4, compresi i consigli pratici), ausili (3), cure-palliative (3). Sitemap: 59 pagine.
+- Le «Domande frequenti» sono diventate titoli dentro le pagine: niente più FAQPage nei moduli. I testi delle guide sono gli stessi di prima, riordinati per domanda; frasi nuove solo per legare le pagine.
+
+## 20/10/2026 — esenzione ticket: la guida diventa 4 pagine corte (modello NHS.uk)
+- Nessun dato cambiato. La guida lunga sotto la risposta è divisa in pagine che rispondono a una domanda ciascuna: `chi-ha-diritto/`, `come-chiedere/`, `rinnovo/`, `altre-esenzioni/`. Nella pagina principale resta la risposta, il calcolo e l'indice «In questa guida».
+- Le «Domande frequenti» sono diventate titoli e punti dentro le pagine (niente FAQPage per questo modulo).
+- `tools/pagine.mjs`: un modulo può avere `pages` in `data/moduli.json`; il blocco `guida-indice` crea l'elenco delle pagine; sitemap, testata e percorso «Sei qui» anche per le pagine corte.
+
+## 19/10/2026 — numeri e link riletti da una connessione italiana
+- Fonte: le pagine ufficiali delle ASP (e degli ospedali), aperte oggi da una connessione italiana. Ogni numero confermato ha ora la pagina esatta in `url` e `proof: "pagina"`.
+- Tre ASP hanno un sito nuovo nel 2026 e i vecchi indirizzi non funzionano più: **Caltanissetta** (www.asp.cl.it/it), **Enna** (dal 01/03/2026: le vecchie pagine dicono «Pagina non trovata») e **Messina** (le vecchie pagine `?page_id=` mostrano la home; il vecchio sito resta su old.asp.messina.it). Tutti i link sostituiti.
+- Numeri cambiati:
+  - Ragusa: URP 0932 234203 → **0932 234204** (trasferito all'ex Ospedale Civile, avviso 27/04/2026); protesi Ragusa 0932 234756 (è la ventiloterapia) → **0932 234759**; anagrafe Modica 448732 → **0932 448710** (via V. Veneto 10); anagrafe Vittoria 999615 → **0932 999713**, nuova sede via Generale Cascino dal 27/07/2026.
+  - Caltanissetta: guardia medica sede 1 0934 506580 → **0934 597332** (tabella guardie mediche); protesi Mussomeli 0934 506479 (è l'ufficio presidi per diabete e celiachia) → **0934 506487**.
+  - Messina: PUA 090 3653510 (vecchia sede di via Saffi) → **090 3653440**, Casa della Comunità di via del Vespro 14.
+  - Siracusa: centro screening 0931 484332 → **0931 312525 tasto 2**, nuova sede ex ONP padiglione 4 dal 18/03/2026; cartelle Umberto I 0931 724043 → **0931 724264**; protesi Siracusa 0931 484373 → **0931 484611** (Medicina Riabilitativa, ex ONP); presidi Augusta 0931 989363 → **0931 989373**.
+  - Enna: anagrafe Enna 0935 520568 → **0935 520489** (guida del distretto); protesi Regalbuto 0935 911137 (è l'esenzione ticket) → **0935 911129**; protesi Nicosia 0935 671627 → **0935 671661**; protesi Piazza Armerina 0935 981812 → **0935 981781** (pagina del 04/06/2026); guardia medica di Enna stesso numero ma sede tornata all'ex INAM, via Calascibetta 1 (dal 30/01/2026); orari del CUP 8:15–17.
+  - Catania: protesi Caltagirone 0933 353035 → **0933 353036**.
+  - Palermo: cartelle Ospedale Cervello 091 6802080 → **091 7802080**.
+- Numeri tolti (su nessuna pagina ufficiale, o non dell'ufficio indicato): Siracusa URP 0931 744310, 0931 484387 e 0931 890527 (numeri generali dei distretti), Lentini 095 909922; Catania guardia medica 095 2545811 (sostituito dai numeri dei presidi di Catania).
+- Orari e indirizzi aggiornati dove la pagina ufficiale li dà diversi (es. screening Ragusa 8:30–12:30, pannoloni Catania lun/mer/ven, URP Catania).
+- Aggiunti numeri ufficiali che mancavano: sportelli scelta e revoca (Catania via La Marmora, Messina e provincia, San Cataldo, Mussomeli, Melilli), guardie mediche di Catania, Messina e Augusta, uffici protesi della provincia di Messina e della Medicina Riabilitativa di Siracusa, cartelle cliniche di Villa Sofia, CTO, Lentini, Avola, Augusta e Noto, centralini degli ospedali di Ragusa, Modica e Vittoria, e altri.
+- Cambio del medico online: ora c'è anche a Caltanissetta, Siracusa e Palermo (SPID o CIE); Messina solo dal lunedì al venerdì 8–20. Testi `scelta_medico` corretti.
+- Restano solo da estratto (da confermare per telefono): i 4 PUA di Ragusa (solo giornale del 2019), il centralino di Caltanissetta, le cartelle dell'Ospedale Civico di Palermo. Dubbi nuovi nei `todo` delle ASP («Verifica 19/10/2026»).
+- `tools/controllo.mjs`: il controllo dei link riconosce anche le pagine che rispondono ma sono sbagliate («Pagina non trovata», rimando alla home, home mostrata al posto della pagina).
+
+## 19/10/2026 — esenzione ticket: esperimento «prima la risposta»
+- Nessun dato cambiato. La pagina mostra subito la risposta scritta (i 4 casi E01–E04 con i limiti, come si ottiene, le altre esenzioni); il calcolo a domande parte dal pulsante «Fai il conto» e con «Ricomincia» torna alla risposta.
+- Serve a confrontare le due impostazioni (risposta subito / percorso subito) sul telefono prima di decidere per tutte le pagine. Vedi `docs/ricerche-frequenti.md`.
 
 ## 19/10/2026 — parole cercate su Google (medico di base, CUP, rinnovo esenzione, legge 104)
 - Fonte: Google Trends, Sicilia, ultimi 12 mesi (dettagli in `docs/ricerche-frequenti.md`); ASPConTe dell'ASP Catania già in `asp-sicilia.json` (nota del 18/10/2026) e notizie di LiveUniversity Catania (13/05/2025, 17/04/2025).

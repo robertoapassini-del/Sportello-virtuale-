@@ -5,16 +5,19 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
+import { checkWith } from '../js/controlla.js';
+import { fileURLToPath } from 'node:url';
 
 const site = new URL('../', import.meta.url);
 const read = (f) => readFileSync(new URL(f, site), 'utf8');
 const reg = JSON.parse(read('data/moduli.json'));
 const html = ['index.html', 'fonti.html', 'privacy.html', 'note-legali.html', 'numeri-utili/index.html',
-  ...reg.groups.map((g) => `${g.page}/index.html`), ...reg.modules.map((m) => `${m.id}/index.html`)];
+  ...reg.groups.map((g) => `${g.page}/index.html`), ...reg.modules.map((m) => `${m.id}/index.html`),
+  ...reg.modules.flatMap((m) => (m.pages || []).map((sp) => `${m.id}/${sp.id}/index.html`))];
 const words = (s) => s.replace(/<script[\s\S]*?<\/script>/g, '').replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length;
 
 test('le pagine sono aggiornate con npm run pagine', () => {
-  execFileSync(process.execPath, [new URL('tools/pagine.mjs', site).pathname, '--controlla'], { stdio: 'pipe' });
+  execFileSync(process.execPath, [fileURLToPath(new URL('tools/pagine.mjs', site)), '--controlla'], { stdio: 'pipe' });
 });
 
 test('ogni modulo ha la guida scritta nella pagina', () => {
@@ -22,7 +25,9 @@ test('ogni modulo ha la guida scritta nella pagina', () => {
     const page = read(`${m.id}/index.html`);
     const g = page.match(/<section class="wrap guida" id="guida"[\s\S]*?<\/section>/);
     assert.ok(g, `${m.id}: manca <section class="wrap guida" id="guida">`);
-    assert.ok(words(g[0]) >= 300, `${m.id}: la guida è troppo corta (${words(g[0])} parole)`);
+    // Un modulo diviso in pagine corte (moduli.json → "pages") ha nella pagina principale solo l'indice.
+    const min = m.pages ? 60 : 300;
+    assert.ok(words(g[0]) >= min, `${m.id}: la guida è troppo corta (${words(g[0])} parole)`);
     assert.match(g[0], /<h2 id="guida-titolo">/, `${m.id}: la guida non ha il titolo`);
     assert.doesNotMatch(page, /Torna all'inizio<\/a><\/p>\n<\/div>/, `${m.id}: il testo senza JavaScript è ancora quello vecchio`);
   }
@@ -51,16 +56,9 @@ test('«/x/index.html» porta subito a «/x/» (GitHub Pages non fa redirect 301
   }
 });
 
-test('le «Domande frequenti» sono anche nei dati strutturati FAQPage', () => {
+test('niente dati FAQPage: le domande frequenti sono i titoli delle pagine corte', () => {
   for (const m of reg.modules) {
-    const page = read(`${m.id}/index.html`);
-    const dl = page.match(/<h3>Domande frequenti<\/h3>\s*<dl>([\s\S]*?)<\/dl>/);
-    assert.ok(dl, `${m.id}: manca la sezione «Domande frequenti»`);
-    const ld = page.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/);
-    assert.ok(ld, `${m.id}: mancano i dati FAQPage`);
-    const data = JSON.parse(ld[1]);
-    assert.equal(data['@type'], 'FAQPage');
-    assert.equal(data.mainEntity.length, (dl[1].match(/<dt>/g) || []).length, `${m.id}: domande diverse`);
+    assert.doesNotMatch(read(`${m.id}/index.html`), /"@type": "FAQPage"/, `${m.id}: dati FAQPage senza domande`);
   }
 });
 
@@ -75,8 +73,8 @@ test('sitemap.xml ha tutte le pagine e robots.txt la indica', () => {
 });
 
 test('l\'avviso finale dice a chi chiedere conferma, guida per guida', () => {
-  const want = { invalidita: "l'INPS o con un patronato", 'ricorso-invalidita': "l'INPS o con un patronato", 'assegno-inclusione': "l'INPS o con un patronato", 'cartella-clinica': "l'ospedale o con la tua ASP" };
+  // La frase viene da js/controlla.js (CHECK_WITH): è la stessa delle pagine con JavaScript.
   for (const m of reg.modules) {
-    assert.ok(read(`${m.id}/index.html`).replace(/&#39;/g, "'").includes(`Controlla sempre con ${want[m.id] || 'la tua ASP'}.`), m.id);
+    assert.ok(read(`${m.id}/index.html`).replace(/&#39;/g, "'").includes(checkWith(m.id)), m.id);
   }
 });

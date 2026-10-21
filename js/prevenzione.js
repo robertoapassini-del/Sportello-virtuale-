@@ -1,4 +1,5 @@
 // Modulo 12 — prevenzione gratuita per età: screening oncologici e vaccini.
+// Prima la risposta: la pagina mostra subito la risposta scritta; il percorso per età parte dal pulsante.
 // Regole fisse per età e sesso. Non chiediamo la malattia.
 import { prevenzione } from './engine.js';
 import { esc, loadJSON, loadRegional, disclaimer, renderFooter, readForm, callButton, officeBox } from './common.js';
@@ -6,6 +7,8 @@ import { createFlow, choice, restartBtn, progress } from './flow.js';
 
 const ROOT = '../';
 const app = document.getElementById('app');
+// La risposta scritta della pagina: è la prima schermata del percorso.
+const answerHtml = app.innerHTML;
 let rules;
 let data;
 const state = {};
@@ -14,15 +17,9 @@ const sources = () => [rules.sources, { verified: rules.last_verified, note: 'Le
 const item = (x, extra) => `<li class="say"><span class="ico" aria-hidden="true">${x.icon}</span><span><strong>${esc(x.title)}</strong> – ${extra}<br><span class="muted">${esc(x.how)}</span></span></li>`;
 
 const screens = {
-  intro: () => ({
-    html: `
-      <div class="hero" aria-hidden="true">🛡️</div>
-      <h1>Quali controlli e vaccini puoi fare gratis?</h1>
-      <p class="lead say">Ci sono esami contro i tumori e vaccini che il Servizio sanitario offre gratis, in base all'età. Molte persone non lo sanno.</p>
-      <p class="say">Con 3 domande ti diciamo quali sono i tuoi e come prenotarli.</p>
-      <button type="button" class="btn primary big" data-go="sex">▶️ Comincia</button>
-      <p class="muted say">È gratis. Non salviamo niente. Non chiediamo la malattia.</p>`,
-  }),
+  // Prima schermata: la risposta scritta che è già nella pagina (vedi index.html).
+  // Così «Ricomincia» e il tasto Indietro riportano alla risposta, non a una presentazione.
+  intro: () => ({ html: answerHtml }),
 
   sex: () => ({
     html: `${progress(1, 3)}

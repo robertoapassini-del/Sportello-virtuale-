@@ -17,7 +17,8 @@ const CHECK = process.argv.includes('--controlla');
 const read = (f) => fs.readFileSync(path.join(SITE, f), 'utf8');
 const stale = [];
 const write = (f, s) => {
-  if (CHECK) { if (read(f) !== s) stale.push(f); return; }
+  // Su Windows git può salvare i file con CR LF: si confronta il testo senza i CR.
+  if (CHECK) { if (read(f).replace(/\r\n/g, '\n') !== s) stale.push(f); return; }
   fs.mkdirSync(path.dirname(path.join(SITE, f)), { recursive: true });
   fs.writeFileSync(path.join(SITE, f), s);
   console.log('ok', f);
@@ -39,9 +40,14 @@ const pages = [
   { file: 'index.html', trail: [] },
   ...['fonti.html', 'privacy.html', 'note-legali.html', 'numeri-utili/index.html'].map((file) => ({ file, trail: [INIZIO] })),
   ...reg.groups.map((g) => ({ file: `${g.page}/index.html`, area: g.id, trail: [INIZIO], group: g })),
-  ...reg.modules.map((m) => {
+  ...reg.modules.flatMap((m) => {
     const g = groupById[m.group];
-    return { file: `${m.id}/index.html`, area: g.id, trail: [INIZIO, { label: g.short, href: `${g.page}/` }], module: m };
+    const trail = [INIZIO, { label: g.short, href: `${g.page}/` }];
+    return [
+      { file: `${m.id}/index.html`, area: g.id, trail, module: m },
+      // Pagine corte della guida di un modulo (moduli.json → "pages"): /modulo/pagina/.
+      ...(m.pages || []).map((sp) => ({ file: `${m.id}/${sp.id}/index.html`, area: g.id, trail: [...trail, { label: m.title, href: `${m.id}/` }], module: m, sub: sp })),
+    ];
   }),
 ];
 
@@ -119,23 +125,6 @@ function openGraph(html, url) {
 
 const HEAD_SCRIPT = "<script>document.documentElement.className += ' js';if(/\\/index\\.html$/.test(location.pathname))location.replace(location.pathname.slice(0,-10)+location.search+location.hash);</script>";
 
-// Dati strutturati FAQPage per Google: le stesse domande e risposte della sezione
-// «Domande frequenti» della guida scritta (<h3>Domande frequenti</h3> e poi <dl>).
-const plain = (s) => s.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim()
-  .replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
-function faqJsonLd(html) {
-  const dl = html.match(/<h3>Domande frequenti<\/h3>\s*<dl>([\s\S]*?)<\/dl>/);
-  if (!dl) return '';
-  const qa = [...dl[1].matchAll(/<dt>([\s\S]*?)<\/dt>\s*<dd>([\s\S]*?)<\/dd>/g)];
-  if (!qa.length) return '';
-  const data = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: qa.map(([, q, a]) => ({ '@type': 'Question', name: plain(q), acceptedAnswer: { '@type': 'Answer', text: plain(a) } })),
-  };
-  return `<script type="application/ld+json">\n${JSON.stringify(data, null, 1).replace(/</g, '\\u003c')}\n</script>\n`;
-}
-
 // «Condividi su WhatsApp» (funziona anche senza JavaScript: è un link) e «Stampa».
 // Sotto, l'indirizzo della pagina: si vede solo sul foglio stampato.
 const WA_ICON = '<svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>';
@@ -190,6 +179,23 @@ ${list.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${
 // Parti della guida scritta che vengono dai file data/ (così i numeri restano giusti):
 // nella pagina si scrive <!-- blocco:nome --><!-- /blocco:nome --> e qui si riempie.
 const BLOCKS = {
+  // Home senza JavaScript: le aree con i loro moduli (prima era scritto a mano e restava indietro).
+  'home-elenco': () => reg.groups.map((g) => {
+    const mods = reg.modules.filter((m) => m.group === g.id);
+    return `<h2><a href="${g.page}/">${esc(g.title)}</a></h2><ul class="static-list">${mods.map((m) => `<li><a href="${m.id}/">${esc(m.title)}</a></li>`).join('')}</ul>`;
+  }).join('\n'),
+  // «In questa guida»: l'elenco delle pagine corte di un modulo (moduli.json → "pages"),
+  // con la pagina in cui si è scritta senza link. Vale nella pagina del modulo e in ogni pagina corta.
+  'guida-indice': (p) => {
+    const m = p.module;
+    const up = p.sub ? '../' : '';
+    const items = [{ id: '', title: m.title }, ...(m.pages || [])].map((sp) => {
+      const here = (p.sub ? p.sub.id : '') === sp.id;
+      const href = sp.id ? `${up}${sp.id}/` : (up || './');
+      return here ? `<li aria-current="page"><strong>${esc(sp.title)}</strong></li>` : `<li><a href="${href}">${esc(sp.title)}</a></li>`;
+    });
+    return `<ol class="guida-indice">\n${items.join('\n')}\n</ol>`;
+  },
   // Liste d'attesa: tempi massimi per classe di priorità (data/rules.json).
   'classi-priorita': () => {
     const r = dataFile('rules');
@@ -252,7 +258,7 @@ ${list.map((a) => `<dt id="tutela-${esc(a.id)}">${esc(a.province)} – ${esc(a.n
 };
 
 for (const p of pages) {
-  const root = p.file.includes('/') ? '../' : '';
+  const root = '../'.repeat(p.file.split('/').length - 1);
   let html = p.group ? areaPage(p.group, root) : read(p.file).replace(/\r\n/g, '\n');
   const top = header(root, p.area) + breadcrumb(root, p.trail);
   const re = /<header class="site-header">[\s\S]*?<\/header>(\n<nav class="breadcrumb"[\s\S]*?<\/nav>)?/;
@@ -264,14 +270,13 @@ for (const p of pages) {
     .replace(/<link rel="stylesheet"/, (m) => `<link rel="canonical" href="${url}">\n${openGraph(html, url)}${m}`);
   // «/x/index.html» → «/x/»: GitHub Pages non fa redirect 301, quindi lo fa il browser appena apre la pagina.
   html = html.replace(/<script>document\.documentElement\.className[^<]*<\/script>/, () => HEAD_SCRIPT);
+  // Dati FAQPage di una versione precedente: non ci sono più «Domande frequenti», le domande sono i titoli delle pagine.
   html = html.replace(/<script type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>\n/, '');
-  const faq = faqJsonLd(html);
-  if (faq) html = html.replace(/<link rel="stylesheet"/, (m) => `${faq}${m}`);
   html = html.replace(/<!-- condividi[\s\S]*?<!-- \/condividi -->\n/, '')
     .replace(/<footer class="site-footer"[\s\S]*?<\/footer>/, () => `${shareBar(html, url)}${footer(root)}`);
   html = html.replace(/<!-- blocco:([a-z-]+)[^>]*-->[\s\S]*?<!-- \/blocco:\1 -->/g, (_, name) => {
     if (!BLOCKS[name]) throw new Error(`Blocco sconosciuto «${name}» in ${p.file}`);
-    return `<!-- blocco:${name} (creato da tools/pagine.mjs) -->\n${BLOCKS[name]()}\n<!-- /blocco:${name} -->`;
+    return `<!-- blocco:${name} (creato da tools/pagine.mjs) -->\n${BLOCKS[name](p)}\n<!-- /blocco:${name} -->`;
   });
   if (p.module) {
     if (!/<!-- fonti[\s\S]*?<!-- \/fonti -->/.test(html)) throw new Error(`Guida scritta (id="guida" con <!-- fonti --><!-- /fonti -->) non trovata in ${p.file}`);

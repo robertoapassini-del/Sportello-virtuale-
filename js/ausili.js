@@ -1,4 +1,5 @@
 // Modulo 4 — ausili e protesi: «la carrozzina non arriva».
+// Prima la risposta: la pagina mostra subito la risposta scritta; il conto e il sollecito partono dal pulsante.
 // Regola: l'ASP autorizza entro 20 giorni; se non risponde, l'autorizzazione vale lo stesso
 // (art. 18 DPCM 12/01/2017). Non chiediamo mai la malattia.
 import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween, art } from './engine.js';
@@ -10,6 +11,8 @@ import { createFlow, choice, restartBtn, days, progress, dateForm, showError, le
 
 const ROOT = '../';
 const app = document.getElementById('app');
+// La risposta scritta della pagina: è la prima schermata del percorso.
+const answerHtml = app.innerHTML;
 let rules;
 let data;
 const state = {};
@@ -41,23 +44,9 @@ const steps = () => `
 const protesica = (a) => officeBox(a, 'protesica', "🏥 Dov'è l'ufficio protesi e ausili", 'Vai o chiama quello del tuo distretto.');
 
 const screens = {
-  intro: () => ({
-    html: `
-      <div class="hero" aria-hidden="true">🦽</div>
-      <h1>La carrozzina, il letto o i pannoloni non arrivano?</h1>
-      <p class="lead say">Hai chiesto un ausilio all'ASP e aspetti da troppo?</p>
-      <p class="say">La legge dice che l'ASP deve autorizzare entro <strong>${rules.authorization_days} giorni</strong>. Ti aiutiamo a capire se è tardi e cosa fare.</p>
-      <p class="muted say">Vale per: ${esc(rules.examples.join(', '))}.</p>
-      <div class="notice info">
-        <p class="say"><strong>Prendi questi fogli, se li hai:</strong></p>
-        <ul class="icon-list say">
-          <li><span class="ico" aria-hidden="true">📄</span> La prescrizione dello specialista</li>
-          <li><span class="ico" aria-hidden="true">🧾</span> La ricevuta della domanda all'ASP</li>
-        </ul>
-      </div>
-      <button type="button" class="btn primary big" data-go="province">▶️ Comincia</button>
-      <p class="muted say">È gratis. Non salviamo niente. Non ti chiediamo la malattia.</p>`,
-  }),
+  // Prima schermata: la risposta scritta che è già nella pagina (vedi index.html).
+  // Così «Ricomincia» e il tasto Indietro riportano alla risposta, non a una presentazione.
+  intro: () => ({ html: answerHtml }),
 
   province: () => ({
     html: `${progress(1, 3)}
