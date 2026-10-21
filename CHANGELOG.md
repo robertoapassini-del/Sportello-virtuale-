@@ -2,6 +2,16 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — Audit notturno, giro 1: leggi, lettere e calcoli, dati regionali
+- Codici di esenzione per invalidità corretti (`data/rules-esenzione.json`): C01 100% senza accompagnamento, C02 100% con accompagnamento, C03 67-99%, C04 minori con indennità di frequenza, C05 ciechi, C06 sordi (prima C02 e C03 erano sbagliati). Fonte: Garante disabili Regione Campania.
+- Strisce blu: dal 14/12/2024 (L. 177/2024, art. 188 c. 3-bis CdS) sosta gratis con il contrassegno senza la condizione dei posti riservati occupati.
+- Legge 104 (`data/rules-legge-104.json`): part-time orizzontale con i 3 giorni interi (circolare INPS 45/2021); prolungamento del congedo parentale entro i 12 anni del figlio, 2 ore al giorno fino ai 3 anni. Campi nuovi al posto di `prolungamento_figlio_anni`.
+- Accompagnamento (`data/rules-accompagnamento.json`): tolta la «rivalutazione dell'1,4%» (è la perequazione delle pensioni); importo 2026 dal messaggio INPS 628/2026.
+- Riforma della disabilità: messaggi INPS 635 e 637 del 23/02/2026 (non 639) in `data/regioni/sicilia/inps.json`. Citazioni dei decreti-legge al posto delle leggi di conversione (D.L. 4/2006 art. 6 c. 3-bis; D.L. 347/2001 art. 8). Bonus psicologo: DM 24/11/2023.
+- Ricorso invalidità: se i 6 mesi finiscono di sabato, domenica o in un festivo, il termine slitta al primo giorno lavorativo (art. 155 c.p.c.). Date del 01/01/1970 di nuovo mostrate nelle lettere. Il sollecito INPS della vecchia procedura non cita più una «normativa vigente» per i 30 giorni, che sono indicativi.
+- Lazio, URP ASL Roma 4 (`data/regioni/lazio/asl.json`): orario dalla pagina URP (dal lunedì al venerdì), l'avviso aveva un refuso.
+- Nuove regole in `tests/errori-noti.test.mjs` (ora guarda anche i dati regionali) e test sulle date e sulle scadenze in `tests/engine.test.mjs` e `tests/combinazioni.cjs`.
+
 ## 21/10/2026 — Rilettura completa del sito e nuovi controlli automatici
 - Citazioni di legge corrette: L. 24/2017 art. 4 comma 2 (documentazione sanitaria, anche nella lettera e in `data/rules-cartella.json`); DPCM 12/01/2017 allegato 12 per gli ausili (anche nella lettera di sollecito); artt. 24, 25 e 26 per consultori e salute mentale; allegato 4C per il dentista (`data/rules-dentista.json`).
 - Legge 104: parenti fino al secondo grado, terzo grado solo nei casi dell'art. 33 c. 3 (`data/rules-legge-104.json`); le 2 ore al giorno solo per il lavoratore disabile; il congedo fino a 24 mesi della L. 106/2025 non è «dal 2026» (lo sono le 10 ore). Tolto il tetto 2025 del congedo straordinario.
