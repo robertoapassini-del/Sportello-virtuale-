@@ -2,7 +2,7 @@
 // riquadri Aiuto e Fonti. Le risposte restano in memoria finché la pagina è aperta.
 import {
   esc, helpBox, sourcesBox, choice, moreHelp, hideHeadingEmoji, enableStart,
-  MAINTAINER_EMAIL, regioni, regioniAttive, regioneScelta, regioneInfo, regioneDeiDati, setRegione,
+  MAINTAINER_EMAIL, regioni, regioniAttive, regioneInfo, regioneDeiDati, regioneNonPronta, regioneSalvata, regione, setRegione,
 } from './common.js';
 
 export { choice };
@@ -72,20 +72,37 @@ export function createNav({ first, show }) {
 // regioni attive e la scelta non è ancora salvata, oppure dopo «Cambia regione».
 // Con una sola regione attiva non si vede mai: il modulo va dritto alla provincia.
 let askRegion = false;
-export const needsRegion = () => askRegion || (regioniAttive().length > 1 && !regioneScelta());
+// Si chiede se ci sono più regioni attive e non ne è salvata nessuna (anche una non ancora attiva vale come scelta).
+export const needsRegion = () => askRegion || (regioniAttive().length > 1 && !regioneSalvata());
 
-// I pulsanti delle regioni attive e, sotto, le altre in grigio. Usati anche da Numeri utili.
+// Email per chiederci una regione che non c'è ancora.
+const regionMail = (nome) => `mailto:${MAINTAINER_EMAIL}?subject=${encodeURIComponent(`Vorrei ${nome ? `la regione ${nome}` : 'la mia regione'} su Guida Sanità`)}`;
+
+// I pulsanti delle regioni attive e, sotto, le altre in grigio. Anche quelle si possono scegliere:
+// chi abita lì vede la parte valida in tutta Italia e l'invito a segnalarcela. Usati anche da Numeri utili.
 export function regionChoices() {
   const byName = (a, b) => a.name.localeCompare(b.name, 'it');
   const on = regioniAttive().sort(byName);
   const off = regioni().filter((r) => !r.attiva).sort(byName);
-  const mail = `mailto:${MAINTAINER_EMAIL}?subject=${encodeURIComponent('La mia regione su Guida Sanità')}`;
   return `<div class="grid2">${on.map((r) => `<button type="button" class="btn choice" data-action="region" data-region="${esc(r.id)}">
       <span class="txt">${esc(r.name)}</span></button>`).join('')}</div>
     ${off.length ? `<p>Queste regioni non ci sono ancora:</p>
-    <ul class="regioni-off">${off.map((r) => `<li>${esc(r.name)} <small>non ancora disponibile</small></li>`).join('')}</ul>
-    <p class="muted">La tua regione non c'è? <a href="${esc(mail)}">Scrivici</a>: ci aiuti a scegliere quale aggiungere.</p>` : ''}`;
+    <ul class="regioni-off">${off.map((r) => `<li><button type="button" class="link" data-action="region" data-region="${esc(r.id)}">${esc(r.name)}</button> <small>non ancora disponibile</small></li>`).join('')}</ul>` : ''}`;
 }
+
+// Schermata per chi ha scelto una regione che non c'è ancora: niente uffici e numeri, ma l'invito
+// a leggere la parte valida in tutta Italia (la prima schermata del modulo) e a scriverci.
+export function regionMissing(first = 'intro') {
+  const r = regioneNonPronta();
+  if (!r) return '';
+  return `<div class="notice warn"><p><strong>${esc(r.name)}: non c'è ancora.</strong> Uffici e numeri della tua regione non li abbiamo.
+      Quello che vale in tutta Italia lo trovi lo stesso.</p></div>
+    ${first ? `<button type="button" class="btn choice" data-go="${esc(first)}"><span class="txt">Leggi cosa vale in tutta Italia</span></button>` : ''}
+    <a class="btn primary center" href="${esc(regionMail(r.name))}">✉️ Chiedici di aggiungerla</a>
+    <p class="muted">Si apre la tua email. Decidi tu se mandarla.</p>
+    <p class="cambia-regione"><button type="button" class="link" data-action="change-region">Hai sbagliato regione? Cambia</button></p>`;
+}
+const regionMissingScreen = (first) => ({ html: `<h1>📍 La tua regione non c'è ancora</h1>${regionMissing(first)}` });
 
 const regionScreen = () => ({
   html: `<h1>📍 In quale regione abiti?</h1>
@@ -96,20 +113,23 @@ const regionScreen = () => ({
 // Link piccolo «Non abiti in Sicilia? Cambia regione» per le schermate con dati regionali.
 // Con una sola regione attiva non c'è niente da cambiare e il link non si vede.
 export function changeRegionLink() {
-  if (regioniAttive().length < 2) return '';
+  if (regioniAttive().length < 2 && !regioneSalvata()) return '';
   return `<p class="cambia-regione"><button type="button" class="link" data-action="change-region">Non abiti in ${esc(regioneInfo().name)}? Cambia regione</button></p>`;
 }
 
 // Mette la scelta della regione davanti alla schermata della provincia (name).
 // Torna una funzione per il disegno: (current, state) → il link «Cambia regione»
 // se la schermata mostra dati regionali (la provincia o le schermate dopo).
-export function withRegion(screens, name = 'province') {
+export function withRegion(screens, name = 'province', first = 'intro') {
   const inner = screens[name];
   if (!inner) return () => '';
-  screens[name] = () => (needsRegion() ? regionScreen() : inner());
+  screens[name] = () => {
+    if (needsRegion()) return regionScreen();
+    return regioneNonPronta() ? regionMissingScreen(first) : inner();
+  };
   return (current, state = {}) => {
     if (current !== name) askRegion = false;
-    return !needsRegion() && (current === name || state.province) ? changeRegionLink() : '';
+    return !needsRegion() && !regioneNonPronta() && (current === name || state.province) ? changeRegionLink() : '';
   };
 }
 
@@ -119,7 +139,9 @@ export function regionAction(btn, nav, name = 'province') {
   if (btn.dataset.action === 'region') {
     setRegione(btn.dataset.region);
     askRegion = false;
-    if (regioneDeiDati() && btn.dataset.region !== regioneDeiDati()) location.reload();
+    // Regione attiva diversa da quella dei dati già caricati: si ricarica la pagina con i dati giusti.
+    // Una regione non attiva non ha dati: basta ridisegnare (si vede l'invito).
+    if (regioneDeiDati() && !regioneNonPronta() && regione() !== regioneDeiDati()) location.reload();
     else nav.render();
     return true;
   }

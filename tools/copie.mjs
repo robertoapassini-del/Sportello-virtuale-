@@ -1,6 +1,8 @@
 // Salva una copia in testo semplice delle pagine ufficiali elencate nei dati regionali
 // (data/regioni/<regione>/asp.json: site_url, info_url, portal_url, guardia_medica_url, pua_url,
-// url dei contatti). Serve al controllo periodico dei numeri (docs/regioni.md, «Aggiornamento assistito»):
+// url dei contatti). Per una regione non ancora attiva legge data/regioni/<regione>/fonti.json:
+// stessa forma ({ asl: [{ id, site_url, pagine: [{ tipo, url }] }] }), solo gli indirizzi da copiare,
+// così i numeri della regione nuova si scrivono leggendo le copie (docs/regola-numeri.md, proof «pagina»). Serve al controllo periodico dei numeri (docs/regioni.md, «Aggiornamento assistito»):
 // gira ogni notte su un server in Italia, perché molti siti delle ASL non rispondono dall'estero,
 // e carica le copie nel branch «copie-siti». Claude poi le confronta con i dati e propone le modifiche.
 //
@@ -56,11 +58,36 @@ function scarica(url) {
   return r;
 }
 
+// Regioni in preparazione: dalla homepage di ogni azienda si seguono anche i link dello stesso sito
+// che parlano di contatti e servizi, così il server trova da solo le pagine giuste. Mai login,
+// area riservata o prenotazione online; al massimo MAX_SCOPERTE pagine in più per sito.
+const PAROLE = /contatt|urp|relazioni.con.il.pubblico|cup|prenota|guardia.medica|continuit|116.?117|pua|punto.unico|domiciliar|adi\b|numeri.utili|centralino/i;
+const VIETATE = /login|accedi|area.riservata|registrazione|prenota.?online|carrello|\.(pdf|docx?|xlsx?|zip|jpe?g|png)(\?|$)/i;
+const MAX_SCOPERTE = 15;
+function scopri(html, base) {
+  const host = (u) => u.hostname.replace(/^www\./, '');
+  const da = new URL(base);
+  const trovati = new Set();
+  for (const [, href, testo] of html.matchAll(/<a\b[^>]*href="([^"#]+)"[^>]*>([\s\S]*?)<\/a>/gi)) {
+    let u;
+    try { u = new URL(href.replace(/&amp;/g, '&'), base); } catch { continue; }
+    if (!/^https?:$/.test(u.protocol) || host(u) !== host(da) || VIETATE.test(u.href)) continue;
+    if (PAROLE.test(u.pathname) || PAROLE.test(toText(testo))) trovati.add(u.href);
+    if (trovati.size >= MAX_SCOPERTE) break;
+  }
+  return [...trovati];
+}
+
 const regioni = read('data/regioni/index.json');
 let totale = 0; let ok = 0; let cambiate = 0; const problemi = [];
 
-for (const reg of regioni.regioni.filter((r) => r.attiva)) {
-  const asl = read(`data/regioni/${reg.id}/${(reg.files && reg.files.asl) || 'asl'}.json`);
+// Regioni attive: il file delle aziende sanitarie. Regioni in preparazione: fonti.json, se c'è.
+const fileAsl = (reg) => (reg.attiva
+  ? `data/regioni/${reg.id}/${(reg.files && reg.files.asl) || 'asl'}.json`
+  : `data/regioni/${reg.id}/fonti.json`);
+
+for (const reg of regioni.regioni.filter((r) => fs.existsSync(path.join(SITE, fileAsl(r))))) {
+  const asl = read(fileAsl(reg));
   const dir = path.join(OUT, reg.id);
   fs.mkdirSync(dir, { recursive: true });
   const indiceFile = path.join(dir, 'indice.json');
@@ -71,7 +98,7 @@ for (const reg of regioni.regioni.filter((r) => r.attiva)) {
   for (const a of asl.asl) {
     const urls = new Set();
     for (const k of ['site_url', 'info_url', 'form_url', 'portal_url', 'guardia_medica_url', 'pua_url']) if (a[k]) urls.add(a[k]);
-    for (const c of a.contacts || []) if (c.url) urls.add(c.url);
+    for (const c of [...(a.contacts || []), ...(a.pagine || [])]) if (c.url) urls.add(c.url);
     fs.mkdirSync(path.join(dir, a.id), { recursive: true });
     for (const url of urls) {
       totale++;
@@ -80,6 +107,7 @@ for (const reg of regioni.regioni.filter((r) => r.attiva)) {
       const r = scarica(url);
       Object.assign(voce, { http: r.http, finale: r.finale && r.finale !== url ? r.finale : undefined, certificato: r.certificato, errore: r.errore });
       if (r.http === 200 && /html/i.test(r.type || '')) {
+        if (!reg.attiva && url === a.site_url) for (const u of scopri(r.body, r.finale || url)) urls.add(u);
         const testo = toText(r.body);
         const titolo = toText((r.body.match(/<title[^>]*>([\s\S]*?)<\/title>/i) || [, ''])[1]).replace(/\s+/g, ' ').trim();
         const nome = `${a.id}/${sha(url).slice(0, 12)}.txt`;

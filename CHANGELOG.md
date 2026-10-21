@@ -2,6 +2,12 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — passo 3 delle regioni: il codice per più regioni (nessun dato cambiato)
+- Si può scegliere anche una regione non ancora attiva: al posto della provincia c'è «La tua regione non c'è ancora», con la parte valida in tutta Italia e l'invito a scriverci.
+- Numeri utili funziona con più regioni: titoli con il nome della regione e la sigla dell'azienda sanitaria (ASP, ATS, ASL…), cambio di regione senza ricaricare la pagina, `numeri-utili/#regione` apre la scelta. In home, con più regioni, si vede quale si sta guardando.
+- `loadRegional(root, 'asl')` prende il nome del file dall'indice; `tests/contatti.test.mjs` controlla tutte le regioni attive.
+- Con la sola Sicilia attiva il sito resta uguale.
+
 ## 21/10/2026 — tolte le classi della vecchia lettura ad alta voce (nessun dato cambiato)
 - Tolte le classi `say` e `no-say` (597 in 105 file): servivano solo al pulsante «Ascolta», tolto prima. Le pagine si vedono come prima.
 

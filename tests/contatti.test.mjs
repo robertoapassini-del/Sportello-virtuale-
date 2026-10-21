@@ -3,12 +3,17 @@
 // più vecchio di 92 giorni. Se fallisce: ricontrollare i numeri, non allentare il test.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { readFileSync, existsSync } from 'node:fs';
 
 const load = (p) => JSON.parse(readFileSync(new URL(p, import.meta.url), 'utf8'));
-const asp = load('../data/regioni/sicilia/asp.json');
 const nums = load('../data/numeri.json');
-const inps = load('../data/regioni/sicilia/inps.json');
+// Tutte le regioni attive (data/regioni/index.json): ognuna con le sue aziende sanitarie e, se c'è, le sedi INPS.
+const file = (r, k) => `../data/regioni/${r.id}/${(r.files || {})[k] || k}.json`;
+const regioni = load('../data/regioni/index.json').regioni.filter((r) => r.attiva).map((r) => ({
+  ...r,
+  asl: load(file(r, 'asl')).asl,
+  inps: existsSync(new URL(file(r, 'inps'), import.meta.url)) ? load(file(r, 'inps')) : { provinces: [] },
+}));
 
 const MAX_DAYS = 92;
 const PROOFS = ['telefono', 'pagina', 'estratto', 'archivio'];
@@ -32,8 +37,8 @@ function check(n, where, domains) {
   assert.ok(age <= MAX_DAYS, `${name}: controllato ${age} giorni fa (${n.verified}). Ricontrollalo (docs/regola-numeri.md)`);
 }
 
-test('ASP: ogni numero ha fonte ufficiale, data e prova recenti', () => {
-  for (const a of asp.asl) {
+test('Aziende sanitarie: ogni numero ha fonte ufficiale, data e prova recenti', () => {
+  for (const a of regioni.flatMap((r) => r.asl)) {
     assert.ok(a.site_url, `${a.name}: manca site_url`);
     const domains = [host(a.site_url), ...(a.official_domains || [])];
     for (const n of [...a.phones, ...(a.contacts || [])]) check(n, a.name, domains);
@@ -43,8 +48,8 @@ test('ASP: ogni numero ha fonte ufficiale, data e prova recenti', () => {
   }
 });
 
-test('ASP: lo stesso numero ha gli stessi dati in phones e contacts', () => {
-  for (const a of asp.asl) {
+test('Aziende sanitarie: lo stesso numero ha gli stessi dati in phones e contacts', () => {
+  for (const a of regioni.flatMap((r) => r.asl)) {
     const byNum = new Map((a.contacts || []).map((c) => [c.number, c]));
     for (const p of a.phones) {
       const c = byNum.get(p.number);
@@ -60,8 +65,10 @@ test('Numeri nazionali: fonte ufficiale, data e prova recenti', () => {
 });
 
 test('Sedi INPS: indirizzo con fonte ufficiale, data e prova recenti', () => {
-  for (const p of inps.provinces) {
-    if (!p.address) continue;
-    check({ ...p, number: '803 164', label: `INPS ${p.name}` }, 'regioni/sicilia/inps.json', ['inps.it']);
+  for (const r of regioni) {
+    for (const p of r.inps.provinces) {
+      if (!p.address) continue;
+      check({ ...p, number: '803 164', label: `INPS ${p.name}` }, `regioni/${r.id}/inps.json`, ['inps.it']);
+    }
   }
 });

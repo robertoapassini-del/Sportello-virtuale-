@@ -1,0 +1,270 @@
+{
+ "_note": "Lombardia in preparazione: solo gli indirizzi delle pagine ufficiali da far copiare al server in Italia (tools/copie.mjs). Dalle homepage (site_url) il server segue anche i link su contatti, URP, CUP, guardia medica, PUA e cure domiciliari. Indirizzi trovati con il motore di ricerca il 21/10/2026, nessuna pagina ancora letta: i numeri si scrivono solo leggendo le copie (docs/regola-numeri.md). Le province di ATS e ASST vanno confermate sulle pagine.",
+ "asl": [
+  {"id": "regione-lombardia", "name": "Regione Lombardia e AREU", "tipo": "regione", "pagine": [
+   {"tipo": "guardia", "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117"},
+   {"tipo": "contatti", "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano"},
+   {"tipo": "cup", "url": "https://www.prenotasalute.regione.lombardia.it/sito/Menu-principale/Come-prenotare/Contact-Center-numero-verde-800.638.638"},
+   {"tipo": "cup", "url": "https://www.prenotasalute.regione.lombardia.it/sito/Menu-principale/Come-prenotare"},
+   {"tipo": "cup", "url": "https://prenotasalute.regione.lombardia.it/sito/Menu-principale/Come-prenotare/In-Farmacia"},
+   {"tipo": "contatti", "url": "https://prenotasalute.regione.lombardia.it/sito/Menu-istituzionale/Contatti"},
+   {"tipo": "contatti", "url": "https://www.siss.regione.lombardia.it/wps/portal/site/siss/servizi-per-il-territorio/contact-center-regionale"},
+   {"tipo": "cup", "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/prenotazione-online-visite-esami"},
+   {"tipo": "cup", "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/farmaci-visite-esami--prescrizione-prenotazione-ssr"},
+   {"tipo": "altro", "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/servizi-sanitari-online-regione-lombardia"},
+   {"tipo": "altro", "url": "https://www.regione.lombardia.it/sanita/emergenze-e-urgenze/pronto-soccorso"},
+   {"tipo": "contatti", "url": "https://www.regione.lombardia.it/contatti"},
+   {"tipo": "altro", "url": "https://www.fascicolosanitario.regione.lombardia.it/app-salutile-prenotazioni"},
+   {"tipo": "contatti", "url": "https://www.fascicolosanitario.regione.lombardia.it/contatti"},
+   {"tipo": "guardia", "url": "https://www.areu.lombardia.it/web/home/continuita-assistenziale"},
+   {"tipo": "guardia", "url": "https://www.areu.lombardia.it/web/home/sistema-delle-cure-mediche-non-urgenti"}
+  ]},
+  {"id": "inps-lombardia", "name": "INPS: sedi in Lombardia", "tipo": "inps", "pagine": [
+   {"tipo": "regionale", "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.498000.498000-elencoStruttureInps.html"},
+   {"tipo": "milano", "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.490000.490000-elencoStruttureInps.html"},
+   {"tipo": "bergamo", "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.120000.120000-elencoStruttureInps.html"},
+   {"tipo": "brescia", "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.150000.150000-elencoStruttureInps.html"},
+   {"tipo": "como", "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.240000.240000-elencoStruttureInps.html"},
+   {"tipo": "cremona", "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.260000.260000-elencoStruttureInps.html"},
+   {"tipo": "lecco", "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.240100.240100-elencoStruttureInps.html"},
+   {"tipo": "lodi", "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.492700.492700-elencoStruttureInps.html"},
+   {"tipo": "monza", "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.490100.490100-elencoStruttureInps.html"},
+   {"tipo": "mantova", "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.450000.450000-elencoStruttureInps.html"},
+   {"tipo": "pavia", "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.570000.570000-elencoStruttureInps.html"},
+   {"tipo": "sondrio", "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.770000.770000-elencoStruttureInps.html"},
+   {"tipo": "varese", "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.870000.870000-elencoStruttureInps.html"}
+  ]},
+  {"id": "ats-milano", "name": "ATS della Città Metropolitana di Milano", "tipo": "ats", "province": ["Milano", "Lodi"], "site_url": "https://www.ats-milano.it/", "pagine": [
+   {"tipo": "urp", "url": "https://www.ats-milano.it/urp"},
+   {"tipo": "urp", "url": "https://www.ats-milano.it/urp-upt"},
+   {"tipo": "contatti", "url": "https://www.ats-milano.it/info-contatti"},
+   {"tipo": "contatti", "url": "https://www.ats-milano.it/telefono-posta-elettronica"},
+   {"tipo": "guardia", "url": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/assistenza-socio-sanitaria/continuita-assistenziale-guardia-medica"},
+   {"tipo": "guardia", "url": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/assistenza-sociosanitaria/continuita-assistenziale-guardia-medica/continuita-assistenziale/continuita-assistenziale"},
+   {"tipo": "guardia", "url": "https://www.ats-milano.it/notizie/numero-unico-116117"},
+   {"tipo": "pua", "url": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/disabilita-non-autosufficienza/assistenza-domiciliare/assistenza-domiciliare-integrata-adi/assistenza-domiciliare-integrata-adi"},
+   {"tipo": "altro", "url": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/assistenza-sociosanitaria/case-comunita/casa-comunita"}
+  ]},
+  {"id": "ats-insubria", "name": "ATS dell'Insubria", "tipo": "ats", "province": ["Varese", "Como"], "site_url": "https://www.ats-insubria.it/", "pagine": [
+   {"tipo": "urp", "url": "https://www.ats-insubria.it/agenzia/urp"},
+   {"tipo": "altro", "url": "https://www.ats-insubria.it/agenzia/ufficio-pubblica-tutela"},
+   {"tipo": "contatti", "url": "https://www.ats-insubria.it/amministrazione-trasparente/category/797-telefono-e-posta-elettronica"},
+   {"tipo": "guardia", "url": "https://www.ats-insubria.it/aree-tematiche/cure-primarie/continuita-assistenziale"},
+   {"tipo": "pua", "url": "https://www.ats-insubria.it/servizi/cure-domiciliari"}
+  ]},
+  {"id": "ats-montagna", "name": "ATS della Montagna", "tipo": "ats", "province": ["Sondrio", "Brescia (Valcamonica)", "Como (Alto Lario)"], "site_url": "https://www.ats-montagna.it/", "pagine": [
+   {"tipo": "urp", "url": "https://www.ats-montagna.it/strutture/ufficio-relazioni-pubblico-urp"},
+   {"tipo": "contatti", "url": "https://www.ats-montagna.it/contatti"},
+   {"tipo": "contatti", "url": "https://www.ats-montagna.it/contatti-2/telefono-e-posta-elettronica-ats-montagna/"},
+   {"tipo": "guardia", "url": "https://www.ats-montagna.it/continuita-assistenziale"},
+   {"tipo": "pua", "url": "https://www.ats-montagna.it/cure-domiciliari-c-dom"},
+   {"tipo": "altro", "url": "https://www.ats-montagna.it/medico-medicina-generale-e-pediatra-famiglia"}
+  ]},
+  {"id": "ats-brianza", "name": "ATS della Brianza", "tipo": "ats", "province": ["Monza e Brianza", "Lecco"], "site_url": "https://www.ats-brianza.it/", "pagine": [
+   {"tipo": "urp", "url": "https://www.ats-brianza.it/it/urp-ats-brianza.html"},
+   {"tipo": "guardia", "url": "https://www.ats-brianza.it/guardia-medica"},
+   {"tipo": "pua", "url": "https://www.ats-brianza.it/cure-domiciliari-cure-palliative"},
+   {"tipo": "altro", "url": "https://www.ats-brianza.it/servizi-sul-territorio/sportelli-delle-asst"}
+  ]},
+  {"id": "ats-bergamo", "name": "ATS di Bergamo", "tipo": "ats", "province": ["Bergamo"], "site_url": "https://www.ats-bg.it/", "pagine": [
+   {"tipo": "urp", "url": "https://www.ats-bg.it/strutture/urp-ufficio-relazioni-pubblico-e-comunicazione-istituzionale"},
+   {"tipo": "contatti", "url": "https://www.ats-bg.it/contatti-e-numeri-utili"},
+   {"tipo": "cup", "url": "https://www.ats-bg.it/accesso-alle-prestazioni-sanitarie-0"},
+   {"tipo": "guardia", "url": "https://www.ats-bg.it/servizio-continuita-assistenziale-ex-guardia-medica"},
+   {"tipo": "guardia", "url": "https://www.ats-bg.it/centrale-unica-116117"},
+   {"tipo": "pua", "url": "https://ats-bg.it/assistenza-domiciliare"}
+  ]},
+  {"id": "ats-brescia", "name": "ATS di Brescia", "tipo": "ats", "province": ["Brescia (esclusa Valcamonica)"], "site_url": "https://www.ats-brescia.it/", "pagine": [
+   {"tipo": "urp", "url": "https://www.ats-brescia.it/ufficio-relazioni-pubblico"},
+   {"tipo": "urp", "url": "https://www.ats-brescia.it/riferimenti-urp-asst-strutture-ricovero-e-cura-e-cure-sub-acute-private-accreditate-ambulatori-accreditati"},
+   {"tipo": "guardia", "url": "https://www.ats-brescia.it/continuita-assistenziale-ex-guardia-medica"},
+   {"tipo": "altro", "url": "https://www.ats-brescia.it/assistenza-sanitaria-base-e-durgenza"},
+   {"tipo": "pua", "url": "https://www.ats-brescia.it/assistenza-domiciliare-adi-e-unita-cure-palliative-domiciliari-ucp-dom"}
+  ]},
+  {"id": "ats-valpadana", "name": "ATS della Val Padana", "tipo": "ats", "province": ["Cremona", "Mantova"], "site_url": "https://www.ats-valpadana.it/", "pagine": [
+   {"tipo": "urp", "url": "https://www.ats-valpadana.it/ufficio-relazioni-pubblico"},
+   {"tipo": "guardia", "url": "https://www.ats-valpadana.it/contenuto-web/-/asset_publisher/0DtvIvbG5Z49/content/continuita-assistenziale-ex-guardia-medica-"},
+   {"tipo": "pua", "url": "https://www.ats-valpadana.it/cure-domiciliari"}
+  ]},
+  {"id": "ats-pavia", "name": "ATS di Pavia", "tipo": "ats", "province": ["Pavia"], "site_url": "https://www.ats-pavia.it/", "pagine": [
+   {"tipo": "urp", "url": "https://www.ats-pavia.it/ufficio-relazioni-pubblico"},
+   {"tipo": "contatti", "url": "https://www.ats-pavia.it/numeri-utili"},
+   {"tipo": "guardia", "url": "https://www.ats-pavia.it/tuo-medico-pediatra"},
+   {"tipo": "pua", "url": "https://www.ats-pavia.it/prestazioni/cure-domiciliari"}
+  ]},
+  {"id": "asst-niguarda", "name": "ASST Grande Ospedale Metropolitano Niguarda", "tipo": "asst", "ats": "ats-milano", "province": ["Milano"], "site_url": "https://www.ospedaleniguarda.it/", "pagine": [
+   {"tipo": "urp", "url": "https://www.ospedaleniguarda.it/chi-siamo/organizzazione/comunicazione-e-relazioni-esterne-urp"},
+   {"tipo": "contatti", "url": "https://www.ospedaleniguarda.it/servizi-al-paziente/numeri-utili"},
+   {"tipo": "cup", "url": "https://www.ospedaleniguarda.it/contents/prenota_visita_esame"}
+  ]},
+  {"id": "asst-santipaolocarlo", "name": "ASST Santi Paolo e Carlo", "tipo": "asst", "ats": "ats-milano", "province": ["Milano"], "site_url": "https://www.asst-santipaolocarlo.it/", "pagine": [
+   {"tipo": "urp", "url": "https://www.asst-santipaolocarlo.it/strutture/ufficio-relazioni-pubblico-urp"},
+   {"tipo": "contatti", "url": "https://www.asst-santipaolocarlo.it/strutture/contatti-asst-sancarlo-sanpaolo"},
+   {"tipo": "contatti", "url": "https://www.asst-santipaolocarlo.it/strutture/territorio"},
+   {"tipo": "cup", "url": "https://www.asst-santipaolocarlo.it/strutture/prenota-visite-ed-esami"},
+   {"tipo": "guardia", "url": "https://www.asst-santipaolocarlo.it/eventi/116-117-numero-unico-continuita-assistenziale-ex-guardia-medica"},
+   {"tipo": "pua", "url": "https://www.asst-santipaolocarlo.it/strutture/assistenza-domiciliare-integrata-adi"},
+   {"tipo": "altro", "url": "https://www.asst-santipaolocarlo.it/case-comunita"}
+  ]},
+  {"id": "asst-fbf-sacco", "name": "ASST Fatebenefratelli Sacco", "tipo": "asst", "ats": "ats-milano", "province": ["Milano"], "site_url": "https://www.asst-fbf-sacco.it/", "pagine": [
+   {"tipo": "urp", "url": "https://www.asst-fbf-sacco.it/servizi-al-paziente/139/urp-ufficio-relazioni-con-il-pubblico"},
+   {"tipo": "contatti", "url": "https://www.asst-fbf-sacco.it/contatti/9/contatti"},
+   {"tipo": "cup", "url": "https://asst-fbf-sacco.it/pages/pazienti/come-prenotare"},
+   {"tipo": "guardia", "url": "https://www.asst-fbf-sacco.it/news/info/numero-unico-116-117"},
+   {"tipo": "pua", "url": "https://www.asst-fbf-sacco.it/servizi-territoriali/cure-domiciliari-assistenza-domiciliare-integrata-9"}
+  ]},
+  {"id": "asst-nordmilano", "name": "ASST Nord Milano", "tipo": "asst", "ats": "ats-milano", "province": ["Milano"], "site_url": "https://www.asst-nordmilano.it/", "pagine": [
+   {"tipo": "urp", "url": "http://www.asst-nordmilano.it/urp"},
+   {"tipo": "cup", "url": "https://www.asst-nordmilano.it/cup"},
+   {"tipo": "cup", "url": "https://www.asst-nordmilano.it/prenotare-e-disdire-con-il-ssn"},
+   {"tipo": "guardia", "url": "https://www.asst-nordmilano.it/continuit%C3%A0-assistenziale"},
+   {"tipo": "pua", "url": "https://www.asst-nordmilano.it/pua-punto-unico-di-accesso"}
+  ]},
+  {"id": "asst-rhodense", "name": "ASST Rhodense", "tipo": "asst", "ats": "ats-milano", "province": ["Milano"], "site_url": "https://www.asst-rhodense.it/", "pagine": [
+   {"tipo": "urp", "url": "https://www.asst-rhodense.it/v2/URP/urp.html"},
+   {"tipo": "contatti", "url": "https://www.asst-rhodense.it/inew/ASST/contatti.html"},
+   {"tipo": "cup", "url": "https://www.asst-rhodense.it/inew/ASST/prenotazioni.html"},
+   {"tipo": "guardia", "url": "https://www.asst-rhodense.it/v2/cdc/cdc_corsico.html"},
+   {"tipo": "pua", "url": "https://www.asst-rhodense.it/nuovo-sito/home/GS/assistenzaDomiciliare.html"}
+  ]},
+  {"id": "asst-ovestmi", "name": "ASST Ovest Milanese", "tipo": "asst", "ats": "ats-milano", "province": ["Milano"], "site_url": "https://www.asst-ovestmi.it/", "pagine": [
+   {"tipo": "urp", "url": "https://www.asst-ovestmi.it/strutture/ufficio-relazioni-pubblico"},
+   {"tipo": "guardia", "url": "https://www.asst-ovestmi.it/news/servizio-continuita-assistenziale"}
+  ]},
+  {"id": "asst-melegnano-martesana", "name": "ASST Melegnano e della Martesana", "tipo": "asst", "ats": "ats-milano", "province": ["Milano"], "site_url": "https://www.asst-melegnano-martesana.it/", "pagine": [
+   {"tipo": "urp", "url": "https://www.asst-melegnano-martesana.it/servizi-territoriali/urp-ufficio-relazioni-con-il-pubblico-32"},
+   {"tipo": "cup", "url": "https://www.asst-melegnano-martesana.it/servizi-territoriali/prenotazioni-cup-23"},
+   {"tipo": "guardia", "url": "https://www.asst-melegnano-martesana.it/servizi-territoriali/continuita-assistenziale-ex-guardia-medica-8"},
+   {"tipo": "pua", "url": "https://www.asst-melegnano-martesana.it/servizi-territoriali/cure-domiciliari-adi-9"}
+  ]},
+  {"id": "asst-lodi", "name": "ASST di Lodi", "tipo": "asst", "ats": "ats-milano", "province": ["Lodi"], "site_url": "https://www.asst-lodi.it/", "pagine": [
+   {"tipo": "urp", "url": "https://www.asst-lodi.it/en/urp1"},
+   {"tipo": "contatti", "url": "https://www.asst-lodi.it/en/contatti"},
+   {"tipo": "contatti", "url": "https://www.asst-lodi.it/en/telefono-e-posta-elettronica"},
+   {"tipo": "cup", "url": "https://www.asst-lodi.it/en/contenuto-web/-/asset_publisher/ZdWnSNw44fMd/content/prenotazioni-visite-e-esami"},
+   {"tipo": "guardia", "url": "https://www.asst-lodi.it/en/continuita-assitenziale-ex-guardia-medica"},
+   {"tipo": "pua", "url": "https://www.asst-lodi.it/cure-domiciliari"}
+  ]},
+  {"id": "asst-pini-cto", "name": "ASST Gaetano Pini-CTO", "tipo": "asst", "ats": "ats-milano", "province": ["Milano"], "site_url": "https://www.asst-pini-cto.it/", "pagine": [
+   {"tipo": "urp", "url": "https://www.asst-pini-cto.it/urp"},
+   {"tipo": "contatti", "url": "https://asst-pini-cto.it/telefoni-e-posta-elettronica"},
+   {"tipo": "cup", "url": "https://www.asst-pini-cto.it/it/servizi-al-paziente/ssn-servizio-sanitario-nazionale/prenotazioni/visite-ed-esami"}
+  ]},
+  {"id": "asst-settelaghi", "name": "ASST dei Sette Laghi", "tipo": "asst", "ats": "ats-insubria", "province": ["Varese"], "site_url": "https://www.asst-settelaghi.it/", "pagine": [
+   {"tipo": "urp", "url": "https://www.asst-settelaghi.it/ufficio-relazioni-con-il-pubblico-e-comunicazione"},
+   {"tipo": "contatti", "url": "https://www.asst-settelaghi.it/en/contatti1"},
+   {"tipo": "cup", "url": "https://www.asst-settelaghi.it/en/cup-ospedale-circolo"},
+   {"tipo": "guardia", "url": "https://www.asst-settelaghi.it/sedi/continuita-assistenziale-casa-di-comunita-di-gazzada"},
+   {"tipo": "pua", "url": "https://www.asst-settelaghi.it/en/area-distrettuale/adi"}
+  ]},
+  {"id": "asst-valleolona", "name": "ASST della Valle Olona", "tipo": "asst", "ats": "ats-insubria", "province": ["Varese"], "site_url": "https://www.asst-valleolona.it/", "pagine": [
+   {"tipo": "urp", "url": "https://www.asst-valleolona.it/urp/"},
+   {"tipo": "contatti", "url": "https://www.asst-valleolona.it/asst-valle-olona/contatti/"},
+   {"tipo": "cup", "url": "https://www.asst-valleolona.it/servizi/prenotazione-visite-specialistiche-ed-esami-cup/"},
+   {"tipo": "guardia", "url": "https://www.asst-valleolona.it/dal-7-giugno-il-servizio-di-continuita-assistenziale-si-trasferisce-presso-la-casa-di-comunita-di-saronno/"},
+   {"tipo": "pua", "url": "https://www.asst-valleolona.it/servizi/punto-unico-daccesso-pua/"},
+   {"tipo": "pua", "url": "https://www.asst-valleolona.it/servizi/cure-domiciliari/"}
+  ]},
+  {"id": "asst-lariana", "name": "ASST Lariana", "tipo": "asst", "ats": "ats-insubria", "province": ["Como"], "site_url": "https://www.asst-lariana.it/", "pagine": [
+   {"tipo": "urp", "url": "https://asst-lariana.it/amministrazione/unita-organizzativa/direttore-generale/urp"},
+   {"tipo": "contatti", "url": "https://www.asst-lariana.it/amministrazione-trasparente/sezione/telefono-e-posta-elettronica/"},
+   {"tipo": "cup", "url": "https://www.asst-lariana.it/come-fare-per/prenotare/"},
+   {"tipo": "guardia", "url": "https://www.asst-lariana.it/servizio/continuita-assistenziale-ex-guardia-medica/"},
+   {"tipo": "pua", "url": "https://www.asst-lariana.it/servizio/cure-domiciliari-c-dom/"}
+  ]},
+  {"id": "asst-val", "name": "ASST della Valtellina e dell'Alto Lario", "tipo": "asst", "ats": "ats-montagna", "province": ["Sondrio", "Como (Alto Lario)"], "site_url": "https://www.asst-val.it/", "pagine": [
+   {"tipo": "urp", "url": "https://www.asst-val.it/ufficio-relazioni-con-il-pubblico-urp"},
+   {"tipo": "contatti", "url": "https://www.asst-val.it/contatti/"},
+   {"tipo": "cup", "url": "https://www.asst-val.it/come-fare-per/prenotazioni-e-disdette/"},
+   {"tipo": "guardia", "url": "https://www.asst-val.it/per-il-cittadino/continuita-assistenziale-ex-guardia-medica-numero-unico-116117/"}
+  ]},
+  {"id": "asst-valcamonica", "name": "ASST della Valcamonica", "tipo": "asst", "ats": "ats-montagna", "province": ["Brescia (Valcamonica)"], "site_url": "https://www.asst-valcamonica.it/", "pagine": [
+   {"tipo": "urp", "url": "https://www.asst-valcamonica.it/scheda-ist/URP"},
+   {"tipo": "cup", "url": "https://www.asst-valcamonica.it/scheda-ist/prenotare-visite-specialistiche-esami-strumentali-e-trattamenti-ambulatoriali"},
+   {"tipo": "guardia", "url": "https://www.asst-valcamonica.it/scheda-ist/servizio-di-continuita-assistenziale-ex-guardia-medica"},
+   {"tipo": "pua", "url": "https://www.asst-valcamonica.it/scheda-ist/servizio-di-cure-domiciliari-cdom"}
+  ]},
+  {"id": "asst-monza", "name": "ASST Monza (Fondazione IRCCS San Gerardo dei Tintori)", "tipo": "asst", "ats": "ats-brianza", "province": ["Monza e Brianza"], "site_url": "https://www.asst-monza.it/", "pagine": [
+   {"tipo": "urp", "url": "https://www.asst-monza.it/ufficio-per-relazioni-con-il-pubblico"},
+   {"tipo": "contatti", "url": "https://asst-monza.it/contatti"},
+   {"tipo": "cup", "url": "https://asst-monza.it/come-prenotare"}
+  ]},
+  {"id": "asst-brianza", "name": "ASST della Brianza", "tipo": "asst", "ats": "ats-brianza", "province": ["Monza e Brianza"], "site_url": "https://www.asst-brianza.it/", "pagine": [
+   {"tipo": "urp", "url": "https://www.asst-brianza.it/web/index.php/pages/name/ufficiorelazioniconilpubblico"},
+   {"tipo": "guardia", "url": "https://www.asst-brianza.it/web/index.php/schede/scheda/54"}
+  ]},
+  {"id": "asst-lecco", "name": "ASST di Lecco", "tipo": "asst", "ats": "ats-brianza", "province": ["Lecco"], "site_url": "https://www.asst-lecco.it/", "pagine": [
+   {"tipo": "urp", "url": "https://www.asst-lecco.it/informazioni-utili/ufficio-relazioni-col-pubblico/"},
+   {"tipo": "cup", "url": "https://www.asst-lecco.it/servizi/prenotazioni/"},
+   {"tipo": "guardia", "url": "https://asst-lecco.it/continuita-assistenziale"},
+   {"tipo": "altro", "url": "https://www.asst-lecco.it/territorio/case-di-comunita/"}
+  ]},
+  {"id": "asst-pg23", "name": "ASST Papa Giovanni XXIII", "tipo": "asst", "ats": "ats-bergamo", "province": ["Bergamo"], "site_url": "https://www.asst-pg23.it/", "pagine": [
+   {"tipo": "urp", "url": "https://www.asst-pg23.it/reparti/ufficio-relazioni-il-pubblico-urp"},
+   {"tipo": "contatti", "url": "https://www.asst-pg23.it/amministrazione-trasparente/organizzazione/telefono-posta-elettronica"},
+   {"tipo": "cup", "url": "https://www.asst-pg23.it/come-fare/prenotare-una-prestazione/prenota-il-servizio-sanitario-nazionale"},
+   {"tipo": "guardia", "url": "https://www.asst-pg23.it/servizi-territoriali/case-comunita/continuita-assistenziale"},
+   {"tipo": "pua", "url": "https://www.asst-pg23.it/servizi-territoriali/case-comunita/punto-unico-accesso-pua"}
+  ]},
+  {"id": "asst-bgovest", "name": "ASST Bergamo Ovest", "tipo": "asst", "ats": "ats-bergamo", "province": ["Bergamo"], "site_url": "https://www.asst-bgovest.it/", "pagine": [
+   {"tipo": "urp", "url": "https://asst-bgovest.it/18.asp"},
+   {"tipo": "contatti", "url": "https://www.asst-bgovest.it/68.asp"},
+   {"tipo": "cup", "url": "https://www.asst-bgovest.it/63.asp"},
+   {"tipo": "guardia", "url": "https://www.asst-bgovest.it/656.asp"},
+   {"tipo": "pua", "url": "https://www.asst-bgovest.it/642.asp"}
+  ]},
+  {"id": "asst-bergamoest", "name": "ASST Bergamo Est", "tipo": "asst", "ats": "ats-bergamo", "province": ["Bergamo"], "site_url": "https://www.asst-bergamoest.it/", "pagine": [
+   {"tipo": "contatti", "url": "https://www.asst-bergamoest.it/it/informazioni/telefono-e-posta-elettronica"},
+   {"tipo": "cup", "url": "https://www.asst-bergamoest.it/it/prenotazione-disdetta"},
+   {"tipo": "guardia", "url": "https://www.asst-bergamoest.it/it/news/continuita-assistenziale-avvio-della-centrale-uni-ca-bergamo"},
+   {"tipo": "altro", "url": "https://www.asst-bergamoest.it/it/servizi-territoriali"}
+  ]},
+  {"id": "asst-spedalicivili", "name": "ASST degli Spedali Civili di Brescia", "tipo": "asst", "ats": "ats-brescia", "province": ["Brescia"], "site_url": "https://www.asst-spedalicivili.it/", "pagine": [
+   {"tipo": "urp", "url": "https://www.asst-spedalicivili.it/strutture/ufficio-relazioni-pubblico-urp"},
+   {"tipo": "contatti", "url": "https://www.asst-spedalicivili.it/amministrazione-trasparente/telefono-e-posta-elettronica"},
+   {"tipo": "guardia", "url": "https://territorio.asst-spedalicivili.it/contenuto/contenuti--ecm/continuita-assistenziale-ex-guardia-medica.ashx"},
+   {"tipo": "pua", "url": "https://territorio.asst-spedalicivili.it/contenuto/contenuti--ecm/assistenza-domiciliare-integrata-ucam-e-cead.ashx"}
+  ]},
+  {"id": "asst-franciacorta", "name": "ASST Franciacorta", "tipo": "asst", "ats": "ats-brescia", "province": ["Brescia"], "site_url": "https://www.asst-franciacorta.it/", "pagine": [
+   {"tipo": "urp", "url": "https://www.asst-franciacorta.it/ufficio-relazioni-con-il-pubblico-u-r-p/"},
+   {"tipo": "contatti", "url": "https://www.asst-franciacorta.it/numeri-utili/"},
+   {"tipo": "cup", "url": "https://www.asst-franciacorta.it/visite-ed-esami/come-prenotare-una-visita/"},
+   {"tipo": "guardia", "url": "https://www.asst-franciacorta.it/rete-territoriale/assistenza-sanitaria/continuita-assistenziale-ex-guardia-medica/"}
+  ]},
+  {"id": "asst-garda", "name": "ASST del Garda", "tipo": "asst", "ats": "ats-brescia", "province": ["Brescia"], "site_url": "https://www.asst-garda.it/", "pagine": [
+   {"tipo": "urp", "url": "https://www.asst-garda.it/relazioni-con-il-pubblico/"},
+   {"tipo": "contatti", "url": "https://www.asst-garda.it/contatti/"},
+   {"tipo": "cup", "url": "https://www.asst-garda.it/prenotazioni/"},
+   {"tipo": "guardia", "url": "https://www.asst-garda.it/territori/assistenza-sanitaria-2/continuita-assistenziale-ex-guardia-medica/"},
+   {"tipo": "pua", "url": "https://www.asst-garda.it/territori/persone-non-autosufficienti-e-disabili/c-dom/"}
+  ]},
+  {"id": "asst-cremona", "name": "ASST di Cremona", "tipo": "asst", "ats": "ats-valpadana", "province": ["Cremona"], "site_url": "https://www.asst-cremona.it/", "pagine": [
+   {"tipo": "urp", "url": "https://www.asst-cremona.it/strutture/ufficio-relazione-pubblico-poc"},
+   {"tipo": "contatti", "url": "https://www.asst-cremona.it/contatti"},
+   {"tipo": "cup", "url": "https://www.asst-cremona.it/strutture/cup-cremona"},
+   {"tipo": "guardia", "url": "https://www.asst-cremona.it/strutture/continuita-assistenziale-ex-guardia-medica"},
+   {"tipo": "pua", "url": "https://www.asst-cremona.it/strutture/integrazione-e-valutazione-fragilita-cremona"}
+  ]},
+  {"id": "asst-mantova", "name": "ASST di Mantova", "tipo": "asst", "ats": "ats-valpadana", "province": ["Mantova"], "site_url": "https://www.asst-mantova.it/", "pagine": [
+   {"tipo": "urp", "url": "https://www.asst-mantova.it/ufficio-relazioni-pubblico"},
+   {"tipo": "contatti", "url": "https://www.asst-mantova.it/en/amministrazione-trasparente/telefono-e-posta-elettronica"},
+   {"tipo": "cup", "url": "https://www.asst-mantova.it/come-prenotare-prestazioni-specialistiche-ambulatoriali"},
+   {"tipo": "guardia", "url": "https://www.asst-mantova.it/continuita-assistenziale-ex-guardia-medica"},
+   {"tipo": "pua", "url": "https://www.asst-mantova.it/asset-pagina-standard-servizio-assistenza-domiciliare-integr-15"}
+  ]},
+  {"id": "asst-crema", "name": "ASST di Crema", "tipo": "asst", "ats": "ats-valpadana", "province": ["Cremona"], "site_url": "https://www.asst-crema.it/", "pagine": [
+   {"tipo": "urp", "url": "https://www.asst-crema.it/ufficio-relazioni-pubblico-urp"},
+   {"tipo": "contatti", "url": "https://www.asst-crema.it/contatti-numeri-utili"},
+   {"tipo": "cup", "url": "https://www.asst-crema.it/cup-crema"},
+   {"tipo": "guardia", "url": "https://www.asst-crema.it/continuita-assistenziale-ex-guardia-medica"},
+   {"tipo": "pua", "url": "https://www.asst-crema.it/cure-domiciliari"}
+  ]},
+  {"id": "asst-pavia", "name": "ASST di Pavia", "tipo": "asst", "ats": "ats-pavia", "province": ["Pavia"], "site_url": "https://asst-pavia.it/", "pagine": [
+   {"tipo": "urp", "url": "https://asst-pavia.it/amministrazione/unita-organizzativa/ufficio-relazioni-con-il-pubblico-u-r-p/"},
+   {"tipo": "contatti", "url": "https://asst-pavia.it/contatti-utili/"},
+   {"tipo": "cup", "url": "https://asst-pavia.it/come-fare-per/prenotare-o-disdire-una-visita/"},
+   {"tipo": "guardia", "url": "https://asst-pavia.it/servizio/continuita-assistenziale-guardia-medica/"},
+   {"tipo": "pua", "url": "https://asst-pavia.it/servizio/assistenza-domiciliare-integrata/"}
+  ]}
+ ]
+}

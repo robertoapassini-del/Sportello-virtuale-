@@ -228,7 +228,7 @@ let flow;
 (async function init() {
   renderFooter(ROOT);
   try {
-    [rules, data] = await Promise.all([loadJSON(`${ROOT}data/rules-cartella.json`), loadRegional(ROOT, 'asp')]);
+    [rules, data] = await Promise.all([loadJSON(`${ROOT}data/rules-cartella.json`), loadRegional(ROOT, 'asl')]);
   } catch {
     app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>';
     return;
