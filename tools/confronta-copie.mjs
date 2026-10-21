@@ -8,7 +8,7 @@
 // Regole in docs/regola-numeri.md e docs/protocollo-test.md.
 //
 // Uso: node tools/confronta-copie.mjs <cartella-copie> [regione…]
-// Esce con codice 1 se trova problemi.
+// Esce con codice 3 se trova problemi (0 se nessuno, 2 se mancano le copie, 1 se il programma si rompe).
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -134,4 +134,4 @@ for (const reg of regioni) {
 }
 console.log(`\nRiepilogo: ${riepilogo.join(', ')}`);
 console.log(totale ? `Totale: ${totale} problemi.` : 'Nessun problema: dati e copie vanno d\'accordo.');
-process.exit(totale ? 1 : 0);
+process.exit(totale ? 3 : 0); // 3 = differenze trovate (1 resta per un errore del programma)
