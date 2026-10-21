@@ -340,6 +340,19 @@ async function runCase(page, c) {
       if (after !== 'E adesso?') problems.push(`schermata finale: «${after}»`);
       const t = await page.locator('#reminder').innerText();
       if (!t.includes('SOLLECITO')) problems.push('sollecito mancante');
+      // Il «Se nessuno ti risponde entro…»: con la U non si aspettano i 10 giorni del sollecito,
+      // con la B non oltre i 10 giorni della classe. La prima richiesta, se non la cambi, è di oggi.
+      const title = await page.locator('#remind-title').innerText();
+      const shown = [...title.matchAll(/(\d{2})\/(\d{2})\/(\d{4})/g)].map((m) => `${m[3]}-${m[2]}-${m[1]}`);
+      if (c.cls.key === 'U') {
+        const main = await page.locator('main').innerText();
+        const late = [...main.matchAll(/(\d{2})\/(\d{2})\/(\d{4})/g)].map((m) => `${m[3]}-${m[2]}-${m[1]}`).filter((d) => d > add(TODAY, 3));
+        if (late.length) problems.push(`classe U: «E adesso?» mostra date oltre i 3 giorni (${late.map(fmt).join(', ')})`);
+        if (!/telefona subito/.test(title)) problems.push(`classe U: titolo del sollecito «${title}»`);
+      } else {
+        const want = add(TODAY, c.cls.key === 'B' ? Math.min(10, LIMIT.B) : 10);
+        if (shown.join() !== want) problems.push(`sollecito: attesa ${fmt(want)}, trovato «${title}»`);
+      }
       await checkScreen('E adesso');
       await btn(/Torna indietro/);
       if (!(await h1()).length) problems.push('Indietro non funziona');
