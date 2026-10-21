@@ -19,7 +19,8 @@ const MAX_DAYS = 92;
 const PROOFS = ['telefono', 'pagina', 'estratto', 'archivio'];
 // Si può far finta di essere in un altro giorno: OGGI=2026-12-01 npm test
 const today = process.env.OGGI ? new Date(`${process.env.OGGI}T12:00:00Z`) : new Date();
-const PHONE = /^(\d{2,4} ?\d{3,4} ?\d{0,4}|1\d{2,5})$/;
+// Gruppo centrale fino a 5 cifre: alcuni numeri a 11 cifre si scrivono così sulle pagine ufficiali (02 99430 1814).
+const PHONE = /^(\d{2,4} ?\d{3,5} ?\d{0,4}|1\d{2,5})$/;
 
 const host = (u) => new URL(u).hostname.replace(/^www\./, '');
 const onDomain = (u, domains) => domains.some((d) => host(u) === d || host(u).endsWith(`.${d}`));

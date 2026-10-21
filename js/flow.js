@@ -95,6 +95,14 @@ export function regionChoices() {
 export function regionMissing(first = 'intro') {
   const r = regioneNonPronta();
   if (!r) return '';
+  // Regione attiva, ma questo modulo non ha ancora i suoi dati: la parte nazionale e i numeri utili della regione.
+  if (r.parziale) {
+    return `<div class="notice warn"><p><strong>${esc(r.name)}:</strong> per questo argomento uffici e numeri della tua regione non li abbiamo ancora.
+      Quello che vale in tutta Italia lo trovi lo stesso.</p></div>
+    ${first ? `<button type="button" class="btn choice" data-go="${esc(first)}"><span class="txt">Leggi cosa vale in tutta Italia</span></button>` : ''}
+    ${(r.moduli || []).includes('numeri-utili') ? `<a class="btn primary center" href="../numeri-utili/">📞 I numeri utili: ${esc(r.name)}</a>` : ''}
+    <p class="cambia-regione"><button type="button" class="link" data-action="change-region">Hai sbagliato regione? Cambia</button></p>`;
+  }
   return `<div class="notice warn"><p><strong>${esc(r.name)}: non c'è ancora.</strong> Uffici e numeri della tua regione non li abbiamo.
       Quello che vale in tutta Italia lo trovi lo stesso.</p></div>
     ${first ? `<button type="button" class="btn choice" data-go="${esc(first)}"><span class="txt">Leggi cosa vale in tutta Italia</span></button>` : ''}
@@ -102,7 +110,9 @@ export function regionMissing(first = 'intro') {
     <p class="muted">Si apre la tua email. Decidi tu se mandarla.</p>
     <p class="cambia-regione"><button type="button" class="link" data-action="change-region">Hai sbagliato regione? Cambia</button></p>`;
 }
-const regionMissingScreen = (first) => ({ html: `<h1>📍 La tua regione non c'è ancora</h1>${regionMissing(first)}` });
+const regionMissingScreen = (first) => ({
+  html: `<h1>📍 ${regioneNonPronta()?.parziale ? 'Qui la tua regione non c\'è ancora' : 'La tua regione non c\'è ancora'}</h1>${regionMissing(first)}`,
+});
 
 const regionScreen = () => ({
   html: `<h1>📍 In quale regione abiti?</h1>

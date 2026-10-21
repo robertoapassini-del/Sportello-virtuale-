@@ -10,7 +10,7 @@
     { "id": "friuli-venezia-giulia", "name": "Friuli-Venezia Giulia", "attiva": false, "asl_label": "Azienda sanitaria" },
     { "id": "lazio", "name": "Lazio", "attiva": false, "asl_label": "ASL" },
     { "id": "liguria", "name": "Liguria", "attiva": false, "asl_label": "ASL" },
-    { "id": "lombardia", "name": "Lombardia", "attiva": false, "asl_label": "ATS" },
+    { "id": "lombardia", "name": "Lombardia", "attiva": true, "asl_label": "ATS", "moduli": ["numeri-utili"] },
     { "id": "marche", "name": "Marche", "attiva": false, "asl_label": "AST" },
     { "id": "molise", "name": "Molise", "attiva": false, "asl_label": "ASREM" },
     { "id": "piemonte", "name": "Piemonte", "attiva": false, "asl_label": "ASL" },

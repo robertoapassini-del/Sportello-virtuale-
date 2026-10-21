@@ -1,0 +1,2570 @@
+{
+ "region": "Lombardia",
+ "model": "ATS e ASST",
+ "_note": "Numeri di ATS e ASST della Lombardia per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili (data/regioni/index.json, «moduli»): percorso di tutela, PUA e uffici dei singoli moduli sono ancora da scrivere. In Lombardia la guardia medica è il 116117 e si prenota al numero verde regionale 800 638638.",
+ "asl": [
+  {
+   "id": "bergamo",
+   "name": "ATS di Bergamo",
+   "province": "Bergamo",
+   "site_url": "https://www.ats-bg.it/",
+   "official_domains": [
+    "ats-bg.it",
+    "asst-pg23.it",
+    "asst-bgovest.it",
+    "asst-bergamoest.it",
+    "regione.lombardia.it"
+   ],
+   "guardia_medica_url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117",
+   "pua_url": "https://ats-bg.it/assistenza-domiciliare",
+   "emails": [
+    "urp@ats-bg.it",
+    "urp@asst-pg23.it",
+    "urp@asst-bgovest.it",
+    "urp@asst-bergamoest.it"
+   ],
+   "pec": "protocollo@pec.ats-bg.it",
+   "phones": [
+    {
+     "label": "Centralino ATS di Bergamo",
+     "number": "035 385111",
+     "url": "https://www.ats-bg.it/contatti-e-numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino dell'ASST Papa Giovanni XXIII (Bergamo)",
+     "number": "035 267111",
+     "url": "https://www.asst-pg23.it/amministrazione-trasparente/organizzazione/telefono-posta-elettronica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino dell'ASST Bergamo Ovest, Ospedale di Treviglio-Caravaggio",
+     "number": "0363 4241",
+     "url": "https://www.asst-bgovest.it/68.asp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino dell'ASST Bergamo Ovest, Ospedale di Romano di Lombardia",
+     "number": "0363 9901",
+     "url": "https://www.asst-bgovest.it/68.asp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino dell'ASST Bergamo Est (Seriate)",
+     "number": "035 306111",
+     "url": "https://www.asst-bergamoest.it/it/informazioni/telefono-e-posta-elettronica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale): 116117, gratis, per tutta la Lombardia",
+     "number": "116117",
+     "hours": "Dal lunedì al venerdì dalle 20 alle 8; sabato, domenica, prefestivi e festivi 24 ore su 24",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Prenotare visite ed esami: numero verde regionale (da telefono fisso, gratis)",
+     "number": "800 638638",
+     "hours": "Dal lunedì al sabato 8–20, esclusi i festivi",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Prenotare visite ed esami dal cellulare (a pagamento)",
+     "number": "02 999599",
+     "hours": "Dal lunedì al sabato 8–20, esclusi i festivi",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ATS di Bergamo: ufficio per i cittadini e reclami (centralino, poi interno 6)",
+     "number": "035 385111",
+     "hours": "Lunedì, mercoledì e venerdì 9–13; martedì e giovedì 14.30–16.30",
+     "address": "Via Gallicciolli 4, Bergamo",
+     "url": "https://www.ats-bg.it/strutture/urp-ufficio-relazioni-pubblico-e-comunicazione-istituzionale",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Centro screening oncologici dell'ATS di Bergamo (numero verde)",
+     "number": "800 512330",
+     "url": "https://www.ats-bg.it/contatti-e-numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "palliative",
+     "label": "Hospice: numero unico dell'ATS di Bergamo",
+     "number": "035 385085",
+     "url": "https://www.ats-bg.it/contatti-e-numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST Papa Giovanni XXIII: ufficio per i cittadini e reclami",
+     "number": "035 2675010",
+     "url": "https://www.asst-pg23.it/amministrazione-trasparente/organizzazione/telefono-posta-elettronica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari dell'ASST Papa Giovanni XXIII",
+     "number": "035 2673900",
+     "url": "https://www.asst-pg23.it/amministrazione-trasparente/organizzazione/telefono-posta-elettronica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST Bergamo Ovest: ufficio per i cittadini e reclami",
+     "number": "0363 424325",
+     "hours": "Dal lunedì al venerdì 9–12.30",
+     "url": "https://www.asst-bgovest.it/68.asp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Cartelle cliniche dell'ASST Bergamo Ovest, Ospedale di Treviglio-Caravaggio",
+     "number": "0363 424217",
+     "url": "https://www.asst-bgovest.it/68.asp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Cartelle cliniche dell'ASST Bergamo Ovest, Ospedale di Romano di Lombardia",
+     "number": "0363 990217",
+     "url": "https://www.asst-bgovest.it/68.asp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA delle Case di Comunità dell'ASST Bergamo Ovest (cure domiciliari ADI): segreteria per lasciare un messaggio quando i servizi sono chiusi",
+     "number": "0363 424563",
+     "url": "https://www.asst-bgovest.it/642.asp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST Bergamo Est: ufficio per i cittadini e reclami",
+     "number": "035 3063768",
+     "url": "https://www.asst-bergamoest.it/it/informazioni/telefono-e-posta-elettronica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ATS di Bergamo – Contatti e numeri utili",
+     "url": "https://www.ats-bg.it/contatti-e-numeri-utili"
+    },
+    {
+     "label": "ATS di Bergamo – URP",
+     "url": "https://www.ats-bg.it/strutture/urp-ufficio-relazioni-pubblico-e-comunicazione-istituzionale"
+    },
+    {
+     "label": "ATS di Bergamo – Accesso alle prestazioni sanitarie (URP delle strutture)",
+     "url": "https://www.ats-bg.it/accesso-alle-prestazioni-sanitarie-0"
+    },
+    {
+     "label": "ASST Papa Giovanni XXIII – Telefono e posta elettronica",
+     "url": "https://www.asst-pg23.it/amministrazione-trasparente/organizzazione/telefono-posta-elettronica"
+    },
+    {
+     "label": "ASST Bergamo Ovest – Numeri utili",
+     "url": "https://www.asst-bgovest.it/68.asp"
+    },
+    {
+     "label": "ASST Bergamo Ovest – ADI Assistenza Domiciliare Integrata",
+     "url": "https://www.asst-bgovest.it/642.asp"
+    },
+    {
+     "label": "ASST Bergamo Est – Telefono e posta elettronica",
+     "url": "https://www.asst-bergamoest.it/it/informazioni/telefono-e-posta-elettronica"
+    },
+    {
+     "label": "Regione Lombardia – Numero europeo 116117",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117"
+    },
+    {
+     "label": "Regione Lombardia – I numeri della sanità",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "CUP delle tre ASST di Bergamo: le pagine di prenotazione indicano solo il numero regionale 800 638638 e gli sportelli CUP, senza un numero CUP aziendale sicuro.",
+    "ASST Bergamo Ovest: la pagina Numeri utili riporta anche CUP dei PreSST (es. 0363 590999) con la nota «verificare nella tabella» e vecchi numeri di guardia medica locali: non usati.",
+    "PUA dell'ASST Papa Giovanni XXIII e cure domiciliari dell'ASST Bergamo Est: nessun numero nelle pagine copiate.",
+    "La pagina ATS Assistenza domiciliare (aggiornata al 04/03/2025) non riporta numeri: i recapiti sono sul modulo."
+   ]
+  },
+  {
+   "id": "brescia",
+   "name": "ATS di Brescia",
+   "province": "Brescia",
+   "site_url": "https://www.ats-brescia.it/",
+   "official_domains": [
+    "ats-brescia.it",
+    "asst-spedalicivili.it",
+    "asst-franciacorta.it",
+    "asst-garda.it",
+    "ats-montagna.it",
+    "asst-valcamonica.it",
+    "regione.lombardia.it"
+   ],
+   "guardia_medica_url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117",
+   "pua_url": "https://www.ats-brescia.it/assistenza-domiciliare-adi-e-unita-cure-palliative-domiciliari-ucp-dom",
+   "emails": [
+    "URP@ats-brescia.it",
+    "urp@asst-spedalicivili.it",
+    "urp@asst-franciacorta.it",
+    "urp@asst-garda.it",
+    "urp@asst-valcamonica.it"
+   ],
+   "pec": "protocollo@pec.ats-brescia.it",
+   "phones": [
+    {
+     "label": "Centralino ATS di Brescia",
+     "number": "030 38381",
+     "hours": "Dal lunedì al venerdì (esclusi festivi)",
+     "address": "Viale Duca degli Abruzzi 15, Brescia",
+     "url": "https://www.ats-brescia.it/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino ATS della Montagna (per la Valcamonica)",
+     "number": "0342 055111",
+     "address": "Via Nazario Sauro 36/38, Sondrio",
+     "url": "https://www.ats-montagna.it/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale): 116117, gratis, per tutta la Lombardia",
+     "number": "116117",
+     "hours": "Dal lunedì al venerdì dalle 20 alle 8; sabato, domenica, prefestivi e festivi 24 ore su 24",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Prenotare visite ed esami: numero verde regionale (da telefono fisso, gratis)",
+     "number": "800 638638",
+     "hours": "Dal lunedì al sabato 8–20, esclusi i festivi",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Prenotare visite ed esami dal cellulare (a pagamento)",
+     "number": "02 999599",
+     "hours": "Dal lunedì al sabato 8–20, esclusi i festivi",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ATS di Brescia: ufficio per i cittadini, reclami",
+     "number": "030 3838255",
+     "hours": "Dal lunedì al venerdì 9–12",
+     "address": "Viale Duca degli Abruzzi 15, Brescia",
+     "url": "https://www.ats-brescia.it/ufficio-relazioni-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ASST Spedali Civili di Brescia",
+     "number": "030 39951",
+     "url": "https://www.asst-spedalicivili.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP dell'ASST Spedali Civili (poliambulatori territoriali): prenotare visite ed esami",
+     "number": "030 224466",
+     "url": "https://www.asst-spedalicivili.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST Spedali Civili: ufficio per i cittadini, reclami",
+     "number": "030 3995808",
+     "url": "https://www.asst-spedalicivili.it/strutture/ufficio-relazioni-pubblico-urp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari (C-Dom) dell'ASST Spedali Civili: segreteria",
+     "number": "030 3333635",
+     "hours": "Dal lunedì al venerdì (non festivi) 8.30–16.30",
+     "address": "Viale Duca degli Abruzzi 13, Brescia",
+     "url": "https://www.asst-spedalicivili.it/cure-domiciliari-c-dom",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari (C-Dom) dell'ASST Spedali Civili: attivare il servizio a Brescia",
+     "number": "030 3333645",
+     "address": "Viale Duca degli Abruzzi 13, Brescia",
+     "url": "https://www.asst-spedalicivili.it/cure-domiciliari-c-dom",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Scelta e revoca del medico ed esenzioni – Casa di Comunità di Viale Duca degli Abruzzi (ASST Spedali Civili)",
+     "number": "030 3333730",
+     "hours": "Lunedì, martedì, giovedì e venerdì 14.30–15.30",
+     "address": "Viale Duca degli Abruzzi 13, Brescia",
+     "url": "https://www.asst-spedalicivili.it/news/avviso-variazione-orari-apertura-sportelli-pua-casa-comunita-viale-duca-abruzzi",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "protesica",
+     "label": "Protesica dell'ASST Spedali Civili (Casa di Comunità di Viale Duca degli Abruzzi): protesi, ausili, ossigeno",
+     "number": "030 3333726",
+     "hours": "Dal lunedì al venerdì 10–12",
+     "address": "Viale Duca degli Abruzzi 13, Brescia",
+     "url": "https://www.asst-spedalicivili.it/news/avviso-variazione-orari-apertura-sportelli-pua-casa-comunita-viale-duca-abruzzi",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ASST Franciacorta (ospedali di Chiari, Rovato, Palazzolo)",
+     "number": "030 71021",
+     "hours": "Tutti i giorni, 24 ore su 24",
+     "url": "https://www.asst-franciacorta.it/numeri-utili/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP dell'ASST Franciacorta: disdire una prenotazione",
+     "number": "030 7102255",
+     "hours": "10.30–13.30 e 14–16",
+     "url": "https://www.asst-franciacorta.it/visite-ed-esami/come-prenotare-una-visita/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST Franciacorta: ufficio per i cittadini, reclami",
+     "number": "030 7102306",
+     "hours": "Dal lunedì al venerdì 9.30–12",
+     "address": "Viale Mazzini 4, Chiari",
+     "url": "https://www.asst-franciacorta.it/numeri-utili/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Copia della cartella clinica – Ospedale di Chiari (ASST Franciacorta)",
+     "number": "030 7102372",
+     "hours": "Dal lunedì al venerdì 9–12.30 e 13.30–15.30",
+     "url": "https://www.asst-franciacorta.it/numeri-utili/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ASST del Garda (ospedale di Desenzano/Lonato)",
+     "number": "030 91451",
+     "url": "https://www.asst-garda.it/contatti/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST del Garda – Ospedale di Desenzano: ufficio per i cittadini",
+     "number": "030 9145513",
+     "hours": "Dal lunedì al venerdì 8.30–13",
+     "url": "https://www.asst-garda.it/relazioni-con-il-pubblico/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST del Garda – Ospedale di Gavardo",
+     "number": "0365 378220",
+     "hours": "Dal lunedì al venerdì 8.30–13",
+     "url": "https://www.asst-garda.it/relazioni-con-il-pubblico/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST del Garda – Ospedale di Manerbio",
+     "number": "030 9929714",
+     "hours": "Dal lunedì al venerdì 8.30–13",
+     "url": "https://www.asst-garda.it/relazioni-con-il-pubblico/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ASST Valcamonica",
+     "number": "0364 3291",
+     "address": "Via Nissolina 2, Breno",
+     "url": "https://www.asst-valcamonica.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP dell'ASST Valcamonica: prenotare visite ed esami",
+     "number": "0364 1873005",
+     "hours": "Dal lunedì al venerdì 8–19, sabato 8–14",
+     "url": "https://www.asst-valcamonica.it/scheda-ist/prenotare-visite-specialistiche-esami-strumentali-e-trattamenti-ambulatoriali",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST Valcamonica: ufficio per i cittadini",
+     "number": "0364 369872",
+     "hours": "Dal lunedì al venerdì 8.30–12.30",
+     "address": "Ospedale di Esine, ingresso principale",
+     "url": "https://www.asst-valcamonica.it/scheda-ist/ufficio-relazioni-con-il-pubblico-urp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari (C-Dom) dell'ASST Valcamonica: segreteria",
+     "number": "0364 329209",
+     "hours": "Dal lunedì al venerdì 8.30–12.30 e 13.30–15.30",
+     "url": "https://www.asst-valcamonica.it/scheda-ist/servizio-di-cure-domiciliari-cdom",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ATS della Montagna (per la Valcamonica): ufficio per i cittadini",
+     "number": "0342 055293",
+     "hours": "Dal lunedì al venerdì 9–12",
+     "url": "https://www.ats-montagna.it/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ATS di Brescia – Sede legale e centralino",
+     "url": "https://www.ats-brescia.it/contatti"
+    },
+    {
+     "label": "ATS di Brescia – URP",
+     "url": "https://www.ats-brescia.it/ufficio-relazioni-pubblico"
+    },
+    {
+     "label": "ASST Spedali Civili – Numeri utili",
+     "url": "https://www.asst-spedalicivili.it/numeri-utili"
+    },
+    {
+     "label": "ASST Spedali Civili – URP",
+     "url": "https://www.asst-spedalicivili.it/strutture/ufficio-relazioni-pubblico-urp"
+    },
+    {
+     "label": "ASST Spedali Civili – Cure domiciliari",
+     "url": "https://www.asst-spedalicivili.it/cure-domiciliari-c-dom"
+    },
+    {
+     "label": "ASST Spedali Civili – Orari sportelli Casa di Comunità",
+     "url": "https://www.asst-spedalicivili.it/news/avviso-variazione-orari-apertura-sportelli-pua-casa-comunita-viale-duca-abruzzi"
+    },
+    {
+     "label": "ASST Franciacorta – Numeri utili",
+     "url": "https://www.asst-franciacorta.it/numeri-utili/"
+    },
+    {
+     "label": "ASST Franciacorta – Come prenotare",
+     "url": "https://www.asst-franciacorta.it/visite-ed-esami/come-prenotare-una-visita/"
+    },
+    {
+     "label": "ASST del Garda – Contatti",
+     "url": "https://www.asst-garda.it/contatti/"
+    },
+    {
+     "label": "ASST del Garda – Relazioni con il pubblico",
+     "url": "https://www.asst-garda.it/relazioni-con-il-pubblico/"
+    },
+    {
+     "label": "ATS della Montagna – Contatti",
+     "url": "https://www.ats-montagna.it/contatti"
+    },
+    {
+     "label": "ASST Valcamonica – Prenotare",
+     "url": "https://www.asst-valcamonica.it/scheda-ist/prenotare-visite-specialistiche-esami-strumentali-e-trattamenti-ambulatoriali"
+    },
+    {
+     "label": "ASST Valcamonica – URP",
+     "url": "https://www.asst-valcamonica.it/scheda-ist/ufficio-relazioni-con-il-pubblico-urp"
+    },
+    {
+     "label": "ASST Valcamonica – Cure domiciliari",
+     "url": "https://www.asst-valcamonica.it/scheda-ist/servizio-di-cure-domiciliari-cdom"
+    },
+    {
+     "label": "Regione Lombardia – Numero europeo 116117",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117"
+    },
+    {
+     "label": "Regione Lombardia – I numeri della sanità",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "ASST Franciacorta e ASST del Garda: per prenotare con il SSN le pagine rimandano solo al numero regionale; nessun CUP proprio.",
+    "ASST del Garda: la pagina C-DOM non ha numeri di telefono per le cure domiciliari.",
+    "ASST Franciacorta: nessun numero PUA/cure domiciliari nelle pagine copiate.",
+    "ASST Spedali Civili: la pagina Numeri utili (con il CUP 030 224466) è aggiornata a luglio 2025; l'orario dell'URP 030 3995808 è scritto solo per agosto.",
+    "Pagina URP dell'ASST Valcamonica (scheda URP) non trovata: usata l'altra scheda URP."
+   ]
+  },
+  {
+   "id": "como",
+   "name": "ATS dell'Insubria",
+   "province": "Como",
+   "site_url": "https://www.ats-insubria.it/",
+   "official_domains": [
+    "ats-insubria.it",
+    "asst-lariana.it",
+    "ats-montagna.it",
+    "asst-val.it",
+    "regione.lombardia.it"
+   ],
+   "guardia_medica_url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117",
+   "pua_url": "https://www.asst-lariana.it/servizio/cure-domiciliari-c-dom/",
+   "emails": [
+    "urp.territorio@asst-lariana.it",
+    "urp.como.ospedale@asst-lariana.it",
+    "urp.cantu.ospedale@asst-lariana.it",
+    "urp.menaggio.ospedale@asst-lariana.it",
+    "urp.sondrio@ats-montagna.it"
+   ],
+   "pec": "protocollo@pec.ats-insubria.it",
+   "phones": [
+    {
+     "label": "Centralino ATS dell'Insubria (numero unico)",
+     "number": "0332 277111",
+     "url": "https://www.ats-insubria.it/agenzia/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino ATS della Montagna (per l'Alto Lario)",
+     "number": "0342 055111",
+     "url": "https://www.ats-montagna.it/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale): 116117, gratis, per tutta la Lombardia",
+     "number": "116117",
+     "hours": "Dal lunedì al venerdì dalle 20 alle 8; sabato, domenica, prefestivi e festivi 24 ore su 24",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Prenotare visite ed esami: numero verde regionale (da telefono fisso, gratis)",
+     "number": "800 638638",
+     "hours": "Dal lunedì al sabato 8–20, esclusi i festivi",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ATS Insubria a Como: ufficio per i cittadini, reclami",
+     "number": "031 370209",
+     "url": "https://www.ats-insubria.it/agenzia/urp",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 9–12",
+     "address": "Via Pessina 6, Como"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ASST Lariana (Ospedale Sant'Anna e altre sedi)",
+     "number": "031 5851",
+     "url": "https://www.asst-lariana.it/amministrazione-trasparente/sezione/telefono-e-posta-elettronica/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Prenotare visite ed esami dal cellulare (Contact Center di Regione Lombardia, a pagamento)",
+     "number": "02 999599",
+     "url": "https://www.asst-lariana.it/come-fare-per/prenotare/",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Dal lunedì al sabato 8–20, esclusi i festivi"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST Lariana per il territorio (poliambulatori e distretti): ufficio per i cittadini",
+     "number": "031 5859787",
+     "url": "https://www.asst-lariana.it/amministrazione/unita-organizzativa/direttore-generale/urp/",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Solo telefono, dal lunedì al venerdì 9–12:30"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST Lariana all'Ospedale Sant'Anna: ufficio per i cittadini",
+     "number": "031 5859788",
+     "url": "https://www.asst-lariana.it/amministrazione/unita-organizzativa/direttore-generale/urp/",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Solo telefono, dal lunedì al venerdì 9–12:30"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST Lariana all'Ospedale di Cantù e Mariano Comense: ufficio per i cittadini",
+     "number": "031 799202",
+     "url": "https://www.asst-lariana.it/amministrazione/unita-organizzativa/direttore-generale/urp/",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Solo telefono, martedì e giovedì 9–12:30"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST Lariana all'Ospedale di Menaggio: ufficio per i cittadini",
+     "number": "0344 33284",
+     "url": "https://www.asst-lariana.it/amministrazione/unita-organizzativa/direttore-generale/urp/",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Solo telefono, dal lunedì al venerdì 9–16"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ATS della Montagna (per l'Alto Lario): ufficio per i cittadini, reclami",
+     "number": "0342 055293",
+     "url": "https://www.ats-montagna.it/strutture/ufficio-relazioni-pubblico-urp",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 9–12, festivi esclusi"
+    },
+    {
+     "topic": "centralino",
+     "label": "Poliambulatorio di Dongo (ASST Valtellina e Alto Lario, per l'Alto Lario)",
+     "number": "0344 973517",
+     "url": "https://www.asst-val.it/contatti/",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "address": "Via G.E. Falck 5, Dongo"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ATS Insubria – Numeri utili",
+     "url": "https://www.ats-insubria.it/agenzia/numeri-utili"
+    },
+    {
+     "label": "ATS Insubria – URP",
+     "url": "https://www.ats-insubria.it/agenzia/urp"
+    },
+    {
+     "label": "ASST Lariana – Telefono e posta elettronica",
+     "url": "https://www.asst-lariana.it/amministrazione-trasparente/sezione/telefono-e-posta-elettronica/"
+    },
+    {
+     "label": "ASST Lariana – URP",
+     "url": "https://www.asst-lariana.it/amministrazione/unita-organizzativa/direttore-generale/urp/"
+    },
+    {
+     "label": "ASST Lariana – Prenotare",
+     "url": "https://www.asst-lariana.it/come-fare-per/prenotare/"
+    },
+    {
+     "label": "ATS della Montagna – Contatti",
+     "url": "https://www.ats-montagna.it/contatti"
+    },
+    {
+     "label": "ATS della Montagna – URP",
+     "url": "https://www.ats-montagna.it/strutture/ufficio-relazioni-pubblico-urp"
+    },
+    {
+     "label": "ASST Valtellina e Alto Lario – Contatti",
+     "url": "https://www.asst-val.it/contatti/"
+    },
+    {
+     "label": "Regione Lombardia – Numero europeo 116117",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117"
+    },
+    {
+     "label": "Regione Lombardia – I numeri della sanità",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "Le pagine «Numeri utili» e «URP» dell'ATS Insubria hanno la scritta «Scaduto» accanto al titolo, anche se sono state modificate nel 2026: ricontrollare.",
+    "ASST Lariana: nessun numero proprio del CUP per le visite SSN (rimanda al Contact Center regionale).",
+    "Cure domiciliari / PUA dell'ASST Lariana: la pagina non riporta numeri di telefono.",
+    "Alto Lario: nella pagina contatti dell'ASST Valtellina e Alto Lario non c'è l'Ospedale di Gravedona; c'è solo il Poliambulatorio di Dongo."
+   ]
+  },
+  {
+   "id": "cremona",
+   "name": "ATS della Val Padana",
+   "province": "Cremona",
+   "site_url": "https://www.ats-valpadana.it/",
+   "official_domains": [
+    "ats-valpadana.it",
+    "asst-cremona.it",
+    "asst-crema.it",
+    "regione.lombardia.it"
+   ],
+   "guardia_medica_url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117",
+   "pua_url": "https://www.asst-cremona.it/contatti",
+   "emails": [
+    "urp@ats-valpadana.it",
+    "urp@asst-cremona.it",
+    "urp@asst-crema.it",
+    "pua@asst-crema.it"
+   ],
+   "pec": "protocollo@pec.ats-valpadana.it",
+   "phones": [
+    {
+     "label": "Centralino ATS della Val Padana – sede di Cremona",
+     "number": "0372 4971",
+     "url": "https://www.ats-valpadana.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino ATS della Val Padana – sede di Mantova",
+     "number": "0376 3341",
+     "address": "Via dei Toscani 1, Mantova",
+     "url": "https://www.ats-valpadana.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale): 116117, gratis, per tutta la Lombardia",
+     "number": "116117",
+     "hours": "Dal lunedì al venerdì dalle 20 alle 8; sabato, domenica, prefestivi e festivi 24 ore su 24",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Prenotare visite ed esami: numero verde regionale (da telefono fisso, gratis)",
+     "number": "800 638638",
+     "hours": "Dal lunedì al sabato 8–20, esclusi i festivi",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Prenotare visite ed esami dal cellulare (a pagamento)",
+     "number": "02 999599",
+     "hours": "Dal lunedì al sabato 8–20, esclusi i festivi",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ATS della Val Padana: ufficio per i cittadini (numero verde)",
+     "number": "800 184730",
+     "url": "https://www.ats-valpadana.it/ufficio-relazioni-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ASST di Cremona – Ospedale di Cremona",
+     "number": "0372 405111",
+     "address": "Largo Priori 1, Cremona",
+     "url": "https://www.asst-cremona.it/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ASST di Cremona – Ospedale Oglio Po",
+     "number": "0375 2811",
+     "url": "https://www.asst-cremona.it/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST di Cremona – Ospedale di Cremona: ufficio per i cittadini",
+     "number": "0372 405550",
+     "hours": "Lunedì 9–12, mercoledì 9–16",
+     "address": "Ingresso principale (atrio), Ospedale di Cremona",
+     "url": "https://www.asst-cremona.it/strutture/ufficio-relazione-pubblico-poc",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST di Cremona – Ospedale Oglio Po",
+     "number": "0375 281552",
+     "url": "https://www.asst-cremona.it/strutture/ufficio-relazione-pubblico-poc",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP dell'ASST di Cremona – Casa di Comunità di Casalmaggiore: prenotare visite ed esami",
+     "number": "0375 284120",
+     "hours": "Lunedì e giovedì 8.30–16.30; martedì, mercoledì e venerdì 8.30–12.30",
+     "address": "Piazza Garibaldi 3, Casalmaggiore",
+     "url": "https://www.asst-cremona.it/strutture/cup-cremona",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP dell'ASST di Cremona – Casa di Comunità di Soresina: prenotare visite ed esami",
+     "number": "0372 408581",
+     "hours": "Dal lunedì al venerdì 8–16",
+     "address": "Via Robbiani 6, Soresina",
+     "url": "https://www.asst-cremona.it/strutture/cup-cremona",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA (Punto Unico di Accesso) – Casa di Comunità di Cremona (ASST di Cremona)",
+     "number": "0372 408705",
+     "hours": "Lunedì, martedì, giovedì e venerdì 8–15.30; mercoledì 8–18",
+     "address": "Via Bel Giardino 6, Cremona",
+     "url": "https://www.asst-cremona.it/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA – Casa di Comunità di Casalmaggiore (ASST di Cremona)",
+     "number": "0375 284137",
+     "hours": "Dal lunedì al venerdì 8.30–16.30",
+     "address": "Piazza Garibaldi 3, Casalmaggiore",
+     "url": "https://www.asst-cremona.it/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA – Casa di Comunità di Soresina (ASST di Cremona)",
+     "number": "0372 408966",
+     "hours": "Lunedì, martedì, giovedì e venerdì 8–15.30; mercoledì 8–18",
+     "address": "Via Inzani 4, Soresina",
+     "url": "https://www.asst-cremona.it/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ASST di Crema – Ospedale Maggiore",
+     "number": "0373 2801",
+     "address": "Largo Dossena 2, Crema",
+     "url": "https://www.asst-crema.it/contatti-numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST di Crema: ufficio per i cittadini, reclami",
+     "number": "0373 280580",
+     "url": "https://www.asst-crema.it/ufficio-relazioni-pubblico-urp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA (Punto Unico di Accesso) – Casa di Comunità di Crema (ASST di Crema)",
+     "number": "0373 899324",
+     "hours": "Lunedì 8–15; martedì, giovedì e venerdì 8–12; mercoledì 8–18",
+     "address": "Via Gramsci 13, Crema",
+     "url": "https://www.asst-crema.it/contatti-numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari dell'ASST di Crema: équipe di valutazione",
+     "number": "0373 899308",
+     "hours": "Dal lunedì al venerdì 8–16.30",
+     "address": "Casa della Comunità, Via Gramsci 13, Crema",
+     "url": "https://www.asst-crema.it/cure-domiciliari",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ATS della Val Padana – Home",
+     "url": "https://www.ats-valpadana.it/"
+    },
+    {
+     "label": "ATS della Val Padana – URP",
+     "url": "https://www.ats-valpadana.it/ufficio-relazioni-pubblico"
+    },
+    {
+     "label": "ASST di Cremona – Informazioni e contatti",
+     "url": "https://www.asst-cremona.it/contatti"
+    },
+    {
+     "label": "ASST di Cremona – URP",
+     "url": "https://www.asst-cremona.it/strutture/ufficio-relazione-pubblico-poc"
+    },
+    {
+     "label": "ASST di Cremona – Prenota visite o esami",
+     "url": "https://www.asst-cremona.it/strutture/cup-cremona"
+    },
+    {
+     "label": "ASST di Crema – Contatti e numeri utili",
+     "url": "https://www.asst-crema.it/contatti-numeri-utili"
+    },
+    {
+     "label": "ASST di Crema – URP",
+     "url": "https://www.asst-crema.it/ufficio-relazioni-pubblico-urp"
+    },
+    {
+     "label": "ASST di Crema – Cure domiciliari",
+     "url": "https://www.asst-crema.it/cure-domiciliari"
+    },
+    {
+     "label": "Regione Lombardia – Numero europeo 116117",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117"
+    },
+    {
+     "label": "Regione Lombardia – I numeri della sanità",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "ASST di Crema: per prenotare la pagina dà solo il numero regionale; nessun CUP proprio.",
+    "ASST di Cremona: per l'ospedale di Cremona e Oglio Po il CUP ha sportelli ma per telefono solo il numero regionale.",
+    "ASST di Cremona: la pagina contatti (PUA) è aggiornata a luglio 2025.",
+    "Pagina della guardia medica dell'ATS Val Padana non trovata."
+   ]
+  },
+  {
+   "id": "lecco",
+   "name": "ATS della Brianza",
+   "province": "Lecco",
+   "site_url": "https://www.ats-brianza.it/",
+   "official_domains": [
+    "ats-brianza.it",
+    "asst-lecco.it",
+    "regione.lombardia.it"
+   ],
+   "guardia_medica_url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117",
+   "pua_url": "https://www.asst-lecco.it/territorio/case-di-comunita/",
+   "emails": [
+    "info@ats-brianza.it",
+    "urp@ats-brianza.it",
+    "urp@asst-lecco.it"
+   ],
+   "pec": "protocollo@pec.ats-brianza.it",
+   "phones": [
+    {
+     "label": "Centralino ATS della Brianza",
+     "number": "039 23841",
+     "url": "https://www.ats-brianza.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino dell'ASST di Lecco (Ospedale Manzoni)",
+     "number": "0341 253000",
+     "url": "https://www.asst-lecco.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale): 116117, gratis, per tutta la Lombardia",
+     "number": "116117",
+     "hours": "Dal lunedì al venerdì dalle 20 alle 8; sabato, domenica, prefestivi e festivi 24 ore su 24",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Prenotare visite ed esami: numero verde regionale (da telefono fisso, gratis)",
+     "number": "800 638638",
+     "hours": "Dal lunedì al sabato 8–20, esclusi i festivi",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Prenotare visite ed esami dal cellulare (a pagamento)",
+     "number": "02 999599",
+     "hours": "Dal lunedì al sabato 8–20, esclusi i festivi",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ATS della Brianza, sede di Lecco: ufficio per i cittadini e reclami (solo su appuntamento)",
+     "number": "0341 482290",
+     "hours": "Dal lunedì al venerdì 9–12 e 14.30–15.30",
+     "address": "Corso Carlo Alberto 120, Lecco",
+     "url": "https://www.ats-brianza.it/urp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "ASST di Lecco: prenotare visite ed esami negli ospedali dell'azienda e disdire prenotazioni",
+     "number": "0341 253000",
+     "hours": "Dal lunedì al venerdì 9–12 e 13–15",
+     "url": "https://www.asst-lecco.it/servizi/prenotazioni/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST di Lecco, Ospedale di Lecco: ufficio per i cittadini e reclami",
+     "number": "0341 489105",
+     "hours": "Dal lunedì al venerdì 9–12.30 e 14–15.30",
+     "address": "Hall dell'Ospedale di Lecco",
+     "url": "https://www.asst-lecco.it/direzione-generale/funzioni-direzione-generale/comunicazione-interna-ufficio-relazioni-con-il-pubblico/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST di Lecco, Ospedale di Merate: ufficio per i cittadini e reclami",
+     "number": "039 5916431",
+     "hours": "Dal lunedì al venerdì 9–12.30 e 14–15.30",
+     "address": "Ospedale di Merate, Palazzina Amministrativa, piano 1",
+     "url": "https://www.asst-lecco.it/direzione-generale/funzioni-direzione-generale/comunicazione-interna-ufficio-relazioni-con-il-pubblico/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ATS della Brianza – Ufficio Relazioni con il Pubblico",
+     "url": "https://www.ats-brianza.it/urp"
+    },
+    {
+     "label": "ASST di Lecco – Home",
+     "url": "https://www.asst-lecco.it/"
+    },
+    {
+     "label": "ASST di Lecco – Prenotazioni",
+     "url": "https://www.asst-lecco.it/servizi/prenotazioni/"
+    },
+    {
+     "label": "ASST di Lecco – Comunicazione interna e URP",
+     "url": "https://www.asst-lecco.it/direzione-generale/funzioni-direzione-generale/comunicazione-interna-ufficio-relazioni-con-il-pubblico/"
+    },
+    {
+     "label": "ASST di Lecco – Case di Comunità",
+     "url": "https://www.asst-lecco.it/territorio/case-di-comunita/"
+    },
+    {
+     "label": "Regione Lombardia – Numero europeo 116117",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117"
+    },
+    {
+     "label": "Regione Lombardia – I numeri della sanità",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "PUA delle Case di Comunità dell'ASST di Lecco: recapiti e orari solo in un dépliant non copiato, nessun numero nella pagina.",
+    "Il numero 0341 253000 è insieme centralino e prenotazioni dell'ASST di Lecco (solo alcune visite ed esami ospedalieri); per il resto vale il numero regionale.",
+    "Mancano numeri per cure domiciliari, protesica, cartella clinica e scelta del medico dell'ASST di Lecco."
+   ]
+  },
+  {
+   "id": "lodi",
+   "name": "ATS della Città Metropolitana di Milano",
+   "province": "Lodi",
+   "site_url": "https://www.ats-milano.it/",
+   "official_domains": [
+    "ats-milano.it",
+    "asst-lodi.it",
+    "regione.lombardia.it"
+   ],
+   "guardia_medica_url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117",
+   "pua_url": "https://www.asst-lodi.it/cure-domiciliari",
+   "emails": [
+    "urp@asst-lodi.it"
+   ],
+   "pec": "protocollogenerale@pec.ats-milano.it",
+   "phones": [
+    {
+     "label": "Centralino ATS della Città Metropolitana di Milano",
+     "number": "02 85781",
+     "url": "https://www.ats-milano.it/info-contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale): 116117, gratis, per tutta la Lombardia",
+     "number": "116117",
+     "hours": "Dal lunedì al venerdì dalle 20 alle 8; sabato, domenica, prefestivi e festivi 24 ore su 24",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Prenotare visite ed esami: numero verde regionale (da telefono fisso, gratis)",
+     "number": "800 638638",
+     "hours": "Dal lunedì al sabato 8–20, esclusi i festivi",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ATS della Città Metropolitana di Milano: ufficio per i cittadini, reclami",
+     "number": "02 8578 3020",
+     "hours": "Dal lunedì al venerdì 9–12",
+     "address": "Via Conca del Naviglio 45, Milano",
+     "url": "https://www.ats-milano.it/urp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ASST di Lodi",
+     "number": "0371 371",
+     "url": "https://www.asst-lodi.it/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST di Lodi: ufficio per i cittadini, reclami",
+     "number": "0371 372975",
+     "hours": "Lunedì, martedì, giovedì e venerdì 8–13; mercoledì 8–13 e 14–17",
+     "address": "Largo Donatori del Sangue 1 (piano rialzato), Lodi",
+     "url": "https://www.asst-lodi.it/en/urp1",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Prenotare visite ed esami da cellulare (Contact Center di Regione Lombardia, a pagamento)",
+     "number": "02 999599",
+     "url": "https://www.asst-lodi.it/en/contenuto-web/-/asset_publisher/ZdWnSNw44fMd/content/prenotazioni-visite-e-esami",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ATS Milano – Info e contatti",
+     "url": "https://www.ats-milano.it/info-contatti"
+    },
+    {
+     "label": "ATS Milano – URP",
+     "url": "https://www.ats-milano.it/urp"
+    },
+    {
+     "label": "ASST di Lodi – Contatti",
+     "url": "https://www.asst-lodi.it/contatti"
+    },
+    {
+     "label": "ASST di Lodi – URP",
+     "url": "https://www.asst-lodi.it/en/urp1"
+    },
+    {
+     "label": "ASST di Lodi – Prenotazioni visite e esami",
+     "url": "https://www.asst-lodi.it/en/contenuto-web/-/asset_publisher/ZdWnSNw44fMd/content/prenotazioni-visite-e-esami"
+    },
+    {
+     "label": "Regione Lombardia – Numero europeo 116117",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117"
+    },
+    {
+     "label": "Regione Lombardia – I numeri della sanità",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "ASST di Lodi: per prenotare al telefono la pagina rimanda solo al Contact Center regionale (800 638638 / 02 999599): nessun CUP proprio.",
+    "ASST di Lodi: la pagina cure domiciliari (Valutazione Multidimensionale) non ha numeri di telefono; nessun PUA trovato."
+   ]
+  },
+  {
+   "id": "mantova",
+   "name": "ATS della Val Padana",
+   "province": "Mantova",
+   "site_url": "https://www.ats-valpadana.it/",
+   "official_domains": [
+    "ats-valpadana.it",
+    "asst-mantova.it",
+    "regione.lombardia.it"
+   ],
+   "guardia_medica_url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117",
+   "pua_url": "https://www.asst-mantova.it/asset-pagina-standard-servizio-assistenza-domiciliare-integr-15",
+   "emails": [
+    "urp@ats-valpadana.it",
+    "urp@asst-mantova.it",
+    "adi.mantova@asst-mantova.it"
+   ],
+   "pec": "protocollo@pec.ats-valpadana.it",
+   "phones": [
+    {
+     "label": "Centralino ATS della Val Padana – sede di Mantova",
+     "number": "0376 3341",
+     "address": "Via dei Toscani 1, Mantova",
+     "url": "https://www.ats-valpadana.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale): 116117, gratis, per tutta la Lombardia",
+     "number": "116117",
+     "hours": "Dal lunedì al venerdì dalle 20 alle 8; sabato, domenica, prefestivi e festivi 24 ore su 24",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Prenotare visite ed esami: numero verde regionale (da telefono fisso, gratis)",
+     "number": "800 638638",
+     "hours": "Dal lunedì al sabato 8–20, esclusi i festivi",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Prenotare visite ed esami dal cellulare (a pagamento)",
+     "number": "02 999599",
+     "hours": "Dal lunedì al sabato 8–20, esclusi i festivi",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ATS della Val Padana: ufficio per i cittadini (numero verde)",
+     "number": "800 184730",
+     "url": "https://www.ats-valpadana.it/ufficio-relazioni-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ASST di Mantova",
+     "number": "0376 2011",
+     "address": "Strada Lago Paiolo 10, Mantova",
+     "url": "https://www.asst-mantova.it/ufficio-relazioni-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST di Mantova – Ospedale di Mantova e Asola: ufficio per i cittadini",
+     "number": "0376 201443",
+     "hours": "Dal lunedì al venerdì 9–13",
+     "url": "https://www.asst-mantova.it/ufficio-relazioni-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST di Mantova – Ospedale di Borgo Mantovano",
+     "number": "0386 717473",
+     "hours": "Dal lunedì al venerdì 9–13",
+     "url": "https://www.asst-mantova.it/ufficio-relazioni-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST di Mantova – Ospedale di Bozzolo",
+     "number": "0376 909231",
+     "hours": "Dal lunedì al venerdì 9–13",
+     "url": "https://www.asst-mantova.it/ufficio-relazioni-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare integrata (ADI) dell'ASST di Mantova: segreteria",
+     "number": "0376 201938",
+     "hours": "Dal lunedì al venerdì 8–16",
+     "address": "Palazzina 27/A, Ospedale di Mantova",
+     "url": "https://www.asst-mantova.it/asset-pagina-standard-servizio-assistenza-domiciliare-integr-15",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ATS della Val Padana – Home",
+     "url": "https://www.ats-valpadana.it/"
+    },
+    {
+     "label": "ATS della Val Padana – URP",
+     "url": "https://www.ats-valpadana.it/ufficio-relazioni-pubblico"
+    },
+    {
+     "label": "ASST di Mantova – URP",
+     "url": "https://www.asst-mantova.it/ufficio-relazioni-pubblico"
+    },
+    {
+     "label": "ASST di Mantova – Assistenza domiciliare integrata",
+     "url": "https://www.asst-mantova.it/asset-pagina-standard-servizio-assistenza-domiciliare-integr-15"
+    },
+    {
+     "label": "Regione Lombardia – Numero europeo 116117",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117"
+    },
+    {
+     "label": "Regione Lombardia – I numeri della sanità",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "ASST di Mantova: per prenotare le pagine danno solo il numero regionale; nessun CUP telefonico proprio.",
+    "Nessun numero per scelta del medico, protesica o PUA nelle pagine copiate dell'ASST di Mantova.",
+    "Il WhatsApp dell'URP dell'ASST di Mantova (cellulare) non è stato messo."
+   ]
+  },
+  {
+   "id": "milano",
+   "name": "ATS della Città Metropolitana di Milano",
+   "province": "Milano",
+   "site_url": "https://www.ats-milano.it/",
+   "official_domains": [
+    "ats-milano.it",
+    "ospedaleniguarda.it",
+    "asst-santipaolocarlo.it",
+    "asst-fbf-sacco.it",
+    "asst-nordmilano.it",
+    "asst-rhodense.it",
+    "asst-ovestmi.it",
+    "asst-melegnano-martesana.it",
+    "regione.lombardia.it"
+   ],
+   "guardia_medica_url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117",
+   "pua_url": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/assistenza-sociosanitaria/case-comunita/casa-comunita",
+   "emails": [],
+   "pec": "protocollogenerale@pec.ats-milano.it",
+   "phones": [
+    {
+     "label": "Centralino ATS della Città Metropolitana di Milano",
+     "number": "02 85781",
+     "url": "https://www.ats-milano.it/info-contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale): 116117, gratis, per tutta la Lombardia",
+     "number": "116117",
+     "hours": "Dal lunedì al venerdì dalle 20 alle 8; sabato, domenica, prefestivi e festivi 24 ore su 24",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Prenotare visite ed esami: numero verde regionale (da telefono fisso, gratis)",
+     "number": "800 638638",
+     "hours": "Dal lunedì al sabato 8–20, esclusi i festivi",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ATS della Città Metropolitana di Milano: ufficio per i cittadini, reclami",
+     "number": "02 8578 3020",
+     "hours": "Dal lunedì al venerdì 9–12",
+     "address": "Via Conca del Naviglio 45, Milano",
+     "url": "https://www.ats-milano.it/urp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Prenotare visite ed esami da cellulare (Contact Center di Regione Lombardia, a pagamento)",
+     "number": "02 999599",
+     "hours": "Dal lunedì al sabato 8–20",
+     "url": "https://www.asst-nordmilano.it/prenotare-e-disdire-con-il-ssn",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ASST Grande Ospedale Metropolitano Niguarda",
+     "number": "02 6444 1",
+     "address": "Piazza Ospedale Maggiore 3, Milano",
+     "url": "https://www.ospedaleniguarda.it/servizi-al-paziente/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST Niguarda: ufficio per i cittadini, reclami",
+     "number": "02 6444 2794",
+     "hours": "Dal lunedì al venerdì 9–13",
+     "address": "Padiglione 1, Piazza Ospedale Maggiore 3, Milano",
+     "url": "https://www.ospedaleniguarda.it/servizi-al-paziente/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Ufficio cartelle cliniche dell'ASST Niguarda: copia della documentazione clinica",
+     "number": "02 6444 2212",
+     "hours": "Dal lunedì al venerdì 9–13",
+     "url": "https://www.ospedaleniguarda.it/servizi-al-paziente/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'Ospedale San Paolo (ASST Santi Paolo e Carlo)",
+     "number": "02 8184 1",
+     "url": "https://www.asst-santipaolocarlo.it/strutture/contattaci-presidio-san-paolo",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'Ospedale San Carlo (ASST Santi Paolo e Carlo)",
+     "number": "02 4022 1",
+     "url": "https://www.asst-santipaolocarlo.it/strutture/contattaci-presidio-san-paolo",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'Ospedale San Paolo (ASST Santi Paolo e Carlo): ufficio per i cittadini, reclami",
+     "number": "02 8184 4259",
+     "hours": "Dal lunedì al giovedì 9–12 e 13–15, venerdì 9–12",
+     "url": "https://www.asst-santipaolocarlo.it/strutture/contattaci-presidio-san-paolo",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'Ospedale San Carlo (ASST Santi Paolo e Carlo): ufficio per i cittadini, reclami",
+     "number": "02 4022 2259",
+     "url": "https://www.asst-santipaolocarlo.it/strutture/ufficio-relazioni-pubblico-urp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dei servizi territoriali dell'ASST Santi Paolo e Carlo (distretti, SerD, medicina legale)",
+     "number": "02 8184 5520",
+     "url": "https://www.asst-santipaolocarlo.it/strutture/ufficio-relazioni-pubblico-urp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA delle Case di Comunità dell'ASST Santi Paolo e Carlo: numero unico per cure a casa e servizi",
+     "number": "02 8184 5535",
+     "hours": "Dal lunedì al sabato 9.30–15.30",
+     "url": "https://www.asst-santipaolocarlo.it/strutture/contattaci-presidio-san-paolo",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari (ADI) dell'ASST Santi Paolo e Carlo: segreteria",
+     "number": "02 8184 5924",
+     "hours": "Dal lunedì al venerdì 9.30–15.30",
+     "url": "https://www.asst-santipaolocarlo.it/strutture/assistenza-domiciliare-integrata-adi",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino degli ospedali Fatebenefratelli, Buzzi e Melloni (ASST Fatebenefratelli Sacco)",
+     "number": "02 6363 1",
+     "url": "https://www.asst-fbf-sacco.it/contatti/9/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'Ospedale Sacco (ASST Fatebenefratelli Sacco)",
+     "number": "02 3904 1",
+     "url": "https://www.asst-fbf-sacco.it/contatti/9/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP degli ospedali Fatebenefratelli, Oftalmico e Melloni (ASST Fatebenefratelli Sacco): ufficio per i cittadini",
+     "number": "02 6363 2406",
+     "hours": "Dal lunedì al venerdì 9–12 e 14–15.30",
+     "url": "https://www.asst-fbf-sacco.it/servizi-al-paziente/139/urp-ufficio-relazioni-con-il-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'Ospedale Sacco (ASST Fatebenefratelli Sacco): ufficio per i cittadini",
+     "number": "02 3904 2352",
+     "hours": "Dal lunedì al venerdì 9–12 e 14–15.30",
+     "url": "https://www.asst-fbf-sacco.it/servizi-al-paziente/139/urp-ufficio-relazioni-con-il-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'Ospedale dei Bambini Buzzi (ASST Fatebenefratelli Sacco): ufficio per i cittadini",
+     "number": "02 6363 5357",
+     "hours": "Dal lunedì al venerdì 9–12 e 14–15.30",
+     "url": "https://www.asst-fbf-sacco.it/servizi-al-paziente/139/urp-ufficio-relazioni-con-il-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA della Casa di Comunità Rugabella (ASST Fatebenefratelli Sacco): cure a casa, ADI",
+     "number": "02 6363 4265",
+     "hours": "Dal lunedì al venerdì 8–16",
+     "address": "Municipio 1, Via Rugabella 4/6, Milano",
+     "url": "https://www.asst-fbf-sacco.it/servizi-territoriali/cure-domiciliari-assistenza-domiciliare-integrata-9",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA della Casa di Comunità Don Orione (ASST Fatebenefratelli Sacco): cure a casa, ADI",
+     "number": "02 6363 4515",
+     "hours": "Dal lunedì al venerdì 8–16",
+     "address": "Municipio 2, Viale Don Orione 2, Milano",
+     "url": "https://www.asst-fbf-sacco.it/servizi-territoriali/cure-domiciliari-assistenza-domiciliare-integrata-9",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA della Casa di Comunità Doria Ricordi (ASST Fatebenefratelli Sacco): cure a casa, ADI",
+     "number": "02 6363 4516",
+     "hours": "Dal lunedì al venerdì 8–16",
+     "address": "Municipio 3, Viale Doria 52 / Via Ricordi 1, Milano",
+     "url": "https://www.asst-fbf-sacco.it/servizi-territoriali/cure-domiciliari-assistenza-domiciliare-integrata-9",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA del Municipio 4 (ASST Fatebenefratelli Sacco): cure a casa, ADI",
+     "number": "02 6363 4430",
+     "hours": "Dal lunedì al venerdì 8–16",
+     "address": "Via Oglio 18, Milano",
+     "url": "https://www.asst-fbf-sacco.it/servizi-territoriali/cure-domiciliari-assistenza-domiciliare-integrata-9",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA della Casa di Comunità Accursio (ASST Fatebenefratelli Sacco): cure a casa, ADI",
+     "number": "02 6363 4789",
+     "hours": "Dal lunedì al venerdì 8–16",
+     "address": "Municipio 8, Piazzale Accursio 7, Milano",
+     "url": "https://www.asst-fbf-sacco.it/servizi-territoriali/cure-domiciliari-assistenza-domiciliare-integrata-9",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA della Casa di Comunità Farini (ASST Fatebenefratelli Sacco): cure a casa, ADI",
+     "number": "02 6363 4297",
+     "hours": "Dal lunedì al venerdì 8–16",
+     "address": "Municipio 8, Via Farini 9, Milano",
+     "url": "https://www.asst-fbf-sacco.it/servizi-territoriali/cure-domiciliari-assistenza-domiciliare-integrata-9",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ASST Nord Milano",
+     "number": "02 5799 1",
+     "url": "https://www.asst-nordmilano.it/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST Nord Milano: ufficio per i cittadini, reclami",
+     "number": "02 5799 8136",
+     "hours": "Dal lunedì al venerdì 9–12.30",
+     "address": "Ospedale Bassini, Via Gorki 50, Cinisello Balsamo",
+     "url": "https://www.asst-nordmilano.it/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari dell'ASST Nord Milano: sede organizzativa",
+     "number": "02 5799 5775",
+     "hours": "Dal lunedì al venerdì 8–16",
+     "url": "https://www.asst-nordmilano.it/cure-domiciliari",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino unico dell'ASST Rhodense",
+     "number": "02 994301",
+     "url": "https://www.asst-rhodense.it/nuovo-sito/home/GS/assistenzaDomiciliare.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST Rhodense: ufficio per i cittadini, reclami",
+     "number": "02 99430 1814",
+     "hours": "Al telefono dal lunedì al venerdì 9.30–12",
+     "address": "Ospedale di Garbagnate Milanese, Viale Forlanini 95, Garbagnate Milanese",
+     "url": "https://www.asst-rhodense.it/v2/URP/urp.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA della Casa di Comunità di Corsico (ASST Rhodense)",
+     "number": "02 99430 8584",
+     "hours": "Dal lunedì alla domenica 8–20",
+     "url": "https://www.asst-rhodense.it/v2/cdc/cdc_corsico.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ASST Ovest Milanese",
+     "number": "0331 449111",
+     "url": "https://www.asst-ovestmi.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST Ovest Milanese: ufficio per i cittadini, reclami",
+     "number": "0331 449707",
+     "hours": "Dal lunedì al venerdì 9.30–12.30; dal lunedì al giovedì anche 14–15.30",
+     "url": "https://www.asst-ovestmi.it/strutture/ufficio-relazioni-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ASST Melegnano e della Martesana",
+     "number": "02 98051",
+     "url": "https://www.asst-melegnano-martesana.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST Melegnano e della Martesana – Ospedale di Vizzolo Predabissi",
+     "number": "02 9805 2536",
+     "address": "Via Pandina 1, Vizzolo Predabissi",
+     "url": "https://www.asst-melegnano-martesana.it/servizi-territoriali/urp-ufficio-relazioni-con-il-pubblico-32",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST Melegnano e della Martesana – Ospedale di Cernusco sul Naviglio",
+     "number": "02 9512 2368",
+     "address": "Via Uboldo 21, Cernusco sul Naviglio",
+     "url": "https://www.asst-melegnano-martesana.it/servizi-territoriali/urp-ufficio-relazioni-con-il-pubblico-32",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA Cernusco sul Naviglio (ASST Melegnano e della Martesana): cure a casa e servizi",
+     "number": "02 9236 0558",
+     "address": "Via Uboldo 21, Cernusco sul Naviglio",
+     "url": "https://www.asst-melegnano-martesana.it/servizi-territoriali/punto-unico-di-accesso-pua-20",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA Rozzano (ASST Melegnano e della Martesana): cure a casa e servizi",
+     "number": "02 9811 8990",
+     "address": "Via dei Glicini, Rozzano",
+     "url": "https://www.asst-melegnano-martesana.it/servizi-territoriali/punto-unico-di-accesso-pua-20",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA Pioltello (ASST Melegnano e della Martesana): cure a casa e servizi",
+     "number": "02 9811 8117",
+     "address": "Viale San Francesco 16, Pioltello",
+     "url": "https://www.asst-melegnano-martesana.it/servizi-territoriali/punto-unico-di-accesso-pua-20",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA Melegnano (ASST Melegnano e della Martesana): cure a casa e servizi",
+     "number": "02 9811 8607",
+     "address": "Via VIII Giugno 69, Melegnano",
+     "url": "https://www.asst-melegnano-martesana.it/servizi-territoriali/punto-unico-di-accesso-pua-20",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA Gorgonzola (ASST Melegnano e della Martesana): cure a casa e servizi",
+     "number": "02 9570 7706",
+     "address": "Via Bellini 5, Gorgonzola",
+     "url": "https://www.asst-melegnano-martesana.it/servizi-territoriali/punto-unico-di-accesso-pua-20",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA Segrate (ASST Melegnano e della Martesana): cure a casa e servizi",
+     "number": "02 9805 8499",
+     "address": "Via Giorgio Amendola 1, Segrate",
+     "url": "https://www.asst-melegnano-martesana.it/servizi-territoriali/punto-unico-di-accesso-pua-20",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA Vaprio d'Adda (ASST Melegnano e della Martesana): cure a casa e servizi",
+     "number": "02 9093 5444",
+     "address": "Via Don Moletta 22, Vaprio d'Adda",
+     "url": "https://www.asst-melegnano-martesana.it/servizi-territoriali/punto-unico-di-accesso-pua-20",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA Liscate (ASST Melegnano e della Martesana): cure a casa e servizi",
+     "number": "02 9805 3509",
+     "address": "Via U. Brambilla 4/6, Liscate",
+     "url": "https://www.asst-melegnano-martesana.it/servizi-territoriali/punto-unico-di-accesso-pua-20",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ATS Milano – Info e contatti",
+     "url": "https://www.ats-milano.it/info-contatti"
+    },
+    {
+     "label": "ATS Milano – URP",
+     "url": "https://www.ats-milano.it/urp"
+    },
+    {
+     "label": "ASST Niguarda – Numeri utili",
+     "url": "https://www.ospedaleniguarda.it/servizi-al-paziente/numeri-utili"
+    },
+    {
+     "label": "ASST Santi Paolo e Carlo – Numeri utili",
+     "url": "https://www.asst-santipaolocarlo.it/strutture/contattaci-presidio-san-paolo"
+    },
+    {
+     "label": "ASST Santi Paolo e Carlo – URP",
+     "url": "https://www.asst-santipaolocarlo.it/strutture/ufficio-relazioni-pubblico-urp"
+    },
+    {
+     "label": "ASST Santi Paolo e Carlo – ADI",
+     "url": "https://www.asst-santipaolocarlo.it/strutture/assistenza-domiciliare-integrata-adi"
+    },
+    {
+     "label": "ASST Fatebenefratelli Sacco – Contatti",
+     "url": "https://www.asst-fbf-sacco.it/contatti/9/contatti"
+    },
+    {
+     "label": "ASST Fatebenefratelli Sacco – URP",
+     "url": "https://www.asst-fbf-sacco.it/servizi-al-paziente/139/urp-ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "label": "ASST Fatebenefratelli Sacco – Cure domiciliari",
+     "url": "https://www.asst-fbf-sacco.it/servizi-territoriali/cure-domiciliari-assistenza-domiciliare-integrata-9"
+    },
+    {
+     "label": "ASST Nord Milano – Contatti",
+     "url": "https://www.asst-nordmilano.it/contatti"
+    },
+    {
+     "label": "ASST Nord Milano – Cure domiciliari",
+     "url": "https://www.asst-nordmilano.it/cure-domiciliari"
+    },
+    {
+     "label": "ASST Nord Milano – Prenotare con il SSN",
+     "url": "https://www.asst-nordmilano.it/prenotare-e-disdire-con-il-ssn"
+    },
+    {
+     "label": "ASST Rhodense – URP",
+     "url": "https://www.asst-rhodense.it/v2/URP/urp.html"
+    },
+    {
+     "label": "ASST Rhodense – Casa di Comunità di Corsico",
+     "url": "https://www.asst-rhodense.it/v2/cdc/cdc_corsico.html"
+    },
+    {
+     "label": "ASST Rhodense – ADI",
+     "url": "https://www.asst-rhodense.it/nuovo-sito/home/GS/assistenzaDomiciliare.html"
+    },
+    {
+     "label": "ASST Ovest Milanese – Home",
+     "url": "https://www.asst-ovestmi.it/"
+    },
+    {
+     "label": "ASST Ovest Milanese – URP",
+     "url": "https://www.asst-ovestmi.it/strutture/ufficio-relazioni-pubblico"
+    },
+    {
+     "label": "ASST Melegnano e Martesana – Home",
+     "url": "https://www.asst-melegnano-martesana.it/"
+    },
+    {
+     "label": "ASST Melegnano e Martesana – URP",
+     "url": "https://www.asst-melegnano-martesana.it/servizi-territoriali/urp-ufficio-relazioni-con-il-pubblico-32"
+    },
+    {
+     "label": "ASST Melegnano e Martesana – PUA",
+     "url": "https://www.asst-melegnano-martesana.it/servizi-territoriali/punto-unico-di-accesso-pua-20"
+    },
+    {
+     "label": "Regione Lombardia – Numero europeo 116117",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117"
+    },
+    {
+     "label": "Regione Lombardia – I numeri della sanità",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "CUP: tutte le ASST di Milano (Niguarda, Santi Paolo e Carlo, Fatebenefratelli Sacco, Nord Milano, Rhodense, Ovest Milanese, Melegnano e Martesana) dicono di prenotare al telefono solo con il Contact Center regionale (800 638638 da fisso, 02 999599 da cellulare): nessun numero CUP proprio. Dal 21/10/2026 il Santi Paolo e Carlo prenota solo così.",
+    "ASST Melegnano e Martesana: gli sportelli CUP locali hanno numeri di cellulare (345…, 366…, 342…): non messi; da confermare se sono numeri ufficiali per i cittadini.",
+    "ASST Gaetano Pini-CTO (ortopedica) non messa: per prenotare rimanda al Contact Center regionale, nessun CUP proprio (centralino 02 58296 1, URP 02 58296564 sulla pagina se servissero).",
+    "ASST Ovest Milanese: nessuna pagina PUA/cure domiciliari copiata; pagina URP senza indirizzo dello sportello.",
+    "ASST Rhodense: le pagine «contatti» e «prenotazioni» del vecchio sito danno 404; il centralino è preso dal piè di pagina del sito; c'è solo il PUA di Corsico.",
+    "ASST Melegnano e Martesana: per il PUA di Peschiera Borromeo due pagine danno numeri diversi (02 9811 8079 e 02 9805 8079): non messo. ADI con molte sedi locali: non messe.",
+    "ATS: pagina Centro Screening senza numero; pagine «urp-upt» e «telefono-posta-elettronica» non copiate (403). Pagina 116117 dell'ASST Fatebenefratelli Sacco «Pagina non trovata»."
+   ]
+  },
+  {
+   "id": "monza-brianza",
+   "name": "ATS della Brianza",
+   "province": "Monza e Brianza",
+   "site_url": "https://www.ats-brianza.it/",
+   "official_domains": [
+    "ats-brianza.it",
+    "irccs-sangerardo.it",
+    "asst-monza.it",
+    "asst-brianza.it",
+    "regione.lombardia.it"
+   ],
+   "guardia_medica_url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117",
+   "pua_url": "https://www.ats-brianza.it/cure-domiciliari-cure-palliative",
+   "emails": [
+    "info@ats-brianza.it",
+    "urp@ats-brianza.it",
+    "urp@irccs-sangerardo.it"
+   ],
+   "pec": "protocollo@pec.ats-brianza.it",
+   "phones": [
+    {
+     "label": "Centralino ATS della Brianza (sede di Monza, viale Elvezia 2)",
+     "number": "039 23841",
+     "url": "https://www.ats-brianza.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino della Fondazione IRCCS San Gerardo dei Tintori (Monza)",
+     "number": "039 2331",
+     "url": "https://www.irccs-sangerardo.it/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino dell'ASST della Brianza (Vimercate)",
+     "number": "039 66541",
+     "url": "https://www.asst-brianza.it/web/index.php/pages/name/ufficiorelazioniconilpubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale): 116117, gratis, per tutta la Lombardia",
+     "number": "116117",
+     "hours": "Dal lunedì al venerdì dalle 20 alle 8; sabato, domenica, prefestivi e festivi 24 ore su 24",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Prenotare visite ed esami: numero verde regionale (da telefono fisso, gratis)",
+     "number": "800 638638",
+     "hours": "Dal lunedì al sabato 8–20, esclusi i festivi",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Prenotare visite ed esami dal cellulare (a pagamento)",
+     "number": "02 999599",
+     "hours": "Dal lunedì al sabato 8–20, esclusi i festivi",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ATS della Brianza, sede di Monza: ufficio per i cittadini e reclami (solo su appuntamento)",
+     "number": "039 2384992",
+     "hours": "Dal lunedì al venerdì 9–12 e 14.30–15.30",
+     "address": "Viale Elvezia 2, Monza",
+     "url": "https://www.ats-brianza.it/urp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP della Fondazione IRCCS San Gerardo dei Tintori: ufficio per i cittadini, informazioni e reclami",
+     "number": "039 2332225",
+     "hours": "Lunedì, mercoledì e venerdì (non festivi) 9–12",
+     "address": "Via Pergolesi 33, Monza (settore A, pianoterra)",
+     "url": "https://www.asst-monza.it/ufficio-per-relazioni-con-il-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ATS della Brianza – Home",
+     "url": "https://www.ats-brianza.it/"
+    },
+    {
+     "label": "ATS della Brianza – Ufficio Relazioni con il Pubblico",
+     "url": "https://www.ats-brianza.it/urp"
+    },
+    {
+     "label": "ATS della Brianza – Cure domiciliari / Cure palliative",
+     "url": "https://www.ats-brianza.it/cure-domiciliari-cure-palliative"
+    },
+    {
+     "label": "Fondazione IRCCS San Gerardo – Contatti",
+     "url": "https://www.irccs-sangerardo.it/contatti"
+    },
+    {
+     "label": "Fondazione IRCCS San Gerardo – URP",
+     "url": "https://www.asst-monza.it/ufficio-per-relazioni-con-il-pubblico"
+    },
+    {
+     "label": "Fondazione IRCCS San Gerardo – Come prenotare",
+     "url": "https://asst-monza.it/come-prenotare"
+    },
+    {
+     "label": "ASST della Brianza – Ufficio Relazioni con il Pubblico",
+     "url": "https://www.asst-brianza.it/web/index.php/pages/name/ufficiorelazioniconilpubblico"
+    },
+    {
+     "label": "Regione Lombardia – Numero europeo 116117",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117"
+    },
+    {
+     "label": "Regione Lombardia – I numeri della sanità",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "L'ASST di Monza ora si chiama Fondazione IRCCS San Gerardo dei Tintori (sito irccs-sangerardo.it, asst-monza.it porta lì).",
+    "CUP del San Gerardo: la pagina indica solo il numero regionale 800 638638 (02 999599 da cellulare) e gli sportelli CUP dell'Ospedale Nuovo e Vecchio, senza un numero proprio.",
+    "ASST della Brianza: la home copiata è vuota e la pagina URP non riporta il numero dell'URP; manca anche un numero CUP, cure domiciliari e scelta del medico.",
+    "Cure domiciliari: la pagina ATS rimanda all'ASST della Brianza senza numero di telefono."
+   ]
+  },
+  {
+   "id": "pavia",
+   "name": "ATS di Pavia",
+   "province": "Pavia",
+   "site_url": "https://www.ats-pavia.it/",
+   "official_domains": [
+    "ats-pavia.it",
+    "asst-pavia.it",
+    "regione.lombardia.it"
+   ],
+   "guardia_medica_url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117",
+   "pua_url": "https://www.ats-pavia.it/prestazioni/cure-domiciliari",
+   "emails": [
+    "urp@ats-pavia.it",
+    "urp@asst-pavia.it"
+   ],
+   "pec": "protocollo@pec.ats-pavia.it",
+   "phones": [
+    {
+     "label": "Centralino ATS di Pavia",
+     "number": "0382 4311",
+     "address": "Viale Indipendenza 3, Pavia",
+     "url": "https://www.ats-pavia.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale): 116117, gratis, per tutta la Lombardia",
+     "number": "116117",
+     "hours": "Dal lunedì al venerdì dalle 20 alle 8; sabato, domenica, prefestivi e festivi 24 ore su 24",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Prenotare visite ed esami: numero verde regionale (da telefono fisso, gratis)",
+     "number": "800 638638",
+     "hours": "Dal lunedì al sabato 8–20, esclusi i festivi",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Prenotare visite ed esami dal cellulare (a pagamento)",
+     "number": "02 999599",
+     "hours": "Dal lunedì al sabato 8–20, esclusi i festivi",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ATS di Pavia: ufficio per i cittadini, reclami",
+     "number": "0382 431505",
+     "hours": "Dal lunedì al venerdì 8.30–12",
+     "address": "Viale Indipendenza 3, Pavia",
+     "url": "https://www.ats-pavia.it/ufficio-relazioni-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening oncologici dell'ATS di Pavia (numero verde, tasto 1)",
+     "number": "800 034933",
+     "hours": "Dal lunedì al venerdì 9–13",
+     "url": "https://www.ats-pavia.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ASST di Pavia",
+     "number": "0382 19581",
+     "url": "https://asst-pavia.it/contatti-utili/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST di Pavia – sede di Pavia: ufficio per i cittadini",
+     "number": "0382 1958475",
+     "hours": "Dal lunedì al venerdì 8.30–12",
+     "url": "https://asst-pavia.it/amministrazione/unita-organizzativa/ufficio-relazioni-con-il-pubblico-u-r-p/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST di Pavia – sede di Vigevano",
+     "number": "0381 333338",
+     "hours": "Dal lunedì al venerdì 8.30–12",
+     "url": "https://asst-pavia.it/amministrazione/unita-organizzativa/ufficio-relazioni-con-il-pubblico-u-r-p/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST di Pavia – sede di Voghera",
+     "number": "0383 695624",
+     "hours": "Dal lunedì al venerdì 8.30–12",
+     "url": "https://asst-pavia.it/amministrazione/unita-organizzativa/ufficio-relazioni-con-il-pubblico-u-r-p/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari: CeAD (Centro per l'assistenza domiciliare) dell'ASST di Pavia",
+     "number": "0382 1958060",
+     "address": "Viale Repubblica 34, Pavia",
+     "url": "https://www.ats-pavia.it/prestazioni/cure-domiciliari",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ATS di Pavia – Numeri utili",
+     "url": "https://www.ats-pavia.it/numeri-utili"
+    },
+    {
+     "label": "ATS di Pavia – URP",
+     "url": "https://www.ats-pavia.it/ufficio-relazioni-pubblico"
+    },
+    {
+     "label": "ATS di Pavia – Cure domiciliari",
+     "url": "https://www.ats-pavia.it/prestazioni/cure-domiciliari"
+    },
+    {
+     "label": "ASST di Pavia – Contatti utili",
+     "url": "https://asst-pavia.it/contatti-utili/"
+    },
+    {
+     "label": "ASST di Pavia – URP",
+     "url": "https://asst-pavia.it/amministrazione/unita-organizzativa/ufficio-relazioni-con-il-pubblico-u-r-p/"
+    },
+    {
+     "label": "Regione Lombardia – Numero europeo 116117",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117"
+    },
+    {
+     "label": "Regione Lombardia – I numeri della sanità",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "ASST di Pavia: per prenotare le pagine danno solo il numero regionale; nessun CUP telefonico proprio.",
+    "Il numero CeAD 0382 1958060 viene dalla pagina dell'ATS (aggiornata a febbraio 2025, parla ancora di voucher): da ricontrollare sul sito dell'ASST.",
+    "Nessun numero PUA, protesica o scelta del medico nelle pagine copiate dell'ASST di Pavia."
+   ]
+  },
+  {
+   "id": "sondrio",
+   "name": "ATS della Montagna",
+   "province": "Sondrio",
+   "site_url": "https://www.ats-montagna.it/",
+   "official_domains": [
+    "ats-montagna.it",
+    "asst-val.it",
+    "regione.lombardia.it"
+   ],
+   "guardia_medica_url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117",
+   "pua_url": "https://www.ats-montagna.it/cure-domiciliari-c-dom",
+   "emails": [
+    "urp.sondrio@ats-montagna.it",
+    "urp@asst-val.it"
+   ],
+   "pec": "protocollo@pec.ats-montagna.it",
+   "phones": [
+    {
+     "label": "Centralino ATS della Montagna",
+     "number": "0342 055111",
+     "url": "https://www.ats-montagna.it/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale): 116117, gratis, per tutta la Lombardia",
+     "number": "116117",
+     "hours": "Dal lunedì al venerdì dalle 20 alle 8; sabato, domenica, prefestivi e festivi 24 ore su 24",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Prenotare visite ed esami: numero verde regionale (da telefono fisso, gratis)",
+     "number": "800 638638",
+     "hours": "Dal lunedì al sabato 8–20, esclusi i festivi",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ATS della Montagna: ufficio per i cittadini, reclami",
+     "number": "0342 055293",
+     "url": "https://www.ats-montagna.it/strutture/ufficio-relazioni-pubblico-urp",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 9–12, festivi esclusi"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'Ospedale di Sondrio (ASST Valtellina e Alto Lario)",
+     "number": "0342 521111",
+     "url": "https://www.asst-val.it/contatti/",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "address": "Via Stelvio 25, Sondrio"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'Ospedale di Sondalo (ASST Valtellina e Alto Lario)",
+     "number": "0342 808111",
+     "url": "https://www.asst-val.it/contatti/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'Ospedale di Chiavenna (ASST Valtellina e Alto Lario)",
+     "number": "0343 67111",
+     "url": "https://www.asst-val.it/contatti/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Prenotare visite ed esami dal cellulare (Contact Center di Regione Lombardia, a pagamento)",
+     "number": "02 999599",
+     "url": "https://www.asst-val.it/come-fare-per/prenotazioni-e-disdette/",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Dal lunedì al sabato 8–20, esclusi i festivi"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST Valtellina e Alto Lario a Sondrio: ufficio per i cittadini",
+     "number": "0342 521190",
+     "url": "https://www.asst-val.it/organizzazione/categoria/ufficio-funzione/urp-ufficio-relazioni-con-il-pubblico/",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Dal lunedì al giovedì 9–12 e 14–15:30, venerdì 9–12"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST Valtellina e Alto Lario a Morbegno: ufficio per i cittadini",
+     "number": "0342 607315",
+     "url": "https://www.asst-val.it/organizzazione/categoria/ufficio-funzione/urp-ufficio-relazioni-con-il-pubblico/",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 9–12 e 14–15"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST Valtellina e Alto Lario a Chiavenna: ufficio per i cittadini",
+     "number": "0343 67334",
+     "url": "https://www.asst-val.it/organizzazione/categoria/ufficio-funzione/urp-ufficio-relazioni-con-il-pubblico/",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 10:30–12 e 14–15"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ATS della Montagna – Contatti",
+     "url": "https://www.ats-montagna.it/contatti"
+    },
+    {
+     "label": "ATS della Montagna – URP",
+     "url": "https://www.ats-montagna.it/strutture/ufficio-relazioni-pubblico-urp"
+    },
+    {
+     "label": "ASST Valtellina e Alto Lario – Contatti",
+     "url": "https://www.asst-val.it/contatti/"
+    },
+    {
+     "label": "ASST Valtellina e Alto Lario – URP",
+     "url": "https://www.asst-val.it/organizzazione/categoria/ufficio-funzione/urp-ufficio-relazioni-con-il-pubblico/"
+    },
+    {
+     "label": "ASST Valtellina e Alto Lario – Prenotazioni e disdette",
+     "url": "https://www.asst-val.it/come-fare-per/prenotazioni-e-disdette/"
+    },
+    {
+     "label": "Regione Lombardia – Numero europeo 116117",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117"
+    },
+    {
+     "label": "Regione Lombardia – I numeri della sanità",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "ASST Valtellina e Alto Lario: nella pagina contatti il «Centralino» dei numeri utili è 0342 607111, mentre il centralino dell'Ospedale di Sondrio e il piè di pagina danno 0342 521111. Non ho messo lo 0342 607111: da chiarire.",
+    "ASST Valtellina e Alto Lario: nessun numero proprio del CUP (rimanda al Contact Center regionale).",
+    "Cure domiciliari / ADI (Servizio Fragilità dell'ASST Valtellina e Alto Lario): nessuna pagina copiata con un numero di telefono.",
+    "La pagina «Telefono e posta elettronica» dell'ATS della Montagna dà «Pagina non trovata»; usata la pagina Contatti."
+   ]
+  },
+  {
+   "id": "varese",
+   "name": "ATS dell'Insubria",
+   "province": "Varese",
+   "site_url": "https://www.ats-insubria.it/",
+   "official_domains": [
+    "ats-insubria.it",
+    "asst-settelaghi.it",
+    "asst-valleolona.it",
+    "regione.lombardia.it"
+   ],
+   "guardia_medica_url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117",
+   "pua_url": "https://www.asst-valleolona.it/servizi/punto-unico-daccesso-pua/",
+   "emails": [
+    "urp@asst-settelaghi.it",
+    "urp.busto@asst-valleolona.it",
+    "urp.gallarate@asst-valleolona.it",
+    "urp.saronno@asst-valleolona.it"
+   ],
+   "pec": "protocollo@pec.ats-insubria.it",
+   "phones": [
+    {
+     "label": "Centralino ATS dell'Insubria (numero unico)",
+     "number": "0332 277111",
+     "url": "https://www.ats-insubria.it/agenzia/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale): 116117, gratis, per tutta la Lombardia",
+     "number": "116117",
+     "hours": "Dal lunedì al venerdì dalle 20 alle 8; sabato, domenica, prefestivi e festivi 24 ore su 24",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Prenotare visite ed esami: numero verde regionale (da telefono fisso, gratis)",
+     "number": "800 638638",
+     "hours": "Dal lunedì al sabato 8–20, esclusi i festivi",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ATS Insubria a Varese: ufficio per i cittadini, reclami",
+     "number": "0332 277500",
+     "url": "https://www.ats-insubria.it/agenzia/urp",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Dal lunedì al giovedì 8:30–12:30 e 14–16, venerdì 8:30–12:30",
+     "address": "Via O. Rossi 9, Varese"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ASST Sette Laghi (Ospedale di Circolo di Varese e altre sedi)",
+     "number": "0332 278111",
+     "url": "https://www.asst-settelaghi.it/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST Sette Laghi a Varese: ufficio per i cittadini, reclami",
+     "number": "0332 278395",
+     "url": "https://www.asst-settelaghi.it/sedi/urp-varese-1",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Dal lunedì al giovedì 9–14:30, venerdì 9–13",
+     "address": "Ospedale di Circolo, Viale Borri 57, Varese (Padiglione 10, piano terra)"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST Sette Laghi a Tradate: ufficio per i cittadini",
+     "number": "0331 817446",
+     "url": "https://www.asst-settelaghi.it/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Prenotare visite ed esami dal cellulare (Contact Center di Regione Lombardia, a pagamento)",
+     "number": "02 999599",
+     "url": "https://www.asst-settelaghi.it/come-fare-per/prenotare-visita-o-esame-ssn",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Dal lunedì al sabato 8–20, esclusi i festivi"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'Ospedale di Busto Arsizio (ASST Valle Olona)",
+     "number": "0331 699111",
+     "url": "https://www.asst-valleolona.it/contatti/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino degli Ospedali di Gallarate e Somma Lombardo (ASST Valle Olona)",
+     "number": "0331 751111",
+     "url": "https://www.asst-valleolona.it/contatti/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'Ospedale di Saronno (ASST Valle Olona)",
+     "number": "02 96131",
+     "url": "https://www.asst-valleolona.it/contatti/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST Valle Olona a Busto Arsizio: appuntamenti, informazioni, reclami",
+     "number": "0331 699656",
+     "url": "https://www.asst-valleolona.it/urp/",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Telefono dal lunedì al venerdì 11–13:30",
+     "address": "Ospedale di Busto Arsizio, Via A. da Brescia 1 (Pad. Formazione, piano rialzato)"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST Valle Olona a Gallarate e Somma Lombardo: appuntamenti, informazioni, reclami",
+     "number": "0331 751525",
+     "url": "https://www.asst-valleolona.it/urp/",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Telefono dal lunedì al venerdì 11–13:30",
+     "address": "Largo Boito 2, Gallarate (piano terra)"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASST Valle Olona a Saronno: appuntamenti, informazioni, reclami",
+     "number": "02 9626717",
+     "url": "https://www.asst-valleolona.it/urp/",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "address": "Ospedale di Saronno, P.le Borella 1 (Pad. Blu, piano terra)"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ATS Insubria – Numeri utili",
+     "url": "https://www.ats-insubria.it/agenzia/numeri-utili"
+    },
+    {
+     "label": "ATS Insubria – URP",
+     "url": "https://www.ats-insubria.it/agenzia/urp"
+    },
+    {
+     "label": "ASST Sette Laghi – Contatti",
+     "url": "https://www.asst-settelaghi.it/contatti"
+    },
+    {
+     "label": "ASST Sette Laghi – URP Varese",
+     "url": "https://www.asst-settelaghi.it/sedi/urp-varese-1"
+    },
+    {
+     "label": "ASST Sette Laghi – Prenotare visite ed esami",
+     "url": "https://www.asst-settelaghi.it/come-fare-per/prenotare-visita-o-esame-ssn"
+    },
+    {
+     "label": "ASST Valle Olona – Contatti",
+     "url": "https://www.asst-valleolona.it/contatti/"
+    },
+    {
+     "label": "ASST Valle Olona – URP",
+     "url": "https://www.asst-valleolona.it/urp/"
+    },
+    {
+     "label": "ASST Valle Olona – PUA",
+     "url": "https://www.asst-valleolona.it/servizi/punto-unico-daccesso-pua/"
+    },
+    {
+     "label": "Regione Lombardia – Numero europeo 116117",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numero-europeo-armonizzato-116-117"
+    },
+    {
+     "label": "Regione Lombardia – I numeri della sanità",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/numeri-sanita-sempre-a-portata-di-mano"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "Le pagine «Numeri utili» e «URP» dell'ATS Insubria hanno la scritta «Scaduto» accanto al titolo, anche se sono state modificate nel 2026: ricontrollare.",
+    "ASST Sette Laghi e ASST Valle Olona: nessun numero di telefono proprio del CUP (rimandano al Contact Center regionale); il CUP dell'Ospedale di Circolo è aperto dal lunedì al venerdì 8:15–16:15 (Pad. 6).",
+    "ASST Valle Olona non ha un centralino unico: ci sono i centralini dei singoli ospedali.",
+    "PUA e cure domiciliari (ASST Valle Olona e Sette Laghi): le pagine non riportano numeri di telefono, rimandano alle Case di Comunità.",
+    "Email degli URP dell'ATS Insubria nascoste sul sito (protezione antispam): non riportate."
+   ]
+  }
+ ]
+}

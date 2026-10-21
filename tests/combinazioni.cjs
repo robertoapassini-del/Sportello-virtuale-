@@ -602,6 +602,8 @@ async function runCase(page, c) {
   const queue = [...cases];
   await Promise.all(Array.from({ length: WORKERS }, async () => {
     const ctx = await browser.newContext({ ...devices['iPhone SE'] });
+    // Le province provate sono quelle siciliane: la regione è già scelta, così si va dritti alla provincia.
+    await ctx.addInitScript(() => { try { localStorage.setItem('gs-regione', 'sicilia'); } catch { /* niente */ } });
     const page = await ctx.newPage();
     page.on('pageerror', (e) => jsErrors.push(e.message));
     while (queue.length) {
