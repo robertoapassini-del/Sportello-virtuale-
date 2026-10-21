@@ -2,6 +2,13 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — Lombardia: i numeri utili delle 12 province
+- Nuovo `data/regioni/lombardia/asl.json`: 191 numeri di ATS e ASST (centralini, URP, PUA e cure a casa, cartelle cliniche, screening, protesica dove c'è), uno per provincia. Fonte: le pagine ufficiali di ATS, ASST e Regione Lombardia copiate dal server in Italia il 21/10/2026; ogni numero è stato ritrovato nella copia della pagina citata (`proof: "pagina"`).
+- Numeri regionali in tutte le province: guardia medica 116117 (feriali 20–8, festivi e prefestivi 24 ore su 24) e prenotazioni 800 638638 da fisso o 02 999599 da cellulare (dal lunedì al sabato 8–20), dalle pagine di Regione Lombardia.
+- Nuovo `data/regioni/lombardia/inps.json`: indirizzo e PEC delle 12 sedi INPS provinciali (pagine «sedi» di inps.it). Il campo della riforma della disabilità è da verificare: il modulo invalidità per la Lombardia resta spento.
+- `data/regioni/index.json`: Lombardia attiva solo per Numeri utili (`moduli`). Da ora chi apre un modulo sceglie prima la regione; in home «Scegli la tua regione».
+- Cosa manca (nei `todo`): quasi nessuna ASST ha un CUP telefonico proprio (si prenota al numero regionale); mancano alcuni PUA (Ovest Milanese, Lodi, Garda, Franciacorta, Lecco, Bergamo Est, Insubria) e l'URP dell'ASST della Brianza.
+
 ## 21/10/2026 — copia delle pagine ufficiali a richiesta (nessun dato cambiato)
 - `tools/copie-se-serve.sh`: sul server gira ogni 15 minuti e rifà la copia delle pagine ufficiali appena in `main` cambiano i dati o gli indirizzi delle regioni, senza aspettare la notte. `tools/copie-richiesta.txt` serve a forzare una copia. Da installare una volta sul server (`docs/regioni.md`, sezione 8).
 

@@ -20,7 +20,7 @@ function intro() {
   <section class="home-intro page-band">
   <h1>Di cosa hai bisogno?</h1>
   <p class="home-trust">Gratis. Siamo volontari: <strong>non siamo l'${esc(scelta.asl_label || aslLabel())} né l'INPS</strong>.${piu ? '' : ` Per ora solo in ${esc(regioneInfo().name)}.`}</p>
-  ${piu ? `<p class="home-regione">📍 Stai guardando: <strong>${esc(scelta.name)}</strong> · <a href="numeri-utili/#regione">Cambia regione</a></p>` : ''}
+  ${piu ? `<p class="home-regione">📍 ${regioneSalvata() ? `Stai guardando: <strong>${esc(scelta.name)}</strong> · <a href="numeri-utili/#regione">Cambia regione</a>` : `<a href="numeri-utili/#regione">Scegli la tua regione</a>: ${esc(regioniAttive().map((r) => r.name).join(', '))}`}</p>` : ''}
   </section>`;
 }
 
