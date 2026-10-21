@@ -76,7 +76,17 @@ export const regioneScelta = () => regioniAttive().some((r) => r.id === savedReg
 // La regione salvata, anche se non è ancora attiva (null se non c'è o non è nell'indice).
 // Chi sceglie una regione non attiva vede la parte valida in tutta Italia e l'invito a segnalarcela.
 export const regioneSalvata = () => regioni().find((r) => r.id === savedRegione()) || null;
-export const regioneNonPronta = () => { const r = regioneSalvata(); return r && !r.attiva ? r : null; };
+// Il modulo della pagina (la sua cartella): 'liste-attesa', 'numeri-utili'…
+export const moduloPagina = () => (typeof location === 'undefined' ? ''
+  : location.pathname.split('/').filter(Boolean).filter((x) => x !== 'index.html').pop() || '');
+// Regione scelta che per questa pagina non ha ancora i dati: non attiva, oppure attiva ma senza questo modulo
+// nell'elenco «moduli» dell'indice (una regione nuova si accende un modulo alla volta; senza «moduli», tutti).
+export function regioneNonPronta() {
+  const r = regioneSalvata();
+  if (r && !r.attiva) return r;
+  const info = regioneInfo();
+  return info.moduli && !info.moduli.includes(moduloPagina()) ? { ...info, parziale: true } : null;
+}
 // La regione dei dati: quella salvata se è attiva, altrimenti la predefinita dell'indice.
 export function regione() {
   if (!indice) return REGIONE_DEFAULT;
