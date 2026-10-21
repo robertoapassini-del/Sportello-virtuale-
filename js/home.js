@@ -1,7 +1,7 @@
 // Pagina iniziale: la domanda e 4 grandi riquadri, uno per area. Ogni riquadro porta
 // alla pagina dell'area (per esempio visite-esami/), come la home di NHS.uk.
 // La ricerca è nella testata: qui i risultati compaiono mentre si scrive.
-import { esc, loadJSON, renderFooter, helpBox, listenButton, speakScreen, sourcesBox } from './common.js';
+import { esc, loadJSON, renderFooter, helpBox, sourcesBox } from './common.js';
 
 const app = document.getElementById('app');
 let reg;
@@ -14,7 +14,6 @@ function card(href, icon, title, small) {
 // Chi siamo in una riga sopra le scelte; il resto sotto.
 const intro = () => `
   <section class="home-intro page-band">
-  <div class="topbar">${listenButton()}</div>
   <h1 class="say">Di cosa hai bisogno?</h1>
   <p class="home-trust say">Gratis. Siamo volontari: <strong>non siamo l'ASP né l'INPS</strong>. Per ora solo in Sicilia.</p>
   </section>`;
@@ -90,10 +89,6 @@ function showResults(text) {
     ? hits.map((h) => card(h.href, h.icon, h.title, h.small)).join('')
     : '<p class="muted">Non abbiamo trovato niente con questa parola. Prova con un\'altra, oppure scegli uno dei riquadri qui sotto.</p>';
 }
-
-app.addEventListener('click', (e) => {
-  if (e.target.closest('button[data-action="listen"]')) speakScreen(app);
-});
 
 (async function init() {
   renderFooter('');

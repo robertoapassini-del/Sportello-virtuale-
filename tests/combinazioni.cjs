@@ -224,18 +224,6 @@ async function runCase(page, c) {
     // Riquadro «Fonti» con almeno un link ufficiale.
     const nLinks = await page.locator('details.fonti a[href^="http"]').count();
     if (!nLinks) problems.push(`${label}: manca il riquadro Fonti con i link`);
-    // «Ascolta»: la voce deve leggere qualcosa, senza emoji.
-    window_speech: {
-      await page.evaluate(() => { window.__spoken = []; });
-      const listen = page.locator('button[data-action="listen"]');
-      if (!(await listen.count())) { problems.push(`${label}: manca il pulsante Ascolta`); break window_speech; }
-      await listen.click();
-      const spoken = await page.evaluate(() => window.__spoken.join(' '));
-      if (spoken.length < 10) problems.push(`${label}: la voce non legge niente`);
-      const emo = spoken.match(/[\p{Extended_Pictographic}\uFE0F\u200D]/u);
-      if (emo) problems.push(`${label}: la voce legge un'emoji «${emo[0]}»`);
-      await listen.click(); // ferma la voce
-    }
     return text;
   };
 
@@ -614,18 +602,6 @@ async function runCase(page, c) {
   const queue = [...cases];
   await Promise.all(Array.from({ length: WORKERS }, async () => {
     const ctx = await browser.newContext({ ...devices['iPhone SE'] });
-    // Finta voce del telefono: registra cosa verrebbe letto.
-    await ctx.addInitScript(() => {
-      let speaking = false;
-      window.__spoken = [];
-      window.SpeechSynthesisUtterance = function (text) { this.text = text; };
-      Object.defineProperty(window, 'speechSynthesis', { value: {
-        get speaking() { return speaking; },
-        speak(u) { window.__spoken.push(u.text); speaking = true; },
-        cancel() { speaking = false; },
-        getVoices() { return []; },
-      } });
-    });
     const page = await ctx.newPage();
     page.on('pageerror', (e) => jsErrors.push(e.message));
     while (queue.length) {

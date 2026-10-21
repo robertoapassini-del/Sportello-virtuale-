@@ -6,7 +6,6 @@ import {
   invRegime, invDeadline, maxWaitDays, art,
 } from '../js/engine.js';
 import { tutelaLetter, inpsReminder, mailtoHref } from '../js/letters.js';
-import { stripEmoji } from '../js/common.js';
 
 const load = (p) => JSON.parse(readFileSync(new URL(p, import.meta.url), 'utf8'));
 const rules = load('../data/rules.json');
@@ -174,13 +173,6 @@ test('i testi mostrati agli utenti non contengono note interne (TODO)', () => {
     assert.doesNotMatch(shown(a), /TODO|VERIFY/i, a.id);
     assert.ok(Array.isArray(a.todo) && Array.isArray(a.details), a.id);
   }
-});
-
-test('la voce non legge le emoji', () => {
-  assert.equal(stripEmoji('📍 Dove abiti?'), 'Dove abiti?');
-  assert.equal(stripEmoji('👨‍👩‍👧 Un figlio ✅ 🙋🏽 ✔️ ▶️ Comincia ⚠️'), 'Un figlio Comincia');
-  assert.equal(stripEmoji('Lettera U: entro 3 giorni, 72 ore. Numero 800 954414 #1'), 'Lettera U: entro 3 giorni, 72 ore. Numero 800 954414 #1');
-  assert.equal(stripEmoji('Perché è già così?'), 'Perché è già così?');
 });
 
 test('ogni fonte ha un nome e un link https', () => {

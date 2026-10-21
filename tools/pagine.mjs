@@ -88,7 +88,6 @@ ${FAVICON}
 <!-- Pagina creata da tools/pagine.mjs con i dati di data/moduli.json: non modificarla a mano. -->
 <header class="site-header"></header>
 <main class="wrap" id="app" data-band data-wide>
-<div class="topbar"></div>
 <h1 class="say">${esc(g.title)}</h1>
 <p class="lead say">${esc(g.intro)}</p>
 <ul class="area-list">

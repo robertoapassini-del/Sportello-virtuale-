@@ -1,7 +1,7 @@
 // Numeri utili: prima quelli validi in tutta Italia (data/numeri.json), poi quelli
 // dell'ASP della provincia scelta (data/regioni/sicilia/asp.json, campo phones).
 // La provincia scelta va nell'indirizzo (#palermo), così la pagina si può condividere.
-import { esc, loadJSON, loadRegional, renderFooter, helpBox, listenButton, speakScreen, sourcesBox, callButton, hideHeadingEmoji } from './common.js';
+import { esc, loadJSON, loadRegional, renderFooter, helpBox, sourcesBox, callButton, hideHeadingEmoji } from './common.js';
 import { needsRegion, regionChoices, changeRegionLink, regionAction } from './flow.js';
 
 const ROOT = '../';
@@ -91,7 +91,6 @@ function render() {
   const a = data.asl.find((x) => x.id === id);
   const provinces = [...data.asl].sort((x, y) => x.province.localeCompare(y.province));
   app.innerHTML = `
-    <div class="topbar">${listenButton()}</div>
     <h1>📞 Numeri utili</h1>
     <p class="lead say">I numeri giusti da chiamare in Sicilia. Tocca il numero per chiamare.</p>
     ${group(nums.groups[0])}
@@ -111,7 +110,6 @@ function render() {
 }
 
 app.addEventListener('click', (e) => {
-  if (e.target.closest('button[data-action="listen"]')) speakScreen(app);
   // Scelta della regione: la pagina ha una schermata sola, «Cambia regione» la ridisegna.
   const btn = e.target.closest('button[data-action="region"], button[data-action="change-region"]');
   if (btn) regionAction(btn, { current: 'province', render, go: render });

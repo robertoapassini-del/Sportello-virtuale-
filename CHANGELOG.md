@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — tolto il pulsante «Ascolta» (nessun dato cambiato)
+- Il pulsante «🔊 Ascolta» (lettura ad alta voce con la voce del telefono) non c'è più in nessuna pagina: tolti il codice in `js/common.js`, i pulsanti in home, aree, moduli, guide e Numeri utili, gli stili e le prove in `tests/`.
+- `privacy.html` e `README.md` non parlano più di «Ascolta».
+
 ## 21/10/2026 — testata più semplice sul telefono (nessun dato cambiato)
 - Sul telefono (schermi sotto 640 px) la testata ha solo logo e ricerca: tolta la riga con i 5 argomenti. Agli argomenti si arriva dai riquadri della home e dal link «‹ …» in cima a ogni pagina. Sul PC il menu resta com'era.
 

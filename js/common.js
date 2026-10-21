@@ -1,5 +1,5 @@
 // Funzioni comuni del sito: testo sicuro, caricamento dati, piè di pagina,
-// lettura ad alta voce, copia e stampa. L'unica cosa inviata è il conteggio
+// copia e stampa. L'unica cosa inviata è il conteggio
 // anonimo delle visite e dei «Sì / No» (vedi count()): mai quello che scrivi.
 import { formatIt, art } from './engine.js';
 import { ICONS } from './icons.js';
@@ -262,70 +262,6 @@ export function hideHeadingEmoji(root) {
     span.textContent = `${m[1]} `;
     h.insertBefore(span, t);
   }
-}
-
-// ---------- Lettura ad alta voce ----------
-// Usa la voce del telefono/computer. Legge solo titolo, frasi e scelte della schermata:
-// mai i dati personali o le lettere (non hanno la classe "say").
-
-export const canSpeak = typeof window !== 'undefined' && 'speechSynthesis' in window;
-
-export function listenButton() {
-  return canSpeak ? '<button type="button" class="listen" data-action="listen" aria-label="Ascolta questa pagina">🔊 Ascolta</button>' : '';
-}
-
-// Toglie le emoji dal testo da leggere: la voce le pronuncerebbe a parole
-// (per esempio 📍 = «puntina arrotondata»).
-export function stripEmoji(text) {
-  return text
-    .replace(/[\p{Extended_Pictographic}\p{Regional_Indicator}\u{1F3FB}-\u{1F3FF}\u20E3\uFE0F\u200D]/gu, '')
-    .replace(/\s+/g, ' ')
-    .trim();
-}
-
-function plainText(el) {
-  const c = el.cloneNode(true);
-  c.querySelectorAll('.ico, .no-say').forEach((x) => x.remove());
-  return stripEmoji(c.textContent);
-}
-
-export function stopSpeaking() {
-  if (canSpeak) window.speechSynthesis.cancel();
-}
-
-export function speakScreen(root) {
-  if (!canSpeak) return;
-  const synth = window.speechSynthesis;
-  if (synth.speaking) { synth.cancel(); return; }
-  const parts = [...root.querySelectorAll('h1, .say')].map(plainText);
-  const choices = [...root.querySelectorAll('.choice .txt')].map(plainText);
-  if (choices.length) parts.push(`Puoi scegliere: ${choices.join('. Oppure: ')}.`);
-  const u = new SpeechSynthesisUtterance(parts.join('. '));
-  u.lang = 'it-IT';
-  u.rate = 0.9;
-  const voices = synth.getVoices().filter((v) => v.lang && v.lang.toLowerCase().startsWith('it'));
-  const voice = voices.find((v) => v.localService) || voices[0];
-  if (voice) u.voice = voice;
-  synth.speak(u);
-}
-
-// Pagine di solo testo (le pagine corte della guida): legge titoli, paragrafi ed elenchi,
-// saltando indice, fonti e quello che è segnato .no-say.
-export function speakGuide(root) {
-  if (!canSpeak) return;
-  const synth = window.speechSynthesis;
-  if (synth.speaking) { synth.cancel(); return; }
-  const parts = [...root.querySelectorAll('h1, h2, h3, p, li')]
-    .filter((el) => !el.closest('.no-say, .topbar, .guida-indice, details, nav'))
-    .map(plainText)
-    .filter(Boolean);
-  const u = new SpeechSynthesisUtterance(parts.join('. '));
-  u.lang = 'it-IT';
-  u.rate = 0.9;
-  const voices = synth.getVoices().filter((v) => v.lang && v.lang.toLowerCase().startsWith('it'));
-  const voice = voices.find((v) => v.localService) || voices[0];
-  if (voice) u.voice = voice;
-  synth.speak(u);
 }
 
 // I pulsanti che avviano il percorso sono scritti nell'HTML con `disabled`: si sbloccano
