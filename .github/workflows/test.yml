@@ -9,3 +9,18 @@ jobs:
         with:
           node-version: 22
       - run: npm test
+  # Il sito in un browser vero: tutte le pagine (Sicilia, Lazio, nessuna regione), i percorsi dei moduli
+  # e tutte le combinazioni di risposte. Regole in docs/protocollo-test.md.
+  browser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-save --no-package-lock playwright@1.49.1
+      - run: npx playwright install --with-deps chromium
+      - name: Sito in locale
+        run: python3 -m http.server 8080 >/dev/null 2>&1 &
+      - run: node tests/browser.cjs http://localhost:8080/
+      - run: node tests/combinazioni.cjs http://localhost:8080/

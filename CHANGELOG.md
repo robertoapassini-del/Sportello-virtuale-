@@ -2,6 +2,15 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — Rilettura completa del sito e nuovi controlli automatici
+- Citazioni di legge corrette: L. 24/2017 art. 4 comma 2 (documentazione sanitaria, anche nella lettera e in `data/rules-cartella.json`); DPCM 12/01/2017 allegato 12 per gli ausili (anche nella lettera di sollecito); artt. 24, 25 e 26 per consultori e salute mentale; allegato 4C per il dentista (`data/rules-dentista.json`).
+- Legge 104: parenti fino al secondo grado, terzo grado solo nei casi dell'art. 33 c. 3 (`data/rules-legge-104.json`); le 2 ore al giorno solo per il lavoratore disabile; il congedo fino a 24 mesi della L. 106/2025 non è «dal 2026» (lo sono le 10 ore). Tolto il tetto 2025 del congedo straordinario.
+- RSA: per l'ISEE contano anche i figli fuori casa (componente aggiuntiva); la parte alberghiera la paga la persona ricoverata.
+- Contraddizioni tolte: cure all'estero (autorizzazione solo per ricoveri e cure costose), pediatra «sotto i 6 anni», avvisi «numeri da raccogliere» mostrati solo se mancano, nota PEC INPS solo se non verificata, Fascicolo dei figli che dipende dalla Regione, Siracusa e Trapani in `data/regioni/sicilia/asp.json`.
+- Testi: «È passato 1 giorno», «l'ASL», niente «circa» con i centesimi, tessera europea valida anche nel Regno Unito, limitazioni della scelta del medico attribuite a Trapani e Palermo.
+- «Da dove prendiamo le informazioni»: le leggi di tutti i moduli.
+- Nuovi controlli (docs/protocollo-test.md): `tests/nazionale.test.mjs`, `tests/errori-noti.test.mjs`, `tests/browser.cjs`; la CI ora prova il sito anche nel browser (con `tests/combinazioni.cjs`). Nuovi CLAUDE.md e modello per le pull request.
+
 ## 21/10/2026 — Controllate quattro regole: ausili, esenzione, ricetta, screening
 - Ausili (`data/rules-ausili.json`, pagine `ausili/`, lettera di sollecito): il DPCM 12/01/2017 (art. 18) lascia alle Regioni il tempo per l'autorizzazione; i 20 giorni con silenzio-assenso (e il collaudo entro 20 giorni) ora sono indicati come regola della Sicilia (D.A. 20/12/2011 sul DM 332/1999). La lettera non attribuisce più i 20 giorni al DPCM. Fonte aggiunta: procedure dell'ASP Catania. Il testo del D.A. resta da leggere (DA-VERIFICARE-A-MANO.md).
 - Esenzione ticket per reddito: la scadenza del 31 marzo dell'anno dopo vale in tutta Italia (la scrivono ASL di regioni diverse), con proroghe decise da alcune Regioni. Fonti aggiunte: AUSL Piacenza, ASL Città di Torino.

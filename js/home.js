@@ -11,7 +11,7 @@ function card(href, icon, title, small) {
   return `<a class="btn choice" href="${esc(href)}"><span class="ico" aria-hidden="true">${icon}</span><span class="txt">${esc(title)}${small ? ` <small>${esc(small)}</small>` : ''}</span></a>`;
 }
 
-// Chi siamo in una riga sopra le scelte; il resto sotto. Con una regione sola: «Per ora solo in Sicilia».
+// Chi siamo in una riga sopra le scelte; il resto sotto. Con una regione sola: «Per ora solo in <regione>».
 // Con più regioni: quale si sta guardando e il link per cambiarla (la scelta è in Numeri utili).
 function intro() {
   const scelta = regioneSalvata() || regioneInfo();

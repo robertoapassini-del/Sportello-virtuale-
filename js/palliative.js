@@ -24,7 +24,7 @@ function sources() {
   const a = state.province ? asp() : null;
   const items = perRegione(rules.sources);
   if (a) { if (a.info_url) items.push({ label: `${a.name} – sito ufficiale`, url: a.info_url }); items.push(...a.sources); }
-  return [items, { verified: rules.last_verified, note: a ? 'I numeri della rete cure palliative della provincia sono ancora da raccogliere.' : '' }];
+  return [items, { verified: rules.last_verified, note: a && !(a.contacts || []).some((c) => c.topic === 'palliative') ? 'I numeri della rete cure palliative della provincia sono ancora da raccogliere.' : '' }];
 }
 
 const whatIs = () => `
@@ -40,7 +40,7 @@ const whatIs = () => `
     <li><strong>Chiedi al medico di famiglia o allo specialista</strong> di attivare le cure palliative. È lui che manda la richiesta alla rete cure palliative dell'${aslLabel()} (o all'hospice).</li>
     <li><strong>Se la persona è in ospedale</strong>, chiedi al reparto di attivarle prima delle dimissioni («dimissione protetta»).</li>
     <li><strong>Un medico della rete valuta</strong> (a casa o in ospedale) e si decide insieme: casa o hospice.</li>
-    <li><strong>L'attivazione deve essere rapida</strong>: di solito pochi giorni. Se passano più di ${rules.reminder_after_days} giorni, chiama di nuovo e sollecita.</li>
+    <li><strong>L'attivazione deve essere rapida</strong>: di solito pochi giorni. Se dopo ${rules.reminder_after_days} giorni nessuno si è fatto vivo, chiama di nuovo e sollecita.</li>
   </ol>
   <details class="card">
     <summary>Il dolore non deve essere sopportato</summary>

@@ -25,8 +25,8 @@ const howItWorks = () => `
     <li><strong>Non si può fare ricorso all'INPS</strong> con una lettera: si va dal giudice. Serve un <strong>avvocato</strong>.</li>
     <li>L'avvocato chiede al Tribunale una <strong>nuova visita</strong> con un medico del giudice (si chiama «accertamento tecnico preventivo», ATP).</li>
     <li>Se il medico del giudice ti dà ragione, l'INPS deve adeguarsi, con gli arretrati.</li>
-    <li><strong>Se il reddito della famiglia è basso</strong> (sotto circa ${formatEuro(rules.gratuito_patrocinio_income)} l'anno), l'avvocato lo paga lo Stato: chiedi il «gratuito patrocinio».</li>
-    <li><strong>Se perdi la causa</strong> e il reddito della famiglia è sotto circa ${formatEuro(rules.no_legal_costs_income)} l'anno, <strong>non paghi le spese legali</strong> dell'INPS. Basta una dichiarazione dentro il ricorso: la prepara l'avvocato.</li>
+    <li><strong>Se il reddito della famiglia è basso</strong> (sotto ${formatEuro(rules.gratuito_patrocinio_income)} l'anno), l'avvocato lo paga lo Stato: chiedi il «gratuito patrocinio».</li>
+    <li><strong>Se perdi la causa</strong> e il reddito della famiglia è sotto ${formatEuro(rules.no_legal_costs_income)} l'anno, <strong>non paghi le spese legali</strong> dell'INPS. Basta una dichiarazione dentro il ricorso: la prepara l'avvocato.</li>
   </ol>
   <h2>Cosa portare al patronato o all'avvocato</h2>
   <ul class="icon-list">

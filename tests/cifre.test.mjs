@@ -41,13 +41,13 @@ const ECCEZIONI = {
   'ricorso-invalidita': [
     { testo: /circa 13\.660 euro$/, perche: 'gratuito patrocinio arrotondato alle decine', valore: (d) => Math.round(d['rules-ricorso'].gratuito_patrocinio_income / 10) * 10, unita: '€' },
     { testo: /circa 27\.300 euro$/, perche: 'doppio del gratuito patrocinio arrotondato alle centinaia', valore: (d) => Math.round(d['rules-ricorso'].no_legal_costs_income / 100) * 100, unita: '€' },
-    { testo: /devono dartela entro 7 giorni$/, perche: 'copia della cartella clinica: sta nel modulo cartella-clinica', valore: (d, tutti) => tutti['rules-cartella'].deadline_days, unita: 'giorni' },
+    { testo: /devono darteli entro 7 giorni$/, perche: 'copia della cartella clinica: sta nel modulo cartella-clinica', valore: (d, tutti) => tutti['rules-cartella'].deadline_days, unita: 'giorni' },
   ],
   'fascicolo-e-ricetta': [
     { testo: /la copia ti spetta entro 7 giorni$/, perche: 'copia della cartella clinica: sta nel modulo cartella-clinica', valore: (d, tutti) => tutti['rules-cartella'].deadline_days, unita: 'giorni' },
   ],
   'legge-104': [
-    { testo: /poco sopra i 57\.000 euro$/, perche: 'tetto 2025 del congedo straordinario, arrotondato: il valore esatto è nelle circolari INPS di gennaio, non nei dati (cambia ogni anno)' },
+    { testo: /hanno compiuto 65 anni$/, perche: 'permessi 104 al parente di terzo grado: età fissata dall\'art. 33 c. 3 L. 104/1992, non una cifra del modulo' },
   ],
   'medico-famiglia': [
     { testo: /a Trapani, dopo un cambio bisogna aspettare 30 giorni$/, perche: 'regola della sola ASP Trapani, scritta nel testo di regioni/sicilia/asp.json (scelta_medico)' },
