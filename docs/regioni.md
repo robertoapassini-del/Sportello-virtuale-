@@ -130,9 +130,16 @@ sempre riconoscibile: titolo «In Sicilia» (il nome della regione), bordo color
 1. **Fatto in questa modifica.** Dati siciliani in `data/regioni/sicilia/` con `data/regioni/index.json`;
    `loadRegional` in `js/common.js`; `tools/pagine.mjs`, test e strumenti aggiornati; «Sicilia» tolto dal marchio.
    Il sito funziona esattamente come prima.
-2. **Schermata della regione.** `regione()` legge `localStorage`; schermata «In quale regione abiti?» in
-   `js/flow.js` (usata da tutti i moduli); link «Cambia regione»; nota nella privacy. Con una sola regione attiva la
-   schermata si salta da sola, quindi anche questo passo non cambia niente per chi usa il sito oggi.
+2. **Fatto.** Schermata della regione. `regione()` legge `localStorage` (`gs-regione`) e torna la regione salvata
+   se è attiva, altrimenti il `default` dell'indice; `setRegione(id)` la salva. In `js/flow.js`: `withRegion(screens)`
+   mette «In quale regione abiti?» al posto della schermata `province` finché la scelta non c'è (lo fa da solo
+   `createFlow`; liste d'attesa e invalidità lo chiamano a mano), `regionAction()` gestisce i clic, `changeRegionLink()`
+   è il link «Non abiti in Sicilia? Cambia regione» nella schermata della provincia e in quelle dopo. Numeri utili
+   usa gli stessi pezzi. Nota nella privacy. Con una sola regione attiva né la schermata né il link si vedono, quindi
+   il sito è uguale a prima. Se si sceglie una regione diversa da quella dei dati già caricati, per ora la pagina si
+   ricarica (si riparte dall'inizio del modulo, la regione resta salvata): al passo 3 i dati si potranno ricaricare
+   senza ricaricare la pagina. Le regioni non attive sono in grigio e non si possono scegliere, con un invito a
+   scriverci; la parte nazionale per chi le sceglie arriva al passo 3.
 3. **Un modulo multi‑regione per prova**: Numeri utili o Esenzione ticket (pochi dati regionali), con la seconda
    regione. Si rivedono i testi: `asl_label` al posto di «ASP», blocco regionale ben separato dal testo nazionale.
 4. **Le altre regioni**, una alla volta, con la stessa regola dei numeri (`docs/regola-numeri.md`): solo fonti

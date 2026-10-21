@@ -41,12 +41,52 @@ export async function loadJSON(path) {
   return res.json();
 }
 
-// Regione in uso. Per ora solo la Sicilia; in futuro la sceglie l'utente e il browser la ricorda
-// (docs/regioni.md). I dati di ogni regione sono in data/regioni/<id>/ (elenco in data/regioni/index.json).
+// Regione in uso (docs/regioni.md). La sceglie chi usa il sito e il browser la ricorda in
+// localStorage («gs-regione»): è l'unica cosa che il sito ricorda, mai un dato sanitario.
+// I dati di ogni regione sono in data/regioni/<id>/ (elenco in data/regioni/index.json).
 export const REGIONE_DEFAULT = 'sicilia';
-export function regione() { return REGIONE_DEFAULT; }
+const REGIONE_KEY = 'gs-regione';
+let indice = null;
+let indiceLoading = null;
+let regioneCaricata = null;
+
+// Carica l'elenco delle regioni una volta sola. Se non arriva, si usa la regione predefinita.
+export function loadRegioni(root = '') {
+  if (!indiceLoading) {
+    indiceLoading = loadJSON(`${root}data/regioni/index.json`)
+      .catch(() => ({ default: REGIONE_DEFAULT, regioni: [] }))
+      .then((d) => { indice = d; return d; });
+  }
+  return indiceLoading;
+}
+
+// La scelta salvata nel browser. Il browser può non avere localStorage o bloccarlo.
+function savedRegione() {
+  try { return localStorage.getItem(REGIONE_KEY); } catch { return null; }
+}
+export function setRegione(id) {
+  try { localStorage.setItem(REGIONE_KEY, id); } catch { /* non si ricorda: pazienza */ }
+}
+
+// Tutte le regioni dell'indice (vuoto finché l'indice non è caricato) e quelle con i dati.
+export const regioni = () => (indice ? indice.regioni : []);
+export const regioniAttive = () => regioni().filter((r) => r.attiva);
+// Vero se la regione salvata è una di quelle attive.
+export const regioneScelta = () => regioniAttive().some((r) => r.id === savedRegione());
+export function regione() {
+  if (!indice) return REGIONE_DEFAULT;
+  return regioneScelta() ? savedRegione() : (indice.default || REGIONE_DEFAULT);
+}
+// La voce dell'indice della regione in uso (nome, asl_label…).
+export const regioneInfo = () => regioni().find((r) => r.id === regione()) || { id: regione(), name: 'Sicilia' };
+// La regione di cui la pagina ha caricato i dati: se l'utente ne sceglie un'altra, la pagina si ricarica.
+export const regioneDeiDati = () => regioneCaricata;
 export const regionalPath = (root, name) => `${root}data/regioni/${regione()}/${name}.json`;
-export const loadRegional = (root, name) => loadJSON(regionalPath(root, name));
+export async function loadRegional(root, name) {
+  await loadRegioni(root);
+  regioneCaricata = regione();
+  return loadJSON(regionalPath(root, name));
+}
 
 // L'ufficio a cui chiedere conferma dipende dal modulo (js/controlla.js): la cartella della pagina.
 export function disclaimer(date) {

@@ -1,6 +1,9 @@
 // Navigazione comune ai moduli: schermate, Indietro, Ricomincia, Ascolta,
 // riquadri Aiuto e Fonti. Le risposte restano in memoria finché la pagina è aperta.
-import { esc, helpBox, listenButton, speakScreen, stopSpeaking, sourcesBox, choice, moreHelp, hideHeadingEmoji, enableStart } from './common.js';
+import {
+  esc, helpBox, listenButton, speakScreen, stopSpeaking, sourcesBox, choice, moreHelp, hideHeadingEmoji, enableStart,
+  MAINTAINER_EMAIL, regioni, regioniAttive, regioneScelta, regioneInfo, regioneDeiDati, setRegione,
+} from './common.js';
 
 export { choice };
 
@@ -63,15 +66,82 @@ export function createNav({ first, show }) {
   };
 }
 
+// ---------- Regione ----------
+// «In quale regione abiti?» (docs/regioni.md, sezione 2). Viene prima della domanda sulla
+// provincia: la schermata della provincia mostra questa scelta al suo posto se ci sono più
+// regioni attive e la scelta non è ancora salvata, oppure dopo «Cambia regione».
+// Con una sola regione attiva non si vede mai: il modulo va dritto alla provincia.
+let askRegion = false;
+export const needsRegion = () => askRegion || (regioniAttive().length > 1 && !regioneScelta());
+
+// I pulsanti delle regioni attive e, sotto, le altre in grigio. Usati anche da Numeri utili.
+export function regionChoices() {
+  const byName = (a, b) => a.name.localeCompare(b.name, 'it');
+  const on = regioniAttive().sort(byName);
+  const off = regioni().filter((r) => !r.attiva).sort(byName);
+  const mail = `mailto:${MAINTAINER_EMAIL}?subject=${encodeURIComponent('La mia regione su Guida Sanità')}`;
+  return `<div class="grid2">${on.map((r) => `<button type="button" class="btn choice" data-action="region" data-region="${esc(r.id)}">
+      <span class="txt">${esc(r.name)}</span></button>`).join('')}</div>
+    ${off.length ? `<p class="say">Queste regioni non ci sono ancora:</p>
+    <ul class="regioni-off">${off.map((r) => `<li>${esc(r.name)} <small>non ancora disponibile</small></li>`).join('')}</ul>
+    <p class="muted">La tua regione non c'è? <a href="${esc(mail)}">Scrivici</a>: ci aiuti a scegliere quale aggiungere.</p>` : ''}`;
+}
+
+const regionScreen = () => ({
+  html: `<h1>📍 In quale regione abiti?</h1>
+    <p class="say">Ogni regione ha i suoi uffici e i suoi numeri. Scegli la tua.</p>
+    ${regionChoices()}`,
+});
+
+// Link piccolo «Non abiti in Sicilia? Cambia regione» per le schermate con dati regionali.
+// Con una sola regione attiva non c'è niente da cambiare e il link non si vede.
+export function changeRegionLink() {
+  if (regioniAttive().length < 2) return '';
+  return `<p class="cambia-regione no-say"><button type="button" class="link" data-action="change-region">Non abiti in ${esc(regioneInfo().name)}? Cambia regione</button></p>`;
+}
+
+// Mette la scelta della regione davanti alla schermata della provincia (name).
+// Torna una funzione per il disegno: (current, state) → il link «Cambia regione»
+// se la schermata mostra dati regionali (la provincia o le schermate dopo).
+export function withRegion(screens, name = 'province') {
+  const inner = screens[name];
+  if (!inner) return () => '';
+  screens[name] = () => (needsRegion() ? regionScreen() : inner());
+  return (current, state = {}) => {
+    if (current !== name) askRegion = false;
+    return !needsRegion() && (current === name || state.province) ? changeRegionLink() : '';
+  };
+}
+
+// Clic su una regione o su «Cambia regione». nav: { current, go, render }. Vero se gestito.
+// Se la regione scelta non è quella dei dati già caricati, la pagina si ricarica con i dati giusti.
+export function regionAction(btn, nav, name = 'province') {
+  if (btn.dataset.action === 'region') {
+    setRegione(btn.dataset.region);
+    askRegion = false;
+    if (regioneDeiDati() && btn.dataset.region !== regioneDeiDati()) location.reload();
+    else nav.render();
+    return true;
+  }
+  if (btn.dataset.action === 'change-region') {
+    askRegion = true;
+    if (nav.current === name) nav.render();
+    else nav.go(name);
+    return true;
+  }
+  return false;
+}
+
 // person (facoltativo): i dati per le lettere, cancellati anche loro con «Ricomincia».
 export function createFlow({ app, screens, state, sources, first = 'intro', person }) {
   const nav = createNav({ first, show: (current) => paint(current) });
+  const regionLink = withRegion(screens);
 
   function paint(current) {
     stopSpeaking();
     const s = screens[current]();
     const backBtn = current === first ? '' : '<button type="button" class="back" data-action="back">← Torna indietro</button>';
-    app.innerHTML = `<div class="topbar">${backBtn}${listenButton()}</div>${s.html}${moreHelp()}${helpBox()}${sourcesBox(...sources())}`;
+    app.innerHTML = `<div class="topbar">${backBtn}${listenButton()}</div>${s.html}${regionLink(current, state)}${moreHelp()}${helpBox()}${sourcesBox(...sources())}`;
     enableStart(app);
     hideHeadingEmoji(app);
     if (s.mount) s.mount();
@@ -90,6 +160,7 @@ export function createFlow({ app, screens, state, sources, first = 'intro', pers
     if (btn.dataset.action === 'back') return back();
     if (btn.dataset.action === 'restart') return restart();
     if (btn.dataset.action === 'listen') return speakScreen(app);
+    if (regionAction(btn, nav)) return;
     if (btn.dataset.set) Object.assign(state, JSON.parse(btn.dataset.set));
     if (btn.dataset.go) go(btn.dataset.go);
   });

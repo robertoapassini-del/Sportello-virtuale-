@@ -10,7 +10,7 @@ import { noPecBox,
   personFields, reportErrorHref, generalContact, choice, helpBox, listenButton, speakScreen, stopSpeaking, sourcesBox, moreHelp, hideHeadingEmoji, enableStart,
 } from './common.js';
 import { RICETTA_SVG } from './ricetta-svg.js';
-import { createNav } from './flow.js';
+import { createNav, withRegion, regionAction } from './flow.js';
 
 const ROOT = '../';
 const app = document.getElementById('app');
@@ -34,7 +34,7 @@ function paint(current) {
   stopSpeaking();
   const s = screens[current]();
   const backBtn = current === 'intro' ? '' : '<button type="button" class="back" data-action="back">← Torna indietro</button>';
-  app.innerHTML = `<div class="topbar">${backBtn}${listenButton()}</div>${s.html}${moreHelp()}${helpBox()}${screenSources()}`;
+  app.innerHTML = `<div class="topbar">${backBtn}${listenButton()}</div>${s.html}${regionLink(current, state)}${moreHelp()}${helpBox()}${screenSources()}`;
   enableStart(app);
   hideHeadingEmoji(app);
   if (s.mount) s.mount();
@@ -49,6 +49,7 @@ app.addEventListener('click', (e) => {
   if (btn.dataset.action === 'back') return back();
   if (btn.dataset.action === 'restart') return restart();
   if (btn.dataset.action === 'listen') return speakScreen(app);
+  if (regionAction(btn, nav)) return;
   if (btn.dataset.set) Object.assign(state, JSON.parse(btn.dataset.set));
   if (btn.dataset.go) go(btn.dataset.go);
 });
@@ -530,6 +531,9 @@ const screens = {
     };
   },
 };
+
+// Prima della provincia, la regione (se ce n'è più di una). Link «Cambia regione» nelle schermate con dati regionali.
+const regionLink = withRegion(screens);
 
 function updateLetter(a, official) {
   const today = todayISO();
