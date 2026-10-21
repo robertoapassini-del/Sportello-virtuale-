@@ -81,7 +81,7 @@ for (const reg of regioni.regioni.filter((r) => r.attiva)) {
       Object.assign(voce, { http: r.http, finale: r.finale && r.finale !== url ? r.finale : undefined, certificato: r.certificato, errore: r.errore });
       if (r.http === 200 && /html/i.test(r.type || '')) {
         const testo = toText(r.body);
-        const titolo = (r.body.match(/<title[^>]*>([\s\S]*?)<\/title>/i) || [, ''])[1].replace(/\s+/g, ' ').trim();
+        const titolo = toText((r.body.match(/<title[^>]*>([\s\S]*?)<\/title>/i) || [, ''])[1]).replace(/\s+/g, ' ').trim();
         const nome = `${a.id}/${sha(url).slice(0, 12)}.txt`;
         fs.writeFileSync(path.join(dir, nome), `${url}\n${titolo}\n\n${testo}\n`);
         voce.file = nome; voce.titolo = titolo; voce.sha = sha(testo); voce.caratteri = testo.length;
