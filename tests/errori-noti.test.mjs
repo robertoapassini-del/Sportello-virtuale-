@@ -55,6 +55,8 @@ const ERRORI = [
   [/tutto\s*(<strong>)?\s*gratuit/i, 'ADI: gratuite solo le cure sanitarie (DPCM 2017 art. 22)', /ricovero è <strong>tutto gratuito|tutto gratuito per più di 29/],
   [/Non andare dal privato a pagamento prima di (aver )?mandat[oa] la richiesta[.:]/, "liste d'attesa: dal privato solo dopo la richiesta e solo se l'ASL lo scrive (rilettura del 21/10/2026)"],
   [/costo di riproduzione/, 'cartella: la prima copia è gratis (art. 15 GDPR)'],
+  [/visita\/il procedimento/, 'sollecito INPS: nuova procedura = «il procedimento di valutazione di base doveva concludersi», vecchia oncologica = «la visita doveva svolgersi» (audit lettere del 21/10/2026)'],
+  [/termine indicato come ordinario/, 'sollecito INPS, vecchia procedura ordinaria: i 30 giorni sono indicativi, la lettera dice solo quanti giorni sono passati'],
   [/secondo i tempi indicati dalla normativa vigente/, 'i 30 giorni della vecchia procedura INPS sono indicativi (rules-invalidita.json): la lettera non li cita come norma'],
 ];
 

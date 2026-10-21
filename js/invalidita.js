@@ -330,7 +330,7 @@ const screens = {
           document.querySelectorAll('.delegate-note').forEach((li) => { li.hidden = !person.isDelegate; });
           const text = inpsReminder({
             provinceName: p.name, inpsPec: p.pec, person, certNumber: state.certNumber, certDate: state.certDate,
-            domandaDate: state.domandaDate, domandaNumber: state.domandaNumber, regime: r, deadlineInfo: deadline(), today: todayISO(),
+            domandaDate: state.domandaDate, domandaNumber: state.domandaNumber, regime: r, category: state.category, deadlineInfo: deadline(), today: todayISO(),
           });
           state.letterText = text;
           document.getElementById('preview').textContent = text;

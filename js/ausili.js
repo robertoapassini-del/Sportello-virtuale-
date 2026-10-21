@@ -1,7 +1,8 @@
 // Modulo 4 — ausili e protesi: «la carrozzina non arriva».
 // Prima la risposta: la pagina mostra subito la risposta scritta; il conto e il sollecito partono dal pulsante.
 // Regola: il tempo per autorizzare lo fissa la Regione (DPCM 12/01/2017, art. 17-19 e allegato 12). Il conto si fa solo per la Sicilia
-// (si arriva scegliendo una provincia siciliana): 20 giorni, poi silenzio-assenso. Non chiediamo mai la malattia.
+// (si arriva scegliendo una provincia siciliana): 20 giorni, poi silenzio-assenso (la lettera non lo cita finché
+// il D.A. 20/12/2011 non è letto: chiede solo l'autorizzazione senza altro ritardo). Non chiediamo mai la malattia.
 import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween, art } from './engine.js';
 import { ausiliReminder, mailtoHref } from './letters.js';
 import { noPecBox,
@@ -174,7 +175,7 @@ const screens = {
           ${personFields(person, 'La persona che ha bisogno dell\'ausilio')}
         </form>
         <h2>📄 Ecco il tuo sollecito</h2>
-        <p class="muted">La lettera usa le parole degli uffici. In breve dice: «I ${rules.authorization_days} giorni sono passati, l'autorizzazione vale, consegnate».</p>
+        <p class="muted">La lettera usa le parole degli uffici. In breve dice: «I ${rules.authorization_days} giorni sono passati: autorizzate e consegnate senza altro ritardo».</p>
         <div id="preview" class="letter"></div>
         ${letterButtons()}
         <p id="send-hint"></p>

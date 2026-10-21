@@ -178,6 +178,62 @@ test('letters fill in the facts', () => {
   assert.ok(mailtoHref('a@b.it', 'Oggetto è', 'ciao').startsWith('mailto:a@b.it?subject=Oggetto%20%C3%A8&body=ciao'));
 });
 
+test('lettere lette da chi le riceve (audit del 21/10/2026)', async () => {
+  const { cartellaReminder, ausiliReminder, tutelaReminder } = await import('../js/letters.js');
+  const person = { fullName: 'Maria Rossi', city: 'Palermo' };
+  const today = '2026-10-21';
+  const inps = (o) => inpsReminder({ provinceName: 'Palermo', person, certNumber: 'X1', certDate: '2026-06-01', domandaDate: '2026-06-10', today, ...o });
+  // Nuova procedura: perché vale il termine (oncologici, minori) e cosa doveva concludersi.
+  const onc = inps({ regime: 'new', category: 'oncological', deadlineInfo: { legal: 'art. 6 D.Lgs. 62/2024', days: 15, deadline: '2026-06-16' } });
+  assert.match(onc, /trattandosi di persona con patologia oncologica, come indicato nel certificato,/);
+  assert.match(onc, /il procedimento di valutazione di base doveva concludersi entro 15 giorni dalla trasmissione del certificato/);
+  const min = inps({ regime: 'new', category: 'minor', deadlineInfo: { legal: 'art. 6 D.Lgs. 62/2024', days: 30, deadline: '2026-07-01' } });
+  assert.match(min, /trattandosi di minore,/);
+  const adult = inps({ regime: 'new', category: 'other', deadlineInfo: { legal: 'art. 6 D.Lgs. 62/2024', days: 90, deadline: '2026-08-30' } });
+  assert.doesNotMatch(adult, /trattandosi/);
+  // Vecchia procedura oncologica: la visita entro 15 giorni dalla domanda.
+  const oldOnc = inps({ regime: 'old', category: 'oncological', deadlineInfo: { legal: 'art. 6 c. 3-bis D.L. 4/2006', days: 15, deadline: '2026-06-25' } });
+  assert.match(oldOnc, /trattandosi di persona con patologia oncologica[^]*la visita doveva svolgersi entro 15 giorni dalla domanda/);
+  // Vecchia procedura ordinaria: niente termine «ordinario», una sola riga sulla convocazione.
+  const old = inps({ regime: 'old', category: 'minor', deadlineInfo: { legal: null, days: 30, deadline: '2026-07-10' } });
+  assert.match(old, /sono trascorsi 133 giorni dalla presentazione della domanda senza che sia pervenuta alcuna convocazione;/);
+  assert.doesNotMatch(old, /termine indicato come ordinario|trattandosi/);
+  assert.equal(old.match(/non è pervenuta alcuna convocazione/g)?.length ?? 0, 0);
+  assert.equal(old.match(/pervenuta alcuna convocazione/g).length, 1);
+  assert.equal(onc.match(/non è pervenuta alcuna convocazione/g).length, 1);
+
+  // Percorso di tutela: oggetto con prestazione, ricetta e classe; termini con le date.
+  const t = tutelaLetter({ aspName: 'Palermo', person, service: 'Ecografia addome', nre: '190A1', cls: 'D (visita)', maxDays: 30,
+    noDateOffered: true, requestDate: '2026-10-01', prescriptionDate: '2026-09-28', callbackDays: 10, callbackDeadline: '2026-10-11', today });
+  assert.match(t, /Oggetto: Richiesta di attivazione del percorso di tutela – "Ecografia addome", ricetta n\. 190A1, classe D \(visita\)/);
+  assert.match(t, /ricetta n\. 190A1 del 28\/09\/2026/);
+  assert.match(t, /entro i 10 giorni previsti dal PNGLA per la classe D \(visita\)\s+\(termine scaduto l'11\/10\/2026\)/);
+  const tu = tutelaLetter({ aspName: 'Palermo', person, service: 'Visita', nre: '', cls: 'U', maxDays: 3, noDateOffered: true, requestDate: '2026-10-19', today });
+  assert.match(tu, /ricetta n\./);
+  assert.doesNotMatch(tu, /ricontattato|PNGLA per la classe/);
+  const tb = tutelaLetter({ aspName: 'Palermo', person, service: 'Visita', nre: '190A1', cls: 'B', maxDays: 10,
+    bookingDate: '2026-10-01', appointmentDate: '2026-11-20', deadline: '2026-10-11', today });
+  assert.match(tb, /oltre il tempo massimo previsto\s+\(termine scaduto l'11\/10\/2026\)/);
+
+  // Sollecito: protocollo della prima richiesta e libera professione con il solo ticket.
+  const r = tutelaReminder({ aspName: 'Palermo', person, service: 'Visita', nre: '190A1', cls: 'B', firstRequestDate: '2026-10-01', today });
+  assert.match(r, /protocollo n\. ___\)/);
+  assert.match(r, /libero-professionale intramurario con il solo pagamento del ticket \(D\.Lgs\. 124\/1998, art\. 3, c\. 13\)/);
+  assert.match(tutelaReminder({ aspName: 'Palermo', person, cls: 'B', firstRequestDate: '2026-10-01', protocol: 'PG/123', today }), /protocollo n\. PG\/123/);
+
+  // Ausili: il silenzio-assenso non si afferma finché il D.A. siciliano non è letto.
+  const a = ausiliReminder({ aspName: 'Palermo', person, device: 'carrozzina', requestDate: '2026-09-20', deadline: '2026-10-10', today });
+  assert.doesNotMatch(a, /si intende concessa|silenzio-assenso/);
+  assert.match(a, /in Sicilia: direttive regionali sul DM 332\/1999/);
+  assert.match(a, /senza ulteriore ritardo/);
+
+  // Cartella: periodo e reparto da scrivere a penna; «copia della cartella clinica».
+  const c = cartellaReminder({ structure: 'Ospedale Civico', person, requestDate: '2026-10-01', what: 'cartella clinica', episode: '', deadline: '2026-10-08', today });
+  assert.match(c, /copia della cartella clinica relativa a ____________ \(periodo e reparto\)/);
+  assert.doesNotMatch(c, /copia di cartella/);
+  assert.match(cartellaReminder({ person, what: 'referti o immagini', episode: 'visita del 5 settembre', today }), /copia dei referti o delle immagini relativi a visita del 5 settembre/);
+});
+
 test('i testi mostrati agli utenti non contengono note interne (TODO)', () => {
   const shown = (a) => JSON.stringify([a.how_to, a.documents_required, a.what_next, a.notes, a.details, a.fast_track, a.phones, a.scelta_medico]);
   for (const a of asp.asl) {

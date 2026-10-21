@@ -414,6 +414,8 @@ const screens = {
             <input id="f-service" name="service" type="text" value="${esc(state.service || '')}">
             <label for="f-nre">Numero della ricetta<span class="hint">${regione() === 'sicilia' ? 'Il codice lungo in alto, che inizia con 190…' : 'Il codice lungo in alto (NRE)'}</span></label>
             <input id="f-nre" name="nre" type="text" value="${esc(state.nre || '')}" autocapitalize="characters">
+            <label for="f-prescriptionDate">Data della ricetta<span class="hint">Se la trovi sulla ricetta</span></label>
+            <input id="f-prescriptionDate" name="prescriptionDate" type="date" value="${esc(state.prescriptionDate || '')}" max="${todayISO()}">
           </fieldset>
         </form>
         <h2>${official ? '📝 Cosa scrivere nel modulo' : '📄 Ecco la tua lettera'}</h2>
@@ -440,7 +442,8 @@ const screens = {
         const update = () => {
           const v = readForm(form);
           state.service = v.service; state.nre = v.nre;
-          delete v.service; delete v.nre;
+          state.prescriptionDate = parseDate(v.prescriptionDate) !== null && daysBetween(v.prescriptionDate, todayISO()) >= 0 ? v.prescriptionDate : '';
+          delete v.service; delete v.nre; delete v.prescriptionDate;
           Object.assign(person, v);
           form.querySelector('.delegate-fields').hidden = !person.isDelegate;
           document.querySelectorAll('.delegate-note').forEach((li) => { li.hidden = !person.isDelegate; });
@@ -494,6 +497,8 @@ const screens = {
             <label for="firstRequestDate">Che giorno hai mandato la prima richiesta?</label>
             <input type="date" id="firstRequestDate" name="firstRequestDate" value="${esc(state.firstRequestDate)}" max="${today}" aria-describedby="rem-form-error">
             <p class="field-error" id="rem-form-error" role="alert" hidden></p>
+            <label for="f-reqProtocol">Numero di protocollo della richiesta<span class="hint">Se te l'hanno dato</span></label>
+            <input id="f-reqProtocol" name="reqProtocol" type="text" value="${esc(state.reqProtocol || '')}">
           </form>
           <div id="reminder" class="letter"></div>
           <div class="btn-row three">
@@ -511,6 +516,7 @@ const screens = {
           const v = readForm(document.getElementById('rem-form'));
           const ok = parseDate(v.firstRequestDate) !== null && daysBetween(v.firstRequestDate, today) >= 0;
           if (ok) state.firstRequestDate = v.firstRequestDate;
+          state.reqProtocol = v.reqProtocol;
           const err = document.getElementById('rem-form-error');
           err.hidden = ok;
           err.textContent = ok ? '' : `Scrivi una data giusta, non dopo oggi. Per ora usiamo ${art('il', state.firstRequestDate)}${formatIt(state.firstRequestDate)}.`;
@@ -518,7 +524,7 @@ const screens = {
           const text = tutelaReminder({
             ente: aslIntestazione(),
             aspName: a.province, aspAddress: a.send_to || a.pec || '', person, service: state.service, nre: state.nre,
-            cls: classText(), firstRequestDate: state.firstRequestDate, today,
+            cls: classText(), firstRequestDate: state.firstRequestDate, protocol: state.reqProtocol, today,
           });
           state.reminderText = text;
           document.getElementById('reminder').textContent = text;
@@ -528,6 +534,8 @@ const screens = {
             `Buongiorno,\nin allegato il sollecito firmato.\n\nCordiali saluti\n${person.fullName || ''}`);
         };
         document.getElementById('rem-form').addEventListener('change', update);
+        document.getElementById('f-reqProtocol').addEventListener('input', update);
+        document.getElementById('rem-form').addEventListener('submit', (e) => { e.preventDefault(); update(); });
         update();
         document.getElementById('rcopy-btn').addEventListener('click', (e) => copyText(state.reminderText, e.currentTarget));
         document.getElementById('rpdf-btn').addEventListener('click', () => printText(state.reminderText));
@@ -562,13 +570,17 @@ function updateLetter(a, official) {
     return;
   }
 
+  const noDate = state.cup === 'none';
+  const cb = noDate ? callbackDeadline(rules, { cls: state.cls, kind: state.kind, requestDate: state.requestDate, today }) : null;
   const text = tutelaLetter({
     ente: aslIntestazione(),
     aspName: a.province,
     aspAddress: a.send_to || a.pec || '',
     person, service: state.service, nre: state.nre, cls: classText(), maxDays: limit(),
     bookingDate: state.bookingDate, appointmentDate: state.appointmentDate,
-    noDateOffered: state.cup === 'none', requestDate: state.requestDate, today,
+    noDateOffered: noDate, requestDate: state.requestDate, prescriptionDate: state.prescriptionDate,
+    deadline: !noDate && state.result ? state.result.deadline : null,
+    callbackDays: cb && cb.days, callbackDeadline: cb && cb.deadline, today,
   });
   state.letterText = text;
   preview.innerHTML = `<div class="letter">${esc(text)}</div>`;

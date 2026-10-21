@@ -25,3 +25,18 @@ jobs:
       - run: node tests/browser.cjs http://localhost:8080/
       - run: node tests/combinazioni.cjs http://localhost:8080/
       - run: node tests/robustezza.cjs http://localhost:8080/
+  # I dati regionali contro le copie notturne delle pagine ufficiali (branch copie-siti, tools/copie.mjs).
+  # Non blocca le PR: le pagine ufficiali cambiano di notte. Regole in docs/protocollo-test.md.
+  copie:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          ref: copie-siti
+          path: copie-siti
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node tools/confronta-copie.mjs copie-siti/copie

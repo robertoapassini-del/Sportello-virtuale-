@@ -54,6 +54,10 @@ e 9; dall'estero ne funzionavano solo 2. Quindi:
   mostrato dal motore di ricerca (`proof: "estratto"`).
 - Una pagina che dall'Italia risponde **404 (non trovata)** è un segnale di possibile chiusura o trasloco:
   cerca subito le notizie.
+- Le copie in testo delle pagine ufficiali, fatte ogni notte dal server in Italia (branch `copie-siti`), si
+  confrontano con i dati con `node tools/confronta-copie.mjs <cartella-copie> <regione>`. Un numero che non è nella
+  copia del suo `url` va ricontrollato, non tolto a occhi chiusi: alcune pagine mostrano i recapiti solo con
+  JavaScript (per esempio i «Mostra dettagli» dell'ASP di Enna) e la copia non li ha.
 
 ## 3. Ogni quanto
 

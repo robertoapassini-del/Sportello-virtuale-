@@ -40,6 +40,9 @@ const regexNumero = (numero) => {
 };
 // Per cercare le email si tolgono gli spazi strani e si confronta in minuscolo.
 const normEmail = (s) => s.toLowerCase().replace(/\s+/g, '');
+// Lo stesso indirizzo scritto con o senza la barra finale è la stessa pagina.
+const normUrl = (u) => String(u).trim().replace(/#.*$/, '').replace(/\/+$/, '');
+const host = (u) => { try { return new URL(u).hostname.replace(/^www\./, '').toLowerCase(); } catch { return null; } };
 
 let totale = 0;
 const riepilogo = [];
@@ -55,8 +58,14 @@ for (const reg of regioni) {
   } else {
     const dati = leggi(fileDati);
     const pagine = leggi(fileIndice).pagine || [];
+    // Una pagina si trova col suo indirizzo o con quello finale dopo i redirect, con o senza la barra finale.
     const perUrl = new Map();
-    for (const p of pagine) perUrl.set(`${p.asl}\t${p.url}`, p);
+    for (const p of pagine) {
+      for (const u of [p.url, p.finale].filter(Boolean)) {
+        const k = normUrl(u);
+        if (!perUrl.has(k) || (!perUrl.get(k).file && p.file)) perUrl.set(k, p);
+      }
+    }
     const cache = new Map();
     const testo = (p) => {
       if (!p || !p.file) return null;
@@ -69,7 +78,7 @@ for (const reg of regioni) {
 
     for (const a of dati.asl || []) {
       const dove = `${a.id}`;
-      const copia = (url) => perUrl.get(`${a.id}\t${url}`) || pagine.find((p) => p.url === url);
+      const copia = (url) => perUrl.get(normUrl(url));
 
       // 3. url senza copia
       const urls = new Set();
@@ -93,8 +102,14 @@ for (const reg of regioni) {
         }
       }
 
-      // 2. pec e send_to in almeno una copia dell'azienda
-      const testiAzienda = pagine.filter((p) => p.asl === a.id).map(testo).filter(Boolean).map(normEmail);
+      // 2. pec e send_to in almeno una copia dell'azienda. Le copie di un'azienda sono quelle con il suo id
+      // nell'indice, oppure su uno dei suoi domini (site_url, official_domains, url dei dati): le regioni copiate
+      // da fonti.json hanno nell'indice id diversi da quelli dei dati (es. «asl-roma1» invece di «roma»).
+      const domini = new Set([...urls].map(host).filter(Boolean));
+      for (const d of a.official_domains || []) domini.add(String(d).replace(/^www\./, '').toLowerCase());
+      const suoDominio = (u) => { const h = host(u); return h && [...domini].some((d) => h === d || h.endsWith(`.${d}`)); };
+      const testiAzienda = pagine.filter((p) => p.asl === a.id || suoDominio(p.url) || suoDominio(p.finale || ''))
+        .map(testo).filter(Boolean).map(normEmail);
       for (const k of ['pec', 'send_to']) {
         const v = a[k];
         if (!v || typeof v !== 'string' || !v.includes('@')) continue;
