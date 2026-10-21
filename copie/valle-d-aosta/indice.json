@@ -1,18 +1,28 @@
 {
  "regione": "valle-d-aosta",
- "aggiornato": "2026-10-21T15:27:35.384Z",
+ "aggiornato": "2026-10-21T17:29:51.484Z",
  "pagine": [
   {
    "asl": "regione-valle-d-aosta",
    "url": "https://www.regione.vda.it/sanita/assistenza_sanitaria/default_i.asp",
    "controllata": "2026-10-21",
-   "http": 403
+   "http": 200,
+   "file": "regione-valle-d-aosta/c6b9597bfc34.txt",
+   "titolo": "Assistenza sanitaria - Regione autonoma Valle d'Aosta",
+   "sha": "0207c25838089e906b6bf1a96fb209d6657f63b35b8cf369efa78cafc84d154c",
+   "caratteri": 8379,
+   "cambiata": true
   },
   {
    "asl": "regione-valle-d-aosta",
    "url": "https://www.regione.vda.it/sanita/servizi_territorio/default_i.asp",
    "controllata": "2026-10-21",
-   "http": 403
+   "http": 200,
+   "file": "regione-valle-d-aosta/42b7a53b2616.txt",
+   "titolo": "Servizi sul territorio - Regione autonoma Valle d'Aosta",
+   "sha": "9023bfc5355547bfbe7a2a75ac90725c24ee965983dfecbf0a426f1ad32c009b",
+   "caratteri": 8333,
+   "cambiata": true
   },
   {
    "asl": "regione-valle-d-aosta",
@@ -23,7 +33,7 @@
    "titolo": "Emergenza sanitaria - Regione autonoma Valle d'Aosta",
    "sha": "59d02fa359b9ab13453c9e566714494db206c7974de22135c1ea785eb8989104",
    "caratteri": 7209,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-valle-d-aosta",
@@ -34,7 +44,7 @@
    "titolo": "Assistenza medica ai turisti - Regione autonoma Valle d'Aosta",
    "sha": "3e486633b601550266b93992bef292ef0646c2dfec8594121a467a053265500f",
    "caratteri": 5582,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-valle-d-aosta",
@@ -45,7 +55,7 @@
    "titolo": "Tempi di attesa - Regione autonoma Valle d'Aosta",
    "sha": "0aeeb7ffa57f48cdd586041690e6a5a486d75f294c8eb2dbac5e52b4fafa5a25",
    "caratteri": 8818,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-valle-d-aosta",
@@ -56,7 +66,7 @@
    "titolo": "Fascicolo Sanitario Elettronico - Regione Autonoma Valle d'Aosta",
    "sha": "ed0cdfa5daf117c4528725594ffcb2135f53ef1dd40d7a88a37ebaa1f9cffd74",
    "caratteri": 11785,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-valle-d-aosta",
@@ -67,7 +77,7 @@
    "titolo": "Risorse Informative - Regione Autonoma Valle d'Aosta",
    "sha": "d6575421948e9ca1244c2b712c4b1d16ca891e0ffe1dae06a4051bf5cc1d5986",
    "caratteri": 12815,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "inps-valle-d-aosta",
@@ -78,7 +88,7 @@
    "titolo": "Portale Inps - Aosta",
    "sha": "1ad74caed0b0de60a7b7469601c7cefb4f75cf9cf81307f802b690366535dc41",
    "caratteri": 43701,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "usl-vda",
@@ -87,8 +97,8 @@
    "http": 200,
    "file": "usl-vda/8c0e7f3ef863.txt",
    "titolo": "Home",
-   "sha": "9ef073b3a96320e2b543b33fc052488a6249d897f82720cc0db363ea7b9c11bd",
-   "caratteri": 11741,
+   "sha": "f8fd41cceafcf068d8edcc833299c996e53069fa0c95c71d5f33dac27ff432cb",
+   "caratteri": 10300,
    "cambiata": true
   },
   {
@@ -100,7 +110,7 @@
    "titolo": "Segreteria",
    "sha": "6f89534fb6f47f9486eced0e69cb46715e658f75453c699d2685771700f684cf",
    "caratteri": 3987,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "usl-vda",
@@ -111,7 +121,7 @@
    "titolo": "Informazioni generali",
    "sha": "54297e5bc54975c0b2ed79ebfcc58e07182187c717b8901207e6cf09f0442a01",
    "caratteri": 4815,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "usl-vda",
@@ -122,7 +132,7 @@
    "titolo": "Azienda",
    "sha": "e76dd078d179091fc85d761f3525d6ffcdf0b6565f3f01677f541c631d084c48",
    "caratteri": 5606,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "usl-vda",
@@ -133,7 +143,7 @@
    "titolo": "URP - Ufficio Relazioni con il Pubblico",
    "sha": "394f14ad018b033f1e1a2f7ce74bd7f62b597a47c23417c6aad10c3a9dd2fb4c",
    "caratteri": 8724,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "usl-vda",
@@ -144,7 +154,7 @@
    "titolo": "Presentare istanze e segnalazioni all’Urp",
    "sha": "a8f22500bb14141882fa4d9b78f06e366d3377d42a9f5dbe5120716c270ac89b",
    "caratteri": 4544,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "usl-vda",
@@ -155,7 +165,7 @@
    "titolo": "Cup - Centro unificato prenotazioni",
    "sha": "963c0ea102c70ecbc55f08ac8f83d6348bd61c0b837ff98ee213d336873c8ab7",
    "caratteri": 8243,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "usl-vda",
@@ -166,7 +176,7 @@
    "titolo": "Prenotare le prestazioni di riabilitazione sul territorio",
    "sha": "fd1a1da512222f64c14a5f9216b022634570955695d6d277300539ed4e0dcb66",
    "caratteri": 4322,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "usl-vda",
@@ -175,8 +185,8 @@
    "http": 200,
    "file": "usl-vda/0677d3b2c814.txt",
    "titolo": "Tempi di attesa",
-   "sha": "1362d352cd2c17d9d6b87a76143f5f558c7aa14284d7719615a5e172372434ae",
-   "caratteri": 7752,
+   "sha": "20d73abdf1a32486627e1c950407ce67f204db03c3bcb32f1798fa599fd671e0",
+   "caratteri": 7789,
    "cambiata": true
   },
   {
@@ -188,7 +198,7 @@
    "titolo": "Continuità assistenziale (ex “guardia medica”)",
    "sha": "622abab5870b4fd38ae333e5955ec91abb4dbe0eaa4b04d33f2114dc3dbdb4ee",
    "caratteri": 3913,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "usl-vda",
@@ -199,7 +209,7 @@
    "titolo": "Continuità dell’Assistenza pediatrica",
    "sha": "13b35b204945844a9212cf26d1fa25bd98bd814a9a77ccf60149add53ae624e4",
    "caratteri": 5553,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "usl-vda",
@@ -210,7 +220,7 @@
    "titolo": "Ambulatori ad accesso diretto",
    "sha": "611715995e7fab92f83c6b55607a5852a97976249fba8b4792508eb28517e7e8",
    "caratteri": 6350,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "usl-vda",
@@ -221,7 +231,7 @@
    "titolo": "Assistenza domiciliare (ADI)",
    "sha": "1b6d48c01de4a9a6b579fff42a50df655de8d10213afee2b70e284cc70215020",
    "caratteri": 5384,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "usl-vda",
@@ -232,7 +242,7 @@
    "titolo": "Area territoriale",
    "sha": "06e56b3edd01b58555c1ce3eb061df1f3e9186d4fe4f6aba2f6c31743baa29ee",
    "caratteri": 5178,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "usl-vda",
@@ -243,7 +253,7 @@
    "titolo": "Distretto 1",
    "sha": "67875881fc2ff95060a53956805a49660ca0c0338a74e7539d109aacd1e0955e",
    "caratteri": 10009,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "usl-vda",
@@ -254,7 +264,7 @@
    "titolo": "Distretto 2",
    "sha": "77e3a57878e08c6090ac4b84455aa454422946f23712e11b4577e8f764e624e3",
    "caratteri": 10159,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "usl-vda",
@@ -265,7 +275,7 @@
    "titolo": "Scelta e revoca del medico o del pediatra di famiglia",
    "sha": "9002c9458d9732298c0b7881328325a19a2f712793af8f56e9dc0eeec0205f31",
    "caratteri": 13724,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "usl-vda",
@@ -276,7 +286,7 @@
    "titolo": "Ufficio stampa",
    "sha": "ccb27a0ea61271587355fa18b93e9f629cde1405a828abff48d5ce7b268fa3da",
    "caratteri": 5204,
-   "cambiata": true
+   "cambiata": false
   }
  ]
 }
