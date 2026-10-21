@@ -2,7 +2,7 @@
 // Prima la risposta: la pagina mostra subito la risposta scritta; il conto della scadenza parte dal pulsante.
 // Non chiediamo né la malattia né il nome della medicina: solo la data di scadenza del piano.
 import { pianoStatus, todayISO, formatIt, parseDate, art } from './engine.js';
-import { esc, loadJSON, disclaimer, renderFooter, readForm, aslLabel } from './common.js';
+import { esc, loadJSON, loadRegioni, disclaimer, renderFooter, readForm, aslLabel } from './common.js';
 import { createFlow, choice, restartBtn, days, dateForm, showError } from './flow.js';
 
 const ROOT = '../';
@@ -28,7 +28,7 @@ const whatIs = () => `
     <ul class="clean">
       <li>Chiedi al reparto o al centro che ha fatto il piano: spesso hanno un'agenda riservata ai rinnovi.</li>
       <li>Chiedi al medico di famiglia di contattare lo specialista: a volte il piano si rinnova senza visita, con i referti recenti.</li>
-      <li>Chiedi alla farmacia dell'${aslLabel()} (servizio farmaceutico) se nella tua provincia esistono proroghe.</li>
+      <li>Chiedi alla farmacia dell'${aslLabel()} (servizio farmaceutico) se nella tua zona esistono proroghe.</li>
       <li>Non interrompere la cura da solo: parlane con il medico.</li>
     </ul>
   </details>`;
@@ -97,7 +97,8 @@ const screens = {
 let flow;
 (async function init() {
   renderFooter(ROOT);
-  try { rules = await loadJSON(`${ROOT}data/rules-piano.json`); } catch {
+  // L'elenco delle regioni serve a aslLabel(): ASP in Sicilia, ASL, ATS… altrove.
+  try { [rules] = await Promise.all([loadJSON(`${ROOT}data/rules-piano.json`), loadRegioni(ROOT)]); } catch {
     app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>'; return;
   }
   flow = createFlow({ app, screens, state, sources });

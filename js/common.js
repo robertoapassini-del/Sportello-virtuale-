@@ -94,10 +94,13 @@ export function regione() {
 }
 // La voce dell'indice della regione in uso (nome, asl_label…).
 export const regioneInfo = () => regioni().find((r) => r.id === regione()) || { id: regione(), name: 'Sicilia' };
-// Come si chiama l'azienda sanitaria nella regione in uso: ASP in Sicilia, ATS in Lombardia…
-export const aslLabel = () => regioneInfo().asl_label || 'ASP';
-// «in Sicilia», ma «nel Lazio», «nelle Marche» (campo «in» dell'indice).
-export const inRegione = (r = regioneInfo()) => r.in || `in ${r.name}`;
+// La regione di chi usa il sito, per i testi: quella scelta anche se non è ancora attiva (Campania, Veneto…);
+// se non ha scelto e le regioni sono più di una, nessuna (testi generici). Per i dati invece vale regione().
+const regioneUtente = () => regioneSalvata() || (regioniAttive().length > 1 ? null : regioneInfo());
+// Come si chiama l'azienda sanitaria nella regione dell'utente: ASP in Sicilia, ATS in Lombardia… (ASL se non si sa).
+export const aslLabel = () => (regioneUtente() || {}).asl_label || 'ASL';
+// «in Sicilia», ma «nel Lazio», «nelle Marche» (campo «in» dell'indice); «nella tua regione» se non si sa.
+export const inRegione = (r = regioneUtente()) => (r ? r.in || `in ${r.name}` : 'nella tua regione');
 // Come si scrive in testa a una lettera (Sicilia: «Azienda Sanitaria Provinciale di Palermo»).
 export const aslIntestazione = () => regioneInfo().asl_intestazione || aslLabel();
 // Pagine ufficiali della Regione usate nei moduli (data/regioni/index.json, «link»): fse, assessorato, dialisi.
@@ -200,7 +203,7 @@ export function renderFooter(root = '') {
   if (!el) return;
   el.innerHTML = `<div class="wrap">
     <p>🔒 <strong>Non salviamo niente.</strong> Quello che scrivi resta sul tuo telefono e si cancella quando chiudi la pagina.</p>
-    <p><strong>Guida Sanità è fatto da volontari. Non siamo l'${aslLabel()}, l'INPS né un altro ufficio pubblico.</strong> Diamo informazioni generali, non il parere di un avvocato o di un medico.</p>
+    <p><strong>Guida Sanità è fatto da volontari. Non siamo l'${regioneScelta() ? aslLabel() : 'azienda sanitaria (ASL)'}, l'INPS né un altro ufficio pubblico.</strong> Diamo informazioni generali, non il parere di un avvocato o di un medico.</p>
     <nav aria-label="Informazioni">
       <a href="${root}privacy.html">Privacy</a>
       <a href="${root}fonti.html">Da dove prendiamo le informazioni</a>
@@ -508,6 +511,7 @@ if (typeof document !== 'undefined') {
   });
   iconize(document.body);
   bandify();
+  document.documentElement.classList.add('pronto'); // ora la pagina si può vedere (css/style.css)
   new MutationObserver((changes) => {
     for (const c of changes) c.addedNodes.forEach((n) => iconize(n));
     bandify();

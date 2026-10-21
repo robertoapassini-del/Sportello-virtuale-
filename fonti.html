@@ -26,10 +26,10 @@
 <nav class="breadcrumb" aria-label="Sei qui"><div class="wrap"><ol><li><a href="./">Inizio</a></li></ol><a class="breadcrumb-back" href="./"><span aria-hidden="true">‹ </span>Inizio</a></div></nav>
 <main class="wrap" id="app" data-band>
 <h1>Da dove prendiamo le informazioni</h1>
-<p>Copiamo a mano le informazioni dai siti ufficiali delle ASP e dell'INPS. Per ogni ASP scriviamo il giorno in cui le abbiamo controllate. Le ricontrolliamo almeno ogni 3 mesi.</p>
+<p>Prendiamo le informazioni dai siti ufficiali delle aziende sanitarie (ASL, ASP, ATS…), delle Regioni e dell'INPS. Ogni numero ha la pagina ufficiale da cui viene e il giorno in cui l'abbiamo controllato. Li ricontrolliamo almeno ogni 3 mesi.</p>
 <h2>Le leggi</h2>
 <ul class="clean" id="laws-list"><li>Un momento…</li></ul>
-<h2>ASP e INPS</h2>
+<h2>Aziende sanitarie e INPS, regione per regione</h2>
 <div id="sources-list"><p>Un momento…</p></div>
 <p class="muted">Hai trovato un errore? <a href="mailto:info@guidasanita.it?subject=Segnala%20un%20errore">Scrivici</a>.</p>
 </main>
@@ -41,7 +41,7 @@
 </div>
 <!-- /condividi -->
 <footer class="site-footer" id="site-footer"><div class="wrap">
-<p><strong>Guida Sanità è fatto da volontari. Non siamo l'ASP, l'INPS né un altro ufficio pubblico.</strong> Diamo informazioni generali, non il parere di un avvocato o di un medico.</p>
+<p><strong>Guida Sanità è fatto da volontari. Non siamo l'azienda sanitaria (ASL), l'INPS né un altro ufficio pubblico.</strong> Diamo informazioni generali, non il parere di un avvocato o di un medico.</p>
 <nav aria-label="Informazioni">
 <a href="privacy.html">Privacy</a>
 <a href="fonti.html">Da dove prendiamo le informazioni</a>
@@ -54,19 +54,25 @@
 import { renderFooter, loadJSON, esc } from "./js/common.js";
 import { formatIt } from "./js/engine.js";
 renderFooter("");
-const [asp, inps, rules, rinv, rcar, raus, rese, rric, radi, rpia, rdom, rpal, rpre, rmed] = await Promise.all(["regioni/sicilia/asp", "regioni/sicilia/inps", "rules", "rules-invalidita", "rules-cartella", "rules-ausili", "rules-esenzione", "rules-ricorso", "rules-adi", "rules-piano", "rules-domiciliare", "rules-palliative", "rules-prevenzione", "rules-medico"].map((n) => loadJSON(`data/${n}.json`)));
+const [indice, rules, rinv, rcar, raus, rese, rric, radi, rpia, rdom, rpal, rpre, rmed] = await Promise.all(["regioni/index", "rules", "rules-invalidita", "rules-cartella", "rules-ausili", "rules-esenzione", "rules-ricorso", "rules-adi", "rules-piano", "rules-domiciliare", "rules-palliative", "rules-prevenzione", "rules-medico"].map((n) => loadJSON(`data/${n}.json`)));
 const st = { verified: "Controllato", partial: "Controllato in parte", todo: "Da controllare" };
 const link = (s) => s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>` : esc(s.label);
 document.getElementById("laws-list").innerHTML = [rules, rinv, rcar, raus, rese, rric, radi, rpia, rdom, rpal, rpre, rmed].flatMap((r) => r.sources).map((s) => `<li>${link(s)}</li>`).join("");
-document.getElementById("sources-list").innerHTML = `
-  <table class="fields"><thead><tr><th>ASP</th><th>Stato</th></tr></thead><tbody>
-  ${asp.asl.map((a) => `<tr><td><strong>${esc(a.name)}</strong><br>${a.sources.map(link).join("<br>")}</td>
-    <td><span class="badge ${esc(a.status)}">${st[a.status]}</span><br>${formatIt(a.last_verified)}</td></tr>`).join("")}
+// Per ogni regione attiva: le aziende sanitarie con le loro fonti e la data del controllo, poi le fonti INPS.
+const attive = indice.regioni.filter((r) => r.attiva);
+const dati = await Promise.all(attive.map((r) => Promise.all([
+  loadJSON(`data/regioni/${r.id}/${(r.files && r.files.asl) || "asl"}.json`),
+  loadJSON(`data/regioni/${r.id}/${(r.files && r.files.inps) || "inps"}.json`).catch(() => null),
+])));
+const regioneHtml = (r, [asl, inps]) => `
+  <h3>${esc(r.name)}</h3>
+  <table class="fields"><thead><tr><th>${esc(r.asl_label || "Azienda sanitaria")}</th><th>Stato</th></tr></thead><tbody>
+  ${asl.asl.map((a) => `<tr><td><strong>${esc(a.name)}</strong><br>${(a.sources || []).map(link).join("<br>")}</td>
+    <td>${a.status ? `<span class="badge ${esc(a.status)}">${st[a.status] || ""}</span><br>` : ""}${a.last_verified ? formatIt(a.last_verified) : ""}</td></tr>`).join("")}
   </tbody></table>
-  <h3>INPS Sicilia (invalidità civile)</h3>
-  <p>Gli indirizzi PEC dell'INPS sono ancora da controllare uno per uno.</p>
-  <ul class="clean">${inps.sources.map((s) => `<li>${link(s)}</li>`).join("")}</ul>
-  <p>Controllato il ${formatIt(inps.last_verified)}.</p>
+  ${inps ? `<p><strong>INPS ${esc(r.name)}</strong>: ${(inps.sources || []).map(link).join(" · ")}${inps.last_verified ? ` – controllato il ${formatIt(inps.last_verified)}` : ""}.</p>` : ""}`;
+document.getElementById("sources-list").innerHTML = `
+  ${attive.map((r, i) => regioneHtml(r, dati[i])).join("")}
   <h3>Regole</h3>
   <p>Tempi massimi: ${esc(rules.source)} – controllato il ${formatIt(rules.last_verified)}.<br>
   Invalidità civile: ${esc(rinv.new_regime.legal_basis)} – controllato il ${formatIt(rinv.last_verified)}.<br>

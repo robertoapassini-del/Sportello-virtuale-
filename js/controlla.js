@@ -1,6 +1,7 @@
 // A chi chiedere conferma, nell'avviso in fondo a ogni modulo («Controlla sempre…»).
 // Lo usano le pagine (js/common.js, disclaimer) e la guida scritta (tools/pagine.mjs).
-// I moduli che non sono qui: «con la tua ASP». La sigla cambia con la regione (asl: ASP, ATS, ASL…).
+// I moduli che non sono qui: «con la tua ASP». La sigla cambia con la regione (asl: ASP, ATS, ASL…);
+// senza regione (guida scritta, uguale per tutti) «azienda sanitaria (ASL)».
 export const CHECK_WITH = {
   invalidita: "con l'INPS o con un patronato",
   'ricorso-invalidita': "con l'INPS o con un patronato",
@@ -12,4 +13,4 @@ export const CHECK_WITH = {
   'tessera-sanitaria': "con l'Agenzia delle Entrate o con la tua ASP",
 };
 
-export const checkWith = (slug, asl = 'ASP') => `Controlla sempre ${(CHECK_WITH[slug] || 'con la tua ASP').replace(/\bASP\b/, asl)}.`;
+export const checkWith = (slug, asl = 'azienda sanitaria (ASL)') => `Controlla sempre ${(CHECK_WITH[slug] || 'con la tua ASP').replace(/\bASP\b/g, asl)}.`;

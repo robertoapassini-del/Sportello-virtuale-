@@ -161,7 +161,7 @@ const screens = {
         <form id="letter-form" novalidate>
           <fieldset>
             <legend>L'ospedale</legend>
-            <label for="f-structure">Nome dell'ospedale o della struttura<span class="hint">Per esempio «Ospedale Civico di Palermo»</span></label>
+            <label for="f-structure">Nome dell'ospedale o della struttura<span class="hint">${regione() === 'sicilia' ? 'Per esempio «Ospedale Civico di Palermo»' : 'Come è scritto sui fogli del ricovero o del referto'}</span></label>
             <input id="f-structure" name="structure" type="text" value="${esc(state.structure || '')}">
             <label for="f-structureEmail">Email o PEC dell'ospedale<span class="hint">Se la conosci. Altrimenti lascia vuoto e consegna la lettera a mano</span></label>
             <input id="f-structureEmail" name="structureEmail" type="email" value="${esc(state.structureEmail || '')}">

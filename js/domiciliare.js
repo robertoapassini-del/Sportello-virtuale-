@@ -1,10 +1,10 @@
-// Modulo 10 — assistenza domiciliare integrata (ADI): «come la chiedo all'ASP?».
+// Modulo 10 — assistenza domiciliare integrata (ADI): «come la chiedo all'ASL?».
 // Prima la risposta: la pagina mostra subito la risposta scritta; percorso e consigli pratici partono dai pulsanti.
 // Non c'è un numero di giorni fissato dalla legge: spieghiamo i passi e, se nessuno viene,
 // prepariamo un sollecito al distretto. Non chiediamo la malattia.
 import { todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
 import { genericRequest, mailtoHref } from './letters.js';
-import { noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact, aslLabel, regioneInfo, inRegione, regioneLink, aslIntestazione } from './common.js';
+import { noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact, aslLabel, regioneInfo, inRegione, regioneLink, aslIntestazione, regione, regioneNonPronta } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
 
 const ROOT = '../';
@@ -16,10 +16,13 @@ let data;
 const state = {};
 const person = {};
 const asp = () => data.asl.find((a) => a.id === state.province);
+// I fatti solo siciliani (Enna, le fonti della Regione Siciliana) si mostrano solo a chi usa i dati della Sicilia.
+const inSicilia = () => regione() === 'sicilia' && !regioneNonPronta();
+const perRegione = (list) => list.filter((s) => inSicilia() || !/Sicil|\bASP\b/.test(s.label));
 
 function sources() {
   const a = state.province ? asp() : null;
-  const items = [...rules.sources];
+  const items = perRegione(rules.sources);
   if (a) { if (a.info_url) items.push({ label: `${a.name} – sito ufficiale`, url: a.info_url }); items.push(...a.sources); }
   return [items, { verified: rules.last_verified, note: a ? 'I contatti dei PUA dei distretti sono ancora da raccogliere.' : '' }];
 }
@@ -46,7 +49,7 @@ const screens = {
   // Così «Ricomincia» e il tasto Indietro riportano alla risposta, non a una presentazione.
   intro: () => ({ html: answerHtml }),
 
-  // Consigli pratici: uguali in tutta la Sicilia, non serve la provincia.
+  // Consigli pratici: validi in tutta Italia, non serve la provincia. I fatti solo siciliani si vedono solo per la Sicilia.
   tips: () => ({
     html: `
       <div class="hero" aria-hidden="true">📋</div>
@@ -65,7 +68,7 @@ const screens = {
       <details class="card">
         <summary>🧪 Il prelievo del sangue a casa</summary>
         <ul class="clean">
-          <li><strong>Con l'${aslLabel()}:</strong> il medico di famiglia scrive sulla ricetta che la persona <strong>non può camminare e non può essere trasportata</strong>. Poi chiedi al medico o al PUA del distretto come mandarla. Ad Enna, per esempio, dal 2026 lo fa la Casa della Comunità.</li>
+          <li><strong>Con l'${aslLabel()}:</strong> il medico di famiglia scrive sulla ricetta che la persona <strong>non può camminare e non può essere trasportata</strong>. Poi chiedi al medico o al PUA del distretto come mandarla.${inSicilia() ? ' In Sicilia, ad Enna, per esempio, dal 2026 lo fa la Casa della Comunità.' : ''}</li>
           <li><strong>Da privato:</strong> con la ricetta, chiama un laboratorio (meglio se convenzionato con l'${aslLabel()}) e chiedi se fa prelievi a casa. Di solito si paga a parte la venuta a casa, anche se sei esente dal ticket. Chiedi il prezzo prima.</li>
         </ul>
       </details>
@@ -106,13 +109,13 @@ const screens = {
       <details class="card">
         <summary>🚚 Il trasporto per la dialisi</summary>
         <ul class="clean">
-          ${regioneLink('dialisi') ? `<li>${esc(inRegione().replace(/^./, (c) => c.toUpperCase()))} il trasporto per la dialisi lo <strong>paga l'${aslLabel()}</strong>. Lo fanno associazioni e ditte iscritte in un elenco della Regione.</li>
+          ${regioneLink('dialisi') && !regioneNonPronta() ? `<li>${esc(inRegione().replace(/^./, (c) => c.toUpperCase()))} il trasporto per la dialisi lo <strong>paga l'${aslLabel()}</strong>. Lo fanno associazioni e ditte iscritte in un elenco della Regione.</li>
           <li>Se vai con la tua auto, l'${aslLabel()} ti <strong>rimborsa i chilometri</strong> da casa al centro dialisi.</li>`
     : `<li>Chi paga il trasporto per la dialisi, e se rimborsa i chilometri con la tua auto, lo decide la Regione: chiedi al centro dialisi o al distretto dell'${aslLabel()}.</li>`}
           <li>Serve un certificato del medico di famiglia. Chiedi al centro dialisi come fare la domanda.</li>
           <li>Per le altre visite, il trasporto in ambulanza è gratis solo nelle emergenze (112). Per una visita programmata, chiedi prima al distretto chi paga.</li>
         </ul>
-        ${regioneLink('dialisi') ? `<p><a href="${esc(regioneLink('dialisi'))}" target="_blank" rel="noopener">💻 Elenco della Regione per il trasporto dei dializzati</a></p>` : ''}
+        ${regioneLink('dialisi') && !regioneNonPronta() ? `<p><a href="${esc(regioneLink('dialisi'))}" target="_blank" rel="noopener">💻 Elenco della Regione per il trasporto dei dializzati</a></p>` : ''}
       </details>
 
       <p>Per i numeri del PUA e della guardia medica: <a href="../numeri-utili/">📞 Numeri utili</a>.</p>
@@ -220,7 +223,7 @@ const screens = {
         <form id="letter-form" novalidate>
           <fieldset>
             <legend>La richiesta</legend>
-            <label for="f-district">Comune o distretto<span class="hint">Per esempio «Distretto di Bagheria»</span></label>
+            <label for="f-district">Comune o distretto<span class="hint">Per esempio «Distretto di ${inSicilia() ? 'Bagheria' : '…'}»</span></label>
             <input id="f-district" name="district" type="text" value="${esc(state.district || '')}">
             <label for="f-doctor">Nome del medico di famiglia<span class="hint">Se lo vuoi scrivere</span></label>
             <input id="f-doctor" name="doctor" type="text" value="${esc(state.doctor || '')}">

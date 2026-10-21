@@ -2,7 +2,7 @@
 // riquadri Aiuto e Fonti. Le risposte restano in memoria finché la pagina è aperta.
 import {
   esc, helpBox, sourcesBox, choice, moreHelp, hideHeadingEmoji, enableStart,
-  MAINTAINER_EMAIL, regioni, regioniAttive, regioneInfo, regioneDeiDati, regioneNonPronta, regioneSalvata, regione, setRegione,
+  MAINTAINER_EMAIL, regioni, regioniAttive, regioneInfo, inRegione, regioneDeiDati, regioneNonPronta, regioneSalvata, regione, setRegione,
 } from './common.js';
 
 export { choice };
@@ -120,11 +120,11 @@ const regionScreen = () => ({
     ${regionChoices()}`,
 });
 
-// Link piccolo «Non abiti in Sicilia? Cambia regione» per le schermate con dati regionali.
+// Link piccolo «Non abiti in Sicilia? Cambia regione» («nel Lazio», «nelle Marche»: inRegione) per le schermate con dati regionali.
 // Con una sola regione attiva non c'è niente da cambiare e il link non si vede.
 export function changeRegionLink() {
   if (regioniAttive().length < 2 && !regioneSalvata()) return '';
-  return `<p class="cambia-regione"><button type="button" class="link" data-action="change-region">Non abiti in ${esc(regioneInfo().name)}? Cambia regione</button></p>`;
+  return `<p class="cambia-regione"><button type="button" class="link" data-action="change-region">Non abiti ${esc(inRegione())}? Cambia regione</button></p>`;
 }
 
 // Mette la scelta della regione davanti alla schermata della provincia (name).

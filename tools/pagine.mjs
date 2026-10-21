@@ -145,7 +145,7 @@ function shareBar(html, url) {
 // così «Chi siamo», privacy e contatti si vedono anche senza JavaScript.
 const EMAIL = read('js/common.js').match(/MAINTAINER_EMAIL = '(.*?)'/)[1];
 const footer = (root) => `<footer class="site-footer" id="site-footer"><div class="wrap">
-<p><strong>Guida Sanità è fatto da volontari. Non siamo l'ASP, l'INPS né un altro ufficio pubblico.</strong> Diamo informazioni generali, non il parere di un avvocato o di un medico.</p>
+<p><strong>Guida Sanità è fatto da volontari. Non siamo l'azienda sanitaria (ASL), l'INPS né un altro ufficio pubblico.</strong> Diamo informazioni generali, non il parere di un avvocato o di un medico.</p>
 <nav aria-label="Informazioni">
 <a href="${root}privacy.html">Privacy</a>
 <a href="${root}fonti.html">Da dove prendiamo le informazioni</a>
@@ -200,13 +200,13 @@ const BLOCKS = {
     const r = dataFile('rules');
     const g = (n) => `${n} ${n === 1 ? 'giorno' : 'giorni'}`;
     const rows = [
-      ['U', 'Urgente', `entro ${r.max_wait_days.U * 24} ore (${g(r.max_wait_days.U)})`, 'Non aspettare: chiama subito l\'ASP o il tuo medico'],
+      ['U', 'Urgente', `entro ${r.max_wait_days.U * 24} ore (${g(r.max_wait_days.U)})`, 'Non aspettare: chiama subito il CUP, la tua ASL o il tuo medico'],
       ['B', 'Breve', `entro ${g(r.max_wait_days.B)}`, `entro ${g(r.callback_days.B)}`],
       ['D', 'Differibile', `entro ${g(r.max_wait_days.D_visit)} per le visite, ${g(r.max_wait_days.D_exam)} per gli esami`, `entro ${g(r.callback_days.D_visit)} (visite) o ${g(r.callback_days.D_exam)} (esami)`],
       ['P', 'Programmabile', `entro ${g(r.max_wait_days.P)}`, `entro ${g(r.callback_days.P)}`],
     ];
     return `<table>
-<thead><tr><th scope="col">Lettera sulla ricetta</th><th scope="col">Tempo massimo di attesa</th><th scope="col">Se il CUP non ti dà una data, l'ASP ti richiama</th></tr></thead>
+<thead><tr><th scope="col">Lettera sulla ricetta</th><th scope="col">Tempo massimo di attesa</th><th scope="col">Se il CUP non ti dà una data, l'ASL ti richiama</th></tr></thead>
 <tbody>
 ${rows.map(([c, n, t, cb]) => `<tr><th scope="row">${c} – ${n}</th><td>${esc(t)}</td><td>${esc(cb)}</td></tr>`).join('\n')}
 </tbody>
@@ -223,36 +223,25 @@ ${list.map((a) => `<dt id="tutela-${esc(a.id)}">${esc(a.province)} – ${esc(a.n
 <dd>${esc(a.how_to)}${a.pec && !a.how_to.includes(a.pec) ? ` PEC dell'ASP: ${esc(a.pec)}.` : ''}${links(a) ? `<br>${links(a)}` : ''}</dd>`).join('\n')}
 </dl>`;
   },
-  // Numeri utili senza JavaScript: gli stessi numeri della pagina interattiva (js/numeri.js),
-  // da data/numeri.json e dai contatti delle ASP (data/regioni/<regione>/asp.json). Va dentro static-fallback.
+  // Numeri utili senza JavaScript: i numeri validi in tutta Italia (data/numeri.json, senza le voci di una sola
+  // regione) e l'elenco delle regioni con i numeri delle aziende sanitarie, che si scelgono con JavaScript (js/numeri.js).
   numeri: () => {
     const nums = dataFile('numeri');
-    const d = regionalFile('asp');
+    const tutti = (x) => !x.regione;
     const tel = (n) => `<a href="tel:${esc(n.replace(/\s+/g, ''))}">${esc(n)}</a>`;
     const extra = (n) => [n.what, n.address, n.hours, n.cost].filter(Boolean).map(esc).join(' · ');
     const one = (n) => `<li><strong>${esc(n.title || n.label)}</strong>: ${tel(n.number)}${extra(n) ? `<br>${extra(n)}` : ''}</li>`;
-    const group = (g) => `<h2>${esc(g.title)}</h2>\n<ul>\n${g.items.map(one).join('\n')}\n</ul>`;
-    // Stesso ordine e stessi titoli di js/numeri.js (TOPICS).
-    const TOPICS = [['guardia', 'Guardia medica (continuità assistenziale)'], ['cup', 'Prenotare visite ed esami (CUP)'], ['urp', 'Ufficio per i cittadini (URP)'],
-      ['casa', 'Infermiere e cure a casa (PUA)'], ['anagrafe', 'Scelta del medico ed esenzioni ticket'], ['screening', 'Esami contro i tumori (screening)'],
-      ['cartelle', 'Copia della cartella clinica'], ['protesica', 'Protesi e ausili'], ['palliative', 'Cure palliative e hospice'], ['centralino', 'Centralino']];
-    const asp = (a) => {
-      const contacts = [...(a.contacts || []), ...a.phones.map((x) => ({ ...x, topic: 'centralino' }))];
-      const parts = TOPICS.map(([t, title]) => {
-        const list = contacts.filter((c) => c.topic === t);
-        return list.length ? `<h4>${title}</h4>\n<ul>\n${list.map(one).join('\n')}\n</ul>` : '';
-      }).filter(Boolean);
-      const web = [["Sito dell'ASP", a.site_url], ['Guardia medica: tutte le sedi e i numeri', a.guardia_medica_url], ["Cure a casa (PUA): pagina dell'ASP", a.pua_url]].filter(([, u]) => u);
-      return `<h3 id="asp-${esc(a.id)}">${esc(a.province)} – ${esc(a.name)}</h3>\n${parts.join('\n')}${web.length ? `\n<p>${web.map(([l, u]) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(l)}</a>`).join(' · ')}</p>` : ''}`;
-    };
+    const group = (g) => `<h2>${esc(g.title)}</h2>\n<ul>\n${g.items.filter(tutti).map(one).join('\n')}\n</ul>`;
+    const attive = regioni.regioni.filter((r) => r.attiva).map((r) => r.name).sort((a, b) => a.localeCompare(b, 'it'));
+    const links = nums.links.filter(tutti);
     return [
       group(nums.groups[0]),
-      `<h2>I numeri delle ASP, provincia per provincia</h2>\n${[...d.asl].sort((a, b) => a.province.localeCompare(b.province)).map(asp).join('\n')}`,
+      `<h2>I numeri della tua azienda sanitaria</h2>\n<p>Guardia medica, CUP per prenotare, ufficio per i cittadini (URP), cure a casa: con JavaScript attivo scegli la regione e la provincia. Regioni con i numeri delle aziende sanitarie: ${attive.map(esc).join(', ')}.</p>`,
       ...nums.groups.slice(1).map(group),
-      nums.notes.map((t) => `<p>${esc(t)}</p>`).join('\n'),
-      `<h2>Su internet</h2>\n<ul>\n${nums.links.map((l) => `<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.url_label)}</a>: ${esc(l.what)}</li>`).join('\n')}\n</ul>`,
+      nums.notes.filter((t) => typeof t === 'string').map((t) => `<p>${esc(t)}</p>`).join('\n'),
+      links.length ? `<h2>Su internet</h2>\n<ul>\n${links.map((l) => `<li><a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.url_label)}</a>: ${esc(l.what)}</li>`).join('\n')}\n</ul>` : '',
       `<p class="muted">Numeri controllati sui siti ufficiali. Informazioni controllate il ${dateIt(nums.last_verified)}.</p>`,
-    ].join('\n');
+    ].filter(Boolean).join('\n');
   },
 };
 

@@ -1,6 +1,6 @@
 // Modulo 4 — ausili e protesi: «la carrozzina non arriva».
 // Prima la risposta: la pagina mostra subito la risposta scritta; il conto e il sollecito partono dal pulsante.
-// Regola: l'ASP autorizza entro 20 giorni; se non risponde, l'autorizzazione vale lo stesso
+// Regola: l'azienda sanitaria (ASL) autorizza entro 20 giorni; se non risponde, l'autorizzazione vale lo stesso
 // (art. 18 DPCM 12/01/2017). Non chiediamo mai la malattia.
 import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween, art } from './engine.js';
 import { ausiliReminder, mailtoHref } from './letters.js';
