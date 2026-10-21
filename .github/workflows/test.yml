@@ -24,3 +24,4 @@ jobs:
         run: python3 -m http.server 8080 >/dev/null 2>&1 &
       - run: node tests/browser.cjs http://localhost:8080/
       - run: node tests/combinazioni.cjs http://localhost:8080/
+      - run: node tests/robustezza.cjs http://localhost:8080/

@@ -5,6 +5,7 @@
 // - errori JavaScript;
 // - «undefined», «NaN» o «[object Object]» nel testo;
 // - una pagina più larga dello schermo;
+// - stampando: titolo assente o bianco, pulsanti sul foglio;
 // - pulsanti e link più bassi di 44 px, o pagine troppo larghe con il testo al 250% (accessibilità);
 // - per chi non è siciliano, una frase su uffici o servizi siciliani (ASP, SovraCUP, Palermo…) che non dice
 //   «Sicilia» (stessa regola di tests/nazionale.test.mjs, ma sul testo creato dal JavaScript).
@@ -62,6 +63,26 @@ async function accessibile(page, dove, problemi) {
   if (await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1)) problemi.push(`${dove}: con il testo al 250% è più larga dello schermo`);
 }
 
+// Stampa (audit del 21/10/2026): il titolo non deve restare bianco (banda colorata senza sfondo), niente
+// pulsanti sul foglio, e «Stampa la guida» deve stampare anche il titolo della pagina, non solo l'indice.
+async function stampa(page, dove, problemi) {
+  const guida = await page.$('button[data-print="guida"]');
+  await page.emulateMedia({ media: 'print' });
+  if (guida) await page.evaluate(() => document.body.classList.add('printing-guide'));
+  const r = await page.evaluate(() => {
+    const h1 = document.querySelector('h1');
+    const vis = (e) => e && e.offsetParent !== null && getComputedStyle(e).visibility !== 'hidden';
+    return {
+      h1: vis(h1), bianco: h1 && getComputedStyle(h1).color === 'rgb(255, 255, 255)',
+      bottoni: [...document.querySelectorAll('main button, #app button')].filter(vis).map((b) => b.innerText.trim().slice(0, 30)),
+    };
+  });
+  if (!r.h1) problemi.push(`${dove}: stampando, il titolo non c'è`);
+  if (r.bianco) problemi.push(`${dove}: stampando, il titolo è bianco`);
+  for (const b of r.bottoni) problemi.push(`${dove}: stampando, si vede il pulsante «${b}»`);
+  await page.emulateMedia({ media: 'screen' });
+}
+
 (async () => {
   const { chromium } = loadPlaywright();
   const browser = await chromium.launch();
@@ -85,6 +106,7 @@ async function accessibile(page, dove, problemi) {
       await page.goto(u, { waitUntil: 'networkidle' });
       await controlla(page, dove, regione, problemi);
       if (!regione) await accessibile(page, dove, problemi);
+      if (regione === 'sicilia') await stampa(page, dove, problemi);
       await page.close();
     }
     await ctx.close();

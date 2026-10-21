@@ -2,6 +2,14 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — Audit notturno, giro 2: accessibilità, privacy e robustezza, ricerca, stampa
+- Ricerca (nuovo `js/cerca.js`): risultati ordinati per pertinenza, parole corte solo intere («rsa» non trova più «persa»), parole vuote e accenti, una lettera di differenza per gli errori di battitura, parole d'emergenza verso i Numeri utili, «chiama il 112» se non trova niente, ricerca salvata nell'indirizzo. Nuove parole chiave in `data/moduli.json`. Test: `tests/ricerca.test.mjs`.
+- Robustezza: `?torna=` accetta solo indirizzi di questo sito; con i cookie bloccati la regione resta nella scheda aperta; Numeri utili mostra sempre i numeri nazionali anche se un file non arriva; indirizzo con «#%» non blocca più la pagina; fonti.html e home non spariscono se manca un file. Se JavaScript non parte resta il contenuto scritto nella pagina. Test: `tests/robustezza.cjs` (anche nella CI).
+- Privacy: frasi corrette sulla visita e l'ausilio scritti per la lettera, sulla ricerca senza JavaScript e su `window.name`.
+- Accessibilità: pulsanti e link da toccare alti almeno 44 px, «Copiato» annunciato agli screen reader, barra di condivisione come regione della pagina, nome del sito a capo con il testo molto grande.
+- Stampa: «Stampa la guida» stampa anche il titolo e la risposta (prima solo l'indice), titoli non più bianchi sul foglio, niente pulsanti stampati.
+- Nuova pagina 404 in italiano; titolo della home più chiaro; il documento di identità scritto nei moduli ora compare nelle lettere; «ad Agrigento».
+
 ## 21/10/2026 — Audit notturno, giro 1: leggi, lettere e calcoli, dati regionali
 - Codici di esenzione per invalidità corretti (`data/rules-esenzione.json`): C01 100% senza accompagnamento, C02 100% con accompagnamento, C03 67-99%, C04 minori con indennità di frequenza, C05 ciechi, C06 sordi (prima C02 e C03 erano sbagliati). Fonte: Garante disabili Regione Campania.
 - Strisce blu: dal 14/12/2024 (L. 177/2024, art. 188 c. 3-bis CdS) sosta gratis con il contrassegno senza la condizione dei posti riservati occupati.

@@ -54,45 +54,67 @@
 import { renderFooter, loadJSON, esc } from "./js/common.js";
 import { formatIt } from "./js/engine.js";
 renderFooter("");
-const [indice, moduli, rules, rinv, rcar, raus, rese, rric, radi, rpia, rdom, rpal, rpre, rmed] = await Promise.all(["regioni/index", "moduli", "rules", "rules-invalidita", "rules-cartella", "rules-ausili", "rules-esenzione", "rules-ricorso", "rules-adi", "rules-piano", "rules-domiciliare", "rules-palliative", "rules-prevenzione", "rules-medico"].map((n) => loadJSON(`data/${n}.json`)));
-// Le leggi: i file di regole di tutti i moduli (campo "data"), senza i dati delle regioni e senza doppioni.
-const ruleFiles = [];
-JSON.stringify(moduli, (k, v) => { if (k === "data") [].concat(v).forEach((n) => { if (!n.startsWith("regioni/") && !ruleFiles.includes(n)) ruleFiles.push(n); }); return v; });
-const tutteRegole = await Promise.all(ruleFiles.map((n) => loadJSON(`data/${n}.json`).catch(() => null)));
+const lawsEl = document.getElementById("laws-list");
+const sourcesEl = document.getElementById("sources-list");
+const errore = '<div class="notice bad"><p>Non riusciamo a caricare questo elenco. Riprova tra poco.</p></div>';
 const st = { verified: "Controllato", partial: "Controllato in parte", todo: "Da controllare" };
 const link = (s) => s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>` : esc(s.label);
-const visti = new Set();
-document.getElementById("laws-list").innerHTML = tutteRegole.filter(Boolean).flatMap((r) => r.sources || [])
-  .filter((s) => { const k = `${s.label}|${s.url || ""}`; if (visti.has(k)) return false; visti.add(k); return true; })
-  .map((s) => `<li>${link(s)}</li>`).join("");
-// Per ogni regione attiva: le aziende sanitarie con le loro fonti e la data del controllo, poi le fonti INPS.
-const attive = indice.regioni.filter((r) => r.attiva);
-const dati = await Promise.all(attive.map((r) => Promise.all([
-  loadJSON(`data/regioni/${r.id}/${(r.files && r.files.asl) || "asl"}.json`),
-  loadJSON(`data/regioni/${r.id}/${(r.files && r.files.inps) || "inps"}.json`).catch(() => null),
-])));
-const regioneHtml = (r, [asl, inps]) => `
-  <h3>${esc(r.name)}</h3>
-  <table class="fields"><thead><tr><th>${esc(r.asl_label || "Azienda sanitaria")}</th><th>Stato</th></tr></thead><tbody>
-  ${asl.asl.map((a) => `<tr><td><strong>${esc(a.name)}</strong><br>${(a.sources || []).map(link).join("<br>")}</td>
-    <td>${a.status ? `<span class="badge ${esc(a.status)}">${st[a.status] || ""}</span><br>` : ""}${a.last_verified ? formatIt(a.last_verified) : ""}</td></tr>`).join("")}
-  </tbody></table>
-  ${inps ? `<p><strong>INPS ${esc(r.name)}</strong>: ${(inps.sources || []).map(link).join(" · ")}${inps.last_verified ? ` – controllato il ${formatIt(inps.last_verified)}` : ""}.</p>` : ""}`;
-document.getElementById("sources-list").innerHTML = `
-  ${attive.map((r, i) => regioneHtml(r, dati[i])).join("")}
-  <h3>Regole</h3>
-  <p>Tempi massimi: ${esc(rules.source)} – controllato il ${formatIt(rules.last_verified)}.<br>
-  Invalidità civile: ${esc(rinv.new_regime.legal_basis)} – controllato il ${formatIt(rinv.last_verified)}.<br>
-  Cartella clinica: ${esc(rcar.legal_basis)} – controllato il ${formatIt(rcar.last_verified)}.<br>
-  Ausili e protesi: ${esc(raus.legal_basis)} – controllato il ${formatIt(raus.last_verified)}.<br>
-  Esenzione ticket: soglie E01-E04 – controllato il ${formatIt(rese.last_verified)}.<br>
-  Ricorso invalidità: ${esc(rric.legal_basis)} – controllato il ${formatIt(rric.last_verified)}.<br>
-  Assegno di inclusione: ISEE fino a ${radi.isee_max} € – controllato il ${formatIt(radi.last_verified)}.<br>
-  Piano terapeutico – controllato il ${formatIt(rpia.last_verified)}.<br>
-  Assistenza domiciliare: ${esc(rdom.legal_basis)} – controllato il ${formatIt(rdom.last_verified)}.<br>
-  Cure palliative: ${esc(rpal.legal_basis)} – controllato il ${formatIt(rpal.last_verified)}.<br>
-  Prevenzione (screening e vaccini) – controllato il ${formatIt(rpre.last_verified)}.<br>
-  Medico di famiglia e pediatra – controllato il ${formatIt(rmed.last_verified)}.</p>`;
+const data = (d) => (d ? formatIt(d) : "");
+try {
+  // Indice delle regioni e elenco dei moduli servono per tutta la pagina; i file di regole e quelli
+  // delle singole regioni possono mancare: si salta solo quella riga.
+  const [indice, moduli] = await Promise.all(["regioni/index", "moduli"].map((n) => loadJSON(`data/${n}.json`)));
+  const regole = ["rules", "rules-invalidita", "rules-cartella", "rules-ausili", "rules-esenzione", "rules-ricorso", "rules-adi", "rules-piano", "rules-domiciliare", "rules-palliative", "rules-prevenzione", "rules-medico"];
+  const [rules, rinv, rcar, raus, rese, rric, radi, rpia, rdom, rpal, rpre, rmed] = await Promise.all(regole.map((n) => loadJSON(`data/${n}.json`).catch(() => null)));
+  // Le leggi: i file di regole di tutti i moduli (campo "data"), senza i dati delle regioni e senza doppioni.
+  const ruleFiles = [];
+  JSON.stringify(moduli, (k, v) => { if (k === "data") [].concat(v).forEach((n) => { if (!n.startsWith("regioni/") && !ruleFiles.includes(n)) ruleFiles.push(n); }); return v; });
+  const tutteRegole = await Promise.all(ruleFiles.map((n) => loadJSON(`data/${n}.json`).catch(() => null)));
+  const visti = new Set();
+  const leggi = tutteRegole.filter(Boolean).flatMap((r) => r.sources || [])
+    .filter((s) => { const k = `${s.label}|${s.url || ""}`; if (visti.has(k)) return false; visti.add(k); return true; })
+    .map((s) => `<li>${link(s)}</li>`).join("");
+  lawsEl.innerHTML = leggi || `<li>${errore}</li>`;
+  // Per ogni regione attiva: le aziende sanitarie con le loro fonti e la data del controllo, poi le fonti INPS.
+  const attive = (indice.regioni || []).filter((r) => r.attiva);
+  const dati = await Promise.all(attive.map((r) => Promise.all([
+    loadJSON(`data/regioni/${r.id}/${(r.files && r.files.asl) || "asl"}.json`).catch(() => null),
+    loadJSON(`data/regioni/${r.id}/${(r.files && r.files.inps) || "inps"}.json`).catch(() => null),
+  ])));
+  const regioneHtml = (r, [asl, inps]) => `
+    <h3>${esc(r.name)}</h3>
+    ${asl && asl.asl ? `<table class="fields"><thead><tr><th>${esc(r.asl_label || "Azienda sanitaria")}</th><th>Stato</th></tr></thead><tbody>
+    ${asl.asl.map((a) => `<tr><td><strong>${esc(a.name)}</strong><br>${(a.sources || []).map(link).join("<br>")}</td>
+      <td>${a.status ? `<span class="badge ${esc(a.status)}">${st[a.status] || ""}</span><br>` : ""}${data(a.last_verified)}</td></tr>`).join("")}
+    </tbody></table>` : `<p>Non riusciamo a caricare le fonti delle aziende sanitarie di questa regione. Riprova tra poco.</p>`}
+    ${inps ? `<p><strong>INPS ${esc(r.name)}</strong>: ${(inps.sources || []).map(link).join(" · ")}${inps.last_verified ? ` – controllato il ${formatIt(inps.last_verified)}` : ""}.</p>` : ""}`;
+  // Una riga per file di regole; se il file non è arrivato, la riga non c'è.
+  const riga = (r, testo) => (r ? `${testo(r)} – controllato il ${data(r.last_verified)}.` : "");
+  const righe = [
+    riga(rules, (r) => `Tempi massimi: ${esc(r.source)}`),
+    riga(rinv, (r) => `Invalidità civile: ${esc(r.new_regime && r.new_regime.legal_basis)}`),
+    riga(rcar, (r) => `Cartella clinica: ${esc(r.legal_basis)}`),
+    riga(raus, (r) => `Ausili e protesi: ${esc(r.legal_basis)}`),
+    riga(rese, () => "Esenzione ticket: soglie E01-E04"),
+    riga(rric, (r) => `Ricorso invalidità: ${esc(r.legal_basis)}`),
+    riga(radi, (r) => `Assegno di inclusione: ISEE fino a ${esc(r.isee_max)} €`),
+    riga(rpia, () => "Piano terapeutico"),
+    riga(rdom, (r) => `Assistenza domiciliare: ${esc(r.legal_basis)}`),
+    riga(rpal, (r) => `Cure palliative: ${esc(r.legal_basis)}`),
+    riga(rpre, () => "Prevenzione (screening e vaccini)"),
+    riga(rmed, () => "Medico di famiglia e pediatra"),
+  ].filter(Boolean);
+  const mancano = righe.length < regole.length ? '<p class="muted">Alcune regole non si sono caricate. Riprova tra poco.</p>' : "";
+  sourcesEl.innerHTML = `
+    ${attive.map((r, i) => regioneHtml(r, dati[i])).join("")}
+    <h3>Regole</h3>
+    ${righe.length ? `<p>${righe.join("<br>\n    ")}</p>` : ""}
+    ${mancano}`;
+} catch {
+  // Senza indice delle regioni o elenco dei moduli: un messaggio al posto di «Un momento…».
+  if (/Un momento/.test(lawsEl.textContent)) lawsEl.innerHTML = `<li>${errore}</li>`;
+  sourcesEl.innerHTML = errore;
+}
 </script>
 </body>
 </html>

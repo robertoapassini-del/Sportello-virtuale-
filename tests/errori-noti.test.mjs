@@ -43,6 +43,8 @@ const ERRORI = [
   [/messaggio (n\. )?639\/2026/, 'province della riforma della disabilità: messaggi INPS 635 e 637 del 23/02/2026'],
   [/art\. 6,? L\. 80\/2006|L\. 405\/2001, art\./, 'leggi di conversione con un solo articolo: si cita il decreto-legge (D.L. 4/2006 art. 6 c. 3-bis; D.L. 347/2001 art. 8)'],
   [/lunedì e mercoledì[^;"]*;\s*dal martedì al giovedì/, 'orario con un giorno ripetuto e il venerdì mancante (URP ASL Roma 4, avviso con refuso)'],
+  [/(come fare|nato\/a) a \$\{/, '«a Agrigento»: davanti ai nomi che cominciano per A ci vuole «ad»'],
+  [/Non ti chiediamo (mai la malattia|dati sulla salute)\./, 'privacy: i moduli chiedono la visita o l\'ausilio per la lettera (resta nel browser)'],
   [/DM 24\/11\/2022/, 'bonus psicologo: il decreto è del 24/11/2023'],
   [/secondo i tempi indicati dalla normativa vigente/, 'i 30 giorni della vecchia procedura INPS sono indicativi (rules-invalidita.json): la lettera non li cita come norma'],
 ];

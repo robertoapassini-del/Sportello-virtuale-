@@ -480,7 +480,7 @@ async function runCase(page, c) {
     await btn({ '0-5': /sotto i 6 anni/, '6-13': /da 6 a 13/, '14-15': /14 o 15/, '16+': /^Un adulto/ }[c.band]);
     await btn({ change: /^Voglio cambiare/, retire: /va in pensione/, full: /Non trovo nessuno/, temporary: /per studio o lavoro/ }[c.sit]);
     const got = await h1();
-    const want = c.sit === 'full' ? 'Se non trovi nessuno' : `Ecco come fare a ${c.p}`;
+    const want = c.sit === 'full' ? 'Se non trovi nessuno' : `Ecco come fare ${/^a/i.test(c.p) ? "ad" : "a"} ${c.p}`;
     if (!got.startsWith(want)) problems.push(`titolo atteso «${want}», trovato «${got}»`);
     const text = await checkScreen('risultato');
     const who = { '0-5': 'deve avere il pediatra', '6-13': 'puoi scegliere il pediatra o il medico di famiglia', '14-15': 'si passa al medico di famiglia', '16+': 'si passa al medico di famiglia' }[c.band];

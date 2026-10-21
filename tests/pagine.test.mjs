@@ -78,3 +78,12 @@ test('l\'avviso finale dice a chi chiedere conferma, guida per guida', () => {
     assert.ok(read(`${m.id}/index.html`).replace(/&#39;/g, "'").includes(checkWith(m.id)), m.id);
   }
 });
+
+test('404.html: in italiano, non indicizzata, solo indirizzi assoluti, fuori dalla sitemap', () => {
+  const html = read('404.html');
+  assert.match(html, /<html lang="it">/);
+  assert.match(html, /<meta name="robots" content="noindex">/);
+  const rel = [...html.matchAll(/(?:href|src|action)="([^"]*)"/g)].map((m) => m[1]).filter((u) => !/^(\/|tel:|data:|https:)/.test(u));
+  assert.deepEqual(rel, [], 'GitHub Pages la mostra a qualsiasi profondità: servono indirizzi che iniziano con «/»');
+  assert.doesNotMatch(read('sitemap.xml'), /404/);
+});

@@ -2,7 +2,7 @@
 // riquadri Aiuto e Fonti. Le risposte restano in memoria finché la pagina è aperta.
 import {
   esc, helpBox, sourcesBox, choice, moreHelp, hideHeadingEmoji, enableStart,
-  MAINTAINER_EMAIL, regioni, regioniAttive, regioneInfo, inRegione, regioneDeiDati, regioneNonPronta, regioneSalvata, regione, setRegione,
+  MAINTAINER_EMAIL, regioni, regioniAttive, regioneInfo, inRegione, regioneDeiDati, regioneNonPronta, regioneSalvata, regione, setRegione, regioneRicordata,
 } from './common.js';
 
 export { choice };
@@ -151,7 +151,10 @@ export function regionAction(btn, nav, name = 'province') {
     askRegion = false;
     // Regione attiva diversa da quella dei dati già caricati: si ricarica la pagina con i dati giusti.
     // Una regione non attiva non ha dati: basta ridisegnare (si vede l'invito).
-    if (regioneDeiDati() && !regioneNonPronta() && regione() !== regioneDeiDati()) location.reload();
+    // Se il browser non può ricordare la scelta (localStorage bloccato e niente nome della scheda,
+    // vedi setRegione in js/common.js) ricaricando la si perderebbe e si tornerebbe a «In quale regione abiti?»:
+    // allora si ridisegna, con la scelta in memoria finché la pagina è aperta.
+    if (regioneDeiDati() && !regioneNonPronta() && regione() !== regioneDeiDati() && regioneRicordata()) location.reload();
     else nav.render();
     return true;
   }

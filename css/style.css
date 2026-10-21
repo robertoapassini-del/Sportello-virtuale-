@@ -525,6 +525,9 @@ ul.area-list li > .btn { flex: 1; }
   .site-header .brand, .site-header .brand-tag { color: #000 !important; }
   .wrap { max-width: none; padding: 0; }
   .card, .notice, .btn, details.fonti { break-inside: avoid; }
+  .page-band h1, .page-band p, .page-band strong, .page-band .lead, .page-band a { color: #000 !important; }
+  #app button, .cambia-regione, details:not([open]) { display: none !important; }
+  li, .grid2 > * { break-inside: avoid; }
   .guida h2, .guida h3 { break-after: avoid; }
   .guida { margin-top: 12pt; }
   .guida a[href^="http"]::after, .guida a[href^="mailto:"]::after { content: " (" attr(href) ")"; font-size: 9pt; word-break: break-all; }
@@ -532,6 +535,7 @@ ul.area-list li > .btn { flex: 1; }
   .share-bar { display: block; margin: 0; }
   a { color: #000; }
   /* «Stampa la guida»: solo la guida, senza le domande passo passo. */
-  body.printing-guide #app { display: none !important; }
+  /* «Stampa la guida»: la risposta scritta (titolo, regole) e la guida, senza pulsanti né domande. */
+  body.printing-guide #app button, body.printing-guide #app .btn, body.printing-guide #app form { display: none !important; }
   body.printing-guide .guida > h2:first-child { border-top: none; padding-top: 0; }
 }

@@ -22,9 +22,10 @@ Se non sai se una regola è nazionale, trattala come regionale finché non trovi
 
 | Comando | Cosa controlla |
 |---|---|
-| `npm test` | dati, numeri e fonti (`contatti`, `provenienza`, `cifre`), pagine aggiornate (`pagine`), calcoli (`engine`), testi nazionali (`nazionale`), errori già visti (`errori-noti`) |
-| `node tests/browser.cjs <indirizzo>` | tutte le pagine in un browser (Sicilia, Lazio, nessuna regione) e i percorsi dei moduli: errori JavaScript, «undefined», pagine troppo larghe, frasi siciliane senza «Sicilia» |
+| `npm test` | dati, numeri e fonti (`contatti`, `provenienza`, `cifre`), pagine aggiornate (`pagine`, anche la 404), calcoli (`engine`), testi nazionali (`nazionale`), errori già visti (`errori-noti`), ricerca (`ricerca`: 40 parole → modulo giusto) |
+| `node tests/browser.cjs <indirizzo>` | tutte le pagine in un browser (Sicilia, Lazio, nessuna regione) e i percorsi dei moduli: errori JavaScript, «undefined», pagine troppo larghe (anche con il testo al 250%), pulsanti sotto i 44 px, stampa (titolo, pulsanti), frasi siciliane senza «Sicilia» |
 | `node tests/combinazioni.cjs <indirizzo>` | tutte le combinazioni di risposte nei moduli, confrontate con un calcolo indipendente |
+| `node tests/robustezza.cjs <indirizzo>` | cosa succede quando qualcosa va storto: file di dati che non arrivano, cookie bloccati, indirizzi ostili (`?torna=`), hash rotti |
 
 Per i due controlli col browser: `python3 -m http.server 8080` in un altro terminale, poi `http://localhost:8080/`.
 La CI (`.github/workflows/test.yml`) li fa tutti a ogni push e a ogni pull request: una PR si unisce solo con
@@ -47,3 +48,7 @@ tutti i controlli verdi.
   DPCM 2017 allegato 12 per gli ausili, artt. 24-26 per i consultori, allegato 4C per il dentista), «la ASL»,
   «Sono passati 1 giorno», «circa» con i centesimi, parenti fino al terzo grado per i permessi 104.
 - 21/10/2026 — `browser.cjs` nella CI, con `combinazioni.cjs`: prima si lanciavano solo a mano.
+- 21/10/2026 (notte) — audit indipendenti su leggi, lettere e calcoli, dati regionali, accessibilità, privacy e sicurezza,
+  numeri nazionali, ricerca, stampa e SEO: `tests/ricerca.test.mjs` (la ricerca non ordinava e trovava pezzi di parola),
+  `tests/robustezza.cjs` (redirect `?torna=` aggirabile, cookie bloccati, 112 sparito senza dati), controlli di
+  accessibilità e stampa in `browser.cjs`, test sulle date (01/01/1970) e sui festivi in `engine.test.mjs`, 404.html.
