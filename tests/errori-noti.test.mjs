@@ -45,6 +45,10 @@ const ERRORI = [
   [/lunedì e mercoledì[^;"]*;\s*dal martedì al giovedì/, 'orario con un giorno ripetuto e il venerdì mancante (URP ASL Roma 4, avviso con refuso)'],
   [/(come fare|nato\/a) a \$\{/, '«a Agrigento»: davanti ai nomi che cominciano per A ci vuole «ad»'],
   [/Non ti chiediamo (mai la malattia|dati sulla salute)\./, 'privacy: i moduli chiedono la visita o l\'ausilio per la lettera (resta nel browser)'],
+  [/spese di viaggio[^.\n]{0,80}scaricare[^.\n]{0,60}in parte/i, 'viaggio e alloggio per le cure di solito non si detraggono (Agenzia delle Entrate)'],
+  [/tutto gratuito<\/strong> per più di un mese/, 'accompagnamento: si sospende dopo 29 giorni di ricovero gratuito, non «un mese»'],
+  [/nessuno può essere dimesso/i, 'dimissione protetta: è un percorso organizzativo regionale, non un divieto di dimissione'],
+  [/L'assistenza domiciliare è gratuita\./, 'ADI: gratuite le cure sanitarie; l\'aiuto dell\'operatore dopo 30 giorni può avere una quota (DPCM 2017 art. 22)'],
   [/DM 24\/11\/2022/, 'bonus psicologo: il decreto è del 24/11/2023'],
   [/secondo i tempi indicati dalla normativa vigente/, 'i 30 giorni della vecchia procedura INPS sono indicativi (rules-invalidita.json): la lettera non li cita come norma'],
 ];

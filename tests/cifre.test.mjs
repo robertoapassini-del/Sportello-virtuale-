@@ -49,6 +49,9 @@ const ECCEZIONI = {
   'legge-104': [
     { testo: /hanno compiuto 65 anni$/, perche: 'permessi 104 al parente di terzo grado: età fissata dall\'art. 33 c. 3 L. 104/1992, non una cifra del modulo' },
   ],
+  'rsa': [
+    { testo: /tutto gratuito per più di 29 giorni$/, perche: 'sospensione dell\'accompagnamento: sta nel modulo accompagnamento', valore: (d, tutti) => tutti['rules-accompagnamento'].ricovero_giorni, unita: 'giorni' },
+  ],
   'medico-famiglia': [
     { testo: /a Trapani, dopo un cambio bisogna aspettare 30 giorni$/, perche: 'regola della sola ASP Trapani, scritta nel testo di regioni/sicilia/asp.json (scelta_medico)' },
   ],
