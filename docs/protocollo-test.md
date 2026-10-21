@@ -92,3 +92,8 @@ tutti i controlli verdi.
   di almeno 2 px (i `summary` non ce l'avevano), e dopo un invio vuoto l'errore è collegato al campo
   (`aria-describedby`), il campo ha `aria-invalid` e il focus (`showError()` in `js/flow.js`); i percorsi nei moduli
   anche come utente della Sicilia. In `errori-noti.test.mjs` i link chiamati «qui», «leggi qui», «Fonte».
+- 22/10/2026 (giro 6) — audit di sicurezza e privacy: in `robustezza.cjs` gli indirizzi `?torna=` che si risolvono in
+  «//altro-sito/» («/.//altro-sito/»); `tests/head-script.test.mjs` (lo script in testa a ogni pagina non porta fuori dal
+  sito); `tests/html-esc.test.mjs` (dati dell'utente nell'HTML solo dentro `esc()`); in `lettere.test.mjs` «Manda per
+  email» con indirizzi ostili («?cc=», «&bcc=») e con tutti gli indirizzi di `data/`; in `pagine.test.mjs` il meta
+  referrer su ogni pagina; in `errori-noti.test.mjs` la privacy dice che la ricerca resta nell'indirizzo («#q=»).

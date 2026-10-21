@@ -90,3 +90,12 @@ test('nessuno degli errori già trovati è tornato', () => {
   }
   assert.deepEqual(trovati, [], `Errori già visti:\n${trovati.join('\n')}`);
 });
+
+// Audit giro 6: la ricerca della pagina iniziale resta nell'indirizzo (#q=…, js/home.js), ma la privacy diceva solo
+// «Quando chiudi la pagina, si cancella tutto». Finché il sito la tiene nell'indirizzo, la privacy lo deve dire.
+test('la privacy dice che le parole cercate restano nell\'indirizzo e nella cronologia', () => {
+  const home = fs.readFileSync(path.join(SITE, 'js/home.js'), 'utf8');
+  if (!/#q=/.test(home)) return;
+  const privacy = fs.readFileSync(path.join(SITE, 'privacy.html'), 'utf8');
+  assert.match(privacy, /«#q=»[^<]*cronologia/, 'privacy.html: manca la frase sulla ricerca nell\'indirizzo («#q=») e nella cronologia');
+});

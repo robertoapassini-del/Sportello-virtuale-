@@ -52,7 +52,8 @@ test('i link interni non puntano a index.html', () => {
 
 test('«/x/index.html» porta subito a «/x/» (GitHub Pages non fa redirect 301)', () => {
   for (const f of html.filter((x) => x.endsWith('index.html'))) {
-    assert.match(read(f), /location\.replace\(location\.pathname\.slice\(0,-10\)/, `${f}: manca il reindirizzamento`);
+    // Sempre con una sola «/» davanti: tests/head-script.test.mjs prova che non si esce dal sito.
+    assert.match(read(f), /location\.replace\('\/'\+location\.pathname\.slice\(0,-10\)/, `${f}: manca il reindirizzamento`);
   }
 });
 
@@ -141,4 +142,11 @@ test('nessuna pagina della sitemap è «noindex» (solo la 404 lo è)', () => {
   const noindex = pagineSitemap().filter((f) => /<meta[^>]+name=["']robots["'][^>]*noindex|<meta[^>]+noindex[^>]+name=["']robots["']/i.test(read(f)));
   assert.deepEqual(noindex, [], `pagine nella sitemap che Google non indicizzerebbe:\n${noindex.join('\n')}`);
   assert.match(read('404.html'), /<meta name="robots" content="noindex">/);
+});
+
+// Audit giro 6: ai siti esterni (link ufficiali, WhatsApp) arriva solo l'indirizzo del sito, non quello della pagina.
+test('ogni pagina ha <meta name="referrer" content="strict-origin-when-cross-origin">', () => {
+  for (const f of [...html, '404.html']) {
+    assert.match(read(f), /<meta name="referrer" content="strict-origin-when-cross-origin">/, `${f}: manca il meta referrer`);
+  }
 });

@@ -153,12 +153,14 @@ async function ridisegna() {
 // Arrivati da un'altra pagina per cambiare regione (numeri-utili/?torna=/pagina/#regione): scelta la regione,
 // si torna lì. Solo indirizzi di questo sito: l'indirizzo si risolve come fa il browser
 // («/\\altro-sito» e «/%09/altro-sito» diventano «//altro-sito») e si tiene solo se resta qui.
+// Si usa l'indirizzo intero (u.href, con https://questo-sito): solo il pathname poteva essere «//altro-sito/»
+// («/.//altro-sito/»), che location.assign() legge come un altro sito.
 const torna = (() => {
   const t = new URLSearchParams(location.search).get('torna');
   if (!t) return '';
   try {
     const u = new URL(t, location.origin);
-    return u.origin === location.origin ? u.pathname + u.search + u.hash : '';
+    return u.origin === location.origin ? u.href : '';
   } catch { return ''; }
 })();
 

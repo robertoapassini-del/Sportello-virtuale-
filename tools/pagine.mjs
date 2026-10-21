@@ -122,7 +122,11 @@ function openGraph(html, url) {
 `;
 }
 
-const HEAD_SCRIPT = "<script>document.documentElement.className += ' js';if(/\\/index\\.html$/.test(location.pathname))location.replace(location.pathname.slice(0,-10)+location.search+location.hash);</script>";
+// L'indirizzo nuovo comincia sempre con una sola «/»: «//altro-sito/…/index.html» darebbe «//altro-sito/», cioè un
+// altro sito (audit di sicurezza, giro 6). Le «\» si tolgono anche loro: per il browser valgono come «/».
+const HEAD_SCRIPT = "<script>document.documentElement.className += ' js';if(/\\/index\\.html$/.test(location.pathname))location.replace('/'+location.pathname.slice(0,-10).replace(/^[\\/\\\\]+/,'')+location.search+location.hash);</script>";
+// Ai siti esterni (link ufficiali, WhatsApp) arriva solo l'indirizzo del sito, mai la pagina con quello che c'è dopo.
+const REFERRER = '<meta name="referrer" content="strict-origin-when-cross-origin">';
 
 // «Condividi su WhatsApp» (funziona anche senza JavaScript: è un link) e «Stampa».
 // Sotto, l'indirizzo della pagina: si vede solo sul foglio stampato.
@@ -258,6 +262,7 @@ for (const p of pages) {
     .replace(/<link rel="stylesheet"/, (m) => `<link rel="canonical" href="${url}">\n${openGraph(html, url)}${m}`);
   // «/x/index.html» → «/x/»: GitHub Pages non fa redirect 301, quindi lo fa il browser appena apre la pagina.
   html = html.replace(/<script>document\.documentElement\.className[^<]*<\/script>/, () => HEAD_SCRIPT);
+  html = html.replace(/<meta name="referrer"[^>]*>\n/, '').replace(/<meta name="viewport"[^>]*>\n/, (m) => `${m}${REFERRER}\n`);
   // Dati FAQPage di una versione precedente: non ci sono più «Domande frequenti», le domande sono i titoli delle pagine.
   html = html.replace(/<script type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>\n/, '');
   html = html.replace(/<!-- condividi[\s\S]*?<!-- \/condividi -->\n/, '')
