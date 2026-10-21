@@ -2,6 +2,14 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — Il sito parla a tutta Italia, non solo alla Sicilia
+- Guide: titoli, descrizioni e introduzioni valide in tutta Italia; «ASP» usato come nome generico diventa «ASL». Le cose solo siciliane (SovraCUP, ASPConTe, delibere della Regione, uffici delle ASP) restano, segnate «In Sicilia».
+- Chi sceglie una regione vede la sigla giusta (ASL, ATS, USL…) e «nel Lazio», «nelle Marche»; chi non ha ancora scelto vede testi generici.
+- Numeri utili: il numero verde della Regione Siciliana, SovraCUP e l'avviso sul 116117 in Sicilia si vedono solo a chi ha scelto la Sicilia.
+- «Da dove prendiamo le informazioni»: le fonti di tutte le regioni attive.
+- Caricando una pagina non si vedono più per un attimo le emoji e la pagina senza banda colorata.
+- «Cambia regione» dalla home: scelta la regione si torna alla home, non si resta in Numeri utili.
+
 ## 21/10/2026 — Sardegna: i numeri utili delle 8 ASL
 - 73 numeri delle ASL (centralino, URP, CUP, PUA), controllati nelle copie delle pagine ufficiali del 21/10/2026.
 - Guardia medica: 116117 in 6 ASL su 8; per Medio Campidano e Cagliari le pagine non sono d'accordo e per ora non c'è un numero. CUP regionale 1533 da fisso.
