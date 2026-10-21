@@ -2,6 +2,13 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — Audit notturno, giro 5: scenari reali
+- Ricerca (`data/moduli.json`): «mia madre esce dall ospedale», «dimessa dall ospedale», «mamma esce dall ospedale non cammina» portavano alla cartella clinica; ora il primo risultato è l'assistenza a casa (con la dimissione protetta). Nuove parole chiave: esce, uscita, uscire, dimessa, dimesso, dimissioni, ospedale, cammina.
+- Ricerca: «prenotare una tac», «prenotare risonanza», «prenotare ecografia» portavano ai tempi d'attesa; ora il primo risultato è «Prenotare al CUP» (parole chiave tac, risonanza, ecografia, esame, esami, visita).
+- Ricerca (`js/home.js`): i risultati dicevano sempre «ASL»; ora usano la sigla della regione scelta (ASP in Sicilia, ATS in Lombardia…).
+- Ricorso invalidità (`js/ricorso.js`): con meno di 15 giorni il sito diceva «L'avvocato ha bisogno di qualche settimana», che scoraggia; ora dice «Vai oggi stesso da un patronato o da un avvocato: si può ancora depositare».
+- Nuovi controlli: 6 ricerche in `tests/ricerca.test.mjs`, la sigla nei risultati in `tests/browser.cjs` (Sicilia e Lombardia, «carrozzina»), il ricorso a 0 e 9 giorni dalla scadenza in `tests/combinazioni.cjs`.
+
 ## 21/10/2026 — Audit notturno, giri 3-4: moduli contro guide, lettere, dati della Sicilia
 - Moduli contro guide: l'assistenza domiciliare non è «tutta gratuita» (l'aiuto dell'operatore dopo 30 giorni può avere una quota); con la classe U non si aspettano 10 giorni per sollecitare, con la B si sollecita prima della scadenza; dal privato solo se l'ASL lo scrive; reclamo per la cartella all'URP dell'ospedale; invalidità (vecchia procedura) con domanda oltre 90 giorni dal certificato: avviso che il certificato potrebbe non valere più; «PEC dell'ASL» quando l'indirizzo non è dell'URP; pannoloni; tenere l'appuntamento vecchio finché non c'è il nuovo; medico in pensione.
 - Lettere viste da chi le riceve: la lettera INPS dice perché vale il termine di 15 o 30 giorni e cosa doveva concludersi; niente «termine indicato come ordinario»; la lettera per gli ausili non afferma più il silenzio-assenso (finché non si legge il D.A. siciliano 20/12/2011) ma chiede l'autorizzazione senza ulteriore ritardo; la richiesta di tutela ha nell'oggetto prestazione, numero della ricetta e classe, e le date del termine; il sollecito ha il protocollo e la richiesta dell'intramoenia con il solo ticket; la lettera per la cartella chiede la prima copia gratuita (art. 15 GDPR) e il periodo del ricovero.

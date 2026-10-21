@@ -59,6 +59,14 @@ const CASI = [
   ['hospice', 'cure-palliative'],
   ['ricorso verbale', 'ricorso-invalidita'],
   ['vaccino influenza', 'prevenzione'],
+  // Audit giro 5: scenari reali. Chi esce dall'ospedale cerca aiuto a casa, non la cartella.
+  ['mia madre esce dall ospedale', 'assistenza-domiciliare'],
+  ['dimessa dall ospedale', 'assistenza-domiciliare'],
+  ['mamma esce dall ospedale non cammina', 'assistenza-domiciliare'],
+  // Chi vuole prenotare un esame cerca il CUP, non i tempi d'attesa.
+  ['prenotare una tac', 'prenotare-cup'],
+  ['prenotare risonanza', 'prenotare-cup'],
+  ['prenotare ecografia', 'prenotare-cup'],
 ];
 
 test(`almeno 35 ricerche hanno il risultato giusto per primo`, () => {

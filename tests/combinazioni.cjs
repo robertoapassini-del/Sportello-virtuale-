@@ -167,6 +167,10 @@ for (const [off, h1, name] of [[31, 'Sei ancora in tempo', 'mancano 31 giorni'],
   const v = verbaleFor(add(TODAY, off));
   if (v) cases.push({ mod: 6, name: `RIC · ${name}`, verbale: v, expectH1: h1, deadline: add(TODAY, off), today: off === 0 });
 }
+// Con meno di 15 giorni non si scoraggia («qualche settimana»): si dice di andare oggi stesso.
+for (const [v, name] of [[addM(TODAY, -6), 'verbale di 6 mesi fa (scade adesso)'], [add(addM(TODAY, -6), 9), 'verbale di 6 mesi fa più 9 giorni']]) {
+  if (scadRic(v) >= TODAY) cases.push({ mod: 6, name: `RIC · ${name}`, verbale: v, expectH1: 'Muoviti subito: manca poco', deadline: scadRic(v), vietato: 'qualche settimana', richiesto: 'Vai oggi stesso' });
+}
 cases.push({ mod: 6, name: 'RIC · scaduto da un anno', verbale: addM(TODAY, -18), expectH1: 'I 6 mesi sono passati', deadline: scadRic(addM(TODAY, -18)) });
 cases.push({ mod: 6, name: 'RIC · data nel futuro', verbale: add(TODAY, 1), expectReqError: true });
 
@@ -403,6 +407,8 @@ async function runCase(page, c) {
     const text = await checkScreen('risultato');
     if (c.deadline && !text.includes(fmt(c.deadline))) problems.push(`scadenza attesa ${fmt(c.deadline)} non mostrata`);
     if (c.today && !text.includes('Scade oggi')) problems.push('manca «Scade oggi»');
+    if (c.vietato && text.includes(c.vietato)) problems.push(`con pochi giorni c'è ancora «${c.vietato}»`);
+    if (c.richiesto && !text.includes(c.richiesto)) problems.push(`manca «${c.richiesto}»`);
     return problems;
   }
 

@@ -213,6 +213,21 @@ async function stampa(page, dove, problemi) {
     if (!(await page.evaluate(() => /numeri utili/.test(document.body.innerText)))) problemi.push(`${dove}: manca la riga «numeri utili»`);
     await ctx.close();
   }
+  // La ricerca della home: i testi di data/moduli.json dicono «ASL», ma in Sicilia è l'ASP e in Lombardia l'ATS.
+  for (const [regione, sigla] of [['sicilia', 'ASP'], ['lombardia', 'ATS']]) {
+    const ctx = await nuova(regione);
+    const page = await ctx.newPage();
+    const dove = `${regione} / ricerca «carrozzina»`;
+    errori(page, () => dove);
+    await page.goto(BASE, { waitUntil: 'networkidle' });
+    await page.fill('#hq', 'carrozzina');
+    await page.waitForTimeout(300);
+    const t = await page.evaluate(() => (document.getElementById('q-results') || {}).innerText || '');
+    if (!t) problemi.push(`${dove}: nessun risultato`);
+    if (/\bASL\b/.test(t)) problemi.push(`${dove}: i risultati dicono «ASL» invece di «${sigla}»`);
+    if (!t.includes(sigla)) problemi.push(`${dove}: i risultati non dicono «${sigla}»`);
+    await ctx.close();
+  }
 
   await browser.close();
   // Lo stesso problema in più passi dello stesso modulo si conta una volta.
