@@ -84,10 +84,14 @@ function aspBlock(a) {
   </section>`;
 }
 
+// Voci di data/numeri.json valide solo in una regione («regione»: "sicilia"): si mostrano solo a chi l'ha scelta.
+const perMe = (x) => !x.regione || (x.regione === regione() && !needsRegion() && !regioneNonPronta());
+const nota = (t) => (typeof t === 'string' ? t : t.text);
+
 const group = (g) => `
   <h2>${esc(g.title)}</h2>
   ${g.id === 'urgenze' ? '<div class="notice urgent"><p>🚨 Se è grave, chiama subito il <a href="tel:112"><strong>112</strong></a>.</p></div>' : ''}
-  ${g.items.map(item).join('')}`;
+  ${g.items.filter(perMe).map(item).join('')}`;
 
 // Blocco regionale: la scelta della regione, l'invito se la regione non c'è ancora, oppure le province.
 function regionale(id, a, provinces) {
@@ -111,9 +115,9 @@ function render() {
     <h2 id="regione">${pronta ? `I numeri della tua ${esc(aslLabel())}` : 'I numeri della tua regione'}</h2>
     ${regionale(id, a, provinces)}
     ${nums.groups.slice(1).map(group).join('')}
-    ${nums.notes.map((t) => `<div class="notice info"><p>${esc(t)}</p></div>`).join('')}
-    <h2>Su internet</h2>
-    ${nums.links.map(link).join('')}
+    ${nums.notes.filter(perMe).map((t) => `<div class="notice info"><p>${esc(nota(t))}</p></div>`).join('')}
+    ${nums.links.some(perMe) ? `<h2>Su internet</h2>
+    ${nums.links.filter(perMe).map(link).join('')}` : ''}
     ${helpBox()}
     ${sourcesBox([...nums.sources, ...(a && pronta ? a.sources : [])], { verified: nums.last_verified })}`;
   hideHeadingEmoji(app);

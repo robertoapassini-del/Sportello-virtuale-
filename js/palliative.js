@@ -4,7 +4,7 @@
 // Scritto con delicatezza: spesso chi legge sta assistendo una persona molto malata.
 import { todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
 import { genericRequest, mailtoHref } from './letters.js';
-import { noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact, aslLabel, aslIntestazione } from './common.js';
+import { noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact, aslLabel, aslIntestazione, regione, regioneNonPronta } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
 
 const ROOT = '../';
@@ -16,10 +16,13 @@ let data;
 const state = {};
 const person = {};
 const asp = () => data.asl.find((a) => a.id === state.province);
+// Le fonti della Regione Siciliana si mostrano solo a chi usa i dati della Sicilia.
+const inSicilia = () => regione() === 'sicilia' && !regioneNonPronta();
+const perRegione = (list) => list.filter((s) => inSicilia() || !/Sicil|\bASP\b/.test(s.label));
 
 function sources() {
   const a = state.province ? asp() : null;
-  const items = [...rules.sources];
+  const items = perRegione(rules.sources);
   if (a) { if (a.info_url) items.push({ label: `${a.name} – sito ufficiale`, url: a.info_url }); items.push(...a.sources); }
   return [items, { verified: rules.last_verified, note: a ? 'I numeri della rete cure palliative della provincia sono ancora da raccogliere.' : '' }];
 }

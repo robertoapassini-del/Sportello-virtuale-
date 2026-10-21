@@ -16,11 +16,13 @@ function card(href, icon, title, small) {
 function intro() {
   const scelta = regioneSalvata() || regioneInfo();
   const piu = regioniAttive().length > 1;
+  // Finché non si sceglie la regione, il nome generico: la sigla cambia da regione a regione (ASP, ASL, ATS…).
+  const ente = piu && !regioneSalvata() ? 'azienda sanitaria (ASL)' : (scelta.asl_label || aslLabel());
   return `
   <section class="home-intro page-band">
   <h1>Di cosa hai bisogno?</h1>
-  <p class="home-trust">Gratis. Siamo volontari: <strong>non siamo l'${esc(scelta.asl_label || aslLabel())} né l'INPS</strong>.${piu ? '' : ` Per ora solo in ${esc(regioneInfo().name)}.`}</p>
-  ${piu ? `<p class="home-regione">📍 ${regioneSalvata() ? `Stai guardando: <strong>${esc(scelta.name)}</strong> · <a href="numeri-utili/#regione">Cambia regione</a>` : `<a href="numeri-utili/#regione">Scegli la tua regione</a>: ${esc(regioniAttive().map((r) => r.name).join(', '))}`}</p>` : ''}
+  <p class="home-trust">Gratis. Siamo volontari: <strong>non siamo l'${esc(ente)} né l'INPS</strong>.${piu ? '' : ` Per ora solo in ${esc(regioneInfo().name)}.`}</p>
+  ${piu ? `<p class="home-regione">📍 ${regioneSalvata() ? `Stai guardando: <strong>${esc(scelta.name)}</strong> · <a href="numeri-utili/#regione">Cambia regione</a>` : `<a href="numeri-utili/#regione">Scegli la tua regione</a> per vedere i numeri e gli uffici della tua zona`}</p>` : ''}
   </section>`;
 }
 

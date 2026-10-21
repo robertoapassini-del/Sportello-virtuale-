@@ -12,4 +12,4 @@ export const CHECK_WITH = {
   'tessera-sanitaria': "con l'Agenzia delle Entrate o con la tua ASP",
 };
 
-export const checkWith = (slug, asl = 'ASP') => `Controlla sempre ${(CHECK_WITH[slug] || 'con la tua ASP').replace(/\bASP\b/, asl)}.`;
+export const checkWith = (slug, asl = 'ASP') => `Controlla sempre ${(CHECK_WITH[slug] || 'con la tua ASP').replace(/\bASP\b/g, asl)}.`;

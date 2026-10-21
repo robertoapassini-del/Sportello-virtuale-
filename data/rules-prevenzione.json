@@ -10,7 +10,7 @@
       "min": 50,
       "max": 69,
       "every_years": 2,
-      "how": "L'ASP ti manda una lettera di invito. Se non arriva, chiama il numero dello screening dell'ASP o chiedi al medico di famiglia."
+      "how": "L'azienda sanitaria ti manda una lettera di invito. Se non arriva, chiama il numero dello screening o chiedi al medico di famiglia."
     },
     {
       "id": "pap",
@@ -20,7 +20,7 @@
       "min": 25,
       "max": 29,
       "every_years": 3,
-      "how": "Si fa nei consultori. Arriva una lettera di invito, oppure prenota al numero dello screening dell'ASP."
+      "how": "Si fa nei consultori. Arriva una lettera di invito, oppure prenota al numero dello screening."
     },
     {
       "id": "hpv",
@@ -30,7 +30,7 @@
       "min": 30,
       "max": 64,
       "every_years": 5,
-      "how": "Si fa nei consultori. Arriva una lettera di invito, oppure prenota al numero dello screening dell'ASP."
+      "how": "Si fa nei consultori. Arriva una lettera di invito, oppure prenota al numero dello screening."
     },
     {
       "id": "colon",
@@ -40,7 +40,7 @@
       "min": 50,
       "max": 69,
       "every_years": 2,
-      "how": "Ritiri il kit gratis (in farmacia o al centro screening dell'ASP), lo fai a casa e lo riconsegni."
+      "how": "Ritiri il kit gratis (in farmacia o al centro screening dell'azienda sanitaria), lo fai a casa e lo riconsegni."
     }
   ],
   "vaccines": [
@@ -50,7 +50,7 @@
       "title": "Vaccino contro l'influenza",
       "min": 60,
       "every": "ogni anno, da ottobre",
-      "how": "Dal medico di famiglia, al centro vaccinale dell'ASP o in farmacia (dove c'è il servizio)."
+      "how": "Dal medico di famiglia, al centro vaccinale dell'azienda sanitaria o in farmacia (dove c'è il servizio)."
     },
     {
       "id": "pneumococco",
@@ -58,7 +58,7 @@
       "title": "Vaccino contro lo pneumococco (polmonite)",
       "min": 65,
       "every": "una volta",
-      "how": "Dal medico di famiglia o al centro vaccinale dell'ASP."
+      "how": "Dal medico di famiglia o al centro vaccinale dell'azienda sanitaria."
     },
     {
       "id": "zoster",
@@ -66,7 +66,7 @@
       "title": "Vaccino contro l'Herpes Zoster (fuoco di Sant'Antonio)",
       "min": 65,
       "every": "una volta (due dosi)",
-      "how": "Al centro vaccinale dell'ASP o dal medico di famiglia."
+      "how": "Al centro vaccinale dell'azienda sanitaria o dal medico di famiglia."
     },
     {
       "id": "tetano",
@@ -75,7 +75,7 @@
       "min": 18,
       "every": "ogni 10 anni",
       "every_years": 10,
-      "how": "Al centro vaccinale dell'ASP."
+      "how": "Al centro vaccinale dell'azienda sanitaria."
     }
   ],
   "screening_numbers": {

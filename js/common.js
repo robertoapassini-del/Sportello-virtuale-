@@ -200,7 +200,7 @@ export function renderFooter(root = '') {
   if (!el) return;
   el.innerHTML = `<div class="wrap">
     <p>🔒 <strong>Non salviamo niente.</strong> Quello che scrivi resta sul tuo telefono e si cancella quando chiudi la pagina.</p>
-    <p><strong>Guida Sanità è fatto da volontari. Non siamo l'${aslLabel()}, l'INPS né un altro ufficio pubblico.</strong> Diamo informazioni generali, non il parere di un avvocato o di un medico.</p>
+    <p><strong>Guida Sanità è fatto da volontari. Non siamo l'${regioneScelta() ? aslLabel() : 'azienda sanitaria (ASL)'}, l'INPS né un altro ufficio pubblico.</strong> Diamo informazioni generali, non il parere di un avvocato o di un medico.</p>
     <nav aria-label="Informazioni">
       <a href="${root}privacy.html">Privacy</a>
       <a href="${root}fonti.html">Da dove prendiamo le informazioni</a>

@@ -22,7 +22,7 @@
         {
           "title": "Emergenza: ambulanza, polizia, vigili del fuoco",
           "number": "112",
-          "what": "È il numero unico per ogni emergenza. Funziona in tutta la Sicilia, anche da cellulare senza credito. Se chiami il 118 ti passano comunque al 112.",
+          "what": "È il numero unico per ogni emergenza, anche da cellulare senza credito.",
           "hours": "Sempre, giorno e notte",
           "cost": "Gratis",
           "url": "https://www.interno.gov.it/it/notizie/attivo-anche-palermo-numero-emergenza-unico-europeo-112",
@@ -161,7 +161,8 @@
           "url": "https://www.regione.sicilia.it/temi/salute",
           "url_label": "Regione Siciliana – Salute",
           "verified": "2026-10-18",
-          "proof": "pagina"
+          "proof": "pagina",
+          "regione": "sicilia"
         }
       ]
     }
@@ -171,17 +172,22 @@
       "title": "Prenotare visite ed esami su internet",
       "what": "Il sito della Regione per prenotare con la ricetta. Serve SPID o carta d'identità elettronica. In farmacia possono prenotare per te.",
       "url": "https://sovracup.regione.sicilia.it/home",
-      "url_label": "SovraCUP Sicilia"
+      "url_label": "SovraCUP Sicilia",
+      "regione": "sicilia"
     },
     {
       "title": "Fascicolo sanitario elettronico",
       "what": "Qui trovi referti, ricette e vaccini. Serve SPID o carta d'identità elettronica.",
       "url": "https://www.regione.sicilia.it/fascicolosanitario",
-      "url_label": "Fascicolo sanitario – Sicilia"
+      "url_label": "Fascicolo sanitario – Sicilia",
+      "regione": "sicilia"
     }
   ],
   "notes": [
-    "Il numero 116117 per la guardia medica in Sicilia non funziona ancora. Per la guardia medica usa il numero della tua zona: lo trovi sopra, scegliendo la tua provincia.",
+    {
+      "text": "Il numero 116117 per la guardia medica in Sicilia non funziona ancora. Per la guardia medica usa il numero della tua zona: lo trovi sopra, scegliendo la tua provincia.",
+      "regione": "sicilia"
+    },
     "Farmacie di turno: non c'è un numero unico. Guarda il cartello sulla porta di qualsiasi farmacia, oppure il sito dell'Ordine dei farmacisti o di Federfarma della tua provincia."
   ],
   "sources": [

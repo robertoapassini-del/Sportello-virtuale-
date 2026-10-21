@@ -2,7 +2,7 @@
 // Prima la risposta: la pagina mostra subito la risposta scritta; il percorso per età parte dal pulsante.
 // Regole fisse per età e sesso. Non chiediamo la malattia.
 import { prevenzione } from './engine.js';
-import { esc, loadJSON, loadRegional, disclaimer, renderFooter, readForm, callButton, officeBox, aslLabel } from './common.js';
+import { esc, loadJSON, loadRegional, disclaimer, renderFooter, readForm, callButton, officeBox, aslLabel, regione } from './common.js';
 import { createFlow, choice, restartBtn, progress } from './flow.js';
 
 const ROOT = '../';
@@ -64,7 +64,8 @@ const screens = {
     const r = prevenzione(rules, { age: state.age, sex: state.sex });
     const a = data.asl.find((x) => x.id === state.province);
     const scr = (a.contacts || []).find((c) => c.topic === 'screening');
-    const num = scr ? scr.number : rules.screening_numbers[state.province];
+    // screening_numbers sono numeri delle ASP siciliane: valgono solo per la Sicilia.
+    const num = scr ? scr.number : (regione() === 'sicilia' ? rules.screening_numbers[state.province] : undefined);
     const later = r.later.slice(0, 3).map((x) => `<li><span class="ico" aria-hidden="true">${x.icon}</span><span>${esc(x.title)}: <strong>dai ${x.min} anni</strong></span></li>`).join('');
     const none = !r.screening.length && !r.vaccines.length;
     return {
