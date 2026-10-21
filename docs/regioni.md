@@ -182,13 +182,15 @@ di aziende sanitarie. Lo facciamo in tre pezzi, ognuno con un compito solo:
 1. **Un server in Italia scarica.** Molti siti delle ASL non rispondono a chi si collega dall'estero (nel test del
    21/10/2026: dal server italiano 110 pagine su 134 rispondono, dall'estero Messina, Caltanissetta e Ragusa non
    rispondono). Un piccolo server virtuale (Aruba Cloud, data center di Bergamo, `/opt/guidasanita`) lancia ogni
-   notte alle 3:30 `tools/copie.mjs`: legge gli indirizzi ufficiali dai dati regionali, salva ogni pagina come
+   notte alle 3:30 `tools/copie.mjs`: legge gli indirizzi ufficiali dai dati regionali (aziende sanitarie e,
+   nella cartella `inps-<regione>`, le pagine delle sedi INPS di `inps.json`) e dei numeri nazionali
+   (`data/numeri.json`, cartella `copie/nazionali/`), salva ogni pagina come
    testo semplice e la carica nel branch **`copie-siti`** (cartella `copie/<regione>/<asl>/`, con `indice.json`:
    indirizzo, codice HTTP, titolo, impronta del testo, se è cambiata). Niente AI qui: è uno script semplice.
    Si presenta con nome e sito nel `User-Agent`, una pagina alla volta, una pausa tra una pagina e l'altra, mai
    portali di prenotazione, login o CAPTCHA. Se un'ASL chiede di smettere, si toglie dalla lista.
    **Copia a richiesta, senza aspettare la notte:** `tools/copie-se-serve.sh` gira sul server ogni 15 minuti.
-   Se in `main` sono cambiati `data/regioni/`, `tools/copie.mjs` o `tools/copie-richiesta.txt`, rifà subito
+   Se in `main` sono cambiati `data/regioni/`, `data/numeri.json`, `tools/copie.mjs` o `tools/copie-richiesta.txt`, rifà subito
    la copia con lo stesso comando della notte; altrimenti esce senza fare niente. Basta quindi unire una pull
    request: nessuno deve entrare nel server. Per forzare una copia si cambia `tools/copie-richiesta.txt`.
    Si installa una volta, con una riga in `crontab -e` sul server:

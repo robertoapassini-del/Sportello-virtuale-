@@ -10,7 +10,8 @@ jobs:
           node-version: 22
       - run: npm test
   # Il sito in un browser vero: tutte le pagine (Sicilia, Lazio, nessuna regione), i percorsi dei moduli
-  # e tutte le combinazioni di risposte. Regole in docs/protocollo-test.md.
+  # tutte le combinazioni di risposte e Numeri utili provincia per provincia in ogni regione attiva.
+  # Regole in docs/protocollo-test.md.
   browser:
     runs-on: ubuntu-latest
     steps:
@@ -25,8 +26,13 @@ jobs:
       - run: node tests/browser.cjs http://localhost:8080/
       - run: node tests/combinazioni.cjs http://localhost:8080/
       - run: node tests/robustezza.cjs http://localhost:8080/
-  # I dati regionali contro le copie notturne delle pagine ufficiali (branch copie-siti, tools/copie.mjs).
-  # Non blocca le PR: le pagine ufficiali cambiano di notte. Regole in docs/protocollo-test.md.
+      - run: node tests/numeri-province.cjs http://localhost:8080/
+  # I dati contro le copie notturne delle pagine ufficiali (branch copie-siti, tools/copie.mjs).
+  # Blocca solo i problemi nuovi sui dati che la PR cambia: un numero, una PEC, un indirizzo di invio, un orario
+  # o una sede INPS che la copia della pagina ufficiale non conferma. Non bloccano: i problemi già noti
+  # (tests/copie-noti.txt: pagine fatte con JavaScript, siti giù), i dati uguali a main (la pagina ufficiale
+  # è cambiata di notte: «non di questa PR», nel riepilogo) e gli url nuovi, che si copiano dopo l'unione.
+  # Regole in docs/protocollo-test.md.
   copie:
     runs-on: ubuntu-latest
     steps:
@@ -38,14 +44,16 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      # Solo un resoconto: le copie hanno buchi noti (pagine fatte con JavaScript, siti giù).
-      # Il controllo resta verde e l'elenco dei problemi va nel riepilogo del job, da leggere a ogni PR.
+      # I dati di main, per sapere quali dati ha cambiato la PR.
+      - run: git fetch --no-tags --depth=1 origin +refs/heads/main:refs/remotes/origin/main
       - run: |
           set +e
-          node tools/confronta-copie.mjs copie-siti/copie > confronto.txt 2>&1
+          node tools/confronta-copie.mjs copie-siti/copie --noti tests/copie-noti.txt --base origin/main > confronto.txt 2>&1
           esito=$?
           cat confronto.txt
-          # 3 = differenze trovate (resoconto). Ogni altro codice è un errore del programma: il controllo diventa rosso.
-          if [ $esito -ne 0 ] && [ $esito -ne 3 ]; then exit $esito; fi
-          [ $esito -eq 3 ] && echo "::warning::confronta-copie ha trovato differenze: vedi il riepilogo"
-          { echo '## Dati contro copie dei siti ufficiali'; echo '```'; tail -n 60 confronto.txt; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          { echo '## Dati contro copie dei siti ufficiali'; echo '```'; sed -n '/== Contro/,$p' confronto.txt; echo '```';
+            echo '<details><summary>Tutti i problemi</summary>'; echo; echo '```'; head -n 200 confronto.txt; echo '```'; echo '</details>'; } >> "$GITHUB_STEP_SUMMARY"
+          # 0 = niente di nuovo sui dati cambiati; 3 = dati nuovi o cambiati che la copia non conferma (rosso);
+          # 2 = mancano le copie o main; 1 = il programma si è rotto.
+          [ $esito -eq 3 ] && echo "::error::confronta-copie: dati nuovi o cambiati che la copia della pagina ufficiale non conferma (vedi il riepilogo)"
+          exit $esito

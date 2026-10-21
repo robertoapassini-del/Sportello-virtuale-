@@ -10,7 +10,7 @@ trova uno nuovo, si aggiunge un controllo che lo avrebbe preso.
    nazionale qui sotto.
 2. Nessun fatto nuovo senza fonte ufficiale: ogni cifra o regola va nei file `data/` con `provenienza`
    (url, data, tipo di prova). Una regola di legge si cita con articolo e comma letti sul testo, non a memoria.
-3. Chi cambia `data/regioni/` lancia `node tools/confronta-copie.mjs <cartella-copie> <regione>` sulle copie delle
+3. Chi cambia `data/regioni/` o `data/numeri.json` lancia `node tools/confronta-copie.mjs <cartella-copie> <regione>` sulle copie delle
    pagine ufficiali (branch `copie-siti`, cartella `copie/`) e corregge, o annota nel `todo`, ogni problema che riguarda
    quello che ha cambiato.
 
@@ -28,10 +28,18 @@ Se non sai se una regola è nazionale, trattala come regionale finché non trovi
 | `npm test` | dati, numeri e fonti (`contatti`, `provenienza`, `cifre`: anche nel titolo e nella descrizione, con l'unità giusta), pagine aggiornate (`pagine`, anche la 404, fonti mai vuote, niente «noindex»), link interni (`link`), citazioni di legge rilette (`citazioni` + `tests/citazioni.txt`), lettere senza segnaposto (`lettere`), calcoli e festivi (`engine`), testi nazionali (`nazionale`), errori già visti (`errori-noti`), ricerca (`ricerca`: 40 parole → modulo giusto) |
 | `node tests/browser.cjs <indirizzo>` | tutte le pagine in un browser (Sicilia, Lazio, nessuna regione) e i percorsi dei moduli: errori JavaScript, «undefined», pagine troppo larghe (anche con il testo al 250%), pulsanti sotto i 44 px, stampa (titolo, pulsanti), frasi siciliane senza «Sicilia» |
 | `node tests/combinazioni.cjs <indirizzo>` | tutte le combinazioni di risposte nei moduli, confrontate con un calcolo indipendente |
-| `node tools/confronta-copie.mjs <cartella-copie> [regione…]` | i dati regionali contro le copie notturne delle pagine ufficiali (branch `copie-siti`): cifre dei numeri con prova «pagina» che non sono nella copia del loro url, PEC e indirizzi di invio che non sono in nessuna copia dell'azienda, url senza copia. Nella CI è il job «copie»: le differenze (codice 3) restano verdi e vanno nel riepilogo del job, da leggere a ogni PR; diventa rosso solo se il programma si rompe |
+| `node tools/confronta-copie.mjs <cartella-copie> [regione…\|nazionali]` | i dati contro le copie notturne delle pagine ufficiali (branch `copie-siti`): cifre dei numeri con prova «pagina» (regionali e `data/numeri.json`) e orari HH:MM dei contatti con prova «pagina» che non sono nella copia del loro url, PEC e indirizzi di invio che non sono in nessuna copia dell'azienda, PEC, indirizzo e orari delle sedi INPS (`inps.json`) che non sono nella copia della pagina della sede, url senza copia. Nella CI è il job «copie», con `--noti tests/copie-noti.txt --base origin/main`: diventa rosso (codice 3) solo per un problema nuovo su un dato che la PR ha cambiato; i problemi già noti, quelli su dati uguali a main («non di questa PR»: è cambiata la pagina ufficiale) e gli url nuovi senza copia vanno solo nel riepilogo del job |
 | `node tests/robustezza.cjs <indirizzo>` | cosa succede quando qualcosa va storto: file di dati che non arrivano, cookie bloccati, indirizzi ostili (`?torna=`), hash rotti |
+| `node tests/numeri-province.cjs <indirizzo>` | Numeri utili in ogni regione attiva e in ogni provincia (`numeri-utili/#<id>`): errori JavaScript, «undefined», blocco dell'azienda (`#asp-numeri`) e della sede INPS presenti, niente «Sicilia» fuori dalla Sicilia; il pulsante «Stampa» chiama davvero la stampa |
 
-Per i due controlli col browser: `python3 -m http.server 8080` in un altro terminale, poi `http://localhost:8080/`.
+**Elenco dei problemi noti delle copie** (`tests/copie-noti.txt`): una chiave per riga, per esempio
+`sicilia/enna numero 0935520111 https://www.aspenna.it`. Ci vanno solo i buchi delle copie (pagine fatte con
+JavaScript, siti giù) e i problemi già annotati nel `todo`. Si rifà con
+`node tools/confronta-copie.mjs <cartella-copie> --scrivi-noti tests/copie-noti.txt`, e chi rivede la PR controlla
+ogni riga nuova: aggiungere la propria chiave per far passare un numero sbagliato non vale. Le righe che il job
+segnala come «non ci sono più» si tolgono.
+
+Per i controlli col browser: `python3 -m http.server 8080` in un altro terminale, poi `http://localhost:8080/`.
 La CI (`.github/workflows/test.yml`) li fa tutti a ogni push e a ogni pull request: una PR si unisce solo con
 tutti i controlli verdi.
 
@@ -74,3 +82,8 @@ tutti i controlli verdi.
 - 21/10/2026 (giro 5) — chi scrive per un'altra persona: `engine.test.mjs` (genitore senza delega, tutore e
   amministratore di sostegno con il decreto), `combinazioni.cjs` (nell'invalidità di un minore è già scelto «genitore»),
   due righe in `errori-noti.test.mjs`: le lettere chiedevano sempre la delega.
+- 21/10/2026 — audit con errori messi apposta (giro 5): la CI ne prendeva 4 su 30. `tests/numeri-province.cjs` (un errore
+  JavaScript nella sede INPS di una provincia, un numero della Regione Siciliana mostrato a tutti, il pulsante Stampa
+  che non stampava); il job «copie» blocca i numeri, le PEC e gli orari cambiati dalla PR che la copia non conferma
+  (`tests/copie-noti.txt` per i buchi noti); `confronta-copie.mjs` controlla anche gli orari, le sedi INPS e
+  `data/numeri.json`, e `tools/copie.mjs` copia anche le pagine delle sedi INPS e dei numeri nazionali.

@@ -1,0 +1,45 @@
+# Problemi già noti di tools/confronta-copie.mjs (una chiave per riga). Non bloccano la CI.
+# Si rifà con: node tools/confronta-copie.mjs <cartella-copie> --scrivi-noti tests/copie-noti.txt
+# Regole in docs/protocollo-test.md. Togliere una riga quando il problema è risolto.
+calabria/vibo-valentia url https://www.aspvv.it
+lazio/roma numero 0656481 https://www.aslroma3.it/servizio-prenotazioni
+lazio/roma url https://www.salutelazio.it
+piemonte/verbano-cusio-ossola url https://www.aslvco.it
+puglia/bari url https://www.sanita.puglia.it/web/asl-bari
+puglia/barletta-andria-trani url https://www.sanita.puglia.it/web/asl-barletta-andria-trani
+puglia/brindisi url https://www.sanita.puglia.it/web/asl-brindisi
+puglia/foggia url https://www.sanita.puglia.it/web/asl-foggia
+puglia/lecce numero 800957773 https://sist.sanita.puglia.it/en/web/asl-lecce
+puglia/lecce url https://www.sanita.puglia.it/web/asl-lecce
+puglia/taranto url https://www.sanita.puglia.it/web/asl-taranto
+sicilia/enna numero 0935516725 https://www.aspenna.it/come-fare-per/ritiro-cartelle-cliniche
+sicilia/enna numero 0935520111 https://www.aspenna.it
+sicilia/enna numero 0935664389 https://www.aspenna.it/come-fare-per/esenzione-ticket
+sicilia/enna numero 0935671286 https://www.aspenna.it/come-fare-per/ritiro-cartelle-cliniche
+sicilia/enna numero 0935697043 https://www.aspenna.it/come-fare-per/esenzione-ticket
+sicilia/enna numero 3312661542 https://www.aspenna.it/come-fare-per/contattare-il-centro-screening
+sicilia/enna numero 800404960 https://www.aspenna.it/come-fare-per/contattare-il-centro-screening
+sicilia/enna orario 14:30 0935671286 https://www.aspenna.it/come-fare-per/ritiro-cartelle-cliniche
+sicilia/enna orario 15:30 0935516725 https://www.aspenna.it/come-fare-per/ritiro-cartelle-cliniche
+sicilia/enna orario 15:30 3312661542 https://www.aspenna.it/come-fare-per/contattare-il-centro-screening
+sicilia/enna orario 15:30 800404960 https://www.aspenna.it/come-fare-per/contattare-il-centro-screening
+sicilia/enna orario 17:30 0935671286 https://www.aspenna.it/come-fare-per/ritiro-cartelle-cliniche
+sicilia/inps-agrigento url https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.010000.010000-elencoStruttureInps.html
+sicilia/inps-caltanissetta url https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.180000.180000-elencoStruttureInps.html
+sicilia/inps-catania url https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.210000.210000-elencoStruttureInps.html
+sicilia/inps-enna url https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.280000.280000-elencoStruttureInps.html
+sicilia/inps-messina url https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.480000.480000-elencoStruttureInps.html
+sicilia/inps-palermo url https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.550000.550000-elencoStruttureInps.html
+sicilia/inps-ragusa url https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.650000.650000-elencoStruttureInps.html
+sicilia/inps-siracusa url https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.760000.760000-elencoStruttureInps.html
+sicilia/inps-trapani url https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.820000.820000-elencoStruttureInps.html
+sicilia/siracusa orario 16:30 0931989137 https://www.asp.sr.it/Servizi-e-prestazioni/Punto-Unico-di-Accesso-P.U.A
+trentino-alto-adige/bolzano numero 0471100100 https://home.asdaa.it/it/servizi.asp
+trentino-alto-adige/bolzano numero 0471100100 https://home.sabes.it/it/prenotazione-me.asp
+trentino-alto-adige/bolzano numero 0472100100 https://home.asdaa.it/it/servizi.asp
+trentino-alto-adige/bolzano numero 0472100100 https://home.sabes.it/it/prenotazione-me.asp
+trentino-alto-adige/bolzano numero 0473100100 https://home.asdaa.it/it/servizi.asp
+trentino-alto-adige/bolzano numero 0473100100 https://home.sabes.it/it/prenotazione-me.asp
+trentino-alto-adige/bolzano numero 0474100100 https://home.asdaa.it/it/servizi.asp
+trentino-alto-adige/bolzano numero 0474100100 https://home.sabes.it/it/prenotazione-me.asp
+trentino-alto-adige/bolzano url https://www.asdaa.it
