@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — Sardegna: i numeri utili delle 8 ASL
+- 73 numeri delle ASL (centralino, URP, CUP, PUA), controllati nelle copie delle pagine ufficiali del 21/10/2026.
+- Guardia medica: 116117 in 6 ASL su 8; per Medio Campidano e Cagliari le pagine non sono d'accordo e per ora non c'è un numero. CUP regionale 1533 da fisso.
+- Sedi INPS delle 8 zone.
+
 ## 21/10/2026 — Umbria: i numeri utili di Perugia e Terni
 - 71 numeri delle USL Umbria 1 e 2, controllati nelle copie delle pagine ufficiali del 21/10/2026.
 - Guardia medica: i numeri delle zone (il 116117 vale solo nel Perugino); CUP regionale NUS 800 636363.

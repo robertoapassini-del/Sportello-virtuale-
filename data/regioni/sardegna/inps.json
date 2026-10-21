@@ -1,0 +1,120 @@
+{
+ "region": "Sardegna",
+ "last_verified": "2026-10-21",
+ "note": "Indirizzi e PEC delle sedi INPS dalle pagine «sedi» di inps.it, copiate il 21/10/2026 dal server in Italia. Per andare allo sportello si prenota (MyINPS, app, 803 164 / 06 164164). regime (riforma della disabilità) da verificare: finché è null il modulo invalidità non va attivato per questa regione.",
+ "sources": [
+  {
+   "label": "INPS – sedi e contatti in Sardegna",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.170000.170000-elencoStruttureInps.html"
+  }
+ ],
+ "provinces": [
+  {
+   "id": "cagliari",
+   "name": "Cagliari",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.cagliari@postacert.inps.gov.it",
+   "address": "Viale Regina Margherita 1, Cagliari",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.170000.170000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "sulcis",
+   "name": "Carbonia -Giba",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.agenzia.carbonia@postacert.inps.gov.it",
+   "address": "Viale Trieste 2, Carbonia",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.170101.170101-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "ogliastra",
+   "name": "Lanusei",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.agenzia.lanusei@postacert.inps.gov.it",
+   "address": "Via Marconi 145, Lanusei",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.530001.530001-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "nuoro",
+   "name": "Nuoro",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.nuoro@postacert.inps.gov.it",
+   "address": "Via Leonardo Da Vinci 26, Nuoro",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.530000.530000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "gallura",
+   "name": "Olbia",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.agenziacomplessa.olbia@postacert.inps.gov.it",
+   "address": "Via Caduti Sul Lavoro 29, Olbia",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.730001.730001-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "oristano",
+   "name": "Oristano",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.oristano@postacert.inps.gov.it",
+   "address": "Via Dorando Petri - Torre a, Oristano",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.950000.950000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "medio-campidano",
+   "name": "Sanluri",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.agenzia.sanluri@postacert.inps.gov.it",
+   "address": "Viale Rinascita 36, Sanluri",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.170001.170001-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "sassari",
+   "name": "Sassari",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.sassari@postacert.inps.gov.it",
+   "address": "Via Rockefeller 68, Sassari",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.730000.730000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  }
+ ],
+ "todo": [
+  "Riforma della disabilità: verificare quali province sono nella sperimentazione e da quando (campo regime)."
+ ]
+}
