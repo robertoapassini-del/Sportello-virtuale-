@@ -1,7 +1,8 @@
 // Pagina iniziale: la domanda e 4 grandi riquadri, uno per area. Ogni riquadro porta
 // alla pagina dell'area (per esempio visite-esami/), come la home di NHS.uk.
 // La ricerca è nella testata: qui i risultati compaiono mentre si scrive.
-import { esc, loadJSON, loadRegioni, renderFooter, helpBox, sourcesBox, aslLabel, regioniAttive, regioneInfo, regioneSalvata } from './common.js';
+import { cerca } from './cerca.js';
+import { esc, loadJSON, loadRegioni, renderFooter, helpBox, sourcesBox, aslLabel, regioniAttive, regioneInfo, regioneSalvata, inRegione } from './common.js';
 
 const app = document.getElementById('app');
 let reg;
@@ -9,6 +10,17 @@ let rulesSources = [];
 
 function card(href, icon, title, small) {
   return `<a class="btn choice" href="${esc(href)}"><span class="ico" aria-hidden="true">${icon}</span><span class="txt">${esc(title)}${small ? ` <small>${esc(small)}</small>` : ''}</span></a>`;
+}
+
+// Per una regione salvata con solo alcuni moduli («moduli» nell'indice) o non ancora attiva: cosa c'è e cosa no.
+function copertura() {
+  const r = regioneSalvata();
+  if (!r || (r.attiva && !r.moduli)) return '';
+  // «In Lombardia», «Nel Lazio»: la preposizione giusta viene dall'indice delle regioni (inRegione).
+  const dove = esc(inRegione(r).replace(/^./, (c) => c.toUpperCase()));
+  return r.attiva
+    ? `<p class="home-regione">Le regole valgono in tutta Italia. ${dove} per ora abbiamo i numeri utili; uffici e lettere solo per la Sicilia.</p>`
+    : `<p class="home-regione">Le regole valgono in tutta Italia. ${dove} non abbiamo ancora numeri e uffici della zona: le lettere per ora solo per la Sicilia.</p>`;
 }
 
 // Chi siamo in una riga sopra le scelte; il resto sotto. Con una regione sola: «Per ora solo in <regione>».
@@ -23,6 +35,7 @@ function intro() {
   <h1>Di cosa hai bisogno?</h1>
   <p class="home-trust">Gratis. Siamo volontari: <strong>non siamo l'${esc(ente)} né l'INPS</strong>.${piu ? '' : ` Per ora solo in ${esc(regioneInfo().name)}.`}</p>
   ${piu ? `<p class="home-regione">📍 ${regioneSalvata() ? `Stai guardando: <strong>${esc(scelta.name)}</strong> · <a href="numeri-utili/?torna=${encodeURIComponent(location.pathname)}#regione">Cambia regione</a>` : `<a href="numeri-utili/?torna=${encodeURIComponent(location.pathname)}#regione">Scegli la tua regione</a> per vedere i numeri e gli uffici della tua zona`}</p>` : ''}
+  ${piu ? copertura() : ''}
   </section>`;
 }
 
@@ -74,40 +87,54 @@ function render() {
 // La pagina «Numeri utili» non è un modulo, ma la ricerca deve trovarla.
 const NUMERI = {
   id: 'numeri-utili', icon: '📞', title: 'Numeri utili', get small() { return `Guardia medica, CUP, ${aslLabel()}, INPS`; },
-  keywords: 'numero numeri telefono chiamare guardia medica notte cup urp centralino inps tessera sanitaria farmacia turno violenza 1522 112 118 116117 pua',
+  keywords: 'numero numeri telefono chiamare guardia medica notte cup urp centralino inps tessera sanitaria farmacia turno violenza 1522 112 118 116117 pua pronto soccorso ambulanza urgente urgenza urgenze emergenza sto male malore continuita assistenziale festivi',
 };
 
-function showResults(text) {
+// Quando non troviamo niente, ricordiamo sempre il 112 a chi sta male adesso.
+const NIENTE = '<p class="muted">Non abbiamo trovato niente con queste parole. Prova con un\'altra parola, oppure scegli uno dei riquadri qui sotto.</p>'
+  + '<p><strong>Se stai male adesso chiama il <a href="tel:112">112</a>.</strong></p>';
+
+// La ricerca resta nell'indirizzo (#q=…): aperto un risultato, il tasto Indietro la ritrova.
+function saveQuery(text) {
+  const q = text.trim();
+  const url = `${location.pathname}${location.search}${q ? `#q=${encodeURIComponent(q)}` : ''}`;
+  try { history.replaceState(history.state, '', url); } catch { /* indirizzo non modificabile: pazienza */ }
+}
+
+// submitted: la persona ha premuto Invio (o la lente). Con 1-2 lettere spieghiamo cosa fare.
+function showResults(text, submitted = false) {
   const box = document.getElementById('q-box');
   const list = document.getElementById('q-results');
-  const words = text.toLowerCase().split(/\s+/).filter((w) => w.length >= 3);
-  if (!words.length) { box.hidden = true; list.innerHTML = ''; return; }
-  // «rinnovo» trova anche «rinnova»: per le parole lunghe si confronta senza l'ultima lettera.
-  const stem = (w) => (w.length >= 6 ? w.slice(0, -1) : w);
-  const found = (hay) => words.some((w) => hay.toLowerCase().includes(stem(w)));
-  const hits = [];
-  for (const m of [NUMERI, ...reg.modules]) {
-    if (found(`${m.title} ${m.small} ${m.keywords}`)) hits.push({ href: `${m.id}/`, icon: m.icon, title: m.title, small: m.small });
-    // Le pagine corte della guida (moduli.json → "pages"): si cercano per titolo.
-    for (const sp of m.pages || []) if (found(sp.title)) hits.push({ href: `${m.id}/${sp.id}/`, icon: m.icon, title: sp.title, small: m.title });
+  const q = text.trim();
+  if (q.length < 3) {
+    if (submitted && q) {
+      box.hidden = false;
+      document.getElementById('q-title').textContent = 'Risultati della ricerca';
+      list.innerHTML = '<p class="muted">Scrivi almeno 3 lettere.</p>';
+    } else { box.hidden = true; list.innerHTML = ''; }
+    return;
   }
+  const hits = cerca(q, [NUMERI, ...reg.modules]);
   box.hidden = false;
-  document.getElementById('q-title').textContent = `Risultati per «${text.trim()}»`;
-  list.innerHTML = hits.length
-    ? hits.map((h) => card(h.href, h.icon, h.title, h.small)).join('')
-    : '<p class="muted">Non abbiamo trovato niente con questa parola. Prova con un\'altra, oppure scegli uno dei riquadri qui sotto.</p>';
+  document.getElementById('q-title').textContent = `Risultati per «${q}»`;
+  list.innerHTML = hits.length ? hits.map((h) => card(h.href, h.icon, h.title, h.small)).join('') : NIENTE;
 }
 
 (async function init() {
   renderFooter('');
   try {
     [reg] = await Promise.all([loadJSON('data/moduli.json'), loadRegioni('')]);
-    const names = [...new Set(reg.modules.flatMap((m) => m.data))].filter((n) => n.startsWith('rules'));
-    rulesSources = (await Promise.all(names.map((n) => loadJSON(`data/${n}.json`)))).flatMap((r) => r.sources);
   } catch {
-    app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>';
+    // Senza data/moduli.json resta visibile l'elenco degli argomenti scritto nella pagina
+    // (.static-fallback, mostrato dalla classe «errore-js»: css/style.css). Sopra, l'avviso.
+    document.documentElement.classList.add('errore-js');
+    app.querySelector('.js-only')?.remove();
+    app.insertAdjacentHTML('afterbegin', '<div class="notice bad" role="alert"><p>Non riusciamo a caricare tutta la pagina. Gli argomenti sono qui sotto. Riprova tra poco.</p></div>');
     return;
   }
+  // Le fonti in fondo alla pagina: se un file non si carica, la pagina funziona lo stesso.
+  const names = [...new Set(reg.modules.flatMap((m) => m.data || []))].filter((n) => n.startsWith('rules'));
+  rulesSources = (await Promise.all(names.map((n) => loadJSON(`data/${n}.json`).then((r) => r.sources || []).catch(() => [])))).flat();
   const params = new URLSearchParams(location.search);
   // Vecchi link ai gruppi (?gruppo=casa): ora ogni area ha la sua pagina.
   const old = reg.groups.find((g) => g.id === params.get('gruppo'));
@@ -117,10 +144,11 @@ function showResults(text) {
   // In questa pagina la ricerca della testata non ricarica: mostra i risultati subito.
   const hq = document.getElementById('hq');
   if (hq) {
-    hq.addEventListener('input', () => showResults(hq.value));
+    hq.addEventListener('input', () => { showResults(hq.value); saveQuery(hq.value); });
     hq.form.addEventListener('submit', (e) => {
       e.preventDefault();
-      showResults(hq.value);
+      showResults(hq.value, true);
+      saveQuery(hq.value);
       document.getElementById('q-box').scrollIntoView({ block: 'start' });
     });
     // Ricerca partita da un'altra pagina: ./#q=carrozzina (o ?q= senza JavaScript).

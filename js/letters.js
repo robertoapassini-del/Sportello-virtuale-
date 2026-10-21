@@ -5,8 +5,8 @@ import { formatIt, art } from './engine.js';
 const blank = (v, placeholder = '__________') => (v && String(v).trim()) || placeholder;
 
 function personBlock(p) {
-  return `Il/La sottoscritto/a ${blank(p.fullName)}, nato/a a ${blank(p.birthPlace)} ${art('il', p.birthDate)}${p.birthDate ? formatIt(p.birthDate) : '__________'}, ` +
-    `codice fiscale ${blank(p.cf)},\nresidente in ${blank(p.address)}, tel. ${blank(p.phone)}, email ${blank(p.email)},`;
+  return `Il/La sottoscritto/a ${blank(p.fullName)}, nato/a ${/^\s*a/i.test(p.birthPlace || '') ? 'ad' : 'a'} ${blank(p.birthPlace)} ${art('il', p.birthDate)}${p.birthDate ? formatIt(p.birthDate) : '__________'}, ` +
+    `codice fiscale ${blank(p.cf)},${p.idDoc && String(p.idDoc).trim() ? ` documento di identità ${String(p.idDoc).trim()},` : ''}\nresidente in ${blank(p.address)}, tel. ${blank(p.phone)}, email ${blank(p.email)},`;
 }
 
 function delegateBlock(p) {

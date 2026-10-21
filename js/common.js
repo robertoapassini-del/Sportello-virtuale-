@@ -60,13 +60,34 @@ export function loadRegioni(root = '') {
   return indiceLoading;
 }
 
-// La scelta salvata nel browser. Il browser può non avere localStorage o bloccarlo.
+// La scelta salvata nel browser. Il browser può non avere localStorage o bloccarlo (cookie bloccati,
+// alcune finestre anonime): allora la scelta resta in memoria e, per non perderla quando la pagina
+// si ricarica o si passa a un'altra pagina del sito nella stessa scheda, anche nel nome della scheda
+// (window.name: resta nel browser, non va al server, e i browser lo cancellano passando a un altro sito).
+const NAME_PREFIX = 'gs-regione:';
+let storageOk = true;
+let regioneInMemoria = (() => {
+  try { return typeof window !== 'undefined' && window.name.startsWith(NAME_PREFIX) ? window.name.slice(NAME_PREFIX.length) : null; } catch { return null; }
+})();
 function savedRegione() {
-  try { return localStorage.getItem(REGIONE_KEY); } catch { return null; }
+  if (!storageOk) return regioneInMemoria;
+  try { return localStorage.getItem(REGIONE_KEY) ?? regioneInMemoria; } catch { storageOk = false; return regioneInMemoria; }
 }
 export function setRegione(id) {
-  try { localStorage.setItem(REGIONE_KEY, id); } catch { /* non si ricorda: pazienza */ }
+  regioneInMemoria = id;
+  try {
+    localStorage.setItem(REGIONE_KEY, id);
+    if (localStorage.getItem(REGIONE_KEY) === id) return;
+  } catch { /* bloccato: si usa il nome della scheda */ }
+  storageOk = false;
+  try { if (!window.name || window.name.startsWith(NAME_PREFIX)) window.name = `${NAME_PREFIX}${id}`; } catch { /* resta solo in memoria */ }
 }
+// Vero se la scelta resta anche ricaricando la pagina (localStorage oppure nome della scheda): js/flow.js
+// ricarica la pagina per prendere i dati della regione nuova solo se la scelta non si perde.
+export const regioneRicordata = () => {
+  if (storageOk) return true;
+  try { return window.name === `${NAME_PREFIX}${regioneInMemoria}`; } catch { return false; }
+};
 
 // Tutte le regioni dell'indice (vuoto finché l'indice non è caricato) e quelle con i dati.
 export const regioni = () => (indice ? indice.regioni : []);
@@ -314,6 +335,15 @@ export async function copyText(text, button) {
     const old = button.innerHTML;
     button.textContent = 'Copiato ✓';
     setTimeout(() => { button.innerHTML = old; }, 2000);
+    // Il nuovo testo del pulsante gli screen reader non lo leggono: lo si dice in una zona «status».
+    let st = document.getElementById('gs-status');
+    if (!st) {
+      st = Object.assign(document.createElement('p'), { id: 'gs-status', className: 'sr-only' });
+      st.setAttribute('role', 'status');
+      document.body.append(st);
+    }
+    st.textContent = '';
+    setTimeout(() => { st.textContent = 'Testo copiato. Ora puoi incollarlo nella email o nel messaggio.'; }, 50);
   }
 }
 

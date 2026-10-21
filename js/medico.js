@@ -87,7 +87,7 @@ const screens = {
     return {
       html: `
         <div class="hero" aria-hidden="true">✅</div>
-        <h1>Ecco come fare a ${esc(a.province)}</h1>
+        <h1>Ecco come fare ${/^a/i.test(a.province) ? 'ad' : 'a'} ${esc(a.province)}</h1>
         <div class="notice info"><p>${whoText()}</p></div>
         ${extra}
         <h2>Dove si fa</h2>

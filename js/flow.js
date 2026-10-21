@@ -2,7 +2,7 @@
 // riquadri Aiuto e Fonti. Le risposte restano in memoria finché la pagina è aperta.
 import {
   esc, helpBox, sourcesBox, choice, moreHelp, hideHeadingEmoji, enableStart,
-  MAINTAINER_EMAIL, regioni, regioniAttive, regioneInfo, inRegione, regioneDeiDati, regioneNonPronta, regioneSalvata, regione, setRegione,
+  MAINTAINER_EMAIL, regioni, regioniAttive, regioneInfo, inRegione, regioneDeiDati, regioneNonPronta, regioneSalvata, regione, setRegione, regioneRicordata, moduloPagina,
 } from './common.js';
 
 export { choice };
@@ -90,29 +90,49 @@ export function regionChoices() {
     <ul class="regioni-off">${off.map((r) => `<li><button type="button" class="link" data-action="region" data-region="${esc(r.id)}">${esc(r.name)}</button> <small>non ancora disponibile</small></li>`).join('')}</ul>` : ''}`;
 }
 
-// Schermata per chi ha scelto una regione che non c'è ancora: niente uffici e numeri, ma l'invito
-// a leggere la parte valida in tutta Italia (la prima schermata del modulo) e a scriverci.
-export function regionMissing(first = 'intro') {
+// Schermata per chi ha scelto una regione che non c'è ancora (o che per questo modulo non ha i dati):
+// niente uffici e numeri, ma il link alla guida scritta sotto (<section id="guida">, le regole valide
+// in tutta Italia) e, per una regione non attiva, ai Numeri utili nazionali e l'invito a scriverci.
+// Non riporta mai alla prima schermata del modulo: il suo pulsante riporterebbe qui (giro senza uscita).
+const guidaLink = () => (typeof document !== 'undefined' && document.getElementById('guida')
+  ? '<a class="btn choice" href="#guida"><span class="txt">Leggi le regole valide in tutta Italia</span></a>' : '');
+export function regionMissing() {
   const r = regioneNonPronta();
   if (!r) return '';
   // Regione attiva, ma questo modulo non ha ancora i suoi dati: la parte nazionale e i numeri utili della regione.
   if (r.parziale) {
     return `<div class="notice warn"><p><strong>${esc(r.name)}:</strong> per questo argomento uffici e numeri della tua regione non li abbiamo ancora.
       Quello che vale in tutta Italia lo trovi lo stesso.</p></div>
-    ${first ? `<button type="button" class="btn choice" data-go="${esc(first)}"><span class="txt">Leggi cosa vale in tutta Italia</span></button>` : ''}
+    ${guidaLink()}
     ${(r.moduli || []).includes('numeri-utili') ? `<a class="btn primary center" href="../numeri-utili/">📞 I numeri utili: ${esc(r.name)}</a>` : ''}
     <p class="cambia-regione"><button type="button" class="link" data-action="change-region">Hai sbagliato regione? Cambia</button></p>`;
   }
   return `<div class="notice warn"><p><strong>${esc(r.name)}: non c'è ancora.</strong> Uffici e numeri della tua regione non li abbiamo.
       Quello che vale in tutta Italia lo trovi lo stesso.</p></div>
-    ${first ? `<button type="button" class="btn choice" data-go="${esc(first)}"><span class="txt">Leggi cosa vale in tutta Italia</span></button>` : ''}
+    ${guidaLink()}
+    ${moduloPagina() !== 'numeri-utili' ? '<a class="btn primary center" href="../numeri-utili/">📞 I numeri validi in tutta Italia</a>' : ''}
     <a class="btn primary center" href="${esc(regionMail(r.name))}">✉️ Chiedici di aggiungerla</a>
     <p class="muted">Si apre la tua email. Decidi tu se mandarla.</p>
     <p class="cambia-regione"><button type="button" class="link" data-action="change-region">Hai sbagliato regione? Cambia</button></p>`;
 }
-const regionMissingScreen = (first) => ({
-  html: `<h1>📍 ${regioneNonPronta()?.parziale ? 'Qui la tua regione non c\'è ancora' : 'La tua regione non c\'è ancora'}</h1>${regionMissing(first)}`,
+const regionMissingScreen = () => ({
+  html: `<h1>📍 ${regioneNonPronta()?.parziale ? `Per questo argomento ${esc(inRegione())} non abbiamo ancora i dati` : 'La tua regione non c\'è ancora'}</h1>${regionMissing()}`,
 });
+
+// Link alla guida scritta (#guida) dentro #app: scorre alla guida senza aggiungere una voce
+// alla cronologia (il tasto Indietro resta per le schermate). L'ascolto è sul documento, così vale
+// anche dopo che #app è stato ridisegnato.
+if (typeof document !== 'undefined') {
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest && e.target.closest('#app a[href="#guida"]');
+    const g = a && document.getElementById('guida');
+    if (!g) return;
+    e.preventDefault();
+    g.scrollIntoView({ block: 'start' });
+    if (!g.hasAttribute('tabindex')) g.setAttribute('tabindex', '-1');
+    g.focus({ preventScroll: true });
+  });
+}
 
 const regionScreen = () => ({
   html: `<h1>📍 In quale regione abiti?</h1>
@@ -130,12 +150,12 @@ export function changeRegionLink() {
 // Mette la scelta della regione davanti alla schermata della provincia (name).
 // Torna una funzione per il disegno: (current, state) → il link «Cambia regione»
 // se la schermata mostra dati regionali (la provincia o le schermate dopo).
-export function withRegion(screens, name = 'province', first = 'intro') {
+export function withRegion(screens, name = 'province') {
   const inner = screens[name];
   if (!inner) return () => '';
   screens[name] = () => {
     if (needsRegion()) return regionScreen();
-    return regioneNonPronta() ? regionMissingScreen(first) : inner();
+    return regioneNonPronta() ? regionMissingScreen() : inner();
   };
   return (current, state = {}) => {
     if (current !== name) askRegion = false;
@@ -151,7 +171,10 @@ export function regionAction(btn, nav, name = 'province') {
     askRegion = false;
     // Regione attiva diversa da quella dei dati già caricati: si ricarica la pagina con i dati giusti.
     // Una regione non attiva non ha dati: basta ridisegnare (si vede l'invito).
-    if (regioneDeiDati() && !regioneNonPronta() && regione() !== regioneDeiDati()) location.reload();
+    // Se il browser non può ricordare la scelta (localStorage bloccato e niente nome della scheda,
+    // vedi setRegione in js/common.js) ricaricando la si perderebbe e si tornerebbe a «In quale regione abiti?»:
+    // allora si ridisegna, con la scelta in memoria finché la pagina è aperta.
+    if (regioneDeiDati() && !regioneNonPronta() && regione() !== regioneDeiDati() && regioneRicordata()) location.reload();
     else nav.render();
     return true;
   }
