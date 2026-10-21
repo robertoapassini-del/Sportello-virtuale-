@@ -1,0 +1,1057 @@
+{
+ "region": "Emilia-Romagna",
+ "model": "Aziende USL",
+ "_note": "Numeri delle AUSL dell'Emilia-Romagna per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili. Il 116117 non risulta ancora attivo: restano i numeri di guardia medica delle aziende.",
+ "asl": [
+  {
+   "id": "bologna",
+   "name": "AUSL di Bologna e AUSL di Imola",
+   "province": "Bologna",
+   "site_url": "https://www.ausl.bologna.it/",
+   "official_domains": [
+    "ausl.bologna.it",
+    "ausl.imola.bo.it",
+    "regione.emilia-romagna.it",
+    "salute.regione.emilia-romagna.it"
+   ],
+   "guardia_medica_url": "https://www.ausl.bologna.it/cit/cagm",
+   "pua_url": "https://www.ausl.imola.bo.it/PUA",
+   "emails": [
+    "urp@ausl.imola.bo.it",
+    "urpdistrettosl@ausl.bologna.it"
+   ],
+   "phones": [
+    {
+     "label": "Sede dell'AUSL di Bologna",
+     "number": "051 6225111",
+     "url": "https://www.ausl.bologna.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino dell'AUSL di Imola",
+     "number": "0542 662111",
+     "url": "https://www.ausl.imola.bo.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/13",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "urp",
+     "label": "Numero verde del Servizio sanitario regionale: informazioni su tutti i servizi, da Piacenza a Rimini, e assistenza per Fascicolo sanitario e CupWeb (gratis anche da cellulare)",
+     "number": "800 033033",
+     "hours": "Feriali 8:30–18, sabato 8:30–13",
+     "url": "https://salute.regione.emilia-romagna.it/normativa-e-documentazione/materiale-informativo/schede-informative/numero-verde-ssr",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP telefonico dell'AUSL di Bologna: prenotare visite ed esami (numero verde gratuito)",
+     "number": "800 884 888",
+     "url": "https://www.ausl.bologna.it/istituto-delle-scienze-neurologiche/link/prenotazioni",
+     "hours": "Dal lunedì al venerdì 7.30–17.30, sabato 7.30–12.30",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Prenotazioni telefoniche dell'AUSL di Imola (la pagina lo indica per i prelievi)",
+     "number": "800040606",
+     "url": "https://www.ausl.imola.bo.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/12260",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica dell'AUSL di Bologna (area di Bologna)",
+     "number": "051 3131",
+     "url": "https://www.ausl.bologna.it/cit/cagm",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica dell'AUSL di Imola: numero unico per il Circondario Imolese",
+     "number": "800 040 050",
+     "url": "https://www.ausl.imola.bo.it/CAD_CAU",
+     "hours": "Notti, prefestivi e festivi",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'AUSL di Imola: ufficio per i cittadini",
+     "number": "0542 604121",
+     "url": "https://www.ausl.imola.bo.it/urp",
+     "hours": "Dal lunedì al venerdì 8.30–12.30; martedì 14–16.30",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'AUSL di Bologna – Distretto Savena Idice (San Lazzaro di Savena)",
+     "number": "051 6224289",
+     "url": "https://www.ausl.bologna.it/guida-ai-servizi/luoghi/15328",
+     "hours": "Dal lunedì al venerdì 8.30–13",
+     "address": "Via del Seminario 1, San Lazzaro di Savena",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'AUSL di Imola – Casa della Comunità di Imola: accesso a cure e servizi a casa",
+     "number": "0542 606720",
+     "url": "https://www.ausl.imola.bo.it/PUA",
+     "address": "Viale Amendola 8, Imola",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA sociale – Casa della Comunità di Castel San Pietro Terme (AUSL di Imola)",
+     "number": "051 6955331",
+     "url": "https://www.ausl.imola.bo.it/PUA",
+     "hours": "Lunedì e mercoledì 9–12.30",
+     "address": "Viale Oriani 1, Castel San Pietro Terme",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'AUSL di Imola",
+     "number": "0542 662111",
+     "url": "https://www.ausl.imola.bo.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/13",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "AUSL Bologna – CUP",
+     "url": "https://www.ausl.bologna.it/istituto-delle-scienze-neurologiche/link/prenotazioni"
+    },
+    {
+     "label": "AUSL Bologna – Continuità assistenziale",
+     "url": "https://www.ausl.bologna.it/cit/cagm"
+    },
+    {
+     "label": "AUSL Bologna – URP Savena Idice",
+     "url": "https://www.ausl.bologna.it/guida-ai-servizi/luoghi/15328"
+    },
+    {
+     "label": "AUSL Imola – URP",
+     "url": "https://www.ausl.imola.bo.it/urp"
+    },
+    {
+     "label": "AUSL Imola – Continuità assistenziale e CAU",
+     "url": "https://www.ausl.imola.bo.it/CAD_CAU"
+    },
+    {
+     "label": "AUSL Imola – PUA",
+     "url": "https://www.ausl.imola.bo.it/PUA"
+    },
+    {
+     "label": "AUSL Imola – Chi siamo",
+     "url": "https://www.ausl.imola.bo.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/13"
+    },
+    {
+     "label": "Regione Emilia-Romagna – Numero verde del Servizio sanitario regionale",
+     "url": "https://salute.regione.emilia-romagna.it/normativa-e-documentazione/materiale-informativo/schede-informative/numero-verde-ssr"
+    }
+   ],
+   "todo": [
+    "AUSL di Bologna: non ho trovato un numero dell'URP centrale né un numero del PUA (la pagina PUA di Valsamoggia non ha telefono). C'è solo l'URP di San Lazzaro.",
+    "La pagina della guardia medica di Bologna (051 3131) risulta «pubblicata nel 2008», ma lo stesso numero è indicato anche nelle pagine CAU attuali.",
+    "AUSL di Imola: il footer del sito dà 0542 604111, la pagina «Chi siamo» dà come centralino 0542 662111: da chiarire quale sia il centralino.",
+    "AUSL di Imola: non ho trovato un CUP telefonico dedicato; l'800040606 è citato per prenotare i prelievi."
+   ],
+   "last_verified": "2026-10-21"
+  },
+  {
+   "id": "ferrara",
+   "name": "AUSL di Ferrara",
+   "province": "Ferrara",
+   "site_url": "https://www.ausl.fe.it/",
+   "official_domains": [
+    "ausl.fe.it",
+    "regione.emilia-romagna.it",
+    "salute.regione.emilia-romagna.it"
+   ],
+   "guardia_medica_url": "https://www.ausl.fe.it/come-fare-per/come-e-dove-curarmi/servizio-di-continuita-assistenziale-guardia-medica",
+   "pua_url": "https://www.ausl.fe.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/servizio-di-assistenza-domiciliare-adi",
+   "emails": [
+    "urp@ausl.fe.it"
+   ],
+   "phones": [
+    {
+     "label": "Centralino dell'AUSL di Ferrara",
+     "number": "0532 235111",
+     "url": "https://www.ausl.fe.it/strutture/amministrazione/servizi-in-staff-alla-direzione/area-knowledge-center/area-comunicazione/ufficio-relazioni-con-il-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "urp",
+     "label": "Numero verde del Servizio sanitario regionale: informazioni su tutti i servizi, da Piacenza a Rimini, e assistenza per Fascicolo sanitario e CupWeb (gratis anche da cellulare)",
+     "number": "800 033033",
+     "hours": "Feriali 8:30–18, sabato 8:30–13",
+     "url": "https://salute.regione.emilia-romagna.it/normativa-e-documentazione/materiale-informativo/schede-informative/numero-verde-ssr",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Numero verde dell'AUSL di Ferrara per prenotare visite specialistiche ed esami",
+     "number": "800 532000",
+     "url": "https://at.ausl.fe.it/organizzazione/telefono-e-posta-elettronica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica dell'AUSL di Ferrara: numero verde unico per tutta la provincia",
+     "number": "800 087 601",
+     "url": "https://www.ausl.fe.it/come-fare-per/come-e-dove-curarmi/servizio-di-continuita-assistenziale-guardia-medica",
+     "hours": "Notti dalle 20 alle 8; prefestivi e festivi dalle 8 alle 20",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'AUSL di Ferrara – Cittadella della Salute San Rocco",
+     "number": "0532 235605",
+     "url": "https://www.ausl.fe.it/strutture/amministrazione/servizi-in-staff-alla-direzione/area-knowledge-center/area-comunicazione/ufficio-relazioni-con-il-pubblico",
+     "hours": "Dal lunedì al venerdì 9–13",
+     "address": "Corso Giovecca 203, Ferrara",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'AUSL di Ferrara – Copparo",
+     "number": "0532 879733",
+     "url": "https://www.ausl.fe.it/strutture/amministrazione/servizi-in-staff-alla-direzione/area-knowledge-center/area-comunicazione/ufficio-relazioni-con-il-pubblico",
+     "address": "Via Roma 18, Copparo",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'AUSL di Ferrara – Ospedale di Argenta",
+     "number": "0532 317856",
+     "url": "https://www.ausl.fe.it/strutture/amministrazione/servizi-in-staff-alla-direzione/area-knowledge-center/area-comunicazione/ufficio-relazioni-con-il-pubblico",
+     "hours": "Mercoledì e venerdì 8.30–13",
+     "address": "Via Nazionale 7, Argenta",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'AUSL di Ferrara – Portomaggiore",
+     "number": "0532 817429",
+     "url": "https://www.ausl.fe.it/strutture/amministrazione/servizi-in-staff-alla-direzione/area-knowledge-center/area-comunicazione/ufficio-relazioni-con-il-pubblico",
+     "address": "Via De Amicis 22, Portomaggiore",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'AUSL di Ferrara – Ospedale del Delta (Lagosanto)",
+     "number": "0533 723224",
+     "url": "https://www.ausl.fe.it/strutture/amministrazione/servizi-in-staff-alla-direzione/area-knowledge-center/area-comunicazione/ufficio-relazioni-con-il-pubblico",
+     "address": "Via Valle Oppio 2, Lagosanto",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'AUSL di Ferrara – Codigoro",
+     "number": "0533 729812",
+     "url": "https://www.ausl.fe.it/strutture/amministrazione/servizi-in-staff-alla-direzione/area-knowledge-center/area-comunicazione/ufficio-relazioni-con-il-pubblico",
+     "address": "Riviera Cavallotti 347, Codigoro",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'AUSL di Ferrara – Comacchio",
+     "number": "0533 310645",
+     "url": "https://www.ausl.fe.it/strutture/amministrazione/servizi-in-staff-alla-direzione/area-knowledge-center/area-comunicazione/ufficio-relazioni-con-il-pubblico",
+     "address": "Via Felletti 2, Comacchio",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'AUSL di Ferrara – Ospedale di Cento",
+     "number": "051 6838429",
+     "url": "https://www.ausl.fe.it/strutture/amministrazione/servizi-in-staff-alla-direzione/area-knowledge-center/area-comunicazione/ufficio-relazioni-con-il-pubblico",
+     "hours": "Dal lunedì al venerdì 9–13",
+     "address": "Via Vicini 2, Cento",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare (ADI) dell'AUSL di Ferrara – sede di Ferrara",
+     "number": "0532 235789",
+     "url": "https://www.ausl.fe.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/servizio-di-assistenza-domiciliare-adi",
+     "address": "Via Cassoli 30, Ferrara",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare (ADI) – Copparo",
+     "number": "0532 879732",
+     "url": "https://www.ausl.fe.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/servizio-di-assistenza-domiciliare-adi",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare (ADI) – Cento",
+     "number": "051 6838505",
+     "url": "https://www.ausl.fe.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/servizio-di-assistenza-domiciliare-adi",
+     "address": "Via XXV Aprile 1/B, Cento",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare (ADI) – Codigoro",
+     "number": "0533 729907",
+     "url": "https://www.ausl.fe.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/servizio-di-assistenza-domiciliare-adi",
+     "address": "Via R. Cavallotti 347, Codigoro",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare (ADI) – Portomaggiore",
+     "number": "0532 817582",
+     "url": "https://www.ausl.fe.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/servizio-di-assistenza-domiciliare-adi",
+     "address": "Via E. De Amicis 22, Portomaggiore",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Informazioni sugli screening (AUSL di Ferrara)",
+     "number": "800 532008",
+     "url": "https://at.ausl.fe.it/organizzazione/telefono-e-posta-elettronica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "AUSL Ferrara – URP",
+     "url": "https://www.ausl.fe.it/strutture/amministrazione/servizi-in-staff-alla-direzione/area-knowledge-center/area-comunicazione/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "label": "AUSL Ferrara – Telefono e posta elettronica",
+     "url": "https://at.ausl.fe.it/organizzazione/telefono-e-posta-elettronica"
+    },
+    {
+     "label": "AUSL Ferrara – Guardia medica",
+     "url": "https://www.ausl.fe.it/come-fare-per/come-e-dove-curarmi/servizio-di-continuita-assistenziale-guardia-medica"
+    },
+    {
+     "label": "AUSL Ferrara – ADI",
+     "url": "https://www.ausl.fe.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/servizio-di-assistenza-domiciliare-adi"
+    },
+    {
+     "label": "Regione Emilia-Romagna – Numero verde del Servizio sanitario regionale",
+     "url": "https://salute.regione.emilia-romagna.it/normativa-e-documentazione/materiale-informativo/schede-informative/numero-verde-ssr"
+    }
+   ],
+   "todo": [
+    "Il numero verde CUP 800 532000 è nell'elenco telefoni di Amministrazione trasparente: le pagine sulle prenotazioni copiate non lo riportano."
+   ],
+   "last_verified": "2026-10-21"
+  },
+  {
+   "id": "forli-cesena",
+   "name": "AUSL della Romagna – ambito di Forlì-Cesena",
+   "province": "Forlì-Cesena",
+   "site_url": "https://www.auslromagna.it/",
+   "official_domains": [
+    "auslromagna.it",
+    "regione.emilia-romagna.it",
+    "salute.regione.emilia-romagna.it"
+   ],
+   "guardia_medica_url": "https://www.auslromagna.it/luoghi/guardia-medica",
+   "emails": [],
+   "pec": "azienda@pec.auslromagna.it",
+   "phones": [],
+   "contacts": [
+    {
+     "topic": "urp",
+     "label": "Numero verde del Servizio sanitario regionale: informazioni su tutti i servizi, da Piacenza a Rimini, e assistenza per Fascicolo sanitario e CupWeb (gratis anche da cellulare)",
+     "number": "800 033033",
+     "hours": "Feriali 8:30–18, sabato 8:30–13",
+     "url": "https://salute.regione.emilia-romagna.it/normativa-e-documentazione/materiale-informativo/schede-informative/numero-verde-ssr",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUPTEL dell'AUSL della Romagna (ambito di Forlì-Cesena): prenotare visite ed esami con la ricetta",
+     "number": "800 002255",
+     "url": "https://www.auslromagna.it/servizi/cup",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica dell'AUSL della Romagna – provincia di Forlì-Cesena",
+     "number": "800 118 009",
+     "url": "https://www.auslromagna.it/luoghi/guardia-medica",
+     "hours": "Dalle 20 alle 8 nei feriali; dalle 8 del sabato o prefestivo alle 8 del lunedì o primo giorno feriale",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA di Forlì: accesso ai servizi sociosanitari per over 65 non autosufficienti",
+     "number": "0543 712929",
+     "url": "https://www.auslromagna.it/azienda/organizzazione/distretti/distretto-di-forli/luoghi/pua-punto-unico-di-accesso-di-forli",
+     "hours": "Lunedì, mercoledì e venerdì 9–12 (accesso diretto); martedì e giovedì 14.30–17.30 (su appuntamento)",
+     "address": "Via G. Oberdan 11, Forlì",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "AUSL Romagna – CUP",
+     "url": "https://www.auslromagna.it/servizi/cup"
+    },
+    {
+     "label": "AUSL Romagna – Guardia medica",
+     "url": "https://www.auslromagna.it/luoghi/guardia-medica"
+    },
+    {
+     "label": "AUSL Romagna – PUA di Forlì",
+     "url": "https://www.auslromagna.it/azienda/organizzazione/distretti/distretto-di-forli/luoghi/pua-punto-unico-di-accesso-di-forli"
+    },
+    {
+     "label": "Regione Emilia-Romagna – Numero verde del Servizio sanitario regionale",
+     "url": "https://salute.regione.emilia-romagna.it/normativa-e-documentazione/materiale-informativo/schede-informative/numero-verde-ssr"
+    }
+   ],
+   "todo": [
+    "Nelle copie delle pagine dell'AUSL della Romagna non ci sono il centralino né i numeri dell'URP (le pagine URP non hanno telefoni).",
+    "Il PUA di Forlì è solo per i residenti del Comune di Forlì; manca un PUA per Cesena."
+   ],
+   "last_verified": "2026-10-21",
+   "pua_url": "https://www.auslromagna.it/azienda/organizzazione/distretti/distretto-di-forli/luoghi/pua-punto-unico-di-accesso-di-forli"
+  },
+  {
+   "id": "modena",
+   "name": "AUSL di Modena",
+   "province": "Modena",
+   "site_url": "https://www.ausl.mo.it/",
+   "official_domains": [
+    "ausl.mo.it",
+    "regione.emilia-romagna.it",
+    "salute.regione.emilia-romagna.it"
+   ],
+   "guardia_medica_url": "https://www.ausl.mo.it/servizi-e-prestazioni/guardia-medica/",
+   "emails": [],
+   "pec": "auslmo@pec.ausl.mo.it",
+   "phones": [
+    {
+     "label": "Centralino dell'AUSL di Modena",
+     "number": "059 435111",
+     "url": "https://www.ausl.mo.it/organizzazione/staff-di-direzione/rapporti-con-lesterno-e-comunicazione/ufficio-relazioni-con-il-pubblico-urp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "urp",
+     "label": "Numero verde del Servizio sanitario regionale: informazioni su tutti i servizi, da Piacenza a Rimini, e assistenza per Fascicolo sanitario e CupWeb (gratis anche da cellulare)",
+     "number": "800 033033",
+     "hours": "Feriali 8:30–18, sabato 8:30–13",
+     "url": "https://salute.regione.emilia-romagna.it/normativa-e-documentazione/materiale-informativo/schede-informative/numero-verde-ssr",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Numero verde dell'AUSL di Modena per prenotare visite ed esami",
+     "number": "800 239123",
+     "url": "https://www.ausl.mo.it/servizi-online/cupweb/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica dell'AUSL di Modena: numero verde unico per tutta la provincia",
+     "number": "800 032 032",
+     "url": "https://www.ausl.mo.it/servizi-e-prestazioni/guardia-medica/",
+     "hours": "Notti dalle 20 alle 8; prefestivi e festivi dalle 8 alle 20",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'AUSL di Modena (sede centrale, tramite centralino)",
+     "number": "059 435111",
+     "url": "https://www.ausl.mo.it/organizzazione/staff-di-direzione/rapporti-con-lesterno-e-comunicazione/ufficio-relazioni-con-il-pubblico-urp",
+     "address": "Via S. Giovanni del Cantone 23, Modena",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "AUSL Modena – URP",
+     "url": "https://www.ausl.mo.it/organizzazione/staff-di-direzione/rapporti-con-lesterno-e-comunicazione/ufficio-relazioni-con-il-pubblico-urp"
+    },
+    {
+     "label": "AUSL Modena – CupWeb",
+     "url": "https://www.ausl.mo.it/servizi-online/cupweb/"
+    },
+    {
+     "label": "AUSL Modena – Guardia medica",
+     "url": "https://www.ausl.mo.it/servizi-e-prestazioni/guardia-medica/"
+    },
+    {
+     "label": "Regione Emilia-Romagna – Numero verde del Servizio sanitario regionale",
+     "url": "https://salute.regione.emilia-romagna.it/normativa-e-documentazione/materiale-informativo/schede-informative/numero-verde-ssr"
+    }
+   ],
+   "todo": [
+    "Le pagine delle sedi URP e delle cure domiciliari danno «pagina non trovata»: mancano URP distrettuali e numero per le cure a casa.",
+    "Il numero verde CUP 800 239123 è citato nella pagina CupWeb, non in una pagina dedicata al CUP telefonico: orari non indicati."
+   ],
+   "last_verified": "2026-10-21"
+  },
+  {
+   "id": "parma",
+   "name": "AUSL di Parma",
+   "province": "Parma",
+   "site_url": "https://www.ausl.pr.it/",
+   "official_domains": [
+    "ausl.pr.it",
+    "regione.emilia-romagna.it",
+    "salute.regione.emilia-romagna.it"
+   ],
+   "guardia_medica_url": "https://www.ausl.pr.it/dove_curarsi/guardia_medica/default.aspx",
+   "pua_url": "https://www.ausl.pr.it/dove_curarsi/assistenza_domiciliare_1/default.aspx",
+   "emails": [
+    "urpfidenza@ausl.pr.it",
+    "urplanghirano@ausl.pr.it"
+   ],
+   "pec": "urp.parma@pec.ausl.pr.it",
+   "phones": [
+    {
+     "label": "Centralino dell'AUSL di Parma",
+     "number": "0521 393111",
+     "url": "https://www.ausl.pr.it/come_fare/numeri_utili/default.aspx",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "urp",
+     "label": "Numero verde del Servizio sanitario regionale: informazioni su tutti i servizi, da Piacenza a Rimini, e assistenza per Fascicolo sanitario e CupWeb (gratis anche da cellulare)",
+     "number": "800 033033",
+     "hours": "Feriali 8:30–18, sabato 8:30–13",
+     "url": "https://salute.regione.emilia-romagna.it/normativa-e-documentazione/materiale-informativo/schede-informative/numero-verde-ssr",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Numero verde provinciale per prenotare e disdire visite ed esami (AUSL di Parma)",
+     "number": "800 629 444",
+     "url": "https://www.ausl.pr.it/come_fare/prenotazioni_disdette/assistenza-specialistica.aspx",
+     "hours": "Dal lunedì al venerdì 7.30–19, sabato 7.30–13.30",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Prenotazioni e disdette per chi chiama dall'estero (AUSL di Parma)",
+     "number": "0521 393948",
+     "url": "https://www.ausl.pr.it/come_fare/prenotazioni_disdette/assistenza-specialistica.aspx",
+     "hours": "Dal lunedì al venerdì 7.30–19, sabato 7.30–13.30",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'AUSL di Parma – Distretto di Parma: ufficio per i cittadini",
+     "number": "0521 393808",
+     "url": "https://www.ausl.pr.it/come_fare/ufficio_relazioni_pubblico_1/distretto_parma.aspx",
+     "hours": "Dal lunedì al venerdì 10–13",
+     "address": "Strada del Quartiere 2/A, Parma",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'AUSL di Parma – Distretto e Ospedale di Fidenza",
+     "number": "0524 515538",
+     "url": "https://www.ausl.pr.it/come_fare/numeri_utili/default.aspx",
+     "address": "Via Don Enrico Tincati 5, località Vaio, Fidenza",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'AUSL di Parma – Distretto Sud-Est (Langhirano)",
+     "number": "0521 865324",
+     "url": "https://www.ausl.pr.it/come_fare/numeri_utili/default.aspx",
+     "address": "Via Roma 42/1, Langhirano",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'AUSL di Parma – Distretto Valli Taro e Ceno (Borgo Val di Taro)",
+     "number": "0525 970306",
+     "url": "https://www.ausl.pr.it/come_fare/numeri_utili/default.aspx",
+     "address": "Via Benefattori 12, Borgo Val di Taro",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica – Distretto di Parma",
+     "number": "0521 292555",
+     "url": "https://www.ausl.pr.it/come_fare/numeri_utili/default.aspx",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica – Distretto di Fidenza",
+     "number": "0524 515620",
+     "url": "https://www.ausl.pr.it/come_fare/numeri_utili/default.aspx",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica – Distretto Sud-Est",
+     "number": "0521 857454",
+     "url": "https://www.ausl.pr.it/come_fare/numeri_utili/default.aspx",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica – Distretto Valli Taro e Ceno",
+     "number": "0525 970353",
+     "url": "https://www.ausl.pr.it/come_fare/numeri_utili/default.aspx",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino del Distretto di Fidenza (AUSL di Parma)",
+     "number": "0524 515111",
+     "url": "https://www.ausl.pr.it/come_fare/numeri_utili/default.aspx",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino del Distretto Sud-Est (AUSL di Parma)",
+     "number": "0521 865111",
+     "url": "https://www.ausl.pr.it/come_fare/numeri_utili/default.aspx",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino del Distretto Valli Taro e Ceno (AUSL di Parma)",
+     "number": "0525 970111",
+     "url": "https://www.ausl.pr.it/come_fare/numeri_utili/default.aspx",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "AUSL Parma – Numeri utili",
+     "url": "https://www.ausl.pr.it/come_fare/numeri_utili/default.aspx"
+    },
+    {
+     "label": "AUSL Parma – Come prenotare e disdire",
+     "url": "https://www.ausl.pr.it/come_fare/prenotazioni_disdette/assistenza-specialistica.aspx"
+    },
+    {
+     "label": "AUSL Parma – URP Distretto di Parma",
+     "url": "https://www.ausl.pr.it/come_fare/ufficio_relazioni_pubblico_1/distretto_parma.aspx"
+    },
+    {
+     "label": "AUSL Parma – Guardia medica",
+     "url": "https://www.ausl.pr.it/dove_curarsi/guardia_medica/default.aspx"
+    },
+    {
+     "label": "Regione Emilia-Romagna – Numero verde del Servizio sanitario regionale",
+     "url": "https://salute.regione.emilia-romagna.it/normativa-e-documentazione/materiale-informativo/schede-informative/numero-verde-ssr"
+    }
+   ],
+   "todo": [
+    "La pagina della guardia medica elenca le sedi ma i numeri per distretto li ho presi dalla pagina «Numeri utili», senza data: da ricontrollare.",
+    "Cure domiciliari: la pagina rimanda ai box delle Case della Salute, ma nella copia non ci sono numeri: manca il numero per le cure a casa."
+   ],
+   "last_verified": "2026-10-21"
+  },
+  {
+   "id": "piacenza",
+   "name": "AUSL di Piacenza",
+   "province": "Piacenza",
+   "site_url": "https://www.ausl.pc.it/",
+   "official_domains": [
+    "ausl.pc.it",
+    "regione.emilia-romagna.it",
+    "salute.regione.emilia-romagna.it"
+   ],
+   "guardia_medica_url": "https://www.ausl.pc.it/it/strutture-e-territorio/dove-siamo/continuita-assistenziale-ex-guardia-medica",
+   "pua_url": "https://www.ausl.pc.it/it/strutture-e-territorio/dove-siamo/case-della-salute/servizi-territoriali-di-fiorenzuola/servizi-territoriali-fiorenzuola-via-garibaldi/pua",
+   "emails": [],
+   "pec": "contatinfo@pec.ausl.pc.it",
+   "phones": [
+    {
+     "label": "Centralino unico dell'AUSL di Piacenza (24 ore su 24)",
+     "number": "0523 301111",
+     "url": "https://www.ausl.pc.it/it/orientamento-e-contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "urp",
+     "label": "Numero verde del Servizio sanitario regionale: informazioni su tutti i servizi, da Piacenza a Rimini, e assistenza per Fascicolo sanitario e CupWeb (gratis anche da cellulare)",
+     "number": "800 033033",
+     "hours": "Feriali 8:30–18, sabato 8:30–13",
+     "url": "https://salute.regione.emilia-romagna.it/normativa-e-documentazione/materiale-informativo/schede-informative/numero-verde-ssr",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CupTEL dell'AUSL di Piacenza: prenotare visite ed esami (numero gratuito)",
+     "number": "800 651941",
+     "url": "https://www.ausl.pc.it/it/strutture-e-territorio/dove-siamo/sportelli-unici-cup",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'AUSL di Piacenza: ufficio per i cittadini, informazioni e reclami",
+     "number": "0523 303123",
+     "url": "https://www.ausl.pc.it/it/orientamento-e-contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale) dell'AUSL di Piacenza: tutta la provincia",
+     "number": "0523 343000",
+     "url": "https://www.ausl.pc.it/it/strutture-e-territorio/dove-siamo/continuita-assistenziale-ex-guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Servizio infermieristico domiciliare (ADI) di Piacenza città: cure a casa",
+     "number": "0523 407670",
+     "url": "https://www.ausl.pc.it/it/prestazioni-e-percorsi-di-cura/rete-territoriale/assistenza-domiciliare/assistenza-domiciliare-infermieristica-adi",
+     "hours": "Dal lunedì al venerdì 8–13 (con segreteria)",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino unico dell'AUSL di Piacenza",
+     "number": "0523 301111",
+     "url": "https://www.ausl.pc.it/it/orientamento-e-contatti",
+     "hours": "24 ore su 24",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "AUSL Piacenza – Orientamento e contatti",
+     "url": "https://www.ausl.pc.it/it/orientamento-e-contatti"
+    },
+    {
+     "label": "AUSL Piacenza – Sportelli unici e CUP",
+     "url": "https://www.ausl.pc.it/it/strutture-e-territorio/dove-siamo/sportelli-unici-cup"
+    },
+    {
+     "label": "AUSL Piacenza – Continuità assistenziale",
+     "url": "https://www.ausl.pc.it/it/strutture-e-territorio/dove-siamo/continuita-assistenziale-ex-guardia-medica"
+    },
+    {
+     "label": "AUSL Piacenza – ADI Piacenza",
+     "url": "https://www.ausl.pc.it/it/prestazioni-e-percorsi-di-cura/rete-territoriale/assistenza-domiciliare/assistenza-domiciliare-infermieristica-adi"
+    },
+    {
+     "label": "Regione Emilia-Romagna – Domande frequenti emergenza-urgenza (116117)",
+     "url": "https://salute.regione.emilia-romagna.it/emergenzaurgenza/domande-frequenti"
+    },
+    {
+     "label": "Regione Emilia-Romagna – Numero verde del Servizio sanitario regionale",
+     "url": "https://salute.regione.emilia-romagna.it/normativa-e-documentazione/materiale-informativo/schede-informative/numero-verde-ssr"
+    }
+   ],
+   "todo": [
+    "116117 in Emilia-Romagna: la pagina regionale delle domande frequenti (aggiornata a giugno 2025) dice che il 116117 entrerà in funzione «entro il primo semestre 2026» e che fino ad allora restano attivi i consueti numeri della guardia medica delle Aziende sanitarie. Nessuna pagina copiata (Regione o AUSL) dice che in una provincia il 116117 sia già attivo: per questo in tutte le province ho messo i numeri di guardia medica delle AUSL. Da ricontrollare: forse nel 2026 il 116117 è partito in qualche zona ma le pagine non lo dicono ancora.",
+    "Il numero verde regionale del Servizio sanitario 800 033033 compare su quasi tutte le pagine delle AUSL: non l'ho messo nelle voci provinciali (è regionale).",
+    "Il PUA di Fiorenzuola ha una pagina ma senza numero di telefono; manca il numero del PUA/cure domiciliari fuori da Piacenza città."
+   ],
+   "last_verified": "2026-10-21"
+  },
+  {
+   "id": "ravenna",
+   "name": "AUSL della Romagna – ambito di Ravenna",
+   "province": "Ravenna",
+   "site_url": "https://www.auslromagna.it/",
+   "official_domains": [
+    "auslromagna.it",
+    "regione.emilia-romagna.it",
+    "salute.regione.emilia-romagna.it"
+   ],
+   "guardia_medica_url": "https://www.auslromagna.it/luoghi/guardia-medica",
+   "emails": [],
+   "pec": "azienda@pec.auslromagna.it",
+   "phones": [],
+   "contacts": [
+    {
+     "topic": "urp",
+     "label": "Numero verde del Servizio sanitario regionale: informazioni su tutti i servizi, da Piacenza a Rimini, e assistenza per Fascicolo sanitario e CupWeb (gratis anche da cellulare)",
+     "number": "800 033033",
+     "hours": "Feriali 8:30–18, sabato 8:30–13",
+     "url": "https://salute.regione.emilia-romagna.it/normativa-e-documentazione/materiale-informativo/schede-informative/numero-verde-ssr",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUPTEL dell'AUSL della Romagna (ambito di Ravenna): prenotare visite ed esami con la ricetta",
+     "number": "800 002255",
+     "url": "https://www.auslromagna.it/servizi/cup",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica dell'AUSL della Romagna – provincia di Ravenna",
+     "number": "800 244 244",
+     "url": "https://www.auslromagna.it/luoghi/guardia-medica",
+     "hours": "Dalle 20 alle 8 nei feriali; dalle 8 del sabato o prefestivo alle 8 del lunedì o primo giorno feriale",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "AUSL Romagna – CUP",
+     "url": "https://www.auslromagna.it/servizi/cup"
+    },
+    {
+     "label": "AUSL Romagna – Guardia medica",
+     "url": "https://www.auslromagna.it/luoghi/guardia-medica"
+    },
+    {
+     "label": "Regione Emilia-Romagna – Numero verde del Servizio sanitario regionale",
+     "url": "https://salute.regione.emilia-romagna.it/normativa-e-documentazione/materiale-informativo/schede-informative/numero-verde-ssr"
+    }
+   ],
+   "todo": [
+    "Nelle copie delle pagine dell'AUSL della Romagna non ci sono il centralino né i numeri dell'URP (le pagine URP non hanno telefoni)."
+   ],
+   "last_verified": "2026-10-21"
+  },
+  {
+   "id": "reggio-emilia",
+   "name": "AUSL di Reggio Emilia",
+   "province": "Reggio Emilia",
+   "site_url": "https://www.ausl.re.it/",
+   "official_domains": [
+    "ausl.re.it",
+    "regione.emilia-romagna.it",
+    "salute.regione.emilia-romagna.it"
+   ],
+   "guardia_medica_url": "https://www.ausl.re.it/cau-e-continuita-assistenziale",
+   "pua_url": "https://www.ausl.re.it/servizio-infermieristico-domiciliare",
+   "emails": [],
+   "pec": "info@pec.ausl.re.it",
+   "phones": [
+    {
+     "label": "Centralino della sede centrale dell'AUSL di Reggio Emilia",
+     "number": "0522 335111",
+     "url": "https://www.ausl.re.it/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino dell'Arcispedale Santa Maria Nuova",
+     "number": "0522 296111",
+     "url": "https://www.ausl.re.it/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "urp",
+     "label": "Numero verde del Servizio sanitario regionale: informazioni su tutti i servizi, da Piacenza a Rimini, e assistenza per Fascicolo sanitario e CupWeb (gratis anche da cellulare)",
+     "number": "800 033033",
+     "hours": "Feriali 8:30–18, sabato 8:30–13",
+     "url": "https://salute.regione.emilia-romagna.it/normativa-e-documentazione/materiale-informativo/schede-informative/numero-verde-ssr",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CupTel dell'AUSL di Reggio Emilia: prenotare visite ed esami al telefono",
+     "number": "0522 391522",
+     "url": "https://www.ausl.re.it/prenotazione",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica e CAU dell'AUSL di Reggio Emilia: numero unico provinciale",
+     "number": "0522 290001",
+     "url": "https://www.ausl.re.it/cau-e-continuita-assistenziale",
+     "hours": "24 ore su 24, 7 giorni su 7",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP/Referti dell'Ospedale di Correggio",
+     "number": "0522 630211",
+     "url": "https://www.ausl.re.it/correggio-sabato-24-ottobre-laurp-restera-chiuso",
+     "hours": "8–13",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "Ufficio informazioni dell'Arcispedale Santa Maria Nuova",
+     "number": "0522 296677",
+     "url": "https://www.ausl.re.it/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino della sede centrale dell'AUSL di Reggio Emilia",
+     "number": "0522 335111",
+     "url": "https://www.ausl.re.it/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "AUSL Reggio Emilia – Contatti",
+     "url": "https://www.ausl.re.it/contatti"
+    },
+    {
+     "label": "AUSL Reggio Emilia – Prenotazione esami e visite",
+     "url": "https://www.ausl.re.it/prenotazione"
+    },
+    {
+     "label": "AUSL Reggio Emilia – CAU e continuità assistenziale",
+     "url": "https://www.ausl.re.it/cau-e-continuita-assistenziale"
+    },
+    {
+     "label": "AUSL Reggio Emilia – URP Correggio",
+     "url": "https://www.ausl.re.it/correggio-sabato-24-ottobre-laurp-restera-chiuso"
+    },
+    {
+     "label": "Regione Emilia-Romagna – Numero verde del Servizio sanitario regionale",
+     "url": "https://salute.regione.emilia-romagna.it/normativa-e-documentazione/materiale-informativo/schede-informative/numero-verde-ssr"
+    }
+   ],
+   "todo": [
+    "La pagina URP aziendale non ha un numero di telefono; la vecchia pagina URP dà «pagina non trovata». C'è solo l'URP di Correggio.",
+    "Servizio infermieristico domiciliare: la pagina non ha numeri (le sedi sono in un elenco non copiato)."
+   ],
+   "last_verified": "2026-10-21"
+  },
+  {
+   "id": "rimini",
+   "name": "AUSL della Romagna – ambito di Rimini",
+   "province": "Rimini",
+   "site_url": "https://www.auslromagna.it/",
+   "official_domains": [
+    "auslromagna.it",
+    "regione.emilia-romagna.it",
+    "salute.regione.emilia-romagna.it"
+   ],
+   "guardia_medica_url": "https://www.auslromagna.it/luoghi/guardia-medica",
+   "emails": [],
+   "pec": "azienda@pec.auslromagna.it",
+   "phones": [],
+   "contacts": [
+    {
+     "topic": "urp",
+     "label": "Numero verde del Servizio sanitario regionale: informazioni su tutti i servizi, da Piacenza a Rimini, e assistenza per Fascicolo sanitario e CupWeb (gratis anche da cellulare)",
+     "number": "800 033033",
+     "hours": "Feriali 8:30–18, sabato 8:30–13",
+     "url": "https://salute.regione.emilia-romagna.it/normativa-e-documentazione/materiale-informativo/schede-informative/numero-verde-ssr",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUPTEL dell'AUSL della Romagna (ambito di Rimini): prenotare visite ed esami con la ricetta",
+     "number": "800 002255",
+     "url": "https://www.auslromagna.it/servizi/cup",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica dell'AUSL della Romagna – provincia di Rimini",
+     "number": "0541 787461",
+     "url": "https://www.auslromagna.it/luoghi/guardia-medica",
+     "hours": "Dalle 20 alle 8 nei feriali; dalle 8 del sabato o prefestivo alle 8 del lunedì o primo giorno feriale",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "AUSL Romagna – CUP",
+     "url": "https://www.auslromagna.it/servizi/cup"
+    },
+    {
+     "label": "AUSL Romagna – Guardia medica",
+     "url": "https://www.auslromagna.it/luoghi/guardia-medica"
+    },
+    {
+     "label": "Regione Emilia-Romagna – Numero verde del Servizio sanitario regionale",
+     "url": "https://salute.regione.emilia-romagna.it/normativa-e-documentazione/materiale-informativo/schede-informative/numero-verde-ssr"
+    }
+   ],
+   "todo": [
+    "Nelle copie delle pagine dell'AUSL della Romagna non ci sono il centralino né i numeri dell'URP (le pagine URP non hanno telefoni)."
+   ],
+   "last_verified": "2026-10-21"
+  }
+ ]
+}

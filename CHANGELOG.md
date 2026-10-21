@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — Emilia-Romagna: i numeri utili delle 9 province
+- 75 numeri delle AUSL (Bologna e Imola insieme nella provincia di Bologna, la Romagna per ambito), controllati nelle copie delle pagine ufficiali del 21/10/2026.
+- Guardia medica: i numeri delle aziende, perché il 116117 non è ancora attivo; CUP telefonico di ogni AUSL; numero verde regionale 800 033033 per le informazioni.
+- Sedi INPS delle 9 province.
+
 ## 21/10/2026 — Toscana: i numeri utili delle 10 province
 - Nuovo `data/regioni/toscana/asl.json`: 76 numeri delle 3 aziende USL (numeri unici aziendali con i tasti per CUP, URP, screening, scelta del medico; centralini degli ospedali; sportelli URP; PUA dei capoluoghi di Arezzo, Siena e Grosseto). Fonte: pagine ufficiali delle USL e della Regione Toscana copiate dal server in Italia il 21/10/2026; ogni numero ritrovato nella copia della pagina citata (`proof: "pagina"`).
 - Guardia medica: 116117 in tutta la Toscana (pagina della Regione aggiornata al 05/02/2026).
