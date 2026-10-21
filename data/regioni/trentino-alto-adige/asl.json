@@ -1,0 +1,306 @@
+{
+ "region": "Trentino-Alto Adige",
+ "model": "Aziende sanitarie provinciali",
+ "_note": "Numeri delle aziende sanitarie di Trento (Asuit) e dell'Alto Adige (ASDAA) per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili. A Trento la guardia medica è il 116117; a Bolzano le pagine dell'azienda non si sono lasciate copiare e i numeri sono pochi.",
+ "asl": [
+  {
+   "id": "bolzano",
+   "name": "Azienda sanitaria dell'Alto Adige (ASDAA / Südtiroler Sanitätsbetrieb)",
+   "province": "Bolzano",
+   "site_url": "https://www.asdaa.it/",
+   "official_domains": [
+    "asdaa.it",
+    "sabes.it",
+    "provincia.bz.it",
+    "provincia.tn.it"
+   ],
+   "emails": [
+    "prenotazioni@asdaa.it"
+   ],
+   "phones": [
+    {
+     "label": "Centralino dell'Ospedale di Merano «F. Tappeiner» (Azienda sanitaria dell'Alto Adige)",
+     "number": "0473 263333",
+     "url": "https://home.sabes.it/it/comprensori-sanitari/merano/3026.asp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUPP – Centro unico di prenotazione provinciale dell'Alto Adige: prenotare visite ed esami (100 100 con il prefisso 0471, 0472, 0473 o 0474)",
+     "number": "100100",
+     "hours": "Dal lunedì al venerdì 8–16",
+     "url": "https://home.sabes.it/it/prenotazione-me.asp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "CUPP Prevenzione dell'Alto Adige: screening, vaccinazioni e certificati (100 100 con il prefisso 0471, 0472, 0473 o 0474)",
+     "number": "100100",
+     "url": "https://home.asdaa.it/it/servizi.asp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Azienda sanitaria dell'Alto Adige – Prenotazione (CUPP)",
+     "url": "https://home.sabes.it/it/prenotazione-me.asp"
+    },
+    {
+     "label": "Azienda sanitaria dell'Alto Adige – Servizi",
+     "url": "https://home.asdaa.it/it/servizi.asp"
+    },
+    {
+     "label": "Azienda sanitaria dell'Alto Adige – Medicina di base, Comprensorio di Merano",
+     "url": "https://home.sabes.it/it/comprensori-sanitari/merano/3026.asp"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "Quasi tutte le pagine di asdaa.it e salute.provincia.bz.it sono fatte in JavaScript: la copia contiene solo «Loading...», quindi niente URP, centralino aziendale, PUA/cure domiciliari, guardia medica né 116117 verificati per la provincia di Bolzano.",
+    "Guardia medica: l'unica pagina leggibile (Medicina di base, Comprensorio di Merano, vecchia: cita il 2011) dice che il servizio festivo è fatto a turno dai medici di famiglia e che i nomi dei medici di turno si sanno dal centralino dell'Ospedale di Merano (0473 263333) o su www.asdaa.it/it/servizio-di-turno-medici.asp. Non ho messo numeri di guardia medica: controllare se in Alto Adige è attivo il 116117.",
+    "Il numero del CUPP è «100 100» da comporre con il prefisso del distretto (0471 Bolzano, 0472 Bressanone, 0473 Merano, 0474 Brunico): l'ho scritto «100100» come sulla pagina, con i prefissi nell'etichetta. Va mostrato bene al cittadino.",
+    "La pagina «Tempi di prenotazione» di provincia.bz.it non si è aperta (troppi rinvii)."
+   ]
+  },
+  {
+   "id": "trento",
+   "name": "Asuit – Azienda sanitaria universitaria integrata del Trentino",
+   "province": "Trento",
+   "site_url": "https://www.asuit.tn.it/",
+   "official_domains": [
+    "asuit.tn.it",
+    "apss.tn.it",
+    "trentinosalute.net",
+    "provincia.tn.it",
+    "provincia.bz.it"
+   ],
+   "guardia_medica_url": "https://www.asuit.tn.it/servizi/continuita-assistenziale-ex-guardia-medica",
+   "pua_url": "https://www.asuit.tn.it/servizi/punto-unico-di-accesso-pua",
+   "emails": [
+    "urp@asuit.tn.it"
+   ],
+   "pec": "asuit@pec.asuit.tn.it",
+   "phones": [
+    {
+     "label": "Centralino di Asuit (Azienda sanitaria universitaria integrata del Trentino)",
+     "number": "0461 904111",
+     "address": "Via Alcide Degasperi 79, 38123 Trento",
+     "url": "https://www.asuit.tn.it/servizi/prenotazione-visite-specialistiche-ed-esami-di-diagnostica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale) in tutta la provincia di Trento: numero europeo 116117",
+     "number": "116117",
+     "hours": "Tutte le notti 20–8; sabato, domenica e festivi 8–20; prefestivi 10–20",
+     "url": "https://www.asuit.tn.it/servizi/continuita-assistenziale-ex-guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica di Asuit da fuori provincia, dal Primiero e dalle zone di confine con il Veneto",
+     "number": "800 016017",
+     "hours": "Tutte le notti 20–8; sabato, domenica e festivi 8–20; prefestivi 10–20",
+     "url": "https://www.asuit.tn.it/servizi/continuita-assistenziale-ex-guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP di Asuit (provincia di Trento): prenotare visite ed esami",
+     "number": "0461 379400",
+     "hours": "Dal lunedì al venerdì 8–18, sabato 8–13",
+     "url": "https://www.asuit.tn.it/servizi/prenotazione-visite-specialistiche-ed-esami-di-diagnostica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP di Asuit: ufficio per i cittadini, segnalazioni e reclami",
+     "number": "0461 904172",
+     "hours": "Su appuntamento, dal lunedì al venerdì 8.30–13",
+     "address": "Palazzo Stella, via Alcide Degasperi 77, 38123 Trento",
+     "url": "https://asuit.tn.it/servizi/segnalazioni-commissione-mista-conciliativa-cmc",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Punto unico di accesso (PUA) di Asuit – Trento: cure a casa, assistenza domiciliare e cure palliative",
+     "number": "0461 902484",
+     "url": "https://www.asuit.tn.it/servizi/punto-unico-di-accesso-pua",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Punto unico di accesso (PUA) di Asuit – Rovereto: cure a casa, assistenza domiciliare e cure palliative",
+     "number": "0464 403643",
+     "url": "https://www.asuit.tn.it/servizi/punto-unico-di-accesso-pua",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Punto unico di accesso (PUA) di Asuit – Riva del Garda: cure a casa, assistenza domiciliare e cure palliative",
+     "number": "0464 582638",
+     "url": "https://www.asuit.tn.it/servizi/punto-unico-di-accesso-pua",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Punto unico di accesso (PUA) di Asuit – Pergine Valsugana: cure a casa, assistenza domiciliare e cure palliative",
+     "number": "0461 515165",
+     "url": "https://www.asuit.tn.it/servizi/punto-unico-di-accesso-pua",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Punto unico di accesso (PUA) di Asuit – Borgo Valsugana: cure a casa, assistenza domiciliare e cure palliative",
+     "number": "0461 755604",
+     "url": "https://www.asuit.tn.it/servizi/punto-unico-di-accesso-pua",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Punto unico di accesso (PUA) di Asuit – Cles: cure a casa, assistenza domiciliare e cure palliative",
+     "number": "0463 660100",
+     "url": "https://www.asuit.tn.it/servizi/punto-unico-di-accesso-pua",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Punto unico di accesso (PUA) di Asuit – Malè: cure a casa, assistenza domiciliare e cure palliative",
+     "number": "0463 909442",
+     "url": "https://www.asuit.tn.it/servizi/punto-unico-di-accesso-pua",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Punto unico di accesso (PUA) di Asuit – Tione: cure a casa, assistenza domiciliare e cure palliative",
+     "number": "0465 331412",
+     "url": "https://www.asuit.tn.it/servizi/punto-unico-di-accesso-pua",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Punto unico di accesso (PUA) di Asuit – Cavalese: cure a casa, assistenza domiciliare e cure palliative",
+     "number": "0462 242237",
+     "url": "https://www.asuit.tn.it/servizi/punto-unico-di-accesso-pua",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Punto unico di accesso (PUA) di Asuit – San Giovanni di Fassa - Sèn Jan: cure a casa, assistenza domiciliare e cure palliative",
+     "number": "0462 242237",
+     "url": "https://www.asuit.tn.it/servizi/punto-unico-di-accesso-pua",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Punto unico di accesso (PUA) di Asuit – Mezzolombardo: cure a casa, assistenza domiciliare e cure palliative",
+     "number": "0461 611140",
+     "url": "https://www.asuit.tn.it/servizi/punto-unico-di-accesso-pua",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Punto unico di accesso (PUA) di Asuit – Andalo: cure a casa, assistenza domiciliare e cure palliative",
+     "number": "0461 611109",
+     "url": "https://www.asuit.tn.it/servizi/punto-unico-di-accesso-pua",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Punto unico di accesso (PUA) di Asuit – Vezzano: cure a casa, assistenza domiciliare e cure palliative",
+     "number": "0461 864570",
+     "url": "https://www.asuit.tn.it/servizi/punto-unico-di-accesso-pua",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Punto unico di accesso (PUA) di Asuit – Cembra: cure a casa, assistenza domiciliare e cure palliative",
+     "number": "0461 683711",
+     "url": "https://www.asuit.tn.it/servizi/punto-unico-di-accesso-pua",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Punto unico di accesso (PUA) di Asuit – Folgaria: cure a casa, assistenza domiciliare e cure palliative",
+     "number": "0464 721991",
+     "url": "https://www.asuit.tn.it/servizi/punto-unico-di-accesso-pua",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Punto unico di accesso (PUA) di Asuit – Tonadico (Primiero): cure a casa, assistenza domiciliare e cure palliative",
+     "number": "0439 764424",
+     "url": "https://www.asuit.tn.it/servizi/punto-unico-di-accesso-pua",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Provincia di Trento – Asuit, Azienda sanitaria universitaria integrata del Trentino",
+     "url": "https://www.provincia.tn.it/Amministrazione/Enti-societa-e-fondazioni/Asuit-Azienda-sanitaria-universitaria-integrata-del-Trentino"
+    },
+    {
+     "label": "Asuit – Continuità assistenziale (ex guardia medica)",
+     "url": "https://www.asuit.tn.it/servizi/continuita-assistenziale-ex-guardia-medica"
+    },
+    {
+     "label": "Asuit – Prenotazione visite specialistiche ed esami",
+     "url": "https://www.asuit.tn.it/servizi/prenotazione-visite-specialistiche-ed-esami-di-diagnostica"
+    },
+    {
+     "label": "Asuit – Segnalazioni e URP",
+     "url": "https://asuit.tn.it/servizi/segnalazioni-commissione-mista-conciliativa-cmc"
+    },
+    {
+     "label": "Asuit – Punto unico di accesso PUA",
+     "url": "https://www.asuit.tn.it/servizi/punto-unico-di-accesso-pua"
+    },
+    {
+     "label": "Asuit – Assistenza domiciliare",
+     "url": "https://www.asuit.tn.it/servizi/assistenza-domiciliare"
+    },
+    {
+     "label": "Asuit – Cure palliative",
+     "url": "https://asuit.tn.it/servizi/cure-palliative"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "Nome attuale dell'azienda di Trento: dal 2026 l'APSS (Azienda provinciale per i servizi sanitari) è diventata Asuit – Azienda sanitaria universitaria integrata del Trentino (pagina della Provincia aggiornata il 13/03/2026; sito nuovo asuit.tn.it, i vecchi indirizzi apss.tn.it rimandano alla home di Asuit).",
+    "116117 a Trento: attivo per la guardia medica in tutta la provincia (pagina Asuit «Continuità assistenziale», aggiornata il 07/10/2026). Da fuori provincia, dal Primiero e dalle zone di confine con il Veneto si chiama invece 800 016017. Per questo non ho messo numeri locali delle singole sedi di guardia medica.",
+    "116117 a Bolzano: le pagine salute.provincia.bz.it/it/numero-116117 e asdaa.it/it/one/116-117 esistono ma la copia contiene solo «Loading...» (pagine fatte in JavaScript): non ho potuto verificare se e dove il 116117 sia attivo in Alto Adige. Va ricontrollato a mano.",
+    "CUP Trento: numero unico provinciale 0461 379400 (lun–ven 8–18, sab 8–13), oppure online su TreC+ e agli sportelli CUP. CUP Bolzano: CUPP (Centro unico di prenotazione provinciale) 100 100 da comporre con il prefisso 0471, 0472, 0473 o 0474 (lun–ven 8–16), e-mail prenotazioni@asdaa.it, online sanibook.asdaa.it.",
+    "Le pagine di trentinosalute.net e dell'ufficio stampa della Provincia (comunicato sul 116117) erano «in manutenzione» il 21/10/2026: non usate.",
+    "Mancano numeri verificati per protesica, cartelle cliniche, screening e scelta del medico. Sulla pagina «Telefono e posta elettronica» c'è la rete degli URP territoriali (Borgo, Arco, Tione, Rovereto, Cles…) ma l'elenco è confuso (numeri ripetuti per zone diverse): non usato."
+   ]
+  }
+ ]
+}

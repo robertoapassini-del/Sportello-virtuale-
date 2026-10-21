@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — Trentino-Alto Adige: i numeri utili di Trento e Bolzano
+- 24 numeri di Asuit (Trento, ex APSS) e dell'Azienda sanitaria dell'Alto Adige, controllati nelle copie delle pagine ufficiali del 21/10/2026.
+- Trento: 116117 per la guardia medica, CUP 0461 379400, i PUA delle sedi. Bolzano: per ora solo il CUPP 100100 e pochi altri numeri (le pagine dell'azienda non si sono lasciate copiare).
+- Sedi INPS di Trento e Bolzano.
+
 ## 21/10/2026 — Calabria: i numeri utili delle 5 province
 - 31 numeri delle ASP, controllati nelle copie delle pagine ufficiali del 21/10/2026.
 - Guardia medica: 116117 in tutta la regione (dal 28/07/2026); CUP regionale 0961 789789.

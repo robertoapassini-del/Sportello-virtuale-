@@ -1,0 +1,42 @@
+{
+ "region": "Trentino-Alto Adige",
+ "last_verified": "2026-10-21",
+ "note": "Indirizzi e PEC delle sedi INPS dalle pagine «sedi» di inps.it, copiate il 21/10/2026 dal server in Italia. Per andare allo sportello si prenota (MyINPS, app, 803 164 / 06 164164). regime (riforma della disabilità) da verificare: finché è null il modulo invalidità non va attivato per questa regione.",
+ "sources": [
+  {
+   "label": "INPS – sedi e contatti in Trentino-Alto Adige",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.830000.830000-elencoStruttureInps.html"
+  }
+ ],
+ "provinces": [
+  {
+   "id": "bolzano",
+   "name": "Bolzano",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.bolzano@postacert.inps.gov.it",
+   "address": "Piazza Domenicani 30, Bolzano",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.140000.140000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "trento",
+   "name": "Trento",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.trento@postacert.inps.gov.it",
+   "address": "Via Orfane 8, Trento",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.830000.830000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  }
+ ],
+ "todo": [
+  "Riforma della disabilità: verificare quali province sono nella sperimentazione e da quando (campo regime)."
+ ]
+}
