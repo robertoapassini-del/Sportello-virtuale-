@@ -4,7 +4,7 @@
 // Scritto con delicatezza: spesso chi legge sta assistendo una persona molto malata.
 import { todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
 import { genericRequest, mailtoHref } from './letters.js';
-import { noPecBox, esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact } from './common.js';
+import { noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
 
 const ROOT = '../';
@@ -203,7 +203,7 @@ const screens = {
 let flow;
 (async function init() {
   renderFooter(ROOT);
-  try { [rules, data] = await Promise.all([loadJSON(`${ROOT}data/rules-palliative.json`), loadJSON(`${ROOT}data/asp-sicilia.json`)]); } catch {
+  try { [rules, data] = await Promise.all([loadJSON(`${ROOT}data/rules-palliative.json`), loadRegional(ROOT, 'asp')]); } catch {
     app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>'; return;
   }
   flow = createFlow({ app, screens, state, sources, person });

@@ -2,6 +2,17 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — copie notturne delle pagine ufficiali e controllo settimanale assistito
+- Server in Italia (Aruba Cloud) che ogni notte salva in testo le pagine ufficiali delle ASP nel branch `copie-siti` (`tools/copie.mjs`); routine settimanale di Claude che le confronta con i dati e apre una pull request. Nessun dato cambiato. Come funziona: `docs/regioni.md`, sezione 8.
+- Test del 21/10/2026 dal server: 110 pagine su 134 rispondono; Messina ha il certificato installato male (si legge lo stesso), i vecchi indirizzi `dinamica.aspx` di Caltanissetta non esistono più (sito nuovo), una pagina di Siracusa dà 404: da aggiornare.
+- `SPEC.md`: principio 5 riscritto (mai CUP, login o CAPTCHA; pagine informative sì, con educazione).
+
+## 19/10/2026 — primo passo verso tutte le regioni (nessun dato cambiato)
+- Proposta completa in `docs/regioni.md`: struttura dei dati per regione, scelta della regione ricordata nel browser, testi nazionali e regionali, indirizzi delle pagine, marchio.
+- `data/asp-sicilia.json` → `data/regioni/sicilia/asp.json`, `data/inps-sicilia.json` → `data/regioni/sicilia/inps.json`; nuovo `data/regioni/index.json` con l'elenco delle regioni (attiva solo la Sicilia).
+- `js/common.js`: `loadRegional(root, nome)` carica i file della regione in uso; i moduli non scrivono più «sicilia» nei percorsi.
+- Marchio: «Guida Sanità» senza «Sicilia» in testata, anteprima dei messaggi (`og:site_name`) e riga stampata. «Sicilia» resta nei testi che parlano della regione.
+
 ## 20/10/2026 — temi nuovi: controllo sulle fonti ufficiali
 - Fonti lette per intero dal browser: scheda INPS accompagnamento (aggiornata al 20/07/2026), schede INPS permessi 104 (50098) e congedo straordinario (50097), scheda INPS bonus psicologo, L. 106/2025 artt. 1–3 (Normattiva), D.L. 73/2024 art. 3 (Normattiva), DPR 495/1992 art. 381 (Normattiva), FAQ TEAM del Sistema TS, FAQ FSE della Regione Siciliana (27/05/2026), modulo 2025 del Comune di Palermo.
 - **Accompagnamento**: importo 2026 scritto per esteso (551,53 €); sospensione per ricovero gratuito oltre 29 giorni (non «un mese»); permesso di soggiorno di almeno un anno (non «di lungo periodo»); INPS chiude la pratica entro 45 giorni dalla domanda di pagamento (tolto «1–2 mesi»).

@@ -5,7 +5,7 @@
 import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween, art } from './engine.js';
 import { ausiliReminder, mailtoHref } from './letters.js';
 import { noPecBox,
-  esc, loadJSON, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, officeBox, personFields, reportErrorHref, generalContact,
+  esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, officeBox, personFields, reportErrorHref, generalContact,
 } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
 
@@ -226,7 +226,7 @@ let flow;
 (async function init() {
   renderFooter(ROOT);
   try {
-    [rules, data] = await Promise.all([loadJSON(`${ROOT}data/rules-ausili.json`), loadJSON(`${ROOT}data/asp-sicilia.json`)]);
+    [rules, data] = await Promise.all([loadJSON(`${ROOT}data/rules-ausili.json`), loadRegional(ROOT, 'asp')]);
   } catch {
     app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>';
     return;

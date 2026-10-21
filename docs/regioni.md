@@ -1,0 +1,177 @@
+# Guida Sanità per tutte le regioni: la proposta
+
+Oggi il sito copre solo la Sicilia. L'obiettivo è farne un riferimento nazionale, **senza rompere quello che
+funziona**. Questo documento dice come: struttura dei dati, scelta della regione, cosa è nazionale e cosa regionale,
+indirizzi delle pagine, marchio. L'ultima parte dice cosa è già fatto e cosa viene dopo.
+
+Decisioni già prese dal proprietario: niente blog; pagine‑risposta con un blocco regionale; dati regionali in file
+separati; pagine generate da `tools/pagine.mjs`.
+
+## 1. Struttura dei dati
+
+```
+data/
+  moduli.json                 elenco dei moduli e delle aree (nazionale)
+  rules*.json                 regole nazionali (codici E01–E04, classi U/B/D/P, 7 giorni, tempi INPS…)
+  numeri.json                 numeri nazionali (112, 1500, 803 164…)
+  regioni/
+    index.json                elenco delle regioni: quali sono attive, come si chiama l'azienda sanitaria
+    sicilia/
+      asp.json                le 9 ASP (era data/asp-sicilia.json)
+      inps.json               le 9 sedi INPS (era data/inps-sicilia.json)
+    lombardia/                (in futuro) asl.json, inps.json …
+```
+
+### `data/regioni/index.json`
+
+Una voce per regione, anche per quelle non ancora attive: così la schermata «In quale regione abiti?» può
+elencarle tutte e dire «non ancora disponibile» per quelle vuote.
+
+```json
+{
+  "default": "sicilia",
+  "regioni": [
+    { "id": "sicilia", "name": "Sicilia", "attiva": true, "asl_label": "ASP", "asl_label_long": "Azienda sanitaria provinciale" },
+    { "id": "lombardia", "name": "Lombardia", "attiva": false, "asl_label": "ATS" }
+  ]
+}
+```
+
+- `id`: minuscolo, senza accenti, usato nei nomi delle cartelle e in `localStorage`.
+- `attiva`: solo le regioni con `attiva: true` hanno la cartella con i dati e compaiono tra le scelte.
+- `asl_label`: come si chiama l'azienda sanitaria nella regione (ASP in Sicilia, ATS/ASST in Lombardia, ASL quasi
+  ovunque, AUSL in Emilia‑Romagna, ULSS in Veneto, ASUGI/ASUFC in Friuli…). I testi dei moduli useranno questa
+  parola al posto di «ASP» scritto a mano.
+
+### I file di una regione
+
+Stessa forma per ogni regione, così i moduli non devono sapere in quale regione sono:
+
+- `asl.json` (in Sicilia si chiama `asp.json`: il nome del file è nell'indice, campo `files`): `region`, `model`,
+  `local_name` (come si chiama il percorso di tutela in quella regione), `regional_channel` (portale di
+  prenotazione regionale), `asl[]` con `id`, `name`, `province`, canali, `phones`, `contacts`, `sources`,
+  `last_verified`, `status`, `todo`. È la struttura che già c'è: non cambia.
+- `inps.json`: `provinces[]` con sede, PEC, regime vecchio/nuovo della riforma disabilità.
+- In futuro `regole.json`: le poche regole che cambiano per regione (termine per prenotare dopo la ricetta, ticket
+  regionale, cosa succede se manca la classe di priorità). Oggi questi campi stanno in cima a `asp.json`
+  (`booking_deadline_days`, `no_class_rule`) e per ora restano lì.
+
+**Regola:** una regione nuova si aggiunge creando la cartella, copiando la forma dei file siciliani e mettendo
+`attiva: true` nell'indice. Niente altro da toccare nel codice.
+
+### Province e aziende
+
+In Sicilia una ASP = una provincia. Altrove non è così (Lombardia: 8 ATS per 12 province; Roma: 6 ASL in una città).
+Quindi la domanda all'utente resta «in quale provincia abiti?», ma nel file ogni azienda elenca le sue province
+(`provinces: ["Milano", "Lodi"]`) e, dove serve, i comuni che decidono la ASL (`comuni_url` o `comuni[]`). Il
+modulo cerca l'azienda per provincia; se più aziende coprono la stessa provincia, fa una domanda in più («In quale
+zona?») con le `sub_areas`, come oggi per Messina.
+
+## 2. Come un modulo sceglie la regione
+
+1. **Scelta ricordata nel browser** in `localStorage` con la chiave `gs-regione` (valore: l'`id`). È l'unica cosa
+   che il sito ricorda: non è un dato sanitario e non esce dal telefono. Va scritta nella pagina privacy.
+2. **Prima domanda «In quale regione abiti?»** se la scelta non c'è: schermata con l'elenco delle regioni attive
+   (pulsanti grandi, in ordine alfabetico) e, sotto, le altre in grigio con «non ancora disponibile». Chi sceglie
+   una regione non attiva vede la parte nazionale della guida e un invito a segnalarci la sua regione.
+3. **Poi la provincia**, come oggi. La domanda sulla provincia appare solo nei moduli che ne hanno bisogno
+   (quelli con dati regionali in `moduli.json`).
+4. **Cambiare regione**: un piccolo link «Non abiti in Sicilia? Cambia regione» nel blocco regionale, e la stessa
+   scelta nella pagina Numeri utili.
+5. **Senza JavaScript**: la guida scritta mostra la parte nazionale e il blocco regionale della regione
+   predefinita (`default` nell'indice), con la frase «Sei in un'altra regione? Scegli la tua regione qui sopra».
+
+Nel codice: una funzione `regione()` in `js/common.js` legge `localStorage` e torna l'`id` (oppure il `default`
+dell'indice); `loadRegional(root, 'asl')` carica il file giusto. I moduli non scrivono mai il nome della regione nei
+percorsi dei file.
+
+## 3. Cosa è nazionale e cosa regionale
+
+| Nazionale (uguale ovunque, nei `rules*.json` e nei testi dei moduli) | Regionale (nel blocco regionale, dai file `data/regioni/<id>/`) |
+|---|---|
+| Codici esenzione E01–E04 e soglie di reddito | Sportello dove si chiede l'esenzione, se si fa online (es. ASPConTe a Catania) |
+| Classi di priorità U/B/D/P e tempi massimi (PNGLA) | Come chiedere il percorso di tutela e come si chiama; portale di prenotazione (SovraCUP, Zero Coda…); termine regionale per prenotare dopo la ricetta |
+| 7 giorni per la cartella clinica (L. 24/2017); prima copia gratis | Ufficio cartelle cliniche dell'ospedale o dell'azienda; Fascicolo sanitario regionale |
+| Tempi INPS per l'invalidità; riforma disabilità | Sede INPS della provincia; se la provincia è nella sperimentazione |
+| 20 giorni per gli ausili (DPCM 12/01/2017) | Ufficio protesi dell'azienda |
+| Diritto alle cure palliative (L. 38/2010) | Rete regionale, hospice, numeri |
+| Screening e vaccini dei LEA, fasce d'età nazionali | Fasce d'età diverse della regione; numero dello screening; dove si prenota |
+| Scelta e cambio del medico: regole generali | Sportello scelta e revoca; cambio online regionale |
+| Numeri nazionali (112, 1500, 803 164) | Guardia medica, CUP, URP, PUA dell'azienda |
+
+Regola pratica per scrivere: se la frase vale per un cittadino di Bolzano come per uno di Palermo, va nel testo
+nazionale. Se cita un ufficio, un sito, un numero, un nome locale, va nel blocco regionale. Il blocco regionale è
+sempre riconoscibile: titolo «In Sicilia» (il nome della regione), bordo colorato, link «Cambia regione».
+
+## 4. Indirizzi delle pagine (URL)
+
+- **Un solo indirizzo per domanda**: `/esenzione-ticket/`, `/liste-attesa/`… Il blocco regionale cambia dentro la
+  pagina in base alla scelta. Così i link condivisi su WhatsApp funzionano per tutti, e Google vede una pagina
+  forte invece di venti deboli.
+- **Pagine regionali indicizzabili solo dove la differenza è sostanziale**: per esempio il percorso di tutela
+  (nomi, canali e moduli diversi in ogni regione) o i numeri utili. In quel caso la pagina regionale è
+  `/liste-attesa/sicilia/`, generata da `tools/pagine.mjs` dallo stesso HTML con il blocco regionale già riempito,
+  con `canonical` proprio e voce nella sitemap. Le pagine `/x/<regione>/` esistono solo per i moduli che le chiedono
+  esplicitamente in `moduli.json` (`"pagine_regionali": true`).
+- Nessun parametro `?regione=` negli indirizzi: la scelta sta in `localStorage`. L'unica eccezione è il link
+  «Cambia regione», che apre la schermata di scelta (`#regione`).
+
+## 5. Marchio
+
+- Il nome diventa **Guida Sanità** ovunque: testata, `og:site_name`, riga stampata in fondo al foglio,
+  descrizione in `package.json`. Il logo (cuore e mani) non ha testo e non cambia.
+- «Sicilia» resta **solo nel blocco regionale** («In Sicilia…») e nella riga della home «Per ora solo in Sicilia»,
+  che sparirà quando ci sarà la seconda regione.
+- Titoli e descrizioni delle pagine che oggi dicono «in Sicilia» vanno riscritti quando il modulo diventa
+  multi‑regione (passo 3): fino ad allora dicono il vero.
+
+## 6. Passi
+
+1. **Fatto in questa modifica.** Dati siciliani in `data/regioni/sicilia/` con `data/regioni/index.json`;
+   `loadRegional` in `js/common.js`; `tools/pagine.mjs`, test e strumenti aggiornati; «Sicilia» tolto dal marchio.
+   Il sito funziona esattamente come prima.
+2. **Schermata della regione.** `regione()` legge `localStorage`; schermata «In quale regione abiti?» in
+   `js/flow.js` (usata da tutti i moduli); link «Cambia regione»; nota nella privacy. Con una sola regione attiva la
+   schermata si salta da sola, quindi anche questo passo non cambia niente per chi usa il sito oggi.
+3. **Un modulo multi‑regione per prova**: Numeri utili o Esenzione ticket (pochi dati regionali), con la seconda
+   regione. Si rivedono i testi: `asl_label` al posto di «ASP», blocco regionale ben separato dal testo nazionale.
+4. **Le altre regioni**, una alla volta, con la stessa regola dei numeri (`docs/regola-numeri.md`): solo fonti
+   ufficiali, data e prova. Si parte da quelle con più abitanti o più richieste.
+5. **Pagine regionali indicizzabili** dove serve (percorso di tutela, numeri utili).
+
+## 7. Cose da non dimenticare
+
+- `tests/contatti.test.mjs` deve girare su tutte le cartelle di `data/regioni/`, non solo sulla Sicilia.
+- `tools/controllo.mjs` legge i file di dati anche nelle sottocartelle (già fatto).
+- `docs/regola-numeri.md` vale per ogni regione.
+- `tests/combinazioni.cjs` prova le 9 province siciliane: con più regioni va parametrizzato per regione.
+
+## 8. Aggiornamento assistito: come il sito si tiene aggiornato da solo
+
+Il lavoro grosso di un sito nazionale non è costruirlo, è tenere giusti numeri, orari e indirizzi di un centinaio
+di aziende sanitarie. Lo facciamo in tre pezzi, ognuno con un compito solo:
+
+1. **Un server in Italia scarica.** Molti siti delle ASL non rispondono a chi si collega dall'estero (nel test del
+   21/10/2026: dal server italiano 110 pagine su 134 rispondono, dall'estero Messina, Caltanissetta e Ragusa non
+   rispondono). Un piccolo server virtuale (Aruba Cloud, data center di Bergamo, `/opt/guidasanita`) lancia ogni
+   notte alle 3:30 `tools/copie.mjs`: legge gli indirizzi ufficiali dai dati regionali, salva ogni pagina come
+   testo semplice e la carica nel branch **`copie-siti`** (cartella `copie/<regione>/<asl>/`, con `indice.json`:
+   indirizzo, codice HTTP, titolo, impronta del testo, se è cambiata). Niente AI qui: è uno script semplice.
+   Si presenta con nome e sito nel `User-Agent`, una pagina alla volta, una pausa tra una pagina e l'altra, mai
+   portali di prenotazione, login o CAPTCHA. Se un'ASL chiede di smettere, si toglie dalla lista.
+2. **Claude confronta e propone.** Una routine settimanale di Claude Code (cloud, inclusa nell'abbonamento) legge
+   le copie, le confronta con `data/regioni/<regione>/*.json` e apre una pull request: per ogni numero trovato
+   nella pagina ufficiale aggiorna `verified` e `proof: "pagina"`; per ogni numero non trovato, pagina rotta
+   (404, indirizzo cambiato) o orario diverso scrive una riga «prima / dopo / fonte» e un `todo`. Non cancella
+   mai un numero da sola. Se non c'è niente da cambiare, non apre niente.
+3. **Una persona approva.** Il proprietario legge la pull request dal telefono e fa «merge»: è l'unico gesto umano
+   che resta. I test (`tests/contatti.test.mjs`) continuano a bloccare numeri senza fonte, data o prova.
+
+Cosa serve una volta sola: il server (chiave SSH del PC del proprietario, accesso solo con chiave, aggiornamenti
+automatici), la chiave di deploy del server sul repository GitHub (scrittura, serve per il branch `copie-siti`),
+la routine su https://claude.ai/code/routines. Costo: il server, 2,49 € + IVA al mese. Claude è incluso in Max.
+
+Perché è lecito, in breve: contatti e orari di uffici pubblici sono informazioni pubbliche che l'ente ha l'obbligo
+di pubblicare; non copiamo testi, prendiamo i dati e citiamo la fonte; non superiamo nessuna protezione (niente
+login, niente CAPTCHA). Il metodo è scritto in `fonti.html` per trasparenza. Da far rileggere al legale insieme
+alle lettere.

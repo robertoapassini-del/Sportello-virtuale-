@@ -6,9 +6,9 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 
 const load = (p) => JSON.parse(readFileSync(new URL(p, import.meta.url), 'utf8'));
-const asp = load('../data/asp-sicilia.json');
+const asp = load('../data/regioni/sicilia/asp.json');
 const nums = load('../data/numeri.json');
-const inps = load('../data/inps-sicilia.json');
+const inps = load('../data/regioni/sicilia/inps.json');
 
 const MAX_DAYS = 92;
 const PROOFS = ['telefono', 'pagina', 'estratto', 'archivio'];
@@ -62,6 +62,6 @@ test('Numeri nazionali: fonte ufficiale, data e prova recenti', () => {
 test('Sedi INPS: indirizzo con fonte ufficiale, data e prova recenti', () => {
   for (const p of inps.provinces) {
     if (!p.address) continue;
-    check({ ...p, number: '803 164', label: `INPS ${p.name}` }, 'inps-sicilia.json', ['inps.it']);
+    check({ ...p, number: '803 164', label: `INPS ${p.name}` }, 'regioni/sicilia/inps.json', ['inps.it']);
   }
 });

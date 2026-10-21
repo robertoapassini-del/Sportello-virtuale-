@@ -67,7 +67,7 @@ e 9; dall'estero ne funzionavano solo 2. Quindi:
 
 | File | Campi |
 |---|---|
-| `data/asp-sicilia.json` | `phones` (numeri principali, nei moduli) e `contacts` (tutti i numeri dell'ASP, per argomento) |
+| `data/regioni/sicilia/asp.json` | `phones` (numeri principali, nei moduli) e `contacts` (tutti i numeri dell'ASP, per argomento) |
 | `data/numeri.json` | numeri nazionali e regionali (`groups[].items[]`) |
 
 Ogni numero ha: `number`, `label` o `title`, `url`, `verified`, `proof` (e `archived` se la prova è `archivio`). Facoltativi: `address`, `hours`. Le cose ancora da chiarire vanno solo

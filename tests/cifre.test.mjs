@@ -50,7 +50,7 @@ const ECCEZIONI = {
     { testo: /poco sopra i 57\.000 euro$/, perche: 'tetto 2025 del congedo straordinario, arrotondato: il valore esatto è nelle circolari INPS di gennaio, non nei dati (cambia ogni anno)' },
   ],
   'medico-famiglia': [
-    { testo: /a Trapani, dopo un cambio bisogna aspettare 30 giorni$/, perche: 'regola della sola ASP Trapani, scritta nel testo di asp-sicilia.json (scelta_medico)' },
+    { testo: /a Trapani, dopo un cambio bisogna aspettare 30 giorni$/, perche: 'regola della sola ASP Trapani, scritta nel testo di regioni/sicilia/asp.json (scelta_medico)' },
   ],
 };
 

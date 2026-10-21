@@ -1,7 +1,7 @@
 // Numeri utili: prima quelli validi in tutta Italia (data/numeri.json), poi quelli
-// dell'ASP della provincia scelta (data/asp-sicilia.json, campo phones).
+// dell'ASP della provincia scelta (data/regioni/sicilia/asp.json, campo phones).
 // La provincia scelta va nell'indirizzo (#palermo), così la pagina si può condividere.
-import { esc, loadJSON, renderFooter, helpBox, listenButton, speakScreen, sourcesBox, callButton, hideHeadingEmoji } from './common.js';
+import { esc, loadJSON, loadRegional, renderFooter, helpBox, listenButton, speakScreen, sourcesBox, callButton, hideHeadingEmoji } from './common.js';
 
 const ROOT = '../';
 const app = document.getElementById('app');
@@ -44,7 +44,7 @@ const TOPICS = [
   ['centralino', '📞 Centralino', "Se non trovi l'ufficio giusto: chiedi al centralino di passartelo."],
 ];
 
-// Sede INPS della stessa provincia (data/inps-sicilia.json).
+// Sede INPS della stessa provincia (data/regioni/sicilia/inps.json).
 function inpsBlock(id) {
   const p = inps.provinces.find((x) => x.id === id);
   if (!p || !p.address) return '';
@@ -119,7 +119,7 @@ window.addEventListener('hashchange', () => {
 (async function init() {
   renderFooter(ROOT);
   try {
-    [nums, data, inps] = await Promise.all([loadJSON(`${ROOT}data/numeri.json`), loadJSON(`${ROOT}data/asp-sicilia.json`), loadJSON(`${ROOT}data/inps-sicilia.json`)]);
+    [nums, data, inps] = await Promise.all([loadJSON(`${ROOT}data/numeri.json`), loadRegional(ROOT, 'asp'), loadRegional(ROOT, 'inps')]);
   } catch {
     app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>'; return;
   }

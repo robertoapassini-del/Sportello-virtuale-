@@ -31,7 +31,12 @@ Requisiti completi: [SPEC.md](SPEC.md).
   quello che scrive l'utente non viene salvato né inviato. Si contano solo, in forma anonima, le pagine viste e i
   «Sì / No» di «Ti è stata utile?» con GoatCounter (`GOATCOUNTER_CODE` in `js/common.js`).
 - **Decide il computer con regole fisse** (`js/engine.js`).
-- I dati di ASP e INPS si aggiornano a mano nei file `data/*.json`, ognuno con data di verifica e fonte.
+- I dati di ASP e INPS si aggiornano a mano nei file `data/regioni/<regione>/*.json`, le regole nazionali in `data/*.json`,
+  ognuno con data di verifica e fonte. Per ora c'è solo la Sicilia: il piano per le altre regioni è in [docs/regioni.md](docs/regioni.md).
+- **Copie delle pagine ufficiali** (`tools/copie.mjs`): ogni notte un piccolo server in Italia salva in testo le
+  pagine ufficiali delle ASL elencate nei dati (molti siti ASL non rispondono dall'estero) nel branch `copie-siti`.
+  Una routine settimanale di Claude le confronta con i dati e propone le modifiche con una pull request: nessun
+  numero cambia senza l'approvazione di una persona. Come funziona: [docs/regioni.md](docs/regioni.md).
 - **Controllo automatico** (`.github/workflows/controllo.yml`, `tools/controllo.mjs`): ogni mattina cerca novità in
   Gazzetta Ufficiale e INPS legate ai moduli; il lunedì controlla link rotti e `last_verified` più vecchi di 6 mesi.
   Non cambia mai il sito: apre issue con l'etichetta `controllo-automatico`. Per provarlo: `npm run controllo -- --tutto`.
@@ -126,12 +131,13 @@ npm run test:combinazioni
 | `cure-palliative/`, `js/palliative.js` | Modulo 11: cure palliative, richiesta scritta |
 | `prevenzione/`, `js/prevenzione.js` | Modulo 12: screening e vaccini gratuiti per età |
 | `medico-famiglia/`, `js/medico.js` | Modulo 13: scelta del medico o del pediatra |
-| `numeri-utili/`, `js/numeri.js`, `data/numeri.json` | Numeri utili nazionali e, per provincia, i contatti dell'ASP (`contacts` in `asp-sicilia.json`) |
+| `numeri-utili/`, `js/numeri.js`, `data/numeri.json` | Numeri utili nazionali e, per provincia, i contatti dell'ASP (`contacts` in `data/regioni/sicilia/asp.json`) |
 | `js/flow.js` | Navigazione comune ai moduli nuovi (schermate, Indietro, Ascolta, Fonti) |
 | `js/engine.js` | Regole sulle date (funzioni pure, testate) |
 | `js/letters.js` | Modelli di lettera (DA VERIFICARE con il legale) |
 | `js/common.js` | Piè di pagina, aiuto, lettura ad alta voce, copia/stampa |
-| `data/*.json` | Regole nazionali e contatti di ASP e INPS |
+| `data/*.json` | Regole nazionali |
+| `data/regioni/index.json`, `data/regioni/sicilia/` | Elenco delle regioni e, per ogni regione attiva, i contatti di ASP e INPS. Come aggiungere una regione: [docs/regioni.md](docs/regioni.md) |
 | `fonts/` | Carattere Nunito incluso nel sito (licenza SIL OFL) |
 | `privacy.html`, `note-legali.html`, `fonti.html` | Privacy, chi siamo, fonti |
 

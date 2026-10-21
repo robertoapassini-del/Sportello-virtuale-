@@ -87,12 +87,12 @@ Non fatto perché impossibile dall'estero: il controllo dei 370 link esterni (`n
 - [ ] **ASP Trapani:** le richieste del percorso di tutela («prestazioni garantite») vanno davvero a
   `comunicazione@asptrapani.it`? PEC `direzione.generale@pec.asptrapani.it`. Pagina:
   [Percorsi di tutela](https://www.asptrapani.it/servizi/Menu/dinamica.aspx?idSezione=17900&idArea=17901&idCat=28961&ID=47241&TipoElemento=pagina).
-  Se c'è un modulo, aggiungerlo in `form_url` (`data/asp-sicilia.json`).
+  Se c'è un modulo, aggiungerlo in `form_url` (`data/regioni/sicilia/asp.json`).
 - [ ] **ASP Enna:** oggi il sito manda le richieste a `responsabile.urp@asp.enna.it`. Letto dall'Italia il 19/10/2026: il
   regolamento aziendale dice che la richiesta va al **protocollo** (PEC `protocollo.generale@pec.asp.enna.it`), non all'URP.
   Decidere se cambiare `send_to`. Pagina: [Liste di attesa](https://www.aspenna.it/amministrazione-trasparente/servizi-erogati/liste-di-attesa)
   (sito nuovo dal 01/03/2026). Nessun modulo online.
-- [ ] Dopo la conferma: in `data/asp-sicilia.json` togliere la nota nei `todo` di Enna e Trapani.
+- [ ] Dopo la conferma: in `data/regioni/sicilia/asp.json` togliere la nota nei `todo` di Enna e Trapani.
 
 ### Prevenzione
 - [ ] **Screening gratuito dell'epatite C** (nati 1969–1989, e chi è seguito dal SerD o è in carcere a ogni età).

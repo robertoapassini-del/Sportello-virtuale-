@@ -7,7 +7,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const SITE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const asp = JSON.parse(fs.readFileSync(path.join(SITE, 'data/asp-sicilia.json'), 'utf8'));
+const asp = JSON.parse(fs.readFileSync(path.join(SITE, 'data/regioni/sicilia/asp.json'), 'utf8'));
 
 const out = ['# Numeri da ricontrollare dall\'Italia', '',
   'Creato da `npm run da-verificare`. Per ogni pagina: aprila, controlla numero, indirizzo e orari, e cerca le notizie di chiusure o traslochi.',
