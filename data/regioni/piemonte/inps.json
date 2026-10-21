@@ -1,0 +1,120 @@
+{
+ "region": "Piemonte",
+ "last_verified": "2026-10-21",
+ "note": "Indirizzi e PEC delle sedi INPS dalle pagine «sedi» di inps.it, copiate il 21/10/2026 dal server in Italia. Per andare allo sportello si prenota (MyINPS, app, 803 164 / 06 164164). regime (riforma della disabilità) da verificare: finché è null il modulo invalidità non va attivato per questa regione.",
+ "sources": [
+  {
+   "label": "INPS – sedi e contatti in Piemonte",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.818000.818000-elencoStruttureInps.html"
+  }
+ ],
+ "provinces": [
+  {
+   "id": "alessandria",
+   "name": "Alessandria",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.alessandria@postacert.inps.gov.it",
+   "address": "Via Morbelli 34, Alessandria",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.020000.020000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "asti",
+   "name": "Asti",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.asti@postacert.inps.gov.it",
+   "address": "Via Fratelli Rosselli 22/24, Asti",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.070000.070000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "biella",
+   "name": "Biella",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.biella@postacert.inps.gov.it",
+   "address": "Via Tripoli 14, Biella",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.890100.890100-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "cuneo",
+   "name": "Cuneo",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.cuneo@postacert.inps.gov.it",
+   "address": "Corso Santorre. Di Santarosa 15, Cuneo",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.270000.270000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "novara",
+   "name": "Novara",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.novara@postacert.inps.gov.it",
+   "address": "Corso Della Vittoria 8, Novara",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.520000.520000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "torino",
+   "name": "Torino",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.torino@postacert.inps.gov.it",
+   "address": "Corso Vittorio Emanuele II 3, Torino",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.810000.810000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "verbano-cusio-ossola",
+   "name": "Verbano-Cusio-Ossola",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.verbanocusioossola@postacert.inps.gov.it",
+   "address": "Corso Guglielmo Marconi 99, Gravellona Toce",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.520100.520100-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "vercelli",
+   "name": "Vercelli",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.vercelli@postacert.inps.gov.it",
+   "address": "Piazza Zumaglini 10, Vercelli",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.890000.890000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  }
+ ],
+ "todo": [
+  "Riforma della disabilità: verificare quali province sono nella sperimentazione e da quando (campo regime)."
+ ]
+}

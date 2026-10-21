@@ -1,0 +1,1351 @@
+{
+ "region": "Piemonte",
+ "model": "ASL",
+ "_note": "Numeri delle ASL del Piemonte per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili. In Piemonte la guardia medica è il 116117 in tutta la regione e si prenota al CUP Piemonte 800 000 500.",
+ "asl": [
+  {
+   "id": "alessandria",
+   "name": "ASL Alessandria (ASL AL)",
+   "province": "Alessandria",
+   "site_url": "https://www.aslal.it/",
+   "official_domains": [
+    "aslal.it",
+    "regione.piemonte.it",
+    "salutepiemonte.it"
+   ],
+   "guardia_medica_url": "https://www.aslal.it/attivo-sul-territorio-asl-al-il-nuovo-numero-116117",
+   "emails": [
+    "urp@aslal.it"
+   ],
+   "pec": "aslal@pec.aslal.it",
+   "phones": [
+    {
+     "label": "ASL Alessandria – sede legale (Via Venezia 6, Alessandria)",
+     "number": "0131 306111",
+     "url": "https://www.aslal.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP Piemonte (CUP unico regionale): prenotare, spostare o disdire visite ed esami in tutto il Piemonte, numero verde gratuito",
+     "number": "800 000 500",
+     "url": "https://servizi.regione.piemonte.it/catalogo/prenotazione-visite-esami",
+     "hours": "Tutti i giorni (lunedì–domenica) 8–20",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Alessandria – Alessandria: numero verde",
+     "number": "800 200330",
+     "url": "https://www.aslal.it/urp-2",
+     "address": "Via Venezia 6, Alessandria (1° piano)",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Alessandria – Alessandria",
+     "number": "0131 306711",
+     "url": "https://www.aslal.it/urp-2",
+     "address": "Via Venezia 6, Alessandria (1° piano)",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Alessandria – Acqui Terme, Novi Ligure e Ovada: numero verde",
+     "number": "800 234960",
+     "url": "https://www.aslal.it/urp-2",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Alessandria – Ospedale di Casale Monferrato",
+     "number": "0142 434372",
+     "url": "https://www.aslal.it/urp-2",
+     "address": "Viale Giolitti 2, Casale Monferrato",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Alessandria – Ospedale di Novi Ligure",
+     "number": "0143 332379",
+     "url": "https://www.aslal.it/urp-2",
+     "address": "Via E. Raggio 12, Novi Ligure",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Alessandria – Ospedale di Tortona",
+     "number": "0131 865493",
+     "url": "https://www.aslal.it/urp-2",
+     "address": "Piazza Antico Borgo del Loreto, Tortona",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale) – ASL Alessandria: numero gratuito 116117",
+     "number": "116117",
+     "url": "https://www.aslal.it/attivo-sul-territorio-asl-al-il-nuovo-numero-116117",
+     "hours": "Dal lunedì al venerdì 20–8; nel fine settimana dalle 8 del sabato alle 8 del lunedì",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Sportello unico socio-sanitario del Distretto di Valenza (anziani, invalidi, persone con disabilità)",
+     "number": "0131 959337",
+     "url": "https://www.aslal.it/sportello-unico-1250",
+     "hours": "Dal lunedì al venerdì 8.30–13",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Regione Piemonte – Prenotazione visite ed esami (CUP Piemonte)",
+     "url": "https://servizi.regione.piemonte.it/catalogo/prenotazione-visite-esami"
+    },
+    {
+     "label": "ASL Alessandria – Homepage",
+     "url": "https://www.aslal.it/"
+    },
+    {
+     "label": "ASL Alessandria – URP",
+     "url": "https://www.aslal.it/urp-2"
+    },
+    {
+     "label": "ASL Alessandria – 116117",
+     "url": "https://www.aslal.it/attivo-sul-territorio-asl-al-il-nuovo-numero-116117"
+    },
+    {
+     "label": "ASL Alessandria – Sportello unico Valenza",
+     "url": "https://www.aslal.it/sportello-unico-1250"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "Il numero 0131 306111 è scritto in fondo al sito accanto alla sede legale, senza la parola «centralino».",
+    "Le cure domiciliari non hanno numeri nelle pagine copiate; c'è solo lo sportello unico del Distretto di Valenza."
+   ]
+  },
+  {
+   "id": "asti",
+   "name": "ASL Asti (ASL AT)",
+   "province": "Asti",
+   "site_url": "https://asl.at.it/",
+   "official_domains": [
+    "asl.at.it",
+    "regione.piemonte.it",
+    "salutepiemonte.it"
+   ],
+   "guardia_medica_url": "https://asl.at.it/con-noi/continuita-assistenziale-ex-guardia-medica/",
+   "pua_url": "https://asl.at.it/cosa-fare-per/cure-domiciliari/",
+   "emails": [
+    "urp@asl.at.it"
+   ],
+   "pec": "protocollo@pec.asl.at.it",
+   "phones": [
+    {
+     "label": "Centralino ASL Asti – Ospedale Cardinal Massaia",
+     "number": "0141 481111",
+     "url": "https://asl.at.it/urp-e-contatti/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino ASL Asti – Edificio Don Bosco (Via Conte Verde 125)",
+     "number": "0141 484000",
+     "url": "https://asl.at.it/urp-e-contatti/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino ASL Asti – Presidio Santo Spirito di Nizza Monferrato",
+     "number": "0141 483111",
+     "url": "https://asl.at.it/urp-e-contatti/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP Piemonte (CUP unico regionale): prenotare, spostare o disdire visite ed esami in tutto il Piemonte, numero verde gratuito",
+     "number": "800 000 500",
+     "url": "https://servizi.regione.piemonte.it/catalogo/prenotazione-visite-esami",
+     "hours": "Tutti i giorni (lunedì–domenica) 8–20",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP dell'ASL Asti all'Ospedale Cardinal Massaia: prenotare visite ed esami",
+     "number": "0141 486111",
+     "url": "https://asl.at.it/cup/",
+     "hours": "Al telefono dal lunedì al venerdì 11–15",
+     "address": "Corso Dante 202, Asti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "ASL Asti: prenotare TAC e risonanze a Nizza Monferrato (Presidio Santo Spirito)",
+     "number": "0141 483248",
+     "url": "https://asl.at.it/cup/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Asti: ufficio per i cittadini, reclami",
+     "number": "0141 486551",
+     "url": "https://asl.at.it/urp-e-contatti/",
+     "hours": "Al telefono dal lunedì al venerdì 9–15.30",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Asti: altro numero",
+     "number": "0141 486553",
+     "url": "https://asl.at.it/urp-e-contatti/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Asti: altro numero",
+     "number": "0141 486234",
+     "url": "https://asl.at.it/urp-e-contatti/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Asti: altro numero",
+     "number": "0141 484427",
+     "url": "https://asl.at.it/urp-e-contatti/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale) – ASL Asti: numero gratuito 116117",
+     "number": "116117",
+     "url": "https://asl.at.it/con-noi/continuita-assistenziale-ex-guardia-medica/",
+     "hours": "Tutti i giorni 20–8; sabato, prefestivi e festivi anche 8–20",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Regione Piemonte – Prenotazione visite ed esami (CUP Piemonte)",
+     "url": "https://servizi.regione.piemonte.it/catalogo/prenotazione-visite-esami"
+    },
+    {
+     "label": "ASL Asti – URP e contatti",
+     "url": "https://asl.at.it/urp-e-contatti/"
+    },
+    {
+     "label": "ASL Asti – C.U.P.",
+     "url": "https://asl.at.it/cup/"
+    },
+    {
+     "label": "ASL Asti – Continuità assistenziale",
+     "url": "https://asl.at.it/con-noi/continuita-assistenziale-ex-guardia-medica/"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "La pagina sulle cure domiciliari dell'ASL Asti non ha numeri (si attivano dal medico di famiglia)."
+   ]
+  },
+  {
+   "id": "biella",
+   "name": "ASL Biella (ASL BI)",
+   "province": "Biella",
+   "site_url": "https://aslbi.piemonte.it/",
+   "official_domains": [
+    "aslbi.piemonte.it",
+    "regione.piemonte.it",
+    "salutepiemonte.it"
+   ],
+   "guardia_medica_url": "https://aslbi.piemonte.it/116117-il-numero-unico-per-contattare-lex-guardia-medica/",
+   "pua_url": "https://aslbi.piemonte.it/come-fare-per/assistenza-domiciliare/",
+   "emails": [
+    "urp@aslbi.piemonte.it",
+    "adi@aslbi.piemonte.it"
+   ],
+   "pec": "ufficio.protocollo@cert.aslbi.piemonte.it",
+   "phones": [
+    {
+     "label": "Centralino ASL Biella",
+     "number": "015 15151",
+     "url": "https://aslbi.piemonte.it/contatti/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP Piemonte (CUP unico regionale): prenotare, spostare o disdire visite ed esami in tutto il Piemonte, numero verde gratuito",
+     "number": "800 000 500",
+     "url": "https://servizi.regione.piemonte.it/catalogo/prenotazione-visite-esami",
+     "hours": "Tutti i giorni (lunedì–domenica) 8–20",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Biella: informazioni e segnalazioni",
+     "number": "015 15153968",
+     "url": "https://aslbi.piemonte.it/u-r-p/",
+     "hours": "Dal lunedì al venerdì 9–12.30 e 14.30–15.30",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale) – ASL Biella: numero unico 116117",
+     "number": "116117",
+     "url": "https://aslbi.piemonte.it/116117-il-numero-unico-per-contattare-lex-guardia-medica/",
+     "hours": "Dal lunedì al venerdì 20–8; 24 ore su 24 nei giorni prefestivi e festivi",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare integrata (ADI) – ASL Biella, Distretto di Biella (Ponderano)",
+     "number": "015 15159106",
+     "url": "https://aslbi.piemonte.it/prontuario-biellese/assistenza-domiciliare-integrata-a-d-i/",
+     "hours": "Dal lunedì al venerdì 9–12.30",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari – ASL Biella, Distretto 2 Cossato (Cure Primarie)",
+     "number": "015 15159471",
+     "url": "https://aslbi.piemonte.it/prontuario-biellese/assistenza-domiciliare-integrata-a-d-i/",
+     "address": "Via Piero Maffei 59, Cossato (Poliambulatorio, 1° piano)",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "protesica",
+     "label": "Ufficio Protesi dell'ASL Biella – Poliambulatorio di Cossato: ausili e protesi",
+     "number": "015 15159439",
+     "url": "https://aslbi.piemonte.it/come-fare-per/assistenza-domiciliare/",
+     "hours": "Dal lunedì al venerdì 8–13",
+     "address": "Via Maffei 59, Cossato",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Regione Piemonte – Prenotazione visite ed esami (CUP Piemonte)",
+     "url": "https://servizi.regione.piemonte.it/catalogo/prenotazione-visite-esami"
+    },
+    {
+     "label": "ASL Biella – Contatti",
+     "url": "https://aslbi.piemonte.it/contatti/"
+    },
+    {
+     "label": "ASL Biella – Ufficio Comunicazione e URP",
+     "url": "https://aslbi.piemonte.it/u-r-p/"
+    },
+    {
+     "label": "ASL Biella – 116117",
+     "url": "https://aslbi.piemonte.it/116117-il-numero-unico-per-contattare-lex-guardia-medica/"
+    },
+    {
+     "label": "ASL Biella – ADI",
+     "url": "https://aslbi.piemonte.it/prontuario-biellese/assistenza-domiciliare-integrata-a-d-i/"
+    },
+    {
+     "label": "ASL Biella – Assistenza domiciliare",
+     "url": "https://aslbi.piemonte.it/come-fare-per/assistenza-domiciliare/"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "La notizia sul 116117 è del 1° luglio 2022 e diceva che i vecchi numeri locali restavano attivi «al momento»: non li ho messi.",
+    "La pagina «Prenotare una visita» dell'ASL Biella dà «Pagina non trovata» (404)."
+   ]
+  },
+  {
+   "id": "cuneo",
+   "name": "ASL CN1 e ASL CN2",
+   "province": "Cuneo",
+   "site_url": "https://www.aslcn1.it/",
+   "official_domains": [
+    "aslcn1.it",
+    "aslcn2.it",
+    "regione.piemonte.it",
+    "salutepiemonte.it"
+   ],
+   "guardia_medica_url": "https://www.aslcn1.it/assistenza-territoriale/servizi-territoriali-distrettuali/continuita-assistenziale-guardia-medica",
+   "pua_url": "https://www.aslcn1.it/assistenza-territoriale/assistenza-domiciliare",
+   "emails": [
+    "urp@aslcn1.it",
+    "urp@aslcn2.it"
+   ],
+   "pec": "protocollo@aslcn1.legalmailPA.it",
+   "phones": [
+    {
+     "label": "Centralino ASL CN1 (sede legale, Cuneo)",
+     "number": "0171 450111",
+     "url": "https://www.aslcn1.it/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino Ospedale di Saluzzo (ASL CN1)",
+     "number": "0175 215111",
+     "url": "https://www.aslcn1.it/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino Ospedale di Savigliano (ASL CN1)",
+     "number": "0172 719111",
+     "url": "https://www.aslcn1.it/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino Ospedale di Fossano (ASL CN1)",
+     "number": "0172 699111",
+     "url": "https://www.aslcn1.it/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino Ospedale di Mondovì (ASL CN1)",
+     "number": "0174 677111",
+     "url": "https://www.aslcn1.it/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino Ospedale di Ceva (ASL CN1)",
+     "number": "0174 7231",
+     "url": "https://www.aslcn1.it/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino ASL CN2 (Alba e Bra)",
+     "number": "0172 1401111",
+     "url": "https://www.aslcn2.it/contatti-e-link/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "ASL CN2 – Distretto 1 Alba",
+     "number": "0173 316908",
+     "url": "https://www.aslcn2.it/contatti-e-link/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "ASL CN2 – Distretto 2 Bra",
+     "number": "0172 420900",
+     "url": "https://www.aslcn2.it/contatti-e-link/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP Piemonte (CUP unico regionale): prenotare, spostare o disdire visite ed esami in tutto il Piemonte, numero verde gratuito",
+     "number": "800 000 500",
+     "url": "https://servizi.regione.piemonte.it/catalogo/prenotazione-visite-esami",
+     "hours": "Tutti i giorni (lunedì–domenica) 8–20",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL CN1 – Cuneo: ufficio per i cittadini, reclami",
+     "number": "0171 450221",
+     "url": "https://www.aslcn1.it/urp/ufficio-relazioni-con-il-pubblico",
+     "hours": "Dal lunedì al venerdì 8.30–12.30",
+     "address": "Via Carlo Boggio 12, Cuneo",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL CN1 – Savigliano",
+     "number": "0172 719570",
+     "url": "https://www.aslcn1.it/urp/ufficio-relazioni-con-il-pubblico",
+     "address": "Via Ospedali 5, Savigliano",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL CN1 – Mondovì",
+     "number": "0174 677011",
+     "url": "https://www.aslcn1.it/urp/ufficio-relazioni-con-il-pubblico",
+     "address": "Via San Rocchetto 99, Mondovì",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL CN2 (Ospedale di Verduno): ufficio per i cittadini, reclami",
+     "number": "0172 1408043",
+     "url": "https://www.aslcn2.it/ospedale-michele-pietro-ferrero-verduno/u-r-p-ufficio-relazioni-con-il-pubblico/sede-e-contatti/",
+     "address": "Via Tanaro 7, Verduno",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale) – ASL CN1: numero unico 116117",
+     "number": "116117",
+     "url": "https://www.aslcn1.it/assistenza-territoriale/servizi-territoriali-distrettuali/continuita-assistenziale-guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale) – ASL CN2 (Alba, Bra, Canale, Cortemilia, S. Stefano Belbo): numero unico 116117",
+     "number": "116117",
+     "url": "https://www.aslcn2.it/ospedale-michele-pietro-ferrero-verduno/orari-e-informazioni/guardia-medica-servizio-continuita-assistenziale/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Regione Piemonte – Prenotazione visite ed esami (CUP Piemonte)",
+     "url": "https://servizi.regione.piemonte.it/catalogo/prenotazione-visite-esami"
+    },
+    {
+     "label": "ASL CN1 – Contatti",
+     "url": "https://www.aslcn1.it/contatti"
+    },
+    {
+     "label": "ASL CN1 – URP",
+     "url": "https://www.aslcn1.it/urp/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "label": "ASL CN1 – Continuità assistenziale",
+     "url": "https://www.aslcn1.it/assistenza-territoriale/servizi-territoriali-distrettuali/continuita-assistenziale-guardia-medica"
+    },
+    {
+     "label": "ASL CN2 – Contatti",
+     "url": "https://www.aslcn2.it/contatti-e-link/"
+    },
+    {
+     "label": "ASL CN2 – URP sede e contatti",
+     "url": "https://www.aslcn2.it/ospedale-michele-pietro-ferrero-verduno/u-r-p-ufficio-relazioni-con-il-pubblico/sede-e-contatti/"
+    },
+    {
+     "label": "ASL CN2 – Guardia medica",
+     "url": "https://www.aslcn2.it/ospedale-michele-pietro-ferrero-verduno/orari-e-informazioni/guardia-medica-servizio-continuita-assistenziale/"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "Le pagine sulle cure domiciliari dell'ASL CN1 non hanno numeri; per l'ASL CN2 non c'è una pagina copiata sulle cure domiciliari."
+   ]
+  },
+  {
+   "id": "novara",
+   "name": "ASL Novara (ASL NO)",
+   "province": "Novara",
+   "site_url": "https://www.asl.novara.it/",
+   "official_domains": [
+    "asl.novara.it",
+    "regione.piemonte.it",
+    "salutepiemonte.it",
+    "aslto3.piemonte.it"
+   ],
+   "guardia_medica_url": "https://www.aslto3.piemonte.it/servizi/guardia-medica/",
+   "pua_url": "https://www.asl.novara.it/it/attivita/cure-domiciliari",
+   "emails": [
+    "ure@asl.novara.it"
+   ],
+   "pec": "protocollogenerale@pec.asl.novara.it",
+   "phones": [
+    {
+     "label": "Centralino ASL Novara – Novara e area sud",
+     "number": "0321 374111",
+     "url": "https://www.asl.novara.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino ASL Novara – Borgomanero e area nord",
+     "number": "0322 8481",
+     "url": "https://www.asl.novara.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP Piemonte (CUP unico regionale): prenotare, spostare o disdire visite ed esami in tutto il Piemonte, numero verde gratuito",
+     "number": "800 000 500",
+     "url": "https://servizi.regione.piemonte.it/catalogo/prenotazione-visite-esami",
+     "hours": "Tutti i giorni (lunedì–domenica) 8–20",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "Ufficio Relazioni Esterne (URP) dell'ASL Novara: ufficio per i cittadini, reclami",
+     "number": "0321 374530",
+     "url": "https://www.asl.novara.it/it/attivita/ufficio-relazioni-esterne-urp",
+     "hours": "Dal lunedì al venerdì 9–13",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale): numero unico 116117, attivo in tutto il Piemonte",
+     "number": "116117",
+     "url": "https://www.aslto3.piemonte.it/servizi/guardia-medica/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari – ASL Novara, segreteria di Novara",
+     "number": "0321 374462",
+     "url": "https://www.asl.novara.it/it/attivita/cure-domiciliari",
+     "hours": "Martedì e giovedì 10–12",
+     "address": "Viale Roma, Novara (sede legale)",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari – ASL Novara, segreteria di Borgomanero",
+     "number": "0322 848359",
+     "url": "https://www.asl.novara.it/it/attivita/cure-domiciliari",
+     "hours": "Martedì e giovedì 14–15.30",
+     "address": "Viale Zoppis, Borgomanero",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari – ASL Novara, segreteria di Arona",
+     "number": "0322 516525",
+     "url": "https://www.asl.novara.it/it/attivita/cure-domiciliari",
+     "hours": "Martedì e giovedì 14–15.30",
+     "address": "Piazza de Filippi, Arona",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari – ASL Novara, segreteria di Trecate",
+     "number": "0321 786609",
+     "url": "https://www.asl.novara.it/it/attivita/cure-domiciliari",
+     "hours": "Dal lunedì al giovedì 14–15",
+     "address": "Via Rugiada 20, Trecate",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Regione Piemonte – Prenotazione visite ed esami (CUP Piemonte)",
+     "url": "https://servizi.regione.piemonte.it/catalogo/prenotazione-visite-esami"
+    },
+    {
+     "label": "ASL Novara – Homepage",
+     "url": "https://www.asl.novara.it/"
+    },
+    {
+     "label": "ASL Novara – Ufficio Relazioni Esterne (URP)",
+     "url": "https://www.asl.novara.it/it/attivita/ufficio-relazioni-esterne-urp"
+    },
+    {
+     "label": "ASL Novara – Cure domiciliari",
+     "url": "https://www.asl.novara.it/it/attivita/cure-domiciliari"
+    },
+    {
+     "label": "ASL TO3 – Continuità assistenziale (116117 in tutto il Piemonte)",
+     "url": "https://www.aslto3.piemonte.it/servizi/guardia-medica/"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "La pagina della guardia medica dell'ASL Novara dà «Pagina non trovata» (404): il 116117 è preso dalla pagina dell'ASL TO3 che dice che vale in tutto il Piemonte; la pagina dell'ASL AL dice che Novara è stata la prima ad attivarlo.",
+    "In testa al sito c'è «URP 0321-374111», che è il centralino: ho messo come URP il numero dell'Ufficio Relazioni Esterne."
+   ]
+  },
+  {
+   "id": "torino",
+   "name": "ASL Città di Torino, ASL TO3, ASL TO4 e ASL TO5",
+   "province": "Torino",
+   "site_url": "https://www.aslcittaditorino.it/",
+   "official_domains": [
+    "aslcittaditorino.it",
+    "aslto3.piemonte.it",
+    "aslto4.piemonte.it",
+    "aslto5.piemonte.it",
+    "regione.piemonte.it",
+    "salutepiemonte.it"
+   ],
+   "guardia_medica_url": "https://www.aslcittaditorino.it/contattare-il-servizio-di-continuita-assistenziale-ex-guardia-medica/",
+   "pua_url": "https://www.aslcittaditorino.it/punto-unico-di-accesso-pua/",
+   "emails": [
+    "urp@aslcittaditorino.it",
+    "urp@aslto3.piemonte.it",
+    "urp@aslto4.piemonte.it",
+    "urp@aslto5.piemonte.it"
+   ],
+   "pec": "protocollo@pec.aslcittaditorino.it",
+   "phones": [
+    {
+     "label": "Centralino ASL Città di Torino (Via San Secondo 29, Torino)",
+     "number": "011 566 1566",
+     "url": "https://www.aslcittaditorino.it/numeri-utili/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino Ospedale San Giovanni Bosco (ASL Città di Torino)",
+     "number": "011 240 1111",
+     "url": "https://www.aslcittaditorino.it/numeri-utili/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino Ospedale Maria Vittoria / Amedeo di Savoia / Birago di Vische (ASL Città di Torino)",
+     "number": "011 4393 111",
+     "url": "https://www.aslcittaditorino.it/numeri-utili/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino Ospedale Martini (ASL Città di Torino)",
+     "number": "011 7095 111",
+     "url": "https://www.aslcittaditorino.it/numeri-utili/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino ASL TO3 – Collegno (zona ovest: Collegno, Rivoli, Valle di Susa, Val Sangone, Venaria, Orbassano)",
+     "number": "011 40171",
+     "url": "https://www.aslto3.piemonte.it/contatti/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino ASL TO3 – Pinerolo (zona Pinerolese)",
+     "number": "0121 2331",
+     "url": "https://www.aslto3.piemonte.it/contatti/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "ASL TO4 – Chivasso: numero dei contatti dell'azienda",
+     "number": "011 9176666",
+     "url": "https://www.aslto4.piemonte.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "ASL TO4 – Ciriè: numero dei contatti dell'azienda",
+     "number": "011 92171",
+     "url": "https://www.aslto4.piemonte.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "ASL TO4 – Ivrea: numero dei contatti dell'azienda",
+     "number": "0125 4141",
+     "url": "https://www.aslto4.piemonte.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "ASL TO5 – Chieri: numero indicato in testa al sito (zona Chieri, Carmagnola, Moncalieri, Nichelino)",
+     "number": "011 94291",
+     "url": "https://www.aslto5.piemonte.it/index.php/it/home",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "ASL TO5 – Carmagnola: numero indicato in testa al sito",
+     "number": "011 97191",
+     "url": "https://www.aslto5.piemonte.it/index.php/it/home",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "ASL TO5 – Moncalieri: numero indicato in testa al sito",
+     "number": "011 69301",
+     "url": "https://www.aslto5.piemonte.it/index.php/it/home",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "ASL TO5 – Nichelino: numero indicato in testa al sito",
+     "number": "011 6802011",
+     "url": "https://www.aslto5.piemonte.it/index.php/it/home",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP Piemonte (CUP unico regionale): prenotare, spostare o disdire visite ed esami in tutto il Piemonte, numero verde gratuito",
+     "number": "800 000 500",
+     "url": "https://servizi.regione.piemonte.it/catalogo/prenotazione-visite-esami",
+     "hours": "Tutti i giorni (lunedì–domenica) 8–20",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Sportelli CUP dell'ASL TO4 (Ciriè, Chivasso, San Mauro, Settimo, Caluso, Strambino, Cuorgnè): appuntamento per andare allo sportello, solo se non si riesce a prenotare online o al numero verde",
+     "number": "011 9176012",
+     "url": "https://www.aslto4.piemonte.it/prenotazione-e-disdetta-di-visite-ed-esami-specialistici",
+     "hours": "Dal lunedì al venerdì 13–15",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Città di Torino – Ospedale Maria Vittoria / Amedeo di Savoia: ufficio per i cittadini, reclami",
+     "number": "011 4393 550",
+     "url": "https://www.aslcittaditorino.it/urp/",
+     "hours": "Dal lunedì al venerdì 8.30–13 e 14–16",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Città di Torino – Ospedale San Giovanni Bosco (Piazza Donatore di Sangue 3)",
+     "number": "011 240 2415",
+     "url": "https://www.aslcittaditorino.it/urp/",
+     "hours": "Dal lunedì al venerdì 8.30–13 e 14–16",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Città di Torino – Ospedale Martini (Via Tofane 71)",
+     "number": "011 7095 2409",
+     "url": "https://www.aslcittaditorino.it/urp/",
+     "hours": "Dal lunedì al venerdì 8.30–13 e 14–16",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Città di Torino – Via San Secondo 29",
+     "number": "011 566 2266",
+     "url": "https://www.aslcittaditorino.it/urp/",
+     "hours": "Dal lunedì al venerdì 8.30–16",
+     "address": "Via San Secondo 29, Torino",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL TO3: ufficio per i cittadini, reclami",
+     "number": "0121 235099",
+     "url": "https://www.aslto3.piemonte.it/urp/",
+     "hours": "Dal lunedì al venerdì 9–13",
+     "address": "Stradale Fenestrelle 72, Pinerolo",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL TO4 – punto di ascolto all'Ospedale di Chivasso (Direzione Sanitaria)",
+     "number": "011 9176504",
+     "url": "https://www.aslto4.piemonte.it/di-cosa-si-occupa-urp",
+     "hours": "Dal lunedì al venerdì 9–11",
+     "address": "Via Paolo Regis 42, Chivasso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL TO4 – punto di ascolto all'Ospedale di Ciriè (Direzione Sanitaria)",
+     "number": "011 9217234",
+     "url": "https://www.aslto4.piemonte.it/di-cosa-si-occupa-urp",
+     "hours": "Dal lunedì al venerdì 9–12 e 14–15",
+     "address": "Via Battitore 7/9, Ciriè",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL TO4 – punto di ascolto per gli Ospedali di Ivrea e Cuorgnè",
+     "number": "0124 654235",
+     "url": "https://www.aslto4.piemonte.it/di-cosa-si-occupa-urp",
+     "hours": "Dal lunedì al venerdì 9–12 e 14–15",
+     "address": "Piazza Mussatti 5, Cuorgnè",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL TO5: ufficio per i cittadini, reclami",
+     "number": "011 94293319",
+     "url": "https://www.aslto5.piemonte.it/it/attivita/ufficio-relazioni-pubblico",
+     "hours": "Dal lunedì al venerdì (esclusi festivi) 9–12.30 e 14.30–16",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale) – ASL Città di Torino: numero unico regionale 116117",
+     "number": "116117",
+     "url": "https://www.aslcittaditorino.it/contattare-il-servizio-di-continuita-assistenziale-ex-guardia-medica/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale) – ASL TO3: numero unico 116117",
+     "number": "116117",
+     "url": "https://www.aslto3.piemonte.it/servizi/guardia-medica/",
+     "hours": "Tutte le notti 20–8; sabato, domenica, prefestivi e festivi 8–20",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale) – ASL TO4: numero unico 116117",
+     "number": "116117",
+     "url": "https://www.aslto4.piemonte.it/continuita-assistenziale-ex-guardia-medica",
+     "hours": "Tutti i giorni 20–8; sabato, prefestivi e festivi anche 8–20",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale) – ASL TO5: numero unico regionale 116117",
+     "number": "116117",
+     "url": "https://www.aslto5.piemonte.it/index.php/it/come-fare-per/contattare-continuita-assistenziale-ex-guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari – ASL Città di Torino, Nord Est (Circoscrizione 6)",
+     "number": "011 2403280",
+     "url": "https://www.aslcittaditorino.it/sedi/cure-domiciliari-via-botticelli/",
+     "address": "Via Botticelli 130, Torino (3° piano)",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari – ASL TO3, Distretto Pinerolese (Pinerolo)",
+     "number": "0121 235051",
+     "url": "https://www.aslto3.piemonte.it/servizi/assistenza/assistenza-a-domicilio/",
+     "address": "Stradale Fenestrelle 72, Pinerolo",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari – ASL TO3, Distretto Val Susa (Susa)",
+     "number": "0122 621371",
+     "url": "https://www.aslto3.piemonte.it/servizi/assistenza/assistenza-a-domicilio/",
+     "address": "Corso Inghilterra 72, Susa (c/o Ospedale)",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari – ASL TO3, Distretto Area Metropolitana Centro (Collegno)",
+     "number": "011 4017825",
+     "url": "https://www.aslto3.piemonte.it/servizi/assistenza/assistenza-a-domicilio/",
+     "address": "Via Torino 1, Collegno (Villa Rosa)",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari – ASL TO3, Rivoli (segreteria telefonica)",
+     "number": "011 4017039",
+     "url": "https://www.aslto3.piemonte.it/servizi/assistenza/assistenza-a-domicilio/",
+     "hours": "Dal lunedì al venerdì 8–16",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari – ASL TO3, Distretto Area Metropolitana Nord (Venaria Reale)",
+     "number": "011 4991258",
+     "url": "https://www.aslto3.piemonte.it/servizi/assistenza/assistenza-a-domicilio/",
+     "address": "Via Don Sapino 152, Venaria Reale",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari – ASL TO3, Distretto Area Metropolitana Sud (Orbassano)",
+     "number": "011 9023215",
+     "url": "https://www.aslto3.piemonte.it/servizi/assistenza/assistenza-a-domicilio/",
+     "address": "Strada Rivalta 46, Orbassano",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari – ASL TO4, Distretto Ciriè-Lanzo (Ciriè)",
+     "number": "011 9217524",
+     "url": "https://www.aslto4.piemonte.it/cure-domiciliari",
+     "address": "Via Mazzini 13, Ciriè",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari – ASL TO4, Distretto Chivasso-San Mauro (Chivasso)",
+     "number": "011 9176612",
+     "url": "https://www.aslto4.piemonte.it/cure-domiciliari",
+     "address": "Via Nino Costa 43, Chivasso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari – ASL TO4, Distretto Chivasso-San Mauro (Gassino Torinese)",
+     "number": "011 9817219",
+     "url": "https://www.aslto4.piemonte.it/cure-domiciliari",
+     "address": "Via Foratella 22, Gassino Torinese",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari – ASL TO4, Distretto Settimo Torinese (Settimo)",
+     "number": "011 8212220",
+     "url": "https://www.aslto4.piemonte.it/cure-domiciliari",
+     "address": "Via Leinì 70, Settimo Torinese",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari – ASL TO4, Distretto Settimo Torinese (Leinì)",
+     "number": "011 9971452",
+     "url": "https://www.aslto4.piemonte.it/cure-domiciliari",
+     "address": "Via Volpiano 38, Leinì",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari – ASL TO4, Distretto Settimo Torinese (Volpiano)",
+     "number": "011 9823718",
+     "url": "https://www.aslto4.piemonte.it/cure-domiciliari",
+     "address": "Piazza Cavour, Volpiano",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari – ASL TO4, Distretto Ivrea",
+     "number": "0125 414449",
+     "url": "https://www.aslto4.piemonte.it/cure-domiciliari",
+     "address": "Via Natalia Ginzburg 7, Ivrea",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari – ASL TO4, Distretto Cuorgnè",
+     "number": "0124 654125",
+     "url": "https://www.aslto4.piemonte.it/cure-domiciliari",
+     "address": "Piazza Gino Viano \"Bellandy\" 1, Cuorgnè",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Prevenzione Serena (screening dei tumori), numero indicato dall'ASL Città di Torino",
+     "number": "800 001 141",
+     "url": "https://www.aslcittaditorino.it/numeri-utili/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Regione Piemonte – Prenotazione visite ed esami (CUP Piemonte)",
+     "url": "https://servizi.regione.piemonte.it/catalogo/prenotazione-visite-esami"
+    },
+    {
+     "label": "ASL Città di Torino – Numeri utili",
+     "url": "https://www.aslcittaditorino.it/numeri-utili/"
+    },
+    {
+     "label": "ASL Città di Torino – URP",
+     "url": "https://www.aslcittaditorino.it/urp/"
+    },
+    {
+     "label": "ASL Città di Torino – Continuità assistenziale",
+     "url": "https://www.aslcittaditorino.it/contattare-il-servizio-di-continuita-assistenziale-ex-guardia-medica/"
+    },
+    {
+     "label": "ASL Città di Torino – Cure domiciliari Nord Est",
+     "url": "https://www.aslcittaditorino.it/sedi/cure-domiciliari-via-botticelli/"
+    },
+    {
+     "label": "ASL TO3 – Contatti",
+     "url": "https://www.aslto3.piemonte.it/contatti/"
+    },
+    {
+     "label": "ASL TO3 – URP",
+     "url": "https://www.aslto3.piemonte.it/urp/"
+    },
+    {
+     "label": "ASL TO3 – Continuità assistenziale",
+     "url": "https://www.aslto3.piemonte.it/servizi/guardia-medica/"
+    },
+    {
+     "label": "ASL TO3 – Assistenza a domicilio",
+     "url": "https://www.aslto3.piemonte.it/servizi/assistenza/assistenza-a-domicilio/"
+    },
+    {
+     "label": "ASL TO4 – Homepage",
+     "url": "https://www.aslto4.piemonte.it/"
+    },
+    {
+     "label": "ASL TO4 – URP",
+     "url": "https://www.aslto4.piemonte.it/di-cosa-si-occupa-urp"
+    },
+    {
+     "label": "ASL TO4 – Prenotazione e disdetta",
+     "url": "https://www.aslto4.piemonte.it/prenotazione-e-disdetta-di-visite-ed-esami-specialistici"
+    },
+    {
+     "label": "ASL TO4 – Continuità assistenziale",
+     "url": "https://www.aslto4.piemonte.it/continuita-assistenziale-ex-guardia-medica"
+    },
+    {
+     "label": "ASL TO4 – Cure domiciliari",
+     "url": "https://www.aslto4.piemonte.it/cure-domiciliari"
+    },
+    {
+     "label": "ASL TO5 – Homepage",
+     "url": "https://www.aslto5.piemonte.it/index.php/it/home"
+    },
+    {
+     "label": "ASL TO5 – URP",
+     "url": "https://www.aslto5.piemonte.it/it/attivita/ufficio-relazioni-pubblico"
+    },
+    {
+     "label": "ASL TO5 – Continuità assistenziale",
+     "url": "https://www.aslto5.piemonte.it/index.php/it/come-fare-per/contattare-continuita-assistenziale-ex-guardia-medica"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "116117: tutte le ASL con pagine copiate (Città di Torino, TO3, TO4, TO5, Vercelli, Biella, CN1, CN2, Asti, Alessandria) dicono che la guardia medica si chiama solo al 116117; la pagina dell'ASL TO3 dice «attivo su tutto il territorio del Piemonte», la TO4 «attivo in tutto il Piemonte», la TO5 e la Città di Torino «numero unico regionale». Quindi niente vecchi numeri locali di guardia medica. Per Novara e VCO (pagine non copiate) ho messo il 116117 con la pagina dell'ASL TO3 che dice che vale in tutto il Piemonte.",
+    "CUP regionale: esiste «CUP Piemonte», numero verde 800 000 500 (gratuito da fisso e cellulare), tutti i giorni 8–20, per prenotare, spostare e disdire visite ed esami di tutte le ASL e aziende ospedaliere; lo citano la pagina della Regione (servizi.regione.piemonte.it) e tutte le ASL. Le ASL non hanno più un loro numero di prenotazione generale: restano solo numeri per sportelli o casi particolari.",
+    "ASL TO5: i quattro numeri (Chieri, Carmagnola, Moncalieri, Nichelino) sono in testa al sito senza la parola «centralino»; la pagina sulle cure domiciliari è del 2021 e non ha numeri; il PUA non ha numeri nelle copie.",
+    "ASL TO4: nelle copie non c'è un numero unico dell'URP, solo i punti di ascolto nelle sedi; i tre numeri di Chivasso/Ciriè/Ivrea sono nella sezione «Contatti» del sito, probabilmente i centralini.",
+    "ASL Città di Torino: la pagina PUA non ha numeri; cure domiciliari copiate solo per la zona Nord Est (Circoscrizione 6)."
+   ]
+  },
+  {
+   "id": "verbano-cusio-ossola",
+   "name": "ASL VCO",
+   "province": "Verbano-Cusio-Ossola",
+   "site_url": "https://www.aslvco.it/",
+   "official_domains": [
+    "aslvco.it",
+    "regione.piemonte.it",
+    "salutepiemonte.it",
+    "aslto3.piemonte.it"
+   ],
+   "guardia_medica_url": "https://www.aslto3.piemonte.it/servizi/guardia-medica/",
+   "phones": [],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP Piemonte (CUP unico regionale): prenotare, spostare o disdire visite ed esami in tutto il Piemonte, numero verde gratuito",
+     "number": "800 000 500",
+     "url": "https://servizi.regione.piemonte.it/catalogo/prenotazione-visite-esami",
+     "hours": "Tutti i giorni (lunedì–domenica) 8–20",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale): numero unico 116117, attivo in tutto il Piemonte",
+     "number": "116117",
+     "url": "https://www.aslto3.piemonte.it/servizi/guardia-medica/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Regione Piemonte – Prenotazione visite ed esami (CUP Piemonte)",
+     "url": "https://servizi.regione.piemonte.it/catalogo/prenotazione-visite-esami"
+    },
+    {
+     "label": "ASL TO3 – Continuità assistenziale (116117 in tutto il Piemonte)",
+     "url": "https://www.aslto3.piemonte.it/servizi/guardia-medica/"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "Il sito dell'ASL VCO (aslvco.it) ha risposto «403 vietato» a tutte le pagine: mancano centralino, URP, cure domiciliari e la pagina sul trasferimento della guardia medica di Verbania. Da ricopiare."
+   ],
+   "emails": []
+  },
+  {
+   "id": "vercelli",
+   "name": "ASL Vercelli (ASL VC)",
+   "province": "Vercelli",
+   "site_url": "https://aslvc.piemonte.it/",
+   "official_domains": [
+    "aslvc.piemonte.it",
+    "regione.piemonte.it",
+    "salutepiemonte.it"
+   ],
+   "guardia_medica_url": "https://aslvc.piemonte.it/servizi-e-prevenzione/tutti-i-servizi/medico-di-base-e-guardia-medica/",
+   "pua_url": "https://aslvc.piemonte.it/come-fare-per/richiedere-assistenza-domiciliare/",
+   "emails": [
+    "urp@aslvc.piemonte.it"
+   ],
+   "pec": "aslvercelli@pec.aslvc.piemonte.it",
+   "phones": [
+    {
+     "label": "Centralino ASL Vercelli – Vercelli",
+     "number": "0161 593111",
+     "url": "https://aslvc.piemonte.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino ASL Vercelli – Borgosesia",
+     "number": "0163 426111",
+     "url": "https://aslvc.piemonte.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "ASL Vercelli – ambulatori distrettuali per chi è rimasto senza medico: presa in carico e prenotazione della visita",
+     "number": "0161 593839",
+     "url": "https://aslvc.piemonte.it/servizi-e-prevenzione/tutti-i-servizi/assistenza-per-chi-e-senza-medico-ambulatori-distrettuali/",
+     "hours": "Dal lunedì al venerdì 9–12 e 13–15",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP Piemonte (CUP unico regionale): prenotare, spostare o disdire visite ed esami in tutto il Piemonte, numero verde gratuito",
+     "number": "800 000 500",
+     "url": "https://servizi.regione.piemonte.it/catalogo/prenotazione-visite-esami",
+     "hours": "Tutti i giorni (lunedì–domenica) 8–20",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "ASL Vercelli: prenotare visite di controllo o esami chiesti dagli specialisti degli ospedali dell'ASL VC (numero verde)",
+     "number": "800 778 377",
+     "url": "https://aslvc.piemonte.it/come-fare-per/prenotare-esami-e-visite-specialistiche_cup/",
+     "hours": "Dal lunedì al venerdì 13–15",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Vercelli: ufficio per i cittadini, reclami",
+     "number": "0161 593282",
+     "url": "https://aslvc.piemonte.it/organizzazione/servizio-comunicazione-e-urp/",
+     "hours": "Sede di Vercelli: dal lunedì al venerdì 8.30–12.30 e 13.30–15.30",
+     "address": "Corso Mario Abbiate 21, Vercelli (Palazzina Uffici, 2° piano)",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Vercelli: altro numero",
+     "number": "0161 593179",
+     "url": "https://aslvc.piemonte.it/organizzazione/servizio-comunicazione-e-urp/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Vercelli: altro numero (sede di Borgosesia)",
+     "number": "0163 426410",
+     "url": "https://aslvc.piemonte.it/organizzazione/servizio-comunicazione-e-urp/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale) – ASL Vercelli: numero unico 116117",
+     "number": "116117",
+     "url": "https://aslvc.piemonte.it/servizi-e-prevenzione/tutti-i-servizi/medico-di-base-e-guardia-medica/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "Regione Piemonte – Prenotazione visite ed esami (CUP Piemonte)",
+     "url": "https://servizi.regione.piemonte.it/catalogo/prenotazione-visite-esami"
+    },
+    {
+     "label": "ASL Vercelli – Homepage",
+     "url": "https://aslvc.piemonte.it/"
+    },
+    {
+     "label": "ASL Vercelli – Comunicazione e URP",
+     "url": "https://aslvc.piemonte.it/organizzazione/servizio-comunicazione-e-urp/"
+    },
+    {
+     "label": "ASL Vercelli – Prenotare esami e visite",
+     "url": "https://aslvc.piemonte.it/come-fare-per/prenotare-esami-e-visite-specialistiche_cup/"
+    },
+    {
+     "label": "ASL Vercelli – Guardia medica",
+     "url": "https://aslvc.piemonte.it/servizi-e-prevenzione/tutti-i-servizi/medico-di-base-e-guardia-medica/"
+    },
+    {
+     "label": "ASL Vercelli – Ambulatori per chi è senza medico",
+     "url": "https://aslvc.piemonte.it/servizi-e-prevenzione/tutti-i-servizi/assistenza-per-chi-e-senza-medico-ambulatori-distrettuali/"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "La pagina «Richiedere assistenza domiciliare» non ha numeri: manca un numero per le cure domiciliari.",
+    "Il numero URP 0163 426410 è elencato senza dire la sede: probabilmente Borgosesia (prefisso 0163)."
+   ]
+  }
+ ]
+}

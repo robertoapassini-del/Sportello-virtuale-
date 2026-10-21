@@ -13,7 +13,7 @@
     { "id": "lombardia", "name": "Lombardia", "attiva": true, "asl_label": "ATS", "moduli": ["numeri-utili"] },
     { "id": "marche", "name": "Marche", "in": "nelle Marche", "attiva": false, "asl_label": "AST" },
     { "id": "molise", "name": "Molise", "attiva": false, "asl_label": "ASREM" },
-    { "id": "piemonte", "name": "Piemonte", "attiva": false, "asl_label": "ASL" },
+    { "id": "piemonte", "name": "Piemonte", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili"] },
     { "id": "puglia", "name": "Puglia", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili"] },
     { "id": "sardegna", "name": "Sardegna", "attiva": false, "asl_label": "ASL" },
     { "id": "sicilia", "name": "Sicilia", "attiva": true, "asl_label": "ASP", "asl_label_long": "Azienda sanitaria provinciale", "asl_intestazione": "Azienda Sanitaria Provinciale", "ente": "Regione Siciliana", "files": { "asl": "asp", "inps": "inps" },

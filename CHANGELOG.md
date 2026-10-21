@@ -2,6 +2,12 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — Piemonte: i numeri utili delle 8 province
+- 108 numeri delle ASL (le quattro di Torino insieme nella provincia di Torino, CN1 e CN2 a Cuneo), controllati nelle copie delle pagine ufficiali del 21/10/2026.
+- Guardia medica: 116117 in tutta la regione; prenotazioni al CUP Piemonte 800 000 500.
+- Verbano-Cusio-Ossola: per ora solo 116117 e CUP Piemonte (il sito dell'ASL non si è lasciato copiare).
+- Sedi INPS delle 8 province.
+
 ## 21/10/2026 — Puglia: i numeri utili delle 6 province
 - 49 numeri delle ASL (CUP, URP, screening, cure a casa), controllati nelle copie delle pagine ufficiali del 21/10/2026.
 - Guardia medica: i numeri locali di Lecce, Taranto e BT, perché il 116117 è autorizzato ma non ancora attivo.
