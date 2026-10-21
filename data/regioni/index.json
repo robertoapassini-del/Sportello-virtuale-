@@ -4,7 +4,7 @@
   "regioni": [
     { "id": "abruzzo", "name": "Abruzzo", "attiva": false, "asl_label": "ASL" },
     { "id": "basilicata", "name": "Basilicata", "attiva": false, "asl_label": "ASL" },
-    { "id": "calabria", "name": "Calabria", "attiva": false, "asl_label": "ASP" },
+    { "id": "calabria", "name": "Calabria", "attiva": true, "asl_label": "ASP", "moduli": ["numeri-utili"] },
     { "id": "campania", "name": "Campania", "attiva": false, "asl_label": "ASL" },
     { "id": "emilia-romagna", "name": "Emilia-Romagna", "attiva": true, "asl_label": "AUSL", "moduli": ["numeri-utili"] },
     { "id": "friuli-venezia-giulia", "name": "Friuli-Venezia Giulia", "attiva": false, "asl_label": "Azienda sanitaria" },

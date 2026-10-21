@@ -1,0 +1,526 @@
+{
+ "region": "Calabria",
+ "model": "ASP",
+ "_note": "Numeri delle aziende sanitarie della Calabria (ASP) per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili. Il 116117 è attivo in tutta la Calabria dal 28/07/2026; CUP regionale 0961 789789.",
+ "asl": [
+  {
+   "id": "catanzaro",
+   "name": "ASP di Catanzaro",
+   "province": "Catanzaro",
+   "site_url": "https://www.asp.cz.it/",
+   "official_domains": [
+    "asp.cz.it",
+    "regione.calabria.it",
+    "aziendazero.regione.calabria.it",
+    "fascicolosanitario.regione.calabria.it",
+    "ecosanita.regione.calabria.it"
+   ],
+   "guardia_medica_url": "https://www.asp.cz.it/continuita-assistenziale-ex-guardia-medica/",
+   "pua_url": "https://www.asp.cz.it/distretti-sanitari/distretto-sociosanitario-di-catanzaro/pua-punto-unico-di-accesso-cz/pua-catanzaro-centro/",
+   "emails": [
+    "urp@asp.cz.it",
+    "pua.catanzaro@asp.cz.it",
+    "pua.lido@asp.cz.it",
+    "adi.catanzaro@asp.cz.it"
+   ],
+   "pec": "protocollo@pec.asp.cz.it",
+   "phones": [
+    {
+     "label": "Centralino generale dell'ASP di Catanzaro (indicato sul sito dell'ASP di Reggio Calabria)",
+     "number": "0961 7031",
+     "url": "https://www.asprc.it/servizi/numeri-utili/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "116117: guardia medica (continuità assistenziale) e cure non urgenti in tutta la Calabria, gratuito",
+     "number": "116117",
+     "hours": "24 ore su 24, 7 giorni su 7",
+     "url": "https://www.asp.cz.it/news/in-evidenza/2026/07/27/comunicato-nea-116117-2164/?lang=it",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Numero unico regionale per prenotare visite ed esami (ASP di Catanzaro)",
+     "number": "0961 789789",
+     "hours": "Dal lunedì al venerdì 9–18, sabato 9–13",
+     "url": "https://www.asp.cz.it/ticket/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASP di Catanzaro: ufficio per i cittadini, sportello di Catanzaro",
+     "number": "0961 7033543",
+     "hours": "Dal lunedì al venerdì 9–12",
+     "address": "Via Acri 24, Catanzaro",
+     "url": "https://www.asp.cz.it/u-r-p-ufficio-relazioni-con-il-pubblico/?lang=it",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASP di Catanzaro: ufficio per i cittadini, sportello dell'Ospedale di Lamezia Terme",
+     "number": "0968 208919",
+     "address": "Viale A. Perugini, Ospedale, piano terra, Lamezia Terme",
+     "url": "https://www.asp.cz.it/u-r-p-ufficio-relazioni-con-il-pubblico/?lang=it",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA Catanzaro Centro dell'ASP di Catanzaro: punto unico di accesso ai servizi sociosanitari",
+     "number": "0961 7033934",
+     "hours": "Risposta telefonica 8.30–12.30 e 15–16.30",
+     "address": "Via A. Daniele 18, 1° piano, Catanzaro",
+     "url": "https://www.asp.cz.it/distretti-sanitari/distretto-sociosanitario-di-catanzaro/pua-punto-unico-di-accesso-cz/pua-catanzaro-centro/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA Catanzaro Lido dell'ASP di Catanzaro: punto unico di accesso ai servizi sociosanitari",
+     "number": "0961 7033001",
+     "hours": "Risposta telefonica 10–12",
+     "address": "Viale Crotone 214, Catanzaro Lido",
+     "url": "https://www.asp.cz.it/distretti-sanitari/distretto-sociosanitario-di-catanzaro/pua-catanzaro-lido/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare (ADI) dell'ASP di Catanzaro: sede di Catanzaro",
+     "number": "0961 7033101",
+     "address": "Via Daniele 18, Catanzaro",
+     "url": "https://www.asp.cz.it/servizio-di-assistenza-domiciliare-sanitaria/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare (ADI) dell'ASP di Catanzaro: sede di Lamezia Terme",
+     "number": "0968 208427",
+     "address": "Piazza Borelli, Lamezia Terme",
+     "url": "https://www.asp.cz.it/servizio-di-assistenza-domiciliare-sanitaria/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare (ADI) dell'ASP di Catanzaro: sede di Soverato",
+     "number": "0967 539534",
+     "address": "Piazza Casalinuovo, Soverato",
+     "url": "https://www.asp.cz.it/servizio-di-assistenza-domiciliare-sanitaria/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASP Catanzaro – Comunicato 116117",
+     "url": "https://www.asp.cz.it/news/in-evidenza/2026/07/27/comunicato-nea-116117-2164/?lang=it"
+    },
+    {
+     "label": "ASP Catanzaro – Ticket e prenotazioni (numero unico regionale)",
+     "url": "https://www.asp.cz.it/ticket/"
+    },
+    {
+     "label": "ASP Catanzaro – URP",
+     "url": "https://www.asp.cz.it/u-r-p-ufficio-relazioni-con-il-pubblico/?lang=it"
+    },
+    {
+     "label": "ASP Catanzaro – PUA Catanzaro Centro",
+     "url": "https://www.asp.cz.it/distretti-sanitari/distretto-sociosanitario-di-catanzaro/pua-punto-unico-di-accesso-cz/pua-catanzaro-centro/"
+    },
+    {
+     "label": "ASP Catanzaro – PUA Catanzaro Lido",
+     "url": "https://www.asp.cz.it/distretti-sanitari/distretto-sociosanitario-di-catanzaro/pua-catanzaro-lido/"
+    },
+    {
+     "label": "ASP Catanzaro – Assistenza domiciliare",
+     "url": "https://www.asp.cz.it/servizio-di-assistenza-domiciliare-sanitaria/"
+    },
+    {
+     "label": "ASP Reggio Calabria – Numeri utili (centralini delle ASP)",
+     "url": "https://www.asprc.it/servizi/numeri-utili/"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "116117: è attivo in tutta la Calabria dal 28 luglio 2026, gratuito, 24 ore su 24, gestito da Azienda Zero (comunicati ASP Catanzaro, ASP Crotone, ASP Reggio Calabria; fonte citata aziendazero.regione.calabria.it/?p=4908). All'inizio serve soprattutto per la guardia medica (continuità assistenziale). Per questo non ho messo i vecchi numeri locali di guardia medica in nessuna provincia. Pagina della Regione o di Azienda Zero sul 116117 non copiata: l'unica pagina della Regione (articolo sulle ex guardie mediche) ne parla come attivazione futura.",
+    "CUP: c'è un numero unico regionale di prenotazione, 0961 789789 (call center, dal lunedì al venerdì 9–18, sabato 9–13; nelle altre ore risponde il «CUP virtuale» automatico). Lo indicano le pagine di ASP Catanzaro, ASP Crotone e ASP Reggio Calabria. La pagina CUP online di Crotone (aggiornata a giugno 2025) dice che si può prenotare presso ASP CZ, ASP RC, GOM RC, ASP CS, AO CS e INRCA CS: Vibo Valentia non compare.",
+    "Centralino ASP Catanzaro (0961 7031): l'ho trovato solo sulla pagina «Numeri utili» dell'ASP di Reggio Calabria, non sulle pagine dell'ASP di Catanzaro copiate. La pagina CUP dell'ASP di Catanzaro e la pagina Contatti della trasparenza non erano raggiungibili (errore 503)."
+   ]
+  },
+  {
+   "id": "cosenza",
+   "name": "ASP di Cosenza",
+   "province": "Cosenza",
+   "site_url": "https://www.asp.cosenza.it/",
+   "official_domains": [
+    "asp.cosenza.it",
+    "aspcs.it",
+    "regione.calabria.it",
+    "aziendazero.regione.calabria.it",
+    "fascicolosanitario.regione.calabria.it",
+    "ecosanita.regione.calabria.it"
+   ],
+   "guardia_medica_url": "https://www.asp.cz.it/news/in-evidenza/2026/07/27/comunicato-nea-116117-2164/?lang=it",
+   "emails": [
+    "urp.cosenza@aspcs.it",
+    "urp.tirreno@aspcs.it"
+   ],
+   "pec": "protocollo@pec.asp.cosenza.it",
+   "phones": [
+    {
+     "label": "Centralino dell'ASP di Cosenza",
+     "number": "0984 8931",
+     "url": "https://www.asp.cosenza.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "116117: guardia medica (continuità assistenziale) e cure non urgenti in tutta la Calabria, gratuito",
+     "number": "116117",
+     "hours": "24 ore su 24, 7 giorni su 7",
+     "url": "https://www.asp.cz.it/news/in-evidenza/2026/07/27/comunicato-nea-116117-2164/?lang=it",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Numero unico regionale per prenotare visite ed esami (vale anche per l'ASP di Cosenza)",
+     "number": "0961 789789",
+     "hours": "Dal lunedì al venerdì 9–18, sabato 9–13",
+     "url": "https://www.asp.crotone.it/centro-unico-di-prenotazione-online/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASP di Cosenza: ufficio per i cittadini, sede di Cosenza",
+     "number": "0984 8933221",
+     "address": "Via delle Medaglie d'Oro 12, Cosenza",
+     "url": "https://www.asp.cosenza.it/amministrazione/dipartimenti/dipartimento-di-staff/uosd-urp-e-comunicazione-istituzionale/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASP Cosenza – Home e contatti",
+     "url": "https://www.asp.cosenza.it/"
+    },
+    {
+     "label": "ASP Cosenza – URP e Comunicazione istituzionale",
+     "url": "https://www.asp.cosenza.it/amministrazione/dipartimenti/dipartimento-di-staff/uosd-urp-e-comunicazione-istituzionale/"
+    },
+    {
+     "label": "ASP Crotone – CUP online (numero unico regionale, elenco aziende)",
+     "url": "https://www.asp.crotone.it/centro-unico-di-prenotazione-online/"
+    },
+    {
+     "label": "ASP Catanzaro – Comunicato 116117",
+     "url": "https://www.asp.cz.it/news/in-evidenza/2026/07/27/comunicato-nea-116117-2164/?lang=it"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "Le pagine dell'ASP di Cosenza su guardia medica, assistenza domiciliare (ADI), servizi al cittadino e help desk URP sono state copiate ma mostrano solo la home page: mancano PUA/ADI e numeri dei distretti.",
+    "Centralino: il sito dell'ASP di Cosenza dice 0984 8931; la pagina «Numeri utili» dell'ASP di Reggio Calabria dice 0984 8351. Ho messo quello del sito di Cosenza.",
+    "URP Cosenza: sulla pagina c'è scritto «0984-8933221 247»; ho messo solo 0984 8933221. Gli URP di Rende, Cariati, Ionio Nord e Ionio Sud sono «non operativi per carenza di personale»; l'URP Tirreno (Praia) non ha telefono sulla pagina.",
+    "Il numero CUP 0961 789789 viene da una pagina dell'ASP di Crotone (aggiornata a giugno 2025) che dice che il CUP regionale prenota anche per l'ASP di Cosenza; sul sito di Cosenza c'è solo il link «Prenotazioni CUP», senza numero."
+   ]
+  },
+  {
+   "id": "crotone",
+   "name": "ASP di Crotone",
+   "province": "Crotone",
+   "site_url": "https://www.asp.crotone.it/",
+   "official_domains": [
+    "asp.crotone.it",
+    "regione.calabria.it",
+    "aziendazero.regione.calabria.it",
+    "fascicolosanitario.regione.calabria.it",
+    "ecosanita.regione.calabria.it"
+   ],
+   "guardia_medica_url": "https://www.asp.crotone.it/sanita-dal-28-7-al-via-in-calabria-il-numero-europeo-armonizzato-116117-per-le-cure-non-urgenti/",
+   "pua_url": "https://www.asp.crotone.it/assistenza-domiciliare/",
+   "emails": [
+    "urp@asp.crotone.it"
+   ],
+   "pec": "protocollo@pec.asp.crotone.it",
+   "phones": [
+    {
+     "label": "Centralino generale dell'ASP di Crotone: informazioni e assistenza",
+     "number": "0962 924111",
+     "hours": "24 ore su 24",
+     "url": "https://www.asp.crotone.it/contatti/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "116117: guardia medica (continuità assistenziale) e cure non urgenti in tutta la Calabria, gratuito",
+     "number": "116117",
+     "hours": "24 ore su 24, 7 giorni su 7",
+     "url": "https://www.asp.crotone.it/sanita-dal-28-7-al-via-in-calabria-il-numero-europeo-armonizzato-116117-per-le-cure-non-urgenti/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Call center regionale per prenotare visite ed esami (ASP di Crotone)",
+     "number": "0961 789789",
+     "hours": "Dal lunedì al venerdì 9–18, sabato 9–13",
+     "url": "https://www.asp.crotone.it/contatti/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASP di Crotone: ufficio per i cittadini",
+     "number": "0962 924197",
+     "hours": "Dal lunedì al venerdì 8.30–13, lunedì e mercoledì anche 15.30–17",
+     "address": "Largo Bologna (padiglione esterno dell'ospedale), Crotone",
+     "url": "https://www.asp.crotone.it/contatti/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare (ADI) dell'ASP di Crotone: sede di Crotone",
+     "number": "0962 26699",
+     "hours": "Dal lunedì al venerdì 8.30–12, lunedì e mercoledì anche 15–18",
+     "address": "Piazza Umberto I, Crotone",
+     "url": "https://www.asp.crotone.it/assistenza-domiciliare/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare (ADI) dell'ASP di Crotone: sede di Cirò Marina",
+     "number": "0962 372111",
+     "address": "Via P. Togliatti, Cirò Marina",
+     "url": "https://www.asp.crotone.it/assistenza-domiciliare/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare (ADI) dell'ASP di Crotone: sede di Mesoraca",
+     "number": "0962 498146",
+     "address": "Località Campizzi, Mesoraca",
+     "url": "https://www.asp.crotone.it/assistenza-domiciliare/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASP Crotone – Contatti",
+     "url": "https://www.asp.crotone.it/contatti/"
+    },
+    {
+     "label": "ASP Crotone – Comunicato 116117",
+     "url": "https://www.asp.crotone.it/sanita-dal-28-7-al-via-in-calabria-il-numero-europeo-armonizzato-116117-per-le-cure-non-urgenti/"
+    },
+    {
+     "label": "ASP Crotone – Assistenza domiciliare",
+     "url": "https://www.asp.crotone.it/assistenza-domiciliare/"
+    },
+    {
+     "label": "ASP Crotone – CUP online",
+     "url": "https://www.asp.crotone.it/centro-unico-di-prenotazione-online/"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "Assistenza domiciliare: orari scritti solo per la sede di Crotone (per Cirò Marina e Mesoraca non li ho messi perché non sono chiari). I numeri di Cirò Marina e Mesoraca sembrano numeri generali delle sedi: da ricontrollare.",
+    "Nessuna pagina PUA specifica per Crotone. La pagina «Continuità assistenziale» è «in allestimento».",
+    "La pagina CUP online di Crotone (giugno 2025) elenca le aziende prenotabili dal CUP regionale e Crotone non c'è, ma la pagina Contatti (aggiornata a settembre 2026) dà il call center 0961 789789: ho usato questa."
+   ]
+  },
+  {
+   "id": "reggio-calabria",
+   "name": "ASP di Reggio Calabria",
+   "province": "Reggio Calabria",
+   "site_url": "https://www.asprc.it/",
+   "official_domains": [
+    "asprc.it",
+    "regione.calabria.it",
+    "aziendazero.regione.calabria.it",
+    "fascicolosanitario.regione.calabria.it",
+    "ecosanita.regione.calabria.it"
+   ],
+   "guardia_medica_url": "https://www.asprc.it/servizi/116117/",
+   "pua_url": "https://www.asprc.it/servizi/assistenza-domiciliare/",
+   "emails": [
+    "urp@asprc.it",
+    "puadistrettorc1@asprc.it"
+   ],
+   "pec": "affarigenerali.asprc@certificatamail.it",
+   "phones": [
+    {
+     "label": "Centralino dell'ASP di Reggio Calabria",
+     "number": "0965 347111",
+     "url": "https://www.asprc.it/servizi/numeri-utili/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "116117: guardia medica (continuità assistenziale) e cure non urgenti in tutta la Calabria, gratuito",
+     "number": "116117",
+     "hours": "24 ore su 24, 7 giorni su 7",
+     "url": "https://www.asprc.it/servizi/116117/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Numero unico di prenotazione per visite ed esami (ASP di Reggio Calabria)",
+     "number": "0961 789789",
+     "hours": "Dal lunedì al venerdì 9–18, sabato 9–13, festivi esclusi",
+     "url": "https://www.asprc.it/servizi/prenotazioni-cup-e-pagamento-ticket/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASP di Reggio Calabria: ufficio per i cittadini, sede di via Diana",
+     "number": "0965 347205",
+     "address": "Via Diana 3, Reggio Calabria",
+     "url": "https://www.asprc.it/amministrazione/direzione/funzioni-di-staff/s-c-coordinamento-staff-direzione-strategica/urp/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASP di Reggio Calabria: sede di via Carlo Rosselli",
+     "number": "0965 347847",
+     "address": "Via Carlo Rosselli, 1° piano, Reggio Calabria",
+     "url": "https://www.asprc.it/amministrazione/direzione/funzioni-di-staff/s-c-coordinamento-staff-direzione-strategica/urp/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASP di Reggio Calabria: sede di Taurianova",
+     "number": "0966 619307",
+     "address": "Via Antonio de Curtis, piano terra, Taurianova",
+     "url": "https://www.asprc.it/amministrazione/direzione/funzioni-di-staff/s-c-coordinamento-staff-direzione-strategica/urp/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA (punto unico di accesso) del Distretto di Reggio Calabria: assistenza domiciliare",
+     "number": "0965 347161",
+     "hours": "Lunedì e mercoledì 9–12, giovedì 15.30–16.30",
+     "address": "Viale Amendola, Reggio Calabria",
+     "url": "https://www.asprc.it/servizi/assistenza-domiciliare/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening oncologici dell'ASP di Reggio Calabria (numero verde)",
+     "number": "800 184764",
+     "url": "https://www.asprc.it/servizi/numeri-utili/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASP Reggio Calabria – NEA 116117",
+     "url": "https://www.asprc.it/servizi/116117/"
+    },
+    {
+     "label": "ASP Reggio Calabria – Prenotazioni CUP e pagamento ticket",
+     "url": "https://www.asprc.it/servizi/prenotazioni-cup-e-pagamento-ticket/"
+    },
+    {
+     "label": "ASP Reggio Calabria – URP",
+     "url": "https://www.asprc.it/amministrazione/direzione/funzioni-di-staff/s-c-coordinamento-staff-direzione-strategica/urp/"
+    },
+    {
+     "label": "ASP Reggio Calabria – Assistenza domiciliare",
+     "url": "https://www.asprc.it/servizi/assistenza-domiciliare/"
+    },
+    {
+     "label": "ASP Reggio Calabria – Numeri utili",
+     "url": "https://www.asprc.it/servizi/numeri-utili/"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "La pagina «Continuità assistenziale» ha ancora l'elenco delle postazioni di guardia medica con i numeri (aggiornato 24/7/2026): non li ho messi perché c'è il 116117.",
+    "PUA: c'è solo quello del Distretto di Reggio Calabria (anche 0965 347162); mancano gli altri distretti. La pagina URP principale (/servizi/urp/) non era raggiungibile (503)."
+   ]
+  },
+  {
+   "id": "vibo-valentia",
+   "name": "ASP di Vibo Valentia",
+   "province": "Vibo Valentia",
+   "site_url": "https://www.aspvv.it/",
+   "official_domains": [
+    "aspvv.it",
+    "regione.calabria.it",
+    "aziendazero.regione.calabria.it",
+    "fascicolosanitario.regione.calabria.it",
+    "ecosanita.regione.calabria.it"
+   ],
+   "guardia_medica_url": "https://www.asp.cz.it/news/in-evidenza/2026/07/27/comunicato-nea-116117-2164/?lang=it",
+   "phones": [
+    {
+     "label": "Centralino dell'ASP di Vibo Valentia, sede di Mileto (indicato sul sito dell'ASP di Reggio Calabria)",
+     "number": "0963 339541",
+     "url": "https://www.asprc.it/servizi/numeri-utili/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "116117: guardia medica (continuità assistenziale) e cure non urgenti in tutta la Calabria, gratuito",
+     "number": "116117",
+     "hours": "24 ore su 24, 7 giorni su 7",
+     "url": "https://www.asp.cz.it/news/in-evidenza/2026/07/27/comunicato-nea-116117-2164/?lang=it",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASP Reggio Calabria – Numeri utili (centralini delle ASP)",
+     "url": "https://www.asprc.it/servizi/numeri-utili/"
+    },
+    {
+     "label": "ASP Catanzaro – Comunicato 116117 (servizio regionale)",
+     "url": "https://www.asp.cz.it/news/in-evidenza/2026/07/27/comunicato-nea-116117-2164/?lang=it"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "Il sito aspvv.it non si è lasciato copiare (errore 403 su tutte le pagine): mancano URP, CUP, PUA/assistenza domiciliare e tutti i numeri dell'ASP di Vibo Valentia.",
+    "L'unico numero (0963 339541, sede di Mileto) viene dalla pagina «Numeri utili» dell'ASP di Reggio Calabria: da confermare sul sito dell'ASP di Vibo.",
+    "CUP: non ho messo il numero regionale 0961 789789 perché la pagina CUP online di Crotone non elenca l'ASP di Vibo tra le aziende prenotabili: da verificare."
+   ],
+   "emails": []
+  }
+ ]
+}

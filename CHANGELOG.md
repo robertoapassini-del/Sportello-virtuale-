@@ -2,6 +2,12 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — Calabria: i numeri utili delle 5 province
+- 31 numeri delle ASP, controllati nelle copie delle pagine ufficiali del 21/10/2026.
+- Guardia medica: 116117 in tutta la regione (dal 28/07/2026); CUP regionale 0961 789789.
+- Vibo Valentia: per ora solo centralino e 116117 (il sito dell'ASP non si è lasciato copiare).
+- Sedi INPS delle 5 province.
+
 ## 21/10/2026 — Liguria: i numeri utili delle 4 province
 - 47 numeri di ATS Liguria (le ex ASL sono ora aree sociosanitarie), controllati nelle copie delle pagine ufficiali del 21/10/2026.
 - Prenotazioni: CUP Liguria 010 5383400. Guardia medica: 116117 solo nel Tigullio, numeri locali nelle altre aree.
