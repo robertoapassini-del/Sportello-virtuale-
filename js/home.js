@@ -2,7 +2,7 @@
 // alla pagina dell'area (per esempio visite-esami/), come la home di NHS.uk.
 // La ricerca è nella testata: qui i risultati compaiono mentre si scrive.
 import { cerca } from './cerca.js';
-import { esc, loadJSON, loadRegioni, renderFooter, helpBox, sourcesBox, aslLabel, regioniAttive, regioneInfo, regioneSalvata } from './common.js';
+import { esc, loadJSON, loadRegioni, renderFooter, helpBox, sourcesBox, aslLabel, regioniAttive, regioneInfo, regioneSalvata, inRegione } from './common.js';
 
 const app = document.getElementById('app');
 let reg;
@@ -16,10 +16,11 @@ function card(href, icon, title, small) {
 function copertura() {
   const r = regioneSalvata();
   if (!r || (r.attiva && !r.moduli)) return '';
-  const nome = esc(r.name);
+  // «In Lombardia», «Nel Lazio»: la preposizione giusta viene dall'indice delle regioni (inRegione).
+  const dove = esc(inRegione(r).replace(/^./, (c) => c.toUpperCase()));
   return r.attiva
-    ? `<p class="home-regione">Le regole valgono in tutta Italia. Per ${nome} per ora abbiamo i numeri utili; uffici e lettere solo per la Sicilia.</p>`
-    : `<p class="home-regione">Le regole valgono in tutta Italia. Per ${nome} non abbiamo ancora numeri e uffici; uffici e lettere solo per la Sicilia.</p>`;
+    ? `<p class="home-regione">Le regole valgono in tutta Italia. ${dove} per ora abbiamo i numeri utili; uffici e lettere solo per la Sicilia.</p>`
+    : `<p class="home-regione">Le regole valgono in tutta Italia. ${dove} non abbiamo ancora numeri e uffici della zona: le lettere per ora solo per la Sicilia.</p>`;
 }
 
 // Chi siamo in una riga sopra le scelte; il resto sotto. Con una regione sola: «Per ora solo in <regione>».

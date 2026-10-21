@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — Audit notturno, giro 3: fatti nelle guide, chi non vive in Sicilia
+- Fuori dalla Sicilia: «Leggi cosa vale in tutta Italia» portava alla prima schermata del modulo, che riportava al blocco (giro senza uscita in 8 moduli per 19 regioni): ora porta alla guida scritta. Per Campania, Veneto e Marche anche il link ai numeri validi in tutta Italia; titolo «Per questo argomento in Lombardia non abbiamo ancora i dati»; la home dice cosa c'è per la regione scelta; Prevenzione dà il risultato (nazionale) senza fermarsi sulla regione; le guide dicono che la lettera già scritta è per ora solo per la Sicilia.
+- Alto Adige (`data/regioni/trentino-alto-adige/asl.json`): il CUPP «100 100» si chiama con il prefisso della zona (0471 Bolzano, 0472 Bressanone, 0473 Merano, 0474 Brunico); prima il pulsante «Chiama» faceva 100100 e la chiamata non partiva. `tests/contatti.test.mjs` ora accetta solo i numeri brevi nazionali.
+- Guide: viaggio e alloggio per le cure di solito non si detraggono; l'accompagnamento si sospende dopo 29 giorni di ricovero gratuito (pagina RSA); tolta «nessuno può essere dimesso senza una soluzione»; l'assistenza domiciliare è gratuita per le cure sanitarie, per l'aiuto dell'operatore dopo 30 giorni può esserci una quota.
+
 ## 21/10/2026 — Audit notturno, giro 2: accessibilità, privacy e robustezza, ricerca, stampa
 - Ricerca (nuovo `js/cerca.js`): risultati ordinati per pertinenza, parole corte solo intere («rsa» non trova più «persa»), parole vuote e accenti, una lettera di differenza per gli errori di battitura, parole d'emergenza verso i Numeri utili, «chiama il 112» se non trova niente, ricerca salvata nell'indirizzo. Nuove parole chiave in `data/moduli.json`. Test: `tests/ricerca.test.mjs`.
 - Robustezza: `?torna=` accetta solo indirizzi di questo sito; con i cookie bloccati la regione resta nella scheda aperta; Numeri utili mostra sempre i numeri nazionali anche se un file non arriva; indirizzo con «#%» non blocca più la pagina; fonti.html e home non spariscono se manca un file. Se JavaScript non parte resta il contenuto scritto nella pagina. Test: `tests/robustezza.cjs` (anche nella CI).

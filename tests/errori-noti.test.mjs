@@ -49,6 +49,8 @@ const ERRORI = [
   [/tutto gratuito<\/strong> per più di un mese/, 'accompagnamento: si sospende dopo 29 giorni di ricovero gratuito, non «un mese»'],
   [/nessuno può essere dimesso/i, 'dimissione protetta: è un percorso organizzativo regionale, non un divieto di dimissione'],
   [/L'assistenza domiciliare è gratuita\./, 'ADI: gratuite le cure sanitarie; l\'aiuto dell\'operatore dopo 30 giorni può avere una quota (DPCM 2017 art. 22)'],
+  [/in questa guida<\/a> la (prepara|scrive)(?![^.]*solo per la Sicilia)/, 'la lettera già scritta c\'è per ora solo per la Sicilia: dirlo (fuori dalla Sicilia il percorso si ferma)'],
+  [/data-go="\$\{(esc\()?first\)?\}"[^`]*Leggi cosa vale/, '«Leggi cosa vale in tutta Italia» riportava all\'inizio del modulo: giro senza uscita (va alla guida #guida)'],
   [/DM 24\/11\/2022/, 'bonus psicologo: il decreto è del 24/11/2023'],
   [/secondo i tempi indicati dalla normativa vigente/, 'i 30 giorni della vecchia procedura INPS sono indicativi (rules-invalidita.json): la lettera non li cita come norma'],
 ];
