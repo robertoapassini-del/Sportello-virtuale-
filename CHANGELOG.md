@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — Umbria: i numeri utili di Perugia e Terni
+- 71 numeri delle USL Umbria 1 e 2, controllati nelle copie delle pagine ufficiali del 21/10/2026.
+- Guardia medica: i numeri delle zone (il 116117 vale solo nel Perugino); CUP regionale NUS 800 636363.
+- Sedi INPS di Perugia e Terni.
+
 ## 21/10/2026 — Abruzzo: i numeri utili delle 4 province
 - 40 numeri delle ASL, controllati nelle copie delle pagine ufficiali del 21/10/2026.
 - Guardia medica: 116117 in tutto l'Abruzzo; CUP unico 800 827827 (da cellulare 0872 226).
