@@ -566,7 +566,9 @@ function updateLetter(a, official) {
     state.letterText = '';
     mail.href = mailtoHref(a.send_to, subject,
       `Buongiorno,\nin allegato il modulo di richiesta del percorso di tutela, compilato e firmato, con i documenti.${signoff}`);
-    hint.textContent = `📧 L'email si apre già con l'indirizzo giusto (${a.send_to}). Aggiungi il modulo firmato e le foto dei documenti.`;
+    hint.innerHTML = a.channel === 'pec' || /@pec\./.test(a.send_to || '')
+      ? `📨 L'indirizzo dell'${aslLabel()} è una PEC (una email speciale). <strong>Se non hai la PEC, stampa il modulo compilato e portalo all'ufficio URP.</strong>`
+      : `📧 L'email si apre già con l'indirizzo giusto (${esc(a.send_to)}). Aggiungi il modulo firmato e le foto dei documenti.`;
     return;
   }
 

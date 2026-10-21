@@ -602,7 +602,11 @@ async function runCase(page, c) {
     await page.fill('#f-certNumber', 'CERT123');
     if (!c.isNew) await page.fill('#f-domandaNumber', 'DOM456');
     const t = await page.locator('#preview').innerText();
-    const wants = ['Maria Rossi', 'CERT123', fmt(c.cert), fmt(c.deadline), `Direzione provinciale di ${c.p}`];
+    // Vecchia procedura, non oncologica: i 30 giorni sono indicativi, la lettera dice solo quanti giorni sono passati.
+    const ordinary = !c.isNew && c.cat !== 'oncological';
+    const elapsed = ordinary ? Math.round((Date.parse(TODAY) - Date.parse(c.domanda)) / 864e5) : 0;
+    const wants = ['Maria Rossi', 'CERT123', fmt(c.cert), ordinary ? `sono trascorsi ${elapsed} giorni` : fmt(c.deadline), `Direzione provinciale di ${c.p}`];
+    if ((t.match(/pervenuta alcuna convocazione/g) || []).length !== 1) problems.push('sollecito: «pervenuta alcuna convocazione» non una sola volta');
     if (!c.isNew) wants.push('DOM456', fmt(c.domanda));
     for (const w of wants) if (!t.includes(w)) problems.push(`sollecito senza «${w}»`);
     if (/undefined|NaN|null/.test(t)) problems.push('sollecito con testo sospetto');

@@ -108,7 +108,7 @@ const afterVerbale = `
   <details class="card">
     <summary>Dopo la visita: a cosa può dare diritto</summary>
     <p>Dipende dal risultato. Per esempio: non pagare il ticket, i permessi della legge 104, l'indennità di accompagnamento,
-    la pensione di invalidità, l'aiuto per trovare lavoro, il permesso per il parcheggio.</p>
+    la pensione di invalidità, l'aiuto per trovare lavoro, il contrassegno per il parcheggio.</p>
     <p>Chiedi a un patronato o guarda il sito <a href="https://www.inps.it" target="_blank" rel="noopener">inps.it</a>.</p>
     <p>Se il foglio del risultato ha una scadenza, i tuoi aiuti continuano fino alla nuova visita (legge 114/2014).</p>
     <p>Se il verbale ti sembra sbagliato, hai <strong>6 mesi</strong> per il ricorso: <a href="../ricorso-invalidita/">controlla quanto tempo ti resta</a>.</p>

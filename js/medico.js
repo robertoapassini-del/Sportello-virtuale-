@@ -13,6 +13,8 @@ const app = document.getElementById('app');
 // La risposta scritta della pagina: è la prima schermata del percorso.
 const answerHtml = app.innerHTML;
 let rules;
+// Le migliaia con il punto («1.500»): toLocaleString non lo mette sotto 10.000.
+const migliaia = (n) => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
 let data;
 const state = {};
 const person = {};
@@ -98,7 +100,7 @@ const screens = {
         <h2>Come scegliere</h2>
         <ul class="clean">
           <li>Allo sportello ti danno l'elenco dei medici della tua zona che hanno ancora posto.</li>
-          <li>Ogni medico può avere al massimo circa ${rules.max_patients_medico} pazienti, ogni pediatra circa ${rules.max_patients_pediatra}: se è pieno, non può prenderti.</li>
+          <li>Ogni medico può avere al massimo circa ${migliaia(rules.max_patients_medico)} pazienti, ogni pediatra circa ${migliaia(rules.max_patients_pediatra)}: se è pieno, non può prenderti.</li>
           <li>Chiedi a vicini e parenti, e guarda gli orari dello studio e se fa visite a casa.</li>
         </ul>
         ${aspCalls(a)}

@@ -19,9 +19,10 @@ function files(dir = SITE) {
   });
 }
 
-// [espressione, perché è sbagliato, righe dove invece va bene]. Le espressioni guardano il testo così com'è nel file.
+// [espressione, perché è sbagliato, righe dove invece va bene, file da saltare per ora].
+// I file da saltare sono quelli che un altro lavoro sta riscrivendo: si tolgono appena sono corretti. Le espressioni guardano il testo così com'è nel file.
 const ERRORI = [
-  [/\bla ASL\b/, "si scrive «l'ASL» (rilettura del 21/10/2026)"],
+  [/\b(la|della|nella|alla|dalla|sulla|una) (ASL|ASP|AUSL|ASST|ATS|USL|ULSS|AST|ASREM)\b/, "si scrive «l'ASL», «dell'ASL» (rilettura del 21/10/2026)"],
   [/art\.\s*4,?\s*comma\s*3[^.\n]{0,60}24\/2017|24\/2017[^.\n]{0,60}art\.\s*4,?\s*comma\s*3/, 'documentazione sanitaria entro 7/30 giorni: è l\'art. 4, comma 2 della L. 24/2017 (il comma 3 parla dei risarcimenti)'],
   [/art(icolo|\.)\s*18[^.\n]{0,80}autorizz|autorizz[^.\n]{0,80}art(icolo|\.)\s*18 (del )?DPCM/i, "ausili: l'art. 18 del DPCM 12/01/2017 parla dei destinatari; autorizzazione e tempi sono nell'allegato 12"],
   [/artt?\.\s*25 e 26/, 'consultori: sono nell\'art. 24 del DPCM 12/01/2017 (artt. 24, 25 e 26)'],
@@ -58,6 +59,15 @@ const ERRORI = [
   [/visita\/il procedimento/, 'sollecito INPS: nuova procedura = «il procedimento di valutazione di base doveva concludersi», vecchia oncologica = «la visita doveva svolgersi» (audit lettere del 21/10/2026)'],
   [/termine indicato come ordinario/, 'sollecito INPS, vecchia procedura ordinaria: i 30 giorni sono indicativi, la lettera dice solo quanti giorni sono passati'],
   [/secondo i tempi indicati dalla normativa vigente/, 'i 30 giorni della vecchia procedura INPS sono indicativi (rules-invalidita.json): la lettera non li cita come norma'],
+  // Audit dei testi del 21/10/2026 (sera).
+  [/"number": "800 \d{3} \d{3}"/, 'numeri verdi: «800 123456» (docs/regola-numeri.md)'],
+  [/circa \d{4,}\b|circa \$\{rules\.max_patients/, 'migliaia con il punto: «circa 1.500»'],
+  [/[Ii]l conto in questa guida/, '«Il percorso in questa guida»: il modulo non è solo un conto', null, ['cartella-clinica/ritardo/index.html']],
+  [/\(Punto Unico di Accesso\)|\bpap test\b/, '«(Punto unico di accesso)», «Pap test»', /"keywords"/],
+  [/\bad (?=[EIOU][a-z])|\b([Uu]na|[Dd]ella|[Nn]ella|[Aa]lla|[Dd]alla|[Ll]a) équipe\b/, "«a Enna» («ad» solo davanti alla A), «un'équipe», «dell'équipe»"],
+  [/\b([Gg]uarda|vale la pagina) <a [^>]*>(la visita è|il verbale è|la visita per l.invalidità non)/, 'il titolo di una pagina non va dentro la frase come link: «Leggi cosa fare se …»'],
+  [/Non andare dal privato a pagamento prima di/, "liste d'attesa: «Vai dal privato a pagamento solo se l'ASL te lo scrive»", null, ['js/liste-attesa.js']],
+  [/"title": "(Non mi danno|Ho diritto|[^"]*l'ho persa|[^"]*posso fare)/, "titoli in data/moduli.json come l'h1 della pagina: si dà del tu («Non ti danno», «l'hai persa»)"],
 ];
 
 test('nessuno degli errori già trovati è tornato', () => {
@@ -65,7 +75,8 @@ test('nessuno degli errori già trovati è tornato', () => {
   for (const f of files()) {
     const righe = fs.readFileSync(f, 'utf8').split('\n');
     righe.forEach((riga, i) => {
-      for (const [re, perche, va_bene] of ERRORI) {
+      for (const [re, perche, va_bene, salta] of ERRORI) {
+        if (salta && salta.includes(path.relative(SITE, f).split(path.sep).join('/'))) continue;
         if (re.test(riga) && !(va_bene && va_bene.test(riga))) trovati.push(`${path.relative(SITE, f)}:${i + 1}: ${perche}\n    ${riga.trim().slice(0, 160)}`);
       }
     });

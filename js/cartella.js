@@ -118,7 +118,7 @@ const screens = {
       const waited = daysBetween(state.requestDate, todayISO());
       if (waited < rules.integration_days) return `Se dopo ${rules.integration_days} giorni dalla richiesta (${formatIt(from)}) non hai ancora niente, un avvocato può fare ricorso al TAR fino ${art('al', until)}${formatIt(until)}.`;
       if (daysBetween(todayISO(), until) >= 0) return `Con un avvocato puoi fare ricorso al TAR fino ${art('al', until)}<strong>${formatIt(until)}</strong>.`;
-      return `Il tempo per il ricorso al TAR su questa richiesta è finito ${art('il', until)}${formatIt(until)}. Puoi fare una nuova richiesta scritta: da quella ripartono i ${rules.deadline_days} giorni; se il termine per il ricorso si riapra, chiedilo a un avvocato o a un'associazione.`;
+      return `Il tempo per il ricorso al TAR su questa richiesta è finito ${art('il', until)}${formatIt(until)}. Puoi fare una nuova richiesta scritta: da quella ripartono i ${rules.deadline_days} giorni; chiedi a un avvocato o a un'associazione se il termine per il ricorso si riapre.`;
     };
     const d = deadline();
     const a = asp();
