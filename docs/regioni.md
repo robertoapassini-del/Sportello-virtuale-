@@ -145,3 +145,33 @@ sempre riconoscibile: titolo «In Sicilia» (il nome della regione), bordo color
 - `tools/controllo.mjs` legge i file di dati anche nelle sottocartelle (già fatto).
 - `docs/regola-numeri.md` vale per ogni regione.
 - `tests/combinazioni.cjs` prova le 9 province siciliane: con più regioni va parametrizzato per regione.
+
+## 8. Aggiornamento assistito: come il sito si tiene aggiornato da solo
+
+Il lavoro grosso di un sito nazionale non è costruirlo, è tenere giusti numeri, orari e indirizzi di un centinaio
+di aziende sanitarie. Lo facciamo in tre pezzi, ognuno con un compito solo:
+
+1. **Un server in Italia scarica.** Molti siti delle ASL non rispondono a chi si collega dall'estero (nel test del
+   21/10/2026: dal server italiano 110 pagine su 134 rispondono, dall'estero Messina, Caltanissetta e Ragusa non
+   rispondono). Un piccolo server virtuale (Aruba Cloud, data center di Bergamo, `/opt/guidasanita`) lancia ogni
+   notte alle 3:30 `tools/copie.mjs`: legge gli indirizzi ufficiali dai dati regionali, salva ogni pagina come
+   testo semplice e la carica nel branch **`copie-siti`** (cartella `copie/<regione>/<asl>/`, con `indice.json`:
+   indirizzo, codice HTTP, titolo, impronta del testo, se è cambiata). Niente AI qui: è uno script semplice.
+   Si presenta con nome e sito nel `User-Agent`, una pagina alla volta, una pausa tra una pagina e l'altra, mai
+   portali di prenotazione, login o CAPTCHA. Se un'ASL chiede di smettere, si toglie dalla lista.
+2. **Claude confronta e propone.** Una routine settimanale di Claude Code (cloud, inclusa nell'abbonamento) legge
+   le copie, le confronta con `data/regioni/<regione>/*.json` e apre una pull request: per ogni numero trovato
+   nella pagina ufficiale aggiorna `verified` e `proof: "pagina"`; per ogni numero non trovato, pagina rotta
+   (404, indirizzo cambiato) o orario diverso scrive una riga «prima / dopo / fonte» e un `todo`. Non cancella
+   mai un numero da sola. Se non c'è niente da cambiare, non apre niente.
+3. **Una persona approva.** Il proprietario legge la pull request dal telefono e fa «merge»: è l'unico gesto umano
+   che resta. I test (`tests/contatti.test.mjs`) continuano a bloccare numeri senza fonte, data o prova.
+
+Cosa serve una volta sola: il server (chiave SSH del PC del proprietario, accesso solo con chiave, aggiornamenti
+automatici), la chiave di deploy del server sul repository GitHub (scrittura, serve per il branch `copie-siti`),
+la routine su https://claude.ai/code/routines. Costo: il server, 2,49 € + IVA al mese. Claude è incluso in Max.
+
+Perché è lecito, in breve: contatti e orari di uffici pubblici sono informazioni pubbliche che l'ente ha l'obbligo
+di pubblicare; non copiamo testi, prendiamo i dati e citiamo la fonte; non superiamo nessuna protezione (niente
+login, niente CAPTCHA). Il metodo è scritto in `fonti.html` per trasparenza. Da far rileggere al legale insieme
+alle lettere.

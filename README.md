@@ -27,6 +27,10 @@ Requisiti completi: [SPEC.md](SPEC.md).
 - **Decide il computer con regole fisse** (`js/engine.js`).
 - I dati di ASP e INPS si aggiornano a mano nei file `data/regioni/<regione>/*.json`, le regole nazionali in `data/*.json`,
   ognuno con data di verifica e fonte. Per ora c'è solo la Sicilia: il piano per le altre regioni è in [docs/regioni.md](docs/regioni.md).
+- **Copie delle pagine ufficiali** (`tools/copie.mjs`): ogni notte un piccolo server in Italia salva in testo le
+  pagine ufficiali delle ASL elencate nei dati (molti siti ASL non rispondono dall'estero) nel branch `copie-siti`.
+  Una routine settimanale di Claude le confronta con i dati e propone le modifiche con una pull request: nessun
+  numero cambia senza l'approvazione di una persona. Come funziona: [docs/regioni.md](docs/regioni.md).
 - **Controllo automatico** (`.github/workflows/controllo.yml`, `tools/controllo.mjs`): ogni mattina cerca novità in
   Gazzetta Ufficiale e INPS legate ai moduli; il lunedì controlla link rotti e `last_verified` più vecchi di 6 mesi.
   Non cambia mai il sito: apre issue con l'etichetta `controllo-automatico`. Per provarlo: `npm run controllo -- --tutto`.

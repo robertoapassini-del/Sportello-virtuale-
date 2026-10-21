@@ -36,8 +36,11 @@ on how to request tutela. Patient associations call it a "Babel" of procedures.
    Everything runs in the browser. Nothing is kept after the tab is closed.
 3. **We inform, we don't give legal or medical advice.** Clear disclaimer on every result page.
 4. **Every ASP detail shows a "last verified" date and a link to the official source.**
-5. **Never scrape or automate ASP/CUP websites** (several block automated access).
-   All ASP data is maintained by hand in one data file.
+5. **Never automate CUP/booking portals, logins or CAPTCHAs.** Public *information* pages of the
+   ASLs (contacts, opening hours, how-to pages) may be read by a polite, identified script at low
+   frequency (once a day, one page at a time, from a server in Italy because many ASL sites refuse
+   foreign connections) to keep the data current. The script only proposes changes; a person
+   approves them. Details: `docs/regioni.md`, «Aggiornamento assistito».
 
 ## 3. Tech stack (beginner-friendly)
 
