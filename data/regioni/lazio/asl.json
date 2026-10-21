@@ -1,0 +1,1210 @@
+{
+ "region": "Lazio",
+ "model": "ASL",
+ "_note": "Numeri delle ASL del Lazio per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili (data/regioni/index.json, «moduli»). Nel Lazio la guardia medica è il 116117 (dal 24/08/2026) e si prenota al ReCUP 06 9939.",
+ "asl": [
+  {
+   "id": "frosinone",
+   "name": "ASL di Frosinone",
+   "province": "Frosinone",
+   "site_url": "https://www.asl.fr.it/",
+   "official_domains": [
+    "asl.fr.it",
+    "aslfrosinone.it",
+    "regione.lazio.it",
+    "salutelazio.it"
+   ],
+   "guardia_medica_url": "https://www.salutelazio.it/guardia-medica",
+   "emails": [
+    "urp@aslfrosinone.it",
+    "urpceccano@aslfrosinone.it",
+    "urpsora@aslfrosinone.it",
+    "urpcassino@aslfrosinone.it",
+    "urppontecorvo@aslfrosinone.it"
+   ],
+   "pec": "protocollo@pec.aslfrosinone.it",
+   "phones": [
+    {
+     "label": "Centralino ASL di Frosinone",
+     "number": "0775 8821",
+     "address": "Via Armando Fabi snc, 03100 Frosinone",
+     "url": "https://www.asl.fr.it/contatti/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino dell'Ospedale F. Spaziani di Frosinone",
+     "number": "0775 18831",
+     "url": "https://www.asl.fr.it/contatti/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "Guardia medica e consigli sanitari non urgenti: 116117, gratis, per tutto il Lazio",
+     "number": "116117",
+     "hours": "Il numero risponde sempre. La guardia medica: notti dalle 20 alle 8; sabato e prefestivi dalle 10 alle 20; domenica e festivi dalle 8 alle 20",
+     "url": "https://www.salutelazio.it/guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "ReCUP: prenotare visite ed esami in tutto il Lazio",
+     "number": "06 9939",
+     "hours": "Dal lunedì al venerdì 7:30–19:30, sabato 7:30–13",
+     "url": "https://www.regione.lazio.it/cittadini/salute/recup",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Frosinone: numero verde per informazioni e reclami",
+     "number": "800 716963",
+     "url": "https://www.asl.fr.it/azienda/strutture-in-staff-alla-direzione-strategica/uoc-ufficio-relazioni-con-il-pubblico-comunicazione-accoglienza-tutela-e-partecipazione/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Frosinone – sede centrale di Frosinone",
+     "number": "0775 8822054",
+     "hours": "Dal lunedì al venerdì 8.30–13.00 e 14.00–15.30",
+     "address": "Via Armando Fabi, Palazzina Direzione Generale, piano -1, 03100 Frosinone",
+     "url": "https://www.asl.fr.it/azienda/strutture-in-staff-alla-direzione-strategica/uoc-ufficio-relazioni-con-il-pubblico-comunicazione-accoglienza-tutela-e-partecipazione/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Frosinone – Casa della Salute di Ceccano",
+     "number": "0775 6262898",
+     "hours": "Dal lunedì al venerdì 8.30–13.00 e 14.00–15.00",
+     "address": "Borgo Santa Lucia 52, 03023 Ceccano (FR)",
+     "url": "https://www.asl.fr.it/azienda/strutture-in-staff-alla-direzione-strategica/uoc-ufficio-relazioni-con-il-pubblico-comunicazione-accoglienza-tutela-e-partecipazione/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Frosinone – Ospedale di Sora",
+     "number": "0776 8294149",
+     "hours": "Dal lunedì al sabato 8.30–13.30",
+     "address": "Presidio Ospedaliero di Sora, piano terra, 03039 Sora (FR)",
+     "url": "https://www.asl.fr.it/azienda/strutture-in-staff-alla-direzione-strategica/uoc-ufficio-relazioni-con-il-pubblico-comunicazione-accoglienza-tutela-e-partecipazione/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Frosinone – Distretto di Sora",
+     "number": "0776 821878",
+     "hours": "Dal lunedì al venerdì 8.30–13.30; martedì e giovedì anche 14.00–17.00",
+     "address": "Via Principe di Piemonte, piano terra, 03039 Sora (FR)",
+     "url": "https://www.asl.fr.it/azienda/strutture-in-staff-alla-direzione-strategica/uoc-ufficio-relazioni-con-il-pubblico-comunicazione-accoglienza-tutela-e-partecipazione/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Frosinone – Ospedale di Cassino",
+     "number": "0776 3929398",
+     "hours": "Dal lunedì al venerdì 8.30–13.30; lunedì e mercoledì anche 15.00–17.00",
+     "address": "Presidio Ospedaliero di Cassino, 03043 Cassino (FR)",
+     "url": "https://www.asl.fr.it/azienda/strutture-in-staff-alla-direzione-strategica/uoc-ufficio-relazioni-con-il-pubblico-comunicazione-accoglienza-tutela-e-partecipazione/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Frosinone – Casa della Salute di Pontecorvo",
+     "number": "0776 7692917",
+     "hours": "Dal lunedì al venerdì 8.30–13.30; lunedì e mercoledì anche 15.00–16.30",
+     "address": "Casa della Salute, piano terra, 03037 Pontecorvo (FR)",
+     "url": "https://www.asl.fr.it/azienda/strutture-in-staff-alla-direzione-strategica/uoc-ufficio-relazioni-con-il-pubblico-comunicazione-accoglienza-tutela-e-partecipazione/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "ASL di Frosinone: scelta e revoca del medico di famiglia, esenzioni ticket, tessera sanitaria",
+     "number": "0775 2072530",
+     "url": "https://www.asl.fr.it/contatti/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "ASL di Frosinone: scelta e revoca del medico di famiglia, esenzioni ticket, tessera sanitaria (secondo numero)",
+     "number": "0775 2072661",
+     "url": "https://www.asl.fr.it/contatti/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASL Frosinone – Contatti",
+     "url": "https://www.asl.fr.it/contatti/"
+    },
+    {
+     "label": "ASL Frosinone – Ufficio Relazioni con il Pubblico",
+     "url": "https://www.asl.fr.it/azienda/strutture-in-staff-alla-direzione-strategica/uoc-ufficio-relazioni-con-il-pubblico-comunicazione-accoglienza-tutela-e-partecipazione/"
+    },
+    {
+     "label": "ASL Frosinone – ReCUP aziendale",
+     "url": "https://www.asl.fr.it/azienda/strutture-in-staff-alla-direzione-strategica/recup-aziendale/"
+    },
+    {
+     "label": "Salute Lazio – Guardia medica e 116117",
+     "url": "https://www.salutelazio.it/guardia-medica"
+    },
+    {
+     "label": "Regione Lazio – ReCUP",
+     "url": "https://www.regione.lazio.it/cittadini/salute/recup"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "Il CUP dell'ASL di Frosinone usa solo il numero regionale ReCUP 06 9939: nelle pagine non c'è un numero CUP proprio (gli sportelli di Anagni e Alatri rimandano al centralino).",
+    "Manca un numero del PUA / cure domiciliari: le pagine copiate (Distretti sanitari) non riportano telefoni.",
+    "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari."
+   ]
+  },
+  {
+   "id": "latina",
+   "name": "ASL di Latina",
+   "province": "Latina",
+   "site_url": "https://www.ausl.latina.it/",
+   "official_domains": [
+    "ausl.latina.it",
+    "regione.lazio.it",
+    "salutelazio.it"
+   ],
+   "guardia_medica_url": "https://www.salutelazio.it/guardia-medica",
+   "pua_url": "https://www.ausl.latina.it/gs-guidaaiservizi/gs-assistenzadomiciliare",
+   "emails": [
+    "urp.distretto2@ausl.latina.it",
+    "direzione.distretto1@ausl.latina.it",
+    "urp.distretto3@ausl.latina.it",
+    "urp.distrettoterracinafondi@ausl.latina.it",
+    "ufficiorelazioni.gaeta@ausl.latina.it",
+    "urp.smgoretti@ausl.latina.it"
+   ],
+   "pec": "amministrazione@pec.ausl.latina.it",
+   "phones": [
+    {
+     "label": "Centralino ASL di Latina",
+     "number": "0773 6551",
+     "address": "Via P.L. Nervi, c.c. LatinaFiori, 04100 Latina",
+     "url": "https://www.ausl.latina.it/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "Guardia medica e consigli sanitari non urgenti: 116117, gratis, per tutto il Lazio",
+     "number": "116117",
+     "hours": "Il numero risponde sempre. La guardia medica: notti dalle 20 alle 8; sabato e prefestivi dalle 10 alle 20; domenica e festivi dalle 8 alle 20",
+     "url": "https://www.salutelazio.it/guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "ReCUP: prenotare visite ed esami in tutto il Lazio",
+     "number": "06 9939",
+     "hours": "Dal lunedì al venerdì 7:30–19:30, sabato 7:30–13",
+     "url": "https://www.regione.lazio.it/cittadini/salute/recup",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Latina – Distretto di Latina",
+     "number": "0773 6556022",
+     "hours": "Dal lunedì al venerdì 8.30–13.00",
+     "address": "Poliambulatorio di piazza Celli, Latina",
+     "url": "https://www.ausl.latina.it/ufficio-relazioni-con-il-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Latina – Distretto Aprilia-Cisterna",
+     "number": "06 928634375",
+     "hours": "Dal lunedì al venerdì 8.30–13.00",
+     "address": "Poliambulatorio di via Giustiniano, Aprilia",
+     "url": "https://www.ausl.latina.it/ufficio-relazioni-con-il-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Latina – Distretto Monti Lepini",
+     "number": "0773 910036",
+     "hours": "Dal lunedì al venerdì 8.30–13.00",
+     "address": "Poliambulatorio di via Madonna delle Grazie, Priverno",
+     "url": "https://www.ausl.latina.it/ufficio-relazioni-con-il-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Latina – Distretto Terracina-Fondi",
+     "number": "0771 505805",
+     "hours": "Dal lunedì al venerdì 8.30–13.00",
+     "address": "Ospedale San Giovanni di Dio, via S. Magno, Fondi",
+     "url": "https://www.ausl.latina.it/ufficio-relazioni-con-il-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Latina – Distretto Formia-Gaeta",
+     "number": "0771 779441",
+     "hours": "Dal lunedì al venerdì 8.30–13.00",
+     "address": "Ex Ospedale Don L. Di Liegro, via Salita Cappuccini, Gaeta",
+     "url": "https://www.ausl.latina.it/ufficio-relazioni-con-il-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Latina – Ospedale S. Maria Goretti di Latina",
+     "number": "0773 6553014",
+     "hours": "Dal lunedì al venerdì 8.30–13.00",
+     "address": "Ospedale S. Maria Goretti, via Canova, Latina",
+     "url": "https://www.ausl.latina.it/ufficio-relazioni-con-il-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Latina – Ospedale A. Fiorini di Terracina",
+     "number": "0773 708503",
+     "hours": "Dal lunedì al venerdì 8.30–13.00",
+     "address": "Ospedale A. Fiorini, via Firenze, Terracina",
+     "url": "https://www.ausl.latina.it/ufficio-relazioni-con-il-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Call center della libera professione dell'ASL di Latina: prenotare visite private (a pagamento) con i medici dell'ASL",
+     "number": "0773 6556264",
+     "hours": "Dal lunedì al venerdì 13.00–17.00",
+     "url": "https://www.ausl.latina.it/gs-guidaservizi/132-visite-ed-esami/4350-cup",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASL Latina – Contatti",
+     "url": "https://www.ausl.latina.it/contatti"
+    },
+    {
+     "label": "ASL Latina – Ufficio relazioni con il pubblico",
+     "url": "https://www.ausl.latina.it/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "label": "ASL Latina – CUP",
+     "url": "https://www.ausl.latina.it/gs-guidaservizi/132-visite-ed-esami/4350-cup"
+    },
+    {
+     "label": "Salute Lazio – Guardia medica e 116117",
+     "url": "https://www.salutelazio.it/guardia-medica"
+    },
+    {
+     "label": "Regione Lazio – ReCUP",
+     "url": "https://www.regione.lazio.it/cittadini/salute/recup"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "Per prenotare in SSN l'ASL di Latina usa solo il ReCUP regionale 06 9939 (oltre ai 20 sportelli CUP in provincia): non c'è un numero CUP proprio.",
+    "La pagina PUA (www.ausl.latina.it/index.php/pua) è ferma al 2015: numeri dei PUA non usati. Le pagine sull'assistenza domiciliare non hanno telefoni.",
+    "Contraddizione sull'URP di Terracina-Fondi: la pagina Contatti dà 0771 505980, la pagina URP (aggiornata il 21/10/2026) dà 0771 505805; ho usato quest'ultimo.",
+    "La pagina Contatti riporta ancora il vecchio numero della guardia medica (0773 520888): non usato, vale il 116117.",
+    "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari."
+   ]
+  },
+  {
+   "id": "rieti",
+   "name": "ASL di Rieti",
+   "province": "Rieti",
+   "site_url": "https://www.asl.rieti.it/",
+   "official_domains": [
+    "asl.rieti.it",
+    "regione.lazio.it",
+    "salutelazio.it"
+   ],
+   "guardia_medica_url": "https://www.salutelazio.it/guardia-medica",
+   "pua_url": "https://www.asl.rieti.it/aiuto-al-cittadino/pua-punto-unico-di-accesso/",
+   "emails": [
+    "urp@asl.rieti.it",
+    "puarieti@asl.rieti.it",
+    "puaantrodoco@asl.rieti.it",
+    "puaselpidio@asl.rieti.it",
+    "puacastelditora@asl.rieti.it",
+    "puapoggiomirteto@asl.rieti.it",
+    "puaosterianuova@asl.rieti.it",
+    "puacasadellasalute@asl.rieti.it"
+   ],
+   "pec": "asl.rieti@pec.it",
+   "phones": [
+    {
+     "label": "Centralino ASL di Rieti",
+     "number": "0746 2781",
+     "address": "Via del Terminillo 42, 02100 Rieti",
+     "url": "https://www.asl.rieti.it/aiuto-al-cittadino/contatti/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "Guardia medica e consigli sanitari non urgenti: 116117, gratis, per tutto il Lazio",
+     "number": "116117",
+     "hours": "Il numero risponde sempre. La guardia medica: notti dalle 20 alle 8; sabato e prefestivi dalle 10 alle 20; domenica e festivi dalle 8 alle 20",
+     "url": "https://www.salutelazio.it/guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "ReCUP: prenotare visite ed esami in tutto il Lazio",
+     "number": "06 9939",
+     "hours": "Dal lunedì al venerdì 7:30–19:30, sabato 7:30–13",
+     "url": "https://www.regione.lazio.it/cittadini/salute/recup",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Rieti: ufficio per i cittadini, reclami",
+     "number": "0746 278719",
+     "hours": "Dal lunedì al venerdì 8.30–13.00; dal lunedì al giovedì anche 14.00–16.00",
+     "address": "Distretto Sanitario n. 1, via delle Ortensie 28, 1° piano, Rieti",
+     "url": "https://www.asl.rieti.it/aiuto-al-cittadino/urp/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP e call center dell'ASL di Rieti: prenotare i prelievi del sangue",
+     "number": "0746 278058",
+     "hours": "Dal lunedì al venerdì 9.00–17.00, sabato 9.00–13.00",
+     "url": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti-aree-e-staff/staff-direzione-sanitaria/cup-uosd-gestione-della-domanda-accessibilita-offerta-e-alpi/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP dell'ASL di Rieti: disdire un appuntamento",
+     "number": "0746 278773",
+     "url": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti-aree-e-staff/staff-direzione-sanitaria/cup-uosd-gestione-della-domanda-accessibilita-offerta-e-alpi/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Numero unico dell'Assistenza Domiciliare (ADI) dell'ASL di Rieti",
+     "number": "0746 279452",
+     "hours": "Dal lunedì al sabato 8.00–20.00",
+     "url": "https://www.asl.rieti.it/come-fare-per/assistenza-domiciliare-integrata-adi/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL di Rieti – Rieti",
+     "number": "0746 278602",
+     "hours": "Dal lunedì al venerdì 8.30–12.30; giovedì anche 14.00–17.00",
+     "address": "Via delle Ortensie 28, 1° piano, 02100 Rieti",
+     "url": "https://www.asl.rieti.it/aiuto-al-cittadino/pua-punto-unico-di-accesso/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL di Rieti – Antrodoco",
+     "number": "0746 279330",
+     "hours": "Dal lunedì al venerdì 9.00–12.00",
+     "address": "Piazza Aldo Moro 1, piano -1, 02013 Antrodoco (RI)",
+     "url": "https://www.asl.rieti.it/aiuto-al-cittadino/pua-punto-unico-di-accesso/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL di Rieti – S. Elpidio",
+     "number": "0746 279027",
+     "hours": "Dal lunedì al venerdì 9.00–13.00",
+     "address": "Strada Provinciale per S. Elpidio, bivio Petrignano, 02024 Pescorocchiano (RI)",
+     "url": "https://www.asl.rieti.it/aiuto-al-cittadino/pua-punto-unico-di-accesso/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL di Rieti – Castel di Tora",
+     "number": "0746 279352",
+     "hours": "Lunedì e giovedì 9.00–13.00",
+     "address": "Strada Provinciale Turanense km 27,950, Castel di Tora (RI)",
+     "url": "https://www.asl.rieti.it/aiuto-al-cittadino/pua-punto-unico-di-accesso/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL di Rieti – Poggio Mirteto",
+     "number": "0765 448292",
+     "hours": "Dal lunedì al venerdì 8.30–12.30",
+     "address": "Via Finocchieto snc, piano terra, 02047 Poggio Mirteto (RI)",
+     "url": "https://www.asl.rieti.it/aiuto-al-cittadino/pua-punto-unico-di-accesso/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL di Rieti – Osteria Nuova (Poggio Moiano)",
+     "number": "0746 279096",
+     "hours": "Dal lunedì al venerdì 10.00–13.00; martedì e giovedì anche 14.00–16.30",
+     "address": "Viale Europa 13, piano terra, 02037 Osteria Nuova – Poggio Moiano (RI)",
+     "url": "https://www.asl.rieti.it/aiuto-al-cittadino/pua-punto-unico-di-accesso/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL di Rieti – Casa della Salute di Magliano Sabina",
+     "number": "0744 912286",
+     "hours": "Lunedì e venerdì 8.30–13.30",
+     "address": "Vocabolo Filoni 1, piano terra, 02046 Magliano Sabina (RI)",
+     "url": "https://www.asl.rieti.it/aiuto-al-cittadino/pua-punto-unico-di-accesso/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASL Rieti – Contatti",
+     "url": "https://www.asl.rieti.it/aiuto-al-cittadino/contatti/"
+    },
+    {
+     "label": "ASL Rieti – URP",
+     "url": "https://www.asl.rieti.it/aiuto-al-cittadino/urp/"
+    },
+    {
+     "label": "ASL Rieti – CUP",
+     "url": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti-aree-e-staff/staff-direzione-sanitaria/cup-uosd-gestione-della-domanda-accessibilita-offerta-e-alpi/"
+    },
+    {
+     "label": "ASL Rieti – PUA Punto Unico di Accesso",
+     "url": "https://www.asl.rieti.it/aiuto-al-cittadino/pua-punto-unico-di-accesso/"
+    },
+    {
+     "label": "ASL Rieti – Assistenza Domiciliare Integrata",
+     "url": "https://www.asl.rieti.it/come-fare-per/assistenza-domiciliare-integrata-adi/"
+    },
+    {
+     "label": "Salute Lazio – Guardia medica e 116117",
+     "url": "https://www.salutelazio.it/guardia-medica"
+    },
+    {
+     "label": "Regione Lazio – ReCUP",
+     "url": "https://www.regione.lazio.it/cittadini/salute/recup"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "Le vecchie pagine CUP e ADI (guida-ai-servizi/cup-centro-unico-di-prenotazione, come-fare-per/uosd-assistenza-domiciliare-integrata-adi) danno «pagina non trovata».",
+    "Per prenotare visite ed esami il numero è il ReCUP regionale 06 9939: lo 0746 278058 è indicato per i prelievi e come call center aziendale/libera professione.",
+    "Nessun numero per scelta del medico ed esenzioni nelle pagine copiate.",
+    "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari."
+   ]
+  },
+  {
+   "id": "roma",
+   "name": "ASL di Roma (Roma 1–6)",
+   "province": "Roma",
+   "site_url": "https://www.salutelazio.it/",
+   "official_domains": [
+    "aslroma1.it",
+    "aslroma2.it",
+    "aslroma3.it",
+    "aslroma4.it",
+    "aslroma5.it",
+    "aslroma6.it",
+    "regione.lazio.it",
+    "salutelazio.it"
+   ],
+   "guardia_medica_url": "https://www.salutelazio.it/guardia-medica",
+   "pua_url": "https://www.aslroma1.it/punto-unico-accesso",
+   "emails": [
+    "urp@aslroma1.it",
+    "urpsfn@aslroma1.it",
+    "adi@aslroma2.it",
+    "urp@aslroma3.it",
+    "urp.ospedalegrassi@aslroma3.it",
+    "urp@aslroma5.it",
+    "pua.tivoli@aslroma5.it",
+    "pua.f1@aslroma4.it",
+    "pua.f2@aslroma4.it",
+    "pua.f3@aslroma4.it",
+    "pua.f4@aslroma4.it"
+   ],
+   "pec": "protocollo@pec.aslroma1.it",
+   "phones": [
+    {
+     "label": "Centralino ASL Roma 1",
+     "number": "06 60101",
+     "address": "Borgo Santo Spirito 3, 00193 Roma",
+     "url": "https://www.aslroma1.it/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino ASL Roma 3 (sede legale)",
+     "number": "06 56481",
+     "address": "Via Casal Bernocchi 73, 00125 Roma",
+     "url": "https://www.aslroma3.it/servizio-prenotazioni",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino ASL Roma 4",
+     "number": "06 96669100",
+     "address": "Via Terme di Traiano 39/A, 00053 Civitavecchia (RM)",
+     "url": "https://www.aslroma4.it/contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "Guardia medica e consigli sanitari non urgenti: 116117, gratis, per tutto il Lazio",
+     "number": "116117",
+     "hours": "Il numero risponde sempre. La guardia medica: notti dalle 20 alle 8; sabato e prefestivi dalle 10 alle 20; domenica e festivi dalle 8 alle 20",
+     "url": "https://www.salutelazio.it/guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "ReCUP: prenotare visite ed esami in tutto il Lazio",
+     "number": "06 9939",
+     "hours": "Dal lunedì al venerdì 7:30–19:30, sabato 7:30–13",
+     "url": "https://www.regione.lazio.it/cittadini/salute/recup",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Roma 1 (Borgo Santo Spirito): ufficio per i cittadini, reclami",
+     "number": "06 60107766",
+     "hours": "Lunedì, mercoledì e venerdì 8.30–14.30; martedì e giovedì 8.30–14.30 e 15–17",
+     "address": "Borgo Santo Spirito 3, 00193 Roma (Chiostro del Commendatore, primo piano)",
+     "url": "https://www.aslroma1.it/ufficio-relazioni-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Roma 1 all'Ospedale San Filippo Neri",
+     "number": "06 60102676",
+     "hours": "Lunedì, mercoledì e venerdì 8–13.30; martedì e giovedì 8–13.30 e 14–15",
+     "address": "Via Giovanni Martinotti 20, 00135 Roma (Edificio A, piano terra)",
+     "url": "https://www.aslroma1.it/ufficio-relazioni-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Roma 2: ufficio per i cittadini, reclami",
+     "number": "06 51004555",
+     "hours": "Telefono dal lunedì al venerdì 9–13 (anche 06 51004554 e 06 51004552); di persona dal lunedì al venerdì 9–12",
+     "address": "Via Maria Brighenti 23, Roma",
+     "url": "https://www.aslroma2.it/index.php/urp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Roma 3: numero verde (da telefono fisso)",
+     "number": "800 018972",
+     "hours": "Dal lunedì al venerdì 8–18",
+     "url": "https://www.aslroma3.it/urp/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Roma 3: da cellulare",
+     "number": "06 56488302",
+     "hours": "Dal lunedì al venerdì 8–18",
+     "url": "https://www.aslroma3.it/urp/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Roma 3 per i presidi territoriali",
+     "number": "06 56487727",
+     "hours": "Informazioni telefoniche dal lunedì al venerdì 10–12",
+     "address": "Via Casal Bernocchi 73, 00125 Roma",
+     "url": "https://www.aslroma3.it/urp/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Roma 3 all'Ospedale G.B. Grassi di Ostia",
+     "number": "06 56482331",
+     "hours": "Ricevimento dal lunedì al venerdì 8.30–13; mercoledì anche 14.30–17",
+     "address": "Via Giancarlo Passeroni 28, 00122 Ostia Lido (Roma)",
+     "url": "https://www.aslroma3.it/urp/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Roma 4: ufficio per i cittadini, reclami",
+     "number": "06 96669666",
+     "hours": "Telefono dal 19 ottobre 2026: lunedì e mercoledì 9.30–11.30 e 13.30–15.30; dal martedì al giovedì 9.30–11.30. Si riceve su appuntamento",
+     "url": "https://www.aslroma4.it/avvisi-per-l-utenza/cambio-orario-urp-dal-19-ottobre-2026-2364",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Roma 6 a Nettuno",
+     "number": "06 93272788",
+     "address": "Piazza S. Francesco 4, Nettuno",
+     "url": "https://www.aslroma6.it/servizi-al-cittadino/urp-ufficio-relazioni-col-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Roma 6 a Frascati",
+     "number": "06 93273880",
+     "address": "Via Enrico Fermi 2, Frascati",
+     "url": "https://www.aslroma6.it/servizi-al-cittadino/urp-ufficio-relazioni-col-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Roma 6 a Genzano di Roma",
+     "number": "06 93273947",
+     "address": "Via Achille Grandi, Genzano di Roma",
+     "url": "https://www.aslroma6.it/servizi-al-cittadino/urp-ufficio-relazioni-col-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL Roma 1, Distretto 1 (Casa della Comunità Eroi): cure a casa, RSA",
+     "number": "06 60105418",
+     "hours": "PUA integrato con il Municipio dal lunedì al venerdì 8.30–13",
+     "address": "Via Fra' Albenzio 10, Roma",
+     "url": "https://www.aslroma1.it/punto-unico-accesso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL Roma 1, Distretto 2 (Casa della Comunità Nomentano): cure a casa, RSA",
+     "number": "06 60105046",
+     "hours": "Telefono dal lunedì al venerdì 10–13, sabato 10–12",
+     "address": "Circonvallazione Nomentana 498, Roma",
+     "url": "https://www.aslroma1.it/punto-unico-accesso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL Roma 1, Distretto 3 (Casa della Comunità Monte Sacro): cure a casa, RSA",
+     "number": "06 60105752",
+     "hours": "Lunedì, mercoledì e venerdì 8.30–12.30; martedì e giovedì 14.30–16.30",
+     "address": "Via Lampedusa 23, Roma",
+     "url": "https://www.aslroma1.it/punto-unico-accesso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL Roma 1, Distretto 13 (Casa della Comunità Boccea): cure a casa, RSA",
+     "number": "06 60105115",
+     "hours": "Dal lunedì al sabato 8–18",
+     "address": "Via di Val Cannuta 12, Roma",
+     "url": "https://www.aslroma1.it/punto-unico-accesso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL Roma 1, Distretto 14 (Primavalle e Santa Maria della Pietà): cure a casa",
+     "number": "06 60106805",
+     "address": "Piazza San Zaccaria Papa 1, Roma",
+     "url": "https://www.aslroma1.it/punto-unico-accesso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL Roma 1, Distretto 15 (Labaro-Prima Porta, Cassia, Cesano): cure a casa",
+     "number": "06 60105342",
+     "hours": "Telefono dal lunedì al venerdì 8.30–12.30",
+     "url": "https://www.aslroma1.it/punto-unico-accesso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL Roma 2, Distretto 4 – Municipio IV (Case della Comunità Bonifacio e Pietralata)",
+     "number": "06 41434223",
+     "hours": "Mercoledì 9–12 e 14–16",
+     "url": "https://www.aslroma2.it/index.php/servizi-4d/punto-unico-di-accesso-pua",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL Roma 2, Distretto 5 – Municipio V (Casa della Salute Santa Caterina della Rosa)",
+     "number": "06 51008525",
+     "hours": "Su appuntamento: lunedì e venerdì 9–13; martedì 9–13 e 15–17; giovedì 9–15",
+     "address": "Via N. Forteguerri 4, Roma",
+     "url": "https://www.aslroma2.it/index.php/servizi-4d/punto-unico-di-accesso-pua",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL Roma 2, Distretto 6 – Municipio VI (Casa della Salute Torrenova)",
+     "number": "06 41434767",
+     "hours": "Lunedì, mercoledì e venerdì 8.30–12.30; su appuntamento martedì e giovedì 14.30–16.30",
+     "address": "Via della Tenuta di Torrenova 138, Roma",
+     "url": "https://www.aslroma2.it/index.php/servizi-4d/punto-unico-di-accesso-pua",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL Roma 2, Distretto 7 – Municipio VII (Casa della Salute Antistio)",
+     "number": "06 41435066",
+     "hours": "Su appuntamento: lunedì 8.30–12.30; martedì e giovedì 8.30–12.30 e 13.30–16.30",
+     "address": "Via Antistio 12, Roma",
+     "url": "https://www.aslroma2.it/index.php/servizi-4d/punto-unico-di-accesso-pua",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL Roma 2, Distretto 8 – Municipio VIII (Casa della Comunità San Nemesio, Garbatella)",
+     "number": "06 51007404",
+     "address": "Via San Nemesio 21, Roma",
+     "url": "https://www.aslroma2.it/index.php/servizi-4d/punto-unico-di-accesso-pua",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL Roma 2, Distretto 9 – Municipio IX",
+     "number": "06 51008863",
+     "hours": "Lunedì, mercoledì e venerdì 9–12; giovedì 14.30–16.30 su appuntamento",
+     "address": "Via Lipparini 13, Roma",
+     "url": "https://www.aslroma2.it/index.php/servizi-4d/punto-unico-di-accesso-pua",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Centrale operativa cure domiciliari (CARE) dell'ASL Roma 2: per chi è già seguito a casa",
+     "number": "06 51006699",
+     "hours": "Dal lunedì al sabato 7.30–19.30; domenica e festivi 7.30–13.30",
+     "address": "Via Casale de' Merode 8, Roma",
+     "url": "https://www.aslroma2.it/index.php/servizi/assistenza-domiciliare-mn?view=page&id=12",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL Roma 4, Distretto 1 (Civitavecchia)",
+     "number": "06 96669353",
+     "hours": "Dal lunedì al sabato 8–18",
+     "address": "Viale Lazio 34/B, Civitavecchia",
+     "url": "https://www.aslroma4.it/pua-punto-unico-di-accesso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL Roma 4, Distretto 2 (Casa della Comunità di Ladispoli)",
+     "number": "06 96669393",
+     "hours": "Lunedì e venerdì 8.30–12; martedì 8.30–12 e 14.30–16",
+     "address": "Via Aurelia km 41,500, Ladispoli",
+     "url": "https://www.aslroma4.it/pua-punto-unico-di-accesso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL Roma 4, Distretto 2 (Casa della Comunità di Cerveteri)",
+     "number": "06 99890922",
+     "hours": "Mercoledì 8.30–12; giovedì 8.30–12 e 14.30–16",
+     "address": "Via Madre Maria Crocifissa Curcio 1, Cerveteri",
+     "url": "https://www.aslroma4.it/pua-punto-unico-di-accesso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL Roma 4, Distretto 3 (Bracciano)",
+     "number": "06 96669695",
+     "address": "Via del Lago snc, Bracciano",
+     "url": "https://www.aslroma4.it/pua-punto-unico-di-accesso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL Roma 4, Distretto 4 (Casa della Comunità di Campagnano di Roma)",
+     "number": "06 96669269",
+     "address": "Via Adriano I 23, Campagnano di Roma",
+     "url": "https://www.aslroma4.it/pua-punto-unico-di-accesso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL Roma 5 alla Casa della Comunità di Tivoli",
+     "number": "0774 704763",
+     "address": "Piazza Massimo 1, 00019 Tivoli (RM)",
+     "url": "https://www.aslroma5.it/servizi_distrettuali/pua-punto-unico-di-accesso-casa-della-comunita-tivoli/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASL Roma 1 – Contatti",
+     "url": "https://www.aslroma1.it/contatti"
+    },
+    {
+     "label": "ASL Roma 1 – URP",
+     "url": "https://www.aslroma1.it/ufficio-relazioni-pubblico"
+    },
+    {
+     "label": "ASL Roma 1 – Punto Unico di Accesso",
+     "url": "https://www.aslroma1.it/punto-unico-accesso"
+    },
+    {
+     "label": "ASL Roma 2 – URP",
+     "url": "https://www.aslroma2.it/index.php/urp"
+    },
+    {
+     "label": "ASL Roma 2 – Punto Unico di Accesso",
+     "url": "https://www.aslroma2.it/index.php/servizi-4d/punto-unico-di-accesso-pua"
+    },
+    {
+     "label": "ASL Roma 2 – Assistenza domiciliare",
+     "url": "https://www.aslroma2.it/index.php/servizi/assistenza-domiciliare-mn?view=page&id=12"
+    },
+    {
+     "label": "ASL Roma 3 – URP",
+     "url": "https://www.aslroma3.it/urp/"
+    },
+    {
+     "label": "ASL Roma 3 – Servizio prenotazioni",
+     "url": "https://www.aslroma3.it/servizio-prenotazioni"
+    },
+    {
+     "label": "ASL Roma 4 – Contatti",
+     "url": "https://www.aslroma4.it/contatti"
+    },
+    {
+     "label": "ASL Roma 4 – Cambio orario URP dal 19 ottobre 2026",
+     "url": "https://www.aslroma4.it/avvisi-per-l-utenza/cambio-orario-urp-dal-19-ottobre-2026-2364"
+    },
+    {
+     "label": "ASL Roma 4 – PUA",
+     "url": "https://www.aslroma4.it/pua-punto-unico-di-accesso"
+    },
+    {
+     "label": "ASL Roma 5 – PUA Casa della Comunità Tivoli",
+     "url": "https://www.aslroma5.it/servizi_distrettuali/pua-punto-unico-di-accesso-casa-della-comunita-tivoli/"
+    },
+    {
+     "label": "ASL Roma 6 – URP",
+     "url": "https://www.aslroma6.it/servizi-al-cittadino/urp-ufficio-relazioni-col-pubblico"
+    },
+    {
+     "label": "Salute Lazio – Guardia medica e 116117",
+     "url": "https://www.salutelazio.it/guardia-medica"
+    },
+    {
+     "label": "Regione Lazio – ReCUP",
+     "url": "https://www.regione.lazio.it/cittadini/salute/recup"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "CUP: tutte e sei le ASL rimandano al ReCUP regionale 06 9939 e agli sportelli CUP; nessun numero CUP proprio per i cittadini.",
+    "Guardia medica: la pagina dell'ASL Roma 3 e le FAQ dell'ASL Roma 5 riportano ancora il vecchio numero 06 58526811 accanto al 116117: non usato.",
+    "ASL Roma 2, Roma 5 e Roma 6: nelle pagine copiate non c'è un centralino generale.",
+    "ASL Roma 5: la pagina URP dà solo l'email urp@aslroma5.it, nessun telefono; PUA trovato solo per Tivoli (gli altri distretti non copiati).",
+    "ASL Roma 3 e Roma 6: le pagine assistenza domiciliare e PUA non danno numeri (rimandano al PUA del distretto).",
+    "Zone: per ASL Roma 1 le pagine indicano i distretti (1, 2, 3, 13, 14, 15) ma non scrivono a quali municipi corrispondono; per ASL Roma 2 la pagina dice Distretto = Municipio (IV–IX).",
+    "PEC: messa solo quella dell'ASL Roma 1; le altre trovate sono protocollo@pec.aslroma4.it, urp@pec.aslroma3.it, protocollo@pec.aslroma5.it, servizio.protocollo@pec.aslroma6.it.",
+    "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari."
+   ]
+  },
+  {
+   "id": "viterbo",
+   "name": "ASL di Viterbo",
+   "province": "Viterbo",
+   "site_url": "https://www.asl.vt.it/",
+   "official_domains": [
+    "asl.vt.it",
+    "regione.lazio.it",
+    "salutelazio.it"
+   ],
+   "guardia_medica_url": "https://www.salutelazio.it/guardia-medica",
+   "pua_url": "https://www.asl.vt.it/pua-punto-unico-di-accesso",
+   "emails": [
+    "urp@asl.vt.it"
+   ],
+   "pec": "prot.gen.asl.vt.it@legalmail.it",
+   "phones": [
+    {
+     "label": "Centralino ASL di Viterbo",
+     "number": "0761 3391",
+     "address": "Via Enrico Fermi 15, 01100 Viterbo",
+     "url": "https://www.asl.vt.it/azienda",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "Guardia medica e consigli sanitari non urgenti: 116117, gratis, per tutto il Lazio",
+     "number": "116117",
+     "hours": "Il numero risponde sempre. La guardia medica: notti dalle 20 alle 8; sabato e prefestivi dalle 10 alle 20; domenica e festivi dalle 8 alle 20",
+     "url": "https://www.salutelazio.it/guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "ReCUP: prenotare visite ed esami in tutto il Lazio",
+     "number": "06 9939",
+     "hours": "Dal lunedì al venerdì 7:30–19:30, sabato 7:30–13",
+     "url": "https://www.regione.lazio.it/cittadini/salute/recup",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica a Grotte di Castro, Proceno, Onano e San Lorenzo Nuovo (fase iniziale del 116117)",
+     "number": "06 55525592",
+     "url": "https://www.asl.vt.it/approfondimenti/638",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "Punto informativo dell'ASL di Viterbo: numero verde",
+     "number": "800 692911",
+     "url": "https://www.asl.vt.it/azienda",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Viterbo: ufficio per i cittadini, reclami",
+     "number": "0761 236637",
+     "hours": "Dal lunedì al venerdì 8.00–13.00; martedì e giovedì anche 15.00–17.00",
+     "address": "Cittadella della Salute, piano 0, via Enrico Fermi 15, Viterbo",
+     "url": "https://www.asl.vt.it/urp-ufficio-relazioni-con-il-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL di Viterbo – Montefiascone (Distretto A)",
+     "number": "0761 1860342",
+     "hours": "Dal lunedì al venerdì 8.30–12.00; martedì anche 15.00–17.00",
+     "address": "Via Donatori di Sangue 19, Montefiascone",
+     "url": "https://www.asl.vt.it/pua-punto-unico-di-accesso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL di Viterbo – Tarquinia (Distretto A)",
+     "number": "0766 846205",
+     "hours": "Dal lunedì al venerdì 8.30–12.00; martedì anche 15.00–17.00",
+     "address": "Viale Igea 1, Tarquinia",
+     "url": "https://www.asl.vt.it/pua-punto-unico-di-accesso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL di Viterbo – Bagnoregio (Distretto A)",
+     "number": "0761 1860420",
+     "hours": "Dal lunedì al venerdì 8.30–12.00",
+     "address": "Casa della Salute, via Fratelli Agosti 6, Bagnoregio",
+     "url": "https://www.asl.vt.it/pua-punto-unico-di-accesso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL di Viterbo – Acquapendente (Distretto A)",
+     "number": "0763 735294",
+     "hours": "Dal lunedì al venerdì 8.30–13.00",
+     "address": "Via Cesare Battisti 68, Acquapendente",
+     "url": "https://www.asl.vt.it/pua-punto-unico-di-accesso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL di Viterbo – Viterbo, infermieri (Distretto B)",
+     "number": "0761 236514",
+     "hours": "Dal lunedì al venerdì 8.30–12.00; giovedì anche 15.00–17.00",
+     "address": "Cittadella della Salute, via Enrico Fermi 15, Viterbo",
+     "url": "https://www.asl.vt.it/pua-punto-unico-di-accesso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL di Viterbo – Viterbo, assistenti sociali (Distretto B)",
+     "number": "0761 236815",
+     "hours": "Dal lunedì al venerdì 8.30–12.00; giovedì anche 15.00–17.00",
+     "address": "Cittadella della Salute, via Enrico Fermi 15, Viterbo",
+     "url": "https://www.asl.vt.it/pua-punto-unico-di-accesso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL di Viterbo – Soriano nel Cimino (Distretto B)",
+     "number": "0761 651211",
+     "hours": "Dal lunedì al venerdì 8.30–12.00",
+     "address": "Casa della Salute, via Innocenzo VIII 73, Soriano nel Cimino",
+     "url": "https://www.asl.vt.it/pua-punto-unico-di-accesso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL di Viterbo – Orte (Distretto B)",
+     "number": "0761 338218",
+     "hours": "Dal lunedì al venerdì 10.00–12.00; giovedì anche 14.30–16.30",
+     "address": "Centro Salute, via Gramsci 66, Orte",
+     "url": "https://www.asl.vt.it/pua-punto-unico-di-accesso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL di Viterbo – Civita Castellana (Distretto C)",
+     "number": "0761 592343",
+     "hours": "Dal lunedì al venerdì 9.00–12.00; mercoledì anche 14.30–16.30",
+     "address": "Cittadella della Salute, via Francesco Petrarca snc, Civita Castellana",
+     "url": "https://www.asl.vt.it/pua-punto-unico-di-accesso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL di Viterbo – Vetralla (Distretto C)",
+     "number": "0761 338762",
+     "hours": "Dal lunedì al venerdì 8.30–11.30; mercoledì anche 14.30–16.30",
+     "address": "S.S. Cassia km 63, loc. La Botte, Vetralla",
+     "url": "https://www.asl.vt.it/pua-punto-unico-di-accesso",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare (ADI) dell'ASL di Viterbo – Montefiascone (Distretto A)",
+     "number": "0761 1860306",
+     "hours": "Dal lunedì al venerdì 8.30–11.30",
+     "address": "Via Dante Alighieri 100, Montefiascone",
+     "url": "https://www.asl.vt.it/adi-assistenza-domiciliare-integrata",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare (ADI) dell'ASL di Viterbo – Soriano nel Cimino (Distretto B)",
+     "number": "0761 745021",
+     "hours": "Dal lunedì al venerdì 8.30–12.00",
+     "address": "Casa della Salute, via Innocenzo VIII 73, Soriano nel Cimino",
+     "url": "https://www.asl.vt.it/adi-assistenza-domiciliare-integrata",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare (ADI) dell'ASL di Viterbo – Civita Castellana (Distretto C)",
+     "number": "0761 592315",
+     "hours": "Dal lunedì al venerdì 9.00–12.00; mercoledì anche 14.30–16.30",
+     "address": "Cittadella della Salute, via Francesco Petrarca snc, Civita Castellana",
+     "url": "https://www.asl.vt.it/adi-assistenza-domiciliare-integrata",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASL Viterbo – Azienda (contatti)",
+     "url": "https://www.asl.vt.it/azienda"
+    },
+    {
+     "label": "ASL Viterbo – URP",
+     "url": "https://www.asl.vt.it/urp-ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "label": "ASL Viterbo – PUA Punto Unico di Accesso",
+     "url": "https://www.asl.vt.it/pua-punto-unico-di-accesso"
+    },
+    {
+     "label": "ASL Viterbo – Assistenza Domiciliare Integrata",
+     "url": "https://www.asl.vt.it/adi-assistenza-domiciliare-integrata"
+    },
+    {
+     "label": "Salute Lazio – Guardia medica e 116117",
+     "url": "https://www.salutelazio.it/guardia-medica"
+    },
+    {
+     "label": "Regione Lazio – ReCUP",
+     "url": "https://www.regione.lazio.it/cittadini/salute/recup"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "DA DECIDERE: la pagina ASL sul 116117 (www.asl.vt.it/approfondimenti/638, agg. 01/09/2026) dice che nella fase iniziale, solo per i comuni di Grotte di Castro, Proceno, Onano e San Lorenzo Nuovo, la guardia medica si chiama al 06 55525592. Non l'ho messo tra i contatti.",
+    "Il CUP dell'ASL di Viterbo usa solo il ReCUP regionale 06 9939: nessun numero CUP proprio per i cittadini.",
+    "La pagina Contatti aziendali è aggiornata al 2023: centralino e numero verde presi dalla pagina Azienda (agg. 11/2025), che riporta gli stessi numeri.",
+    "Nessun numero per scelta del medico ed esenzioni nelle pagine copiate.",
+    "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari."
+   ]
+  }
+ ]
+}

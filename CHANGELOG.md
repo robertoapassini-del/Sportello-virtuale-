@@ -2,6 +2,12 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — Lazio: i numeri utili delle 5 province
+- Nuovo `data/regioni/lazio/asl.json`: 92 numeri delle ASL (centralini, URP, PUA e cure a casa, CUP e scelta del medico dove ci sono), una voce per provincia (Roma con le 6 ASL). Fonte: pagine ufficiali di ASL e Regione Lazio copiate dal server in Italia il 21/10/2026; ogni numero ritrovato nella copia della pagina citata (`proof: "pagina"`).
+- Numeri regionali: 116117 per guardia medica e consigli non urgenti, attivo in tutto il Lazio dal 24/08/2026 (Salute Lazio), e ReCUP 06 9939 (pagina della Regione aggiornata al 12/08/2021: orari da confermare). A Grotte di Castro, Proceno, Onano e San Lorenzo Nuovo la guardia medica è ancora al 06 55525592 (pagina dell'ASL di Viterbo, 01/09/2026).
+- Nuovo `data/regioni/lazio/inps.json`: indirizzo e PEC delle 5 sedi INPS. Lazio attivo solo per Numeri utili.
+- Indice delle regioni: campo `in` per dire «nel Lazio», «nel Veneto», «nelle Marche».
+
 ## 21/10/2026 — Lombardia: i numeri utili delle 12 province
 - Nuovo `data/regioni/lombardia/asl.json`: 191 numeri di ATS e ASST (centralini, URP, PUA e cure a casa, cartelle cliniche, screening, protesica dove c'è), uno per provincia. Fonte: le pagine ufficiali di ATS, ASST e Regione Lombardia copiate dal server in Italia il 21/10/2026; ogni numero è stato ritrovato nella copia della pagina citata (`proof: "pagina"`).
 - Numeri regionali in tutte le province: guardia medica 116117 (feriali 20–8, festivi e prefestivi 24 ore su 24) e prenotazioni 800 638638 da fisso o 02 999599 da cellulare (dal lunedì al sabato 8–20), dalle pagine di Regione Lombardia.
