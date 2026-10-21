@@ -1,6 +1,6 @@
 {
  "regione": "campania",
- "aggiornato": "2026-10-21T20:36:14.292Z",
+ "aggiornato": "2026-10-21T21:20:25.357Z",
  "pagine": [
   {
    "asl": "regione-campania",
@@ -29,8 +29,12 @@
    "asl": "regione-campania",
    "url": "https://www.regione.campania.it/comunicazione/area-stampa/comunicati/06032026-comunicato-n-117-provvedimenti-giunta-regionale",
    "controllata": "2026-10-21",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "regione-campania/a3b9a0dbcfda.txt",
+   "titolo": "06/03/2026 - Comunicato n. 117 - Provvedimenti della Giunta Regionale | Regione Campania",
+   "sha": "70a6005d8e70bc2b9637754edb8b65cfd3bc8bbc2f5ac471cb2bf162463c8020",
+   "caratteri": 7680,
+   "cambiata": true
   },
   {
    "asl": "regione-campania",
@@ -41,13 +45,13 @@
    "titolo": "204.00.00 DIREZIONE GENERALE TUTELA DELLA SALUTE E COORDINAMENTO DEL SISTEMA SANITARIO REGIONALE | Regione Campania",
    "sha": "e0879dc1b0d4ef52705abc576ae55d47eafbc88822fdacf5000b6c6bcb339f34",
    "caratteri": 5616,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-campania",
    "url": "https://www.regione.campania.it/imprese/it/tematiche/fascicolo-sanitario-elettronico/fascicolo-sanitario-elettronico-fse",
    "controllata": "2026-10-21",
-   "http": 503
+   "http": 404
   },
   {
    "asl": "regione-campania",
@@ -58,7 +62,7 @@
    "titolo": "Fascicolo Sanitario Elettronico 2.0: cos’è e perché esprimere il consenso | Regione Campania",
    "sha": "4b9b9f0a584471db8694a25df8f2d20dfe83909c96b76867f7405d070d0e2378",
    "caratteri": 6310,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-campania",
@@ -819,8 +823,8 @@
    "certificato": "non valido",
    "file": "asl-napoli-2-nord/a1d7306b646d.txt",
    "titolo": "ASL Napoli 2 Nord",
-   "sha": "8a3007b80e4b589155548501f4dfc42c126d943104f84a8dac75f9e1edbe2dc0",
-   "caratteri": 7185,
+   "sha": "32e656b736856c3c3a59614e64353f8b558f04d28801c296bc90207b1a4cd6fb",
+   "caratteri": 7191,
    "cambiata": true
   },
   {
@@ -832,8 +836,8 @@
    "certificato": "non valido",
    "file": "asl-napoli-2-nord/aaa502e24a40.txt",
    "titolo": "Azienda – ASL Napoli 2 Nord",
-   "sha": "b9dbadff3b96da052e8ef52d4a6980c67c3141d976bb13f8ef8c6c5dbe97c990",
-   "caratteri": 13851,
+   "sha": "57e97755bb88312c7993b0791a4acdfceab6c58710e1e9c895c5e8d5781ad7b7",
+   "caratteri": 13844,
    "cambiata": true
   },
   {
@@ -844,8 +848,8 @@
    "certificato": "non valido",
    "file": "asl-napoli-2-nord/7623db2690d0.txt",
    "titolo": "Numero verde prenotazioni visite – ASL Napoli 2 Nord",
-   "sha": "8024a473d2a171725a3b31119182c230c933e24b06aa24bc6c954e216226d933",
-   "caratteri": 7815,
+   "sha": "31c0b654393ef76eb79e82c78006778bc92429549f7af6731e69b925b9cacf37",
+   "caratteri": 7812,
    "cambiata": true
   },
   {
@@ -857,8 +861,8 @@
    "certificato": "non valido",
    "file": "asl-napoli-2-nord/a040d4f22b9d.txt",
    "titolo": "ASL Napoli 2 Nord",
-   "sha": "e136e97a19a66df758340888c66f947c9638ff26387d37ca47b3d949261a5095",
-   "caratteri": 7195,
+   "sha": "76982202255e7b8fc47b6df1916a498424432d8afc0cba6b62bbd1f93349e908",
+   "caratteri": 7189,
    "cambiata": true
   },
   {
@@ -869,8 +873,8 @@
    "certificato": "non valido",
    "file": "asl-napoli-2-nord/2f2947c35b17.txt",
    "titolo": "Porta Unica di Accesso (PUA) – ASL Napoli 2 Nord",
-   "sha": "01900cae58f008f2df7949d34b3d2eae8a51696b16cef933069d48e74e474102",
-   "caratteri": 10965,
+   "sha": "c041a362e86613b24f6ac640a69038da7bcca14061e7880f63eb6b9a6f0180c4",
+   "caratteri": 10962,
    "cambiata": true
   },
   {
@@ -881,8 +885,8 @@
    "certificato": "non valido",
    "file": "asl-napoli-2-nord/e0c129d27f7d.txt",
    "titolo": "Continuità assistenziale (ex Guardia Medica) – ASL Napoli 2 Nord",
-   "sha": "0612ad6b87e1512dba30c9ffcfa3ef604b928a27a9dbc83a61fb884bf26bfd4a",
-   "caratteri": 13099,
+   "sha": "34b136981a7c232ca57db903bfe8cb7385b53f7a4667b4562d34ba1edd226fe7",
+   "caratteri": 13095,
    "cambiata": true
   },
   {
@@ -893,8 +897,8 @@
    "certificato": "non valido",
    "file": "asl-napoli-2-nord/a3cc219db89e.txt",
    "titolo": "Prenotazioni – ASL Napoli 2 Nord",
-   "sha": "4db729b790da84bf48a669bdaa5c742ca4f62afc0b5c65f9c881e892171d86f7",
-   "caratteri": 17550,
+   "sha": "6a30b5ec34f48e1652cc438153f8a263d2b15dd72e943d3ea1394d38cfef7dd2",
+   "caratteri": 17542,
    "cambiata": true
   },
   {
@@ -906,8 +910,8 @@
    "certificato": "non valido",
    "file": "asl-napoli-2-nord/ec659e9014d4.txt",
    "titolo": "Continuità assistenziale (ex Guardia Medica) – ASL Napoli 2 Nord",
-   "sha": "277249aad0521599aa2519da8ed56f1445cc358ace16198ca2f086da33db460b",
-   "caratteri": 13099,
+   "sha": "e056f728304a86413d09319ee2d66417f8852afe93f8effb69c431114e20718e",
+   "caratteri": 13098,
    "cambiata": true
   },
   {
@@ -918,8 +922,8 @@
    "certificato": "non valido",
    "file": "asl-napoli-2-nord/d996a1d5a7c9.txt",
    "titolo": "Centro Unico Prenotazioni (CUP) – ASL Napoli 2 Nord",
-   "sha": "5494bfb433deb6fa969d18b7f09005440516fb6a553839a0263f08eff01dcda1",
-   "caratteri": 15991,
+   "sha": "7cf6ae7857566b1d8653e303e5fa6680a66762c3a0498353bea3f935c2ae867d",
+   "caratteri": 15998,
    "cambiata": true
   },
   {
@@ -930,8 +934,8 @@
    "certificato": "non valido",
    "file": "asl-napoli-2-nord/a8448bfc505e.txt",
    "titolo": "U.O.C. URP e Marketing Sanitario – ASL Napoli 2 Nord",
-   "sha": "e81ce451b6f6e9df293d52c3ec5768d91dab2ca0de649399a9c0982bc01c2f53",
-   "caratteri": 5914,
+   "sha": "64c96779cd7192ce126fb084dc2fbd799d815b64f4856ed8e14c6ce2f0f0ded2",
+   "caratteri": 5910,
    "cambiata": true
   },
   {
@@ -941,8 +945,8 @@
    "http": 200,
    "file": "asl-napoli-3-sud/eee0a284370f.txt",
    "titolo": "ASL Napoli 3",
-   "sha": "6c36e17bc4bb2f6678b4244094a95705fc38fb261ae50c91297ffadc44402938",
-   "caratteri": 10773,
+   "sha": "0de954c06f171cf5d3ba1e8522586d803b943cb1fb2e9422519a490b4af1460c",
+   "caratteri": 10393,
    "cambiata": true
   },
   {
@@ -952,8 +956,8 @@
    "http": 200,
    "file": "asl-napoli-3-sud/44c94d7b41dd.txt",
    "titolo": "ASL Napoli 3",
-   "sha": "d3382797697711880ecbe6a47843e078b03e37b1ede63268e7b7318bcf489abf",
-   "caratteri": 2274,
+   "sha": "3af7519d7e995c3603978f5b22b496a3ddbe68539730ee24255c9fa041339ced",
+   "caratteri": 1894,
    "cambiata": true
   },
   {
@@ -963,9 +967,9 @@
    "http": 200,
    "file": "asl-napoli-3-sud/b2a292c77718.txt",
    "titolo": "ASL Napoli 3",
-   "sha": "bbea16c19a0d9305a783b8f3483a35b53f2d6aabad66543785c16a2d624649a3",
-   "caratteri": 5546,
-   "cambiata": false
+   "sha": "2c502e1e11ca9247f407efe2e1a2e69e7c77d3b3a522e9d339f0ea424a1f4a63",
+   "caratteri": 5166,
+   "cambiata": true
   },
   {
    "asl": "asl-napoli-3-sud",
@@ -974,9 +978,9 @@
    "http": 200,
    "file": "asl-napoli-3-sud/13de4950d2f2.txt",
    "titolo": "ASL Napoli 3",
-   "sha": "20dc5b3d983abed6f7e1a7b552fe49d3015e6d75f41346074d42539b2161caa1",
-   "caratteri": 5238,
-   "cambiata": false
+   "sha": "dc5db96c19edb3b6fde94811cc4a05c6f3ec6b92137d0d49ef19069e017c9d73",
+   "caratteri": 4858,
+   "cambiata": true
   },
   {
    "asl": "asl-napoli-3-sud",
@@ -985,9 +989,9 @@
    "http": 200,
    "file": "asl-napoli-3-sud/74ca811175ca.txt",
    "titolo": "ASL Napoli 3",
-   "sha": "822ffaaebcad1975ffa5441c8db7e2144892f289918fce9402d8a10d5f83c8fc",
-   "caratteri": 7914,
-   "cambiata": false
+   "sha": "8cc57fd57dc013c663967ef019e24f4e84e00ed28059874b3b2824a9552be996",
+   "caratteri": 7534,
+   "cambiata": true
   },
   {
    "asl": "asl-napoli-3-sud",
@@ -997,9 +1001,9 @@
    "finale": "https://www.aslnapoli3sud.it/direzione-strategica/relazioni-con-il-pubblico",
    "file": "asl-napoli-3-sud/48a641279760.txt",
    "titolo": "ASL Napoli 3",
-   "sha": "c7671e97c8a102988e8eba55c06e18aa5a95cbe27b04d2e63a55cb5b2cf23c23",
-   "caratteri": 4323,
-   "cambiata": false
+   "sha": "d4afe2416f9e70ea4077123d03dd1abe2cf66fb629838b7f8052c9a541a50352",
+   "caratteri": 3943,
+   "cambiata": true
   },
   {
    "asl": "asl-napoli-3-sud",
@@ -1009,9 +1013,9 @@
    "finale": "https://www.aslnapoli3sud.it/reclami-/-encomi-/-info",
    "file": "asl-napoli-3-sud/b7b7dde954f9.txt",
    "titolo": "ASL Napoli 3",
-   "sha": "3075ca5ea1515060d29ce79b2daa195c03d52b8ab6764157e51136a73d7b7c94",
-   "caratteri": 9346,
-   "cambiata": false
+   "sha": "98638c6997b23c8dbd46a8c274b42e625b79bfb5fb897e5a43cc21f63ee5093f",
+   "caratteri": 8966,
+   "cambiata": true
   },
   {
    "asl": "asl-napoli-3-sud",
@@ -1020,9 +1024,9 @@
    "http": 200,
    "file": "asl-napoli-3-sud/61fa7dd05c0e.txt",
    "titolo": "ASL Napoli 3",
-   "sha": "50f191a5b3f95ab89aae975be621522157db229fcb598e457e5f07d7acc7659e",
-   "caratteri": 107138,
-   "cambiata": false
+   "sha": "c7a4546082bceb31878460da8472831842fc4b16db795fcc469a130d9d981993",
+   "caratteri": 106758,
+   "cambiata": true
   },
   {
    "asl": "asl-napoli-3-sud",
@@ -1031,9 +1035,9 @@
    "http": 200,
    "file": "asl-napoli-3-sud/36a87c389ad1.txt",
    "titolo": "ASL Napoli 3",
-   "sha": "e613ef7e3ae866378c9b7a17e2ec911f3567cd3122fdb7bc1e92f0b8c1343a82",
-   "caratteri": 2862,
-   "cambiata": false
+   "sha": "dfdbd3ab249f94372a73dc55ae2ecbe78068dc416ae328b07bb86388ee1e68dd",
+   "caratteri": 2482,
+   "cambiata": true
   },
   {
    "asl": "asl-salerno",

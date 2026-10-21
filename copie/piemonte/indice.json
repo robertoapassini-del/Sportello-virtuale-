@@ -1,6 +1,6 @@
 {
  "regione": "piemonte",
- "aggiornato": "2026-10-21T20:49:31.071Z",
+ "aggiornato": "2026-10-21T21:33:15.978Z",
  "pagine": [
   {
    "asl": "alessandria",
@@ -110,7 +110,7 @@
    "titolo": "C.U.P. - Asl At",
    "sha": "bc367f057717671444c3e3e77f5a21bd6d7503c047668701ea1acd070f3c47d8",
    "caratteri": 15039,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asti",
@@ -285,7 +285,7 @@
    "certificato": "non valido",
    "file": "novara/42ffdf775f1d.txt",
    "titolo": "Continuità assistenziale (ex Guardia medica) | A.S.L. TO3",
-   "sha": "bacb8981c5df339025362c97e4f6aada7a80761d2380f9c36a92b069cbd43286",
+   "sha": "2bb3caf3fb3a6e8cc667e49d2e27e482893dd561844370378fb3de93366f4b08",
    "caratteri": 3110,
    "cambiata": true
   },
@@ -396,7 +396,7 @@
    "certificato": "non valido",
    "file": "torino/53d58dce5be6.txt",
    "titolo": "U.R.P. | A.S.L. TO3",
-   "sha": "69883f66ebd906dac3d53967af412ef51356bd446b1d2d944d50f28fd5b7a369",
+   "sha": "4533736264848dffd8399a2c61d02da4ef36660da32becf8299209f4bbdd83d2",
    "caratteri": 7182,
    "cambiata": true
   },
@@ -430,7 +430,7 @@
    "certificato": "non valido",
    "file": "torino/42ffdf775f1d.txt",
    "titolo": "Continuità assistenziale (ex Guardia medica) | A.S.L. TO3",
-   "sha": "bacb8981c5df339025362c97e4f6aada7a80761d2380f9c36a92b069cbd43286",
+   "sha": "2bb3caf3fb3a6e8cc667e49d2e27e482893dd561844370378fb3de93366f4b08",
    "caratteri": 3110,
    "cambiata": true
   },
@@ -475,7 +475,7 @@
    "certificato": "non valido",
    "file": "torino/47f0299742b3.txt",
    "titolo": "Assistenza a domicilio | A.S.L. TO3",
-   "sha": "1638aa8b65192c75bc462358adfd5fa4be65e56ac548742a960ce17b0b1648ec",
+   "sha": "5ac647eb815a6f5a8991024aee33747ca876a6938be771571495a8535a1a8eb5",
    "caratteri": 6250,
    "cambiata": true
   },
@@ -505,7 +505,8 @@
    "asl": "verbano-cusio-ossola",
    "url": "https://www.aslvco.it/",
    "controllata": "2026-10-21",
-   "http": 403
+   "http": 403,
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "verbano-cusio-ossola",
@@ -515,7 +516,7 @@
    "certificato": "non valido",
    "file": "verbano-cusio-ossola/42ffdf775f1d.txt",
    "titolo": "Continuità assistenziale (ex Guardia medica) | A.S.L. TO3",
-   "sha": "bacb8981c5df339025362c97e4f6aada7a80761d2380f9c36a92b069cbd43286",
+   "sha": "2bb3caf3fb3a6e8cc667e49d2e27e482893dd561844370378fb3de93366f4b08",
    "caratteri": 3110,
    "cambiata": true
   },
