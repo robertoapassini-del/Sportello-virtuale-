@@ -3,7 +3,7 @@
 // Regole fisse per età e sesso. Non chiediamo la malattia.
 import { prevenzione } from './engine.js';
 import { esc, loadJSON, loadRegional, disclaimer, renderFooter, readForm, callButton, officeBox, aslLabel, regione, regioneNonPronta } from './common.js';
-import { createFlow, choice, restartBtn, progress, needsRegion } from './flow.js';
+import { createFlow, choice, restartBtn, progress, needsRegion, showError } from './flow.js';
 
 const ROOT = '../';
 const app = document.getElementById('app');
@@ -33,7 +33,7 @@ const screens = {
       <h1>🎂 Quanti anni ha?</h1>
       <form id="age-form" novalidate>
         <label for="age">Età, in anni</label>
-        <input type="number" id="age" name="age" min="0" max="120" inputmode="numeric" value="${esc(state.age ?? '')}">
+        <input type="number" id="age" name="age" min="0" max="120" inputmode="numeric" value="${esc(state.age ?? '')}" aria-describedby="age-form-error">
         <p class="field-error" id="age-form-error" role="alert" hidden></p>
         <button type="submit" class="btn primary big">Avanti ▶️</button>
       </form>`,
@@ -41,12 +41,7 @@ const screens = {
       document.getElementById('age-form').addEventListener('submit', (e) => {
         e.preventDefault();
         const n = Number(readForm(e.target).age);
-        if (!Number.isInteger(n) || n < 0 || n > 120) {
-          const err = document.getElementById('age-form-error');
-          err.textContent = 'Scrivi l\'età in anni, per esempio 67.';
-          err.hidden = false;
-          return;
-        }
+        if (!Number.isInteger(n) || n < 0 || n > 120) return showError('age-form', 'Scrivi l\'età in anni, per esempio 67.', { field: 'age' });
         state.age = n;
         // Screening e vaccini per età valgono in tutta Italia: se la regione scelta non ha i dati
         // di questo modulo si va dritti al risultato, senza perdere le risposte.

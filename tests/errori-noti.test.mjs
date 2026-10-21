@@ -72,6 +72,8 @@ const ERRORI = [
   [/"title": "(Non mi danno|Ho diritto|[^"]*l'ho persa|[^"]*posso fare)/, "titoli in data/moduli.json come l'h1 della pagina: si dà del tu («Non ti danno», «l'hai persa»)"],
   // Audit dei mutanti del 21/10/2026: regole regionali scritte per tutti, regole nazionali scritte come siciliane.
   [/20 giorni dalla consegna/, 'ausili: il collaudo entro 20 giorni è una regola della Sicilia: «In Sicilia entro 20 giorni dalla consegna»', /Sicili|"notes_internal"/],
+  // Audit tastiera e lettori di schermo del 22/10/2026 (giro 6).
+  [/<a [^>]*>\s*(qui|leggi qui|clicca qui|fonte)\s*<\/a>/i, 'link con un nome che da solo non dice dove porta («leggi qui», «Fonte»): chi usa un lettore di schermo sente solo l\'elenco dei link. Scrivi dove porta («come vedere il Fascicolo di un figlio», «Fonte: …»)'],
   [/\bin Sicilia\b[^.\n]{0,80}180 giorni|180 giorni[^.\n]{0,80}\bin Sicilia\b/, 'ricetta per visite ed esami: i 180 giorni sono una regola nazionale (ricette dal 30/12/2024), non solo siciliana', /regola nazionale/],
 ];
 

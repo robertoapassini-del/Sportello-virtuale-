@@ -5,7 +5,7 @@
 // Non chiediamo la malattia: le esenzioni per malattia le mostriamo solo come informazione.
 import { esenzioneReddito, formatEuro } from './engine.js';
 import { esc, loadJSON, loadRegioni, disclaimer, renderFooter, readForm, aslLabel } from './common.js';
-import { createFlow, choice, restartBtn, progress } from './flow.js';
+import { createFlow, choice, restartBtn, progress, showError } from './flow.js';
 
 const ROOT = '../';
 const app = document.getElementById('app');
@@ -86,7 +86,7 @@ const screens = {
       <p>Il reddito di tutti insieme, lordo. È sulla dichiarazione dei redditi (730, Redditi) o sulla CU della pensione.</p>
       <form id="inc-form" novalidate>
         <label for="income">Reddito familiare dell'anno scorso, in euro<span class="hint">Per esempio 15000. Senza punti né virgole</span></label>
-        <input type="number" id="income" name="income" min="0" step="1" inputmode="numeric" value="${esc(state.income ?? '')}">
+        <input type="number" id="income" name="income" min="0" step="1" inputmode="numeric" value="${esc(state.income ?? '')}" aria-describedby="inc-form-error">
         <p class="field-error" id="inc-form-error" role="alert" hidden></p>
         <button type="submit" class="btn primary big">✔️ Controlla</button>
       </form>
@@ -96,12 +96,7 @@ const screens = {
         e.preventDefault();
         const v = readForm(e.target);
         const n = Number(v.income);
-        if (v.income === '' || !Number.isFinite(n) || n < 0) {
-          const err = document.getElementById('inc-form-error');
-          err.textContent = 'Scrivi un numero, oppure premi «Non lo so».';
-          err.hidden = false;
-          return;
-        }
+        if (v.income === '' || !Number.isFinite(n) || n < 0) return showError('inc-form', 'Scrivi un numero, oppure premi «Non lo so».', { field: 'income' });
         state.income = n;
         flow.go('result');
       });

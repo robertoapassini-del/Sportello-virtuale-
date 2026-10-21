@@ -218,9 +218,19 @@ export function regionAction(btn, nav, name = 'province') {
 
 // person (facoltativo): i dati per le lettere, cancellati anche loro con «Ricomincia».
 // next: vedi withRegion.
+// Dopo un cambio di schermata: in cima, con il focus sul titolo (chi usa un lettore di schermo sente il titolo nuovo).
+// Non alla prima schermata: lì il primo Tab deve portare a «Vai al contenuto» e un indirizzo con #guida deve
+// restare sulla guida (audit del 22/10/2026, giro 6).
+export function moveToTop(app) {
+  window.scrollTo(0, 0);
+  const h1 = app.querySelector('h1');
+  if (h1) { h1.setAttribute('tabindex', '-1'); h1.focus({ preventScroll: true }); }
+}
+
 export function createFlow({ app, screens, state, sources, first = 'intro', person, next }) {
   const nav = createNav({ first, show: (current) => paint(current) });
   const regionLink = withRegion(screens, 'province', next);
+  let dipinto = false;
 
   function paint(current) {
     const s = screens[current]();
@@ -229,9 +239,8 @@ export function createFlow({ app, screens, state, sources, first = 'intro', pers
     enableStart(app);
     hideHeadingEmoji(app);
     if (s.mount) s.mount();
-    window.scrollTo(0, 0);
-    const h1 = app.querySelector('h1');
-    if (h1) { h1.setAttribute('tabindex', '-1'); h1.focus({ preventScroll: true }); }
+    if (dipinto) moveToTop(app);
+    dipinto = true;
   }
   const render = nav.render;
   const go = nav.go;
@@ -267,16 +276,36 @@ export function progress(n, total) {
 export function dateForm({ id, name, label, hint, value, button, max }) {
   return `<form id="${id}" novalidate>
     <label for="${name}">${label}${hint ? `<span class="hint">${hint}</span>` : ''}</label>
-    <input type="date" id="${name}" name="${name}" value="${esc(value || '')}" ${max ? `max="${max}"` : ''}>
+    <input type="date" id="${name}" name="${name}" value="${esc(value || '')}" ${max ? `max="${max}"` : ''} aria-describedby="${id}-error">
     <p class="field-error" id="${id}-error" role="alert" hidden></p>
     <button type="submit" class="btn primary big">${button}</button>
   </form>`;
 }
 
-export function showError(formId, text) {
+// Errore in un modulo: il messaggio è in <p id="<form>-error" role="alert">, collegato ai campi con
+// aria-describedby. Il campo da correggere viene segnato (aria-invalid) e riceve il focus.
+// field: il nome del campo sbagliato; se manca, il primo campo vuoto (o il primo campo).
+// focus: false quando il controllo parte mentre la persona scrive (non le si sposta il cursore).
+export function showError(formId, text, { field, focus = true } = {}) {
+  const form = document.getElementById(formId);
   const err = document.getElementById(`${formId}-error`);
   err.textContent = text;
   err.hidden = false;
+  const campi = [...form.querySelectorAll('input:not([type=checkbox]):not([type=radio]):not([type=hidden]), select, textarea')];
+  for (const c of campi) c.removeAttribute('aria-invalid');
+  const campo = campi.find((c) => c.name === field) || campi.find((c) => !c.value) || campi[0];
+  if (!campo) return;
+  campo.setAttribute('aria-invalid', 'true');
+  campo.addEventListener('change', () => campo.removeAttribute('aria-invalid'), { once: true });
+  if (focus) campo.focus();
+}
+
+// Toglie il messaggio d'errore e i segni sui campi.
+export function clearError(formId) {
+  const err = document.getElementById(`${formId}-error`);
+  err.textContent = '';
+  err.hidden = true;
+  for (const c of document.getElementById(formId).querySelectorAll('[aria-invalid]')) c.removeAttribute('aria-invalid');
 }
 
 // Pulsanti Stampa / Copia / Email sotto una lettera.

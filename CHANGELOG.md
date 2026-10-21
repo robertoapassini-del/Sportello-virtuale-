@@ -2,6 +2,13 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 22/10/2026 — Audit notturno, giro 6: tastiera e screen reader
+- Errori dei campi (tutti i moduli con una data, un'età, un ISEE o un reddito): il messaggio si leggeva, ma nessun campo era segnato e il focus restava sul pulsante. Ora ogni errore passa da `showError()` (`js/flow.js`): il campo da correggere ha `aria-invalid="true"` e il focus, e tutti i campi hanno `aria-describedby="<modulo>-error"`. Nuova `clearError()` per il sollecito delle liste d'attesa (controllo mentre si scrive, senza spostare il cursore). Gli id degli errori di liste d'attesa e invalidità ora finiscono tutti con `-form-error`.
+- Moduli: alla prima apertura la pagina metteva il focus sul titolo e tornava in cima, così il primo Tab saltava «Vai al contenuto» e `/liste-attesa/#guida` non arrivava alla guida. Ora questo succede solo quando cambia la schermata (`moveToTop()` in `js/flow.js`, anche in `js/liste-attesa.js` e `js/invalidita.js`).
+- `css/style.css`: i riquadri apribili («Ti serve aiuto?», «Da dove vengono queste informazioni») hanno lo stesso contorno di 3 px degli altri elementi quando li raggiungi con Tab (`summary:focus-visible`).
+- Nomi dei link: «leggi qui» nella pagina del Fascicolo (cartella clinica) ora dice «come vedere il Fascicolo di un figlio»; nelle liste d'attesa i link «Fonte» ora dicono il nome della fonte («Fonte: ASP Palermo – …»).
+- Nuovi controlli in `tests/browser.cjs`: il primo Tab porta a «Vai al contenuto»; ogni elemento raggiunto con Tab ha un contorno di almeno 2 px; dopo un invio vuoto l'errore è collegato al campo, il campo ha `aria-invalid` e il focus. I percorsi nei moduli ora si provano anche come utente della Sicilia. In `tests/errori-noti.test.mjs`: link chiamati «qui», «leggi qui», «clicca qui» o «Fonte».
+
 ## 21/10/2026 — Audit notturno, giro 5: test più severi
 - Audit dei mutanti: 30 errori messi apposta nel sito, `npm test` ne prendeva 4. Nuovi controlli per quelli che si riconoscono senza browser:
 - Nuovo `tests/link.test.mjs`: ogni link interno delle pagine della sitemap e della 404 porta a un file che esiste.

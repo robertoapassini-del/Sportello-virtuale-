@@ -4,7 +4,7 @@
 // all'INPS (o gratis con un patronato o un CAF).
 import { adiCheck, formatEuro } from './engine.js';
 import { esc, loadJSON, disclaimer, renderFooter, readForm } from './common.js';
-import { createFlow, choice, restartBtn, progress } from './flow.js';
+import { createFlow, choice, restartBtn, progress, showError } from './flow.js';
 
 const ROOT = '../';
 const app = document.getElementById('app');
@@ -64,7 +64,7 @@ const screens = {
       <p>È il numero scritto sull'attestazione ISEE di quest'anno. Lo fa il CAF, gratis.</p>
       <form id="isee-form" novalidate>
         <label for="isee">ISEE, in euro<span class="hint">Per esempio 8000. Senza punti né virgole</span></label>
-        <input type="number" id="isee" name="isee" min="0" step="1" inputmode="numeric" value="${esc(state.isee ?? '')}">
+        <input type="number" id="isee" name="isee" min="0" step="1" inputmode="numeric" value="${esc(state.isee ?? '')}" aria-describedby="isee-form-error">
         <p class="field-error" id="isee-form-error" role="alert" hidden></p>
         <button type="submit" class="btn primary big">✔️ Controlla</button>
       </form>
@@ -74,12 +74,7 @@ const screens = {
         e.preventDefault();
         const v = readForm(e.target);
         const n = Number(v.isee);
-        if (v.isee === '' || !Number.isFinite(n) || n < 0) {
-          const err = document.getElementById('isee-form-error');
-          err.textContent = 'Scrivi un numero, oppure premi «Non lo so».';
-          err.hidden = false;
-          return;
-        }
+        if (v.isee === '' || !Number.isFinite(n) || n < 0) return showError('isee-form', 'Scrivi un numero, oppure premi «Non lo so».', { field: 'isee' });
         state.isee = n;
         flow.go('result');
       });

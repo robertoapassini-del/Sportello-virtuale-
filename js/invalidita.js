@@ -9,7 +9,7 @@ import { noPecBox,
   esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton,
   personFields, reportErrorHref, choice, helpBox, sourcesBox, moreHelp, hideHeadingEmoji, enableStart, aslLabel, syncDelegate, delegateNoteText,
 } from './common.js';
-import { createNav, withRegion, regionAction } from './flow.js';
+import { createNav, withRegion, regionAction, moveToTop, showError } from './flow.js';
 
 const ROOT = '../';
 const app = document.getElementById('app');
@@ -27,6 +27,7 @@ const back = nav.back;
 const render = nav.render;
 const restart = () => nav.restart(() => { for (const o of [state, person]) for (const k of Object.keys(o)) delete o[k]; });
 
+let dipinto = false;
 function paint(current) {
   const s = screens[current]();
   const backBtn = current === 'intro' ? '' : '<div class="topbar"><button type="button" class="back" data-action="back">← Torna indietro</button></div>';
@@ -34,9 +35,8 @@ function paint(current) {
   enableStart(app);
   hideHeadingEmoji(app);
   if (s.mount) s.mount();
-  window.scrollTo(0, 0);
-  const h1 = app.querySelector('h1');
-  if (h1) { h1.setAttribute('tabindex', '-1'); h1.focus({ preventScroll: true }); }
+  if (dipinto) moveToTop(app);
+  dipinto = true;
 }
 
 app.addEventListener('click', (e) => {
@@ -133,17 +133,16 @@ const screens = {
       <p>È scritto sulla ricevuta che ti ha dato il medico.</p>
       <form id="cert-form" novalidate>
         <label for="certDate">Giorno del certificato</label>
-        <input type="date" id="certDate" name="certDate" value="${esc(state.certDate || '')}" max="${todayISO()}">
-        <p class="field-error" id="cert-error" role="alert" hidden></p>
+        <input type="date" id="certDate" name="certDate" value="${esc(state.certDate || '')}" max="${todayISO()}" aria-describedby="cert-form-error">
+        <p class="field-error" id="cert-form-error" role="alert" hidden></p>
         <button type="submit" class="btn primary big">Avanti ▶️</button>
       </form>`,
     mount() {
       document.getElementById('cert-form').addEventListener('submit', (e) => {
         e.preventDefault();
         const v = readForm(e.target);
-        const err = document.getElementById('cert-error');
-        if (parseDate(v.certDate) === null) { err.textContent = 'Scrivi il giorno.'; err.hidden = false; return; }
-        if (daysBetween(v.certDate, todayISO()) < 0) { err.textContent = 'Questo giorno non è ancora arrivato. Controlla la data.'; err.hidden = false; return; }
+        if (parseDate(v.certDate) === null) return showError('cert-form', 'Scrivi il giorno.');
+        if (daysBetween(v.certDate, todayISO()) < 0) return showError('cert-form', 'Questo giorno non è ancora arrivato. Controlla la data.');
         state.certDate = v.certDate;
         go('category');
       });
@@ -178,8 +177,8 @@ const screens = {
         <p>Anche se l'ha fatta il patronato per te.</p>
         <form id="dom-form" novalidate>
           <label for="domandaDate">Se sì, che giorno?<span class="hint">È scritto sulla ricevuta della domanda</span></label>
-          <input type="date" id="domandaDate" name="domandaDate" value="${esc(state.domandaDate || '')}" max="${todayISO()}">
-          <p class="field-error" id="dom-error" role="alert" hidden></p>
+          <input type="date" id="domandaDate" name="domandaDate" value="${esc(state.domandaDate || '')}" max="${todayISO()}" aria-describedby="dom-form-error">
+          <p class="field-error" id="dom-form-error" role="alert" hidden></p>
           <button type="submit" class="btn primary">✅ Sì, l'ho fatta</button>
         </form>
         <button type="button" class="btn" id="no-dom">❌ No, non ancora</button>`,
@@ -187,10 +186,9 @@ const screens = {
         document.getElementById('dom-form').addEventListener('submit', (e) => {
           e.preventDefault();
           const v = readForm(e.target);
-          const err = document.getElementById('dom-error');
-          if (parseDate(v.domandaDate) === null) { err.textContent = 'Scrivi il giorno della domanda.'; err.hidden = false; return; }
-          if (daysBetween(v.domandaDate, todayISO()) < 0) { err.textContent = 'Questo giorno non è ancora arrivato. Controlla la data.'; err.hidden = false; return; }
-          if (daysBetween(state.certDate, v.domandaDate) < 0) { err.textContent = 'La domanda non può essere prima del certificato. Controlla le date.'; err.hidden = false; return; }
+          if (parseDate(v.domandaDate) === null) return showError('dom-form', 'Scrivi il giorno della domanda.');
+          if (daysBetween(v.domandaDate, todayISO()) < 0) return showError('dom-form', 'Questo giorno non è ancora arrivato. Controlla la data.');
+          if (daysBetween(state.certDate, v.domandaDate) < 0) return showError('dom-form', 'La domanda non può essere prima del certificato. Controlla le date.');
           state.domandaDate = v.domandaDate;
           go('convocation');
         });
