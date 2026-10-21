@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — Puglia: i numeri utili delle 6 province
+- 49 numeri delle ASL (CUP, URP, screening, cure a casa), controllati nelle copie delle pagine ufficiali del 21/10/2026.
+- Guardia medica: i numeri locali di Lecce, Taranto e BT, perché il 116117 è autorizzato ma non ancora attivo.
+- Sedi INPS delle 6 province.
+
 ## 21/10/2026 — Emilia-Romagna: i numeri utili delle 9 province
 - 75 numeri delle AUSL (Bologna e Imola insieme nella provincia di Bologna, la Romagna per ambito), controllati nelle copie delle pagine ufficiali del 21/10/2026.
 - Guardia medica: i numeri delle aziende, perché il 116117 non è ancora attivo; CUP telefonico di ogni AUSL; numero verde regionale 800 033033 per le informazioni.
