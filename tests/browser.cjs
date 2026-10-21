@@ -5,6 +5,7 @@
 // - errori JavaScript;
 // - «undefined», «NaN» o «[object Object]» nel testo;
 // - una pagina più larga dello schermo;
+// - pulsanti e link più bassi di 44 px, o pagine troppo larghe con il testo al 250% (accessibilità);
 // - per chi non è siciliano, una frase su uffici o servizi siciliani (ASP, SovraCUP, Palermo…) che non dice
 //   «Sicilia» (stessa regola di tests/nazionale.test.mjs, ma sul testo creato dal JavaScript).
 // Lo lancia la CI a ogni modifica (.github/workflows/test.yml).
@@ -50,6 +51,17 @@ async function controlla(page, dove, regione, problemi) {
   if (regione !== 'sicilia' && !dove.includes('/fonti.html')) for (const f of await page.evaluate(fraseSiciliane)) problemi.push(`${dove}: frase siciliana senza «Sicilia»: «${f}»`);
 }
 
+// Accessibilità (audit del 21/10/2026): pulsanti e link da toccare alti almeno 44 px; con il testo
+// al 250% (persone che ingrandiscono i caratteri) la pagina non deve diventare più larga dello schermo.
+async function accessibile(page, dove, problemi) {
+  const bassi = await page.evaluate(() => [...document.querySelectorAll('a.breadcrumb-back, .site-footer nav a, #app button.link, #app .btn, #app button.choice')]
+    .filter((e) => e.offsetParent && e.getBoundingClientRect().height < 43.5)
+    .map((e) => `${e.innerText.trim().slice(0, 30)} (${Math.round(e.getBoundingClientRect().height)} px)`));
+  for (const b of bassi) problemi.push(`${dove}: da toccare ma basso: ${b}`);
+  await page.addStyleTag({ content: 'html { font-size: 250% !important; }' });
+  if (await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1)) problemi.push(`${dove}: con il testo al 250% è più larga dello schermo`);
+}
+
 (async () => {
   const { chromium } = loadPlaywright();
   const browser = await chromium.launch();
@@ -72,6 +84,7 @@ async function controlla(page, dove, regione, problemi) {
       errori(page, () => dove);
       await page.goto(u, { waitUntil: 'networkidle' });
       await controlla(page, dove, regione, problemi);
+      if (!regione) await accessibile(page, dove, problemi);
       await page.close();
     }
     await ctx.close();

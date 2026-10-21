@@ -314,6 +314,15 @@ export async function copyText(text, button) {
     const old = button.innerHTML;
     button.textContent = 'Copiato ✓';
     setTimeout(() => { button.innerHTML = old; }, 2000);
+    // Il nuovo testo del pulsante gli screen reader non lo leggono: lo si dice in una zona «status».
+    let st = document.getElementById('gs-status');
+    if (!st) {
+      st = Object.assign(document.createElement('p'), { id: 'gs-status', className: 'sr-only' });
+      st.setAttribute('role', 'status');
+      document.body.append(st);
+    }
+    st.textContent = '';
+    setTimeout(() => { st.textContent = 'Testo copiato. Ora puoi incollarlo nella email o nel messaggio.'; }, 50);
   }
 }
 

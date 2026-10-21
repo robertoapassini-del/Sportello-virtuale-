@@ -125,7 +125,7 @@ p { margin: 0 0 12px; }
 @media (min-width: 480px) { .regioni-off { grid-template-columns: 1fr 1fr; } }
 .regioni-off small { font-size: 0.85rem; }
 .cambia-regione { font-size: 0.9rem; margin: 8px 0; }
-button.link { background: none; border: none; color: var(--link); font: inherit; padding: 4px 0; cursor: pointer; text-decoration: underline; }
+button.link { background: none; border: none; color: var(--link); font: inherit; padding: 10px 0; min-height: 44px; cursor: pointer; text-decoration: underline; }
 
 .progress { font-size: 0.85rem; color: var(--muted); margin-bottom: 4px; }
 
@@ -188,7 +188,7 @@ table.fields th { width: 40%; }
 /* Footer */
 .site-footer { border-top: 1px solid var(--border); background: #f1efe9; font-size: 0.85rem; color: var(--muted); padding: 20px 0 32px; }
 .site-footer p { margin: 0 0 10px; }
-.site-footer nav a { margin-right: 14px; display: inline-block; margin-bottom: 6px; }
+.site-footer nav a { margin-right: 14px; display: inline-flex; align-items: center; min-height: 44px; }
 
 .skip-link { position: absolute; left: 8px; top: -100px; z-index: 100; background: #ffeb3b; color: #212b32; padding: 10px 16px; font-weight: 700; border-radius: 4px; }
 .skip-link:focus { top: 8px; outline: 3px solid #212b32; }
@@ -272,7 +272,7 @@ details.help { margin: 28px 0 8px; padding: 12px 16px; border-radius: var(--radi
 details.help .ico { font-size: 1.5rem; }
 p.notice { margin: 12px 0; }
 .back { white-space: nowrap; }
-main { overflow-wrap: anywhere; }
+main, .guida, .share-bar { overflow-wrap: anywhere; }
 details.fonti { margin: 12px 0 8px; padding: 10px 16px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border); font-size: 0.9rem; }
 details.fonti ul { margin: 8px 0; }
 details.fonti li { margin: 8px 0; }
@@ -412,7 +412,7 @@ table.fields th, table.fields td { border-bottom-color: var(--border); }
 .breadcrumb .wrap { padding-top: 10px; padding-bottom: 10px; }
 .breadcrumb ol { display: none; list-style: none; margin: 0; padding: 0; flex-wrap: wrap; }
 .breadcrumb li + li::before { content: "›"; margin: 0 10px; color: var(--muted); }
-.breadcrumb-back { display: inline-block; font-weight: 700; padding: 4px 0; }
+.breadcrumb-back { display: inline-flex; align-items: center; min-height: 44px; font-weight: 700; }
 @media (min-width: 640px) { .breadcrumb ol { display: flex; } .breadcrumb-back { display: none; } }
 
 /* ---- Pagine delle aree (visite-esami/, aiuto-a-casa/, …) ---- */

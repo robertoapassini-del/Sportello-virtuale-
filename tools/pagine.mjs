@@ -132,11 +132,11 @@ function shareBar(html, url) {
   const text = `${title.replace(/&#39;/g, "'").replace(/&amp;/g, '&').replace(/&quot;/g, '"')}\n${url}`;
   const guide = /id="guida"/.test(html);
   return `<!-- condividi: creato da tools/pagine.mjs -->
-<div class="wrap share-bar">
+<aside class="wrap share-bar" aria-label="Condividi o stampa">
 <a class="btn share-wa" href="https://wa.me/?text=${encodeURIComponent(text)}" target="_blank" rel="noopener">${WA_ICON} Condividi su WhatsApp</a>
 <button type="button" class="btn share-print js-inline" data-action="print-page"${guide ? ' data-print="guida"' : ''}>🖨️ ${guide ? 'Stampa la guida' : 'Stampa questa pagina'}</button>
 <p class="print-url">Guida Sanità, gratis e fatta da volontari: ${url}</p>
-</div>
+</aside>
 <!-- /condividi -->
 `;
 }
