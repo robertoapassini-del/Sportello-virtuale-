@@ -51,9 +51,10 @@ const LEGGI = [
 // «art. 4, comma 2», «art. 33 c. 3», «artt. 24, 25 e 26», «articolo 18», «art. 8-bis».
 const ART = /\b(?:artt?\.|articol[oi])\s*(\d+(?:-?(?:bis|ter|quater))?(?:\s*(?:,|e|-)\s*\d+(?:-?(?:bis|ter))?)*)(?:\s*,?\s*(?:commi|comma|c\.)\s*(\d+(?:-?(?:bis|ter|quater))?(?:\s*(?:,|e|-)\s*\d+)*))?/gi;
 
+// Fine di un elemento di elenco o di un paragrafo = fine della frase: la legge della voce dopo non si attacca all'articolo di quella prima.
 const testo = (f, s) => (f.endsWith('.html')
   ? s.replace(/<head>[\s\S]*?<\/head>/, (h) => h.match(/<title>[\s\S]*?<\/title>|content="[^"]*"/g)?.join(' ') ?? '')
-    .replace(/<script[\s\S]*?<\/script>/g, ' ').replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/&#39;/g, "'")
+    .replace(/<script[\s\S]*?<\/script>/g, ' ').replace(/<\/(li|p|h[1-6]|td|th|dd|dt)>/g, '. ').replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/&#39;/g, "'")
   : s).replace(/\s+/g, ' ');
 
 function leggi(t) {

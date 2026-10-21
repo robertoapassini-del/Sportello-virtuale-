@@ -470,12 +470,12 @@ export function personFields(p = {}, legend = 'I dati della persona') {
         <legend>Chi sei per questa persona?</legend>
         <label class="check"><input type="radio" name="delegateRole" value="delegato" ${role === 'delegato' ? 'checked' : ''}> Un familiare o un amico, con la sua delega</label>
         <label class="check"><input type="radio" name="delegateRole" value="genitore" ${role === 'genitore' ? 'checked' : ''}> Il genitore di un bambino o di un ragazzo (meno di 18 anni)</label>
-        <label class="check"><input type="radio" name="delegateRole" value="tutore" ${role === 'tutore' ? 'checked' : ''}> Il tutore, l'amministratore di sostegno o il curatore, nominato dal giudice</label>
+        <label class="check"><input type="radio" name="delegateRole" value="tutore" ${role === 'tutore' ? 'checked' : ''}> Il tutore o l'amministratore di sostegno, nominato dal giudice</label>
       </fieldset>
       <div class="role-tutore" ${role === 'tutore' ? '' : 'hidden'}>
         <label for="f-guardianKind">Che cosa sei</label>
         <select id="f-guardianKind" name="guardianKind">
-          ${[['amministratore', 'Amministratore di sostegno'], ['tutore', 'Tutore'], ['curatore', 'Curatore']]
+          ${[['amministratore', 'Amministratore di sostegno'], ['tutore', 'Tutore']]
             .map(([v, l]) => `<option value="${v}" ${(p.guardianKind || 'amministratore') === v ? 'selected' : ''}>${l}</option>`).join('')}
         </select>
         ${f('decreeRef', 'Il decreto di nomina', 'text', 'Tribunale, numero e data. Se non li sai, lascia vuoto')}

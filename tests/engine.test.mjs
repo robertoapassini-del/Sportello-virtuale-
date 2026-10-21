@@ -250,8 +250,8 @@ test('chi scrive per un altro: delegato, genitore di un minore, tutore o amminis
   assert.match(g, /Anna Bianchi[^\n]*\n?[^\n]*genitore esercente la responsabilità genitoriale/);
   assert.match(g, /per il\/la figlio\/a minore/);
   assert.match(g, /artt\. 316 e 320 c\.c\./);
-  // Tutore, amministratore di sostegno, curatore: decreto di nomina, niente delega
-  for (const [kind, name] of [['tutore', 'tutore'], ['amministratore', 'amministratore di sostegno'], ['curatore', 'curatore'], [undefined, 'amministratore di sostegno']]) {
+  // Tutore, amministratore di sostegno: decreto di nomina, niente delega
+  for (const [kind, name] of [['tutore', 'tutore'], ['amministratore', 'amministratore di sostegno'], [undefined, 'amministratore di sostegno']]) {
     const p = { ...base, delegateRole: 'tutore', guardianKind: kind, decreeRef: 'del Tribunale di Palermo n. 12/2025' };
     const t = genericRequest({ to: 'Distretto', person: p, subject: 'Richiesta', premise: ['x'], request: 'y', attachments: ['copia del documento di identità'], today: '2026-10-18' });
     assert.match(t, new RegExp(`in qualità di ${name} dell'assistito/a`));

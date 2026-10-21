@@ -15,8 +15,8 @@ const trova = (s) => { const m = String(s).match(SEGNAPOSTO); return m && `«${m
 
 const oggi = '2026-10-21';
 const vuota = { fullName: '', birthPlace: '', birthDate: '', cf: '', address: '', phone: '', email: '', city: '' };
-// Le persone: tutto vuoto; nessun campo; delegato senza i suoi dati.
-const persone = [vuota, {}, { ...vuota, isDelegate: true }];
+// Le persone: tutto vuoto; nessun campo; chi scrive per un altro (delegato, genitore, tutore) senza i suoi dati.
+const persone = [vuota, {}, { ...vuota, isDelegate: true }, { ...vuota, isDelegate: true, delegateRole: 'genitore' }, { ...vuota, isDelegate: true, delegateRole: 'tutore', guardianKind: 'amministratore', decreeRef: '' }];
 // I campi che vengono dai dati o dal percorso (nome dell'azienda, classe, termini) ci sono sempre; quelli
 // che scrive l'utente (nome, ricetta, protocollo, prestazione, date facoltative) sono vuoti.
 const casi = {
@@ -37,7 +37,8 @@ const casi = {
 };
 
 test('ogni lettera di js/letters.js è provata qui', () => {
-  const lettere = Object.keys(L).filter((k) => k !== 'mailtoHref');
+  // Non sono lettere: il link mailto e le parti su chi scrive per un altro (provate con ogni lettera qui sotto).
+  const lettere = Object.keys(L).filter((k) => !['mailtoHref', 'delegateRole', 'delegateAttachment'].includes(k));
   assert.deepEqual(lettere.filter((k) => !casi[k]), [], 'lettera nuova: aggiungi i suoi casi in tests/lettere.test.mjs');
 });
 

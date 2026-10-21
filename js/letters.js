@@ -12,9 +12,10 @@ function personBlock(p) {
 // Chi scrive per un'altra persona. Tre casi, con firma e allegati diversi:
 // - delegato: la persona firma una delega;
 // - genitore di un minore: firma come genitore (artt. 316 e 320 c.c.), nessuna delega;
-// - tutore, amministratore di sostegno o curatore: firma in quel ruolo e allega il decreto di nomina
+// - tutore o amministratore di sostegno: firma in quel ruolo e allega il decreto di nomina.
+//   Il curatore assiste la persona ma non firma per lei (codice civile): non c'è tra le scelte
 //   (art. 357 c.c. per il tutore; artt. 404-405 c.c., L. 6/2004, per l'amministratore di sostegno).
-const GUARDIANS = { tutore: 'tutore', amministratore: 'amministratore di sostegno', curatore: 'curatore' };
+const GUARDIANS = { tutore: 'tutore', amministratore: 'amministratore di sostegno' };
 export function delegateRole(p = {}) {
   if (!p.isDelegate) return null;
   if (p.delegateRole === 'genitore') return 'genitore';
