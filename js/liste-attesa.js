@@ -7,7 +7,7 @@ import { checkWaiting, callbackDeadline, maxWaitDays, todayISO, formatIt, parseD
 import { tutelaLetter, tutelaReminder, mailtoHref } from './letters.js';
 import { noPecBox,
   esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton, aspCalls,
-  personFields, reportErrorHref, generalContact, choice, helpBox, sourcesBox, moreHelp, hideHeadingEmoji, enableStart, aslLabel, aslIntestazione, regione, regioneInfo, regioneLink,
+  personFields, reportErrorHref, generalContactInfo, choice, helpBox, sourcesBox, moreHelp, hideHeadingEmoji, enableStart, aslLabel, aslIntestazione, regione, regioneInfo, regioneLink,
 } from './common.js';
 import { RICETTA_SVG } from './ricetta-svg.js';
 import { createNav, withRegion, regionAction } from './flow.js';
@@ -92,7 +92,7 @@ const warnings = () => `
   <div class="card">
     <h2 style="margin-top:0">❗ Importante</h2>
     <ul class="icon-list">
-      <li><span class="ico" aria-hidden="true">💶</span> Non andare dal privato a pagamento prima di mandare la richiesta. Potresti non avere i soldi indietro.</li>
+      <li><span class="ico" aria-hidden="true">💶</span> Vai dal privato a pagamento solo se l'${aslLabel()} te lo scrive: altrimenti potresti non avere i soldi indietro.</li>
       <li><span class="ico" aria-hidden="true">🧾</span> Conserva il foglio della prenotazione.</li>
       <li><span class="ico" aria-hidden="true">📅</span> Non perdere l'appuntamento che hai già. Se non ci vai, disdicilo: altrimenti potresti pagare il ticket.</li>
     </ul>
@@ -263,6 +263,7 @@ const screens = {
       <h1>Così la legge non ti aiuta</h1>
       <p>Se non prendi la prima data offerta, perdi questo diritto.</p>
       <p><strong>Cosa puoi fare:</strong> prenota di nuovo e prendi la prima data. Se è ancora troppo lontana, torna qui.</p>
+      <p>Tieni l'appuntamento che hai finché non ne hai uno nuovo; poi disdici quello vecchio, altrimenti potresti pagare il ticket.</p>
       ${restartBtn()}`,
   }),
 
@@ -413,6 +414,8 @@ const screens = {
             <input id="f-service" name="service" type="text" value="${esc(state.service || '')}">
             <label for="f-nre">Numero della ricetta<span class="hint">${regione() === 'sicilia' ? 'Il codice lungo in alto, che inizia con 190…' : 'Il codice lungo in alto (NRE)'}</span></label>
             <input id="f-nre" name="nre" type="text" value="${esc(state.nre || '')}" autocapitalize="characters">
+            <label for="f-prescriptionDate">Data della ricetta<span class="hint">Se la trovi sulla ricetta</span></label>
+            <input id="f-prescriptionDate" name="prescriptionDate" type="date" value="${esc(state.prescriptionDate || '')}" max="${todayISO()}">
           </fieldset>
         </form>
         <h2>${official ? '📝 Cosa scrivere nel modulo' : '📄 Ecco la tua lettera'}</h2>
@@ -439,7 +442,8 @@ const screens = {
         const update = () => {
           const v = readForm(form);
           state.service = v.service; state.nre = v.nre;
-          delete v.service; delete v.nre;
+          state.prescriptionDate = parseDate(v.prescriptionDate) !== null && daysBetween(v.prescriptionDate, todayISO()) >= 0 ? v.prescriptionDate : '';
+          delete v.service; delete v.nre; delete v.prescriptionDate;
           Object.assign(person, v);
           form.querySelector('.delegate-fields').hidden = !person.isDelegate;
           document.querySelectorAll('.delegate-note').forEach((li) => { li.hidden = !person.isDelegate; });
@@ -458,11 +462,15 @@ const screens = {
     const a = asp();
     const today = todayISO();
     if (!state.firstRequestDate) state.firstRequestDate = today;
+    // Con la classe U non si aspetta il sollecito; con la B si sollecita prima che finisca il tempo della classe.
+    const urgent = state.cls === 'U';
+    const remindAfter = state.cls === 'B' ? Math.min(rules.reminder_after_days, rules.max_wait_days.B) : rules.reminder_after_days;
     const remindTitle = () => {
-      const on = addDays(state.firstRequestDate, rules.reminder_after_days);
+      if (urgent) return `Se entro ${days(rules.max_wait_days.U - 1)} nessuno ti chiama, telefona subito all'${aslLabel()} e al tuo medico`;
+      const on = addDays(state.firstRequestDate, remindAfter);
       return `Se nessuno ti risponde entro ${art('il', on)}${formatIt(on)}`;
     };
-    const urp = generalContact(a);
+    const { addr: urp, kind: urpKind } = generalContactInfo(a);
     return {
       html: `
         <div class="hero" aria-hidden="true">⏳</div>
@@ -475,7 +483,7 @@ const screens = {
         <h2 id="remind-title">${esc(remindTitle())}</h2>
         <ol class="big-steps">
           <li><strong>Manda un sollecito</strong>: una seconda lettera per ricordarlo all'${aslLabel()}. La trovi qui sotto, già pronta.</li>
-          <li><strong>Fai un reclamo</strong> all'ufficio URP della tua ${aslLabel()}${urp ? ` (${mailLink(urp)})` : ''}.</li>
+          <li><strong>Fai un reclamo</strong> ${urpKind === 'pec' ? `alla PEC dell'${aslLabel()} (${mailLink(urp)})` : `all'ufficio URP della tua ${aslLabel()}${urp ? ` (${urpKind === 'email' ? `email dell'${aslLabel()}: ` : ''}${mailLink(urp)})` : ''}`}.</li>
           <li><strong>Chiedi aiuto a un'associazione</strong> di pazienti: Cittadinanzattiva
             (<a href="https://www.cittadinanzattiva.it" target="_blank" rel="noopener">cittadinanzattiva.it</a>) oppure
             Associazione Luca Coscioni (<a href="https://www.associazionelucacoscioni.it" target="_blank" rel="noopener">associazionelucacoscioni.it</a>).</li>
@@ -489,6 +497,8 @@ const screens = {
             <label for="firstRequestDate">Che giorno hai mandato la prima richiesta?</label>
             <input type="date" id="firstRequestDate" name="firstRequestDate" value="${esc(state.firstRequestDate)}" max="${today}" aria-describedby="rem-form-error">
             <p class="field-error" id="rem-form-error" role="alert" hidden></p>
+            <label for="f-reqProtocol">Numero di protocollo della richiesta<span class="hint">Se te l'hanno dato</span></label>
+            <input id="f-reqProtocol" name="reqProtocol" type="text" value="${esc(state.reqProtocol || '')}">
           </form>
           <div id="reminder" class="letter"></div>
           <div class="btn-row three">
@@ -506,6 +516,7 @@ const screens = {
           const v = readForm(document.getElementById('rem-form'));
           const ok = parseDate(v.firstRequestDate) !== null && daysBetween(v.firstRequestDate, today) >= 0;
           if (ok) state.firstRequestDate = v.firstRequestDate;
+          state.reqProtocol = v.reqProtocol;
           const err = document.getElementById('rem-form-error');
           err.hidden = ok;
           err.textContent = ok ? '' : `Scrivi una data giusta, non dopo oggi. Per ora usiamo ${art('il', state.firstRequestDate)}${formatIt(state.firstRequestDate)}.`;
@@ -513,7 +524,7 @@ const screens = {
           const text = tutelaReminder({
             ente: aslIntestazione(),
             aspName: a.province, aspAddress: a.send_to || a.pec || '', person, service: state.service, nre: state.nre,
-            cls: classText(), firstRequestDate: state.firstRequestDate, today,
+            cls: classText(), firstRequestDate: state.firstRequestDate, protocol: state.reqProtocol, today,
           });
           state.reminderText = text;
           document.getElementById('reminder').textContent = text;
@@ -523,6 +534,8 @@ const screens = {
             `Buongiorno,\nin allegato il sollecito firmato.\n\nCordiali saluti\n${person.fullName || ''}`);
         };
         document.getElementById('rem-form').addEventListener('change', update);
+        document.getElementById('f-reqProtocol').addEventListener('input', update);
+        document.getElementById('rem-form').addEventListener('submit', (e) => { e.preventDefault(); update(); });
         update();
         document.getElementById('rcopy-btn').addEventListener('click', (e) => copyText(state.reminderText, e.currentTarget));
         document.getElementById('rpdf-btn').addEventListener('click', () => printText(state.reminderText));
@@ -553,17 +566,23 @@ function updateLetter(a, official) {
     state.letterText = '';
     mail.href = mailtoHref(a.send_to, subject,
       `Buongiorno,\nin allegato il modulo di richiesta del percorso di tutela, compilato e firmato, con i documenti.${signoff}`);
-    hint.textContent = `📧 L'email si apre già con l'indirizzo giusto (${a.send_to}). Aggiungi il modulo firmato e le foto dei documenti.`;
+    hint.innerHTML = a.channel === 'pec' || /@pec\./.test(a.send_to || '')
+      ? `📨 L'indirizzo dell'${aslLabel()} è una PEC (una email speciale). <strong>Se non hai la PEC, stampa il modulo compilato e portalo all'ufficio URP.</strong>`
+      : `📧 L'email si apre già con l'indirizzo giusto (${esc(a.send_to)}). Aggiungi il modulo firmato e le foto dei documenti.`;
     return;
   }
 
+  const noDate = state.cup === 'none';
+  const cb = noDate ? callbackDeadline(rules, { cls: state.cls, kind: state.kind, requestDate: state.requestDate, today }) : null;
   const text = tutelaLetter({
     ente: aslIntestazione(),
     aspName: a.province,
     aspAddress: a.send_to || a.pec || '',
     person, service: state.service, nre: state.nre, cls: classText(), maxDays: limit(),
     bookingDate: state.bookingDate, appointmentDate: state.appointmentDate,
-    noDateOffered: state.cup === 'none', requestDate: state.requestDate, today,
+    noDateOffered: noDate, requestDate: state.requestDate, prescriptionDate: state.prescriptionDate,
+    deadline: !noDate && state.result ? state.result.deadline : null,
+    callbackDays: cb && cb.days, callbackDeadline: cb && cb.deadline, today,
   });
   state.letterText = text;
   preview.innerHTML = `<div class="letter">${esc(text)}</div>`;

@@ -108,7 +108,7 @@ const afterVerbale = `
   <details class="card">
     <summary>Dopo la visita: a cosa può dare diritto</summary>
     <p>Dipende dal risultato. Per esempio: non pagare il ticket, i permessi della legge 104, l'indennità di accompagnamento,
-    la pensione di invalidità, l'aiuto per trovare lavoro, il permesso per il parcheggio.</p>
+    la pensione di invalidità, l'aiuto per trovare lavoro, il contrassegno per il parcheggio.</p>
     <p>Chiedi a un patronato o guarda il sito <a href="https://www.inps.it" target="_blank" rel="noopener">inps.it</a>.</p>
     <p>Se il foglio del risultato ha una scadenza, i tuoi aiuti continuano fino alla nuova visita (legge 114/2014).</p>
     <p>Se il verbale ti sembra sbagliato, hai <strong>6 mesi</strong> per il ricorso: <a href="../ricorso-invalidita/">controlla quanto tempo ti resta</a>.</p>
@@ -214,7 +214,12 @@ const screens = {
     }
 
     if (d.kind === 'domanda') {
-      const body = d.status === 'passed'
+      const body = d.lateDomanda
+        ? `<div class="hero" aria-hidden="true">⏰</div>
+           <h1>Il tempo per la domanda era finito</h1>
+           <div class="notice bad"><p>Bisognava fare la domanda entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>. È stata fatta ${art('il', d.domandaDate)}${esc(formatIt(d.domandaDate))}, ${days(d.daysLate)} dopo.</p>
+           <p><strong>Il certificato potrebbe non valere più: controlla con un patronato.</strong> Prima di sollecitare l'INPS, chiedi se serve un nuovo certificato del medico.</p></div>`
+        : d.status === 'passed'
         ? `<div class="hero" aria-hidden="true">⏰</div>
            <h1>Il tempo per la domanda è finito</h1>
            <div class="notice bad"><p>Bisognava fare la domanda entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>.</p>
@@ -325,7 +330,7 @@ const screens = {
           document.querySelectorAll('.delegate-note').forEach((li) => { li.hidden = !person.isDelegate; });
           const text = inpsReminder({
             provinceName: p.name, inpsPec: p.pec, person, certNumber: state.certNumber, certDate: state.certDate,
-            domandaDate: state.domandaDate, domandaNumber: state.domandaNumber, regime: r, deadlineInfo: deadline(), today: todayISO(),
+            domandaDate: state.domandaDate, domandaNumber: state.domandaNumber, regime: r, category: state.category, deadlineInfo: deadline(), today: todayISO(),
           });
           state.letterText = text;
           document.getElementById('preview').textContent = text;

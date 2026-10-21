@@ -41,7 +41,7 @@ const topics = () => [
   ['urp', '🏥 Ufficio per i cittadini (URP)', 'Per reclami, informazioni e quando non sai a chi chiedere.'],
   ['casa', '🏠 Infermiere e cure a casa (PUA)', "Il PUA è lo sportello del distretto per l'assistenza a casa. Chiama quello del tuo comune."],
   ['anagrafe', '🪪 Scelta del medico ed esenzioni ticket', 'Lo sportello «scelta e revoca» del distretto: cambiare medico o pediatra, esenzione dal ticket.'],
-  ['screening', '🎗️ Esami contro i tumori (screening)', 'Mammografia, pap test, esame per il colon: gratis e senza ricetta.'],
+  ['screening', '🎗️ Esami contro i tumori (screening)', 'Mammografia, Pap test, esame per il colon: gratis e senza ricetta.'],
   ['cartelle', '📁 Copia della cartella clinica', "L'ufficio dell'ospedale dove c'è stato il ricovero."],
   ['protesica', '🦽 Protesi e ausili (carrozzina, letto, pannoloni)', 'Qui porti la prescrizione dello specialista. Vai a quello del tuo distretto.'],
   ['palliative', '🕊️ Cure palliative e hospice', ''],

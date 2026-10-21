@@ -13,6 +13,8 @@ const app = document.getElementById('app');
 // La risposta scritta della pagina: è la prima schermata del percorso.
 const answerHtml = app.innerHTML;
 let rules;
+// Le migliaia con il punto («1.500»): toLocaleString non lo mette sotto 10.000.
+const migliaia = (n) => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
 let data;
 const state = {};
 const person = {};
@@ -81,7 +83,7 @@ const screens = {
     const a = asp();
     const extra = {
       change: `<p>Non serve un motivo e non serve avvisare il vecchio medico: con la nuova scelta, il vecchio viene tolto in automatico.</p>`,
-      retire: `<div class="notice info"><p>Quando un medico va in pensione, l'${aslLabel()} di solito avvisa i pazienti. Hai tempo per sceglierne un altro: fallo appena puoi, per non restare senza ricette.</p></div>`,
+      retire: `<div class="notice info"><p>Quando un medico va in pensione, l'${aslLabel()} di solito avvisa i pazienti. Dal giorno in cui lascia non hai più un medico: scegline subito un altro, per non restare senza ricette.</p></div>`,
       temporary: `<div class="notice info"><p>Puoi fare una <strong>scelta temporanea</strong> nel comune dove vivi, da ${rules.temporary_months[0]} mesi a ${rules.temporary_months[1]} mesi, rinnovabile. Porta anche una prova del motivo: iscrizione all'università o contratto di lavoro.</p></div>`,
     }[state.situation];
     return {
@@ -98,7 +100,7 @@ const screens = {
         <h2>Come scegliere</h2>
         <ul class="clean">
           <li>Allo sportello ti danno l'elenco dei medici della tua zona che hanno ancora posto.</li>
-          <li>Ogni medico può avere al massimo circa ${rules.max_patients_medico} pazienti, ogni pediatra circa ${rules.max_patients_pediatra}: se è pieno, non può prenderti.</li>
+          <li>Ogni medico può avere al massimo circa ${migliaia(rules.max_patients_medico)} pazienti, ogni pediatra circa ${migliaia(rules.max_patients_pediatra)}: se è pieno, non può prenderti.</li>
           <li>Chiedi a vicini e parenti, e guarda gli orari dello studio e se fa visite a casa.</li>
         </ul>
         ${aspCalls(a)}

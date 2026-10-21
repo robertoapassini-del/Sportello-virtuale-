@@ -10,6 +10,9 @@ trova uno nuovo, si aggiunge un controllo che lo avrebbe preso.
    nazionale qui sotto.
 2. Nessun fatto nuovo senza fonte ufficiale: ogni cifra o regola va nei file `data/` con `provenienza`
    (url, data, tipo di prova). Una regola di legge si cita con articolo e comma letti sul testo, non a memoria.
+3. Chi cambia `data/regioni/` lancia `node tools/confronta-copie.mjs <cartella-copie> <regione>` sulle copie delle
+   pagine ufficiali (branch `copie-siti`, cartella `copie/`) e corregge, o annota nel `todo`, ogni problema che riguarda
+   quello che ha cambiato.
 
 ## Regola nazionale
 
@@ -25,6 +28,7 @@ Se non sai se una regola è nazionale, trattala come regionale finché non trovi
 | `npm test` | dati, numeri e fonti (`contatti`, `provenienza`, `cifre`), pagine aggiornate (`pagine`, anche la 404), calcoli (`engine`), testi nazionali (`nazionale`), errori già visti (`errori-noti`), ricerca (`ricerca`: 40 parole → modulo giusto) |
 | `node tests/browser.cjs <indirizzo>` | tutte le pagine in un browser (Sicilia, Lazio, nessuna regione) e i percorsi dei moduli: errori JavaScript, «undefined», pagine troppo larghe (anche con il testo al 250%), pulsanti sotto i 44 px, stampa (titolo, pulsanti), frasi siciliane senza «Sicilia» |
 | `node tests/combinazioni.cjs <indirizzo>` | tutte le combinazioni di risposte nei moduli, confrontate con un calcolo indipendente |
+| `node tools/confronta-copie.mjs <cartella-copie> [regione…]` | i dati regionali contro le copie notturne delle pagine ufficiali (branch `copie-siti`): cifre dei numeri con prova «pagina» che non sono nella copia del loro url, PEC e indirizzi di invio che non sono in nessuna copia dell'azienda, url senza copia. Nella CI è il job «copie»: le differenze (codice 3) restano verdi e vanno nel riepilogo del job, da leggere a ogni PR; diventa rosso solo se il programma si rompe |
 | `node tests/robustezza.cjs <indirizzo>` | cosa succede quando qualcosa va storto: file di dati che non arrivano, cookie bloccati, indirizzi ostili (`?torna=`), hash rotti |
 
 Per i due controlli col browser: `python3 -m http.server 8080` in un altro terminale, poi `http://localhost:8080/`.
@@ -52,3 +56,10 @@ tutti i controlli verdi.
   numeri nazionali, ricerca, stampa e SEO: `tests/ricerca.test.mjs` (la ricerca non ordinava e trovava pezzi di parola),
   `tests/robustezza.cjs` (redirect `?torna=` aggirabile, cookie bloccati, 112 sparito senza dati), controlli di
   accessibilità e stampa in `browser.cjs`, test sulle date (01/01/1970) e sui festivi in `engine.test.mjs`, 404.html.
+- 21/10/2026 — `tools/confronta-copie.mjs` e il job «copie» nella CI: un audit sulle copie delle pagine ufficiali ha trovato
+  in Sicilia PEC e indirizzi di invio sbagliati (Trapani, Agrigento, Siracusa), orari incompleti o di un altro ufficio e
+  14 numeri con un url che non li conteneva.
+- 21/10/2026 — audit dei testi: in `pagine.test.mjs` le sigle (PEC, ISEE, CUP, TAR, PUA, SAD) spiegate nella pagina dove
+  compaiono; in `browser.cjs` il riquadro «Chi può aiutarti» delle pagine delle aree dice «ASP» in Sicilia; in
+  `errori-noti.test.mjs` «della ASL», numeri verdi con lo spazio in mezzo, migliaia senza punto, titoli di pagina come
+  link dentro la frase, «ad Enna», «una équipe», titoli di `moduli.json` diversi dall'h1.

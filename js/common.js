@@ -411,8 +411,28 @@ export function officeBox(a, topic, title, intro = '') {
 
 // Indirizzo generale dell'ASP (URP o PEC del protocollo), per le richieste che NON sono
 // il percorso di tutela: alcune ASP hanno una casella dedicata solo alle liste d'attesa.
+// generalContactInfo dice anche che indirizzo è: 'urp' (email dell'URP), 'pec' (PEC generale
+// del protocollo, NON l'URP), 'email' (un'altra email dell'azienda) oppure '' (nessuno).
+export function generalContactInfo(a) {
+  const urp = a.emails.find((e) => /urp/i.test(e));
+  if (urp) return { addr: urp, kind: 'urp' };
+  if (a.pec) return { addr: a.pec, kind: 'pec' };
+  if (a.emails[0]) return { addr: a.emails[0], kind: 'email' };
+  return { addr: '', kind: '' };
+}
+
 export function generalContact(a) {
-  return a.emails.find((e) => /urp/i.test(e)) || a.pec || a.emails[0] || '';
+  return generalContactInfo(a).addr;
+}
+
+// «a chi» scrivere il reclamo, con il nome giusto dell'indirizzo: «all'URP dell'ASL di X (email)»,
+// oppure «alla PEC dell'ASL di X (pec)» quando l'URP non ha un'email e c'è solo la PEC generale.
+export function complaintTo(a) {
+  const { addr, kind } = generalContactInfo(a);
+  const ente = `${aslLabel()} di ${esc(a.province)}`;
+  if (kind === 'pec') return `alla PEC dell'${ente} (${mailLink(addr)})`;
+  if (kind === 'email') return `all'URP dell'${ente} (email dell'${aslLabel()}: ${mailLink(addr)})`;
+  return `all'URP dell'${ente}${addr ? ` (${mailLink(addr)})` : ''}`;
 }
 
 export function mailLink(addr) {

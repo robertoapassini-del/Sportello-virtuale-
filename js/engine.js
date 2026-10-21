@@ -129,6 +129,13 @@ export function invDeadline(rulesInv, { regime, category, certDate, domandaDate,
     return withPassed({ kind: 'domanda', days: old.domanda_window_days, from: certDate, deadline, legal: null, indicative: false }, today);
   }
   if (daysBetween(certDate, domandaDate) < 0) return { status: 'error', error: 'order' };
+  // Domanda fatta dopo i 90 giorni: il certificato potrebbe non valere più. Non si propone il sollecito
+  // come se tutto fosse regolare: è il caso «tempo per la domanda finito», con la data della domanda.
+  const domandaLimit = addDays(certDate, old.domanda_window_days);
+  if (daysBetween(domandaLimit, domandaDate) > 0) {
+    return { status: 'passed', kind: 'domanda', lateDomanda: true, days: old.domanda_window_days, from: certDate, deadline: domandaLimit,
+      domandaDate, daysLate: daysBetween(domandaLimit, domandaDate), legal: null, indicative: false };
+  }
   if (category === 'oncological') {
     const deadline = addDays(domandaDate, old.oncological_visit_days);
     return withPassed({ kind: 'visit', days: old.oncological_visit_days, from: domandaDate, deadline, legal: old.oncological_legal_basis, indicative: false }, today);

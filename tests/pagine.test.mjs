@@ -87,3 +87,35 @@ test('404.html: in italiano, non indicizzata, solo indirizzi assoluti, fuori dal
   assert.deepEqual(rel, [], 'GitHub Pages la mostra a qualsiasi profondità: servono indirizzi che iniziano con «/»');
   assert.doesNotMatch(read('sitemap.xml'), /404/);
 });
+
+// Le sigle si spiegano nella pagina dove servono: chi arriva da Google legge solo quella (audit del 21/10/2026).
+// Guarda il testo fisso (non le parti create da tools/pagine.mjs, che hanno già le loro parole).
+const SIGLE = [
+  ['PEC', /email speciale/],
+  ['ISEE', /misura/],
+  ['CUP', /ufficio dove si prenot/],
+  ['TAR', /tribunale amministrativo/i],
+  ['PUA', /Punto unico di accesso|sportello per l.assistenza a casa/i],
+  ['SAD', /servizio di assistenza domiciliare/i],
+];
+// Pagine che un altro lavoro sta riscrivendo: da togliere appena hanno la spiegazione.
+const SIGLE_DA_FARE = {};
+test('ogni sigla (PEC, ISEE, CUP, TAR, PUA, SAD) è spiegata nella pagina dove compare', () => {
+  const pagine = read('sitemap.xml').match(/<loc>(.*?)<\/loc>/g)
+    .map((x) => x.slice(5, -6).replace('https://guidasanita.it/', '')).map((u) => (u === '' || u.endsWith('/') ? `${u}index.html` : u));
+  const errori = [];
+  for (const f of pagine) {
+    const html = read(f);
+    if (/<!-- Pagina creata da tools\/pagine\.mjs/.test(html)) continue; // pagine delle aree: tutta generata
+    const fisso = html.replace(/<head>[\s\S]*?<\/head>/, '').replace(/<header class="site-header">[\s\S]*?<\/header>/, '')
+      .replace(/<nav class="breadcrumb"[\s\S]*?<\/nav>/, '')
+      .replace(/<!-- (blocco:[a-z-]+|fonti|condividi)[\s\S]*?<!-- \/(blocco:[a-z-]+|fonti|condividi) -->/g, '')
+      .replace(/<footer[\s\S]*?<\/footer>/g, '').replace(/<script[\s\S]*?<\/script>/g, '')
+      .replace(/<[^>]+>/g, ' ').replace(/&#39;/g, "'");
+    for (const [sigla, spiegazione] of SIGLE) {
+      if ((SIGLE_DA_FARE[f] || []).includes(sigla)) continue;
+      if (new RegExp(`\\b${sigla}\\b`).test(fisso) && !spiegazione.test(fisso)) errori.push(`${f}: «${sigla}» senza spiegazione`);
+    }
+  }
+  assert.deepEqual(errori, [], errori.join('\n'));
+});

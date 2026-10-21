@@ -7,6 +7,7 @@
 // - una pagina più larga dello schermo;
 // - stampando: titolo assente o bianco, pulsanti sul foglio;
 // - pulsanti e link più bassi di 44 px, o pagine troppo larghe con il testo al 250% (accessibilità);
+// - in Sicilia, il riquadro «Chi può aiutarti» delle pagine delle aree senza «ASP»;
 // - per chi non è siciliano, una frase su uffici o servizi siciliani (ASP, SovraCUP, Palermo…) che non dice
 //   «Sicilia» (stessa regola di tests/nazionale.test.mjs, ma sul testo creato dal JavaScript).
 // Lo lancia la CI a ogni modifica (.github/workflows/test.yml).
@@ -26,6 +27,8 @@ const SITE = path.resolve(__dirname, '..');
 const urls = fs.readFileSync(path.join(SITE, 'sitemap.xml'), 'utf8').match(/<loc>(.*?)<\/loc>/g)
   .map((x) => x.slice(5, -6).replace('https://guidasanita.it/', BASE));
 const moduli = JSON.parse(fs.readFileSync(path.join(SITE, 'data/moduli.json'), 'utf8')).modules.map((m) => m.id);
+// Le pagine delle aree («Visite ed esami»…): il riquadro «Chi può aiutarti» deve aspettare la regione (in Sicilia «ASP»).
+const aree = JSON.parse(fs.readFileSync(path.join(SITE, 'data/moduli.json'), 'utf8')).groups.map((g) => `${BASE}${g.page}/`);
 
 // Nel browser: le frasi siciliane senza «Sicilia» (fuori dal riquadro delle fonti).
 function fraseSiciliane() {
@@ -107,6 +110,10 @@ async function stampa(page, dove, problemi) {
       await controlla(page, dove, regione, problemi);
       if (!regione) await accessibile(page, dove, problemi);
       if (regione === 'sicilia') await stampa(page, dove, problemi);
+      if (regione === 'sicilia' && aree.includes(u)) {
+        const aiuto = await page.evaluate(() => (document.querySelector('details.help') || {}).textContent || '');
+        if (!/\bASP\b/.test(aiuto)) problemi.push(`${dove}: il riquadro «Chi può aiutarti» non dice «ASP» a chi abita in Sicilia`);
+      }
       await page.close();
     }
     await ctx.close();
