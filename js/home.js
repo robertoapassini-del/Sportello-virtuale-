@@ -1,4 +1,6 @@
-// Pagina iniziale: la domanda e 4 grandi riquadri, uno per area. Ogni riquadro porta
+// Pagina iniziale: la domanda e i grandi riquadri, uno per area. Sotto, due ingressi: «Hai un problema
+// adesso?» (i conti e le lettere) e «Vuoi sapere come funziona?» (le pagine che spiegano, da moduli.json → informarsi).
+// Il sito non serve solo a chi ha un problema: deve anche informare chi vuole capire come funziona la sanità. Ogni riquadro porta
 // alla pagina dell'area (per esempio visite-esami/), come la home di NHS.uk.
 // La ricerca è nella testata: qui i risultati compaiono mentre si scrive.
 import { esc, loadJSON, loadRegioni, renderFooter, helpBox, sourcesBox, aslLabel, regioniAttive, regioneInfo, regioneSalvata } from './common.js';
@@ -20,8 +22,8 @@ function intro() {
   const ente = piu && !regioneSalvata() ? 'azienda sanitaria (ASL)' : (scelta.asl_label || aslLabel());
   return `
   <section class="home-intro page-band">
-  <h1>Di cosa hai bisogno?</h1>
-  <p class="home-trust">Gratis. Siamo volontari: <strong>non siamo l'${esc(ente)} né l'INPS</strong>.${piu ? '' : ` Per ora solo in ${esc(regioneInfo().name)}.`}</p>
+  <h1>Cosa vuoi sapere?</h1>
+  <p class="home-trust">Come funziona la sanità pubblica, cosa ti spetta e cosa fare se qualcosa non va. Gratis. Siamo volontari: <strong>non siamo l'${esc(ente)} né l'INPS</strong>.${piu ? '' : ` Per ora solo in ${esc(regioneInfo().name)}.`}</p>
   ${piu ? `<p class="home-regione">📍 ${regioneSalvata() ? `Stai guardando: <strong>${esc(scelta.name)}</strong> · <a href="numeri-utili/?torna=${encodeURIComponent(location.pathname)}#regione">Cambia regione</a>` : `<a href="numeri-utili/?torna=${encodeURIComponent(location.pathname)}#regione">Scegli la tua regione</a> per vedere i numeri e gli uffici della tua zona`}</p>` : ''}
   </section>`;
 }
@@ -33,20 +35,32 @@ const results = `
   </section>`;
 
 const about = `
-  <div class="notice info home-about"><p>Sanità, cure e invalidità: ti diciamo cosa ti spetta, entro quando e come chiederlo. Con parole semplici.</p></div>`;
+  <div class="notice info home-about"><p>Sanità, cure e invalidità: come funzionano, cosa ti spetta e come chiederlo. E se qualcosa non va, cosa fare, passo passo. Con parole semplici.</p></div>`;
 
-// Le domande più frequenti: link d'azione con la freccia verde, come NHS.uk.
-const FREQUENTI = [
-  ['liste-attesa', 'Controlla se la tua visita è troppo lontana'],
-  ['esenzione-ticket', 'Scopri se devi pagare il ticket'],
-  ['invalidita', "Controlla se la visita per l'invalidità è in ritardo"],
+// Link d'azione con la freccia verde, come NHS.uk.
+const actionLinks = (items) => `<ul class="action-links">${items.map(([href, text]) => `
+    <li><a class="action-link" href="${esc(href)}"><span class="arrow" aria-hidden="true">▶️</span><span class="txt">${esc(text)}</span></a></li>`).join('')}
+  </ul>`;
+
+// Chi ha un problema adesso: i conti e le lettere già pronte.
+const PROBLEMI = [
+  ['liste-attesa/', 'Controlla se la tua visita è troppo lontana'],
+  ['esenzione-ticket/', 'Scopri se devi pagare il ticket'],
+  ['invalidita/', "Controlla se la visita per l'invalidità è in ritardo"],
+  ['ausili/', 'La carrozzina o i pannoloni non arrivano: prepara il sollecito'],
 ];
 const frequent = () => `
   <section class="frequent">
-  <h2>Le domande più frequenti</h2>
-  <ul class="action-links">${FREQUENTI.map(([id, text]) => `
-    <li><a class="action-link" href="${id}/"><span class="arrow" aria-hidden="true">▶️</span><span class="txt">${esc(text)}</span></a></li>`).join('')}
-  </ul>
+  <h2>Hai un problema adesso?</h2>
+  ${actionLinks(PROBLEMI)}
+  </section>`;
+
+// Chi vuole solo capire come funziona: le pagine che spiegano (data/moduli.json → informarsi).
+const informarsi = () => `
+  <section class="informarsi">
+  <h2>Vuoi sapere come funziona?</h2>
+  <p>Le regole spiegate con parole semplici, anche se oggi non hai nessun problema.</p>
+  ${actionLinks(reg.informarsi.map((i) => [i.href, i.title]))}
   </section>`;
 
 // Riquadro rosso per chi sta male adesso (come le «care card» urgenti di NHS.uk).
@@ -67,6 +81,7 @@ function render() {
     ${results}
     <div class="area-grid">${reg.groups.map((g) => card(`${g.page}/`, g.icon, g.title, g.small)).join('')}</div>
     <div class="home-row">${urgent}${frequent()}</div>
+    ${informarsi()}
     ${about}
     ${helpBox()}${sourcesBox(rulesSources, {})}`;
 }

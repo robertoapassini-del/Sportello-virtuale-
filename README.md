@@ -1,6 +1,10 @@
 # Guida Sanità
 
-Sito gratuito che dice alle persone in Sicilia cosa spetta loro, entro quando e come chiederlo: sanità, cure e invalidità. Moduli:
+Sito gratuito che spiega come funziona la sanità pubblica in Italia e cosa spetta alle persone: sanità, cure e invalidità.
+Ha due scopi, con lo stesso peso: **informare** chi vuole capire come funziona una cosa (chi ha diritto, quanto dura, come si
+chiede) e **aiutare** chi ha un problema adesso (un tempo scaduto, un sollecito, una lettera da scrivere). Per questo i titoli
+dicono l'argomento, non il problema («Le liste d'attesa: quanto puoi aspettare», non «La visita è troppo lontana»), e la home
+ha due ingressi: «Hai un problema adesso?» e «Vuoi sapere come funziona?» (`informarsi` in `data/moduli.json`). Moduli:
 
 - **Modulo 1 – Liste d'attesa:** la visita o l'esame è troppo lontano rispetto alla classe di priorità della ricetta.
 - **Modulo 2 – Invalidità civile:** la visita per l'invalidità non arriva entro i tempi di legge.
@@ -25,6 +29,9 @@ Requisiti completi: [SPEC.md](SPEC.md).
 
 ## Principi
 
+- **Prima informare, poi risolvere.** Ogni guida spiega come funziona la cosa a chiunque la legga, anche senza un problema;
+  i conti e le lettere sono un passo in più per chi ne ha bisogno. I titoli dei moduli e delle pagine dicono l'argomento,
+  non il guaio.
 - **Semplicissimo per tutti**, anche per chi legge poco: frasi brevi, una sola domanda per schermata, pulsanti
   grandi con icone, riquadro «Chi può aiutarti».
 - **Niente server, niente database, niente cookie, niente intelligenza artificiale.** Tutto funziona nel browser;

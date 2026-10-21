@@ -495,7 +495,7 @@ ul.action-links li { margin: 4px 0; }
 /* ---- Larghezza (come NHS.uk): pagina larga, testo in una colonna di lettura a sinistra ----
    Home e pagine delle aree (data-wide) usano tutta la larghezza: riquadri su 2 colonne. */
 #app > *, .page-feedback .wrap > * { max-width: var(--maxw); }
-#app > .page-band, #app[data-wide] > .area-grid, #app[data-wide] > .home-row, #app[data-wide] > .home-results, #app[data-wide] > ul.area-list { max-width: none; }
+#app > .page-band, #app[data-wide] > .area-grid, #app[data-wide] > .home-row, #app[data-wide] > .informarsi, #app[data-wide] > .home-results, #app[data-wide] > ul.area-list { max-width: none; }
 .page-band > * { max-width: var(--maxw); }
 ul.area-list li { display: flex; }
 ul.area-list li > .btn { flex: 1; }
@@ -506,6 +506,9 @@ ul.area-list li > .btn { flex: 1; }
   .home-row > .care-urgent { order: 2; }
   .home-row > .care-urgent, .home-row > .frequent { margin-top: 28px; }
   .home-row .frequent h2 { margin-top: 0; }
+  /* «Vuoi sapere come funziona?»: i link su 2 colonne, come i riquadri. */
+  .informarsi ul.action-links { display: grid; grid-template-columns: 1fr 1fr; gap: 0 32px; }
+  .informarsi > p { max-width: var(--maxw); }
 }
 
 /* Versione stampabile (in fondo al file, così vale sopra le altre regole). */

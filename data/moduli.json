@@ -4,16 +4,16 @@
       "id": "cure",
       "page": "visite-esami",
       "short": "Visite ed esami",
-      "intro": "Hai una ricetta e l'appuntamento è troppo lontano? Non sai se devi pagare il ticket? Qui trovi cosa ti spetta e come chiederlo.",
+      "intro": "Come funzionano le liste d'attesa, il ticket, il piano terapeutico e la cartella clinica. Chi ha diritto al dentista e allo psicologo con il Servizio sanitario. E cosa fare se qualcosa non va.",
       "icon": "🩺",
       "title": "Una visita, un esame, una medicina",
-      "small": "Appuntamenti lontani, ticket, piano terapeutico, referti"
+      "small": "Liste d'attesa, ticket, piano terapeutico, referti, dentista, psicologo"
     },
     {
       "id": "prevenzione",
       "page": "prevenzione-medico",
       "short": "Prevenzione",
-      "intro": "I controlli e i vaccini che puoi fare gratis. E come scegliere o cambiare il medico di famiglia o il pediatra.",
+      "intro": "I controlli e i vaccini che puoi fare gratis, per età. E come scegliere o cambiare il medico di famiglia o il pediatra.",
       "icon": "🛡️",
       "title": "Prevenzione e medico di famiglia",
       "small": "Controlli e vaccini gratis, scegliere il medico o il pediatra"
@@ -22,7 +22,7 @@
       "id": "casa",
       "page": "aiuto-a-casa",
       "short": "Aiuto a casa",
-      "intro": "Una persona della famiglia è malata e deve essere curata a casa? Qui trovi come chiedere l'infermiere, gli ausili e le cure palliative.",
+      "intro": "Cosa offre il Servizio sanitario a chi è curato a casa: l'infermiere e il medico a domicilio, carrozzina, letto e pannoloni, le cure palliative, la RSA. Come si chiedono e cosa fare se tardano.",
       "icon": "🏠",
       "title": "Aiuto a casa per una persona malata",
       "small": "Infermiere a casa, carrozzina, letto, pannoloni, cure palliative"
@@ -31,19 +31,19 @@
       "id": "invalidita",
       "page": "invalidita-aiuti",
       "short": "Invalidità",
-      "intro": "La visita per l'invalidità, il verbale e gli aiuti economici. Ti diciamo i tempi di legge e cosa fare.",
+      "intro": "Come funziona l'invalidità civile: la domanda, la visita, il verbale e il ricorso. E gli aiuti che ne derivano: accompagnamento, legge 104, assegno di inclusione, contrassegno per l'auto.",
       "icon": "♿",
       "title": "Invalidità e aiuti economici",
-      "small": "Visita INPS, verbale sbagliato, assegno di inclusione"
+      "small": "Domanda e visita INPS, ricorso, accompagnamento, legge 104, assegno di inclusione"
     },
     {
       "id": "servizi",
       "page": "tessera-e-ricette",
       "short": "Tessera e ricette",
-      "intro": "La tessera sanitaria scaduta o persa, il fascicolo sanitario e la ricetta elettronica, prenotare e disdire al CUP. Le cose pratiche che servono a tutti.",
+      "intro": "La tessera sanitaria, il fascicolo sanitario e la ricetta elettronica, prenotare e disdire al CUP. Le cose pratiche che servono a tutti.",
       "icon": "🪪",
       "title": "Tessera sanitaria, ricette e prenotazioni",
-      "small": "Tessera scaduta o persa, fascicolo e ricetta elettronica, prenotare e disdire"
+      "small": "Tessera sanitaria, fascicolo e ricetta elettronica, prenotare e disdire al CUP"
     }
   ],
   "modules": [
@@ -55,8 +55,8 @@
         "regioni/sicilia/asp"
       ],
       "icon": "📅",
-      "title": "La visita o l'esame è troppo lontano",
-      "small": "Il CUP mi ha dato un appuntamento tra tanto tempo",
+      "title": "Le liste d'attesa: quanto puoi aspettare",
+      "small": "I tempi massimi per lettera della ricetta, e cosa fare se la data è troppo lontana",
       "keywords": "visita esame appuntamento cup prenotazione prenotare sovracup aspconte disdire lista attesa lontano tempi ricetta priorità tutela percorso di tutela intramoenia sollecito",
       "pages": [
         {
@@ -80,8 +80,8 @@
         "rules-esenzione"
       ],
       "icon": "🎫",
-      "title": "Devo pagare il ticket?",
-      "small": "Esenzione per età o per reddito",
+      "title": "Il ticket: chi non lo paga",
+      "small": "Esenzione per età e reddito, malattia, invalidità, gravidanza",
       "keywords": "ticket pagare esenzione reddito età over 65 anziani pensione disoccupato rinnovo delega aspconte gratis patologia malattia cronica invalidità gravidanza 048",
       "pages": [
         {
@@ -135,8 +135,8 @@
         "regioni/sicilia/asp"
       ],
       "icon": "📁",
-      "title": "Non mi danno la cartella clinica o i referti",
-      "small": "L'ho chiesta all'ospedale e non arriva",
+      "title": "La cartella clinica e i referti",
+      "small": "Come avere la copia, entro quando, e cosa fare se non arriva",
       "keywords": "cartella clinica referti documenti ospedale copia radiografia esami ricovero fascicolo sanitario elettronico fse spid cie cns ricetta elettronica nre garante privacy tar",
       "pages": [
         {
@@ -213,8 +213,8 @@
         "regioni/sicilia/asp"
       ],
       "icon": "🏠",
-      "title": "Serve un infermiere o un medico a casa",
-      "small": "Assistenza domiciliare dell'ASL",
+      "title": "L'assistenza a casa: infermiere e medico (ADI)",
+      "small": "Cos'è, come si chiede, cosa fare se nessuno viene",
       "keywords": "infermiere casa domicilio assistenza domiciliare adi fisioterapia allettato anziano pua uvm dimissione protetta prelievo ossigeno dialisi badante oss detrazione",
       "pages": [
         {
@@ -243,8 +243,8 @@
         "regioni/sicilia/asp"
       ],
       "icon": "🦽",
-      "title": "La carrozzina, il letto o i pannoloni non arrivano",
-      "small": "Ho fatto la domanda all'ASL e aspetto",
+      "title": "Carrozzina, letto, pannoloni: gli ausili",
+      "small": "Chi ne ha diritto, come si chiedono all'ASL, cosa fare se non arrivano",
       "keywords": "carrozzina letto pannoloni ausili protesi deambulatore materasso apparecchio acustico plantari protesica silenzio assenso collaudo fornitore incontinenza montascale sollevatore",
       "pages": [
         {
@@ -295,8 +295,8 @@
         "regioni/sicilia/inps"
       ],
       "icon": "♿",
-      "title": "La visita per l'invalidità non arriva",
-      "small": "Il medico ha mandato il certificato all'INPS",
+      "title": "L'invalidità civile: domanda e visita",
+      "small": "Come funziona, i tempi di legge, come sollecitare l'INPS",
       "keywords": "invalidità invalidità civile inps visita certificato commissione legge 104 handicap accompagnamento indennità contrassegno valutazione di base riforma disabilità patronato pec verbale revisione",
       "pages": [
         {
@@ -320,8 +320,8 @@
         "rules-ricorso"
       ],
       "icon": "⚖️",
-      "title": "Il verbale di invalidità è sbagliato",
-      "small": "Ho 6 mesi per il ricorso: quanto mi resta?",
+      "title": "Il ricorso contro il verbale di invalidità",
+      "small": "Entro 6 mesi, dal giudice: come funziona e quanto tempo ti resta",
       "keywords": "verbale ricorso invalidità percentuale sbagliato avvocato giudice aggravamento atp accertamento tecnico preventivo gratuito patrocinio arretrati",
       "pages": [
         {
@@ -345,8 +345,8 @@
         "rules-adi"
       ],
       "icon": "🪪",
-      "title": "Ho diritto all'assegno di inclusione?",
-      "small": "Le condizioni e come fare la domanda",
+      "title": "L'assegno di inclusione",
+      "small": "Chi ha diritto, quanto dura, come fare la domanda",
       "keywords": "assegno inclusione soldi reddito cittadinanza isee aiuto economico poveri carta di inclusione caf patronato spid rinnovo supporto formazione lavoro",
       "pages": [
         {
@@ -371,8 +371,8 @@
         "rules-tessera-sanitaria"
       ],
       "icon": "🪪",
-      "title": "La tessera sanitaria è scaduta o l'ho persa",
-      "small": "Rinnovo, duplicato, uso all'estero",
+      "title": "La tessera sanitaria",
+      "small": "Scadenza e rinnovo, duplicato se l'hai persa, uso all'estero",
       "keywords": "tessera sanitaria scaduta smarrita persa rubata duplicato rinnovo team estero cns codice fiscale agenzia entrate",
       "pages": [
         {
@@ -574,6 +574,40 @@
           "title": "Il bonus psicologo dell'INPS"
         }
       ]
+    }
+  ],
+  "informarsi": [
+    {
+      "href": "liste-attesa/tempi-massimi/",
+      "title": "Quanto puoi aspettare una visita: le lettere U, B, D e P sulla ricetta"
+    },
+    {
+      "href": "esenzione-ticket/chi-ha-diritto/",
+      "title": "Chi non paga il ticket: età, reddito, malattia"
+    },
+    {
+      "href": "fascicolo-e-ricetta/",
+      "title": "Il fascicolo sanitario e la ricetta elettronica: come funzionano"
+    },
+    {
+      "href": "prevenzione/screening/",
+      "title": "Gli esami gratis contro i tumori, per età"
+    },
+    {
+      "href": "assistenza-domiciliare/come-chiederla/",
+      "title": "Come si chiede l'infermiere a casa (ADI)"
+    },
+    {
+      "href": "invalidita/procedura/",
+      "title": "L'invalidità civile: come funziona la domanda oggi"
+    },
+    {
+      "href": "legge-104/",
+      "title": "La legge 104: permessi e congedo per chi assiste"
+    },
+    {
+      "href": "accompagnamento/requisiti/",
+      "title": "L'indennità di accompagnamento: chi ne ha diritto"
     }
   ]
 }

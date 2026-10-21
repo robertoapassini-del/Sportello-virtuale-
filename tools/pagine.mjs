@@ -183,6 +183,13 @@ const BLOCKS = {
     const mods = reg.modules.filter((m) => m.group === g.id);
     return `<h2><a href="${g.page}/">${esc(g.title)}</a></h2><ul class="static-list">${mods.map((m) => `<li><a href="${m.id}/">${esc(m.title)}</a></li>`).join('')}</ul>`;
   }).join('\n'),
+  // Home senza JavaScript: «Vuoi sapere come funziona?», le pagine che spiegano (moduli.json → "informarsi").
+  // Ogni indirizzo deve essere una pagina del sito: così l'elenco non resta indietro quando una pagina cambia nome.
+  'home-informarsi': () => {
+    const known = new Set(pages.map((p) => p.file.replace(/index\.html$/, '')));
+    for (const i of reg.informarsi) if (!known.has(i.href)) throw new Error(`moduli.json → informarsi: «${i.href}» non è una pagina del sito`);
+    return `<h2>Vuoi sapere come funziona?</h2><ul class="static-list">${reg.informarsi.map((i) => `<li><a href="${esc(i.href)}">${esc(i.title)}</a></li>`).join('')}</ul>`;
+  },
   // «In questa guida»: l'elenco delle pagine corte di un modulo (moduli.json → "pages"),
   // con la pagina in cui si è scritta senza link. Vale nella pagina del modulo e in ogni pagina corta.
   'guida-indice': (p) => {

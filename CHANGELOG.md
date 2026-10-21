@@ -2,6 +2,13 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — Il sito informa, non fa solo risolvere problemi
+- Osservazione di Roberto: quasi tutto era scritto come un problema («La visita è troppo lontana», «Non mi danno la cartella clinica», «La carrozzina non arriva»). Lo scopo è anche informare chi consulta il sito senza un guaio in corso.
+- `data/moduli.json`: 9 moduli hanno un titolo che dice l'argomento (liste d'attesa, ticket, cartella clinica, assistenza a casa, ausili, invalidità civile, ricorso, assegno di inclusione, tessera sanitaria); il problema resta nel sottotitolo. Le presentazioni delle 5 aree spiegano cosa c'è dentro, non partono da una domanda-guaio. Nuovo elenco `informarsi`: 8 pagine che spiegano, mostrate nella home.
+- Home: «Cosa vuoi sapere?» al posto di «Di cosa hai bisogno?»; due ingressi, «Hai un problema adesso?» (i conti e le lettere) e «Vuoi sapere come funziona?» (le pagine che spiegano), anche senza JavaScript (`tools/pagine.mjs`, blocco `home-informarsi`, che controlla che ogni indirizzo esista).
+- Pagine dei 9 moduli: titolo della pagina, descrizione e H1 riscritti come argomento; i link incrociati verso l'invalidità non dicono più «la visita non arriva». I testi delle risposte e delle pagine corte non cambiano: informavano già.
+- Nessuna cifra cambiata.
+
 ## 21/10/2026 — Controllate quattro regole: ausili, esenzione, ricetta, screening
 - Ausili (`data/rules-ausili.json`, pagine `ausili/`, lettera di sollecito): il DPCM 12/01/2017 (art. 18) lascia alle Regioni il tempo per l'autorizzazione; i 20 giorni con silenzio-assenso (e il collaudo entro 20 giorni) ora sono indicati come regola della Sicilia (D.A. 20/12/2011 sul DM 332/1999). La lettera non attribuisce più i 20 giorni al DPCM. Fonte aggiunta: procedure dell'ASP Catania. Il testo del D.A. resta da leggere (DA-VERIFICARE-A-MANO.md).
 - Esenzione ticket per reddito: la scadenza del 31 marzo dell'anno dopo vale in tutta Italia (la scrivono ASL di regioni diverse), con proroghe decise da alcune Regioni. Fonti aggiunte: AUSL Piacenza, ASL Città di Torino.
