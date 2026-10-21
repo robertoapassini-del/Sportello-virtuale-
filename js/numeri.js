@@ -3,7 +3,7 @@
 // È il modulo di prova per più regioni (docs/regioni.md, passo 3): cambiando regione i dati si ricaricano
 // senza ricaricare la pagina; per una regione non ancora attiva resta la parte nazionale e l'invito a scriverci.
 // La provincia scelta va nell'indirizzo (#palermo), così la pagina si può condividere.
-import { esc, loadJSON, loadRegional, renderFooter, helpBox, sourcesBox, callButton, hideHeadingEmoji, aslLabel, regioneInfo, regione, regioneDeiDati, regioneNonPronta } from './common.js';
+import { esc, loadJSON, loadRegional, renderFooter, helpBox, sourcesBox, callButton, hideHeadingEmoji, aslLabel, regioneInfo, inRegione, regione, regioneDeiDati, regioneNonPronta } from './common.js';
 import { needsRegion, regionChoices, changeRegionLink, regionAction, regionMissing } from './flow.js';
 
 const ROOT = '../';
@@ -106,7 +106,7 @@ function render() {
   const provinces = [...data.asl].sort((x, y) => x.province.localeCompare(y.province));
   app.innerHTML = `
     <h1>📞 Numeri utili</h1>
-    <p class="lead">I numeri giusti da chiamare${pronta ? ` in ${esc(regioneInfo().name)}` : ''}. Tocca il numero per chiamare.</p>
+    <p class="lead">I numeri giusti da chiamare${pronta ? ` ${esc(inRegione())}` : ''}. Tocca il numero per chiamare.</p>
     ${group(nums.groups[0])}
     <h2 id="regione">${pronta ? `I numeri della tua ${esc(aslLabel())}` : 'I numeri della tua regione'}</h2>
     ${regionale(id, a, provinces)}

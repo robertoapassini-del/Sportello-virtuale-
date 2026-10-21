@@ -96,6 +96,8 @@ export function regione() {
 export const regioneInfo = () => regioni().find((r) => r.id === regione()) || { id: regione(), name: 'Sicilia' };
 // Come si chiama l'azienda sanitaria nella regione in uso: ASP in Sicilia, ATS in Lombardia…
 export const aslLabel = () => regioneInfo().asl_label || 'ASP';
+// «in Sicilia», ma «nel Lazio», «nelle Marche» (campo «in» dell'indice).
+export const inRegione = (r = regioneInfo()) => r.in || `in ${r.name}`;
 // Come si scrive in testa a una lettera (Sicilia: «Azienda Sanitaria Provinciale di Palermo»).
 export const aslIntestazione = () => regioneInfo().asl_intestazione || aslLabel();
 // Pagine ufficiali della Regione usate nei moduli (data/regioni/index.json, «link»): fse, assessorato, dialisi.

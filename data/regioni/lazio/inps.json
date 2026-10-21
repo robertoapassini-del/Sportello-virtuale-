@@ -1,0 +1,81 @@
+{
+ "region": "Lazio",
+ "last_verified": "2026-10-21",
+ "note": "Indirizzi e PEC delle sedi INPS dalle pagine «sedi» di inps.it, copiate il 21/10/2026 dal server in Italia. Per andare allo sportello si prenota (MyINPS, app, 803 164 / 06 164164). regime (riforma della disabilità) da verificare: finché è null il modulo invalidità non va attivato per questa regione.",
+ "sources": [
+  {
+   "label": "INPS – sedi e contatti in Lazio",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.708100.708100-elencoStruttureInps.html"
+  }
+ ],
+ "provinces": [
+  {
+   "id": "roma",
+   "name": "Roma",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.coordinamentometropolitano.roma@postacert.inps.gov.it",
+   "address": "Viale Regina Margherita 206, Roma",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.708100.708100-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "frosinone",
+   "name": "Frosinone",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.frosinone@postacert.inps.gov.it",
+   "address": "Piazza Gramsci 4, Frosinone",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.330000.330000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "latina",
+   "name": "Latina",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.latina@postacert.inps.gov.it",
+   "address": "Via Cesare Battisti, 52, Latina",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.400000.400000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "rieti",
+   "name": "Rieti",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.rieti@postacert.inps.gov.it",
+   "address": "Via Cintia 42, Rieti",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.690000.690000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "viterbo",
+   "name": "Viterbo",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.viterbo@postacert.inps.gov.it",
+   "address": "Via Matteotti 29, Viterbo",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.920000.920000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  }
+ ],
+ "todo": [
+  "Riforma della disabilità: verificare quali province sono nella sperimentazione e da quando (campo regime)."
+ ]
+}

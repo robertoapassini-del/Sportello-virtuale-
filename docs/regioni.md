@@ -156,7 +156,7 @@ sempre riconoscibile: titolo «In Sicilia» (il nome della regione), bordo color
    **Da fare:** i dati della Lombardia (le pagine ufficiali sono in `data/regioni/lombardia/fonti.json`, il server
    le copia ogni notte). La guida scritta delle pagine (HTML, anche senza JavaScript) resta quella della Sicilia
    fino al passo 5.
-4. **In corso (21/10/2026): Lombardia attiva per Numeri utili** (`moduli: ["numeri-utili"]` nell'indice): 191 numeri
+4. **In corso (21/10/2026): Lombardia e Lazio attivi per Numeri utili** (`moduli: ["numeri-utili"]` nell'indice): 191 numeri
    di ATS e ASST per le 12 province, letti nelle copie delle pagine ufficiali. Gli altri moduli, per chi sceglie la
    Lombardia, mostrano la parte nazionale e il link ai numeri utili finché non hanno i loro dati.
    **Le altre regioni**, una alla volta, con la stessa regola dei numeri (`docs/regola-numeri.md`): solo fonti

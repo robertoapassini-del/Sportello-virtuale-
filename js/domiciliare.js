@@ -4,7 +4,7 @@
 // prepariamo un sollecito al distretto. Non chiediamo la malattia.
 import { todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
 import { genericRequest, mailtoHref } from './letters.js';
-import { noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact, aslLabel, regioneInfo, regioneLink, aslIntestazione } from './common.js';
+import { noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact, aslLabel, regioneInfo, inRegione, regioneLink, aslIntestazione } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
 
 const ROOT = '../';
@@ -106,7 +106,7 @@ const screens = {
       <details class="card">
         <summary>🚚 Il trasporto per la dialisi</summary>
         <ul class="clean">
-          ${regioneLink('dialisi') ? `<li>In ${esc(regioneInfo().name)} il trasporto per la dialisi lo <strong>paga l'${aslLabel()}</strong>. Lo fanno associazioni e ditte iscritte in un elenco della Regione.</li>
+          ${regioneLink('dialisi') ? `<li>${esc(inRegione().replace(/^./, (c) => c.toUpperCase()))} il trasporto per la dialisi lo <strong>paga l'${aslLabel()}</strong>. Lo fanno associazioni e ditte iscritte in un elenco della Regione.</li>
           <li>Se vai con la tua auto, l'${aslLabel()} ti <strong>rimborsa i chilometri</strong> da casa al centro dialisi.</li>`
     : `<li>Chi paga il trasporto per la dialisi, e se rimborsa i chilometri con la tua auto, lo decide la Regione: chiedi al centro dialisi o al distretto dell'${aslLabel()}.</li>`}
           <li>Serve un certificato del medico di famiglia. Chiedi al centro dialisi come fare la domanda.</li>
