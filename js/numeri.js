@@ -2,6 +2,7 @@
 // dell'ASP della provincia scelta (data/regioni/sicilia/asp.json, campo phones).
 // La provincia scelta va nell'indirizzo (#palermo), così la pagina si può condividere.
 import { esc, loadJSON, loadRegional, renderFooter, helpBox, listenButton, speakScreen, sourcesBox, callButton, hideHeadingEmoji } from './common.js';
+import { needsRegion, regionChoices, changeRegionLink, regionAction } from './flow.js';
 
 const ROOT = '../';
 const app = document.getElementById('app');
@@ -95,9 +96,11 @@ function render() {
     <p class="lead say">I numeri giusti da chiamare in Sicilia. Tocca il numero per chiamare.</p>
     ${group(nums.groups[0])}
     <h2 class="say">I numeri della tua ASP</h2>
+    ${needsRegion() ? `<p class="say">Prima scegli la tua regione.</p>${regionChoices()}` : `
     <p class="say">Scegli la tua provincia: guardia medica, CUP per prenotare, ufficio per i cittadini, cure a casa.</p>
     <div class="grid2">${provinces.map((p) => `<a class="btn choice" href="#${esc(p.id)}"${p.id === id ? ' aria-current="true"' : ''}><span class="txt">${esc(p.province)}</span></a>`).join('')}</div>
-    ${aspBlock(a)}
+    ${changeRegionLink()}
+    ${aspBlock(a)}`}
     ${nums.groups.slice(1).map(group).join('')}
     ${nums.notes.map((t) => `<div class="notice info"><p class="say">${esc(t)}</p></div>`).join('')}
     <h2 class="say">Su internet</h2>
@@ -109,6 +112,9 @@ function render() {
 
 app.addEventListener('click', (e) => {
   if (e.target.closest('button[data-action="listen"]')) speakScreen(app);
+  // Scelta della regione: la pagina ha una schermata sola, «Cambia regione» la ridisegna.
+  const btn = e.target.closest('button[data-action="region"], button[data-action="change-region"]');
+  if (btn) regionAction(btn, { current: 'province', render, go: render });
 });
 
 window.addEventListener('hashchange', () => {

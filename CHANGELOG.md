@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — scelta della regione nei moduli (nessun dato cambiato)
+- Passo 2 di `docs/regioni.md`: `regione()` legge la regione salvata nel browser (`localStorage`, chiave `gs-regione`), `setRegione(id)` la salva; schermata «In quale regione abiti?» prima della provincia e link «Cambia regione» (`js/flow.js`, anche in Numeri utili).
+- Con una sola regione attiva (oggi la Sicilia) la schermata e il link non compaiono: il sito è uguale a prima.
+- `privacy.html`: il sito ricorda nel browser solo la regione scelta, nessun dato sanitario; si cancella svuotando i dati del sito.
+
 ## 21/10/2026 — copie notturne delle pagine ufficiali e controllo settimanale assistito
 - Server in Italia (Aruba Cloud) che ogni notte salva in testo le pagine ufficiali delle ASP nel branch `copie-siti` (`tools/copie.mjs`); routine settimanale di Claude che le confronta con i dati e apre una pull request. Nessun dato cambiato. Come funziona: `docs/regioni.md`, sezione 8.
 - Test del 21/10/2026 dal server: 110 pagine su 134 rispondono; Messina ha il certificato installato male (si legge lo stesso), i vecchi indirizzi `dinamica.aspx` di Caltanissetta non esistono più (sito nuovo), una pagina di Siracusa dà 404: da aggiornare.
