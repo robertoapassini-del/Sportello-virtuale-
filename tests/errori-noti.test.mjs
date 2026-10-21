@@ -1,6 +1,6 @@
 // Errori già trovati sul sito, che non devono tornare. Ogni volta che una rilettura o un utente trova
 // un errore che si può riconoscere da come è scritto, si aggiunge qui una riga (cosa, perché, dove guardare).
-// Guarda le pagine HTML, i JS e i file di dati (non quelli delle regioni, che hanno il loro test).
+// Guarda le pagine HTML, i JS e i file di dati, anche quelli delle regioni.
 // Se fallisce: correggi il testo. Togli una riga solo se la regola è cambiata (e scrivilo nel CHANGELOG).
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
@@ -9,7 +9,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const SITE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const SALTA = new Set(['node_modules', '.git', 'tests', 'tools', 'docs', 'regioni', 'fonts', 'css']);
+const SALTA = new Set(['node_modules', '.git', 'tests', 'tools', 'docs', 'fonts', 'css']);
 function files(dir = SITE) {
   return fs.readdirSync(dir, { withFileTypes: true }).flatMap((e) => {
     if (SALTA.has(e.name)) return [];
@@ -34,6 +34,17 @@ const ERRORI = [
   [/l'ASL autorizza entro 20 giorni|L'articolo 18 dice che l'ASL autorizza entro/, 'ausili: i 20 giorni non sono del DPCM, sono una regola regionale (Sicilia)'],
   [/Per ora solo in Sicilia/, 'il sito vale in tutta Italia'],
   [/Fino a \$\{rules\.pediatra_only_until\} anni/, 'pediatra: «sotto i 6 anni» (tra 6 e 13 si può scegliere)'],
+  [/!parseDate\(/, 'parseDate() del 01/01/1970 vale 0 (falso): si controlla con «=== null» (audit del 21/10/2026)'],
+  [/C02[^<\n]{0,40}67|C03[^<\n]{0,40}frequenza/, 'codici esenzione invalidità: C02 = 100% con accompagnamento, C03 = 67-99%, C04 = minori con frequenza'],
+  [/strisce blu[^.\n]{0,100}(occupati|occupate)/, 'strisce blu: dal 14/12/2024 (L. 177/2024) gratis senza la condizione dei posti riservati occupati'],
+  [/part-time i giorni si riducono in proporzione/, 'permessi 104: con il part-time orizzontale i 3 giorni restano interi (circolare INPS 45/2021)'],
+  [/meno di 3 anni[^.\n]{0,80}prolungamento del congedo/, 'prolungamento del congedo parentale: fino ai 12 anni del figlio; solo le 2 ore fino ai 3 anni'],
+  [/rivalutazione dell.1,4%/, "accompagnamento: l'1,4% è la perequazione delle pensioni, non vale per l'accompagnamento"],
+  [/messaggio (n\. )?639\/2026/, 'province della riforma della disabilità: messaggi INPS 635 e 637 del 23/02/2026'],
+  [/art\. 6,? L\. 80\/2006|L\. 405\/2001, art\./, 'leggi di conversione con un solo articolo: si cita il decreto-legge (D.L. 4/2006 art. 6 c. 3-bis; D.L. 347/2001 art. 8)'],
+  [/lunedì e mercoledì[^;"]*;\s*dal martedì al giovedì/, 'orario con un giorno ripetuto e il venerdì mancante (URP ASL Roma 4, avviso con refuso)'],
+  [/DM 24\/11\/2022/, 'bonus psicologo: il decreto è del 24/11/2023'],
+  [/secondo i tempi indicati dalla normativa vigente/, 'i 30 giorni della vecchia procedura INPS sono indicativi (rules-invalidita.json): la lettera non li cita come norma'],
 ];
 
 test('nessuno degli errori già trovati è tornato', () => {

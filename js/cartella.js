@@ -1,7 +1,7 @@
 // Modulo 3 — cartella clinica e referti: «non me li danno».
 // Prima la risposta: la pagina mostra subito la risposta scritta; il conto e il sollecito partono dal pulsante.
 // Regola: la direzione sanitaria consegna la documentazione disponibile entro 7 giorni,
-// le integrazioni entro 30 (art. 4 c. 3 L. 24/2017). Ricorso: art. 25 L. 241/1990.
+// le integrazioni entro 30 (art. 4 c. 2 L. 24/2017). Ricorso: art. 25 L. 241/1990.
 // Non chiediamo mai la malattia: solo il nome della struttura e le date.
 import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
 import { cartellaReminder, mailtoHref } from './letters.js';
@@ -94,7 +94,7 @@ const screens = {
       document.getElementById('req-form').addEventListener('submit', (e) => {
         e.preventDefault();
         const v = readForm(e.target);
-        if (!parseDate(v.requestDate)) return showError('req-form', 'Scrivi il giorno.');
+        if (parseDate(v.requestDate) === null) return showError('req-form', 'Scrivi il giorno.');
         if (daysBetween(v.requestDate, todayISO()) < 0) return showError('req-form', 'Questo giorno non è ancora arrivato. Controlla la data.');
         state.requestDate = v.requestDate;
         flow.go('result');

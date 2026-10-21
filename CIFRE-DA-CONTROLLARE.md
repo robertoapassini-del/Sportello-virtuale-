@@ -39,7 +39,7 @@ Ultimo controllo di questo elenco: 20 ottobre 2026.
 | Accompagnamento: importo mensile | 551,53 € (2026); sospeso se ricovero gratuito oltre 29 giorni; INPS paga entro 45 giorni | `accompagnamento/` | `rules-accompagnamento.json` → `importo_mensile_2026` | [INPS – indennità di accompagnamento](https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.indennit-di-accompagnamento-agli-invalidi-civili.html) | ogni gennaio (circolare INPS di dicembre) |
 | L. 106/2025 (malati oncologici, invalidanti, cronici con invalidità ≥ 74%): ore in più l'anno e congedo non retribuito | 10 ore; 24 mesi | `legge-104/` | `rules-legge-104.json` → `ore_extra_anno_2026`, `congedo_non_retribuito_mesi` | [Normattiva – L. 106/2025](https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-07-18;106) | legge di bilancio |
 | Bonus psicologo: tetto, fasce ISEE, per seduta, tempo per usarlo | 1.500 € (ISEE ≤ 15.000), 1.000 € (≤ 30.000), 500 € (≤ 50.000); 50 €/seduta; 9 mesi | `psicologo/` | `rules-psicologo.json` → `bonus_*` | [INPS – bonus psicologo](https://www.inps.it) | ogni anno, con il decreto di riparto |
-| Dentista: soglia ISEE della vulnerabilità sociale (**secondaria**, da verificare per la Sicilia) | 8.000 € | `dentista/` | `rules-dentista.json` → `isee_vulnerabilita_sociale` | LEA, DPCM 12/01/2017 art. 9; delibere della Regione | legge di bilancio |
+| Dentista: soglia ISEE della vulnerabilità sociale (**secondaria**, da verificare per la Sicilia) | 8.000 € | `dentista/` | `rules-dentista.json` → `isee_vulnerabilita_sociale` | LEA, DPCM 12/01/2017, allegato 4C; delibere della Regione | legge di bilancio |
 
 ## Cifre ferme da anni (ricontrollare comunque una volta l'anno)
 
@@ -61,7 +61,7 @@ Ultimo controllo di questo elenco: 20 ottobre 2026.
 | Accompagnamento: requisiti e mensilità | 100% di invalidità (18–65 anni); 12 mensilità | `accompagnamento/` | `rules-accompagnamento.json` | L. 18/1980 |
 | Contrassegno disabili: durata; IVA e detrazione sull'auto (legge 104) | 5 anni; 4%; 19% | `contrassegno-disabili/` | `rules-contrassegno-disabili.json` | DPR 495/1992 art. 381; Agenzia delle Entrate |
 | Cure all'estero: rimborso | entro 30 giorni dal rientro | `cure-fuori-regione/` | `rules-cure-fuori-regione.json` | Direttiva assessoriale prot. 9368 dell'11/02/2026 |
-| Dentista: età dei minori nei LEA; detrazione | 14 anni; 19% | `dentista/` | `rules-dentista.json` | DPCM 12/01/2017 art. 9 |
+| Dentista: età dei minori nei LEA; detrazione | 14 anni; 19% | `dentista/` | `rules-dentista.json` | DPCM 12/01/2017, allegato 4C |
 
 ## Note aperte
 

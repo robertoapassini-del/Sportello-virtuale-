@@ -151,16 +151,23 @@ for (const ageBand of Object.keys(AGE)) for (const status of Object.keys(STATUS)
 }
 // Modulo 6: ricorso entro 6 mesi.
 const addM = (iso, n) => { const [y, m, d] = iso.split('-').map(Number); const t = new Date(Date.UTC(y, m - 1 + n, 1)); const last = new Date(Date.UTC(t.getUTCFullYear(), t.getUTCMonth() + 1, 0)).getUTCDate(); t.setUTCDate(Math.min(d, last)); return t.toISOString().slice(0, 10); };
+// Se i 6 mesi finiscono di sabato, domenica o in un festivo, il termine slitta al primo giorno lavorativo
+// (art. 155 c.p.c.). Calcolo indipendente da js/engine.js: Lunedì dell'Angelo da una tabella, non dalla formula.
+const PASQUETTA = ['2025-04-21', '2026-04-06', '2027-03-29', '2028-04-17', '2029-04-02', '2030-04-22', '2031-04-14', '2032-03-29'];
+const FISSI = ['01-01', '01-06', '04-25', '05-01', '06-02', '08-15', '11-01', '12-08', '12-25', '12-26'];
+const lavorativo = (iso) => { const g = new Date(`${iso}T00:00:00Z`).getUTCDay(); return g !== 0 && g !== 6 && !FISSI.includes(iso.slice(5)) && !(iso.slice(5) === '10-04' && iso >= '2026') && !PASQUETTA.includes(iso); };
+const utile = (iso) => { let d = iso; while (!lavorativo(d)) d = add(d, 1); return d; };
+const scadRic = (v) => utile(addM(v, 6));
 cases.push({ mod: 6, name: 'RIC · senza verbale', path: 'notyet', expectH1: 'Prima serve il verbale' });
-cases.push({ mod: 6, name: 'RIC · verbale oggi', verbale: TODAY, expectH1: 'Sei ancora in tempo', deadline: addM(TODAY, 6) });
+cases.push({ mod: 6, name: 'RIC · verbale oggi', verbale: TODAY, expectH1: 'Sei ancora in tempo', deadline: scadRic(TODAY) });
 // Il verbale che scade proprio in quel giorno (a fine mese non sempre esiste: 31/08 → 28/02 → 28/08).
-const verbaleFor = (deadline) => { for (let n = 170; n <= 190; n++) { const v = add(TODAY, -n); if (addM(v, 6) === deadline) return v; } return null; };
-cases.push({ mod: 6, name: 'RIC · verbale 100 giorni fa (non urgente)', verbale: add(TODAY, -100), expectH1: 'Sei ancora in tempo', deadline: addM(add(TODAY, -100), 6) });
+const verbaleFor = (deadline) => { for (let n = 170; n <= 190; n++) { const v = add(TODAY, -n); if (scadRic(v) === deadline) return v; } return null; };
+cases.push({ mod: 6, name: 'RIC · verbale 100 giorni fa (non urgente)', verbale: add(TODAY, -100), expectH1: 'Sei ancora in tempo', deadline: scadRic(add(TODAY, -100)) });
 for (const [off, h1, name] of [[31, 'Sei ancora in tempo', 'mancano 31 giorni'], [30, 'Muoviti subito: manca poco', 'mancano 30 giorni (urgente)'], [10, 'Muoviti subito: manca poco', 'mancano 10 giorni (urgente)'], [0, 'Muoviti subito: manca poco', 'scade oggi'], [-1, 'I 6 mesi sono passati', 'scaduto ieri']]) {
   const v = verbaleFor(add(TODAY, off));
   if (v) cases.push({ mod: 6, name: `RIC · ${name}`, verbale: v, expectH1: h1, deadline: add(TODAY, off), today: off === 0 });
 }
-cases.push({ mod: 6, name: 'RIC · scaduto da un anno', verbale: addM(TODAY, -18), expectH1: 'I 6 mesi sono passati', deadline: addM(TODAY, -12) });
+cases.push({ mod: 6, name: 'RIC · scaduto da un anno', verbale: addM(TODAY, -18), expectH1: 'I 6 mesi sono passati', deadline: scadRic(addM(TODAY, -18)) });
 cases.push({ mod: 6, name: 'RIC · data nel futuro', verbale: add(TODAY, 1), expectReqError: true });
 
 // Modulo 7: assegno di inclusione.

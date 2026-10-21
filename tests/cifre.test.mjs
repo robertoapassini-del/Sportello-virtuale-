@@ -28,7 +28,7 @@ const ECCEZIONI = {
     { testo: /circa 4 mesi$/, perche: 'classe P: 120 giorni arrotondati in mesi', valore: (d) => Math.round(d.rules.max_wait_days.P / 30), unita: 'mesi' },
   ],
   'esenzione-ticket': [
-    { testo: /invalidità civile (al 100|dal 67|dal 67% al 99)%$/, perche: 'percentuali di invalidità dei codici C01 e C02: sono nel testo di other_exemptions' },
+    { testo: /invalidità civile (al 100|dal 67|dal 67% al 99)%$/, perche: 'percentuali di invalidità dei codici C01-C03: sono nel testo di other_exemptions' },
   ],
   'assistenza-domiciliare': [
     { testo: /1\.129,11 euro$/, perche: 'esempio: 1.000 € di spese più la franchigia', valore: (d) => 1000 + d['rules-domiciliare'].detrazione.franchigia, unita: '€' },
