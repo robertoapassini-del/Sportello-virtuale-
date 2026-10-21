@@ -2,6 +2,12 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — Liguria: i numeri utili delle 4 province
+- 47 numeri di ATS Liguria (le ex ASL sono ora aree sociosanitarie), controllati nelle copie delle pagine ufficiali del 21/10/2026.
+- Prenotazioni: CUP Liguria 010 5383400. Guardia medica: 116117 solo nel Tigullio, numeri locali nelle altre aree.
+- Il nome dell'azienda sanitaria in Liguria ora è ATS.
+- Sedi INPS delle 4 province.
+
 ## 21/10/2026 — Valle d'Aosta: i numeri utili
 - 13 numeri dell'Azienda USL (centralino, CUP, URP, sportelli di scelta del medico), controllati nelle copie delle pagine ufficiali del 21/10/2026.
 - Guardia medica: in Valle d'Aosta si chiama il 112.

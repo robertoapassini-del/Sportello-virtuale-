@@ -1,0 +1,631 @@
+{
+ "region": "Liguria",
+ "model": "ATS Liguria",
+ "_note": "Numeri delle aziende sanitarie della Liguria (dal 2026 ATS Liguria, con 5 aree sociosanitarie) per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili. Prenotazioni: CUP Liguria 010 5383400. Il 116117 è attivo solo nel Tigullio (dal 16/12/2025); altrove restano i numeri di guardia medica delle aree.",
+ "asl": [
+  {
+   "id": "genova",
+   "name": "ATS Liguria – Aree sociosanitarie locali 3 (Area Metropolitana di Genova) e 4 (Tigullio)",
+   "province": "Genova",
+   "site_url": "https://www.asl3.liguria.it/",
+   "official_domains": [
+    "atsliguria.it",
+    "liguriasalute.atsliguria.it",
+    "asl1.liguria.it",
+    "asl2.liguria.it",
+    "asl3.liguria.it",
+    "asl4.liguria.it",
+    "asl5.liguria.it",
+    "regione.liguria.it",
+    "prenotosalute.regione.liguria.it",
+    "pua.regione.liguria.it",
+    "alisa.liguria.it",
+    "liguriadigitale.it"
+   ],
+   "guardia_medica_url": "https://www.asl3.liguria.it/ospedali/emergenza.html",
+   "pua_url": "https://www.asl3.liguria.it/territorio/servizi/cure-primarie/3764-assistenza-domiciliare-integrata.html",
+   "pec": "protocollo@pec.atsliguria.it",
+   "phones": [
+    {
+     "label": "Centralino ATS Liguria – area genovese (ex ASL3)",
+     "number": "010 84911",
+     "url": "https://www.asl3.liguria.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino ATS Liguria – Tigullio (ex ASL4 Chiavarese)",
+     "number": "0185 329111",
+     "url": "https://www.asl4.liguria.it/contatti/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "116117 – guardia medica e cure non urgenti nel Tigullio (comuni con prefisso 0185)",
+     "number": "116117",
+     "hours": "Tutti i giorni, 24 ore su 24",
+     "url": "https://www.regione.liguria.it/homepage-giunta/giunta-regionale/comunicati-stampa-della-giunta-regionale/item/45316-numero-116117.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica – area genovese (ex ASL3): numero verde unico gratuito",
+     "number": "800 893580",
+     "hours": "Lun–ven 20–8; sabato, domenica, prefestivi e festivi 24 ore su 24",
+     "url": "https://www.asl3.liguria.it/ospedali/emergenza.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP Liguria: prenotare visite ed esami (numero unico regionale)",
+     "number": "010 5383400",
+     "hours": "Dal lunedì al venerdì 8–18",
+     "url": "https://www.regione.liguria.it/homepage-salute/come-fare-per/cup-liguria.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Numero verde area genovese: se non trovi posto nei tempi della ricetta",
+     "number": "800 185055",
+     "hours": "Dal lunedì al venerdì 9–15",
+     "url": "https://www.asl3.liguria.it/azienda/organi-aziendali/direzione-aziendale/staff/strutture-staff-direzione-generale/ufficio-stampa-comunicazione-e-urp.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Numero verde Tigullio: percorso di tutela se non trovi posto nei tempi della ricetta",
+     "number": "800 185088",
+     "url": "https://www.asl4.liguria.it/prenotazioni-cup/prenotazioni/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP centrale ATS Liguria – area genovese: ufficio per i cittadini, reclami",
+     "number": "010 8492415",
+     "hours": "Dal lunedì al venerdì 8.30–12.30",
+     "url": "https://www.asl3.liguria.it/urp.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP ATS Liguria – Tigullio: ufficio per i cittadini, reclami",
+     "number": "0185 329316",
+     "address": "Via G. B. Ghio 9, Chiavari",
+     "url": "https://www.asl4.liguria.it/s-c-formazione-e-info-comunicazione/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari – area genovese, Distretto 8 Ponente (Voltri)",
+     "number": "010 8499664",
+     "url": "https://www.asl3.liguria.it/territorio/servizi/cure-primarie/3764-assistenza-domiciliare-integrata.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari – area genovese, Distretto 9 Medio Ponente (Sampierdarena)",
+     "number": "010 8497073",
+     "url": "https://www.asl3.liguria.it/territorio/servizi/cure-primarie/3764-assistenza-domiciliare-integrata.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari – area genovese, Distretto 10 Valpolcevera",
+     "number": "010 8499493",
+     "url": "https://www.asl3.liguria.it/territorio/servizi/cure-primarie/3764-assistenza-domiciliare-integrata.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari – area genovese, Distretto 11 Centro",
+     "number": "010 8494547",
+     "address": "Via Assarotti 35, Genova",
+     "url": "https://www.asl3.liguria.it/territorio/servizi/cure-primarie/3764-assistenza-domiciliare-integrata.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari – area genovese, Distretto 12 Valbisagno e Valtrebbia",
+     "number": "010 8494825",
+     "address": "Via Archimede 30 A, Genova",
+     "url": "https://www.asl3.liguria.it/territorio/servizi/cure-primarie/3764-assistenza-domiciliare-integrata.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari – area genovese, Distretto 13 Levante",
+     "number": "010 8496738",
+     "hours": "Dal lunedì al venerdì 8.30–12.30",
+     "address": "Largo F. Cattanei 4, Genova",
+     "url": "https://www.asl3.liguria.it/territorio/servizi/cure-primarie/3764-assistenza-domiciliare-integrata.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari – Tigullio, Distretto 14 (Ospedale di Rapallo)",
+     "number": "0185 683272",
+     "hours": "Dal lunedì al venerdì 10–12.30",
+     "url": "https://www.asl4.liguria.it/assistenza-domiciliare-integrata/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari – Tigullio, Distretto 15 (Chiavari, sportello integrato)",
+     "number": "0185 329411",
+     "hours": "Dal lunedì al venerdì 9–12.30",
+     "url": "https://www.asl4.liguria.it/assistenza-domiciliare-integrata/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari – Tigullio, Distretto 16 (Ospedale di Sestri Levante)",
+     "number": "0185 329948",
+     "url": "https://www.asl4.liguria.it/assistenza-domiciliare-integrata/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ATS Liguria – Area 3: emergenze e guardia medica",
+     "url": "https://www.asl3.liguria.it/ospedali/emergenza.html"
+    },
+    {
+     "label": "ATS Liguria – Area 3: URP",
+     "url": "https://www.asl3.liguria.it/urp.html"
+    },
+    {
+     "label": "ATS Liguria – Area 3: assistenza domiciliare integrata",
+     "url": "https://www.asl3.liguria.it/territorio/servizi/cure-primarie/3764-assistenza-domiciliare-integrata.html"
+    },
+    {
+     "label": "ATS Liguria – Area 4: guardia medica",
+     "url": "https://www.asl4.liguria.it/guardia-medica/"
+    },
+    {
+     "label": "ATS Liguria – Area 4: contatti",
+     "url": "https://www.asl4.liguria.it/contatti/"
+    },
+    {
+     "label": "Regione Liguria – 116117 nel Tigullio",
+     "url": "https://www.regione.liguria.it/homepage-giunta/giunta-regionale/comunicati-stampa-della-giunta-regionale/item/45316-numero-116117.html"
+    },
+    {
+     "label": "Regione Liguria – CUP Liguria",
+     "url": "https://www.regione.liguria.it/homepage-salute/come-fare-per/cup-liguria.html"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "Il 116117 vale solo per il Tigullio (ex ASL4); per il resto della provincia (area genovese) la guardia medica è 800 893580.",
+    "Pagine ASL3 «contatti» e «cure domiciliari sedi» in errore 500, pagina CUP ASL3 non raggiungibile: anagrafe sanitaria non inserita (troppi sportelli diversi)."
+   ],
+   "emails": []
+  },
+  {
+   "id": "imperia",
+   "name": "ATS Liguria – Area sociosanitaria locale 1 (Imperia, ex ASL1 Imperiese)",
+   "province": "Imperia",
+   "site_url": "https://www.asl1.liguria.it/",
+   "official_domains": [
+    "atsliguria.it",
+    "liguriasalute.atsliguria.it",
+    "asl1.liguria.it",
+    "asl2.liguria.it",
+    "asl3.liguria.it",
+    "asl4.liguria.it",
+    "asl5.liguria.it",
+    "regione.liguria.it",
+    "prenotosalute.regione.liguria.it",
+    "pua.regione.liguria.it",
+    "alisa.liguria.it",
+    "liguriadigitale.it"
+   ],
+   "guardia_medica_url": "https://www.asl1.liguria.it/emergenze-e-guardia-medica/guardia-medica.html",
+   "pua_url": "https://www.asl1.liguria.it/territorio/distretti-sanitari/casa-comunita/casa-comunita-imperia.html",
+   "pec": "protocollo@pec.atsliguria.it",
+   "phones": [
+    {
+     "label": "Centralino ATS Liguria – area imperiese (ex ASL1)",
+     "number": "0184 5361",
+     "url": "https://www.asl1.liguria.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale) – area imperiese: numero verde gratuito",
+     "number": "800 554400",
+     "hours": "Tutti i giorni dalle 20 alle 8; sabato, prefestivi, domenica e festivi anche dalle 8 alle 20",
+     "url": "https://www.asl1.liguria.it/emergenze-e-guardia-medica/guardia-medica.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP Liguria: prenotare visite ed esami (numero unico regionale, da fisso e cellulare)",
+     "number": "010 5383400",
+     "hours": "Dal lunedì al venerdì 8–18",
+     "url": "https://www.asl1.liguria.it/prenotazioni-e-ticket/centro-unico-di-prenotazioni-ambulatoriali-cup.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Numero verde ATS Liguria – area imperiese: se non trovi posto nei tempi della ricetta",
+     "number": "800 186044",
+     "hours": "Dal lunedì al venerdì 9–13 (esclusi i festivi)",
+     "url": "https://www.asl1.liguria.it/prenotazioni-e-ticket/numero-verde-gratuito-riduzione-tempi-attesa.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP ATS Liguria – area imperiese: ufficio per i cittadini, reclami",
+     "number": "0184 536656",
+     "hours": "Dal lunedì al venerdì 10–12",
+     "address": "Via Aurelia Ponente 97, Bussana di Sanremo",
+     "url": "https://www.asl1.liguria.it/urp.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA della Casa della Comunità di Imperia: cure a casa e servizi sociosanitari",
+     "number": "0183 537567",
+     "hours": "Dal lunedì al venerdì 7.30–15.30",
+     "url": "https://www.asl1.liguria.it/territorio/distretti-sanitari/casa-comunita/casa-comunita-imperia.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA del distretto ventimigliese (Ventimiglia, Bordighera)",
+     "number": "0184 534878",
+     "hours": "Lunedì, mercoledì e venerdì 8–13",
+     "url": "https://www.asl1.liguria.it/territorio/distretti-sanitari/distretto-sanitario-ventimigliese.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari (ADI) del distretto ventimigliese: assistenza infermieristica",
+     "number": "0184 534823",
+     "url": "https://www.asl1.liguria.it/territorio/distretti-sanitari/distretto-sanitario-ventimigliese.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Medici della Casa della Comunità di Sanremo",
+     "number": "0184 534714",
+     "url": "https://www.regione.liguria.it/homepage-salute/ultime-dal-canale/item/46570-numeri-medici-case-comunita.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ATS Liguria – Area 1: guardia medica",
+     "url": "https://www.asl1.liguria.it/emergenze-e-guardia-medica/guardia-medica.html"
+    },
+    {
+     "label": "ATS Liguria – Area 1: CUP",
+     "url": "https://www.asl1.liguria.it/prenotazioni-e-ticket/centro-unico-di-prenotazioni-ambulatoriali-cup.html"
+    },
+    {
+     "label": "ATS Liguria – Area 1: URP",
+     "url": "https://www.asl1.liguria.it/urp.html"
+    },
+    {
+     "label": "Regione Liguria – Numeri utili delle Case della Comunità",
+     "url": "https://www.regione.liguria.it/homepage-salute/ultime-dal-canale/item/46570-numeri-medici-case-comunita.html"
+    },
+    {
+     "label": "Regione Liguria – 116117 nel Tigullio",
+     "url": "https://www.regione.liguria.it/homepage-giunta/giunta-regionale/comunicati-stampa-della-giunta-regionale/item/45316-numero-116117.html"
+    },
+    {
+     "label": "ATS Liguria – Azienda",
+     "url": "https://www.atsliguria.it/azienda.html"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "ASL liguri: dal 1° gennaio 2026 le 5 ASL e Liguria Salute (ex A.Li.Sa.) sono confluite in ATS Liguria (Azienda Tutela della Salute Liguria, atsliguria.it, L.R. 18/2025). Le ex ASL ora si chiamano «Area sociosanitaria locale» n. 1 Imperia, 2 Savona, 3 Area Metropolitana di Genova, 4 Tigullio, 5 La Spezia; i siti asl1…asl5.liguria.it restano attivi come siti delle Aree. PEC unica: protocollo@pec.atsliguria.it.",
+    "116117: attivo solo in via sperimentale dal 16 dicembre 2025 nel Tigullio (Area 4, comuni con prefisso 0185); esclusi Carro, Maissana e Varese Ligure (provincia della Spezia, prefisso 0187), che usano 0185 371020. La Regione dice che sarà esteso a tutta la Liguria, ma a giugno 2026 (pagina Case della Comunità) le altre aree hanno ancora i loro numeri: quindi 116117 messo solo nella voce Genova per il Tigullio, e altrove i numeri locali di guardia medica.",
+    "CUP: numero unico regionale CUP Liguria 010 5383400 (dal 1° agosto 2024, sostituisce 800 098543), da fisso e cellulare, lun–ven 8–18; online prenotosalute.regione.liguria.it, oltre a sportelli, farmacie e medici. Ogni area ha anche un numero verde per il «percorso di tutela» (chi non trova posto nei tempi della ricetta).",
+    "Area 1: nessuna pagina PEC (errore 500); manca una pagina con il numero dell'anagrafe sanitaria/scelta del medico."
+   ],
+   "emails": []
+  },
+  {
+   "id": "la-spezia",
+   "name": "ATS Liguria – Area sociosanitaria locale 5 (La Spezia, ex ASL5 Spezzino)",
+   "province": "La Spezia",
+   "site_url": "https://www.asl5.liguria.it/",
+   "official_domains": [
+    "atsliguria.it",
+    "liguriasalute.atsliguria.it",
+    "asl1.liguria.it",
+    "asl2.liguria.it",
+    "asl3.liguria.it",
+    "asl4.liguria.it",
+    "asl5.liguria.it",
+    "regione.liguria.it",
+    "prenotosalute.regione.liguria.it",
+    "pua.regione.liguria.it",
+    "alisa.liguria.it",
+    "liguriadigitale.it"
+   ],
+   "guardia_medica_url": "https://www.asl5.liguria.it/Emergenzae112/Guardiamedica.aspx",
+   "pua_url": "https://www.asl5.liguria.it/PerilCittadino/Serviziterritoriali/CurePrimarieeAttivit%C3%A0Distrettuali/Prestazioniinfermieristichedomiciliari.aspx",
+   "emails": [
+    "urp@asl5.liguria.it"
+   ],
+   "pec": "protocollo@pec.atsliguria.it",
+   "phones": [
+    {
+     "label": "Centralino ATS Liguria – area spezzina (ex ASL5)",
+     "number": "0187 5331",
+     "url": "https://www.asl5.liguria.it/Home/Contatti.aspx",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "Guardia medica – area spezzina: centrale operativa (C.O.C.A.)",
+     "number": "0187 026198",
+     "url": "https://www.asl5.liguria.it/Emergenzae112/Guardiamedica.aspx",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica per i comuni di Carro, Maissana e Varese Ligure (seguiti dal Tigullio)",
+     "number": "0185 371020",
+     "url": "https://www.asl4.liguria.it/guardia-medica/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP Liguria: prenotare visite ed esami (numero unico regionale, gratuito da fisso e cellulare)",
+     "number": "010 5383400",
+     "hours": "Dal lunedì al venerdì 8–18",
+     "url": "https://www.asl5.liguria.it/PerilCittadino/Prenotazioniticketesenzioni/Modalit%C3%A0prenotazione-punticup.aspx",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP ATS Liguria – area spezzina: ufficio per i cittadini, reclami",
+     "number": "0187 533915",
+     "address": "Via Vittorio Veneto 197, Ospedale Sant'Andrea (Edificio 9), La Spezia",
+     "url": "https://www.asl5.liguria.it/Istituzionali/Relazioniconilpubblico.aspx",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP ATS Liguria – area spezzina: numero verde (solo da telefono fisso)",
+     "number": "800 240042",
+     "url": "https://www.asl5.liguria.it/Istituzionali/Relazioniconilpubblico.aspx",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure infermieristiche a casa – La Spezia e Portovenere (triage infermieristico, Casa della Salute)",
+     "number": "0187 534785",
+     "address": "Via Sardegna 45, La Spezia",
+     "url": "https://www.asl5.liguria.it/PerilCittadino/Serviziterritoriali/CurePrimarieeAttivit%C3%A0Distrettuali/Prestazioniinfermieristichedomiciliari.aspx",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure infermieristiche a casa – Distretto 17 Levanto",
+     "number": "0187 533841",
+     "hours": "Dal lunedì al sabato 7–13",
+     "url": "https://www.asl5.liguria.it/PerilCittadino/Serviziterritoriali/CurePrimarieeAttivit%C3%A0Distrettuali/Prestazioniinfermieristichedomiciliari.aspx",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ATS Liguria – Area 5: guardia medica",
+     "url": "https://www.asl5.liguria.it/Emergenzae112/Guardiamedica.aspx"
+    },
+    {
+     "label": "ATS Liguria – Area 5: contatti",
+     "url": "https://www.asl5.liguria.it/Home/Contatti.aspx"
+    },
+    {
+     "label": "ATS Liguria – Area 5: relazioni con il pubblico",
+     "url": "https://www.asl5.liguria.it/Istituzionali/Relazioniconilpubblico.aspx"
+    },
+    {
+     "label": "ATS Liguria – Area 4: guardia medica (Carro, Maissana, Varese Ligure)",
+     "url": "https://www.asl4.liguria.it/guardia-medica/"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "Area 5: mancano numero del percorso di tutela (tempi d'attesa) e PUA unico; cure domiciliari solo per alcune zone."
+   ]
+  },
+  {
+   "id": "savona",
+   "name": "ATS Liguria – Area sociosanitaria locale 2 (Savona, ex ASL2 Savonese)",
+   "province": "Savona",
+   "site_url": "https://www.asl2.liguria.it/",
+   "official_domains": [
+    "atsliguria.it",
+    "liguriasalute.atsliguria.it",
+    "asl1.liguria.it",
+    "asl2.liguria.it",
+    "asl3.liguria.it",
+    "asl4.liguria.it",
+    "asl5.liguria.it",
+    "regione.liguria.it",
+    "prenotosalute.regione.liguria.it",
+    "pua.regione.liguria.it",
+    "alisa.liguria.it",
+    "liguriadigitale.it"
+   ],
+   "guardia_medica_url": "https://www.asl2.liguria.it/emergenze-e-guardia-medica/guardia-medica.html",
+   "pua_url": "https://www.asl2.liguria.it/territorio/distretto-savonese/casa-comunita-savona.html",
+   "pec": "protocollo@pec.atsliguria.it",
+   "phones": [
+    {
+     "label": "Centralino ATS Liguria – area savonese (ex ASL2)",
+     "number": "019 84041",
+     "url": "https://www.asl2.liguria.it/contatti/contatti-utili.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale) – area savonese: numero verde gratuito",
+     "number": "800 556688",
+     "url": "https://www.asl2.liguria.it/emergenze-e-guardia-medica/guardia-medica.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP Liguria: prenotare visite ed esami (numero unico regionale)",
+     "number": "010 5383400",
+     "url": "https://www.asl2.liguria.it/prenotazioni-e-ticket.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP ATS Liguria – area savonese, sede di Savona: ufficio per i cittadini, reclami",
+     "number": "019 8405296",
+     "address": "Via Collodi 13, Savona",
+     "url": "https://www.asl2.liguria.it/urp.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP ATS Liguria – area savonese, sede di Pietra Ligure (Ospedale Santa Corona)",
+     "number": "019 6234235",
+     "address": "Via XXV Aprile 38, Pietra Ligure",
+     "url": "https://www.asl2.liguria.it/urp.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA della Casa della Comunità di Savona: cure a casa e servizi sociosanitari",
+     "number": "019 8405788",
+     "url": "https://www.asl2.liguria.it/territorio/distretto-savonese/casa-comunita-savona.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA di Albenga",
+     "number": "0182 546042",
+     "url": "https://www.regione.liguria.it/homepage-salute/ultime-dal-canale/item/46570-numeri-medici-case-comunita.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA di Cairo Montenotte",
+     "number": "019 5009234",
+     "url": "https://www.regione.liguria.it/homepage-salute/ultime-dal-canale/item/46570-numeri-medici-case-comunita.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA di Pietra Ligure",
+     "number": "019 6234200",
+     "url": "https://www.regione.liguria.it/homepage-salute/ultime-dal-canale/item/46570-numeri-medici-case-comunita.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA di Vado Ligure",
+     "number": "019 8405275",
+     "url": "https://www.regione.liguria.it/homepage-salute/ultime-dal-canale/item/46570-numeri-medici-case-comunita.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "palliative",
+     "label": "Cure palliative – Ospedale San Paolo di Savona",
+     "number": "019 8404413",
+     "address": "Via Genova 30, Savona",
+     "url": "https://www.asl2.liguria.it/territorio/distretto-savonese/assistenza-domiciliare-distretto-savonese/cure-palliative-distretto-savonese.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "palliative",
+     "label": "Cure palliative – Ospedale Santa Corona di Pietra Ligure",
+     "number": "019 6234392",
+     "address": "Via XXV Aprile 38, Pietra Ligure",
+     "url": "https://www.asl2.liguria.it/territorio/distretto-savonese/assistenza-domiciliare-distretto-savonese/cure-palliative-distretto-savonese.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ATS Liguria – Area 2: contatti utili",
+     "url": "https://www.asl2.liguria.it/contatti/contatti-utili.html"
+    },
+    {
+     "label": "ATS Liguria – Area 2: guardia medica",
+     "url": "https://www.asl2.liguria.it/emergenze-e-guardia-medica/guardia-medica.html"
+    },
+    {
+     "label": "ATS Liguria – Area 2: URP",
+     "url": "https://www.asl2.liguria.it/urp.html"
+    },
+    {
+     "label": "Regione Liguria – Numeri utili delle Case della Comunità",
+     "url": "https://www.regione.liguria.it/homepage-salute/ultime-dal-canale/item/46570-numeri-medici-case-comunita.html"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "Area 2: manca un numero sicuro per il percorso di tutela (tempi d'attesa) e per l'anagrafe sanitaria; PUA di Finale Ligure scritto in modo anomalo sulla pagina regionale (019 6815 2246), non inserito."
+   ],
+   "emails": []
+  }
+ ]
+}

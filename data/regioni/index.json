@@ -9,7 +9,7 @@
     { "id": "emilia-romagna", "name": "Emilia-Romagna", "attiva": true, "asl_label": "AUSL", "moduli": ["numeri-utili"] },
     { "id": "friuli-venezia-giulia", "name": "Friuli-Venezia Giulia", "attiva": false, "asl_label": "Azienda sanitaria" },
     { "id": "lazio", "name": "Lazio", "in": "nel Lazio", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili"] },
-    { "id": "liguria", "name": "Liguria", "attiva": false, "asl_label": "ASL" },
+    { "id": "liguria", "name": "Liguria", "attiva": true, "asl_label": "ATS", "moduli": ["numeri-utili"] },
     { "id": "lombardia", "name": "Lombardia", "attiva": true, "asl_label": "ATS", "moduli": ["numeri-utili"] },
     { "id": "marche", "name": "Marche", "in": "nelle Marche", "attiva": false, "asl_label": "AST" },
     { "id": "molise", "name": "Molise", "attiva": false, "asl_label": "ASREM" },
