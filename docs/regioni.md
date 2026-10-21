@@ -190,6 +190,12 @@ di aziende sanitarie. Lo facciamo in tre pezzi, ognuno con un compito solo:
    Si installa una volta, con una riga in `crontab -e` sul server:
    `*/15 * * * * /opt/guidasanita/tools/copie-se-serve.sh "<comando delle 3:30>" >> /opt/guidasanita/copie-se-serve.log 2>&1`.
    La prima volta che gira fa subito una copia; non parte se un'altra copia è già in corso.
+   **Pagine fatte con JavaScript** (es. AST delle Marche, ULSS di Venezia, Azienda sanitaria dell'Alto Adige):
+   scaricate così sono quasi vuote. Se sul server c'è Playwright, `tools/copie.mjs` le riapre in un browser vero
+   (Chromium) e salva il testo che compare (`"browser": true` nell'indice). Si installa una volta, nella cartella
+   del sito: `cd /opt/guidasanita && npm install --no-save playwright && sudo npx playwright install --with-deps chromium`.
+   Le pagine con CAPTCHA o controllo anti-robot non si copiano neanche così: sono segnate nell'indice e vanno
+   sostituite con altre pagine ufficiali.
 2. **Claude confronta e propone.** Una routine settimanale di Claude Code (cloud, inclusa nell'abbonamento) legge
    le copie, le confronta con `data/regioni/<regione>/*.json` e apre una pull request: per ogni numero trovato
    nella pagina ufficiale aggiorna `verified` e `proof: "pagina"`; per ogni numero non trovato, pagina rotta
