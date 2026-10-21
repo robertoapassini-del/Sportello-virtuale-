@@ -27,8 +27,15 @@ const esc = (v) => String(v).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&
 
 const reg = JSON.parse(read('data/moduli.json'));
 const home = read('index.html');
-// L'icona è su una riga sola (ha virgolette dentro l'indirizzo): si prende tutta la riga.
-const FAVICON = home.match(/<link rel="icon".*>/)[0];
+// Icone del sito: favicon.ico (Google e browser vecchi), logo.svg (browser nuovi),
+// apple-touch-icon.png (iPhone), site.webmanifest (Android). Google mostra l'icona nei risultati
+// solo se sta a un indirizzo vero e stabile, non scritta dentro la pagina (data:).
+const icons = (root) => [
+  `<link rel="icon" href="${root}favicon.ico" sizes="48x48">`,
+  `<link rel="icon" href="${root}logo.svg" type="image/svg+xml">`,
+  `<link rel="apple-touch-icon" href="${root}apple-touch-icon.png">`,
+  `<link rel="manifest" href="${root}site.webmanifest">`,
+].join('\n');
 const MARK = home.match(/<svg class="brand-mark"[\s\S]*?<\/svg>/)[0];
 const groupById = Object.fromEntries(reg.groups.map((g) => [g.id, g]));
 const INIZIO = { label: 'Inizio', href: '' };
@@ -80,7 +87,7 @@ function areaPage(g, root) {
 <title>${esc(g.title)} – Guida Sanità</title>
 <meta name="description" content="${esc(g.intro)}">
 <meta name="theme-color" content="#0b5f5c">
-${FAVICON}
+${icons(root)}
 <script>document.documentElement.className += ' js';</script>
 <link rel="stylesheet" href="${root}css/style.css">
 </head>
@@ -252,6 +259,9 @@ for (const p of pages) {
   const re = /<header class="site-header">[\s\S]*?<\/header>(\n<nav class="breadcrumb"[\s\S]*?<\/nav>)?/;
   if (!re.test(html)) throw new Error(`Testata non trovata in ${p.file}`);
   html = html.replace(re, () => top).replace('<meta name="theme-color" content="#ffffff">', '<meta name="theme-color" content="#0b5f5c">');
+  // Le icone sono le stesse in ogni pagina: si tolgono quelle che ci sono e si rimettono tutte, con il percorso giusto.
+  html = html.replace(/<link rel="(?:icon|apple-touch-icon|manifest)"[^\n]*>\n/g, '')
+    .replace(/<meta name="theme-color"[^>]*>\n/, (m) => `${m}${icons(root)}\n`);
   // Indirizzo canonico: «/x/» e «/x/index.html» sono la stessa pagina per Google.
   const url = pageUrl(p.file);
   html = html.replace(/<link rel="canonical"[^>]*>\n/, '').replace(/<meta property="og:[^>]*>\n/g, '')

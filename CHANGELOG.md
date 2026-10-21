@@ -2,6 +2,12 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — L'icona del sito nei risultati di Google
+- Google non mostrava l'icona accanto a «guidasanita.it» nei risultati: l'icona era scritta dentro ogni pagina (indirizzo `data:`) e Google vuole un file a un indirizzo stabile, quadrato, multiplo di 48 pixel.
+- Nuovi file, fatti dal logo (`logo.svg`): `favicon.ico` (16, 32 e 48 pixel), `apple-touch-icon.png` (iPhone), `icon-192.png` e `icon-512.png` con `site.webmanifest` (Android).
+- Ogni pagina ora collega `favicon.ico`, `logo.svg`, `apple-touch-icon.png` e `site.webmanifest`; i link li scrive `tools/pagine.mjs`, che è l'unico posto dove cambiarli.
+- Google aggiorna l'icona quando ripassa sulla home page: può volerci qualche giorno. Per fare prima: Search Console → «Controllo URL» su https://guidasanita.it/ → «Richiedi indicizzazione».
+
 ## 21/10/2026 — Controllate quattro regole: ausili, esenzione, ricetta, screening
 - Ausili (`data/rules-ausili.json`, pagine `ausili/`, lettera di sollecito): il DPCM 12/01/2017 (art. 18) lascia alle Regioni il tempo per l'autorizzazione; i 20 giorni con silenzio-assenso (e il collaudo entro 20 giorni) ora sono indicati come regola della Sicilia (D.A. 20/12/2011 sul DM 332/1999). La lettera non attribuisce più i 20 giorni al DPCM. Fonte aggiunta: procedure dell'ASP Catania. Il testo del D.A. resta da leggere (DA-VERIFICARE-A-MANO.md).
 - Esenzione ticket per reddito: la scadenza del 31 marzo dell'anno dopo vale in tutta Italia (la scrivono ASL di regioni diverse), con proroghe decise da alcune Regioni. Fonti aggiunte: AUSL Piacenza, ASL Città di Torino.
