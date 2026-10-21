@@ -291,7 +291,8 @@ export function showError(formId, text, { field, focus = true } = {}) {
   const err = document.getElementById(`${formId}-error`);
   err.textContent = text;
   err.hidden = false;
-  const campi = [...form.querySelectorAll('input:not([type=checkbox]):not([type=radio]):not([type=hidden]), select, textarea')];
+  const campi = [...form.querySelectorAll('input:not([type=checkbox]):not([type=radio]):not([type=hidden]), select, textarea')]
+    .filter((c) => c.offsetParent !== null); // solo i campi visibili (non quelli del tutore nascosti)
   for (const c of campi) c.removeAttribute('aria-invalid');
   const campo = campi.find((c) => c.name === field) || campi.find((c) => !c.value) || campi[0];
   if (!campo) return;
