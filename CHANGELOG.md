@@ -2,6 +2,9 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — testata più semplice sul telefono (nessun dato cambiato)
+- Sul telefono (schermi sotto 640 px) la testata ha solo logo e ricerca: tolta la riga con i 5 argomenti. Agli argomenti si arriva dai riquadri della home e dal link «‹ …» in cima a ogni pagina. Sul PC il menu resta com'era.
+
 ## 21/10/2026 — scelta della regione nei moduli (nessun dato cambiato)
 - Passo 2 di `docs/regioni.md`: `regione()` legge la regione salvata nel browser (`localStorage`, chiave `gs-regione`), `setRegione(id)` la salva; schermata «In quale regione abiti?» prima della provincia e link «Cambia regione» (`js/flow.js`, anche in Numeri utili).
 - Con una sola regione attiva (oggi la Sicilia) la schermata e il link non compaiono: il sito è uguale a prima.
