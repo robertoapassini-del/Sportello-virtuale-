@@ -1,0 +1,582 @@
+{
+ "region": "Abruzzo",
+ "model": "ASL",
+ "_note": "Numeri delle ASL dell'Abruzzo per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili. Il 116117 è attivo in tutto l'Abruzzo (giugno 2026); CUP unico 800 827827 (da cellulare 0872 226).",
+ "asl": [
+  {
+   "id": "chieti",
+   "name": "ASL 2 Lanciano – Vasto – Chieti",
+   "province": "Chieti",
+   "site_url": "https://www.asl2abruzzo.it/",
+   "official_domains": [
+    "asl2abruzzo.it",
+    "regione.abruzzo.it",
+    "sanita.regione.abruzzo.it",
+    "trasparenza.regione.abruzzo.it"
+   ],
+   "guardia_medica_url": "https://www.asl2abruzzo.it/strutture/continuita-assistenziale/",
+   "pua_url": "https://www.asl2abruzzo.it/organizzazione/area-territoriale/cure-domiciliari/",
+   "emails": [
+    "segreteria.urp@asl2abruzzo.it"
+   ],
+   "pec": "info@pec.asl2abruzzo.it",
+   "phones": [
+    {
+     "label": "Centralino dell'ASL Lanciano Vasto Chieti – Chieti",
+     "number": "0871 3571",
+     "url": "https://www.asl2abruzzo.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino dell'ASL Lanciano Vasto Chieti – Lanciano",
+     "number": "0872 7061",
+     "url": "https://www.asl2abruzzo.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino dell'ASL Lanciano Vasto Chieti – Vasto",
+     "number": "0873 3081",
+     "url": "https://www.asl2abruzzo.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino dell'ASL Lanciano Vasto Chieti – Ortona",
+     "number": "085 9171",
+     "url": "https://www.asl2abruzzo.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino dell'ASL Lanciano Vasto Chieti – Atessa",
+     "number": "0872 8641",
+     "url": "https://www.asl2abruzzo.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP dell'ASL Lanciano Vasto Chieti (numero regionale): prenotare, disdire o spostare visite ed esami, da telefono fisso",
+     "number": "800 827827",
+     "url": "https://www.asl2abruzzo.it/centro-unico-di-prenotazione-cup/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP dell'ASL Lanciano Vasto Chieti (numero regionale): prenotare, disdire o spostare visite ed esami, da cellulare",
+     "number": "0872 226",
+     "url": "https://www.asl2abruzzo.it/centro-unico-di-prenotazione-cup/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Lanciano Vasto Chieti: ufficio per i cittadini, reclami (numero verde)",
+     "number": "800 171718",
+     "url": "https://www.asl2abruzzo.it/organizzazione/urp-e-privacy/",
+     "hours": "Dal lunedì al venerdì 9–13",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Lanciano Vasto Chieti – sportello di Chieti",
+     "number": "0871 358539",
+     "url": "https://www.asl2abruzzo.it/organizzazione/urp-e-privacy/",
+     "hours": "Dal lunedì al venerdì 8–13.30; martedì e giovedì anche 15–17",
+     "address": "Ospedale SS. Annunziata, via dei Vestini, VII livello corpo D, Chieti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Lanciano Vasto Chieti – sportello di Lanciano",
+     "number": "0872 706590",
+     "url": "https://www.asl2abruzzo.it/organizzazione/urp-e-privacy/",
+     "hours": "Dal lunedì al venerdì 8–13; lunedì e giovedì anche 15–17",
+     "address": "Ospedale Floraspe Renzetti, via del Mare, Lanciano",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Lanciano Vasto Chieti – sportello di Vasto",
+     "number": "0873 308321",
+     "url": "https://www.asl2abruzzo.it/organizzazione/urp-e-privacy/",
+     "hours": "Dal lunedì al sabato 8–13.30",
+     "address": "Ospedale San Pio da Pietrelcina, Vasto",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "116117: guardia medica (continuità assistenziale) e cure non urgenti, in tutto l'Abruzzo",
+     "number": "116117",
+     "url": "https://www.regione.abruzzo.it/notizie/attivo-da-oggi-il-nuovo-numero-unico-116117-l-assistenza-sanitaria-non-urgente",
+     "hours": "24 ore su 24, 7 giorni su 7",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA (punto unico di accesso, cure domiciliari) dell'ASL 2 – Chieti",
+     "number": "0871 357877",
+     "url": "https://www.asl2abruzzo.it/strutture/altre-strutture-del-territorio/sede-di-chieti/",
+     "hours": "Dal lunedì al venerdì 8.30–12; martedì e giovedì anche 15–16.30",
+     "address": "Via Tiro a Segno 8, Chieti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA (punto unico di accesso) dell'ASL 2 – Lanciano",
+     "number": "0872 706911",
+     "url": "https://www.asl2abruzzo.it/strutture/altre-strutture-del-territorio/sede-di-lanciano/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA (punto unico di accesso) dell'ASL 2 – Vasto",
+     "number": "0873 308738",
+     "url": "https://www.asl2abruzzo.it/strutture/altre-strutture-del-territorio/sede-di-vasto/",
+     "hours": "Dal lunedì al venerdì 8.30–12.30; martedì anche 15–17",
+     "address": "Via Michetti 86, Vasto",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASL 2 – Home page (centralini, CUP, URP)",
+     "url": "https://www.asl2abruzzo.it/"
+    },
+    {
+     "label": "ASL 2 – Centro unico di prenotazione",
+     "url": "https://www.asl2abruzzo.it/centro-unico-di-prenotazione-cup/"
+    },
+    {
+     "label": "ASL 2 – Urp e privacy",
+     "url": "https://www.asl2abruzzo.it/organizzazione/urp-e-privacy/"
+    },
+    {
+     "label": "ASL 2 – Continuità assistenziale",
+     "url": "https://www.asl2abruzzo.it/strutture/continuita-assistenziale/"
+    },
+    {
+     "label": "ASL 2 – Casa della comunità di Chieti",
+     "url": "https://www.asl2abruzzo.it/strutture/altre-strutture-del-territorio/sede-di-chieti/"
+    },
+    {
+     "label": "ASL 2 – Casa della comunità di Lanciano",
+     "url": "https://www.asl2abruzzo.it/strutture/altre-strutture-del-territorio/sede-di-lanciano/"
+    },
+    {
+     "label": "ASL 2 – Casa della comunità di Vasto",
+     "url": "https://www.asl2abruzzo.it/strutture/altre-strutture-del-territorio/sede-di-vasto/"
+    },
+    {
+     "label": "ASL 2 – Cure domiciliari",
+     "url": "https://www.asl2abruzzo.it/organizzazione/area-territoriale/cure-domiciliari/"
+    },
+    {
+     "label": "Regione Abruzzo – Attivo il numero unico 116117 (9 giugno 2026)",
+     "url": "https://www.regione.abruzzo.it/notizie/attivo-da-oggi-il-nuovo-numero-unico-116117-l-assistenza-sanitaria-non-urgente"
+    },
+    {
+     "label": "Portale Sanità Regione Abruzzo – Liste di attesa e CUP",
+     "url": "https://sanita.regione.abruzzo.it/canale-assistenza-territoriale/cup"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "La pagina URP su info.asl2abruzzo.it non si è potuta copiare (403); ho usato la pagina «Urp e privacy» del sito principale.",
+    "Guardia medica: le 23 postazioni ASL 2 non hanno più un numero proprio, si accede col 116117.",
+    "Cure domiciliari: la pagina dell'ASL 2 ha anche i numeri delle sedi distrettuali (Francavilla, Ortona, Guardiagrele, Atessa, San Salvo, Gissi…): se servono, aggiungerli."
+   ]
+  },
+  {
+   "id": "laquila",
+   "name": "ASL 1 Avezzano – Sulmona – L'Aquila",
+   "province": "L'Aquila",
+   "site_url": "https://www.asl1abruzzo.it/",
+   "official_domains": [
+    "asl1abruzzo.it",
+    "regione.abruzzo.it",
+    "sanita.regione.abruzzo.it",
+    "trasparenza.regione.abruzzo.it"
+   ],
+   "guardia_medica_url": "https://www.asl1abruzzo.it/pagina37_continuit-assistenziale-ex-guardia-medica.html",
+   "pua_url": "https://www.asl1abruzzo.it/pagina516_cure-domiciliari.html",
+   "emails": [
+    "urp@asl1abruzzo.it"
+   ],
+   "pec": "protocollogenerale@pec.asl1abruzzo.it",
+   "phones": [
+    {
+     "label": "URP dell'ASL 1 Avezzano-Sulmona-L'Aquila: ufficio per i cittadini (sedi L'Aquila, Avezzano, Sulmona)",
+     "number": "0863 499943",
+     "url": "https://www.asl1abruzzo.it/pagina529_urp.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP dell'ASL 1 (numero regionale): prenotare e disdire visite ed esami, da telefono fisso",
+     "number": "800 827827",
+     "url": "https://www.asl1abruzzo.it/pagina509_prenota-e-disdici-telefonicamente.html",
+     "hours": "Dal lunedì al venerdì 8–18, sabato 8–13",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP dell'ASL 1 (numero regionale): prenotare e disdire visite ed esami, da cellulare",
+     "number": "0872 226",
+     "url": "https://www.asl1abruzzo.it/pagina509_prenota-e-disdici-telefonicamente.html",
+     "hours": "Dal lunedì al venerdì 8–18, sabato 8–13",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL 1 Avezzano-Sulmona-L'Aquila: ufficio per i cittadini, reclami",
+     "number": "0863 499943",
+     "url": "https://www.asl1abruzzo.it/pagina529_urp.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "116117: guardia medica (continuità assistenziale) e cure non urgenti, in tutto l'Abruzzo",
+     "number": "116117",
+     "url": "https://www.regione.abruzzo.it/notizie/attivo-da-oggi-il-nuovo-numero-unico-116117-l-assistenza-sanitaria-non-urgente",
+     "hours": "24 ore su 24, 7 giorni su 7",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari dell'ASL 1 – area L'Aquila (sede L'Aquila)",
+     "number": "0862 368843",
+     "url": "https://www.asl1abruzzo.it/pagina516_cure-domiciliari.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari dell'ASL 1 – area Marsica (sede Avezzano)",
+     "number": "0863 499883",
+     "url": "https://www.asl1abruzzo.it/pagina516_cure-domiciliari.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari dell'ASL 1 – area Peligno-Sangrina (sede Sulmona)",
+     "number": "0864 499478",
+     "url": "https://www.asl1abruzzo.it/pagina516_cure-domiciliari.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari dell'ASL 1 – sede Castel di Sangro",
+     "number": "0864 899345",
+     "url": "https://www.asl1abruzzo.it/pagina516_cure-domiciliari.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASL 1 – URP",
+     "url": "https://www.asl1abruzzo.it/pagina529_urp.html"
+    },
+    {
+     "label": "ASL 1 – Prenota e disdici telefonicamente",
+     "url": "https://www.asl1abruzzo.it/pagina509_prenota-e-disdici-telefonicamente.html"
+    },
+    {
+     "label": "ASL 1 – Continuità assistenziale",
+     "url": "https://www.asl1abruzzo.it/pagina37_continuit-assistenziale-ex-guardia-medica.html"
+    },
+    {
+     "label": "ASL 1 – 116117",
+     "url": "https://www.asl1abruzzo.it/pagina559_116117-numero-unico-per-le-cure-non-urgenti.html"
+    },
+    {
+     "label": "ASL 1 – Cure domiciliari",
+     "url": "https://www.asl1abruzzo.it/pagina516_cure-domiciliari.html"
+    },
+    {
+     "label": "Regione Abruzzo – Attivo il numero unico 116117 (9 giugno 2026)",
+     "url": "https://www.regione.abruzzo.it/notizie/attivo-da-oggi-il-nuovo-numero-unico-116117-l-assistenza-sanitaria-non-urgente"
+    },
+    {
+     "label": "Portale Sanità Regione Abruzzo – Liste di attesa e CUP",
+     "url": "https://sanita.regione.abruzzo.it/canale-assistenza-territoriale/cup"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "116117: la notizia della Regione Abruzzo del 9 giugno 2026 dice che il 116117 è attivo «su tutto il territorio regionale», gratuito, 24 ore su 24, da fisso e cellulare, e porta alla Continuità assistenziale (ex guardia medica); con la sua attivazione «sono state disattivate le precedenti numerazioni telefoniche delle singole Asl». Lo confermano le pagine di tutte e quattro le ASL (ASL 1, ASL 2, Teramo «dal 08/06/2026»). Quindi in tutte le province ho messo solo il 116117 e nessun vecchio numero locale di guardia medica.",
+    "CUP: in Abruzzo c'è un call center di prenotazione unico per tutte le ASL (pagina CUP del Portale Sanità regionale): numero verde 800 827827 da rete fissa, 0872 226 da cellulare. Le pagine CUP delle quattro ASL riportano gli stessi due numeri. C'è anche lo Sportello CUP regionale online (con SPID) e la prenotazione in farmacia (FarmaCup).",
+    "Centralino dell'ASL 1: nelle copie non c'è un numero di centralino generale; manca.",
+    "Pagina «Informazioni per l'utenza» dell'ASL 1: contiene vecchi avvisi con numeri di guardia medica (0862 3485790, 0862 366025) e un numero COVID: superati dal 116117, non usati.",
+    "La pagina Contattaci dell'ASL 1 non si è potuta copiare (errore 403); la pagina del nuovo servizio cure domiciliari dà errore 401."
+   ]
+  },
+  {
+   "id": "pescara",
+   "name": "ASL di Pescara",
+   "province": "Pescara",
+   "site_url": "https://www.asl.pe.it/",
+   "official_domains": [
+    "asl.pe.it",
+    "regione.abruzzo.it",
+    "sanita.regione.abruzzo.it",
+    "trasparenza.regione.abruzzo.it"
+   ],
+   "guardia_medica_url": "https://www.asl.pe.it/DettaglioStruttura.jsp?id=4&idSezione=11",
+   "pua_url": "https://www.asl.pe.it/Sezione.jsp?idSezione=898",
+   "emails": [
+    "info.urp@asl.pe.it"
+   ],
+   "pec": "protocollo.aslpe@pec.it",
+   "phones": [
+    {
+     "label": "Centralino dell'ASL di Pescara",
+     "number": "085 4251",
+     "url": "https://www.asl.pe.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "address": "Via Renato Paolini 47, Pescara"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP dell'ASL di Pescara (numero regionale): prenotare e disdire visite ed esami, da telefono fisso",
+     "number": "800 827827",
+     "url": "https://www.asl.pe.it/Sezione.jsp?idSezione=863",
+     "hours": "Dal lunedì al venerdì 8–18, sabato 8–13",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP dell'ASL di Pescara (numero regionale): prenotare e disdire visite ed esami, da cellulare",
+     "number": "0872 226",
+     "url": "https://www.asl.pe.it/Sezione.jsp?idSezione=863",
+     "hours": "Dal lunedì al venerdì 8–18, sabato 8–13",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Pescara: ufficio per i cittadini, reclami",
+     "number": "085 425 3201",
+     "url": "https://www.asl.pe.it/Sezione.jsp?idSezione=59",
+     "address": "Via Renato Paolini 47, Pescara – Palazzina E, ingresso 4, piano terra",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "116117: guardia medica (continuità assistenziale) e cure non urgenti, in tutto l'Abruzzo",
+     "number": "116117",
+     "url": "https://www.regione.abruzzo.it/notizie/attivo-da-oggi-il-nuovo-numero-unico-116117-l-assistenza-sanitaria-non-urgente",
+     "hours": "24 ore su 24, 7 giorni su 7",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASL Pescara – Home page",
+     "url": "https://www.asl.pe.it/"
+    },
+    {
+     "label": "ASL Pescara – URP",
+     "url": "https://www.asl.pe.it/Sezione.jsp?idSezione=59"
+    },
+    {
+     "label": "ASL Pescara – Centro Unico Prenotazioni",
+     "url": "https://www.asl.pe.it/Sezione.jsp?idSezione=863"
+    },
+    {
+     "label": "Regione Abruzzo – Attivo il numero unico 116117 (9 giugno 2026)",
+     "url": "https://www.regione.abruzzo.it/notizie/attivo-da-oggi-il-nuovo-numero-unico-116117-l-assistenza-sanitaria-non-urgente"
+    },
+    {
+     "label": "Portale Sanità Regione Abruzzo – Liste di attesa e CUP",
+     "url": "https://sanita.regione.abruzzo.it/canale-assistenza-territoriale/cup"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "La pagina Guardia medica dell'ASL di Pescara è vecchia: parla ancora del «numero unico aziendale» 085 4289790 e dei numeri delle singole sedi. È in contraddizione con la Regione (dal 9 giugno 2026 i vecchi numeri ASL sono disattivati, c'è il 116117): non l'ho usata per i numeri.",
+    "Cure domiciliari / ADI: la pagina ADI dell'ASL di Pescara non ha numeri di telefono (solo orari delle informazioni telefoniche); manca il numero PUA/ADI.",
+    "Il CUP «CUP ASL Pescara» (idSezione=1006) è un avviso del 2018: non usato."
+   ]
+  },
+  {
+   "id": "teramo",
+   "name": "ASL di Teramo",
+   "province": "Teramo",
+   "site_url": "https://www.aslteramo.it/",
+   "official_domains": [
+    "aslteramo.it",
+    "regione.abruzzo.it",
+    "sanita.regione.abruzzo.it",
+    "trasparenza.regione.abruzzo.it"
+   ],
+   "guardia_medica_url": "https://www.aslteramo.it/servizi-sanitari/guardia-medica/",
+   "pua_url": "https://www.aslteramo.it/servizio-cure-domiciliari-adi/",
+   "emails": [
+    "urp@aslteramo.it"
+   ],
+   "pec": "aslteramo@raccomandata.eu",
+   "phones": [
+    {
+     "label": "Centralino dell'ASL di Teramo",
+     "number": "0861 4291",
+     "url": "https://www.aslteramo.it/contatti/",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "address": "Circonvallazione Ragusa 1, Teramo"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP dell'ASL di Teramo (numero regionale): prenotare visite ed esami, da telefono fisso",
+     "number": "800 827827",
+     "url": "https://www.aslteramo.it/cittadini-utenti/",
+     "hours": "Dal lunedì al venerdì 8–18, sabato 8–13",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP dell'ASL di Teramo (numero regionale): prenotare visite ed esami, da cellulare",
+     "number": "0872 226",
+     "url": "https://www.aslteramo.it/cittadini-utenti/",
+     "hours": "Dal lunedì al venerdì 8–18, sabato 8–13",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Teramo: ufficio per i cittadini, reclami",
+     "number": "0861 420401",
+     "url": "https://www.aslteramo.it/contatti/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "116117: guardia medica (continuità assistenziale) e cure non urgenti, in tutto l'Abruzzo",
+     "number": "116117",
+     "url": "https://www.regione.abruzzo.it/notizie/attivo-da-oggi-il-nuovo-numero-unico-116117-l-assistenza-sanitaria-non-urgente",
+     "hours": "24 ore su 24, 7 giorni su 7",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "ADI (cure domiciliari) dell'ASL di Teramo – distretto di Teramo",
+     "number": "0861 420811",
+     "url": "https://www.aslteramo.it/servizio-cure-domiciliari-adi/",
+     "hours": "Dal lunedì al venerdì 8–13.30",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "ADI (cure domiciliari) dell'ASL di Teramo – distretto di Atri",
+     "number": "085 8707436",
+     "url": "https://www.aslteramo.it/servizio-cure-domiciliari-adi/",
+     "hours": "Dal lunedì al venerdì 8–13.30",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "ADI (cure domiciliari) dell'ASL di Teramo – distretto di Montorio",
+     "number": "0861 429859",
+     "url": "https://www.aslteramo.it/servizio-cure-domiciliari-adi/",
+     "hours": "Dal lunedì al venerdì 8–13.30",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "ADI (cure domiciliari) dell'ASL di Teramo – distretto di Nereto",
+     "number": "0861 888233",
+     "url": "https://www.aslteramo.it/servizio-cure-domiciliari-adi/",
+     "hours": "Dal lunedì al venerdì 8–13.30",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "ADI (cure domiciliari) dell'ASL di Teramo – distretto di Roseto",
+     "number": "085 8020844",
+     "url": "https://www.aslteramo.it/servizio-cure-domiciliari-adi/",
+     "hours": "Dal lunedì al venerdì 8–13.30",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Copia della cartella clinica – ospedale di Teramo",
+     "number": "0861 429274",
+     "url": "https://www.aslteramo.it/cittadini-utenti/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASL Teramo – Contatti",
+     "url": "https://www.aslteramo.it/contatti/"
+    },
+    {
+     "label": "ASL Teramo – Come fare per… Cittadini Utenti",
+     "url": "https://www.aslteramo.it/cittadini-utenti/"
+    },
+    {
+     "label": "ASL Teramo – Guardia medica",
+     "url": "https://www.aslteramo.it/servizi-sanitari/guardia-medica/"
+    },
+    {
+     "label": "ASL Teramo – Cure domiciliari ADI",
+     "url": "https://www.aslteramo.it/servizio-cure-domiciliari-adi/"
+    },
+    {
+     "label": "Regione Abruzzo – Attivo il numero unico 116117 (9 giugno 2026)",
+     "url": "https://www.regione.abruzzo.it/notizie/attivo-da-oggi-il-nuovo-numero-unico-116117-l-assistenza-sanitaria-non-urgente"
+    },
+    {
+     "label": "Portale Sanità Regione Abruzzo – Liste di attesa e CUP",
+     "url": "https://sanita.regione.abruzzo.it/canale-assistenza-territoriale/cup"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "La pagina Contatti e la FAQ «118, Pronto Soccorso e Guardia Medica» dell'ASL di Teramo riportano ancora il vecchio numero unico di guardia medica 0861 440620; la pagina Guardia medica (aggiornata) dice che dal 08/06/2026 il 116117 lo sostituisce. Non ho messo lo 0861 440620.",
+    "Le pagine «Prenotazioni» e «Informazioni sui CUP» non riportano numeri nella copia; il CUP telefonico viene dalla pagina «Cittadini Utenti».",
+    "Cartelle cliniche: la pagina ha anche Atri 085 8707305, Giulianova 085 8020256, Sant'Omero 0861 888511: se servono, aggiungerli."
+   ]
+  }
+ ]
+}

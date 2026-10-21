@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — Abruzzo: i numeri utili delle 4 province
+- 40 numeri delle ASL, controllati nelle copie delle pagine ufficiali del 21/10/2026.
+- Guardia medica: 116117 in tutto l'Abruzzo; CUP unico 800 827827 (da cellulare 0872 226).
+- Sedi INPS delle 4 province.
+
 ## 21/10/2026 — Friuli-Venezia Giulia: i numeri utili delle 4 province
 - 42 numeri di ASUGI, ASUFC e ASFO, controllati nelle copie delle pagine ufficiali del 21/10/2026.
 - Guardia medica: 116117 in tutta la regione; Call center unico salute e sociale 0434 223522.
