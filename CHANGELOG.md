@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — Basilicata: i numeri utili di Potenza e Matera
+- 19 numeri dell'ASP e dell'ASM, controllati nelle copie delle pagine ufficiali del 21/10/2026.
+- Guardia medica: 116117 in tutta la regione; CUP regionale 800 814814.
+- Sedi INPS di Potenza e Matera.
+
 ## 21/10/2026 — Molise: i numeri utili di Campobasso e Isernia
 - 34 numeri dell'ASReM (CUP-PASS, PUA, scelta del medico, URP), controllati nelle copie delle pagine ufficiali del 21/10/2026.
 - Guardia medica: 116117 in tutto il Molise dal 06/10/2026; Call Center Sanitario 800 639595 (da cellulare 0875 752626).
