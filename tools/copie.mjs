@@ -10,8 +10,13 @@
 // una pausa tra una pagina e l'altra, ci presentiamo con nome e sito nel User-Agent, mai pagine con
 // login o CAPTCHA, mai i portali di prenotazione (CUP).
 //
+// Pagine fatte con JavaScript: se il testo scaricato è quasi vuoto, la pagina si riapre in un browser
+// vero (Chromium con Playwright, se è installato sul server) e si salva il testo che compare. Le pagine
+// che mostrano un CAPTCHA o un controllo anti-robot non si copiano: si segnano e basta.
+//
 // Uso: node tools/copie.mjs [cartella di destinazione]   (default: ../copie accanto al sito)
 import fs from 'node:fs';
+import { createRequire } from 'node:module';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { execFileSync } from 'node:child_process';
@@ -56,6 +61,33 @@ function scarica(url) {
   let r = run([]);
   if (r.curl === 60) { r = run(['-k']); r.certificato = 'non valido'; }
   return r;
+}
+
+// Browser vero per le pagine fatte con JavaScript. Playwright è facoltativo: locale (npm i playwright
+// nella cartella del sito) o globale (npm i -g playwright); senza, le pagine restano quelle scaricate.
+const VUOTA = (testo) => testo.length < 500 || /enable javascript|attiva(re)? (il )?javascript|abilita(re)? (il )?javascript|^loading\.{3}/im.test(testo);
+const ANTIROBOT = /captcha|radware|verify you are human|are you a robot|sei un robot|access denied|attention required/i;
+let browser; let senzaBrowser = false;
+async function apriBrowser() {
+  if (browser || senzaBrowser) return browser;
+  const req = createRequire(import.meta.url);
+  let pw;
+  try { pw = req('playwright'); } catch {
+    try { pw = req(path.join(execFileSync('npm', ['root', '-g'], { encoding: 'utf8' }).trim(), 'playwright')); } catch { senzaBrowser = true; return null; }
+  }
+  browser = await pw.chromium.launch();
+  return browser;
+}
+async function rendi(url) {
+  const b = await apriBrowser();
+  if (!b) return null;
+  const page = await b.newPage({ userAgent: UA });
+  try {
+    const resp = await page.goto(url, { waitUntil: 'networkidle', timeout: 45000 });
+    return { http: resp ? resp.status() : 0, type: 'text/html', finale: page.url(), body: await page.content() };
+  } catch (e) {
+    return { http: 0, errore: String(e.message || e).split('\n')[0] };
+  } finally { await page.close(); }
 }
 
 // Regioni in preparazione: dalla homepage di ogni azienda si seguono anche i link dello stesso sito
@@ -104,7 +136,16 @@ for (const reg of regioni.regioni.filter((r) => fs.existsSync(path.join(SITE, fi
       totale++;
       const voce = { asl: a.id, url, controllata: new Date().toISOString().slice(0, 10) };
       if (SKIP.test(url)) { voce.nota = 'file, non controllato'; pagine.push(voce); continue; }
-      const r = scarica(url);
+      let r = scarica(url);
+      if (r.http === 200 && /html/i.test(r.type || '') && VUOTA(toText(r.body)) && !ANTIROBOT.test(r.body)) {
+        const rb = await rendi(url);
+        if (rb && rb.http === 200 && toText(rb.body).length > toText(r.body).length) { r = rb; voce.browser = true; }
+      }
+      if (ANTIROBOT.test(toText(r.body || '')) && VUOTA(toText(r.body || ''))) {
+        voce.http = r.http; voce.nota = 'controllo anti-robot (CAPTCHA): non copiata';
+        problemi.push(`${reg.id}/${a.id}: CAPTCHA ${url}`);
+        pagine.push(voce); await sleep(PAUSA_MS); continue;
+      }
       Object.assign(voce, { http: r.http, finale: r.finale && r.finale !== url ? r.finale : undefined, certificato: r.certificato, errore: r.errore });
       if (r.http === 200 && /html/i.test(r.type || '')) {
         if (!reg.attiva && url === a.site_url) for (const u of scopri(r.body, r.finale || url)) urls.add(u);
@@ -130,5 +171,7 @@ for (const reg of regioni.regioni.filter((r) => fs.existsSync(path.join(SITE, fi
   fs.writeFileSync(indiceFile, `${JSON.stringify({ regione: reg.id, aggiornato: new Date().toISOString(), pagine }, null, 1)}\n`);
 }
 
+if (browser) await browser.close();
+if (senzaBrowser) console.log('Playwright non installato: le pagine fatte con JavaScript sono rimaste quasi vuote.');
 console.log(`${ok} pagine salvate su ${totale} (${cambiate} cambiate dall'ultima volta). Problemi: ${problemi.length}`);
 for (const p of problemi) console.log('  ', p);
