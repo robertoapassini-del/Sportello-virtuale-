@@ -68,6 +68,9 @@ const ERRORI = [
   [/\b([Gg]uarda|vale la pagina) <a [^>]*>(la visita è|il verbale è|la visita per l.invalidità non)/, 'il titolo di una pagina non va dentro la frase come link: «Leggi cosa fare se …»'],
   [/Non andare dal privato a pagamento prima di/, "liste d'attesa: «Vai dal privato a pagamento solo se l'ASL te lo scrive»"],
   [/"title": "(Non mi danno|Ho diritto|[^"]*l'ho persa|[^"]*posso fare)/, "titoli in data/moduli.json come l'h1 della pagina: si dà del tu («Non ti danno», «l'hai persa»)"],
+  // Audit dei mutanti del 21/10/2026: regole regionali scritte per tutti, regole nazionali scritte come siciliane.
+  [/20 giorni dalla consegna/, 'ausili: il collaudo entro 20 giorni è una regola della Sicilia: «In Sicilia entro 20 giorni dalla consegna»', /Sicili|"notes_internal"/],
+  [/\bin Sicilia\b[^.\n]{0,80}180 giorni|180 giorni[^.\n]{0,80}\bin Sicilia\b/, 'ricetta per visite ed esami: i 180 giorni sono una regola nazionale (ricette dal 30/12/2024), non solo siciliana', /regola nazionale/],
 ];
 
 test('nessuno degli errori già trovati è tornato', () => {

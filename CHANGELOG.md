@@ -2,6 +2,18 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — Audit notturno, giro 5: test più severi
+- Audit dei mutanti: 30 errori messi apposta nel sito, `npm test` ne prendeva 4. Nuovi controlli per quelli che si riconoscono senza browser:
+- Nuovo `tests/link.test.mjs`: ogni link interno delle pagine della sitemap e della 404 porta a un file che esiste.
+- Nuovo `tests/citazioni.test.mjs` con l'elenco `tests/citazioni.txt` (54 citazioni «art. N | legge»): una citazione nuova o cambiata va riletta sulla fonte e aggiunta all'elenco.
+- Nuovo `tests/lettere.test.mjs`: lettere con i campi vuoti senza segnaposto («[COMUNE]», «{{…}}», «XXX») né «undefined»/«null»; nessun segnaposto del genere nei js.
+- `tests/cifre.test.mjs`: legge anche `<title>` e descrizioni delle pagine; una cifra torna solo con un dato della stessa unità (dal nome del campo: «_days» giorni, «_ore» ore, «isee»/«income» euro…). Trovate e dichiarate: «Circa 550 euro» nella descrizione dell'accompagnamento (551,53 arrotondato), «ricorso entro 6 mesi» nelle descrizioni dell'invalidità e della 104 (il «6 mesi» della 104 tornava solo per caso con un «6» di ore).
+- `tests/provenienza.test.mjs`: ogni `data/rules*.json` ha almeno una fonte; se la nota di una scheda copia tra «…» la frase della fonte con una cifra, il dato deve stare in quella frase.
+- `tests/pagine.test.mjs`: nessun elenco delle fonti vuoto; nessuna pagina della sitemap con «noindex».
+- `tests/engine.test.mjs`: festivi 2026-2030 giorno per giorno contro un elenco scritto a mano (con Lunedì dell'Angelo e 4 ottobre); cartella clinica: `appeal_days` 30 e il conto del TAR (richiesta + 30 + 30).
+- `tests/contatti.test.mjs`: le voci di `data/numeri.json` con url di una regione o di un'azienda sanitaria, o con il numero di un'azienda, hanno «regione».
+- `tests/errori-noti.test.mjs`: «20 giorni dalla consegna» senza «Sicilia»; «in Sicilia» vicino ai «180 giorni» della ricetta (regola nazionale).
+
 ## 21/10/2026 — Audit notturno, giro 5: scenari reali
 - Ricerca (`data/moduli.json`): «mia madre esce dall ospedale», «dimessa dall ospedale», «mamma esce dall ospedale non cammina» portavano alla cartella clinica; ora il primo risultato è l'assistenza a casa (con la dimissione protetta). Nuove parole chiave: esce, uscita, uscire, dimessa, dimesso, dimissioni, ospedale, cammina.
 - Ricerca: «prenotare una tac», «prenotare risonanza», «prenotare ecografia» portavano ai tempi d'attesa; ora il primo risultato è «Prenotare al CUP» (parole chiave tac, risonanza, ecografia, esame, esami, visita).

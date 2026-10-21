@@ -25,7 +25,7 @@ Se non sai se una regola è nazionale, trattala come regionale finché non trovi
 
 | Comando | Cosa controlla |
 |---|---|
-| `npm test` | dati, numeri e fonti (`contatti`, `provenienza`, `cifre`), pagine aggiornate (`pagine`, anche la 404), calcoli (`engine`), testi nazionali (`nazionale`), errori già visti (`errori-noti`), ricerca (`ricerca`: 40 parole → modulo giusto) |
+| `npm test` | dati, numeri e fonti (`contatti`, `provenienza`, `cifre`: anche nel titolo e nella descrizione, con l'unità giusta), pagine aggiornate (`pagine`, anche la 404, fonti mai vuote, niente «noindex»), link interni (`link`), citazioni di legge rilette (`citazioni` + `tests/citazioni.txt`), lettere senza segnaposto (`lettere`), calcoli e festivi (`engine`), testi nazionali (`nazionale`), errori già visti (`errori-noti`), ricerca (`ricerca`: 40 parole → modulo giusto) |
 | `node tests/browser.cjs <indirizzo>` | tutte le pagine in un browser (Sicilia, Lazio, nessuna regione) e i percorsi dei moduli: errori JavaScript, «undefined», pagine troppo larghe (anche con il testo al 250%), pulsanti sotto i 44 px, stampa (titolo, pulsanti), frasi siciliane senza «Sicilia» |
 | `node tests/combinazioni.cjs <indirizzo>` | tutte le combinazioni di risposte nei moduli, confrontate con un calcolo indipendente |
 | `node tools/confronta-copie.mjs <cartella-copie> [regione…]` | i dati regionali contro le copie notturne delle pagine ufficiali (branch `copie-siti`): cifre dei numeri con prova «pagina» che non sono nella copia del loro url, PEC e indirizzi di invio che non sono in nessuna copia dell'azienda, url senza copia. Nella CI è il job «copie»: le differenze (codice 3) restano verdi e vanno nel riepilogo del job, da leggere a ogni PR; diventa rosso solo se il programma si rompe |
@@ -65,3 +65,9 @@ tutti i controlli verdi.
   link dentro la frase, «ad Enna», «una équipe», titoli di `moduli.json` diversi dall'h1.
 - 21/10/2026 (giro 5) — `browser.cjs`, «conto senza uffici»: in una regione con solo i Numeri utili i moduli con un conto
   nazionale si fermavano subito a «non abbiamo ancora i dati». Ora il controllo segue il percorso fino alla data calcolata.
+- 21/10/2026 (giro 5) — audit dei mutanti (30 errori messi apposta, `npm test` ne prendeva 4): `tests/link.test.mjs`
+  (link interni rotti), `tests/citazioni.test.mjs` (ogni «art. N | legge» deve stare in `tests/citazioni.txt`: una
+  citazione nuova si rilegge sulla fonte e si aggiunge; `CITAZIONI=scrivi` rigenera l'elenco), `tests/lettere.test.mjs`
+  (segnaposto e «undefined» nelle lettere); in `cifre` titolo, descrizione e unità dal nome del campo; in `provenienza`
+  fonti mai vuote e cifra presente nella frase «…» della nota; in `pagine` niente «noindex»; in `engine` festivi
+  2026-2030 e ricorso al TAR della cartella; in `contatti` le voci regionali di `numeri.json` con «regione».

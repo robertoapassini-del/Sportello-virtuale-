@@ -68,3 +68,39 @@ test('la provenienza non arriva agli utenti', () => {
   const js = readdirSync(new URL('js/', site)).filter((f) => f.endsWith('.js'));
   for (const f of js) assert.doesNotMatch(readFileSync(new URL(`js/${f}`, site), 'utf8'), /\.provenienza\b|\[['"]provenienza['"]\]/, `js/${f} legge il campo «provenienza»: è interno, non va mostrato`);
 });
+
+// Ogni file di regole ha almeno una fonte («sources»): è l'elenco «Da dove vengono queste informazioni»
+// in fondo alla guida. Con «sources» vuoto la pagina resta senza fonti e nessuno se ne accorge (audit dei mutanti del 21/10/2026).
+test('ogni file data/rules*.json ha almeno una fonte con url e nome', () => {
+  for (const file of files) {
+    const s = load(file).sources;
+    assert.ok(Array.isArray(s) && s.length >= 1, `${file}: «sources» è vuoto: la guida resterebbe senza fonti`);
+    for (const x of s) assert.ok(/^https:\/\//.test(x.url || '') && x.label, `${file}: fonte senza url https o senza nome (${JSON.stringify(x)})`);
+  }
+});
+
+// Se la nota di una scheda riporta tra «…» la frase della fonte con una cifra, la cifra dei dati deve stare
+// in quella frase. Così un dato cambiato insieme alla guida («551,53» → «515,53», coerente ma falso) non passa:
+// la frase copiata dalla fonte resta quella vera (audit dei mutanti del 21/10/2026).
+// Per una scheda che copre un gruppo di cifre basta che una delle cifre stia nella frase.
+const comeNelTesto = (n) => {
+  const [i, dec] = String(n).split('.');
+  return [String(n), `${i.replace(/\B(?=(\d{3})+(?!\d))/g, '.')}${dec ? `,${dec.padEnd(2, '0')}` : ''}`, String(n).replace('.', ',')];
+};
+const valore = (obj, percorso) => percorso.split('.').reduce((a, k) => (a == null ? a : Array.isArray(a) ? a.find((x) => x && x.id === k) ?? a[Number(k)] : a[k]), obj);
+test('la cifra dei dati sta nella frase della fonte copiata nella nota', () => {
+  const errori = [];
+  for (const file of files) {
+    const d = load(file);
+    for (const [p, s] of Object.entries(d.provenienza || {})) {
+      const frase = [...(s.nota || '').matchAll(/«([^»]*)»/g)].map((m) => m[1]).join(' | ');
+      if (!/\d/.test(frase)) continue;
+      const v = valore(d, p);
+      const nums = typeof v === 'number' ? [v] : cifre(v, '', []).map((c) => c.valore).filter((x) => typeof x === 'number');
+      if (!nums.length) continue;
+      const c = (n) => comeNelTesto(n).some((x) => new RegExp(`(?<![\\d.,])${x.replace(/\./g, '\\.')}(?![\\d]|,\\d)`).test(frase));
+      if (!nums.some(c)) errori.push(`${file} «${p}» = ${nums.join(', ')}: la nota cita «${frase.slice(0, 120)}». Rileggi la fonte: è sbagliato il dato o la nota?`);
+    }
+  }
+  assert.deepEqual(errori, [], errori.join('\n'));
+});

@@ -383,3 +383,30 @@ test('prevenzione per età e sesso; medico o pediatra', async () => {
   assert.equal(medicoChoice(m, { age: 14 }), 'medico');
   for (const s of [...r.sources, ...m.sources]) assert.match(s.url, /^https:\/\//);
 });
+
+// Audit dei mutanti del 21/10/2026: errori che nessun test prendeva.
+test('festivi nazionali 2026-2030, giorno per giorno', async () => {
+  const { festivo } = await import('../js/engine.js');
+  // Elenco scritto a mano (L. 260/1949 e successive; 4 ottobre dal 2026, L. 151/2025). Non ci sono i santi patroni.
+  const fissi = ['01-01', '01-06', '04-25', '05-01', '06-02', '08-15', '10-04', '11-01', '12-08', '12-25', '12-26'];
+  const lunediAngelo = ['2026-04-06', '2027-03-29', '2028-04-17', '2029-04-02', '2030-04-22'];
+  const attesi = new Set([...[2026, 2027, 2028, 2029, 2030].flatMap((y) => fissi.map((md) => `${y}-${md}`)), ...lunediAngelo]);
+  const sbagliati = [];
+  for (let d = '2026-01-01'; d <= '2030-12-31'; d = addDays(d, 1)) {
+    if (festivo(d) !== attesi.has(d)) sbagliati.push(`${d}: festivo() dice ${festivo(d)}`);
+  }
+  assert.deepEqual(sbagliati, []);
+  assert.equal(festivo('2025-10-04'), false); // San Francesco festivo solo dal 2026
+});
+
+test('cartella clinica: ricorso al TAR dopo 30 giorni di silenzio, entro altri 30 (art. 25 L. 241/1990)', () => {
+  const rc = load('../data/rules-cartella.json');
+  assert.equal(rc.integration_days, 30);
+  assert.equal(rc.appeal_days, 30, 'appeal_days: 30 giorni per il ricorso al TAR (art. 25 c. 4 L. 241/1990). Se cambia, rileggi la legge');
+  // Lo stesso conto di js/cartella.js: dalla richiesta + integration_days, poi + appeal_days.
+  const src = readFileSync(new URL('../js/cartella.js', import.meta.url), 'utf8');
+  assert.match(src, /const from = addDays\(state\.requestDate, rules\.integration_days\);\s*const until = addDays\(from, rules\.appeal_days\);/);
+  const from = addDays('2026-09-01', rc.integration_days);
+  assert.equal(from, '2026-10-01');
+  assert.equal(addDays(from, rc.appeal_days), '2026-10-31');
+});
