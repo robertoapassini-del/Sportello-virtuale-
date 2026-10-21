@@ -1,6 +1,8 @@
 // Salva una copia in testo semplice delle pagine ufficiali elencate nei dati regionali
 // (data/regioni/<regione>/asp.json: site_url, info_url, portal_url, guardia_medica_url, pua_url,
-// url dei contatti). Serve al controllo periodico dei numeri (docs/regioni.md, «Aggiornamento assistito»):
+// url dei contatti). Per una regione non ancora attiva legge data/regioni/<regione>/fonti.json:
+// stessa forma ({ asl: [{ id, site_url, pagine: [{ tipo, url }] }] }), solo gli indirizzi da copiare,
+// così i numeri della regione nuova si scrivono leggendo le copie (docs/regola-numeri.md, proof «pagina»). Serve al controllo periodico dei numeri (docs/regioni.md, «Aggiornamento assistito»):
 // gira ogni notte su un server in Italia, perché molti siti delle ASL non rispondono dall'estero,
 // e carica le copie nel branch «copie-siti». Claude poi le confronta con i dati e propone le modifiche.
 //
@@ -59,8 +61,13 @@ function scarica(url) {
 const regioni = read('data/regioni/index.json');
 let totale = 0; let ok = 0; let cambiate = 0; const problemi = [];
 
-for (const reg of regioni.regioni.filter((r) => r.attiva)) {
-  const asl = read(`data/regioni/${reg.id}/${(reg.files && reg.files.asl) || 'asl'}.json`);
+// Regioni attive: il file delle aziende sanitarie. Regioni in preparazione: fonti.json, se c'è.
+const fileAsl = (reg) => (reg.attiva
+  ? `data/regioni/${reg.id}/${(reg.files && reg.files.asl) || 'asl'}.json`
+  : `data/regioni/${reg.id}/fonti.json`);
+
+for (const reg of regioni.regioni.filter((r) => fs.existsSync(path.join(SITE, fileAsl(r))))) {
+  const asl = read(fileAsl(reg));
   const dir = path.join(OUT, reg.id);
   fs.mkdirSync(dir, { recursive: true });
   const indiceFile = path.join(dir, 'indice.json');
@@ -71,7 +78,7 @@ for (const reg of regioni.regioni.filter((r) => r.attiva)) {
   for (const a of asl.asl) {
     const urls = new Set();
     for (const k of ['site_url', 'info_url', 'form_url', 'portal_url', 'guardia_medica_url', 'pua_url']) if (a[k]) urls.add(a[k]);
-    for (const c of a.contacts || []) if (c.url) urls.add(c.url);
+    for (const c of [...(a.contacts || []), ...(a.pagine || [])]) if (c.url) urls.add(c.url);
     fs.mkdirSync(path.join(dir, a.id), { recursive: true });
     for (const url of urls) {
       totale++;
