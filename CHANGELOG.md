@@ -2,6 +2,9 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — tolte le classi della vecchia lettura ad alta voce (nessun dato cambiato)
+- Tolte le classi `say` e `no-say` (597 in 105 file): servivano solo al pulsante «Ascolta», tolto prima. Le pagine si vedono come prima.
+
 ## 21/10/2026 — tolto il pulsante «Ascolta» (nessun dato cambiato)
 - Il pulsante «🔊 Ascolta» (lettura ad alta voce con la voce del telefono) non c'è più in nessuna pagina: tolti il codice in `js/common.js`, i pulsanti in home, aree, moduli, guide e Numeri utili, gli stili e le prove in `tests/`.
 - `privacy.html` e `README.md` non parlano più di «Ascolta».

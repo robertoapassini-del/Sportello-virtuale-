@@ -90,11 +90,11 @@ const days = (n) => `${n} ${n === 1 ? 'giorno' : 'giorni'}`;
 
 const warnings = () => `
   <div class="card">
-    <h2 class="say" style="margin-top:0">❗ Importante</h2>
+    <h2 style="margin-top:0">❗ Importante</h2>
     <ul class="icon-list">
-      <li class="say"><span class="ico" aria-hidden="true">💶</span> Non andare dal privato a pagamento prima di mandare la richiesta. Potresti non avere i soldi indietro.</li>
-      <li class="say"><span class="ico" aria-hidden="true">🧾</span> Conserva il foglio della prenotazione.</li>
-      <li class="say"><span class="ico" aria-hidden="true">📅</span> Non perdere l'appuntamento che hai già. Se non ci vai, disdicilo: altrimenti potresti pagare il ticket.</li>
+      <li><span class="ico" aria-hidden="true">💶</span> Non andare dal privato a pagamento prima di mandare la richiesta. Potresti non avere i soldi indietro.</li>
+      <li><span class="ico" aria-hidden="true">🧾</span> Conserva il foglio della prenotazione.</li>
+      <li><span class="ico" aria-hidden="true">📅</span> Non perdere l'appuntamento che hai già. Se non ci vai, disdicilo: altrimenti potresti pagare il ticket.</li>
     </ul>
   </div>`;
 
@@ -121,27 +121,27 @@ function aspSteps(a) {
 
   return `
   ${ft ? `<div class="notice info">
-      <h2 class="say" style="margin-top:0">🚀 Prima prova questo</h2>
-      <p class="say">${esc(ft.text)}</p>
+      <h2 style="margin-top:0">🚀 Prima prova questo</h2>
+      <p>${esc(ft.text)}</p>
       ${ft.phone ? callButton('Chiama', ft.phone) : ''}
-      <p class="say">Se non funziona, segui i passi qui sotto.</p>
+      <p>Se non funziona, segui i passi qui sotto.</p>
     </div>` : ''}
-  <h2 class="say">Cosa fare: 3 passi</h2>
+  <h2>Cosa fare: 3 passi</h2>
   <ol class="big-steps">
     <li>
-      <h3 class="say">Prepara questi fogli</h3>
-      <ul class="icon-list say">${docs}</ul>
+      <h3>Prepara questi fogli</h3>
+      <ul class="icon-list">${docs}</ul>
     </li>
     <li>
-      <h3 class="say">Fai la richiesta all'ASP di ${esc(a.province)}</h3>
-      <p class="say">${esc(a.how_to)}</p>
-      ${a.notes.map((n) => `<p class="notice warn say">${esc(n)}</p>`).join('')}
+      <h3>Fai la richiesta all'ASP di ${esc(a.province)}</h3>
+      <p>${esc(a.how_to)}</p>
+      ${a.notes.map((n) => `<p class="notice warn">${esc(n)}</p>`).join('')}
       ${sendBtn}
       ${phones}
     </li>
     <li>
-      <h3 class="say">Aspetta la risposta</h3>
-      <ul class="clean say">
+      <h3>Aspetta la risposta</h3>
+      <ul class="clean">
         ${a.what_next.map((w) => `<li>${esc(w)}</li>`).join('')}
         <li>Se non c'è posto, fai la visita in ospedale pagando solo il ticket.</li>
       </ul>
@@ -180,7 +180,7 @@ const screens = {
   province: () => ({
     html: `${progress(1)}
       <h1>📍 Dove abiti?</h1>
-      <p class="say">Scegli la tua provincia.</p>
+      <p>Scegli la tua provincia.</p>
       <div class="grid2">
       ${[...data.asl].sort((a, b) => a.province.localeCompare(b.province)).map((a) => choice('', a.province, { province: a.id }, 'access')).join('')}
       </div>`,
@@ -189,7 +189,7 @@ const screens = {
   access: () => ({
     html: `${progress(2)}
       <h1>🩺 È la prima volta per questo problema?</h1>
-      <p class="say">Per esempio: la prima visita dal cardiologo, o il primo esame.</p>
+      <p>Per esempio: la prima visita dal cardiologo, o il primo esame.</p>
       ${choice('✅', 'Sì, è la prima volta', { access: 'first' }, 'cls')}
       ${choice('🔁', 'No, è un controllo', { access: 'followup' }, 'followup', 'Ci sei già stato e devi tornare')}
       ${choice('🤷', 'Non lo so', {}, 'accessUnknown')}`,
@@ -198,8 +198,8 @@ const screens = {
   accessUnknown: () => ({
     html: `
       <h1>🤷 Come faccio a saperlo?</h1>
-      <p class="say">Guarda la ricetta. A volte c'è scritto «primo accesso».</p>
-      <p class="say">Se non lo trovi, chiedi al medico che ha scritto la ricetta.</p>
+      <p>Guarda la ricetta. A volte c'è scritto «primo accesso».</p>
+      <p>Se non lo trovi, chiedi al medico che ha scritto la ricetta.</p>
       ${choice('✅', 'È la prima volta', { access: 'first' }, 'cls')}
       ${choice('🔁', 'È un controllo', { access: 'followup' }, 'followup')}`,
   }),
@@ -208,15 +208,15 @@ const screens = {
     html: `
       <div class="hero" aria-hidden="true">🔁</div>
       <h1>Per i controlli questa regola non vale</h1>
-      <p class="say">La legge vale solo per la prima visita o il primo esame.</p>
-      <p class="say"><strong>Cosa puoi fare:</strong> chiedi al dottore che ti segue di prenotarti lui il controllo.</p>
+      <p>La legge vale solo per la prima visita o il primo esame.</p>
+      <p><strong>Cosa puoi fare:</strong> chiedi al dottore che ti segue di prenotarti lui il controllo.</p>
       ${restartBtn()}`,
   }),
 
   cls: () => ({
     html: `${progress(3)}
       <h1>📄 Che lettera c'è sulla ricetta?</h1>
-      <p class="say">Cerca la casella «Priorità». C'è una lettera: U, B, D oppure P.</p>
+      <p>Cerca la casella «Priorità». C'è una lettera: U, B, D oppure P.</p>
       <p class="muted">Nel disegno è nel riquadro giallo.</p>
       ${RICETTA_SVG}
       ${choice('<b class="letter-ico">U</b>', 'Lettera U', { cls: 'U', kind: null }, 'cup', `Urgente: entro ${days(rules.max_wait_days.U)}`)}
@@ -230,8 +230,8 @@ const screens = {
     html: `
       <div class="hero" aria-hidden="true">📄</div>
       <h1>Senza la lettera non possiamo calcolare</h1>
-      <p class="say">La lettera dice entro quanto tempo devi fare la visita.</p>
-      <p class="say"><strong>Cosa puoi fare:</strong> chiedi al medico che ha scritto la ricetta di aggiungere la lettera.</p>
+      <p>La lettera dice entro quanto tempo devi fare la visita.</p>
+      <p><strong>Cosa puoi fare:</strong> chiedi al medico che ha scritto la ricetta di aggiungere la lettera.</p>
       ${restartBtn()}`,
   }),
 
@@ -245,7 +245,7 @@ const screens = {
   cup: () => ({
     html: `${progress(5)}
       <h1>☎️ Cosa ti ha detto il CUP?</h1>
-      <p class="say">Il CUP è l'ufficio dove si prenotano visite ed esami.</p>
+      <p>Il CUP è l'ufficio dove si prenotano visite ed esami.</p>
       ${choice('📅', 'Mi ha dato una data', { cup: 'date' }, 'accepted')}
       ${choice('🚫', 'Non mi ha dato nessuna data', { cup: 'none' }, 'resultC', 'Mi ha detto di richiamare, o che non c\'è posto')}`,
   }),
@@ -261,15 +261,15 @@ const screens = {
     html: `
       <div class="hero" aria-hidden="true">❌</div>
       <h1>Così la legge non ti aiuta</h1>
-      <p class="say">Se non prendi la prima data offerta, perdi questo diritto.</p>
-      <p class="say"><strong>Cosa puoi fare:</strong> prenota di nuovo e prendi la prima data. Se è ancora troppo lontana, torna qui.</p>
+      <p>Se non prendi la prima data offerta, perdi questo diritto.</p>
+      <p><strong>Cosa puoi fare:</strong> prenota di nuovo e prendi la prima data. Se è ancora troppo lontana, torna qui.</p>
       ${restartBtn()}`,
   }),
 
   dates: () => ({
     html: `
       <h1>🧾 Guarda il foglio della prenotazione</h1>
-      <p class="say">Ci servono due date.</p>
+      <p>Ci servono due date.</p>
       <form id="dates-form" novalidate>
         <label for="bookingDate">1. Che giorno hai prenotato?<span class="hint">Il giorno in cui hai chiamato o sei andato al CUP</span></label>
         <input type="date" id="bookingDate" name="bookingDate" required value="${esc(state.bookingDate || '')}" max="${todayISO()}">
@@ -310,12 +310,12 @@ const screens = {
         <div class="hero" aria-hidden="true">✅</div>
         <h1>Va tutto bene</h1>
         <div class="notice ok">
-          <p class="say">La tua data rispetta la legge.</p>
-          <p class="say">Il limite era ${art('il', r.deadline)}<strong>${esc(formatIt(r.deadline))}</strong>.
+          <p>La tua data rispetta la legge.</p>
+          <p>Il limite era ${art('il', r.deadline)}<strong>${esc(formatIt(r.deadline))}</strong>.
           Il tuo appuntamento è ${art('il', state.appointmentDate)}<strong>${esc(formatIt(state.appointmentDate))}</strong>.</p>
         </div>
-        <p class="say">Tieni il foglio della prenotazione. Se ti spostano l'appuntamento più avanti, torna qui.</p>
-        <p class="say">Un consiglio: quando hai una ricetta, prenota subito.</p>
+        <p>Tieni il foglio della prenotazione. Se ti spostano l'appuntamento più avanti, torna qui.</p>
+        <p>Un consiglio: quando hai una ricetta, prenota subito.</p>
         ${disclaimer(rules.last_verified)}
         ${restartBtn()}`,
     };
@@ -329,11 +329,11 @@ const screens = {
         <div class="hero" aria-hidden="true">⚠️</div>
         <h1>La data è troppo lontana. Hai diritto a fare prima!</h1>
         <div class="notice bad">
-          <p class="say">La visita andava fatta entro ${art('il', r.deadline)}<strong>${esc(formatIt(r.deadline))}</strong>.</p>
-          <p class="say">Il tuo appuntamento è ${art('il', state.appointmentDate)}<strong>${esc(formatIt(state.appointmentDate))}</strong>:
+          <p>La visita andava fatta entro ${art('il', r.deadline)}<strong>${esc(formatIt(r.deadline))}</strong>.</p>
+          <p>Il tuo appuntamento è ${art('il', state.appointmentDate)}<strong>${esc(formatIt(state.appointmentDate))}</strong>:
           <strong>${days(r.excess)} di troppo</strong>.</p>
         </div>
-        <p class="say">Puoi chiedere all'ASP di farti fare la visita prima. Se serve, la fai in ospedale pagando solo il ticket.</p>
+        <p>Puoi chiedere all'ASP di farti fare la visita prima. Se serve, la fai in ospedale pagando solo il ticket.</p>
         ${aspSteps(a)}
         ${warnings()}
         ${disclaimer(a.last_verified)}`,
@@ -347,9 +347,9 @@ const screens = {
         html: `
           <div class="hero" aria-hidden="true">🚨</div>
           <h1>Lettera U: è urgente</h1>
-          <p class="say">La visita va fatta entro ${days(rules.max_wait_days.U)}. Non aspettare.</p>
+          <p>La visita va fatta entro ${days(rules.max_wait_days.U)}. Non aspettare.</p>
           ${aspSteps(a)}
-          <div class="notice urgent"><p class="say">Se stai male, chiama il tuo medico. Se è grave, chiama il <a href="tel:112">112</a>.</p></div>
+          <div class="notice urgent"><p>Se stai male, chiama il tuo medico. Se è grave, chiama il <a href="tel:112">112</a>.</p></div>
           ${disclaimer(a.last_verified)}
           ${restartBtn()}`,
       };
@@ -357,11 +357,11 @@ const screens = {
     const cb = callbackDeadline(rules, { cls: state.cls, kind: state.kind, requestDate: state.requestDate, today: todayISO() });
     let status = '';
     if (cb.status === 'waiting') {
-      status = `<div class="notice info"><p class="say">📞 L'ASP deve richiamarti entro ${art('il', cb.deadline)}<strong>${esc(formatIt(cb.deadline))}</strong>.</p>
-        <p class="say">Se non ti chiamano, torna qui quel giorno.</p></div>`;
+      status = `<div class="notice info"><p>📞 L'ASP deve richiamarti entro ${art('il', cb.deadline)}<strong>${esc(formatIt(cb.deadline))}</strong>.</p>
+        <p>Se non ti chiamano, torna qui quel giorno.</p></div>`;
     } else if (cb.status === 'passed') {
-      status = `<div class="notice bad"><p class="say">⚠️ Dovevano richiamarti entro ${art('il', cb.deadline)}<strong>${esc(formatIt(cb.deadline))}</strong>. Non l'hanno fatto.</p>
-        <p class="say">Ora puoi chiedere all'ASP di farti fare la visita in tempo.</p></div>
+      status = `<div class="notice bad"><p>⚠️ Dovevano richiamarti entro ${art('il', cb.deadline)}<strong>${esc(formatIt(cb.deadline))}</strong>. Non l'hanno fatto.</p>
+        <p>Ora puoi chiedere all'ASP di farti fare la visita in tempo.</p></div>
         ${aspSteps(a)}
         ${warnings()}`;
     }
@@ -369,8 +369,8 @@ const screens = {
       html: `
         <div class="hero" aria-hidden="true">🚫</div>
         <h1>Il CUP non ti ha dato una data</h1>
-        <p class="say">In questo caso l'ASP deve metterti in una lista e <strong>richiamarti entro ${days(cb.days)}</strong>.</p>
-        <div class="notice warn"><p class="say">Chiedi al CUP un foglio con il giorno della tua richiesta e il numero della ricetta. Conservalo.</p></div>
+        <p>In questo caso l'ASP deve metterti in una lista e <strong>richiamarti entro ${days(cb.days)}</strong>.</p>
+        <div class="notice warn"><p>Chiedi al CUP un foglio con il giorno della tua richiesta e il numero della ricetta. Conservalo.</p></div>
         <form id="req-form" novalidate>
           <label for="requestDate">Che giorno hai chiesto la prenotazione al CUP?</label>
           <input type="date" id="requestDate" name="requestDate" value="${esc(state.requestDate || '')}" max="${todayISO()}">
@@ -399,10 +399,10 @@ const screens = {
     return {
       html: `
         <h1>✍️ ${official ? 'Compiliamo il modulo insieme' : 'Scriviamo la lettera insieme'}</h1>
-        <p class="say">Scrivi i dati qui sotto. ${official ? 'Ti diciamo cosa scrivere in ogni riga del modulo.' : 'Noi li mettiamo nella lettera.'}</p>
+        <p>Scrivi i dati qui sotto. ${official ? 'Ti diciamo cosa scrivere in ogni riga del modulo.' : 'Noi li mettiamo nella lettera.'}</p>
         <div class="notice info">
-          <p class="say">🔒 I dati restano sul tuo telefono. Noi non li vediamo.</p>
-          <p class="say">Non sai qualcosa? Lascia vuoto. ${official ? 'Lo scrivi a penna sul modulo.' : 'Dopo aver stampato, lo scrivi a penna.'}</p>
+          <p>🔒 I dati restano sul tuo telefono. Noi non li vediamo.</p>
+          <p>Non sai qualcosa? Lascia vuoto. ${official ? 'Lo scrivi a penna sul modulo.' : 'Dopo aver stampato, lo scrivi a penna.'}</p>
         </div>
         ${official ? `<a class="btn" href="${esc(a.form_url)}" target="_blank" rel="noopener">📥 Scarica il modulo dell'ASP</a>` : ''}
         <form id="letter-form" novalidate>
@@ -422,11 +422,11 @@ const screens = {
           ${official ? '' : '<button type="button" class="btn center" id="pdf-btn">🖨️ Stampa o salva</button><button type="button" class="btn center" id="copy-btn">📋 Copia</button>'}
           <a class="btn center${official ? ' primary' : ''}" id="mail-btn" href="#">📧 Manda per email</a>
         </div>
-        <p class="say" id="send-hint"></p>
+        <p id="send-hint"></p>
         ${noPecBox()}
         <div class="card">
-          <h3 class="say" style="margin-top:0">Prima di mandarla</h3>
-          <ul class="icon-list say">
+          <h3 style="margin-top:0">Prima di mandarla</h3>
+          <ul class="icon-list">
             <li><span class="ico" aria-hidden="true">🖊️</span> Firma ${official ? 'il modulo' : 'la lettera'}</li>
             ${a.documents_required.filter((d) => !/lettera/i.test(d)).map((d) => `<li><span class="ico" aria-hidden="true">${docIcon(d)}</span> Allega: ${esc(d)}</li>`).join('')}
             <li class="delegate-note"${person.isDelegate ? '' : ' hidden'}><span class="ico" aria-hidden="true">📝</span> Allega: la delega firmata e il tuo documento</li>
@@ -468,21 +468,21 @@ const screens = {
         <div class="hero" aria-hidden="true">⏳</div>
         <h1>E adesso?</h1>
         <ul class="icon-list">
-          <li class="say"><span class="ico" aria-hidden="true">📞</span> Aspetta la risposta dell'ASP. Tieni il telefono acceso: possono chiamarti da un numero che non conosci.</li>
-          ${a.what_next.map((w) => `<li class="say"><span class="ico" aria-hidden="true">👉</span> ${esc(w)}</li>`).join('')}
-          <li class="say"><span class="ico" aria-hidden="true">🗂️</span> Conserva una copia di tutto quello che hai mandato.</li>
+          <li><span class="ico" aria-hidden="true">📞</span> Aspetta la risposta dell'ASP. Tieni il telefono acceso: possono chiamarti da un numero che non conosci.</li>
+          ${a.what_next.map((w) => `<li><span class="ico" aria-hidden="true">👉</span> ${esc(w)}</li>`).join('')}
+          <li><span class="ico" aria-hidden="true">🗂️</span> Conserva una copia di tutto quello che hai mandato.</li>
         </ul>
-        <h2 class="say" id="remind-title">${esc(remindTitle())}</h2>
+        <h2 id="remind-title">${esc(remindTitle())}</h2>
         <ol class="big-steps">
-          <li class="say"><strong>Manda un sollecito</strong>: una seconda lettera per ricordarlo all'ASP. La trovi qui sotto, già pronta.</li>
-          <li class="say"><strong>Fai un reclamo</strong> all'ufficio URP della tua ASP${urp ? ` (${mailLink(urp)})` : ''}.</li>
-          <li class="say"><strong>Chiedi aiuto a un'associazione</strong> di pazienti: Cittadinanzattiva
+          <li><strong>Manda un sollecito</strong>: una seconda lettera per ricordarlo all'ASP. La trovi qui sotto, già pronta.</li>
+          <li><strong>Fai un reclamo</strong> all'ufficio URP della tua ASP${urp ? ` (${mailLink(urp)})` : ''}.</li>
+          <li><strong>Chiedi aiuto a un'associazione</strong> di pazienti: Cittadinanzattiva
             (<a href="https://www.cittadinanzattiva.it" target="_blank" rel="noopener">cittadinanzattiva.it</a>) oppure
             Associazione Luca Coscioni (<a href="https://www.associazionelucacoscioni.it" target="_blank" rel="noopener">associazionelucacoscioni.it</a>).</li>
-          <li class="say"><strong>Scrivi alla Regione Siciliana</strong>, ufficio URP dell'Assessorato della Salute
+          <li><strong>Scrivi alla Regione Siciliana</strong>, ufficio URP dell'Assessorato della Salute
             (<a href="https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute" target="_blank" rel="noopener">regione.sicilia.it</a>).</li>
         </ol>
-        <div class="notice warn"><p class="say">💶 Vai dal privato a pagamento <strong>solo se l'ASP te lo scrive</strong>. Altrimenti potresti non avere i soldi indietro.</p></div>
+        <div class="notice warn"><p>💶 Vai dal privato a pagamento <strong>solo se l'ASP te lo scrive</strong>. Altrimenti potresti non avere i soldi indietro.</p></div>
         <div class="card">
           <h2 style="margin-top:0">📄 Il sollecito, già pronto</h2>
           <form id="rem-form" novalidate>

@@ -88,8 +88,8 @@ ${FAVICON}
 <!-- Pagina creata da tools/pagine.mjs con i dati di data/moduli.json: non modificarla a mano. -->
 <header class="site-header"></header>
 <main class="wrap" id="app" data-band data-wide>
-<h1 class="say">${esc(g.title)}</h1>
-<p class="lead say">${esc(g.intro)}</p>
+<h1>${esc(g.title)}</h1>
+<p class="lead">${esc(g.intro)}</p>
 <ul class="area-list">
 ${mods.map((m) => `<li><a class="btn choice" href="${root}${m.id}/"><span class="ico" aria-hidden="true">${m.icon}</span><span class="txt">${esc(m.title)} <small>${esc(m.small)}</small></span></a></li>`).join('\n')}
 </ul>
@@ -132,7 +132,7 @@ function shareBar(html, url) {
   const text = `${title.replace(/&#39;/g, "'").replace(/&amp;/g, '&').replace(/&quot;/g, '"')}\n${url}`;
   const guide = /id="guida"/.test(html);
   return `<!-- condividi: creato da tools/pagine.mjs -->
-<div class="wrap share-bar no-say">
+<div class="wrap share-bar">
 <a class="btn share-wa" href="https://wa.me/?text=${encodeURIComponent(text)}" target="_blank" rel="noopener">${WA_ICON} Condividi su WhatsApp</a>
 <button type="button" class="btn share-print js-inline" data-action="print-page"${guide ? ' data-print="guida"' : ''}>🖨️ ${guide ? 'Stampa la guida' : 'Stampa questa pagina'}</button>
 <p class="print-url">Guida Sanità, gratis e fatta da volontari: ${url}</p>

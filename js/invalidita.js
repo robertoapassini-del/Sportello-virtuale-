@@ -53,9 +53,9 @@ const prov = () => inps.provinces.find((p) => p.id === state.province);
 
 // Sede INPS della provincia: indirizzo, orari e come prenotare lo sportello.
 const inpsSede = (p) => (p.address ? `<div class="card">
-    <h3 class="say" style="margin-top:0">🏛️ La sede INPS di ${esc(p.name)}</h3>
-    <p class="say">📍 ${esc(p.address)}${p.hours ? `<br>${esc(p.hours)}` : ''}</p>
-    <p class="say">Per parlare con qualcuno allo sportello bisogna <strong>prenotare</strong>: con l'app INPS, sul sito (MyINPS) o al telefono 803 164 (gratis da fisso).</p>
+    <h3 style="margin-top:0">🏛️ La sede INPS di ${esc(p.name)}</h3>
+    <p>📍 ${esc(p.address)}${p.hours ? `<br>${esc(p.hours)}` : ''}</p>
+    <p>Per parlare con qualcuno allo sportello bisogna <strong>prenotare</strong>: con l'app INPS, sul sito (MyINPS) o al telefono 803 164 (gratis da fisso).</p>
     ${p.url ? `<p><a href="${esc(p.url)}" target="_blank" rel="noopener">💻 La pagina della sede sul sito INPS</a></p>` : ''}
   </div>` : '');
 
@@ -80,7 +80,7 @@ function progress(n) {
 }
 
 const patronato = `<div class="notice info">
-  <p class="say">🏢 <strong>Un patronato ti aiuta gratis.</strong> Per esempio INCA, ACLI o INAS. Segue la tua pratica e può sollecitare l'INPS per te.</p></div>`;
+  <p>🏢 <strong>Un patronato ti aiuta gratis.</strong> Per esempio INCA, ACLI o INAS. Segue la tua pratica e può sollecitare l'INPS per te.</p></div>`;
 
 function inpsCalls() {
   const c = rules.inps_contacts;
@@ -91,16 +91,16 @@ function inpsCalls() {
 function regimeSteps(r) {
   if (r === 'new') {
     return `<ol class="big-steps">
-        <li class="say">Il medico manda il certificato all'INPS. <strong>Questa è già la domanda</strong>: non devi fare altro.</li>
-        <li class="say">L'INPS ti chiama per una visita. Puoi portare un tuo medico.</li>
-        <li class="say">Ricevi un foglio con il risultato.</li>
+        <li>Il medico manda il certificato all'INPS. <strong>Questa è già la domanda</strong>: non devi fare altro.</li>
+        <li>L'INPS ti chiama per una visita. Puoi portare un tuo medico.</li>
+        <li>Ricevi un foglio con il risultato.</li>
       </ol>`;
   }
   return `<ol class="big-steps">
-      <li class="say">Il medico manda il certificato all'INPS.</li>
-      <li class="say">Poi bisogna fare la <strong>domanda all'INPS entro ${rules.old_regime.domanda_window_days} giorni</strong>. Un patronato la fa gratis per te.</li>
-      <li class="say">L'ASP ti chiama per la visita.</li>
-      <li class="say">Ricevi un foglio con il risultato.</li>
+      <li>Il medico manda il certificato all'INPS.</li>
+      <li>Poi bisogna fare la <strong>domanda all'INPS entro ${rules.old_regime.domanda_window_days} giorni</strong>. Un patronato la fa gratis per te.</li>
+      <li>L'ASP ti chiama per la visita.</li>
+      <li>Ricevi un foglio con il risultato.</li>
     </ol>`;
 }
 
@@ -123,14 +123,14 @@ const screens = {
   province: () => ({
     html: `${progress(1)}
       <h1>📍 Dove abiti?</h1>
-      <p class="say">Scegli la tua provincia.</p>
+      <p>Scegli la tua provincia.</p>
       <div class="grid2">${inps.provinces.map((p) => choice('', p.name, { province: p.id }, 'certDate')).join('')}</div>`,
   }),
 
   certDate: () => ({
     html: `${progress(2)}
       <h1>📄 Che giorno il medico ha mandato il certificato?</h1>
-      <p class="say">È scritto sulla ricevuta che ti ha dato il medico.</p>
+      <p>È scritto sulla ricevuta che ti ha dato il medico.</p>
       <form id="cert-form" novalidate>
         <label for="certDate">Giorno del certificato</label>
         <input type="date" id="certDate" name="certDate" value="${esc(state.certDate || '')}" max="${todayISO()}">
@@ -153,7 +153,7 @@ const screens = {
   category: () => ({
     html: `${progress(3)}
       <h1>👤 Per chi è la domanda?</h1>
-      <p class="say">Ci serve solo per sapere quanto tempo ha l'INPS.</p>
+      <p>Ci serve solo per sapere quanto tempo ha l'INPS.</p>
       ${choice('🎗️', 'Per una persona con un tumore', { category: 'oncological' }, 'regime', 'Anche se è un bambino')}
       ${choice('🧒', 'Per un bambino o un ragazzo', { category: 'minor' }, 'regime', 'Meno di 18 anni')}
       ${choice('🧑', 'Per un adulto', { category: 'other' }, 'regime')}`,
@@ -166,7 +166,7 @@ const screens = {
       return {
         html: `<h1>Nella provincia di ${esc(p.name)} funziona così</h1>
           ${regimeSteps('new')}
-          <h2 class="say">Ti hanno già chiamato per la visita?</h2>
+          <h2>Ti hanno già chiamato per la visita?</h2>
           ${choice('✅', 'Sì, ho il giorno della visita', { convocation: true }, 'checklist')}
           ${choice('❌', 'No, non ancora', { convocation: false }, 'result')}`,
       };
@@ -174,8 +174,8 @@ const screens = {
     return {
       html: `<h1>Nella provincia di ${esc(p.name)} funziona così</h1>
         ${regimeSteps('old')}
-        <h2 class="say">Hai già fatto la domanda all'INPS?</h2>
-        <p class="say">Anche se l'ha fatta il patronato per te.</p>
+        <h2>Hai già fatto la domanda all'INPS?</h2>
+        <p>Anche se l'ha fatta il patronato per te.</p>
         <form id="dom-form" novalidate>
           <label for="domandaDate">Se sì, che giorno?<span class="hint">È scritto sulla ricevuta della domanda</span></label>
           <input type="date" id="domandaDate" name="domandaDate" value="${esc(state.domandaDate || '')}" max="${todayISO()}">
@@ -210,20 +210,20 @@ const screens = {
     const d = deadline();
     const p = prov();
     if (d.status === 'error') {
-      return { html: `<h1>Controlla le date</h1><p class="say">Le date non vanno bene insieme. Riprova.</p>${restartBtn()}` };
+      return { html: `<h1>Controlla le date</h1><p>Le date non vanno bene insieme. Riprova.</p>${restartBtn()}` };
     }
 
     if (d.kind === 'domanda') {
       const body = d.status === 'passed'
         ? `<div class="hero" aria-hidden="true">⏰</div>
            <h1>Il tempo per la domanda è finito</h1>
-           <div class="notice bad"><p class="say">Bisognava fare la domanda entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>.</p>
-           <p class="say">Di solito serve un nuovo certificato. Chiedi al tuo medico o a un patronato.</p></div>`
+           <div class="notice bad"><p>Bisognava fare la domanda entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>.</p>
+           <p>Di solito serve un nuovo certificato. Chiedi al tuo medico o a un patronato.</p></div>`
         : `<div class="hero" aria-hidden="true">📝</div>
            <h1>Prima devi fare la domanda</h1>
-           <div class="notice warn"><p class="say">Hai tempo ${art('fino al', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>.</p>
-           <p class="say">Dopo quel giorno il certificato non vale più.</p></div>
-           <p class="say">Vai a un patronato: fa la domanda per te, gratis.</p>`;
+           <div class="notice warn"><p>Hai tempo ${art('fino al', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>.</p>
+           <p>Dopo quel giorno il certificato non vale più.</p></div>
+           <p>Vai a un patronato: fa la domanda per te, gratis.</p>`;
       return { html: `${body}${patronato}${inpsCalls()}${disclaimer(rules.last_verified)}${restartBtn()}` };
     }
 
@@ -236,8 +236,8 @@ const screens = {
       return {
         html: `<div class="hero" aria-hidden="true">✅</div>
           <h1>Non è ancora tardi</h1>
-          <div class="notice ok"><p class="say">${whatFuture} entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>.</p>
-          <p class="say">Se non arriva niente, torna qui quel giorno.</p></div>
+          <div class="notice ok"><p>${whatFuture} entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>.</p>
+          <p>Se non arriva niente, torna qui quel giorno.</p></div>
           ${note}${legal}${patronato}${afterVerbale}${disclaimer(rules.last_verified)}${restartBtn()}`,
       };
     }
@@ -246,15 +246,15 @@ const screens = {
       html: `<div class="hero" aria-hidden="true">⚠️</div>
         <h1>È tardi! Puoi sollecitare l'INPS</h1>
         <div class="notice bad">
-          <p class="say">${what} entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>.</p>
-          <p class="say">Sono passati <strong>${days(d.daysLate)} in più</strong>.</p>
+          <p>${what} entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>.</p>
+          <p>Sono passati <strong>${days(d.daysLate)} in più</strong>.</p>
         </div>
         ${note}${legal}
-        <h2 class="say">Cosa fare, in ordine</h2>
+        <h2>Cosa fare, in ordine</h2>
         <ol class="big-steps">
-          <li><p class="say"><strong>Vai a un patronato.</strong> È gratis. Controlla la pratica e sollecita l'INPS per te.</p></li>
-          <li><p class="say"><strong>Chiama l'INPS.</strong></p>${inpsCalls()}</li>
-          <li><p class="say"><strong>Manda una lettera di sollecito all'INPS di ${esc(p.name)}.</strong> La scriviamo insieme.</p>
+          <li><p><strong>Vai a un patronato.</strong> È gratis. Controlla la pratica e sollecita l'INPS per te.</p></li>
+          <li><p><strong>Chiama l'INPS.</strong></p>${inpsCalls()}</li>
+          <li><p><strong>Manda una lettera di sollecito all'INPS di ${esc(p.name)}.</strong> La scriviamo insieme.</p>
             <button type="button" class="btn primary" data-go="letter">✍️ Scriviamo il sollecito insieme</button></li>
         </ol>
         <p class="muted">Anche se il tempo è passato, la pratica resta valida. Il ritardo però ti dà il diritto di sollecitare.
@@ -270,10 +270,10 @@ const screens = {
     const r = regime();
     return {
       html: `<h1>✍️ Scriviamo il sollecito insieme</h1>
-        <p class="say">Scrivi i dati qui sotto. Noi li mettiamo nella lettera per l'INPS di ${esc(p.name)}.</p>
+        <p>Scrivi i dati qui sotto. Noi li mettiamo nella lettera per l'INPS di ${esc(p.name)}.</p>
         <div class="notice info">
-          <p class="say">🔒 I dati restano sul tuo telefono. Noi non li vediamo. Non scriviamo la malattia.</p>
-          <p class="say">Non sai qualcosa? Lascia vuoto. Dopo aver stampato, lo scrivi a penna.</p>
+          <p>🔒 I dati restano sul tuo telefono. Noi non li vediamo. Non scriviamo la malattia.</p>
+          <p>Non sai qualcosa? Lascia vuoto. Dopo aver stampato, lo scrivi a penna.</p>
         </div>
         <form id="letter-form" novalidate>
           ${personFields(person, 'Chi deve fare la visita')}
@@ -293,11 +293,11 @@ const screens = {
           <button type="button" class="btn center" id="copy-btn">📋 Copia</button>
           <a class="btn center" id="mail-btn" href="#">📧 Manda per email</a>
         </div>
-        <p class="say">📨 L'indirizzo dell'INPS è una PEC (una email speciale). <strong>Se non hai la PEC, porta la lettera a un patronato</strong>: la mandano loro.</p>
+        <p>📨 L'indirizzo dell'INPS è una PEC (una email speciale). <strong>Se non hai la PEC, porta la lettera a un patronato</strong>: la mandano loro.</p>
         ${noPecBox()}
         <div class="card">
-          <h3 class="say" style="margin-top:0">Prima di mandarla</h3>
-          <ul class="icon-list say">
+          <h3 style="margin-top:0">Prima di mandarla</h3>
+          <ul class="icon-list">
             <li><span class="ico" aria-hidden="true">🖊️</span> Firma la lettera</li>
             <li><span class="ico" aria-hidden="true">🪪</span> Allega: documento d'identità (fotocopia o foto)</li>
             <li><span class="ico" aria-hidden="true">📄</span> Allega: ricevuta del certificato</li>
@@ -343,15 +343,15 @@ const screens = {
     return {
       html: `<div class="hero" aria-hidden="true">🗂️</div>
         <h1>Cosa portare alla visita</h1>
-        <ul class="icon-list say">
+        <ul class="icon-list">
           <li><span class="ico" aria-hidden="true">🪪</span> Carta d'identità</li>
           <li><span class="ico" aria-hidden="true">💳</span> Tessera sanitaria</li>
           <li><span class="ico" aria-hidden="true">📄</span> Ricevuta del certificato del medico</li>
           <li><span class="ico" aria-hidden="true">🗂️</span> Tutti i fogli medici: referti, esami, lettere dell'ospedale</li>
         </ul>
         ${r === 'new' ? `<div class="notice info">
-          <p class="say">📨 Puoi mandare altri fogli medici all'INPS fino a <strong>${rules.new_regime.extra_documents_days_before_visit} giorni prima</strong> della visita.</p>
-          <p class="say">👨‍⚕️ Alla visita puoi portare un tuo medico.</p></div>` : ''}
+          <p>📨 Puoi mandare altri fogli medici all'INPS fino a <strong>${rules.new_regime.extra_documents_days_before_visit} giorni prima</strong> della visita.</p>
+          <p>👨‍⚕️ Alla visita puoi portare un tuo medico.</p></div>` : ''}
         ${patronato}
         ${afterVerbale}
         ${disclaimer(rules.last_verified)}

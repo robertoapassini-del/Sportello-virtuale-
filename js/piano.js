@@ -14,15 +14,15 @@ const state = {};
 const sources = () => [rules.sources, { verified: rules.last_verified }];
 
 const whatIs = () => `
-  <h2 class="say">Cos'è e come funziona</h2>
+  <h2>Cos'è e come funziona</h2>
   <ol class="big-steps">
-    <li class="say"><strong>Alcune medicine</strong> il medico di famiglia può prescriverle solo se c'è un <strong>piano terapeutico</strong>: un foglio scritto da uno <strong>specialista del Servizio sanitario</strong> (in ospedale o in un centro autorizzato), non da un medico privato.</li>
-    <li class="say"><strong>Il piano ha una scadenza</strong>, scritta sul foglio: di solito ${rules.typical_duration_months.join(' o ')} mesi.</li>
-    <li class="say"><strong>Con il piano valido</strong>, il medico di famiglia ti fa la ricetta ogni mese. Tieni una copia del piano: a volte la farmacia la chiede.</li>
-    <li class="say"><strong>Dove prendi la medicina:</strong> molte medicine con il piano non si prendono come le altre. A volte si ritirano alla <strong>farmacia dell'ASP</strong> («distribuzione diretta»). Altre volte le dà la tua farmacia <strong>per conto dell'ASP</strong> («DPC»): la farmacia la ordina e di solito arriva in un giorno o due. Chiedi al medico o al farmacista quale vale per la tua medicina.</li>
-    <li class="say"><strong>Prima che scada</strong> serve una nuova visita dallo specialista per rinnovarlo. Se scade, il medico non può più fare la ricetta con il Servizio sanitario.</li>
+    <li><strong>Alcune medicine</strong> il medico di famiglia può prescriverle solo se c'è un <strong>piano terapeutico</strong>: un foglio scritto da uno <strong>specialista del Servizio sanitario</strong> (in ospedale o in un centro autorizzato), non da un medico privato.</li>
+    <li><strong>Il piano ha una scadenza</strong>, scritta sul foglio: di solito ${rules.typical_duration_months.join(' o ')} mesi.</li>
+    <li><strong>Con il piano valido</strong>, il medico di famiglia ti fa la ricetta ogni mese. Tieni una copia del piano: a volte la farmacia la chiede.</li>
+    <li><strong>Dove prendi la medicina:</strong> molte medicine con il piano non si prendono come le altre. A volte si ritirano alla <strong>farmacia dell'ASP</strong> («distribuzione diretta»). Altre volte le dà la tua farmacia <strong>per conto dell'ASP</strong> («DPC»): la farmacia la ordina e di solito arriva in un giorno o due. Chiedi al medico o al farmacista quale vale per la tua medicina.</li>
+    <li><strong>Prima che scada</strong> serve una nuova visita dallo specialista per rinnovarlo. Se scade, il medico non può più fare la ricetta con il Servizio sanitario.</li>
   </ol>
-  <div class="notice warn"><p class="say">⚠️ La visita per il rinnovo è una <strong>visita di controllo</strong>: può avere tempi lunghi e non c'è la garanzia dei tempi massimi. Per questo va prenotata con largo anticipo, almeno ${rules.book_before_days} giorni prima.</p></div>
+  <div class="notice warn"><p>⚠️ La visita per il rinnovo è una <strong>visita di controllo</strong>: può avere tempi lunghi e non c'è la garanzia dei tempi massimi. Per questo va prenotata con largo anticipo, almeno ${rules.book_before_days} giorni prima.</p></div>
   <details class="card">
     <summary>Se la visita non si trova in tempo</summary>
     <ul class="clean">
@@ -49,9 +49,9 @@ const screens = {
     html: `
       <div class="hero" aria-hidden="true">👨‍⚕️</div>
       <h1>Si parte dallo specialista</h1>
-      <p class="say">Chiedi al medico di famiglia l'impegnativa per la visita dallo specialista giusto. Alla visita, lo specialista scrive il piano.</p>
+      <p>Chiedi al medico di famiglia l'impegnativa per la visita dallo specialista giusto. Alla visita, lo specialista scrive il piano.</p>
       ${whatIs()}
-      <p class="say">Quando hai il piano, torna qui con la data di scadenza: ti diciamo quando prenotare il rinnovo.</p>
+      <p>Quando hai il piano, torna qui con la data di scadenza: ti diciamo quando prenotare il rinnovo.</p>
       ${disclaimer(rules.last_verified)}
       ${restartBtn()}`,
   }),
@@ -59,7 +59,7 @@ const screens = {
   date: () => ({
     html: `
       <h1>📅 Quando scade il piano?</h1>
-      <p class="say">La data è scritta sul foglio, vicino a «valido fino al» o «durata».</p>
+      <p>La data è scritta sul foglio, vicino a «valido fino al» o «durata».</p>
       ${dateForm({ id: 'exp-form', name: 'expiryDate', label: 'Data di scadenza del piano', value: state.expiryDate, button: '✔️ Controlla' })}`,
     mount() {
       document.getElementById('exp-form').addEventListener('submit', (e) => {
@@ -86,7 +86,7 @@ const screens = {
       html: `
         <div class="hero" aria-hidden="true">${box[0]}</div>
         <h1>${box[1]}</h1>
-        <div class="notice ${box[2]}"><p class="say">${box[3]}</p></div>
+        <div class="notice ${box[2]}"><p>${box[3]}</p></div>
         ${whatIs()}
         ${disclaimer(rules.last_verified)}
         ${restartBtn()}`,

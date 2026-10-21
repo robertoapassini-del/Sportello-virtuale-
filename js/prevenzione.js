@@ -14,7 +14,7 @@ let data;
 const state = {};
 const sources = () => [rules.sources, { verified: rules.last_verified, note: 'Le età possono cambiare con le campagne regionali: chiedi conferma al medico o all\'ASP.' }];
 
-const item = (x, extra) => `<li class="say"><span class="ico" aria-hidden="true">${x.icon}</span><span><strong>${esc(x.title)}</strong> – ${extra}<br><span class="muted">${esc(x.how)}</span></span></li>`;
+const item = (x, extra) => `<li><span class="ico" aria-hidden="true">${x.icon}</span><span><strong>${esc(x.title)}</strong> – ${extra}<br><span class="muted">${esc(x.how)}</span></span></li>`;
 
 const screens = {
   // Prima schermata: la risposta scritta che è già nella pagina (vedi index.html).
@@ -56,7 +56,7 @@ const screens = {
   province: () => ({
     html: `${progress(3, 3)}
       <h1>📍 Dove abita?</h1>
-      <p class="say">Ci serve per darti il numero giusto per prenotare.</p>
+      <p>Ci serve per darti il numero giusto per prenotare.</p>
       <div class="grid2">${[...data.asl].sort((a, b) => a.province.localeCompare(b.province)).map((a) => choice('', a.province, { province: a.id }, 'result')).join('')}</div>`,
   }),
 
@@ -65,29 +65,29 @@ const screens = {
     const a = data.asl.find((x) => x.id === state.province);
     const scr = (a.contacts || []).find((c) => c.topic === 'screening');
     const num = scr ? scr.number : rules.screening_numbers[state.province];
-    const later = r.later.slice(0, 3).map((x) => `<li class="say"><span class="ico" aria-hidden="true">${x.icon}</span><span>${esc(x.title)}: <strong>dai ${x.min} anni</strong></span></li>`).join('');
+    const later = r.later.slice(0, 3).map((x) => `<li><span class="ico" aria-hidden="true">${x.icon}</span><span>${esc(x.title)}: <strong>dai ${x.min} anni</strong></span></li>`).join('');
     const none = !r.screening.length && !r.vaccines.length;
     return {
       html: `
         <div class="hero" aria-hidden="true">${none ? '🧒' : '✅'}</div>
         <h1>${none ? 'Per ora non ci sono controlli di questo tipo' : 'Ecco cosa puoi fare gratis'}</h1>
-        ${none ? `<p class="say">Per i bambini e i ragazzi, i vaccini e i controlli li segue il pediatra o il medico di famiglia: chiedi a lui il calendario.</p>` : ''}
+        ${none ? `<p>Per i bambini e i ragazzi, i vaccini e i controlli li segue il pediatra o il medico di famiglia: chiedi a lui il calendario.</p>` : ''}
         ${r.screening.length ? `
-          <h2 class="say">🎗️ Esami contro i tumori</h2>
-          <p class="say">Gratis, <strong>senza ricetta</strong> e senza ticket.</p>
+          <h2>🎗️ Esami contro i tumori</h2>
+          <p>Gratis, <strong>senza ricetta</strong> e senza ticket.</p>
           <ul class="icon-list">${r.screening.map((s) => item(s, `ogni ${s.every_years} anni (dai ${s.min} ai ${s.max} anni)`)).join('')}</ul>` : ''}
         ${r.vaccines.length ? `
-          <h2 class="say">💉 Vaccini</h2>
+          <h2>💉 Vaccini</h2>
           <ul class="icon-list">${r.vaccines.map((v) => item(v, esc(v.every))).join('')}</ul>` : ''}
-        <h2 class="say">Come prenotare</h2>
+        <h2>Come prenotare</h2>
         <ol class="big-steps">
-          <li class="say"><strong>Chiedi al medico di famiglia:</strong> sa quali controlli ti mancano e fa molti vaccini direttamente nello studio.</li>
-          <li class="say"><strong>Per gli esami contro i tumori</strong> chiama il numero dello screening dell'ASP di ${esc(a.province)}${num ? `: <strong>${esc(num)}</strong>` : ' (te lo dà il CUP o l\'URP)'}. Se hai ricevuto una lettera di invito, c'è scritto il numero.</li>
-          <li class="say"><strong>Per i vaccini</strong> puoi andare anche al centro vaccinale dell'ASP o, dove c'è il servizio, in farmacia.</li>
+          <li><strong>Chiedi al medico di famiglia:</strong> sa quali controlli ti mancano e fa molti vaccini direttamente nello studio.</li>
+          <li><strong>Per gli esami contro i tumori</strong> chiama il numero dello screening dell'ASP di ${esc(a.province)}${num ? `: <strong>${esc(num)}</strong>` : ' (te lo dà il CUP o l\'URP)'}. Se hai ricevuto una lettera di invito, c'è scritto il numero.</li>
+          <li><strong>Per i vaccini</strong> puoi andare anche al centro vaccinale dell'ASP o, dove c'è il servizio, in farmacia.</li>
         </ol>
         ${scr ? officeBox(a, 'screening', '🎗️ Prenotare gli esami contro i tumori') : num ? callButton('Numero verde screening', num) : ''}
         ${later ? `<details class="card"><summary>Cosa arriverà più avanti</summary><ul class="icon-list">${later}</ul></details>` : ''}
-        <div class="notice info"><p class="say">Se hai una malattia cronica, sei incinta o lavori con persone fragili, alcuni vaccini sono gratis anche prima di queste età. Chiedi al medico.</p></div>
+        <div class="notice info"><p>Se hai una malattia cronica, sei incinta o lavori con persone fragili, alcuni vaccini sono gratis anche prima di queste età. Chiedi al medico.</p></div>
         ${disclaimer(rules.last_verified)}
         ${restartBtn()}`,
     };
