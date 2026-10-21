@@ -71,7 +71,7 @@ function render() {
 
 // La pagina «Numeri utili» non è un modulo, ma la ricerca deve trovarla.
 const NUMERI = {
-  id: 'numeri-utili', icon: '📞', title: 'Numeri utili', small: 'Guardia medica, CUP, ASP, INPS',
+  id: 'numeri-utili', icon: '📞', title: 'Numeri utili', get small() { return `Guardia medica, CUP, ${aslLabel()}, INPS`; },
   keywords: 'numero numeri telefono chiamare guardia medica notte cup urp centralino inps tessera sanitaria farmacia turno violenza 1522 112 118 116117 pua',
 };
 

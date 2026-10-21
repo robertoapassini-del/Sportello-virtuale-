@@ -4,7 +4,7 @@
 // prepariamo un sollecito al distretto. Non chiediamo la malattia.
 import { todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
 import { genericRequest, mailtoHref } from './letters.js';
-import { noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact } from './common.js';
+import { noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact, aslLabel, regioneInfo, regioneLink, aslIntestazione } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
 
 const ROOT = '../';
@@ -28,7 +28,7 @@ const steps = () => `
   <h2>Come si chiede</h2>
   <ol class="big-steps">
     <li><strong>Parla con il medico di famiglia.</strong> È lui che compila la richiesta di assistenza domiciliare e la manda al distretto. Se la persona è in ospedale, chiedi al reparto la <strong>«dimissione protetta»</strong>: la richiesta parte dall'ospedale prima che torni a casa.</li>
-    <li><strong>La richiesta arriva al PUA</strong> (Punto Unico di Accesso) del distretto dell'ASP. Chiedi al medico una copia o il numero della richiesta, con la data.</li>
+    <li><strong>La richiesta arriva al PUA</strong> (Punto Unico di Accesso) del distretto dell'${aslLabel()}. Chiedi al medico una copia o il numero della richiesta, con la data.</li>
     <li><strong>Una équipe viene a casa</strong> per la valutazione (si chiama UVM) e scrive il piano: quante volte a settimana, quali figure (infermiere, fisioterapista, medico, operatore).</li>
     <li><strong>Iniziano le visite a casa.</strong> È tutto <strong>gratuito</strong>.</li>
   </ol>
@@ -65,8 +65,8 @@ const screens = {
       <details class="card">
         <summary>🧪 Il prelievo del sangue a casa</summary>
         <ul class="clean">
-          <li><strong>Con l'ASP:</strong> il medico di famiglia scrive sulla ricetta che la persona <strong>non può camminare e non può essere trasportata</strong>. Poi chiedi al medico o al PUA del distretto come mandarla. Ad Enna, per esempio, dal 2026 lo fa la Casa della Comunità.</li>
-          <li><strong>Da privato:</strong> con la ricetta, chiama un laboratorio (meglio se convenzionato con l'ASP) e chiedi se fa prelievi a casa. Di solito si paga a parte la venuta a casa, anche se sei esente dal ticket. Chiedi il prezzo prima.</li>
+          <li><strong>Con l'${aslLabel()}:</strong> il medico di famiglia scrive sulla ricetta che la persona <strong>non può camminare e non può essere trasportata</strong>. Poi chiedi al medico o al PUA del distretto come mandarla. Ad Enna, per esempio, dal 2026 lo fa la Casa della Comunità.</li>
+          <li><strong>Da privato:</strong> con la ricetta, chiama un laboratorio (meglio se convenzionato con l'${aslLabel()}) e chiedi se fa prelievi a casa. Di solito si paga a parte la venuta a casa, anche se sei esente dal ticket. Chiedi il prezzo prima.</li>
         </ul>
       </details>
 
@@ -98,20 +98,21 @@ const screens = {
         <summary>🫁 L'ossigeno a casa</summary>
         <ul class="clean">
           <li><strong>Le bombole</strong> le può prescrivere anche il medico di famiglia, con la ricetta. Si prendono in farmacia.</li>
-          <li><strong>Per l'ossigeno ogni giorno</strong> (ossigeno liquido o apparecchio) serve il <strong>piano terapeutico</strong> dello specialista, di solito il pneumologo. Poi lo porta a casa la ditta scelta dall'ASP.</li>
-          <li>Se l'ossigeno non arriva, chiama il servizio farmaceutico dell'ASP o l'URP.</li>
+          <li><strong>Per l'ossigeno ogni giorno</strong> (ossigeno liquido o apparecchio) serve il <strong>piano terapeutico</strong> dello specialista, di solito il pneumologo. Poi lo porta a casa la ditta scelta dall'${aslLabel()}.</li>
+          <li>Se l'ossigeno non arriva, chiama il servizio farmaceutico dell'${aslLabel()} o l'URP.</li>
         </ul>
       </details>
 
       <details class="card">
         <summary>🚚 Il trasporto per la dialisi</summary>
         <ul class="clean">
-          <li>In Sicilia il trasporto per la dialisi lo <strong>paga l'ASP</strong>. Lo fanno associazioni e ditte iscritte in un elenco della Regione.</li>
-          <li>Se vai con la tua auto, l'ASP ti <strong>rimborsa i chilometri</strong> da casa al centro dialisi.</li>
+          ${regioneLink('dialisi') ? `<li>In ${esc(regioneInfo().name)} il trasporto per la dialisi lo <strong>paga l'${aslLabel()}</strong>. Lo fanno associazioni e ditte iscritte in un elenco della Regione.</li>
+          <li>Se vai con la tua auto, l'${aslLabel()} ti <strong>rimborsa i chilometri</strong> da casa al centro dialisi.</li>`
+    : `<li>Chi paga il trasporto per la dialisi, e se rimborsa i chilometri con la tua auto, lo decide la Regione: chiedi al centro dialisi o al distretto dell'${aslLabel()}.</li>`}
           <li>Serve un certificato del medico di famiglia. Chiedi al centro dialisi come fare la domanda.</li>
           <li>Per le altre visite, il trasporto in ambulanza è gratis solo nelle emergenze (112). Per una visita programmata, chiedi prima al distretto chi paga.</li>
         </ul>
-        <p><a href="https://regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/dipartimento-pianificazione-strategica/altri-contenuti/albo-trasporto-emodializzati" target="_blank" rel="noopener">💻 Elenco della Regione per il trasporto dei dializzati</a></p>
+        ${regioneLink('dialisi') ? `<p><a href="${esc(regioneLink('dialisi'))}" target="_blank" rel="noopener">💻 Elenco della Regione per il trasporto dei dializzati</a></p>` : ''}
       </details>
 
       <p>Per i numeri del PUA e della guardia medica: <a href="../numeri-utili/">📞 Numeri utili</a>.</p>
@@ -153,7 +154,7 @@ const screens = {
         <ol class="big-steps">
           <li><strong>Chiedi al medico di famiglia</strong> di chiedere una nuova valutazione (rivalutazione) al distretto: il piano si può aumentare.</li>
           <li><strong>Chiama il PUA del distretto</strong> e chiedi perché si è interrotta e quando riprende. Segnati nome e data.</li>
-          <li><strong>Se non cambia niente:</strong> reclamo all'URP dell'ASP di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''}. Puoi usare la lettera qui sotto.</li>
+          <li><strong>Se non cambia niente:</strong> reclamo all'URP dell'${aslLabel()} di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''}. Puoi usare la lettera qui sotto.</li>
         </ol>
         ${aspCalls(a, ['casa'])}
         <button type="button" class="btn primary" data-go="letter">✍️ Scriviamo la lettera insieme</button>
@@ -197,9 +198,9 @@ const screens = {
         </div>
         <h2>Cosa fare</h2>
         <ol class="big-steps">
-          <li><strong>Chiama il PUA del distretto</strong> e chiedi a che punto è la richiesta. Se non sai il numero, chiama l'ASP e chiedi del PUA del tuo comune.</li>
+          <li><strong>Chiama il PUA del distretto</strong> e chiedi a che punto è la richiesta. Se non sai il numero, chiama l'${aslLabel()} e chiedi del PUA del tuo comune.</li>
           <li><strong>Chiedi al medico di famiglia</strong> di sollecitare anche lui: la sua telefonata pesa.</li>
-          ${late ? `<li><strong>Manda un sollecito scritto</strong> al distretto e all'URP dell'ASP di ${esc(a.province)}. Lo scriviamo insieme.</li>` : ''}
+          ${late ? `<li><strong>Manda un sollecito scritto</strong> al distretto e all'URP dell'${aslLabel()} di ${esc(a.province)}. Lo scriviamo insieme.</li>` : ''}
         </ol>
         ${aspCalls(a, ['casa'])}
         ${late ? '<button type="button" class="btn primary" data-go="letter">✍️ Scriviamo il sollecito insieme</button>' : ''}
@@ -214,7 +215,7 @@ const screens = {
     return {
       html: `
         <h1>✍️ ${isReminder ? 'Scriviamo il sollecito insieme' : 'Scriviamo la lettera insieme'}</h1>
-        <p>Scrivi i dati qui sotto. Noi li mettiamo nella lettera per il distretto dell'ASP di ${esc(a.province)}.</p>
+        <p>Scrivi i dati qui sotto. Noi li mettiamo nella lettera per il distretto dell'${aslLabel()} di ${esc(a.province)}.</p>
         <div class="notice info"><p>🔒 I dati restano sul tuo telefono. Non chiediamo la malattia. Non sai qualcosa? Lascia vuoto e scrivilo a penna.</p></div>
         <form id="letter-form" novalidate>
           <fieldset>
@@ -257,7 +258,7 @@ const screens = {
                'l\'assistenza è stata interrotta o ridotta senza una nuova valutazione',
                'le cure domiciliari rientrano nei livelli essenziali di assistenza (art. 22 DPCM 12/01/2017)'];
           const text = genericRequest({
-            to: `Azienda Sanitaria Provinciale di ${a.province}\n${state.district ? `Distretto – ${state.district} – ` : ''}Punto Unico di Accesso\ne p.c. Ufficio Relazioni con il Pubblico`,
+            to: `${aslIntestazione()} di ${a.province}\n${state.district ? `Distretto – ${state.district} – ` : ''}Punto Unico di Accesso\ne p.c. Ufficio Relazioni con il Pubblico`,
             address: to, person,
             subject: isReminder ? `SOLLECITO – Attivazione assistenza domiciliare integrata (richiesta ${art('del', state.requestDate)}${formatIt(state.requestDate)})` : 'Richiesta di rivalutazione del piano di assistenza domiciliare integrata',
             premise,
@@ -273,7 +274,7 @@ const screens = {
             `Buongiorno,\nin allegato la lettera firmata, con i documenti.\n\nCordiali saluti\n${person.fullName || ''}`);
           document.getElementById('send-hint').innerHTML = to
             ? `📧 L'email si apre indirizzata a ${esc(to)}${to === a.pec || /@pec\./.test(to) ? ' (è una PEC: se non hai la PEC, consegna la lettera a mano al distretto o all\'URP)' : ''}. Chiedi sempre una ricevuta.`
-            : '🏥 <strong>Stampa la lettera e consegnala al PUA del distretto o all\'URP dell\'ASP.</strong> Fatti dare una ricevuta con la data.';
+            : `🏥 <strong>Stampa la lettera e consegnala al PUA del distretto o all'URP dell'${aslLabel()}.</strong> Fatti dare una ricevuta con la data.`;
         };
         form.addEventListener('input', update); form.addEventListener('change', update); update();
         document.getElementById('copy-btn').addEventListener('click', (e) => copyText(state.letterText, e.currentTarget));

@@ -2,7 +2,7 @@
 // Prima la risposta: la pagina mostra subito la risposta scritta; il percorso per età parte dal pulsante.
 // Regole fisse per età e sesso. Non chiediamo la malattia.
 import { prevenzione } from './engine.js';
-import { esc, loadJSON, loadRegional, disclaimer, renderFooter, readForm, callButton, officeBox } from './common.js';
+import { esc, loadJSON, loadRegional, disclaimer, renderFooter, readForm, callButton, officeBox, aslLabel } from './common.js';
 import { createFlow, choice, restartBtn, progress } from './flow.js';
 
 const ROOT = '../';
@@ -12,7 +12,7 @@ const answerHtml = app.innerHTML;
 let rules;
 let data;
 const state = {};
-const sources = () => [rules.sources, { verified: rules.last_verified, note: 'Le età possono cambiare con le campagne regionali: chiedi conferma al medico o all\'ASP.' }];
+const sources = () => [rules.sources, { verified: rules.last_verified, note: `Le età possono cambiare con le campagne regionali: chiedi conferma al medico o all'${aslLabel()}.` }];
 
 const item = (x, extra) => `<li><span class="ico" aria-hidden="true">${x.icon}</span><span><strong>${esc(x.title)}</strong> – ${extra}<br><span class="muted">${esc(x.how)}</span></span></li>`;
 
@@ -82,8 +82,8 @@ const screens = {
         <h2>Come prenotare</h2>
         <ol class="big-steps">
           <li><strong>Chiedi al medico di famiglia:</strong> sa quali controlli ti mancano e fa molti vaccini direttamente nello studio.</li>
-          <li><strong>Per gli esami contro i tumori</strong> chiama il numero dello screening dell'ASP di ${esc(a.province)}${num ? `: <strong>${esc(num)}</strong>` : ' (te lo dà il CUP o l\'URP)'}. Se hai ricevuto una lettera di invito, c'è scritto il numero.</li>
-          <li><strong>Per i vaccini</strong> puoi andare anche al centro vaccinale dell'ASP o, dove c'è il servizio, in farmacia.</li>
+          <li><strong>Per gli esami contro i tumori</strong> chiama il numero dello screening dell'${aslLabel()} di ${esc(a.province)}${num ? `: <strong>${esc(num)}</strong>` : ' (te lo dà il CUP o l\'URP)'}. Se hai ricevuto una lettera di invito, c'è scritto il numero.</li>
+          <li><strong>Per i vaccini</strong> puoi andare anche al centro vaccinale dell'${aslLabel()} o, dove c'è il servizio, in farmacia.</li>
         </ol>
         ${scr ? officeBox(a, 'screening', '🎗️ Prenotare gli esami contro i tumori') : num ? callButton('Numero verde screening', num) : ''}
         ${later ? `<details class="card"><summary>Cosa arriverà più avanti</summary><ul class="icon-list">${later}</ul></details>` : ''}

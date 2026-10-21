@@ -7,7 +7,7 @@ import { checkWaiting, callbackDeadline, maxWaitDays, todayISO, formatIt, parseD
 import { tutelaLetter, tutelaReminder, mailtoHref } from './letters.js';
 import { noPecBox,
   esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton, aspCalls,
-  personFields, reportErrorHref, generalContact, choice, helpBox, sourcesBox, moreHelp, hideHeadingEmoji, enableStart,
+  personFields, reportErrorHref, generalContact, choice, helpBox, sourcesBox, moreHelp, hideHeadingEmoji, enableStart, aslLabel, aslIntestazione, regioneInfo, regioneLink,
 } from './common.js';
 import { RICETTA_SVG } from './ricetta-svg.js';
 import { createNav, withRegion, regionAction } from './flow.js';
@@ -105,7 +105,7 @@ function aspSteps(a) {
 
   let sendBtn;
   if (a.letter_mode === 'portal') {
-    sendBtn = `<a class="btn primary" href="${esc(a.portal_url)}" target="_blank" rel="noopener">💻 Vai al sito dell'ASP</a>`;
+    sendBtn = `<a class="btn primary" href="${esc(a.portal_url)}" target="_blank" rel="noopener">💻 Vai al sito dell'${aslLabel()}</a>`;
   } else if (a.letter_mode === 'official_form') {
     sendBtn = '<button type="button" class="btn primary" data-go="letter">✍️ Ti aiutiamo a compilare il modulo</button>';
   } else {
@@ -116,8 +116,8 @@ function aspSteps(a) {
   const contacts = [];
   for (const e of a.emails) contacts.push(`<li>Email: ${mailLink(e)}</li>`);
   if (a.pec) contacts.push(`<li>PEC: ${mailLink(a.pec)}</li>`);
-  if (a.form_url) contacts.push(`<li><a href="${esc(a.form_url)}" target="_blank" rel="noopener">Modulo o pagina ufficiale dell'ASP</a></li>`);
-  if (a.info_url && a.info_url !== a.form_url) contacts.push(`<li><a href="${esc(a.info_url)}" target="_blank" rel="noopener">Pagina ufficiale dell'ASP</a></li>`);
+  if (a.form_url) contacts.push(`<li><a href="${esc(a.form_url)}" target="_blank" rel="noopener">Modulo o pagina ufficiale dell'${aslLabel()}</a></li>`);
+  if (a.info_url && a.info_url !== a.form_url) contacts.push(`<li><a href="${esc(a.info_url)}" target="_blank" rel="noopener">Pagina ufficiale dell'${aslLabel()}</a></li>`);
 
   return `
   ${ft ? `<div class="notice info">
@@ -133,7 +133,7 @@ function aspSteps(a) {
       <ul class="icon-list">${docs}</ul>
     </li>
     <li>
-      <h3>Fai la richiesta all'ASP di ${esc(a.province)}</h3>
+      <h3>Fai la richiesta all'${aslLabel()} di ${esc(a.province)}</h3>
       <p>${esc(a.how_to)}</p>
       ${a.notes.map((n) => `<p class="notice warn">${esc(n)}</p>`).join('')}
       ${sendBtn}
@@ -150,7 +150,7 @@ function aspSteps(a) {
   </ol>
   <details class="card">
     <summary>Per saperne di più su ${esc(a.name)}</summary>
-    ${a.sub_areas ? `<p>L'ASP divide la provincia in 3 zone: ${a.sub_areas.map(esc).join('; ')}.</p>` : ''}
+    ${a.sub_areas ? `<p>L'${aslLabel()} divide la provincia in 3 zone: ${a.sub_areas.map(esc).join('; ')}.</p>` : ''}
     ${a.details.length ? `<ul class="clean">${a.details.map((d) => `<li>${esc(d)}</li>`).join('')}</ul>` : ''}
     ${contacts.length ? `<ul class="clean">${contacts.join('')}</ul>` : ''}
     <p>La regola dice che la visita va fatta in tempo in strutture pubbliche o convenzionate.
@@ -333,7 +333,7 @@ const screens = {
           <p>Il tuo appuntamento è ${art('il', state.appointmentDate)}<strong>${esc(formatIt(state.appointmentDate))}</strong>:
           <strong>${days(r.excess)} di troppo</strong>.</p>
         </div>
-        <p>Puoi chiedere all'ASP di farti fare la visita prima. Se serve, la fai in ospedale pagando solo il ticket.</p>
+        <p>Puoi chiedere all'${aslLabel()} di farti fare la visita prima. Se serve, la fai in ospedale pagando solo il ticket.</p>
         ${aspSteps(a)}
         ${warnings()}
         ${disclaimer(a.last_verified)}`,
@@ -357,11 +357,11 @@ const screens = {
     const cb = callbackDeadline(rules, { cls: state.cls, kind: state.kind, requestDate: state.requestDate, today: todayISO() });
     let status = '';
     if (cb.status === 'waiting') {
-      status = `<div class="notice info"><p>📞 L'ASP deve richiamarti entro ${art('il', cb.deadline)}<strong>${esc(formatIt(cb.deadline))}</strong>.</p>
+      status = `<div class="notice info"><p>📞 L'${aslLabel()} deve richiamarti entro ${art('il', cb.deadline)}<strong>${esc(formatIt(cb.deadline))}</strong>.</p>
         <p>Se non ti chiamano, torna qui quel giorno.</p></div>`;
     } else if (cb.status === 'passed') {
       status = `<div class="notice bad"><p>⚠️ Dovevano richiamarti entro ${art('il', cb.deadline)}<strong>${esc(formatIt(cb.deadline))}</strong>. Non l'hanno fatto.</p>
-        <p>Ora puoi chiedere all'ASP di farti fare la visita in tempo.</p></div>
+        <p>Ora puoi chiedere all'${aslLabel()} di farti fare la visita in tempo.</p></div>
         ${aspSteps(a)}
         ${warnings()}`;
     }
@@ -369,7 +369,7 @@ const screens = {
       html: `
         <div class="hero" aria-hidden="true">🚫</div>
         <h1>Il CUP non ti ha dato una data</h1>
-        <p>In questo caso l'ASP deve metterti in una lista e <strong>richiamarti entro ${days(cb.days)}</strong>.</p>
+        <p>In questo caso l'${aslLabel()} deve metterti in una lista e <strong>richiamarti entro ${days(cb.days)}</strong>.</p>
         <div class="notice warn"><p>Chiedi al CUP un foglio con il giorno della tua richiesta e il numero della ricetta. Conservalo.</p></div>
         <form id="req-form" novalidate>
           <label for="requestDate">Che giorno hai chiesto la prenotazione al CUP?</label>
@@ -404,7 +404,7 @@ const screens = {
           <p>🔒 I dati restano sul tuo telefono. Noi non li vediamo.</p>
           <p>Non sai qualcosa? Lascia vuoto. ${official ? 'Lo scrivi a penna sul modulo.' : 'Dopo aver stampato, lo scrivi a penna.'}</p>
         </div>
-        ${official ? `<a class="btn" href="${esc(a.form_url)}" target="_blank" rel="noopener">📥 Scarica il modulo dell'ASP</a>` : ''}
+        ${official ? `<a class="btn" href="${esc(a.form_url)}" target="_blank" rel="noopener">📥 Scarica il modulo dell'${aslLabel()}</a>` : ''}
         <form id="letter-form" novalidate>
           ${personFields(person, 'Chi deve fare la visita')}
           <fieldset>
@@ -468,21 +468,21 @@ const screens = {
         <div class="hero" aria-hidden="true">⏳</div>
         <h1>E adesso?</h1>
         <ul class="icon-list">
-          <li><span class="ico" aria-hidden="true">📞</span> Aspetta la risposta dell'ASP. Tieni il telefono acceso: possono chiamarti da un numero che non conosci.</li>
+          <li><span class="ico" aria-hidden="true">📞</span> Aspetta la risposta dell'${aslLabel()}. Tieni il telefono acceso: possono chiamarti da un numero che non conosci.</li>
           ${a.what_next.map((w) => `<li><span class="ico" aria-hidden="true">👉</span> ${esc(w)}</li>`).join('')}
           <li><span class="ico" aria-hidden="true">🗂️</span> Conserva una copia di tutto quello che hai mandato.</li>
         </ul>
         <h2 id="remind-title">${esc(remindTitle())}</h2>
         <ol class="big-steps">
-          <li><strong>Manda un sollecito</strong>: una seconda lettera per ricordarlo all'ASP. La trovi qui sotto, già pronta.</li>
-          <li><strong>Fai un reclamo</strong> all'ufficio URP della tua ASP${urp ? ` (${mailLink(urp)})` : ''}.</li>
+          <li><strong>Manda un sollecito</strong>: una seconda lettera per ricordarlo all'${aslLabel()}. La trovi qui sotto, già pronta.</li>
+          <li><strong>Fai un reclamo</strong> all'ufficio URP della tua ${aslLabel()}${urp ? ` (${mailLink(urp)})` : ''}.</li>
           <li><strong>Chiedi aiuto a un'associazione</strong> di pazienti: Cittadinanzattiva
             (<a href="https://www.cittadinanzattiva.it" target="_blank" rel="noopener">cittadinanzattiva.it</a>) oppure
             Associazione Luca Coscioni (<a href="https://www.associazionelucacoscioni.it" target="_blank" rel="noopener">associazionelucacoscioni.it</a>).</li>
-          <li><strong>Scrivi alla Regione Siciliana</strong>, ufficio URP dell'Assessorato della Salute
-            (<a href="https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute" target="_blank" rel="noopener">regione.sicilia.it</a>).</li>
+          <li><strong>Scrivi alla ${esc(regioneInfo().ente || 'tua Regione')}</strong>, ufficio URP dell'Assessorato della Salute${regioneLink('assessorato') ? `
+            (<a href="${esc(regioneLink('assessorato'))}" target="_blank" rel="noopener">${esc(new URL(regioneLink('assessorato')).hostname.replace(/^www\./, ''))}</a>)` : ''}.</li>
         </ol>
-        <div class="notice warn"><p>💶 Vai dal privato a pagamento <strong>solo se l'ASP te lo scrive</strong>. Altrimenti potresti non avere i soldi indietro.</p></div>
+        <div class="notice warn"><p>💶 Vai dal privato a pagamento <strong>solo se l'${aslLabel()} te lo scrive</strong>. Altrimenti potresti non avere i soldi indietro.</p></div>
         <div class="card">
           <h2 style="margin-top:0">📄 Il sollecito, già pronto</h2>
           <form id="rem-form" novalidate>
@@ -511,6 +511,7 @@ const screens = {
           err.textContent = ok ? '' : `Scrivi una data giusta, non dopo oggi. Per ora usiamo ${art('il', state.firstRequestDate)}${formatIt(state.firstRequestDate)}.`;
           document.getElementById('remind-title').textContent = remindTitle();
           const text = tutelaReminder({
+            ente: aslIntestazione(),
             aspName: a.province, aspAddress: a.send_to || a.pec || '', person, service: state.service, nre: state.nre,
             cls: classText(), firstRequestDate: state.firstRequestDate, today,
           });
@@ -557,6 +558,7 @@ function updateLetter(a, official) {
   }
 
   const text = tutelaLetter({
+    ente: aslIntestazione(),
     aspName: a.province,
     aspAddress: a.send_to || a.pec || '',
     person, service: state.service, nre: state.nre, cls: classText(), maxDays: limit(),
@@ -568,9 +570,9 @@ function updateLetter(a, official) {
   const to = a.send_to || '';
   mail.href = mailtoHref(to, subject, `Buongiorno,\nin allegato la richiesta di attivazione del percorso di tutela, firmata, con i documenti.${signoff}`);
   if (!to) {
-    hint.innerHTML = '🏥 Per questa ASP non abbiamo ancora un indirizzo sicuro. <strong>Stampa la lettera e portala all\'ufficio URP</strong> o al CUP.';
+    hint.innerHTML = `🏥 Per questa ${aslLabel()} non abbiamo ancora un indirizzo sicuro. <strong>Stampa la lettera e portala all'ufficio URP</strong> o al CUP.`;
   } else if (a.channel === 'pec' || /@pec\./.test(to)) {
-    hint.innerHTML = `📨 L'indirizzo dell'ASP è una PEC (una email speciale). <strong>Se non hai la PEC, stampa la lettera e portala all'ufficio URP.</strong>`;
+    hint.innerHTML = `📨 L'indirizzo dell'${aslLabel()} è una PEC (una email speciale). <strong>Se non hai la PEC, stampa la lettera e portala all'ufficio URP.</strong>`;
   } else {
     hint.innerHTML = `📧 L'email si apre già con l'indirizzo giusto (${esc(to)}). Aggiungi la lettera firmata e le foto dei documenti.
       Se non sai usare l'email, stampa la lettera e portala all'ufficio URP.`;

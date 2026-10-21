@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — testi dei moduli per tutte le regioni (nessun dato cambiato)
+- Nei moduli «ASP» diventa la sigla della regione scelta (ASP, ATS, ASL…), anche nell'avviso «Controlla sempre con la tua …» e nell'intestazione delle lettere.
+- Le cose solo siciliane passano nell'indice delle regioni (`data/regioni/index.json`: `ente`, `asl_intestazione`, `link`): Fascicolo sanitario della Regione Siciliana, URP dell'assessorato, elenco per il trasporto dei dializzati. Nelle altre regioni compare una frase generica; l'elenco dei grandi ospedali siciliani si vede solo in Sicilia.
+- Per la Sicilia i testi restano identici: confrontate 132 schermate prima e dopo.
+
 ## 21/10/2026 — passo 3 delle regioni: il codice per più regioni (nessun dato cambiato)
 - Si può scegliere anche una regione non ancora attiva: al posto della provincia c'è «La tua regione non c'è ancora», con la parte valida in tutta Italia e l'invito a scriverci.
 - Numeri utili funziona con più regioni: titoli con il nome della regione e la sigla dell'azienda sanitaria (ASP, ATS, ASL…), cambio di regione senza ricaricare la pagina, `numeri-utili/#regione` apre la scelta. In home, con più regioni, si vede quale si sta guardando.

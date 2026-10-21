@@ -4,7 +4,7 @@
 // Scritto con delicatezza: spesso chi legge sta assistendo una persona molto malata.
 import { todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
 import { genericRequest, mailtoHref } from './letters.js';
-import { noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact } from './common.js';
+import { noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact, aslLabel, aslIntestazione } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
 
 const ROOT = '../';
@@ -34,7 +34,7 @@ const whatIs = () => `
   </ul>
   <h2>Come si attivano</h2>
   <ol class="big-steps">
-    <li><strong>Chiedi al medico di famiglia o allo specialista</strong> di attivare le cure palliative. È lui che manda la richiesta alla rete cure palliative dell'ASP (o all'hospice).</li>
+    <li><strong>Chiedi al medico di famiglia o allo specialista</strong> di attivare le cure palliative. È lui che manda la richiesta alla rete cure palliative dell'${aslLabel()} (o all'hospice).</li>
     <li><strong>Se la persona è in ospedale</strong>, chiedi al reparto di attivarle prima delle dimissioni («dimissione protetta»).</li>
     <li><strong>Un medico della rete valuta</strong> (a casa o in ospedale) e si decide insieme: casa o hospice.</li>
     <li><strong>L'attivazione deve essere rapida</strong>: di solito pochi giorni. Se passano più di ${rules.reminder_after_days} giorni, chiama di nuovo e sollecita.</li>
@@ -126,8 +126,8 @@ const screens = {
         <h2>Cosa fare</h2>
         <ol class="big-steps">
           <li><strong>Chiama il medico che ha fatto la richiesta</strong> e chiedigli di telefonare lui alla rete cure palliative.</li>
-          <li><strong>Chiama l'ASP</strong> e chiedi il numero della rete cure palliative o dell'hospice della tua zona.</li>
-          ${late ? `<li><strong>Manda una richiesta scritta</strong> all'ASP di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''}. La scriviamo insieme.</li>` : ''}
+          <li><strong>Chiama l'${aslLabel()}</strong> e chiedi il numero della rete cure palliative o dell'hospice della tua zona.</li>
+          ${late ? `<li><strong>Manda una richiesta scritta</strong> all'${aslLabel()} di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''}. La scriviamo insieme.</li>` : ''}
         </ol>
         ${aspCalls(a, ['palliative', 'casa'])}
         ${late ? '<button type="button" class="btn primary" data-go="letter">✍️ Scriviamo la richiesta insieme</button>' : ''}
@@ -142,7 +142,7 @@ const screens = {
     return {
       html: `
         <h1>✍️ Scriviamo la richiesta insieme</h1>
-        <p>Scrivi i dati qui sotto. Noi li mettiamo nella lettera per l'ASP di ${esc(a.province)}.</p>
+        <p>Scrivi i dati qui sotto. Noi li mettiamo nella lettera per l'${aslLabel()} di ${esc(a.province)}.</p>
         <div class="notice info"><p>🔒 I dati restano sul tuo telefono. Non scriviamo la malattia: il medico la conosce già. Non sai qualcosa? Lascia vuoto.</p></div>
         <form id="letter-form" novalidate>
           <fieldset>
@@ -176,7 +176,7 @@ const screens = {
             'la L. 38/2010 garantisce l\'accesso alle cure palliative e alla terapia del dolore, senza oneri a carico dell\'assistito',
           ];
           const text = genericRequest({
-            to: `Azienda Sanitaria Provinciale di ${a.province}\nRete locale di cure palliative\ne p.c. Ufficio Relazioni con il Pubblico`,
+            to: `${aslIntestazione()} di ${a.province}\nRete locale di cure palliative\ne p.c. Ufficio Relazioni con il Pubblico`,
             address: to, person,
             subject: `${isReminder ? 'SOLLECITO – ' : ''}Richiesta di attivazione delle cure palliative ${where} (L. 38/2010)`,
             premise,
@@ -190,7 +190,7 @@ const screens = {
             `Buongiorno,\nin allegato la richiesta firmata, con i documenti.\n\nCordiali saluti\n${person.fullName || ''}`);
           document.getElementById('send-hint').innerHTML = to
             ? `📧 L'email si apre indirizzata a ${esc(to)}${to === a.pec || /@pec\./.test(to) ? ' (è una PEC: se non hai la PEC, consegna la lettera a mano)' : ''}. Chiama comunque: una telefonata del medico è spesso la via più veloce.`
-            : '🏥 <strong>Stampa la lettera e consegnala all\'URP dell\'ASP o al distretto.</strong> Chiama comunque: una telefonata del medico è spesso la via più veloce.';
+            : `🏥 <strong>Stampa la lettera e consegnala all'URP dell'${aslLabel()} o al distretto.</strong> Chiama comunque: una telefonata del medico è spesso la via più veloce.`;
         };
         form.addEventListener('input', update); form.addEventListener('change', update); update();
         document.getElementById('copy-btn').addEventListener('click', (e) => copyText(state.letterText, e.currentTarget));

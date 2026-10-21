@@ -7,7 +7,7 @@ import { invRegime, invDeadline, todayISO, formatIt, parseDate, daysBetween, art
 import { inpsReminder, mailtoHref } from './letters.js';
 import { noPecBox,
   esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton,
-  personFields, reportErrorHref, choice, helpBox, sourcesBox, moreHelp, hideHeadingEmoji, enableStart,
+  personFields, reportErrorHref, choice, helpBox, sourcesBox, moreHelp, hideHeadingEmoji, enableStart, aslLabel,
 } from './common.js';
 import { createNav, withRegion, regionAction } from './flow.js';
 
@@ -99,7 +99,7 @@ function regimeSteps(r) {
   return `<ol class="big-steps">
       <li>Il medico manda il certificato all'INPS.</li>
       <li>Poi bisogna fare la <strong>domanda all'INPS entro ${rules.old_regime.domanda_window_days} giorni</strong>. Un patronato la fa gratis per te.</li>
-      <li>L'ASP ti chiama per la visita.</li>
+      <li>L'${aslLabel()} ti chiama per la visita.</li>
       <li>Ricevi un foglio con il risultato.</li>
     </ol>`;
 }

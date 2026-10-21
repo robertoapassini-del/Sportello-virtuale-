@@ -150,8 +150,12 @@ sempre riconoscibile: titolo «In Sicilia» (il nome della regione), bordo color
    - Numeri utili è il modulo di prova: titoli con la regione e la sigla giusta, cambio di regione senza ricaricare la
      pagina, `numeri-utili/#regione` apre la scelta. In home, con più regioni, «Stai guardando: … · Cambia regione».
    - Con la sola Sicilia attiva non si vede niente di nuovo.
+   - Tutti i moduli usano la sigla della regione (`aslLabel()`) e l'intestazione delle lettere (`aslIntestazione()`).
+     Le cose solo siciliane (Fascicolo sanitario, assessorato, trasporto per la dialisi) stanno nell'indice
+     (`ente`, `link`): una regione senza quei link mostra una frase generica.
    **Da fare:** i dati della Lombardia (le pagine ufficiali sono in `data/regioni/lombardia/fonti.json`, il server
-   le copia ogni notte) e i testi degli altri moduli che parlano di «ASP» e di uffici siciliani.
+   le copia ogni notte). La guida scritta delle pagine (HTML, anche senza JavaScript) resta quella della Sicilia
+   fino al passo 5.
 4. **Le altre regioni**, una alla volta, con la stessa regola dei numeri (`docs/regola-numeri.md`): solo fonti
    ufficiali, data e prova. Si parte da quelle con più abitanti o più richieste.
 5. **Pagine regionali indicizzabili** dove serve (percorso di tutela, numeri utili).

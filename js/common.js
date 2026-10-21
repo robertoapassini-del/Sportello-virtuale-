@@ -86,6 +86,10 @@ export function regione() {
 export const regioneInfo = () => regioni().find((r) => r.id === regione()) || { id: regione(), name: 'Sicilia' };
 // Come si chiama l'azienda sanitaria nella regione in uso: ASP in Sicilia, ATS in Lombardia…
 export const aslLabel = () => regioneInfo().asl_label || 'ASP';
+// Come si scrive in testa a una lettera (Sicilia: «Azienda Sanitaria Provinciale di Palermo»).
+export const aslIntestazione = () => regioneInfo().asl_intestazione || aslLabel();
+// Pagine ufficiali della Regione usate nei moduli (data/regioni/index.json, «link»): fse, assessorato, dialisi.
+export const regioneLink = (k) => (regioneInfo().link || {})[k] || '';
 // La regione di cui la pagina ha caricato i dati: se l'utente ne sceglie un'altra, la pagina si ricarica.
 export const regioneDeiDati = () => regioneCaricata;
 // name è il tipo di dati ('asl', 'inps'); il nome del file lo dà l'indice (files), se è diverso.
@@ -100,7 +104,7 @@ export async function loadRegional(root, name) {
 export function disclaimer(date) {
   const slug = location.pathname.split('/').filter(Boolean).filter((x) => x !== 'index.html').pop() || '';
   return `<p class="muted">Queste sono informazioni generali, non il parere di un avvocato o di un medico.
-  ${checkWith(slug)} Informazioni aggiornate ${art('al', date)}${esc(formatIt(date))}.</p>`;
+  ${checkWith(slug, aslLabel())} Informazioni aggiornate ${art('al', date)}${esc(formatIt(date))}.</p>`;
 }
 
 export function reportErrorHref(context) {
@@ -184,7 +188,7 @@ export function renderFooter(root = '') {
   if (!el) return;
   el.innerHTML = `<div class="wrap">
     <p>🔒 <strong>Non salviamo niente.</strong> Quello che scrivi resta sul tuo telefono e si cancella quando chiudi la pagina.</p>
-    <p><strong>Guida Sanità è fatto da volontari. Non siamo l'ASP, l'INPS né un altro ufficio pubblico.</strong> Diamo informazioni generali, non il parere di un avvocato o di un medico.</p>
+    <p><strong>Guida Sanità è fatto da volontari. Non siamo l'${aslLabel()}, l'INPS né un altro ufficio pubblico.</strong> Diamo informazioni generali, non il parere di un avvocato o di un medico.</p>
     <nav aria-label="Informazioni">
       <a href="${root}privacy.html">Privacy</a>
       <a href="${root}fonti.html">Da dove prendiamo le informazioni</a>

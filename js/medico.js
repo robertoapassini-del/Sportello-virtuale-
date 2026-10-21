@@ -4,7 +4,7 @@
 import { medicoChoice, todayISO } from './engine.js';
 import { genericRequest, mailtoHref } from './letters.js';
 import {
-  noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, aspCalls, officeBox, personFields, reportErrorHref, generalContact,
+  noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, aspCalls, officeBox, personFields, reportErrorHref, generalContact, aslLabel, aslIntestazione,
 } from './common.js';
 import { createFlow, choice, restartBtn, progress, letterButtons } from './flow.js';
 
@@ -25,7 +25,7 @@ function sources() {
     if (a.scelta_medico.url) items.push({ label: `${a.name} – scelta del medico`, url: a.scelta_medico.url });
     if (a.info_url) items.push({ label: `${a.name} – sito ufficiale`, url: a.info_url });
   }
-  return [items, { verified: rules.last_verified, note: a ? 'Il modo di fare la scelta online cambia da ASP ad ASP: chiedi conferma allo sportello.' : '' }];
+  return [items, { verified: rules.last_verified, note: a ? `Il modo di fare la scelta online cambia da ${aslLabel()} ad ${aslLabel()}: chiedi conferma allo sportello.` : '' }];
 }
 
 const bring = `
@@ -81,7 +81,7 @@ const screens = {
     const a = asp();
     const extra = {
       change: `<p>Non serve un motivo e non serve avvisare il vecchio medico: con la nuova scelta, il vecchio viene tolto in automatico.</p>`,
-      retire: `<div class="notice info"><p>Quando un medico va in pensione, l'ASP di solito avvisa i pazienti. Hai tempo per sceglierne un altro: fallo appena puoi, per non restare senza ricette.</p></div>`,
+      retire: `<div class="notice info"><p>Quando un medico va in pensione, l'${aslLabel()} di solito avvisa i pazienti. Hai tempo per sceglierne un altro: fallo appena puoi, per non restare senza ricette.</p></div>`,
       temporary: `<div class="notice info"><p>Puoi fare una <strong>scelta temporanea</strong> nel comune dove vivi, da ${rules.temporary_months[0]} mesi a ${rules.temporary_months[1]} mesi, rinnovabile. Porta anche una prova del motivo: iscrizione all'università o contratto di lavoro.</p></div>`,
     }[state.situation];
     return {
@@ -92,7 +92,7 @@ const screens = {
         ${extra}
         <h2>Dove si fa</h2>
         <p>${esc(a.scelta_medico.how)}</p>
-        ${a.scelta_medico.url ? `<a class="btn" href="${esc(a.scelta_medico.url)}" target="_blank" rel="noopener">💻 Sito dell'ASP</a>` : ''}
+        ${a.scelta_medico.url ? `<a class="btn" href="${esc(a.scelta_medico.url)}" target="_blank" rel="noopener">💻 Sito dell'${aslLabel()}</a>` : ''}
         ${sportelli(a)}
         ${bring}
         <h2>Come scegliere</h2>
@@ -118,7 +118,7 @@ const screens = {
           <li><strong>Chiedi allo sportello «scelta e revoca»</strong> l'elenco completo, anche dei comuni vicini dello stesso distretto: a volte c'è posto poco lontano.</li>
           <li><strong>Chiedi una deroga:</strong> in alcuni casi un medico può superare il limite di pazienti (per esempio per un familiare di un suo paziente, o per un neonato).</li>
           ${state.ageBand === '6-13' ? '<li><strong>Per un bambino dai 6 anni</strong> puoi scegliere anche un <strong>medico di famiglia</strong> invece del pediatra.</li>' : ''}
-          <li><strong>Se ancora niente: scrivi all'ASP.</strong> L'ASP deve garantire a tutti un medico o un pediatra. Prepariamo noi la lettera.</li>
+          <li><strong>Se ancora niente: scrivi all'${aslLabel()}.</strong> L'${aslLabel()} deve garantire a tutti un medico o un pediatra. Prepariamo noi la lettera.</li>
         </ol>
         <button type="button" class="btn primary" data-go="letter">✍️ Scriviamo la lettera insieme</button>
         ${sportelli(a) || aspCalls(a)}
@@ -133,7 +133,7 @@ const screens = {
     return {
       html: `
         <h1>✍️ Scriviamo la lettera insieme</h1>
-        <p>Scrivi i dati qui sotto. Noi li mettiamo nella lettera per l'ASP di ${esc(a.province)}.</p>
+        <p>Scrivi i dati qui sotto. Noi li mettiamo nella lettera per l'${aslLabel()} di ${esc(a.province)}.</p>
         <div class="notice info"><p>🔒 I dati restano sul tuo telefono. Non sai qualcosa? Lascia vuoto e scrivilo a penna.</p></div>
         <form id="letter-form" novalidate>
           <fieldset>
@@ -164,7 +164,7 @@ const screens = {
           form.querySelector('.delegate-fields').hidden = !person.isDelegate;
           const forWhom = state.ageBand === '16+' ? 'per sé' : `per il/la figlio/a minore ${state.child || '__________'}, codice fiscale ${state.childCf || '__________'}`;
           const text = genericRequest({
-            to: `Azienda Sanitaria Provinciale di ${a.province}\nDistretto sanitario – Ufficio scelta e revoca\ne p.c. Ufficio Relazioni con il Pubblico`,
+            to: `${aslIntestazione()} di ${a.province}\nDistretto sanitario – Ufficio scelta e revoca\ne p.c. Ufficio Relazioni con il Pubblico`,
             address: to, person,
             subject: `Richiesta di assegnazione di un ${kind}`,
             premise: [
