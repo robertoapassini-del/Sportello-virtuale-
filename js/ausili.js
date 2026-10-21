@@ -32,12 +32,12 @@ function sources() {
 }
 
 const steps = () => `
-  <h2 class="say">Come funziona</h2>
+  <h2>Come funziona</h2>
   <ol class="big-steps">
-    <li class="say"><strong>La prescrizione.</strong> La scrive ${esc(rules.who_prescribes)}. Di solito serve avere l'invalidità riconosciuta, o la domanda già fatta.</li>
-    <li class="say"><strong>La domanda all'ASP.</strong> Porti la prescrizione all'ufficio «assistenza protesica» del tuo distretto. Chiedi una ricevuta con la data.</li>
-    <li class="say"><strong>L'autorizzazione.</strong> L'ASP deve rispondere entro <strong>${rules.authorization_days} giorni</strong>. Se non risponde, vale come un sì.</li>
-    <li class="say"><strong>La consegna.</strong> Un fornitore convenzionato ti porta l'ausilio. Poi il medico lo controlla (si chiama collaudo).</li>
+    <li><strong>La prescrizione.</strong> La scrive ${esc(rules.who_prescribes)}. Di solito serve avere l'invalidità riconosciuta, o la domanda già fatta.</li>
+    <li><strong>La domanda all'ASP.</strong> Porti la prescrizione all'ufficio «assistenza protesica» del tuo distretto. Chiedi una ricevuta con la data.</li>
+    <li><strong>L'autorizzazione.</strong> L'ASP deve rispondere entro <strong>${rules.authorization_days} giorni</strong>. Se non risponde, vale come un sì.</li>
+    <li><strong>La consegna.</strong> Un fornitore convenzionato ti porta l'ausilio. Poi il medico lo controlla (si chiama collaudo).</li>
   </ol>`;
 
 // Uffici protesi e ausili della provincia, con indirizzo e orari.
@@ -51,7 +51,7 @@ const screens = {
   province: () => ({
     html: `${progress(1, 3)}
       <h1>📍 Dove abita la persona?</h1>
-      <p class="say">Scegli la provincia.</p>
+      <p>Scegli la provincia.</p>
       <div class="grid2">${[...data.asl].sort((a, b) => a.province.localeCompare(b.province)).map((a) => choice('', a.province, { province: a.id }, 'stage')).join('')}</div>`,
   }),
 
@@ -68,9 +68,9 @@ const screens = {
       <div class="hero" aria-hidden="true">🩺</div>
       <h1>Si parte dallo specialista</h1>
       ${steps()}
-      <div class="notice info"><p class="say">Il medico di famiglia può darti l'impegnativa per la visita dallo specialista.${(asp().contacts || []).some((c) => c.topic === 'protesica') ? '' : " Un patronato o l'URP dell'ASP ti dicono dov'è l'ufficio protesica del tuo distretto."}</p></div>
+      <div class="notice info"><p>Il medico di famiglia può darti l'impegnativa per la visita dallo specialista.${(asp().contacts || []).some((c) => c.topic === 'protesica') ? '' : " Un patronato o l'URP dell'ASP ti dicono dov'è l'ufficio protesica del tuo distretto."}</p></div>
       ${protesica(asp())}
-      <p class="say">Quando hai la ricevuta della domanda, torna qui: ti diciamo entro quando l'ASP deve rispondere.</p>
+      <p>Quando hai la ricevuta della domanda, torna qui: ti diciamo entro quando l'ASP deve rispondere.</p>
       ${disclaimer(rules.last_verified)}
       ${restartBtn()}`,
   }),
@@ -78,7 +78,7 @@ const screens = {
   date: () => ({
     html: `${progress(3, 3)}
       <h1>🧾 Che giorno hai fatto la domanda all'ASP?</h1>
-      <p class="say">È scritto sulla ricevuta.</p>
+      <p>È scritto sulla ricevuta.</p>
       ${dateForm({ id: 'req-form', name: 'requestDate', label: 'Giorno della domanda', value: state.requestDate, button: '✔️ Controlla', max: todayISO() })}`,
     mount() {
       document.getElementById('req-form').addEventListener('submit', (e) => {
@@ -102,8 +102,8 @@ const screens = {
           <div class="hero" aria-hidden="true">⏳</div>
           <h1>Non è ancora tardi</h1>
           <div class="notice ok">
-            <p class="say">L'ASP deve rispondere entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong> (${rules.authorization_days} giorni dalla domanda).</p>
-            <p class="say">Se a quella data non hai notizie, torna qui.</p>
+            <p>L'ASP deve rispondere entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong> (${rules.authorization_days} giorni dalla domanda).</p>
+            <p>Se a quella data non hai notizie, torna qui.</p>
           </div>
           ${disclaimer(rules.last_verified)}
           ${restartBtn()}`,
@@ -114,14 +114,14 @@ const screens = {
         <div class="hero" aria-hidden="true">⚠️</div>
         <h1>I ${rules.authorization_days} giorni sono passati: l'autorizzazione vale lo stesso</h1>
         <div class="notice bad">
-          <p class="say">L'ASP doveva rispondere entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>. Sono passati <strong>${days(d.daysLate)} in più</strong>.</p>
-          <p class="say">Per la legge, se l'ASP non risponde in tempo <strong>l'autorizzazione si considera data</strong>. Ora deve partire la consegna.</p>
+          <p>L'ASP doveva rispondere entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>. Sono passati <strong>${days(d.daysLate)} in più</strong>.</p>
+          <p>Per la legge, se l'ASP non risponde in tempo <strong>l'autorizzazione si considera data</strong>. Ora deve partire la consegna.</p>
         </div>
-        <h2 class="say">Cosa fare, in ordine</h2>
+        <h2>Cosa fare, in ordine</h2>
         <ol class="big-steps">
-          <li class="say"><strong>Telefona o vai all'ufficio protesica</strong> con la ricevuta. Di' che i ${rules.authorization_days} giorni sono passati.</li>
-          <li class="say"><strong>Manda una lettera di sollecito</strong> all'ASP. La scriviamo insieme.</li>
-          <li class="say"><strong>Se ancora niente:</strong> reclamo all'URP dell'ASP di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''},
+          <li><strong>Telefona o vai all'ufficio protesica</strong> con la ricevuta. Di' che i ${rules.authorization_days} giorni sono passati.</li>
+          <li><strong>Manda una lettera di sollecito</strong> all'ASP. La scriviamo insieme.</li>
+          <li><strong>Se ancora niente:</strong> reclamo all'URP dell'ASP di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''},
             un patronato, oppure Cittadinanzattiva (<a href="https://www.cittadinanzattiva.it" target="_blank" rel="noopener">cittadinanzattiva.it</a>).</li>
         </ol>
         ${protesica(a) || aspCalls(a)}
@@ -136,14 +136,14 @@ const screens = {
       html: `
         <div class="hero" aria-hidden="true">🚚</div>
         <h1>Autorizzato ma non consegnato</h1>
-        <p class="say">I tempi di consegna li fissa l'ASP nel contratto con il fornitore: non c'è un numero di giorni uguale per tutti.</p>
-        <h2 class="say">Cosa fare, in ordine</h2>
+        <p>I tempi di consegna li fissa l'ASP nel contratto con il fornitore: non c'è un numero di giorni uguale per tutti.</p>
+        <h2>Cosa fare, in ordine</h2>
         <ol class="big-steps">
-          <li class="say"><strong>Chiama il fornitore</strong> scritto sull'autorizzazione e chiedi la data di consegna.</li>
-          <li class="say"><strong>Chiama l'ufficio protesica dell'ASP</strong> e chiedi quanti giorni ha il fornitore per consegnare.</li>
-          <li class="say"><strong>Se il tempo è passato:</strong> reclamo scritto all'ASP (URP${generalContact(a) ? `: ${mailLink(generalContact(a))}` : ''}). Un patronato può aiutarti.</li>
+          <li><strong>Chiama il fornitore</strong> scritto sull'autorizzazione e chiedi la data di consegna.</li>
+          <li><strong>Chiama l'ufficio protesica dell'ASP</strong> e chiedi quanti giorni ha il fornitore per consegnare.</li>
+          <li><strong>Se il tempo è passato:</strong> reclamo scritto all'ASP (URP${generalContact(a) ? `: ${mailLink(generalContact(a))}` : ''}). Un patronato può aiutarti.</li>
         </ol>
-        <div class="notice info"><p class="say">Quando l'ausilio arriva, il medico deve controllarlo (collaudo) entro ${rules.collaudo_days} giorni. Se non va bene, può essere sostituito.</p></div>
+        <div class="notice info"><p>Quando l'ausilio arriva, il medico deve controllarlo (collaudo) entro ${rules.collaudo_days} giorni. Se non va bene, può essere sostituito.</p></div>
         ${protesica(a) || aspCalls(a)}
         ${disclaimer(rules.last_verified)}
         ${restartBtn()}`,
@@ -156,10 +156,10 @@ const screens = {
     return {
       html: `
         <h1>✍️ Scriviamo il sollecito insieme</h1>
-        <p class="say">Scrivi i dati qui sotto. Noi li mettiamo nella lettera per l'ASP di ${esc(a.province)}.</p>
+        <p>Scrivi i dati qui sotto. Noi li mettiamo nella lettera per l'ASP di ${esc(a.province)}.</p>
         <div class="notice info">
-          <p class="say">🔒 I dati restano sul tuo telefono. Noi non li vediamo. Non chiediamo la malattia.</p>
-          <p class="say">Non sai qualcosa? Lascia vuoto. Dopo aver stampato, lo scrivi a penna.</p>
+          <p>🔒 I dati restano sul tuo telefono. Noi non li vediamo. Non chiediamo la malattia.</p>
+          <p>Non sai qualcosa? Lascia vuoto. Dopo aver stampato, lo scrivi a penna.</p>
         </div>
         <form id="letter-form" novalidate>
           <fieldset>
@@ -177,11 +177,11 @@ const screens = {
         <p class="muted">La lettera usa le parole degli uffici. In breve dice: «I ${rules.authorization_days} giorni sono passati, l'autorizzazione vale, consegnate».</p>
         <div id="preview" class="letter"></div>
         ${letterButtons()}
-        <p class="say" id="send-hint"></p>
+        <p id="send-hint"></p>
         ${noPecBox()}
         <div class="card">
-          <h3 class="say" style="margin-top:0">Prima di mandarla</h3>
-          <ul class="icon-list say">
+          <h3 style="margin-top:0">Prima di mandarla</h3>
+          <ul class="icon-list">
             <li><span class="ico" aria-hidden="true">🖊️</span> Firma la lettera</li>
             <li><span class="ico" aria-hidden="true">🪪</span> Allega: documento d'identità (fotocopia o foto)</li>
             <li><span class="ico" aria-hidden="true">📄</span> Allega: copia della prescrizione e della ricevuta</li>

@@ -82,14 +82,14 @@ export function regionChoices() {
   const mail = `mailto:${MAINTAINER_EMAIL}?subject=${encodeURIComponent('La mia regione su Guida Sanità')}`;
   return `<div class="grid2">${on.map((r) => `<button type="button" class="btn choice" data-action="region" data-region="${esc(r.id)}">
       <span class="txt">${esc(r.name)}</span></button>`).join('')}</div>
-    ${off.length ? `<p class="say">Queste regioni non ci sono ancora:</p>
+    ${off.length ? `<p>Queste regioni non ci sono ancora:</p>
     <ul class="regioni-off">${off.map((r) => `<li>${esc(r.name)} <small>non ancora disponibile</small></li>`).join('')}</ul>
     <p class="muted">La tua regione non c'è? <a href="${esc(mail)}">Scrivici</a>: ci aiuti a scegliere quale aggiungere.</p>` : ''}`;
 }
 
 const regionScreen = () => ({
   html: `<h1>📍 In quale regione abiti?</h1>
-    <p class="say">Ogni regione ha i suoi uffici e i suoi numeri. Scegli la tua.</p>
+    <p>Ogni regione ha i suoi uffici e i suoi numeri. Scegli la tua.</p>
     ${regionChoices()}`,
 });
 
@@ -97,7 +97,7 @@ const regionScreen = () => ({
 // Con una sola regione attiva non c'è niente da cambiare e il link non si vede.
 export function changeRegionLink() {
   if (regioniAttive().length < 2) return '';
-  return `<p class="cambia-regione no-say"><button type="button" class="link" data-action="change-region">Non abiti in ${esc(regioneInfo().name)}? Cambia regione</button></p>`;
+  return `<p class="cambia-regione"><button type="button" class="link" data-action="change-region">Non abiti in ${esc(regioneInfo().name)}? Cambia regione</button></p>`;
 }
 
 // Mette la scelta della regione davanti alla schermata della provincia (name).

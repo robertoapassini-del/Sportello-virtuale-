@@ -14,18 +14,18 @@ function card(href, icon, title, small) {
 // Chi siamo in una riga sopra le scelte; il resto sotto.
 const intro = () => `
   <section class="home-intro page-band">
-  <h1 class="say">Di cosa hai bisogno?</h1>
-  <p class="home-trust say">Gratis. Siamo volontari: <strong>non siamo l'ASP né l'INPS</strong>. Per ora solo in Sicilia.</p>
+  <h1>Di cosa hai bisogno?</h1>
+  <p class="home-trust">Gratis. Siamo volontari: <strong>non siamo l'ASP né l'INPS</strong>. Per ora solo in Sicilia.</p>
   </section>`;
 
 const results = `
-  <section class="home-results no-say" id="q-box" hidden>
+  <section class="home-results" id="q-box" hidden>
     <h2 id="q-title">Risultati della ricerca</h2>
     <div id="q-results" aria-live="polite"></div>
   </section>`;
 
 const about = `
-  <div class="notice info home-about"><p class="say">Sanità, cure e invalidità: ti diciamo cosa ti spetta, entro quando e come chiederlo. Con parole semplici.</p></div>`;
+  <div class="notice info home-about"><p>Sanità, cure e invalidità: ti diciamo cosa ti spetta, entro quando e come chiederlo. Con parole semplici.</p></div>`;
 
 // Le domande più frequenti: link d'azione con la freccia verde, come NHS.uk.
 const FREQUENTI = [
@@ -35,21 +35,21 @@ const FREQUENTI = [
 ];
 const frequent = () => `
   <section class="frequent">
-  <h2 class="say">Le domande più frequenti</h2>
+  <h2>Le domande più frequenti</h2>
   <ul class="action-links">${FREQUENTI.map(([id, text]) => `
-    <li><a class="action-link" href="${id}/"><span class="arrow" aria-hidden="true">▶️</span><span class="txt say">${esc(text)}</span></a></li>`).join('')}
+    <li><a class="action-link" href="${id}/"><span class="arrow" aria-hidden="true">▶️</span><span class="txt">${esc(text)}</span></a></li>`).join('')}
   </ul>
   </section>`;
 
 // Riquadro rosso per chi sta male adesso (come le «care card» urgenti di NHS.uk).
 const urgent = `
   <section class="care-urgent" aria-labelledby="urg-title">
-    <h2 id="urg-title" class="say">Stai male adesso?</h2>
+    <h2 id="urg-title">Stai male adesso?</h2>
     <div class="care-body">
-      <p class="say">Questo sito non serve per le urgenze.</p>
+      <p>Questo sito non serve per le urgenze.</p>
       <ul>
-        <li class="say">Se è grave, chiama subito il <a href="tel:112"><strong>112</strong></a>.</li>
-        <li class="say">La sera, di notte e nei giorni di festa: chiama la <strong>guardia medica</strong> della tua zona.</li>
+        <li>Se è grave, chiama subito il <a href="tel:112"><strong>112</strong></a>.</li>
+        <li>La sera, di notte e nei giorni di festa: chiama la <strong>guardia medica</strong> della tua zona.</li>
       </ul>
     </div>
   </section>`;

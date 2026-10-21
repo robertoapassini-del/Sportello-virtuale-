@@ -25,19 +25,19 @@ function sources() {
 }
 
 const whatIs = () => `
-  <h2 class="say">Cosa sono e cosa danno</h2>
-  <ul class="icon-list say">
+  <h2>Cosa sono e cosa danno</h2>
+  <ul class="icon-list">
     <li><span class="ico" aria-hidden="true">🏠</span> <span><strong>A casa:</strong> medici e infermieri esperti vengono a casa, anche più volte a settimana, con reperibilità telefonica. Controllano il dolore e gli altri sintomi, e aiutano la famiglia.</span></li>
     <li><span class="ico" aria-hidden="true">🏥</span> <span><strong>In hospice:</strong> una struttura dove la persona è seguita giorno e notte, con la famiglia sempre presente. Non è un ospedale.</span></li>
     <li><span class="ico" aria-hidden="true">💶</span> <span><strong>Gratis:</strong> niente ticket, per legge.</span></li>
     <li><span class="ico" aria-hidden="true">❤️</span> <span><strong>Per chi:</strong> non solo per i tumori. Anche per malattie gravi del cuore, dei polmoni, dei reni, neurologiche, in fase avanzata.</span></li>
   </ul>
-  <h2 class="say">Come si attivano</h2>
+  <h2>Come si attivano</h2>
   <ol class="big-steps">
-    <li class="say"><strong>Chiedi al medico di famiglia o allo specialista</strong> di attivare le cure palliative. È lui che manda la richiesta alla rete cure palliative dell'ASP (o all'hospice).</li>
-    <li class="say"><strong>Se la persona è in ospedale</strong>, chiedi al reparto di attivarle prima delle dimissioni («dimissione protetta»).</li>
-    <li class="say"><strong>Un medico della rete valuta</strong> (a casa o in ospedale) e si decide insieme: casa o hospice.</li>
-    <li class="say"><strong>L'attivazione deve essere rapida</strong>: di solito pochi giorni. Se passano più di ${rules.reminder_after_days} giorni, chiama di nuovo e sollecita.</li>
+    <li><strong>Chiedi al medico di famiglia o allo specialista</strong> di attivare le cure palliative. È lui che manda la richiesta alla rete cure palliative dell'ASP (o all'hospice).</li>
+    <li><strong>Se la persona è in ospedale</strong>, chiedi al reparto di attivarle prima delle dimissioni («dimissione protetta»).</li>
+    <li><strong>Un medico della rete valuta</strong> (a casa o in ospedale) e si decide insieme: casa o hospice.</li>
+    <li><strong>L'attivazione deve essere rapida</strong>: di solito pochi giorni. Se passano più di ${rules.reminder_after_days} giorni, chiama di nuovo e sollecita.</li>
   </ol>
   <details class="card">
     <summary>Il dolore non deve essere sopportato</summary>
@@ -81,11 +81,11 @@ const screens = {
         <div class="hero" aria-hidden="true">😣</div>
         <h1>Il dolore si può curare</h1>
         <ol class="big-steps">
-          <li class="say"><strong>Chiama oggi il medico di famiglia</strong> (o la guardia medica la sera e nei festivi) e di' che il dolore non è controllato. Può cambiare la terapia subito.</li>
-          <li class="say"><strong>Chiedi la terapia del dolore</strong> o l'attivazione delle cure palliative: è un diritto (legge 38/2010).</li>
-          <li class="say"><strong>Se è già seguita dalla rete</strong>, chiama il numero di reperibilità che vi hanno dato: serve anche per questo.</li>
+          <li><strong>Chiama oggi il medico di famiglia</strong> (o la guardia medica la sera e nei festivi) e di' che il dolore non è controllato. Può cambiare la terapia subito.</li>
+          <li><strong>Chiedi la terapia del dolore</strong> o l'attivazione delle cure palliative: è un diritto (legge 38/2010).</li>
+          <li><strong>Se è già seguita dalla rete</strong>, chiama il numero di reperibilità che vi hanno dato: serve anche per questo.</li>
         </ol>
-        <div class="notice urgent"><p class="say">Se la situazione precipita, chiama il <a href="tel:112">112</a>.</p></div>
+        <div class="notice urgent"><p>Se la situazione precipita, chiama il <a href="tel:112">112</a>.</p></div>
         ${aspCalls(a, ['palliative', 'casa'])}
         ${whatIs()}
         ${disclaimer(rules.last_verified)}
@@ -120,14 +120,14 @@ const screens = {
         <div class="hero" aria-hidden="true">${late ? '⚠️' : '⏳'}</div>
         <h1>${late ? 'Troppo tempo: sollecita oggi' : 'La richiesta è partita'}</h1>
         <div class="notice ${late ? 'bad' : 'info'}">
-          <p class="say">Richiesta ${art('del', state.requestDate)}${esc(formatIt(state.requestDate))}: sono passati <strong>${days(waited)}</strong>.</p>
-          <p class="say">Le cure palliative devono partire in pochi giorni. ${late ? 'Non aspettare oltre.' : `Se entro ${art('il', remindOn)}<strong>${esc(formatIt(remindOn))}</strong> nessuno si è fatto vivo, torna qui per sollecitare per iscritto.`}</p>
+          <p>Richiesta ${art('del', state.requestDate)}${esc(formatIt(state.requestDate))}: sono passati <strong>${days(waited)}</strong>.</p>
+          <p>Le cure palliative devono partire in pochi giorni. ${late ? 'Non aspettare oltre.' : `Se entro ${art('il', remindOn)}<strong>${esc(formatIt(remindOn))}</strong> nessuno si è fatto vivo, torna qui per sollecitare per iscritto.`}</p>
         </div>
-        <h2 class="say">Cosa fare</h2>
+        <h2>Cosa fare</h2>
         <ol class="big-steps">
-          <li class="say"><strong>Chiama il medico che ha fatto la richiesta</strong> e chiedigli di telefonare lui alla rete cure palliative.</li>
-          <li class="say"><strong>Chiama l'ASP</strong> e chiedi il numero della rete cure palliative o dell'hospice della tua zona.</li>
-          ${late ? `<li class="say"><strong>Manda una richiesta scritta</strong> all'ASP di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''}. La scriviamo insieme.</li>` : ''}
+          <li><strong>Chiama il medico che ha fatto la richiesta</strong> e chiedigli di telefonare lui alla rete cure palliative.</li>
+          <li><strong>Chiama l'ASP</strong> e chiedi il numero della rete cure palliative o dell'hospice della tua zona.</li>
+          ${late ? `<li><strong>Manda una richiesta scritta</strong> all'ASP di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''}. La scriviamo insieme.</li>` : ''}
         </ol>
         ${aspCalls(a, ['palliative', 'casa'])}
         ${late ? '<button type="button" class="btn primary" data-go="letter">✍️ Scriviamo la richiesta insieme</button>' : ''}
@@ -142,8 +142,8 @@ const screens = {
     return {
       html: `
         <h1>✍️ Scriviamo la richiesta insieme</h1>
-        <p class="say">Scrivi i dati qui sotto. Noi li mettiamo nella lettera per l'ASP di ${esc(a.province)}.</p>
-        <div class="notice info"><p class="say">🔒 I dati restano sul tuo telefono. Non scriviamo la malattia: il medico la conosce già. Non sai qualcosa? Lascia vuoto.</p></div>
+        <p>Scrivi i dati qui sotto. Noi li mettiamo nella lettera per l'ASP di ${esc(a.province)}.</p>
+        <div class="notice info"><p>🔒 I dati restano sul tuo telefono. Non scriviamo la malattia: il medico la conosce già. Non sai qualcosa? Lascia vuoto.</p></div>
         <form id="letter-form" novalidate>
           <fieldset>
             <legend>La richiesta</legend>
@@ -157,7 +157,7 @@ const screens = {
         <h2>📄 Ecco la lettera</h2>
         <div id="preview" class="letter"></div>
         ${letterButtons()}
-        <p class="say" id="send-hint"></p>
+        <p id="send-hint"></p>
         ${noPecBox()}
         <p class="muted"><a href="${esc(reportErrorHref(`Cure palliative ${a.name}`))}">Segnala un errore</a></p>
         ${disclaimer(rules.last_verified)}

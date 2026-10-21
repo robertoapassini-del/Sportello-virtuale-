@@ -129,7 +129,7 @@ export function sourcesBox(items, { verified, note } = {}) {
   const seen = new Set();
   const list = items.filter((s) => s && s.label && !seen.has(s.url || s.label) && seen.add(s.url || s.label));
   if (!list.length) return '';
-  return `<details class="fonti no-say">
+  return `<details class="fonti">
     <summary><span class="ico" aria-hidden="true">📚</span> Da dove vengono queste informazioni</summary>
     <ul class="clean">${list.map((s) => `<li>${s.url
       ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>`
@@ -152,7 +152,7 @@ export async function renderSources(root = '') {
 
 // «Ti serve altro?»: torna alla scelta guidata. In fondo a ogni schermata dei moduli.
 export function moreHelp() {
-  return `<a class="btn center more-help no-say" href="../">🏠 Ti serve altro? Torna all'inizio</a>`;
+  return `<a class="btn center more-help" href="../">🏠 Ti serve altro? Torna all'inizio</a>`;
 }
 
 // Riquadro «Non hai la PEC?»: sotto ogni lettera. Modi validi per mandarla lo stesso.
@@ -194,7 +194,7 @@ export function renderFooter(root = '') {
 // «utile-si/…» o «utile-no/…»): con «No» si può scriverci un'email, se si vuole. Sotto, la data dell'ultimo controllo.
 function renderFeedback(footer, root) {
   if (document.getElementById('page-feedback')) return;
-  footer.insertAdjacentHTML('beforebegin', `<section class="page-feedback no-say" id="page-feedback" aria-labelledby="fb-q"><div class="wrap">
+  footer.insertAdjacentHTML('beforebegin', `<section class="page-feedback" id="page-feedback" aria-labelledby="fb-q"><div class="wrap">
     <div class="fb-box" aria-live="polite">
       <h2 id="fb-q">Questa pagina ti è stata utile?</h2>
       <div class="fb-buttons"><button type="button" data-fb="si">Sì</button><button type="button" data-fb="no">No</button></div>
@@ -347,8 +347,8 @@ export function aspCalls(a, topics = [], { onlyTopics = false } = {}) {
 // che vale per le visite urgenti) qui confondono. Vuoto se l'ASP non ha contatti confermati per quell'argomento.
 export function officeBox(a, topic, title, intro = '') {
   if (!(a.contacts || []).some((c) => c.topic === topic)) return '';
-  return `<h2 class="say">${title}</h2>
-    ${intro ? `<p class="say">${esc(intro)}</p>` : ''}
+  return `<h2>${title}</h2>
+    ${intro ? `<p>${esc(intro)}</p>` : ''}
     ${aspCalls(a, [topic], { onlyTopics: true })}`;
 }
 

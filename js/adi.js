@@ -14,15 +14,15 @@ let rules;
 const state = {};
 const sources = () => [rules.sources, { verified: rules.last_verified, note: 'Le cifre cambiano ogni anno: controlla sempre con il patronato o sul sito INPS.' }];
 
-const caf = `<div class="notice info"><p class="say">🏢 <strong>Un patronato o un CAF fa la domanda gratis</strong> (per esempio INCA, ACLI, INAS, CAF CGIL o CISL). Ti fanno anche l'ISEE, che serve per la domanda.</p></div>`;
+const caf = `<div class="notice info"><p>🏢 <strong>Un patronato o un CAF fa la domanda gratis</strong> (per esempio INCA, ACLI, INAS, CAF CGIL o CISL). Ti fanno anche l'ISEE, che serve per la domanda.</p></div>`;
 
 const howTo = () => `
-  <h2 class="say">Come si chiede</h2>
+  <h2>Come si chiede</h2>
   <ol class="big-steps">
-    <li class="say"><strong>Fai l'ISEE</strong> al CAF (gratis). Senza ISEE non si può fare la domanda.</li>
-    <li class="say"><strong>Fai la domanda</strong>: al patronato o al CAF, oppure da solo sul sito dell'INPS con lo SPID.</li>
-    <li class="say"><strong>Vai all'appuntamento con i servizi sociali</strong> del Comune: ti chiamano loro, è obbligatorio. Firmi un «patto» con gli impegni della famiglia.</li>
-    <li class="say"><strong>Ricevi la Carta di inclusione</strong> alle Poste: i soldi arrivano ogni mese sulla carta.</li>
+    <li><strong>Fai l'ISEE</strong> al CAF (gratis). Senza ISEE non si può fare la domanda.</li>
+    <li><strong>Fai la domanda</strong>: al patronato o al CAF, oppure da solo sul sito dell'INPS con lo SPID.</li>
+    <li><strong>Vai all'appuntamento con i servizi sociali</strong> del Comune: ti chiamano loro, è obbligatorio. Firmi un «patto» con gli impegni della famiglia.</li>
+    <li><strong>Ricevi la Carta di inclusione</strong> alle Poste: i soldi arrivano ogni mese sulla carta.</li>
   </ol>
   <details class="card">
     <summary>Quanto dura e cosa controllano</summary>
@@ -42,8 +42,8 @@ const screens = {
   household: () => ({
     html: `${progress(1, 3)}
       <h1>👨‍👩‍👧 In famiglia c'è almeno una di queste persone?</h1>
-      <ul class="icon-list say">${rules.household_conditions.map((c) => `<li><span class="ico" aria-hidden="true">👉</span>${esc(c)}</li>`).join('')}</ul>
-      <p class="say">Basta una sola. Conta chi è nello stesso stato di famiglia.</p>
+      <ul class="icon-list">${rules.household_conditions.map((c) => `<li><span class="ico" aria-hidden="true">👉</span>${esc(c)}</li>`).join('')}</ul>
+      <p>Basta una sola. Conta chi è nello stesso stato di famiglia.</p>
       ${choice('✅', 'Sì', { household: true }, 'residency')}
       ${choice('❌', 'No, nessuna', { household: false }, 'residency')}
       ${choice('🤷', 'Non lo so', { household: null }, 'residency', 'Per esempio: la disabilità non è ancora riconosciuta')}`,
@@ -52,7 +52,7 @@ const screens = {
   residency: () => ({
     html: `${progress(2, 3)}
       <h1>🏠 Chi fa la domanda vive in Italia da almeno ${rules.residency_years} anni?</h1>
-      <p class="say">E almeno gli ultimi ${rules.residency_continuous_years} anni senza interruzioni.</p>
+      <p>E almeno gli ultimi ${rules.residency_continuous_years} anni senza interruzioni.</p>
       ${choice('✅', 'Sì', { residency: true }, 'isee')}
       ${choice('❌', 'No', { residency: false }, 'isee')}
       ${choice('🤷', 'Non sono sicuro', { residency: null }, 'isee')}`,
@@ -61,7 +61,7 @@ const screens = {
   isee: () => ({
     html: `${progress(3, 3)}
       <h1>📄 Quanto è l'ISEE della famiglia?</h1>
-      <p class="say">È il numero scritto sull'attestazione ISEE di quest'anno. Lo fa il CAF, gratis.</p>
+      <p>È il numero scritto sull'attestazione ISEE di quest'anno. Lo fa il CAF, gratis.</p>
       <form id="isee-form" novalidate>
         <label for="isee">ISEE, in euro<span class="hint">Per esempio 8000. Senza punti né virgole</span></label>
         <input type="number" id="isee" name="isee" min="0" step="1" inputmode="numeric" value="${esc(state.isee ?? '')}">
@@ -99,9 +99,9 @@ const screens = {
         html: `
           <div class="hero" aria-hidden="true">❌</div>
           <h1>Con questi dati non ci sono le condizioni</h1>
-          <div class="notice warn"><p class="say">Perché: ${esc(r.reasons.map((k) => why[k]).join('; '))}.</p></div>
-          <p class="say">Se qualcosa cambia (per esempio viene riconosciuta una disabilità, o l'ISEE scende), puoi rifare il controllo.</p>
-          <p class="say">Per chi tra 18 e 59 anni può lavorare c'è un altro aiuto, il <strong>Supporto per la formazione e il lavoro</strong>: chiedi al patronato o al CAF.</p>
+          <div class="notice warn"><p>Perché: ${esc(r.reasons.map((k) => why[k]).join('; '))}.</p></div>
+          <p>Se qualcosa cambia (per esempio viene riconosciuta una disabilità, o l'ISEE scende), puoi rifare il controllo.</p>
+          <p>Per chi tra 18 e 59 anni può lavorare c'è un altro aiuto, il <strong>Supporto per la formazione e il lavoro</strong>: chiedi al patronato o al CAF.</p>
           ${caf}
           ${disclaimer(rules.last_verified)}
           ${restartBtn()}`,
@@ -113,9 +113,9 @@ const screens = {
           <div class="hero" aria-hidden="true">🔎</div>
           <h1>Forse sì: serve una verifica</h1>
           <div class="notice info">
-            <p class="say">Le condizioni principali sono: famiglia con minorenne, over 60, persona con disabilità o seguita dai servizi;
+            <p>Le condizioni principali sono: famiglia con minorenne, over 60, persona con disabilità o seguita dai servizi;
             ${rules.residency_years} anni in Italia; <strong>ISEE fino a ${formatEuro(rules.isee_max)}</strong>.</p>
-            <p class="say">${state.isee === null ? 'Senza l\'ISEE non possiamo dirti di più: fallo al CAF, è gratis.' : 'Su qualche punto non eri sicuro: un patronato controlla in pochi minuti.'}</p>
+            <p>${state.isee === null ? 'Senza l\'ISEE non possiamo dirti di più: fallo al CAF, è gratis.' : 'Su qualche punto non eri sicuro: un patronato controlla in pochi minuti.'}</p>
           </div>
           ${caf}
           ${howTo()}
@@ -128,8 +128,8 @@ const screens = {
         <div class="hero" aria-hidden="true">✅</div>
         <h1>Le condizioni principali ci sono</h1>
         <div class="notice ok">
-          <p class="say">Famiglia, residenza e ISEE (${formatEuro(state.isee)}, entro il limite di ${formatEuro(rules.isee_max)}) vanno bene.</p>
-          <p class="say">L'INPS controlla anche reddito, casa e risparmi: il patronato lo verifica con te prima di mandare la domanda.</p>
+          <p>Famiglia, residenza e ISEE (${formatEuro(state.isee)}, entro il limite di ${formatEuro(rules.isee_max)}) vanno bene.</p>
+          <p>L'INPS controlla anche reddito, casa e risparmi: il patronato lo verifica con te prima di mandare la domanda.</p>
         </div>
         ${caf}
         ${howTo()}

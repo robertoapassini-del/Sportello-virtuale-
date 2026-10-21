@@ -17,19 +17,19 @@ const sources = () => [rules.sources, { verified: rules.last_verified }];
 const deadline = () => ricorsoDeadline(rules, { verbaleDate: state.verbaleDate, today: todayISO() });
 
 const patronato = `<div class="notice info">
-  <p class="say">🏢 <strong>Un patronato ti aiuta gratis.</strong> Per esempio INCA, ACLI, INAS. Legge il verbale con te e ti manda da un avvocato convenzionato.</p></div>`;
+  <p>🏢 <strong>Un patronato ti aiuta gratis.</strong> Per esempio INCA, ACLI, INAS. Legge il verbale con te e ti manda da un avvocato convenzionato.</p></div>`;
 
 const howItWorks = () => `
-  <h2 class="say">Come funziona il ricorso</h2>
+  <h2>Come funziona il ricorso</h2>
   <ol class="big-steps">
-    <li class="say"><strong>Non si può fare ricorso all'INPS</strong> con una lettera: si va dal giudice. Serve un <strong>avvocato</strong>.</li>
-    <li class="say">L'avvocato chiede al Tribunale una <strong>nuova visita</strong> con un medico del giudice (si chiama «accertamento tecnico preventivo», ATP).</li>
-    <li class="say">Se il medico del giudice ti dà ragione, l'INPS deve adeguarsi, con gli arretrati.</li>
-    <li class="say"><strong>Se il reddito della famiglia è basso</strong> (sotto circa ${formatEuro(rules.gratuito_patrocinio_income)} l'anno), l'avvocato lo paga lo Stato: chiedi il «gratuito patrocinio».</li>
-    <li class="say"><strong>Se perdi la causa</strong> e il reddito della famiglia è sotto circa ${formatEuro(rules.no_legal_costs_income)} l'anno, <strong>non paghi le spese legali</strong> dell'INPS. Basta una dichiarazione dentro il ricorso: la prepara l'avvocato.</li>
+    <li><strong>Non si può fare ricorso all'INPS</strong> con una lettera: si va dal giudice. Serve un <strong>avvocato</strong>.</li>
+    <li>L'avvocato chiede al Tribunale una <strong>nuova visita</strong> con un medico del giudice (si chiama «accertamento tecnico preventivo», ATP).</li>
+    <li>Se il medico del giudice ti dà ragione, l'INPS deve adeguarsi, con gli arretrati.</li>
+    <li><strong>Se il reddito della famiglia è basso</strong> (sotto circa ${formatEuro(rules.gratuito_patrocinio_income)} l'anno), l'avvocato lo paga lo Stato: chiedi il «gratuito patrocinio».</li>
+    <li><strong>Se perdi la causa</strong> e il reddito della famiglia è sotto circa ${formatEuro(rules.no_legal_costs_income)} l'anno, <strong>non paghi le spese legali</strong> dell'INPS. Basta una dichiarazione dentro il ricorso: la prepara l'avvocato.</li>
   </ol>
-  <h2 class="say">Cosa portare al patronato o all'avvocato</h2>
-  <ul class="icon-list say">
+  <h2>Cosa portare al patronato o all'avvocato</h2>
+  <ul class="icon-list">
     <li><span class="ico" aria-hidden="true">📄</span> Il verbale (tutte le pagine, con la busta o l'email con la data)</li>
     <li><span class="ico" aria-hidden="true">🗂️</span> Tutti i fogli medici: referti, cartelle, esami, anche recenti</li>
     <li><span class="ico" aria-hidden="true">🪪</span> Carta d'identità, tessera sanitaria, ultima dichiarazione dei redditi</li>
@@ -49,7 +49,7 @@ const screens = {
   received: () => ({
     html: `
       <h1>📬 Hai già ricevuto il verbale?</h1>
-      <p class="say">È il foglio con il risultato della visita: una percentuale, oppure «non invalido», oppure il riconoscimento della legge 104.</p>
+      <p>È il foglio con il risultato della visita: una percentuale, oppure «non invalido», oppure il riconoscimento della legge 104.</p>
       ${choice('✅', 'Sì, ce l\'ho', { received: true }, 'date')}
       ${choice('❌', 'No, aspetto ancora la visita o il verbale', { received: false }, 'notyet')}`,
   }),
@@ -58,8 +58,8 @@ const screens = {
     html: `
       <div class="hero" aria-hidden="true">⏳</div>
       <h1>Prima serve il verbale</h1>
-      <p class="say">Il ricorso si può fare solo dopo aver ricevuto il verbale. I ${rules.appeal_months} mesi partono da quel giorno.</p>
-      <p class="say">Se la visita non arriva, c'è un'altra pagina che ti aiuta:</p>
+      <p>Il ricorso si può fare solo dopo aver ricevuto il verbale. I ${rules.appeal_months} mesi partono da quel giorno.</p>
+      <p>Se la visita non arriva, c'è un'altra pagina che ti aiuta:</p>
       <a class="btn choice" href="../invalidita/"><span class="ico" aria-hidden="true">♿</span><span class="txt">La visita per l'invalidità non arriva</span></a>
       ${disclaimer(rules.last_verified)}
       ${restartBtn()}`,
@@ -68,7 +68,7 @@ const screens = {
   date: () => ({
     html: `
       <h1>📅 Che giorno hai ricevuto il verbale?</h1>
-      <p class="say">Il giorno in cui è arrivata la raccomandata, l'email o la PEC. Se non lo ricordi, guarda il timbro sulla busta o la data dell'email. In mancanza, usa la data scritta sul verbale: è più prudente.</p>
+      <p>Il giorno in cui è arrivata la raccomandata, l'email o la PEC. Se non lo ricordi, guarda il timbro sulla busta o la data dell'email. In mancanza, usa la data scritta sul verbale: è più prudente.</p>
       ${dateForm({ id: 'v-form', name: 'verbaleDate', label: 'Giorno in cui l\'hai ricevuto', value: state.verbaleDate, button: '✔️ Controlla', max: todayISO() })}`,
     mount() {
       document.getElementById('v-form').addEventListener('submit', (e) => {
@@ -92,9 +92,9 @@ const screens = {
           <div class="hero" aria-hidden="true">${urgent ? '🚨' : '⏰'}</div>
           <h1>${urgent ? 'Muoviti subito: manca poco' : 'Sei ancora in tempo'}</h1>
           <div class="notice ${urgent ? 'bad' : 'ok'}">
-            <p class="say">Puoi fare ricorso <strong>${art('fino al', d.deadline)}${esc(formatIt(d.deadline))}</strong>.</p>
-            <p class="say">${d.daysLeft === 0 ? '<strong>Scade oggi.</strong>' : `Mancano <strong>${days(d.daysLeft)}</strong>.`}</p>
-            <p class="say">L'avvocato ha bisogno di qualche settimana per preparare tutto: non aspettare l'ultimo momento.</p>
+            <p>Puoi fare ricorso <strong>${art('fino al', d.deadline)}${esc(formatIt(d.deadline))}</strong>.</p>
+            <p>${d.daysLeft === 0 ? '<strong>Scade oggi.</strong>' : `Mancano <strong>${days(d.daysLeft)}</strong>.`}</p>
+            <p>L'avvocato ha bisogno di qualche settimana per preparare tutto: non aspettare l'ultimo momento.</p>
           </div>
           ${patronato}
           ${howItWorks()}
@@ -108,14 +108,14 @@ const screens = {
         <div class="hero" aria-hidden="true">⌛</div>
         <h1>I ${rules.appeal_months} mesi sono passati</h1>
         <div class="notice bad">
-          <p class="say">Il tempo per il ricorso è finito ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>, ${days(d.daysLate)} fa.</p>
-          <p class="say">Contro questo verbale non si può più fare ricorso.</p>
+          <p>Il tempo per il ricorso è finito ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>, ${days(d.daysLate)} fa.</p>
+          <p>Contro questo verbale non si può più fare ricorso.</p>
         </div>
-        <h2 class="say">Cosa puoi fare adesso</h2>
+        <h2>Cosa puoi fare adesso</h2>
         <ol class="big-steps">
-          <li class="say"><strong>Se la salute è peggiorata:</strong> una <strong>domanda di aggravamento</strong>. Si parte da un nuovo certificato del medico. Un patronato la fa gratis.</li>
-          <li class="say"><strong>Se nel verbale c'è una data di revisione:</strong> a quella visita porta tutti i fogli medici nuovi.</li>
-          <li class="say"><strong>Fai leggere il verbale a un patronato:</strong> a volte la data che conta è diversa (per esempio se non c'è prova di quando l'hai ricevuto). Non costa niente chiedere.</li>
+          <li><strong>Se la salute è peggiorata:</strong> una <strong>domanda di aggravamento</strong>. Si parte da un nuovo certificato del medico. Un patronato la fa gratis.</li>
+          <li><strong>Se nel verbale c'è una data di revisione:</strong> a quella visita porta tutti i fogli medici nuovi.</li>
+          <li><strong>Fai leggere il verbale a un patronato:</strong> a volte la data che conta è diversa (per esempio se non c'è prova di quando l'hai ricevuto). Non costa niente chiedere.</li>
         </ol>
         ${patronato}
         ${aggravamento}

@@ -29,8 +29,8 @@ function sources() {
 }
 
 const bring = `
-  <h2 class="say">Cosa portare</h2>
-  <ul class="icon-list say">
+  <h2>Cosa portare</h2>
+  <ul class="icon-list">
     <li><span class="ico" aria-hidden="true">💳</span> Tessera sanitaria</li>
     <li><span class="ico" aria-hidden="true">🪪</span> Documento d'identità (per un bambino, quello del genitore)</li>
     <li><span class="ico" aria-hidden="true">📝</span> Se vai per un'altra persona: la sua delega firmata e il suo documento</li>
@@ -80,23 +80,23 @@ const screens = {
   result: () => {
     const a = asp();
     const extra = {
-      change: `<p class="say">Non serve un motivo e non serve avvisare il vecchio medico: con la nuova scelta, il vecchio viene tolto in automatico.</p>`,
-      retire: `<div class="notice info"><p class="say">Quando un medico va in pensione, l'ASP di solito avvisa i pazienti. Hai tempo per sceglierne un altro: fallo appena puoi, per non restare senza ricette.</p></div>`,
-      temporary: `<div class="notice info"><p class="say">Puoi fare una <strong>scelta temporanea</strong> nel comune dove vivi, da ${rules.temporary_months[0]} mesi a ${rules.temporary_months[1]} mesi, rinnovabile. Porta anche una prova del motivo: iscrizione all'università o contratto di lavoro.</p></div>`,
+      change: `<p>Non serve un motivo e non serve avvisare il vecchio medico: con la nuova scelta, il vecchio viene tolto in automatico.</p>`,
+      retire: `<div class="notice info"><p>Quando un medico va in pensione, l'ASP di solito avvisa i pazienti. Hai tempo per sceglierne un altro: fallo appena puoi, per non restare senza ricette.</p></div>`,
+      temporary: `<div class="notice info"><p>Puoi fare una <strong>scelta temporanea</strong> nel comune dove vivi, da ${rules.temporary_months[0]} mesi a ${rules.temporary_months[1]} mesi, rinnovabile. Porta anche una prova del motivo: iscrizione all'università o contratto di lavoro.</p></div>`,
     }[state.situation];
     return {
       html: `
         <div class="hero" aria-hidden="true">✅</div>
         <h1>Ecco come fare a ${esc(a.province)}</h1>
-        <div class="notice info"><p class="say">${whoText()}</p></div>
+        <div class="notice info"><p>${whoText()}</p></div>
         ${extra}
-        <h2 class="say">Dove si fa</h2>
-        <p class="say">${esc(a.scelta_medico.how)}</p>
+        <h2>Dove si fa</h2>
+        <p>${esc(a.scelta_medico.how)}</p>
         ${a.scelta_medico.url ? `<a class="btn" href="${esc(a.scelta_medico.url)}" target="_blank" rel="noopener">💻 Sito dell'ASP</a>` : ''}
         ${sportelli(a)}
         ${bring}
-        <h2 class="say">Come scegliere</h2>
-        <ul class="clean say">
+        <h2>Come scegliere</h2>
+        <ul class="clean">
           <li>Allo sportello ti danno l'elenco dei medici della tua zona che hanno ancora posto.</li>
           <li>Ogni medico può avere al massimo circa ${rules.max_patients_medico} pazienti, ogni pediatra circa ${rules.max_patients_pediatra}: se è pieno, non può prenderti.</li>
           <li>Chiedi a vicini e parenti, e guarda gli orari dello studio e se fa visite a casa.</li>
@@ -113,12 +113,12 @@ const screens = {
       html: `
         <div class="hero" aria-hidden="true">🚫</div>
         <h1>Se non trovi nessuno con posti liberi</h1>
-        <div class="notice info"><p class="say">${whoText()}</p></div>
+        <div class="notice info"><p>${whoText()}</p></div>
         <ol class="big-steps">
-          <li class="say"><strong>Chiedi allo sportello «scelta e revoca»</strong> l'elenco completo, anche dei comuni vicini dello stesso distretto: a volte c'è posto poco lontano.</li>
-          <li class="say"><strong>Chiedi una deroga:</strong> in alcuni casi un medico può superare il limite di pazienti (per esempio per un familiare di un suo paziente, o per un neonato).</li>
-          ${state.ageBand === '6-13' ? '<li class="say"><strong>Per un bambino dai 6 anni</strong> puoi scegliere anche un <strong>medico di famiglia</strong> invece del pediatra.</li>' : ''}
-          <li class="say"><strong>Se ancora niente: scrivi all'ASP.</strong> L'ASP deve garantire a tutti un medico o un pediatra. Prepariamo noi la lettera.</li>
+          <li><strong>Chiedi allo sportello «scelta e revoca»</strong> l'elenco completo, anche dei comuni vicini dello stesso distretto: a volte c'è posto poco lontano.</li>
+          <li><strong>Chiedi una deroga:</strong> in alcuni casi un medico può superare il limite di pazienti (per esempio per un familiare di un suo paziente, o per un neonato).</li>
+          ${state.ageBand === '6-13' ? '<li><strong>Per un bambino dai 6 anni</strong> puoi scegliere anche un <strong>medico di famiglia</strong> invece del pediatra.</li>' : ''}
+          <li><strong>Se ancora niente: scrivi all'ASP.</strong> L'ASP deve garantire a tutti un medico o un pediatra. Prepariamo noi la lettera.</li>
         </ol>
         <button type="button" class="btn primary" data-go="letter">✍️ Scriviamo la lettera insieme</button>
         ${sportelli(a) || aspCalls(a)}
@@ -133,8 +133,8 @@ const screens = {
     return {
       html: `
         <h1>✍️ Scriviamo la lettera insieme</h1>
-        <p class="say">Scrivi i dati qui sotto. Noi li mettiamo nella lettera per l'ASP di ${esc(a.province)}.</p>
-        <div class="notice info"><p class="say">🔒 I dati restano sul tuo telefono. Non sai qualcosa? Lascia vuoto e scrivilo a penna.</p></div>
+        <p>Scrivi i dati qui sotto. Noi li mettiamo nella lettera per l'ASP di ${esc(a.province)}.</p>
+        <div class="notice info"><p>🔒 I dati restano sul tuo telefono. Non sai qualcosa? Lascia vuoto e scrivilo a penna.</p></div>
         <form id="letter-form" novalidate>
           <fieldset>
             <legend>La richiesta</legend>
@@ -150,7 +150,7 @@ const screens = {
         <h2>📄 Ecco la lettera</h2>
         <div id="preview" class="letter"></div>
         ${letterButtons()}
-        <p class="say" id="send-hint"></p>
+        <p id="send-hint"></p>
         ${noPecBox()}
         <p class="muted"><a href="${esc(reportErrorHref(`Medico di famiglia ${a.name}`))}">Segnala un errore</a></p>
         ${disclaimer(rules.last_verified)}

@@ -35,13 +35,13 @@ function sources() {
 }
 
 const howToAsk = () => `
-  <h2 class="say">Come si chiede</h2>
+  <h2>Come si chiede</h2>
   <ol class="big-steps">
-    <li class="say"><strong>Prima guarda nel Fascicolo Sanitario Elettronico</strong> (FSE): molti referti si scaricano già lì, gratis, con SPID, CIE o CNS. <a href="https://www.regione.sicilia.it/fascicolosanitario" target="_blank" rel="noopener">💻 Fascicolo Sanitario della Regione Siciliana</a></li>
-    <li class="say"><strong>Vai all'ufficio cartelle cliniche</strong> dell'ospedale (a volte si chiama «Direzione sanitaria» o «Archivio»). Oppure all'URP. Molti ospedali hanno anche un modulo sul sito.</li>
-    <li class="say"><strong>Porta la carta d'identità.</strong> Se chiedi per un familiare, serve una <strong>delega firmata</strong> da lui e la copia del suo documento. Se la persona è morta, serve una dichiarazione di essere erede.</li>
-    <li class="say"><strong>Chiedi una ricevuta</strong> con il giorno della richiesta. Da quel giorno partono i ${rules.deadline_days} giorni.</li>
-    <li class="say"><strong>La prima copia dei tuoi dati è gratis</strong> se scrivi che la chiedi «ai sensi dell'art. 15 del Regolamento UE 2016/679 (GDPR)». Lo dice il Garante della privacy. Le copie in più si possono pagare. Se l'ospedale ti chiede soldi per la prima copia, fagli vedere questa regola.</li>
+    <li><strong>Prima guarda nel Fascicolo Sanitario Elettronico</strong> (FSE): molti referti si scaricano già lì, gratis, con SPID, CIE o CNS. <a href="https://www.regione.sicilia.it/fascicolosanitario" target="_blank" rel="noopener">💻 Fascicolo Sanitario della Regione Siciliana</a></li>
+    <li><strong>Vai all'ufficio cartelle cliniche</strong> dell'ospedale (a volte si chiama «Direzione sanitaria» o «Archivio»). Oppure all'URP. Molti ospedali hanno anche un modulo sul sito.</li>
+    <li><strong>Porta la carta d'identità.</strong> Se chiedi per un familiare, serve una <strong>delega firmata</strong> da lui e la copia del suo documento. Se la persona è morta, serve una dichiarazione di essere erede.</li>
+    <li><strong>Chiedi una ricevuta</strong> con il giorno della richiesta. Da quel giorno partono i ${rules.deadline_days} giorni.</li>
+    <li><strong>La prima copia dei tuoi dati è gratis</strong> se scrivi che la chiedi «ai sensi dell'art. 15 del Regolamento UE 2016/679 (GDPR)». Lo dice il Garante della privacy. Le copie in più si possono pagare. Se l'ospedale ti chiede soldi per la prima copia, fagli vedere questa regola.</li>
   </ol>`;
 
 const screens = {
@@ -66,7 +66,7 @@ const screens = {
   asked: () => ({
     html: `${progress(3, 3)}
       <h1>Hai già fatto la richiesta per iscritto?</h1>
-      <p class="say">Per esempio con un modulo all'ufficio cartelle cliniche, o per email o PEC.</p>
+      <p>Per esempio con un modulo all'ufficio cartelle cliniche, o per email o PEC.</p>
       ${choice('✅', 'Sì, ho già fatto la richiesta', { asked: true }, 'date')}
       ${choice('❌', 'No, non ancora', { asked: false }, 'howto')}
       ${choice('🗣️', 'L\'ho chiesta solo a voce', { asked: false }, 'howto', 'Al reparto o al telefono')}`,
@@ -76,9 +76,9 @@ const screens = {
     html: `
       <div class="hero" aria-hidden="true">✍️</div>
       <h1>Prima fai la richiesta per iscritto</h1>
-      <p class="say">I ${rules.deadline_days} giorni partono solo da una richiesta scritta. A voce non conta.</p>
+      <p>I ${rules.deadline_days} giorni partono solo da una richiesta scritta. A voce non conta.</p>
       ${howToAsk()}
-      <div class="notice info"><p class="say">Quando hai la ricevuta, torna qui: ti diciamo entro quando devono rispondere.</p></div>
+      <div class="notice info"><p>Quando hai la ricevuta, torna qui: ti diciamo entro quando devono rispondere.</p></div>
       ${disclaimer(rules.last_verified)}
       ${restartBtn()}`,
   }),
@@ -86,7 +86,7 @@ const screens = {
   date: () => ({
     html: `
       <h1>🧾 Che giorno hai fatto la richiesta?</h1>
-      <p class="say">È scritto sulla ricevuta, o sull'email che hai mandato.</p>
+      <p>È scritto sulla ricevuta, o sull'email che hai mandato.</p>
       ${dateForm({ id: 'req-form', name: 'requestDate', label: 'Giorno della richiesta', value: state.requestDate, button: '✔️ Controlla', max: todayISO() })}`,
     mount() {
       document.getElementById('req-form').addEventListener('submit', (e) => {
@@ -119,10 +119,10 @@ const screens = {
           <div class="hero" aria-hidden="true">⏳</div>
           <h1>Non è ancora tardi</h1>
           <div class="notice ok">
-            <p class="say">Devono darti ${whatLabel[state.what]} entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong> (${rules.deadline_days} giorni dalla richiesta).</p>
-            <p class="say">Se a quella data non hai niente, torna qui. Se manca solo qualche foglio, il resto deve arrivare entro ${rules.integration_days} giorni dalla richiesta.</p>
+            <p>Devono darti ${whatLabel[state.what]} entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong> (${rules.deadline_days} giorni dalla richiesta).</p>
+            <p>Se a quella data non hai niente, torna qui. Se manca solo qualche foglio, il resto deve arrivare entro ${rules.integration_days} giorni dalla richiesta.</p>
           </div>
-          <p class="say">Nel frattempo puoi telefonare all'ufficio cartelle cliniche e chiedere a che punto è.</p>
+          <p>Nel frattempo puoi telefonare all'ufficio cartelle cliniche e chiedere a che punto è.</p>
           ${disclaimer(rules.last_verified)}
           ${restartBtn()}`,
       };
@@ -132,14 +132,14 @@ const screens = {
         <div class="hero" aria-hidden="true">⚠️</div>
         <h1>Sono in ritardo: puoi sollecitare</h1>
         <div class="notice bad">
-          <p class="say">Dovevano darti ${whatLabel[state.what]} entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>.</p>
-          <p class="say">Sono passati <strong>${days(d.daysLate)} in più</strong>.</p>
+          <p>Dovevano darti ${whatLabel[state.what]} entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>.</p>
+          <p>Sono passati <strong>${days(d.daysLate)} in più</strong>.</p>
         </div>
-        <h2 class="say">Cosa fare, in ordine</h2>
+        <h2>Cosa fare, in ordine</h2>
         <ol class="big-steps">
-          <li class="say"><strong>Telefona o vai all'ufficio cartelle cliniche</strong> con la ricevuta. Spesso basta questo.</li>
-          <li class="say"><strong>Manda una lettera di sollecito</strong> alla Direzione sanitaria dell'ospedale. La scriviamo insieme.</li>
-          <li class="say"><strong>Se ancora niente:</strong> reclamo all'URP dell'ASP di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''}, oppure a Cittadinanzattiva
+          <li><strong>Telefona o vai all'ufficio cartelle cliniche</strong> con la ricevuta. Spesso basta questo.</li>
+          <li><strong>Manda una lettera di sollecito</strong> alla Direzione sanitaria dell'ospedale. La scriviamo insieme.</li>
+          <li><strong>Se ancora niente:</strong> reclamo all'URP dell'ASP di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''}, oppure a Cittadinanzattiva
             (<a href="https://www.cittadinanzattiva.it" target="_blank" rel="noopener">cittadinanzattiva.it</a>). ${tarText()}</li>
         </ol>
         ${officeBox(a, 'cartelle', '🏥 Gli uffici cartelle cliniche', "Chiama quello dell'ospedale dove c'è stato il ricovero.") || aspCalls(a)}
@@ -153,10 +153,10 @@ const screens = {
     return {
       html: `
         <h1>✍️ Scriviamo il sollecito insieme</h1>
-        <p class="say">Scrivi i dati qui sotto. Noi li mettiamo nella lettera.</p>
+        <p>Scrivi i dati qui sotto. Noi li mettiamo nella lettera.</p>
         <div class="notice info">
-          <p class="say">🔒 I dati restano sul tuo telefono. Noi non li vediamo. Non chiediamo la malattia.</p>
-          <p class="say">Non sai qualcosa? Lascia vuoto. Dopo aver stampato, lo scrivi a penna.</p>
+          <p>🔒 I dati restano sul tuo telefono. Noi non li vediamo. Non chiediamo la malattia.</p>
+          <p>Non sai qualcosa? Lascia vuoto. Dopo aver stampato, lo scrivi a penna.</p>
         </div>
         <form id="letter-form" novalidate>
           <fieldset>
@@ -176,11 +176,11 @@ const screens = {
         <p class="muted">La lettera usa le parole degli uffici. In breve dice: «Sono in ritardo, datemi i documenti».</p>
         <div id="preview" class="letter"></div>
         ${letterButtons()}
-        <p class="say" id="send-hint"></p>
+        <p id="send-hint"></p>
         ${noPecBox()}
         <div class="card">
-          <h3 class="say" style="margin-top:0">Prima di mandarla</h3>
-          <ul class="icon-list say">
+          <h3 style="margin-top:0">Prima di mandarla</h3>
+          <ul class="icon-list">
             <li><span class="ico" aria-hidden="true">🖊️</span> Firma la lettera</li>
             <li><span class="ico" aria-hidden="true">🪪</span> Allega: documento d'identità (fotocopia o foto)</li>
             <li><span class="ico" aria-hidden="true">🧾</span> Allega: copia della prima richiesta o della ricevuta</li>
