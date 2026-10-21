@@ -15,6 +15,12 @@ Sito gratuito che dice alle persone in Sicilia cosa spetta loro, entro quando e 
 - **Modulo 13 – Medico di famiglia e pediatra:** come scegliere o cambiare, scelta temporanea, lettera se non c'è posto.
 - **Modulo 11 – Cure palliative:** diritto della L. 38/2010, attivazione a casa o in hospice, richiesta scritta.
 
+Temi **solo testo** (`static` in `data/moduli.json`: risposta in cima e pagine corte, senza percorso a domande), aggiunti il 20/10/2026:
+
+- Area **Tessera e ricette** (`tessera-e-ricette/`): tessera sanitaria (`tessera-sanitaria/`), fascicolo sanitario e ricetta elettronica (`fascicolo-e-ricetta/`), prenotare e disdire al CUP (`prenotare-cup/`).
+- In **Invalidità**: legge 104 (`legge-104/`), indennità di accompagnamento (`accompagnamento/`), contrassegno disabili (`contrassegno-disabili/`).
+- In **Visite ed esami**: curarsi fuori dalla Sicilia (`cure-fuori-regione/`), dentista (`dentista/`), psicologo (`psicologo/`). In **Aiuto a casa**: RSA (`rsa/`).
+
 Requisiti completi: [SPEC.md](SPEC.md).
 
 ## Principi

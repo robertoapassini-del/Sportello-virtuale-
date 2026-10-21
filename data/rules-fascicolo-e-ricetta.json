@@ -1,0 +1,40 @@
+{
+  "name": "Fascicolo Sanitario Elettronico e ricetta elettronica",
+  "last_verified": "2026-10-20",
+  "prescription_drug_days": 30,
+  "referti_upload_days": 5,
+  "provenienza": {
+    "prescription_drug_days": {
+      "url": "https://sistemats1.sanita.finanze.it/portale/ricetta-dematerializzata",
+      "verified": "2026-10-20",
+      "proof": "estratto",
+      "review_by": "2027-10-20",
+      "nota": "Validità della ricetta per i farmaci: 30 giorni dalla compilazione."
+    },
+    "referti_upload_days": {
+      "url": "https://www.fascicolosanitario.gov.it",
+      "verified": "2026-10-20",
+      "proof": "secondaria",
+      "review_by": "2027-03-31",
+      "nota": "FSE 2.0: 5 giorni dalla prestazione (notizie del marzo 2026 sul DM 7/9/2023). Le FAQ della Regione (27/05/2026) dicono che le strutture stanno ancora adeguando i sistemi."
+    }
+  },
+  "sources": [
+    {
+      "label": "Regione Siciliana – Fascicolo Sanitario Elettronico",
+      "url": "https://www.regione.sicilia.it/fascicolosanitario"
+    },
+    {
+      "label": "Regione Siciliana – Fascicolo Sanitario Elettronico: domande frequenti",
+      "url": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/dipartimento-pianificazione-strategica/fascicolo-sanitario-elettronico-domande-frequenti"
+    },
+    {
+      "label": "Ministero della Salute – Fascicolo Sanitario Elettronico 2.0",
+      "url": "https://www.fascicolosanitario.gov.it"
+    },
+    {
+      "label": "Sistema Tessera Sanitaria – Ricetta dematerializzata",
+      "url": "https://sistemats1.sanita.finanze.it/portale/ricetta-dematerializzata"
+    }
+  ]
+}

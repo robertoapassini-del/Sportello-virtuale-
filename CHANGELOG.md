@@ -2,6 +2,23 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 20/10/2026 — temi nuovi: controllo sulle fonti ufficiali
+- Fonti lette per intero dal browser: scheda INPS accompagnamento (aggiornata al 20/07/2026), schede INPS permessi 104 (50098) e congedo straordinario (50097), scheda INPS bonus psicologo, L. 106/2025 artt. 1–3 (Normattiva), D.L. 73/2024 art. 3 (Normattiva), DPR 495/1992 art. 381 (Normattiva), FAQ TEAM del Sistema TS, FAQ FSE della Regione Siciliana (27/05/2026), modulo 2025 del Comune di Palermo.
+- **Accompagnamento**: importo 2026 scritto per esteso (551,53 €); sospensione per ricovero gratuito oltre 29 giorni (non «un mese»); permesso di soggiorno di almeno un anno (non «di lungo periodo»); INPS chiude la pratica entro 45 giorni dalla domanda di pagamento (tolto «1–2 mesi»).
+- **Legge 104**: la L. 106/2025 (10 ore l'anno, congedo non retribuito fino a 24 mesi) vale per i lavoratori con malattie oncologiche, invalidanti o croniche con invalidità dal 74%, non per chi assiste con la 104: corrette le tre pagine. Familiari fino al terzo grado; 2 ore al giorno solo con orario di almeno 6 ore (1 ora altrimenti); i 30 giorni sono il termine dell'INPS, non del datore di lavoro.
+- **Fascicolo**: in Sicilia la delega per un adulto non è ancora attiva (arriverà con il sistema nazionale); per i minori serve il modulo al pediatra o all'ASP; consenso nella sezione «Privacy» o con modulo al medico; tolto il «modulo per segnalare un documento mancante».
+- **Contrassegno**: a Palermo la domanda va alla Circoscrizione (5 euro di istruttoria), non alla Polizia municipale; tolta la marca da bollo; ZTL di Palermo: email entro 15 giorni. Art. 381: 5 anni e rinnovo con il medico curante confermati sul testo.
+- **Tessera**: duplicato anche in PDF dal Sistema TS; chiedere il duplicato disattiva la tessera vecchia; in Svizzera e Francia si paga e si chiede il rimborso; i 6 mesi del certificato sostitutivo restano da confermare.
+- **Bonus psicologo**: prima seduta entro 60 giorni dall'accoglimento. **Dentista**: ortodonzia solo per minori in condizione di vulnerabilità. **CUP**: disdetta e ticket per chi non si presenta confermati sul testo del D.L. 73/2024.
+- Cosa resta aperto: `DA-VERIFICARE-A-MANO.md`, sezione 0.
+
+## 20/10/2026 — dieci temi nuovi e la quinta area «Tessera e ricette»
+- Fonti: ricerca web del 20/10/2026 su siti ufficiali e di informazione (dettagli e punti aperti in `DA-VERIFICARE-A-MANO.md`, sezione «Temi nuovi»); i file `data/rules-*.json` dei temi nuovi hanno solo le fonti, nessuna cifra usata dai calcoli.
+- Nuova area `tessera-e-ricette/` con: tessera sanitaria (rinnovo, duplicato, TEAM), fascicolo sanitario e ricetta elettronica, prenotare e disdire al CUP.
+- In Invalidità: legge 104 (come si ottiene, permessi, congedo straordinario), indennità di accompagnamento (requisiti, domanda e AP70), contrassegno disabili (come si chiede, cosa permette).
+- In Visite ed esami: curarsi fuori dalla Sicilia e all'estero, il dentista nel Servizio sanitario, psicologo e salute mentale (servizi dell'ASP, bonus psicologo). In Aiuto a casa: la RSA (come si entra, chi paga).
+- Sono moduli «solo testo» (`static` in `moduli.json`): risposta in cima e pagine corte, senza percorso a domande. L'elenco della home senza JavaScript ora lo crea `pagine.mjs` (blocco `home-elenco`). Il test sull'avviso finale usa `js/controlla.js`.
+
 ## 20/10/2026 — controllo totale dopo il rifacimento: tre cose rimesse a posto
 - Nessun dato cambiato. Controllo di cifre, testi, link e funzioni delle 59 pagine rispetto alla versione prima delle pagine corte: nessuna cifra e nessun testo perso (le «Domande frequenti» vivono dentro le pagine).
 - Le 38 pagine corte caricano ora `js/guida.js` al posto del solo `js/common.js`: tornano «Questa pagina ti è stata utile?», il conteggio anonimo della visita e il pulsante «🔊 Ascolta», che legge tutta la guida (titoli, paragrafi ed elenchi; non l'indice né le fonti).

@@ -1,0 +1,88 @@
+{
+  "name": "Psicologo e salute mentale",
+  "last_verified": "2026-10-20",
+  "bonus_max": 1500,
+  "bonus_per_seduta": 50,
+  "bonus_isee_max": 50000,
+  "bonus_tiers": [
+    {
+      "id": "isee15",
+      "isee_max": 15000,
+      "max": 1500
+    },
+    {
+      "id": "isee30",
+      "isee_max": 30000,
+      "max": 1000
+    },
+    {
+      "id": "isee50",
+      "isee_max": 50000,
+      "max": 500
+    }
+  ],
+  "bonus_uso_mesi": 9,
+  "detrazione_percent": 19,
+  "prima_seduta_giorni": 60,
+  "provenienza": {
+    "bonus_max": {
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.contributo-per-sostenere-le-spese-relative-a-sessioni-di-psicoterapia-bonus-psicologo.html",
+      "verified": "2026-10-20",
+      "proof": "estratto",
+      "review_by": "2027-01-31",
+      "nota": "Contributo fino a 1.500 euro (DM 24/11/2022 e seguenti)."
+    },
+    "bonus_per_seduta": {
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.contributo-per-sostenere-le-spese-relative-a-sessioni-di-psicoterapia-bonus-psicologo.html",
+      "verified": "2026-10-20",
+      "proof": "estratto",
+      "review_by": "2027-01-31",
+      "nota": "Massimo 50 euro a seduta."
+    },
+    "bonus_isee_max": {
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.contributo-per-sostenere-le-spese-relative-a-sessioni-di-psicoterapia-bonus-psicologo.html",
+      "verified": "2026-10-20",
+      "proof": "testo",
+      "review_by": "2027-01-31",
+      "nota": "Scheda INPS (aggiornata al 3/12/2025): ISEE in corso di validità non superiore a 50mila euro."
+    },
+    "bonus_tiers": {
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.contributo-per-sostenere-le-spese-relative-a-sessioni-di-psicoterapia-bonus-psicologo.html",
+      "verified": "2026-10-20",
+      "proof": "secondaria",
+      "review_by": "2027-01-31",
+      "nota": "Fasce: 1.500 euro fino a 15.000 di ISEE, 1.000 fino a 30.000, 500 fino a 50.000. Lette su siti di informazione: da confermare sulla pagina INPS."
+    },
+    "bonus_uso_mesi": {
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.contributo-per-sostenere-le-spese-relative-a-sessioni-di-psicoterapia-bonus-psicologo.html",
+      "verified": "2026-10-20",
+      "proof": "secondaria",
+      "review_by": "2027-01-31",
+      "nota": "Il bonus va usato entro circa 9 mesi (270 giorni) dall'assegnazione, secondo le guide lette."
+    },
+    "detrazione_percent": {
+      "url": "https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/detrazioni-spese-sanitarie",
+      "verified": "2026-10-20",
+      "proof": "estratto",
+      "review_by": "2027-01-31",
+      "nota": "Detrazione IRPEF del 19% delle spese sanitarie."
+    },
+    "prima_seduta_giorni": {
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.contributo-per-sostenere-le-spese-relative-a-sessioni-di-psicoterapia-bonus-psicologo.html",
+      "verified": "2026-10-20",
+      "proof": "estratto",
+      "review_by": "2027-01-31",
+      "nota": "Prima seduta entro 60 giorni dall'accoglimento, pena la decadenza (istruzioni INPS 2025)."
+    }
+  },
+  "sources": [
+    {
+      "label": "INPS – Contributo per sessioni di psicoterapia (bonus psicologo)",
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.contributo-per-sostenere-le-spese-relative-a-sessioni-di-psicoterapia-bonus-psicologo.html"
+    },
+    {
+      "label": "Ministero della Salute – Salute mentale",
+      "url": "https://www.salute.gov.it/portale/saluteMentale/homeSaluteMentale.jsp"
+    }
+  ]
+}

@@ -5,6 +5,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
 import { execFileSync } from 'node:child_process';
+import { checkWith } from '../js/controlla.js';
 import { fileURLToPath } from 'node:url';
 
 const site = new URL('../', import.meta.url);
@@ -72,8 +73,8 @@ test('sitemap.xml ha tutte le pagine e robots.txt la indica', () => {
 });
 
 test('l\'avviso finale dice a chi chiedere conferma, guida per guida', () => {
-  const want = { invalidita: "l'INPS o con un patronato", 'ricorso-invalidita': "l'INPS o con un patronato", 'assegno-inclusione': "l'INPS o con un patronato", 'cartella-clinica': "l'ospedale o con la tua ASP" };
+  // La frase viene da js/controlla.js (CHECK_WITH): è la stessa delle pagine con JavaScript.
   for (const m of reg.modules) {
-    assert.ok(read(`${m.id}/index.html`).replace(/&#39;/g, "'").includes(`Controlla sempre con ${want[m.id] || 'la tua ASP'}.`), m.id);
+    assert.ok(read(`${m.id}/index.html`).replace(/&#39;/g, "'").includes(checkWith(m.id)), m.id);
   }
 });

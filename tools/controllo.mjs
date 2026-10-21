@@ -34,6 +34,7 @@ const PAROLE = [
   'assistenza domiciliare', 'cure palliative', 'hospice', 'ausili', 'protesi', 'nomenclatore',
   'piano terapeutico', 'medico di medicina generale', 'medici di medicina generale', 'pediatr',
   'screening', 'vaccin', 'cartella clinica', 'fascicolo sanitario', 'regione siciliana',
+  'tessera sanitaria', 'ricetta elettronica', 'ricetta dematerializzata', 'disdetta', 'contrassegno', 'residenze sanitarie', /\brsa\b/, 'odontoiatr', 'bonus psicologo',
 ];
 
 const norm = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[’'`]/g, ' ');
