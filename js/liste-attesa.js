@@ -10,7 +10,7 @@ import { noPecBox,
   personFields, reportErrorHref, generalContactInfo, choice, helpBox, sourcesBox, moreHelp, hideHeadingEmoji, enableStart, aslLabel, aslIntestazione, regione, regioneInfo, regioneLink,
 } from './common.js';
 import { RICETTA_SVG } from './ricetta-svg.js';
-import { createNav, withRegion, regionAction } from './flow.js';
+import { createNav, withRegion, regionAction, senzaUffici, progress as progressBar } from './flow.js';
 
 const ROOT = '../';
 const app = document.getElementById('app');
@@ -77,10 +77,7 @@ function classText() {
   return state.cls;
 }
 
-function progress(n) {
-  const dots = Array.from({ length: 6 }, (_, i) => `<span class="dot${i < n ? ' on' : ''}"></span>`).join('');
-  return `<p class="progress"><span aria-hidden="true">${dots}</span> Domanda ${n} di 6</p>`;
-}
+const progress = (n) => progressBar(n, 6);
 
 function restartBtn(label = 'Ricomincia da capo') {
   return `<button type="button" class="btn center" data-action="restart">🔄 ${esc(label)}</button>`;
@@ -335,9 +332,9 @@ const screens = {
           <strong>${days(r.excess)} di troppo</strong>.</p>
         </div>
         <p>Puoi chiedere all'${aslLabel()} di farti fare la visita prima. Se serve, la fai in ospedale pagando solo il ticket.</p>
-        ${aspSteps(a)}
+        ${senzaUffici(a, () => aspSteps(a))}
         ${warnings()}
-        ${disclaimer(a.last_verified)}`,
+        ${disclaimer((a || rules).last_verified)}`,
     };
   },
 
@@ -349,9 +346,9 @@ const screens = {
           <div class="hero" aria-hidden="true">🚨</div>
           <h1>Lettera U: è urgente</h1>
           <p>La visita va fatta entro ${days(rules.max_wait_days.U)}. Non aspettare.</p>
-          ${aspSteps(a)}
+          ${senzaUffici(a, () => aspSteps(a))}
           <div class="notice urgent"><p>Se stai male, chiama il tuo medico. Se è grave, chiama il <a href="tel:112">112</a>.</p></div>
-          ${disclaimer(a.last_verified)}
+          ${disclaimer((a || rules).last_verified)}
           ${restartBtn()}`,
       };
     }
@@ -363,7 +360,7 @@ const screens = {
     } else if (cb.status === 'passed') {
       status = `<div class="notice bad"><p>⚠️ Dovevano richiamarti entro ${art('il', cb.deadline)}<strong>${esc(formatIt(cb.deadline))}</strong>. Non l'hanno fatto.</p>
         <p>Ora puoi chiedere all'${aslLabel()} di farti fare la visita in tempo.</p></div>
-        ${aspSteps(a)}
+        ${senzaUffici(a, () => aspSteps(a))}
         ${warnings()}`;
     }
     return {
@@ -545,7 +542,8 @@ const screens = {
 };
 
 // Prima della provincia, la regione (se ce n'è più di una). Link «Cambia regione» nelle schermate con dati regionali.
-const regionLink = withRegion(screens);
+// Le classi U, B, D, P e i loro giorni valgono in tutta Italia: senza i dati della regione si salta la provincia (vedi js/flow.js).
+const regionLink = withRegion(screens, 'province', 'access');
 
 function updateLetter(a, official) {
   const today = todayISO();

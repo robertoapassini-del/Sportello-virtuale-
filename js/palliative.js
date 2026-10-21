@@ -5,7 +5,7 @@
 import { todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
 import { genericRequest, mailtoHref } from './letters.js';
 import { noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact, aslLabel, aslIntestazione, regione, regioneNonPronta } from './common.js';
-import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
+import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons, senzaUffici } from './flow.js';
 
 const ROOT = '../';
 const app = document.getElementById('app');
@@ -71,8 +71,8 @@ const screens = {
       <div class="hero" aria-hidden="true">🤲</div>
       <h1>Come funziona</h1>
       ${whatIs()}
-      ${aspCalls(asp(), ['palliative', 'casa'])}
-      <button type="button" class="btn primary" data-go="letter">✍️ Prepara una richiesta scritta</button>
+      ${senzaUffici(asp(), () => `${aspCalls(asp(), ['palliative', 'casa'])}
+      <button type="button" class="btn primary" data-go="letter">✍️ Prepara una richiesta scritta</button>`)}
       ${disclaimer(rules.last_verified)}
       ${restartBtn()}`,
   }),
@@ -89,7 +89,7 @@ const screens = {
           <li><strong>Se è già seguita dalla rete</strong>, chiama il numero di reperibilità che vi hanno dato: serve anche per questo.</li>
         </ol>
         <div class="notice urgent"><p>Se la situazione precipita, chiama il <a href="tel:112">112</a>.</p></div>
-        ${aspCalls(a, ['palliative', 'casa'])}
+        ${senzaUffici(a, () => aspCalls(a, ['palliative', 'casa']))}
         ${whatIs()}
         ${disclaimer(rules.last_verified)}
         ${restartBtn()}`,
@@ -130,10 +130,10 @@ const screens = {
         <ol class="big-steps">
           <li><strong>Chiama il medico che ha fatto la richiesta</strong> e chiedigli di telefonare lui alla rete cure palliative.</li>
           <li><strong>Chiama l'${aslLabel()}</strong> e chiedi il numero della rete cure palliative o dell'hospice della tua zona.</li>
-          ${late ? `<li><strong>Manda una richiesta scritta</strong> all'${aslLabel()} di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''}. La scriviamo insieme.</li>` : ''}
+          ${late ? `<li><strong>Manda una richiesta scritta</strong> all'${aslLabel()}${a ? ` di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''}. La scriviamo insieme` : ''}.</li>` : ''}
         </ol>
-        ${aspCalls(a, ['palliative', 'casa'])}
-        ${late ? '<button type="button" class="btn primary" data-go="letter">✍️ Scriviamo la richiesta insieme</button>' : ''}
+        ${senzaUffici(a, () => `${aspCalls(a, ['palliative', 'casa'])}
+        ${late ? '<button type="button" class="btn primary" data-go="letter">✍️ Scriviamo la richiesta insieme</button>' : ''}`)}
         ${disclaimer(rules.last_verified)}`,
     };
   },
@@ -209,6 +209,7 @@ let flow;
   try { [rules, data] = await Promise.all([loadJSON(`${ROOT}data/rules-palliative.json`), loadRegional(ROOT, 'asl')]); } catch {
     app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>'; return;
   }
-  flow = createFlow({ app, screens, state, sources, person });
+  // Passi e giorni del sollecito non dipendono dalla regione: senza i suoi dati si salta la provincia (vedi js/flow.js).
+  flow = createFlow({ app, screens, state, sources, person, next: 'stage' });
   flow.render();
 })();

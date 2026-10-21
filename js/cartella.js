@@ -8,7 +8,7 @@ import { cartellaReminder, mailtoHref } from './letters.js';
 import { noPecBox,
   esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, officeBox, personFields, reportErrorHref, generalContactInfo, aslLabel, regioneInfo, regioneLink, regione,
 } from './common.js';
-import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
+import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons, senzaUffici } from './flow.js';
 
 const ROOT = '../';
 const app = document.getElementById('app');
@@ -148,12 +148,12 @@ const screens = {
         <h2>Cosa fare, in ordine</h2>
         <ol class="big-steps">
           <li><strong>Telefona o vai all'ufficio cartelle cliniche</strong> con la ricevuta. Spesso basta questo.</li>
-          <li><strong>Manda una lettera di sollecito</strong> alla Direzione sanitaria dell'ospedale. La scriviamo insieme.</li>
-          <li><strong>Se ancora niente:</strong> reclamo all'URP dell'ospedale (o dell'${aslLabel()}, se l'ospedale è dell'${aslLabel()}${aspComplaint(a)}), oppure a Cittadinanzattiva
+          <li><strong>Manda una lettera di sollecito</strong> alla Direzione sanitaria dell'ospedale.${a ? ' La scriviamo insieme.' : ''}</li>
+          <li><strong>Se ancora niente:</strong> reclamo all'URP dell'ospedale (o dell'${aslLabel()}, se l'ospedale è dell'${aslLabel()}${a ? aspComplaint(a) : ''}), oppure a Cittadinanzattiva
             (<a href="https://www.cittadinanzattiva.it" target="_blank" rel="noopener">cittadinanzattiva.it</a>). ${tarText()}</li>
         </ol>
-        ${officeBox(a, 'cartelle', '🏥 Gli uffici cartelle cliniche', "Chiama quello dell'ospedale dove c'è stato il ricovero.") || aspCalls(a)}
-        <button type="button" class="btn primary" data-go="letter">✍️ Scriviamo il sollecito insieme</button>
+        ${senzaUffici(a, () => `${officeBox(a, 'cartelle', '🏥 Gli uffici cartelle cliniche', "Chiama quello dell'ospedale dove c'è stato il ricovero.") || aspCalls(a)}
+        <button type="button" class="btn primary" data-go="letter">✍️ Scriviamo il sollecito insieme</button>`)}
         ${disclaimer(rules.last_verified)}`,
     };
   },
@@ -243,6 +243,7 @@ let flow;
     app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>';
     return;
   }
-  flow = createFlow({ app, screens, state, sources, person });
+  // I 7 e 30 giorni valgono in tutta Italia: senza i dati della regione si salta la provincia (vedi js/flow.js).
+  flow = createFlow({ app, screens, state, sources, person, next: 'what' });
   flow.render();
 })();

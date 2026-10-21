@@ -134,7 +134,11 @@ sempre riconoscibile: titolo «In Sicilia» (il nome della regione), bordo color
    se è attiva, altrimenti il `default` dell'indice; `setRegione(id)` la salva. In `js/flow.js`: `withRegion(screens)`
    mette «In quale regione abiti?» al posto della schermata `province` finché la scelta non c'è (lo fa da solo
    `createFlow`; liste d'attesa e invalidità lo chiamano a mano), `regionAction()` gestisce i clic, `changeRegionLink()`
-   è il link «Non abiti in Sicilia? Cambia regione» nella schermata della provincia e in quelle dopo. Numeri utili
+   è il link «Non abiti in Sicilia? Cambia regione» nella schermata della provincia e in quelle dopo.
+   Se la regione è attiva ma senza i dati del modulo, `withRegion(screens, 'province', next)` (in `createFlow`: `next`)
+   salta la provincia e va a `next`: le schermate con uffici o lettera usano `senzaUffici(a, …)`, che senza provincia
+   mostra `regionMissing()`. Senza `next` (invalidità, ausili: il conto dipende dai dati della regione) resta il blocco,
+   e il pulsante della prima schermata non promette il conto. Numeri utili
    usa gli stessi pezzi. Nota nella privacy. Con una sola regione attiva né la schermata né il link si vedono, quindi
    il sito è uguale a prima. Se si sceglie una regione diversa da quella dei dati già caricati, per ora la pagina si
    ricarica (si riparte dall'inizio del modulo, la regione resta salvata): al passo 3 i dati si potranno ricaricare

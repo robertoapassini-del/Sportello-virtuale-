@@ -6,7 +6,7 @@ import { genericRequest, mailtoHref } from './letters.js';
 import {
   noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, aspCalls, officeBox, personFields, reportErrorHref, generalContact, aslLabel, aslIntestazione,
 } from './common.js';
-import { createFlow, choice, restartBtn, progress, letterButtons } from './flow.js';
+import { createFlow, choice, restartBtn, progress, letterButtons, senzaUffici } from './flow.js';
 
 const ROOT = '../';
 const app = document.getElementById('app');
@@ -89,13 +89,14 @@ const screens = {
     return {
       html: `
         <div class="hero" aria-hidden="true">✅</div>
-        <h1>Ecco come fare ${/^a/i.test(a.province) ? 'ad' : 'a'} ${esc(a.province)}</h1>
+        <h1>${a ? `Ecco come fare ${/^a/i.test(a.province) ? 'ad' : 'a'} ${esc(a.province)}` : 'Ecco come fare'}</h1>
         <div class="notice info"><p>${whoText()}</p></div>
         ${extra}
         <h2>Dove si fa</h2>
-        <p>${esc(a.scelta_medico.how)}</p>
+        ${a ? '' : `<p>Allo sportello «scelta e revoca» del distretto dell'${aslLabel()} dove abiti. In alcune province si può fare anche online, sul sito dell'${aslLabel()}.</p>`}
+        ${senzaUffici(a, () => `<p>${esc(a.scelta_medico.how)}</p>
         ${a.scelta_medico.url ? `<a class="btn" href="${esc(a.scelta_medico.url)}" target="_blank" rel="noopener">💻 Sito dell'${aslLabel()}</a>` : ''}
-        ${sportelli(a)}
+        ${sportelli(a)}`)}
         ${bring}
         <h2>Come scegliere</h2>
         <ul class="clean">
@@ -103,7 +104,7 @@ const screens = {
           <li>Ogni medico può avere al massimo circa ${migliaia(rules.max_patients_medico)} pazienti, ogni pediatra circa ${migliaia(rules.max_patients_pediatra)}: se è pieno, non può prenderti.</li>
           <li>Chiedi a vicini e parenti, e guarda gli orari dello studio e se fa visite a casa.</li>
         </ul>
-        ${aspCalls(a)}
+        ${a ? aspCalls(a) : ''}
         ${disclaimer(rules.last_verified)}
         ${restartBtn()}`,
     };
@@ -120,10 +121,10 @@ const screens = {
           <li><strong>Chiedi allo sportello «scelta e revoca»</strong> l'elenco completo, anche dei comuni vicini dello stesso distretto: a volte c'è posto poco lontano.</li>
           <li><strong>Chiedi una deroga:</strong> in alcuni casi un medico può superare il limite di pazienti (per esempio per un familiare di un suo paziente, o per un neonato).</li>
           ${state.ageBand === '6-13' ? '<li><strong>Per un bambino dai 6 anni</strong> puoi scegliere anche un <strong>medico di famiglia</strong> invece del pediatra.</li>' : ''}
-          <li><strong>Se ancora niente: scrivi all'${aslLabel()}.</strong> L'${aslLabel()} deve garantire a tutti un medico o un pediatra. Prepariamo noi la lettera.</li>
+          <li><strong>Se ancora niente: scrivi all'${aslLabel()}.</strong> L'${aslLabel()} deve garantire a tutti un medico o un pediatra.${a ? ' Prepariamo noi la lettera.' : ''}</li>
         </ol>
-        <button type="button" class="btn primary" data-go="letter">✍️ Scriviamo la lettera insieme</button>
-        ${sportelli(a) || aspCalls(a)}
+        ${senzaUffici(a, () => `<button type="button" class="btn primary" data-go="letter">✍️ Scriviamo la lettera insieme</button>
+        ${sportelli(a) || aspCalls(a)}`)}
         ${disclaimer(rules.last_verified)}`,
     };
   },
@@ -200,6 +201,7 @@ let flow;
   try { [rules, data] = await Promise.all([loadJSON(`${ROOT}data/rules-medico.json`), loadRegional(ROOT, 'asl')]); } catch {
     app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>'; return;
   }
-  flow = createFlow({ app, screens, state, sources, person });
+  // Le regole sull'età valgono in tutta Italia: senza i dati della regione si salta la provincia (vedi js/flow.js).
+  flow = createFlow({ app, screens, state, sources, person, next: 'who' });
   flow.render();
 })();

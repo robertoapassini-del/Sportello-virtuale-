@@ -147,16 +147,45 @@ export function changeRegionLink() {
   return `<p class="cambia-regione"><button type="button" class="link" data-action="change-region">Non abiti ${esc(inRegione())}? Cambia regione</button></p>`;
 }
 
+// Regione attiva che per questo modulo non ha ancora uffici e lettere (regioneNonPronta() «parziale»,
+// per esempio la Lombardia con solo i Numeri utili), in un modulo che sa fare il conto senza la provincia.
+// Allora la domanda sulla provincia si salta: le domande e il conto valgono in tutta Italia.
+// Le schermate che mostrano uffici o lettera usano senzaUffici(a, …): senza provincia, al loro posto c'è regionMissing().
+let saltaProvincia = false;
+export const provinciaSaltata = () => saltaProvincia && !needsRegion() && !!regioneNonPronta()?.parziale;
+export const senzaUffici = (a, html) => (a ? html() : regionMissing());
+
 // Mette la scelta della regione davanti alla schermata della provincia (name).
+// next (facoltativo): la schermata dopo la provincia, per i moduli il cui conto non dipende dai dati della regione.
+// Senza next, chi ha una regione senza i dati di questo modulo vede regionMissingScreen().
 // Torna una funzione per il disegno: (current, state) → il link «Cambia regione»
 // se la schermata mostra dati regionali (la provincia o le schermate dopo).
-export function withRegion(screens, name = 'province') {
+export function withRegion(screens, name = 'province', next = null) {
   const inner = screens[name];
   if (!inner) return () => '';
+  if (next) saltaProvincia = true;
+  // Vero se il pulsante verso la provincia porta a regionMissingScreen().
+  const bloccata = () => !needsRegion() && !!regioneNonPronta() && !(next && provinciaSaltata());
   screens[name] = () => {
     if (needsRegion()) return regionScreen();
+    if (next && provinciaSaltata()) return screens[next]();
     return regioneNonPronta() ? regionMissingScreen() : inner();
   };
+  // Se il conto non si può fare, il pulsante principale della prima schermata non lo promette
+  // («Fai il conto…» diventa «Uffici e numeri in Lombardia»): dopo c'è solo il rimando alla guida.
+  const intro = screens.intro;
+  if (intro) {
+    screens.intro = () => {
+      const s = intro();
+      if (!bloccata()) return s;
+      const t = document.createElement('template');
+      t.innerHTML = s.html;
+      const b = t.content.querySelector(`button.btn.primary[data-go="${name}"]`);
+      if (!b) return s;
+      b.textContent = `📍 Uffici e numeri ${inRegione()}`;
+      return { ...s, html: t.innerHTML };
+    };
+  }
   return (current, state = {}) => {
     if (current !== name) askRegion = false;
     return !needsRegion() && !regioneNonPronta() && (current === name || state.province) ? changeRegionLink() : '';
@@ -188,9 +217,10 @@ export function regionAction(btn, nav, name = 'province') {
 }
 
 // person (facoltativo): i dati per le lettere, cancellati anche loro con «Ricomincia».
-export function createFlow({ app, screens, state, sources, first = 'intro', person }) {
+// next: vedi withRegion.
+export function createFlow({ app, screens, state, sources, first = 'intro', person, next }) {
   const nav = createNav({ first, show: (current) => paint(current) });
-  const regionLink = withRegion(screens);
+  const regionLink = withRegion(screens, 'province', next);
 
   function paint(current) {
     const s = screens[current]();
@@ -226,7 +256,9 @@ export const restartBtn = (label = 'Ricomincia da capo') =>
 
 export const days = (n) => `${n} ${n === 1 ? 'giorno' : 'giorni'}`;
 
+// Se la domanda sulla provincia si salta (provinciaSaltata), le domande sono una in meno.
 export function progress(n, total) {
+  if (provinciaSaltata() && n > 1) { n -= 1; total -= 1; }
   const dots = Array.from({ length: total }, (_, i) => `<span class="dot${i < n ? ' on' : ''}"></span>`).join('');
   return `<p class="progress"><span aria-hidden="true">${dots}</span> Domanda ${n} di ${total}</p>`;
 }

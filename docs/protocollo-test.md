@@ -63,3 +63,5 @@ tutti i controlli verdi.
   compaiono; in `browser.cjs` il riquadro «Chi può aiutarti» delle pagine delle aree dice «ASP» in Sicilia; in
   `errori-noti.test.mjs` «della ASL», numeri verdi con lo spazio in mezzo, migliaia senza punto, titoli di pagina come
   link dentro la frase, «ad Enna», «una équipe», titoli di `moduli.json` diversi dall'h1.
+- 21/10/2026 (giro 5) — `browser.cjs`, «conto senza uffici»: in una regione con solo i Numeri utili i moduli con un conto
+  nazionale si fermavano subito a «non abbiamo ancora i dati». Ora il controllo segue il percorso fino alla data calcolata.

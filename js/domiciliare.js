@@ -5,7 +5,7 @@
 import { todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
 import { genericRequest, mailtoHref } from './letters.js';
 import { noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact, complaintTo, aslLabel, regioneInfo, inRegione, regioneLink, aslIntestazione, regione, regioneNonPronta } from './common.js';
-import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
+import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons, senzaUffici } from './flow.js';
 
 const ROOT = '../';
 const app = document.getElementById('app');
@@ -142,7 +142,7 @@ const screens = {
       <div class="hero" aria-hidden="true">👨‍⚕️</div>
       <h1>Si parte dal medico di famiglia</h1>
       ${steps()}
-      ${aspCalls(asp(), ['casa'])}
+      ${senzaUffici(asp(), () => aspCalls(asp(), ['casa']))}
       <p>Quando la richiesta è partita, torna qui con la data: ti diciamo quando sollecitare.</p>
       ${disclaimer(rules.last_verified)}
       ${restartBtn()}`,
@@ -157,10 +157,10 @@ const screens = {
         <ol class="big-steps">
           <li><strong>Chiedi al medico di famiglia</strong> di chiedere una nuova valutazione (rivalutazione) al distretto: il piano si può aumentare.</li>
           <li><strong>Chiama il PUA del distretto</strong> e chiedi perché si è interrotta e quando riprende. Segnati nome e data.</li>
-          <li><strong>Se non cambia niente:</strong> reclamo ${complaintTo(a)}. Puoi usare la lettera qui sotto.</li>
+          <li><strong>Se non cambia niente:</strong> reclamo ${a ? `${complaintTo(a)}. Puoi usare la lettera qui sotto` : `all'URP dell'${aslLabel()}`}.</li>
         </ol>
-        ${aspCalls(a, ['casa'])}
-        <button type="button" class="btn primary" data-go="letter">✍️ Scriviamo la lettera insieme</button>
+        ${senzaUffici(a, () => `${aspCalls(a, ['casa'])}
+        <button type="button" class="btn primary" data-go="letter">✍️ Scriviamo la lettera insieme</button>`)}
         ${disclaimer(rules.last_verified)}`,
     };
   },
@@ -203,10 +203,10 @@ const screens = {
         <ol class="big-steps">
           <li><strong>Chiama il PUA del distretto</strong> e chiedi a che punto è la richiesta. Se non sai il numero, chiama l'${aslLabel()} e chiedi del PUA del tuo comune.</li>
           <li><strong>Chiedi al medico di famiglia</strong> di sollecitare anche lui: la sua telefonata pesa.</li>
-          ${late ? `<li><strong>Manda un sollecito scritto</strong> al distretto e all'URP dell'${aslLabel()} di ${esc(a.province)}. Lo scriviamo insieme.</li>` : ''}
+          ${late ? `<li><strong>Manda un sollecito scritto</strong> al distretto e all'URP dell'${aslLabel()}${a ? ` di ${esc(a.province)}. Lo scriviamo insieme` : ''}.</li>` : ''}
         </ol>
-        ${aspCalls(a, ['casa'])}
-        ${late ? '<button type="button" class="btn primary" data-go="letter">✍️ Scriviamo il sollecito insieme</button>' : ''}
+        ${senzaUffici(a, () => `${aspCalls(a, ['casa'])}
+        ${late ? '<button type="button" class="btn primary" data-go="letter">✍️ Scriviamo il sollecito insieme</button>' : ''}`)}
         ${disclaimer(rules.last_verified)}`,
     };
   },
@@ -293,6 +293,7 @@ let flow;
   try { [rules, data] = await Promise.all([loadJSON(`${ROOT}data/rules-domiciliare.json`), loadRegional(ROOT, 'asl')]); } catch {
     app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>'; return;
   }
-  flow = createFlow({ app, screens, state, sources, person });
+  // Passi e giorni del sollecito non dipendono dalla regione: senza i suoi dati si salta la provincia (vedi js/flow.js).
+  flow = createFlow({ app, screens, state, sources, person, next: 'stage' });
   flow.render();
 })();
