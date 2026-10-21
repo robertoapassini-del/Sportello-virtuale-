@@ -221,7 +221,7 @@ main.guida h2 { margin-top: 28px; }
 .btn.share-wa, .btn.share-wa:hover { background: #0b6b3a; color: #fff; border-bottom-color: #063d21; }
 .btn.share-wa:hover .txt, .btn.share-wa:hover { text-decoration: underline; }
 .js-inline { display: none !important; }
-.js .js-inline { display: inline-flex !important; }
+.pronto .js-inline { display: inline-flex !important; }
 .print-url { display: none; }
 
 /* Print only the letter ("Scarica PDF" = browser print → Salva come PDF). */
@@ -288,7 +288,9 @@ button.btn.choice { width: 100%; }
 /* Testata: logo e ricerca sopra, le 4 aree sotto (2×2 sul telefono, in fila sul computer). */
 .site-header { background: var(--header); color: #fff; }
 .header-top { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; padding-top: 12px; padding-bottom: 12px; }
-.site-header a.brand { display: inline-flex; align-items: center; gap: 10px; color: #fff; font-weight: 800; font-size: 1.25rem; letter-spacing: -0.01em; text-decoration: none; white-space: nowrap; }
+.site-header a.brand { display: inline-flex; align-items: center; gap: 10px; color: #fff; font-weight: 800; font-size: 1.25rem; letter-spacing: -0.01em; text-decoration: none; white-space: nowrap; max-width: 100%; }
+/* Con i caratteri molto grandi il nome va a capo invece di uscire dallo schermo. */
+@media (max-width: 400px) { .site-header a.brand { white-space: normal; } }
 .site-header a.brand:hover > span { text-decoration: underline; }
 .brand-mark { width: 40px; height: 40px; flex: none; }
 .brand-tag { display: inline-block; margin-left: 4px; padding: 0 8px; border-radius: 4px; background: rgba(255, 255, 255, 0.16); font-size: 0.75rem; font-weight: 700; vertical-align: 2px; }
@@ -394,9 +396,14 @@ table.fields th, table.fields td { border-bottom-color: var(--border); }
 .home-about { margin-top: 24px; }
 /* Senza JavaScript si vede il contenuto scritto nella pagina (titolo, descrizione,
    elenco dei moduli); con JavaScript solo «Un momento…» finché la pagina è pronta. */
+/* «pronto» la mette js/common.js quando parte: se lo script non parte (file non arrivato, browser vecchio,
+   blocco della pubblicità) resta il contenuto scritto nella pagina, non un «Un momento…» per sempre.
+   «errore-js»: un modulo non è riuscito a caricare i dati e rimostra il contenuto scritto. */
 .js-only { display: none; }
-.js .js-only { display: block; }
-.js .static-fallback { display: none; }
+.pronto .js-only { display: block; }
+.pronto .static-fallback { display: none; }
+.errore-js .static-fallback { display: block !important; }
+.errore-js .js-only { display: none !important; }
 /* Finché js/common.js non ha messo le icone disegnate e la banda colorata, la pagina non si vede:
    altrimenti per un attimo comparirebbero le emoji e la pagina senza banda. Se lo script non parte,
    dopo 1,5 secondi si vede comunque (animazione). common.js aggiunge la classe «pronto». */
