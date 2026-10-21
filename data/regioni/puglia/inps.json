@@ -1,0 +1,94 @@
+{
+ "region": "Puglia",
+ "last_verified": "2026-10-21",
+ "note": "Indirizzi e PEC delle sedi INPS dalle pagine «sedi» di inps.it, copiate il 21/10/2026 dal server in Italia. Per andare allo sportello si prenota (MyINPS, app, 803 164 / 06 164164). regime (riforma della disabilità) da verificare: finché è null il modulo invalidità non va attivato per questa regione.",
+ "sources": [
+  {
+   "label": "INPS – sedi e contatti in Puglia",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.090000.090000-elencoStruttureInps.html"
+  }
+ ],
+ "provinces": [
+  {
+   "id": "barletta-andria-trani",
+   "name": "Andria",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.andria@postacert.inps.gov.it",
+   "address": "Via Guido Rossa 12, Andria",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.090100.090100-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "bari",
+   "name": "Bari",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.bari@postacert.inps.gov.it",
+   "address": "Lungomare Nazario Sauro 41, Bari",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.090000.090000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "brindisi",
+   "name": "Brindisi",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.brindisi@postacert.inps.gov.it",
+   "address": "Piazza Della Vittoria 1, Brindisi",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.160000.160000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "foggia",
+   "name": "Foggia",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.foggia@postacert.inps.gov.it",
+   "address": "Via Della Repubblica 18, Foggia",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.310000.310000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "lecce",
+   "name": "Lecce",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.lecce@postacert.inps.gov.it",
+   "address": "Viale Marche 12, Lecce",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.410000.410000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "taranto",
+   "name": "Taranto",
+   "regime": null,
+   "regime_since": null,
+   "pec": "direzione.provinciale.taranto@postacert.inps.gov.it",
+   "address": "Via Golfo Di Taranto 7D, Taranto",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.780000.780000-elencoStruttureInps.html",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "pec_verified": true
+  }
+ ],
+ "todo": [
+  "Riforma della disabilità: verificare quali province sono nella sperimentazione e da quando (campo regime)."
+ ]
+}

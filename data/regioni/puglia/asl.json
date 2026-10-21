@@ -1,0 +1,788 @@
+{
+ "region": "Puglia",
+ "model": "ASL",
+ "_note": "Numeri delle ASL della Puglia per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili. Il 116117 è autorizzato (agosto 2026) ma non risulta ancora attivo: restano i numeri locali di guardia medica.",
+ "asl": [
+  {
+   "id": "bari",
+   "name": "ASL Bari",
+   "province": "Bari",
+   "site_url": "https://www.sanita.puglia.it/web/asl-bari",
+   "official_domains": [
+    "sanita.puglia.it",
+    "regione.puglia.it",
+    "asl.bari.it"
+   ],
+   "guardia_medica_url": "https://www.sanita.puglia.it/en/web/asl-bari/continuita-assistenziale",
+   "pua_url": "https://www.sanita.puglia.it/en/web/asl-bari/-/porta-unica-di-accesso-p-u-a-",
+   "emails": [
+    "urp@asl.bari.it",
+    "info@asl.bari.it",
+    "servizio.cup@asl.bari.it"
+   ],
+   "pec": "protocollo.asl.bari@pec.rupar.puglia.it",
+   "phones": [
+    {
+     "label": "Numero verde URP della ASL Bari: informazioni per i cittadini",
+     "number": "800 019467",
+     "hours": "Dal lunedì al venerdì 8–14, martedì anche 15–18",
+     "url": "https://www.sanita.puglia.it/en/web/asl-bari/urp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP della ASL Bari: prenotare visite ed esami (numero verde)",
+     "number": "800 345477",
+     "hours": "Dal lunedì al venerdì 8–18.30, sabato 8–13",
+     "url": "https://www.sanita.puglia.it/en/web/asl-bari/modalita-di-prenotazione",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "ASL Bari: disdire una prenotazione",
+     "number": "080 5842998",
+     "hours": "Tutti i giorni, 24 ore su 24",
+     "url": "https://www.sanita.puglia.it/en/web/asl-bari/modalita-di-disdetta",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP della ASL Bari: ufficio per i cittadini, reclami (numero verde)",
+     "number": "800 019467",
+     "hours": "Dal lunedì al venerdì 8–14, martedì anche 15–18",
+     "address": "Lungomare Starita 6, 70132 Bari",
+     "url": "https://www.sanita.puglia.it/en/web/asl-bari/urp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP della ASL Bari: ufficio per i cittadini, reclami",
+     "number": "080 5844091",
+     "address": "Lungomare Starita 6, 70132 Bari",
+     "url": "https://www.sanita.puglia.it/en/web/asl-bari/urp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening oncologici della ASL Bari (numero verde)",
+     "number": "800 957773",
+     "url": "https://www.sanita.puglia.it/en/web/asl-bari",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA di Bari città: domande per assistenza a casa e servizi socio-sanitari (front office)",
+     "number": "080 5842057",
+     "hours": "Dal lunedì al venerdì 12–13",
+     "address": "Via Caduti di Via Fani 25 – Via Giulio Petroni 47, Bari",
+     "url": "https://www.sanita.puglia.it/en/web/asl-bari/-/porta-unica-di-accesso-p-u-a-",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari della ASL Bari, Bari città (segreteria)",
+     "number": "080 5842046",
+     "hours": "Dal lunedì al venerdì 9–12",
+     "address": "Via Federico Vecchio 3, Bari",
+     "url": "https://www.sanita.puglia.it/web/asl-bari/-/u-o-cure-domiciliari",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "ADI e ADP della ASL Bari, Distretto di Altamura",
+     "number": "080 5848152",
+     "hours": "Dal lunedì al venerdì 8–14, martedì anche 15–18",
+     "address": "Viale Regina Margherita 67, 70022 Altamura",
+     "url": "https://www.sanita.puglia.it/en/web/asl-bari/-/assistenza-domiciliare-integrata-adi-e-programmata-adp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASL Bari – Home (numeri utili)",
+     "url": "https://www.sanita.puglia.it/en/web/asl-bari"
+    },
+    {
+     "label": "ASL Bari – Modalità di prenotazione",
+     "url": "https://www.sanita.puglia.it/en/web/asl-bari/modalita-di-prenotazione"
+    },
+    {
+     "label": "ASL Bari – Modalità di disdetta",
+     "url": "https://www.sanita.puglia.it/en/web/asl-bari/modalita-di-disdetta"
+    },
+    {
+     "label": "ASL Bari – URP",
+     "url": "https://www.sanita.puglia.it/en/web/asl-bari/urp"
+    },
+    {
+     "label": "ASL Bari – Porta Unica di Accesso",
+     "url": "https://www.sanita.puglia.it/en/web/asl-bari/-/porta-unica-di-accesso-p-u-a-"
+    },
+    {
+     "label": "ASL Bari – U.O. Cure Domiciliari",
+     "url": "https://www.sanita.puglia.it/web/asl-bari/-/u-o-cure-domiciliari"
+    },
+    {
+     "label": "ASL Bari – ADI e ADP Altamura",
+     "url": "https://www.sanita.puglia.it/en/web/asl-bari/-/assistenza-domiciliare-integrata-adi-e-programmata-adp"
+    },
+    {
+     "label": "Regione Puglia – 116117 autorizzato (07/08/2026)",
+     "url": "https://press.regione.puglia.it/-/in-puglia-sar%C3%A0-attivato-il-116117-il-nuovo-numero-da-chiamare-per-l-assistenza-territoriale.-dal-ministero-%C3%A8-giunta-l-autorizzazione"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "116117: la Regione Puglia (comunicato del 07/08/2026, press.regione.puglia.it) dice che il Ministero ha autorizzato il 5 agosto 2026 l’attivazione SPERIMENTALE del 116117; nella prima fase, «prevista in autunno», sostituirà i vecchi numeri della guardia medica, con tre centrali operative nelle ASL di Lecce, Bari e Foggia. Nessuna pagina copiata (fino al 21/10/2026) dice che sia già attivo: le ASL (es. Taranto, notizia del 20/10/2026) danno ancora i numeri locali. Quindi qui restano i numeri locali delle guardie mediche; da ricontrollare appena la Regione annuncia l’attivazione, e allora togliere i numeri locali.",
+    "Guardia medica ASL Bari: la pagina «Continuità assistenziale» spiega orari e servizio ma non dà numeri delle sedi (c’è solo un manifesto in allegato, non copiato). Nessun numero di guardia medica messo.",
+    "Centralino ASL Bari: non trovato nelle pagine copiate. In «phones» c’è il numero verde URP.",
+    "PUA e cure domiciliari: ci sono solo Bari città e il Distretto di Altamura; mancano gli altri distretti della provincia.",
+    "Non usata la pagina «Ufficio relazioni con il pubblico» di Amministrazione trasparente (solo menu, nessun numero)."
+   ]
+  },
+  {
+   "id": "barletta-andria-trani",
+   "name": "ASL Barletta-Andria-Trani (ASL BT)",
+   "province": "Barletta-Andria-Trani",
+   "site_url": "https://www.sanita.puglia.it/web/asl-barletta-andria-trani",
+   "official_domains": [
+    "sanita.puglia.it",
+    "regione.puglia.it",
+    "aslbat.it"
+   ],
+   "guardia_medica_url": "https://www.sanita.puglia.it/en/web/asl-barletta-andria-trani/-/servizio-di-continuita-assistenziale-ex-guardia-medica-",
+   "pua_url": "https://www.sanita.puglia.it/en/web/asl-barletta-andria-trani/cure-domiciliari-adi",
+   "emails": [
+    "urp@aslbat.it"
+   ],
+   "pec": "protocollo.aslbat@pec.rupar.puglia.it",
+   "phones": [
+    {
+     "label": "Numero verde URP della ASL BT: informazioni per i cittadini",
+     "number": "800 184977",
+     "hours": "Dal lunedì al venerdì 8.30–13.30, martedì e giovedì anche 15–17.30",
+     "url": "https://www.sanita.puglia.it/en/web/asl-barletta-andria-trani/ufficio-relazioni-con-il-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP della ASL BT: prenotare visite ed esami (numero verde)",
+     "number": "800 550177",
+     "hours": "Dal lunedì al sabato 8–20",
+     "url": "https://www.sanita.puglia.it/en/web/asl-barletta-andria-trani/-/numero-verde-cup",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP della ASL BT: ufficio per i cittadini, reclami (numero verde)",
+     "number": "800 184977",
+     "hours": "Dal lunedì al venerdì 8.30–13.30, martedì e giovedì anche 15–17.30",
+     "address": "Viale Ippocrate 15, 76121 Barletta",
+     "url": "https://www.sanita.puglia.it/en/web/asl-barletta-andria-trani/ufficio-relazioni-con-il-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening oncologici della ASL BT (numero verde)",
+     "number": "800 957773",
+     "url": "https://www.sanita.puglia.it/en/web/asl-barletta-andria-trani",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica della ASL BT, sede di via Vittore Carpaccio (Andria)",
+     "number": "0883 299200",
+     "hours": "Notte 20–8; prefestivi 10–20; festivi 8–20",
+     "address": "Via Vittore Carpaccio",
+     "url": "https://www.sanita.puglia.it/en/web/asl-barletta-andria-trani/-/servizio-di-continuita-assistenziale-ex-guardia-medica-",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "ADI (assistenza domiciliare) della ASL BT, Distretto 1 – Trinitapoli",
+     "number": "0883 577443",
+     "hours": "Dal lunedì al venerdì 9–12, martedì e giovedì anche 15.30–17",
+     "address": "Via Mandriglia 1, Trinitapoli",
+     "url": "https://www.sanita.puglia.it/en/web/asl-barletta-andria-trani/-/assistenza-domiciliare-integrata",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASL BT – Home (numeri utili)",
+     "url": "https://www.sanita.puglia.it/en/web/asl-barletta-andria-trani"
+    },
+    {
+     "label": "ASL BT – Numero Verde CUP",
+     "url": "https://www.sanita.puglia.it/en/web/asl-barletta-andria-trani/-/numero-verde-cup"
+    },
+    {
+     "label": "ASL BT – URP",
+     "url": "https://www.sanita.puglia.it/en/web/asl-barletta-andria-trani/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "label": "ASL BT – Continuità assistenziale (ex Guardia Medica)",
+     "url": "https://www.sanita.puglia.it/en/web/asl-barletta-andria-trani/-/servizio-di-continuita-assistenziale-ex-guardia-medica-"
+    },
+    {
+     "label": "ASL BT – Cure domiciliari ADI",
+     "url": "https://www.sanita.puglia.it/en/web/asl-barletta-andria-trani/cure-domiciliari-adi"
+    },
+    {
+     "label": "ASL BT – ADI Trinitapoli",
+     "url": "https://www.sanita.puglia.it/en/web/asl-barletta-andria-trani/-/assistenza-domiciliare-integrata"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "Guardia medica ASL BT: la pagina dà una sola sede (via Vittore Carpaccio, senza città) con «0883.299.200/821»; ho messo 0883 299200. Che sia Andria lo deduco dalla pagina ADI (RSA di via Vittore Carpaccio, Andria): da confermare. Mancano le altre sedi della provincia. Vedi il todo sul 116117 nella voce Bari.",
+    "Centralino ASL BT: non trovato nelle pagine copiate. In «phones» c’è il numero verde URP.",
+    "Cure domiciliari: la pagina elenca gli uffici dei distretti (Andria, Barletta, Bisceglie, Canosa, ecc.) senza telefoni; c’è il numero solo per l’ADI del Distretto 1 (Trinitapoli)."
+   ]
+  },
+  {
+   "id": "brindisi",
+   "name": "ASL Brindisi",
+   "province": "Brindisi",
+   "site_url": "https://www.sanita.puglia.it/web/asl-brindisi",
+   "official_domains": [
+    "sanita.puglia.it",
+    "regione.puglia.it",
+    "asl.brindisi.it"
+   ],
+   "pua_url": "https://www.sanita.puglia.it/en/web/asl-brindisi/porta-unica-di-accesso-pua",
+   "emails": [
+    "info@asl.brindisi.it",
+    "protocollo@asl.brindisi.it"
+   ],
+   "pec": "protocollo.asl.brindisi@pec.rupar.puglia.it",
+   "phones": [
+    {
+     "label": "Centralino ASL Brindisi",
+     "number": "0831 536111",
+     "address": "Via Napoli 8, 72100 Brindisi",
+     "url": "https://www.sanita.puglia.it/en/web/asl-brindisi/telefono-e-posta-elettronica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP della ASL Brindisi: prenotare, spostare o disdire visite ed esami (numero verde, solo da telefono fisso)",
+     "number": "800 888388",
+     "hours": "Dal lunedì al venerdì 8–19",
+     "url": "https://www.sanita.puglia.it/en/web/asl-brindisi/modalita-di-prenotazione",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP della ASL Brindisi: prenotare visite ed esami (da cellulare e da fisso)",
+     "number": "080 9181603",
+     "hours": "Dal lunedì al venerdì 8–19",
+     "url": "https://www.sanita.puglia.it/en/web/asl-brindisi/modalita-di-prenotazione",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP della ASL Brindisi: ufficio per i cittadini, reclami (numero verde)",
+     "number": "800 295691",
+     "hours": "Dal lunedì al venerdì 8.30–13.30; si riceve solo su appuntamento",
+     "address": "Via Napoli 8, 72100 Brindisi",
+     "url": "https://www.sanita.puglia.it/en/web/asl-brindisi/ufficio-relazioni-con-il-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP della ASL Brindisi: ufficio per i cittadini",
+     "number": "0831 536668",
+     "address": "Via Napoli 8, 72100 Brindisi",
+     "url": "https://www.sanita.puglia.it/en/web/asl-brindisi/ufficio-relazioni-con-il-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening oncologici della ASL Brindisi",
+     "number": "080 2442901",
+     "url": "https://www.sanita.puglia.it/en/web/asl-brindisi",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASL Brindisi – Home (numeri utili)",
+     "url": "https://www.sanita.puglia.it/en/web/asl-brindisi"
+    },
+    {
+     "label": "ASL Brindisi – Telefono e posta elettronica",
+     "url": "https://www.sanita.puglia.it/en/web/asl-brindisi/telefono-e-posta-elettronica"
+    },
+    {
+     "label": "ASL Brindisi – Modalità di prenotazione",
+     "url": "https://www.sanita.puglia.it/en/web/asl-brindisi/modalita-di-prenotazione"
+    },
+    {
+     "label": "ASL Brindisi – URP",
+     "url": "https://www.sanita.puglia.it/en/web/asl-brindisi/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "label": "ASL Brindisi – Porta Unica di Accesso",
+     "url": "https://www.sanita.puglia.it/en/web/asl-brindisi/porta-unica-di-accesso-pua"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "Guardia medica ASL Brindisi: nessuna pagina copiata con le sedi e i numeri. Manca (vedi il todo sul 116117 nella voce Bari).",
+    "PUA / cure domiciliari: la pagina PUA elenca i 4 distretti (Brindisi, Fasano, Francavilla Fontana, Mesagne) senza numeri; la pagina ADI dice «in fase di aggiornamento». Nessun numero «casa».",
+    "Screening: sulla home il numero è 080 2442901 (prefisso di Bari): copiato così, da ricontrollare."
+   ]
+  },
+  {
+   "id": "foggia",
+   "name": "ASL Foggia",
+   "province": "Foggia",
+   "site_url": "https://www.sanita.puglia.it/web/asl-foggia",
+   "official_domains": [
+    "sanita.puglia.it",
+    "regione.puglia.it",
+    "aslfg.it"
+   ],
+   "guardia_medica_url": "https://www.sanita.puglia.it/en/web/asl-foggia/continuita-assistenziale",
+   "pua_url": "https://www.sanita.puglia.it/en/web/asl-foggia/-/ufficio-assistenza-domiciliare",
+   "emails": [
+    "prenota@aslfg.it"
+   ],
+   "pec": "direttoregenerale@mailcert.aslfg.it",
+   "phones": [
+    {
+     "label": "Numero verde URP della ASL Foggia: informazioni per i cittadini",
+     "number": "800 014512",
+     "hours": "Dal lunedì al venerdì 9–12",
+     "url": "https://www.sanita.puglia.it/web/asl-foggia/ufficio-relazioni-con-il-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "Contact center CUP della ASL Foggia: prenotare visite ed esami (numero verde, da telefono fisso)",
+     "number": "800 466222",
+     "hours": "Dal lunedì al venerdì 8.15–17.45, sabato 8.15–11.45",
+     "url": "https://www.sanita.puglia.it/en/web/asl-foggia/modalita-di-prenotazione",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Contact center CUP della ASL Foggia: prenotare visite ed esami (da cellulare)",
+     "number": "0881 316820",
+     "hours": "Dal lunedì al venerdì 8.15–17.45, sabato 8.15–11.45",
+     "url": "https://www.sanita.puglia.it/en/web/asl-foggia/modalita-di-prenotazione",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP della ASL Foggia: ufficio per i cittadini, reclami (numero verde; punti a Foggia, Manfredonia, San Severo)",
+     "number": "800 014512",
+     "hours": "Dal lunedì al venerdì 9–12",
+     "address": "Piazza Libertà 1, 71121 Foggia",
+     "url": "https://www.sanita.puglia.it/web/asl-foggia/ufficio-relazioni-con-il-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Ufficio Assistenza Domiciliare della ASL Foggia (ADI)",
+     "number": "0881 884529",
+     "address": "Piazza Libertà 1, 71121 Foggia",
+     "url": "https://www.sanita.puglia.it/en/web/asl-foggia/-/ufficio-assistenza-domiciliare",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASL Foggia – Modalità di prenotazione",
+     "url": "https://www.sanita.puglia.it/en/web/asl-foggia/modalita-di-prenotazione"
+    },
+    {
+     "label": "ASL Foggia – URP",
+     "url": "https://www.sanita.puglia.it/web/asl-foggia/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "label": "ASL Foggia – Ufficio Assistenza Domiciliare",
+     "url": "https://www.sanita.puglia.it/en/web/asl-foggia/-/ufficio-assistenza-domiciliare"
+    },
+    {
+     "label": "ASL Foggia – Altri contatti (PEC)",
+     "url": "https://www.sanita.puglia.it/en/web/asl-foggia/altri-contatti"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "Guardia medica ASL Foggia: la pagina «Continuità assistenziale» non dà sedi né numeri. Manca (vedi il todo sul 116117 nella voce Bari).",
+    "Centralino ASL Foggia: non trovato (la pagina «Altri contatti» ha solo PEC ed email). In «phones» c’è il numero verde URP.",
+    "Screening ASL Foggia: nessun numero nelle pagine copiate (home non copiata)."
+   ]
+  },
+  {
+   "id": "lecce",
+   "name": "ASL Lecce",
+   "province": "Lecce",
+   "site_url": "https://www.sanita.puglia.it/web/asl-lecce",
+   "official_domains": [
+    "sanita.puglia.it",
+    "regione.puglia.it",
+    "asl.lecce.it"
+   ],
+   "guardia_medica_url": "https://www.sanita.puglia.it/en/web/asl-lecce/continuita-assistenziale",
+   "pua_url": "https://www.sanita.puglia.it/en/web/asl-lecce/-/p-u-a-porta-unica-di-accesso-",
+   "emails": [
+    "urp@asl.lecce.it",
+    "segreteria.urp@asl.lecce.it"
+   ],
+   "pec": "protocollo@pec.asl.lecce.it",
+   "phones": [
+    {
+     "label": "Centralino ASL Lecce",
+     "number": "0832 215111",
+     "url": "https://sist.sanita.puglia.it/en/web/asl-lecce",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP telefonico della ASL Lecce: prenotare visite ed esami",
+     "number": "0832 1979911",
+     "hours": "Dal lunedì al venerdì 8.15–13.45, martedì e giovedì anche 15.15–17.45",
+     "url": "https://www.sanita.puglia.it/en/web/asl-lecce/modalita-di-prenotazione",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP senologico della ASL Lecce: solo visite ed esami al seno con ricetta SSN (numero verde)",
+     "number": "800 426060",
+     "hours": "Dal lunedì al venerdì 8.15–13.45 e 15.15–17.45",
+     "url": "https://www.sanita.puglia.it/en/web/asl-lecce/modalita-di-prenotazione",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP della ASL Lecce: ufficio per i cittadini, reclami",
+     "number": "0832 215701",
+     "hours": "Al telefono dal lunedì al venerdì 10–12",
+     "address": "Via Miglietta 5, 73100 Lecce",
+     "url": "https://www.sanita.puglia.it/en/web/asl-lecce/ufficio-relazioni-con-il-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Centro screening della ASL Lecce (numero verde)",
+     "number": "800 957773",
+     "url": "https://sist.sanita.puglia.it/en/web/asl-lecce",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA del Distretto di Casarano (ASL Lecce): assistenza a casa e servizi per persone fragili",
+     "number": "0833 508503",
+     "hours": "Lunedì e giovedì 8.30–12.30; martedì 8.30–12.30 e 15.30–17.30",
+     "address": "Via Spagna 51/bis, 73042 Casarano",
+     "url": "https://www.sanita.puglia.it/en/web/asl-lecce/-/p-u-a-porta-unica-di-accesso-",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "ADI del Distretto di Poggiardo (ASL Lecce): assistenza domiciliare",
+     "number": "0836 908372",
+     "hours": "Telefonate dal lunedì al venerdì 8.30–11",
+     "address": "Via F. Pispico, Poggiardo (ex Ospedale)",
+     "url": "https://www.sanita.puglia.it/en/web/asl-lecce/-/a-d-i-assistenza-domiciliare-integrata-",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica di Alezio (ASL Lecce)",
+     "number": "0833 281691",
+     "hours": "Giorni feriali 20–8; sabato e domenica sempre attiva fino alle 8 del lunedì; altre festività dalle 10 del giorno prima fino alle 8 del primo giorno non festivo",
+     "address": "Via Dante Alighieri, 73011 Alezio",
+     "url": "https://sist.sanita.puglia.it/en/web/asl-lecce/continuita-assistenziale",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica di Campi Salentina (ASL Lecce)",
+     "number": "0832 790217",
+     "hours": "Giorni feriali 20–8; sabato e domenica sempre attiva fino alle 8 del lunedì; altre festività dalle 10 del giorno prima fino alle 8 del primo giorno non festivo",
+     "address": "Via San Donaci, Campi Salentina",
+     "url": "https://sist.sanita.puglia.it/en/web/asl-lecce/continuita-assistenziale",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica di Carmiano (ASL Lecce)",
+     "number": "0832 606452",
+     "hours": "Giorni feriali 20–8; sabato e domenica sempre attiva fino alle 8 del lunedì; altre festività dalle 10 del giorno prima fino alle 8 del primo giorno non festivo",
+     "address": "Piazza Principe di Napoli 5, 73041 Carmiano",
+     "url": "https://sist.sanita.puglia.it/en/web/asl-lecce/continuita-assistenziale",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica di Collepasso (ASL Lecce)",
+     "number": "0833 345655",
+     "hours": "Giorni feriali 20–8; sabato e domenica sempre attiva fino alle 8 del lunedì; altre festività dalle 10 del giorno prima fino alle 8 del primo giorno non festivo",
+     "address": "Via Masaniello 119, Collepasso",
+     "url": "https://sist.sanita.puglia.it/en/web/asl-lecce/continuita-assistenziale",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica di Copertino (ASL Lecce)",
+     "number": "0832 932551",
+     "hours": "Dal lunedì al venerdì 20–8; sabato e prefestivi dalle 10 alle 8 del giorno dopo; domenica e festivi dalle 8 alle 8 del giorno dopo",
+     "address": "c/o Ospedale «S. Giuseppe da Copertino», Via Carmiano, 73043 Copertino",
+     "url": "https://sist.sanita.puglia.it/en/web/asl-lecce/continuita-assistenziale",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASL Lecce – Modalità di prenotazione",
+     "url": "https://www.sanita.puglia.it/en/web/asl-lecce/modalita-di-prenotazione"
+    },
+    {
+     "label": "ASL Lecce – URP",
+     "url": "https://www.sanita.puglia.it/en/web/asl-lecce/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "label": "ASL Lecce – PUA Casarano",
+     "url": "https://www.sanita.puglia.it/en/web/asl-lecce/-/p-u-a-porta-unica-di-accesso-"
+    },
+    {
+     "label": "ASL Lecce – ADI Poggiardo",
+     "url": "https://www.sanita.puglia.it/en/web/asl-lecce/-/a-d-i-assistenza-domiciliare-integrata-"
+    },
+    {
+     "label": "ASL Lecce (vecchio portale sist) – Home",
+     "url": "https://sist.sanita.puglia.it/en/web/asl-lecce"
+    },
+    {
+     "label": "ASL Lecce (vecchio portale sist) – Continuità assistenziale",
+     "url": "https://sist.sanita.puglia.it/en/web/asl-lecce/continuita-assistenziale"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "Guardia medica ASL Lecce: le sedi con numero sono solo sul vecchio portale sist.sanita.puglia.it, e la copia ha solo la pagina 1 di 4 (comuni dalla A alla G, manca Lecce città). Ho messo solo le sedi aggiornate dal 2023 in poi (Alezio, Campi Salentina, Carmiano, Collepasso, Copertino); le altre della pagina (Alessano, Andrano, Aradeo, Arnesano, Bagnolo, Botrugno, Calimera, Casarano, Castrignano del Capo, Castro, Corigliano, Corsano, Cutrofiano, Gagliano, Galatina) hanno aggiornamenti dal 2016 al 2021 e non le ho usate. Vedi anche il todo sul 116117 nella voce Bari: Lecce sarà una delle tre centrali.",
+    "Centralino e numero verde screening presi dalla home del vecchio portale sist (notizie fino al 2025): da riconfermare sul portale nuovo (la pagina «Altri contatti» del portale nuovo risponde 404).",
+    "PUA e ADI: ci sono solo il Distretto di Casarano (PUA) e di Poggiardo (ADI); mancano gli altri distretti."
+   ]
+  },
+  {
+   "id": "taranto",
+   "name": "ASL Taranto",
+   "province": "Taranto",
+   "site_url": "https://www.sanita.puglia.it/web/asl-taranto",
+   "official_domains": [
+    "sanita.puglia.it",
+    "regione.puglia.it",
+    "asl.taranto.it"
+   ],
+   "guardia_medica_url": "https://www.sanita.puglia.it/en/web/asl-taranto/continuita-assistenziale",
+   "pua_url": "https://www.sanita.puglia.it/en/web/asl-taranto/-/porta-unica-di-accesso-p-u-a-",
+   "emails": [
+    "urp@asl.taranto.it"
+   ],
+   "pec": "urp.asl.taranto@pec.rupar.puglia.it",
+   "phones": [
+    {
+     "label": "Numero verde URP della ASL Taranto: informazioni per i cittadini",
+     "number": "800 529657",
+     "hours": "Dal lunedì al venerdì 9–13",
+     "url": "https://www.sanita.puglia.it/en/web/asl-taranto/ufficio-relazioni-con-il-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP della ASL Taranto: prenotare visite, esami e analisi (numero verde, da telefono fisso)",
+     "number": "800 252236",
+     "hours": "Dal lunedì al venerdì 8–14",
+     "url": "https://www.sanita.puglia.it/en/web/asl-taranto/modalita-di-prenotazione",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP della ASL Taranto: prenotare visite, esami e analisi (da cellulare)",
+     "number": "099 7786444",
+     "hours": "Dal lunedì al venerdì 8–14",
+     "url": "https://www.sanita.puglia.it/en/web/asl-taranto/modalita-di-prenotazione",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP della ASL Taranto: ufficio per i cittadini, reclami (numero verde)",
+     "number": "800 529657",
+     "hours": "Dal lunedì al venerdì 9–13",
+     "address": "Viale Virgilio 31, 74121 Taranto",
+     "url": "https://www.sanita.puglia.it/en/web/asl-taranto/ufficio-relazioni-con-il-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening oncologici della ASL Taranto (numero verde)",
+     "number": "800 957773",
+     "url": "https://www.sanita.puglia.it/en/web/asl-taranto",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA della ASL Taranto, Distretto Unico di Taranto: assistenza a casa (ADI) e servizi socio-sanitari",
+     "number": "099 7786942",
+     "hours": "Lunedì, mercoledì, giovedì e venerdì 9–12.30; martedì 15–16.30",
+     "address": "Via Ancona angolo via Scotti, 74121 Taranto",
+     "url": "https://www.sanita.puglia.it/en/web/asl-taranto/-/porta-unica-di-accesso-p-u-a-",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "ADI della ASL Taranto, Distretto Unico di Taranto: assistenza domiciliare",
+     "number": "099 7786983",
+     "hours": "Lunedì, mercoledì e venerdì 9–12; martedì 15–17",
+     "address": "Via Ancona angolo via Scotti 1, 74121 Taranto",
+     "url": "https://www.sanita.puglia.it/en/web/asl-taranto/-/a-d-i-assistenza-domiciliare-integrata-1",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica di San Giorgio Ionico (ASL Taranto)",
+     "number": "099 5926773",
+     "address": "Via Quasimodo (Casa della Comunità, ingresso accanto al 118), San Giorgio Ionico",
+     "url": "https://www.sanita.puglia.it/en/web/asl-taranto/-/san-giorgio-ionico-trasferimento-sede-del-servizio-di-continuita-assistenziale",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica di Lizzano (ASL Taranto)",
+     "number": "099 9552688",
+     "address": "Poliambulatorio, Via Mazzola 2, Lizzano",
+     "url": "https://www.sanita.puglia.it/en/web/asl-taranto/-/lizzano-trasferimento-sede-del-servizio-di-continuita-assistenziale",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica di Manduria (ASL Taranto)",
+     "number": "099 9712365",
+     "address": "Via Mandonion, c/o Presidio Ospedaliero, Manduria",
+     "url": "https://www.sanita.puglia.it/en/web/asl-taranto/-/continuita-assistenziale-comunicazione-chiusura-sede-di-c-a-di-sava",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica di Maruggio (ASL Taranto)",
+     "number": "099 675458",
+     "address": "Piazza Guglielmo Marconi 16, Maruggio",
+     "url": "https://www.sanita.puglia.it/en/web/asl-taranto/-/continuita-assistenziale-comunicazione-chiusura-sede-di-c-a-di-sava",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASL Taranto – Home (numeri utili)",
+     "url": "https://www.sanita.puglia.it/en/web/asl-taranto"
+    },
+    {
+     "label": "ASL Taranto – Modalità di prenotazione",
+     "url": "https://www.sanita.puglia.it/en/web/asl-taranto/modalita-di-prenotazione"
+    },
+    {
+     "label": "ASL Taranto – URP",
+     "url": "https://www.sanita.puglia.it/en/web/asl-taranto/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "label": "ASL Taranto – Continuità assistenziale",
+     "url": "https://www.sanita.puglia.it/en/web/asl-taranto/continuita-assistenziale"
+    },
+    {
+     "label": "ASL Taranto – San Giorgio Ionico, nuova sede guardia medica (20/10/2026)",
+     "url": "https://www.sanita.puglia.it/en/web/asl-taranto/-/san-giorgio-ionico-trasferimento-sede-del-servizio-di-continuita-assistenziale"
+    },
+    {
+     "label": "ASL Taranto – Lizzano, nuova sede guardia medica (29/09/2026)",
+     "url": "https://www.sanita.puglia.it/en/web/asl-taranto/-/lizzano-trasferimento-sede-del-servizio-di-continuita-assistenziale"
+    },
+    {
+     "label": "ASL Taranto – Chiusura sede di Sava (02/10/2026)",
+     "url": "https://www.sanita.puglia.it/en/web/asl-taranto/-/continuita-assistenziale-comunicazione-chiusura-sede-di-c-a-di-sava"
+    },
+    {
+     "label": "ASL Taranto – PUA",
+     "url": "https://www.sanita.puglia.it/en/web/asl-taranto/-/porta-unica-di-accesso-p-u-a-"
+    },
+    {
+     "label": "ASL Taranto – ADI",
+     "url": "https://www.sanita.puglia.it/en/web/asl-taranto/-/a-d-i-assistenza-domiciliare-integrata-1"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "Guardia medica ASL Taranto: nessun elenco completo delle sedi; ho messo solo le sedi con numero nelle notizie del 2026 (San Giorgio Ionico, Lizzano, Manduria, Maruggio). Mancano Taranto città e le altre sedi. Vedi il todo sul 116117 nella voce Bari.",
+    "Sava: numero in contraddizione (099/972.74.23 nella notizia del 2024, 099 800444 in quella del 02/10/2026) e sede chiusa a turni per carenza di medici: non messa. Avetrana: «sede al momento priva di medici incaricati», non messa.",
+    "Lizzano: la notizia del 02/10/2026 dà ancora il vecchio indirizzo (Via Bruno Buozzi 8/A); ho usato quello nuovo della notizia del 29/09/2026 (Via Mazzola 2). Il numero è lo stesso.",
+    "Centralino ASL Taranto: non trovato nelle pagine copiate. In «phones» c’è il numero verde URP."
+   ]
+  }
+ ]
+}
