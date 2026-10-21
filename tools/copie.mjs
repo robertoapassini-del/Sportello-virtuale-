@@ -58,6 +58,26 @@ function scarica(url) {
   return r;
 }
 
+// Regioni in preparazione: dalla homepage di ogni azienda si seguono anche i link dello stesso sito
+// che parlano di contatti e servizi, così il server trova da solo le pagine giuste. Mai login,
+// area riservata o prenotazione online; al massimo MAX_SCOPERTE pagine in più per sito.
+const PAROLE = /contatt|urp|relazioni.con.il.pubblico|cup|prenota|guardia.medica|continuit|116.?117|pua|punto.unico|domiciliar|adi\b|numeri.utili|centralino/i;
+const VIETATE = /login|accedi|area.riservata|registrazione|prenota.?online|carrello|\.(pdf|docx?|xlsx?|zip|jpe?g|png)(\?|$)/i;
+const MAX_SCOPERTE = 15;
+function scopri(html, base) {
+  const host = (u) => u.hostname.replace(/^www\./, '');
+  const da = new URL(base);
+  const trovati = new Set();
+  for (const [, href, testo] of html.matchAll(/<a\b[^>]*href="([^"#]+)"[^>]*>([\s\S]*?)<\/a>/gi)) {
+    let u;
+    try { u = new URL(href.replace(/&amp;/g, '&'), base); } catch { continue; }
+    if (!/^https?:$/.test(u.protocol) || host(u) !== host(da) || VIETATE.test(u.href)) continue;
+    if (PAROLE.test(u.pathname) || PAROLE.test(toText(testo))) trovati.add(u.href);
+    if (trovati.size >= MAX_SCOPERTE) break;
+  }
+  return [...trovati];
+}
+
 const regioni = read('data/regioni/index.json');
 let totale = 0; let ok = 0; let cambiate = 0; const problemi = [];
 
@@ -87,6 +107,7 @@ for (const reg of regioni.regioni.filter((r) => fs.existsSync(path.join(SITE, fi
       const r = scarica(url);
       Object.assign(voce, { http: r.http, finale: r.finale && r.finale !== url ? r.finale : undefined, certificato: r.certificato, errore: r.errore });
       if (r.http === 200 && /html/i.test(r.type || '')) {
+        if (!reg.attiva && url === a.site_url) for (const u of scopri(r.body, r.finale || url)) urls.add(u);
         const testo = toText(r.body);
         const titolo = toText((r.body.match(/<title[^>]*>([\s\S]*?)<\/title>/i) || [, ''])[1]).replace(/\s+/g, ' ').trim();
         const nome = `${a.id}/${sha(url).slice(0, 12)}.txt`;
