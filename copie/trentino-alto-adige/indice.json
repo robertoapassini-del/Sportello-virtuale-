@@ -1,6 +1,6 @@
 {
  "regione": "trentino-alto-adige",
- "aggiornato": "2026-10-21T20:21:27.967Z",
+ "aggiornato": "2026-10-21T21:01:48.842Z",
  "pagine": [
   {
    "asl": "bolzano",
@@ -18,23 +18,13 @@
    "asl": "bolzano",
    "url": "https://home.sabes.it/it/prenotazione-me.asp",
    "controllata": "2026-10-21",
-   "http": 200,
-   "file": "bolzano/3eb4ebd291fc.txt",
-   "titolo": "Prenotazione | Azienda Sanitaria dell'Alto Adige",
-   "sha": "05ff7201f7b12e094c1b11e4feebf3363f00d4ab73cdbf1be189792578d66fb8",
-   "caratteri": 9264,
-   "cambiata": false
+   "http": 503
   },
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/servizi.asp",
    "controllata": "2026-10-21",
-   "http": 200,
-   "file": "bolzano/436fa81472bf.txt",
-   "titolo": "Servizi | Azienda Sanitaria dell'Alto Adige",
-   "sha": "1391d906e7a71ff2c37d1866915a13f8a9365fe89fa9486b75ac1658dc9b7bd3",
-   "caratteri": 6993,
-   "cambiata": false
+   "http": 503
   },
   {
    "asl": "trento",
