@@ -18,7 +18,7 @@
     { "id": "sardegna", "name": "Sardegna", "attiva": false, "asl_label": "ASL" },
     { "id": "sicilia", "name": "Sicilia", "attiva": true, "asl_label": "ASP", "asl_label_long": "Azienda sanitaria provinciale", "asl_intestazione": "Azienda Sanitaria Provinciale", "ente": "Regione Siciliana", "files": { "asl": "asp", "inps": "inps" },
       "link": { "fse": "https://www.regione.sicilia.it/fascicolosanitario", "assessorato": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute", "dialisi": "https://regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/dipartimento-pianificazione-strategica/altri-contenuti/albo-trasporto-emodializzati" } },
-    { "id": "toscana", "name": "Toscana", "attiva": false, "asl_label": "ASL" },
+    { "id": "toscana", "name": "Toscana", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili"] },
     { "id": "trentino-alto-adige", "name": "Trentino-Alto Adige", "attiva": false, "asl_label": "Azienda sanitaria" },
     { "id": "umbria", "name": "Umbria", "attiva": false, "asl_label": "USL" },
     { "id": "valle-d-aosta", "name": "Valle d'Aosta", "attiva": false, "asl_label": "USL" },

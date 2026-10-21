@@ -2,6 +2,12 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — Toscana: i numeri utili delle 10 province
+- Nuovo `data/regioni/toscana/asl.json`: 76 numeri delle 3 aziende USL (numeri unici aziendali con i tasti per CUP, URP, screening, scelta del medico; centralini degli ospedali; sportelli URP; PUA dei capoluoghi di Arezzo, Siena e Grosseto). Fonte: pagine ufficiali delle USL e della Regione Toscana copiate dal server in Italia il 21/10/2026; ogni numero ritrovato nella copia della pagina citata (`proof: "pagina"`).
+- Guardia medica: 116117 in tutta la Toscana (pagina della Regione aggiornata al 05/02/2026).
+- Nuovo `data/regioni/toscana/inps.json`: indirizzo e PEC delle 10 sedi INPS. Toscana attiva solo per Numeri utili.
+- Cosa manca (nei `todo`): PUA della Nord Ovest e di Prato e Pistoia.
+
 ## 21/10/2026 — Lazio: i numeri utili delle 5 province
 - Nuovo `data/regioni/lazio/asl.json`: 92 numeri delle ASL (centralini, URP, PUA e cure a casa, CUP e scelta del medico dove ci sono), una voce per provincia (Roma con le 6 ASL). Fonte: pagine ufficiali di ASL e Regione Lazio copiate dal server in Italia il 21/10/2026; ogni numero ritrovato nella copia della pagina citata (`proof: "pagina"`).
 - Numeri regionali: 116117 per guardia medica e consigli non urgenti, attivo in tutto il Lazio dal 24/08/2026 (Salute Lazio), e ReCUP 06 9939 (pagina della Regione aggiornata al 12/08/2021: orari da confermare). A Grotte di Castro, Proceno, Onano e San Lorenzo Nuovo la guardia medica è ancora al 06 55525592 (pagina dell'ASL di Viterbo, 01/09/2026).

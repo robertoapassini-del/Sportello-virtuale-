@@ -1,0 +1,1143 @@
+{
+ "region": "Toscana",
+ "model": "Aziende USL",
+ "_note": "Numeri delle 3 aziende USL della Toscana per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili. In Toscana la guardia medica è il 116117 in tutta la regione (dal 2024).",
+ "asl": [
+  {
+   "id": "arezzo",
+   "name": "Azienda USL Toscana Sud Est",
+   "province": "Arezzo",
+   "site_url": "https://www.uslsudest.toscana.it/",
+   "official_domains": [
+    "uslsudest.toscana.it",
+    "regione.toscana.it"
+   ],
+   "guardia_medica_url": "https://www.uslsudest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica",
+   "pua_url": "https://www.uslsudest.toscana.it/servizi-e-strutture/punti-unici-di-accesso-pua",
+   "pec": "ausltoscanasudest@postacert.toscana.it",
+   "phones": [
+    {
+     "label": "Centralino dell'Azienda USL Toscana Sud Est – Arezzo",
+     "number": "0575 2551",
+     "url": "https://www.uslsudest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP dell'Azienda USL Toscana Sud Est – Arezzo: prenotare visite ed esami (call center unico per tutta l'Azienda)",
+     "number": "0575 379100",
+     "hours": "Dal lunedì al sabato 8–18",
+     "url": "https://www.uslsudest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "Punto Informazione e URP dell'Azienda USL Toscana Sud Est: informazioni e segnalazioni (non per prenotare)",
+     "number": "0575 379120",
+     "hours": "Dal lunedì al venerdì 8–18; sabato e domenica 9–13",
+     "url": "https://www.uslsudest.toscana.it/punto-informazione",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'Azienda USL Toscana Sud Est, sede di Arezzo: appuntamento per il pomeriggio",
+     "number": "0575 254161",
+     "hours": "Accesso diretto dal lunedì al venerdì 8.30–13.30; pomeriggio su appuntamento",
+     "address": "Via Curtatone 54, Arezzo",
+     "url": "https://www.uslsudest.toscana.it/ufficio-relazioni-con-il-pubblico/urp-arezzo",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale): numero unico 116117, gratuito; non si va direttamente alle sedi",
+     "number": "116117",
+     "url": "https://www.uslsudest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA (Punto Unico di Accesso) della zona Aretina: non autosufficienza e disabilità",
+     "number": "0575 254824",
+     "hours": "Lunedì 9–13; mercoledì e giovedì 14.30–17.30",
+     "address": "Via Curtatone 54, Arezzo",
+     "url": "https://www.uslsudest.toscana.it/servizi-e-strutture/punti-unici-di-accesso-pua",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza infermieristica a domicilio della zona Aretina",
+     "number": "0575 254822",
+     "hours": "Dal lunedì al venerdì 10–12 e 15–16; sabato 10–12",
+     "address": "Via XXV Aprile 18, Arezzo",
+     "url": "https://www.uslsudest.toscana.it/servizi-e-strutture/assistenza-domiciliare/provincia-di-arezzo",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "USL Toscana Sud Est – Numeri utili",
+     "url": "https://www.uslsudest.toscana.it/numeri-utili"
+    },
+    {
+     "label": "USL Toscana Sud Est – Prenotare visite o esami",
+     "url": "https://www.uslsudest.toscana.it/come-fare-per/prenotare-visite-o-esami"
+    },
+    {
+     "label": "USL Toscana Sud Est – Punto Informazione",
+     "url": "https://www.uslsudest.toscana.it/punto-informazione"
+    },
+    {
+     "label": "USL Toscana Sud Est – URP provincia di Arezzo",
+     "url": "https://www.uslsudest.toscana.it/ufficio-relazioni-con-il-pubblico/urp-arezzo"
+    },
+    {
+     "label": "USL Toscana Sud Est – Continuità assistenziale",
+     "url": "https://www.uslsudest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica"
+    },
+    {
+     "label": "USL Toscana Sud Est – Punti Unici di Accesso",
+     "url": "https://www.uslsudest.toscana.it/servizi-e-strutture/punti-unici-di-accesso-pua"
+    },
+    {
+     "label": "Regione Toscana – Nuovo numero 116117 della guardia medica",
+     "url": "https://www.regione.toscana.it/it/-/nuovo-numero-del-servizio-di-continuit%C3%A0-assistenziale"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "La pagina dei PUA elenca molti sportelli comunali per zona: qui c'è solo quello del capoluogo; gli altri sono nella pagina «Punti Unici di Accesso».",
+    "Email dell'URP nascoste nella copia della pagina (protezione anti-spam)."
+   ],
+   "emails": []
+  },
+  {
+   "id": "firenze",
+   "name": "Azienda USL Toscana Centro",
+   "province": "Firenze",
+   "site_url": "https://www.uslcentro.toscana.it/",
+   "official_domains": [
+    "uslcentro.toscana.it",
+    "regione.toscana.it"
+   ],
+   "guardia_medica_url": "https://www.uslcentro.toscana.it/guardia-medica",
+   "pua_url": "https://www.uslcentro.toscana.it/dipartimento-servizi-sociali/accesso-al-servizio-punti-unici-di-accesso-e-segretariato-sociale/operatore-del-punto-insieme",
+   "phones": [
+    {
+     "label": "Numero unico dell'Azienda USL Toscana Centro (CUP, URP, screening e altri servizi con i tasti)",
+     "number": "055 545454",
+     "hours": "Dal lunedì al venerdì 8–18; sabato e prefestivi 8–13",
+     "url": "https://www.uslcentro.toscana.it/cup",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP dell'Azienda USL Toscana Centro: prenotare o disdire visite ed esami (numero unico 055 545454, tasto 2)",
+     "number": "055 545454",
+     "hours": "Dal lunedì al venerdì 8–18; sabato e prefestivi 8–13",
+     "url": "https://www.uslcentro.toscana.it/cup",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'Azienda USL Toscana Centro: informazioni e segnalazioni (numero unico 055 545454, tasto 1)",
+     "number": "055 545454",
+     "hours": "Dal lunedì al venerdì 8–18; sabato e prefestivi 8–13",
+     "url": "https://www.uslcentro.toscana.it/urp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale): numero unico europeo 116117, gratuito",
+     "number": "116117",
+     "hours": "Feriali dalle 20 alle 8 del giorno dopo; dalle 8 del sabato alle 8 del lunedì; festivi infrasettimanali dalle 8 del prefestivo alle 8 del primo giorno feriale",
+     "url": "https://www.uslcentro.toscana.it/guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening oncologici dell'Azienda USL Toscana Centro: spostare o cancellare appuntamenti (numero unico 055 545454, tasto 4)",
+     "number": "055 545454",
+     "url": "https://www.uslcentro.toscana.it/cup",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Anagrafe sanitaria dell'Azienda USL Toscana Centro (numero unico 055 545454, tasto 2 e poi tasto 3)",
+     "number": "055 545454",
+     "hours": "Dal lunedì al venerdì 9–12",
+     "url": "https://www.uslcentro.toscana.it/cup",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Segretariato sociale della zona Fiorentina Nord Ovest: numero unico per Calenzano, Campi Bisenzio, Lastra a Signa, Scandicci, Sesto Fiorentino, Signa e Vaglia (dal 19 ottobre)",
+     "number": "055 6930444",
+     "url": "https://www.uslcentro.toscana.it/",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "USL Toscana Centro – Numero unico aziendale 055 545454",
+     "url": "https://www.uslcentro.toscana.it/cup"
+    },
+    {
+     "label": "USL Toscana Centro – URP",
+     "url": "https://www.uslcentro.toscana.it/urp"
+    },
+    {
+     "label": "USL Toscana Centro – Guardia medica",
+     "url": "https://www.uslcentro.toscana.it/guardia-medica"
+    },
+    {
+     "label": "USL Toscana Centro – Prenotare visite ed esami",
+     "url": "https://www.uslcentro.toscana.it/prenotare-visite-ed-esami"
+    },
+    {
+     "label": "USL Toscana Centro – Punto Unico di Accesso",
+     "url": "https://www.uslcentro.toscana.it/dipartimento-servizi-sociali/accesso-al-servizio-punti-unici-di-accesso-e-segretariato-sociale/operatore-del-punto-insieme"
+    },
+    {
+     "label": "Regione Toscana – Nuovo numero 116117 della guardia medica",
+     "url": "https://www.regione.toscana.it/it/-/nuovo-numero-del-servizio-di-continuit%C3%A0-assistenziale"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "116117: secondo la Regione Toscana («Nuovo numero del servizio di continuità assistenziale», aggiornata al 05.02.2026) il 116117 è partito il 16/9/2024 a Firenze, Prato e Pistoia, il 21/10/2024 ad Arezzo, Grosseto e Siena e il 18/11/2024 a Livorno, Lucca, Massa-Carrara e Pisa; «attualmente il servizio è attivo in tutta la Toscana». Anche le pagine delle tre USL rimandano solo al 116117 per la guardia medica (la Sud Est dice che non ci si può presentare direttamente alle sedi). Per questo in tutte le province c'è il 116117 e nessun vecchio numero locale. Il 116117 serve anche per consigli sanitari non urgenti e per la guardia medica turistica; nella USL Centro anche per segnalare quando il percorso di tutela dei tempi di attesa non funziona.",
+    "Le pagine dell'Azienda non dicono un numero per il Punto Unico di Accesso (PUA) di questa provincia: il PUA si chiama «Punto Insieme» e si trova nelle sedi dei distretti.",
+    "La pagina «Guardia Medica (sedi territoriali)» elenca solo i nomi delle zone, senza numeri: si usa il 116117.",
+    "Email e PEC dell'URP sono nascoste nella copia della pagina (protezione anti-spam): da copiare a mano dal sito.",
+    "Il numero del segretariato sociale per sette Comuni viene da una notizia in prima pagina del sito: controllare che resti valido."
+   ],
+   "emails": []
+  },
+  {
+   "id": "grosseto",
+   "name": "Azienda USL Toscana Sud Est",
+   "province": "Grosseto",
+   "site_url": "https://www.uslsudest.toscana.it/",
+   "official_domains": [
+    "uslsudest.toscana.it",
+    "regione.toscana.it"
+   ],
+   "guardia_medica_url": "https://www.uslsudest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica",
+   "pua_url": "https://www.uslsudest.toscana.it/servizi-e-strutture/punti-unici-di-accesso-pua",
+   "pec": "ausltoscanasudest@postacert.toscana.it",
+   "phones": [
+    {
+     "label": "Centralino dell'Azienda USL Toscana Sud Est – Grosseto",
+     "number": "0564 485111",
+     "url": "https://www.uslsudest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP dell'Azienda USL Toscana Sud Est – Grosseto: prenotare visite ed esami (call center unico per tutta l'Azienda)",
+     "number": "0564 972191",
+     "hours": "Dal lunedì al sabato 8–18",
+     "url": "https://www.uslsudest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "Punto Informazione e URP dell'Azienda USL Toscana Sud Est: informazioni e segnalazioni (non per prenotare)",
+     "number": "0575 379120",
+     "hours": "Dal lunedì al venerdì 8–18; sabato e domenica 9–13",
+     "url": "https://www.uslsudest.toscana.it/punto-informazione",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'Azienda USL Toscana Sud Est, sede di Grosseto: appuntamento per l'accesso diretto",
+     "number": "334 6938102",
+     "hours": "Dal lunedì al venerdì 9.30–12.15",
+     "url": "https://www.uslsudest.toscana.it/ufficio-relazioni-con-il-pubblico/urp-grosseto",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale): numero unico 116117, gratuito; non si va direttamente alle sedi",
+     "number": "116117",
+     "url": "https://www.uslsudest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA (Punto Unico di Accesso) della zona Grossetana: non autosufficienza e disabilità",
+     "number": "0564 483730",
+     "hours": "Dal lunedì al venerdì 8.30–13.30",
+     "address": "Via Don Minzoni 9, Grosseto",
+     "url": "https://www.uslsudest.toscana.it/servizi-e-strutture/punti-unici-di-accesso-pua",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "USL Toscana Sud Est – Numeri utili",
+     "url": "https://www.uslsudest.toscana.it/numeri-utili"
+    },
+    {
+     "label": "USL Toscana Sud Est – Prenotare visite o esami",
+     "url": "https://www.uslsudest.toscana.it/come-fare-per/prenotare-visite-o-esami"
+    },
+    {
+     "label": "USL Toscana Sud Est – Punto Informazione",
+     "url": "https://www.uslsudest.toscana.it/punto-informazione"
+    },
+    {
+     "label": "USL Toscana Sud Est – URP provincia di Grosseto",
+     "url": "https://www.uslsudest.toscana.it/ufficio-relazioni-con-il-pubblico/urp-grosseto"
+    },
+    {
+     "label": "USL Toscana Sud Est – Continuità assistenziale",
+     "url": "https://www.uslsudest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica"
+    },
+    {
+     "label": "USL Toscana Sud Est – Punti Unici di Accesso",
+     "url": "https://www.uslsudest.toscana.it/servizi-e-strutture/punti-unici-di-accesso-pua"
+    },
+    {
+     "label": "Regione Toscana – Nuovo numero 116117 della guardia medica",
+     "url": "https://www.regione.toscana.it/it/-/nuovo-numero-del-servizio-di-continuit%C3%A0-assistenziale"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "La pagina dei PUA elenca molti sportelli comunali per zona: qui c'è solo quello del capoluogo; gli altri sono nella pagina «Punti Unici di Accesso».",
+    "Email dell'URP nascoste nella copia della pagina (protezione anti-spam).",
+    "L'URP di Grosseto sta traslocando da Villa Pizzetti (viale Cimabue 109) a via Belgio 17: chiuso al pubblico dal 12 al 19 ottobre 2026; indirizzo non messo finché non è chiaro."
+   ],
+   "emails": []
+  },
+  {
+   "id": "livorno",
+   "name": "Azienda USL Toscana Nord Ovest",
+   "province": "Livorno",
+   "site_url": "https://www.uslnordovest.toscana.it/",
+   "official_domains": [
+    "uslnordovest.toscana.it",
+    "regione.toscana.it"
+   ],
+   "guardia_medica_url": "https://www.uslnordovest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica",
+   "pua_url": "https://www.uslnordovest.toscana.it/come-fare-per/accedere-ai-servizi-per-gli-anziani-non-autosufficienti",
+   "pec": "direzione.uslnordovest@postacert.toscana.it",
+   "phones": [
+    {
+     "label": "Centralino dell'Ospedale di Livorno",
+     "number": "0586 223111",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino dell'Ospedale di Cecina",
+     "number": "0586 614111",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino dell'Ospedale di Piombino",
+     "number": "0565 67111",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino dell'Ospedale di Portoferraio (Elba)",
+     "number": "0565 926111",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "WhatsASL: chat WhatsApp dell'Azienda USL Toscana Nord Ovest (solo messaggi, scrivere «Ciao»)",
+     "number": "050 954666",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP dell'Azienda USL Toscana Nord Ovest: prenotare, spostare o disdire visite ed esami (non prelievi)",
+     "number": "0585 498498",
+     "hours": "Dal lunedì al venerdì 8–18; sabato 8–13",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'Azienda USL Toscana Nord Ovest: informazioni, segnalazioni e reclami (sportelli solo su appuntamento)",
+     "number": "0585 498005",
+     "hours": "Dal lunedì al venerdì 9–13",
+     "address": "Viale Alfieri 36, Livorno (dal lunedì al giovedì 10–12)",
+     "url": "https://www.uslnordovest.toscana.it/index.php?option=com_content&view=article&id=5&catid=37",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale): numero unico europeo 116117, gratuito",
+     "number": "116117",
+     "hours": "Feriali dalle 20 alle 8 del giorno dopo; dalle 8 del sabato alle 8 del lunedì; festivi infrasettimanali dalle 8 del prefestivo alle 8 del primo giorno feriale",
+     "url": "https://www.uslnordovest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening oncologici dell'Azienda USL Toscana Nord Ovest: informazioni e spostare appuntamenti (mammografia, pap test/HPV, sangue occulto)",
+     "number": "0585 498004",
+     "hours": "Dal lunedì al venerdì 8.30–12.30",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "protesica",
+     "label": "Ausili e protesi: sapere a che punto è la pratica (tramite il CUP dell'Azienda USL Toscana Nord Ovest; no consegne né riparazioni)",
+     "number": "0585 498498",
+     "hours": "Dal lunedì al venerdì 8–18; sabato 8–13",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "USL Toscana Nord Ovest – Numeri utili",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili"
+    },
+    {
+     "label": "USL Toscana Nord Ovest – Contatti e sedi URP",
+     "url": "https://www.uslnordovest.toscana.it/index.php?option=com_content&view=article&id=5&catid=37"
+    },
+    {
+     "label": "USL Toscana Nord Ovest – 116117 Guardia medica",
+     "url": "https://www.uslnordovest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica"
+    },
+    {
+     "label": "USL Toscana Nord Ovest – Prenotare visite",
+     "url": "https://www.uslnordovest.toscana.it/come-fare-per/prenotare-visite-ed-esami-3"
+    },
+    {
+     "label": "Regione Toscana – Nuovo numero 116117 della guardia medica",
+     "url": "https://www.regione.toscana.it/it/-/nuovo-numero-del-servizio-di-continuit%C3%A0-assistenziale"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "Nessun numero per il Punto Unico di Accesso (PUA) o le cure domiciliari nelle pagine copiate dell'Azienda USL Toscana Nord Ovest.",
+    "I numeri della guardia medica turistica (estate) non sono stati messi: valgono solo in alcuni mesi.",
+    "Le email dell'URP per zona sono nascoste nella copia della pagina (protezione anti-spam)."
+   ],
+   "emails": []
+  },
+  {
+   "id": "lucca",
+   "name": "Azienda USL Toscana Nord Ovest",
+   "province": "Lucca",
+   "site_url": "https://www.uslnordovest.toscana.it/",
+   "official_domains": [
+    "uslnordovest.toscana.it",
+    "regione.toscana.it"
+   ],
+   "guardia_medica_url": "https://www.uslnordovest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica",
+   "pua_url": "https://www.uslnordovest.toscana.it/come-fare-per/accedere-ai-servizi-per-gli-anziani-non-autosufficienti",
+   "pec": "direzione.uslnordovest@postacert.toscana.it",
+   "phones": [
+    {
+     "label": "Centralino dell'Ospedale San Luca di Lucca",
+     "number": "0583 9701",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino dell'Ospedale Versilia di Lido di Camaiore",
+     "number": "0584 6051",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino dell'Ospedale San Francesco di Barga",
+     "number": "0583 7290",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino dell'Ospedale Santa Croce di Castelnuovo Garfagnana",
+     "number": "0583 6691",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "WhatsASL: chat WhatsApp dell'Azienda USL Toscana Nord Ovest (solo messaggi, scrivere «Ciao»)",
+     "number": "050 954666",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP dell'Azienda USL Toscana Nord Ovest: prenotare, spostare o disdire visite ed esami (non prelievi)",
+     "number": "0585 498498",
+     "hours": "Dal lunedì al venerdì 8–18; sabato 8–13",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'Azienda USL Toscana Nord Ovest: informazioni, segnalazioni e reclami (sportelli solo su appuntamento)",
+     "number": "0585 498005",
+     "hours": "Dal lunedì al venerdì 9–13",
+     "address": "Ospedale San Luca, via Guglielmo Lippi Francesconi 556, Lucca (su appuntamento)",
+     "url": "https://www.uslnordovest.toscana.it/index.php?option=com_content&view=article&id=5&catid=37",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale): numero unico europeo 116117, gratuito",
+     "number": "116117",
+     "hours": "Feriali dalle 20 alle 8 del giorno dopo; dalle 8 del sabato alle 8 del lunedì; festivi infrasettimanali dalle 8 del prefestivo alle 8 del primo giorno feriale",
+     "url": "https://www.uslnordovest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening oncologici dell'Azienda USL Toscana Nord Ovest: informazioni e spostare appuntamenti (mammografia, pap test/HPV, sangue occulto)",
+     "number": "0585 498004",
+     "hours": "Dal lunedì al venerdì 8.30–12.30",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "protesica",
+     "label": "Ausili e protesi: sapere a che punto è la pratica (tramite il CUP dell'Azienda USL Toscana Nord Ovest; no consegne né riparazioni)",
+     "number": "0585 498498",
+     "hours": "Dal lunedì al venerdì 8–18; sabato 8–13",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "USL Toscana Nord Ovest – Numeri utili",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili"
+    },
+    {
+     "label": "USL Toscana Nord Ovest – Contatti e sedi URP",
+     "url": "https://www.uslnordovest.toscana.it/index.php?option=com_content&view=article&id=5&catid=37"
+    },
+    {
+     "label": "USL Toscana Nord Ovest – 116117 Guardia medica",
+     "url": "https://www.uslnordovest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica"
+    },
+    {
+     "label": "USL Toscana Nord Ovest – Prenotare visite",
+     "url": "https://www.uslnordovest.toscana.it/come-fare-per/prenotare-visite-ed-esami-3"
+    },
+    {
+     "label": "Regione Toscana – Nuovo numero 116117 della guardia medica",
+     "url": "https://www.regione.toscana.it/it/-/nuovo-numero-del-servizio-di-continuit%C3%A0-assistenziale"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "Nessun numero per il Punto Unico di Accesso (PUA) o le cure domiciliari nelle pagine copiate dell'Azienda USL Toscana Nord Ovest.",
+    "I numeri della guardia medica turistica (estate) non sono stati messi: valgono solo in alcuni mesi.",
+    "Le email dell'URP per zona sono nascoste nella copia della pagina (protezione anti-spam)."
+   ],
+   "emails": []
+  },
+  {
+   "id": "massa-carrara",
+   "name": "Azienda USL Toscana Nord Ovest",
+   "province": "Massa-Carrara",
+   "site_url": "https://www.uslnordovest.toscana.it/",
+   "official_domains": [
+    "uslnordovest.toscana.it",
+    "regione.toscana.it"
+   ],
+   "guardia_medica_url": "https://www.uslnordovest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica",
+   "pua_url": "https://www.uslnordovest.toscana.it/come-fare-per/accedere-ai-servizi-per-gli-anziani-non-autosufficienti",
+   "pec": "direzione.uslnordovest@postacert.toscana.it",
+   "phones": [
+    {
+     "label": "Centralino dell'Ospedale Apuane di Marina di Massa",
+     "number": "0585 4931",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino dell'Ospedale Sant'Antonio Abate di Fivizzano",
+     "number": "0585 9401",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino dell'Ospedale Sant'Antonio Abate di Pontremoli",
+     "number": "0187 462211",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "WhatsASL: chat WhatsApp dell'Azienda USL Toscana Nord Ovest (solo messaggi, scrivere «Ciao»)",
+     "number": "050 954666",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP dell'Azienda USL Toscana Nord Ovest: prenotare, spostare o disdire visite ed esami (non prelievi)",
+     "number": "0585 498498",
+     "hours": "Dal lunedì al venerdì 8–18; sabato 8–13",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'Azienda USL Toscana Nord Ovest: informazioni, segnalazioni e reclami (sportelli solo su appuntamento)",
+     "number": "0585 498005",
+     "hours": "Dal lunedì al venerdì 9–13",
+     "address": "Ospedale Apuane, via E. Mattei 21, Marina di Massa; Centro direzionale, via Don Minzoni 3, Carrara (su appuntamento)",
+     "url": "https://www.uslnordovest.toscana.it/index.php?option=com_content&view=article&id=5&catid=37",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale): numero unico europeo 116117, gratuito",
+     "number": "116117",
+     "hours": "Feriali dalle 20 alle 8 del giorno dopo; dalle 8 del sabato alle 8 del lunedì; festivi infrasettimanali dalle 8 del prefestivo alle 8 del primo giorno feriale",
+     "url": "https://www.uslnordovest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening oncologici dell'Azienda USL Toscana Nord Ovest: informazioni e spostare appuntamenti (mammografia, pap test/HPV, sangue occulto)",
+     "number": "0585 498004",
+     "hours": "Dal lunedì al venerdì 8.30–12.30",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "protesica",
+     "label": "Ausili e protesi: sapere a che punto è la pratica (tramite il CUP dell'Azienda USL Toscana Nord Ovest; no consegne né riparazioni)",
+     "number": "0585 498498",
+     "hours": "Dal lunedì al venerdì 8–18; sabato 8–13",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "USL Toscana Nord Ovest – Numeri utili",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili"
+    },
+    {
+     "label": "USL Toscana Nord Ovest – Contatti e sedi URP",
+     "url": "https://www.uslnordovest.toscana.it/index.php?option=com_content&view=article&id=5&catid=37"
+    },
+    {
+     "label": "USL Toscana Nord Ovest – 116117 Guardia medica",
+     "url": "https://www.uslnordovest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica"
+    },
+    {
+     "label": "USL Toscana Nord Ovest – Prenotare visite",
+     "url": "https://www.uslnordovest.toscana.it/come-fare-per/prenotare-visite-ed-esami-3"
+    },
+    {
+     "label": "Regione Toscana – Nuovo numero 116117 della guardia medica",
+     "url": "https://www.regione.toscana.it/it/-/nuovo-numero-del-servizio-di-continuit%C3%A0-assistenziale"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "Nessun numero per il Punto Unico di Accesso (PUA) o le cure domiciliari nelle pagine copiate dell'Azienda USL Toscana Nord Ovest.",
+    "I numeri della guardia medica turistica (estate) non sono stati messi: valgono solo in alcuni mesi.",
+    "Le email dell'URP per zona sono nascoste nella copia della pagina (protezione anti-spam)."
+   ],
+   "emails": []
+  },
+  {
+   "id": "pisa",
+   "name": "Azienda USL Toscana Nord Ovest",
+   "province": "Pisa",
+   "site_url": "https://www.uslnordovest.toscana.it/",
+   "official_domains": [
+    "uslnordovest.toscana.it",
+    "regione.toscana.it"
+   ],
+   "guardia_medica_url": "https://www.uslnordovest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica",
+   "pua_url": "https://www.uslnordovest.toscana.it/come-fare-per/accedere-ai-servizi-per-gli-anziani-non-autosufficienti",
+   "pec": "direzione.uslnordovest@postacert.toscana.it",
+   "phones": [
+    {
+     "label": "Centralino dell'Ospedale Felice Lotti di Pontedera",
+     "number": "0587 273111",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino dell'Ospedale Santa Maria Maddalena di Volterra",
+     "number": "0588 91911",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "WhatsASL: chat WhatsApp dell'Azienda USL Toscana Nord Ovest (solo messaggi, scrivere «Ciao»)",
+     "number": "050 954666",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP dell'Azienda USL Toscana Nord Ovest: prenotare, spostare o disdire visite ed esami (non prelievi)",
+     "number": "0585 498498",
+     "hours": "Dal lunedì al venerdì 8–18; sabato 8–13",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'Azienda USL Toscana Nord Ovest: informazioni, segnalazioni e reclami (sportelli solo su appuntamento)",
+     "number": "0585 498005",
+     "hours": "Dal lunedì al venerdì 9–13",
+     "address": "Via Saragat 24 c/o SdS Pisana, Pisa (dal lunedì al venerdì 10.30–13)",
+     "url": "https://www.uslnordovest.toscana.it/index.php?option=com_content&view=article&id=5&catid=37",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale): numero unico europeo 116117, gratuito",
+     "number": "116117",
+     "hours": "Feriali dalle 20 alle 8 del giorno dopo; dalle 8 del sabato alle 8 del lunedì; festivi infrasettimanali dalle 8 del prefestivo alle 8 del primo giorno feriale",
+     "url": "https://www.uslnordovest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening oncologici dell'Azienda USL Toscana Nord Ovest: informazioni e spostare appuntamenti (mammografia, pap test/HPV, sangue occulto)",
+     "number": "0585 498004",
+     "hours": "Dal lunedì al venerdì 8.30–12.30",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "protesica",
+     "label": "Ausili e protesi: sapere a che punto è la pratica (tramite il CUP dell'Azienda USL Toscana Nord Ovest; no consegne né riparazioni)",
+     "number": "0585 498498",
+     "hours": "Dal lunedì al venerdì 8–18; sabato 8–13",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "USL Toscana Nord Ovest – Numeri utili",
+     "url": "https://www.uslnordovest.toscana.it/numeri-utili"
+    },
+    {
+     "label": "USL Toscana Nord Ovest – Contatti e sedi URP",
+     "url": "https://www.uslnordovest.toscana.it/index.php?option=com_content&view=article&id=5&catid=37"
+    },
+    {
+     "label": "USL Toscana Nord Ovest – 116117 Guardia medica",
+     "url": "https://www.uslnordovest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica"
+    },
+    {
+     "label": "USL Toscana Nord Ovest – Prenotare visite",
+     "url": "https://www.uslnordovest.toscana.it/come-fare-per/prenotare-visite-ed-esami-3"
+    },
+    {
+     "label": "Regione Toscana – Nuovo numero 116117 della guardia medica",
+     "url": "https://www.regione.toscana.it/it/-/nuovo-numero-del-servizio-di-continuit%C3%A0-assistenziale"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "Nessun numero per il Punto Unico di Accesso (PUA) o le cure domiciliari nelle pagine copiate dell'Azienda USL Toscana Nord Ovest.",
+    "I numeri della guardia medica turistica (estate) non sono stati messi: valgono solo in alcuni mesi.",
+    "Le email dell'URP per zona sono nascoste nella copia della pagina (protezione anti-spam).",
+    "Gli ospedali della città di Pisa sono dell'Azienda Ospedaliero Universitaria Pisana, non dell'USL: nessun loro centralino nelle pagine copiate (il CUP dell'AOU Pisana è nella pagina regionale «CUP telefonico», scritto 05099599 5: numero poco chiaro, non messo)."
+   ],
+   "emails": []
+  },
+  {
+   "id": "pistoia",
+   "name": "Azienda USL Toscana Centro",
+   "province": "Pistoia",
+   "site_url": "https://www.uslcentro.toscana.it/",
+   "official_domains": [
+    "uslcentro.toscana.it",
+    "regione.toscana.it"
+   ],
+   "guardia_medica_url": "https://www.uslcentro.toscana.it/guardia-medica",
+   "pua_url": "https://www.uslcentro.toscana.it/dipartimento-servizi-sociali/accesso-al-servizio-punti-unici-di-accesso-e-segretariato-sociale/operatore-del-punto-insieme",
+   "phones": [
+    {
+     "label": "Numero unico dell'Azienda USL Toscana Centro (CUP, URP, screening e altri servizi con i tasti)",
+     "number": "055 545454",
+     "hours": "Dal lunedì al venerdì 8–18; sabato e prefestivi 8–13",
+     "url": "https://www.uslcentro.toscana.it/cup",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP dell'Azienda USL Toscana Centro: prenotare o disdire visite ed esami (numero unico 055 545454, tasto 2)",
+     "number": "055 545454",
+     "hours": "Dal lunedì al venerdì 8–18; sabato e prefestivi 8–13",
+     "url": "https://www.uslcentro.toscana.it/cup",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'Azienda USL Toscana Centro: informazioni e segnalazioni (numero unico 055 545454, tasto 1)",
+     "number": "055 545454",
+     "hours": "Dal lunedì al venerdì 8–18; sabato e prefestivi 8–13",
+     "url": "https://www.uslcentro.toscana.it/urp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale): numero unico europeo 116117, gratuito",
+     "number": "116117",
+     "hours": "Feriali dalle 20 alle 8 del giorno dopo; dalle 8 del sabato alle 8 del lunedì; festivi infrasettimanali dalle 8 del prefestivo alle 8 del primo giorno feriale",
+     "url": "https://www.uslcentro.toscana.it/guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening oncologici dell'Azienda USL Toscana Centro: spostare o cancellare appuntamenti (numero unico 055 545454, tasto 4)",
+     "number": "055 545454",
+     "url": "https://www.uslcentro.toscana.it/cup",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Anagrafe sanitaria dell'Azienda USL Toscana Centro (numero unico 055 545454, tasto 2 e poi tasto 3)",
+     "number": "055 545454",
+     "hours": "Dal lunedì al venerdì 9–12",
+     "url": "https://www.uslcentro.toscana.it/cup",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "USL Toscana Centro – Numero unico aziendale 055 545454",
+     "url": "https://www.uslcentro.toscana.it/cup"
+    },
+    {
+     "label": "USL Toscana Centro – URP",
+     "url": "https://www.uslcentro.toscana.it/urp"
+    },
+    {
+     "label": "USL Toscana Centro – Guardia medica",
+     "url": "https://www.uslcentro.toscana.it/guardia-medica"
+    },
+    {
+     "label": "USL Toscana Centro – Prenotare visite ed esami",
+     "url": "https://www.uslcentro.toscana.it/prenotare-visite-ed-esami"
+    },
+    {
+     "label": "USL Toscana Centro – Punto Unico di Accesso",
+     "url": "https://www.uslcentro.toscana.it/dipartimento-servizi-sociali/accesso-al-servizio-punti-unici-di-accesso-e-segretariato-sociale/operatore-del-punto-insieme"
+    },
+    {
+     "label": "Regione Toscana – Nuovo numero 116117 della guardia medica",
+     "url": "https://www.regione.toscana.it/it/-/nuovo-numero-del-servizio-di-continuit%C3%A0-assistenziale"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "Le pagine dell'Azienda non dicono un numero per il Punto Unico di Accesso (PUA) di questa provincia: il PUA si chiama «Punto Insieme» e si trova nelle sedi dei distretti.",
+    "La pagina «Guardia Medica (sedi territoriali)» elenca solo i nomi delle zone, senza numeri: si usa il 116117.",
+    "Email e PEC dell'URP sono nascoste nella copia della pagina (protezione anti-spam): da copiare a mano dal sito."
+   ],
+   "emails": []
+  },
+  {
+   "id": "prato",
+   "name": "Azienda USL Toscana Centro",
+   "province": "Prato",
+   "site_url": "https://www.uslcentro.toscana.it/",
+   "official_domains": [
+    "uslcentro.toscana.it",
+    "regione.toscana.it"
+   ],
+   "guardia_medica_url": "https://www.uslcentro.toscana.it/guardia-medica",
+   "pua_url": "https://www.uslcentro.toscana.it/dipartimento-servizi-sociali/accesso-al-servizio-punti-unici-di-accesso-e-segretariato-sociale/operatore-del-punto-insieme",
+   "phones": [
+    {
+     "label": "Numero unico dell'Azienda USL Toscana Centro (CUP, URP, screening e altri servizi con i tasti)",
+     "number": "055 545454",
+     "hours": "Dal lunedì al venerdì 8–18; sabato e prefestivi 8–13",
+     "url": "https://www.uslcentro.toscana.it/cup",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP dell'Azienda USL Toscana Centro: prenotare o disdire visite ed esami (numero unico 055 545454, tasto 2)",
+     "number": "055 545454",
+     "hours": "Dal lunedì al venerdì 8–18; sabato e prefestivi 8–13",
+     "url": "https://www.uslcentro.toscana.it/cup",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'Azienda USL Toscana Centro: informazioni e segnalazioni (numero unico 055 545454, tasto 1)",
+     "number": "055 545454",
+     "hours": "Dal lunedì al venerdì 8–18; sabato e prefestivi 8–13",
+     "url": "https://www.uslcentro.toscana.it/urp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale): numero unico europeo 116117, gratuito",
+     "number": "116117",
+     "hours": "Feriali dalle 20 alle 8 del giorno dopo; dalle 8 del sabato alle 8 del lunedì; festivi infrasettimanali dalle 8 del prefestivo alle 8 del primo giorno feriale",
+     "url": "https://www.uslcentro.toscana.it/guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening oncologici dell'Azienda USL Toscana Centro: spostare o cancellare appuntamenti (numero unico 055 545454, tasto 4)",
+     "number": "055 545454",
+     "url": "https://www.uslcentro.toscana.it/cup",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Anagrafe sanitaria dell'Azienda USL Toscana Centro (numero unico 055 545454, tasto 2 e poi tasto 3)",
+     "number": "055 545454",
+     "hours": "Dal lunedì al venerdì 9–12",
+     "url": "https://www.uslcentro.toscana.it/cup",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "USL Toscana Centro – Numero unico aziendale 055 545454",
+     "url": "https://www.uslcentro.toscana.it/cup"
+    },
+    {
+     "label": "USL Toscana Centro – URP",
+     "url": "https://www.uslcentro.toscana.it/urp"
+    },
+    {
+     "label": "USL Toscana Centro – Guardia medica",
+     "url": "https://www.uslcentro.toscana.it/guardia-medica"
+    },
+    {
+     "label": "USL Toscana Centro – Prenotare visite ed esami",
+     "url": "https://www.uslcentro.toscana.it/prenotare-visite-ed-esami"
+    },
+    {
+     "label": "USL Toscana Centro – Punto Unico di Accesso",
+     "url": "https://www.uslcentro.toscana.it/dipartimento-servizi-sociali/accesso-al-servizio-punti-unici-di-accesso-e-segretariato-sociale/operatore-del-punto-insieme"
+    },
+    {
+     "label": "Regione Toscana – Nuovo numero 116117 della guardia medica",
+     "url": "https://www.regione.toscana.it/it/-/nuovo-numero-del-servizio-di-continuit%C3%A0-assistenziale"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "Le pagine dell'Azienda non dicono un numero per il Punto Unico di Accesso (PUA) di questa provincia: il PUA si chiama «Punto Insieme» e si trova nelle sedi dei distretti.",
+    "La pagina «Guardia Medica (sedi territoriali)» elenca solo i nomi delle zone, senza numeri: si usa il 116117.",
+    "Email e PEC dell'URP sono nascoste nella copia della pagina (protezione anti-spam): da copiare a mano dal sito."
+   ],
+   "emails": []
+  },
+  {
+   "id": "siena",
+   "name": "Azienda USL Toscana Sud Est",
+   "province": "Siena",
+   "site_url": "https://www.uslsudest.toscana.it/",
+   "official_domains": [
+    "uslsudest.toscana.it",
+    "regione.toscana.it"
+   ],
+   "guardia_medica_url": "https://www.uslsudest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica",
+   "pua_url": "https://www.uslsudest.toscana.it/servizi-e-strutture/punti-unici-di-accesso-pua",
+   "pec": "ausltoscanasudest@postacert.toscana.it",
+   "phones": [
+    {
+     "label": "Centralino dell'Azienda USL Toscana Sud Est – Siena",
+     "number": "0577 535111",
+     "url": "https://www.uslsudest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino dell'Azienda USL Toscana Sud Est – Siena",
+     "number": "0577 536111",
+     "url": "https://www.uslsudest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP dell'Azienda USL Toscana Sud Est – Siena: prenotare visite ed esami (call center unico per tutta l'Azienda)",
+     "number": "0577 767676",
+     "hours": "Dal lunedì al sabato 8–18",
+     "url": "https://www.uslsudest.toscana.it/numeri-utili",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "Punto Informazione e URP dell'Azienda USL Toscana Sud Est: informazioni e segnalazioni (non per prenotare)",
+     "number": "0575 379120",
+     "hours": "Dal lunedì al venerdì 8–18; sabato e domenica 9–13",
+     "url": "https://www.uslsudest.toscana.it/punto-informazione",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'Azienda USL Toscana Sud Est, sede di Siena: appuntamento per l'accesso diretto",
+     "number": "0577 536016",
+     "address": "Piazza Rosselli 26, Siena",
+     "url": "https://www.uslsudest.toscana.it/ufficio-relazioni-con-il-pubblico/urp-siena",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale): numero unico 116117, gratuito; non si va direttamente alle sedi",
+     "number": "116117",
+     "url": "https://www.uslsudest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA (Punto Unico di Accesso) di Siena, Casa della Salute: non autosufficienza e disabilità",
+     "number": "0577 535904",
+     "hours": "Al telefono: lunedì, mercoledì e venerdì 8–9; martedì e giovedì 13–14",
+     "address": "Via Pian d'Ovile 9/11, Siena",
+     "url": "https://www.uslsudest.toscana.it/servizi-e-strutture/punti-unici-di-accesso-pua",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "USL Toscana Sud Est – Numeri utili",
+     "url": "https://www.uslsudest.toscana.it/numeri-utili"
+    },
+    {
+     "label": "USL Toscana Sud Est – Prenotare visite o esami",
+     "url": "https://www.uslsudest.toscana.it/come-fare-per/prenotare-visite-o-esami"
+    },
+    {
+     "label": "USL Toscana Sud Est – Punto Informazione",
+     "url": "https://www.uslsudest.toscana.it/punto-informazione"
+    },
+    {
+     "label": "USL Toscana Sud Est – URP provincia di Siena",
+     "url": "https://www.uslsudest.toscana.it/ufficio-relazioni-con-il-pubblico/urp-siena"
+    },
+    {
+     "label": "USL Toscana Sud Est – Continuità assistenziale",
+     "url": "https://www.uslsudest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica"
+    },
+    {
+     "label": "USL Toscana Sud Est – Punti Unici di Accesso",
+     "url": "https://www.uslsudest.toscana.it/servizi-e-strutture/punti-unici-di-accesso-pua"
+    },
+    {
+     "label": "Regione Toscana – Nuovo numero 116117 della guardia medica",
+     "url": "https://www.regione.toscana.it/it/-/nuovo-numero-del-servizio-di-continuit%C3%A0-assistenziale"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "La pagina dei PUA elenca molti sportelli comunali per zona: qui c'è solo quello del capoluogo; gli altri sono nella pagina «Punti Unici di Accesso».",
+    "Email dell'URP nascoste nella copia della pagina (protezione anti-spam).",
+    "Lo 0577 767676 è anche il CUP dell'Azienda Ospedaliero Universitaria Senese (ospedale Le Scotte), secondo la pagina regionale «CUP telefonico»."
+   ],
+   "emails": []
+  }
+ ]
+}
