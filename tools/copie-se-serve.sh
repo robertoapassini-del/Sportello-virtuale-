@@ -1,6 +1,7 @@
 #!/bin/sh
 # Copie «a richiesta»: il server in Italia lancia questo script ogni 15 minuti (cron).
-# Se da main sono cambiati gli indirizzi o i dati delle regioni (data/regioni/), tools/copie.mjs
+# Se da main sono cambiati gli indirizzi o i dati delle regioni (data/regioni/), i numeri nazionali
+# (data/numeri.json), tools/copie.mjs
 # o tools/copie-richiesta.txt, rifà subito la copia delle pagine ufficiali con lo stesso comando
 # della notte, invece di aspettare le 3:30. Se non è cambiato niente, esce senza fare nulla.
 # Così una pull request unita su GitHub basta per far partire la copia: nessuno deve entrare nel server.
@@ -30,7 +31,7 @@ PRIMA="$(cat "$SEGNO" 2>/dev/null || true)"
 # La prima volta (appena installato) si copia subito; poi solo se in main è cambiato qualcosa che conta.
 if [ -n "$PRIMA" ]; then
   [ "$PRIMA" = "$NUOVO" ] && exit 0
-  if git diff --quiet "$PRIMA" "$NUOVO" -- data/regioni tools/copie.mjs tools/copie-richiesta.txt; then
+  if git diff --quiet "$PRIMA" "$NUOVO" -- data/regioni data/numeri.json tools/copie.mjs tools/copie-richiesta.txt; then
     echo "$NUOVO" > "$SEGNO"
     exit 0
   fi

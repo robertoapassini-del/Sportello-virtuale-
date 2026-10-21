@@ -117,7 +117,10 @@ function showResults(text, submitted = false) {
   const hits = cerca(q, [NUMERI, ...reg.modules]);
   box.hidden = false;
   document.getElementById('q-title').textContent = `Risultati per «${q}»`;
-  list.innerHTML = hits.length ? hits.map((h) => card(h.href, h.icon, h.title, h.small)).join('') : NIENTE;
+  // I testi di data/moduli.json dicono «ASL»: nei risultati si usa la sigla della regione
+  // («dell'ASP» in Sicilia, «all'ATS» in Lombardia). Le forme con l'apostrofo vanno bene per tutte.
+  const ente = (t) => String(t || '').replace(/\bASL\b/g, aslLabel());
+  list.innerHTML = hits.length ? hits.map((h) => card(h.href, h.icon, ente(h.title), ente(h.small))).join('') : NIENTE;
 }
 
 (async function init() {

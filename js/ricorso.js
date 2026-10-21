@@ -94,7 +94,9 @@ const screens = {
           <div class="notice ${urgent ? 'bad' : 'ok'}">
             <p>Puoi fare ricorso <strong>${art('fino al', d.deadline)}${esc(formatIt(d.deadline))}</strong>.${d.slittato ? ' (I mesi finivano di sabato, di domenica o in un giorno festivo: il termine passa al primo giorno lavorativo.)' : ''}</p>
             <p>${d.daysLeft === 0 ? '<strong>Scade oggi.</strong>' : `Mancano <strong>${days(d.daysLeft)}</strong>.`}</p>
-            <p>L'avvocato ha bisogno di qualche settimana per preparare tutto: non aspettare l'ultimo momento.</p>
+            <p>${d.daysLeft < 15
+    ? '<strong>Vai oggi stesso da un patronato o da un avvocato: si può ancora depositare.</strong>'
+    : 'L\'avvocato ha bisogno di qualche settimana per preparare tutto: non aspettare l\'ultimo momento.'}</p>
           </div>
           ${patronato}
           ${howItWorks()}

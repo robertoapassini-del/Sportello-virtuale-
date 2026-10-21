@@ -6,3 +6,6 @@
 - [ ] `npm run pagine` e `npm test` passano
 - [ ] Controlli col browser verdi (`tests/browser.cjs`, `tests/combinazioni.cjs`: li fa anche la CI)
 - [ ] Errore trovato → riga in `tests/errori-noti.test.mjs` (o test nuovo) e voce nel `CHANGELOG.md`
+- [ ] Citazioni di legge nuove rilette sul testo ufficiale prima di aggiungerle a `tests/citazioni.txt`
+- [ ] Ogni riga nuova in `tests/copie-noti.txt` spiegata qui (perché il dato è giusto anche se la copia non lo mostra)
+- [ ] Il controllo nuovo è stato provato con l'errore messo apposta: senza la correzione fallisce

@@ -77,3 +77,32 @@ test('Sedi INPS: indirizzo con fonte ufficiale, data e prova recenti', () => {
     }
   }
 });
+
+// Un numero o un link di una sola regione in numeri.json ha «regione»: senza, la pagina Numeri utili lo
+// mostra a tutti (il numero verde della Regione Siciliana anche a chi vive a Milano). Audit dei mutanti del 21/10/2026.
+// È regionale se l'url è sul sito di una regione («regione.<nome>.it», anche i sottodomini) o di un'azienda
+// sanitaria di data/regioni/, oppure se il numero è quello di un'azienda sanitaria.
+test('Numeri nazionali: le voci di una sola regione dicono di quale regione sono', () => {
+  const dominiAsl = new Map(); const numeriAsl = new Map();
+  for (const r of regioni) {
+    for (const a of r.asl) {
+      for (const d of [host(a.site_url), ...(a.official_domains || [])]) dominiAsl.set(d, r.id);
+      // I numeri brevi nazionali (112, 116117…) stanno anche negli elenchi delle aziende: non sono regionali.
+      for (const n of [...a.phones, ...(a.contacts || [])]) if (!BREVI.includes(n.number.replace(/\s/g, ''))) numeriAsl.set(n.number.replace(/\s/g, ''), r.id);
+    }
+  }
+  const diRegione = (v) => {
+    const h = v.url ? host(v.url) : '';
+    const m = h.match(/(?:^|\.)regione\.([a-z-]+)\.it$/);
+    if (m) return { regione: m[1], perche: `url su ${h}` };
+    for (const [d, id] of dominiAsl) if (h === d || h.endsWith(`.${d}`)) return { regione: id, perche: `url sul sito di un'azienda sanitaria (${h})` };
+    if (v.number && numeriAsl.has(v.number.replace(/\s/g, ''))) return { regione: numeriAsl.get(v.number.replace(/\s/g, '')), perche: 'numero di un\'azienda sanitaria' };
+    return null;
+  };
+  const errori = [];
+  for (const v of [...nums.groups.flatMap((g) => g.items), ...nums.links]) {
+    const r = diRegione(v);
+    if (r && v.regione !== r.regione) errori.push(`${v.title} (${r.perche}): serve «"regione": "${r.regione}"»${v.regione ? `, non «${v.regione}»` : ''}`);
+  }
+  assert.deepEqual(errori, [], `numeri.json:\n${errori.join('\n')}`);
+});

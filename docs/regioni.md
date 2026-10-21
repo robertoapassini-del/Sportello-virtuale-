@@ -134,7 +134,11 @@ sempre riconoscibile: titolo «In Sicilia» (il nome della regione), bordo color
    se è attiva, altrimenti il `default` dell'indice; `setRegione(id)` la salva. In `js/flow.js`: `withRegion(screens)`
    mette «In quale regione abiti?» al posto della schermata `province` finché la scelta non c'è (lo fa da solo
    `createFlow`; liste d'attesa e invalidità lo chiamano a mano), `regionAction()` gestisce i clic, `changeRegionLink()`
-   è il link «Non abiti in Sicilia? Cambia regione» nella schermata della provincia e in quelle dopo. Numeri utili
+   è il link «Non abiti in Sicilia? Cambia regione» nella schermata della provincia e in quelle dopo.
+   Se la regione è attiva ma senza i dati del modulo, `withRegion(screens, 'province', next)` (in `createFlow`: `next`)
+   salta la provincia e va a `next`: le schermate con uffici o lettera usano `senzaUffici(a, …)`, che senza provincia
+   mostra `regionMissing()`. Senza `next` (invalidità, ausili: il conto dipende dai dati della regione) resta il blocco,
+   e il pulsante della prima schermata non promette il conto. Numeri utili
    usa gli stessi pezzi. Nota nella privacy. Con una sola regione attiva né la schermata né il link si vedono, quindi
    il sito è uguale a prima. Se si sceglie una regione diversa da quella dei dati già caricati, per ora la pagina si
    ricarica (si riparte dall'inizio del modulo, la regione resta salvata): al passo 3 i dati si potranno ricaricare
@@ -178,13 +182,15 @@ di aziende sanitarie. Lo facciamo in tre pezzi, ognuno con un compito solo:
 1. **Un server in Italia scarica.** Molti siti delle ASL non rispondono a chi si collega dall'estero (nel test del
    21/10/2026: dal server italiano 110 pagine su 134 rispondono, dall'estero Messina, Caltanissetta e Ragusa non
    rispondono). Un piccolo server virtuale (Aruba Cloud, data center di Bergamo, `/opt/guidasanita`) lancia ogni
-   notte alle 3:30 `tools/copie.mjs`: legge gli indirizzi ufficiali dai dati regionali, salva ogni pagina come
+   notte alle 3:30 `tools/copie.mjs`: legge gli indirizzi ufficiali dai dati regionali (aziende sanitarie e,
+   nella cartella `inps-<regione>`, le pagine delle sedi INPS di `inps.json`) e dei numeri nazionali
+   (`data/numeri.json`, cartella `copie/nazionali/`), salva ogni pagina come
    testo semplice e la carica nel branch **`copie-siti`** (cartella `copie/<regione>/<asl>/`, con `indice.json`:
    indirizzo, codice HTTP, titolo, impronta del testo, se è cambiata). Niente AI qui: è uno script semplice.
    Si presenta con nome e sito nel `User-Agent`, una pagina alla volta, una pausa tra una pagina e l'altra, mai
    portali di prenotazione, login o CAPTCHA. Se un'ASL chiede di smettere, si toglie dalla lista.
    **Copia a richiesta, senza aspettare la notte:** `tools/copie-se-serve.sh` gira sul server ogni 15 minuti.
-   Se in `main` sono cambiati `data/regioni/`, `tools/copie.mjs` o `tools/copie-richiesta.txt`, rifà subito
+   Se in `main` sono cambiati `data/regioni/`, `data/numeri.json`, `tools/copie.mjs` o `tools/copie-richiesta.txt`, rifà subito
    la copia con lo stesso comando della notte; altrimenti esce senza fare niente. Basta quindi unire una pull
    request: nessuno deve entrare nel server. Per forzare una copia si cambia `tools/copie-richiesta.txt`.
    Si installa una volta, con una riga in `crontab -e` sul server:

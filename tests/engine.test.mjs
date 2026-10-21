@@ -234,6 +234,38 @@ test('lettere lette da chi le riceve (audit del 21/10/2026)', async () => {
   assert.match(cartellaReminder({ person, what: 'referti o immagini', episode: 'visita del 5 settembre', today }), /copia dei referti o delle immagini relativi a visita del 5 settembre/);
 });
 
+test('chi scrive per un altro: delegato, genitore di un minore, tutore o amministratore di sostegno', async () => {
+  const { genericRequest, delegateAttachment } = await import('../js/letters.js');
+  const base = { fullName: 'Giulia Bianchi', isDelegate: true, delegateName: 'Anna Bianchi', delegateCf: 'BNCNNA80A41G273X' };
+  const certo = { certNumber: 'X1', certDate: '2026-07-01', regime: 'new', deadlineInfo: { legal: 'art. 6 D.Lgs. 62/2024', days: 90, deadline: '2026-09-29' }, today: '2026-10-18' };
+  // Delegato (anche quando il ruolo non è scritto: come prima)
+  for (const p of [base, { ...base, delegateRole: 'delegato' }]) {
+    const t = inpsReminder({ provinceName: 'Palermo', person: p, ...certo });
+    assert.match(t, /in qualità di delegato\/a dell'assistito\/a, come da delega allegata/);
+    assert.match(t, /Allega: [^\n]*delega e documento del delegato/);
+  }
+  // Genitore di un minore: niente delega, «responsabilità genitoriale», «figlio/a minore»
+  const g = inpsReminder({ provinceName: 'Palermo', person: { ...base, delegateRole: 'genitore' }, ...certo });
+  assert.doesNotMatch(g, /delega/i);
+  assert.match(g, /Anna Bianchi[^\n]*\n?[^\n]*genitore esercente la responsabilità genitoriale/);
+  assert.match(g, /per il\/la figlio\/a minore/);
+  assert.match(g, /artt\. 316 e 320 c\.c\./);
+  // Tutore, amministratore di sostegno: decreto di nomina, niente delega
+  for (const [kind, name] of [['tutore', 'tutore'], ['amministratore', 'amministratore di sostegno'], [undefined, 'amministratore di sostegno']]) {
+    const p = { ...base, delegateRole: 'tutore', guardianKind: kind, decreeRef: 'del Tribunale di Palermo n. 12/2025' };
+    const t = genericRequest({ to: 'Distretto', person: p, subject: 'Richiesta', premise: ['x'], request: 'y', attachments: ['copia del documento di identità'], today: '2026-10-18' });
+    assert.match(t, new RegExp(`in qualità di ${name} dell'assistito/a`));
+    assert.match(t, /decreto del Tribunale di Palermo n\. 12\/2025/);
+    assert.match(t, /Allega: [^\n]*copia del decreto di nomina/);
+    assert.doesNotMatch(t, /delega/i);
+  }
+  const senzaDecreto = tutelaLetter({ aspName: 'Palermo', person: { ...base, delegateRole: 'tutore' }, cls: 'B', maxDays: 10, bookingDate: '2026-10-01', appointmentDate: '2026-11-20', today: '2026-10-18' });
+  assert.match(senzaDecreto, /decreto del Tribunale di __________/);
+  // Chi scrive per sé: nessun allegato in più, anche se è rimasto scelto un ruolo
+  assert.equal(delegateAttachment({ delegateRole: 'genitore' }), '');
+  assert.doesNotMatch(tutelaLetter({ aspName: 'Palermo', person: { fullName: 'Maria', delegateRole: 'tutore' }, cls: 'B', maxDays: 10, bookingDate: '2026-10-01', appointmentDate: '2026-11-20', today: '2026-10-18' }), /decreto|delega|genitore/);
+});
+
 test('i testi mostrati agli utenti non contengono note interne (TODO)', () => {
   const shown = (a) => JSON.stringify([a.how_to, a.documents_required, a.what_next, a.notes, a.details, a.fast_track, a.phones, a.scelta_medico]);
   for (const a of asp.asl) {
@@ -382,4 +414,31 @@ test('prevenzione per età e sesso; medico o pediatra', async () => {
   assert.equal(medicoChoice(m, { age: 13 }), 'pediatra-o-medico');
   assert.equal(medicoChoice(m, { age: 14 }), 'medico');
   for (const s of [...r.sources, ...m.sources]) assert.match(s.url, /^https:\/\//);
+});
+
+// Audit dei mutanti del 21/10/2026: errori che nessun test prendeva.
+test('festivi nazionali 2026-2030, giorno per giorno', async () => {
+  const { festivo } = await import('../js/engine.js');
+  // Elenco scritto a mano (L. 260/1949 e successive; 4 ottobre dal 2026, L. 151/2025). Non ci sono i santi patroni.
+  const fissi = ['01-01', '01-06', '04-25', '05-01', '06-02', '08-15', '10-04', '11-01', '12-08', '12-25', '12-26'];
+  const lunediAngelo = ['2026-04-06', '2027-03-29', '2028-04-17', '2029-04-02', '2030-04-22'];
+  const attesi = new Set([...[2026, 2027, 2028, 2029, 2030].flatMap((y) => fissi.map((md) => `${y}-${md}`)), ...lunediAngelo]);
+  const sbagliati = [];
+  for (let d = '2026-01-01'; d <= '2030-12-31'; d = addDays(d, 1)) {
+    if (festivo(d) !== attesi.has(d)) sbagliati.push(`${d}: festivo() dice ${festivo(d)}`);
+  }
+  assert.deepEqual(sbagliati, []);
+  assert.equal(festivo('2025-10-04'), false); // San Francesco festivo solo dal 2026
+});
+
+test('cartella clinica: ricorso al TAR dopo 30 giorni di silenzio, entro altri 30 (art. 25 L. 241/1990)', () => {
+  const rc = load('../data/rules-cartella.json');
+  assert.equal(rc.integration_days, 30);
+  assert.equal(rc.appeal_days, 30, 'appeal_days: 30 giorni per il ricorso al TAR (art. 25 c. 4 L. 241/1990). Se cambia, rileggi la legge');
+  // Lo stesso conto di js/cartella.js: dalla richiesta + integration_days, poi + appeal_days.
+  const src = readFileSync(new URL('../js/cartella.js', import.meta.url), 'utf8');
+  assert.match(src, /const from = addDays\(state\.requestDate, rules\.integration_days\);\s*const until = addDays\(from, rules\.appeal_days\);/);
+  const from = addDays('2026-09-01', rc.integration_days);
+  assert.equal(from, '2026-10-01');
+  assert.equal(addDays(from, rc.appeal_days), '2026-10-31');
 });

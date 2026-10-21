@@ -119,3 +119,26 @@ test('ogni sigla (PEC, ISEE, CUP, TAR, PUA, SAD) è spiegata nella pagina dove c
   }
   assert.deepEqual(errori, [], errori.join('\n'));
 });
+
+// Audit dei mutanti del 21/10/2026: errori che nessun test prendeva.
+const pagineSitemap = () => read('sitemap.xml').match(/<loc>(.*?)<\/loc>/g)
+  .map((x) => x.slice(5, -6).replace('https://guidasanita.it/', '')).map((u) => (u === '' || u.endsWith('/') ? `${u}index.html` : u));
+
+test('ogni elenco «Da dove vengono queste informazioni» ha almeno una fonte', () => {
+  const vuoti = [];
+  let blocchi = 0;
+  for (const f of pagineSitemap()) {
+    for (const [b] of read(f).matchAll(/<!-- fonti[\s\S]*?<!-- \/fonti -->/g)) {
+      blocchi++;
+      if (!/<li>\s*<a href="https:\/\//.test(b)) vuoti.push(f);
+    }
+  }
+  assert.ok(blocchi >= reg.modules.length, `trovati solo ${blocchi} elenchi di fonti`);
+  assert.deepEqual(vuoti, [], `pagine con l'elenco delle fonti vuoto (manca «sources» nei dati?):\n${vuoti.join('\n')}`);
+});
+
+test('nessuna pagina della sitemap è «noindex» (solo la 404 lo è)', () => {
+  const noindex = pagineSitemap().filter((f) => /<meta[^>]+name=["']robots["'][^>]*noindex|<meta[^>]+noindex[^>]+name=["']robots["']/i.test(read(f)));
+  assert.deepEqual(noindex, [], `pagine nella sitemap che Google non indicizzerebbe:\n${noindex.join('\n')}`);
+  assert.match(read('404.html'), /<meta name="robots" content="noindex">/);
+});

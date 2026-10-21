@@ -9,7 +9,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const SITE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const SALTA = new Set(['node_modules', '.git', 'tests', 'tools', 'docs', 'fonts', 'css']);
+const SALTA = new Set(['node_modules', '.git', '.claude', 'tests', 'tools', 'docs', 'fonts', 'css']);
 function files(dir = SITE) {
   return fs.readdirSync(dir, { withFileTypes: true }).flatMap((e) => {
     if (SALTA.has(e.name)) return [];
@@ -58,6 +58,8 @@ const ERRORI = [
   [/costo di riproduzione/, 'cartella: la prima copia è gratis (art. 15 GDPR)'],
   [/visita\/il procedimento/, 'sollecito INPS: nuova procedura = «il procedimento di valutazione di base doveva concludersi», vecchia oncologica = «la visita doveva svolgersi» (audit lettere del 21/10/2026)'],
   [/termine indicato come ordinario/, 'sollecito INPS, vecchia procedura ordinaria: i 30 giorni sono indicativi, la lettera dice solo quanti giorni sono passati'],
+  [/isDelegate \? \[?'(; )?delega e documento/, 'chi scrive per un\'altra persona: il genitore di un minore non allega la delega, il tutore e l\'amministratore di sostegno allegano il decreto di nomina (usa delegateAttachment())'],
+  [/di chi fa la richiesta per lei, con la <strong>delega/, 'RSA: chi non può firmare (per esempio con una demenza) non firma la delega: firma il tutore o l\'amministratore di sostegno, con il decreto'],
   [/secondo i tempi indicati dalla normativa vigente/, 'i 30 giorni della vecchia procedura INPS sono indicativi (rules-invalidita.json): la lettera non li cita come norma'],
   // Audit dei testi del 21/10/2026 (sera).
   [/"number": "800 \d{3} \d{3}"/, 'numeri verdi: «800 123456» (docs/regola-numeri.md)'],
@@ -68,6 +70,9 @@ const ERRORI = [
   [/\b([Gg]uarda|vale la pagina) <a [^>]*>(la visita è|il verbale è|la visita per l.invalidità non)/, 'il titolo di una pagina non va dentro la frase come link: «Leggi cosa fare se …»'],
   [/Non andare dal privato a pagamento prima di/, "liste d'attesa: «Vai dal privato a pagamento solo se l'ASL te lo scrive»"],
   [/"title": "(Non mi danno|Ho diritto|[^"]*l'ho persa|[^"]*posso fare)/, "titoli in data/moduli.json come l'h1 della pagina: si dà del tu («Non ti danno», «l'hai persa»)"],
+  // Audit dei mutanti del 21/10/2026: regole regionali scritte per tutti, regole nazionali scritte come siciliane.
+  [/20 giorni dalla consegna/, 'ausili: il collaudo entro 20 giorni è una regola della Sicilia: «In Sicilia entro 20 giorni dalla consegna»', /Sicili|"notes_internal"/],
+  [/\bin Sicilia\b[^.\n]{0,80}180 giorni|180 giorni[^.\n]{0,80}\bin Sicilia\b/, 'ricetta per visite ed esami: i 180 giorni sono una regola nazionale (ricette dal 30/12/2024), non solo siciliana', /regola nazionale/],
 ];
 
 test('nessuno degli errori già trovati è tornato', () => {

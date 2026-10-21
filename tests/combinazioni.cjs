@@ -167,6 +167,10 @@ for (const [off, h1, name] of [[31, 'Sei ancora in tempo', 'mancano 31 giorni'],
   const v = verbaleFor(add(TODAY, off));
   if (v) cases.push({ mod: 6, name: `RIC · ${name}`, verbale: v, expectH1: h1, deadline: add(TODAY, off), today: off === 0 });
 }
+// Con meno di 15 giorni non si scoraggia («qualche settimana»): si dice di andare oggi stesso.
+for (const [v, name] of [[addM(TODAY, -6), 'verbale di 6 mesi fa (scade adesso)'], [add(addM(TODAY, -6), 9), 'verbale di 6 mesi fa più 9 giorni']]) {
+  if (scadRic(v) >= TODAY) cases.push({ mod: 6, name: `RIC · ${name}`, verbale: v, expectH1: 'Muoviti subito: manca poco', deadline: scadRic(v), vietato: 'qualche settimana', richiesto: 'Vai oggi stesso' });
+}
 cases.push({ mod: 6, name: 'RIC · scaduto da un anno', verbale: addM(TODAY, -18), expectH1: 'I 6 mesi sono passati', deadline: scadRic(addM(TODAY, -18)) });
 cases.push({ mod: 6, name: 'RIC · data nel futuro', verbale: add(TODAY, 1), expectReqError: true });
 
@@ -403,6 +407,8 @@ async function runCase(page, c) {
     const text = await checkScreen('risultato');
     if (c.deadline && !text.includes(fmt(c.deadline))) problems.push(`scadenza attesa ${fmt(c.deadline)} non mostrata`);
     if (c.today && !text.includes('Scade oggi')) problems.push('manca «Scade oggi»');
+    if (c.vietato && text.includes(c.vietato)) problems.push(`con pochi giorni c'è ancora «${c.vietato}»`);
+    if (c.richiesto && !text.includes(c.richiesto)) problems.push(`manca «${c.richiesto}»`);
     return problems;
   }
 
@@ -612,6 +618,20 @@ async function runCase(page, c) {
     if (/undefined|NaN|null/.test(t)) problems.push('sollecito con testo sospetto');
     const mail = await page.locator('#mail-btn').getAttribute('href');
     if (!mail.startsWith(`mailto:${c.pr.pec}?`)) problems.push('PEC INPS sbagliata');
+    // Chi scrive per un altro: per un minore firma il genitore (senza delega), il tutore allega il decreto.
+    await page.check('input[name=isDelegate]'); await page.fill('#f-delegateName', 'Luca Rossi');
+    const role = await page.locator('input[name=delegateRole]:checked').getAttribute('value');
+    if (role !== (c.cat === 'minor' ? 'genitore' : 'delegato')) problems.push(`ruolo di chi scrive: atteso ${c.cat === 'minor' ? 'genitore' : 'delegato'}, scelto ${role}`);
+    const td = await page.locator('#preview').innerText();
+    if (c.cat === 'minor') {
+      if (!td.includes('responsabilità genitoriale') || /delega/i.test(td)) problems.push('sollecito per un minore: deve firmare il genitore, senza delega');
+      const note = await page.locator('.delegate-note').innerText();
+      if (/delega firmata/.test(note)) problems.push('«Prima di mandarla» chiede la delega per un minore');
+    } else if (!td.includes('come da delega allegata')) problems.push('sollecito del delegato senza la delega');
+    await page.check('input[name=delegateRole][value=tutore]');
+    if (!(await page.locator('#f-guardianKind').isVisible())) problems.push('tutore: campi del decreto nascosti');
+    const tt = await page.locator('#preview').innerText();
+    if (!tt.includes('in qualità di amministratore di sostegno') || !tt.includes('copia del decreto di nomina') || /delega/i.test(tt)) problems.push('sollecito del tutore/amministratore di sostegno sbagliato');
     await checkScreen('sollecito');
   }
   return problems;

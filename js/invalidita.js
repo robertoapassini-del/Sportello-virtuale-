@@ -7,7 +7,7 @@ import { invRegime, invDeadline, todayISO, formatIt, parseDate, daysBetween, art
 import { inpsReminder, mailtoHref } from './letters.js';
 import { noPecBox,
   esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton,
-  personFields, reportErrorHref, choice, helpBox, sourcesBox, moreHelp, hideHeadingEmoji, enableStart, aslLabel,
+  personFields, reportErrorHref, choice, helpBox, sourcesBox, moreHelp, hideHeadingEmoji, enableStart, aslLabel, syncDelegate, delegateNoteText,
 } from './common.js';
 import { createNav, withRegion, regionAction } from './flow.js';
 
@@ -277,6 +277,8 @@ const screens = {
   letter: () => {
     const p = prov();
     const r = regime();
+    // Per un minore scrive il genitore: firma come genitore, senza delega (artt. 316 e 320 c.c.).
+    if (state.category === 'minor' && !person.delegateRole) person.delegateRole = 'genitore';
     return {
       html: `<h1>✍️ Scriviamo il sollecito insieme</h1>
         <p>Scrivi i dati qui sotto. Noi li mettiamo nella lettera per l'INPS di ${esc(p.name)}.</p>
@@ -311,7 +313,7 @@ const screens = {
             <li><span class="ico" aria-hidden="true">🪪</span> Allega: documento d'identità (fotocopia o foto)</li>
             <li><span class="ico" aria-hidden="true">📄</span> Allega: ricevuta del certificato</li>
             ${r === 'old' ? '<li><span class="ico" aria-hidden="true">🧾</span> Allega: ricevuta della domanda</li>' : ''}
-            <li class="delegate-note"${person.isDelegate ? '' : ' hidden'}><span class="ico" aria-hidden="true">📝</span> Allega: la delega firmata e il tuo documento</li>
+            <li class="delegate-note"${person.isDelegate ? '' : ' hidden'}><span class="ico" aria-hidden="true">📝</span> <span class="delegate-note-text">${esc(delegateNoteText(person))}</span></li>
           </ul>
         </div>
         <p class="muted">Indirizzo PEC: ${mailLink(p.pec)}${p.pec_verified ? '' : ' (stiamo ancora controllando questo indirizzo)'} ·
@@ -326,8 +328,7 @@ const screens = {
           state.certNumber = v.certNumber; state.domandaNumber = v.domandaNumber;
           delete v.certNumber; delete v.domandaNumber;
           Object.assign(person, v);
-          form.querySelector('.delegate-fields').hidden = !person.isDelegate;
-          document.querySelectorAll('.delegate-note').forEach((li) => { li.hidden = !person.isDelegate; });
+          syncDelegate(form, person);
           const text = inpsReminder({
             provinceName: p.name, inpsPec: p.pec, person, certNumber: state.certNumber, certDate: state.certDate,
             domandaDate: state.domandaDate, domandaNumber: state.domandaNumber, regime: r, category: state.category, deadlineInfo: deadline(), today: todayISO(),
