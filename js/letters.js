@@ -139,7 +139,8 @@ PREMESSO CHE
 
 SOLLECITA
 la consegna della documentazione richiesta nel più breve tempo possibile e chiede di essere informato/a
-per iscritto su data e modalità di ritiro, nonché sull'eventuale costo di riproduzione.
+per iscritto su data e modalità di ritiro. Chiede inoltre che la prima copia sia rilasciata gratuitamente,
+ai sensi dell'art. 15 del Regolamento UE 2016/679 (GDPR).
 ${delegateBlock(p)}
 Allega: copia del documento di identità; copia della richiesta ${art('del', requestDate)}${requestDate ? formatIt(requestDate) : '__________'}${p.isDelegate ? '; delega e documento del delegato' : ''}.
 

@@ -214,7 +214,12 @@ const screens = {
     }
 
     if (d.kind === 'domanda') {
-      const body = d.status === 'passed'
+      const body = d.lateDomanda
+        ? `<div class="hero" aria-hidden="true">⏰</div>
+           <h1>Il tempo per la domanda era finito</h1>
+           <div class="notice bad"><p>Bisognava fare la domanda entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>. È stata fatta ${art('il', d.domandaDate)}${esc(formatIt(d.domandaDate))}, ${days(d.daysLate)} dopo.</p>
+           <p><strong>Il certificato potrebbe non valere più: controlla con un patronato.</strong> Prima di sollecitare l'INPS, chiedi se serve un nuovo certificato del medico.</p></div>`
+        : d.status === 'passed'
         ? `<div class="hero" aria-hidden="true">⏰</div>
            <h1>Il tempo per la domanda è finito</h1>
            <div class="notice bad"><p>Bisognava fare la domanda entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>.</p>

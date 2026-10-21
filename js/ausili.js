@@ -5,7 +5,7 @@
 import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween, art } from './engine.js';
 import { ausiliReminder, mailtoHref } from './letters.js';
 import { noPecBox,
-  esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, officeBox, personFields, reportErrorHref, generalContact, aslLabel, aslIntestazione,
+  esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, aspCalls, officeBox, personFields, reportErrorHref, complaintTo, aslLabel, aslIntestazione,
 } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
 
@@ -34,7 +34,7 @@ function sources() {
 const steps = () => `
   <h2>Come funziona</h2>
   <ol class="big-steps">
-    <li><strong>La prescrizione.</strong> La scrive ${esc(rules.who_prescribes)}. Di solito serve avere l'invalidità riconosciuta, o la domanda già fatta.</li>
+    <li><strong>La prescrizione.</strong> La scrive ${esc(rules.who_prescribes)}. Di solito serve avere l'invalidità riconosciuta, o la domanda già fatta. Per pannoloni e traverse le regole di prescrizione cambiano da regione a regione: chiedi al distretto chi può prescriverli.</li>
     <li><strong>La domanda all'${aslLabel()}.</strong> Porti la prescrizione all'ufficio «assistenza protesica» del tuo distretto. Chiedi una ricevuta con la data.</li>
     <li><strong>L'autorizzazione.</strong> L'${aslLabel()} deve rispondere entro <strong>${rules.authorization_days} giorni</strong>. Se non risponde, vale come un sì.</li>
     <li><strong>La consegna.</strong> Un fornitore convenzionato ti porta l'ausilio. Poi il medico lo controlla (si chiama collaudo).</li>
@@ -121,7 +121,7 @@ const screens = {
         <ol class="big-steps">
           <li><strong>Telefona o vai all'ufficio protesica</strong> con la ricevuta. Di' che i ${rules.authorization_days} giorni sono passati.</li>
           <li><strong>Manda una lettera di sollecito</strong> all'${aslLabel()}. La scriviamo insieme.</li>
-          <li><strong>Se ancora niente:</strong> reclamo all'URP dell'${aslLabel()} di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''},
+          <li><strong>Se ancora niente:</strong> reclamo ${complaintTo(a)},
             un patronato, oppure Cittadinanzattiva (<a href="https://www.cittadinanzattiva.it" target="_blank" rel="noopener">cittadinanzattiva.it</a>).</li>
         </ol>
         ${protesica(a) || aspCalls(a)}
@@ -141,7 +141,7 @@ const screens = {
         <ol class="big-steps">
           <li><strong>Chiama il fornitore</strong> scritto sull'autorizzazione e chiedi la data di consegna.</li>
           <li><strong>Chiama l'ufficio protesica dell'${aslLabel()}</strong> e chiedi quanti giorni ha il fornitore per consegnare.</li>
-          <li><strong>Se il tempo è passato:</strong> reclamo scritto all'${aslLabel()} (URP${generalContact(a) ? `: ${mailLink(generalContact(a))}` : ''}). Un patronato può aiutarti.</li>
+          <li><strong>Se il tempo è passato:</strong> reclamo scritto ${complaintTo(a)}. Un patronato può aiutarti.</li>
         </ol>
         <div class="notice info"><p>Quando l'ausilio arriva, il medico deve controllarlo (collaudo) entro ${rules.collaudo_days} giorni. Se non va bene, può essere sostituito.</p></div>
         ${protesica(a) || aspCalls(a)}

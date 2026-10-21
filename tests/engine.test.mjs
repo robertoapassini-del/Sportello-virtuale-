@@ -132,6 +132,17 @@ test('invalidità: old regime', () => {
   assert.equal(ord.indicative, true);
   assert.equal(ord.deadline, '2026-10-10');
   assert.equal(invDeadline(rulesInv, { regime: 'old', category: 'other', certDate: '2026-09-10', domandaDate: '2026-09-01' }).error, 'order');
+  // Domanda fatta oltre i 90 giorni dal certificato: niente sollecito «regolare», è il caso del tempo finito.
+  const t = '2026-10-18';
+  const late = invDeadline(rulesInv, { regime: 'old', category: 'other', certDate: addDays(t, -200), domandaDate: addDays(t, -40), today: t });
+  assert.equal(late.kind, 'domanda');
+  assert.equal(late.status, 'passed');
+  assert.equal(late.lateDomanda, true);
+  assert.equal(late.deadline, addDays(t, -200 + rulesInv.old_regime.domanda_window_days));
+  assert.equal(late.daysLate, 200 - 40 - rulesInv.old_regime.domanda_window_days);
+  // Al 90° giorno la domanda vale ancora.
+  const ok = invDeadline(rulesInv, { regime: 'old', category: 'other', certDate: '2026-06-01', domandaDate: addDays('2026-06-01', rulesInv.old_regime.domanda_window_days), today: t });
+  assert.equal(ok.kind, 'visit');
   assert.equal(invDeadline(rulesInv, { regime: 'new', category: 'other', certDate: '2026-12-01', today: '2026-10-18' }).error, 'future');
 });
 

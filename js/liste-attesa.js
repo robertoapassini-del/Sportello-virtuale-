@@ -7,7 +7,7 @@ import { checkWaiting, callbackDeadline, maxWaitDays, todayISO, formatIt, parseD
 import { tutelaLetter, tutelaReminder, mailtoHref } from './letters.js';
 import { noPecBox,
   esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton, aspCalls,
-  personFields, reportErrorHref, generalContact, choice, helpBox, sourcesBox, moreHelp, hideHeadingEmoji, enableStart, aslLabel, aslIntestazione, regione, regioneInfo, regioneLink,
+  personFields, reportErrorHref, generalContactInfo, choice, helpBox, sourcesBox, moreHelp, hideHeadingEmoji, enableStart, aslLabel, aslIntestazione, regione, regioneInfo, regioneLink,
 } from './common.js';
 import { RICETTA_SVG } from './ricetta-svg.js';
 import { createNav, withRegion, regionAction } from './flow.js';
@@ -92,7 +92,7 @@ const warnings = () => `
   <div class="card">
     <h2 style="margin-top:0">❗ Importante</h2>
     <ul class="icon-list">
-      <li><span class="ico" aria-hidden="true">💶</span> Non andare dal privato a pagamento prima di mandare la richiesta. Potresti non avere i soldi indietro.</li>
+      <li><span class="ico" aria-hidden="true">💶</span> Non andare dal privato a pagamento prima di mandare la richiesta, e poi solo se l'${aslLabel()} te lo scrive. Potresti non avere i soldi indietro.</li>
       <li><span class="ico" aria-hidden="true">🧾</span> Conserva il foglio della prenotazione.</li>
       <li><span class="ico" aria-hidden="true">📅</span> Non perdere l'appuntamento che hai già. Se non ci vai, disdicilo: altrimenti potresti pagare il ticket.</li>
     </ul>
@@ -263,6 +263,7 @@ const screens = {
       <h1>Così la legge non ti aiuta</h1>
       <p>Se non prendi la prima data offerta, perdi questo diritto.</p>
       <p><strong>Cosa puoi fare:</strong> prenota di nuovo e prendi la prima data. Se è ancora troppo lontana, torna qui.</p>
+      <p>Tieni l'appuntamento che hai finché non ne hai uno nuovo; poi disdici quello vecchio, altrimenti potresti pagare il ticket.</p>
       ${restartBtn()}`,
   }),
 
@@ -458,11 +459,15 @@ const screens = {
     const a = asp();
     const today = todayISO();
     if (!state.firstRequestDate) state.firstRequestDate = today;
+    // Con la classe U non si aspetta il sollecito; con la B si sollecita prima che finisca il tempo della classe.
+    const urgent = state.cls === 'U';
+    const remindAfter = state.cls === 'B' ? Math.min(rules.reminder_after_days, rules.max_wait_days.B) : rules.reminder_after_days;
     const remindTitle = () => {
-      const on = addDays(state.firstRequestDate, rules.reminder_after_days);
+      if (urgent) return `Se entro ${days(rules.max_wait_days.U - 1)} nessuno ti chiama, telefona subito all'${aslLabel()} e al tuo medico`;
+      const on = addDays(state.firstRequestDate, remindAfter);
       return `Se nessuno ti risponde entro ${art('il', on)}${formatIt(on)}`;
     };
-    const urp = generalContact(a);
+    const { addr: urp, kind: urpKind } = generalContactInfo(a);
     return {
       html: `
         <div class="hero" aria-hidden="true">⏳</div>
@@ -475,7 +480,7 @@ const screens = {
         <h2 id="remind-title">${esc(remindTitle())}</h2>
         <ol class="big-steps">
           <li><strong>Manda un sollecito</strong>: una seconda lettera per ricordarlo all'${aslLabel()}. La trovi qui sotto, già pronta.</li>
-          <li><strong>Fai un reclamo</strong> all'ufficio URP della tua ${aslLabel()}${urp ? ` (${mailLink(urp)})` : ''}.</li>
+          <li><strong>Fai un reclamo</strong> ${urpKind === 'pec' ? `alla PEC dell'${aslLabel()} (${mailLink(urp)})` : `all'ufficio URP della tua ${aslLabel()}${urp ? ` (${urpKind === 'email' ? `email dell'${aslLabel()}: ` : ''}${mailLink(urp)})` : ''}`}.</li>
           <li><strong>Chiedi aiuto a un'associazione</strong> di pazienti: Cittadinanzattiva
             (<a href="https://www.cittadinanzattiva.it" target="_blank" rel="noopener">cittadinanzattiva.it</a>) oppure
             Associazione Luca Coscioni (<a href="https://www.associazionelucacoscioni.it" target="_blank" rel="noopener">associazionelucacoscioni.it</a>).</li>

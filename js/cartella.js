@@ -6,7 +6,7 @@
 import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
 import { cartellaReminder, mailtoHref } from './letters.js';
 import { noPecBox,
-  esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, officeBox, personFields, reportErrorHref, generalContact, aslLabel, regioneInfo, regioneLink, regione,
+  esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, officeBox, personFields, reportErrorHref, generalContactInfo, aslLabel, regioneInfo, regioneLink, regione,
 } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
 
@@ -20,6 +20,14 @@ const state = {};
 const person = {};
 
 const asp = () => data.asl.find((a) => a.id === state.province);
+// Contatto dell'azienda sanitaria per il reclamo: vale solo se l'ospedale è suo (i grandi ospedali hanno un URP loro).
+// Se c'è solo la PEC generale, si chiama PEC, non URP.
+const aspComplaint = (a) => {
+  const { addr, kind } = generalContactInfo(a);
+  if (!addr) return '';
+  const label = { urp: 'URP', pec: `PEC dell'${aslLabel()}`, email: `email dell'${aslLabel()}` }[kind];
+  return ` di ${esc(a.province)}: ${label} ${mailLink(addr)}`;
+};
 const deadline = () => simpleDeadline({ fromDate: state.requestDate, days: rules.deadline_days, today: todayISO() });
 
 const whatLabel = { cartella: 'la cartella clinica', referti: 'i referti o le immagini', altro: 'i documenti sanitari' };
@@ -141,7 +149,7 @@ const screens = {
         <ol class="big-steps">
           <li><strong>Telefona o vai all'ufficio cartelle cliniche</strong> con la ricevuta. Spesso basta questo.</li>
           <li><strong>Manda una lettera di sollecito</strong> alla Direzione sanitaria dell'ospedale. La scriviamo insieme.</li>
-          <li><strong>Se ancora niente:</strong> reclamo all'URP dell'${aslLabel()} di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''}, oppure a Cittadinanzattiva
+          <li><strong>Se ancora niente:</strong> reclamo all'URP dell'ospedale (o dell'${aslLabel()}, se l'ospedale è dell'${aslLabel()}${aspComplaint(a)}), oppure a Cittadinanzattiva
             (<a href="https://www.cittadinanzattiva.it" target="_blank" rel="noopener">cittadinanzattiva.it</a>). ${tarText()}</li>
         </ol>
         ${officeBox(a, 'cartelle', '🏥 Gli uffici cartelle cliniche', "Chiama quello dell'ospedale dove c'è stato il ricovero.") || aspCalls(a)}

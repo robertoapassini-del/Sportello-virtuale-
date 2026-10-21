@@ -4,7 +4,7 @@
 // prepariamo un sollecito al distretto. Non chiediamo la malattia.
 import { todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
 import { genericRequest, mailtoHref } from './letters.js';
-import { noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact, aslLabel, regioneInfo, inRegione, regioneLink, aslIntestazione, regione, regioneNonPronta } from './common.js';
+import { noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact, complaintTo, aslLabel, regioneInfo, inRegione, regioneLink, aslIntestazione, regione, regioneNonPronta } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
 
 const ROOT = '../';
@@ -33,7 +33,7 @@ const steps = () => `
     <li><strong>Parla con il medico di famiglia.</strong> È lui che compila la richiesta di assistenza domiciliare e la manda al distretto. Se la persona è in ospedale, chiedi al reparto la <strong>«dimissione protetta»</strong>: la richiesta parte dall'ospedale prima che torni a casa.</li>
     <li><strong>La richiesta arriva al PUA</strong> (Punto Unico di Accesso) del distretto dell'${aslLabel()}. Chiedi al medico una copia o il numero della richiesta, con la data.</li>
     <li><strong>Una équipe viene a casa</strong> per la valutazione (si chiama UVM) e scrive il piano: quante volte a settimana, quali figure (infermiere, fisioterapista, medico, operatore).</li>
-    <li><strong>Iniziano le visite a casa.</strong> È tutto <strong>gratuito</strong>.</li>
+    <li><strong>Iniziano le visite a casa.</strong> Le cure sanitarie sono <strong>gratuite</strong>; per l'aiuto dell'operatore (OSS), dopo i primi 30 giorni dall'uscita dall'ospedale, può esserci una parte da pagare: chiedi al distretto.</li>
   </ol>
   <details class="card">
     <summary>Cosa comprende e cosa no</summary>
@@ -157,7 +157,7 @@ const screens = {
         <ol class="big-steps">
           <li><strong>Chiedi al medico di famiglia</strong> di chiedere una nuova valutazione (rivalutazione) al distretto: il piano si può aumentare.</li>
           <li><strong>Chiama il PUA del distretto</strong> e chiedi perché si è interrotta e quando riprende. Segnati nome e data.</li>
-          <li><strong>Se non cambia niente:</strong> reclamo all'URP dell'${aslLabel()} di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''}. Puoi usare la lettera qui sotto.</li>
+          <li><strong>Se non cambia niente:</strong> reclamo ${complaintTo(a)}. Puoi usare la lettera qui sotto.</li>
         </ol>
         ${aspCalls(a, ['casa'])}
         <button type="button" class="btn primary" data-go="letter">✍️ Scriviamo la lettera insieme</button>

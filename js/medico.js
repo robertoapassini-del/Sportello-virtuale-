@@ -81,7 +81,7 @@ const screens = {
     const a = asp();
     const extra = {
       change: `<p>Non serve un motivo e non serve avvisare il vecchio medico: con la nuova scelta, il vecchio viene tolto in automatico.</p>`,
-      retire: `<div class="notice info"><p>Quando un medico va in pensione, l'${aslLabel()} di solito avvisa i pazienti. Hai tempo per sceglierne un altro: fallo appena puoi, per non restare senza ricette.</p></div>`,
+      retire: `<div class="notice info"><p>Quando un medico va in pensione, l'${aslLabel()} di solito avvisa i pazienti. Dal giorno in cui lascia non hai più un medico: scegline subito un altro, per non restare senza ricette.</p></div>`,
       temporary: `<div class="notice info"><p>Puoi fare una <strong>scelta temporanea</strong> nel comune dove vivi, da ${rules.temporary_months[0]} mesi a ${rules.temporary_months[1]} mesi, rinnovabile. Porta anche una prova del motivo: iscrizione all'università o contratto di lavoro.</p></div>`,
     }[state.situation];
     return {

@@ -52,6 +52,9 @@ const ERRORI = [
   [/in questa guida<\/a> la (prepara|scrive)(?![^.]*solo per la Sicilia)/, 'la lettera già scritta c\'è per ora solo per la Sicilia: dirlo (fuori dalla Sicilia il percorso si ferma)'],
   [/data-go="\$\{(esc\()?first\)?\}"[^`]*Leggi cosa vale/, '«Leggi cosa vale in tutta Italia» riportava all\'inizio del modulo: giro senza uscita (va alla guida #guida)'],
   [/DM 24\/11\/2022/, 'bonus psicologo: il decreto è del 24/11/2023'],
+  [/tutto\s*(<strong>)?\s*gratuit/i, 'ADI: gratuite solo le cure sanitarie (DPCM 2017 art. 22)', /ricovero è <strong>tutto gratuito|tutto gratuito per più di 29/],
+  [/Non andare dal privato a pagamento prima di (aver )?mandat[oa] la richiesta[.:]/, "liste d'attesa: dal privato solo dopo la richiesta e solo se l'ASL lo scrive (rilettura del 21/10/2026)"],
+  [/costo di riproduzione/, 'cartella: la prima copia è gratis (art. 15 GDPR)'],
   [/secondo i tempi indicati dalla normativa vigente/, 'i 30 giorni della vecchia procedura INPS sono indicativi (rules-invalidita.json): la lettera non li cita come norma'],
 ];
 
