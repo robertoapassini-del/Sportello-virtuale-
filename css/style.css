@@ -445,6 +445,8 @@ details.help .ico { color: var(--ok); }
 .page-band h1, .page-band p, .page-band strong { color: #fff; }
 .page-band h1 { margin-bottom: 8px; }
 .page-band .lead, .page-band .home-trust { color: #fff; margin-bottom: 0; }
+.page-band .home-regione { color: #fff; margin: 10px 0 0; font-size: 0.9rem; }
+.page-band .home-regione a { color: #fff; }
 .page-band .topbar { margin-bottom: 4px; }
 .page-band .back { color: #fff; }
 .page-band .hero { background: #fff; border: none; margin-top: 0; }

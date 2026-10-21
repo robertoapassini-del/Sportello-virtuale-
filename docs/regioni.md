@@ -142,6 +142,16 @@ sempre riconoscibile: titolo «In Sicilia» (il nome della regione), bordo color
    scriverci; la parte nazionale per chi le sceglie arriva al passo 3.
 3. **Un modulo multi‑regione per prova**: Numeri utili o Esenzione ticket (pochi dati regionali), con la seconda
    regione. Si rivedono i testi: `asl_label` al posto di «ASP», blocco regionale ben separato dal testo nazionale.
+   **Fatto (21/10/2026), il codice:**
+   - `loadRegional(root, 'asl')` prende il nome del file dall'indice (`files`), i test dei contatti girano su tutte
+     le regioni attive, `aslLabel()` dà la sigla dell'azienda sanitaria.
+   - Anche le regioni non attive si possono scegliere: nei moduli, al posto della provincia, c'è «La tua regione non
+     c'è ancora» con il link alla parte nazionale e l'invito a scriverci.
+   - Numeri utili è il modulo di prova: titoli con la regione e la sigla giusta, cambio di regione senza ricaricare la
+     pagina, `numeri-utili/#regione` apre la scelta. In home, con più regioni, «Stai guardando: … · Cambia regione».
+   - Con la sola Sicilia attiva non si vede niente di nuovo.
+   **Da fare:** i dati della Lombardia (le pagine ufficiali sono in `data/regioni/lombardia/fonti.json`, il server
+   le copia ogni notte) e i testi degli altri moduli che parlano di «ASP» e di uffici siciliani.
 4. **Le altre regioni**, una alla volta, con la stessa regola dei numeri (`docs/regola-numeri.md`): solo fonti
    ufficiali, data e prova. Si parte da quelle con più abitanti o più richieste.
 5. **Pagine regionali indicizzabili** dove serve (percorso di tutela, numeri utili).

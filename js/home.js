@@ -1,7 +1,7 @@
 // Pagina iniziale: la domanda e 4 grandi riquadri, uno per area. Ogni riquadro porta
 // alla pagina dell'area (per esempio visite-esami/), come la home di NHS.uk.
 // La ricerca è nella testata: qui i risultati compaiono mentre si scrive.
-import { esc, loadJSON, renderFooter, helpBox, sourcesBox } from './common.js';
+import { esc, loadJSON, loadRegioni, renderFooter, helpBox, sourcesBox, aslLabel, regioniAttive, regioneInfo, regioneSalvata } from './common.js';
 
 const app = document.getElementById('app');
 let reg;
@@ -11,12 +11,18 @@ function card(href, icon, title, small) {
   return `<a class="btn choice" href="${esc(href)}"><span class="ico" aria-hidden="true">${icon}</span><span class="txt">${esc(title)}${small ? ` <small>${esc(small)}</small>` : ''}</span></a>`;
 }
 
-// Chi siamo in una riga sopra le scelte; il resto sotto.
-const intro = () => `
+// Chi siamo in una riga sopra le scelte; il resto sotto. Con una regione sola: «Per ora solo in Sicilia».
+// Con più regioni: quale si sta guardando e il link per cambiarla (la scelta è in Numeri utili).
+function intro() {
+  const scelta = regioneSalvata() || regioneInfo();
+  const piu = regioniAttive().length > 1;
+  return `
   <section class="home-intro page-band">
   <h1>Di cosa hai bisogno?</h1>
-  <p class="home-trust">Gratis. Siamo volontari: <strong>non siamo l'ASP né l'INPS</strong>. Per ora solo in Sicilia.</p>
+  <p class="home-trust">Gratis. Siamo volontari: <strong>non siamo l'${esc(scelta.asl_label || aslLabel())} né l'INPS</strong>.${piu ? '' : ` Per ora solo in ${esc(regioneInfo().name)}.`}</p>
+  ${piu ? `<p class="home-regione">📍 Stai guardando: <strong>${esc(scelta.name)}</strong> · <a href="numeri-utili/#regione">Cambia regione</a></p>` : ''}
   </section>`;
+}
 
 const results = `
   <section class="home-results" id="q-box" hidden>
@@ -93,7 +99,7 @@ function showResults(text) {
 (async function init() {
   renderFooter('');
   try {
-    reg = await loadJSON('data/moduli.json');
+    [reg] = await Promise.all([loadJSON('data/moduli.json'), loadRegioni('')]);
     const names = [...new Set(reg.modules.flatMap((m) => m.data))].filter((n) => n.startsWith('rules'));
     rulesSources = (await Promise.all(names.map((n) => loadJSON(`data/${n}.json`)))).flatMap((r) => r.sources);
   } catch {

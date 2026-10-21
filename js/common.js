@@ -73,15 +73,23 @@ export const regioni = () => (indice ? indice.regioni : []);
 export const regioniAttive = () => regioni().filter((r) => r.attiva);
 // Vero se la regione salvata è una di quelle attive.
 export const regioneScelta = () => regioniAttive().some((r) => r.id === savedRegione());
+// La regione salvata, anche se non è ancora attiva (null se non c'è o non è nell'indice).
+// Chi sceglie una regione non attiva vede la parte valida in tutta Italia e l'invito a segnalarcela.
+export const regioneSalvata = () => regioni().find((r) => r.id === savedRegione()) || null;
+export const regioneNonPronta = () => { const r = regioneSalvata(); return r && !r.attiva ? r : null; };
+// La regione dei dati: quella salvata se è attiva, altrimenti la predefinita dell'indice.
 export function regione() {
   if (!indice) return REGIONE_DEFAULT;
   return regioneScelta() ? savedRegione() : (indice.default || REGIONE_DEFAULT);
 }
 // La voce dell'indice della regione in uso (nome, asl_label…).
 export const regioneInfo = () => regioni().find((r) => r.id === regione()) || { id: regione(), name: 'Sicilia' };
+// Come si chiama l'azienda sanitaria nella regione in uso: ASP in Sicilia, ATS in Lombardia…
+export const aslLabel = () => regioneInfo().asl_label || 'ASP';
 // La regione di cui la pagina ha caricato i dati: se l'utente ne sceglie un'altra, la pagina si ricarica.
 export const regioneDeiDati = () => regioneCaricata;
-export const regionalPath = (root, name) => `${root}data/regioni/${regione()}/${name}.json`;
+// name è il tipo di dati ('asl', 'inps'); il nome del file lo dà l'indice (files), se è diverso.
+export const regionalPath = (root, name) => `${root}data/regioni/${regione()}/${(regioneInfo().files || {})[name] || name}.json`;
 export async function loadRegional(root, name) {
   await loadRegioni(root);
   regioneCaricata = regione();
@@ -116,8 +124,8 @@ export function helpBox() {
       <li><span class="ico" aria-hidden="true">💊</span> La farmacia</li>
       <li><span class="ico" aria-hidden="true">👨‍⚕️</span> Il tuo medico di famiglia</li>
       <li><span class="ico" aria-hidden="true">🏢</span> Un patronato (per esempio INCA, ACLI, INAS). È gratis.</li>
-      <li><span class="ico" aria-hidden="true">🏥</span> L'ufficio URP della tua ASP: è l'ufficio che ascolta i cittadini</li>
-      <li><span class="ico" aria-hidden="true">📞</span> <a href="${siteRoot()}numeri-utili/">I numeri utili: guardia medica, CUP, ASP, INPS</a></li>
+      <li><span class="ico" aria-hidden="true">🏥</span> L'ufficio URP della tua ${esc(aslLabel())}: è l'ufficio che ascolta i cittadini</li>
+      <li><span class="ico" aria-hidden="true">📞</span> <a href="${siteRoot()}numeri-utili/">I numeri utili: guardia medica, CUP, ${esc(aslLabel())}, INPS</a></li>
     </ul>
     <p>Puoi mostrare questa pagina a chi ti aiuta.</p>
   </details>`;

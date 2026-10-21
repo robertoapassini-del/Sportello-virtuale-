@@ -195,7 +195,7 @@ const screens = {
 let flow;
 (async function init() {
   renderFooter(ROOT);
-  try { [rules, data] = await Promise.all([loadJSON(`${ROOT}data/rules-medico.json`), loadRegional(ROOT, 'asp')]); } catch {
+  try { [rules, data] = await Promise.all([loadJSON(`${ROOT}data/rules-medico.json`), loadRegional(ROOT, 'asl')]); } catch {
     app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>'; return;
   }
   flow = createFlow({ app, screens, state, sources, person });

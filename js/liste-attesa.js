@@ -582,7 +582,7 @@ function updateLetter(a, official) {
 (async function init() {
   renderFooter(ROOT);
   try {
-    [rules, data] = await Promise.all([loadJSON(`${ROOT}data/rules.json`), loadRegional(ROOT, 'asp')]);
+    [rules, data] = await Promise.all([loadJSON(`${ROOT}data/rules.json`), loadRegional(ROOT, 'asl')]);
   } catch {
     app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>';
     return;
