@@ -1,0 +1,454 @@
+{
+ "_note": "Sardegna in preparazione: solo gli indirizzi delle pagine ufficiali da far copiare al server in Italia (tools/copie.mjs). Dalle homepage (site_url) il server segue anche i link su contatti, URP, CUP, guardia medica, PUA e cure domiciliari. Indirizzi trovati con il motore di ricerca, nessuna pagina ancora letta: i numeri si scrivono solo leggendo le copie (docs/regola-numeri.md). Le province delle aziende vanno confermate sulle pagine.",
+ "asl": [
+  {
+   "id": "regione-sardegna",
+   "name": "Regione Sardegna",
+   "tipo": "regione",
+   "pagine": [
+    {
+     "tipo": "regione",
+     "url": "https://www.sardegnasalute.it/index.php?xsl=316&s=9&v=9&c=2934&esp=1"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.sardegnasalute.it/index.php?xsl=313&s=272651&v=2&c=3436"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.sardegnasalute.it/index.php?xsl=313&s=345223&v=2&c=3436"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://cupweb.sardegnasalute.it/en/aiuto"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.sardegnasalute.it/index.php?c=2946&n=10&na=1&qr=1&s=9&v=9&xsl=316"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.areus.sardegna.it/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.areus.sardegna.it/areus-attiva-116117/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.areus.sardegna.it/nella-asl-di-sassari-arriva-il-numero-116117/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.areus.sardegna.it/116117-attivo-in-asl-gallura/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.areus.sardegna.it/a-nuoro-e-attivo-il-nea116117/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.areus.sardegna.it/116117-anche-a-oristano-ecco-come-funziona/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.sardegna.it/notizie/areus-ha-avviato-nella-asl-sulcis-iglesiente-il-nuovo-servizio-116117-per-le-cure-mediche-non-urgenti"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.sardegnasalute.it/index.php?xsl=316&s=9&v=9&c=10670&na=1&n=10"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.sardegna.it/servizi/accesso-ai-servizi-on-line/indice-dei-servizi/fascicolo-sanitario-elettronico-2-0"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://fse20.sardegnasalute.it/domande-frequenti"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.sardegna.it/servizi/per-la-sanita-digitale"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.aressardegna.it/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.aressardegna.it/azienda/"
+    }
+   ]
+  },
+  {
+   "id": "inps-sardegna",
+   "name": "INPS: sedi in Sardegna",
+   "tipo": "inps",
+   "pagine": [
+    {
+     "tipo": "cagliari",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.170000.170000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "sassari",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.730000.730000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "nuoro",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.530000.530000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "oristano",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.950000.950000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "gallura (agenzia olbia, dipende da dp sassari)",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.730001.730001-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "ogliastra (agenzia lanusei, dipende da dp nuoro)",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.530001.530001-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "medio campidano (agenzia sanluri, dipende da dp cagliari)",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.170001.170001-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "sulcis iglesiente (agenzia carbonia-giba, dipende da dp cagliari)",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.170101.170101-elencoStruttureInps.html"
+    }
+   ]
+  },
+  {
+   "id": "asl-sassari",
+   "name": "ASL Sassari (ASL 1)",
+   "tipo": "asl",
+   "province": [
+    "Sassari"
+   ],
+   "site_url": "https://www.asl1sassari.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.asl1sassari.it/azienda/ufficio-relazioni-con-il-pubblico-urp/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asl1sassari.it/i-servizi-online-a-disposizione-della-popolazione/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asl1sassari.it/centro-unico-di-prenotazione-incremento-dellorario-del-call-center/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asl1sassari.it/la-continuita-assistenziale-i-servizi-offerti-sul-territorio/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asl1sassari.it/servizi/servizi-al-cittadino/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asl1sassari.it/il-percorso-di-tutela-la-strada-per-supportare-il-cittadino/"
+    }
+   ]
+  },
+  {
+   "id": "asl-gallura",
+   "name": "ASL Gallura (ASL 2)",
+   "tipo": "asl",
+   "province": [
+    "Sassari (Gallura: distretti Olbia, Tempio Pausania, La Maddalena)"
+   ],
+   "site_url": "https://www.aslgallura.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aslgallura.it/azienda/urp/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aslgallura.it/azienda/contatti/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslgallura.it/come_fare_per/prenotare-visite-ed-esami-con-il-cup/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslgallura.it/servizio/cup-ticket/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslgallura.it/servizio/guardie-mediche-e-turistiche/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aslgallura.it/servizio/punto-unico-di-accesso/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aslgallura.it/servizio/assistenza-domiciliare-integrata-adi/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aslgallura.it/distretti/"
+    }
+   ]
+  },
+  {
+   "id": "asl-nuoro",
+   "name": "ASL Nuoro (ASL 3)",
+   "tipo": "asl",
+   "province": [
+    "Nuoro"
+   ],
+   "site_url": "https://www.asl3nuoro.it/",
+   "pagine": [
+    {
+     "tipo": "contatti",
+     "url": "https://www.asl3nuoro.it/azienda/contatti/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asl3nuoro.it/come_fare_per/prenotare-visite-ed-esami/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asl3nuoro.it/asl-nuoro-il-nuovo-numero-per-chiamare-la-guardia-medica/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asl3nuoro.it/cure-non-urgenti-attivo-nella-asl-di-nuoro-il-numero-unico-europeo/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asl3nuoro.it/strutture/pua-nuoro/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asl3nuoro.it/servizio/assistenza-domiciliare-integrata-adi/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asl3nuoro.it/servizi/servizi-al-cittadino/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asl3nuoro.it/servizio/percorso-di-tutela-di-accesso-alternativo-alle-prestazioni-specialistiche/"
+    }
+   ]
+  },
+  {
+   "id": "asl-ogliastra",
+   "name": "ASL Ogliastra (ASL 4)",
+   "tipo": "asl",
+   "province": [
+    "Nuoro (Ogliastra)"
+   ],
+   "site_url": "https://www.aslogliastra.it/",
+   "pagine": [
+    {
+     "tipo": "contatti",
+     "url": "https://www.aslogliastra.it/azienda/contatti/contatti-generali-asl-ogliastra/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslogliastra.it/servizio/prenotare-visite-ed-esami-cup/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslogliastra.it/servizi/servizi-al-cittadino/guardie-mediche/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslogliastra.it/guardie-mediche-23-agosto-sedi-raggiungibili-tramite-116-117-asl-ogliastra-06-08-2025/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aslogliastra.it/servizio/punto-unico-di-accesso-pua/"
+    }
+   ]
+  },
+  {
+   "id": "asl-oristano",
+   "name": "ASL Oristano (ASL 5)",
+   "tipo": "asl",
+   "province": [
+    "Oristano"
+   ],
+   "site_url": "https://www.asl5oristano.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.asl5oristano.it/servizio/ufficio-relazioni-con-il-pubblico/"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.asl5oristano.it/come_fare_per/richiedere-informazioni-allurp-ufficio-relazioni-con-il-pubblico/"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.asl5oristano.it/strutture/ufficio-relazioni-con-il-pubblico-urp-oristano/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asl5oristano.it/servizio/prenotare-visite-ed-esami-cup/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asl5oristano.it/come_fare_per/prenotare-visite-ed-esami/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asl5oristano.it/servizi/servizi-al-cittadino/guardie-mediche/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asl5oristano.it/strutture/punto-unico-di-accesso-oristano/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asl5oristano.it/come-fare-per/"
+    }
+   ]
+  },
+  {
+   "id": "asl-medio-campidano",
+   "name": "ASL Medio Campidano (ASL 6)",
+   "tipo": "asl",
+   "province": [
+    "Medio Campidano"
+   ],
+   "site_url": "https://www.aslmediocampidano.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aslmediocampidano.it/azienda/urp/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aslmediocampidano.it/azienda/contatti/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslmediocampidano.it/come_fare_per/prenotare-visite-ed-esami/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslmediocampidano.it/servizio/centro-unico-di-prenotazione-cup/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslmediocampidano.it/tag/continuita-assistenziale/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aslmediocampidano.it/servizio/punto-unico-di-accesso-pua/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aslmediocampidano.it/come-fare-per/"
+    }
+   ]
+  },
+  {
+   "id": "asl-sulcis",
+   "name": "ASL Sulcis Iglesiente (ASL 7)",
+   "tipo": "asl",
+   "province": [
+    "Sulcis Iglesiente"
+   ],
+   "site_url": "https://www.aslsulcis.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aslsulcis.it/azienda/servizi-e-funzioni-di-staff/urp/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aslsulcis.it/azienda/contatti-ufficio-relazione-con-il-pubblico-urp/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslsulcis.it/servizio/sportello-cup-e-gestione-liste-di-attesa/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslsulcis.it/servizi/servizi-al-cittadino/guardie-mediche-e-turistiche/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslsulcis.it/dal-23-agosto-il-numero-unico-116117-per-la-continuita-assistenziale/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aslsulcis.it/servizio/adi/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aslsulcis.it/nuovo-sportello-pua-nel-distretto-di-carbonia-san-ponzian/"
+    }
+   ]
+  },
+  {
+   "id": "asl-cagliari",
+   "name": "ASL Cagliari (ASL 8)",
+   "tipo": "asl",
+   "province": [
+    "Cagliari (Città metropolitana)"
+   ],
+   "site_url": "https://www.asl8cagliari.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.asl8cagliari.it/azienda/urp/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.asl8cagliari.it/azienda/contatti/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asl8cagliari.it/come_fare_per/prenotare-una-visita-o-esame/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asl8cagliari.it/servizio/servizi-digitali-cup-web/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asl8cagliari.it/servizio/servizio-di-continuita-assistenziale-ex-guardia-medica/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asl8cagliari.it/servizio/assistenza-domiciliare-integrata-adi/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asl8cagliari.it/azienda/distretti/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asl8cagliari.it/come_fare_per/segnalare-disservizi/"
+    }
+   ]
+  },
+  {
+   "id": "ares-sardegna",
+   "name": "ARES Sardegna (Azienda regionale della salute, ex ATS)",
+   "tipo": "asl",
+   "province": [
+    "Tutta la regione"
+   ],
+   "site_url": "https://www.aressardegna.it/",
+   "pagine": [
+    {
+     "tipo": "altro",
+     "url": "https://www.aressardegna.it/azienda/organizzazione/"
+    }
+   ]
+  }
+ ]
+}

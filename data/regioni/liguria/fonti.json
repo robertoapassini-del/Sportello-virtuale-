@@ -1,0 +1,424 @@
+{
+ "_note": "Liguria in preparazione: solo gli indirizzi delle pagine ufficiali da far copiare al server in Italia (tools/copie.mjs). Dalle homepage (site_url) il server segue anche i link su contatti, URP, CUP, guardia medica, PUA e cure domiciliari. Indirizzi trovati con il motore di ricerca, nessuna pagina ancora letta: i numeri si scrivono solo leggendo le copie (docs/regola-numeri.md). Le province delle aziende vanno confermate sulle pagine.",
+ "asl": [
+  {
+   "id": "regione-liguria",
+   "name": "Regione Liguria",
+   "tipo": "regione",
+   "pagine": [
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.liguria.it/homepage-salute.html"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.liguria.it/homepage-salute/come-fare-per/cup-liguria.html"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.liguria.it/cgr/item/41403-agosto-funzione-nuovo-numero-cup-liguria-2024.html"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://prenotosalute.regione.liguria.it/faq.php"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.liguria.it/homepage-salute/item/44983-indicazioni-regione-su-messaggi-truffa-cup.html"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.liguria.it/homepage-giunta/giunta-regionale/comunicati-stampa-della-giunta-regionale/item/45316-numero-116117.html"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.liguria.it/homepage-giunta/giunta-regionale/comunicati-stampa-della-giunta-regionale/item/45672-chiamate-116117-2026.html"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.liguria.it/homepage-giunta/giunta-regionale/comunicati-stampa-della-giunta-regionale/item/43422-numero-unico-continuita-assistenziale.html"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.liguria.it/homepage-salute/ultime-dal-canale/item/46570-numeri-medici-case-comunita.html"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.liguria.it/homepage-salute/come-fare-per/fascicolo-sanitario.html"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.liguriadigitale.it/esperienze/fascicolo-sanitario-elettronico-fse.html"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.liguria.it/homepage-salute/accesso-rapido/salutesimplex-app-portale.html"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.liguria.it/homepage-salute/cosa-cerchi/campagne-di-comunicazione/sanita-piu-vicina.html"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://pua.regione.liguria.it/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.atsliguria.it/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.atsliguria.it/azienda.html"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.atsliguria.it/aree-sociosanitarie-locali.html"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.atsliguria.it/liguria-salute.html"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.atsliguria.it/amministrazione-trasparente-ats/amministrazione-trasparente/servizi-erogati/liste-attesa.html"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.liguriasalute.atsliguria.it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica.html"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.alisa.liguria.it/dipartimenti-interaziendali-regionali-diar/diar-distretti.html"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.liguria.it/homepage-giunta/item/43748-nasce-liguria-salute.html"
+    }
+   ]
+  },
+  {
+   "id": "inps-liguria",
+   "name": "INPS: sedi in Liguria",
+   "tipo": "inps",
+   "pagine": [
+    {
+     "tipo": "genova",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.340000.340000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "imperia",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.370000.370000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "la spezia",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.390000.390000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "savona",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.740000.740000-elencoStruttureInps.html"
+    }
+   ]
+  },
+  {
+   "id": "ats-liguria",
+   "name": "ATS Liguria - Azienda Tutela della Salute Liguria (azienda unica, L.R. 18/2025, dal 1 gennaio 2026)",
+   "tipo": "asl",
+   "province": [
+    "Imperia",
+    "Savona",
+    "Genova",
+    "La Spezia"
+   ],
+   "site_url": "https://www.atsliguria.it/",
+   "pagine": []
+  },
+  {
+   "id": "asl1-imperiese",
+   "name": "ASL 1 Imperiese (ora Area sociosanitaria locale 1 di ATS Liguria)",
+   "tipo": "asl",
+   "province": [
+    "Imperia"
+   ],
+   "site_url": "https://www.asl1.liguria.it/",
+   "pagine": [
+    {
+     "tipo": "altro",
+     "url": "https://www.asl1.liguria.it/territorio/distretti-sanitari.html"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asl1.liguria.it/territorio/distretti-sanitari/distretto-sanitario-imperiese.html"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asl1.liguria.it/territorio/distretti-sanitari/distretto-sanitario-ventimigliese.html"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.asl1.liguria.it/urp.html"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.asl1.liguria.it/urp/segnalazioni-e-reclami.html"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.asl1.liguria.it/whatsapp-e-telegram.html"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.asl1.liguria.it/pec.asp"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asl1.liguria.it/prenotazioni-e-ticket/centro-unico-di-prenotazioni-ambulatoriali-cup.html"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asl1.liguria.it/emergenze-e-guardia-medica/guardia-medica.html"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asl1.liguria.it/servizi-dalla-a-alla-z/238-visite-occasionali-non-residenti-turisti.html"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asl1.liguria.it/territorio/distretti-sanitari/casa-comunita/casa-comunita-imperia.html"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asl1.liguria.it/territorio/distretti-sanitari/casa-comunita/casa-comunita-sanremo.html"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asl1.liguria.it/territorio/distretti-sanitari/casa-comunita/casa-comunita-ventimiglia.html"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asl1.liguria.it/servizi-dalla-a-alla-z/185-prelievi-domiciliari.html"
+    }
+   ]
+  },
+  {
+   "id": "asl2-savonese",
+   "name": "ASL 2 Savonese (ora Area sociosanitaria locale 2 di ATS Liguria)",
+   "tipo": "asl",
+   "province": [
+    "Savona"
+   ],
+   "site_url": "https://www.asl2.liguria.it/",
+   "pagine": [
+    {
+     "tipo": "contatti",
+     "url": "https://www.asl2.liguria.it/contatti.html"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.asl2.liguria.it/contatti/contatti-utili.html"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.asl2.liguria.it/urp.html"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asl2.liguria.it/prenotazioni-e-ticket.html"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asl2.liguria.it/prenotazioni-e-ticket/sportelli-cup.html"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asl2.liguria.it/esami-e-visite-specialistiche.html"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asl2.liguria.it/emergenze-e-guardia-medica/guardia-medica.html"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asl2.liguria.it/distretti-sanitari/771-cure-domiciliari-infermieristiche-e-o-fisioterapiche-distretto-albenganese.html"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asl2.liguria.it/territorio/distretto-albenganese/casa-comunita-distretto-albenganese.html"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asl2.liguria.it/territorio/distretto-savonese/casa-comunita-savona.html"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asl2.liguria.it/dipartimenti/51-dipartimento-cure-primarie-e-attivit%C3%A0-distrettuali/390-distretto-sanitario-savonese.html"
+    }
+   ]
+  },
+  {
+   "id": "asl3-genovese",
+   "name": "ASL 3 Genovese (ora Area sociosanitaria locale 3 di ATS Liguria)",
+   "tipo": "asl",
+   "province": [
+    "Genova"
+   ],
+   "site_url": "https://www.asl3.liguria.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.asl3.liguria.it/urp.html"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.asl3.liguria.it/urp/sedi.html"
+    },
+    {
+     "tipo": "contatti",
+     "url": "http://www.asl3.liguria.it/contatti.html.html"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://asl3.liguria.it/cup.html"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asl3.liguria.it/tutte-le-comunicazioni/comunicazioni-2024/5086-prenotazione-visite-esami-dal-1-agosto-call-center-cup-liguria-nuovo-numero.html"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asl3.liguria.it/medici-e-pediatri/info-generali/continuita_assistenza.html"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asl3.liguria.it/nuovo-numero-verde-unico-guardia-medica-800-893-580.html"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asl3.liguria.it/ospedali/emergenza.html"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asl3.liguria.it/territorio/servizi/cure-primarie/3764-assistenza-domiciliare-integrata.html"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asl3.liguria.it/contatti-home/item/2940-cure-domiciliari-sedi-contatti.html"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asl3.liguria.it/territorio/distretti/attivit%C3%A0-distretti.html"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asl3.liguria.it/territorio/servizi/cure-primarie/799-anagrafe-sanitaria-sedi.html"
+    }
+   ]
+  },
+  {
+   "id": "asl4-chiavarese",
+   "name": "ASL 4 Chiavarese (ora Area sociosanitaria locale 4 di ATS Liguria)",
+   "tipo": "asl",
+   "province": [
+    "Genova",
+    "La Spezia"
+   ],
+   "site_url": "https://www.asl4.liguria.it/",
+   "pagine": [
+    {
+     "tipo": "contatti",
+     "url": "https://www.asl4.liguria.it/contatti/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.asl4.liguria.it/contatti-e-indirizzi-web/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.asl4.liguria.it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica/rubrica/"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://asl4.liguria.it/dipartimenti-amministrativi/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.asl4.liguria.it/s-c-formazione-e-info-comunicazione/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asl4.liguria.it/prenotazioni-cup/prenotazioni/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asl4.liguria.it/prenotazioni-e-disdette/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asl4.liguria.it/guardia-medica/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asl4.liguria.it/2025/11/03/dal-3-novembre-2025-la-guardia-medica-trova-sede-nella-casa-della-comunita-di-chiavari/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asl4.liguria.it/assistenza-domiciliare-integrata/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asl4.liguria.it/territorio/casa-della-comunita-di-chiavari/casa-della-comunita-di-chiavari/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asl4.liguria.it/territorio/distretti/distretto-15/"
+    },
+    {
+     "tipo": "altro",
+     "url": "http://www.asl4.liguria.it/distretti/"
+    }
+   ]
+  },
+  {
+   "id": "asl5-spezzino",
+   "name": "ASL 5 Spezzino (ora Area sociosanitaria locale 5 di ATS Liguria)",
+   "tipo": "asl",
+   "province": [
+    "La Spezia"
+   ],
+   "site_url": "https://www.asl5.liguria.it/",
+   "pagine": [
+    {
+     "tipo": "contatti",
+     "url": "https://www.asl5.liguria.it/Home/Contatti.aspx"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.asl5.liguria.it/Home/ContattiServizi.aspx"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.asl5.liguria.it/Istituzionali/Relazioniconilpubblico.aspx"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asl5.liguria.it/PerilCittadino/Prenotazioniticketesenzioni/Modalit%C3%A0prenotazione-punticup.aspx"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asl5.liguria.it/News/SPOSTAMENTOGUARDIAMEDICA.aspx"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asl5.liguria.it/Emergenzae112.aspx"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asl5.liguria.it/PerilCittadino/Serviziterritoriali/CurePrimarieeAttivit%C3%A0Distrettuali/Prestazioniinfermieristichedomiciliari.aspx"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asl5.liguria.it/PerilCittadino/Serviziterritoriali.aspx"
+    }
+   ]
+  }
+ ]
+}

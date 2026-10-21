@@ -1,0 +1,202 @@
+{
+ "_note": "Umbria in preparazione: solo gli indirizzi delle pagine ufficiali da far copiare al server in Italia (tools/copie.mjs). Dalle homepage (site_url) il server segue anche i link su contatti, URP, CUP, guardia medica, PUA e cure domiciliari. Indirizzi trovati con il motore di ricerca, nessuna pagina ancora letta: i numeri si scrivono solo leggendo le copie (docs/regola-numeri.md). Le province delle aziende vanno confermate sulle pagine.",
+ "asl": [
+  {
+   "id": "regione-umbria",
+   "name": "Regione Umbria",
+   "tipo": "regione",
+   "pagine": [
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.umbria.it/portale-salute"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://insalute.regione.umbria.it/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.umbria.it/salute/prenotazione-visite-specialistiche-on-line"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://salute.regione.umbria.it/cms/en/cup-informazioni"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.umbria.it/salute/notizia/-/asset_publisher/y5cyZiXgFbfG/content/nus-800-63-63-63?read_more=true"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://accessounico.regione.umbria.it/it/enti-partecipanti/enti/regione-umbria/salute/prenotare-una-prestazione-sanitaria/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://insalute.regione.umbria.it/novita/umbria-nasce-la-centrale-operativa-116117-per-le-cure-mediche-non-urgenti/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.umbria.it/dettaglionotizie/-/asset_publisher/lU1Y2yh4H8pu/content/umbria-nasce-la-centrale-operativa?read_more=true"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.umbria.it/salute/1.2.2.-centrali-operative-territoriali-cot-"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.umbria.it/-/contatti-utili_contenuto"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://insalute.regione.umbria.it/fse/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.umbria.it/salute/sanita-digitale/fascicolosanitario"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://accessounico.regione.umbria.it/it/enti-partecipanti/enti/regione-umbria/salute/accedere-al-proprio-fascicolo-sanitario-elettronico/"
+    }
+   ]
+  },
+  {
+   "id": "inps-umbria",
+   "name": "INPS: sedi in Umbria",
+   "tipo": "inps",
+   "pagine": [
+    {
+     "tipo": "perugia",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.580000.580000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "terni",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.800000.800000-elencoStruttureInps.html"
+    }
+   ]
+  },
+  {
+   "id": "usl-umbria1",
+   "name": "Azienda USL Umbria 1",
+   "tipo": "asl",
+   "province": [
+    "Perugia (parte nord/centro: distretti Perugino, Assisano, Media Valle del Tevere, Trasimeno, Alto Tevere, Alto Chiascio)"
+   ],
+   "site_url": "https://www.uslumbria1.it/",
+   "pagine": [
+    {
+     "tipo": "altro",
+     "url": "https://www.uslumbria1.it/azienda/distretti/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.uslumbria1.it/azienda/"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.uslumbria1.it/u-r-p/"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.uslumbria1.it/u-r-p/punti-di-ascolto-urp/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.uslumbria1.it/azienda/per-il-cittadino/elenco-telefonico/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.uslumbria1.it/come-fare-per/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.uslumbria1.it/servizio/cup-prenotazioni-allo-sportello-telefoniche-online-e-pagamenti-online/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.uslumbria1.it/prenotazioni-cup-telefoniche-e-online/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.uslumbria1.it/numeri-umbria-sanita-nus/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.uslumbria1.it/servizio/guardia-medica-continuita-assistenziale/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.uslumbria1.it/servizio/assistenza-e-cure-domiciliari/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.uslumbria1.it/servizio/assistenza-sanitaria-e-cure-primarie-mappa-dei-servizi/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.uslumbria1.it/servizio/cure-palliative/"
+    }
+   ]
+  },
+  {
+   "id": "usl-umbria2",
+   "name": "Azienda USL Umbria 2",
+   "tipo": "asl",
+   "province": [
+    "Terni",
+    "Perugia (parte sud-est: distretti Foligno, Spoleto, Valnerina)"
+   ],
+   "site_url": "https://www.uslumbria2.it/",
+   "pagine": [
+    {
+     "tipo": "altro",
+     "url": "https://www.uslumbria2.it/pagine/distretti-000"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.uslumbria2.it/pagine/urp"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.uslumbria2.it/media/urp-ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.uslumbria2.it/pagine/contatti"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.uslumbria2.it/pagine/informazioni-utili-e-contatti"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.uslumbria2.it/pagine/sezione-per-il-cittadino-000"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.uslumbria2.it/servizi/visite-specialistiche-ed-esami"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.uslumbria2.it/notizie/attivati-il-numero-umbria-sanita-e-il-pagamento-on"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.uslumbria2.it/servizi/guardia-medica"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.uslumbria2.it/notizie/accedere-al-servizio-di-assistenza-domiciliare"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.uslumbria2.it/servizi/centri-di-salute-e-punti-di-erogazione-servizi-000"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.uslumbria2.it/notizie/cure-palliative-e-terapia-del-dolore"
+    }
+   ]
+  }
+ ]
+}

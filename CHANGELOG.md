@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — indirizzi ufficiali di tutte le regioni da copiare (nessun dato cambiato)
+- `data/regioni/<regione>/fonti.json` per le 18 regioni che mancavano (Abruzzo, Basilicata, Calabria, Campania, Emilia-Romagna, Friuli-Venezia Giulia, Lazio, Liguria, Marche, Molise, Piemonte, Puglia, Sardegna, Toscana, Trentino-Alto Adige, Umbria, Valle d'Aosta, Veneto): 1.331 indirizzi di Regioni, aziende sanitarie e sedi INPS, trovati con il motore di ricerca. Nessun numero: il server in Italia copia le pagine e i numeri si scrivono leggendo le copie.
+- Da ricordare: in Liguria dal 2026 c'è un'azienda unica (ATS Liguria); in Trentino l'APSS è diventata Asuit; in Alto Adige il sito è passato ad asdaa.it.
+
 ## 21/10/2026 — testi dei moduli per tutte le regioni (nessun dato cambiato)
 - Nei moduli «ASP» diventa la sigla della regione scelta (ASP, ATS, ASL…), anche nell'avviso «Controlla sempre con la tua …» e nell'intestazione delle lettere.
 - Le cose solo siciliane passano nell'indice delle regioni (`data/regioni/index.json`: `ente`, `asl_intestazione`, `link`): Fascicolo sanitario della Regione Siciliana, URP dell'assessorato, elenco per il trasporto dei dializzati. Nelle altre regioni compare una frase generica; l'elenco dei grandi ospedali siciliani si vede solo in Sicilia.

@@ -1,0 +1,245 @@
+{
+ "_note": "Trentino-Alto Adige in preparazione: solo gli indirizzi delle pagine ufficiali da far copiare al server in Italia (tools/copie.mjs). Dalle homepage (site_url) il server segue anche i link su contatti, URP, CUP, guardia medica, PUA e cure domiciliari. Indirizzi trovati con il motore di ricerca, nessuna pagina ancora letta: i numeri si scrivono solo leggendo le copie (docs/regola-numeri.md). Le province delle aziende vanno confermate sulle pagine.",
+ "asl": [
+  {
+   "id": "regione-trentino-alto-adige",
+   "name": "Regione Trentino-Alto Adige",
+   "tipo": "regione",
+   "pagine": [
+    {
+     "tipo": "regione",
+     "url": "https://www.provincia.tn.it/Amministrazione/Enti-societa-e-fondazioni/Asuit-Azienda-sanitaria-universitaria-integrata-del-Trentino"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.trentinosalute.net/Argomenti/LISTE-DI-ATTESA"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.trentinosalute.net/Argomenti/SERVIZI-DI-EMERGENZA-E-URGENZA-E-TRASPORTI-SANITARI"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.ufficiostampa.provincia.tn.it/Comunicati/Numero-unico-europeo-116117-oltre-240-mila-chiamate-nel-2025"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.trentinosalute.net/Argomenti/INNOVAZIONE-E-RICERCA/Fascicolo-sanitario-elettronico-FSE"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://trec.trentinosalute.net/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://trec.trentinosalute.net/domande-frequenti"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://trentinosalute.net/Argomenti/INNOVAZIONE-E-RICERCA/Ecosistema-sanita-digitale-TreC"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://salute.provincia.bz.it/it/numero-116117"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.provincia.bz.it/salute-benessere/salute/cittadini-utenti/tempi-di-prenotazione.asp"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.provincia.bz.it/salute-benessere/salute/cittadini-utenti/fascicolo-sanitario-elettronico-fse.asp"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://salute.provincia.bz.it/it/ticket-esenzioni"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.provincia.bz.it/famiglia-sociale-comunita/anziani/sportelli-unici-assistenza-cura.asp"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.provincia.bz.it/famiglia-sociale-comunita/anziani/assistenza-domiciliare/servizio-infermieristico.asp"
+    }
+   ]
+  },
+  {
+   "id": "inps-trentino-alto-adige",
+   "name": "INPS: sedi in Trentino-Alto Adige",
+   "tipo": "inps",
+   "pagine": [
+    {
+     "tipo": "trento",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.830000.830000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "bolzano",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.140000.140000-elencoStruttureInps.html"
+    }
+   ]
+  },
+  {
+   "id": "apss-trento",
+   "name": "Asuit - Azienda sanitaria universitaria integrata del Trentino (ex APSS Trento)",
+   "tipo": "asl",
+   "province": [
+    "Trento"
+   ],
+   "site_url": "https://www.asuit.tn.it/",
+   "pagine": [
+    {
+     "tipo": "altro",
+     "url": "https://www.asuit.tn.it/strutture"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.asuit.tn.it/faq/dove-posso-avere-ulteriori-informazioni"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.asuit.tn.it/amministrazione-trasparente/telefono-e-posta-elettronica"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://asuit.tn.it/servizi/segnalazioni-commissione-mista-conciliativa-cmc"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asuit.tn.it/servizi/prenotazione-visite-specialistiche-ed-esami-di-diagnostica"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asuit.tn.it/domande-frequenti/prenotazioni-online-di-prestazioni-sanitarie-domande-frequenti"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asuit.tn.it/servizi/assistenza-specialistica-ambulatoriale"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asuit.tn.it/servizi/trec"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asuit.tn.it/servizi/continuita-assistenziale-ex-guardia-medica"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://asuit.tn.it/servizi/continuita-assistenziale-guardia-medica"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asuit.tn.it/strutture/guardia-medica-trento"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asuit.tn.it/strutture/guardia-medica-rovereto"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asuit.tn.it/servizi/punto-unico-di-accesso-pua"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asuit.tn.it/servizi/assistenza-domiciliare"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://asuit.tn.it/servizi/cure-palliative"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asuit.tn.it/servizi/impegnative-e-ricette"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.apss.tn.it/Azienda/Unita-operative-e-strutture/Ufficio-rapporti-con-il-pubblico-URP"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.apss.tn.it/Servizi-e-Prestazioni/Assistenza-domiciliare"
+    }
+   ]
+  },
+  {
+   "id": "asdaa-bolzano",
+   "name": "Azienda Sanitaria dell'Alto Adige / Südtiroler Sanitätsbetrieb (ASDAA - SABES)",
+   "tipo": "asl",
+   "province": [
+    "Bolzano"
+   ],
+   "site_url": "https://www.asdaa.it/it/default.asp",
+   "pagine": [
+    {
+     "tipo": "altro",
+     "url": "https://www.asdaa.it/it/comprensorio-sanitario-di-bolzano"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asdaa.it/it/centro-piani-rencio"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asdaa.it/it/oltrisarco"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asdaa.it/it/bassa-atesina"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://home.asdaa.it/m/it/contatti.asp"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.sabes.it/it/contatti-sabes.asp?addt_apid=53001"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.asdaa.it/it/informazioni-per-pazienti-e-visitatori-bz"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://home.sabes.it/it/ospedali/bolzano/segnalazioni-e-reclami.asp"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://home.sabes.it/it/prenotazione-me.asp"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://home.asdaa.it/it/servizi.asp"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asdaa.it/it/one/116-117"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://home.asdaa.it/it/medicina-di-base.asp"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asdaa.it/it/ambulatori-per-le-piccole-urgenze"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asdaa.it/it/temi/pronto-soccorso-solo-per-le-emergenze"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://home.sabes.it/it/comprensori-sanitari/merano/3026.asp"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asdaa.it/it/comprensori-sanitari/merano/3181.asp"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://pnrr.asdaa.it/progetti/centrali-operative-territoriali"
+    }
+   ]
+  }
+ ]
+}

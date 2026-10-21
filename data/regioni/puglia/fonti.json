@@ -1,0 +1,301 @@
+{
+ "_note": "Puglia in preparazione: solo gli indirizzi delle pagine ufficiali da far copiare al server in Italia (tools/copie.mjs). Dalle homepage (site_url) il server segue anche i link su contatti, URP, CUP, guardia medica, PUA e cure domiciliari. Indirizzi trovati con il motore di ricerca, nessuna pagina ancora letta: i numeri si scrivono solo leggendo le copie (docs/regola-numeri.md). Le province delle aziende vanno confermate sulle pagine.",
+ "asl": [
+  {
+   "id": "regione-puglia",
+   "name": "Regione Puglia",
+   "tipo": "regione",
+   "pagine": [
+    {
+     "tipo": "regione",
+     "url": "https://www.sanita.puglia.it/en/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.sanita.puglia.it/en/cup"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.sanita.puglia.it/en/gestione-prenotazioni-ad-accesso-libero"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.sanita.puglia.it/en/continuita-assistenziale"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.sanita.puglia.it/en/assistenza-domiciliare"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.sanita.puglia.it/en/servizio-118"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.sanita.puglia.it/en/fascicolo-sanitario-elettronico"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.puglia.it/en/web/comunicazione-istituzionale/-/fascicolo-sanitario-elettronico-tu-al-centro-dei-nostri-servizi"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.puglia.it/web/salute-sport-e-buona-vita/-/attiva-il-fascicolo-sanitario-elettronico-in-farmacia"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.puglia.it/web/salute-sport-e-buona-vita/-/servizi-online-di-puglia-salute-in-manutenzione-come-prenotare-le-prestazioni-specialistiche"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://press.regione.puglia.it/-/in-puglia-sar%C3%A0-attivato-il-116117-il-nuovo-numero-da-chiamare-per-l-assistenza-territoriale.-dal-ministero-%C3%A8-giunta-l-autorizzazione"
+    }
+   ]
+  },
+  {
+   "id": "inps-puglia",
+   "name": "INPS: sedi in Puglia",
+   "tipo": "inps",
+   "pagine": [
+    {
+     "tipo": "bari",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.090000.090000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "barletta-andria-trani (direzione provinciale andria)",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.090100.090100-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "brindisi",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.160000.160000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "foggia",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.310000.310000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "lecce",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.410000.410000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "taranto",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.780000.780000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "puglia (direzione regionale)",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.098000.098000-elencoStruttureInps.html"
+    }
+   ]
+  },
+  {
+   "id": "asl-bari",
+   "name": "ASL Bari",
+   "tipo": "asl",
+   "province": [
+    "Bari (Città metropolitana)"
+   ],
+   "site_url": "https://www.sanita.puglia.it/en/web/asl-bari",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.sanita.puglia.it/en/web/asl-bari/urp"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.sanita.puglia.it/web/asl-bari/ufficio-relazioni-con-il-pubblico1"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.sanita.puglia.it/en/web/asl-bari/modalita-di-prenotazione"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.sanita.puglia.it/en/web/asl-bari/-/cup-centro-unico-prenotazioni-"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.sanita.puglia.it/en/web/asl-bari/continuita-assistenziale"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.sanita.puglia.it/en/web/asl-bari/-/porta-unica-di-accesso-p-u-a-"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.sanita.puglia.it/web/asl-bari/-/u-o-cure-domiciliari"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.sanita.puglia.it/en/web/asl-bari/-/assistenza-domiciliare-integrata-adi-e-programmata-adp"
+    }
+   ]
+  },
+  {
+   "id": "asl-bat",
+   "name": "ASL Barletta Andria Trani (BT)",
+   "tipo": "asl",
+   "province": [
+    "Barletta-Andria-Trani"
+   ],
+   "site_url": "https://www.sanita.puglia.it/en/web/asl-barletta-andria-trani",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.sanita.puglia.it/en/web/asl-barletta-andria-trani/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.sanita.puglia.it/en/web/asl-barletta-andria-trani/-/numero-verde-cup"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.sanita.puglia.it/en/web/asl-barletta-andria-trani/-/servizio-di-continuita-assistenziale-ex-guardia-medica-"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.sanita.puglia.it/en/web/asl-barletta-andria-trani/cure-domiciliari-adi"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.sanita.puglia.it/en/web/asl-barletta-andria-trani/-/assistenza-domiciliare-integrata"
+    }
+   ]
+  },
+  {
+   "id": "asl-brindisi",
+   "name": "ASL Brindisi",
+   "tipo": "asl",
+   "province": [
+    "Brindisi"
+   ],
+   "site_url": "https://www.sanita.puglia.it/en/web/asl-brindisi",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.sanita.puglia.it/en/web/asl-brindisi/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.sanita.puglia.it/en/web/asl-brindisi/telefono-e-posta-elettronica"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.sanita.puglia.it/en/web/asl-brindisi/modalita-di-prenotazione"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.sanita.puglia.it/en/web/asl-brindisi/assistenza-domiciliare-integrata-adi"
+    }
+   ]
+  },
+  {
+   "id": "asl-foggia",
+   "name": "ASL Foggia",
+   "tipo": "asl",
+   "province": [
+    "Foggia"
+   ],
+   "site_url": "https://www.sanita.puglia.it/en/web/asl-foggia/continuita-assistenziale",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.sanita.puglia.it/web/asl-foggia/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.sanita.puglia.it/en/web/asl-foggia/altri-contatti"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.sanita.puglia.it/en/web/asl-foggia/modalita-di-prenotazione"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.sanita.puglia.it/en/web/asl-foggia/cup"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.sanita.puglia.it/en/web/asl-foggia/-/ufficio-assistenza-domiciliare"
+    }
+   ]
+  },
+  {
+   "id": "asl-lecce",
+   "name": "ASL Lecce",
+   "tipo": "asl",
+   "province": [
+    "Lecce"
+   ],
+   "site_url": "https://sist.sanita.puglia.it/en/web/asl-lecce",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.sanita.puglia.it/en/web/asl-lecce/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.sanita.puglia.it/web/asl-lecce/altri-contatti"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.sanita.puglia.it/en/web/asl-lecce/cup"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.sanita.puglia.it/en/web/asl-lecce/modalita-di-prenotazione"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.sanita.puglia.it/en/web/asl-lecce/continuita-assistenziale"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.sanita.puglia.it/en/web/asl-lecce/-/p-u-a-porta-unica-di-accesso-"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.sanita.puglia.it/en/web/asl-lecce/-/a-d-i-assistenza-domiciliare-integrata-"
+    }
+   ]
+  },
+  {
+   "id": "asl-taranto",
+   "name": "ASL Taranto",
+   "tipo": "asl",
+   "province": [
+    "Taranto"
+   ],
+   "site_url": "https://www.sanita.puglia.it/en/web/asl-taranto",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.sanita.puglia.it/en/web/asl-taranto/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.sanita.puglia.it/en/web/asl-taranto/modalita-di-prenotazione"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.sanita.puglia.it/en/web/asl-taranto/cup"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.sanita.puglia.it/en/web/asl-taranto/continuita-assistenziale"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.sanita.puglia.it/en/web/asl-taranto/-/orari-sedi-continuita-assistenziali-guardia-medica"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.sanita.puglia.it/en/web/asl-taranto/-/porta-unica-di-accesso-p-u-a-"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.sanita.puglia.it/en/web/asl-taranto/-/a-d-i-assistenza-domiciliare-integrata-1"
+    }
+   ]
+  }
+ ]
+}

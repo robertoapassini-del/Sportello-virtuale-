@@ -1,0 +1,173 @@
+{
+ "_note": "Basilicata in preparazione: solo gli indirizzi delle pagine ufficiali da far copiare al server in Italia (tools/copie.mjs). Dalle homepage (site_url) il server segue anche i link su contatti, URP, CUP, guardia medica, PUA e cure domiciliari. Indirizzi trovati con il motore di ricerca, nessuna pagina ancora letta: i numeri si scrivono solo leggendo le copie (docs/regola-numeri.md). Le province delle aziende vanno confermate sulle pagine.",
+ "asl": [
+  {
+   "id": "regione-basilicata",
+   "name": "Regione Basilicata",
+   "tipo": "regione",
+   "pagine": [
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.basilicata.it/centro-unico-di-prenotazione-centro-servizi-regione-basilicata/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.basilicata.it/fanelli-cup-attiva-prenotazione-online-delle-prestazioni/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://regione.basilicata.it/giunta/site/Giunta/detail.jsp?otype=1012&id=3077951"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://agr.regione.basilicata.it/post/latronico-sul-numero-europeo-armonizzato"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.basilicata.it/giunta/site/Giunta/department.jsp?dep=100061&area=535615&level=0"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.basilicata.it/sanita-digitale-nuovi-servizi-online/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.salute.basilicata.it/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.basilicata.it/fascicolo-sanitario-elettronico-2-0/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://digitalefacile.regione.basilicata.it/wp-content/uploads/2025/05/Fascicolo-Sanitario-Elettronico-e-Televisita.pdf"
+    }
+   ]
+  },
+  {
+   "id": "inps-basilicata",
+   "name": "INPS: sedi in Basilicata",
+   "tipo": "inps",
+   "pagine": [
+    {
+     "tipo": "potenza",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.640000.640000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "matera",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.470000.470000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "basilicata (direzione regionale)",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.648000.648000-elencoStruttureInps.html"
+    }
+   ]
+  },
+  {
+   "id": "asp-potenza",
+   "name": "ASP Basilicata - Azienda Sanitaria Locale di Potenza",
+   "tipo": "asl",
+   "province": [
+    "Potenza"
+   ],
+   "site_url": "https://www.aspbasilicata.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aspbasilicata.it/servizi-per-i-cittadini/urp-e-comunicazione/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aspbasilicata.it/pec/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aspbasilicata.it/servizi-per-i-cittadini/servizi/ufficio-protocollo-generale-sedi-e-orari/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aspbasilicata.it/servizi-per-i-cittadini/cup-e-pagamento-ticket/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aspbasilicata.it/servizi-per-i-cittadini/guardia-medica/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aspbasilicata.it/organizzazione/azienda/dipartimenti/dipartimento-emergenza-urgenza-118/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aspbasilicata.it/organizzazione/azienda/dipartimenti/dipartimento-post-acuzie-continuita-ospedale-territorio/oncologia-critica-territoriale-cure-domiciliari-e-palliative-adi/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aspbasilicata.it/amministrazione-trasparente/attivita-e-procedimenti/tipologia-dei-procedimento/cure-domiciliari/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aspbasilicata.it/modulistica-cure-domiciliari/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aspbasilicata.it/organizzazione/azienda/distretti-della-salute/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aspbasilicata.it/wp-content/uploads/CARTA-DEI-SERVIZI-agg-al-17-02-2026.pdf"
+    }
+   ]
+  },
+  {
+   "id": "asm-matera",
+   "name": "ASM - Azienda Sanitaria Locale di Matera",
+   "tipo": "asl",
+   "province": [
+    "Matera"
+   ],
+   "site_url": "https://www.asmbasilicata.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.asmbasilicata.it/ufficio-relazioni-con-il-pubblico-urp/"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.asmbasilicata.it/chi-siamo/punto-informativo-urp-matera/"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.asmbasilicata.it/chi-siamo/punto-informativo-ufficio-relazioni-con-il-pubblico-urp-policoro/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.asmbasilicata.it/chi-siamo/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asmbasilicata.it/servizio/prenotazioni-e-ticket/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asmbasilicata.it/chi-siamo/sportello-cup-piazza-firenze-matera/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asmbasilicata.it/servizio/guardia-medica-servizio-di-continuita-assistenziale/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asmbasilicata.it/servizi/Menu/dinamica.aspx?idSezione=616&idArea=17682&idCat=17691&ID=40324&TipoElemento=pagina"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asmbasilicata.it/modalita-di-tutela/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asmbasilicata.it/servizi-app-io/"
+    }
+   ]
+  }
+ ]
+}

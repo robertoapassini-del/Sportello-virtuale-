@@ -1,0 +1,390 @@
+{
+ "_note": "Lazio in preparazione: solo gli indirizzi delle pagine ufficiali da far copiare al server in Italia (tools/copie.mjs). Dalle homepage (site_url) il server segue anche i link su contatti, URP, CUP, guardia medica, PUA e cure domiciliari. Indirizzi trovati con il motore di ricerca, nessuna pagina ancora letta: i numeri si scrivono solo leggendo le copie (docs/regola-numeri.md). Le province delle aziende vanno confermate sulle pagine.",
+ "asl": [
+  {
+   "id": "regione-lazio",
+   "name": "Regione Lazio",
+   "tipo": "regione",
+   "pagine": [
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.lazio.it/cittadini/salute/recup"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://salutelazio.it/it/servizi/prestazioni-prenotabili-on-line"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.salutelazio.it/guardia-medica"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.lazio.it/notizie/salute-attivo-in-tutta-la-regione-il-numero-116117"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://comunicazione.regione.lazio.it/curalazio/116117-il-numero-unico-europeo-per-cure-non-urgenti"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://salutelazio.it/it/servizi/emergenza"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.lazio.it/cittadini/salute"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://salutelazio.it/it"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.lazio.it/notizie/fascicolo-sanitario-elettronico"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://regione.lazio.it/urp/rete-degli-urp"
+    }
+   ]
+  },
+  {
+   "id": "inps-lazio",
+   "name": "INPS: sedi in Lazio",
+   "tipo": "inps",
+   "pagine": [
+    {
+     "tipo": "roma",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.708100.708100-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "frosinone",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.330000.330000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "latina",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.400000.400000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "rieti",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.690000.690000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "viterbo",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.920000.920000-elencoStruttureInps.html"
+    }
+   ]
+  },
+  {
+   "id": "asl-roma1",
+   "name": "ASL Roma 1",
+   "tipo": "asl",
+   "province": [
+    "Roma (città, municipi I, II, III, XIII, XIV, XV)"
+   ],
+   "site_url": "https://www.aslroma1.it",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aslroma1.it/ufficio-relazioni-pubblico"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aslroma1.it/contatti"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslroma1.it/sportelli-cup"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslroma1.it/prenotazioni-visite-ed-esami"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslroma1.it/guardia-medica-continuita-assistenziale"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aslroma1.it/assistenza-domiciliare"
+    }
+   ]
+  },
+  {
+   "id": "asl-roma2",
+   "name": "ASL Roma 2",
+   "tipo": "asl",
+   "province": [
+    "Roma (città, municipi IV, V, VI, VII, VIII, IX)"
+   ],
+   "site_url": "https://www.aslroma2.it",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aslroma2.it/index.php/urp"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslroma2.it/index.php/servizi/cup-sportelli-polifunzionali?view=page&id=4"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslroma2.it/index.php/servizi/guardia-medica"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aslroma2.it/index.php/servizi-4d/punto-unico-di-accesso-pua"
+    }
+   ]
+  },
+  {
+   "id": "asl-roma3",
+   "name": "ASL Roma 3",
+   "tipo": "asl",
+   "province": [
+    "Roma (città, municipi X, XI, XII)",
+    "Fiumicino"
+   ],
+   "site_url": "https://www.aslroma3.it",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aslroma3.it/urp/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslroma3.it/come-fare-per/prenotare-una-visita/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslroma3.it/servizi-dalla-a-alla-z/g/guardia-medica/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aslroma3.it/assistenza-domiciliare/"
+    }
+   ]
+  },
+  {
+   "id": "asl-roma4",
+   "name": "ASL Roma 4",
+   "tipo": "asl",
+   "province": [
+    "Roma (provincia nord e ovest)"
+   ],
+   "site_url": "https://www.aslroma4.it",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aslroma4.it/urp-ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aslroma4.it/contatti"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslroma4.it/come-fare-per/come-fare-per-prenota-una-visita"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aslroma4.it/pua-punto-unico-di-accesso"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aslroma4.it/guida-ai-servizi/assistenza-domiciliare/cure-domiciliari"
+    }
+   ]
+  },
+  {
+   "id": "asl-roma5",
+   "name": "ASL Roma 5",
+   "tipo": "asl",
+   "province": [
+    "Roma (provincia est)"
+   ],
+   "site_url": "https://www.aslroma5.it",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aslroma5.it/unita_operative/urp-e-comunicazione/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aslroma5.it/amministrazione-trasparente/telefono-e-posta-elettronica/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslroma5.it/cup-centro-unico-di-prenotazione/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslroma5.it/faq-domande-frequenti/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aslroma5.it/servizi_distrettuali/pua-punto-unico-di-accesso-casa-della-comunita-tivoli/"
+    }
+   ]
+  },
+  {
+   "id": "asl-roma6",
+   "name": "ASL Roma 6",
+   "tipo": "asl",
+   "province": [
+    "Roma (provincia sud)"
+   ],
+   "site_url": "https://www.aslroma6.it",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aslroma6.it/servizi-al-cittadino/urp-ufficio-relazioni-col-pubblico"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslroma6.it/servizi-al-cittadino/sportelli-cup"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslroma6.it/-/guardia-medica-e-continuita-assistenziale"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aslroma6.it/punto-unico-di-accesso-pua"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aslroma6.it/come-fare-per/assistenza-domiciliare"
+    }
+   ]
+  },
+  {
+   "id": "asl-frosinone",
+   "name": "ASL Frosinone",
+   "tipo": "asl",
+   "province": [
+    "Frosinone"
+   ],
+   "site_url": "https://www.asl.fr.it",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.asl.fr.it/azienda/strutture-in-staff-alla-direzione-strategica/uoc-ufficio-relazioni-con-il-pubblico-comunicazione-accoglienza-tutela-e-partecipazione/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.asl.fr.it/contatti/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asl.fr.it/azienda/strutture-in-staff-alla-direzione-strategica/recup-aziendale/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asl.fr.it/strutture/distretti-sanitari/"
+    }
+   ]
+  },
+  {
+   "id": "asl-latina",
+   "name": "ASL Latina",
+   "tipo": "asl",
+   "province": [
+    "Latina"
+   ],
+   "site_url": "https://www.ausl.latina.it",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.ausl.latina.it/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.ausl.latina.it/contatti"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.ausl.latina.it/gs-guidaservizi/132-visite-ed-esami/4350-cup"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.ausl.latina.it/25-dedicato-a/468-guardiamedica"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.ausl.latina.it/index.php/pua"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.ausl.latina.it/index.php/assistenza-domiciliare"
+    }
+   ]
+  },
+  {
+   "id": "asl-rieti",
+   "name": "ASL Rieti",
+   "tipo": "asl",
+   "province": [
+    "Rieti"
+   ],
+   "site_url": "https://www.asl.rieti.it",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.asl.rieti.it/aiuto-al-cittadino/urp"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.asl.rieti.it/aiuto-al-cittadino/contatti/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asl.rieti.it/guida-ai-servizi/cup-centro-unico-di-prenotazione"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asl.rieti.it/guida-ai-servizi/guardia-medica/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asl.rieti.it/come-fare-per/uosd-assistenza-domiciliare-integrata-adi"
+    }
+   ]
+  },
+  {
+   "id": "asl-viterbo",
+   "name": "ASL Viterbo",
+   "tipo": "asl",
+   "province": [
+    "Viterbo"
+   ],
+   "site_url": "https://www.asl.vt.it",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.asl.vt.it/urp-ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.asl.vt.it/azienda"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asl.vt.it/prenotazione-visite-ed-esami"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asl.vt.it/guardia-medica"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asl.vt.it/pua-punto-unico-di-accesso"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asl.vt.it/adi-assistenza-domiciliare-integrata"
+    }
+   ]
+  }
+ ]
+}

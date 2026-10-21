@@ -1,0 +1,535 @@
+{
+ "_note": "Piemonte in preparazione: solo gli indirizzi delle pagine ufficiali da far copiare al server in Italia (tools/copie.mjs). Dalle homepage (site_url) il server segue anche i link su contatti, URP, CUP, guardia medica, PUA e cure domiciliari. Indirizzi trovati con il motore di ricerca, nessuna pagina ancora letta: i numeri si scrivono solo leggendo le copie (docs/regola-numeri.md). Le province delle aziende vanno confermate sulle pagine.",
+ "asl": [
+  {
+   "id": "regione-piemonte",
+   "name": "Regione Piemonte",
+   "tipo": "regione",
+   "pagine": [
+    {
+     "tipo": "regione",
+     "url": "https://www.salutepiemonte.it/servizi"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.salutepiemonte.it/servizi/prenotazioni-visite-ed-esami?nid=14"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.salutepiemonte.it/assistenza/prenotazione-visite-ed-esami?nid=81&servizio=14&tipo=sezione"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://servizi.regione.piemonte.it/catalogo/prenotazione-visite-esami"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.salutepiemonte.it/servizi/ritiro-e-consultazione-documenti?nid=416"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.salutepiemonte.it/cms/parole-chiave/fascicolo-sanitario-elettronico"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.salutepiemonte.it/cms/node/362"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.salutepiemonte.it/servizi/gestione-consensi?nid=40"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.piemonte.it/web/temi/sanita/strumenti-operativi/fascicolo-sanitario-elettronico-20"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.piemonte.it/governo/bollettino/abbonati/2025/03/attach/dda1410000001_11200.pdf"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.piemonte.it/web/temi/sanita/accesso-ai-servizi-sanitari/lasl-to3-rinnova-lassistenza-medica-turistica-nelle-alte-valli-susa-chisone"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.piemonte.it/web/amministrazione/regione-utile/ufficio-relazioni-pubblico/sportello-per-cittadino-urp-torino"
+    }
+   ]
+  },
+  {
+   "id": "inps-piemonte",
+   "name": "INPS: sedi in Piemonte",
+   "tipo": "inps",
+   "pagine": [
+    {
+     "tipo": "piemonte (direzione regionale)",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.818000.818000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "torino",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.810000.810000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "vercelli",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.890000.890000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "biella",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.890100.890100-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "novara",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.520000.520000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "verbano-cusio-ossola",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.520100.520100-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "cuneo",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.270000.270000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "asti",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.070000.070000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "alessandria",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.020000.020000-elencoStruttureInps.html"
+    }
+   ]
+  },
+  {
+   "id": "asl-citta-torino",
+   "name": "ASL Città di Torino",
+   "tipo": "asl",
+   "province": [
+    "Torino (città)"
+   ],
+   "site_url": "https://www.aslcittaditorino.it/",
+   "pagine": [
+    {
+     "tipo": "contatti",
+     "url": "https://www.aslcittaditorino.it/numeri-utili/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aslcittaditorino.it/come-fare-per/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslcittaditorino.it/come-fare-per/prenotare-una-visita/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslcittaditorino.it/strutture/centri-unificati-prenotazione-cup/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslcittaditorino.it/strutture/continuita-assistenziale-distretto-nord-ovest/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aslcittaditorino.it/punto-unico-di-accesso-pua/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aslcittaditorino.it/sedi/cure-domiciliari-via-botticelli/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aslcittaditorino.it/come-fare-per/richiedere-una-valutazione-geriatrica-uvg/"
+    }
+   ]
+  },
+  {
+   "id": "asl-to3",
+   "name": "ASL TO3",
+   "tipo": "asl",
+   "province": [
+    "Torino (area ovest: Collegno, Rivoli, Pinerolo, Valli Susa e Chisone)"
+   ],
+   "site_url": "https://www.aslto3.piemonte.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aslto3.piemonte.it/urp/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aslto3.piemonte.it/contatti/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslto3.piemonte.it/servizi/prenotazioni/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslto3.piemonte.it/strutture/cup-centri-unici-di-prenotazione/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslto3.piemonte.it/servizi/guardia-medica/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aslto3.piemonte.it/servizi/assistenza/assistenza-a-domicilio/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aslto3.piemonte.it/servizi/medico-di-famiglia-pediatra/"
+    }
+   ]
+  },
+  {
+   "id": "asl-to4",
+   "name": "ASL TO4",
+   "tipo": "asl",
+   "province": [
+    "Torino (area nord: Ciriè, Chivasso, Ivrea, Settimo Torinese, Cuorgnè, Lanzo)"
+   ],
+   "site_url": "https://www.aslto4.piemonte.it/",
+   "pagine": [
+    {
+     "tipo": "cup",
+     "url": "https://www.aslto4.piemonte.it/prenotazione-e-disdetta-di-visite-ed-esami-specialistici"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslto4.piemonte.it/continuita-assistenziale-ex-guardia-medica"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aslto4.piemonte.it/cure-domiciliari"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aslto4.piemonte.it/prelievi-domiciliari"
+    }
+   ]
+  },
+  {
+   "id": "asl-to5",
+   "name": "ASL TO5",
+   "tipo": "asl",
+   "province": [
+    "Torino (area sud-est: Chieri, Moncalieri, Carmagnola, Nichelino)"
+   ],
+   "site_url": "https://www.aslto5.piemonte.it/index.php/it/home",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aslto5.piemonte.it/it/attivita/ufficio-relazioni-pubblico"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslto5.piemonte.it/it/servizio/prenotazioni-visite-esami"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslto5.piemonte.it/it/come-fare-per/prenotare-disdire-visita"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslto5.piemonte.it/it/area-tematica/emergenza-urgenza"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aslto5.piemonte.it/it/articoli/numeri-utili-ministero-regione-piemonte"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://progetti.aslto5.piemonte.it/l-azienda-sanitaria/distretti/distretto-di-moncalieri/assistenza-domiciliare-integrata.html"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aslto5.piemonte.it/it/area-tematica/cure-palliative"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aslto5.piemonte.it/it/distretti/case-comunita"
+    }
+   ]
+  },
+  {
+   "id": "asl-vc",
+   "name": "ASL VC",
+   "tipo": "asl",
+   "province": [
+    "Vercelli"
+   ],
+   "site_url": "https://aslvc.piemonte.it/",
+   "pagine": [
+    {
+     "tipo": "cup",
+     "url": "https://aslvc.piemonte.it/come-fare-per/prenotare-esami-e-visite-specialistiche_cup/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://aslvc.piemonte.it/servizi-e-prevenzione/tutti-i-servizi/medico-di-base-e-guardia-medica/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://aslvc.piemonte.it/casa-della-comunita-vercelli-guardia-medica-pronto-soccorso/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://aslvc.piemonte.it/come-fare-per/richiedere-assistenza-domiciliare/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://aslvc.piemonte.it/come-fare-per/accedere-al-percorso-di-tutela/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://aslvc.piemonte.it/come-fare-per/"
+    }
+   ]
+  },
+  {
+   "id": "asl-bi",
+   "name": "ASL BI",
+   "tipo": "asl",
+   "province": [
+    "Biella"
+   ],
+   "site_url": "https://aslbi.piemonte.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://aslbi.piemonte.it/urp/"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://aslbi.piemonte.it/u-r-p/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://aslbi.piemonte.it/come-fare-per/prenotare-una-visita-tramite-servizio-sanitario-nazionale/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://aslbi.piemonte.it/116117-il-numero-unico-per-contattare-lex-guardia-medica/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://aslbi.piemonte.it/come-fare-per/assistenza-domiciliare/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://aslbi.piemonte.it/prontuario-biellese/assistenza-domiciliare-integrata-a-d-i/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://aslbi.piemonte.it/come-fare-per/"
+    }
+   ]
+  },
+  {
+   "id": "asl-no",
+   "name": "ASL NO",
+   "tipo": "asl",
+   "province": [
+    "Novara"
+   ],
+   "site_url": "https://www.asl.novara.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.asl.novara.it/it/attivita/ufficio-relazioni-esterne-urp"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asl.novara.it/it/come-fare-per/prenotare-disdire-visite-esami"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asl.novara.it/it/attivita/centro-unico-prenotazioni-cup-medicina-base-accettazione-prelievi"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asl.novara.it/it/attivita/servizio-continuita-assistenziale-ex-guardia-medica"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asl.novara.it/it/attivita/cure-domiciliari"
+    }
+   ]
+  },
+  {
+   "id": "asl-vco",
+   "name": "ASL VCO",
+   "tipo": "asl",
+   "province": [
+    "Verbano-Cusio-Ossola"
+   ],
+   "site_url": "https://www.aslvco.it/",
+   "pagine": [
+    {
+     "tipo": "contatti",
+     "url": "https://www.aslvco.it/contatti/"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.aslvco.it/come-fare-per/numeri-utili/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslvco.it/come-fare-per/prenotare-e-pagare-esami/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslvco.it/trasferimento-postazione-continuita-assistenziale-di-verbania/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aslvco.it/strutture-territoriali-archive/soc-struttura-territoriale/assistenza-primaria-domiciliare-e-penitenziaria/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aslvco.it/come-fare-per/cure-territoriali/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aslvco.it/casa-della-salute/"
+    }
+   ]
+  },
+  {
+   "id": "asl-cn1",
+   "name": "ASL CN1",
+   "tipo": "asl",
+   "province": [
+    "Cuneo (Cuneo, Mondovì, Savigliano, Saluzzo, Fossano)"
+   ],
+   "site_url": "https://www.aslcn1.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aslcn1.it/urp/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslcn1.it/cosa-fare-per/prenotare-visite/esami"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslcn1.it/assistenza-territoriale/servizi-territoriali-distrettuali/continuita-assistenziale-guardia-medica"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aslcn1.it/assistenza-territoriale/assistenza-domiciliare"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aslcn1.it/assistenza-territoriale/servizi-territoriali-distrettuali/i-quattro-ambiti-distrettuali"
+    }
+   ]
+  },
+  {
+   "id": "asl-cn2",
+   "name": "ASL CN2",
+   "tipo": "asl",
+   "province": [
+    "Cuneo (Alba, Bra, Langhe e Roero)"
+   ],
+   "site_url": "https://www.aslcn2.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aslcn2.it/ospedale-michele-pietro-ferrero-verduno/u-r-p-ufficio-relazioni-con-il-pubblico/sede-e-contatti/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aslcn2.it/contatti-e-link/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslcn2.it/prenotazioni-e-pagamenti/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslcn2.it/ospedale-michele-pietro-ferrero-verduno/orari-e-informazioni/guardia-medica-servizio-continuita-assistenziale/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslcn2.it/servizi-sul-territorio/distretti/medici-di-continuita-assistenziale/"
+    }
+   ]
+  },
+  {
+   "id": "asl-at",
+   "name": "ASL AT",
+   "tipo": "asl",
+   "province": [
+    "Asti"
+   ],
+   "site_url": "https://asl.at.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://asl.at.it/urp-e-contatti/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://asl.at.it/cup/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://asl.at.it/cosa-fare-per/le-visite-e-le-prestazioni-ambulatoriali/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://asl.at.it/con-noi/continuita-assistenziale-ex-guardia-medica/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://asl.at.it/cosa-fare-per/cure-domiciliari/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://asl.at.it/cosa-fare-per/orientarsi-tra-i-percorsi-di-assistenza-e-cura/"
+    }
+   ]
+  },
+  {
+   "id": "asl-al",
+   "name": "ASL AL",
+   "tipo": "asl",
+   "province": [
+    "Alessandria"
+   ],
+   "site_url": "https://www.aslal.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aslal.it/Sezione.jsp?titolo=Informazioni+U.R.P.&idSezione=6"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslal.it/prenotare-visite-o-esami-e-ritirare-i-referti"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslal.it/continuita-assisten"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslal.it/attivo-sul-territorio-asl-al-il-nuovo-numero-116117"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aslal.it/cartella-integrata-c"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aslal.it/sportello-unico-1250"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aslal.it/bcentrale-operativa-continuita-assistenzialebbr"
+    }
+   ]
+  }
+ ]
+}

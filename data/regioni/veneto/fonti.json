@@ -1,0 +1,382 @@
+{
+ "_note": "Veneto in preparazione: solo gli indirizzi delle pagine ufficiali da far copiare al server in Italia (tools/copie.mjs). Dalle homepage (site_url) il server segue anche i link su contatti, URP, CUP, guardia medica, PUA e cure domiciliari. Indirizzi trovati con il motore di ricerca, nessuna pagina ancora letta: i numeri si scrivono solo leggendo le copie (docs/regola-numeri.md). Le province delle aziende vanno confermate sulle pagine.",
+ "asl": [
+  {
+   "id": "regione-veneto",
+   "name": "Regione Veneto",
+   "tipo": "regione",
+   "pagine": [
+    {
+     "tipo": "regione",
+     "url": "https://salute.regione.veneto.it/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://salute.regione.veneto.it/servizi"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.veneto.it/aziende-ulss-e-ospedaliere"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://salute.regione.veneto.it/organizzazione-sssr/attivit%C3%A0--del-servizio-socio-sanitario-veneto/assistenza-distrettuale/visite-ed-esami-ambulatoriali/tempi-di-attesa/collegamento-al-sistema-cup-regionale"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://salute.regione.veneto.it/fse-e-servizi-online/fascicolo-sanitario-elettronico-regionale/fse-prenotare-visite-ed-esami"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://salute.regione.veneto.it/lista-faq/presso-quali-strutture-sanitarie-posso-prenotare-visite-ed-esami"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://salute.regione.veneto.it/organizzazione-sssr/il-servizio-socio-sanitario-regionale/assistenza-distrettuale/nue-116117"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://salute.regione.veneto.it/notizie/116117-attivo-tutta-la-regione"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://salute.regione.veneto.it/fse-e-servizi-online/fascicolo-sanitario-elettronico-regionale"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.veneto.it/web/rete-degli-urp-del-veneto/servizi-sanitari-digitali"
+    }
+   ]
+  },
+  {
+   "id": "inps-veneto",
+   "name": "INPS: sedi in Veneto",
+   "tipo": "inps",
+   "pagine": [
+    {
+     "tipo": "belluno",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.100000.100000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "treviso",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.840000.840000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "venezia",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.880000.880000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "rovigo",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.710000.710000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "padova",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.540000.540000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "vicenza",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.910000.910000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "verona",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.900000.900000-elencoStruttureInps.html"
+    }
+   ]
+  },
+  {
+   "id": "ulss1-dolomiti",
+   "name": "Azienda ULSS 1 Dolomiti",
+   "tipo": "asl",
+   "province": [
+    "Belluno"
+   ],
+   "site_url": "https://www.aulss1.veneto.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aulss1.veneto.it/urp"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aulss1.veneto.it/centralini"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aulss1.veneto.it/liste-d-attesa"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aulss1.veneto.it/116117"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aulss1.veneto.it/service/progetti-e-servizi-a-sostegno-della-domiciliarita/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss1.veneto.it/distretti-e-territorio"
+    }
+   ]
+  },
+  {
+   "id": "ulss2-marca-trevigiana",
+   "name": "Azienda ULSS 2 Marca Trevigiana",
+   "tipo": "asl",
+   "province": [
+    "Treviso"
+   ],
+   "site_url": "https://www.aulss2.veneto.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aulss2.veneto.it/urp"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://aulss2.veneto.it/Strutture"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aulss2.veneto.it/cup-centro-unico-prenotazioni"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aulss2.veneto.it/116117"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aulss2.veneto.it/Continuit-assistenziale"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aulss2.veneto.it/che-cosa-si-pu-trovare-in-una-casa-della-comunit"
+    }
+   ]
+  },
+  {
+   "id": "ulss3-serenissima",
+   "name": "Azienda ULSS 3 Serenissima",
+   "tipo": "asl",
+   "province": [
+    "Venezia (Venezia, Mestre, Mirano-Dolo, Chioggia)"
+   ],
+   "site_url": "https://www.aulss3.veneto.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aulss3.veneto.it/organizzazioni/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aulss3.veneto.it/Numeri-Utili-1"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aulss3.veneto.it/home/dettaglio/organizzazione/prenotare"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aulss3.veneto.it/home/numeri-utili/116117"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aulss3.veneto.it/dettaglio/contenuto/servizio-di-continuita-assistenziale-ex-guardia-medica"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aulss3.veneto.it/Assistenza-Domiciliare-Integrata"
+    }
+   ]
+  },
+  {
+   "id": "ulss4-veneto-orientale",
+   "name": "Azienda ULSS 4 Veneto Orientale",
+   "tipo": "asl",
+   "province": [
+    "Venezia (San Donà di Piave, Portogruaro)"
+   ],
+   "site_url": "https://www.aulss4.veneto.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://aulss4.veneto.it/amministrazione/urp-ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aulss4.veneto.it/home/numeri-utili"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aulss4.veneto.it/home/cup"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aulss4.veneto.it/home/numeri-utili/116117-e-continuita-assistenziale/116117"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aulss4.veneto.it/home/dettaglio/strutture/casa-della-comunita-di-san-dona-di-piave"
+    }
+   ]
+  },
+  {
+   "id": "ulss5-polesana",
+   "name": "Azienda ULSS 5 Polesana",
+   "tipo": "asl",
+   "province": [
+    "Rovigo"
+   ],
+   "site_url": "https://www.aulss5.veneto.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aulss5.veneto.it/urp-e-ufficio-stampa"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aulss5.veneto.it/Contatti-e-riferimenti"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aulss5.veneto.it/prenotare"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aulss5.veneto.it/Servizio-di-continuita-assistenziale"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aulss5.veneto.it/le-case-della-comunit"
+    }
+   ]
+  },
+  {
+   "id": "ulss6-euganea",
+   "name": "Azienda ULSS 6 Euganea",
+   "tipo": "asl",
+   "province": [
+    "Padova"
+   ],
+   "site_url": "https://www.aulss6.veneto.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aulss6.veneto.it/URP"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aulss6.veneto.it/centralini"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aulss6.veneto.it/cup"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aulss6.veneto.it/Medici-di-Guardia-Medica"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aulss6.veneto.it/Casa-della-Comunit"
+    }
+   ]
+  },
+  {
+   "id": "ulss7-pedemontana",
+   "name": "Azienda ULSS 7 Pedemontana",
+   "tipo": "asl",
+   "province": [
+    "Vicenza (Bassano, Alto Vicentino)"
+   ],
+   "site_url": "https://www.aulss7.veneto.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aulss7.veneto.it/relazioni-con-il-pubblico-e-comunicazione"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aulss7.veneto.it/centralini"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aulss7.veneto.it/prenotare"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aulss7.veneto.it/116117"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aulss7.veneto.it/continuita-assistenziale"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss7.veneto.it/distretti-territorio"
+    }
+   ]
+  },
+  {
+   "id": "ulss8-berica",
+   "name": "Azienda ULSS 8 Berica",
+   "tipo": "asl",
+   "province": [
+    "Vicenza (Vicenza, Ovest Vicentino)"
+   ],
+   "site_url": "https://www.aulss8.veneto.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aulss8.veneto.it/sedi/ufficio-relazioni-con-il-pubblico-urp/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aulss8.veneto.it/centralini"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aulss8.veneto.it/prenotare-visite-ed-esami-tramite-il-cup-centro-unico-di-prenotazione"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aulss8.veneto.it/servizio-di-continuit-assistenziale"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aulss8.veneto.it/servizi/cittadino/curarsi-e-ottenere-assistenza-sanitaria/assistenza-sanitaria-a-casa/"
+    }
+   ]
+  },
+  {
+   "id": "ulss9-scaligera",
+   "name": "Azienda ULSS 9 Scaligera",
+   "tipo": "asl",
+   "province": [
+    "Verona"
+   ],
+   "site_url": "https://www.aulss9.veneto.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aulss9.veneto.it/urp"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aulss9.veneto.it/prenotazioni"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aulss9.veneto.it/servizio-116117"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aulss9.veneto.it/servizio-di-continuita-assistenziale-ex-guardia-medica"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aulss9.veneto.it/servizi-assistenza-domiciliare-integrata-distretto-3"
+    }
+   ]
+  }
+ ]
+}

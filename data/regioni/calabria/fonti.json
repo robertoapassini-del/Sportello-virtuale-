@@ -1,0 +1,314 @@
+{
+ "_note": "Calabria in preparazione: solo gli indirizzi delle pagine ufficiali da far copiare al server in Italia (tools/copie.mjs). Dalle homepage (site_url) il server segue anche i link su contatti, URP, CUP, guardia medica, PUA e cure domiciliari. Indirizzi trovati con il motore di ricerca, nessuna pagina ancora letta: i numeri si scrivono solo leggendo le copie (docs/regola-numeri.md). Le province delle aziende vanno confermate sulle pagine.",
+ "asl": [
+  {
+   "id": "regione-calabria",
+   "name": "Regione Calabria",
+   "tipo": "regione",
+   "pagine": [
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.calabria.it/dipartimento-salute-e-welfare/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.calabria.it/dipartimento-salute-e-welfare/settori-del-dipartimento/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.calabria.it/dipartimento-salute-e-welfare/aree-tematiche/sdg-assistenza-sanitaria/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.calabria.it/salute-e-sport/sanita-in-calabria/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.calabria.it/wp-content/uploads/2024/01/allegato_linee_guida-(1).pdf"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.calabria.it/wp-content/uploads/2024/12/Descrizione-Video-Portale-Web-Cup-Calabria-1.pdf"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.calabria.it/sanita-regione-nessuna-riduzione-ex-guardie-mediche-senza-attivazione-nuovi-presidi-territoriali/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.calabria.it/wp-content/uploads/2024/05/dca-101-del-17.05.2024.pdf"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.fascicolosanitario.regione.calabria.it/wp-content/uploads/2024/10/FSE_Calabria_Informativa-v_08feb2024.pdf"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://ecosanita.regione.calabria.it/faq.php"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.calabria.it/ufficio-relazioni-con-il-pubblico/"
+    }
+   ]
+  },
+  {
+   "id": "inps-calabria",
+   "name": "INPS: sedi in Calabria",
+   "tipo": "inps",
+   "pagine": [
+    {
+     "tipo": "catanzaro",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.220000.220000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "cosenza",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.250000.250000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "crotone",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.220300.220300-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "reggio calabria",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.670000.670000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "vibo valentia",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.220200.220200-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "calabria (direzione regionale)",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.228000.228000-elencoStruttureInps.html"
+    }
+   ]
+  },
+  {
+   "id": "asp-catanzaro",
+   "name": "ASP di Catanzaro",
+   "tipo": "asl",
+   "province": [
+    "Catanzaro"
+   ],
+   "site_url": "https://www.asp.cz.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.asp.cz.it/u-r-p-ufficio-relazioni-con-il-pubblico/?lang=it"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.asp.cz.it/trasparenza-valutazione-e-merito/dati-informativi-sullorganizzazione-e-i-procedimenti/contatti-/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asp.cz.it/centro-unico-prenotazioni-cup6/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asp.cz.it/continuita-assistenziale-ex-guardia-medica/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asp.cz.it/numeri-utili/servizio-di-continuita-assistenziale-ex-guardie-mediche/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asp.cz.it/distretti-sanitari/distretto-sociosanitario-di-catanzaro/postazioni-di-continuita-assistenziale-ex-guardia-medica-/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asp.cz.it/distretti-sanitari/distretto-socio-sanitario-di-lamezia-terme/postazioni-di-continuita-assistenziale-ex-guardia-medica-/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asp.cz.it/distretti-sanitari/distretto-socio-sanitario-di-soverato/postazioni-di-continuita-assistenziale-ex-guardia-medica-/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asp.cz.it/distretti-sanitari/distretto-sociosanitario-di-catanzaro/pua-punto-unico-di-accesso-cz/pua-catanzaro-centro/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asp.cz.it/distretti-sanitari/distretto-sociosanitario-di-catanzaro/pua-catanzaro-lido/"
+    }
+   ]
+  },
+  {
+   "id": "asp-cosenza",
+   "name": "ASP di Cosenza",
+   "tipo": "asl",
+   "province": [
+    "Cosenza"
+   ],
+   "site_url": "https://www.asp.cosenza.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.asp.cosenza.it/?p=urp-cosenza-servizi"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.asp.cosenza.it/?p=help_desk_urp"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.asp.cosenza.it/trasparente/?p=contatti"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asp.cosenza.it/?p=Servizi_cittadino"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asp.cosenza.it/wp-content/uploads/2025/05/carta-dei-servizi-i-Unificata-anno-2024-Ult.agg_.20.02.2025-h.13.21-3.pdf"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asp.cosenza.it/?p=Guardia_Medica"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asp.cosenza.it/?p=assistenza-domiciliare-integrata-adi"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://asp.cosenza.it/?id=2049-cure-domiciliari-integrate-distretto-cosenza-savuto&p=articoli"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://asp.cosenza.it/?id=2050-cure-domiciliari-integrate-distretto-valle-crati&p=articoli"
+    }
+   ]
+  },
+  {
+   "id": "asp-crotone",
+   "name": "ASP di Crotone",
+   "tipo": "asl",
+   "province": [
+    "Crotone"
+   ],
+   "site_url": "https://www.asp.crotone.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.asp.crotone.it/urp/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.asp.crotone.it/contatti/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.asp.crotone.it/contatti-2/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asp.crotone.it/centro-unico-di-prenotazione-online/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asp.crotone.it/la-guardia-medica/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asp.crotone.it/assistenza-domiciliare/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asp.crotone.it/fascicolo-sanitario-elettronico/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asp.crotone.it/area-sub-distrettuale-di-crotone/"
+    }
+   ]
+  },
+  {
+   "id": "asp-reggio-calabria",
+   "name": "ASP di Reggio Calabria",
+   "tipo": "asl",
+   "province": [
+    "Reggio Calabria"
+   ],
+   "site_url": "https://www.asprc.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.asprc.it/servizi/urp/"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.asprc.it/servizi/faq-urp/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.asprc.it/servizi/numeri-utili/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.asprc.it/form/contattaci/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asprc.it/servizi/prenotazioni-cup-e-pagamento-ticket/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asprc.it/prenotazioni-cup/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asprc.it/servizi/116117/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asprc.it/servizi/assistenza-domiciliare/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asprc.it/amministrazione/distretti/distretto-n-1-reggio-calabria/distretto-n-1-reggio-calabria-/s-c-direzione-distretto-n-1-reggio-calabria-/"
+    }
+   ]
+  },
+  {
+   "id": "asp-vibo-valentia",
+   "name": "ASP di Vibo Valentia",
+   "tipo": "asl",
+   "province": [
+    "Vibo Valentia"
+   ],
+   "site_url": "https://www.aspvv.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aspvv.it/index.php/urp"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aspvv.it/index.php/numeri-utili"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://aspvv.it/index.php?catid=169&id=2703&view=article"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aspvv.it/index.php/amministrazione-trasparente-3/servizi-erogati/liste-di-attesa/a-proposito-delle-liste-di-attesa"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aspvv.it/index.php/servizi-sanitari/servizio-di-continuita-assistenziale-ex-guardia-media"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aspvv.it/index.php/organizzazione/distretti/pua-punto-unico-di-accesso"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aspvv.it/index.php/organizzazione/distretti/cure-primarie-ss"
+    }
+   ]
+  }
+ ]
+}

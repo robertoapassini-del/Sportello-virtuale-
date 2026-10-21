@@ -1,0 +1,126 @@
+{
+ "_note": "Valle d'Aosta in preparazione: solo gli indirizzi delle pagine ufficiali da far copiare al server in Italia (tools/copie.mjs). Dalle homepage (site_url) il server segue anche i link su contatti, URP, CUP, guardia medica, PUA e cure domiciliari. Indirizzi trovati con il motore di ricerca, nessuna pagina ancora letta: i numeri si scrivono solo leggendo le copie (docs/regola-numeri.md). Le province delle aziende vanno confermate sulle pagine.",
+ "asl": [
+  {
+   "id": "regione-valle-d-aosta",
+   "name": "Regione Valle d'Aosta",
+   "tipo": "regione",
+   "pagine": [
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.vda.it/sanita/assistenza_sanitaria/default_i.asp"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.vda.it/sanita/servizi_territorio/default_i.asp"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.vda.it/sanita/servizi_territorio/emergenza/default_i.asp"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.vda.it/sanita/servizi_territorio/ass_sanitaria/turisti/default_i.asp"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.vda.it/sanita/assistenza_sanitaria/regione/tempi_attesa/default_i.asp"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.vda.it/sanita/risorse_informative/fse_i.aspx"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.vda.it/sanita/risorse_informative/default_i.aspx"
+    }
+   ]
+  },
+  {
+   "id": "inps-valle-d-aosta",
+   "name": "INPS: sedi in Valle d'Aosta",
+   "tipo": "inps",
+   "pagine": [
+    {
+     "tipo": "aosta",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.040000.040000-elencoStruttureInps.html"
+    }
+   ]
+  },
+  {
+   "id": "usl-vda",
+   "name": "Azienda USL della Valle d'Aosta",
+   "tipo": "asl",
+   "province": [
+    "Aosta"
+   ],
+   "site_url": "https://www.ausl.vda.it/",
+   "pagine": [
+    {
+     "tipo": "contatti",
+     "url": "https://www.ausl.vda.it/chi-siamo/direzione-strategica/segreteria-e-contatti"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.ausl.vda.it/chi-siamo/direzione-strategica/informazioni-generali"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.ausl.vda.it/chi-siamo/azienda"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.ausl.vda.it/urp/urp-ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.ausl.vda.it/in-primo-piano/segnalazione-all-urp"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.ausl.vda.it/cup-centro-unificato-prenotazioni"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/prenotare-le-prestazioni-di-riabilitazione-sul-territorio"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.ausl.vda.it/tempi-d-attesa/tempi-di-attesa"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/continuita-assistenziale-ex-guardia-medica"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.ausl.vda.it/sempre-informati/archivio/archivio-notizie-2025/continuita-dell-assistenza-pediatrica"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.ausl.vda.it/chi-siamo/servizi-territoriali-area-territoriale/ambulatori-ad-accesso-diretto"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.ausl.vda.it/attuazione-misure-pnrr/assistenza-domiciliare-adi"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.ausl.vda.it/chi-siamo/servizi-territoriali-area-territoriale/servizi-territoriali"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.ausl.vda.it/chi-siamo/servizi-territoriali-area-territoriale/distretto-1"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.ausl.vda.it/chi-siamo/servizi-territoriali-area-territoriale/distretto-2"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/scelta-e-revoca-del-medico-o-del-pediatra-di-famiglia"
+    }
+   ]
+  }
+ ]
+}

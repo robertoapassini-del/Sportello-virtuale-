@@ -1,0 +1,413 @@
+{
+ "_note": "Emilia-Romagna in preparazione: solo gli indirizzi delle pagine ufficiali da far copiare al server in Italia (tools/copie.mjs). Dalle homepage (site_url) il server segue anche i link su contatti, URP, CUP, guardia medica, PUA e cure domiciliari. Indirizzi trovati con il motore di ricerca, nessuna pagina ancora letta: i numeri si scrivono solo leggendo le copie (docs/regola-numeri.md). Le province delle aziende vanno confermate sulle pagine.",
+ "asl": [
+  {
+   "id": "regione-emilia-romagna",
+   "name": "Regione Emilia-Romagna",
+   "tipo": "regione",
+   "pagine": [
+    {
+     "tipo": "regione",
+     "url": "https://salute.regione.emilia-romagna.it/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://salute.regione.emilia-romagna.it/ssr"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://salute.regione.emilia-romagna.it/normativa-e-documentazione/materiale-informativo/schede-informative/numero-verde-ssr"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://salute.regione.emilia-romagna.it/cure-primarie/visite-ed-esami/per-prenotare"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://salute.regione.emilia-romagna.it/campagne/tempi-dattesa-per-visite-ed-esami"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://salute.regione.emilia-romagna.it/emergenzaurgenza/domande-frequenti"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://salute.regione.emilia-romagna.it/siseps/sanita/emergenza-urgenza/cau"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://salute.regione.emilia-romagna.it/fascicolo-sanitario-elettronico-2-0"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://support.fascicolo-sanitario.it/guida/informazioni-utili/cos%26%2339%3B%C3%A8-il-fascicolo-sanitario-elettronico-%28fse%29"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://support.fascicolo-sanitario.it/guida/informazioni-utili/domande-frequenti"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://support.fascicolo-sanitario.it/guida/accesso-mobile/app-fse"
+    }
+   ]
+  },
+  {
+   "id": "inps-emilia-romagna",
+   "name": "INPS: sedi in Emilia-Romagna",
+   "tipo": "inps",
+   "pagine": [
+    {
+     "tipo": "emilia-romagna (direzione regionale)",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.138000.138000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "piacenza",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.610000.610000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "parma",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.560000.560000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "reggio emilia",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.680000.680000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "modena",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.500000.500000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "bologna",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.130000.130000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "ferrara",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.290000.290000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "ravenna",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.660000.660000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "forli'-cesena",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.320000.320000-elencoStruttureInps.html"
+    },
+    {
+     "tipo": "rimini",
+     "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.320100.320100-elencoStruttureInps.html"
+    }
+   ]
+  },
+  {
+   "id": "ausl-piacenza",
+   "name": "AUSL di Piacenza",
+   "tipo": "asl",
+   "province": [
+    "Piacenza"
+   ],
+   "site_url": "https://www.ausl.pc.it/",
+   "pagine": [
+    {
+     "tipo": "contatti",
+     "url": "https://www.ausl.pc.it/it/orientamento-e-contatti"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.ausl.pc.it/it/strutture-e-territorio/dove-siamo/ospedali/ospedale-di-piacenza/sportello-unico-cup-piacenza-ospedale"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.ausl.pc.it/it/strutture-e-territorio/dove-siamo/continuita-assistenziale-ex-guardia-medica"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.ausl.pc.it/it/prestazioni-e-percorsi-di-cura/rete-territoriale/assistenza-domiciliare/assistenza-domiciliare-infermieristica-adi"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.ausl.pc.it/it/strutture-e-territorio/dove-siamo/case-della-salute/servizi-territoriali-di-fiorenzuola/servizi-territoriali-fiorenzuola-via-garibaldi/pua"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.ausl.pc.it/it/prestazioni-e-percorsi-di-cura/assistenza-socio-sanitaria"
+    }
+   ]
+  },
+  {
+   "id": "ausl-parma",
+   "name": "AUSL di Parma",
+   "tipo": "asl",
+   "province": [
+    "Parma"
+   ],
+   "site_url": "https://www.ausl.pr.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.ausl.pr.it/come_fare/ufficio_relazioni_pubblico_1/distretto_parma.aspx"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.ausl.pr.it/come_fare/sportelli_unici/default.aspx"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.ausl.pr.it/come_fare/prenotazioni_disdette/assistenza-specialistica.aspx"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.ausl.pr.it/dove_curarsi/guardia_medica/default.aspx"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.ausl.pr.it/dove_curarsi/assistenza_domiciliare_1/default.aspx"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.ausl.pr.it/comunicazione_stampa/archivio_3/punti_unici_accesso_nuovo_servzio_integrazione.aspx"
+    }
+   ]
+  },
+  {
+   "id": "ausl-reggio-emilia",
+   "name": "AUSL di Reggio Emilia (IRCCS)",
+   "tipo": "asl",
+   "province": [
+    "Reggio Emilia"
+   ],
+   "site_url": "https://www.ausl.re.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.ausl.re.it/comunicazione/opuscoli-informativi/urp-ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.ausl.re.it/come-prenotare"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.ausl.re.it/prenotazione"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.ausl.re.it/continuita-assistenziale-ex-guardia-medica2023"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.ausl.re.it/servizi-territoriali/servizio-di-continuit%C3%A0-assistenziale-ex-guardia-medica"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.ausl.re.it/servizi-territoriali/servizio-infermieristico-domiciliare"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.ausl.re.it/allegati/Informativa_ADI_240415111342.pdf"
+    }
+   ]
+  },
+  {
+   "id": "ausl-modena",
+   "name": "AUSL di Modena",
+   "tipo": "asl",
+   "province": [
+    "Modena"
+   ],
+   "site_url": "https://www.ausl.mo.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.ausl.mo.it/luogo/urp-ufficio-relazioni-con-il-pubblico-modena/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.ausl.mo.it/servizi-online/cupweb/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.ausl.mo.it/servizi-e-prestazioni/guardia-medica/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.ausl.mo.it/strutture/guardia-medica-sedi/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.ausl.mo.it/servizi-e-prestazioni/cure-domiciliari-e-assistenza-domiciliare/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.ausl.mo.it/come-fare-per/"
+    }
+   ]
+  },
+  {
+   "id": "ausl-bologna",
+   "name": "AUSL di Bologna",
+   "tipo": "asl",
+   "province": [
+    "Bologna (esclusi i comuni del circondario imolese)"
+   ],
+   "site_url": "https://www.ausl.bologna.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.ausl.bologna.it/guida-ai-servizi/luoghi/15328"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.ausl.bologna.it/istituto-delle-scienze-neurologiche/link/prenotazioni"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.ausl.bologna.it/per-i-cittadini/cagm"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.ausl.bologna.it/guida-ai-servizi/luoghi/14823/312840"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.ausl.bologna.it/guida-ai-servizi/luoghi/16689"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.ausl.bologna.it/guida-ai-servizi/luoghi/16610"
+    }
+   ]
+  },
+  {
+   "id": "ausl-imola",
+   "name": "AUSL di Imola",
+   "tipo": "asl",
+   "province": [
+    "Bologna (circondario imolese)"
+   ],
+   "site_url": "https://www.ausl.imola.bo.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.ausl.imola.bo.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/25/UT/systemPrint"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.ausl.imola.bo.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/13"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.ausl.imola.bo.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/5802"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.ausl.imola.bo.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/2708"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.ausl.imola.bo.it/PUA"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.ausl.imola.bo.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/12260"
+    }
+   ]
+  },
+  {
+   "id": "ausl-ferrara",
+   "name": "AUSL di Ferrara",
+   "tipo": "asl",
+   "province": [
+    "Ferrara"
+   ],
+   "site_url": "https://www.ausl.fe.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.ausl.fe.it/strutture/amministrazione/servizi-in-staff-alla-direzione/area-knowledge-center/area-comunicazione/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://at.ausl.fe.it/organizzazione/telefono-e-posta-elettronica"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.ausl.fe.it/servizi-e-prestazioni/visite-specialistiche/prenotazioni-online-di-visite-ed-esami-specialistici"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.ausl.fe.it/servizi-e-prestazioni/visite-specialistiche/disdetta-visite-ed-esami"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.ausl.fe.it/come-fare-per/come-e-dove-curarmi/servizio-di-continuita-assistenziale-guardia-medica"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.ausl.fe.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/servizio-di-assistenza-domiciliare-adi"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.ausl.fe.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/assistenza-domiciliare"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.ausl.fe.it/servizi-e-prestazioni/fascicolo-sanitario-elettronico"
+    }
+   ]
+  },
+  {
+   "id": "ausl-romagna",
+   "name": "AUSL della Romagna",
+   "tipo": "asl",
+   "province": [
+    "Ravenna",
+    "Forli'-Cesena",
+    "Rimini"
+   ],
+   "site_url": "https://www.auslromagna.it/",
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.auslromagna.it/urp"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.auslromagna.it/servizi/accoglienza-informazioni-servizi-sanitari"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.auslromagna.it/servizi/cup"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.auslromagna.it/servizi/prenotare-disdire"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.auslromagna.it/luoghi/mappa-sportelli-cup/sportelli-cup"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.auslromagna.it/luoghi/guardia-medica"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.auslromagna.it/servizi/guardia-medica/ambulatori-continuita-assistenziale"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.auslromagna.it/servizi/servizi-alfabetico/schede-informative/1073-domiciliare-assistenza"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.auslromagna.it/azienda/organizzazione/distretti/distretto-di-forli/luoghi/pua-punto-unico-di-accesso-di-forli"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.auslromagna.it/attuazione-misure-pnrr/missione-6/1-2-2-cot"
+    }
+   ]
+  }
+ ]
+}
