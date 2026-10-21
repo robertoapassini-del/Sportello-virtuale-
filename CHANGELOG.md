@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 21/10/2026 — Valle d'Aosta: i numeri utili
+- 13 numeri dell'Azienda USL (centralino, CUP, URP, sportelli di scelta del medico), controllati nelle copie delle pagine ufficiali del 21/10/2026.
+- Guardia medica: in Valle d'Aosta si chiama il 112.
+- Sede INPS di Aosta.
+
 ## 21/10/2026 — Piemonte: i numeri utili delle 8 province
 - 108 numeri delle ASL (le quattro di Torino insieme nella provincia di Torino, CN1 e CN2 a Cuneo), controllati nelle copie delle pagine ufficiali del 21/10/2026.
 - Guardia medica: 116117 in tutta la regione; prenotazioni al CUP Piemonte 800 000 500.

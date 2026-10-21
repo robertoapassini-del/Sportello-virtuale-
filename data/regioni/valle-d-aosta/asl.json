@@ -1,0 +1,177 @@
+{
+ "region": "Valle d'Aosta",
+ "model": "USL",
+ "_note": "Numeri dell'Azienda USL della Valle d'Aosta, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili. In Valle d'Aosta la guardia medica (continuità assistenziale) si chiama al 112.",
+ "asl": [
+  {
+   "id": "aosta",
+   "name": "Azienda USL della Valle d'Aosta",
+   "province": "Aosta",
+   "site_url": "https://www.ausl.vda.it/",
+   "official_domains": [
+    "ausl.vda.it",
+    "regione.vda.it"
+   ],
+   "guardia_medica_url": "https://www.ausl.vda.it/f-a-q/come-fare-per/continuita-assistenziale-ex-guardia-medica",
+   "emails": [
+    "urp.aosta@ausl.vda.it"
+   ],
+   "pec": "protocollo@pec.ausl.vda.it",
+   "phones": [
+    {
+     "label": "Centralino dell'Azienda USL della Valle d'Aosta",
+     "number": "0165 5431",
+     "url": "https://www.ausl.vda.it/chi-siamo/direzione-strategica/segreteria-e-contatti",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP dell'USL della Valle d'Aosta: prenotare visite ed esami per telefono",
+     "number": "0165 548387",
+     "hours": "Dal lunedì al venerdì 8–16:30",
+     "url": "https://www.ausl.vda.it/cup-centro-unificato-prenotazioni",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Numero verde di assistenza per il CUP online (FSE e App) dell'USL della Valle d'Aosta",
+     "number": "800 610061",
+     "url": "https://www.ausl.vda.it/cup-centro-unificato-prenotazioni",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "USL della Valle d'Aosta: prenotare fisioterapia e logopedia per adulti",
+     "number": "0165 543434",
+     "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/prenotare-le-prestazioni-di-riabilitazione-sul-territorio",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'USL della Valle d'Aosta: ufficio per i cittadini, reclami e segnalazioni",
+     "number": "0165 544418",
+     "hours": "Lunedì, mercoledì e venerdì 8:30–13; martedì e giovedì 8:30–13 e 14–16",
+     "address": "Via Guido Rey 1 (piano terra), Aosta",
+     "url": "https://www.ausl.vda.it/urp/urp-ufficio-relazioni-con-il-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'USL della Valle d'Aosta: secondo numero",
+     "number": "0165 544688",
+     "address": "Via Guido Rey 1 (piano terra), Aosta",
+     "url": "https://www.ausl.vda.it/urp/urp-ufficio-relazioni-con-il-pubblico",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Continuità assistenziale (ex guardia medica) in Valle d'Aosta: si chiama il numero unico per le emergenze NUE 112",
+     "number": "112",
+     "hours": "Tutti i giorni dalle 20 alle 8 e nei giorni festivi",
+     "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/continuita-assistenziale-ex-guardia-medica",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Scelta e revoca del medico – sportello di Morgex (informazioni)",
+     "number": "0165 809300",
+     "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/scelta-e-revoca-del-medico-o-del-pediatra-di-famiglia",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Scelta e revoca del medico – sportello di Saint-Pierre (informazioni)",
+     "number": "0165 903825",
+     "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/scelta-e-revoca-del-medico-o-del-pediatra-di-famiglia",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Scelta e revoca del medico – sportello di Aosta (informazioni)",
+     "number": "0165 544835",
+     "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/scelta-e-revoca-del-medico-o-del-pediatra-di-famiglia",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Scelta e revoca del medico – sportello di Châtillon (informazioni)",
+     "number": "0166 501011",
+     "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/scelta-e-revoca-del-medico-o-del-pediatra-di-famiglia",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Scelta e revoca del medico – sportello di Verrès (informazioni)",
+     "number": "0125 920488",
+     "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/scelta-e-revoca-del-medico-o-del-pediatra-di-famiglia",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Scelta e revoca del medico – sportello di Donnas (informazioni)",
+     "number": "0125 806300",
+     "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/scelta-e-revoca-del-medico-o-del-pediatra-di-famiglia",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "USL Valle d'Aosta – Segreteria e contatti",
+     "url": "https://www.ausl.vda.it/chi-siamo/direzione-strategica/segreteria-e-contatti"
+    },
+    {
+     "label": "USL Valle d'Aosta – CUP Centro unificato prenotazioni",
+     "url": "https://www.ausl.vda.it/cup-centro-unificato-prenotazioni"
+    },
+    {
+     "label": "USL Valle d'Aosta – Prenotare la riabilitazione sul territorio",
+     "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/prenotare-le-prestazioni-di-riabilitazione-sul-territorio"
+    },
+    {
+     "label": "USL Valle d'Aosta – URP",
+     "url": "https://www.ausl.vda.it/urp/urp-ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "label": "USL Valle d'Aosta – Continuità assistenziale (ex guardia medica)",
+     "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/continuita-assistenziale-ex-guardia-medica"
+    },
+    {
+     "label": "USL Valle d'Aosta – Scelta e revoca del medico o del pediatra",
+     "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/scelta-e-revoca-del-medico-o-del-pediatra-di-famiglia"
+    },
+    {
+     "label": "USL Valle d'Aosta – Distretto 1 (sedi della continuità assistenziale)",
+     "url": "https://www.ausl.vda.it/chi-siamo/servizi-territoriali-area-territoriale/distretto-1"
+    },
+    {
+     "label": "Regione Valle d'Aosta – Emergenza sanitaria (112)",
+     "url": "https://www.regione.vda.it/sanita/servizi_territorio/emergenza/default_i.asp"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "Guardia medica: la pagina USL «Continuità assistenziale (ex guardia medica)» dice che per il medico di continuità assistenziale si chiama il NUE 112, tutti i giorni dalle 20 alle 8 e nei festivi. Nessuna pagina copiata (USL o Regione) parla del 116117: per la Valle d'Aosta non va messo il 116117 finché una pagina ufficiale non lo dice.",
+    "La pagina Distretto 1 dice che il medico di continuità assistenziale ha sede all'Ospedale Beauregard di Aosta, a Morgex, Cogne e Saint-Pierre, ma non dà numeri; la pagina Distretto 2 non indica sedi.",
+    "La pagina regionale «Emergenza sanitaria» dice che il 112 è il numero per il soccorso sanitario in tutta la regione (Centrale Unica del Soccorso).",
+    "CUP: c'è un solo CUP, quello dell'USL, 0165 548387 (lun–ven 8–16:30, da fisso e cellulare, anche dall'estero); numero verde 800 610061 solo per assistenza al CUP online. Non ho trovato un CUP regionale diverso. Alcune prestazioni (es. radiologia, oculistica) si prenotano direttamente nei reparti.",
+    "PUA / cure domiciliari: nessuna pagina con numeri; la pagina «Assistenza domiciliare (ADI)» è solo la scheda del progetto PNRR. Manca il topic «casa».",
+    "Le pagine regionali «Assistenza sanitaria» e «Servizi sul territorio» (dove c'è la voce Continuità assistenziale) davano errore 403 e non sono state copiate."
+   ]
+  }
+ ]
+}

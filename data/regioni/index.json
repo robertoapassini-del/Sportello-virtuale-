@@ -21,7 +21,7 @@
     { "id": "toscana", "name": "Toscana", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili"] },
     { "id": "trentino-alto-adige", "name": "Trentino-Alto Adige", "attiva": false, "asl_label": "Azienda sanitaria" },
     { "id": "umbria", "name": "Umbria", "attiva": false, "asl_label": "USL" },
-    { "id": "valle-d-aosta", "name": "Valle d'Aosta", "attiva": false, "asl_label": "USL" },
+    { "id": "valle-d-aosta", "name": "Valle d'Aosta", "attiva": true, "asl_label": "USL", "moduli": ["numeri-utili"] },
     { "id": "veneto", "name": "Veneto", "in": "nel Veneto", "attiva": false, "asl_label": "ULSS" }
   ]
 }
