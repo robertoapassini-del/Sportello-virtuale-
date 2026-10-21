@@ -7,7 +7,7 @@
     { "id": "calabria", "name": "Calabria", "attiva": true, "asl_label": "ASP", "moduli": ["numeri-utili"] },
     { "id": "campania", "name": "Campania", "attiva": false, "asl_label": "ASL" },
     { "id": "emilia-romagna", "name": "Emilia-Romagna", "attiva": true, "asl_label": "AUSL", "moduli": ["numeri-utili"] },
-    { "id": "friuli-venezia-giulia", "name": "Friuli-Venezia Giulia", "attiva": false, "asl_label": "Azienda sanitaria" },
+    { "id": "friuli-venezia-giulia", "name": "Friuli-Venezia Giulia", "attiva": true, "asl_label": "Azienda sanitaria", "moduli": ["numeri-utili"] },
     { "id": "lazio", "name": "Lazio", "in": "nel Lazio", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili"] },
     { "id": "liguria", "name": "Liguria", "attiva": true, "asl_label": "ATS", "moduli": ["numeri-utili"] },
     { "id": "lombardia", "name": "Lombardia", "attiva": true, "asl_label": "ATS", "moduli": ["numeri-utili"] },

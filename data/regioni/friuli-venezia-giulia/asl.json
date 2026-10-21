@@ -1,0 +1,584 @@
+{
+ "region": "Friuli-Venezia Giulia",
+ "model": "Aziende sanitarie",
+ "_note": "Numeri delle aziende sanitarie del Friuli-Venezia Giulia (ASUGI, ASUFC, ASFO) per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili. Il 116117 è attivo in tutta la regione (2026); Call center unico salute e sociale 0434 223522.",
+ "asl": [
+  {
+   "id": "gorizia",
+   "name": "Azienda sanitaria universitaria Giuliano Isontina (ASUGI)",
+   "site_url": "https://asugi.sanita.fvg.it/",
+   "official_domains": [
+    "asugi.sanita.fvg.it",
+    "regione.fvg.it",
+    "arcs.sanita.fvg.it",
+    "sesamo.sanita.fvg.it"
+   ],
+   "guardia_medica_url": "https://asugi.sanita.fvg.it/it/servizi/gut_numero_unico.html",
+   "pec": "asugi@certsanita.fvg.it",
+   "province": "Gorizia",
+   "emails": [
+    "urp.gorizia@asugi.sanita.fvg.it",
+    "urp.monfalcone@asugi.sanita.fvg.it"
+   ],
+   "phones": [
+    {
+     "label": "Centralino ASUGI – Ospedale di Gorizia",
+     "number": "0481 5921",
+     "url": "https://asugi.sanita.fvg.it/it/schede/menu_azienda/azienda_informa/contatti_principali.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino ASUGI – Ospedale di Monfalcone",
+     "number": "0481 4871",
+     "url": "https://asugi.sanita.fvg.it/it/schede/menu_azienda/azienda_informa/contatti_principali.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Numero verde ASUGI: informazioni sull'Azienda sanitaria",
+     "number": "800 991170",
+     "url": "https://asugi.sanita.fvg.it/it/schede/menu_azienda/azienda_informa/contatti_principali.html",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 8:30–13"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "116117: guardia medica (continuità assistenziale) e cure non urgenti, gratuito, in tutto il Friuli-Venezia Giulia",
+     "number": "116117",
+     "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/sistema-sociale-sanitario/FOGLIA12/articolo.html",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Sempre attivo, 24 ore su 24, 7 giorni su 7 (guardia medica: feriali 20–8, weekend dalle 8 del sabato alle 8 del lunedì, festivi)"
+    },
+    {
+     "topic": "cup",
+     "label": "Call center unico regionale (CUP): prenotare, spostare o annullare visite ed esami",
+     "number": "0434 223522",
+     "url": "https://asugi.sanita.fvg.it/it/schede/pagine_nuove/nuove_pagine/prenota_annulla_esame.html",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 7–22, sabato 7–20 (da fisso, cellulare e dall'estero)"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASUGI – Ospedale di Gorizia: ufficio per i cittadini, reclami",
+     "number": "0481 592083",
+     "url": "https://asugi.sanita.fvg.it/it/schede/menu_azienda/azienda_informa/contatti_principali.html",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 9–12",
+     "address": "Viale Fatebenefratelli 34, Gorizia (piano terra)"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASUGI – Ospedale di Monfalcone: ufficio per i cittadini, reclami",
+     "number": "0481 487583",
+     "url": "https://asugi.sanita.fvg.it/it/schede/menu_azienda/azienda_informa/contatti_principali.html",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 9–12",
+     "address": "Via Luigi Galvani 1, Monfalcone (Ospedale San Polo, edificio A)"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASUGI – Contatti principali",
+     "url": "https://asugi.sanita.fvg.it/it/schede/menu_azienda/azienda_informa/contatti_principali.html"
+    },
+    {
+     "label": "ASUGI – Comunicazione e URP",
+     "url": "https://asugi.sanita.fvg.it/it/strutture/a_direz_generale/creaus/"
+    },
+    {
+     "label": "ASUGI – Numeri utili",
+     "url": "https://asugi.sanita.fvg.it/it/schede/s_dg_staff/creaus_numeroverde_sanita.html"
+    },
+    {
+     "label": "ASUGI – 116117",
+     "url": "https://asugi.sanita.fvg.it/it/servizi/gut_numero_unico.html"
+    },
+    {
+     "label": "ASUGI – Dal 19 gennaio 2026 il 116117 sostituisce il numero verde 800 614302",
+     "url": "https://asugi.sanita.fvg.it/it/news/2026_01_16_numero_unico_servizi_sanitari_non_urgenti.html"
+    },
+    {
+     "label": "ASUGI – Prenota, annulla visita o esame",
+     "url": "https://asugi.sanita.fvg.it/it/schede/pagine_nuove/nuove_pagine/prenota_annulla_esame.html"
+    },
+    {
+     "label": "Regione FVG – 116117",
+     "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/sistema-sociale-sanitario/FOGLIA12/articolo.html"
+    },
+    {
+     "label": "ASUGI – Ospedale di Monfalcone: in ripristino la linea telefonica (14/10/2026)",
+     "url": "https://asugi.sanita.fvg.it/it/avvisi/2026_10_14_centralino_monfalcone.html"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "Ospedale di Monfalcone: guasto telefonico a metà ottobre 2026, il 14/10 «in ripristino»; nel frattempo l'ASUGI indica il centralino di Gorizia 0481 5921.",
+    "PUA/cure domiciliari Area Isontina: la pagina PUA Alto Isontino risponde «non trovata» (404); nessun numero sicuro."
+   ]
+  },
+  {
+   "id": "pordenone",
+   "name": "Azienda sanitaria Friuli Occidentale (ASFO)",
+   "province": "Pordenone",
+   "site_url": "https://asfo.sanita.fvg.it/",
+   "official_domains": [
+    "asfo.sanita.fvg.it",
+    "regione.fvg.it",
+    "arcs.sanita.fvg.it",
+    "sesamo.sanita.fvg.it"
+   ],
+   "guardia_medica_url": "https://asfo.sanita.fvg.it/it/servizi/guardia_medica.html",
+   "pua_url": "https://asfo.sanita.fvg.it/it/servizi/punto_unico_accesso.html",
+   "emails": [
+    "urp@asfo.sanita.fvg.it"
+   ],
+   "pec": "asfo.protgen@certsanita.fvg.it",
+   "phones": [
+    {
+     "label": "Centralino ASFO – Ospedale di Pordenone",
+     "number": "0434 399111",
+     "url": "https://asfo.sanita.fvg.it/it/servizi/guardia_medica.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino ASFO – Cittadella della Salute (Pordenone)",
+     "number": "0434 1923111",
+     "url": "https://asfo.sanita.fvg.it/it/servizi/guardia_medica.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino ASFO – Sede centrale legale-amministrativa",
+     "number": "0434 369111",
+     "url": "https://asfo.sanita.fvg.it/it/servizi/guardia_medica.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino ASFO – Ospedale di San Vito al Tagliamento",
+     "number": "0434 841111",
+     "url": "https://asfo.sanita.fvg.it/it/strutture/direzione_generale/Ufficio-Comunicazione/urp/index.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino ASFO – Ospedale di Spilimbergo",
+     "number": "0427 595595",
+     "url": "https://asfo.sanita.fvg.it/it/strutture/direzione_generale/Ufficio-Comunicazione/urp/index.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "116117: guardia medica (continuità assistenziale) e cure non urgenti, gratuito, in tutto il Friuli-Venezia Giulia",
+     "number": "116117",
+     "url": "https://asfo.sanita.fvg.it/it/news/2026_04_13-01.html",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Sempre attivo, 24 ore su 24, 7 giorni su 7 (guardia medica: feriali 20–8, weekend dalle 8 del sabato alle 8 del lunedì, festivi)"
+    },
+    {
+     "topic": "cup",
+     "label": "Call center unico regionale (CUP): prenotare, spostare o annullare visite ed esami",
+     "number": "0434 223522",
+     "url": "https://asfo.sanita.fvg.it/it/servizi/prenotazione_prestazioni_ambulatoriali.html",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 7–22, sabato 7–20"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASFO – Ospedale di Pordenone: ufficio per i cittadini, reclami",
+     "number": "0434 399719",
+     "url": "https://asfo.sanita.fvg.it/it/strutture/direzione_generale/Ufficio-Comunicazione/urp/index.html",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "address": "Via Montereale 28, Pordenone (Nuovo Ospedale, padiglione d'ingresso, piano terra)"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASFO – Ospedale di San Vito al Tagliamento",
+     "number": "0434 841650",
+     "url": "https://asfo.sanita.fvg.it/it/strutture/direzione_generale/Ufficio-Comunicazione/urp/index.html",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Fino al 31/12/2026 solo il mercoledì 8:30–12:30 e 13:30–15",
+     "address": "Via Savorgnano 2, San Vito al Tagliamento"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASFO – Ospedale di Spilimbergo",
+     "number": "0427 595612",
+     "url": "https://asfo.sanita.fvg.it/it/strutture/direzione_generale/Ufficio-Comunicazione/urp/index.html",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "address": "Via Raffaello Sanzio 1, Spilimbergo"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASFO – Distretto del Noncello (Pordenone): cure a casa, ADI, anziani e disabili",
+     "number": "0434 1923180",
+     "url": "https://asfo.sanita.fvg.it/it/servizi/punto_unico_accesso.html",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Lunedì, martedì, giovedì, venerdì 9–12; mercoledì 12:30–15:30",
+     "address": "Via Montereale 32/A, Pordenone"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASFO – Distretto delle Dolomiti Friulane (Maniago)",
+     "number": "0427 735301",
+     "url": "https://asfo.sanita.fvg.it/it/servizi/punto_unico_accesso.html",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Lunedì, martedì, giovedì, venerdì 9–12:30; mercoledì 13:30–15:30",
+     "address": "Via Unità d'Italia 19, Maniago"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASFO – Distretto delle Dolomiti Friulane (Spilimbergo)",
+     "number": "0427 595806",
+     "url": "https://asfo.sanita.fvg.it/it/strutture/direzione_sanitaria/assist_territ/distretti/punto_unico_accesso/",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "address": "Via Raffaello Sanzio 1, Spilimbergo"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASFO – Distretto del Sile (Azzano Decimo)",
+     "number": "0434 423376",
+     "url": "https://asfo.sanita.fvg.it/it/servizi/punto_unico_accesso.html",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Lunedì, martedì, giovedì, venerdì 9–12; mercoledì 12:30–15:30",
+     "address": "Viale XXV Aprile 40, Azzano Decimo"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASFO – Distretto del Tagliamento (San Vito al Tagliamento)",
+     "number": "0434 841720",
+     "url": "https://asfo.sanita.fvg.it/it/servizi/punto_unico_accesso.html",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Lunedì, martedì, giovedì, venerdì 9–12; mercoledì 12:30–15:30",
+     "address": "Piazzale Linteris 4, San Vito al Tagliamento"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASFO – Distretto del Livenza (Sacile)",
+     "number": "0434 1923417",
+     "url": "https://asfo.sanita.fvg.it/it/strutture/direzione_sanitaria/assist_territ/distretti/punto_unico_accesso/",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "address": "Via Ettoreo 4, Sacile"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Ufficio Anagrafe sanitaria ASFO – Distretto Dolomiti Friulane (Maniago, Spilimbergo): scelta del medico, esenzioni",
+     "number": "0427 735382",
+     "url": "https://asfo.sanita.fvg.it/it/avvisi/2026_08_24-00.html",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Telefonate: lunedì, martedì, giovedì, venerdì 14–15; mercoledì 9–11"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASFO – Guardia medica (116117) e centralini",
+     "url": "https://asfo.sanita.fvg.it/it/servizi/guardia_medica.html"
+    },
+    {
+     "label": "ASFO – 116117 dal 13 aprile 2026",
+     "url": "https://asfo.sanita.fvg.it/it/news/2026_04_13-01.html"
+    },
+    {
+     "label": "ASFO – URP",
+     "url": "https://asfo.sanita.fvg.it/it/strutture/direzione_generale/Ufficio-Comunicazione/urp/index.html"
+    },
+    {
+     "label": "ASFO – Punto Unico di Accesso",
+     "url": "https://asfo.sanita.fvg.it/it/servizi/punto_unico_accesso.html"
+    },
+    {
+     "label": "ASFO – Sedi PUA",
+     "url": "https://asfo.sanita.fvg.it/it/strutture/direzione_sanitaria/assist_territ/distretti/punto_unico_accesso/"
+    },
+    {
+     "label": "ASFO – Prenotazioni ambulatoriali",
+     "url": "https://asfo.sanita.fvg.it/it/servizi/prenotazione_prestazioni_ambulatoriali.html"
+    },
+    {
+     "label": "ASFO – Anagrafe Distretto Dolomiti Friulane",
+     "url": "https://asfo.sanita.fvg.it/it/avvisi/2026_08_24-00.html"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "URP Pordenone: dal 30/09/2026 trasferito al Nuovo Ospedale (via Montereale 28); l'ARCS indica anche 0434 369841 (sede centrale), e l'avviso San Vito cita 0434 399735 / 369841 per la settimana 19–23 ottobre: ho messo il numero della pagina URP (0434 399719).",
+    "Orari URP Pordenone e Spilimbergo non scritti nella pagina."
+   ]
+  },
+  {
+   "id": "trieste",
+   "name": "Azienda sanitaria universitaria Giuliano Isontina (ASUGI)",
+   "site_url": "https://asugi.sanita.fvg.it/",
+   "official_domains": [
+    "asugi.sanita.fvg.it",
+    "regione.fvg.it",
+    "arcs.sanita.fvg.it",
+    "sesamo.sanita.fvg.it"
+   ],
+   "guardia_medica_url": "https://asugi.sanita.fvg.it/it/servizi/gut_numero_unico.html",
+   "pec": "asugi@certsanita.fvg.it",
+   "province": "Trieste",
+   "emails": [
+    "urp.trieste@asugi.sanita.fvg.it"
+   ],
+   "phones": [
+    {
+     "label": "Centralino ASUGI – Trieste",
+     "number": "040 3991111",
+     "url": "https://asugi.sanita.fvg.it/it/schede/menu_azienda/azienda_informa/contatti_principali.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Numero verde ASUGI: informazioni sull'Azienda sanitaria",
+     "number": "800 991170",
+     "url": "https://asugi.sanita.fvg.it/it/schede/menu_azienda/azienda_informa/contatti_principali.html",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 8:30–13"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "116117: guardia medica (continuità assistenziale) e cure non urgenti, gratuito, in tutto il Friuli-Venezia Giulia",
+     "number": "116117",
+     "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/sistema-sociale-sanitario/FOGLIA12/articolo.html",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Sempre attivo, 24 ore su 24, 7 giorni su 7 (guardia medica: feriali 20–8, weekend dalle 8 del sabato alle 8 del lunedì, festivi)"
+    },
+    {
+     "topic": "cup",
+     "label": "Call center unico regionale (CUP): prenotare, spostare o annullare visite ed esami",
+     "number": "0434 223522",
+     "url": "https://asugi.sanita.fvg.it/it/schede/pagine_nuove/nuove_pagine/prenota_annulla_esame.html",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 7–22, sabato 7–20 (da fisso, cellulare e dall'estero)"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASUGI – Ospedale di Cattinara (Trieste): ufficio per i cittadini, reclami",
+     "number": "040 3994880",
+     "url": "https://asugi.sanita.fvg.it/it/schede/menu_azienda/azienda_informa/contatti_principali.html",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 9–12",
+     "address": "Strada di Fiume 447, Trieste (Palazzina Direzione Infermieristica, piano terra)"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASUGI – Contatti principali",
+     "url": "https://asugi.sanita.fvg.it/it/schede/menu_azienda/azienda_informa/contatti_principali.html"
+    },
+    {
+     "label": "ASUGI – Comunicazione e URP",
+     "url": "https://asugi.sanita.fvg.it/it/strutture/a_direz_generale/creaus/"
+    },
+    {
+     "label": "ASUGI – Numeri utili",
+     "url": "https://asugi.sanita.fvg.it/it/schede/s_dg_staff/creaus_numeroverde_sanita.html"
+    },
+    {
+     "label": "ASUGI – 116117",
+     "url": "https://asugi.sanita.fvg.it/it/servizi/gut_numero_unico.html"
+    },
+    {
+     "label": "ASUGI – Dal 19 gennaio 2026 il 116117 sostituisce il numero verde 800 614302",
+     "url": "https://asugi.sanita.fvg.it/it/news/2026_01_16_numero_unico_servizi_sanitari_non_urgenti.html"
+    },
+    {
+     "label": "ASUGI – Prenota, annulla visita o esame",
+     "url": "https://asugi.sanita.fvg.it/it/schede/pagine_nuove/nuove_pagine/prenota_annulla_esame.html"
+    },
+    {
+     "label": "Regione FVG – 116117",
+     "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/sistema-sociale-sanitario/FOGLIA12/articolo.html"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "116117: attivo in tutto il FVG. Prima solo per ASUGI (Trieste e Gorizia) dal 19 gennaio 2026, al posto del numero verde 800 614302 (pagina news ASUGI); dal 13 aprile 2026 anche in ASUFC (Udine) e ASFO (Pordenone) (news ASUFC e ASFO). La pagina della Regione (aggiornata 30/07/2026) dice che la centrale è a Trieste e risponde a tutta la regione: gratuito, 24/7, attiva la guardia medica (feriali 20–8, weekend e festivi) e i servizi territoriali. Quindi niente vecchi numeri locali di guardia medica.",
+    "CUP: in FVG c'è un solo numero regionale, il Call center unico salute e sociale 0434 223522 (gestito da ARCS), lun–ven 7–22, sabato 7–20, da fisso, cellulare ed estero; resta attivo anche 848 448 884 solo da rete fissa. Le aziende non hanno un CUP telefonico proprio: hanno solo sportelli CUP e farmacie abilitate.",
+    "Cure a casa (ADI/PUA) Trieste: nelle copie non c'è un numero chiaro di accesso alle cure domiciliari (solo numeri di ambulatori dei distretti); si attiva tramite medico di famiglia o 116117.",
+    "L'ARCS indica per l'URP di Trieste anche 040 3997180 (gestione reclami), diverso dal 040 3994880 delle pagine ASUGI: ho messo quello delle pagine ASUGI."
+   ]
+  },
+  {
+   "id": "udine",
+   "name": "Azienda sanitaria universitaria Friuli Centrale (ASUFC)",
+   "province": "Udine",
+   "site_url": "https://asufc.sanita.fvg.it/",
+   "official_domains": [
+    "asufc.sanita.fvg.it",
+    "regione.fvg.it",
+    "arcs.sanita.fvg.it",
+    "sesamo.sanita.fvg.it"
+   ],
+   "guardia_medica_url": "https://asufc.sanita.fvg.it/it/schede/guardia_medica.html",
+   "emails": [
+    "urp@asufc.sanita.fvg.it"
+   ],
+   "pec": "asufc@certsanita.fvg.it",
+   "phones": [
+    {
+     "label": "Centralino ASUFC – Ospedale Santa Maria della Misericordia (Udine)",
+     "number": "0432 5521",
+     "url": "https://asufc.sanita.fvg.it/it/schede/contatti.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Punto informazioni – Ospedale di Udine",
+     "number": "0432 554440",
+     "url": "https://asufc.sanita.fvg.it/it/schede/contatti.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino ASUFC – Ospedale di Palmanova",
+     "number": "0432 921111",
+     "url": "https://asufc.sanita.fvg.it/it/schede/contatti.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino ASUFC – Ospedale di Latisana",
+     "number": "0431 529111",
+     "url": "https://asufc.sanita.fvg.it/it/schede/contatti.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino ASUFC – Ospedale di San Daniele",
+     "number": "0432 9491",
+     "url": "https://asufc.sanita.fvg.it/it/schede/contatti.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino ASUFC – Ospedale di Tolmezzo",
+     "number": "0433 4881",
+     "url": "https://asufc.sanita.fvg.it/it/schede/contatti.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino ASUFC – Presidio di Cividale",
+     "number": "0432 7081",
+     "url": "https://asufc.sanita.fvg.it/it/schede/contatti.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino ASUFC – Presidio di Gemona del Friuli",
+     "number": "0432 9891",
+     "url": "https://asufc.sanita.fvg.it/it/schede/contatti.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Centralino ASUFC – Istituto Gervasutta (Udine)",
+     "number": "0432 55312",
+     "url": "https://asufc.sanita.fvg.it/it/schede/contatti.html",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "label": "Numero unico vaccinazioni dell'ASUFC: informazioni e prenotazioni",
+     "number": "0432 553260",
+     "url": "https://asufc.sanita.fvg.it/it/news/nuovo_numero_unico_vaccinazioni.html",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 10–13, martedì anche 13:30–14:30"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "116117: guardia medica (continuità assistenziale) e cure non urgenti, gratuito, in tutto il Friuli-Venezia Giulia",
+     "number": "116117",
+     "url": "https://asufc.sanita.fvg.it/it/news/116117.html",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Sempre attivo, 24 ore su 24, 7 giorni su 7 (guardia medica: feriali 20–8, weekend dalle 8 del sabato alle 8 del lunedì, festivi)"
+    },
+    {
+     "topic": "cup",
+     "label": "Call center unico regionale (CUP): prenotare, spostare o annullare visite ed esami",
+     "number": "0434 223522",
+     "url": "https://arcs.sanita.fvg.it/it/informazioni-per-i-cittadini/come-contattare-il-cup-e-prenotare-una-prestazione-sanitaria",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 7–22, sabato 7–20 (da fisso, cellulare e dall'estero)"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASUFC: ufficio per i cittadini, reclami",
+     "number": "0432 552796",
+     "url": "https://asufc.sanita.fvg.it/de/strutture/dir_generale/strut_staff_dir_gen/ufficio_comunicazione/",
+     "verified": "2026-10-21",
+     "proof": "pagina",
+     "address": "Piazzale Santa Maria della Misericordia 15, Udine"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASUFC – Contatti",
+     "url": "https://asufc.sanita.fvg.it/it/schede/contatti.html"
+    },
+    {
+     "label": "ASUFC – Comunicazione e URP",
+     "url": "https://asufc.sanita.fvg.it/de/strutture/dir_generale/strut_staff_dir_gen/ufficio_comunicazione/"
+    },
+    {
+     "label": "ASUFC – Attivazione del 116117 dal 13 aprile 2026",
+     "url": "https://asufc.sanita.fvg.it/it/news/116117.html"
+    },
+    {
+     "label": "ASUFC – Continuità assistenziale",
+     "url": "https://asufc.sanita.fvg.it/it/schede/guardia_medica.html"
+    },
+    {
+     "label": "ASUFC – Nuovo numero unico vaccinazioni",
+     "url": "https://asufc.sanita.fvg.it/it/news/nuovo_numero_unico_vaccinazioni.html"
+    },
+    {
+     "label": "ARCS – Come contattare il CUP",
+     "url": "https://arcs.sanita.fvg.it/it/informazioni-per-i-cittadini/come-contattare-il-cup-e-prenotare-una-prestazione-sanitaria"
+    }
+   ],
+   "last_verified": "2026-10-21",
+   "todo": [
+    "PUA/cure domiciliari ASUFC: si attivano tramite medico, servizi sociali o PUAI della Casa della Comunità, ma nelle copie non c'è un numero del PUAI; ci sono solo cellulari di infermieri di comunità di singoli comuni (Taipana, Reana), non messi.",
+    "La pagina URP dell'ASUFC copiata è la versione tedesca del sito (stesso contenuto)."
+   ]
+  }
+ ]
+}
