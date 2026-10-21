@@ -22,7 +22,7 @@
     { "code": "M", "text": "Gravidanza: visite ed esami del percorso nascita gratuiti." },
     { "code": "D", "text": "Esami di prevenzione (screening) nelle fasce di età previste: gratuiti." }
   ],
-  "notes_internal": "TODO-VERIFY: E01 dai 65 anni compiuti (la legge dice «superiore a 65 anni»: confermare con ASP/Sistema TS che vale dal compleanno); soglie aggiornate (DM 11/12/2009; art. 8 c. 16 L. 537/1993) con il legale/ASP. Codici C01-C06 corretti il 2026-10-21 sulla scheda del Garante disabili della Regione Campania (C01 100% senza accompagnamento, C02 100% con accompagnamento, C03 67-99%, C04 minori con indennità di frequenza, C05 ciechi, C06 sordi). In Sicilia l'esenzione farmaci per reddito ha regole regionali: non calcolarla.",
+  "notes_internal": "TODO-VERIFY: E01 dai 65 anni compiuti (la legge dice «superiore a 65 anni»: confermare con ASP/Sistema TS che vale dal compleanno); soglie aggiornate (DM 11/12/2009; art. 8 c. 16 L. 537/1993) con il legale/ASP. Codici di esenzione per invalidità (da C01 a C06) corretti il 2026-10-21 sulla scheda del Garante disabili della Regione Campania: il significato di ognuno è in other_exemptions. In Sicilia l'esenzione farmaci per reddito ha regole regionali: non calcolarla.",
   "provenienza": {
     "codes.E01": {
       "url": "https://www.salute.gov.it/new/it/tema/esenzioni-dal-ticket/esenzioni-reddito/",

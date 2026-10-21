@@ -1,6 +1,6 @@
 // Errori già trovati sul sito, che non devono tornare. Ogni volta che una rilettura o un utente trova
 // un errore che si può riconoscere da come è scritto, si aggiunge qui una riga (cosa, perché, dove guardare).
-// Guarda le pagine HTML, i JS e i file di dati (non quelli delle regioni, che hanno il loro test).
+// Guarda le pagine HTML, i JS e i file di dati, anche quelli delle regioni.
 // Se fallisce: correggi il testo. Togli una riga solo se la regola è cambiata (e scrivilo nel CHANGELOG).
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
@@ -9,7 +9,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const SITE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const SALTA = new Set(['node_modules', '.git', 'tests', 'tools', 'docs', 'regioni', 'fonts', 'css']);
+const SALTA = new Set(['node_modules', '.git', 'tests', 'tools', 'docs', 'fonts', 'css']);
 function files(dir = SITE) {
   return fs.readdirSync(dir, { withFileTypes: true }).flatMap((e) => {
     if (SALTA.has(e.name)) return [];
@@ -42,6 +42,7 @@ const ERRORI = [
   [/rivalutazione dell.1,4%/, "accompagnamento: l'1,4% è la perequazione delle pensioni, non vale per l'accompagnamento"],
   [/messaggio (n\. )?639\/2026/, 'province della riforma della disabilità: messaggi INPS 635 e 637 del 23/02/2026'],
   [/art\. 6,? L\. 80\/2006|L\. 405\/2001, art\./, 'leggi di conversione con un solo articolo: si cita il decreto-legge (D.L. 4/2006 art. 6 c. 3-bis; D.L. 347/2001 art. 8)'],
+  [/lunedì e mercoledì[^;"]*;\s*dal martedì al giovedì/, 'orario con un giorno ripetuto e il venerdì mancante (URP ASL Roma 4, avviso con refuso)'],
   [/DM 24\/11\/2022/, 'bonus psicologo: il decreto è del 24/11/2023'],
   [/secondo i tempi indicati dalla normativa vigente/, 'i 30 giorni della vecchia procedura INPS sono indicativi (rules-invalidita.json): la lettera non li cita come norma'],
 ];
