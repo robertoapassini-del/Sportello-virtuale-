@@ -21,6 +21,9 @@ const PROOFS = ['telefono', 'pagina', 'estratto', 'archivio'];
 const today = process.env.OGGI ? new Date(`${process.env.OGGI}T12:00:00Z`) : new Date();
 // Gruppo centrale fino a 5 cifre: alcuni numeri a 11 cifre si scrivono così sulle pagine ufficiali (02 99430 1814).
 const PHONE = /^(\d{2,4} ?\d{3,5} ?\d{0,4}|1\d{2,5})$/;
+// Numeri brevi (che cominciano per 1): solo quelli nazionali che si chiamano davvero così. Un numero come
+// «100100» dell'Alto Adige va composto con il prefisso: senza, il pulsante «Chiama» non funziona (audit del 21/10/2026).
+const BREVI = ['112', '114', '116117', '118', '1500', '1522', '1533', '19696'];
 
 const host = (u) => new URL(u).hostname.replace(/^www\./, '');
 const onDomain = (u, domains) => domains.some((d) => host(u) === d || host(u).endsWith(`.${d}`));
@@ -28,6 +31,7 @@ const onDomain = (u, domains) => domains.some((d) => host(u) === d || host(u).en
 function check(n, where, domains) {
   const name = `${where}: ${n.label || n.title} ${n.number}`;
   assert.match(n.number, PHONE, `${name}: numero scritto male`);
+  if (/^1/.test(n.number)) assert.ok(BREVI.includes(n.number.replace(/\s/g, '')), `${name}: numero breve che non è tra quelli nazionali: serve il prefisso?`);
   assert.ok(n.url, `${name}: manca «url», la pagina ufficiale da cui viene`);
   assert.ok(onDomain(n.url, domains), `${name}: «url» non è un sito ufficiale (${host(n.url)}). Ammessi: ${domains.join(', ')}`);
   assert.ok(PROOFS.includes(n.proof), `${name}: «proof» deve essere ${PROOFS.join(' / ')}`);

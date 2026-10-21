@@ -29,8 +29,35 @@
    "contacts": [
     {
      "topic": "cup",
-     "label": "CUPP – Centro unico di prenotazione provinciale dell'Alto Adige: prenotare visite ed esami (100 100 con il prefisso 0471, 0472, 0473 o 0474)",
-     "number": "100100",
+     "label": "CUPP – Centro unico di prenotazione provinciale dell'Alto Adige: prenotare visite ed esami – zona di Bolzano",
+     "number": "0471 100100",
+     "hours": "Dal lunedì al venerdì 8–16",
+     "url": "https://home.sabes.it/it/prenotazione-me.asp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUPP – Centro unico di prenotazione provinciale dell'Alto Adige: prenotare visite ed esami – zona di Bressanone",
+     "number": "0472 100100",
+     "hours": "Dal lunedì al venerdì 8–16",
+     "url": "https://home.sabes.it/it/prenotazione-me.asp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUPP – Centro unico di prenotazione provinciale dell'Alto Adige: prenotare visite ed esami – zona di Merano",
+     "number": "0473 100100",
+     "hours": "Dal lunedì al venerdì 8–16",
+     "url": "https://home.sabes.it/it/prenotazione-me.asp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUPP – Centro unico di prenotazione provinciale dell'Alto Adige: prenotare visite ed esami – zona di Brunico",
+     "number": "0474 100100",
      "hours": "Dal lunedì al venerdì 8–16",
      "url": "https://home.sabes.it/it/prenotazione-me.asp",
      "verified": "2026-10-21",
@@ -38,8 +65,32 @@
     },
     {
      "topic": "screening",
-     "label": "CUPP Prevenzione dell'Alto Adige: screening, vaccinazioni e certificati (100 100 con il prefisso 0471, 0472, 0473 o 0474)",
-     "number": "100100",
+     "label": "CUPP Prevenzione dell'Alto Adige: screening, vaccinazioni e certificati – zona di Bolzano",
+     "number": "0471 100100",
+     "url": "https://home.asdaa.it/it/servizi.asp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "CUPP Prevenzione dell'Alto Adige: screening, vaccinazioni e certificati – zona di Bressanone",
+     "number": "0472 100100",
+     "url": "https://home.asdaa.it/it/servizi.asp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "CUPP Prevenzione dell'Alto Adige: screening, vaccinazioni e certificati – zona di Merano",
+     "number": "0473 100100",
+     "url": "https://home.asdaa.it/it/servizi.asp",
+     "verified": "2026-10-21",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "CUPP Prevenzione dell'Alto Adige: screening, vaccinazioni e certificati – zona di Brunico",
+     "number": "0474 100100",
      "url": "https://home.asdaa.it/it/servizi.asp",
      "verified": "2026-10-21",
      "proof": "pagina"
@@ -63,7 +114,7 @@
    "todo": [
     "Quasi tutte le pagine di asdaa.it e salute.provincia.bz.it sono fatte in JavaScript: la copia contiene solo «Loading...», quindi niente URP, centralino aziendale, PUA/cure domiciliari, guardia medica né 116117 verificati per la provincia di Bolzano.",
     "Guardia medica: l'unica pagina leggibile (Medicina di base, Comprensorio di Merano, vecchia: cita il 2011) dice che il servizio festivo è fatto a turno dai medici di famiglia e che i nomi dei medici di turno si sanno dal centralino dell'Ospedale di Merano (0473 263333) o su www.asdaa.it/it/servizio-di-turno-medici.asp. Non ho messo numeri di guardia medica: controllare se in Alto Adige è attivo il 116117.",
-    "Il numero del CUPP è «100 100» da comporre con il prefisso del distretto (0471 Bolzano, 0472 Bressanone, 0473 Merano, 0474 Brunico): l'ho scritto «100100» come sulla pagina, con i prefissi nell'etichetta. Va mostrato bene al cittadino.",
+    "Il numero del CUPP è «100 100» con il prefisso del distretto (0471 Bolzano, 0472 Bressanone, 0473 Merano, 0474 Brunico): sul sito un numero per zona, perché senza prefisso la chiamata non parte (audit del 21/10/2026).",
     "La pagina «Tempi di prenotazione» di provincia.bz.it non si è aperta (troppi rinvii)."
    ]
   },
