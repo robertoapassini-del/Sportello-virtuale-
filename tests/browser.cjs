@@ -139,6 +139,74 @@ async function stampa(page, dove, problemi) {
     }
   }
 
+  // Chi non abita in Sicilia (Lombardia: solo i Numeri utili; Campania: non ancora attiva): la schermata di blocco
+  // dei moduli con dati regionali deve portare alla guida scritta (#guida), mai alla prima schermata
+  // (il cui pulsante riporterebbe al blocco: giro senza uscita). Per la Campania anche i Numeri utili nazionali.
+  const regionali = ['liste-attesa', 'invalidita', 'cartella-clinica', 'medico-famiglia', 'assistenza-domiciliare', 'ausili', 'cure-palliative', 'prevenzione'];
+  for (const regione of ['lombardia', 'campania']) {
+    for (const m of regionali) {
+      const ctx = await nuova(regione);
+      const page = await ctx.newPage();
+      const dove = `${regione} /${m}/ blocco regione`;
+      errori(page, () => dove);
+      await page.goto(`${BASE}${m}/`, { waitUntil: 'networkidle' });
+      const start = page.locator('#app button[data-go="province"]:not([disabled]), #app .btn.primary:not([disabled])').first();
+      if (!(await start.count())) { problemi.push(`${dove}: non trovo il pulsante principale`); await ctx.close(); continue; }
+      await start.click();
+      await page.waitForTimeout(300);
+      // Prevenzione: prima sesso ed età, poi il risultato nazionale (vedi sotto); qui basta il pulsante principale.
+      if (m === 'prevenzione') { await ctx.close(); continue; }
+      const r = await page.evaluate(() => ({
+        h1: (document.querySelector('#app h1') || {}).innerText || '',
+        guida: !!document.getElementById('guida'),
+        link: !!document.querySelector('#app a[href="#guida"]'),
+        inizio: !!document.querySelector('#app button[data-go="intro"]'),
+        numeri: !!document.querySelector('#app a[href$="numeri-utili/"]'),
+      }));
+      if (!/📍/.test(r.h1) && !/non abbiamo ancora i dati|regione non c'è ancora/.test(r.h1)) problemi.push(`${dove}: non si vede la schermata di blocco («${r.h1}»)`);
+      if (r.guida && !r.link) problemi.push(`${dove}: manca il link alla guida (#guida)`);
+      if (r.inizio) problemi.push(`${dove}: c'è ancora il pulsante che riporta all'inizio (giro senza uscita)`);
+      if (regione === 'campania' && !r.numeri) problemi.push(`${dove}: manca il link ai Numeri utili`);
+      if (r.link) {
+        // Il link alla guida scorre alla guida.
+        await page.click('#app a[href="#guida"]');
+        await page.waitForTimeout(300);
+        const vista = await page.evaluate(() => Math.abs(document.getElementById('guida').getBoundingClientRect().top) < 5);
+        if (!vista) problemi.push(`${dove}: il link alla guida non porta alla guida`);
+      }
+      await ctx.close();
+    }
+  }
+  {
+    // Lombardia, prevenzione: donna di 55 anni → il risultato nazionale (con la mammografia), senza blocco.
+    const ctx = await nuova('lombardia');
+    const page = await ctx.newPage();
+    const dove = 'lombardia /prevenzione/ donna 55 anni';
+    errori(page, () => dove);
+    await page.goto(`${BASE}prevenzione/`, { waitUntil: 'networkidle' });
+    await page.click('#app .btn.primary:not([disabled])');
+    await page.waitForTimeout(200);
+    await page.click('#app button.choice[data-set*="F"]');
+    await page.waitForTimeout(200);
+    await page.fill('#age', '55');
+    await page.click('#age-form button[type=submit]');
+    await page.waitForTimeout(300);
+    const t = await page.evaluate(() => document.getElementById('app').innerText);
+    if (!/Mammografia/.test(t)) problemi.push(`${dove}: il risultato non contiene «Mammografia» («${t.slice(0, 80)}»)`);
+    await controlla(page, dove, 'lombardia', problemi);
+    await ctx.close();
+  }
+  {
+    // Lombardia, home: dice che per ora ci sono i numeri utili.
+    const ctx = await nuova('lombardia');
+    const page = await ctx.newPage();
+    const dove = 'lombardia / home';
+    errori(page, () => dove);
+    await page.goto(BASE, { waitUntil: 'networkidle' });
+    if (!(await page.evaluate(() => /numeri utili/.test(document.body.innerText)))) problemi.push(`${dove}: manca la riga «numeri utili»`);
+    await ctx.close();
+  }
+
   await browser.close();
   // Lo stesso problema in più passi dello stesso modulo si conta una volta.
   const unici = [...new Set(problemi.map((p) => p.replace(/ giro \d+ passo \d+| giro \d+/, '')))];

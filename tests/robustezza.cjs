@@ -98,7 +98,7 @@ async function main() {
     }
     await ctx.close();
   }
-  for (const [reg, atteso] of [['sicilia', /Dove abita/], ['lazio', /regione non c'è ancora/]]) {
+  for (const [reg, atteso] of [['sicilia', /Dove abita/], ['lazio', /Per questo argomento nel Lazio non abbiamo ancora i dati/], ['lombardia', /Per questo argomento in Lombardia non abbiamo ancora i dati/], ['campania', /La tua regione non c'è ancora/]]) {
     const nome = `medico-famiglia/ senza localStorage (${reg})`;
     const { ctx, page } = await scheda(browser, nome, { init: STORAGE_BLOCCATO });
     await apri(page, at('medico-famiglia/'));

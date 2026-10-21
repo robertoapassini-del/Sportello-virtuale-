@@ -12,6 +12,16 @@ function card(href, icon, title, small) {
   return `<a class="btn choice" href="${esc(href)}"><span class="ico" aria-hidden="true">${icon}</span><span class="txt">${esc(title)}${small ? ` <small>${esc(small)}</small>` : ''}</span></a>`;
 }
 
+// Per una regione salvata con solo alcuni moduli («moduli» nell'indice) o non ancora attiva: cosa c'è e cosa no.
+function copertura() {
+  const r = regioneSalvata();
+  if (!r || (r.attiva && !r.moduli)) return '';
+  const nome = esc(r.name);
+  return r.attiva
+    ? `<p class="home-regione">Le regole valgono in tutta Italia. Per ${nome} per ora abbiamo i numeri utili; uffici e lettere solo per la Sicilia.</p>`
+    : `<p class="home-regione">Le regole valgono in tutta Italia. Per ${nome} non abbiamo ancora numeri e uffici; uffici e lettere solo per la Sicilia.</p>`;
+}
+
 // Chi siamo in una riga sopra le scelte; il resto sotto. Con una regione sola: «Per ora solo in <regione>».
 // Con più regioni: quale si sta guardando e il link per cambiarla (la scelta è in Numeri utili).
 function intro() {
@@ -24,6 +34,7 @@ function intro() {
   <h1>Di cosa hai bisogno?</h1>
   <p class="home-trust">Gratis. Siamo volontari: <strong>non siamo l'${esc(ente)} né l'INPS</strong>.${piu ? '' : ` Per ora solo in ${esc(regioneInfo().name)}.`}</p>
   ${piu ? `<p class="home-regione">📍 ${regioneSalvata() ? `Stai guardando: <strong>${esc(scelta.name)}</strong> · <a href="numeri-utili/?torna=${encodeURIComponent(location.pathname)}#regione">Cambia regione</a>` : `<a href="numeri-utili/?torna=${encodeURIComponent(location.pathname)}#regione">Scegli la tua regione</a> per vedere i numeri e gli uffici della tua zona`}</p>` : ''}
+  ${piu ? copertura() : ''}
   </section>`;
 }
 

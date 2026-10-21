@@ -96,7 +96,10 @@ const group = (g) => `
 // Blocco regionale: la scelta della regione, l'invito se la regione non c'è ancora, oppure le province.
 function regionale(id, a, provinces) {
   if (needsRegion()) return `<p>Prima scegli la tua regione.</p>${regionChoices()}`;
-  if (regioneNonPronta()) return regionMissing('');
+  if (regioneNonPronta()) {
+    return `<p>Guardia medica: chiedi al tuo medico di famiglia il numero della tua zona, o cercalo sul sito della tua azienda sanitaria.</p>
+    ${regionMissing()}`;
+  }
   return `<p>Scegli la tua provincia: guardia medica, CUP per prenotare, ufficio per i cittadini, cure a casa.</p>
     <div class="grid2">${provinces.map((p) => `<a class="btn choice" href="#${esc(p.id)}"${p.id === id ? ' aria-current="true"' : ''}><span class="txt">${esc(p.province)}</span></a>`).join('')}</div>
     ${changeRegionLink()}
