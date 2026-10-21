@@ -87,6 +87,11 @@ Non fatto perché impossibile dall'estero: il controllo dei 370 link esterni (`n
 
 ## 2. Da confermare (telefono o pagina letta dall'Italia)
 
+### Chi firma per un'altra persona (21/10/2026)
+- [ ] Rileggere su Normattiva il Codice civile, artt. 316 e 320 (genitore), 357 (tutore), 404-405 (amministratore di
+  sostegno, L. 6/2004), e confermare le formule delle lettere in `js/letters.js` (`delegateBlock`). Il curatore
+  (art. 424) assiste ma non rappresenta: vedere se per il curatore serve una formula diversa.
+
 ### Liste d'attesa
 - [ ] **ASP Trapani:** le richieste del percorso di tutela («prestazioni garantite») vanno davvero a
   `comunicazione@asptrapani.it`? PEC `direzione.generale@pec.asptrapani.it`. Pagina:

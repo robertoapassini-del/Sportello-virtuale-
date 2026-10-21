@@ -618,6 +618,20 @@ async function runCase(page, c) {
     if (/undefined|NaN|null/.test(t)) problems.push('sollecito con testo sospetto');
     const mail = await page.locator('#mail-btn').getAttribute('href');
     if (!mail.startsWith(`mailto:${c.pr.pec}?`)) problems.push('PEC INPS sbagliata');
+    // Chi scrive per un altro: per un minore firma il genitore (senza delega), il tutore allega il decreto.
+    await page.check('input[name=isDelegate]'); await page.fill('#f-delegateName', 'Luca Rossi');
+    const role = await page.locator('input[name=delegateRole]:checked').getAttribute('value');
+    if (role !== (c.cat === 'minor' ? 'genitore' : 'delegato')) problems.push(`ruolo di chi scrive: atteso ${c.cat === 'minor' ? 'genitore' : 'delegato'}, scelto ${role}`);
+    const td = await page.locator('#preview').innerText();
+    if (c.cat === 'minor') {
+      if (!td.includes('responsabilità genitoriale') || /delega/i.test(td)) problems.push('sollecito per un minore: deve firmare il genitore, senza delega');
+      const note = await page.locator('.delegate-note').innerText();
+      if (/delega firmata/.test(note)) problems.push('«Prima di mandarla» chiede la delega per un minore');
+    } else if (!td.includes('come da delega allegata')) problems.push('sollecito del delegato senza la delega');
+    await page.check('input[name=delegateRole][value=tutore]');
+    if (!(await page.locator('#f-guardianKind').isVisible())) problems.push('tutore: campi del decreto nascosti');
+    const tt = await page.locator('#preview').innerText();
+    if (!tt.includes('in qualità di amministratore di sostegno') || !tt.includes('copia del decreto di nomina') || /delega/i.test(tt)) problems.push('sollecito del tutore/amministratore di sostegno sbagliato');
     await checkScreen('sollecito');
   }
   return problems;

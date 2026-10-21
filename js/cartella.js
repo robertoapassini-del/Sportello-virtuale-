@@ -6,7 +6,7 @@
 import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
 import { cartellaReminder, mailtoHref } from './letters.js';
 import { noPecBox,
-  esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, officeBox, personFields, reportErrorHref, generalContactInfo, aslLabel, regioneInfo, regioneLink, regione,
+  esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, officeBox, personFields, reportErrorHref, generalContactInfo, aslLabel, regioneInfo, regioneLink, regione, generalContact, syncDelegate, delegateNoteText,
 } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons, senzaUffici } from './flow.js';
 
@@ -49,7 +49,7 @@ const howToAsk = () => `
   <ol class="big-steps">
     <li><strong>Prima guarda nel Fascicolo Sanitario Elettronico</strong> (FSE): molti referti si scaricano già lì, gratis, con SPID, CIE o CNS. ${regioneLink('fse') ? `<a href="${esc(regioneLink('fse'))}" target="_blank" rel="noopener">💻 Fascicolo Sanitario della ${esc(regioneInfo().ente || 'tua Regione')}</a>` : ''}</li>
     <li><strong>Vai all'ufficio cartelle cliniche</strong> dell'ospedale (a volte si chiama «Direzione sanitaria» o «Archivio»). Oppure all'URP. Molti ospedali hanno anche un modulo sul sito.</li>
-    <li><strong>Porta la carta d'identità.</strong> Se chiedi per un familiare, serve una <strong>delega firmata</strong> da lui e la copia del suo documento. Se la persona è morta, serve una dichiarazione di essere erede.</li>
+    <li><strong>Porta la carta d'identità.</strong> Se chiedi per un familiare, serve una <strong>delega firmata</strong> da lui e la copia del suo documento. Il tutore o l'amministratore di sostegno porta il decreto di nomina. Se la persona è morta, serve una dichiarazione di essere erede.</li>
     <li><strong>Chiedi una ricevuta</strong> con il giorno della richiesta. Da quel giorno partono i ${rules.deadline_days} giorni.</li>
     <li><strong>La prima copia dei tuoi dati è gratis</strong> se scrivi che la chiedi «ai sensi dell'art. 15 del Regolamento UE 2016/679 (GDPR)». Lo dice il Garante della privacy. Le copie in più si possono pagare. Se l'ospedale ti chiede soldi per la prima copia, fagli vedere questa regola.</li>
   </ol>`;
@@ -194,7 +194,7 @@ const screens = {
             <li><span class="ico" aria-hidden="true">🖊️</span> Firma la lettera</li>
             <li><span class="ico" aria-hidden="true">🪪</span> Allega: documento d'identità (fotocopia o foto)</li>
             <li><span class="ico" aria-hidden="true">🧾</span> Allega: copia della prima richiesta o della ricevuta</li>
-            <li class="delegate-note"${person.isDelegate ? '' : ' hidden'}><span class="ico" aria-hidden="true">📝</span> Allega: la delega firmata e il tuo documento</li>
+            <li class="delegate-note"${person.isDelegate ? '' : ' hidden'}><span class="ico" aria-hidden="true">📝</span> <span class="delegate-note-text">${esc(delegateNoteText(person))}</span></li>
           </ul>
         </div>
         <p class="muted">Se l'ospedale è dell'${aslLabel()}, la PEC generale è ${a.pec ? mailLink(a.pec) : 'da chiedere all\'URP'}. I grandi ospedali${regione() === 'sicilia' ? ' (Policlinico, Cannizzaro, Papardo, Civico, Villa Sofia…)' : ''} hanno una PEC loro: cercala sul sito dell'ospedale.
@@ -207,8 +207,7 @@ const screens = {
           const v = readForm(form);
           for (const k of ['structure', 'structureEmail', 'episode', 'protocol']) { state[k] = v[k]; delete v[k]; }
           Object.assign(person, v);
-          form.querySelector('.delegate-fields').hidden = !person.isDelegate;
-          document.querySelectorAll('.delegate-note').forEach((li) => { li.hidden = !person.isDelegate; });
+          syncDelegate(form, person);
           const d = deadline();
           const text = cartellaReminder({
             structure: state.structure ? `Direzione Sanitaria – ${state.structure}` : '', address: state.structureEmail, person,

@@ -4,7 +4,7 @@
 import { medicoChoice, todayISO } from './engine.js';
 import { genericRequest, mailtoHref } from './letters.js';
 import {
-  noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, aspCalls, officeBox, personFields, reportErrorHref, generalContact, aslLabel, aslIntestazione,
+  noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, aspCalls, officeBox, personFields, reportErrorHref, generalContact, aslLabel, aslIntestazione, syncDelegate,
 } from './common.js';
 import { createFlow, choice, restartBtn, progress, letterButtons, senzaUffici } from './flow.js';
 
@@ -35,7 +35,7 @@ const bring = `
   <ul class="icon-list">
     <li><span class="ico" aria-hidden="true">💳</span> Tessera sanitaria</li>
     <li><span class="ico" aria-hidden="true">🪪</span> Documento d'identità (per un bambino, quello del genitore)</li>
-    <li><span class="ico" aria-hidden="true">📝</span> Se vai per un'altra persona: la sua delega firmata e il suo documento</li>
+    <li><span class="ico" aria-hidden="true">📝</span> Se vai per un'altra persona: la sua delega firmata e il suo documento (il tutore o l'amministratore di sostegno porta il decreto di nomina)</li>
   </ul>`;
 
 function whoText() {
@@ -164,7 +164,7 @@ const screens = {
           const v = readForm(form);
           for (const k of ['comune', 'child', 'childCf']) { state[k] = v[k]; delete v[k]; }
           Object.assign(person, v);
-          form.querySelector('.delegate-fields').hidden = !person.isDelegate;
+          syncDelegate(form, person);
           const forWhom = state.ageBand === '16+' ? 'per sé' : `per il/la figlio/a minore ${state.child || '__________'}, codice fiscale ${state.childCf || '__________'}`;
           const text = genericRequest({
             to: `${aslIntestazione()} di ${a.province}\nDistretto sanitario – Ufficio scelta e revoca\ne p.c. Ufficio Relazioni con il Pubblico`,

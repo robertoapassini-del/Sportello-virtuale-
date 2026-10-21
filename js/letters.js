@@ -9,11 +9,44 @@ function personBlock(p) {
     `codice fiscale ${blank(p.cf)},${p.idDoc && String(p.idDoc).trim() ? ` documento di identità ${String(p.idDoc).trim()},` : ''}\nresidente in ${blank(p.address)}, tel. ${blank(p.phone)}, email ${blank(p.email)},`;
 }
 
-function delegateBlock(p) {
-  if (!p.isDelegate) return '';
-  return `\nLa presente è presentata da ${blank(p.delegateName)}, codice fiscale ${blank(p.delegateCf)}, ` +
-    `in qualità di delegato/a dell'assistito/a, come da delega allegata con copia dei documenti di identità di entrambi.\n`;
+// Chi scrive per un'altra persona. Tre casi, con firma e allegati diversi:
+// - delegato: la persona firma una delega;
+// - genitore di un minore: firma come genitore (artt. 316 e 320 c.c.), nessuna delega;
+// - tutore, amministratore di sostegno o curatore: firma in quel ruolo e allega il decreto di nomina
+//   (art. 357 c.c. per il tutore; artt. 404-405 c.c., L. 6/2004, per l'amministratore di sostegno).
+const GUARDIANS = { tutore: 'tutore', amministratore: 'amministratore di sostegno', curatore: 'curatore' };
+export function delegateRole(p = {}) {
+  if (!p.isDelegate) return null;
+  if (p.delegateRole === 'genitore') return 'genitore';
+  if (p.delegateRole === 'tutore') return 'tutore';
+  return 'delegato';
 }
+const guardianName = (p) => GUARDIANS[p.guardianKind] || GUARDIANS.amministratore;
+
+function delegateBlock(p) {
+  const role = delegateRole(p);
+  if (!role) return '';
+  const who = `\nLa presente è presentata da ${blank(p.delegateName)}, codice fiscale ${blank(p.delegateCf)}, `;
+  if (role === 'genitore') {
+    return `${who}in qualità di genitore esercente la responsabilità genitoriale per il/la figlio/a minore sopra indicato/a ` +
+      `(artt. 316 e 320 c.c.), con copia del documento di identità del genitore.\n`;
+  }
+  if (role === 'tutore') {
+    return `${who}in qualità di ${guardianName(p)} dell'assistito/a, nominato/a con decreto ${blank(p.decreeRef, 'del Tribunale di __________ n. ______ del __________')}, ` +
+      `come da copia del decreto di nomina allegata, con copia dei documenti di identità di entrambi.\n`;
+  }
+  return `${who}in qualità di delegato/a dell'assistito/a, come da delega allegata con copia dei documenti di identità di entrambi.\n`;
+}
+
+// L'allegato in più per chi scrive per un'altra persona ('' se scrive per sé).
+export function delegateAttachment(p = {}) {
+  const role = delegateRole(p);
+  if (role === 'genitore') return 'documento di identità del genitore';
+  if (role === 'tutore') return 'copia del decreto di nomina e documento di identità di chi firma';
+  if (role === 'delegato') return 'delega e documento del delegato';
+  return '';
+}
+const extra = (p) => (delegateAttachment(p) ? `; ${delegateAttachment(p)}` : '');
 
 function signature(p, today) {
   return `${blank(p.city, '[luogo]')}, ${formatIt(today)}                                   Firma ______________________`;
@@ -33,7 +66,7 @@ export function tutelaLetter({ ente = 'Azienda Sanitaria Provinciale', aspName, 
     : `- in data ${formatIt(bookingDate)} ha richiesto la prenotazione tramite i canali ufficiali e la prima
   disponibilità proposta è ${art('il', appointmentDate)}${formatIt(appointmentDate)}, oltre il tempo massimo previsto${deadline ? `\n  (${term(deadline)})` : ''};`;
   const attach = 'copia del documento di identità; ricetta; foglio/promemoria di prenotazione' +
-    (p.isDelegate ? '; delega e documento del delegato' : '');
+    extra(p);
   return `Spett.le ${ente} di ${aspName}
 ${aspAddress || ''}
 
@@ -103,7 +136,7 @@ export function inpsReminder({ provinceName, inpsPec, person: p, certNumber, cer
     : `- sono trascorsi ${elapsed !== null && elapsed > deadlineInfo.days ? elapsed : `oltre ${deadlineInfo.days}`} giorni dalla presentazione della domanda senza che sia pervenuta alcuna convocazione;`;
   const attach = 'copia del documento di identità; ricevuta di trasmissione del certificato medico' +
     (regime === 'old' ? '; ricevuta della domanda' : '') +
-    (p.isDelegate ? '; delega e documento del delegato' : '');
+    extra(p);
   return `Spett.le INPS – Direzione provinciale di ${provinceName}
 ${inpsPec || ''}
 
@@ -165,7 +198,7 @@ la consegna della documentazione richiesta nel più breve tempo possibile e chie
 per iscritto su data e modalità di ritiro. Chiede inoltre che la prima copia sia rilasciata gratuitamente,
 ai sensi dell'art. 15 del Regolamento UE 2016/679 (GDPR).
 ${delegateBlock(p)}
-Allega: copia del documento di identità; copia della richiesta ${art('del', requestDate)}${requestDate ? formatIt(requestDate) : '__________'}${p.isDelegate ? '; delega e documento del delegato' : ''}.
+Allega: copia del documento di identità; copia della richiesta ${art('del', requestDate)}${requestDate ? formatIt(requestDate) : '__________'}${extra(p)}.
 
 ${signature(p, today)}
 `;
@@ -194,7 +227,7 @@ CHIEDE
 che, decorso il termine, l'autorizzazione sia rilasciata senza ulteriore ritardo e sia avviata la fornitura,
 con indicazione del fornitore e dei tempi di consegna.
 ${delegateBlock(p)}
-Allega: copia del documento di identità; copia della prescrizione e della richiesta ${art('del', requestDate)}${requestDate ? formatIt(requestDate) : '__________'}${p.isDelegate ? '; delega e documento del delegato' : ''}.
+Allega: copia del documento di identità; copia della prescrizione e della richiesta ${art('del', requestDate)}${requestDate ? formatIt(requestDate) : '__________'}${extra(p)}.
 
 ${signature(p, today)}
 `;
@@ -202,7 +235,7 @@ ${signature(p, today)}
 
 // Richiesta o sollecito generico a un ufficio (distretto, PUA, rete cure palliative).
 export function genericRequest({ to, address, subject, person: p, premise = [], request, attachments = [], today }) {
-  const att = [...attachments, ...(p.isDelegate ? ['delega e documento del delegato'] : [])];
+  const att = [...attachments, ...(delegateAttachment(p) ? [delegateAttachment(p)] : [])];
   return `Spett.le ${blank(to, '__________')}
 ${address || ''}
 

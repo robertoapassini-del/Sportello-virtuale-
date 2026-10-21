@@ -6,7 +6,7 @@
 import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween, art } from './engine.js';
 import { ausiliReminder, mailtoHref } from './letters.js';
 import { noPecBox,
-  esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, aspCalls, officeBox, personFields, reportErrorHref, complaintTo, aslLabel, aslIntestazione,
+  esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, aspCalls, officeBox, personFields, reportErrorHref, complaintTo, aslLabel, aslIntestazione, mailLink, generalContact, syncDelegate, delegateNoteText,
 } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
 
@@ -186,7 +186,7 @@ const screens = {
             <li><span class="ico" aria-hidden="true">🖊️</span> Firma la lettera</li>
             <li><span class="ico" aria-hidden="true">🪪</span> Allega: documento d'identità (fotocopia o foto)</li>
             <li><span class="ico" aria-hidden="true">📄</span> Allega: copia della prescrizione e della ricevuta</li>
-            <li class="delegate-note"${person.isDelegate ? '' : ' hidden'}><span class="ico" aria-hidden="true">📝</span> Allega: la delega firmata e il tuo documento</li>
+            <li class="delegate-note"${person.isDelegate ? '' : ' hidden'}><span class="ico" aria-hidden="true">📝</span> <span class="delegate-note-text">${esc(delegateNoteText(person))}</span></li>
           </ul>
         </div>
         <p class="muted"><a href="${esc(reportErrorHref(`Ausili ${a.name}`))}">Segnala un errore</a></p>
@@ -198,8 +198,7 @@ const screens = {
           const v = readForm(form);
           for (const k of ['device', 'prescriber', 'protocol']) { state[k] = v[k]; delete v[k]; }
           Object.assign(person, v);
-          form.querySelector('.delegate-fields').hidden = !person.isDelegate;
-          document.querySelectorAll('.delegate-note').forEach((li) => { li.hidden = !person.isDelegate; });
+          syncDelegate(form, person);
           const text = ausiliReminder({
             ente: aslIntestazione(),
             aspName: a.province, address: to, person, device: state.device, requestDate: state.requestDate,

@@ -58,6 +58,8 @@ const ERRORI = [
   [/costo di riproduzione/, 'cartella: la prima copia è gratis (art. 15 GDPR)'],
   [/visita\/il procedimento/, 'sollecito INPS: nuova procedura = «il procedimento di valutazione di base doveva concludersi», vecchia oncologica = «la visita doveva svolgersi» (audit lettere del 21/10/2026)'],
   [/termine indicato come ordinario/, 'sollecito INPS, vecchia procedura ordinaria: i 30 giorni sono indicativi, la lettera dice solo quanti giorni sono passati'],
+  [/isDelegate \? \[?'(; )?delega e documento/, 'chi scrive per un\'altra persona: il genitore di un minore non allega la delega, il tutore e l\'amministratore di sostegno allegano il decreto di nomina (usa delegateAttachment())'],
+  [/di chi fa la richiesta per lei, con la <strong>delega/, 'RSA: chi non può firmare (per esempio con una demenza) non firma la delega: firma il tutore o l\'amministratore di sostegno, con il decreto'],
   [/secondo i tempi indicati dalla normativa vigente/, 'i 30 giorni della vecchia procedura INPS sono indicativi (rules-invalidita.json): la lettera non li cita come norma'],
   // Audit dei testi del 21/10/2026 (sera).
   [/"number": "800 \d{3} \d{3}"/, 'numeri verdi: «800 123456» (docs/regola-numeri.md)'],

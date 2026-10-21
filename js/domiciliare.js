@@ -4,7 +4,7 @@
 // prepariamo un sollecito al distretto. Non chiediamo la malattia.
 import { todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
 import { genericRequest, mailtoHref } from './letters.js';
-import { noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact, complaintTo, aslLabel, regioneInfo, inRegione, regioneLink, aslIntestazione, regione, regioneNonPronta } from './common.js';
+import { noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact, complaintTo, aslLabel, regioneInfo, inRegione, regioneLink, aslIntestazione, regione, regioneNonPronta, syncDelegate, delegateNoteText } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons, senzaUffici } from './flow.js';
 
 const ROOT = '../';
@@ -240,7 +240,7 @@ const screens = {
             <li><span class="ico" aria-hidden="true">🖊️</span> Firma la lettera</li>
             <li><span class="ico" aria-hidden="true">🪪</span> Allega: documento d'identità (fotocopia o foto)</li>
             <li><span class="ico" aria-hidden="true">📄</span> Allega: copia della richiesta del medico, se ce l'hai</li>
-            <li class="delegate-note"${person.isDelegate ? '' : ' hidden'}><span class="ico" aria-hidden="true">📝</span> Allega: la delega firmata e il tuo documento</li>
+            <li class="delegate-note"${person.isDelegate ? '' : ' hidden'}><span class="ico" aria-hidden="true">📝</span> <span class="delegate-note-text">${esc(delegateNoteText(person))}</span></li>
           </ul></div>
         <p class="muted"><a href="${esc(reportErrorHref(`Assistenza domiciliare ${a.name}`))}">Segnala un errore</a></p>
         ${disclaimer(rules.last_verified)}
@@ -251,8 +251,7 @@ const screens = {
           const v = readForm(form);
           for (const k of ['district', 'doctor']) { state[k] = v[k]; delete v[k]; }
           Object.assign(person, v);
-          form.querySelector('.delegate-fields').hidden = !person.isDelegate;
-          document.querySelectorAll('.delegate-note').forEach((li) => { li.hidden = !person.isDelegate; });
+          syncDelegate(form, person);
           const premise = isReminder
             ? [`in data ${formatIt(state.requestDate)} il medico di medicina generale${state.doctor ? ` (dott. ${state.doctor})` : ''} ha inoltrato richiesta di attivazione dell'assistenza domiciliare integrata`,
                'alla data odierna non è stata effettuata la valutazione domiciliare né è pervenuta alcuna comunicazione',

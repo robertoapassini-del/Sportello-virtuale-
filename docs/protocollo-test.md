@@ -71,3 +71,6 @@ tutti i controlli verdi.
   (segnaposto e «undefined» nelle lettere); in `cifre` titolo, descrizione e unità dal nome del campo; in `provenienza`
   fonti mai vuote e cifra presente nella frase «…» della nota; in `pagine` niente «noindex»; in `engine` festivi
   2026-2030 e ricorso al TAR della cartella; in `contatti` le voci regionali di `numeri.json` con «regione».
+- 21/10/2026 (giro 5) — chi scrive per un'altra persona: `engine.test.mjs` (genitore senza delega, tutore e
+  amministratore di sostegno con il decreto), `combinazioni.cjs` (nell'invalidità di un minore è già scelto «genitore»),
+  due righe in `errori-noti.test.mjs`: le lettere chiedevano sempre la delega.

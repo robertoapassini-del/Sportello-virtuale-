@@ -7,7 +7,7 @@ import { checkWaiting, callbackDeadline, maxWaitDays, todayISO, formatIt, parseD
 import { tutelaLetter, tutelaReminder, mailtoHref } from './letters.js';
 import { noPecBox,
   esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton, aspCalls,
-  personFields, reportErrorHref, generalContactInfo, choice, helpBox, sourcesBox, moreHelp, hideHeadingEmoji, enableStart, aslLabel, aslIntestazione, regione, regioneInfo, regioneLink,
+  personFields, reportErrorHref, generalContactInfo, choice, helpBox, sourcesBox, moreHelp, hideHeadingEmoji, enableStart, aslLabel, aslIntestazione, regione, regioneInfo, regioneLink, generalContact, syncDelegate, delegateNoteText,
 } from './common.js';
 import { RICETTA_SVG } from './ricetta-svg.js';
 import { createNav, withRegion, regionAction, senzaUffici, progress as progressBar } from './flow.js';
@@ -429,7 +429,7 @@ const screens = {
           <ul class="icon-list">
             <li><span class="ico" aria-hidden="true">🖊️</span> Firma ${official ? 'il modulo' : 'la lettera'}</li>
             ${a.documents_required.filter((d) => !/lettera/i.test(d)).map((d) => `<li><span class="ico" aria-hidden="true">${docIcon(d)}</span> Allega: ${esc(d)}</li>`).join('')}
-            <li class="delegate-note"${person.isDelegate ? '' : ' hidden'}><span class="ico" aria-hidden="true">📝</span> Allega: la delega firmata e il tuo documento</li>
+            <li class="delegate-note"${person.isDelegate ? '' : ' hidden'}><span class="ico" aria-hidden="true">📝</span> <span class="delegate-note-text">${esc(delegateNoteText(person))}</span></li>
           </ul>
         </div>
         <button type="button" class="btn primary" data-go="after">⏳ Fatto! E adesso?</button>
@@ -442,8 +442,7 @@ const screens = {
           state.prescriptionDate = parseDate(v.prescriptionDate) !== null && daysBetween(v.prescriptionDate, todayISO()) >= 0 ? v.prescriptionDate : '';
           delete v.service; delete v.nre; delete v.prescriptionDate;
           Object.assign(person, v);
-          form.querySelector('.delegate-fields').hidden = !person.isDelegate;
-          document.querySelectorAll('.delegate-note').forEach((li) => { li.hidden = !person.isDelegate; });
+          syncDelegate(form, person);
           updateLetter(a, official);
         };
         form.addEventListener('input', update);

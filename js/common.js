@@ -445,6 +445,7 @@ export function personFields(p = {}, legend = 'I dati della persona') {
   const f = (name, label, type = 'text', hint = '', extra = '') =>
     `<label for="f-${name}">${label}${hint ? `<span class="hint">${hint}</span>` : ''}</label>
      <input id="f-${name}" name="${name}" type="${type}" value="${esc(p[name] || '')}" ${extra}>`;
+  const role = p.delegateRole || 'delegato';
   return `
   <fieldset>
     <legend>${legend}</legend>
@@ -461,14 +462,53 @@ export function personFields(p = {}, legend = 'I dati della persona') {
   </fieldset>
   <fieldset>
     <legend>Scrivi per un'altra persona?</legend>
-    <label class="check"><input type="checkbox" name="isDelegate" ${p.isDelegate ? 'checked' : ''}> Sì, scrivo per un familiare (per esempio mamma o papà)</label>
+    <label class="check"><input type="checkbox" name="isDelegate" ${p.isDelegate ? 'checked' : ''}> Sì, scrivo per un familiare o per una persona che assisto</label>
     <div class="delegate-fields" ${p.isDelegate ? '' : 'hidden'}>
       ${f('delegateName', 'Il tuo nome e cognome')}
       ${f('delegateCf', 'Il tuo codice fiscale', 'text', '', 'autocapitalize="characters" maxlength="16"')}
-      <p class="muted">Serve una <strong>delega</strong>: un foglio firmato dalla persona, che dice che puoi fare la richiesta per lei.
+      <fieldset class="delegate-role">
+        <legend>Chi sei per questa persona?</legend>
+        <label class="check"><input type="radio" name="delegateRole" value="delegato" ${role === 'delegato' ? 'checked' : ''}> Un familiare o un amico, con la sua delega</label>
+        <label class="check"><input type="radio" name="delegateRole" value="genitore" ${role === 'genitore' ? 'checked' : ''}> Il genitore di un bambino o di un ragazzo (meno di 18 anni)</label>
+        <label class="check"><input type="radio" name="delegateRole" value="tutore" ${role === 'tutore' ? 'checked' : ''}> Il tutore, l'amministratore di sostegno o il curatore, nominato dal giudice</label>
+      </fieldset>
+      <div class="role-tutore" ${role === 'tutore' ? '' : 'hidden'}>
+        <label for="f-guardianKind">Che cosa sei</label>
+        <select id="f-guardianKind" name="guardianKind">
+          ${[['amministratore', 'Amministratore di sostegno'], ['tutore', 'Tutore'], ['curatore', 'Curatore']]
+            .map(([v, l]) => `<option value="${v}" ${(p.guardianKind || 'amministratore') === v ? 'selected' : ''}>${l}</option>`).join('')}
+        </select>
+        ${f('decreeRef', 'Il decreto di nomina', 'text', 'Tribunale, numero e data. Se non li sai, lascia vuoto')}
+      </div>
+      <p class="muted role-note" data-role="delegato" ${role === 'delegato' ? '' : 'hidden'}>Serve una <strong>delega</strong>: un foglio firmato dalla persona, che dice che puoi fare la richiesta per lei.
       Allega anche la fotocopia dei documenti di tutti e due.</p>
+      <p class="muted role-note" data-role="genitore" ${role === 'genitore' ? '' : 'hidden'}>Per un figlio con meno di 18 anni <strong>non serve la delega</strong>: firmi tu, come genitore (articoli 316 e 320 del Codice civile). Allega il tuo documento.</p>
+      <p class="muted role-note" data-role="tutore" ${role === 'tutore' ? '' : 'hidden'}>Se la persona non può firmare, firma chi è stato nominato dal giudice: il <strong>tutore</strong> o l'<strong>amministratore di sostegno</strong>. Non serve la delega: allega la <strong>copia del decreto di nomina</strong> e il tuo documento.</p>
     </div>
   </fieldset>`;
+}
+
+// Che cosa allegare per chi scrive per un'altra persona (le righe «Prima di mandarla»).
+export function delegateNoteText(p = {}) {
+  const role = p.delegateRole || 'delegato';
+  if (role === 'genitore') return 'Allega: il tuo documento (firmi come genitore, non serve la delega)';
+  if (role === 'tutore') return 'Allega: la copia del decreto di nomina e il tuo documento';
+  return 'Allega: la delega firmata e il tuo documento';
+}
+
+// Dopo ogni modifica del modulo: mostra i campi giusti per chi scrive per un'altra persona.
+export function syncDelegate(form, p = {}) {
+  const role = p.delegateRole || 'delegato';
+  const box = form.querySelector('.delegate-fields');
+  if (box) box.hidden = !p.isDelegate;
+  form.querySelectorAll('.role-note').forEach((el) => { el.hidden = el.dataset.role !== role; });
+  const t = form.querySelector('.role-tutore');
+  if (t) t.hidden = role !== 'tutore';
+  document.querySelectorAll('.delegate-note').forEach((li) => {
+    li.hidden = !p.isDelegate;
+    const txt = li.querySelector('.delegate-note-text');
+    if (txt) txt.textContent = delegateNoteText(p);
+  });
 }
 
 // ---------- Icone e banda colorata ----------

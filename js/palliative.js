@@ -4,7 +4,7 @@
 // Scritto con delicatezza: spesso chi legge sta assistendo una persona molto malata.
 import { todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
 import { genericRequest, mailtoHref } from './letters.js';
-import { noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact, aslLabel, aslIntestazione, regione, regioneNonPronta } from './common.js';
+import { noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact, aslLabel, aslIntestazione, regione, regioneNonPronta, syncDelegate } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons, senzaUffici } from './flow.js';
 
 const ROOT = '../';
@@ -171,7 +171,7 @@ const screens = {
           const v = readForm(form);
           for (const k of ['doctor', 'pref']) { state[k] = v[k]; delete v[k]; }
           Object.assign(person, v);
-          form.querySelector('.delegate-fields').hidden = !person.isDelegate;
+          syncDelegate(form, person);
           const where = state.pref === 'hospice' ? 'in regime residenziale (hospice)' : 'a domicilio';
           const premise = [
             `è affetto/a da una patologia in fase avanzata, come da documentazione del medico curante${state.doctor ? ` (dott. ${state.doctor})` : ''}`,
