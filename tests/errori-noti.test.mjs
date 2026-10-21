@@ -9,7 +9,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const SITE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const SALTA = new Set(['node_modules', '.git', 'tests', 'tools', 'docs', 'fonts', 'css']);
+const SALTA = new Set(['node_modules', '.git', '.claude', 'tests', 'tools', 'docs', 'fonts', 'css']);
 function files(dir = SITE) {
   return fs.readdirSync(dir, { withFileTypes: true }).flatMap((e) => {
     if (SALTA.has(e.name)) return [];
