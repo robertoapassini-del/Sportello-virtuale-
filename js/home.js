@@ -131,7 +131,8 @@ function showResults(text, submitted = false) {
     // Senza data/moduli.json resta visibile l'elenco degli argomenti scritto nella pagina
     // (.static-fallback, mostrato dalla classe «errore-js»: css/style.css). Sopra, l'avviso.
     document.documentElement.classList.add('errore-js');
-    app.querySelector('.js-only')?.remove();
+    const wait = app.querySelector('.js-only');
+    if (wait) wait.remove();
     app.insertAdjacentHTML('afterbegin', '<div class="notice bad" role="alert"><p>Non riusciamo a caricare tutta la pagina. Gli argomenti sono qui sotto. Riprova tra poco.</p></div>');
     return;
   }

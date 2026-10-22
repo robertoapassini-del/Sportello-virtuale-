@@ -6,7 +6,7 @@
 import { invRegime, invDeadline, todayISO, formatIt, parseDate, daysBetween, art } from './engine.js';
 import { inpsReminder, mailtoHref } from './letters.js';
 import { noPecBox,
-  esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton,
+  esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, copyText, printText, readForm, mailLink, callButton,
   personFields, reportErrorHref, choice, helpBox, sourcesBox, moreHelp, hideHeadingEmoji, enableStart, aslLabel, syncDelegate, delegateNoteText,
 } from './common.js';
 import { createNav, withRegion, regionAction, moveToTop, showError } from './flow.js';
@@ -376,7 +376,7 @@ const regionLink = withRegion(screens);
   try {
     [rules, inps] = await Promise.all([loadJSON(`${ROOT}data/rules-invalidita.json`), loadRegional(ROOT, 'inps')]);
   } catch {
-    app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>';
+    avvisoErrore(); // la risposta scritta nella pagina resta, con l'avviso sopra
     return;
   }
   render();

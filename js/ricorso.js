@@ -3,7 +3,7 @@
 // Regola: il ricorso al giudice va fatto entro 6 mesi dal verbale. Niente lettera:
 // serve un avvocato (o un patronato che lo trova). Non chiediamo la malattia.
 import { ricorsoDeadline, todayISO, formatIt, parseDate, daysBetween, formatEuro, art } from './engine.js';
-import { esc, loadJSON, disclaimer, renderFooter, readForm } from './common.js';
+import { esc, loadJSON, disclaimer, renderFooter, avvisoErrore, readForm } from './common.js';
 import { createFlow, choice, restartBtn, days, dateForm, showError } from './flow.js';
 
 const ROOT = '../';
@@ -133,7 +133,7 @@ let flow;
   try {
     rules = await loadJSON(`${ROOT}data/rules-ricorso.json`);
   } catch {
-    app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>';
+    avvisoErrore(); // la risposta scritta nella pagina resta, con l'avviso sopra
     return;
   }
   flow = createFlow({ app, screens, state, sources, first: 'intro' });

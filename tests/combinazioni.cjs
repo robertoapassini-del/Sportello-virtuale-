@@ -645,7 +645,7 @@ async function runCase(page, c) {
   let done = 0;
   const queue = [...cases];
   await Promise.all(Array.from({ length: WORKERS }, async () => {
-    const ctx = await browser.newContext({ ...devices['iPhone SE'] });
+    const ctx = await browser.newContext({ ...devices['iPhone SE'], ...(process.env.TZID ? { timezoneId: process.env.TZID } : {}) });
     // Le province provate sono quelle siciliane: la regione è già scelta, così si va dritti alla provincia.
     await ctx.addInitScript(() => { try { localStorage.setItem('gs-regione', 'sicilia'); } catch { /* niente */ } });
     const page = await ctx.newPage();

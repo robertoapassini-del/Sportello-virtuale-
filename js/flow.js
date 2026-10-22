@@ -116,7 +116,7 @@ export function regionMissing() {
     <p class="cambia-regione"><button type="button" class="link" data-action="change-region">Hai sbagliato regione? Cambia</button></p>`;
 }
 const regionMissingScreen = () => ({
-  html: `<h1>📍 ${regioneNonPronta()?.parziale ? `Per questo argomento ${esc(inRegione())} non abbiamo ancora i dati` : 'La tua regione non c\'è ancora'}</h1>${regionMissing()}`,
+  html: `<h1>📍 ${(regioneNonPronta() || {}).parziale ? `Per questo argomento ${esc(inRegione())} non abbiamo ancora i dati` : 'La tua regione non c\'è ancora'}</h1>${regionMissing()}`,
 });
 
 // Link alla guida scritta (#guida) dentro #app: scorre alla guida senza aggiungere una voce
@@ -152,7 +152,7 @@ export function changeRegionLink() {
 // Allora la domanda sulla provincia si salta: le domande e il conto valgono in tutta Italia.
 // Le schermate che mostrano uffici o lettera usano senzaUffici(a, …): senza provincia, al loro posto c'è regionMissing().
 let saltaProvincia = false;
-export const provinciaSaltata = () => saltaProvincia && !needsRegion() && !!regioneNonPronta()?.parziale;
+export const provinciaSaltata = () => saltaProvincia && !needsRegion() && !!(regioneNonPronta() || {}).parziale;
 export const senzaUffici = (a, html) => (a ? html() : regionMissing());
 
 // Mette la scelta della regione davanti alla schermata della provincia (name).

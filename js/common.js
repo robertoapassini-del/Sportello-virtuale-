@@ -32,7 +32,7 @@ export function count(path, { title = '', event = false } = {}) {
 }
 
 export function esc(v) {
-  return String(v ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  return String(v == null ? '' : v).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 }
 
 export async function loadJSON(path) {
@@ -71,7 +71,7 @@ let regioneInMemoria = (() => {
 })();
 function savedRegione() {
   if (!storageOk) return regioneInMemoria;
-  try { return localStorage.getItem(REGIONE_KEY) ?? regioneInMemoria; } catch { storageOk = false; return regioneInMemoria; }
+  try { const v = localStorage.getItem(REGIONE_KEY); return v == null ? regioneInMemoria : v; } catch { storageOk = false; return regioneInMemoria; }
 }
 export function setRegione(id) {
   regioneInMemoria = id;
@@ -312,6 +312,17 @@ export function hideHeadingEmoji(root) {
   }
 }
 
+// Quando un modulo non riesce a partire (dati che non arrivano, errore nello script): la risposta scritta
+// nella pagina resta, sopra c'è l'avviso. La classe «errore-js» nasconde i pulsanti che non funzionerebbero
+// (.js-only) e rimostra il testo per chi non ha JavaScript (.static-fallback): css/style.css.
+export const AVVISO_ERRORE = 'Non riusciamo a caricare tutta la pagina. Le informazioni principali sono qui sotto. Riprova tra poco.';
+export function avvisoErrore(testo = AVVISO_ERRORE) {
+  document.documentElement.classList.add('errore-js');
+  const app = document.getElementById('app');
+  if (!app || app.querySelector('.avviso-errore')) return;
+  app.insertAdjacentHTML('afterbegin', `<div class="notice bad avviso-errore" role="alert"><p>${esc(testo)}</p></div>`);
+}
+
 // I pulsanti che avviano il percorso sono scritti nell'HTML con `disabled`: si sbloccano
 // solo quando il modulo ha caricato i dati, così un tocco arrivato prima non va perso.
 export function enableStart(root) {
@@ -536,7 +547,7 @@ function iconSvg([inner, tone]) {
 
 export function iconize(root) {
   if (root.nodeType === 3) root = root.parentElement;
-  if (!root || root.closest?.(SKIP)) return;
+  if (!root || (root.closest && root.closest(SKIP))) return;
   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
     acceptNode: (n) => (hasEmoji.test(n.data) && !n.parentElement.closest(SKIP) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT),
   });
@@ -545,7 +556,9 @@ export function iconize(root) {
   for (const n of nodes) {
     const frag = document.createDocumentFragment();
     let last = 0;
-    for (const m of n.data.matchAll(emojiRe)) {
+    // Un ciclo con exec() e non matchAll(): matchAll non c'è su Safari 12 (tests/compat.test.mjs).
+    emojiRe.lastIndex = 0;
+    for (let m = emojiRe.exec(n.data); m; m = emojiRe.exec(n.data)) {
       frag.append(n.data.slice(last, m.index), iconSvg(iconOf(m[0])));
       last = m.index + m[0].length;
     }
@@ -561,7 +574,8 @@ function bandify() {
   const app = document.getElementById('app');
   const h1 = app && app.querySelector(':scope > h1');
   if (!h1) return;
-  const hero = h1.previousElementSibling?.classList.contains('hero') ? h1.previousElementSibling : null;
+  const prima = h1.previousElementSibling;
+  const hero = prima && prima.classList.contains('hero') ? prima : null;
   if (!hero && !app.hasAttribute('data-band')) return;
   let start = hero || h1;
   const top = start.previousElementSibling;
@@ -599,6 +613,14 @@ if (typeof document !== 'undefined') {
     window.print();
     setTimeout(done, 1000);
   });
+  // Un errore nello script della pagina prima che il modulo sia partito (c'è ancora un .js-only scritto
+  // nella pagina: «Un momento…» o il pulsante d'inizio bloccato): si rimostra il contenuto scritto con
+  // l'avviso, invece di lasciare un pulsante che non fa niente (audit del 22/10/2026, giro 7).
+  // Gli errori degli script di altri siti non contano.
+  const nonPartita = () => !!document.querySelector('#app .js-only');
+  const nostro = (file) => !file || file.indexOf(location.origin) === 0;
+  window.addEventListener('error', (e) => { if (nostro(e.filename) && nonPartita()) avvisoErrore(); });
+  window.addEventListener('unhandledrejection', () => { if (nonPartita()) avvisoErrore(); });
   iconize(document.body);
   bandify();
   document.documentElement.classList.add('pronto'); // ora la pagina si può vedere (css/style.css)

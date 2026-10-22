@@ -4,7 +4,7 @@
 import { medicoChoice, todayISO } from './engine.js';
 import { genericRequest, mailtoHref } from './letters.js';
 import {
-  noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, aspCalls, officeBox, personFields, reportErrorHref, generalContact, aslLabel, aslIntestazione, syncDelegate,
+  noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, copyText, printText, readForm, aspCalls, officeBox, personFields, reportErrorHref, generalContact, aslLabel, aslIntestazione, syncDelegate,
 } from './common.js';
 import { createFlow, choice, restartBtn, progress, letterButtons, senzaUffici } from './flow.js';
 
@@ -199,7 +199,7 @@ let flow;
 (async function init() {
   renderFooter(ROOT);
   try { [rules, data] = await Promise.all([loadJSON(`${ROOT}data/rules-medico.json`), loadRegional(ROOT, 'asl')]); } catch {
-    app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>'; return;
+    avvisoErrore(); return; // la risposta scritta nella pagina resta, con l'avviso sopra
   }
   // Le regole sull'età valgono in tutta Italia: senza i dati della regione si salta la provincia (vedi js/flow.js).
   flow = createFlow({ app, screens, state, sources, person, next: 'who' });

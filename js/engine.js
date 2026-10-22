@@ -70,7 +70,8 @@ export function classKey(cls, kind) {
 export function maxWaitDays(rules, cls, kind) {
   const key = classKey(cls, kind);
   if (!key) return null;
-  return rules.max_wait_days[key] ?? null;
+  const giorni = rules.max_wait_days[key];
+  return giorni == null ? null : giorni;
 }
 
 // Uguale al limite = ancora nei tempi; un giorno in più = superato.
