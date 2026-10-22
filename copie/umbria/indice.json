@@ -1,6 +1,6 @@
 {
  "regione": "umbria",
- "aggiornato": "2026-10-22T18:25:19.826Z",
+ "aggiornato": "2026-10-22T20:12:39.819Z",
  "pagine": [
   {
    "asl": "perugia",
@@ -221,7 +221,7 @@
    "titolo": "Richiedere la documentazione sanitaria - Azienda Ospedaliera Perugia",
    "sha": "a6349eb9d3668c94d180e64047d13c9e8c2ebeca3ba8d6a3ca350e268aee342d",
    "caratteri": 4886,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "perugia",
@@ -410,7 +410,7 @@
    "titolo": "Screening della mammella - USL Umbria 1",
    "sha": "1141409d967dbf1d160ab0a1130f807b28e819a88712071849919f9d1b343d17",
    "caratteri": 10627,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "perugia",
@@ -421,7 +421,7 @@
    "titolo": "Senologia - USL Umbria 1",
    "sha": "ad826e24f07e472e73291b33f2638ffd359a27afc16223588f7e7e5a23a89949",
    "caratteri": 13255,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "terni",
@@ -906,12 +906,8 @@
    "asl": "usl-umbria1",
    "url": "https://www.uslumbria1.it/numeri-umbria-sanita-nus/",
    "controllata": "2026-10-22",
-   "http": 200,
-   "file": "usl-umbria1/07d8f3215e34.txt",
-   "titolo": "Numeri Umbria Sanità (NUS) - USL Umbria 1",
-   "sha": "3aadcee25773ea841d51ce6afc48e54671fdbc8bd95e53cefb9556d3914596dd",
-   "caratteri": 3243,
-   "cambiata": false
+   "http": 0,
+   "errore": "curl: (28) Connection timed out after 30002 milliseconds"
   },
   {
    "asl": "usl-umbria1",

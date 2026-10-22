@@ -1,6 +1,6 @@
 {
  "regione": "trentino-alto-adige",
- "aggiornato": "2026-10-22T18:22:04.093Z",
+ "aggiornato": "2026-10-22T20:08:50.412Z",
  "pagine": [
   {
    "asl": "bolzano",
@@ -13,18 +13,14 @@
    "titolo": "Azienda Sanitaria dell'Alto Adige",
    "sha": "00a7a9a208d3e2bc6d34049f5c9cdb4efe43a4594251084469bffccc29220248",
    "caratteri": 23107,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
    "url": "https://home.sabes.it/it/comprensori-sanitari/merano/3026.asp",
    "controllata": "2026-10-22",
-   "http": 200,
-   "file": "bolzano/5cedc1cec8ce.txt",
-   "titolo": "Servizio di Medicina di base | Azienda Sanitaria dell'Alto Adige",
-   "sha": "4aa21f2cac727e1a1c548a8bc863b49426f8ef9e974baf1b9d82548280179e2b",
-   "caratteri": 15699,
-   "cambiata": true
+   "http": 0,
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "bolzano",
@@ -59,7 +55,7 @@
    "titolo": "Prenotazione | Azienda Sanitaria dell'Alto Adige",
    "sha": "05ff7201f7b12e094c1b11e4feebf3363f00d4ab73cdbf1be189792578d66fb8",
    "caratteri": 9264,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -70,19 +66,17 @@
    "titolo": "Servizi | Azienda Sanitaria dell'Alto Adige",
    "sha": "a054ab993276bc88d66005b4d64c780af56291e37d556c82fd933fdd58405f1c",
    "caratteri": 6999,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
    "url": "https://www.asdaa.it/it/default.asp",
    "controllata": "2026-10-22",
-   "browser": true,
    "http": 200,
-   "finale": "https://www.asdaa.it/it/home",
    "file": "bolzano/9e045b839f76.txt",
-   "titolo": "Azienda Sanitaria dell'Alto Adige",
-   "sha": "00a7a9a208d3e2bc6d34049f5c9cdb4efe43a4594251084469bffccc29220248",
-   "caratteri": 23107,
+   "titolo": "Südtiroler Sanitätsbetrieb",
+   "sha": "392d4be341b5601bf3ac0de4fb35ecc68611c7c9a2e451ea79d9bec90721e5ed",
+   "caratteri": 38,
    "cambiata": true
   },
   {
@@ -131,7 +125,7 @@
    "titolo": "Cerca | Azienda Sanitaria dell'Alto Adige",
    "sha": "29f6e726c6a96a355d66b1de50e9c9134becbb28db6fbe72d4919d89929834d0",
    "caratteri": 6973,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -187,14 +181,7 @@
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/medicina-di-base.asp",
    "controllata": "2026-10-22",
-   "browser": true,
-   "http": 200,
-   "finale": "https://www.asdaa.it/it/servizio-di-medicina-di-base-territorio-bz",
-   "file": "bolzano/aa3b128c6f97.txt",
-   "titolo": "Servizio di Medicina di base | Comprensorio Bolzano",
-   "sha": "e8836091903d28884335bc7cb510f6e122ba99abf14c44abf959feb22a8d820c",
-   "caratteri": 31049,
-   "cambiata": false
+   "http": 503
   },
   {
    "asl": "bolzano",
@@ -229,7 +216,7 @@
    "titolo": "Südtiroler Sanitätsbetrieb",
    "sha": "392d4be341b5601bf3ac0de4fb35ecc68611c7c9a2e451ea79d9bec90721e5ed",
    "caratteri": 38,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -298,27 +285,14 @@
    "asl": "bolzano",
    "url": "https://home.asdaa.it/prevenzione/prestazioni.asp?bnsv_svid=1008640",
    "controllata": "2026-10-22",
-   "browser": true,
-   "http": 200,
-   "finale": "https://www.asdaa.it/it/prevenzione-salute?bnsv_svid=1008640",
-   "file": "bolzano/fbeef31a6b03.txt",
-   "titolo": "Prevenzione e salute | Azienda Sanitaria dell'Alto Adige",
-   "sha": "4a5c682adb8e5fa06ec37f92f6309af07a12aca6dfe4f79be3844468fd6abdb1",
-   "caratteri": 21924,
-   "cambiata": false
+   "http": 0,
+   "errore": "curl: (56) Recv failure: Connection reset by peer"
   },
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/servizi-informazione.asp?bnsv_svid=1032224",
    "controllata": "2026-10-22",
-   "browser": true,
-   "http": 200,
-   "finale": "https://www.asdaa.it/it/servizi",
-   "file": "bolzano/bbc0f1d38083.txt",
-   "titolo": "I servizi in myCIVIS - Azienda Sanitaria dell'Alto Adige",
-   "sha": "3874cdd528ca7ed96ffddcb16ebaa2dea86f887e1c76acf5c8c0c3a7396e228e",
-   "caratteri": 22337,
-   "cambiata": false
+   "http": 503
   },
   {
    "asl": "bolzano",
@@ -329,7 +303,7 @@
    "titolo": "Südtiroler Sanitätsbetrieb",
    "sha": "392d4be341b5601bf3ac0de4fb35ecc68611c7c9a2e451ea79d9bec90721e5ed",
    "caratteri": 38,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -347,12 +321,7 @@
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/amministrazione-trasparente/4056.asp",
    "controllata": "2026-10-22",
-   "http": 200,
-   "file": "bolzano/cf4cd0ccb41d.txt",
-   "titolo": "Telefono e posta elettronica | Azienda Sanitaria dell'Alto Adige",
-   "sha": "b9ca7a7600ce0c3184e1e32c33b404cea682e26c211907ca3194e16c8f24ef52",
-   "caratteri": 6919,
-   "cambiata": true
+   "http": 503
   },
   {
    "asl": "bolzano",
@@ -364,7 +333,7 @@
    "titolo": "Direzione amministrativa | Azienda Sanitaria dell’Alto Adige",
    "sha": "4cf1203ef0fc9698e70d58d6b18072b37f0bccb8b6b88836a7333f7ac44d5cd1",
    "caratteri": 21711,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -375,7 +344,7 @@
    "titolo": "Note legali",
    "sha": "0b42e14ab62930cdea59476bfe84f65e8129e0b16855e96782797da7e0bc9cef",
    "caratteri": 1814,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -725,7 +694,7 @@
    "titolo": "Ufficio multizonale assistenza protesica - Trento | ASUIT Trento",
    "sha": "96582c8c15ed6c5f47bfcefc5d517d2539aad9de68d65424aca53e008bb42099",
    "caratteri": 7727,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -736,7 +705,7 @@
    "titolo": "Screening del tumore del seno | ASUIT Trento",
    "sha": "6b3b8e32fef1372206e6dd5784fdaf39d8a5cfe239b87a3fb027c46230c3a275",
    "caratteri": 8860,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -747,7 +716,7 @@
    "titolo": "Screening del tumore del colon-retto | ASUIT Trento",
    "sha": "ad3d1d05dcf984d955a959a3c68d703deade31aafcef07989a90d729f9deb68a",
    "caratteri": 15653,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "inps-trentino-alto-adige",

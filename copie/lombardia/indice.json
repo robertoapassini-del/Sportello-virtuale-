@@ -1,6 +1,6 @@
 {
  "regione": "lombardia",
- "aggiornato": "2026-10-22T17:39:19.593Z",
+ "aggiornato": "2026-10-22T19:25:34.743Z",
  "pagine": [
   {
    "asl": "bergamo",
@@ -105,8 +105,12 @@
    "asl": "bergamo",
    "url": "https://www.asst-bgovest.it/642.asp",
    "controllata": "2026-10-22",
-   "http": 0,
-   "errore": "curl: (56) Recv failure: Connection reset by peer"
+   "http": 200,
+   "file": "bergamo/17d7114e61be.txt",
+   "titolo": "ADI Assistenza Domiciliare Integrata",
+   "sha": "b00f98c3bf5b5c24e91ac5f871b9d4baa20cc29ec92b9c9257480201c514ed90",
+   "caratteri": 7485,
+   "cambiata": true
   },
   {
    "asl": "bergamo",
@@ -149,8 +153,8 @@
    "http": 200,
    "file": "bergamo/1f85c98b9e36.txt",
    "titolo": "Home Page | ASST Papa Giovanni XXIII",
-   "sha": "544d37336c7655af680bfd1eb7e32d039dc61f145cf2056dad55e94378645224",
-   "caratteri": 321139,
+   "sha": "3dc9d29bd05e10c167e9809a89512fbf939604cea1b79826fa4830eda146c2bc",
+   "caratteri": 320078,
    "cambiata": true
   },
   {
@@ -201,7 +205,7 @@
    "titolo": "ASST di Bergamo Ovest",
    "sha": "7a0f40885f8b408412a59c236a09643643d1a2cded51c87f6c189899b3580c84",
    "caratteri": 3734,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bergamo",
@@ -468,7 +472,7 @@
    "titolo": "COME PRENOTARE UNA VISITA - ASST Franciacorta",
    "sha": "44ff41b5c6f0129b5ec078303f22847bbd301dec22dadf338234565b5f6e3c18",
    "caratteri": 8656,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "brescia",
@@ -634,7 +638,7 @@
    "titolo": "ASST Franciacorta - ASST Franciacorta",
    "sha": "795863f156406aeeb7fb7a5d0f6562930f415e274674f6800509eb7c68ddc48e",
    "caratteri": 5201,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "brescia",
@@ -728,7 +732,7 @@
    "titolo": "Home Page - ATS Insubria",
    "sha": "96cd97f2a2bb82f59f990fa94631683e6de76cea2e7c23406c187cf432b0a6d1",
    "caratteri": 12729,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "como",
@@ -907,7 +911,7 @@
    "titolo": "ASST Lariana",
    "sha": "34bd954bcfa0514b38db257a9ed29b4a94163b24f64f395be64dbbacbdbe2b80",
    "caratteri": 7720,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "como",
@@ -941,7 +945,7 @@
    "titolo": "Liste di attesa – ASST Lariana",
    "sha": "c8db6b1296805a14f1e693c96f4ff57e31a2e884f437c095175b2496b5f0599e",
    "caratteri": 12257,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "como",
@@ -963,7 +967,7 @@
    "titolo": "Homepage | ATS VALPADANA",
    "sha": "b4c74fd5de3274e7d109f68f259cf13afb693bba8d2945b92c74bcd1c97d4411",
    "caratteri": 4560,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "cremona",
@@ -1162,7 +1166,7 @@
    "titolo": "Liste di attesa | ASST Cremona",
    "sha": "b9f7453152696aee1968917974041ad74921c2f4f717417d2dded7f5e7b6d620",
    "caratteri": 7752,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "cremona",
@@ -1173,7 +1177,7 @@
    "titolo": "Ufficio di Pubblica Tutela (UPT) | ASST Cremona",
    "sha": "c28742579da7dee8ef8c36a2855b64a199d6bada9ab2caf55c390f46cbfca302",
    "caratteri": 3883,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "lecco",
@@ -1217,7 +1221,7 @@
    "titolo": "ASST Lecco – Regione Lombardia",
    "sha": "36b6ba0515adc2d48086d7b189a108ad377502c47855942ac7e1c4e84f6519b6",
    "caratteri": 20116,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "lecco",
@@ -1316,7 +1320,7 @@
    "titolo": "ASST Lecco – Regione Lombardia",
    "sha": "36b6ba0515adc2d48086d7b189a108ad377502c47855942ac7e1c4e84f6519b6",
    "caratteri": 20116,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "lecco",
@@ -1328,7 +1332,7 @@
    "titolo": "ASST Lecco – Regione Lombardia",
    "sha": "36b6ba0515adc2d48086d7b189a108ad377502c47855942ac7e1c4e84f6519b6",
    "caratteri": 20116,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "lecco",
@@ -1566,7 +1570,7 @@
    "titolo": "TempiAttesa - Liste di attesa - www.asst-lodi.it",
    "sha": "bd33989acc67ce29e306a7bc757b6c021b5bbe38fc55d386771009fb46d175a0",
    "caratteri": 9215,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "mantova",
@@ -1577,7 +1581,7 @@
    "titolo": "Homepage | ATS VALPADANA",
    "sha": "b4c74fd5de3274e7d109f68f259cf13afb693bba8d2945b92c74bcd1c97d4411",
    "caratteri": 4560,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "mantova",
@@ -1957,7 +1961,7 @@
    "http": 200,
    "file": "milano/36bf45b8b2fd.txt",
    "titolo": "Punto Unico di Accesso PUA - ASST Melegnano Martesana",
-   "sha": "55c1ca9b7896ee6509c9ff2fc9161995b4283add940525558ccc08e3da4387f7",
+   "sha": "62b8cd0092ebbd9d69514656a0b8fb8033f35c2a271c5e6d6dd6e976737f3a58",
    "caratteri": 9119,
    "cambiata": true
   },
@@ -2179,7 +2183,7 @@
    "titolo": "Organizzazione | ASST Grande Ospedale Metropolitano Niguarda",
    "sha": "019775f52b7d5df0432744cca4f59bcb0e525c77753d353405f0f93b4dbd5fe6",
    "caratteri": 7022,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "milano",
@@ -2408,7 +2412,7 @@
    "http": 200,
    "file": "milano/40e6e7a51547.txt",
    "titolo": "Cure Domiciliari A.D.I. - ASST Melegnano Martesana",
-   "sha": "2dae9a3dd4b6efda9150500b0e18a71eae987c4068848d93f1777756f059aa88",
+   "sha": "0e5798ebdb1ea819457ab5b1363dbfed054b08e1fb6cadf57ebce236f4d6b688",
    "caratteri": 12007,
    "cambiata": true
   },
@@ -2493,7 +2497,7 @@
    "http": 200,
    "file": "milano/91bb0d244f6b.txt",
    "titolo": "Liste di attesa - ASST Melegnano Martesana",
-   "sha": "44de6490deca63172a45fb4ed84858d58091093d5aedbeb01527eee9afe84760",
+   "sha": "a37732713c682018c52cf08c69761277e0b7c72a6879df8e1bcddddfe619d6cb",
    "caratteri": 7290,
    "cambiata": true
   },
@@ -2826,7 +2830,7 @@
    "titolo": "Azienda Socio-Sanitaria Territoriale di Pavia",
    "sha": "ae1c4ee127b0980a7664a34c29db66777e0ec9326729196ffc39522856230085",
    "caratteri": 8331,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "pavia",
@@ -3065,7 +3069,7 @@
    "titolo": "Home Page - ATS Insubria",
    "sha": "96cd97f2a2bb82f59f990fa94631683e6de76cea2e7c23406c187cf432b0a6d1",
    "caratteri": 12729,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "varese",
@@ -3143,7 +3147,7 @@
    "titolo": "URP - Varese - ASST Settelaghi - ASST Settelaghi",
    "sha": "a4da0091b876fae3b1aaf81895a296ec75b4a5a4ecdb3173426821b51447dd3b",
    "caratteri": 3463,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "varese",
@@ -3164,9 +3168,9 @@
    "finale": "https://www.asst-valleolona.it/asst-valle-olona/contatti/",
    "file": "varese/5fb98ed00d26.txt",
    "titolo": "Contatti - ASST Valle Olona",
-   "sha": "6dbfd6dcd60a09eeb232d6d959d046a80ec5339a3a2ff02d7fc68167b83efec7",
-   "caratteri": 3476,
-   "cambiata": false
+   "sha": "7c666e04edaea8a5dc69fe04a52a8b929e964e9a632a318d384870ee4c4421d7",
+   "caratteri": 3475,
+   "cambiata": true
   },
   {
    "asl": "varese",
@@ -3233,7 +3237,7 @@
    "titolo": "Servizi Sanitari e Assistenza Medica - ASST Settelaghi - ASST Settelaghi",
    "sha": "1158c613d13ba330736e5328166f339f5392ce538d5d5b62a0e99afd46c971ee",
    "caratteri": 5042,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "varese",
@@ -3278,9 +3282,9 @@
    "http": 200,
    "file": "varese/448fa8f9d06c.txt",
    "titolo": "Continuità assistenziale - Casa di Comunità di Gazzada Schianno - ASST Settelaghi - ASST Settelaghi",
-   "sha": "9b9bd49c98b5b853db431071633239103e0f1b12662eff2a3ccca87a7cd007f8",
-   "caratteri": 6403,
-   "cambiata": false
+   "sha": "3a0ca220d64b90c67f7633a5813d83655e3301011d2b96c36116c277d9844e0a",
+   "caratteri": 6402,
+   "cambiata": true
   },
   {
    "asl": "varese",
@@ -3301,9 +3305,9 @@
    "http": 200,
    "file": "varese/625ee56036b9.txt",
    "titolo": "Home - ASST Valle Olona",
-   "sha": "368efbdcd2909aea5b7c16ace8f9a0add3cc4602572ec42d9f800992e43fcc89",
-   "caratteri": 4205,
-   "cambiata": false
+   "sha": "7449ed290a89510412c1fd5c4ca9e88693969c30faf2efdf63a8589b8bfa2bf1",
+   "caratteri": 4210,
+   "cambiata": true
   },
   {
    "asl": "varese",
@@ -3312,9 +3316,9 @@
    "http": 200,
    "file": "varese/f68caec45730.txt",
    "titolo": "Contatti - ASST Valle Olona",
-   "sha": "6dbfd6dcd60a09eeb232d6d959d046a80ec5339a3a2ff02d7fc68167b83efec7",
-   "caratteri": 3476,
-   "cambiata": false
+   "sha": "7c666e04edaea8a5dc69fe04a52a8b929e964e9a632a318d384870ee4c4421d7",
+   "caratteri": 3475,
+   "cambiata": true
   },
   {
    "asl": "varese",
