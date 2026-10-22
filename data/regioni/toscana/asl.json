@@ -27,7 +27,7 @@
    "proof": "pagina"
   }
  },
- "_note": "Numeri delle 3 aziende USL della Toscana per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono a Numeri utili; le sedi INPS (inps.json) a Invalidità. Gli altri moduli aspettano le pagine in «pagine» (todo). In Toscana la guardia medica è il 116117 in tutta la regione (dal 2024).",
+ "_note": "Numeri delle 3 aziende USL della Toscana per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Servono a Numeri utili e, dalle copie del 22/10/2026 (email degli URP in chiaro), ai moduli con le lettere; le sedi INPS (inps.json) a Invalidità. In Toscana la guardia medica è il 116117 in tutta la regione (dal 2024).",
  "asl": [
   {
    "id": "arezzo",
@@ -42,6 +42,11 @@
    "guardia_medica_url": "https://www.uslsudest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica",
    "pua_url": "https://www.uslsudest.toscana.it/servizi-e-strutture/punti-unici-di-accesso-pua",
    "pec": "ausltoscanasudest@postacert.toscana.it",
+   "scelta_medico": {
+    "how": "Puoi cambiare il medico o il pediatra online, con l'app Toscana Salute o sul portale «Cambio medico» della Regione, con SPID, CIE o CNS. Per cambiare medico puoi andare anche in una farmacia che fa il servizio. Per il medico di famiglia puoi chiamare anche il call center dell'ASL: 0575 379100, 0564 972191 o 0577 767676. Per la prima scelta e per i casi con documenti vai allo sportello dell'anagrafe assistiti, con il documento e la tessera sanitaria.",
+    "url": "https://www.uslsudest.toscana.it/come-fare-per/scegliere-il-medico-o-il-pediatra",
+    "url_label": "Sito dell'ASL Toscana Sud Est"
+   },
    "phones": [
     {
      "label": "Centralino dell'Azienda USL Toscana Sud Est – Arezzo",
@@ -107,6 +112,23 @@
      "url": "https://www.uslsudest.toscana.it/servizi-e-strutture/assistenza-domiciliare/provincia-di-arezzo",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "palliative",
+     "label": "Cure palliative dell'ASL Toscana Sud Est – provincia di Arezzo",
+     "number": "0575 255859",
+     "url": "https://www.uslsudest.toscana.it/percorsi-assistenziali/cure-palliative",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "palliative",
+     "label": "Hospice Valdarno – Ospedale Santa Maria alla Gruccia, Montevarchi",
+     "number": "055 9106607",
+     "url": "https://www.uslsudest.toscana.it/percorsi-assistenziali/cure-palliative",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "address": "Piazza del Volontariato 1, Montevarchi"
     }
    ],
    "sources": [
@@ -137,15 +159,36 @@
     {
      "label": "Regione Toscana – Nuovo numero 116117 della guardia medica",
      "url": "https://www.regione.toscana.it/it/-/nuovo-numero-del-servizio-di-continuit%C3%A0-assistenziale"
+    },
+    {
+     "label": "ASL Toscana Sud Est – Scegliere e cambiare il medico o il pediatra",
+     "url": "https://www.uslsudest.toscana.it/come-fare-per/scegliere-il-medico-o-il-pediatra"
+    },
+    {
+     "label": "ASL Toscana Sud Est – Tempi di attesa",
+     "url": "https://www.uslsudest.toscana.it/tempi-di-attesa"
+    },
+    {
+     "label": "ASL Toscana Sud Est – Attività di tutela (reclami)",
+     "url": "https://www.uslsudest.toscana.it/attivita-di-tutela"
+    },
+    {
+     "label": "ASL Toscana Sud Est – URP",
+     "url": "https://www.uslsudest.toscana.it/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "label": "ASL Toscana Sud Est – Cure palliative",
+     "url": "https://www.uslsudest.toscana.it/percorsi-assistenziali/cure-palliative"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-22",
    "todo": [
     "La pagina dei PUA elenca molti sportelli comunali per zona: qui c'è solo quello del capoluogo; gli altri sono nella pagina «Punti Unici di Accesso».",
-    "Email dell'URP nascoste nella copia della pagina (protezione anti-spam).",
-    "Moduli non ancora accesi (22/10/2026): liste d'attesa (come si chiede il percorso di tutela e a quale indirizzo: le email dell'URP sono nascoste nelle copie), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
+    "URP e percorso di tutela (copie del 22/10/2026, email in chiaro): email URP della provincia dalla pagina «Ufficio Relazioni con il Pubblico»; se il CUP non trova posto l'Help Desk prende in carico e ricontatta (pagina «Tempi di attesa»); il reclamo va all'URP (pagina «Attività di tutela»). La pagina non dice cosa vale senza classe di priorità."
    ],
-   "emails": [],
+   "emails": [
+    "urp.arezzo@uslsudest.toscana.it"
+   ],
    "pagine": [
     {
      "tipo": "tutela",
@@ -164,10 +207,6 @@
      "url": "https://www.uslsudest.toscana.it/come-fare-per/scegliere-il-medico-o-il-pediatra"
     },
     {
-     "tipo": "cartelle",
-     "url": "https://www.uslsudest.toscana.it/cosa-fare-per/richiedere-copia-della-cartella-clinica/ambito-aretino"
-    },
-    {
      "tipo": "palliative",
      "url": "https://www.uslsudest.toscana.it/servizi-e-strutture/hospice/provincia-di-arezzo"
     },
@@ -183,7 +222,26 @@
      "tipo": "inps-riforma",
      "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html"
     }
-   ]
+   ],
+   "channel": "cup",
+   "letter_mode": "fallback",
+   "send_to": "urp.arezzo@uslsudest.toscana.it",
+   "how_to": "Prenota al CUP: al telefono, allo sportello, in farmacia oppure online su prenota.sanita.toscana.it. Se il CUP non trova posto nei tempi della priorità, l'Help Desk del CUP prende in carico la tua richiesta. Ti richiama quando trova un appuntamento in tempo. Se nessuno ti richiama in tempo, fai un reclamo all'URP: scrivi a urp.arezzo@uslsudest.toscana.it o con la PEC a ausltoscanasudest@postacert.toscana.it.",
+   "what_next": [
+    "L'Help Desk del CUP ti richiama quando trova un appuntamento nei tempi della ricetta.",
+    "Al reclamo risponde per scritto il Direttore generale dell'ASL, entro 30 giorni (al massimo 60)."
+   ],
+   "details": [
+    "Se scegli una struttura che non ha la prima data libera, l'ASL non deve più darti la visita nei tempi massimi.",
+    "La prima data libera può essere nella tua zona o, per alcune visite, nell'area vasta."
+   ],
+   "info_url": "https://www.uslsudest.toscana.it/tempi-di-attesa",
+   "documents_required": [
+    "Ricetta",
+    "Foglio della prenotazione, se ce l'hai",
+    "Documento d'identità (fotocopia o foto)"
+   ],
+   "notes": []
   },
   {
    "id": "firenze",
@@ -260,6 +318,32 @@
      "url": "https://www.uslcentro.toscana.it/",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Copia della cartella clinica – Azienda Ospedaliero-Universitaria Careggi",
+     "number": "055 7948452",
+     "url": "https://www.aou-careggi.toscana.it/internet/azienda/chi-siamo/direzione-amministrativa/area-amministrativa/attivita-amministrativa-a-supporto-delle-attivita-sanitarie/rilascio-documentazione-sanitaria/",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 08:30–10:30; giovedì anche 14:30–16:30"
+    },
+    {
+     "topic": "palliative",
+     "label": "Hospice e cure palliative – zona di Firenze (ASL Toscana Centro)",
+     "number": "055 6939820",
+     "url": "https://www.uslcentro.toscana.it/percorsi-di-cura-e-assistenza/cure-palliative/orari-e-sedi-cure-palliative/zona-firenze-fiorentina-nord-ovest-fiorentina-sud-est-e-mugello-cure-palliative",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "protesica",
+     "label": "Ufficio protesi dell'ASL Toscana Centro – zona fiorentina: informazioni sulle pratiche",
+     "number": "055 6937600",
+     "url": "https://www.uslcentro.toscana.it/riabilitazione/ausili-e-protesi/zona-fiorentina",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Martedì e giovedì 10:00–11:30"
     }
    ],
    "sources": [
@@ -286,19 +370,46 @@
     {
      "label": "Regione Toscana – Nuovo numero 116117 della guardia medica",
      "url": "https://www.regione.toscana.it/it/-/nuovo-numero-del-servizio-di-continuit%C3%A0-assistenziale"
+    },
+    {
+     "label": "ASL Toscana Centro – Scelta e cambio del medico di famiglia o del pediatra",
+     "url": "https://www.uslcentro.toscana.it/medico-di-famiglia-e-pediatra-scelta/scelta-e-cambio-del-medico-di-famiglia-o-del-pediatra"
+    },
+    {
+     "label": "ASL Toscana Centro – Tempi di attesa e percorso di tutela",
+     "url": "https://www.uslcentro.toscana.it/diagnosi-e-cura/la-prenotazione-di-visite-e-esami/prenotare-un-esame-o-visita/liste-di-attesa"
+    },
+    {
+     "label": "AOU Careggi – Rilascio documentazione sanitaria",
+     "url": "https://www.aou-careggi.toscana.it/internet/azienda/chi-siamo/direzione-amministrativa/area-amministrativa/attivita-amministrativa-a-supporto-delle-attivita-sanitarie/rilascio-documentazione-sanitaria/"
+    },
+    {
+     "label": "ASL Toscana Centro – Cure palliative, zona fiorentina",
+     "url": "https://www.uslcentro.toscana.it/percorsi-di-cura-e-assistenza/cure-palliative/orari-e-sedi-cure-palliative/zona-firenze-fiorentina-nord-ovest-fiorentina-sud-est-e-mugello-cure-palliative"
+    },
+    {
+     "label": "ASL Toscana Centro – Ausili e protesi, zona fiorentina",
+     "url": "https://www.uslcentro.toscana.it/riabilitazione/ausili-e-protesi/zona-fiorentina"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-22",
    "todo": [
     "116117: secondo la Regione Toscana («Nuovo numero del servizio di continuità assistenziale», aggiornata al 05.02.2026) il 116117 è partito il 16/9/2024 a Firenze, Prato e Pistoia, il 21/10/2024 ad Arezzo, Grosseto e Siena e il 18/11/2024 a Livorno, Lucca, Massa-Carrara e Pisa; «attualmente il servizio è attivo in tutta la Toscana». Anche le pagine delle tre USL rimandano solo al 116117 per la guardia medica (la Sud Est dice che non ci si può presentare direttamente alle sedi). Per questo in tutte le province c'è il 116117 e nessun vecchio numero locale. Il 116117 serve anche per consigli sanitari non urgenti e per la guardia medica turistica; nell'USL Centro anche per segnalare quando il percorso di tutela dei tempi di attesa non funziona.",
     "Le pagine dell'Azienda non dicono un numero per il Punto Unico di Accesso (PUA) di questa provincia: il PUA si chiama «Punto Insieme» e si trova nelle sedi dei distretti.",
     "La pagina «Guardia Medica (sedi territoriali)» elenca solo i nomi delle zone, senza numeri: si usa il 116117.",
-    "Email e PEC dell'URP sono nascoste nella copia della pagina (protezione anti-spam): da copiare a mano dal sito.",
-    "Il numero del segretariato sociale per sette Comuni viene da una notizia in prima pagina del sito: controllare che resti valido.",
     "Percorso di tutela (copia del 21/10/2026 della pagina «Tempi di attesa e Percorso di Tutela»): se non c'è posto il CUP mette in lista d'attesa e richiama; il percorso di tutela si chiede all'URP aziendale (email e PEC nascoste nella copia); se l'Azienda non lo attiva, si può chiamare il 116117. Senza codice di priorità valgono i tempi della classe D.",
-    "Moduli non ancora accesi (22/10/2026): liste d'attesa (come si chiede il percorso di tutela e a quale indirizzo: le email dell'URP sono nascoste nelle copie), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
+    "URP (copia del 22/10/2026, email in chiaro): urp@uslcentro.toscana.it e PEC urp.uslcentro@postacert.toscana.it, che la pagina «Tempi di attesa e Percorso di Tutela» indica per chiedere il percorso di tutela. In «pec» c'è la PEC dell'URP: la PEC del protocollo generale non è nelle copie.",
+    "Il numero del segretariato sociale per sette Comuni (055 6930444) veniva da una notizia in prima pagina: nella copia del 22/10/2026 della home non c'è più. Da ricontrollare (non tolto)."
    ],
-   "emails": [],
+   "emails": [
+    "urp@uslcentro.toscana.it"
+   ],
+   "pec": "urp.uslcentro@postacert.toscana.it",
+   "scelta_medico": {
+    "how": "Puoi cambiare il medico di famiglia o il pediatra online, su Open Toscana (servizio «Cambio medico») o con l'app Toscana Salute, con SPID, CIE o CNS. Puoi usare anche i totem PuntoSì, con la tessera sanitaria attiva, o andare a uno sportello dell'anagrafe sanitaria dell'ASL. Puoi chiederlo anche per email: le informazioni sono sul sito dell'ASL.",
+    "url": "https://www.uslcentro.toscana.it/medico-di-famiglia-e-pediatra-scelta/scelta-e-cambio-del-medico-di-famiglia-o-del-pediatra",
+    "url_label": "Sito dell'ASL Toscana Centro"
+   },
    "pagine": [
     {
      "tipo": "tutela",
@@ -330,17 +441,32 @@
     },
     {
      "tipo": "cartelle",
-     "url": "https://www.uslcentro.toscana.it/altri-servizi/servizi-amministrativi/cartelle-cliniche-sportelli-amministrativi-ospedalieri/richiedere-la-cartella-clinica-ospedali-empolese-valdarno-inferiore"
-    },
-    {
-     "tipo": "cartelle",
      "url": "https://www.aou-careggi.toscana.it/internet/azienda/chi-siamo/direzione-amministrativa/area-amministrativa/attivita-amministrativa-a-supporto-delle-attivita-sanitarie/rilascio-documentazione-sanitaria/"
     },
     {
      "tipo": "medico",
      "url": "https://www.regione.toscana.it/scegliere-il-medico-di-base"
     }
-   ]
+   ],
+   "channel": "urp",
+   "letter_mode": "email",
+   "send_to": "urp@uslcentro.toscana.it",
+   "how_to": "Prenota al CUP: numero unico 055 545454, sportello, farmacia oppure online su prenota.sanita.toscana.it. Se non c'è posto, il CUP ti mette in lista d'attesa e ti richiama entro i tempi della ricetta. Se la prima visita o il primo esame non arriva nei tempi della priorità, chiedi il «percorso di tutela» all'URP dell'ASL: urp@uslcentro.toscana.it o con la PEC a urp.uslcentro@postacert.toscana.it. Se l'ASL non lo attiva, chiama il 116117 e tieni pronta la prenotazione.",
+   "what_next": [
+    "Il CUP ti richiama per offrirti una data entro i tempi della ricetta.",
+    "Se l'ASL non riesce ad attivare il percorso di tutela, al 116117 prendono la tua segnalazione: serve la prenotazione."
+   ],
+   "details": [
+    "Nell'ASL Toscana Centro, se sulla ricetta non c'è la priorità, valgono i tempi della classe D.",
+    "La visita può essere fatta anche in un posto vicino a casa, nella provincia o nell'area vasta."
+   ],
+   "info_url": "https://www.uslcentro.toscana.it/diagnosi-e-cura/la-prenotazione-di-visite-e-esami/prenotare-un-esame-o-visita/liste-di-attesa",
+   "documents_required": [
+    "Ricetta",
+    "Foglio della prenotazione, se ce l'hai",
+    "Documento d'identità (fotocopia o foto)"
+   ],
+   "notes": []
   },
   {
    "id": "grosseto",
@@ -355,6 +481,11 @@
    "guardia_medica_url": "https://www.uslsudest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica",
    "pua_url": "https://www.uslsudest.toscana.it/servizi-e-strutture/punti-unici-di-accesso-pua",
    "pec": "ausltoscanasudest@postacert.toscana.it",
+   "scelta_medico": {
+    "how": "Puoi cambiare il medico o il pediatra online, con l'app Toscana Salute o sul portale «Cambio medico» della Regione, con SPID, CIE o CNS. Per cambiare medico puoi andare anche in una farmacia che fa il servizio. Per il medico di famiglia puoi chiamare anche il call center dell'ASL: 0575 379100, 0564 972191 o 0577 767676. Per la prima scelta e per i casi con documenti vai allo sportello dell'anagrafe assistiti, con il documento e la tessera sanitaria.",
+    "url": "https://www.uslsudest.toscana.it/come-fare-per/scegliere-il-medico-o-il-pediatra",
+    "url_label": "Sito dell'ASL Toscana Sud Est"
+   },
    "phones": [
     {
      "label": "Centralino dell'Azienda USL Toscana Sud Est – Grosseto",
@@ -409,6 +540,15 @@
      "url": "https://www.uslsudest.toscana.it/servizi-e-strutture/punti-unici-di-accesso-pua",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "palliative",
+     "label": "Hospice dell'Ospedale Misericordia di Grosseto",
+     "number": "0564 483482",
+     "url": "https://www.uslsudest.toscana.it/percorsi-assistenziali/cure-palliative",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "address": "Via Senese 171, Grosseto"
     }
    ],
    "sources": [
@@ -439,17 +579,38 @@
     {
      "label": "Regione Toscana – Nuovo numero 116117 della guardia medica",
      "url": "https://www.regione.toscana.it/it/-/nuovo-numero-del-servizio-di-continuit%C3%A0-assistenziale"
+    },
+    {
+     "label": "ASL Toscana Sud Est – Scegliere e cambiare il medico o il pediatra",
+     "url": "https://www.uslsudest.toscana.it/come-fare-per/scegliere-il-medico-o-il-pediatra"
+    },
+    {
+     "label": "ASL Toscana Sud Est – Tempi di attesa",
+     "url": "https://www.uslsudest.toscana.it/tempi-di-attesa"
+    },
+    {
+     "label": "ASL Toscana Sud Est – Attività di tutela (reclami)",
+     "url": "https://www.uslsudest.toscana.it/attivita-di-tutela"
+    },
+    {
+     "label": "ASL Toscana Sud Est – URP",
+     "url": "https://www.uslsudest.toscana.it/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "label": "ASL Toscana Sud Est – Cure palliative",
+     "url": "https://www.uslsudest.toscana.it/percorsi-assistenziali/cure-palliative"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-22",
    "todo": [
     "La pagina dei PUA elenca molti sportelli comunali per zona: qui c'è solo quello del capoluogo; gli altri sono nella pagina «Punti Unici di Accesso».",
-    "Email dell'URP nascoste nella copia della pagina (protezione anti-spam).",
     "L'URP di Grosseto sta traslocando da Villa Pizzetti (viale Cimabue 109) a via Belgio 17: chiuso al pubblico dal 12 al 19 ottobre 2026; indirizzo non messo finché non è chiaro.",
-    "Moduli non ancora accesi (22/10/2026): liste d'attesa (come si chiede il percorso di tutela e a quale indirizzo: le email dell'URP sono nascoste nelle copie), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione.",
-    "Cartella clinica: pagina dell'ambito di Grosseto non trovata (c'è solo quella dell'ambito aretino)."
+    "Cartella clinica: pagina dell'ambito di Grosseto non trovata (c'è solo quella dell'ambito aretino).",
+    "URP e percorso di tutela (copie del 22/10/2026, email in chiaro): email URP della provincia dalla pagina «Ufficio Relazioni con il Pubblico»; se il CUP non trova posto l'Help Desk prende in carico e ricontatta (pagina «Tempi di attesa»); il reclamo va all'URP (pagina «Attività di tutela»). La pagina non dice cosa vale senza classe di priorità."
    ],
-   "emails": [],
+   "emails": [
+    "urp.grosseto@uslsudest.toscana.it"
+   ],
    "pagine": [
     {
      "tipo": "tutela",
@@ -479,7 +640,26 @@
      "tipo": "medico",
      "url": "https://www.regione.toscana.it/scegliere-il-medico-di-base"
     }
-   ]
+   ],
+   "channel": "cup",
+   "letter_mode": "fallback",
+   "send_to": "urp.grosseto@uslsudest.toscana.it",
+   "how_to": "Prenota al CUP: al telefono, allo sportello, in farmacia oppure online su prenota.sanita.toscana.it. Se il CUP non trova posto nei tempi della priorità, l'Help Desk del CUP prende in carico la tua richiesta. Ti richiama quando trova un appuntamento in tempo. Se nessuno ti richiama in tempo, fai un reclamo all'URP: scrivi a urp.grosseto@uslsudest.toscana.it o con la PEC a ausltoscanasudest@postacert.toscana.it.",
+   "what_next": [
+    "L'Help Desk del CUP ti richiama quando trova un appuntamento nei tempi della ricetta.",
+    "Al reclamo risponde per scritto il Direttore generale dell'ASL, entro 30 giorni (al massimo 60)."
+   ],
+   "details": [
+    "Se scegli una struttura che non ha la prima data libera, l'ASL non deve più darti la visita nei tempi massimi.",
+    "La prima data libera può essere nella tua zona o, per alcune visite, nell'area vasta."
+   ],
+   "info_url": "https://www.uslsudest.toscana.it/tempi-di-attesa",
+   "documents_required": [
+    "Ricetta",
+    "Foglio della prenotazione, se ce l'hai",
+    "Documento d'identità (fotocopia o foto)"
+   ],
+   "notes": []
   },
   {
    "id": "livorno",
@@ -494,6 +674,11 @@
    "guardia_medica_url": "https://www.uslnordovest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica",
    "pua_url": "https://www.uslnordovest.toscana.it/come-fare-per/accedere-ai-servizi-per-gli-anziani-non-autosufficienti",
    "pec": "direzione.uslnordovest@postacert.toscana.it",
+   "scelta_medico": {
+    "how": "Puoi scegliere o cambiare il medico online, sul portale Open Toscana (servizio «Cambio medico») o con l'app Toscana Salute. Puoi usare anche i totem PuntoSì. Oppure vai a uno sportello dell'ASL sul territorio, con un documento valido.",
+    "url": "https://www.regione.toscana.it/scegliere-il-medico-di-base",
+    "url_label": "Sito della Regione"
+   },
    "phones": [
     {
      "label": "Centralino dell'Ospedale di Livorno",
@@ -577,6 +762,15 @@
      "url": "https://www.uslnordovest.toscana.it/numeri-utili",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "palliative",
+     "label": "Cure palliative – zona livornese (ASL Toscana Nord Ovest): segreteria",
+     "number": "0586 223462",
+     "url": "https://www.uslnordovest.toscana.it/index.php?option=com_content&view=article&id=11691&catid=2",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 8:00–13:00"
     }
    ],
    "sources": [
@@ -599,17 +793,45 @@
     {
      "label": "Regione Toscana – Nuovo numero 116117 della guardia medica",
      "url": "https://www.regione.toscana.it/it/-/nuovo-numero-del-servizio-di-continuit%C3%A0-assistenziale"
+    },
+    {
+     "label": "Regione Toscana – Scegliere il medico di base",
+     "url": "https://www.regione.toscana.it/scegliere-il-medico-di-base"
+    },
+    {
+     "label": "ASL Toscana Nord Ovest – Come fare la scelta o il cambio del medico",
+     "url": "https://www.uslnordovest.toscana.it/comunicati-stampa/asl-come-fare-la-scelta-o-il-cambio-del-medico-di-famiglia"
+    },
+    {
+     "label": "ASL Toscana Nord Ovest – Criteri delle liste d'attesa e percorso di tutela",
+     "url": "https://www.uslnordovest.toscana.it/amministrazione-trasparente-2/servizi-erogati/liste-d-attesa/criteri-di-formazione-liste-tempi-di-attesa"
+    },
+    {
+     "label": "ASL Toscana Nord Ovest – Reclami e segnalazioni",
+     "url": "https://www.uslnordovest.toscana.it/urp/reclami-e-segnalazioni"
+    },
+    {
+     "label": "ASL Toscana Nord Ovest – Richiedere la cartella clinica",
+     "url": "https://www.uslnordovest.toscana.it/come-fare-per/richiedere-la-cartella-clinica"
+    },
+    {
+     "label": "ASL Toscana Nord Ovest – Cure palliative, zona livornese",
+     "url": "https://www.uslnordovest.toscana.it/index.php?option=com_content&view=article&id=11691&catid=2"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-22",
    "todo": [
     "Nessun numero per il Punto Unico di Accesso (PUA) o le cure domiciliari nelle pagine copiate dell'Azienda USL Toscana Nord Ovest.",
     "I numeri della guardia medica turistica (estate) non sono stati messi: valgono solo in alcuni mesi.",
-    "Le email dell'URP per zona sono nascoste nella copia della pagina (protezione anti-spam).",
     "Ausili: la copia del 21/10/2026 della pagina «Servizi online» ha il «Modulo richiesta ausili e protesi» online; il CUP 0585 498498 dice a che punto è la pratica. Per la lettera manca l'indirizzo dell'ufficio protesi di zona.",
-    "Moduli non ancora accesi (22/10/2026): liste d'attesa (come si chiede il percorso di tutela e a quale indirizzo: le email dell'URP sono nascoste nelle copie), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
+    "URP e percorso di tutela (copie del 22/10/2026, email in chiaro): email degli URP di zona dalla pagina «Contatti e sedi URP»; per le ricette B la centrale operativa prende in carico e ricontatta (pagina «Criteri di formazione liste»); per le altre priorità la pagina non dice niente: la lettera va all'URP (pagina «Reclami e segnalazioni»). Scelta del medico dalla pagina della Regione."
    ],
-   "emails": [],
+   "emails": [
+    "urp.livorno@uslnordovest.toscana.it",
+    "urp.cecina@uslnordovest.toscana.it",
+    "urp.piombino@uslnordovest.toscana.it",
+    "urp.elba@uslnordovest.toscana.it"
+   ],
    "pagine": [
     {
      "tipo": "tutela",
@@ -618,10 +840,6 @@
     {
      "tipo": "cartelle",
      "url": "https://www.uslnordovest.toscana.it/come-fare-per/richiedere-la-cartella-clinica"
-    },
-    {
-     "tipo": "palliative",
-     "url": "https://www.uslnordovest.toscana.it/servizi-e-strutture/9871-le-cure-palliative"
     },
     {
      "tipo": "protesica",
@@ -643,7 +861,26 @@
      "tipo": "medico",
      "url": "https://www.regione.toscana.it/scegliere-il-medico-di-base"
     }
-   ]
+   ],
+   "channel": "cup",
+   "letter_mode": "fallback",
+   "send_to": "urp.livorno@uslnordovest.toscana.it",
+   "how_to": "Prenota al CUP: al telefono, allo sportello, in farmacia oppure online su prenota.sanita.toscana.it. Se la ricetta ha priorità B e il CUP non trova posto in tempo, la centrale operativa prende in carico la tua richiesta. Ti richiama quando trova un appuntamento in tempo. Se nessuno ti richiama, o per le altre priorità, fai un reclamo all'URP della tua zona: scrivi a urp.livorno@uslnordovest.toscana.it o con la PEC a direzione.uslnordovest@postacert.toscana.it.",
+   "what_next": [
+    "La centrale operativa ti richiama quando trova un appuntamento nei tempi della ricetta.",
+    "Al reclamo l'URP risponde con una lettera firmata dal Direttore generale dell'ASL."
+   ],
+   "details": [
+    "Se scegli una struttura che non ha la prima data libera, l'ASL non deve più darti la visita nei tempi massimi.",
+    "La prima data libera può essere nella tua zona o, per alcune visite, nell'area vasta."
+   ],
+   "info_url": "https://www.uslnordovest.toscana.it/amministrazione-trasparente-2/servizi-erogati/liste-d-attesa/criteri-di-formazione-liste-tempi-di-attesa",
+   "documents_required": [
+    "Ricetta",
+    "Foglio della prenotazione, se ce l'hai",
+    "Documento d'identità (fotocopia o foto)"
+   ],
+   "notes": []
   },
   {
    "id": "lucca",
@@ -658,6 +895,11 @@
    "guardia_medica_url": "https://www.uslnordovest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica",
    "pua_url": "https://www.uslnordovest.toscana.it/come-fare-per/accedere-ai-servizi-per-gli-anziani-non-autosufficienti",
    "pec": "direzione.uslnordovest@postacert.toscana.it",
+   "scelta_medico": {
+    "how": "Puoi scegliere o cambiare il medico online, sul portale Open Toscana (servizio «Cambio medico») o con l'app Toscana Salute. Puoi usare anche i totem PuntoSì. Oppure vai a uno sportello dell'ASL sul territorio, con un documento valido.",
+    "url": "https://www.regione.toscana.it/scegliere-il-medico-di-base",
+    "url_label": "Sito della Regione"
+   },
    "phones": [
     {
      "label": "Centralino dell'Ospedale San Luca di Lucca",
@@ -763,17 +1005,39 @@
     {
      "label": "Regione Toscana – Nuovo numero 116117 della guardia medica",
      "url": "https://www.regione.toscana.it/it/-/nuovo-numero-del-servizio-di-continuit%C3%A0-assistenziale"
+    },
+    {
+     "label": "Regione Toscana – Scegliere il medico di base",
+     "url": "https://www.regione.toscana.it/scegliere-il-medico-di-base"
+    },
+    {
+     "label": "ASL Toscana Nord Ovest – Come fare la scelta o il cambio del medico",
+     "url": "https://www.uslnordovest.toscana.it/comunicati-stampa/asl-come-fare-la-scelta-o-il-cambio-del-medico-di-famiglia"
+    },
+    {
+     "label": "ASL Toscana Nord Ovest – Criteri delle liste d'attesa e percorso di tutela",
+     "url": "https://www.uslnordovest.toscana.it/amministrazione-trasparente-2/servizi-erogati/liste-d-attesa/criteri-di-formazione-liste-tempi-di-attesa"
+    },
+    {
+     "label": "ASL Toscana Nord Ovest – Reclami e segnalazioni",
+     "url": "https://www.uslnordovest.toscana.it/urp/reclami-e-segnalazioni"
+    },
+    {
+     "label": "ASL Toscana Nord Ovest – Richiedere la cartella clinica",
+     "url": "https://www.uslnordovest.toscana.it/come-fare-per/richiedere-la-cartella-clinica"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-22",
    "todo": [
     "Nessun numero per il Punto Unico di Accesso (PUA) o le cure domiciliari nelle pagine copiate dell'Azienda USL Toscana Nord Ovest.",
     "I numeri della guardia medica turistica (estate) non sono stati messi: valgono solo in alcuni mesi.",
-    "Le email dell'URP per zona sono nascoste nella copia della pagina (protezione anti-spam).",
     "Ausili: la copia del 21/10/2026 della pagina «Servizi online» ha il «Modulo richiesta ausili e protesi» online; il CUP 0585 498498 dice a che punto è la pratica. Per la lettera manca l'indirizzo dell'ufficio protesi di zona.",
-    "Moduli non ancora accesi (22/10/2026): liste d'attesa (come si chiede il percorso di tutela e a quale indirizzo: le email dell'URP sono nascoste nelle copie), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
+    "URP e percorso di tutela (copie del 22/10/2026, email in chiaro): email degli URP di zona dalla pagina «Contatti e sedi URP»; per le ricette B la centrale operativa prende in carico e ricontatta (pagina «Criteri di formazione liste»); per le altre priorità la pagina non dice niente: la lettera va all'URP (pagina «Reclami e segnalazioni»). Scelta del medico dalla pagina della Regione."
    ],
-   "emails": [],
+   "emails": [
+    "urp.lucca@uslnordovest.toscana.it",
+    "urp.versilia@uslnordovest.toscana.it"
+   ],
    "pagine": [
     {
      "tipo": "tutela",
@@ -782,10 +1046,6 @@
     {
      "tipo": "cartelle",
      "url": "https://www.uslnordovest.toscana.it/come-fare-per/richiedere-la-cartella-clinica"
-    },
-    {
-     "tipo": "palliative",
-     "url": "https://www.uslnordovest.toscana.it/servizi-e-strutture/9871-le-cure-palliative"
     },
     {
      "tipo": "protesica",
@@ -803,7 +1063,26 @@
      "tipo": "medico",
      "url": "https://www.regione.toscana.it/scegliere-il-medico-di-base"
     }
-   ]
+   ],
+   "channel": "cup",
+   "letter_mode": "fallback",
+   "send_to": "urp.lucca@uslnordovest.toscana.it",
+   "how_to": "Prenota al CUP: al telefono, allo sportello, in farmacia oppure online su prenota.sanita.toscana.it. Se la ricetta ha priorità B e il CUP non trova posto in tempo, la centrale operativa prende in carico la tua richiesta. Ti richiama quando trova un appuntamento in tempo. Se nessuno ti richiama, o per le altre priorità, fai un reclamo all'URP della tua zona: scrivi a urp.lucca@uslnordovest.toscana.it o con la PEC a direzione.uslnordovest@postacert.toscana.it.",
+   "what_next": [
+    "La centrale operativa ti richiama quando trova un appuntamento nei tempi della ricetta.",
+    "Al reclamo l'URP risponde con una lettera firmata dal Direttore generale dell'ASL."
+   ],
+   "details": [
+    "Se scegli una struttura che non ha la prima data libera, l'ASL non deve più darti la visita nei tempi massimi.",
+    "La prima data libera può essere nella tua zona o, per alcune visite, nell'area vasta."
+   ],
+   "info_url": "https://www.uslnordovest.toscana.it/amministrazione-trasparente-2/servizi-erogati/liste-d-attesa/criteri-di-formazione-liste-tempi-di-attesa",
+   "documents_required": [
+    "Ricetta",
+    "Foglio della prenotazione, se ce l'hai",
+    "Documento d'identità (fotocopia o foto)"
+   ],
+   "notes": []
   },
   {
    "id": "massa-carrara",
@@ -818,6 +1097,11 @@
    "guardia_medica_url": "https://www.uslnordovest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica",
    "pua_url": "https://www.uslnordovest.toscana.it/come-fare-per/accedere-ai-servizi-per-gli-anziani-non-autosufficienti",
    "pec": "direzione.uslnordovest@postacert.toscana.it",
+   "scelta_medico": {
+    "how": "Puoi scegliere o cambiare il medico online, sul portale Open Toscana (servizio «Cambio medico») o con l'app Toscana Salute. Puoi usare anche i totem PuntoSì. Oppure vai a uno sportello dell'ASL sul territorio, con un documento valido.",
+    "url": "https://www.regione.toscana.it/scegliere-il-medico-di-base",
+    "url_label": "Sito della Regione"
+   },
    "phones": [
     {
      "label": "Centralino dell'Ospedale Apuane di Marina di Massa",
@@ -916,17 +1200,38 @@
     {
      "label": "Regione Toscana – Nuovo numero 116117 della guardia medica",
      "url": "https://www.regione.toscana.it/it/-/nuovo-numero-del-servizio-di-continuit%C3%A0-assistenziale"
+    },
+    {
+     "label": "Regione Toscana – Scegliere il medico di base",
+     "url": "https://www.regione.toscana.it/scegliere-il-medico-di-base"
+    },
+    {
+     "label": "ASL Toscana Nord Ovest – Come fare la scelta o il cambio del medico",
+     "url": "https://www.uslnordovest.toscana.it/comunicati-stampa/asl-come-fare-la-scelta-o-il-cambio-del-medico-di-famiglia"
+    },
+    {
+     "label": "ASL Toscana Nord Ovest – Criteri delle liste d'attesa e percorso di tutela",
+     "url": "https://www.uslnordovest.toscana.it/amministrazione-trasparente-2/servizi-erogati/liste-d-attesa/criteri-di-formazione-liste-tempi-di-attesa"
+    },
+    {
+     "label": "ASL Toscana Nord Ovest – Reclami e segnalazioni",
+     "url": "https://www.uslnordovest.toscana.it/urp/reclami-e-segnalazioni"
+    },
+    {
+     "label": "ASL Toscana Nord Ovest – Richiedere la cartella clinica",
+     "url": "https://www.uslnordovest.toscana.it/come-fare-per/richiedere-la-cartella-clinica"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-22",
    "todo": [
     "Nessun numero per il Punto Unico di Accesso (PUA) o le cure domiciliari nelle pagine copiate dell'Azienda USL Toscana Nord Ovest.",
     "I numeri della guardia medica turistica (estate) non sono stati messi: valgono solo in alcuni mesi.",
-    "Le email dell'URP per zona sono nascoste nella copia della pagina (protezione anti-spam).",
     "Ausili: la copia del 21/10/2026 della pagina «Servizi online» ha il «Modulo richiesta ausili e protesi» online; il CUP 0585 498498 dice a che punto è la pratica. Per la lettera manca l'indirizzo dell'ufficio protesi di zona.",
-    "Moduli non ancora accesi (22/10/2026): liste d'attesa (come si chiede il percorso di tutela e a quale indirizzo: le email dell'URP sono nascoste nelle copie), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
+    "URP e percorso di tutela (copie del 22/10/2026, email in chiaro): email degli URP di zona dalla pagina «Contatti e sedi URP»; per le ricette B la centrale operativa prende in carico e ricontatta (pagina «Criteri di formazione liste»); per le altre priorità la pagina non dice niente: la lettera va all'URP (pagina «Reclami e segnalazioni»). Scelta del medico dalla pagina della Regione."
    ],
-   "emails": [],
+   "emails": [
+    "urp.massacarrara@uslnordovest.toscana.it"
+   ],
    "pagine": [
     {
      "tipo": "tutela",
@@ -935,10 +1240,6 @@
     {
      "tipo": "cartelle",
      "url": "https://www.uslnordovest.toscana.it/come-fare-per/richiedere-la-cartella-clinica"
-    },
-    {
-     "tipo": "palliative",
-     "url": "https://www.uslnordovest.toscana.it/servizi-e-strutture/9871-le-cure-palliative"
     },
     {
      "tipo": "protesica",
@@ -960,7 +1261,26 @@
      "tipo": "medico",
      "url": "https://www.regione.toscana.it/scegliere-il-medico-di-base"
     }
-   ]
+   ],
+   "channel": "cup",
+   "letter_mode": "fallback",
+   "send_to": "urp.massacarrara@uslnordovest.toscana.it",
+   "how_to": "Prenota al CUP: al telefono, allo sportello, in farmacia oppure online su prenota.sanita.toscana.it. Se la ricetta ha priorità B e il CUP non trova posto in tempo, la centrale operativa prende in carico la tua richiesta. Ti richiama quando trova un appuntamento in tempo. Se nessuno ti richiama, o per le altre priorità, fai un reclamo all'URP della tua zona: scrivi a urp.massacarrara@uslnordovest.toscana.it o con la PEC a direzione.uslnordovest@postacert.toscana.it.",
+   "what_next": [
+    "La centrale operativa ti richiama quando trova un appuntamento nei tempi della ricetta.",
+    "Al reclamo l'URP risponde con una lettera firmata dal Direttore generale dell'ASL."
+   ],
+   "details": [
+    "Se scegli una struttura che non ha la prima data libera, l'ASL non deve più darti la visita nei tempi massimi.",
+    "La prima data libera può essere nella tua zona o, per alcune visite, nell'area vasta."
+   ],
+   "info_url": "https://www.uslnordovest.toscana.it/amministrazione-trasparente-2/servizi-erogati/liste-d-attesa/criteri-di-formazione-liste-tempi-di-attesa",
+   "documents_required": [
+    "Ricetta",
+    "Foglio della prenotazione, se ce l'hai",
+    "Documento d'identità (fotocopia o foto)"
+   ],
+   "notes": []
   },
   {
    "id": "pisa",
@@ -976,6 +1296,11 @@
    "guardia_medica_url": "https://www.uslnordovest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica",
    "pua_url": "https://www.uslnordovest.toscana.it/come-fare-per/accedere-ai-servizi-per-gli-anziani-non-autosufficienti",
    "pec": "direzione.uslnordovest@postacert.toscana.it",
+   "scelta_medico": {
+    "how": "Puoi scegliere o cambiare il medico online, sul portale Open Toscana (servizio «Cambio medico») o con l'app Toscana Salute. Puoi usare anche i totem PuntoSì. Oppure vai a uno sportello dell'ASL sul territorio, con un documento valido.",
+    "url": "https://www.regione.toscana.it/scegliere-il-medico-di-base",
+    "url_label": "Sito della Regione"
+   },
    "phones": [
     {
      "label": "Centralino dell'Ospedale Felice Lotti di Pontedera",
@@ -1045,6 +1370,23 @@
      "url": "https://www.uslnordovest.toscana.it/numeri-utili",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Copia della cartella clinica – Azienda Ospedaliero-Universitaria Pisana: informazioni",
+     "number": "050 992828",
+     "url": "https://www.ao-pisa.toscana.it/index.php?option=com_content&view=article&id=425%3Arichiesta-cartella-clinica&catid=102&Itemid=241",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Martedì e giovedì 08:30–10:30"
+    },
+    {
+     "topic": "palliative",
+     "label": "Hospice e cure palliative – zona pisana (ASL Toscana Nord Ovest)",
+     "number": "050 959934",
+     "url": "https://www.uslnordovest.toscana.it/servizi-e-strutture/cure-palliative/zona-pisana-strutture-per-cure-palliative",
+     "verified": "2026-10-22",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -1067,18 +1409,49 @@
     {
      "label": "Regione Toscana – Nuovo numero 116117 della guardia medica",
      "url": "https://www.regione.toscana.it/it/-/nuovo-numero-del-servizio-di-continuit%C3%A0-assistenziale"
+    },
+    {
+     "label": "Regione Toscana – Scegliere il medico di base",
+     "url": "https://www.regione.toscana.it/scegliere-il-medico-di-base"
+    },
+    {
+     "label": "ASL Toscana Nord Ovest – Come fare la scelta o il cambio del medico",
+     "url": "https://www.uslnordovest.toscana.it/comunicati-stampa/asl-come-fare-la-scelta-o-il-cambio-del-medico-di-famiglia"
+    },
+    {
+     "label": "ASL Toscana Nord Ovest – Criteri delle liste d'attesa e percorso di tutela",
+     "url": "https://www.uslnordovest.toscana.it/amministrazione-trasparente-2/servizi-erogati/liste-d-attesa/criteri-di-formazione-liste-tempi-di-attesa"
+    },
+    {
+     "label": "ASL Toscana Nord Ovest – Reclami e segnalazioni",
+     "url": "https://www.uslnordovest.toscana.it/urp/reclami-e-segnalazioni"
+    },
+    {
+     "label": "ASL Toscana Nord Ovest – Richiedere la cartella clinica",
+     "url": "https://www.uslnordovest.toscana.it/come-fare-per/richiedere-la-cartella-clinica"
+    },
+    {
+     "label": "AOU Pisana – Richiesta cartella clinica",
+     "url": "https://www.ao-pisa.toscana.it/index.php?option=com_content&view=article&id=425%3Arichiesta-cartella-clinica&catid=102&Itemid=241"
+    },
+    {
+     "label": "ASL Toscana Nord Ovest – Cure palliative, zona pisana",
+     "url": "https://www.uslnordovest.toscana.it/servizi-e-strutture/cure-palliative/zona-pisana-strutture-per-cure-palliative"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-22",
    "todo": [
     "Nessun numero per il Punto Unico di Accesso (PUA) o le cure domiciliari nelle pagine copiate dell'Azienda USL Toscana Nord Ovest.",
     "I numeri della guardia medica turistica (estate) non sono stati messi: valgono solo in alcuni mesi.",
-    "Le email dell'URP per zona sono nascoste nella copia della pagina (protezione anti-spam).",
     "Gli ospedali della città di Pisa sono dell'Azienda Ospedaliero Universitaria Pisana, non dell'USL: nessun loro centralino nelle pagine copiate (il CUP dell'AOU Pisana è nella pagina regionale «CUP telefonico», scritto 05099599 5: numero poco chiaro, non messo).",
     "Ausili: la copia del 21/10/2026 della pagina «Servizi online» ha il «Modulo richiesta ausili e protesi» online; il CUP 0585 498498 dice a che punto è la pratica. Per la lettera manca l'indirizzo dell'ufficio protesi di zona.",
-    "Moduli non ancora accesi (22/10/2026): liste d'attesa (come si chiede il percorso di tutela e a quale indirizzo: le email dell'URP sono nascoste nelle copie), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
+    "URP e percorso di tutela (copie del 22/10/2026, email in chiaro): email degli URP di zona dalla pagina «Contatti e sedi URP»; per le ricette B la centrale operativa prende in carico e ricontatta (pagina «Criteri di formazione liste»); per le altre priorità la pagina non dice niente: la lettera va all'URP (pagina «Reclami e segnalazioni»). Scelta del medico dalla pagina della Regione."
    ],
-   "emails": [],
+   "emails": [
+    "urp.pisa@uslnordovest.toscana.it",
+    "urp.pontedera@uslnordovest.toscana.it",
+    "urp.volterra@uslnordovest.toscana.it"
+   ],
    "pagine": [
     {
      "tipo": "tutela",
@@ -1087,10 +1460,6 @@
     {
      "tipo": "cartelle",
      "url": "https://www.uslnordovest.toscana.it/come-fare-per/richiedere-la-cartella-clinica"
-    },
-    {
-     "tipo": "palliative",
-     "url": "https://www.uslnordovest.toscana.it/servizi-e-strutture/9871-le-cure-palliative"
     },
     {
      "tipo": "protesica",
@@ -1116,7 +1485,26 @@
      "tipo": "medico",
      "url": "https://www.regione.toscana.it/scegliere-il-medico-di-base"
     }
-   ]
+   ],
+   "channel": "cup",
+   "letter_mode": "fallback",
+   "send_to": "urp.pisa@uslnordovest.toscana.it",
+   "how_to": "Prenota al CUP: al telefono, allo sportello, in farmacia oppure online su prenota.sanita.toscana.it. Se la ricetta ha priorità B e il CUP non trova posto in tempo, la centrale operativa prende in carico la tua richiesta. Ti richiama quando trova un appuntamento in tempo. Se nessuno ti richiama, o per le altre priorità, fai un reclamo all'URP della tua zona: scrivi a urp.pisa@uslnordovest.toscana.it o con la PEC a direzione.uslnordovest@postacert.toscana.it.",
+   "what_next": [
+    "La centrale operativa ti richiama quando trova un appuntamento nei tempi della ricetta.",
+    "Al reclamo l'URP risponde con una lettera firmata dal Direttore generale dell'ASL."
+   ],
+   "details": [
+    "Se scegli una struttura che non ha la prima data libera, l'ASL non deve più darti la visita nei tempi massimi.",
+    "La prima data libera può essere nella tua zona o, per alcune visite, nell'area vasta."
+   ],
+   "info_url": "https://www.uslnordovest.toscana.it/amministrazione-trasparente-2/servizi-erogati/liste-d-attesa/criteri-di-formazione-liste-tempi-di-attesa",
+   "documents_required": [
+    "Ricetta",
+    "Foglio della prenotazione, se ce l'hai",
+    "Documento d'identità (fotocopia o foto)"
+   ],
+   "notes": []
   },
   {
    "id": "pistoia",
@@ -1210,17 +1598,32 @@
     {
      "label": "Regione Toscana – Nuovo numero 116117 della guardia medica",
      "url": "https://www.regione.toscana.it/it/-/nuovo-numero-del-servizio-di-continuit%C3%A0-assistenziale"
+    },
+    {
+     "label": "ASL Toscana Centro – Scelta e cambio del medico di famiglia o del pediatra",
+     "url": "https://www.uslcentro.toscana.it/medico-di-famiglia-e-pediatra-scelta/scelta-e-cambio-del-medico-di-famiglia-o-del-pediatra"
+    },
+    {
+     "label": "ASL Toscana Centro – Tempi di attesa e percorso di tutela",
+     "url": "https://www.uslcentro.toscana.it/diagnosi-e-cura/la-prenotazione-di-visite-e-esami/prenotare-un-esame-o-visita/liste-di-attesa"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-22",
    "todo": [
     "Le pagine dell'Azienda non dicono un numero per il Punto Unico di Accesso (PUA) di questa provincia: il PUA si chiama «Punto Insieme» e si trova nelle sedi dei distretti.",
     "La pagina «Guardia Medica (sedi territoriali)» elenca solo i nomi delle zone, senza numeri: si usa il 116117.",
-    "Email e PEC dell'URP sono nascoste nella copia della pagina (protezione anti-spam): da copiare a mano dal sito.",
     "Percorso di tutela (copia del 21/10/2026 della pagina «Tempi di attesa e Percorso di Tutela»): se non c'è posto il CUP mette in lista d'attesa e richiama; il percorso di tutela si chiede all'URP aziendale (email e PEC nascoste nella copia); se l'Azienda non lo attiva, si può chiamare il 116117. Senza codice di priorità valgono i tempi della classe D.",
-    "Moduli non ancora accesi (22/10/2026): liste d'attesa (come si chiede il percorso di tutela e a quale indirizzo: le email dell'URP sono nascoste nelle copie), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
+    "URP (copia del 22/10/2026, email in chiaro): urp@uslcentro.toscana.it e PEC urp.uslcentro@postacert.toscana.it, che la pagina «Tempi di attesa e Percorso di Tutela» indica per chiedere il percorso di tutela. In «pec» c'è la PEC dell'URP: la PEC del protocollo generale non è nelle copie."
    ],
-   "emails": [],
+   "emails": [
+    "urp@uslcentro.toscana.it"
+   ],
+   "pec": "urp.uslcentro@postacert.toscana.it",
+   "scelta_medico": {
+    "how": "Puoi cambiare il medico di famiglia o il pediatra online, su Open Toscana (servizio «Cambio medico») o con l'app Toscana Salute, con SPID, CIE o CNS. Puoi usare anche i totem PuntoSì, con la tessera sanitaria attiva, o andare a uno sportello dell'anagrafe sanitaria dell'ASL. Puoi chiederlo anche per email: le informazioni sono sul sito dell'ASL.",
+    "url": "https://www.uslcentro.toscana.it/medico-di-famiglia-e-pediatra-scelta/scelta-e-cambio-del-medico-di-famiglia-o-del-pediatra",
+    "url_label": "Sito dell'ASL Toscana Centro"
+   },
    "pagine": [
     {
      "tipo": "tutela",
@@ -1239,18 +1642,29 @@
      "url": "https://www.uslcentro.toscana.it/medico-di-famiglia-e-pediatra-scelta/scelta-e-cambio-del-medico-di-famiglia-o-del-pediatra"
     },
     {
-     "tipo": "palliative",
-     "url": "https://www.uslcentro.toscana.it/index.php/percorsi-assistenziali/percorso-oncologico/2708-cure-palliative/orari-e-sedi-cure-palliative/50045-zona-pistoiese-e-val-di-nievole-cure-palliative"
-    },
-    {
-     "tipo": "cartelle",
-     "url": "https://www.uslcentro.toscana.it/altri-servizi/servizi-amministrativi/cartelle-cliniche-sportelli-amministrativi-ospedalieri/richiedere-la-cartella-clinica-ospedale-san-jacopo-di-pistoia"
-    },
-    {
      "tipo": "medico",
      "url": "https://www.regione.toscana.it/scegliere-il-medico-di-base"
     }
-   ]
+   ],
+   "channel": "urp",
+   "letter_mode": "email",
+   "send_to": "urp@uslcentro.toscana.it",
+   "how_to": "Prenota al CUP: numero unico 055 545454, sportello, farmacia oppure online su prenota.sanita.toscana.it. Se non c'è posto, il CUP ti mette in lista d'attesa e ti richiama entro i tempi della ricetta. Se la prima visita o il primo esame non arriva nei tempi della priorità, chiedi il «percorso di tutela» all'URP dell'ASL: urp@uslcentro.toscana.it o con la PEC a urp.uslcentro@postacert.toscana.it. Se l'ASL non lo attiva, chiama il 116117 e tieni pronta la prenotazione.",
+   "what_next": [
+    "Il CUP ti richiama per offrirti una data entro i tempi della ricetta.",
+    "Se l'ASL non riesce ad attivare il percorso di tutela, al 116117 prendono la tua segnalazione: serve la prenotazione."
+   ],
+   "details": [
+    "Nell'ASL Toscana Centro, se sulla ricetta non c'è la priorità, valgono i tempi della classe D.",
+    "La visita può essere fatta anche in un posto vicino a casa, nella provincia o nell'area vasta."
+   ],
+   "info_url": "https://www.uslcentro.toscana.it/diagnosi-e-cura/la-prenotazione-di-visite-e-esami/prenotare-un-esame-o-visita/liste-di-attesa",
+   "documents_required": [
+    "Ricetta",
+    "Foglio della prenotazione, se ce l'hai",
+    "Documento d'identità (fotocopia o foto)"
+   ],
+   "notes": []
   },
   {
    "id": "prato",
@@ -1318,6 +1732,15 @@
      "url": "https://www.uslcentro.toscana.it/cup",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "protesica",
+     "label": "Ausili e protesi – zona pratese (ASL Toscana Centro): informazioni",
+     "number": "0574 807858",
+     "url": "https://www.uslcentro.toscana.it/riabilitazione/ausili-e-protesi/zona-pratese",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Lunedì, mercoledì e venerdì 10:00–12:00"
     }
    ],
    "sources": [
@@ -1344,17 +1767,36 @@
     {
      "label": "Regione Toscana – Nuovo numero 116117 della guardia medica",
      "url": "https://www.regione.toscana.it/it/-/nuovo-numero-del-servizio-di-continuit%C3%A0-assistenziale"
+    },
+    {
+     "label": "ASL Toscana Centro – Scelta e cambio del medico di famiglia o del pediatra",
+     "url": "https://www.uslcentro.toscana.it/medico-di-famiglia-e-pediatra-scelta/scelta-e-cambio-del-medico-di-famiglia-o-del-pediatra"
+    },
+    {
+     "label": "ASL Toscana Centro – Tempi di attesa e percorso di tutela",
+     "url": "https://www.uslcentro.toscana.it/diagnosi-e-cura/la-prenotazione-di-visite-e-esami/prenotare-un-esame-o-visita/liste-di-attesa"
+    },
+    {
+     "label": "ASL Toscana Centro – Ausili e protesi, zona pratese",
+     "url": "https://www.uslcentro.toscana.it/riabilitazione/ausili-e-protesi/zona-pratese"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-22",
    "todo": [
     "Le pagine dell'Azienda non dicono un numero per il Punto Unico di Accesso (PUA) di questa provincia: il PUA si chiama «Punto Insieme» e si trova nelle sedi dei distretti.",
     "La pagina «Guardia Medica (sedi territoriali)» elenca solo i nomi delle zone, senza numeri: si usa il 116117.",
-    "Email e PEC dell'URP sono nascoste nella copia della pagina (protezione anti-spam): da copiare a mano dal sito.",
     "Percorso di tutela (copia del 21/10/2026 della pagina «Tempi di attesa e Percorso di Tutela»): se non c'è posto il CUP mette in lista d'attesa e richiama; il percorso di tutela si chiede all'URP aziendale (email e PEC nascoste nella copia); se l'Azienda non lo attiva, si può chiamare il 116117. Senza codice di priorità valgono i tempi della classe D.",
-    "Moduli non ancora accesi (22/10/2026): liste d'attesa (come si chiede il percorso di tutela e a quale indirizzo: le email dell'URP sono nascoste nelle copie), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
+    "URP (copia del 22/10/2026, email in chiaro): urp@uslcentro.toscana.it e PEC urp.uslcentro@postacert.toscana.it, che la pagina «Tempi di attesa e Percorso di Tutela» indica per chiedere il percorso di tutela. In «pec» c'è la PEC dell'URP: la PEC del protocollo generale non è nelle copie."
    ],
-   "emails": [],
+   "emails": [
+    "urp@uslcentro.toscana.it"
+   ],
+   "pec": "urp.uslcentro@postacert.toscana.it",
+   "scelta_medico": {
+    "how": "Puoi cambiare il medico di famiglia o il pediatra online, su Open Toscana (servizio «Cambio medico») o con l'app Toscana Salute, con SPID, CIE o CNS. Puoi usare anche i totem PuntoSì, con la tessera sanitaria attiva, o andare a uno sportello dell'anagrafe sanitaria dell'ASL. Puoi chiederlo anche per email: le informazioni sono sul sito dell'ASL.",
+    "url": "https://www.uslcentro.toscana.it/medico-di-famiglia-e-pediatra-scelta/scelta-e-cambio-del-medico-di-famiglia-o-del-pediatra",
+    "url_label": "Sito dell'ASL Toscana Centro"
+   },
    "pagine": [
     {
      "tipo": "tutela",
@@ -1373,10 +1815,6 @@
      "url": "https://www.uslcentro.toscana.it/medico-di-famiglia-e-pediatra-scelta/scelta-e-cambio-del-medico-di-famiglia-o-del-pediatra"
     },
     {
-     "tipo": "palliative",
-     "url": "https://www.uslcentro.toscana.it/index.php/percorsi-assistenziali/percorso-oncologico/2708-cure-palliative/orari-e-sedi-cure-palliative/50046-zona-pratese-cure-palliative"
-    },
-    {
      "tipo": "protesica",
      "url": "https://www.uslcentro.toscana.it/riabilitazione/ausili-e-protesi/zona-pratese"
     },
@@ -1384,7 +1822,26 @@
      "tipo": "medico",
      "url": "https://www.regione.toscana.it/scegliere-il-medico-di-base"
     }
-   ]
+   ],
+   "channel": "urp",
+   "letter_mode": "email",
+   "send_to": "urp@uslcentro.toscana.it",
+   "how_to": "Prenota al CUP: numero unico 055 545454, sportello, farmacia oppure online su prenota.sanita.toscana.it. Se non c'è posto, il CUP ti mette in lista d'attesa e ti richiama entro i tempi della ricetta. Se la prima visita o il primo esame non arriva nei tempi della priorità, chiedi il «percorso di tutela» all'URP dell'ASL: urp@uslcentro.toscana.it o con la PEC a urp.uslcentro@postacert.toscana.it. Se l'ASL non lo attiva, chiama il 116117 e tieni pronta la prenotazione.",
+   "what_next": [
+    "Il CUP ti richiama per offrirti una data entro i tempi della ricetta.",
+    "Se l'ASL non riesce ad attivare il percorso di tutela, al 116117 prendono la tua segnalazione: serve la prenotazione."
+   ],
+   "details": [
+    "Nell'ASL Toscana Centro, se sulla ricetta non c'è la priorità, valgono i tempi della classe D.",
+    "La visita può essere fatta anche in un posto vicino a casa, nella provincia o nell'area vasta."
+   ],
+   "info_url": "https://www.uslcentro.toscana.it/diagnosi-e-cura/la-prenotazione-di-visite-e-esami/prenotare-un-esame-o-visita/liste-di-attesa",
+   "documents_required": [
+    "Ricetta",
+    "Foglio della prenotazione, se ce l'hai",
+    "Documento d'identità (fotocopia o foto)"
+   ],
+   "notes": []
   },
   {
    "id": "siena",
@@ -1400,6 +1857,11 @@
    "guardia_medica_url": "https://www.uslsudest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica",
    "pua_url": "https://www.uslsudest.toscana.it/servizi-e-strutture/punti-unici-di-accesso-pua",
    "pec": "ausltoscanasudest@postacert.toscana.it",
+   "scelta_medico": {
+    "how": "Puoi cambiare il medico o il pediatra online, con l'app Toscana Salute o sul portale «Cambio medico» della Regione, con SPID, CIE o CNS. Per cambiare medico puoi andare anche in una farmacia che fa il servizio. Per il medico di famiglia puoi chiamare anche il call center dell'ASL: 0575 379100, 0564 972191 o 0577 767676. Per la prima scelta e per i casi con documenti vai allo sportello dell'anagrafe assistiti, con il documento e la tessera sanitaria.",
+    "url": "https://www.uslsudest.toscana.it/come-fare-per/scegliere-il-medico-o-il-pediatra",
+    "url_label": "Sito dell'ASL Toscana Sud Est"
+   },
    "phones": [
     {
      "label": "Centralino dell'Azienda USL Toscana Sud Est – Siena",
@@ -1491,16 +1953,37 @@
     {
      "label": "Regione Toscana – Nuovo numero 116117 della guardia medica",
      "url": "https://www.regione.toscana.it/it/-/nuovo-numero-del-servizio-di-continuit%C3%A0-assistenziale"
+    },
+    {
+     "label": "ASL Toscana Sud Est – Scegliere e cambiare il medico o il pediatra",
+     "url": "https://www.uslsudest.toscana.it/come-fare-per/scegliere-il-medico-o-il-pediatra"
+    },
+    {
+     "label": "ASL Toscana Sud Est – Tempi di attesa",
+     "url": "https://www.uslsudest.toscana.it/tempi-di-attesa"
+    },
+    {
+     "label": "ASL Toscana Sud Est – Attività di tutela (reclami)",
+     "url": "https://www.uslsudest.toscana.it/attivita-di-tutela"
+    },
+    {
+     "label": "ASL Toscana Sud Est – URP",
+     "url": "https://www.uslsudest.toscana.it/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "label": "ASL Toscana Sud Est – Cure palliative",
+     "url": "https://www.uslsudest.toscana.it/percorsi-assistenziali/cure-palliative"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-22",
    "todo": [
     "La pagina dei PUA elenca molti sportelli comunali per zona: qui c'è solo quello del capoluogo; gli altri sono nella pagina «Punti Unici di Accesso».",
-    "Email dell'URP nascoste nella copia della pagina (protezione anti-spam).",
     "Lo 0577 767676 è anche il CUP dell'Azienda Ospedaliero Universitaria Senese (ospedale Le Scotte), secondo la pagina regionale «CUP telefonico».",
-    "Moduli non ancora accesi (22/10/2026): liste d'attesa (come si chiede il percorso di tutela e a quale indirizzo: le email dell'URP sono nascoste nelle copie), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
+    "URP e percorso di tutela (copie del 22/10/2026, email in chiaro): email URP della provincia dalla pagina «Ufficio Relazioni con il Pubblico»; se il CUP non trova posto l'Help Desk prende in carico e ricontatta (pagina «Tempi di attesa»); il reclamo va all'URP (pagina «Attività di tutela»). La pagina non dice cosa vale senza classe di priorità."
    ],
-   "emails": [],
+   "emails": [
+    "urp.siena@uslsudest.toscana.it"
+   ],
    "pagine": [
     {
      "tipo": "tutela",
@@ -1519,10 +2002,6 @@
      "url": "https://www.uslsudest.toscana.it/come-fare-per/scegliere-il-medico-o-il-pediatra"
     },
     {
-     "tipo": "palliative",
-     "url": "https://www.uslsudest.toscana.it/guida-ai-servizi/hospice/provincia-di-siena"
-    },
-    {
      "tipo": "protesica",
      "url": "https://www.uslsudest.toscana.it/come-fare-per/protesi-e-ausili/provincia-di-siena"
     },
@@ -1534,7 +2013,26 @@
      "tipo": "medico",
      "url": "https://www.regione.toscana.it/scegliere-il-medico-di-base"
     }
-   ]
+   ],
+   "channel": "cup",
+   "letter_mode": "fallback",
+   "send_to": "urp.siena@uslsudest.toscana.it",
+   "how_to": "Prenota al CUP: al telefono, allo sportello, in farmacia oppure online su prenota.sanita.toscana.it. Se il CUP non trova posto nei tempi della priorità, l'Help Desk del CUP prende in carico la tua richiesta. Ti richiama quando trova un appuntamento in tempo. Se nessuno ti richiama in tempo, fai un reclamo all'URP: scrivi a urp.siena@uslsudest.toscana.it o con la PEC a ausltoscanasudest@postacert.toscana.it.",
+   "what_next": [
+    "L'Help Desk del CUP ti richiama quando trova un appuntamento nei tempi della ricetta.",
+    "Al reclamo risponde per scritto il Direttore generale dell'ASL, entro 30 giorni (al massimo 60)."
+   ],
+   "details": [
+    "Se scegli una struttura che non ha la prima data libera, l'ASL non deve più darti la visita nei tempi massimi.",
+    "La prima data libera può essere nella tua zona o, per alcune visite, nell'area vasta."
+   ],
+   "info_url": "https://www.uslsudest.toscana.it/tempi-di-attesa",
+   "documents_required": [
+    "Ricetta",
+    "Foglio della prenotazione, se ce l'hai",
+    "Documento d'identità (fotocopia o foto)"
+   ],
+   "notes": []
   }
  ]
 }
