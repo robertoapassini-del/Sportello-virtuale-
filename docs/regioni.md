@@ -182,24 +182,55 @@ di aziende sanitarie. Lo facciamo in tre pezzi, ognuno con un compito solo:
 1. **Un server in Italia scarica.** Molti siti delle ASL non rispondono a chi si collega dall'estero (nel test del
    21/10/2026: dal server italiano 110 pagine su 134 rispondono, dall'estero Messina, Caltanissetta e Ragusa non
    rispondono). Un piccolo server virtuale (Aruba Cloud, data center di Bergamo, `/opt/guidasanita`) lancia ogni
-   notte alle 3:30 `tools/copie.mjs`: legge gli indirizzi ufficiali dai dati regionali (aziende sanitarie e,
-   nella cartella `inps-<regione>`, le pagine delle sedi INPS di `inps.json`) e dei numeri nazionali
+   notte alle 3:30 `tools/copie.mjs`: legge gli indirizzi ufficiali dai dati regionali e dei numeri nazionali
    (`data/numeri.json`, cartella `copie/nazionali/`), salva ogni pagina come
    testo semplice e la carica nel branch **`copie-siti`** (cartella `copie/<regione>/<asl>/`, con `indice.json`:
    indirizzo, codice HTTP, titolo, impronta del testo, se è cambiata). Niente AI qui: è uno script semplice.
+   **Quali indirizzi copia.** Regola semplice: ogni url scritto nei file della regione.
+   - `asl.json` (regione attiva): `site_url`, `info_url`, `form_url`, `portal_url`, `guardia_medica_url`, `pua_url`,
+     `scelta_medico.url` e gli url di `phones[]`, `contacts[]` e `pagine[]` di ogni azienda; gli url di
+     `regole_fonti` in cima al file, nella cartella `regole`.
+   - `inps.json` (regione attiva), nella cartella `inps-<regione>`: la pagina di ogni sede (`provinces[].url`), le fonti
+     del file (`sources[].url`) e le pagine da copiare (`pagine[]`, in cima al file o in una sede). Sono le prove di
+     `regime` e `regime_since`.
+   - `fonti.json`, se c'è, **anche dopo l'attivazione**: ogni azienda nella sua cartella (`asl-roma1`…). Un url già
+     copiato per `asl.json` non si scarica una seconda volta. Solo per le regioni in preparazione il server segue anche
+     i link della homepage.
+   Le cartelle di aziende che non sono più in nessuno di questi file si cancellano a ogni giro (mai `indice.json`,
+   mai la cartella di un'azienda che c'è ancora). Una pagina che non serve più si toglie dal file, non dal server.
+   **`pagine[]`** (in `asl.json` e `fonti.json`): le pagine ufficiali da far copiare, che non hanno un campo loro.
+   Ogni voce è `{ "tipo": "cartelle", "url": "…" }`; `tipo` dice a cosa serve (`tutela`, `cartelle`, `medico`,
+   `protesica`, `palliative`, `casa`, `screening`, `urp`…) e serve solo a chi legge. È la prova dei campi senza numero
+   (`how_to`, `letter_mode`, `what_next`, `scelta_medico.how`): si scrive prima la pagina in `pagine[]`, poi, dopo la
+   copia, il campo. `tools/confronta-copie.mjs` segnala un url di `pagine[]` solo quando la copia c'è stata e non è
+   riuscita (404, errore, CAPTCHA); se l'url non è ancora nell'indice è «da copiare» e non conta.
+   **`regole_fonti`** (in cima ad `asl.json`, Emilia-Romagna, Liguria, Toscana): la prova delle regole regionali
+   in cima al file, un campo per regola: `{ "local_name": { "url", "verified", "proof", "nota" } }`. `nota` riporta
+   la frase della pagina tra «…». Anche questi url si copiano.
+   **Email nascoste ai robot.** Molti siti mostrano l'indirizzo con un piccolo script: curl vedeva solo
+   «[email protected]» (Cloudflare: 123 copie in Sardegna, 3 in Calabria) o «Questo indirizzo email è protetto dagli
+   spambots» (Joomla: URP e PEC delle USL toscane). `tools/email-nascoste.mjs` rimette l'indirizzo in chiaro prima di
+   fare il testo: Cloudflare (`data-cfemail` e i link `/cdn-cgi/l/email-protection#…`, in esadecimale) e Joomla (le
+   variabili `addy…` dello script; in Joomla 4 e 5 il tag `<joomla-hidden-mail>` in base64). Non è superare una
+   protezione: è l'indirizzo che la pagina mostra a chiunque la apra. Nell'indice, `"email_nascoste": N`.
+   **PDF** (moduli di tutela, allegati delle delibere): se sul server c'è `pdftotext`, il PDF si scarica (al massimo
+   5 MB) e se ne salva il testo come per una pagina, con `"pdf": true` nell'indice. Un PDF fatto solo di immagini
+   (scansione) non ha testo: è segnato e basta. Senza `pdftotext` i PDF sono segnati come oggi («file, non
+   controllato»). Si installa una volta: `sudo apt-get install -y poppler-utils`. DOC, XLS e ZIP non si copiano.
    Si presenta con nome e sito nel `User-Agent`, una pagina alla volta, una pausa tra una pagina e l'altra, mai
    portali di prenotazione, login o CAPTCHA. Se un'ASL chiede di smettere, si toglie dalla lista.
    **Copia a richiesta, senza aspettare la notte:** `tools/copie-se-serve.sh` gira sul server ogni 15 minuti.
-   Se in `main` sono cambiati `data/regioni/`, `data/numeri.json`, `tools/copie.mjs` o `tools/copie-richiesta.txt`, rifà subito
+   Se in `main` sono cambiati `data/regioni/`, `data/numeri.json`, `tools/copie.mjs`, `tools/email-nascoste.mjs` o `tools/copie-richiesta.txt`, rifà subito
    la copia con lo stesso comando della notte; altrimenti esce senza fare niente. Basta quindi unire una pull
    request: nessuno deve entrare nel server. Per forzare una copia si cambia `tools/copie-richiesta.txt`.
    Si installa una volta, con una riga in `crontab -e` sul server:
    `*/15 * * * * /opt/guidasanita/tools/copie-se-serve.sh "<comando delle 3:30>" >> /opt/guidasanita/copie-se-serve.log 2>&1`.
    La prima volta che gira fa subito una copia; non parte se un'altra copia è già in corso.
    **Pagine fatte con JavaScript** (es. AST delle Marche, ULSS di Venezia, Azienda sanitaria dell'Alto Adige):
-   scaricate così sono quasi vuote. Se sul server c'è Playwright, `tools/copie.mjs` le riapre in un browser vero
-   (Chromium) e salva il testo che compare (`"browser": true` nell'indice). Si installa una volta, nella cartella
-   del sito: `cd /opt/guidasanita && npm install --no-save playwright && sudo npx playwright install --with-deps chromium`.
+   scaricate così sono quasi vuote. Sul server c'è Playwright (nelle copie del 22/10/2026
+   110 pagine hanno `"browser": true`): `tools/copie.mjs` le riapre in un browser vero (Chromium) e salva il testo
+   che compare. Per reinstallarlo, nella cartella del sito:
+   `cd /opt/guidasanita && npm install --no-save playwright && sudo npx playwright install --with-deps chromium`.
    Le pagine con CAPTCHA o controllo anti-robot non si copiano neanche così: sono segnate nell'indice e vanno
    sostituite con altre pagine ufficiali.
 2. **Claude confronta e propone.** Una routine settimanale di Claude Code (cloud, inclusa nell'abbonamento) legge
@@ -273,7 +304,9 @@ Due controlli prima di accendere un modulo con una lettera all'azienda:
 2. **Indirizzi mancanti → pagine da far copiare al server.** Per ogni campo che manca cerca la pagina ufficiale (solo i
    domini ufficiali dell'azienda, della Regione, delle aziende ospedaliere, dell'INPS) e mettila in `pagine[]`
    dell'azienda (`{ "tipo": "cartelle", "url": "…" }`; `tools/copie.mjs` copia `site_url`, `info_url`, `form_url`,
-   `portal_url`, `guardia_medica_url`, `pua_url`, `contacts[].url` e `pagine[].url`). Il campo resta nel `todo`.
+   `portal_url`, `guardia_medica_url`, `pua_url`, `scelta_medico.url`, `phones[].url`, `contacts[].url` e
+   `pagine[].url`, anche i PDF; sezione 8). Per una regola regionale in cima al file la pagina va in `regole_fonti`; per
+   il regime INPS in `pagine[]` di `inps.json`. Il campo resta nel `todo`.
 3. Unisci la PR: il server copia le pagine nuove entro 15 minuti (`tools/copie-se-serve.sh`).
 4. **Si accende il modulo dopo la copia.** Leggi le copie nuove, riempi i campi, aggiungi il modulo a `moduli`.
    `npm test` dice se manca qualcosa («acceso ma manca …»).

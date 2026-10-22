@@ -6,8 +6,13 @@
 //   2. orari (HH:MM, per esempio 8:30 o 14.30) dei contatti con proof «pagina» che non sono nella copia del loro url;
 //   3. pec e send_to di ogni azienda che non compaiono in nessuna copia di quell'azienda;
 //   4. sedi INPS: pec, indirizzo e orari che non compaiono nella copia della pagina della sede;
-//   5. url dei dati senza copia (pagina non copiata, errore, o non presente nell'indice).
-// I file (PDF, DOC…) non si copiano: si elencano a parte e non contano come problemi.
+//   5. url dei dati senza copia (pagina non copiata, errore, o non presente nell'indice). Per le pagine da copiare
+//      (pagine[] delle aziende, scelta_medico.url, regole_fonti, sources e pagine di inps.json) un url che non è
+//      ancora nell'indice non è un problema: è stato aggiunto dopo l'ultima copia e arriva con la prossima
+//      (tools/copie.mjs mette nell'indice ogni url che riceve, anche quando la pagina non risponde). Diventa un
+//      problema se la copia c'è stata e non è riuscita (404, errore, CAPTCHA).
+// I file (DOC, XLS…) non si copiano: si elencano a parte e non contano come problemi. I PDF si copiano se sul server
+// c'è pdftotext: allora la copia c'è e conta come le altre.
 // Regole in docs/regola-numeri.md e docs/protocollo-test.md.
 //
 // Ogni problema ha una chiave fissa (una riga, per esempio «sicilia/palermo numero 0917031111 https://…»)
@@ -102,6 +107,9 @@ function fattiRegione(reg, dati, inps) {
     for (const k of URL_KEYS) if (a[k]) urls.add(a[k]);
     for (const c of [...(a.phones || []), ...(a.contacts || [])]) if (c.url) urls.add(c.url);
     for (const url of urls) fatti.push({ tipo: 'url', dove, url, chiave: `${dove} url ${normUrl(url)}` });
+    // Le pagine da copiare: prova dei campi senza numero (how_to, letter_mode, scelta_medico…).
+    const daCopiare = [...(a.pagine || []).map((x) => x && x.url), a.scelta_medico && a.scelta_medico.url].filter(Boolean);
+    for (const url of daCopiare) fatti.push({ tipo: 'url', attesa: true, dove, url, chiave: `${dove} url ${normUrl(url)}` });
     for (const c of [...(a.phones || []), ...(a.contacts || [])]) {
       if (c.proof !== 'pagina' || !c.url) continue;
       const etichetta = c.label || c.title || c.topic;
@@ -120,8 +128,18 @@ function fattiRegione(reg, dati, inps) {
       fatti.push({ tipo: 'email', dove, campo: k, valore: v, azienda: a.id, domini, chiave: `${dove} ${k} ${normEmail(v)}` });
     }
   }
+  // Le fonti delle regole regionali in cima al file (regole_fonti: { campo: { url, proof } }), nella cartella «regole».
+  const urlDi = (x) => (typeof x === 'string' ? x : x && x.url);
+  for (const v of Object.values((dati && dati.regole_fonti) || {})) {
+    for (const url of (Array.isArray(v) ? v : [v]).map(urlDi).filter(Boolean)) fatti.push({ tipo: 'url', attesa: true, dove: `${reg.id}/regole`, url, chiave: `${reg.id}/regole url ${normUrl(url)}` });
+  }
+  // inps.json: fonti (sources) e pagine da copiare (pagine, in cima al file o in una sede), prova di «regime».
+  for (const url of [...((inps && inps.sources) || []), ...((inps && inps.pagine) || [])].map(urlDi).filter(Boolean)) {
+    fatti.push({ tipo: 'url', attesa: true, dove: `${reg.id}/inps`, url, chiave: `${reg.id}/inps url ${normUrl(url)}` });
+  }
   // Sedi INPS (data/regioni/<regione>/inps.json): pec, indirizzo e orari nella pagina della sede su inps.it.
   for (const p of (inps && inps.provinces) || []) {
+    for (const url of (p.pagine || []).map(urlDi).filter(Boolean)) fatti.push({ tipo: 'url', attesa: true, dove: `${reg.id}/inps-${p.id}`, url, chiave: `${reg.id}/inps-${p.id} url ${normUrl(url)}` });
     if (!p.url) continue;
     const dove = `${reg.id}/inps-${p.id}`;
     fatti.push({ tipo: 'url', dove, url: p.url, chiave: `${dove} url ${normUrl(p.url)}` });
@@ -170,7 +188,10 @@ function apriCopie(cartella) {
     return cache.get(p.file);
   };
   const copia = (url) => perUrl.get(normUrl(url));
-  return { pagine, copia, testo, testoDi: (url) => testo(copia(url)) };
+  // Cartelle che l'indice non nomina (di un giro vecchio): tools/copie.mjs le rimette nell'indice o le toglie al prossimo giro.
+  const nominate = new Set(pagine.map((p) => p.asl));
+  const orfane = fs.readdirSync(path.join(COPIE, cartella), { withFileTypes: true }).filter((d) => d.isDirectory() && !nominate.has(d.name)).map((d) => d.name);
+  return { pagine, copia, testo, testoDi: (url) => testo(copia(url)), orfane };
 }
 
 // Un fatto contro le copie: il messaggio del problema, «file» per un file non copiato, oppure null.
@@ -178,6 +199,7 @@ function controlla(f, c) {
   if (f.tipo === 'url') {
     const p = c.copia(f.url);
     if (FILE.test(f.url)) return c.testo(p) ? null : 'file';
+    if (!p && f.attesa) return 'attesa';
     if (!p) return `url senza copia (non è nell'indice): ${f.url}`;
     if (!c.testo(p)) return `url senza copia (${p.http || p.errore || p.nota || 'nessun file'}): ${f.url}`;
     return null;
@@ -211,6 +233,7 @@ const avvisi = [];
 for (const g of gruppi) {
   const lista = [];
   const fileNonCopiati = [];
+  const inAttesa = [];
   const manca = g.manca();
   const c = manca ? null : apriCopie(g.id);
   if (manca) lista.push({ chiave: `${g.id} dati mancanti`, testo: manca });
@@ -223,17 +246,23 @@ for (const g of gruppi) {
       visti.add(f.chiave);
       const m = controlla(f, c);
       if (m === 'file') fileNonCopiati.push(`${f.dove}: ${f.url}`);
+      else if (m === 'attesa') inAttesa.push(`${f.dove}: ${f.url}`);
       else if (m) lista.push({ chiave: f.chiave, tipo: f.tipo, testo: `${f.dove.replace(/^[^/]+\//, '')}: ${m}` });
     }
   }
   for (const p of lista) problemi.push({ ...p, gruppo: g });
   riepilogo.push(`${g.id}: ${lista.length}`);
-  if (lista.length || fileNonCopiati.length) {
+  if (c && c.orfane.length) avvisi.push(`${g.nome}: cartelle che l'indice delle copie non nomina, non lette: ${c.orfane.join(', ')}. La prossima copia le rimette nell'indice, se l'azienda è ancora in un file della regione (anche fonti.json), oppure le toglie.`);
+  if (lista.length || fileNonCopiati.length || inAttesa.length) {
     console.log(`\n== ${g.nome} (${g.id}): ${lista.length} ${lista.length === 1 ? 'problema' : 'problemi'}`);
     for (const p of lista) console.log(`  - ${p.testo}`);
     if (fileNonCopiati.length) {
       console.log(`  File non copiati (da controllare a mano, non contano): ${fileNonCopiati.length}`);
       for (const f of fileNonCopiati) console.log(`    · ${f}`);
+    }
+    if (inAttesa.length) {
+      console.log(`  Pagine da copiare aggiunte dopo l'ultima copia (arrivano con la prossima, non contano): ${inAttesa.length}`);
+      for (const f of inAttesa) console.log(`    · ${f}`);
     }
   }
 }

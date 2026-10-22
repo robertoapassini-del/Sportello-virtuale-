@@ -13,6 +13,9 @@ jobs:
   # tutte le combinazioni di risposte (anche con il fuso orario di New York), Numeri utili provincia per provincia
   # in ogni regione attiva, telefoni vecchi e reti lente (senza JavaScript, senza dati, 640x360 al 200%), lettere stampate,
   # copiate e mandate per email.
+  # Tre job in parallelo (in serie erano 25 minuti): «browser» (pagine, robustezza, Numeri utili, telefoni vecchi,
+  # lettere), «combinazioni» (fuso di Roma) e «combinazioni-ny» (fuso di New York).
+  # Ogni tests/*.cjs deve stare in uno di questi job: lo controlla tests/workflow.test.mjs.
   # Regole in docs/protocollo-test.md.
   browser:
     runs-on: ubuntu-latest
@@ -29,13 +32,35 @@ jobs:
       - name: Sito in locale
         run: python3 -m http.server 8080 >/dev/null 2>&1 &
       - run: node tests/browser.cjs http://localhost:8080/
-      - run: node tests/combinazioni.cjs http://localhost:8080/
-      # Le stesse combinazioni con un altro fuso orario (Node e browser): il conto dei giorni non deve cambiare.
-      - run: TZ=America/New_York TZID=America/New_York node tests/combinazioni.cjs http://localhost:8080/
       - run: node tests/robustezza.cjs http://localhost:8080/
       - run: node tests/numeri-province.cjs http://localhost:8080/
       - run: node tests/telefoni-vecchi.cjs http://localhost:8080/
       - run: node tests/lettere-stampa.cjs http://localhost:8080/
+  combinazioni:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-save --no-package-lock playwright@1.49.1
+      - run: npx playwright install --with-deps chromium
+      - name: Sito in locale
+        run: python3 -m http.server 8080 >/dev/null 2>&1 &
+      - run: node tests/combinazioni.cjs http://localhost:8080/
+  # Le stesse combinazioni con un altro fuso orario (Node e browser): il conto dei giorni non deve cambiare.
+  combinazioni-ny:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install --no-save --no-package-lock playwright@1.49.1
+      - run: npx playwright install --with-deps chromium
+      - name: Sito in locale
+        run: python3 -m http.server 8080 >/dev/null 2>&1 &
+      - run: TZ=America/New_York TZID=America/New_York node tests/combinazioni.cjs http://localhost:8080/
   # I dati contro le copie notturne delle pagine ufficiali (branch copie-siti, tools/copie.mjs).
   # Blocca solo i problemi nuovi sui dati che la PR cambia: un numero, una PEC, un indirizzo di invio, un orario
   # o una sede INPS che la copia della pagina ufficiale non conferma. Non bloccano: i problemi già noti
