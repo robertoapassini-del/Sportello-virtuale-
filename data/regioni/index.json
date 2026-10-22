@@ -10,7 +10,7 @@
     { "id": "friuli-venezia-giulia", "name": "Friuli-Venezia Giulia", "attiva": true, "asl_label": "Azienda sanitaria", "moduli": ["numeri-utili", "invalidita"] },
     { "id": "lazio", "name": "Lazio", "in": "nel Lazio", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili", "invalidita"] },
     { "id": "liguria", "name": "Liguria", "attiva": true, "asl_label": "ATS", "moduli": ["numeri-utili", "invalidita", "medico-famiglia"] },
-    { "id": "lombardia", "name": "Lombardia", "attiva": true, "asl_label": "ATS", "moduli": ["numeri-utili"] },
+    { "id": "lombardia", "name": "Lombardia", "attiva": true, "asl_label": "ATS", "moduli": ["numeri-utili", "invalidita"] },
     { "id": "marche", "name": "Marche", "in": "nelle Marche", "attiva": false, "asl_label": "AST" },
     { "id": "molise", "name": "Molise", "attiva": true, "asl_label": "ASREM", "moduli": ["numeri-utili", "invalidita", "cartella-clinica", "assistenza-domiciliare", "medico-famiglia"] },
     { "id": "piemonte", "name": "Piemonte", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili", "invalidita"] },
