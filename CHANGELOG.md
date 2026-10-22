@@ -5,6 +5,7 @@ Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 ## 22/10/2026 — Lombardia: invalidità accesa; controllo sul regime INPS
 - `data/regioni/index.json`: Lombardia con `invalidita` (il regime della riforma per le 12 sedi INPS è nel `inps.json`, dal gruppo del Nord; prima restava spenta solo perché un test la voleva bloccata).
 - `tests/coerenza.test.mjs`: una regione con l'invalidità accesa deve avere il regime («new» o «old») in ogni sede INPS.
+- `tests/browser.cjs`: il controllo «conto senza uffici» prova solo i moduli che la Lombardia non ha ancora acceso.
 
 ## 22/10/2026 — Piemonte, Valle d'Aosta, Lombardia, Trentino-Alto Adige, Friuli-Venezia Giulia, Veneto: dati per i moduli e le lettere
 - Valle d'Aosta: accesi «Liste d'attesa» e «Medico di famiglia» (`data/regioni/index.json`, «moduli»). Percorso di tutela dalla pagina USL «Tempi di attesa» (https://www.ausl.vda.it/tempi-d-attesa/tempi-di-attesa, copia del server del 21/10/2026): si chiede al CUP (0165 548387) o agli sportelli CUP, «lista di galleggiamento», visita anche fuori regione in un centro privato convenzionato, chi rifiuta la data esce dalla lista. Senza un indirizzo dedicato la lettera si porta all'URP o al CUP. Scelta del medico dalla pagina «Scelta e revoca» (copia del 22/10/2026): cambio online nel FSE, sportelli dei distretti dal lunedì al venerdì 8–14, modulo anche con la PEC protocollo@pec.ausl.vda.it.
