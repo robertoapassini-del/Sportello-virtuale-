@@ -6,8 +6,8 @@ trova uno nuovo, si aggiunge un controllo che lo avrebbe preso.
 ## Prima di cambiare qualcosa
 
 1. Leggi le regole che toccano quello che cambi: [regola-numeri.md](regola-numeri.md) (numeri di telefono),
-   [regola-cifre.md](regola-cifre.md) (giorni, euro, età), [regioni.md](regioni.md) (dati regionali) e la regola
-   nazionale qui sotto.
+   [regola-cifre.md](regola-cifre.md) (giorni, euro, età), [regioni.md](regioni.md) (dati regionali), [regola-italiano.md](regola-italiano.md) (italiano semplice:
+   Gulpease, frasi corte, parole da ufficio, verbi attivi) e la regola nazionale qui sotto.
 2. Nessun fatto nuovo senza fonte ufficiale: ogni cifra o regola va nei file `data/` con `provenienza`
    (url, data, tipo di prova). Una regola di legge si cita con articolo e comma letti sul testo, non a memoria.
 3. Chi cambia `data/regioni/` o `data/numeri.json` lancia `node tools/confronta-copie.mjs <cartella-copie> <regione>` sulle copie delle
@@ -32,7 +32,7 @@ scritto (`tests/telefoni-vecchi.cjs`).
 
 | Comando | Cosa controlla |
 |---|---|
-| `npm test` | dati, numeri e fonti (`contatti`, `provenienza`, `cifre`: anche nel titolo e nella descrizione, con l'unità giusta), pagine aggiornate (`pagine`, anche la 404, fonti mai vuote, niente «noindex»), link interni (`link`), citazioni di legge rilette (`citazioni` + `tests/citazioni.txt`), lettere senza segnaposto (`lettere`), calcoli e festivi (`engine`), testi nazionali (`nazionale`), errori già visti (`errori-noti`), ricerca (`ricerca`: 40 parole → modulo giusto) |
+| `npm test` | dati, numeri e fonti (`contatti`, `provenienza`, `cifre`: anche nel titolo e nella descrizione, con l'unità giusta), pagine aggiornate (`pagine`, anche la 404, fonti mai vuote, niente «noindex»), link interni (`link`), citazioni di legge rilette (`citazioni` + `tests/citazioni.txt`), lettere senza segnaposto (`lettere`), calcoli e festivi (`engine`), testi nazionali (`nazionale`), errori già visti (`errori-noti`), ricerca (`ricerca`: 40 parole → modulo giusto), italiano semplice (`leggibilita`: Gulpease ≥ 60 per pagina e ≥ 65 per modulo, frasi fino a 40 parole, niente parole da ufficio) |
 | `node tests/browser.cjs <indirizzo>` | tutte le pagine in un browser (Sicilia, Lazio, nessuna regione) e i percorsi dei moduli: errori JavaScript, «undefined», pagine troppo larghe (anche con il testo al 250%), pulsanti sotto i 44 px, tastiera (primo Tab, contorno del focus, errori dei campi collegati), stampa (titolo, pulsanti), frasi siciliane senza «Sicilia» |
 | `node tests/combinazioni.cjs <indirizzo>` | tutte le combinazioni di risposte nei moduli, confrontate con un calcolo indipendente; nella CI anche con il fuso orario di New York (`TZ=America/New_York TZID=America/New_York`) |
 | `node tools/confronta-copie.mjs <cartella-copie> [regione…\|nazionali]` | i dati contro le copie notturne delle pagine ufficiali (branch `copie-siti`): cifre dei numeri con prova «pagina» (regionali e `data/numeri.json`) e orari HH:MM dei contatti con prova «pagina» che non sono nella copia del loro url, PEC e indirizzi di invio che non sono in nessuna copia dell'azienda, PEC, indirizzo e orari delle sedi INPS (`inps.json`) che non sono nella copia della pagina della sede, url senza copia. Nella CI è il job «copie», con `--noti tests/copie-noti.txt --base origin/main`: diventa rosso (codice 3) solo per un problema nuovo su un dato che la PR ha cambiato; i problemi già noti, quelli su dati uguali a main («non di questa PR»: è cambiata la pagina ufficiale) e gli url nuovi senza copia vanno solo nel riepilogo del job |
@@ -111,3 +111,6 @@ tutti i controlli verdi.
   d'inizio bloccato dopo un errore nello script, «Un momento…» per sempre in `fonti.html` senza JavaScript, menu che
   usciva dallo schermo a 640x360 con il testo al 200%, pagina nascosta 1,5 secondi), in `pagine.test.mjs` il
   `modulepreload` di tutti i moduli della pagina, un secondo giro di `combinazioni.cjs` con il fuso di New York.
+- 22/10/2026 (giro 8) — audit dell'italiano semplice: `tests/leggibilita.test.mjs` ([regola-italiano.md](regola-italiano.md)).
+  9 pagine avevano un Gulpease sotto 60 (ausili, cure fuori regione, dentista, accompagnamento, RSA), 13 frasi
+  superavano le 40 parole, la privacy diceva «ai sensi dell'art. 22 GDPR».

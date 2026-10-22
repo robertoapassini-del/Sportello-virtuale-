@@ -22,7 +22,7 @@ const whatIs = () => `
     <li><strong>Dove prendi la medicina:</strong> molte medicine con il piano non si prendono come le altre. A volte si ritirano alla <strong>farmacia dell'${aslLabel()}</strong> («distribuzione diretta»). Altre volte le dà la tua farmacia <strong>per conto dell'${aslLabel()}</strong> («DPC»): la farmacia la ordina e di solito arriva in un giorno o due. Chiedi al medico o al farmacista quale vale per la tua medicina.</li>
     <li><strong>Prima che scada</strong> serve una nuova visita dallo specialista per rinnovarlo. Se scade, il medico non può più fare la ricetta con il Servizio sanitario.</li>
   </ol>
-  <div class="notice warn"><p>⚠️ La visita per il rinnovo è una <strong>visita di controllo</strong>: può avere tempi lunghi e non c'è la garanzia dei tempi massimi. Per questo va prenotata con largo anticipo, almeno ${rules.book_before_days} giorni prima.</p></div>
+  <div class="notice warn"><p>⚠️ La visita per il rinnovo è una <strong>visita di controllo</strong>: può avere tempi lunghi e non c'è la garanzia dei tempi massimi. Per questo prenotala con largo anticipo, almeno ${rules.book_before_days} giorni prima.</p></div>
   <details class="card">
     <summary>Se la visita non si trova in tempo</summary>
     <ul class="clean">

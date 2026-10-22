@@ -25,7 +25,7 @@ const howToGet = () => `
     <li><strong>Se non c'è, vai allo sportello esenzioni dell'${aslLabel()}</strong> (nel distretto o al CUP) con tessera sanitaria e carta d'identità. Firmi un foglio in cui dichiari il reddito (autocertificazione). È gratis. <a href="../numeri-utili/">📍 Dov'è lo sportello nella tua provincia</a></li>
     <li><strong>Quando prenoti, di' che hai l'esenzione.</strong> Deve essere scritta sulla ricetta, altrimenti il ticket lo paghi.</li>
   </ol>
-  <div class="notice warn"><p>⚠️ L'esenzione vale fino al <strong>${esc(rules.valid_until)}</strong>, poi va controllata di nuovo (alcune Regioni la prorogano: chiedi all'${aslLabel()}). Se dichiari un reddito falso, devi restituire i soldi e paghi una multa.</p></div>`;
+  <div class="notice warn"><p>⚠️ L'esenzione vale fino al <strong>${esc(rules.valid_until)}</strong>, poi devi controllarla di nuovo (alcune Regioni la prorogano: chiedi all'${aslLabel()}). Se dichiari un reddito falso, devi restituire i soldi e paghi una multa.</p></div>`;
 
 const otherExemptions = () => `
   <details class="card">
