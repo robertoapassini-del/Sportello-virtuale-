@@ -20,3 +20,11 @@ test('i comandi della CI su una riga non hanno «: » né « #»', () => {
   }
   assert.deepEqual(errori, []);
 });
+
+// Ogni controllo nel browser (tests/*.cjs) gira nella CI: togliere una riga da test.yml spegne un controllo in silenzio.
+test('ogni tests/*.cjs è lanciato dal job browser della CI', () => {
+  const yml = readFileSync(new URL('test.yml', DIR), 'utf8');
+  const mancano = readdirSync(new URL('../tests/', import.meta.url)).filter((f) => f.endsWith('.cjs'))
+    .filter((f) => !new RegExp(`node tests/${f.replace('.', '\\.')} `).test(yml));
+  assert.deepEqual(mancano, []);
+});

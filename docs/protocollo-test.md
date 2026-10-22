@@ -138,3 +138,4 @@ già in elenco. Chiunque può rifarli: ogni riga dice quale file cambiare e come
   «Ricomincia da capo»; in `combinazioni.cjs` lettera delle liste d'attesa (nome con < > &, data della firma, stampa,
   sollecito allo stesso indirizzo), destinatario di cure palliative e assistenza a casa, ricorso giorno per giorno da
   150 a 186 giorni, TAR della cartella al giorno 29, 30 e 31. Elenco dei mutanti in `docs/mutanti.md`.
+- 22/10/2026 (giro 9) — terzo audit dei mutanti: 20 su 22 presi. `workflow.test.mjs` controlla che ogni test col browser sia nella CI (un test tolto dalla CI non lo vedeva nessuno); `leggibilita.test.mjs` legge anche i testi dei dati regionali e di `numeri.json`; in `engine.test` il sabato.

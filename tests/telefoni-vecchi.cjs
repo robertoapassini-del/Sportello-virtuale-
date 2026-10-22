@@ -80,6 +80,9 @@ const MODI = [
       } else {
         await page.waitForFunction(() => document.documentElement.classList.contains('pronto'), null, { timeout: 3000 }).catch(() => {});
         await page.waitForTimeout(300);
+        // fonti.html carica i dati di tutte le regioni (80 richieste): su una macchina carica «Un momento…» resta
+        // qualche istante in più. Si aspetta fino a 3 secondi; se resta ancora, è il difetto «per sempre».
+        await page.waitForFunction(() => { const app = document.getElementById('app') || document.querySelector('main') || document.body; return !/(^|\n)\s*Un momento/.test(app.innerText); }, null, { timeout: 3000 }).catch(() => {});
       }
       const r = await page.evaluate(leggibile);
       if (!r.h1) problemi.push(`${dove}: il titolo non si vede`);

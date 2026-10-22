@@ -443,3 +443,14 @@ test('cartella clinica: ricorso al TAR dopo 30 giorni di silenzio, entro altri 3
   assert.equal(from, '2026-10-01');
   assert.equal(addDays(from, rc.appeal_days), '2026-10-31');
 });
+
+// Audit dei mutanti, giro 9 (22/10/2026): un sabato contato come giorno lavorativo lo vedeva solo combinazioni.cjs.
+test('il termine che cade di sabato passa al lunedì', async () => {
+  const { primoGiornoUtile, ricorsoDeadline } = await import('../js/engine.js');
+  assert.equal(primoGiornoUtile('2026-10-24'), '2026-10-26'); // sabato → lunedì
+  assert.equal(primoGiornoUtile('2026-10-25'), '2026-10-26'); // domenica → lunedì
+  assert.equal(primoGiornoUtile('2026-10-23'), '2026-10-23'); // venerdì resta
+  const r = ricorsoDeadline(load('../data/rules-ricorso.json'), { verbaleDate: '2026-04-24', today: '2026-10-01' });
+  assert.equal(r.deadline, '2026-10-26');
+  assert.equal(r.slittato, true);
+});

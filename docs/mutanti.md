@@ -87,3 +87,35 @@ e passa senza.
 | N28 | pagine.mjs: il link «‹ indietro» del telefono porta sempre a Inizio (trail[0]) | `tools/pagine.mjs` (rigenera) | `const up = trail[trail.length - 1];` → `const up = trail[0];` | `coerenza` («‹ indietro») |
 | N29 | pagine.mjs: «Informazioni controllate il» con la data più recente invece della più vecchia | `tools/pagine.mjs` (rigenera) | `Informazioni controllate il ${dateIt(dates[0])}` → `Informazioni controllate il ${dateIt(dates[dates.length - 1])}` | `coerenza` («Informazioni controllate il») |
 | N30 | pagine.mjs: «Condividi su WhatsApp» manda l'indirizzo della home invece di quello della pagina | `tools/pagine.mjs` (rigenera) | `` \n${url}`;⏎  const guide `` → `` \n${base}`;⏎  const guide `` | `coerenza` (WhatsApp) |
+
+## Giro 9 (22/10/2026): P01-P22
+
+Terzo giro, sul codice dopo i giri 5-8: 20 errori presi su 22 (91%). I 2 mancanti ora li prendono controlli nuovi.
+Le modifiche precise sono in `mut.py` dell'audit; qui la descrizione.
+
+| Id | Errore | File | Lo prende |
+|---|---|---|---|
+| P01 | showError non segna il campo con aria-invalid | `js/flow.js` | browser.cjs |
+| P02 | showError scrive l'errore ma lo lascia nascosto | `js/flow.js` | combinazioni.cjs |
+| P03 | moveToTop anche alla prima schermata | `js/flow.js` | browser.cjs (primo Tab) |
+| P04 | avvisoErrore senza la classe errore-js | `js/common.js` | telefoni-vecchi.cjs |
+| P05 | il gestore degli errori conta solo quelli di altri siti | `js/common.js` | telefoni-vecchi.cjs |
+| P06 | modulepreload senza la radice del sito | `tools/pagine.mjs` | link.test |
+| P07 | lo script in testa perde il #… dell'indirizzo | `tools/pagine.mjs` | head-script.test |
+| P08 | la classe della stampa della guida non si toglie | `js/common.js` | lettere-stampa.cjs |
+| P09 | Ctrl+P sul modulo di Palermo stampa tutta la pagina | `js/common.js` | lettere-stampa.cjs |
+| P10 | ogni tutore o amministratore firma come «tutore» | `js/letters.js` | lettere.test |
+| P11 | il genitore non è nominato nella firma | `js/letters.js` | lettere.test |
+| P12 | «dott. Dott. Rossi» (titolo maiuscolo non riconosciuto) | `js/letters.js` | lettere.test |
+| P13 | «Distretto – Distretto» con «Distretto» senza spazio dopo | `js/letters.js` | errori-noti |
+| P14 | l'indirizzo email accetta «?» nel dominio | `js/letters.js` | lettere.test |
+| P15 | ?torna= senza controllo del sito | `js/numeri.js` | robustezza.cjs |
+| P16 | ?torna= con pathname invece di href | `js/numeri.js` | robustezza.cjs |
+| P17 | il sabato contato come giorno lavorativo | `js/engine.js` | combinazioni.cjs; ora anche engine.test |
+| P18 | Pasqua un giorno dopo (Pasquetta di martedì) | `js/engine.js` | engine.test |
+| P19 | numero della Sicilia con regione «lazio» | `data/numeri.json` | contatti.test |
+| P20 | regione senza uffici: avviso vuoto al posto di regionMissing() | `js/flow.js` | browser.cjs |
+| P21 | tolto dalla CI il giro di lettere-stampa.cjs | `.github/workflows/test.yml` | prima nessuno; ora workflow.test |
+| P22 | testi di numeri.json in linguaggio da ufficio | `data/numeri.json` | prima nessuno; ora leggibilita.test |
+
+Andamento: giro 5 presi 4 su 30, giro 6 presi 6 su 30, giro 9 presi 20 su 22.

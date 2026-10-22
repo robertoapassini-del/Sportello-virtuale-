@@ -188,9 +188,34 @@ function unita() {
   }
   return out;
 }
+const DATI = [];
+function datiTesti() {
+  // I testi dei dati che il sito mostra così come sono (numeri.json, data/regioni/*/*.json): campi what, note, text, notes.
+  const dati = (f) => {
+    const sents = [];
+    let inNotes = false;
+    const giro = (x, k0) => {
+      inNotes = k0 === 'notes';
+      if (Array.isArray(x)) x.forEach((y) => giro(y, k0));
+      else if (x && typeof x === 'object') for (const [k, v] of Object.entries(x)) { if (typeof v === 'string' && /^(what|note|text|hours_note)$/.test(k)) sents.push(...sentences(stripHtml(v, 1))); else giro(v, k); }
+      else if (typeof x === 'string' && inNotes) sents.push(...sentences(stripHtml(x, 1)));
+    };
+    giro(JSON.parse(readFileSync(ROOT + f, 'utf8')));
+    DATI.push({ id: f, sents });
+  };
+  dati('data/numeri.json');
+  for (const r of readdirSync(ROOT + 'data/regioni', { withFileTypes: true })) if (r.isDirectory()) for (const f of readdirSync(ROOT + 'data/regioni/' + r.name)) if (f.endsWith('.json')) dati(`data/regioni/${r.name}/${f}`);
+  return DATI;
+}
 function readdirJs() { return readdirSync(ROOT + 'js').filter((f) => f.endsWith('.js') && !JS_ESCLUSI.has(f)); }
 
 const U = unita();
+datiTesti();
+test('Niente parole da ufficio nei testi dei dati mostrati sul sito', () => {
+  const bad = [];
+  for (const u of DATI) for (const s of u.sents) { let t = s.text; for (const a of AMMESSI) t = t.replace(a, ' '); for (const j of VIETATE) { const m = t.match(j.re); if (m) bad.push(`${u.id} «${m[0]}» → meglio «${j.meglio}»`); } }
+  assert.deepEqual(bad, [], bad.join('\n'));
+});
 
 test('Gulpease per pagina sopra la soglia', () => {
   const bad = [];
