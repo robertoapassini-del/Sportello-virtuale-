@@ -2,6 +2,12 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 22/10/2026 — Audit notturno, giro 9: terzo giro di errori messi apposta
+- 22 errori nuovi sul codice dei giri 5-8: i test ne prendevano 20. Nuovi controlli per i 2 mancanti: `tests/workflow.test.mjs` controlla che ogni `tests/*.cjs` sia lanciato dalla CI; `tests/leggibilita.test.mjs` controlla le parole da ufficio anche nei testi di `data/numeri.json` e `data/regioni/`.
+- `tests/engine.test.mjs`: un termine che cade di sabato passa al lunedì (prima lo vedeva solo `combinazioni.cjs`).
+- `tests/telefoni-vecchi.cjs`: su fonti.html si aspetta fino a 3 secondi che «Un momento…» sparisca (sotto carico falliva senza motivo).
+- `docs/mutanti.md`: i 22 errori del giro 9.
+
 ## 22/10/2026 — Audit notturno, giro 6: altri 30 errori messi apposta
 - Secondo audit dei mutanti: 30 errori nuovi messi apposta nel sito (diversi da quelli del giro 5), i controlli ne prendevano 6. Ora li prendono tutti e 30. Elenco dei due giri, con il controllo che prende ogni errore, in `docs/mutanti.md`; in `docs/protocollo-test.md` la regola: dopo ogni gruppo di controlli nuovi, un audit con errori nuovi.
 - Nuovo `tests/coerenza.test.mjs`: i link scritti nei JavaScript portano a pagine che esistono; nelle regioni attive id e province non ripetuti, una sede INPS per ogni azienda, topic dei contatti conosciuti da `js/numeri.js`, `asl_label` per ogni regione; una regione senza «moduli» ha i dati di tutti i moduli e il file INPS; ogni pagina del sito è nella sitemap; la stessa legge non ha due anni diversi; ogni pulsante ha un nome; il link «‹ indietro» porta al livello sopra; «Informazioni controllate il» è la data più vecchia dei dati del modulo; «Condividi su WhatsApp» manda l'indirizzo della pagina; nessuna parola della ricerca sparita (elenco in `tests/ricerca-parole.txt`, 419 righe; `PAROLE=scrivi npm test` lo rifà).
