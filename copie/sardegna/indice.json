@@ -1,6 +1,6 @@
 {
  "regione": "sardegna",
- "aggiornato": "2026-10-22T08:18:50.898Z",
+ "aggiornato": "2026-10-22T09:59:34.831Z",
  "pagine": [
   {
    "asl": "cagliari",
@@ -9,9 +9,10 @@
    "http": 200,
    "file": "cagliari/195fa6391501.txt",
    "titolo": "ASL Cagliari - Home Page",
-   "sha": "2ab45a471f4d58ca5d154ab1ccbb24985d3ad449bf8dd7dac1ecf58cb3f3bec8",
-   "caratteri": 5442,
-   "cambiata": false
+   "sha": "d08538026681f56957af4766de480b007d5df83733675180c653b4b9cb908288",
+   "caratteri": 5454,
+   "email_nascoste": 2,
+   "cambiata": true
   },
   {
    "asl": "cagliari",
@@ -20,9 +21,10 @@
    "http": 200,
    "file": "cagliari/4f32606a46ba.txt",
    "titolo": "Servizio di Continuità assistenziale (Ex Guardia Medica) - ASL Cagliari",
-   "sha": "4fea3745986dd37659ea8d4aca68e50d63bdc84eb383f37c9c6978ffa66a9474",
-   "caratteri": 16026,
-   "cambiata": false
+   "sha": "d9e8405ddb57f077e496ddac9c120f553f4af7b711517e2b5b8a510437580958",
+   "caratteri": 16152,
+   "email_nascoste": 3,
+   "cambiata": true
   },
   {
    "asl": "cagliari",
@@ -31,9 +33,10 @@
    "http": 200,
    "file": "cagliari/bf7bb677d53c.txt",
    "titolo": "Assistenza Domiciliare Integrata (ADI) - ASL Cagliari",
-   "sha": "3cd0e76ea693666fb4d5d44266d3c5d3e70d376d9002f5ac45c044e4314fcf25",
-   "caratteri": 7065,
-   "cambiata": false
+   "sha": "4ec3cf0e221c8d93baeeafee7f96d5c5e92f6885952bc690c151d97085ccdd30",
+   "caratteri": 7238,
+   "email_nascoste": 11,
+   "cambiata": true
   },
   {
    "asl": "cagliari",
@@ -42,20 +45,10 @@
    "http": 200,
    "file": "cagliari/ff0125a81f9e.txt",
    "titolo": "Contatti - ASL Cagliari",
-   "sha": "e6da399eaa3fc96538f3cd1137b6f00cb2b799bf81aa38115c370ae11f835f7b",
-   "caratteri": 4577,
-   "cambiata": false
-  },
-  {
-   "asl": "cagliari",
-   "url": "https://www.asl8cagliari.it/come_fare_per/prenotare-una-visita-o-esame/",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "cagliari/f39381d19ec5.txt",
-   "titolo": "Prenotare una visita o esame - ASL Cagliari",
-   "sha": "56f3e7cb20fb20719e39922ca9a4e5043e823ef251b7df8484b727efac6e45f0",
-   "caratteri": 4138,
-   "cambiata": false
+   "sha": "2536201ffa1b3e3f679890d8f1f79599189821b06649385667b02a5b2d1cc612",
+   "caratteri": 4709,
+   "email_nascoste": 7,
+   "cambiata": true
   },
   {
    "asl": "cagliari",
@@ -64,9 +57,22 @@
    "http": 200,
    "file": "cagliari/4ea2258905e3.txt",
    "titolo": "Ufficio Relazioni con Pubblico - ASL Cagliari",
-   "sha": "26edf3746f15abddccf54ef9272149c487795d2d9b5383fe1894555de9b0545d",
-   "caratteri": 4990,
-   "cambiata": false
+   "sha": "33ff0dc0508b5e4616bf3124b2b64904b10c87689301beec8dadeaa139fa64b8",
+   "caratteri": 5089,
+   "email_nascoste": 5,
+   "cambiata": true
+  },
+  {
+   "asl": "cagliari",
+   "url": "https://www.asl8cagliari.it/come_fare_per/prenotare-una-visita-o-esame/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "cagliari/f39381d19ec5.txt",
+   "titolo": "Prenotare una visita o esame - ASL Cagliari",
+   "sha": "97fe79f857d9e188138500edf672ee4dce6879c4216269eee4a76e4c9cfc9e9c",
+   "caratteri": 4259,
+   "email_nascoste": 3,
+   "cambiata": true
   },
   {
    "asl": "cagliari",
@@ -75,8 +81,9 @@
    "http": 200,
    "file": "cagliari/2f0705c51e24.txt",
    "titolo": "Percorso Tutela accesso alternativo alle prestazioni specialistiche - ASL Cagliari",
-   "sha": "1040f72ba4a52baae8179e28a3b073052531020ca9269923d18fec82fec86cf8",
-   "caratteri": 6253,
+   "sha": "bcfb49a9a326b9e0e1a0b83e94cf4e8b562fa166d3f2070eb69a4fa8080888db",
+   "caratteri": 6399,
+   "email_nascoste": 3,
    "cambiata": true
   },
   {
@@ -86,8 +93,9 @@
    "http": 200,
    "file": "cagliari/06c00a935580.txt",
    "titolo": "Accedere al Percorso di Tutela - ASL Cagliari",
-   "sha": "950b9c479a3d2a36c30e1a912930f5d2b5a693ebcc6a2e3f30492e9dc1356365",
-   "caratteri": 5664,
+   "sha": "93ab47a8b05c3046d23503f202c2d44c77dd09df7875ccfce53fa72b1160ff8f",
+   "caratteri": 5786,
+   "email_nascoste": 3,
    "cambiata": true
   },
   {
@@ -97,8 +105,9 @@
    "http": 200,
    "file": "cagliari/5b713d605d4e.txt",
    "titolo": "Scelta e revoca del medico online - ASL Cagliari",
-   "sha": "ae6c2c88066c50132528be750325b1552a8d173e4c55c5f20e085f1ffff18e14",
-   "caratteri": 8470,
+   "sha": "3ca94b592ef9511ad5fc5632bd66af1a31164b9877e7097495652db370442eeb",
+   "caratteri": 8874,
+   "email_nascoste": 31,
    "cambiata": true
   },
   {
@@ -110,7 +119,7 @@
    "titolo": "Sardegna Salute - Scelta e revoca del medico",
    "sha": "2443e17836290666b01537c5cbbe55807b0dd7f6cb9b37fe8494781cccb331e2",
    "caratteri": 3616,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "gallura",
@@ -130,9 +139,10 @@
    "http": 200,
    "file": "gallura/e59f6f06ea78.txt",
    "titolo": "Guardia Medica - ASL Gallura",
-   "sha": "45fed6f86377a9b2d4c38459c13913172dfe558ebd3e7c72ffed20d10cdf035a",
-   "caratteri": 4729,
-   "cambiata": false
+   "sha": "3eaa9ca6684a0f0275af3fc4c1ca13b29f576e218d5576f76d197406ca92f019",
+   "caratteri": 4815,
+   "email_nascoste": 1,
+   "cambiata": true
   },
   {
    "asl": "gallura",
@@ -141,20 +151,10 @@
    "http": 200,
    "file": "gallura/6019120e9b5c.txt",
    "titolo": "Punto Unico di Accesso - ASL Gallura",
-   "sha": "2bfe6ad1193102f9e00f5192c8f49f4776f49276f2b7b58dacfa01ae3e37205d",
-   "caratteri": 4053,
-   "cambiata": false
-  },
-  {
-   "asl": "gallura",
-   "url": "https://www.aslgallura.it/come_fare_per/prenotare-visite-ed-esami-con-il-cup/",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "gallura/bcce872b98da.txt",
-   "titolo": "Prenotare visite ed esami - ASL Gallura",
-   "sha": "fa6b7f4804be26d5f72ae494ea9fdc29f8ac24c0d5b2515857d5ae1b2aecd22f",
-   "caratteri": 3161,
-   "cambiata": false
+   "sha": "5615e91c59d8a20138ae7bbb81faa937b6fe755b02ff2e68127dc7fc46c57924",
+   "caratteri": 4146,
+   "email_nascoste": 5,
+   "cambiata": true
   },
   {
    "asl": "gallura",
@@ -163,9 +163,22 @@
    "http": 200,
    "file": "gallura/85ad89799fb3.txt",
    "titolo": "Ufficio Relazioni con il Pubblico - ASL Gallura",
-   "sha": "6560ce19c841e3f9867a2d58771775c777635acbc013e1cc001e13cc1ef0e9b0",
-   "caratteri": 2370,
-   "cambiata": false
+   "sha": "4412de3473a9755c76da107a8b661fa4562dde4064960b20a9eaaa95cfaa7009",
+   "caratteri": 2452,
+   "email_nascoste": 3,
+   "cambiata": true
+  },
+  {
+   "asl": "gallura",
+   "url": "https://www.aslgallura.it/come_fare_per/prenotare-visite-ed-esami-con-il-cup/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "gallura/bcce872b98da.txt",
+   "titolo": "Prenotare visite ed esami - ASL Gallura",
+   "sha": "1388d34e418f2e83c3cd61f08ec394b6b3b1cc80560cd0c5ed0763acdedda5e2",
+   "caratteri": 3276,
+   "email_nascoste": 1,
+   "cambiata": true
   },
   {
    "asl": "gallura",
@@ -174,9 +187,10 @@
    "http": 200,
    "file": "gallura/7b00b87e226d.txt",
    "titolo": "Assistenza Domiciliare Integrata (ADI) - ASL Gallura",
-   "sha": "baa2d450b6b6cbd62605657849ed26f1a5cab8f877466b1f94ea80d228d40d98",
-   "caratteri": 3611,
-   "cambiata": false
+   "sha": "fe65ad47e0998654ef7bd28126c292556c79a8a327d4f7871aa368f1ad09a4e0",
+   "caratteri": 3734,
+   "email_nascoste": 5,
+   "cambiata": true
   },
   {
    "asl": "gallura",
@@ -185,8 +199,9 @@
    "http": 200,
    "file": "gallura/620fbf3dd69b.txt",
    "titolo": "Scelta e Revoca del Medico - ASL Gallura",
-   "sha": "1523e770cd422fb7dbf88f3363ba02d91a9216410728b7dd54d6401b8b0dc3aa",
-   "caratteri": 4571,
+   "sha": "bf06a0d7448b13c20151620b2f0fad877bfad51b9ebe68366f8e9e651106cace",
+   "caratteri": 4737,
+   "email_nascoste": 11,
    "cambiata": true
   },
   {
@@ -196,9 +211,10 @@
    "http": 200,
    "file": "medio-campidano/65e99d67910c.txt",
    "titolo": "ASL Medio Campidano - Home Page",
-   "sha": "16f659e28b7df74756ce894d6cb456ef286ab57717b2aa2912e741f0af7ece8c",
-   "caratteri": 6684,
-   "cambiata": false
+   "sha": "bcae7314646aabb45534e4ddc741ab163448c61abe6897977e0a0658bc105bb3",
+   "caratteri": 6717,
+   "email_nascoste": 4,
+   "cambiata": true
   },
   {
    "asl": "medio-campidano",
@@ -207,9 +223,10 @@
    "http": 200,
    "file": "medio-campidano/bb2eb256451f.txt",
    "titolo": "Punto Unico di Accesso, Pua - ASL Medio Campidano",
-   "sha": "fda86ba4bb67288a746276e4bdf7faa55c6d8b6127889ba8741b527d56940d1c",
-   "caratteri": 6516,
-   "cambiata": false
+   "sha": "181082639df844b454c5ad8a39adc60fa302702114e22908c05529b649a5ab0c",
+   "caratteri": 6702,
+   "email_nascoste": 11,
+   "cambiata": true
   },
   {
    "asl": "medio-campidano",
@@ -218,20 +235,10 @@
    "http": 200,
    "file": "medio-campidano/8697871a64c9.txt",
    "titolo": "Contatti - ASL Medio Campidano",
-   "sha": "e1c254d70eff82c75ec405a46d8d5a45be12b39aa441be49a48e09e70bf3db93",
-   "caratteri": 1781,
-   "cambiata": false
-  },
-  {
-   "asl": "medio-campidano",
-   "url": "https://www.aslmediocampidano.it/come_fare_per/prenotare-visite-ed-esami/",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "medio-campidano/6f839e4d4d1c.txt",
-   "titolo": "Prenotare visite ed esami - ASL Medio Campidano",
-   "sha": "6aae59f18de83775a2e0091794baf6c858113c97380cd1e56a19065872a37ccd",
-   "caratteri": 9260,
-   "cambiata": false
+   "sha": "e4017de3f3a9a973c7b9eff4865e5f9af5794b3ef83ed484072f4e2ca78c4157",
+   "caratteri": 2015,
+   "email_nascoste": 11,
+   "cambiata": true
   },
   {
    "asl": "medio-campidano",
@@ -240,9 +247,22 @@
    "http": 200,
    "file": "medio-campidano/a060fa8beda0.txt",
    "titolo": "Ufficio Relazioni con il Pubblico - ASL Medio Campidano",
-   "sha": "99d2a76e7c45fa224626cf80c60590286cf293be52b06a31ace41fc1ee021aec",
-   "caratteri": 2953,
-   "cambiata": false
+   "sha": "0e88161ddcbe12e7f2b7162212ad393619f75a84a5ddeea6ca25364cd9387422",
+   "caratteri": 3111,
+   "email_nascoste": 7,
+   "cambiata": true
+  },
+  {
+   "asl": "medio-campidano",
+   "url": "https://www.aslmediocampidano.it/come_fare_per/prenotare-visite-ed-esami/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "medio-campidano/6f839e4d4d1c.txt",
+   "titolo": "Prenotare visite ed esami - ASL Medio Campidano",
+   "sha": "107f4429184d265127bd80a11be20d5b7d894d8f66d6ca3d6e4e3b8ff71a72c2",
+   "caratteri": 9425,
+   "email_nascoste": 7,
+   "cambiata": true
   },
   {
    "asl": "medio-campidano",
@@ -251,9 +271,10 @@
    "http": 200,
    "file": "medio-campidano/d0b6dc8fb9cb.txt",
    "titolo": "Assistenza Domiciliare Integrata - ASL Medio Campidano",
-   "sha": "3e659b38705149c4299e5108816d44f835ace67fe9b32d42703e07a7ceebfb5f",
-   "caratteri": 5453,
-   "cambiata": false
+   "sha": "feca55aacb0ef907a0bf17c77034a70e76e8eb270523b29dc87de004ba89cb6a",
+   "caratteri": 5556,
+   "email_nascoste": 5,
+   "cambiata": true
   },
   {
    "asl": "medio-campidano",
@@ -262,8 +283,9 @@
    "http": 200,
    "file": "medio-campidano/80ad61abf0cc.txt",
    "titolo": "Percorso di tutela, accesso alternativo a prestazioni specialistiche - ASL Medio Campidano",
-   "sha": "f489c934f231fb53fcf745b0f609d4fcd29f3254ff710015a833e0f32bdff221",
-   "caratteri": 8712,
+   "sha": "2d36d894895893a6e6dec9ffc4b5fdf2f57ac990556683a31bf3aeb179480ca3",
+   "caratteri": 8918,
+   "email_nascoste": 9,
    "cambiata": true
   },
   {
@@ -284,8 +306,9 @@
    "http": 200,
    "file": "nuoro/98e6ff5311fa.txt",
    "titolo": "Percorso di tutela di accesso alternativo alle prestazioni specialistiche - ASL Nuoro",
-   "sha": "325be0d4c4fbbeaed17826045d8ff01705bb9443871a75d5072336e983747ac9",
-   "caratteri": 8615,
+   "sha": "ae5b17f5950adb243dfa89be49ff18fb6a64f33a6c3b9de63e19e94723e14b7f",
+   "caratteri": 8775,
+   "email_nascoste": 8,
    "cambiata": true
   },
   {
@@ -295,9 +318,10 @@
    "http": 200,
    "file": "nuoro/2e4ebb2ce8cc.txt",
    "titolo": "ASL Nuoro. Il nuovo numero per chiamare la Guardia medica - ASL Nuoro",
-   "sha": "93a60446f069148023aa9c162474cd2e33c4400ec501e627bb77774848b43ecb",
-   "caratteri": 2582,
-   "cambiata": false
+   "sha": "ff9a7a14441739e214cca0d0bb797d08ec28985a5dd0716dd50721cecde1ea26",
+   "caratteri": 2702,
+   "email_nascoste": 1,
+   "cambiata": true
   },
   {
    "asl": "nuoro",
@@ -306,9 +330,10 @@
    "http": 200,
    "file": "nuoro/ee76374a1b62.txt",
    "titolo": "PUA Nuoro - ASL Nuoro",
-   "sha": "0c4d48bafd44f288775541d73d6c654e3a6cefa70a271a6555229495ff398619",
-   "caratteri": 2766,
-   "cambiata": false
+   "sha": "713bf1d4ae17fcf48eb8d1cfc955d04c15b2a98d5e85aa8240fc5a338c3c8d61",
+   "caratteri": 2945,
+   "email_nascoste": 13,
+   "cambiata": true
   },
   {
    "asl": "nuoro",
@@ -317,9 +342,10 @@
    "http": 200,
    "file": "nuoro/0fb230c088d1.txt",
    "titolo": "Contatti - ASL Nuoro",
-   "sha": "1f8d34aee6ce268133b3ab4a60e280f0006a31c3f8bfc5468399759fb233f729",
-   "caratteri": 2258,
-   "cambiata": false
+   "sha": "65d6418153ad1923b9dc39dfa15ca0adac90607bb8f4e8f96cff780afde553fc",
+   "caratteri": 2364,
+   "email_nascoste": 7,
+   "cambiata": true
   },
   {
    "asl": "nuoro",
@@ -328,9 +354,10 @@
    "http": 200,
    "file": "nuoro/1a7ce59197d3.txt",
    "titolo": "Assistenza Domiciliare Integrata (ADI) - ASL Nuoro",
-   "sha": "1ef78801b6e84c34d0761722c3df1d15354827177ed63f146b592a9d663e408a",
-   "caratteri": 8200,
-   "cambiata": false
+   "sha": "4f95b388a4a92527ad7a2e004ebaa6da8ea6f59d4ffde37e39ed9bfc6c51a04d",
+   "caratteri": 8499,
+   "email_nascoste": 43,
+   "cambiata": true
   },
   {
    "asl": "nuoro",
@@ -339,8 +366,9 @@
    "http": 200,
    "file": "nuoro/58c3bc38e23d.txt",
    "titolo": "Scelta e Revoca del Medico - ASL Nuoro",
-   "sha": "a3689f41818a401d582956f4fda9da75f19d612277893c59782c1f88e5ffcfd0",
-   "caratteri": 6014,
+   "sha": "8ea53d0b2e35df0aabd2cd7dcd92d84f6294d0af06eb22e0cb3fa39aa0d346ad",
+   "caratteri": 6217,
+   "email_nascoste": 21,
    "cambiata": true
   },
   {
@@ -350,8 +378,9 @@
    "http": 200,
    "file": "nuoro/d18769f8d9c2.txt",
    "titolo": "Hospice e Cure Palliative - ASL Nuoro",
-   "sha": "1999e7ba3db89cd2401312d133bbe567e65f376ba5b3af545e0cec3810309bf2",
-   "caratteri": 4937,
+   "sha": "79a803f8475df34801e1af42a1f207ede3105a44f076c32cd8300d953ff0f35f",
+   "caratteri": 5032,
+   "email_nascoste": 7,
    "cambiata": true
   },
   {
@@ -361,9 +390,10 @@
    "http": 200,
    "file": "ogliastra/bc22f9e6e85d.txt",
    "titolo": "ASL Ogliastra - Home Page",
-   "sha": "08eb50563f9a0fff5f83f27715b5702d6c97cbbab6a06b678905903bb7d36a39",
-   "caratteri": 4036,
-   "cambiata": false
+   "sha": "7361f6baf0cae18ea950bf29cefc9026167be7cdf409a7a2f2577c5128f95bd9",
+   "caratteri": 4049,
+   "email_nascoste": 2,
+   "cambiata": true
   },
   {
    "asl": "ogliastra",
@@ -372,9 +402,10 @@
    "http": 200,
    "file": "ogliastra/7bf4671f2b0c.txt",
    "titolo": "Guardie mediche, dal 23 agosto sedi raggiungibili tramite il 116 117 - ASL Ogliastra",
-   "sha": "2a2145389feee90952a4705dd4b4ff6cb9e126574ca9f710710b0e374254af7d",
-   "caratteri": 3535,
-   "cambiata": false
+   "sha": "83f1299cfe5452d58e802f4364c357171890193952ea3b2f0207e59e612f8708",
+   "caratteri": 3700,
+   "email_nascoste": 3,
+   "cambiata": true
   },
   {
    "asl": "ogliastra",
@@ -383,9 +414,10 @@
    "http": 200,
    "file": "ogliastra/831178e60c0c.txt",
    "titolo": "Punto unico di accesso - PUA - ASL Ogliastra",
-   "sha": "f273aaf4c35c58b41267be91d367a86a2813ac7febac141989810418b2dcd3ab",
-   "caratteri": 3731,
-   "cambiata": false
+   "sha": "0aeb1dc76a620b1d85f2d78c39b727d67a8e464d5c3f018283fabceb02892b4e",
+   "caratteri": 3874,
+   "email_nascoste": 9,
+   "cambiata": true
   },
   {
    "asl": "ogliastra",
@@ -394,9 +426,10 @@
    "http": 200,
    "file": "ogliastra/fb45ad35c97d.txt",
    "titolo": "Contatti generali - ASL Ogliastra",
-   "sha": "843c1ce1898cd3c95bc58beaa88f4b01393c15803e8a391b9b5dec3071724dc0",
-   "caratteri": 2119,
-   "cambiata": false
+   "sha": "bcefa8bc2fbc36f68c7772b49c5018d4511c1cb534079326b1607416620cf786",
+   "caratteri": 2288,
+   "email_nascoste": 10,
+   "cambiata": true
   },
   {
    "asl": "ogliastra",
@@ -405,9 +438,10 @@
    "http": 200,
    "file": "ogliastra/4ae7fdffac8e.txt",
    "titolo": "Prenotare visite ed esami - CUP - ASL Ogliastra",
-   "sha": "b970c9420240cffb8161b4c11f339e94198937b8a82d19998389b889ada35d0a",
-   "caratteri": 7119,
-   "cambiata": false
+   "sha": "e6b6e9bae62f7e32a91cedeed9299f3aad77cdd3b7c60d9ea45bb82ece8c2a3c",
+   "caratteri": 7412,
+   "email_nascoste": 37,
+   "cambiata": true
   },
   {
    "asl": "oristano",
@@ -416,9 +450,10 @@
    "http": 200,
    "file": "oristano/766feec05db7.txt",
    "titolo": "Home Page - ASL Oristano",
-   "sha": "2accf7cc51ded5d2123c9e699f923d1e64b7e6cc5de83d13028e226513bf063b",
-   "caratteri": 7446,
-   "cambiata": false
+   "sha": "49d485e17eee9f3ed9455af8226850c8b6424128637b81a1766650560b1a5de9",
+   "caratteri": 7474,
+   "email_nascoste": 2,
+   "cambiata": true
   },
   {
    "asl": "oristano",
@@ -427,9 +462,10 @@
    "http": 200,
    "file": "oristano/5bfa99714961.txt",
    "titolo": "Guardie mediche - ASL Oristano",
-   "sha": "762ec30e2d5005f3cf7bf68940c1f47becd9bffdd3b557ace0c432d1f03c3123",
-   "caratteri": 9880,
-   "cambiata": false
+   "sha": "68653a421c59fbce0c73250e245eaa4f5915e3b4a5352cddeb3b8b2d12fc1512",
+   "caratteri": 10003,
+   "email_nascoste": 3,
+   "cambiata": true
   },
   {
    "asl": "oristano",
@@ -438,20 +474,10 @@
    "http": 200,
    "file": "oristano/1a7a41b70619.txt",
    "titolo": "Punto Unico di Accesso - Oristano - ASL Oristano",
-   "sha": "96c15575ce3d83aca4fa646e8d060dd830f6edee54aab3314e752ea3f1562fb8",
-   "caratteri": 2639,
-   "cambiata": false
-  },
-  {
-   "asl": "oristano",
-   "url": "https://www.areus.sardegna.it/116117-anche-a-oristano-ecco-come-funziona/",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "oristano/e1dea346636b.txt",
-   "titolo": "116117 anche a Oristano, ecco come funziona - AREUS - Azienda Regionale Emergenza Urgenza Sardegna",
-   "sha": "d0957c301e72b1df8acdaf74eb2e700c8527cd9fce9f0261d7412f2a9680a591",
-   "caratteri": 4948,
-   "cambiata": false
+   "sha": "c42af17c8fe0e081380b97de5a9c36921c7a09dd50e3fcb86d501b47da298982",
+   "caratteri": 2768,
+   "email_nascoste": 4,
+   "cambiata": true
   },
   {
    "asl": "oristano",
@@ -460,9 +486,22 @@
    "http": 200,
    "file": "oristano/f083ddb16edf.txt",
    "titolo": "Contatti - ASL Oristano",
-   "sha": "4163cd55fe717dede48a5ff28ca59b0f3848f09b8dd4184c0f2a71b4c03ee076",
-   "caratteri": 2572,
-   "cambiata": false
+   "sha": "3cf67184c2fd73ee1f8d79112901e814e5c15e43c8ba2b7dbb802940440a2949",
+   "caratteri": 2728,
+   "email_nascoste": 8,
+   "cambiata": true
+  },
+  {
+   "asl": "oristano",
+   "url": "https://www.areus.sardegna.it/116117-anche-a-oristano-ecco-come-funziona/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "oristano/e1dea346636b.txt",
+   "titolo": "116117 anche a Oristano, ecco come funziona - AREUS - Azienda Regionale Emergenza Urgenza Sardegna",
+   "sha": "46043f0ac7a7dd0c8cc7bdda3f0528d4cdd646fcdea31a552404e8467407133d",
+   "caratteri": 5082,
+   "email_nascoste": 3,
+   "cambiata": true
   },
   {
    "asl": "oristano",
@@ -471,9 +510,10 @@
    "http": 200,
    "file": "oristano/e0b9248535c4.txt",
    "titolo": "Prenotare visite ed esami al Centro Unico di Prenotazione (CUP) - ASL Oristano",
-   "sha": "86a86570e7c5b0a35fb1ee0450c6fdd8a1590982b107cc5f3f7878472e211eae",
-   "caratteri": 5668,
-   "cambiata": false
+   "sha": "38b5584408a06f6e054b0429b4d976f5567314efe36b74effb14effcf12f5a5b",
+   "caratteri": 5785,
+   "email_nascoste": 3,
+   "cambiata": true
   },
   {
    "asl": "oristano",
@@ -482,8 +522,9 @@
    "http": 200,
    "file": "oristano/5d6b1ca93f54.txt",
    "titolo": "Scelta e Revoca del Medico e del Pediatria - ASL Oristano",
-   "sha": "f63632fd9fa0416344fd624789a5479673e1c4399e2b4ead29ffac271018c426",
-   "caratteri": 6936,
+   "sha": "8c24512d6695d1fd3c6046dc9a7a86dfea72aeb0b6d8681c260b6c052924fc4a",
+   "caratteri": 7176,
+   "email_nascoste": 19,
    "cambiata": true
   },
   {
@@ -493,9 +534,10 @@
    "http": 200,
    "file": "sassari/02311b0ebe08.txt",
    "titolo": "ASL Sassari - Home Page",
-   "sha": "01b8e99f4d36c683b23467028470f34b65c664ec02d9d9a4b10e2d76925a45a2",
-   "caratteri": 4257,
-   "cambiata": false
+   "sha": "324b778cabf6c8ee6ba45b68e3ca446c3eef8b1a706aa06e9f67c14ed9e15189",
+   "caratteri": 4230,
+   "email_nascoste": 4,
+   "cambiata": true
   },
   {
    "asl": "sassari",
@@ -504,20 +546,10 @@
    "http": 200,
    "file": "sassari/6959c17f5dcb.txt",
    "titolo": "Nella ASL di Sassari arriva il Numero 116117 - AREUS - Azienda Regionale Emergenza Urgenza Sardegna",
-   "sha": "ad84c81d4d5025395ba4980a6e4a82607af17a3963aa242616926143db5bcfcd",
-   "caratteri": 4839,
-   "cambiata": false
-  },
-  {
-   "asl": "sassari",
-   "url": "https://www.asl1sassari.it/servizio/centro-unico-di-prenotazione-cup/",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "sassari/247c577a0f1a.txt",
-   "titolo": "Prenotare visite ed esami: Centro unico di prenotazione (Cup) - ASL Sassari",
-   "sha": "67ee0b7d7f52b195c5a0ed767177c611f9dee21d7855997078a4d5859b1fdc13",
-   "caratteri": 5174,
-   "cambiata": false
+   "sha": "a5ee33ff104fdfec3bb9db88293191511b22d9c9da0a285dbe71adb4c98facc8",
+   "caratteri": 4975,
+   "email_nascoste": 3,
+   "cambiata": true
   },
   {
    "asl": "sassari",
@@ -526,9 +558,22 @@
    "http": 200,
    "file": "sassari/9289b769df2a.txt",
    "titolo": "Ufficio relazioni con il pubblico (URP) e Contatti della ASL - ASL Sassari",
-   "sha": "de8573a82830988283c9c3e2ab0bc0f3956c8ffce02139cee3c549262fc1af1b",
-   "caratteri": 5446,
-   "cambiata": false
+   "sha": "9f364c634cfe714dca28408866471eaa59b4d586b2cfd7fb9d4a2b9938ce334c",
+   "caratteri": 5699,
+   "email_nascoste": 23,
+   "cambiata": true
+  },
+  {
+   "asl": "sassari",
+   "url": "https://www.asl1sassari.it/servizio/centro-unico-di-prenotazione-cup/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "sassari/247c577a0f1a.txt",
+   "titolo": "Prenotare visite ed esami: Centro unico di prenotazione (Cup) - ASL Sassari",
+   "sha": "db7e3d18e142a786406fe3e12283d70fea5ebe91286b97b18bafa99ffb498faa",
+   "caratteri": 5340,
+   "email_nascoste": 13,
+   "cambiata": true
   },
   {
    "asl": "sassari",
@@ -537,8 +582,9 @@
    "http": 200,
    "file": "sassari/a776b2c9c855.txt",
    "titolo": "Il Percorso di Tutela: la strada per supportare il cittadino - ASL Sassari",
-   "sha": "744eee2e0f9872114aaa60fd70191738886edc9a9b62fe4f0b576c5fda1b631b",
-   "caratteri": 4692,
+   "sha": "3eb3506406533a50a20b9fa69c48b3b89e6ab17740957682dbd65266db1e60be",
+   "caratteri": 4843,
+   "email_nascoste": 7,
    "cambiata": true
   },
   {
@@ -548,8 +594,9 @@
    "http": 200,
    "file": "sassari/cdd409403003.txt",
    "titolo": "Asl Sassari: apre l’Hospice San Giovanni Battista - ASL Sassari",
-   "sha": "e1c2a7cb8f2b74964508c5315016dfd7c0357315f432e2ae4ef71ba9c00e4439",
-   "caratteri": 11544,
+   "sha": "a70e2d53ef13a4cee572c34e84cc2ad87f356fd34e21a37afb0c9a95258324a9",
+   "caratteri": 11683,
+   "email_nascoste": 5,
    "cambiata": true
   },
   {
@@ -559,9 +606,10 @@
    "http": 200,
    "file": "sulcis/55c25c410a03.txt",
    "titolo": "Home Page - ASL Sulcis Iglesiente",
-   "sha": "c9194fc42c116b06b6fe6917bb990454cc5bfba49896dd847e8f668501f1133e",
-   "caratteri": 5049,
-   "cambiata": false
+   "sha": "273ba8b43b034c7e70c1fa6dd0aadeef31ec82f743f2e82ca02c49d142577e9b",
+   "caratteri": 5059,
+   "email_nascoste": 2,
+   "cambiata": true
   },
   {
    "asl": "sulcis",
@@ -570,9 +618,10 @@
    "http": 200,
    "file": "sulcis/9199f210830f.txt",
    "titolo": "Dal 23 agosto il numero unico 116117 per la Continuità Assistenziale - ASL Sulcis Iglesiente",
-   "sha": "5baf1bf59c7783c2be1fe78b66aea5a39f5fd54a91726fb0bc329f592fa86521",
-   "caratteri": 2313,
-   "cambiata": false
+   "sha": "a846dc22ab060472871c6b8bbbc36d804e0197f0fb9a99db0b4e42ecfd58b0e3",
+   "caratteri": 2455,
+   "email_nascoste": 3,
+   "cambiata": true
   },
   {
    "asl": "sulcis",
@@ -581,9 +630,10 @@
    "http": 200,
    "file": "sulcis/9df4b75532af.txt",
    "titolo": "Sportello PUA attivo nel Distretto di Carbonia San Ponziano - ASL Sulcis Iglesiente",
-   "sha": "0ff139e50ed3f132a632fcf650b555a8b6290b454ad9c153152d555360f399a7",
-   "caratteri": 3338,
-   "cambiata": false
+   "sha": "4d69e3a5c32e6157724b830176b5839aa960a0aa6925308e58761fd01a50a7f0",
+   "caratteri": 3469,
+   "email_nascoste": 3,
+   "cambiata": true
   },
   {
    "asl": "sulcis",
@@ -592,9 +642,10 @@
    "http": 200,
    "file": "sulcis/07fca3d99ae7.txt",
    "titolo": "Contatti - Ufficio Relazione con il Pubblico (URP) - ASL Sulcis Iglesiente",
-   "sha": "1e3a1e0d7e3f76de4fd09b240fe832c314af450b28419c967fd355e6c12708b9",
-   "caratteri": 2996,
-   "cambiata": false
+   "sha": "eef7997f0bbead7ebf281aca707915c607d7ef1bb35b79021509ddb5016e5710",
+   "caratteri": 3511,
+   "email_nascoste": 47,
+   "cambiata": true
   },
   {
    "asl": "sulcis",
@@ -603,9 +654,10 @@
    "http": 200,
    "file": "sulcis/6f1a427fb04c.txt",
    "titolo": "CUP e Liste di Attesa - ASL Sulcis Iglesiente",
-   "sha": "d84824e4c29f5799d1cfc686b3004f16f505552a6402ce35054b7e9d552748bf",
-   "caratteri": 3980,
-   "cambiata": false
+   "sha": "dd786883b2d00bea63b0873df586186b19a14e1416a5b5b6caf6c2ec645f1f54",
+   "caratteri": 4097,
+   "email_nascoste": 5,
+   "cambiata": true
   },
   {
    "asl": "sulcis",
@@ -614,9 +666,10 @@
    "http": 200,
    "file": "sulcis/b5dc51f65194.txt",
    "titolo": "ADI - Assistenza Domiciliare Integrata - ASL Sulcis Iglesiente",
-   "sha": "b624ddad7d4ec7af846197ed57bd1565088d05525e2d4c77ea9c77c6aa75e5b3",
-   "caratteri": 5677,
-   "cambiata": false
+   "sha": "fa64d4f7094e99104023ef967739653d122533404bbb21f4faa0ebb867d5d9b2",
+   "caratteri": 5853,
+   "email_nascoste": 17,
+   "cambiata": true
   },
   {
    "asl": "sulcis",
@@ -625,8 +678,9 @@
    "http": 200,
    "file": "sulcis/0a8d79fd5bc8.txt",
    "titolo": "Scelta / Revoca - Esenzioni - ASL Sulcis Iglesiente",
-   "sha": "53de44f6dd8f7109ec9e551817e8cb7d6c82ffeefdfd22844019d074d0d14170",
-   "caratteri": 6591,
+   "sha": "12d6d319679510ba13bbd06313a09faf026d426522f3ee551889b49e3c405062",
+   "caratteri": 6903,
+   "email_nascoste": 23,
    "cambiata": true
   },
   {
@@ -716,6 +770,516 @@
    "sha": "6ba683b8a482ab8439de8cb4ebfc3c7096eec8b5e6d098f6742fd112b809da3d",
    "caratteri": 43006,
    "cambiata": false
+  },
+  {
+   "asl": "inps-sardegna",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2024.12.accertamento-della-disabilit-avvio-sperimentazione-della-riforma.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-sardegna/f9d950ca5afd.txt",
+   "titolo": "Portale Inps - Accertamento della disabilità: avvio sperimentazione della riforma",
+   "sha": "e142a9ccf3c2a809c6080bb33dade841589f19254f3d8d8ff51d820a290be3e5",
+   "caratteri": 45287,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-sardegna",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2025.09.riforma-della-disabilit-in-avvio-la-seconda-fase-di-sperimentazione.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-sardegna/3962e31a95f6.txt",
+   "titolo": "Portale Inps - Riforma della disabilità: in avvio la seconda fase di sperimentazione",
+   "sha": "6698f070cca78d40267be0187ea8a2d874ab66cc9e2c337891c01c83da3df5f3",
+   "caratteri": 44351,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-sardegna",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-sardegna/aad63b63390a.txt",
+   "titolo": "Portale Inps - Riforma della disabilità: al via la terza fase sperimentale",
+   "sha": "3e22d1cf04da5a9b152d4fd5f6033e4b4b86d0937bfc137d142d7c9ec25bd108",
+   "caratteri": 46281,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-sardegna",
+   "url": "https://www.sardegnasalute.it/index.php?xsl=316&s=9&v=9&c=2934&esp=1",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-sardegna/86c18936519e.txt",
+   "titolo": "Sardegna Salute - Come fare per - Prenotare visite ed esami",
+   "sha": "02e4e58e82b521a975d70a5ea5f14e32b69d1042db820399739b906197c76de9",
+   "caratteri": 3641,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-sardegna",
+   "url": "https://www.sardegnasalute.it/index.php?xsl=313&s=272651&v=2&c=3436",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-sardegna/b8277a30d48c.txt",
+   "titolo": "Sardegna Salute - Notizie - Archivio notizie",
+   "sha": "36088c1be264950d7a0fc01f2f36223e75c2a549f293cebf3afa67a5ffec5eed",
+   "caratteri": 7039,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-sardegna",
+   "url": "https://www.sardegnasalute.it/index.php?xsl=313&s=345223&v=2&c=3436",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-sardegna/bc340ef430a9.txt",
+   "titolo": "Sardegna Salute - Notizie - Archivio notizie",
+   "sha": "d998f5c5cfc91e28e9fdd334db0a9e876d19985730517a914f2d4ce96fa54e40",
+   "caratteri": 1180,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-sardegna",
+   "url": "https://cupweb.sardegnasalute.it/en/aiuto",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-sardegna/5dae24b1e42b.txt",
+   "titolo": "Aiuto - CupWeb",
+   "sha": "a65d12c13b50f7b2af75cd918dd838ad43e96354ebd52a139e4531b945eb10d5",
+   "caratteri": 19023,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-sardegna",
+   "url": "https://www.sardegnasalute.it/index.php?c=2946&n=10&na=1&qr=1&s=9&v=9&xsl=316",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-sardegna/2a0599566fb3.txt",
+   "titolo": "Sardegna Salute - Assistenza - Guardie mediche",
+   "sha": "b211c8606fabb9b11348459983873126719770ea6ad7062201437406ea686146",
+   "caratteri": 3216,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-sardegna",
+   "url": "https://www.areus.sardegna.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-sardegna/15d6a481a6e4.txt",
+   "titolo": "Home Page - AREUS - Azienda Regionale Emergenza Urgenza Sardegna",
+   "sha": "9022d0a03a7634ce6f61dc32366e4c45a01fff317f004923dc4fb1329331a568",
+   "caratteri": 3580,
+   "email_nascoste": 2,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-sardegna",
+   "url": "https://www.areus.sardegna.it/areus-attiva-116117/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-sardegna/dc9c7f370fdb.txt",
+   "titolo": "AREUS attiva 116117 - AREUS - Azienda Regionale Emergenza Urgenza Sardegna",
+   "sha": "06cd6866bfd51eae7dbeebd0838512b70efff3da4013ad49bbdf00ab16a4b89f",
+   "caratteri": 6137,
+   "email_nascoste": 3,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-sardegna",
+   "url": "https://www.areus.sardegna.it/116117-attivo-in-asl-gallura/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-sardegna/b07123ad1b91.txt",
+   "titolo": "116117 attivo in ASL Gallura - AREUS - Azienda Regionale Emergenza Urgenza Sardegna",
+   "sha": "1ce94ae558424164f93e1d04008a725ba6a76c83c63a4bf3a43b98afb03f5b22",
+   "caratteri": 6494,
+   "email_nascoste": 3,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-sardegna",
+   "url": "https://www.areus.sardegna.it/a-nuoro-e-attivo-il-nea116117/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-sardegna/c8b139c1058f.txt",
+   "titolo": "A Nuoro è attivo il NEA116117 - AREUS - Azienda Regionale Emergenza Urgenza Sardegna",
+   "sha": "42d687d333366e1c6b86d9cdd5ef4e8035aa78e6380feb8ad2d04ac1f68ff988",
+   "caratteri": 4764,
+   "email_nascoste": 3,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-sardegna",
+   "url": "https://www.regione.sardegna.it/notizie/areus-ha-avviato-nella-asl-sulcis-iglesiente-il-nuovo-servizio-116117-per-le-cure-mediche-non-urgenti",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-sardegna/cd0557855766.txt",
+   "titolo": "Notizie dalla Regione - AREUS ha avviato nella ASL Sulcis Iglesiente il nuovo servizio 116117 per le cure mediche non urgenti - Regione Autonoma della Sardegna",
+   "sha": "5fd0f8dd94f3eb6a99d849671fb13d514918285858f9cc473bf680a19ab0ab68",
+   "caratteri": 3715,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-sardegna",
+   "url": "https://www.sardegnasalute.it/index.php?xsl=316&s=9&v=9&c=10670&na=1&n=10",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-sardegna/75695e308647.txt",
+   "titolo": "Sardegna Salute - Come fare per - Utilizzare il fascicolo sanitario elettronico",
+   "sha": "f1867cfc6e16ad3ea2ef6f5e539f32d92068e764092d27c72575db2d42ada496",
+   "caratteri": 7143,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-sardegna",
+   "url": "https://www.regione.sardegna.it/servizi/accesso-ai-servizi-on-line/indice-dei-servizi/fascicolo-sanitario-elettronico-2-0",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-sardegna/1ced7bc4693f.txt",
+   "titolo": "Fascicolo Sanitario Elettronico 2.0 - Regione Autonoma della Sardegna",
+   "sha": "0701bd1a25991f25e8bd97fdd2db3f56e8369edecfb4bc06a822a40a08066e13",
+   "caratteri": 2571,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-sardegna",
+   "url": "https://fse20.sardegnasalute.it/domande-frequenti",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "file": "regione-sardegna/3ab61e64ae1d.txt",
+   "titolo": "FSE",
+   "sha": "0935aee2780d098649653a1be0ced3140b09dcdba7a8330f6626dde6447ab0d4",
+   "caratteri": 33405,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-sardegna",
+   "url": "https://www.regione.sardegna.it/servizi/per-la-sanita-digitale",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-sardegna/3a2b97ffee33.txt",
+   "titolo": "Per la SANITÀ DIGITALE - Regione Autonoma della Sardegna",
+   "sha": "116308f31b2e8520cd9b915b5fa82f685289530e15c10435bf5ca572d9ccbc29",
+   "caratteri": 1736,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-sardegna",
+   "url": "https://www.aressardegna.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-sardegna/2e28e257b9f7.txt",
+   "titolo": "ARES Sardegna - Azienda Regionale della Salute - Home Page",
+   "sha": "6dd565e252c70fb26150cd8ebfe87aa58d84b918d6ef0cf7cebbb06102de7421",
+   "caratteri": 5453,
+   "email_nascoste": 1,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-sardegna",
+   "url": "https://www.aressardegna.it/azienda/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-sardegna/73063be60176.txt",
+   "titolo": "Azienda - ARES Sardegna",
+   "sha": "faa640f2718ad1274cb3d501e050859509c1ebb907ea47089b2dd74da157a7d4",
+   "caratteri": 4036,
+   "email_nascoste": 6,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-sassari",
+   "url": "https://www.asl1sassari.it/i-servizi-online-a-disposizione-della-popolazione/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-sassari/0a7d54bd6c30.txt",
+   "titolo": "I servizi online della sanità a disposizione della popolazione - ASL Sassari",
+   "sha": "26bc69a083c4e4d31478654a2502dc59e77df55e7ced4ba97f6141701da2e6dc",
+   "caratteri": 6463,
+   "email_nascoste": 5,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-sassari",
+   "url": "https://www.asl1sassari.it/centro-unico-di-prenotazione-incremento-dellorario-del-call-center/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-sassari/72e1af3c0d61.txt",
+   "titolo": "Centro unico di prenotazione: incremento dell'orario del call center - ASL Sassari",
+   "sha": "9a371e3376150b628b6751260f3e15c923ead100e7a4808aff3582fbba381022",
+   "caratteri": 2784,
+   "email_nascoste": 5,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-sassari",
+   "url": "https://www.asl1sassari.it/la-continuita-assistenziale-i-servizi-offerti-sul-territorio/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-sassari/a55a9b314959.txt",
+   "titolo": "La continuità assistenziale: i servizi offerti sul Territorio - ASL Sassari",
+   "sha": "4c65b5c48242f074c53f500777b1045916e650cc16fc869209d371bfbc97a46f",
+   "caratteri": 7121,
+   "email_nascoste": 5,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-sassari",
+   "url": "https://www.asl1sassari.it/servizi/servizi-al-cittadino/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-sassari/ed061126596f.txt",
+   "titolo": "Servizi al cittadino - ASL Sassari",
+   "sha": "aaa620fa8ef4d237f349cb7f18125dded01f2b4ad17fcdc451e925f4cd2cd41b",
+   "caratteri": 3768,
+   "email_nascoste": 5,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-gallura",
+   "url": "https://www.aslgallura.it/azienda/contatti/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-gallura/4a22188cdb31.txt",
+   "titolo": "Contatti - ASL Gallura",
+   "sha": "e4651dfb7271397819dd70273a154158e3040b951d5909e671adfbe967c72b40",
+   "caratteri": 2496,
+   "email_nascoste": 9,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-gallura",
+   "url": "https://www.aslgallura.it/servizio/cup-ticket/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-gallura/9a11b0840630.txt",
+   "titolo": "Cup-Ticket - ASL Gallura",
+   "sha": "0653bf03d1d93b18a3073e1d3089bdbf93228a4eec9f900d4c3998341d890d9e",
+   "caratteri": 4567,
+   "email_nascoste": 1,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-gallura",
+   "url": "https://www.aslgallura.it/distretti/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-gallura/7b98a1dacffc.txt",
+   "titolo": "Distretti - ASL Gallura",
+   "sha": "014026922d12f6752b79b711d6b29122ce402686142fa3511edb9c2732f93132",
+   "caratteri": 2809,
+   "email_nascoste": 3,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-nuoro",
+   "url": "https://www.asl3nuoro.it/come_fare_per/prenotare-visite-ed-esami/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-nuoro/44bf8f94eefb.txt",
+   "titolo": "Prenotare visite ed esami - ASL Nuoro",
+   "sha": "43ab8136bc8cb4e01eda56e04b596c5260daa6ae8855557f87aa8eb1fbeb26ce",
+   "caratteri": 6186,
+   "email_nascoste": 1,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-nuoro",
+   "url": "https://www.asl3nuoro.it/cure-non-urgenti-attivo-nella-asl-di-nuoro-il-numero-unico-europeo/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-nuoro/8a83739c2e85.txt",
+   "titolo": "Cure non urgenti: attivo nella ASL di Nuoro il Numero Unico Europeo - ASL Nuoro",
+   "sha": "f419055b192837d05b8cd0af593cd8d302f40e79dabc25b2766dcb21838bcf14",
+   "caratteri": 4658,
+   "email_nascoste": 1,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-nuoro",
+   "url": "https://www.asl3nuoro.it/servizi/servizi-al-cittadino/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-nuoro/892f44afb1d8.txt",
+   "titolo": "Servizi al cittadino - ASL Nuoro",
+   "sha": "0997007e33d0b6a501014e77221d812ba04848addb92f864b2f5a3ff6a75fa49",
+   "caratteri": 3289,
+   "email_nascoste": 1,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-ogliastra",
+   "url": "https://www.aslogliastra.it/servizi/servizi-al-cittadino/guardie-mediche/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-ogliastra/040370ebd025.txt",
+   "titolo": "Guardie mediche - ASL Ogliastra",
+   "sha": "0863433066d15f44ad6968c46f46c86a1a84fd7d681cb96124bec3ae28181335",
+   "caratteri": 5341,
+   "email_nascoste": 3,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-oristano",
+   "url": "https://www.asl5oristano.it/servizio/ufficio-relazioni-con-il-pubblico/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-oristano/a8aae107de2f.txt",
+   "titolo": "Ufficio relazioni con il pubblico - ASL Oristano",
+   "sha": "ac4f6d0ae70a0dbe3791e3ec73079b9f422da30a6f14c738d1ba71591c10e99e",
+   "caratteri": 3811,
+   "email_nascoste": 6,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-oristano",
+   "url": "https://www.asl5oristano.it/come_fare_per/richiedere-informazioni-allurp-ufficio-relazioni-con-il-pubblico/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-oristano/91c1c1a8a1ba.txt",
+   "titolo": "Richiedere informazioni all'URP - ASL Oristano",
+   "sha": "d8a1580995faf5dd11ad331885c31eac5dcff5362e22557cf1177e4e33caac26",
+   "caratteri": 3154,
+   "email_nascoste": 5,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-oristano",
+   "url": "https://www.asl5oristano.it/strutture/ufficio-relazioni-con-il-pubblico-urp-oristano/",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
+   "asl": "asl-oristano",
+   "url": "https://www.asl5oristano.it/come_fare_per/prenotare-visite-ed-esami/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-oristano/5370db5f09c0.txt",
+   "titolo": "Prenotare visite ed esami - ASL Oristano",
+   "sha": "e18598755cedd58af37e992099c1dff11f40adde03a1e2be8bad33d4c3c63522",
+   "caratteri": 4061,
+   "email_nascoste": 3,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-oristano",
+   "url": "https://www.asl5oristano.it/come-fare-per/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-oristano/9a741e82ac6a.txt",
+   "titolo": "Come fare per - ASL Oristano",
+   "sha": "81fdf74662e308949a5e552e4743aa540f8db205a4b6c2b80901a8a0dad21dad",
+   "caratteri": 1868,
+   "email_nascoste": 3,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-medio-campidano",
+   "url": "https://www.aslmediocampidano.it/servizio/centro-unico-di-prenotazione-cup/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-medio-campidano/e020c55db5fb.txt",
+   "titolo": "Centro unico di prenotazione (Cup) - ASL Medio Campidano",
+   "sha": "7d80374ebd43c647e5e34ed9dc9286b25230788cce40dd46f8dc1e76450a3ff9",
+   "caratteri": 4317,
+   "email_nascoste": 5,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-medio-campidano",
+   "url": "https://www.aslmediocampidano.it/tag/continuita-assistenziale/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-medio-campidano/0dc568094005.txt",
+   "titolo": "Continuità Assistenziale Archives - ASL Medio Campidano",
+   "sha": "7fbabb7833ec67dc70f5860d06d8ad3b675edc47bc351fcce458e4a8962535f6",
+   "caratteri": 4955,
+   "email_nascoste": 4,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-medio-campidano",
+   "url": "https://www.aslmediocampidano.it/come-fare-per/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-medio-campidano/4a6db1c9a633.txt",
+   "titolo": "Come fare per - ASL Medio Campidano",
+   "sha": "33a6dd69d2b8fbc9d00a109b2be27427ca6060ae128018fd0f67219463a6224a",
+   "caratteri": 3360,
+   "email_nascoste": 5,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-sulcis",
+   "url": "https://www.aslsulcis.it/azienda/servizi-e-funzioni-di-staff/urp/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-sulcis/648bf0570270.txt",
+   "titolo": "URP - ASL Sulcis Iglesiente",
+   "sha": "46996e37bdf86653a7ccb0f84eb47ab529d4827973744f009d473848625bd530",
+   "caratteri": 2258,
+   "email_nascoste": 5,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-sulcis",
+   "url": "https://www.aslsulcis.it/servizi/servizi-al-cittadino/guardie-mediche-e-turistiche/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-sulcis/499cb83d1f8a.txt",
+   "titolo": "Guardie mediche e turistiche - ASL Sulcis Iglesiente",
+   "sha": "ce0e25328eb197df4dd992b5060969dc6b96cf8b409f958802be141b4fc70a68",
+   "caratteri": 5703,
+   "email_nascoste": 3,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-cagliari",
+   "url": "https://www.asl8cagliari.it/servizio/servizi-digitali-cup-web/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-cagliari/fc53a4a22a4c.txt",
+   "titolo": "Cup web - ASL Cagliari",
+   "sha": "7dcbc30d4aa1c38501c13e7d421b4ba87cb6dfb0c67b21d5eb63f601863984c0",
+   "caratteri": 4163,
+   "email_nascoste": 3,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-cagliari",
+   "url": "https://www.asl8cagliari.it/azienda/distretti/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-cagliari/dc4a0855bd8f.txt",
+   "titolo": "Distretti - ASL Cagliari",
+   "sha": "f218ad4e5a3e2b7669be4971a6709d84bc399170ef166645fbcf94742fbe963a",
+   "caratteri": 5958,
+   "email_nascoste": 3,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-cagliari",
+   "url": "https://www.asl8cagliari.it/come_fare_per/segnalare-disservizi/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-cagliari/405be81a3094.txt",
+   "titolo": "Chiedere informazioni e/o segnalare disservizi - ASL Cagliari",
+   "sha": "13abe49e647dd8366226f4dc769697c3677ab4f7be4890752927496bc1a18de1",
+   "caratteri": 6665,
+   "email_nascoste": 7,
+   "cambiata": true
+  },
+  {
+   "asl": "ares-sardegna",
+   "url": "https://www.aressardegna.it/azienda/organizzazione/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ares-sardegna/3454b2efa71f.txt",
+   "titolo": "Organizzazione - ARES Sardegna",
+   "sha": "8ec751092d9d7bf08d4000264e491c93af2f3f97290f3563185486988f1f2ad4",
+   "caratteri": 2806,
+   "email_nascoste": 2,
+   "cambiata": true
   }
  ]
 }

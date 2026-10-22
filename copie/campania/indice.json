@@ -1,6 +1,6 @@
 {
  "regione": "campania",
- "aggiornato": "2026-10-22T07:34:46.213Z",
+ "aggiornato": "2026-10-22T09:09:17.386Z",
  "pagine": [
   {
    "asl": "avellino",
@@ -37,15 +37,27 @@
   },
   {
    "asl": "avellino",
+   "url": "https://www.aslavellino.it/index.php/it/contatti-1",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "avellino/2b0b97f68e85.txt",
+   "titolo": "ASL Avellino - Contatti",
+   "sha": "033bb263cc06305dce616a8ac8c2ff3f0211c877a9b9570906d1a06c2b3a3fd0",
+   "caratteri": 14268,
+   "cambiata": true
+  },
+  {
+   "asl": "avellino",
    "url": "https://www.aslavellino.it/index.php/it/come-fare-per/prenotazioni-pagamenti-e-disdette-1",
    "controllata": "2026-10-22",
    "browser": true,
    "http": 200,
    "file": "avellino/a067655aa201.txt",
    "titolo": "ASL Avellino - Prenotazioni, Pagamenti e Disdette",
-   "sha": "38f20787289e3579addd6af1c882bc75826352c7f2c274686f338c055ddfb56c",
-   "caratteri": 21541,
-   "cambiata": false
+   "sha": "6978a6c66f3ab3b0646d0291d2e068ac2f853d5f409be033c0d13f460b22c1a7",
+   "caratteri": 21568,
+   "email_nascoste": 1,
+   "cambiata": true
   },
   {
    "asl": "avellino",
@@ -174,21 +186,9 @@
    "certificato": "non valido",
    "file": "caserta/e125f0b729f0.txt",
    "titolo": "Asl Caserta - Home Page - Asl Caserta",
-   "sha": "31f2d5c2f9d46cf0583420baafb7748f171bb227a186d97cea1bb2cb4bf21e8c",
-   "caratteri": 22819,
+   "sha": "d0429b52835e02cec2aae60c457feaeabe37b34968296b09f7b46d9bd9e0aa7a",
+   "caratteri": 22820,
    "cambiata": true
-  },
-  {
-   "asl": "caserta",
-   "url": "https://www.aslcaserta.it/index.php/come-fare-per-cup-prenotazioni-e-pagamenti/",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "certificato": "non valido",
-   "file": "caserta/9dfc8cc1310b.txt",
-   "titolo": "CUP – Prenotazioni, Pagamenti e Disdette - Asl Caserta",
-   "sha": "b804befaf865c0e73cf16578e9b3a7c70ddd32829f303449f8bb6fca3b84ad58",
-   "caratteri": 18127,
-   "cambiata": false
   },
   {
    "asl": "caserta",
@@ -200,6 +200,18 @@
    "titolo": "Servizio Relazioni con il Pubblico - Asl Caserta",
    "sha": "05e13a87154e8bf8578e93781791e2fa91c69f8ae8e96243549eb323f95b29da",
    "caratteri": 17141,
+   "cambiata": false
+  },
+  {
+   "asl": "caserta",
+   "url": "https://www.aslcaserta.it/index.php/come-fare-per-cup-prenotazioni-e-pagamenti/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "caserta/9dfc8cc1310b.txt",
+   "titolo": "CUP – Prenotazioni, Pagamenti e Disdette - Asl Caserta",
+   "sha": "b804befaf865c0e73cf16578e9b3a7c70ddd32829f303449f8bb6fca3b84ad58",
+   "caratteri": 18127,
    "cambiata": false
   },
   {
@@ -228,9 +240,9 @@
    "certificato": "non valido",
    "file": "napoli/69d17eab3008.txt",
    "titolo": "Home - Portal Na 1",
-   "sha": "1d90ae86a721540d9c4805276fafc0788e25d7d00915dfc27026c1aab08cdae3",
-   "caratteri": 12849,
-   "cambiata": false
+   "sha": "8fe8a975461b5a890c5f665e848b1adcf6bd8a04bc0345527837997133d2f258",
+   "caratteri": 12987,
+   "cambiata": true
   },
   {
    "asl": "napoli",
@@ -252,8 +264,8 @@
    "certificato": "non valido",
    "file": "napoli/2f2947c35b17.txt",
    "titolo": "Porta Unica di Accesso (PUA) – ASL Napoli 2 Nord",
-   "sha": "eb24fc656b5bad88c77589201a86fbbd22ae298ffa501728289c0f9570754712",
-   "caratteri": 10959,
+   "sha": "51bb8db9b448c033290f9b304abfdeaeb0e61e1e7eafd3d9b140a1cbbf859419",
+   "caratteri": 10964,
    "cambiata": true
   },
   {
@@ -264,8 +276,8 @@
    "certificato": "non valido",
    "file": "napoli/7623db2690d0.txt",
    "titolo": "Numero verde prenotazioni visite – ASL Napoli 2 Nord",
-   "sha": "dfead8e1cc26e68433f86ecda96215e7690efd7b32e45152bcbe1b500f4bdc84",
-   "caratteri": 7813,
+   "sha": "24b6b5ce3f4ac6b37e01d37298274684f9e8c65a5d691d442eb311d14831079d",
+   "caratteri": 7811,
    "cambiata": true
   },
   {
@@ -275,9 +287,9 @@
    "http": 200,
    "file": "napoli/74ca811175ca.txt",
    "titolo": "ASL Napoli 3",
-   "sha": "822ffaaebcad1975ffa5441c8db7e2144892f289918fce9402d8a10d5f83c8fc",
-   "caratteri": 7914,
-   "cambiata": false
+   "sha": "8cc57fd57dc013c663967ef019e24f4e84e00ed28059874b3b2824a9552be996",
+   "caratteri": 7534,
+   "cambiata": true
   },
   {
    "asl": "napoli",
@@ -299,8 +311,8 @@
    "certificato": "non valido",
    "file": "napoli/a8448bfc505e.txt",
    "titolo": "U.O.C. URP e Marketing Sanitario – ASL Napoli 2 Nord",
-   "sha": "40ce55791627fecdbba5fecb821e23a705c7d78d5be2c3980758c4bb47f0b276",
-   "caratteri": 5908,
+   "sha": "27275c6165e7deaa50b2f5a1aaacf94079e21b5d8989139a45934b1ae101f27d",
+   "caratteri": 5915,
    "cambiata": true
   },
   {
@@ -313,7 +325,7 @@
    "titolo": "ASL Napoli 3",
    "sha": "d4afe2416f9e70ea4077123d03dd1abe2cf66fb629838b7f8052c9a541a50352",
    "caratteri": 3943,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "napoli",
@@ -334,8 +346,8 @@
    "http": 200,
    "file": "napoli/61fa7dd05c0e.txt",
    "titolo": "ASL Napoli 3",
-   "sha": "c7a4546082bceb31878460da8472831842fc4b16db795fcc469a130d9d981993",
-   "caratteri": 106758,
+   "sha": "50f191a5b3f95ab89aae975be621522157db229fcb598e457e5f07d7acc7659e",
+   "caratteri": 107138,
    "cambiata": true
   },
   {
@@ -481,6 +493,379 @@
    "sha": "1ccf7b6f0955f558f0ca2dddf6b78f001b77046e06e657ee8119d88e7db1160d",
    "caratteri": 42742,
    "cambiata": false
+  },
+  {
+   "asl": "inps-campania",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.518000.518000-elencoStruttureInps.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-campania/1527188c03ab.txt",
+   "titolo": "Portale Inps - Campania",
+   "sha": "7c2351e08aa3b82506a011454d2017f0418d4c29e64b98d37a63797b5c4a29f2",
+   "caratteri": 42129,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-campania",
+   "url": "https://www.disabilita.governo.it/it/notizie/al-via-sperimentazione-riforma-disabilita-in-altre-40-province/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-campania/cb8037740243.txt",
+   "titolo": "Al via sperimentazione riforma disabilità in altre 40 province",
+   "sha": "4ec5a460fb50b2e4f8c1006136eb2184acf64b45b3b190e378501ad4c004e6e3",
+   "caratteri": 3002,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-campania",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-campania/aad63b63390a.txt",
+   "titolo": "Portale Inps - Riforma della disabilità: al via la terza fase sperimentale",
+   "sha": "3e22d1cf04da5a9b152d4fd5f6033e4b4b86d0937bfc137d142d7c9ec25bd108",
+   "caratteri": 46281,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-campania",
+   "url": "https://sinfonia.regione.campania.it/preview/cup",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "file": "regione-campania/451c9c083a35.txt",
+   "titolo": "Portale del Cittadino - Regione Campania",
+   "sha": "9fea800167d0c9e6cbbb95aea36361cfed93ac995e9aca98dc2f6e66836fc7f4",
+   "caratteri": 1933,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-campania",
+   "url": "https://portale.soresa.it/notizie/La-nuova-App-SINFONIA-Salute",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-campania/00cb2c3727b4.txt",
+   "titolo": "La nuova App SINFONIA Salute | Soresa",
+   "sha": "b51a35bfbaa0907405c0d6d0e1d62c9862a2abeca542e7ae4933f134d6082c8d",
+   "caratteri": 7757,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-campania",
+   "url": "https://www.regione.campania.it/comunicazione/area-stampa/comunicati/06032026-comunicato-n-117-provvedimenti-giunta-regionale",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-campania/a3b9a0dbcfda.txt",
+   "titolo": "06/03/2026 - Comunicato n. 117 - Provvedimenti della Giunta Regionale | Regione Campania",
+   "sha": "70a6005d8e70bc2b9637754edb8b65cfd3bc8bbc2f5ac471cb2bf162463c8020",
+   "caratteri": 7680,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-campania",
+   "url": "https://www.regione.campania.it/regione/uffici-e-organizzazione/2040000-direzione-generale-tutela-salute-coordinamento-sistema-sanitario-regionale",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-campania/7a48d253cc15.txt",
+   "titolo": "204.00.00 DIREZIONE GENERALE TUTELA DELLA SALUTE E COORDINAMENTO DEL SISTEMA SANITARIO REGIONALE | Regione Campania",
+   "sha": "e0879dc1b0d4ef52705abc576ae55d47eafbc88822fdacf5000b6c6bcb339f34",
+   "caratteri": 5616,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-campania",
+   "url": "https://www.regione.campania.it/imprese/it/tematiche/fascicolo-sanitario-elettronico/fascicolo-sanitario-elettronico-fse",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
+   "asl": "regione-campania",
+   "url": "https://www.regione.campania.it/regione-informa/notizie/fascicolo-sanitario-elettronico-20-cos-perche-esprimere-consenso",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-campania/fa5d2c902f68.txt",
+   "titolo": "Fascicolo Sanitario Elettronico 2.0: cos’è e perché esprimere il consenso | Regione Campania",
+   "sha": "4b9b9f0a584471db8694a25df8f2d20dfe83909c96b76867f7405d070d0e2378",
+   "caratteri": 6310,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-campania",
+   "url": "https://www.regione.campania.it/aree-tematiche/sanita/sanita-digitale",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-campania/3f7c11271395.txt",
+   "titolo": "Sanità digitale | Regione Campania",
+   "sha": "20fd4f0643d03c6d81db152facf96d16f5f2a02e00d5b323d55967f2a3a8b5ef",
+   "caratteri": 6351,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-avellino",
+   "url": "https://www.aslavellino.it/index.php/it/contatti-1/numeri-utili",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "file": "asl-avellino/71670fde5054.txt",
+   "titolo": "ASL Avellino - Numeri utili",
+   "sha": "15c7158e33a8316770cc0b9b5cb8603638b019f9ed3bde50f02b1fe961033179",
+   "caratteri": 15166,
+   "email_nascoste": 4,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-avellino",
+   "url": "https://www.aslavellino.it/index.php/it/contatti-1/sedi-e-orari",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-avellino/da4ef9a43c66.txt",
+   "titolo": "ASL Avellino - Sede legale e orari",
+   "sha": "3821e92deba96d8f0e409c8c0a99da0a5272f7cb95a89ce0c96f52cf7aeb7ff7",
+   "caratteri": 14238,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-avellino",
+   "url": "https://www.aslavellino.it/index.php/it/contatti-1/cup",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-avellino/a50b4702e0fa.txt",
+   "titolo": "ASL Avellino - CUP",
+   "sha": "fb553c81b0380e1f44a8369399c7329c724d73f77ce975e3ab482f9f6c9c803e",
+   "caratteri": 14777,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-avellino",
+   "url": "https://www.aslavellino.it/index.php/it/azienda/l-amministrazione/servizi-centrali/area-sanitaria/u-o-c-coordinamento-socio-sanitario",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-avellino/944ea333d4cf.txt",
+   "titolo": "ASL Avellino - U.O.C. Coordinamento socio-sanitario",
+   "sha": "bd588fecbc5f7ba62624e706ef314fb9109e7d30ba45800716e7e6bd7c8ce29f",
+   "caratteri": 24724,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-benevento",
+   "url": "https://www.aslbenevento.it/unita-operativa/ufficio-relazioni-con-il-pubblico",
+   "controllata": "2026-10-22",
+   "http": 404,
+   "certificato": "non valido"
+  },
+  {
+   "asl": "asl-benevento",
+   "url": "https://www.aslbenevento.it/notizie/informativa-prenotazione-visite-ed-esami",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "asl-benevento/e28468ca4827.txt",
+   "titolo": "Informativa prenotazione visite ed esami | ASL Benevento",
+   "sha": "ec95f09a40d6c7defb31c180a16c48aef6d52605b44142ddcfcaae1a30a97e16",
+   "caratteri": 2607,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-benevento",
+   "url": "https://www.aslbenevento.it/notizie/comunicato-presidio-di-continuita-assistenziale-ex-guardia-medica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "asl-benevento/57c1a8d1d074.txt",
+   "titolo": "Comunicato Presidio di Continuità Assistenziale (ex Guardia Medica) | ASL Benevento",
+   "sha": "18b20ab0c688f8d5331c94b5847630336ce891cb0821a8aa5f92dbd6cb8e76f7",
+   "caratteri": 2537,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-benevento",
+   "url": "https://www.aslbenevento.it/servizi-funzionali/lista-servizi-funzionali/assistenza-sociosanitaria-domiciliare-e-territoriale",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "asl-benevento/79bac7f9f2ab.txt",
+   "titolo": "Assistenza sociosanitaria domiciliare e territoriale | ASL Benevento",
+   "sha": "5da57b25c6d3d5becfa708ffc76643fbca7cca7df6efaa04849326a9d2c09dc9",
+   "caratteri": 2828,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-caserta",
+   "url": "https://www.aslcaserta.it/index.php/u-r-p-16/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "asl-caserta/b040c484266f.txt",
+   "titolo": "Servizio Relazioni con il Pubblico Distretto 16 - Asl Caserta",
+   "sha": "4d020ab85630297bf40248bf7a519148a7c2c68b138061acf9ac40288470290b",
+   "caratteri": 29028,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-caserta",
+   "url": "https://www.aslcaserta.it/index.php/cup/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "asl-caserta/6a65ff398145.txt",
+   "titolo": "CUP Distretto 12 - Asl Caserta",
+   "sha": "1498b3a914584c8c23546409a0cd4e8c9c8882b4c5183d06eb6a396214eba2b5",
+   "caratteri": 28776,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-caserta",
+   "url": "https://www.aslcaserta.it/index.php/punti-di-prenotazione-attivi/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "asl-caserta/395cd3bbb5ee.txt",
+   "titolo": "Punti di Prenotazione Attivi - Asl Caserta",
+   "sha": "0e4feb57b84a27da7f2d4c478fb932db4a8027cd65a461b1e6235079bf771aa0",
+   "caratteri": 43597,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-caserta",
+   "url": "https://www.aslcaserta.it/index.php/assistenza-sanitaria-di-base-20/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "asl-caserta/ff08adacac6f.txt",
+   "titolo": "UOS Cure Primarie e Governo delle Cronicità Distretto 20 - Asl Caserta",
+   "sha": "ff7afb44760af62a47e00197dbaeb398bbb1851c77856b0e51cdd37028a9af00",
+   "caratteri": 30125,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-caserta",
+   "url": "https://portalesalute.aslcaserta.it/servizi-asl-caserta/adi-distretto-12-e-13-caserta/",
+   "controllata": "2026-10-22",
+   "http": 403
+  },
+  {
+   "asl": "asl-caserta",
+   "url": "https://portalesalute.aslcaserta.it/",
+   "controllata": "2026-10-22",
+   "http": 403
+  },
+  {
+   "asl": "asl-napoli-1-centro",
+   "url": "https://www.aslnapoli1centro.it/cup",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "asl-napoli-1-centro/1cb2d9b7f573.txt",
+   "titolo": "CUP - Portal Na 1",
+   "sha": "dab68c44ff71f1c9335f43278eae98de088ea493f372928e43f5cc5464bc5637",
+   "caratteri": 7102,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-napoli-1-centro",
+   "url": "https://www.aslnapoli1centro.it/come-faccio-per-prenotare-visite-ed-esami-",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "asl-napoli-1-centro/01d50f031682.txt",
+   "titolo": "Come faccio per prenotare visite ed esami? - Portal Na 1",
+   "sha": "78f662be3ff765b316f1318e52a0f18ae20429d1945582065866d5dadd1babd7",
+   "caratteri": 7186,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-napoli-1-centro",
+   "url": "https://www.aslnapoli1centro.it/come-richiedere-visite-a-domicilio-",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "asl-napoli-1-centro/c3624f13feba.txt",
+   "titolo": "Come richiedere visite a domicilio? - Portal Na 1",
+   "sha": "46dcda9c586ce2bd7a38bef47f0132cb20b7067285003e1156861115cc0ba1c8",
+   "caratteri": 6344,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-napoli-2-nord",
+   "url": "https://www.aslnapoli2nord.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "asl-napoli-2-nord/a1d7306b646d.txt",
+   "titolo": "ASL Napoli 2 Nord",
+   "sha": "1ab4b9028e5a1158c759098d93307b71b5559c9b3b6b0a4fc30f5c347d7f062a",
+   "caratteri": 7195,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-napoli-2-nord",
+   "url": "https://www.aslnapoli2nord.it/azienda/direzione-sanitaria/u-o-c-comunicazione-marketing-ed-urp/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.aslnapoli2nord.it/azienda/",
+   "certificato": "non valido",
+   "file": "asl-napoli-2-nord/aaa502e24a40.txt",
+   "titolo": "Azienda – ASL Napoli 2 Nord",
+   "sha": "cb196d05798b7b4fd45fe010b4949af4e33f29e5d869fbdcd1cbb8e1e41041f4",
+   "caratteri": 13851,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-napoli-2-nord",
+   "url": "https://www.aslnapoli2nord.it/la-continuita-assistenziale-guardia-medica/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.aslnapoli2nord.it/",
+   "certificato": "non valido",
+   "file": "asl-napoli-2-nord/a040d4f22b9d.txt",
+   "titolo": "ASL Napoli 2 Nord",
+   "sha": "09a562f4a1395b978c79856ecce3251bf567af1614e0f2bba9b100373c27cd49",
+   "caratteri": 7193,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-napoli-3-sud",
+   "url": "https://www.aslnapoli3sud.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-napoli-3-sud/eee0a284370f.txt",
+   "titolo": "ASL Napoli 3",
+   "sha": "6c36e17bc4bb2f6678b4244094a95705fc38fb261ae50c91297ffadc44402938",
+   "caratteri": 10773,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-napoli-3-sud",
+   "url": "https://www.aslnapoli3sud.it/en/-/c.u.p.-centro-unico-di-prenotazione",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-napoli-3-sud/44c94d7b41dd.txt",
+   "titolo": "ASL Napoli 3",
+   "sha": "d3382797697711880ecbe6a47843e078b03e37b1ede63268e7b7318bcf489abf",
+   "caratteri": 2274,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-napoli-3-sud",
+   "url": "https://www.aslnapoli3sud.it/continuit%C3%A0-assistenziale-ex-guardia-medica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-napoli-3-sud/b2a292c77718.txt",
+   "titolo": "ASL Napoli 3",
+   "sha": "bbea16c19a0d9305a783b8f3483a35b53f2d6aabad66543785c16a2d624649a3",
+   "caratteri": 5546,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-napoli-3-sud",
+   "url": "https://aslnapoli3sud.it/en/web/guest/direttore-59/assistenza-domiciliare-cure-palliative",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-napoli-3-sud/13de4950d2f2.txt",
+   "titolo": "ASL Napoli 3",
+   "sha": "20dc5b3d983abed6f7e1a7b552fe49d3015e6d75f41346074d42539b2161caa1",
+   "caratteri": 5238,
+   "cambiata": true
   }
  ]
 }

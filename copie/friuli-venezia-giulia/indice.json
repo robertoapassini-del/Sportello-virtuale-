@@ -1,6 +1,6 @@
 {
  "regione": "friuli-venezia-giulia",
- "aggiornato": "2026-10-22T07:44:27.174Z",
+ "aggiornato": "2026-10-22T09:17:00.633Z",
  "pagine": [
   {
    "asl": "gorizia",
@@ -27,6 +27,17 @@
   },
   {
    "asl": "gorizia",
+   "url": "https://asugi.sanita.fvg.it/it/schede/menu_azienda/azienda_informa/contatti_principali.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "gorizia/a0d70020d9ec.txt",
+   "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Contatti principali",
+   "sha": "22e13c16e216b79e9e5b7fe984e6af38a3cfeb1e0101febcca4f50250efa2a77",
+   "caratteri": 9154,
+   "cambiata": false
+  },
+  {
+   "asl": "gorizia",
    "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/sistema-sociale-sanitario/FOGLIA12/articolo.html",
    "controllata": "2026-10-22",
    "http": 200,
@@ -49,17 +60,6 @@
   },
   {
    "asl": "gorizia",
-   "url": "https://asugi.sanita.fvg.it/it/schede/menu_azienda/azienda_informa/contatti_principali.html",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "gorizia/a0d70020d9ec.txt",
-   "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Contatti principali",
-   "sha": "22e13c16e216b79e9e5b7fe984e6af38a3cfeb1e0101febcca4f50250efa2a77",
-   "caratteri": 9154,
-   "cambiata": false
-  },
-  {
-   "asl": "gorizia",
    "url": "https://asugi.sanita.fvg.it/it/servizi/dist_amm_scelta_revoca_mmg_pls.html",
    "controllata": "2026-10-22",
    "http": 200,
@@ -67,7 +67,7 @@
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Scelta / revoca Medico di Medicina Generale/Pediatria di Libera Scelta",
    "sha": "08ffc05a04fdbc855081adca07df0ff9d3af95371b65cea2c9b495eb6059b1fe",
    "caratteri": 15851,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "gorizia",
@@ -111,6 +111,17 @@
   },
   {
    "asl": "pordenone",
+   "url": "https://asfo.sanita.fvg.it/it/strutture/direzione_generale/Ufficio-Comunicazione/urp/index.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "pordenone/07bdb36ef7b8.txt",
+   "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Ufficio Relazioni con il Pubblico",
+   "sha": "f7f9dbff7600bc863936f7a38fadb53b5007a60e13a6ce848473f9ddb96ddc8b",
+   "caratteri": 6798,
+   "cambiata": false
+  },
+  {
+   "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/it/news/2026_04_13-01.html",
    "controllata": "2026-10-22",
    "http": 200,
@@ -129,17 +140,6 @@
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Prenotazioni prestazioni sanitarie ambulatoriali in ambito regionale",
    "sha": "a541bb7ef834afa220bbc7cbfb6f2cc76a6b478b75a54407ffdbb74294a40f1a",
    "caratteri": 10415,
-   "cambiata": false
-  },
-  {
-   "asl": "pordenone",
-   "url": "https://asfo.sanita.fvg.it/it/strutture/direzione_generale/Ufficio-Comunicazione/urp/index.html",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "pordenone/07bdb36ef7b8.txt",
-   "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Ufficio Relazioni con il Pubblico",
-   "sha": "f7f9dbff7600bc863936f7a38fadb53b5007a60e13a6ce848473f9ddb96ddc8b",
-   "caratteri": 6798,
    "cambiata": false
   },
   {
@@ -173,7 +173,7 @@
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Contatti",
    "sha": "f20b010c97ed8dbbbca18747a544e8f79fea4f4ed4b3e007f15daf9d091c4001",
    "caratteri": 14089,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "pordenone",
@@ -184,7 +184,7 @@
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Prenotazione prestazioni e verifica tempi di attesa",
    "sha": "7c5709d212dee9d25649e8542d35317f4d2ed708caec0a7a0f618277e629edfc",
    "caratteri": 7395,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "pordenone",
@@ -195,7 +195,7 @@
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Assistenza infermieristica territoriale/Domiciliare",
    "sha": "28dce4ac7c08f56ccb37d0c0fcaf9e1d531b9edfc82acac0b0d9158d7b15f0a7",
    "caratteri": 9216,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "pordenone",
@@ -206,7 +206,7 @@
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Distretti",
    "sha": "89d210ea2656e54d9ea8c2c83c82250499a857f9f6a171541bdc6f9736690275",
    "caratteri": 12434,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "pordenone",
@@ -217,7 +217,7 @@
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Liste di attesa",
    "sha": "5e3006dc800778e7f4f1a09ba3502e9d7bf32a135ed847486567ab710e062a52",
    "caratteri": 10218,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "pordenone",
@@ -228,7 +228,7 @@
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Servizio on line di scelta e revoca",
    "sha": "9d9bdd6961e3ac69570eba37742046f0022821a3ad5a18a25972aae02c7f02fc",
    "caratteri": 5523,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "pordenone",
@@ -239,7 +239,7 @@
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - SESAMO",
    "sha": "ec4c1888b7708b8e547d378e23cb83be5d6ad0a5b930c9577f0a8fdab9e0427f",
    "caratteri": 7897,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trieste",
@@ -266,6 +266,17 @@
   },
   {
    "asl": "trieste",
+   "url": "https://asugi.sanita.fvg.it/it/schede/menu_azienda/azienda_informa/contatti_principali.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "trieste/a0d70020d9ec.txt",
+   "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Contatti principali",
+   "sha": "22e13c16e216b79e9e5b7fe984e6af38a3cfeb1e0101febcca4f50250efa2a77",
+   "caratteri": 9154,
+   "cambiata": false
+  },
+  {
+   "asl": "trieste",
    "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/sistema-sociale-sanitario/FOGLIA12/articolo.html",
    "controllata": "2026-10-22",
    "http": 200,
@@ -288,17 +299,6 @@
   },
   {
    "asl": "trieste",
-   "url": "https://asugi.sanita.fvg.it/it/schede/menu_azienda/azienda_informa/contatti_principali.html",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "trieste/a0d70020d9ec.txt",
-   "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Contatti principali",
-   "sha": "22e13c16e216b79e9e5b7fe984e6af38a3cfeb1e0101febcca4f50250efa2a77",
-   "caratteri": 9154,
-   "cambiata": false
-  },
-  {
-   "asl": "trieste",
    "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/sistema-sociale-sanitario/",
    "controllata": "2026-10-22",
    "http": 200,
@@ -306,7 +306,7 @@
    "titolo": "Regione Autonoma Friuli Venezia Giulia - Sistema sociale e sanitario",
    "sha": "9cb2aba38fcb9e92304a53466d36f6369b15845c6591c5ea3815fb413880ca82",
    "caratteri": 11954,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trieste",
@@ -317,7 +317,7 @@
    "titolo": "Regione Autonoma Friuli Venezia Giulia - Call center unico 0434 223522 per salute e sociale",
    "sha": "4c2d5d090b261dcb0aca237c518a7e380a848a4896d1862fe7b82907f929598f",
    "caratteri": 4523,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trieste",
@@ -328,7 +328,7 @@
    "titolo": "Regione Autonoma Friuli Venezia Giulia - Liste di attesa",
    "sha": "4bf5dea46a2ff084145b4fea2d5c68a6e58a9ec06e156817ca42dc2973c539ea",
    "caratteri": 2082,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trieste",
@@ -339,7 +339,7 @@
    "titolo": "Call center per la Prenotazioni di visite ed esami",
    "sha": "b21218803c35582d25699dba0f5a907bb8dd192d85317e5c0ddb6f1d87419dfb",
    "caratteri": 6863,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trieste",
@@ -350,7 +350,7 @@
    "titolo": "Prenotazione di esami e visite ed annullo",
    "sha": "576bc195554d0a25ba37bc0757a65f3146e3314511d3e59efd671652af6b0841",
    "caratteri": 8019,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trieste",
@@ -372,7 +372,7 @@
    "titolo": "116117 Numero Unico Europeo per la Sanità NON Urgente | ARCS",
    "sha": "75b83bf31a06f039e5ff06be2f9b2a4646675743f20a955b2a91b47dbd1eca01",
    "caratteri": 3760,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trieste",
@@ -383,7 +383,7 @@
    "titolo": "Ufficio Relazioni con il Pubblico - URP",
    "sha": "3aedea8c8bc370703eb993f520d3671e8919e36e7f68b51cd8383b28766f1ec9",
    "caratteri": 5423,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trieste",
@@ -395,7 +395,7 @@
    "titolo": "Aziende del Servizio Sanitario Regionale FVG",
    "sha": "7bbf04219a93a5db4f636575070620f44be2b000202ddbe93152283be90e96c0",
    "caratteri": 6499,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trieste",
@@ -408,7 +408,7 @@
    "titolo": "SESAMO - Piattaforma elettronica di servizi salute in mobilità",
    "sha": "ad8f0e94fdab9131a0a226edc6b54cf70e5ef04b8642b86e5b7db9c58db480bf",
    "caratteri": 6208,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trieste",
@@ -419,7 +419,7 @@
    "titolo": "DU FVG Sesamo Support Brochure A",
    "sha": "525f0c6e91e54ec2fa2c95429367fa5d47a867ef11bc9b5d0343e7e6bf7b30c5",
    "caratteri": 1596,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trieste",
@@ -430,7 +430,7 @@
    "titolo": "Regione Autonoma Friuli Venezia Giulia - Servizi in rete",
    "sha": "dcc34ce9412dcc80b78f003954245a35731d4d3ec60fd2f49a86a79575a285f7",
    "caratteri": 4920,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trieste",
@@ -441,7 +441,7 @@
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - SSD Comunicazione, URP, Relazioni Esterne e Ufficio Stampa",
    "sha": "96ba6b78fe88d1def6c6cc8cd2c16ef9f7b3226eeef4263ea348be2cd66c5d3f",
    "caratteri": 14770,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trieste",
@@ -452,7 +452,7 @@
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Numeri Utili",
    "sha": "e76dc35b1a5fd482ecb2b1070117d9a840ffeecd541d5d4aea1ce77b209f4203",
    "caratteri": 6481,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trieste",
@@ -463,7 +463,7 @@
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Accesso agli sportelli CUP",
    "sha": "bfdf298e4ac91ca4768d4d5ef1d5707288bc0a2ea842d8fbbeedc1dddca0a3b6",
    "caratteri": 15656,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trieste",
@@ -474,7 +474,7 @@
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - ASUGI: cambia il numero unico per i servizi sanitari non urgenti",
    "sha": "aed83fdc0bb8fe2019958ca4fb44c9e53fdbc7dabf4cfcc497b14f3ccaa8c3af",
    "caratteri": 7859,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trieste",
@@ -491,7 +491,7 @@
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Servizio Infermieristico Domiciliare",
    "sha": "bf0d3f44404c067a9a4765bb65e4e498cc5b2568f3f76eb9b5cd3e23348b040b",
    "caratteri": 6061,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trieste",
@@ -502,7 +502,7 @@
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Cure ambulatoriali e domiciliari continuità terapeutica - SC Distretto Trieste 1",
    "sha": "2364686a60921b3a92176804112a8a87cd2d4bafd1c00114911ad39abda78362",
    "caratteri": 9642,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trieste",
@@ -513,7 +513,7 @@
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Tutti i servizi dalla A alla Z",
    "sha": "070786849f3baee62cd98bd2af16e0484649c47928a3dc4e612efc50d379dc7d",
    "caratteri": 6302,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trieste",
@@ -524,7 +524,7 @@
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Scelta / revoca Medico di Medicina Generale/Pediatria di Libera Scelta",
    "sha": "08ffc05a04fdbc855081adca07df0ff9d3af95371b65cea2c9b495eb6059b1fe",
    "caratteri": 15851,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trieste",
@@ -541,7 +541,7 @@
    "titolo": "DU FVG Sesamo Support Brochure B",
    "sha": "1d5826f94af342decb392f4f1fc352d0afcc8a03fcc2e1be098d439198e7f580",
    "caratteri": 2214,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trieste",
@@ -552,7 +552,7 @@
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Sesamo",
    "sha": "6fba5cbaf255edae0bd8909f114889081d87c60a59ef9de8f49f7dc3f27ad6cc",
    "caratteri": 7533,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "udine",
@@ -576,6 +576,28 @@
    "sha": "8990daf1c14dae05223ecd71ee02073aa411e9255278dc2830ef2a3db9c38f74",
    "caratteri": 9714,
    "cambiata": false
+  },
+  {
+   "asl": "udine",
+   "url": "https://asufc.sanita.fvg.it/it/schede/contatti.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "udine/620859679628.txt",
+   "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - Contatti",
+   "sha": "e66cfec52155ecac08c2ee46774d9c112185c167bf38bdb42750b4704c07bbef",
+   "caratteri": 4904,
+   "cambiata": true
+  },
+  {
+   "asl": "udine",
+   "url": "https://asufc.sanita.fvg.it/it/news/nuovo_numero_unico_vaccinazioni.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "udine/dc6df4e8355e.txt",
+   "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - Nuovo numero unico per prenotare le vaccinazioni",
+   "sha": "cfa09331967c60b68410a18ddab093cc9d27ac9b8ad91cf385f8f8aa902dd8d6",
+   "caratteri": 5645,
+   "cambiata": true
   },
   {
    "asl": "udine",
@@ -619,7 +641,7 @@
    "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - CUP (Centro Unico di prenotazione) degli Ospedali - orari sportelli e sedi",
    "sha": "8cd072dfeeae57811d268c5520af05d7c6ba7fa86894b2ceb1275683db1893c8",
    "caratteri": 6210,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "udine",
@@ -630,7 +652,7 @@
    "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - Richiesta assistenza infermieristica",
    "sha": "79c979ef1aa8ca41086275002ae4dad3bab76b03a15eaf82a9800979fff2aafc",
    "caratteri": 5654,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "udine",
@@ -641,7 +663,7 @@
    "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - Casa della Comunità",
    "sha": "c47431a332bf341a94440f5a57ee84a4afc15829cc0723a1940ddbd3a26d7b8f",
    "caratteri": 6875,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "udine",
@@ -652,7 +674,7 @@
    "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - Distretti sanitari",
    "sha": "82552870429940276c1b5fa9507d0293c0035777d33c374edd62ad74645ebefd",
    "caratteri": 8932,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "udine",
@@ -663,7 +685,7 @@
    "titolo": "Regione Autonoma Friuli Venezia Giulia - Liste di attesa",
    "sha": "4bf5dea46a2ff084145b4fea2d5c68a6e58a9ec06e156817ca42dc2973c539ea",
    "caratteri": 2082,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "inps-friuli-venezia-giulia",
@@ -708,6 +730,50 @@
    "sha": "e4c3aee987a9afd7098634703f4eda699c1db977f6692dea37833de75b182e6c",
    "caratteri": 43090,
    "cambiata": false
+  },
+  {
+   "asl": "inps-friuli-venezia-giulia",
+   "url": "https://www.disabilita.governo.it/it/notizie/individuate-le-9-province-per-sperimentare-la-riforma-disabilita/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-friuli-venezia-giulia/4016319a363c.txt",
+   "titolo": "Individuate le 9 province per sperimentare la riforma disabilità",
+   "sha": "66d7f89ba67266ce1fbe7b9c0bd75ddc1bafe70d3840008c45b807ba3eec62df",
+   "caratteri": 2377,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-friuli-venezia-giulia",
+   "url": "https://www.disabilita.governo.it/it/notizie/individuate-le-altre-11-province-per-la-sperimentazione-della-riforma-della-disabilita/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-friuli-venezia-giulia/49a147b501cb.txt",
+   "titolo": "Individuate le altre 11 province per la sperimentazione della riforma della disabilità",
+   "sha": "616ce11d934ce0494cb840068dd03f5db47a39190acf5cec1e6929cf5cf8ca02",
+   "caratteri": 2423,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-friuli-venezia-giulia",
+   "url": "https://www.disabilita.governo.it/it/notizie/al-via-sperimentazione-riforma-disabilita-in-altre-40-province/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-friuli-venezia-giulia/cb8037740243.txt",
+   "titolo": "Al via sperimentazione riforma disabilità in altre 40 province",
+   "sha": "4ec5a460fb50b2e4f8c1006136eb2184acf64b45b3b190e378501ad4c004e6e3",
+   "caratteri": 3002,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-friuli-venezia-giulia",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-friuli-venezia-giulia/aad63b63390a.txt",
+   "titolo": "Portale Inps - Riforma della disabilità: al via la terza fase sperimentale",
+   "sha": "3e22d1cf04da5a9b152d4fd5f6033e4b4b86d0937bfc137d142d7c9ec25bd108",
+   "caratteri": 46281,
+   "cambiata": true
   }
  ]
 }

@@ -1,6 +1,6 @@
 {
  "regione": "emilia-romagna",
- "aggiornato": "2026-10-22T07:42:15.879Z",
+ "aggiornato": "2026-10-22T09:14:40.918Z",
  "pagine": [
   {
    "asl": "bologna",
@@ -11,7 +11,7 @@
    "titolo": "Home page — Azienda USL di Bologna",
    "sha": "a22b104d63d566dea2939ea27eb0149efce3829365496e80180125c2ca4e39fc",
    "caratteri": 4140,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bologna",
@@ -33,6 +33,17 @@
    "titolo": "Punto Unico di Accesso integrato sanitario e sociale (PUA)",
    "sha": "6e3fa0388f59c909a69f3ab172df0815183ff4266b2fe9701c4036b5087cac57",
    "caratteri": 14490,
+   "cambiata": false
+  },
+  {
+   "asl": "bologna",
+   "url": "https://www.ausl.imola.bo.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/13",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "bologna/68d645659ce3.txt",
+   "titolo": "Chi siamo - Ausl Imola",
+   "sha": "9a0429d29a894c9cd1de64725ff30421761f31b91175632f2e3c58372871f9c5",
+   "caratteri": 15494,
    "cambiata": false
   },
   {
@@ -104,17 +115,6 @@
   },
   {
    "asl": "bologna",
-   "url": "https://www.ausl.imola.bo.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/13",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "bologna/68d645659ce3.txt",
-   "titolo": "Chi siamo - Ausl Imola",
-   "sha": "9a0429d29a894c9cd1de64725ff30421761f31b91175632f2e3c58372871f9c5",
-   "caratteri": 15494,
-   "cambiata": false
-  },
-  {
-   "asl": "bologna",
    "url": "https://www.ausl.bologna.it/amministrazione-trasparente/servizi-erogati/liste-di-attesa",
    "controllata": "2026-10-22",
    "http": 200,
@@ -122,7 +122,7 @@
    "titolo": "Tempi medi di erogazione dei servizi — Azienda USL di Bologna",
    "sha": "47017fe1a4001febf1257588d9ff5fd43e07a2958a05103a169adb7bb38834ca",
    "caratteri": 10891,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bologna",
@@ -133,7 +133,7 @@
    "titolo": "Servizi erogati - Liste di attesa",
    "sha": "23788dec707d49cdcc8d15a34665655737c373f36d0811d5f3e6a4525a030852",
    "caratteri": 18216,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bologna",
@@ -144,7 +144,7 @@
    "titolo": "Rilascio copia cartella clinica — Azienda USL di Bologna",
    "sha": "2ddb476716f4a990582b453ef49b60357428ae36095027fe264227a81e34720f",
    "caratteri": 8840,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bologna",
@@ -155,7 +155,7 @@
    "titolo": "Richiesta e Ritiro Copia di Cartelle Cliniche",
    "sha": "c4565b5b7dede414341485a220f3d78e459227822d86fe8b36c5cdc8a0e6577a",
    "caratteri": 16138,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bologna",
@@ -166,7 +166,7 @@
    "titolo": "Cambio del Medico di Medicina Generale o del Pediatra di Libera Scelta in Azienda USL di Imola",
    "sha": "456ca06df2df15749a671b1f35e0a427f2fbbcf21dbe6df9e6b26b393a1087ab",
    "caratteri": 16015,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bologna",
@@ -177,7 +177,7 @@
    "titolo": "Il Piano della Regione per ridurre i tempi di attesa — Salute",
    "sha": "e5be218687f0b74d2db8ad2a5fecd5d5feda4a50250250320ca6252704f4362f",
    "caratteri": 6695,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bologna",
@@ -188,7 +188,7 @@
    "titolo": "Support FSE",
    "sha": "715d9256f5f084126ce43f5081d30b70f1cec898976733d176dfff2f8c4790af",
    "caratteri": 2798,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bologna",
@@ -199,7 +199,7 @@
    "titolo": "Portale Inps - Riforma della disabilità: al via la terza fase sperimentale",
    "sha": "3e22d1cf04da5a9b152d4fd5f6033e4b4b86d0937bfc137d142d7c9ec25bd108",
    "caratteri": 46281,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ferrara",
@@ -219,9 +219,9 @@
    "http": 200,
    "file": "ferrara/79a39eae8da6.txt",
    "titolo": "Servizio di Continuità Assistenziale - Guardia Medica - Azienda Unità Sanitaria Locale di Ferrara",
-   "sha": "24ba1a0e86632e32c885dd614cbd28809dd601bb6a3d5a2532b0ff877c345dc7",
-   "caratteri": 6751,
-   "cambiata": false
+   "sha": "8dd3a5575ea1a01bc40c3bc2b0b155b18e2a220a979fb55b0532b2d8d3ecb332",
+   "caratteri": 6721,
+   "cambiata": true
   },
   {
    "asl": "ferrara",
@@ -233,6 +233,18 @@
    "sha": "ad04de1e4f051bc10de27d55c5beb3c9453aa55bd3bb9c29527c4c3b5740fc1c",
    "caratteri": 4621,
    "cambiata": false
+  },
+  {
+   "asl": "ferrara",
+   "url": "https://www.ausl.fe.it/strutture/amministrazione/servizi-in-staff-alla-direzione/area-knowledge-center/area-comunicazione/ufficio-relazioni-con-il-pubblico",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.ausl.fe.it/strutture/azienda/servizi-in-staff-alla-direzione/comunicazione-accoglienza-e-partecipazione/ufficio-relazioni-con-il-pubblico",
+   "file": "ferrara/7b0776ecdc2f.txt",
+   "titolo": "Ufficio Relazioni con il Pubblico - Azienda Unità Sanitaria Locale di Ferrara",
+   "sha": "285ed4cddc48db622c46db3c69a9b966704e7acdc06d5eac1ba7edc48d21abd9",
+   "caratteri": 8124,
+   "cambiata": true
   },
   {
    "asl": "ferrara",
@@ -258,18 +270,6 @@
   },
   {
    "asl": "ferrara",
-   "url": "https://www.ausl.fe.it/strutture/amministrazione/servizi-in-staff-alla-direzione/area-knowledge-center/area-comunicazione/ufficio-relazioni-con-il-pubblico",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "finale": "https://www.ausl.fe.it/strutture/azienda/servizi-in-staff-alla-direzione/comunicazione-accoglienza-e-partecipazione/ufficio-relazioni-con-il-pubblico",
-   "file": "ferrara/7b0776ecdc2f.txt",
-   "titolo": "Ufficio Relazioni con il Pubblico - Azienda Unità Sanitaria Locale di Ferrara",
-   "sha": "e933b07601d912cf157b688e9dc7892907b0c78ccc6843f9d6f24dc7d408b82e",
-   "caratteri": 8179,
-   "cambiata": false
-  },
-  {
-   "asl": "ferrara",
    "url": "https://at.ausl.fe.it/servizi-erogati/liste-di-attesa",
    "controllata": "2026-10-22",
    "http": 200,
@@ -277,7 +277,7 @@
    "titolo": "Liste di attesa — Amministrazione trasparente",
    "sha": "841c4b6edebe50e0f9b1c55229cf4a1244ff1b851bba8f5fb24769f74e24fb95",
    "caratteri": 6220,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ferrara",
@@ -286,8 +286,8 @@
    "http": 200,
    "file": "ferrara/a1d31142c42e.txt",
    "titolo": "Richiedere copia della Cartella Clinica - Azienda Unità Sanitaria Locale di Ferrara",
-   "sha": "94efb5810038f0ba3288a5fceb7a685fd63dfd1f1c320bcbe36cc79e4366a56a",
-   "caratteri": 9132,
+   "sha": "949dd74885b8ff0d17c2238bdf5dcf11b8bf6ee038e14ac5accb20588f9b154b",
+   "caratteri": 9127,
    "cambiata": true
   },
   {
@@ -296,9 +296,9 @@
    "controllata": "2026-10-22",
    "http": 200,
    "file": "ferrara/7ad4c0b995d2.txt",
-   "titolo": "Richiedere e ritirare copia documentazione sanitaria - Arcispedale Sant&#x27;Anna",
-   "sha": "650da1a549767af2f98e30de087179449c3b8aa399759740e009e2f13a15b223",
-   "caratteri": 9260,
+   "titolo": "Richiedere e ritirare copia documentazione sanitaria - Arcispedale Sant'Anna",
+   "sha": "c953c1936db28112bec12e208097b9e9cea4e7254a7c26d3e471585bcc383fb1",
+   "caratteri": 9175,
    "cambiata": true
   },
   {
@@ -309,8 +309,8 @@
    "finale": "https://www.ausl.fe.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/rete-cure-palliative",
    "file": "ferrara/9c1dc80544be.txt",
    "titolo": "Rete Cure Palliative - Azienda Unità Sanitaria Locale di Ferrara",
-   "sha": "175c2e89b8de46a00887dec8f9f4843024dfa7ed04d159ac7b125c62f290e788",
-   "caratteri": 6580,
+   "sha": "0d016dd123cc61b29e6862a812e05a86565d66ddf46f6116402576a25e33996d",
+   "caratteri": 6560,
    "cambiata": true
   },
   {
@@ -320,8 +320,8 @@
    "http": 200,
    "file": "ferrara/9610e3d56bc9.txt",
    "titolo": "Protesi, ausili e presidi (per incontinenza) - Azienda Unità Sanitaria Locale di Ferrara",
-   "sha": "0263c73862bbdd726643009bde95b1f3e681c1ebf6305bbac31644705d812e80",
-   "caratteri": 6563,
+   "sha": "7cd641efe5d8fe2083d34db6d2a8d1014ef9acbaa90ab23a2f7fb18f4cfcc49b",
+   "caratteri": 6513,
    "cambiata": true
   },
   {
@@ -333,7 +333,7 @@
    "titolo": "Il Piano della Regione per ridurre i tempi di attesa — Salute",
    "sha": "e5be218687f0b74d2db8ad2a5fecd5d5feda4a50250250320ca6252704f4362f",
    "caratteri": 6695,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ferrara",
@@ -344,7 +344,7 @@
    "titolo": "Support FSE",
    "sha": "715d9256f5f084126ce43f5081d30b70f1cec898976733d176dfff2f8c4790af",
    "caratteri": 2798,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "forli-cesena",
@@ -353,9 +353,9 @@
    "http": 200,
    "file": "forli-cesena/1c210c7e98c6.txt",
    "titolo": "Azienda USL della Romagna - AUSL Romagna",
-   "sha": "ac960d2842a3e1368ccbd5e22c5555d62bf5566e080657ad91806a2c1b27df37",
-   "caratteri": 2921,
-   "cambiata": false
+   "sha": "1266c863f375d16266b7eeb2320a13ae4f0fab1aac79d1e3a8e67f77671b73bb",
+   "caratteri": 2916,
+   "cambiata": true
   },
   {
    "asl": "forli-cesena",
@@ -364,9 +364,9 @@
    "http": 200,
    "file": "forli-cesena/f11259419b08.txt",
    "titolo": "Continuità assistenziale (Guardia medica) Forlì Cesena Ravenna Rimini - AUSL Romagna",
-   "sha": "7e86eb5a9146f978ae2e194127550cff27d8b82b14844c5a4f8d9d7d5e22dac5",
-   "caratteri": 4652,
-   "cambiata": false
+   "sha": "a60e880bab33b67337ed31208f6f523753350a18a4359104471c85cc4b82ef17",
+   "caratteri": 4622,
+   "cambiata": true
   },
   {
    "asl": "forli-cesena",
@@ -375,9 +375,9 @@
    "http": 200,
    "file": "forli-cesena/b68928b180b4.txt",
    "titolo": "PUA Punto Unico di Accesso alla rete del servizi sociosanitari di Forlì - AUSL Romagna",
-   "sha": "cceb4bc1debc1590901abbefa4479973cfafb4fd093d7061462988fcd48920d6",
-   "caratteri": 2860,
-   "cambiata": false
+   "sha": "dd2f7903ab4ab3de0750583d1dd7acd6de5fda524576ea170d833edce57645aa",
+   "caratteri": 2855,
+   "cambiata": true
   },
   {
    "asl": "forli-cesena",
@@ -397,9 +397,9 @@
    "http": 200,
    "file": "forli-cesena/4e496ee31aa1.txt",
    "titolo": "CUP - Centro Unico di Prenotazione - AUSL Romagna",
-   "sha": "0fe022f7fc11f5cedf0b2d20d2b3337a29e81b754d39affde0246064263ff8c6",
-   "caratteri": 3339,
-   "cambiata": false
+   "sha": "aff6054bd70b4242d3263d3c1dc0f392f0ace7c6119e91a6e64850e9c9b13267",
+   "caratteri": 3329,
+   "cambiata": true
   },
   {
    "asl": "forli-cesena",
@@ -408,8 +408,8 @@
    "http": 200,
    "file": "forli-cesena/97b4d69f56ab.txt",
    "titolo": "Richiedere copia della cartella clinica, referti o documenti - AUSL Romagna",
-   "sha": "6f7580ed1582d8df3057b616e79764c7b46265dc55043b8b67b0bd12aa1ad4c6",
-   "caratteri": 5524,
+   "sha": "69784268ba880fd1a137a87ee5c356defe4288dfaea07ba54b79fd01499179c1",
+   "caratteri": 5484,
    "cambiata": true
   },
   {
@@ -419,8 +419,8 @@
    "http": 200,
    "file": "forli-cesena/ebc498b1d1fa.txt",
    "titolo": "Hospice - AUSL Romagna",
-   "sha": "8e05e49a57453be693f9beeecb53d50dcb1367dab403cd4fadcddc11398d1bda",
-   "caratteri": 2808,
+   "sha": "72de44882d840e2814e0e6641a5d3598047189d15b1f27b582336af08daa1836",
+   "caratteri": 2763,
    "cambiata": true
   },
   {
@@ -430,8 +430,8 @@
    "http": 200,
    "file": "forli-cesena/52e445cfa27d.txt",
    "titolo": "Cure Palliative di Forlimpopoli - AUSL Romagna",
-   "sha": "5c592f3f520f65e425e872f23a16a1afb1138aac3146d5011fdc5082c487a248",
-   "caratteri": 3075,
+   "sha": "cb1ac3d5187dc0dc7f8803bdd8dfff3834200899e2fafa5a18a63152cd6ebea5",
+   "caratteri": 3060,
    "cambiata": true
   },
   {
@@ -443,7 +443,7 @@
    "titolo": "Cure Palliative e Hospice Savignano di Savignano sul Rubicone - AUSL Romagna",
    "sha": "1c5f01004d268b4fb8073fe631b41dae1f0cd124144462311b277e89e624265c",
    "caratteri": 2589,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "forli-cesena",
@@ -454,7 +454,7 @@
    "titolo": "Il Piano della Regione per ridurre i tempi di attesa — Salute",
    "sha": "e5be218687f0b74d2db8ad2a5fecd5d5feda4a50250250320ca6252704f4362f",
    "caratteri": 6695,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "forli-cesena",
@@ -465,7 +465,7 @@
    "titolo": "Support FSE",
    "sha": "715d9256f5f084126ce43f5081d30b70f1cec898976733d176dfff2f8c4790af",
    "caratteri": 2798,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "modena",
@@ -488,6 +488,17 @@
    "titolo": "Continuità assistenziale (guardia medica) - SERVIZIO SANITARIO REGIONALE EMILIA-ROMAGNA",
    "sha": "1791de1c54eaa4277707cb59ec566a02a2ba9c06c58a2f6f7356ecdfbe77d751",
    "caratteri": 5500,
+   "cambiata": false
+  },
+  {
+   "asl": "modena",
+   "url": "https://www.ausl.mo.it/organizzazione/staff-di-direzione/rapporti-con-lesterno-e-comunicazione/ufficio-relazioni-con-il-pubblico-urp",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "modena/edfbac889801.txt",
+   "titolo": "Ufficio relazioni con il pubblico (URP) - SERVIZIO SANITARIO REGIONALE EMILIA-ROMAGNA",
+   "sha": "11b06964b1bbdad402828636d4627b79a6771a13ad14201d9b8247e73ff06717",
+   "caratteri": 4975,
    "cambiata": false
   },
   {
@@ -515,17 +526,6 @@
   },
   {
    "asl": "modena",
-   "url": "https://www.ausl.mo.it/organizzazione/staff-di-direzione/rapporti-con-lesterno-e-comunicazione/ufficio-relazioni-con-il-pubblico-urp",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "modena/edfbac889801.txt",
-   "titolo": "Ufficio relazioni con il pubblico (URP) - SERVIZIO SANITARIO REGIONALE EMILIA-ROMAGNA",
-   "sha": "11b06964b1bbdad402828636d4627b79a6771a13ad14201d9b8247e73ff06717",
-   "caratteri": 4975,
-   "cambiata": false
-  },
-  {
-   "asl": "modena",
    "url": "https://www.ausl.mo.it/modulistica-aziendale/richiesta-copia-cartella-clinica/",
    "controllata": "2026-10-22",
    "http": 404
@@ -539,7 +539,7 @@
    "titolo": "Come fare per - Azienda Ospedaliero-Universitaria di Modena",
    "sha": "7e3017ddb404e3ee59f71510325b8cfa553e58457f58aedea2a17c928d46daae",
    "caratteri": 15154,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "modena",
@@ -550,7 +550,7 @@
    "titolo": "Il Piano della Regione per ridurre i tempi di attesa — Salute",
    "sha": "e5be218687f0b74d2db8ad2a5fecd5d5feda4a50250250320ca6252704f4362f",
    "caratteri": 6695,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "modena",
@@ -561,7 +561,7 @@
    "titolo": "Support FSE",
    "sha": "715d9256f5f084126ce43f5081d30b70f1cec898976733d176dfff2f8c4790af",
    "caratteri": 2798,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "parma",
@@ -594,6 +594,17 @@
    "titolo": "AUSL | Dove curarsi",
    "sha": "c80330d3aba17b8a429c51e00bf8aa74291a249bf1956cb3be7d3235a9ac15f8",
    "caratteri": 13482,
+   "cambiata": false
+  },
+  {
+   "asl": "parma",
+   "url": "https://www.ausl.pr.it/come_fare/numeri_utili/default.aspx",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "parma/05cebe245f29.txt",
+   "titolo": "AUSL | Come fare per | Numeri utili",
+   "sha": "b1aa1d3f79db4924f3bde14136bbfaf3af15cf0f50408cc66a4ed0b691bb20b5",
+   "caratteri": 11741,
    "cambiata": false
   },
   {
@@ -631,17 +642,6 @@
   },
   {
    "asl": "parma",
-   "url": "https://www.ausl.pr.it/come_fare/numeri_utili/default.aspx",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "parma/05cebe245f29.txt",
-   "titolo": "AUSL | Come fare per | Numeri utili",
-   "sha": "b1aa1d3f79db4924f3bde14136bbfaf3af15cf0f50408cc66a4ed0b691bb20b5",
-   "caratteri": 11741,
-   "cambiata": false
-  },
-  {
-   "asl": "parma",
    "url": "https://www.ausl.pr.it/come_fare/prenotazioni_disdette/liste_attesa.aspx",
    "controllata": "2026-10-22",
    "http": 200,
@@ -649,7 +649,7 @@
    "titolo": "AUSL | Come fare per | Visite ed esami: alcune informazioni utili per accedere alle prestazioni nel rispetto dei tempi di attesa",
    "sha": "c37a249802769bdbf0ef38aa12905aa43bbd34ec5b860506a336a0980bce32dd",
    "caratteri": 19078,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "parma",
@@ -660,7 +660,7 @@
    "titolo": "AUSL | Come fare per | Cartelle cliniche",
    "sha": "6b2c12d6b1f10244514888b94123aa2cc3110bf4df6378fc14a835b889bd5ab8",
    "caratteri": 10797,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "parma",
@@ -671,7 +671,7 @@
    "titolo": "Documentazione sanitaria | Azienda Ospedaliero-Universitaria di Parma",
    "sha": "f05ea3937b0a229b7425a807dae5fd536e14c5145b1d8c33c0361c6470e22835",
    "caratteri": 9544,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "parma",
@@ -682,7 +682,7 @@
    "titolo": "AUSL | Servizi Online | Scelta e revoca del medico e del pediatra on line",
    "sha": "181bae0e254392b6b0336d003c8118c96d84d2c9f98f57f8621d8ee91420230b",
    "caratteri": 10585,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "parma",
@@ -693,7 +693,7 @@
    "titolo": "Il Piano della Regione per ridurre i tempi di attesa — Salute",
    "sha": "e5be218687f0b74d2db8ad2a5fecd5d5feda4a50250250320ca6252704f4362f",
    "caratteri": 6695,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "parma",
@@ -704,7 +704,7 @@
    "titolo": "Support FSE",
    "sha": "715d9256f5f084126ce43f5081d30b70f1cec898976733d176dfff2f8c4790af",
    "caratteri": 2798,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "piacenza",
@@ -714,9 +714,9 @@
    "finale": "https://www.ausl.pc.it/it",
    "file": "piacenza/1268bdf0050f.txt",
    "titolo": "Italiano - Azienda Unità Sanitaria Locale di Piacenza",
-   "sha": "046ae73bb094583a9fab7a6e255aab14259f712d321138a0af82badfecbac331",
-   "caratteri": 5735,
-   "cambiata": false
+   "sha": "df8a3de157aea4793e796da611505d9e08db843e434c14747151e1dca6d0baac",
+   "caratteri": 5710,
+   "cambiata": true
   },
   {
    "asl": "piacenza",
@@ -725,9 +725,9 @@
    "http": 200,
    "file": "piacenza/d2f7e8936576.txt",
    "titolo": "Continuità assistenziale (ex Guardia medica) - Azienda Unità Sanitaria Locale di Piacenza",
-   "sha": "4e76f120ff96c101ca20eb15a24f111741382f322cf20222a770e0d1560c1f32",
-   "caratteri": 9679,
-   "cambiata": false
+   "sha": "1a67489a1df487a50994bf7c8141b9f17b11cd0971a559399d1c454cb3cd0463",
+   "caratteri": 9624,
+   "cambiata": true
   },
   {
    "asl": "piacenza",
@@ -736,9 +736,20 @@
    "http": 200,
    "file": "piacenza/4abd24ddaeab.txt",
    "titolo": "Punto unico di accesso - Pua di Fiorenzuola - Azienda Unità Sanitaria Locale di Piacenza",
-   "sha": "9de1bff77ca6691bf1e9f7119c106c7526bcb99af7c32aea66b6605f3427520b",
-   "caratteri": 7117,
-   "cambiata": false
+   "sha": "dde68d5408f3d58843419f437a0530fc1590cb1248a1a241a0e9047141f60f53",
+   "caratteri": 7072,
+   "cambiata": true
+  },
+  {
+   "asl": "piacenza",
+   "url": "https://www.ausl.pc.it/it/orientamento-e-contatti",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "piacenza/179c3ecf7a71.txt",
+   "titolo": "Orientamento e contatti - Azienda Unità Sanitaria Locale di Piacenza",
+   "sha": "d4bf154b9648eea40ac7fb9bac7e730e3572e477be40c4471844caa13c390fa0",
+   "caratteri": 7244,
+   "cambiata": true
   },
   {
    "asl": "piacenza",
@@ -758,20 +769,9 @@
    "http": 200,
    "file": "piacenza/13d9c47e9c3e.txt",
    "titolo": "Sportelli unici e Centri unici di prenotazione CUP - Azienda Unità Sanitaria Locale di Piacenza",
-   "sha": "a56702543a0484aa4449888f0b8942645b3c061f88baa466e37274295daa9193",
-   "caratteri": 6559,
-   "cambiata": false
-  },
-  {
-   "asl": "piacenza",
-   "url": "https://www.ausl.pc.it/it/orientamento-e-contatti",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "piacenza/179c3ecf7a71.txt",
-   "titolo": "Orientamento e contatti - Azienda Unità Sanitaria Locale di Piacenza",
-   "sha": "cff4efbc481a0fbb4f015feb63218265a70f46b3f92a24068ad8c27ec25aa352",
-   "caratteri": 7304,
-   "cambiata": false
+   "sha": "96e4edd5f3e971ffbec20d53b44dbe78ff398d44e33cd46e11651bef9ab81c5b",
+   "caratteri": 6524,
+   "cambiata": true
   },
   {
    "asl": "piacenza",
@@ -780,9 +780,9 @@
    "http": 200,
    "file": "piacenza/5833c89879cd.txt",
    "titolo": "Servizio infermieristico domiciliare (ADI) di Piacenza - Azienda Unità Sanitaria Locale di Piacenza",
-   "sha": "47ea46393c43f2c67f62a2c2ba7cdf96d5fc665abc2d40212b493ae64ee87319",
-   "caratteri": 7833,
-   "cambiata": false
+   "sha": "c07a65832c8e085b2f8a03e29f389b948e4d8cb1aa6487e7e4ba868b7837793d",
+   "caratteri": 7803,
+   "cambiata": true
   },
   {
    "asl": "piacenza",
@@ -791,8 +791,8 @@
    "http": 200,
    "file": "piacenza/414ee88733e7.txt",
    "titolo": "Rilascio documenti clinici - Azienda Unità Sanitaria Locale di Piacenza",
-   "sha": "821da8e581404ac53c9e6b08f187792e8b467033248b53cd8c82215cd4fc01da",
-   "caratteri": 8841,
+   "sha": "aa336ef0a92ebd66362db986e249acfd649fac3e10f7f117ee98ff2abedf1899",
+   "caratteri": 8801,
    "cambiata": true
   },
   {
@@ -802,8 +802,8 @@
    "http": 200,
    "file": "piacenza/3fd0586e2617.txt",
    "titolo": "Ufficio Cartelle cliniche di Piacenza - Azienda Unità Sanitaria Locale di Piacenza",
-   "sha": "5c9cc245639081b31f14fd8416e220be266693ec396e50e2d983524028c3272d",
-   "caratteri": 6890,
+   "sha": "fd0a09130953d1829745831212ce431a1f4927bda5c28f7c77d9a549d338391c",
+   "caratteri": 6855,
    "cambiata": true
   },
   {
@@ -813,8 +813,8 @@
    "http": 200,
    "file": "piacenza/152f862417e5.txt",
    "titolo": "Richiesta ausilio protesico - Azienda Unità Sanitaria Locale di Piacenza",
-   "sha": "c969ce70a81a0f2f17a9ce3631eb11d84101ae879676a91b680d922791470e93",
-   "caratteri": 9048,
+   "sha": "ae31b95f43eecee2888fc1a7bd77fe45dfc58f1bf8e96bf619d07171bab33da3",
+   "caratteri": 9003,
    "cambiata": true
   },
   {
@@ -826,7 +826,7 @@
    "titolo": "Il Piano della Regione per ridurre i tempi di attesa — Salute",
    "sha": "e5be218687f0b74d2db8ad2a5fecd5d5feda4a50250250320ca6252704f4362f",
    "caratteri": 6695,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "piacenza",
@@ -837,7 +837,7 @@
    "titolo": "Support FSE",
    "sha": "715d9256f5f084126ce43f5081d30b70f1cec898976733d176dfff2f8c4790af",
    "caratteri": 2798,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ravenna",
@@ -846,9 +846,9 @@
    "http": 200,
    "file": "ravenna/1c210c7e98c6.txt",
    "titolo": "Azienda USL della Romagna - AUSL Romagna",
-   "sha": "ac960d2842a3e1368ccbd5e22c5555d62bf5566e080657ad91806a2c1b27df37",
-   "caratteri": 2921,
-   "cambiata": false
+   "sha": "1266c863f375d16266b7eeb2320a13ae4f0fab1aac79d1e3a8e67f77671b73bb",
+   "caratteri": 2916,
+   "cambiata": true
   },
   {
    "asl": "ravenna",
@@ -857,9 +857,9 @@
    "http": 200,
    "file": "ravenna/f11259419b08.txt",
    "titolo": "Continuità assistenziale (Guardia medica) Forlì Cesena Ravenna Rimini - AUSL Romagna",
-   "sha": "7e86eb5a9146f978ae2e194127550cff27d8b82b14844c5a4f8d9d7d5e22dac5",
-   "caratteri": 4652,
-   "cambiata": false
+   "sha": "a60e880bab33b67337ed31208f6f523753350a18a4359104471c85cc4b82ef17",
+   "caratteri": 4622,
+   "cambiata": true
   },
   {
    "asl": "ravenna",
@@ -879,9 +879,9 @@
    "http": 200,
    "file": "ravenna/4e496ee31aa1.txt",
    "titolo": "CUP - Centro Unico di Prenotazione - AUSL Romagna",
-   "sha": "0fe022f7fc11f5cedf0b2d20d2b3337a29e81b754d39affde0246064263ff8c6",
-   "caratteri": 3339,
-   "cambiata": false
+   "sha": "aff6054bd70b4242d3263d3c1dc0f392f0ace7c6119e91a6e64850e9c9b13267",
+   "caratteri": 3329,
+   "cambiata": true
   },
   {
    "asl": "ravenna",
@@ -890,8 +890,8 @@
    "http": 200,
    "file": "ravenna/97b4d69f56ab.txt",
    "titolo": "Richiedere copia della cartella clinica, referti o documenti - AUSL Romagna",
-   "sha": "6f7580ed1582d8df3057b616e79764c7b46265dc55043b8b67b0bd12aa1ad4c6",
-   "caratteri": 5524,
+   "sha": "69784268ba880fd1a137a87ee5c356defe4288dfaea07ba54b79fd01499179c1",
+   "caratteri": 5484,
    "cambiata": true
   },
   {
@@ -901,8 +901,8 @@
    "http": 200,
    "file": "ravenna/ebc498b1d1fa.txt",
    "titolo": "Hospice - AUSL Romagna",
-   "sha": "8e05e49a57453be693f9beeecb53d50dcb1367dab403cd4fadcddc11398d1bda",
-   "caratteri": 2808,
+   "sha": "72de44882d840e2814e0e6641a5d3598047189d15b1f27b582336af08daa1836",
+   "caratteri": 2763,
    "cambiata": true
   },
   {
@@ -914,7 +914,7 @@
    "titolo": "Il Piano della Regione per ridurre i tempi di attesa — Salute",
    "sha": "e5be218687f0b74d2db8ad2a5fecd5d5feda4a50250250320ca6252704f4362f",
    "caratteri": 6695,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ravenna",
@@ -925,28 +925,51 @@
    "titolo": "Support FSE",
    "sha": "715d9256f5f084126ce43f5081d30b70f1cec898976733d176dfff2f8c4790af",
    "caratteri": 2798,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "reggio-emilia",
    "url": "https://www.ausl.re.it/",
    "controllata": "2026-10-22",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "reggio-emilia/accd7fd8e449.txt",
+   "titolo": "Home Page - AUSL RE",
+   "sha": "e6145bbadcb76a7a57213fc09b8007306871c94778751e06aa25efca7217f793",
+   "caratteri": 10652,
+   "cambiata": true
   },
   {
    "asl": "reggio-emilia",
    "url": "https://www.ausl.re.it/cau-e-continuita-assistenziale",
    "controllata": "2026-10-22",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "reggio-emilia/39283cb439a7.txt",
+   "titolo": "CAU e Continuità Assistenziale - AUSL RE",
+   "sha": "5faa9cea3b53e6c5e0fe9ab8d8732de04edeaec9971cd057baade4929e4cc74d",
+   "caratteri": 7846,
+   "cambiata": true
   },
   {
    "asl": "reggio-emilia",
    "url": "https://www.ausl.re.it/servizio-infermieristico-domiciliare",
    "controllata": "2026-10-22",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "reggio-emilia/a1e66265aee4.txt",
+   "titolo": "Servizio Infermieristico Domiciliare - AUSL RE",
+   "sha": "7e2b8da21784a8d50dbe076ecbdb1083986b438cddbfcee3e9d4be4320cd6275",
+   "caratteri": 7863,
+   "cambiata": true
+  },
+  {
+   "asl": "reggio-emilia",
+   "url": "https://www.ausl.re.it/contatti",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "reggio-emilia/b1d00ad5b39c.txt",
+   "titolo": "Contatti - AUSL RE",
+   "sha": "2bcd290877239d29885d4069b2e7d97c3c5b889656485f19512eed3d11ea66d3",
+   "caratteri": 9288,
+   "cambiata": true
   },
   {
    "asl": "reggio-emilia",
@@ -963,29 +986,34 @@
    "asl": "reggio-emilia",
    "url": "https://www.ausl.re.it/prenotazione",
    "controllata": "2026-10-22",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "reggio-emilia/7dafa9019eab.txt",
+   "titolo": "Prenotazione esami e visite - AUSL RE",
+   "sha": "03bf30f1ac368a657551e8e308aec446348f67c4b3397b98fa5adb64ca1c66fa",
+   "caratteri": 10517,
+   "cambiata": true
   },
   {
    "asl": "reggio-emilia",
    "url": "https://www.ausl.re.it/correggio-sabato-24-ottobre-laurp-restera-chiuso",
    "controllata": "2026-10-22",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
-  },
-  {
-   "asl": "reggio-emilia",
-   "url": "https://www.ausl.re.it/contatti",
-   "controllata": "2026-10-22",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "reggio-emilia/951ab06261af.txt",
+   "titolo": "Correggio, sabato 24 ottobre l’URP resterà chiuso - AUSL RE",
+   "sha": "4a0efaa3ae00f34f6a3b0c1aee4d061c63378b77a00e5b103dbaa46567382e7a",
+   "caratteri": 7148,
+   "cambiata": true
   },
   {
    "asl": "reggio-emilia",
    "url": "https://www.ausl.re.it/visite-ed-esami-il-piano-di-interventi-per-ridurre-i-tempi-di-attesa-e-i-disagi-per-i-cittadini",
    "controllata": "2026-10-22",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "reggio-emilia/5d5941a72985.txt",
+   "titolo": "Visite ed esami: il piano di interventi per ridurre i tempi di attesa e i disagi per i cittadini - AUSL RE",
+   "sha": "43271f34c30292b6699fd8187eea5b3b49acafdba9a727e084d5ebb0a809e798",
+   "caratteri": 12380,
+   "cambiata": true
   },
   {
    "asl": "reggio-emilia",
@@ -996,7 +1024,7 @@
    "titolo": "Richiedere documenti sanitari - AUSL RE",
    "sha": "fd9639163e7a42ef7eb0d0aaf13eb53e10f5c9b6b1325c9e9456c38d5552dc84",
    "caratteri": 9481,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "reggio-emilia",
@@ -1007,7 +1035,7 @@
    "titolo": "Come accedere alle Cure Palliative - AUSL RE",
    "sha": "e9a99e49bf52b108352d1786475c2ea2938931c159bb10aa378ae7e4e39792bd",
    "caratteri": 7369,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "reggio-emilia",
@@ -1018,7 +1046,7 @@
    "titolo": "Accoglienza Cure Palliative - AUSL RE",
    "sha": "2940292b314305ccae18effc8a7788b6fad4674d46f42dacf76c20074055d105",
    "caratteri": 8353,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "reggio-emilia",
@@ -1029,7 +1057,7 @@
    "titolo": "Protesi e ausili per persone con menomazioni e disabilità - AUSL RE",
    "sha": "ddd69bb5e93a58afc5ad01686109794d0c26576c9728d8116c8a2b627dc75ef5",
    "caratteri": 8834,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "reggio-emilia",
@@ -1040,7 +1068,7 @@
    "titolo": "Il Piano della Regione per ridurre i tempi di attesa — Salute",
    "sha": "e5be218687f0b74d2db8ad2a5fecd5d5feda4a50250250320ca6252704f4362f",
    "caratteri": 6695,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "reggio-emilia",
@@ -1051,7 +1079,7 @@
    "titolo": "Support FSE",
    "sha": "715d9256f5f084126ce43f5081d30b70f1cec898976733d176dfff2f8c4790af",
    "caratteri": 2798,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "rimini",
@@ -1060,9 +1088,9 @@
    "http": 200,
    "file": "rimini/1c210c7e98c6.txt",
    "titolo": "Azienda USL della Romagna - AUSL Romagna",
-   "sha": "ac960d2842a3e1368ccbd5e22c5555d62bf5566e080657ad91806a2c1b27df37",
-   "caratteri": 2921,
-   "cambiata": false
+   "sha": "1266c863f375d16266b7eeb2320a13ae4f0fab1aac79d1e3a8e67f77671b73bb",
+   "caratteri": 2916,
+   "cambiata": true
   },
   {
    "asl": "rimini",
@@ -1071,9 +1099,9 @@
    "http": 200,
    "file": "rimini/f11259419b08.txt",
    "titolo": "Continuità assistenziale (Guardia medica) Forlì Cesena Ravenna Rimini - AUSL Romagna",
-   "sha": "7e86eb5a9146f978ae2e194127550cff27d8b82b14844c5a4f8d9d7d5e22dac5",
-   "caratteri": 4652,
-   "cambiata": false
+   "sha": "a60e880bab33b67337ed31208f6f523753350a18a4359104471c85cc4b82ef17",
+   "caratteri": 4622,
+   "cambiata": true
   },
   {
    "asl": "rimini",
@@ -1093,9 +1121,9 @@
    "http": 200,
    "file": "rimini/4e496ee31aa1.txt",
    "titolo": "CUP - Centro Unico di Prenotazione - AUSL Romagna",
-   "sha": "0fe022f7fc11f5cedf0b2d20d2b3337a29e81b754d39affde0246064263ff8c6",
-   "caratteri": 3339,
-   "cambiata": false
+   "sha": "aff6054bd70b4242d3263d3c1dc0f392f0ace7c6119e91a6e64850e9c9b13267",
+   "caratteri": 3329,
+   "cambiata": true
   },
   {
    "asl": "rimini",
@@ -1104,8 +1132,8 @@
    "http": 200,
    "file": "rimini/97b4d69f56ab.txt",
    "titolo": "Richiedere copia della cartella clinica, referti o documenti - AUSL Romagna",
-   "sha": "6f7580ed1582d8df3057b616e79764c7b46265dc55043b8b67b0bd12aa1ad4c6",
-   "caratteri": 5524,
+   "sha": "69784268ba880fd1a137a87ee5c356defe4288dfaea07ba54b79fd01499179c1",
+   "caratteri": 5484,
    "cambiata": true
   },
   {
@@ -1115,8 +1143,8 @@
    "http": 200,
    "file": "rimini/ebc498b1d1fa.txt",
    "titolo": "Hospice - AUSL Romagna",
-   "sha": "8e05e49a57453be693f9beeecb53d50dcb1367dab403cd4fadcddc11398d1bda",
-   "caratteri": 2808,
+   "sha": "72de44882d840e2814e0e6641a5d3598047189d15b1f27b582336af08daa1836",
+   "caratteri": 2763,
    "cambiata": true
   },
   {
@@ -1126,8 +1154,8 @@
    "http": 200,
    "file": "rimini/0fae453e0045.txt",
    "titolo": "Cure Palliative Rimini e Hospice Rimini - AUSL Romagna",
-   "sha": "87b881dca3347b66bd2fb40d5cedb913f7068b5ad296c0badf642ea411a51b1d",
-   "caratteri": 4863,
+   "sha": "b17f7a1e450951139ce056f628f5c4199fefbc44dc79c8049880fb8af9a2aef3",
+   "caratteri": 4828,
    "cambiata": true
   },
   {
@@ -1139,7 +1167,7 @@
    "titolo": "Il Piano della Regione per ridurre i tempi di attesa — Salute",
    "sha": "e5be218687f0b74d2db8ad2a5fecd5d5feda4a50250250320ca6252704f4362f",
    "caratteri": 6695,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "rimini",
@@ -1150,7 +1178,29 @@
    "titolo": "Support FSE",
    "sha": "715d9256f5f084126ce43f5081d30b70f1cec898976733d176dfff2f8c4790af",
    "caratteri": 2798,
+   "cambiata": false
+  },
+  {
+   "asl": "regole",
+   "url": "https://salute.regione.emilia-romagna.it/campagne/tempi-dattesa-per-visite-ed-esami",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regole/af82cdfdead0.txt",
+   "titolo": "Tempi di attesa per visite ed esami — Salute",
+   "sha": "6b13487dd94b536e73a0aa1f3632e30f5ccbcf1f24b20485b2279b7735c3e5e7",
+   "caratteri": 5683,
    "cambiata": true
+  },
+  {
+   "asl": "regole",
+   "url": "https://salute.regione.emilia-romagna.it/cure-primarie/visite-ed-esami/il-piano-della-regione-per-ridurre-i-tempi-di-attesa",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regole/7531125f61ca.txt",
+   "titolo": "Il Piano della Regione per ridurre i tempi di attesa — Salute",
+   "sha": "e5be218687f0b74d2db8ad2a5fecd5d5feda4a50250250320ca6252704f4362f",
+   "caratteri": 6695,
+   "cambiata": false
   },
   {
    "asl": "inps-emilia-romagna",
@@ -1250,6 +1300,470 @@
    "sha": "87b813d488a43508b9a7852c99bc7f62d69df7996e0e1967b456e6074b73b7c0",
    "caratteri": 42561,
    "cambiata": false
+  },
+  {
+   "asl": "inps-emilia-romagna",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.138000.138000-elencoStruttureInps.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-emilia-romagna/cb61e4b938b6.txt",
+   "titolo": "Portale Inps - Emilia Romagna",
+   "sha": "e56f8094a51abb1d1de86ae53bafd41abc084af82976c5e5bd08fe8e8395e235",
+   "caratteri": 42199,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-emilia-romagna",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-emilia-romagna/aad63b63390a.txt",
+   "titolo": "Portale Inps - Riforma della disabilità: al via la terza fase sperimentale",
+   "sha": "3e22d1cf04da5a9b152d4fd5f6033e4b4b86d0937bfc137d142d7c9ec25bd108",
+   "caratteri": 46281,
+   "cambiata": false
+  },
+  {
+   "asl": "inps-emilia-romagna",
+   "url": "https://www.disabilita.governo.it/it/notizie/al-via-sperimentazione-riforma-disabilita-in-altre-40-province/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-emilia-romagna/cb8037740243.txt",
+   "titolo": "Al via sperimentazione riforma disabilità in altre 40 province",
+   "sha": "4ec5a460fb50b2e4f8c1006136eb2184acf64b45b3b190e378501ad4c004e6e3",
+   "caratteri": 3002,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-emilia-romagna",
+   "url": "https://salute.regione.emilia-romagna.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-emilia-romagna/4a532d4d1cff.txt",
+   "titolo": "Salute",
+   "sha": "e8ca017269043ce43dca34a6d305e91ad0fbc723fea85f5b914257ea8fb3cf9e",
+   "caratteri": 7002,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-emilia-romagna",
+   "url": "https://salute.regione.emilia-romagna.it/ssr",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-emilia-romagna/2f102e2c2bd0.txt",
+   "titolo": "Servizio sanitario regionale — Salute",
+   "sha": "571a8f0e4f8c9c9e9f5489d7fde23775cccfb5c71e32a8dc1035419787acebaf",
+   "caratteri": 2348,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-emilia-romagna",
+   "url": "https://salute.regione.emilia-romagna.it/cure-primarie/visite-ed-esami/per-prenotare",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-emilia-romagna/e4b023c3b1bb.txt",
+   "titolo": "Per prenotare — Salute",
+   "sha": "2d9831d2cc70cf1048c99972d3282a501605eca7bfa7952547597c82000dc53a",
+   "caratteri": 1836,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-emilia-romagna",
+   "url": "https://salute.regione.emilia-romagna.it/emergenzaurgenza/domande-frequenti",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-emilia-romagna/1826cd98ee26.txt",
+   "titolo": "Domande frequenti — Salute",
+   "sha": "3af75db6daa6e089edb6f4838b2e589783938127765c575f3589aa4e81da2923",
+   "caratteri": 14559,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-emilia-romagna",
+   "url": "https://salute.regione.emilia-romagna.it/siseps/sanita/emergenza-urgenza/cau",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-emilia-romagna/c99a6cd501fb.txt",
+   "titolo": "CAU - Centri di Assistenza e Urgenza — Salute",
+   "sha": "1dd50e12d02846c941e0bcdb369d2d99830c64940e183b9fd0f3da267a83b0d0",
+   "caratteri": 3697,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-emilia-romagna",
+   "url": "https://salute.regione.emilia-romagna.it/fascicolo-sanitario-elettronico-2-0",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-emilia-romagna/1c51603487a6.txt",
+   "titolo": "Fascicolo Sanitario Elettronico 2.0 — Salute",
+   "sha": "01b1ed4f4c2d5290a831d46339390ab6e9716efaf2359f086634604844fa12c7",
+   "caratteri": 4327,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-emilia-romagna",
+   "url": "https://support.fascicolo-sanitario.it/guida/informazioni-utili/cos%26%2339%3B%C3%A8-il-fascicolo-sanitario-elettronico-%28fse%29",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-emilia-romagna/31722b14d9ae.txt",
+   "titolo": "Support FSE",
+   "sha": "d640865b9301bbb41101c2f09f9c7ee3c1c05c52f9280a8f7b8f1d4e8b3a099f",
+   "caratteri": 2306,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-emilia-romagna",
+   "url": "https://support.fascicolo-sanitario.it/guida/informazioni-utili/domande-frequenti",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-emilia-romagna/65c04a2439ad.txt",
+   "titolo": "Support FSE",
+   "sha": "680f896ac69c19f34117c194dba4cd05d32fb2e5b108d536dcf3a5037847a9a1",
+   "caratteri": 12842,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-emilia-romagna",
+   "url": "https://support.fascicolo-sanitario.it/guida/accesso-mobile/app-fse",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-emilia-romagna/2267767c50f8.txt",
+   "titolo": "Support FSE",
+   "sha": "3f57d33a2c46a5a049989e14a83dc1f5db0212a4f75a834b81b8fbdad54bd277",
+   "caratteri": 2071,
+   "cambiata": true
+  },
+  {
+   "asl": "ausl-piacenza",
+   "url": "https://www.ausl.pc.it/it/strutture-e-territorio/dove-siamo/ospedali/ospedale-di-piacenza/sportello-unico-cup-piacenza-ospedale",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ausl-piacenza/83c9c058e3b6.txt",
+   "titolo": "Sportello Front office CUP Piacenza (Polichirurgico) - Azienda Unità Sanitaria Locale di Piacenza",
+   "sha": "ff5d8f1a3f63dd918c2da54963bfd16884511b7d9befcd1a4f4dcca645836921",
+   "caratteri": 7398,
+   "cambiata": true
+  },
+  {
+   "asl": "ausl-piacenza",
+   "url": "https://www.ausl.pc.it/it/prestazioni-e-percorsi-di-cura/assistenza-socio-sanitaria",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ausl-piacenza/7ff385c392a6.txt",
+   "titolo": "Assistenza sociosanitaria - Azienda Unità Sanitaria Locale di Piacenza",
+   "sha": "f71b45eaaf09c6a61b468e405578c7ff44ec7a3f7049c27402313c338029895e",
+   "caratteri": 7580,
+   "cambiata": true
+  },
+  {
+   "asl": "ausl-parma",
+   "url": "https://www.ausl.pr.it/come_fare/sportelli_unici/default.aspx",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ausl-parma/686fd3d75fdc.txt",
+   "titolo": "AUSL | Come fare per",
+   "sha": "80eda634e1f1ab153d686a6ddc5d8e661fd12f105046e6ee6581686dc1b70541",
+   "caratteri": 10914,
+   "cambiata": true
+  },
+  {
+   "asl": "ausl-parma",
+   "url": "https://www.ausl.pr.it/comunicazione_stampa/archivio_3/punti_unici_accesso_nuovo_servzio_integrazione.aspx",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ausl-parma/61441c9ae720.txt",
+   "titolo": "AUSL | Comunicazione e stampa | Nel Distretto di Fidenza nuovi PUA per l'integrazione socio-sanitaria",
+   "sha": "14abecfc69570435e7405ada0ab892954c1c54e3efa3e92e7f8751100440d05f",
+   "caratteri": 12752,
+   "cambiata": true
+  },
+  {
+   "asl": "ausl-reggio-emilia",
+   "url": "https://www.ausl.re.it/comunicazione/opuscoli-informativi/urp-ufficio-relazioni-con-il-pubblico",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
+   "asl": "ausl-reggio-emilia",
+   "url": "https://www.ausl.re.it/come-prenotare",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ausl-reggio-emilia/4e80be278fb4.txt",
+   "titolo": "Come prenotare - AUSL RE",
+   "sha": "9d3a28779e10347864fbd011cd4f8ccc4d00d20be1d052db823648096350627d",
+   "caratteri": 8885,
+   "cambiata": true
+  },
+  {
+   "asl": "ausl-reggio-emilia",
+   "url": "https://www.ausl.re.it/continuita-assistenziale-ex-guardia-medica2023",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ausl-reggio-emilia/5f763c6347f9.txt",
+   "titolo": "Continuità assistenziale (ex guardia medica) - AUSL RE",
+   "sha": "b7f6b487aa9dd1d7a6444fc51f14d81608a308bc2af2b6de42024754676b8bb6",
+   "caratteri": 7853,
+   "cambiata": true
+  },
+  {
+   "asl": "ausl-reggio-emilia",
+   "url": "https://www.ausl.re.it/servizi-territoriali/servizio-di-continuit%C3%A0-assistenziale-ex-guardia-medica",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
+   "asl": "ausl-reggio-emilia",
+   "url": "https://www.ausl.re.it/servizi-territoriali/servizio-infermieristico-domiciliare",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
+   "asl": "ausl-reggio-emilia",
+   "url": "https://www.ausl.re.it/allegati/Informativa_ADI_240415111342.pdf",
+   "controllata": "2026-10-22",
+   "nota": "file, non controllato"
+  },
+  {
+   "asl": "ausl-modena",
+   "url": "https://www.ausl.mo.it/luogo/urp-ufficio-relazioni-con-il-pubblico-modena/",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
+   "asl": "ausl-modena",
+   "url": "https://www.ausl.mo.it/strutture/guardia-medica-sedi/",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
+   "asl": "ausl-modena",
+   "url": "https://www.ausl.mo.it/servizi-e-prestazioni/cure-domiciliari-e-assistenza-domiciliare/",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
+   "asl": "ausl-modena",
+   "url": "https://www.ausl.mo.it/come-fare-per/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ausl-modena/8978d204a573.txt",
+   "titolo": "Come fare per - SERVIZIO SANITARIO REGIONALE EMILIA-ROMAGNA",
+   "sha": "2cff58f4829e8ec583362931b8fc7ab05a5901d8a3afe18f878354525840d71d",
+   "caratteri": 2027,
+   "cambiata": true
+  },
+  {
+   "asl": "ausl-bologna",
+   "url": "https://www.ausl.bologna.it/per-i-cittadini/cagm",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.ausl.bologna.it/cit/cagm",
+   "file": "ausl-bologna/580c85ad76cf.txt",
+   "titolo": "Il servizio di Continuità Assistenziale — Azienda USL di Bologna",
+   "sha": "27fc267382bb706a745552e859ff7c4241833d1ddfd2d7d3f682161e721907d3",
+   "caratteri": 8150,
+   "cambiata": true
+  },
+  {
+   "asl": "ausl-bologna",
+   "url": "https://www.ausl.bologna.it/guida-ai-servizi/luoghi/14823/312840",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ausl-bologna/3768ae853caa.txt",
+   "titolo": "Servizio di continuità assistenziale (guardia medica) — Azienda USL di Bologna",
+   "sha": "c5eef7fa475f0489897faecb448bbf003ce86ca814b79baba9b550053f828c1a",
+   "caratteri": 6063,
+   "cambiata": true
+  },
+  {
+   "asl": "ausl-bologna",
+   "url": "https://www.ausl.bologna.it/guida-ai-servizi/luoghi/16689",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ausl-bologna/76d0151ba739.txt",
+   "titolo": "PUA Punto Unico di Accesso — Azienda USL di Bologna",
+   "sha": "10c6d20fea2f4c3bba1137584e4c6d3c6e151b276c7a245f37cc02bb80df47a2",
+   "caratteri": 3521,
+   "cambiata": true
+  },
+  {
+   "asl": "ausl-bologna",
+   "url": "https://www.ausl.bologna.it/guida-ai-servizi/luoghi/16610",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ausl-bologna/2dcd465a3bea.txt",
+   "titolo": "CAU Centro di Assistenza e Urgenza — Azienda USL di Bologna",
+   "sha": "1a350043b102c03272f58d7f18cbbf1e55088ac16d9196a0530497249f09d06d",
+   "caratteri": 3589,
+   "cambiata": true
+  },
+  {
+   "asl": "ausl-imola",
+   "url": "https://www.ausl.imola.bo.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.ausl.imola.bo.it/home",
+   "file": "ausl-imola/cd7d3a537196.txt",
+   "titolo": "Home",
+   "sha": "a15d4e64e817555faff604ee1fad2e5badae864c559ba875abdf1d9676bff350",
+   "caratteri": 14650,
+   "cambiata": true
+  },
+  {
+   "asl": "ausl-imola",
+   "url": "https://www.ausl.imola.bo.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/25/UT/systemPrint",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ausl-imola/a62e3d27cbd9.txt",
+   "titolo": "Azienda USL Imola - U.R.P",
+   "sha": "b386baf49306706a56164ce2ca8726591e33d0e5f05a8e28f379bdd7402995a5",
+   "caratteri": 5168,
+   "cambiata": true
+  },
+  {
+   "asl": "ausl-imola",
+   "url": "https://www.ausl.imola.bo.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/5802",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ausl-imola/bec86d6ca460.txt",
+   "titolo": "Richiamo telefonico per la conferma o disdetta delle prenotazioni",
+   "sha": "102e094b8c46ad88ba5ac6abd031ec1c115325c10b43030c359481d8079bae9d",
+   "caratteri": 14176,
+   "cambiata": true
+  },
+  {
+   "asl": "ausl-imola",
+   "url": "https://www.ausl.imola.bo.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/2708",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ausl-imola/307b32da61d1.txt",
+   "titolo": "A chi rivolgersi al di fuori degli orari previsti dalla Convenzione Nazionale per l'attivit&agrave; del medico di famiglia?",
+   "sha": "ccb2173962a9793af82dd75ddbbe4c135dd21cd870a3fb62878710c46e766ee3",
+   "caratteri": 12889,
+   "cambiata": true
+  },
+  {
+   "asl": "ausl-ferrara",
+   "url": "https://www.ausl.fe.it/servizi-e-prestazioni/visite-specialistiche/prenotazioni-online-di-visite-ed-esami-specialistici",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ausl-ferrara/e973642dc7c1.txt",
+   "titolo": "Prenotazioni online di visite ed esami specialistici - Azienda Unità Sanitaria Locale di Ferrara",
+   "sha": "69e5b81f0b0fc5c9db2c706f666282167a86442b6c3c7f067d91f6d3f7952b35",
+   "caratteri": 4637,
+   "cambiata": true
+  },
+  {
+   "asl": "ausl-ferrara",
+   "url": "https://www.ausl.fe.it/servizi-e-prestazioni/visite-specialistiche/disdetta-visite-ed-esami",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ausl-ferrara/e187b1633704.txt",
+   "titolo": "Disdetta visite ed esami - Azienda Unità Sanitaria Locale di Ferrara",
+   "sha": "0da8ee4a714c782a3e2cdc04b35e98bf3bd79cc1f651de22c7275b02496d59a8",
+   "caratteri": 4410,
+   "cambiata": true
+  },
+  {
+   "asl": "ausl-ferrara",
+   "url": "https://www.ausl.fe.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/assistenza-domiciliare",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ausl-ferrara/324a28a50814.txt",
+   "titolo": "Assistenza domiciliare - Azienda Unità Sanitaria Locale di Ferrara",
+   "sha": "68c487d2b0319c7bbc56240af992bf2d7ac1d77cf2c87aa2caee8766952cdd86",
+   "caratteri": 6924,
+   "cambiata": true
+  },
+  {
+   "asl": "ausl-ferrara",
+   "url": "https://www.ausl.fe.it/servizi-e-prestazioni/fascicolo-sanitario-elettronico",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ausl-ferrara/0989610ae071.txt",
+   "titolo": "Fascicolo Sanitario Elettronico - Azienda Unità Sanitaria Locale di Ferrara",
+   "sha": "c8f41bfe2f60fb9840d727488bcafb5d8e883fa8d7740400fe11b1d13b2abbc5",
+   "caratteri": 8569,
+   "cambiata": true
+  },
+  {
+   "asl": "ausl-romagna",
+   "url": "https://www.auslromagna.it/urp",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ausl-romagna/8c8a066b5ee3.txt",
+   "titolo": "Ufficio Relazioni con il Pubblico - AUSL Romagna",
+   "sha": "f449973db61a33c38b391db59d1e2bb072997d9a0c7afb732c8ff03d4910da1e",
+   "caratteri": 1473,
+   "cambiata": true
+  },
+  {
+   "asl": "ausl-romagna",
+   "url": "https://www.auslromagna.it/servizi/accoglienza-informazioni-servizi-sanitari",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ausl-romagna/09ee79ba20ea.txt",
+   "titolo": "Accoglienza e informazioni per l'accesso ai servizi sanitari - AUSL Romagna",
+   "sha": "12f1621645f56cecdbf0a44be5e4603fc0be3a15d9009fe7bd5385c85bdbbdde",
+   "caratteri": 3483,
+   "cambiata": true
+  },
+  {
+   "asl": "ausl-romagna",
+   "url": "https://www.auslromagna.it/servizi/prenotare-disdire",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ausl-romagna/dff6353bc6d9.txt",
+   "titolo": "Modalità di prenotazione e disdetta prestazioni specialistiche - AUSL Romagna",
+   "sha": "87b7085003f25e84d46f17a4023a740379681e760a479cc07cfd52978c89b85a",
+   "caratteri": 6073,
+   "cambiata": true
+  },
+  {
+   "asl": "ausl-romagna",
+   "url": "https://www.auslromagna.it/luoghi/mappa-sportelli-cup/sportelli-cup",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ausl-romagna/9f7a4b5bd7e4.txt",
+   "titolo": "Sportelli unici CUP - AUSL Romagna",
+   "sha": "ef8d1dfd634707ccd8a938f1ce1cc48dc672fd05666345be38322a4370c795f3",
+   "caratteri": 2930,
+   "cambiata": true
+  },
+  {
+   "asl": "ausl-romagna",
+   "url": "https://www.auslromagna.it/servizi/guardia-medica/ambulatori-continuita-assistenziale",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.auslromagna.it/luoghi/guardia-medica",
+   "file": "ausl-romagna/2c5b4ada6e74.txt",
+   "titolo": "Continuità assistenziale (Guardia medica) Forlì Cesena Ravenna Rimini - AUSL Romagna",
+   "sha": "a60e880bab33b67337ed31208f6f523753350a18a4359104471c85cc4b82ef17",
+   "caratteri": 4622,
+   "cambiata": true
+  },
+  {
+   "asl": "ausl-romagna",
+   "url": "https://www.auslromagna.it/servizi/servizi-alfabetico/schede-informative/1073-domiciliare-assistenza",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.auslromagna.it/servizi/assistenza-domiciliare",
+   "file": "ausl-romagna/542790379f16.txt",
+   "titolo": "Assistenza domiciliare - AUSL Romagna",
+   "sha": "74c39bbe2d94c6d9aa6c88faa51a0f710c9907526ac0803fbf385872da48a038",
+   "caratteri": 3337,
+   "cambiata": true
+  },
+  {
+   "asl": "ausl-romagna",
+   "url": "https://www.auslromagna.it/attuazione-misure-pnrr/missione-6/1-2-2-cot",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ausl-romagna/5d52c0f18ff6.txt",
+   "titolo": "Centrali Operative Territoriali (COT) - AUSL Romagna",
+   "sha": "b9e90eb2edfa527d3bfce1dc2ad63993ff5a4465b1ab6a71f513cd7cbc4bd9af",
+   "caratteri": 6530,
+   "cambiata": true
   }
  ]
 }

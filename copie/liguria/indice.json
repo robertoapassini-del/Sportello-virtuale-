@@ -1,6 +1,6 @@
 {
  "regione": "liguria",
- "aggiornato": "2026-10-22T07:48:43.983Z",
+ "aggiornato": "2026-10-22T09:25:27.822Z",
  "pagine": [
   {
    "asl": "genova",
@@ -31,9 +31,21 @@
    "http": 200,
    "file": "genova/6dd3c8988f52.txt",
    "titolo": "Assistenza domiciliare integrata - ASL3",
-   "sha": "7bc11728dda24962bac9e9e77996f77a7ed1d9ea1e7a832368c7dbe5608fd2ca",
-   "caratteri": 10097,
-   "cambiata": false
+   "sha": "194ad23fd94f6a7db779eb88732fd9b61314400c5bfeeb706b8a0dfa5f7db90b",
+   "caratteri": 9768,
+   "email_nascoste": 8,
+   "cambiata": true
+  },
+  {
+   "asl": "genova",
+   "url": "https://www.asl4.liguria.it/contatti/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "genova/efa0db107f83.txt",
+   "titolo": "Contatti, Indirizzi e Mail Istituzionali - Asl4",
+   "sha": "d9f0a73685955700902ce8775e8edda639f7c61ea7e6aac0d472ca09bb4f19f7",
+   "caratteri": 3767,
+   "cambiata": true
   },
   {
    "asl": "genova",
@@ -42,7 +54,7 @@
    "http": 200,
    "file": "genova/6d2ea13a4aa5.txt",
    "titolo": "giunta - Sanità, al via in Liguria il nuovo numero 116117 per i casi meno urgenti. Attivo nel Tigullio da questa sera, martedì 16 dicembre - Regione Liguria",
-   "sha": "c185c7cf6b9fd0dfb9df933af797e8d5f65f3b7a621976a54c6b6a79a6baeb58",
+   "sha": "bfcdd9345860b5ad745a31d311b69f46e14d75f08d0af6e0f0c4d6fa76e9ac38",
    "caratteri": 4669,
    "cambiata": true
   },
@@ -53,7 +65,7 @@
    "http": 200,
    "file": "genova/97c265ccde78.txt",
    "titolo": "salute - prenotazione visite ed esami col cup - Regione Liguria",
-   "sha": "111f37041d70b790ee774e24ce710bda482954409dc28faa90811260df94c0dd",
+   "sha": "2542baef2df7b81d71ec40024a6dc0e876271b5b54a14a76d9bb8d6205c98582",
    "caratteri": 4863,
    "cambiata": true
   },
@@ -64,9 +76,10 @@
    "http": 200,
    "file": "genova/3a30046f5edf.txt",
    "titolo": "Ufficio stampa e della Comunicazione e Urp - ASL3",
-   "sha": "ef8ac128a8b8bc7831abd64f7338c2d1a9826267b87863d4442a48de4d8f1f5a",
-   "caratteri": 12555,
-   "cambiata": false
+   "sha": "cca960ef50c8b269ec7087f2d730d3fe28fb1426f31a4a8fb095af2d82943464",
+   "caratteri": 12356,
+   "email_nascoste": 3,
+   "cambiata": true
   },
   {
    "asl": "genova",
@@ -86,9 +99,10 @@
    "http": 200,
    "file": "genova/69b49618cf27.txt",
    "titolo": "URP - ASL3",
-   "sha": "52bd4580abc25a555643db9e4822b948f5e480b8408c77393457594fb4600613",
-   "caratteri": 8446,
-   "cambiata": false
+   "sha": "f980dfdc906c20473593b6f58815028eb4dcef732d5a5440ff258a520e4806d6",
+   "caratteri": 8310,
+   "email_nascoste": 2,
+   "cambiata": true
   },
   {
    "asl": "genova",
@@ -127,7 +141,7 @@
    "titolo": "Liste di attesa - Numero Verde - ASL3",
    "sha": "2eb9f52a250d529494946fb76c6526f0b4fe24786dcc838f8336053ac6e0a74b",
    "caratteri": 11743,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "genova",
@@ -136,8 +150,9 @@
    "http": 200,
    "file": "genova/1e2bb5ce1199.txt",
    "titolo": "Cartella clinica - come e dove richiedere la copia - ASL3",
-   "sha": "cf236b4e16bd3da598aa4deed294fd2b96ed337330d32332d1bf2ce6c6658784",
-   "caratteri": 11491,
+   "sha": "9e5468ef480b0b7e81176808df7b66a6617fc9744e4ab603f5c8b2f3b9df64ff",
+   "caratteri": 11057,
+   "email_nascoste": 8,
    "cambiata": true
   },
   {
@@ -149,7 +164,7 @@
    "titolo": "Cartelle Cliniche e Referti - Asl4",
    "sha": "74c7e474ff464102f7134f816700d629a7f13f8e13291967d2fc57415e326bf8",
    "caratteri": 3177,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "genova",
@@ -173,7 +188,7 @@
    "titolo": "S.S.A. HOSPICE E CURE PALLIATIVE - Asl4",
    "sha": "6d528a97880f80b35cc5ae9484bbef725836ac2380b22cbf44a59abe5f03bd39",
    "caratteri": 6838,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "genova",
@@ -182,8 +197,9 @@
    "http": 200,
    "file": "genova/c9d3983c39eb.txt",
    "titolo": "Anagrafe sanitaria - sedi - ASL3",
-   "sha": "07d38da9c42f622bc326cf7789311fa12684063a283e73f8692c7ef73d4523b3",
-   "caratteri": 13019,
+   "sha": "26da677a94c203aa791f0c732f3bd25cab18db6e084f1209cc5e9700c632242b",
+   "caratteri": 11988,
+   "email_nascoste": 17,
    "cambiata": true
   },
   {
@@ -195,7 +211,7 @@
    "titolo": "SC DISTRETTO 15 - Asl4",
    "sha": "74ebfbf7c0c126c5ad441dfe90842497227ed41525b5b88e91af8ee9ff566d05",
    "caratteri": 8027,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "genova",
@@ -206,7 +222,7 @@
    "titolo": "Liste di attesa in Liguria per visite e prestazioni diagnostiche - ATS Liguria",
    "sha": "ffeaecc3df3a0981626b48540133c2e03c64c07b00d8e7506b6a6c7574d925d8",
    "caratteri": 7750,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "genova",
@@ -215,7 +231,7 @@
    "http": 200,
    "file": "genova/8cfbeba760c6.txt",
    "titolo": "salute - Salutesimplex - Regione Liguria",
-   "sha": "59cae06f995f193b70a1d14f08ce13e620fde68d2535d065ae7d72e1d3e88ff4",
+   "sha": "e13c3a7a5ba04172fd4fd78c3c86fbc85e924c7e0826ee9b1d0796d9e6077cdd",
    "caratteri": 5131,
    "cambiata": true
   },
@@ -228,7 +244,7 @@
    "titolo": "Portale Inps - Riforma della disabilità: al via la terza fase sperimentale",
    "sha": "3e22d1cf04da5a9b152d4fd5f6033e4b4b86d0937bfc137d142d7c9ec25bd108",
    "caratteri": 46281,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "imperia",
@@ -270,9 +286,10 @@
    "http": 200,
    "file": "imperia/6ca79db7cb39.txt",
    "titolo": "Casa della Comunità - Imperia - ASL1",
-   "sha": "66c8cdb0f570bc5bf9a67cf55b7fe9d8ef165105c64cb96a9e8dc4c8aa165f20",
-   "caratteri": 7552,
-   "cambiata": false
+   "sha": "c99e02e1dc8f973dfdfbb90dd79021e66a631d99d14f550e41bc6fed2fd6b65e",
+   "caratteri": 7288,
+   "email_nascoste": 4,
+   "cambiata": true
   },
   {
    "asl": "imperia",
@@ -292,9 +309,10 @@
    "http": 200,
    "file": "imperia/2e74bb6b7956.txt",
    "titolo": "Ufficio relazioni con il pubblico - URP - ASL1",
-   "sha": "60cd2bad84c076d8f99d9d47fbaf3d2adaedd0c3710f7b3b4fcd21b58fd7fb4c",
-   "caratteri": 7441,
-   "cambiata": false
+   "sha": "7bc40315e1d508c5c03e7c03a629c13fa725aa526f268d24851aa133dec16401",
+   "caratteri": 7296,
+   "email_nascoste": 2,
+   "cambiata": true
   },
   {
    "asl": "imperia",
@@ -303,9 +321,10 @@
    "http": 200,
    "file": "imperia/a2eac65fe98a.txt",
    "titolo": "Distretto sanitario ventimigliese - ASL1",
-   "sha": "b164b4f40d14c1b0fe90647afcb9d2a89ca922051b2ae08621772d42e808be4a",
-   "caratteri": 7257,
-   "cambiata": false
+   "sha": "2fd24e5030eed25e2d4bc7f6780c5429a5ab55f0efed894e6a0450f9ebb8db51",
+   "caratteri": 7055,
+   "email_nascoste": 3,
+   "cambiata": true
   },
   {
    "asl": "imperia",
@@ -314,7 +333,7 @@
    "http": 200,
    "file": "imperia/51c7b22af737.txt",
    "titolo": "salute - Numeri utili delle Case della Comunità - Regione Liguria",
-   "sha": "db9686c5d88d51ca6cc5795589d551dd9ad58e1b5f39f420d9ed0ae8bdc6852e",
+   "sha": "527ff4d96c0bd9288e1b234a0020228fa800cf7e72daf4f097a230fabc431f4c",
    "caratteri": 4353,
    "cambiata": true
   },
@@ -325,8 +344,9 @@
    "http": 200,
    "file": "imperia/7413fd002e6f.txt",
    "titolo": "Uffici cartelle cliniche stabilimenti ospedalieri Area 1 - ASL1",
-   "sha": "037c40f8340348822ed57abb9b4cf3e107c581eb68e3d9c247a75db4ff8913a3",
-   "caratteri": 7174,
+   "sha": "3512ba4125944b0f2dcaa61100223c37b5a14f075a24274cc3602c325833979c",
+   "caratteri": 6920,
+   "email_nascoste": 4,
    "cambiata": true
   },
   {
@@ -336,8 +356,9 @@
    "http": 200,
    "file": "imperia/47816b65c47b.txt",
    "titolo": "Protesica e Medicina convenzionata - ASL1",
-   "sha": "4086195d892fcae5e49022161c71c6f394c68ff18091dd624423e644a81bf332",
-   "caratteri": 9081,
+   "sha": "3153ed679c4f962fd5524991240afbaa74f674cad4cc14db7a16db281d2f47b2",
+   "caratteri": 9010,
+   "email_nascoste": 1,
    "cambiata": true
   },
   {
@@ -347,8 +368,9 @@
    "http": 200,
    "file": "imperia/a83914306677.txt",
    "titolo": "PUA - Punto Unico di Accesso - ASL1",
-   "sha": "5ce099295bb08615a22442450d12d4e50e873b65dd77bd02aca0f9c7d88b8fac",
-   "caratteri": 7908,
+   "sha": "d83c5cf0705fdc1b631c639f3a8fe768e6ff21bd49ff0817eca7af6c7456d6ca",
+   "caratteri": 7638,
+   "email_nascoste": 4,
    "cambiata": true
   },
   {
@@ -360,7 +382,7 @@
    "titolo": "Liste di attesa in Liguria per visite e prestazioni diagnostiche - ATS Liguria",
    "sha": "ffeaecc3df3a0981626b48540133c2e03c64c07b00d8e7506b6a6c7574d925d8",
    "caratteri": 7750,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "imperia",
@@ -369,7 +391,7 @@
    "http": 200,
    "file": "imperia/8cfbeba760c6.txt",
    "titolo": "salute - Salutesimplex - Regione Liguria",
-   "sha": "59cae06f995f193b70a1d14f08ce13e620fde68d2535d065ae7d72e1d3e88ff4",
+   "sha": "e13c3a7a5ba04172fd4fd78c3c86fbc85e924c7e0826ee9b1d0796d9e6077cdd",
    "caratteri": 5131,
    "cambiata": true
   },
@@ -405,6 +427,28 @@
    "sha": "cb2cfe43b013c03e0d50c2d8bf6b9972d917e780918302dba24df946ccafe12f",
    "caratteri": 7722,
    "cambiata": false
+  },
+  {
+   "asl": "la-spezia",
+   "url": "https://www.asl5.liguria.it/Home/ORARICUPANAGRAFEBRUGNATO.aspx",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "la-spezia/5967111bf656.txt",
+   "titolo": "ORARI CUP/ANAGRAFE BRUGNATO",
+   "sha": "cf1c7a4c8e398fa5c09f3eef53ba1aa3150e8e2442ea322c8e5b6cb912e19597",
+   "caratteri": 7185,
+   "cambiata": false
+  },
+  {
+   "asl": "la-spezia",
+   "url": "https://www.asl5.liguria.it/Home/Contatti.aspx",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "la-spezia/f0397612c822.txt",
+   "titolo": "Contatti",
+   "sha": "794ddd37a822e7bf67c9378e9ee7cdaa01064b28b810aceb6a911043c80251d6",
+   "caratteri": 7684,
+   "cambiata": true
   },
   {
    "asl": "la-spezia",
@@ -448,7 +492,7 @@
    "titolo": "RECUPERO PRESTAZIONI",
    "sha": "9cc80de6279527f4b109523f8b10961354c251c8c57810c9d054c498f8baeaf6",
    "caratteri": 8728,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "la-spezia",
@@ -459,7 +503,7 @@
    "titolo": "Tempi d'attesa",
    "sha": "5ca02d6ca68e0fdbbf818f3858f3a03a8ae123d3177323a2407ab259a1b6cafd",
    "caratteri": 12662,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "la-spezia",
@@ -470,7 +514,7 @@
    "titolo": "Ritiro referti/Cartelle cliniche",
    "sha": "27d1fae7a0bc04fc444cf7cd4ed8ad1b9bfc4b23d8b9d82bab364df764420506",
    "caratteri": 11977,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "la-spezia",
@@ -481,7 +525,7 @@
    "titolo": "ASL5 Spezzino > Per il Cittadino > Servizi territoriali > Cure Primarie e Attività Distrettuali > Fornitura ausili e protesi",
    "sha": "d6d84284d2c2106e525e9f0afe2eea2d5c5a296589026f8056470b29ea1056e5",
    "caratteri": 12109,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "la-spezia",
@@ -492,18 +536,7 @@
    "titolo": "Cure Palliative",
    "sha": "daf55c741a66524657a16d9f3a526d632d9c641276023b3b90735a339922154f",
    "caratteri": 8043,
-   "cambiata": true
-  },
-  {
-   "asl": "la-spezia",
-   "url": "https://www.asl5.liguria.it/Home/ORARICUPANAGRAFEBRUGNATO.aspx",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "la-spezia/5967111bf656.txt",
-   "titolo": "ORARI CUP/ANAGRAFE BRUGNATO",
-   "sha": "cf1c7a4c8e398fa5c09f3eef53ba1aa3150e8e2442ea322c8e5b6cb912e19597",
-   "caratteri": 7185,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "la-spezia",
@@ -514,7 +547,7 @@
    "titolo": "Liste di attesa in Liguria per visite e prestazioni diagnostiche - ATS Liguria",
    "sha": "ffeaecc3df3a0981626b48540133c2e03c64c07b00d8e7506b6a6c7574d925d8",
    "caratteri": 7750,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "la-spezia",
@@ -523,7 +556,7 @@
    "http": 200,
    "file": "la-spezia/8cfbeba760c6.txt",
    "titolo": "salute - Salutesimplex - Regione Liguria",
-   "sha": "59cae06f995f193b70a1d14f08ce13e620fde68d2535d065ae7d72e1d3e88ff4",
+   "sha": "e13c3a7a5ba04172fd4fd78c3c86fbc85e924c7e0826ee9b1d0796d9e6077cdd",
    "caratteri": 5131,
    "cambiata": true
   },
@@ -562,6 +595,17 @@
   },
   {
    "asl": "savona",
+   "url": "https://www.asl2.liguria.it/contatti/contatti-utili.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "savona/ef56e36434a7.txt",
+   "titolo": "Contatti utili - ASL2",
+   "sha": "0b41ae2bceb37a055e96796037751e57d579bfdf3c4993da56561b52f77f0c09",
+   "caratteri": 8636,
+   "cambiata": true
+  },
+  {
+   "asl": "savona",
    "url": "https://www.asl2.liguria.it/prenotazioni-e-ticket.html",
    "controllata": "2026-10-22",
    "http": 200,
@@ -578,9 +622,10 @@
    "http": 200,
    "file": "savona/a73b42403ecb.txt",
    "titolo": "Ufficio relazioni con il pubblico - URP - ASL2",
-   "sha": "c3436ea77819f8b00f7fb16454f93a68a34e45e84b0ecc0a44846c60e375ad23",
-   "caratteri": 10551,
-   "cambiata": false
+   "sha": "fecc349bef0b6f011adce282b084369e341f858e24194a9bfea4572ab360c484",
+   "caratteri": 10401,
+   "email_nascoste": 6,
+   "cambiata": true
   },
   {
    "asl": "savona",
@@ -589,7 +634,7 @@
    "http": 200,
    "file": "savona/51c7b22af737.txt",
    "titolo": "salute - Numeri utili delle Case della Comunità - Regione Liguria",
-   "sha": "db9686c5d88d51ca6cc5795589d551dd9ad58e1b5f39f420d9ed0ae8bdc6852e",
+   "sha": "527ff4d96c0bd9288e1b234a0020228fa800cf7e72daf4f097a230fabc431f4c",
    "caratteri": 4353,
    "cambiata": true
   },
@@ -600,9 +645,10 @@
    "http": 200,
    "file": "savona/5e387fcd06ac.txt",
    "titolo": "S.C. Rete di Cure palliative - ASL2",
-   "sha": "4df5d6cd5f90fcb7d900406dc15a4941ea903c83d0716a0ae49c3b9c5701483c",
-   "caratteri": 11345,
-   "cambiata": false
+   "sha": "212d564256088683efa7381804399bd647b8dd95de456dd74a0c58a7b3146683",
+   "caratteri": 11156,
+   "email_nascoste": 3,
+   "cambiata": true
   },
   {
    "asl": "savona",
@@ -613,7 +659,7 @@
    "titolo": "Liste di attesa - ASL2",
    "sha": "9555ab3f986f2e21259b2167161c5517e685e8a039582e375becda961d291f00",
    "caratteri": 15827,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "savona",
@@ -625,7 +671,7 @@
    "titolo": "Gestione liste d'attesa - ASL2",
    "sha": "722c50eb76b1aa8bc44dec57aa8c591c72646cfe235108862563a833974fb783",
    "caratteri": 9647,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "savona",
@@ -636,7 +682,7 @@
    "titolo": "Protesi e ausili (letto, materassino antidecubito, carrozzella, comoda, ecc.): ufficio gestione richieste - ASL2",
    "sha": "82b0746f00512130cf4abddc28e1ffbcf22afe2a969fde7c347ba7ed01dac712",
    "caratteri": 9834,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "savona",
@@ -645,8 +691,9 @@
    "http": 200,
    "file": "savona/8e58d6d92046.txt",
    "titolo": "Rete delle Cure palliative - ASL2",
-   "sha": "564b29616c48d8408a9c0042c13c45860f35feac362c465934e0226bb4b4f20c",
-   "caratteri": 12131,
+   "sha": "03a6eb9f7357b5eb892dc30c5f81839fe5a64b748891d15ede1652fe9fa71e59",
+   "caratteri": 11805,
+   "email_nascoste": 5,
    "cambiata": true
   },
   {
@@ -658,7 +705,7 @@
    "titolo": "Sportelli Polifunzionali - Sedi, orari e servizi attivi - ASL2",
    "sha": "a67fa6225a91faf3fa9e2ca02d348411c852138c94f69521162013117fb00eb7",
    "caratteri": 10377,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "savona",
@@ -669,7 +716,7 @@
    "titolo": "Liste di attesa in Liguria per visite e prestazioni diagnostiche - ATS Liguria",
    "sha": "ffeaecc3df3a0981626b48540133c2e03c64c07b00d8e7506b6a6c7574d925d8",
    "caratteri": 7750,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "savona",
@@ -678,8 +725,30 @@
    "http": 200,
    "file": "savona/8cfbeba760c6.txt",
    "titolo": "salute - Salutesimplex - Regione Liguria",
-   "sha": "59cae06f995f193b70a1d14f08ce13e620fde68d2535d065ae7d72e1d3e88ff4",
+   "sha": "e13c3a7a5ba04172fd4fd78c3c86fbc85e924c7e0826ee9b1d0796d9e6077cdd",
    "caratteri": 5131,
+   "cambiata": true
+  },
+  {
+   "asl": "regole",
+   "url": "https://www.atsliguria.it/amministrazione-trasparente-ats/amministrazione-trasparente/servizi-erogati/liste-attesa.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regole/eea1f8985ae3.txt",
+   "titolo": "Liste di attesa in Liguria per visite e prestazioni diagnostiche - ATS Liguria",
+   "sha": "ffeaecc3df3a0981626b48540133c2e03c64c07b00d8e7506b6a6c7574d925d8",
+   "caratteri": 7750,
+   "cambiata": false
+  },
+  {
+   "asl": "regole",
+   "url": "https://www.regione.liguria.it/homepage-salute/come-fare-per/cup-liguria.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regole/97c265ccde78.txt",
+   "titolo": "salute - prenotazione visite ed esami col cup - Regione Liguria",
+   "sha": "2542baef2df7b81d71ec40024a6dc0e876271b5b54a14a76d9bb8d6205c98582",
+   "caratteri": 4863,
    "cambiata": true
   },
   {
@@ -725,6 +794,571 @@
    "sha": "621259250030ee61edd7d12f4a1f7154d5bc74e7cc04702a67b9dce9d2bc9078",
    "caratteri": 43179,
    "cambiata": false
+  },
+  {
+   "asl": "inps-liguria",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-liguria/aad63b63390a.txt",
+   "titolo": "Portale Inps - Riforma della disabilità: al via la terza fase sperimentale",
+   "sha": "3e22d1cf04da5a9b152d4fd5f6033e4b4b86d0937bfc137d142d7c9ec25bd108",
+   "caratteri": 46281,
+   "cambiata": false
+  },
+  {
+   "asl": "inps-liguria",
+   "url": "https://www.disabilita.governo.it/it/notizie/al-via-sperimentazione-riforma-disabilita-in-altre-40-province/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-liguria/cb8037740243.txt",
+   "titolo": "Al via sperimentazione riforma disabilità in altre 40 province",
+   "sha": "4ec5a460fb50b2e4f8c1006136eb2184acf64b45b3b190e378501ad4c004e6e3",
+   "caratteri": 3002,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-liguria",
+   "url": "https://www.regione.liguria.it/homepage-salute.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-liguria/5c4c10804fbd.txt",
+   "titolo": "homepage salute - Regione Liguria",
+   "sha": "9c1ce2834657094f18845c99f586015d7cbac8a2fff791262eeeb68bb3b35ce8",
+   "caratteri": 4186,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-liguria",
+   "url": "https://www.regione.liguria.it/cgr/item/41403-agosto-funzione-nuovo-numero-cup-liguria-2024.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-liguria/1ae711d1b324.txt",
+   "titolo": "giunta - Sanità, dal primo agosto in funzione il nuovo numero del Cup Liguria: 010 5383400 - Regione Liguria",
+   "sha": "08558c25b3b0911eaf7ca501f64706547acd75957cb1b2c5ac103b7f95b08059",
+   "caratteri": 3834,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-liguria",
+   "url": "https://prenotosalute.regione.liguria.it/faq.php",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-liguria/53cf9e6e7406.txt",
+   "titolo": "FAQ - Domande e risposte sulla prenotazione online delle prestazioni specialistiche",
+   "sha": "5fb869dbde6c094a1df3625081c5a78db3548871693e0625b6fd622b2c4f9d20",
+   "caratteri": 7614,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-liguria",
+   "url": "https://www.regione.liguria.it/homepage-salute/item/44983-indicazioni-regione-su-messaggi-truffa-cup.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-liguria/af75bda55c30.txt",
+   "titolo": "salute - Messaggi truffa con richieste del Centro Unico di Prenotazioni (CUP) - Regione Liguria",
+   "sha": "edd619c1a3d627f183afe0878c68b427e867dc11201a753995119484ca56c6fe",
+   "caratteri": 3681,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-liguria",
+   "url": "https://www.regione.liguria.it/homepage-giunta/giunta-regionale/comunicati-stampa-della-giunta-regionale/item/45672-chiamate-116117-2026.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-liguria/58c9218673e2.txt",
+   "titolo": "giunta - Sanità territoriale, nel Tigullio oltre 5mila chiamate al 116117 nei primi mesi del 2026 - Regione Liguria",
+   "sha": "5f84057eec356c8f18de76034e077723d52f70866295e2916e751ee1d93a6a4b",
+   "caratteri": 4222,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-liguria",
+   "url": "https://www.regione.liguria.it/homepage-giunta/giunta-regionale/comunicati-stampa-della-giunta-regionale/item/43422-numero-unico-continuita-assistenziale.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-liguria/6f7021132ab0.txt",
+   "titolo": "giunta - Sanità, prosegue a Genova il ciclo di conferenze dei sindaci di Asl. Assessore Nicolò: \"In Liguria pronto a partire il numero unico per la continuità assistenziale\" - Regione Liguria",
+   "sha": "ddc0db06c182d9e4389109297ed0005ce2866a21e6b7048204165a6ef30b050f",
+   "caratteri": 4459,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-liguria",
+   "url": "https://www.regione.liguria.it/homepage-salute/come-fare-per/fascicolo-sanitario.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-liguria/0699e2b18fbf.txt",
+   "titolo": "salute - fascicolo sanitario elettronico - Regione Liguria",
+   "sha": "aaaf093e1c1b9051088f04f6c14394fd35dd852811f474d86fa5830314422653",
+   "caratteri": 3205,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-liguria",
+   "url": "https://www.liguriadigitale.it/esperienze/fascicolo-sanitario-elettronico-fse.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-liguria/5be084d4c546.txt",
+   "titolo": "Fascicolo Sanitario Elettronico (FSE) - Liguria Digitale",
+   "sha": "17dabe5aa2a8d2e551e642ef4b803202e66d0240d011f38c8b608e77ec024f82",
+   "caratteri": 2720,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-liguria",
+   "url": "https://www.regione.liguria.it/homepage-salute/cosa-cerchi/campagne-di-comunicazione/sanita-piu-vicina.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-liguria/c3a4df77f258.txt",
+   "titolo": "salute - la nuova sanità ligure più vicina, più facile, più pronta - Regione Liguria",
+   "sha": "d40ac6d62d96bc668640895265a0eaf5e0d052091aaea02823baa774dbb59b5b",
+   "caratteri": 5493,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-liguria",
+   "url": "https://pua.regione.liguria.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-liguria/0e8634ff8983.txt",
+   "titolo": "Home - PUA",
+   "sha": "919684b61088f2279d4d9d318fd34f55ad976498d7761ed8cb40d1577bab063b",
+   "caratteri": 1698,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-liguria",
+   "url": "https://www.atsliguria.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-liguria/5231b93536bb.txt",
+   "titolo": "Benvenuti nel sito dell'Azienda Tutela della Salute Liguria (ATS Liguria) - ATS Liguria",
+   "sha": "e82bd93e010fb7d8f54885e0785ea186ebd5409278b9e3eecdbf812d7eebb017",
+   "caratteri": 2989,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-liguria",
+   "url": "https://www.atsliguria.it/azienda.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-liguria/55267a0e1f86.txt",
+   "titolo": "Azienda - ATS Liguria",
+   "sha": "c4a61fd2036a42224d08d806017817fd3e3cd30615145f591150b490b023beae",
+   "caratteri": 5173,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-liguria",
+   "url": "https://www.atsliguria.it/aree-sociosanitarie-locali.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-liguria/51709dceb09c.txt",
+   "titolo": "Aree sociosanitarie locali - ATS Liguria",
+   "sha": "6afd1cd325a21549b492ba49037f5f0fa160d4114be5bb053a9ca0a44fae3bb9",
+   "caratteri": 4049,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-liguria",
+   "url": "https://www.atsliguria.it/liguria-salute.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-liguria/19cdd30c5153.txt",
+   "titolo": "Area Liguria Salute - ATS Liguria",
+   "sha": "ceabdf0ef51cd2259bb8acc826fbf7205ed162bdbba1e49044887e90cea46240",
+   "caratteri": 2246,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-liguria",
+   "url": "https://www.liguriasalute.atsliguria.it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-liguria/a49e0a0a213f.txt",
+   "titolo": "Contatti - Liguria Salute - Sistema Sanitario Regione Liguria",
+   "sha": "9fcbbef21c6383e9e3d30af366ae5745ba6a7f3aa5f33c75a3ff93c512d332f2",
+   "caratteri": 1513,
+   "email_nascoste": 1,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-liguria",
+   "url": "https://www.alisa.liguria.it/dipartimenti-interaziendali-regionali-diar/diar-distretti.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.liguriasalute.atsliguria.it/dipartimenti-interaziendali-regionali-diar/diar-distretti.html",
+   "file": "regione-liguria/b40adafb2286.txt",
+   "titolo": "DIAR Distretti - Liguria Salute - Sistema Sanitario Regione Liguria",
+   "sha": "1ffdac3788f9debe1f6fadade810e96ea2f5b5d8992e74cff5f721e8dffb6ea6",
+   "caratteri": 3427,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-liguria",
+   "url": "https://www.regione.liguria.it/homepage-giunta/item/43748-nasce-liguria-salute.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-liguria/57db21873280.txt",
+   "titolo": "giunta - Sanità, nasce la nuova \"Azienda Liguria Salute\": più snella e con funzioni operative al servizio dell’assessorato - Regione Liguria",
+   "sha": "480873cc887985813d3fd95ce305d53c09faf4a305a8b4a0daa3768c650a5f3f",
+   "caratteri": 5689,
+   "cambiata": true
+  },
+  {
+   "asl": "asl1-imperiese",
+   "url": "https://www.asl1.liguria.it/territorio/distretti-sanitari.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl1-imperiese/ffa72e1f527e.txt",
+   "titolo": "Distretti sanitari - ASL1",
+   "sha": "92777ac98379a1b38eedbc2b9d4bbe6edd594e973608d061422d0714b06203e3",
+   "caratteri": 6259,
+   "email_nascoste": 5,
+   "cambiata": true
+  },
+  {
+   "asl": "asl1-imperiese",
+   "url": "https://www.asl1.liguria.it/territorio/distretti-sanitari/distretto-sanitario-imperiese.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl1-imperiese/bcdecfd039a1.txt",
+   "titolo": "Distretto sanitario imperiese - ASL1",
+   "sha": "9242ece478b988773cb064559b716a9e337f7fff4f20a3a773202b457b042599",
+   "caratteri": 8465,
+   "email_nascoste": 1,
+   "cambiata": true
+  },
+  {
+   "asl": "asl1-imperiese",
+   "url": "https://www.asl1.liguria.it/urp/segnalazioni-e-reclami.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl1-imperiese/122126bdc996.txt",
+   "titolo": "URP: segnalazioni e reclami - ASL1",
+   "sha": "6f18f8b6e1d854966de1db951e56f82c7e9ad4d3ac9df195aee9bc268a811495",
+   "caratteri": 5613,
+   "email_nascoste": 2,
+   "cambiata": true
+  },
+  {
+   "asl": "asl1-imperiese",
+   "url": "https://www.asl1.liguria.it/whatsapp-e-telegram.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl1-imperiese/35b7d25d4585.txt",
+   "titolo": "Whatsapp e Telegram - ASL1",
+   "sha": "77a81ed4c0fdf0500c2766f5f9ef66320fbfae028b37cd41449041619ec48b94",
+   "caratteri": 5034,
+   "cambiata": true
+  },
+  {
+   "asl": "asl1-imperiese",
+   "url": "https://www.asl1.liguria.it/pec.asp",
+   "controllata": "2026-10-22",
+   "http": 500
+  },
+  {
+   "asl": "asl1-imperiese",
+   "url": "https://www.asl1.liguria.it/servizi-dalla-a-alla-z/238-visite-occasionali-non-residenti-turisti.html",
+   "controllata": "2026-10-22",
+   "http": 500
+  },
+  {
+   "asl": "asl1-imperiese",
+   "url": "https://www.asl1.liguria.it/territorio/distretti-sanitari/casa-comunita/casa-comunita-sanremo.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl1-imperiese/9cdac75d8bde.txt",
+   "titolo": "Casa della Comunità - Sanremo - ASL1",
+   "sha": "1993ebdda017dea36c88416091408490e6dbd250c892587236d7258b45182a8c",
+   "caratteri": 5868,
+   "email_nascoste": 1,
+   "cambiata": true
+  },
+  {
+   "asl": "asl1-imperiese",
+   "url": "https://www.asl1.liguria.it/territorio/distretti-sanitari/casa-comunita/casa-comunita-ventimiglia.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl1-imperiese/8c1a09bf5ab8.txt",
+   "titolo": "Casa della Comunità - Ventimiglia - ASL1",
+   "sha": "7b61355878a92ff898f1698f504163c5e2cc1b6ee2f7f36b6474a9f4b01c12c4",
+   "caratteri": 8460,
+   "email_nascoste": 5,
+   "cambiata": true
+  },
+  {
+   "asl": "asl1-imperiese",
+   "url": "https://www.asl1.liguria.it/servizi-dalla-a-alla-z/185-prelievi-domiciliari.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl1-imperiese/088b9d017bf0.txt",
+   "titolo": "Prelievi domiciliari - ASL1",
+   "sha": "a8d6fc3f1c20da70a240fec99e72ac265236cc86a7a1d477ca1acd3165acc409",
+   "caratteri": 6602,
+   "email_nascoste": 3,
+   "cambiata": true
+  },
+  {
+   "asl": "asl2-savonese",
+   "url": "https://www.asl2.liguria.it/contatti.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl2-savonese/537e28a1a4bb.txt",
+   "titolo": "Tutti i contatti - ASL2",
+   "sha": "14e1c1fc666266c7324e304e75c8375da2b52c07618c6f18306f65422080df81",
+   "caratteri": 8386,
+   "email_nascoste": 1,
+   "cambiata": true
+  },
+  {
+   "asl": "asl2-savonese",
+   "url": "https://www.asl2.liguria.it/esami-e-visite-specialistiche.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl2-savonese/49261cc2a879.txt",
+   "titolo": "Esami e visite specialistiche - ASL2",
+   "sha": "c65afa7d479994e87ca0dcdf17e5042980c0b3219f9cf3acb15a52a311dc3ffb",
+   "caratteri": 10013,
+   "cambiata": true
+  },
+  {
+   "asl": "asl2-savonese",
+   "url": "https://www.asl2.liguria.it/distretti-sanitari/771-cure-domiciliari-infermieristiche-e-o-fisioterapiche-distretto-albenganese.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl2-savonese/6d5fa56047a2.txt",
+   "titolo": "Assistenza Domiciliare integrata (ADI) - Assistenza infermieristica e/o fisioterapica - Distretto Albenganese - ASL2",
+   "sha": "2b794ea66eae619cb0e60494cc1675ca2b0f8a0a3c5e139b2eed0e2a0092d34f",
+   "caratteri": 9750,
+   "email_nascoste": 2,
+   "cambiata": true
+  },
+  {
+   "asl": "asl2-savonese",
+   "url": "https://www.asl2.liguria.it/territorio/distretto-albenganese/casa-comunita-distretto-albenganese.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl2-savonese/3a3ec8e2441f.txt",
+   "titolo": "Casa della comunità del Distretto Albenganese - ASL2",
+   "sha": "cd17fd743ac1c2b1e7d02536ea7ab4a3f3a33288511dd3fe3aec5b50f45ebd1b",
+   "caratteri": 10223,
+   "cambiata": true
+  },
+  {
+   "asl": "asl2-savonese",
+   "url": "https://www.asl2.liguria.it/dipartimenti/51-dipartimento-cure-primarie-e-attivit%C3%A0-distrettuali/390-distretto-sanitario-savonese.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.asl2.liguria.it/territorio/distretto-savonese/distretto-savonese-sedi-e-contatti.html",
+   "file": "asl2-savonese/03950b49938f.txt",
+   "titolo": "Distretto Savonese - ASL2",
+   "sha": "f1830b284cc527e4a886c7121ba4a5c9e8ebef4d641b7930eb9e1567dcbb5f1f",
+   "caratteri": 9078,
+   "email_nascoste": 1,
+   "cambiata": true
+  },
+  {
+   "asl": "asl3-genovese",
+   "url": "https://www.asl3.liguria.it/urp/sedi.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl3-genovese/c320f31517bd.txt",
+   "titolo": "Sedi Uffici Relazioni con il pubblico (URP) - ASL3",
+   "sha": "1d4d461473be559fdb08e94be1d6b48626589fa27ea14053e5e68c7c140fee11",
+   "caratteri": 6557,
+   "email_nascoste": 3,
+   "cambiata": true
+  },
+  {
+   "asl": "asl3-genovese",
+   "url": "http://www.asl3.liguria.it/contatti.html.html",
+   "controllata": "2026-10-22",
+   "http": 500,
+   "finale": "https://www.asl3.liguria.it/contatti.html.html"
+  },
+  {
+   "asl": "asl3-genovese",
+   "url": "https://asl3.liguria.it/cup.html",
+   "controllata": "2026-10-22",
+   "http": 0,
+   "errore": "curl: (6) Could not resolve host: asl3.liguria.it"
+  },
+  {
+   "asl": "asl3-genovese",
+   "url": "https://www.asl3.liguria.it/tutte-le-comunicazioni/comunicazioni-2024/5086-prenotazione-visite-esami-dal-1-agosto-call-center-cup-liguria-nuovo-numero.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl3-genovese/91a5fa5c58b0.txt",
+   "titolo": "Prenotazione visite ed esami specialistici: dal 1° agosto 2024 il call center del CUP Liguria cambia numero - ASL3",
+   "sha": "bc92ca7bf2f7bed975e3dd712dfd5c91d40f8375bb31630743f1f5b8d2a339c5",
+   "caratteri": 6697,
+   "cambiata": true
+  },
+  {
+   "asl": "asl3-genovese",
+   "url": "https://www.asl3.liguria.it/medici-e-pediatri/info-generali/continuita_assistenza.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl3-genovese/fc3ddc6eb012.txt",
+   "titolo": "Continuità assistenziale - ASL3",
+   "sha": "47ba9191c26bb5f067fd2602b11ad24a07a78bd2e95963e4e73e2cdd152512fd",
+   "caratteri": 7966,
+   "cambiata": true
+  },
+  {
+   "asl": "asl3-genovese",
+   "url": "https://www.asl3.liguria.it/nuovo-numero-verde-unico-guardia-medica-800-893-580.html",
+   "controllata": "2026-10-22",
+   "http": 500
+  },
+  {
+   "asl": "asl3-genovese",
+   "url": "https://www.asl3.liguria.it/contatti-home/item/2940-cure-domiciliari-sedi-contatti.html",
+   "controllata": "2026-10-22",
+   "http": 500
+  },
+  {
+   "asl": "asl3-genovese",
+   "url": "https://www.asl3.liguria.it/territorio/distretti/attivit%C3%A0-distretti.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl3-genovese/0ad9503e7ee6.txt",
+   "titolo": "Attività distretti - ASL3",
+   "sha": "d7937004932bf94546088eec5f3f8abadd73124f38192e9b53d0a64827ac104b",
+   "caratteri": 9228,
+   "cambiata": true
+  },
+  {
+   "asl": "asl4-chiavarese",
+   "url": "https://www.asl4.liguria.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl4-chiavarese/17af5299b98d.txt",
+   "titolo": "Asl4 - Area Sociosanitaria Locale n. 4",
+   "sha": "a3136249153c6a0c29655767b81f3d985ef4dcd982a0c646b3dc8bafdb6603dc",
+   "caratteri": 3993,
+   "cambiata": true
+  },
+  {
+   "asl": "asl4-chiavarese",
+   "url": "https://www.asl4.liguria.it/contatti-e-indirizzi-web/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl4-chiavarese/ee9adeb39a35.txt",
+   "titolo": "Contatti e Indirizzi web - Asl4",
+   "sha": "f03aea9c22cac48b41e042ac3c3064f04ec1467314277c53c1e1b344c2473ad3",
+   "caratteri": 2334,
+   "cambiata": true
+  },
+  {
+   "asl": "asl4-chiavarese",
+   "url": "https://www.asl4.liguria.it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica/rubrica/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl4-chiavarese/9d9bb24402ae.txt",
+   "titolo": "Rubrica telefonica - Asl4",
+   "sha": "568b0344aa148c40737d26e882ba35c50a674ef45186c87d8da52f7f9368242b",
+   "caratteri": 2668,
+   "cambiata": true
+  },
+  {
+   "asl": "asl4-chiavarese",
+   "url": "https://asl4.liguria.it/dipartimenti-amministrativi/ufficio-relazioni-con-il-pubblico",
+   "controllata": "2026-10-22",
+   "http": 0,
+   "errore": "curl: (6) Could not resolve host: asl4.liguria.it"
+  },
+  {
+   "asl": "asl4-chiavarese",
+   "url": "https://www.asl4.liguria.it/prenotazioni-e-disdette/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl4-chiavarese/898b4893395d.txt",
+   "titolo": "Prenotazioni e Disdette - Asl4",
+   "sha": "c44248bdc960d43e0bf935bfd88509872c193dd3cc2dff8e6600e7556e6f2409",
+   "caratteri": 5114,
+   "cambiata": true
+  },
+  {
+   "asl": "asl4-chiavarese",
+   "url": "https://www.asl4.liguria.it/2025/11/03/dal-3-novembre-2025-la-guardia-medica-trova-sede-nella-casa-della-comunita-di-chiavari/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl4-chiavarese/09f2a81363dc.txt",
+   "titolo": "Dal 3 novembre 2025, la Guardia Medica trova sede nella Casa della Comunità di Chiavari - Asl4",
+   "sha": "45b9a7b1888b41d482510d2c1864f86c948d78ccdf23e2a2cc9444663064a5d1",
+   "caratteri": 2865,
+   "cambiata": true
+  },
+  {
+   "asl": "asl4-chiavarese",
+   "url": "https://www.asl4.liguria.it/territorio/casa-della-comunita-di-chiavari/casa-della-comunita-di-chiavari/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl4-chiavarese/ce90824679fc.txt",
+   "titolo": "Casa della Comunità di Chiavari - Asl4",
+   "sha": "71da58e0e7dc81e03d0ef34ec2102c8ce726e9c70b2bb1d32d3aa8667cafe2d7",
+   "caratteri": 10157,
+   "cambiata": true
+  },
+  {
+   "asl": "asl4-chiavarese",
+   "url": "http://www.asl4.liguria.it/distretti/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.asl4.liguria.it/territorio/distretti/",
+   "file": "asl4-chiavarese/a1565025334b.txt",
+   "titolo": "SS CC DISTRETTI 14 - 15 - 16 - Asl4",
+   "sha": "02b89744b10f95c72cd84a58180fa03beccf14ba5a8945ab71cb79ef92b58b7d",
+   "caratteri": 15317,
+   "cambiata": true
+  },
+  {
+   "asl": "asl5-spezzino",
+   "url": "https://www.asl5.liguria.it/Home/ContattiServizi.aspx",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl5-spezzino/0b9377846059.txt",
+   "titolo": "Contatti Servizi",
+   "sha": "e0416053c01b03f84e4b79bfde6da3439321b7a3cd92e460b430afaddd1d388a",
+   "caratteri": 7018,
+   "cambiata": true
+  },
+  {
+   "asl": "asl5-spezzino",
+   "url": "https://www.asl5.liguria.it/News/SPOSTAMENTOGUARDIAMEDICA.aspx",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl5-spezzino/0c2133db7360.txt",
+   "titolo": "SPOSTAMENTO GUARDIA MEDICA",
+   "sha": "13e297d4c88eab69ca07b50053a7a51e812a7ea6970d6b4385f435d11ac8985c",
+   "caratteri": 5563,
+   "cambiata": true
+  },
+  {
+   "asl": "asl5-spezzino",
+   "url": "https://www.asl5.liguria.it/Emergenzae112.aspx",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl5-spezzino/7d97b61cd187.txt",
+   "titolo": "Emergenza e 112",
+   "sha": "1738a98e7ead9e7289256bf5e4cdf6ec6ba8abe9d6e62850f6e61c99526b4933",
+   "caratteri": 6924,
+   "cambiata": true
+  },
+  {
+   "asl": "asl5-spezzino",
+   "url": "https://www.asl5.liguria.it/PerilCittadino/Serviziterritoriali.aspx",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl5-spezzino/872f8f5828b0.txt",
+   "titolo": "Servizi territoriali",
+   "sha": "425213a2cc38c4fdd016c23d9ac10142ed7d7b7157ca53d1b8c16c7f0ea7eae9",
+   "caratteri": 7831,
+   "cambiata": true
   }
  ]
 }

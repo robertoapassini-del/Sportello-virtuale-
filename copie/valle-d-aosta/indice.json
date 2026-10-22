@@ -1,6 +1,6 @@
 {
  "regione": "valle-d-aosta",
- "aggiornato": "2026-10-22T08:39:19.122Z",
+ "aggiornato": "2026-10-22T10:27:13.932Z",
  "pagine": [
   {
    "asl": "aosta",
@@ -9,8 +9,8 @@
    "http": 200,
    "file": "aosta/8c0e7f3ef863.txt",
    "titolo": "Home",
-   "sha": "c14fcb8f50406f9edd3d742be5601cccf7aaf34158760d6b96fe7129deb18df3",
-   "caratteri": 11977,
+   "sha": "129739bf02ea214f8abbf295cff10d62bcc0ba0d0063fc2e11c98e793163d4e3",
+   "caratteri": 11978,
    "cambiata": true
   },
   {
@@ -22,7 +22,7 @@
    "titolo": "Tempi di attesa",
    "sha": "20d73abdf1a32486627e1c950407ce67f204db03c3bcb32f1798fa599fd671e0",
    "caratteri": 7789,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "aosta",
@@ -34,6 +34,28 @@
    "sha": "622abab5870b4fd38ae333e5955ec91abb4dbe0eaa4b04d33f2114dc3dbdb4ee",
    "caratteri": 3913,
    "cambiata": false
+  },
+  {
+   "asl": "aosta",
+   "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/scelta-e-revoca-del-medico-o-del-pediatra-di-famiglia",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "aosta/6384dba61aa0.txt",
+   "titolo": "Scelta e revoca del medico o del pediatra di famiglia",
+   "sha": "9002c9458d9732298c0b7881328325a19a2f712793af8f56e9dc0eeec0205f31",
+   "caratteri": 13724,
+   "cambiata": false
+  },
+  {
+   "asl": "aosta",
+   "url": "https://www.ausl.vda.it/chi-siamo/direzione-strategica/segreteria-e-contatti",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "aosta/c1f8b55a7f25.txt",
+   "titolo": "Segreteria",
+   "sha": "6f89534fb6f47f9486eced0e69cb46715e658f75453c699d2685771700f684cf",
+   "caratteri": 3987,
+   "cambiata": true
   },
   {
    "asl": "aosta",
@@ -70,17 +92,6 @@
   },
   {
    "asl": "aosta",
-   "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/scelta-e-revoca-del-medico-o-del-pediatra-di-famiglia",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "aosta/6384dba61aa0.txt",
-   "titolo": "Scelta e revoca del medico o del pediatra di famiglia",
-   "sha": "9002c9458d9732298c0b7881328325a19a2f712793af8f56e9dc0eeec0205f31",
-   "caratteri": 13724,
-   "cambiata": false
-  },
-  {
-   "asl": "aosta",
    "url": "https://www.regione.vda.it/sanita/assistenza_sanitaria/default_i.asp",
    "controllata": "2026-10-22",
    "http": 200,
@@ -88,7 +99,7 @@
    "titolo": "Assistenza sanitaria - Regione autonoma Valle d'Aosta",
    "sha": "0207c25838089e906b6bf1a96fb209d6657f63b35b8cf369efa78cafc84d154c",
    "caratteri": 8379,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "aosta",
@@ -99,7 +110,7 @@
    "titolo": "Servizi sul territorio - Regione autonoma Valle d'Aosta",
    "sha": "9023bfc5355547bfbe7a2a75ac90725c24ee965983dfecbf0a426f1ad32c009b",
    "caratteri": 8333,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "aosta",
@@ -110,7 +121,7 @@
    "titolo": "Emergenza sanitaria - Regione autonoma Valle d'Aosta",
    "sha": "59d02fa359b9ab13453c9e566714494db206c7974de22135c1ea785eb8989104",
    "caratteri": 7209,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "aosta",
@@ -121,7 +132,7 @@
    "titolo": "Assistenza medica ai turisti - Regione autonoma Valle d'Aosta",
    "sha": "3e486633b601550266b93992bef292ef0646c2dfec8594121a467a053265500f",
    "caratteri": 5582,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "aosta",
@@ -132,7 +143,7 @@
    "titolo": "Tempi di attesa - Regione autonoma Valle d'Aosta",
    "sha": "0aeeb7ffa57f48cdd586041690e6a5a486d75f294c8eb2dbac5e52b4fafa5a25",
    "caratteri": 8818,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "aosta",
@@ -143,7 +154,7 @@
    "titolo": "Fascicolo Sanitario Elettronico - Regione Autonoma Valle d'Aosta",
    "sha": "ed0cdfa5daf117c4528725594ffcb2135f53ef1dd40d7a88a37ebaa1f9cffd74",
    "caratteri": 11785,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "aosta",
@@ -154,7 +165,7 @@
    "titolo": "Risorse Informative - Regione Autonoma Valle d'Aosta",
    "sha": "d6575421948e9ca1244c2b712c4b1d16ca891e0ffe1dae06a4051bf5cc1d5986",
    "caratteri": 12815,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "aosta",
@@ -165,7 +176,7 @@
    "titolo": "Informazioni generali",
    "sha": "54297e5bc54975c0b2ed79ebfcc58e07182187c717b8901207e6cf09f0442a01",
    "caratteri": 4815,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "aosta",
@@ -176,7 +187,7 @@
    "titolo": "Azienda",
    "sha": "e76dd078d179091fc85d761f3525d6ffcdf0b6565f3f01677f541c631d084c48",
    "caratteri": 5606,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "aosta",
@@ -187,7 +198,7 @@
    "titolo": "Presentare istanze e segnalazioni all’Urp",
    "sha": "a8f22500bb14141882fa4d9b78f06e366d3377d42a9f5dbe5120716c270ac89b",
    "caratteri": 4544,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "aosta",
@@ -198,7 +209,7 @@
    "titolo": "Continuità dell’Assistenza pediatrica",
    "sha": "13b35b204945844a9212cf26d1fa25bd98bd814a9a77ccf60149add53ae624e4",
    "caratteri": 5553,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "aosta",
@@ -209,7 +220,7 @@
    "titolo": "Ambulatori ad accesso diretto",
    "sha": "936a8e313f2aa59cc63ca49f7f887a7823b31e289e46dd98a9d2baebd35518e0",
    "caratteri": 6350,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "aosta",
@@ -220,7 +231,7 @@
    "titolo": "Assistenza domiciliare (ADI)",
    "sha": "1b6d48c01de4a9a6b579fff42a50df655de8d10213afee2b70e284cc70215020",
    "caratteri": 5384,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "aosta",
@@ -231,7 +242,7 @@
    "titolo": "Area territoriale",
    "sha": "06e56b3edd01b58555c1ce3eb061df1f3e9186d4fe4f6aba2f6c31743baa29ee",
    "caratteri": 5178,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "aosta",
@@ -242,7 +253,7 @@
    "titolo": "Distretto 1",
    "sha": "67875881fc2ff95060a53956805a49660ca0c0338a74e7539d109aacd1e0955e",
    "caratteri": 10009,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "aosta",
@@ -253,7 +264,7 @@
    "titolo": "Distretto 2",
    "sha": "77e3a57878e08c6090ac4b84455aa454422946f23712e11b4577e8f764e624e3",
    "caratteri": 10159,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "aosta",
@@ -264,7 +275,7 @@
    "titolo": "Richiedere e ritirare la cartella clinica",
    "sha": "2fba4452cccc70e5efa255c76e2959e5705c6dc26c40ac78561a0c2c369448e3",
    "caratteri": 8330,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "aosta",
@@ -275,7 +286,7 @@
    "titolo": "Sede e contatti",
    "sha": "8fbe60974ac30ad50e08c6833ab3320cc19aaaba7040eb433d4356fdb8ca8c79",
    "caratteri": 3874,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "aosta",
@@ -286,7 +297,7 @@
    "titolo": "Attività",
    "sha": "bf6ccb1a87560d77167a578b20435bf0dc75d69e87a5c3c9ee766152b642b748",
    "caratteri": 4893,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "aosta",
@@ -297,7 +308,7 @@
    "titolo": "Ausili, protesi e ortesi",
    "sha": "d4a4ee0d23dbbffa285f39a185704b16689de02769ddf4c2e3538683740d1971",
    "caratteri": 4717,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "aosta",
@@ -308,7 +319,7 @@
    "titolo": "Screening",
    "sha": "597dc041fca25aa0f0ce35dea1d22c29bad0f4cad1771e8383a339dcfbb47d3d",
    "caratteri": 4545,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "aosta",
@@ -319,7 +330,7 @@
    "titolo": "Aderire agli Screening regionali",
    "sha": "681b2b5909cb79d9d0126421aef08bcfcd33bdf907b975f9f552ed0fcc353f96",
    "caratteri": 4458,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "inps-valle-d-aosta",
@@ -331,6 +342,50 @@
    "sha": "1ad74caed0b0de60a7b7469601c7cefb4f75cf9cf81307f802b690366535dc41",
    "caratteri": 43701,
    "cambiata": false
+  },
+  {
+   "asl": "inps-valle-d-aosta",
+   "url": "https://www.disabilita.governo.it/it/notizie/individuate-le-9-province-per-sperimentare-la-riforma-disabilita/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-valle-d-aosta/4016319a363c.txt",
+   "titolo": "Individuate le 9 province per sperimentare la riforma disabilità",
+   "sha": "66d7f89ba67266ce1fbe7b9c0bd75ddc1bafe70d3840008c45b807ba3eec62df",
+   "caratteri": 2377,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-valle-d-aosta",
+   "url": "https://www.disabilita.governo.it/it/notizie/individuate-le-altre-11-province-per-la-sperimentazione-della-riforma-della-disabilita/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-valle-d-aosta/49a147b501cb.txt",
+   "titolo": "Individuate le altre 11 province per la sperimentazione della riforma della disabilità",
+   "sha": "616ce11d934ce0494cb840068dd03f5db47a39190acf5cec1e6929cf5cf8ca02",
+   "caratteri": 2423,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-valle-d-aosta",
+   "url": "https://www.disabilita.governo.it/it/notizie/al-via-sperimentazione-riforma-disabilita-in-altre-40-province/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-valle-d-aosta/cb8037740243.txt",
+   "titolo": "Al via sperimentazione riforma disabilità in altre 40 province",
+   "sha": "4ec5a460fb50b2e4f8c1006136eb2184acf64b45b3b190e378501ad4c004e6e3",
+   "caratteri": 3002,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-valle-d-aosta",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-valle-d-aosta/aad63b63390a.txt",
+   "titolo": "Portale Inps - Riforma della disabilità: al via la terza fase sperimentale",
+   "sha": "3e22d1cf04da5a9b152d4fd5f6033e4b4b86d0937bfc137d142d7c9ec25bd108",
+   "caratteri": 46281,
+   "cambiata": true
   }
  ]
 }

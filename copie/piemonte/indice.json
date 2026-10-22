@@ -1,6 +1,6 @@
 {
  "regione": "piemonte",
- "aggiornato": "2026-10-22T08:12:31.456Z",
+ "aggiornato": "2026-10-22T09:49:44.148Z",
  "pagine": [
   {
    "asl": "alessandria",
@@ -9,8 +9,8 @@
    "http": 200,
    "file": "alessandria/fc029d99a2f6.txt",
    "titolo": "Home Page - ASL AL",
-   "sha": "fc6527b576f9204ad4d0c689a1a06f9a0092bb4de92bb733049e4ad58c859159",
-   "caratteri": 12257,
+   "sha": "be11c3890bce3cce80cc5f171660b949ed1d871eb7d17afe8f9e083837c37a48",
+   "caratteri": 12825,
    "cambiata": true
   },
   {
@@ -66,7 +66,7 @@
    "titolo": "URP - ASL AL",
    "sha": "3a1ae7ae491490fe7cad39cccac355936df860125211e74899d43a34cc0af4d0",
    "caratteri": 10978,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "alessandria",
@@ -77,7 +77,7 @@
    "titolo": "Prenotare visite o esami e ritirare i referti - ASL AL",
    "sha": "ca47be1a133c75e3d2a3ccd2d0a7879b5c755edd56432efe660c08ecf4bd75f9",
    "caratteri": 10717,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "alessandria",
@@ -88,7 +88,7 @@
    "titolo": "Continuità assistenziale (guardia medica) - ASL AL",
    "sha": "cd11a63e9702b508598ce0495db203e6c5c0b17a4dc39c0c317bbba10afdfc4d",
    "caratteri": 9462,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "alessandria",
@@ -99,7 +99,7 @@
    "titolo": "Cartella integrata cure domiciliari - cure palliative - ASL AL",
    "sha": "1c5700d53bcabfc54a77be42f05a69f31e6c1264801f8244ebf9290b6b3ed027",
    "caratteri": 13765,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "alessandria",
@@ -110,7 +110,7 @@
    "titolo": "Centrale Operativa Continuità Assistenziale (C.O.C.A.) - ASL AL",
    "sha": "a885370548b3d9c939a988dbe9d1721a40e0b47e6cc6fb7b9a2915f554af5224",
    "caratteri": 13654,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "alessandria",
@@ -121,7 +121,7 @@
    "titolo": "Percorso di tutela dei Cittadini assistiti dall’ASL AL - ASL AL",
    "sha": "21d65c48faa1cc15c474b2575af32e8a9006d780103d96781285edd4a210cdde",
    "caratteri": 11588,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asti",
@@ -130,9 +130,9 @@
    "http": 200,
    "file": "asti/fed34ce6d2d9.txt",
    "titolo": "ASL AT - Azienda Sanitaria Locale di Asti - Asl At",
-   "sha": "d7f413191abbb877e051d73fcbcf52b413c17612e7c3e3c2ec817975d1cbabcd",
-   "caratteri": 9452,
-   "cambiata": false
+   "sha": "9ffcb4302ebb040e2073ab817e5e70aad51981b892d912e2052e5188a7b51ef9",
+   "caratteri": 9444,
+   "cambiata": true
   },
   {
    "asl": "asti",
@@ -154,6 +154,17 @@
    "titolo": "Cure Domiciliari - Asl At",
    "sha": "c0654ae923777be67b6a9da865c0780816eb97ee452d91fe8e9d5dee1c6b1f72",
    "caratteri": 12498,
+   "cambiata": false
+  },
+  {
+   "asl": "asti",
+   "url": "https://asl.at.it/urp-e-contatti/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asti/280a9b4fa321.txt",
+   "titolo": "Urp e contatti - Asl At",
+   "sha": "e85a5d1885fc111fb733ca1de550130d36dfa2d069f2bfe11edc20ff678cc4a5",
+   "caratteri": 12350,
    "cambiata": false
   },
   {
@@ -180,17 +191,6 @@
   },
   {
    "asl": "asti",
-   "url": "https://asl.at.it/urp-e-contatti/",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "asti/280a9b4fa321.txt",
-   "titolo": "Urp e contatti - Asl At",
-   "sha": "e85a5d1885fc111fb733ca1de550130d36dfa2d069f2bfe11edc20ff678cc4a5",
-   "caratteri": 12350,
-   "cambiata": false
-  },
-  {
-   "asl": "asti",
    "url": "https://asl.at.it/cosa-fare-per/le-visite-e-le-prestazioni-ambulatoriali/",
    "controllata": "2026-10-22",
    "http": 200,
@@ -198,7 +198,7 @@
    "titolo": "Le visite e le prestazioni ambulatoriali - Asl At",
    "sha": "694579a885cfd7e9f0e136223a8e026dfe7cc864d8b06d83a8092bdce34f6e33",
    "caratteri": 14263,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asti",
@@ -209,7 +209,7 @@
    "titolo": "Orientarsi tra i percorsi di assistenza e cura - Asl At",
    "sha": "d1452c901254011099bfeb2928fbe452f2c0bfcc39a019d93259f74d9bee06e3",
    "caratteri": 11878,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asti",
@@ -218,7 +218,7 @@
    "http": 200,
    "file": "asti/4a6d36d1ae1b.txt",
    "titolo": "Percorso di tutela dei Cittadini assistiti - Asl At",
-   "sha": "cbede0c38f80f1cbb24729dfc04199c97228751a77295820ea140b48c3f9c2d3",
+   "sha": "59d115025d22610b03d2a33393eb02d64b75b024afad47ba96c132e4d8212f43",
    "caratteri": 12092,
    "cambiata": true
   },
@@ -254,6 +254,17 @@
    "sha": "ef3022ebbffcd2231446cf6ab6f7c823c867791fe04d841554b7e628f2eca501",
    "caratteri": 16247,
    "cambiata": false
+  },
+  {
+   "asl": "biella",
+   "url": "https://aslbi.piemonte.it/contatti/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "biella/6336a1b9cee7.txt",
+   "titolo": "Contatti - ASL Biella",
+   "sha": "bff054c14aafa8d737ce627ed6029aecdaa8d7008dba5623c08616f831776e0f",
+   "caratteri": 1905,
+   "cambiata": true
   },
   {
    "asl": "biella",
@@ -297,7 +308,7 @@
    "titolo": "URP - ASL Biella",
    "sha": "22b5525c2733a6775a30dc13809c90a1f7e1c78d4ad05c779aad095b75d79e2d",
    "caratteri": 5340,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "biella",
@@ -314,7 +325,7 @@
    "titolo": "Come fare per - ASL Biella",
    "sha": "957630cee721505191870838450a45714a163964d20142625fbca0abb7cbbcd1",
    "caratteri": 2110,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "biella",
@@ -325,7 +336,7 @@
    "titolo": "Percorsi di tutela: informazioni utili - ASL Biella",
    "sha": "9111aceb85c38bc44bf04f903f2751a49b2dfa7219bd4dedadb12e00fe9de3b7",
    "caratteri": 13627,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "biella",
@@ -337,7 +348,7 @@
    "titolo": "Richiesta e Ritiro cartelle esami - ASL Biella",
    "sha": "714256e5dc4f0190682424b7b78d15f5c3f680bbaf053006c205064f2d01a9d0",
    "caratteri": 10084,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "biella",
@@ -354,7 +365,7 @@
    "titolo": "Cure Palliative - ASL Biella",
    "sha": "9fc23ae684336326213bc9e1a28ad1b3f74400dbd57041990bf15137f62086d0",
    "caratteri": 5397,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "biella",
@@ -365,7 +376,7 @@
    "titolo": "Cure Palliative Domiciliari - ASL Biella",
    "sha": "a625b7acc071d2192f18ad2022780fdd13307b3d2852fc7e14daba3686968d91",
    "caratteri": 6424,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "cuneo",
@@ -399,6 +410,28 @@
    "sha": "4b6c4c44fe016e0fa36c239a28a935899abb7d81099f046797c095e17fb3c74c",
    "caratteri": 14767,
    "cambiata": false
+  },
+  {
+   "asl": "cuneo",
+   "url": "https://www.aslcn1.it/contatti",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "cuneo/f0f5bc53b7fc.txt",
+   "titolo": "ASL CN 1 - Portale dell'Azienda Sanitaria Locale: Contatti",
+   "sha": "ebe6ecb28be8040c4ec0dfb4760228b69060bcdff2ee9d2d044071253328050f",
+   "caratteri": 10327,
+   "cambiata": true
+  },
+  {
+   "asl": "cuneo",
+   "url": "https://www.aslcn2.it/contatti-e-link/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "cuneo/e1636a58fbd1.txt",
+   "titolo": "Contatti - ASL CN2",
+   "sha": "1e6c4f6d33a2cbc62d9888314223d97c589d09720a60378cc56afccffd12c3a8",
+   "caratteri": 3545,
+   "cambiata": true
   },
   {
    "asl": "cuneo",
@@ -453,7 +486,7 @@
    "titolo": "ASL CN 1 - Portale dell'Azienda Sanitaria Locale: Prenotare visite/esami",
    "sha": "c844ed2062c857f75a76824174115ae2eb22e9e1b193e926227f2ee7ddc8d16b",
    "caratteri": 21056,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "cuneo",
@@ -464,7 +497,7 @@
    "titolo": "ASL CN 1 - Portale dell'Azienda Sanitaria Locale: I Quattro Ambiti Distrettuali",
    "sha": "f6d568b21bf29d6e33d30d7793b7ac287b4f2ad207f82fa56c7e8dd1e2dbdf52",
    "caratteri": 9455,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "cuneo",
@@ -473,8 +506,8 @@
    "http": 200,
    "file": "cuneo/7c4dcafe9f2a.txt",
    "titolo": "ASL CN2 - Azienda Sanitaria Locale CN2 - Alba e Bra",
-   "sha": "859052d0a7d0af2d3f27d1a1fdd1e9d92da8d08a5acd5672797faaca56cbd066",
-   "caratteri": 10867,
+   "sha": "1127e8ed80f51049b7f38689316d185c50af40d82ee7a10b04cb4b9ce9d0733e",
+   "caratteri": 10970,
    "cambiata": true
   },
   {
@@ -486,7 +519,7 @@
    "titolo": "Prenotazioni e pagamenti - ASL CN2",
    "sha": "b9cbc6c6dfb1c1fa7fdd316faa7a75ca201c9aee66e2d70e1c2faccbe00b26f6",
    "caratteri": 7115,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "cuneo",
@@ -497,7 +530,7 @@
    "titolo": "Medici di continuità assistenziale - Distretti - ASL CN2",
    "sha": "559c83cd157d238ed3ea47ccc82db64d5f00f47d2e80bec8430f18cae900dcc8",
    "caratteri": 3164,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "cuneo",
@@ -508,7 +541,7 @@
    "titolo": "Percorsi di tutela disponibili - Tempi di attesa prestazioni ambulatoriali – giorno indice - ASL CN2",
    "sha": "123fab477c847dcf82131a2efe8b40fdd8eea1beab68f26b78fab38fac8131d9",
    "caratteri": 5160,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "novara",
@@ -529,7 +562,7 @@
    "certificato": "non valido",
    "file": "novara/42ffdf775f1d.txt",
    "titolo": "Continuità assistenziale (ex Guardia medica) | A.S.L. TO3",
-   "sha": "fe7ae435f02cdb65b0e95a8a702903aefd34e2c9178c12536d6ed42f1748aefd",
+   "sha": "1a26e1be52995ac80e45563dc602f2cee9e76f2305d061191cbd05b4d93445c9",
    "caratteri": 3110,
    "cambiata": true
   },
@@ -575,7 +608,7 @@
    "titolo": "Prenotare e disdire visite ed esami | ASL Novara",
    "sha": "7c569cdc0247e8b3128d4575a9e51505338349d283a8866901b7138c6ea22b95",
    "caratteri": 9598,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "novara",
@@ -586,7 +619,7 @@
    "titolo": "Centro Unico Prenotazioni (CUP) - Medicina di Base - Accettazione prelievi | ASL Novara",
    "sha": "14246f2ebd1a17670d8d8685f6ba24fa30382f6bce60920e95298928f3d405ee",
    "caratteri": 11984,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "novara",
@@ -603,7 +636,7 @@
    "titolo": "Percorso di tutela dei cittadini assistiti dall'Asl Novara nel rispetto dei tempi di attesa per le prestazioni specialistiche | ASL Novara",
    "sha": "161a72da9689525d387b63aef1902522e8be8f0ffffbf7d8852fce9b9c95a2ad",
    "caratteri": 8455,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -636,6 +669,51 @@
    "titolo": "Punto Unico di Accesso – PUA | Azienda Sanitaria Locale \"Città di Torino\"",
    "sha": "6b4865521b35d4b722c46a675945093659d002aeba55bb7148f571124f08293c",
    "caratteri": 7312,
+   "cambiata": false
+  },
+  {
+   "asl": "torino",
+   "url": "https://www.aslcittaditorino.it/numeri-utili/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "torino/d0a8dae87c2c.txt",
+   "titolo": "Numeri utili | Azienda Sanitaria Locale \"Città di Torino\"",
+   "sha": "321a46dc51c54fbaed1bff8816df44b0eb436b8963a056bdb30dcb1e722d4e00",
+   "caratteri": 6008,
+   "cambiata": false
+  },
+  {
+   "asl": "torino",
+   "url": "https://www.aslto3.piemonte.it/contatti/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "torino/b838f80535f8.txt",
+   "titolo": "Contatti | A.S.L. TO3",
+   "sha": "8cd90a2168e2741b0f0ab7d4281bc035fcb47bba76c91aaaaf6a5ae825d10d17",
+   "caratteri": 2193,
+   "cambiata": true
+  },
+  {
+   "asl": "torino",
+   "url": "https://www.aslto4.piemonte.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "torino/ef0c70d407c7.txt",
+   "titolo": "Homepage | ASLTO4",
+   "sha": "eed2ff50fb3cbfbf44ebe94aff2d3d1ebd2ae6931e8cb68ed69c6ec733a5d54d",
+   "caratteri": 3658,
+   "cambiata": true
+  },
+  {
+   "asl": "torino",
+   "url": "https://www.aslto5.piemonte.it/index.php/it/home",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "torino/8ac4bf643b99.txt",
+   "titolo": "Homepage | ASL TO5",
+   "sha": "9214025a76b7c11c9c2c6ff154bcca62dfb04a0e20d45c12c0076da7904ec0af",
+   "caratteri": 10517,
    "cambiata": true
   },
   {
@@ -679,7 +757,7 @@
    "certificato": "non valido",
    "file": "torino/53d58dce5be6.txt",
    "titolo": "U.R.P. | A.S.L. TO3",
-   "sha": "c0c36b3f0c65fe64a397a4dd85ef4543b2e742a2240d864d97c9eb77e53f0fac",
+   "sha": "e8b60d3ff4e5e004b40f7145e281679ef3f79d4ce80b31d6247a443ca637b188",
    "caratteri": 7182,
    "cambiata": true
   },
@@ -713,7 +791,7 @@
    "certificato": "non valido",
    "file": "torino/42ffdf775f1d.txt",
    "titolo": "Continuità assistenziale (ex Guardia medica) | A.S.L. TO3",
-   "sha": "fe7ae435f02cdb65b0e95a8a702903aefd34e2c9178c12536d6ed42f1748aefd",
+   "sha": "1a26e1be52995ac80e45563dc602f2cee9e76f2305d061191cbd05b4d93445c9",
    "caratteri": 3110,
    "cambiata": true
   },
@@ -758,7 +836,7 @@
    "certificato": "non valido",
    "file": "torino/47f0299742b3.txt",
    "titolo": "Assistenza a domicilio | A.S.L. TO3",
-   "sha": "d7756312dfc435cc9801e2186b5942a8369acb1a69471583c7f0e87e1ee24ec9",
+   "sha": "8722700fe23ab5f20130f22b0044c322dc4869d91bdd1211c8d0ea81bb79a589",
    "caratteri": 6250,
    "cambiata": true
   },
@@ -775,17 +853,6 @@
   },
   {
    "asl": "torino",
-   "url": "https://www.aslcittaditorino.it/numeri-utili/",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "torino/d0a8dae87c2c.txt",
-   "titolo": "Numeri utili | Azienda Sanitaria Locale \"Città di Torino\"",
-   "sha": "321a46dc51c54fbaed1bff8816df44b0eb436b8963a056bdb30dcb1e722d4e00",
-   "caratteri": 6008,
-   "cambiata": false
-  },
-  {
-   "asl": "torino",
    "url": "https://www.salutepiemonte.it/servizi",
    "controllata": "2026-10-22",
    "browser": true,
@@ -794,7 +861,7 @@
    "titolo": "Servizi | Salute Piemonte",
    "sha": "db4d086e2de051cc32f2d6e1b6f3b60fe197dd280150e32d1a164f553615ca36",
    "caratteri": 4918,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -806,7 +873,7 @@
    "titolo": "Prenotazioni visite ed esami | Salute Piemonte",
    "sha": "e41452642b2ac19032a2a0c8330b7c82aab8b371e0d84f533c4aa33e2a9b113d",
    "caratteri": 3510,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -818,7 +885,7 @@
    "titolo": "Faq | Salute Piemonte",
    "sha": "974996fff0dbea12fd78f053c854b2c3d240d110249022251ee9ace10eb98146",
    "caratteri": 7381,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -830,7 +897,7 @@
    "titolo": "Ritiro e consultazione documenti | Salute Piemonte",
    "sha": "1495af7c527a6945c223723c131ce6f746195ac7535ec9a1f9fcea92fb3e9ae5",
    "caratteri": 8085,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -851,9 +918,9 @@
    "browser": true,
    "http": 200,
    "file": "torino/0f28358a950c.txt",
-   "titolo": "Salute Piemonte",
-   "sha": "35efedb2bdd65110263d581d9103d151604c6a45193da0f9ff890192632b66f5",
-   "caratteri": 2988,
+   "titolo": "Gestione consensi | Salute Piemonte",
+   "sha": "f2519f047e8afbb962a7d2ee5553998fa12be35fbe0d9da0d3d9aa4762af13dd",
+   "caratteri": 4079,
    "cambiata": true
   },
   {
@@ -863,8 +930,8 @@
    "http": 200,
    "file": "torino/0df5ce662258.txt",
    "titolo": "Il Fascicolo Sanitario Elettronico 2.0 | Regione Piemonte",
-   "sha": "762e2abf6feea551d19fbbc93f8b3ae8c25add4d122af1d3d4941f8b246ac642",
-   "caratteri": 20023,
+   "sha": "facaf9113a62d5234aec381f50e545067ff188f24ea8f27be5dc765e9ebb8cd2",
+   "caratteri": 20018,
    "cambiata": true
   },
   {
@@ -880,8 +947,8 @@
    "http": 200,
    "file": "torino/83ce8b1bf05c.txt",
    "titolo": "L'ASL TO3 rinnova l'assistenza medica turistica nelle alte Valli Susa e Chisone | Regione Piemonte",
-   "sha": "d072f2f07f5577d9f3cf3776dcaf0845aa67e1d07369a578492e3ac85abeb682",
-   "caratteri": 15001,
+   "sha": "2834b075c8d9e741771f75ae544d9514e59cc46224919f1240204a4b86f6bf64",
+   "caratteri": 14996,
    "cambiata": true
   },
   {
@@ -891,8 +958,8 @@
    "http": 200,
    "file": "torino/02e76f98243d.txt",
    "titolo": "Sportello per il cittadino - URP di Torino | Regione Piemonte",
-   "sha": "f89a2efb558ffc0e41d7fada213557092faa00a2f2f68a642a192942d330120a",
-   "caratteri": 17633,
+   "sha": "f9ebd884118dd8dc3648b982ce384c068b53abda8cd62a52eba7bb709ee42f59",
+   "caratteri": 17628,
    "cambiata": true
   },
   {
@@ -904,7 +971,7 @@
    "titolo": "Come fare per | Azienda Sanitaria Locale \"Città di Torino\"",
    "sha": "4dc7a89798a3904e1a5c7ba47f7fdbb85b5ab6be93da018932fc2c3f46e3621b",
    "caratteri": 7958,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -915,7 +982,7 @@
    "titolo": "Prenotare, modificare e/o disdire una visita o un esame specialistico | Azienda Sanitaria Locale \"Città di Torino\"",
    "sha": "42d5c5b59997a61e241e508101e9d710ea929e3dacccd1563a12202d0b449b5b",
    "caratteri": 12824,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -926,7 +993,7 @@
    "titolo": "Centri Unificati Prenotazione (CUP) – Distretto Sud Ovest | Azienda Sanitaria Locale \"Città di Torino\"",
    "sha": "91502318f2c52f8caf12cb845e5759c592d3a9360c754fbda358f2aa4d3bd042",
    "caratteri": 6557,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -937,7 +1004,7 @@
    "titolo": "Continuità Assistenziale (ex Guardia Medica) 116117 | Azienda Sanitaria Locale \"Città di Torino\"",
    "sha": "66b23caf1a458c6b251eea3386396274b3aa67ebaa66e614c1bbfb1d32f6f172",
    "caratteri": 10661,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -948,7 +1015,7 @@
    "titolo": "Richiedere una valutazione geriatrica – UVG | Azienda Sanitaria Locale \"Città di Torino\"",
    "sha": "d698162d3fb9357766c1cad2cad606f2b3f1cc8c4df84d2c26df679bae9b4811",
    "caratteri": 9547,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -958,7 +1025,7 @@
    "certificato": "non valido",
    "file": "torino/f6d0f76be991.txt",
    "titolo": "A.S.L. TO3",
-   "sha": "6f5004abac9811863baa17a830ed96f25141624acfc212e61c5a925c6e16fed8",
+   "sha": "a3736d787d066ca8b7c69933f8a7f07f29c98ecdd5561508d435948cc7e257b4",
    "caratteri": 3072,
    "cambiata": true
   },
@@ -970,7 +1037,7 @@
    "certificato": "non valido",
    "file": "torino/58d10c286b3e.txt",
    "titolo": "Prenotazioni | A.S.L. TO3",
-   "sha": "ca044be65be53bebddf4a65a6a5f4e27e044b1c00e2d44e56f853c6b69f230ac",
+   "sha": "6bef07410a3bf73fb25109fa8fac86b65a088a4dda55102511f9d6f9993ce377",
    "caratteri": 6578,
    "cambiata": true
   },
@@ -982,7 +1049,7 @@
    "certificato": "non valido",
    "file": "torino/b4f5a3c3ea56.txt",
    "titolo": "CUP – Centri Unici di Prenotazione | A.S.L. TO3",
-   "sha": "1b14eb4e1646282e3b01506690c1a4aaaca7e08edc0d5e795946b6c7bb4511aa",
+   "sha": "2c09654cd6201128940c60eb55706e63ab18e4be18f600f24891c6a9846267ee",
    "caratteri": 10031,
    "cambiata": true
   },
@@ -994,7 +1061,7 @@
    "certificato": "non valido",
    "file": "torino/98d162d039ff.txt",
    "titolo": "Medico di famiglia & pediatra | A.S.L. TO3",
-   "sha": "a75a6f45e508447700f03720ea62c40ab2d23a313860ebd78b62f3bd45489ca7",
+   "sha": "3b864164cc5ec645d281dfe45af1ae9a1a01f3b4f9b1b104ca304e1f5d9eb9c5",
    "caratteri": 10962,
    "cambiata": true
   },
@@ -1007,7 +1074,7 @@
    "titolo": "Prelievi domiciliari | ASLTO4",
    "sha": "1e465499877d921b99e739d6e482804065e2013365ae9c42c94f9a1385d717d2",
    "caratteri": 9037,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -1018,7 +1085,7 @@
    "titolo": "Prenotazioni visite ed esami | ASL TO5",
    "sha": "66d56ec11c55ab58103f1ee78459346320887f56505d5bed5e04ab5629a5e942",
    "caratteri": 7052,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -1029,7 +1096,7 @@
    "titolo": "Prenotare e disdire visita | ASL TO5",
    "sha": "14f42da5fca22ace30cae9aed5071b9204e5d4f0f3af9f803505b16605ba4582",
    "caratteri": 9627,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -1040,7 +1107,7 @@
    "titolo": "Emergenza e urgenza | ASL TO5",
    "sha": "e68929bb64d063109e50143ec0d4e3b5d29fe95e8fa29b01d86f3d7449472264",
    "caratteri": 10110,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -1051,7 +1118,7 @@
    "titolo": "Numeri utili Ministero e Regione Piemonte | ASL TO5",
    "sha": "3010d8b76348025aee592a71f163f4af0abc89c5a2bdd7950614febce92a1b26",
    "caratteri": 6318,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -1070,7 +1137,7 @@
    "titolo": "Cure palliative | ASL TO5",
    "sha": "6233f0d0c6b12679d1bd2f4622d84ae80ca90261f148bd81827804cb34545c13",
    "caratteri": 9772,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -1081,7 +1148,7 @@
    "titolo": "Case della Comunità | ASL TO5",
    "sha": "98a9a754faa2a73bfa9c912f7ba299e7043db026d968441c3ffd49184d977633",
    "caratteri": 12482,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -1092,7 +1159,7 @@
    "titolo": "Rispetto dei tempi di attesa per le prestazioni specialistiche in primo accesso, ai sensi dell’art. 3 del D. Lgs. 29/04/1998 n. 124 | Azienda Sanitaria Locale \"Città di Torino\"",
    "sha": "578fe30ec4cdaf10da7fdd4cce4eb701c3081df07df1e48708333c4cfabcd171",
    "caratteri": 8873,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -1103,7 +1170,7 @@
    "titolo": "Tempi di Attesa delle prestazioni sanitarie | Azienda Sanitaria Locale \"Città di Torino\"",
    "sha": "aabc363816d4fae6f430837e9b6926b829c4adf973beb80c062fbb51f842c876",
    "caratteri": 8272,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -1113,7 +1180,7 @@
    "certificato": "non valido",
    "file": "torino/90f61ae2b1aa.txt",
    "titolo": "Tempi di attesa | A.S.L. TO3",
-   "sha": "1c3d46a5a66a11f097bc352b3d7e2e8e30e3b034e5ed6ba8164cd0af4d9aa1ad",
+   "sha": "eaa5e5be336e109e53d97939997cc177b48e030dd628f96476608ea16693e9c3",
    "caratteri": 9452,
    "cambiata": true
   },
@@ -1126,7 +1193,7 @@
    "titolo": "Percorso di tutela ai sensi dell'articolo 3 del Decreto Legislativo 124 del 1998 | ASLTO4",
    "sha": "1b58021eaf927a1e17a5d7163d45bae0eda71e831f15856bb87e20119f2e69ee",
    "caratteri": 6164,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -1137,7 +1204,7 @@
    "titolo": "Percorso di tutela del Cittadino nell'ambito del rispetto dei tempi di attesa per le prestazioni specialistiche (art.3 D.lgs. n.124/98) | ASL TO5",
    "sha": "f2f7a1f1e718b2ccd73f8ff11ae8c1ba4573907e780661fdc88bc0e09f85752d",
    "caratteri": 11791,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -1148,7 +1215,7 @@
    "titolo": "Liste di attesa | ASL TO5",
    "sha": "90fd0408af6f3c1d36b9f04c67794d3be26415e236c053a1998fb573ecff5108",
    "caratteri": 10458,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -1159,7 +1226,7 @@
    "titolo": "Richiedere il rilascio della documentazione sanitaria (cartella clinica, verbale di pronto soccorso…) | Azienda Sanitaria Locale \"Città di Torino\"",
    "sha": "50f50abdeae330bbe573dcc4a6ca1f0ecd5869e679d603e1727f3103d5601005",
    "caratteri": 10082,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -1170,7 +1237,7 @@
    "titolo": "Richiesta di copia della cartella clinica o di altra documentazione sanitaria (referti, verbali di pronto soccorso...) | ASLTO4",
    "sha": "b0e9c687bb2836d3854adf640e2c07bea6f3d1ed70528544271ebf0a99928306",
    "caratteri": 10914,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -1181,7 +1248,7 @@
    "titolo": "Richiedere copia documentazione sanitaria | ASL TO5",
    "sha": "b91fbfc09e471f7a4a9756d5cf9c339ee4096d0b9deddb0b107d335404e97b21",
    "caratteri": 8432,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -1191,7 +1258,7 @@
    "certificato": "non valido",
    "file": "torino/b82056cf0d81.txt",
    "titolo": "Assistenza protesica e integrativa | A.S.L. TO3",
-   "sha": "196632467dad8ff4777a7fa88e264f1278eca849dc2eb19e4cea4feb25064453",
+   "sha": "abbd45bf64de7898d301b6e87b6dac479d97d74d4d1d551d0dd284535aa2cc59",
    "caratteri": 13647,
    "cambiata": true
   },
@@ -1204,7 +1271,7 @@
    "titolo": "Fornitura di presidi e ausili (compreso materiale per stomie) | ASLTO4",
    "sha": "84659bc2f49ef4a82ba7b5532124442f128c5fc536495a7d7bff9bde9ed530dc",
    "caratteri": 15692,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -1215,7 +1282,7 @@
    "titolo": "Assistenza Protesica e Integrativa | ASL TO5",
    "sha": "5c0d966cbc9cf2986c33917582beec55ae81092f6dc04f35fb81378908ca03c8",
    "caratteri": 13147,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -1226,7 +1293,7 @@
    "titolo": "Cure palliative | ASLTO4",
    "sha": "7249fee848d550a174855dc7d4f889dc8a2cadaa686180cca68fd0ef7a2ad5f3",
    "caratteri": 7022,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -1237,7 +1304,7 @@
    "titolo": "S.S.V.D. Unità Cure Palliative | ASL TO5",
    "sha": "631af3bb2a1074b6e0ed8e700a848b2b5832682628dd78a49228ef48a194d078",
    "caratteri": 8199,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -1248,7 +1315,7 @@
    "titolo": "Cure Domiciliari | ASL TO5",
    "sha": "91ec7b2d0149bd9b51b4ad713d9cec91124b805036bd556d7f30cf054eb334b3",
    "caratteri": 12878,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -1258,8 +1325,8 @@
    "http": 200,
    "file": "torino/dfb330ee803a.txt",
    "titolo": "Il mio medico | Salute Piemonte",
-   "sha": "02e16f75be672aca83af3fe593f653ff50e576917a9bcd0387e3eafd7e6ae860",
-   "caratteri": 2296,
+   "sha": "240b5024f646a78f919b42fcb17956ffcb83ba8340c7f9f5b757025025117e8d",
+   "caratteri": 3367,
    "cambiata": true
   },
   {
@@ -1269,8 +1336,8 @@
    "http": 200,
    "file": "torino/1df1dd473541.txt",
    "titolo": "Il medico di famiglia e il pediatra di libera scelta | Regione Piemonte",
-   "sha": "ea95c819531c52554870660c3bfa4ef4e4188754d10d6e8ab2d8e6f1200c9737",
-   "caratteri": 15707,
+   "sha": "67b6a9e5262c24fe5c418936acd98b34d9de1ce9a618260b6631b95374f92680",
+   "caratteri": 15702,
    "cambiata": true
   },
   {
@@ -1283,7 +1350,7 @@
    "titolo": "Faq | Salute Piemonte",
    "sha": "3c44c020b40396b36281a6807572ebd9850682cb62b2d5efed58cc9de75f149d",
    "caratteri": 23119,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "verbano-cusio-ossola",
@@ -1300,7 +1367,7 @@
    "certificato": "non valido",
    "file": "verbano-cusio-ossola/42ffdf775f1d.txt",
    "titolo": "Continuità assistenziale (ex Guardia medica) | A.S.L. TO3",
-   "sha": "fe7ae435f02cdb65b0e95a8a702903aefd34e2c9178c12536d6ed42f1748aefd",
+   "sha": "1a26e1be52995ac80e45563dc602f2cee9e76f2305d061191cbd05b4d93445c9",
    "caratteri": 3110,
    "cambiata": true
   },
@@ -1398,6 +1465,17 @@
   },
   {
    "asl": "vercelli",
+   "url": "https://aslvc.piemonte.it/servizi-e-prevenzione/tutti-i-servizi/assistenza-per-chi-e-senza-medico-ambulatori-distrettuali/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "vercelli/81b656069afb.txt",
+   "titolo": "Assistenza per chi è senza medico - Ambulatori distrettuali - ASL Vercelli",
+   "sha": "ea7bca5793431528484dc5b210af5eab2b1353904c81bfaa934e5499c783c2cf",
+   "caratteri": 5650,
+   "cambiata": true
+  },
+  {
+   "asl": "vercelli",
    "url": "https://servizi.regione.piemonte.it/catalogo/prenotazione-visite-esami",
    "controllata": "2026-10-22",
    "http": 200,
@@ -1438,7 +1516,7 @@
    "titolo": "Casa della Comunità di Vercelli: come accedere alla Guardia medica e quando rivolgersi al Pronto Soccorso - ASL Vercelli",
    "sha": "24f52277284648c044eae75262e40a37624d651cd575a5a3b1e825651d76a6f1",
    "caratteri": 5759,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "vercelli",
@@ -1449,7 +1527,7 @@
    "titolo": "Accedere al percorso di tutela - ASL Vercelli",
    "sha": "be8dc8a3da867309cf3861eadb71d65ba97493e96a0205aae441087e1dc346f6",
    "caratteri": 4688,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "vercelli",
@@ -1460,7 +1538,7 @@
    "titolo": "Come fare per - ASL Vercelli",
    "sha": "f46a1bc2e52307419d3b522e84f2abc06eeb912545507916731ebf2676a729f2",
    "caratteri": 2839,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "vercelli",
@@ -1471,7 +1549,7 @@
    "titolo": "Richiedere copia della cartella clinica e certificato di decesso - ASL Vercelli",
    "sha": "375217e932562d7d6344b4b65fee17bf37ac81581d791ad49bd5cbf51962d892",
    "caratteri": 6366,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "vercelli",
@@ -1482,7 +1560,7 @@
    "titolo": "S.S.D.U. Cure Palliative e Hospice - ASL Vercelli",
    "sha": "3e6a611ca8b07cded578891dccd106b6b5ee6595ab22f10ae22a0e1b8bb71259",
    "caratteri": 2866,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "inps-piemonte",
@@ -1571,6 +1649,61 @@
    "sha": "f935102838345f7dd2a6425a90d18409d14d13fba755b494eccbb7f2c76b1dda",
    "caratteri": 43368,
    "cambiata": false
+  },
+  {
+   "asl": "inps-piemonte",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.818000.818000-elencoStruttureInps.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-piemonte/994629a8d4c7.txt",
+   "titolo": "Portale Inps - Piemonte",
+   "sha": "c9b1b8140a5c35130b193e7deb10bd323fee98807fc0db561cc2232f93dc32c6",
+   "caratteri": 42183,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-piemonte",
+   "url": "https://www.disabilita.governo.it/it/notizie/individuate-le-9-province-per-sperimentare-la-riforma-disabilita/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-piemonte/4016319a363c.txt",
+   "titolo": "Individuate le 9 province per sperimentare la riforma disabilità",
+   "sha": "66d7f89ba67266ce1fbe7b9c0bd75ddc1bafe70d3840008c45b807ba3eec62df",
+   "caratteri": 2377,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-piemonte",
+   "url": "https://www.disabilita.governo.it/it/notizie/individuate-le-altre-11-province-per-la-sperimentazione-della-riforma-della-disabilita/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-piemonte/49a147b501cb.txt",
+   "titolo": "Individuate le altre 11 province per la sperimentazione della riforma della disabilità",
+   "sha": "616ce11d934ce0494cb840068dd03f5db47a39190acf5cec1e6929cf5cf8ca02",
+   "caratteri": 2423,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-piemonte",
+   "url": "https://www.disabilita.governo.it/it/notizie/al-via-sperimentazione-riforma-disabilita-in-altre-40-province/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-piemonte/cb8037740243.txt",
+   "titolo": "Al via sperimentazione riforma disabilità in altre 40 province",
+   "sha": "4ec5a460fb50b2e4f8c1006136eb2184acf64b45b3b190e378501ad4c004e6e3",
+   "caratteri": 3002,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-piemonte",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-piemonte/aad63b63390a.txt",
+   "titolo": "Portale Inps - Riforma della disabilità: al via la terza fase sperimentale",
+   "sha": "3e22d1cf04da5a9b152d4fd5f6033e4b4b86d0937bfc137d142d7c9ec25bd108",
+   "caratteri": 46281,
+   "cambiata": true
   }
  ]
 }

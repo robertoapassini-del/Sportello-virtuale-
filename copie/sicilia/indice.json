@@ -1,6 +1,6 @@
 {
  "regione": "sicilia",
- "aggiornato": "2026-10-22T08:25:00.792Z",
+ "aggiornato": "2026-10-22T10:11:16.406Z",
  "pagine": [
   {
    "asl": "palermo",
@@ -11,7 +11,7 @@
    "titolo": "ASP Palermo – Azienda Sanitaria Provinciale di Palermo",
    "sha": "f81034719a2a3aa513ac86134424c0c8a67f8a72956aca4edfcf2266058d3f0e",
    "caratteri": 9480,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "palermo",
@@ -22,7 +22,7 @@
    "titolo": "“Percorso di tutela”: l’Asp di Palermo garantisce tempi certi per le prestazioni specialistiche – ASP Palermo",
    "sha": "b5c81999de67c42e98b74ed83b57623e7f97c27aee531e9ae2f282a0d7200047",
    "caratteri": 5138,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "palermo",
@@ -39,7 +39,7 @@
    "titolo": "Continuità Assistenziale – ASP Palermo",
    "sha": "a3cf6dcca68d756b7b0d794776931d9d6d57e188810784876c9412f752e6cc1c",
    "caratteri": 10165,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "palermo",
@@ -50,6 +50,17 @@
    "titolo": "PUA – Punto Unico di Accesso – ASP Palermo",
    "sha": "da58dd9421a91a2b47a0aaf702702e87b52d2c9dcdbb1b9ed96c5714d5a2fe86",
    "caratteri": 3758,
+   "cambiata": false
+  },
+  {
+   "asl": "palermo",
+   "url": "https://sportello.asppalermo.org/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "palermo/79e2ef7d2582.txt",
+   "titolo": "Sportello Online - Asp Palermo - Index",
+   "sha": "72474b573c8da98d84b4ccc7948075f0a16a704e2e95d4dd5eb1c68a4d1dce3b",
+   "caratteri": 1264,
    "cambiata": true
   },
   {
@@ -72,7 +83,7 @@
    "titolo": "U.R.P. – ASP Palermo",
    "sha": "4d2b686e27b34ae09bd3b57a5514526f64dc0cd99ef7c267e8804c2c49c67710",
    "caratteri": 7546,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "palermo",
@@ -103,9 +114,9 @@
    "http": 200,
    "file": "palermo/73d4ce45964b.txt",
    "titolo": "Distretto Sanitario n. 42 PTA CENTRO – Palermo – ASP Palermo",
-   "sha": "b9e3b1ac9b44845ce52851606a4150f85ba5e2114778113b1fe92f4048a6c8ed",
-   "caratteri": 15434,
-   "cambiata": false
+   "sha": "20ed53f72d97b36c057e096b80bddd37ce7423302d637965aa11a3df6ac89cdc",
+   "caratteri": 15429,
+   "cambiata": true
   },
   {
    "asl": "palermo",
@@ -114,8 +125,8 @@
    "http": 200,
    "file": "palermo/46561ffc99ca.txt",
    "titolo": "Distretto Sanitario n. 42 PTA BIONDO – Palermo – ASP Palermo",
-   "sha": "e542538ec6893d81070606be269b4ff6a1f30f32d8eb647e2348a3efebd862d0",
-   "caratteri": 12149,
+   "sha": "3dcb97e669487baf746bfde72bb0b472eb9fb4bafcc5e0650f5d82d490ce9d00",
+   "caratteri": 12144,
    "cambiata": true
   },
   {
@@ -125,9 +136,9 @@
    "http": 200,
    "file": "palermo/b90656f27825.txt",
    "titolo": "Distretto Sanitario n. 42 PTA CASA DEL SOLE – Palermo – ASP Palermo",
-   "sha": "ccb3b104782dfaef463590828e78b4c89c00aaf4d09a25417de68d7e50b90542",
-   "caratteri": 8791,
-   "cambiata": false
+   "sha": "f6df83bd141eb11003220ea935c4ca0587cdeb41616b5187628300737053e797",
+   "caratteri": 8786,
+   "cambiata": true
   },
   {
    "asl": "palermo",
@@ -136,9 +147,9 @@
    "http": 200,
    "file": "palermo/fc04f04c945b.txt",
    "titolo": "Distretto Sanitario n. 42 PTA ENRICO ALBANESE – Palermo – ASP Palermo",
-   "sha": "8d897661743ad59fb0313fec1e515c5be55f198111ccb60de7ead148ad113c84",
-   "caratteri": 10452,
-   "cambiata": false
+   "sha": "fb2fdb10fb17800d43dc7157886a1cac585a36db3549681a6ed789bd2c5e754f",
+   "caratteri": 10447,
+   "cambiata": true
   },
   {
    "asl": "palermo",
@@ -147,8 +158,8 @@
    "http": 200,
    "file": "palermo/ff313e135108.txt",
    "titolo": "Distretto Sanitario n. 42 PTA GUADAGNA – Palermo – ASP Palermo",
-   "sha": "655676bebb42f348cc5e2eb58f00e40ccff4b663f6b920b4ccdef026eac81d2a",
-   "caratteri": 11357,
+   "sha": "4af650c5aeb2603a76596f6baadccdf2ef052581d74c5411072c19095d45ac34",
+   "caratteri": 11352,
    "cambiata": true
   },
   {
@@ -158,8 +169,8 @@
    "http": 200,
    "file": "palermo/2326ae2cee1a.txt",
    "titolo": "Distretto Sanitario n. 39 – Bagheria – ASP Palermo",
-   "sha": "0486a9ceb9078b3caee3d6994b0abc8193f0914be0e491a12d79b01b818eaf79",
-   "caratteri": 17500,
+   "sha": "4e9ce6f1a0a63c2ce956cb34acb4876c9a46e911cb31056820e2d007186cb056",
+   "caratteri": 17495,
    "cambiata": true
   },
   {
@@ -169,9 +180,9 @@
    "http": 200,
    "file": "palermo/a6cb5dae3e95.txt",
    "titolo": "Distretto Sanitario n. 34 – Carini – ASP Palermo",
-   "sha": "a1593b07c76252fb3f1b416a29d5f4fa2db0fc8645a0c717184d8f6b47fe05b8",
-   "caratteri": 9609,
-   "cambiata": false
+   "sha": "3fcd662d7c7287badff31e4e2dc6096a2daedb4a3270ab3f2ec002fd648699ba",
+   "caratteri": 9604,
+   "cambiata": true
   },
   {
    "asl": "palermo",
@@ -180,9 +191,9 @@
    "http": 200,
    "file": "palermo/25ae798ba276.txt",
    "titolo": "Distretto Sanitario n. 33 – Cefalù – ASP Palermo",
-   "sha": "240ec9bce938eed6713546cf28e7bcc6ca6daa6a88d84d1ffb781e5c77a705cf",
-   "caratteri": 9399,
-   "cambiata": false
+   "sha": "18750d40d31059aa4fc4076a7e734915ee4628725a81690824cfcd58d5b33808",
+   "caratteri": 9394,
+   "cambiata": true
   },
   {
    "asl": "palermo",
@@ -191,9 +202,9 @@
    "http": 200,
    "file": "palermo/fe46ad57d424.txt",
    "titolo": "Distretto Sanitario n. 40 – Corleone – ASP Palermo",
-   "sha": "6ccf8889e031134fb8696d0397fc4864f9343f1fedfad627ddf5250ef22f1cce",
-   "caratteri": 11012,
-   "cambiata": false
+   "sha": "91d172215a589bd27728bdcb151a750110a8db8cde8b73d4fd31a8e0b3bb0c77",
+   "caratteri": 11007,
+   "cambiata": true
   },
   {
    "asl": "palermo",
@@ -202,9 +213,9 @@
    "http": 200,
    "file": "palermo/f6d387ed9bc3.txt",
    "titolo": "Distretto Sanitario n. 38 – Lercara Friddi – ASP Palermo",
-   "sha": "1f3f91a7a7b6169fe2ba45a693235d850b894a486615c9ddf7c3c738e01dd835",
-   "caratteri": 11093,
-   "cambiata": false
+   "sha": "2ce640801c96b8a8e46c543067fbe573bbeebf2f328a2bb71648821a8d7c2794",
+   "caratteri": 11088,
+   "cambiata": true
   },
   {
    "asl": "palermo",
@@ -213,9 +224,9 @@
    "http": 200,
    "file": "palermo/f1a699461737.txt",
    "titolo": "Distretto Sanitario n. 36 – Misilmeri – ASP Palermo",
-   "sha": "4ca1507c63fead334c1547f9d4a6d8036544a12974ffbf347c76ac66e0334f4d",
-   "caratteri": 11214,
-   "cambiata": false
+   "sha": "d124e4eaa98138bd74e44a05b53683146f9d168b79994a1dacafdaac6623d2a2",
+   "caratteri": 11209,
+   "cambiata": true
   },
   {
    "asl": "palermo",
@@ -224,9 +235,9 @@
    "http": 200,
    "file": "palermo/0ab7e6a28732.txt",
    "titolo": "Distretto Sanitario n. 41 – Partinico – ASP Palermo",
-   "sha": "a31f66791e9e79086eb9cd37aaf12f72f337c1a20a6e6e3a1ac9f904a838dfc9",
-   "caratteri": 9186,
-   "cambiata": false
+   "sha": "86285e3215e2a40bde13d79dc97ac5cd24ee1a2bef59f2f8f4e8dce6603b89f4",
+   "caratteri": 9181,
+   "cambiata": true
   },
   {
    "asl": "palermo",
@@ -235,9 +246,9 @@
    "http": 200,
    "file": "palermo/804d9c9d1c53.txt",
    "titolo": "Distretto Sanitario n. 35 – Petralia Sottana – ASP Palermo",
-   "sha": "4a2b3f8f7fb24c0a3369b46fdd50142c3d435e7cc414d403f26e0c99e7f4583d",
-   "caratteri": 10570,
-   "cambiata": false
+   "sha": "197868e6de2f5ebdd7dfb34c11a6f78b896f2afc0601e2f7f9de8279a14027ad",
+   "caratteri": 10565,
+   "cambiata": true
   },
   {
    "asl": "palermo",
@@ -246,9 +257,9 @@
    "http": 200,
    "file": "palermo/21a4808b7091.txt",
    "titolo": "Distretto Sanitario n. 37 – Termini Imerese – ASP Palermo",
-   "sha": "fa9392d67ed54451007d41b4767f2027ebb89ca903f8b88f9f13de743f9293f2",
-   "caratteri": 9415,
-   "cambiata": false
+   "sha": "f2d2fdd6d1b59d71cad1ed7c9724daf2313d2a4dbb3f805ac77889c8f6aceddb",
+   "caratteri": 9410,
+   "cambiata": true
   },
   {
    "asl": "palermo",
@@ -268,7 +279,7 @@
    "http": 200,
    "file": "palermo/1c749ae9389c.txt",
    "titolo": "Notizie e servizi utili",
-   "sha": "4fccf7205f9be60c08f848086ea61ca135b51166cc510e663c7d15e9d4cf9580",
+   "sha": "06b30182141c13d75bdc3f2908a4dae35706a3c5aa5fd87735573622bd9db33c",
    "caratteri": 8112,
    "cambiata": true
   },
@@ -279,8 +290,8 @@
    "http": 200,
    "file": "palermo/a3287f18bd59.txt",
    "titolo": "Richiedere la copia della cartella clinica - Azienda Ospedaliera",
-   "sha": "8dcef7f8dcb5f9f731aa68db5c38b68a978175e75f3700cdad5d140d0d165ba8",
-   "caratteri": 9555,
+   "sha": "d725b053698cdb742ebb5a88ab74f039e837544bde53c03df81580c5474a9767",
+   "caratteri": 9410,
    "cambiata": true
   },
   {
@@ -301,9 +312,10 @@
    "http": 200,
    "file": "ragusa/4149216fee04.txt",
    "titolo": "Azienda Sanitaria Provinciale di Ragusa",
-   "sha": "c9141493b29a2e4fa0668f6f1dced2eca5b77c2dada6473d71400fcc29c71fd3",
-   "caratteri": 4701,
-   "cambiata": false
+   "sha": "03214af376ec068eb3506b1dd8438059244fc081e0520fd03dac7eac94caa886",
+   "caratteri": 4426,
+   "email_nascoste": 2,
+   "cambiata": true
   },
   {
    "asl": "ragusa",
@@ -312,9 +324,10 @@
    "http": 200,
    "file": "ragusa/c48283a9e81c.txt",
    "titolo": "Liste e tempi di attesa",
-   "sha": "66ab16460eb0359d44e3837220163e39509b73716d732030e432fd170baa333c",
-   "caratteri": 13624,
-   "cambiata": false
+   "sha": "fb990acb4753a15b0e66694dbe46d1174200688c1b9aaa5c6e48d7076be1ac73",
+   "caratteri": 13409,
+   "email_nascoste": 3,
+   "cambiata": true
   },
   {
    "asl": "ragusa",
@@ -334,53 +347,10 @@
    "http": 200,
    "file": "ragusa/fbc440188643.txt",
    "titolo": "Guardia Medica",
-   "sha": "67b974e2c826256bbc7d23ad378094c9c85db91949ffa6b7d0490d768b4c82b8",
-   "caratteri": 3207,
-   "cambiata": false
-  },
-  {
-   "asl": "ragusa",
-   "url": "https://asp.rg.it/cup.html",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "ragusa/a163eeb6c925.txt",
-   "titolo": "Centro Unico di Prenotazione (CUP)",
-   "sha": "c372500b8608cff901c4e8063767865a5def56f3c5554a364756442f247dceae",
-   "caratteri": 5423,
-   "cambiata": false
-  },
-  {
-   "asl": "ragusa",
-   "url": "https://asp.rg.it/azienda/area-staff/uos-comunicazione-urp-e-ufficio-stampa",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "ragusa/58c9c455ee48.txt",
-   "titolo": "UOS Comunicazione: URP e Ufficio Stampa",
-   "sha": "84f27e58c7bf1bce2aa0c76536e16f696ba3d4214a500a00a483d3904fb02d2e",
-   "caratteri": 5753,
-   "cambiata": false
-  },
-  {
-   "asl": "ragusa",
-   "url": "https://asp.rg.it/servizio-di-assistenza-integrativa-protesica-ed-handicap.html",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "ragusa/7504f96dad63.txt",
-   "titolo": "Servizio di assistenza integrativa, protesica ed handicap",
-   "sha": "d60ba198d719038ec59324322b3b457f26b9157044d483eb643a7adc1909c8f3",
-   "caratteri": 12218,
-   "cambiata": false
-  },
-  {
-   "asl": "ragusa",
-   "url": "https://asp.rg.it/dipartimenti/dipartimento-prevenzione/centro-gestione-screening.html",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "ragusa/6b298ce70f6b.txt",
-   "titolo": "Centro Gestione Screening",
-   "sha": "d3a7ada0275c84e187ceb7bfd65c2961b78a9b3d04e095d0c9e5acc674fef8d6",
-   "caratteri": 4061,
-   "cambiata": false
+   "sha": "f55d826300345aab704d041fe35b55066e9994f5d914ba886d52d9d81ff964ad",
+   "caratteri": 3075,
+   "email_nascoste": 2,
+   "cambiata": true
   },
   {
    "asl": "ragusa",
@@ -389,9 +359,58 @@
    "http": 200,
    "file": "ragusa/bed3808bd815.txt",
    "titolo": "Anagrafe assistiti",
-   "sha": "ab2ad12e46320ab7c26380b0305e334ad135cd812cb5d2bc9d9aa7778584717b",
-   "caratteri": 8174,
-   "cambiata": false
+   "sha": "aa09421452e369763729fbcbdfb7b2ab56e130c9a7e5b7d2bb4ebe3b77bb07ec",
+   "caratteri": 7849,
+   "email_nascoste": 5,
+   "cambiata": true
+  },
+  {
+   "asl": "ragusa",
+   "url": "https://asp.rg.it/cup.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ragusa/a163eeb6c925.txt",
+   "titolo": "Centro Unico di Prenotazione (CUP)",
+   "sha": "59dc89d4966e7fe69c49b2b9b0952781da0eb1f698160be9ebd711961ecc21e8",
+   "caratteri": 5137,
+   "email_nascoste": 4,
+   "cambiata": true
+  },
+  {
+   "asl": "ragusa",
+   "url": "https://asp.rg.it/azienda/area-staff/uos-comunicazione-urp-e-ufficio-stampa",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ragusa/58c9c455ee48.txt",
+   "titolo": "UOS Comunicazione: URP e Ufficio Stampa",
+   "sha": "b84f38b3561058662bfd8583439f3eddd3e53bd64bcc012d6bff4ce866938781",
+   "caratteri": 5465,
+   "email_nascoste": 4,
+   "cambiata": true
+  },
+  {
+   "asl": "ragusa",
+   "url": "https://asp.rg.it/servizio-di-assistenza-integrativa-protesica-ed-handicap.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ragusa/7504f96dad63.txt",
+   "titolo": "Servizio di assistenza integrativa, protesica ed handicap",
+   "sha": "6f8bd84c9c9540617d38571463417ba18bbc2e010048c552005e9bb97755e94a",
+   "caratteri": 11891,
+   "email_nascoste": 5,
+   "cambiata": true
+  },
+  {
+   "asl": "ragusa",
+   "url": "https://asp.rg.it/dipartimenti/dipartimento-prevenzione/centro-gestione-screening.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ragusa/6b298ce70f6b.txt",
+   "titolo": "Centro Gestione Screening",
+   "sha": "3288c15aff550f937e93bb3299072bf1482033b03b055d5c35dc766a770a2fec",
+   "caratteri": 3854,
+   "email_nascoste": 3,
+   "cambiata": true
   },
   {
    "asl": "ragusa",
@@ -400,9 +419,10 @@
    "http": 200,
    "file": "ragusa/5572e1a0661e.txt",
    "titolo": "Ospedali",
-   "sha": "fd2f49c2c7e73b0f61199b1fb5707139c756228ffd9e069f8541762503764a5d",
-   "caratteri": 2528,
-   "cambiata": false
+   "sha": "3e0a7ae800a720c780bb153675d8ef24e20d7f4b67dff49dd8436b823acf86ec",
+   "caratteri": 2396,
+   "email_nascoste": 2,
+   "cambiata": true
   },
   {
    "asl": "ragusa",
@@ -411,9 +431,10 @@
    "http": 200,
    "file": "ragusa/d624734d0b93.txt",
    "titolo": "Distretto Sanitario Ragusa",
-   "sha": "70d6ce22a5cbcfffe7c4fecf71d17df92ee66219eb3f8ac41db9222bd896e3b1",
-   "caratteri": 2118,
-   "cambiata": false
+   "sha": "1ce0dd4c21a1e8d285ac679bca5b61156527efd02709f0fb4db5c065cc2b12ee",
+   "caratteri": 1986,
+   "email_nascoste": 2,
+   "cambiata": true
   },
   {
    "asl": "caltanissetta",
@@ -423,7 +444,7 @@
    "finale": "https://www.asp.cl.it:443/it",
    "file": "caltanissetta/856c7c18d905.txt",
    "titolo": "| ASP Caltanissetta",
-   "sha": "46bfe12d26e6bf349ed1f754d2796aa8233197a0c487ea7864696c3db49b122d",
+   "sha": "614a9edfc244c36ef6517c929cfd11e370705d9d23b92344795447a28432f3b1",
    "caratteri": 8764,
    "cambiata": true
   },
@@ -459,6 +480,17 @@
    "sha": "efd09bb40d20604efe9772d2d9602279857c71478b73ae8022e0c6cd8249afef",
    "caratteri": 15282,
    "cambiata": false
+  },
+  {
+   "asl": "caltanissetta",
+   "url": "https://www.asp.cl.it/it/scelta-medici-pediatri",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "caltanissetta/5cbd24144bd0.txt",
+   "titolo": "Scelta e Cambio Medici di Medicina Generale | ASP Caltanissetta",
+   "sha": "accff1364bba1108a0e2279018d0018d5f0e948c03fbd816bc1b1ecc0363a354",
+   "caratteri": 5745,
+   "cambiata": true
   },
   {
    "asl": "caltanissetta",
@@ -591,7 +623,7 @@
    "titolo": "Portale Azienda Sanitaria",
    "sha": "33945b1f3217eee70e9e9a29f9e394875a8d76526a96cb0a7aa7f24941608c0d",
    "caratteri": 8374,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "messina",
@@ -615,13 +647,9 @@
    "asl": "messina",
    "url": "https://old.asp.messina.it/?page_id=124994",
    "controllata": "2026-10-22",
-   "http": 200,
+   "http": 0,
    "certificato": "non valido",
-   "file": "messina/88c53f7a14ab.txt",
-   "titolo": "La rete Emergenza Urgenza – ASP Messina",
-   "sha": "45a4108121207a61412d18e2b4b0b11f99269e3a8fd35654b1fba692a5f54d07",
-   "caratteri": 16870,
-   "cambiata": false
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "messina",
@@ -634,6 +662,18 @@
    "sha": "858885c39da6a99c52db181af2dd37f7077a4a5c338c1838ac65fb6d9a4aaf67",
    "caratteri": 4099,
    "cambiata": false
+  },
+  {
+   "asl": "messina",
+   "url": "https://sceltamedico.asp.messina.it/login",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "file": "messina/c59adf30f716.txt",
+   "titolo": "Accedi — Cambio Medico — ASP 5 Messina",
+   "sha": "cf7bfbbfe9cb0cf0b20b56977494121606f9c6e9c0b2a302956a57abe73ceb74",
+   "caratteri": 2462,
+   "cambiata": true
   },
   {
    "asl": "messina",
@@ -663,13 +703,9 @@
    "asl": "messina",
    "url": "https://old.asp.messina.it/?p=144331",
    "controllata": "2026-10-22",
-   "http": 200,
+   "http": 0,
    "certificato": "non valido",
-   "file": "messina/c26572f01a3a.txt",
-   "titolo": "Richiesta Assistenza Domiciliare Palliativa (ADI P) – ASP Messina",
-   "sha": "b95293e1c92ced57eb6a58c6f8ccd4d3ed9cc1aa7fe6d9407818e8ca8db19a53",
-   "caratteri": 9416,
-   "cambiata": false
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "messina",
@@ -687,109 +723,73 @@
    "asl": "messina",
    "url": "https://old.asp.messina.it/?p=124577",
    "controllata": "2026-10-22",
-   "http": 200,
+   "http": 0,
    "certificato": "non valido",
-   "file": "messina/b93a7c51f846.txt",
-   "titolo": "Autorizzazione assistenza protesica – Protesi e Ausili riabilitativi, acustiche, busto ortopedico, microinfusori e ventilatorio – Messina – ASP Messina",
-   "sha": "22bf0de3206cabbb04502a7d4c52596a1e23f4812b1ac019c14bf3de07cdace5",
-   "caratteri": 5321,
-   "cambiata": true
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "messina",
    "url": "https://old.asp.messina.it/?p=124593",
    "controllata": "2026-10-22",
-   "http": 200,
+   "http": 0,
    "certificato": "non valido",
-   "file": "messina/49a8cb5433ae.txt",
-   "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico – Milazzo (ME) – ASP Messina",
-   "sha": "a60d75ec0e691d69005a5fcd78d5a55e3a701e38a21474ccca5b5b2f7fe1ce38",
-   "caratteri": 5212,
-   "cambiata": true
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "messina",
    "url": "https://old.asp.messina.it/?p=124629",
    "controllata": "2026-10-22",
-   "http": 200,
+   "http": 0,
    "certificato": "non valido",
-   "file": "messina/af0dd7dea31e.txt",
-   "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico – Barcellona Pozzo di Gotto (ME) – ASP Messina",
-   "sha": "35767c3199462a8a400cadd81104b9c754a21ced9d2a14154f4df1d85e2bfbb4",
-   "caratteri": 5386,
-   "cambiata": true
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "messina",
    "url": "https://old.asp.messina.it/?p=124645",
    "controllata": "2026-10-22",
-   "http": 200,
+   "http": 0,
    "certificato": "non valido",
-   "file": "messina/46de8177530f.txt",
-   "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico – Patti (ME) – ASP Messina",
-   "sha": "a8ffddbf87b71ccc99b7d7a77c390b97989a167d481911e901100cfdcba30c90",
-   "caratteri": 5183,
-   "cambiata": true
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "messina",
    "url": "https://old.asp.messina.it/?p=186163",
    "controllata": "2026-10-22",
-   "http": 200,
+   "http": 0,
    "certificato": "non valido",
-   "file": "messina/6f2b15365da4.txt",
-   "titolo": "Autorizzazione Assistenza Integrativa – Presidi per diabetici, celiaci, incontinenti, pannoloni, stomizzati – Messina – ASP Messina",
-   "sha": "9b050bae137551f61467f8a1d109c1bbcfa666d1d97c241b07d86cdcb9f1d4ab",
-   "caratteri": 5222,
-   "cambiata": true
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "messina",
    "url": "https://old.asp.messina.it/?p=124673",
    "controllata": "2026-10-22",
-   "http": 200,
+   "http": 0,
    "certificato": "non valido",
-   "file": "messina/d31336f3a7de.txt",
-   "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico- Sant’Agata di Militello (ME) – ASP Messina",
-   "sha": "4c2c45b2afdc09bdb723a5c251cb7d61586f20081e744135e2bcaf180706abbb",
-   "caratteri": 5315,
-   "cambiata": true
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "messina",
    "url": "https://old.asp.messina.it/?p=124609",
    "controllata": "2026-10-22",
-   "http": 200,
+   "http": 0,
    "certificato": "non valido",
-   "file": "messina/b054a0ed7979.txt",
-   "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico – Lipari (ME) – ASP Messina",
-   "sha": "45b02edc75f8b3ca1165f500122686ce2a9ad3d4d1ba18a93ad61d16060fad7b",
-   "caratteri": 5215,
-   "cambiata": true
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "messina",
    "url": "https://old.asp.messina.it/?p=124657",
    "controllata": "2026-10-22",
-   "http": 200,
+   "http": 0,
    "certificato": "non valido",
-   "file": "messina/f956bab565c6.txt",
-   "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico – Mistretta (ME) – ASP Messina",
-   "sha": "008e03352c046ec3147a4387edb47162593f4152420937a826747a955bf569cd",
-   "caratteri": 5378,
-   "cambiata": true
+   "errore": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received"
   },
   {
    "asl": "messina",
    "url": "https://old.asp.messina.it/?p=124292",
    "controllata": "2026-10-22",
-   "http": 200,
+   "http": 0,
    "certificato": "non valido",
-   "file": "messina/fd0ebd947108.txt",
-   "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico – Taormina (ME) – ASP Messina",
-   "sha": "24bdc38ad46dcd3b36d0d9627bb87449037cf44c77ceeb2df947fbd772d1bd2a",
-   "caratteri": 5232,
-   "cambiata": true
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "messina",
@@ -916,7 +916,7 @@
    "finale": "https://portalesalute.asp.sr.it/home",
    "file": "siracusa/13f9f6cc3bed.txt",
    "titolo": "Portale della salute",
-   "sha": "2ba86efcd50eafc481b22daa1273422730f053099c09b181f610213d00dd2046",
+   "sha": "f9a4688d1a9e768ccd746d458b3159900a4f015ced7a6bd9b5733a3e2b369a3e",
    "caratteri": 5178,
    "cambiata": true
   },
@@ -944,13 +944,13 @@
   },
   {
    "asl": "siracusa",
-   "url": "https://www.asp.sr.it/Servizi-e-prestazioni/CUP-Centro-Unico-Prenotazione",
+   "url": "https://www.asp.sr.it/Servizi-e-prestazioni/Scelta-o-cambio-Medico-Pediatra",
    "controllata": "2026-10-22",
    "http": 200,
-   "file": "siracusa/6d6595af441c.txt",
-   "titolo": "CUP Centro Unico Prenotazione - Azienda Sanitaria Provinciale di Siracusa",
-   "sha": "33a6a5f1c3fbb83659ea699fce2a6abe15dc017169bbca09434b78373f27254a",
-   "caratteri": 7457,
+   "file": "siracusa/137c250f8b91.txt",
+   "titolo": "Scelta o cambio Medico / Pediatra - Azienda Sanitaria Provinciale di Siracusa",
+   "sha": "f86c2cd681239f9768c9fc5b2561df007c7703de306a81ce54076fcfb5eb75b3",
+   "caratteri": 4153,
    "cambiata": false
   },
   {
@@ -962,6 +962,17 @@
    "titolo": "U.O.S. Comunicazione e Informazione/URP - Azienda Sanitaria Provinciale di Siracusa",
    "sha": "6ecbc83bfdba98c93321797692966fcf7925161cdd7d46bda4913f7add324093",
    "caratteri": 10041,
+   "cambiata": false
+  },
+  {
+   "asl": "siracusa",
+   "url": "https://www.asp.sr.it/Servizi-e-prestazioni/CUP-Centro-Unico-Prenotazione",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "siracusa/6d6595af441c.txt",
+   "titolo": "CUP Centro Unico Prenotazione - Azienda Sanitaria Provinciale di Siracusa",
+   "sha": "33a6a5f1c3fbb83659ea699fce2a6abe15dc017169bbca09434b78373f27254a",
+   "caratteri": 7457,
    "cambiata": false
   },
   {
@@ -1021,17 +1032,6 @@
   },
   {
    "asl": "siracusa",
-   "url": "https://www.asp.sr.it/Servizi-e-prestazioni/Scelta-o-cambio-Medico-Pediatra",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "siracusa/137c250f8b91.txt",
-   "titolo": "Scelta o cambio Medico / Pediatra - Azienda Sanitaria Provinciale di Siracusa",
-   "sha": "f86c2cd681239f9768c9fc5b2561df007c7703de306a81ce54076fcfb5eb75b3",
-   "caratteri": 4153,
-   "cambiata": false
-  },
-  {
-   "asl": "siracusa",
    "url": "https://www.asp.sr.it/Servizi-e-prestazioni/Esenzione-Ticket-per-Reddito-Patologia",
    "controllata": "2026-10-22",
    "http": 200,
@@ -1050,7 +1050,7 @@
    "titolo": "ASP Agrigento – Azienda Sanitaria Provinciale",
    "sha": "8a28297ede5cea4670a5cf5fb9bddbf53117d5b920edd207b7a2b1657b69cfd9",
    "caratteri": 7370,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "agrigento",
@@ -1061,7 +1061,7 @@
    "titolo": "Ufficio Relazioni con il Pubblico – ASP Agrigento",
    "sha": "ed9f8fa27666c81342b4b5536c2cdb4bb7bbe91e20ed437cbf0304f80f6495c7",
    "caratteri": 5489,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "agrigento",
@@ -1087,13 +1087,13 @@
   },
   {
    "asl": "agrigento",
-   "url": "https://www.aspag.it/centro-unico-prenotazioni/",
+   "url": "https://www.aspag.it/contatti-telefoni/",
    "controllata": "2026-10-22",
    "http": 200,
-   "file": "agrigento/6c0f9c22db7a.txt",
-   "titolo": "Centro Unico Prenotazioni (CUP) – ASP Agrigento",
-   "sha": "5b98851dcce36a39a032edbcd4b2f31e4d24f06e3e3d12e7014b5aa8429bac87",
-   "caratteri": 3377,
+   "file": "agrigento/b083eba21791.txt",
+   "titolo": "Contatti Aziendali – ASP Agrigento",
+   "sha": "46deb16fbfcd42faa9aaa70e1e79c5ad5bda7d8c07112ae1be922b5d9b453c0c",
+   "caratteri": 5201,
    "cambiata": false
   },
   {
@@ -1109,6 +1109,17 @@
   },
   {
    "asl": "agrigento",
+   "url": "https://www.aspag.it/centro-unico-prenotazioni/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "agrigento/6c0f9c22db7a.txt",
+   "titolo": "Centro Unico Prenotazioni (CUP) – ASP Agrigento",
+   "sha": "5b98851dcce36a39a032edbcd4b2f31e4d24f06e3e3d12e7014b5aa8429bac87",
+   "caratteri": 3377,
+   "cambiata": false
+  },
+  {
+   "asl": "agrigento",
    "url": "https://www.aspag.it/u-o-comunicazione-istituzionale-e-interna/",
    "controllata": "2026-10-22",
    "http": 200,
@@ -1116,17 +1127,6 @@
    "titolo": "U.O.S. Comunicazione Istituzionale e Interna – ASP Agrigento",
    "sha": "11034dbb5ae36350e3651b2d72de28d92d66b1e870835ed2dd00398293efade4",
    "caratteri": 4588,
-   "cambiata": false
-  },
-  {
-   "asl": "agrigento",
-   "url": "https://www.aspag.it/contatti-telefoni/",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "agrigento/b083eba21791.txt",
-   "titolo": "Contatti Aziendali – ASP Agrigento",
-   "sha": "46deb16fbfcd42faa9aaa70e1e79c5ad5bda7d8c07112ae1be922b5d9b453c0c",
-   "caratteri": 5201,
    "cambiata": false
   },
   {
@@ -1238,6 +1238,17 @@
    "sha": "68a9bfc412e5ebceac1d9880f989f848a67357aa132e76524bf77424a7efa292",
    "caratteri": 9671,
    "cambiata": false
+  },
+  {
+   "asl": "catania",
+   "url": "https://www.aspct.it/aspconte/servizi-territoriali/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "catania/71b2ca7c9217.txt",
+   "titolo": "Servizi Territoriali",
+   "sha": "f949030ebacaa65a4568bb30151ca7adb23a3346ea8f196f7b0e1152d7055eac",
+   "caratteri": 4594,
+   "cambiata": true
   },
   {
    "asl": "catania",
@@ -1429,6 +1440,17 @@
   },
   {
    "asl": "trapani",
+   "url": "https://sportello.asptrapani.it/releasenew/index/cambioMedico",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "trapani/1d5dd94b988b.txt",
+   "titolo": "Sportello Online - Asp Trapani - CambioMedico Index",
+   "sha": "334ce73d7e5b8643fc8893059b9676ee0ad205b8d9e07ee259b227e5f5f1e137",
+   "caratteri": 3285,
+   "cambiata": true
+  },
+  {
+   "asl": "trapani",
    "url": "https://www.asptrapani.it/servizi/Menu/dinamica.aspx?idSezione=616&idArea=8882&idCat=17692&ID=52497&TipoElemento=pagina",
    "controllata": "2026-10-22",
    "http": 200,
@@ -1610,8 +1632,8 @@
    "http": 200,
    "file": "enna/e5e5ebcd9218.txt",
    "titolo": "Azienda Sanitaria Provinciale di Enna",
-   "sha": "067587a815f655a101918ddffb2160ccc5811a631be69c76ef3367f5f4f3f24b",
-   "caratteri": 6264,
+   "sha": "b699a5cd95c7ef4a375fa5b8597da3c5eab7d6abcaf26f59e92c65d4132ebcd1",
+   "caratteri": 6055,
    "cambiata": true
   },
   {
@@ -1621,9 +1643,9 @@
    "http": 200,
    "file": "enna/829c26248ffc.txt",
    "titolo": "Liste di attesa / Servizi erogati / Amministrazione trasparente / Homepage - Azienda Sanitaria Provinciale di Enna",
-   "sha": "332bbb7735de51beda182954fc61abfa63066be8e88792171a4983af173ae3d0",
-   "caratteri": 5073,
-   "cambiata": false
+   "sha": "61272429dce4e93cf45b3e82bad519bebc2a26e087f0d5b0cc2f3f7d589de2b4",
+   "caratteri": 5058,
+   "cambiata": true
   },
   {
    "asl": "enna",
@@ -1643,9 +1665,9 @@
    "http": 200,
    "file": "enna/05361b639868.txt",
    "titolo": "Continuità assistenziale (Guardia Medica) / Percorsi di cura e assistenza / Servizi e prestazioni / Homepage - Azienda Sanitaria Provinciale di Enna",
-   "sha": "d7f34a55fa34edd9dbc987933f52c71f2830ca6f757481fd0bc1bfa3e38f39ac",
-   "caratteri": 5281,
-   "cambiata": false
+   "sha": "60def481e62b2bbd5d0240f035e3f419355b7851e6d1131b103f97decf6759b0",
+   "caratteri": 5266,
+   "cambiata": true
   },
   {
    "asl": "enna",
@@ -1654,9 +1676,20 @@
    "http": 200,
    "file": "enna/6cf015cdca14.txt",
    "titolo": "Assistenza domiciliare integrata (ADI) / Percorsi di cura e assistenza / Servizi e prestazioni / Homepage - Azienda Sanitaria Provinciale di Enna",
-   "sha": "f65d8a578e2d9089faffe0b50f8632803fcb1275efc94443e4f6677a753f617f",
-   "caratteri": 7100,
-   "cambiata": false
+   "sha": "c34b24ccdbefec6c2154ff4e61c58c8c7f4946da8e630e7b1bf9b18421b54e6c",
+   "caratteri": 7085,
+   "cambiata": true
+  },
+  {
+   "asl": "enna",
+   "url": "https://www.aspenna.it/come-fare-per/scegliere-cambiare-o-revocare-il-medico-di-medicina-generale-nel-distretto-di-enna",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "enna/9f9637df6169.txt",
+   "titolo": "Scegliere, cambiare o revocare il Medico di Medicina Generale nel Distretto di Enna / Come fare per / Homepage - Azienda Sanitaria Provinciale di Enna",
+   "sha": "8545b936faa0837729968914ce827bd9f9f6977fccc76f7c10ab9dcebf1d0e71",
+   "caratteri": 2063,
+   "cambiata": true
   },
   {
    "asl": "enna",
@@ -1665,8 +1698,8 @@
    "http": 200,
    "file": "enna/d5fac6338bb4.txt",
    "titolo": "CUP – Prenotazione prestazioni sanitarie / Percorsi di cura e assistenza / Servizi e prestazioni / Homepage - Azienda Sanitaria Provinciale di Enna",
-   "sha": "d920dd2368035a269fc1d4cc3a85318ec985e3d45720f12411d71644f3fb266c",
-   "caratteri": 7573,
+   "sha": "b6119f4eaf0794c07728e8180929fd05047e72e6583950b184f582a36ce8bd8e",
+   "caratteri": 7558,
    "cambiata": true
   },
   {
@@ -1676,9 +1709,9 @@
    "http": 200,
    "file": "enna/5f75f90e5ac3.txt",
    "titolo": "URP e Comunicazione / Comunicazione / Servizi e prestazioni / Homepage - Azienda Sanitaria Provinciale di Enna",
-   "sha": "20be0c6e5ee149123f3593af17986b6b67786f04d2afeba8490f8d0a776dad2b",
-   "caratteri": 6244,
-   "cambiata": false
+   "sha": "288ef06000f08b904c0471afae8800d5a7738c0b325fe9b8b634a8b9011d813b",
+   "caratteri": 6222,
+   "cambiata": true
   },
   {
    "asl": "enna",
@@ -1687,9 +1720,9 @@
    "http": 200,
    "file": "enna/e3f3ffced169.txt",
    "titolo": "Guardia medica di Enna e Pergusa / Guardia medica / Continuità assistenziale / Strutture / Homepage - Azienda Sanitaria Provinciale di Enna",
-   "sha": "0bc10e8543e8f72ac0f32ac4cc88709e17cfcdb990b5aaeefcc697dc1c89daf6",
-   "caratteri": 2078,
-   "cambiata": false
+   "sha": "8cec940757fab03034918b6a5a3888c648ff039745c003077e7b5749a2a49e4b",
+   "caratteri": 2073,
+   "cambiata": true
   },
   {
    "asl": "enna",
@@ -1698,9 +1731,9 @@
    "http": 200,
    "file": "enna/1d3c51d6df67.txt",
    "titolo": "Assistenza protesica e integrativa / Percorsi di cura e assistenza / Servizi e prestazioni / Homepage - Azienda Sanitaria Provinciale di Enna",
-   "sha": "5fce32af2b1593adc31310586e85aa073832d7fc09072f0d1e89c939e6332a1b",
-   "caratteri": 4517,
-   "cambiata": false
+   "sha": "67378b687834fbf6b41775987ed07244a8eb4f83bd8b02c8c2a26d326345e944",
+   "caratteri": 4512,
+   "cambiata": true
   },
   {
    "asl": "enna",
@@ -1715,9 +1748,9 @@
    "http": 200,
    "file": "enna/a4ee36d0c3d0.txt",
    "titolo": "Scegliere, cambiare o revocare il Medico di Medicina Generale nel Distretto di Piazza Armerina / Come fare per / Homepage - Azienda Sanitaria Provinciale di Enna",
-   "sha": "5e01cd4491f4112c7a522ff4f0c21bbc615a9f85687c4b3081a5b7795442d62a",
-   "caratteri": 1986,
-   "cambiata": false
+   "sha": "6b6bf168b4db29ea967122e6015e93c8a3f47e5c1a431245f96748dd2f9bc7ca",
+   "caratteri": 1981,
+   "cambiata": true
   },
   {
    "asl": "enna",
@@ -1726,9 +1759,9 @@
    "http": 200,
    "file": "enna/83d879ce6ac2.txt",
    "titolo": "Scegliere, cambiare o revocare il Medico di Medicina Generale nel Distretto di Nicosia / Come fare per / Homepage - Azienda Sanitaria Provinciale di Enna",
-   "sha": "fc2a35c3be7756abf27994883bb649600a642eb3081bbaddcd15a37dfe08e5ff",
-   "caratteri": 1848,
-   "cambiata": false
+   "sha": "cb0db291da26a811bf34ceaf326d30b6ca760711e5dfa8dd911dc23ec59fb02d",
+   "caratteri": 1843,
+   "cambiata": true
   },
   {
    "asl": "enna",
@@ -1737,9 +1770,9 @@
    "http": 200,
    "file": "enna/b0e28ab06b54.txt",
    "titolo": "Esenzione ticket / Come fare per / Homepage - Azienda Sanitaria Provinciale di Enna",
-   "sha": "52264f5437881c32f2fe72eaca21f7ac7d6e087d2986d0fa15a29995b4f655b5",
-   "caratteri": 2043,
-   "cambiata": false
+   "sha": "3a2131354e9e1c3fd0f3b7fc55752ce5945375cd99528dc7185b4f011b0d74a2",
+   "caratteri": 2038,
+   "cambiata": true
   },
   {
    "asl": "enna",
@@ -1748,9 +1781,9 @@
    "http": 200,
    "file": "enna/b3c126b3c267.txt",
    "titolo": "Contattare il Centro Screening / Come fare per / Homepage - Azienda Sanitaria Provinciale di Enna",
-   "sha": "a24d0c2105686e36d54295878fca8558ffc6ee3775b2bc44efdd289e0bd0fffd",
-   "caratteri": 2683,
-   "cambiata": false
+   "sha": "385dc868b9ed21ad7a21a1d76d6e47e33b74a7270a984e7c60014a83885ab20f",
+   "caratteri": 2678,
+   "cambiata": true
   },
   {
    "asl": "enna",
@@ -1759,9 +1792,9 @@
    "http": 200,
    "file": "enna/5f3a144c77eb.txt",
    "titolo": "Ritiro Cartelle Cliniche / Come fare per / Homepage - Azienda Sanitaria Provinciale di Enna",
-   "sha": "de8c90d7d27c64e7cecf0a19c95a44f44f768cf9b268d1470c7878f9333aec5d",
-   "caratteri": 3223,
-   "cambiata": false
+   "sha": "969c28b855679cf97bd5d3b04574f0b751ff4946f5e64b39ee98f85e4f3b18b8",
+   "caratteri": 3208,
+   "cambiata": true
   },
   {
    "asl": "inps-sicilia",
@@ -1861,6 +1894,36 @@
    "sha": "a74d49ae0e915b7e11cba4a4578c0e2b0b597cd945c0a41cba38f7208781581d",
    "caratteri": 42521,
    "cambiata": false
+  },
+  {
+   "asl": "inps-sicilia",
+   "url": "https://www.disabilita.governo.it/it/notizie/al-via-sperimentazione-riforma-disabilita-in-altre-40-province/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-sicilia/cb8037740243.txt",
+   "titolo": "Al via sperimentazione riforma disabilità in altre 40 province",
+   "sha": "4ec5a460fb50b2e4f8c1006136eb2184acf64b45b3b190e378501ad4c004e6e3",
+   "caratteri": 3002,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-sicilia",
+   "url": "https://www.informazionefiscale.it/IMG/pdf/16583_messaggio-numero-637-del-23-02-2026.pdf",
+   "controllata": "2026-10-22",
+   "nota": "file, non controllato"
+  },
+  {
+   "asl": "inps-sicilia",
+   "url": "https://www.indicepa.gov.it",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "finale": "https://www.indicepa.gov.it/ipa-portale/",
+   "file": "inps-sicilia/4c8be6d3916e.txt",
+   "titolo": "IpaPortale",
+   "sha": "e0116c418745bf3da83687abd7630cd0032e81b385248899a22112bc7a17590a",
+   "caratteri": 2621,
+   "cambiata": true
   }
  ]
 }

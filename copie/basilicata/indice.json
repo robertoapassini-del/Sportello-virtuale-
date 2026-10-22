@@ -1,6 +1,6 @@
 {
  "regione": "basilicata",
- "aggiornato": "2026-10-22T07:32:01.015Z",
+ "aggiornato": "2026-10-22T09:03:45.118Z",
  "pagine": [
   {
    "asl": "matera",
@@ -78,7 +78,7 @@
    "titolo": "Cambiare/scegliere il medico di base o pediatra – ASM Matera",
    "sha": "bd0b8b2abe003b3f4e0a26b5904803643bbd472f7784f00abf94c18929766d27",
    "caratteri": 5182,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "matera",
@@ -90,7 +90,7 @@
    "titolo": "Liste di attesa - Azienda Sanitaria locale di Matera",
    "sha": "0b2a1a437d0232aebae2f8961381c13e62ae6657babf8767b0f2d75863f3878e",
    "caratteri": 9018,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "potenza",
@@ -99,9 +99,9 @@
    "http": 200,
    "file": "potenza/28b106b78182.txt",
    "titolo": "ASP Basilicata",
-   "sha": "42ada0e2f5d8326782da048abaa523ca51cf926ff1875495f94ec24fd2a4fe2a",
-   "caratteri": 5246,
-   "cambiata": false
+   "sha": "20b83b53045733ae05587b919e39d151b098554ea7c904e3bf4c7da00adbb4f9",
+   "caratteri": 5338,
+   "cambiata": true
   },
   {
    "asl": "potenza",
@@ -110,9 +110,9 @@
    "http": 200,
    "file": "potenza/2f4702700fe5.txt",
    "titolo": "Continuità Assistenziale (ex Guardia Medica) - ASP Basilicata",
-   "sha": "4e2a37ae2cc10eaeece92bdee319fadd400cadb6b286f20ce6eebf354d2b0638",
-   "caratteri": 4468,
-   "cambiata": false
+   "sha": "06fdcf9a02323b61e77b06e7e70a3e2e93a79daf9c85fded47b123e13dbee531",
+   "caratteri": 3878,
+   "cambiata": true
   },
   {
    "asl": "potenza",
@@ -145,7 +145,7 @@
    "titolo": "Centro Unico di Prenotazione | Centro Servizi Regione Basilicata - Regione Basilicata",
    "sha": "a247858ba3520f0834792ed7e7208eb92a57fd13a72c414c434304a3d04e4e06",
    "caratteri": 9064,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "potenza",
@@ -167,7 +167,7 @@
    "titolo": "Liste di attesa - ASP Basilicata",
    "sha": "95d3b4e849ae65d25f1e3e8ddbd404e5c0cafe09c7a27f629c6da8de9a54d3ce",
    "caratteri": 7323,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "potenza",
@@ -176,8 +176,8 @@
    "http": 200,
    "file": "potenza/7a2c22c8c106.txt",
    "titolo": "Scelta e revoca del Medico di Famiglia e del Pediatra - ASP Basilicata",
-   "sha": "889cae0d44e7d5a2e99a281109334b7875d010786673fe4b3ef9458ad2dd55e4",
-   "caratteri": 10089,
+   "sha": "18e3a3a3da5729dc17f46f7b685418454bc9de97eb55634f520d94f1c0dcaf38",
+   "caratteri": 9136,
    "cambiata": true
   },
   {
@@ -189,7 +189,7 @@
    "titolo": "UOC Oncologia Critica Territoriale, Cure Domiciliari e Palliative (ADI) - ASP Basilicata",
    "sha": "4da8a2f624844cd3e0990b46dc9f2a2606f348750544a23afa062e880c440506",
    "caratteri": 12038,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "potenza",
@@ -200,7 +200,7 @@
    "titolo": "Sanità digitale, nuovi servizi online - Regione Basilicata",
    "sha": "2789284e9a50c521f54a211fe2aa20f341d2a23ff36535a310a2c5f81e6f0d9b",
    "caratteri": 11607,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "inps-basilicata",
@@ -223,6 +223,259 @@
    "sha": "68906b155d44d5c1692e669a2885c01c1e3657afbcf3d57a1e032d2418d883c8",
    "caratteri": 42998,
    "cambiata": false
+  },
+  {
+   "asl": "inps-basilicata",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2024.12.accertamento-della-disabilit-avvio-sperimentazione-della-riforma.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-basilicata/f9d950ca5afd.txt",
+   "titolo": "Portale Inps - Accertamento della disabilità: avvio sperimentazione della riforma",
+   "sha": "e142a9ccf3c2a809c6080bb33dade841589f19254f3d8d8ff51d820a290be3e5",
+   "caratteri": 45287,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-basilicata",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2025.09.riforma-della-disabilit-in-avvio-la-seconda-fase-di-sperimentazione.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-basilicata/3962e31a95f6.txt",
+   "titolo": "Portale Inps - Riforma della disabilità: in avvio la seconda fase di sperimentazione",
+   "sha": "6698f070cca78d40267be0187ea8a2d874ab66cc9e2c337891c01c83da3df5f3",
+   "caratteri": 44351,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-basilicata",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-basilicata/aad63b63390a.txt",
+   "titolo": "Portale Inps - Riforma della disabilità: al via la terza fase sperimentale",
+   "sha": "3e22d1cf04da5a9b152d4fd5f6033e4b4b86d0937bfc137d142d7c9ec25bd108",
+   "caratteri": 46281,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-basilicata",
+   "url": "https://www.regione.basilicata.it/fanelli-cup-attiva-prenotazione-online-delle-prestazioni/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-basilicata/2f606e3336a5.txt",
+   "titolo": "Fanelli: “CUP, attiva prenotazione online delle prestazioni\" - Regione Basilicata",
+   "sha": "9742571c979d1c839d55b7e3fb417ac78682010150cf0e51528a2fb068f8ff18",
+   "caratteri": 12208,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-basilicata",
+   "url": "https://regione.basilicata.it/giunta/site/Giunta/detail.jsp?otype=1012&id=3077951",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.regione.basilicata.it/privacy/",
+   "file": "regione-basilicata/8f50bf0e199f.txt",
+   "titolo": "Trattamento dati personali e privacy - Regione Basilicata",
+   "sha": "f74bfbddc682942f18e2ec45834dd759605bd0f4cc887bb84245fee1511741f4",
+   "caratteri": 16264,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-basilicata",
+   "url": "https://www.regione.basilicata.it/giunta/site/Giunta/department.jsp?dep=100061&area=535615&level=0",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.regione.basilicata.it/?temi-spp=servizi-online",
+   "file": "regione-basilicata/24e95f5e1ed6.txt",
+   "titolo": "Servizi online - Regione Basilicata",
+   "sha": "2a407a422969ee0f6ba9bade061f6d4bad4a142bf798f0636b70f96c39e30654",
+   "caratteri": 9013,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-basilicata",
+   "url": "https://www.salute.basilicata.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-basilicata/48632ed247cd.txt",
+   "titolo": "Home - Salute Basilicata",
+   "sha": "22e74041261967cc2cb45fbd436513a9ff2114f9b58082a289a2c49d24bc05cc",
+   "caratteri": 7982,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-basilicata",
+   "url": "https://www.regione.basilicata.it/fascicolo-sanitario-elettronico-2-0/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-basilicata/3961077a0e4e.txt",
+   "titolo": "Fascicolo Sanitario Elettronico 2.0 - Regione Basilicata",
+   "sha": "d8b8703cb27fcb6bf9302f198311396e7e690c971f535798ad5dfde2236b23ee",
+   "caratteri": 10124,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-basilicata",
+   "url": "https://digitalefacile.regione.basilicata.it/wp-content/uploads/2025/05/Fascicolo-Sanitario-Elettronico-e-Televisita.pdf",
+   "controllata": "2026-10-22",
+   "nota": "file, non controllato"
+  },
+  {
+   "asl": "inps-basilicata",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.648000.648000-elencoStruttureInps.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-basilicata/9ca54e087d23.txt",
+   "titolo": "Portale Inps - Basilicata",
+   "sha": "43d2fbc7dcc95748b997f81383ed8da1c4af9e371c2e8efd3d79829ded68d0fd",
+   "caratteri": 42188,
+   "cambiata": true
+  },
+  {
+   "asl": "asp-potenza",
+   "url": "https://www.aspbasilicata.it/pec/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asp-potenza/6e70da32bb46.txt",
+   "titolo": "PEC - ASP Basilicata",
+   "sha": "8a29c216b0a4735859e5b65c6df0d63084858f0b92fb1505ba4a4814d5cb8cdb",
+   "caratteri": 5548,
+   "cambiata": true
+  },
+  {
+   "asl": "asp-potenza",
+   "url": "https://www.aspbasilicata.it/servizi-per-i-cittadini/servizi/ufficio-protocollo-generale-sedi-e-orari/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asp-potenza/9199faa6f388.txt",
+   "titolo": "Ufficio Protocollo Generale - sedi e orari - ASP Basilicata",
+   "sha": "24a6655fedca7ae8b742d9bee05fcebe2406dfcb6b4827bb40a98073ca5aa6ba",
+   "caratteri": 3217,
+   "cambiata": true
+  },
+  {
+   "asl": "asp-potenza",
+   "url": "https://www.aspbasilicata.it/servizi-per-i-cittadini/cup-e-pagamento-ticket/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asp-potenza/ada96eb89099.txt",
+   "titolo": "Cup e Pagamento Ticket - ASP Basilicata",
+   "sha": "0bdddf85a60fc2623f6d6f7e20c783910f9f74d5e5e57b537f2071f21d73e23c",
+   "caratteri": 5206,
+   "cambiata": true
+  },
+  {
+   "asl": "asp-potenza",
+   "url": "https://www.aspbasilicata.it/servizi-per-i-cittadini/guardia-medica/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asp-potenza/fb48b8b182b6.txt",
+   "titolo": "Guardia medica - ASP Basilicata",
+   "sha": "8864d4b13a39c2159fc5ee0d899eac727fc332861fd5a32c8f6953f676e498a4",
+   "caratteri": 8673,
+   "cambiata": true
+  },
+  {
+   "asl": "asp-potenza",
+   "url": "https://www.aspbasilicata.it/organizzazione/azienda/dipartimenti/dipartimento-emergenza-urgenza-118/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asp-potenza/4f52c3091539.txt",
+   "titolo": "Dipartimento Emergenza Urgenza - 118 - ASP Basilicata",
+   "sha": "fec9fdb451b7bf2fcc2cc80203e8c94221a6e3b0b52aabcdc482c8995f123b14",
+   "caratteri": 7374,
+   "cambiata": true
+  },
+  {
+   "asl": "asp-potenza",
+   "url": "https://www.aspbasilicata.it/modulistica-cure-domiciliari/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asp-potenza/79d9a9f70479.txt",
+   "titolo": "modulistica cure domiciliari - ASP Basilicata",
+   "sha": "0c0db2ae5fa479a6c99c2bd46aba3c119bb06211f28e78bc70675f3877096f77",
+   "caratteri": 2833,
+   "cambiata": true
+  },
+  {
+   "asl": "asp-potenza",
+   "url": "https://www.aspbasilicata.it/organizzazione/azienda/distretti-della-salute/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asp-potenza/e10a8d2fc625.txt",
+   "titolo": "Distretti della Salute - ASP Basilicata",
+   "sha": "bb2e404d16a895ab674738121aa919bc1f78834386c117b04cd4d4b794ae30f8",
+   "caratteri": 5750,
+   "cambiata": true
+  },
+  {
+   "asl": "asp-potenza",
+   "url": "https://www.aspbasilicata.it/wp-content/uploads/CARTA-DEI-SERVIZI-agg-al-17-02-2026.pdf",
+   "controllata": "2026-10-22",
+   "nota": "file, non controllato"
+  },
+  {
+   "asl": "asm-matera",
+   "url": "https://www.asmbasilicata.it/chi-siamo/punto-informativo-urp-matera/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.asmbasilicata.it/chi-siamo/unita-organizzativa/punto-informativo-urp-matera/",
+   "file": "asm-matera/a8d700f42df2.txt",
+   "titolo": "Punto informativo “URP” – Matera – ASM Matera",
+   "sha": "5dc70a3b41df7ab5192970f3b15a6fa7cf8f5bcce744b737a422febe6eb59254",
+   "caratteri": 4165,
+   "cambiata": true
+  },
+  {
+   "asl": "asm-matera",
+   "url": "https://www.asmbasilicata.it/chi-siamo/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asm-matera/9ffcee840716.txt",
+   "titolo": "Chi siamo – ASM Matera",
+   "sha": "a511aa77407bbcd8eaf36a98a8712e145958f7adfd11e62b5ec2615d35ea33bf",
+   "caratteri": 5176,
+   "cambiata": true
+  },
+  {
+   "asl": "asm-matera",
+   "url": "https://www.asmbasilicata.it/chi-siamo/sportello-cup-piazza-firenze-matera/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.asmbasilicata.it/chi-siamo/unita-organizzativa/sportello-cup-piazza-firenze-matera/",
+   "file": "asm-matera/c07f7993bc3a.txt",
+   "titolo": "Sportello CUP – Piazza Firenze – Matera – ASM Matera",
+   "sha": "fec23530409413d6365509fc36de5319327b2ea6dd9096471d42077b9e4b2b73",
+   "caratteri": 4399,
+   "cambiata": true
+  },
+  {
+   "asl": "asm-matera",
+   "url": "https://www.asmbasilicata.it/servizi/Menu/dinamica.aspx?idSezione=616&idArea=17682&idCat=17691&ID=40324&TipoElemento=pagina",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
+   "asl": "asm-matera",
+   "url": "https://www.asmbasilicata.it/modalita-di-tutela/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asm-matera/2cf7c4013706.txt",
+   "titolo": "Modalità di tutela – ASM Matera",
+   "sha": "39e7002d327da5c8679fff5f16dbb98e5620bca1bf3d1aed17ceadb7b9cc4c80",
+   "caratteri": 6241,
+   "cambiata": true
+  },
+  {
+   "asl": "asm-matera",
+   "url": "https://www.asmbasilicata.it/servizi-app-io/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asm-matera/94497666f277.txt",
+   "titolo": "Servizi App IO – ASM Matera",
+   "sha": "7212cd5e32458689fa21247bf8147165eea0aefd67492dcb6f30c5d8901ee32b",
+   "caratteri": 9290,
+   "cambiata": true
   }
  ]
 }

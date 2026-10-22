@@ -1,6 +1,6 @@
 {
  "regione": "puglia",
- "aggiornato": "2026-10-22T08:14:42.133Z",
+ "aggiornato": "2026-10-22T09:52:53.822Z",
  "pagine": [
   {
    "asl": "bari",
@@ -9,9 +9,9 @@
    "http": 200,
    "file": "bari/1706f34f0813.txt",
    "titolo": "Home - ASL Bari - PugliaSalute",
-   "sha": "d346d3fb7a044c9b763bf6ce74179f16fde82d100489f2417be20bfaa9a780ed",
-   "caratteri": 11328,
-   "cambiata": false
+   "sha": "755dc73d60f1e92dc665f8da1853b6edf90e0e5e793b3064d6cfbc627208d6ea",
+   "caratteri": 11307,
+   "cambiata": true
   },
   {
    "asl": "bari",
@@ -33,6 +33,17 @@
    "titolo": "Porta Unica di Accesso (P.U.A.) - ASL Bari - PugliaSalute",
    "sha": "0de66413096db4d9b3e7bd3206a37bae169aae1af2595020ace274c19430256c",
    "caratteri": 5336,
+   "cambiata": false
+  },
+  {
+   "asl": "bari",
+   "url": "https://www.sanita.puglia.it/en/web/asl-bari/urp",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "bari/e474dcd9f9ab.txt",
+   "titolo": "URP - ASL Bari - PugliaSalute",
+   "sha": "c652b0c30823bacf5380a3e714d3aba76388067aa1324269fa18e7bb3cc0a8ba",
+   "caratteri": 7085,
    "cambiata": false
   },
   {
@@ -59,25 +70,14 @@
   },
   {
    "asl": "bari",
-   "url": "https://www.sanita.puglia.it/en/web/asl-bari/urp",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "bari/e474dcd9f9ab.txt",
-   "titolo": "URP - ASL Bari - PugliaSalute",
-   "sha": "c652b0c30823bacf5380a3e714d3aba76388067aa1324269fa18e7bb3cc0a8ba",
-   "caratteri": 7085,
-   "cambiata": false
-  },
-  {
-   "asl": "bari",
    "url": "https://www.sanita.puglia.it/en/web/asl-bari",
    "controllata": "2026-10-22",
    "http": 200,
    "file": "bari/86e2a06ef74b.txt",
    "titolo": "Home - ASL Bari - PugliaSalute",
-   "sha": "b7057e7a339f0641d4b40c5da8928cb815bf2152db612c15e6570b5e6a87ab86",
-   "caratteri": 10776,
-   "cambiata": false
+   "sha": "24f48a328ecea0f6c8d92ad8320db3a7b42bf38ac61e141c37f5946d2a5b18e9",
+   "caratteri": 10755,
+   "cambiata": true
   },
   {
    "asl": "bari",
@@ -110,7 +110,7 @@
    "titolo": "“Avviciniamoci”, ASL Bari presenta il Percorso di tutela per visite ed esami per determinate fasce di utenti - ASL Bari - PugliaSalute",
    "sha": "8b74850c19aa5108b4af1e01c1c09fc613ef0ba2e68ae8d01ecaa725683c3071",
    "caratteri": 6181,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bari",
@@ -121,7 +121,7 @@
    "titolo": "Scelta e Revoca Medico - PugliaSalute",
    "sha": "228e450103547e9f2df20b63fdb79725fcb11d88e61c9bc7f3d66d4b2f423578",
    "caratteri": 5879,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bari",
@@ -132,7 +132,7 @@
    "titolo": "Servizio Protesi Bari - ASL Bari - PugliaSalute",
    "sha": "bf27fb871598abec387aab56f721103895222079e3353d739f1ea6394e1d8775",
    "caratteri": 12200,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bari",
@@ -143,7 +143,7 @@
    "titolo": "Ambulatorio Cure Palliative - ASL Bari - PugliaSalute",
    "sha": "128455d3c05a888434855c76b556f7bbbca779f88dc104b3577ef7dab8106678",
    "caratteri": 6242,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bari",
@@ -154,7 +154,7 @@
    "titolo": "Richiedi la cartella clinica - Policlinico di Bari Ospedale Giovanni XXIII - PugliaSalute",
    "sha": "18f5c21822894f16f8f0e2de4a2befca1d595b41a43c13a65aafbc7246be58cf",
    "caratteri": 4759,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "barletta-andria-trani",
@@ -191,17 +191,6 @@
   },
   {
    "asl": "barletta-andria-trani",
-   "url": "https://www.sanita.puglia.it/en/web/asl-barletta-andria-trani/-/numero-verde-cup",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "barletta-andria-trani/997e79cafac9.txt",
-   "titolo": "Numero Verde CUP - ASL Barletta Andria Trani - PugliaSalute",
-   "sha": "7baffacf265ad13d3aa76c937cfbdd6c2d29084a2ff257ed773d1be39a8324f0",
-   "caratteri": 4725,
-   "cambiata": false
-  },
-  {
-   "asl": "barletta-andria-trani",
    "url": "https://www.sanita.puglia.it/en/web/asl-barletta-andria-trani/ufficio-relazioni-con-il-pubblico",
    "controllata": "2026-10-22",
    "http": 200,
@@ -209,6 +198,17 @@
    "titolo": "Ufficio Relazioni con il Pubblico - ASL Barletta Andria Trani - PugliaSalute",
    "sha": "d1213d8b954aa87fe304d80ebef8866b38fb76e7879b7e22064f228c72b9ed2a",
    "caratteri": 6352,
+   "cambiata": false
+  },
+  {
+   "asl": "barletta-andria-trani",
+   "url": "https://www.sanita.puglia.it/en/web/asl-barletta-andria-trani/-/numero-verde-cup",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "barletta-andria-trani/997e79cafac9.txt",
+   "titolo": "Numero Verde CUP - ASL Barletta Andria Trani - PugliaSalute",
+   "sha": "7baffacf265ad13d3aa76c937cfbdd6c2d29084a2ff257ed773d1be39a8324f0",
+   "caratteri": 4725,
    "cambiata": false
   },
   {
@@ -254,6 +254,17 @@
    "sha": "0925d20ae615c4c5c3879b6a4ac11da6a7c33f7891cefde2d8e9309d57445a06",
    "caratteri": 5434,
    "cambiata": false
+  },
+  {
+   "asl": "brindisi",
+   "url": "https://www.sanita.puglia.it/en/web/asl-brindisi/telefono-e-posta-elettronica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "brindisi/269073a3a8af.txt",
+   "titolo": "Telefono e posta elettronica - ASL Brindisi - PugliaSalute",
+   "sha": "b259abf6da38761401e8de2313e0f909a9804d5454babe57ce0b579f92bc32cb",
+   "caratteri": 10512,
+   "cambiata": true
   },
   {
    "asl": "brindisi",
@@ -323,17 +334,6 @@
   },
   {
    "asl": "foggia",
-   "url": "https://www.sanita.puglia.it/en/web/asl-foggia/modalita-di-prenotazione",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "foggia/ed6fc08fdff5.txt",
-   "titolo": "Modalità di prenotazione - ASL Foggia - PugliaSalute",
-   "sha": "08d57b7471bbba9c75f86264111753885ff33dd37c2e6b8875525009e8fce26f",
-   "caratteri": 4990,
-   "cambiata": false
-  },
-  {
-   "asl": "foggia",
    "url": "https://www.sanita.puglia.it/web/asl-foggia/ufficio-relazioni-con-il-pubblico",
    "controllata": "2026-10-22",
    "http": 200,
@@ -345,6 +345,17 @@
   },
   {
    "asl": "foggia",
+   "url": "https://www.sanita.puglia.it/en/web/asl-foggia/modalita-di-prenotazione",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "foggia/ed6fc08fdff5.txt",
+   "titolo": "Modalità di prenotazione - ASL Foggia - PugliaSalute",
+   "sha": "08d57b7471bbba9c75f86264111753885ff33dd37c2e6b8875525009e8fce26f",
+   "caratteri": 4990,
+   "cambiata": false
+  },
+  {
+   "asl": "foggia",
    "url": "https://www.sanita.puglia.it/en/web/asl-foggia/-/ufficio-scelta-e-revoca-del-medico",
    "controllata": "2026-10-22",
    "http": 200,
@@ -352,7 +363,7 @@
    "titolo": "Ufficio Scelta e Revoca del medico - ASL Foggia - PugliaSalute",
    "sha": "61058ffc33369a2aa42d39463151c516c67f6155c7c5389edc46f674fd4abc3a",
    "caratteri": 4848,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "foggia",
@@ -363,7 +374,7 @@
    "titolo": "Servizio di Assistenza Protesica - ASL Foggia - PugliaSalute",
    "sha": "f5cadba553087939fe72427e1bc7392caeab4309cb79e8d4f95450e09f39bffa",
    "caratteri": 7201,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "lecce",
@@ -400,6 +411,17 @@
   },
   {
    "asl": "lecce",
+   "url": "https://sist.sanita.puglia.it/en/web/asl-lecce",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "lecce/0fd1223fad94.txt",
+   "titolo": "Home - pugliasalute",
+   "sha": "f1dee5d6de13792ea6113491ca0a09f37cb8dcf61a1666179a883ba4565a6769",
+   "caratteri": 13645,
+   "cambiata": false
+  },
+  {
+   "asl": "lecce",
    "url": "https://www.sanita.puglia.it/en/web/asl-lecce/modalita-di-prenotazione",
    "controllata": "2026-10-22",
    "http": 200,
@@ -418,17 +440,6 @@
    "titolo": "Ufficio Relazioni con il Pubblico - ASL Lecce - PugliaSalute",
    "sha": "2b9388fe0ffeaa415e7aceb5ccaa2f46dfe0e105f8fb34f35800effce513478e",
    "caratteri": 6909,
-   "cambiata": false
-  },
-  {
-   "asl": "lecce",
-   "url": "https://sist.sanita.puglia.it/en/web/asl-lecce",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "lecce/0fd1223fad94.txt",
-   "titolo": "Home - pugliasalute",
-   "sha": "f1dee5d6de13792ea6113491ca0a09f37cb8dcf61a1666179a883ba4565a6769",
-   "caratteri": 13645,
    "cambiata": false
   },
   {
@@ -488,17 +499,6 @@
   },
   {
    "asl": "taranto",
-   "url": "https://www.sanita.puglia.it/en/web/asl-taranto/modalita-di-prenotazione",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "taranto/216c84040380.txt",
-   "titolo": "Modalità di prenotazione - ASL Taranto - PugliaSalute",
-   "sha": "ff1a5b07b2aa9c08c19aba5f41cade9219ca977ee53080bdaa5c984b77f7dc2a",
-   "caratteri": 8730,
-   "cambiata": false
-  },
-  {
-   "asl": "taranto",
    "url": "https://www.sanita.puglia.it/en/web/asl-taranto/ufficio-relazioni-con-il-pubblico",
    "controllata": "2026-10-22",
    "http": 200,
@@ -506,6 +506,17 @@
    "titolo": "Ufficio Relazioni con il Pubblico - ASL Taranto - PugliaSalute",
    "sha": "ca2f93a1beb461a14a2203197ceab84a53c497091979d2635fce592b9a5323ed",
    "caratteri": 8332,
+   "cambiata": false
+  },
+  {
+   "asl": "taranto",
+   "url": "https://www.sanita.puglia.it/en/web/asl-taranto/modalita-di-prenotazione",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "taranto/216c84040380.txt",
+   "titolo": "Modalità di prenotazione - ASL Taranto - PugliaSalute",
+   "sha": "ff1a5b07b2aa9c08c19aba5f41cade9219ca977ee53080bdaa5c984b77f7dc2a",
+   "caratteri": 8730,
    "cambiata": false
   },
   {
@@ -572,7 +583,7 @@
    "titolo": "Scelta e revoca del MEDICO di FAMIGLIA - ASL Taranto - PugliaSalute",
    "sha": "328ad09da73dcc20d14728399d06f89bf78bf3f289cb0eb99642b574383b6ac4",
    "caratteri": 4551,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "taranto",
@@ -583,7 +594,7 @@
    "titolo": "Servizio Protesi - pugliasalute",
    "sha": "25ac5bc29ad8cdedd94b9803c0677e42d7b202e5c2a4d19821379f8f710d0270",
    "caratteri": 13949,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "inps-puglia",
@@ -650,6 +661,265 @@
    "sha": "8a58d2d72cd3edd2b68372ea8e95f0751a5ffc5b71f6f00ae1b36fcccd33d9a4",
    "caratteri": 42396,
    "cambiata": false
+  },
+  {
+   "asl": "inps-puglia",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2024.12.accertamento-della-disabilit-avvio-sperimentazione-della-riforma.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-puglia/f9d950ca5afd.txt",
+   "titolo": "Portale Inps - Accertamento della disabilità: avvio sperimentazione della riforma",
+   "sha": "e142a9ccf3c2a809c6080bb33dade841589f19254f3d8d8ff51d820a290be3e5",
+   "caratteri": 45287,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-puglia",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2025.09.riforma-della-disabilit-in-avvio-la-seconda-fase-di-sperimentazione.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-puglia/3962e31a95f6.txt",
+   "titolo": "Portale Inps - Riforma della disabilità: in avvio la seconda fase di sperimentazione",
+   "sha": "6698f070cca78d40267be0187ea8a2d874ab66cc9e2c337891c01c83da3df5f3",
+   "caratteri": 44351,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-puglia",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-puglia/aad63b63390a.txt",
+   "titolo": "Portale Inps - Riforma della disabilità: al via la terza fase sperimentale",
+   "sha": "3e22d1cf04da5a9b152d4fd5f6033e4b4b86d0937bfc137d142d7c9ec25bd108",
+   "caratteri": 46281,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-puglia",
+   "url": "https://www.sanita.puglia.it/en/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-puglia/a4ca609b835d.txt",
+   "titolo": "Home - PugliaSalute",
+   "sha": "5f0b86777c26e27b96782e6b7634404bc9d20e5ac0b24b7479838dcfb5899d4f",
+   "caratteri": 7142,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-puglia",
+   "url": "https://www.sanita.puglia.it/en/cup",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-puglia/9f0e937bbcc9.txt",
+   "titolo": "Cup - PugliaSalute",
+   "sha": "ae79a5c86c2903a121cb97029780cd7aec4a55d708c6278a3709333643664368",
+   "caratteri": 5720,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-puglia",
+   "url": "https://www.sanita.puglia.it/en/gestione-prenotazioni-ad-accesso-libero",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-puglia/5840203a955b.txt",
+   "titolo": "Gestione prenotazioni ad accesso libero - PugliaSalute",
+   "sha": "24c2d23eda83ab50935b26d6ef2550cd80d64ca28c5f2b7e06825abe43fc5157",
+   "caratteri": 5203,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-puglia",
+   "url": "https://www.sanita.puglia.it/en/continuita-assistenziale",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-puglia/287f8d021cd4.txt",
+   "titolo": "Continuità assistenziale - PugliaSalute",
+   "sha": "cf49e938eacd4f09a10a6f3240e10073132cc47c9a7aa7716922d1f1fd47e21a",
+   "caratteri": 5080,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-puglia",
+   "url": "https://www.sanita.puglia.it/en/assistenza-domiciliare",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-puglia/676098f4f708.txt",
+   "titolo": "Assistenza domiciliare - PugliaSalute",
+   "sha": "3464700e443303dc8af57b9bbaad0d24835abb4963e0a5335c24ec6225c55bb2",
+   "caratteri": 7271,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-puglia",
+   "url": "https://www.sanita.puglia.it/en/servizio-118",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-puglia/ff4dac30122d.txt",
+   "titolo": "Servizio 118 - PugliaSalute",
+   "sha": "c05d6636bc75154dbf815dd13b37a2cf683db9e7e441b2f68486f1c0f563e1e8",
+   "caratteri": 5938,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-puglia",
+   "url": "https://www.sanita.puglia.it/en/fascicolo-sanitario-elettronico",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-puglia/e82126c71f59.txt",
+   "titolo": "Fascicolo Sanitario Elettronico - PugliaSalute",
+   "sha": "ab4e61a2ff20c783c9b942543f7e7245b5838bed6f8803030b6974b6d01ee373",
+   "caratteri": 9120,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-puglia",
+   "url": "https://www.regione.puglia.it/en/web/comunicazione-istituzionale/-/fascicolo-sanitario-elettronico-tu-al-centro-dei-nostri-servizi",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-puglia/4c3ef73f9b29.txt",
+   "titolo": "Fascicolo sanitario elettronico: tu al centro dei nostri servizi - Comunicazione Istituzionale - Regione Puglia",
+   "sha": "9de52303185d3b8aa719b7f59c60eb1510ea1fb8d43fcfdca9b90e49e84f4519",
+   "caratteri": 3046,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-puglia",
+   "url": "https://www.regione.puglia.it/web/salute-sport-e-buona-vita/-/attiva-il-fascicolo-sanitario-elettronico-in-farmacia",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-puglia/5d14b74c736d.txt",
+   "titolo": "Attiva il Fascicolo sanitario elettronico in farmacia - Salute, sport e buona vita - Regione Puglia",
+   "sha": "df1ae1bf59cb341652150039b8c3d4e8e3fd0f0a916c448f9073ed546bd64be0",
+   "caratteri": 2790,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-puglia",
+   "url": "https://www.regione.puglia.it/web/salute-sport-e-buona-vita/-/servizi-online-di-puglia-salute-in-manutenzione-come-prenotare-le-prestazioni-specialistiche",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-puglia/35efdd7389a5.txt",
+   "titolo": "Servizi online di Puglia Salute in manutenzione, come prenotare le prestazioni specialistiche - Salute, sport e buona vita - Regione Puglia",
+   "sha": "f62748c829210bdcc02263638f229ccc3cac5345c878ffa5f7e0e5ccaaa6e5ee",
+   "caratteri": 2823,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-puglia",
+   "url": "https://press.regione.puglia.it/-/in-puglia-sar%C3%A0-attivato-il-116117-il-nuovo-numero-da-chiamare-per-l-assistenza-territoriale.-dal-ministero-%C3%A8-giunta-l-autorizzazione",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-puglia/16e9622ec34c.txt",
+   "titolo": "In Puglia sarà attivato il 116117, il nuovo numero da chiamare per l’assistenza territoriale. Dal Ministero è giunta l’autorizzazione - PRESS REGIONE - Regione Puglia",
+   "sha": "e179dd4fdb0b1ea1c66c8ae5fec4fe76e0f4d1f38d04ec0f5234a218ee1ba116",
+   "caratteri": 4397,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-puglia",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.098000.098000-elencoStruttureInps.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-puglia/f9d0e8440890.txt",
+   "titolo": "Portale Inps - Puglia",
+   "sha": "de2e3af520d8643d7f46ad6fdaf994df0c78f339a86a8b8caa892a11522fd194",
+   "caratteri": 42163,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-bari",
+   "url": "https://www.sanita.puglia.it/web/asl-bari/ufficio-relazioni-con-il-pubblico1",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-bari/4d387759e280.txt",
+   "titolo": "Ufficio relazioni con il pubblico - ASL Bari - PugliaSalute",
+   "sha": "bf9522bea72cf3093a44784427569d57745f4468c7050367cde4847dfb89fa13",
+   "caratteri": 17235,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-bari",
+   "url": "https://www.sanita.puglia.it/en/web/asl-bari/-/cup-centro-unico-prenotazioni-",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-bari/e7c12ae2c0a5.txt",
+   "titolo": "CUP (Centro Unico Prenotazioni) - ASL Bari - PugliaSalute",
+   "sha": "e1fb67f49485eb306622aeed8df926375c4530c98fe232f87f7c5952685b1807",
+   "caratteri": 4781,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-brindisi",
+   "url": "https://www.sanita.puglia.it/en/web/asl-brindisi/assistenza-domiciliare-integrata-adi",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-brindisi/3efe7ee67ffa.txt",
+   "titolo": "Assistenza Domiciliare Integrata (ADI) - ASL Brindisi - PugliaSalute",
+   "sha": "6eb182c64bb8e6eb0e65953d8f4c2b0c3f07fa14a7e234e43e87677829eb81b3",
+   "caratteri": 5258,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-foggia",
+   "url": "https://www.sanita.puglia.it/en/web/asl-foggia/altri-contatti",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-foggia/05ba25380ccc.txt",
+   "titolo": "Altri contatti - ASL Foggia - PugliaSalute",
+   "sha": "775056b45c8937a0b0f826589845f79f23d32c6d5582c7e2de0c670f18eadf7f",
+   "caratteri": 8528,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-foggia",
+   "url": "https://www.sanita.puglia.it/en/web/asl-foggia/cup",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-foggia/ff32ef70454e.txt",
+   "titolo": "CUP - ASL Foggia - PugliaSalute",
+   "sha": "6781463590642c34b642b17afe0b217e4514d7474b24bd2c41fcfb580c44d4aa",
+   "caratteri": 5054,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-lecce",
+   "url": "https://www.sanita.puglia.it/web/asl-lecce/altri-contatti",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
+   "asl": "asl-lecce",
+   "url": "https://www.sanita.puglia.it/en/web/asl-lecce/cup",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-lecce/bff5bcd4af30.txt",
+   "titolo": "CUP - Canali di prenotazione - ASL Lecce - PugliaSalute",
+   "sha": "6ce038cd398da2ad15350f4ff01e4d8dcf03b7ed09c3b8fbe1c5a83ebd3db38d",
+   "caratteri": 5071,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-taranto",
+   "url": "https://www.sanita.puglia.it/en/web/asl-taranto/cup",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-taranto/c6848cf0528d.txt",
+   "titolo": "CUP - ASL Taranto - PugliaSalute",
+   "sha": "b5ad10e8e7a47d91cd706ee9f43aa4fcd3df5f4925cac4e3d82718aa74b19ba6",
+   "caratteri": 7847,
+   "cambiata": true
+  },
+  {
+   "asl": "asl-taranto",
+   "url": "https://www.sanita.puglia.it/en/web/asl-taranto/-/orari-sedi-continuita-assistenziali-guardia-medica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asl-taranto/1af3acef686a.txt",
+   "titolo": "Orari sedi Continuità Assistenziali - GUARDIA MEDICA - ASL Taranto - PugliaSalute",
+   "sha": "0762b5f340a657dfdd0b6f32033e45df9e0b970e628981896b1d74ebe45c16cf",
+   "caratteri": 6015,
+   "cambiata": true
   }
  ]
 }

@@ -1,6 +1,6 @@
 {
  "regione": "trentino-alto-adige",
- "aggiornato": "2026-10-22T08:37:17.860Z",
+ "aggiornato": "2026-10-22T10:22:40.975Z",
  "pagine": [
   {
    "asl": "bolzano",
@@ -14,6 +14,13 @@
    "sha": "223485cd0e858152886470616454a78b625fc3527184a55a069074362ebefc65",
    "caratteri": 22796,
    "cambiata": false
+  },
+  {
+   "asl": "bolzano",
+   "url": "https://home.sabes.it/it/comprensori-sanitari/merano/3026.asp",
+   "controllata": "2026-10-22",
+   "http": 0,
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "bolzano",
@@ -48,7 +55,7 @@
    "titolo": "Azienda Sanitaria dell'Alto Adige",
    "sha": "223485cd0e858152886470616454a78b625fc3527184a55a069074362ebefc65",
    "caratteri": 22796,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -60,7 +67,7 @@
    "titolo": "Comprensorio sanitario Bolzano|Azienda Sanitaria Alto Adige",
    "sha": "da6bd59ed2afd8fc8243079c68f3d027083d009473901017bb0ae1ed4e923c64",
    "caratteri": 20476,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -72,7 +79,7 @@
    "titolo": "Distretto sanitario Bolzano Centro-Piani-Rencio",
    "sha": "d2bde0be4ef232b26a92e513108be774e1a3c6620d355871d13f26666f530246",
    "caratteri": 23102,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -84,7 +91,7 @@
    "titolo": "Distretto sanitario Bolzano Oltrisarco: contatti e servizi",
    "sha": "f99cf6fc3734710bdb47186fdb1c13de7771f75be16bca0a565fae06a06141b3",
    "caratteri": 23409,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -96,14 +103,19 @@
    "titolo": "Distretto sanitario Bassa Atesina: contatti e servizi",
    "sha": "4fcafe64aff4046373af2811e20699267d10c682924212def48b9132bb5297df",
    "caratteri": 26531,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/m/it/contatti.asp",
    "controllata": "2026-10-22",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received"
+   "http": 200,
+   "finale": "https://home.asdaa.it/ricerca/ricerca.asp?404;m/it/contatti.asp",
+   "file": "bolzano/0374f6fa570c.txt",
+   "titolo": "Cerca | Azienda Sanitaria dell'Alto Adige",
+   "sha": "29f6e726c6a96a355d66b1de50e9c9134becbb28db6fbe72d4919d89929834d0",
+   "caratteri": 6973,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
@@ -116,7 +128,7 @@
    "titolo": "Contatti | Azienda Sanitaria dell’Alto Adige",
    "sha": "bda5400de8e6a2c03f6e372ceeee71a3935a38f421c0d49a7003f471b1d17963",
    "caratteri": 19469,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -128,14 +140,20 @@
    "titolo": "Info per pazienti e visitatori | Ospedale di Bolzano",
    "sha": "87cba349147bc9564e477d7a2f5bbd64143c65d1b80b07b2130c2bdb410585df",
    "caratteri": 24600,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
    "url": "https://home.sabes.it/it/ospedali/bolzano/segnalazioni-e-reclami.asp",
    "controllata": "2026-10-22",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "browser": true,
+   "http": 200,
+   "finale": "https://www.asdaa.it/it/ospedali",
+   "file": "bolzano/aea8b401c57d.txt",
+   "titolo": "Ospedali | Azienda Sanitaria dell’Alto Adige",
+   "sha": "b12403b91ca8df4132a55a626aca024f6e17ca3885c42a3d3e1e3e28e5755bbb",
+   "caratteri": 19997,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
@@ -147,14 +165,20 @@
    "titolo": "116 - 117 | Azienda Sanitaria dell’Alto Adige",
    "sha": "7118dbb74b0c2a6319f29412521b6f2512330b96e99863fc57e0ceae9cfed875",
    "caratteri": 24896,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/medicina-di-base.asp",
    "controllata": "2026-10-22",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "browser": true,
+   "http": 200,
+   "finale": "https://www.asdaa.it/it/servizio-di-medicina-di-base-territorio-bz",
+   "file": "bolzano/aa3b128c6f97.txt",
+   "titolo": "Servizio di Medicina di base | Comprensorio Bolzano",
+   "sha": "e8836091903d28884335bc7cb510f6e122ba99abf14c44abf959feb22a8d820c",
+   "caratteri": 31049,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
@@ -166,7 +190,7 @@
    "titolo": "Ambulatori per le Piccole Urgenze (APU)",
    "sha": "cd243f92518d1f22e9d08b76218cd0b847b20049886615d498ea44eb88727168",
    "caratteri": 22509,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -178,17 +202,19 @@
    "titolo": "Pronto Soccorso? Solo per le emergenze. | Temi per ambiti | Azienda Sanitaria dell'Alto Adige",
    "sha": "8188a7baa677b837961bd0371f3728309c45027b0c694cd727ee7b2f5a9735a2",
    "caratteri": 24220,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
    "url": "https://www.asdaa.it/it/comprensori-sanitari/merano/3181.asp",
    "controllata": "2026-10-22",
+   "browser": true,
    "http": 200,
+   "finale": "https://home.asdaa.it/it/comprensori-sanitari/merano/3181.asp",
    "file": "bolzano/f2819aebdf8b.txt",
-   "titolo": "Südtiroler Sanitätsbetrieb",
-   "sha": "392d4be341b5601bf3ac0de4fb35ecc68611c7c9a2e451ea79d9bec90721e5ed",
-   "caratteri": 38,
+   "titolo": "Servizio infermieristico | Azienda Sanitaria dell'Alto Adige",
+   "sha": "63e2879d3d25cb6dbc1c59c0b1221e0fa551588ba75db555e10884ce450c7123",
+   "caratteri": 8725,
    "cambiata": true
   },
   {
@@ -200,7 +226,7 @@
    "titolo": "Centrali operative territoriali",
    "sha": "08c78a8240eafbb9db90f33de5a3d9dbd5576b0105832477f3d26dece7710906",
    "caratteri": 3481,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -212,7 +238,7 @@
    "titolo": "Il numero 116117 | Provincia autonoma di Bolzano - Alto Adige",
    "sha": "3c3f02f63c48d6410d2158adccd2b4fc033dcb780fbc4b1d7b0e14a8dced1e1d",
    "caratteri": 9863,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -238,7 +264,7 @@
    "titolo": "Ticket ed esenzioni",
    "sha": "12077a06737ea6dae5c3a8c155be59bc498e9b83787094e4edca67eeee610972",
    "caratteri": 20777,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -251,7 +277,7 @@
    "titolo": "I servizi alle persone anziane che vivono in Alto Adige",
    "sha": "8cc2b9376719f2fc4b037348c34c3027001661d093d1b8dacfbae946d097686e",
    "caratteri": 9538,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -264,14 +290,20 @@
    "titolo": "I servizi alle persone anziane che vivono in Alto Adige",
    "sha": "8cc2b9376719f2fc4b037348c34c3027001661d093d1b8dacfbae946d097686e",
    "caratteri": 9538,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/prevenzione/prestazioni.asp?bnsv_svid=1008640",
    "controllata": "2026-10-22",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received"
+   "browser": true,
+   "http": 200,
+   "finale": "https://www.asdaa.it/it/prevenzione-salute?bnsv_svid=1008640",
+   "file": "bolzano/fbeef31a6b03.txt",
+   "titolo": "Prevenzione e salute | Azienda Sanitaria dell'Alto Adige",
+   "sha": "4a5c682adb8e5fa06ec37f92f6309af07a12aca6dfe4f79be3844468fd6abdb1",
+   "caratteri": 21924,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
@@ -282,8 +314,8 @@
    "finale": "https://www.asdaa.it/it/servizi",
    "file": "bolzano/bbc0f1d38083.txt",
    "titolo": "I servizi in myCIVIS - Azienda Sanitaria dell'Alto Adige",
-   "sha": "57982df445c5933cc2e8681ba07ff4da689216efd156e55b9e50d687502d80cf",
-   "caratteri": 22295,
+   "sha": "3874cdd528ca7ed96ffddcb16ebaa2dea86f887e1c76acf5c8c0c3a7396e228e",
+   "caratteri": 22337,
    "cambiata": true
   },
   {
@@ -295,8 +327,8 @@
    "finale": "https://www.asdaa.it/it/servizi",
    "file": "bolzano/1a6f833fe6c4.txt",
    "titolo": "I servizi in myCIVIS - Azienda Sanitaria dell'Alto Adige",
-   "sha": "57982df445c5933cc2e8681ba07ff4da689216efd156e55b9e50d687502d80cf",
-   "caratteri": 22295,
+   "sha": "3715ead6c825be6505839550609d5efe05d0ec2684068e965f6397a8aeb8cc6d",
+   "caratteri": 22336,
    "cambiata": true
   },
   {
@@ -309,7 +341,7 @@
    "titolo": "Fascicolo sanitario elettronico | Azienda Sanitaria dell’Alto Adige",
    "sha": "831e234eb92dc7dff6dfc96ca6156a2d9a7c0076a12e14e0e930aa87066b7acd",
    "caratteri": 22982,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -375,7 +407,7 @@
    "titolo": "Strutture | ASUIT Trento",
    "sha": "f68c6ede61b0ae6962a394a6ced42aa4e83b158ce41f8405afeab200bd147508",
    "caratteri": 73243,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -386,7 +418,7 @@
    "titolo": "Dove posso avere ulteriori informazioni? | ASUIT Trento",
    "sha": "8aa60e2b013fe2b1881a4d33a5674d2f336779839d33a3feb344d91db57c88f7",
    "caratteri": 5509,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -397,7 +429,7 @@
    "titolo": "Telefono e posta elettronica | ASUIT Trento",
    "sha": "f7a29c264e2b91e0320da4ab7c3e806d381dff1164a7887fcae2350d873b5b07",
    "caratteri": 16014,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -408,7 +440,7 @@
    "titolo": "Prenotazioni online di prestazioni sanitarie: domande frequenti | ASUIT Trento",
    "sha": "10128854179699a2cc8944d0bd3f83bc6626777a92d07abde4797edd99259cfa",
    "caratteri": 7809,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -419,7 +451,7 @@
    "titolo": "Assistenza specialistica ambulatoriale | ASUIT Trento",
    "sha": "d7cac3b1306898f664c6aa3a6929d9ae7623e93ed67075b1b69d3a06c41c0d20",
    "caratteri": 11856,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -430,7 +462,7 @@
    "titolo": "TreC+ | ASUIT Trento",
    "sha": "c4b70d2ef65f9e23df0a5293b8df63f4590cf3ccc4243b2a15387d473a9a568e",
    "caratteri": 16512,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -442,7 +474,7 @@
    "titolo": "Continuità assistenziale (ex guardia medica) | ASUIT Trento",
    "sha": "aa13cfb63d5341127cb6e32721f44f1e44433b927cdac89fcf7cdecdabe032d6",
    "caratteri": 12906,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -453,7 +485,7 @@
    "titolo": "Guardia medica - Trento | ASUIT Trento",
    "sha": "52478c48e34815f9ef7b38e1d4e2b2f7aa14ea6b7de5fb947e77124d1411c309",
    "caratteri": 6223,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -464,7 +496,7 @@
    "titolo": "Guardia medica - Rovereto | ASUIT Trento",
    "sha": "f477de0550cf9242d1d040cb6a0a925336709a445c9c811f9131ae84505faf81",
    "caratteri": 6189,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -475,7 +507,7 @@
    "titolo": "Assistenza domiciliare | ASUIT Trento",
    "sha": "3c4e007deac5c2230a115c0568135eb95f25b088b78ae904d756613522755ded",
    "caratteri": 14008,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -486,7 +518,7 @@
    "titolo": "Cure Palliative | ASUIT Trento",
    "sha": "294d9c3770fa770b8796395957d2983ba009e67c342cf7f3a504061ef22e4780",
    "caratteri": 14824,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -497,7 +529,7 @@
    "titolo": "Impegnative e ricette | ASUIT Trento",
    "sha": "3a76a8bf03602ef8cf905c12287f0615f8b34f00959e9f4c3707ca999f3d6e54",
    "caratteri": 7234,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -510,7 +542,7 @@
    "titolo": "Homepage | ASUIT Trento",
    "sha": "8a808925ec93818fecb35e308043ed28659bd9aa732dbfcfeb0125664d092454",
    "caratteri": 10169,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -523,7 +555,7 @@
    "titolo": "Homepage | ASUIT Trento",
    "sha": "8a808925ec93818fecb35e308043ed28659bd9aa732dbfcfeb0125664d092454",
    "caratteri": 10169,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -534,7 +566,7 @@
    "titolo": "Asuit - Azienda sanitaria universitaria integrata del Trentino - Provincia autonoma di Trento",
    "sha": "9254e028c41fa39b5af3a9995a456fb06d2006bf204b4bf3abb9e1423a726cb1",
    "caratteri": 3090,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -546,7 +578,7 @@
    "titolo": "TEMPI DI ATTESA - Trentino Salute",
    "sha": "1d4898ec7137e57bd87560f0e146b0b2ffc50f2ee35e253e2534ebb95f89aba9",
    "caratteri": 7303,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -557,7 +589,7 @@
    "titolo": "SERVIZI DI EMERGENZA E URGENZA E TRASPORTI SANITARI - Trentino Salute",
    "sha": "360f9dd8d577240162122c44228bc84e93c8c96105059fdc6512ca7f620267d1",
    "caratteri": 3373,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -568,7 +600,7 @@
    "titolo": "Numero unico europeo 116117: oltre 240 mila chiamate nel 2025",
    "sha": "000a58050425a94ca174816ce3181a68ff814d95c15d2576c55285f4d053898b",
    "caratteri": 12006,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -580,7 +612,7 @@
    "titolo": "Fascicolo sanitario elettronico (FSE) - Trentino Salute",
    "sha": "5151a19847ac60c382b8ba8c1cc199e7de117d889da0aa3a90d4cf376fc71315",
    "caratteri": 16691,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -591,7 +623,7 @@
    "titolo": "TreC",
    "sha": "77fd57d747ee2e6b2e51cdabbef8c0e11ea39a9ef8bcb5cf0547c0d279e4cc82",
    "caratteri": 4,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -602,7 +634,7 @@
    "titolo": "TreC",
    "sha": "77fd57d747ee2e6b2e51cdabbef8c0e11ea39a9ef8bcb5cf0547c0d279e4cc82",
    "caratteri": 4,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -620,7 +652,7 @@
    "titolo": "Cambio o prima scelta del medico o del pediatra | ASUIT Trento",
    "sha": "ef448c5e4943322fbd5e0c8ff9944b5f50c9c9c0bad0bacc8308c7daa526d0a4",
    "caratteri": 13455,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -631,7 +663,7 @@
    "titolo": "Come posso richiedere la copia della mia cartella clinica o dei referti? | ASUIT Trento",
    "sha": "404d9a5ad4434b310cb2922b533a4b9ac259774009fad9623bbe78d1acaa6b27",
    "caratteri": 5768,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -642,7 +674,7 @@
    "titolo": "Rilascio documentazione sanitaria | ASUIT Trento",
    "sha": "984d1f64e13f5ad270796dc03373038b55ea735b6fd5d95387a79c346618216a",
    "caratteri": 15061,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -671,6 +703,50 @@
    "sha": "7e44ae0f1ea42ff7d56f68c5b3b74be8d529ac5d45945116a1ea118a2be47378",
    "caratteri": 43405,
    "cambiata": false
+  },
+  {
+   "asl": "inps-trentino-alto-adige",
+   "url": "https://www.disabilita.governo.it/it/notizie/individuate-le-9-province-per-sperimentare-la-riforma-disabilita/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-trentino-alto-adige/4016319a363c.txt",
+   "titolo": "Individuate le 9 province per sperimentare la riforma disabilità",
+   "sha": "66d7f89ba67266ce1fbe7b9c0bd75ddc1bafe70d3840008c45b807ba3eec62df",
+   "caratteri": 2377,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-trentino-alto-adige",
+   "url": "https://www.disabilita.governo.it/it/notizie/individuate-le-altre-11-province-per-la-sperimentazione-della-riforma-della-disabilita/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-trentino-alto-adige/49a147b501cb.txt",
+   "titolo": "Individuate le altre 11 province per la sperimentazione della riforma della disabilità",
+   "sha": "616ce11d934ce0494cb840068dd03f5db47a39190acf5cec1e6929cf5cf8ca02",
+   "caratteri": 2423,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-trentino-alto-adige",
+   "url": "https://www.disabilita.governo.it/it/notizie/al-via-sperimentazione-riforma-disabilita-in-altre-40-province/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-trentino-alto-adige/cb8037740243.txt",
+   "titolo": "Al via sperimentazione riforma disabilità in altre 40 province",
+   "sha": "4ec5a460fb50b2e4f8c1006136eb2184acf64b45b3b190e378501ad4c004e6e3",
+   "caratteri": 3002,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-trentino-alto-adige",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-trentino-alto-adige/aad63b63390a.txt",
+   "titolo": "Portale Inps - Riforma della disabilità: al via la terza fase sperimentale",
+   "sha": "3e22d1cf04da5a9b152d4fd5f6033e4b4b86d0937bfc137d142d7c9ec25bd108",
+   "caratteri": 46281,
+   "cambiata": true
   }
  ]
 }

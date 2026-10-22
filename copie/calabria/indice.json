@@ -1,6 +1,6 @@
 {
  "regione": "calabria",
- "aggiornato": "2026-10-22T07:33:10.869Z",
+ "aggiornato": "2026-10-22T09:06:25.246Z",
  "pagine": [
   {
    "asl": "catanzaro",
@@ -33,6 +33,17 @@
    "titolo": "",
    "sha": "d57105d049c20e9545ef4b2ecd0af60a1456667e9ff0f35661d2f7569aaf96d6",
    "caratteri": 4038,
+   "cambiata": false
+  },
+  {
+   "asl": "catanzaro",
+   "url": "https://www.asprc.it/servizi/numeri-utili/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "catanzaro/900389ef64b9.txt",
+   "titolo": "Azienda Sanitaria Provinciale di Reggio Calabria",
+   "sha": "d9e8e729bcd932c0c020d129868d02d8649a47ddce41558458f0f5c0a5103865",
+   "caratteri": 3623,
    "cambiata": false
   },
   {
@@ -97,8 +108,9 @@
    "http": 200,
    "file": "catanzaro/88cb8fda64a8.txt",
    "titolo": "ECS - Regione Calabria",
-   "sha": "4ba4579626e306f1c3aaf1f3de5a6c1297cc4760e686658a542ce39f4c370c8d",
-   "caratteri": 4196,
+   "sha": "ad8a0eb0bd631aa2fb1dca401f744fe9800df256894c4a8fa3b2334cd630737a",
+   "caratteri": 4234,
+   "email_nascoste": 4,
    "cambiata": true
   },
   {
@@ -110,7 +122,7 @@
    "titolo": "",
    "sha": "df9ba084c18abd4902aeead5699ee7a6464955266fae90881733caa76fc25267",
    "caratteri": 13359,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "cosenza",
@@ -141,7 +153,7 @@
    "http": 200,
    "file": "cosenza/fe31bc8fb243.txt",
    "titolo": "Centro Unico di Prenotazione Online - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "d6ee60d0437256c4895816395eb8b202b55abf32fb5a624d2a0f442f0ca63080",
+   "sha": "5a96774c2fbf30ae6df6e1be7cdf1a580b29dd7fdc6d9c1571f87c415fac7a6f",
    "caratteri": 8094,
    "cambiata": true
   },
@@ -152,9 +164,9 @@
    "http": 200,
    "file": "cosenza/3954b74bd9cd.txt",
    "titolo": "UOSD URP e Comunicazione Istituzionale – ASP Cosenza",
-   "sha": "32e175474b73bcc7ce43fb3cb9fb869d05f163d5bc8bc7d0f8c310eec5837d00",
-   "caratteri": 4859,
-   "cambiata": false
+   "sha": "d90b7f488bfdba8dd8fccc5bda6f6aee9615a49503659cd6388cd127dad56fbd",
+   "caratteri": 4861,
+   "cambiata": true
   },
   {
    "asl": "crotone",
@@ -196,7 +208,7 @@
    "http": 200,
    "file": "crotone/4ab485a670df.txt",
    "titolo": "contatti - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "f2a163c8a2c07982f942b742253240605498c54c55e3cf9b94e7d94e38d624b3",
+   "sha": "7859989b967b6bf303d28f61bfbcc9e96827b4605cbc2259de7f58a5d199f0ba",
    "caratteri": 7856,
    "cambiata": true
   },
@@ -209,7 +221,7 @@
    "titolo": "Azienda Sanitaria Provinciale di Reggio Calabria",
    "sha": "5fa750abf52dec8e989f325667947300e497fb8b709d8aab1ffdf255f5150991",
    "caratteri": 3874,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "reggio-calabria",
@@ -231,6 +243,17 @@
    "titolo": "Azienda Sanitaria Provinciale di Reggio Calabria",
    "sha": "07d48571bf43c6a0be95f0d03612ae5b59f76a7e4e0d7521d3fc0a803901a1b7",
    "caratteri": 3099,
+   "cambiata": false
+  },
+  {
+   "asl": "reggio-calabria",
+   "url": "https://www.asprc.it/servizi/numeri-utili/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "reggio-calabria/900389ef64b9.txt",
+   "titolo": "Azienda Sanitaria Provinciale di Reggio Calabria",
+   "sha": "d9e8e729bcd932c0c020d129868d02d8649a47ddce41558458f0f5c0a5103865",
+   "caratteri": 3623,
    "cambiata": false
   },
   {
@@ -257,17 +280,6 @@
   },
   {
    "asl": "reggio-calabria",
-   "url": "https://www.asprc.it/servizi/numeri-utili/",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "reggio-calabria/900389ef64b9.txt",
-   "titolo": "Azienda Sanitaria Provinciale di Reggio Calabria",
-   "sha": "d9e8e729bcd932c0c020d129868d02d8649a47ddce41558458f0f5c0a5103865",
-   "caratteri": 3623,
-   "cambiata": false
-  },
-  {
-   "asl": "reggio-calabria",
    "url": "https://www.asprc.it/servizi-online/scelta-e-cambio-medico-online/",
    "controllata": "2026-10-22",
    "http": 200,
@@ -275,7 +287,7 @@
    "titolo": "Azienda Sanitaria Provinciale di Reggio Calabria",
    "sha": "363ebb5c8fea824e9aa5bb0e89ef4fd25ab5d578585c2b6390967579e0a45309",
    "caratteri": 4417,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "vibo-valentia",
@@ -292,6 +304,17 @@
    "titolo": "",
    "sha": "abd090276a4cfdd1416483f60a1cb3bc7f9898e2fba6293d9bd995e29018273a",
    "caratteri": 4913,
+   "cambiata": false
+  },
+  {
+   "asl": "vibo-valentia",
+   "url": "https://www.asprc.it/servizi/numeri-utili/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "vibo-valentia/900389ef64b9.txt",
+   "titolo": "Azienda Sanitaria Provinciale di Reggio Calabria",
+   "sha": "d9e8e729bcd932c0c020d129868d02d8649a47ddce41558458f0f5c0a5103865",
+   "caratteri": 3623,
    "cambiata": false
   },
   {
@@ -354,6 +377,418 @@
    "sha": "02f437927f97c1e66cc926f90181ce78be4bef117a0499535e9bf1c8677e08c5",
    "caratteri": 43093,
    "cambiata": false
+  },
+  {
+   "asl": "inps-calabria",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2024.12.accertamento-della-disabilit-avvio-sperimentazione-della-riforma.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-calabria/f9d950ca5afd.txt",
+   "titolo": "Portale Inps - Accertamento della disabilità: avvio sperimentazione della riforma",
+   "sha": "e142a9ccf3c2a809c6080bb33dade841589f19254f3d8d8ff51d820a290be3e5",
+   "caratteri": 45287,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-calabria",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2025.09.riforma-della-disabilit-in-avvio-la-seconda-fase-di-sperimentazione.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-calabria/3962e31a95f6.txt",
+   "titolo": "Portale Inps - Riforma della disabilità: in avvio la seconda fase di sperimentazione",
+   "sha": "6698f070cca78d40267be0187ea8a2d874ab66cc9e2c337891c01c83da3df5f3",
+   "caratteri": 44351,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-calabria",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-calabria/aad63b63390a.txt",
+   "titolo": "Portale Inps - Riforma della disabilità: al via la terza fase sperimentale",
+   "sha": "3e22d1cf04da5a9b152d4fd5f6033e4b4b86d0937bfc137d142d7c9ec25bd108",
+   "caratteri": 46281,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-calabria",
+   "url": "https://www.regione.calabria.it/dipartimento-salute-e-welfare/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-calabria/77fa32b16500.txt",
+   "titolo": "Dipartimento Salute e Welfare - Regione Calabria",
+   "sha": "f60e4d017ac33dbcdae5a16a07a400561b9680344a8c7b216546dd392eb72b7d",
+   "caratteri": 10037,
+   "email_nascoste": 3,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-calabria",
+   "url": "https://www.regione.calabria.it/dipartimento-salute-e-welfare/settori-del-dipartimento/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-calabria/98b04c20a7c3.txt",
+   "titolo": "Settori del Dipartimento - Regione Calabria",
+   "sha": "103633f3e5f1f42e931a2c7006bd90158af5bc10c21c184a2a4d98170af2c0f5",
+   "caratteri": 9534,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-calabria",
+   "url": "https://www.regione.calabria.it/dipartimento-salute-e-welfare/aree-tematiche/sdg-assistenza-sanitaria/",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
+   "asl": "regione-calabria",
+   "url": "https://www.regione.calabria.it/salute-e-sport/sanita-in-calabria/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-calabria/9db9b3e8b449.txt",
+   "titolo": "Sanità in Calabria - Regione Calabria",
+   "sha": "27cadfed4aff561e6b9fa5ec6b3f34975bb496ab6e1cfed628aafbca939187d3",
+   "caratteri": 8600,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-calabria",
+   "url": "https://www.regione.calabria.it/wp-content/uploads/2024/01/allegato_linee_guida-(1).pdf",
+   "controllata": "2026-10-22",
+   "nota": "file, non controllato"
+  },
+  {
+   "asl": "regione-calabria",
+   "url": "https://www.regione.calabria.it/wp-content/uploads/2024/12/Descrizione-Video-Portale-Web-Cup-Calabria-1.pdf",
+   "controllata": "2026-10-22",
+   "nota": "file, non controllato"
+  },
+  {
+   "asl": "regione-calabria",
+   "url": "https://www.regione.calabria.it/sanita-regione-nessuna-riduzione-ex-guardie-mediche-senza-attivazione-nuovi-presidi-territoriali/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-calabria/b82dd7fbc00b.txt",
+   "titolo": "Sanità: Regione, nessuna riduzione ex guardie mediche senza attivazione nuovi presidi territoriali - Regione Calabria",
+   "sha": "c42b3f10de023b07f3d414ebe89057cc4e6411138f784dd0585646566f30b5e5",
+   "caratteri": 8827,
+   "email_nascoste": 1,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-calabria",
+   "url": "https://www.regione.calabria.it/wp-content/uploads/2024/05/dca-101-del-17.05.2024.pdf",
+   "controllata": "2026-10-22",
+   "nota": "file, non controllato"
+  },
+  {
+   "asl": "regione-calabria",
+   "url": "https://www.fascicolosanitario.regione.calabria.it/wp-content/uploads/2024/10/FSE_Calabria_Informativa-v_08feb2024.pdf",
+   "controllata": "2026-10-22",
+   "nota": "file, non controllato"
+  },
+  {
+   "asl": "regione-calabria",
+   "url": "https://www.regione.calabria.it/ufficio-relazioni-con-il-pubblico/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "regione-calabria/5a545f7a99eb.txt",
+   "titolo": "Ufficio Relazioni con il Pubblico - Regione Calabria",
+   "sha": "beb48c2867373924f7ed4444d3266c86ad33448565f12dba4e2ecb0b9953edf1",
+   "caratteri": 11091,
+   "email_nascoste": 4,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-calabria",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.228000.228000-elencoStruttureInps.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "inps-calabria/ab4c7492d194.txt",
+   "titolo": "Portale Inps - Calabria",
+   "sha": "4187139f2c5b1510f2f0bb6727f28f510a45ebc4c891ee38234d2f3d715a6cfd",
+   "caratteri": 42145,
+   "cambiata": true
+  },
+  {
+   "asl": "asp-catanzaro",
+   "url": "https://www.asp.cz.it/trasparenza-valutazione-e-merito/dati-informativi-sullorganizzazione-e-i-procedimenti/contatti-/",
+   "controllata": "2026-10-22",
+   "http": 503
+  },
+  {
+   "asl": "asp-catanzaro",
+   "url": "https://www.asp.cz.it/centro-unico-prenotazioni-cup6/",
+   "controllata": "2026-10-22",
+   "http": 503
+  },
+  {
+   "asl": "asp-catanzaro",
+   "url": "https://www.asp.cz.it/numeri-utili/servizio-di-continuita-assistenziale-ex-guardie-mediche/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asp-catanzaro/ac8c57b9f92c.txt",
+   "titolo": "",
+   "sha": "d160a49b1d0915143cadecfe36a2f5df72d24f10e03244c733c23871401e7564",
+   "caratteri": 2872,
+   "cambiata": true
+  },
+  {
+   "asl": "asp-catanzaro",
+   "url": "https://www.asp.cz.it/distretti-sanitari/distretto-sociosanitario-di-catanzaro/postazioni-di-continuita-assistenziale-ex-guardia-medica-/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asp-catanzaro/458f97cff38b.txt",
+   "titolo": "",
+   "sha": "50c188ffd490c4f4e4511b1904e28c278c825d81c5e5256c3e4f703f9e7c5d6e",
+   "caratteri": 4524,
+   "cambiata": true
+  },
+  {
+   "asl": "asp-catanzaro",
+   "url": "https://www.asp.cz.it/distretti-sanitari/distretto-socio-sanitario-di-lamezia-terme/postazioni-di-continuita-assistenziale-ex-guardia-medica-/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asp-catanzaro/1b7b53e776ee.txt",
+   "titolo": "",
+   "sha": "4a298c79ebaf63086d595ff9d66fcdb1548d213edc3253860bb730edf15d913b",
+   "caratteri": 4192,
+   "cambiata": true
+  },
+  {
+   "asl": "asp-catanzaro",
+   "url": "https://www.asp.cz.it/distretti-sanitari/distretto-socio-sanitario-di-soverato/postazioni-di-continuita-assistenziale-ex-guardia-medica-/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asp-catanzaro/c34763881b41.txt",
+   "titolo": "",
+   "sha": "1af023fba132204be78af3b28ea7177f710488a0fa7dc2454112514c793997c7",
+   "caratteri": 4343,
+   "cambiata": true
+  },
+  {
+   "asl": "asp-cosenza",
+   "url": "https://www.asp.cosenza.it/?p=urp-cosenza-servizi",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asp-cosenza/275b544c3ca1.txt",
+   "titolo": "ASP Cosenza – Dipartimento Tutela della Salute e Politiche Sanitarie",
+   "sha": "9d46e30601f917a358281eed6bf87a6396c6d18dc98e11eb6fd75021b7454edc",
+   "caratteri": 4930,
+   "cambiata": true
+  },
+  {
+   "asl": "asp-cosenza",
+   "url": "https://www.asp.cosenza.it/?p=help_desk_urp",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asp-cosenza/e4599f6f88ec.txt",
+   "titolo": "ASP Cosenza – Dipartimento Tutela della Salute e Politiche Sanitarie",
+   "sha": "9d46e30601f917a358281eed6bf87a6396c6d18dc98e11eb6fd75021b7454edc",
+   "caratteri": 4930,
+   "cambiata": true
+  },
+  {
+   "asl": "asp-cosenza",
+   "url": "https://www.asp.cosenza.it/trasparente/?p=contatti",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.asp.cosenza.it/",
+   "file": "asp-cosenza/156a2441a530.txt",
+   "titolo": "ASP Cosenza – Dipartimento Tutela della Salute e Politiche Sanitarie",
+   "sha": "9d46e30601f917a358281eed6bf87a6396c6d18dc98e11eb6fd75021b7454edc",
+   "caratteri": 4930,
+   "cambiata": true
+  },
+  {
+   "asl": "asp-cosenza",
+   "url": "https://www.asp.cosenza.it/?p=Servizi_cittadino",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asp-cosenza/718c94383ed7.txt",
+   "titolo": "ASP Cosenza – Dipartimento Tutela della Salute e Politiche Sanitarie",
+   "sha": "9d46e30601f917a358281eed6bf87a6396c6d18dc98e11eb6fd75021b7454edc",
+   "caratteri": 4930,
+   "cambiata": true
+  },
+  {
+   "asl": "asp-cosenza",
+   "url": "https://www.asp.cosenza.it/wp-content/uploads/2025/05/carta-dei-servizi-i-Unificata-anno-2024-Ult.agg_.20.02.2025-h.13.21-3.pdf",
+   "controllata": "2026-10-22",
+   "nota": "file, non controllato"
+  },
+  {
+   "asl": "asp-cosenza",
+   "url": "https://www.asp.cosenza.it/?p=Guardia_Medica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asp-cosenza/2b646962329b.txt",
+   "titolo": "ASP Cosenza – Dipartimento Tutela della Salute e Politiche Sanitarie",
+   "sha": "9d46e30601f917a358281eed6bf87a6396c6d18dc98e11eb6fd75021b7454edc",
+   "caratteri": 4930,
+   "cambiata": true
+  },
+  {
+   "asl": "asp-cosenza",
+   "url": "https://www.asp.cosenza.it/?p=assistenza-domiciliare-integrata-adi",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asp-cosenza/88184230be6a.txt",
+   "titolo": "ASP Cosenza – Dipartimento Tutela della Salute e Politiche Sanitarie",
+   "sha": "9d46e30601f917a358281eed6bf87a6396c6d18dc98e11eb6fd75021b7454edc",
+   "caratteri": 4930,
+   "cambiata": true
+  },
+  {
+   "asl": "asp-cosenza",
+   "url": "https://asp.cosenza.it/?id=2049-cure-domiciliari-integrate-distretto-cosenza-savuto&p=articoli",
+   "controllata": "2026-10-22",
+   "http": 0,
+   "errore": "curl: (6) Could not resolve host: asp.cosenza.it"
+  },
+  {
+   "asl": "asp-cosenza",
+   "url": "https://asp.cosenza.it/?id=2050-cure-domiciliari-integrate-distretto-valle-crati&p=articoli",
+   "controllata": "2026-10-22",
+   "http": 0,
+   "errore": "curl: (6) Could not resolve host: asp.cosenza.it"
+  },
+  {
+   "asl": "asp-crotone",
+   "url": "https://www.asp.crotone.it/urp/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asp-crotone/339f13c282fa.txt",
+   "titolo": "URP - Azienda Sanitaria Provinciale di Crotone",
+   "sha": "0559e47d7a37942dc1e358863bf6190e56362a91fd75ca5a71a83f0c9ba5bbfc",
+   "caratteri": 3839,
+   "cambiata": true
+  },
+  {
+   "asl": "asp-crotone",
+   "url": "https://www.asp.crotone.it/contatti-2/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asp-crotone/285c2adcd2fb.txt",
+   "titolo": "Contatti - Azienda Sanitaria Provinciale di Crotone",
+   "sha": "4ec97a822ebbd38f16b4cbbe4aa92617e2e0f9c2a2dd7bfea4d9c934d5e4b7ed",
+   "caratteri": 4521,
+   "cambiata": true
+  },
+  {
+   "asl": "asp-crotone",
+   "url": "https://www.asp.crotone.it/la-guardia-medica/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asp-crotone/a6bd80f5d25e.txt",
+   "titolo": "La Guardia medica - Azienda Sanitaria Provinciale di Crotone",
+   "sha": "4a02be6f820a94290f68ba3b11de2f3ea5a14e065a48c25521fddf6228f9dfd2",
+   "caratteri": 5228,
+   "cambiata": true
+  },
+  {
+   "asl": "asp-crotone",
+   "url": "https://www.asp.crotone.it/fascicolo-sanitario-elettronico/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asp-crotone/7cfbfca8e650.txt",
+   "titolo": "Fascicolo sanitario elettronico - Azienda Sanitaria Provinciale di Crotone",
+   "sha": "d60946b11ad15786c48cdcd01ed3e963ae69741a2a0951e5c81d379488180673",
+   "caratteri": 10734,
+   "cambiata": true
+  },
+  {
+   "asl": "asp-crotone",
+   "url": "https://www.asp.crotone.it/area-sub-distrettuale-di-crotone/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asp-crotone/2be36dc4bb78.txt",
+   "titolo": "Area Sub-Distrettuale di Crotone - Azienda Sanitaria Provinciale di Crotone",
+   "sha": "538f072309cd3a567873b6c20422a69614f9fde41023419811042c13dc8b13ad",
+   "caratteri": 5230,
+   "cambiata": true
+  },
+  {
+   "asl": "asp-reggio-calabria",
+   "url": "https://www.asprc.it/servizi/urp/",
+   "controllata": "2026-10-22",
+   "http": 503
+  },
+  {
+   "asl": "asp-reggio-calabria",
+   "url": "https://www.asprc.it/servizi/faq-urp/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asp-reggio-calabria/e7faad0895e1.txt",
+   "titolo": "Azienda Sanitaria Provinciale di Reggio Calabria",
+   "sha": "d8650b4ffdf55486caf0a867a98296676df3e62546c4ac43f5852155981d9c8e",
+   "caratteri": 20889,
+   "cambiata": true
+  },
+  {
+   "asl": "asp-reggio-calabria",
+   "url": "https://www.asprc.it/form/contattaci/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asp-reggio-calabria/41a6725ef25f.txt",
+   "titolo": "Azienda Sanitaria Provinciale di Reggio Calabria",
+   "sha": "4f7dea84bae9503a96ce5c481895c0fa04e45dc91728b43d511d9c39cb227e81",
+   "caratteri": 2747,
+   "cambiata": true
+  },
+  {
+   "asl": "asp-reggio-calabria",
+   "url": "https://www.asprc.it/prenotazioni-cup/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asp-reggio-calabria/2c4fc28915da.txt",
+   "titolo": "Azienda Sanitaria Provinciale di Reggio Calabria",
+   "sha": "722a541e5ab8f6045ad42a5277ae21878aac6b12d03f739848012f902a6eda85",
+   "caratteri": 3881,
+   "cambiata": true
+  },
+  {
+   "asl": "asp-reggio-calabria",
+   "url": "https://www.asprc.it/amministrazione/distretti/distretto-n-1-reggio-calabria/distretto-n-1-reggio-calabria-/s-c-direzione-distretto-n-1-reggio-calabria-/",
+   "controllata": "2026-10-22",
+   "http": 503
+  },
+  {
+   "asl": "asp-vibo-valentia",
+   "url": "https://www.aspvv.it/index.php/urp",
+   "controllata": "2026-10-22",
+   "http": 403
+  },
+  {
+   "asl": "asp-vibo-valentia",
+   "url": "https://www.aspvv.it/index.php/numeri-utili",
+   "controllata": "2026-10-22",
+   "http": 403
+  },
+  {
+   "asl": "asp-vibo-valentia",
+   "url": "https://aspvv.it/index.php?catid=169&id=2703&view=article",
+   "controllata": "2026-10-22",
+   "http": 0,
+   "errore": "curl: (6) Could not resolve host: aspvv.it"
+  },
+  {
+   "asl": "asp-vibo-valentia",
+   "url": "https://www.aspvv.it/index.php/servizi-sanitari/servizio-di-continuita-assistenziale-ex-guardia-media",
+   "controllata": "2026-10-22",
+   "http": 403
+  },
+  {
+   "asl": "asp-vibo-valentia",
+   "url": "https://www.aspvv.it/index.php/organizzazione/distretti/pua-punto-unico-di-accesso",
+   "controllata": "2026-10-22",
+   "http": 403
+  },
+  {
+   "asl": "asp-vibo-valentia",
+   "url": "https://www.aspvv.it/index.php/organizzazione/distretti/cure-primarie-ss",
+   "controllata": "2026-10-22",
+   "http": 403
   }
  ]
 }
