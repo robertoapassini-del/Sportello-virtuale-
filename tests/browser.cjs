@@ -460,6 +460,16 @@ async function erroriCollegati(page, dove, problemi) {
         await page.goto(`${BASE}${m}/`, { waitUntil: 'networkidle' });
         await page.click('#app .btn.primary:not([disabled])', { timeout: 5000 });
         await page.waitForTimeout(200);
+        // Prevenzione: prima sesso ed età (js/prevenzione.js), poi la provincia.
+        if (m === 'prevenzione') {
+          dove = `${base} sesso ed età`;
+          await guarda();
+          await page.click('#app button.choice:has-text("Una donna")', { timeout: 5000 });
+          await page.waitForTimeout(200);
+          await page.fill('#app #age', '55');
+          await page.click('#app #age-form button[type=submit]', { timeout: 5000 });
+          await page.waitForTimeout(200);
+        }
         dove = `${base} provincia`;
         await guarda();
         await page.click(`#app button.choice[data-set*='"province":"${a.id}"']`, { timeout: 5000 });

@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 22/10/2026 — Prevenzione in Molise, Umbria e Valle d'Aosta
+- `data/regioni/index.json`: prevenzione accesa in Molise, Umbria e Valle d'Aosta, dove ogni azienda ha il numero dello screening nei dati (contatti con prova «pagina» dei giri precedenti).
+- `tests/coerenza.test.mjs`: fuori dalla Sicilia la prevenzione si accende solo se ogni azienda ha un contatto «screening».
+- `tests/browser.cjs`: il giro di tutte le regioni risponde a sesso ed età prima della provincia (prima la prevenzione non si poteva accendere da nessuna parte: il giro si fermava).
+
 ## 22/10/2026 — Puglia, Sardegna, Basilicata, Calabria: secondo giro sulle copie (medico di famiglia, cartella clinica)
 - Fonti: le copie del 22/10/2026 del branch `copie-siti` (pagine in `pagine[]`, email Cloudflare in chiaro). Ogni numero, PEC ed email nuova ha `url` = la pagina copiata, `verified` 2026-10-22, `proof` «pagina».
 - Moduli accesi in `data/regioni/index.json`: Puglia e Sardegna medico di famiglia e cartella clinica (Sardegna: `moduli` ["numeri-utili", "cartella-clinica", "medico-famiglia"]; l'invalidità resta spenta per il `regime` null di 4 sedi INPS).
