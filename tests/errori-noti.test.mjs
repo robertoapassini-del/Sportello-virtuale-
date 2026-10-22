@@ -75,6 +75,9 @@ const ERRORI = [
   // Audit tastiera e lettori di schermo del 22/10/2026 (giro 6).
   [/<a [^>]*>\s*(qui|leggi qui|clicca qui|fonte)\s*<\/a>/i, 'link con un nome che da solo non dice dove porta («leggi qui», «Fonte»): chi usa un lettore di schermo sente solo l\'elenco dei link. Scrivi dove porta («come vedere il Fascicolo di un figlio», «Fonte: …»)'],
   [/\bin Sicilia\b[^.\n]{0,80}180 giorni|180 giorni[^.\n]{0,80}\bin Sicilia\b/, 'ricetta per visite ed esami: i 180 giorni sono una regola nazionale (ricette dal 30/12/2024), non solo siciliana', /regola nazionale/],
+  // Verifica dei fatti del 22/10/2026 (giro 7).
+  [/[Ss]i sospende[^.]{0,120}29 giorni|29 giorni[^.]{0,60}si sospende/, 'accompagnamento: non si sospende se la struttura non dà tutta l\'assistenza (messaggio INPS 3347/2023): dirlo', /3347|tutta l'assistenza/],
+  [/fino a 8\.263,31/, 'esenzione E02/E04: reddito «inferiore a» 8.263,31 (il limite esatto è escluso): «sotto 8.263,31»'],
 ];
 
 test('nessuno degli errori già trovati è tornato', () => {

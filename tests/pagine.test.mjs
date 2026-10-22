@@ -150,3 +150,21 @@ test('ogni pagina ha <meta name="referrer" content="strict-origin-when-cross-ori
     assert.match(read(f), /<meta name="referrer" content="strict-origin-when-cross-origin">/, `${f}: manca il meta referrer`);
   }
 });
+
+// Reti lente (audit del 22/10/2026, giro 7): senza modulepreload il browser scarica i moduli uno dopo l'altro
+// (prima la pagina, poi common.js, poi engine.js…). Ogni modulo usato dalla pagina va chiesto subito, in testa.
+test('ogni pagina chiede in testa tutti i suoi moduli (modulepreload)', () => {
+  const importsDi = (f) => [...read(`js/${f}`).matchAll(/(?:\bfrom\s*|\bimport\s*)['"]\.\/([\w-]+\.js)['"]/g)].map((m) => m[1]);
+  for (const f of html) {
+    const page = read(f);
+    const head = page.match(/<head>[\s\S]*?<\/head>/)[0];
+    const pre = new Set([...head.matchAll(/<link rel="modulepreload" href="(?:\.\.\/)*js\/([\w-]+\.js)">/g)].map((m) => m[1]));
+    const da = [...page.matchAll(/<script type="module"([^>]*)>([\s\S]*?)<\/script>/g)]
+      .flatMap(([, a, b]) => [...`${a} ${b}`.matchAll(/js\/([\w-]+\.js)/g)].map((m) => m[1]));
+    assert.ok(da.length, `${f}: nessun modulo`);
+    const visti = new Set();
+    const giro = (m) => { if (visti.has(m)) return; visti.add(m); importsDi(m).forEach(giro); };
+    da.forEach(giro);
+    for (const m of visti) assert.ok(pre.has(m), `${f}: manca <link rel="modulepreload"> per js/${m} (npm run pagine)`);
+  }
+});

@@ -249,8 +249,32 @@ ${list.map((a) => `<dt id="tutela-${esc(a.id)}">${esc(a.province)} – ${esc(a.n
   },
 };
 
+// Reti lente (audit del 22/10/2026, giro 7): il browser scopre gli import di un modulo solo dopo averlo scaricato,
+// così su un 3G lento common.js, engine.js, flow.js… arrivano uno dopo l'altro. Con <link rel="modulepreload">
+// in testa li chiede tutti insieme. L'elenco viene dagli import scritti nei file js/ (solo quelli statici).
+const importsOf = new Map();
+function moduleGraph(file, seen = new Set()) {
+  if (seen.has(file)) return seen;
+  seen.add(file);
+  if (!importsOf.has(file)) {
+    const src = read(`js/${file}`);
+    importsOf.set(file, [...src.matchAll(/(?:\bfrom\s*|\bimport\s*)['"]\.\/([\w-]+\.js)['"]/g)].map((m) => m[1]));
+  }
+  for (const f of importsOf.get(file)) moduleGraph(f, seen);
+  return seen;
+}
+function modulePreload(html, root) {
+  const files = new Set();
+  for (const [, attrs, body] of html.matchAll(/<script type="module"([^>]*)>([\s\S]*?)<\/script>/g)) {
+    const src = attrs.match(/src="(?:\.\.\/|\.\/)*js\/([\w-]+\.js)"/);
+    const entries = src ? [src[1]] : [...body.matchAll(/from\s*['"](?:\.\.\/|\.\/)*js\/([\w-]+\.js)['"]/g)].map((m) => m[1]);
+    for (const e of entries) for (const f of moduleGraph(e)) files.add(f);
+  }
+  return [...files].map((f) => `<link rel="modulepreload" href="${root}js/${f}">\n`).join('');
+}
+
 for (const p of pages) {
-  const root = '../'.repeat(p.file.split('/').length - 1);
+  const root ='../'.repeat(p.file.split('/').length - 1);
   let html = p.group ? areaPage(p.group, root) : read(p.file).replace(/\r\n/g, '\n');
   const top = header(root, p.area) + breadcrumb(root, p.trail);
   const re = /<header class="site-header">[\s\S]*?<\/header>(\n<nav class="breadcrumb"[\s\S]*?<\/nav>)?/;
@@ -271,6 +295,8 @@ for (const p of pages) {
     if (!BLOCKS[name]) throw new Error(`Blocco sconosciuto «${name}» in ${p.file}`);
     return `<!-- blocco:${name} (creato da tools/pagine.mjs) -->\n${BLOCKS[name](p)}\n<!-- /blocco:${name} -->`;
   });
+  html = html.replace(/<link rel="modulepreload"[^>]*>\n/g, '')
+    .replace(/<link rel="stylesheet"[^>]*>\n/, (m) => `${m}${modulePreload(html, root)}`);
   if (p.module) {
     if (!/<!-- fonti[\s\S]*?<!-- \/fonti -->/.test(html)) throw new Error(`Guida scritta (id="guida" con <!-- fonti --><!-- /fonti -->) non trovata in ${p.file}`);
     html = html.replace(/<!-- fonti[\s\S]*?<!-- \/fonti -->/, () => guideSources(p.module));

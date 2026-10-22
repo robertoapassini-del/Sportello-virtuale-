@@ -87,6 +87,8 @@ function aspBlock(a) {
 // Voci di data/numeri.json valide solo in una regione («regione»: "sicilia"): si mostrano solo a chi l'ha scelta.
 const perMe = (x) => !x.regione || (x.regione === regione() && !needsRegion() && !regioneNonPronta());
 const nota = (t) => (typeof t === 'string' ? t : t.text);
+// Scorre fino a un blocco, se c'è (senza «?.»: non va su Safari 12, tests/compat.test.mjs).
+const scorriA = (id) => { const el = document.getElementById(id); if (el) el.scrollIntoView({ block: 'start' }); };
 
 const group = (g) => `
   <h2>${esc(g.title)}</h2>
@@ -147,7 +149,7 @@ async function ridisegna() {
     if (location.hash && location.hash !== '#regione') history.replaceState(null, '', location.pathname);
   }
   render();
-  document.getElementById('regione')?.scrollIntoView({ block: 'start' });
+  scorriA('regione');
 }
 
 // Arrivati da un'altra pagina per cambiare regione (numeri-utili/?torna=/pagina/#regione): scelta la regione,
@@ -174,7 +176,7 @@ app.addEventListener('click', (e) => {
 window.addEventListener('hashchange', () => {
   if (!nums) return; // dati non ancora arrivati (o non arrivati): init() disegna
   render();
-  document.getElementById('asp-numeri')?.scrollIntoView({ block: 'start' });
+  scorriA('asp-numeri');
 });
 
 (async function init() {
@@ -196,5 +198,5 @@ window.addEventListener('hashchange', () => {
   // «Cambia regione» dalle altre pagine (per esempio dalla home): numeri-utili/#regione.
   if (location.hash === '#regione') regionAction({ dataset: { action: 'change-region' } }, { current: 'province', render, go: render });
   else render();
-  if (location.hash) document.getElementById(location.hash === '#regione' ? 'regione' : 'asp-numeri')?.scrollIntoView({ block: 'start' });
+  if (location.hash) scorriA(location.hash === '#regione' ? 'regione' : 'asp-numeri');
 })();

@@ -6,7 +6,7 @@
 import { checkWaiting, callbackDeadline, maxWaitDays, todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
 import { tutelaLetter, tutelaReminder, mailtoHref } from './letters.js';
 import { noPecBox,
-  esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton, aspCalls,
+  esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, copyText, printText, readForm, mailLink, callButton, aspCalls,
   personFields, reportErrorHref, generalContactInfo, choice, helpBox, sourcesBox, moreHelp, hideHeadingEmoji, enableStart, aslLabel, aslIntestazione, regione, regioneInfo, regioneLink, generalContact, syncDelegate, delegateNoteText,
 } from './common.js';
 import { RICETTA_SVG } from './ricetta-svg.js';
@@ -442,8 +442,10 @@ const screens = {
         form.addEventListener('input', update);
         form.addEventListener('change', update);
         update();
-        document.getElementById('copy-btn')?.addEventListener('click', (e) => copyText(state.letterText, e.currentTarget));
-        document.getElementById('pdf-btn')?.addEventListener('click', () => printText(state.letterText));
+        const copyBtn = document.getElementById('copy-btn');
+        const pdfBtn = document.getElementById('pdf-btn');
+        if (copyBtn) copyBtn.addEventListener('click', (e) => copyText(state.letterText, e.currentTarget));
+        if (pdfBtn) pdfBtn.addEventListener('click', () => printText(state.letterText));
       },
     };
   },
@@ -598,7 +600,7 @@ function updateLetter(a, official) {
   try {
     [rules, data] = await Promise.all([loadJSON(`${ROOT}data/rules.json`), loadRegional(ROOT, 'asl')]);
   } catch {
-    app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>';
+    avvisoErrore(); // la risposta scritta nella pagina resta, con l'avviso sopra
     return;
   }
   render();

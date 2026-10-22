@@ -70,7 +70,8 @@ export function classKey(cls, kind) {
 export function maxWaitDays(rules, cls, kind) {
   const key = classKey(cls, kind);
   if (!key) return null;
-  return rules.max_wait_days[key] ?? null;
+  const giorni = rules.max_wait_days[key];
+  return giorni == null ? null : giorni;
 }
 
 // Uguale al limite = ancora nei tempi; un giorno in più = superato.
@@ -197,7 +198,7 @@ export function esenzioneReddito(rules, { ageBand, status, spouse = false, child
   if (status === 'disoccupato') {
     out.thresholds.E02 = fam('E02');
     if (!hasIncome) out.maybe.push('E02');
-    else if (income <= out.thresholds.E02) out.codes.push('E02');
+    else if (income < out.thresholds.E02) out.codes.push('E02');
   }
   if (status === 'sociale') out.codes.push('E03');
   // «minimo» = pensione al minimo con più di 60 anni: l'età è quella di chi ha la pensione,
@@ -205,7 +206,7 @@ export function esenzioneReddito(rules, { ageBand, status, spouse = false, child
   if (status === 'minimo') {
     out.thresholds.E04 = fam('E04');
     if (!hasIncome) out.maybe.push('E04');
-    else if (income <= out.thresholds.E04) out.codes.push('E04');
+    else if (income < out.thresholds.E04) out.codes.push('E04');
   }
   return out;
 }

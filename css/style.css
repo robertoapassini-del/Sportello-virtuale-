@@ -311,7 +311,7 @@ button.btn.choice { width: 100%; }
    agli argomenti si arriva dai riquadri della home e dal link «‹ …» in cima a ogni pagina. */
 .header-nav { display: none; background: var(--header-dark); }
 @media (min-width: 640px) { .header-nav { display: block; } }
-.header-nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 4px; }
+.header-nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px; }
 .header-nav a {
   display: block; padding: 12px 14px 8px; color: #fff; font-weight: 700; font-size: 0.85rem; white-space: normal;
   text-decoration: none; border-bottom: 4px solid transparent;
@@ -406,8 +406,9 @@ table.fields th, table.fields td { border-bottom-color: var(--border); }
 .errore-js .js-only { display: none !important; }
 /* Finché js/common.js non ha messo le icone disegnate e la banda colorata, la pagina non si vede:
    altrimenti per un attimo comparirebbero le emoji e la pagina senza banda. Se lo script non parte,
-   dopo 1,5 secondi si vede comunque (animazione). common.js aggiunge la classe «pronto». */
-.js:not(.pronto) body > * { visibility: hidden; animation: gs-mostra 0s 1.5s forwards; }
+   dopo mezzo secondo si vede comunque (animazione). common.js aggiunge la classe «pronto».
+   Era 1,5 secondi: su un 3G lento la pagina restava bianca troppo a lungo (audit del 22/10/2026, giro 7). */
+.js:not(.pronto) body > * { visibility: hidden; animation: gs-mostra 0s 0.5s forwards; }
 @keyframes gs-mostra { to { visibility: visible; } }
 
 .static-list { padding-left: 1.2rem; }

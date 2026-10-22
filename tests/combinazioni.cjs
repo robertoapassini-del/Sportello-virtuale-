@@ -134,9 +134,9 @@ function expectedCodes({ ageBand, status, spouse, children, income }) {
   const codes = [], maybe = [];
   const has = income !== null;
   if (ageBand === 'under6' || ageBand === '65plus') (has ? (income <= ESE.E01.income_max && codes.push('E01')) : maybe.push('E01'));
-  if (status === 'disoccupato') (has ? (income <= fam('E02') && codes.push('E02')) : maybe.push('E02'));
+  if (status === 'disoccupato') (has ? (income < fam('E02') && codes.push('E02')) : maybe.push('E02'));
   if (status === 'sociale') codes.push('E03');
-  if (status === 'minimo') (has ? (income <= fam('E04') && codes.push('E04')) : maybe.push('E04'));
+  if (status === 'minimo') (has ? (income < fam('E04') && codes.push('E04')) : maybe.push('E04'));
   return { codes, maybe, fam };
 }
 const AGE = { under6: /^Meno di 6/, '6to59': /^Da 6 a 59/, '60to64': /^Da 60 a 64/, '65plus': /^65 anni o più/ };
@@ -645,7 +645,7 @@ async function runCase(page, c) {
   let done = 0;
   const queue = [...cases];
   await Promise.all(Array.from({ length: WORKERS }, async () => {
-    const ctx = await browser.newContext({ ...devices['iPhone SE'] });
+    const ctx = await browser.newContext({ ...devices['iPhone SE'], ...(process.env.TZID ? { timezoneId: process.env.TZID } : {}) });
     // Le province provate sono quelle siciliane: la regione è già scelta, così si va dritti alla provincia.
     await ctx.addInitScript(() => { try { localStorage.setItem('gs-regione', 'sicilia'); } catch { /* niente */ } });
     const page = await ctx.newPage();

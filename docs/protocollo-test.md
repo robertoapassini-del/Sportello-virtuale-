@@ -21,16 +21,24 @@ Il sito vale in tutta Italia. Una regola di una sola regione si scrive dicendo d
 sanitaria: nei testi per tutti si scrive «azienda sanitaria (ASL)», nei JS si usa `aslLabel()`.
 Se non sai se una regola è nazionale, trattala come regionale finché non trovi la fonte.
 
+## Telefoni vecchi
+
+Molti di chi usa il sito hanno un telefono vecchio: il JavaScript deve funzionare su Safari 12 e Chrome 70
+(`tests/compat.test.mjs`). Niente «?.», «??», `matchAll`, `replaceAll`, `.at()`, «await» fuori da una funzione e
+gli altri casi elencati nel test. Se lo script non parte o i dati non arrivano, la pagina mostra lo stesso il testo
+scritto (`tests/telefoni-vecchi.cjs`).
+
 ## I controlli automatici
 
 | Comando | Cosa controlla |
 |---|---|
 | `npm test` | dati, numeri e fonti (`contatti`, `provenienza`, `cifre`: anche nel titolo e nella descrizione, con l'unità giusta), pagine aggiornate (`pagine`, anche la 404, fonti mai vuote, niente «noindex»), link interni (`link`), citazioni di legge rilette (`citazioni` + `tests/citazioni.txt`), lettere senza segnaposto (`lettere`), calcoli e festivi (`engine`), testi nazionali (`nazionale`), errori già visti (`errori-noti`), ricerca (`ricerca`: 40 parole → modulo giusto) |
 | `node tests/browser.cjs <indirizzo>` | tutte le pagine in un browser (Sicilia, Lazio, nessuna regione) e i percorsi dei moduli: errori JavaScript, «undefined», pagine troppo larghe (anche con il testo al 250%), pulsanti sotto i 44 px, tastiera (primo Tab, contorno del focus, errori dei campi collegati), stampa (titolo, pulsanti), frasi siciliane senza «Sicilia» |
-| `node tests/combinazioni.cjs <indirizzo>` | tutte le combinazioni di risposte nei moduli, confrontate con un calcolo indipendente |
+| `node tests/combinazioni.cjs <indirizzo>` | tutte le combinazioni di risposte nei moduli, confrontate con un calcolo indipendente; nella CI anche con il fuso orario di New York (`TZ=America/New_York TZID=America/New_York`) |
 | `node tools/confronta-copie.mjs <cartella-copie> [regione…\|nazionali]` | i dati contro le copie notturne delle pagine ufficiali (branch `copie-siti`): cifre dei numeri con prova «pagina» (regionali e `data/numeri.json`) e orari HH:MM dei contatti con prova «pagina» che non sono nella copia del loro url, PEC e indirizzi di invio che non sono in nessuna copia dell'azienda, PEC, indirizzo e orari delle sedi INPS (`inps.json`) che non sono nella copia della pagina della sede, url senza copia. Nella CI è il job «copie», con `--noti tests/copie-noti.txt --base origin/main`: diventa rosso (codice 3) solo per un problema nuovo su un dato che la PR ha cambiato; i problemi già noti, quelli su dati uguali a main («non di questa PR»: è cambiata la pagina ufficiale) e gli url nuovi senza copia vanno solo nel riepilogo del job |
 | `node tests/robustezza.cjs <indirizzo>` | cosa succede quando qualcosa va storto: file di dati che non arrivano, cookie bloccati, indirizzi ostili (`?torna=`), hash rotti |
 | `node tests/numeri-province.cjs <indirizzo>` | Numeri utili in ogni regione attiva e in ogni provincia (`numeri-utili/#<id>`): errori JavaScript, «undefined», blocco dell'azienda (`#asp-numeri`) e della sede INPS presenti, niente «Sicilia» fuori dalla Sicilia; il pulsante «Stampa» chiama davvero la stampa |
+| `node tests/telefoni-vecchi.cjs <indirizzo>` | telefoni vecchi e reti lente, su tutte le pagine: senza JavaScript (titolo visibile entro 0,7 secondi, niente «Un momento…» per sempre, niente pulsanti bloccati), senza dati e con un errore nello script della pagina (resta la risposta scritta, con l'avviso), telefono in orizzontale 640x360 con il testo al 200% (niente scorrimento laterale) |
 
 **Elenco dei problemi noti delle copie** (`tests/copie-noti.txt`): una chiave per riga, per esempio
 `sicilia/enna numero 0935520111 https://www.aspenna.it`. Ci vanno solo i buchi delle copie (pagine fatte con
@@ -97,3 +105,9 @@ tutti i controlli verdi.
   sito); `tests/html-esc.test.mjs` (dati dell'utente nell'HTML solo dentro `esc()`); in `lettere.test.mjs` «Manda per
   email» con indirizzi ostili («?cc=», «&bcc=») e con tutti gli indirizzi di `data/`; in `pagine.test.mjs` il meta
   referrer su ogni pagina; in `errori-noti.test.mjs` la privacy dice che la ricerca resta nell'indirizzo («#q=»).
+- 22/10/2026 (giro 7) — audit telefoni vecchi e reti lente: `tests/compat.test.mjs` (18 «?.» e «??» e un `matchAll`
+  fermavano tutti i moduli su iOS 12 e Chrome prima dell'80; «await» fuori da una funzione in `fonti.html`),
+  `tests/telefoni-vecchi.cjs` (12 moduli toglievano la risposta scritta quando i dati non arrivavano, pulsante
+  d'inizio bloccato dopo un errore nello script, «Un momento…» per sempre in `fonti.html` senza JavaScript, menu che
+  usciva dallo schermo a 640x360 con il testo al 200%, pagina nascosta 1,5 secondi), in `pagine.test.mjs` il
+  `modulepreload` di tutti i moduli della pagina, un secondo giro di `combinazioni.cjs` con il fuso di New York.

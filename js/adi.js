@@ -3,7 +3,7 @@
 // Controllo delle condizioni principali con regole fisse. Niente lettera: la domanda si fa
 // all'INPS (o gratis con un patronato o un CAF).
 import { adiCheck, formatEuro } from './engine.js';
-import { esc, loadJSON, disclaimer, renderFooter, readForm } from './common.js';
+import { esc, loadJSON, disclaimer, renderFooter, avvisoErrore, readForm } from './common.js';
 import { createFlow, choice, restartBtn, progress, showError } from './flow.js';
 
 const ROOT = '../';
@@ -64,7 +64,7 @@ const screens = {
       <p>È il numero scritto sull'attestazione ISEE di quest'anno. Lo fa il CAF, gratis.</p>
       <form id="isee-form" novalidate>
         <label for="isee">ISEE, in euro<span class="hint">Per esempio 8000. Senza punti né virgole</span></label>
-        <input type="number" id="isee" name="isee" min="0" step="1" inputmode="numeric" value="${esc(state.isee ?? '')}" aria-describedby="isee-form-error">
+        <input type="number" id="isee" name="isee" min="0" step="1" inputmode="numeric" value="${esc(state.isee == null ? '' : state.isee)}" aria-describedby="isee-form-error">
         <p class="field-error" id="isee-form-error" role="alert" hidden></p>
         <button type="submit" class="btn primary big">✔️ Controlla</button>
       </form>
@@ -87,7 +87,7 @@ const screens = {
     const why = {
       household: `in famiglia non c'è un minorenne, una persona con almeno 60 anni, una persona con disabilità o una persona seguita dai servizi`,
       residency: `chi fa la domanda non vive in Italia da ${rules.residency_years} anni`,
-      isee: `l'ISEE (${formatEuro(state.isee ?? 0)}) è sopra il limite di ${formatEuro(rules.isee_max)}`,
+      isee: `l'ISEE (${formatEuro(state.isee == null ? 0 : state.isee)}) è sopra il limite di ${formatEuro(rules.isee_max)}`,
     };
     if (r.status === 'no') {
       return {
@@ -138,7 +138,7 @@ let flow;
 (async function init() {
   renderFooter(ROOT);
   try { rules = await loadJSON(`${ROOT}data/rules-adi.json`); } catch {
-    app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>'; return;
+    avvisoErrore(); return; // la risposta scritta nella pagina resta, con l'avviso sopra
   }
   flow = createFlow({ app, screens, state, sources });
   flow.render();

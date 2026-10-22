@@ -2,7 +2,7 @@
 // Prima la risposta: la pagina mostra subito la risposta scritta; il conto della scadenza parte dal pulsante.
 // Non chiediamo né la malattia né il nome della medicina: solo la data di scadenza del piano.
 import { pianoStatus, todayISO, formatIt, parseDate, art } from './engine.js';
-import { esc, loadJSON, loadRegioni, disclaimer, renderFooter, readForm, aslLabel } from './common.js';
+import { esc, loadJSON, loadRegioni, disclaimer, renderFooter, avvisoErrore, readForm, aslLabel } from './common.js';
 import { createFlow, choice, restartBtn, days, dateForm, showError } from './flow.js';
 
 const ROOT = '../';
@@ -99,7 +99,7 @@ let flow;
   renderFooter(ROOT);
   // L'elenco delle regioni serve a aslLabel(): ASP in Sicilia, ASL, ATS… altrove.
   try { [rules] = await Promise.all([loadJSON(`${ROOT}data/rules-piano.json`), loadRegioni(ROOT)]); } catch {
-    app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>'; return;
+    avvisoErrore(); return; // la risposta scritta nella pagina resta, con l'avviso sopra
   }
   flow = createFlow({ app, screens, state, sources });
   flow.render();

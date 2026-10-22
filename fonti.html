@@ -16,6 +16,10 @@
 <meta property="og:description" content="Da dove prendiamo le informazioni.">
 <meta property="og:url" content="https://guidasanita.it/fonti.html">
 <link rel="stylesheet" href="css/style.css">
+<link rel="modulepreload" href="js/common.js">
+<link rel="modulepreload" href="js/engine.js">
+<link rel="modulepreload" href="js/icons.js">
+<link rel="modulepreload" href="js/controlla.js">
 </head>
 <body>
 <header class="site-header">
@@ -29,9 +33,11 @@
 <h1>Da dove prendiamo le informazioni</h1>
 <p>Prendiamo le informazioni dai siti ufficiali delle aziende sanitarie (ASL, ASP, ATS…), delle Regioni e dell'INPS. Ogni numero ha la pagina ufficiale da cui viene e il giorno in cui l'abbiamo controllato. I numeri li ricontrolliamo almeno ogni 3 mesi, le regole almeno una volta l'anno.</p>
 <h2>Le leggi</h2>
-<ul class="clean" id="laws-list"><li>Un momento…</li></ul>
+<p class="static-fallback">L'elenco delle leggi si vede con JavaScript attivo. In fondo alla guida di ogni argomento ci sono le sue fonti, con il link alla pagina ufficiale.</p>
+<ul class="clean" id="laws-list"><li class="js-only">Un momento…</li></ul>
 <h2>Aziende sanitarie e INPS, regione per regione</h2>
-<div id="sources-list"><p>Un momento…</p></div>
+<p class="static-fallback">L'elenco delle pagine ufficiali di ogni regione, con il giorno del controllo, si vede con JavaScript attivo.</p>
+<div id="sources-list"><p class="js-only">Un momento…</p></div>
 <p class="muted">Hai trovato un errore? <a href="mailto:info@guidasanita.it?subject=Segnala%20un%20errore">Scrivici</a>.</p>
 </main>
 <!-- condividi: creato da tools/pagine.mjs -->
@@ -61,6 +67,8 @@ const errore = '<div class="notice bad"><p>Non riusciamo a caricare questo elenc
 const st = { verified: "Controllato", partial: "Controllato in parte", todo: "Da controllare" };
 const link = (s) => s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>` : esc(s.label);
 const data = (d) => (d ? formatIt(d) : "");
+// Dentro una funzione «async» e non con «await» fuori: Safari prima della 15 non lo capisce (tests/compat.test.mjs).
+(async function fonti() {
 try {
   // Indice delle regioni e elenco dei moduli servono per tutta la pagina; i file di regole e quelli
   // delle singole regioni possono mancare: si salta solo quella riga.
@@ -116,6 +124,7 @@ try {
   if (/Un momento/.test(lawsEl.textContent)) lawsEl.innerHTML = `<li>${errore}</li>`;
   sourcesEl.innerHTML = errore;
 }
+})();
 </script>
 </body>
 </html>

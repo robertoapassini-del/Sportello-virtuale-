@@ -2,6 +2,20 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 22/10/2026 — Audit notturno, giro 7: telefoni vecchi e reti lente
+- Telefoni vecchi (`js/`): 18 «?.» e «??» e un `matchAll` in `js/common.js` fermavano tutti i moduli su iPhone con iOS 12, Safari prima della 13.1 e Chrome prima dell'80 (errore di sintassi: si vedeva solo il testo scritto). Riscritti con la sintassi di prima, con lo stesso significato («??» cambia solo null e undefined, non 0 o ''). Nuovo controllo `tests/compat.test.mjs`: il JavaScript deve partire su Safari 12 e Chrome 70, anche gli script scritti nelle pagine.
+- `fonti.html`: lo script usava «await» fuori da una funzione (Safari 15, Chrome 89): ora è dentro una funzione. «Un momento…» si vede solo con JavaScript (`js-only`); senza, una frase spiega che l'elenco si vede con JavaScript attivo.
+- Dati che non arrivano (`data/*.json`): 12 moduli (liste d'attesa, invalidità, ricorso, cartella, ausili, esenzione, assegno di inclusione, assistenza domiciliare, medico, cure palliative, piano terapeutico, prevenzione) toglievano la risposta scritta e lasciavano solo «Non riusciamo a caricare la pagina». Ora la risposta resta, con l'avviso sopra (`avvisoErrore()` in `js/common.js`, come in home e Numeri utili).
+- Errore nello script di una pagina prima che parta: il pulsante d'inizio restava bloccato senza messaggio. Ora `js/common.js` mostra l'avviso e il contenuto scritto (classe `errore-js`).
+- Reti lente: ogni pagina chiede subito tutti i suoi moduli (`<link rel="modulepreload">`, da `tools/pagine.mjs`; controllo in `tests/pagine.test.mjs`) e, se lo script non parte, la pagina si vede dopo mezzo secondo invece di 1,5 (`css/style.css`). Su un 3G lento (2 s di latenza, 50 kB/s, CPU 4 volte più lenta) la pagina delle liste d'attesa è pronta in 7,0 secondi invece di 11,6.
+- Telefono in orizzontale (640x360) con il testo al 200%: il menu degli argomenti usciva dallo schermo su tutte le pagine. Ora va a capo (`css/style.css`).
+- Nuovo controllo `tests/telefoni-vecchi.cjs` nella CI (senza JavaScript, senza dati, errore nello script della pagina, 640x360 al 200%) e un secondo giro di `tests/combinazioni.cjs` con il fuso orario di New York (`TZID`).
+
+## 22/10/2026 — Audit notturno, giro 7: verifica dei fatti
+- Accompagnamento (`data/rules-accompagnamento.json`, `accompagnamento/requisiti/`, `rsa/quanto-si-paga/`): con un ricovero gratuito oltre 29 giorni l'indennità non si sospende se la struttura non dà tutta l'assistenza (serve sempre un familiare o un infermiere privato): dichiarazione online all'INPS con l'attestazione della struttura. Fonte: messaggio INPS 3347 del 26/09/2023.
+- Esenzione E02 ed E04 (`js/engine.js`, `data/rules-esenzione.json`, `esenzione-ticket/`): il reddito deve essere «inferiore a» 8.263,31 euro (11.362,05 con il coniuge), quindi chi ha esattamente il limite non ha l'esenzione; prima il sito diceva «fino a». Fonte: tabelle regionali delle esenzioni per reddito (Regione Piemonte, DGR del 23/03/2026; Regione Lombardia). E01 resta «non superiore» a 36.151,98.
+- Verificate altre 19 affermazioni sulle fonti ufficiali (importi 2026, scadenze, PNGLA, ricetta, Fascicolo, tessera, TEAM, legge 104, strisce blu): giuste. Nuove righe in `tests/errori-noti.test.mjs`.
+
 ## 22/10/2026 — Audit notturno, giro 6: sicurezza e privacy
 - `js/numeri.js`: il ritorno dopo la scelta della regione (`?torna=`) poteva portare su un altro sito con «/.//altro-sito/» (il pathname diventava «//altro-sito/»). Ora si usa l'indirizzo intero di questo sito. `tests/robustezza.cjs` prova 8 indirizzi ostili e uno buono (prima della correzione 4 uscivano dal sito).
 - `tools/pagine.mjs`: lo script in testa che toglie «index.html» dall'indirizzo poteva portare su un altro sito con «//altro-sito/…/index.html». Ora l'indirizzo comincia sempre con una sola «/». Nuovo `tests/head-script.test.mjs`; pagine rigenerate.

@@ -2,7 +2,7 @@
 // Prima la risposta: la pagina mostra subito la risposta scritta; il percorso per età parte dal pulsante.
 // Regole fisse per età e sesso. Non chiediamo la malattia.
 import { prevenzione } from './engine.js';
-import { esc, loadJSON, loadRegional, disclaimer, renderFooter, readForm, callButton, officeBox, aslLabel, regione, regioneNonPronta } from './common.js';
+import { esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, readForm, callButton, officeBox, aslLabel, regione, regioneNonPronta } from './common.js';
 import { createFlow, choice, restartBtn, progress, needsRegion, showError } from './flow.js';
 
 const ROOT = '../';
@@ -33,7 +33,7 @@ const screens = {
       <h1>🎂 Quanti anni ha?</h1>
       <form id="age-form" novalidate>
         <label for="age">Età, in anni</label>
-        <input type="number" id="age" name="age" min="0" max="120" inputmode="numeric" value="${esc(state.age ?? '')}" aria-describedby="age-form-error">
+        <input type="number" id="age" name="age" min="0" max="120" inputmode="numeric" value="${esc(state.age == null ? '' : state.age)}" aria-describedby="age-form-error">
         <p class="field-error" id="age-form-error" role="alert" hidden></p>
         <button type="submit" class="btn primary big">Avanti ▶️</button>
       </form>`,
@@ -97,7 +97,7 @@ let flow;
 (async function init() {
   renderFooter(ROOT);
   try { [rules, data] = await Promise.all([loadJSON(`${ROOT}data/rules-prevenzione.json`), loadRegional(ROOT, 'asl')]); } catch {
-    app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>'; return;
+    avvisoErrore(); return; // la risposta scritta nella pagina resta, con l'avviso sopra
   }
   flow = createFlow({ app, screens, state, sources });
   // Scelta la regione dopo sesso ed età (needsRegion): se non ha i dati di questo modulo, al posto del
