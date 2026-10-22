@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 22/10/2026 — Zone: una sola zona senza domanda
+- `js/flow.js` (`provinceChoice`): se l'azienda della provincia ha una sola zona con la lettera (Lombardia: l'ATS e una sola ASST), il modulo usa quella senza chiedere «In quale zona?». `tests/coerenza.test.mjs` chiede ora almeno una zona, non due.
+- `tests/browser.cjs`: il giro su tutte le regioni si aspetta la domanda «In quale zona?» solo nei moduli con una lettera all'azienda e solo con due zone o più (l'invalidità scrive all'INPS).
+
 ## 22/10/2026 — Piemonte e Lombardia, giro 2: zone delle aziende, percorso di tutela, scelta del medico
 - Piemonte: acceso `medico-famiglia`. La scelta del medico viene dalla pagina della Regione Piemonte «Il medico di famiglia e il pediatra di libera scelta» e dal servizio «Il mio medico» di Salute Piemonte (copie del 22/10/2026): online o all'ufficio scelta e revoca del distretto, con tessera sanitaria, codice fiscale e documento. Vale per tutte le ASL.
 - Piemonte, zone in `sub_areas` (copie del 22/10/2026): Torino con ASL Città di Torino (protocollo@pec.aslcittaditorino.it, urp@aslcittaditorino.it), ASL TO3 (aslto3@cert.aslto3.piemonte.it, urp@aslto3.piemonte.it), ASL TO4 (direzione.generale@pec.aslto4.piemonte.it, urp@aslto4.piemonte.it), ASL TO5 (protocollo@cert.aslto5.piemonte.it, urp@aslto5.piemonte.it); Cuneo con ASL CN1 (protocollo@aslcn1.legalmailPA.it, urp@aslcn1.it) e ASL CN2 Alba-Bra (aslcn2@legalmail.it, urp@aslcn2.it).

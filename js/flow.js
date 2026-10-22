@@ -14,8 +14,11 @@ export { choice };
 export const intestazioneAzienda = (a) => intestazioneDi(a, aslIntestazione());
 // Il pulsante di una provincia. Se la sua azienda ha zone con una lettera diversa (sub_areas oggetto, js/letters.js),
 // prima di next viene la domanda «In quale zona?» (schermata «zona» del modulo, fatta con zonaScreen).
+// Con una zona sola (Lombardia: la provincia ha l'ATS e una sola ASST) non c'è niente da chiedere: si usa quella.
 export function provinceChoice(a, next) {
-  return choice('', a.province, { province: a.id, zona: null }, zoneLettera(a).length ? 'zona' : next);
+  const zone = zoneLettera(a);
+  if (zone.length === 1) return choice('', a.province, { province: a.id, zona: zone[0].id }, next);
+  return choice('', a.province, { province: a.id, zona: null }, zone.length ? 'zona' : next);
 }
 // «In quale zona?»: a è l'azienda della provincia scelta (senza la zona), next la schermata dopo.
 export function zonaScreen(a, next) {

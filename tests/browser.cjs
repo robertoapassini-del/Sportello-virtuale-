@@ -501,8 +501,11 @@ async function erroriCollegati(page, dove, problemi) {
       for (const m of r.moduli.filter((x) => x !== 'numeri-utili')) {
         const a = asl[giro++ % asl.length];
         const zone = (a.sub_areas || []).filter((z) => z && typeof z === 'object' && z.id);
-        await percorri({ r, a, m, zona: zone[0] || null });
-        if (percorsi[m]) await percorri({ r, a, m, zona: zone[zone.length - 1] || null, finoAllaLettera: true });
+        // La domanda «In quale zona?» la fanno solo i moduli con una lettera all'azienda, e solo con due zone o più
+        // (con una zona sola si usa quella: js/flow.js, provinceChoice). L'invalidità scrive all'INPS: nessuna zona.
+        const chiedeZona = zone.length > 1 && ['cartella-clinica', ...LETTERA_AZIENDA].includes(m);
+        await percorri({ r, a, m, zona: zone[0] || null, chiedeZona });
+        if (percorsi[m]) await percorri({ r, a, m, zona: zone[zone.length - 1] || null, finoAllaLettera: true, chiedeZona });
       }
     }
 
