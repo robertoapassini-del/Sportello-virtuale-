@@ -24,7 +24,8 @@ jobs:
       - run: npm install --no-save --no-package-lock playwright@1.49.1
       - run: npx playwright install --with-deps chromium
       # pdfinfo e pdftotext per tests/lettere-stampa.cjs (senza, il test conta le pagine nel PDF e legge il testo dal browser).
-      - run: sudo apt-get install -y poppler-utils || echo "senza poppler-utils: lettere-stampa.cjs usa il ripiego"
+      - run: |
+          sudo apt-get install -y poppler-utils || echo "senza poppler-utils: lettere-stampa.cjs usa il ripiego"
       - name: Sito in locale
         run: python3 -m http.server 8080 >/dev/null 2>&1 &
       - run: node tests/browser.cjs http://localhost:8080/

@@ -120,3 +120,4 @@ tutti i controlli verdi.
   4-6 pagine col modulo; frasi spezzate a mano che in stampa lasciavano mozziconi; firma senza il nome; PEC chiesta e mai
   scritta; «dott. dott.», «Distretto – Distretto»; oggetto dell'email INPS senza il nome), in `lettere.test.mjs` PEC, firma,
   una riga per frase, `doctorName()` e `districtLine()`, in `errori-noti.test.mjs` «dott. ${…}» e «Distretto – ${…}».
+- 22/10/2026 (giro 8) — `tests/workflow.test.mjs`: il file della CI con un «: » in un comando su una riga non era YAML valido e la PR restava senza controlli. Dopo ogni push guarda che i controlli siano partiti davvero (una PR senza controlli non è verde).

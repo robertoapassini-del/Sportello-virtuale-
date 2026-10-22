@@ -3,6 +3,7 @@
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
 ## 22/10/2026 — Audit notturno, giro 8: lettere stampate
+- CI (`.github/workflows/test.yml`): un «: » dentro un comando su una riga rendeva il file YAML non valido e GitHub non faceva partire nessun controllo, senza errori visibili. Corretto, e nuovo `tests/workflow.test.mjs` che lo controlla a ogni `npm test`.
 - Stampa sul telefono (`js/common.js`): «Stampa o salva» e «Stampa la guida» toglievano dopo 1 secondo la classe che stampa solo la lettera (o solo la guida). Sul telefono `window.print()` non aspetta: la finestra di stampa arrivava dopo e stampava tutta la pagina, con il modulo e i dati personali. Ora la classe si toglie a «afterprint» o quando cambia la schermata, mai dopo un tempo fisso.
 - Stampa dal menu del browser (Ctrl+P) su una schermata con la lettera: usciva la pagina intera (4-6 fogli, con il modulo dei dati). Ora `js/common.js` segna la lettera della schermata (`letter-screen`, `print-target`) e `css/style.css` stampa solo quella, anche nel sollecito delle liste d'attesa. Sul modulo ufficiale dell'ASP di Palermo c'è il pulsante «Stampa questi dati» e si stampa solo la tabella «Cosa scrivere nel modulo», con il titolo.
 - Lettere (`js/letters.js`): le frasi andavano a capo a mano (es. «…non gli/le è» / «stata proposta…») e in stampa a 12 punti lasciavano mozziconi di riga. Ora ogni paragrafo e ogni punto «- » è una riga sola, senza rientri; le parole sono le stesse.
