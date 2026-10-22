@@ -1,11 +1,11 @@
 {
  "regione": "trentino-alto-adige",
- "aggiornato": "2026-10-21T23:36:05.094Z",
+ "aggiornato": "2026-10-22T02:03:40.716Z",
  "pagine": [
   {
    "asl": "bolzano",
    "url": "https://www.asdaa.it/",
-   "controllata": "2026-10-21",
+   "controllata": "2026-10-22",
    "http": 200,
    "finale": "https://www.asdaa.it/it",
    "file": "bolzano/a77b7ff470b2.txt",
@@ -17,19 +17,19 @@
   {
    "asl": "bolzano",
    "url": "https://home.sabes.it/it/prenotazione-me.asp",
-   "controllata": "2026-10-21",
+   "controllata": "2026-10-22",
    "http": 503
   },
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/servizi.asp",
-   "controllata": "2026-10-21",
+   "controllata": "2026-10-22",
    "http": 503
   },
   {
    "asl": "trento",
    "url": "https://www.asuit.tn.it/",
-   "controllata": "2026-10-21",
+   "controllata": "2026-10-22",
    "http": 200,
    "file": "trento/731021dc4745.txt",
    "titolo": "Homepage | ASUIT Trento",
@@ -40,7 +40,7 @@
   {
    "asl": "trento",
    "url": "https://www.asuit.tn.it/servizi/continuita-assistenziale-ex-guardia-medica",
-   "controllata": "2026-10-21",
+   "controllata": "2026-10-22",
    "http": 200,
    "file": "trento/d01ebfbb01ff.txt",
    "titolo": "Continuità assistenziale (ex guardia medica) | ASUIT Trento",
@@ -51,7 +51,7 @@
   {
    "asl": "trento",
    "url": "https://www.asuit.tn.it/servizi/punto-unico-di-accesso-pua",
-   "controllata": "2026-10-21",
+   "controllata": "2026-10-22",
    "http": 200,
    "file": "trento/080a714b1d36.txt",
    "titolo": "Punto unico di accesso PUA | ASUIT Trento",
@@ -62,7 +62,7 @@
   {
    "asl": "trento",
    "url": "https://www.asuit.tn.it/servizi/prenotazione-visite-specialistiche-ed-esami-di-diagnostica",
-   "controllata": "2026-10-21",
+   "controllata": "2026-10-22",
    "http": 200,
    "file": "trento/43bdb1c702e9.txt",
    "titolo": "Prenotazione visite specialistiche ed esami di diagnostica | ASUIT Trento",
@@ -73,7 +73,7 @@
   {
    "asl": "trento",
    "url": "https://asuit.tn.it/servizi/segnalazioni-commissione-mista-conciliativa-cmc",
-   "controllata": "2026-10-21",
+   "controllata": "2026-10-22",
    "http": 200,
    "file": "trento/1ad777cff7f6.txt",
    "titolo": "Segnalazioni - Commissione mista conciliativa (Cmc) | ASUIT Trento",
@@ -84,24 +84,24 @@
   {
    "asl": "inps-trentino-alto-adige",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.140000.140000-elencoStruttureInps.html",
-   "controllata": "2026-10-21",
+   "controllata": "2026-10-22",
    "http": 200,
    "file": "inps-trentino-alto-adige/a69e8cd675ec.txt",
    "titolo": "Portale Inps - Bolzano",
    "sha": "ff3667c7221231c79f60956926c5f48661733eb3c4dcc8c6ce8de916b758c777",
    "caratteri": 43573,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "inps-trentino-alto-adige",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.830000.830000-elencoStruttureInps.html",
-   "controllata": "2026-10-21",
+   "controllata": "2026-10-22",
    "http": 200,
    "file": "inps-trentino-alto-adige/5f9dac6f2002.txt",
    "titolo": "Portale Inps - Trento",
    "sha": "7e44ae0f1ea42ff7d56f68c5b3b74be8d529ac5d45945116a1ea118a2be47378",
    "caratteri": 43405,
-   "cambiata": true
+   "cambiata": false
   }
  ]
 }
