@@ -1,6 +1,6 @@
 {
  "regione": "trentino-alto-adige",
- "aggiornato": "2026-10-22T10:22:40.975Z",
+ "aggiornato": "2026-10-22T12:03:45.155Z",
  "pagine": [
   {
    "asl": "bolzano",
@@ -11,51 +11,38 @@
    "finale": "https://www.asdaa.it/it/home",
    "file": "bolzano/a77b7ff470b2.txt",
    "titolo": "Azienda Sanitaria dell'Alto Adige",
-   "sha": "223485cd0e858152886470616454a78b625fc3527184a55a069074362ebefc65",
-   "caratteri": 22796,
-   "cambiata": false
+   "sha": "0a33ee5e969bce7eb9d7b425c1139c7eea975803642b62305d9de55ca1940fcb",
+   "caratteri": 22971,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
    "url": "https://home.sabes.it/it/comprensori-sanitari/merano/3026.asp",
    "controllata": "2026-10-22",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 503
   },
   {
    "asl": "bolzano",
    "url": "https://home.sabes.it/it/prenotazione-me.asp",
    "controllata": "2026-10-22",
-   "http": 200,
-   "file": "bolzano/3eb4ebd291fc.txt",
-   "titolo": "Prenotazione | Azienda Sanitaria dell'Alto Adige",
-   "sha": "05ff7201f7b12e094c1b11e4feebf3363f00d4ab73cdbf1be189792578d66fb8",
-   "caratteri": 9264,
-   "cambiata": false
+   "http": 503
   },
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/servizi.asp",
    "controllata": "2026-10-22",
-   "http": 200,
-   "file": "bolzano/436fa81472bf.txt",
-   "titolo": "Servizi | Azienda Sanitaria dell'Alto Adige",
-   "sha": "1391d906e7a71ff2c37d1866915a13f8a9365fe89fa9486b75ac1658dc9b7bd3",
-   "caratteri": 6993,
-   "cambiata": false
+   "http": 503
   },
   {
    "asl": "bolzano",
    "url": "https://www.asdaa.it/it/default.asp",
    "controllata": "2026-10-22",
-   "browser": true,
    "http": 200,
-   "finale": "https://www.asdaa.it/it/home",
    "file": "bolzano/9e045b839f76.txt",
-   "titolo": "Azienda Sanitaria dell'Alto Adige",
-   "sha": "223485cd0e858152886470616454a78b625fc3527184a55a069074362ebefc65",
-   "caratteri": 22796,
-   "cambiata": false
+   "titolo": "Südtiroler Sanitätsbetrieb",
+   "sha": "392d4be341b5601bf3ac0de4fb35ecc68611c7c9a2e451ea79d9bec90721e5ed",
+   "caratteri": 38,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
@@ -109,13 +96,7 @@
    "asl": "bolzano",
    "url": "https://home.asdaa.it/m/it/contatti.asp",
    "controllata": "2026-10-22",
-   "http": 200,
-   "finale": "https://home.asdaa.it/ricerca/ricerca.asp?404;m/it/contatti.asp",
-   "file": "bolzano/0374f6fa570c.txt",
-   "titolo": "Cerca | Azienda Sanitaria dell'Alto Adige",
-   "sha": "29f6e726c6a96a355d66b1de50e9c9134becbb28db6fbe72d4919d89929834d0",
-   "caratteri": 6973,
-   "cambiata": true
+   "http": 503
   },
   {
    "asl": "bolzano",
@@ -153,7 +134,7 @@
    "titolo": "Ospedali | Azienda Sanitaria dell’Alto Adige",
    "sha": "b12403b91ca8df4132a55a626aca024f6e17ca3885c42a3d3e1e3e28e5755bbb",
    "caratteri": 19997,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -178,7 +159,7 @@
    "titolo": "Servizio di Medicina di base | Comprensorio Bolzano",
    "sha": "e8836091903d28884335bc7cb510f6e122ba99abf14c44abf959feb22a8d820c",
    "caratteri": 31049,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -215,7 +196,7 @@
    "titolo": "Servizio infermieristico | Azienda Sanitaria dell'Alto Adige",
    "sha": "63e2879d3d25cb6dbc1c59c0b1221e0fa551588ba75db555e10884ce450c7123",
    "caratteri": 8725,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -303,7 +284,7 @@
    "titolo": "Prevenzione e salute | Azienda Sanitaria dell'Alto Adige",
    "sha": "4a5c682adb8e5fa06ec37f92f6309af07a12aca6dfe4f79be3844468fd6abdb1",
    "caratteri": 21924,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -316,7 +297,7 @@
    "titolo": "I servizi in myCIVIS - Azienda Sanitaria dell'Alto Adige",
    "sha": "3874cdd528ca7ed96ffddcb16ebaa2dea86f887e1c76acf5c8c0c3a7396e228e",
    "caratteri": 22337,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -329,7 +310,7 @@
    "titolo": "I servizi in myCIVIS - Azienda Sanitaria dell'Alto Adige",
    "sha": "3715ead6c825be6505839550609d5efe05d0ec2684068e965f6397a8aeb8cc6d",
    "caratteri": 22336,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -713,7 +694,7 @@
    "titolo": "Individuate le 9 province per sperimentare la riforma disabilità",
    "sha": "66d7f89ba67266ce1fbe7b9c0bd75ddc1bafe70d3840008c45b807ba3eec62df",
    "caratteri": 2377,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "inps-trentino-alto-adige",
@@ -724,7 +705,7 @@
    "titolo": "Individuate le altre 11 province per la sperimentazione della riforma della disabilità",
    "sha": "616ce11d934ce0494cb840068dd03f5db47a39190acf5cec1e6929cf5cf8ca02",
    "caratteri": 2423,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "inps-trentino-alto-adige",
@@ -735,7 +716,7 @@
    "titolo": "Al via sperimentazione riforma disabilità in altre 40 province",
    "sha": "4ec5a460fb50b2e4f8c1006136eb2184acf64b45b3b190e378501ad4c004e6e3",
    "caratteri": 3002,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "inps-trentino-alto-adige",
@@ -746,7 +727,7 @@
    "titolo": "Portale Inps - Riforma della disabilità: al via la terza fase sperimentale",
    "sha": "3e22d1cf04da5a9b152d4fd5f6033e4b4b86d0937bfc137d142d7c9ec25bd108",
    "caratteri": 46281,
-   "cambiata": true
+   "cambiata": false
   }
  ]
 }

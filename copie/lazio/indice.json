@@ -1,6 +1,6 @@
 {
  "regione": "lazio",
- "aggiornato": "2026-10-22T09:20:46.283Z",
+ "aggiornato": "2026-10-22T11:07:16.176Z",
  "pagine": [
   {
    "asl": "frosinone",
@@ -12,7 +12,7 @@
    "titolo": "ASL Frosinone",
    "sha": "3c29b9f1177768909ad0d12141b638da754b10274115545ea645eb75c6b461dc",
    "caratteri": 13748,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "frosinone",
@@ -115,7 +115,7 @@
    "titolo": "Contatti",
    "sha": "f172882be9cc26e2819b4f01b1104bcdd9b95624eb6df28a80a19039d5fa06ad",
    "caratteri": 3960,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -204,7 +204,7 @@
    "titolo": "Contatti – ASL Rieti",
    "sha": "9ea18dabd3c4f578441c4ef66c3d8d396c6b3bcd07a2c2661c5b62da9a3f6afb",
    "caratteri": 10993,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "rieti",
@@ -269,7 +269,7 @@
    "finale": "https://salutelazio.it/it",
    "file": "roma/753559e36904.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "5cf4d2374d8d906aca0a2dd69e46c02b41d8f5adf5aa5a732584694f9372105d",
+   "sha": "6f6187cd7268d56075b198f3561020d42f09aa3d6b8aeb9c8051ba6b63732997",
    "caratteri": 4010,
    "cambiata": true
   },
@@ -292,7 +292,7 @@
    "http": 200,
    "file": "roma/e0d930024e6e.txt",
    "titolo": "Punto Unico di Accesso (PUA)",
-   "sha": "cb695f5e74144355c5e9267f8591025ec31307613d8edc247b61ef0a791d4457",
+   "sha": "4cd670fdb6ac64e9afc5d7836beb2acebdea52100916cf4009ef506e53f593ab",
    "caratteri": 22475,
    "cambiata": true
   },
@@ -305,19 +305,14 @@
    "titolo": "Contatti",
    "sha": "e018c8d103661d230a3f39c739c3ed5357b0de95515f3581e405e9f2f19eb9a4",
    "caratteri": 16417,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
    "url": "https://www.aslroma3.it/servizio-prenotazioni",
    "controllata": "2026-10-22",
-   "http": 200,
-   "finale": "https://www.aslroma3.it/servizio-prenotazioni/",
-   "file": "roma/970ecccf7d85.txt",
-   "titolo": "Servizio Prenotazioni ASL ROMA 3",
-   "sha": "30309b5e173dff51c2ace40ae2de0ef292f29adf71567d5335acd7318a30d987",
-   "caratteri": 1383,
-   "cambiata": true
+   "http": 0,
+   "errore": "curl: (56) Failure when receiving data from the peer"
   },
   {
    "asl": "roma",
@@ -328,7 +323,7 @@
    "titolo": "Contatti - ASL ROMA 4",
    "sha": "871f66ac4fb25d88872784b79b23b368d697e032af4d26fffedaa5249ae7448d",
    "caratteri": 2425,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -367,12 +362,8 @@
    "asl": "roma",
    "url": "https://www.aslroma3.it/urp/",
    "controllata": "2026-10-22",
-   "http": 200,
-   "file": "roma/2d834cda3719.txt",
-   "titolo": "Urp - Asl Roma 3",
-   "sha": "7d4a1717a1552caaeb7921e47ffa63958c6b893cedb8426c766205a16d07fb05",
-   "caratteri": 9740,
-   "cambiata": false
+   "http": 0,
+   "errore": "curl: (56) Failure when receiving data from the peer"
   },
   {
    "asl": "roma",
@@ -403,7 +394,7 @@
    "http": 200,
    "file": "roma/2b46e5d8fe38.txt",
    "titolo": "ASL Roma 2 - Punto Unico di Accesso - PUA",
-   "sha": "11a434a4920d7e3b2cab2034299b95dd35242da5235b997f82196d46c242eb75",
+   "sha": "75b1a46a45fcd80454cc8e76c87953be2c9a165f8e003dda7413230112594f15",
    "caratteri": 11883,
    "email_nascoste": 11,
    "cambiata": true
@@ -439,7 +430,7 @@
    "titolo": "P.U.A. (punto unico di accesso) – Casa della Comunità Tivoli - ASL ROMA 5",
    "sha": "c7f65b6dac600923ebe85fc7d1e14b1941ca51f3b21840dc9d385023501c8e69",
    "caratteri": 10194,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -470,7 +461,7 @@
    "http": 200,
    "file": "roma/7e7cbafb32a1.txt",
    "titolo": "15.04.05 Liste di attesa",
-   "sha": "eda7126910a47d974a0a7447c5e1775211da762c9504d51ed5e827921c5ab0c5",
+   "sha": "456adc98f0a4bfdf5a9f88a752aeebce0023abf7d078faf450205832bb736612",
    "caratteri": 8673,
    "cambiata": true
   },
@@ -478,12 +469,8 @@
    "asl": "roma",
    "url": "https://www.aslroma3.it/amministrazione-trasparente/liste-attesa-new/",
    "controllata": "2026-10-22",
-   "http": 200,
-   "file": "roma/17a23a5b9772.txt",
-   "titolo": "Liste di attesa - Asl Roma 3",
-   "sha": "bf771267dc856cf88e9e0ca3fc75c0bd1ea8ebc05ec6546782ecb108054345ce",
-   "caratteri": 10145,
-   "cambiata": false
+   "http": 0,
+   "errore": "curl: (56) Failure when receiving data from the peer"
   },
   {
    "asl": "roma",
@@ -505,7 +492,7 @@
    "titolo": "Percorso di garanzia nella Regione Lazio - ASL ROMA 5",
    "sha": "afeaad0d11be8879fa070cad8344f033f6889280d4a24c4318e701109f89841f",
    "caratteri": 11293,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "viterbo",
@@ -603,7 +590,7 @@
    "http": 200,
    "file": "viterbo/1b6a08522663.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "25015c5b43a61366d98477466f983899fc94941dc880c12de5946d252a06aee3",
+   "sha": "ce21a63b1dc01e21429e11f4a4d7d3560e05c4c5a8985260c2c21f06b0be1818",
    "caratteri": 4170,
    "cambiata": true
   },
@@ -671,7 +658,7 @@
    "titolo": "Al via sperimentazione riforma disabilità in altre 40 province",
    "sha": "4ec5a460fb50b2e4f8c1006136eb2184acf64b45b3b190e378501ad4c004e6e3",
    "caratteri": 3002,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "inps-lazio",
@@ -682,7 +669,7 @@
    "titolo": "Portale Inps - Riforma della disabilità: al via la terza fase sperimentale",
    "sha": "3e22d1cf04da5a9b152d4fd5f6033e4b4b86d0937bfc137d142d7c9ec25bd108",
    "caratteri": 46281,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-lazio",
@@ -693,7 +680,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "02d38f89cd647027e85a881251f40376d3cb428c2798d2e48d8debc95797e93e",
    "caratteri": 2796,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-lazio",
@@ -704,7 +691,7 @@
    "titolo": "| Regione Lazio | Sanità, attivo in tutto il Lazio l'116117 per le cure mediche non urgenti",
    "sha": "fde507c28359f0f536e41c14f18b5f6d438d8289577dba1f9ebae4a197136458",
    "caratteri": 9372,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-lazio",
@@ -715,7 +702,7 @@
    "titolo": "116117 – Il numero unico europeo per cure non urgenti - Curalazio",
    "sha": "ce65efb5214c103ed2c6e9509932bff56596d33c0cd3b3dfaaa6ed5aec86dcac",
    "caratteri": 3188,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-lazio",
@@ -726,7 +713,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "4a15186e6901930c738ce3a6727f617316791c9f8343ddacbd4f7120b1c73453",
    "caratteri": 2103,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-lazio",
@@ -737,7 +724,7 @@
    "titolo": "| Regione Lazio | CITTADINI-SALUTE",
    "sha": "6f3258ef58d9fd8bf00f24ed756617afd77c5ac0e597d48e84ca2f33baeb4de2",
    "caratteri": 7942,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-lazio",
@@ -746,7 +733,7 @@
    "http": 200,
    "file": "regione-lazio/652b256db893.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "6f6187cd7268d56075b198f3561020d42f09aa3d6b8aeb9c8051ba6b63732997",
+   "sha": "f13c9eeb4924a61ff758ef61496e0efa7bdc4b642b901535cb8689a074e2f47e",
    "caratteri": 4010,
    "cambiata": true
   },
@@ -759,7 +746,7 @@
    "titolo": "| Regione Lazio | Fascicolo Sanitario Elettronico, parte la campagna di comunicazione",
    "sha": "886c326ed1efb40bd2a6a32fd49eced980e4a380165e8787fc5c967da741677d",
    "caratteri": 9994,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-lazio",
@@ -770,7 +757,7 @@
    "titolo": "| Regione Lazio | URP-RETE DEGLI URP",
    "sha": "697e039bce7dc3ac40eb8547d3f8866346ea0760d02db9eaa55224a442593068",
    "caratteri": 10965,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma1",
@@ -782,7 +769,7 @@
    "titolo": "ASL Roma 1",
    "sha": "e0da05ce06925246d75044c239d48afa8222047b80e6b428a61d3dc94bee1cd9",
    "caratteri": 17261,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma1",
@@ -793,7 +780,7 @@
    "titolo": "Sportelli CUP",
    "sha": "e1df4c5896ff1ba3c552ebc70c60fe2c11685b92574729c068bf20a691de2e0c",
    "caratteri": 26108,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma1",
@@ -804,7 +791,7 @@
    "titolo": "Prenotazioni visite ed esami",
    "sha": "05f1dab15af91434391de4e9d7ac3bd8bfb36ac78e2b1ccb3d39d8204a2dfe77",
    "caratteri": 66649,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma1",
@@ -815,7 +802,7 @@
    "titolo": "Guardia Medica – Continuità Assistenziale",
    "sha": "702d201af9bb6d40445199f5d37a6edcbfc1769a79d8c13296387d90c93758a9",
    "caratteri": 17901,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma1",
@@ -826,7 +813,7 @@
    "titolo": "Assistenza Domiciliare",
    "sha": "ed0109d387630c8ce288e2831bb35be4a4d5d585450658b0aad8a9af7855383a",
    "caratteri": 21729,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma2",
@@ -838,7 +825,7 @@
    "titolo": "ASL Roma 2 - Home",
    "sha": "aa670a4fdf275553b7ad6e7759d65aa0fde71288e61ea024ba9059012cf2b85c",
    "caratteri": 7516,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma2",
@@ -849,7 +836,7 @@
    "titolo": "CUP - Sportelli Polifunzionali",
    "sha": "69e74218cf3738024c3d0be9cfda89465ea37e3c71cce747498fe6202e98aace",
    "caratteri": 13815,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma2",
@@ -858,7 +845,7 @@
    "http": 200,
    "file": "asl-roma2/2e0f163ef6a3.txt",
    "titolo": "ASL Roma 2 - Guardia Medica",
-   "sha": "9636b10aec38d1161b78f73835ab15c3f812da870f78db9a017db2b3128c6f0c",
+   "sha": "629cab9be22b9a0b6bd7d1c29d774105fbcc3832ba322b6a9b4f50055fc4d1a9",
    "caratteri": 8091,
    "cambiata": true
   },
@@ -866,46 +853,29 @@
    "asl": "asl-roma3",
    "url": "https://www.aslroma3.it",
    "controllata": "2026-10-22",
-   "http": 200,
-   "finale": "https://www.aslroma3.it/",
-   "file": "asl-roma3/572f8599edd5.txt",
-   "titolo": "Asl Roma 3",
-   "sha": "b301a517da71699a73275e5e6f4832a0b6521f6dfcd2c3b17a6daa2490038093",
-   "caratteri": 7966,
-   "cambiata": true
+   "http": 0,
+   "errore": "curl: (56) Failure when receiving data from the peer"
   },
   {
    "asl": "asl-roma3",
    "url": "https://www.aslroma3.it/come-fare-per/prenotare-una-visita/",
    "controllata": "2026-10-22",
-   "http": 200,
-   "file": "asl-roma3/09d0e9d04d62.txt",
-   "titolo": "Prenotare una visita - Asl Roma 3",
-   "sha": "5537752781cf9e78f5c8dfc0008ea058111dbfb59fdae6bf48fc440dd3852810",
-   "caratteri": 7486,
-   "cambiata": true
+   "http": 0,
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "asl-roma3",
    "url": "https://www.aslroma3.it/servizi-dalla-a-alla-z/g/guardia-medica/",
    "controllata": "2026-10-22",
-   "http": 200,
-   "file": "asl-roma3/fcd4fcf114ab.txt",
-   "titolo": "Guardia Medica - Asl Roma 3",
-   "sha": "f74c3b9a960402db2a3202562b1172dc9c7c86e239b1ffeec9340cfc80850f78",
-   "caratteri": 9998,
-   "cambiata": true
+   "http": 0,
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "asl-roma3",
    "url": "https://www.aslroma3.it/assistenza-domiciliare/",
    "controllata": "2026-10-22",
-   "http": 200,
-   "file": "asl-roma3/fd663f62e3c1.txt",
-   "titolo": "Assistenza domiciliare - Asl Roma 3",
-   "sha": "01ddb3ce0977529c9dc4c3aa0b3c4b2dd70505886c06975f6bacbf2d835ad138",
-   "caratteri": 15414,
-   "cambiata": true
+   "http": 0,
+   "errore": "curl: (56) Failure when receiving data from the peer"
   },
   {
    "asl": "asl-roma4",
@@ -917,7 +887,7 @@
    "titolo": "Azienda sanitaria locale - ASL ROMA 4",
    "sha": "39b68af0f21923f33dadcba03a1571674710fe53b86670e2e638b636cf65b5ef",
    "caratteri": 6604,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma4",
@@ -928,7 +898,7 @@
    "titolo": "Come fare per prenotare una visita - ASL ROMA 4",
    "sha": "33ea3b13b4dca542ba079a1c17a798ca046c026ab824164536028bafbabfc114",
    "caratteri": 8686,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma4",
@@ -939,7 +909,7 @@
    "titolo": "Cure Domiciliari - ASL ROMA 4",
    "sha": "40154ce832031b67d052169c05326d71c4e228866b370c47ac489e0d3131e63d",
    "caratteri": 5062,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma5",
@@ -951,7 +921,7 @@
    "titolo": "Home - ASL ROMA 5",
    "sha": "ed02cbb0ff51e4ada23d8915980c0927b20ae8afc3161cdb3894daa9a9b1df46",
    "caratteri": 15372,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma5",
@@ -962,7 +932,7 @@
    "titolo": "URP e Comunicazione - ASL ROMA 5",
    "sha": "49006b0d6cab7f6a687f4ec2fdd023694a87e2a050680e41deccf30cd74722a6",
    "caratteri": 14048,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma5",
@@ -973,7 +943,7 @@
    "titolo": "Telefono e posta elettronica - ASL ROMA 5",
    "sha": "75347343228d12bd487ccf106143339449d34ab79e3fedff02beaa34788de0f2",
    "caratteri": 18414,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma5",
@@ -984,7 +954,7 @@
    "titolo": "CUP - Centro unico di prenotazione - ASL ROMA 5",
    "sha": "56a9339914fc709b11bff935df64a8d59e07a90dcaf2b4acc5181c88ed41878e",
    "caratteri": 18756,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma5",
@@ -995,7 +965,7 @@
    "titolo": "FAQ - Domande frequenti - ASL ROMA 5",
    "sha": "9af35ea4a486ede23072e89a397106e9bce69a7ae63ad0be2ff62c0bfe70078e",
    "caratteri": 22170,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma6",
@@ -1007,7 +977,7 @@
    "titolo": "Home - ASL Roma 6",
    "sha": "db1c37efbdc2d96db07a0e7ca8368dcf77adf0cde54dfe434a6766b5b477454e",
    "caratteri": 6335,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma6",
@@ -1018,7 +988,7 @@
    "titolo": "Sportelli CUP - ASL Roma 6",
    "sha": "5502655b30b982e45c755cfc15ce516ff58feb03d3f99948c1aeb0e05cdf42af",
    "caratteri": 7638,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma6",
@@ -1029,7 +999,7 @@
    "titolo": "Continuità Assistenziale - ASL Roma 6",
    "sha": "f8b6d13ddf930af1678dcf0e0ffd76435642346b011f5d6303224ba07ec86378",
    "caratteri": 10428,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma6",
@@ -1040,7 +1010,7 @@
    "titolo": "Punto Unico di Accesso (PUA) - ASL Roma 6",
    "sha": "fd039fdb7fbf8b489fcc7c168182cf10008ca16ae6073ccbcfc1e6068b814b92",
    "caratteri": 4253,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma6",
@@ -1051,7 +1021,7 @@
    "titolo": "Assistenza domiciliare - ASL Roma 6",
    "sha": "f204203b1eec40dc0f60eb06b0ba0b88b9627db0782f03c9b9b71f3b14bd7fe0",
    "caratteri": 7809,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-frosinone",
@@ -1064,7 +1034,7 @@
    "titolo": "ASL Frosinone",
    "sha": "3c29b9f1177768909ad0d12141b638da754b10274115545ea645eb75c6b461dc",
    "caratteri": 13748,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-frosinone",
@@ -1076,7 +1046,7 @@
    "titolo": "ReCUP Aziendale | ASL Frosinone",
    "sha": "3fd2e0057b3bd53054ba63bf77c972f609c97f5e8158d7a0f1f591755abff029",
    "caratteri": 12453,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-frosinone",
@@ -1088,7 +1058,7 @@
    "titolo": "Distretti Sanitari | ASL Frosinone",
    "sha": "734a1cf6e89c7f53af4f028fedf234573b32c157f831e3a5769ebe2e7b06e8e8",
    "caratteri": 22220,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-latina",
@@ -1100,7 +1070,7 @@
    "titolo": "Home",
    "sha": "3e2804757fc9db2de6f9da5a3d02d07077fa22e2e32b38262cb7c77c15f27962",
    "caratteri": 8067,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-latina",
@@ -1111,7 +1081,7 @@
    "titolo": "Guardia Medica",
    "sha": "2bf2483173fd337b6db209af7aef0d92efa7f099eaee92a4090e646ffac52847",
    "caratteri": 7454,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-latina",
@@ -1122,7 +1092,7 @@
    "titolo": "PUA",
    "sha": "712a328154bfb2b88f6a30489b18a573436b30d3fef246c8dbcf529448fd5bf2",
    "caratteri": 4482,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-latina",
@@ -1133,7 +1103,7 @@
    "titolo": "Assistenza domiciliare",
    "sha": "3d72883708e7e248edc2bf9fe055f694419420c6dd3370de375e71a23efbf1a9",
    "caratteri": 6416,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-rieti",
@@ -1145,7 +1115,7 @@
    "titolo": "HomePage – ASL Rieti",
    "sha": "c778db359b150d6f6fbc95eb01a65828a251cf025cb95f1f2d5d1fdb3832bc53",
    "caratteri": 13134,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-rieti",
@@ -1157,7 +1127,7 @@
    "titolo": "URP - Ufficio Relazioni con il Pubblico – ASL Rieti",
    "sha": "f96f5f1ad2aacb84a8144346e644a8a87f65599c74dacb8ed72b6264bb9008df",
    "caratteri": 16539,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-rieti",
@@ -1174,7 +1144,7 @@
    "titolo": "Guardia Medica – ASL Rieti",
    "sha": "48a4500db18946ad369ff5bbdc0221294ae54357815067b4c0d9a74e34eb9770",
    "caratteri": 16034,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-rieti",
@@ -1192,7 +1162,7 @@
    "titolo": "Home - ASL VITERBO",
    "sha": "ce86f0941baadf4e5fe2986c2f4f80069ac1afd5f9a1ccdbd655a028379de5b7",
    "caratteri": 10308,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-viterbo",
@@ -1203,7 +1173,7 @@
    "titolo": "ASL Viterbo - Prenotazione visite ed esami - ASL VITERBO",
    "sha": "484d0b756d59d1ef3b73359a3582f7dd9e90d05d3b6d96fb5c3e9103497910c0",
    "caratteri": 7193,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-viterbo",
@@ -1214,7 +1184,7 @@
    "titolo": "ASL Viterbo - Servizio di Guardia Medica - ASL VITERBO",
    "sha": "4668b12a03ede8c056cd541411d65f0abd047e41f2853b5444cffc252d06e02d",
    "caratteri": 8146,
-   "cambiata": true
+   "cambiata": false
   }
  ]
 }
