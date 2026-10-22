@@ -1,19 +1,27 @@
 {
  "region": "Toscana",
- "last_verified": "2026-10-21",
- "note": "Indirizzi e PEC delle sedi INPS dalle pagine «sedi» di inps.it, copiate il 21/10/2026 dal server in Italia. Per andare allo sportello si prenota (MyINPS, app, 803 164 / 06 164164). regime (riforma della disabilità) da verificare: finché è null il modulo invalidità non va attivato per questa regione.",
+ "last_verified": "2026-10-22",
+ "note": "Indirizzi e PEC delle sedi INPS dalle pagine «sedi» di inps.it, copiate il 21/10/2026 dal server in Italia. Per andare allo sportello si prenota (MyINPS, app, 803 164 / 06 164164). regime (riforma della disabilità): province della sperimentazione dall'INPS e dal Dipartimento per le politiche in favore delle persone con disabilità (estratti del 22/10/2026, gli stessi usati per la Sicilia): fase 1 dal 01/01/2025 (tra cui Firenze e Forlì-Cesena), fase 2 dal 30/09/2025 (tra cui Genova), fase 3 dal 01/03/2026 (40 province, tra cui Arezzo, Massa-Carrara, Bologna, Piacenza, Ravenna, Rimini, La Spezia e Savona). Le altre province restano con la vecchia procedura fino al 31/12/2026.",
  "sources": [
   {
    "label": "INPS – sedi e contatti in Toscana",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.050000.050000-elencoStruttureInps.html"
+  },
+  {
+   "label": "INPS – Riforma della disabilità: al via la terza fase sperimentale (province dal 01/03/2026)",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html"
+  },
+  {
+   "label": "Dipartimento per le politiche in favore delle persone con disabilità – province della sperimentazione",
+   "url": "https://www.disabilita.governo.it/it/notizie/al-via-sperimentazione-riforma-disabilita-in-altre-40-province/"
   }
  ],
  "provinces": [
   {
    "id": "arezzo",
    "name": "Arezzo",
-   "regime": null,
-   "regime_since": null,
+   "regime": "new",
+   "regime_since": "2026-03-01",
    "pec": "direzione.provinciale.arezzo@postacert.inps.gov.it",
    "address": "Viale Luca Signorelli 20, Arezzo",
    "status": "ok",
@@ -25,8 +33,8 @@
   {
    "id": "firenze",
    "name": "Firenze",
-   "regime": null,
-   "regime_since": null,
+   "regime": "new",
+   "regime_since": "2025-01-01",
    "pec": "direzione.provinciale.firenze@postacert.inps.gov.it",
    "address": "Viale Belfiore 28/A, Firenze",
    "status": "ok",
@@ -38,7 +46,7 @@
   {
    "id": "grosseto",
    "name": "Grosseto",
-   "regime": null,
+   "regime": "old",
    "regime_since": null,
    "pec": "direzione.provinciale.grosseto@postacert.inps.gov.it",
    "address": "Via Trento, 44, Grosseto",
@@ -51,7 +59,7 @@
   {
    "id": "livorno",
    "name": "Livorno",
-   "regime": null,
+   "regime": "old",
    "regime_since": null,
    "pec": "direzione.provinciale.livorno@postacert.inps.gov.it",
    "address": "Via Tacca 1, Livorno",
@@ -64,7 +72,7 @@
   {
    "id": "lucca",
    "name": "Lucca",
-   "regime": null,
+   "regime": "old",
    "regime_since": null,
    "pec": "direzione.provinciale.lucca@postacert.inps.gov.it",
    "address": "Piazza Martiri Della Libertà 65, Lucca",
@@ -77,8 +85,8 @@
   {
    "id": "massa-carrara",
    "name": "Massa Carrara",
-   "regime": null,
-   "regime_since": null,
+   "regime": "new",
+   "regime_since": "2026-03-01",
    "pec": "direzione.provinciale.massacarrara@postacert.inps.gov.it",
    "address": "Via Don Minzoni 1, Carrara",
    "status": "ok",
@@ -90,7 +98,7 @@
   {
    "id": "pisa",
    "name": "Pisa",
-   "regime": null,
+   "regime": "old",
    "regime_since": null,
    "pec": "direzione.provinciale.pisa@postacert.inps.gov.it",
    "address": "Piazza Guerrazzi 17, Pisa",
@@ -103,7 +111,7 @@
   {
    "id": "pistoia",
    "name": "Pistoia",
-   "regime": null,
+   "regime": "old",
    "regime_since": null,
    "pec": "direzione.provinciale.pistoia@postacert.inps.gov.it",
    "address": "Viale Adua 123, Pistoia",
@@ -116,7 +124,7 @@
   {
    "id": "prato",
    "name": "Prato",
-   "regime": null,
+   "regime": "old",
    "regime_since": null,
    "pec": "direzione.provinciale.prato@postacert.inps.gov.it",
    "address": "Via Valentini 1/B, Prato",
@@ -129,7 +137,7 @@
   {
    "id": "siena",
    "name": "Siena",
-   "regime": null,
+   "regime": "old",
    "regime_since": null,
    "pec": "direzione.provinciale.siena@postacert.inps.gov.it",
    "address": "Via Lippo Memmi 2, Siena",
@@ -141,6 +149,6 @@
   }
  ],
  "todo": [
-  "Riforma della disabilità: verificare quali province sono nella sperimentazione e da quando (campo regime)."
+  "Riforma della disabilità (22/10/2026): elenco delle province letto solo negli estratti del motore di ricerca (pagine INPS e disabilita.governo.it, che dall'estero non si aprono). La pagina INPS è tra quelle da copiare (pagine della prima azienda in asl.json): quando c'è la copia, rileggere l'elenco e portare la prova a «pagina»."
  ]
 }
