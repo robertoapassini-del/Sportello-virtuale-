@@ -1,0 +1,123 @@
+{
+ "region": "Veneto",
+ "last_verified": "2026-10-22",
+ "note": "Indirizzi e PEC delle sedi INPS dalle pagine «sedi» di inps.it, copiate il 22/10/2026 dal server in Italia. Per andare allo sportello si prenota (MyINPS, app, 803 164 / 06 164164). Riforma della disabilità (campo regime), controllata il 22/10/2026 sugli estratti delle notizie INPS e del Dipartimento per la disabilità: nessuna provincia della regione nella prima fase (dal 01/01/2025); dal 30/09/2025 Vicenza (seconda fase); dal 01/03/2026 Treviso, Venezia e Verona (terza fase, 40 province). Le altre province restano col sistema vecchio fino al 31/12/2026; dal 01/01/2027 vale ovunque il nuovo.",
+ "sources": [
+  {
+   "label": "INPS – sede di Venezia",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.880000.880000-elencoStruttureInps.html"
+  },
+  {
+   "label": "Dipartimento per le politiche in favore delle persone con disabilità – le prime 9 province della sperimentazione",
+   "url": "https://www.disabilita.governo.it/it/notizie/individuate-le-9-province-per-sperimentare-la-riforma-disabilita/"
+  },
+  {
+   "label": "Dipartimento per le politiche in favore delle persone con disabilità – altre 11 province (dal 30/09/2025)",
+   "url": "https://www.disabilita.governo.it/it/notizie/individuate-le-altre-11-province-per-la-sperimentazione-della-riforma-della-disabilita/"
+  },
+  {
+   "label": "Dipartimento per le politiche in favore delle persone con disabilità – altre 40 province (dal 01/03/2026)",
+   "url": "https://www.disabilita.governo.it/it/notizie/al-via-sperimentazione-riforma-disabilita-in-altre-40-province/"
+  },
+  {
+   "label": "INPS – Riforma della disabilità: al via la terza fase sperimentale",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html"
+  }
+ ],
+ "provinces": [
+  {
+   "id": "belluno",
+   "name": "Belluno",
+   "regime": "old",
+   "regime_since": null,
+   "pec": "direzione.provinciale.belluno@postacert.inps.gov.it",
+   "address": "Viale Fantuzzi 24A, Belluno",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.100000.100000-elencoStruttureInps.html",
+   "verified": "2026-10-22",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "padova",
+   "name": "Padova",
+   "regime": "old",
+   "regime_since": null,
+   "pec": "direzione.provinciale.padova@postacert.inps.gov.it",
+   "address": "Via Delù 3, Padova",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.540000.540000-elencoStruttureInps.html",
+   "verified": "2026-10-22",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "rovigo",
+   "name": "Rovigo",
+   "regime": "old",
+   "regime_since": null,
+   "pec": "direzione.provinciale.rovigo@postacert.inps.gov.it",
+   "address": "Piazza Fratelli Cervi 5, Rovigo",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.710000.710000-elencoStruttureInps.html",
+   "verified": "2026-10-22",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "treviso",
+   "name": "Treviso",
+   "regime": "new",
+   "regime_since": "2026-03-01",
+   "pec": "direzione.provinciale.treviso@postacert.inps.gov.it",
+   "address": "Viale Trento e Trieste 6, Treviso",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.840000.840000-elencoStruttureInps.html",
+   "verified": "2026-10-22",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "venezia",
+   "name": "Venezia",
+   "regime": "new",
+   "regime_since": "2026-03-01",
+   "pec": "direzione.provinciale.venezia@postacert.inps.gov.it",
+   "address": "Sestiere Dorsoduro 3519/I, Venezia",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.880000.880000-elencoStruttureInps.html",
+   "verified": "2026-10-22",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "verona",
+   "name": "Verona",
+   "regime": "new",
+   "regime_since": "2026-03-01",
+   "pec": "direzione.provinciale.verona@postacert.inps.gov.it",
+   "address": "Via Cesare Battisti 19, Verona",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.900000.900000-elencoStruttureInps.html",
+   "verified": "2026-10-22",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "vicenza",
+   "name": "Vicenza",
+   "regime": "new",
+   "regime_since": "2025-09-30",
+   "pec": "direzione.provinciale.vicenza@postacert.inps.gov.it",
+   "address": "Corso Ss. Felice e Fortunato 163, Vicenza",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.910000.910000-elencoStruttureInps.html",
+   "verified": "2026-10-22",
+   "proof": "pagina",
+   "pec_verified": true
+  }
+ ],
+ "todo": [
+  "Regime della riforma della disabilità messo il 22/10/2026 dagli estratti (motore di ricerca) delle pagine disabilita.governo.it e inps.it: i siti non si aprono da qui. Da rileggere per intero sulle pagine e da confermare con una telefonata alla sede (come per la Sicilia)."
+ ]
+}

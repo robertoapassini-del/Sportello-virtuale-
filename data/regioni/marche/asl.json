@@ -1,0 +1,1125 @@
+{
+ "region": "Marche",
+ "model": "AST (Aziende Sanitarie Territoriali)",
+ "_note": "Numeri delle 5 AST delle Marche, una per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 22/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono a Numeri utili; le sedi INPS (inps.json) a Invalidità. Si prenota al CUP regionale (800 098798 da fisso). Nelle Marche il 116117 non è ancora attivo: per la guardia medica solo i numeri trovati nelle copie. «pagine»: indirizzi ufficiali in più che il server deve copiare (tools/copie.mjs).",
+ "asl": [
+  {
+   "id": "pesaro-urbino",
+   "name": "AST Pesaro Urbino (Azienda Sanitaria Territoriale)",
+   "province": "Pesaro e Urbino",
+   "site_url": "https://www.astpu.marche.it/it",
+   "official_domains": [
+    "astpu.marche.it"
+   ],
+   "guardia_medica_url": "https://www.astpu.marche.it/it/strutture/guardia-medica-continuita-assistenziale",
+   "pua_url": "https://www.astpu.marche.it/it/strutture/uffici-amministrativi/punto-unico-di-accesso-pua-pesaro",
+   "emails": [
+    "urp.ast.pu@sanita.marche.it"
+   ],
+   "pec": "ast.pesarourbino@emarche.it",
+   "phones": [
+    {
+     "label": "Centralino dell'AST e dell'ospedale San Salvatore di Pesaro",
+     "number": "0721 3611",
+     "address": "Piazzale Cinelli 1, 61121 Pesaro",
+     "url": "https://www.astpu.marche.it/it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "label": "CUP regionale delle Marche: prenotare visite ed esami da telefono fisso (numero verde, gratis)",
+     "number": "800 098798",
+     "url": "https://www.astpu.marche.it/it/come-fare-per/prenotare-disdire-o-spostare-una-visita-esame-diagnostico",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP regionale delle Marche: prenotare visite ed esami da telefono fisso (numero verde, gratis)",
+     "number": "800 098798",
+     "url": "https://www.astpu.marche.it/it/come-fare-per/prenotare-disdire-o-spostare-una-visita-esame-diagnostico",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP: ufficio per i cittadini, reclami (numero unico)",
+     "number": "0721 362203",
+     "hours": "Dal lunedì al venerdì 8:30–12:30",
+     "address": "Piazzale Cinelli 1, 61121 Pesaro",
+     "url": "https://www.astpu.marche.it/it/organizzazione/ufficio-relazioni-con-il-pubblico",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Punto unico di accesso (PUA) del distretto di Pesaro: cure a casa, aiuto per anziani e disabili",
+     "number": "0721 424746",
+     "hours": "Lunedì, martedì, mercoledì e venerdì dalle 8 alle 9 e dalle 12 alle 13; giovedì dalle 14 alle 16",
+     "url": "https://www.astpu.marche.it/it/strutture/uffici-amministrativi/punto-unico-di-accesso-pua-pesaro",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'AST e dell'ospedale San Salvatore di Pesaro",
+     "number": "0721 3611",
+     "address": "Piazzale Cinelli 1, 61121 Pesaro",
+     "url": "https://www.astpu.marche.it/it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ospedale Santa Croce di Fano",
+     "number": "0721 8821",
+     "address": "Via Vittorio Veneto 2, 61032 Fano",
+     "url": "https://www.astpu.marche.it/it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ospedale di Urbino",
+     "number": "0722 301111",
+     "url": "https://www.astpu.marche.it/it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ospedale di Pergola",
+     "number": "0721 7321",
+     "url": "https://www.astpu.marche.it/it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino del distretto di Fano e Fossombrone",
+     "number": "0721 7211",
+     "url": "https://www.astpu.marche.it/it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino del distretto di Pesaro",
+     "number": "0721 4241",
+     "url": "https://www.astpu.marche.it/it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "AST Pesaro Urbino – Telefono e posta elettronica",
+     "url": "https://www.astpu.marche.it/it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica"
+    },
+    {
+     "label": "AST Pesaro Urbino – URP",
+     "url": "https://www.astpu.marche.it/it/organizzazione/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "label": "AST Pesaro Urbino – Prenotare, disdire o spostare una visita",
+     "url": "https://www.astpu.marche.it/it/come-fare-per/prenotare-disdire-o-spostare-una-visita-esame-diagnostico"
+    },
+    {
+     "label": "AST Pesaro Urbino – PUA di Pesaro",
+     "url": "https://www.astpu.marche.it/it/strutture/uffici-amministrativi/punto-unico-di-accesso-pua-pesaro"
+    }
+   ],
+   "last_verified": "2026-10-22",
+   "todo": [
+    "Guardia medica: la pagina «guardia medica – continuità assistenziale» è copiata senza numeri. Nelle Marche il 116117 non è ancora attivo (c'è solo il progetto della centrale regionale).",
+    "PUA: copiato solo quello di Pesaro; mancano Fano e Urbino.",
+    "CUP: le copie dell'AST Pesaro Urbino danno solo il numero verde regionale 800 098 798; i numeri da cellulare (0721 1779301, 071 9998010) sono nelle pagine delle altre AST."
+   ],
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.astpu.marche.it/it/organizzazione/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.astpu.marche.it/it/organizzazione/uffici-di-staff/urp-e-comunicazione"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.astpu.marche.it/it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.astpu.marche.it/it/strutture/uffici-amministrativi"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.astpu.marche.it/it/come-fare-per/prenotare-disdire-o-spostare-una-visita-esame-diagnostico"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.astpu.marche.it/it/strutture/guardia-medica-continuita-assistenziale"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.astpu.marche.it/it/strutture/uffici-amministrativi/punto-unico-di-accesso-pua-pesaro"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astpu.marche.it/it/utenti/prestatori-di-cura"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astpu.marche.it/it"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astpu.marche.it/come-fare-per/prenotare-disdire-o-spostare-una-visita-esame-diagnostico"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astpu.marche.it/come-fare-per/prenotare-il-prelievo-del-sangue-o-consegnare-il-campione-biologico"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astpu.marche.it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astpu.marche.it/organizzazione/ufficio-relazioni-con-il-pubblico"
+    }
+   ]
+  },
+  {
+   "id": "ancona",
+   "name": "AST Ancona (Azienda Sanitaria Territoriale)",
+   "province": "Ancona",
+   "site_url": "https://www.astancona.marche.it",
+   "official_domains": [
+    "astancona.marche.it"
+   ],
+   "guardia_medica_url": "https://www.astancona.marche.it/it/servizi-e-prestazioni/servizi-territoriali/servizio-di-continuita-assistenziale",
+   "pua_url": "https://www.astancona.marche.it/it/servizi-e-prestazioni/servizi-territoriali/punto-unico-di-accesso-pua",
+   "emails": [
+    "urp.ast.an@sanita.marche.it"
+   ],
+   "pec": "ast.ancona@emarche.it",
+   "phones": [
+    {
+     "label": "Centralino dell'AST Ancona (anche distretto di Ancona e Osimo)",
+     "number": "071 87051",
+     "address": "Via C. Colombo 106, 60127 Ancona",
+     "url": "https://www.astancona.marche.it/it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "label": "CUP regionale delle Marche: prenotare visite ed esami da telefono fisso (numero verde, gratis)",
+     "number": "800 098798",
+     "hours": "Dal lunedì al venerdì 8:00–18:00, sabato 8:00–13:00",
+     "url": "https://www.astancona.marche.it/it/organizzazione/centro-unico-prenotazioni",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP regionale delle Marche: prenotare visite ed esami da telefono fisso (numero verde, gratis)",
+     "number": "800 098798",
+     "hours": "Dal lunedì al venerdì 8:00–18:00, sabato 8:00–13:00",
+     "url": "https://www.astancona.marche.it/it/organizzazione/centro-unico-prenotazioni",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP regionale delle Marche: da cellulare (costa come una chiamata normale)",
+     "number": "0721 1779301",
+     "hours": "Dal lunedì al venerdì 8:00–18:00, sabato 8:00–13:00",
+     "url": "https://www.astancona.marche.it/it/organizzazione/centro-unico-prenotazioni",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP regionale delle Marche: altro numero da fisso o da cellulare",
+     "number": "071 9998010",
+     "hours": "Dal lunedì al venerdì 8:00–18:00, sabato 8:00–13:00",
+     "url": "https://www.astancona.marche.it/it/organizzazione/centro-unico-prenotazioni",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP: ufficio per i cittadini, reclami (numero verde, gratis)",
+     "number": "800 530724",
+     "hours": "Dal lunedì al venerdì 8:30–17:00",
+     "url": "https://www.astancona.marche.it/it/organizzazione/unita-operativa-complessa/comunicazione-formazione-e-urp",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari (ADI) per il comune di Ancona",
+     "number": "071 8705976",
+     "hours": "Dalle 9:00 alle 12:00",
+     "url": "https://www.astancona.marche.it/it/servizi-e-prestazioni/servizi-territoriali/cure-domiciliari-distretto-ancona",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari (ADI) per Agugliano, Camerata, Chiaravalle, Falconara, Montemarciano, Monte San Vito e Polverigi",
+     "number": "071 7490739",
+     "hours": "Dalle 9:00 alle 13:00",
+     "url": "https://www.astancona.marche.it/it/servizi-e-prestazioni/servizi-territoriali/cure-domiciliari-distretto-ancona",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari (ADI) per Camerano, Castelfidardo, Loreto, Numana, Offagna, Osimo e Sirolo",
+     "number": "071 8705419",
+     "hours": "Dalle 8:00 alle 12:30",
+     "url": "https://www.astancona.marche.it/it/servizi-e-prestazioni/servizi-territoriali/cure-domiciliari-distretto-ancona",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'AST Ancona (anche distretto di Ancona e Osimo)",
+     "number": "071 87051",
+     "address": "Via C. Colombo 106, 60127 Ancona",
+     "url": "https://www.astancona.marche.it/it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino di Jesi (ospedale e distretto)",
+     "number": "0731 534111",
+     "address": "Via Aldo Moro 52, 60035 Jesi",
+     "url": "https://www.astancona.marche.it/it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino di Senigallia (ospedale e distretto)",
+     "number": "071 79091",
+     "address": "Via Benvenuto Cellini 1, 60019 Senigallia",
+     "url": "https://www.astancona.marche.it/it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino di Fabriano (ospedale e distretto)",
+     "number": "0732 7071",
+     "address": "Via Stelluti Scala 26, 60044 Fabriano",
+     "url": "https://www.astancona.marche.it/it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino della sede di Castelfidardo",
+     "number": "071 7214111",
+     "url": "https://www.astancona.marche.it/it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino della sede di Chiaravalle",
+     "number": "071 74901",
+     "url": "https://www.astancona.marche.it/it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino della sede di Falconara Marittima",
+     "number": "071 91781",
+     "url": "https://www.astancona.marche.it/it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino della sede di Loreto",
+     "number": "071 75091",
+     "url": "https://www.astancona.marche.it/it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "AST Ancona – Telefono e posta elettronica",
+     "url": "https://www.astancona.marche.it/it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica"
+    },
+    {
+     "label": "AST Ancona – Centro unico prenotazioni",
+     "url": "https://www.astancona.marche.it/it/organizzazione/centro-unico-prenotazioni"
+    },
+    {
+     "label": "AST Ancona – Comunicazione, formazione e URP",
+     "url": "https://www.astancona.marche.it/it/organizzazione/unita-operativa-complessa/comunicazione-formazione-e-urp"
+    },
+    {
+     "label": "AST Ancona – Cure domiciliari del distretto di Ancona",
+     "url": "https://www.astancona.marche.it/it/servizi-e-prestazioni/servizi-territoriali/cure-domiciliari-distretto-ancona"
+    },
+    {
+     "label": "AST Ancona – Continuità assistenziale",
+     "url": "https://www.astancona.marche.it/it/servizi-e-prestazioni/servizi-territoriali/servizio-di-continuita-assistenziale"
+    }
+   ],
+   "last_verified": "2026-10-22",
+   "todo": [
+    "Guardia medica: la pagina della continuità assistenziale dà gli orari (notti 20–8, prefestivi 12–20, sabato e festivi 8–20) ma nessun numero. Nelle Marche il 116117 non è ancora attivo.",
+    "PUA: la pagina generale non dà numeri; la notizia sul PUA di Jesi dà solo gli orari. Mancano le cure domiciliari di Jesi, Senigallia e Fabriano.",
+    "Azienda Ospedaliero Universitaria delle Marche (Torrette di Ancona): non ancora tra le pagine copiate.",
+    "Nella pagina delle cure domiciliari l'email dell'area Nord è scritta «adinord.ast.an@sanita.amrche.it» (refuso del sito): non messa."
+   ],
+   "pagine": [
+    {
+     "tipo": "contatti",
+     "url": "https://www.astancona.marche.it/it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.astancona.marche.it/it/organizzazione/unita-operativa-complessa/comunicazione-formazione-e-urp"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.astancona.marche.it/it/come-fare-per/prenotare-visite-ed-esami"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.astancona.marche.it/it/organizzazione/centro-unico-prenotazioni"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.astancona.marche.it/it/servizi-e-prestazioni/servizi-territoriali/servizio-di-continuita-assistenziale"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.astancona.marche.it/it/servizi-e-prestazioni/servizi-territoriali/punto-unico-di-accesso-pua"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.astancona.marche.it/it/servizi-e-prestazioni/servizi-territoriali/cure-domiciliari-distretto-ancona"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astancona.marche.it/it/servizi-e-prestazioni/servizi-territoriali"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astancona.marche.it"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astancona.marche.it/argomenti/cure-domiciliari"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astancona.marche.it/argomenti/continuita-assistenziale-ex-guardia-medica"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astancona.marche.it/ast-comunica/notizie/zerocoda-esami-di-laboratorio-sistema-online-della-regione-marche-per-prenotare-prelievi-ematici-da-pc-o-mobile"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astancona.marche.it/come-fare-per/prenotare-visite-ed-esami"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astancona.marche.it/come-fare-per/prenotare-una-visita-presso-la-commissione-medica-locale-patenti"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astancona.marche.it/ast-comunica/notizie/rimodulazione-orari-pua-di-jesi"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astancona.marche.it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astancona.marche.it/organizzazione/centro-unico-prenotazioni"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astancona.marche.it/organizzazione/ufficio-relazioni-con-il-pubblico"
+    }
+   ]
+  },
+  {
+   "id": "macerata",
+   "name": "AST Macerata (Azienda Sanitaria Territoriale)",
+   "province": "Macerata",
+   "site_url": "https://www.astmc.marche.it/it",
+   "official_domains": [
+    "astmc.marche.it"
+   ],
+   "emails": [
+    "urp.ast.mc@sanita.marche.it"
+   ],
+   "pec": "ast.macerata@emarche.it",
+   "phones": [
+    {
+     "label": "Centralino dell'ospedale di Macerata",
+     "number": "0733 2571",
+     "url": "https://www.astmc.marche.it/contatti",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "label": "CUP regionale delle Marche: prenotare visite ed esami da telefono fisso (numero verde, gratis)",
+     "number": "800 098798",
+     "hours": "Dal lunedì al venerdì 8:00–18:00, sabato 8:00–13:00",
+     "url": "https://www.astmc.marche.it/it/ast-comunica/notizie/attenzione-sms-fraudolenti-a-nome-del-cup-marche",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP regionale delle Marche: prenotare visite ed esami da telefono fisso (numero verde, gratis)",
+     "number": "800 098798",
+     "hours": "Dal lunedì al venerdì 8:00–18:00, sabato 8:00–13:00",
+     "url": "https://www.astmc.marche.it/it/ast-comunica/notizie/attenzione-sms-fraudolenti-a-nome-del-cup-marche",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP regionale delle Marche: da cellulare (costa come una chiamata normale)",
+     "number": "0721 1779301",
+     "hours": "Dal lunedì al venerdì 8:00–18:00, sabato 8:00–13:00",
+     "url": "https://www.astmc.marche.it/it/ast-comunica/notizie/attenzione-sms-fraudolenti-a-nome-del-cup-marche",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP: ufficio per i cittadini, reclami (numero unico per Macerata, Civitanova Marche e Camerino)",
+     "number": "0733 2572751",
+     "hours": "Sportelli di Piediripa di Macerata e Civitanova Marche: dal lunedì al venerdì 8:30–13:30",
+     "url": "https://www.astmc.marche.it/it/organizzazione/unita-operativa-complessa/ufficio-relazioni-con-il-pubblico-urp",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "protesica",
+     "label": "Ufficio protesi del distretto di Macerata",
+     "number": "0733 2572703",
+     "hours": "Sportello: dal lunedì al venerdì 8:30–12:30",
+     "address": "Via Belvedere R. Sanzio 1, Macerata",
+     "url": "https://www.astmc.marche.it/it/organizzazione/unita-operativa-complessa/uoc-organizzazione-dei-servizi-sanitari-di-base-distretto-macerata",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "protesica",
+     "label": "Ufficio protesi del distretto di Tolentino",
+     "number": "0733 900259",
+     "hours": "Martedì, mercoledì e giovedì 8:30–12:30",
+     "url": "https://www.astmc.marche.it/it/organizzazione/unita-operativa-complessa/uoc-organizzazione-dei-servizi-sanitari-di-base-distretto-macerata",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Punto unico di accesso (PUA) del distretto di Tolentino (Cittadella sanitaria)",
+     "number": "0733 2573265",
+     "url": "https://www.astmc.marche.it/it/organizzazione/unita-operativa-complessa/uoc-organizzazione-dei-servizi-sanitari-di-base-distretto-macerata",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare (ADI) a Piediripa, per la zona di Corridonia",
+     "number": "0733 2574926",
+     "hours": "Segreteria: dal lunedì al sabato 10:00–12:30",
+     "address": "Via Annibali 33/B, Piediripa di Macerata",
+     "url": "https://www.astmc.marche.it/it/organizzazione/unita-operativa-complessa/uoc-organizzazione-dei-servizi-sanitari-di-base-distretto-macerata",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ospedale di Macerata",
+     "number": "0733 2571",
+     "url": "https://www.astmc.marche.it/contatti",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ospedale di Civitanova Marche",
+     "number": "0733 8231",
+     "url": "https://www.astmc.marche.it/contatti",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ospedale di Camerino",
+     "number": "0737 6391",
+     "url": "https://www.astmc.marche.it/contatti",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ospedale di San Severino Marche",
+     "number": "0733 6311",
+     "url": "https://www.astmc.marche.it/contatti",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ospedale di comunità di Recanati",
+     "number": "071 75831",
+     "url": "https://www.astmc.marche.it/contatti",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "AST Macerata – Contatti",
+     "url": "https://www.astmc.marche.it/contatti"
+    },
+    {
+     "label": "AST Macerata – URP",
+     "url": "https://www.astmc.marche.it/it/organizzazione/unita-operativa-complessa/ufficio-relazioni-con-il-pubblico-urp"
+    },
+    {
+     "label": "AST Macerata – Servizi sanitari di base, distretto di Macerata",
+     "url": "https://www.astmc.marche.it/it/organizzazione/unita-operativa-complessa/uoc-organizzazione-dei-servizi-sanitari-di-base-distretto-macerata"
+    },
+    {
+     "label": "AST Macerata – SMS falsi a nome del CUP Marche",
+     "url": "https://www.astmc.marche.it/it/ast-comunica/notizie/attenzione-sms-fraudolenti-a-nome-del-cup-marche"
+    }
+   ],
+   "last_verified": "2026-10-22",
+   "todo": [
+    "CUP: le copie dell'AST Macerata danno il numero verde e lo 0721 1779301 in una notizia sugli SMS falsi; il terzo numero regionale (071 9998010) è nelle pagine delle altre AST.",
+    "Guardia medica: nelle copie nessun numero (una notizia dice che quella di Corridonia è nella Casa della Comunità di viale Italia). Nelle Marche il 116117 non è ancora attivo.",
+    "PUA e ADI: copiati solo Tolentino e Piediripa (pagina del distretto di Macerata); mancano Civitanova Marche e Camerino."
+   ],
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.astmc.marche.it/it/organizzazione/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.astmc.marche.it/it/organizzazione/unita-operativa-complessa/ufficio-relazioni-con-il-pubblico-urp"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.astmc.marche.it/it/servizi-e-prestazioni/sportelli-front-office/sedi-anagrafe-prenotazioni-cassa"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.astmc.marche.it/it/ast-comunica/notizie/attenzione-sms-fraudolenti-a-nome-del-cup-marche"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.astmc.marche.it/it/organizzazione/unita-operativa-complessa/uoc-organizzazione-dei-servizi-sanitari-di-base-distretto-macerata"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astmc.marche.it/it/strutture/altre-strutture"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astmc.marche.it/it"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astmc.marche.it/ast-comunica/notizie/da-venerdi-16-ottobre-la-guardia-medica-sara-attiva-presso-la-casa-di-comunita-di-corridonia"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astmc.marche.it/ast-comunica/comunicati-stampa/nuovo-percorso-cup-per-pazienti-maculopatici-all-ospedale-di-san-severino"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astmc.marche.it/argomenti/cure-domiciliari"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astmc.marche.it/organizzazione/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astmc.marche.it/contatti"
+    }
+   ]
+  },
+  {
+   "id": "fermo",
+   "name": "AST Fermo (Azienda Sanitaria Territoriale)",
+   "province": "Fermo",
+   "site_url": "https://www.astfm.marche.it",
+   "official_domains": [
+    "astfm.marche.it"
+   ],
+   "guardia_medica_url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/visite-e-prestazioni-specialistiche/guardia-medica-turistica",
+   "pua_url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/sportelli-front-office/p-u-a",
+   "emails": [
+    "urp.ast.fm@sanita.marche.it"
+   ],
+   "phones": [
+    {
+     "label": "Centralino dell'AST Fermo",
+     "number": "0734 625111",
+     "address": "Via Zeppilli 18, 63900 Fermo",
+     "url": "https://www.astfm.marche.it",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "label": "CUP regionale delle Marche: prenotare visite ed esami da telefono fisso (numero verde, gratis)",
+     "number": "800 098798",
+     "hours": "Dal lunedì al venerdì 8:00–18:00, sabato 8:00–13:00",
+     "url": "https://www.astfm.marche.it/it/organizzazione/centro-unico-prenotazioni",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP regionale delle Marche: prenotare visite ed esami da telefono fisso (numero verde, gratis)",
+     "number": "800 098798",
+     "hours": "Dal lunedì al venerdì 8:00–18:00, sabato 8:00–13:00",
+     "url": "https://www.astfm.marche.it/it/organizzazione/centro-unico-prenotazioni",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP regionale delle Marche: da cellulare (costa come una chiamata normale)",
+     "number": "0721 1779301",
+     "hours": "Dal lunedì al venerdì 8:00–18:00, sabato 8:00–13:00",
+     "url": "https://www.astfm.marche.it/it/organizzazione/centro-unico-prenotazioni",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP regionale delle Marche: altro numero da fisso o da cellulare",
+     "number": "071 9998010",
+     "hours": "Dal lunedì al venerdì 8:00–18:00, sabato 8:00–13:00",
+     "url": "https://www.astfm.marche.it/it/organizzazione/centro-unico-prenotazioni",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale): chiama il centralino dell'AST, che ti passa la sede",
+     "number": "0734 625111",
+     "hours": "Tutte le notti 20:00–8:00; sabato e festivi 24 ore su 24; prefestivi 12:00–20:00",
+     "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/visite-e-prestazioni-specialistiche/guardia-medica-turistica",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Sportelli CUP dell'ospedale di Fermo",
+     "number": "0734 6252276",
+     "hours": "Prenotazioni allo sportello: dal lunedì al sabato 7:45–12:45",
+     "address": "Via Murri 15, 63900 Fermo",
+     "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/sportelli-front-office/sportelli-cup-presidio-ospedaliero-fermo",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP: ufficio per i cittadini, reclami",
+     "number": "0734 6252800",
+     "hours": "Telefono: dal lunedì al venerdì 8:30–12:30 e 14:00–17:00. Sportello: dal lunedì al venerdì 9:00–13:30",
+     "url": "https://www.astfm.marche.it/it/organizzazione/uffici-di-staff/urp",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Punto unico di accesso (PUA): numero unico per tutti i PUA della provincia",
+     "number": "0734 6257200",
+     "hours": "Dalle 8:30 alle 20:00",
+     "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/sportelli-front-office/p-u-a",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari di Porto Sant’Elpidio e Sant’Elpidio a Mare",
+     "number": "0734 6257205",
+     "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/servizi-domiciliari/cure-domiciliari",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari di Porto San Giorgio",
+     "number": "0734 6252743",
+     "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/servizi-domiciliari/cure-domiciliari",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari di Montegiorgio",
+     "number": "0734 625029",
+     "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/servizi-domiciliari/cure-domiciliari",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari di Montegranaro",
+     "number": "0734 6255270",
+     "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/servizi-domiciliari/cure-domiciliari",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari di Petritoli",
+     "number": "0734 6255413",
+     "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/servizi-domiciliari/cure-domiciliari",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari di Amandola",
+     "number": "0734 6253724",
+     "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/servizi-domiciliari/cure-domiciliari",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'AST Fermo",
+     "number": "0734 625111",
+     "address": "Via Zeppilli 18, 63900 Fermo",
+     "url": "https://www.astfm.marche.it",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "AST Fermo – URP",
+     "url": "https://www.astfm.marche.it/it/organizzazione/uffici-di-staff/urp"
+    },
+    {
+     "label": "AST Fermo – Centro unico prenotazioni",
+     "url": "https://www.astfm.marche.it/it/organizzazione/centro-unico-prenotazioni"
+    },
+    {
+     "label": "AST Fermo – PUA",
+     "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/sportelli-front-office/p-u-a"
+    },
+    {
+     "label": "AST Fermo – Cure domiciliari",
+     "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/servizi-domiciliari/cure-domiciliari"
+    },
+    {
+     "label": "AST Fermo – Guardia medica e guardia medica turistica",
+     "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/visite-e-prestazioni-specialistiche/guardia-medica-turistica"
+    }
+   ],
+   "last_verified": "2026-10-22",
+   "todo": [
+    "PEC: il piè di pagina del sito dà ast.fermo@emarche.it (lo stesso sistema PEC delle altre AST), ma nessuna copia la chiama «PEC»: non messa in «pec» finché una pagina non lo scrive.",
+    "Guardia medica: la pagina dà per le postazioni il numero del centralino 0734 625111; nelle Marche il 116117 non è ancora attivo."
+   ],
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.astfm.marche.it/it/organizzazione/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.astfm.marche.it/it/organizzazione/uffici-di-staff/urp"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.astfm.marche.it/it/organizzazione/centro-unico-prenotazioni"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/sportelli-front-office/sportelli-cup-presidio-ospedaliero-fermo"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/visite-e-prestazioni-specialistiche/guardia-medica-turistica"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.astfm.marche.it/it/strutture/altre-strutture/santa-vittoria-in-matenano-sede-continuita-assistenziale"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/sportelli-front-office/p-u-a"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/servizi-domiciliari/cure-domiciliari"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/servizi-amministrativi/fascicolo-sanitario-elettronico"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astfm.marche.it"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astfm.marche.it/argomenti/cure-domiciliari"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astfm.marche.it/organizzazione/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astfm.marche.it/organizzazione/centro-unico-prenotazioni"
+    }
+   ]
+  },
+  {
+   "id": "ascoli-piceno",
+   "name": "AST Ascoli Piceno (Azienda Sanitaria Territoriale)",
+   "province": "Ascoli Piceno",
+   "site_url": "https://www.astap.marche.it/it",
+   "official_domains": [
+    "astap.marche.it"
+   ],
+   "pua_url": "https://www.astap.marche.it/come-fare-per/come-prenotare-una-prestazione-con-priorita-urgente-u",
+   "emails": [
+    "urp.ast.ap@sanita.marche.it"
+   ],
+   "pec": "ast.ascolipiceno@emarche.it",
+   "phones": [
+    {
+     "label": "Centralino dell'AST, sede di Ascoli Piceno",
+     "number": "0736 358111",
+     "url": "https://www.astap.marche.it/it",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "label": "CUP regionale delle Marche: prenotare visite ed esami da telefono fisso (numero verde, gratis)",
+     "number": "800 098798",
+     "hours": "Dal lunedì al venerdì dalle 8 alle 18, sabato dalle 8 alle 13",
+     "url": "https://www.astap.marche.it/it/come-fare-per/prenotare-disdire-o-spostare-una-visita-esame-diagnostico",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP regionale delle Marche: prenotare visite ed esami da telefono fisso (numero verde, gratis)",
+     "number": "800 098798",
+     "hours": "Dal lunedì al venerdì dalle 8 alle 18, sabato dalle 8 alle 13",
+     "url": "https://www.astap.marche.it/it/come-fare-per/prenotare-disdire-o-spostare-una-visita-esame-diagnostico",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP regionale delle Marche: da cellulare (costa come una chiamata normale)",
+     "number": "0721 1779301",
+     "hours": "Dal lunedì al venerdì dalle 8 alle 18, sabato dalle 8 alle 13",
+     "url": "https://www.astap.marche.it/it/come-fare-per/prenotare-disdire-o-spostare-una-visita-esame-diagnostico",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP regionale delle Marche: altro numero da fisso o da cellulare",
+     "number": "071 9998010",
+     "hours": "Dal lunedì al venerdì dalle 8 alle 18, sabato dalle 8 alle 13",
+     "url": "https://www.astap.marche.it/it/come-fare-per/prenotare-disdire-o-spostare-una-visita-esame-diagnostico",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP: ufficio per i cittadini, reclami (numero unico per Ascoli Piceno e San Benedetto del Tronto)",
+     "number": "0736 358989",
+     "hours": "Dal lunedì al venerdì dalle 9 alle 13",
+     "url": "https://www.astap.marche.it/it/organizzazione/uffici-di-staff/ufficio-relazioni-con-il-pubblico-urp",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Punto unico di accesso (PUA) di Ascoli Piceno, ospedale Mazzoni",
+     "number": "0736 358786",
+     "hours": "Dal lunedì al venerdì 8:00–14:00 e 14:30–17:30; sabato 8:00–14:00",
+     "address": "Via degli Iris, Ascoli Piceno",
+     "url": "https://www.astap.marche.it/come-fare-per/come-prenotare-una-prestazione-con-priorita-urgente-u",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Punto unico di accesso (PUA) di Comunanza",
+     "number": "0736 844413",
+     "hours": "Dal lunedì al venerdì 8:00–14:00",
+     "address": "Viale Marco Polo 13, Comunanza",
+     "url": "https://www.astap.marche.it/come-fare-per/come-prenotare-una-prestazione-con-priorita-urgente-u",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Punto unico di accesso (PUA) di Offida",
+     "number": "0736 887917",
+     "hours": "Dal lunedì al sabato 8:00–14:00",
+     "address": "Via Giuseppe Garibaldi 3, Offida",
+     "url": "https://www.astap.marche.it/come-fare-per/come-prenotare-una-prestazione-con-priorita-urgente-u",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Punto unico di accesso (PUA) di San Benedetto del Tronto, ospedale Madonna del Soccorso",
+     "number": "0735 793604",
+     "hours": "Dal lunedì al venerdì 8:30–13:00 e 14:00–18:00; sabato 8:30–13:00",
+     "address": "Via Manara 3/7, San Benedetto del Tronto (corpo F, piano 0)",
+     "url": "https://www.astap.marche.it/come-fare-per/come-prenotare-una-prestazione-con-priorita-urgente-u",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare (ADI): segreteria di Ascoli Piceno",
+     "number": "0736 358001",
+     "url": "https://www.astap.marche.it/it/servizi-e-prestazioni/servizi-domiciliari/adi-assistenza-domiciliare-integrata-ap",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare (ADI): segreteria di San Benedetto del Tronto",
+     "number": "0735 793605",
+     "url": "https://www.astap.marche.it/it/servizi-e-prestazioni/servizi-domiciliari/adi-assistenza-domiciliare-integrata-sbt",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'AST, sede di Ascoli Piceno",
+     "number": "0736 358111",
+     "url": "https://www.astap.marche.it/it",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'AST, sede di San Benedetto del Tronto",
+     "number": "0735 793111",
+     "url": "https://www.astap.marche.it/it",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "AST Ascoli Piceno – URP",
+     "url": "https://www.astap.marche.it/it/organizzazione/uffici-di-staff/ufficio-relazioni-con-il-pubblico-urp"
+    },
+    {
+     "label": "AST Ascoli Piceno – Prenotare, disdire o spostare una visita",
+     "url": "https://www.astap.marche.it/it/come-fare-per/prenotare-disdire-o-spostare-una-visita-esame-diagnostico"
+    },
+    {
+     "label": "AST Ascoli Piceno – Punti unici di accesso (prestazioni urgenti U)",
+     "url": "https://www.astap.marche.it/come-fare-per/come-prenotare-una-prestazione-con-priorita-urgente-u"
+    },
+    {
+     "label": "AST Ascoli Piceno – ADI Ascoli Piceno",
+     "url": "https://www.astap.marche.it/it/servizi-e-prestazioni/servizi-domiciliari/adi-assistenza-domiciliare-integrata-ap"
+    },
+    {
+     "label": "AST Ascoli Piceno – ADI San Benedetto del Tronto",
+     "url": "https://www.astap.marche.it/it/servizi-e-prestazioni/servizi-domiciliari/adi-assistenza-domiciliare-integrata-sbt"
+    }
+   ],
+   "last_verified": "2026-10-22",
+   "todo": [
+    "Guardia medica: nessuna pagina copiata con i numeri (la pagina «UOC cure primarie» è quasi vuota). Nelle Marche il 116117 non è ancora attivo.",
+    "La pagina CUP dell'AST scrive anche «0721.17793011» (una cifra in più): usato 0721 1779301, come nelle altre pagine."
+   ],
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.astap.marche.it/it/organizzazione/uffici-di-staff/ufficio-relazioni-con-il-pubblico-urp"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.astap.marche.it/it/come-fare-per/prenotare-disdire-o-spostare-una-visita-esame-diagnostico"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.astap.marche.it/it/servizi-e-prestazioni/sportelli-front-office/centro-unico-prenotazioni"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.astap.marche.it/it/organizzazione/unita-operativa-complessa/uoc-cure-primarie"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.astap.marche.it/it/servizi-e-prestazioni/servizi-domiciliari/adi-assistenza-domiciliare-integrata-ap"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.astap.marche.it/it/servizi-e-prestazioni/servizi-domiciliari/adi-assistenza-domiciliare-integrata-sbt"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astap.marche.it/it/organizzazione/unita-operativa-complessa/uoc-distretto-di-ascoli-piceno"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astap.marche.it/it"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astap.marche.it/come-fare-per/come-prenotare-una-prestazione-con-priorita-urgente-u"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astap.marche.it/organizzazione/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.astap.marche.it/organizzazione/centro-unico-prenotazioni"
+    }
+   ]
+  }
+ ]
+}
