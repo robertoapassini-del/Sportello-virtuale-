@@ -6,6 +6,7 @@
   {
    "id": "perugia",
    "name": "USL Umbria 1 (e USL Umbria 2 per Foligno, Spoleto e Valnerina)",
+   "aziende_multiple": true,
    "province": "Perugia",
    "site_url": "https://www.uslumbria1.it/",
    "official_domains": [
@@ -542,7 +543,7 @@
     "Guardia medica USL Umbria 1: l’Elenco telefonico (agg. 22/04/2026) ha numeri diversi (es. Gubbio 075 9239468, Perugia 075 36584) da quelli della pagina Guardia medica (agg. 15/09/2026): ho usato quelli della pagina Guardia medica, più recente. Bastia Umbra: sede indicata ma senza numero.",
     "USL Umbria 2 (Foligno, Spoleto, Valnerina): nessun numero PUA/cure domiciliari nelle copie (la pagina «Accedere al servizio di assistenza domiciliare» rimanda ai Centri di salute senza numeri). Gli sportelli CUP dell'USL 2 nelle copie non hanno numeri di telefono.",
     "Cure palliative USL Umbria 1: la pagina «Cure palliative» (agg. 05/09/2023) ha numeri dei PUA diversi da quelli, più recenti, della pagina «Assistenza e cure domiciliari»: non usata. Messi l'Hospice di Perugia (Elenco telefonico) e l'Hospice di Spoleto dell'USL Umbria 2 (pagina «Cure palliative e terapia del dolore», agg. 05/05/2023: confermare con una telefonata).",
-    "Lettere (docs/regioni.md, «Aggiungere le lettere di una regione»): la provincia di Perugia ha due aziende (USL Umbria 1; USL Umbria 2 per Foligno, Spoleto e Valnerina). Una lettera all'URP o alla PEC dell'azienda va all'una o all'altra secondo il comune: serve la domanda «In quale zona?» (sub_areas) prima di accendere i moduli con le lettere. Oggi pec ed emails[0] sono quelli dell'USL Umbria 1.",
+    "Lettere (docs/regioni.md, «Aggiungere le lettere di una regione»): la provincia di Perugia ha due aziende (USL Umbria 1; USL Umbria 2 per Foligno, Spoleto e Valnerina). Una lettera all'URP o alla PEC dell'azienda va all'una o all'altra secondo il comune: servono le zone in sub_areas, ognuna con nome_lettera e pec o emails (docs/regioni.md, sezione 1), prima di accendere i moduli con le lettere. Oggi pec ed emails[0] sono quelli dell'USL Umbria 1.",
     "Mancano, e sono in pagine[] perché il server le copi: cartelle cliniche (USL 1, USL 2, Azienda Ospedaliera di Perugia), protesica (USL 1 e 2), scelta e revoca (USL 1, USL 2, Regione), screening (USL 1 e 2), percorso di tutela / «presa in carico» del CUP (USL 1, USL 2, Regione)."
    ],
    "pagine": [
@@ -655,6 +656,7 @@
   {
    "id": "terni",
    "name": "USL Umbria 2",
+   "nome_lettera": "USL Umbria 2",
    "province": "Terni",
    "site_url": "https://www.uslumbria2.it/",
    "official_domains": [

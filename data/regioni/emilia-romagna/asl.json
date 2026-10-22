@@ -26,6 +26,7 @@
   {
    "id": "bologna",
    "name": "AUSL di Bologna e AUSL di Imola",
+   "aziende_multiple": true,
    "province": "Bologna",
    "site_url": "https://www.ausl.bologna.it/",
    "official_domains": [
@@ -188,7 +189,8 @@
     "AUSL di Imola: non ho trovato un CUP telefonico dedicato; l'800040606 è citato per prenotare i prelievi.",
     "Scelta del medico: per l'AUSL di Imola la copia della pagina della Casa della Comunità dice che si fa agli sportelli CUP, con il modulo online (ausl.imola.bo.it/cambio-medico-pediatra) o con il Fascicolo sanitario. Per l'AUSL di Bologna manca una pagina.",
     "Gli ospedali Sant'Orsola (IRCCS Policlinico) e Rizzoli hanno uffici cartelle loro: pagine da cercare.",
-    "Moduli non ancora accesi (22/10/2026): liste d'attesa (nelle copie nessuna AUSL dice come chiedere un posto quando il CUP non lo dà nei tempi: gli estratti parlano di «prelista» e «agende di garanzia»), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
+    "Moduli non ancora accesi (22/10/2026): liste d'attesa (nelle copie nessuna AUSL dice come chiedere un posto quando il CUP non lo dà nei tempi: gli estratti parlano di «prelista» e «agende di garanzia»), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione.",
+    "Lettere (docs/regioni.md, sezione 1 «Province e aziende»): in questa provincia ci sono due aziende: AUSL di Bologna e AUSL di Imola. Una lettera all'azienda va all'una o all'altra secondo il comune. Prima di accendere cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa o ausili servono le zone in sub_areas: per ognuna id, label (il pulsante «In quale zona?»), comuni, nome_lettera e pec o emails, dalle copie delle pagine ufficiali. Finché mancano, aziende_multiple resta true e tests/coerenza.test.mjs tiene spenti quei moduli."
    ],
    "last_verified": "2026-10-21",
    "pagine": [
@@ -229,6 +231,7 @@
   {
    "id": "ferrara",
    "name": "AUSL di Ferrara",
+   "nome_lettera": "AUSL di Ferrara",
    "province": "Ferrara",
    "site_url": "https://www.ausl.fe.it/",
    "official_domains": [
@@ -467,6 +470,7 @@
   {
    "id": "forli-cesena",
    "name": "AUSL della Romagna – ambito di Forlì-Cesena",
+   "nome_lettera": "AUSL della Romagna – ambito di Forlì-Cesena",
    "province": "Forlì-Cesena",
    "site_url": "https://www.auslromagna.it/",
    "official_domains": [
@@ -571,6 +575,7 @@
   {
    "id": "modena",
    "name": "AUSL di Modena",
+   "nome_lettera": "AUSL di Modena",
    "province": "Modena",
    "site_url": "https://www.ausl.mo.it/",
    "official_domains": [
@@ -674,6 +679,7 @@
   {
    "id": "parma",
    "name": "AUSL di Parma",
+   "nome_lettera": "AUSL di Parma",
    "province": "Parma",
    "site_url": "https://www.ausl.pr.it/",
    "official_domains": [
@@ -878,6 +884,7 @@
   {
    "id": "piacenza",
    "name": "AUSL di Piacenza",
+   "nome_lettera": "AUSL di Piacenza",
    "province": "Piacenza",
    "site_url": "https://www.ausl.pc.it/",
    "official_domains": [
@@ -1010,6 +1017,7 @@
   {
    "id": "ravenna",
    "name": "AUSL della Romagna – ambito di Ravenna",
+   "nome_lettera": "AUSL della Romagna – ambito di Ravenna",
    "province": "Ravenna",
    "site_url": "https://www.auslromagna.it/",
    "official_domains": [
@@ -1090,6 +1098,7 @@
   {
    "id": "reggio-emilia",
    "name": "AUSL di Reggio Emilia",
+   "nome_lettera": "AUSL di Reggio Emilia",
    "province": "Reggio Emilia",
    "site_url": "https://www.ausl.re.it/",
    "official_domains": [
@@ -1232,6 +1241,7 @@
   {
    "id": "rimini",
    "name": "AUSL della Romagna – ambito di Rimini",
+   "nome_lettera": "AUSL della Romagna – ambito di Rimini",
    "province": "Rimini",
    "site_url": "https://www.auslromagna.it/",
    "official_domains": [

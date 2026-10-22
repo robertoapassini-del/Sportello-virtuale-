@@ -4,11 +4,11 @@
 // le integrazioni entro 30 (art. 4 c. 2 L. 24/2017). Ricorso: art. 25 L. 241/1990.
 // Non chiediamo mai la malattia: solo il nome della struttura e le date.
 import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
-import { cartellaReminder, mailtoHref } from './letters.js';
+import { cartellaReminder, mailtoHref, conZona } from './letters.js';
 import { noPecBox,
   esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, copyText, printText, readForm, mailLink, aspCalls, officeBox, personFields, reportErrorHref, generalContactInfo, aslLabel, regioneInfo, regioneLink, regione, generalContact, syncDelegate, delegateNoteText,
 } from './common.js';
-import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons, senzaUffici } from './flow.js';
+import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons, senzaUffici, provinceChoice, zonaScreen } from './flow.js';
 
 const ROOT = '../';
 const app = document.getElementById('app');
@@ -19,7 +19,9 @@ let data;
 const state = {};
 const person = {};
 
-const asp = () => data.asl.find((a) => a.id === state.province);
+// L'azienda della provincia scelta, con i campi della zona al posto dei suoi (js/letters.js).
+const aziendaBase = () => data.asl.find((a) => a.id === state.province);
+const asp = () => conZona(aziendaBase(), state.zona);
 // Contatto dell'azienda sanitaria per il reclamo: vale solo se l'ospedale è suo (i grandi ospedali hanno un URP loro).
 // Se c'è solo la PEC generale, si chiama PEC, non URP.
 const aspComplaint = (a) => {
@@ -59,10 +61,13 @@ const screens = {
   // Così «Ricomincia» e il tasto Indietro riportano alla risposta, non a una presentazione.
   intro: () => ({ html: answerHtml }),
 
+  // «In quale zona?»: solo se l'azienda della provincia ha zone con una lettera diversa (js/letters.js).
+  zona: () => zonaScreen(aziendaBase(), 'what'),
+
   province: () => ({
     html: `${progress(1, 3)}
       <h1>📍 In quale provincia è l'ospedale?</h1>
-      <div class="grid2">${[...data.asl].sort((a, b) => a.province.localeCompare(b.province)).map((a) => choice('', a.province, { province: a.id }, 'what')).join('')}</div>`,
+      <div class="grid2">${[...data.asl].sort((a, b) => a.province.localeCompare(b.province)).map((a) => provinceChoice(a, 'what')).join('')}</div>`,
   }),
 
   what: () => ({

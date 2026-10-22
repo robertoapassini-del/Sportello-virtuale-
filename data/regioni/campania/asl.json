@@ -6,6 +6,7 @@
   {
    "id": "avellino",
    "name": "ASL di Avellino",
+   "nome_lettera": "ASL di Avellino",
    "province": "Avellino",
    "site_url": "https://www.aslavellino.it/index.php/it/",
    "official_domains": [
@@ -170,6 +171,7 @@
   {
    "id": "benevento",
    "name": "ASL di Benevento",
+   "nome_lettera": "ASL di Benevento",
    "province": "Benevento",
    "site_url": "https://www.aslbenevento.it/",
    "official_domains": [
@@ -282,6 +284,7 @@
   {
    "id": "caserta",
    "name": "ASL di Caserta",
+   "nome_lettera": "ASL di Caserta",
    "province": "Caserta",
    "site_url": "https://www.aslcaserta.it/",
    "official_domains": [
@@ -439,6 +442,7 @@
   {
    "id": "napoli",
    "name": "ASL di Napoli (Napoli 1 Centro, Napoli 2 Nord, Napoli 3 Sud)",
+   "aziende_multiple": true,
    "province": "Napoli",
    "site_url": "https://www.aslnapoli1centro.it/",
    "official_domains": [
@@ -678,7 +682,8 @@
     "CUP dell'ASL Napoli 3 Sud: il numero è scritto 081 185555 (9 cifre) su due pagine; prenotazioni anche a prenotazioni-disdette@aslnapoli3sud.it.",
     "Guardia medica: ogni distretto ha i suoi presidi con i numeri (Napoli 1 Centro: pagina guardia-medica-emergenza-territoriale; Napoli 3 Sud: continuità assistenziale). Non messi: sono decine.",
     "PUA dell'ASL Napoli 2 Nord: altri distretti (38 Marano 081 18841425 e Quarto 081 18840415, 44, 46, 36) sono sulla pagina.",
-    "Percorso di tutela: nelle copie non c'è come chiederlo. Aggiunte a «pagine» le pagine «Liste di attesa» della Regione e delle ASL trovate col motore di ricerca. L'ASL Napoli 3 Sud (pagina CUP) dice che le richieste sul percorso di tutela vanno all'URP."
+    "Percorso di tutela: nelle copie non c'è come chiederlo. Aggiunte a «pagine» le pagine «Liste di attesa» della Regione e delle ASL trovate col motore di ricerca. L'ASL Napoli 3 Sud (pagina CUP) dice che le richieste sul percorso di tutela vanno all'URP.",
+    "Lettere (docs/regioni.md, sezione 1 «Province e aziende»): in questa provincia ci sono tre aziende: ASL Napoli 1 Centro, ASL Napoli 2 Nord, ASL Napoli 3 Sud. Una lettera all'azienda va all'una o all'altra secondo il comune. Prima di accendere cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa o ausili servono le zone in sub_areas: per ognuna id, label (il pulsante «In quale zona?»), comuni, nome_lettera e pec o emails, dalle copie delle pagine ufficiali. Finché mancano, aziende_multiple resta true e tests/coerenza.test.mjs tiene spenti quei moduli."
    ],
    "pagine": [
     {
@@ -690,6 +695,7 @@
   {
    "id": "salerno",
    "name": "ASL di Salerno",
+   "nome_lettera": "ASL di Salerno",
    "province": "Salerno",
    "site_url": "https://www.aslsalerno.it/",
    "official_domains": [

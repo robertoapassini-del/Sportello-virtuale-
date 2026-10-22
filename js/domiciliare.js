@@ -3,9 +3,9 @@
 // Non c'è un numero di giorni fissato dalla legge: spieghiamo i passi e, se nessuno viene,
 // prepariamo un sollecito al distretto. Non chiediamo la malattia.
 import { todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
-import { genericRequest, mailtoHref, doctorName, districtLine } from './letters.js';
-import { noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact, complaintTo, aslLabel, regioneInfo, inRegione, regioneLink, aslIntestazione, regione, regioneNonPronta, syncDelegate, delegateNoteText } from './common.js';
-import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons, senzaUffici } from './flow.js';
+import { genericRequest, mailtoHref, doctorName, districtLine, conZona } from './letters.js';
+import { noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact, complaintTo, aslLabel, regioneInfo, inRegione, regioneLink, regione, regioneNonPronta, syncDelegate, delegateNoteText } from './common.js';
+import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons, senzaUffici, provinceChoice, zonaScreen, intestazioneAzienda } from './flow.js';
 
 const ROOT = '../';
 const app = document.getElementById('app');
@@ -15,7 +15,9 @@ let rules;
 let data;
 const state = {};
 const person = {};
-const asp = () => data.asl.find((a) => a.id === state.province);
+// L'azienda della provincia scelta, con i campi della zona al posto dei suoi (js/letters.js).
+const aziendaBase = () => data.asl.find((a) => a.id === state.province);
+const asp = () => conZona(aziendaBase(), state.zona);
 // I fatti solo siciliani (Enna, le fonti della Regione Siciliana) si mostrano solo a chi usa i dati della Sicilia.
 const inSicilia = () => regione() === 'sicilia' && !regioneNonPronta();
 const perRegione = (list) => list.filter((s) => inSicilia() || !/Sicil|\bASP\b/.test(s.label));
@@ -123,10 +125,13 @@ const screens = {
       ${disclaimer(rules.last_verified)}`,
   }),
 
+  // «In quale zona?»: solo se l'azienda della provincia ha zone con una lettera diversa (js/letters.js).
+  zona: () => zonaScreen(aziendaBase(), 'stage'),
+
   province: () => ({
     html: `${progress(1, 2)}
       <h1>📍 Dove abita la persona?</h1>
-      <div class="grid2">${[...data.asl].sort((a, b) => a.province.localeCompare(b.province)).map((a) => choice('', a.province, { province: a.id }, 'stage')).join('')}</div>`,
+      <div class="grid2">${[...data.asl].sort((a, b) => a.province.localeCompare(b.province)).map((a) => provinceChoice(a, 'stage')).join('')}</div>`,
   }),
 
   stage: () => ({
@@ -260,7 +265,7 @@ const screens = {
                'l\'assistenza è stata interrotta o ridotta senza una nuova valutazione',
                'le cure domiciliari rientrano nei livelli essenziali di assistenza (art. 22 DPCM 12/01/2017)'];
           const text = genericRequest({
-            to: `${aslIntestazione()} di ${a.province}\n${state.district ? `${districtLine(state.district)} – ` : ''}Punto Unico di Accesso\ne p.c. Ufficio Relazioni con il Pubblico`,
+            to: `${intestazioneAzienda(a)}\n${state.district ? `${districtLine(state.district)} – ` : ''}Punto Unico di Accesso\ne p.c. Ufficio Relazioni con il Pubblico`,
             address: to, person,
             subject: isReminder ? `SOLLECITO – Attivazione assistenza domiciliare integrata (richiesta ${art('del', state.requestDate)}${formatIt(state.requestDate)})` : 'Richiesta di rivalutazione del piano di assistenza domiciliare integrata',
             premise,
