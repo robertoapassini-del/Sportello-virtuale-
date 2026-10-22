@@ -32,6 +32,7 @@
   {
    "id": "genova",
    "name": "ATS Liguria – Aree sociosanitarie locali 3 (Area Metropolitana di Genova) e 4 (Tigullio)",
+   "nome_lettera": "ATS Liguria – Aree sociosanitarie locali 3 (Area Metropolitana di Genova) e 4 (Tigullio)",
    "province": "Genova",
    "site_url": "https://www.asl3.liguria.it/",
    "official_domains": [
@@ -321,12 +322,14 @@
    ],
    "scelta_medico": {
     "how": "Puoi cambiare medico online: sul sito dell'Area 3 c'è «Cambio medico online». Puoi usare anche Salute Simplex, l'app e il sito della Regione Liguria. Nell'area di Genova puoi andare a uno sportello dell'anagrafe sanitaria. In alcune zone del Tigullio puoi chiedere anche in farmacia.",
-    "url": "https://www.asl3.liguria.it/"
+    "url": "https://www.asl3.liguria.it/",
+    "url_label": "Sito dell'Area 3"
    }
   },
   {
    "id": "imperia",
    "name": "ATS Liguria – Area sociosanitaria locale 1 (Imperia, ex ASL1 Imperiese)",
+   "nome_lettera": "ATS Liguria – Area sociosanitaria locale 1 (Imperia, ex ASL1 Imperiese)",
    "province": "Imperia",
    "site_url": "https://www.asl1.liguria.it/",
    "official_domains": [
@@ -510,7 +513,8 @@
    ],
    "scelta_medico": {
     "how": "Puoi cambiare medico online: sul sito dell'Area 1 c'è «Cambio medico online». Puoi usare anche Salute Simplex, l'app e il sito della Regione Liguria. Oppure vai allo sportello polifunzionale del tuo distretto: lì fanno la scelta e la revoca del medico.",
-    "url": "https://www.asl1.liguria.it/"
+    "url": "https://www.asl1.liguria.it/",
+    "url_label": "Sito dell'Area 1"
    },
    "channel": "phone",
    "letter_mode": "fallback",
@@ -535,6 +539,7 @@
   {
    "id": "la-spezia",
    "name": "ATS Liguria – Area sociosanitaria locale 5 (La Spezia, ex ASL5 Spezzino)",
+   "nome_lettera": "ATS Liguria – Area sociosanitaria locale 5 (La Spezia, ex ASL5 Spezzino)",
    "province": "La Spezia",
    "site_url": "https://www.asl5.liguria.it/",
    "official_domains": [
@@ -693,12 +698,14 @@
    ],
    "scelta_medico": {
     "how": "Puoi cambiare medico online su poliss.regione.liguria.it, con SPID o CNS. Puoi andare anche in una farmacia convenzionata. Oppure vai a uno sportello PUA Anagrafe del distretto.",
-    "url": "https://www.asl5.liguria.it/Home/ORARICUPANAGRAFEBRUGNATO.aspx"
+    "url": "https://www.asl5.liguria.it/Home/ORARICUPANAGRAFEBRUGNATO.aspx",
+    "url_label": "Sito dell'Area 5"
    }
   },
   {
    "id": "savona",
    "name": "ATS Liguria – Area sociosanitaria locale 2 (Savona, ex ASL2 Savonese)",
+   "nome_lettera": "ATS Liguria – Area sociosanitaria locale 2 (Savona, ex ASL2 Savonese)",
    "province": "Savona",
    "site_url": "https://www.asl2.liguria.it/",
    "official_domains": [
@@ -887,7 +894,8 @@
    ],
    "scelta_medico": {
     "how": "Puoi cambiare medico online: sul sito dell'Area 2 c'è «Cambio medico online». Puoi usare anche Salute Simplex, l'app e il sito della Regione Liguria. Oppure vai a uno sportello polifunzionale (CUP): lì fanno anche la scelta e il cambio del medico.",
-    "url": "https://www.asl2.liguria.it/"
+    "url": "https://www.asl2.liguria.it/",
+    "url_label": "Sito dell'Area 2"
    }
   }
  ]

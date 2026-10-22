@@ -65,7 +65,57 @@ In Sicilia una ASP = una provincia. Altrove non è così (Lombardia: 8 ATS per 1
 Quindi la domanda all'utente resta «in quale provincia abiti?», ma nel file ogni azienda elenca le sue province
 (`provinces: ["Milano", "Lodi"]`) e, dove serve, i comuni che decidono la ASL (`comuni_url` o `comuni[]`). Il
 modulo cerca l'azienda per provincia; se più aziende coprono la stessa provincia, fa una domanda in più («In quale
-zona?») con le `sub_areas`, come oggi per Messina.
+zona?») con le `sub_areas`.
+
+**Il nome nella lettera (`nome_lettera`).** Le lettere all'azienda cominciano con «Spett.le» + `nome_lettera`, il nome
+ufficiale dell'azienda («USL Umbria 2», «Azienda USL della Valle d'Aosta», «ASReM – Azienda Sanitaria Regionale del
+Molise»). Se manca, scrivono `asl_intestazione` dell'indice (o `asl_label`) + «di» + provincia: in Sicilia
+«Azienda Sanitaria Provinciale di Palermo», e lì `nome_lettera` non c'è. `nome_lettera` viene dal `name` già provato,
+senza le parti che non sono il nome (in Basilicata «ASM – Azienda Sanitaria Locale di Matera»). Le funzioni sono in
+`js/letters.js` (`intestazioneDi`) e `js/flow.js` (`intestazioneAzienda(a)`).
+
+**Le zone (`sub_areas`).** Una zona può essere:
+
+- una frase (`"Messina – Taormina"`): si legge e basta, la lettera non cambia (Messina: un'ASP, una PEC, tre zone);
+- un oggetto, quando la lettera cambia secondo il comune:
+
+```json
+"aziende_multiple": true,
+"sub_areas": [
+  { "id": "roma1", "label": "Roma 1 – Centro e Nord", "comuni": ["Roma (municipi I, II, III…)"],
+    "nome_lettera": "ASL Roma 1", "pec": "…", "emails": ["…"] },
+  { "id": "roma2", "label": "Roma 2 – …", "nome_lettera": "ASL Roma 2", "pec": "…", "emails": ["…"] }
+]
+```
+
+`id` e `label` (il testo del pulsante) sono obbligatori; `comuni` va sotto il pulsante. Gli altri campi della zona
+(`name`, `nome_lettera`, `pec`, `emails`, `send_to`, `how_to`, `phones`, `contacts`, `scelta_medico`, `letter_mode`…)
+prendono il posto di quelli dell'azienda (`conZona()` in `js/letters.js`); `id` e `province` non cambiano mai. Ogni
+dato di una zona segue la regola delle prove (sezione 9): solo dalle copie delle pagine ufficiali.
+
+I moduli che scrivono all'azienda (cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative,
+liste-attesa, ausili) chiedono «In quale zona?» dopo la provincia quando l'azienda ha almeno una zona oggetto
+(`provinceChoice()` e `zonaScreen()` in `js/flow.js`).
+
+**Più aziende in una provincia (`aziende_multiple: true`).** Si scrive sull'azienda quando la provincia ha più aziende
+sanitarie. Finché mancano le zone (almeno due, ognuna con `nome_lettera` e `pec`, `emails` o `send_to` suoi),
+`tests/coerenza.test.mjs` non lascia accendere in quella regione i moduli con una lettera all'azienda. Lo stesso test
+vuole `aziende_multiple` quando il `name` elenca più aziende («ASL CN1 e ASL CN2», «Roma 1–6») o le email URP sono di
+più ASST lombarde. Oggi (22/10/2026) `aziende_multiple` c'è, e le zone sono da fare, per:
+
+| Regione | Provincia | Aziende |
+|---|---|---|
+| Lazio | Roma | ASL Roma 1, 2, 3, 4, 5, 6 |
+| Campania | Napoli | ASL Napoli 1 Centro, Napoli 2 Nord, Napoli 3 Sud |
+| Piemonte | Torino | ASL Città di Torino, TO3, TO4, TO5 |
+| Piemonte | Cuneo | ASL CN1, CN2 |
+| Umbria | Perugia | USL Umbria 1; USL Umbria 2 per Foligno, Spoleto e Valnerina |
+| Emilia-Romagna | Bologna | AUSL di Bologna, AUSL di Imola |
+| Veneto | Venezia | ULSS 3 Serenissima, ULSS 4 Veneto Orientale |
+| Veneto | Vicenza | ULSS 8 Berica, ULSS 7 Pedemontana |
+| Lombardia | tutte e 12 | l'ATS controlla; visite, casa, protesica e medico sono delle ASST (più d'una in molte province) |
+
+Chi fa la regione riempie le zone dalle copie, toglie la riga dal `todo` e tiene `aziende_multiple: true`.
 
 ## 2. Come un modulo sceglie la regione
 
@@ -278,9 +328,10 @@ campo il modulo funziona e dice una frase generica (per esempio «chiedi all'URP
 | Modulo | Campi regionali necessari | Facoltativi | Chi li controlla |
 |---|---|---|---|
 | tutti | `id`, `name`, `province` (una per azienda), `phones[]`, `emails[]`, `sources[]`, `site_url`; una sede INPS con lo stesso `id` | `contacts[]` con `topic` | `contatti.test` (numeri), `coerenza.test` (id, province, topic, sede INPS) |
+| tutti quelli con una lettera all'azienda (sotto) | `nome_lettera` (se la regione non ha `asl_intestazione`); con `aziende_multiple`: `sub_areas` oggetto con `id`, `label`, `nome_lettera` e `pec`, `emails` o `send_to` | `sub_areas` anche senza `aziende_multiple` (uffici diversi nella stessa azienda) | `coerenza.test` (anche ogni zona con i campi del modulo), `aziende.test`, `browser.cjs` (intestazione e indirizzo della lettera in ogni regione) |
 | `liste-attesa` | `channel`, `letter_mode` (`email`, `pec`, `official_form`, `portal`), `how_to`, `documents_required[]`, `what_next[]`, `notes[]`, `details[]`, `last_verified`; con `email`/`pec`: `send_to` o `pec`; con `official_form`: `form_url` e `form_fields[]` (`label`, `source`); con `portal`: `portal_url` | `info_url`, `fast_track`, `sub_areas`, `local_name` e `regional_channel` in cima al file | `coerenza.test` («ogni modulo acceso ha i dati che legge»), `confronta-copie` (PEC e `send_to` in una copia dell'azienda), `combinazioni.cjs` (per ora solo Sicilia) |
 | `cartella-clinica` | `pec` o `emails[]` (il reclamo se l'ospedale è dell'azienda) | `contacts` `topic: "cartelle"`, uno per ospedale, anche quelli delle aziende ospedaliere (dominio in `official_domains`, come il Policlinico di Palermo nell'ASP di Palermo) | `coerenza.test`, `contatti.test` |
-| `medico-famiglia` | `scelta_medico: { how, url }`; `emails[]` o `pec` (la lettera va a `generalContact()`: l'URP, se no la PEC) | `contacts` `topic: "anagrafe"` (sportelli scelta e revoca) | `coerenza.test` |
+| `medico-famiglia` | `scelta_medico: { how, url }`; `emails[]` o `pec` (la lettera va a `generalContact()`: l'URP, se no la PEC) | `contacts` `topic: "anagrafe"` (sportelli scelta e revoca); `scelta_medico.url_label`, il testo del pulsante di `url` (se manca: «Sito dell'<sigla>»; per esempio «Sito della Regione») | `coerenza.test` |
 | `assistenza-domiciliare` | `emails[]` o `pec` | `contacts` `topic: "casa"` (PUA), `pua_url` | `coerenza.test` |
 | `cure-palliative` | `emails[]` o `pec` | `contacts` `topic: "palliative"` (rete, hospice) | `coerenza.test` |
 | `ausili` | `pec` (la lettera va alla PEC) | `contacts` `topic: "protesica"` | `coerenza.test` |
@@ -291,11 +342,13 @@ Due controlli prima di accendere un modulo con una lettera all'azienda:
 
 1. **Una provincia, più aziende.** I moduli cercano l'azienda per provincia. Se una provincia ha due aziende (in
    Umbria la provincia di Perugia: USL Umbria 1 e, per Foligno, Spoleto e Valnerina, USL Umbria 2) la lettera
-   all'URP o alla PEC va all'una o all'altra secondo il comune. Prima serve la domanda «In quale zona?»
-   (`sub_areas`, sezione 1): finché manca, quei moduli restano spenti.
-2. **Il nome nell'intestazione.** Le lettere scrivono `aslIntestazione()` + «di» + provincia («Azienda Sanitaria
-   Provinciale di Palermo»). Se in quella regione l'azienda non si chiama così («USL di Perugia» non esiste: è
-   «USL Umbria 1»), prima va aggiunto il nome giusto nei dati e nelle lettere.
+   all'URP o alla PEC va all'una o all'altra secondo il comune. L'azienda ha `aziende_multiple: true` e servono le
+   zone in `sub_areas`, ognuna con il suo `nome_lettera` e i suoi indirizzi (sezione 1, con l'elenco delle province
+   da fare): finché mancano, `coerenza.test` tiene spenti quei moduli.
+2. **Il nome nell'intestazione.** Le lettere scrivono `nome_lettera` («USL Umbria 2»); senza, `asl_intestazione` +
+   «di» + provincia («Azienda Sanitaria Provinciale di Palermo», solo in Sicilia). «USL di Perugia» o «ATS di
+   Genova» non esistono: per questo, fuori dalla Sicilia, `coerenza.test` vuole `nome_lettera` in ogni azienda di una
+   regione con una lettera accesa.
 
 ### I passi
 
@@ -311,8 +364,9 @@ Due controlli prima di accendere un modulo con una lettera all'azienda:
 4. **Si accende il modulo dopo la copia.** Leggi le copie nuove, riempi i campi, aggiungi il modulo a `moduli`.
    `npm test` dice se manca qualcosa («acceso ma manca …»).
 5. Controlli: `npm run pagine`, `npm test`, `node tools/confronta-copie.mjs <copie> <regione> --noti tests/copie-noti.txt --base origin/main`,
-   e i test col browser. Per un modulo con lettera aggiungi la regione ai percorsi di `tests/combinazioni.cjs`
-   (l'invalidità lo fa già da sola per ogni regione che la accende).
+   e i test col browser. `tests/browser.cjs` percorre da solo ogni modulo acceso di ogni regione (una provincia a
+   turno, la zona se c'è, fino alla lettera) e guarda intestazione e indirizzo; l'invalidità in tutte le province la
+   prova `tests/combinazioni.cjs`. Per provare in fretta solo questi percorsi: `SOLO_REGIONI=1 node tests/browser.cjs <indirizzo>`.
 6. Una riga nel `CHANGELOG.md`, con le fonti.
 
 ### Umbria, 22/10/2026
@@ -323,9 +377,10 @@ Terni). Spenti, e cosa manca:
 - `liste-attesa`: nessuna pagina copiata sul percorso di tutela. In Umbria, se il CUP non trova posto nei tempi
   della classe, mette la ricetta in «presa in carico» e ricontatta la persona: serve la pagina che lo dice (in
   `pagine[]`: USL 1, USL 2, Azienda Ospedaliera di Terni, Regione), poi `letter_mode`, `how_to`, `what_next` e a chi
-  si scrive se nessuno richiama. Poi la domanda «In quale zona?» per la provincia di Perugia.
+  si scrive se nessuno richiama. Poi le zone in `sub_areas` per la provincia di Perugia (sezione 1).
 - `cartella-clinica`, `medico-famiglia`, `assistenza-domiciliare`, `cure-palliative`, `ausili`: le pagine delle
   cartelle cliniche (USL 1, USL 2, Aziende Ospedaliere di Perugia e Terni), di protesica, scelta e revoca e cure
-  palliative sono in `pagine[]`; dopo la copia servono gli uffici e, per la provincia di Perugia, la domanda
-  «In quale zona?» e il nome giusto dell'azienda nell'intestazione.
+  palliative sono in `pagine[]`; dopo la copia servono gli uffici e, per la provincia di Perugia, le due zone in
+  `sub_areas` (USL Umbria 1 e USL Umbria 2, con `nome_lettera` e indirizzi). Terni ha già `nome_lettera`
+  («USL Umbria 2»).
 - `prevenzione`: i numeri dello screening (pagine in `pagine[]`); il modulo dà già il risultato nazionale.

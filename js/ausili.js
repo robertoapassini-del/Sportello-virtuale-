@@ -4,11 +4,11 @@
 // (si arriva scegliendo una provincia siciliana): 20 giorni, poi silenzio-assenso (la lettera non lo cita finché
 // il D.A. 20/12/2011 non è letto: chiede solo l'autorizzazione senza altro ritardo). Non chiediamo mai la malattia.
 import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween, art } from './engine.js';
-import { ausiliReminder, mailtoHref } from './letters.js';
+import { ausiliReminder, mailtoHref, conZona } from './letters.js';
 import { noPecBox,
-  esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, copyText, printText, readForm, aspCalls, officeBox, personFields, reportErrorHref, complaintTo, aslLabel, aslIntestazione, mailLink, generalContact, syncDelegate, delegateNoteText,
+  esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, copyText, printText, readForm, aspCalls, officeBox, personFields, reportErrorHref, complaintTo, aslLabel, mailLink, generalContact, syncDelegate, delegateNoteText,
 } from './common.js';
-import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
+import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons, provinceChoice, zonaScreen, intestazioneAzienda } from './flow.js';
 
 const ROOT = '../';
 const app = document.getElementById('app');
@@ -19,7 +19,9 @@ let data;
 const state = {};
 const person = {};
 
-const asp = () => data.asl.find((a) => a.id === state.province);
+// L'azienda della provincia scelta, con i campi della zona al posto dei suoi (js/letters.js).
+const aziendaBase = () => data.asl.find((a) => a.id === state.province);
+const asp = () => conZona(aziendaBase(), state.zona);
 const deadline = () => simpleDeadline({ fromDate: state.requestDate, days: rules.authorization_days, today: todayISO() });
 
 function sources() {
@@ -49,11 +51,14 @@ const screens = {
   // Così «Ricomincia» e il tasto Indietro riportano alla risposta, non a una presentazione.
   intro: () => ({ html: answerHtml }),
 
+  // «In quale zona?»: solo se l'azienda della provincia ha zone con una lettera diversa (js/letters.js).
+  zona: () => zonaScreen(aziendaBase(), 'stage'),
+
   province: () => ({
     html: `${progress(1, 3)}
       <h1>📍 Dove abita la persona?</h1>
       <p>Scegli la provincia.</p>
-      <div class="grid2">${[...data.asl].sort((a, b) => a.province.localeCompare(b.province)).map((a) => choice('', a.province, { province: a.id }, 'stage')).join('')}</div>`,
+      <div class="grid2">${[...data.asl].sort((a, b) => a.province.localeCompare(b.province)).map((a) => provinceChoice(a, 'stage')).join('')}</div>`,
   }),
 
   stage: () => ({
@@ -200,7 +205,7 @@ const screens = {
           Object.assign(person, v);
           syncDelegate(form, person);
           const text = ausiliReminder({
-            ente: aslIntestazione(),
+            intestazione: intestazioneAzienda(a),
             aspName: a.province, address: to, person, device: state.device, requestDate: state.requestDate,
             protocol: state.protocol, prescriber: state.prescriber, deadline: deadline().deadline, days: rules.authorization_days, today: todayISO(),
           });

@@ -6,6 +6,7 @@
   {
    "id": "frosinone",
    "name": "ASL di Frosinone",
+   "nome_lettera": "ASL di Frosinone",
    "province": "Frosinone",
    "site_url": "https://www.asl.fr.it/",
    "official_domains": [
@@ -183,6 +184,7 @@
   {
    "id": "latina",
    "name": "ASL di Latina",
+   "nome_lettera": "ASL di Latina",
    "province": "Latina",
    "site_url": "https://www.ausl.latina.it/",
    "official_domains": [
@@ -351,6 +353,7 @@
   {
    "id": "rieti",
    "name": "ASL di Rieti",
+   "nome_lettera": "ASL di Rieti",
    "province": "Rieti",
    "site_url": "https://www.asl.rieti.it/",
    "official_domains": [
@@ -555,6 +558,7 @@
   {
    "id": "roma",
    "name": "ASL di Roma (Roma 1–6)",
+   "aziende_multiple": true,
    "province": "Roma",
    "site_url": "https://www.salutelazio.it/",
    "official_domains": [
@@ -988,7 +992,8 @@
     "Zone: per ASL Roma 1 le pagine indicano i distretti (1, 2, 3, 13, 14, 15) ma non scrivono a quali municipi corrispondono; per ASL Roma 2 la pagina dice Distretto = Municipio (IV–IX).",
     "PEC: messa solo quella dell'ASL Roma 1; le altre trovate sono protocollo@pec.aslroma4.it, urp@pec.aslroma3.it, protocollo@pec.aslroma5.it, servizio.protocollo@pec.aslroma6.it.",
     "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari.",
-    "Liste d'attesa: nel Lazio il percorso si chiama «Pass di garanzia» (pagine copiate: URP dell'ASL Roma 1, «Il percorso di garanzia nella Regione Lazio»). Gli estratti (22/10/2026) dicono: vale per le classi B e D, si chiede sul sito della Regione, allo sportello CUP o al ReCUP 06 9939, poi l'ASL propone un appuntamento. Da confermare sulle copie delle pagine in «pagine» (salutelazio.it/it/pass-di-garanzia) prima di scrivere how_to e letter_mode."
+    "Liste d'attesa: nel Lazio il percorso si chiama «Pass di garanzia» (pagine copiate: URP dell'ASL Roma 1, «Il percorso di garanzia nella Regione Lazio»). Gli estratti (22/10/2026) dicono: vale per le classi B e D, si chiede sul sito della Regione, allo sportello CUP o al ReCUP 06 9939, poi l'ASL propone un appuntamento. Da confermare sulle copie delle pagine in «pagine» (salutelazio.it/it/pass-di-garanzia) prima di scrivere how_to e letter_mode.",
+    "Lettere (docs/regioni.md, sezione 1 «Province e aziende»): in questa provincia ci sono sei aziende: ASL Roma 1, 2, 3, 4, 5 e 6. Una lettera all'azienda va all'una o all'altra secondo il comune. Prima di accendere cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa o ausili servono le zone in sub_areas: per ognuna id, label (il pulsante «In quale zona?»), comuni, nome_lettera e pec o emails, dalle copie delle pagine ufficiali. Finché mancano, aziende_multiple resta true e tests/coerenza.test.mjs tiene spenti quei moduli."
    ],
    "pagine": [
     {
@@ -1020,6 +1025,7 @@
   {
    "id": "viterbo",
    "name": "ASL di Viterbo",
+   "nome_lettera": "ASL di Viterbo",
    "province": "Viterbo",
    "site_url": "https://www.asl.vt.it/",
    "official_domains": [

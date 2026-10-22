@@ -36,14 +36,19 @@ const moduli = JSON.parse(fs.readFileSync(path.join(SITE, 'data/moduli.json'), '
 // Le regioni dall'indice, non scritte a mano: quando una regione diventa attiva o accende un modulo, i controlli
 // sotto la seguono (22/10/2026: la Campania attivata faceva fallire il controllo «regione non attiva»).
 const indiceRegioni = JSON.parse(fs.readFileSync(path.join(SITE, 'data/regioni/index.json'), 'utf8')).regioni;
-const INATTIVA = (indiceRegioni.find((r) => !r.attiva) || {}).id;
+// Dal 22/10/2026 sono attive tutte: se nessuna è non attiva, nel browser (page.route) si aggiunge all'indice una
+// regione finta non attiva, così la schermata «La tua regione non c'è ancora» resta provata qualunque siano i dati.
+const FINTA = { id: 'prova-inattiva', name: 'Regione di prova', attiva: false, asl_label: 'ASL' };
+const INATTIVA = (indiceRegioni.find((r) => !r.attiva) || FINTA).id;
 const LOMBARDIA = indiceRegioni.find((r) => r.id === 'lombardia') || { moduli: [] };
 // Le pagine delle aree («Visite ed esami»…): il riquadro «Chi può aiutarti» deve aspettare la regione (in Sicilia «ASP»).
 const aree = JSON.parse(fs.readFileSync(path.join(SITE, 'data/moduli.json'), 'utf8')).groups.map((g) => `${BASE}${g.page}/`);
 
 // Nel browser: le frasi siciliane senza «Sicilia» (fuori dal riquadro delle fonti).
-function fraseSiciliane() {
-  const SIC = /\bASP\b|SovraCUP|ASPConTe|Regione Siciliana|\b(Palermo|Catania|Messina|Trapani|Siracusa|Agrigento|Enna|Ragusa|Caltanissetta)\b/;
+// aspOk: la regione chiama ASP anche le sue aziende (la Calabria): lì «ASP» da solo non è siciliano.
+function fraseSiciliane(aspOk) {
+  const SIC = aspOk ? /SovraCUP|ASPConTe|Regione Siciliana|\b(Palermo|Catania|Messina|Trapani|Siracusa|Agrigento|Enna|Ragusa|Caltanissetta)\b/
+    : /\bASP\b|SovraCUP|ASPConTe|Regione Siciliana|\b(Palermo|Catania|Messina|Trapani|Siracusa|Agrigento|Enna|Ragusa|Caltanissetta)\b/;
   const out = [];
   let titoletto = '';
   for (const el of document.querySelectorAll('main h2, main h3, main h4, main p, main li, main dd, main td, main summary, section.guida h2, section.guida h3, section.guida p, section.guida li')) {
@@ -63,7 +68,7 @@ async function controlla(page, dove, regione, problemi) {
   if (strano) problemi.push(`${dove}: testo strano «${strano[0]}»`);
   if (await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1)) problemi.push(`${dove}: più larga dello schermo`);
   // fonti.html è l'elenco delle fonti di tutte le regioni (anche Calabria e Basilicata hanno le ASP): lì i nomi vanno bene.
-  if (regione !== 'sicilia' && !dove.includes('/fonti.html')) for (const f of await page.evaluate(fraseSiciliane)) problemi.push(`${dove}: frase siciliana senza «Sicilia»: «${f}»`);
+  if (regione !== 'sicilia' && !dove.includes('/fonti.html')) for (const f of await page.evaluate(fraseSiciliane, (indiceRegioni.find((r) => r.id === regione) || {}).asl_label === 'ASP')) problemi.push(`${dove}: frase siciliana senza «Sicilia»: «${f}»`);
 }
 
 // Accessibilità (audit del 21/10/2026): pulsanti e link da toccare alti almeno 44 px; con il testo
@@ -182,6 +187,14 @@ async function erroriCollegati(page, dove, problemi) {
   const nuova = async (regione) => {
     const ctx = await browser.newContext({ viewport: { width: 360, height: 740 } });
     if (regione) await ctx.addInitScript((r) => { try { localStorage.setItem('gs-regione', r); } catch { /* niente */ } }, regione);
+    if (regione === FINTA.id && INATTIVA === FINTA.id) {
+      await ctx.route('**/data/regioni/index.json', async (route) => {
+        const res = await route.fetch();
+        const j = await res.json();
+        j.regioni.push(FINTA);
+        await route.fulfill({ response: res, json: j });
+      });
+    }
     return ctx;
   };
   const errori = (page, dove) => {
@@ -189,7 +202,9 @@ async function erroriCollegati(page, dove, problemi) {
     page.on('dialog', (d) => d.dismiss());
   };
 
-  for (const regione of ['sicilia', 'lazio', null]) {
+  // SOLO_REGIONI=1 salta i due giri lunghi qui sotto (pagine e percorsi a caso): per provare in fretta i percorsi delle regioni.
+  const SOLO = !!process.env.SOLO_REGIONI;
+  for (const regione of SOLO ? [] : ['sicilia', 'lazio', null]) {
     const ctx = await nuova(regione);
     for (const u of urls) {
       const page = await ctx.newPage();
@@ -215,7 +230,7 @@ async function erroriCollegati(page, dove, problemi) {
 
   // Percorsi nei moduli come utente del Lazio e della Sicilia (che ha anche uffici e lettere): clic sulle scelte,
   // in tre ordini diversi. A ogni passo si prova anche a mandare vuoti i campi (erroriCollegati).
-  for (const regione of ['lazio', 'sicilia']) for (const m of moduli) {
+  for (const regione of SOLO ? [] : ['lazio', 'sicilia']) for (const m of moduli) {
     for (let giro = 0; giro < 3; giro++) {
       const ctx = await nuova(regione);
       const page = await ctx.newPage();
@@ -374,6 +389,143 @@ async function erroriCollegati(page, dove, problemi) {
       } catch (e) { problemi.push(`${dove}: percorso interrotto (${e.message.split('\n')[0]})`); }
       await controlla(page, dove, 'sicilia', problemi);
       await ctx.close();
+    }
+
+    // Tutte le regioni con «moduli» (22/10/2026: prima i percorsi giravano solo in Sicilia, nel Lazio e senza regione).
+    // Per ogni modulo acceso (tranne i Numeri utili) una provincia (a turno), il pulsante principale, la provincia,
+    // la zona se c'è, poi sempre la prima scelta fino alla fine; per i moduli con una lettera anche il percorso fino alla
+    // lettera (percorsi qui sopra). L'invalidità in tutte le province la prova già tests/combinazioni.cjs.
+    // A ogni schermata: errori JavaScript, «undefined», «Sicilia» e «ASP» fuori dalla Sicilia (la Calabria ha le ASP),
+    // «non abbiamo ancora i dati» in un modulo acceso, email che non sono nei dati della regione; nella lettera
+    // all'azienda, in testa il nome dell'azienda della regione (nome_lettera, o la sigla + «di» + provincia) e l'email
+    // a un indirizzo di quell'azienda (o della sua zona).
+    const LETTERA_AZIENDA = ['medico-famiglia', 'assistenza-domiciliare', 'cure-palliative', 'liste-attesa', 'ausili'];
+    const fileRegione = (r, n) => path.join(SITE, `data/regioni/${r.id}/${(r.files && r.files[n]) || n}.json`);
+    const EMAIL = /[\w.+-]+@[\w-]+(?:\.[\w-]+)+/g;
+    const emailDi = (testo) => (testo.match(EMAIL) || []).map((x) => x.toLowerCase());
+    const emailRegione = (r, extra = []) => new Set([...['asl', 'inps'].flatMap((n) => (fs.existsSync(fileRegione(r, n)) ? emailDi(fs.readFileSync(fileRegione(r, n), 'utf8')) : [])), ...extra, 'info@guidasanita.it']);
+    // L'azienda con la zona (stessa regola di js/letters.js, scritta qui a parte).
+    const conLaZona = (a, z) => (z ? { ...a, ...z, id: a.id, province: a.province } : a);
+    const testaAttesa = (r, a) => `Spett.le ${a.nome_lettera || `${r.asl_intestazione || r.asl_label} di ${a.province}`}`;
+    async function percorri({ r, a, m, zona = null, finoAllaLettera = false, prepara = null, extraEmail = [], chiedeZona = !!zona }) {
+      const ctx = await nuova(r.id);
+      if (prepara) await prepara(ctx);
+      const page = await ctx.newPage();
+      const base = `${r.id} /${m}/ ${a.province}${zona ? ` zona «${zona.label}»` : ''}${finoAllaLettera ? ' fino alla lettera' : ''}`;
+      let dove = base;
+      errori(page, () => dove);
+      const az = conLaZona(a, zona);
+      const permesse = emailRegione(r, extraEmail);
+      const sic = r.id === 'sicilia';
+      const guarda = async () => {
+        await controlla(page, dove, r.id, problemi);
+        const t = await page.evaluate(() => {
+          const app = document.getElementById('app').cloneNode(true);
+          for (const d of app.querySelectorAll('details.fonti, .sources')) d.remove();
+          return { testo: app.innerText, mail: [...document.querySelectorAll('#app a[href^="mailto:"]')].map((x) => decodeURIComponent(x.getAttribute('href').slice(7).split('?')[0])).filter(Boolean) };
+        });
+        if (/non abbiamo ancora i dati|non li abbiamo ancora/.test(t.testo)) problemi.push(`${dove}: «non abbiamo ancora i dati» in un modulo acceso`);
+        if (!sic) {
+          const s = t.testo.match(/.{0,40}\bSicili.{0,30}/);
+          if (s) problemi.push(`${dove}: «Sicilia» fuori dalla Sicilia: «${s[0]}»`);
+          const asp = r.asl_label !== 'ASP' && t.testo.match(/.{0,40}\bASP\b.{0,30}/);
+          if (asp) problemi.push(`${dove}: «ASP» fuori dalla Sicilia: «${asp[0]}»`);
+        }
+        for (const x of t.mail.flatMap((y) => y.split(','))) if (!permesse.has(x.toLowerCase())) problemi.push(`${dove}: email ${x} che non è nei dati della regione`);
+      };
+      const titolo = () => page.evaluate(() => (document.querySelector('#app h1') || {}).innerText || '');
+      const lettera = async () => {
+        const testo = await page.evaluate(() => ((document.getElementById('preview') || {}).innerText || '').trim());
+        if (!/^Spett\.le/.test(testo)) return false;
+        if (LETTERA_AZIENDA.includes(m)) {
+          const prima = testo.split('\n')[0];
+          if (prima !== testaAttesa(r, az)) problemi.push(`${dove}: la lettera comincia con «${prima}», non «${testaAttesa(r, az)}»`);
+          const href = await page.evaluate(() => (document.getElementById('mail-btn') || {}).getAttribute && document.getElementById('mail-btn').getAttribute('href'));
+          const a2 = decodeURIComponent((href || '').replace(/^mailto:/, '').split('?')[0]);
+          const sue = new Set([az.pec, az.send_to, ...(az.emails || [])].filter(Boolean).map((x) => x.toLowerCase()));
+          if (a2 && !sue.has(a2.toLowerCase())) problemi.push(`${dove}: la lettera va a ${a2}, che non è un indirizzo di ${az.nome_lettera || az.name}`);
+        }
+        return true;
+      };
+      try {
+        await page.goto(`${BASE}${m}/`, { waitUntil: 'networkidle' });
+        await page.click('#app .btn.primary:not([disabled])', { timeout: 5000 });
+        await page.waitForTimeout(200);
+        dove = `${base} provincia`;
+        await guarda();
+        await page.click(`#app button.choice[data-set*='"province":"${a.id}"']`, { timeout: 5000 });
+        await page.waitForTimeout(200);
+        const h = await titolo();
+        if (/In quale zona/.test(h) !== chiedeZona) problemi.push(`${dove}: ${chiedeZona ? 'manca' : 'c\'è'} la domanda «In quale zona?» («${h}»)`);
+        if (zona && /In quale zona/.test(h)) {
+          dove = `${base} zona`;
+          await guarda();
+          await page.click(`#app button.choice[data-set*='"zona":"${zona.id}"']`, { timeout: 5000 });
+          await page.waitForTimeout(200);
+        }
+        if (finoAllaLettera) {
+          await segui(page, percorsi[m].passi);
+          dove = `${base} risultato`;
+          await guarda();
+          const b = page.locator('#app [data-go="letter"]').first();
+          if (!(await b.count())) problemi.push(`${dove}: manca il pulsante della lettera`);
+          else {
+            await b.click();
+            await page.waitForTimeout(300);
+            dove = `${base} lettera`;
+            await guarda();
+            if (!(await lettera())) problemi.push(`${dove}: la lettera non comincia con «Spett.le»`);
+          }
+        } else {
+          for (let passo = 0; passo < 14; passo++) {
+            dove = `${base} passo ${passo} «${(await titolo()).trim().slice(0, 40)}»`;
+            await guarda();
+            if (await lettera()) break;
+            for (const d of await page.$$('#app input[type=date]')) if (await d.isVisible()) await d.fill(iso(-60)).catch(() => {});
+            for (const d of await page.$$('#app input[type=number]')) if (await d.isVisible()) await d.fill('55').catch(() => {});
+            let b = null;
+            for (const x of await page.$$('#app button.choice:not(.link), #app [data-go="letter"]')) if (await x.isVisible()) { b = x; break; }
+            if (!b) for (const x of await page.$$('#app form button[type=submit]')) if (await x.isVisible()) { b = x; break; }
+            if (!b) break;
+            await b.click().catch(() => {});
+            await page.waitForTimeout(200);
+            if (!page.url().startsWith(`${BASE}${m}`)) break;
+          }
+        }
+      } catch (e) { problemi.push(`${dove}: percorso interrotto (${e.message.split('\n')[0]})`); }
+      await ctx.close();
+    }
+    let giro = 0;
+    for (const r of indiceRegioni.filter((x) => x.attiva && x.moduli)) {
+      const asl = JSON.parse(fs.readFileSync(fileRegione(r, 'asl'), 'utf8')).asl;
+      for (const m of r.moduli.filter((x) => x !== 'numeri-utili')) {
+        const a = asl[giro++ % asl.length];
+        const zone = (a.sub_areas || []).filter((z) => z && typeof z === 'object' && z.id);
+        await percorri({ r, a, m, zona: zone[0] || null });
+        if (percorsi[m]) await percorri({ r, a, m, zona: zone[zone.length - 1] || null, finoAllaLettera: true });
+      }
+    }
+
+    // «In quale zona?» con dati finti (fixture): l'ASP di Messina con due zone, ognuna con nome e indirizzi suoi.
+    // La lettera va alla zona scelta. Senza le zone finte Messina non chiede la zona (le sue sub_areas sono frasi).
+    {
+      const sic = indiceRegioni.find((x) => x.id === 'sicilia');
+      const messina = JSON.parse(fs.readFileSync(fileRegione(sic, 'asl'), 'utf8')).asl.find((x) => x.id === 'messina');
+      const ZONE = [
+        { id: 'prova-uno', label: 'Zona di prova uno', comuni: ['Messina'], nome_lettera: 'ASP Prova Zona Uno', pec: 'zona.uno@pec.prova.it', emails: [] },
+        { id: 'prova-due', label: 'Zona di prova due', nome_lettera: 'ASP Prova Zona Due', pec: 'zona.due@pec.prova.it', emails: ['urp@zona-due.prova.it'] },
+      ];
+      const prepara = (ctx) => ctx.route('**/data/regioni/sicilia/asp.json', async (route) => {
+        const res = await route.fetch();
+        const j = await res.json();
+        j.asl.find((x) => x.id === 'messina').sub_areas = ZONE;
+        await route.fulfill({ response: res, json: j });
+      });
+      const extraEmail = ZONE.flatMap((z) => [z.pec, ...z.emails]);
+      for (const m of ['medico-famiglia', 'cure-palliative', 'assistenza-domiciliare']) {
+        await percorri({ r: sic, a: { ...messina, sub_areas: ZONE }, m, zona: ZONE[1], finoAllaLettera: true, prepara, extraEmail });
+      }
+      await percorri({ r: sic, a: messina, m: 'medico-famiglia', finoAllaLettera: true, chiedeZona: false });
     }
   }
   {

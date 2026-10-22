@@ -2,6 +2,47 @@
 // TODO-VERIFY: ogni modello va approvato dal legale prima del lancio.
 import { formatIt, art, daysBetween } from './engine.js';
 
+// ---------- Aziende sanitarie e zone (docs/regioni.md, sezione 1 «Province e aziende») ----------
+// Stanno qui, tra le funzioni pure delle lettere, perché servono alle lettere e ai test senza pagina.
+//
+// Una provincia può avere più aziende (Roma: 6 ASL; Napoli: 3) o un'azienda divisa in zone con uffici diversi.
+// Allora l'azienda ha «sub_areas». Una zona può essere:
+// - una frase («Messina – Taormina»): si legge e basta, non cambia la lettera (Messina, in Sicilia);
+// - un oggetto con «id» e «label» (il testo del pulsante «In quale zona?») e i campi della lettera che valgono per
+//   quella zona: name, nome_lettera, pec, emails, send_to, how_to, phones, contacts, scelta_medico… Questi campi
+//   prendono il posto di quelli dell'azienda. Non cambiano mai «id» e «province».
+// I moduli che scrivono all'azienda chiedono «In quale zona?» solo se c'è almeno una zona oggetto.
+
+// Le zone che cambiano la lettera (le frasi restano fuori).
+export function zoneLettera(a) {
+  return a && Array.isArray(a.sub_areas) ? a.sub_areas.filter((z) => z && typeof z === 'object' && z.id) : [];
+}
+
+// Il nome di una zona per chi legge: la frase, oppure label (o name) dell'oggetto.
+export function nomeZona(z) {
+  if (typeof z === 'string') return z;
+  return (z && (z.label || z.name)) || '';
+}
+
+// L'azienda con i campi della zona scelta al posto dei suoi. Zona sconosciuta o assente: l'azienda com'è.
+const FISSI = ['id', 'province', 'provinces', 'sub_areas', 'label'];
+export function conZona(a, zonaId) {
+  if (!a || !zonaId) return a;
+  const z = zoneLettera(a).find((x) => x.id === zonaId);
+  if (!z) return a;
+  const out = { ...a, zona: z };
+  for (const [k, v] of Object.entries(z)) if (!FISSI.includes(k)) out[k] = v;
+  return out;
+}
+
+// Come si scrive l'azienda in testa a una lettera. nome_lettera, se c'è (il nome ufficiale: «USL Umbria 2»,
+// «Azienda USL della Valle d'Aosta»); se no la parola della regione + «di» + provincia
+// (Sicilia: «Azienda Sanitaria Provinciale di Palermo»).
+export function intestazioneDi(a, parola) {
+  if (!a) return '';
+  return a.nome_lettera || `${parola} di ${a.province}`;
+}
+
 const blank = (v, placeholder = '__________') => (v && String(v).trim()) || placeholder;
 
 function personBlock(p) {
@@ -62,9 +103,11 @@ function signature(p, today) {
 }
 
 // Modulo 1 — richiesta di attivazione del percorso di tutela (SPEC sezione 7).
+// intestazione: il nome dell'azienda in testa alla lettera (intestazioneAzienda() in js/flow.js); se manca,
+// ente + «di» + aspName («Azienda Sanitaria Provinciale di Palermo»).
 // deadline: fine del tempo massimo (prenotazione + maxDays); callbackDays/callbackDeadline: richiamo del PNGLA
 // quando il CUP non dà una data (non per la classe U); prescriptionDate: data della ricetta, se nota.
-export function tutelaLetter({ ente = 'Azienda Sanitaria Provinciale', aspName, aspAddress, person: p, service, nre, cls, maxDays, bookingDate, appointmentDate, noDateOffered, requestDate, prescriptionDate, deadline, callbackDays, callbackDeadline, today }) {
+export function tutelaLetter({ intestazione, ente = 'Azienda Sanitaria Provinciale', aspName, aspAddress, person: p, service, nre, cls, maxDays, bookingDate, appointmentDate, noDateOffered, requestDate, prescriptionDate, deadline, callbackDays, callbackDeadline, today }) {
   const term = (d) => (today && daysBetween(d, today) >= 0 ? `termine scaduto ${art('il', d)}${formatIt(d)}` : `termine che scade ${art('il', d)}${formatIt(d)}`);
   const callback = cls === 'U' || !requestDate ? ''
     : !callbackDays ? ', né è stato/a ricontattato/a entro il termine previsto'
@@ -74,7 +117,7 @@ export function tutelaLetter({ ente = 'Azienda Sanitaria Provinciale', aspName, 
     : `- in data ${formatIt(bookingDate)} ha richiesto la prenotazione tramite i canali ufficiali e la prima disponibilità proposta è ${art('il', appointmentDate)}${formatIt(appointmentDate)}, oltre il tempo massimo previsto${deadline ? ` (${term(deadline)})` : ''};`;
   const attach = 'copia del documento di identità; ricetta; foglio/promemoria di prenotazione' +
     extra(p);
-  return `Spett.le ${ente} di ${aspName}
+  return `Spett.le ${intestazione || `${ente} di ${aspName}`}
 ${aspAddress || ''}
 
 Oggetto: Richiesta di attivazione del percorso di tutela – "${blank(service)}", ricetta n. ${blank(nre)}, classe ${cls} (prestazione di primo accesso; Piano Nazionale di Governo delle Liste d'Attesa 2026-2028; D.Lgs. 124/1998, art. 3, commi 10 e 13)
@@ -95,8 +138,8 @@ ${signature(p, today)}
 }
 
 // Modulo 1 — sollecito se l'ASP non risponde.
-export function tutelaReminder({ ente = 'Azienda Sanitaria Provinciale', aspName, aspAddress, person: p, service, nre, cls, firstRequestDate, protocol, today }) {
-  return `Spett.le ${ente} di ${aspName}
+export function tutelaReminder({ intestazione, ente = 'Azienda Sanitaria Provinciale', aspName, aspAddress, person: p, service, nre, cls, firstRequestDate, protocol, today }) {
+  return `Spett.le ${intestazione || `${ente} di ${aspName}`}
 ${aspAddress || ''}
 
 Oggetto: SOLLECITO – Richiesta di attivazione del percorso di tutela ${art('del', firstRequestDate)}${firstRequestDate ? formatIt(firstRequestDate) : '__________'} (prestazione "${blank(service)}", ricetta n. ${blank(nre)}, classe di priorità ${cls})
@@ -200,8 +243,8 @@ ${signature(p, today)}
 }
 
 // Modulo 4 — sollecito all'ASP per l'autorizzazione di un ausilio o di una protesi.
-export function ausiliReminder({ ente = 'Azienda Sanitaria Provinciale', aspName, address, person: p, device, requestDate, protocol, prescriber, deadline, days = 20, today }) {
-  return `Spett.le ${ente} di ${aspName}
+export function ausiliReminder({ intestazione, ente = 'Azienda Sanitaria Provinciale', aspName, address, person: p, device, requestDate, protocol, prescriber, deadline, days = 20, today }) {
+  return `Spett.le ${intestazione || `${ente} di ${aspName}`}
 Ufficio Assistenza Protesica
 ${address || ''}
 

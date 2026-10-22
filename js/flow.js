@@ -1,11 +1,31 @@
 // Navigazione comune ai moduli: schermate, Indietro, Ricomincia,
 // riquadri Aiuto e Fonti. Le risposte restano in memoria finché la pagina è aperta.
+import { zoneLettera, nomeZona, intestazioneDi } from './letters.js';
 import {
   esc, helpBox, sourcesBox, choice, moreHelp, hideHeadingEmoji, enableStart,
-  MAINTAINER_EMAIL, regioni, regioniAttive, regioneInfo, inRegione, regioneDeiDati, regioneNonPronta, regioneSalvata, regione, setRegione, regioneRicordata, moduloPagina,
+  MAINTAINER_EMAIL, aslIntestazione, regioni, regioniAttive, regioneInfo, inRegione, regioneDeiDati, regioneNonPronta, regioneSalvata, regione, setRegione, regioneRicordata, moduloPagina,
 } from './common.js';
 
 export { choice };
+
+// ---------- Provincia e zona ----------
+// L'intestazione della lettera per un'azienda (o la sua zona, js/letters.js): il nome ufficiale «nome_lettera»
+// se c'è, se no aslIntestazione() + «di» + provincia. Sicilia: «Azienda Sanitaria Provinciale di Palermo».
+export const intestazioneAzienda = (a) => intestazioneDi(a, aslIntestazione());
+// Il pulsante di una provincia. Se la sua azienda ha zone con una lettera diversa (sub_areas oggetto, js/letters.js),
+// prima di next viene la domanda «In quale zona?» (schermata «zona» del modulo, fatta con zonaScreen).
+export function provinceChoice(a, next) {
+  return choice('', a.province, { province: a.id, zona: null }, zoneLettera(a).length ? 'zona' : next);
+}
+// «In quale zona?»: a è l'azienda della provincia scelta (senza la zona), next la schermata dopo.
+export function zonaScreen(a, next) {
+  const zone = zoneLettera(a);
+  return {
+    html: `<h1>📍 In quale zona?</h1>
+      <p>In provincia di ${esc(a.province)} ci sono più uffici. La lettera va a quello della tua zona. Scegli dove abita la persona.</p>
+      ${zone.map((z) => choice('', nomeZona(z), { zona: z.id }, next, [].concat(z.comuni || []).join(', '))).join('')}`,
+  };
+}
 
 // Schermate collegate alla cronologia del browser: il tasto Indietro del
 // telefono torna alla schermata precedente invece di uscire dal modulo.

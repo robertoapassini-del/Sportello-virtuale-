@@ -6,6 +6,7 @@
   {
    "id": "bergamo",
    "name": "ATS di Bergamo",
+   "aziende_multiple": true,
    "province": "Bergamo",
    "site_url": "https://www.ats-bg.it/",
    "official_domains": [
@@ -218,7 +219,8 @@
     "PUA dell'ASST Papa Giovanni XXIII e cure domiciliari dell'ASST Bergamo Est: nessun numero nelle pagine copiate.",
     "La pagina ATS Assistenza domiciliare (aggiornata al 04/03/2025) non riporta numeri: i recapiti sono sul modulo.",
     "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe.",
-    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): ASST Bergamo Ovest tempi_attesa@asst-bgovest.it (con ricetta e telefono); ASST Bergamo Est rua.tempiattesa@asst-bergamoest.it o sedi territoriali; Papa Giovanni XXIII: nessuna procedura trovata."
+    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): ASST Bergamo Ovest tempi_attesa@asst-bgovest.it (con ricetta e telefono); ASST Bergamo Est rua.tempiattesa@asst-bergamoest.it o sedi territoriali; Papa Giovanni XXIII: nessuna procedura trovata.",
+    "Lettere (docs/regioni.md, sezione 1 «Province e aziende»): in Lombardia l'ATS controlla, ma visite, assistenza a casa, protesica e scelta del medico le fanno le ASST, e in una provincia ce ne possono essere più d'una (le email URP qui sopra sono di aziende diverse). Prima di accendere cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa o ausili servono le zone in sub_areas (una per ASST: id, label, comuni, nome_lettera e pec o emails, dalle copie). Finché mancano, aziende_multiple resta true e tests/coerenza.test.mjs tiene spenti quei moduli."
    ],
    "pagine": [
     {
@@ -306,6 +308,7 @@
   {
    "id": "brescia",
    "name": "ATS di Brescia",
+   "aziende_multiple": true,
    "province": "Brescia",
    "site_url": "https://www.ats-brescia.it/",
    "official_domains": [
@@ -640,7 +643,8 @@
     "ASST Spedali Civili: la pagina Numeri utili (con il CUP 030 224466) è aggiornata a luglio 2025; l'orario dell'URP 030 3995808 è scritto solo per agosto.",
     "Pagina URP dell'ASST Valcamonica (scheda URP) non trovata: usata l'altra scheda URP.",
     "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe.",
-    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): ASST Spedali Civili percorsotutela.scb@asst-spedalicivili.it con modulo, ricetta e documento; ASST del Garda modulo da mandare a protocollo.aziendale@asst-garda.it."
+    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): ASST Spedali Civili percorsotutela.scb@asst-spedalicivili.it con modulo, ricetta e documento; ASST del Garda modulo da mandare a protocollo.aziendale@asst-garda.it.",
+    "Lettere (docs/regioni.md, sezione 1 «Province e aziende»): in Lombardia l'ATS controlla, ma visite, assistenza a casa, protesica e scelta del medico le fanno le ASST, e in una provincia ce ne possono essere più d'una (le email URP qui sopra sono di aziende diverse). Prima di accendere cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa o ausili servono le zone in sub_areas (una per ASST: id, label, comuni, nome_lettera e pec o emails, dalle copie). Finché mancano, aziende_multiple resta true e tests/coerenza.test.mjs tiene spenti quei moduli."
    ],
    "pagine": [
     {
@@ -716,6 +720,7 @@
   {
    "id": "como",
    "name": "ATS dell'Insubria",
+   "aziende_multiple": true,
    "province": "Como",
    "site_url": "https://www.ats-insubria.it/",
    "official_domains": [
@@ -901,7 +906,8 @@
     "Cure domiciliari / PUA dell'ASST Lariana: la pagina non riporta numeri di telefono.",
     "Alto Lario: nella pagina contatti dell'ASST Valtellina e Alto Lario non c'è l'Ospedale di Gravedona; c'è solo il Poliambulatorio di Dongo.",
     "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe.",
-    "Percorso di tutela: l'ASST Lariana ha il «Modulo di istanza di attivazione del percorso di tutela» nella pagina URP (copia del 22/10/2026), senza scritto dove mandarlo; (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server) prima si cerca posto nell'ATS con GP++, poi lo prende in carico l'Ufficio Percorso di Tutela."
+    "Percorso di tutela: l'ASST Lariana ha il «Modulo di istanza di attivazione del percorso di tutela» nella pagina URP (copia del 22/10/2026), senza scritto dove mandarlo; (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server) prima si cerca posto nell'ATS con GP++, poi lo prende in carico l'Ufficio Percorso di Tutela.",
+    "Lettere (docs/regioni.md, sezione 1 «Province e aziende»): in Lombardia l'ATS controlla, ma visite, assistenza a casa, protesica e scelta del medico le fanno le ASST, e in una provincia ce ne possono essere più d'una (le email URP qui sopra sono di aziende diverse). Prima di accendere cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa o ausili servono le zone in sub_areas (una per ASST: id, label, comuni, nome_lettera e pec o emails, dalle copie). Finché mancano, aziende_multiple resta true e tests/coerenza.test.mjs tiene spenti quei moduli."
    ],
    "pagine": [
     {
@@ -945,6 +951,7 @@
   {
    "id": "cremona",
    "name": "ATS della Val Padana",
+   "aziende_multiple": true,
    "province": "Cremona",
    "site_url": "https://www.ats-valpadana.it/",
    "official_domains": [
@@ -1186,7 +1193,8 @@
     "ASST di Cremona: per l'ospedale di Cremona e Oglio Po il CUP ha sportelli ma per telefono solo il numero regionale.",
     "ASST di Cremona: la pagina contatti (PUA) è aggiornata a luglio 2025.",
     "Pagina della guardia medica dell'ATS Val Padana non trovata.",
-    "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe."
+    "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe.",
+    "Lettere (docs/regioni.md, sezione 1 «Province e aziende»): in Lombardia l'ATS controlla, ma visite, assistenza a casa, protesica e scelta del medico le fanno le ASST, e in una provincia ce ne possono essere più d'una (le email URP qui sopra sono di aziende diverse). Prima di accendere cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa o ausili servono le zone in sub_areas (una per ASST: id, label, comuni, nome_lettera e pec o emails, dalle copie). Finché mancano, aziende_multiple resta true e tests/coerenza.test.mjs tiene spenti quei moduli."
    ],
    "pagine": [
     {
@@ -1230,6 +1238,7 @@
   {
    "id": "lecco",
    "name": "ATS della Brianza",
+   "aziende_multiple": true,
    "province": "Lecco",
    "site_url": "https://www.ats-brianza.it/",
    "official_domains": [
@@ -1364,7 +1373,8 @@
     "PUA delle Case di Comunità dell'ASST di Lecco: recapiti e orari solo in un dépliant non copiato, nessun numero nella pagina.",
     "Il numero 0341 253000 è insieme centralino e prenotazioni dell'ASST di Lecco (solo alcune visite ed esami ospedalieri); per il resto vale il numero regionale.",
     "Mancano numeri per cure domiciliari, protesica, cartella clinica e scelta del medico dell'ASST di Lecco.",
-    "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe."
+    "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe.",
+    "Lettere (docs/regioni.md, sezione 1 «Province e aziende»): in Lombardia l'ATS controlla, ma visite, assistenza a casa, protesica e scelta del medico le fanno le ASST, e in una provincia ce ne possono essere più d'una (le email URP qui sopra sono di aziende diverse). Prima di accendere cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa o ausili servono le zone in sub_areas (una per ASST: id, label, comuni, nome_lettera e pec o emails, dalle copie). Finché mancano, aziende_multiple resta true e tests/coerenza.test.mjs tiene spenti quei moduli."
    ],
    "pagine": [
     {
@@ -1400,6 +1410,7 @@
   {
    "id": "lodi",
    "name": "ATS della Città Metropolitana di Milano",
+   "aziende_multiple": true,
    "province": "Lodi",
    "site_url": "https://www.ats-milano.it/",
    "official_domains": [
@@ -1513,7 +1524,8 @@
     "ASST di Lodi: per prenotare al telefono la pagina rimanda solo al Contact Center regionale (800 638638 / 02 999599): nessun CUP proprio.",
     "ASST di Lodi: la pagina cure domiciliari (Valutazione Multidimensionale) non ha numeri di telefono; nessun PUA trovato.",
     "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe.",
-    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): l'ASST di Lodi prende in carico la ricetta con GP++ e poi con uno strumento aziendale; canale per il cittadino non trovato."
+    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): l'ASST di Lodi prende in carico la ricetta con GP++ e poi con uno strumento aziendale; canale per il cittadino non trovato.",
+    "Lettere (docs/regioni.md, sezione 1 «Province e aziende»): in Lombardia l'ATS controlla, ma visite, assistenza a casa, protesica e scelta del medico le fanno le ASST, e in una provincia ce ne possono essere più d'una (le email URP qui sopra sono di aziende diverse). Prima di accendere cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa o ausili servono le zone in sub_areas (una per ASST: id, label, comuni, nome_lettera e pec o emails, dalle copie). Finché mancano, aziende_multiple resta true e tests/coerenza.test.mjs tiene spenti quei moduli."
    ],
    "pagine": [
     {
@@ -1569,6 +1581,7 @@
   {
    "id": "mantova",
    "name": "ATS della Val Padana",
+   "aziende_multiple": true,
    "province": "Mantova",
    "site_url": "https://www.ats-valpadana.it/",
    "official_domains": [
@@ -1708,7 +1721,8 @@
     "ASST di Mantova: per prenotare le pagine danno solo il numero regionale; nessun CUP telefonico proprio.",
     "Nessun numero per scelta del medico, protesica o PUA nelle pagine copiate dell'ASST di Mantova.",
     "Il WhatsApp dell'URP dell'ASST di Mantova (cellulare) non è stato messo.",
-    "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe."
+    "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe.",
+    "Lettere (docs/regioni.md, sezione 1 «Province e aziende»): in Lombardia l'ATS controlla, ma visite, assistenza a casa, protesica e scelta del medico le fanno le ASST, e in una provincia ce ne possono essere più d'una (le email URP qui sopra sono di aziende diverse). Prima di accendere cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa o ausili servono le zone in sub_areas (una per ASST: id, label, comuni, nome_lettera e pec o emails, dalle copie). Finché mancano, aziende_multiple resta true e tests/coerenza.test.mjs tiene spenti quei moduli."
    ],
    "pagine": [
     {
@@ -1744,6 +1758,7 @@
   {
    "id": "milano",
    "name": "ATS della Città Metropolitana di Milano",
+   "aziende_multiple": true,
    "province": "Milano",
    "site_url": "https://www.ats-milano.it/",
    "official_domains": [
@@ -2268,7 +2283,8 @@
     "ASST Melegnano e Martesana: per il PUA di Peschiera Borromeo due pagine danno numeri diversi (02 9811 8079 e 02 9805 8079): non messo. ADI con molte sedi locali: non messe.",
     "ATS: pagina Centro Screening senza numero; pagine «urp-upt» e «telefono-posta-elettronica» non copiate (403). Pagina 116117 dell'ASST Fatebenefratelli Sacco «Pagina non trovata».",
     "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe.",
-    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): Niguarda urp@ospedaleniguarda.it o ruainforma@ospedaleniguarda.it; Santi Paolo e Carlo modulo all'URP; Melegnano e Martesana segnalazione all'URP; Rhodense «Istanza di attivazione del percorso di tutela» nella pagina prenotazioni (copia del 21/10/2026, senza indirizzo)."
+    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): Niguarda urp@ospedaleniguarda.it o ruainforma@ospedaleniguarda.it; Santi Paolo e Carlo modulo all'URP; Melegnano e Martesana segnalazione all'URP; Rhodense «Istanza di attivazione del percorso di tutela» nella pagina prenotazioni (copia del 21/10/2026, senza indirizzo).",
+    "Lettere (docs/regioni.md, sezione 1 «Province e aziende»): in Lombardia l'ATS controlla, ma visite, assistenza a casa, protesica e scelta del medico le fanno le ASST, e in una provincia ce ne possono essere più d'una (le email URP qui sopra sono di aziende diverse). Prima di accendere cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa o ausili servono le zone in sub_areas (una per ASST: id, label, comuni, nome_lettera e pec o emails, dalle copie). Finché mancano, aziende_multiple resta true e tests/coerenza.test.mjs tiene spenti quei moduli."
    ],
    "pagine": [
     {
@@ -2492,6 +2508,7 @@
   {
    "id": "monza-brianza",
    "name": "ATS della Brianza",
+   "aziende_multiple": true,
    "province": "Monza e Brianza",
    "site_url": "https://www.ats-brianza.it/",
    "official_domains": [
@@ -2625,7 +2642,8 @@
     "CUP del San Gerardo: la pagina indica solo il numero regionale 800 638638 (02 999599 da cellulare) e gli sportelli CUP dell'Ospedale Nuovo e Vecchio, senza un numero proprio.",
     "ASST della Brianza: la home copiata è vuota e la pagina URP non riporta il numero dell'URP; manca anche un numero CUP, cure domiciliari e scelta del medico.",
     "Cure domiciliari: la pagina ATS rimanda all'ASST della Brianza senza numero di telefono.",
-    "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe."
+    "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe.",
+    "Lettere (docs/regioni.md, sezione 1 «Province e aziende»): in Lombardia l'ATS controlla, ma visite, assistenza a casa, protesica e scelta del medico le fanno le ASST, e in una provincia ce ne possono essere più d'una (le email URP qui sopra sono di aziende diverse). Prima di accendere cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa o ausili servono le zone in sub_areas (una per ASST: id, label, comuni, nome_lettera e pec o emails, dalle copie). Finché mancano, aziende_multiple resta true e tests/coerenza.test.mjs tiene spenti quei moduli."
    ],
    "pagine": [
     {
@@ -2669,6 +2687,7 @@
   {
    "id": "pavia",
    "name": "ATS di Pavia",
+   "aziende_multiple": true,
    "province": "Pavia",
    "site_url": "https://www.ats-pavia.it/",
    "official_domains": [
@@ -2821,7 +2840,8 @@
     "Il numero CeAD 0382 1958060 viene dalla pagina dell'ATS (aggiornata a febbraio 2025, parla ancora di voucher): da ricontrollare sul sito dell'ASST.",
     "Nessun numero PUA, protesica o scelta del medico nelle pagine copiate dell'ASST di Pavia.",
     "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe.",
-    "Percorso di tutela: l'ASST di Pavia rimanda alla «Guida pratica prime visite 2026» (PDF, non copiato) nella notizia dell'11/09/2026 (copia del 21/10/2026)."
+    "Percorso di tutela: l'ASST di Pavia rimanda alla «Guida pratica prime visite 2026» (PDF, non copiato) nella notizia dell'11/09/2026 (copia del 21/10/2026).",
+    "Lettere (docs/regioni.md, sezione 1 «Province e aziende»): in Lombardia l'ATS controlla, ma visite, assistenza a casa, protesica e scelta del medico le fanno le ASST, e in una provincia ce ne possono essere più d'una (le email URP qui sopra sono di aziende diverse). Prima di accendere cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa o ausili servono le zone in sub_areas (una per ASST: id, label, comuni, nome_lettera e pec o emails, dalle copie). Finché mancano, aziende_multiple resta true e tests/coerenza.test.mjs tiene spenti quei moduli."
    ],
    "pagine": [
     {
@@ -2857,6 +2877,7 @@
   {
    "id": "sondrio",
    "name": "ATS della Montagna",
+   "aziende_multiple": true,
    "province": "Sondrio",
    "site_url": "https://www.ats-montagna.it/",
    "official_domains": [
@@ -3006,7 +3027,8 @@
     "ASST Valtellina e Alto Lario: nessun numero proprio del CUP (rimanda al Contact Center regionale).",
     "Cure domiciliari / ADI (Servizio Fragilità dell'ASST Valtellina e Alto Lario): nessuna pagina copiata con un numero di telefono.",
     "La pagina «Telefono e posta elettronica» dell'ATS della Montagna dà «Pagina non trovata»; usata la pagina Contatti.",
-    "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe."
+    "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe.",
+    "Lettere (docs/regioni.md, sezione 1 «Province e aziende»): in Lombardia l'ATS controlla, ma visite, assistenza a casa, protesica e scelta del medico le fanno le ASST, e in una provincia ce ne possono essere più d'una (le email URP qui sopra sono di aziende diverse). Prima di accendere cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa o ausili servono le zone in sub_areas (una per ASST: id, label, comuni, nome_lettera e pec o emails, dalle copie). Finché mancano, aziende_multiple resta true e tests/coerenza.test.mjs tiene spenti quei moduli."
    ],
    "pagine": [
     {
@@ -3046,6 +3068,7 @@
   {
    "id": "varese",
    "name": "ATS dell'Insubria",
+   "aziende_multiple": true,
    "province": "Varese",
    "site_url": "https://www.ats-insubria.it/",
    "official_domains": [
@@ -3240,7 +3263,8 @@
     "PUA e cure domiciliari (ASST Valle Olona e Sette Laghi): le pagine non riportano numeri di telefono, rimandano alle Case di Comunità.",
     "Email degli URP dell'ATS Insubria nascoste sul sito (protezione antispam): non riportate.",
     "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe.",
-    "Percorso di tutela dell'ASST Sette Laghi (pagina «Prenotare visita o esame SSN», copia del 22/10/2026): si chiede a uno dei CUP aziendali (non a Malnate); se non c'è posto nemmeno nell'ATS Insubria, il CUP mette la richiesta in una lista interna e ti richiama; chi rifiuta la data perde la priorità. ASST Valle Olona (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): istanza a protocollo@pec.asst-valleolona.it con oggetto «Richiesta attivazione percorso di garanzia – prestazioni ambulatoriali»."
+    "Percorso di tutela dell'ASST Sette Laghi (pagina «Prenotare visita o esame SSN», copia del 22/10/2026): si chiede a uno dei CUP aziendali (non a Malnate); se non c'è posto nemmeno nell'ATS Insubria, il CUP mette la richiesta in una lista interna e ti richiama; chi rifiuta la data perde la priorità. ASST Valle Olona (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): istanza a protocollo@pec.asst-valleolona.it con oggetto «Richiesta attivazione percorso di garanzia – prestazioni ambulatoriali».",
+    "Lettere (docs/regioni.md, sezione 1 «Province e aziende»): in Lombardia l'ATS controlla, ma visite, assistenza a casa, protesica e scelta del medico le fanno le ASST, e in una provincia ce ne possono essere più d'una (le email URP qui sopra sono di aziende diverse). Prima di accendere cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa o ausili servono le zone in sub_areas (una per ASST: id, label, comuni, nome_lettera e pec o emails, dalle copie). Finché mancano, aziende_multiple resta true e tests/coerenza.test.mjs tiene spenti quei moduli."
    ],
    "pagine": [
     {
