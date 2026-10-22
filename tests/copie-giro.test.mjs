@@ -17,7 +17,7 @@ import { execFileSync, execFile } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 const COPIE = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', 'tools', 'copie.mjs');
-const conPdftotext = (() => { try { execFileSync('pdftotext', ['-v'], { stdio: 'ignore' }); return true; } catch { return false; } })();
+const conPdftotext = !process.env.COPIE_SENZA_PDFTOTEXT && (() => { try { execFileSync('pdftotext', ['-v'], { stdio: 'ignore' }); return true; } catch { return false; } })();
 const conCurl = (() => { try { execFileSync('curl', ['--version'], { stdio: 'ignore' }); return true; } catch { return false; } })();
 
 // Un PDF piccolo e valido, con una riga di testo.
@@ -148,13 +148,15 @@ test('un giro di copie.mjs su pagine finte', { skip: !conCurl && 'manca curl' },
   // PDF.
   const pdfPiccolo = indice(out, 'prova').find((p) => p.url === `${base}/modulo.pdf`);
   const grande = indice(out, 'prova').find((p) => p.url === `${base}/grande.pdf`);
-  if (conPdftotext) {
+  // Senza pdftotext il testo lo fa pdf.js, se si è potuto scaricare (nella CI sì): stesse regole.
+  if (conPdftotext || /l'ha fatto pdf\.js/.test(log)) {
     assert.equal(pdfPiccolo.pdf, true);
     assert.match(copia(out, 'prova', `${base}/modulo.pdf`), /0577 535222/);
     assert.equal(indice(out, 'prova').find((p) => p.url === `${base}/allegato`).pdf, true);
     assert.match(grande.errore, /più grande di 5 MB/);
     assert.ok(!grande.file);
   } else {
+    assert.ok(!process.env.CI, `nella CI pdf.js deve funzionare:\n${log}`);
     assert.equal(pdfPiccolo.nota, 'file, non controllato');
     assert.match(log, /pdftotext non installato/);
   }
