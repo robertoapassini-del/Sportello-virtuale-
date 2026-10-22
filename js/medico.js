@@ -2,11 +2,11 @@
 // Prima la risposta: la pagina mostra subito la risposta scritta; il percorso per provincia parte dal pulsante.
 // Regole nazionali (età) + canale di ogni ASP. Lettera all'ASP se non si trova un pediatra.
 import { medicoChoice, todayISO } from './engine.js';
-import { genericRequest, mailtoHref } from './letters.js';
+import { genericRequest, mailtoHref, conZona } from './letters.js';
 import {
-  noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, copyText, printText, readForm, aspCalls, officeBox, personFields, reportErrorHref, generalContact, aslLabel, aslIntestazione, syncDelegate,
+  noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, copyText, printText, readForm, aspCalls, officeBox, personFields, reportErrorHref, generalContact, aslLabel, syncDelegate,
 } from './common.js';
-import { createFlow, choice, restartBtn, progress, letterButtons, senzaUffici } from './flow.js';
+import { createFlow, choice, restartBtn, progress, letterButtons, senzaUffici, provinceChoice, zonaScreen, intestazioneAzienda } from './flow.js';
 
 const ROOT = '../';
 const app = document.getElementById('app');
@@ -18,7 +18,9 @@ const migliaia = (n) => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
 let data;
 const state = {};
 const person = {};
-const asp = () => data.asl.find((a) => a.id === state.province);
+// L'azienda della provincia scelta, con i campi della zona al posto dei suoi (js/letters.js).
+const aziendaBase = () => data.asl.find((a) => a.id === state.province);
+const asp = () => conZona(aziendaBase(), state.zona);
 
 function sources() {
   const a = state.province ? asp() : null;
@@ -55,10 +57,13 @@ const screens = {
   // Così «Ricomincia» e il tasto Indietro riportano alla risposta, non a una presentazione.
   intro: () => ({ html: answerHtml }),
 
+  // «In quale zona?»: solo se l'azienda della provincia ha zone con una lettera diversa (js/letters.js).
+  zona: () => zonaScreen(aziendaBase(), 'who'),
+
   province: () => ({
     html: `${progress(1, 3)}
       <h1>📍 Dove abita la persona?</h1>
-      <div class="grid2">${[...data.asl].sort((a, b) => a.province.localeCompare(b.province)).map((a) => choice('', a.province, { province: a.id }, 'who')).join('')}</div>`,
+      <div class="grid2">${[...data.asl].sort((a, b) => a.province.localeCompare(b.province)).map((a) => provinceChoice(a, 'who')).join('')}</div>`,
   }),
 
   who: () => ({
@@ -95,7 +100,7 @@ const screens = {
         <h2>Dove si fa</h2>
         ${a ? '' : `<p>Allo sportello «scelta e revoca» del distretto dell'${aslLabel()} dove abiti. In alcune province si può fare anche online, sul sito dell'${aslLabel()}.</p>`}
         ${senzaUffici(a, () => `<p>${esc(a.scelta_medico.how)}</p>
-        ${a.scelta_medico.url ? `<a class="btn" href="${esc(a.scelta_medico.url)}" target="_blank" rel="noopener">💻 Sito dell'${aslLabel()}</a>` : ''}
+        ${a.scelta_medico.url ? `<a class="btn" href="${esc(a.scelta_medico.url)}" target="_blank" rel="noopener">💻 ${esc(a.scelta_medico.url_label || `Sito dell'${aslLabel()}`)}</a>` : ''}
         ${sportelli(a)}`)}
         ${bring}
         <h2>Come scegliere</h2>
@@ -167,7 +172,7 @@ const screens = {
           syncDelegate(form, person);
           const forWhom = state.ageBand === '16+' ? 'per sé' : `per il/la figlio/a minore ${state.child || '__________'}, codice fiscale ${state.childCf || '__________'}`;
           const text = genericRequest({
-            to: `${aslIntestazione()} di ${a.province}\nDistretto sanitario – Ufficio scelta e revoca\ne p.c. Ufficio Relazioni con il Pubblico`,
+            to: `${intestazioneAzienda(a)}\nDistretto sanitario – Ufficio scelta e revoca\ne p.c. Ufficio Relazioni con il Pubblico`,
             address: to, person,
             subject: `Richiesta di assegnazione di un ${kind}`,
             premise: [

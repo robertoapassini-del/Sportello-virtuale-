@@ -6,6 +6,7 @@
   {
    "id": "belluno",
    "name": "Azienda ULSS 1 Dolomiti",
+   "nome_lettera": "Azienda ULSS 1 Dolomiti",
    "province": "Belluno",
    "site_url": "https://www.aulss1.veneto.it/",
    "official_domains": [
@@ -171,6 +172,7 @@
   {
    "id": "treviso",
    "name": "Azienda ULSS 2 Marca Trevigiana",
+   "nome_lettera": "Azienda ULSS 2 Marca Trevigiana",
    "province": "Treviso",
    "site_url": "https://www.aulss2.veneto.it/",
    "official_domains": [
@@ -343,6 +345,7 @@
   {
    "id": "venezia",
    "name": "ULSS 3 Serenissima e ULSS 4 Veneto Orientale",
+   "aziende_multiple": true,
    "province": "Venezia",
    "site_url": "https://www.aulss3.veneto.it/",
    "official_domains": [
@@ -614,7 +617,8 @@
     "ULSS 3: nelle copie mancano il centralino generale e il numero dell'URP (nella pagina «Numeri utili» sono voci chiuse che la copia non apre). Aggiunte in «pagine» le pagine dei centralini e dell'URP.",
     "ULSS 4: la pagina «Numeri utili» dice CUP 041 844 844 e URP 0418694692, ma le pagine del CUP e dell'URP dicono 0421 1547154 e 0421 228057 (usati questi). Da chiarire con l'URP.",
     "ULSS 4: PUA e cure a casa si attivano con il 116117 (pagina 116117); nessun numero del PUA nelle copie.",
-    "ULSS 3: la pagina della continuità assistenziale e quella dell'assistenza domiciliare sono copiate quasi vuote."
+    "ULSS 3: la pagina della continuità assistenziale e quella dell'assistenza domiciliare sono copiate quasi vuote.",
+    "Lettere (docs/regioni.md, sezione 1 «Province e aziende»): in questa provincia ci sono due aziende: ULSS 3 Serenissima e ULSS 4 Veneto Orientale. Una lettera all'azienda va all'una o all'altra secondo il comune. Prima di accendere cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa o ausili servono le zone in sub_areas: per ognuna id, label (il pulsante «In quale zona?»), comuni, nome_lettera e pec o emails, dalle copie delle pagine ufficiali. Finché mancano, aziende_multiple resta true e tests/coerenza.test.mjs tiene spenti quei moduli."
    ],
    "pagine": [
     {
@@ -754,6 +758,7 @@
   {
    "id": "rovigo",
    "name": "Azienda ULSS 5 Polesana",
+   "nome_lettera": "Azienda ULSS 5 Polesana",
    "province": "Rovigo",
    "site_url": "https://www.aulss5.veneto.it/",
    "official_domains": [
@@ -935,6 +940,7 @@
   {
    "id": "padova",
    "name": "Azienda ULSS 6 Euganea",
+   "nome_lettera": "Azienda ULSS 6 Euganea",
    "province": "Padova",
    "site_url": "https://www.aulss6.veneto.it/",
    "official_domains": [
@@ -1165,6 +1171,7 @@
   {
    "id": "vicenza",
    "name": "ULSS 8 Berica e ULSS 7 Pedemontana",
+   "aziende_multiple": true,
    "province": "Vicenza",
    "site_url": "https://www.aulss8.veneto.it/",
    "official_domains": [
@@ -1413,7 +1420,8 @@
     "Come è fatto: la provincia di Vicenza ha due aziende. L'ULSS 8 Berica copre Vicenza e l'Ovest Vicentino (distretti Est e Ovest); l'ULSS 7 Pedemontana copre Bassano, Asiago e l'Alto Vicentino (Thiene, Schio). La PEC in «pec» è dell'ULSS 8; quella dell'ULSS 7 è protocollo.aulss7@pecveneto.it (nelle copie dell'ULSS 7). Per le lettere servirà scegliere l'ULSS.",
     "ULSS 8: le copie non dicono quali comuni sono nel distretto Est e quali nel distretto Ovest.",
     "ULSS 7: l'URP di Santorso ha un orario temporaneo (pagina «centralini»): ricontrollarlo.",
-    "PUA e cure a casa: le pagine dell'ULSS 8 sull'assistenza a casa e sull'URP vecchio danno 404; nessun numero del PUA nelle copie di nessuna delle due ULSS."
+    "PUA e cure a casa: le pagine dell'ULSS 8 sull'assistenza a casa e sull'URP vecchio danno 404; nessun numero del PUA nelle copie di nessuna delle due ULSS.",
+    "Lettere (docs/regioni.md, sezione 1 «Province e aziende»): in questa provincia ci sono due aziende: ULSS 8 Berica e ULSS 7 Pedemontana. Una lettera all'azienda va all'una o all'altra secondo il comune. Prima di accendere cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa o ausili servono le zone in sub_areas: per ognuna id, label (il pulsante «In quale zona?»), comuni, nome_lettera e pec o emails, dalle copie delle pagine ufficiali. Finché mancano, aziende_multiple resta true e tests/coerenza.test.mjs tiene spenti quei moduli."
    ],
    "pagine": [
     {
@@ -1533,6 +1541,7 @@
   {
    "id": "verona",
    "name": "Azienda ULSS 9 Scaligera",
+   "nome_lettera": "Azienda ULSS 9 Scaligera",
    "province": "Verona",
    "site_url": "https://www.aulss9.veneto.it/",
    "official_domains": [

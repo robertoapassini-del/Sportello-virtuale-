@@ -4,13 +4,13 @@
 // cancellano quando si chiude la pagina. Niente viene inviato.
 // Testi: italiano semplice, frasi brevi, un'idea per frase.
 import { checkWaiting, callbackDeadline, maxWaitDays, todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
-import { tutelaLetter, tutelaReminder, mailtoHref } from './letters.js';
+import { tutelaLetter, tutelaReminder, mailtoHref, conZona, nomeZona } from './letters.js';
 import { noPecBox,
   esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, copyText, printText, readForm, mailLink, callButton, aspCalls,
-  personFields, reportErrorHref, generalContactInfo, choice, helpBox, sourcesBox, moreHelp, hideHeadingEmoji, enableStart, aslLabel, aslIntestazione, regione, regioneInfo, regioneLink, generalContact, syncDelegate, delegateNoteText,
+  personFields, reportErrorHref, generalContactInfo, choice, helpBox, sourcesBox, moreHelp, hideHeadingEmoji, enableStart, aslLabel, regione, regioneInfo, regioneLink, generalContact, syncDelegate, delegateNoteText,
 } from './common.js';
 import { RICETTA_SVG } from './ricetta-svg.js';
-import { createNav, withRegion, regionAction, senzaUffici, progress as progressBar, moveToTop, showError, clearError } from './flow.js';
+import { createNav, withRegion, regionAction, senzaUffici, progress as progressBar, moveToTop, showError, clearError, provinceChoice, zonaScreen, intestazioneAzienda } from './flow.js';
 
 const ROOT = '../';
 const app = document.getElementById('app');
@@ -68,7 +68,9 @@ function screenSources() {
   return sourcesBox(items, { verified: a ? a.last_verified : rules.last_verified });
 }
 
-const asp = () => data.asl.find((a) => a.id === state.province);
+// L'azienda della provincia scelta, con i campi della zona al posto dei suoi (js/letters.js).
+const aziendaBase = () => data.asl.find((a) => a.id === state.province);
+const asp = () => conZona(aziendaBase(), state.zona);
 const limit = () => maxWaitDays(rules, state.cls, state.kind);
 
 // Testo per la lettera (linguaggio degli uffici).
@@ -147,7 +149,7 @@ function aspSteps(a) {
   </ol>
   <details class="card">
     <summary>Per saperne di più su ${esc(a.name)}</summary>
-    ${a.sub_areas ? `<p>L'${aslLabel()} divide la provincia in ${a.sub_areas.length} zone: ${a.sub_areas.map(esc).join('; ')}.</p>` : ''}
+    ${a.sub_areas ? `<p>L'${aslLabel()} divide la provincia in ${a.sub_areas.length} zone: ${a.sub_areas.map((z) => esc(nomeZona(z))).join('; ')}.</p>` : ''}
     ${a.details.length ? `<ul class="clean">${a.details.map((d) => `<li>${esc(d)}</li>`).join('')}</ul>` : ''}
     ${contacts.length ? `<ul class="clean">${contacts.join('')}</ul>` : ''}
     <p>La regola dice che la visita va fatta in tempo in strutture pubbliche o convenzionate.
@@ -174,12 +176,15 @@ const screens = {
   // Così «Ricomincia» e il tasto Indietro riportano alla risposta, non a una presentazione.
   intro: () => ({ html: answerHtml }),
 
+  // «In quale zona?»: solo se l'azienda della provincia ha zone con una lettera diversa (js/letters.js).
+  zona: () => zonaScreen(aziendaBase(), 'access'),
+
   province: () => ({
     html: `${progress(1)}
       <h1>📍 Dove abiti?</h1>
       <p>Scegli la tua provincia.</p>
       <div class="grid2">
-      ${[...data.asl].sort((a, b) => a.province.localeCompare(b.province)).map((a) => choice('', a.province, { province: a.id }, 'access')).join('')}
+      ${[...data.asl].sort((a, b) => a.province.localeCompare(b.province)).map((a) => provinceChoice(a, 'access')).join('')}
       </div>`,
   }),
 
@@ -514,7 +519,7 @@ const screens = {
           else showError('rem-form', `Scrivi una data giusta, non dopo oggi. Per ora usiamo ${art('il', state.firstRequestDate)}${formatIt(state.firstRequestDate)}.`, { field: 'firstRequestDate', focus: false });
           document.getElementById('remind-title').textContent = remindTitle();
           const text = tutelaReminder({
-            ente: aslIntestazione(),
+            intestazione: intestazioneAzienda(a),
             aspName: a.province, aspAddress: a.send_to || a.pec || '', person, service: state.service, nre: state.nre,
             cls: classText(), firstRequestDate: state.firstRequestDate, protocol: state.reqProtocol, today,
           });
@@ -568,7 +573,7 @@ function updateLetter(a, official) {
   const noDate = state.cup === 'none';
   const cb = noDate ? callbackDeadline(rules, { cls: state.cls, kind: state.kind, requestDate: state.requestDate, today }) : null;
   const text = tutelaLetter({
-    ente: aslIntestazione(),
+    intestazione: intestazioneAzienda(a),
     aspName: a.province,
     aspAddress: a.send_to || a.pec || '',
     person, service: state.service, nre: state.nre, cls: classText(), maxDays: limit(),

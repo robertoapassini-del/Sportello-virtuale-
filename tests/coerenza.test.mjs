@@ -6,6 +6,7 @@ import assert from 'node:assert/strict';
 import { readFileSync, readdirSync, existsSync, statSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { zoneLettera, conZona } from '../js/letters.js';
 
 const SITE = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const read = (f) => readFileSync(path.join(SITE, f), 'utf8');
@@ -89,14 +90,96 @@ const CAMPI_MODULO = {
   ausili: (a) => (a.pec ? [] : ['pec']),
   prevenzione: () => [],
 };
+// I moduli che scrivono all'azienda sanitaria (docs/regioni.md, sezione 9). Problemi trovati aggiungendo le regioni
+// (22/10/2026): le lettere scrivevano «USL di Perugia», «ATS di Genova», «ASREM di Campobasso», aziende che con quel nome
+// non esistono; e in una provincia con più aziende (Roma, Napoli, Torino, Cuneo, Perugia, Lombardia) la lettera andava
+// sempre alla prima. Ora:
+// - con un modulo così acceso, ogni azienda (e ogni sua zona) ha il nome per la lettera «nome_lettera», se la regione
+//   non ha «asl_intestazione» in index.json (la Sicilia: «Azienda Sanitaria Provinciale di Palermo»);
+// - un'azienda con «aziende_multiple: true» ha le zone in sub_areas (almeno due), ognuna con nome_lettera e pec,
+//   emails o send_to suoi; ogni zona ha anche i campi che il modulo legge (CAMPI_MODULO sull'azienda con la zona).
+const MODULI_LETTERA = ['cartella-clinica', 'medico-famiglia', 'assistenza-domiciliare', 'cure-palliative', 'liste-attesa', 'ausili'];
+function erroriLettere(r, asl) {
+  const err = [];
+  const moduli = r.moduli || [];
+  for (const a of asl) {
+    const zone = zoneLettera(a);
+    const ids = zone.map((z) => z.id);
+    const conZone = [a, ...ids.map((id) => conZona(a, id))];
+    const dove = (x) => (x.zona ? `${a.id}/${x.zona.id}` : a.id);
+    for (const z of zone) {
+      if (ids.indexOf(z.id) !== ids.lastIndexOf(z.id)) err.push(`${r.id}/${a.id}: zona «${z.id}» ripetuta`);
+      if (!z.label && !z.name) err.push(`${r.id}/${a.id}/${z.id}: zona senza label (il pulsante «In quale zona?»)`);
+    }
+    for (const m of moduli.filter((x) => CAMPI_MODULO[x])) {
+      for (const x of conZone) for (const k of CAMPI_MODULO[m](x)) err.push(`${r.id}/${dove(x)}: «${m}» acceso ma manca ${k}`);
+    }
+    for (const m of moduli.filter((x) => MODULI_LETTERA.includes(x))) {
+      if (a.aziende_multiple) {
+        if (zone.length < 2) err.push(`${r.id}/${a.id}: «${m}» acceso, ma la provincia ha più aziende (aziende_multiple) e mancano le zone in sub_areas`);
+        for (const z of zone) {
+          if (!z.pec && !(z.emails || []).length && !z.send_to) err.push(`${r.id}/${a.id}/${z.id}: «${m}» acceso, ma la zona non ha pec, emails o send_to suoi`);
+          if (!z.nome_lettera) err.push(`${r.id}/${a.id}/${z.id}: «${m}» acceso, ma la zona non ha nome_lettera`);
+        }
+      } else if (!r.asl_intestazione) {
+        for (const x of conZone) if (!x.nome_lettera) err.push(`${r.id}/${dove(x)}: «${m}» acceso ma manca nome_lettera (il nome dell'azienda nella lettera)`);
+      }
+    }
+  }
+  return [...new Set(err)];
+}
+
+// Un nome che elenca più aziende («ASL CN1 e ASL CN2», «ASL di Roma (Roma 1–6)», «USL Umbria 1 (e USL Umbria 2 …)»)
+// o email URP di più aziende lombarde (ATS e ASST) vogliono «aziende_multiple: true»: così il controllo qui sopra
+// non si aggira dimenticando il campo.
+const PIU_AZIENDE = [/\b(e|ed)\s+(ASL|AUSL|USL|ULSS|ATS|ASST)\b/, /\(e\s+(ASL|AUSL|USL|ULSS)\b/, /\d\s*[–-]\s*\d\)/, /\(\D*\b1\b[^)]*,[^)]*\b2\b/, /, (ASL|AUSL|USL|ULSS) /];
+function sembraPiuAziende(a) {
+  if (PIU_AZIENDE.some((re) => re.test(a.name || ''))) return true;
+  const em = a.emails || [];
+  const asst = new Set(em.map((e) => (e.match(/@(asst-[\w-]+)\./) || [])[1]).filter(Boolean));
+  return asst.size > 1 || (asst.size > 0 && em.some((e) => /@ats-/.test(e)));
+}
+test('aziende: un nome con più aziende ha aziende_multiple', () => {
+  const err = [];
+  for (const r of attive) {
+    for (const a of json(fileDi(r, 'asl')).asl) {
+      if (sembraPiuAziende(a) && a.aziende_multiple !== true) err.push(`${r.id}/${a.id}: «${a.name}» sembra più aziende: aggiungi aziende_multiple: true (e le zone, per le lettere)`);
+    }
+  }
+  assert.deepEqual(err, [], err.join('\n'));
+});
+
+// Le regole qui sopra provate su dati finti: se un giorno nessuna regione vera ha zone, il controllo resta provato.
+test('lettere all\'azienda: il controllo prende i casi finti', () => {
+  const zona = (id, extra = {}) => ({ id, label: `Zona ${id}`, nome_lettera: `ASL Prova ${id}`, pec: `${id}@pec.prova.it`, ...extra });
+  const base = { id: 'prova', name: 'ASL Prova 1 e ASL Prova 2', province: 'Prova', emails: ['urp@prova.it'], phones: [], sources: [], pec: 'a@pec.prova.it', scelta_medico: { how: 'Allo sportello.' } };
+  const finta = (moduli, extra = {}) => ({ id: 'finta', moduli, ...extra });
+  const testo = (r, asl) => erroriLettere(r, asl).join('\n');
+  // Più aziende senza zone, medico acceso: errore.
+  assert.match(testo(finta(['medico-famiglia']), [{ ...base, aziende_multiple: true }]), /mancano le zone/);
+  // Una zona senza pec né email: errore.
+  assert.match(testo(finta(['ausili']), [{ ...base, aziende_multiple: true, sub_areas: [zona('a', { pec: '' }), zona('b')] }]), /prova\/a: «ausili» acceso, ma la zona non ha pec/);
+  // Zone giuste: nessun errore.
+  assert.deepEqual(erroriLettere(finta(['medico-famiglia', 'ausili']), [{ ...base, aziende_multiple: true, sub_areas: [zona('a'), zona('b')] }]), []);
+  // Senza nome_lettera e senza asl_intestazione: errore; con asl_intestazione (la Sicilia) no.
+  assert.match(testo(finta(['cure-palliative']), [{ ...base, name: 'ASL Prova' }]), /manca nome_lettera/);
+  assert.deepEqual(erroriLettere(finta(['cure-palliative'], { asl_intestazione: 'Azienda Sanitaria Provinciale' }), [{ ...base, name: 'ASL Prova' }]), []);
+  // Una zona che toglie un campo che il modulo legge: errore sulla zona.
+  assert.match(testo(finta(['medico-famiglia']), [{ ...base, aziende_multiple: true, sub_areas: [zona('a', { scelta_medico: {} }), zona('b')] }]), /prova\/a: «medico-famiglia» acceso ma manca scelta_medico\.how/);
+  // Le zone scritte come frase (Messina) non contano come zone della lettera.
+  assert.match(testo(finta(['ausili']), [{ ...base, aziende_multiple: true, sub_areas: ['Messina – Taormina', 'Milazzo'] }]), /mancano le zone/);
+  // Il nome con più aziende si riconosce; quello di una sola no.
+  for (const n of ['ASL CN1 e ASL CN2', 'ASL di Roma (Roma 1–6)', 'USL Umbria 1 (e USL Umbria 2 per Foligno)', 'ASL di Napoli (Napoli 1 Centro, Napoli 2 Nord, Napoli 3 Sud)', 'ASL Città di Torino, ASL TO3, ASL TO4 e ASL TO5', 'AUSL di Bologna e AUSL di Imola']) assert.ok(sembraPiuAziende({ name: n }), n);
+  for (const n of ['ASP Palermo', 'ASL 2 Lanciano – Vasto – Chieti', 'ATS Liguria – Aree sociosanitarie locali 3 (Area Metropolitana di Genova) e 4 (Tigullio)', 'Azienda USL Toscana Sud Est', 'ASReM – Azienda Sanitaria Regionale del Molise']) assert.ok(!sembraPiuAziende({ name: n }), n);
+  assert.ok(sembraPiuAziende({ name: 'ATS di Bergamo', emails: ['urp@ats-bg.it', 'urp@asst-pg23.it'] }));
+});
+
 test('regioni con «moduli»: ogni modulo acceso ha i dati che legge', () => {
   const err = [];
   for (const r of attive.filter((x) => x.moduli)) {
     for (const m of r.moduli) if (!reg.modules.some((x) => x.id === m) && m !== 'numeri-utili') err.push(`${r.id}: modulo «${m}» sconosciuto`);
     const asl = json(fileDi(r, 'asl')).asl;
-    for (const m of r.moduli.filter((x) => CAMPI_MODULO[x])) {
-      for (const a of asl) for (const k of CAMPI_MODULO[m](a)) err.push(`${r.id}/${a.id}: «${m}» acceso ma manca ${k}`);
-    }
+    err.push(...erroriLettere(r, asl));
     if (r.moduli.includes('invalidita')) {
       const f = fileDi(r, 'inps');
       if (!existsSync(path.join(SITE, f))) { err.push(`${r.id}: «invalidita» acceso ma manca ${f}`); continue; }

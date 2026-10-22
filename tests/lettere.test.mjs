@@ -39,7 +39,8 @@ const casi = {
 test('ogni lettera di js/letters.js è provata qui', () => {
   // Non sono lettere: il link mailto e le parti su chi scrive per un altro (provate con ogni lettera qui sotto).
   // doctorName e districtLine: pezzi dell'intestazione e delle premesse, provati più sotto.
-  const lettere = Object.keys(L).filter((k) => !['mailtoHref', 'delegateRole', 'delegateAttachment', 'doctorName', 'districtLine'].includes(k));
+  // zoneLettera, nomeZona, conZona, intestazioneDi: aziende e zone, provate in tests/aziende.test.mjs.
+  const lettere = Object.keys(L).filter((k) => !['mailtoHref', 'delegateRole', 'delegateAttachment', 'doctorName', 'districtLine', 'zoneLettera', 'nomeZona', 'conZona', 'intestazioneDi'].includes(k));
   assert.deepEqual(lettere.filter((k) => !casi[k]), [], 'lettera nuova: aggiungi i suoi casi in tests/lettere.test.mjs');
 });
 

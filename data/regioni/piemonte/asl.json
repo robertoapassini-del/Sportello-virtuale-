@@ -6,6 +6,7 @@
   {
    "id": "alessandria",
    "name": "ASL Alessandria (ASL AL)",
+   "nome_lettera": "ASL Alessandria (ASL AL)",
    "province": "Alessandria",
    "site_url": "https://www.aslal.it/",
    "official_domains": [
@@ -168,6 +169,7 @@
   {
    "id": "asti",
    "name": "ASL Asti (ASL AT)",
+   "nome_lettera": "ASL Asti (ASL AT)",
    "province": "Asti",
    "site_url": "https://asl.at.it/",
    "official_domains": [
@@ -317,6 +319,7 @@
   {
    "id": "biella",
    "name": "ASL Biella (ASL BI)",
+   "nome_lettera": "ASL Biella (ASL BI)",
    "province": "Biella",
    "site_url": "https://aslbi.piemonte.it/",
    "official_domains": [
@@ -468,6 +471,7 @@
   {
    "id": "cuneo",
    "name": "ASL CN1 e ASL CN2",
+   "aziende_multiple": true,
    "province": "Cuneo",
    "site_url": "https://www.aslcn1.it/",
    "official_domains": [
@@ -646,7 +650,8 @@
    "todo": [
     "Le pagine sulle cure domiciliari dell'ASL CN1 non hanno numeri; per l'ASL CN2 non c'è una pagina copiata sulle cure domiciliari.",
     "Percorso di tutela in Piemonte: prima si prova il CUP regionale (numero verde, portale e app «CUP Piemonte», farmacie); poi ogni ASL ha la sua istanza. Chi rifiuta la prima data proposta nei tempi perde il diritto. Moduli non accesi: Torino ha 4 ASL (Città di Torino, TO3, TO4, TO5) e Cuneo 2 (CN1, CN2) in una sola voce, e la lettera deve andare all'ASL giusta: serve una domanda in più («In quale zona?») nel codice.",
-    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): CN2 urp@aslcn2.it; CN1 agli URP di Cuneo, Savigliano o Mondovì, per email o con un modulo sul sito (pagina non trovata)."
+    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): CN2 urp@aslcn2.it; CN1 agli URP di Cuneo, Savigliano o Mondovì, per email o con un modulo sul sito (pagina non trovata).",
+    "Lettere (docs/regioni.md, sezione 1 «Province e aziende»): in questa provincia ci sono due aziende: ASL CN1 e ASL CN2. Una lettera all'azienda va all'una o all'altra secondo il comune. Prima di accendere cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa o ausili servono le zone in sub_areas: per ognuna id, label (il pulsante «In quale zona?»), comuni, nome_lettera e pec o emails, dalle copie delle pagine ufficiali. Finché mancano, aziende_multiple resta true e tests/coerenza.test.mjs tiene spenti quei moduli."
    ],
    "pagine": [
     {
@@ -678,6 +683,7 @@
   {
    "id": "novara",
    "name": "ASL Novara (ASL NO)",
+   "nome_lettera": "ASL Novara (ASL NO)",
    "province": "Novara",
    "site_url": "https://www.asl.novara.it/",
    "official_domains": [
@@ -827,6 +833,7 @@
   {
    "id": "torino",
    "name": "ASL Città di Torino, ASL TO3, ASL TO4 e ASL TO5",
+   "aziende_multiple": true,
    "province": "Torino",
    "site_url": "https://www.aslcittaditorino.it/",
    "official_domains": [
@@ -1300,7 +1307,8 @@
     "ASL TO4: nelle copie non c'è un numero unico dell'URP, solo i punti di ascolto nelle sedi; i tre numeri di Chivasso/Ciriè/Ivrea sono nella sezione «Contatti» del sito, probabilmente i centralini.",
     "ASL Città di Torino: la pagina PUA non ha numeri; cure domiciliari copiate solo per la zona Nord Est (Circoscrizione 6).",
     "Percorso di tutela in Piemonte: prima si prova il CUP regionale (numero verde, portale e app «CUP Piemonte», farmacie); poi ogni ASL ha la sua istanza. Chi rifiuta la prima data proposta nei tempi perde il diritto. Moduli non accesi: Torino ha 4 ASL (Città di Torino, TO3, TO4, TO5) e Cuneo 2 (CN1, CN2) in una sola voce, e la lettera deve andare all'ASL giusta: serve una domanda in più («In quale zona?») nel codice.",
-    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): Città di Torino tempiattesa@aslcittaditorino.it (o URP con l'«Allegato 1»), TO3 tempiattesa@aslto3.piemonte.it con modulo, TO4 tempiattesa@aslto4.piemonte.it, TO5 tempidiattesa@aslto5.piemonte.it. Cartelle cliniche: TO5 cartellecliniche@aslto5.piemonte.it o PEC protocollo@cert.aslto5.piemonte.it; TO4 a qualunque Direzione medica di presidio; Città di Torino dice che la copia non è gratis (da confrontare con la prima copia gratuita, regola nazionale). Scelta del medico: servizio regionale «Il mio medico» su Salute Piemonte (SPID, CIE, CNS) o sportello del distretto."
+    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): Città di Torino tempiattesa@aslcittaditorino.it (o URP con l'«Allegato 1»), TO3 tempiattesa@aslto3.piemonte.it con modulo, TO4 tempiattesa@aslto4.piemonte.it, TO5 tempidiattesa@aslto5.piemonte.it. Cartelle cliniche: TO5 cartellecliniche@aslto5.piemonte.it o PEC protocollo@cert.aslto5.piemonte.it; TO4 a qualunque Direzione medica di presidio; Città di Torino dice che la copia non è gratis (da confrontare con la prima copia gratuita, regola nazionale). Scelta del medico: servizio regionale «Il mio medico» su Salute Piemonte (SPID, CIE, CNS) o sportello del distretto.",
+    "Lettere (docs/regioni.md, sezione 1 «Province e aziende»): in questa provincia ci sono quattro aziende: ASL Città di Torino, ASL TO3, ASL TO4 e ASL TO5. Una lettera all'azienda va all'una o all'altra secondo il comune. Prima di accendere cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa o ausili servono le zone in sub_areas: per ognuna id, label (il pulsante «In quale zona?»), comuni, nome_lettera e pec o emails, dalle copie delle pagine ufficiali. Finché mancano, aziende_multiple resta true e tests/coerenza.test.mjs tiene spenti quei moduli."
    ],
    "pagine": [
     {
@@ -1492,6 +1500,7 @@
   {
    "id": "verbano-cusio-ossola",
    "name": "ASL VCO",
+   "nome_lettera": "ASL VCO",
    "province": "Verbano-Cusio-Ossola",
    "site_url": "https://www.aslvco.it/",
    "official_domains": [
@@ -1576,6 +1585,7 @@
   {
    "id": "vercelli",
    "name": "ASL Vercelli (ASL VC)",
+   "nome_lettera": "ASL Vercelli (ASL VC)",
    "province": "Vercelli",
    "site_url": "https://aslvc.piemonte.it/",
    "official_domains": [

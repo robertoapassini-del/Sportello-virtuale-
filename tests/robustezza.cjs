@@ -8,8 +8,21 @@
 // Uso:  python3 -m http.server 8080   (in un altro terminale)
 //       node tests/robustezza.cjs [http://localhost:8080/]
 const path = require('path');
-// Una regione non ancora attiva, dall'indice (prima era la Campania, scritta a mano).
-const INATTIVA = (JSON.parse(require('fs').readFileSync(require('path').join(__dirname, '..', 'data/regioni/index.json'), 'utf8')).regioni.find((r) => !r.attiva) || {}).id;
+// Una regione non ancora attiva, dall'indice (prima era la Campania, scritta a mano). Dal 22/10/2026 sono attive tutte:
+// allora si aggiunge all'indice, solo nel browser (page.route), una regione finta non attiva. Così la schermata
+// «La tua regione non c'è ancora» resta provata qualunque siano i dati veri.
+const FINTA = { id: 'prova-inattiva', name: 'Regione di prova', attiva: false, asl_label: 'ASL' };
+const INATTIVA = (JSON.parse(require('fs').readFileSync(require('path').join(__dirname, '..', 'data/regioni/index.json'), 'utf8')).regioni.find((r) => !r.attiva) || FINTA).id;
+// L'indice con la regione finta in fondo (se serve).
+async function conRegioneFinta(ctx) {
+  if (INATTIVA !== FINTA.id) return;
+  await ctx.route('**/data/regioni/index.json', async (route) => {
+    const res = await route.fetch();
+    const j = await res.json();
+    j.regioni.push(FINTA);
+    await route.fulfill({ response: res, json: j });
+  });
+}
 
 function loadPlaywright() {
   try { return require('playwright'); } catch { /* prova quello globale */ }
@@ -31,8 +44,9 @@ const STORAGE_BLOCCATO = () => {
 };
 
 // Una scheda nuova (contesto pulito), con gli errori JavaScript raccolti in problemi.
-async function scheda(browser, nome, { init, blocca = [] } = {}) {
+async function scheda(browser, nome, { init, blocca = [], finta = false } = {}) {
   const ctx = await browser.newContext({ viewport: { width: 360, height: 740 } });
+  if (finta) await conRegioneFinta(ctx);
   if (init) await ctx.addInitScript(init);
   for (const r of blocca) await ctx.route(r, (route) => route.abort());
   const page = await ctx.newPage();
@@ -118,9 +132,9 @@ async function main() {
     await ctx.close();
   }
   // Lazio e Lombardia non hanno ancora gli uffici di questo modulo: si salta la provincia e si va alla prima domanda (js/flow.js, withRegion).
-  for (const [reg, atteso] of [['sicilia', /Dove abita/], ['lazio', /Per chi è/], ['lombardia', /Per chi è/], ...(INATTIVA ? [[INATTIVA, /La tua regione non c'è ancora/]] : [])]) {
+  for (const [reg, atteso] of [['sicilia', /Dove abita/], ['lazio', /Per chi è/], ['lombardia', /Per chi è/], [INATTIVA, /La tua regione non c'è ancora/]]) {
     const nome = `medico-famiglia/ senza localStorage (${reg})`;
-    const { ctx, page } = await scheda(browser, nome, { init: STORAGE_BLOCCATO });
+    const { ctx, page } = await scheda(browser, nome, { init: STORAGE_BLOCCATO, finta: reg === INATTIVA });
     await apri(page, at('medico-famiglia/'));
     if (await clicca(page, 'button[data-go="province"]', nome)
       && await clicca(page, `button[data-action="region"][data-region="${reg}"]`, nome)) {
