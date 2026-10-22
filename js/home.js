@@ -18,9 +18,14 @@ function copertura() {
   if (!r || (r.attiva && !r.moduli)) return '';
   // «In Lombardia», «Nel Lazio»: la preposizione giusta viene dall'indice delle regioni (inRegione).
   const dove = esc(inRegione(r).replace(/^./, (c) => c.toUpperCase()));
+  // Le regioni con le lettere già pronte (tutti i moduli: senza «moduli» nell'indice), dette per nome:
+  // «in Sicilia», «in Sicilia e in Umbria». Così la frase resta giusta quando se ne aggiunge una.
+  const conLettere = regioniAttive().filter((x) => !x.moduli).map((x) => inRegione(x));
+  const lettere = conLettere.length > 1 ? `${conLettere.slice(0, -1).join(', ')} e ${conLettere[conLettere.length - 1]}` : conLettere[0];
+  const dopo = lettere ? ` Le lettere già pronte, per ora, solo ${esc(lettere)}.` : '';
   return r.attiva
-    ? `<p class="home-regione">Le regole valgono in tutta Italia. ${dove} per ora abbiamo i numeri utili; uffici e lettere solo per la Sicilia.</p>`
-    : `<p class="home-regione">Le regole valgono in tutta Italia. ${dove} non abbiamo ancora numeri e uffici della zona: le lettere per ora solo per la Sicilia.</p>`;
+    ? `<p class="home-regione">Le regole e i conti valgono in tutta Italia. ${dove} per ora ci sono i numeri utili.${dopo}</p>`
+    : `<p class="home-regione">Le regole valgono in tutta Italia. ${dove} non abbiamo ancora i numeri utili della zona.${dopo}</p>`;
 }
 
 // Chi siamo in una riga sopra le scelte; il resto sotto. Con una regione sola: «Per ora solo in <regione>».

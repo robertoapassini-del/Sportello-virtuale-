@@ -2,6 +2,9 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 22/10/2026 — Frase della pagina iniziale sulle regioni
+- `js/home.js`: «uffici e lettere solo per la Sicilia» confondeva (i numeri utili sono proprio numeri di uffici) e sarebbe diventata falsa con una regione nuova. Ora: «Le regole e i conti valgono in tutta Italia. In Umbria per ora ci sono i numeri utili. Le lettere già pronte, per ora, solo in Sicilia.» Le regioni con le lettere si leggono dall'indice. Nuova riga in `tests/errori-noti.test.mjs`.
+
 ## 21/10/2026 — L'icona del sito nei risultati di Google
 - Google non mostrava l'icona accanto a «guidasanita.it» nei risultati: l'icona era scritta dentro ogni pagina (indirizzo `data:`) e Google vuole un file a un indirizzo stabile, quadrato, multiplo di 48 pixel.
 - Nuovi file, fatti dal logo (`logo.svg`): `favicon.ico` (16, 32 e 48 pixel), `apple-touch-icon.png` (iPhone), `icon-192.png` e `icon-512.png` con `site.webmanifest` (Android).
