@@ -2,6 +2,16 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 22/10/2026 — Umbria: dati per i moduli e le lettere
+- Acceso il modulo invalidità in Umbria (`data/regioni/index.json`: `moduli` ["numeri-utili", "invalidita"]). `data/regioni/umbria/inps.json`: riforma della disabilità a Perugia dal 01/01/2025 (prima fase, messaggio INPS 4465 del 27/12/2024) e a Terni dal 01/03/2026 (terza fase, le 40 province nuove). Fonti: [INPS, fase sperimentale](https://inps.it/it/it/inps-comunica/dossier/riforma-della-disabilita/fase-sperimentale.html), [Dipartimento per le disabilità](https://www.disabilita.governo.it/it/notizie/al-via-sperimentazione-riforma-disabilita-in-altre-40-province/) (estratti del 22/10/2026). PEC e indirizzi delle due sedi erano già provati dalle copie del server.
+- `data/regioni/umbria/asl.json`: Hospice di Spoleto (0743 210278) e di Terni (0744 204207) dalla pagina [USL Umbria 2 – Cure palliative e terapia del dolore](https://www.uslumbria2.it/notizie/cure-palliative-e-terapia-del-dolore) (copia del server del 21/10/2026; la pagina è del 05/05/2023, da confermare con una telefonata); `pua_url` di Terni (pagina USL Umbria 2 su come si accede all'assistenza domiciliare); domini delle Aziende Ospedaliere di Perugia e Terni in `official_domains`.
+- `pagine[]` di Perugia e Terni: le pagine ufficiali da far copiare al server per le lettere (cartelle cliniche di USL 1, USL 2 e delle Aziende Ospedaliere di Perugia e Terni; protesica; scelta e revoca; screening; cure palliative; «presa in carico» del CUP e liste d'attesa; reclami URP). Indirizzi trovati con il motore di ricerca, solo domini ufficiali: nessun dato preso da lì.
+- Gli altri moduli restano spenti in Umbria: mancano le pagine copiate e la provincia di Perugia ha due aziende (serve la domanda «In quale zona?» prima di scrivere all'URP o alla PEC). Elenco preciso in `docs/regioni.md`.
+- `docs/regioni.md`, nuova sezione 9 «Aggiungere le lettere di una regione (checklist)»: modulo → campi regionali → chi li controlla, regola delle prove, passi (pagine mancanti → copia del server → si accende il modulo).
+- `tests/coerenza.test.mjs`: una regione con «moduli» accende un modulo solo se ha i dati che legge (per l'invalidità: `regime` old o new, mai null; per il medico `scelta_medico.how`; per gli ausili la `pec`…).
+- `tests/combinazioni.cjs`: prova le sedi INPS di ogni regione che accende l'invalidità (Perugia e Terni, fino alla lettera all'INPS). `tests/browser.cjs`: in Umbria la pagina iniziale dice numeri utili e invalidità, il modulo invalidità propone Perugia e Terni, le liste d'attesa restano senza uffici.
+- `tests/browser.cjs` e `tests/robustezza.cjs`: la regione «non ancora attiva» dei controlli di blocco è il Veneto, non più la Campania (attiva da oggi: i due test fallivano).
+
 ## 22/10/2026 — Lombardia: invalidità accesa; controllo sul regime INPS
 - `data/regioni/index.json`: Lombardia con `invalidita` (il regime della riforma per le 12 sedi INPS è nel `inps.json`, dal gruppo del Nord; prima restava spenta solo perché un test la voleva bloccata).
 - `tests/coerenza.test.mjs`: una regione con l'invalidità accesa deve avere il regime («new» o «old») in ogni sede INPS.

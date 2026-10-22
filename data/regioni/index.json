@@ -20,7 +20,7 @@
       "link": { "fse": "https://www.regione.sicilia.it/fascicolosanitario", "assessorato": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute", "dialisi": "https://regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/dipartimento-pianificazione-strategica/altri-contenuti/albo-trasporto-emodializzati" } },
     { "id": "toscana", "name": "Toscana", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili", "invalidita"] },
     { "id": "trentino-alto-adige", "name": "Trentino-Alto Adige", "attiva": true, "asl_label": "Azienda sanitaria", "moduli": ["numeri-utili"] },
-    { "id": "umbria", "name": "Umbria", "attiva": true, "asl_label": "USL", "moduli": ["numeri-utili"] },
+    { "id": "umbria", "name": "Umbria", "attiva": true, "asl_label": "USL", "moduli": ["numeri-utili", "invalidita"] },
     { "id": "valle-d-aosta", "name": "Valle d'Aosta", "attiva": true, "asl_label": "USL", "moduli": ["numeri-utili", "liste-attesa", "medico-famiglia"] },
     { "id": "veneto", "name": "Veneto", "in": "nel Veneto", "attiva": false, "asl_label": "ULSS" }
   ]

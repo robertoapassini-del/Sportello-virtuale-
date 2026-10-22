@@ -19,6 +19,14 @@ const BASE = process.argv[2] || 'http://localhost:8080/';
 const DATA = path.join(__dirname, '..', 'data');
 const asp = JSON.parse(fs.readFileSync(path.join(DATA, 'regioni', 'sicilia', 'asp.json'), 'utf8'));
 const inps = JSON.parse(fs.readFileSync(path.join(DATA, 'regioni', 'sicilia', 'inps.json'), 'utf8'));
+// Le altre regioni con l'invalidità accesa («moduli» in data/regioni/index.json): le loro sedi INPS si provano
+// allo stesso modo, con la regione scelta (22/10/2026: Umbria, Perugia e Terni nella riforma).
+const indiceRegioni = JSON.parse(fs.readFileSync(path.join(DATA, 'regioni', 'index.json'), 'utf8'));
+const sediInps = [
+  ...inps.provinces.map((pr) => ({ regione: 'sicilia', pr })),
+  ...indiceRegioni.regioni.filter((r) => r.attiva && (r.moduli || []).includes('invalidita'))
+    .flatMap((r) => JSON.parse(fs.readFileSync(path.join(DATA, 'regioni', r.id, `${(r.files || {}).inps || 'inps'}.json`), 'utf8')).provinces.map((pr) => ({ regione: r.id, pr }))),
+];
 
 // ---------- calcoli indipendenti (non usano js/engine.js) ----------
 const pad = (n) => String(n).padStart(2, '0');
@@ -71,13 +79,13 @@ for (const a of asp.asl) {
   }
 }
 
-for (const pr of inps.provinces) {
+for (const { regione, pr } of sediInps) {
   const certs = [add(TODAY, -10), add(TODAY, -90), add(TODAY, -91), add(TODAY, -200)];
   if (pr.regime_since) certs.push(pr.regime_since, add(pr.regime_since, -1));
   for (const cert of [...new Set(certs)]) {
     const isNew = pr.regime === 'new' && pr.regime_since && cert >= pr.regime_since;
     for (const cat of ['oncological', 'minor', 'other']) {
-      const base = { mod: 2, pr, p: pr.name, cert, cat, isNew };
+      const base = { mod: 2, regione, pr, p: pr.name, cert, cat, isNew };
       if (isNew) {
         const dl = add(cert, INV_NEW[cat]);
         base.name = `INV ${pr.name} · nuova · ${cat} · cert ${cert}`;
@@ -99,7 +107,7 @@ for (const pr of inps.provinces) {
       }
     }
   }
-  cases.push({ mod: 2, name: `INV ${pr.name} · certificato nel futuro`, pr, p: pr.name, cert: add(TODAY, 1), expectCertError: true });
+  cases.push({ mod: 2, regione, name: `INV ${pr.name} · certificato nel futuro`, pr, p: pr.name, cert: add(TODAY, 1), expectCertError: true });
 }
 
 // Moduli 3 (cartella clinica, 7 giorni) e 4 (ausili, 20 giorni).
@@ -626,6 +634,11 @@ async function runCase(page, c) {
   }
 
   // ---- modulo 2 ----
+  // La regione della sede: la legge lo script d'inizio (vedi sotto) da sessionStorage, che resta nella scheda.
+  if (c.regione !== 'sicilia') {
+    await page.goto(`${BASE}robots.txt`);
+    await page.evaluate((r) => sessionStorage.setItem('test-regione', r), c.regione);
+  }
   await page.goto(`${BASE}invalidita/`);
   await start();
   await btn(new RegExp(`^${c.p}$`));
@@ -705,7 +718,8 @@ async function runCase(page, c) {
   await Promise.all(Array.from({ length: WORKERS }, async () => {
     const ctx = await browser.newContext({ ...devices['iPhone SE'], ...(process.env.TZID ? { timezoneId: process.env.TZID } : {}) });
     // Le province provate sono quelle siciliane: la regione è già scelta, così si va dritti alla provincia.
-    await ctx.addInitScript(() => { try { localStorage.setItem('gs-regione', 'sicilia'); } catch { /* niente */ } });
+    // Per i casi di un'altra regione (invalidità in Umbria) la regione è in sessionStorage («test-regione»).
+    await ctx.addInitScript(() => { try { localStorage.setItem('gs-regione', sessionStorage.getItem('test-regione') || 'sicilia'); } catch { /* niente */ } });
     const page = await ctx.newPage();
     page.on('pageerror', (e) => jsErrors.push(e.message));
     while (queue.length) {
@@ -713,6 +727,7 @@ async function runCase(page, c) {
       let problems;
       try { problems = await runCase(page, c); } catch (e) { problems = [`il percorso si è bloccato: ${e.message.split('\n')[0]}`]; }
       if (problems.length) failures.push({ name: c.name, problems });
+      if (c.regione && c.regione !== 'sicilia') await page.evaluate(() => sessionStorage.removeItem('test-regione')).catch(() => {});
       done++;
     }
     await ctx.close();
