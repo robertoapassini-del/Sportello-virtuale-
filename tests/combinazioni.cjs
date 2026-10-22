@@ -134,9 +134,9 @@ function expectedCodes({ ageBand, status, spouse, children, income }) {
   const codes = [], maybe = [];
   const has = income !== null;
   if (ageBand === 'under6' || ageBand === '65plus') (has ? (income <= ESE.E01.income_max && codes.push('E01')) : maybe.push('E01'));
-  if (status === 'disoccupato') (has ? (income <= fam('E02') && codes.push('E02')) : maybe.push('E02'));
+  if (status === 'disoccupato') (has ? (income < fam('E02') && codes.push('E02')) : maybe.push('E02'));
   if (status === 'sociale') codes.push('E03');
-  if (status === 'minimo') (has ? (income <= fam('E04') && codes.push('E04')) : maybe.push('E04'));
+  if (status === 'minimo') (has ? (income < fam('E04') && codes.push('E04')) : maybe.push('E04'));
   return { codes, maybe, fam };
 }
 const AGE = { under6: /^Meno di 6/, '6to59': /^Da 6 a 59/, '60to64': /^Da 60 a 64/, '65plus': /^65 anni o più/ };
