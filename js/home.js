@@ -12,6 +12,13 @@ function card(href, icon, title, small) {
   return `<a class="btn choice" href="${esc(href)}"><span class="ico" aria-hidden="true">${icon}</span><span class="txt">${esc(title)}${small ? ` <small>${esc(small)}</small>` : ''}</span></a>`;
 }
 
+// Nomi brevi dei moduli con dati regionali, per la frase sulla regione (copertura).
+const NOMI_BREVI = {
+  'liste-attesa': "liste d'attesa", invalidita: 'invalidità', 'cartella-clinica': 'cartella clinica',
+  'assistenza-domiciliare': 'assistenza a casa', 'cure-palliative': 'cure palliative', 'medico-famiglia': 'medico di famiglia',
+  ausili: 'ausili', 'esenzione-ticket': 'esenzione dal ticket', prevenzione: 'prevenzione', 'piano-terapeutico': 'piano terapeutico',
+};
+
 // Per una regione salvata con solo alcuni moduli («moduli» nell'indice) o non ancora attiva: cosa c'è e cosa no.
 function copertura() {
   const r = regioneSalvata();
@@ -23,8 +30,14 @@ function copertura() {
   const conLettere = regioniAttive().filter((x) => !x.moduli).map((x) => inRegione(x));
   const lettere = conLettere.length > 1 ? `${conLettere.slice(0, -1).join(', ')} e ${conLettere[conLettere.length - 1]}` : conLettere[0];
   const dopo = lettere ? ` Le lettere già pronte, per ora, solo ${esc(lettere)}.` : '';
+  // Gli argomenti già completi nella regione (uffici della zona e lettere), oltre ai numeri utili.
+  const pronti = (r.moduli || []).filter((m) => NOMI_BREVI[m]).map((m) => NOMI_BREVI[m]);
+  const elenco = pronti.length > 1 ? `${pronti.slice(0, -1).join(', ')} e ${pronti[pronti.length - 1]}` : pronti[0];
+  const qui = pronti.length
+    ? `${dove} ci sono i numeri utili e, con gli uffici della zona, ${esc(elenco)}.${lettere ? ` Per gli altri argomenti le lettere già pronte, per ora, solo ${esc(lettere)}.` : ''}`
+    : `${dove} per ora ci sono i numeri utili.${dopo}`;
   return r.attiva
-    ? `<p class="home-regione">Le regole e i conti valgono in tutta Italia. ${dove} per ora ci sono i numeri utili.${dopo}</p>`
+    ? `<p class="home-regione">Le regole e i conti valgono in tutta Italia. ${qui}</p>`
     : `<p class="home-regione">Le regole valgono in tutta Italia. ${dove} non abbiamo ancora i numeri utili della zona.${dopo}</p>`;
 }
 
