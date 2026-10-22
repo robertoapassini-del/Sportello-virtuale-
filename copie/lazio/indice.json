@@ -1,6 +1,6 @@
 {
  "regione": "lazio",
- "aggiornato": "2026-10-22T05:40:24.500Z",
+ "aggiornato": "2026-10-22T06:38:49.021Z",
  "pagine": [
   {
    "asl": "frosinone",
@@ -60,6 +60,17 @@
    "sha": "88d48200869ebd0981007c584308de88b8ee92c10e8f5686f001b0bead08946e",
    "caratteri": 5450,
    "cambiata": false
+  },
+  {
+   "asl": "frosinone",
+   "url": "https://salutelazio.it/it/pass-di-garanzia",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "frosinone/1b6a08522663.txt",
+   "titolo": "Fascicolo Sanitario",
+   "sha": "6772526017635319bde0886cb17e55d9534f649dbcd20a4e00c6e5831978ab0e",
+   "caratteri": 4175,
+   "cambiata": true
   },
   {
    "asl": "latina",
@@ -129,6 +140,17 @@
    "cambiata": false
   },
   {
+   "asl": "latina",
+   "url": "https://salutelazio.it/it/pass-di-garanzia",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "latina/1b6a08522663.txt",
+   "titolo": "Fascicolo Sanitario",
+   "sha": "1ac84bf6cdfa4595a749bd926c75cb8f8de2b21a02f6aa5b8f8476c06626f4ad",
+   "caratteri": 4175,
+   "cambiata": true
+  },
+  {
    "asl": "rieti",
    "url": "https://www.asl.rieti.it/",
    "controllata": "2026-10-22",
@@ -191,9 +213,9 @@
    "http": 200,
    "file": "rieti/35e40355b813.txt",
    "titolo": "CUP - UOSD Gestione della domanda, Accessibilità dell'Offerta e Alpi – ASL Rieti",
-   "sha": "26d1b8579339ea9add3070c4362f2075069cc60b0c2b264af90c11f640a56bc2",
-   "caratteri": 21812,
-   "cambiata": false
+   "sha": "b9f15640f02dba013464b63ad0a0da2bf46942abe1eda648fa29fbee63c94be1",
+   "caratteri": 21810,
+   "cambiata": true
   },
   {
    "asl": "rieti",
@@ -207,6 +229,17 @@
    "cambiata": false
   },
   {
+   "asl": "rieti",
+   "url": "https://salutelazio.it/it/pass-di-garanzia",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "rieti/1b6a08522663.txt",
+   "titolo": "Fascicolo Sanitario",
+   "sha": "6772526017635319bde0886cb17e55d9534f649dbcd20a4e00c6e5831978ab0e",
+   "caratteri": 4175,
+   "cambiata": true
+  },
+  {
    "asl": "roma",
    "url": "https://www.salutelazio.it/",
    "controllata": "2026-10-22",
@@ -214,7 +247,7 @@
    "finale": "https://salutelazio.it/it",
    "file": "roma/753559e36904.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "6df6f38d1a77aa06d4429dca34ffbc1c1484f06f96840687fe27978708e9e707",
+   "sha": "46fa25cede0b50cc1f6c830f5790bcfb371b8cb1cab175c6f6d5f46b71eb7661",
    "caratteri": 4020,
    "cambiata": true
   },
@@ -237,7 +270,7 @@
    "http": 200,
    "file": "roma/e0d930024e6e.txt",
    "titolo": "Punto Unico di Accesso (PUA)",
-   "sha": "2601a0764789dd78e17b8f5404008da5b7fa345a939d74a99c445e57d69792d3",
+   "sha": "ba41cd8fee0c1ea83ad90f1eda3c42dbeb3091a0535316feb05cdee3d311ae8a",
    "caratteri": 22475,
    "cambiata": true
   },
@@ -314,7 +347,7 @@
    "http": 200,
    "file": "roma/2b46e5d8fe38.txt",
    "titolo": "ASL Roma 2 - Punto Unico di Accesso - PUA",
-   "sha": "050b4a513c4a02dbe3f658db47c4ac54c8eeb51c49e25eb2a89dc7e1f74260e6",
+   "sha": "42517fc88669d1b7411244ce6d437da1f7a5b6eae3156539987ec9a5c3a75f93",
    "caratteri": 12653,
    "cambiata": true
   },
@@ -352,6 +385,72 @@
    "cambiata": false
   },
   {
+   "asl": "roma",
+   "url": "https://salutelazio.it/it/pass-di-garanzia",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "roma/1b6a08522663.txt",
+   "titolo": "Fascicolo Sanitario",
+   "sha": "6772526017635319bde0886cb17e55d9534f649dbcd20a4e00c6e5831978ab0e",
+   "caratteri": 4175,
+   "cambiata": true
+  },
+  {
+   "asl": "roma",
+   "url": "https://www.aslroma1.it/il-percorso-di-garanzia-nella-regione-lazio",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "roma/a267d29fc53d.txt",
+   "titolo": "Il percorso di garanzia nella Regione Lazio",
+   "sha": "e7a591097c15e5742f503de7a48fe53e51a9d40f01f78f76b2ff99e701b0cf48",
+   "caratteri": 16034,
+   "cambiata": true
+  },
+  {
+   "asl": "roma",
+   "url": "https://ammtrasp.aslroma2.it/index.php/15-04-liste-di-attesa/15-04-05-liste-di-attesa",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "roma/7e7cbafb32a1.txt",
+   "titolo": "15.04.05 Liste di attesa",
+   "sha": "c90c7fd016c0b3d61ea758d070c52a3f2d6e7aa774bf193701dfe79202c13ad7",
+   "caratteri": 8680,
+   "cambiata": true
+  },
+  {
+   "asl": "roma",
+   "url": "https://www.aslroma3.it/amministrazione-trasparente/liste-attesa-new/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "roma/17a23a5b9772.txt",
+   "titolo": "Liste di attesa - Asl Roma 3",
+   "sha": "bf771267dc856cf88e9e0ca3fc75c0bd1ea8ebc05ec6546782ecb108054345ce",
+   "caratteri": 10145,
+   "cambiata": true
+  },
+  {
+   "asl": "roma",
+   "url": "https://www.aslroma4.it/servizi-on-line/liste-di-attesa",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "roma/42c0e279128f.txt",
+   "titolo": "Liste di attesa - ASL ROMA 4",
+   "sha": "ee61844998cf542a15c6e9d39834f0843c6791e88b57073ba21bcde247a7f4a9",
+   "caratteri": 4744,
+   "cambiata": true
+  },
+  {
+   "asl": "roma",
+   "url": "https://www.aslroma5.it/percorso-di-garanzia-nella-regione-lazio/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "roma/3d42876ac50c.txt",
+   "titolo": "Percorso di garanzia nella Regione Lazio - ASL ROMA 5",
+   "sha": "6488ff22d90acc098975f5a2bd8236dec541d294c855bee1824821d6a9b9a615",
+   "caratteri": 11300,
+   "cambiata": true
+  },
+  {
    "asl": "viterbo",
    "url": "https://www.asl.vt.it/",
    "controllata": "2026-10-22",
@@ -370,9 +469,9 @@
    "finale": "https://salutelazio.it/it/servizi/guardia-medica",
    "file": "viterbo/a14f568f3b2f.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
+   "sha": "35d3aad05a7b0076371577c576aa4a5787bf713c630b0b4c273f9b2e68bbe902",
    "caratteri": 2358,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "viterbo",
@@ -439,6 +538,17 @@
    "sha": "6976d3a435461ab2a018eee549f10f2a608165fc3acde8c9ea0536aed4cc475b",
    "caratteri": 9306,
    "cambiata": false
+  },
+  {
+   "asl": "viterbo",
+   "url": "https://salutelazio.it/it/pass-di-garanzia",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "viterbo/1b6a08522663.txt",
+   "titolo": "Fascicolo Sanitario",
+   "sha": "1ac84bf6cdfa4595a749bd926c75cb8f8de2b21a02f6aa5b8f8476c06626f4ad",
+   "caratteri": 4175,
+   "cambiata": true
   },
   {
    "asl": "inps-lazio",

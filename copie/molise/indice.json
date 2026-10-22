@@ -1,6 +1,6 @@
 {
  "regione": "molise",
- "aggiornato": "2026-10-22T05:51:51.528Z",
+ "aggiornato": "2026-10-22T06:50:37.401Z",
  "pagine": [
   {
    "asl": "campobasso",
@@ -91,6 +91,39 @@
    "cambiata": false
   },
   {
+   "asl": "campobasso",
+   "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/18807",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "campobasso/0ccccd631f5d.txt",
+   "titolo": "Regione Molise - FSE - Fascicolo Sanitario Elettronico - FAQ sul Fascicolo",
+   "sha": "ec318b960ceac99494c9471547fbccffda2c6deb8d3868514c95793d72b36aea",
+   "caratteri": 17997,
+   "cambiata": true
+  },
+  {
+   "asl": "campobasso",
+   "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/18220",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "campobasso/43c52b68792e.txt",
+   "titolo": "Regione Molise - Liste di attesa",
+   "sha": "0c53f3a0f6e5e03faf2d8772265b570ec1bbecfe0b8e607668594bc3008cb985",
+   "caratteri": 17160,
+   "cambiata": true
+  },
+  {
+   "asl": "campobasso",
+   "url": "https://www.asrem.molise.it/servizi-per-il-cittadino/modulistica/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "campobasso/293d17f05c9f.txt",
+   "titolo": "Modulistica – Asrem",
+   "sha": "592154073309950530174f5a4b6fde124ea9a1aa848e6b598738123f7bafa74a",
+   "caratteri": 15175,
+   "cambiata": true
+  },
+  {
    "asl": "isernia",
    "url": "https://www.asrem.molise.it/",
    "controllata": "2026-10-22",
@@ -155,6 +188,39 @@
    "sha": "42a54ef32f58f7a176bbe2c49f6dc420657a29045d400028d9067d42db0a9be1",
    "caratteri": 27051,
    "cambiata": false
+  },
+  {
+   "asl": "isernia",
+   "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/18807",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "isernia/0ccccd631f5d.txt",
+   "titolo": "Regione Molise - FSE - Fascicolo Sanitario Elettronico - FAQ sul Fascicolo",
+   "sha": "ec318b960ceac99494c9471547fbccffda2c6deb8d3868514c95793d72b36aea",
+   "caratteri": 17997,
+   "cambiata": true
+  },
+  {
+   "asl": "isernia",
+   "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/18220",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "isernia/43c52b68792e.txt",
+   "titolo": "Regione Molise - Liste di attesa",
+   "sha": "0c53f3a0f6e5e03faf2d8772265b570ec1bbecfe0b8e607668594bc3008cb985",
+   "caratteri": 17160,
+   "cambiata": true
+  },
+  {
+   "asl": "isernia",
+   "url": "https://www.asrem.molise.it/servizi-per-il-cittadino/modulistica/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "isernia/293d17f05c9f.txt",
+   "titolo": "Modulistica – Asrem",
+   "sha": "592154073309950530174f5a4b6fde124ea9a1aa848e6b598738123f7bafa74a",
+   "caratteri": 15175,
+   "cambiata": true
   },
   {
    "asl": "inps-molise",
