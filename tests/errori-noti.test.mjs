@@ -82,6 +82,7 @@ const ERRORI = [
   // Verifica dei fatti del 22/10/2026 (giro 7).
   [/[Ss]i sospende[^.]{0,120}29 giorni|29 giorni[^.]{0,60}si sospende/, 'accompagnamento: non si sospende se la struttura non dà tutta l\'assistenza (messaggio INPS 3347/2023): dirlo', /3347|tutta l'assistenza/],
   [/fino a 8\.263,31/, 'esenzione E02/E04: reddito «inferiore a» 8.263,31 (il limite esatto è escluso): «sotto 8.263,31»'],
+  [/uffici e lettere solo per la Sicilia|le lettere per ora solo per la Sicilia/, 'home: le regioni con le lettere si calcolano dall\'indice (regioni senza «moduli»), non si scrive «solo per la Sicilia»'],
 ];
 
 test('nessuno degli errori già trovati è tornato', () => {
