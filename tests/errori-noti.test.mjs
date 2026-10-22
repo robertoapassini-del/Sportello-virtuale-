@@ -22,6 +22,10 @@ function files(dir = SITE) {
 // [espressione, perché è sbagliato, righe dove invece va bene, file da saltare per ora].
 // I file da saltare sono quelli che un altro lavoro sta riscrivendo: si tolgono appena sono corretti. Le espressioni guardano il testo così com'è nel file.
 const ERRORI = [
+  // Lettere stampate del 22/10/2026 (giro 8): chi scrive «dott. Rossi» o «Distretto di Bagheria» nel modulo.
+  [/\b(dott|dr)\.(ssa)? (dott|dr)\b/i, 'titolo ripetuto «dott. dott.»: il nome del medico passa da doctorName() di js/letters.js'],
+  [/\bdott\. \$\{/, '«dott. ${…}»: chi scrive può aver già messo «dott.» o «dott.ssa»: usa doctorName() di js/letters.js', /TITLE\.test/],
+  [/Distretto – (Distretto|\$\{)/i, '«Distretto – ${…}»: chi scrive può aver già messo «Distretto di …» (niente «Distretto – Distretto»): usa districtLine() di js/letters.js', /\/\^distretto\/i\.test/],
   [/\b(la|della|nella|alla|dalla|sulla|una) (ASL|ASP|AUSL|ASST|ATS|USL|ULSS|AST|ASREM)\b/, "si scrive «l'ASL», «dell'ASL» (rilettura del 21/10/2026)"],
   [/art\.\s*4,?\s*comma\s*3[^.\n]{0,60}24\/2017|24\/2017[^.\n]{0,60}art\.\s*4,?\s*comma\s*3/, 'documentazione sanitaria entro 7/30 giorni: è l\'art. 4, comma 2 della L. 24/2017 (il comma 3 parla dei risarcimenti)'],
   [/art(icolo|\.)\s*18[^.\n]{0,80}autorizz|autorizz[^.\n]{0,80}art(icolo|\.)\s*18 (del )?DPCM/i, "ausili: l'art. 18 del DPCM 12/01/2017 parla dei destinatari; autorizzazione e tempi sono nell'allegato 12"],

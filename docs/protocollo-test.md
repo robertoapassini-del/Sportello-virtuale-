@@ -39,6 +39,7 @@ scritto (`tests/telefoni-vecchi.cjs`).
 | `node tests/robustezza.cjs <indirizzo>` | cosa succede quando qualcosa va storto: file di dati che non arrivano, cookie bloccati, indirizzi ostili (`?torna=`), hash rotti |
 | `node tests/numeri-province.cjs <indirizzo>` | Numeri utili in ogni regione attiva e in ogni provincia (`numeri-utili/#<id>`): errori JavaScript, «undefined», blocco dell'azienda (`#asp-numeri`) e della sede INPS presenti, niente «Sicilia» fuori dalla Sicilia; il pulsante «Stampa» chiama davvero la stampa |
 | `node tests/telefoni-vecchi.cjs <indirizzo>` | telefoni vecchi e reti lente, su tutte le pagine: senza JavaScript (titolo visibile entro 0,7 secondi, niente «Un momento…» per sempre, niente pulsanti bloccati), senza dati e con un errore nello script della pagina (resta la risposta scritta, con l'avviso), telefono in orizzontale 640x360 con il testo al 200% (niente scorrimento laterale) |
+| `node tests/lettere-stampa.cjs <indirizzo>` | 17 lettere dei moduli in Sicilia, con dati lunghi e un delegato: stampa col pulsante (al massimo 2 pagine, solo la lettera, con «Spett.le», «Oggetto:», nome, luogo e data accanto alla firma), stampa dal menu del browser (Ctrl+P) sulla schermata della lettera e sul modulo ufficiale dell'ASP di Palermo (solo la lettera o la tabella, mai il modulo con i dati), la classe di stampa che resta finché non arriva «afterprint» (sul telefono la stampa non aspetta), testo copiato senza entità HTML, link email sotto i 2000 caratteri con il nome nell'oggetto, PEC di chi scrive, firma con il nome di chi firma, niente «dott. dott.» né «Distretto – Distretto», niente frasi spezzate a mano. Usa `pdfinfo`/`pdftotext` se ci sono |
 
 **Elenco dei problemi noti delle copie** (`tests/copie-noti.txt`): una chiave per riga, per esempio
 `sicilia/enna numero 0935520111 https://www.aspenna.it`. Ci vanno solo i buchi delle copie (pagine fatte con
@@ -114,3 +115,8 @@ tutti i controlli verdi.
 - 22/10/2026 (giro 8) — audit dell'italiano semplice: `tests/leggibilita.test.mjs` ([regola-italiano.md](regola-italiano.md)).
   9 pagine avevano un Gulpease sotto 60 (ausili, cure fuori regione, dentista, accompagnamento, RSA), 13 frasi
   superavano le 40 parole, la privacy diceva «ai sensi dell'art. 22 GDPR».
+- 22/10/2026 (giro 8) — audit delle lettere stampate: `tests/lettere-stampa.cjs` (sul telefono la classe che stampa solo la
+  lettera spariva dopo 1 secondo e si stampava la pagina intera con i dati; Ctrl+P sulla schermata della lettera stampava
+  4-6 pagine col modulo; frasi spezzate a mano che in stampa lasciavano mozziconi; firma senza il nome; PEC chiesta e mai
+  scritta; «dott. dott.», «Distretto – Distretto»; oggetto dell'email INPS senza il nome), in `lettere.test.mjs` PEC, firma,
+  una riga per frase, `doctorName()` e `districtLine()`, in `errori-noti.test.mjs` «dott. ${…}» e «Distretto – ${…}».

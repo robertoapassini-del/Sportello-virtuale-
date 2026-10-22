@@ -153,4 +153,8 @@ Non fatto perché impossibile dall'estero: il controllo dei 370 link esterni (`n
   numeri in contrasto). Cercare `TODO` nel codice e nei dati.
 - [ ] **Domande da fare al telefono agli URP:** [docs/domande-urp.md](docs/domande-urp.md).
 - [ ] **Nuovo piano regionale delle liste d'attesa** (atteso entro il 22/12/2026): ricontrollare tempi e contatti di tutte le ASP.
+- [ ] **Stampa da un telefono vero** (audit del 22/10/2026, giro 8): su un Android (Chrome) e su un iPhone (Safari), aprire una
+  lettera (per esempio Cartella clinica → sollecito), premere «Stampa o salva» e poi, tornati sulla pagina, stampare dal menu
+  del browser: sul foglio (o nel PDF) deve esserci solo la lettera, mai il modulo con i dati. `tests/lettere-stampa.cjs`
+  lo prova in Chromium imitando il telefono (la stampa che non aspetta), non su un telefono vero.
 - [ ] **Prova con persone anziane:** far usare il sito a qualcuno e annotare dove si blocca.

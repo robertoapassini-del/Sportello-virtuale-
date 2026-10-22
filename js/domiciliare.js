@@ -3,7 +3,7 @@
 // Non c'è un numero di giorni fissato dalla legge: spieghiamo i passi e, se nessuno viene,
 // prepariamo un sollecito al distretto. Non chiediamo la malattia.
 import { todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
-import { genericRequest, mailtoHref } from './letters.js';
+import { genericRequest, mailtoHref, doctorName, districtLine } from './letters.js';
 import { noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact, complaintTo, aslLabel, regioneInfo, inRegione, regioneLink, aslIntestazione, regione, regioneNonPronta, syncDelegate, delegateNoteText } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons, senzaUffici } from './flow.js';
 
@@ -253,14 +253,14 @@ const screens = {
           Object.assign(person, v);
           syncDelegate(form, person);
           const premise = isReminder
-            ? [`in data ${formatIt(state.requestDate)} il medico di medicina generale${state.doctor ? ` (dott. ${state.doctor})` : ''} ha inoltrato richiesta di attivazione dell'assistenza domiciliare integrata`,
+            ? [`in data ${formatIt(state.requestDate)} il medico di medicina generale${state.doctor ? ` (${doctorName(state.doctor)})` : ''} ha inoltrato richiesta di attivazione dell'assistenza domiciliare integrata`,
                'alla data odierna non è stata effettuata la valutazione domiciliare né è pervenuta alcuna comunicazione',
                'le cure domiciliari rientrano nei livelli essenziali di assistenza (art. 22 DPCM 12/01/2017)']
             : ['è in carico al servizio di assistenza domiciliare integrata del distretto',
                'l\'assistenza è stata interrotta o ridotta senza una nuova valutazione',
                'le cure domiciliari rientrano nei livelli essenziali di assistenza (art. 22 DPCM 12/01/2017)'];
           const text = genericRequest({
-            to: `${aslIntestazione()} di ${a.province}\n${state.district ? `Distretto – ${state.district} – ` : ''}Punto Unico di Accesso\ne p.c. Ufficio Relazioni con il Pubblico`,
+            to: `${aslIntestazione()} di ${a.province}\n${state.district ? `${districtLine(state.district)} – ` : ''}Punto Unico di Accesso\ne p.c. Ufficio Relazioni con il Pubblico`,
             address: to, person,
             subject: isReminder ? `SOLLECITO – Attivazione assistenza domiciliare integrata (richiesta ${art('del', state.requestDate)}${formatIt(state.requestDate)})` : 'Richiesta di rivalutazione del piano di assistenza domiciliare integrata',
             premise,

@@ -6,7 +6,8 @@ const blank = (v, placeholder = '__________') => (v && String(v).trim()) || plac
 
 function personBlock(p) {
   return `Il/La sottoscritto/a ${blank(p.fullName)}, nato/a ${/^\s*a/i.test(p.birthPlace || '') ? 'ad' : 'a'} ${blank(p.birthPlace)} ${art('il', p.birthDate)}${p.birthDate ? formatIt(p.birthDate) : '__________'}, ` +
-    `codice fiscale ${blank(p.cf)},${p.idDoc && String(p.idDoc).trim() ? ` documento di identità ${String(p.idDoc).trim()},` : ''}\nresidente in ${blank(p.address)}, tel. ${blank(p.phone)}, email ${blank(p.email)},`;
+    `codice fiscale ${blank(p.cf)},${p.idDoc && String(p.idDoc).trim() ? ` documento di identità ${String(p.idDoc).trim()},` : ''} residente in ${blank(p.address)}, tel. ${blank(p.phone)}, email ${blank(p.email)},` +
+    (p.pec && String(p.pec).trim() ? ` PEC ${String(p.pec).trim()},` : '');
 }
 
 // Chi scrive per un'altra persona. Tre casi, con firma e allegati diversi:
@@ -49,8 +50,15 @@ export function delegateAttachment(p = {}) {
 }
 const extra = (p) => (delegateAttachment(p) ? `; ${delegateAttachment(p)}` : '');
 
+// Luogo e data, poi la firma con sotto chi firma: la persona o chi scrive per lei, con il suo ruolo.
+const ROLE_NAMES = { delegato: 'delegato/a', genitore: 'genitore' };
+const SIGN_INDENT = ' '.repeat(30);
 function signature(p, today) {
-  return `${blank(p.city, '[luogo]')}, ${formatIt(today)}                                   Firma ______________________`;
+  const role = delegateRole(p);
+  const who = role
+    ? `Firma di ${blank(p.delegateName)} (${ROLE_NAMES[role] || guardianName(p)})\n${SIGN_INDENT}______________________`
+    : `Firma ______________________${p.fullName && String(p.fullName).trim() ? `\n${SIGN_INDENT}${String(p.fullName).trim()}` : ''}`;
+  return `${blank(p.city, '[luogo]')}, ${formatIt(today)}\n\n${SIGN_INDENT}${who}`;
 }
 
 // Modulo 1 — richiesta di attivazione del percorso di tutela (SPEC sezione 7).
@@ -60,33 +68,25 @@ export function tutelaLetter({ ente = 'Azienda Sanitaria Provinciale', aspName, 
   const term = (d) => (today && daysBetween(d, today) >= 0 ? `termine scaduto ${art('il', d)}${formatIt(d)}` : `termine che scade ${art('il', d)}${formatIt(d)}`);
   const callback = cls === 'U' || !requestDate ? ''
     : !callbackDays ? ', né è stato/a ricontattato/a entro il termine previsto'
-    : `, né è stato/a ricontattato/a entro i ${callbackDays} giorni previsti dal PNGLA per la classe ${cls}${callbackDeadline ? `\n  (${term(callbackDeadline)})` : ''}`;
+    : `, né è stato/a ricontattato/a entro i ${callbackDays} giorni previsti dal PNGLA per la classe ${cls}${callbackDeadline ? ` (${term(callbackDeadline)})` : ''}`;
   const booking = noDateOffered
-    ? `- in data ${requestDate ? formatIt(requestDate) : '__________'} ha richiesto la prenotazione tramite i canali ufficiali e non gli/le è
-  stata proposta alcuna data${callback};`
-    : `- in data ${formatIt(bookingDate)} ha richiesto la prenotazione tramite i canali ufficiali e la prima
-  disponibilità proposta è ${art('il', appointmentDate)}${formatIt(appointmentDate)}, oltre il tempo massimo previsto${deadline ? `\n  (${term(deadline)})` : ''};`;
+    ? `- in data ${requestDate ? formatIt(requestDate) : '__________'} ha richiesto la prenotazione tramite i canali ufficiali e non gli/le è stata proposta alcuna data${callback};`
+    : `- in data ${formatIt(bookingDate)} ha richiesto la prenotazione tramite i canali ufficiali e la prima disponibilità proposta è ${art('il', appointmentDate)}${formatIt(appointmentDate)}, oltre il tempo massimo previsto${deadline ? ` (${term(deadline)})` : ''};`;
   const attach = 'copia del documento di identità; ricetta; foglio/promemoria di prenotazione' +
     extra(p);
   return `Spett.le ${ente} di ${aspName}
 ${aspAddress || ''}
 
-Oggetto: Richiesta di attivazione del percorso di tutela – "${blank(service)}", ricetta n. ${blank(nre)}, classe ${cls}
-(prestazione di primo accesso; Piano Nazionale di Governo delle Liste d'Attesa 2026-2028; D.Lgs. 124/1998, art. 3, commi 10 e 13)
+Oggetto: Richiesta di attivazione del percorso di tutela – "${blank(service)}", ricetta n. ${blank(nre)}, classe ${cls} (prestazione di primo accesso; Piano Nazionale di Governo delle Liste d'Attesa 2026-2028; D.Lgs. 124/1998, art. 3, commi 10 e 13)
 
 ${personBlock(p)}
 
 PREMESSO CHE
-- gli/le è stata prescritta la prestazione di primo accesso "${blank(service)}"
-  (ricetta n. ${blank(nre)}${prescriptionDate ? ` ${art('del', prescriptionDate)}${formatIt(prescriptionDate)}` : ''}) con classe di priorità ${cls}, che prevede un tempo massimo di attesa
-  di ${maxDays} giorni;
+- gli/le è stata prescritta la prestazione di primo accesso "${blank(service)}" (ricetta n. ${blank(nre)}${prescriptionDate ? ` ${art('del', prescriptionDate)}${formatIt(prescriptionDate)}` : ''}) con classe di priorità ${cls}, che prevede un tempo massimo di attesa di ${maxDays} giorni;
 ${booking}
 
 CHIEDE
-l'attivazione del percorso di tutela affinché la prestazione sia erogata entro i tempi massimi
-previsti dalla classe di priorità indicata e, in caso di indisponibilità di strutture pubbliche o
-accreditate, in regime di attività libero-professionale intramuraria con il solo pagamento del
-ticket, ove dovuto.
+l'attivazione del percorso di tutela affinché la prestazione sia erogata entro i tempi massimi previsti dalla classe di priorità indicata e, in caso di indisponibilità di strutture pubbliche o accreditate, in regime di attività libero-professionale intramuraria con il solo pagamento del ticket, ove dovuto.
 ${delegateBlock(p)}
 Allega: ${attach}.
 
@@ -99,21 +99,16 @@ export function tutelaReminder({ ente = 'Azienda Sanitaria Provinciale', aspName
   return `Spett.le ${ente} di ${aspName}
 ${aspAddress || ''}
 
-Oggetto: SOLLECITO – Richiesta di attivazione del percorso di tutela ${art('del', firstRequestDate)}${firstRequestDate ? formatIt(firstRequestDate) : '__________'}
-(prestazione "${blank(service)}", ricetta n. ${blank(nre)}, classe di priorità ${cls})
+Oggetto: SOLLECITO – Richiesta di attivazione del percorso di tutela ${art('del', firstRequestDate)}${firstRequestDate ? formatIt(firstRequestDate) : '__________'} (prestazione "${blank(service)}", ricetta n. ${blank(nre)}, classe di priorità ${cls})
 
 ${personBlock(p)}
 
-in data ${firstRequestDate ? formatIt(firstRequestDate) : '__________'} ha chiesto l'attivazione del percorso di tutela per la
-prestazione sopra indicata (protocollo n. ${blank(protocol, '___')}). Alla data odierna non ha ricevuto risposta né proposta di appuntamento
-entro i tempi massimi previsti.
+in data ${firstRequestDate ? formatIt(firstRequestDate) : '__________'} ha chiesto l'attivazione del percorso di tutela per la prestazione sopra indicata (protocollo n. ${blank(protocol, '___')}). Alla data odierna non ha ricevuto risposta né proposta di appuntamento entro i tempi massimi previsti.
 
 SOLLECITA
-un riscontro nel più breve tempo possibile e l'erogazione della prestazione secondo quanto previsto
-dal Piano Nazionale di Governo delle Liste d'Attesa 2026-2028 ovvero, in mancanza, l'erogazione in regime
-libero-professionale intramurario con il solo pagamento del ticket (D.Lgs. 124/1998, art. 3, c. 13).
+un riscontro nel più breve tempo possibile e l'erogazione della prestazione secondo quanto previsto dal Piano Nazionale di Governo delle Liste d'Attesa 2026-2028 ovvero, in mancanza, l'erogazione in regime libero-professionale intramurario con il solo pagamento del ticket (D.Lgs. 124/1998, art. 3, c. 13).
 ${delegateBlock(p)}
-Allega: copia della richiesta ${art('del', firstRequestDate)}${firstRequestDate ? formatIt(firstRequestDate) : '__________'} e relativi allegati.
+Allega: copia della richiesta ${art('del', firstRequestDate)}${firstRequestDate ? formatIt(firstRequestDate) : '__________'} e relativi allegati${extra(p)}.
 
 ${signature(p, today)}
 `;
@@ -123,8 +118,8 @@ ${signature(p, today)}
 // category: 'oncological' | 'minor' | 'other' (dice perché vale il termine di legge).
 export function inpsReminder({ provinceName, inpsPec, person: p, certNumber, certDate, domandaDate, domandaNumber, regime, category, deadlineInfo, today }) {
   const premise = regime === 'new'
-    ? `- in data ${formatIt(certDate)} è stato trasmesso all'INPS il certificato medico introduttivo n. ${blank(certNumber)},\n  che ai sensi del D.Lgs. 62/2024 costituisce domanda di accertamento;`
-    : `- in data ${formatIt(certDate)} è stato trasmesso all'INPS il certificato medico introduttivo n. ${blank(certNumber)}\n  e in data ${domandaDate ? formatIt(domandaDate) : '__________'} è stata presentata la relativa domanda (n. ${blank(domandaNumber)});`;
+    ? `- in data ${formatIt(certDate)} è stato trasmesso all'INPS il certificato medico introduttivo n. ${blank(certNumber)}, che ai sensi del D.Lgs. 62/2024 costituisce domanda di accertamento;`
+    : `- in data ${formatIt(certDate)} è stato trasmesso all'INPS il certificato medico introduttivo n. ${blank(certNumber)} e in data ${domandaDate ? formatIt(domandaDate) : '__________'} è stata presentata la relativa domanda (n. ${blank(domandaNumber)});`;
   const why = category === 'oncological' ? ' trattandosi di persona con patologia oncologica, come indicato nel certificato,'
     : category === 'minor' && regime === 'new' ? ' trattandosi di minore,' : '';
   const what = regime === 'new'
@@ -133,7 +128,7 @@ export function inpsReminder({ provinceName, inpsPec, person: p, certNumber, cer
   // Senza base di legge (vecchia procedura ordinaria) i 30 giorni sono indicativi: si dice solo quanto tempo è passato.
   const elapsed = domandaDate && today ? daysBetween(domandaDate, today) : null;
   const term = deadlineInfo.legal
-    ? `- ai sensi dell'${deadlineInfo.legal},${why}\n  ${what},\n  cioè entro ${art('il', deadlineInfo.deadline)}${formatIt(deadlineInfo.deadline)};\n- alla data odierna non è pervenuta alcuna convocazione a visita;`
+    ? `- ai sensi dell'${deadlineInfo.legal},${why} ${what}, cioè entro ${art('il', deadlineInfo.deadline)}${formatIt(deadlineInfo.deadline)};\n- alla data odierna non è pervenuta alcuna convocazione a visita;`
     : `- sono trascorsi ${elapsed !== null && elapsed > deadlineInfo.days ? elapsed : `oltre ${deadlineInfo.days}`} giorni dalla presentazione della domanda senza che sia pervenuta alcuna convocazione;`;
   const attach = 'copia del documento di identità; ricevuta di trasmissione del certificato medico' +
     (regime === 'old' ? '; ricevuta della domanda' : '') +
@@ -141,8 +136,7 @@ export function inpsReminder({ provinceName, inpsPec, person: p, certNumber, cer
   return `Spett.le INPS – Direzione provinciale di ${provinceName}
 ${inpsPec || ''}
 
-Oggetto: Sollecito convocazione a visita per accertamento sanitario (invalidità civile / handicap)
-– certificato medico n. ${blank(certNumber)} ${art('del', certDate)}${formatIt(certDate)}
+Oggetto: Sollecito convocazione a visita per accertamento sanitario (invalidità civile / handicap) – certificato medico n. ${blank(certNumber)} ${art('del', certDate)}${formatIt(certDate)}
 
 ${personBlock(p)}
 
@@ -151,8 +145,7 @@ ${premise}
 ${term}
 
 SOLLECITA
-la convocazione a visita nel più breve tempo possibile e chiede di essere informato/a sullo
-stato della pratica.
+la convocazione a visita nel più breve tempo possibile e chiede di essere informato/a sullo stato della pratica.
 ${delegateBlock(p)}
 Allega: ${attach}.
 
@@ -188,21 +181,17 @@ export function cartellaReminder({ structure, address, person: p, requestDate, p
   return `Spett.le ${blank(structure, 'Direzione Sanitaria di __________')}
 ${address || ''}
 
-Oggetto: SOLLECITO – Richiesta di copia ${c.text} presentata ${art('il', requestDate)}${requestDate ? formatIt(requestDate) : '__________'}
-(art. 4, comma 2, L. 24/2017)
+Oggetto: SOLLECITO – Richiesta di copia ${c.text} presentata ${art('il', requestDate)}${requestDate ? formatIt(requestDate) : '__________'} (art. 4, comma 2, L. 24/2017)
 
 ${personBlock(p)}
 
 PREMESSO CHE
 - in data ${requestDate ? formatIt(requestDate) : '__________'} ha chiesto copia ${c.text} ${c.rel} a ${blank(episode, '____________ (periodo e reparto)')}${protocol ? ` (ricevuta/protocollo n. ${protocol})` : ''};
-- ai sensi dell'art. 4, comma 2, della L. 24/2017 la direzione sanitaria fornisce la documentazione sanitaria disponibile
-  entro ${days} giorni dalla richiesta, cioè entro ${art('il', deadline)}${deadline ? formatIt(deadline) : '__________'}, e le eventuali integrazioni entro ${integrationDays} giorni;
+- ai sensi dell'art. 4, comma 2, della L. 24/2017 la direzione sanitaria fornisce la documentazione sanitaria disponibile entro ${days} giorni dalla richiesta, cioè entro ${art('il', deadline)}${deadline ? formatIt(deadline) : '__________'}, e le eventuali integrazioni entro ${integrationDays} giorni;
 - alla data odierna non ha ricevuto quanto richiesto né alcuna comunicazione;
 
 SOLLECITA
-la consegna della documentazione richiesta nel più breve tempo possibile e chiede di essere informato/a
-per iscritto su data e modalità di ritiro. Chiede inoltre che la prima copia sia rilasciata gratuitamente,
-ai sensi dell'art. 15 del Regolamento UE 2016/679 (GDPR).
+la consegna della documentazione richiesta nel più breve tempo possibile e chiede di essere informato/a per iscritto su data e modalità di ritiro. Chiede inoltre che la prima copia sia rilasciata gratuitamente, ai sensi dell'art. 15 del Regolamento UE 2016/679 (GDPR).
 ${delegateBlock(p)}
 Allega: copia del documento di identità; copia della richiesta ${art('del', requestDate)}${requestDate ? formatIt(requestDate) : '__________'}${extra(p)}.
 
@@ -216,27 +205,39 @@ export function ausiliReminder({ ente = 'Azienda Sanitaria Provinciale', aspName
 Ufficio Assistenza Protesica
 ${address || ''}
 
-Oggetto: SOLLECITO – Autorizzazione alla fornitura di ${blank(device, 'ausilio/protesi')} richiesta ${art('il', requestDate)}${requestDate ? formatIt(requestDate) : '__________'}
-(DPCM 12/01/2017, allegato 12, e disposizioni regionali sull'assistenza protesica)
+Oggetto: SOLLECITO – Autorizzazione alla fornitura di ${blank(device, 'ausilio/protesi')} richiesta ${art('il', requestDate)}${requestDate ? formatIt(requestDate) : '__________'} (DPCM 12/01/2017, allegato 12, e disposizioni regionali sull'assistenza protesica)
 
 ${personBlock(p)}
 
 PREMESSO CHE
-- in data ${requestDate ? formatIt(requestDate) : '__________'} ha presentato richiesta di autorizzazione alla fornitura di ${blank(device, 'ausilio/protesi')},
-  su prescrizione ${prescriber ? `del/della ${prescriber}` : 'dello specialista del Servizio sanitario'}${protocol ? ` (ricevuta/protocollo n. ${protocol})` : ''};
-- ai sensi del DPCM 12/01/2017 (allegato 12) il tempo massimo per l'autorizzazione è fissato dalla Regione, e secondo le disposizioni regionali
-  sull'assistenza protesica l'autorizzazione va rilasciata entro ${days} giorni dalla richiesta
-  (in Sicilia: direttive regionali sul DM 332/1999), cioè entro ${art('il', deadline)}${deadline ? formatIt(deadline) : '__________'};
+- in data ${requestDate ? formatIt(requestDate) : '__________'} ha presentato richiesta di autorizzazione alla fornitura di ${blank(device, 'ausilio/protesi')}, su prescrizione ${prescriber ? `di ${String(prescriber).trim()}` : 'dello specialista del Servizio sanitario'}${protocol ? ` (ricevuta/protocollo n. ${protocol})` : ''};
+- ai sensi del DPCM 12/01/2017 (allegato 12) il tempo massimo per l'autorizzazione è fissato dalla Regione, e secondo le disposizioni regionali sull'assistenza protesica l'autorizzazione va rilasciata entro ${days} giorni dalla richiesta (in Sicilia: direttive regionali sul DM 332/1999), cioè entro ${art('il', deadline)}${deadline ? formatIt(deadline) : '__________'};
 - alla data odierna non ha ricevuto l'autorizzazione né alcuna comunicazione;
 
 CHIEDE
-che, decorso il termine, l'autorizzazione sia rilasciata senza ulteriore ritardo e sia avviata la fornitura,
-con indicazione del fornitore e dei tempi di consegna.
+che, decorso il termine, l'autorizzazione sia rilasciata senza ulteriore ritardo e sia avviata la fornitura, con indicazione del fornitore e dei tempi di consegna.
 ${delegateBlock(p)}
 Allega: copia del documento di identità; copia della prescrizione e della richiesta ${art('del', requestDate)}${requestDate ? formatIt(requestDate) : '__________'}${extra(p)}.
 
 ${signature(p, today)}
 `;
+}
+
+// Il nome del medico come va nella lettera: «dott.» davanti, se chi scrive non ha già messo un titolo
+// («dott.ssa Anna Bianchi», «Dr. Rossi», «prof. Verdi»): il titolo non si ripete (audit del 22/10/2026, giro 8).
+const TITLE = /^(dott|dr|prof)(\.?ssa)?(\.\s*|\s+)/i;
+export function doctorName(name) {
+  const n = String(name || '').trim();
+  if (!n) return '';
+  return TITLE.test(n) ? n : `dott. ${n}`;
+}
+
+// Il distretto nell'intestazione: «Distretto – Bagheria», ma «Distretto di Bagheria» resta com'è
+// (la parola «Distretto» non si ripete).
+export function districtLine(district) {
+  const d = String(district || '').trim();
+  if (!d) return '';
+  return /^distretto/i.test(d) ? d : `Distretto – ${d}`;
 }
 
 // Richiesta o sollecito generico a un ufficio (distretto, PUA, rete cure palliative).

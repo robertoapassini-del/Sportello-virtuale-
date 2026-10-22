@@ -539,4 +539,12 @@ ul.area-list li > .btn { flex: 1; }
   /* «Stampa la guida»: la risposta scritta (titolo, regole) e la guida, senza pulsanti né domande. */
   body.printing-guide #app button, body.printing-guide #app .btn, body.printing-guide #app form { display: none !important; }
   body.printing-guide .guida > h2:first-child { border-top: none; padding-top: 0; }
+  /* Schermata con la lettera (o con «Cosa scrivere nel modulo»), stampata dal menu del browser (Ctrl+P):
+     solo la lettera, senza testata, domande e modulo con i dati personali (js/common.js, markLetter). */
+  body.letter-screen:not(.printing):not(.printing-guide) > *:not(.print-path):not(.print-target),
+  body.letter-screen:not(.printing):not(.printing-guide) .print-path > *:not(.print-path):not(.print-target) { display: none !important; }
+  body.letter-screen:not(.printing):not(.printing-guide) .print-path { display: block !important; margin: 0 !important; padding: 0 !important; border: none !important; background: none !important; box-shadow: none !important; max-width: none !important; }
+  body.letter-screen .letter.print-target { display: block; border: none; border-radius: 0; padding: 0; margin: 0; background: none; font-family: "Times New Roman", serif; font-size: 12pt; line-height: 1.45; color: #000; overflow: visible; }
+  body.letter-screen table.print-target { font-size: 12pt; color: #000; }
+  table.fields caption { position: static !important; width: auto !important; height: auto !important; clip: auto !important; overflow: visible !important; white-space: normal !important; text-align: left; font-weight: 700; font-size: 13pt; margin-bottom: 8pt; }
 }
