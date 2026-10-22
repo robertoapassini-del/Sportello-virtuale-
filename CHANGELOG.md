@@ -2,6 +2,17 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 22/10/2026 — Lazio, Abruzzo, Molise, Campania: dati per i moduli e le lettere
+- `tests/browser.cjs` e `tests/robustezza.cjs`: la regione non attiva e i moduli ancora spenti della Lombardia si leggono dall'indice, non sono scritti a mano (con la Campania attivata il controllo «regione non attiva» falliva).
+- `js/home.js`: per una regione con alcuni moduli completi la frase della pagina iniziale li elenca («In Molise ci sono i numeri utili e, con gli uffici della zona, invalidità, cartella clinica, assistenza a casa e medico di famiglia»).
+- Campania attiva per Numeri utili (`data/regioni/campania/asl.json`, `inps.json`): 5 province, 7 ASL (Avellino, Benevento, Caserta, Napoli 1 Centro, 2 Nord, 3 Sud, Salerno), 57 contatti letti nelle copie del server del 22/10/2026 (proof «pagina»; `confronta-copie` 0 problemi). Le tre ASL di Napoli sono in una voce sola, come Roma nel Lazio. Sedi INPS: pagine «sedi» di inps.it (Avellino, Benevento, Caserta, Napoli, Salerno).
+- Riforma della disabilità (campo `regime` di `inps.json`) in Lazio, Abruzzo, Molise e Campania: nuovo sistema dal 01/01/2025 a Frosinone e Salerno, dal 30/09/2025 a Teramo e Isernia, dal 01/03/2026 a Roma, Chieti, Campobasso e Caserta; vecchio sistema nelle altre fino al 31/12/2026. Fonte: notizie INPS (terza fase, febbraio 2026; seconda fase, messaggio 2600 del 05/09/2025) e Dipartimento per le politiche in favore delle persone con disabilità, letti come estratto: da rileggere sul testo (todo).
+- Moduli accesi in `data/regioni/index.json`: invalidità in Lazio, Abruzzo, Molise e Campania; cartella clinica in Abruzzo e Molise; assistenza domiciliare e medico di famiglia in Molise. PEC ed email URP di queste aziende sono nelle copie.
+- Abruzzo, ASL di Teramo: uffici cartelle cliniche degli ospedali di Atri, Giulianova e Sant'Omero, con gli orari (pagina «Cittadini Utenti»).
+- Molise: `scelta_medico` dalla pagina della Regione sul Fascicolo sanitario elettronico (scelta e revoca online; medico temporaneo e deroghe al distretto).
+- Nuovo campo `pagine` in `asl.json` (lo legge già `tools/copie.mjs`): pagine ufficiali sul percorso di tutela da far copiare al server (Pass di garanzia nel Lazio e pagine delle ASL di Roma; liste di attesa delle ASL abruzzesi, della Regione Campania, di Salerno e Benevento; pagine della Regione Molise). Trovate con il motore di ricerca: nessun dato scritto finché non c'è la copia.
+- `tests/copie-noti.txt`: tolte due righe del Lazio che non servono più.
+
 ## 22/10/2026 — Frase della pagina iniziale sulle regioni
 - `js/home.js`: «uffici e lettere solo per la Sicilia» confondeva (i numeri utili sono proprio numeri di uffici) e sarebbe diventata falsa con una regione nuova. Ora: «Le regole e i conti valgono in tutta Italia. In Umbria per ora ci sono i numeri utili. Le lettere già pronte, per ora, solo in Sicilia.» Le regioni con le lettere si leggono dall'indice. Nuova riga in `tests/errori-noti.test.mjs`.
 

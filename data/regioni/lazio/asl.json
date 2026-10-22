@@ -1,7 +1,7 @@
 {
  "region": "Lazio",
  "model": "ASL",
- "_note": "Numeri delle ASL del Lazio per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili (data/regioni/index.json, «moduli»). Nel Lazio la guardia medica è il 116117 (dal 24/08/2026) e si prenota al ReCUP 06 9939.",
+ "_note": "Numeri delle ASL del Lazio per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili (data/regioni/index.json, «moduli»). Nel Lazio la guardia medica è il 116117 (dal 24/08/2026) e si prenota al ReCUP 06 9939. «pagine»: indirizzi ufficiali in più che il server deve copiare (tools/copie.mjs), per i dati dei moduli non ancora accesi.",
  "asl": [
   {
    "id": "frosinone",
@@ -170,7 +170,14 @@
    "todo": [
     "Il CUP dell'ASL di Frosinone usa solo il numero regionale ReCUP 06 9939: nelle pagine non c'è un numero CUP proprio (gli sportelli di Anagni e Alatri rimandano al centralino).",
     "Manca un numero del PUA / cure domiciliari: le pagine copiate (Distretti sanitari) non riportano telefoni.",
-    "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari."
+    "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari.",
+    "Liste d'attesa: nel Lazio il percorso si chiama «Pass di garanzia» (pagine copiate: URP dell'ASL Roma 1, «Il percorso di garanzia nella Regione Lazio»). Gli estratti (22/10/2026) dicono: vale per le classi B e D, si chiede sul sito della Regione, allo sportello CUP o al ReCUP 06 9939, poi l'ASL propone un appuntamento. Da confermare sulle copie delle pagine in «pagine» (salutelazio.it/it/pass-di-garanzia) prima di scrivere how_to e letter_mode."
+   ],
+   "pagine": [
+    {
+     "tipo": "liste-attesa",
+     "url": "https://salutelazio.it/it/pass-di-garanzia"
+    }
    ]
   },
   {
@@ -331,7 +338,14 @@
     "La pagina PUA (www.ausl.latina.it/index.php/pua) è ferma al 2015: numeri dei PUA non usati. Le pagine sull'assistenza domiciliare non hanno telefoni.",
     "Contraddizione sull'URP di Terracina-Fondi: la pagina Contatti dà 0771 505980, la pagina URP (aggiornata il 21/10/2026) dà 0771 505805; ho usato quest'ultimo.",
     "La pagina Contatti riporta ancora il vecchio numero della guardia medica (0773 520888): non usato, vale il 116117.",
-    "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari."
+    "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari.",
+    "Liste d'attesa: nel Lazio il percorso si chiama «Pass di garanzia» (pagine copiate: URP dell'ASL Roma 1, «Il percorso di garanzia nella Regione Lazio»). Gli estratti (22/10/2026) dicono: vale per le classi B e D, si chiede sul sito della Regione, allo sportello CUP o al ReCUP 06 9939, poi l'ASL propone un appuntamento. Da confermare sulle copie delle pagine in «pagine» (salutelazio.it/it/pass-di-garanzia) prima di scrivere how_to e letter_mode."
+   ],
+   "pagine": [
+    {
+     "tipo": "liste-attesa",
+     "url": "https://salutelazio.it/it/pass-di-garanzia"
+    }
    ]
   },
   {
@@ -528,7 +542,14 @@
     "Le vecchie pagine CUP e ADI (guida-ai-servizi/cup-centro-unico-di-prenotazione, come-fare-per/uosd-assistenza-domiciliare-integrata-adi) danno «pagina non trovata».",
     "Per prenotare visite ed esami il numero è il ReCUP regionale 06 9939: lo 0746 278058 è indicato per i prelievi e come call center aziendale/libera professione.",
     "Nessun numero per scelta del medico ed esenzioni nelle pagine copiate.",
-    "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari."
+    "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari.",
+    "Liste d'attesa: nel Lazio il percorso si chiama «Pass di garanzia» (pagine copiate: URP dell'ASL Roma 1, «Il percorso di garanzia nella Regione Lazio»). Gli estratti (22/10/2026) dicono: vale per le classi B e D, si chiede sul sito della Regione, allo sportello CUP o al ReCUP 06 9939, poi l'ASL propone un appuntamento. Da confermare sulle copie delle pagine in «pagine» (salutelazio.it/it/pass-di-garanzia) prima di scrivere how_to e letter_mode."
+   ],
+   "pagine": [
+    {
+     "tipo": "liste-attesa",
+     "url": "https://salutelazio.it/it/pass-di-garanzia"
+    }
    ]
   },
   {
@@ -966,7 +987,34 @@
     "ASL Roma 3 e Roma 6: le pagine assistenza domiciliare e PUA non danno numeri (rimandano al PUA del distretto).",
     "Zone: per ASL Roma 1 le pagine indicano i distretti (1, 2, 3, 13, 14, 15) ma non scrivono a quali municipi corrispondono; per ASL Roma 2 la pagina dice Distretto = Municipio (IV–IX).",
     "PEC: messa solo quella dell'ASL Roma 1; le altre trovate sono protocollo@pec.aslroma4.it, urp@pec.aslroma3.it, protocollo@pec.aslroma5.it, servizio.protocollo@pec.aslroma6.it.",
-    "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari."
+    "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari.",
+    "Liste d'attesa: nel Lazio il percorso si chiama «Pass di garanzia» (pagine copiate: URP dell'ASL Roma 1, «Il percorso di garanzia nella Regione Lazio»). Gli estratti (22/10/2026) dicono: vale per le classi B e D, si chiede sul sito della Regione, allo sportello CUP o al ReCUP 06 9939, poi l'ASL propone un appuntamento. Da confermare sulle copie delle pagine in «pagine» (salutelazio.it/it/pass-di-garanzia) prima di scrivere how_to e letter_mode."
+   ],
+   "pagine": [
+    {
+     "tipo": "liste-attesa",
+     "url": "https://salutelazio.it/it/pass-di-garanzia"
+    },
+    {
+     "tipo": "liste-attesa",
+     "url": "https://www.aslroma1.it/il-percorso-di-garanzia-nella-regione-lazio"
+    },
+    {
+     "tipo": "liste-attesa",
+     "url": "https://ammtrasp.aslroma2.it/index.php/15-04-liste-di-attesa/15-04-05-liste-di-attesa"
+    },
+    {
+     "tipo": "liste-attesa",
+     "url": "https://www.aslroma3.it/amministrazione-trasparente/liste-attesa-new/"
+    },
+    {
+     "tipo": "liste-attesa",
+     "url": "https://www.aslroma4.it/servizi-on-line/liste-di-attesa"
+    },
+    {
+     "tipo": "liste-attesa",
+     "url": "https://www.aslroma5.it/percorso-di-garanzia-nella-regione-lazio/"
+    }
    ]
   },
   {
@@ -1203,7 +1251,14 @@
     "Il CUP dell'ASL di Viterbo usa solo il ReCUP regionale 06 9939: nessun numero CUP proprio per i cittadini.",
     "La pagina Contatti aziendali è aggiornata al 2023: centralino e numero verde presi dalla pagina Azienda (agg. 11/2025), che riporta gli stessi numeri.",
     "Nessun numero per scelta del medico ed esenzioni nelle pagine copiate.",
-    "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari."
+    "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari.",
+    "Liste d'attesa: nel Lazio il percorso si chiama «Pass di garanzia» (pagine copiate: URP dell'ASL Roma 1, «Il percorso di garanzia nella Regione Lazio»). Gli estratti (22/10/2026) dicono: vale per le classi B e D, si chiede sul sito della Regione, allo sportello CUP o al ReCUP 06 9939, poi l'ASL propone un appuntamento. Da confermare sulle copie delle pagine in «pagine» (salutelazio.it/it/pass-di-garanzia) prima di scrivere how_to e letter_mode."
+   ],
+   "pagine": [
+    {
+     "tipo": "liste-attesa",
+     "url": "https://salutelazio.it/it/pass-di-garanzia"
+    }
    ]
   }
  ]

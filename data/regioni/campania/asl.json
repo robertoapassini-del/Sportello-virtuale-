@@ -1,0 +1,850 @@
+{
+ "region": "Campania",
+ "model": "ASL",
+ "_note": "Numeri delle ASL della Campania per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 22/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili (data/regioni/index.json, «moduli»). In provincia di Napoli ci sono tre ASL, qui in una voce sola. In Campania il 116117 non è ancora attivo: la guardia medica ha un numero per ogni sede.",
+ "asl": [
+  {
+   "id": "avellino",
+   "name": "ASL di Avellino",
+   "province": "Avellino",
+   "site_url": "https://www.aslavellino.it/index.php/it/",
+   "official_domains": [
+    "aslavellino.it",
+    "regione.campania.it"
+   ],
+   "guardia_medica_url": "https://www.aslavellino.it/index.php/it/azienda/strutture-2/continuita-assistenziale-ex-guardia-medica",
+   "pua_url": "https://www.aslavellino.it/index.php/it/per-il-cittadino/cura-e-assistenza/cure-domiciliari-agli-anziani",
+   "emails": [
+    "urp@aslavellino.it"
+   ],
+   "pec": "protocollo@pec.aslavellino.it",
+   "phones": [
+    {
+     "label": "Centralino dell'ASL di Avellino",
+     "number": "0825 291111",
+     "url": "https://www.aslavellino.it/index.php/it/contatti-1",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "address": "Via degli Imbimbo 10/12, Avellino"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP dell'ASL di Avellino: prenotare visite ed esami (numero verde, da telefono fisso)",
+     "number": "800 300992",
+     "url": "https://www.aslavellino.it/index.php/it/come-fare-per/prenotazioni-pagamenti-e-disdette-1",
+     "hours": "Dal lunedì al venerdì 8:15–15:00",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP dell'ASL di Avellino: prenotare visite ed esami da cellulare",
+     "number": "0825 877140",
+     "url": "https://www.aslavellino.it/index.php/it/come-fare-per/prenotazioni-pagamenti-e-disdette-1",
+     "hours": "Dal lunedì al venerdì 8:15–15:00",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "ASL di Avellino: prenotare le visite specialistiche a casa",
+     "number": "0825 292267",
+     "url": "https://www.aslavellino.it/index.php/it/come-fare-per/prenotazioni-pagamenti-e-disdette-1",
+     "hours": "Dal lunedì al venerdì 8:00–14:00",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Avellino: ufficio per i cittadini, reclami",
+     "number": "0825 292089",
+     "url": "https://www.aslavellino.it/index.php/it/contatti-1/urp",
+     "address": "Via degli Imbimbo, Avellino",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Avellino – Distretto di Ariano Irpino",
+     "number": "0825 877653",
+     "url": "https://www.aslavellino.it/index.php/it/contatti-1/urp",
+     "address": "Piazza Mazzini, Ariano Irpino",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Avellino – Distretto di Monteforte Irpino",
+     "number": "0825 754960",
+     "url": "https://www.aslavellino.it/index.php/it/contatti-1/urp",
+     "address": "Via Legniti, Monteforte Irpino",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Avellino – Presidio di Calitri",
+     "number": "0827 203019",
+     "url": "https://www.aslavellino.it/index.php/it/contatti-1/urp",
+     "address": "Via Pascone, Calitri",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Avellino – Presidio di Montoro",
+     "number": "0825 523240",
+     "url": "https://www.aslavellino.it/index.php/it/contatti-1/urp",
+     "address": "Via Municipio, Montoro",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari dell'ASL di Avellino (UOC Cure Domiciliari)",
+     "number": "0825 292649",
+     "url": "https://www.aslavellino.it/index.php/it/per-il-cittadino/cura-e-assistenza/cure-domiciliari-agli-anziani",
+     "address": "Via Circumvallazione 77, Avellino",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica di Avellino (Distretto di Avellino)",
+     "number": "0825 292013",
+     "url": "https://www.aslavellino.it/index.php/it/azienda/strutture-2/continuita-assistenziale-ex-guardia-medica",
+     "hours": "Notte dalle 20 alle 8; domenica e festivi 24 ore",
+     "address": "Via degli Imbimbo, Avellino",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica di Ariano Irpino",
+     "number": "0825 871583",
+     "url": "https://www.aslavellino.it/index.php/it/azienda/strutture-2/continuita-assistenziale-ex-guardia-medica",
+     "hours": "Notte dalle 20 alle 8; domenica e festivi 24 ore",
+     "address": "Piazza Mazzini, Ariano Irpino",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASL Avellino – Contatti",
+     "url": "https://www.aslavellino.it/index.php/it/contatti-1"
+    },
+    {
+     "label": "ASL Avellino – URP",
+     "url": "https://www.aslavellino.it/index.php/it/contatti-1/urp"
+    },
+    {
+     "label": "ASL Avellino – Prenotazioni, pagamenti e disdette",
+     "url": "https://www.aslavellino.it/index.php/it/come-fare-per/prenotazioni-pagamenti-e-disdette-1"
+    },
+    {
+     "label": "ASL Avellino – Continuità assistenziale (ex guardia medica)",
+     "url": "https://www.aslavellino.it/index.php/it/azienda/strutture-2/continuita-assistenziale-ex-guardia-medica"
+    },
+    {
+     "label": "ASL Avellino – Cure domiciliari",
+     "url": "https://www.aslavellino.it/index.php/it/per-il-cittadino/cura-e-assistenza/cure-domiciliari-agli-anziani"
+    }
+   ],
+   "last_verified": "2026-10-22",
+   "todo": [
+    "Guardia medica: la pagina ha più di 40 presidi con il loro numero; messi solo Avellino e Ariano Irpino. Gli altri sono sulla pagina.",
+    "URP: ogni sede ha anche un secondo numero (Avellino 0825 292165, Ariano 0825 877663, Calitri 0827 203011); i presidi di Montemiletto (0825 963364) non sono messi.",
+    "Manca un numero del PUA dei distretti: la pagina del Coordinamento socio-sanitario dà solo lo 0825 292060 dell'ufficio centrale.",
+    "Percorso di tutela: nelle copie non c'è come chiederlo. Aggiunte a «pagine» le pagine «Liste di attesa» della Regione e delle ASL trovate col motore di ricerca. L'ASL Napoli 3 Sud (pagina CUP) dice che le richieste sul percorso di tutela vanno all'URP."
+   ],
+   "pagine": [
+    {
+     "tipo": "liste-attesa",
+     "url": "https://www.regione.campania.it/it/printable/liste-di-attesa-qgfo"
+    }
+   ]
+  },
+  {
+   "id": "benevento",
+   "name": "ASL di Benevento",
+   "province": "Benevento",
+   "site_url": "https://www.aslbenevento.it/",
+   "official_domains": [
+    "aslbenevento.it",
+    "regione.campania.it"
+   ],
+   "guardia_medica_url": "https://www.aslbenevento.it/servizi-funzionali/lista-servizi-funzionali/guardia-medica",
+   "pua_url": "https://www.aslbenevento.it/pua",
+   "emails": [
+    "urp@aslbenevento.it"
+   ],
+   "pec": "urp@pec.aslbenevento.it",
+   "phones": [
+    {
+     "label": "Centralino dell'ASL di Benevento",
+     "number": "0824 308111",
+     "url": "https://www.aslbenevento.it/servizio-strutturale/centralino-aziendale",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ASL di Benevento",
+     "number": "0824 308111",
+     "url": "https://www.aslbenevento.it/servizio-strutturale/centralino-aziendale",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP dell'ASL di Benevento: prenotare visite ed esami (uno dei numeri: gli altri sono sulla pagina)",
+     "number": "0824 308552",
+     "url": "https://www.aslbenevento.it/servizio-strutturale/cup-aziendale",
+     "hours": "Dal lunedì al venerdì 12:00–13:30",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Benevento: ufficio per i cittadini, reclami",
+     "number": "0824 308738",
+     "url": "https://www.aslbenevento.it/unita-operativa/uos-urp-e-comunicazione",
+     "hours": "Dal lunedì al giovedì 9:00–13:00; martedì e mercoledì anche 14:00–17:00",
+     "address": "Via Oderisio da Benevento 1, Benevento",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Benevento (secondo numero)",
+     "number": "0824 308709",
+     "url": "https://www.aslbenevento.it/unita-operativa/uos-urp-e-comunicazione",
+     "hours": "Dal lunedì al giovedì 9:00–13:00; martedì e mercoledì anche 14:00–17:00",
+     "address": "Via Oderisio da Benevento 1, Benevento",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Distretto sanitario di Benevento: direzione (chiedi del PUA e delle cure a casa)",
+     "number": "0824 355301",
+     "url": "https://www.aslbenevento.it/aree-centrali/distretto-sanitario-benevento",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASL Benevento – Centralino aziendale",
+     "url": "https://www.aslbenevento.it/servizio-strutturale/centralino-aziendale"
+    },
+    {
+     "label": "ASL Benevento – CUP aziendale",
+     "url": "https://www.aslbenevento.it/servizio-strutturale/cup-aziendale"
+    },
+    {
+     "label": "ASL Benevento – URP e Comunicazione",
+     "url": "https://www.aslbenevento.it/unita-operativa/uos-urp-e-comunicazione"
+    },
+    {
+     "label": "ASL Benevento – Distretto sanitario di Benevento",
+     "url": "https://www.aslbenevento.it/aree-centrali/distretto-sanitario-benevento"
+    },
+    {
+     "label": "ASL Benevento – Guardia medica",
+     "url": "https://www.aslbenevento.it/servizi-funzionali/lista-servizi-funzionali/guardia-medica"
+    }
+   ],
+   "last_verified": "2026-10-22",
+   "todo": [
+    "CUP: la pagina elenca 22 numeri senza dire a quale sportello corrispondono, attivi dal lunedì al venerdì 12:00–13:30; messo solo il primo (0824 308552).",
+    "Guardia medica e PUA: le pagine elencano le sedi ma i numeri sono nelle sottopagine, non copiate. Da aggiungere a pagine[] le sottopagine dei PUA dei 5 distretti.",
+    "PEC: nelle copie c'è la PEC dell'URP (urp@pec.aslbenevento.it) e quella della direzione del distretto di Benevento (direzione.distrettobn1@pec.aslbenevento.it); la PEC del protocollo generale non è nelle copie.",
+    "La vecchia pagina URP (unita-operativa/ufficio-relazioni-con-il-pubblico) dà 404.",
+    "Percorso di tutela: nelle copie non c'è come chiederlo. Aggiunte a «pagine» le pagine «Liste di attesa» della Regione e delle ASL trovate col motore di ricerca. L'ASL Napoli 3 Sud (pagina CUP) dice che le richieste sul percorso di tutela vanno all'URP."
+   ],
+   "pagine": [
+    {
+     "tipo": "liste-attesa",
+     "url": "https://www.regione.campania.it/it/printable/liste-di-attesa-qgfo"
+    },
+    {
+     "tipo": "liste-attesa",
+     "url": "https://www.aslbenevento.it/liste-d-attesa"
+    }
+   ]
+  },
+  {
+   "id": "caserta",
+   "name": "ASL di Caserta",
+   "province": "Caserta",
+   "site_url": "https://www.aslcaserta.it/",
+   "official_domains": [
+    "aslcaserta.it",
+    "regione.campania.it"
+   ],
+   "emails": [
+    "urp.frontoffice@aslcaserta.it"
+   ],
+   "pec": "protocollo@pec.aslcaserta.it",
+   "phones": [
+    {
+     "label": "URP dell'ASL di Caserta",
+     "number": "0823 445000",
+     "url": "https://www.aslcaserta.it/index.php/urp/",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "address": "Via Paul Harris, Palazzo della Salute, Caserta"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "cup",
+     "label": "CUP dell'ASL di Caserta: prenotare visite ed esami (numero verde, da telefono fisso)",
+     "number": "800 984043",
+     "url": "https://www.aslcaserta.it/index.php/come-fare-per-cup-prenotazioni-e-pagamenti/",
+     "hours": "Dal lunedì al venerdì 08:00–18:00; sabato 08:00–12:00",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP dell'ASL di Caserta: prenotare visite ed esami da cellulare",
+     "number": "0823 210545",
+     "url": "https://www.aslcaserta.it/index.php/come-fare-per-cup-prenotazioni-e-pagamenti/",
+     "hours": "Dal lunedì al venerdì 08:00–18:00; sabato 08:00–12:00",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Caserta: ufficio per i cittadini, reclami",
+     "number": "0823 445000",
+     "url": "https://www.aslcaserta.it/index.php/urp/",
+     "address": "Via Paul Harris, Palazzo della Salute, Caserta",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Caserta – Distretto 16 (Marcianise)",
+     "number": "0823 518477",
+     "url": "https://www.aslcaserta.it/index.php/urp/",
+     "address": "Piazza Carità, Marcianise",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Caserta – Distretti 17 e 19 (Aversa)",
+     "number": "081 5001207",
+     "url": "https://www.aslcaserta.it/index.php/urp/",
+     "address": "Via S. Lucia, Aversa",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Caserta – Distretto 15 (Piedimonte Matese)",
+     "number": "0823 544309",
+     "url": "https://www.aslcaserta.it/index.php/urp/",
+     "address": "Via Matese, Piedimonte Matese",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Caserta – Distretto 23 (Mondragone)",
+     "number": "0823 775402",
+     "url": "https://www.aslcaserta.it/index.php/urp/",
+     "address": "Via degli Oleandri 85, Mondragone",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari (ADI) dell'ASL di Caserta – Distretto 12 (Caserta)",
+     "number": "0823 445042",
+     "url": "https://www.aslcaserta.it/index.php/telefono-e-posta-elettronica/",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari (ADI) dell'ASL di Caserta – Distretto 13 (Maddaloni, Valle di Maddaloni, Cervino)",
+     "number": "0823 445684",
+     "url": "https://www.aslcaserta.it/index.php/telefono-e-posta-elettronica/",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari (ADI) dell'ASL di Caserta – Distretto 13 (Arienzo, Santa Maria a Vico, San Felice a Cancello)",
+     "number": "0823 803358",
+     "url": "https://www.aslcaserta.it/index.php/telefono-e-posta-elettronica/",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL di Caserta – Distretto 15, sede di Alife",
+     "number": "0823 787772",
+     "url": "https://www.aslcaserta.it/index.php/telefono-e-posta-elettronica/",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "protesica",
+     "label": "Protesi e ausili dell'ASL di Caserta – Distretti 12 e 13",
+     "number": "0823 445770",
+     "url": "https://www.aslcaserta.it/index.php/telefono-e-posta-elettronica/",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASL Caserta – Servizio relazioni con il pubblico",
+     "url": "https://www.aslcaserta.it/index.php/urp/"
+    },
+    {
+     "label": "ASL Caserta – CUP, prenotazioni, pagamenti e disdette",
+     "url": "https://www.aslcaserta.it/index.php/come-fare-per-cup-prenotazioni-e-pagamenti/"
+    },
+    {
+     "label": "ASL Caserta – Telefono e posta elettronica",
+     "url": "https://www.aslcaserta.it/index.php/telefono-e-posta-elettronica/"
+    }
+   ],
+   "last_verified": "2026-10-22",
+   "todo": [
+    "Centralino generale: nelle copie non c'è. Il numero in testa a tutte le pagine è quello dell'URP (0823 445000).",
+    "Guardia medica: nelle copie non c'è una pagina con le sedi e i numeri. Da cercare e aggiungere (guardia_medica_url).",
+    "Le pagine del portale salute (portalesalute.aslcaserta.it, ADI distretti 12 e 13) rispondono 403 al server: non copiate.",
+    "Telefono e posta elettronica: la pagina ha i numeri di tutti gli uffici dei distretti (PUA, ADI, medicina di base); messi solo alcuni.",
+    "Percorso di tutela: nelle copie non c'è come chiederlo. Aggiunte a «pagine» le pagine «Liste di attesa» della Regione e delle ASL trovate col motore di ricerca. L'ASL Napoli 3 Sud (pagina CUP) dice che le richieste sul percorso di tutela vanno all'URP."
+   ],
+   "pagine": [
+    {
+     "tipo": "liste-attesa",
+     "url": "https://www.regione.campania.it/it/printable/liste-di-attesa-qgfo"
+    }
+   ]
+  },
+  {
+   "id": "napoli",
+   "name": "ASL di Napoli (Napoli 1 Centro, Napoli 2 Nord, Napoli 3 Sud)",
+   "province": "Napoli",
+   "site_url": "https://www.aslnapoli1centro.it/",
+   "official_domains": [
+    "aslnapoli1centro.it",
+    "aslna1centro.it",
+    "aslnapoli2nord.it",
+    "aslnapoli3sud.it",
+    "regione.campania.it"
+   ],
+   "guardia_medica_url": "https://www.aslnapoli1centro.it/guardia-medica-emergenza-territoriale",
+   "pua_url": "https://www.aslnapoli2nord.it/servizio/porta-unica-di-accesso/",
+   "emails": [
+    "urpcentrale@aslnapoli1centro.it",
+    "urp@aslnapoli2nord.it",
+    "relazionipubbliche@aslnapoli3sud.it"
+   ],
+   "pec": null,
+   "phones": [
+    {
+     "label": "Centralino dell'ASL Napoli 1 Centro (città di Napoli)",
+     "number": "081 2541111",
+     "url": "https://www.aslnapoli1centro.it/",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "address": "Via Comunale del Principe 13/a, Napoli"
+    },
+    {
+     "label": "Centralino dell'ASL Napoli 2 Nord",
+     "number": "081 1884059",
+     "url": "https://www.aslnapoli2nord.it/servizio/numero-verde-prenotazioni-visite/",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "address": "Via Lupoli 27, Frattamaggiore"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ASL Napoli 1 Centro (città di Napoli)",
+     "number": "081 2541111",
+     "url": "https://www.aslnapoli1centro.it/",
+     "address": "Via Comunale del Principe 13/a, Napoli",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ASL Napoli 2 Nord",
+     "number": "081 1884059",
+     "url": "https://www.aslnapoli2nord.it/servizio/numero-verde-prenotazioni-visite/",
+     "address": "Via Lupoli 27, Frattamaggiore",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP dell'ASL Napoli 2 Nord: prenotare e disdire visite ed esami (numero verde)",
+     "number": "800 903999",
+     "url": "https://www.aslnapoli2nord.it/servizio/numero-verde-prenotazioni-visite/",
+     "hours": "Dal lunedì al venerdì 8.30–15.00",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP dell'ASL Napoli 3 Sud: prenotare visite ed esami, da fisso e da cellulare",
+     "number": "081 185555",
+     "url": "https://www.aslnapoli3sud.it/cup",
+     "hours": "Dal lunedì al venerdì 08:00–18:30; sabato 08:00–13:00",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Napoli 1 Centro (città di Napoli)",
+     "number": "081 2549084",
+     "url": "https://www.aslnapoli1centro.it/urp_1",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Napoli 2 Nord",
+     "number": "081 18840933",
+     "url": "https://www.aslnapoli2nord.it/amministrazione/unita_organizzativa/u-o-c-urp-e-marketing-sanitario/",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL Napoli 3 Sud",
+     "number": "081 18433819",
+     "url": "https://www.aslnapoli3sud.it/u.o.c.-relazioni-con-il-pubblico_landing",
+     "address": "Corso Alcide de Gasperi 167, Castellammare di Stabia",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "ASL Napoli 1 Centro: centrale delle cure domiciliari e cure palliative (numero verde)",
+     "number": "800 194281",
+     "url": "https://www.aslnapoli1centro.it/cure-domiciliari-e-assistenza-residenziale",
+     "address": "Ospedale San Gennaro, Via S. Gennaro dei Poveri 25, Napoli",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "palliative",
+     "label": "ASL Napoli 1 Centro: centrale delle cure domiciliari e cure palliative (numero verde)",
+     "number": "800 194281",
+     "url": "https://www.aslnapoli1centro.it/cure-domiciliari-e-assistenza-residenziale",
+     "address": "Ospedale San Gennaro, Via S. Gennaro dei Poveri 25, Napoli",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "ASL Napoli 1 Centro: call center delle cure domiciliari",
+     "number": "081 2546967",
+     "url": "https://www.aslnapoli1centro.it/cure-domiciliari-e-assistenza-residenziale",
+     "hours": "Dal lunedì al venerdì 08:00–14:00",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL Napoli 2 Nord – Distretto 39",
+     "number": "081 18840306",
+     "url": "https://www.aslnapoli2nord.it/servizio/porta-unica-di-accesso/",
+     "hours": "Lunedì, mercoledì e giovedì 08:30–13:00",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL Napoli 2 Nord – Distretto 41, Frattamaggiore",
+     "number": "081 18840263",
+     "url": "https://www.aslnapoli2nord.it/servizio/porta-unica-di-accesso/",
+     "hours": "Martedì e giovedì",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL Napoli 2 Nord – Distretto 41, Sant'Antimo",
+     "number": "081 3952634",
+     "url": "https://www.aslnapoli2nord.it/servizio/porta-unica-di-accesso/",
+     "hours": "Lunedì, martedì e giovedì 8:00–12:30",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL Napoli 2 Nord – Distretto 43",
+     "number": "081 7051521",
+     "url": "https://www.aslnapoli2nord.it/servizio/porta-unica-di-accesso/",
+     "hours": "Dal lunedì al venerdì 9:00–13:00",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "ASL Napoli 3 Sud: coordinamento delle cure domiciliari",
+     "number": "081 18436503",
+     "url": "https://www.aslnapoli3sud.it/rubrica",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL Napoli 3 Sud – Distretto 34 (Portici)",
+     "number": "081 18435288",
+     "url": "https://www.aslnapoli3sud.it/rubrica",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL Napoli 3 Sud – Distretto 49 (Nola)",
+     "number": "081 18437535",
+     "url": "https://www.aslnapoli3sud.it/rubrica",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "PUA dell'ASL Napoli 3 Sud – Distretto 53 (Castellammare di Stabia)",
+     "number": "081 18433430",
+     "url": "https://www.aslnapoli3sud.it/rubrica",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASL Napoli 1 Centro – URP",
+     "url": "https://www.aslnapoli1centro.it/urp_1"
+    },
+    {
+     "label": "ASL Napoli 1 Centro – Come prenotare visite ed esami",
+     "url": "https://www.aslnapoli1centro.it/come-faccio-per-prenotare-visite-ed-esami-"
+    },
+    {
+     "label": "ASL Napoli 1 Centro – Cure domiciliari e assistenza residenziale",
+     "url": "https://www.aslnapoli1centro.it/cure-domiciliari-e-assistenza-residenziale"
+    },
+    {
+     "label": "ASL Napoli 2 Nord – URP",
+     "url": "https://www.aslnapoli2nord.it/amministrazione/unita_organizzativa/u-o-c-urp-e-marketing-sanitario/"
+    },
+    {
+     "label": "ASL Napoli 2 Nord – Numero verde prenotazioni",
+     "url": "https://www.aslnapoli2nord.it/servizio/numero-verde-prenotazioni-visite/"
+    },
+    {
+     "label": "ASL Napoli 2 Nord – Porta Unica di Accesso (PUA)",
+     "url": "https://www.aslnapoli2nord.it/servizio/porta-unica-di-accesso/"
+    },
+    {
+     "label": "ASL Napoli 3 Sud – CUP",
+     "url": "https://www.aslnapoli3sud.it/cup"
+    },
+    {
+     "label": "ASL Napoli 3 Sud – Relazioni con il pubblico",
+     "url": "https://www.aslnapoli3sud.it/u.o.c.-relazioni-con-il-pubblico_landing"
+    },
+    {
+     "label": "ASL Napoli 3 Sud – Rubrica",
+     "url": "https://www.aslnapoli3sud.it/rubrica"
+    }
+   ],
+   "last_verified": "2026-10-22",
+   "todo": [
+    "In provincia di Napoli ci sono tre ASL (Napoli 1 Centro: la città; Napoli 2 Nord; Napoli 3 Sud): qui sono in una voce sola, come Roma nel Lazio. Per le lettere serve dividerle (domanda «In quale zona?»).",
+    "PEC: Napoli 1 Centro urpcentrale@pec.aslna1centro.it (URP), Napoli 2 Nord protocollo@pec.aslnapoli2nord.it, Napoli 3 Sud protocollo@pec.aslnapoli3sud.it: non messe in «pec» perché la voce è unica.",
+    "CUP dell'ASL Napoli 1 Centro: la pagina dice solo «CUP unico regionale» e sportelli 8.30–12.30, nessun numero di telefono.",
+    "CUP dell'ASL Napoli 3 Sud: il numero è scritto 081 185555 (9 cifre) su due pagine; prenotazioni anche a prenotazioni-disdette@aslnapoli3sud.it.",
+    "Guardia medica: ogni distretto ha i suoi presidi con i numeri (Napoli 1 Centro: pagina guardia-medica-emergenza-territoriale; Napoli 3 Sud: continuità assistenziale). Non messi: sono decine.",
+    "PUA dell'ASL Napoli 2 Nord: altri distretti (38 Marano 081 18841425 e Quarto 081 18840415, 44, 46, 36) sono sulla pagina.",
+    "Percorso di tutela: nelle copie non c'è come chiederlo. Aggiunte a «pagine» le pagine «Liste di attesa» della Regione e delle ASL trovate col motore di ricerca. L'ASL Napoli 3 Sud (pagina CUP) dice che le richieste sul percorso di tutela vanno all'URP."
+   ],
+   "pagine": [
+    {
+     "tipo": "liste-attesa",
+     "url": "https://www.regione.campania.it/it/printable/liste-di-attesa-qgfo"
+    }
+   ]
+  },
+  {
+   "id": "salerno",
+   "name": "ASL di Salerno",
+   "province": "Salerno",
+   "site_url": "https://www.aslsalerno.it/",
+   "official_domains": [
+    "aslsalerno.it",
+    "regione.campania.it"
+   ],
+   "guardia_medica_url": "https://www.aslsalerno.it/archivio2_come-fare-per_0_122.html",
+   "pua_url": "https://www.aslsalerno.it/archivio2_come-fare-per_0_108.html",
+   "emails": [
+    "urp@aslsalerno.it"
+   ],
+   "pec": "protocollogenerale@pec.aslsalerno.it",
+   "phones": [
+    {
+     "label": "Centralino dell'ASL di Salerno",
+     "number": "089 691111",
+     "url": "https://www.aslsalerno.it/pagina2_azienda.html",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "address": "Via Nizza 146, Salerno"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ASL di Salerno",
+     "number": "089 691111",
+     "url": "https://www.aslsalerno.it/pagina2_azienda.html",
+     "address": "Via Nizza 146, Salerno",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP dell'ASL di Salerno: prenotare visite ed esami, da fisso e da cellulare",
+     "number": "089 2875028",
+     "url": "https://www.aslsalerno.it/pagina2382_cupticket.html",
+     "hours": "Dal lunedì al venerdì 8,30–17,30",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ASL di Salerno – sede centrale",
+     "number": "089 693608",
+     "url": "https://www.aslsalerno.it/pagina2573_contatti-urp.html",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari dell'ASL di Salerno (ufficio centrale)",
+     "number": "081 9212199",
+     "url": "https://www.aslsalerno.it/archivio2_come-fare-per_0_108.html",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari dell'ASL di Salerno – Distretto 66",
+     "number": "089 694439",
+     "url": "https://www.aslsalerno.it/archivio2_come-fare-per_0_108.html",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari dell'ASL di Salerno – Distretto 64 (Eboli)",
+     "number": "0828 362304",
+     "url": "https://www.aslsalerno.it/archivio2_come-fare-per_0_108.html",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari dell'ASL di Salerno – Distretto 70 (Vallo della Lucania)",
+     "number": "0974 711194",
+     "url": "https://www.aslsalerno.it/archivio2_come-fare-per_0_108.html",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari dell'ASL di Salerno – Distretto 71",
+     "number": "0973 609361",
+     "url": "https://www.aslsalerno.it/archivio2_come-fare-per_0_108.html",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari dell'ASL di Salerno – Distretto 72",
+     "number": "0975 373532",
+     "url": "https://www.aslsalerno.it/archivio2_come-fare-per_0_108.html",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica di Salerno – via Vernieri",
+     "number": "089 5647306",
+     "url": "https://www.aslsalerno.it/archivio2_come-fare-per_0_122.html",
+     "address": "Via Vernieri, Salerno",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica di Salerno – Pastena",
+     "number": "089 9849057",
+     "url": "https://www.aslsalerno.it/archivio2_come-fare-per_0_122.html",
+     "address": "Viale Kennedy, Salerno",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ASL Salerno – Azienda (contatti)",
+     "url": "https://www.aslsalerno.it/pagina2_azienda.html"
+    },
+    {
+     "label": "ASL Salerno – Contatti URP",
+     "url": "https://www.aslsalerno.it/pagina2573_contatti-urp.html"
+    },
+    {
+     "label": "ASL Salerno – CUP e ticket",
+     "url": "https://www.aslsalerno.it/pagina2382_cupticket.html"
+    },
+    {
+     "label": "ASL Salerno – Cure domiciliari",
+     "url": "https://www.aslsalerno.it/archivio2_come-fare-per_0_108.html"
+    },
+    {
+     "label": "ASL Salerno – Guardia medica",
+     "url": "https://www.aslsalerno.it/archivio2_come-fare-per_0_122.html"
+    }
+   ],
+   "last_verified": "2026-10-22",
+   "todo": [
+    "Cure domiciliari: la pagina ha i numeri di tutti i 13 distretti (60–72); messi solo alcuni. La pagina non dice quali comuni sono in ogni distretto.",
+    "Guardia medica: la pagina elenca le sedi di tutti i comuni con il numero; messe solo le due di Salerno.",
+    "URP: la pagina ha anche le sedi dei distretti e degli ospedali; messa solo la sede centrale.",
+    "Percorso di tutela: nelle copie non c'è come chiederlo. Aggiunte a «pagine» le pagine «Liste di attesa» della Regione e delle ASL trovate col motore di ricerca. L'ASL Napoli 3 Sud (pagina CUP) dice che le richieste sul percorso di tutela vanno all'URP."
+   ],
+   "pagine": [
+    {
+     "tipo": "liste-attesa",
+     "url": "https://www.regione.campania.it/it/printable/liste-di-attesa-qgfo"
+    },
+    {
+     "tipo": "liste-attesa",
+     "url": "https://www.aslsalerno.it/pagina2430_liste-di-attesa.html"
+    }
+   ]
+  }
+ ]
+}

@@ -1,7 +1,7 @@
 {
  "region": "Molise",
  "model": "ASReM",
- "_note": "Numeri dell'ASReM per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili. Il 116117 è attivo in tutto il Molise dal 06/10/2026; Call Center Sanitario regionale 800 639595 (da cellulare 0875 752626).",
+ "_note": "Numeri dell'ASReM per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Servono a Numeri utili e ai moduli accesi in data/regioni/index.json («moduli»). Il 116117 è attivo in tutto il Molise dal 06/10/2026; Call Center Sanitario regionale 800 639595 (da cellulare 0875 752626).",
  "asl": [
   {
    "id": "campobasso",
@@ -238,6 +238,10 @@
     {
      "label": "ASReM – Contatti del Distretto di Termoli",
      "url": "https://www.asrem.molise.it/lazienda/i-distretti-socio-sanitari/distretto-socio-sanitario-di-termoli/i-contatti-del-distretto-di-termoli/"
+    },
+    {
+     "label": "Regione Molise – Fascicolo sanitario elettronico: domande frequenti (scelta e revoca del medico)",
+     "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/18807"
     }
    ],
    "last_verified": "2026-10-21",
@@ -247,7 +251,28 @@
     "Mancano i numeri dei singoli ospedali (Ospedale «A. Cardarelli» di Campobasso, Ospedale di Termoli): nelle copie c'è solo il centralino unico ASReM 0874 4091.",
     "La pagina CUP-PASS dell'ASReM contiene solo l'elenco dei medici di base del servizio PASS, nessun numero CUP: non usata.",
     "Distretto di Campobasso: i numeri di scelta del medico ed esenzioni sono solo nella Carta dei servizi 2019 (PDF non copiato).",
-    "Provincia di Campobasso = Distretto di Campobasso + Distretto di Termoli (Termoli, Larino, Montenero, Castelmauro, Santa Croce di Magliano)."
+    "Provincia di Campobasso = Distretto di Campobasso + Distretto di Termoli (Termoli, Larino, Montenero, Castelmauro, Santa Croce di Magliano).",
+    "Scelta del medico (scelta_medico): dalla pagina della Regione sul Fascicolo sanitario (IDPagina/18807, copia del 21/10/2026): scelta e revoca nel FSE; medico temporaneo e deroghe solo al distretto; per i minorenni il genitore o il tutore. url lasciato vuoto: il pulsante del modulo dice «Sito dell'ASREM» e la pagina è della Regione.",
+    "Percorso di tutela (liste d'attesa): la pagina della Regione (IDPagina/18220) dice che i percorsi sono automatici quando si prenota (agende dei privati accreditati, recupero, ALPI, «prelista»). La richiesta e il rimborso sono negli allegati A e B della DDG 1696 del 13/12/2024 (file, non copiati): servono per scrivere how_to e send_to.",
+    "Cartella clinica: la pagina Modulistica dell'ASReM ha il «Modello richiesta cartella clinica» (file, non copiato). Mancano i numeri degli uffici cartelle cliniche degli ospedali."
+   ],
+   "scelta_medico": {
+    "how": "Puoi farlo online, nel Fascicolo sanitario elettronico della Regione Molise: c'è il servizio di scelta e revoca del medico o del pediatra. Oppure allo sportello «scelta e revoca» del distretto. Per un medico temporaneo o in deroga vai sempre al distretto. Per un minorenne sceglie il genitore o il tutore.",
+    "url": null
+   },
+   "pagine": [
+    {
+     "tipo": "medico",
+     "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/18807"
+    },
+    {
+     "tipo": "liste-attesa",
+     "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/18220"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.asrem.molise.it/servizi-per-il-cittadino/modulistica/"
+    }
    ]
   },
   {
@@ -435,12 +460,37 @@
     {
      "label": "ASReM – Distretto di Isernia",
      "url": "https://www.asrem.molise.it/lazienda/i-distretti-socio-sanitari/distretto-socio-sanitario-di-isernia/"
+    },
+    {
+     "label": "Regione Molise – Fascicolo sanitario elettronico: domande frequenti (scelta e revoca del medico)",
+     "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/18807"
     }
    ],
    "last_verified": "2026-10-21",
    "todo": [
     "Mancano i numeri dei singoli ospedali (Ospedale di Isernia, Ospedale Caracciolo di Agnone): nelle copie c'è solo il centralino unico ASReM 0874 4091.",
-    "Le sedi di guardia medica Isernia–Venafro–Agnone sono solo citate, senza numeri; comunque dal 6 ottobre 2026 vale il 116117."
+    "Le sedi di guardia medica Isernia–Venafro–Agnone sono solo citate, senza numeri; comunque dal 6 ottobre 2026 vale il 116117.",
+    "Scelta del medico (scelta_medico): dalla pagina della Regione sul Fascicolo sanitario (IDPagina/18807, copia del 21/10/2026): scelta e revoca nel FSE; medico temporaneo e deroghe solo al distretto; per i minorenni il genitore o il tutore. url lasciato vuoto: il pulsante del modulo dice «Sito dell'ASREM» e la pagina è della Regione.",
+    "Percorso di tutela (liste d'attesa): la pagina della Regione (IDPagina/18220) dice che i percorsi sono automatici quando si prenota (agende dei privati accreditati, recupero, ALPI, «prelista»). La richiesta e il rimborso sono negli allegati A e B della DDG 1696 del 13/12/2024 (file, non copiati): servono per scrivere how_to e send_to.",
+    "Cartella clinica: la pagina Modulistica dell'ASReM ha il «Modello richiesta cartella clinica» (file, non copiato). Mancano i numeri degli uffici cartelle cliniche degli ospedali."
+   ],
+   "scelta_medico": {
+    "how": "Puoi farlo online, nel Fascicolo sanitario elettronico della Regione Molise: c'è il servizio di scelta e revoca del medico o del pediatra. Oppure allo sportello «scelta e revoca» del distretto. Per un medico temporaneo o in deroga vai sempre al distretto. Per un minorenne sceglie il genitore o il tutore.",
+    "url": null
+   },
+   "pagine": [
+    {
+     "tipo": "medico",
+     "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/18807"
+    },
+    {
+     "tipo": "liste-attesa",
+     "url": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/18220"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.asrem.molise.it/servizi-per-il-cittadino/modulistica/"
+    }
    ]
   }
  ]
