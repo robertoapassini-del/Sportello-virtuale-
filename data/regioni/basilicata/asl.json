@@ -112,7 +112,18 @@
    "last_verified": "2026-10-21",
    "todo": [
     "La pagina guardia medica dell'ASM (pubblicata 16/12/2025) elenca ancora i numeri per comune e non nomina il 116117: non li ho messi perché la Regione dice che il 116117 è attivo in tutta la Basilicata.",
-    "Mancano: PUA / cure domiciliari (ADI), protesica, scelta del medico, cartelle cliniche, screening dell'ASM: nelle copie ci sono solo orari senza numero. Una pagina ASM (vecchio sito) dà 404."
+    "Mancano: PUA / cure domiciliari (ADI), protesica, scelta del medico, cartelle cliniche, screening dell'ASM: nelle copie ci sono solo orari senza numero. Una pagina ASM (vecchio sito) dà 404.",
+    "Moduli (22/10/2026): attivo solo invalidità (inps.json). Nessuna pagina copiata parla del percorso di tutela, di scelta e revoca, protesica, cure palliative o cartelle cliniche (ospedale San Carlo di Potenza: azienda ospedaliera). Pagine ufficiali aggiunte in «pagine» per la copia del server."
+   ],
+   "pagine": [
+    {
+     "tipo": "scelta del medico",
+     "url": "https://www.asmbasilicata.it/servizio/cambiare-scegliere-il-medico-di-base-o-pediatra/"
+    },
+    {
+     "tipo": "liste di attesa",
+     "url": "https://old.asmbasilicata.it/servizi/Menu/dinamica.aspx?idSezione=17695&idArea=17697&idCat=17730&ID=18170&TipoElemento=pagina"
+    }
    ]
   },
   {
@@ -279,7 +290,26 @@
     "116117: la Regione (AGR, 11 agosto 2026) scrive che dal 25 maggio il 116117 è attivo in tutta la Basilicata, gratuito e H24; anche la pagina 118 dell'ASP dice «Il NEA 116117 è attualmente attivo». È in una prima fase (triage telefonico, orientamento, trasferimento alla guardia medica competente quando è in turno), gestito dalla Centrale Operativa 118. Per questo non ho messo i vecchi numeri locali di guardia medica (la pagina «Guardia medica» dell'ASP li elenca ancora per comune).",
     "CUP: c'è un unico call center regionale, numero verde 800 814 814 (lunedì–venerdì 7–19, sabato 7–14), confermato da Regione, ASP e ASM. Non ho trovato numeri CUP telefonici propri delle aziende: solo sportelli di persona.",
     "Il numero verde 800 013 504 nella pagina URP dell'ASP è scritto sotto la sede di Lagonegro: non è chiaro se valga per tutta l'ASP.",
-    "Mancano: email URP generica dell'ASP (sulla pagina ci sono solo indirizzi personali e PEC), protesica, scelta del medico, cartelle cliniche, screening. La pagina «Contatti» dell'ASP non è stata copiata (errore), la Carta dei servizi (PDF) non è stata letta."
+    "Mancano: email URP generica dell'ASP (sulla pagina ci sono solo indirizzi personali e PEC), protesica, scelta del medico, cartelle cliniche, screening. La pagina «Contatti» dell'ASP non è stata copiata (errore), la Carta dei servizi (PDF) non è stata letta.",
+    "Moduli (22/10/2026): attivo solo invalidità (inps.json). Nessuna pagina copiata parla del percorso di tutela, di scelta e revoca, protesica, cure palliative o cartelle cliniche (ospedale San Carlo di Potenza: azienda ospedaliera). Pagine ufficiali aggiunte in «pagine» per la copia del server."
+   ],
+   "pagine": [
+    {
+     "tipo": "liste di attesa",
+     "url": "https://www.aspbasilicata.it/servizi-per-i-cittadini/liste-di-attesa/"
+    },
+    {
+     "tipo": "scelta del medico",
+     "url": "https://www.aspbasilicata.it/come-fare-per/scelta-e-revoca-del-medico-di-famiglia-e-del-pediatra/"
+    },
+    {
+     "tipo": "cure palliative",
+     "url": "https://www.aspbasilicata.it/organizzazione/azienda/dipartimenti/dipartimento-post-acuzie-continuita-ospedale-territorio/oncologia-critica-territoriale-cure-domiciliari-e-palliative-adi/"
+    },
+    {
+     "tipo": "scelta del medico (Regione)",
+     "url": "https://www.regione.basilicata.it/sanita-digitale-nuovi-servizi-online/"
+    }
    ]
   }
  ]

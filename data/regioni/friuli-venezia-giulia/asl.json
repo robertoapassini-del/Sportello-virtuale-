@@ -121,7 +121,19 @@
    "last_verified": "2026-10-21",
    "todo": [
     "Ospedale di Monfalcone: guasto telefonico a metà ottobre 2026, il 14/10 «in ripristino»; nel frattempo l'ASUGI indica il centralino di Gorizia 0481 5921.",
-    "PUA/cure domiciliari Area Isontina: la pagina PUA Alto Isontino risponde «non trovata» (404); nessun numero sicuro."
+    "PUA/cure domiciliari Area Isontina: la pagina PUA Alto Isontino risponde «non trovata» (404); nessun numero sicuro.",
+    "Percorso di tutela in Friuli-Venezia Giulia: si chiama «diritto di garanzia» (regolamenti aziendali 2024; la responsabile è l'azienda di residenza). Chi rifiuta la data proposta nei tempi, o sceglie una struttura fuori dall'azienda, perde il diritto (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server). Scelta del medico online su SESAMO (Fascicolo sanitario) con SPID, CIE o CRS (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server). Nessun modulo acceso: pagine dei servizi non ancora copiate.",
+    "Diritto di garanzia ASUGI: come Trieste (sportelli del CUP ospedaliero) (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server)."
+   ],
+   "pagine": [
+    {
+     "tipo": "medico",
+     "url": "https://asugi.sanita.fvg.it/it/servizi/dist_amm_scelta_revoca_mmg_pls.html"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://asugi.sanita.fvg.it/it/strutture/direz_sanitaria/dad/area_isontina/go_dist_alto_isontino/pua_ai/"
+    }
    ]
   },
   {
@@ -326,7 +338,39 @@
    "last_verified": "2026-10-21",
    "todo": [
     "URP Pordenone: dal 30/09/2026 trasferito al Nuovo Ospedale (via Montereale 28); l'ARCS indica anche 0434 369841 (sede centrale), e l'avviso San Vito cita 0434 399735 / 369841 per la settimana 19–23 ottobre: ho messo il numero della pagina URP (0434 399719).",
-    "Orari URP Pordenone e Spilimbergo non scritti nella pagina."
+    "Orari URP Pordenone e Spilimbergo non scritti nella pagina.",
+    "Percorso di tutela in Friuli-Venezia Giulia: si chiama «diritto di garanzia» (regolamenti aziendali 2024; la responsabile è l'azienda di residenza). Chi rifiuta la data proposta nei tempi, o sceglie una struttura fuori dall'azienda, perde il diritto (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server). Scelta del medico online su SESAMO (Fascicolo sanitario) con SPID, CIE o CRS (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server). Nessun modulo acceso: pagine dei servizi non ancora copiate.",
+    "Diritto di garanzia ASFO (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): email tempidiattesa@asfo.sanita.fvg.it o sportelli CUP; risposta entro 4 giorni lavorativi (B), 10 (D), 40 (P). Cartelle cliniche: la pagina Contatti (copia del 21/10/2026) dice che dal 18/06/2026 l'ufficio copia cartelle cliniche è al nuovo ospedale di Pordenone, sportello CUP del piano terra."
+   ],
+   "pagine": [
+    {
+     "tipo": "contatti",
+     "url": "https://asfo.sanita.fvg.it/it/servizi/contatti.html"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://asfo.sanita.fvg.it/it/servizi/prenotazione_prestazioni.html"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://asfo.sanita.fvg.it/it/strutture/direzione_sanitaria/assist_territ/distretti/assist_inferm_territ/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://asfo.sanita.fvg.it/it/strutture/direzione_sanitaria/assist_territ/distretti/"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://asfo.sanita.fvg.it/it/amministrazione_trasparente/16_servizi_erogati/04_liste_attesa.html"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://asfo.sanita.fvg.it/it/schede/mmg-pls/cambio_medico_online.html"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://asfo.sanita.fvg.it/it/schede/sesamo.html"
+    }
    ]
   },
   {
@@ -427,7 +471,107 @@
     "116117: attivo in tutto il FVG. Prima solo per ASUGI (Trieste e Gorizia) dal 19 gennaio 2026, al posto del numero verde 800 614302 (pagina news ASUGI); dal 13 aprile 2026 anche in ASUFC (Udine) e ASFO (Pordenone) (news ASUFC e ASFO). La pagina della Regione (aggiornata 30/07/2026) dice che la centrale è a Trieste e risponde a tutta la regione: gratuito, 24/7, attiva la guardia medica (feriali 20–8, weekend e festivi) e i servizi territoriali. Quindi niente vecchi numeri locali di guardia medica.",
     "CUP: in FVG c'è un solo numero regionale, il Call center unico salute e sociale 0434 223522 (gestito da ARCS), lun–ven 7–22, sabato 7–20, da fisso, cellulare ed estero; resta attivo anche 848 448 884 solo da rete fissa. Le aziende non hanno un CUP telefonico proprio: hanno solo sportelli CUP e farmacie abilitate.",
     "Cure a casa (ADI/PUA) Trieste: nelle copie non c'è un numero chiaro di accesso alle cure domiciliari (solo numeri di ambulatori dei distretti); si attiva tramite medico di famiglia o 116117.",
-    "L'ARCS indica per l'URP di Trieste anche 040 3997180 (gestione reclami), diverso dal 040 3994880 delle pagine ASUGI: ho messo quello delle pagine ASUGI."
+    "L'ARCS indica per l'URP di Trieste anche 040 3997180 (gestione reclami), diverso dal 040 3994880 delle pagine ASUGI: ho messo quello delle pagine ASUGI.",
+    "Percorso di tutela in Friuli-Venezia Giulia: si chiama «diritto di garanzia» (regolamenti aziendali 2024; la responsabile è l'azienda di residenza). Chi rifiuta la data proposta nei tempi, o sceglie una struttura fuori dall'azienda, perde il diritto (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server). Scelta del medico online su SESAMO (Fascicolo sanitario) con SPID, CIE o CRS (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server). Nessun modulo acceso: pagine dei servizi non ancora copiate.",
+    "Diritto di garanzia ASUGI (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): si attiva agli sportelli del CUP ospedaliero; ti richiamano entro 3 giorni lavorativi (B), 10 (D), 40 (P). Scelta del medico anche con PEC a asugi@certsanita.fvg.it. Cartella clinica: a pagamento, modulo al CUP, 30-60 giorni (da confrontare con i 7 giorni della L. 24/2017)."
+   ],
+   "pagine": [
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/sistema-sociale-sanitario/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/interventi-socio-sanitari/FOGLIA24/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/liste-di-attesa/argomento.html"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://arcs.sanita.fvg.it/it/servizio-sanitario-regionale-friuli-venezia-giulia-fvg/cup-regionale/call-center-per-la-prenotazioni-di-visite-ed-esami"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://arcs.sanita.fvg.it/it/servizio-sanitario-regionale-friuli-venezia-giulia-fvg/cup-regionale/prenotazione-di-esami-e-visite-ed-annullo"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://arcs.sanita.fvg.it/it/informazioni-per-i-cittadini/come-contattare-il-cup-e-prenotare-una-prestazione-sanitaria"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://arcs.sanita.fvg.it/it/notizie/116117-numero-unico-europeo-la-sanita-non-urgente"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://arcs.sanita.fvg.it/it/informazioni-per-i-cittadini/ufficio-relazioni-con-il-pubblico-urp"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://arcs.sanita.fvg.it/en/aree-tematiche/sistema-sanitario-regionale/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://sesamo.sanita.fvg.it/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://sesamo.sanita.fvg.it/sesamo/res/brochure/html_version/sesamo-brochure-a/pagina-4.html"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/GEN/amministrazione-trasparente/FOGLIA16/FOGLIA5/"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://asugi.sanita.fvg.it/it/strutture/a_direz_generale/creaus/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://asugi.sanita.fvg.it/it/schede/s_dg_staff/creaus_numeroverde_sanita.html"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://asugi.sanita.fvg.it/it/servizi/sportelli_cup.html"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://asugi.sanita.fvg.it/it/news/2026_01_16_numero_unico_servizi_sanitari_non_urgenti.html"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://asugi.sanita.fvg.it/it/strutture/direz_sanitaria/dad/area_isontina/go_dist_alto_isontino/pua_ai/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://asugi.sanita.fvg.it/it/schede/pagine_nuove/nuove_pagine/SID.html"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://asugi.sanita.fvg.it/it/strutture/direz_serv_sociosan/dad/area_giuliana/SC_Dist_Trieste1/sc_tut_sal_adulti_anziani_d1/ss_cure_amb_dom_d1"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://asugi.sanita.fvg.it/it/servizi/index.html"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://asugi.sanita.fvg.it/it/servizi/dist_amm_scelta_revoca_mmg_pls.html"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://asugi.sanita.fvg.it/it/schede/medico/dist_amm_iscrizione_SSR.html"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://sesamo.sanita.fvg.it/sesamo/res/brochure/html_version/sesamo-brochure-b/pagina-3-1.html"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://asugi.sanita.fvg.it/it/schede/sesamo.html"
+    }
    ]
   },
   {
@@ -577,7 +721,31 @@
    "last_verified": "2026-10-21",
    "todo": [
     "PUA/cure domiciliari ASUFC: si attivano tramite medico, servizi sociali o PUAI della Casa della Comunità, ma nelle copie non c'è un numero del PUAI; ci sono solo cellulari di infermieri di comunità di singoli comuni (Taipana, Reana), non messi.",
-    "La pagina URP dell'ASUFC copiata è la versione tedesca del sito (stesso contenuto)."
+    "La pagina URP dell'ASUFC copiata è la versione tedesca del sito (stesso contenuto).",
+    "Percorso di tutela in Friuli-Venezia Giulia: si chiama «diritto di garanzia» (regolamenti aziendali 2024; la responsabile è l'azienda di residenza). Chi rifiuta la data proposta nei tempi, o sceglie una struttura fuori dall'azienda, perde il diritto (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server). Scelta del medico online su SESAMO (Fascicolo sanitario) con SPID, CIE o CRS (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server). Nessun modulo acceso: pagine dei servizi non ancora copiate.",
+    "Diritto di garanzia ASUFC: regolamento del 28/06/2024; come si chiede non trovato (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server)."
+   ],
+   "pagine": [
+    {
+     "tipo": "cup",
+     "url": "https://asufc.sanita.fvg.it/it/schede/cup.html"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://asufc.sanita.fvg.it/it/servizi/infermiere_comunita.html"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://asufc.sanita.fvg.it/it/schede/cdc.html"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://asufc.sanita.fvg.it/it/schede/distretti.html"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/liste-di-attesa/argomento.html"
+    }
    ]
   }
  ]

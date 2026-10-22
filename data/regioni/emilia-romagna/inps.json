@@ -1,19 +1,27 @@
 {
  "region": "Emilia-Romagna",
- "last_verified": "2026-10-21",
- "note": "Indirizzi e PEC delle sedi INPS dalle pagine «sedi» di inps.it, copiate il 21/10/2026 dal server in Italia. Per andare allo sportello si prenota (MyINPS, app, 803 164 / 06 164164). regime (riforma della disabilità) da verificare: finché è null il modulo invalidità non va attivato per questa regione.",
+ "last_verified": "2026-10-22",
+ "note": "Indirizzi e PEC delle sedi INPS dalle pagine «sedi» di inps.it, copiate il 21/10/2026 dal server in Italia. Per andare allo sportello si prenota (MyINPS, app, 803 164 / 06 164164). regime (riforma della disabilità): province della sperimentazione dall'INPS e dal Dipartimento per le politiche in favore delle persone con disabilità (estratti del 22/10/2026, gli stessi usati per la Sicilia): fase 1 dal 01/01/2025 (tra cui Firenze e Forlì-Cesena), fase 2 dal 30/09/2025 (tra cui Genova), fase 3 dal 01/03/2026 (40 province, tra cui Arezzo, Massa-Carrara, Bologna, Piacenza, Ravenna, Rimini, La Spezia e Savona). Le altre province restano con la vecchia procedura fino al 31/12/2026.",
  "sources": [
   {
    "label": "INPS – sedi e contatti in Emilia-Romagna",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.138000.138000-elencoStruttureInps.html"
+  },
+  {
+   "label": "INPS – Riforma della disabilità: al via la terza fase sperimentale (province dal 01/03/2026)",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html"
+  },
+  {
+   "label": "Dipartimento per le politiche in favore delle persone con disabilità – province della sperimentazione",
+   "url": "https://www.disabilita.governo.it/it/notizie/al-via-sperimentazione-riforma-disabilita-in-altre-40-province/"
   }
  ],
  "provinces": [
   {
    "id": "bologna",
    "name": "Bologna",
-   "regime": null,
-   "regime_since": null,
+   "regime": "new",
+   "regime_since": "2026-03-01",
    "pec": "direzione.provinciale.bologna@postacert.inps.gov.it",
    "address": "Via Dei Mille 9/2, Bologna",
    "status": "ok",
@@ -25,7 +33,7 @@
   {
    "id": "ferrara",
    "name": "Ferrara",
-   "regime": null,
+   "regime": "old",
    "regime_since": null,
    "pec": "direzione.provinciale.ferrara@postacert.inps.gov.it",
    "address": "Viale Cavour 164, Ferrara",
@@ -37,9 +45,9 @@
   },
   {
    "id": "forli-cesena",
-   "name": "Forlì",
-   "regime": null,
-   "regime_since": null,
+   "name": "Forlì-Cesena",
+   "regime": "new",
+   "regime_since": "2025-01-01",
    "pec": "direzione.provinciale.forli@postacert.inps.gov.it",
    "address": "Viale Della Libertà 48, Forlì",
    "status": "ok",
@@ -51,7 +59,7 @@
   {
    "id": "modena",
    "name": "Modena",
-   "regime": null,
+   "regime": "old",
    "regime_since": null,
    "pec": "direzione.provinciale.modena@postacert.inps.gov.it",
    "address": "Via Reiter 72, Modena",
@@ -64,7 +72,7 @@
   {
    "id": "parma",
    "name": "Parma",
-   "regime": null,
+   "regime": "old",
    "regime_since": null,
    "pec": "direzione.provinciale.parma@postacert.inps.gov.it",
    "address": "Viale Basetti 10, Parma",
@@ -77,8 +85,8 @@
   {
    "id": "piacenza",
    "name": "Piacenza",
-   "regime": null,
-   "regime_since": null,
+   "regime": "new",
+   "regime_since": "2026-03-01",
    "pec": "direzione.provinciale.piacenza@postacert.inps.gov.it",
    "address": "Piazza Cavalli 62, Piacenza",
    "status": "ok",
@@ -90,8 +98,8 @@
   {
    "id": "ravenna",
    "name": "Ravenna",
-   "regime": null,
-   "regime_since": null,
+   "regime": "new",
+   "regime_since": "2026-03-01",
    "pec": "direzione.provinciale.ravenna@postacert.inps.gov.it",
    "address": "Via Romolo Gessi 24, Ravenna",
    "status": "ok",
@@ -102,8 +110,8 @@
   },
   {
    "id": "reggio-emilia",
-   "name": "Reggio Nell'Emilia",
-   "regime": null,
+   "name": "Reggio Emilia",
+   "regime": "old",
    "regime_since": null,
    "pec": "direzione.provinciale.reggioemilia@postacert.inps.gov.it",
    "address": "Via Previdenza Sociale 6, Reggio Nell'Emilia",
@@ -116,8 +124,8 @@
   {
    "id": "rimini",
    "name": "Rimini",
-   "regime": null,
-   "regime_since": null,
+   "regime": "new",
+   "regime_since": "2026-03-01",
    "pec": "direzione.provinciale.rimini@postacert.inps.gov.it",
    "address": "Via Macanno 25, Rimini",
    "status": "ok",
@@ -128,6 +136,6 @@
   }
  ],
  "todo": [
-  "Riforma della disabilità: verificare quali province sono nella sperimentazione e da quando (campo regime)."
+  "Riforma della disabilità (22/10/2026): elenco delle province letto solo negli estratti del motore di ricerca (pagine INPS e disabilita.governo.it, che dall'estero non si aprono). La pagina INPS è tra quelle da copiare (pagine della prima azienda in asl.json): quando c'è la copia, rileggere l'elenco e portare la prova a «pagina»."
  ]
 }

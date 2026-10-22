@@ -320,7 +320,8 @@ async function erroriCollegati(page, dove, problemi) {
       lettera: !!document.querySelector('#app [data-go="letter"]'),
       manca: /uffici e numeri della tua regione non li abbiamo ancora/.test(document.getElementById('app').innerText),
     }));
-    for (const m of [...Object.keys(percorsi), 'invalidita', 'ausili']) {
+    // Solo i moduli che la Lombardia non ha ancora acceso (quelli accesi hanno gli uffici e la lettera).
+    for (const m of [...Object.keys(percorsi), 'invalidita', 'ausili'].filter((x) => !(LOMBARDIA.moduli || []).includes(x))) {
       const ctx = await nuova('lombardia');
       const page = await ctx.newPage();
       const dove = `lombardia /${m}/ conto senza uffici`;

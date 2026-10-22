@@ -1,7 +1,27 @@
 {
  "region": "Emilia-Romagna",
  "model": "Aziende USL",
- "_note": "Numeri delle AUSL dell'Emilia-Romagna per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili. Il 116117 non risulta ancora attivo: restano i numeri di guardia medica delle aziende.",
+ "local_name": "da verificare",
+ "booking_deadline_days": null,
+ "no_class_rule": "da verificare",
+ "regional_channel": {
+  "portal_url": "https://www.cupweb.it",
+  "notes": "Puoi prenotare e disdire online su cupweb.it o con l'app ER Salute. Puoi anche chiamare il numero verde CUP della tua provincia o andare allo sportello CUP o in farmacia."
+ },
+ "regole_fonti": {
+  "regional_channel": {
+   "url": "https://salute.regione.emilia-romagna.it/campagne/tempi-dattesa-per-visite-ed-esami",
+   "verified": "2026-10-22",
+   "proof": "pagina"
+  },
+  "local_name": {
+   "url": "https://salute.regione.emilia-romagna.it/cure-primarie/visite-ed-esami/il-piano-della-regione-per-ridurre-i-tempi-di-attesa",
+   "verified": "2026-10-22",
+   "proof": "estratto",
+   "nota": "Nessuna copia usa «percorso di tutela». Gli estratti parlano di «percorsi di garanzia» (Regione), «prelista» (Reggio Emilia, Parma) e «agende di garanzia» (Modena): da leggere sulle pagine in «pagine»."
+  }
+ },
+ "_note": "Numeri delle AUSL dell'Emilia-Romagna per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono a Numeri utili; le sedi INPS (inps.json) a Invalidità. Gli altri moduli aspettano le pagine in «pagine» (todo). Il 116117 non risulta ancora attivo: restano i numeri di guardia medica delle aziende.",
  "asl": [
   {
    "id": "bologna",
@@ -165,9 +185,46 @@
     "AUSL di Bologna: non ho trovato un numero dell'URP centrale né un numero del PUA (la pagina PUA di Valsamoggia non ha telefono). C'è solo l'URP di San Lazzaro.",
     "La pagina della guardia medica di Bologna (051 3131) risulta «pubblicata nel 2008», ma lo stesso numero è indicato anche nelle pagine CAU attuali.",
     "AUSL di Imola: il footer del sito dà 0542 604111, la pagina «Chi siamo» dà come centralino 0542 662111: da chiarire quale sia il centralino.",
-    "AUSL di Imola: non ho trovato un CUP telefonico dedicato; l'800040606 è citato per prenotare i prelievi."
+    "AUSL di Imola: non ho trovato un CUP telefonico dedicato; l'800040606 è citato per prenotare i prelievi.",
+    "Scelta del medico: per l'AUSL di Imola la copia della pagina della Casa della Comunità dice che si fa agli sportelli CUP, con il modulo online (ausl.imola.bo.it/cambio-medico-pediatra) o con il Fascicolo sanitario. Per l'AUSL di Bologna manca una pagina.",
+    "Gli ospedali Sant'Orsola (IRCCS Policlinico) e Rizzoli hanno uffici cartelle loro: pagine da cercare.",
+    "Moduli non ancora accesi (22/10/2026): liste d'attesa (nelle copie nessuna AUSL dice come chiedere un posto quando il CUP non lo dà nei tempi: gli estratti parlano di «prelista» e «agende di garanzia»), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
    ],
-   "last_verified": "2026-10-21"
+   "last_verified": "2026-10-21",
+   "pagine": [
+    {
+     "tipo": "tutela",
+     "url": "https://www.ausl.bologna.it/amministrazione-trasparente/servizi-erogati/liste-di-attesa"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.ausl.imola.bo.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/2886"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.ausl.bologna.it/guida-ai-servizi/luoghi/15532/295299"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.ausl.imola.bo.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/9698"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.ausl.imola.bo.it/cambio-medico-pediatra"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://salute.regione.emilia-romagna.it/cure-primarie/visite-ed-esami/il-piano-della-regione-per-ridurre-i-tempi-di-attesa"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://support.fascicolo-sanitario.it/guida/servizi-on-line/cambio%7Crevoca-medico-di-famiglia"
+    },
+    {
+     "tipo": "inps-riforma",
+     "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html"
+    }
+   ]
   },
   {
    "id": "ferrara",
@@ -177,7 +234,8 @@
    "official_domains": [
     "ausl.fe.it",
     "regione.emilia-romagna.it",
-    "salute.regione.emilia-romagna.it"
+    "salute.regione.emilia-romagna.it",
+    "ospfe.it"
    ],
    "guardia_medica_url": "https://www.ausl.fe.it/come-fare-per/come-e-dove-curarmi/servizio-di-continuita-assistenziale-guardia-medica",
    "pua_url": "https://www.ausl.fe.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/servizio-di-assistenza-domiciliare-adi",
@@ -371,9 +429,40 @@
     }
    ],
    "todo": [
-    "Il numero verde CUP 800 532000 è nell'elenco telefoni di Amministrazione trasparente: le pagine sulle prenotazioni copiate non lo riportano."
+    "Il numero verde CUP 800 532000 è nell'elenco telefoni di Amministrazione trasparente: le pagine sulle prenotazioni copiate non lo riportano.",
+    "Moduli non ancora accesi (22/10/2026): liste d'attesa (nelle copie nessuna AUSL dice come chiedere un posto quando il CUP non lo dà nei tempi: gli estratti parlano di «prelista» e «agende di garanzia»), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
    ],
-   "last_verified": "2026-10-21"
+   "last_verified": "2026-10-21",
+   "pagine": [
+    {
+     "tipo": "tutela",
+     "url": "https://at.ausl.fe.it/servizi-erogati/liste-di-attesa"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.ausl.fe.it/come-fare-per/richiedere-copia-della-cartella-clinica"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.ospfe.it/servizi/come-fare-per/richiedere-e-ritirare-copia-documentazione-sanitaria"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.ausl.fe.it/argomenti/dedicato-a/aree-dedicate/rete-cure-palliative"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.ausl.fe.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/protesi-ausili-e-presidi-per-incontinenza"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://salute.regione.emilia-romagna.it/cure-primarie/visite-ed-esami/il-piano-della-regione-per-ridurre-i-tempi-di-attesa"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://support.fascicolo-sanitario.it/guida/servizi-on-line/cambio%7Crevoca-medico-di-famiglia"
+    }
+   ]
   },
   {
    "id": "forli-cesena",
@@ -447,10 +536,37 @@
    ],
    "todo": [
     "Nelle copie delle pagine dell'AUSL della Romagna non ci sono il centralino né i numeri dell'URP (le pagine URP non hanno telefoni).",
-    "Il PUA di Forlì è solo per i residenti del Comune di Forlì; manca un PUA per Cesena."
+    "Il PUA di Forlì è solo per i residenti del Comune di Forlì; manca un PUA per Cesena.",
+    "Moduli non ancora accesi (22/10/2026): liste d'attesa (nelle copie nessuna AUSL dice come chiedere un posto quando il CUP non lo dà nei tempi: gli estratti parlano di «prelista» e «agende di garanzia»), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
    ],
    "last_verified": "2026-10-21",
-   "pua_url": "https://www.auslromagna.it/azienda/organizzazione/distretti/distretto-di-forli/luoghi/pua-punto-unico-di-accesso-di-forli"
+   "pua_url": "https://www.auslromagna.it/azienda/organizzazione/distretti/distretto-di-forli/luoghi/pua-punto-unico-di-accesso-di-forli",
+   "pagine": [
+    {
+     "tipo": "cartelle",
+     "url": "https://www.auslromagna.it/servizi/richiedere-copia-cartella-clinica-referti"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.auslromagna.it/luoghi/hospice"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.auslromagna.it/azienda/organizzazione/dipartimenti/oncoematologico/cure-palliative-romagna/uo-cure-palliative-forlimpopoli"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.auslromagna.it/luoghi/hospice/cure-palliative-cesena-e-hospice-savignano-sul-rubicone"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://salute.regione.emilia-romagna.it/cure-primarie/visite-ed-esami/il-piano-della-regione-per-ridurre-i-tempi-di-attesa"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://support.fascicolo-sanitario.it/guida/servizi-on-line/cambio%7Crevoca-medico-di-famiglia"
+    }
+   ]
   },
   {
    "id": "modena",
@@ -460,7 +576,8 @@
    "official_domains": [
     "ausl.mo.it",
     "regione.emilia-romagna.it",
-    "salute.regione.emilia-romagna.it"
+    "salute.regione.emilia-romagna.it",
+    "aou.mo.it"
    ],
    "guardia_medica_url": "https://www.ausl.mo.it/servizi-e-prestazioni/guardia-medica/",
    "emails": [],
@@ -531,9 +648,28 @@
    ],
    "todo": [
     "Le pagine delle sedi URP e delle cure domiciliari danno «pagina non trovata»: mancano URP distrettuali e numero per le cure a casa.",
-    "Il numero verde CUP 800 239123 è citato nella pagina CupWeb, non in una pagina dedicata al CUP telefonico: orari non indicati."
+    "Il numero verde CUP 800 239123 è citato nella pagina CupWeb, non in una pagina dedicata al CUP telefonico: orari non indicati.",
+    "Moduli non ancora accesi (22/10/2026): liste d'attesa (nelle copie nessuna AUSL dice come chiedere un posto quando il CUP non lo dà nei tempi: gli estratti parlano di «prelista» e «agende di garanzia»), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
    ],
-   "last_verified": "2026-10-21"
+   "last_verified": "2026-10-21",
+   "pagine": [
+    {
+     "tipo": "cartelle",
+     "url": "https://www.ausl.mo.it/modulistica-aziendale/richiesta-copia-cartella-clinica/"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.aou.mo.it/come-fare-per.html"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://salute.regione.emilia-romagna.it/cure-primarie/visite-ed-esami/il-piano-della-regione-per-ridurre-i-tempi-di-attesa"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://support.fascicolo-sanitario.it/guida/servizi-on-line/cambio%7Crevoca-medico-di-famiglia"
+    }
+   ]
   },
   {
    "id": "parma",
@@ -543,7 +679,8 @@
    "official_domains": [
     "ausl.pr.it",
     "regione.emilia-romagna.it",
-    "salute.regione.emilia-romagna.it"
+    "salute.regione.emilia-romagna.it",
+    "ao.pr.it"
    ],
    "guardia_medica_url": "https://www.ausl.pr.it/dove_curarsi/guardia_medica/default.aspx",
    "pua_url": "https://www.ausl.pr.it/dove_curarsi/assistenza_domiciliare_1/default.aspx",
@@ -707,9 +844,36 @@
    ],
    "todo": [
     "La pagina della guardia medica elenca le sedi ma i numeri per distretto li ho presi dalla pagina «Numeri utili», senza data: da ricontrollare.",
-    "Cure domiciliari: la pagina rimanda ai box delle Case della Salute, ma nella copia non ci sono numeri: manca il numero per le cure a casa."
+    "Cure domiciliari: la pagina rimanda ai box delle Case della Salute, ma nella copia non ci sono numeri: manca il numero per le cure a casa.",
+    "Moduli non ancora accesi (22/10/2026): liste d'attesa (nelle copie nessuna AUSL dice come chiedere un posto quando il CUP non lo dà nei tempi: gli estratti parlano di «prelista» e «agende di garanzia»), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
    ],
-   "last_verified": "2026-10-21"
+   "last_verified": "2026-10-21",
+   "pagine": [
+    {
+     "tipo": "tutela",
+     "url": "https://www.ausl.pr.it/come_fare/prenotazioni_disdette/liste_attesa.aspx"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.ausl.pr.it/come_fare/cartelle_cliniche/cartelle-cliniche.aspx"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.ao.pr.it/curarsi/documentazione-sanitaria/"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.ausl.pr.it/servizi_online/scelta_revoca/default.aspx"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://salute.regione.emilia-romagna.it/cure-primarie/visite-ed-esami/il-piano-della-regione-per-ridurre-i-tempi-di-attesa"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://support.fascicolo-sanitario.it/guida/servizi-on-line/cambio%7Crevoca-medico-di-famiglia"
+    }
+   ]
   },
   {
    "id": "piacenza",
@@ -816,9 +980,32 @@
    "todo": [
     "116117 in Emilia-Romagna: la pagina regionale delle domande frequenti (aggiornata a giugno 2025) dice che il 116117 entrerà in funzione «entro il primo semestre 2026» e che fino ad allora restano attivi i consueti numeri della guardia medica delle Aziende sanitarie. Nessuna pagina copiata (Regione o AUSL) dice che in una provincia il 116117 sia già attivo: per questo in tutte le province ho messo i numeri di guardia medica delle AUSL. Da ricontrollare: forse nel 2026 il 116117 è partito in qualche zona ma le pagine non lo dicono ancora.",
     "Il numero verde regionale del Servizio sanitario 800 033033 compare su quasi tutte le pagine delle AUSL: non l'ho messo nelle voci provinciali (è regionale).",
-    "Il PUA di Fiorenzuola ha una pagina ma senza numero di telefono; manca il numero del PUA/cure domiciliari fuori da Piacenza città."
+    "Il PUA di Fiorenzuola ha una pagina ma senza numero di telefono; manca il numero del PUA/cure domiciliari fuori da Piacenza città.",
+    "Moduli non ancora accesi (22/10/2026): liste d'attesa (nelle copie nessuna AUSL dice come chiedere un posto quando il CUP non lo dà nei tempi: gli estratti parlano di «prelista» e «agende di garanzia»), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
    ],
-   "last_verified": "2026-10-21"
+   "last_verified": "2026-10-21",
+   "pagine": [
+    {
+     "tipo": "cartelle",
+     "url": "https://www.ausl.pc.it/it/come-fare-per/richiesta-rilascio-documenti/rilascio-cartella-clinica"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.ausl.pc.it/it/strutture-e-territorio/dove-siamo/uffici-cartelle-cliniche/ufficio-cartelle-cliniche-di-piacenza"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.ausl.pc.it/it/come-fare-per/protesi-e-ausili"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://salute.regione.emilia-romagna.it/cure-primarie/visite-ed-esami/il-piano-della-regione-per-ridurre-i-tempi-di-attesa"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://support.fascicolo-sanitario.it/guida/servizi-on-line/cambio%7Crevoca-medico-di-famiglia"
+    }
+   ]
   },
   {
    "id": "ravenna",
@@ -877,9 +1064,28 @@
     }
    ],
    "todo": [
-    "Nelle copie delle pagine dell'AUSL della Romagna non ci sono il centralino né i numeri dell'URP (le pagine URP non hanno telefoni)."
+    "Nelle copie delle pagine dell'AUSL della Romagna non ci sono il centralino né i numeri dell'URP (le pagine URP non hanno telefoni).",
+    "Moduli non ancora accesi (22/10/2026): liste d'attesa (nelle copie nessuna AUSL dice come chiedere un posto quando il CUP non lo dà nei tempi: gli estratti parlano di «prelista» e «agende di garanzia»), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
    ],
-   "last_verified": "2026-10-21"
+   "last_verified": "2026-10-21",
+   "pagine": [
+    {
+     "tipo": "cartelle",
+     "url": "https://www.auslromagna.it/servizi/richiedere-copia-cartella-clinica-referti"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.auslromagna.it/luoghi/hospice"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://salute.regione.emilia-romagna.it/cure-primarie/visite-ed-esami/il-piano-della-regione-per-ridurre-i-tempi-di-attesa"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://support.fascicolo-sanitario.it/guida/servizi-on-line/cambio%7Crevoca-medico-di-famiglia"
+    }
+   ]
   },
   {
    "id": "reggio-emilia",
@@ -988,9 +1194,40 @@
    ],
    "todo": [
     "La pagina URP aziendale non ha un numero di telefono; la vecchia pagina URP dà «pagina non trovata». C'è solo l'URP di Correggio.",
-    "Servizio infermieristico domiciliare: la pagina non ha numeri (le sedi sono in un elenco non copiato)."
+    "Servizio infermieristico domiciliare: la pagina non ha numeri (le sedi sono in un elenco non copiato).",
+    "Moduli non ancora accesi (22/10/2026): liste d'attesa (nelle copie nessuna AUSL dice come chiedere un posto quando il CUP non lo dà nei tempi: gli estratti parlano di «prelista» e «agende di garanzia»), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
    ],
-   "last_verified": "2026-10-21"
+   "last_verified": "2026-10-21",
+   "pagine": [
+    {
+     "tipo": "tutela",
+     "url": "https://www.ausl.re.it/visite-ed-esami-il-piano-di-interventi-per-ridurre-i-tempi-di-attesa-e-i-disagi-per-i-cittadini"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.ausl.re.it/richiedere-documenti-sanitari"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.ausl.re.it/come-accedere-alle-cure-palliative"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.ausl.re.it/accoglienza-cure-palliative"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.ausl.re.it/Prestazione.jsp?id=30548"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://salute.regione.emilia-romagna.it/cure-primarie/visite-ed-esami/il-piano-della-regione-per-ridurre-i-tempi-di-attesa"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://support.fascicolo-sanitario.it/guida/servizi-on-line/cambio%7Crevoca-medico-di-famiglia"
+    }
+   ]
   },
   {
    "id": "rimini",
@@ -1049,9 +1286,32 @@
     }
    ],
    "todo": [
-    "Nelle copie delle pagine dell'AUSL della Romagna non ci sono il centralino né i numeri dell'URP (le pagine URP non hanno telefoni)."
+    "Nelle copie delle pagine dell'AUSL della Romagna non ci sono il centralino né i numeri dell'URP (le pagine URP non hanno telefoni).",
+    "Moduli non ancora accesi (22/10/2026): liste d'attesa (nelle copie nessuna AUSL dice come chiedere un posto quando il CUP non lo dà nei tempi: gli estratti parlano di «prelista» e «agende di garanzia»), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
    ],
-   "last_verified": "2026-10-21"
+   "last_verified": "2026-10-21",
+   "pagine": [
+    {
+     "tipo": "cartelle",
+     "url": "https://www.auslromagna.it/servizi/richiedere-copia-cartella-clinica-referti"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.auslromagna.it/luoghi/hospice"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.auslromagna.it/azienda/organizzazione/dipartimenti/oncoematologico/cure-palliative-rimini/cure-palliative-rimini-e-hospice-rimini-ssd-rimini"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://salute.regione.emilia-romagna.it/cure-primarie/visite-ed-esami/il-piano-della-regione-per-ridurre-i-tempi-di-attesa"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://support.fascicolo-sanitario.it/guida/servizi-on-line/cambio%7Crevoca-medico-di-famiglia"
+    }
+   ]
   }
  ]
 }

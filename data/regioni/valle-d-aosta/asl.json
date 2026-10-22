@@ -1,12 +1,22 @@
 {
  "region": "Valle d'Aosta",
  "model": "USL",
- "_note": "Numeri dell'Azienda USL della Valle d'Aosta, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili. In Valle d'Aosta la guardia medica (continuità assistenziale) si chiama al 112.",
+ "local_name": "percorso di tutela",
+ "booking_deadline_days": null,
+ "no_class_rule": "da verificare",
+ "regional_channel": {
+  "portal_url": null,
+  "notes": "Puoi prenotare al CUP dell'USL per telefono o agli sportelli CUP. Online con il Fascicolo sanitario elettronico (FSE) o con l'app, con SPID."
+ },
+ "_note": "Numeri dell'Azienda USL della Valle d'Aosta, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Servono a Numeri utili, al medico di famiglia e alle liste d'attesa (data/regioni/index.json, «moduli»). In Valle d'Aosta la guardia medica (continuità assistenziale) si chiama al 112.",
  "asl": [
   {
    "id": "aosta",
    "name": "Azienda USL della Valle d'Aosta",
    "province": "Aosta",
+   "channel": "cup",
+   "letter_mode": "fallback",
+   "send_to": null,
    "site_url": "https://www.ausl.vda.it/",
    "official_domains": [
     "ausl.vda.it",
@@ -17,6 +27,9 @@
     "urp.aosta@ausl.vda.it"
    ],
    "pec": "protocollo@pec.ausl.vda.it",
+   "form_url": null,
+   "info_url": "https://www.ausl.vda.it/tempi-d-attesa/tempi-di-attesa",
+   "portal_url": null,
    "phones": [
     {
      "label": "Centralino dell'Azienda USL della Valle d'Aosta",
@@ -85,48 +98,54 @@
      "label": "Scelta e revoca del medico – sportello di Morgex (informazioni)",
      "number": "0165 809300",
      "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/scelta-e-revoca-del-medico-o-del-pediatra-di-famiglia",
-     "verified": "2026-10-21",
-     "proof": "pagina"
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 8–14"
     },
     {
      "topic": "anagrafe",
      "label": "Scelta e revoca del medico – sportello di Saint-Pierre (informazioni)",
      "number": "0165 903825",
      "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/scelta-e-revoca-del-medico-o-del-pediatra-di-famiglia",
-     "verified": "2026-10-21",
-     "proof": "pagina"
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 8–14"
     },
     {
      "topic": "anagrafe",
      "label": "Scelta e revoca del medico – sportello di Aosta (informazioni)",
      "number": "0165 544835",
      "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/scelta-e-revoca-del-medico-o-del-pediatra-di-famiglia",
-     "verified": "2026-10-21",
-     "proof": "pagina"
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 8–14"
     },
     {
      "topic": "anagrafe",
      "label": "Scelta e revoca del medico – sportello di Châtillon (informazioni)",
      "number": "0166 501011",
      "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/scelta-e-revoca-del-medico-o-del-pediatra-di-famiglia",
-     "verified": "2026-10-21",
-     "proof": "pagina"
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 8–14"
     },
     {
      "topic": "anagrafe",
      "label": "Scelta e revoca del medico – sportello di Verrès (informazioni)",
      "number": "0125 920488",
      "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/scelta-e-revoca-del-medico-o-del-pediatra-di-famiglia",
-     "verified": "2026-10-21",
-     "proof": "pagina"
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 8–14"
     },
     {
      "topic": "anagrafe",
      "label": "Scelta e revoca del medico – sportello di Donnas (informazioni)",
      "number": "0125 806300",
      "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/scelta-e-revoca-del-medico-o-del-pediatra-di-famiglia",
-     "verified": "2026-10-21",
-     "proof": "pagina"
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 8–14"
     }
    ],
    "sources": [
@@ -161,16 +180,137 @@
     {
      "label": "Regione Valle d'Aosta – Emergenza sanitaria (112)",
      "url": "https://www.regione.vda.it/sanita/servizi_territorio/emergenza/default_i.asp"
+    },
+    {
+     "label": "USL Valle d'Aosta – Tempi di attesa e percorso di tutela",
+     "url": "https://www.ausl.vda.it/tempi-d-attesa/tempi-di-attesa"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-22",
    "todo": [
     "Guardia medica: la pagina USL «Continuità assistenziale (ex guardia medica)» dice che per il medico di continuità assistenziale si chiama il NUE 112, tutti i giorni dalle 20 alle 8 e nei festivi. Nessuna pagina copiata (USL o Regione) parla del 116117: per la Valle d'Aosta non va messo il 116117 finché una pagina ufficiale non lo dice.",
     "La pagina Distretto 1 dice che il medico di continuità assistenziale ha sede all'Ospedale Beauregard di Aosta, a Morgex, Cogne e Saint-Pierre, ma non dà numeri; la pagina Distretto 2 non indica sedi.",
     "La pagina regionale «Emergenza sanitaria» dice che il 112 è il numero per il soccorso sanitario in tutta la regione (Centrale Unica del Soccorso).",
     "CUP: c'è un solo CUP, quello dell'USL, 0165 548387 (lun–ven 8–16:30, da fisso e cellulare, anche dall'estero); numero verde 800 610061 solo per assistenza al CUP online. Non ho trovato un CUP regionale diverso. Alcune prestazioni (es. radiologia, oculistica) si prenotano direttamente nei reparti.",
     "PUA / cure domiciliari: nessuna pagina con numeri; la pagina «Assistenza domiciliare (ADI)» è solo la scheda del progetto PNRR. Manca il topic «casa».",
-    "Le pagine regionali «Assistenza sanitaria» e «Servizi sul territorio» (dove c'è la voce Continuità assistenziale) davano errore 403 e non sono state copiate."
+    "Le pagine regionali «Assistenza sanitaria» e «Servizi sul territorio» (dove c'è la voce Continuità assistenziale) davano errore 403 e non sono state copiate.",
+    "Percorso di tutela (pagina «Tempi di attesa», copia del 21/10/2026): si chiede al CUP telefonico o agli sportelli CUP; non c'è un indirizzo email dedicato. Per questo send_to resta vuoto e la lettera si porta all'URP o al CUP; nella lettera c'è la PEC generale (protocollo@pec.ausl.vda.it, nel piè di pagina del sito). Da chiedere all'URP se si può mandare con la PEC.",
+    "Scelta del medico (pagina copiata il 22/10/2026): online dal FSE solo per il cambio; prima scelta, 0–14 anni e fuori ambito allo sportello; anche via PEC con il modulo (non per prima iscrizione e cittadini stranieri). Ad Aosta (via Guido Rey 1) c'è anche la prenotazione garantita (lun, mer, ven 8:30–13:30; mar e gio 8:30–15:30) tramite CUP.",
+    "Invalidità civile in Valle d'Aosta: la seguono la Regione e l'USL con regole proprie (il sito della Regione ha la voce «Servizi per invalidi civili»), non solo l'INPS. Il modulo invalidità non va acceso finché non si legge come funziona qui.",
+    "Pagine aggiunte in «pagine» per il server (22/10/2026), da leggere quando ci sono le copie: cartella clinica (Ufficio cartelle cliniche dell'Ospedale Parini, email ufficiocartellecliniche@ausl.vda.it secondo l'estratto), cure palliative e hospice (Beauregard, via Vaccari 5, secondo l'estratto), ausili e protesi (via Guido Rey 1, secondo l'estratto due numeri diversi: 0165 775122 e 0165 544806), screening (0165 231205 secondo l'estratto). Nessun numero messo: solo estratti."
+   ],
+   "fast_track": null,
+   "how_to": "Chiama il CUP dell'USL allo 0165 548387 (dal lunedì al venerdì 8–16:30) o vai a uno sportello CUP. Chiedi di attivare il «percorso di tutela». Se non ti danno una data in tempo, stampa la lettera e portala all'URP dell'USL (via Guido Rey 1, Aosta) o a uno sportello CUP. Fatti dare una copia con timbro e data.",
+   "documents_required": [
+    "Ricetta",
+    "Foglio della prenotazione, se ce l'hai",
+    "Documento d'identità (fotocopia o foto)"
+   ],
+   "what_next": [
+    "Se non c'è posto subito, il CUP ti mette in una lista d'attesa (si chiama «lista di galleggiamento»).",
+    "Quando si libera un posto, il CUP ti richiama per darti la data.",
+    "La visita si può fare anche fuori dalla Valle d'Aosta, in un centro privato convenzionato.",
+    "Se rifiuti la data che ti propongono, esci dalla lista."
+   ],
+   "notes": [],
+   "details": [
+    "In Valle d'Aosta il percorso di tutela vale per le prime visite e i primi esami del Piano nazionale delle liste d'attesa.",
+    "Alcuni esami (per esempio alcuni esami di radiologia o di oculistica) si prenotano nei reparti, non al CUP."
+   ],
+   "status": "verified",
+   "scelta_medico": {
+    "how": "Se hai già un medico in Valle d'Aosta, puoi cambiarlo online nel Fascicolo sanitario elettronico (FSE). Per la prima scelta, per i bambini fino a 14 anni e per un medico fuori zona vai allo sportello «scelta e revoca» del distretto. Gli sportelli di Morgex, Saint-Pierre, Aosta, Châtillon, Verrès e Donnas sono aperti dal lunedì al venerdì 8–14. Puoi anche mandare il modulo firmato con la PEC a protocollo@pec.ausl.vda.it, con la copia del documento.",
+    "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/scelta-e-revoca-del-medico-o-del-pediatra-di-famiglia"
+   },
+   "pagine": [
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.vda.it/sanita/assistenza_sanitaria/default_i.asp"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.vda.it/sanita/servizi_territorio/default_i.asp"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.vda.it/sanita/servizi_territorio/emergenza/default_i.asp"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.vda.it/sanita/servizi_territorio/ass_sanitaria/turisti/default_i.asp"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.vda.it/sanita/assistenza_sanitaria/regione/tempi_attesa/default_i.asp"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.vda.it/sanita/risorse_informative/fse_i.aspx"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.vda.it/sanita/risorse_informative/default_i.aspx"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.ausl.vda.it/chi-siamo/direzione-strategica/informazioni-generali"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.ausl.vda.it/chi-siamo/azienda"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.ausl.vda.it/in-primo-piano/segnalazione-all-urp"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.ausl.vda.it/sempre-informati/archivio/archivio-notizie-2025/continuita-dell-assistenza-pediatrica"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.ausl.vda.it/chi-siamo/servizi-territoriali-area-territoriale/ambulatori-ad-accesso-diretto"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.ausl.vda.it/attuazione-misure-pnrr/assistenza-domiciliare-adi"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.ausl.vda.it/chi-siamo/servizi-territoriali-area-territoriale/servizi-territoriali"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.ausl.vda.it/chi-siamo/servizi-territoriali-area-territoriale/distretto-1"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.ausl.vda.it/chi-siamo/servizi-territoriali-area-territoriale/distretto-2"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/richiedere-e-ritirare-la-cartella-clinica"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.ausl.vda.it/chi-siamo/ospedale-strutture-reparti-e-servizi-sanitari/reparti/hospice-e-cure-palliative/sede-e-contatti"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.ausl.vda.it/chi-siamo/ospedale-strutture-reparti-e-servizi-sanitari/reparti/hospice-e-cure-palliative/attivita"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/assistenza-protesica-e-ausili"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.ausl.vda.it/prevenzione/screening/screening-oncologici"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/aderire-alle-campagne-di-screening"
+    }
    ]
   }
  ]

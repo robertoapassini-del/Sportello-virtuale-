@@ -1,19 +1,35 @@
 {
  "region": "Lombardia",
- "last_verified": "2026-10-21",
- "note": "Indirizzi e PEC delle sedi INPS dalle pagine «sedi» di inps.it, copiate il 21/10/2026 dal server in Italia. Per andare allo sportello si prenota (MyINPS, app, 803 164 / 06 164164). regime (riforma della disabilità) da verificare: finché è null il modulo invalidità non va attivato per la Lombardia.",
+ "last_verified": "2026-10-22",
+ "note": "Indirizzi e PEC delle sedi INPS dalle pagine «sedi» di inps.it, copiate il 21/10/2026 dal server in Italia. Per andare allo sportello si prenota (MyINPS, app, 803 164 / 06 164164). Regime della riforma della disabilità (22/10/2026) dagli estratti delle pagine del Dipartimento per la disabilità e dell'INPS: 9 province dal 01/01/2025, 11 dal 30/09/2025, 40 dal 01/03/2026; le altre con la vecchia procedura fino al 31/12/2026.",
  "sources": [
   {
    "label": "INPS – sedi e contatti in Lombardia",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.498000.498000-elencoStruttureInps.html"
+  },
+  {
+   "label": "Dipartimento per le politiche in favore delle persone con disabilità – le prime 9 province della sperimentazione",
+   "url": "https://www.disabilita.governo.it/it/notizie/individuate-le-9-province-per-sperimentare-la-riforma-disabilita/"
+  },
+  {
+   "label": "Dipartimento per le politiche in favore delle persone con disabilità – altre 11 province (dal 30/09/2025)",
+   "url": "https://www.disabilita.governo.it/it/notizie/individuate-le-altre-11-province-per-la-sperimentazione-della-riforma-della-disabilita/"
+  },
+  {
+   "label": "Dipartimento per le politiche in favore delle persone con disabilità – altre 40 province (dal 01/03/2026)",
+   "url": "https://www.disabilita.governo.it/it/notizie/al-via-sperimentazione-riforma-disabilita-in-altre-40-province/"
+  },
+  {
+   "label": "INPS – Riforma della disabilità: al via la terza fase sperimentale",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html"
   }
  ],
  "provinces": [
   {
    "id": "bergamo",
    "name": "Bergamo",
-   "regime": null,
-   "regime_since": null,
+   "regime": "new",
+   "regime_since": "2026-03-01",
    "pec": "direzione.provinciale.bergamo@postacert.inps.gov.it",
    "address": "Viale Vittorio Emanuele 5, Bergamo",
    "status": "ok",
@@ -25,8 +41,8 @@
   {
    "id": "brescia",
    "name": "Brescia",
-   "regime": null,
-   "regime_since": null,
+   "regime": "new",
+   "regime_since": "2025-01-01",
    "pec": "direzione.provinciale.brescia@postacert.inps.gov.it",
    "address": "Via Benedetto Croce 32, Brescia",
    "status": "ok",
@@ -38,8 +54,8 @@
   {
    "id": "como",
    "name": "Como",
-   "regime": null,
-   "regime_since": null,
+   "regime": "new",
+   "regime_since": "2026-03-01",
    "pec": "direzione.provinciale.como@postacert.inps.gov.it",
    "address": "Via Pessina 8, Como",
    "status": "ok",
@@ -51,7 +67,7 @@
   {
    "id": "cremona",
    "name": "Cremona",
-   "regime": null,
+   "regime": "old",
    "regime_since": null,
    "pec": "direzione.provinciale.cremona@postacert.inps.gov.it",
    "address": "Piazza Cadorna 17, Cremona",
@@ -64,7 +80,7 @@
   {
    "id": "lecco",
    "name": "Lecco",
-   "regime": null,
+   "regime": "old",
    "regime_since": null,
    "pec": "direzione.provinciale.lecco@postacert.inps.gov.it",
    "address": "Corso Carlo Alberto 39, Lecco",
@@ -77,7 +93,7 @@
   {
    "id": "lodi",
    "name": "Lodi",
-   "regime": null,
+   "regime": "old",
    "regime_since": null,
    "pec": "direzione.provinciale.lodi@postacert.inps.gov.it",
    "address": "Via Besana 4, Lodi",
@@ -90,8 +106,8 @@
   {
    "id": "mantova",
    "name": "Mantova",
-   "regime": null,
-   "regime_since": null,
+   "regime": "new",
+   "regime_since": "2026-03-01",
    "pec": "direzione.provinciale.mantova@postacert.inps.gov.it",
    "address": "Viale Fiume 5, Mantova",
    "status": "ok",
@@ -103,8 +119,8 @@
   {
    "id": "milano",
    "name": "Milano",
-   "regime": null,
-   "regime_since": null,
+   "regime": "new",
+   "regime_since": "2026-03-01",
    "pec": "direzione.provinciale.milano@postacert.inps.gov.it",
    "address": "Via Guglielmo Silva 38, Milano",
    "status": "ok",
@@ -116,7 +132,7 @@
   {
    "id": "monza-brianza",
    "name": "Monza e Brianza",
-   "regime": null,
+   "regime": "old",
    "regime_since": null,
    "pec": "direzione.provinciale.monza@postacert.inps.gov.it",
    "address": "Via Morandi - Ang. Via Correggio, Monza",
@@ -129,8 +145,8 @@
   {
    "id": "pavia",
    "name": "Pavia",
-   "regime": null,
-   "regime_since": null,
+   "regime": "new",
+   "regime_since": "2026-03-01",
    "pec": "direzione.provinciale.pavia@postacert.inps.gov.it",
    "address": "Viale Cesare Battisti 146B, Pavia",
    "status": "ok",
@@ -142,8 +158,8 @@
   {
    "id": "sondrio",
    "name": "Sondrio",
-   "regime": null,
-   "regime_since": null,
+   "regime": "new",
+   "regime_since": "2026-03-01",
    "pec": "direzione.provinciale.sondrio@postacert.inps.gov.it",
    "address": "Via XXV Aprile 5, Sondrio",
    "status": "ok",
@@ -155,7 +171,7 @@
   {
    "id": "varese",
    "name": "Varese",
-   "regime": null,
+   "regime": "old",
    "regime_since": null,
    "pec": "direzione.provinciale.varese@postacert.inps.gov.it",
    "address": "Via Volta 5, Varese",
@@ -167,7 +183,8 @@
   }
  ],
  "todo": [
-  "Riforma della disabilità: verificare quali province lombarde sono nella sperimentazione e da quando (campo regime).",
+  "Regime della riforma della disabilità messo il 22/10/2026 dagli estratti (motore di ricerca) delle pagine disabilita.governo.it e inps.it: i siti non si aprono da qui. Da rileggere per intero sulle pagine e da confermare con una telefonata alla sede (come per la Sicilia).",
+  "Il regime è pronto, ma «invalidita» non è in «moduli» (data/regioni/index.json): tests/browser.cjs usa la Lombardia come esempio di regione con l'invalidità bloccata. Si accende quando il test sceglie la regione dai «moduli».",
   "Milano: la pagina è della Filiale Metropolitana (via Silva 38); a Milano ci sono altre sedi."
  ]
 }

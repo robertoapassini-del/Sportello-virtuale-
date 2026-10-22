@@ -148,14 +148,33 @@
     {
      "label": "ASP Reggio Calabria – Numeri utili (centralini delle ASP)",
      "url": "https://www.asprc.it/servizi/numeri-utili/"
+    },
+    {
+     "label": "Regione Calabria – Ecosistema Calabria Sanità: domande frequenti (scelta e revoca del medico)",
+     "url": "https://ecosanita.regione.calabria.it/faq.php"
     }
    ],
    "last_verified": "2026-10-21",
    "todo": [
     "116117: è attivo in tutta la Calabria dal 28 luglio 2026, gratuito, 24 ore su 24, gestito da Azienda Zero (comunicati ASP Catanzaro, ASP Crotone, ASP Reggio Calabria; fonte citata aziendazero.regione.calabria.it/?p=4908). All'inizio serve soprattutto per la guardia medica (continuità assistenziale). Per questo non ho messo i vecchi numeri locali di guardia medica in nessuna provincia. Pagina della Regione o di Azienda Zero sul 116117 non copiata: l'unica pagina della Regione (articolo sulle ex guardie mediche) ne parla come attivazione futura.",
     "CUP: c'è un numero unico regionale di prenotazione, 0961 789789 (call center, dal lunedì al venerdì 9–18, sabato 9–13; nelle altre ore risponde il «CUP virtuale» automatico). Lo indicano le pagine di ASP Catanzaro, ASP Crotone e ASP Reggio Calabria. La pagina CUP online di Crotone (aggiornata a giugno 2025) dice che si può prenotare presso ASP CZ, ASP RC, GOM RC, ASP CS, AO CS e INRCA CS: Vibo Valentia non compare.",
-    "Centralino ASP Catanzaro (0961 7031): l'ho trovato solo sulla pagina «Numeri utili» dell'ASP di Reggio Calabria, non sulle pagine dell'ASP di Catanzaro copiate. La pagina CUP dell'ASP di Catanzaro e la pagina Contatti della trasparenza non erano raggiungibili (errore 503)."
-   ]
+    "Centralino ASP Catanzaro (0961 7031): l'ho trovato solo sulla pagina «Numeri utili» dell'ASP di Reggio Calabria, non sulle pagine dell'ASP di Catanzaro copiate. La pagina CUP dell'ASP di Catanzaro e la pagina Contatti della trasparenza non erano raggiungibili (errore 503).",
+    "Moduli (22/10/2026): attivi invalidità (inps.json) e medico di famiglia (scelta_medico dalla pagina FAQ di Ecosanità, Regione Calabria, copia del 21/10/2026; la copia è nella cartella regione-calabria e non ancora nell'indice: arriva con la prossima copia, dalla voce «pagine» di Catanzaro). Mancano percorso di tutela (la Regione lo prevede nel DCA 3/2024; pagine non copiate), protesica, cure palliative, cartelle cliniche (anche le aziende ospedaliere di Catanzaro, Cosenza e Reggio)."
+   ],
+   "pagine": [
+    {
+     "tipo": "scelta del medico (Regione, Ecosanità)",
+     "url": "https://ecosanita.regione.calabria.it/faq.php"
+    },
+    {
+     "tipo": "scelta del medico",
+     "url": "https://www.asp.cz.it/distretti-sanitari/distretto-sociosanitario-di-catanzaro/scelta-del-medico/"
+    }
+   ],
+   "scelta_medico": {
+    "how": "Puoi cambiare il medico o il pediatra online, sul portale della Regione Calabria «Ecosistema Calabria Sanità», con SPID o CIE. Vedi i medici del tuo distretto che hanno ancora posto e scegli. Se va bene, il cambio vale subito. Se il medico che vuoi ha già tutti i pazienti, devi andare allo sportello dell'ASP.",
+    "url": null
+   }
   },
   {
    "id": "cosenza",
@@ -232,6 +251,10 @@
     {
      "label": "ASP Catanzaro – Comunicato 116117",
      "url": "https://www.asp.cz.it/news/in-evidenza/2026/07/27/comunicato-nea-116117-2164/?lang=it"
+    },
+    {
+     "label": "Regione Calabria – Ecosistema Calabria Sanità: domande frequenti (scelta e revoca del medico)",
+     "url": "https://ecosanita.regione.calabria.it/faq.php"
     }
    ],
    "last_verified": "2026-10-21",
@@ -239,8 +262,13 @@
     "Le pagine dell'ASP di Cosenza su guardia medica, assistenza domiciliare (ADI), servizi al cittadino e help desk URP sono state copiate ma mostrano solo la home page: mancano PUA/ADI e numeri dei distretti.",
     "Centralino: il sito dell'ASP di Cosenza dice 0984 8931; la pagina «Numeri utili» dell'ASP di Reggio Calabria dice 0984 8351. Ho messo quello del sito di Cosenza.",
     "URP Cosenza: sulla pagina c'è scritto «0984-8933221 247»; ho messo solo 0984 8933221. Gli URP di Rende, Cariati, Ionio Nord e Ionio Sud sono «non operativi per carenza di personale»; l'URP Tirreno (Praia) non ha telefono sulla pagina.",
-    "Il numero CUP 0961 789789 viene da una pagina dell'ASP di Crotone (aggiornata a giugno 2025) che dice che il CUP regionale prenota anche per l'ASP di Cosenza; sul sito di Cosenza c'è solo il link «Prenotazioni CUP», senza numero."
-   ]
+    "Il numero CUP 0961 789789 viene da una pagina dell'ASP di Crotone (aggiornata a giugno 2025) che dice che il CUP regionale prenota anche per l'ASP di Cosenza; sul sito di Cosenza c'è solo il link «Prenotazioni CUP», senza numero.",
+    "Moduli (22/10/2026): attivi invalidità (inps.json) e medico di famiglia (scelta_medico dalla pagina FAQ di Ecosanità, Regione Calabria, copia del 21/10/2026; la copia è nella cartella regione-calabria e non ancora nell'indice: arriva con la prossima copia, dalla voce «pagine» di Catanzaro). Mancano percorso di tutela (la Regione lo prevede nel DCA 3/2024; pagine non copiate), protesica, cure palliative, cartelle cliniche (anche le aziende ospedaliere di Catanzaro, Cosenza e Reggio)."
+   ],
+   "scelta_medico": {
+    "how": "Puoi cambiare il medico o il pediatra online, sul portale della Regione Calabria «Ecosistema Calabria Sanità», con SPID o CIE. Vedi i medici del tuo distretto che hanno ancora posto e scegli. Se va bene, il cambio vale subito. Se il medico che vuoi ha già tutti i pazienti, devi andare allo sportello dell'ASP.",
+    "url": null
+   }
   },
   {
    "id": "crotone",
@@ -344,14 +372,23 @@
     {
      "label": "ASP Crotone – CUP online",
      "url": "https://www.asp.crotone.it/centro-unico-di-prenotazione-online/"
+    },
+    {
+     "label": "Regione Calabria – Ecosistema Calabria Sanità: domande frequenti (scelta e revoca del medico)",
+     "url": "https://ecosanita.regione.calabria.it/faq.php"
     }
    ],
    "last_verified": "2026-10-21",
    "todo": [
     "Assistenza domiciliare: orari scritti solo per la sede di Crotone (per Cirò Marina e Mesoraca non li ho messi perché non sono chiari). I numeri di Cirò Marina e Mesoraca sembrano numeri generali delle sedi: da ricontrollare.",
     "Nessuna pagina PUA specifica per Crotone. La pagina «Continuità assistenziale» è «in allestimento».",
-    "La pagina CUP online di Crotone (giugno 2025) elenca le aziende prenotabili dal CUP regionale e Crotone non c'è, ma la pagina Contatti (aggiornata a settembre 2026) dà il call center 0961 789789: ho usato questa."
-   ]
+    "La pagina CUP online di Crotone (giugno 2025) elenca le aziende prenotabili dal CUP regionale e Crotone non c'è, ma la pagina Contatti (aggiornata a settembre 2026) dà il call center 0961 789789: ho usato questa.",
+    "Moduli (22/10/2026): attivi invalidità (inps.json) e medico di famiglia (scelta_medico dalla pagina FAQ di Ecosanità, Regione Calabria, copia del 21/10/2026; la copia è nella cartella regione-calabria e non ancora nell'indice: arriva con la prossima copia, dalla voce «pagine» di Catanzaro). Mancano percorso di tutela (la Regione lo prevede nel DCA 3/2024; pagine non copiate), protesica, cure palliative, cartelle cliniche (anche le aziende ospedaliere di Catanzaro, Cosenza e Reggio)."
+   ],
+   "scelta_medico": {
+    "how": "Puoi cambiare il medico o il pediatra online, sul portale della Regione Calabria «Ecosistema Calabria Sanità», con SPID o CIE. Vedi i medici del tuo distretto che hanno ancora posto e scegli. Se va bene, il cambio vale subito. Se il medico che vuoi ha già tutti i pazienti, devi andare allo sportello dell'ASP.",
+    "url": null
+   }
   },
   {
    "id": "reggio-calabria",
@@ -466,13 +503,28 @@
     {
      "label": "ASP Reggio Calabria – Numeri utili",
      "url": "https://www.asprc.it/servizi/numeri-utili/"
+    },
+    {
+     "label": "Regione Calabria – Ecosistema Calabria Sanità: domande frequenti (scelta e revoca del medico)",
+     "url": "https://ecosanita.regione.calabria.it/faq.php"
     }
    ],
    "last_verified": "2026-10-21",
    "todo": [
     "La pagina «Continuità assistenziale» ha ancora l'elenco delle postazioni di guardia medica con i numeri (aggiornato 24/7/2026): non li ho messi perché c'è il 116117.",
-    "PUA: c'è solo quello del Distretto di Reggio Calabria (anche 0965 347162); mancano gli altri distretti. La pagina URP principale (/servizi/urp/) non era raggiungibile (503)."
-   ]
+    "PUA: c'è solo quello del Distretto di Reggio Calabria (anche 0965 347162); mancano gli altri distretti. La pagina URP principale (/servizi/urp/) non era raggiungibile (503).",
+    "Moduli (22/10/2026): attivi invalidità (inps.json) e medico di famiglia (scelta_medico dalla pagina FAQ di Ecosanità, Regione Calabria, copia del 21/10/2026; la copia è nella cartella regione-calabria e non ancora nell'indice: arriva con la prossima copia, dalla voce «pagine» di Catanzaro). Mancano percorso di tutela (la Regione lo prevede nel DCA 3/2024; pagine non copiate), protesica, cure palliative, cartelle cliniche (anche le aziende ospedaliere di Catanzaro, Cosenza e Reggio)."
+   ],
+   "pagine": [
+    {
+     "tipo": "scelta del medico",
+     "url": "https://www.asprc.it/servizi-online/scelta-e-cambio-medico-online/"
+    }
+   ],
+   "scelta_medico": {
+    "how": "Puoi cambiare il medico o il pediatra online, sul portale della Regione Calabria «Ecosistema Calabria Sanità», con SPID o CIE. Vedi i medici del tuo distretto che hanno ancora posto e scegli. Se va bene, il cambio vale subito. Se il medico che vuoi ha già tutti i pazienti, devi andare allo sportello dell'ASP.",
+    "url": null
+   }
   },
   {
    "id": "vibo-valentia",
@@ -517,15 +569,31 @@
     {
      "label": "ASP Catanzaro – Comunicato 116117 (servizio regionale)",
      "url": "https://www.asp.cz.it/news/in-evidenza/2026/07/27/comunicato-nea-116117-2164/?lang=it"
+    },
+    {
+     "label": "Regione Calabria – Ecosistema Calabria Sanità: domande frequenti (scelta e revoca del medico)",
+     "url": "https://ecosanita.regione.calabria.it/faq.php"
     }
    ],
    "last_verified": "2026-10-21",
    "todo": [
     "Il sito aspvv.it non si è lasciato copiare (errore 403 su tutte le pagine): mancano URP, CUP, PUA/assistenza domiciliare e tutti i numeri dell'ASP di Vibo Valentia.",
     "L'unico numero (0963 339541, sede di Mileto) viene dalla pagina «Numeri utili» dell'ASP di Reggio Calabria: da confermare sul sito dell'ASP di Vibo.",
-    "CUP: non ho messo il numero regionale 0961 789789 perché la pagina CUP online di Crotone non elenca l'ASP di Vibo tra le aziende prenotabili: da verificare."
+    "CUP: non ho messo il numero regionale 0961 789789 perché la pagina CUP online di Crotone non elenca l'ASP di Vibo tra le aziende prenotabili: da verificare.",
+    "Moduli (22/10/2026): attivi invalidità (inps.json) e medico di famiglia (scelta_medico dalla pagina FAQ di Ecosanità, Regione Calabria, copia del 21/10/2026; la copia è nella cartella regione-calabria e non ancora nell'indice: arriva con la prossima copia, dalla voce «pagine» di Catanzaro). Mancano percorso di tutela (la Regione lo prevede nel DCA 3/2024; pagine non copiate), protesica, cure palliative, cartelle cliniche (anche le aziende ospedaliere di Catanzaro, Cosenza e Reggio).",
+    "Senza PEC né email: la lettera del medico di famiglia dice di consegnarla allo sportello. Il sito aspvv.it dà 403 al server: pagina del percorso di tutela in «pagine»."
    ],
-   "emails": []
+   "emails": [],
+   "pagine": [
+    {
+     "tipo": "liste di attesa e percorso di tutela",
+     "url": "https://www.aspvv.it/index.php/amministrazione-trasparente-3/servizi-erogati/liste-di-attesa/a-proposito-delle-liste-di-attesa"
+    }
+   ],
+   "scelta_medico": {
+    "how": "Puoi cambiare il medico o il pediatra online, sul portale della Regione Calabria «Ecosistema Calabria Sanità», con SPID o CIE. Vedi i medici del tuo distretto che hanno ancora posto e scegli. Se va bene, il cambio vale subito. Se il medico che vuoi ha già tutti i pazienti, devi andare allo sportello dell'ASP.",
+    "url": null
+   }
   }
  ]
 }

@@ -165,3 +165,16 @@ test('nessuna parola della ricerca è sparita', () => {
   const sparite = prima.filter((x) => !ora.has(x));
   assert.deepEqual(sparite, [], `parole tolte dalla ricerca:\n${sparite.join('\n')}`);
 });
+
+// Invalidità accesa in una regione: ogni sede INPS deve dire se la provincia usa la procedura nuova o la vecchia
+// (riforma della disabilità). Senza, il modulo la tratterebbe come vecchia senza dirlo (22/10/2026, gruppo 3:
+// le sedi sarde di Olbia, Lanusei, Sanluri e Carbonia non sono nominate da INPS).
+test('regioni con l\'invalidità accesa: ogni sede INPS ha il regime', () => {
+  const errori = [];
+  for (const r of indice.regioni.filter((x) => x.attiva && (!x.moduli || x.moduli.includes('invalidita')))) {
+    const f = `data/regioni/${r.id}/${(r.files && r.files.inps) || 'inps'}.json`;
+    if (!existsSync(path.join(SITE, f))) { errori.push(`${r.id}: manca ${f}`); continue; }
+    for (const p of json(f).provinces || []) if (!['new', 'old'].includes(p.regime)) errori.push(`${r.id}/${p.id || p.name}: regime «${p.regime}»`);
+  }
+  assert.deepEqual(errori, []);
+});

@@ -134,7 +134,35 @@
    "last_verified": "2026-10-21",
    "todo": [
     "Il numero 0131 306111 è scritto in fondo al sito accanto alla sede legale, senza la parola «centralino».",
-    "Le cure domiciliari non hanno numeri nelle pagine copiate; c'è solo lo sportello unico del Distretto di Valenza."
+    "Le cure domiciliari non hanno numeri nelle pagine copiate; c'è solo lo sportello unico del Distretto di Valenza.",
+    "Percorso di tutela in Piemonte: prima si prova il CUP regionale (numero verde, portale e app «CUP Piemonte», farmacie); poi ogni ASL ha la sua istanza. Chi rifiuta la prima data proposta nei tempi perde il diritto. Moduli non accesi: Torino ha 4 ASL (Città di Torino, TO3, TO4, TO5) e Cuneo 2 (CN1, CN2) in una sola voce, e la lettera deve andare all'ASL giusta: serve una domanda in più («In quale zona?») nel codice.",
+    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): email urp@aslal.it con ricetta, modulo privacy, documento e tessera."
+   ],
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aslal.it/Sezione.jsp?titolo=Informazioni+U.R.P.&idSezione=6"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslal.it/prenotare-visite-o-esami-e-ritirare-i-referti"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslal.it/continuita-assisten"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aslal.it/cartella-integrata-c"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aslal.it/bcentrale-operativa-continuita-assistenzialebbr"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.aslal.it/percorso-di-tutela-assistiti-aslal"
+    }
    ]
   },
   {
@@ -267,7 +295,23 @@
    ],
    "last_verified": "2026-10-21",
    "todo": [
-    "La pagina sulle cure domiciliari dell'ASL Asti non ha numeri (si attivano dal medico di famiglia)."
+    "La pagina sulle cure domiciliari dell'ASL Asti non ha numeri (si attivano dal medico di famiglia).",
+    "Percorso di tutela in Piemonte: prima si prova il CUP regionale (numero verde, portale e app «CUP Piemonte», farmacie); poi ogni ASL ha la sua istanza. Chi rifiuta la prima data proposta nei tempi perde il diritto. Moduli non accesi: Torino ha 4 ASL (Città di Torino, TO3, TO4, TO5) e Cuneo 2 (CN1, CN2) in una sola voce, e la lettera deve andare all'ASL giusta: serve una domanda in più («In quale zona?») nel codice.",
+    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): email tempiattesa@asl.at.it o sportelli URP, modulo nella pagina."
+   ],
+   "pagine": [
+    {
+     "tipo": "cup",
+     "url": "https://asl.at.it/cosa-fare-per/le-visite-e-le-prestazioni-ambulatoriali/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://asl.at.it/cosa-fare-per/orientarsi-tra-i-percorsi-di-assistenza-e-cura/"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://asl.at.it/focus/percorso-di-tutela-dei-cittadini-assistiti/"
+    }
    ]
   },
   {
@@ -382,7 +426,43 @@
    "last_verified": "2026-10-21",
    "todo": [
     "La notizia sul 116117 è del 1° luglio 2022 e diceva che i vecchi numeri locali restavano attivi «al momento»: non li ho messi.",
-    "La pagina «Prenotare una visita» dell'ASL Biella dà «Pagina non trovata» (404)."
+    "La pagina «Prenotare una visita» dell'ASL Biella dà «Pagina non trovata» (404).",
+    "Percorso di tutela in Piemonte: prima si prova il CUP regionale (numero verde, portale e app «CUP Piemonte», farmacie); poi ogni ASL ha la sua istanza. Chi rifiuta la prima data proposta nei tempi perde il diritto. Moduli non accesi: Torino ha 4 ASL (Città di Torino, TO3, TO4, TO5) e Cuneo 2 (CN1, CN2) in una sola voce, e la lettera deve andare all'ASL giusta: serve una domanda in più («In quale zona?») nel codice.",
+    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): c'è un modulo, ma l'estratto non dice l'indirizzo. Cartelle cliniche: cartelle.cliniche@aslbi.piemonte.it. Cure palliative: cure.palliative@aslbi.piemonte.it."
+   ],
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://aslbi.piemonte.it/urp/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://aslbi.piemonte.it/come-fare-per/prenotare-una-visita-tramite-servizio-sanitario-nazionale/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://aslbi.piemonte.it/come-fare-per/"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://aslbi.piemonte.it/percorsi-di-tutela/"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://aslbi.piemonte.it/come-fare-per/richiesta-e-ritiro-cartelle-esami/"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://aslbi.piemonte.it/prontuario-biellese/ausili-sanitari-tramite-asl/"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://aslbi.piemonte.it/servizi-territoriali/cure-palliative/"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://aslbi.piemonte.it/prontuario-biellese/cure-palliative-domiciliari/"
+    }
    ]
   },
   {
@@ -564,7 +644,35 @@
    ],
    "last_verified": "2026-10-21",
    "todo": [
-    "Le pagine sulle cure domiciliari dell'ASL CN1 non hanno numeri; per l'ASL CN2 non c'è una pagina copiata sulle cure domiciliari."
+    "Le pagine sulle cure domiciliari dell'ASL CN1 non hanno numeri; per l'ASL CN2 non c'è una pagina copiata sulle cure domiciliari.",
+    "Percorso di tutela in Piemonte: prima si prova il CUP regionale (numero verde, portale e app «CUP Piemonte», farmacie); poi ogni ASL ha la sua istanza. Chi rifiuta la prima data proposta nei tempi perde il diritto. Moduli non accesi: Torino ha 4 ASL (Città di Torino, TO3, TO4, TO5) e Cuneo 2 (CN1, CN2) in una sola voce, e la lettera deve andare all'ASL giusta: serve una domanda in più («In quale zona?») nel codice.",
+    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): CN2 urp@aslcn2.it; CN1 agli URP di Cuneo, Savigliano o Mondovì, per email o con un modulo sul sito (pagina non trovata)."
+   ],
+   "pagine": [
+    {
+     "tipo": "cup",
+     "url": "https://www.aslcn1.it/cosa-fare-per/prenotare-visite/esami"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aslcn1.it/assistenza-territoriale/servizi-territoriali-distrettuali/i-quattro-ambiti-distrettuali"
+    },
+    {
+     "tipo": "home",
+     "url": "https://www.aslcn2.it/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslcn2.it/prenotazioni-e-pagamenti/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslcn2.it/servizi-sul-territorio/distretti/medici-di-continuita-assistenziale/"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.aslcn2.it/liste-di-attesa/tempi-di-attesa-prestazioni-ambulatoriali-giorno-indice/percorsi-di-tutela-disponibili/"
+    }
    ]
   },
   {
@@ -693,7 +801,27 @@
    "last_verified": "2026-10-21",
    "todo": [
     "La pagina della guardia medica dell'ASL Novara dà «Pagina non trovata» (404): il 116117 è preso dalla pagina dell'ASL TO3 che dice che vale in tutto il Piemonte; la pagina dell'ASL AL dice che Novara è stata la prima ad attivarlo.",
-    "In testa al sito c'è «URP 0321-374111», che è il centralino: ho messo come URP il numero dell'Ufficio Relazioni Esterne."
+    "In testa al sito c'è «URP 0321-374111», che è il centralino: ho messo come URP il numero dell'Ufficio Relazioni Esterne.",
+    "Percorso di tutela in Piemonte: prima si prova il CUP regionale (numero verde, portale e app «CUP Piemonte», farmacie); poi ogni ASL ha la sua istanza. Chi rifiuta la prima data proposta nei tempi perde il diritto. Moduli non accesi: Torino ha 4 ASL (Città di Torino, TO3, TO4, TO5) e Cuneo 2 (CN1, CN2) in una sola voce, e la lettera deve andare all'ASL giusta: serve una domanda in più («In quale zona?») nel codice.",
+    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): email ure@asl.novara.it (Ufficio Relazioni Esterne) con ricetta, documento, tessera e dichiarazione che il CUP non ha dato date in tempo."
+   ],
+   "pagine": [
+    {
+     "tipo": "cup",
+     "url": "https://www.asl.novara.it/it/come-fare-per/prenotare-disdire-visite-esami"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asl.novara.it/it/attivita/centro-unico-prenotazioni-cup-medicina-base-accettazione-prelievi"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asl.novara.it/it/attivita/servizio-continuita-assistenziale-ex-guardia-medica"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.asl.novara.it/it/come-fare-per/percorso-tutela-cittadini-assistiti-dallasl-novara-nel-rispetto-tempi-attesa-per-prestazioni"
+    }
    ]
   },
   {
@@ -1170,7 +1298,195 @@
     "CUP regionale: esiste «CUP Piemonte», numero verde 800 000 500 (gratuito da fisso e cellulare), tutti i giorni 8–20, per prenotare, spostare e disdire visite ed esami di tutte le ASL e aziende ospedaliere; lo citano la pagina della Regione (servizi.regione.piemonte.it) e tutte le ASL. Le ASL non hanno più un loro numero di prenotazione generale: restano solo numeri per sportelli o casi particolari.",
     "ASL TO5: i quattro numeri (Chieri, Carmagnola, Moncalieri, Nichelino) sono in testa al sito senza la parola «centralino»; la pagina sulle cure domiciliari è del 2021 e non ha numeri; il PUA non ha numeri nelle copie.",
     "ASL TO4: nelle copie non c'è un numero unico dell'URP, solo i punti di ascolto nelle sedi; i tre numeri di Chivasso/Ciriè/Ivrea sono nella sezione «Contatti» del sito, probabilmente i centralini.",
-    "ASL Città di Torino: la pagina PUA non ha numeri; cure domiciliari copiate solo per la zona Nord Est (Circoscrizione 6)."
+    "ASL Città di Torino: la pagina PUA non ha numeri; cure domiciliari copiate solo per la zona Nord Est (Circoscrizione 6).",
+    "Percorso di tutela in Piemonte: prima si prova il CUP regionale (numero verde, portale e app «CUP Piemonte», farmacie); poi ogni ASL ha la sua istanza. Chi rifiuta la prima data proposta nei tempi perde il diritto. Moduli non accesi: Torino ha 4 ASL (Città di Torino, TO3, TO4, TO5) e Cuneo 2 (CN1, CN2) in una sola voce, e la lettera deve andare all'ASL giusta: serve una domanda in più («In quale zona?») nel codice.",
+    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): Città di Torino tempiattesa@aslcittaditorino.it (o URP con l'«Allegato 1»), TO3 tempiattesa@aslto3.piemonte.it con modulo, TO4 tempiattesa@aslto4.piemonte.it, TO5 tempidiattesa@aslto5.piemonte.it. Cartelle cliniche: TO5 cartellecliniche@aslto5.piemonte.it o PEC protocollo@cert.aslto5.piemonte.it; TO4 a qualunque Direzione medica di presidio; Città di Torino dice che la copia non è gratis (da confrontare con la prima copia gratuita, regola nazionale). Scelta del medico: servizio regionale «Il mio medico» su Salute Piemonte (SPID, CIE, CNS) o sportello del distretto."
+   ],
+   "pagine": [
+    {
+     "tipo": "regione",
+     "url": "https://www.salutepiemonte.it/servizi"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.salutepiemonte.it/servizi/prenotazioni-visite-ed-esami?nid=14"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.salutepiemonte.it/assistenza/prenotazione-visite-ed-esami?nid=81&servizio=14&tipo=sezione"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.salutepiemonte.it/servizi/ritiro-e-consultazione-documenti?nid=416"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.salutepiemonte.it/cms/parole-chiave/fascicolo-sanitario-elettronico"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.salutepiemonte.it/cms/node/362"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.salutepiemonte.it/servizi/gestione-consensi?nid=40"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.piemonte.it/web/temi/sanita/strumenti-operativi/fascicolo-sanitario-elettronico-20"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.piemonte.it/governo/bollettino/abbonati/2025/03/attach/dda1410000001_11200.pdf"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.piemonte.it/web/temi/sanita/accesso-ai-servizi-sanitari/lasl-to3-rinnova-lassistenza-medica-turistica-nelle-alte-valli-susa-chisone"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.piemonte.it/web/amministrazione/regione-utile/ufficio-relazioni-pubblico/sportello-per-cittadino-urp-torino"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aslcittaditorino.it/come-fare-per/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslcittaditorino.it/come-fare-per/prenotare-una-visita/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslcittaditorino.it/strutture/centri-unificati-prenotazione-cup/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslcittaditorino.it/strutture/continuita-assistenziale-distretto-nord-ovest/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aslcittaditorino.it/come-fare-per/richiedere-una-valutazione-geriatrica-uvg/"
+    },
+    {
+     "tipo": "home",
+     "url": "https://www.aslto3.piemonte.it/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslto3.piemonte.it/servizi/prenotazioni/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslto3.piemonte.it/strutture/cup-centri-unici-di-prenotazione/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aslto3.piemonte.it/servizi/medico-di-famiglia-pediatra/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aslto4.piemonte.it/prelievi-domiciliari"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslto5.piemonte.it/it/servizio/prenotazioni-visite-esami"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslto5.piemonte.it/it/come-fare-per/prenotare-disdire-visita"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslto5.piemonte.it/it/area-tematica/emergenza-urgenza"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aslto5.piemonte.it/it/articoli/numeri-utili-ministero-regione-piemonte"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://progetti.aslto5.piemonte.it/l-azienda-sanitaria/distretti/distretto-di-moncalieri/assistenza-domiciliare-integrata.html"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aslto5.piemonte.it/it/area-tematica/cure-palliative"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aslto5.piemonte.it/it/distretti/case-comunita"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.aslcittaditorino.it/tempi-di-attesa-prestazioni-specialistiche/"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.aslcittaditorino.it/tempi-di-attesa/"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.aslto3.piemonte.it/servizi/tempi-di-attesa/"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.aslto4.piemonte.it/percorso-di-tutela-ai-sensi-dellarticolo-3-del-decreto-legislativo-124-del-1998"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.aslto5.piemonte.it/index.php/it/trasparenza/percorso-tutela-cittadino-nellambito-rispetto-tempi-attesa-per-prestazioni-specialistiche-art3-dlgs"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.aslto5.piemonte.it/index.php/it/trasparenza/liste-attesa"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.aslcittaditorino.it/richiedere-il-rilascio-della-documentazione-sanitaria/"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.aslto4.piemonte.it/richiesta-di-copia-della-cartella-clinica-o-di-altra-documentazione-sanitaria-referti-verbali-di"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.aslto5.piemonte.it/it/come-fare-per/richiedere-copia-documentazione-sanitaria-certificato-ricovero"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.aslto3.piemonte.it/servizi/assistenza-protesica-e-integrativa/"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.aslto4.piemonte.it/fornitura-di-presidi-e-ausili-compreso-materiale-stomie"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.aslto5.piemonte.it/it/attivita/assistenza-protesica-integrativa"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.aslto4.piemonte.it/cure-palliative"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.aslto5.piemonte.it/it/struttura/ssvd-unita-cure-palliative"
+    },
+    {
+     "tipo": "casa",
+     "url": "https://www.aslto5.piemonte.it/it/attivita/cure-domiciliari"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.salutepiemonte.it/servizi/il-mio-medico?nid=75"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.regione.piemonte.it/web/temi/sanita/accesso-ai-servizi-sanitari/medico-famiglia-pediatra-libera-scelta"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.salutepiemonte.it/assistenza/il-mio-medico?nid=86&servizio=75&tipo=sezione"
+    }
    ]
   },
   {
@@ -1217,9 +1533,45 @@
    ],
    "last_verified": "2026-10-21",
    "todo": [
-    "Il sito dell'ASL VCO (aslvco.it) ha risposto «403 vietato» a tutte le pagine: mancano centralino, URP, cure domiciliari e la pagina sul trasferimento della guardia medica di Verbania. Da ricopiare."
+    "Il sito dell'ASL VCO (aslvco.it) ha risposto «403 vietato» a tutte le pagine: mancano centralino, URP, cure domiciliari e la pagina sul trasferimento della guardia medica di Verbania. Da ricopiare.",
+    "Percorso di tutela in Piemonte: prima si prova il CUP regionale (numero verde, portale e app «CUP Piemonte», farmacie); poi ogni ASL ha la sua istanza. Chi rifiuta la prima data proposta nei tempi perde il diritto. Moduli non accesi: Torino ha 4 ASL (Città di Torino, TO3, TO4, TO5) e Cuneo 2 (CN1, CN2) in una sola voce, e la lettera deve andare all'ASL giusta: serve una domanda in più («In quale zona?») nel codice.",
+    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): email urp@aslvco.it, oppure ai CUP firmando una richiesta."
    ],
-   "emails": []
+   "emails": [],
+   "pagine": [
+    {
+     "tipo": "contatti",
+     "url": "https://www.aslvco.it/contatti/"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.aslvco.it/come-fare-per/numeri-utili/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aslvco.it/come-fare-per/prenotare-e-pagare-esami/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aslvco.it/trasferimento-postazione-continuita-assistenziale-di-verbania/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aslvco.it/strutture-territoriali-archive/soc-struttura-territoriale/assistenza-primaria-domiciliare-e-penitenziaria/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aslvco.it/come-fare-per/cure-territoriali/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aslvco.it/casa-della-salute/"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.aslvco.it/documenti/tempi-di-attesa/percorsi-di-tutela-per-il-rispetto-tempi-di-attesa/"
+    }
+   ]
   },
   {
    "id": "vercelli",
@@ -1344,7 +1696,31 @@
    "last_verified": "2026-10-21",
    "todo": [
     "La pagina «Richiedere assistenza domiciliare» non ha numeri: manca un numero per le cure domiciliari.",
-    "Il numero URP 0163 426410 è elencato senza dire la sede: probabilmente Borgosesia (prefisso 0163)."
+    "Il numero URP 0163 426410 è elencato senza dire la sede: probabilmente Borgosesia (prefisso 0163).",
+    "Percorso di tutela in Piemonte: prima si prova il CUP regionale (numero verde, portale e app «CUP Piemonte», farmacie); poi ogni ASL ha la sua istanza. Chi rifiuta la prima data proposta nei tempi perde il diritto. Moduli non accesi: Torino ha 4 ASL (Città di Torino, TO3, TO4, TO5) e Cuneo 2 (CN1, CN2) in una sola voce, e la lettera deve andare all'ASL giusta: serve una domanda in più («In quale zona?») nel codice.",
+    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): email urp@aslvc.piemonte.it, PEC, raccomandata o sportello URP, con il modulo «Richiesta percorso tutela». Cartelle cliniche: cartelle.cliniche.vc@aslvc.piemonte.it."
+   ],
+   "pagine": [
+    {
+     "tipo": "guardia",
+     "url": "https://aslvc.piemonte.it/casa-della-comunita-vercelli-guardia-medica-pronto-soccorso/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://aslvc.piemonte.it/come-fare-per/accedere-al-percorso-di-tutela/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://aslvc.piemonte.it/come-fare-per/"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://aslvc.piemonte.it/come-fare-per/richiedere-copia-della-cartella-clinica-e-certificato-cause-di-morte/"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://aslvc.piemonte.it/organizzazione/direzione-sanitaria/sc-distretto/ssdu-cure-palliative-e-hospice/"
+    }
    ]
   }
  ]

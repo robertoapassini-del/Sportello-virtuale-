@@ -1,7 +1,33 @@
 {
  "region": "Toscana",
  "model": "Aziende USL",
- "_note": "Numeri delle 3 aziende USL della Toscana per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili. In Toscana la guardia medica è il 116117 in tutta la regione (dal 2024).",
+ "local_name": "percorso di tutela",
+ "booking_deadline_days": null,
+ "no_class_rule": "da verificare",
+ "regional_channel": {
+  "portal_url": "https://prenota.sanita.toscana.it",
+  "notes": "Puoi prenotare online su prenota.sanita.toscana.it o con le app Toscana Salute e Open Toscana. Puoi anche chiamare il CUP della tua azienda o andare allo sportello CUP o in alcune farmacie."
+ },
+ "regole_fonti": {
+  "local_name": {
+   "url": "https://www.regione.toscana.it/prenotare-visite-ed-esami",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "nota": "«Per le prestazioni di primo accesso non garantite nei tempi massimi … l'Azienda attiva un percorso di tutela»."
+  },
+  "no_class_rule": {
+   "url": "https://www.uslcentro.toscana.it/diagnosi-e-cura/la-prenotazione-di-visite-e-esami/prenotare-un-esame-o-visita/liste-di-attesa",
+   "verified": "2026-10-21",
+   "proof": "pagina",
+   "nota": "Solo l'USL Toscana Centro lo scrive: senza codice di priorità valgono i tempi della classe D. La pagina della Regione e le copie delle altre due USL non lo dicono."
+  },
+  "regional_channel": {
+   "url": "https://www.regione.toscana.it/prenotare-visite-ed-esami",
+   "verified": "2026-10-21",
+   "proof": "pagina"
+  }
+ },
+ "_note": "Numeri delle 3 aziende USL della Toscana per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono a Numeri utili; le sedi INPS (inps.json) a Invalidità. Gli altri moduli aspettano le pagine in «pagine» (todo). In Toscana la guardia medica è il 116117 in tutta la regione (dal 2024).",
  "asl": [
   {
    "id": "arezzo",
@@ -115,9 +141,48 @@
    "last_verified": "2026-10-21",
    "todo": [
     "La pagina dei PUA elenca molti sportelli comunali per zona: qui c'è solo quello del capoluogo; gli altri sono nella pagina «Punti Unici di Accesso».",
-    "Email dell'URP nascoste nella copia della pagina (protezione anti-spam)."
+    "Email dell'URP nascoste nella copia della pagina (protezione anti-spam).",
+    "Moduli non ancora accesi (22/10/2026): liste d'attesa (come si chiede il percorso di tutela e a quale indirizzo: le email dell'URP sono nascoste nelle copie), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
    ],
-   "emails": []
+   "emails": [],
+   "pagine": [
+    {
+     "tipo": "tutela",
+     "url": "https://www.uslsudest.toscana.it/tempi-di-attesa"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.uslsudest.toscana.it/attivita-di-tutela"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.uslsudest.toscana.it/percorsi-assistenziali/cure-palliative"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.uslsudest.toscana.it/come-fare-per/scegliere-il-medico-o-il-pediatra"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.uslsudest.toscana.it/cosa-fare-per/richiedere-copia-della-cartella-clinica/ambito-aretino"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.uslsudest.toscana.it/servizi-e-strutture/hospice/provincia-di-arezzo"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.uslsudest.toscana.it/come-fare-per/protesi-e-ausili/provincia-di-arezzo"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.regione.toscana.it/scegliere-il-medico-di-base"
+    },
+    {
+     "tipo": "inps-riforma",
+     "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html"
+    }
+   ]
   },
   {
    "id": "firenze",
@@ -126,7 +191,8 @@
    "site_url": "https://www.uslcentro.toscana.it/",
    "official_domains": [
     "uslcentro.toscana.it",
-    "regione.toscana.it"
+    "regione.toscana.it",
+    "aou-careggi.toscana.it"
    ],
    "guardia_medica_url": "https://www.uslcentro.toscana.it/guardia-medica",
    "pua_url": "https://www.uslcentro.toscana.it/dipartimento-servizi-sociali/accesso-al-servizio-punti-unici-di-accesso-e-segretariato-sociale/operatore-del-punto-insieme",
@@ -226,9 +292,53 @@
     "Le pagine dell'Azienda non dicono un numero per il Punto Unico di Accesso (PUA) di questa provincia: il PUA si chiama «Punto Insieme» e si trova nelle sedi dei distretti.",
     "La pagina «Guardia Medica (sedi territoriali)» elenca solo i nomi delle zone, senza numeri: si usa il 116117.",
     "Email e PEC dell'URP sono nascoste nella copia della pagina (protezione anti-spam): da copiare a mano dal sito.",
-    "Il numero del segretariato sociale per sette Comuni viene da una notizia in prima pagina del sito: controllare che resti valido."
+    "Il numero del segretariato sociale per sette Comuni viene da una notizia in prima pagina del sito: controllare che resti valido.",
+    "Percorso di tutela (copia del 21/10/2026 della pagina «Tempi di attesa e Percorso di Tutela»): se non c'è posto il CUP mette in lista d'attesa e richiama; il percorso di tutela si chiede all'URP aziendale (email e PEC nascoste nella copia); se l'Azienda non lo attiva, si può chiamare il 116117. Senza codice di priorità valgono i tempi della classe D.",
+    "Moduli non ancora accesi (22/10/2026): liste d'attesa (come si chiede il percorso di tutela e a quale indirizzo: le email dell'URP sono nascoste nelle copie), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
    ],
-   "emails": []
+   "emails": [],
+   "pagine": [
+    {
+     "tipo": "tutela",
+     "url": "https://www.uslcentro.toscana.it/diagnosi-e-cura/la-prenotazione-di-visite-e-esami/prenotare-un-esame-o-visita/liste-di-attesa"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.uslcentro.toscana.it/guida-ai-servizi/servizi-amministrativi/cartelle-cliniche-sportelli-amministrativi-ospedalieri"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.uslcentro.toscana.it/index.php/riabilitazione/627-ausili-e-protesi/11110-modalita-di-accesso-e-contatti-ausili-e-protesi"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.uslcentro.toscana.it/medico-di-famiglia-e-pediatra-scelta/scelta-e-cambio-del-medico-di-famiglia-o-del-pediatra"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.uslcentro.toscana.it/percorsi-di-cura-e-assistenza/cure-palliative/orari-e-sedi-cure-palliative/zona-firenze-fiorentina-nord-ovest-fiorentina-sud-est-e-mugello-cure-palliative"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.uslcentro.toscana.it/percorsi-di-cura-e-assistenza/cure-palliative/orari-e-sedi-cure-palliative/zona-empolese-valdarno-inferiore-cure-palliative"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.uslcentro.toscana.it/riabilitazione/ausili-e-protesi/zona-fiorentina"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.uslcentro.toscana.it/altri-servizi/servizi-amministrativi/cartelle-cliniche-sportelli-amministrativi-ospedalieri/richiedere-la-cartella-clinica-ospedali-empolese-valdarno-inferiore"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.aou-careggi.toscana.it/internet/azienda/chi-siamo/direzione-amministrativa/area-amministrativa/attivita-amministrativa-a-supporto-delle-attivita-sanitarie/rilascio-documentazione-sanitaria/"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.regione.toscana.it/scegliere-il-medico-di-base"
+    }
+   ]
   },
   {
    "id": "grosseto",
@@ -332,9 +442,41 @@
    "todo": [
     "La pagina dei PUA elenca molti sportelli comunali per zona: qui c'è solo quello del capoluogo; gli altri sono nella pagina «Punti Unici di Accesso».",
     "Email dell'URP nascoste nella copia della pagina (protezione anti-spam).",
-    "L'URP di Grosseto sta traslocando da Villa Pizzetti (viale Cimabue 109) a via Belgio 17: chiuso al pubblico dal 12 al 19 ottobre 2026; indirizzo non messo finché non è chiaro."
+    "L'URP di Grosseto sta traslocando da Villa Pizzetti (viale Cimabue 109) a via Belgio 17: chiuso al pubblico dal 12 al 19 ottobre 2026; indirizzo non messo finché non è chiaro.",
+    "Moduli non ancora accesi (22/10/2026): liste d'attesa (come si chiede il percorso di tutela e a quale indirizzo: le email dell'URP sono nascoste nelle copie), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione.",
+    "Cartella clinica: pagina dell'ambito di Grosseto non trovata (c'è solo quella dell'ambito aretino)."
    ],
-   "emails": []
+   "emails": [],
+   "pagine": [
+    {
+     "tipo": "tutela",
+     "url": "https://www.uslsudest.toscana.it/tempi-di-attesa"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.uslsudest.toscana.it/attivita-di-tutela"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.uslsudest.toscana.it/percorsi-assistenziali/cure-palliative"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.uslsudest.toscana.it/come-fare-per/scegliere-il-medico-o-il-pediatra"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.uslsudest.toscana.it/servizi-e-strutture/hospice/provincia-di-grosseto"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.uslsudest.toscana.it/come-fare-per/protesi-e-ausili/provincia-di-grosseto"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.regione.toscana.it/scegliere-il-medico-di-base"
+    }
+   ]
   },
   {
    "id": "livorno",
@@ -459,9 +601,45 @@
    "todo": [
     "Nessun numero per il Punto Unico di Accesso (PUA) o le cure domiciliari nelle pagine copiate dell'Azienda USL Toscana Nord Ovest.",
     "I numeri della guardia medica turistica (estate) non sono stati messi: valgono solo in alcuni mesi.",
-    "Le email dell'URP per zona sono nascoste nella copia della pagina (protezione anti-spam)."
+    "Le email dell'URP per zona sono nascoste nella copia della pagina (protezione anti-spam).",
+    "Ausili: la copia del 21/10/2026 della pagina «Servizi online» ha il «Modulo richiesta ausili e protesi» online; il CUP 0585 498498 dice a che punto è la pratica. Per la lettera manca l'indirizzo dell'ufficio protesi di zona.",
+    "Moduli non ancora accesi (22/10/2026): liste d'attesa (come si chiede il percorso di tutela e a quale indirizzo: le email dell'URP sono nascoste nelle copie), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
    ],
-   "emails": []
+   "emails": [],
+   "pagine": [
+    {
+     "tipo": "tutela",
+     "url": "https://www.uslnordovest.toscana.it/amministrazione-trasparente-2/servizi-erogati/liste-d-attesa/criteri-di-formazione-liste-tempi-di-attesa"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.uslnordovest.toscana.it/come-fare-per/richiedere-la-cartella-clinica"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.uslnordovest.toscana.it/servizi-e-strutture/9871-le-cure-palliative"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.uslnordovest.toscana.it/come-fare-per/richiedere-un-ausilio-riabilitativo"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.uslnordovest.toscana.it/moduli/modulistica-protesica"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.uslnordovest.toscana.it/comunicati-stampa/asl-come-fare-la-scelta-o-il-cambio-del-medico-di-famiglia"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.uslnordovest.toscana.it/index.php?option=com_content&view=article&id=11691&catid=2"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.regione.toscana.it/scegliere-il-medico-di-base"
+    }
+   ]
   },
   {
    "id": "lucca",
@@ -586,9 +764,41 @@
    "todo": [
     "Nessun numero per il Punto Unico di Accesso (PUA) o le cure domiciliari nelle pagine copiate dell'Azienda USL Toscana Nord Ovest.",
     "I numeri della guardia medica turistica (estate) non sono stati messi: valgono solo in alcuni mesi.",
-    "Le email dell'URP per zona sono nascoste nella copia della pagina (protezione anti-spam)."
+    "Le email dell'URP per zona sono nascoste nella copia della pagina (protezione anti-spam).",
+    "Ausili: la copia del 21/10/2026 della pagina «Servizi online» ha il «Modulo richiesta ausili e protesi» online; il CUP 0585 498498 dice a che punto è la pratica. Per la lettera manca l'indirizzo dell'ufficio protesi di zona.",
+    "Moduli non ancora accesi (22/10/2026): liste d'attesa (come si chiede il percorso di tutela e a quale indirizzo: le email dell'URP sono nascoste nelle copie), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
    ],
-   "emails": []
+   "emails": [],
+   "pagine": [
+    {
+     "tipo": "tutela",
+     "url": "https://www.uslnordovest.toscana.it/amministrazione-trasparente-2/servizi-erogati/liste-d-attesa/criteri-di-formazione-liste-tempi-di-attesa"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.uslnordovest.toscana.it/come-fare-per/richiedere-la-cartella-clinica"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.uslnordovest.toscana.it/servizi-e-strutture/9871-le-cure-palliative"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.uslnordovest.toscana.it/come-fare-per/richiedere-un-ausilio-riabilitativo"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.uslnordovest.toscana.it/moduli/modulistica-protesica"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.uslnordovest.toscana.it/comunicati-stampa/asl-come-fare-la-scelta-o-il-cambio-del-medico-di-famiglia"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.regione.toscana.it/scegliere-il-medico-di-base"
+    }
+   ]
   },
   {
    "id": "massa-carrara",
@@ -706,9 +916,45 @@
    "todo": [
     "Nessun numero per il Punto Unico di Accesso (PUA) o le cure domiciliari nelle pagine copiate dell'Azienda USL Toscana Nord Ovest.",
     "I numeri della guardia medica turistica (estate) non sono stati messi: valgono solo in alcuni mesi.",
-    "Le email dell'URP per zona sono nascoste nella copia della pagina (protezione anti-spam)."
+    "Le email dell'URP per zona sono nascoste nella copia della pagina (protezione anti-spam).",
+    "Ausili: la copia del 21/10/2026 della pagina «Servizi online» ha il «Modulo richiesta ausili e protesi» online; il CUP 0585 498498 dice a che punto è la pratica. Per la lettera manca l'indirizzo dell'ufficio protesi di zona.",
+    "Moduli non ancora accesi (22/10/2026): liste d'attesa (come si chiede il percorso di tutela e a quale indirizzo: le email dell'URP sono nascoste nelle copie), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
    ],
-   "emails": []
+   "emails": [],
+   "pagine": [
+    {
+     "tipo": "tutela",
+     "url": "https://www.uslnordovest.toscana.it/amministrazione-trasparente-2/servizi-erogati/liste-d-attesa/criteri-di-formazione-liste-tempi-di-attesa"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.uslnordovest.toscana.it/come-fare-per/richiedere-la-cartella-clinica"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.uslnordovest.toscana.it/servizi-e-strutture/9871-le-cure-palliative"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.uslnordovest.toscana.it/come-fare-per/richiedere-un-ausilio-riabilitativo"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.uslnordovest.toscana.it/moduli/modulistica-protesica"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.uslnordovest.toscana.it/comunicati-stampa/asl-come-fare-la-scelta-o-il-cambio-del-medico-di-famiglia"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.uslnordovest.toscana.it/ospedale-di-massa/cartelle-cliniche-ospedale-di-massa"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.regione.toscana.it/scegliere-il-medico-di-base"
+    }
+   ]
   },
   {
    "id": "pisa",
@@ -717,7 +963,8 @@
    "site_url": "https://www.uslnordovest.toscana.it/",
    "official_domains": [
     "uslnordovest.toscana.it",
-    "regione.toscana.it"
+    "regione.toscana.it",
+    "ao-pisa.toscana.it"
    ],
    "guardia_medica_url": "https://www.uslnordovest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica",
    "pua_url": "https://www.uslnordovest.toscana.it/come-fare-per/accedere-ai-servizi-per-gli-anziani-non-autosufficienti",
@@ -820,9 +1067,49 @@
     "Nessun numero per il Punto Unico di Accesso (PUA) o le cure domiciliari nelle pagine copiate dell'Azienda USL Toscana Nord Ovest.",
     "I numeri della guardia medica turistica (estate) non sono stati messi: valgono solo in alcuni mesi.",
     "Le email dell'URP per zona sono nascoste nella copia della pagina (protezione anti-spam).",
-    "Gli ospedali della città di Pisa sono dell'Azienda Ospedaliero Universitaria Pisana, non dell'USL: nessun loro centralino nelle pagine copiate (il CUP dell'AOU Pisana è nella pagina regionale «CUP telefonico», scritto 05099599 5: numero poco chiaro, non messo)."
+    "Gli ospedali della città di Pisa sono dell'Azienda Ospedaliero Universitaria Pisana, non dell'USL: nessun loro centralino nelle pagine copiate (il CUP dell'AOU Pisana è nella pagina regionale «CUP telefonico», scritto 05099599 5: numero poco chiaro, non messo).",
+    "Ausili: la copia del 21/10/2026 della pagina «Servizi online» ha il «Modulo richiesta ausili e protesi» online; il CUP 0585 498498 dice a che punto è la pratica. Per la lettera manca l'indirizzo dell'ufficio protesi di zona.",
+    "Moduli non ancora accesi (22/10/2026): liste d'attesa (come si chiede il percorso di tutela e a quale indirizzo: le email dell'URP sono nascoste nelle copie), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
    ],
-   "emails": []
+   "emails": [],
+   "pagine": [
+    {
+     "tipo": "tutela",
+     "url": "https://www.uslnordovest.toscana.it/amministrazione-trasparente-2/servizi-erogati/liste-d-attesa/criteri-di-formazione-liste-tempi-di-attesa"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.uslnordovest.toscana.it/come-fare-per/richiedere-la-cartella-clinica"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.uslnordovest.toscana.it/servizi-e-strutture/9871-le-cure-palliative"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.uslnordovest.toscana.it/come-fare-per/richiedere-un-ausilio-riabilitativo"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.uslnordovest.toscana.it/moduli/modulistica-protesica"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.uslnordovest.toscana.it/comunicati-stampa/asl-come-fare-la-scelta-o-il-cambio-del-medico-di-famiglia"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.uslnordovest.toscana.it/servizi-e-strutture/cure-palliative/zona-pisana-strutture-per-cure-palliative"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.ao-pisa.toscana.it/index.php?option=com_content&view=article&id=425%3Arichiesta-cartella-clinica&catid=102&Itemid=241"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.regione.toscana.it/scegliere-il-medico-di-base"
+    }
+   ]
   },
   {
    "id": "pistoia",
@@ -921,9 +1208,41 @@
    "todo": [
     "Le pagine dell'Azienda non dicono un numero per il Punto Unico di Accesso (PUA) di questa provincia: il PUA si chiama «Punto Insieme» e si trova nelle sedi dei distretti.",
     "La pagina «Guardia Medica (sedi territoriali)» elenca solo i nomi delle zone, senza numeri: si usa il 116117.",
-    "Email e PEC dell'URP sono nascoste nella copia della pagina (protezione anti-spam): da copiare a mano dal sito."
+    "Email e PEC dell'URP sono nascoste nella copia della pagina (protezione anti-spam): da copiare a mano dal sito.",
+    "Percorso di tutela (copia del 21/10/2026 della pagina «Tempi di attesa e Percorso di Tutela»): se non c'è posto il CUP mette in lista d'attesa e richiama; il percorso di tutela si chiede all'URP aziendale (email e PEC nascoste nella copia); se l'Azienda non lo attiva, si può chiamare il 116117. Senza codice di priorità valgono i tempi della classe D.",
+    "Moduli non ancora accesi (22/10/2026): liste d'attesa (come si chiede il percorso di tutela e a quale indirizzo: le email dell'URP sono nascoste nelle copie), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
    ],
-   "emails": []
+   "emails": [],
+   "pagine": [
+    {
+     "tipo": "tutela",
+     "url": "https://www.uslcentro.toscana.it/diagnosi-e-cura/la-prenotazione-di-visite-e-esami/prenotare-un-esame-o-visita/liste-di-attesa"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.uslcentro.toscana.it/guida-ai-servizi/servizi-amministrativi/cartelle-cliniche-sportelli-amministrativi-ospedalieri"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.uslcentro.toscana.it/index.php/riabilitazione/627-ausili-e-protesi/11110-modalita-di-accesso-e-contatti-ausili-e-protesi"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.uslcentro.toscana.it/medico-di-famiglia-e-pediatra-scelta/scelta-e-cambio-del-medico-di-famiglia-o-del-pediatra"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.uslcentro.toscana.it/index.php/percorsi-assistenziali/percorso-oncologico/2708-cure-palliative/orari-e-sedi-cure-palliative/50045-zona-pistoiese-e-val-di-nievole-cure-palliative"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.uslcentro.toscana.it/altri-servizi/servizi-amministrativi/cartelle-cliniche-sportelli-amministrativi-ospedalieri/richiedere-la-cartella-clinica-ospedale-san-jacopo-di-pistoia"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.regione.toscana.it/scegliere-il-medico-di-base"
+    }
+   ]
   },
   {
    "id": "prato",
@@ -1022,9 +1341,41 @@
    "todo": [
     "Le pagine dell'Azienda non dicono un numero per il Punto Unico di Accesso (PUA) di questa provincia: il PUA si chiama «Punto Insieme» e si trova nelle sedi dei distretti.",
     "La pagina «Guardia Medica (sedi territoriali)» elenca solo i nomi delle zone, senza numeri: si usa il 116117.",
-    "Email e PEC dell'URP sono nascoste nella copia della pagina (protezione anti-spam): da copiare a mano dal sito."
+    "Email e PEC dell'URP sono nascoste nella copia della pagina (protezione anti-spam): da copiare a mano dal sito.",
+    "Percorso di tutela (copia del 21/10/2026 della pagina «Tempi di attesa e Percorso di Tutela»): se non c'è posto il CUP mette in lista d'attesa e richiama; il percorso di tutela si chiede all'URP aziendale (email e PEC nascoste nella copia); se l'Azienda non lo attiva, si può chiamare il 116117. Senza codice di priorità valgono i tempi della classe D.",
+    "Moduli non ancora accesi (22/10/2026): liste d'attesa (come si chiede il percorso di tutela e a quale indirizzo: le email dell'URP sono nascoste nelle copie), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
    ],
-   "emails": []
+   "emails": [],
+   "pagine": [
+    {
+     "tipo": "tutela",
+     "url": "https://www.uslcentro.toscana.it/diagnosi-e-cura/la-prenotazione-di-visite-e-esami/prenotare-un-esame-o-visita/liste-di-attesa"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.uslcentro.toscana.it/guida-ai-servizi/servizi-amministrativi/cartelle-cliniche-sportelli-amministrativi-ospedalieri"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.uslcentro.toscana.it/index.php/riabilitazione/627-ausili-e-protesi/11110-modalita-di-accesso-e-contatti-ausili-e-protesi"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.uslcentro.toscana.it/medico-di-famiglia-e-pediatra-scelta/scelta-e-cambio-del-medico-di-famiglia-o-del-pediatra"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.uslcentro.toscana.it/index.php/percorsi-assistenziali/percorso-oncologico/2708-cure-palliative/orari-e-sedi-cure-palliative/50046-zona-pratese-cure-palliative"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.uslcentro.toscana.it/riabilitazione/ausili-e-protesi/zona-pratese"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.regione.toscana.it/scegliere-il-medico-di-base"
+    }
+   ]
   },
   {
    "id": "siena",
@@ -1033,7 +1384,8 @@
    "site_url": "https://www.uslsudest.toscana.it/",
    "official_domains": [
     "uslsudest.toscana.it",
-    "regione.toscana.it"
+    "regione.toscana.it",
+    "ao-siena.toscana.it"
    ],
    "guardia_medica_url": "https://www.uslsudest.toscana.it/servizi-e-strutture/continuita-assistenziale-guardia-medica",
    "pua_url": "https://www.uslsudest.toscana.it/servizi-e-strutture/punti-unici-di-accesso-pua",
@@ -1135,9 +1487,44 @@
    "todo": [
     "La pagina dei PUA elenca molti sportelli comunali per zona: qui c'è solo quello del capoluogo; gli altri sono nella pagina «Punti Unici di Accesso».",
     "Email dell'URP nascoste nella copia della pagina (protezione anti-spam).",
-    "Lo 0577 767676 è anche il CUP dell'Azienda Ospedaliero Universitaria Senese (ospedale Le Scotte), secondo la pagina regionale «CUP telefonico»."
+    "Lo 0577 767676 è anche il CUP dell'Azienda Ospedaliero Universitaria Senese (ospedale Le Scotte), secondo la pagina regionale «CUP telefonico».",
+    "Moduli non ancora accesi (22/10/2026): liste d'attesa (come si chiede il percorso di tutela e a quale indirizzo: le email dell'URP sono nascoste nelle copie), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
    ],
-   "emails": []
+   "emails": [],
+   "pagine": [
+    {
+     "tipo": "tutela",
+     "url": "https://www.uslsudest.toscana.it/tempi-di-attesa"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.uslsudest.toscana.it/attivita-di-tutela"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.uslsudest.toscana.it/percorsi-assistenziali/cure-palliative"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.uslsudest.toscana.it/come-fare-per/scegliere-il-medico-o-il-pediatra"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.uslsudest.toscana.it/guida-ai-servizi/hospice/provincia-di-siena"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.uslsudest.toscana.it/come-fare-per/protesi-e-ausili/provincia-di-siena"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.ao-siena.toscana.it/modulistica-e-informazioni/ricevere-copia-della-cartella-clinica/"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.regione.toscana.it/scegliere-il-medico-di-base"
+    }
+   ]
   }
  ]
 }
