@@ -82,7 +82,8 @@ const CAMPI_MODULO = {
     ...(a.letter_mode && a.letter_mode !== 'portal' && !a.send_to && !a.pec ? ['send_to o pec'] : []),
   ],
   'cartella-clinica': (a) => ['emails', 'phones', 'sources'].filter((k) => !Array.isArray(a[k])).concat(a.pec || (a.emails || []).length ? [] : ['pec o emails']),
-  'medico-famiglia': (a) => [...(a.scelta_medico && a.scelta_medico.how ? [] : ['scelta_medico.how']), ...((a.emails || []).length || a.pec ? [] : ['emails o pec'])],
+  // Medico: senza email né PEC la lettera si stampa e si consegna allo sportello o all'URP (js/medico.js, «Stampa la lettera e consegnala»).
+  'medico-famiglia': (a) => (a.scelta_medico && a.scelta_medico.how ? [] : ['scelta_medico.how']),
   'assistenza-domiciliare': (a) => ((a.emails || []).length || a.pec ? [] : ['emails o pec']),
   'cure-palliative': (a) => ((a.emails || []).length || a.pec ? [] : ['emails o pec']),
   ausili: (a) => (a.pec ? [] : ['pec']),
