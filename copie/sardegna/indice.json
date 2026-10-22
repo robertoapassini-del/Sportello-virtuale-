@@ -1,6 +1,6 @@
 {
  "regione": "sardegna",
- "aggiornato": "2026-10-22T11:46:13.279Z",
+ "aggiornato": "2026-10-22T18:03:21.169Z",
  "pagine": [
   {
    "asl": "cagliari",
@@ -36,6 +36,17 @@
    "sha": "4ec3cf0e221c8d93baeeafee7f96d5c5e92f6885952bc690c151d97085ccdd30",
    "caratteri": 7238,
    "email_nascoste": 11,
+   "cambiata": false
+  },
+  {
+   "asl": "cagliari",
+   "url": "https://www.sardegnasalute.it/sceltamedico/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "cagliari/a8a8ccd76320.txt",
+   "titolo": "Sardegna Salute - Scelta e revoca del medico",
+   "sha": "2443e17836290666b01537c5cbbe55807b0dd7f6cb9b37fe8494781cccb331e2",
+   "caratteri": 3616,
    "cambiata": false
   },
   {
@@ -111,17 +122,6 @@
    "cambiata": false
   },
   {
-   "asl": "cagliari",
-   "url": "https://www.sardegnasalute.it/sceltamedico/",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "cagliari/a8a8ccd76320.txt",
-   "titolo": "Sardegna Salute - Scelta e revoca del medico",
-   "sha": "2443e17836290666b01537c5cbbe55807b0dd7f6cb9b37fe8494781cccb331e2",
-   "caratteri": 3616,
-   "cambiata": false
-  },
-  {
    "asl": "gallura",
    "url": "https://www.aslgallura.it/",
    "controllata": "2026-10-22",
@@ -154,6 +154,17 @@
    "sha": "5615e91c59d8a20138ae7bbb81faa937b6fe755b02ff2e68127dc7fc46c57924",
    "caratteri": 4146,
    "email_nascoste": 5,
+   "cambiata": false
+  },
+  {
+   "asl": "gallura",
+   "url": "https://www.sardegnasalute.it/sceltamedico/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "gallura/a8a8ccd76320.txt",
+   "titolo": "Sardegna Salute - Scelta e revoca del medico",
+   "sha": "2443e17836290666b01537c5cbbe55807b0dd7f6cb9b37fe8494781cccb331e2",
+   "caratteri": 3616,
    "cambiata": false
   },
   {
@@ -205,6 +216,18 @@
    "cambiata": false
   },
   {
+   "asl": "gallura",
+   "url": "https://www.aslgallura.it/amministrazione-trasparente/servizi-erogati/liste-di-attesa/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "gallura/eaf1f8eb082e.txt",
+   "titolo": "Liste di attesa - ASL Gallura",
+   "sha": "5afe07a83c9b34b90ab789e1080fba4dd7380c01dcc855a61faad0830cd5a0ae",
+   "caratteri": 4053,
+   "email_nascoste": 1,
+   "cambiata": true
+  },
+  {
    "asl": "medio-campidano",
    "url": "https://www.aslmediocampidano.it/",
    "controllata": "2026-10-22",
@@ -214,7 +237,19 @@
    "sha": "3eef3042f8e3378895e5529a2c6fccafbc18ccae1aeb45bf376d4cbc39926b4c",
    "caratteri": 6853,
    "email_nascoste": 4,
-   "cambiata": true
+   "cambiata": false
+  },
+  {
+   "asl": "medio-campidano",
+   "url": "https://www.aslmediocampidano.it/percorso-di-tutela-accesso-alternativo-a-prestazioni-specialistiche/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "medio-campidano/80ad61abf0cc.txt",
+   "titolo": "Percorso di tutela, accesso alternativo a prestazioni specialistiche - ASL Medio Campidano",
+   "sha": "2d36d894895893a6e6dec9ffc4b5fdf2f57ac990556683a31bf3aeb179480ca3",
+   "caratteri": 8918,
+   "email_nascoste": 9,
+   "cambiata": false
   },
   {
    "asl": "medio-campidano",
@@ -226,6 +261,17 @@
    "sha": "181082639df844b454c5ad8a39adc60fa302702114e22908c05529b649a5ab0c",
    "caratteri": 6702,
    "email_nascoste": 11,
+   "cambiata": false
+  },
+  {
+   "asl": "medio-campidano",
+   "url": "https://www.sardegnasalute.it/sceltamedico/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "medio-campidano/a8a8ccd76320.txt",
+   "titolo": "Sardegna Salute - Scelta e revoca del medico",
+   "sha": "2443e17836290666b01537c5cbbe55807b0dd7f6cb9b37fe8494781cccb331e2",
+   "caratteri": 3616,
    "cambiata": false
   },
   {
@@ -277,27 +323,15 @@
    "cambiata": false
   },
   {
-   "asl": "medio-campidano",
-   "url": "https://www.aslmediocampidano.it/percorso-di-tutela-accesso-alternativo-a-prestazioni-specialistiche/",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "medio-campidano/80ad61abf0cc.txt",
-   "titolo": "Percorso di tutela, accesso alternativo a prestazioni specialistiche - ASL Medio Campidano",
-   "sha": "2d36d894895893a6e6dec9ffc4b5fdf2f57ac990556683a31bf3aeb179480ca3",
-   "caratteri": 8918,
-   "email_nascoste": 9,
-   "cambiata": false
-  },
-  {
    "asl": "nuoro",
    "url": "https://www.asl3nuoro.it/",
    "controllata": "2026-10-22",
    "http": 200,
    "file": "nuoro/581060021d18.txt",
    "titolo": "ASL Nuoro - Home Page",
-   "sha": "7562f242ef3423fdef69fc23ec3cdd8ed190a6974a71d85ab41cb304c01f3b56",
-   "caratteri": 4768,
-   "cambiata": false
+   "sha": "c75c6b4f4ab92a0335f6029ace46955aff118274fd5c999ec206af5ae8ed163c",
+   "caratteri": 4761,
+   "cambiata": true
   },
   {
    "asl": "nuoro",
@@ -333,6 +367,17 @@
    "sha": "713bf1d4ae17fcf48eb8d1cfc955d04c15b2a98d5e85aa8240fc5a338c3c8d61",
    "caratteri": 2945,
    "email_nascoste": 13,
+   "cambiata": false
+  },
+  {
+   "asl": "nuoro",
+   "url": "https://www.sardegnasalute.it/sceltamedico/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "nuoro/a8a8ccd76320.txt",
+   "titolo": "Sardegna Salute - Scelta e revoca del medico",
+   "sha": "2443e17836290666b01537c5cbbe55807b0dd7f6cb9b37fe8494781cccb331e2",
+   "caratteri": 3616,
    "cambiata": false
   },
   {
@@ -390,10 +435,10 @@
    "http": 200,
    "file": "ogliastra/bc22f9e6e85d.txt",
    "titolo": "ASL Ogliastra - Home Page",
-   "sha": "7361f6baf0cae18ea950bf29cefc9026167be7cdf409a7a2f2577c5128f95bd9",
-   "caratteri": 4049,
+   "sha": "50e1c7241bc3ab6eaa7ce674113b2857c95ad21ee8515f4e3bbd3d51548b5340",
+   "caratteri": 4063,
    "email_nascoste": 2,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "ogliastra",
@@ -417,6 +462,17 @@
    "sha": "0aeb1dc76a620b1d85f2d78c39b727d67a8e464d5c3f018283fabceb02892b4e",
    "caratteri": 3874,
    "email_nascoste": 9,
+   "cambiata": false
+  },
+  {
+   "asl": "ogliastra",
+   "url": "https://www.sardegnasalute.it/sceltamedico/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ogliastra/a8a8ccd76320.txt",
+   "titolo": "Sardegna Salute - Scelta e revoca del medico",
+   "sha": "2443e17836290666b01537c5cbbe55807b0dd7f6cb9b37fe8494781cccb331e2",
+   "caratteri": 3616,
    "cambiata": false
   },
   {
@@ -453,7 +509,7 @@
    "sha": "c79970633578cc9ee6f6f646583109365861e8d99db36f9f8a66a534b21872e8",
    "caratteri": 7372,
    "email_nascoste": 2,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "oristano",
@@ -477,6 +533,17 @@
    "sha": "c42af17c8fe0e081380b97de5a9c36921c7a09dd50e3fcb86d501b47da298982",
    "caratteri": 2768,
    "email_nascoste": 4,
+   "cambiata": false
+  },
+  {
+   "asl": "oristano",
+   "url": "https://www.sardegnasalute.it/sceltamedico/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "oristano/a8a8ccd76320.txt",
+   "titolo": "Sardegna Salute - Scelta e revoca del medico",
+   "sha": "2443e17836290666b01537c5cbbe55807b0dd7f6cb9b37fe8494781cccb331e2",
+   "caratteri": 3616,
    "cambiata": false
   },
   {
@@ -553,6 +620,17 @@
   },
   {
    "asl": "sassari",
+   "url": "https://www.sardegnasalute.it/sceltamedico/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "sassari/a8a8ccd76320.txt",
+   "titolo": "Sardegna Salute - Scelta e revoca del medico",
+   "sha": "2443e17836290666b01537c5cbbe55807b0dd7f6cb9b37fe8494781cccb331e2",
+   "caratteri": 3616,
+   "cambiata": false
+  },
+  {
+   "asl": "sassari",
    "url": "https://www.asl1sassari.it/azienda/ufficio-relazioni-con-il-pubblico-urp/",
    "controllata": "2026-10-22",
    "http": 200,
@@ -600,6 +678,18 @@
    "cambiata": false
   },
   {
+   "asl": "sassari",
+   "url": "https://www.asl1sassari.it/adi-e-pua-di-alghero-comunicazione-della-asl-di-sassari/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "sassari/75de788b9a12.txt",
+   "titolo": "Adi e Pua di Alghero: comunicazione della Asl di Sassari - ASL Sassari",
+   "sha": "919bb5db1b3e36461d03af2f0b06a1a19dde7d88215f5438371de06841bdb840",
+   "caratteri": 2553,
+   "email_nascoste": 5,
+   "cambiata": true
+  },
+  {
    "asl": "sulcis",
    "url": "https://www.aslsulcis.it/",
    "controllata": "2026-10-22",
@@ -633,6 +723,17 @@
    "sha": "4d69e3a5c32e6157724b830176b5839aa960a0aa6925308e58761fd01a50a7f0",
    "caratteri": 3469,
    "email_nascoste": 3,
+   "cambiata": false
+  },
+  {
+   "asl": "sulcis",
+   "url": "https://www.sardegnasalute.it/sceltamedico/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "sulcis/a8a8ccd76320.txt",
+   "titolo": "Sardegna Salute - Scelta e revoca del medico",
+   "sha": "2443e17836290666b01537c5cbbe55807b0dd7f6cb9b37fe8494781cccb331e2",
+   "caratteri": 3616,
    "cambiata": false
   },
   {
@@ -844,7 +945,7 @@
    "http": 200,
    "file": "regione-sardegna/5dae24b1e42b.txt",
    "titolo": "Aiuto - CupWeb",
-   "sha": "6a60c23b78943d2f2c26ef2f791b19bd2eb275b0784abf709b5f624bc8e1ee4a",
+   "sha": "20e8a1c7e5506a0763bc5763205de98414eb3f8089dbaeb3a5cc55f2857328b7",
    "caratteri": 19024,
    "cambiata": true
   },

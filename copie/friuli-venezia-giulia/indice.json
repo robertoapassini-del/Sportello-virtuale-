@@ -1,6 +1,6 @@
 {
  "regione": "friuli-venezia-giulia",
- "aggiornato": "2026-10-22T11:01:52.191Z",
+ "aggiornato": "2026-10-22T17:18:12.964Z",
  "pagine": [
   {
    "asl": "gorizia",
@@ -23,6 +23,17 @@
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - 116117 Numero Unico Europeo per la Sanità Non Urgente",
    "sha": "67ef71f0e339aaa2100423279b4da2a4b424ee49182fde7d773edddbd3a8e2b8",
    "caratteri": 9226,
+   "cambiata": false
+  },
+  {
+   "asl": "gorizia",
+   "url": "https://asugi.sanita.fvg.it/it/servizi/dist_amm_scelta_revoca_mmg_pls.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "gorizia/d3d2756833ae.txt",
+   "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Scelta / revoca Medico di Medicina Generale/Pediatria di Libera Scelta",
+   "sha": "08ffc05a04fdbc855081adca07df0ff9d3af95371b65cea2c9b495eb6059b1fe",
+   "caratteri": 15851,
    "cambiata": false
   },
   {
@@ -60,20 +71,20 @@
   },
   {
    "asl": "gorizia",
-   "url": "https://asugi.sanita.fvg.it/it/servizi/dist_amm_scelta_revoca_mmg_pls.html",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "gorizia/d3d2756833ae.txt",
-   "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Scelta / revoca Medico di Medicina Generale/Pediatria di Libera Scelta",
-   "sha": "08ffc05a04fdbc855081adca07df0ff9d3af95371b65cea2c9b495eb6059b1fe",
-   "caratteri": 15851,
-   "cambiata": false
-  },
-  {
-   "asl": "gorizia",
    "url": "https://asugi.sanita.fvg.it/it/strutture/direz_sanitaria/dad/area_isontina/go_dist_alto_isontino/pua_ai/",
    "controllata": "2026-10-22",
    "http": 404
+  },
+  {
+   "asl": "gorizia",
+   "url": "https://asugi.sanita.fvg.it/it/amm_trasp_asugi/25_percorso_tutela/index.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "gorizia/a443796563a8.txt",
+   "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Percorso di Tutela - Diritto di Garanzia",
+   "sha": "69189ac3b8724700d11d2259725e031be88628e881808ba12322de4a361a46b9",
+   "caratteri": 10146,
+   "cambiata": true
   },
   {
    "asl": "pordenone",
@@ -83,8 +94,19 @@
    "finale": "https://asfo.sanita.fvg.it/it/",
    "file": "pordenone/d6361f40166d.txt",
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Home",
-   "sha": "bd987ceb1232c85dcba2fbb8f996c91f2e8759556f0527c7ccd3b5779305ac80",
-   "caratteri": 7369,
+   "sha": "ccd9f2fb172fcc7d46a12635649b060937f4319088bdecb50939748841a89516",
+   "caratteri": 7391,
+   "cambiata": true
+  },
+  {
+   "asl": "pordenone",
+   "url": "https://asfo.sanita.fvg.it/it/amministrazione_trasparente/16_servizi_erogati/04_liste_attesa.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "pordenone/de55ffec777e.txt",
+   "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Liste di attesa",
+   "sha": "5e3006dc800778e7f4f1a09ba3502e9d7bf32a135ed847486567ab710e062a52",
+   "caratteri": 10218,
    "cambiata": false
   },
   {
@@ -111,6 +133,17 @@
   },
   {
    "asl": "pordenone",
+   "url": "https://asfo.sanita.fvg.it/it/schede/mmg-pls/cambio_medico_online.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "pordenone/202d046dcf92.txt",
+   "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Servizio on line di scelta e revoca",
+   "sha": "9d9bdd6961e3ac69570eba37742046f0022821a3ad5a18a25972aae02c7f02fc",
+   "caratteri": 5523,
+   "cambiata": false
+  },
+  {
+   "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/it/strutture/direzione_generale/Ufficio-Comunicazione/urp/index.html",
    "controllata": "2026-10-22",
    "http": 200,
@@ -127,9 +160,9 @@
    "http": 200,
    "file": "pordenone/1c9a29335f63.txt",
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - 116117 Numero Unico Europeo per la Sanità NON Urgente",
-   "sha": "1326aa1fed9116b45542da351982ac363ca9cb3404e8846deadb0037a01241f9",
-   "caratteri": 7716,
-   "cambiata": false
+   "sha": "72a86e7fed08d92e9e414b33911b9bcc0ed9532b78c9dd58cde5951bc9e837e9",
+   "caratteri": 7775,
+   "cambiata": true
   },
   {
    "asl": "pordenone",
@@ -210,28 +243,6 @@
   },
   {
    "asl": "pordenone",
-   "url": "https://asfo.sanita.fvg.it/it/amministrazione_trasparente/16_servizi_erogati/04_liste_attesa.html",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "pordenone/de55ffec777e.txt",
-   "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Liste di attesa",
-   "sha": "5e3006dc800778e7f4f1a09ba3502e9d7bf32a135ed847486567ab710e062a52",
-   "caratteri": 10218,
-   "cambiata": false
-  },
-  {
-   "asl": "pordenone",
-   "url": "https://asfo.sanita.fvg.it/it/schede/mmg-pls/cambio_medico_online.html",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "pordenone/202d046dcf92.txt",
-   "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Servizio on line di scelta e revoca",
-   "sha": "9d9bdd6961e3ac69570eba37742046f0022821a3ad5a18a25972aae02c7f02fc",
-   "caratteri": 5523,
-   "cambiata": false
-  },
-  {
-   "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/it/schede/sesamo.html",
    "controllata": "2026-10-22",
    "http": 200,
@@ -240,6 +251,17 @@
    "sha": "ec4c1888b7708b8e547d378e23cb83be5d6ad0a5b930c9577f0a8fdab9e0427f",
    "caratteri": 7897,
    "cambiata": false
+  },
+  {
+   "asl": "pordenone",
+   "url": "https://asfo.sanita.fvg.it/it/servizi/richiesta_documentazione_sanitaria.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "pordenone/797fb03e264e.txt",
+   "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Richiesta documentazione sanitaria",
+   "sha": "fc7969cb2736d53302bfeb7a3e468804d68ff64cd9bad1d183ff1d90c017c352",
+   "caratteri": 9364,
+   "cambiata": true
   },
   {
    "asl": "trieste",
@@ -262,6 +284,17 @@
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - 116117 Numero Unico Europeo per la Sanità Non Urgente",
    "sha": "67ef71f0e339aaa2100423279b4da2a4b424ee49182fde7d773edddbd3a8e2b8",
    "caratteri": 9226,
+   "cambiata": false
+  },
+  {
+   "asl": "trieste",
+   "url": "https://asugi.sanita.fvg.it/it/servizi/dist_amm_scelta_revoca_mmg_pls.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "trieste/d3d2756833ae.txt",
+   "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Scelta / revoca Medico di Medicina Generale/Pediatria di Libera Scelta",
+   "sha": "08ffc05a04fdbc855081adca07df0ff9d3af95371b65cea2c9b495eb6059b1fe",
+   "caratteri": 15851,
    "cambiata": false
   },
   {
@@ -472,9 +505,9 @@
    "http": 200,
    "file": "trieste/a2fb0e03a2de.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - ASUGI: cambia il numero unico per i servizi sanitari non urgenti",
-   "sha": "aed83fdc0bb8fe2019958ca4fb44c9e53fdbc7dabf4cfcc497b14f3ccaa8c3af",
-   "caratteri": 7859,
-   "cambiata": false
+   "sha": "8c3bb216630d49fc5d00c451ea4ca3f91a0ff71728ef480e9b1feaa79d2ca9c3",
+   "caratteri": 7883,
+   "cambiata": true
   },
   {
    "asl": "trieste",
@@ -517,17 +550,6 @@
   },
   {
    "asl": "trieste",
-   "url": "https://asugi.sanita.fvg.it/it/servizi/dist_amm_scelta_revoca_mmg_pls.html",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "trieste/d3d2756833ae.txt",
-   "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Scelta / revoca Medico di Medicina Generale/Pediatria di Libera Scelta",
-   "sha": "08ffc05a04fdbc855081adca07df0ff9d3af95371b65cea2c9b495eb6059b1fe",
-   "caratteri": 15851,
-   "cambiata": false
-  },
-  {
-   "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/it/schede/medico/dist_amm_iscrizione_SSR.html",
    "controllata": "2026-10-22",
    "http": 404
@@ -553,6 +575,17 @@
    "sha": "6fba5cbaf255edae0bd8909f114889081d87c60a59ef9de8f49f7dc3f27ad6cc",
    "caratteri": 7533,
    "cambiata": false
+  },
+  {
+   "asl": "trieste",
+   "url": "https://asugi.sanita.fvg.it/it/amm_trasp_asugi/25_percorso_tutela/index.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "trieste/a443796563a8.txt",
+   "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Percorso di Tutela - Diritto di Garanzia",
+   "sha": "69189ac3b8724700d11d2259725e031be88628e881808ba12322de4a361a46b9",
+   "caratteri": 10146,
+   "cambiata": true
   },
   {
    "asl": "udine",
@@ -686,6 +719,39 @@
    "sha": "4bf5dea46a2ff084145b4fea2d5c68a6e58a9ec06e156817ca42dc2973c539ea",
    "caratteri": 2082,
    "cambiata": false
+  },
+  {
+   "asl": "udine",
+   "url": "https://asufc.sanita.fvg.it/it/schede/medici_pediatri/cambio_medico.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "udine/7239975d15d5.txt",
+   "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - Scelta o cambio del Medico o del pediatra",
+   "sha": "beca6c0a754ea7b4199cebf2d11ae947f70c6937d1e9166831166c5b0c6f9408",
+   "caratteri": 7198,
+   "cambiata": true
+  },
+  {
+   "asl": "udine",
+   "url": "https://asufc.sanita.fvg.it/it/servizi/anagrafe_sanitaria.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "udine/28fb6a5e452a.txt",
+   "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - Anagrafe sanitaria, mobilità internazionale",
+   "sha": "678e165f094d3dcefbc0372b09e9c15eb3478cf4345c5bc0772910cd971c0644",
+   "caratteri": 12192,
+   "cambiata": true
+  },
+  {
+   "asl": "udine",
+   "url": "https://asufc.sanita.fvg.it/it/amministrazione_trasparente/trasparenza_ASUFC/16_servizi_erogati/04_liste_attesa.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "udine/82bcb4e5f831.txt",
+   "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - Liste di attesa",
+   "sha": "5ebcb9877f380fdbcbb5e56ad777485ddc6714501a5e826d3b282287255af53c",
+   "caratteri": 12661,
+   "cambiata": true
   },
   {
    "asl": "inps-friuli-venezia-giulia",

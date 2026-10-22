@@ -1,6 +1,6 @@
 {
  "regione": "umbria",
- "aggiornato": "2026-10-22T12:07:04.975Z",
+ "aggiornato": "2026-10-22T18:25:19.826Z",
  "pagine": [
   {
    "asl": "perugia",
@@ -11,6 +11,17 @@
    "titolo": "USL Umbria 1 - Sito istituzionale",
    "sha": "bc9fd9993573e6db47ce71af5a190a82bee3512c53ecfa9b85a152be470ec774",
    "caratteri": 9118,
+   "cambiata": false
+  },
+  {
+   "asl": "perugia",
+   "url": "https://www.regione.umbria.it/-/salute-diritti-liste-di-attesa",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "perugia/4fa7a21f3ee7.txt",
+   "titolo": "Liste di attesa - CUP - Liste di attesa - Regione Umbria",
+   "sha": "3847f8b8706aff14e2b9709356ae7fe5b56d6ff7e4b61ed6510f61cefbe67e51",
+   "caratteri": 11317,
    "cambiata": false
   },
   {
@@ -33,6 +44,17 @@
    "titolo": "Assistenza e cure domiciliari - USL Umbria 1",
    "sha": "4f2ec201c7c2ef8cb638141404ab165dbd83db86371bb1b13012bc6a471e9368",
    "caratteri": 10267,
+   "cambiata": false
+  },
+  {
+   "asl": "perugia",
+   "url": "https://www.uslumbria1.it/medici/scelta-cambio-revoca-del-medico-e-del-pediatra/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "perugia/8312ff2b67da.txt",
+   "titolo": "Scelta, Cambio, Revoca Medico e Pediatra - USL Umbria 1",
+   "sha": "a133fceea1616a70cbd7ff62e87a33079dc9efb7818c42d18cc737ead4a75016",
+   "caratteri": 7722,
    "cambiata": false
   },
   {
@@ -137,6 +159,50 @@
   },
   {
    "asl": "perugia",
+   "url": "https://www.uslumbria2.it/notizie/rilascio-copia-della-cartella-clinica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "perugia/e32e5bf81ed3.txt",
+   "titolo": "Rilascio copia della cartella clinica - USL Umbria 2",
+   "sha": "90e2815feb8cd415411a39b6f7048a5f8787daaa1e922cc9eecd5996df701824",
+   "caratteri": 6718,
+   "cambiata": false
+  },
+  {
+   "asl": "perugia",
+   "url": "https://www.uslumbria1.it/servizio/ausili-e-assistenza-protesica/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "perugia/ea820f00c38d.txt",
+   "titolo": "Ausili e Assistenza protesica - USL Umbria 1",
+   "sha": "b0307a2ed127a58664e5fac037b0efd39adc352b34966c139ebb75015b2c41e8",
+   "caratteri": 13815,
+   "cambiata": false
+  },
+  {
+   "asl": "perugia",
+   "url": "https://www.uslumbria2.it/servizi/assistenza-protesica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "perugia/86f24d837340.txt",
+   "titolo": "USL Umbria 2 - Disabili",
+   "sha": "f0da0990181c2d3e5ab71968055a9074e7aa0549950f98f630c86968e2fde60c",
+   "caratteri": 15006,
+   "cambiata": false
+  },
+  {
+   "asl": "perugia",
+   "url": "https://www.uslumbria2.it/servizi/gli-screening-per-la-diagnosi-precoce-e-la-prevenz",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "perugia/10b257958e81.txt",
+   "titolo": "USL Umbria 2 - Donne",
+   "sha": "fdd00c378db98d1438c7f3f47570e241b32554958354367c7ee872835f4ad550",
+   "caratteri": 12584,
+   "cambiata": false
+  },
+  {
+   "asl": "perugia",
    "url": "https://www.uslumbria1.it/servizio/documentazione-clinica/",
    "controllata": "2026-10-22",
    "http": 200,
@@ -153,9 +219,9 @@
    "http": 200,
    "file": "perugia/3cfb9d154ac5.txt",
    "titolo": "Richiedere la documentazione sanitaria - Azienda Ospedaliera Perugia",
-   "sha": "64028f2b71e23535f9a0ef59ad3065286fe808a4e9fdc647ebd1cf81b05409aa",
-   "caratteri": 4974,
-   "cambiata": false
+   "sha": "a6349eb9d3668c94d180e64047d13c9e8c2ebeca3ba8d6a3ca350e268aee342d",
+   "caratteri": 4886,
+   "cambiata": true
   },
   {
    "asl": "perugia",
@@ -167,28 +233,6 @@
    "titolo": "- Azienda Ospedaliera di Perugia | Ospedale S. Maria della Misericordia",
    "sha": "22f2f28a6f80f35dcd642135d19ec49803fc366bc0326ecca5b34c1c1e689d07",
    "caratteri": 1760,
-   "cambiata": false
-  },
-  {
-   "asl": "perugia",
-   "url": "https://www.uslumbria1.it/servizio/ausili-e-assistenza-protesica/",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "perugia/ea820f00c38d.txt",
-   "titolo": "Ausili e Assistenza protesica - USL Umbria 1",
-   "sha": "b0307a2ed127a58664e5fac037b0efd39adc352b34966c139ebb75015b2c41e8",
-   "caratteri": 13815,
-   "cambiata": false
-  },
-  {
-   "asl": "perugia",
-   "url": "https://www.uslumbria1.it/medici/scelta-cambio-revoca-del-medico-e-del-pediatra/",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "perugia/8312ff2b67da.txt",
-   "titolo": "Scelta, Cambio, Revoca Medico e Pediatra - USL Umbria 1",
-   "sha": "a133fceea1616a70cbd7ff62e87a33079dc9efb7818c42d18cc737ead4a75016",
-   "caratteri": 7722,
    "cambiata": false
   },
   {
@@ -271,28 +315,6 @@
   },
   {
    "asl": "perugia",
-   "url": "https://www.uslumbria2.it/notizie/rilascio-copia-della-cartella-clinica",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "perugia/e32e5bf81ed3.txt",
-   "titolo": "Rilascio copia della cartella clinica - USL Umbria 2",
-   "sha": "90e2815feb8cd415411a39b6f7048a5f8787daaa1e922cc9eecd5996df701824",
-   "caratteri": 6718,
-   "cambiata": false
-  },
-  {
-   "asl": "perugia",
-   "url": "https://www.uslumbria2.it/servizi/assistenza-protesica",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "perugia/86f24d837340.txt",
-   "titolo": "USL Umbria 2 - Disabili",
-   "sha": "f0da0990181c2d3e5ab71968055a9074e7aa0549950f98f630c86968e2fde60c",
-   "caratteri": 15006,
-   "cambiata": false
-  },
-  {
-   "asl": "perugia",
    "url": "https://www.uslumbria2.it/notizie/anagrafe-assistibili-iscrizione-al-servizio-sanitario-regionale-tessera-sanitaria-scelta-medico-o-pediatra-di-famiglia-assistenza-allestero-esenzione-per-reddito-o-patologia",
    "controllata": "2026-10-22",
    "http": 200,
@@ -311,17 +333,6 @@
    "titolo": "Medici di Medicina Generale - USL Umbria 2",
    "sha": "3bc39f33571f04ddece8fc3227247bbd9685c286040a055ce24339cccc2a099a",
    "caratteri": 5178,
-   "cambiata": false
-  },
-  {
-   "asl": "perugia",
-   "url": "https://www.uslumbria2.it/servizi/gli-screening-per-la-diagnosi-precoce-e-la-prevenz",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "perugia/10b257958e81.txt",
-   "titolo": "USL Umbria 2 - Donne",
-   "sha": "fdd00c378db98d1438c7f3f47570e241b32554958354367c7ee872835f4ad550",
-   "caratteri": 12584,
    "cambiata": false
   },
   {
@@ -359,13 +370,6 @@
   },
   {
    "asl": "perugia",
-   "url": "http://ec.uslumbria2.it/www/sitlc/CUP/PRESA%20IN%20CARICO/presa_in_carico.htm",
-   "controllata": "2026-10-22",
-   "http": 0,
-   "errore": "curl: (6) Could not resolve host: ec.uslumbria2.it"
-  },
-  {
-   "asl": "perugia",
    "url": "https://www.uslumbria2.it/notizie/in-evidenza-limpegno-delle-aziende-sanitarie-e-ospedaliere-dellumbria-per-abbattere-i-tempi-di-attesa",
    "controllata": "2026-10-22",
    "http": 200,
@@ -399,14 +403,25 @@
   },
   {
    "asl": "perugia",
-   "url": "https://www.regione.umbria.it/-/salute-diritti-liste-di-attesa",
+   "url": "https://www.uslumbria1.it/screening/screening-mammografico/",
    "controllata": "2026-10-22",
    "http": 200,
-   "file": "perugia/4fa7a21f3ee7.txt",
-   "titolo": "Liste di attesa - CUP - Liste di attesa - Regione Umbria",
-   "sha": "3847f8b8706aff14e2b9709356ae7fe5b56d6ff7e4b61ed6510f61cefbe67e51",
-   "caratteri": 11317,
-   "cambiata": false
+   "file": "perugia/a72feb91a3ea.txt",
+   "titolo": "Screening della mammella - USL Umbria 1",
+   "sha": "1141409d967dbf1d160ab0a1130f807b28e819a88712071849919f9d1b343d17",
+   "caratteri": 10627,
+   "cambiata": true
+  },
+  {
+   "asl": "perugia",
+   "url": "https://www.uslumbria1.it/servizio/senologia/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "perugia/5e6bfce6e722.txt",
+   "titolo": "Senologia - USL Umbria 1",
+   "sha": "ad826e24f07e472e73291b33f2638ffd359a27afc16223588f7e7e5a23a89949",
+   "caratteri": 13255,
+   "cambiata": true
   },
   {
    "asl": "terni",
@@ -417,6 +432,17 @@
    "titolo": "USL Umbria 2",
    "sha": "158cbb4c75f2b42d99d06533f1ebe9fba768b5254ec5e09a650d4cf72b86e756",
    "caratteri": 2333,
+   "cambiata": false
+  },
+  {
+   "asl": "terni",
+   "url": "https://www.regione.umbria.it/-/salute-diritti-liste-di-attesa",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "terni/4fa7a21f3ee7.txt",
+   "titolo": "Liste di attesa - CUP - Liste di attesa - Regione Umbria",
+   "sha": "3847f8b8706aff14e2b9709356ae7fe5b56d6ff7e4b61ed6510f61cefbe67e51",
+   "caratteri": 11317,
    "cambiata": false
   },
   {
@@ -439,6 +465,17 @@
    "titolo": "Accedere al servizio di assistenza domiciliare - USL Umbria 2",
    "sha": "9d462bacab53871cf52337b56de384b9bd4ed05285eab417b6076f3b4de1c987",
    "caratteri": 2638,
+   "cambiata": false
+  },
+  {
+   "asl": "terni",
+   "url": "https://www.uslumbria2.it/notizie/anagrafe-assistibili-iscrizione-al-servizio-sanitario-regionale-tessera-sanitaria-scelta-medico-o-pediatra-di-famiglia-assistenza-allestero-esenzione-per-reddito-o-patologia",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "terni/6a5aa25dcc05.txt",
+   "titolo": "Anagrafe Assistibili Aziendale, Mobilità Internazionale e Assistenza allo Straniero. Iscrizione al Servizio Sanitario Regionale, Tessera Sanitaria, Fascicolo Sanitario Elettronico, scelta Medico o Pediatra di famiglia, Assistenza all'estero, esenzione per - USL Umbria 2",
+   "sha": "9554562305e72a1009637b06bd1f8d04a197b9e3591c1119a45857db402e3027",
+   "caratteri": 17654,
    "cambiata": false
   },
   {
@@ -532,13 +569,13 @@
   },
   {
    "asl": "terni",
-   "url": "https://www.uslumbria2.it/notizie/anagrafe-assistibili-iscrizione-al-servizio-sanitario-regionale-tessera-sanitaria-scelta-medico-o-pediatra-di-famiglia-assistenza-allestero-esenzione-per-reddito-o-patologia",
+   "url": "https://www.uslumbria2.it/servizi/gli-screening-per-la-diagnosi-precoce-e-la-prevenz",
    "controllata": "2026-10-22",
    "http": 200,
-   "file": "terni/6a5aa25dcc05.txt",
-   "titolo": "Anagrafe Assistibili Aziendale, Mobilità Internazionale e Assistenza allo Straniero. Iscrizione al Servizio Sanitario Regionale, Tessera Sanitaria, Fascicolo Sanitario Elettronico, scelta Medico o Pediatra di famiglia, Assistenza all'estero, esenzione per - USL Umbria 2",
-   "sha": "9554562305e72a1009637b06bd1f8d04a197b9e3591c1119a45857db402e3027",
-   "caratteri": 17654,
+   "file": "terni/10b257958e81.txt",
+   "titolo": "USL Umbria 2 - Donne",
+   "sha": "fdd00c378db98d1438c7f3f47570e241b32554958354367c7ee872835f4ad550",
+   "caratteri": 12584,
    "cambiata": false
   },
   {
@@ -550,17 +587,6 @@
    "titolo": "Medici di Medicina Generale - USL Umbria 2",
    "sha": "3bc39f33571f04ddece8fc3227247bbd9685c286040a055ce24339cccc2a099a",
    "caratteri": 5178,
-   "cambiata": false
-  },
-  {
-   "asl": "terni",
-   "url": "https://www.uslumbria2.it/servizi/gli-screening-per-la-diagnosi-precoce-e-la-prevenz",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "terni/10b257958e81.txt",
-   "titolo": "USL Umbria 2 - Donne",
-   "sha": "fdd00c378db98d1438c7f3f47570e241b32554958354367c7ee872835f4ad550",
-   "caratteri": 12584,
    "cambiata": false
   },
   {
@@ -584,13 +610,6 @@
    "sha": "e8e9769e3a4be9b8aed2867f719dd2e265c08fb972f95c9bf3e444411cbc323a",
    "caratteri": 9256,
    "cambiata": false
-  },
-  {
-   "asl": "terni",
-   "url": "http://ec.uslumbria2.it/www/sitlc/CUP/PRESA%20IN%20CARICO/presa_in_carico.htm",
-   "controllata": "2026-10-22",
-   "http": 0,
-   "errore": "curl: (6) Could not resolve host: ec.uslumbria2.it"
   },
   {
    "asl": "terni",
@@ -669,17 +688,6 @@
    "titolo": "Scelta e revoca Online del medico di famiglia - Regione Umbria",
    "sha": "d67ff0d2035b5705fdc4c71fd0431688f9745bcbb3b7fef79365d0de547a3357",
    "caratteri": 2204,
-   "cambiata": false
-  },
-  {
-   "asl": "terni",
-   "url": "https://www.regione.umbria.it/-/salute-diritti-liste-di-attesa",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "terni/4fa7a21f3ee7.txt",
-   "titolo": "Liste di attesa - CUP - Liste di attesa - Regione Umbria",
-   "sha": "3847f8b8706aff14e2b9709356ae7fe5b56d6ff7e4b61ed6510f61cefbe67e51",
-   "caratteri": 11317,
    "cambiata": false
   },
   {

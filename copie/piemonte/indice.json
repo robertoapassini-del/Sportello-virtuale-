@@ -1,6 +1,6 @@
 {
  "regione": "piemonte",
- "aggiornato": "2026-10-22T11:36:34.572Z",
+ "aggiornato": "2026-10-22T17:52:58.956Z",
  "pagine": [
   {
    "asl": "alessandria",
@@ -15,6 +15,17 @@
   },
   {
    "asl": "alessandria",
+   "url": "https://www.aslal.it/percorso-di-tutela-assistiti-aslal",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "alessandria/5c4f0c5d9f1c.txt",
+   "titolo": "Percorso di tutela dei Cittadini assistiti dall’ASL AL - ASL AL",
+   "sha": "21d65c48faa1cc15c474b2575af32e8a9006d780103d96781285edd4a210cdde",
+   "caratteri": 11588,
+   "cambiata": false
+  },
+  {
+   "asl": "alessandria",
    "url": "https://www.aslal.it/attivo-sul-territorio-asl-al-il-nuovo-numero-116117",
    "controllata": "2026-10-22",
    "http": 200,
@@ -22,6 +33,18 @@
    "titolo": "Numero Europeo Armonizzato per il servizio di Continuità Assistenziale (ex guardia medica) - ASL AL",
    "sha": "546e621c68c9dedfdd555a24782a1c229e83036b5e35e4bf73159f3fc57863e3",
    "caratteri": 14212,
+   "cambiata": false
+  },
+  {
+   "asl": "alessandria",
+   "url": "https://www.salutepiemonte.it/servizi/il-mio-medico?nid=75",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "file": "alessandria/dfb330ee803a.txt",
+   "titolo": "Il mio medico | Salute Piemonte",
+   "sha": "240b5024f646a78f919b42fcb17956ffcb83ba8340c7f9f5b757025025117e8d",
+   "caratteri": 3367,
    "cambiata": false
   },
   {
@@ -113,17 +136,6 @@
    "cambiata": false
   },
   {
-   "asl": "alessandria",
-   "url": "https://www.aslal.it/percorso-di-tutela-assistiti-aslal",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "alessandria/5c4f0c5d9f1c.txt",
-   "titolo": "Percorso di tutela dei Cittadini assistiti dall’ASL AL - ASL AL",
-   "sha": "21d65c48faa1cc15c474b2575af32e8a9006d780103d96781285edd4a210cdde",
-   "caratteri": 11588,
-   "cambiata": false
-  },
-  {
    "asl": "asti",
    "url": "https://asl.at.it/",
    "controllata": "2026-10-22",
@@ -133,6 +145,17 @@
    "sha": "9ffcb4302ebb040e2073ab817e5e70aad51981b892d912e2052e5188a7b51ef9",
    "caratteri": 9444,
    "cambiata": false
+  },
+  {
+   "asl": "asti",
+   "url": "https://asl.at.it/focus/percorso-di-tutela-dei-cittadini-assistiti/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "asti/4a6d36d1ae1b.txt",
+   "titolo": "Percorso di tutela dei Cittadini assistiti - Asl At",
+   "sha": "50b389433b11285b105742009d3796c56e821a6667e8907211b0875ea5d06b91",
+   "caratteri": 12092,
+   "cambiata": true
   },
   {
    "asl": "asti",
@@ -154,6 +177,18 @@
    "titolo": "Cure Domiciliari - Asl At",
    "sha": "c0654ae923777be67b6a9da865c0780816eb97ee452d91fe8e9d5dee1c6b1f72",
    "caratteri": 12498,
+   "cambiata": false
+  },
+  {
+   "asl": "asti",
+   "url": "https://www.salutepiemonte.it/servizi/il-mio-medico?nid=75",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "file": "asti/dfb330ee803a.txt",
+   "titolo": "Il mio medico | Salute Piemonte",
+   "sha": "240b5024f646a78f919b42fcb17956ffcb83ba8340c7f9f5b757025025117e8d",
+   "caratteri": 3367,
    "cambiata": false
   },
   {
@@ -187,7 +222,7 @@
    "titolo": "C.U.P. - Asl At",
    "sha": "549afa99c881c6581703a76d3e34becb2a3a6c2a499ca0e8c2548195626b14fe",
    "caratteri": 15039,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asti",
@@ -212,26 +247,15 @@
    "cambiata": false
   },
   {
-   "asl": "asti",
-   "url": "https://asl.at.it/focus/percorso-di-tutela-dei-cittadini-assistiti/",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "asti/4a6d36d1ae1b.txt",
-   "titolo": "Percorso di tutela dei Cittadini assistiti - Asl At",
-   "sha": "b88473268501f48fd170359220c00962fc282f2fe5cfccfd165e62278fc2d9dc",
-   "caratteri": 12092,
-   "cambiata": true
-  },
-  {
    "asl": "biella",
    "url": "https://aslbi.piemonte.it/",
    "controllata": "2026-10-22",
    "http": 200,
    "file": "biella/adacc3c87cce.txt",
    "titolo": "Home - ASL Biella",
-   "sha": "8af2fe77b1e8cc6d0ee08e62149d8fa4312d53d5583d20971863d674d62b88fc",
+   "sha": "f01caa56a9d5368000e56c714f8804ec72ef4c337605effb9ea8c9eb1ba2453f",
    "caratteri": 5745,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "biella",
@@ -240,9 +264,9 @@
    "http": 200,
    "file": "biella/f86aadd4508e.txt",
    "titolo": "116117, il numero unico per contattare l’ex Guardia Medica - ASL Biella",
-   "sha": "59bee5309c3020bbe6ec02110f7095853fd59bc68486e9e0055ff187a614507b",
-   "caratteri": 5217,
-   "cambiata": false
+   "sha": "633abf1fd4b13143f91fda5d0f03c72bfcc76e696d989da7275193f4441a5acc",
+   "caratteri": 5498,
+   "cambiata": true
   },
   {
    "asl": "biella",
@@ -257,14 +281,26 @@
   },
   {
    "asl": "biella",
+   "url": "https://www.salutepiemonte.it/servizi/il-mio-medico?nid=75",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "file": "biella/dfb330ee803a.txt",
+   "titolo": "Il mio medico | Salute Piemonte",
+   "sha": "240b5024f646a78f919b42fcb17956ffcb83ba8340c7f9f5b757025025117e8d",
+   "caratteri": 3367,
+   "cambiata": false
+  },
+  {
+   "asl": "biella",
    "url": "https://aslbi.piemonte.it/contatti/",
    "controllata": "2026-10-22",
    "http": 200,
    "file": "biella/6336a1b9cee7.txt",
    "titolo": "Contatti - ASL Biella",
-   "sha": "bff054c14aafa8d737ce627ed6029aecdaa8d7008dba5623c08616f831776e0f",
-   "caratteri": 1905,
-   "cambiata": false
+   "sha": "dc0f4a75e2d25dfad680c66949fd413fc878c480396789a35eda0ccbf88d68da",
+   "caratteri": 1904,
+   "cambiata": true
   },
   {
    "asl": "biella",
@@ -284,9 +320,9 @@
    "http": 200,
    "file": "biella/960c810bbd86.txt",
    "titolo": "Ufficio Comunicazione e URP - ASL Biella",
-   "sha": "9c70afb47a979cab1b2f4ecbe30ad2df717be20702c6350996063045a2c3b41d",
-   "caratteri": 6220,
-   "cambiata": false
+   "sha": "80e56cb3d44afa1a93be08793523863932c81abaa0c2fd7a0d8dd9b19d92cecf",
+   "caratteri": 6501,
+   "cambiata": true
   },
   {
    "asl": "biella",
@@ -298,6 +334,17 @@
    "sha": "17a89aefc02975afca5cac35c0bf6835f839abdaf614587693b077bf234eb60b",
    "caratteri": 8774,
    "cambiata": false
+  },
+  {
+   "asl": "biella",
+   "url": "https://aslbi.piemonte.it/servizi-territoriali/cure-palliative/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "biella/b814052848ef.txt",
+   "titolo": "Cure Palliative - ASL Biella",
+   "sha": "18b0d8ecc679fbb318d57f1bd1118352ee307b5afe76485c1ae893e3057bfe30",
+   "caratteri": 5398,
+   "cambiata": true
   },
   {
    "asl": "biella",
@@ -334,9 +381,9 @@
    "http": 200,
    "file": "biella/59dafc1e166b.txt",
    "titolo": "Percorsi di tutela: informazioni utili - ASL Biella",
-   "sha": "9111aceb85c38bc44bf04f903f2751a49b2dfa7219bd4dedadb12e00fe9de3b7",
-   "caratteri": 13627,
-   "cambiata": false
+   "sha": "496c44f101eb97cd8094bfd5801f55441c3ab8251d5cc898084bddbd1aee218d",
+   "caratteri": 13908,
+   "cambiata": true
   },
   {
    "asl": "biella",
@@ -358,17 +405,6 @@
   },
   {
    "asl": "biella",
-   "url": "https://aslbi.piemonte.it/servizi-territoriali/cure-palliative/",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "biella/b814052848ef.txt",
-   "titolo": "Cure Palliative - ASL Biella",
-   "sha": "9fc23ae684336326213bc9e1a28ad1b3f74400dbd57041990bf15137f62086d0",
-   "caratteri": 5397,
-   "cambiata": false
-  },
-  {
-   "asl": "biella",
    "url": "https://aslbi.piemonte.it/prontuario-biellese/cure-palliative-domiciliari/",
    "controllata": "2026-10-22",
    "http": 200,
@@ -377,6 +413,39 @@
    "sha": "a625b7acc071d2192f18ad2022780fdd13307b3d2852fc7e14daba3686968d91",
    "caratteri": 6424,
    "cambiata": false
+  },
+  {
+   "asl": "biella",
+   "url": "https://aslbi.piemonte.it/come-fare-per/tempi-di-attesa/percorsi-di-tutela/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "biella/1442c1b60c44.txt",
+   "titolo": "Percorsi di tutela - ASL Biella",
+   "sha": "5f30bb2a4147db145989942fe31bf20739afdc7cdeaf3c872f5b5d46ac71d3a9",
+   "caratteri": 2305,
+   "cambiata": true
+  },
+  {
+   "asl": "biella",
+   "url": "https://aslbi.piemonte.it/download/istanza-di-attivazione-del-percorso-di-tutela/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "biella/ab2cca4efd0b.txt",
+   "titolo": "Modulo di richiesta per attivare il Percorso di Tutela - ASL Biella",
+   "sha": "7b9025e9a8023d8a2a384573ee6a6dac32867ab0f13d273dda95ed5191dd6c42",
+   "caratteri": 1531,
+   "cambiata": true
+  },
+  {
+   "asl": "biella",
+   "url": "https://aslbi.piemonte.it/come-fare-per/tempi-di-attesa/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "biella/5dcd1905a5b7.txt",
+   "titolo": "Tempi di attesa - ASL Biella",
+   "sha": "651aed547524feee374e5047e8e14d84ca4363d9d3b5743e8247187252b090aa",
+   "caratteri": 1731,
+   "cambiata": true
   },
   {
    "asl": "cuneo",
@@ -409,6 +478,18 @@
    "titolo": "ASL CN 1 - Portale dell'Azienda Sanitaria Locale: ADI, ADP, ADI UOCP,",
    "sha": "4b6c4c44fe016e0fa36c239a28a935899abb7d81099f046797c095e17fb3c74c",
    "caratteri": 14767,
+   "cambiata": false
+  },
+  {
+   "asl": "cuneo",
+   "url": "https://www.salutepiemonte.it/servizi/il-mio-medico?nid=75",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "file": "cuneo/dfb330ee803a.txt",
+   "titolo": "Il mio medico | Salute Piemonte",
+   "sha": "240b5024f646a78f919b42fcb17956ffcb83ba8340c7f9f5b757025025117e8d",
+   "caratteri": 3367,
    "cambiata": false
   },
   {
@@ -506,9 +587,9 @@
    "http": 200,
    "file": "cuneo/7c4dcafe9f2a.txt",
    "titolo": "ASL CN2 - Azienda Sanitaria Locale CN2 - Alba e Bra",
-   "sha": "1127e8ed80f51049b7f38689316d185c50af40d82ee7a10b04cb4b9ce9d0733e",
-   "caratteri": 10970,
-   "cambiata": false
+   "sha": "3a8ac057f40efb2d6409a6f9afbf7e7feca99e1a09d36dda7e3e251df006b6e5",
+   "caratteri": 11325,
+   "cambiata": true
   },
   {
    "asl": "cuneo",
@@ -556,13 +637,24 @@
   },
   {
    "asl": "novara",
+   "url": "https://www.asl.novara.it/it/come-fare-per/percorso-tutela-cittadini-assistiti-dallasl-novara-nel-rispetto-tempi-attesa-per-prestazioni",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "novara/a5a064bd74a0.txt",
+   "titolo": "Percorso di tutela dei cittadini assistiti dall'Asl Novara nel rispetto dei tempi di attesa per le prestazioni specialistiche | ASL Novara",
+   "sha": "161a72da9689525d387b63aef1902522e8be8f0ffffbf7d8852fce9b9c95a2ad",
+   "caratteri": 8455,
+   "cambiata": false
+  },
+  {
+   "asl": "novara",
    "url": "https://www.aslto3.piemonte.it/servizi/guardia-medica/",
    "controllata": "2026-10-22",
    "http": 200,
    "certificato": "non valido",
    "file": "novara/42ffdf775f1d.txt",
    "titolo": "Continuità assistenziale (ex Guardia medica) | A.S.L. TO3",
-   "sha": "5385f280d97a1e42b99925d4cfc916a653bd22bd55db88b86b54b9f26b3dbbc4",
+   "sha": "692947061e065503631530790a3d9136d8ff99608704481eff8359d10e5397cc",
    "caratteri": 3110,
    "cambiata": true
   },
@@ -575,6 +667,18 @@
    "titolo": "Cure Domiciliari | ASL Novara",
    "sha": "c150249a5e54ad4f9acf549d207cc3099b052c524cc6be0a5d365fa48e543648",
    "caratteri": 9213,
+   "cambiata": false
+  },
+  {
+   "asl": "novara",
+   "url": "https://www.salutepiemonte.it/servizi/il-mio-medico?nid=75",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "file": "novara/dfb330ee803a.txt",
+   "titolo": "Il mio medico | Salute Piemonte",
+   "sha": "240b5024f646a78f919b42fcb17956ffcb83ba8340c7f9f5b757025025117e8d",
+   "caratteri": 3367,
    "cambiata": false
   },
   {
@@ -628,26 +732,15 @@
    "http": 404
   },
   {
-   "asl": "novara",
-   "url": "https://www.asl.novara.it/it/come-fare-per/percorso-tutela-cittadini-assistiti-dallasl-novara-nel-rispetto-tempi-attesa-per-prestazioni",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "novara/a5a064bd74a0.txt",
-   "titolo": "Percorso di tutela dei cittadini assistiti dall'Asl Novara nel rispetto dei tempi di attesa per le prestazioni specialistiche | ASL Novara",
-   "sha": "161a72da9689525d387b63aef1902522e8be8f0ffffbf7d8852fce9b9c95a2ad",
-   "caratteri": 8455,
-   "cambiata": false
-  },
-  {
    "asl": "torino",
    "url": "https://www.aslcittaditorino.it/",
    "controllata": "2026-10-22",
    "http": 200,
    "file": "torino/5ad90b52b3a0.txt",
    "titolo": "Azienda Sanitaria Locale \"Città di Torino\"",
-   "sha": "717907348c15221288d1f29080eb64dbcee2a728ea24d297de4b8db01aece9b6",
-   "caratteri": 9133,
-   "cambiata": false
+   "sha": "8c0380ae9c4fc42652ebfb3fa6991c31273cfd0d40a904d54a82834e63be62eb",
+   "caratteri": 9113,
+   "cambiata": true
   },
   {
    "asl": "torino",
@@ -673,6 +766,18 @@
   },
   {
    "asl": "torino",
+   "url": "https://www.salutepiemonte.it/servizi/il-mio-medico?nid=75",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "file": "torino/dfb330ee803a.txt",
+   "titolo": "Il mio medico | Salute Piemonte",
+   "sha": "240b5024f646a78f919b42fcb17956ffcb83ba8340c7f9f5b757025025117e8d",
+   "caratteri": 3367,
+   "cambiata": false
+  },
+  {
+   "asl": "torino",
    "url": "https://www.aslcittaditorino.it/numeri-utili/",
    "controllata": "2026-10-22",
    "http": 200,
@@ -690,7 +795,7 @@
    "certificato": "non valido",
    "file": "torino/b838f80535f8.txt",
    "titolo": "Contatti | A.S.L. TO3",
-   "sha": "d2786c709ad88e2c4f50c17820f0d5ab51630d25bb053639a22efce67edb6e45",
+   "sha": "e0a40b0ccb1d6d7ec7e79d2b27f6bbc4783bd4f9308df0ca4deb77ccde1f4aa1",
    "caratteri": 2193,
    "cambiata": true
   },
@@ -701,9 +806,9 @@
    "http": 200,
    "file": "torino/ef0c70d407c7.txt",
    "titolo": "Homepage | ASLTO4",
-   "sha": "eed2ff50fb3cbfbf44ebe94aff2d3d1ebd2ae6931e8cb68ed69c6ec733a5d54d",
-   "caratteri": 3658,
-   "cambiata": false
+   "sha": "c3322b5e21d18261a203c1aa3a29f66d08815a3ab42b3a8200e9073baa525217",
+   "caratteri": 3829,
+   "cambiata": true
   },
   {
    "asl": "torino",
@@ -757,7 +862,7 @@
    "certificato": "non valido",
    "file": "torino/53d58dce5be6.txt",
    "titolo": "U.R.P. | A.S.L. TO3",
-   "sha": "14efe8bd057326cc44fc08c47a4765c8f5978862a494778ee2be5e3284963ed9",
+   "sha": "4c525310fc49d9454512e81f2fed6c17405ee19c1072d3421287bc1945473df9",
    "caratteri": 7182,
    "cambiata": true
   },
@@ -779,9 +884,9 @@
    "http": 200,
    "file": "torino/af81556a6214.txt",
    "titolo": "Ufficio Relazioni con il Pubblico | ASL TO5",
-   "sha": "0164bdf5a458b7019bbdbf8793d7bb66e632e2488931d004ca9528dd97b76459",
-   "caratteri": 7396,
-   "cambiata": false
+   "sha": "a73baf91d68ed51ecdcb705446639dcecadd9c1ca43608efe6d9d184d110905e",
+   "caratteri": 7364,
+   "cambiata": true
   },
   {
    "asl": "torino",
@@ -791,7 +896,7 @@
    "certificato": "non valido",
    "file": "torino/42ffdf775f1d.txt",
    "titolo": "Continuità assistenziale (ex Guardia medica) | A.S.L. TO3",
-   "sha": "5385f280d97a1e42b99925d4cfc916a653bd22bd55db88b86b54b9f26b3dbbc4",
+   "sha": "692947061e065503631530790a3d9136d8ff99608704481eff8359d10e5397cc",
    "caratteri": 3110,
    "cambiata": true
   },
@@ -836,7 +941,7 @@
    "certificato": "non valido",
    "file": "torino/47f0299742b3.txt",
    "titolo": "Assistenza a domicilio | A.S.L. TO3",
-   "sha": "b8d2bca9924ac7627faee92f7fe713f52cb8ba3345b9f5d5425b735f9d506e39",
+   "sha": "4e70d5047cf3078d449b53f0a0b9e7219247475b4cb7566ca26e38ca7512aba6",
    "caratteri": 6250,
    "cambiata": true
   },
@@ -849,6 +954,28 @@
    "titolo": "Cure domiciliari | ASLTO4",
    "sha": "7b7ecf322b1c249636e76a977736e1371823b678c58fc1477862003343416f23",
    "caratteri": 7107,
+   "cambiata": false
+  },
+  {
+   "asl": "torino",
+   "url": "https://www.aslto4.piemonte.it/cure-palliative",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "torino/6e9425d9f2b8.txt",
+   "titolo": "Cure palliative | ASLTO4",
+   "sha": "7249fee848d550a174855dc7d4f889dc8a2cadaa686180cca68fd0ef7a2ad5f3",
+   "caratteri": 7022,
+   "cambiata": false
+  },
+  {
+   "asl": "torino",
+   "url": "https://www.aslto5.piemonte.it/it/struttura/ssvd-unita-cure-palliative",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "torino/61ec038fee46.txt",
+   "titolo": "S.S.V.D. Unità Cure Palliative | ASL TO5",
+   "sha": "631af3bb2a1074b6e0ed8e700a848b2b5832682628dd78a49228ef48a194d078",
+   "caratteri": 8199,
    "cambiata": false
   },
   {
@@ -930,8 +1057,8 @@
    "http": 200,
    "file": "torino/0df5ce662258.txt",
    "titolo": "Il Fascicolo Sanitario Elettronico 2.0 | Regione Piemonte",
-   "sha": "b40f06bc53468afbd029e161042f61b4b10c273d6eb85560a14312db601ee312",
-   "caratteri": 20018,
+   "sha": "137da3532cc31da111d61e56ce0c3e2af07aae4d33ae4cedfba97546696795d1",
+   "caratteri": 20023,
    "cambiata": true
   },
   {
@@ -947,8 +1074,8 @@
    "http": 200,
    "file": "torino/83ce8b1bf05c.txt",
    "titolo": "L'ASL TO3 rinnova l'assistenza medica turistica nelle alte Valli Susa e Chisone | Regione Piemonte",
-   "sha": "81b5113d7be8d23f4f9ea8d11685d3329b640f65af08f30b734b86290f4cc4fb",
-   "caratteri": 14996,
+   "sha": "ea7222d2d9a1283f610df5f24d6f3bda963499d14d335e46923735ec72d204b9",
+   "caratteri": 15001,
    "cambiata": true
   },
   {
@@ -958,8 +1085,8 @@
    "http": 200,
    "file": "torino/02e76f98243d.txt",
    "titolo": "Sportello per il cittadino - URP di Torino | Regione Piemonte",
-   "sha": "c39d589b9fc57aad48b4a477f23841160d14321532ed290d89ab00725fcfc87f",
-   "caratteri": 17628,
+   "sha": "b3b3ecebf378af5bc0b7e144be5f07bbd0a0c5b56cf52c97347677aff9693762",
+   "caratteri": 17633,
    "cambiata": true
   },
   {
@@ -1025,7 +1152,7 @@
    "certificato": "non valido",
    "file": "torino/f6d0f76be991.txt",
    "titolo": "A.S.L. TO3",
-   "sha": "12d1b3fb5757707624ca33e65a66d543599d60143bea0297c3a07d3ee460a7be",
+   "sha": "92d8e49b0c663debb271862e4221cf85461bc2724e5e0ebd4e2145f876235914",
    "caratteri": 3072,
    "cambiata": true
   },
@@ -1037,7 +1164,7 @@
    "certificato": "non valido",
    "file": "torino/58d10c286b3e.txt",
    "titolo": "Prenotazioni | A.S.L. TO3",
-   "sha": "231fee7983dc44b4c08d462aa797e16de0e3be35d0658c33e0a5c4dd59bd4757",
+   "sha": "60f635252734f6f7b6f93e8b5e0179e19658b3af160e74ee95525614d3cccad9",
    "caratteri": 6578,
    "cambiata": true
   },
@@ -1049,7 +1176,7 @@
    "certificato": "non valido",
    "file": "torino/b4f5a3c3ea56.txt",
    "titolo": "CUP – Centri Unici di Prenotazione | A.S.L. TO3",
-   "sha": "259160f1d81835764392351fe0c07374c815f48fd0166114fa4aeb972c2b2106",
+   "sha": "1e761f035125c075a65e5efe41680e62caaccb7feef93a6ebac12c4a849c91de",
    "caratteri": 10031,
    "cambiata": true
   },
@@ -1061,7 +1188,7 @@
    "certificato": "non valido",
    "file": "torino/98d162d039ff.txt",
    "titolo": "Medico di famiglia & pediatra | A.S.L. TO3",
-   "sha": "b8b302e6d9fd1a32f2e7f743800238d8c2bbf1a5e1fb2b930263ecfbcf991ab5",
+   "sha": "32243e62ca019edfc878c732828e348a483e954154205c2ef99cccc0fdf547a7",
    "caratteri": 10962,
    "cambiata": true
   },
@@ -1180,7 +1307,7 @@
    "certificato": "non valido",
    "file": "torino/90f61ae2b1aa.txt",
    "titolo": "Tempi di attesa | A.S.L. TO3",
-   "sha": "755fe8d9b949c61c68f98d07a55db8a5ddd547757e12a3746599afec544fc833",
+   "sha": "399e17ec65609e519642108cd87ddcd15c8959eb09172fbbbc978e5ba1cf3855",
    "caratteri": 9452,
    "cambiata": true
   },
@@ -1258,7 +1385,7 @@
    "certificato": "non valido",
    "file": "torino/b82056cf0d81.txt",
    "titolo": "Assistenza protesica e integrativa | A.S.L. TO3",
-   "sha": "3fd36cc35eff57d4602b305473fe29bb84bb51a8c08c6c1aaa8766c1cf08d373",
+   "sha": "6a86f96049d21c4b79f7211c0e4e77e5decc7ee6ae44252e0d5fb3f39537a766",
    "caratteri": 13647,
    "cambiata": true
   },
@@ -1286,28 +1413,6 @@
   },
   {
    "asl": "torino",
-   "url": "https://www.aslto4.piemonte.it/cure-palliative",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "torino/6e9425d9f2b8.txt",
-   "titolo": "Cure palliative | ASLTO4",
-   "sha": "7249fee848d550a174855dc7d4f889dc8a2cadaa686180cca68fd0ef7a2ad5f3",
-   "caratteri": 7022,
-   "cambiata": false
-  },
-  {
-   "asl": "torino",
-   "url": "https://www.aslto5.piemonte.it/it/struttura/ssvd-unita-cure-palliative",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "torino/61ec038fee46.txt",
-   "titolo": "S.S.V.D. Unità Cure Palliative | ASL TO5",
-   "sha": "631af3bb2a1074b6e0ed8e700a848b2b5832682628dd78a49228ef48a194d078",
-   "caratteri": 8199,
-   "cambiata": false
-  },
-  {
-   "asl": "torino",
    "url": "https://www.aslto5.piemonte.it/it/attivita/cure-domiciliari",
    "controllata": "2026-10-22",
    "http": 200,
@@ -1319,25 +1424,13 @@
   },
   {
    "asl": "torino",
-   "url": "https://www.salutepiemonte.it/servizi/il-mio-medico?nid=75",
-   "controllata": "2026-10-22",
-   "browser": true,
-   "http": 200,
-   "file": "torino/dfb330ee803a.txt",
-   "titolo": "Il mio medico | Salute Piemonte",
-   "sha": "240b5024f646a78f919b42fcb17956ffcb83ba8340c7f9f5b757025025117e8d",
-   "caratteri": 3367,
-   "cambiata": false
-  },
-  {
-   "asl": "torino",
    "url": "https://www.regione.piemonte.it/web/temi/sanita/accesso-ai-servizi-sanitari/medico-famiglia-pediatra-libera-scelta",
    "controllata": "2026-10-22",
    "http": 200,
    "file": "torino/1df1dd473541.txt",
    "titolo": "Il medico di famiglia e il pediatra di libera scelta | Regione Piemonte",
-   "sha": "824264435cebc50c167428ecb63cd3921dae17049f295b9b237c35f507bf91da",
-   "caratteri": 15702,
+   "sha": "29f18a94755e727d1da9bc32e9704935792a47943ed7b4b89bebf4def238557b",
+   "caratteri": 15707,
    "cambiata": true
   },
   {
@@ -1367,9 +1460,21 @@
    "certificato": "non valido",
    "file": "verbano-cusio-ossola/42ffdf775f1d.txt",
    "titolo": "Continuità assistenziale (ex Guardia medica) | A.S.L. TO3",
-   "sha": "5385f280d97a1e42b99925d4cfc916a653bd22bd55db88b86b54b9f26b3dbbc4",
+   "sha": "692947061e065503631530790a3d9136d8ff99608704481eff8359d10e5397cc",
    "caratteri": 3110,
    "cambiata": true
+  },
+  {
+   "asl": "verbano-cusio-ossola",
+   "url": "https://www.salutepiemonte.it/servizi/il-mio-medico?nid=75",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "file": "verbano-cusio-ossola/dfb330ee803a.txt",
+   "titolo": "Il mio medico | Salute Piemonte",
+   "sha": "240b5024f646a78f919b42fcb17956ffcb83ba8340c7f9f5b757025025117e8d",
+   "caratteri": 3367,
+   "cambiata": false
   },
   {
    "asl": "verbano-cusio-ossola",
@@ -1431,6 +1536,18 @@
    "http": 403
   },
   {
+   "asl": "verbano-cusio-ossola",
+   "url": "http://www.regione.piemonte.it/sanita/cms2/guida-al-servizio-sanitario/strutture-sanitarie/210-azienda-sanitaria-locale-vco",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
+   "asl": "verbano-cusio-ossola",
+   "url": "https://www.regione.piemonte.it/governo/bollettino/abbonati/2025/46/attach/co_azienda%20sanitaria%20locale%20vco_2025-11-03_97606.pdf",
+   "controllata": "2026-10-22",
+   "nota": "file, non controllato"
+  },
+  {
    "asl": "vercelli",
    "url": "https://aslvc.piemonte.it/",
    "controllata": "2026-10-22",
@@ -1439,6 +1556,17 @@
    "titolo": "Home page - ASL Vercelli",
    "sha": "f5a2e952a521db80f3bf4bf7ec83f87b1ec1cfbb9136049320e47de807938388",
    "caratteri": 5701,
+   "cambiata": false
+  },
+  {
+   "asl": "vercelli",
+   "url": "https://aslvc.piemonte.it/come-fare-per/accedere-al-percorso-di-tutela/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "vercelli/b2e80a018178.txt",
+   "titolo": "Accedere al percorso di tutela - ASL Vercelli",
+   "sha": "be8dc8a3da867309cf3861eadb71d65ba97493e96a0205aae441087e1dc346f6",
+   "caratteri": 4688,
    "cambiata": false
   },
   {
@@ -1461,6 +1589,18 @@
    "titolo": "Richiedere assistenza domiciliare - ASL Vercelli",
    "sha": "a52cd2c0fb6dd113dc0228144d2fcd2768335f3c1686464bb879906b88f42a47",
    "caratteri": 5958,
+   "cambiata": false
+  },
+  {
+   "asl": "vercelli",
+   "url": "https://www.salutepiemonte.it/servizi/il-mio-medico?nid=75",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "file": "vercelli/dfb330ee803a.txt",
+   "titolo": "Il mio medico | Salute Piemonte",
+   "sha": "240b5024f646a78f919b42fcb17956ffcb83ba8340c7f9f5b757025025117e8d",
+   "caratteri": 3367,
    "cambiata": false
   },
   {
@@ -1516,17 +1656,6 @@
    "titolo": "Casa della Comunità di Vercelli: come accedere alla Guardia medica e quando rivolgersi al Pronto Soccorso - ASL Vercelli",
    "sha": "24f52277284648c044eae75262e40a37624d651cd575a5a3b1e825651d76a6f1",
    "caratteri": 5759,
-   "cambiata": false
-  },
-  {
-   "asl": "vercelli",
-   "url": "https://aslvc.piemonte.it/come-fare-per/accedere-al-percorso-di-tutela/",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "vercelli/b2e80a018178.txt",
-   "titolo": "Accedere al percorso di tutela - ASL Vercelli",
-   "sha": "be8dc8a3da867309cf3861eadb71d65ba97493e96a0205aae441087e1dc346f6",
-   "caratteri": 4688,
    "cambiata": false
   },
   {

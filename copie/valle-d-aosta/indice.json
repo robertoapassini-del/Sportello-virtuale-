@@ -1,6 +1,6 @@
 {
  "regione": "valle-d-aosta",
- "aggiornato": "2026-10-22T12:08:20.196Z",
+ "aggiornato": "2026-10-22T18:26:46.341Z",
  "pagine": [
   {
    "asl": "aosta",
@@ -9,8 +9,8 @@
    "http": 200,
    "file": "aosta/8c0e7f3ef863.txt",
    "titolo": "Home",
-   "sha": "87d15385a37c5e8a6a470c36fa7d1582ec3f85ee2ffd0d3164b0d2cc6be2417f",
-   "caratteri": 8539,
+   "sha": "df302a751062221ae472bf6f570eae72d012f750db585493b5270f3feabe3042",
+   "caratteri": 8328,
    "cambiata": true
   },
   {
@@ -88,6 +88,50 @@
    "titolo": "URP - Ufficio Relazioni con il Pubblico",
    "sha": "394f14ad018b033f1e1a2f7ce74bd7f62b597a47c23417c6aad10c3a9dd2fb4c",
    "caratteri": 8724,
+   "cambiata": false
+  },
+  {
+   "asl": "aosta",
+   "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/richiedere-e-ritirare-la-cartella-clinica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "aosta/8123132fe7a0.txt",
+   "titolo": "Richiedere e ritirare la cartella clinica",
+   "sha": "2fba4452cccc70e5efa255c76e2959e5705c6dc26c40ac78561a0c2c369448e3",
+   "caratteri": 8330,
+   "cambiata": false
+  },
+  {
+   "asl": "aosta",
+   "url": "https://www.ausl.vda.it/chi-siamo/ospedale-strutture-reparti-e-servizi-sanitari/reparti/hospice-e-cure-palliative/sede-e-contatti",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "aosta/56bf2fb5db29.txt",
+   "titolo": "Sede e contatti",
+   "sha": "8fbe60974ac30ad50e08c6833ab3320cc19aaaba7040eb433d4356fdb8ca8c79",
+   "caratteri": 3874,
+   "cambiata": false
+  },
+  {
+   "asl": "aosta",
+   "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/assistenza-protesica-e-ausili",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "aosta/be0e4b04b0fb.txt",
+   "titolo": "Ausili, protesi e ortesi",
+   "sha": "d4a4ee0d23dbbffa285f39a185704b16689de02769ddf4c2e3538683740d1971",
+   "caratteri": 4717,
+   "cambiata": false
+  },
+  {
+   "asl": "aosta",
+   "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/aderire-alle-campagne-di-screening",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "aosta/36183e8c5539.txt",
+   "titolo": "Aderire agli Screening regionali",
+   "sha": "681b2b5909cb79d9d0126421aef08bcfcd33bdf907b975f9f552ed0fcc353f96",
+   "caratteri": 4458,
    "cambiata": false
   },
   {
@@ -268,28 +312,6 @@
   },
   {
    "asl": "aosta",
-   "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/richiedere-e-ritirare-la-cartella-clinica",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "aosta/8123132fe7a0.txt",
-   "titolo": "Richiedere e ritirare la cartella clinica",
-   "sha": "2fba4452cccc70e5efa255c76e2959e5705c6dc26c40ac78561a0c2c369448e3",
-   "caratteri": 8330,
-   "cambiata": false
-  },
-  {
-   "asl": "aosta",
-   "url": "https://www.ausl.vda.it/chi-siamo/ospedale-strutture-reparti-e-servizi-sanitari/reparti/hospice-e-cure-palliative/sede-e-contatti",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "aosta/56bf2fb5db29.txt",
-   "titolo": "Sede e contatti",
-   "sha": "8fbe60974ac30ad50e08c6833ab3320cc19aaaba7040eb433d4356fdb8ca8c79",
-   "caratteri": 3874,
-   "cambiata": false
-  },
-  {
-   "asl": "aosta",
    "url": "https://www.ausl.vda.it/chi-siamo/ospedale-strutture-reparti-e-servizi-sanitari/reparti/hospice-e-cure-palliative/attivita",
    "controllata": "2026-10-22",
    "http": 200,
@@ -297,17 +319,6 @@
    "titolo": "Attività",
    "sha": "bf6ccb1a87560d77167a578b20435bf0dc75d69e87a5c3c9ee766152b642b748",
    "caratteri": 4893,
-   "cambiata": false
-  },
-  {
-   "asl": "aosta",
-   "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/assistenza-protesica-e-ausili",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "aosta/be0e4b04b0fb.txt",
-   "titolo": "Ausili, protesi e ortesi",
-   "sha": "d4a4ee0d23dbbffa285f39a185704b16689de02769ddf4c2e3538683740d1971",
-   "caratteri": 4717,
    "cambiata": false
   },
   {
@@ -323,14 +334,40 @@
   },
   {
    "asl": "aosta",
-   "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/aderire-alle-campagne-di-screening",
+   "url": "http://www.ausl.vda.it/datapage.asp?id=230",
+   "controllata": "2026-10-22",
+   "http": 404,
+   "finale": "https://www.ausl.vda.it:443/datapage.asp?id=230"
+  },
+  {
+   "asl": "aosta",
+   "url": "https://www2.ausl.vda.it/datapage.asp?id=995&l=1",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "finale": "https://www2.ausl.vda.it/homepage.asp",
+   "file": "aosta/cd9ae9379aff.txt",
+   "titolo": "Azienda USL della Valle d'Aosta",
+   "sha": "f261198b4d8e740ba7907dbe66622b9fabc1ae3489bfa619d407147fd044617c",
+   "caratteri": 1024,
+   "cambiata": true
+  },
+  {
+   "asl": "aosta",
+   "url": "https://www.regione.vda.it/servsociali/invalidita_civile_i/invalidi_i/default_i.asp",
    "controllata": "2026-10-22",
    "http": 200,
-   "file": "aosta/36183e8c5539.txt",
-   "titolo": "Aderire agli Screening regionali",
-   "sha": "681b2b5909cb79d9d0126421aef08bcfcd33bdf907b975f9f552ed0fcc353f96",
-   "caratteri": 4458,
-   "cambiata": false
+   "file": "aosta/1db9f0e13508.txt",
+   "titolo": "Invalidi civili, ciechi e sordomuti - Regione autonoma Valle d'Aosta",
+   "sha": "9d41c9c13900630adcc612d01f4ce2fa00bd281f4e890e56e80f81de68b920f4",
+   "caratteri": 10974,
+   "cambiata": true
+  },
+  {
+   "asl": "aosta",
+   "url": "https://www.regione.vda.it/servsociali/invalidita_civile_i/accertamento_handicap/default_i.asp",
+   "controllata": "2026-10-22",
+   "http": 404
   },
   {
    "asl": "inps-valle-d-aosta",

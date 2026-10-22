@@ -1,6 +1,6 @@
 {
  "regione": "puglia",
- "aggiornato": "2026-10-22T11:39:46.368Z",
+ "aggiornato": "2026-10-22T17:56:44.816Z",
  "pagine": [
   {
    "asl": "bari",
@@ -11,7 +11,7 @@
    "titolo": "Home - ASL Bari - PugliaSalute",
    "sha": "6b8c013508dfb6cabc60bd7c57b21d13ca54d8637633c79cd12d635f8511f38a",
    "caratteri": 11313,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bari",
@@ -33,6 +33,17 @@
    "titolo": "Porta Unica di Accesso (P.U.A.) - ASL Bari - PugliaSalute",
    "sha": "0de66413096db4d9b3e7bd3206a37bae169aae1af2595020ace274c19430256c",
    "caratteri": 5336,
+   "cambiata": false
+  },
+  {
+   "asl": "bari",
+   "url": "https://www.sanita.puglia.it/en/scelta-e-revoca-medico",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "bari/681884fd6a55.txt",
+   "titolo": "Scelta e Revoca Medico - PugliaSalute",
+   "sha": "228e450103547e9f2df20b63fdb79725fcb11d88e61c9bc7f3d66d4b2f423578",
+   "caratteri": 5879,
    "cambiata": false
   },
   {
@@ -77,7 +88,7 @@
    "titolo": "Home - ASL Bari - PugliaSalute",
    "sha": "d3a94794589525d5692cf214916aa6e3f1153f7a5cd933fe035224a01a9a8e16",
    "caratteri": 10761,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bari",
@@ -99,28 +110,6 @@
    "titolo": "Assistenza Domiciliare Integrata - ADI e Programmata - ADP - ASL Bari - PugliaSalute",
    "sha": "660bcdbc9f6b36c9c4dc273c8ee642233577352a4c2f6263471e5a3065b71f8d",
    "caratteri": 5804,
-   "cambiata": false
-  },
-  {
-   "asl": "bari",
-   "url": "https://www.sanita.puglia.it/web/asl-bari/-/-avviciniamoci-asl-bari-presenta-il-percorso-di-tutela-per-visite-ed-esami-per-determinate-fasce-di-utenti",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "bari/39ace2ee5bbb.txt",
-   "titolo": "“Avviciniamoci”, ASL Bari presenta il Percorso di tutela per visite ed esami per determinate fasce di utenti - ASL Bari - PugliaSalute",
-   "sha": "8b74850c19aa5108b4af1e01c1c09fc613ef0ba2e68ae8d01ecaa725683c3071",
-   "caratteri": 6181,
-   "cambiata": false
-  },
-  {
-   "asl": "bari",
-   "url": "https://www.sanita.puglia.it/en/scelta-e-revoca-medico",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "bari/681884fd6a55.txt",
-   "titolo": "Scelta e Revoca Medico - PugliaSalute",
-   "sha": "228e450103547e9f2df20b63fdb79725fcb11d88e61c9bc7f3d66d4b2f423578",
-   "caratteri": 5879,
    "cambiata": false
   },
   {
@@ -157,6 +146,17 @@
    "cambiata": false
   },
   {
+   "asl": "bari",
+   "url": "https://www.sanita.puglia.it/web/asl-bari/-/-avviciniamoci-asl-bari-presenta-il-percorso-di-tutela-per-visite-ed-esami-per-determinate-fasce-di-utenti",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "bari/39ace2ee5bbb.txt",
+   "titolo": "“Avviciniamoci”, ASL Bari presenta il Percorso di tutela per visite ed esami per determinate fasce di utenti - ASL Bari - PugliaSalute",
+   "sha": "8b74850c19aa5108b4af1e01c1c09fc613ef0ba2e68ae8d01ecaa725683c3071",
+   "caratteri": 6181,
+   "cambiata": false
+  },
+  {
    "asl": "barletta-andria-trani",
    "url": "https://www.sanita.puglia.it/web/asl-barletta-andria-trani",
    "controllata": "2026-10-22",
@@ -187,6 +187,17 @@
    "titolo": "Cure Domiciliari ADI - ASL Barletta Andria Trani - PugliaSalute",
    "sha": "89378474c0fdae21abc1da0a5403943cdc030832f4c1206c871ec37fac97dbbd",
    "caratteri": 7593,
+   "cambiata": false
+  },
+  {
+   "asl": "barletta-andria-trani",
+   "url": "https://www.sanita.puglia.it/en/scelta-e-revoca-medico",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "barletta-andria-trani/681884fd6a55.txt",
+   "titolo": "Scelta e Revoca Medico - PugliaSalute",
+   "sha": "228e450103547e9f2df20b63fdb79725fcb11d88e61c9bc7f3d66d4b2f423578",
+   "caratteri": 5879,
    "cambiata": false
   },
   {
@@ -234,6 +245,17 @@
    "cambiata": false
   },
   {
+   "asl": "barletta-andria-trani",
+   "url": "https://www.sanita.puglia.it/en/web/asl-barletta-andria-trani/servizio-di-assistenza-protesica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "barletta-andria-trani/e35fecc5a9df.txt",
+   "titolo": "Servizio di Assistenza Protesica - ASL Barletta Andria Trani - PugliaSalute",
+   "sha": "154f223a405ba0571d6a41c8facf6e74192c75f88e87038eafe85581c175b9f2",
+   "caratteri": 6010,
+   "cambiata": true
+  },
+  {
    "asl": "brindisi",
    "url": "https://www.sanita.puglia.it/web/asl-brindisi",
    "controllata": "2026-10-22",
@@ -253,6 +275,17 @@
    "titolo": "Porta Unica di Accesso (PUA) - ASL Brindisi - PugliaSalute",
    "sha": "0925d20ae615c4c5c3879b6a4ac11da6a7c33f7891cefde2d8e9309d57445a06",
    "caratteri": 5434,
+   "cambiata": false
+  },
+  {
+   "asl": "brindisi",
+   "url": "https://www.sanita.puglia.it/en/scelta-e-revoca-medico",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "brindisi/681884fd6a55.txt",
+   "titolo": "Scelta e Revoca Medico - PugliaSalute",
+   "sha": "228e450103547e9f2df20b63fdb79725fcb11d88e61c9bc7f3d66d4b2f423578",
+   "caratteri": 5879,
    "cambiata": false
   },
   {
@@ -300,6 +333,39 @@
    "cambiata": false
   },
   {
+   "asl": "brindisi",
+   "url": "https://www.sanita.puglia.it/web/asl-brindisi/servizio-di-assistenza-protesica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "brindisi/4e9174d9b5d4.txt",
+   "titolo": "Servizio di Assistenza Protesica - ASL Brindisi - PugliaSalute",
+   "sha": "ab0d798df3007aa9809fa8427affcbfe460dfb4bf342a78d94811253f17e3bdb",
+   "caratteri": 5694,
+   "cambiata": true
+  },
+  {
+   "asl": "brindisi",
+   "url": "https://www.sanita.puglia.it/web/asl-brindisi/-/servizio-protesi-mesagne",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "brindisi/ed0db905c0ce.txt",
+   "titolo": "Servizio Protesi Mesagne - ASL Brindisi - PugliaSalute",
+   "sha": "1e1c3f1bfb3c09b1d0df46f1cf6f0cafad72425f0430f1a00141e34b780ad825",
+   "caratteri": 6653,
+   "cambiata": true
+  },
+  {
+   "asl": "brindisi",
+   "url": "https://www.sanita.puglia.it/en/web/asl-brindisi/-/assistenza-domiciliare-integrata-adi",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "brindisi/13cf1e51e206.txt",
+   "titolo": "Assistenza Domiciliare Integrata - ADI - ASL Brindisi - PugliaSalute",
+   "sha": "57132f674f6da99e42447b43acc1fde75c3b38917f0faf71b309fea96d35add3",
+   "caratteri": 6031,
+   "cambiata": true
+  },
+  {
    "asl": "foggia",
    "url": "https://www.sanita.puglia.it/web/asl-foggia",
    "controllata": "2026-10-22",
@@ -330,6 +396,17 @@
    "titolo": "Ufficio Assistenza Domiciliare - ASL Foggia - PugliaSalute",
    "sha": "4ec95b0691537b140935a273849d106dc17ee63ca658e36f52b045fba59b8dbe",
    "caratteri": 4159,
+   "cambiata": false
+  },
+  {
+   "asl": "foggia",
+   "url": "https://www.sanita.puglia.it/en/scelta-e-revoca-medico",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "foggia/681884fd6a55.txt",
+   "titolo": "Scelta e Revoca Medico - PugliaSalute",
+   "sha": "228e450103547e9f2df20b63fdb79725fcb11d88e61c9bc7f3d66d4b2f423578",
+   "caratteri": 5879,
    "cambiata": false
   },
   {
@@ -407,7 +484,18 @@
    "titolo": "P.U.A. (Porta Unica di Accesso) - ASL Lecce - PugliaSalute",
    "sha": "bb8f03a181678701eaa21a8dd073d76daeda7a654fc05569d0062564d9cb840f",
    "caratteri": 4875,
-   "cambiata": true
+   "cambiata": false
+  },
+  {
+   "asl": "lecce",
+   "url": "https://www.sanita.puglia.it/en/scelta-e-revoca-medico",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "lecce/681884fd6a55.txt",
+   "titolo": "Scelta e Revoca Medico - PugliaSalute",
+   "sha": "228e450103547e9f2df20b63fdb79725fcb11d88e61c9bc7f3d66d4b2f423578",
+   "caratteri": 5879,
+   "cambiata": false
   },
   {
    "asl": "lecce",
@@ -465,14 +553,47 @@
    "cambiata": false
   },
   {
+   "asl": "lecce",
+   "url": "https://www.sanita.puglia.it/web/asl-lecce/-/assistenza-protesica-lecce",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "lecce/5bebcb87c8fa.txt",
+   "titolo": "Assistenza Protesica Lecce - ASL Lecce - PugliaSalute",
+   "sha": "b266b62398ad51efbe303f3c74e09be19b84bc16724dfb50f798a773c225664b",
+   "caratteri": 5310,
+   "cambiata": true
+  },
+  {
+   "asl": "lecce",
+   "url": "https://www.sanita.puglia.it/en/web/asl-lecce/servizio-di-assistenza-protesica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "lecce/2ddb58e9c8de.txt",
+   "titolo": "Servizio di Assistenza Protesica - ASL Lecce - PugliaSalute",
+   "sha": "e2a68c085856e6084253b4980d44c4578e779cf5c1cff1c42b17494fdfe2d3f0",
+   "caratteri": 4246,
+   "cambiata": true
+  },
+  {
+   "asl": "lecce",
+   "url": "https://www.sanita.puglia.it/web/asl-lecce/-/assistenza-protesica-maglie",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "lecce/d83eaa5e8c9d.txt",
+   "titolo": "Assistenza Protesica Maglie - ASL Lecce - PugliaSalute",
+   "sha": "97cf0925a9ea96071e04cdb8e3e6156da3b531720803ccd536e2123bc474f8c1",
+   "caratteri": 6017,
+   "cambiata": true
+  },
+  {
    "asl": "taranto",
    "url": "https://www.sanita.puglia.it/web/asl-taranto",
    "controllata": "2026-10-22",
    "http": 200,
    "file": "taranto/b295f08823b5.txt",
    "titolo": "Home - ASL Taranto - PugliaSalute",
-   "sha": "605edee49ad1a6eacf02a34a010b9ff688b5f7a90cd3b6617d2be618ce7c2991",
-   "caratteri": 8936,
+   "sha": "f4463f9d5038df22c54067dd3e65f35761661ede350f2a46dfcc0b614d0a6501",
+   "caratteri": 8656,
    "cambiata": true
   },
   {
@@ -495,6 +616,17 @@
    "titolo": "PORTA UNICA DI ACCESSO (P.U.A) - ASL Taranto - PugliaSalute",
    "sha": "4be7c00ec39a9560d9ce0a715609e92414e5837ebbda37475f750bc136bd65ad",
    "caratteri": 5111,
+   "cambiata": false
+  },
+  {
+   "asl": "taranto",
+   "url": "https://www.sanita.puglia.it/en/scelta-e-revoca-medico",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "taranto/681884fd6a55.txt",
+   "titolo": "Scelta e Revoca Medico - PugliaSalute",
+   "sha": "228e450103547e9f2df20b63fdb79725fcb11d88e61c9bc7f3d66d4b2f423578",
+   "caratteri": 5879,
    "cambiata": false
   },
   {
@@ -526,8 +658,8 @@
    "http": 200,
    "file": "taranto/fc06d0689439.txt",
    "titolo": "Home - ASL Taranto - PugliaSalute",
-   "sha": "7129013e45b2b8cb48e52cc8178c11e24aa4240afe54af833bd13df51e42b377",
-   "caratteri": 8377,
+   "sha": "663025d12455a10c37a55e5d5fc0d7b5927f93be07d23514d8a3988646b8e16c",
+   "caratteri": 8097,
    "cambiata": true
   },
   {
@@ -576,17 +708,6 @@
   },
   {
    "asl": "taranto",
-   "url": "https://www.sanita.puglia.it/en/web/asl-taranto/-/scelta-e-revoca-del-medico-di-famiglia",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "taranto/4f372ad4540c.txt",
-   "titolo": "Scelta e revoca del MEDICO di FAMIGLIA - ASL Taranto - PugliaSalute",
-   "sha": "328ad09da73dcc20d14728399d06f89bf78bf3f289cb0eb99642b574383b6ac4",
-   "caratteri": 4551,
-   "cambiata": false
-  },
-  {
-   "asl": "taranto",
    "url": "https://aress.sanita.puglia.it/en/web/asl-taranto/servizio-protesi",
    "controllata": "2026-10-22",
    "http": 200,
@@ -594,6 +715,17 @@
    "titolo": "Servizio Protesi - pugliasalute",
    "sha": "25ac5bc29ad8cdedd94b9803c0677e42d7b202e5c2a4d19821379f8f710d0270",
    "caratteri": 13949,
+   "cambiata": false
+  },
+  {
+   "asl": "taranto",
+   "url": "https://www.sanita.puglia.it/en/web/asl-taranto/-/scelta-e-revoca-del-medico-di-famiglia",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "taranto/4f372ad4540c.txt",
+   "titolo": "Scelta e revoca del MEDICO di FAMIGLIA - ASL Taranto - PugliaSalute",
+   "sha": "328ad09da73dcc20d14728399d06f89bf78bf3f289cb0eb99642b574383b6ac4",
+   "caratteri": 4551,
    "cambiata": false
   },
   {
@@ -908,7 +1040,7 @@
    "titolo": "CUP - ASL Taranto - PugliaSalute",
    "sha": "73bd47f2aaa511f436d5a97a397446e81cd4f3faf5ea408748388d4e336516bc",
    "caratteri": 7847,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-taranto",

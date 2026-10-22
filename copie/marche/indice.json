@@ -1,6 +1,6 @@
 {
  "regione": "marche",
- "aggiornato": "2026-10-22T11:29:32.351Z",
+ "aggiornato": "2026-10-22T17:45:19.611Z",
  "pagine": [
   {
    "asl": "pesaro-urbino",
@@ -83,8 +83,8 @@
    "http": 200,
    "file": "pesaro-urbino/5c2860425ba4.txt",
    "titolo": "Urp e Comunicazione",
-   "sha": "06c744656669085fa3d64b65653f2bfb2a56c0f00127f0470a63460f11400e6e",
-   "caratteri": 6892,
+   "sha": "09b1d2b943684fbd9ebf9964f3fc89451acfbbef8b17fa19dff2bd793de59b1a",
+   "caratteri": 6894,
    "cambiata": true
   },
   {
@@ -96,7 +96,7 @@
    "finale": "https://www.astpu.marche.it/it/strutture/uffici-amministrativi?sort=materializedName",
    "file": "pesaro-urbino/d8d17600e492.txt",
    "titolo": "Uffici e sportelli aperti al pubblico",
-   "sha": "f22ec4688a62847328ebd1178e88d3dc40eb0cf12b52bec7b0c013a08970f9e9",
+   "sha": "0063e002522f477985396ba52eb6dc04be1e80b965725434ed66e1d7348ed0a1",
    "caratteri": 2711,
    "cambiata": true
   },
@@ -109,7 +109,7 @@
    "finale": "https://www.astpu.marche.it/it/utenti/prestatori-di-cura?sort=-createdAt",
    "file": "pesaro-urbino/179629432be3.txt",
    "titolo": "Prestatori di cura",
-   "sha": "c832b9c8622c1c3226ee478ca4105c9dee207ec2fc4fdc552aa7f488e4515df5",
+   "sha": "3bd085524cbd861238ff48af2eedc31170d8b9313b3a56ed0d3b7746fa65a49d",
    "caratteri": 2920,
    "cambiata": true
   },
@@ -122,7 +122,7 @@
    "finale": "https://www.astpu.marche.it/it/come-fare-per/prenotare-disdire-o-spostare-una-visita-esame-diagnostico",
    "file": "pesaro-urbino/3701f447d9b1.txt",
    "titolo": "Prenotare, disdire o spostare una visita/esame diagnostico",
-   "sha": "b6b927aa4854aaf4db4c2e4133af3bbcdfbe78cad7a3c1b8fba0ee0f4667c0ee",
+   "sha": "8f42a1d7dfcf70bd5654b0ed5088a2f3898b83e580619c8221ffea6b99739410",
    "caratteri": 3781,
    "cambiata": true
   },
@@ -135,7 +135,7 @@
    "finale": "https://www.astpu.marche.it/it/come-fare-per/prenotare-il-prelievo-del-sangue-o-consegnare-il-campione-biologico",
    "file": "pesaro-urbino/624bd402515e.txt",
    "titolo": "Prenotare il prelievo del sangue o consegnare il campione biologico",
-   "sha": "1be57ac8c789797bc2d3ef91a6bf1d88a38b98816fa61c8f4c269eff0b04e1f7",
+   "sha": "22d6ffa835bc70828327a3bf3fd01c8eb6e6d4b879116f39ea99a2780cde71cc",
    "caratteri": 2713,
    "cambiata": true
   },
@@ -148,7 +148,7 @@
    "finale": "https://www.astpu.marche.it/it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica",
    "file": "pesaro-urbino/57f7f10a4327.txt",
    "titolo": "Telefono e posta elettronica",
-   "sha": "8ae99d2802bd8569efbcf55f532efd9cfd5a7a0fd0f2fad31293dff059891bc4",
+   "sha": "083f6c0a4623ecfef0d6df75c9ac7a27139d7b15c593024661497cdbec5a2e1d",
    "caratteri": 5318,
    "cambiata": true
   },
@@ -161,8 +161,32 @@
    "finale": "https://www.astpu.marche.it/it/organizzazione/ufficio-relazioni-con-il-pubblico",
    "file": "pesaro-urbino/32afcf32d969.txt",
    "titolo": "Ufficio Relazioni con il Pubblico",
-   "sha": "6b1b44d8f1addff76228961a674d2f50babaa5e4b1e93140ab48c6245b5abcba",
+   "sha": "a84e0981f096f17313248b2befca67551a0bbb8571ea36996a510f58c341528e",
    "caratteri": 5008,
+   "cambiata": true
+  },
+  {
+   "asl": "pesaro-urbino",
+   "url": "https://www.astpu.marche.it/it/servizi-e-prestazioni/sportelli-front-office/anagrafe-sanitaria",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "file": "pesaro-urbino/5fd0ad50f77a.txt",
+   "titolo": "Anagrafe Sanitaria",
+   "sha": "98e14c12c8a49068345267e37370ad64a3c72f967f0d99d3378c4de9f61d04f0",
+   "caratteri": 5298,
+   "cambiata": true
+  },
+  {
+   "asl": "pesaro-urbino",
+   "url": "https://www.astpu.marche.it/it/come-fare-per/richiedere-la-copia-della-cartella-clinica",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "file": "pesaro-urbino/64da6e471cb6.txt",
+   "titolo": "Richiedere la copia della cartella clinica",
+   "sha": "f7624fa7c14ffc7a3c4745ec5d1c944088c60dc550d96a4a478c9a1c38ff3425",
+   "caratteri": 3746,
    "cambiata": true
   },
   {
@@ -336,7 +360,7 @@
    "finale": "https://www.astancona.marche.it/it/come-fare-per/prenotare-una-visita-presso-la-commissione-medica-locale-patenti",
    "file": "ancona/104ad17399ec.txt",
    "titolo": "Prenotare una visita presso la Commissione Medica Locale Patenti",
-   "sha": "7d896467e893fe4adc9855f298825dade451231e8924fe84c8feb2c814af2e0b",
+   "sha": "5a590906f5c48e1f37e561eb2817a1714dc9eea138e6003c9f32cc548603ceb7",
    "caratteri": 3475,
    "cambiata": true
   },
@@ -393,6 +417,30 @@
    "cambiata": false
   },
   {
+   "asl": "ancona",
+   "url": "https://www.astancona.marche.it/it/come-fare-per/scegliere-cambiare-un-medico-di-medicina-generale-o-pediatra-di-libera-scelta",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "file": "ancona/3ebf14e33302.txt",
+   "titolo": "Scegliere/cambiare un medico di medicina generale o pediatra di libera scelta",
+   "sha": "5b3293031bd59d3cdfb6efc6e57a61a4fce42c279308c13edae3427c118f9094",
+   "caratteri": 2964,
+   "cambiata": true
+  },
+  {
+   "asl": "ancona",
+   "url": "https://www.astancona.marche.it/it/servizi-e-prestazioni/sportelli-front-office/sportello-anagrafe-assistiti",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "file": "ancona/6d2d67d3d702.txt",
+   "titolo": "Sportello Anagrafe Assistiti",
+   "sha": "f15d237e61fa5f64a9496e09d5e616d01ea133c7d6721fffe814dbfd4f118ee2",
+   "caratteri": 12208,
+   "cambiata": true
+  },
+  {
    "asl": "macerata",
    "url": "https://www.astmc.marche.it/it",
    "controllata": "2026-10-22",
@@ -439,7 +487,7 @@
    "titolo": "Ufficio Relazioni con il Pubblico (URP)",
    "sha": "c5358a73fb5f77716b3cd530c78dfcb3514a85fc075fc8e69532b75ce54fe395",
    "caratteri": 4620,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "macerata",
@@ -451,7 +499,7 @@
    "titolo": "UOC Organizzazione dei Servizi Sanitari di Base DISTRETTO MACERATA",
    "sha": "aa29abe91324a47d96e3bbc06724b34276449a8cfea0fafd9c84ab8df609e0f8",
    "caratteri": 18450,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "macerata",
@@ -461,9 +509,9 @@
    "http": 200,
    "file": "macerata/c6a7df1a553e.txt",
    "titolo": "UFFICIO RELAZIONI CON IL PUBBLICO",
-   "sha": "1893dd7838caebf537330657dfe8f806c5646c106792bcc4de867cb1a51eb76e",
-   "caratteri": 4096,
-   "cambiata": false
+   "sha": "5e1abb5b61df2c0d99022f13c6d1b5080e82bb7facbe944242b8f586807235c0",
+   "caratteri": 4095,
+   "cambiata": true
   },
   {
    "asl": "macerata",
@@ -473,9 +521,9 @@
    "http": 200,
    "file": "macerata/f012ad894d81.txt",
    "titolo": "Sedi ANAGRAFE/PRENOTAZIONI/CASSA",
-   "sha": "815cbd3114769620de229caa9d07ec749703b2a4b8ec397de2b967ef2c0201d6",
-   "caratteri": 2797,
-   "cambiata": false
+   "sha": "228dd639abfe8d20d9fa858f5fcf1601252fde45ecae0f74d4bedca678794982",
+   "caratteri": 2796,
+   "cambiata": true
   },
   {
    "asl": "macerata",
@@ -486,8 +534,8 @@
    "finale": "https://www.astmc.marche.it/it/strutture/altre-strutture?sort=materializedName",
    "file": "macerata/e31e60c20d77.txt",
    "titolo": "Altre strutture",
-   "sha": "8637da9850c5ee274f24f3277fa5efb9fbbcb30f23664da997582b692252f399",
-   "caratteri": 2850,
+   "sha": "90305771a2aeb7bf2e0af819cdce6541907043a6f157cc7b9340106927b173f3",
+   "caratteri": 2849,
    "cambiata": true
   },
   {
@@ -499,8 +547,8 @@
    "finale": "https://www.astmc.marche.it/it/ast-comunica/notizie/da-venerdi-16-ottobre-la-guardia-medica-sara-attiva-presso-la-casa-di-comunita-di-corridonia",
    "file": "macerata/15dadcfee50a.txt",
    "titolo": "Da venerdì 16 ottobre la Guardia Medica sarà attiva presso la Casa di Comunità di Corridonia",
-   "sha": "7196b1d4b43fb0b2f7882c36f9a475d3da398fc877099c3b68b15f2b455f2458",
-   "caratteri": 3494,
+   "sha": "f93a4f1add44ef80c2c16b2c7df50c5f9ccac7cdf357c294e4cfec784dbb4b1f",
+   "caratteri": 3493,
    "cambiata": true
   },
   {
@@ -512,8 +560,8 @@
    "finale": "https://www.astmc.marche.it/it/ast-comunica/comunicati-stampa/nuovo-percorso-cup-per-pazienti-maculopatici-all-ospedale-di-san-severino",
    "file": "macerata/800b81edbe5b.txt",
    "titolo": "Nuovo percorso CUP per pazienti maculopatici all’Ospedale di San Severino",
-   "sha": "6b3b2ca55a88057cf75b9472afb9e019037acc57f87808af9f0cc045145830d6",
-   "caratteri": 4824,
+   "sha": "87a1860027e023d949eb78fcba5e1711dc777af5454158379bd8590452a3d214",
+   "caratteri": 4823,
    "cambiata": true
   },
   {
@@ -525,8 +573,8 @@
    "finale": "https://www.astmc.marche.it/it/argomenti/cure-domiciliari?sort=-createdAt",
    "file": "macerata/f749e6beeafe.txt",
    "titolo": "Cure domiciliari",
-   "sha": "f805193f474cda5440115087e75af388ca421290eefeda1479b8ad75f5441d64",
-   "caratteri": 2569,
+   "sha": "6c64fa7365bad8b1d310941f6b24a8aa3e52d1bc70ad3890303988c27acd8567",
+   "caratteri": 2568,
    "cambiata": true
   },
   {
@@ -538,8 +586,20 @@
    "finale": "https://www.astmc.marche.it/it/organizzazione/ufficio-relazioni-con-il-pubblico",
    "file": "macerata/7eed553d4505.txt",
    "titolo": "UFFICIO RELAZIONI CON IL PUBBLICO",
-   "sha": "1893dd7838caebf537330657dfe8f806c5646c106792bcc4de867cb1a51eb76e",
-   "caratteri": 4096,
+   "sha": "5e1abb5b61df2c0d99022f13c6d1b5080e82bb7facbe944242b8f586807235c0",
+   "caratteri": 4095,
+   "cambiata": true
+  },
+  {
+   "asl": "macerata",
+   "url": "https://www.astmc.marche.it/it/come-fare-per/richiedere-cartelle-cliniche",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "file": "macerata/9dc022db6de8.txt",
+   "titolo": "RICHIEDERE CARTELLE CLINICHE",
+   "sha": "5558255fe60d6282a899024f0d969ff76853e9f454c07564ad7784ec43dc7cb2",
+   "caratteri": 2236,
    "cambiata": true
   },
   {
@@ -553,7 +613,7 @@
    "titolo": "AST Fermo",
    "sha": "477938bd6785a43ecf0de2e92ef1c2cc9d8c317f5732fe52af6466aa5733c70e",
    "caratteri": 3815,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "fermo",
@@ -703,6 +763,30 @@
    "cambiata": false
   },
   {
+   "asl": "fermo",
+   "url": "https://www.astfm.marche.it/it/note-legali",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "file": "fermo/3408ff7540cd.txt",
+   "titolo": "Note legali",
+   "sha": "20b7144c4246ce5950be30e181bac2ab25f0ab53a4c0424aa0a90cb0910837c8",
+   "caratteri": 1916,
+   "cambiata": true
+  },
+  {
+   "asl": "fermo",
+   "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/sportelli-front-office/anagrafe-assistiti",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "file": "fermo/b91d1a416128.txt",
+   "titolo": "Anagrafe Assistiti",
+   "sha": "b4a4f16c0a6918f8aea13f23ce7549fbaea24652a79036a310cc831cdf4d36c8",
+   "caratteri": 10429,
+   "cambiata": true
+  },
+  {
    "asl": "ascoli-piceno",
    "url": "https://www.astap.marche.it/it",
    "controllata": "2026-10-22",
@@ -710,9 +794,9 @@
    "http": 200,
    "file": "ascoli-piceno/1ab10ff0fd99.txt",
    "titolo": "AST Ascoli Piceno",
-   "sha": "cb9354948f9cebfad881307a13a468dc0daec5928ff26599545746b24c99a949",
+   "sha": "316f0d088757196643849629e9f5f897350e6871b333f7e34648d6904e1fe1d9",
    "caratteri": 5445,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "ascoli-piceno",
@@ -723,9 +807,9 @@
    "finale": "https://www.astap.marche.it/it/come-fare-per/come-prenotare-una-prestazione-con-priorita-urgente-u",
    "file": "ascoli-piceno/72fc1a7400a4.txt",
    "titolo": "Come prenotare una prestazione con priorità urgente (U)",
-   "sha": "54d648e70af010b340aac3e2d0772c48c0d2d71bcd9345178ec0fc296b971e37",
+   "sha": "e5592dcbdffce5f183888611cbde7cea989b81280848370cb5daacd8cddd472f",
    "caratteri": 4249,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "ascoli-piceno",
@@ -735,9 +819,9 @@
    "http": 200,
    "file": "ascoli-piceno/22f558e05726.txt",
    "titolo": "Prenotare, disdire o spostare una visita/esame diagnostico",
-   "sha": "4e406300dead5f92fce9022af84020c609edf40cd74243594fff77641dc1d9b2",
+   "sha": "6af11e1492fa2c88ab1cd163198cd6d9b3da593c300f7a61db6af86bbb665096",
    "caratteri": 5155,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "ascoli-piceno",
@@ -747,7 +831,7 @@
    "http": 200,
    "file": "ascoli-piceno/b4fa5a89477a.txt",
    "titolo": "Ufficio relazioni con il Pubblico (URP)",
-   "sha": "a2e50d0113b57ef224e6784356c690f6307007b7aa86bcd154358e05471074ba",
+   "sha": "997f48682cf69cdecb1faf32d21687c4233fce4160ba8d94b9291cdce8db3cda",
    "caratteri": 5652,
    "cambiata": true
   },
@@ -759,9 +843,9 @@
    "http": 200,
    "file": "ascoli-piceno/64f7cbcfbd32.txt",
    "titolo": "ADI - ASSISTENZA DOMICILIARE INTEGRATA - AP",
-   "sha": "978872d610421e24dbc43a9b1947822a820b64838b3d258bc5d68e11a604306d",
+   "sha": "645bddf5b0ae1781004caa3083d775a97715de0095cef4c1c0c96bfb95924721",
    "caratteri": 9485,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "ascoli-piceno",
@@ -771,9 +855,9 @@
    "http": 200,
    "file": "ascoli-piceno/23ee40d1e0d1.txt",
    "titolo": "ADI - ASSISTENZA DOMICILIARE INTEGRATA - SBT",
-   "sha": "baea1f0902f3e0557ed2ef0008a6d8686f433967562e38e3dac2bfb1b1e350c0",
+   "sha": "a864fdd824da649e817edb58d6a64a0c2adc098a578cd67f6ae694e165a6bee5",
    "caratteri": 9529,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "ascoli-piceno",
@@ -783,9 +867,9 @@
    "http": 200,
    "file": "ascoli-piceno/f2534ada171d.txt",
    "titolo": "Centro Unico Prenotazioni",
-   "sha": "bfd298de74d772d60a2957fb577bbfb1d3be4a4c317d88fa0fd8efaf5a3f86aa",
+   "sha": "900e72e42c06fcd8b7f2dc64daadc27153f500f2e8b566d948c2be226f62ebb9",
    "caratteri": 7558,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "ascoli-piceno",
@@ -795,9 +879,9 @@
    "http": 200,
    "file": "ascoli-piceno/bae3369e1cf7.txt",
    "titolo": "UOC Cure Primarie",
-   "sha": "9ac108218191a69b5c54433b73fcc41e549eea3ae8a1bfe768d7356e03d2a04d",
+   "sha": "b04e3a50dace96793fd02860aa338d5ebb7214d8844ad33b023a8f7c7063089d",
    "caratteri": 4803,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "ascoli-piceno",
@@ -807,9 +891,9 @@
    "http": 200,
    "file": "ascoli-piceno/2ad480175639.txt",
    "titolo": "UOC Distretto di Ascoli Piceno",
-   "sha": "9963783e3ca71218c66fb340d7c5e1f424aea6649f6c7c7f44d8c778e1418b12",
-   "caratteri": 4357,
-   "cambiata": false
+   "sha": "b40b3796e90c0bf280925d4c6c8e92659d97ab632fd896bd9a65212d988e5c8e",
+   "caratteri": 4355,
+   "cambiata": true
   },
   {
    "asl": "ascoli-piceno",
@@ -820,7 +904,7 @@
    "finale": "https://www.astap.marche.it/it/organizzazione/ufficio-relazioni-con-il-pubblico",
    "file": "ascoli-piceno/c371cf5ed249.txt",
    "titolo": "Ufficio Relazioni con il Pubblico",
-   "sha": "f9f698c8930c3d06d70a471a53fe2c022b350b51923dc649c800d10fadf6aa3f",
+   "sha": "c3bf6a11097af8ab49587607e963a611fec303cff10313c0a5b0f46822dcd82d",
    "caratteri": 10120,
    "cambiata": true
   },
@@ -833,9 +917,33 @@
    "finale": "https://www.astap.marche.it/it/organizzazione/centro-unico-prenotazioni",
    "file": "ascoli-piceno/076620b4eb36.txt",
    "titolo": "Centro Unico Prenotazioni",
-   "sha": "827dc1ff2fc6877d644f1f34387cad478fda7b2c91bcb147ed5c69c982431006",
+   "sha": "25868765898721ab37194d6495222961cfb35b49c6a1066404255d7d70a69458",
    "caratteri": 7526,
-   "cambiata": false
+   "cambiata": true
+  },
+  {
+   "asl": "ascoli-piceno",
+   "url": "https://www.astap.marche.it/it/servizi-e-prestazioni/sportelli-front-office/anagrafe-assistiti",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "file": "ascoli-piceno/1c18d66f0ac1.txt",
+   "titolo": "ANAGRAFE ASSISTITI",
+   "sha": "28e4601e191ff277f45b5d232c66d8e1ee237a0d66af87f94d4913ed9533fca7",
+   "caratteri": 9532,
+   "cambiata": true
+  },
+  {
+   "asl": "ascoli-piceno",
+   "url": "https://www.astap.marche.it/it/servizi-e-prestazioni/sportelli-front-office/ufficio-cartelle-cliniche",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "file": "ascoli-piceno/3c0041753c2f.txt",
+   "titolo": "Ufficio Cartelle Cliniche",
+   "sha": "65b12423472785ab1ec38c0358c18b4d358064013ffbe6644085fd97d39d670f",
+   "caratteri": 8827,
+   "cambiata": true
   },
   {
    "asl": "inps-marche",
@@ -954,19 +1062,19 @@
    "http": 200,
    "file": "regione-marche/c2b6a92d67b9.txt",
    "titolo": "Salute",
-   "sha": "208ad5a284d3e0016b39f9c9b167f0d89f9d60b03885cb553d054d15eeb2f8cc",
-   "caratteri": 26702,
-   "cambiata": false
+   "sha": "2816a841dd8fa50d378c7a4b720809828d4a70352b0950155d731c132c8d6340",
+   "caratteri": 26687,
+   "cambiata": true
   },
   {
    "asl": "regione-marche",
    "url": "https://www.regione.marche.it/Regione-Utile/Salute/Servizi-delle-AST",
    "controllata": "2026-10-22",
    "http": 200,
-   "finale": "https://validate.perfdrive.com/?ssa=a893caed-9cb0-4675-9c45-6128c1300dad&ssb=68562268093&ssc=https%3A%2F%2Fwww.regione.marche.it%2FRegione-Utile%2FSalute%2FServizi-delle-AST&ssi=38433fd8-d3ou-43a9-9ab8-71dc1ff0ec9e&ssk=botmanager_support@radware.com&ssm=38831728812123687107574598203522&ssn=af31ad3eed78bdd847cdbaefce7c98c6c1f762464a11-5e57-44c8-a66708&sso=3bcd2b1d-7e40c66687ca720e5580353b475a3adcb9d4dcfbd5cf3ce0&ssp=80042851121792648159179265967022815&ssq=53658996854526403648568545816019690300767&ssr=MTk1LjIzMS43OS4yMzQ=&sst=Mozilla/5.0+(compatible;+GuidaSanita-controllo/1.0;++https://guidasanita.it/fonti.html;+info@guidasanita.it)&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2ZjMDAwMzBmYjcwZTYtMDg1MS00NDg5LTlkZWUtYmQ4OTE4NWQyZDEzMS0xNzkyNjY4NTQ1ODkzMC0wMGFjN2M1YmZhZmM0Mjc3Y2ZjMTAiLCJfX3V6bWYiOiI3ZjkwMDA2MjQ2NGExMS01ZTU3LTQ0YzgtYWIxZC03ZTQwYzY2Njg3Y2ExLTE3OTI2Njg1NDU4OTMwLTAwNTBmZjBmZjRkZWM4YjFmY2YxMCIsInJkIjoicmVnaW9uZS5tYXJjaGUuaXQifQ==",
+   "finale": "https://validate.perfdrive.com/?ssa=9aafe664-7e1d-4cea-b56f-d6591a256892&ssb=91138201851&ssc=https%3A%2F%2Fwww.regione.marche.it%2FRegione-Utile%2FSalute%2FServizi-delle-AST&ssi=1f1bcd9d-d3ou-4a2b-a125-22345acbae8f&ssk=botmanager_support@radware.com&ssm=28127688347171273104719878315439&ssn=8ea236382046b109bf55f3b37ac875483f6126b677c6-81dd-4e5e-b144e0&sso=aef53fc4-9bad7dba9984beb6302cc22c977a978ebdc7e2e5f941b681&ssp=20751835501792630804179264051937017&ssq=04854939109453739447091094704847734004615&ssr=MTk1LjIzMS43OS4yMzQ=&sst=Mozilla/5.0+(compatible;+GuidaSanita-controllo/1.0;++https://guidasanita.it/fonti.html;+info@guidasanita.it)&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2ZjMDAwMzE0ZTcwNjctZTVlOS00MmY2LTljOWMtMTQ1NjM1YjEyYzUzMS0xNzkyNjkxMDk0NzE5MC0wMGFmOGE5OThjNjdmZTI5MzZjMTAiLCJfX3V6bWYiOiI3ZjkwMDAyNmI2NzdjNi04MWRkLTRlNWUtYmZjNC05YmFkN2RiYTk5ODQxLTE3OTI2OTEwOTQ3MTkwLTAwNWI3NGJiZTNiZDRkMmM3ZGUxMCIsInJkIjoicmVnaW9uZS5tYXJjaGUuaXQifQ==",
    "file": "regione-marche/a6d892e427fb.txt",
    "titolo": "Radware Captcha Page",
-   "sha": "4e9d179c87fb2f339f90815ff0c2620af92cd2dd7fa6961650b568691d480a73",
+   "sha": "7880ea79f2f246903cbf365f8b0c24ac91a91aa79cf89825d39c8dcfe50b528f",
    "caratteri": 732,
    "cambiata": true
   },
@@ -975,10 +1083,10 @@
    "url": "https://www.regione.marche.it/Regione-Utile/Salute/Strumenti-di-accesso-a-myCUPMarche",
    "controllata": "2026-10-22",
    "http": 200,
-   "finale": "https://validate.perfdrive.com/?ssa=178053a5-2a6a-4371-9daf-8b475803ca75&ssb=74701295320&ssc=https%3A%2F%2Fwww.regione.marche.it%2FRegione-Utile%2FSalute%2FStrumenti-di-accesso-a-myCUPMarche&ssi=4b070804-d3ou-401b-a6ee-cf2e0c5155d0&ssk=botmanager_support@radware.com&ssm=98640333231422730109353935161698&ssn=167fb70d0c6bbee49e7b045e13b2956a9891e5f5c43d-8d38-4576-bfe5d0&sso=6336d574-fabd329fd1f95941662d970caf5b49bee224799e876239b7&ssp=91381647961792643178179260599188198&ssq=02605846854793856469968547212888496760455&ssr=MTk1LjIzMS43OS4yMzQ=&sst=Mozilla/5.0+(compatible;+GuidaSanita-controllo/1.0;++https://guidasanita.it/fonti.html;+info@guidasanita.it)&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2ZjMDAwMjYyNTRlNzUtMmI0ZC00NDYyLTkxM2UtMjA3ZmRjYTk5NzI4MS0xNzkyNjY4NTQ3OTYwMC0wMGFhZGZhZWQ2OGNiZmI4ZTdiMTAiLCJfX3V6bWYiOiI3ZjkwMDBlNWY1YzQzZC04ZDM4LTQ1NzYtYjU3NC1mYWJkMzI5ZmQxZjkxLTE3OTI2Njg1NDc5NjAwLTAwNTkwOTZhZjQ2NGQxNmRlN2MxMCIsInJkIjoicmVnaW9uZS5tYXJjaGUuaXQifQ==",
+   "finale": "https://validate.perfdrive.com/?ssa=c14cf3ab-590f-4434-91a7-1a48ae10ea05&ssb=62464267613&ssc=https%3A%2F%2Fwww.regione.marche.it%2FRegione-Utile%2FSalute%2FStrumenti-di-accesso-a-myCUPMarche&ssi=defa69b0-d3ou-415d-8579-73dd6f67f66e&ssk=botmanager_support@radware.com&ssm=41289245596728758103218322342395&ssn=47aaf8b84ebd6773896e20462ca0171dc753e6f0c3c7-9026-460d-bb3770&sso=9ecba912-6a72985d39944e6753efce098692e553394cbbfeea3f580b&ssp=27761413421792663158179267734829881&ssq=14074119109645313450891096451109213191554&ssr=MTk1LjIzMS43OS4yMzQ=&sst=Mozilla/5.0+(compatible;+GuidaSanita-controllo/1.0;++https://guidasanita.it/fonti.html;+info@guidasanita.it)&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2ZjMDAwZDhiMzIyM2UtYTE5Zi00ZDM5LTgyZjgtOWMzMWI2NDMwYjg4MS0xNzkyNjkxMDk2NzY4MC0wMGE0Y2UzNDIzYmU5ZDdlYjBhMTAiLCJfX3V6bWYiOiI3ZjkwMDBlNmYwYzNjNy05MDI2LTQ2MGQtYjkxMi02YTcyOTg1ZDM5OTQxLTE3OTI2OTEwOTY3NjgwLTAwNTNhYTc1OGZiN2QyMzQ5MzIxMCIsInJkIjoicmVnaW9uZS5tYXJjaGUuaXQifQ==",
    "file": "regione-marche/74aad60922ab.txt",
    "titolo": "Radware Captcha Page",
-   "sha": "9baf3938c98641b7de25f14cd2b6e6faa6df8477cc3ee9d1466093a3736fefbf",
+   "sha": "8098edc897bb1f903261d37e777210dd54c23d681b82be32debfef33b008c5d7",
    "caratteri": 749,
    "cambiata": true
   },
@@ -987,10 +1095,10 @@
    "url": "https://www.regione.marche.it/Entra-in-Regione/URP/La-Regione-risponde/Faq/Post/86528/Come-posso-prenotare-una-prestazione-sanitaria-on-line-tramite-il-portale-o-l-App-MyCupMarche",
    "controllata": "2026-10-22",
    "http": 200,
-   "finale": "https://validate.perfdrive.com/?ssa=950bf4d7-8d52-4a4e-86da-12a32257f756&ssb=96482280617&ssc=https%3A%2F%2Fwww.regione.marche.it%2FEntra-in-Regione%2FURP%2FLa-Regione-risponde%2FFaq%2FPost%2F86528%2FCome-posso-prenotare-una-prestazione-sanitaria-on-line-tramite-il-portale-o-l-App-MyCupMarche&ssi=6cb04ff3-d3ou-450a-bf2d-2b64f3c96d86&ssk=botmanager_support@radware.com&ssm=18450640368003985104528946701228&ssn=08081919c392c1452d3d93ad23ed7eca64d6053f4eda-a400-42d2-af5f31&sso=2796b6a8-ca3680c8dbf29f5dda776c45636d4e907ef551d85f52c228&ssp=29400186471792627662179261989348463&ssq=89271486854959178066968549461633661488418&ssr=MTk1LjIzMS43OS4yMzQ=&sst=Mozilla/5.0+(compatible;+GuidaSanita-controllo/1.0;++https://guidasanita.it/fonti.html;+info@guidasanita.it)&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2ZjMDAwZjJkNzNjMTYtODJlOS00OGUyLTkyMjktMTExODRmNmNjYjhmMS0xNzkyNjY4NTUwMDA1MC0wMGFjMzA5OTE3MDIwODU1NmVmMTAiLCJfX3V6bWYiOiI3ZjkwMDAwNTNmNGVkYS1hNDAwLTQyZDItYTZhOC1jYTM2ODBjOGRiZjIxLTE3OTI2Njg1NTAwMDUwLTAwNWRkY2I1MGVlNWUwZmU1ZGUxMCIsInJkIjoicmVnaW9uZS5tYXJjaGUuaXQifQ==",
+   "finale": "https://validate.perfdrive.com/?ssa=8d79ce99-d3d1-42f4-883a-06b31b9f89e2&ssb=93580236323&ssc=https%3A%2F%2Fwww.regione.marche.it%2FEntra-in-Regione%2FURP%2FLa-Regione-risponde%2FFaq%2FPost%2F86528%2FCome-posso-prenotare-una-prestazione-sanitaria-on-line-tramite-il-portale-o-l-App-MyCupMarche&ssi=370429b5-d3ou-489c-b180-8f8a9c6b4b0e&ssk=botmanager_support@radware.com&ssm=85084800371989372100861020638571&ssn=424a4737cbba7564596200b16e61dec04d764d7841c1-bcab-4910-86af31&sso=17261120-ed03ab99350854d99dc6c195b70a9d83bc801991479454fe&ssp=37809110241792653148179268936623920&ssq=44598469109862644191591098290924742549159&ssr=MTk1LjIzMS43OS4yMzQ=&sst=Mozilla/5.0+(compatible;+GuidaSanita-controllo/1.0;++https://guidasanita.it/fonti.html;+info@guidasanita.it)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InJlZ2lvbmUubWFyY2hlLml0IiwiX191em1mIjoiN2Y5MDAwNGQ3ODQxYzEtYmNhYi00OTEwLTgxMjAtZWQwM2FiOTkzNTA4MS0xNzkyNjkxMDk4Nzk3MC0wMDVjNGFjZjdkZTkzMGIwMTU1MTAiLCJ1em14IjoiN2ZjMDAwMTNhNjlhOTktZGQ4ZC00YzAzLThkYjQtY2E1ODMwZGQzMTY3MS0xNzkyNjkxMDk4Nzk3MC0wMGE3OWI1MWY2NzEyNTA2ZjMxMTAifQ==",
    "file": "regione-marche/4a90efb26e02.txt",
    "titolo": "Radware Captcha Page",
-   "sha": "a1f1ba3e14e45e5678f0c979b96b8fffd1b4ebd8646c037b8417d784fc469018",
+   "sha": "8c55d53074ea3571ec85f107bfc72c2ef989229d08602537908bfaeccb79f8a4",
    "caratteri": 843,
    "cambiata": true
   },
@@ -999,10 +1107,10 @@
    "url": "https://www.regione.marche.it/News-ed-Eventi/Post/111991/CUP-Marche-occhio-alle-truffe",
    "controllata": "2026-10-22",
    "http": 200,
-   "finale": "https://validate.perfdrive.com/?ssa=7120293d-fc4a-4cbf-b759-dfe5ae9b2e0f&ssb=61489214306&ssc=https%3A%2F%2Fwww.regione.marche.it%2FNews-ed-Eventi%2FPost%2F111991%2FCUP-Marche-occhio-alle-truffe&ssi=73092931-d3ou-4faa-bf30-fb000b6acdbf&ssk=botmanager_support@radware.com&ssm=34616882178303498103081996300682&ssn=d1c883d9163ebc7479a325b7cf0a8f65fda146d80560-5a39-4fdb-9003d9&sso=537868bd-b672135792d573bfc0306ad80c0fb5338eb4e5d10d8b3d1a&ssp=16709218601792634775179262601716901&ssq=72609766855226457337068552801319637432675&ssr=MTk1LjIzMS43OS4yMzQ=&sst=Mozilla/5.0+(compatible;+GuidaSanita-controllo/1.0;++https://guidasanita.it/fonti.html;+info@guidasanita.it)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDA0NmQ4MDU2MC01YTM5LTRmZGItOThiZC1iNjcyMTM1NzkyZDUxLTE3OTI2Njg1NTIwNjUwLTAwNTE2OWM4ZThkYmI0MTVhYmUxMCIsInJkIjoicmVnaW9uZS5tYXJjaGUuaXQiLCJ1em14IjoiN2ZjMDAwMTM3MWJiZjgtZWFiYS00MWY5LWFjNjgtNDE5NmNiNDY1MTU2MS0xNzkyNjY4NTUyMDY1MC0wMGFiOGZjYjc3NTE2MDBmYjExMTAifQ==",
+   "finale": "https://validate.perfdrive.com/?ssa=6fd6f39c-40f6-430f-b599-00c7bc0bcc1d&ssb=18053217764&ssc=https%3A%2F%2Fwww.regione.marche.it%2FNews-ed-Eventi%2FPost%2F111991%2FCUP-Marche-occhio-alle-truffe&ssi=3cec6f8d-d3ou-4d3f-aa52-425d4f54cdb8&ssk=botmanager_support@radware.com&ssm=63508287799071902100973194619200&ssn=0e92a23b7dd4a1f1676734da226c55daff39becfdfe5-41ff-4ddd-a97378&sso=4ba285bb-a47f1db24c9fe4b7d9852098b29484caa2d36077195fb74f&ssp=92639979141792662610179267635905738&ssq=55776319110070379414991100520365584445898&ssr=MTk1LjIzMS43OS4yMzQ=&sst=Mozilla/5.0+(compatible;+GuidaSanita-controllo/1.0;++https://guidasanita.it/fonti.html;+info@guidasanita.it)&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2ZjMDAwNzU3MmJkZDEtZGY1Ni00NzBhLWIyYzAtNzY3MjNhNWI1YzM1MS0xNzkyNjkxMTAwODI2MC0wMGE5YTFkYTYwN2NhNDYxMmUwMTAiLCJfX3V6bWYiOiI3ZjkwMDBiZWNmZGZlNS00MWZmLTRkZGQtYTViYi1hNDdmMWRiMjRjOWYxLTE3OTI2OTExMDA4MjYwLTAwNTdlYjI4OWZmNjQxMWExNzgxMCIsInJkIjoicmVnaW9uZS5tYXJjaGUuaXQifQ==",
    "file": "regione-marche/6c66207692bc.txt",
    "titolo": "Radware Captcha Page",
-   "sha": "ab41e265e54af9dfa4dfece19963e41e259cc924e191a70a4d58de41fd7a230b",
+   "sha": "e79b2dbc5b1d1d461459a1efbf99a03cb66b31c188310749064a7254e073962b",
    "caratteri": 750,
    "cambiata": true
   },
@@ -1011,10 +1119,10 @@
    "url": "https://www.regione.marche.it/News-ed-Eventi/Post/112848/Attenzione-a-falsi-SMS-e-chiamate-da-numeri-che-iniziano-per-899-e-si-spacciano-per-il-servizio-CUP-non-rispondere-n%C3%A9-richiamare",
    "controllata": "2026-10-22",
    "http": 200,
-   "finale": "https://validate.perfdrive.com/?ssa=bc71be9d-2818-4aaf-a5b7-245efda7e1e0&ssb=73964244079&ssc=https%3A%2F%2Fwww.regione.marche.it%2FNews-ed-Eventi%2FPost%2F112848%2FAttenzione-a-falsi-SMS-e-chiamate-da-numeri-che-iniziano-per-899-e-si-spacciano-per-il-servizio-CUP-non-rispondere-n%25C3%25A9-richiamare&ssi=7016e79b-d3ou-4e78-86ab-449e42d47d33&ssk=botmanager_support@radware.com&ssm=99593432789821196101560697675456&ssn=b4ca89cda9db51293ae10d4ba674f8471376fb614d62-b500-4ff6-855d43&sso=e6d59f74-f6af9587746042004617a4bb2eaa8717e05ca18db6ab73fc&ssp=90077380801792668383179263689805338&ssq=71886966855499808493068554414538071653347&ssr=MTk1LjIzMS43OS4yMzQ=&sst=Mozilla/5.0+(compatible;+GuidaSanita-controllo/1.0;++https://guidasanita.it/fonti.html;+info@guidasanita.it)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InJlZ2lvbmUubWFyY2hlLml0IiwiX191em1mIjoiN2Y5MDAwZmI2MTRkNjItYjUwMC00ZmY2LThmNzQtZjZhZjk1ODc3NDYwMS0xNzkyNjY4NTU0MTEyMC0wMDU5MWZiNTA2Y2FkMjYzODAzMTAiLCJ1em14IjoiN2ZjMDAwYjgzZmM1ZDYtMjA3Yy00Y2Y1LWI4MGQtYjc2YTJjNmEyZGZiMS0xNzkyNjY4NTU0MTEyMC0wMGE5NmE0NzI3ZmQ4NzU4MDAzMTAifQ==",
+   "finale": "https://validate.perfdrive.com/?ssa=ed083e88-16ca-4c7a-a6a0-c01890d2eb82&ssb=06175236487&ssc=https%3A%2F%2Fwww.regione.marche.it%2FNews-ed-Eventi%2FPost%2F112848%2FAttenzione-a-falsi-SMS-e-chiamate-da-numeri-che-iniziano-per-899-e-si-spacciano-per-il-servizio-CUP-non-rispondere-n%25C3%25A9-richiamare&ssi=c2e0e379-d3ou-4b96-8324-a418a647f092&ssk=botmanager_support@radware.com&ssm=71383071245011002106465589720145&ssn=da65096a3763e88fd0cdf6f624a02044d6b26d89fa14-0b54-46ce-bd1bae&sso=b52e825e-6a322e48b0f4e7d8a2b25ebd8f601d5477d48ce0f7964fdc&ssp=94829149061792688387179260953756517&ssq=70699649110247362021291102361184002255868&ssr=MTk1LjIzMS43OS4yMzQ=&sst=Mozilla/5.0+(compatible;+GuidaSanita-controllo/1.0;++https://guidasanita.it/fonti.html;+info@guidasanita.it)&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2ZjMDAwNjFjOGUwYjctYjU1Mi00MWI3LWEyMDMtOGYxNDY2M2U4Y2VmMS0xNzkyNjkxMTAyODQ1MC0wMGE3MmJhZDk2Y2RkYmM4ZjhmMTAiLCJfX3V6bWYiOiI3ZjkwMDA2ZDg5ZmExNC0wYjU0LTQ2Y2UtYjI1ZS02YTMyMmU0OGIwZjQxLTE3OTI2OTExMDI4NDUwLTAwNTljNjVlZjA2OTQ5ZGMyMzAxMCIsInJkIjoicmVnaW9uZS5tYXJjaGUuaXQifQ==",
    "file": "regione-marche/293097576a00.txt",
    "titolo": "Radware Captcha Page",
-   "sha": "71b86a612f6086548f64440ccef129979e09d9e06c5293342468225b893e5715",
+   "sha": "7456cc6938e2334ff9044ca4b3b81bf9e6124bf31f5e210525517630e35facd3",
    "caratteri": 854,
    "cambiata": true
   },
@@ -1023,10 +1131,10 @@
    "url": "https://www.regione.marche.it/News-ed-Eventi/Post/112351/Progetto-definitivo-per-la-realizzazione-della-centrale-operativa-regionale-NEA-116117-Numero-europeo-armonizzato-per-cure-mediche-non-urgenti",
    "controllata": "2026-10-22",
    "http": 200,
-   "finale": "https://validate.perfdrive.com/?ssa=169b15c0-c652-41de-8466-92eaa8649468&ssb=58090248154&ssc=https%3A%2F%2Fwww.regione.marche.it%2FNews-ed-Eventi%2FPost%2F112351%2FProgetto-definitivo-per-la-realizzazione-della-centrale-operativa-regionale-NEA-116117-Numero-europeo-armonizzato-per-cure-mediche-non-urgenti&ssi=16f772d4-d3ou-4f33-b4fa-9cacbbdcd823&ssk=botmanager_support@radware.com&ssm=74156484823698898105047645787323&ssn=e6bef4bbd079157bcbc42d3e8e5bb838e63ff4b4b25a-eff2-4400-bc530f&sso=0bec6b4a-feb31f47d968c60e82618f978c1151c3926894f5ac2b54ad&ssp=69282620141792690561179267989315944&ssq=90770736855643255000868556712576806771646&ssr=MTk1LjIzMS43OS4yMzQ=&sst=Mozilla/5.0+(compatible;+GuidaSanita-controllo/1.0;++https://guidasanita.it/fonti.html;+info@guidasanita.it)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InJlZ2lvbmUubWFyY2hlLml0IiwidXpteCI6IjdmYzAwMGQ2NzA1ZTYxLWNkNTEtNGM2MC04NDBkLWY1OWQwZGU5NGRhNDEtMTc5MjY2ODU1NjM1ODAtMDBhMzI1NjhmOGEwMzg3ZmU0OTEwIiwiX191em1mIjoiN2Y5MDAwZjRiNGIyNWEtZWZmMi00NDAwLWJiNGEtZmViMzFmNDdkOTY4MS0xNzkyNjY4NTU2MzU4MC0wMDU2YzI4ZWQzYjcyMDkzYjRjMTAifQ==",
+   "finale": "https://validate.perfdrive.com/?ssa=354c1218-3ffb-44cd-a065-a73521ea5352&ssb=14051230411&ssc=https%3A%2F%2Fwww.regione.marche.it%2FNews-ed-Eventi%2FPost%2F112351%2FProgetto-definitivo-per-la-realizzazione-della-centrale-operativa-regionale-NEA-116117-Numero-europeo-armonizzato-per-cure-mediche-non-urgenti&ssi=3ef9c83f-d3ou-4e12-9709-4cb11d441b99&ssk=botmanager_support@radware.com&ssm=64293011655861832108907788662270&ssn=d28a4b6f542ee7631e75bd792fdd11cc2e4ff3de7c2f-4374-44a7-a4f8ad&sso=a17bcbfd-9ee015d4053f7acf00e02680bfbdf5bd7d19e59966c83d95&ssp=23375538721792651971179268958511957&ssq=57133979110489143000191104653113971287236&ssr=MTk1LjIzMS43OS4yMzQ=&sst=Mozilla/5.0+(compatible;+GuidaSanita-controllo/1.0;++https://guidasanita.it/fonti.html;+info@guidasanita.it)&ssu=&ssv=&ssw=&ssx=eyJ1em14IjoiN2ZjMDAwMGZmYjc1OWQtZDkzZC00NmVhLTllY2ItYTdiMjRmZjdmM2JkMS0xNzkyNjkxMTA0ODcxMC0wMGExNGE4NTk5ZWJiYTBhOTlmMTAiLCJfX3V6bWYiOiI3ZjkwMDBmM2RlN2MyZi00Mzc0LTQ0YTctYWJmZC05ZWUwMTVkNDA1M2YxLTE3OTI2OTExMDQ4NzEwLTAwNWYzZmRhYTg4N2ZmYjA0OTUxMCIsInJkIjoicmVnaW9uZS5tYXJjaGUuaXQifQ==",
    "file": "regione-marche/a7de20d37df9.txt",
    "titolo": "Radware Captcha Page",
-   "sha": "d9635d774014f6b905934507943e69b1b536051e12afdd62c4f8e339cec66bf1",
+   "sha": "a22976143353b537db4175d5cf0773428c1536aa9424c9d93a3f4921fa743843",
    "caratteri": 863,
    "cambiata": true
   },
@@ -1035,10 +1143,10 @@
    "url": "https://www.regione.marche.it/ars/Aree-di-Attivit%C3%A0/Area-Emergenza",
    "controllata": "2026-10-22",
    "http": 200,
-   "finale": "https://validate.perfdrive.com/?ssa=763c2224-b10f-44a7-8697-ece8ae1576a4&ssb=50678219236&ssc=https%3A%2F%2Fwww.regione.marche.it%2Fars%2FAree-di-Attivit%25C3%25A0%2FArea-Emergenza&ssi=a2d9cf4a-d3ou-49d2-90fb-9c5512cc080b&ssk=botmanager_support@radware.com&ssm=27374950760456221102380908424784&ssn=3f60c08ec207bd3b91108e5b17f220e560181997d6a8-4461-47f1-93d2ed&sso=94118669-923d11ee0423cabeb6687a3183b7ad7ca0d5a36b463442f8&ssp=85030031401792687910179263593355785&ssq=85652946855896778413868558784124834007915&ssr=MTk1LjIzMS43OS4yMzQ=&sst=Mozilla/5.0+(compatible;+GuidaSanita-controllo/1.0;++https://guidasanita.it/fonti.html;+info@guidasanita.it)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InJlZ2lvbmUubWFyY2hlLml0IiwiX191em1mIjoiN2Y5MDAwMTk5N2Q2YTgtNDQ2MS00N2YxLTk2NjktOTIzZDExZWUwNDIzMS0xNzkyNjY4NTU4Mzk4MC0wMDVkMDMxNzA0NDRjOWI3MTZmMTAiLCJ1em14IjoiN2ZjMDAwZWI3ZmVmNTUtNDBlMC00MjM3LThhMjEtNjg1MmQ2MGY1ZGVlMS0xNzkyNjY4NTU4Mzk4MC0wMGFkYWI0NWEyZWIzMDMxMmMyMTAifQ==",
+   "finale": "https://validate.perfdrive.com/?ssa=b0935132-9e52-4234-af98-0d94db7021e1&ssb=01570224009&ssc=https%3A%2F%2Fwww.regione.marche.it%2Fars%2FAree-di-Attivit%25C3%25A0%2FArea-Emergenza&ssi=c82dfb63-d3ou-493d-9bb6-2aaa0d9567c7&ssk=botmanager_support@radware.com&ssm=59033416129145893109090711949966&ssn=55e9e1dfc0c4081fda5c4c4b1463337b06e588fb1b60-f1a1-44f9-8e691a&sso=d26953b9-3cfa9dd72d2dbf8bb2b50e0d9f0ea50c8064c885e597d258&ssp=12889366671792673847179266692186143&ssq=10404269110602459662291106464956885788980&ssr=MTk1LjIzMS43OS4yMzQ=&sst=Mozilla/5.0+(compatible;+GuidaSanita-controllo/1.0;++https://guidasanita.it/fonti.html;+info@guidasanita.it)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDA4OGZiMWI2MC1mMWExLTQ0ZjktODNiOS0zY2ZhOWRkNzJkMmQxLTE3OTI2OTExMDY5MzIwLTAwNWE3Mzc0NmQ2ZmQ5MGEwNDQxMCIsInJkIjoicmVnaW9uZS5tYXJjaGUuaXQiLCJ1em14IjoiN2ZjMDAwNzA3ZDAyNjItMjY5Yy00NDhlLWJiZmYtNGU3Yjc1OGMyMWY2MS0xNzkyNjkxMTA2OTMxMC0wMGFkYWIzODdmMTMxZDA3NTk2MTAifQ==",
    "file": "regione-marche/245b9144e6b9.txt",
    "titolo": "Radware Captcha Page",
-   "sha": "e5f736416cff8bac7ded82f038e13f92a20149d894682816dc0f65929a67f8ef",
+   "sha": "30b65a13a27376188f5248f4a43ae1ea507c1df7b31c9e9610aef57855114696",
    "caratteri": 734,
    "cambiata": true
   },
@@ -1047,10 +1155,10 @@
    "url": "https://www.regione.marche.it/Regione-Utile/Salute/Fascicolo-Sanitario-Elettronico",
    "controllata": "2026-10-22",
    "http": 200,
-   "finale": "https://validate.perfdrive.com/?ssa=44737b8e-5ca5-4aaa-8f5f-275e7f06289e&ssb=54267245271&ssc=https%3A%2F%2Fwww.regione.marche.it%2FRegione-Utile%2FSalute%2FFascicolo-Sanitario-Elettronico&ssi=e5132b8c-d3ou-49a4-95b8-b484747facb3&ssk=botmanager_support@radware.com&ssm=09082021398722331104438533690750&ssn=e5aacb866bf0e46d7e7e320c8ca643a147f0050ea58b-b4a6-44c2-b1df19&sso=b52710ac-a2f592049bc2fd0d73ac4d9790fb68f5e84e9cde17b432e9&ssp=12996242241792658539179264417827613&ssq=58838506856032831813168560562750041192894&ssr=MTk1LjIzMS43OS4yMzQ=&sst=Mozilla/5.0+(compatible;+GuidaSanita-controllo/1.0;++https://guidasanita.it/fonti.html;+info@guidasanita.it)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDAwNTBlYTU4Yi1iNGE2LTQ0YzItYjBhYy1hMmY1OTIwNDliYzIxLTE3OTI2Njg1NjA0MzUwLTAwNWE4YWM1OGU4MzM0N2NiYWIxMCIsInJkIjoicmVnaW9uZS5tYXJjaGUuaXQiLCJ1em14IjoiN2ZjMDAwNmQ2N2MyZmMtMjE2Zi00MGY2LTkzNDMtODYxNTNkYmRlZTk2MS0xNzkyNjY4NTYwNDM1MC0wMGE3NWU4MWFmMDJlNGU3YzE0MTAifQ==",
+   "finale": "https://validate.perfdrive.com/?ssa=21686f01-84a0-420d-b7b7-e549b864080f&ssb=80599252215&ssc=https%3A%2F%2Fwww.regione.marche.it%2FRegione-Utile%2FSalute%2FFascicolo-Sanitario-Elettronico&ssi=e6afa24b-d3ou-427e-981f-223d92b4c764&ssk=botmanager_support@radware.com&ssm=36918578672431960105986637616669&ssn=dd556eae241e90a9c27083353578c4a6d6756ded15d2-10a2-49c0-80229f&sso=d5ee62e9-3969d43b205423998156360db0eb4ca80285696a28b1457c&ssp=69421942061792612066179263613400501&ssq=67720279110836943475591108473688966185822&ssr=MTk1LjIzMS43OS4yMzQ=&sst=Mozilla/5.0+(compatible;+GuidaSanita-controllo/1.0;++https://guidasanita.it/fonti.html;+info@guidasanita.it)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InJlZ2lvbmUubWFyY2hlLml0IiwiX191em1mIjoiN2Y5MDAwNmRlZDE1ZDItMTBhMi00OWMwLTgyZTktMzk2OWQ0M2IyMDU0MS0xNzkyNjkxMTA4OTYyMC0wMDVlZGFkMzZlZWE4MGE4YjJkMTAiLCJ1em14IjoiN2ZjMDAwNzA1ZmE5YWUtOWMzZC00YjM2LTg2NmQtOTkyYmZiN2VhMjJhMS0xNzkyNjkxMTA4OTYyMC0wMGE4NTkxMmY1MzExMDAyZjI2MTAifQ==",
    "file": "regione-marche/64d2fd47f0cd.txt",
    "titolo": "Radware Captcha Page",
-   "sha": "11acdf6288e0db41c2491fdd827ef7a0f51183850393779b50ab99fadc9cdd78",
+   "sha": "5b243269049c88e060e2df08b9aae3c93cec601fcffa757c7211165e27ce23a5",
    "caratteri": 746,
    "cambiata": true
   },
@@ -1059,10 +1167,10 @@
    "url": "https://www.regione.marche.it/Entra-in-Regione/URP/La-Regione-risponde/Faq/Post/86533/Cos-%C3%A8-il-Fascicolo-Sanitario-Elettronico",
    "controllata": "2026-10-22",
    "http": 200,
-   "finale": "https://validate.perfdrive.com/?ssa=15749ac0-3e0a-4809-9afd-4529922fafac&ssb=65204230552&ssc=https%3A%2F%2Fwww.regione.marche.it%2FEntra-in-Regione%2FURP%2FLa-Regione-risponde%2FFaq%2FPost%2F86533%2FCos-%25C3%25A8-il-Fascicolo-Sanitario-Elettronico&ssi=dffb6980-d3ou-47ac-9c4a-8a34ff3a90f7&ssk=botmanager_support@radware.com&ssm=81633141742320854107917178076177&ssn=5e19f1e2b416d0e3870ec451f7aa5fdf3793c82759c2-4345-4057-8d0663&sso=c25ebbd5-3d370b1a0837b44508d24fec9e512b6012ec1ab292a0ba4c&ssp=74016101001792689056179260478316887&ssq=37062046856218407094068562130490593423617&ssr=MTk1LjIzMS43OS4yMzQ=&sst=Mozilla/5.0+(compatible;+GuidaSanita-controllo/1.0;++https://guidasanita.it/fonti.html;+info@guidasanita.it)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InJlZ2lvbmUubWFyY2hlLml0IiwiX191em1mIjoiN2Y5MDAwYzgyNzU5YzItNDM0NS00MDU3LThiZDUtM2QzNzBiMWEwODM3MS0xNzkyNjY4NTYyNDc5MC0wMDU5YjU4YjJlYmFkOTY0N2I2MTAiLCJ1em14IjoiN2ZjMDAwZTZkMzBhMmUtNDc3NC00MjU3LTkwOGUtMjQ1YzgwODc3OGZhMS0xNzkyNjY4NTYyNDc5MC0wMGExNDBlNWE0YTA0NTBiMTg2MTAifQ==",
+   "finale": "https://validate.perfdrive.com/?ssa=7b16fb01-ebc1-4b10-bf17-95ad7ef68726&ssb=20884205249&ssc=https%3A%2F%2Fwww.regione.marche.it%2FEntra-in-Regione%2FURP%2FLa-Regione-risponde%2FFaq%2FPost%2F86533%2FCos-%25C3%25A8-il-Fascicolo-Sanitario-Elettronico&ssi=a95ff4a9-d3ou-458d-b5a5-83772a5a293b&ssk=botmanager_support@radware.com&ssm=72275341855822786101106975547299&ssn=0162c5553656a7ad978655082833c79ce9b3a9ef96ce-0e45-4c1c-83aac0&sso=c84cc4ef-d229e284aa5c2945a49b35faae636fe61c93b6ea7b21fd7f&ssp=20079986991792663021179268312439836&ssq=95601209111034755340491110044324887921476&ssr=MTk1LjIzMS43OS4yMzQ=&sst=Mozilla/5.0+(compatible;+GuidaSanita-controllo/1.0;++https://guidasanita.it/fonti.html;+info@guidasanita.it)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBhOWVmOTZjZS0wZTQ1LTRjMWMtODRlZi1kMjI5ZTI4NGFhNWMxLTE3OTI2OTExMTA5NzMwLTAwNTFkMzg5ODYyZmUxMzMzZTExMCIsInJkIjoicmVnaW9uZS5tYXJjaGUuaXQiLCJ1em14IjoiN2ZjMDAwZGZhMWU4MzYtYjRjNS00YmE5LTkyYzEtNWE0Y2FmMTEyYWIyMS0xNzkyNjkxMTEwOTczMC0wMGEyN2M3YjVkYTNmOTkwZmYzMTAifQ==",
    "file": "regione-marche/a5b1f4282460.txt",
    "titolo": "Radware Captcha Page",
-   "sha": "7424bb2b4426464d48faa4d48fb6d6689240a59059ce25731b45dce911e20b53",
+   "sha": "77a43435fd69c64501fa9116947371d595a6eed69dc4928aacaba68e5dffa977",
    "caratteri": 795,
    "cambiata": true
   },
@@ -1071,10 +1179,10 @@
    "url": "https://www.regione.marche.it/Entra-in-Regione/URP/La-Regione-risponde/Faq/Post/86534/Come-si-accede-al-Fascicolo-Sanitario-Elettronico",
    "controllata": "2026-10-22",
    "http": 200,
-   "finale": "https://validate.perfdrive.com/?ssa=47175dd4-13c3-4125-aed4-7bc45e246c59&ssb=81667294851&ssc=https%3A%2F%2Fwww.regione.marche.it%2FEntra-in-Regione%2FURP%2FLa-Regione-risponde%2FFaq%2FPost%2F86534%2FCome-si-accede-al-Fascicolo-Sanitario-Elettronico&ssi=1a1852a3-d3ou-4c16-89c5-b79540220ec7&ssk=botmanager_support@radware.com&ssm=18176473772479103101242833863775&ssn=bb85c5d39dd34e933775fdbf6d3777750f64146f9190-4023-4f95-a0c482&sso=fc26a927-7ebee56a3e040fd134613496951b35a472146566b6c0d850&ssp=08385084161792651441179264206433412&ssq=30376696856579583862668565796783702518431&ssr=MTk1LjIzMS43OS4yMzQ=&sst=Mozilla/5.0+(compatible;+GuidaSanita-controllo/1.0;++https://guidasanita.it/fonti.html;+info@guidasanita.it)&ssu=&ssv=&ssw=&ssx=eyJyZCI6InJlZ2lvbmUubWFyY2hlLml0IiwiX191em1mIjoiN2Y5MDAwMTQ2ZjkxOTAtNDAyMy00Zjk1LWE5MjctN2ViZWU1NmEzZTA0MS0xNzkyNjY4NTY1NTU4MC0wMDU5NWYxMGM3MzZiZmI2MTM2MTAiLCJ1em14IjoiN2ZjMDAwNWUwMWQ0MmYtMTEzOC00YTYzLTlmM2MtYTBjNThiZWRmZDMyMS0xNzkyNjY4NTY1NTU4MC0wMGE2ZjQ4MGVkZDdjMmVkOGE4MTAifQ==",
+   "finale": "https://validate.perfdrive.com/?ssa=16d3b594-37f6-45be-9fe0-7a559208989e&ssb=68058288402&ssc=https%3A%2F%2Fwww.regione.marche.it%2FEntra-in-Regione%2FURP%2FLa-Regione-risponde%2FFaq%2FPost%2F86534%2FCome-si-accede-al-Fascicolo-Sanitario-Elettronico&ssi=766e4f32-d3ou-431b-98d7-40a051f32948&ssk=botmanager_support@radware.com&ssm=35563627371655023107298541913995&ssn=f176277ca213776bdc834dcbf1b953865b34afabb41d-bc3d-45f1-a7adc7&sso=8f8a49d6-7a3313a1607091e0a1329db9b5b31f3ededc6ad4031d85c4&ssp=37868994171792690342179261422839483&ssq=38058599111325812778391113552133379299777&ssr=MTk1LjIzMS43OS4yMzQ=&sst=Mozilla/5.0+(compatible;+GuidaSanita-controllo/1.0;++https://guidasanita.it/fonti.html;+info@guidasanita.it)&ssu=&ssv=&ssw=&ssx=eyJfX3V6bWYiOiI3ZjkwMDBhZmFiYjQxZC1iYzNkLTQ1ZjEtYTlkNi03YTMzMTNhMTYwNzAxLTE3OTI2OTExMTMwMTEwLTAwNWYyNDg0ZjMyMGNlYzY3YzQxMCIsInV6bXgiOiI3ZmMwMDBkYjA3NzA5Yi02MzY5LTQ0ZWEtYmU1Ni1lNWVmZGJlNDE2MzcxLTE3OTI2OTExMTMwMTEwLTAwYTBhN2VhMWVmMGRlZjU1NmQxMCIsInJkIjoicmVnaW9uZS5tYXJjaGUuaXQifQ==",
    "file": "regione-marche/786a4e4dc664.txt",
    "titolo": "Radware Captcha Page",
-   "sha": "51baeb73c29c1a246cad57f2129763cb4df8e988e6d2562523bd641352740eac",
+   "sha": "1d4b9b7993c7ed79d15854d66ec6445200bb8d6c21f53c63010e3cafde1e6883",
    "caratteri": 799,
    "cambiata": true
   },

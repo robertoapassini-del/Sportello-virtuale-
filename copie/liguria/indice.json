@@ -1,6 +1,6 @@
 {
  "regione": "liguria",
- "aggiornato": "2026-10-22T11:11:46.081Z",
+ "aggiornato": "2026-10-22T17:26:46.253Z",
  "pagine": [
   {
    "asl": "genova",
@@ -11,6 +11,17 @@
    "titolo": "Home - ASL3",
    "sha": "7dfef1a94e0c14b5a23a8b2906ff051dcbd18fa5611d724a9a862f239756f0b1",
    "caratteri": 7857,
+   "cambiata": false
+  },
+  {
+   "asl": "genova",
+   "url": "https://www.asl3.liguria.it/amministrazione-trasparente/servizi-erogati/liste-di-attesa.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "genova/7b95bf7db8e5.txt",
+   "titolo": "Liste di attesa - Numero Verde - ASL3",
+   "sha": "2eb9f52a250d529494946fb76c6526f0b4fe24786dcc838f8336053ac6e0a74b",
+   "caratteri": 11743,
    "cambiata": false
   },
   {
@@ -54,8 +65,8 @@
    "http": 200,
    "file": "genova/6d2ea13a4aa5.txt",
    "titolo": "giunta - Sanità, al via in Liguria il nuovo numero 116117 per i casi meno urgenti. Attivo nel Tigullio da questa sera, martedì 16 dicembre - Regione Liguria",
-   "sha": "252eb0933684b209ea00a08bdbe140af85dc81a62ccebe1cf3dd6a8fb1855a45",
-   "caratteri": 4675,
+   "sha": "0b3e97e65626b10bf7a96c87921e51e6c367794f28303852498bcdf97543c5b5",
+   "caratteri": 4663,
    "cambiata": true
   },
   {
@@ -65,8 +76,8 @@
    "http": 200,
    "file": "genova/97c265ccde78.txt",
    "titolo": "salute - prenotazione visite ed esami col cup - Regione Liguria",
-   "sha": "f770b2f6e4985a20aff905b29698e430122af3a9e5b215e1e8d84e4562126b2b",
-   "caratteri": 4869,
+   "sha": "8a5b225f9fc4977c472e2c149d55c2ea3ec122095334eff23309502cc15c6d9e",
+   "caratteri": 4834,
    "cambiata": true
   },
   {
@@ -128,23 +139,6 @@
   },
   {
    "asl": "genova",
-   "url": "https://www.asl3.liguria.it/numero-verde-gratuito-per-riduzione-tempi-d-attesa.html",
-   "controllata": "2026-10-22",
-   "http": 500
-  },
-  {
-   "asl": "genova",
-   "url": "https://www.asl3.liguria.it/amministrazione-trasparente/servizi-erogati/liste-di-attesa.html",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "genova/7b95bf7db8e5.txt",
-   "titolo": "Liste di attesa - Numero Verde - ASL3",
-   "sha": "2eb9f52a250d529494946fb76c6526f0b4fe24786dcc838f8336053ac6e0a74b",
-   "caratteri": 11743,
-   "cambiata": false
-  },
-  {
-   "asl": "genova",
    "url": "https://www.asl3.liguria.it/ospedali/presidio-ospedaliero-unico/richiesta-cartella-clinica.html",
    "controllata": "2026-10-22",
    "http": 200,
@@ -168,6 +162,23 @@
   },
   {
    "asl": "genova",
+   "url": "https://www.asl4.liguria.it/cure-palliative-hospice/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "genova/3f213d48a9d9.txt",
+   "titolo": "S.S.A. HOSPICE E CURE PALLIATIVE - Asl4",
+   "sha": "6d528a97880f80b35cc5ae9484bbef725836ac2380b22cbf44a59abe5f03bd39",
+   "caratteri": 6838,
+   "cambiata": false
+  },
+  {
+   "asl": "genova",
+   "url": "https://www.asl3.liguria.it/numero-verde-gratuito-per-riduzione-tempi-d-attesa.html",
+   "controllata": "2026-10-22",
+   "http": 500
+  },
+  {
+   "asl": "genova",
    "url": "https://asl3.liguria.it/ambulatori/servizi/disabili/item/542-ufficio-autorizzazioni-protesi.html",
    "controllata": "2026-10-22",
    "http": 0,
@@ -178,17 +189,6 @@
    "url": "https://www.asl3.liguria.it/territorio/distretti/distretto-9-medio-ponente/item/751-struttura-semplice-dipartimentale-cure-palliative.html",
    "controllata": "2026-10-22",
    "http": 500
-  },
-  {
-   "asl": "genova",
-   "url": "https://www.asl4.liguria.it/cure-palliative-hospice/",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "genova/3f213d48a9d9.txt",
-   "titolo": "S.S.A. HOSPICE E CURE PALLIATIVE - Asl4",
-   "sha": "6d528a97880f80b35cc5ae9484bbef725836ac2380b22cbf44a59abe5f03bd39",
-   "caratteri": 6838,
-   "cambiata": false
   },
   {
    "asl": "genova",
@@ -231,8 +231,8 @@
    "http": 200,
    "file": "genova/8cfbeba760c6.txt",
    "titolo": "salute - Salutesimplex - Regione Liguria",
-   "sha": "fda22536538cc9911bba753e64acc44d3f5e9541aa6818c56706550bca890829",
-   "caratteri": 5137,
+   "sha": "3f1a72e5f122299623388809ee86fc3c031113c0c5a3427c9c4417e0cc8b7630",
+   "caratteri": 5125,
    "cambiata": true
   },
   {
@@ -333,8 +333,8 @@
    "http": 200,
    "file": "imperia/51c7b22af737.txt",
    "titolo": "salute - Numeri utili delle Case della Comunità - Regione Liguria",
-   "sha": "3d83952caea74311fd24acb4f0bd3f834f8015b41ff6016ea0ee995c32384a93",
-   "caratteri": 4359,
+   "sha": "3eed17fcd84682f378c28a383b8608aa6fcdb97016e49ee38240d50dc1bcf7d2",
+   "caratteri": 4347,
    "cambiata": true
   },
   {
@@ -391,8 +391,8 @@
    "http": 200,
    "file": "imperia/8cfbeba760c6.txt",
    "titolo": "salute - Salutesimplex - Regione Liguria",
-   "sha": "fda22536538cc9911bba753e64acc44d3f5e9541aa6818c56706550bca890829",
-   "caratteri": 5137,
+   "sha": "3f1a72e5f122299623388809ee86fc3c031113c0c5a3427c9c4417e0cc8b7630",
+   "caratteri": 5125,
    "cambiata": true
   },
   {
@@ -404,6 +404,17 @@
    "titolo": "ASL5 Spezzino > Home",
    "sha": "5718645aa076a6967cc7bfdb0722719498aecc993f3c22f4bf4b4c0423ddfae4",
    "caratteri": 15053,
+   "cambiata": false
+  },
+  {
+   "asl": "la-spezia",
+   "url": "https://www.asl5.liguria.it/Home/RECUPEROPRESTAZIONI.aspx",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "la-spezia/d99605e44fee.txt",
+   "titolo": "RECUPERO PRESTAZIONI",
+   "sha": "9cc80de6279527f4b109523f8b10961354c251c8c57810c9d054c498f8baeaf6",
+   "caratteri": 8728,
    "cambiata": false
   },
   {
@@ -485,13 +496,24 @@
   },
   {
    "asl": "la-spezia",
-   "url": "https://www.asl5.liguria.it/Home/RECUPEROPRESTAZIONI.aspx",
+   "url": "https://www.asl5.liguria.it/PerilCittadino/RitirorefertiCartellecliniche.aspx",
    "controllata": "2026-10-22",
    "http": 200,
-   "file": "la-spezia/d99605e44fee.txt",
-   "titolo": "RECUPERO PRESTAZIONI",
-   "sha": "9cc80de6279527f4b109523f8b10961354c251c8c57810c9d054c498f8baeaf6",
-   "caratteri": 8728,
+   "file": "la-spezia/ad51c3643061.txt",
+   "titolo": "Ritiro referti/Cartelle cliniche",
+   "sha": "27d1fae7a0bc04fc444cf7cd4ed8ad1b9bfc4b23d8b9d82bab364df764420506",
+   "caratteri": 11977,
+   "cambiata": false
+  },
+  {
+   "asl": "la-spezia",
+   "url": "https://www.asl5.liguria.it/PerilCittadino/Serviziterritoriali/CurePrimarieeAttivit%C3%A0Distrettuali/CurePalliative.aspx",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "la-spezia/11459ee449d3.txt",
+   "titolo": "Cure Palliative",
+   "sha": "daf55c741a66524657a16d9f3a526d632d9c641276023b3b90735a339922154f",
+   "caratteri": 8043,
    "cambiata": false
   },
   {
@@ -507,17 +529,6 @@
   },
   {
    "asl": "la-spezia",
-   "url": "https://www.asl5.liguria.it/PerilCittadino/RitirorefertiCartellecliniche.aspx",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "la-spezia/ad51c3643061.txt",
-   "titolo": "Ritiro referti/Cartelle cliniche",
-   "sha": "27d1fae7a0bc04fc444cf7cd4ed8ad1b9bfc4b23d8b9d82bab364df764420506",
-   "caratteri": 11977,
-   "cambiata": false
-  },
-  {
-   "asl": "la-spezia",
    "url": "https://www.asl5.liguria.it/PerilCittadino/Serviziterritoriali/CurePrimarieeAttivit%C3%A0Distrettuali/Fornituraausilieprotesi.aspx",
    "controllata": "2026-10-22",
    "http": 200,
@@ -525,17 +536,6 @@
    "titolo": "ASL5 Spezzino > Per il Cittadino > Servizi territoriali > Cure Primarie e Attività Distrettuali > Fornitura ausili e protesi",
    "sha": "d6d84284d2c2106e525e9f0afe2eea2d5c5a296589026f8056470b29ea1056e5",
    "caratteri": 12109,
-   "cambiata": false
-  },
-  {
-   "asl": "la-spezia",
-   "url": "https://www.asl5.liguria.it/PerilCittadino/Serviziterritoriali/CurePrimarieeAttivit%C3%A0Distrettuali/CurePalliative.aspx",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "la-spezia/11459ee449d3.txt",
-   "titolo": "Cure Palliative",
-   "sha": "daf55c741a66524657a16d9f3a526d632d9c641276023b3b90735a339922154f",
-   "caratteri": 8043,
    "cambiata": false
   },
   {
@@ -556,8 +556,8 @@
    "http": 200,
    "file": "la-spezia/8cfbeba760c6.txt",
    "titolo": "salute - Salutesimplex - Regione Liguria",
-   "sha": "fda22536538cc9911bba753e64acc44d3f5e9541aa6818c56706550bca890829",
-   "caratteri": 5137,
+   "sha": "3f1a72e5f122299623388809ee86fc3c031113c0c5a3427c9c4417e0cc8b7630",
+   "caratteri": 5125,
    "cambiata": true
   },
   {
@@ -569,6 +569,17 @@
    "titolo": "Home - ASL2",
    "sha": "19d25fe39dbac96db4d8c5abfc35c682068fc49ec111a9aea68f1fc69d8d7c4b",
    "caratteri": 10542,
+   "cambiata": false
+  },
+  {
+   "asl": "savona",
+   "url": "https://www.asl2.liguria.it/amministrazione-trasparente/servizi-erogati/liste-di-attesa.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "savona/9cccf5397b0e.txt",
+   "titolo": "Liste di attesa - ASL2",
+   "sha": "9555ab3f986f2e21259b2167161c5517e685e8a039582e375becda961d291f00",
+   "caratteri": 15827,
    "cambiata": false
   },
   {
@@ -634,8 +645,8 @@
    "http": 200,
    "file": "savona/51c7b22af737.txt",
    "titolo": "salute - Numeri utili delle Case della Comunità - Regione Liguria",
-   "sha": "3d83952caea74311fd24acb4f0bd3f834f8015b41ff6016ea0ee995c32384a93",
-   "caratteri": 4359,
+   "sha": "3eed17fcd84682f378c28a383b8608aa6fcdb97016e49ee38240d50dc1bcf7d2",
+   "caratteri": 4347,
    "cambiata": true
   },
   {
@@ -648,17 +659,6 @@
    "sha": "212d564256088683efa7381804399bd647b8dd95de456dd74a0c58a7b3146683",
    "caratteri": 11156,
    "email_nascoste": 3,
-   "cambiata": false
-  },
-  {
-   "asl": "savona",
-   "url": "https://www.asl2.liguria.it/amministrazione-trasparente/servizi-erogati/liste-di-attesa.html",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "savona/9cccf5397b0e.txt",
-   "titolo": "Liste di attesa - ASL2",
-   "sha": "9555ab3f986f2e21259b2167161c5517e685e8a039582e375becda961d291f00",
-   "caratteri": 15827,
    "cambiata": false
   },
   {
@@ -725,8 +725,8 @@
    "http": 200,
    "file": "savona/8cfbeba760c6.txt",
    "titolo": "salute - Salutesimplex - Regione Liguria",
-   "sha": "fda22536538cc9911bba753e64acc44d3f5e9541aa6818c56706550bca890829",
-   "caratteri": 5137,
+   "sha": "3f1a72e5f122299623388809ee86fc3c031113c0c5a3427c9c4417e0cc8b7630",
+   "caratteri": 5125,
    "cambiata": true
   },
   {
@@ -747,8 +747,8 @@
    "http": 200,
    "file": "regole/97c265ccde78.txt",
    "titolo": "salute - prenotazione visite ed esami col cup - Regione Liguria",
-   "sha": "f770b2f6e4985a20aff905b29698e430122af3a9e5b215e1e8d84e4562126b2b",
-   "caratteri": 4869,
+   "sha": "8a5b225f9fc4977c472e2c149d55c2ea3ec122095334eff23309502cc15c6d9e",
+   "caratteri": 4834,
    "cambiata": true
   },
   {
@@ -824,8 +824,8 @@
    "http": 200,
    "file": "regione-liguria/5c4c10804fbd.txt",
    "titolo": "homepage salute - Regione Liguria",
-   "sha": "85352a8b6f9ad45b32427952983286d02409b1452291dec2a6ef51772ea5ef58",
-   "caratteri": 4192,
+   "sha": "6c27be463d20012c1b31fb3fdd94d7923e28d625b5226c569bca3d769133cc6e",
+   "caratteri": 4180,
    "cambiata": true
   },
   {
@@ -835,8 +835,8 @@
    "http": 200,
    "file": "regione-liguria/1ae711d1b324.txt",
    "titolo": "giunta - Sanità, dal primo agosto in funzione il nuovo numero del Cup Liguria: 010 5383400 - Regione Liguria",
-   "sha": "48353fee5fbebaaf94541bdc18c34625f79211c20800b9be050aed10b9f88768",
-   "caratteri": 3840,
+   "sha": "c33bd704826712bce651de261b5f40c4af0c451960b5dcd586cebd92faf227b8",
+   "caratteri": 3828,
    "cambiata": true
   },
   {
@@ -857,8 +857,8 @@
    "http": 200,
    "file": "regione-liguria/af75bda55c30.txt",
    "titolo": "salute - Messaggi truffa con richieste del Centro Unico di Prenotazioni (CUP) - Regione Liguria",
-   "sha": "319aebddeb0c6f3e60d7eca6721da79504c0b85e0d8b213ad61050b8c0315e95",
-   "caratteri": 3687,
+   "sha": "41346969223f67d0030e43cf462846a3140e94e965661371409bdfeb34331e61",
+   "caratteri": 3675,
    "cambiata": true
   },
   {
@@ -868,8 +868,8 @@
    "http": 200,
    "file": "regione-liguria/58c9218673e2.txt",
    "titolo": "giunta - Sanità territoriale, nel Tigullio oltre 5mila chiamate al 116117 nei primi mesi del 2026 - Regione Liguria",
-   "sha": "5f89ef916653828f14b99ef22d6b9e4c09388b771b1da08ea9e8cfb5d488dd1a",
-   "caratteri": 4228,
+   "sha": "4b7837a3a9119cb9687e88b21c01e162ce94265d45d88329c97f23935a7dc251",
+   "caratteri": 4216,
    "cambiata": true
   },
   {
@@ -879,8 +879,8 @@
    "http": 200,
    "file": "regione-liguria/6f7021132ab0.txt",
    "titolo": "giunta - Sanità, prosegue a Genova il ciclo di conferenze dei sindaci di Asl. Assessore Nicolò: \"In Liguria pronto a partire il numero unico per la continuità assistenziale\" - Regione Liguria",
-   "sha": "3b6f37bd5a2631b2633014ff80071e250d38e48169481ef81da9f69aba9e7c40",
-   "caratteri": 4465,
+   "sha": "4db7248df63a2e5b51748efd0087705273e07e5fbf94b5d93fbda6e94db4d131",
+   "caratteri": 4453,
    "cambiata": true
   },
   {
@@ -890,8 +890,8 @@
    "http": 200,
    "file": "regione-liguria/0699e2b18fbf.txt",
    "titolo": "salute - fascicolo sanitario elettronico - Regione Liguria",
-   "sha": "227eb7b4af9a0d66ff9bf22888e07ca47d9afc3cc62d6a97aee4ebbcdc65b1cc",
-   "caratteri": 3211,
+   "sha": "7ba4b933839e8f20f0fe131fe372cd84de4f561880ed1a4be9c25efc6677bea8",
+   "caratteri": 3199,
    "cambiata": true
   },
   {
@@ -912,8 +912,8 @@
    "http": 200,
    "file": "regione-liguria/c3a4df77f258.txt",
    "titolo": "salute - la nuova sanità ligure più vicina, più facile, più pronta - Regione Liguria",
-   "sha": "16930ec224fd419e30ee9a4d3b40382ebd25144988955506bd09c2bfefb856ce",
-   "caratteri": 5499,
+   "sha": "afe0b8e65d2448f889936e14a857293d3a9e3f208844011e607e484202dafb4e",
+   "caratteri": 5487,
    "cambiata": true
   },
   {
@@ -936,7 +936,7 @@
    "titolo": "Benvenuti nel sito dell'Azienda Tutela della Salute Liguria (ATS Liguria) - ATS Liguria",
    "sha": "9499c7360cf0a1387e5b4bfcb6a394c3f97fcfeb5515b6fda5209ac4a87a9b83",
    "caratteri": 3031,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-liguria",
@@ -1002,8 +1002,8 @@
    "http": 200,
    "file": "regione-liguria/57db21873280.txt",
    "titolo": "giunta - Sanità, nasce la nuova \"Azienda Liguria Salute\": più snella e con funzioni operative al servizio dell’assessorato - Regione Liguria",
-   "sha": "1407d6f7bd9e82a7646ea548c14e92d46334194d9221253983729ca82ae53258",
-   "caratteri": 5695,
+   "sha": "d58b761672ea1ea71f2e0e28a19a3f9edf0ee3dec16324d24aa536a1b2d585a2",
+   "caratteri": 5683,
    "cambiata": true
   },
   {

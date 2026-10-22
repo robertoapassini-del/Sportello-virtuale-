@@ -1,6 +1,6 @@
 {
  "regione": "veneto",
- "aggiornato": "2026-10-22T12:15:39.204Z",
+ "aggiornato": "2026-10-22T18:35:12.105Z",
  "pagine": [
   {
    "asl": "belluno",
@@ -55,6 +55,28 @@
    "titolo": "Urp",
    "sha": "8395eb424564d77211f79806430f070f7ab7b13caa6f00b5c850920ebf58448a",
    "caratteri": 6449,
+   "cambiata": false
+  },
+  {
+   "asl": "belluno",
+   "url": "https://www.aulss1.veneto.it/assistenza-domiciliare-integrata-distretto-di-belluno",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "belluno/40e09a8f08f3.txt",
+   "titolo": "Assistenza domiciliare integrata Distretto di Belluno",
+   "sha": "3af357be2123d40a80794719464af6d8589a7f5734fd8e6444a06d4dc5866842",
+   "caratteri": 5011,
+   "cambiata": false
+  },
+  {
+   "asl": "belluno",
+   "url": "https://www.aulss1.veneto.it/assistenza-domiciliare-integrata-distretto-di-feltre",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "belluno/56b057a00ae7.txt",
+   "titolo": "Assistenza domiciliare integrata Distretto di Feltre",
+   "sha": "7508fe161883ac45329f38919e20f7f2fb3a749dbc15dc926db08e1aaa02002a",
+   "caratteri": 5205,
    "cambiata": false
   },
   {
@@ -122,6 +144,23 @@
    "sha": "4c23068a59f74470f03f47a5c8d1732b18c6825ab8eed5480c55d9e055102528",
    "caratteri": 4927,
    "cambiata": false
+  },
+  {
+   "asl": "belluno",
+   "url": "https://www.aulss1.veneto.it/ufficio-cartelle-cliniche-feltre",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "belluno/7b35f386dec4.txt",
+   "titolo": "Modulo richiesta documentazione sanitaria",
+   "sha": "d105e42e86ab608b7d4707f78c673f687ba352562a73405edd765e4d81397477",
+   "caratteri": 6792,
+   "cambiata": true
+  },
+  {
+   "asl": "belluno",
+   "url": "https://www.aulss1.veneto.it/service/ufficio-cartelle-cliniche-2/",
+   "controllata": "2026-10-22",
+   "http": 404
   },
   {
    "asl": "treviso",
@@ -268,6 +307,39 @@
    "cambiata": false
   },
   {
+   "asl": "treviso",
+   "url": "https://www.aulss2.veneto.it/Documentazione-sanitaria",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "treviso/56d094cc042b.txt",
+   "titolo": "Documentazione Sanitaria",
+   "sha": "621c1260bd6fc3ee74a853df8d7a0f8c87276c372212ccf4cd2d751bb731fb06",
+   "caratteri": 6467,
+   "cambiata": true
+  },
+  {
+   "asl": "treviso",
+   "url": "https://www.aulss2.veneto.it/ufficio-cartelle-cliniche-treviso",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "treviso/001868708c0a.txt",
+   "titolo": "Ufficio Cartelle Cliniche Treviso",
+   "sha": "5037bdd974e7cd283bd5c19b76fa53fe61d700a562a70cb185a9bff55ec0574e",
+   "caratteri": 4176,
+   "cambiata": true
+  },
+  {
+   "asl": "treviso",
+   "url": "https://www.aulss2.veneto.it/richiedere-dispositivi-di-assistenza-protesica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "treviso/aaa20e98d96e.txt",
+   "titolo": "Richiedere dispositivi di assistenza protesica",
+   "sha": "858a962f510a3da6df661fc92fc040afc0eea6716a95db24f71cc7750f8f6d77",
+   "caratteri": 6602,
+   "cambiata": true
+  },
+  {
    "asl": "venezia",
    "url": "https://www.aulss3.veneto.it/",
    "controllata": "2026-10-22",
@@ -337,10 +409,10 @@
    "http": 200,
    "finale": "https://www.aulss4.veneto.it/servizionline/urp-ufficio-relazioni-con-il-pubblico",
    "file": "venezia/56a4d3d36924.txt",
-   "titolo": "URP - Ufficio Relazioni con il Pubblico",
-   "sha": "d25943393fc85cd71be451c4505c54f0135e9764bd570f5463c04933d8eead38",
-   "caratteri": 5857,
-   "cambiata": false
+   "titolo": "Azienda ULSS n. 4 Veneto Orientale - URP - Ufficio Relazioni con il Pubblico",
+   "sha": "5b0620b35288c98fa9ba0e3c7952f73915175e5b60dc1ecc86a6383fea147d8b",
+   "caratteri": 5894,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -570,7 +642,7 @@
    "titolo": "Prenotazione esami di laboratorio presso le strutture dell'A",
    "sha": "6c77e5de6056b83fe18ff4c7613f38247614a291db5815170e35a02e80cf3b87",
    "caratteri": 3562,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -631,7 +703,7 @@
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
    "sha": "56cc4bd859b15aa1a6963d1d39f02910359536396a5aca9ae75211b7d3715f57",
    "caratteri": 5859,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -671,6 +743,44 @@
    "sha": "900f0771f26a176c4994fc55995772f4d21d05b97fbb41341168bb90fe4f83d5",
    "caratteri": 5121,
    "cambiata": false
+  },
+  {
+   "asl": "venezia",
+   "url": "https://www.aulss3.veneto.it/Assistenza-protesica",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "finale": "https://www.aulss3.veneto.it/home",
+   "file": "venezia/e677293f92f5.txt",
+   "titolo": "myPortal | ULSS 3 SERENISSIMA",
+   "sha": "56cc4bd859b15aa1a6963d1d39f02910359536396a5aca9ae75211b7d3715f57",
+   "caratteri": 5859,
+   "cambiata": true
+  },
+  {
+   "asl": "venezia",
+   "url": "https://www.aulss4.veneto.it/dettaglio/contenuto/richiedere-la-cartella-clinica",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "finale": "https://www.aulss4.veneto.it/home",
+   "file": "venezia/901abe8bfa4a.txt",
+   "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
+   "sha": "900f0771f26a176c4994fc55995772f4d21d05b97fbb41341168bb90fe4f83d5",
+   "caratteri": 5121,
+   "cambiata": true
+  },
+  {
+   "asl": "venezia",
+   "url": "https://www.aulss4.veneto.it/home/dettaglio/servizi/screening-oncologici",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "file": "venezia/1e68a152143d.txt",
+   "titolo": "Screening Oncologici",
+   "sha": "ede470e54166ee7e74d747f8b7f1cdc9b423b664cdf60afc50dd62494eb0a346",
+   "caratteri": 6333,
+   "cambiata": true
   },
   {
    "asl": "rovigo",
@@ -816,15 +926,43 @@
    "cambiata": false
   },
   {
+   "asl": "rovigo",
+   "url": "https://www.aulss5.veneto.it/cartelle-cliniche",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
+   "asl": "rovigo",
+   "url": "https://www.aulss5.veneto.it/ritiro-referti-e-cartelle-cliniche",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "rovigo/5b32fe2ecfa1.txt",
+   "titolo": "Ritiro referti e cartelle cliniche",
+   "sha": "95f9c68246893608fb99d4827c2a93c04a853b1ade8975514207198bb1edd1da",
+   "caratteri": 3562,
+   "cambiata": true
+  },
+  {
+   "asl": "rovigo",
+   "url": "https://www.aulss5.veneto.it/Servizio-Assistenza-Protesica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "rovigo/01b629502dbd.txt",
+   "titolo": "Servizio Assistenza Protesica",
+   "sha": "7127610960296fbc39dfb8c9aa86928b1428637f55edab386d050ec46721a4e6",
+   "caratteri": 9653,
+   "cambiata": true
+  },
+  {
    "asl": "padova",
    "url": "https://www.aulss6.veneto.it/",
    "controllata": "2026-10-22",
    "http": 200,
    "file": "padova/326a059622c6.txt",
    "titolo": "Homepage ULSS6 Euganea",
-   "sha": "6ed0d9105429d480c9829d4c5db5923481658988f0f1887eea57132a4e8d4262",
-   "caratteri": 7121,
-   "cambiata": false
+   "sha": "45f2ecdca66f66d7743153af4cd377e82ac5b52fc24f390849f69a1672ab45ec",
+   "caratteri": 7150,
+   "cambiata": true
   },
   {
    "asl": "padova",
@@ -939,6 +1077,29 @@
    "cambiata": false
   },
   {
+   "asl": "padova",
+   "url": "https://www.aulss6.veneto.it/Cartelle-Cliniche-Ospedale-SantAntonio",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
+   "asl": "padova",
+   "url": "https://www.aulss6.veneto.it/Cartelle-Cliniche-Ospedale-di-Cittadella",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
+   "asl": "padova",
+   "url": "https://www.aulss6.veneto.it/ufficio-cartelle-cliniche-schiavonia",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "padova/b85e998743c3.txt",
+   "titolo": "Ufficio Cartelle Cliniche Padova Sud",
+   "sha": "f655c4945aad36d06ef68aa0c078be720ac7fee9818ff1aab5a554c31b183fd7",
+   "caratteri": 7312,
+   "cambiata": true
+  },
+  {
    "asl": "vicenza",
    "url": "https://www.aulss8.veneto.it/",
    "controllata": "2026-10-22",
@@ -1013,6 +1174,28 @@
    "titolo": "Centralini",
    "sha": "ea8a04d80e9442b96534be9fe5a5bffd09ea9d311e9b23bc2fc9dab2277371e6",
    "caratteri": 5530,
+   "cambiata": false
+  },
+  {
+   "asl": "vicenza",
+   "url": "https://www.aulss8.veneto.it/punto-salute-centro-arzignano-servizio-assistenza-domiciliare-integrata-adi",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "vicenza/d8bbfb06870f.txt",
+   "titolo": "PUNTO SALUTE CENTRO - ARZIGNANO - Servizio Assistenza Domiciliare Integrata (ADI)",
+   "sha": "272ab25b9aa87b1a476073511751cb3cd45485994f8c658db21a930bc5f0c973",
+   "caratteri": 5365,
+   "cambiata": false
+  },
+  {
+   "asl": "vicenza",
+   "url": "https://www.aulss8.veneto.it/impegnativa-di-cura-domiciliare",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "vicenza/6d86d8c672cf.txt",
+   "titolo": "Impegnativa di Cura Domiciliare",
+   "sha": "4e37b9fcbdc444b824f3cbfa61a84200f16d003a766e20ac238199e60c8f6cef",
+   "caratteri": 4596,
    "cambiata": false
   },
   {
@@ -1242,6 +1425,56 @@
    "cambiata": false
   },
   {
+   "asl": "vicenza",
+   "url": "https://www.aulss8.veneto.it/ritiro-referti-di-visite-o-esami",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "vicenza/38193a913d4b.txt",
+   "titolo": "Referti e Cartelle Cliniche",
+   "sha": "81a4735d0744e62dc38b8c80c245acb66f31a8cd1f9aac6d7583df3d7819fc5a",
+   "caratteri": 16795,
+   "cambiata": true
+  },
+  {
+   "asl": "vicenza",
+   "url": "https://www.aulss8.veneto.it/uoc-direzione-medica-1-vicenza-ad-indirizzo-organizzativo-gestionale-ufficio-cartelle-cliniche",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "vicenza/e5770ae8cc43.txt",
+   "titolo": "U.O.C. Direzione Medica 1 Vicenza ad indirizzo organizzativo gestionale- Ufficio Cartelle Cliniche",
+   "sha": "3335a29d4f41bae9c13cc8da64ff626f00c04f29c9906f3f7a6a14405b1ce7c4",
+   "caratteri": 7697,
+   "cambiata": true
+  },
+  {
+   "asl": "vicenza",
+   "url": "https://www.aulss7.veneto.it/Richiesta-copia-cartella-clinica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "vicenza/446b64999a72.txt",
+   "titolo": "Richiesta copia cartella clinica",
+   "sha": "e3d0ea84790bf2b9830a6e55500d494ac3e444d046dc73e5cafb66d9a2533dc4",
+   "caratteri": 10313,
+   "cambiata": true
+  },
+  {
+   "asl": "vicenza",
+   "url": "https://www.aulss7.veneto.it/assistenza-protesica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "vicenza/41055dc8dce8.txt",
+   "titolo": "Assistenza protesica",
+   "sha": "cc1f82264cd4105ca62debd11c63df1b430b8c84787d713e355ef5821eff2814",
+   "caratteri": 7266,
+   "cambiata": true
+  },
+  {
+   "asl": "vicenza",
+   "url": "https://www.aulss8.veneto.it/unita-operative/centrale-unica-screening-2/",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
    "asl": "verona",
    "url": "https://www.aulss9.veneto.it/",
    "controllata": "2026-10-22",
@@ -1361,6 +1594,39 @@
    "sha": "0a5c8d70fc5d60cd2a3d2f5e631a274dc21932b785239d157394f4d1f19a5696",
    "caratteri": 3638,
    "cambiata": false
+  },
+  {
+   "asl": "verona",
+   "url": "https://www.aulss9.veneto.it/richiesta-copia-documentazione-sanitaria",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "verona/94925dc8d835.txt",
+   "titolo": "Richiesta copia documentazione sanitaria",
+   "sha": "a8e9fa15000739e3b602ac71a763df699e89a91224f63a4654925aa3dc70961f",
+   "caratteri": 14984,
+   "cambiata": true
+  },
+  {
+   "asl": "verona",
+   "url": "https://www.aulss9.veneto.it/assistenza-protesica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "verona/cbff700b2343.txt",
+   "titolo": "Assistenza Protesica",
+   "sha": "cc111780dce71f540895bd0c76b2d5fbe775d2790629346ed67369e8a75c0b25",
+   "caratteri": 6973,
+   "cambiata": true
+  },
+  {
+   "asl": "verona",
+   "url": "https://episcreenpro.aulss9.veneto.it/Screening-Oncologici",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "verona/adcf6eeb4d6b.txt",
+   "titolo": "Screening Oncologici Episcreenpro Ulss 9 Scaligera",
+   "sha": "d4cc43396d33944bc5f275813538cddc8c1dd496445d1eed709c9fedda9e3b32",
+   "caratteri": 9924,
+   "cambiata": true
   },
   {
    "asl": "inps-veneto",
@@ -1514,29 +1780,7 @@
    "titolo": "Sanità - Regione del Veneto",
    "sha": "d7d4aabb1d8a6254eeed0be4f97a5df8803cc903d8b21bc2c2c7bea9847afb6a",
    "caratteri": 4097,
-   "cambiata": true
-  },
-  {
-   "asl": "ulss1-dolomiti",
-   "url": "https://www.aulss1.veneto.it/assistenza-domiciliare-integrata-distretto-di-belluno",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "ulss1-dolomiti/40e09a8f08f3.txt",
-   "titolo": "Assistenza domiciliare integrata Distretto di Belluno",
-   "sha": "3af357be2123d40a80794719464af6d8589a7f5734fd8e6444a06d4dc5866842",
-   "caratteri": 5011,
-   "cambiata": true
-  },
-  {
-   "asl": "ulss1-dolomiti",
-   "url": "https://www.aulss1.veneto.it/assistenza-domiciliare-integrata-distretto-di-feltre",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "ulss1-dolomiti/56b057a00ae7.txt",
-   "titolo": "Assistenza domiciliare integrata Distretto di Feltre",
-   "sha": "7508fe161883ac45329f38919e20f7f2fb3a749dbc15dc926db08e1aaa02002a",
-   "caratteri": 5205,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ulss2-marca-trevigiana",
@@ -1548,7 +1792,7 @@
    "titolo": "Ufficio Relazioni con il Pubblico (URP)",
    "sha": "863f4a6fcb4b253033107885da8f52ade564a799bb5aa6bd4f2fd76bebcac319",
    "caratteri": 5671,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ulss6-euganea",
@@ -1559,29 +1803,7 @@
    "titolo": "Case della Comunità",
    "sha": "7f90929d7b3ddc613ede9bf8aef4a882631e351cc2c7dc331ffbcb6df0bd8270",
    "caratteri": 6362,
-   "cambiata": true
-  },
-  {
-   "asl": "ulss8-berica",
-   "url": "https://www.aulss8.veneto.it/impegnativa-di-cura-domiciliare",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "ulss8-berica/6d86d8c672cf.txt",
-   "titolo": "Impegnativa di Cura Domiciliare",
-   "sha": "4e37b9fcbdc444b824f3cbfa61a84200f16d003a766e20ac238199e60c8f6cef",
-   "caratteri": 4596,
-   "cambiata": true
-  },
-  {
-   "asl": "ulss8-berica",
-   "url": "https://www.aulss8.veneto.it/punto-salute-centro-arzignano-servizio-assistenza-domiciliare-integrata-adi",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "ulss8-berica/d8bbfb06870f.txt",
-   "titolo": "PUNTO SALUTE CENTRO - ARZIGNANO - Servizio Assistenza Domiciliare Integrata (ADI)",
-   "sha": "272ab25b9aa87b1a476073511751cb3cd45485994f8c658db21a930bc5f0c973",
-   "caratteri": 5365,
-   "cambiata": true
+   "cambiata": false
   }
  ]
 }

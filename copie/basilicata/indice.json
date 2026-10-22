@@ -1,6 +1,6 @@
 {
  "regione": "basilicata",
- "aggiornato": "2026-10-22T10:48:33.938Z",
+ "aggiornato": "2026-10-22T17:04:23.424Z",
  "pagine": [
   {
    "asl": "matera",
@@ -9,9 +9,9 @@
    "http": 200,
    "file": "matera/0293f11dd9e7.txt",
    "titolo": "ASM Matera",
-   "sha": "c130c29fa4410ed3203d9ced42f2b2a40e4f1f2acbd9181562f16d62713c5125",
-   "caratteri": 8011,
-   "cambiata": false
+   "sha": "644fd398c226284d2d1f7f01abaaa9a438c898cad5d45fbf82196a736df3c32f",
+   "caratteri": 8007,
+   "cambiata": true
   },
   {
    "asl": "matera",
@@ -26,6 +26,17 @@
   },
   {
    "asl": "matera",
+   "url": "https://www.asmbasilicata.it/servizio/cambiare-scegliere-il-medico-di-base-o-pediatra/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "matera/6ee2c8265d39.txt",
+   "titolo": "Cambiare/scegliere il medico di base o pediatra – ASM Matera",
+   "sha": "bd0b8b2abe003b3f4e0a26b5904803643bbd472f7784f00abf94c18929766d27",
+   "caratteri": 5182,
+   "cambiata": false
+  },
+  {
+   "asl": "matera",
    "url": "https://agr.regione.basilicata.it/post/latronico-sul-numero-europeo-armonizzato",
    "controllata": "2026-10-22",
    "http": 200,
@@ -33,7 +44,7 @@
    "titolo": "Latronico sul Numero europeo Armonizzato - AGR Basilicata",
    "sha": "34e0f6bf9e9ccd407e639c325573564495f35a49bfe58131e37599c742e3adec",
    "caratteri": 5353,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "matera",
@@ -71,17 +82,6 @@
   },
   {
    "asl": "matera",
-   "url": "https://www.asmbasilicata.it/servizio/cambiare-scegliere-il-medico-di-base-o-pediatra/",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "matera/6ee2c8265d39.txt",
-   "titolo": "Cambiare/scegliere il medico di base o pediatra – ASM Matera",
-   "sha": "bd0b8b2abe003b3f4e0a26b5904803643bbd472f7784f00abf94c18929766d27",
-   "caratteri": 5182,
-   "cambiata": false
-  },
-  {
-   "asl": "matera",
    "url": "https://old.asmbasilicata.it/servizi/Menu/dinamica.aspx?idSezione=17695&idArea=17697&idCat=17730&ID=18170&TipoElemento=pagina",
    "controllata": "2026-10-22",
    "http": 200,
@@ -93,15 +93,66 @@
    "cambiata": false
   },
   {
+   "asl": "matera",
+   "url": "https://www.asmbasilicata.it/servizio/cartella-clinica/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "matera/6352d970570b.txt",
+   "titolo": "Richiesta cartella clinica – ASM Matera",
+   "sha": "b5c307a2ec9392e67a20d4d8f40377cdd0a13b78b1e070bba85c134366388103",
+   "caratteri": 5408,
+   "cambiata": true
+  },
+  {
+   "asl": "matera",
+   "url": "https://www.asmbasilicata.it/servizio/scelta-revoca-medico-di-famiglia-4/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "matera/d5b5b8700372.txt",
+   "titolo": "Scelta / revoca Medico di Famiglia – ASM Matera",
+   "sha": "89e2637cecf02940ca0ec948d8e34bdf79c253f32b3344d11435cc61122d2f83",
+   "caratteri": 6146,
+   "cambiata": true
+  },
+  {
+   "asl": "matera",
+   "url": "https://www.asmbasilicata.it/servizi/Menu/dinamica.aspx?ID=18568&TipoElemento=categoria&idArea=18563&idCat=18568&idSezione=18562",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
+   "asl": "matera",
+   "url": "https://old.asmbasilicata.it/servizi/Menu/dinamica.aspx?idSezione=616&idArea=17682&idCat=17691&ID=41146&TipoElemento=pagina",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "matera/ba15fecc3c01.txt",
+   "titolo": "Distretto Policoro - Azienda Sanitaria locale di Matera",
+   "sha": "66104edf4573322883872db1c1d56e8534b2f18d14df40d0661eaed53786d094",
+   "caratteri": 6307,
+   "cambiata": true
+  },
+  {
+   "asl": "matera",
+   "url": "https://www.asmbasilicata.it/tutti-i-come-fare-per/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "matera/d59ecd88dde3.txt",
+   "titolo": "Tutti i come fare per – ASM Matera",
+   "sha": "0588e47fbb57bed8057aa344662bb97e99f792e5ce1bdea9c349f11660381c8d",
+   "caratteri": 4782,
+   "cambiata": true
+  },
+  {
    "asl": "potenza",
    "url": "https://www.aspbasilicata.it/",
    "controllata": "2026-10-22",
    "http": 200,
    "file": "potenza/28b106b78182.txt",
    "titolo": "ASP Basilicata",
-   "sha": "20b83b53045733ae05587b919e39d151b098554ea7c904e3bf4c7da00adbb4f9",
-   "caratteri": 5338,
-   "cambiata": false
+   "sha": "f15492ac257e1504532058f8e11cf1dde76824d9de48b10f9d947c7358a98ace",
+   "caratteri": 5303,
+   "cambiata": true
   },
   {
    "asl": "potenza",
@@ -127,6 +178,17 @@
   },
   {
    "asl": "potenza",
+   "url": "https://www.aspbasilicata.it/come-fare-per/scelta-e-revoca-del-medico-di-famiglia-e-del-pediatra/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "potenza/7a2c22c8c106.txt",
+   "titolo": "Scelta e revoca del Medico di Famiglia e del Pediatra - ASP Basilicata",
+   "sha": "18e3a3a3da5729dc17f46f7b685418454bc9de97eb55634f520d94f1c0dcaf38",
+   "caratteri": 9136,
+   "cambiata": false
+  },
+  {
+   "asl": "potenza",
    "url": "https://agr.regione.basilicata.it/post/latronico-sul-numero-europeo-armonizzato",
    "controllata": "2026-10-22",
    "http": 200,
@@ -134,7 +196,7 @@
    "titolo": "Latronico sul Numero europeo Armonizzato - AGR Basilicata",
    "sha": "34e0f6bf9e9ccd407e639c325573564495f35a49bfe58131e37599c742e3adec",
    "caratteri": 5353,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "potenza",
@@ -143,9 +205,9 @@
    "http": 200,
    "file": "potenza/5dbc77a23557.txt",
    "titolo": "Centro Unico di Prenotazione | Centro Servizi Regione Basilicata - Regione Basilicata",
-   "sha": "a247858ba3520f0834792ed7e7208eb92a57fd13a72c414c434304a3d04e4e06",
-   "caratteri": 9064,
-   "cambiata": false
+   "sha": "1ffb66c8a89ce4e0f44c686b13a38d145ed74570c5499c1bad33e422a46529ef",
+   "caratteri": 9055,
+   "cambiata": true
   },
   {
    "asl": "potenza",
@@ -156,28 +218,6 @@
    "titolo": "URP e Comunicazione - ASP Basilicata",
    "sha": "6315812a5131c3151907b14bdc0ba37c92e0ff54f1244b39e76dd14a3a851232",
    "caratteri": 8651,
-   "cambiata": false
-  },
-  {
-   "asl": "potenza",
-   "url": "https://www.aspbasilicata.it/servizi-per-i-cittadini/liste-di-attesa/",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "potenza/0a039cbc1d47.txt",
-   "titolo": "Liste di attesa - ASP Basilicata",
-   "sha": "95d3b4e849ae65d25f1e3e8ddbd404e5c0cafe09c7a27f629c6da8de9a54d3ce",
-   "caratteri": 7323,
-   "cambiata": false
-  },
-  {
-   "asl": "potenza",
-   "url": "https://www.aspbasilicata.it/come-fare-per/scelta-e-revoca-del-medico-di-famiglia-e-del-pediatra/",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "potenza/7a2c22c8c106.txt",
-   "titolo": "Scelta e revoca del Medico di Famiglia e del Pediatra - ASP Basilicata",
-   "sha": "18e3a3a3da5729dc17f46f7b685418454bc9de97eb55634f520d94f1c0dcaf38",
-   "caratteri": 9136,
    "cambiata": false
   },
   {
@@ -193,14 +233,58 @@
   },
   {
    "asl": "potenza",
+   "url": "https://www.aspbasilicata.it/servizi-per-i-cittadini/liste-di-attesa/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "potenza/0a039cbc1d47.txt",
+   "titolo": "Liste di attesa - ASP Basilicata",
+   "sha": "95d3b4e849ae65d25f1e3e8ddbd404e5c0cafe09c7a27f629c6da8de9a54d3ce",
+   "caratteri": 7323,
+   "cambiata": false
+  },
+  {
+   "asl": "potenza",
    "url": "https://www.regione.basilicata.it/sanita-digitale-nuovi-servizi-online/",
    "controllata": "2026-10-22",
    "http": 200,
    "file": "potenza/772f6c77a4a7.txt",
    "titolo": "Sanità digitale, nuovi servizi online - Regione Basilicata",
-   "sha": "2789284e9a50c521f54a211fe2aa20f341d2a23ff36535a310a2c5f81e6f0d9b",
-   "caratteri": 11607,
-   "cambiata": false
+   "sha": "793c211144be44e0d8d19349320f165180e3bf096dfb4605521b0ce6917f7d87",
+   "caratteri": 11627,
+   "cambiata": true
+  },
+  {
+   "asl": "potenza",
+   "url": "https://www.aspbasilicata.it/come-fare-per/cartella-clinica/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "potenza/4f310d2d12aa.txt",
+   "titolo": "Cartella clinica - ASP Basilicata",
+   "sha": "1a2af31c423055d40d54222cd4f08775c83b5b188b79f62ef6713f429494c58d",
+   "caratteri": 3589,
+   "cambiata": true
+  },
+  {
+   "asl": "potenza",
+   "url": "https://www.aspbasilicata.it/servizi-per-i-cittadini/modulistica/assistenza-ospedaliera-richiesta-copia-cartella-clinica-radiogrammi-0/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "potenza/10b9bf459839.txt",
+   "titolo": "Assistenza Ospedaliera - richiesta copia Cartella Clinica / Radiogrammi - ASP Basilicata",
+   "sha": "f1a57a35eab19c373bcb73086963c43536ceb025af890fdc33c53bdfa240dfb1",
+   "caratteri": 2837,
+   "cambiata": true
+  },
+  {
+   "asl": "potenza",
+   "url": "https://www.aspbasilicata.it/servizi-per-i-cittadini/modulistica/assistenza-protesica/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "potenza/cab9f56d45a9.txt",
+   "titolo": "Assistenza Protesica - ASP Basilicata",
+   "sha": "d3864e03e39d15776872e22931d9239bed9834b6bd5d2f1c8bcf315db8872cdf",
+   "caratteri": 2912,
+   "cambiata": true
   },
   {
    "asl": "inps-basilicata",
@@ -264,9 +348,9 @@
    "http": 200,
    "file": "regione-basilicata/2f606e3336a5.txt",
    "titolo": "Fanelli: “CUP, attiva prenotazione online delle prestazioni\" - Regione Basilicata",
-   "sha": "9742571c979d1c839d55b7e3fb417ac78682010150cf0e51528a2fb068f8ff18",
-   "caratteri": 12208,
-   "cambiata": false
+   "sha": "b28107753eec2bec82f2b756104f40cffd37cd30095f4b3c392b24e61dbe923b",
+   "caratteri": 12248,
+   "cambiata": true
   },
   {
    "asl": "regione-basilicata",
@@ -276,9 +360,9 @@
    "finale": "https://www.regione.basilicata.it/privacy/",
    "file": "regione-basilicata/8f50bf0e199f.txt",
    "titolo": "Trattamento dati personali e privacy - Regione Basilicata",
-   "sha": "f74bfbddc682942f18e2ec45834dd759605bd0f4cc887bb84245fee1511741f4",
-   "caratteri": 16264,
-   "cambiata": false
+   "sha": "2a69d4d6fa15c76a9e93615fb6e97fb17426d5c247fd4e00a60ba4263e5e5b8c",
+   "caratteri": 16255,
+   "cambiata": true
   },
   {
    "asl": "regione-basilicata",
@@ -288,8 +372,8 @@
    "finale": "https://www.regione.basilicata.it/?temi-spp=servizi-online",
    "file": "regione-basilicata/24e95f5e1ed6.txt",
    "titolo": "Servizi online - Regione Basilicata",
-   "sha": "5a35cd580b9aa722df8b45f31c3392c784e349932117322c59b02d2d01ed1516",
-   "caratteri": 9009,
+   "sha": "b5290e6c13c67a468e04e991c54bf906a4e7b335a27902c6436d222d5cbb6690",
+   "caratteri": 9034,
    "cambiata": true
   },
   {
@@ -299,9 +383,9 @@
    "http": 200,
    "file": "regione-basilicata/48632ed247cd.txt",
    "titolo": "Home - Salute Basilicata",
-   "sha": "22e74041261967cc2cb45fbd436513a9ff2114f9b58082a289a2c49d24bc05cc",
-   "caratteri": 7982,
-   "cambiata": false
+   "sha": "ce1e7cfb5c6216bbf842d6ff093aada4da0127b23947ab1898d2ee28b6781cfc",
+   "caratteri": 8036,
+   "cambiata": true
   },
   {
    "asl": "regione-basilicata",
@@ -310,9 +394,9 @@
    "http": 200,
    "file": "regione-basilicata/3961077a0e4e.txt",
    "titolo": "Fascicolo Sanitario Elettronico 2.0 - Regione Basilicata",
-   "sha": "d8b8703cb27fcb6bf9302f198311396e7e690c971f535798ad5dfde2236b23ee",
-   "caratteri": 10124,
-   "cambiata": false
+   "sha": "2f41a8683d7abca07057b6174a176c14f689f901478920304a8f6a8758f38343",
+   "caratteri": 10164,
+   "cambiata": true
   },
   {
    "asl": "regione-basilicata",

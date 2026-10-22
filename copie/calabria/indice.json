@@ -1,6 +1,6 @@
 {
  "regione": "calabria",
- "aggiornato": "2026-10-22T10:51:25.080Z",
+ "aggiornato": "2026-10-22T17:07:30.772Z",
  "pagine": [
   {
    "asl": "catanzaro",
@@ -33,6 +33,18 @@
    "titolo": "",
    "sha": "d57105d049c20e9545ef4b2ecd0af60a1456667e9ff0f35661d2f7569aaf96d6",
    "caratteri": 4038,
+   "cambiata": false
+  },
+  {
+   "asl": "catanzaro",
+   "url": "https://ecosanita.regione.calabria.it/faq.php",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "catanzaro/88cb8fda64a8.txt",
+   "titolo": "ECS - Regione Calabria",
+   "sha": "ad8a0eb0bd631aa2fb1dca401f744fe9800df256894c4a8fa3b2334cd630737a",
+   "caratteri": 4234,
+   "email_nascoste": 4,
    "cambiata": false
   },
   {
@@ -103,18 +115,6 @@
   },
   {
    "asl": "catanzaro",
-   "url": "https://ecosanita.regione.calabria.it/faq.php",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "catanzaro/88cb8fda64a8.txt",
-   "titolo": "ECS - Regione Calabria",
-   "sha": "ad8a0eb0bd631aa2fb1dca401f744fe9800df256894c4a8fa3b2334cd630737a",
-   "caratteri": 4234,
-   "email_nascoste": 4,
-   "cambiata": false
-  },
-  {
-   "asl": "catanzaro",
    "url": "https://www.asp.cz.it/distretti-sanitari/distretto-sociosanitario-di-catanzaro/scelta-del-medico/",
    "controllata": "2026-10-22",
    "http": 200,
@@ -123,6 +123,12 @@
    "sha": "df9ba084c18abd4902aeead5699ee7a6464955266fae90881733caa76fc25267",
    "caratteri": 13359,
    "cambiata": false
+  },
+  {
+   "asl": "catanzaro",
+   "url": "https://www.asp.cz.it/files/cartella-clinica/0-regolamento-rilascio-documentazione-sanitaria.pdf",
+   "controllata": "2026-10-22",
+   "nota": "file, non controllato"
   },
   {
    "asl": "cosenza",
@@ -148,12 +154,24 @@
   },
   {
    "asl": "cosenza",
+   "url": "https://ecosanita.regione.calabria.it/faq.php",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "cosenza/88cb8fda64a8.txt",
+   "titolo": "ECS - Regione Calabria",
+   "sha": "ad8a0eb0bd631aa2fb1dca401f744fe9800df256894c4a8fa3b2334cd630737a",
+   "caratteri": 4234,
+   "email_nascoste": 4,
+   "cambiata": false
+  },
+  {
+   "asl": "cosenza",
    "url": "https://www.asp.crotone.it/centro-unico-di-prenotazione-online/",
    "controllata": "2026-10-22",
    "http": 200,
    "file": "cosenza/fe31bc8fb243.txt",
    "titolo": "Centro Unico di Prenotazione Online - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "d24a2e1f00707b86a283b833c8714af57a8445fc36ca9467a58e807f837527bf",
+   "sha": "d1429e902a03edf475013edbe078af1bdf2610b1c30b133f59b358ac5c2c71f7",
    "caratteri": 8094,
    "cambiata": true
   },
@@ -167,6 +185,18 @@
    "sha": "d90b7f488bfdba8dd8fccc5bda6f6aee9615a49503659cd6388cd127dad56fbd",
    "caratteri": 4861,
    "cambiata": false
+  },
+  {
+   "asl": "cosenza",
+   "url": "https://www.asp.cosenza.it/trasparente/?p=contatti&area=0&nome=ufficio+cartelle+cliniche",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.asp.cosenza.it/",
+   "file": "cosenza/46045339cabd.txt",
+   "titolo": "ASP Cosenza – Dipartimento Tutela della Salute e Politiche Sanitarie",
+   "sha": "9d46e30601f917a358281eed6bf87a6396c6d18dc98e11eb6fd75021b7454edc",
+   "caratteri": 4930,
+   "cambiata": true
   },
   {
    "asl": "crotone",
@@ -197,8 +227,20 @@
    "http": 200,
    "file": "crotone/794ccfdda2f9.txt",
    "titolo": "Assistenza Domiciliare - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "886200f01af53203da4f41afef0be40b317f35c6417f073491b6aaa0df0ecc89",
+   "sha": "0d4de9e1adc770a50a43a899854844139f07c0635cb4e3683c5ee516012ee346",
    "caratteri": 9089,
+   "cambiata": true
+  },
+  {
+   "asl": "crotone",
+   "url": "https://ecosanita.regione.calabria.it/faq.php",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "crotone/88cb8fda64a8.txt",
+   "titolo": "ECS - Regione Calabria",
+   "sha": "ad8a0eb0bd631aa2fb1dca401f744fe9800df256894c4a8fa3b2334cd630737a",
+   "caratteri": 4234,
+   "email_nascoste": 4,
    "cambiata": false
   },
   {
@@ -208,7 +250,7 @@
    "http": 200,
    "file": "crotone/4ab485a670df.txt",
    "titolo": "contatti - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "0bbf6bc7713d0f1b1895eb2ef52fc838aa50015a878b72b58b7cd168b272a55e",
+   "sha": "4235f77f9e0bd52e943aa0b95af6b70d68899af298d2ce8a4e3cf39a83d2d081",
    "caratteri": 7856,
    "cambiata": true
   },
@@ -243,6 +285,18 @@
    "titolo": "Azienda Sanitaria Provinciale di Reggio Calabria",
    "sha": "07d48571bf43c6a0be95f0d03612ae5b59f76a7e4e0d7521d3fc0a803901a1b7",
    "caratteri": 3099,
+   "cambiata": false
+  },
+  {
+   "asl": "reggio-calabria",
+   "url": "https://ecosanita.regione.calabria.it/faq.php",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "reggio-calabria/88cb8fda64a8.txt",
+   "titolo": "ECS - Regione Calabria",
+   "sha": "ad8a0eb0bd631aa2fb1dca401f744fe9800df256894c4a8fa3b2334cd630737a",
+   "caratteri": 4234,
+   "email_nascoste": 4,
    "cambiata": false
   },
   {
@@ -290,6 +344,17 @@
    "cambiata": false
   },
   {
+   "asl": "reggio-calabria",
+   "url": "https://www.asprc.it/servizi/cartelle-cliniche/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "reggio-calabria/5d7cb62d3f8b.txt",
+   "titolo": "Azienda Sanitaria Provinciale di Reggio Calabria",
+   "sha": "16589d702257aec6cca54534cff791d79a55fbf60f530e3707bb0a372689eefe",
+   "caratteri": 4561,
+   "cambiata": true
+  },
+  {
    "asl": "vibo-valentia",
    "url": "https://www.aspvv.it/",
    "controllata": "2026-10-22",
@@ -304,6 +369,18 @@
    "titolo": "",
    "sha": "abd090276a4cfdd1416483f60a1cb3bc7f9898e2fba6293d9bd995e29018273a",
    "caratteri": 4913,
+   "cambiata": false
+  },
+  {
+   "asl": "vibo-valentia",
+   "url": "https://ecosanita.regione.calabria.it/faq.php",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "vibo-valentia/88cb8fda64a8.txt",
+   "titolo": "ECS - Regione Calabria",
+   "sha": "ad8a0eb0bd631aa2fb1dca401f744fe9800df256894c4a8fa3b2334cd630737a",
+   "caratteri": 4234,
+   "email_nascoste": 4,
    "cambiata": false
   },
   {
@@ -682,9 +759,9 @@
    "http": 200,
    "file": "asp-crotone/a6bd80f5d25e.txt",
    "titolo": "La Guardia medica - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "4a02be6f820a94290f68ba3b11de2f3ea5a14e065a48c25521fddf6228f9dfd2",
+   "sha": "548b65aadd25e4ff9f023946a6bd829f193ed1957d5a57bc85ef247331f5baf2",
    "caratteri": 5228,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "asp-crotone",
@@ -693,9 +770,9 @@
    "http": 200,
    "file": "asp-crotone/7cfbfca8e650.txt",
    "titolo": "Fascicolo sanitario elettronico - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "d60946b11ad15786c48cdcd01ed3e963ae69741a2a0951e5c81d379488180673",
+   "sha": "5b21a98901e340e8f7f12b97fb2807620a3e7cc1e19e6352e84c6bfd029bbfb6",
    "caratteri": 10734,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "asp-crotone",

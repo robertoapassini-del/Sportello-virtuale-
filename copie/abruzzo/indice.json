@@ -1,6 +1,6 @@
 {
  "regione": "abruzzo",
- "aggiornato": "2026-10-22T10:46:58.761Z",
+ "aggiornato": "2026-10-22T17:02:19.882Z",
  "pagine": [
   {
    "asl": "chieti",
@@ -11,7 +11,7 @@
    "titolo": "Home page | ASL2 Abruzzo",
    "sha": "2aae2595a21640675aac91fbc387f530c740608b7cf5ad486b7da35b38bc7c1d",
    "caratteri": 5257,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "chieti",
@@ -33,6 +33,18 @@
    "titolo": "Cure domiciliari | ASL2 Abruzzo",
    "sha": "939624369116574c034eb4ec4bf4e3cf8cdb2d50c8837caccd4736fe48954420",
    "caratteri": 12924,
+   "cambiata": false
+  },
+  {
+   "asl": "chieti",
+   "url": "https://sanita.regione.abruzzo.it/servizi-online",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "chieti/dfd098b78ada.txt",
+   "titolo": "Servizi Online | Regione Abruzzo - Portale Sanità",
+   "sha": "58d1e74a1a7e01651b86089e49b0b5cadd7d67e0222abe98192680a36a19348b",
+   "caratteri": 3401,
    "cambiata": false
   },
   {
@@ -120,9 +132,9 @@
    "http": 200,
    "file": "laquila/2a5085bbced3.txt",
    "titolo": "ASL 1 - Avezzano Sulmona L'Aquila - Home",
-   "sha": "ce3e129c7bb4c60a420d5e9f12a976f94d7381213827c86e1ca9dd0fab7d2649",
-   "caratteri": 5769,
-   "cambiata": false
+   "sha": "e770384e7d90e2496bdabf00ee2da1b574640b8d37f7e6a5030656eb7196860a",
+   "caratteri": 5768,
+   "cambiata": true
   },
   {
    "asl": "laquila",
@@ -144,6 +156,18 @@
    "titolo": "ASL 1 - Avezzano Sulmona L'Aquila - Cure domiciliari",
    "sha": "f082491e0eb272ccd5d573673edad05250ab027f83d86da3401ac5a4e5ff5059",
    "caratteri": 7716,
+   "cambiata": false
+  },
+  {
+   "asl": "laquila",
+   "url": "https://sanita.regione.abruzzo.it/servizi-online",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "laquila/dfd098b78ada.txt",
+   "titolo": "Servizi Online | Regione Abruzzo - Portale Sanità",
+   "sha": "58d1e74a1a7e01651b86089e49b0b5cadd7d67e0222abe98192680a36a19348b",
+   "caratteri": 3401,
    "cambiata": false
   },
   {
@@ -200,7 +224,7 @@
    "titolo": "Home Page - Azienda USL di Pescara",
    "sha": "74ff6ede5a0eed7a541b6ca528dd3e7659df9cec8badca05ede12164842a9c94",
    "caratteri": 2810,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "pescara",
@@ -222,6 +246,18 @@
    "titolo": "Assistenza Domiciliare Integrata (ADI) - Azienda USL di Pescara",
    "sha": "d82e316878ca06a53c810d63440d306e202f840605a5e4f22416da3589fe9038",
    "caratteri": 6608,
+   "cambiata": false
+  },
+  {
+   "asl": "pescara",
+   "url": "https://sanita.regione.abruzzo.it/servizi-online",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "pescara/dfd098b78ada.txt",
+   "titolo": "Servizi Online | Regione Abruzzo - Portale Sanità",
+   "sha": "58d1e74a1a7e01651b86089e49b0b5cadd7d67e0222abe98192680a36a19348b",
+   "caratteri": 3401,
    "cambiata": false
   },
   {
@@ -276,8 +312,8 @@
    "http": 200,
    "file": "teramo/05b30d65a47c.txt",
    "titolo": "ASL Teramo",
-   "sha": "575bce123a71875046e39cdfe2fc9c9d7f4d6ca4d88ceeac3a8e8ee03648cb07",
-   "caratteri": 4605,
+   "sha": "556ff634bb97a839513fe627f49952e2597c79bb7f181402c2a4729fac9973ba",
+   "caratteri": 4740,
    "cambiata": true
   },
   {
@@ -287,7 +323,7 @@
    "http": 200,
    "file": "teramo/1a6c122acb81.txt",
    "titolo": "ASL Teramo | Guardia medica",
-   "sha": "1900de124d45c5909467effce476bb10817a6c8acda033a6b65797698fd7f2f5",
+   "sha": "d454f78ff11d669155359e9ea7977a0cb0dd25ad4a1ba43f1ea696a50e878180",
    "caratteri": 3898,
    "cambiata": true
   },
@@ -298,9 +334,21 @@
    "http": 200,
    "file": "teramo/0b60fd7c1527.txt",
    "titolo": "Cure Domiciliari – ADI – Azienda Sanitaria Locale di Teramo",
-   "sha": "cf280c658e30ca683dbbe0f93735818923f5174d77d89da1e4c386a86eb8aa04",
+   "sha": "12ec2ee36f45dc618aa3a8a447f74360808e3254c6ace95b05c226fe5a7de80f",
    "caratteri": 9214,
    "cambiata": true
+  },
+  {
+   "asl": "teramo",
+   "url": "https://sanita.regione.abruzzo.it/servizi-online",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "teramo/dfd098b78ada.txt",
+   "titolo": "Servizi Online | Regione Abruzzo - Portale Sanità",
+   "sha": "58d1e74a1a7e01651b86089e49b0b5cadd7d67e0222abe98192680a36a19348b",
+   "caratteri": 3401,
+   "cambiata": false
   },
   {
    "asl": "teramo",
@@ -309,7 +357,7 @@
    "http": 200,
    "file": "teramo/b5041cabb133.txt",
    "titolo": "Contatti – Azienda Sanitaria Locale di Teramo",
-   "sha": "f490b83a31f9a26a2637e26b3a59ceca6b27191a910ce7411f914a4a724a8f88",
+   "sha": "54e125fe7708f63ccb451a0dfc66d5eab46d42ade931d550741e941216863cb5",
    "caratteri": 4551,
    "cambiata": true
   },
@@ -320,7 +368,7 @@
    "http": 200,
    "file": "teramo/f58daad63724.txt",
    "titolo": "ASL Teramo | Come fare per… Cittadini Utenti",
-   "sha": "859a08bef465a7a24fc51c8b9e870f1a149efe236eb85c474ca2e61c136c5dbc",
+   "sha": "449978b16c3fe597a155e974bc757d116bdbe11a416d0031de9b114be00db295",
    "caratteri": 50330,
    "cambiata": true
   },
@@ -343,8 +391,8 @@
    "http": 200,
    "file": "teramo/5cf8b65c79d1.txt",
    "titolo": "“Sos liste di attesa”, da oggi al via un nuovo servizio – Azienda Sanitaria Locale di Teramo",
-   "sha": "72a68596de29093c55da532a32080cfe5baf34257063d37c022d197396d9f46e",
-   "caratteri": 5808,
+   "sha": "c3f1824ad3b8388931bc11611b65170f92a83b3b237830c9161746c28a358a15",
+   "caratteri": 5829,
    "cambiata": true
   },
   {
@@ -421,9 +469,9 @@
    "certificato": "non valido",
    "file": "regione-abruzzo/e988e669aa6f.txt",
    "titolo": "Regione Abruzzo - Portale Sanità |",
-   "sha": "c268261cb21bdb5eb82bec30e48e44e9a07723c3f46f1854f2d67efc22a972b3",
-   "caratteri": 5576,
-   "cambiata": false
+   "sha": "9f5dbb8db87dca5f97011b0de3c81ba887d8bb9fd5b7f67d45d0e850c074cc27",
+   "caratteri": 5584,
+   "cambiata": true
   },
   {
    "asl": "regione-abruzzo",
@@ -470,18 +518,6 @@
    "titolo": "Servizio online - Sportello Centro Unico Prenotazioni Regionale | Amministrazione trasparente",
    "sha": "1a844b00f62f5429c82c81ad3425f9cd6ed696b30e5477c80e0b6bb112a35887",
    "caratteri": 5854,
-   "cambiata": false
-  },
-  {
-   "asl": "regione-abruzzo",
-   "url": "https://sanita.regione.abruzzo.it/servizi-online",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "certificato": "non valido",
-   "file": "regione-abruzzo/dfd098b78ada.txt",
-   "titolo": "Servizi Online | Regione Abruzzo - Portale Sanità",
-   "sha": "58d1e74a1a7e01651b86089e49b0b5cadd7d67e0222abe98192680a36a19348b",
-   "caratteri": 3401,
    "cambiata": false
   },
   {
@@ -584,7 +620,7 @@
    "http": 200,
    "file": "asl-teramo/6f4b31c72c79.txt",
    "titolo": "UFFICIO RELAZIONI CON IL PUBBLICO (aggiornato 10.2026) – Azienda Sanitaria Locale di Teramo",
-   "sha": "027975e4809fd25b4b2aaf9ffa3e43a945f6a330ddda964b6ae53fd4cba90ba9",
+   "sha": "f499c138e92f376ccce4989930756028df24f7a17bda54dbea2ebe55244d4913",
    "caratteri": 4976,
    "cambiata": true
   },
@@ -595,7 +631,7 @@
    "http": 200,
    "file": "asl-teramo/92c5ebe913c0.txt",
    "titolo": "Prenotazioni – Azienda Sanitaria Locale di Teramo",
-   "sha": "004843d1ec9bc27bc4eed8f3a5b64103329dfc010a0f5bfca68c637b80a0ab30",
+   "sha": "202df5db46220782e8459d9c24135c8e20e9c9dcacd20d917d462150a16c63d9",
    "caratteri": 2310,
    "cambiata": true
   },
@@ -606,7 +642,7 @@
    "http": 200,
    "file": "asl-teramo/ecdeb416f17c.txt",
    "titolo": "Informazioni sui CUP – Azienda Sanitaria Locale di Teramo",
-   "sha": "9183618bb2cc52154f115637e129c6f37073428dbdb087936a0503b7a9ca42e1",
+   "sha": "94e1677543921b56d8683bdce55e32c7430ce5bf2cb1d2baacd36233788f0bcc",
    "caratteri": 3843,
    "cambiata": true
   },
@@ -617,7 +653,7 @@
    "http": 200,
    "file": "asl-teramo/bf79a3a9ebb6.txt",
    "titolo": "118, Pronto Soccorso e Guardia Medica (come attivare i Servizi di Urgenza/Emergenza Sanitaria) – Azienda Sanitaria Locale di Teramo",
-   "sha": "3a41d6e77a5e161b6584eff35f52ecbdaac0b2302f720f9683580ddaec648474",
+   "sha": "6cd12685f1c5ef473bddf931e7678c0d173ce1acc23230e667c931becb69059e",
    "caratteri": 3361,
    "cambiata": true
   }

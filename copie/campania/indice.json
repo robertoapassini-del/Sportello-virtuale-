@@ -1,6 +1,6 @@
 {
  "regione": "campania",
- "aggiornato": "2026-10-22T10:54:15.092Z",
+ "aggiornato": "2026-10-22T17:10:31.600Z",
  "pagine": [
   {
    "asl": "avellino",
@@ -9,9 +9,9 @@
    "http": 200,
    "file": "avellino/50d19ec529c1.txt",
    "titolo": "ASL Avellino - Home",
-   "sha": "d08570fd1a0c4430ed2ef6cb4768040d1567d3bf23f14944d17b3f3c8d60de30",
-   "caratteri": 20623,
-   "cambiata": false
+   "sha": "95bbcc4930da976ee5799ca34942c4caf031046d0c0b9bb027818802f76233f9",
+   "caratteri": 20593,
+   "cambiata": true
   },
   {
    "asl": "avellino",
@@ -75,6 +75,12 @@
    "url": "https://www.regione.campania.it/regione/it/news/primo-piano/liste-d-attesa-la-campania-dell-eccellenza-presentati-i-dati-del-monitoraggio-scarica-il-report",
    "controllata": "2026-10-22",
    "http": 404
+  },
+  {
+   "asl": "avellino",
+   "url": "https://aslavellino.it/images/vz/Tempi_di_attesa/tutela/percorso_di_tutela.pdf",
+   "controllata": "2026-10-22",
+   "nota": "file, non controllato"
   },
   {
    "asl": "benevento",
@@ -186,8 +192,8 @@
    "certificato": "non valido",
    "file": "caserta/e125f0b729f0.txt",
    "titolo": "Asl Caserta - Home Page - Asl Caserta",
-   "sha": "cb8c5a68667bfeba24693afefee78befd554829994cff00e1e4c53939c9978d5",
-   "caratteri": 22828,
+   "sha": "7ea4c5f886a98e691f3ff7179fb922b6350f9b0ad6da6f571ce0052107dc51e5",
+   "caratteri": 22841,
    "cambiata": true
   },
   {
@@ -242,7 +248,7 @@
    "titolo": "Home - Portal Na 1",
    "sha": "74e4281e8002d87ff7bfc93a13efac0e92f0290f40d681ba664016b2969c5ec4",
    "caratteri": 13468,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "napoli",
@@ -254,7 +260,7 @@
    "titolo": "Guardia Medica - Emergenza Territoriale - Portal Na 1",
    "sha": "a23bf59db255a6f0d90fb968fd2edeaf9ce2f31dc23d77725054203e5e418d58",
    "caratteri": 7105,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "napoli",
@@ -264,8 +270,8 @@
    "certificato": "non valido",
    "file": "napoli/2f2947c35b17.txt",
    "titolo": "Porta Unica di Accesso (PUA) – ASL Napoli 2 Nord",
-   "sha": "32e2b21f5441cc883d1a38fcc6ee82e0b34a0d18ce076948c1eb1341ed646057",
-   "caratteri": 10961,
+   "sha": "fabd2c8879e6836fdea4f2725b5ee535eb01b6ed45f185391be370935f62fde3",
+   "caratteri": 10963,
    "cambiata": true
   },
   {
@@ -276,8 +282,8 @@
    "certificato": "non valido",
    "file": "napoli/7623db2690d0.txt",
    "titolo": "Numero verde prenotazioni visite – ASL Napoli 2 Nord",
-   "sha": "cb0298f85c0e0a547586f308676927522ac8c0da262c5460976d58237a044049",
-   "caratteri": 7811,
+   "sha": "006699e1a762d4e39858e5eda8ba9a15da05ef2a72691c9dae8674d04103552c",
+   "caratteri": 7813,
    "cambiata": true
   },
   {
@@ -289,7 +295,7 @@
    "titolo": "ASL Napoli 3",
    "sha": "822ffaaebcad1975ffa5441c8db7e2144892f289918fce9402d8a10d5f83c8fc",
    "caratteri": 7914,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "napoli",
@@ -301,7 +307,7 @@
    "titolo": "URP - Portal Na 1",
    "sha": "2f1bfeb44c5fc996f294a558cde0923ca07de9ca6fcbabcf360547e64ad38196",
    "caratteri": 6991,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "napoli",
@@ -311,8 +317,8 @@
    "certificato": "non valido",
    "file": "napoli/a8448bfc505e.txt",
    "titolo": "U.O.C. URP e Marketing Sanitario – ASL Napoli 2 Nord",
-   "sha": "a4fe17d0a6a663f8d562439ef9d6088b314b1ba11c723d3dd937d51397172f4f",
-   "caratteri": 5909,
+   "sha": "577c9ab4d13d63f31b6e86d9c9564097e383d501447882f5d4f94c5fbc523c3f",
+   "caratteri": 5912,
    "cambiata": true
   },
   {
@@ -325,7 +331,7 @@
    "titolo": "ASL Napoli 3",
    "sha": "c7671e97c8a102988e8eba55c06e18aa5a95cbe27b04d2e63a55cb5b2cf23c23",
    "caratteri": 4323,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "napoli",
@@ -337,7 +343,7 @@
    "titolo": "Cure domiciliari e assistenza residenziale - Portal Na 1",
    "sha": "b4ee344afff6e9aa497901a64e9b041d2bdd121cea8d060f42e96121f6be788b",
    "caratteri": 9905,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "napoli",
@@ -363,9 +369,9 @@
    "http": 200,
    "file": "salerno/dee155c4a938.txt",
    "titolo": "Home Page - ASL Salerno",
-   "sha": "d59f50e994e7c51f79bcd0bea834fb7b7d3657f646554432770916bd05a69a13",
-   "caratteri": 9473,
-   "cambiata": false
+   "sha": "33b1086f165cb367b7c8cf623a70ef406707b3b1aa5c1cd886260735ae73eebb",
+   "caratteri": 9456,
+   "cambiata": true
   },
   {
    "asl": "salerno",
@@ -759,7 +765,7 @@
    "titolo": "CUP - Portal Na 1",
    "sha": "7abea5b3c384aa6f87d06dfe5126fc438afe5a015e42f097e68aabd2ab54e79e",
    "caratteri": 7142,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-napoli-1-centro",
@@ -771,7 +777,7 @@
    "titolo": "Come faccio per prenotare visite ed esami? - Portal Na 1",
    "sha": "726ce5b6786d018c6f2389f31fd5c6b64e2090d39f6b1f50c8b635c888105c33",
    "caratteri": 7226,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-napoli-1-centro",
@@ -783,7 +789,7 @@
    "titolo": "Come richiedere visite a domicilio? - Portal Na 1",
    "sha": "cea1e25c04af8118bc3da9fbc394d5e0233980497dec961d6b953a16bc71a84e",
    "caratteri": 6384,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-napoli-2-nord",
@@ -793,8 +799,8 @@
    "certificato": "non valido",
    "file": "asl-napoli-2-nord/a1d7306b646d.txt",
    "titolo": "ASL Napoli 2 Nord",
-   "sha": "b545f515ffa5ce544100cd5e4143fb0b553f1b36c471aa3aa33e659a50623596",
-   "caratteri": 7173,
+   "sha": "0aec731df44f1cc1adbec046bad3f67ecc014829304a913eebd87f91c0e3f2ed",
+   "caratteri": 6984,
    "cambiata": true
   },
   {
@@ -806,8 +812,8 @@
    "certificato": "non valido",
    "file": "asl-napoli-2-nord/aaa502e24a40.txt",
    "titolo": "Azienda – ASL Napoli 2 Nord",
-   "sha": "50fe61784c47c7a3e98539ee76c76ce18688256ab864500ba6bfa791b2f6c78d",
-   "caratteri": 13846,
+   "sha": "e49a479d8aa8ea6fe34a7e588cff18ea9a74738b932dc52f1490500e7bc6a474",
+   "caratteri": 13849,
    "cambiata": true
   },
   {
@@ -819,8 +825,8 @@
    "certificato": "non valido",
    "file": "asl-napoli-2-nord/a040d4f22b9d.txt",
    "titolo": "ASL Napoli 2 Nord",
-   "sha": "410bf098d8e1839bcdc14a5421895e1189fb01912d56c397ec6d1a26cd568bd9",
-   "caratteri": 7170,
+   "sha": "6664f87ede932a2d393ce1b060e2411af7f4c9ef7c1169ffc7304cdc278bb7f7",
+   "caratteri": 6978,
    "cambiata": true
   },
   {

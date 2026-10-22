@@ -1,6 +1,6 @@
 {
  "regione": "lombardia",
- "aggiornato": "2026-10-22T11:24:09.191Z",
+ "aggiornato": "2026-10-22T17:39:19.593Z",
  "pagine": [
   {
    "asl": "bergamo",
@@ -105,12 +105,8 @@
    "asl": "bergamo",
    "url": "https://www.asst-bgovest.it/642.asp",
    "controllata": "2026-10-22",
-   "http": 200,
-   "file": "bergamo/17d7114e61be.txt",
-   "titolo": "ADI Assistenza Domiciliare Integrata",
-   "sha": "b00f98c3bf5b5c24e91ac5f871b9d4baa20cc29ec92b9c9257480201c514ed90",
-   "caratteri": 7485,
-   "cambiata": false
+   "http": 0,
+   "errore": "curl: (56) Recv failure: Connection reset by peer"
   },
   {
    "asl": "bergamo",
@@ -153,8 +149,8 @@
    "http": 200,
    "file": "bergamo/1f85c98b9e36.txt",
    "titolo": "Home Page | ASST Papa Giovanni XXIII",
-   "sha": "39bd2aae0200f4ec5c7bc231dab2a79d191ae4e314e64038c04021a1de2086bb",
-   "caratteri": 320661,
+   "sha": "544d37336c7655af680bfd1eb7e32d039dc61f145cf2056dad55e94378645224",
+   "caratteri": 321139,
    "cambiata": true
   },
   {
@@ -203,9 +199,9 @@
    "http": 200,
    "file": "bergamo/1584c07280ec.txt",
    "titolo": "ASST di Bergamo Ovest",
-   "sha": "a6938f762235e3dec86c6ed11ebd1e735e37111bbc58661c5995e0dd35a08637",
-   "caratteri": 3778,
-   "cambiata": false
+   "sha": "7a0f40885f8b408412a59c236a09643643d1a2cded51c87f6c189899b3580c84",
+   "caratteri": 3734,
+   "cambiata": true
   },
   {
    "asl": "bergamo",
@@ -470,9 +466,9 @@
    "certificato": "non valido",
    "file": "brescia/25e212e9f641.txt",
    "titolo": "COME PRENOTARE UNA VISITA - ASST Franciacorta",
-   "sha": "84cbb59750a7e9ddc953a9b884e72f30470ecca846e176289d1c8f5c485f214f",
-   "caratteri": 8464,
-   "cambiata": false
+   "sha": "44ff41b5c6f0129b5ec078303f22847bbd301dec22dadf338234565b5f6e3c18",
+   "caratteri": 8656,
+   "cambiata": true
   },
   {
    "asl": "brescia",
@@ -601,7 +597,7 @@
    "titolo": "Homepage | ASST DEGLI SPEDALI CIVILI DI BRESCIA",
    "sha": "296cca893921d0d27c6024b0e7ce826c714f3635b53f9e927b13d9884509f99c",
    "caratteri": 9314,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "brescia",
@@ -636,9 +632,9 @@
    "certificato": "non valido",
    "file": "brescia/42fd230aeb51.txt",
    "titolo": "ASST Franciacorta - ASST Franciacorta",
-   "sha": "21f3a6d3ab7d83fa3d583fe1bf9f763b8ded27963c1c541fc7fc33da94da11fb",
-   "caratteri": 5651,
-   "cambiata": false
+   "sha": "795863f156406aeeb7fb7a5d0f6562930f415e274674f6800509eb7c68ddc48e",
+   "caratteri": 5201,
+   "cambiata": true
   },
   {
    "asl": "brescia",
@@ -730,9 +726,9 @@
    "http": 200,
    "file": "como/035a7bab1355.txt",
    "titolo": "Home Page - ATS Insubria",
-   "sha": "38296114cba69c9cf6b06c312718f0f237aecc43a2d8803884131af036a966c9",
-   "caratteri": 13119,
-   "cambiata": false
+   "sha": "96cd97f2a2bb82f59f990fa94631683e6de76cea2e7c23406c187cf432b0a6d1",
+   "caratteri": 12729,
+   "cambiata": true
   },
   {
    "asl": "como",
@@ -909,9 +905,9 @@
    "http": 200,
    "file": "como/c20c1330e77e.txt",
    "titolo": "ASST Lariana",
-   "sha": "9ccf531061d65b43027d4c8472a65e3a6190a86634d0278ba1a31c5f7d883d15",
-   "caratteri": 7582,
-   "cambiata": false
+   "sha": "34bd954bcfa0514b38db257a9ed29b4a94163b24f64f395be64dbbacbdbe2b80",
+   "caratteri": 7720,
+   "cambiata": true
   },
   {
    "asl": "como",
@@ -943,9 +939,9 @@
    "http": 200,
    "file": "como/7f660c81084a.txt",
    "titolo": "Liste di attesa – ASST Lariana",
-   "sha": "f2ec73e14d743794e0818ebd29bdd53f638d0f95d0469c267828f2472952f1a6",
-   "caratteri": 12238,
-   "cambiata": false
+   "sha": "c8db6b1296805a14f1e693c96f4ff57e31a2e884f437c095175b2496b5f0599e",
+   "caratteri": 12257,
+   "cambiata": true
   },
   {
    "asl": "como",
@@ -965,9 +961,9 @@
    "http": 200,
    "file": "cremona/8d7a0df28ced.txt",
    "titolo": "Homepage | ATS VALPADANA",
-   "sha": "af058db7448bda89f615e9c62a44458b5c8555a1d9a5826f5e4e9dc0a078b574",
-   "caratteri": 4643,
-   "cambiata": false
+   "sha": "b4c74fd5de3274e7d109f68f259cf13afb693bba8d2945b92c74bcd1c97d4411",
+   "caratteri": 4560,
+   "cambiata": true
   },
   {
    "asl": "cremona",
@@ -1158,6 +1154,28 @@
    "cambiata": false
   },
   {
+   "asl": "cremona",
+   "url": "https://www.asst-cremona.it/amministrazione-trasparente/liste-attesa",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "cremona/cd1b8be6832d.txt",
+   "titolo": "Liste di attesa | ASST Cremona",
+   "sha": "b9f7453152696aee1968917974041ad74921c2f4f717417d2dded7f5e7b6d620",
+   "caratteri": 7752,
+   "cambiata": true
+  },
+  {
+   "asl": "cremona",
+   "url": "https://www.asst-cremona.it/ufficio-pubblica-tutela-upt",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "cremona/9eb17aa4a56b.txt",
+   "titolo": "Ufficio di Pubblica Tutela (UPT) | ASST Cremona",
+   "sha": "c28742579da7dee8ef8c36a2855b64a199d6bada9ab2caf55c390f46cbfca302",
+   "caratteri": 3883,
+   "cambiata": true
+  },
+  {
    "asl": "lecco",
    "url": "https://www.ats-brianza.it/",
    "controllata": "2026-10-22",
@@ -1197,9 +1215,9 @@
    "http": 200,
    "file": "lecco/266615f5c044.txt",
    "titolo": "ASST Lecco – Regione Lombardia",
-   "sha": "d87cc616dc9821fbb004e1401bf26d76c7eb338d246dfcd6bec409c7fd25399d",
-   "caratteri": 19979,
-   "cambiata": false
+   "sha": "36b6ba0515adc2d48086d7b189a108ad377502c47855942ac7e1c4e84f6519b6",
+   "caratteri": 20116,
+   "cambiata": true
   },
   {
    "asl": "lecco",
@@ -1296,9 +1314,9 @@
    "finale": "https://www.asst-lecco.it/",
    "file": "lecco/fa19519628bf.txt",
    "titolo": "ASST Lecco – Regione Lombardia",
-   "sha": "d87cc616dc9821fbb004e1401bf26d76c7eb338d246dfcd6bec409c7fd25399d",
-   "caratteri": 19979,
-   "cambiata": false
+   "sha": "36b6ba0515adc2d48086d7b189a108ad377502c47855942ac7e1c4e84f6519b6",
+   "caratteri": 20116,
+   "cambiata": true
   },
   {
    "asl": "lecco",
@@ -1308,9 +1326,9 @@
    "finale": "https://www.asst-lecco.it/",
    "file": "lecco/d2dfcd7d62ba.txt",
    "titolo": "ASST Lecco – Regione Lombardia",
-   "sha": "d87cc616dc9821fbb004e1401bf26d76c7eb338d246dfcd6bec409c7fd25399d",
-   "caratteri": 19979,
-   "cambiata": false
+   "sha": "36b6ba0515adc2d48086d7b189a108ad377502c47855942ac7e1c4e84f6519b6",
+   "caratteri": 20116,
+   "cambiata": true
   },
   {
    "asl": "lecco",
@@ -1540,15 +1558,26 @@
    "cambiata": false
   },
   {
+   "asl": "lodi",
+   "url": "https://www.asst-lodi.it/en/liste-di-attesa1",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "lodi/126471a5c041.txt",
+   "titolo": "TempiAttesa - Liste di attesa - www.asst-lodi.it",
+   "sha": "bd33989acc67ce29e306a7bc757b6c021b5bbe38fc55d386771009fb46d175a0",
+   "caratteri": 9215,
+   "cambiata": true
+  },
+  {
    "asl": "mantova",
    "url": "https://www.ats-valpadana.it/",
    "controllata": "2026-10-22",
    "http": 200,
    "file": "mantova/8d7a0df28ced.txt",
    "titolo": "Homepage | ATS VALPADANA",
-   "sha": "af058db7448bda89f615e9c62a44458b5c8555a1d9a5826f5e4e9dc0a078b574",
-   "caratteri": 4643,
-   "cambiata": false
+   "sha": "b4c74fd5de3274e7d109f68f259cf13afb693bba8d2945b92c74bcd1c97d4411",
+   "caratteri": 4560,
+   "cambiata": true
   },
   {
    "asl": "mantova",
@@ -1928,9 +1957,9 @@
    "http": 200,
    "file": "milano/36bf45b8b2fd.txt",
    "titolo": "Punto Unico di Accesso PUA - ASST Melegnano Martesana",
-   "sha": "42bcc1cc77923d436bfcc6e86b40621672b57a5b0dc0768a29434f47003930b0",
-   "caratteri": 9125,
-   "cambiata": false
+   "sha": "55c1ca9b7896ee6509c9ff2fc9161995b4283add940525558ccc08e3da4387f7",
+   "caratteri": 9119,
+   "cambiata": true
   },
   {
    "asl": "milano",
@@ -2145,11 +2174,12 @@
    "url": "https://www.ospedaleniguarda.it/chi-siamo/organizzazione/comunicazione-e-relazioni-esterne-urp",
    "controllata": "2026-10-22",
    "http": 200,
+   "finale": "https://www.ospedaleniguarda.it/chi-siamo/organizzazione",
    "file": "milano/8334f755f710.txt",
-   "titolo": "COMUNICAZIONE E RELAZIONI ESTERNE - URP | ORGANIZZAZIONE | ASST Grande Ospedale Metropolitano Niguarda",
-   "sha": "6afdc96432d889ecf68706defa8985073cf469e5bb51251190d79a23e485e4cc",
-   "caratteri": 5588,
-   "cambiata": false
+   "titolo": "Organizzazione | ASST Grande Ospedale Metropolitano Niguarda",
+   "sha": "019775f52b7d5df0432744cca4f59bcb0e525c77753d353405f0f93b4dbd5fe6",
+   "caratteri": 7022,
+   "cambiata": true
   },
   {
    "asl": "milano",
@@ -2378,9 +2408,9 @@
    "http": 200,
    "file": "milano/40e6e7a51547.txt",
    "titolo": "Cure Domiciliari A.D.I. - ASST Melegnano Martesana",
-   "sha": "0890715a0ac97173d7f29658d97683963a8b24e91cb81a5807b2d5dfde6d91f6",
-   "caratteri": 11994,
-   "cambiata": false
+   "sha": "2dae9a3dd4b6efda9150500b0e18a71eae987c4068848d93f1777756f059aa88",
+   "caratteri": 12007,
+   "cambiata": true
   },
   {
    "asl": "milano",
@@ -2463,7 +2493,7 @@
    "http": 200,
    "file": "milano/91bb0d244f6b.txt",
    "titolo": "Liste di attesa - ASST Melegnano Martesana",
-   "sha": "74d481efd13bf092ef782bc6c33d1e2211dedd740477b84d4342a55f8a594cf2",
+   "sha": "44de6490deca63172a45fb4ed84858d58091093d5aedbeb01527eee9afe84760",
    "caratteri": 7290,
    "cambiata": true
   },
@@ -2697,7 +2727,7 @@
    "titolo": "HomePage | ATS Pavia",
    "sha": "56b11cfa05774beb58076cb5183e5353e0599583aa51fdac22416013123ad241",
    "caratteri": 5978,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "pavia",
@@ -2794,9 +2824,9 @@
    "http": 200,
    "file": "pavia/14bf1e457a0d.txt",
    "titolo": "Azienda Socio-Sanitaria Territoriale di Pavia",
-   "sha": "3ead5ffae26db1741101f68990436caa2ed3c2f6f102e2e101b2fc0a978cf320",
-   "caratteri": 8479,
-   "cambiata": false
+   "sha": "ae1c4ee127b0980a7664a34c29db66777e0ec9326729196ffc39522856230085",
+   "caratteri": 8331,
+   "cambiata": true
   },
   {
    "asl": "pavia",
@@ -3033,9 +3063,9 @@
    "http": 200,
    "file": "varese/035a7bab1355.txt",
    "titolo": "Home Page - ATS Insubria",
-   "sha": "38296114cba69c9cf6b06c312718f0f237aecc43a2d8803884131af036a966c9",
-   "caratteri": 13119,
-   "cambiata": false
+   "sha": "96cd97f2a2bb82f59f990fa94631683e6de76cea2e7c23406c187cf432b0a6d1",
+   "caratteri": 12729,
+   "cambiata": true
   },
   {
    "asl": "varese",
@@ -3111,8 +3141,8 @@
    "http": 200,
    "file": "varese/8f9749388b3f.txt",
    "titolo": "URP - Varese - ASST Settelaghi - ASST Settelaghi",
-   "sha": "076ca9dc0934400ef276464a64dca61b8e7233e592a32b21410cb6f74766110d",
-   "caratteri": 3465,
+   "sha": "a4da0091b876fae3b1aaf81895a296ec75b4a5a4ecdb3173426821b51447dd3b",
+   "caratteri": 3463,
    "cambiata": true
   },
   {
@@ -3124,7 +3154,7 @@
    "titolo": "PRENOTAZIONE visite e esami con SSN - ASST Settelaghi - ASST Settelaghi",
    "sha": "977a1775b8bc8ff34297477d221bafa8a0538e2393c44bd2702f0ad8cbb2183b",
    "caratteri": 12609,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "varese",
@@ -3201,7 +3231,7 @@
    "http": 200,
    "file": "varese/2e15c4f801d9.txt",
    "titolo": "Servizi Sanitari e Assistenza Medica - ASST Settelaghi - ASST Settelaghi",
-   "sha": "ca68bb52b89210853f60427ba4dc735fa49f6f67a5f75a7d68f8185084ae9e27",
+   "sha": "1158c613d13ba330736e5328166f339f5392ce538d5d5b62a0e99afd46c971ee",
    "caratteri": 5042,
    "cambiata": true
   },
@@ -3239,7 +3269,7 @@
    "titolo": "CUP - Ospedale di Circolo - ASST Settelaghi - ASST Settelaghi",
    "sha": "f2ef8a75358b384f219232add8b72578d1ee4dbe1631d5fcd2fa2b59b2fdc4b0",
    "caratteri": 2588,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "varese",

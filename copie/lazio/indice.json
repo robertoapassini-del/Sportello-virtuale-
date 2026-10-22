@@ -1,6 +1,6 @@
 {
  "regione": "lazio",
- "aggiornato": "2026-10-22T11:07:16.176Z",
+ "aggiornato": "2026-10-22T17:22:08.922Z",
  "pagine": [
   {
    "asl": "frosinone",
@@ -12,6 +12,17 @@
    "titolo": "ASL Frosinone",
    "sha": "3c29b9f1177768909ad0d12141b638da754b10274115545ea645eb75c6b461dc",
    "caratteri": 13748,
+   "cambiata": false
+  },
+  {
+   "asl": "frosinone",
+   "url": "https://salutelazio.it/it/pass-di-garanzia",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "frosinone/1b6a08522663.txt",
+   "titolo": "Fascicolo Sanitario",
+   "sha": "ce21a63b1dc01e21429e11f4a4d7d3560e05c4c5a8985260c2c21f06b0be1818",
+   "caratteri": 4170,
    "cambiata": false
   },
   {
@@ -63,14 +74,9 @@
   },
   {
    "asl": "frosinone",
-   "url": "https://salutelazio.it/it/pass-di-garanzia",
+   "url": "https://www.asl.fr.it/wp-content/uploads/Percorsi-di-Tutela.pdf",
    "controllata": "2026-10-22",
-   "http": 200,
-   "file": "frosinone/1b6a08522663.txt",
-   "titolo": "Fascicolo Sanitario",
-   "sha": "ce21a63b1dc01e21429e11f4a4d7d3560e05c4c5a8985260c2c21f06b0be1818",
-   "caratteri": 4170,
-   "cambiata": true
+   "nota": "file, non controllato"
   },
   {
    "asl": "latina",
@@ -79,8 +85,19 @@
    "http": 200,
    "file": "latina/5272b204d144.txt",
    "titolo": "Home",
-   "sha": "3e2804757fc9db2de6f9da5a3d02d07077fa22e2e32b38262cb7c77c15f27962",
-   "caratteri": 8067,
+   "sha": "04b131cd36d06ad0697a330cf4dfad8b1b545944b2cfaed130985d286ca4b47b",
+   "caratteri": 8088,
+   "cambiata": true
+  },
+  {
+   "asl": "latina",
+   "url": "https://salutelazio.it/it/pass-di-garanzia",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "latina/1b6a08522663.txt",
+   "titolo": "Fascicolo Sanitario",
+   "sha": "ce21a63b1dc01e21429e11f4a4d7d3560e05c4c5a8985260c2c21f06b0be1818",
+   "caratteri": 4170,
    "cambiata": false
   },
   {
@@ -91,9 +108,9 @@
    "finale": "https://salutelazio.it/it/servizi/guardia-medica",
    "file": "latina/a14f568f3b2f.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
+   "sha": "35d3aad05a7b0076371577c576aa4a5787bf713c630b0b4c273f9b2e68bbe902",
    "caratteri": 2358,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -151,17 +168,6 @@
    "cambiata": false
   },
   {
-   "asl": "latina",
-   "url": "https://salutelazio.it/it/pass-di-garanzia",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "latina/1b6a08522663.txt",
-   "titolo": "Fascicolo Sanitario",
-   "sha": "ce21a63b1dc01e21429e11f4a4d7d3560e05c4c5a8985260c2c21f06b0be1818",
-   "caratteri": 4170,
-   "cambiata": true
-  },
-  {
    "asl": "rieti",
    "url": "https://www.asl.rieti.it/",
    "controllata": "2026-10-22",
@@ -170,6 +176,17 @@
    "titolo": "HomePage – ASL Rieti",
    "sha": "c778db359b150d6f6fbc95eb01a65828a251cf025cb95f1f2d5d1fdb3832bc53",
    "caratteri": 13134,
+   "cambiata": false
+  },
+  {
+   "asl": "rieti",
+   "url": "https://salutelazio.it/it/pass-di-garanzia",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "rieti/1b6a08522663.txt",
+   "titolo": "Fascicolo Sanitario",
+   "sha": "ce21a63b1dc01e21429e11f4a4d7d3560e05c4c5a8985260c2c21f06b0be1818",
+   "caratteri": 4170,
    "cambiata": false
   },
   {
@@ -251,17 +268,6 @@
    "cambiata": false
   },
   {
-   "asl": "rieti",
-   "url": "https://salutelazio.it/it/pass-di-garanzia",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "rieti/1b6a08522663.txt",
-   "titolo": "Fascicolo Sanitario",
-   "sha": "ce21a63b1dc01e21429e11f4a4d7d3560e05c4c5a8985260c2c21f06b0be1818",
-   "caratteri": 4170,
-   "cambiata": true
-  },
-  {
    "asl": "roma",
    "url": "https://www.salutelazio.it/",
    "controllata": "2026-10-22",
@@ -269,9 +275,20 @@
    "finale": "https://salutelazio.it/it",
    "file": "roma/753559e36904.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "6f6187cd7268d56075b198f3561020d42f09aa3d6b8aeb9c8051ba6b63732997",
+   "sha": "5cf4d2374d8d906aca0a2dd69e46c02b41d8f5adf5aa5a732584694f9372105d",
    "caratteri": 4010,
    "cambiata": true
+  },
+  {
+   "asl": "roma",
+   "url": "https://salutelazio.it/it/pass-di-garanzia",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "roma/1b6a08522663.txt",
+   "titolo": "Fascicolo Sanitario",
+   "sha": "ce21a63b1dc01e21429e11f4a4d7d3560e05c4c5a8985260c2c21f06b0be1818",
+   "caratteri": 4170,
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -292,7 +309,7 @@
    "http": 200,
    "file": "roma/e0d930024e6e.txt",
    "titolo": "Punto Unico di Accesso (PUA)",
-   "sha": "4cd670fdb6ac64e9afc5d7836beb2acebdea52100916cf4009ef506e53f593ab",
+   "sha": "2601a0764789dd78e17b8f5404008da5b7fa345a939d74a99c445e57d69792d3",
    "caratteri": 22475,
    "cambiata": true
   },
@@ -311,8 +328,13 @@
    "asl": "roma",
    "url": "https://www.aslroma3.it/servizio-prenotazioni",
    "controllata": "2026-10-22",
-   "http": 0,
-   "errore": "curl: (56) Failure when receiving data from the peer"
+   "http": 200,
+   "finale": "https://www.aslroma3.it/servizio-prenotazioni/",
+   "file": "roma/970ecccf7d85.txt",
+   "titolo": "Servizio Prenotazioni ASL ROMA 3",
+   "sha": "30309b5e173dff51c2ace40ae2de0ef292f29adf71567d5335acd7318a30d987",
+   "caratteri": 1383,
+   "cambiata": true
   },
   {
    "asl": "roma",
@@ -362,8 +384,12 @@
    "asl": "roma",
    "url": "https://www.aslroma3.it/urp/",
    "controllata": "2026-10-22",
-   "http": 0,
-   "errore": "curl: (56) Failure when receiving data from the peer"
+   "http": 200,
+   "file": "roma/2d834cda3719.txt",
+   "titolo": "Urp - Asl Roma 3",
+   "sha": "7d4a1717a1552caaeb7921e47ffa63958c6b893cedb8426c766205a16d07fb05",
+   "caratteri": 9740,
+   "cambiata": true
   },
   {
    "asl": "roma",
@@ -394,7 +420,7 @@
    "http": 200,
    "file": "roma/2b46e5d8fe38.txt",
    "titolo": "ASL Roma 2 - Punto Unico di Accesso - PUA",
-   "sha": "75b1a46a45fcd80454cc8e76c87953be2c9a165f8e003dda7413230112594f15",
+   "sha": "f136fda286492914eebcb19a5cc932081009d736cdb4d86740ca561afea7dd24",
    "caratteri": 11883,
    "email_nascoste": 11,
    "cambiata": true
@@ -434,17 +460,6 @@
   },
   {
    "asl": "roma",
-   "url": "https://salutelazio.it/it/pass-di-garanzia",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "roma/1b6a08522663.txt",
-   "titolo": "Fascicolo Sanitario",
-   "sha": "ce21a63b1dc01e21429e11f4a4d7d3560e05c4c5a8985260c2c21f06b0be1818",
-   "caratteri": 4170,
-   "cambiata": true
-  },
-  {
-   "asl": "roma",
    "url": "https://www.aslroma1.it/il-percorso-di-garanzia-nella-regione-lazio",
    "controllata": "2026-10-22",
    "http": 200,
@@ -461,7 +476,7 @@
    "http": 200,
    "file": "roma/7e7cbafb32a1.txt",
    "titolo": "15.04.05 Liste di attesa",
-   "sha": "456adc98f0a4bfdf5a9f88a752aeebce0023abf7d078faf450205832bb736612",
+   "sha": "1ec74bbe4081b42b3ee541f7aca00b7831b4b5a3aba7996bd5908e9013d07d7d",
    "caratteri": 8673,
    "cambiata": true
   },
@@ -469,8 +484,12 @@
    "asl": "roma",
    "url": "https://www.aslroma3.it/amministrazione-trasparente/liste-attesa-new/",
    "controllata": "2026-10-22",
-   "http": 0,
-   "errore": "curl: (56) Failure when receiving data from the peer"
+   "http": 200,
+   "file": "roma/17a23a5b9772.txt",
+   "titolo": "Liste di attesa - Asl Roma 3",
+   "sha": "bf771267dc856cf88e9e0ca3fc75c0bd1ea8ebc05ec6546782ecb108054345ce",
+   "caratteri": 10145,
+   "cambiata": true
   },
   {
    "asl": "roma",
@@ -503,6 +522,17 @@
    "titolo": "Home - ASL VITERBO",
    "sha": "ce86f0941baadf4e5fe2986c2f4f80069ac1afd5f9a1ccdbd655a028379de5b7",
    "caratteri": 10308,
+   "cambiata": false
+  },
+  {
+   "asl": "viterbo",
+   "url": "https://salutelazio.it/it/pass-di-garanzia",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "viterbo/1b6a08522663.txt",
+   "titolo": "Fascicolo Sanitario",
+   "sha": "ce21a63b1dc01e21429e11f4a4d7d3560e05c4c5a8985260c2c21f06b0be1818",
+   "caratteri": 4170,
    "cambiata": false
   },
   {
@@ -582,17 +612,6 @@
    "sha": "6976d3a435461ab2a018eee549f10f2a608165fc3acde8c9ea0536aed4cc475b",
    "caratteri": 9306,
    "cambiata": false
-  },
-  {
-   "asl": "viterbo",
-   "url": "https://salutelazio.it/it/pass-di-garanzia",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "viterbo/1b6a08522663.txt",
-   "titolo": "Fascicolo Sanitario",
-   "sha": "ce21a63b1dc01e21429e11f4a4d7d3560e05c4c5a8985260c2c21f06b0be1818",
-   "caratteri": 4170,
-   "cambiata": true
   },
   {
    "asl": "inps-lazio",
@@ -733,7 +752,7 @@
    "http": 200,
    "file": "regione-lazio/652b256db893.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "f13c9eeb4924a61ff758ef61496e0efa7bdc4b642b901535cb8689a074e2f47e",
+   "sha": "6f6187cd7268d56075b198f3561020d42f09aa3d6b8aeb9c8051ba6b63732997",
    "caratteri": 4010,
    "cambiata": true
   },
@@ -767,9 +786,9 @@
    "finale": "https://www.aslroma1.it/",
    "file": "asl-roma1/a00ffe2984a3.txt",
    "titolo": "ASL Roma 1",
-   "sha": "e0da05ce06925246d75044c239d48afa8222047b80e6b428a61d3dc94bee1cd9",
-   "caratteri": 17261,
-   "cambiata": false
+   "sha": "5a353d7fbe019aeb5b9817f6673b9c7c8f0b8de232388f6b009435742f84bbb5",
+   "caratteri": 17425,
+   "cambiata": true
   },
   {
    "asl": "asl-roma1",
@@ -845,7 +864,7 @@
    "http": 200,
    "file": "asl-roma2/2e0f163ef6a3.txt",
    "titolo": "ASL Roma 2 - Guardia Medica",
-   "sha": "629cab9be22b9a0b6bd7d1c29d774105fbcc3832ba322b6a9b4f50055fc4d1a9",
+   "sha": "2872d94b0b65812ad2a95d89d5eef6de5b545f53a72cbb7c214cc8e44741443d",
    "caratteri": 8091,
    "cambiata": true
   },
@@ -853,29 +872,46 @@
    "asl": "asl-roma3",
    "url": "https://www.aslroma3.it",
    "controllata": "2026-10-22",
-   "http": 0,
-   "errore": "curl: (56) Failure when receiving data from the peer"
+   "http": 200,
+   "finale": "https://www.aslroma3.it/",
+   "file": "asl-roma3/572f8599edd5.txt",
+   "titolo": "Asl Roma 3",
+   "sha": "b301a517da71699a73275e5e6f4832a0b6521f6dfcd2c3b17a6daa2490038093",
+   "caratteri": 7966,
+   "cambiata": true
   },
   {
    "asl": "asl-roma3",
    "url": "https://www.aslroma3.it/come-fare-per/prenotare-una-visita/",
    "controllata": "2026-10-22",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "asl-roma3/09d0e9d04d62.txt",
+   "titolo": "Prenotare una visita - Asl Roma 3",
+   "sha": "5537752781cf9e78f5c8dfc0008ea058111dbfb59fdae6bf48fc440dd3852810",
+   "caratteri": 7486,
+   "cambiata": true
   },
   {
    "asl": "asl-roma3",
    "url": "https://www.aslroma3.it/servizi-dalla-a-alla-z/g/guardia-medica/",
    "controllata": "2026-10-22",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "asl-roma3/fcd4fcf114ab.txt",
+   "titolo": "Guardia Medica - Asl Roma 3",
+   "sha": "f74c3b9a960402db2a3202562b1172dc9c7c86e239b1ffeec9340cfc80850f78",
+   "caratteri": 9998,
+   "cambiata": true
   },
   {
    "asl": "asl-roma3",
    "url": "https://www.aslroma3.it/assistenza-domiciliare/",
    "controllata": "2026-10-22",
-   "http": 0,
-   "errore": "curl: (56) Failure when receiving data from the peer"
+   "http": 200,
+   "file": "asl-roma3/fd663f62e3c1.txt",
+   "titolo": "Assistenza domiciliare - Asl Roma 3",
+   "sha": "01ddb3ce0977529c9dc4c3aa0b3c4b2dd70505886c06975f6bacbf2d835ad138",
+   "caratteri": 15414,
+   "cambiata": true
   },
   {
    "asl": "asl-roma4",
@@ -919,9 +955,9 @@
    "finale": "https://www.aslroma5.it/",
    "file": "asl-roma5/b09e55c52e23.txt",
    "titolo": "Home - ASL ROMA 5",
-   "sha": "ed02cbb0ff51e4ada23d8915980c0927b20ae8afc3161cdb3894daa9a9b1df46",
-   "caratteri": 15372,
-   "cambiata": false
+   "sha": "e4c4093eab8c4205b43f50e5a0665e2c5b211a15642747470f0683eeb622776a",
+   "caratteri": 15292,
+   "cambiata": true
   },
   {
    "asl": "asl-roma5",
@@ -1068,9 +1104,9 @@
    "finale": "https://www.ausl.latina.it/",
    "file": "asl-latina/375895c3df35.txt",
    "titolo": "Home",
-   "sha": "3e2804757fc9db2de6f9da5a3d02d07077fa22e2e32b38262cb7c77c15f27962",
-   "caratteri": 8067,
-   "cambiata": false
+   "sha": "04b131cd36d06ad0697a330cf4dfad8b1b545944b2cfaed130985d286ca4b47b",
+   "caratteri": 8088,
+   "cambiata": true
   },
   {
    "asl": "asl-latina",
@@ -1079,9 +1115,9 @@
    "http": 200,
    "file": "asl-latina/ee9cd0b31e8d.txt",
    "titolo": "Guardia Medica",
-   "sha": "2bf2483173fd337b6db209af7aef0d92efa7f099eaee92a4090e646ffac52847",
-   "caratteri": 7454,
-   "cambiata": false
+   "sha": "ed47e7d5240fc99e749f80929621c996400933a6971302de4c49a4011a64959c",
+   "caratteri": 7475,
+   "cambiata": true
   },
   {
    "asl": "asl-latina",
