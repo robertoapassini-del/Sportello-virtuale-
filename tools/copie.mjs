@@ -19,12 +19,14 @@
 // vero (Chromium con Playwright, se è installato sul server) e si salva il testo che compare. Le pagine
 // che mostrano un CAPTCHA o un controllo anti-robot non si copiano: si segnano e basta.
 // Email nascoste ai robot (Cloudflare, Joomla): si rimettono in chiaro prima di fare il testo (tools/email-nascoste.mjs).
-// PDF (moduli, allegati delle delibere): se sul server c'è pdftotext (pacchetto poppler-utils), si scaricano fino a
-// 5 MB e si salva il testo come per una pagina («"pdf": true» nell'indice). Senza pdftotext si segnano e basta.
+// PDF (moduli, allegati delle delibere): si scaricano fino a 5 MB e si salva il testo come per una pagina («"pdf": true»
+// nell'indice). Il testo lo fa pdftotext (pacchetto poppler-utils), se c'è; se no tools/pdf-testo.mjs, con pdf.js
+// scaricato da npm e controllato con la sua impronta. Se non c'è nessuno dei due, i PDF si segnano e basta.
 //
 // Uso: node tools/copie.mjs [cartella di destinazione]   (default: ../copie accanto al sito)
 // Per le prove (tests/copie-giro.test.mjs): COPIE_SITO=<cartella con data/> legge i dati da lì, COPIE_PAUSA_MS cambia
-// la pausa, COPIE_SENZA_BROWSER=1 e COPIE_SENZA_PDF=1 fanno come se Playwright o pdftotext non ci fossero.
+// la pausa, COPIE_SENZA_BROWSER=1 fa come se Playwright non ci fosse, COPIE_SENZA_PDFTOTEXT=1 come se mancasse
+// pdftotext (si usa pdf.js), COPIE_SENZA_PDF=1 come se mancassero tutti e due.
 import fs from 'node:fs';
 import { createRequire } from 'node:module';
 import path from 'node:path';
@@ -42,7 +44,17 @@ const SKIP = /\.(pdf|docx?|xlsx?|odt|zip)(\?|$)/i; // file da scaricare: ne regi
 const PDF = /\.pdf(\?|$)/i; // …tranne i PDF, se c'è pdftotext
 const MAX_PDF = 5 * 1024 * 1024;
 const comando = (cmd, args) => { try { execFileSync(cmd, args, { stdio: 'ignore' }); return true; } catch { return false; } };
-const CON_PDF = !process.env.COPIE_SENZA_PDF && comando('pdftotext', ['-v']);
+const PDF_TESTO = path.join(path.dirname(fileURLToPath(import.meta.url)), 'pdf-testo.mjs');
+const errorePdfjs = () => {
+  try { execFileSync(process.execPath, [PDF_TESTO, '--prepara'], { timeout: 180000, stdio: ['ignore', 'ignore', 'pipe'] }); return ''; } catch (e) {
+    return (e.stderr || e.message || '').toString().trim().split('\n')[0];
+  }
+};
+// Chi fa il testo dei PDF: 'pdftotext', 'pdfjs' o nessuno (null).
+let SENZA_PDFJS = '';
+const CON_PDF = process.env.COPIE_SENZA_PDF ? null
+  : !process.env.COPIE_SENZA_PDFTOTEXT && comando('pdftotext', ['-v']) ? 'pdftotext'
+    : (SENZA_PDFJS = errorePdfjs()) ? null : 'pdfjs';
 
 const read = (f) => JSON.parse(fs.readFileSync(path.join(SITE, f), 'utf8'));
 const sha = (s) => crypto.createHash('sha256').update(s).digest('hex');
@@ -117,6 +129,15 @@ const seiPdf = (r) => !!r.buf && r.buf.subarray(0, 5).toString('latin1') === '%P
 function testoPdf(buf) {
   const tmp = path.join(OUT, '.tmp.pdf');
   fs.writeFileSync(tmp, buf);
+  if (CON_PDF === 'pdfjs') {
+    try {
+      const { testo, titolo } = JSON.parse(execFileSync(process.execPath, [PDF_TESTO, tmp], { encoding: 'utf8', timeout: 60000, maxBuffer: 64 << 20, stdio: ['ignore', 'pipe', 'pipe'] }));
+      const t = testo.replace(/[ \t\r\v]+/g, ' ').replace(/ *\n */g, '\n').replace(/\n{3,}/g, '\n\n').trim();
+      return { testo: t, titolo: titolo || (t.split('\n').find((r) => r.trim()) || '').slice(0, 150) };
+    } catch (e) {
+      return { testo: '', titolo: '', errore: `pdf.js: ${(e.stderr || e.message || '').toString().trim().split('\n').pop()}` };
+    } finally { fs.rmSync(tmp, { force: true }); }
+  }
   try {
     const t = execFileSync('pdftotext', ['-layout', '-enc', 'UTF-8', '-q', tmp, '-'], { encoding: 'utf8', timeout: 60000, maxBuffer: 64 << 20, stdio: ['ignore', 'pipe', 'ignore'] })
       .replace(/\f/g, '\n').replace(/[ \t\r\v]+/g, ' ').replace(/ *\n */g, '\n').replace(/\n{3,}/g, '\n\n').trim();
@@ -288,7 +309,8 @@ for (const { reg, asl } of daCopiare) {
 
 if (browser) await browser.close();
 if (senzaBrowser) console.log('Playwright non installato: le pagine fatte con JavaScript sono rimaste quasi vuote.');
-if (!CON_PDF) console.log('pdftotext non installato (sudo apt-get install -y poppler-utils): i PDF non sono stati copiati.');
+if (CON_PDF === 'pdfjs') console.log('pdftotext non installato: il testo dei PDF l\'ha fatto pdf.js.');
+if (!CON_PDF) console.log(`pdftotext non installato (sudo apt-get install -y poppler-utils) e pdf.js non pronto${SENZA_PDFJS ? ` (${SENZA_PDFJS})` : ''}: i PDF non sono stati copiati.`);
 if (cartelleTolte.length) console.log(`Cartelle di aziende che non sono più nei dati, tolte: ${cartelleTolte.join(', ')}`);
 console.log(`${ok} pagine salvate su ${totale} (${cambiate} cambiate dall'ultima volta). Problemi: ${problemi.length}`);
 for (const p of problemi) console.log('  ', p);

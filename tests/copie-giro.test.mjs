@@ -1,7 +1,8 @@
 // Un giro di tools/copie.mjs su dati finti e su un piccolo server locale (niente rete verso i siti veri).
 // Controlla le regole di docs/regioni.md, sezione 8:
 //   - email nascoste (Cloudflare, Joomla) in chiaro nella copia;
-//   - PDF copiati come testo con pdftotext («pdf»: true), solo fino a 5 MB; senza pdftotext, segnati e basta;
+//   - PDF copiati come testo con pdftotext («pdf»: true), solo fino a 5 MB; senza pdftotext con pdf.js
+//     (tools/pdf-testo.mjs); senza tutti e due, segnati e basta;
 //   - sedi INPS: anche le fonti (sources) e le pagine (pagine) di inps.json;
 //   - regole_fonti in cima ad asl.json, scelta_medico.url, phones[].url;
 //   - fonti.json letto anche per una regione attiva, senza riscaricare gli url già copiati;
@@ -16,7 +17,7 @@ import { execFileSync, execFile } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 const COPIE = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', 'tools', 'copie.mjs');
-const conPdftotext = (() => { try { execFileSync('pdftotext', ['-v'], { stdio: 'ignore' }); return true; } catch { return false; } })();
+const conPdftotext = !process.env.COPIE_SENZA_PDFTOTEXT && (() => { try { execFileSync('pdftotext', ['-v'], { stdio: 'ignore' }); return true; } catch { return false; } })();
 const conCurl = (() => { try { execFileSync('curl', ['--version'], { stdio: 'ignore' }); return true; } catch { return false; } })();
 
 // Un PDF piccolo e valido, con una riga di testo.
@@ -147,13 +148,15 @@ test('un giro di copie.mjs su pagine finte', { skip: !conCurl && 'manca curl' },
   // PDF.
   const pdfPiccolo = indice(out, 'prova').find((p) => p.url === `${base}/modulo.pdf`);
   const grande = indice(out, 'prova').find((p) => p.url === `${base}/grande.pdf`);
-  if (conPdftotext) {
+  // Senza pdftotext il testo lo fa pdf.js, se si è potuto scaricare (nella CI sì): stesse regole.
+  if (conPdftotext || /l'ha fatto pdf\.js/.test(log)) {
     assert.equal(pdfPiccolo.pdf, true);
     assert.match(copia(out, 'prova', `${base}/modulo.pdf`), /0577 535222/);
     assert.equal(indice(out, 'prova').find((p) => p.url === `${base}/allegato`).pdf, true);
     assert.match(grande.errore, /più grande di 5 MB/);
     assert.ok(!grande.file);
   } else {
+    assert.ok(!process.env.CI, `nella CI pdf.js deve funzionare:\n${log}`);
     assert.equal(pdfPiccolo.nota, 'file, non controllato');
     assert.match(log, /pdftotext non installato/);
   }
@@ -171,4 +174,19 @@ test('un giro di copie.mjs su pagine finte', { skip: !conCurl && 'manca curl' },
   assert.equal(indice(out, 'prova').find((p) => p.url === `${base}/modulo.pdf`).nota, 'file, non controllato');
   assert.ok(!richieste.slice(prima).includes('/modulo.pdf'), 'senza pdftotext un .pdf non si scarica');
   assert.equal(indice(out, 'prova').find((p) => p.url === `${base}/allegato`).nota, 'file, non controllato');
+
+  // Un giro senza pdftotext ma con pdf.js (tools/pdf-testo.mjs): i PDF si copiano lo stesso.
+  // pdf.js si scarica da npm la prima volta; nella CI deve riuscire, altrove senza rete si salta.
+  const pdfjs = await giro(out, { COPIE_SENZA_PDFTOTEXT: '1' });
+  if (/l'ha fatto pdf\.js/.test(pdfjs)) {
+    const p = indice(out, 'prova').find((x) => x.url === `${base}/modulo.pdf`);
+    assert.equal(p.pdf, true, JSON.stringify(p));
+    assert.ok(p.file, JSON.stringify(p));
+    assert.match(copia(out, 'prova', `${base}/modulo.pdf`), /0577 535222/);
+    assert.equal(indice(out, 'prova').find((x) => x.url === `${base}/allegato`).pdf, true);
+    assert.match(indice(out, 'prova').find((x) => x.url === `${base}/grande.pdf`).errore, /più grande di 5 MB/);
+  } else {
+    assert.ok(!process.env.CI, `nella CI pdf.js deve funzionare:\n${pdfjs}`);
+    assert.match(pdfjs, /pdf\.js non pronto/);
+  }
 });

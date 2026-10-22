@@ -117,5 +117,7 @@ Le modifiche precise sono in `mut.py` dell'audit; qui la descrizione.
 | P20 | regione senza uffici: avviso vuoto al posto di regionMissing() | `js/flow.js` | browser.cjs |
 | P21 | tolto dalla CI il giro di lettere-stampa.cjs | `.github/workflows/test.yml` | prima nessuno; ora workflow.test |
 | P22 | testi di numeri.json in linguaggio da ufficio | `data/numeri.json` | prima nessuno; ora leggibilita.test |
+| P23 | gli avvisi di pdf.js finiscono nel JSON del testo (PDF letto senza pdftotext) | `tools/pdf-testo.mjs` | preso da copie-giro.test (giro con `COPIE_SENZA_PDFTOTEXT=1`) |
+| P24 | impronta sha512 di pdf.js cambiata | `tools/pdf-testo.mjs` | provato a mano: «impronta di pdf.js sbagliata», niente scaricato; copie-giro.test vede «pdf.js non pronto» |
 
 Andamento: giro 5 presi 4 su 30, giro 6 presi 6 su 30, giro 9 presi 20 su 22.

@@ -265,8 +265,10 @@ di aziende sanitarie. Lo facciamo in tre pezzi, ognuno con un compito solo:
    protezione: è l'indirizzo che la pagina mostra a chiunque la apra. Nell'indice, `"email_nascoste": N`.
    **PDF** (moduli di tutela, allegati delle delibere): se sul server c'è `pdftotext`, il PDF si scarica (al massimo
    5 MB) e se ne salva il testo come per una pagina, con `"pdf": true` nell'indice. Un PDF fatto solo di immagini
-   (scansione) non ha testo: è segnato e basta. Senza `pdftotext` i PDF sono segnati come oggi («file, non
-   controllato»). Si installa una volta: `sudo apt-get install -y poppler-utils`. DOC, XLS e ZIP non si copiano.
+   (scansione) non ha testo: è segnato e basta. Senza `pdftotext` il testo lo fa `tools/pdf-testo.mjs` con pdf.js:
+   la prima volta lo scarica da npm (versione fissa) e controlla la sua impronta sha512; serve Node 20. Così basta
+   una pull request, senza entrare nel server. Se manca anche pdf.js, i PDF sono segnati e basta («file, non
+   controllato»). `pdftotext` resta il migliore: `sudo apt-get install -y poppler-utils`. DOC, XLS e ZIP non si copiano.
    Si presenta con nome e sito nel `User-Agent`, una pagina alla volta, una pausa tra una pagina e l'altra, mai
    portali di prenotazione, login o CAPTCHA. Se un'ASL chiede di smettere, si toglie dalla lista.
    **Copia a richiesta, senza aspettare la notte:** `tools/copie-se-serve.sh` gira sul server ogni 15 minuti.
