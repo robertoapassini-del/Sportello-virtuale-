@@ -1,7 +1,7 @@
 {
  "region": "Veneto",
  "model": "Aziende ULSS",
- "_note": "Numeri delle ULSS del Veneto per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 22/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono a Numeri utili; le sedi INPS (inps.json) a Invalidità. 9 ULSS per 7 province: Venezia (ULSS 3 e ULSS 4) e Vicenza (ULSS 7 e ULSS 8) hanno una voce sola con i contatti di tutte e due (vedi il todo). Nel Veneto la guardia medica è il 116117 in tutte le ULSS. «pagine»: indirizzi ufficiali in più che il server deve copiare (tools/copie.mjs).",
+ "_note": "Numeri delle ULSS del Veneto per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 22/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono a Numeri utili; le sedi INPS (inps.json) a Invalidità. 9 ULSS per 7 province: Venezia (ULSS 3 e ULSS 4) e Vicenza (ULSS 7 e ULSS 8) hanno una voce sola con i contatti di tutte e due e le zone in sub_areas, una per ULSS, per le lettere (vedi il todo). Nel Veneto la guardia medica è il 116117 in tutte le ULSS. «pagine»: indirizzi ufficiali in più che il server deve copiare (tools/copie.mjs).",
  "asl": [
   {
    "id": "belluno",
@@ -97,6 +97,26 @@
      "url": "https://www.aulss1.veneto.it/centralini",
      "verified": "2026-10-22",
      "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare integrata (ADI) del distretto di Belluno (aree di Belluno, Agordo e Cadore). Si attiva con la richiesta del medico di famiglia. Email adi.bl@aulss1.veneto.it",
+     "number": "0437 516812",
+     "hours": "Dal lunedì al venerdì 8:00–15:30",
+     "address": "Casa della Comunità, Ospedale San Martino, Viale Europa 22, Belluno",
+     "url": "https://www.aulss1.veneto.it/assistenza-domiciliare-integrata-distretto-di-belluno",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare integrata (ADI) del distretto di Feltre. Si attiva con la richiesta del medico di famiglia. Email adi.fe@aulss1.veneto.it",
+     "number": "0439 883107",
+     "hours": "Dal lunedì al venerdì 8:00–15:00",
+     "address": "Palazzina Fusaro (piano terra), Via Bagnols sur Cèze 3, Feltre",
+     "url": "https://www.aulss1.veneto.it/assistenza-domiciliare-integrata-distretto-di-feltre",
+     "verified": "2026-10-22",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -115,12 +135,21 @@
     {
      "label": "ULSS 1 Dolomiti – 116117",
      "url": "https://www.aulss1.veneto.it/116117"
+    },
+    {
+     "label": "ULSS 1 Dolomiti – Assistenza domiciliare integrata, distretto di Belluno",
+     "url": "https://www.aulss1.veneto.it/assistenza-domiciliare-integrata-distretto-di-belluno"
+    },
+    {
+     "label": "ULSS 1 Dolomiti – Assistenza domiciliare integrata, distretto di Feltre",
+     "url": "https://www.aulss1.veneto.it/assistenza-domiciliare-integrata-distretto-di-feltre"
     }
    ],
    "last_verified": "2026-10-22",
    "todo": [
-    "PUA e cure a casa: la pagina «progetti e servizi a sostegno della domiciliarità» dà 404; il 116117 attiva anche i servizi del territorio (non autosufficienza, disabilità). Numero del PUA non trovato nelle copie.",
-    "Cartelle cliniche, protesi e ausili, screening: nessuna pagina copiata con i numeri (aggiunte in «pagine»)."
+    "Cure a casa (copie del 22/10/2026): ADI del distretto di Belluno (0437 516812) e di Feltre (0439 883107), su richiesta del medico di famiglia. Il numero di un PUA non c'è.",
+    "Cartelle cliniche (copia del 22/10/2026 della pagina «Richiedere cartelle cliniche»): la richiesta si fa agli Uffici cartelle cliniche di Belluno, Feltre, Pieve di Cadore e Agordo; il costo si sa alla fine della pratica; il ritiro è allo sportello CUP/cassa o per raccomandata. I numeri degli uffici sono in pagine collegate non ancora copiate (aggiunte in «pagine»). Protesi e ausili, screening: pagine non copiate.",
+    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): cartelle. Da leggere quando ci sono le copie."
    ],
    "pagine": [
     {
@@ -166,6 +195,14 @@
     {
      "tipo": "cartelle",
      "url": "https://www.aulss1.veneto.it/richiedere-cartelle-cliniche"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.aulss1.veneto.it/ufficio-cartelle-cliniche-feltre"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.aulss1.veneto.it/service/ufficio-cartelle-cliniche-2/"
     }
    ]
   },
@@ -281,7 +318,8 @@
    "todo": [
     "Centralino: nessuna copia lo riporta (la pagina «Strutture» risponde 503; aggiunta in «pagine» la pagina «centralini»).",
     "PUA e cure a casa: la pagina sulle Case della Comunità non dà numeri; il 116117 orienta ai servizi del territorio.",
-    "Cartelle cliniche, protesi e ausili, screening: pagine non copiate."
+    "Cartelle cliniche, protesi e ausili, screening: pagine non copiate.",
+    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): cartelle, protesica. Da leggere quando ci sono le copie."
    ],
    "pagine": [
     {
@@ -339,6 +377,18 @@
     {
      "tipo": "contatti",
      "url": "https://www.aulss2.veneto.it/centralini"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.aulss2.veneto.it/Documentazione-sanitaria"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.aulss2.veneto.it/ufficio-cartelle-cliniche-treviso"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.aulss2.veneto.it/richiedere-dispositivi-di-assistenza-protesica"
     }
    ]
   },
@@ -618,7 +668,8 @@
     "ULSS 4: la pagina «Numeri utili» dice CUP 041 844 844 e URP 0418694692, ma le pagine del CUP e dell'URP dicono 0421 1547154 e 0421 228057 (usati questi). Da chiarire con l'URP.",
     "ULSS 4: PUA e cure a casa si attivano con il 116117 (pagina 116117); nessun numero del PUA nelle copie.",
     "ULSS 3: la pagina della continuità assistenziale e quella dell'assistenza domiciliare sono copiate quasi vuote.",
-    "Lettere (docs/regioni.md, sezione 1 «Province e aziende»): in questa provincia ci sono due aziende: ULSS 3 Serenissima e ULSS 4 Veneto Orientale. Una lettera all'azienda va all'una o all'altra secondo il comune. Prima di accendere cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa o ausili servono le zone in sub_areas: per ognuna id, label (il pulsante «In quale zona?»), comuni, nome_lettera e pec o emails, dalle copie delle pagine ufficiali. Finché mancano, aziende_multiple resta true e tests/coerenza.test.mjs tiene spenti quei moduli."
+    "Zone per le lettere (22/10/2026): sub_areas con ULSS 3 Serenissima (PEC protocollo.aulss3@pecveneto.it, pagina URP e pagina PEC dell'ULSS 3: l'URP non ha un'email, si scrive con il modulo web, per posta o con la PEC) e ULSS 4 Veneto Orientale (urp@aulss4.veneto.it e protocollo.aulss4@pecveneto.it, pagina URP dell'ULSS 4). Nome ufficiale dall'elenco della Regione («Azienda ULSS 3 Serenissima», «Azienda ULSS 4 Veneto Orientale»). I comuni sotto il pulsante sono le sedi che le copie nominano (distretti e presidi), non l'elenco completo: manca la pagina con tutti i comuni di ogni ULSS (aggiunte in «pagine»). aziende_multiple resta true.",
+    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): cartelle, protesica, screening. Da leggere quando ci sono le copie."
    ],
    "pagine": [
     {
@@ -752,6 +803,61 @@
     {
      "tipo": "urp",
      "url": "https://www.aulss4.veneto.it/home/numeri-utili/urp"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.aulss3.veneto.it/Assistenza-protesica"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.aulss4.veneto.it/dettaglio/contenuto/richiedere-la-cartella-clinica"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.aulss4.veneto.it/home/dettaglio/servizi/screening-oncologici"
+    }
+   ],
+   "sub_areas": [
+    {
+     "id": "ulss3",
+     "label": "ULSS 3 Serenissima – Venezia, Mestre, Mirano-Dolo, Chioggia",
+     "comuni": [
+      "Venezia (anche Mestre e Lido)",
+      "Chioggia",
+      "Cavarzere",
+      "Mirano",
+      "Dolo",
+      "Noale",
+      "Spinea",
+      "Camponogara",
+      "e gli altri comuni dei distretti di Mirano-Dolo e Chioggia"
+     ],
+     "name": "Azienda ULSS 3 Serenissima",
+     "nome_lettera": "Azienda ULSS 3 Serenissima",
+     "pec": "protocollo.aulss3@pecveneto.it",
+     "emails": [],
+     "site_url": "https://www.aulss3.veneto.it/"
+    },
+    {
+     "id": "ulss4",
+     "label": "ULSS 4 Veneto Orientale – San Donà di Piave, Portogruaro, Jesolo",
+     "comuni": [
+      "San Donà di Piave",
+      "Portogruaro",
+      "Jesolo",
+      "Caorle",
+      "Eraclea",
+      "Cavallino-Treporti",
+      "San Michele al Tagliamento (Bibione)",
+      "e gli altri comuni del Veneto Orientale"
+     ],
+     "name": "Azienda ULSS 4 Veneto Orientale",
+     "nome_lettera": "Azienda ULSS 4 Veneto Orientale",
+     "pec": "protocollo.aulss4@pecveneto.it",
+     "emails": [
+      "urp@aulss4.veneto.it"
+     ],
+     "site_url": "https://www.aulss4.veneto.it/"
     }
    ]
   },
@@ -880,7 +986,8 @@
    "last_verified": "2026-10-22",
    "todo": [
     "PUA e cure a casa: le pagine sulle Case della Comunità non danno numeri; il 116117 orienta ai servizi del territorio.",
-    "Cartelle cliniche, protesi e ausili, screening: pagine non copiate."
+    "Cartelle cliniche, protesi e ausili, screening: pagine non copiate.",
+    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): cartelle, protesica. Da leggere quando ci sono le copie."
    ],
    "pagine": [
     {
@@ -934,6 +1041,18 @@
     {
      "tipo": "altro",
      "url": "https://www.aulss5.veneto.it/attivazione-del-servizio-di-continuit-assistenziale-diurna-ucad-nel-comune-di-porto-tolle"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.aulss5.veneto.it/cartelle-cliniche"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.aulss5.veneto.it/ritiro-referti-e-cartelle-cliniche"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.aulss5.veneto.it/Servizio-Assistenza-Protesica"
     }
    ]
   },
@@ -1119,7 +1238,8 @@
    "todo": [
     "La pagina URP dice che le email a urp@aulss6.veneto.it con reclami o richieste non vengono prese in carico: si usano i moduli del sito o la PEC.",
     "PUA e cure a casa: la pagina «Casa della Comunità» dà 404; numero del PUA non trovato.",
-    "Azienda Ospedale-Università di Padova: non ancora tra le pagine copiate."
+    "Azienda Ospedale-Università di Padova: non ancora tra le pagine copiate.",
+    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): cartelle. Da leggere quando ci sono le copie."
    ],
    "pagine": [
     {
@@ -1165,6 +1285,18 @@
     {
      "tipo": "altro",
      "url": "https://www.aulss6.veneto.it/assistenza-domiciliare-pi-qualit-e-tutele-con-il-registro-regionale-e-gli-sportelli-dedicati"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.aulss6.veneto.it/Cartelle-Cliniche-Ospedale-SantAntonio"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.aulss6.veneto.it/Cartelle-Cliniche-Ospedale-di-Cittadella"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.aulss6.veneto.it/ufficio-cartelle-cliniche-schiavonia"
     }
    ]
   },
@@ -1387,6 +1519,25 @@
      "url": "https://www.aulss7.veneto.it/centralini",
      "verified": "2026-10-22",
      "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare (ADI) dell'ULSS 8 – Punto Salute Centro di Arzignano (Altissimo, Arzignano, Chiampo, Crespadoro, Montecchio Maggiore, Montorso Vicentino, Nogarole Vicentino, San Pietro Mussolino, Zermeghedo)",
+     "number": "0444 708220",
+     "hours": "Dal lunedì alla domenica 7:00–21:00",
+     "address": "Casa della Comunità, Via Trento 4, Arzignano",
+     "url": "https://www.aulss8.veneto.it/punto-salute-centro-arzignano-servizio-assistenza-domiciliare-integrata-adi",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Impegnativa di cura domiciliare (contributo per chi assiste a casa una persona non autosufficiente) – ULSS 8, distretto Est",
+     "number": "0444 756405",
+     "hours": "Dal lunedì al venerdì 8:30–10:30",
+     "url": "https://www.aulss8.veneto.it/impegnativa-di-cura-domiciliare",
+     "verified": "2026-10-22",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -1413,6 +1564,14 @@
     {
      "label": "ULSS 7 Pedemontana – Prenotare",
      "url": "https://www.aulss7.veneto.it/prenotare"
+    },
+    {
+     "label": "ULSS 7 Pedemontana – Distretti e territorio (comuni dei distretti)",
+     "url": "https://www.aulss7.veneto.it/distretti-territorio"
+    },
+    {
+     "label": "ULSS 8 Berica – Assistenza domiciliare integrata, Punto Salute Centro di Arzignano",
+     "url": "https://www.aulss8.veneto.it/punto-salute-centro-arzignano-servizio-assistenza-domiciliare-integrata-adi"
     }
    ],
    "last_verified": "2026-10-22",
@@ -1420,8 +1579,9 @@
     "Come è fatto: la provincia di Vicenza ha due aziende. L'ULSS 8 Berica copre Vicenza e l'Ovest Vicentino (distretti Est e Ovest); l'ULSS 7 Pedemontana copre Bassano, Asiago e l'Alto Vicentino (Thiene, Schio). La PEC in «pec» è dell'ULSS 8; quella dell'ULSS 7 è protocollo.aulss7@pecveneto.it (nelle copie dell'ULSS 7). Per le lettere servirà scegliere l'ULSS.",
     "ULSS 8: le copie non dicono quali comuni sono nel distretto Est e quali nel distretto Ovest.",
     "ULSS 7: l'URP di Santorso ha un orario temporaneo (pagina «centralini»): ricontrollarlo.",
-    "PUA e cure a casa: le pagine dell'ULSS 8 sull'assistenza a casa e sull'URP vecchio danno 404; nessun numero del PUA nelle copie di nessuna delle due ULSS.",
-    "Lettere (docs/regioni.md, sezione 1 «Province e aziende»): in questa provincia ci sono due aziende: ULSS 8 Berica e ULSS 7 Pedemontana. Una lettera all'azienda va all'una o all'altra secondo il comune. Prima di accendere cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa o ausili servono le zone in sub_areas: per ognuna id, label (il pulsante «In quale zona?»), comuni, nome_lettera e pec o emails, dalle copie delle pagine ufficiali. Finché mancano, aziende_multiple resta true e tests/coerenza.test.mjs tiene spenti quei moduli."
+    "Zone per le lettere (22/10/2026): sub_areas con ULSS 8 Berica (protocollo@aulss8.veneto.it e protocollo.aulss8@pecveneto.it: la pagina «URP online» dice di scrivere a questi due indirizzi) e ULSS 7 Pedemontana (urp@aulss7.veneto.it e protocollo.aulss7@pecveneto.it, pagina «Relazioni con il pubblico»). I comuni dell'ULSS 7 vengono dalla pagina «Distretti e territorio» dell'ULSS 7; per l'ULSS 8 le copie non danno l'elenco: sono gli altri comuni della provincia. Nome ufficiale dall'elenco della Regione. aziende_multiple resta true.",
+    "PUA e cure a casa: nelle copie c'è solo l'ADI del Punto Salute Centro di Arzignano (ULSS 8, distretto Ovest) e l'Impegnativa di cura domiciliare del distretto Est (0444 756405). Mancano gli altri punti ADI dell'ULSS 8 e quelli dell'ULSS 7.",
+    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): cartelle, protesica, screening. Da leggere quando ci sono le copie."
    ],
    "pagine": [
     {
@@ -1535,6 +1695,63 @@
     {
      "tipo": "altro",
      "url": "https://www.aulss8.veneto.it/icup-e-iticket-prenota-e-paga-online-visite-ed-esami"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.aulss8.veneto.it/ritiro-referti-di-visite-o-esami"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.aulss8.veneto.it/uoc-direzione-medica-1-vicenza-ad-indirizzo-organizzativo-gestionale-ufficio-cartelle-cliniche"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.aulss7.veneto.it/Richiesta-copia-cartella-clinica"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.aulss7.veneto.it/assistenza-protesica"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.aulss8.veneto.it/unita-operative/centrale-unica-screening-2/"
+    }
+   ],
+   "sub_areas": [
+    {
+     "id": "ulss8",
+     "label": "ULSS 8 Berica – Vicenza e Ovest Vicentino",
+     "comuni": [
+      "Vicenza",
+      "Arzignano",
+      "Montecchio Maggiore",
+      "Valdagno",
+      "Lonigo",
+      "Noventa Vicentina",
+      "e tutti i comuni della provincia che non sono dell'ULSS 7"
+     ],
+     "name": "Azienda ULSS 8 Berica",
+     "nome_lettera": "Azienda ULSS 8 Berica",
+     "pec": "protocollo.aulss8@pecveneto.it",
+     "emails": [
+      "protocollo@aulss8.veneto.it"
+     ],
+     "site_url": "https://www.aulss8.veneto.it/"
+    },
+    {
+     "id": "ulss7",
+     "label": "ULSS 7 Pedemontana – Bassano, Asiago, Alto Vicentino (Thiene, Schio)",
+     "comuni": [
+      "Distretto 1 Bassano: Asiago, Bassano del Grappa, Colceresa, Cartigliano, Cassola, Enego, Foza, Gallio, Lusiana Conco, Marostica, Mussolente, Nove, Pianezze, Pove del Grappa, Roana, Romano d'Ezzelino, Rosà, Rossano Veneto, Rotzo, Schiavon, Solagna, Tezze sul Brenta, Valbrenta",
+      "Distretto 2 Alto Vicentino: Arsiero, Breganze, Caltrano, Calvene, Carrè, Chiuppano, Cogollo del Cengio, Fara Vicentino, Laghi, Lastebasse, Lugo di Vicenza, Malo, Marano Vicentino, Monte di Malo, Montecchio Precalcino, Pedemonte, Piovene Rocchette, Posina, Salcedo, San Vito di Leguzzano, Santorso, Sarcedo, Schio, Thiene, Tonezza del Cimone, Torrebelvicino, Valdastico, Valli del Pasubio, Velo d'Astico, Villaverla, Zanè, Zugliano"
+     ],
+     "name": "Azienda ULSS 7 Pedemontana",
+     "nome_lettera": "Azienda ULSS 7 Pedemontana",
+     "pec": "protocollo.aulss7@pecveneto.it",
+     "emails": [
+      "urp@aulss7.veneto.it"
+     ],
+     "site_url": "https://www.aulss7.veneto.it/"
     }
    ]
   },
@@ -1658,7 +1875,8 @@
    "todo": [
     "Centralino: nessuna copia lo riporta (aggiunta in «pagine» la pagina «centralini»).",
     "Assistenza domiciliare: copiata solo la pagina del distretto 3 (pianura e sud della provincia). Mancano gli altri distretti.",
-    "Azienda Ospedaliera Universitaria Integrata di Verona: non ancora tra le pagine copiate."
+    "Azienda Ospedaliera Universitaria Integrata di Verona: non ancora tra le pagine copiate.",
+    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): cartelle, protesica, screening. Da leggere quando ci sono le copie."
    ],
    "pagine": [
     {
@@ -1704,6 +1922,18 @@
     {
      "tipo": "contatti",
      "url": "https://www.aulss9.veneto.it/centralini"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.aulss9.veneto.it/richiesta-copia-documentazione-sanitaria"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.aulss9.veneto.it/assistenza-protesica"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://episcreenpro.aulss9.veneto.it/Screening-Oncologici"
     }
    ]
   }

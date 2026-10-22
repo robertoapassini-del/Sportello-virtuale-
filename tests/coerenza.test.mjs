@@ -96,7 +96,8 @@ const CAMPI_MODULO = {
 // sempre alla prima. Ora:
 // - con un modulo così acceso, ogni azienda (e ogni sua zona) ha il nome per la lettera «nome_lettera», se la regione
 //   non ha «asl_intestazione» in index.json (la Sicilia: «Azienda Sanitaria Provinciale di Palermo»);
-// - un'azienda con «aziende_multiple: true» ha le zone in sub_areas (almeno due), ognuna con nome_lettera e pec,
+// - un'azienda con «aziende_multiple: true» ha le zone in sub_areas (almeno una: con una sola, come le province lombarde
+//   con l'ATS e una ASST, la lettera va a quella senza domanda), ognuna con nome_lettera e pec,
 //   emails o send_to suoi; ogni zona ha anche i campi che il modulo legge (CAMPI_MODULO sull'azienda con la zona).
 const MODULI_LETTERA = ['cartella-clinica', 'medico-famiglia', 'assistenza-domiciliare', 'cure-palliative', 'liste-attesa', 'ausili'];
 function erroriLettere(r, asl) {
@@ -116,7 +117,7 @@ function erroriLettere(r, asl) {
     }
     for (const m of moduli.filter((x) => MODULI_LETTERA.includes(x))) {
       if (a.aziende_multiple) {
-        if (zone.length < 2) err.push(`${r.id}/${a.id}: «${m}» acceso, ma la provincia ha più aziende (aziende_multiple) e mancano le zone in sub_areas`);
+        if (zone.length < 1) err.push(`${r.id}/${a.id}: «${m}» acceso, ma la provincia ha più aziende (aziende_multiple) e mancano le zone in sub_areas`);
         for (const z of zone) {
           if (!z.pec && !(z.emails || []).length && !z.send_to) err.push(`${r.id}/${a.id}/${z.id}: «${m}» acceso, ma la zona non ha pec, emails o send_to suoi`);
           if (!z.nome_lettera) err.push(`${r.id}/${a.id}/${z.id}: «${m}» acceso, ma la zona non ha nome_lettera`);
@@ -303,4 +304,13 @@ test('regioni con l\'invalidità accesa: ogni sede INPS ha il regime', () => {
     for (const p of json(f).provinces || []) if (!['new', 'old'].includes(p.regime)) errori.push(`${r.id}/${p.id || p.name}: regime «${p.regime}»`);
   }
   assert.deepEqual(errori, []);
+});
+
+// Ausili: il modulo fa il conto con i giorni della Sicilia (data/rules-ausili.json, authorization_days 20) e dice
+// «se non risponde vale come un sì» (silenzio-assenso), che è una regola siciliana. Nelle altre regioni i giorni li fissa
+// la Regione (DPCM 12/01/2017, allegato 12): finché il modulo non ha i giorni di ogni regione con la loro fonte, si accende
+// solo in Sicilia (22/10/2026: il secondo giro lo aveva acceso in Toscana, Umbria, Liguria e Valle d'Aosta).
+test('ausili: acceso solo in Sicilia (i 20 giorni e il silenzio-assenso sono siciliani)', () => {
+  const accesi = indice.regioni.filter((r) => r.attiva && r.id !== 'sicilia' && (!r.moduli || r.moduli.includes('ausili'))).map((r) => r.id);
+  assert.deepEqual(accesi, []);
 });

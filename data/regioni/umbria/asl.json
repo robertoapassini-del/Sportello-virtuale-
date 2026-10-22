@@ -1,13 +1,81 @@
 {
  "region": "Umbria",
  "model": "USL",
- "_note": "Numeri delle USL Umbria 1 e Umbria 2 per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili. Il 116117 vale solo nel Distretto del Perugino; altrove restano i numeri di guardia medica. CUP regionale (NUS) 800 636363, da cellulare 075 5402963.",
+ "_note": "Numeri delle USL Umbria 1 e Umbria 2 per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Servono a Numeri utili e, dalle copie del 22/10/2026, ai moduli con le lettere (liste d'attesa, cartella clinica, medico, assistenza a casa, cure palliative, ausili). Nella provincia di Perugia la lettera va all'USL Umbria 1 o all'USL Umbria 2 secondo il comune (sub_areas). Il 116117 vale solo nel Distretto del Perugino; altrove restano i numeri di guardia medica. CUP regionale (NUS) 800 636363, da cellulare 075 5402963.",
  "asl": [
   {
    "id": "perugia",
    "name": "USL Umbria 1 (e USL Umbria 2 per Foligno, Spoleto e Valnerina)",
    "aziende_multiple": true,
    "province": "Perugia",
+   "sub_areas": [
+    {
+     "id": "usl-umbria-1",
+     "label": "USL Umbria 1 – Perugia, Assisi, Gubbio, Città di Castello, Todi, Marsciano, Trasimeno",
+     "comuni": [
+      "tutti i comuni della provincia di Perugia, tranne quelli dell’USL Umbria 2"
+     ],
+     "name": "USL Umbria 1",
+     "nome_lettera": "USL Umbria 1",
+     "pec": "aslumbria1@postacert.umbria.it",
+     "emails": [
+      "urp@uslumbria1.it"
+     ],
+     "send_to": "urp@uslumbria1.it",
+     "scelta_medico": {
+      "how": "Se sei maggiorenne, puoi scegliere un nuovo medico di famiglia online, sul Portale Salute della Regione Umbria, con SPID, CIE o tessera sanitaria (CNS). Per il pediatra e per la revoca del medico puoi mandare il modulo per email all'anagrafe sanitaria del tuo distretto, con la copia del documento e della tessera sanitaria. Gli indirizzi sono sulla pagina dell'USL Umbria 1. Per tutti i casi puoi andare allo sportello dell'anagrafe sanitaria del distretto.",
+      "url": "https://www.uslumbria1.it/medici/scelta-cambio-revoca-del-medico-e-del-pediatra/",
+      "url_label": "Sito dell'USL Umbria 1"
+     },
+     "how_to": "Prenota al CUP: NUS 800 636363 da telefono fisso o 075 5402963 da cellulare, dal lunedì al venerdì 8–18. Puoi anche andare a uno sportello CUP o in una farmacia con il FarmaCUP. In Umbria, se il CUP non trova un posto nei tempi della priorità, «prende in carico» la tua richiesta e ti richiama per darti la data. Rispondi alle chiamate: dopo 3 chiamate senza risposta la richiesta viene tolta. Se nessuno ti richiama in tempo, manda la lettera all'URP dell'USL Umbria 1 (urp@uslumbria1.it) o con la PEC a aslumbria1@postacert.umbria.it."
+    },
+    {
+     "id": "usl-umbria-2",
+     "label": "USL Umbria 2 – Foligno, Spoleto e Valnerina",
+     "comuni": [
+      "Foligno",
+      "Bevagna",
+      "Montefalco",
+      "Gualdo Cattaneo",
+      "Giano dell’Umbria",
+      "Nocera Umbra",
+      "Valtopina",
+      "Spello",
+      "Trevi",
+      "Sellano",
+      "Spoleto",
+      "Campello sul Clitunno",
+      "Castel Ritaldi",
+      "Sant’Anatolia di Narco",
+      "Scheggino",
+      "Vallo di Nera",
+      "Norcia",
+      "Preci",
+      "Cascia",
+      "Poggiodomo",
+      "Cerreto di Spoleto",
+      "Monteleone di Spoleto"
+     ],
+     "name": "USL Umbria 2",
+     "nome_lettera": "USL Umbria 2",
+     "pec": "aslumbria2@postacert.umbria.it",
+     "emails": [
+      "urp@uslumbria2.it"
+     ],
+     "send_to": "urp@uslumbria2.it",
+     "scelta_medico": {
+      "how": "Se sei maggiorenne, puoi scegliere un nuovo medico di famiglia online, sul Portale Salute della Regione Umbria, con SPID, CIE o tessera sanitaria (CNS). Per scegliere, cambiare o revocare il medico o il pediatra puoi anche mandare una email al tuo distretto (cambiomedico.foligno@uslumbria2.it, cambiomedico.spoleto@uslumbria2.it, cambiomedico.valnerina@uslumbria2.it), con la copia del documento e della tessera sanitaria. Oppure vai all'anagrafe assistibili del distretto.",
+      "url": "https://www.uslumbria2.it/notizie/anagrafe-assistibili-iscrizione-al-servizio-sanitario-regionale-tessera-sanitaria-scelta-medico-o-pediatra-di-famiglia-assistenza-allestero-esenzione-per-reddito-o-patologia",
+      "url_label": "Sito dell'USL Umbria 2"
+     },
+     "how_to": "Prenota al CUP: NUS 800 636363 da telefono fisso o 075 5402963 da cellulare, dal lunedì al venerdì 8–18. Puoi anche andare a uno sportello CUP o in una farmacia con il FarmaCUP. In Umbria, se il CUP non trova un posto nei tempi della priorità, «prende in carico» la tua richiesta e ti richiama per darti la data. Se nessuno ti richiama in tempo, manda la lettera all'URP dell'USL Umbria 2 (urp@uslumbria2.it) o con la PEC a aslumbria2@postacert.umbria.it.",
+     "what_next": [
+      "Il CUP ti richiama per darti la data della visita o dell'esame.",
+      "Se nessuno ti richiama in tempo, manda la lettera: l'URP risponde ai reclami e alle segnalazioni."
+     ],
+     "site_url": "https://www.uslumbria2.it/"
+    }
+   ],
    "site_url": "https://www.uslumbria1.it/",
    "official_domains": [
     "uslumbria1.it",
@@ -26,6 +94,11 @@
     "urp@uslumbria2.it"
    ],
    "pec": "aslumbria1@postacert.umbria.it",
+   "scelta_medico": {
+    "how": "Se sei maggiorenne, puoi scegliere un nuovo medico di famiglia online, sul Portale Salute della Regione Umbria, con SPID, CIE o tessera sanitaria (CNS). Per il pediatra e per la revoca del medico puoi mandare il modulo per email all'anagrafe sanitaria del tuo distretto, con la copia del documento e della tessera sanitaria. Gli indirizzi sono sulla pagina dell'USL Umbria 1. Per tutti i casi puoi andare allo sportello dell'anagrafe sanitaria del distretto.",
+    "url": "https://www.uslumbria1.it/medici/scelta-cambio-revoca-del-medico-e-del-pediatra/",
+    "url_label": "Sito dell'USL Umbria 1"
+   },
    "phones": [
     {
      "label": "Centralino USL Umbria 1",
@@ -484,6 +557,151 @@
      "url": "https://www.uslumbria2.it/notizie/cure-palliative-e-terapia-del-dolore",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Copia della cartella clinica – ospedale di Foligno (USL Umbria 2)",
+     "number": "0742 3397799",
+     "url": "https://www.uslumbria2.it/notizie/rilascio-copia-della-cartella-clinica",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 8:00–13:00"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Copia della cartella clinica – ospedale di Norcia (USL Umbria 2)",
+     "number": "0743 815236",
+     "url": "https://www.uslumbria2.it/notizie/rilascio-copia-della-cartella-clinica",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 9:00–13:00; lunedì e giovedì anche 15:00–17:00"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Copia della cartella clinica – ospedale di Cascia (USL Umbria 2)",
+     "number": "0743 7506232",
+     "url": "https://www.uslumbria2.it/notizie/rilascio-copia-della-cartella-clinica",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Martedì e giovedì 10:00–12:00; mercoledì 15:00–17:00"
+    },
+    {
+     "topic": "protesica",
+     "label": "Ufficio protesi e ausili USL Umbria 1 – Perugia (Poliambulatorio Piazzale Europa)",
+     "number": "075 5412947",
+     "url": "https://www.uslumbria1.it/servizio/ausili-e-assistenza-protesica/",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 9:00–11:00; martedì anche 14:30–16:30",
+     "address": "Via dei Filosofi 9, Perugia"
+    },
+    {
+     "topic": "protesica",
+     "label": "Ufficio protesi e ausili USL Umbria 1 – Gubbio",
+     "number": "075 8933516",
+     "url": "https://www.uslumbria1.it/servizio/ausili-e-assistenza-protesica/",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Lunedì e mercoledì 8:30–13:00",
+     "address": "Centro di Salute, Largo S. Francesco, Gubbio"
+    },
+    {
+     "topic": "protesica",
+     "label": "Ufficio protesi e ausili USL Umbria 1 – Gualdo Tadino",
+     "number": "075 9109375",
+     "url": "https://www.uslumbria1.it/servizio/ausili-e-assistenza-protesica/",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Mercoledì e venerdì 8:30–12:30",
+     "address": "Centro di Salute, Via Valle del Molino, Gualdo Tadino"
+    },
+    {
+     "topic": "protesica",
+     "label": "Ufficio protesi e ausili USL Umbria 1 – Città di Castello",
+     "number": "075 8932450",
+     "url": "https://www.uslumbria1.it/servizio/ausili-e-assistenza-protesica/",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "address": "Centro di Salute, Via del Salaiolo, Città di Castello"
+    },
+    {
+     "topic": "protesica",
+     "label": "Ufficio protesi e ausili USL Umbria 1 – Umbertide",
+     "number": "075 8935533",
+     "url": "https://www.uslumbria1.it/servizio/ausili-e-assistenza-protesica/",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "address": "Centro di Salute, Largo Cimabue, Umbertide"
+    },
+    {
+     "topic": "protesica",
+     "label": "Ufficio protesi e ausili USL Umbria 1 – Bastia Umbra (Distretto Assisano)",
+     "number": "075 8020101",
+     "url": "https://www.uslumbria1.it/servizio/ausili-e-assistenza-protesica/",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Lunedì, mercoledì e venerdì 9:30–10:30",
+     "address": "Palazzo della Salute, Via delle Tabacchine 3, Bastia Umbra"
+    },
+    {
+     "topic": "protesica",
+     "label": "Ufficio protesi e ausili USL Umbria 1 – Marsciano",
+     "number": "075 8782404",
+     "url": "https://www.uslumbria1.it/servizio/ausili-e-assistenza-protesica/",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Lunedì 9:00–13:00",
+     "address": "Casa della Salute, Via Piccolotti 1, Marsciano"
+    },
+    {
+     "topic": "protesica",
+     "label": "Ufficio protesi e ausili USL Umbria 1 – Todi",
+     "number": "075 8858351",
+     "url": "https://www.uslumbria1.it/servizio/ausili-e-assistenza-protesica/",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Martedì 9:00–13:00",
+     "address": "Centro Multiservizi, Via Matteotti, Todi"
+    },
+    {
+     "topic": "protesica",
+     "label": "Ufficio protesi e ausili USL Umbria 1 – Panicale (Trasimeno)",
+     "number": "075 8354222",
+     "url": "https://www.uslumbria1.it/servizio/ausili-e-assistenza-protesica/",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Martedì, giovedì e venerdì 8:30–12:00",
+     "address": "Viale Belvedere 12, Panicale"
+    },
+    {
+     "topic": "protesica",
+     "label": "Ufficio protesi e ausili USL Umbria 2 – Foligno (anche Norcia e Cascia)",
+     "number": "0742 3397221",
+     "url": "https://www.uslumbria2.it/servizi/assistenza-protesica",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Martedì 8:30–12:30 e 14:30–17:00",
+     "address": "Presidio Ospedaliero, piano terra, area CUP, Foligno"
+    },
+    {
+     "topic": "protesica",
+     "label": "Ufficio protesi e ausili USL Umbria 2 – Spoleto",
+     "number": "0743 210371",
+     "url": "https://www.uslumbria2.it/servizi/assistenza-protesica",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Giovedì 9:00–12:30",
+     "address": "Palazzina Micheli, 1° piano, Spoleto"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening dei tumori USL Umbria 2, area nord (Foligno, Spoleto, Valnerina): numero verde",
+     "number": "800 118024",
+     "url": "https://www.uslumbria2.it/servizi/gli-screening-per-la-diagnosi-precoce-e-la-prevenz",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 9:30–13:00",
+     "address": "Via Fiamenga 55A, Foligno"
     }
    ],
    "sources": [
@@ -534,17 +752,59 @@
     {
      "label": "USL Umbria 2 – Cure palliative e terapia del dolore",
      "url": "https://www.uslumbria2.it/notizie/cure-palliative-e-terapia-del-dolore"
+    },
+    {
+     "label": "USL Umbria 1 – Scelta, cambio e revoca del medico e del pediatra",
+     "url": "https://www.uslumbria1.it/medici/scelta-cambio-revoca-del-medico-e-del-pediatra/"
+    },
+    {
+     "label": "Regione Umbria – Scelta e revoca online del medico di famiglia",
+     "url": "https://www.regione.umbria.it/scelta-e-revoca-online-del-medico-di-famiglia"
+    },
+    {
+     "label": "USL Umbria 2 – Anagrafe assistibili e scelta del medico",
+     "url": "https://www.uslumbria2.it/notizie/anagrafe-assistibili-iscrizione-al-servizio-sanitario-regionale-tessera-sanitaria-scelta-medico-o-pediatra-di-famiglia-assistenza-allestero-esenzione-per-reddito-o-patologia"
+    },
+    {
+     "label": "USL Umbria 1 – Documentazione clinica",
+     "url": "https://www.uslumbria1.it/servizio/documentazione-clinica/"
+    },
+    {
+     "label": "USL Umbria 2 – Rilascio copia della cartella clinica",
+     "url": "https://www.uslumbria2.it/notizie/rilascio-copia-della-cartella-clinica"
+    },
+    {
+     "label": "USL Umbria 1 – Ausili e assistenza protesica",
+     "url": "https://www.uslumbria1.it/servizio/ausili-e-assistenza-protesica/"
+    },
+    {
+     "label": "USL Umbria 2 – Assistenza protesica",
+     "url": "https://www.uslumbria2.it/servizi/assistenza-protesica"
+    },
+    {
+     "label": "USL Umbria 2 – Screening oncologici",
+     "url": "https://www.uslumbria2.it/servizi/gli-screening-per-la-diagnosi-precoce-e-la-prevenz"
+    },
+    {
+     "label": "Regione Umbria – Liste di attesa e percorsi di tutela",
+     "url": "https://www.regione.umbria.it/-/salute-diritti-liste-di-attesa"
+    },
+    {
+     "label": "USL Umbria 1 – Liste di attesa",
+     "url": "https://www.uslumbria1.it/ammtrasparente/servizi-erogati/liste-di-attesa/"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-22",
    "todo": [
     "116117: la Regione (notizia del 12/06/2025 su insalute.regione.umbria.it) ha approvato la Centrale Operativa 116117, gestita dall'USL Umbria 1, «pienamente operativa entro il 31/12/2025» e collaudo entro marzo 2026. Nelle copie NON c’è una pagina regionale che dica che è attivo in tutta l’Umbria. L’unica pagina che lo usa è quella della guardia medica USL Umbria 1 (agg. 15/09/2026): 116117 solo per il Distretto del Perugino (Perugia, Corciano, Torgiano); gli altri distretti dell'USL 1 e tutta l'USL Umbria 2 (pagina agg. 13/07/2026) hanno ancora numeri locali. Per questo ho messo i numeri locali con la zona e il 116117 solo per il Perugino. Se la Regione pubblica che il 116117 vale per tutta la regione, togliere i numeri locali.",
     "CUP: in Umbria il CUP regionale è il NUS – Numero Umbria Sanità: 800 636363 (numero verde da fisso) e 075 5402963 da cellulare, dal lunedì al venerdì 8–18 nei giorni feriali (pagine Regione e USL). Le USL non hanno un numero CUP telefonico proprio: hanno sportelli CUP e FarmaCUP. Prenotazione online su www.cupumbria.it e app UmbriaFacile.",
     "Guardia medica USL Umbria 1: l’Elenco telefonico (agg. 22/04/2026) ha numeri diversi (es. Gubbio 075 9239468, Perugia 075 36584) da quelli della pagina Guardia medica (agg. 15/09/2026): ho usato quelli della pagina Guardia medica, più recente. Bastia Umbra: sede indicata ma senza numero.",
     "USL Umbria 2 (Foligno, Spoleto, Valnerina): nessun numero PUA/cure domiciliari nelle copie (la pagina «Accedere al servizio di assistenza domiciliare» rimanda ai Centri di salute senza numeri). Gli sportelli CUP dell'USL 2 nelle copie non hanno numeri di telefono.",
     "Cure palliative USL Umbria 1: la pagina «Cure palliative» (agg. 05/09/2023) ha numeri dei PUA diversi da quelli, più recenti, della pagina «Assistenza e cure domiciliari»: non usata. Messi l'Hospice di Perugia (Elenco telefonico) e l'Hospice di Spoleto dell'USL Umbria 2 (pagina «Cure palliative e terapia del dolore», agg. 05/05/2023: confermare con una telefonata).",
-    "Lettere (docs/regioni.md, «Aggiungere le lettere di una regione»): la provincia di Perugia ha due aziende (USL Umbria 1; USL Umbria 2 per Foligno, Spoleto e Valnerina). Una lettera all'URP o alla PEC dell'azienda va all'una o all'altra secondo il comune: servono le zone in sub_areas, ognuna con nome_lettera e pec o emails (docs/regioni.md, sezione 1), prima di accendere i moduli con le lettere. Oggi pec ed emails[0] sono quelli dell'USL Umbria 1.",
-    "Mancano, e sono in pagine[] perché il server le copi: cartelle cliniche (USL 1, USL 2, Azienda Ospedaliera di Perugia), protesica (USL 1 e 2), scelta e revoca (USL 1, USL 2, Regione), screening (USL 1 e 2), percorso di tutela / «presa in carico» del CUP (USL 1, USL 2, Regione)."
+    "Zone (22/10/2026): sub_areas «usl-umbria-1» (USL Umbria 1: urp@uslumbria1.it, PEC aslumbria1@postacert.umbria.it) e «usl-umbria-2» (USL Umbria 2 per i 22 comuni di Foligno, Spoleto e Valnerina, elenco dalla pagina Guardia medica dell'USL 2: urp@uslumbria2.it, PEC aslumbria2@postacert.umbria.it). Indirizzi dalle copie delle pagine URP delle due USL.",
+    "Percorso di tutela (copie del 22/10/2026: Regione «Liste di attesa», USL 1 «Liste di attesa»): se il CUP non trova posto nei tempi, prende in carico la richiesta e ricontatta la persona. Nessuna pagina dice a chi scrivere se nessuno richiama: la lettera va all'URP (che riceve reclami e segnalazioni, pagine URP) o alla PEC. La pagina dell'USL 2 sulla «presa in carico» (ec.uslumbria2.it) non esiste più: tolta da pagine[].",
+    "Cartelle cliniche: l'USL 1 e l'Azienda Ospedaliera di Perugia danno solo la PEC (aslumbria1@ / aosp.perugia@postacert.umbria.it), nessun telefono; l'USL 2 dà i telefoni di Foligno, Norcia e Cascia (Spoleto solo email).",
+    "Screening: manca il numero dello screening dell'USL Umbria 1 (la pagina «Screening» copiata non ha telefoni): in pagine[] le pagine «Screening della mammella» e «Senologia». Finché manca, «prevenzione» resta spento."
    ],
    "pagine": [
     {
@@ -633,10 +893,6 @@
     },
     {
      "tipo": "tutela",
-     "url": "http://ec.uslumbria2.it/www/sitlc/CUP/PRESA%20IN%20CARICO/presa_in_carico.htm"
-    },
-    {
-     "tipo": "tutela",
      "url": "https://www.uslumbria2.it/notizie/in-evidenza-limpegno-delle-aziende-sanitarie-e-ospedaliere-dellumbria-per-abbattere-i-tempi-di-attesa"
     },
     {
@@ -650,8 +906,36 @@
     {
      "tipo": "tutela",
      "url": "https://www.regione.umbria.it/-/salute-diritti-liste-di-attesa"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.uslumbria1.it/screening/screening-mammografico/"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.uslumbria1.it/servizio/senologia/"
     }
-   ]
+   ],
+   "channel": "cup",
+   "letter_mode": "fallback",
+   "send_to": "urp@uslumbria1.it",
+   "how_to": "Prenota al CUP: NUS 800 636363 da telefono fisso o 075 5402963 da cellulare, dal lunedì al venerdì 8–18. Puoi anche andare a uno sportello CUP o in una farmacia con il FarmaCUP. In Umbria, se il CUP non trova un posto nei tempi della priorità, «prende in carico» la tua richiesta e ti richiama per darti la data. Rispondi alle chiamate: dopo 3 chiamate senza risposta la richiesta viene tolta. Se nessuno ti richiama in tempo, manda la lettera all'URP dell'USL Umbria 1 (urp@uslumbria1.it) o con la PEC a aslumbria1@postacert.umbria.it.",
+   "documents_required": [
+    "Ricetta",
+    "Foglio della prenotazione, se ce l'hai",
+    "Documento d'identità (fotocopia o foto)"
+   ],
+   "what_next": [
+    "Il CUP ti richiama per darti la data della visita o dell'esame.",
+    "Rispondi anche ai numeri che non conosci: possono chiamarti gli uffici dell'USL o le strutture convenzionate.",
+    "Se nessuno ti richiama in tempo, manda la lettera: l'URP risponde ai reclami e alle segnalazioni."
+   ],
+   "notes": [],
+   "details": [
+    "In Umbria il percorso di tutela vale per chi abita in Umbria, per le prime visite e i primi esami con la classe di priorità sulla ricetta.",
+    "Se nel tuo distretto non c'è posto in tempo, il CUP cerca la visita nel distretto più vicino o in una struttura privata convenzionata."
+   ],
+   "info_url": "https://www.regione.umbria.it/-/salute-diritti-liste-di-attesa"
   },
   {
    "id": "terni",
@@ -674,6 +958,11 @@
     "urp@uslumbria2.it"
    ],
    "pec": "aslumbria2@postacert.umbria.it",
+   "scelta_medico": {
+    "how": "Se sei maggiorenne, puoi scegliere un nuovo medico di famiglia online, sul Portale Salute della Regione Umbria, con SPID, CIE o tessera sanitaria (CNS). Per scegliere, cambiare o revocare il medico o il pediatra puoi anche mandare una email al tuo distretto (cambiomedico.terni@uslumbria2.it, cambiomedico.narniamelia@uslumbria2.it, cambiomedico.orvieto@uslumbria2.it), con la copia del documento e della tessera sanitaria. Oppure vai all'anagrafe assistibili del distretto.",
+    "url": "https://www.uslumbria2.it/notizie/anagrafe-assistibili-iscrizione-al-servizio-sanitario-regionale-tessera-sanitaria-scelta-medico-o-pediatra-di-famiglia-assistenza-allestero-esenzione-per-reddito-o-patologia",
+    "url_label": "Sito dell'USL Umbria 2"
+   },
    "phones": [
     {
      "label": "Centralino USL Umbria 2 – sede centrale di Terni",
@@ -854,6 +1143,83 @@
      "url": "https://www.uslumbria2.it/notizie/cure-palliative-e-terapia-del-dolore",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Copia della cartella clinica – ospedale di Orvieto (USL Umbria 2)",
+     "number": "0763 307776",
+     "url": "https://www.uslumbria2.it/notizie/rilascio-copia-della-cartella-clinica",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 8:00–13:00 e 15:00–18:00; sabato 8:00–13:00"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Copia della cartella clinica – ospedale di Narni (USL Umbria 2)",
+     "number": "0744 740304",
+     "url": "https://www.uslumbria2.it/notizie/rilascio-copia-della-cartella-clinica",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Lunedì, mercoledì e venerdì 8:30–12:00; martedì e giovedì 8:30–12:00 e 14:15–17:15"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Copia della cartella clinica – ospedale di Amelia (USL Umbria 2)",
+     "number": "0744 901221",
+     "url": "https://www.uslumbria2.it/notizie/rilascio-copia-della-cartella-clinica",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Mercoledì, venerdì e sabato dalle 9:45 alle 11 (non il primo sabato del mese); lunedì, martedì e giovedì 16:00–17:15"
+    },
+    {
+     "topic": "protesica",
+     "label": "Ufficio protesi e ausili USL Umbria 2 – Terni",
+     "number": "0744 204846",
+     "url": "https://www.uslumbria2.it/servizi/assistenza-protesica",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Lunedì e mercoledì 8:30–12:30; martedì 14:30–17:00",
+     "address": "Via Bramante 37, scala A, primo piano, Terni"
+    },
+    {
+     "topic": "protesica",
+     "label": "Ufficio protesi e ausili USL Umbria 2 – Orvieto",
+     "number": "0763 307717",
+     "url": "https://www.uslumbria2.it/servizi/assistenza-protesica",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Lunedì e mercoledì 8:30–12:30",
+     "address": "Presidio Ospedaliero Santa Maria della Stella, Orvieto"
+    },
+    {
+     "topic": "protesica",
+     "label": "Ufficio protesi e ausili USL Umbria 2 – Amelia",
+     "number": "0744 901446",
+     "url": "https://www.uslumbria2.it/servizi/assistenza-protesica",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Lunedì 8:30–12:30",
+     "address": "Casa della Comunità, Strada Amelia-Giove 5 B, Amelia"
+    },
+    {
+     "topic": "protesica",
+     "label": "Ufficio protesi e ausili USL Umbria 2 – Narni",
+     "number": "0744 756625",
+     "url": "https://www.uslumbria2.it/servizi/assistenza-protesica",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Giovedì 8:30–12:30",
+     "address": "Via Tuderte 12, Narni"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening dei tumori USL Umbria 2, area sud (Terni, Narni-Amelia, Orvieto)",
+     "number": "0744 204856",
+     "url": "https://www.uslumbria2.it/servizi/gli-screening-per-la-diagnosi-precoce-e-la-prevenz",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 9:30–13:00",
+     "address": "Viale Donato Bramante 37, primo piano, scala B, Terni"
     }
    ],
    "sources": [
@@ -880,14 +1246,38 @@
     {
      "label": "USL Umbria 2 – Cure palliative e terapia del dolore",
      "url": "https://www.uslumbria2.it/notizie/cure-palliative-e-terapia-del-dolore"
+    },
+    {
+     "label": "Regione Umbria – Scelta e revoca online del medico di famiglia",
+     "url": "https://www.regione.umbria.it/scelta-e-revoca-online-del-medico-di-famiglia"
+    },
+    {
+     "label": "USL Umbria 2 – Anagrafe assistibili e scelta del medico",
+     "url": "https://www.uslumbria2.it/notizie/anagrafe-assistibili-iscrizione-al-servizio-sanitario-regionale-tessera-sanitaria-scelta-medico-o-pediatra-di-famiglia-assistenza-allestero-esenzione-per-reddito-o-patologia"
+    },
+    {
+     "label": "USL Umbria 2 – Rilascio copia della cartella clinica",
+     "url": "https://www.uslumbria2.it/notizie/rilascio-copia-della-cartella-clinica"
+    },
+    {
+     "label": "USL Umbria 2 – Assistenza protesica",
+     "url": "https://www.uslumbria2.it/servizi/assistenza-protesica"
+    },
+    {
+     "label": "USL Umbria 2 – Screening oncologici",
+     "url": "https://www.uslumbria2.it/servizi/gli-screening-per-la-diagnosi-precoce-e-la-prevenz"
+    },
+    {
+     "label": "Regione Umbria – Liste di attesa e percorsi di tutela",
+     "url": "https://www.regione.umbria.it/-/salute-diritti-liste-di-attesa"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-22",
    "todo": [
     "116117 non ancora indicato per la provincia di Terni: la pagina Guardia medica dell'USL Umbria 2 (agg. 13/07/2026) dà ancora i numeri locali. Vedi nota sulla voce Perugia.",
     "Guardia medica Arrone (0744 275888) ha lo stesso numero di Terni: messo solo Terni con Arrone tra i comuni.",
     "Cure domiciliari USL Umbria 2: la pagina dice che il medico di famiglia attiva l'assistenza online con il Centro di salute e che poi la famiglia chiama il Centro di salute; nessun numero PUA nelle copie (pua_url è quella pagina).",
-    "Mancano, e sono in pagine[] perché il server le copi: cartelle cliniche (USL 2, Azienda Ospedaliera di Terni), protesica, scelta e revoca, screening, percorso di tutela / «presa in carico» del CUP. Gli sportelli CUP di Terni, Narni-Amelia e Orvieto nelle copie non hanno numeri."
+    "Cartelle cliniche, protesica, scelta del medico (email cambiomedico.* dei distretti e scelta online sul Portale Salute della Regione), screening (area sud 0744 204856) e percorso di tutela letti nelle copie del 22/10/2026. L'Azienda Ospedaliera di Terni ha la sua pagina cartelle (documentazionesanitaria@aospterni.it) senza telefoni."
    ],
    "pagine": [
     {
@@ -928,10 +1318,6 @@
     },
     {
      "tipo": "tutela",
-     "url": "http://ec.uslumbria2.it/www/sitlc/CUP/PRESA%20IN%20CARICO/presa_in_carico.htm"
-    },
-    {
-     "tipo": "tutela",
      "url": "https://www.uslumbria2.it/notizie/in-evidenza-limpegno-delle-aziende-sanitarie-e-ospedaliere-dellumbria-per-abbattere-i-tempi-di-attesa"
     },
     {
@@ -963,7 +1349,26 @@
      "url": "https://www.regione.umbria.it/-/salute-diritti-liste-di-attesa"
     }
    ],
-   "pua_url": "https://www.uslumbria2.it/notizie/accedere-al-servizio-di-assistenza-domiciliare"
+   "pua_url": "https://www.uslumbria2.it/notizie/accedere-al-servizio-di-assistenza-domiciliare",
+   "channel": "cup",
+   "letter_mode": "fallback",
+   "send_to": "urp@uslumbria2.it",
+   "how_to": "Prenota al CUP: NUS 800 636363 da telefono fisso o 075 5402963 da cellulare, dal lunedì al venerdì 8–18. Puoi anche andare a uno sportello CUP o in una farmacia con il FarmaCUP. In Umbria, se il CUP non trova un posto nei tempi della priorità, «prende in carico» la tua richiesta e ti richiama per darti la data. Se nessuno ti richiama in tempo, manda la lettera all'URP dell'USL Umbria 2 (urp@uslumbria2.it) o con la PEC a aslumbria2@postacert.umbria.it.",
+   "documents_required": [
+    "Ricetta",
+    "Foglio della prenotazione, se ce l'hai",
+    "Documento d'identità (fotocopia o foto)"
+   ],
+   "what_next": [
+    "Il CUP ti richiama per darti la data della visita o dell'esame.",
+    "Se nessuno ti richiama in tempo, manda la lettera: l'URP risponde ai reclami e alle segnalazioni."
+   ],
+   "notes": [],
+   "details": [
+    "In Umbria il percorso di tutela vale per chi abita in Umbria, per le prime visite e i primi esami con la classe di priorità sulla ricetta.",
+    "Se nel tuo distretto non c'è posto in tempo, il CUP cerca la visita nel distretto più vicino o in una struttura privata convenzionata."
+   ],
+   "info_url": "https://www.regione.umbria.it/-/salute-diritti-liste-di-attesa"
   }
  ]
 }

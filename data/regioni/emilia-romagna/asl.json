@@ -189,8 +189,9 @@
     "AUSL di Imola: non ho trovato un CUP telefonico dedicato; l'800040606 è citato per prenotare i prelievi.",
     "Scelta del medico: per l'AUSL di Imola la copia della pagina della Casa della Comunità dice che si fa agli sportelli CUP, con il modulo online (ausl.imola.bo.it/cambio-medico-pediatra) o con il Fascicolo sanitario. Per l'AUSL di Bologna manca una pagina.",
     "Gli ospedali Sant'Orsola (IRCCS Policlinico) e Rizzoli hanno uffici cartelle loro: pagine da cercare.",
-    "Moduli non ancora accesi (22/10/2026): liste d'attesa (nelle copie nessuna AUSL dice come chiedere un posto quando il CUP non lo dà nei tempi: gli estratti parlano di «prelista» e «agende di garanzia»), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione.",
-    "Lettere (docs/regioni.md, sezione 1 «Province e aziende»): in questa provincia ci sono due aziende: AUSL di Bologna e AUSL di Imola. Una lettera all'azienda va all'una o all'altra secondo il comune. Prima di accendere cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa o ausili servono le zone in sub_areas: per ognuna id, label (il pulsante «In quale zona?»), comuni, nome_lettera e pec o emails, dalle copie delle pagine ufficiali. Finché mancano, aziende_multiple resta true e tests/coerenza.test.mjs tiene spenti quei moduli."
+    "Lettere (docs/regioni.md, sezione 1 «Province e aziende»): in questa provincia ci sono due aziende: AUSL di Bologna e AUSL di Imola. Una lettera all'azienda va all'una o all'altra secondo il comune. Prima di accendere cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa o ausili servono le zone in sub_areas: per ognuna id, label (il pulsante «In quale zona?»), comuni, nome_lettera e pec o emails, dalle copie delle pagine ufficiali. Finché mancano, aziende_multiple resta true e tests/coerenza.test.mjs tiene spenti quei moduli.",
+    "Moduli (22/10/2026, secondo giro): ancora spenti in tutta la regione. Con le lettere accese ogni provincia deve avere i dati: la provincia di Bologna (AUSL di Bologna e AUSL di Imola) non ha ancora le zone, perché nelle copie manca la PEC o l'email dell'URP aziendale dell'AUSL di Bologna (la pagina URP copiata è quella di San Lazzaro). Liste d'attesa: nessuna copia dice come chiedere un posto («prelista»): pagine in pagine[].",
+    "Proprio per le zone (da fare alla prossima copia): AUSL di Imola, urp@ausl.imola.bo.it (pagina URP copiata), scelta del medico agli sportelli CUP o online (ausl.imola.bo.it/cambio-medico-pediatra, copiata); AUSL di Bologna, PEC dalla pagina «Contatti e Posta Elettronica Certificata» (in pagine[]), scelta del medico dalla pagina «Cambio del Medico di Medicina Generale» (copiata). Elenco dei comuni dell'AUSL di Imola da una pagina ufficiale."
    ],
    "last_verified": "2026-10-21",
    "pagine": [
@@ -225,6 +226,14 @@
     {
      "tipo": "inps-riforma",
      "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html"
+    },
+    {
+     "tipo": "pec",
+     "url": "https://www.ausl.bologna.it/pec"
+    },
+    {
+     "tipo": "pec",
+     "url": "https://www.ausl.bologna.it/posta-elettronica-certificata"
     }
    ]
   },
@@ -433,7 +442,8 @@
    ],
    "todo": [
     "Il numero verde CUP 800 532000 è nell'elenco telefoni di Amministrazione trasparente: le pagine sulle prenotazioni copiate non lo riportano.",
-    "Moduli non ancora accesi (22/10/2026): liste d'attesa (nelle copie nessuna AUSL dice come chiedere un posto quando il CUP non lo dà nei tempi: gli estratti parlano di «prelista» e «agende di garanzia»), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
+    "Moduli (22/10/2026, secondo giro): ancora spenti in tutta la regione. Con le lettere accese ogni provincia deve avere i dati: la provincia di Bologna (AUSL di Bologna e AUSL di Imola) non ha ancora le zone, perché nelle copie manca la PEC o l'email dell'URP aziendale dell'AUSL di Bologna (la pagina URP copiata è quella di San Lazzaro). Liste d'attesa: nessuna copia dice come chiedere un posto («prelista»): pagine in pagine[].",
+    "PEC: la pagina «Telefono e posta elettronica» copiata non mostra gli indirizzi PEC: messa in pagine[] la pagina «Posta Elettronica Certificata (PEC)»."
    ],
    "last_verified": "2026-10-21",
    "pagine": [
@@ -464,6 +474,10 @@
     {
      "tipo": "medico",
      "url": "https://support.fascicolo-sanitario.it/guida/servizi-on-line/cambio%7Crevoca-medico-di-famiglia"
+    },
+    {
+     "tipo": "pec",
+     "url": "https://www.ausl.fe.it/strutture/amministrazione/posta-elettronica-certificata-pec"
     }
    ]
   },
@@ -541,7 +555,7 @@
    "todo": [
     "Nelle copie delle pagine dell'AUSL della Romagna non ci sono il centralino né i numeri dell'URP (le pagine URP non hanno telefoni).",
     "Il PUA di Forlì è solo per i residenti del Comune di Forlì; manca un PUA per Cesena.",
-    "Moduli non ancora accesi (22/10/2026): liste d'attesa (nelle copie nessuna AUSL dice come chiedere un posto quando il CUP non lo dà nei tempi: gli estratti parlano di «prelista» e «agende di garanzia»), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
+    "Moduli (22/10/2026, secondo giro): ancora spenti in tutta la regione. Con le lettere accese ogni provincia deve avere i dati: la provincia di Bologna (AUSL di Bologna e AUSL di Imola) non ha ancora le zone, perché nelle copie manca la PEC o l'email dell'URP aziendale dell'AUSL di Bologna (la pagina URP copiata è quella di San Lazzaro). Liste d'attesa: nessuna copia dice come chiedere un posto («prelista»): pagine in pagine[]."
    ],
    "last_verified": "2026-10-21",
    "pua_url": "https://www.auslromagna.it/azienda/organizzazione/distretti/distretto-di-forli/luoghi/pua-punto-unico-di-accesso-di-forli",
@@ -569,6 +583,10 @@
     {
      "tipo": "medico",
      "url": "https://support.fascicolo-sanitario.it/guida/servizi-on-line/cambio%7Crevoca-medico-di-famiglia"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.auslromagna.it/servizi/prenotare-disdire/prelista"
     }
    ]
   },
@@ -654,7 +672,7 @@
    "todo": [
     "Le pagine delle sedi URP e delle cure domiciliari danno «pagina non trovata»: mancano URP distrettuali e numero per le cure a casa.",
     "Il numero verde CUP 800 239123 è citato nella pagina CupWeb, non in una pagina dedicata al CUP telefonico: orari non indicati.",
-    "Moduli non ancora accesi (22/10/2026): liste d'attesa (nelle copie nessuna AUSL dice come chiedere un posto quando il CUP non lo dà nei tempi: gli estratti parlano di «prelista» e «agende di garanzia»), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
+    "Moduli (22/10/2026, secondo giro): ancora spenti in tutta la regione. Con le lettere accese ogni provincia deve avere i dati: la provincia di Bologna (AUSL di Bologna e AUSL di Imola) non ha ancora le zone, perché nelle copie manca la PEC o l'email dell'URP aziendale dell'AUSL di Bologna (la pagina URP copiata è quella di San Lazzaro). Liste d'attesa: nessuna copia dice come chiedere un posto («prelista»): pagine in pagine[]."
    ],
    "last_verified": "2026-10-21",
    "pagine": [
@@ -851,7 +869,7 @@
    "todo": [
     "La pagina della guardia medica elenca le sedi ma i numeri per distretto li ho presi dalla pagina «Numeri utili», senza data: da ricontrollare.",
     "Cure domiciliari: la pagina rimanda ai box delle Case della Salute, ma nella copia non ci sono numeri: manca il numero per le cure a casa.",
-    "Moduli non ancora accesi (22/10/2026): liste d'attesa (nelle copie nessuna AUSL dice come chiedere un posto quando il CUP non lo dà nei tempi: gli estratti parlano di «prelista» e «agende di garanzia»), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
+    "Moduli (22/10/2026, secondo giro): ancora spenti in tutta la regione. Con le lettere accese ogni provincia deve avere i dati: la provincia di Bologna (AUSL di Bologna e AUSL di Imola) non ha ancora le zone, perché nelle copie manca la PEC o l'email dell'URP aziendale dell'AUSL di Bologna (la pagina URP copiata è quella di San Lazzaro). Liste d'attesa: nessuna copia dice come chiedere un posto («prelista»): pagine in pagine[]."
    ],
    "last_verified": "2026-10-21",
    "pagine": [
@@ -988,7 +1006,7 @@
     "116117 in Emilia-Romagna: la pagina regionale delle domande frequenti (aggiornata a giugno 2025) dice che il 116117 entrerà in funzione «entro il primo semestre 2026» e che fino ad allora restano attivi i consueti numeri della guardia medica delle Aziende sanitarie. Nessuna pagina copiata (Regione o AUSL) dice che in una provincia il 116117 sia già attivo: per questo in tutte le province ho messo i numeri di guardia medica delle AUSL. Da ricontrollare: forse nel 2026 il 116117 è partito in qualche zona ma le pagine non lo dicono ancora.",
     "Il numero verde regionale del Servizio sanitario 800 033033 compare su quasi tutte le pagine delle AUSL: non l'ho messo nelle voci provinciali (è regionale).",
     "Il PUA di Fiorenzuola ha una pagina ma senza numero di telefono; manca il numero del PUA/cure domiciliari fuori da Piacenza città.",
-    "Moduli non ancora accesi (22/10/2026): liste d'attesa (nelle copie nessuna AUSL dice come chiedere un posto quando il CUP non lo dà nei tempi: gli estratti parlano di «prelista» e «agende di garanzia»), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
+    "Moduli (22/10/2026, secondo giro): ancora spenti in tutta la regione. Con le lettere accese ogni provincia deve avere i dati: la provincia di Bologna (AUSL di Bologna e AUSL di Imola) non ha ancora le zone, perché nelle copie manca la PEC o l'email dell'URP aziendale dell'AUSL di Bologna (la pagina URP copiata è quella di San Lazzaro). Liste d'attesa: nessuna copia dice come chiedere un posto («prelista»): pagine in pagine[]."
    ],
    "last_verified": "2026-10-21",
    "pagine": [
@@ -1073,7 +1091,7 @@
    ],
    "todo": [
     "Nelle copie delle pagine dell'AUSL della Romagna non ci sono il centralino né i numeri dell'URP (le pagine URP non hanno telefoni).",
-    "Moduli non ancora accesi (22/10/2026): liste d'attesa (nelle copie nessuna AUSL dice come chiedere un posto quando il CUP non lo dà nei tempi: gli estratti parlano di «prelista» e «agende di garanzia»), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
+    "Moduli (22/10/2026, secondo giro): ancora spenti in tutta la regione. Con le lettere accese ogni provincia deve avere i dati: la provincia di Bologna (AUSL di Bologna e AUSL di Imola) non ha ancora le zone, perché nelle copie manca la PEC o l'email dell'URP aziendale dell'AUSL di Bologna (la pagina URP copiata è quella di San Lazzaro). Liste d'attesa: nessuna copia dice come chiedere un posto («prelista»): pagine in pagine[]."
    ],
    "last_verified": "2026-10-21",
    "pagine": [
@@ -1092,6 +1110,10 @@
     {
      "tipo": "medico",
      "url": "https://support.fascicolo-sanitario.it/guida/servizi-on-line/cambio%7Crevoca-medico-di-famiglia"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.auslromagna.it/servizi/prenotare-disdire/prelista"
     }
    ]
   },
@@ -1204,7 +1226,7 @@
    "todo": [
     "La pagina URP aziendale non ha un numero di telefono; la vecchia pagina URP dà «pagina non trovata». C'è solo l'URP di Correggio.",
     "Servizio infermieristico domiciliare: la pagina non ha numeri (le sedi sono in un elenco non copiato).",
-    "Moduli non ancora accesi (22/10/2026): liste d'attesa (nelle copie nessuna AUSL dice come chiedere un posto quando il CUP non lo dà nei tempi: gli estratti parlano di «prelista» e «agende di garanzia»), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
+    "Moduli (22/10/2026, secondo giro): ancora spenti in tutta la regione. Con le lettere accese ogni provincia deve avere i dati: la provincia di Bologna (AUSL di Bologna e AUSL di Imola) non ha ancora le zone, perché nelle copie manca la PEC o l'email dell'URP aziendale dell'AUSL di Bologna (la pagina URP copiata è quella di San Lazzaro). Liste d'attesa: nessuna copia dice come chiedere un posto («prelista»): pagine in pagine[]."
    ],
    "last_verified": "2026-10-21",
    "pagine": [
@@ -1297,7 +1319,7 @@
    ],
    "todo": [
     "Nelle copie delle pagine dell'AUSL della Romagna non ci sono il centralino né i numeri dell'URP (le pagine URP non hanno telefoni).",
-    "Moduli non ancora accesi (22/10/2026): liste d'attesa (nelle copie nessuna AUSL dice come chiedere un posto quando il CUP non lo dà nei tempi: gli estratti parlano di «prelista» e «agende di garanzia»), cartella clinica, cure a casa, ausili, cure palliative, medico di famiglia (nessuna pagina copiata li descrive). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
+    "Moduli (22/10/2026, secondo giro): ancora spenti in tutta la regione. Con le lettere accese ogni provincia deve avere i dati: la provincia di Bologna (AUSL di Bologna e AUSL di Imola) non ha ancora le zone, perché nelle copie manca la PEC o l'email dell'URP aziendale dell'AUSL di Bologna (la pagina URP copiata è quella di San Lazzaro). Liste d'attesa: nessuna copia dice come chiedere un posto («prelista»): pagine in pagine[]."
    ],
    "last_verified": "2026-10-21",
    "pagine": [
@@ -1320,6 +1342,10 @@
     {
      "tipo": "medico",
      "url": "https://support.fascicolo-sanitario.it/guida/servizi-on-line/cambio%7Crevoca-medico-di-famiglia"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.auslromagna.it/servizi/prenotare-disdire/prelista"
     }
    ]
   }

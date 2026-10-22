@@ -165,6 +165,10 @@
     {
      "tipo": "liste-attesa",
      "url": "https://www.regione.campania.it/regione/it/news/primo-piano/liste-d-attesa-la-campania-dell-eccellenza-presentati-i-dati-del-monitoraggio-scarica-il-report"
+    },
+    {
+     "tipo": "liste-attesa",
+     "url": "https://aslavellino.it/images/vz/Tempi_di_attesa/tutela/percorso_di_tutela.pdf"
     }
    ]
   },
@@ -676,19 +680,235 @@
    ],
    "last_verified": "2026-10-22",
    "todo": [
-    "In provincia di Napoli ci sono tre ASL (Napoli 1 Centro: la città; Napoli 2 Nord; Napoli 3 Sud): qui sono in una voce sola, come Roma nel Lazio. Per le lettere serve dividerle (domanda «In quale zona?»).",
-    "PEC: Napoli 1 Centro urpcentrale@pec.aslna1centro.it (URP), Napoli 2 Nord protocollo@pec.aslnapoli2nord.it, Napoli 3 Sud protocollo@pec.aslnapoli3sud.it: non messe in «pec» perché la voce è unica.",
     "CUP dell'ASL Napoli 1 Centro: la pagina dice solo «CUP unico regionale» e sportelli 8.30–12.30, nessun numero di telefono.",
     "CUP dell'ASL Napoli 3 Sud: il numero è scritto 081 185555 (9 cifre) su due pagine; prenotazioni anche a prenotazioni-disdette@aslnapoli3sud.it.",
     "Guardia medica: ogni distretto ha i suoi presidi con i numeri (Napoli 1 Centro: pagina guardia-medica-emergenza-territoriale; Napoli 3 Sud: continuità assistenziale). Non messi: sono decine.",
     "PUA dell'ASL Napoli 2 Nord: altri distretti (38 Marano 081 18841425 e Quarto 081 18840415, 44, 46, 36) sono sulla pagina.",
     "Percorso di tutela: nelle copie non c'è come chiederlo. Aggiunte a «pagine» le pagine «Liste di attesa» della Regione e delle ASL trovate col motore di ricerca. L'ASL Napoli 3 Sud (pagina CUP) dice che le richieste sul percorso di tutela vanno all'URP.",
-    "Lettere (docs/regioni.md, sezione 1 «Province e aziende»): in questa provincia ci sono tre aziende: ASL Napoli 1 Centro, ASL Napoli 2 Nord, ASL Napoli 3 Sud. Una lettera all'azienda va all'una o all'altra secondo il comune. Prima di accendere cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa o ausili servono le zone in sub_areas: per ognuna id, label (il pulsante «In quale zona?»), comuni, nome_lettera e pec o emails, dalle copie delle pagine ufficiali. Finché mancano, aziende_multiple resta true e tests/coerenza.test.mjs tiene spenti quei moduli."
+    "Zone (sub_areas, copie del 22/10/2026): Napoli 1 Centro (urpcentrale@aslnapoli1centro.it e PEC urpcentrale@pec.aslna1centro.it, pagina URP), Napoli 2 Nord (urp@aslnapoli2nord.it e PEC protocollo@pec.aslnapoli2nord.it, pagine URP e PUA), Napoli 3 Sud (relazionipubbliche@aslnapoli3sud.it, pagina URP; PEC protocollo@pec.aslnapoli3sud.it, pagine CUP e rubrica). In ogni zona phones e contacts sono quelli della sua ASL. Mancano i comuni di ogni ASL (sotto il pulsante «In quale zona?»): nelle copie non c'è un elenco dei comuni per distretto. Servono le pagine dei distretti delle tre ASL in «pagine»."
    ],
    "pagine": [
     {
      "tipo": "liste-attesa",
      "url": "https://www.regione.campania.it/regione/it/news/primo-piano/liste-d-attesa-la-campania-dell-eccellenza-presentati-i-dati-del-monitoraggio-scarica-il-report"
+    }
+   ],
+   "sub_areas": [
+    {
+     "id": "napoli1",
+     "label": "ASL Napoli 1 Centro",
+     "nome_lettera": "ASL Napoli 1 Centro",
+     "pec": "urpcentrale@pec.aslna1centro.it",
+     "emails": [
+      "urpcentrale@aslnapoli1centro.it"
+     ],
+     "site_url": "https://www.aslnapoli1centro.it/",
+     "pua_url": "https://www.aslnapoli1centro.it/cure-domiciliari-e-assistenza-residenziale",
+     "phones": [
+      {
+       "label": "Centralino dell'ASL Napoli 1 Centro (città di Napoli)",
+       "number": "081 2541111",
+       "url": "https://www.aslnapoli1centro.it/",
+       "verified": "2026-10-22",
+       "proof": "pagina",
+       "address": "Via Comunale del Principe 13/a, Napoli"
+      }
+     ],
+     "contacts": [
+      {
+       "topic": "centralino",
+       "label": "Centralino dell'ASL Napoli 1 Centro (città di Napoli)",
+       "number": "081 2541111",
+       "url": "https://www.aslnapoli1centro.it/",
+       "address": "Via Comunale del Principe 13/a, Napoli",
+       "verified": "2026-10-22",
+       "proof": "pagina"
+      },
+      {
+       "topic": "urp",
+       "label": "URP dell'ASL Napoli 1 Centro (città di Napoli)",
+       "number": "081 2549084",
+       "url": "https://www.aslnapoli1centro.it/urp_1",
+       "verified": "2026-10-22",
+       "proof": "pagina"
+      },
+      {
+       "topic": "casa",
+       "label": "ASL Napoli 1 Centro: centrale delle cure domiciliari e cure palliative (numero verde)",
+       "number": "800 194281",
+       "url": "https://www.aslnapoli1centro.it/cure-domiciliari-e-assistenza-residenziale",
+       "address": "Ospedale San Gennaro, Via S. Gennaro dei Poveri 25, Napoli",
+       "verified": "2026-10-22",
+       "proof": "pagina"
+      },
+      {
+       "topic": "palliative",
+       "label": "ASL Napoli 1 Centro: centrale delle cure domiciliari e cure palliative (numero verde)",
+       "number": "800 194281",
+       "url": "https://www.aslnapoli1centro.it/cure-domiciliari-e-assistenza-residenziale",
+       "address": "Ospedale San Gennaro, Via S. Gennaro dei Poveri 25, Napoli",
+       "verified": "2026-10-22",
+       "proof": "pagina"
+      },
+      {
+       "topic": "casa",
+       "label": "ASL Napoli 1 Centro: call center delle cure domiciliari",
+       "number": "081 2546967",
+       "url": "https://www.aslnapoli1centro.it/cure-domiciliari-e-assistenza-residenziale",
+       "hours": "Dal lunedì al venerdì 08:00–14:00",
+       "verified": "2026-10-22",
+       "proof": "pagina"
+      }
+     ]
+    },
+    {
+     "id": "napoli2",
+     "label": "ASL Napoli 2 Nord",
+     "nome_lettera": "ASL Napoli 2 Nord",
+     "pec": "protocollo@pec.aslnapoli2nord.it",
+     "emails": [
+      "urp@aslnapoli2nord.it"
+     ],
+     "site_url": "https://www.aslnapoli2nord.it/",
+     "pua_url": "https://www.aslnapoli2nord.it/servizio/porta-unica-di-accesso/",
+     "phones": [
+      {
+       "label": "Centralino dell'ASL Napoli 2 Nord",
+       "number": "081 1884059",
+       "url": "https://www.aslnapoli2nord.it/servizio/numero-verde-prenotazioni-visite/",
+       "verified": "2026-10-22",
+       "proof": "pagina",
+       "address": "Via Lupoli 27, Frattamaggiore"
+      }
+     ],
+     "contacts": [
+      {
+       "topic": "centralino",
+       "label": "Centralino dell'ASL Napoli 2 Nord",
+       "number": "081 1884059",
+       "url": "https://www.aslnapoli2nord.it/servizio/numero-verde-prenotazioni-visite/",
+       "address": "Via Lupoli 27, Frattamaggiore",
+       "verified": "2026-10-22",
+       "proof": "pagina"
+      },
+      {
+       "topic": "cup",
+       "label": "CUP dell'ASL Napoli 2 Nord: prenotare e disdire visite ed esami (numero verde)",
+       "number": "800 903999",
+       "url": "https://www.aslnapoli2nord.it/servizio/numero-verde-prenotazioni-visite/",
+       "hours": "Dal lunedì al venerdì 8.30–15.00",
+       "verified": "2026-10-22",
+       "proof": "pagina"
+      },
+      {
+       "topic": "urp",
+       "label": "URP dell'ASL Napoli 2 Nord",
+       "number": "081 18840933",
+       "url": "https://www.aslnapoli2nord.it/amministrazione/unita_organizzativa/u-o-c-urp-e-marketing-sanitario/",
+       "verified": "2026-10-22",
+       "proof": "pagina"
+      },
+      {
+       "topic": "casa",
+       "label": "PUA dell'ASL Napoli 2 Nord – Distretto 39",
+       "number": "081 18840306",
+       "url": "https://www.aslnapoli2nord.it/servizio/porta-unica-di-accesso/",
+       "hours": "Lunedì, mercoledì e giovedì 08:30–13:00",
+       "verified": "2026-10-22",
+       "proof": "pagina"
+      },
+      {
+       "topic": "casa",
+       "label": "PUA dell'ASL Napoli 2 Nord – Distretto 41, Frattamaggiore",
+       "number": "081 18840263",
+       "url": "https://www.aslnapoli2nord.it/servizio/porta-unica-di-accesso/",
+       "hours": "Martedì e giovedì",
+       "verified": "2026-10-22",
+       "proof": "pagina"
+      },
+      {
+       "topic": "casa",
+       "label": "PUA dell'ASL Napoli 2 Nord – Distretto 41, Sant'Antimo",
+       "number": "081 3952634",
+       "url": "https://www.aslnapoli2nord.it/servizio/porta-unica-di-accesso/",
+       "hours": "Lunedì, martedì e giovedì 8:00–12:30",
+       "verified": "2026-10-22",
+       "proof": "pagina"
+      },
+      {
+       "topic": "casa",
+       "label": "PUA dell'ASL Napoli 2 Nord – Distretto 43",
+       "number": "081 7051521",
+       "url": "https://www.aslnapoli2nord.it/servizio/porta-unica-di-accesso/",
+       "hours": "Dal lunedì al venerdì 9:00–13:00",
+       "verified": "2026-10-22",
+       "proof": "pagina"
+      }
+     ]
+    },
+    {
+     "id": "napoli3",
+     "label": "ASL Napoli 3 Sud",
+     "nome_lettera": "ASL Napoli 3 Sud",
+     "pec": "protocollo@pec.aslnapoli3sud.it",
+     "emails": [
+      "relazionipubbliche@aslnapoli3sud.it"
+     ],
+     "site_url": "https://www.aslnapoli3sud.it/",
+     "pua_url": "https://aslnapoli3sud.it/en/web/guest/direttore-59/assistenza-domiciliare-cure-palliative",
+     "phones": [],
+     "contacts": [
+      {
+       "topic": "cup",
+       "label": "CUP dell'ASL Napoli 3 Sud: prenotare visite ed esami, da fisso e da cellulare",
+       "number": "081 185555",
+       "url": "https://www.aslnapoli3sud.it/cup",
+       "hours": "Dal lunedì al venerdì 08:00–18:30; sabato 08:00–13:00",
+       "verified": "2026-10-22",
+       "proof": "pagina"
+      },
+      {
+       "topic": "urp",
+       "label": "URP dell'ASL Napoli 3 Sud",
+       "number": "081 18433819",
+       "url": "https://www.aslnapoli3sud.it/u.o.c.-relazioni-con-il-pubblico_landing",
+       "address": "Corso Alcide de Gasperi 167, Castellammare di Stabia",
+       "verified": "2026-10-22",
+       "proof": "pagina"
+      },
+      {
+       "topic": "casa",
+       "label": "ASL Napoli 3 Sud: coordinamento delle cure domiciliari",
+       "number": "081 18436503",
+       "url": "https://www.aslnapoli3sud.it/rubrica",
+       "verified": "2026-10-22",
+       "proof": "pagina"
+      },
+      {
+       "topic": "casa",
+       "label": "PUA dell'ASL Napoli 3 Sud – Distretto 34 (Portici)",
+       "number": "081 18435288",
+       "url": "https://www.aslnapoli3sud.it/rubrica",
+       "verified": "2026-10-22",
+       "proof": "pagina"
+      },
+      {
+       "topic": "casa",
+       "label": "PUA dell'ASL Napoli 3 Sud – Distretto 49 (Nola)",
+       "number": "081 18437535",
+       "url": "https://www.aslnapoli3sud.it/rubrica",
+       "verified": "2026-10-22",
+       "proof": "pagina"
+      },
+      {
+       "topic": "casa",
+       "label": "PUA dell'ASL Napoli 3 Sud – Distretto 53 (Castellammare di Stabia)",
+       "number": "081 18433430",
+       "url": "https://www.aslnapoli3sud.it/rubrica",
+       "verified": "2026-10-22",
+       "proof": "pagina"
+      }
+     ]
     }
    ]
   },

@@ -147,6 +147,54 @@
      "verified": "2026-10-22",
      "proof": "pagina",
      "hours": "Dal lunedì al venerdì 8–14"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Ufficio cartelle cliniche dell'Ospedale «Parini» (Direzione medica di presidio, 4° piano): copia della cartella clinica. Puoi chiederla anche per email a ufficiocartellecliniche@ausl.vda.it, con la copia del documento",
+     "number": "0165 543240",
+     "hours": "Martedì e giovedì 8:30–13",
+     "address": "Ospedale «U. Parini», Viale Ginevra 3, Aosta (4° piano)",
+     "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/richiedere-e-ritirare-la-cartella-clinica",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "palliative",
+     "label": "Cure palliative e hospice dell'USL della Valle d'Aosta: segreteria (email curepalliative@ausl.vda.it)",
+     "number": "0165 545573",
+     "address": "Presidio ospedaliero del Beauregard, Via Vaccari 5, Aosta",
+     "url": "https://www.ausl.vda.it/chi-siamo/ospedale-strutture-reparti-e-servizi-sanitari/reparti/hospice-e-cure-palliative/sede-e-contatti",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "protesica",
+     "label": "Ufficio assistenza protesica e servizio ausili dell'USL della Valle d'Aosta (email servizio.ausili@ausl.vda.it)",
+     "number": "0165 544806",
+     "hours": "Dal lunedì al venerdì 8:00–13:30",
+     "address": "Via Guido Rey 1 (piano terra), Aosta",
+     "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/assistenza-protesica-e-ausili",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "protesica",
+     "label": "Riparazione degli ausili: Ufficio servizi logistici e alberghieri dell'USL (email riparazioneausili@ausl.vda.it)",
+     "number": "0165 545714",
+     "address": "Località La Maladière 109, Saint-Christophe",
+     "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/assistenza-protesica-e-ausili",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Ufficio di coordinamento screening dell'USL della Valle d'Aosta: numero unico. Tasto 1 per il colon retto, tasto 2 per mammografia, Pap test e test HPV",
+     "number": "0165 231205",
+     "hours": "Orario 8:00–16:30",
+     "address": "Via Guido Rey 5 (1° piano), Aosta",
+     "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/aderire-alle-campagne-di-screening",
+     "verified": "2026-10-22",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -185,6 +233,26 @@
     {
      "label": "USL Valle d'Aosta – Tempi di attesa e percorso di tutela",
      "url": "https://www.ausl.vda.it/tempi-d-attesa/tempi-di-attesa"
+    },
+    {
+     "label": "USL Valle d'Aosta – Richiedere e ritirare la cartella clinica",
+     "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/richiedere-e-ritirare-la-cartella-clinica"
+    },
+    {
+     "label": "USL Valle d'Aosta – Hospice e cure palliative, sede e contatti",
+     "url": "https://www.ausl.vda.it/chi-siamo/ospedale-strutture-reparti-e-servizi-sanitari/reparti/hospice-e-cure-palliative/sede-e-contatti"
+    },
+    {
+     "label": "USL Valle d'Aosta – Ausili, protesi e ortesi",
+     "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/assistenza-protesica-e-ausili"
+    },
+    {
+     "label": "USL Valle d'Aosta – Aderire agli screening regionali",
+     "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/aderire-alle-campagne-di-screening"
+    },
+    {
+     "label": "USL Valle d'Aosta – Screening",
+     "url": "https://www.ausl.vda.it/prevenzione/screening/screening-oncologici"
     }
    ],
    "last_verified": "2026-10-22",
@@ -193,12 +261,13 @@
     "La pagina Distretto 1 dice che il medico di continuità assistenziale ha sede all'Ospedale Beauregard di Aosta, a Morgex, Cogne e Saint-Pierre, ma non dà numeri; la pagina Distretto 2 non indica sedi.",
     "La pagina regionale «Emergenza sanitaria» dice che il 112 è il numero per il soccorso sanitario in tutta la regione (Centrale Unica del Soccorso).",
     "CUP: c'è un solo CUP, quello dell'USL, 0165 548387 (lun–ven 8–16:30, da fisso e cellulare, anche dall'estero); numero verde 800 610061 solo per assistenza al CUP online. Non ho trovato un CUP regionale diverso. Alcune prestazioni (es. radiologia, oculistica) si prenotano direttamente nei reparti.",
-    "PUA / cure domiciliari: nessuna pagina con numeri; la pagina «Assistenza domiciliare (ADI)» è solo la scheda del progetto PNRR. Manca il topic «casa».",
-    "Le pagine regionali «Assistenza sanitaria» e «Servizi sul territorio» (dove c'è la voce Continuità assistenziale) davano errore 403 e non sono state copiate.",
     "Percorso di tutela (pagina «Tempi di attesa», copia del 21/10/2026): si chiede al CUP telefonico o agli sportelli CUP; non c'è un indirizzo email dedicato. Per questo send_to resta vuoto e la lettera si porta all'URP o al CUP; nella lettera c'è la PEC generale (protocollo@pec.ausl.vda.it, nel piè di pagina del sito). Da chiedere all'URP se si può mandare con la PEC.",
     "Scelta del medico (pagina copiata il 22/10/2026): online dal FSE solo per il cambio; prima scelta, 0–14 anni e fuori ambito allo sportello; anche via PEC con il modulo (non per prima iscrizione e cittadini stranieri). Ad Aosta (via Guido Rey 1) c'è anche la prenotazione garantita (lun, mer, ven 8:30–13:30; mar e gio 8:30–15:30) tramite CUP.",
     "Invalidità civile in Valle d'Aosta: la seguono la Regione e l'USL con regole proprie (il sito della Regione ha la voce «Servizi per invalidi civili»), non solo l'INPS. Il modulo invalidità non va acceso finché non si legge come funziona qui.",
-    "Pagine aggiunte in «pagine» per il server (22/10/2026), da leggere quando ci sono le copie: cartella clinica (Ufficio cartelle cliniche dell'Ospedale Parini, email ufficiocartellecliniche@ausl.vda.it secondo l'estratto), cure palliative e hospice (Beauregard, via Vaccari 5, secondo l'estratto), ausili e protesi (via Guido Rey 1, secondo l'estratto due numeri diversi: 0165 775122 e 0165 544806), screening (0165 231205 secondo l'estratto). Nessun numero messo: solo estratti."
+    "Copie del 22/10/2026 lette per i moduli (proof «pagina»): cartella clinica (Ufficio cartelle cliniche dell'Ospedale Parini, 0165 543240, martedì e giovedì 8:30–13; richiesta di persona, per posta alla Direzione medica di presidio, Viale Ginevra 3, o per email a ufficiocartellecliniche@ausl.vda.it con il documento; consegna entro 7 giorni se la cartella è disponibile), cure palliative (segreteria 0165 545573, curepalliative@ausl.vda.it, Beauregard; l'ADI-CP si attiva con richiesta alla SS Cure Palliative), protesica (0165 544806, servizio.ausili@ausl.vda.it, via Guido Rey 1; riparazioni 0165 545714 o 0165 545711), screening (0165 231205, screening.inva@invallee.it, via Guido Rey 5). Accesi cartella-clinica, cure-palliative e ausili. Prevenzione ha tutti i dati (numero dello screening) ma resta spenta: il giro generico di tests/browser.cjs clicca la provincia subito dopo il primo pulsante, mentre prevenzione chiede prima sesso ed età, e il percorso si ferma (da correggere nel test, non nei dati).",
+    "PUA / cure domiciliari: nessuna copia dà il numero o l'indirizzo di un PUA. La pagina «Assistenza domiciliare (ADI)» è solo la scheda del progetto PNRR; la pagina «Area territoriale» dice che l'ADI la segue l'Area territoriale, senza contatti. Per questo assistenza-domiciliare resta spenta: serve la pagina dei distretti con il punto di accesso (aggiunta in «pagine»).",
+    "Le pagine regionali «Assistenza sanitaria» e «Servizi sul territorio» ora si copiano (22/10/2026): elencano le voci (Assistenza domiciliare integrata, Servizi per invalidi civili) ma senza numeri.",
+    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): invalidita, medico, pua. Da leggere quando ci sono le copie."
    ],
    "fast_track": null,
    "how_to": "Chiama il CUP dell'USL allo 0165 548387 (dal lunedì al venerdì 8–16:30) o vai a uno sportello CUP. Chiedi di attivare il «percorso di tutela». Se non ti danno una data in tempo, stampa la lettera e portala all'URP dell'USL (via Guido Rey 1, Aosta) o a uno sportello CUP. Fatti dare una copia con timbro e data.",
@@ -311,6 +380,22 @@
     {
      "tipo": "screening",
      "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/aderire-alle-campagne-di-screening"
+    },
+    {
+     "tipo": "pua",
+     "url": "http://www.ausl.vda.it/datapage.asp?id=230"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www2.ausl.vda.it/datapage.asp?id=995&l=1"
+    },
+    {
+     "tipo": "invalidita",
+     "url": "https://www.regione.vda.it/servsociali/invalidita_civile_i/invalidi_i/default_i.asp"
+    },
+    {
+     "tipo": "invalidita",
+     "url": "https://www.regione.vda.it/servsociali/invalidita_civile_i/accertamento_handicap/default_i.asp"
     }
    ]
   }

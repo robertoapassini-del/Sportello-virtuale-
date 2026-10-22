@@ -12,7 +12,8 @@
    "official_domains": [
     "sanita.puglia.it",
     "regione.puglia.it",
-    "asl.bari.it"
+    "asl.bari.it",
+    "policlinico.ba.it"
    ],
    "guardia_medica_url": "https://www.sanita.puglia.it/en/web/asl-bari/continuita-assistenziale",
    "pua_url": "https://www.sanita.puglia.it/en/web/asl-bari/-/porta-unica-di-accesso-p-u-a-",
@@ -107,6 +108,46 @@
      "url": "https://www.sanita.puglia.it/en/web/asl-bari/-/assistenza-domiciliare-integrata-adi-e-programmata-adp",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "protesica",
+     "label": "Servizio protesi dell'ASL Bari, Distretto di Bari: informazioni (email ufficioprotesi.dssbari@asl.bari.it)",
+     "number": "080 5843021",
+     "address": "Via Caduti di Via Fani 25, Bari",
+     "hours": "Sportello dal lunedì al venerdì 08:30–11:30, martedì 15:00–17:00; telefono dal lunedì al venerdì 12:30–13:30, martedì 15:30–16:30",
+     "url": "https://www.sanita.puglia.it/en/web/asl-bari/-/servizio-protesi-bari",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "palliative",
+     "label": "Ambulatorio di cure palliative dell'ASL Bari ad Altamura (email ado.murgia@asl.bari.it)",
+     "number": "366 3458912",
+     "address": "Viale Regina Margherita 67, Altamura",
+     "hours": "Telefono dal lunedì al venerdì 10:00–13:00",
+     "url": "https://www.sanita.puglia.it/web/asl-bari/-/ambulatorio-cure-palliative",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Ufficio cartelle cliniche del Policlinico di Bari (email richiesta.cartellaclinica@policlinico.ba.it)",
+     "number": "080 5592955",
+     "address": "Piazza Giulio Cesare 11, Bari",
+     "hours": "Sportello dal lunedì al venerdì 8.00–12.30, martedì e giovedì 15.30–17.30; telefono dal lunedì al venerdì 12.30–13.30",
+     "url": "https://www.sanita.puglia.it/en/web/policlinico-di-bari-ospedale-giovanni-xxiii/richiedi-la-cartella-clinica",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Ufficio cartelle cliniche dell'Ospedale pediatrico Giovanni XXIII (Policlinico di Bari)",
+     "number": "080 5596860",
+     "address": "Via Amendola 207, Bari",
+     "hours": "Dal lunedì al venerdì 8.30–12.30; mercoledì 15.30–17.30",
+     "url": "https://www.sanita.puglia.it/en/web/policlinico-di-bari-ospedale-giovanni-xxiii/richiedi-la-cartella-clinica",
+     "verified": "2026-10-22",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -141,6 +182,22 @@
     {
      "label": "Regione Puglia – 116117 autorizzato (07/08/2026)",
      "url": "https://press.regione.puglia.it/-/in-puglia-sar%C3%A0-attivato-il-116117-il-nuovo-numero-da-chiamare-per-l-assistenza-territoriale.-dal-ministero-%C3%A8-giunta-l-autorizzazione"
+    },
+    {
+     "label": "PugliaSalute (Regione Puglia) – Scelta e revoca del medico",
+     "url": "https://www.sanita.puglia.it/en/scelta-e-revoca-medico"
+    },
+    {
+     "label": "ASL Bari – Servizio protesi Bari",
+     "url": "https://www.sanita.puglia.it/en/web/asl-bari/-/servizio-protesi-bari"
+    },
+    {
+     "label": "ASL Bari – Ambulatorio cure palliative",
+     "url": "https://www.sanita.puglia.it/web/asl-bari/-/ambulatorio-cure-palliative"
+    },
+    {
+     "label": "Policlinico di Bari – Richiedi la cartella clinica",
+     "url": "https://www.sanita.puglia.it/en/web/policlinico-di-bari-ospedale-giovanni-xxiii/richiedi-la-cartella-clinica"
     }
    ],
    "last_verified": "2026-10-21",
@@ -150,8 +207,8 @@
     "Centralino ASL Bari: non trovato nelle pagine copiate. In «phones» c’è il numero verde URP.",
     "PUA e cure domiciliari: ci sono solo Bari città e il Distretto di Altamura; mancano gli altri distretti della provincia.",
     "Non usata la pagina «Ufficio relazioni con il pubblico» di Amministrazione trasparente (solo menu, nessun numero).",
-    "Moduli (22/10/2026): attivo solo invalidità (inps.json). Per liste d'attesa, cartella clinica, medico, cure a casa, cure palliative, ausili e prevenzione le copie delle pagine dell'ASL hanno solo i menu: mancano percorso di tutela (canale, indirizzo, documenti, cosa succede dopo), ufficio scelta e revoca, ufficio protesi, cure palliative, uffici cartelle cliniche degli ospedali. Pagine ufficiali aggiunte in «pagine» per la copia del server; da leggere dopo la copia.",
-    "Percorso di tutela ASL Bari («Avviciniamoci»): dalle pagine copiate vale solo per persone con disabilità grave e malati di tumore, non per tutti. Da leggere la pagina in «pagine» dopo la copia. Cartella clinica: gli ospedali di Bari sono anche del Policlinico (azienda ospedaliera, non dell'ASL): serve l'ufficio cartelle di ogni ospedale, come in Sicilia (official_domains)."
+    "Moduli (22/10/2026, secondo giro): accesi invalidità, medico di famiglia (scelta_medico dalla pagina regionale PugliaSalute «Scelta e Revoca Medico») e cartella clinica (URP e PEC dell'ASL nelle copie). Spenti: liste d'attesa (nessuna pagina copiata dice canale, documenti e risposta del percorso di tutela; a Bari «Avviciniamoci» è una notizia del 2023 per disabilità grave e tumori), assistenza a casa (a Brindisi la pagina ADI è «in fase di aggiornamento» e i PUA non hanno numeri), cure palliative (solo l'ambulatorio di Altamura dell'ASL Bari), ausili (uffici protesi solo per Bari, Foggia e Taranto).",
+    "Percorso di tutela ASL Bari («Avviciniamoci», notizia del 10/10/2023, copiata): due numeri dedicati alla disabilità motoria grave e ai tumori, quando il CUP non trova posto nei tempi; la notizia non dà i numeri né i documenti. Cartella clinica: c'è l'ufficio del Policlinico (azienda ospedaliera) e dell'Ospedaletto Giovanni XXIII; mancano gli uffici degli ospedali dell'ASL (Di Venere, San Paolo, Altamura, Monopoli…)."
    ],
    "pagine": [
     {
@@ -174,7 +231,12 @@
      "tipo": "cartella clinica (Policlinico di Bari)",
      "url": "https://www.sanita.puglia.it/en/web/policlinico-di-bari-ospedale-giovanni-xxiii/richiedi-la-cartella-clinica"
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "In Puglia puoi scegliere o cambiare il medico o il pediatra online, sul portale PugliaSalute della Regione, con SPID, CIE o la tessera sanitaria con il chip attivo (TS-CNS). La scelta nuova toglie in automatico il medico di prima. Online non puoi scegliere un medico dello stesso gruppo del tuo: serve prima il suo sì. Un pediatra che ha già tutti i bambini lo puoi scegliere solo se segue già qualcuno della tua famiglia.",
+    "url": "https://www.sanita.puglia.it/en/scelta-e-revoca-medico",
+    "url_label": "Sito della Regione"
+   }
   },
   {
    "id": "barletta-andria-trani",
@@ -276,6 +338,10 @@
     {
      "label": "ASL BT – ADI Trinitapoli",
      "url": "https://www.sanita.puglia.it/en/web/asl-barletta-andria-trani/-/assistenza-domiciliare-integrata"
+    },
+    {
+     "label": "PugliaSalute (Regione Puglia) – Scelta e revoca del medico",
+     "url": "https://www.sanita.puglia.it/en/scelta-e-revoca-medico"
     }
    ],
    "last_verified": "2026-10-21",
@@ -283,7 +349,18 @@
     "Guardia medica ASL BT: la pagina dà una sola sede (via Vittore Carpaccio, senza città) con «0883.299.200/821»; ho messo 0883 299200. Che sia Andria lo deduco dalla pagina ADI (RSA di via Vittore Carpaccio, Andria): da confermare. Mancano le altre sedi della provincia. Vedi il todo sul 116117 nella voce Bari.",
     "Centralino ASL BT: non trovato nelle pagine copiate. In «phones» c’è il numero verde URP.",
     "Cure domiciliari: la pagina elenca gli uffici dei distretti (Andria, Barletta, Bisceglie, Canosa, ecc.) senza telefoni; c’è il numero solo per l’ADI del Distretto 1 (Trinitapoli).",
-    "Moduli (22/10/2026): attivo solo invalidità (inps.json). Per liste d'attesa, cartella clinica, medico, cure a casa, cure palliative, ausili e prevenzione le copie delle pagine dell'ASL hanno solo i menu: mancano percorso di tutela (canale, indirizzo, documenti, cosa succede dopo), ufficio scelta e revoca, ufficio protesi, cure palliative, uffici cartelle cliniche degli ospedali. Pagine ufficiali aggiunte in «pagine» per la copia del server; da leggere dopo la copia."
+    "Moduli (22/10/2026, secondo giro): accesi invalidità, medico di famiglia (scelta_medico dalla pagina regionale PugliaSalute «Scelta e Revoca Medico») e cartella clinica (URP e PEC dell'ASL nelle copie). Spenti: liste d'attesa (nessuna pagina copiata dice canale, documenti e risposta del percorso di tutela; a Bari «Avviciniamoci» è una notizia del 2023 per disabilità grave e tumori), assistenza a casa (a Brindisi la pagina ADI è «in fase di aggiornamento» e i PUA non hanno numeri), cure palliative (solo l'ambulatorio di Altamura dell'ASL Bari), ausili (uffici protesi solo per Bari, Foggia e Taranto)."
+   ],
+   "scelta_medico": {
+    "how": "In Puglia puoi scegliere o cambiare il medico o il pediatra online, sul portale PugliaSalute della Regione, con SPID, CIE o la tessera sanitaria con il chip attivo (TS-CNS). La scelta nuova toglie in automatico il medico di prima. Online non puoi scegliere un medico dello stesso gruppo del tuo: serve prima il suo sì. Un pediatra che ha già tutti i bambini lo puoi scegliere solo se segue già qualcuno della tua famiglia.",
+    "url": "https://www.sanita.puglia.it/en/scelta-e-revoca-medico",
+    "url_label": "Sito della Regione"
+   },
+   "pagine": [
+    {
+     "tipo": "protesica",
+     "url": "https://www.sanita.puglia.it/en/web/asl-barletta-andria-trani/servizio-di-assistenza-protesica"
+    }
    ]
   },
   {
@@ -380,6 +457,10 @@
     {
      "label": "ASL Brindisi – Porta Unica di Accesso",
      "url": "https://www.sanita.puglia.it/en/web/asl-brindisi/porta-unica-di-accesso-pua"
+    },
+    {
+     "label": "PugliaSalute (Regione Puglia) – Scelta e revoca del medico",
+     "url": "https://www.sanita.puglia.it/en/scelta-e-revoca-medico"
     }
    ],
    "last_verified": "2026-10-21",
@@ -387,7 +468,26 @@
     "Guardia medica ASL Brindisi: nessuna pagina copiata con le sedi e i numeri. Manca (vedi il todo sul 116117 nella voce Bari).",
     "PUA / cure domiciliari: la pagina PUA elenca i 4 distretti (Brindisi, Fasano, Francavilla Fontana, Mesagne) senza numeri; la pagina ADI dice «in fase di aggiornamento». Nessun numero «casa».",
     "Screening: sulla home il numero è 080 2442901 (prefisso di Bari): copiato così, da ricontrollare.",
-    "Moduli (22/10/2026): attivo solo invalidità (inps.json). Per liste d'attesa, cartella clinica, medico, cure a casa, cure palliative, ausili e prevenzione le copie delle pagine dell'ASL hanno solo i menu: mancano percorso di tutela (canale, indirizzo, documenti, cosa succede dopo), ufficio scelta e revoca, ufficio protesi, cure palliative, uffici cartelle cliniche degli ospedali. Pagine ufficiali aggiunte in «pagine» per la copia del server; da leggere dopo la copia."
+    "Moduli (22/10/2026, secondo giro): accesi invalidità, medico di famiglia (scelta_medico dalla pagina regionale PugliaSalute «Scelta e Revoca Medico») e cartella clinica (URP e PEC dell'ASL nelle copie). Spenti: liste d'attesa (nessuna pagina copiata dice canale, documenti e risposta del percorso di tutela; a Bari «Avviciniamoci» è una notizia del 2023 per disabilità grave e tumori), assistenza a casa (a Brindisi la pagina ADI è «in fase di aggiornamento» e i PUA non hanno numeri), cure palliative (solo l'ambulatorio di Altamura dell'ASL Bari), ausili (uffici protesi solo per Bari, Foggia e Taranto)."
+   ],
+   "scelta_medico": {
+    "how": "In Puglia puoi scegliere o cambiare il medico o il pediatra online, sul portale PugliaSalute della Regione, con SPID, CIE o la tessera sanitaria con il chip attivo (TS-CNS). La scelta nuova toglie in automatico il medico di prima. Online non puoi scegliere un medico dello stesso gruppo del tuo: serve prima il suo sì. Un pediatra che ha già tutti i bambini lo puoi scegliere solo se segue già qualcuno della tua famiglia.",
+    "url": "https://www.sanita.puglia.it/en/scelta-e-revoca-medico",
+    "url_label": "Sito della Regione"
+   },
+   "pagine": [
+    {
+     "tipo": "protesica",
+     "url": "https://www.sanita.puglia.it/web/asl-brindisi/servizio-di-assistenza-protesica"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.sanita.puglia.it/web/asl-brindisi/-/servizio-protesi-mesagne"
+    },
+    {
+     "tipo": "cure a casa",
+     "url": "https://www.sanita.puglia.it/en/web/asl-brindisi/-/assistenza-domiciliare-integrata-adi"
+    }
    ]
   },
   {
@@ -404,6 +504,7 @@
    "guardia_medica_url": "https://www.sanita.puglia.it/en/web/asl-foggia/continuita-assistenziale",
    "pua_url": "https://www.sanita.puglia.it/en/web/asl-foggia/-/ufficio-assistenza-domiciliare",
    "emails": [
+    "urp@mailcert.aslfg.it",
     "prenota@aslfg.it"
    ],
    "pec": "direttoregenerale@mailcert.aslfg.it",
@@ -454,6 +555,56 @@
      "url": "https://www.sanita.puglia.it/en/web/asl-foggia/-/ufficio-assistenza-domiciliare",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Ufficio scelta e revoca del medico dell'ASL Foggia a San Severo (email sceltaerevoca.dss51@aslfg.it)",
+     "number": "0882 200541",
+     "address": "Via Teresa Masselli Mascia 28, San Severo",
+     "hours": "Lunedì, mercoledì e venerdì 8.30–12.00",
+     "url": "https://www.sanita.puglia.it/en/web/asl-foggia/-/ufficio-scelta-e-revoca-del-medico",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "protesica",
+     "label": "Servizio di assistenza protesica dell'ASL Foggia a San Severo (email servizioprotesico.sansevero@aslfg.it)",
+     "number": "0882 200335",
+     "address": "Via Teresa Masselli 58, San Severo",
+     "hours": "Martedì, mercoledì e venerdì 9:00–11:00; giovedì 16:30–17:30",
+     "url": "https://www.sanita.puglia.it/web/asl-foggia/-/servizio-di-assistenza-protesica",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "protesica",
+     "label": "Ufficio forniture protesi e ausili dell'ASL Foggia a Torremaggiore",
+     "number": "0882 380427",
+     "address": "Via S. Ciaccia, Torremaggiore",
+     "hours": "Lunedì, martedì e giovedì 9.00–11.00",
+     "url": "https://www.sanita.puglia.it/web/asl-foggia/-/servizio-di-assistenza-protesica",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "protesica",
+     "label": "Ufficio forniture protesi e ausili dell'ASL Foggia ad Apricena",
+     "number": "0882 200782",
+     "address": "Viale 2 Giugno 1, Apricena",
+     "hours": "Dal lunedì al venerdì 08.00–14.00; lunedì e mercoledì 15.00–18.00",
+     "url": "https://www.sanita.puglia.it/web/asl-foggia/-/servizio-di-assistenza-protesica",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "protesica",
+     "label": "Ufficio forniture protesi e ausili dell'ASL Foggia a Lesina",
+     "number": "0882 200851",
+     "address": "Via Fraccacreta 3, Lesina",
+     "hours": "Dal lunedì al venerdì 08.00–13.00",
+     "url": "https://www.sanita.puglia.it/web/asl-foggia/-/servizio-di-assistenza-protesica",
+     "verified": "2026-10-22",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -472,6 +623,18 @@
     {
      "label": "ASL Foggia – Altri contatti (PEC)",
      "url": "https://www.sanita.puglia.it/en/web/asl-foggia/altri-contatti"
+    },
+    {
+     "label": "PugliaSalute (Regione Puglia) – Scelta e revoca del medico",
+     "url": "https://www.sanita.puglia.it/en/scelta-e-revoca-medico"
+    },
+    {
+     "label": "ASL Foggia – Ufficio scelta e revoca del medico",
+     "url": "https://www.sanita.puglia.it/en/web/asl-foggia/-/ufficio-scelta-e-revoca-del-medico"
+    },
+    {
+     "label": "ASL Foggia – Servizio di assistenza protesica",
+     "url": "https://www.sanita.puglia.it/web/asl-foggia/-/servizio-di-assistenza-protesica"
     }
    ],
    "last_verified": "2026-10-21",
@@ -479,7 +642,8 @@
     "Guardia medica ASL Foggia: la pagina «Continuità assistenziale» non dà sedi né numeri. Manca (vedi il todo sul 116117 nella voce Bari).",
     "Centralino ASL Foggia: non trovato (la pagina «Altri contatti» ha solo PEC ed email). In «phones» c’è il numero verde URP.",
     "Screening ASL Foggia: nessun numero nelle pagine copiate (home non copiata).",
-    "Moduli (22/10/2026): attivo solo invalidità (inps.json). Per liste d'attesa, cartella clinica, medico, cure a casa, cure palliative, ausili e prevenzione le copie delle pagine dell'ASL hanno solo i menu: mancano percorso di tutela (canale, indirizzo, documenti, cosa succede dopo), ufficio scelta e revoca, ufficio protesi, cure palliative, uffici cartelle cliniche degli ospedali. Pagine ufficiali aggiunte in «pagine» per la copia del server; da leggere dopo la copia."
+    "Moduli (22/10/2026, secondo giro): accesi invalidità, medico di famiglia (scelta_medico dalla pagina regionale PugliaSalute «Scelta e Revoca Medico») e cartella clinica (URP e PEC dell'ASL nelle copie). Spenti: liste d'attesa (nessuna pagina copiata dice canale, documenti e risposta del percorso di tutela; a Bari «Avviciniamoci» è una notizia del 2023 per disabilità grave e tumori), assistenza a casa (a Brindisi la pagina ADI è «in fase di aggiornamento» e i PUA non hanno numeri), cure palliative (solo l'ambulatorio di Altamura dell'ASL Bari), ausili (uffici protesi solo per Bari, Foggia e Taranto).",
+    "PEC: la pagina «Altri contatti» dice che direttoregenerale@mailcert.aslfg.it è l'unico indirizzo per gli atti dei processi; per le lettere dei cittadini ho messo prima la PEC dell'URP (urp@mailcert.aslfg.it, stessa pagina). Uffici protesi e scelta e revoca: nelle copie ci sono solo San Severo e i comuni vicini; mancano Foggia, Cerignola, Manfredonia e gli altri distretti."
    ],
    "pagine": [
     {
@@ -490,7 +654,12 @@
      "tipo": "protesica",
      "url": "https://www.sanita.puglia.it/web/asl-foggia/-/servizio-di-assistenza-protesica"
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "In Puglia puoi scegliere o cambiare il medico o il pediatra online, sul portale PugliaSalute della Regione, con SPID, CIE o la tessera sanitaria con il chip attivo (TS-CNS). La scelta nuova toglie in automatico il medico di prima. Online non puoi scegliere un medico dello stesso gruppo del tuo: serve prima il suo sì. Un pediatra che ha già tutti i bambini lo puoi scegliere solo se segue già qualcuno della tua famiglia. Oppure vai all'ufficio scelta e revoca del distretto con la tessera sanitaria, il codice fiscale, il documento d'identità e, se hai cambiato comune, il certificato di residenza o la ricevuta del comune.",
+    "url": "https://www.sanita.puglia.it/en/scelta-e-revoca-medico",
+    "url_label": "Sito della Regione"
+   }
   },
   {
    "id": "lecce",
@@ -651,6 +820,10 @@
     {
      "label": "ASL Lecce (vecchio portale sist) – Continuità assistenziale",
      "url": "https://sist.sanita.puglia.it/en/web/asl-lecce/continuita-assistenziale"
+    },
+    {
+     "label": "PugliaSalute (Regione Puglia) – Scelta e revoca del medico",
+     "url": "https://www.sanita.puglia.it/en/scelta-e-revoca-medico"
     }
    ],
    "last_verified": "2026-10-21",
@@ -658,8 +831,27 @@
     "Guardia medica ASL Lecce: le sedi con numero sono solo sul vecchio portale sist.sanita.puglia.it, e la copia ha solo la pagina 1 di 4 (comuni dalla A alla G, manca Lecce città). Ho messo solo le sedi aggiornate dal 2023 in poi (Alezio, Campi Salentina, Carmiano, Collepasso, Copertino); le altre della pagina (Alessano, Andrano, Aradeo, Arnesano, Bagnolo, Botrugno, Calimera, Casarano, Castrignano del Capo, Castro, Corigliano, Corsano, Cutrofiano, Gagliano, Galatina) hanno aggiornamenti dal 2016 al 2021 e non le ho usate. Vedi anche il todo sul 116117 nella voce Bari: Lecce sarà una delle tre centrali.",
     "Centralino e numero verde screening presi dalla home del vecchio portale sist (notizie fino al 2025): da riconfermare sul portale nuovo (la pagina «Altri contatti» del portale nuovo risponde 404).",
     "PUA e ADI: ci sono solo il Distretto di Casarano (PUA) e di Poggiardo (ADI); mancano gli altri distretti.",
-    "Moduli (22/10/2026): attivo solo invalidità (inps.json). Per liste d'attesa, cartella clinica, medico, cure a casa, cure palliative, ausili e prevenzione le copie delle pagine dell'ASL hanno solo i menu: mancano percorso di tutela (canale, indirizzo, documenti, cosa succede dopo), ufficio scelta e revoca, ufficio protesi, cure palliative, uffici cartelle cliniche degli ospedali. Pagine ufficiali aggiunte in «pagine» per la copia del server; da leggere dopo la copia.",
-    "Percorso di tutela ASL Lecce (pagina «Modalità di prenotazione», copia del 21/10/2026): chi non trova posto nei tempi della classe, o non accetta la prima data, chiede agli sportelli CUP l'attivazione dei «Percorsi di Tutela». La pagina non dice documenti, tempi di risposta né indirizzo: mancano per liste d'attesa."
+    "Percorso di tutela ASL Lecce (pagina «Modalità di prenotazione», copia del 21/10/2026): chi non trova posto nei tempi della classe, o non accetta la prima data, chiede agli sportelli CUP l'attivazione dei «Percorsi di Tutela». La pagina non dice documenti, tempi di risposta né indirizzo: mancano per liste d'attesa.",
+    "Moduli (22/10/2026, secondo giro): accesi invalidità, medico di famiglia (scelta_medico dalla pagina regionale PugliaSalute «Scelta e Revoca Medico») e cartella clinica (URP e PEC dell'ASL nelle copie). Spenti: liste d'attesa (nessuna pagina copiata dice canale, documenti e risposta del percorso di tutela; a Bari «Avviciniamoci» è una notizia del 2023 per disabilità grave e tumori), assistenza a casa (a Brindisi la pagina ADI è «in fase di aggiornamento» e i PUA non hanno numeri), cure palliative (solo l'ambulatorio di Altamura dell'ASL Bari), ausili (uffici protesi solo per Bari, Foggia e Taranto)."
+   ],
+   "scelta_medico": {
+    "how": "In Puglia puoi scegliere o cambiare il medico o il pediatra online, sul portale PugliaSalute della Regione, con SPID, CIE o la tessera sanitaria con il chip attivo (TS-CNS). La scelta nuova toglie in automatico il medico di prima. Online non puoi scegliere un medico dello stesso gruppo del tuo: serve prima il suo sì. Un pediatra che ha già tutti i bambini lo puoi scegliere solo se segue già qualcuno della tua famiglia.",
+    "url": "https://www.sanita.puglia.it/en/scelta-e-revoca-medico",
+    "url_label": "Sito della Regione"
+   },
+   "pagine": [
+    {
+     "tipo": "protesica",
+     "url": "https://www.sanita.puglia.it/web/asl-lecce/-/assistenza-protesica-lecce"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.sanita.puglia.it/en/web/asl-lecce/servizio-di-assistenza-protesica"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.sanita.puglia.it/web/asl-lecce/-/assistenza-protesica-maglie"
+    }
    ]
   },
   {
@@ -781,6 +973,45 @@
      "url": "https://www.sanita.puglia.it/en/web/asl-taranto/-/continuita-assistenziale-comunicazione-chiusura-sede-di-c-a-di-sava",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "protesica",
+     "label": "Assistenza protesica dell'ASL Taranto, Distretto unico (email distrettounico.protesi@asl.taranto.it)",
+     "number": "099 7786965",
+     "address": "Via Ancona angolo via Scotti, Taranto",
+     "hours": "Lunedì, giovedì e venerdì 9.00–11.00; martedì 15.00–16.30",
+     "url": "https://aress.sanita.puglia.it/en/web/asl-taranto/servizio-protesi",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "protesica",
+     "label": "Assistenza protesica dell'ASL Taranto a Laterza",
+     "number": "099 8496259",
+     "address": "Via Ugo La Malfa, Laterza",
+     "url": "https://aress.sanita.puglia.it/en/web/asl-taranto/servizio-protesi",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "protesica",
+     "label": "Assistenza protesica e integrativa dell'ASL Taranto a Massafra (email distretto2.protesi@asl.taranto.it)",
+     "number": "099 8850619",
+     "address": "Ospedale «M. Pagliari», viale Magna Grecia, Massafra",
+     "hours": "Lunedì, mercoledì e venerdì 8.30–12.30; martedì 8.30–12.30 e 15.00–17.00",
+     "url": "https://aress.sanita.puglia.it/en/web/asl-taranto/servizio-protesi",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "protesica",
+     "label": "Servizio protesi dell'ASL Taranto a Grottaglie",
+     "number": "099 860409",
+     "address": "Via Tiziano 2/B, Grottaglie",
+     "hours": "Dal lunedì al venerdì 10:30–12:00; martedì 15:00–17:00",
+     "url": "https://aress.sanita.puglia.it/en/web/asl-taranto/servizio-protesi",
+     "verified": "2026-10-22",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -819,6 +1050,18 @@
     {
      "label": "ASL Taranto – ADI",
      "url": "https://www.sanita.puglia.it/en/web/asl-taranto/-/a-d-i-assistenza-domiciliare-integrata-1"
+    },
+    {
+     "label": "PugliaSalute (Regione Puglia) – Scelta e revoca del medico",
+     "url": "https://www.sanita.puglia.it/en/scelta-e-revoca-medico"
+    },
+    {
+     "label": "ASL Taranto – Servizio protesi",
+     "url": "https://aress.sanita.puglia.it/en/web/asl-taranto/servizio-protesi"
+    },
+    {
+     "label": "ASL Taranto – Scelta e revoca del medico di famiglia",
+     "url": "https://www.sanita.puglia.it/en/web/asl-taranto/-/scelta-e-revoca-del-medico-di-famiglia"
     }
    ],
    "last_verified": "2026-10-21",
@@ -827,7 +1070,7 @@
     "Sava: numero in contraddizione (099/972.74.23 nella notizia del 2024, 099 800444 in quella del 02/10/2026) e sede chiusa a turni per carenza di medici: non messa. Avetrana: «sede al momento priva di medici incaricati», non messa.",
     "Lizzano: la notizia del 02/10/2026 dà ancora il vecchio indirizzo (Via Bruno Buozzi 8/A); ho usato quello nuovo della notizia del 29/09/2026 (Via Mazzola 2). Il numero è lo stesso.",
     "Centralino ASL Taranto: non trovato nelle pagine copiate. In «phones» c’è il numero verde URP.",
-    "Moduli (22/10/2026): attivo solo invalidità (inps.json). Per liste d'attesa, cartella clinica, medico, cure a casa, cure palliative, ausili e prevenzione le copie delle pagine dell'ASL hanno solo i menu: mancano percorso di tutela (canale, indirizzo, documenti, cosa succede dopo), ufficio scelta e revoca, ufficio protesi, cure palliative, uffici cartelle cliniche degli ospedali. Pagine ufficiali aggiunte in «pagine» per la copia del server; da leggere dopo la copia."
+    "Moduli (22/10/2026, secondo giro): accesi invalidità, medico di famiglia (scelta_medico dalla pagina regionale PugliaSalute «Scelta e Revoca Medico») e cartella clinica (URP e PEC dell'ASL nelle copie). Spenti: liste d'attesa (nessuna pagina copiata dice canale, documenti e risposta del percorso di tutela; a Bari «Avviciniamoci» è una notizia del 2023 per disabilità grave e tumori), assistenza a casa (a Brindisi la pagina ADI è «in fase di aggiornamento» e i PUA non hanno numeri), cure palliative (solo l'ambulatorio di Altamura dell'ASL Bari), ausili (uffici protesi solo per Bari, Foggia e Taranto)."
    ],
    "pagine": [
     {
@@ -838,7 +1081,12 @@
      "tipo": "protesica",
      "url": "https://aress.sanita.puglia.it/en/web/asl-taranto/servizio-protesi"
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "In Puglia puoi scegliere o cambiare il medico o il pediatra online, sul portale PugliaSalute della Regione, con SPID, CIE o la tessera sanitaria con il chip attivo (TS-CNS). La scelta nuova toglie in automatico il medico di prima. Online non puoi scegliere un medico dello stesso gruppo del tuo: serve prima il suo sì. Un pediatra che ha già tutti i bambini lo puoi scegliere solo se segue già qualcuno della tua famiglia. Oppure vai allo sportello dell'anagrafe sanitaria del distretto, o a un CAF convenzionato con l'ASL.",
+    "url": "https://www.sanita.puglia.it/en/scelta-e-revoca-medico",
+    "url_label": "Sito della Regione"
+   }
   }
  ]
 }

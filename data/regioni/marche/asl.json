@@ -1,7 +1,7 @@
 {
  "region": "Marche",
  "model": "AST (Aziende Sanitarie Territoriali)",
- "_note": "Numeri delle 5 AST delle Marche, una per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 22/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono a Numeri utili; le sedi INPS (inps.json) a Invalidità. Si prenota al CUP regionale (800 098798 da fisso). Nelle Marche il 116117 non è ancora attivo: per la guardia medica solo i numeri trovati nelle copie. «pagine»: indirizzi ufficiali in più che il server deve copiare (tools/copie.mjs).",
+ "_note": "Numeri delle 5 AST delle Marche, una per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 22/10/2026 (docs/regola-numeri.md, proof «pagina»). Servono a Numeri utili, cartella clinica, assistenza a casa e cure palliative; le sedi INPS (inps.json) a Invalidità. Si prenota al CUP regionale (800 098798 da fisso). Nelle Marche il 116117 non è ancora attivo: per la guardia medica solo i numeri trovati nelle copie. «pagine»: indirizzi ufficiali in più che il server deve copiare (tools/copie.mjs).",
  "asl": [
   {
    "id": "pesaro-urbino",
@@ -136,7 +136,8 @@
    "todo": [
     "Guardia medica: la pagina «guardia medica – continuità assistenziale» è copiata senza numeri. Nelle Marche il 116117 non è ancora attivo (c'è solo il progetto della centrale regionale).",
     "PUA: copiato solo quello di Pesaro; mancano Fano e Urbino.",
-    "CUP: le copie dell'AST Pesaro Urbino danno solo il numero verde regionale 800 098 798; i numeri da cellulare (0721 1779301, 071 9998010) sono nelle pagine delle altre AST."
+    "CUP: le copie dell'AST Pesaro Urbino danno solo il numero verde regionale 800 098 798; i numeri da cellulare (0721 1779301, 071 9998010) sono nelle pagine delle altre AST.",
+    "Moduli (22/10/2026): accesi cartella clinica, assistenza a casa e cure palliative (bastano email URP e PEC, nelle copie, e nome_lettera). Spenti: medico di famiglia (nessuna pagina copiata sulla scelta del medico), ausili (la PEC di Fermo non è scritta come PEC in nessuna copia), liste d'attesa (nessuna pagina copiata sul percorso di tutela). Nuove pagine in pagine[] (trovate col motore di ricerca, nessun dato preso da lì): scelta del medico, cartelle cliniche."
    ],
    "pagine": [
     {
@@ -190,6 +191,14 @@
     {
      "tipo": "altro",
      "url": "https://www.astpu.marche.it/organizzazione/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.astpu.marche.it/it/servizi-e-prestazioni/sportelli-front-office/anagrafe-sanitaria"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.astpu.marche.it/it/come-fare-per/richiedere-la-copia-della-cartella-clinica"
     }
    ]
   },
@@ -386,7 +395,8 @@
     "Guardia medica: la pagina della continuità assistenziale dà gli orari (notti 20–8, prefestivi 12–20, sabato e festivi 8–20) ma nessun numero. Nelle Marche il 116117 non è ancora attivo.",
     "PUA: la pagina generale non dà numeri; la notizia sul PUA di Jesi dà solo gli orari. Mancano le cure domiciliari di Jesi, Senigallia e Fabriano.",
     "Azienda Ospedaliero Universitaria delle Marche (Torrette di Ancona): non ancora tra le pagine copiate.",
-    "Nella pagina delle cure domiciliari l'email dell'area Nord è scritta «adinord.ast.an@sanita.amrche.it» (refuso del sito): non messa."
+    "Nella pagina delle cure domiciliari l'email dell'area Nord è scritta «adinord.ast.an@sanita.amrche.it» (refuso del sito): non messa.",
+    "Moduli (22/10/2026): accesi cartella clinica, assistenza a casa e cure palliative (bastano email URP e PEC, nelle copie, e nome_lettera). Spenti: medico di famiglia (nessuna pagina copiata sulla scelta del medico), ausili (la PEC di Fermo non è scritta come PEC in nessuna copia), liste d'attesa (nessuna pagina copiata sul percorso di tutela). Nuove pagine in pagine[] (trovate col motore di ricerca, nessun dato preso da lì): scelta del medico, cartelle cliniche."
    ],
    "pagine": [
     {
@@ -460,6 +470,14 @@
     {
      "tipo": "altro",
      "url": "https://www.astancona.marche.it/organizzazione/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.astancona.marche.it/it/come-fare-per/scegliere-cambiare-un-medico-di-medicina-generale-o-pediatra-di-libera-scelta"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.astancona.marche.it/it/servizi-e-prestazioni/sportelli-front-office/sportello-anagrafe-assistiti"
     }
    ]
   },
@@ -621,7 +639,8 @@
    "todo": [
     "CUP: le copie dell'AST Macerata danno il numero verde e lo 0721 1779301 in una notizia sugli SMS falsi; il terzo numero regionale (071 9998010) è nelle pagine delle altre AST.",
     "Guardia medica: nelle copie nessun numero (una notizia dice che quella di Corridonia è nella Casa della Comunità di viale Italia). Nelle Marche il 116117 non è ancora attivo.",
-    "PUA e ADI: copiati solo Tolentino e Piediripa (pagina del distretto di Macerata); mancano Civitanova Marche e Camerino."
+    "PUA e ADI: copiati solo Tolentino e Piediripa (pagina del distretto di Macerata); mancano Civitanova Marche e Camerino.",
+    "Moduli (22/10/2026): accesi cartella clinica, assistenza a casa e cure palliative (bastano email URP e PEC, nelle copie, e nome_lettera). Spenti: medico di famiglia (nessuna pagina copiata sulla scelta del medico), ausili (la PEC di Fermo non è scritta come PEC in nessuna copia), liste d'attesa (nessuna pagina copiata sul percorso di tutela). Nuove pagine in pagine[] (trovate col motore di ricerca, nessun dato preso da lì): scelta del medico, cartelle cliniche."
    ],
    "pagine": [
     {
@@ -671,6 +690,10 @@
     {
      "tipo": "altro",
      "url": "https://www.astmc.marche.it/contatti"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.astmc.marche.it/it/come-fare-per/richiedere-cartelle-cliniche"
     }
    ]
   },
@@ -854,7 +877,8 @@
    "last_verified": "2026-10-22",
    "todo": [
     "PEC: il piè di pagina del sito dà ast.fermo@emarche.it (lo stesso sistema PEC delle altre AST), ma nessuna copia la chiama «PEC»: non messa in «pec» finché una pagina non lo scrive.",
-    "Guardia medica: la pagina dà per le postazioni il numero del centralino 0734 625111; nelle Marche il 116117 non è ancora attivo."
+    "Guardia medica: la pagina dà per le postazioni il numero del centralino 0734 625111; nelle Marche il 116117 non è ancora attivo.",
+    "Moduli (22/10/2026): accesi cartella clinica, assistenza a casa e cure palliative (bastano email URP e PEC, nelle copie, e nome_lettera). Spenti: medico di famiglia (nessuna pagina copiata sulla scelta del medico), ausili (la PEC di Fermo non è scritta come PEC in nessuna copia), liste d'attesa (nessuna pagina copiata sul percorso di tutela). Nuove pagine in pagine[] (trovate col motore di ricerca, nessun dato preso da lì): scelta del medico, cartelle cliniche, note legali con la PEC."
    ],
    "pagine": [
     {
@@ -908,6 +932,14 @@
     {
      "tipo": "altro",
      "url": "https://www.astfm.marche.it/organizzazione/centro-unico-prenotazioni"
+    },
+    {
+     "tipo": "pec",
+     "url": "https://www.astfm.marche.it/it/note-legali"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/sportelli-front-office/anagrafe-assistiti"
     }
    ]
   },
@@ -1077,7 +1109,8 @@
    "last_verified": "2026-10-22",
    "todo": [
     "Guardia medica: nessuna pagina copiata con i numeri (la pagina «UOC cure primarie» è quasi vuota). Nelle Marche il 116117 non è ancora attivo.",
-    "La pagina CUP dell'AST scrive anche «0721.17793011» (una cifra in più): usato 0721 1779301, come nelle altre pagine."
+    "La pagina CUP dell'AST scrive anche «0721.17793011» (una cifra in più): usato 0721 1779301, come nelle altre pagine.",
+    "Moduli (22/10/2026): accesi cartella clinica, assistenza a casa e cure palliative (bastano email URP e PEC, nelle copie, e nome_lettera). Spenti: medico di famiglia (nessuna pagina copiata sulla scelta del medico), ausili (la PEC di Fermo non è scritta come PEC in nessuna copia), liste d'attesa (nessuna pagina copiata sul percorso di tutela). Nuove pagine in pagine[] (trovate col motore di ricerca, nessun dato preso da lì): scelta del medico, cartelle cliniche."
    ],
    "pagine": [
     {
@@ -1123,6 +1156,14 @@
     {
      "tipo": "altro",
      "url": "https://www.astap.marche.it/organizzazione/centro-unico-prenotazioni"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.astap.marche.it/it/servizi-e-prestazioni/sportelli-front-office/anagrafe-assistiti"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.astap.marche.it/it/servizi-e-prestazioni/sportelli-front-office/ufficio-cartelle-cliniche"
     }
    ]
   }

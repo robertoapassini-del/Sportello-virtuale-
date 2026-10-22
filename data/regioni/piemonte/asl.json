@@ -136,8 +136,8 @@
    "todo": [
     "Il numero 0131 306111 è scritto in fondo al sito accanto alla sede legale, senza la parola «centralino».",
     "Le cure domiciliari non hanno numeri nelle pagine copiate; c'è solo lo sportello unico del Distretto di Valenza.",
-    "Percorso di tutela in Piemonte: prima si prova il CUP regionale (numero verde, portale e app «CUP Piemonte», farmacie); poi ogni ASL ha la sua istanza. Chi rifiuta la prima data proposta nei tempi perde il diritto. Moduli non accesi: Torino ha 4 ASL (Città di Torino, TO3, TO4, TO5) e Cuneo 2 (CN1, CN2) in una sola voce, e la lettera deve andare all'ASL giusta: serve una domanda in più («In quale zona?») nel codice.",
-    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): email urp@aslal.it con ricetta, modulo privacy, documento e tessera."
+    "Moduli (giro 2, 22/10/2026): acceso medico-famiglia (scelta del medico dalla pagina della Regione, «Il mio medico» di Salute Piemonte, uguale per tutte le ASL). Liste d'attesa, cartella clinica, assistenza a casa, cure palliative e ausili restano spenti per tutto il Piemonte finché l'ASL VCO (sito 403 dal server) non ha email o PEC e il percorso di tutela provati, e finché Biella non ha l'indirizzo per il percorso di tutela.",
+    "Percorso di tutela: dalla pagina copiata il 22/10/2026 (email urp@aslal.it). Cartelle cliniche: la pagina «Portale interscambio immagini radiologiche e ritiro cartella clinica online» non è ancora in pagine[]."
    ],
    "pagine": [
     {
@@ -163,8 +163,37 @@
     {
      "tipo": "tutela",
      "url": "https://www.aslal.it/percorso-di-tutela-assistiti-aslal"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.aslal.it/cartella-integrata-c"
     }
-   ]
+   ],
+   "channel": "email",
+   "letter_mode": "letter",
+   "send_to": "urp@aslal.it",
+   "how_to": "Prima prova a prenotare con il CUP Piemonte: numero verde 800 000 500 (tutti i giorni 8–20), app «CUP Piemonte», portale Salute Piemonte o una farmacia. Se non c'è posto nei tempi della tua classe, chiedi il percorso di tutela all'ASL AL: manda una email all'URP (urp@aslal.it) con i fogli qui sotto.",
+   "documents_required": [
+    "Ricetta del medico con la classe di priorità",
+    "Modulo della privacy dell'ASL, firmato",
+    "Documento d'identità (fotocopia)"
+   ],
+   "what_next": [
+    "L'ASL controlla i fogli e cerca di nuovo un posto con il CUP regionale.",
+    "Se rifiuti la prima data che rispetta i tempi della tua classe, perdi la tutela."
+   ],
+   "notes": [
+    "Vale per le visite e gli esami con classe B, D o P."
+   ],
+   "details": [
+    "In Piemonte l'ASL non rimborsa le visite e gli esami che hai già fatto a pagamento da un privato."
+   ],
+   "info_url": "https://www.aslal.it/percorso-di-tutela-assistiti-aslal",
+   "scelta_medico": {
+    "how": "In Piemonte puoi scegliere o cambiare il medico di famiglia o il pediatra online, con il servizio «Il mio medico» di Salute Piemonte. Puoi farlo anche per i figli minorenni. Oppure vai all'ufficio scelta e revoca del distretto della tua ASL. Porta la tessera sanitaria, il codice fiscale e un documento d'identità. Se hai cambiato Comune, porta anche il certificato di residenza.",
+    "url": "https://www.salutepiemonte.it/servizi/il-mio-medico?nid=75",
+    "url_label": "Il mio medico (Salute Piemonte)"
+   }
   },
   {
    "id": "asti",
@@ -298,8 +327,8 @@
    "last_verified": "2026-10-21",
    "todo": [
     "La pagina sulle cure domiciliari dell'ASL Asti non ha numeri (si attivano dal medico di famiglia).",
-    "Percorso di tutela in Piemonte: prima si prova il CUP regionale (numero verde, portale e app «CUP Piemonte», farmacie); poi ogni ASL ha la sua istanza. Chi rifiuta la prima data proposta nei tempi perde il diritto. Moduli non accesi: Torino ha 4 ASL (Città di Torino, TO3, TO4, TO5) e Cuneo 2 (CN1, CN2) in una sola voce, e la lettera deve andare all'ASL giusta: serve una domanda in più («In quale zona?») nel codice.",
-    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): email tempiattesa@asl.at.it o sportelli URP, modulo nella pagina."
+    "Moduli (giro 2, 22/10/2026): acceso medico-famiglia (scelta del medico dalla pagina della Regione, «Il mio medico» di Salute Piemonte, uguale per tutte le ASL). Liste d'attesa, cartella clinica, assistenza a casa, cure palliative e ausili restano spenti per tutto il Piemonte finché l'ASL VCO (sito 403 dal server) non ha email o PEC e il percorso di tutela provati, e finché Biella non ha l'indirizzo per il percorso di tutela.",
+    "Percorso di tutela: dalla pagina copiata il 22/10/2026 (tempiattesa@asl.at.it o sportelli URP). Mancano pagine copiate su cartelle cliniche, cure palliative e protesica."
    ],
    "pagine": [
     {
@@ -314,7 +343,36 @@
      "tipo": "tutela",
      "url": "https://asl.at.it/focus/percorso-di-tutela-dei-cittadini-assistiti/"
     }
-   ]
+   ],
+   "channel": "email",
+   "letter_mode": "letter",
+   "send_to": "tempiattesa@asl.at.it",
+   "how_to": "Prima prova a prenotare con il CUP Piemonte: numero verde 800 000 500 (tutti i giorni 8–20), app «CUP Piemonte», portale Salute Piemonte o una farmacia. Se non c'è posto nei tempi della tua classe, chiedi il percorso di tutela all'ASL AT: manda una email a tempiattesa@asl.at.it, oppure vai a uno sportello URP.",
+   "documents_required": [
+    "Ricetta del medico con la classe di priorità",
+    "Modulo della privacy dell'ASL, firmato",
+    "Documento d'identità (fotocopia)",
+    "Tessera sanitaria (fotocopia)",
+    "Il foglio del CUP o della farmacia che dice che non c'è posto in tempo"
+   ],
+   "what_next": [
+    "L'ASL controlla i fogli e cerca di nuovo un posto con il CUP regionale.",
+    "Poi il CUP ti chiama per darti la data.",
+    "Se rifiuti la prima data che rispetta i tempi della tua classe, perdi la tutela."
+   ],
+   "notes": [
+    "Vale per le visite e gli esami con classe B, D o P."
+   ],
+   "details": [
+    "In Piemonte l'ASL non rimborsa le visite e gli esami che hai già fatto a pagamento da un privato.",
+    "Non bastano una tua dichiarazione o il racconto di una telefonata: serve il foglio del CUP o della farmacia."
+   ],
+   "info_url": "https://asl.at.it/focus/percorso-di-tutela-dei-cittadini-assistiti/",
+   "scelta_medico": {
+    "how": "In Piemonte puoi scegliere o cambiare il medico di famiglia o il pediatra online, con il servizio «Il mio medico» di Salute Piemonte. Puoi farlo anche per i figli minorenni. Oppure vai all'ufficio scelta e revoca del distretto della tua ASL. Porta la tessera sanitaria, il codice fiscale e un documento d'identità. Se hai cambiato Comune, porta anche il certificato di residenza.",
+    "url": "https://www.salutepiemonte.it/servizi/il-mio-medico?nid=75",
+    "url_label": "Il mio medico (Salute Piemonte)"
+   }
   },
   {
    "id": "biella",
@@ -398,6 +456,15 @@
      "address": "Via Maffei 59, Cossato",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "palliative",
+     "label": "Cure palliative dell'ASL Biella (Ospedale degli Infermi, Ponderano): segreteria telefonica; per la visita serve la ricetta del medico",
+     "number": "015 15154533",
+     "url": "https://aslbi.piemonte.it/servizi-territoriali/cure-palliative/",
+     "address": "Via dei Ponderanesi 2, Ponderano (Satellite Ovest, piano -1)",
+     "verified": "2026-10-22",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -430,8 +497,11 @@
    "todo": [
     "La notizia sul 116117 è del 1° luglio 2022 e diceva che i vecchi numeri locali restavano attivi «al momento»: non li ho messi.",
     "La pagina «Prenotare una visita» dell'ASL Biella dà «Pagina non trovata» (404).",
-    "Percorso di tutela in Piemonte: prima si prova il CUP regionale (numero verde, portale e app «CUP Piemonte», farmacie); poi ogni ASL ha la sua istanza. Chi rifiuta la prima data proposta nei tempi perde il diritto. Moduli non accesi: Torino ha 4 ASL (Città di Torino, TO3, TO4, TO5) e Cuneo 2 (CN1, CN2) in una sola voce, e la lettera deve andare all'ASL giusta: serve una domanda in più («In quale zona?») nel codice.",
-    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): c'è un modulo, ma l'estratto non dice l'indirizzo. Cartelle cliniche: cartelle.cliniche@aslbi.piemonte.it. Cure palliative: cure.palliative@aslbi.piemonte.it."
+    "Moduli (giro 2, 22/10/2026): acceso medico-famiglia (scelta del medico dalla pagina della Regione, «Il mio medico» di Salute Piemonte, uguale per tutte le ASL). Liste d'attesa, cartella clinica, assistenza a casa, cure palliative e ausili restano spenti per tutto il Piemonte finché l'ASL VCO (sito 403 dal server) non ha email o PEC e il percorso di tutela provati, e finché Biella non ha l'indirizzo per il percorso di tutela.",
+    "Percorso di tutela: la pagina copiata il 22/10/2026 dice di presentare la domanda «all'ASL di appartenenza» con ricetta, modulo privacy, documento e tessera, ma non dice a quale indirizzo (l'email URP è solo per informazioni): letter_mode e send_to non scritti. Alla fine, se non c'è posto, l'ASL deve fare la visita in libera professione (intramoenia).",
+    "Cartelle cliniche (pagina copiata il 22/10/2026): Ufficio Documentazione Clinica, Ospedale degli Infermi di Ponderano, lunedì–venerdì 8–13 e 13.30–16; email cartelle.cliniche@aslbi.piemonte.it, PEC direzionesanitariapresidio@cert.aslbi.piemonte.it. Nessun numero di telefono sulla pagina: contatto non messo.",
+    "La pagina protesica «ausili-sanitari-tramite-asl» dà 404.",
+    "Percorso di tutela: pagine «tempi di attesa / percorsi di tutela» e modulo di istanza messe in pagine[] (22/10/2026); l'estratto cita tempiattesa@aslbi.piemonte.it solo per informazioni, non usato."
    ],
    "pagine": [
     {
@@ -465,8 +535,25 @@
     {
      "tipo": "palliative",
      "url": "https://aslbi.piemonte.it/prontuario-biellese/cure-palliative-domiciliari/"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://aslbi.piemonte.it/come-fare-per/tempi-di-attesa/percorsi-di-tutela/"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://aslbi.piemonte.it/download/istanza-di-attivazione-del-percorso-di-tutela/"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://aslbi.piemonte.it/come-fare-per/tempi-di-attesa/"
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "In Piemonte puoi scegliere o cambiare il medico di famiglia o il pediatra online, con il servizio «Il mio medico» di Salute Piemonte. Puoi farlo anche per i figli minorenni. Oppure vai all'ufficio scelta e revoca del distretto della tua ASL. Porta la tessera sanitaria, il codice fiscale e un documento d'identità. Se hai cambiato Comune, porta anche il certificato di residenza.",
+    "url": "https://www.salutepiemonte.it/servizi/il-mio-medico?nid=75",
+    "url_label": "Il mio medico (Salute Piemonte)"
+   }
   },
   {
    "id": "cuneo",
@@ -649,9 +736,8 @@
    "last_verified": "2026-10-21",
    "todo": [
     "Le pagine sulle cure domiciliari dell'ASL CN1 non hanno numeri; per l'ASL CN2 non c'è una pagina copiata sulle cure domiciliari.",
-    "Percorso di tutela in Piemonte: prima si prova il CUP regionale (numero verde, portale e app «CUP Piemonte», farmacie); poi ogni ASL ha la sua istanza. Chi rifiuta la prima data proposta nei tempi perde il diritto. Moduli non accesi: Torino ha 4 ASL (Città di Torino, TO3, TO4, TO5) e Cuneo 2 (CN1, CN2) in una sola voce, e la lettera deve andare all'ASL giusta: serve una domanda in più («In quale zona?») nel codice.",
-    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): CN2 urp@aslcn2.it; CN1 agli URP di Cuneo, Savigliano o Mondovì, per email o con un modulo sul sito (pagina non trovata).",
-    "Lettere (docs/regioni.md, sezione 1 «Province e aziende»): in questa provincia ci sono due aziende: ASL CN1 e ASL CN2. Una lettera all'azienda va all'una o all'altra secondo il comune. Prima di accendere cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa o ausili servono le zone in sub_areas: per ognuna id, label (il pulsante «In quale zona?»), comuni, nome_lettera e pec o emails, dalle copie delle pagine ufficiali. Finché mancano, aziende_multiple resta true e tests/coerenza.test.mjs tiene spenti quei moduli."
+    "Moduli (giro 2, 22/10/2026): acceso medico-famiglia (scelta del medico dalla pagina della Regione, «Il mio medico» di Salute Piemonte, uguale per tutte le ASL). Liste d'attesa, cartella clinica, assistenza a casa, cure palliative e ausili restano spenti per tutto il Piemonte finché l'ASL VCO (sito 403 dal server) non ha email o PEC e il percorso di tutela provati, e finché Biella non ha l'indirizzo per il percorso di tutela.",
+    "Zone in sub_areas (22/10/2026): ASL CN1 e ASL CN2 Alba-Bra con PEC e URP dalle copie. Percorso di tutela: CN1 dalla pagina «Prenotare visite/esami» (PEC protocollo@aslcn1.legalmailPA.it o URP di Cuneo, Savigliano, Mondovì), CN2 dalla pagina copiata (urp@aslcn2.it)."
    ],
    "pagine": [
     {
@@ -678,7 +764,83 @@
      "tipo": "tutela",
      "url": "https://www.aslcn2.it/liste-di-attesa/tempi-di-attesa-prestazioni-ambulatoriali-giorno-indice/percorsi-di-tutela-disponibili/"
     }
-   ]
+   ],
+   "sub_areas": [
+    {
+     "id": "cn1",
+     "label": "ASL CN1",
+     "name": "ASL CN1",
+     "nome_lettera": "ASL CN1",
+     "comuni": [
+      "zone di Cuneo, Saluzzo, Savigliano, Fossano, Mondovì e Ceva"
+     ],
+     "pec": "protocollo@aslcn1.legalmailPA.it",
+     "emails": [
+      "urp@aslcn1.it"
+     ],
+     "channel": "pec",
+     "letter_mode": "letter",
+     "send_to": "protocollo@aslcn1.legalmailPA.it",
+     "how_to": "Prima prova a prenotare con il CUP Piemonte: numero verde 800 000 500 (tutti i giorni 8–20), app «CUP Piemonte», portale Salute Piemonte o una farmacia. Se non c'è posto nei tempi della tua classe, chiedi il percorso di tutela all'ASL CN1: manda la richiesta firmata, con la data, alla casella protocollo@aslcn1.legalmailPA.it (è una PEC). Oppure portala all'URP di Cuneo, Savigliano o Mondovì. Sul sito dell'ASL c'è il modulo.",
+     "documents_required": [
+      "Richiesta di attivazione del percorso di tutela, con data e firma",
+      "Ricetta del medico con la classe di priorità",
+      "Documento d'identità (fotocopia)",
+      "Una tua dichiarazione: in quali giorni e da quale telefono hai chiamato il CUP, o a quale sportello sei andato. Servono almeno tre tentativi in giorni diversi"
+     ],
+     "what_next": [
+      "L'ASL controlla i fogli e cerca di nuovo un posto con il CUP regionale.",
+      "Se rifiuti la prima data che rispetta i tempi della tua classe, in qualunque posto del Piemonte, perdi la tutela."
+     ],
+     "notes": [
+      "Vale per le prime visite e i primi esami con classe B, D o P del Piano nazionale delle liste d'attesa."
+     ],
+     "details": [
+      "In Piemonte l'ASL non rimborsa le visite e gli esami che hai già fatto a pagamento da un privato."
+     ],
+     "info_url": "https://www.aslcn1.it/cosa-fare-per/prenotare-visite/esami"
+    },
+    {
+     "id": "cn2",
+     "label": "ASL CN2 Alba-Bra",
+     "name": "ASL CN2",
+     "nome_lettera": "ASL CN2 Alba-Bra",
+     "comuni": [
+      "zone di Alba e Bra (anche Canale, Cortemilia, Santo Stefano Belbo)"
+     ],
+     "pec": "aslcn2@legalmail.it",
+     "emails": [
+      "urp@aslcn2.it"
+     ],
+     "channel": "email",
+     "letter_mode": "letter",
+     "send_to": "urp@aslcn2.it",
+     "how_to": "Prima prova a prenotare con il CUP Piemonte: numero verde 800 000 500 (tutti i giorni 8–20), app «CUP Piemonte», portale Salute Piemonte o una farmacia. Se non c'è posto nei tempi della tua classe, chiedi il percorso di tutela all'ASL CN2: manda una email all'URP (urp@aslcn2.it) con i fogli qui sotto.",
+     "documents_required": [
+      "Ricetta del medico con la classe di priorità",
+      "Documento d'identità (fotocopia)",
+      "Tessera sanitaria (fotocopia)",
+      "Una prova che il CUP non ti ha dato posto in tempo (il foglio del CUP o della farmacia, o la schermata dell'app)"
+     ],
+     "what_next": [
+      "Gli uffici dell'ASL controllano la ricetta e cercano un posto.",
+      "L'URP ti risponde per email, all'indirizzo da cui hai scritto.",
+      "Se rifiuti la prima data che rispetta i tempi della tua classe, perdi la tutela."
+     ],
+     "notes": [
+      "Vale per le visite e gli esami con classe B, D o P."
+     ],
+     "details": [
+      "In Piemonte l'ASL non rimborsa le visite e gli esami che hai già fatto a pagamento da un privato."
+     ],
+     "info_url": "https://www.aslcn2.it/liste-di-attesa/tempi-di-attesa-prestazioni-ambulatoriali-giorno-indice/percorsi-di-tutela-disponibili/"
+    }
+   ],
+   "scelta_medico": {
+    "how": "In Piemonte puoi scegliere o cambiare il medico di famiglia o il pediatra online, con il servizio «Il mio medico» di Salute Piemonte. Puoi farlo anche per i figli minorenni. Oppure vai all'ufficio scelta e revoca del distretto della tua ASL. Porta la tessera sanitaria, il codice fiscale e un documento d'identità. Se hai cambiato Comune, porta anche il certificato di residenza.",
+    "url": "https://www.salutepiemonte.it/servizi/il-mio-medico?nid=75",
+    "url_label": "Il mio medico (Salute Piemonte)"
+   }
   },
   {
    "id": "novara",
@@ -808,8 +970,8 @@
    "todo": [
     "La pagina della guardia medica dell'ASL Novara dà «Pagina non trovata» (404): il 116117 è preso dalla pagina dell'ASL TO3 che dice che vale in tutto il Piemonte; la pagina dell'ASL AL dice che Novara è stata la prima ad attivarlo.",
     "In testa al sito c'è «URP 0321-374111», che è il centralino: ho messo come URP il numero dell'Ufficio Relazioni Esterne.",
-    "Percorso di tutela in Piemonte: prima si prova il CUP regionale (numero verde, portale e app «CUP Piemonte», farmacie); poi ogni ASL ha la sua istanza. Chi rifiuta la prima data proposta nei tempi perde il diritto. Moduli non accesi: Torino ha 4 ASL (Città di Torino, TO3, TO4, TO5) e Cuneo 2 (CN1, CN2) in una sola voce, e la lettera deve andare all'ASL giusta: serve una domanda in più («In quale zona?») nel codice.",
-    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): email ure@asl.novara.it (Ufficio Relazioni Esterne) con ricetta, documento, tessera e dichiarazione che il CUP non ha dato date in tempo."
+    "Moduli (giro 2, 22/10/2026): acceso medico-famiglia (scelta del medico dalla pagina della Regione, «Il mio medico» di Salute Piemonte, uguale per tutte le ASL). Liste d'attesa, cartella clinica, assistenza a casa, cure palliative e ausili restano spenti per tutto il Piemonte finché l'ASL VCO (sito 403 dal server) non ha email o PEC e il percorso di tutela provati, e finché Biella non ha l'indirizzo per il percorso di tutela.",
+    "Percorso di tutela: dalla pagina copiata il 22/10/2026 (ure@asl.novara.it, solo classi B e D). C'è anche un modulo PDF, non copiato. Mancano pagine copiate su cartelle cliniche e cure palliative."
    ],
    "pagine": [
     {
@@ -828,7 +990,33 @@
      "tipo": "tutela",
      "url": "https://www.asl.novara.it/it/come-fare-per/percorso-tutela-cittadini-assistiti-dallasl-novara-nel-rispetto-tempi-attesa-per-prestazioni"
     }
-   ]
+   ],
+   "channel": "email",
+   "letter_mode": "letter",
+   "send_to": "ure@asl.novara.it",
+   "how_to": "Prima prova a prenotare con il CUP Piemonte: numero verde 800 000 500 (tutti i giorni 8–20), app «CUP Piemonte», portale Salute Piemonte o una farmacia. Se non c'è posto nei tempi della tua classe, chiedi il percorso di tutela all'ASL Novara: manda una email all'Ufficio Relazioni Esterne (ure@asl.novara.it) con i fogli qui sotto. Sulla pagina dell'ASL c'è anche un modulo.",
+   "documents_required": [
+    "Ricetta del medico con la classe di priorità",
+    "Documento d'identità (fotocopia)",
+    "Tessera sanitaria (fotocopia)",
+    "Una tua dichiarazione: il CUP non ti ha dato una data in tempo"
+   ],
+   "what_next": [
+    "L'ASL cerca un posto negli ospedali pubblici e nei centri privati convenzionati di tutto il Piemonte, non in altre regioni.",
+    "Se rifiuti la data o scegli un altro giorno o un altro posto, l'ASL chiude la richiesta."
+   ],
+   "notes": [
+    "Vale per le visite e gli esami con classe B o D."
+   ],
+   "details": [
+    "In Piemonte l'ASL non rimborsa le visite e gli esami che hai già fatto a pagamento da un privato."
+   ],
+   "info_url": "https://www.asl.novara.it/it/come-fare-per/percorso-tutela-cittadini-assistiti-dallasl-novara-nel-rispetto-tempi-attesa-per-prestazioni",
+   "scelta_medico": {
+    "how": "In Piemonte puoi scegliere o cambiare il medico di famiglia o il pediatra online, con il servizio «Il mio medico» di Salute Piemonte. Puoi farlo anche per i figli minorenni. Oppure vai all'ufficio scelta e revoca del distretto della tua ASL. Porta la tessera sanitaria, il codice fiscale e un documento d'identità. Se hai cambiato Comune, porta anche il certificato di residenza.",
+    "url": "https://www.salutepiemonte.it/servizi/il-mio-medico?nid=75",
+    "url_label": "Il mio medico (Salute Piemonte)"
+   }
   },
   {
    "id": "torino",
@@ -1227,6 +1415,42 @@
      "url": "https://www.aslcittaditorino.it/numeri-utili/",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "palliative",
+     "label": "Cure palliative dell'ASL TO4 – sede di Ciriè (Hospice di Lanzo Torinese)",
+     "number": "0123 300545",
+     "url": "https://www.aslto4.piemonte.it/cure-palliative",
+     "address": "Via Marchesi della Rocca 30, Lanzo Torinese",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "palliative",
+     "label": "Cure palliative dell'ASL TO4 – sede di Chivasso (Hospice di Foglizzo)",
+     "number": "011 9701891",
+     "url": "https://www.aslto4.piemonte.it/cure-palliative",
+     "address": "Via Olivero 19, Foglizzo",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "palliative",
+     "label": "Cure palliative dell'ASL TO4 – sede di Ivrea (Hospice di Salerano Canavese)",
+     "number": "0125 538809",
+     "url": "https://www.aslto4.piemonte.it/cure-palliative",
+     "address": "Via Sant'Urbano 2, Salerano Canavese",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "palliative",
+     "label": "Cure palliative dell'ASL TO5 (Poliambulatorio di Carignano)",
+     "number": "011 9698976",
+     "url": "https://www.aslto5.piemonte.it/it/struttura/ssvd-unita-cure-palliative",
+     "address": "Via Cara de Canonica 6, Carignano (2° piano)",
+     "verified": "2026-10-22",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -1306,9 +1530,8 @@
     "ASL TO5: i quattro numeri (Chieri, Carmagnola, Moncalieri, Nichelino) sono in testa al sito senza la parola «centralino»; la pagina sulle cure domiciliari è del 2021 e non ha numeri; il PUA non ha numeri nelle copie.",
     "ASL TO4: nelle copie non c'è un numero unico dell'URP, solo i punti di ascolto nelle sedi; i tre numeri di Chivasso/Ciriè/Ivrea sono nella sezione «Contatti» del sito, probabilmente i centralini.",
     "ASL Città di Torino: la pagina PUA non ha numeri; cure domiciliari copiate solo per la zona Nord Est (Circoscrizione 6).",
-    "Percorso di tutela in Piemonte: prima si prova il CUP regionale (numero verde, portale e app «CUP Piemonte», farmacie); poi ogni ASL ha la sua istanza. Chi rifiuta la prima data proposta nei tempi perde il diritto. Moduli non accesi: Torino ha 4 ASL (Città di Torino, TO3, TO4, TO5) e Cuneo 2 (CN1, CN2) in una sola voce, e la lettera deve andare all'ASL giusta: serve una domanda in più («In quale zona?») nel codice.",
-    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): Città di Torino tempiattesa@aslcittaditorino.it (o URP con l'«Allegato 1»), TO3 tempiattesa@aslto3.piemonte.it con modulo, TO4 tempiattesa@aslto4.piemonte.it, TO5 tempidiattesa@aslto5.piemonte.it. Cartelle cliniche: TO5 cartellecliniche@aslto5.piemonte.it o PEC protocollo@cert.aslto5.piemonte.it; TO4 a qualunque Direzione medica di presidio; Città di Torino dice che la copia non è gratis (da confrontare con la prima copia gratuita, regola nazionale). Scelta del medico: servizio regionale «Il mio medico» su Salute Piemonte (SPID, CIE, CNS) o sportello del distretto.",
-    "Lettere (docs/regioni.md, sezione 1 «Province e aziende»): in questa provincia ci sono quattro aziende: ASL Città di Torino, ASL TO3, ASL TO4 e ASL TO5. Una lettera all'azienda va all'una o all'altra secondo il comune. Prima di accendere cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa o ausili servono le zone in sub_areas: per ognuna id, label (il pulsante «In quale zona?»), comuni, nome_lettera e pec o emails, dalle copie delle pagine ufficiali. Finché mancano, aziende_multiple resta true e tests/coerenza.test.mjs tiene spenti quei moduli."
+    "Moduli (giro 2, 22/10/2026): acceso medico-famiglia (scelta del medico dalla pagina della Regione, «Il mio medico» di Salute Piemonte, uguale per tutte le ASL). Liste d'attesa, cartella clinica, assistenza a casa, cure palliative e ausili restano spenti per tutto il Piemonte finché l'ASL VCO (sito 403 dal server) non ha email o PEC e il percorso di tutela provati, e finché Biella non ha l'indirizzo per il percorso di tutela.",
+    "Zone in sub_areas (22/10/2026): ASL Città di Torino, TO3, TO4 e TO5 con PEC, URP e percorso di tutela dalle copie. Cartelle cliniche: TO5 cartellecliniche@aslto5.piemonte.it; TO4 a qualunque Direzione medica di presidio; nessun numero di telefono messo. Città di Torino: la pagina dice che la copia della documentazione si paga (da confrontare con la prima copia gratuita della regola nazionale)."
    ],
    "pagine": [
     {
@@ -1495,7 +1718,151 @@
      "tipo": "medico",
      "url": "https://www.salutepiemonte.it/assistenza/il-mio-medico?nid=86&servizio=75&tipo=sezione"
     }
-   ]
+   ],
+   "sub_areas": [
+    {
+     "id": "citta",
+     "label": "ASL Città di Torino",
+     "name": "ASL Città di Torino",
+     "nome_lettera": "ASL Città di Torino",
+     "comuni": [
+      "Comune di Torino"
+     ],
+     "pec": "protocollo@pec.aslcittaditorino.it",
+     "emails": [
+      "urp@aslcittaditorino.it"
+     ],
+     "channel": "email",
+     "letter_mode": "letter",
+     "send_to": "tempiattesa@aslcittaditorino.it",
+     "how_to": "Prima prova a prenotare con il CUP Piemonte: numero verde 800 000 500 (tutti i giorni 8–20), app «CUP Piemonte», portale Salute Piemonte o una farmacia. Se non c'è posto nei tempi della tua classe, chiedi il percorso di tutela all'ASL Città di Torino: manda una email a tempiattesa@aslcittaditorino.it e scrivi un tuo numero di telefono. Se non puoi mandare l'email, porta i fogli a una sede dell'URP e compila lì il modulo «Allegato 1».",
+     "documents_required": [
+      "Ricetta del medico con la classe di priorità",
+      "Documento d'identità (fotocopia)",
+      "Una prova che il CUP non ti ha dato posto in tempo: per esempio il giorno in cui hai chiamato l'800 000 500, da quale numero e cosa ti hanno detto, o la schermata dell'app CUP Piemonte"
+     ],
+     "what_next": [
+      "L'ASL controlla la ricetta e cerca un posto.",
+      "Se rifiuti la prima data che rispetta i tempi della tua classe, perdi la tutela."
+     ],
+     "notes": [
+      "Vale per le prime visite e i primi esami con classe B, D o P."
+     ],
+     "details": [
+      "In Piemonte l'ASL non rimborsa le visite e gli esami che hai già fatto a pagamento da un privato."
+     ],
+     "info_url": "https://www.aslcittaditorino.it/tempi-di-attesa-prestazioni-specialistiche/"
+    },
+    {
+     "id": "to3",
+     "label": "ASL TO3",
+     "name": "ASL TO3",
+     "nome_lettera": "ASL TO3",
+     "comuni": [
+      "zone di Collegno, Rivoli, Venaria Reale, Orbassano, Pinerolo, Valle di Susa e Val Sangone"
+     ],
+     "pec": "aslto3@cert.aslto3.piemonte.it",
+     "emails": [
+      "urp@aslto3.piemonte.it"
+     ],
+     "channel": "email",
+     "letter_mode": "letter",
+     "send_to": "tempiattesa@aslto3.piemonte.it",
+     "how_to": "Prima prova a prenotare con il CUP Piemonte: numero verde 800 000 500 (tutti i giorni 8–20), app «CUP Piemonte», portale Salute Piemonte o una farmacia. Se non c'è posto nei tempi della tua classe, chiedi il percorso di tutela all'ASL TO3: compila il modulo di richiesta dell'ASL e mandalo per email a tempiattesa@aslto3.piemonte.it.",
+     "documents_required": [
+      "Modulo di richiesta del percorso di tutela dell'ASL, compilato",
+      "Ricetta del medico con la classe di priorità",
+      "Una prova che il CUP non ti ha dato posto in tempo (il foglio del CUP o della farmacia, o la schermata dell'app)"
+     ],
+     "what_next": [
+      "L'ASL controlla la ricetta e cerca un posto.",
+      "Se rifiuti la prima data che rispetta i tempi della tua classe, perdi la tutela."
+     ],
+     "notes": [
+      "Vale per le prime visite e i primi esami con classe B, D o P del Piano nazionale delle liste d'attesa."
+     ],
+     "details": [
+      "In Piemonte l'ASL non rimborsa le visite e gli esami che hai già fatto a pagamento da un privato."
+     ],
+     "info_url": "https://www.aslto3.piemonte.it/servizi/tempi-di-attesa/"
+    },
+    {
+     "id": "to4",
+     "label": "ASL TO4",
+     "name": "ASL TO4",
+     "nome_lettera": "ASL TO4",
+     "comuni": [
+      "zone di Ciriè, Lanzo, Chivasso, San Mauro, Settimo Torinese, Ivrea e Cuorgnè"
+     ],
+     "pec": "direzione.generale@pec.aslto4.piemonte.it",
+     "emails": [
+      "urp@aslto4.piemonte.it"
+     ],
+     "channel": "email",
+     "letter_mode": "letter",
+     "send_to": "tempiattesa@aslto4.piemonte.it",
+     "how_to": "Prima prova a prenotare con il CUP Piemonte: numero verde 800 000 500 (tutti i giorni 8–20), app «CUP Piemonte», portale Salute Piemonte o una farmacia. Se non c'è posto nei tempi della tua classe, chiedi il percorso di tutela all'ASL TO4: manda una email a tempiattesa@aslto4.piemonte.it con il modulo dell'ASL firmato e i fogli qui sotto.",
+     "documents_required": [
+      "Modulo di richiesta dell'ASL, compilato e firmato",
+      "Ricetta del medico (copia)",
+      "Modulo della privacy dell'ASL, firmato",
+      "Documento d'identità (fotocopia)",
+      "Tessera sanitaria (fotocopia)",
+      "Foglio della prenotazione, se ce l'hai"
+     ],
+     "what_next": [
+      "L'ASL controlla i fogli e cerca di nuovo un posto con il CUP regionale.",
+      "Se rifiuti la prima data che rispetta i tempi della tua classe, perdi la tutela."
+     ],
+     "notes": [
+      "Vale per le prime visite e i primi esami con classe B, D o P del Piano nazionale delle liste d'attesa."
+     ],
+     "details": [
+      "In Piemonte l'ASL non rimborsa le visite e gli esami che hai già fatto a pagamento da un privato."
+     ],
+     "info_url": "https://www.aslto4.piemonte.it/percorso-di-tutela-ai-sensi-dellarticolo-3-del-decreto-legislativo-124-del-1998"
+    },
+    {
+     "id": "to5",
+     "label": "ASL TO5",
+     "name": "ASL TO5",
+     "nome_lettera": "ASL TO5",
+     "comuni": [
+      "zone di Chieri, Carmagnola, Moncalieri e Nichelino"
+     ],
+     "pec": "protocollo@cert.aslto5.piemonte.it",
+     "emails": [
+      "urp@aslto5.piemonte.it"
+     ],
+     "channel": "email",
+     "letter_mode": "letter",
+     "send_to": "tempidiattesa@aslto5.piemonte.it",
+     "how_to": "Prima prova a prenotare con il CUP Piemonte: numero verde 800 000 500 (tutti i giorni 8–20), app «CUP Piemonte», portale Salute Piemonte o una farmacia. Se non c'è posto nei tempi della tua classe, chiedi il percorso di tutela all'ASL TO5: manda una email a tempidiattesa@aslto5.piemonte.it con i fogli qui sotto.",
+     "documents_required": [
+      "Ricetta del medico, solo con visite o esami del Piano nazionale delle liste d'attesa",
+      "Modulo della privacy dell'ASL, firmato (presa visione)",
+      "Documento d'identità (fotocopia)",
+      "Tessera sanitaria (fotocopia)",
+      "Una prova che il CUP non ti ha dato posto in tempo (il foglio del CUP o della farmacia, o la schermata dell'app)"
+     ],
+     "what_next": [
+      "L'ASL controlla i fogli e cerca di nuovo un posto con il CUP regionale.",
+      "Se rifiuti la prima data che rispetta i tempi della tua classe, perdi la tutela."
+     ],
+     "notes": [
+      "Vale per le visite e gli esami con classe B, D o P."
+     ],
+     "details": [
+      "In Piemonte l'ASL non rimborsa le visite e gli esami che hai già fatto a pagamento da un privato."
+     ],
+     "info_url": "https://www.aslto5.piemonte.it/index.php/it/trasparenza/percorso-tutela-cittadino-nellambito-rispetto-tempi-attesa-per-prestazioni-specialistiche-art3-dlgs"
+    }
+   ],
+   "scelta_medico": {
+    "how": "In Piemonte puoi scegliere o cambiare il medico di famiglia o il pediatra online, con il servizio «Il mio medico» di Salute Piemonte. Puoi farlo anche per i figli minorenni. Oppure vai all'ufficio scelta e revoca del distretto della tua ASL. Porta la tessera sanitaria, il codice fiscale e un documento d'identità. Se hai cambiato Comune, porta anche il certificato di residenza.",
+    "url": "https://www.salutepiemonte.it/servizi/il-mio-medico?nid=75",
+    "url_label": "Il mio medico (Salute Piemonte)"
+   }
   },
   {
    "id": "verbano-cusio-ossola",
@@ -1543,8 +1910,9 @@
    "last_verified": "2026-10-21",
    "todo": [
     "Il sito dell'ASL VCO (aslvco.it) ha risposto «403 vietato» a tutte le pagine: mancano centralino, URP, cure domiciliari e la pagina sul trasferimento della guardia medica di Verbania. Da ricopiare.",
-    "Percorso di tutela in Piemonte: prima si prova il CUP regionale (numero verde, portale e app «CUP Piemonte», farmacie); poi ogni ASL ha la sua istanza. Chi rifiuta la prima data proposta nei tempi perde il diritto. Moduli non accesi: Torino ha 4 ASL (Città di Torino, TO3, TO4, TO5) e Cuneo 2 (CN1, CN2) in una sola voce, e la lettera deve andare all'ASL giusta: serve una domanda in più («In quale zona?») nel codice.",
-    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): email urp@aslvco.it, oppure ai CUP firmando una richiesta."
+    "Moduli (giro 2, 22/10/2026): acceso medico-famiglia (scelta del medico dalla pagina della Regione, «Il mio medico» di Salute Piemonte, uguale per tutte le ASL). Liste d'attesa, cartella clinica, assistenza a casa, cure palliative e ausili restano spenti per tutto il Piemonte finché l'ASL VCO (sito 403 dal server) non ha email o PEC e il percorso di tutela provati, e finché Biella non ha l'indirizzo per il percorso di tutela.",
+    "Percorso di tutela (estratto del 22/10/2026, non usato): email urp@aslvco.it o ai CUP firmando una richiesta. Il sito aslvco.it risponde 403 anche nella copia del 22/10/2026: servono email URP, PEC e la pagina del percorso di tutela da un'altra pagina ufficiale (Regione Piemonte) o una nuova copia.",
+    "PEC dell'ASL VCO: estratti del 22/10/2026 (Bollettino della Regione Piemonte del 13/11/2025 e pagina «Azienda sanitaria locale VCO» della Regione) dicono protocollo@pec.aslvco.it, sede in via Mazzini 117, Omegna; la pagina della Regione dà come sito aslvco.org. Non usato: le pagine sono in pagine[] per la copia del server."
    ],
    "emails": [],
    "pagine": [
@@ -1579,8 +1947,21 @@
     {
      "tipo": "tutela",
      "url": "https://www.aslvco.it/documenti/tempi-di-attesa/percorsi-di-tutela-per-il-rispetto-tempi-di-attesa/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "http://www.regione.piemonte.it/sanita/cms2/guida-al-servizio-sanitario/strutture-sanitarie/210-azienda-sanitaria-locale-vco"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.regione.piemonte.it/governo/bollettino/abbonati/2025/46/attach/co_azienda%20sanitaria%20locale%20vco_2025-11-03_97606.pdf"
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "In Piemonte puoi scegliere o cambiare il medico di famiglia o il pediatra online, con il servizio «Il mio medico» di Salute Piemonte. Puoi farlo anche per i figli minorenni. Oppure vai all'ufficio scelta e revoca del distretto della tua ASL. Porta la tessera sanitaria, il codice fiscale e un documento d'identità. Se hai cambiato Comune, porta anche il certificato di residenza.",
+    "url": "https://www.salutepiemonte.it/servizi/il-mio-medico?nid=75",
+    "url_label": "Il mio medico (Salute Piemonte)"
+   }
   },
   {
    "id": "vercelli",
@@ -1707,8 +2088,8 @@
    "todo": [
     "La pagina «Richiedere assistenza domiciliare» non ha numeri: manca un numero per le cure domiciliari.",
     "Il numero URP 0163 426410 è elencato senza dire la sede: probabilmente Borgosesia (prefisso 0163).",
-    "Percorso di tutela in Piemonte: prima si prova il CUP regionale (numero verde, portale e app «CUP Piemonte», farmacie); poi ogni ASL ha la sua istanza. Chi rifiuta la prima data proposta nei tempi perde il diritto. Moduli non accesi: Torino ha 4 ASL (Città di Torino, TO3, TO4, TO5) e Cuneo 2 (CN1, CN2) in una sola voce, e la lettera deve andare all'ASL giusta: serve una domanda in più («In quale zona?») nel codice.",
-    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): email urp@aslvc.piemonte.it, PEC, raccomandata o sportello URP, con il modulo «Richiesta percorso tutela». Cartelle cliniche: cartelle.cliniche.vc@aslvc.piemonte.it."
+    "Moduli (giro 2, 22/10/2026): acceso medico-famiglia (scelta del medico dalla pagina della Regione, «Il mio medico» di Salute Piemonte, uguale per tutte le ASL). Liste d'attesa, cartella clinica, assistenza a casa, cure palliative e ausili restano spenti per tutto il Piemonte finché l'ASL VCO (sito 403 dal server) non ha email o PEC e il percorso di tutela provati, e finché Biella non ha l'indirizzo per il percorso di tutela.",
+    "Percorso di tutela: dalla pagina copiata il 22/10/2026 (email URP, PEC, raccomandata o sportello URP). Cartelle cliniche (pagina copiata): Ufficio Cartelle cliniche, lunedì–venerdì 8–16.30, email cartelle.cliniche.vc@aslvc.piemonte.it; nessun numero di telefono sulla pagina."
    ],
    "pagine": [
     {
@@ -1731,7 +2112,34 @@
      "tipo": "palliative",
      "url": "https://aslvc.piemonte.it/organizzazione/direzione-sanitaria/sc-distretto/ssdu-cure-palliative-e-hospice/"
     }
-   ]
+   ],
+   "channel": "email",
+   "letter_mode": "letter",
+   "send_to": "urp@aslvc.piemonte.it",
+   "how_to": "Prima prova a prenotare con il CUP Piemonte: numero verde 800 000 500 (tutti i giorni 8–20), app «CUP Piemonte», portale Salute Piemonte o una farmacia. Se non c'è posto nei tempi della tua classe, chiedi il percorso di tutela all'ASL Vercelli: manda il modulo «Richiesta percorso tutela» per email all'URP (urp@aslvc.piemonte.it) o con la PEC (aslvercelli@pec.aslvc.piemonte.it). Puoi anche mandarlo per raccomandata o portarlo a uno sportello URP.",
+   "documents_required": [
+    "Modulo «Richiesta percorso tutela» dell'ASL, compilato",
+    "Ricetta del medico con la classe di priorità",
+    "Documento d'identità (fotocopia)",
+    "Tessera sanitaria (fotocopia)",
+    "Una prova che il CUP non ti ha dato posto in tempo (il foglio del CUP o della farmacia, o la schermata dell'app)"
+   ],
+   "what_next": [
+    "L'ASL controlla i fogli e cerca di nuovo un posto con il CUP regionale.",
+    "Se rifiuti la prima data che rispetta i tempi della tua classe, perdi la tutela."
+   ],
+   "notes": [
+    "Vale per le prime visite e i primi esami con classe B, D o P."
+   ],
+   "details": [
+    "In Piemonte l'ASL non rimborsa le visite e gli esami che hai già fatto a pagamento da un privato."
+   ],
+   "info_url": "https://aslvc.piemonte.it/come-fare-per/accedere-al-percorso-di-tutela/",
+   "scelta_medico": {
+    "how": "In Piemonte puoi scegliere o cambiare il medico di famiglia o il pediatra online, con il servizio «Il mio medico» di Salute Piemonte. Puoi farlo anche per i figli minorenni. Oppure vai all'ufficio scelta e revoca del distretto della tua ASL. Porta la tessera sanitaria, il codice fiscale e un documento d'identità. Se hai cambiato Comune, porta anche il certificato di residenza.",
+    "url": "https://www.salutepiemonte.it/servizi/il-mio-medico?nid=75",
+    "url_label": "Il mio medico (Salute Piemonte)"
+   }
   }
  ]
 }

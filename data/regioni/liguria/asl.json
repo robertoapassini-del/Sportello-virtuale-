@@ -27,7 +27,7 @@
    "proof": "pagina"
   }
  },
- "_note": "Numeri delle aziende sanitarie della Liguria (dal 2026 ATS Liguria, con 5 aree sociosanitarie) per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Servono a Numeri utili e Medico di famiglia; le sedi INPS (inps.json) a Invalidità. Gli altri moduli aspettano le pagine in «pagine» (todo). Prenotazioni: CUP Liguria 010 5383400. Il 116117 è attivo solo nel Tigullio (dal 16/12/2025); altrove restano i numeri di guardia medica delle aree.",
+ "_note": "Numeri delle aziende sanitarie della Liguria (dal 2026 ATS Liguria, con 5 aree sociosanitarie) per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Servono a Numeri utili, Medico di famiglia e, dalle copie del 22/10/2026, agli altri moduli con le lettere; le sedi INPS (inps.json) a Invalidità. Prenotazioni: CUP Liguria 010 5383400. Il 116117 è attivo solo nel Tigullio (dal 16/12/2025); altrove restano i numeri di guardia medica delle aree.",
  "asl": [
   {
    "id": "genova",
@@ -217,6 +217,79 @@
      "url": "https://www.asl4.liguria.it/prenotazioni-cup/prenotazioni/",
      "verified": "2026-10-22",
      "proof": "pagina"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Copia della cartella clinica – Ospedale Villa Scassi, Sampierdarena (Area 3)",
+     "number": "010 8492542",
+     "url": "https://www.asl3.liguria.it/ospedali/presidio-ospedaliero-unico/richiesta-cartella-clinica.html",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 8:20–12:45",
+     "address": "Piano terra, Padiglione Spina Direzionale"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Copia della cartella clinica – Ospedale Micone, Sestri Ponente (Area 3)",
+     "number": "010 8498420",
+     "url": "https://www.asl3.liguria.it/ospedali/presidio-ospedaliero-unico/richiesta-cartella-clinica.html",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 8:20–12:45",
+     "address": "Padiglione A"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Copia della cartella clinica – Ospedale Gallino, Pontedecimo (Area 3)",
+     "number": "010 8499774",
+     "url": "https://www.asl3.liguria.it/ospedali/presidio-ospedaliero-unico/richiesta-cartella-clinica.html",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 8:20–12:45",
+     "address": "Piano 1, Direzione Medica Ospedaliera"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Copia della cartella clinica – Ospedale La Colletta, Arenzano (Area 3)",
+     "number": "010 8498890",
+     "url": "https://www.asl3.liguria.it/ospedali/presidio-ospedaliero-unico/richiesta-cartella-clinica.html",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 8:20–12:45",
+     "address": "Piano terra, ingresso ospedale"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Cartelle cliniche e referti – Lavagna (Tigullio, Area 4)",
+     "number": "0185 329637",
+     "url": "https://www.asl4.liguria.it/cartelle-cliniche-e-referti/",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Cartelle cliniche e referti – Rapallo (Tigullio, Area 4)",
+     "number": "0185 683530",
+     "url": "https://www.asl4.liguria.it/cartelle-cliniche-e-referti/",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Cartelle cliniche e referti – Sestri Levante (Tigullio, Area 4)",
+     "number": "0185 329143",
+     "url": "https://www.asl4.liguria.it/cartelle-cliniche-e-referti/",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "palliative",
+     "label": "Cure palliative e hospice del Tigullio (Area 4), Chiavari: segnalazioni",
+     "number": "0185 329369",
+     "url": "https://www.asl4.liguria.it/cure-palliative-hospice/",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "address": "Via G.B. Ghio 9, Chiavari"
     }
    ],
    "sources": [
@@ -259,15 +332,36 @@
     {
      "label": "Regione Liguria – Salute Simplex",
      "url": "https://www.regione.liguria.it/homepage-salute/accesso-rapido/salutesimplex-app-portale.html"
+    },
+    {
+     "label": "ATS Liguria – Liste di attesa e percorso di tutela",
+     "url": "https://www.atsliguria.it/amministrazione-trasparente-ats/amministrazione-trasparente/servizi-erogati/liste-attesa.html"
+    },
+    {
+     "label": "ATS Liguria, Area 3 – Liste di attesa, numero verde",
+     "url": "https://www.asl3.liguria.it/amministrazione-trasparente/servizi-erogati/liste-di-attesa.html"
+    },
+    {
+     "label": "ATS Liguria, Area 3 – Richiesta della cartella clinica",
+     "url": "https://www.asl3.liguria.it/ospedali/presidio-ospedaliero-unico/richiesta-cartella-clinica.html"
+    },
+    {
+     "label": "ATS Liguria, Area 4 – Cartelle cliniche e referti",
+     "url": "https://www.asl4.liguria.it/cartelle-cliniche-e-referti/"
+    },
+    {
+     "label": "ATS Liguria, Area 4 – Hospice e cure palliative",
+     "url": "https://www.asl4.liguria.it/cure-palliative-hospice/"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-22",
    "todo": [
     "Il 116117 vale solo per il Tigullio (ex ASL4); per il resto della provincia (area genovese) la guardia medica è 800 893580.",
     "Pagine ASL3 «contatti» e «cure domiciliari sedi» in errore 500, pagina CUP ASL3 non raggiungibile: anagrafe sanitaria non inserita (troppi sportelli diversi).",
-    "Percorso di tutela: nel Tigullio (Area 4) numero verde 800 185 088 e email cup@asl4.liguria.it, letti sulla pagina (22/10/2026). Per l'area genovese (Area 3) l'estratto del motore di ricerca dà 800 185 055, dal lunedì al venerdì 9–15, solo per gli ambulatori ASL3 e gli ospedali Micone, Gallino e La Colletta: non messo finché non c'è la copia della pagina.",
     "Gli ospedali di Genova che non sono dell'ATS (San Martino, Galliera, Gaslini, Evangelico) hanno uffici cartelle loro: pagine ancora da cercare.",
-    "Moduli non ancora accesi (22/10/2026): liste d'attesa (manca il numero del percorso di tutela letto su una pagina per l'area genovese, Savona e La Spezia), cartella clinica (uffici e indirizzi degli ospedali), cure a casa, ausili e cure palliative (numeri degli uffici per distretto). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
+    "Percorso di tutela (copie del 22/10/2026): Area 3 numero verde 800 185055 (lun–ven 9–15, ricette B e D; la pagina dell'Area 3 dice che i contenuti valgono fino al 31/12/2025 e rimanda ad ATS, che a sua volta rimanda alle pagine delle Aree); Area 4 numero verde 800 185088 e cup@asl4.liguria.it. La lettera va alla PEC di ATS Liguria.",
+    "Cartelle cliniche dell'Area 3 (Villa Scassi, Micone, Gallino, La Colletta) e dell'Area 4 (Lavagna, Rapallo, Sestri Levante) dalle copie; mancano gli ospedali non ATS (San Martino, Galliera, Gaslini, Evangelico).",
+    "Protesica e cure palliative dell'Area 3: le pagine in pagine[] danno errore (500, dominio senza www): da sostituire con pagine nuove del sito dell'Area 3."
    ],
    "emails": [],
    "pagine": [
@@ -324,7 +418,26 @@
     "how": "Puoi cambiare medico online: sul sito dell'Area 3 c'è «Cambio medico online». Puoi usare anche Salute Simplex, l'app e il sito della Regione Liguria. Nell'area di Genova puoi andare a uno sportello dell'anagrafe sanitaria. In alcune zone del Tigullio puoi chiedere anche in farmacia.",
     "url": "https://www.asl3.liguria.it/",
     "url_label": "Sito dell'Area 3"
-   }
+   },
+   "channel": "phone",
+   "letter_mode": "fallback",
+   "send_to": "protocollo@pec.atsliguria.it",
+   "how_to": "Prenota con il CUP Liguria (010 5383400), su Prenoto Salute, in farmacia o allo sportello CUP. Per alcune visite ed esami, quando prenoti ti propongono la «lista di tutela»: se accetti, ti richiamano quando c'è un posto. Per le altre, se la ricetta è B o D e non trovi posto in tempo, chiama il numero verde della tua area. Area di Genova (Area 3): 800 185055, dal lunedì al venerdì 9–15. Tigullio (Area 4): 800 185088, dal lunedì al venerdì 9–13 e 14–16, oppure scrivi a cup@asl4.liguria.it. Se non riesci, manda la lettera con la PEC a protocollo@pec.atsliguria.it.",
+   "documents_required": [
+    "Ricetta",
+    "Foglio della prenotazione (se ce l'hai)"
+   ],
+   "what_next": [
+    "Un operatore ti richiama per proporti un appuntamento nei tempi della ricetta, anche in un'altra struttura dell'area di Genova o del Tigullio.",
+    "Se rifiuti la prima data giusta che ti propongono, la ricetta perde la priorità: dopo puoi prenotare solo come «P».",
+    "I giorni si contano da quando chiami il numero verde, non dalla data della ricetta."
+   ],
+   "notes": [],
+   "details": [
+    "In Liguria, se sulla ricetta non c'è la classe di priorità, vale la classe P.",
+    "Le visite e gli esami con priorità U non passano dal CUP: li organizza il medico che li prescrive."
+   ],
+   "info_url": "https://www.asl3.liguria.it/amministrazione-trasparente/servizi-erogati/liste-di-attesa.html"
   },
   {
    "id": "imperia",
@@ -438,6 +551,24 @@
      "url": "https://www.asl1.liguria.it/prenotazioni-e-ticket/numero-verde-gratuito-riduzione-tempi-attesa.html",
      "verified": "2026-10-22",
      "proof": "pagina"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Cartelle cliniche – Ospedale di Imperia (Area 1)",
+     "number": "0183 537264",
+     "url": "https://www.asl1.liguria.it/servizi-dalla-a-alla-z/409-copia-cartella-clinica-certificato-di-ricovero-degenza.html",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 8:30–13:00"
+    },
+    {
+     "topic": "protesica",
+     "label": "Protesica dell'Area 1 (Imperia): protesi e ausili",
+     "number": "0183 537816",
+     "url": "https://www.asl1.liguria.it/dipartimenti/34-dipartimenti-area-socio-sanitaria/36-dipartimento-cure-primarie/545-medicina-convenzionata-e-protesica.html",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 10–13"
     }
    ],
    "sources": [
@@ -476,6 +607,14 @@
     {
      "label": "Regione Liguria – Salute Simplex",
      "url": "https://www.regione.liguria.it/homepage-salute/accesso-rapido/salutesimplex-app-portale.html"
+    },
+    {
+     "label": "ATS Liguria, Area 1 – Uffici cartelle cliniche",
+     "url": "https://www.asl1.liguria.it/servizi-dalla-a-alla-z/409-copia-cartella-clinica-certificato-di-ricovero-degenza.html"
+    },
+    {
+     "label": "ATS Liguria, Area 1 – Protesica e medicina convenzionata",
+     "url": "https://www.asl1.liguria.it/dipartimenti/34-dipartimenti-area-socio-sanitaria/36-dipartimento-cure-primarie/545-medicina-convenzionata-e-protesica.html"
     }
    ],
    "last_verified": "2026-10-22",
@@ -485,8 +624,8 @@
     "CUP: numero unico regionale CUP Liguria 010 5383400 (dal 1° agosto 2024, sostituisce 800 098543), da fisso e cellulare, lun–ven 8–18; online prenotosalute.regione.liguria.it, oltre a sportelli, farmacie e medici. Ogni area ha anche un numero verde per il «percorso di tutela» (chi non trova posto nei tempi della ricetta).",
     "Area 1: nessuna pagina PEC (errore 500); manca una pagina con il numero dell'anagrafe sanitaria/scelta del medico.",
     "Percorso di tutela dell'Area 1 letto sulla pagina (22/10/2026): numero verde 800 18 60 44, poi ti richiamano. La pagina non dice un indirizzo scritto: la lettera va alla PEC generale di ATS Liguria (scelta del sito, come a Catania).",
-    "Cure palliative dell'Area 1: pagina ufficiale non trovata, da cercare.",
-    "Moduli non ancora accesi (22/10/2026): liste d'attesa (manca il numero del percorso di tutela letto su una pagina per l'area genovese, Savona e La Spezia), cartella clinica (uffici e indirizzi degli ospedali), cure a casa, ausili e cure palliative (numeri degli uffici per distretto). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
+    "Cartelle cliniche: Imperia 0183 537264 (copia del 22/10/2026). Il numero di Sanremo sulla pagina è scritto «0184 53633» (sembra incompleto): non messo.",
+    "Cure palliative dell'Area 1: pagina ufficiale non trovata, da cercare."
    ],
    "emails": [],
    "pagine": [
@@ -631,6 +770,43 @@
      "url": "https://www.asl5.liguria.it/PerilCittadino/Serviziterritoriali/CurePrimarieeAttivit%C3%A0Distrettuali/Prestazioniinfermieristichedomiciliari.aspx",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Recupero prestazioni dell'Area 5 (La Spezia): numero verde se il CUP non ti dà la visita o l'esame nei tempi della ricetta B o D",
+     "number": "800 185466",
+     "url": "https://www.asl5.liguria.it/Home/RECUPEROPRESTAZIONI.aspx",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 8:30–12:30"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Cartelle cliniche – Ospedale Sant'Andrea della Spezia",
+     "number": "0187 533396",
+     "url": "https://www.asl5.liguria.it/PerilCittadino/RitirorefertiCartellecliniche.aspx",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Ufficio dal lunedì al venerdì 10:00–12:00, il martedì anche 14:30–16:30"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Cartelle cliniche – Ospedale San Bartolomeo di Sarzana",
+     "number": "0187 604587",
+     "url": "https://www.asl5.liguria.it/PerilCittadino/RitirorefertiCartellecliniche.aspx",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Ufficio dal lunedì al venerdì 10:00–12:00, il martedì anche 14:30–16:30",
+     "address": "Via Cisa, loc. Santa Caterina, Sarzana"
+    },
+    {
+     "topic": "palliative",
+     "label": "Cure palliative dell'Area 5 (La Spezia): triage infermieristico",
+     "number": "0187 604860",
+     "url": "https://www.asl5.liguria.it/PerilCittadino/Serviziterritoriali/CurePrimarieeAttivit%C3%A0Distrettuali/CurePalliative.aspx",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Dal lunedì al sabato 7:30–19:30"
     }
    ],
    "sources": [
@@ -653,14 +829,29 @@
     {
      "label": "ATS Liguria, Area 5 – Orari CUP e anagrafe (cambio del medico)",
      "url": "https://www.asl5.liguria.it/Home/ORARICUPANAGRAFEBRUGNATO.aspx"
+    },
+    {
+     "label": "ATS Liguria – Liste di attesa e percorso di tutela",
+     "url": "https://www.atsliguria.it/amministrazione-trasparente-ats/amministrazione-trasparente/servizi-erogati/liste-attesa.html"
+    },
+    {
+     "label": "ATS Liguria, Area 5 – Recupero prestazioni",
+     "url": "https://www.asl5.liguria.it/Home/RECUPEROPRESTAZIONI.aspx"
+    },
+    {
+     "label": "ATS Liguria, Area 5 – Ritiro referti e cartelle cliniche",
+     "url": "https://www.asl5.liguria.it/PerilCittadino/RitirorefertiCartellecliniche.aspx"
+    },
+    {
+     "label": "ATS Liguria, Area 5 – Cure palliative",
+     "url": "https://www.asl5.liguria.it/PerilCittadino/Serviziterritoriali/CurePrimarieeAttivit%C3%A0Distrettuali/CurePalliative.aspx"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-22",
    "todo": [
-    "Area 5: mancano numero del percorso di tutela (tempi d'attesa) e PUA unico; cure domiciliari solo per alcune zone.",
     "Scelta del medico: letta nella copia del 21/10/2026 della pagina «Orari CUP e anagrafe Brugnato» (poliss.regione.liguria.it con SPID o CNS, farmacie, email anagrafe.lev@asl5.liguria.it solo per il distretto 17, sportelli PUA Anagrafe). La pagina è un avviso: ricontrollare quando il server la copia di nuovo.",
-    "Percorso di tutela dell'Area 5: l'estratto del motore di ricerca dà il numero verde 800 185 466 (lunedì–venerdì 8:30–12:30) e recupero.prestazioni@asl5.liguria.it: non messi finché non c'è la copia della pagina «Recupero prestazioni».",
-    "Moduli non ancora accesi (22/10/2026): liste d'attesa (manca il numero del percorso di tutela letto su una pagina per l'area genovese, Savona e La Spezia), cartella clinica (uffici e indirizzi degli ospedali), cure a casa, ausili e cure palliative (numeri degli uffici per distretto). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
+    "Percorso di tutela (copia del 22/10/2026 della pagina «Recupero prestazioni»): numero verde 800 185466, lun–ven 8:30–12:30, email recupero.prestazioni@asl5.liguria.it (la lettera va lì). La stessa pagina dà ancora la vecchia PEC protocollo.generale@pec.asl5.liguria.it: non usata, la PEC è quella di ATS Liguria.",
+    "Protesica dell'Area 5: la pagina dà solo email (protesica.sp@ e protesicasz@asl5.liguria.it), nessun telefono."
    ],
    "pagine": [
     {
@@ -700,7 +891,26 @@
     "how": "Puoi cambiare medico online su poliss.regione.liguria.it, con SPID o CNS. Puoi andare anche in una farmacia convenzionata. Oppure vai a uno sportello PUA Anagrafe del distretto.",
     "url": "https://www.asl5.liguria.it/Home/ORARICUPANAGRAFEBRUGNATO.aspx",
     "url_label": "Sito dell'Area 5"
-   }
+   },
+   "channel": "phone",
+   "letter_mode": "email",
+   "send_to": "recupero.prestazioni@asl5.liguria.it",
+   "how_to": "Prenota con il CUP. Se la data che ti danno non rispetta i tempi della priorità B o D, contatta subito lo sportello «Recupero prestazioni» dell'Area 5. Chiama il numero verde 800 185466, dal lunedì al venerdì 8:30–12:30, oppure scrivi a recupero.prestazioni@asl5.liguria.it. Non aspettare che passino i giorni della priorità.",
+   "documents_required": [
+    "Ricetta",
+    "Foglio della prenotazione CUP",
+    "Documento d'identità (fotocopia o foto)"
+   ],
+   "what_next": [
+    "Lo sportello controlla perché il CUP non ti ha dato un posto in tempo e cerca una data giusta.",
+    "Se rifiuti la prima data che ti propongono, la ricetta perde la priorità."
+   ],
+   "notes": [],
+   "details": [
+    "Lo sportello «Recupero prestazioni» non prenota: serve se hai già una prenotazione B o D fuori dai tempi.",
+    "Se sulla ricetta non c'è la classe di priorità, vale la classe P."
+   ],
+   "info_url": "https://www.asl5.liguria.it/Home/RECUPEROPRESTAZIONI.aspx"
   },
   {
    "id": "savona",
@@ -826,6 +1036,15 @@
      "url": "https://www.asl2.liguria.it/territorio/distretto-savonese/assistenza-domiciliare-distretto-savonese/cure-palliative-distretto-savonese.html",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Percorso di tutela dell'Area 2 (Savona): numero verde se il CUP non ti dà la visita o l'esame nei tempi della ricetta",
+     "number": "800 183422",
+     "url": "https://www.asl2.liguria.it/amministrazione-trasparente/servizi-erogati/liste-di-attesa.html",
+     "verified": "2026-10-22",
+     "proof": "pagina",
+     "hours": "Dal lunedì al venerdì 9:00–13:00 (non nei festivi)"
     }
    ],
    "sources": [
@@ -852,14 +1071,20 @@
     {
      "label": "Regione Liguria – Salute Simplex",
      "url": "https://www.regione.liguria.it/homepage-salute/accesso-rapido/salutesimplex-app-portale.html"
+    },
+    {
+     "label": "ATS Liguria – Liste di attesa e percorso di tutela",
+     "url": "https://www.atsliguria.it/amministrazione-trasparente-ats/amministrazione-trasparente/servizi-erogati/liste-attesa.html"
+    },
+    {
+     "label": "ATS Liguria, Area 2 – Liste di attesa",
+     "url": "https://www.asl2.liguria.it/amministrazione-trasparente/servizi-erogati/liste-di-attesa.html"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-22",
    "todo": [
-    "Area 2: manca un numero sicuro per il percorso di tutela (tempi d'attesa) e per l'anagrafe sanitaria; PUA di Finale Ligure scritto in modo anomalo sulla pagina regionale (019 6815 2246), non inserito.",
-    "Percorso di tutela dell'Area 2: l'estratto del motore di ricerca dà il numero verde 800 183 422 per le ricette B, D e P che il CUP non riesce a dare in tempo: non messo finché non c'è la copia della pagina «Liste di attesa».",
-    "Cartella clinica dell'Area 2: c'è solo il modulo (PDF) negli estratti; pagina da cercare.",
-    "Moduli non ancora accesi (22/10/2026): liste d'attesa (manca il numero del percorso di tutela letto su una pagina per l'area genovese, Savona e La Spezia), cartella clinica (uffici e indirizzi degli ospedali), cure a casa, ausili e cure palliative (numeri degli uffici per distretto). Le pagine da leggere sono in «pagine»: il server le copia dopo l'unione."
+    "Percorso di tutela (copia del 22/10/2026 della pagina «Liste di attesa» dell'Area 2): numero verde 800 183422, lun–ven 9–13, per ricette B, D e P non comprese nella lista di tutela automatica.",
+    "Cartella clinica dell'Area 2: nessuna pagina copiata; protesica: la pagina rimanda alle pagine dei distretti (Albenganese, Finalese, Bormide, Savonese) da aggiungere in pagine[]. Manca il numero dell'anagrafe sanitaria."
    ],
    "emails": [],
    "pagine": [
@@ -896,7 +1121,25 @@
     "how": "Puoi cambiare medico online: sul sito dell'Area 2 c'è «Cambio medico online». Puoi usare anche Salute Simplex, l'app e il sito della Regione Liguria. Oppure vai a uno sportello polifunzionale (CUP): lì fanno anche la scelta e il cambio del medico.",
     "url": "https://www.asl2.liguria.it/",
     "url_label": "Sito dell'Area 2"
-   }
+   },
+   "channel": "phone",
+   "letter_mode": "fallback",
+   "send_to": "protocollo@pec.atsliguria.it",
+   "how_to": "Prenota con il CUP Liguria (010 5383400), su Prenoto Salute, in farmacia o allo sportello CUP. Per alcune visite ed esami con priorità B o D, quando prenoti puoi chiedere di entrare nella lista di attesa del percorso di tutela: ti richiamano quando c'è un posto. Per le altre ricette B, D o P, se non trovi posto in tempo chiama il numero verde dell'Area 2: 800 183422, dal lunedì al venerdì 9–13 (non nei festivi). Tieni pronti i dati della ricetta e un numero di telefono giusto. Se non riesci, manda la lettera con la PEC a protocollo@pec.atsliguria.it.",
+   "documents_required": [
+    "Ricetta",
+    "Foglio della prenotazione (se ce l'hai)"
+   ],
+   "what_next": [
+    "Ti richiamano quando c'è un appuntamento: non serve chiamare di nuovo.",
+    "Intanto guarda ogni tanto al CUP, in farmacia o su Prenoto Salute se si libera un posto prima, anche in un'altra area della Liguria."
+   ],
+   "notes": [],
+   "details": [
+    "Per le prime visite l'ambito di garanzia è il Ponente: Area 1 (Imperia) e Area 2 (Savona).",
+    "Se sulla ricetta non c'è la priorità, vale la classe P."
+   ],
+   "info_url": "https://www.asl2.liguria.it/amministrazione-trasparente/servizi-erogati/liste-di-attesa.html"
   }
  ]
 }

@@ -39,6 +39,15 @@ const indiceRegioni = JSON.parse(fs.readFileSync(path.join(SITE, 'data/regioni/i
 // Dal 22/10/2026 sono attive tutte: se nessuna è non attiva, nel browser (page.route) si aggiunge all'indice una
 // regione finta non attiva, così la schermata «La tua regione non c'è ancora» resta provata qualunque siano i dati.
 const FINTA = { id: 'prova-inattiva', name: 'Regione di prova', attiva: false, asl_label: 'ASL' };
+// «ASP» non è siciliano dove la regione chiama così le sue aziende: la sigla della regione è ASP (Calabria) o
+// un'azienda ha «ASP» nel nome ufficiale («ASP Basilicata»). Si legge dai dati, non da un elenco scritto qui.
+const aspNellaRegione = (id) => {
+  const r = indiceRegioni.find((x) => x.id === id) || {};
+  if (r.asl_label === 'ASP') return true;
+  const f = path.join(SITE, `data/regioni/${id}/${(r.files && r.files.asl) || 'asl'}.json`);
+  if (!fs.existsSync(f)) return false;
+  return (JSON.parse(fs.readFileSync(f, 'utf8')).asl || []).some((a) => /\bASP\b/.test(`${a.name || ''} ${a.nome_lettera || ''}`));
+};
 const INATTIVA = (indiceRegioni.find((r) => !r.attiva) || FINTA).id;
 const LOMBARDIA = indiceRegioni.find((r) => r.id === 'lombardia') || { moduli: [] };
 // Le pagine delle aree («Visite ed esami»…): il riquadro «Chi può aiutarti» deve aspettare la regione (in Sicilia «ASP»).
@@ -68,7 +77,7 @@ async function controlla(page, dove, regione, problemi) {
   if (strano) problemi.push(`${dove}: testo strano «${strano[0]}»`);
   if (await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1)) problemi.push(`${dove}: più larga dello schermo`);
   // fonti.html è l'elenco delle fonti di tutte le regioni (anche Calabria e Basilicata hanno le ASP): lì i nomi vanno bene.
-  if (regione !== 'sicilia' && !dove.includes('/fonti.html')) for (const f of await page.evaluate(fraseSiciliane, (indiceRegioni.find((r) => r.id === regione) || {}).asl_label === 'ASP')) problemi.push(`${dove}: frase siciliana senza «Sicilia»: «${f}»`);
+  if (regione !== 'sicilia' && !dove.includes('/fonti.html')) for (const f of await page.evaluate(fraseSiciliane, aspNellaRegione(regione))) problemi.push(`${dove}: frase siciliana senza «Sicilia»: «${f}»`);
 }
 
 // Accessibilità (audit del 21/10/2026): pulsanti e link da toccare alti almeno 44 px; con il testo
@@ -428,7 +437,7 @@ async function erroriCollegati(page, dove, problemi) {
         if (!sic) {
           const s = t.testo.match(/.{0,40}\bSicili.{0,30}/);
           if (s) problemi.push(`${dove}: «Sicilia» fuori dalla Sicilia: «${s[0]}»`);
-          const asp = r.asl_label !== 'ASP' && t.testo.match(/.{0,40}\bASP\b.{0,30}/);
+          const asp = !aspNellaRegione(r.id) && t.testo.match(/.{0,40}\bASP\b.{0,30}/);
           if (asp) problemi.push(`${dove}: «ASP» fuori dalla Sicilia: «${asp[0]}»`);
         }
         for (const x of t.mail.flatMap((y) => y.split(','))) if (!permesse.has(x.toLowerCase())) problemi.push(`${dove}: email ${x} che non è nei dati della regione`);
@@ -501,8 +510,11 @@ async function erroriCollegati(page, dove, problemi) {
       for (const m of r.moduli.filter((x) => x !== 'numeri-utili')) {
         const a = asl[giro++ % asl.length];
         const zone = (a.sub_areas || []).filter((z) => z && typeof z === 'object' && z.id);
-        await percorri({ r, a, m, zona: zone[0] || null });
-        if (percorsi[m]) await percorri({ r, a, m, zona: zone[zone.length - 1] || null, finoAllaLettera: true });
+        // La domanda «In quale zona?» la fanno solo i moduli con una lettera all'azienda, e solo con due zone o più
+        // (con una zona sola si usa quella: js/flow.js, provinceChoice). L'invalidità scrive all'INPS: nessuna zona.
+        const chiedeZona = zone.length > 1 && ['cartella-clinica', ...LETTERA_AZIENDA].includes(m);
+        await percorri({ r, a, m, zona: zone[0] || null, chiedeZona });
+        if (percorsi[m]) await percorri({ r, a, m, zona: zone[zone.length - 1] || null, finoAllaLettera: true, chiedeZona });
       }
     }
 

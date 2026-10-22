@@ -150,6 +150,33 @@
      "address": "Via Michetti 86, Vasto",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Scelta e revoca del medico – ASL 2, Casa della comunità di Chieti (ufficio iscrizione al servizio sanitario)",
+     "number": "0871 357260",
+     "url": "https://www.asl2abruzzo.it/strutture/altre-strutture-del-territorio/sede-di-chieti/",
+     "hours": "Sportello lunedì, mercoledì e venerdì 8.30–12.30",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Scelta e revoca del medico – ASL 2, Casa della comunità di Lanciano (ufficio iscrizione al servizio sanitario)",
+     "number": "0872 706953",
+     "url": "https://www.asl2abruzzo.it/strutture/altre-strutture-del-territorio/sede-di-lanciano/",
+     "hours": "Dal lunedì al venerdì 8–12; martedì e giovedì anche 14.30–16",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Scelta e revoca del medico ed esenzione ticket per reddito – ASL 2, Casa della comunità di Vasto",
+     "number": "0873 308729",
+     "url": "https://www.asl2abruzzo.it/strutture/altre-strutture-del-territorio/sede-di-vasto/",
+     "hours": "Dal lunedì al venerdì 8.30–12.30",
+     "verified": "2026-10-22",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -192,21 +219,31 @@
     {
      "label": "Portale Sanità Regione Abruzzo – Liste di attesa e CUP",
      "url": "https://sanita.regione.abruzzo.it/canale-assistenza-territoriale/cup"
+    },
+    {
+     "label": "Regione Abruzzo – Servizi online (scelta e cambio del medico)",
+     "url": "https://sanita.regione.abruzzo.it/servizi-online"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-22",
    "todo": [
     "La pagina URP su info.asl2abruzzo.it non si è potuta copiare (403); ho usato la pagina «Urp e privacy» del sito principale.",
     "Guardia medica: le 23 postazioni ASL 2 non hanno più un numero proprio, si accede col 116117.",
     "Cure domiciliari: la pagina dell'ASL 2 ha anche i numeri delle sedi distrettuali (Francavilla, Ortona, Guardiagrele, Atessa, San Salvo, Gissi…): se servono, aggiungerli.",
-    "Percorso di tutela (liste d'attesa): la pagina dell'ASL 2 (copia del 21/10/2026) dice solo di chiedere all'URP la procedura. Manca come e dove si manda la richiesta."
+    "Scelta del medico (scelta_medico): dalla pagina «Servizi online» del Portale Sanità della Regione Abruzzo (copia del 22/10/2026): scelta e cambio del medico o del pediatra online, con SPID o utenza regionale, per i maggiorenni iscritti ad «Abruzzo Sanità online»; delega per minori o non autosufficienti. Mancano i numeri degli sportelli scelta e revoca dei distretti di Ortona, Francavilla, Guardiagrele, Atessa e delle altre sedi.",
+    "Percorso di tutela (liste d'attesa): la pagina «Liste di attesa» dell'ASL 2 (copia del 22/10/2026, aggiornata al 23/09/2026) dice solo di chiedere all'URP la procedura. Manca come e dove si manda la richiesta."
    ],
    "pagine": [
     {
      "tipo": "liste-attesa",
      "url": "https://www.asl2abruzzo.it/organizzazione/funzioni-di-staff/servizio-governo-delle-liste-dattesa-e-dei-sistemi-di-prenotazione/liste-di-attesa/"
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "Puoi farlo online, nel portale «Abruzzo Sanità online» della Regione, con SPID o con l'utenza regionale: c'è il servizio «Il mio medico di fiducia». Per il pediatra di un figlio minorenne usa la «delega ai servizi online». Se non puoi farlo online, vai all'ufficio scelta e revoca della Casa della comunità o manda il modulo per email, con la copia del documento e della tessera sanitaria.",
+    "url": "https://sanita.regione.abruzzo.it/servizi-online",
+    "url_label": "Sito della Regione"
+   }
   },
   {
    "id": "laquila",
@@ -332,23 +369,33 @@
     {
      "label": "Portale Sanità Regione Abruzzo – Liste di attesa e CUP",
      "url": "https://sanita.regione.abruzzo.it/canale-assistenza-territoriale/cup"
+    },
+    {
+     "label": "Regione Abruzzo – Servizi online (scelta e cambio del medico)",
+     "url": "https://sanita.regione.abruzzo.it/servizi-online"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-22",
    "todo": [
     "116117: la notizia della Regione Abruzzo del 9 giugno 2026 dice che il 116117 è attivo «su tutto il territorio regionale», gratuito, 24 ore su 24, da fisso e cellulare, e porta alla Continuità assistenziale (ex guardia medica); con la sua attivazione «sono state disattivate le precedenti numerazioni telefoniche delle singole Asl». Lo confermano le pagine di tutte e quattro le ASL (ASL 1, ASL 2, Teramo «dal 08/06/2026»). Quindi in tutte le province ho messo solo il 116117 e nessun vecchio numero locale di guardia medica.",
     "CUP: in Abruzzo c'è un call center di prenotazione unico per tutte le ASL (pagina CUP del Portale Sanità regionale): numero verde 800 827827 da rete fissa, 0872 226 da cellulare. Le pagine CUP delle quattro ASL riportano gli stessi due numeri. C'è anche lo Sportello CUP regionale online (con SPID) e la prenotazione in farmacia (FarmaCup).",
     "Centralino dell'ASL 1: nelle copie non c'è un numero di centralino generale; manca.",
     "Pagina «Informazioni per l'utenza» dell'ASL 1: contiene vecchi avvisi con numeri di guardia medica (0862 3485790, 0862 366025) e un numero COVID: superati dal 116117, non usati.",
     "La pagina Contattaci dell'ASL 1 non si è potuta copiare (errore 403); la pagina del nuovo servizio cure domiciliari dà errore 401.",
-    "Percorso di tutela (liste d'attesa): la pagina «Liste d'attesa» dell'ASL 1 (copia del 21/10/2026) dice che l'ASL prende in carico chi ha avuto una data oltre i tempi (DGR 351/2025, delibera 1387/2025) e che c'è un «Modulo per attivare il percorso di tutela». Il modulo è un file e il server non copia i file: per scrivere a chi mandarlo serve leggerlo (form_url)."
+    "Scelta del medico (scelta_medico): dalla pagina «Servizi online» del Portale Sanità della Regione Abruzzo (copia del 22/10/2026): scelta e cambio del medico o del pediatra online, con SPID o utenza regionale, per i maggiorenni iscritti ad «Abruzzo Sanità online»; delega per minori o non autosufficienti. Mancano i numeri degli sportelli scelta e revoca dei distretti: nelle copie non ci sono.",
+    "Percorso di tutela: la pagina «Liste d'attesa» dell'ASL 1 (copia del 22/10/2026) dice che, se il CUP dà una data oltre i tempi, l'ASL mette la persona nella lista di «presa in carico» e il CUP la richiama con una nuova data (DGR 351/2025, delibera 1387/2025). C'è il «Modulo per attivare il percorso di tutela» (file): il suo indirizzo non è nella copia; serve in «pagine» per scrivere form_url, send_to e how_to."
    ],
    "pagine": [
     {
      "tipo": "liste-attesa",
      "url": "https://www.asl1abruzzo.it/pagina536_liste-dattesa.html"
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "Puoi farlo online, nel portale «Abruzzo Sanità online» della Regione, con SPID o con l'utenza regionale: c'è il servizio per scegliere o cambiare il medico di base o il pediatra. Il servizio è per chi è maggiorenne, ha un medico di base in Abruzzo ed è iscritto al portale. Per un minorenne o per chi non può fare da solo c'è la «delega ai servizi online».",
+    "url": "https://sanita.regione.abruzzo.it/servizi-online",
+    "url_label": "Sito della Regione"
+   }
   },
   {
    "id": "pescara",
@@ -436,22 +483,32 @@
     {
      "label": "Portale Sanità Regione Abruzzo – Liste di attesa e CUP",
      "url": "https://sanita.regione.abruzzo.it/canale-assistenza-territoriale/cup"
+    },
+    {
+     "label": "Regione Abruzzo – Servizi online (scelta e cambio del medico)",
+     "url": "https://sanita.regione.abruzzo.it/servizi-online"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-22",
    "todo": [
     "La pagina Guardia medica dell'ASL di Pescara è vecchia: parla ancora del «numero unico aziendale» 085 4289790 e dei numeri delle singole sedi. È in contraddizione con la Regione (dal 9 giugno 2026 i vecchi numeri ASL sono disattivati, c'è il 116117): non l'ho usata per i numeri.",
     "Cure domiciliari / ADI: la pagina ADI dell'ASL di Pescara non ha numeri di telefono (solo orari delle informazioni telefoniche); manca il numero PUA/ADI.",
     "Il CUP «CUP ASL Pescara» (idSezione=1006) è un avviso del 2018: non usato.",
     "Cure domiciliari: manca ancora il numero del PUA/ADI. Per questo il modulo «assistenza domiciliare» resta spento in Abruzzo.",
-    "Percorso di tutela: pagina sulle liste di attesa e i percorsi di tutela dell'ASL di Pescara (Sezione.jsp?idSezione=1105) trovata con il motore di ricerca, aggiunta a «pagine» per la copia. L'estratto cita un numero «S.O.S. Liste di attesa» per le classi B e D: non messo finché non c'è la copia."
+    "Scelta del medico (scelta_medico): dalla pagina «Servizi online» del Portale Sanità della Regione Abruzzo (copia del 22/10/2026): scelta e cambio del medico o del pediatra online, con SPID o utenza regionale, per i maggiorenni iscritti ad «Abruzzo Sanità online»; delega per minori o non autosufficienti. Mancano i numeri degli sportelli scelta e revoca dei distretti: nelle copie non ci sono.",
+    "Percorso di tutela: la pagina «Liste di attesa e percorsi di tutela» (Sezione.jsp?idSezione=1105, copia del 22/10/2026, aggiornata al 10/09/2026) dice che vale per i residenti nell'ASL di Pescara con una prima visita o un primo esame e la classe sulla ricetta; la procedura la attiva l'ASL; per informazioni e aiuto c'è l'URP. «S.O.S. Liste di attesa» (classi B e D): 085 4253254, prenotazioni.cup@asl.pe.it. C'è «Modulistica per l'attivazione del percorso di tutela» (file): serve il suo indirizzo in «pagine» per scrivere letter_mode, send_to e how_to."
    ],
    "pagine": [
     {
      "tipo": "liste-attesa",
      "url": "https://www.asl.pe.it/Sezione.jsp?idSezione=1105"
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "Puoi farlo online, nel portale «Abruzzo Sanità online» della Regione, con SPID o con l'utenza regionale: c'è il servizio per scegliere o cambiare il medico di base o il pediatra. Il servizio è per chi è maggiorenne, ha un medico di base in Abruzzo ed è iscritto al portale. Per un minorenne o per chi non può fare da solo c'è la «delega ai servizi online».",
+    "url": "https://sanita.regione.abruzzo.it/servizi-online",
+    "url_label": "Sito della Regione"
+   }
   },
   {
    "id": "teramo",
@@ -623,21 +680,31 @@
     {
      "label": "Portale Sanità Regione Abruzzo – Liste di attesa e CUP",
      "url": "https://sanita.regione.abruzzo.it/canale-assistenza-territoriale/cup"
+    },
+    {
+     "label": "Regione Abruzzo – Servizi online (scelta e cambio del medico)",
+     "url": "https://sanita.regione.abruzzo.it/servizi-online"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-22",
    "todo": [
     "La pagina Contatti e la FAQ «118, Pronto Soccorso e Guardia Medica» dell'ASL di Teramo riportano ancora il vecchio numero unico di guardia medica 0861 440620; la pagina Guardia medica (aggiornata) dice che dal 08/06/2026 il 116117 lo sostituisce. Non ho messo lo 0861 440620.",
     "Le pagine «Prenotazioni» e «Informazioni sui CUP» non riportano numeri nella copia; il CUP telefonico viene dalla pagina «Cittadini Utenti».",
     "Cartelle cliniche: la pagina «Cittadini Utenti» dice anche che la copia costa 5 euro più 0,20 a foglio. Non scritto: la prima copia dei propri dati è gratis (art. 15 GDPR, Garante), come dice il modulo.",
-    "Percorso di tutela: l'unica pagina trovata è la notizia «SOS liste di attesa» (servizio sperimentale per il 2024, richiesta per PEC): aggiunta a «pagine» per la copia. Da verificare se vale ancora."
+    "Scelta del medico (scelta_medico): dalla pagina «Servizi online» del Portale Sanità della Regione Abruzzo (copia del 22/10/2026): scelta e cambio del medico o del pediatra online, con SPID o utenza regionale, per i maggiorenni iscritti ad «Abruzzo Sanità online»; delega per minori o non autosufficienti. Mancano i numeri degli sportelli scelta e revoca dei distretti: nelle copie non ci sono.",
+    "Percorso di tutela: la notizia «SOS liste di attesa» (copia del 22/10/2026, febbraio 2024) dice che il percorso di tutela si attiva solo con la PEC, o senza PEC scrivendo a cupla@aslteramo.it (0861 429815, classi B e D); il servizio era sperimentale per il 2024. Serve una pagina più recente dell'ASL di Teramo prima di scrivere letter_mode e send_to."
    ],
    "pagine": [
     {
      "tipo": "liste-attesa",
      "url": "https://www.aslteramo.it/sos-liste-di-attesa-da-oggi-al-via-un-nuovo-servizio/"
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "Puoi farlo online, nel portale «Abruzzo Sanità online» della Regione, con SPID o con l'utenza regionale: c'è il servizio per scegliere o cambiare il medico di base o il pediatra. Il servizio è per chi è maggiorenne, ha un medico di base in Abruzzo ed è iscritto al portale. Per un minorenne o per chi non può fare da solo c'è la «delega ai servizi online».",
+    "url": "https://sanita.regione.abruzzo.it/servizi-online",
+    "url_label": "Sito della Regione"
+   }
   }
  ]
 }

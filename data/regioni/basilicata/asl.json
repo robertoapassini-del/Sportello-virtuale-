@@ -108,13 +108,21 @@
     {
      "label": "AGR Basilicata – Attivo il 116117",
      "url": "https://agr.regione.basilicata.it/post/latronico-sul-numero-europeo-armonizzato"
+    },
+    {
+     "label": "ASM Matera – Cambiare o scegliere il medico",
+     "url": "https://www.asmbasilicata.it/servizio/cambiare-scegliere-il-medico-di-base-o-pediatra/"
+    },
+    {
+     "label": "ASM Matera – Modalità di tutela (reclami)",
+     "url": "https://www.asmbasilicata.it/modalita-di-tutela/"
     }
    ],
    "last_verified": "2026-10-21",
    "todo": [
     "La pagina guardia medica dell'ASM (pubblicata 16/12/2025) elenca ancora i numeri per comune e non nomina il 116117: non li ho messi perché la Regione dice che il 116117 è attivo in tutta la Basilicata.",
-    "Mancano: PUA / cure domiciliari (ADI), protesica, scelta del medico, cartelle cliniche, screening dell'ASM: nelle copie ci sono solo orari senza numero. Una pagina ASM (vecchio sito) dà 404.",
-    "Moduli (22/10/2026): attivo solo invalidità (inps.json). Nessuna pagina copiata parla del percorso di tutela, di scelta e revoca, protesica, cure palliative o cartelle cliniche (ospedale San Carlo di Potenza: azienda ospedaliera). Pagine ufficiali aggiunte in «pagine» per la copia del server."
+    "Mancano (copie del 22/10/2026): PUA / cure domiciliari (ADI), cure palliative, protesica, uffici cartelle cliniche, screening dell'ASM. Le pagine sono in «pagine» (cartella clinica, scelta e revoca agli sportelli, anziani e hospice, distretto di Policoro): da leggere dopo la copia.",
+    "Moduli (22/10/2026, secondo giro): acceso solo invalidità. Medico di famiglia e cartella clinica: i dati che i moduli leggono ci sono (scelta_medico dalle pagine ASM e ASP, URP e PEC nelle copie), ma restano spenti: tests/browser.cjs segnala «ASP» fuori dalla Sicilia nel nome ufficiale «ASP Basilicata» (intestazione «Spett.le ASP Basilicata – …», riquadri dei numeri). Serve un'eccezione nel test per «ASP Basilicata» (o un'altra intestazione decisa insieme); poi si accendono tutti e due. Spenti anche: liste d'attesa (la pagina «Modalità di tutela» parla solo di reclami; la pagina liste di attesa del vecchio sito ha solo delibere e tempi), assistenza a casa, cure palliative e ausili (nessun ufficio ADI, palliative o protesi dell'ASM nelle copie)."
    ],
    "pagine": [
     {
@@ -124,8 +132,32 @@
     {
      "tipo": "liste di attesa",
      "url": "https://old.asmbasilicata.it/servizi/Menu/dinamica.aspx?idSezione=17695&idArea=17697&idCat=17730&ID=18170&TipoElemento=pagina"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.asmbasilicata.it/servizio/cartella-clinica/"
+    },
+    {
+     "tipo": "scelta del medico (sportelli)",
+     "url": "https://www.asmbasilicata.it/servizio/scelta-revoca-medico-di-famiglia-4/"
+    },
+    {
+     "tipo": "cure a casa e hospice",
+     "url": "https://www.asmbasilicata.it/servizi/Menu/dinamica.aspx?ID=18568&TipoElemento=categoria&idArea=18563&idCat=18568&idSezione=18562"
+    },
+    {
+     "tipo": "protesica e ADI (Policoro)",
+     "url": "https://old.asmbasilicata.it/servizi/Menu/dinamica.aspx?idSezione=616&idArea=17682&idCat=17691&ID=41146&TipoElemento=pagina"
+    },
+    {
+     "tipo": "come fare per",
+     "url": "https://www.asmbasilicata.it/tutti-i-come-fare-per/"
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "In Basilicata puoi scegliere o cambiare il medico online, sul portale «Servizi Anagrafe» delle aziende sanitarie, se hai la firma digitale. Così non devi andare allo sportello. Sul portale trovi le istruzioni per il primo accesso e il manuale. Dopo l'accesso puoi scegliere il medico, toglierlo (revoca) o stampare il libretto sanitario.",
+    "url": "https://www.asmbasilicata.it/servizio/cambiare-scegliere-il-medico-di-base-o-pediatra/"
+   }
   },
   {
    "id": "potenza",
@@ -255,6 +287,116 @@
      "url": "https://www.aspbasilicata.it/amministrazione-trasparente/attivita-e-procedimenti/tipologia-dei-procedimento/cure-domiciliari/",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Scelta e revoca del medico ed esenzioni dell'ASP a Potenza: informazioni",
+     "number": "0971 310839",
+     "address": "Poliambulatorio «Madre Teresa di Calcutta», III piano, via del Gallitello, Potenza",
+     "hours": "Al telefono dal lunedì al venerdì 12:00–13:00",
+     "url": "https://www.aspbasilicata.it/come-fare-per/scelta-e-revoca-del-medico-di-famiglia-e-del-pediatra/",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Scelta e revoca del medico dell'ASP a Villa d'Agri",
+     "number": "0975 312464",
+     "address": "Via C. Colombo, Villa d'Agri",
+     "hours": "Dal lunedì al venerdì 9–13; martedì e giovedì 16:00–17:30",
+     "url": "https://www.aspbasilicata.it/come-fare-per/scelta-e-revoca-del-medico-di-famiglia-e-del-pediatra/",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Scelta e revoca del medico dell'ASP, Distretto di Lauria",
+     "number": "0973 621837",
+     "address": "Via XXV Aprile, Lauria",
+     "hours": "Lunedì, martedì e giovedì 9–12; martedì 15:30–17:30",
+     "url": "https://www.aspbasilicata.it/come-fare-per/scelta-e-revoca-del-medico-di-famiglia-e-del-pediatra/",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Scelta e revoca del medico dell'ASP, Distretto di Senise",
+     "number": "0973 641306",
+     "address": "Via G. Amendola, Senise",
+     "hours": "Martedì, mercoledì e venerdì 9–12",
+     "url": "https://www.aspbasilicata.it/come-fare-per/scelta-e-revoca-del-medico-di-famiglia-e-del-pediatra/",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Scelta e revoca del medico dell'ASP, Distretto di Venosa",
+     "number": "0972 39271",
+     "address": "Via Appia, ospedale distrettuale, Venosa",
+     "hours": "Dal lunedì al venerdì 8:00–12:30; lunedì e giovedì 15:00–17:30",
+     "url": "https://www.aspbasilicata.it/come-fare-per/scelta-e-revoca-del-medico-di-famiglia-e-del-pediatra/",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Scelta e revoca del medico dell'ASP, Distretto di Melfi",
+     "number": "0972 773130",
+     "address": "Via Medaglia d'Oro M. Ferrara, Melfi",
+     "hours": "Dal lunedì al giovedì 8–12; lunedì e giovedì 14:30–17:00",
+     "url": "https://www.aspbasilicata.it/come-fare-per/scelta-e-revoca-del-medico-di-famiglia-e-del-pediatra/",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "palliative",
+     "label": "Centro di coordinamento cure domiciliari e palliative dell'ASP, sede di Potenza",
+     "number": "0971 310317",
+     "address": "Corso Umberto I, Potenza",
+     "hours": "Dal lunedì al venerdì 10:00–13:00; lunedì e giovedì 16:00–17:00",
+     "url": "https://www.aspbasilicata.it/organizzazione/azienda/dipartimenti/dipartimento-post-acuzie-continuita-ospedale-territorio/oncologia-critica-territoriale-cure-domiciliari-e-palliative-adi/",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "palliative",
+     "label": "Centro di coordinamento cure domiciliari e palliative dell'ASP, sede di Venosa",
+     "number": "0972 39461",
+     "address": "Ospedale di Venosa, I piano, Via Appia",
+     "hours": "Dal lunedì al venerdì 10:00–13:00; lunedì e giovedì 16:00–17:00",
+     "url": "https://www.aspbasilicata.it/organizzazione/azienda/dipartimenti/dipartimento-post-acuzie-continuita-ospedale-territorio/oncologia-critica-territoriale-cure-domiciliari-e-palliative-adi/",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "palliative",
+     "label": "Centro di coordinamento cure domiciliari e palliative dell'ASP, sede di Villa d'Agri",
+     "number": "0975 312437",
+     "address": "Via C. Colombo, Villa d'Agri",
+     "hours": "Dal lunedì al venerdì 10:00–13:00; lunedì e giovedì 16:00–17:00",
+     "url": "https://www.aspbasilicata.it/organizzazione/azienda/dipartimenti/dipartimento-post-acuzie-continuita-ospedale-territorio/oncologia-critica-territoriale-cure-domiciliari-e-palliative-adi/",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "palliative",
+     "label": "Centro di coordinamento cure domiciliari e palliative dell'ASP, sede di Lauria",
+     "number": "0973 621421",
+     "address": "Via XXV Aprile, Lauria",
+     "hours": "Dal lunedì al venerdì 10:00–13:00; martedì 16:00–17:00",
+     "url": "https://www.aspbasilicata.it/organizzazione/azienda/dipartimenti/dipartimento-post-acuzie-continuita-ospedale-territorio/oncologia-critica-territoriale-cure-domiciliari-e-palliative-adi/",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "palliative",
+     "label": "Centro di coordinamento cure domiciliari e palliative dell'ASP, sede di Senise",
+     "number": "0973 641300",
+     "address": "Via G. Amendola, Senise",
+     "hours": "Dal lunedì al venerdì 10:00–13:00; martedì 16:00–17:00",
+     "url": "https://www.aspbasilicata.it/organizzazione/azienda/dipartimenti/dipartimento-post-acuzie-continuita-ospedale-territorio/oncologia-critica-territoriale-cure-domiciliari-e-palliative-adi/",
+     "verified": "2026-10-22",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -285,6 +427,18 @@
     {
      "label": "AGR Basilicata – Attivo il 116117",
      "url": "https://agr.regione.basilicata.it/post/latronico-sul-numero-europeo-armonizzato"
+    },
+    {
+     "label": "ASP Basilicata – Scelta e revoca del medico",
+     "url": "https://www.aspbasilicata.it/come-fare-per/scelta-e-revoca-del-medico-di-famiglia-e-del-pediatra/"
+    },
+    {
+     "label": "ASP Basilicata – Cure domiciliari e palliative (ADI)",
+     "url": "https://www.aspbasilicata.it/organizzazione/azienda/dipartimenti/dipartimento-post-acuzie-continuita-ospedale-territorio/oncologia-critica-territoriale-cure-domiciliari-e-palliative-adi/"
+    },
+    {
+     "label": "ASP Basilicata – PEC",
+     "url": "https://www.aspbasilicata.it/pec/"
     }
    ],
    "last_verified": "2026-10-21",
@@ -292,8 +446,8 @@
     "116117: la Regione (AGR, 11 agosto 2026) scrive che dal 25 maggio il 116117 è attivo in tutta la Basilicata, gratuito e H24; anche la pagina 118 dell'ASP dice «Il NEA 116117 è attualmente attivo». È in una prima fase (triage telefonico, orientamento, trasferimento alla guardia medica competente quando è in turno), gestito dalla Centrale Operativa 118. Per questo non ho messo i vecchi numeri locali di guardia medica (la pagina «Guardia medica» dell'ASP li elenca ancora per comune).",
     "CUP: c'è un unico call center regionale, numero verde 800 814 814 (lunedì–venerdì 7–19, sabato 7–14), confermato da Regione, ASP e ASM. Non ho trovato numeri CUP telefonici propri delle aziende: solo sportelli di persona.",
     "Il numero verde 800 013 504 nella pagina URP dell'ASP è scritto sotto la sede di Lagonegro: non è chiaro se valga per tutta l'ASP.",
-    "Mancano: email URP generica dell'ASP (sulla pagina ci sono solo indirizzi personali e PEC), protesica, scelta del medico, cartelle cliniche, screening. La pagina «Contatti» dell'ASP non è stata copiata (errore), la Carta dei servizi (PDF) non è stata letta.",
-    "Moduli (22/10/2026): attivo solo invalidità (inps.json). Nessuna pagina copiata parla del percorso di tutela, di scelta e revoca, protesica, cure palliative o cartelle cliniche (ospedale San Carlo di Potenza: azienda ospedaliera). Pagine ufficiali aggiunte in «pagine» per la copia del server."
+    "Mancano: email URP generica dell'ASP (nella pagina PEC c'è la PEC dell'URP rpct_urp@pec.aspbasilicata.it; nelle lettere va la PEC del protocollo, come dice la pagina), ufficio protesica, uffici cartelle cliniche, screening. Pagine di cartella clinica e protesica in «pagine»; la Carta dei servizi (PDF) non è ancora estratta.",
+    "Moduli (22/10/2026, secondo giro): acceso solo invalidità. Medico di famiglia e cartella clinica: i dati che i moduli leggono ci sono (scelta_medico dalle pagine ASM e ASP, URP e PEC nelle copie), ma restano spenti: tests/browser.cjs segnala «ASP» fuori dalla Sicilia nel nome ufficiale «ASP Basilicata» (intestazione «Spett.le ASP Basilicata – …», riquadri dei numeri). Serve un'eccezione nel test per «ASP Basilicata» (o un'altra intestazione decisa insieme); poi si accendono tutti e due. Spenti anche: liste d'attesa (la pagina «Liste di attesa» ha solo tempi e delibere, niente percorso di tutela), ausili (nessun ufficio protesi nelle copie). Assistenza a casa e cure palliative avrebbero i dati qui (centri di coordinamento ADI, PEC curedomiciliari@ e curepalliative@pec.aspbasilicata.it), ma a Matera mancano."
    ],
    "pagine": [
     {
@@ -311,8 +465,24 @@
     {
      "tipo": "scelta del medico (Regione)",
      "url": "https://www.regione.basilicata.it/sanita-digitale-nuovi-servizi-online/"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.aspbasilicata.it/come-fare-per/cartella-clinica/"
+    },
+    {
+     "tipo": "cartelle (modulo)",
+     "url": "https://www.aspbasilicata.it/servizi-per-i-cittadini/modulistica/assistenza-ospedaliera-richiesta-copia-cartella-clinica-radiogrammi-0/"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.aspbasilicata.it/servizi-per-i-cittadini/modulistica/assistenza-protesica/"
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "Puoi scegliere o cambiare il medico online, sullo «Sportello On Line Anagrafe Assistiti». Oppure vai allo sportello scelta e revoca del tuo ambito. Porta l'autocertificazione di residenza e famiglia, il documento d'identità e, se vieni da un'altra ASL, il foglio di cancellazione e il tesserino. Porta già le fotocopie. Prima chiedi al medico se ha posto. Puoi anche mandare i documenti con la tua PEC a protocollo@pec.aspbasilicata.it. Scrivi «Ufficio scelta e revoca del medico», cosa chiedi, il telefono e l'email, e allega il documento d'identità. Per il pediatra di un minorenne firmano tutti e due i genitori.",
+    "url": "https://www.aspbasilicata.it/come-fare-per/scelta-e-revoca-del-medico-di-famiglia-e-del-pediatra/"
+   }
   }
  ]
 }

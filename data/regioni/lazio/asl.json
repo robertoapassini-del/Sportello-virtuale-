@@ -165,21 +165,52 @@
     {
      "label": "Regione Lazio – ReCUP",
      "url": "https://www.regione.lazio.it/cittadini/salute/recup"
+    },
+    {
+     "label": "Salute Lazio – Pass di garanzia",
+     "url": "https://salutelazio.it/it/pass-di-garanzia"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-22",
    "todo": [
     "Il CUP dell'ASL di Frosinone usa solo il numero regionale ReCUP 06 9939: nelle pagine non c'è un numero CUP proprio (gli sportelli di Anagni e Alatri rimandano al centralino).",
     "Manca un numero del PUA / cure domiciliari: le pagine copiate (Distretti sanitari) non riportano telefoni.",
     "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari.",
-    "Liste d'attesa: nel Lazio il percorso si chiama «Pass di garanzia» (pagine copiate: URP dell'ASL Roma 1, «Il percorso di garanzia nella Regione Lazio»). Gli estratti (22/10/2026) dicono: vale per le classi B e D, si chiede sul sito della Regione, allo sportello CUP o al ReCUP 06 9939, poi l'ASL propone un appuntamento. Da confermare sulle copie delle pagine in «pagine» (salutelazio.it/it/pass-di-garanzia) prima di scrivere how_to e letter_mode."
+    "Liste d'attesa: how_to, documents_required, what_next e details dalla pagina «Pass di garanzia» di Salute Lazio (copia del 22/10/2026, pubblicata il 28/05/2026; le stesse frasi sono nelle pagine dell'ASL Roma 1 e dell'ASL Roma 5). letter_mode «portal» con portal_url la pagina della Regione: il pulsante del modulo oggi dice «Vai al sito dell'ASL» (js/liste-attesa.js), andrebbe «Vai al sito della Regione». Il modulo resta spento finché mancano le zone di Roma 2 e Roma 3."
    ],
    "pagine": [
     {
      "tipo": "liste-attesa",
      "url": "https://salutelazio.it/it/pass-di-garanzia"
+    },
+    {
+     "tipo": "liste-attesa",
+     "url": "https://www.asl.fr.it/wp-content/uploads/Percorsi-di-Tutela.pdf"
     }
-   ]
+   ],
+   "channel": "cup",
+   "letter_mode": "portal",
+   "portal_url": "https://salutelazio.it/it/pass-di-garanzia",
+   "how_to": "Prenota prima al CUP: allo sportello, al call center ReCUP o online. Se nella tua zona non c'è posto nei tempi della ricetta, ti dicono che hai diritto al «Pass di garanzia» e ti danno un numero. Poi attiva il Pass online, sul sito Salute Lazio della Regione, con SPID o CIE. Puoi chiederlo e attivarlo anche allo sportello CUP o al ReCUP.",
+   "documents_required": [
+    "Codice fiscale",
+    "Ricetta, con il numero NRE (il numero della ricetta elettronica)",
+    "Numero del Pass di garanzia, se te l'hanno già dato",
+    "SPID o CIE, se lo fai online"
+   ],
+   "what_next": [
+    "La richiesta va all'ASL. L'ASL ti dice a che punto è, con il contatto che hai scelto.",
+    "Con lo stesso contatto ti propone un appuntamento: puoi accettarlo o rifiutarlo. Se lo accetti, diventa una prenotazione.",
+    "Se rifiuti, non puoi più usare il Pass per quella ricetta. La ricetta però resta valida per prenotare.",
+    "Fai tutto entro i tempi che ti dicono: dopo, il Pass non vale più."
+   ],
+   "notes": [],
+   "details": [
+    "Nel Lazio il Pass di garanzia vale per le ricette con classe di priorità B (breve) e D (differibile).",
+    "Con il Pass l'ASL si impegna a darti la visita o l'esame, anche in una struttura accreditata o in intramoenia.",
+    "Puoi chiedere e attivare il Pass anche per un familiare: entri con il tuo SPID o la tua CIE e scrivi i suoi dati."
+   ],
+   "fast_track": null
   },
   {
    "id": "latina",
@@ -332,23 +363,50 @@
     {
      "label": "Regione Lazio – ReCUP",
      "url": "https://www.regione.lazio.it/cittadini/salute/recup"
+    },
+    {
+     "label": "Salute Lazio – Pass di garanzia",
+     "url": "https://salutelazio.it/it/pass-di-garanzia"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-22",
    "todo": [
     "Per prenotare in SSN l'ASL di Latina usa solo il ReCUP regionale 06 9939 (oltre ai 20 sportelli CUP in provincia): non c'è un numero CUP proprio.",
     "La pagina PUA (www.ausl.latina.it/index.php/pua) è ferma al 2015: numeri dei PUA non usati. Le pagine sull'assistenza domiciliare non hanno telefoni.",
     "Contraddizione sull'URP di Terracina-Fondi: la pagina Contatti dà 0771 505980, la pagina URP (aggiornata il 21/10/2026) dà 0771 505805; ho usato quest'ultimo.",
     "La pagina Contatti riporta ancora il vecchio numero della guardia medica (0773 520888): non usato, vale il 116117.",
     "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari.",
-    "Liste d'attesa: nel Lazio il percorso si chiama «Pass di garanzia» (pagine copiate: URP dell'ASL Roma 1, «Il percorso di garanzia nella Regione Lazio»). Gli estratti (22/10/2026) dicono: vale per le classi B e D, si chiede sul sito della Regione, allo sportello CUP o al ReCUP 06 9939, poi l'ASL propone un appuntamento. Da confermare sulle copie delle pagine in «pagine» (salutelazio.it/it/pass-di-garanzia) prima di scrivere how_to e letter_mode."
+    "Liste d'attesa: how_to, documents_required, what_next e details dalla pagina «Pass di garanzia» di Salute Lazio (copia del 22/10/2026, pubblicata il 28/05/2026; le stesse frasi sono nelle pagine dell'ASL Roma 1 e dell'ASL Roma 5). letter_mode «portal» con portal_url la pagina della Regione: il pulsante del modulo oggi dice «Vai al sito dell'ASL» (js/liste-attesa.js), andrebbe «Vai al sito della Regione». Il modulo resta spento finché mancano le zone di Roma 2 e Roma 3."
    ],
    "pagine": [
     {
      "tipo": "liste-attesa",
      "url": "https://salutelazio.it/it/pass-di-garanzia"
     }
-   ]
+   ],
+   "channel": "cup",
+   "letter_mode": "portal",
+   "portal_url": "https://salutelazio.it/it/pass-di-garanzia",
+   "how_to": "Prenota prima al CUP: allo sportello, al call center ReCUP o online. Se nella tua zona non c'è posto nei tempi della ricetta, ti dicono che hai diritto al «Pass di garanzia» e ti danno un numero. Poi attiva il Pass online, sul sito Salute Lazio della Regione, con SPID o CIE. Puoi chiederlo e attivarlo anche allo sportello CUP o al ReCUP.",
+   "documents_required": [
+    "Codice fiscale",
+    "Ricetta, con il numero NRE (il numero della ricetta elettronica)",
+    "Numero del Pass di garanzia, se te l'hanno già dato",
+    "SPID o CIE, se lo fai online"
+   ],
+   "what_next": [
+    "La richiesta va all'ASL. L'ASL ti dice a che punto è, con il contatto che hai scelto.",
+    "Con lo stesso contatto ti propone un appuntamento: puoi accettarlo o rifiutarlo. Se lo accetti, diventa una prenotazione.",
+    "Se rifiuti, non puoi più usare il Pass per quella ricetta. La ricetta però resta valida per prenotare.",
+    "Fai tutto entro i tempi che ti dicono: dopo, il Pass non vale più."
+   ],
+   "notes": [],
+   "details": [
+    "Nel Lazio il Pass di garanzia vale per le ricette con classe di priorità B (breve) e D (differibile).",
+    "Con il Pass l'ASL si impegna a darti la visita o l'esame, anche in una struttura accreditata o in intramoenia.",
+    "Puoi chiedere e attivare il Pass anche per un familiare: entri con il tuo SPID o la tua CIE e scrivi i suoi dati."
+   ],
+   "fast_track": null
   },
   {
    "id": "rieti",
@@ -538,22 +596,49 @@
     {
      "label": "Regione Lazio – ReCUP",
      "url": "https://www.regione.lazio.it/cittadini/salute/recup"
+    },
+    {
+     "label": "Salute Lazio – Pass di garanzia",
+     "url": "https://salutelazio.it/it/pass-di-garanzia"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-22",
    "todo": [
     "Le vecchie pagine CUP e ADI (guida-ai-servizi/cup-centro-unico-di-prenotazione, come-fare-per/uosd-assistenza-domiciliare-integrata-adi) danno «pagina non trovata».",
     "Per prenotare visite ed esami il numero è il ReCUP regionale 06 9939: lo 0746 278058 è indicato per i prelievi e come call center aziendale/libera professione.",
     "Nessun numero per scelta del medico ed esenzioni nelle pagine copiate.",
     "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari.",
-    "Liste d'attesa: nel Lazio il percorso si chiama «Pass di garanzia» (pagine copiate: URP dell'ASL Roma 1, «Il percorso di garanzia nella Regione Lazio»). Gli estratti (22/10/2026) dicono: vale per le classi B e D, si chiede sul sito della Regione, allo sportello CUP o al ReCUP 06 9939, poi l'ASL propone un appuntamento. Da confermare sulle copie delle pagine in «pagine» (salutelazio.it/it/pass-di-garanzia) prima di scrivere how_to e letter_mode."
+    "Liste d'attesa: how_to, documents_required, what_next e details dalla pagina «Pass di garanzia» di Salute Lazio (copia del 22/10/2026, pubblicata il 28/05/2026; le stesse frasi sono nelle pagine dell'ASL Roma 1 e dell'ASL Roma 5). letter_mode «portal» con portal_url la pagina della Regione: il pulsante del modulo oggi dice «Vai al sito dell'ASL» (js/liste-attesa.js), andrebbe «Vai al sito della Regione». Il modulo resta spento finché mancano le zone di Roma 2 e Roma 3."
    ],
    "pagine": [
     {
      "tipo": "liste-attesa",
      "url": "https://salutelazio.it/it/pass-di-garanzia"
     }
-   ]
+   ],
+   "channel": "cup",
+   "letter_mode": "portal",
+   "portal_url": "https://salutelazio.it/it/pass-di-garanzia",
+   "how_to": "Prenota prima al CUP: allo sportello, al call center ReCUP o online. Se nella tua zona non c'è posto nei tempi della ricetta, ti dicono che hai diritto al «Pass di garanzia» e ti danno un numero. Poi attiva il Pass online, sul sito Salute Lazio della Regione, con SPID o CIE. Puoi chiederlo e attivarlo anche allo sportello CUP o al ReCUP.",
+   "documents_required": [
+    "Codice fiscale",
+    "Ricetta, con il numero NRE (il numero della ricetta elettronica)",
+    "Numero del Pass di garanzia, se te l'hanno già dato",
+    "SPID o CIE, se lo fai online"
+   ],
+   "what_next": [
+    "La richiesta va all'ASL. L'ASL ti dice a che punto è, con il contatto che hai scelto.",
+    "Con lo stesso contatto ti propone un appuntamento: puoi accettarlo o rifiutarlo. Se lo accetti, diventa una prenotazione.",
+    "Se rifiuti, non puoi più usare il Pass per quella ricetta. La ricetta però resta valida per prenotare.",
+    "Fai tutto entro i tempi che ti dicono: dopo, il Pass non vale più."
+   ],
+   "notes": [],
+   "details": [
+    "Nel Lazio il Pass di garanzia vale per le ricette con classe di priorità B (breve) e D (differibile).",
+    "Con il Pass l'ASL si impegna a darti la visita o l'esame, anche in una struttura accreditata o in intramoenia.",
+    "Puoi chiedere e attivare il Pass anche per un familiare: entri con il tuo SPID o la tua CIE e scrivi i suoi dati."
+   ],
+   "fast_track": null
   },
   {
    "id": "roma",
@@ -980,20 +1065,22 @@
     {
      "label": "Regione Lazio – ReCUP",
      "url": "https://www.regione.lazio.it/cittadini/salute/recup"
+    },
+    {
+     "label": "Salute Lazio – Pass di garanzia",
+     "url": "https://salutelazio.it/it/pass-di-garanzia"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-22",
    "todo": [
     "CUP: tutte e sei le ASL rimandano al ReCUP regionale 06 9939 e agli sportelli CUP; nessun numero CUP proprio per i cittadini.",
     "Guardia medica: la pagina dell'ASL Roma 3 e le FAQ dell'ASL Roma 5 riportano ancora il vecchio numero 06 58526811 accanto al 116117: non usato.",
     "ASL Roma 2, Roma 5 e Roma 6: nelle pagine copiate non c'è un centralino generale.",
     "ASL Roma 5: la pagina URP dà solo l'email urp@aslroma5.it, nessun telefono; PUA trovato solo per Tivoli (gli altri distretti non copiati).",
     "ASL Roma 3 e Roma 6: le pagine assistenza domiciliare e PUA non danno numeri (rimandano al PUA del distretto).",
-    "Zone: per ASL Roma 1 le pagine indicano i distretti (1, 2, 3, 13, 14, 15) ma non scrivono a quali municipi corrispondono; per ASL Roma 2 la pagina dice Distretto = Municipio (IV–IX).",
-    "PEC: messa solo quella dell'ASL Roma 1; le altre trovate sono protocollo@pec.aslroma4.it, urp@pec.aslroma3.it, protocollo@pec.aslroma5.it, servizio.protocollo@pec.aslroma6.it.",
     "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari.",
-    "Liste d'attesa: nel Lazio il percorso si chiama «Pass di garanzia» (pagine copiate: URP dell'ASL Roma 1, «Il percorso di garanzia nella Regione Lazio»). Gli estratti (22/10/2026) dicono: vale per le classi B e D, si chiede sul sito della Regione, allo sportello CUP o al ReCUP 06 9939, poi l'ASL propone un appuntamento. Da confermare sulle copie delle pagine in «pagine» (salutelazio.it/it/pass-di-garanzia) prima di scrivere how_to e letter_mode.",
-    "Lettere (docs/regioni.md, sezione 1 «Province e aziende»): in questa provincia ci sono sei aziende: ASL Roma 1, 2, 3, 4, 5 e 6. Una lettera all'azienda va all'una o all'altra secondo il comune. Prima di accendere cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa o ausili servono le zone in sub_areas: per ognuna id, label (il pulsante «In quale zona?»), comuni, nome_lettera e pec o emails, dalle copie delle pagine ufficiali. Finché mancano, aziende_multiple resta true e tests/coerenza.test.mjs tiene spenti quei moduli."
+    "Liste d'attesa: how_to, documents_required, what_next e details dalla pagina «Pass di garanzia» di Salute Lazio (copia del 22/10/2026, pubblicata il 28/05/2026; le stesse frasi sono nelle pagine dell'ASL Roma 1 e dell'ASL Roma 5). letter_mode «portal» con portal_url la pagina della Regione: il pulsante del modulo oggi dice «Vai al sito dell'ASL» (js/liste-attesa.js), andrebbe «Vai al sito della Regione». Il modulo resta spento finché mancano le zone di Roma 2 e Roma 3.",
+    "Zone (sub_areas, copie del 22/10/2026): Roma 1 (PEC protocollo@pec.aslroma1.it e urp@aslroma1.it, pagine Contatti e URP; distretti 1, 2, 3, 13, 14, 15 dalla pagina PUA), Roma 4 (protocollo@pec.aslroma4.it, pagine Contatti e URP), Roma 5 (protocollo@pec.aslroma5.it), Roma 6 (servizio.protocollo@pec.aslroma6.it, pagina URP). Roma 2: la pagina URP copiata non mostra email né PEC (i municipi IV–IX sono nel menu dei distretti): serve la pagina «PEC» dell'ASL Roma 2. Roma 3: nessuna pagina copiata (il sito www.aslroma3.it non risponde al server, curl 56 e timeout): servono indirizzo e PEC da un'altra pagina ufficiale. Mancano anche i comuni di Roma 3, 4, 5 e 6. Finché Roma 2 e Roma 3 non hanno pec o emails, tests/coerenza.test.mjs tiene spenti i moduli con la lettera."
    ],
    "pagine": [
     {
@@ -1019,6 +1106,82 @@
     {
      "tipo": "liste-attesa",
      "url": "https://www.aslroma5.it/percorso-di-garanzia-nella-regione-lazio/"
+    }
+   ],
+   "channel": "cup",
+   "letter_mode": "portal",
+   "portal_url": "https://salutelazio.it/it/pass-di-garanzia",
+   "how_to": "Prenota prima al CUP: allo sportello, al call center ReCUP o online. Se nella tua zona non c'è posto nei tempi della ricetta, ti dicono che hai diritto al «Pass di garanzia» e ti danno un numero. Poi attiva il Pass online, sul sito Salute Lazio della Regione, con SPID o CIE. Puoi chiederlo e attivarlo anche allo sportello CUP o al ReCUP.",
+   "documents_required": [
+    "Codice fiscale",
+    "Ricetta, con il numero NRE (il numero della ricetta elettronica)",
+    "Numero del Pass di garanzia, se te l'hanno già dato",
+    "SPID o CIE, se lo fai online"
+   ],
+   "what_next": [
+    "La richiesta va all'ASL. L'ASL ti dice a che punto è, con il contatto che hai scelto.",
+    "Con lo stesso contatto ti propone un appuntamento: puoi accettarlo o rifiutarlo. Se lo accetti, diventa una prenotazione.",
+    "Se rifiuti, non puoi più usare il Pass per quella ricetta. La ricetta però resta valida per prenotare.",
+    "Fai tutto entro i tempi che ti dicono: dopo, il Pass non vale più."
+   ],
+   "notes": [],
+   "details": [
+    "Nel Lazio il Pass di garanzia vale per le ricette con classe di priorità B (breve) e D (differibile).",
+    "Con il Pass l'ASL si impegna a darti la visita o l'esame, anche in una struttura accreditata o in intramoenia.",
+    "Puoi chiedere e attivare il Pass anche per un familiare: entri con il tuo SPID o la tua CIE e scrivi i suoi dati."
+   ],
+   "fast_track": null,
+   "sub_areas": [
+    {
+     "id": "roma1",
+     "label": "ASL Roma 1",
+     "comuni": [
+      "Roma: distretti 1, 2, 3, 13, 14 e 15"
+     ],
+     "nome_lettera": "ASL Roma 1",
+     "pec": "protocollo@pec.aslroma1.it",
+     "emails": [
+      "urp@aslroma1.it"
+     ],
+     "site_url": "https://www.aslroma1.it"
+    },
+    {
+     "id": "roma2",
+     "label": "ASL Roma 2",
+     "comuni": [
+      "Roma: municipi IV, V, VI, VII, VIII e IX"
+     ],
+     "nome_lettera": "ASL Roma 2",
+     "site_url": "https://www.aslroma2.it"
+    },
+    {
+     "id": "roma3",
+     "label": "ASL Roma 3",
+     "nome_lettera": "ASL Roma 3"
+    },
+    {
+     "id": "roma4",
+     "label": "ASL Roma 4",
+     "nome_lettera": "ASL Roma 4",
+     "pec": "protocollo@pec.aslroma4.it",
+     "site_url": "https://www.aslroma4.it"
+    },
+    {
+     "id": "roma5",
+     "label": "ASL Roma 5",
+     "nome_lettera": "ASL Roma 5",
+     "pec": "protocollo@pec.aslroma5.it",
+     "emails": [
+      "urp@aslroma5.it"
+     ],
+     "site_url": "https://www.aslroma5.it"
+    },
+    {
+     "id": "roma6",
+     "label": "ASL Roma 6",
+     "nome_lettera": "ASL Roma 6",
+     "pec": "servizio.protocollo@pec.aslroma6.it",
+     "site_url": "https://www.aslroma6.it"
     }
    ]
   },
@@ -1249,23 +1412,50 @@
     {
      "label": "Regione Lazio – ReCUP",
      "url": "https://www.regione.lazio.it/cittadini/salute/recup"
+    },
+    {
+     "label": "Salute Lazio – Pass di garanzia",
+     "url": "https://salutelazio.it/it/pass-di-garanzia"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-22",
    "todo": [
     "DA DECIDERE: la pagina ASL sul 116117 (www.asl.vt.it/approfondimenti/638, agg. 01/09/2026) dice che nella fase iniziale, solo per i comuni di Grotte di Castro, Proceno, Onano e San Lorenzo Nuovo, la guardia medica si chiama al 06 55525592. Non l'ho messo tra i contatti.",
     "Il CUP dell'ASL di Viterbo usa solo il ReCUP regionale 06 9939: nessun numero CUP proprio per i cittadini.",
     "La pagina Contatti aziendali è aggiornata al 2023: centralino e numero verde presi dalla pagina Azienda (agg. 11/2025), che riporta gli stessi numeri.",
     "Nessun numero per scelta del medico ed esenzioni nelle pagine copiate.",
     "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari.",
-    "Liste d'attesa: nel Lazio il percorso si chiama «Pass di garanzia» (pagine copiate: URP dell'ASL Roma 1, «Il percorso di garanzia nella Regione Lazio»). Gli estratti (22/10/2026) dicono: vale per le classi B e D, si chiede sul sito della Regione, allo sportello CUP o al ReCUP 06 9939, poi l'ASL propone un appuntamento. Da confermare sulle copie delle pagine in «pagine» (salutelazio.it/it/pass-di-garanzia) prima di scrivere how_to e letter_mode."
+    "Liste d'attesa: how_to, documents_required, what_next e details dalla pagina «Pass di garanzia» di Salute Lazio (copia del 22/10/2026, pubblicata il 28/05/2026; le stesse frasi sono nelle pagine dell'ASL Roma 1 e dell'ASL Roma 5). letter_mode «portal» con portal_url la pagina della Regione: il pulsante del modulo oggi dice «Vai al sito dell'ASL» (js/liste-attesa.js), andrebbe «Vai al sito della Regione». Il modulo resta spento finché mancano le zone di Roma 2 e Roma 3."
    ],
    "pagine": [
     {
      "tipo": "liste-attesa",
      "url": "https://salutelazio.it/it/pass-di-garanzia"
     }
-   ]
+   ],
+   "channel": "cup",
+   "letter_mode": "portal",
+   "portal_url": "https://salutelazio.it/it/pass-di-garanzia",
+   "how_to": "Prenota prima al CUP: allo sportello, al call center ReCUP o online. Se nella tua zona non c'è posto nei tempi della ricetta, ti dicono che hai diritto al «Pass di garanzia» e ti danno un numero. Poi attiva il Pass online, sul sito Salute Lazio della Regione, con SPID o CIE. Puoi chiederlo e attivarlo anche allo sportello CUP o al ReCUP.",
+   "documents_required": [
+    "Codice fiscale",
+    "Ricetta, con il numero NRE (il numero della ricetta elettronica)",
+    "Numero del Pass di garanzia, se te l'hanno già dato",
+    "SPID o CIE, se lo fai online"
+   ],
+   "what_next": [
+    "La richiesta va all'ASL. L'ASL ti dice a che punto è, con il contatto che hai scelto.",
+    "Con lo stesso contatto ti propone un appuntamento: puoi accettarlo o rifiutarlo. Se lo accetti, diventa una prenotazione.",
+    "Se rifiuti, non puoi più usare il Pass per quella ricetta. La ricetta però resta valida per prenotare.",
+    "Fai tutto entro i tempi che ti dicono: dopo, il Pass non vale più."
+   ],
+   "notes": [],
+   "details": [
+    "Nel Lazio il Pass di garanzia vale per le ricette con classe di priorità B (breve) e D (differibile).",
+    "Con il Pass l'ASL si impegna a darti la visita o l'esame, anche in una struttura accreditata o in intramoenia.",
+    "Puoi chiedere e attivare il Pass anche per un familiare: entri con il tuo SPID o la tua CIE e scrivi i suoi dati."
+   ],
+   "fast_track": null
   }
  ]
 }
