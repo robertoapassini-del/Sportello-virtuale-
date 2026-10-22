@@ -1,6 +1,6 @@
 {
  "regione": "piemonte",
- "aggiornato": "2026-10-22T19:39:13.055Z",
+ "aggiornato": "2026-10-22T21:23:05.507Z",
  "pagine": [
   {
    "asl": "alessandria",
@@ -300,7 +300,7 @@
    "titolo": "Contatti - ASL Biella",
    "sha": "b820579bff66fdedf0354e44f6430a8a19ccd0b69d445d54116a5e80eff94cff",
    "caratteri": 1906,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "biella",
@@ -344,7 +344,7 @@
    "titolo": "Cure Palliative - ASL Biella",
    "sha": "9fc23ae684336326213bc9e1a28ad1b3f74400dbd57041990bf15137f62086d0",
    "caratteri": 5397,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "biella",
@@ -654,7 +654,7 @@
    "certificato": "non valido",
    "file": "novara/42ffdf775f1d.txt",
    "titolo": "Continuità assistenziale (ex Guardia medica) | A.S.L. TO3",
-   "sha": "86f0f7be2ba222eb1caa183fa06dc6d473dee70f3bf3a8e9a420318f35725acb",
+   "sha": "5af7c26b074b27d370710b99a3c01a86dcdabdab8e9c11266919da45f3c787f8",
    "caratteri": 3110,
    "cambiata": true
   },
@@ -738,9 +738,9 @@
    "http": 200,
    "file": "torino/5ad90b52b3a0.txt",
    "titolo": "Azienda Sanitaria Locale \"Città di Torino\"",
-   "sha": "8c0380ae9c4fc42652ebfb3fa6991c31273cfd0d40a904d54a82834e63be62eb",
-   "caratteri": 9113,
-   "cambiata": false
+   "sha": "56eab02feb856fac979f1c7d6e8963479adccd7dba2b32e26d19a894b2a33520",
+   "caratteri": 9136,
+   "cambiata": true
   },
   {
    "asl": "torino",
@@ -795,7 +795,7 @@
    "certificato": "non valido",
    "file": "torino/b838f80535f8.txt",
    "titolo": "Contatti | A.S.L. TO3",
-   "sha": "17595f6fb8f85a7f518c526630274ae8d5e8fcad01c873ed3997fd605bc33480",
+   "sha": "432cf1a95827bd10f876fc95d1767ab505e946b4f87a37b7c801bb86bf24a4e7",
    "caratteri": 2193,
    "cambiata": true
   },
@@ -862,7 +862,7 @@
    "certificato": "non valido",
    "file": "torino/53d58dce5be6.txt",
    "titolo": "U.R.P. | A.S.L. TO3",
-   "sha": "081c92fba71fb07fb08867db5dc110287ae82684923ddf90b467bf7d18a48393",
+   "sha": "715750769031e2992e99dd5e7e640dbd5c1556a7bc906ee8b8e9cbebd06b328d",
    "caratteri": 7182,
    "cambiata": true
   },
@@ -896,7 +896,7 @@
    "certificato": "non valido",
    "file": "torino/42ffdf775f1d.txt",
    "titolo": "Continuità assistenziale (ex Guardia medica) | A.S.L. TO3",
-   "sha": "86f0f7be2ba222eb1caa183fa06dc6d473dee70f3bf3a8e9a420318f35725acb",
+   "sha": "5af7c26b074b27d370710b99a3c01a86dcdabdab8e9c11266919da45f3c787f8",
    "caratteri": 3110,
    "cambiata": true
   },
@@ -941,7 +941,7 @@
    "certificato": "non valido",
    "file": "torino/47f0299742b3.txt",
    "titolo": "Assistenza a domicilio | A.S.L. TO3",
-   "sha": "ad35cb60240cd2a6b3c8a8072d2356a284ca73c47d01f3c8edc3ce240ce0be3a",
+   "sha": "c1f9bf225962b4c726b5aa3b2eb90ee222bfc8f98e63c7de0b75a53a31aeeeb4",
    "caratteri": 6250,
    "cambiata": true
   },
@@ -1057,7 +1057,7 @@
    "http": 200,
    "file": "torino/0df5ce662258.txt",
    "titolo": "Il Fascicolo Sanitario Elettronico 2.0 | Regione Piemonte",
-   "sha": "fa9962d66bb6b6af72adf3eff42163921d8ef1844e5a8b7e47c01f7906d09250",
+   "sha": "77be00e5ff4842ec6abe3d96c4ba5ceac3c22d135a03f7015547437943993169",
    "caratteri": 20023,
    "cambiata": true
   },
@@ -1065,7 +1065,13 @@
    "asl": "torino",
    "url": "https://www.regione.piemonte.it/governo/bollettino/abbonati/2025/03/attach/dda1410000001_11200.pdf",
    "controllata": "2026-10-22",
-   "nota": "file, non controllato"
+   "http": 200,
+   "file": "torino/07ef0990ba77.txt",
+   "titolo": "dda1410000001_11200_pdf",
+   "sha": "7976979cd2e4c51b56c54b215c679061e81dae18aafc37e519393a27b912a47a",
+   "caratteri": 15978,
+   "pdf": true,
+   "cambiata": true
   },
   {
    "asl": "torino",
@@ -1074,7 +1080,7 @@
    "http": 200,
    "file": "torino/83ce8b1bf05c.txt",
    "titolo": "L'ASL TO3 rinnova l'assistenza medica turistica nelle alte Valli Susa e Chisone | Regione Piemonte",
-   "sha": "c900f67d3cf70306653982340221da59f0426a91f0f033ab292fb738abf312e6",
+   "sha": "b0b3e633a8061e391ede415ab73b2b0f1fb020d0c5125876f695b1431ada43e3",
    "caratteri": 15001,
    "cambiata": true
   },
@@ -1085,7 +1091,7 @@
    "http": 200,
    "file": "torino/02e76f98243d.txt",
    "titolo": "Sportello per il cittadino - URP di Torino | Regione Piemonte",
-   "sha": "46173fa9c30dcb6cb9f0fd7eca7f42ed45fddda1701434f550f5abfe92537f2d",
+   "sha": "e449a704d36049ca68efe64b843c5ebe8a4109ee586b3cdaaad7ad68ef1582c0",
    "caratteri": 17633,
    "cambiata": true
   },
@@ -1152,7 +1158,7 @@
    "certificato": "non valido",
    "file": "torino/f6d0f76be991.txt",
    "titolo": "A.S.L. TO3",
-   "sha": "c0fef391b62ab86f0c728be514fc85c297aad76494ae630d81ec8ad8715ee896",
+   "sha": "d3c6c2bff4a2279ce37aa270ddc753e4e03b54a22cc1250b7d17c1f089f182e0",
    "caratteri": 3072,
    "cambiata": true
   },
@@ -1164,7 +1170,7 @@
    "certificato": "non valido",
    "file": "torino/58d10c286b3e.txt",
    "titolo": "Prenotazioni | A.S.L. TO3",
-   "sha": "a1c595a0636461041f6e9d659f30c15bcb2346f339cc8e85ff8e11cbdadb8c7e",
+   "sha": "8a38325c827ded704d009805b85fa4719256cd8e6a21f96bc1bc170becd0acee",
    "caratteri": 6578,
    "cambiata": true
   },
@@ -1176,7 +1182,7 @@
    "certificato": "non valido",
    "file": "torino/b4f5a3c3ea56.txt",
    "titolo": "CUP – Centri Unici di Prenotazione | A.S.L. TO3",
-   "sha": "1a7bb41ea03cc1bfe9c74b00fc98d40b0e1768b369d806139e7a5973c42b1b03",
+   "sha": "78cb43bf3bba0c73801de4418ae010cc4d78319bd1419ca980000c60d0520a22",
    "caratteri": 10031,
    "cambiata": true
   },
@@ -1188,7 +1194,7 @@
    "certificato": "non valido",
    "file": "torino/98d162d039ff.txt",
    "titolo": "Medico di famiglia & pediatra | A.S.L. TO3",
-   "sha": "d7a31fb2a090864a20651fe31247a6bd2a5741b81858490e0490ec5a9e8e2099",
+   "sha": "1b9274bb4909915dad948817569506451c869c83f68422052f52a4832dcc9f03",
    "caratteri": 10962,
    "cambiata": true
   },
@@ -1307,7 +1313,7 @@
    "certificato": "non valido",
    "file": "torino/90f61ae2b1aa.txt",
    "titolo": "Tempi di attesa | A.S.L. TO3",
-   "sha": "698011261acc590bb7e7a3089bacfc4216da0fe391189d491cadbf432e6cf0ad",
+   "sha": "123d0a7fcbcfe6deee7880cae10c6c4de99cf6a418fbbf5a3e4f36e7c3aac169",
    "caratteri": 9452,
    "cambiata": true
   },
@@ -1385,7 +1391,7 @@
    "certificato": "non valido",
    "file": "torino/b82056cf0d81.txt",
    "titolo": "Assistenza protesica e integrativa | A.S.L. TO3",
-   "sha": "50e13c866529bad3dbef8dc2ff87402da917099b5d46cb6b7334003913a0c366",
+   "sha": "695c4cf2ca57f6810e8073265dd7448ed23a481e7c10d33b8d64b09ec2fe0628",
    "caratteri": 13647,
    "cambiata": true
   },
@@ -1429,7 +1435,7 @@
    "http": 200,
    "file": "torino/1df1dd473541.txt",
    "titolo": "Il medico di famiglia e il pediatra di libera scelta | Regione Piemonte",
-   "sha": "7c2247172bde9c1180f7a91268bf2755accad7ee52920242c787058b40e93fb5",
+   "sha": "8e5f6e5189a7889924cbb49a5a47812a12d65e80bed55499b9d56f7c70474760",
    "caratteri": 15707,
    "cambiata": true
   },
@@ -1460,7 +1466,7 @@
    "certificato": "non valido",
    "file": "verbano-cusio-ossola/42ffdf775f1d.txt",
    "titolo": "Continuità assistenziale (ex Guardia medica) | A.S.L. TO3",
-   "sha": "86f0f7be2ba222eb1caa183fa06dc6d473dee70f3bf3a8e9a420318f35725acb",
+   "sha": "5af7c26b074b27d370710b99a3c01a86dcdabdab8e9c11266919da45f3c787f8",
    "caratteri": 3110,
    "cambiata": true
   },
@@ -1545,7 +1551,13 @@
    "asl": "verbano-cusio-ossola",
    "url": "https://www.regione.piemonte.it/governo/bollettino/abbonati/2025/46/attach/co_azienda%20sanitaria%20locale%20vco_2025-11-03_97606.pdf",
    "controllata": "2026-10-22",
-   "nota": "file, non controllato"
+   "http": 200,
+   "file": "verbano-cusio-ossola/4b336e0d9d48.txt",
+   "titolo": "co_Azienda sanitaria locale VCO_2025-11-03_97606",
+   "sha": "9d1c313affa00e9dea31f6af18f5bfd89329f0392f544e9f5e57052a7333c678",
+   "caratteri": 59129,
+   "pdf": true,
+   "cambiata": true
   },
   {
    "asl": "vercelli",

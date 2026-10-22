@@ -1,6 +1,6 @@
 {
  "regione": "trentino-alto-adige",
- "aggiornato": "2026-10-22T20:08:50.412Z",
+ "aggiornato": "2026-10-22T21:50:35.148Z",
  "pagine": [
   {
    "asl": "bolzano",
@@ -19,8 +19,12 @@
    "asl": "bolzano",
    "url": "https://home.sabes.it/it/comprensori-sanitari/merano/3026.asp",
    "controllata": "2026-10-22",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "bolzano/5cedc1cec8ce.txt",
+   "titolo": "Servizio di Medicina di base | Azienda Sanitaria dell'Alto Adige",
+   "sha": "4aa21f2cac727e1a1c548a8bc863b49426f8ef9e974baf1b9d82548280179e2b",
+   "caratteri": 15699,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
@@ -72,11 +76,13 @@
    "asl": "bolzano",
    "url": "https://www.asdaa.it/it/default.asp",
    "controllata": "2026-10-22",
+   "browser": true,
    "http": 200,
+   "finale": "https://www.asdaa.it/it/home",
    "file": "bolzano/9e045b839f76.txt",
-   "titolo": "Südtiroler Sanitätsbetrieb",
-   "sha": "392d4be341b5601bf3ac0de4fb35ecc68611c7c9a2e451ea79d9bec90721e5ed",
-   "caratteri": 38,
+   "titolo": "Azienda Sanitaria dell'Alto Adige",
+   "sha": "00a7a9a208d3e2bc6d34049f5c9cdb4efe43a4594251084469bffccc29220248",
+   "caratteri": 23107,
    "cambiata": true
   },
   {
@@ -148,9 +154,9 @@
    "http": 200,
    "file": "bolzano/55ed5d9f3c74.txt",
    "titolo": "Info per pazienti e visitatori | Ospedale di Bolzano",
-   "sha": "87cba349147bc9564e477d7a2f5bbd64143c65d1b80b07b2130c2bdb410585df",
-   "caratteri": 24600,
-   "cambiata": false
+   "sha": "162274ab3366efd042e64c5f918fe68fd0db6aaa97339585c2f3bf0434101a6b",
+   "caratteri": 24279,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
@@ -181,7 +187,14 @@
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/medicina-di-base.asp",
    "controllata": "2026-10-22",
-   "http": 503
+   "browser": true,
+   "http": 200,
+   "finale": "https://www.asdaa.it/it/servizio-di-medicina-di-base-territorio-bz",
+   "file": "bolzano/aa3b128c6f97.txt",
+   "titolo": "Servizio di Medicina di base | Comprensorio Bolzano",
+   "sha": "e8836091903d28884335bc7cb510f6e122ba99abf14c44abf959feb22a8d820c",
+   "caratteri": 31049,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
@@ -211,12 +224,14 @@
    "asl": "bolzano",
    "url": "https://www.asdaa.it/it/comprensori-sanitari/merano/3181.asp",
    "controllata": "2026-10-22",
+   "browser": true,
    "http": 200,
+   "finale": "https://home.asdaa.it/it/comprensori-sanitari/merano/3181.asp",
    "file": "bolzano/f2819aebdf8b.txt",
-   "titolo": "Südtiroler Sanitätsbetrieb",
-   "sha": "392d4be341b5601bf3ac0de4fb35ecc68611c7c9a2e451ea79d9bec90721e5ed",
-   "caratteri": 38,
-   "cambiata": false
+   "titolo": "Servizio infermieristico | Azienda Sanitaria dell'Alto Adige",
+   "sha": "63e2879d3d25cb6dbc1c59c0b1221e0fa551588ba75db555e10884ce450c7123",
+   "caratteri": 8725,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
@@ -285,25 +300,40 @@
    "asl": "bolzano",
    "url": "https://home.asdaa.it/prevenzione/prestazioni.asp?bnsv_svid=1008640",
    "controllata": "2026-10-22",
-   "http": 0,
-   "errore": "curl: (56) Recv failure: Connection reset by peer"
+   "browser": true,
+   "http": 200,
+   "finale": "https://www.asdaa.it/it/prevenzione-salute?bnsv_svid=1008640",
+   "file": "bolzano/fbeef31a6b03.txt",
+   "titolo": "Prevenzione e salute | Azienda Sanitaria dell'Alto Adige",
+   "sha": "4a5c682adb8e5fa06ec37f92f6309af07a12aca6dfe4f79be3844468fd6abdb1",
+   "caratteri": 21924,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/servizi-informazione.asp?bnsv_svid=1032224",
    "controllata": "2026-10-22",
-   "http": 503
+   "browser": true,
+   "http": 200,
+   "finale": "https://www.asdaa.it/it/servizi",
+   "file": "bolzano/bbc0f1d38083.txt",
+   "titolo": "I servizi in myCIVIS - Azienda Sanitaria dell'Alto Adige",
+   "sha": "63d4214052969c75a507fc36473c732ce77d774227da82349c7f9f9a7033f5d6",
+   "caratteri": 22173,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
    "url": "https://www.asdaa.it/it/servizi-informazione.asp?bnsv_svid=1033546",
    "controllata": "2026-10-22",
+   "browser": true,
    "http": 200,
+   "finale": "https://www.asdaa.it/it/servizi",
    "file": "bolzano/1a6f833fe6c4.txt",
-   "titolo": "Südtiroler Sanitätsbetrieb",
-   "sha": "392d4be341b5601bf3ac0de4fb35ecc68611c7c9a2e451ea79d9bec90721e5ed",
-   "caratteri": 38,
-   "cambiata": false
+   "titolo": "I servizi in myCIVIS - Azienda Sanitaria dell'Alto Adige",
+   "sha": "2021db0bed24552ce2bcd22039af50f4b676b83c923f6d46f8e87258a4ea5a18",
+   "caratteri": 22152,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
@@ -321,7 +351,12 @@
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/amministrazione-trasparente/4056.asp",
    "controllata": "2026-10-22",
-   "http": 503
+   "http": 200,
+   "file": "bolzano/cf4cd0ccb41d.txt",
+   "titolo": "Telefono e posta elettronica | Azienda Sanitaria dell'Alto Adige",
+   "sha": "b9ca7a7600ce0c3184e1e32c33b404cea682e26c211907ca3194e16c8f24ef52",
+   "caratteri": 6919,
+   "cambiata": true
   },
   {
    "asl": "bolzano",

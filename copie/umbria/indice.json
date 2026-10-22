@@ -1,6 +1,6 @@
 {
  "regione": "umbria",
- "aggiornato": "2026-10-22T20:12:39.819Z",
+ "aggiornato": "2026-10-22T21:53:44.984Z",
  "pagine": [
   {
    "asl": "perugia",
@@ -906,8 +906,12 @@
    "asl": "usl-umbria1",
    "url": "https://www.uslumbria1.it/numeri-umbria-sanita-nus/",
    "controllata": "2026-10-22",
-   "http": 0,
-   "errore": "curl: (28) Connection timed out after 30002 milliseconds"
+   "http": 200,
+   "file": "usl-umbria1/07d8f3215e34.txt",
+   "titolo": "Numeri Umbria Sanità (NUS) - USL Umbria 1",
+   "sha": "3aadcee25773ea841d51ce6afc48e54671fdbc8bd95e53cefb9556d3914596dd",
+   "caratteri": 3243,
+   "cambiata": true
   },
   {
    "asl": "usl-umbria1",

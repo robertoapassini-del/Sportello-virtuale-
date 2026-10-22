@@ -1,6 +1,6 @@
 {
  "regione": "basilicata",
- "aggiornato": "2026-10-22T18:48:59.248Z",
+ "aggiornato": "2026-10-22T20:34:10.047Z",
  "pagine": [
   {
    "asl": "matera",
@@ -44,7 +44,7 @@
    "titolo": "Latronico sul Numero europeo Armonizzato - AGR Basilicata",
    "sha": "7245c3a8feaf2d688db755405edc402598dfab2ddec7e3d99b12d2ad7241ee4f",
    "caratteri": 5428,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "matera",
@@ -196,7 +196,7 @@
    "titolo": "Latronico sul Numero europeo Armonizzato - AGR Basilicata",
    "sha": "7245c3a8feaf2d688db755405edc402598dfab2ddec7e3d99b12d2ad7241ee4f",
    "caratteri": 5428,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "potenza",
@@ -402,7 +402,13 @@
    "asl": "regione-basilicata",
    "url": "https://digitalefacile.regione.basilicata.it/wp-content/uploads/2025/05/Fascicolo-Sanitario-Elettronico-e-Televisita.pdf",
    "controllata": "2026-10-22",
-   "nota": "file, non controllato"
+   "http": 200,
+   "file": "regione-basilicata/e1b3d8c64ab8.txt",
+   "titolo": "Presentazione standard di PowerPoint",
+   "sha": "276bfecce644b25d8efc5e76cc61adeb6c33dda9de7c5bf405bebdbb40f7039e",
+   "caratteri": 6639,
+   "pdf": true,
+   "cambiata": true
   },
   {
    "asl": "inps-basilicata",
@@ -496,7 +502,13 @@
    "asl": "asp-potenza",
    "url": "https://www.aspbasilicata.it/wp-content/uploads/CARTA-DEI-SERVIZI-agg-al-17-02-2026.pdf",
    "controllata": "2026-10-22",
-   "nota": "file, non controllato"
+   "http": 200,
+   "file": "asp-potenza/3d7128597d39.txt",
+   "titolo": "CARTA DEI SERVIZI",
+   "sha": "35e86802a290f9bede6ef16b8dcbf8705b8aa2c439bafde79640d767b21d17b2",
+   "caratteri": 273217,
+   "pdf": true,
+   "cambiata": true
   },
   {
    "asl": "asm-matera",

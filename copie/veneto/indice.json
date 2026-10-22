@@ -1,6 +1,6 @@
 {
  "regione": "veneto",
- "aggiornato": "2026-10-22T20:22:17.932Z",
+ "aggiornato": "2026-10-22T22:03:38.818Z",
  "pagine": [
   {
    "asl": "belluno",
@@ -412,7 +412,7 @@
    "titolo": "URP - Ufficio Relazioni con il Pubblico",
    "sha": "d25943393fc85cd71be451c4505c54f0135e9764bd570f5463c04933d8eead38",
    "caratteri": 5857,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -599,12 +599,13 @@
    "asl": "venezia",
    "url": "https://www.aulss4.veneto.it/",
    "controllata": "2026-10-22",
+   "browser": true,
    "http": 200,
    "finale": "https://www.aulss4.veneto.it/home",
    "file": "venezia/782f4fd5fd90.txt",
    "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
-   "sha": "6bc2275696536324da914a4390835a8856b32ef9c71aa40dd59c0c5b84156a8f",
-   "caratteri": 45,
+   "sha": "900f0771f26a176c4994fc55995772f4d21d05b97fbb41341168bb90fe4f83d5",
+   "caratteri": 5121,
    "cambiata": true
   },
   {
@@ -641,7 +642,7 @@
    "titolo": "Azienda ULSS n. 4 Veneto Orientale - Prenotazione esami di laboratorio presso le strutture dell'Azienda Ulss4 \"Veneto Orientale\"",
    "sha": "639a5afddb6322348a5a2962cc2fba1c554e07dede861388a1a1a61d719c21fe",
    "caratteri": 3630,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",

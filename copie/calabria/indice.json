@@ -1,6 +1,6 @@
 {
  "regione": "calabria",
- "aggiornato": "2026-10-22T18:51:59.808Z",
+ "aggiornato": "2026-10-22T20:37:28.188Z",
  "pagine": [
   {
    "asl": "catanzaro",
@@ -128,7 +128,13 @@
    "asl": "catanzaro",
    "url": "https://www.asp.cz.it/files/cartella-clinica/0-regolamento-rilascio-documentazione-sanitaria.pdf",
    "controllata": "2026-10-22",
-   "nota": "file, non controllato"
+   "http": 200,
+   "file": "catanzaro/0953a8052e46.txt",
+   "titolo": "AZIENDA SANITARIA PROVINCIALE",
+   "sha": "61507c5bc7f4c1035864c7ef99952d713dfe58a53a7aa5d6394a20c166ffa694",
+   "caratteri": 23724,
+   "pdf": true,
+   "cambiata": true
   },
   {
    "asl": "cosenza",
@@ -171,7 +177,7 @@
    "http": 200,
    "file": "cosenza/fe31bc8fb243.txt",
    "titolo": "Centro Unico di Prenotazione Online - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "fb64fe3317647000ea3bcfe172e4495c765b3c7a677aa73fbc99e6d2f981e785",
+   "sha": "9e3db9831c7ef31f861f3a41b5fc7165405b7e6f0a6a2c63399a6d95a43104c3",
    "caratteri": 8094,
    "cambiata": true
   },
@@ -227,9 +233,9 @@
    "http": 200,
    "file": "crotone/794ccfdda2f9.txt",
    "titolo": "Assistenza Domiciliare - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "0d4de9e1adc770a50a43a899854844139f07c0635cb4e3683c5ee516012ee346",
+   "sha": "9cd026064049a9bd6959ebf252c6daf9130e5e0a4c441bd039794d71e8cfc416",
    "caratteri": 9089,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "crotone",
@@ -532,13 +538,25 @@
    "asl": "regione-calabria",
    "url": "https://www.regione.calabria.it/wp-content/uploads/2024/01/allegato_linee_guida-(1).pdf",
    "controllata": "2026-10-22",
-   "nota": "file, non controllato"
+   "http": 200,
+   "file": "regione-calabria/84117250f4df.txt",
+   "titolo": "LINEE GUIDA DEL CUP DELLA CALABRIA",
+   "sha": "4ee778e43bb44f962eab30c647462d0c96f759a5c1b287a322063a4b9af20102",
+   "caratteri": 80184,
+   "pdf": true,
+   "cambiata": true
   },
   {
    "asl": "regione-calabria",
    "url": "https://www.regione.calabria.it/wp-content/uploads/2024/12/Descrizione-Video-Portale-Web-Cup-Calabria-1.pdf",
    "controllata": "2026-10-22",
-   "nota": "file, non controllato"
+   "http": 200,
+   "file": "regione-calabria/d8114e199dae.txt",
+   "titolo": "INTRODUZIONE GENERALE",
+   "sha": "24896f5d86f190aff099b46af35787b52eb0df348ceaadab9653e710536fa281",
+   "caratteri": 1741,
+   "pdf": true,
+   "cambiata": true
   },
   {
    "asl": "regione-calabria",
@@ -556,13 +574,25 @@
    "asl": "regione-calabria",
    "url": "https://www.regione.calabria.it/wp-content/uploads/2024/05/dca-101-del-17.05.2024.pdf",
    "controllata": "2026-10-22",
-   "nota": "file, non controllato"
+   "http": 200,
+   "file": "regione-calabria/c22408f907e6.txt",
+   "titolo": "Subject:",
+   "sha": "d0b021c1391554c6dc6905146c0346d2d188990a608e154aae9b06ecf6cac7b3",
+   "caratteri": 9575,
+   "pdf": true,
+   "cambiata": true
   },
   {
    "asl": "regione-calabria",
    "url": "https://www.fascicolosanitario.regione.calabria.it/wp-content/uploads/2024/10/FSE_Calabria_Informativa-v_08feb2024.pdf",
    "controllata": "2026-10-22",
-   "nota": "file, non controllato"
+   "http": 200,
+   "file": "regione-calabria/4491d2d1e8e2.txt",
+   "titolo": "FSE_Calabria_Informativa-v_08feb2024",
+   "sha": "8d292bbf2304f0de8e19bc7725796c0afbd161b1d5979d46a2e6461a717258f4",
+   "caratteri": 48625,
+   "pdf": true,
+   "cambiata": true
   },
   {
    "asl": "regione-calabria",
@@ -692,7 +722,8 @@
    "asl": "asp-cosenza",
    "url": "https://www.asp.cosenza.it/wp-content/uploads/2025/05/carta-dei-servizi-i-Unificata-anno-2024-Ult.agg_.20.02.2025-h.13.21-3.pdf",
    "controllata": "2026-10-22",
-   "nota": "file, non controllato"
+   "http": 0,
+   "errore": "file più grande di 5 MB: non copiato"
   },
   {
    "asl": "asp-cosenza",
@@ -739,7 +770,7 @@
    "titolo": "URP - Azienda Sanitaria Provinciale di Crotone",
    "sha": "73ce5e34243943a2c29518165e9e7a9e3767e709b523d9c1c93e3470ccf0ec82",
    "caratteri": 3839,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asp-crotone",
