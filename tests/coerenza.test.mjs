@@ -88,7 +88,9 @@ const CAMPI_MODULO = {
   'assistenza-domiciliare': (a) => ((a.emails || []).length || a.pec ? [] : ['emails o pec']),
   'cure-palliative': (a) => ((a.emails || []).length || a.pec ? [] : ['emails o pec']),
   ausili: (a) => (a.pec ? [] : ['pec']),
-  prevenzione: () => [],
+  // Prevenzione: il numero dello screening dell'azienda (contacts con topic «screening»). Senza, il risultato non dice chi
+  // chiamare (22/10/2026: acceso solo dove ogni azienda ce l'ha).
+  prevenzione: (a) => ((a.contacts || []).some((c) => c.topic === 'screening') ? [] : ['un contatto «screening»']),
 };
 // I moduli che scrivono all'azienda sanitaria (docs/regioni.md, sezione 9). Problemi trovati aggiungendo le regioni
 // (22/10/2026): le lettere scrivevano «USL di Perugia», «ATS di Genova», «ASREM di Campobasso», aziende che con quel nome
