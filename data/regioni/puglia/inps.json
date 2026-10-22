@@ -1,18 +1,30 @@
 {
  "region": "Puglia",
  "last_verified": "2026-10-21",
- "note": "Indirizzi e PEC delle sedi INPS dalle pagine «sedi» di inps.it, copiate il 21/10/2026 dal server in Italia. Per andare allo sportello si prenota (MyINPS, app, 803 164 / 06 164164). regime (riforma della disabilità) da verificare: finché è null il modulo invalidità non va attivato per questa regione.",
+ "note": "Indirizzi e PEC delle sedi INPS dalle pagine «sedi» di inps.it, copiate il 21/10/2026 dal server in Italia. Per andare allo sportello si prenota (MyINPS, app, 803 164 / 06 164164). Riforma della disabilità (campo regime): province delle tre fasi della sperimentazione lette il 22/10/2026 negli estratti delle notizie INPS (prima fase dal 01/01/2025: Brescia, Catanzaro, Firenze, Forlì-Cesena, Frosinone, Perugia, Salerno, Sassari, Trieste; seconda fase dal 30/09/2025: Alessandria, Genova, Isernia, Lecce, Macerata, Matera, Palermo, Teramo, Vicenza, Valle d'Aosta, Trento; terza fase dal 01/03/2026, 40 province tra cui Brindisi, Potenza, Cosenza, Crotone, Reggio Calabria, Vibo Valentia, Cagliari). Le province che non sono in nessun elenco hanno il regime vecchio fino al 31/12/2026.",
  "sources": [
   {
    "label": "INPS – sedi e contatti in Puglia",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.090000.090000-elencoStruttureInps.html"
+  },
+  {
+   "label": "INPS – Accertamento della disabilità: avvio della sperimentazione (prima fase, dal 1° gennaio 2025)",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2024.12.accertamento-della-disabilit-avvio-sperimentazione-della-riforma.html"
+  },
+  {
+   "label": "INPS – Riforma della disabilità: seconda fase di sperimentazione (dal 30 settembre 2025)",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2025.09.riforma-della-disabilit-in-avvio-la-seconda-fase-di-sperimentazione.html"
+  },
+  {
+   "label": "INPS – Riforma della disabilità: terza fase sperimentale (dal 1° marzo 2026)",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html"
   }
  ],
  "provinces": [
   {
    "id": "barletta-andria-trani",
    "name": "Andria",
-   "regime": null,
+   "regime": "old",
    "regime_since": null,
    "pec": "direzione.provinciale.andria@postacert.inps.gov.it",
    "address": "Via Guido Rossa 12, Andria",
@@ -25,7 +37,7 @@
   {
    "id": "bari",
    "name": "Bari",
-   "regime": null,
+   "regime": "old",
    "regime_since": null,
    "pec": "direzione.provinciale.bari@postacert.inps.gov.it",
    "address": "Lungomare Nazario Sauro 41, Bari",
@@ -38,8 +50,8 @@
   {
    "id": "brindisi",
    "name": "Brindisi",
-   "regime": null,
-   "regime_since": null,
+   "regime": "new",
+   "regime_since": "2026-03-01",
    "pec": "direzione.provinciale.brindisi@postacert.inps.gov.it",
    "address": "Piazza Della Vittoria 1, Brindisi",
    "status": "ok",
@@ -51,7 +63,7 @@
   {
    "id": "foggia",
    "name": "Foggia",
-   "regime": null,
+   "regime": "old",
    "regime_since": null,
    "pec": "direzione.provinciale.foggia@postacert.inps.gov.it",
    "address": "Via Della Repubblica 18, Foggia",
@@ -64,8 +76,8 @@
   {
    "id": "lecce",
    "name": "Lecce",
-   "regime": null,
-   "regime_since": null,
+   "regime": "new",
+   "regime_since": "2025-09-30",
    "pec": "direzione.provinciale.lecce@postacert.inps.gov.it",
    "address": "Viale Marche 12, Lecce",
    "status": "ok",
@@ -77,7 +89,7 @@
   {
    "id": "taranto",
    "name": "Taranto",
-   "regime": null,
+   "regime": "old",
    "regime_since": null,
    "pec": "direzione.provinciale.taranto@postacert.inps.gov.it",
    "address": "Via Golfo Di Taranto 7D, Taranto",
@@ -89,6 +101,6 @@
   }
  ],
  "todo": [
-  "Riforma della disabilità: verificare quali province sono nella sperimentazione e da quando (campo regime)."
+  "Riforma della disabilità: regime letto solo negli estratti delle notizie INPS (22/10/2026, prova «estratto»); rileggere per intero le pagine INPS delle fonti da una connessione italiana. Il server non le copia: tools/copie.mjs copia solo provinces[].url di inps.json."
  ]
 }

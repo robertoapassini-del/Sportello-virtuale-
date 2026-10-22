@@ -148,7 +148,31 @@
     "Guardia medica ASL Bari: la pagina «Continuità assistenziale» spiega orari e servizio ma non dà numeri delle sedi (c’è solo un manifesto in allegato, non copiato). Nessun numero di guardia medica messo.",
     "Centralino ASL Bari: non trovato nelle pagine copiate. In «phones» c’è il numero verde URP.",
     "PUA e cure domiciliari: ci sono solo Bari città e il Distretto di Altamura; mancano gli altri distretti della provincia.",
-    "Non usata la pagina «Ufficio relazioni con il pubblico» di Amministrazione trasparente (solo menu, nessun numero)."
+    "Non usata la pagina «Ufficio relazioni con il pubblico» di Amministrazione trasparente (solo menu, nessun numero).",
+    "Moduli (22/10/2026): attivo solo invalidità (inps.json). Per liste d'attesa, cartella clinica, medico, cure a casa, cure palliative, ausili e prevenzione le copie delle pagine dell'ASL hanno solo i menu: mancano percorso di tutela (canale, indirizzo, documenti, cosa succede dopo), ufficio scelta e revoca, ufficio protesi, cure palliative, uffici cartelle cliniche degli ospedali. Pagine ufficiali aggiunte in «pagine» per la copia del server; da leggere dopo la copia.",
+    "Percorso di tutela ASL Bari («Avviciniamoci»): dalle pagine copiate vale solo per persone con disabilità grave e malati di tumore, non per tutti. Da leggere la pagina in «pagine» dopo la copia. Cartella clinica: gli ospedali di Bari sono anche del Policlinico (azienda ospedaliera, non dell'ASL): serve l'ufficio cartelle di ogni ospedale, come in Sicilia (official_domains)."
+   ],
+   "pagine": [
+    {
+     "tipo": "percorso di tutela (disabilità grave e tumori)",
+     "url": "https://www.sanita.puglia.it/web/asl-bari/-/-avviciniamoci-asl-bari-presenta-il-percorso-di-tutela-per-visite-ed-esami-per-determinate-fasce-di-utenti"
+    },
+    {
+     "tipo": "scelta del medico (Regione)",
+     "url": "https://www.sanita.puglia.it/en/scelta-e-revoca-medico"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.sanita.puglia.it/en/web/asl-bari/-/servizio-protesi-bari"
+    },
+    {
+     "tipo": "cure palliative",
+     "url": "https://www.sanita.puglia.it/web/asl-bari/-/ambulatorio-cure-palliative"
+    },
+    {
+     "tipo": "cartella clinica (Policlinico di Bari)",
+     "url": "https://www.sanita.puglia.it/en/web/policlinico-di-bari-ospedale-giovanni-xxiii/richiedi-la-cartella-clinica"
+    }
    ]
   },
   {
@@ -256,7 +280,8 @@
    "todo": [
     "Guardia medica ASL BT: la pagina dà una sola sede (via Vittore Carpaccio, senza città) con «0883.299.200/821»; ho messo 0883 299200. Che sia Andria lo deduco dalla pagina ADI (RSA di via Vittore Carpaccio, Andria): da confermare. Mancano le altre sedi della provincia. Vedi il todo sul 116117 nella voce Bari.",
     "Centralino ASL BT: non trovato nelle pagine copiate. In «phones» c’è il numero verde URP.",
-    "Cure domiciliari: la pagina elenca gli uffici dei distretti (Andria, Barletta, Bisceglie, Canosa, ecc.) senza telefoni; c’è il numero solo per l’ADI del Distretto 1 (Trinitapoli)."
+    "Cure domiciliari: la pagina elenca gli uffici dei distretti (Andria, Barletta, Bisceglie, Canosa, ecc.) senza telefoni; c’è il numero solo per l’ADI del Distretto 1 (Trinitapoli).",
+    "Moduli (22/10/2026): attivo solo invalidità (inps.json). Per liste d'attesa, cartella clinica, medico, cure a casa, cure palliative, ausili e prevenzione le copie delle pagine dell'ASL hanno solo i menu: mancano percorso di tutela (canale, indirizzo, documenti, cosa succede dopo), ufficio scelta e revoca, ufficio protesi, cure palliative, uffici cartelle cliniche degli ospedali. Pagine ufficiali aggiunte in «pagine» per la copia del server; da leggere dopo la copia."
    ]
   },
   {
@@ -358,7 +383,8 @@
    "todo": [
     "Guardia medica ASL Brindisi: nessuna pagina copiata con le sedi e i numeri. Manca (vedi il todo sul 116117 nella voce Bari).",
     "PUA / cure domiciliari: la pagina PUA elenca i 4 distretti (Brindisi, Fasano, Francavilla Fontana, Mesagne) senza numeri; la pagina ADI dice «in fase di aggiornamento». Nessun numero «casa».",
-    "Screening: sulla home il numero è 080 2442901 (prefisso di Bari): copiato così, da ricontrollare."
+    "Screening: sulla home il numero è 080 2442901 (prefisso di Bari): copiato così, da ricontrollare.",
+    "Moduli (22/10/2026): attivo solo invalidità (inps.json). Per liste d'attesa, cartella clinica, medico, cure a casa, cure palliative, ausili e prevenzione le copie delle pagine dell'ASL hanno solo i menu: mancano percorso di tutela (canale, indirizzo, documenti, cosa succede dopo), ufficio scelta e revoca, ufficio protesi, cure palliative, uffici cartelle cliniche degli ospedali. Pagine ufficiali aggiunte in «pagine» per la copia del server; da leggere dopo la copia."
    ]
   },
   {
@@ -448,7 +474,18 @@
    "todo": [
     "Guardia medica ASL Foggia: la pagina «Continuità assistenziale» non dà sedi né numeri. Manca (vedi il todo sul 116117 nella voce Bari).",
     "Centralino ASL Foggia: non trovato (la pagina «Altri contatti» ha solo PEC ed email). In «phones» c’è il numero verde URP.",
-    "Screening ASL Foggia: nessun numero nelle pagine copiate (home non copiata)."
+    "Screening ASL Foggia: nessun numero nelle pagine copiate (home non copiata).",
+    "Moduli (22/10/2026): attivo solo invalidità (inps.json). Per liste d'attesa, cartella clinica, medico, cure a casa, cure palliative, ausili e prevenzione le copie delle pagine dell'ASL hanno solo i menu: mancano percorso di tutela (canale, indirizzo, documenti, cosa succede dopo), ufficio scelta e revoca, ufficio protesi, cure palliative, uffici cartelle cliniche degli ospedali. Pagine ufficiali aggiunte in «pagine» per la copia del server; da leggere dopo la copia."
+   ],
+   "pagine": [
+    {
+     "tipo": "scelta del medico",
+     "url": "https://www.sanita.puglia.it/en/web/asl-foggia/-/ufficio-scelta-e-revoca-del-medico"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.sanita.puglia.it/web/asl-foggia/-/servizio-di-assistenza-protesica"
+    }
    ]
   },
   {
@@ -615,7 +652,9 @@
    "todo": [
     "Guardia medica ASL Lecce: le sedi con numero sono solo sul vecchio portale sist.sanita.puglia.it, e la copia ha solo la pagina 1 di 4 (comuni dalla A alla G, manca Lecce città). Ho messo solo le sedi aggiornate dal 2023 in poi (Alezio, Campi Salentina, Carmiano, Collepasso, Copertino); le altre della pagina (Alessano, Andrano, Aradeo, Arnesano, Bagnolo, Botrugno, Calimera, Casarano, Castrignano del Capo, Castro, Corigliano, Corsano, Cutrofiano, Gagliano, Galatina) hanno aggiornamenti dal 2016 al 2021 e non le ho usate. Vedi anche il todo sul 116117 nella voce Bari: Lecce sarà una delle tre centrali.",
     "Centralino e numero verde screening presi dalla home del vecchio portale sist (notizie fino al 2025): da riconfermare sul portale nuovo (la pagina «Altri contatti» del portale nuovo risponde 404).",
-    "PUA e ADI: ci sono solo il Distretto di Casarano (PUA) e di Poggiardo (ADI); mancano gli altri distretti."
+    "PUA e ADI: ci sono solo il Distretto di Casarano (PUA) e di Poggiardo (ADI); mancano gli altri distretti.",
+    "Moduli (22/10/2026): attivo solo invalidità (inps.json). Per liste d'attesa, cartella clinica, medico, cure a casa, cure palliative, ausili e prevenzione le copie delle pagine dell'ASL hanno solo i menu: mancano percorso di tutela (canale, indirizzo, documenti, cosa succede dopo), ufficio scelta e revoca, ufficio protesi, cure palliative, uffici cartelle cliniche degli ospedali. Pagine ufficiali aggiunte in «pagine» per la copia del server; da leggere dopo la copia.",
+    "Percorso di tutela ASL Lecce (pagina «Modalità di prenotazione», copia del 21/10/2026): chi non trova posto nei tempi della classe, o non accetta la prima data, chiede agli sportelli CUP l'attivazione dei «Percorsi di Tutela». La pagina non dice documenti, tempi di risposta né indirizzo: mancano per liste d'attesa."
    ]
   },
   {
@@ -781,7 +820,18 @@
     "Guardia medica ASL Taranto: nessun elenco completo delle sedi; ho messo solo le sedi con numero nelle notizie del 2026 (San Giorgio Ionico, Lizzano, Manduria, Maruggio). Mancano Taranto città e le altre sedi. Vedi il todo sul 116117 nella voce Bari.",
     "Sava: numero in contraddizione (099/972.74.23 nella notizia del 2024, 099 800444 in quella del 02/10/2026) e sede chiusa a turni per carenza di medici: non messa. Avetrana: «sede al momento priva di medici incaricati», non messa.",
     "Lizzano: la notizia del 02/10/2026 dà ancora il vecchio indirizzo (Via Bruno Buozzi 8/A); ho usato quello nuovo della notizia del 29/09/2026 (Via Mazzola 2). Il numero è lo stesso.",
-    "Centralino ASL Taranto: non trovato nelle pagine copiate. In «phones» c’è il numero verde URP."
+    "Centralino ASL Taranto: non trovato nelle pagine copiate. In «phones» c’è il numero verde URP.",
+    "Moduli (22/10/2026): attivo solo invalidità (inps.json). Per liste d'attesa, cartella clinica, medico, cure a casa, cure palliative, ausili e prevenzione le copie delle pagine dell'ASL hanno solo i menu: mancano percorso di tutela (canale, indirizzo, documenti, cosa succede dopo), ufficio scelta e revoca, ufficio protesi, cure palliative, uffici cartelle cliniche degli ospedali. Pagine ufficiali aggiunte in «pagine» per la copia del server; da leggere dopo la copia."
+   ],
+   "pagine": [
+    {
+     "tipo": "scelta del medico",
+     "url": "https://www.sanita.puglia.it/en/web/asl-taranto/-/scelta-e-revoca-del-medico-di-famiglia"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://aress.sanita.puglia.it/en/web/asl-taranto/servizio-protesi"
+    }
    ]
   }
  ]
