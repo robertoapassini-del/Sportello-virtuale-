@@ -14,7 +14,8 @@
     "regione.sardegna.it",
     "sardegnasalute.it",
     "aressardegna.it",
-    "areus.sardegna.it"
+    "areus.sardegna.it",
+    "aslcagliari.it"
    ],
    "guardia_medica_url": "https://www.asl8cagliari.it/servizio/servizio-di-continuita-assistenziale-ex-guardia-medica/",
    "pua_url": "https://www.asl8cagliari.it/servizio/assistenza-domiciliare-integrata-adi/",
@@ -146,16 +147,26 @@
     {
      "label": "ASL Cagliari – ADI e PUA",
      "url": "https://www.asl8cagliari.it/servizio/assistenza-domiciliare-integrata-adi/"
+    },
+    {
+     "label": "Sardegna Salute (Regione Sardegna) – Scelta e revoca del medico",
+     "url": "https://www.sardegnasalute.it/sceltamedico/"
+    },
+    {
+     "label": "ASL Cagliari – PEC e URP",
+     "url": "https://www.asl8cagliari.it/come_fare_per/segnalare-disservizi/"
     }
    ],
    "last_verified": "2026-10-21",
    "todo": [
     "Guardia medica: la pagina dell'ASL Cagliari (ultima modifica 10 dicembre 2025) indica per quasi tutte le sedi «Telefono 116117» (più cellulari di servizio), ma AREUS il 28 maggio 2026 scriveva che nell'ASL di Cagliari l'attivazione del 116117 era solo «prevista entro l'anno». Le fonti si contraddicono: non ho messo numeri di guardia medica. Da verificare se il 116117 è attivo nel distretto telefonico 070.",
     "Manca il numero del PUA del Distretto 5 (Sarcidano, Barbagia di Seulo e Trexenta).",
-    "Moduli (22/10/2026): nessuno attivo oltre ai numeri utili. Le email e le PEC sulle pagine delle ASL sarde sono nascoste (Cloudflare «[email protected]»): la copia non le ha, quindi mancano PEC e indirizzi per tutte le lettere. Serve che tools/copie.mjs decodifichi gli indirizzi (data-cfemail) o un'altra fonte ufficiale (IndicePA). Invalidità: regime null in 4 sedi (inps.json, todo).",
-    "Percorso di tutela: delibera n. 349 del 17/05/2024 (estratto del motore di ricerca: percorso A in intramoenia pagando solo il ticket, percorso B dal privato accreditato con rimborso). Pagine in «pagine», da leggere dopo la copia."
+    "Percorso di tutela: delibera n. 349 del 17/05/2024 (estratto del motore di ricerca: percorso A in intramoenia pagando solo il ticket, percorso B dal privato accreditato con rimborso). Pagine in «pagine», da leggere dopo la copia.",
+    "Moduli (22/10/2026, secondo giro): le copie ora hanno le email in chiaro. PEC e URP dalle copie; accesi medico di famiglia (scelta_medico dalla pagina regionale «Scelta e revoca del medico», Zente Web) e cartella clinica. Spenti: liste d'attesa (percorso di tutela provato solo per Medio Campidano e Nuoro; Cagliari rimanda all'Allegato A in PDF, non ancora estratto; Sassari non dice i documenti; Gallura, Ogliastra, Oristano e Sulcis senza pagina), assistenza a casa (manca il PUA dell'ASL Sassari), cure palliative e ausili (uffici solo in alcune ASL). Invalidità: regime null in 4 sedi (inps.json, todo)."
    ],
-   "emails": [],
+   "emails": [
+    "urpcagliari@aslcagliari.it"
+   ],
    "pagine": [
     {
      "tipo": "percorso di tutela",
@@ -173,7 +184,13 @@
      "tipo": "scelta del medico (Regione)",
      "url": "https://www.sardegnasalute.it/sceltamedico/"
     }
-   ]
+   ],
+   "pec": "protocollo@pec.aslcagliari.it",
+   "scelta_medico": {
+    "how": "In Sardegna puoi scegliere, cambiare o togliere il medico o il pediatra online, con il servizio della Regione «Zente Web» (zente.sardegnasalute.it). Entri con SPID, CIE o la tessera sanitaria attivata (TS-CNS). Il cambio vale subito: stampa il foglio della scelta e portalo al nuovo medico. Online puoi cambiare una volta ogni 30 giorni. Per un medico fuori dal tuo ambito («in deroga») vai allo sportello scelta e revoca della tua ASL.",
+    "url": "https://www.sardegnasalute.it/sceltamedico/",
+    "url_label": "Sito della Regione"
+   }
   },
   {
    "id": "gallura",
@@ -294,21 +311,41 @@
     {
      "label": "AREUS – 116117 attivo in ASL Gallura",
      "url": "https://www.areus.sardegna.it/116117-attivo-in-asl-gallura/"
+    },
+    {
+     "label": "Sardegna Salute (Regione Sardegna) – Scelta e revoca del medico",
+     "url": "https://www.sardegnasalute.it/sceltamedico/"
+    },
+    {
+     "label": "ASL Gallura – PEC e URP",
+     "url": "https://www.aslgallura.it/azienda/contatti/"
     }
    ],
    "last_verified": "2026-10-21",
    "todo": [
     "Nelle pagine copiate non c'è un numero di centralino dell'ASL Gallura (solo la segreteria della Direzione, 0789 552305).",
     "Il numero CUP da cellulare indicato dall'ASL Gallura (070 4675090) è diverso da quello del CupWeb regionale e delle altre ASL (070 276424 / 070 474747): da chiarire.",
-    "Moduli (22/10/2026): nessuno attivo oltre ai numeri utili. Le email e le PEC sulle pagine delle ASL sarde sono nascoste (Cloudflare «[email protected]»): la copia non le ha, quindi mancano PEC e indirizzi per tutte le lettere. Serve che tools/copie.mjs decodifichi gli indirizzi (data-cfemail) o un'altra fonte ufficiale (IndicePA). Invalidità: regime null in 4 sedi (inps.json, todo)."
+    "Moduli (22/10/2026, secondo giro): le copie ora hanno le email in chiaro. PEC e URP dalle copie; accesi medico di famiglia (scelta_medico dalla pagina regionale «Scelta e revoca del medico», Zente Web) e cartella clinica. Spenti: liste d'attesa (percorso di tutela provato solo per Medio Campidano e Nuoro; Cagliari rimanda all'Allegato A in PDF, non ancora estratto; Sassari non dice i documenti; Gallura, Ogliastra, Oristano e Sulcis senza pagina), assistenza a casa (manca il PUA dell'ASL Sassari), cure palliative e ausili (uffici solo in alcune ASL). Invalidità: regime null in 4 sedi (inps.json, todo)."
    ],
-   "emails": [],
+   "emails": [
+    "urp.olbia@aslgallura.it"
+   ],
    "pagine": [
     {
      "tipo": "scelta del medico",
      "url": "https://www.aslgallura.it/servizio/scelta-e-revoca-del-medico-2/"
+    },
+    {
+     "tipo": "liste di attesa",
+     "url": "https://www.aslgallura.it/amministrazione-trasparente/servizi-erogati/liste-di-attesa/"
     }
-   ]
+   ],
+   "pec": "protocollo@pec.aslgallura.it",
+   "scelta_medico": {
+    "how": "In Sardegna puoi scegliere, cambiare o togliere il medico o il pediatra online, con il servizio della Regione «Zente Web» (zente.sardegnasalute.it). Entri con SPID, CIE o la tessera sanitaria attivata (TS-CNS). Il cambio vale subito: stampa il foglio della scelta e portalo al nuovo medico. Online puoi cambiare una volta ogni 30 giorni. Per un medico fuori dal tuo ambito («in deroga») vai allo sportello scelta e revoca della tua ASL.",
+    "url": "https://www.sardegnasalute.it/sceltamedico/",
+    "url_label": "Sito della Regione"
+   }
   },
   {
    "id": "medio-campidano",
@@ -426,21 +463,66 @@
     {
      "label": "ASL Medio Campidano – ADI",
      "url": "https://www.aslmediocampidano.it/servizio/14711/"
+    },
+    {
+     "label": "Sardegna Salute (Regione Sardegna) – Scelta e revoca del medico",
+     "url": "https://www.sardegnasalute.it/sceltamedico/"
+    },
+    {
+     "label": "ASL Medio Campidano – PEC e URP",
+     "url": "https://www.aslmediocampidano.it/servizio/centro-unico-di-prenotazione-cup/"
+    },
+    {
+     "label": "ASL Medio Campidano – Percorso di tutela",
+     "url": "https://www.aslmediocampidano.it/percorso-di-tutela-accesso-alternativo-a-prestazioni-specialistiche/"
     }
    ],
    "last_verified": "2026-10-21",
    "todo": [
     "Guardia medica: secondo AREUS (28 maggio 2026) il 116117 nell'ASL Medio Campidano è previsto «entro l'anno», ma nessuna pagina copiata dice che sia già attivo; nelle pagine dell'ASL non ci sono i numeri delle sedi di guardia medica. Manca il numero da chiamare.",
     "Nella pagina ADI non è chiaro a quale distretto si riferiscano i numeri delle cure domiciliari.",
-    "Moduli (22/10/2026): nessuno attivo oltre ai numeri utili. Le email e le PEC sulle pagine delle ASL sarde sono nascoste (Cloudflare «[email protected]»): la copia non le ha, quindi mancano PEC e indirizzi per tutte le lettere. Serve che tools/copie.mjs decodifichi gli indirizzi (data-cfemail) o un'altra fonte ufficiale (IndicePA). Invalidità: regime null in 4 sedi (inps.json, todo).",
-    "Percorso di tutela: procedura PV251 (estratto). Pagina in «pagine», da leggere dopo la copia."
+    "Moduli (22/10/2026, secondo giro): le copie ora hanno le email in chiaro. PEC e URP dalle copie; accesi medico di famiglia (scelta_medico dalla pagina regionale «Scelta e revoca del medico», Zente Web) e cartella clinica. Spenti: liste d'attesa (percorso di tutela provato solo per Medio Campidano e Nuoro; Cagliari rimanda all'Allegato A in PDF, non ancora estratto; Sassari non dice i documenti; Gallura, Ogliastra, Oristano e Sulcis senza pagina), assistenza a casa (manca il PUA dell'ASL Sassari), cure palliative e ausili (uffici solo in alcune ASL). Invalidità: regime null in 4 sedi (inps.json, todo).",
+    "Percorso di tutela (pagina dell'ASL, copia del 22/10/2026): domanda con il modulo A alla PEC protocollo@pec.aslmediocampidano.it; documenti, risposta dell'URP e rimborso scritti in liste d'attesa. Manca il link al modulo A (allegato della pagina)."
    ],
-   "emails": [],
+   "emails": [
+    "urp.sanluri@aslmediocampidano.it"
+   ],
    "pagine": [
     {
      "tipo": "percorso di tutela",
      "url": "https://www.aslmediocampidano.it/percorso-di-tutela-accesso-alternativo-a-prestazioni-specialistiche/"
     }
+   ],
+   "pec": "protocollo@pec.aslmediocampidano.it",
+   "scelta_medico": {
+    "how": "In Sardegna puoi scegliere, cambiare o togliere il medico o il pediatra online, con il servizio della Regione «Zente Web» (zente.sardegnasalute.it). Entri con SPID, CIE o la tessera sanitaria attivata (TS-CNS). Il cambio vale subito: stampa il foglio della scelta e portalo al nuovo medico. Online puoi cambiare una volta ogni 30 giorni. Per un medico fuori dal tuo ambito («in deroga») vai allo sportello scelta e revoca della tua ASL.",
+    "url": "https://www.sardegnasalute.it/sceltamedico/",
+    "url_label": "Sito della Regione"
+   },
+   "channel": "pec",
+   "letter_mode": "letter",
+   "send_to": "protocollo@pec.aslmediocampidano.it",
+   "info_url": "https://www.aslmediocampidano.it/percorso-di-tutela-accesso-alternativo-a-prestazioni-specialistiche/",
+   "how_to": "Chiedi il percorso di tutela all'URP dell'ASL Medio Campidano. Compila il «modulo A – richiesta percorso di tutela»: lo trovi sulla pagina dell'ASL. Mandalo con la PEC a protocollo@pec.aslmediocampidano.it, insieme ai fogli dell'elenco.",
+   "documents_required": [
+    "Foglio della prenotazione del CUP con la prima data che ti hanno dato",
+    "Ricetta del medico completa: prima visita o primo esame, quesito diagnostico, classe di priorità",
+    "Breve relazione del medico: perché serve la visita e perché quella classe",
+    "Documento d'identità (copia)",
+    "Tessera sanitaria (copia)",
+    "Se scrivi per un'altra persona: delega o procura e il tuo documento d'identità"
+   ],
+   "what_next": [
+    "L'URP controlla che la domanda sia completa e la passa a una commissione.",
+    "L'URP ti risponde: ti dà una data nei tempi, oppure ti autorizza a fare la visita in libera professione (intramoenia).",
+    "Con l'autorizzazione prenoti tu e paghi prima. Poi chiedi il rimborso con la PEC, con l'oggetto «Richiesta rimborso Percorso di tutela». Ti tolgono il ticket, se lo devi pagare."
+   ],
+   "notes": [
+    "In Medio Campidano: vale per chi abita nell'ASL Medio Campidano, per le prime visite e i primi esami del Piano nazionale delle liste d'attesa."
+   ],
+   "details": [
+    "Il tempo per la visita riparte dal giorno della domanda.",
+    "Per il rimborso servono: la domanda (Allegato B), l'autorizzazione dell'ASL, la ricevuta del pagamento e il documento d'identità."
    ]
   },
   {
@@ -454,7 +536,8 @@
     "regione.sardegna.it",
     "sardegnasalute.it",
     "aressardegna.it",
-    "areus.sardegna.it"
+    "areus.sardegna.it",
+    "aslnuoro.it"
    ],
    "guardia_medica_url": "https://www.asl3nuoro.it/asl-nuoro-il-nuovo-numero-per-chiamare-la-guardia-medica/",
    "pua_url": "https://www.asl3nuoro.it/strutture/pua-nuoro/",
@@ -587,15 +670,21 @@
     {
      "label": "ASL Nuoro – Percorso di tutela (accesso alternativo alle visite)",
      "url": "https://www.asl3nuoro.it/servizio/percorso-di-tutela-di-accesso-alternativo-alle-prestazioni-specialistiche/"
+    },
+    {
+     "label": "Sardegna Salute (Regione Sardegna) – Scelta e revoca del medico",
+     "url": "https://www.sardegnasalute.it/sceltamedico/"
     }
    ],
    "last_verified": "2026-10-21",
    "todo": [
     "Mancano i numeri dei PUA dei Distretti di Siniscola e Sorgono (sono in file allegati non copiati).",
-    "Moduli (22/10/2026): nessuno attivo oltre ai numeri utili. Le email e le PEC sulle pagine delle ASL sarde sono nascoste (Cloudflare «[email protected]»): la copia non le ha, quindi mancano PEC e indirizzi per tutte le lettere. Serve che tools/copie.mjs decodifichi gli indirizzi (data-cfemail) o un'altra fonte ufficiale (IndicePA). Invalidità: regime null in 4 sedi (inps.json, todo).",
-    "Percorso di tutela: canale, documenti e cosa succede dopo letti nella pagina dell'ASL (copia del 21/10/2026, cartella asl-nuoro, non ancora nell'indice). Manca l'indirizzo email dell'URP (nascosto nella copia) e il link al modulo (Allegato A, PDF): send_to e form_url restano vuoti."
+    "Moduli (22/10/2026, secondo giro): le copie ora hanno le email in chiaro. PEC e URP dalle copie; accesi medico di famiglia (scelta_medico dalla pagina regionale «Scelta e revoca del medico», Zente Web) e cartella clinica. Spenti: liste d'attesa (percorso di tutela provato solo per Medio Campidano e Nuoro; Cagliari rimanda all'Allegato A in PDF, non ancora estratto; Sassari non dice i documenti; Gallura, Ogliastra, Oristano e Sulcis senza pagina), assistenza a casa (manca il PUA dell'ASL Sassari), cure palliative e ausili (uffici solo in alcune ASL). Invalidità: regime null in 4 sedi (inps.json, todo).",
+    "Percorso di tutela: canale, documenti e cosa succede dopo letti nella pagina dell'ASL (copia del 22/10/2026); send_to = urp.nuoro@aslnuoro.it, l'indirizzo che la pagina dà per la domanda. Manca il link al modulo (Allegato A, PDF): form_url resta vuoto."
    ],
-   "emails": [],
+   "emails": [
+    "urp.nuoro@aslnuoro.it"
+   ],
    "pagine": [
     {
      "tipo": "scelta del medico",
@@ -608,7 +697,7 @@
    ],
    "channel": "email",
    "letter_mode": "letter",
-   "send_to": null,
+   "send_to": "urp.nuoro@aslnuoro.it",
    "form_url": null,
    "info_url": "https://www.asl3nuoro.it/servizio/percorso-di-tutela-di-accesso-alternativo-alle-prestazioni-specialistiche/",
    "portal_url": null,
@@ -631,7 +720,13 @@
     "La domanda senza tutti i fogli non viene accettata.",
     "Se rifiuti una data che rispetta i tempi, l'ASL non deve cercarti un altro posto.",
     "Per il rimborso servono: la domanda (Allegato B), l'autorizzazione dell'URP, la fattura pagata, il documento, l'IBAN, la ricetta e la tessera sanitaria."
-   ]
+   ],
+   "pec": "protocollo@pec.aslnuoro.it",
+   "scelta_medico": {
+    "how": "In Sardegna puoi scegliere, cambiare o togliere il medico o il pediatra online, con il servizio della Regione «Zente Web» (zente.sardegnasalute.it). Entri con SPID, CIE o la tessera sanitaria attivata (TS-CNS). Il cambio vale subito: stampa il foglio della scelta e portalo al nuovo medico. Online puoi cambiare una volta ogni 30 giorni. Per un medico fuori dal tuo ambito («in deroga») vai allo sportello scelta e revoca della tua ASL.",
+    "url": "https://www.sardegnasalute.it/sceltamedico/",
+    "url_label": "Sito della Regione"
+   }
   },
   {
    "id": "ogliastra",
@@ -743,15 +838,26 @@
     {
      "label": "ASL Ogliastra – PUA",
      "url": "https://www.aslogliastra.it/servizio/punto-unico-di-accesso-pua/"
+    },
+    {
+     "label": "Sardegna Salute (Regione Sardegna) – Scelta e revoca del medico",
+     "url": "https://www.sardegnasalute.it/sceltamedico/"
     }
    ],
    "last_verified": "2026-10-21",
    "todo": [
     "Nelle pagine copiate non c'è un numero dell'URP dell'ASL Ogliastra.",
     "L'elenco guardie mediche dell'ASL riporta ancora per Jerzu il vecchio numero 0782 70170, ma dal 23 agosto 2025 i numeri 0782 sono stati dismessi: non usato.",
-    "Moduli (22/10/2026): nessuno attivo oltre ai numeri utili. Le email e le PEC sulle pagine delle ASL sarde sono nascoste (Cloudflare «[email protected]»): la copia non le ha, quindi mancano PEC e indirizzi per tutte le lettere. Serve che tools/copie.mjs decodifichi gli indirizzi (data-cfemail) o un'altra fonte ufficiale (IndicePA). Invalidità: regime null in 4 sedi (inps.json, todo)."
+    "Moduli (22/10/2026, secondo giro): le copie ora hanno le email in chiaro. PEC e URP dalle copie; accesi medico di famiglia (scelta_medico dalla pagina regionale «Scelta e revoca del medico», Zente Web) e cartella clinica. Spenti: liste d'attesa (percorso di tutela provato solo per Medio Campidano e Nuoro; Cagliari rimanda all'Allegato A in PDF, non ancora estratto; Sassari non dice i documenti; Gallura, Ogliastra, Oristano e Sulcis senza pagina), assistenza a casa (manca il PUA dell'ASL Sassari), cure palliative e ausili (uffici solo in alcune ASL). Invalidità: regime null in 4 sedi (inps.json, todo).",
+    "Email URP dell'ASL Ogliastra: non c'è nelle copie (c'è protocollo@aslogliastra.it nei «Contatti generali»). Le lettere vanno alla PEC protocollo@pec.aslogliastra.it."
    ],
-   "emails": []
+   "emails": [],
+   "pec": "protocollo@pec.aslogliastra.it",
+   "scelta_medico": {
+    "how": "In Sardegna puoi scegliere, cambiare o togliere il medico o il pediatra online, con il servizio della Regione «Zente Web» (zente.sardegnasalute.it). Entri con SPID, CIE o la tessera sanitaria attivata (TS-CNS). Il cambio vale subito: stampa il foglio della scelta e portalo al nuovo medico. Online puoi cambiare una volta ogni 30 giorni. Per un medico fuori dal tuo ambito («in deroga») vai allo sportello scelta e revoca della tua ASL.",
+    "url": "https://www.sardegnasalute.it/sceltamedico/",
+    "url_label": "Sito della Regione"
+   }
   },
   {
    "id": "oristano",
@@ -764,7 +870,8 @@
     "regione.sardegna.it",
     "sardegnasalute.it",
     "aressardegna.it",
-    "areus.sardegna.it"
+    "areus.sardegna.it",
+    "asloristano.it"
    ],
    "guardia_medica_url": "https://www.asl5oristano.it/servizi/servizi-al-cittadino/guardie-mediche/",
    "pua_url": "https://www.asl5oristano.it/strutture/punto-unico-di-accesso-oristano/",
@@ -845,21 +952,37 @@
     {
      "label": "ASL Oristano – PUA Oristano",
      "url": "https://www.asl5oristano.it/strutture/punto-unico-di-accesso-oristano/"
+    },
+    {
+     "label": "Sardegna Salute (Regione Sardegna) – Scelta e revoca del medico",
+     "url": "https://www.sardegnasalute.it/sceltamedico/"
+    },
+    {
+     "label": "ASL Oristano – PEC e URP",
+     "url": "https://www.asl5oristano.it/servizio/ufficio-relazioni-con-il-pubblico/"
     }
    ],
    "last_verified": "2026-10-21",
    "todo": [
     "L'URP dell'ASL Oristano risponde solo via e-mail: nelle pagine non c'è un numero di telefono.",
     "Mancano i numeri dei PUA dei Distretti di Ghilarza-Bosa e Ales-Terralba.",
-    "Moduli (22/10/2026): nessuno attivo oltre ai numeri utili. Le email e le PEC sulle pagine delle ASL sarde sono nascoste (Cloudflare «[email protected]»): la copia non le ha, quindi mancano PEC e indirizzi per tutte le lettere. Serve che tools/copie.mjs decodifichi gli indirizzi (data-cfemail) o un'altra fonte ufficiale (IndicePA). Invalidità: regime null in 4 sedi (inps.json, todo)."
+    "Moduli (22/10/2026, secondo giro): le copie ora hanno le email in chiaro. PEC e URP dalle copie; accesi medico di famiglia (scelta_medico dalla pagina regionale «Scelta e revoca del medico», Zente Web) e cartella clinica. Spenti: liste d'attesa (percorso di tutela provato solo per Medio Campidano e Nuoro; Cagliari rimanda all'Allegato A in PDF, non ancora estratto; Sassari non dice i documenti; Gallura, Ogliastra, Oristano e Sulcis senza pagina), assistenza a casa (manca il PUA dell'ASL Sassari), cure palliative e ausili (uffici solo in alcune ASL). Invalidità: regime null in 4 sedi (inps.json, todo)."
    ],
-   "emails": [],
+   "emails": [
+    "urp@asloristano.it"
+   ],
    "pagine": [
     {
      "tipo": "scelta del medico",
      "url": "https://www.asl5oristano.it/servizio/scelta-e-revoca-medico-e-pediatria/"
     }
-   ]
+   ],
+   "pec": "protocollo@pec.asloristano.it",
+   "scelta_medico": {
+    "how": "In Sardegna puoi scegliere, cambiare o togliere il medico o il pediatra online, con il servizio della Regione «Zente Web» (zente.sardegnasalute.it). Entri con SPID, CIE o la tessera sanitaria attivata (TS-CNS). Il cambio vale subito: stampa il foglio della scelta e portalo al nuovo medico. Online puoi cambiare una volta ogni 30 giorni. Per un medico fuori dal tuo ambito («in deroga») vai allo sportello scelta e revoca della tua ASL.",
+    "url": "https://www.sardegnasalute.it/sceltamedico/",
+    "url_label": "Sito della Regione"
+   }
   },
   {
    "id": "sassari",
@@ -872,7 +995,8 @@
     "regione.sardegna.it",
     "sardegnasalute.it",
     "aressardegna.it",
-    "areus.sardegna.it"
+    "areus.sardegna.it",
+    "aslsassari.it"
    ],
    "guardia_medica_url": "https://www.areus.sardegna.it/nella-asl-di-sassari-arriva-il-numero-116117/",
    "phones": [
@@ -963,6 +1087,10 @@
     {
      "label": "CupWeb regionale – Aiuto e recapiti",
      "url": "https://cupweb.sardegnasalute.it/en/aiuto"
+    },
+    {
+     "label": "Sardegna Salute (Regione Sardegna) – Scelta e revoca del medico",
+     "url": "https://www.sardegnasalute.it/sceltamedico/"
     }
    ],
    "last_verified": "2026-10-21",
@@ -970,10 +1098,12 @@
     "116117 in Sardegna (gestito da AREUS, centrale a Nuoro, gratuito, 24 ore su 24): attivato dal 10 settembre 2024 nel Sulcis Iglesiente (solo 116117 dal 23 agosto 2025), da maggio 2025 in Ogliastra (solo 116117 dal 23 agosto 2025), a luglio 2025 a Nuoro (solo 116117 dal 23 agosto 2025), a settembre 2025 a Oristano, dal 18–19 dicembre 2025 in Gallura, dal 28 maggio 2026 a Sassari (distretto telefonico 079, 28 postazioni; confermato dall'ASL Sassari il 21 ottobre 2026). Per Medio Campidano e Cagliari AREUS (28 maggio 2026) dice «prevista entro l'anno»: nessuna pagina copiata ne conferma l'avvio (la pagina guardie mediche dell'ASL Cagliari però riporta già il 116117: contraddizione). Quindi NON è ancora su tutto il territorio regionale.",
     "CUP: c'è un numero unico regionale di prenotazione, 1533, gratuito solo da telefono fisso, dal lunedì al venerdì 8–18 (fonte regionale: https://cupweb.sardegnasalute.it/en/aiuto e https://www.sardegnasalute.it/index.php?xsl=316&s=9&v=9&c=2934&esp=1). Da cellulare il CupWeb regionale indica 070 276424 e 070 474747; ma alcune ASL indicano numeri da cellulare diversi: Gallura 070 4675090, Oristano 0783 317293, Ogliastra 0782 490315 (CUP aziendale). Gli sportelli CUP sono delle singole ASL.",
     "Il centralino dell'ASL Sassari nelle pagine è scritto «07920610000» (11 cifre, probabilmente una cifra in più): non usato, da verificare.",
-    "Moduli (22/10/2026): nessuno attivo oltre ai numeri utili. Le email e le PEC sulle pagine delle ASL sarde sono nascoste (Cloudflare «[email protected]»): la copia non le ha, quindi mancano PEC e indirizzi per tutte le lettere. Serve che tools/copie.mjs decodifichi gli indirizzi (data-cfemail) o un'altra fonte ufficiale (IndicePA). Invalidità: regime null in 4 sedi (inps.json, todo).",
-    "Percorso di tutela (notizia del 05/03/2026, copia del 21/10/2026): si attiva contattando l'URP, per telefono 079 2084490 (lunedì–venerdì 10–13), per email o agli sportelli di Sassari (via Enrico Costa 57), Alghero (via degli Orti 93) e Castelsardo (Porto turistico); classi U 72 ore, B 10 giorni, D 30/60 giorni, P 120 giorni; se non c'è posto l'ASL autorizza il privato accreditato e risponde per iscritto. La pagina non dice i documenti: per questo non ho scritto how_to e gli altri campi."
+    "Percorso di tutela (notizia del 05/03/2026, copia del 21/10/2026): si attiva contattando l'URP, per telefono 079 2084490 (lunedì–venerdì 10–13), per email o agli sportelli di Sassari (via Enrico Costa 57), Alghero (via degli Orti 93) e Castelsardo (Porto turistico); classi U 72 ore, B 10 giorni, D 30/60 giorni, P 120 giorni; se non c'è posto l'ASL autorizza il privato accreditato e risponde per iscritto. La pagina non dice i documenti: per questo non ho scritto how_to e gli altri campi.",
+    "Moduli (22/10/2026, secondo giro): le copie ora hanno le email in chiaro. PEC e URP dalle copie; accesi medico di famiglia (scelta_medico dalla pagina regionale «Scelta e revoca del medico», Zente Web) e cartella clinica. Spenti: liste d'attesa (percorso di tutela provato solo per Medio Campidano e Nuoro; Cagliari rimanda all'Allegato A in PDF, non ancora estratto; Sassari non dice i documenti; Gallura, Ogliastra, Oristano e Sulcis senza pagina), assistenza a casa (manca il PUA dell'ASL Sassari), cure palliative e ausili (uffici solo in alcune ASL). Invalidità: regime null in 4 sedi (inps.json, todo)."
    ],
-   "emails": [],
+   "emails": [
+    "urp@aslsassari.it"
+   ],
    "pagine": [
     {
      "tipo": "percorso di tutela",
@@ -982,8 +1112,18 @@
     {
      "tipo": "cure palliative",
      "url": "https://www.asl1sassari.it/asl-sassari-apre-lhospice-san-giovanni-battista/"
+    },
+    {
+     "tipo": "cure a casa (PUA e ADI)",
+     "url": "https://www.asl1sassari.it/adi-e-pua-di-alghero-comunicazione-della-asl-di-sassari/"
     }
-   ]
+   ],
+   "pec": "protocollo@pec.aslsassari.it",
+   "scelta_medico": {
+    "how": "In Sardegna puoi scegliere, cambiare o togliere il medico o il pediatra online, con il servizio della Regione «Zente Web» (zente.sardegnasalute.it). Entri con SPID, CIE o la tessera sanitaria attivata (TS-CNS). Il cambio vale subito: stampa il foglio della scelta e portalo al nuovo medico. Online puoi cambiare una volta ogni 30 giorni. Per un medico fuori dal tuo ambito («in deroga») vai allo sportello scelta e revoca della tua ASL.",
+    "url": "https://www.sardegnasalute.it/sceltamedico/",
+    "url_label": "Sito della Regione"
+   }
   },
   {
    "id": "sulcis",
@@ -1122,20 +1262,37 @@
     {
      "label": "Regione Sardegna – 116117 avviato nel Sulcis Iglesiente",
      "url": "https://www.regione.sardegna.it/notizie/areus-ha-avviato-nella-asl-sulcis-iglesiente-il-nuovo-servizio-116117-per-le-cure-mediche-non-urgenti"
+    },
+    {
+     "label": "Sardegna Salute (Regione Sardegna) – Scelta e revoca del medico",
+     "url": "https://www.sardegnasalute.it/sceltamedico/"
+    },
+    {
+     "label": "ASL Sulcis Iglesiente – PEC e URP",
+     "url": "https://www.aslsulcis.it/azienda/servizi-e-funzioni-di-staff/urp/"
     }
    ],
    "last_verified": "2026-10-21",
    "todo": [
     "Lo sportello PUA di Carbonia (San Ponziano) è aperto lunedì 9–12.30 e mercoledì 15–17 senza appuntamento, ma la pagina non dà un numero di telefono.",
-    "Moduli (22/10/2026): nessuno attivo oltre ai numeri utili. Le email e le PEC sulle pagine delle ASL sarde sono nascoste (Cloudflare «[email protected]»): la copia non le ha, quindi mancano PEC e indirizzi per tutte le lettere. Serve che tools/copie.mjs decodifichi gli indirizzi (data-cfemail) o un'altra fonte ufficiale (IndicePA). Invalidità: regime null in 4 sedi (inps.json, todo)."
+    "Moduli (22/10/2026, secondo giro): le copie ora hanno le email in chiaro. PEC e URP dalle copie; accesi medico di famiglia (scelta_medico dalla pagina regionale «Scelta e revoca del medico», Zente Web) e cartella clinica. Spenti: liste d'attesa (percorso di tutela provato solo per Medio Campidano e Nuoro; Cagliari rimanda all'Allegato A in PDF, non ancora estratto; Sassari non dice i documenti; Gallura, Ogliastra, Oristano e Sulcis senza pagina), assistenza a casa (manca il PUA dell'ASL Sassari), cure palliative e ausili (uffici solo in alcune ASL). Invalidità: regime null in 4 sedi (inps.json, todo)."
    ],
-   "emails": [],
+   "emails": [
+    "urp.carbonia@aslsulcis.it",
+    "urp.iglesias@aslsulcis.it"
+   ],
    "pagine": [
     {
      "tipo": "scelta del medico",
      "url": "https://www.aslsulcis.it/servizio/scelta-revoca-esenzioni/"
     }
-   ]
+   ],
+   "pec": "protocollo@pec.aslsulcis.it",
+   "scelta_medico": {
+    "how": "In Sardegna puoi scegliere, cambiare o togliere il medico o il pediatra online, con il servizio della Regione «Zente Web» (zente.sardegnasalute.it). Entri con SPID, CIE o la tessera sanitaria attivata (TS-CNS). Il cambio vale subito: stampa il foglio della scelta e portalo al nuovo medico. Online puoi cambiare una volta ogni 30 giorni. Per un medico fuori dal tuo ambito («in deroga») vai allo sportello scelta e revoca della tua ASL.",
+    "url": "https://www.sardegnasalute.it/sceltamedico/",
+    "url_label": "Sito della Regione"
+   }
   }
  ]
 }
