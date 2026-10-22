@@ -46,13 +46,18 @@ const ECCEZIONI = {
   ],
   'fascicolo-e-ricetta': [
     { testo: /la copia ti spetta entro 7 giorni$/, perche: 'copia della cartella clinica: sta nel modulo cartella-clinica', valore: (d, tutti) => tutti['rules-cartella'].deadline_days, unita: 'giorni' },
+    { testo: /devono dartelo entro 7 giorni$/, perche: 'copia della lettera di dimissione (risposta breve): sta nel modulo cartella-clinica', valore: (d, tutti) => tutti['rules-cartella'].deadline_days, unita: 'giorni' },
   ],
   'legge-104': [
     { testo: /hanno compiuto 65 anni$/, perche: 'permessi 104 al parente di terzo grado: età fissata dall\'art. 33 c. 3 L. 104/1992, non una cifra del modulo' },
     { testo: /verbale sia sbagliato, hai 6 mesi$/, perche: 'termine del ricorso: sta nel modulo ricorso-invalidita', valore: (d, tutti) => tutti['rules-ricorso'].appeal_months, unita: 'mesi' },
   ],
   accompagnamento: [
+    { testo: /pensi di averne diritto, hai 6 mesi$/, perche: 'termine del ricorso (risposta breve): sta nel modulo ricorso-invalidita', valore: (d, tutti) => tutti['rules-ricorso'].appeal_months, unita: 'mesi' },
     { testo: /Circa 550 euro$/, perche: 'descrizione della pagina: importo mensile arrotondato alle decine', valore: (d) => Math.round(d['rules-accompagnamento'].importo_mensile_2026 / 10) * 10, unita: '€' },
+  ],
+  'contrassegno-disabili': [
+    { testo: /Non serve l'invalidità al 100%$/, perche: 'dice che una percentuale di invalidità NON serve: non è una cifra del modulo' },
   ],
   'rsa': [
     { testo: /tutto gratuito per più di 29 giorni$/, perche: 'sospensione dell\'accompagnamento: sta nel modulo accompagnamento', valore: (d, tutti) => tutti['rules-accompagnamento'].ricovero_giorni, unita: 'giorni' },
@@ -144,6 +149,11 @@ for (const m of reg.modules) {
     // La pagina principale (la guida scritta), le pagine corte della guida (moduli.json → "pages") e il js.
     // Di ogni pagina anche il titolo e la descrizione che si vedono su Google e nei messaggi (<title>, description, og:).
     const fonti = [[`${m.id}/index.html`, testoVisibile(guida[0])], [`${m.id}/index.html <head>`, testa(html)]];
+    // Anche il resto del <main> della pagina del modulo, fuori dalla guida (la risposta breve, i riquadri): si vede senza
+    // JavaScript e su Google (audit dei mutanti del 22/10/2026, giro 6: «solo entro 6 mesi» → «3 mesi» passava).
+    const mainPagina = html.match(/<main[^>]*>[\s\S]*?<\/main>/);
+    assert.ok(mainPagina, `${m.id}/index.html: manca <main>`);
+    fonti.push([`${m.id}/index.html <main>`, testoVisibile(mainPagina[0].replace(guida[0], ' '))]);
     for (const sp of m.pages || []) {
       const f = `${m.id}/${sp.id}/index.html`;
       const pagina = read(f);

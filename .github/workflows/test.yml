@@ -11,7 +11,8 @@ jobs:
       - run: npm test
   # Il sito in un browser vero: tutte le pagine (Sicilia, Lazio, nessuna regione), i percorsi dei moduli
   # tutte le combinazioni di risposte (anche con il fuso orario di New York), Numeri utili provincia per provincia
-  # in ogni regione attiva, telefoni vecchi e reti lente (senza JavaScript, senza dati, 640x360 al 200%).
+  # in ogni regione attiva, telefoni vecchi e reti lente (senza JavaScript, senza dati, 640x360 al 200%), lettere stampate,
+  # copiate e mandate per email.
   # Regole in docs/protocollo-test.md.
   browser:
     runs-on: ubuntu-latest
@@ -22,6 +23,9 @@ jobs:
           node-version: 22
       - run: npm install --no-save --no-package-lock playwright@1.49.1
       - run: npx playwright install --with-deps chromium
+      # pdfinfo e pdftotext per tests/lettere-stampa.cjs (senza, il test conta le pagine nel PDF e legge il testo dal browser).
+      - run: |
+          sudo apt-get install -y poppler-utils || echo "senza poppler-utils: lettere-stampa.cjs usa il ripiego"
       - name: Sito in locale
         run: python3 -m http.server 8080 >/dev/null 2>&1 &
       - run: node tests/browser.cjs http://localhost:8080/
@@ -31,6 +35,7 @@ jobs:
       - run: node tests/robustezza.cjs http://localhost:8080/
       - run: node tests/numeri-province.cjs http://localhost:8080/
       - run: node tests/telefoni-vecchi.cjs http://localhost:8080/
+      - run: node tests/lettere-stampa.cjs http://localhost:8080/
   # I dati contro le copie notturne delle pagine ufficiali (branch copie-siti, tools/copie.mjs).
   # Blocca solo i problemi nuovi sui dati che la PR cambia: un numero, una PEC, un indirizzo di invio, un orario
   # o una sede INPS che la copia della pagina ufficiale non conferma. Non bloccano: i problemi già noti

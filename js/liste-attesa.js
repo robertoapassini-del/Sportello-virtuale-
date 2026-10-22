@@ -413,7 +413,7 @@ const screens = {
         ${official ? '' : '<p class="muted">La lettera usa le parole degli uffici. In breve dice: «Chiedo di fare la visita entro i tempi di legge».</p>'}
         <div id="preview"></div>
         <div class="btn-row three">
-          ${official ? '' : '<button type="button" class="btn center" id="pdf-btn">🖨️ Stampa o salva</button><button type="button" class="btn center" id="copy-btn">📋 Copia</button>'}
+          ${official ? '<button type="button" class="btn center" id="pdf-btn" data-action="print-letter">🖨️ Stampa questi dati</button>' : '<button type="button" class="btn center" id="pdf-btn">🖨️ Stampa o salva</button><button type="button" class="btn center" id="copy-btn">📋 Copia</button>'}
           <a class="btn center${official ? ' primary' : ''}" id="mail-btn" href="#">📧 Manda per email</a>
         </div>
         <p id="send-hint"></p>
@@ -445,7 +445,8 @@ const screens = {
         const copyBtn = document.getElementById('copy-btn');
         const pdfBtn = document.getElementById('pdf-btn');
         if (copyBtn) copyBtn.addEventListener('click', (e) => copyText(state.letterText, e.currentTarget));
-        if (pdfBtn) pdfBtn.addEventListener('click', () => printText(state.letterText));
+        // Col modulo ufficiale il pulsante stampa solo la tabella «Cosa scrivere nel modulo» (data-action, js/common.js).
+        if (pdfBtn && !official) pdfBtn.addEventListener('click', () => printText(state.letterText));
       },
     };
   },
@@ -553,7 +554,7 @@ function updateLetter(a, official) {
       serviceAndNre: [state.service, state.nre && `ricetta n. ${state.nre}`].filter(Boolean).join(' – '),
       today: formatIt(today),
     };
-    preview.innerHTML = `<table class="fields"><tbody>${a.form_fields.map((f) => `
+    preview.innerHTML = `<table class="fields"><caption class="sr-only">Cosa scrivere nel modulo dell'${esc(aslLabel())} di ${esc(a.province)}</caption><tbody>${a.form_fields.map((f) => `
       <tr><th scope="row">${esc(f.label)}</th><td>${esc(f.fixed || values[f.source] || '—')}</td></tr>`).join('')}</tbody></table>`;
     state.letterText = '';
     mail.href = mailtoHref(a.send_to, subject,

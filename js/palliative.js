@@ -3,7 +3,7 @@
 // Diritto della L. 38/2010. Spieghiamo i passi, i numeri da chiamare e una lettera di richiesta.
 // Scritto con delicatezza: spesso chi legge sta assistendo una persona molto malata.
 import { todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
-import { genericRequest, mailtoHref } from './letters.js';
+import { genericRequest, mailtoHref, doctorName } from './letters.js';
 import { noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact, aslLabel, aslIntestazione, regione, regioneNonPronta, syncDelegate } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons, senzaUffici } from './flow.js';
 
@@ -174,7 +174,7 @@ const screens = {
           syncDelegate(form, person);
           const where = state.pref === 'hospice' ? 'in regime residenziale (hospice)' : 'a domicilio';
           const premise = [
-            `è affetto/a da una patologia in fase avanzata, come da documentazione del medico curante${state.doctor ? ` (dott. ${state.doctor})` : ''}`,
+            `è affetto/a da una patologia in fase avanzata, come da documentazione del medico curante${state.doctor ? ` (${doctorName(state.doctor)})` : ''}`,
             ...(isReminder ? [`in data ${formatIt(state.requestDate)} è stata inoltrata richiesta di attivazione delle cure palliative, senza riscontro alla data odierna`] : []),
             'la L. 38/2010 garantisce l\'accesso alle cure palliative e alla terapia del dolore, senza oneri a carico dell\'assistito',
           ];

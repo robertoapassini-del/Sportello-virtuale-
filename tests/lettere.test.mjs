@@ -38,7 +38,8 @@ const casi = {
 
 test('ogni lettera di js/letters.js è provata qui', () => {
   // Non sono lettere: il link mailto e le parti su chi scrive per un altro (provate con ogni lettera qui sotto).
-  const lettere = Object.keys(L).filter((k) => !['mailtoHref', 'delegateRole', 'delegateAttachment'].includes(k));
+  // doctorName e districtLine: pezzi dell'intestazione e delle premesse, provati più sotto.
+  const lettere = Object.keys(L).filter((k) => !['mailtoHref', 'delegateRole', 'delegateAttachment', 'doctorName', 'districtLine'].includes(k));
   assert.deepEqual(lettere.filter((k) => !casi[k]), [], 'lettera nuova: aggiungi i suoi casi in tests/lettere.test.mjs');
 });
 
@@ -91,4 +92,65 @@ test('mailtoHref: tutti gli indirizzi dei dati (data/) restano nel link', () => 
   assert.ok(indirizzi.size > 50, `trovati solo ${indirizzi.size} indirizzi in data/`);
   const persi = [...indirizzi].filter((a) => L.mailtoHref(a, 'S', '') !== `mailto:${a.trim()}?subject=S`);
   assert.deepEqual(persi, [], 'indirizzi dei dati che mailtoHref toglie');
+});
+
+// Audit del 22/10/2026, giro 8 (lettere stampate): la PEC chiesta nel modulo non arrivava nella lettera, la firma
+// non diceva chi firma, «dott. dott.» e «Distretto – Distretto», righe spezzate a mano in mezzo alla frase.
+const persona = { fullName: 'Maria Rossi', birthPlace: 'Palermo', birthDate: '1950-01-02', cf: 'RSSMRA50A42G273X', address: 'Via Roma 1, Palermo', phone: '333', email: 'm@example.it', city: 'Palermo' };
+const tutte = (person) => Object.entries(casi).flatMap(([nome, lista]) => lista.map((c) => [nome, L[nome]({ ...c, person })]));
+
+test('la PEC scritta nel modulo è nei dati di chi scrive', () => {
+  for (const [nome, t] of tutte({ ...persona, pec: 'maria.rossi@pec.example.it' })) {
+    assert.match(t, /email m@example\.it, PEC maria\.rossi@pec\.example\.it,/, nome);
+  }
+  for (const [nome, t] of tutte(persona)) assert.doesNotMatch(t, /PEC/, `${nome}: «PEC» senza la PEC`);
+});
+
+test('la firma dice chi firma: la persona, o chi scrive per lei con il suo ruolo', () => {
+  const firma = (t) => t.slice(t.lastIndexOf('Firma'));
+  for (const [nome, t] of tutte(persona)) {
+    assert.match(firma(t), /^Firma _+\n\s*Maria Rossi\n$/, nome);
+    assert.match(t, /Palermo, \d{2}\/\d{2}\/\d{4}\n\n\s*Firma/, `${nome}: luogo e data sopra la firma`);
+  }
+  const chi = { ...persona, isDelegate: true, delegateName: 'Anna Rossi', delegateCf: 'X' };
+  for (const [role, kind, scritto] of [['delegato', undefined, 'delegato/a'], ['genitore', undefined, 'genitore'], ['tutore', 'tutore', 'tutore'], ['tutore', 'amministratore', 'amministratore di sostegno']]) {
+    for (const [nome, t] of tutte({ ...chi, delegateRole: role, guardianKind: kind })) {
+      assert.match(firma(t), new RegExp(`^Firma di Anna Rossi \\(${scritto}\\)\\n\\s*_+\\n$`), `${nome} (${role})`);
+    }
+  }
+  // Senza il nome del delegato: lo spazio per scriverlo a penna.
+  assert.match(L.genericRequest({ to: 'X', subject: 'S', request: 'r', person: { isDelegate: true }, today: oggi }), /Firma di __________ \(delegato\/a\)/);
+});
+
+test('ogni frase e ogni punto «- » su una riga sola (in stampa va a capo da sé)', () => {
+  const p = { ...persona, pec: 'p@pec.it', idDoc: 'CA123', isDelegate: true, delegateName: 'Anna Rossi', delegateCf: 'X' };
+  for (const [nome, t] of tutte(p)) {
+    const righe = t.split('\n');
+    righe.forEach((r, i) => {
+      assert.doesNotMatch(r, /^ {1,4}\S/, `${nome}: riga col rientro «${r}»`);
+      if (i + 1 < righe.length && /^[a-zà-ù(]/.test(righe[i + 1])) assert.match(r, /[;:.,]$|^$|^[A-Z ]+$/, `${nome}: frase spezzata «…${r.slice(-30)}» / «${righe[i + 1].slice(0, 30)}…»`);
+    });
+  }
+});
+
+test('nome del medico e distretto: niente titolo o «Distretto» ripetuti', () => {
+  assert.equal(L.doctorName('Salvatore Rossi'), 'dott. Salvatore Rossi');
+  for (const n of ['dott. Rossi', 'Dott Rossi', 'dott.ssa Anna Rossi', 'Dr. Rossi', 'dr Rossi', 'prof. Verdi', 'Prof.ssa Verdi']) assert.equal(L.doctorName(` ${n} `), n);
+  assert.equal(L.doctorName('Drago Rossi'), 'dott. Drago Rossi');
+  assert.equal(L.doctorName(''), '');
+  assert.equal(L.districtLine('Bagheria'), 'Distretto – Bagheria');
+  assert.equal(L.districtLine('Distretto di Bagheria'), 'Distretto di Bagheria');
+  assert.equal(L.districtLine('distretto sanitario 42'), 'distretto sanitario 42');
+  assert.equal(L.districtLine(' '), '');
+});
+
+test('sollecito del percorso di tutela: allega anche la delega o il decreto', () => {
+  const t = L.tutelaReminder({ aspName: 'Palermo', cls: 'B', firstRequestDate: '2026-10-01', today: oggi, person: { ...persona, isDelegate: true, delegateRole: 'tutore' } });
+  assert.match(t, /Allega: copia della richiesta del 01\/10\/2026 e relativi allegati; copia del decreto di nomina/);
+});
+
+test('ausili: «su prescrizione di …», non «del/della»', () => {
+  const t = L.ausiliReminder({ aspName: 'Palermo', person: persona, prescriber: "dott.ssa Anna Dell'Utri, fisiatra", requestDate: '2026-10-01', deadline: '2026-10-21', today: oggi });
+  assert.match(t, /su prescrizione di dott\.ssa Anna Dell'Utri, fisiatra;/);
+  assert.doesNotMatch(t, /del\/della/);
 });

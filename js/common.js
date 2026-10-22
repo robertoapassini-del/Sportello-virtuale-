@@ -368,11 +368,40 @@ export function printText(text) {
     document.body.appendChild(area);
   }
   area.textContent = text;
-  document.body.classList.add('printing');
-  const done = () => { document.body.classList.remove('printing'); window.removeEventListener('afterprint', done); };
+  printWith('printing');
+}
+
+// Stampa con una classe sul body (solo la lettera, solo la guida). Sul telefono window.print() non aspetta:
+// la finestra di stampa arriva dopo. La classe si toglie a «afterprint» o quando cambia la schermata,
+// mai dopo un tempo fisso, se no si stampa tutta la pagina con i dati (audit del 22/10/2026, giro 8).
+const PRINT_CLASSES = ['printing', 'printing-guide'];
+function clearPrinting() {
+  PRINT_CLASSES.forEach((c) => document.body.classList.remove(c));
+}
+function printWith(cls) {
+  clearPrinting();
+  document.body.classList.add(cls);
+  const done = () => { clearPrinting(); window.removeEventListener('afterprint', done); };
   window.addEventListener('afterprint', done);
   window.print();
-  setTimeout(done, 1000);
+}
+
+// Schermate con una lettera (o con la tabella «Cosa scrivere nel modulo»): anche dal menu del browser
+// (Ctrl+P) si stampa solo quella, senza il modulo con i dati personali (css/style.css, «letter-screen»).
+// Si segnano la lettera (.print-target) e i suoi contenitori (.print-path) a ogni cambio della pagina.
+const LETTER = '#app .letter, #app #preview > table.fields';
+function markLetter() {
+  const app = document.getElementById('app');
+  if (!app) return;
+  const target = Array.prototype.find.call(document.querySelectorAll(LETTER), (el) => el.textContent.trim());
+  const old = document.querySelector('.print-target');
+  if (old === target && (!target || target.parentElement.classList.contains('print-path'))) return;
+  document.querySelectorAll('.print-path, .print-target').forEach((el) => el.classList.remove('print-path', 'print-target'));
+  app.classList.toggle('letter-screen', !!target);
+  document.body.classList.toggle('letter-screen', !!target);
+  if (!target) return;
+  target.classList.add('print-target');
+  for (let n = target.parentElement; n && n !== document.body; n = n.parentElement) n.classList.add('print-path');
 }
 
 // Legge i campi di un modulo in un oggetto (caselle di spunta → vero/falso).
@@ -606,12 +635,15 @@ if (typeof document !== 'undefined') {
   document.addEventListener('click', (e) => {
     const b = e.target.closest('button[data-action="print-page"]');
     if (!b) return;
-    const only = b.dataset.print === 'guida';
-    if (only) document.body.classList.add('printing-guide');
-    const done = () => { document.body.classList.remove('printing-guide'); window.removeEventListener('afterprint', done); };
-    window.addEventListener('afterprint', done);
+    if (b.dataset.print === 'guida') printWith('printing-guide');
+    else { clearPrinting(); window.print(); }
+  });
+  // «Stampa» sulla schermata del modulo ufficiale dell'ASP: la tabella «Cosa scrivere nel modulo» (markLetter).
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('button[data-action="print-letter"]')) return;
+    markLetter();
+    clearPrinting();
     window.print();
-    setTimeout(done, 1000);
   });
   // Un errore nello script della pagina prima che il modulo sia partito (c'è ancora un .js-only scritto
   // nella pagina: «Un momento…» o il pulsante d'inizio bloccato): si rimostra il contenuto scritto con
@@ -624,8 +656,13 @@ if (typeof document !== 'undefined') {
   iconize(document.body);
   bandify();
   document.documentElement.classList.add('pronto'); // ora la pagina si può vedere (css/style.css)
+  markLetter();
   new MutationObserver((changes) => {
     for (const c of changes) c.addedNodes.forEach((n) => iconize(n));
+    // Una schermata nuova (#app riscritto): la stampa di prima è finita.
+    if (changes.some((c) => c.target.id === 'app')) clearPrinting();
     bandify();
+    markLetter();
   }).observe(document.body, { childList: true, subtree: true });
+  window.addEventListener('popstate', clearPrinting);
 }

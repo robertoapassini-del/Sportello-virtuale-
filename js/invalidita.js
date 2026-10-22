@@ -334,7 +334,7 @@ const screens = {
           state.letterText = text;
           document.getElementById('preview').textContent = text;
           document.getElementById('mail-btn').href = mailtoHref(p.pec,
-            `Sollecito convocazione visita invalidità civile${state.certNumber ? ` – certificato n. ${state.certNumber}` : ''}`,
+            `Sollecito convocazione visita invalidità civile${person.fullName ? ` – ${person.fullName}` : ''}${state.certNumber ? ` – certificato n. ${state.certNumber}` : ''}`,
             `Buongiorno,\nin allegato il sollecito firmato, con i documenti.\n\nCordiali saluti\n${person.fullName || ''}`);
         };
         form.addEventListener('input', update);

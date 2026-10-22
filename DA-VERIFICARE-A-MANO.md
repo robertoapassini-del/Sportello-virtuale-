@@ -20,6 +20,11 @@ del Sistema TS sulla TEAM e le FAQ della Regione sul Fascicolo. Le pagine sono s
 
 - [ ] **Accompagnamento**: la regola «100% tra 18 e 65 anni» non è nella scheda INPS (che parla di invalidi totali): confermare
   con un patronato o nella L. 18/1980. Circolare INPS 153/2025 non letta (l'importo 551,53 è confermato dalla scheda).
+- [ ] **Legge 104, IVA al 4% e detrazione del 19%** (22/10/2026): ora sono anche in `data/rules-legge-104.json`
+  (`iva_auto_percent`, `detrazione_percent`), con la stessa provenienza di `rules-contrassegno-disabili.json` (scheda
+  dell'Agenzia delle Entrate «Agevolazioni per le persone con disabilità», letta il 20/10/2026). Non riletta il 22/10
+  (il sito non si apriva da qui): rileggere la scheda e la guida dell'Agenzia, e controllare che «sull'auto e sugli
+  ausili» valga per tutti e due (l'IVA al 4% sugli ausili ha regole sue).
 - [ ] **Legge 104**: tetto 2026 del congedo straordinario (circ. INPS 6/2026 e 47/2026); sul sito c'è solo «poco sopra i
   57.000 euro» per il 2025.
 - [ ] **Contrassegno**: pagine ufficiali di Catania e Messina (letta solo Palermo: Circoscrizione, 5 euro, ZTL entro 15 giorni);
@@ -153,4 +158,8 @@ Non fatto perché impossibile dall'estero: il controllo dei 370 link esterni (`n
   numeri in contrasto). Cercare `TODO` nel codice e nei dati.
 - [ ] **Domande da fare al telefono agli URP:** [docs/domande-urp.md](docs/domande-urp.md).
 - [ ] **Nuovo piano regionale delle liste d'attesa** (atteso entro il 22/12/2026): ricontrollare tempi e contatti di tutte le ASP.
+- [ ] **Stampa da un telefono vero** (audit del 22/10/2026, giro 8): su un Android (Chrome) e su un iPhone (Safari), aprire una
+  lettera (per esempio Cartella clinica → sollecito), premere «Stampa o salva» e poi, tornati sulla pagina, stampare dal menu
+  del browser: sul foglio (o nel PDF) deve esserci solo la lettera, mai il modulo con i dati. `tests/lettere-stampa.cjs`
+  lo prova in Chromium imitando il telefono (la stampa che non aspetta), non su un telefono vero.
 - [ ] **Prova con persone anziane:** far usare il sito a qualcuno e annotare dove si blocca.

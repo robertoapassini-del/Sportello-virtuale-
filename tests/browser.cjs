@@ -12,7 +12,10 @@
 //   aria-invalid, focus sul campo);
 // - in Sicilia, il riquadro «Chi può aiutarti» delle pagine delle aree senza «ASP»;
 // - per chi non è siciliano, una frase su uffici o servizi siciliani (ASP, SovraCUP, Palermo…) che non dice
-//   «Sicilia» (stessa regola di tests/nazionale.test.mjs, ma sul testo creato dal JavaScript).
+//   «Sicilia» (stessa regola di tests/nazionale.test.mjs, ma sul testo creato dal JavaScript);
+// - audit dei mutanti del 22/10/2026, giro 6 (docs/mutanti.md): nelle pagine dei moduli la guida scritta (#guida) che
+//   non si vede, la classe «pronto» che manca su <html>, il pulsante Stampa nascosto; un campo dei moduli senza
+//   etichetta; «Ricomincia da capo» che non torna alla prima schermata.
 // Lo lancia la CI a ogni modifica (.github/workflows/test.yml).
 // Uso:  python3 -m http.server 8080   (in un altro terminale)
 //       node tests/browser.cjs [http://localhost:8080/]
@@ -87,6 +90,31 @@ async function stampa(page, dove, problemi) {
   if (r.bianco) problemi.push(`${dove}: stampando, il titolo è bianco`);
   for (const b of r.bottoni) problemi.push(`${dove}: stampando, si vede il pulsante «${b}»`);
   await page.emulateMedia({ media: 'screen' });
+}
+
+// Pagina di un modulo (audit dei mutanti del 22/10/2026, giro 6: N18, N20): la guida scritta si vede, il JavaScript ha
+// messo la classe «pronto» su <html> (senza, la pagina resta come se il JavaScript non ci fosse), il pulsante Stampa si vede.
+async function paginaModulo(page, dove, problemi) {
+  const r = await page.evaluate(() => {
+    const vis = (e) => !!e && e.getClientRects().length > 0 && getComputedStyle(e).visibility !== 'hidden';
+    const g = document.getElementById('guida');
+    return {
+      guida: vis(g) && g.getBoundingClientRect().height > 100,
+      pronto: document.documentElement.classList.contains('pronto'),
+      stampa: vis(document.querySelector('[data-action="print-page"]')),
+    };
+  });
+  if (!r.guida) problemi.push(`${dove}: la guida scritta (#guida) non si vede`);
+  if (!r.pronto) problemi.push(`${dove}: manca la classe «pronto» su <html>`);
+  if (!r.stampa) problemi.push(`${dove}: il pulsante Stampa non si vede`);
+}
+
+// Ogni campo visibile di un modulo ha un'etichetta: <label for>, aria-label o aria-labelledby (giro 6, N25).
+async function campiEtichettati(page, dove, problemi) {
+  const senza = await page.evaluate(() => [...document.querySelectorAll('#app input:not([type=hidden]), #app select, #app textarea')]
+    .filter((e) => e.getClientRects().length && !(e.labels && e.labels.length) && !e.getAttribute('aria-label') && !e.getAttribute('aria-labelledby'))
+    .map((e) => e.id || e.name || e.type));
+  for (const x of senza) problemi.push(`${dove}: campo senza etichetta «${x}»`);
 }
 
 // Tastiera (audit del 22/10/2026, giro 6). Il primo Tab porta a «Vai al contenuto»: nessuna pagina sposta il focus
@@ -164,6 +192,7 @@ async function erroriCollegati(page, dove, problemi) {
       errori(page, () => dove);
       await page.goto(u, { waitUntil: 'networkidle' });
       await controlla(page, dove, regione, problemi);
+      if (!regione && moduli.some((m) => u === `${BASE}${m}/`)) await paginaModulo(page, dove, problemi);
       if (!regione) await accessibile(page, dove, problemi);
       if (regione === 'sicilia') {
         await primoTab(page, dove, problemi);
@@ -191,8 +220,12 @@ async function erroriCollegati(page, dove, problemi) {
       for (let passo = 0; passo < 10; passo++) {
         dove = `${regione} /${m}/ giro ${giro} passo ${passo}`;
         await controlla(page, dove, regione, problemi);
+        // Prima delle etichette: erroriCollegati manda il modulo vuoto, e un modulo vuoto accettato (l'età vuota vale 0)
+        // porta alla schermata dopo.
+        await campiEtichettati(page, dove, problemi);
         await erroriCollegati(page, dove, problemi);
         for (const d of await page.$$('#app input[type=date]')) await d.fill('2026-09-01').catch(() => {});
+        for (const d of await page.$$('#app input[type=number]')) await d.fill('55').catch(() => {});
         const scelte = [];
         for (const b of await page.$$('#app button:not([disabled]):not([data-action=back]):not([data-action=restart]):not(.link), #app a.btn.choice')) {
           if (await b.isVisible()) scelte.push(b);
@@ -223,7 +256,9 @@ async function erroriCollegati(page, dove, problemi) {
       await page.goto(`${BASE}${m}/`, { waitUntil: 'networkidle' });
       const start = page.locator('#app button[data-go="province"]:not([disabled]), #app .btn.primary:not([disabled])').first();
       if (!(await start.count())) { problemi.push(`${dove}: non trovo il pulsante principale`); await ctx.close(); continue; }
-      await start.click();
+      // Un pulsante che non si può cliccare è un problema da elencare, non un motivo per fermare tutti i controlli
+      // (giro 6, N20: senza la classe «pronto» il pulsante resta nascosto).
+      try { await start.click({ timeout: 5000 }); } catch { problemi.push(`${dove}: il pulsante principale non si può cliccare`); await ctx.close(); continue; }
       await page.waitForTimeout(300);
       // Prevenzione: prima sesso ed età, poi il risultato nazionale (vedi sotto); qui basta il pulsante principale.
       if (m === 'prevenzione') { await ctx.close(); continue; }
@@ -287,7 +322,7 @@ async function erroriCollegati(page, dove, problemi) {
       await page.goto(`${BASE}${m}/`, { waitUntil: 'networkidle' });
       const start = page.locator('#app .btn.primary:not([disabled])').first();
       const etichetta = await start.innerText();
-      await start.click();
+      try { await start.click({ timeout: 5000 }); } catch { problemi.push(`${dove}: il pulsante principale non si può cliccare`); await ctx.close(); continue; }
       await page.waitForTimeout(300);
       let r = await leggi(page);
       if (!percorsi[m]) {
@@ -314,9 +349,9 @@ async function erroriCollegati(page, dove, problemi) {
       const dove = `sicilia /${m}/ fino alla lettera`;
       errori(page, () => dove);
       await page.goto(`${BASE}${m}/`, { waitUntil: 'networkidle' });
-      await page.click('#app .btn.primary:not([disabled])');
-      await page.waitForTimeout(200);
       try {
+        await page.click('#app .btn.primary:not([disabled])', { timeout: 5000 });
+        await page.waitForTimeout(200);
         await segui(page, ['Palermo', ...percorsi[m].passi]);
         const r = await leggi(page);
         if (!r.testo.includes(percorsi[m].data)) problemi.push(`${dove}: manca la data calcolata ${percorsi[m].data}`);
@@ -341,15 +376,17 @@ async function erroriCollegati(page, dove, problemi) {
     const dove = 'lombardia /prevenzione/ donna 55 anni';
     errori(page, () => dove);
     await page.goto(`${BASE}prevenzione/`, { waitUntil: 'networkidle' });
-    await page.click('#app .btn.primary:not([disabled])');
-    await page.waitForTimeout(200);
-    await page.click('#app button.choice[data-set*="F"]');
-    await page.waitForTimeout(200);
-    await page.fill('#age', '55');
-    await page.click('#age-form button[type=submit]');
-    await page.waitForTimeout(300);
-    const t = await page.evaluate(() => document.getElementById('app').innerText);
-    if (!/Mammografia/.test(t)) problemi.push(`${dove}: il risultato non contiene «Mammografia» («${t.slice(0, 80)}»)`);
+    try {
+      await page.click('#app .btn.primary:not([disabled])', { timeout: 5000 });
+      await page.waitForTimeout(200);
+      await page.click('#app button.choice[data-set*="F"]');
+      await page.waitForTimeout(200);
+      await page.fill('#age', '55');
+      await page.click('#age-form button[type=submit]');
+      await page.waitForTimeout(300);
+      const t = await page.evaluate(() => document.getElementById('app').innerText);
+      if (!/Mammografia/.test(t)) problemi.push(`${dove}: il risultato non contiene «Mammografia» («${t.slice(0, 80)}»)`);
+    } catch (e) { problemi.push(`${dove}: percorso interrotto (${e.message.split('\n')[0]})`); }
     await controlla(page, dove, 'lombardia', problemi);
     await ctx.close();
   }
@@ -361,6 +398,34 @@ async function erroriCollegati(page, dove, problemi) {
     errori(page, () => dove);
     await page.goto(BASE, { waitUntil: 'networkidle' });
     if (!(await page.evaluate(() => /numeri utili/.test(document.body.innerText)))) problemi.push(`${dove}: manca la riga «numeri utili»`);
+    await ctx.close();
+  }
+  {
+    // «Ricomincia da capo» dopo tre schermate torna alla prima, e il tasto Indietro del browser poi esce dal modulo
+    // (giro 6, N10: la pila delle schermate teneva solo l'ultima, e «Ricomincia» lasciava le altre nella cronologia).
+    const ctx = await nuova('sicilia');
+    const page = await ctx.newPage();
+    const dove = 'sicilia /ricorso-invalidita/ Ricomincia da capo';
+    errori(page, () => dove);
+    await page.goto(BASE, { waitUntil: 'networkidle' });
+    await page.goto(`${BASE}ricorso-invalidita/`, { waitUntil: 'networkidle' });
+    const primo = await page.evaluate(() => (document.querySelector('#app h1') || {}).innerText || '');
+    try {
+      await page.click('#app .btn.primary:not([disabled])');
+      await page.waitForTimeout(150);
+      await page.click('#app button.choice:has-text("Sì, ce l")');
+      await page.waitForTimeout(150);
+      await page.fill('#app #verbaleDate', new Date(Date.now() - 20 * 864e5).toISOString().slice(0, 10));
+      await page.click('#app form button[type=submit]');
+      await page.waitForTimeout(150);
+      await page.click('#app [data-action="restart"]');
+      await page.waitForTimeout(300);
+      const dopo = await page.evaluate(() => (document.querySelector('#app h1') || {}).innerText || '');
+      if (dopo !== primo) problemi.push(`${dove}: porta a «${dopo}», non alla prima schermata «${primo}»`);
+      await page.goBack({ waitUntil: 'networkidle' });
+      await page.waitForTimeout(300);
+      if (page.url() !== BASE) problemi.push(`${dove}: dopo «Ricomincia», Indietro resta nel modulo (${page.url().replace(BASE, '/')}) invece di tornare alla pagina di prima`);
+    } catch (e) { problemi.push(`${dove}: percorso interrotto (${e.message.split('\n')[0]})`); }
     await ctx.close();
   }
   // La ricerca della home: i testi di data/moduli.json dicono «ASL», ma in Sicilia è l'ASP e in Lombardia l'ATS.
