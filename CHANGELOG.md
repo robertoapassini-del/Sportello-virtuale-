@@ -2,6 +2,21 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 22/10/2026 — Audit notturno, giro 6: sicurezza e privacy
+- `js/numeri.js`: il ritorno dopo la scelta della regione (`?torna=`) poteva portare su un altro sito con «/.//altro-sito/» (il pathname diventava «//altro-sito/»). Ora si usa l'indirizzo intero di questo sito. `tests/robustezza.cjs` prova 8 indirizzi ostili e uno buono (prima della correzione 4 uscivano dal sito).
+- `tools/pagine.mjs`: lo script in testa che toglie «index.html» dall'indirizzo poteva portare su un altro sito con «//altro-sito/…/index.html». Ora l'indirizzo comincia sempre con una sola «/». Nuovo `tests/head-script.test.mjs`; pagine rigenerate.
+- `tools/pagine.mjs`: ogni pagina ha `<meta name="referrer" content="strict-origin-when-cross-origin">` (anche la 404, a mano): ai siti esterni arriva solo l'indirizzo del sito. Controllo in `tests/pagine.test.mjs`.
+- `js/letters.js`: «Manda per email» accetta solo indirizzi semplici (anche più d'uno, separati da virgola). Un indirizzo scritto con «?cc=», «&bcc=», «#», «%» o spazi non aggiungeva più destinatari: ora il campo «A» resta vuoto. `tests/lettere.test.mjs` prova gli attacchi e tutti gli indirizzi di `data/` (passano tutti).
+- Nuovo `tests/html-esc.test.mjs`: nei JS, quello che scrive l'utente entra nell'HTML solo dentro `esc()`. Più severo del prototipo dell'audit: anche `${state.x || ''}` senza `esc()` è un errore. Nessun falso allarme sul sito di oggi.
+- `privacy.html`: le parole cercate nella pagina iniziale restano nell'indirizzo («#q=», serve al tasto Indietro) e quindi nella cronologia del browser. La privacy ora lo dice; prima diceva solo «si cancella tutto». Controllo in `tests/errori-noti.test.mjs`.
+
+## 22/10/2026 — Audit notturno, giro 6: tastiera e screen reader
+- Errori dei campi (tutti i moduli con una data, un'età, un ISEE o un reddito): il messaggio si leggeva, ma nessun campo era segnato e il focus restava sul pulsante. Ora ogni errore passa da `showError()` (`js/flow.js`): il campo da correggere ha `aria-invalid="true"` e il focus, e tutti i campi hanno `aria-describedby="<modulo>-error"`. Nuova `clearError()` per il sollecito delle liste d'attesa (controllo mentre si scrive, senza spostare il cursore). Gli id degli errori di liste d'attesa e invalidità ora finiscono tutti con `-form-error`.
+- Moduli: alla prima apertura la pagina metteva il focus sul titolo e tornava in cima, così il primo Tab saltava «Vai al contenuto» e `/liste-attesa/#guida` non arrivava alla guida. Ora questo succede solo quando cambia la schermata (`moveToTop()` in `js/flow.js`, anche in `js/liste-attesa.js` e `js/invalidita.js`).
+- `css/style.css`: i riquadri apribili («Ti serve aiuto?», «Da dove vengono queste informazioni») hanno lo stesso contorno di 3 px degli altri elementi quando li raggiungi con Tab (`summary:focus-visible`).
+- Nomi dei link: «leggi qui» nella pagina del Fascicolo (cartella clinica) ora dice «come vedere il Fascicolo di un figlio»; nelle liste d'attesa i link «Fonte» ora dicono il nome della fonte («Fonte: ASP Palermo – …»).
+- Nuovi controlli in `tests/browser.cjs`: il primo Tab porta a «Vai al contenuto»; ogni elemento raggiunto con Tab ha un contorno di almeno 2 px; dopo un invio vuoto l'errore è collegato al campo, il campo ha `aria-invalid` e il focus. I percorsi nei moduli ora si provano anche come utente della Sicilia. In `tests/errori-noti.test.mjs`: link chiamati «qui», «leggi qui», «clicca qui» o «Fonte».
+
 ## 21/10/2026 — Audit notturno, giro 5: test più severi
 - Audit dei mutanti: 30 errori messi apposta nel sito, `npm test` ne prendeva 4. Nuovi controlli per quelli che si riconoscono senza browser:
 - Nuovo `tests/link.test.mjs`: ogni link interno delle pagine della sitemap e della 404 porta a un file che esiste.

@@ -72,6 +72,8 @@ const ERRORI = [
   [/"title": "(Non mi danno|Ho diritto|[^"]*l'ho persa|[^"]*posso fare)/, "titoli in data/moduli.json come l'h1 della pagina: si dà del tu («Non ti danno», «l'hai persa»)"],
   // Audit dei mutanti del 21/10/2026: regole regionali scritte per tutti, regole nazionali scritte come siciliane.
   [/20 giorni dalla consegna/, 'ausili: il collaudo entro 20 giorni è una regola della Sicilia: «In Sicilia entro 20 giorni dalla consegna»', /Sicili|"notes_internal"/],
+  // Audit tastiera e lettori di schermo del 22/10/2026 (giro 6).
+  [/<a [^>]*>\s*(qui|leggi qui|clicca qui|fonte)\s*<\/a>/i, 'link con un nome che da solo non dice dove porta («leggi qui», «Fonte»): chi usa un lettore di schermo sente solo l\'elenco dei link. Scrivi dove porta («come vedere il Fascicolo di un figlio», «Fonte: …»)'],
   [/\bin Sicilia\b[^.\n]{0,80}180 giorni|180 giorni[^.\n]{0,80}\bin Sicilia\b/, 'ricetta per visite ed esami: i 180 giorni sono una regola nazionale (ricette dal 30/12/2024), non solo siciliana', /regola nazionale/],
 ];
 
@@ -87,4 +89,13 @@ test('nessuno degli errori già trovati è tornato', () => {
     });
   }
   assert.deepEqual(trovati, [], `Errori già visti:\n${trovati.join('\n')}`);
+});
+
+// Audit giro 6: la ricerca della pagina iniziale resta nell'indirizzo (#q=…, js/home.js), ma la privacy diceva solo
+// «Quando chiudi la pagina, si cancella tutto». Finché il sito la tiene nell'indirizzo, la privacy lo deve dire.
+test('la privacy dice che le parole cercate restano nell\'indirizzo e nella cronologia', () => {
+  const home = fs.readFileSync(path.join(SITE, 'js/home.js'), 'utf8');
+  if (!/#q=/.test(home)) return;
+  const privacy = fs.readFileSync(path.join(SITE, 'privacy.html'), 'utf8');
+  assert.match(privacy, /«#q=»[^<]*cronologia/, 'privacy.html: manca la frase sulla ricerca nell\'indirizzo («#q=») e nella cronologia');
 });

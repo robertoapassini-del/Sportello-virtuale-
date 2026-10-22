@@ -7,6 +7,9 @@
 // - una pagina più larga dello schermo;
 // - stampando: titolo assente o bianco, pulsanti sul foglio;
 // - pulsanti e link più bassi di 44 px, o pagine troppo larghe con il testo al 250% (accessibilità);
+// - con la tastiera (audit del 22/10/2026, giro 6): il primo Tab che non porta a «Vai al contenuto», elementi senza
+//   un contorno ben visibile quando li raggiungi con Tab, errori dei campi non collegati al campo (aria-describedby,
+//   aria-invalid, focus sul campo);
 // - in Sicilia, il riquadro «Chi può aiutarti» delle pagine delle aree senza «ASP»;
 // - per chi non è siciliano, una frase su uffici o servizi siciliani (ASP, SovraCUP, Palermo…) che non dice
 //   «Sicilia» (stessa regola di tests/nazionale.test.mjs, ma sul testo creato dal JavaScript).
@@ -86,6 +89,59 @@ async function stampa(page, dove, problemi) {
   await page.emulateMedia({ media: 'screen' });
 }
 
+// Tastiera (audit del 22/10/2026, giro 6). Il primo Tab porta a «Vai al contenuto»: nessuna pagina sposta il focus
+// da sola quando si apre (prima i moduli lo mettevano sul titolo e il primo Tab saltava il link).
+async function primoTab(page, dove, problemi) {
+  await page.keyboard.press('Tab');
+  if (!(await page.evaluate(() => document.activeElement.classList.contains('skip-link')))) problemi.push(`${dove}: il primo Tab non porta a «Vai al contenuto» (focus spostato all'apertura?)`);
+}
+
+// Ogni elemento raggiunto con Tab ha un contorno di almeno 2 px (non quello sottile del browser) o un'ombra.
+async function contornoFocus(page, dove, problemi) {
+  const visti = new Set();
+  for (let i = 0; i < 120; i++) {
+    await page.keyboard.press('Tab');
+    const r = await page.evaluate(() => {
+      const e = document.activeElement;
+      if (!e || e === document.body) return null;
+      if (!e.matches(':focus')) return { salta: true }; // per esempio l'icona del calendario dentro un campo data
+      const cs = getComputedStyle(e);
+      const ok = (cs.outlineStyle !== 'none' && cs.outlineStyle !== 'auto' && parseFloat(cs.outlineWidth) >= 2) || cs.boxShadow !== 'none';
+      return { ok, k: `${e.tagName.toLowerCase()} «${(e.innerText || e.name || '').trim().replace(/\s+/g, ' ').slice(0, 40)}»` };
+    });
+    if (!r) break;
+    if (r.salta || r.ok || visti.has(r.k)) continue;
+    visti.add(r.k);
+    problemi.push(`${dove}: con la tastiera non si vede bene dove sei: ${r.k}`);
+  }
+}
+
+// Errori dei campi: dopo un invio vuoto il messaggio è collegato al campo (aria-describedby), il campo è segnato
+// (aria-invalid) e ha il focus, così chi usa un lettore di schermo sa quale campo correggere.
+async function erroriCollegati(page, dove, problemi) {
+  const forms = await page.$$eval('#app form', (fs) => fs.filter((f) => f.querySelector('.field-error') && f.offsetParent && f.querySelector('button[type=submit]')).map((f) => f.id));
+  for (const id of forms) {
+    await page.evaluate((id) => { for (const i of document.getElementById(id).querySelectorAll('input:not([type=checkbox]):not([type=radio])')) i.value = ''; }, id);
+    const h1 = await page.evaluate(() => document.querySelector('#app h1')?.innerText);
+    await page.click(`#${id} button[type=submit]`);
+    await page.waitForTimeout(150);
+    if (await page.evaluate(() => document.querySelector('#app h1')?.innerText) !== h1) continue; // vuoto accettato: niente errore
+    const r = await page.evaluate((id) => {
+      const f = document.getElementById(id);
+      const out = [];
+      for (const e of f.querySelectorAll('.field-error')) {
+        if (e.hidden || !e.textContent.trim()) continue;
+        if (!f.querySelector(`[aria-describedby~="${e.id}"]`)) out.push(`errore «${e.textContent.trim()}» non collegato al campo (aria-describedby)`);
+        const segnato = f.querySelector('[aria-invalid="true"]');
+        if (!segnato) out.push(`errore «${e.textContent.trim()}» ma nessun campo con aria-invalid`);
+        else if (document.activeElement !== segnato) out.push(`errore «${e.textContent.trim()}» ma il focus non è sul campo da correggere`);
+      }
+      return out;
+    }, id);
+    for (const x of r) problemi.push(`${dove} (#${id}): ${x}`);
+  }
+}
+
 (async () => {
   const { chromium } = loadPlaywright();
   const browser = await chromium.launch();
@@ -109,7 +165,11 @@ async function stampa(page, dove, problemi) {
       await page.goto(u, { waitUntil: 'networkidle' });
       await controlla(page, dove, regione, problemi);
       if (!regione) await accessibile(page, dove, problemi);
-      if (regione === 'sicilia') await stampa(page, dove, problemi);
+      if (regione === 'sicilia') {
+        await primoTab(page, dove, problemi);
+        await contornoFocus(page, dove, problemi);
+        await stampa(page, dove, problemi);
+      }
       if (regione === 'sicilia' && aree.includes(u)) {
         const aiuto = await page.evaluate(() => (document.querySelector('details.help') || {}).textContent || '');
         if (!/\bASP\b/.test(aiuto)) problemi.push(`${dove}: il riquadro «Chi può aiutarti» non dice «ASP» a chi abita in Sicilia`);
@@ -119,17 +179,19 @@ async function stampa(page, dove, problemi) {
     await ctx.close();
   }
 
-  // Percorsi nei moduli come utente del Lazio: clic sulle scelte, in tre ordini diversi.
-  for (const m of moduli) {
+  // Percorsi nei moduli come utente del Lazio e della Sicilia (che ha anche uffici e lettere): clic sulle scelte,
+  // in tre ordini diversi. A ogni passo si prova anche a mandare vuoti i campi (erroriCollegati).
+  for (const regione of ['lazio', 'sicilia']) for (const m of moduli) {
     for (let giro = 0; giro < 3; giro++) {
-      const ctx = await nuova('lazio');
+      const ctx = await nuova(regione);
       const page = await ctx.newPage();
-      let dove = `lazio /${m}/ giro ${giro}`;
+      let dove = `${regione} /${m}/ giro ${giro}`;
       errori(page, () => dove);
       await page.goto(`${BASE}${m}/`, { waitUntil: 'networkidle' });
       for (let passo = 0; passo < 10; passo++) {
-        dove = `lazio /${m}/ giro ${giro} passo ${passo}`;
-        await controlla(page, dove, 'lazio', problemi);
+        dove = `${regione} /${m}/ giro ${giro} passo ${passo}`;
+        await controlla(page, dove, regione, problemi);
+        await erroriCollegati(page, dove, problemi);
         for (const d of await page.$$('#app input[type=date]')) await d.fill('2026-09-01').catch(() => {});
         const scelte = [];
         for (const b of await page.$$('#app button:not([disabled]):not([data-action=back]):not([data-action=restart]):not(.link), #app a.btn.choice')) {
@@ -320,7 +382,7 @@ async function stampa(page, dove, problemi) {
   await browser.close();
   // Lo stesso problema in più passi dello stesso modulo si conta una volta.
   const unici = [...new Set(problemi.map((p) => p.replace(/ giro \d+ passo \d+| giro \d+/, '')))];
-  console.log(`Pagine: ${urls.length} × 3 regioni; moduli: ${moduli.length} × 3 giri. Problemi: ${unici.length}`);
+  console.log(`Pagine: ${urls.length} × 3 regioni; moduli: ${moduli.length} × 2 regioni × 3 giri. Problemi: ${unici.length}`);
   for (const p of unici) console.log(`  ${p}`);
   process.exit(unici.length ? 1 : 0);
 })();

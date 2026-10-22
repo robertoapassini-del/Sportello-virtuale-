@@ -10,7 +10,7 @@ import { noPecBox,
   personFields, reportErrorHref, generalContactInfo, choice, helpBox, sourcesBox, moreHelp, hideHeadingEmoji, enableStart, aslLabel, aslIntestazione, regione, regioneInfo, regioneLink, generalContact, syncDelegate, delegateNoteText,
 } from './common.js';
 import { RICETTA_SVG } from './ricetta-svg.js';
-import { createNav, withRegion, regionAction, senzaUffici, progress as progressBar } from './flow.js';
+import { createNav, withRegion, regionAction, senzaUffici, progress as progressBar, moveToTop, showError, clearError } from './flow.js';
 
 const ROOT = '../';
 const app = document.getElementById('app');
@@ -30,6 +30,7 @@ const back = nav.back;
 const render = nav.render;
 const restart = () => nav.restart(() => { for (const o of [state, person]) for (const k of Object.keys(o)) delete o[k]; });
 
+let dipinto = false;
 function paint(current) {
   const s = screens[current]();
   const backBtn = current === 'intro' ? '' : '<div class="topbar"><button type="button" class="back" data-action="back">← Torna indietro</button></div>';
@@ -37,9 +38,8 @@ function paint(current) {
   enableStart(app);
   hideHeadingEmoji(app);
   if (s.mount) s.mount();
-  window.scrollTo(0, 0);
-  const h1 = app.querySelector('h1');
-  if (h1) { h1.setAttribute('tabindex', '-1'); h1.focus({ preventScroll: true }); }
+  if (dipinto) moveToTop(app);
+  dipinto = true;
 }
 
 app.addEventListener('click', (e) => {
@@ -154,7 +154,7 @@ function aspSteps(a) {
     Se non c'è posto, si fa in ospedale «in intramoenia» pagando solo il ticket
     (Piano nazionale liste d'attesa 2026-2028; D.Lgs. 124/1998, art. 3).</p>
     <p class="muted">Controllato ${art('il', a.last_verified)}${esc(formatIt(a.last_verified))}.
-      ${a.sources.map((s) => (s.url ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">Fonte</a>` : `Fonte: ${esc(s.label)}`)).join(' · ')}
+      ${a.sources.map((s) => (s.url ? `Fonte: <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.label || new URL(s.url).hostname.replace(/^www\./, ''))}</a>` : `Fonte: ${esc(s.label)}`)).join(' · ')}
       · <a href="${esc(reportErrorHref(a.name))}">Segnala un errore</a></p>
   </details>`;
 }
@@ -270,10 +270,10 @@ const screens = {
       <p>Ci servono due date.</p>
       <form id="dates-form" novalidate>
         <label for="bookingDate">1. Che giorno hai prenotato?<span class="hint">Il giorno in cui hai chiamato o sei andato al CUP</span></label>
-        <input type="date" id="bookingDate" name="bookingDate" required value="${esc(state.bookingDate || '')}" max="${todayISO()}">
+        <input type="date" id="bookingDate" name="bookingDate" required value="${esc(state.bookingDate || '')}" max="${todayISO()}" aria-describedby="dates-form-error">
         <label for="appointmentDate">2. Che giorno è l'appuntamento?</label>
-        <input type="date" id="appointmentDate" name="appointmentDate" required value="${esc(state.appointmentDate || '')}">
-        <p class="field-error" id="dates-error" role="alert" hidden></p>
+        <input type="date" id="appointmentDate" name="appointmentDate" required value="${esc(state.appointmentDate || '')}" aria-describedby="dates-form-error">
+        <p class="field-error" id="dates-form-error" role="alert" hidden></p>
         <button type="submit" class="btn primary big">✔️ Controlla</button>
       </form>`,
     mount() {
@@ -281,19 +281,14 @@ const screens = {
       form.addEventListener('submit', (e) => {
         e.preventDefault();
         const v = readForm(form);
-        const err = document.getElementById('dates-error');
         if (parseDate(v.bookingDate) !== null && daysBetween(v.bookingDate, todayISO()) < 0) {
-          err.textContent = 'Il giorno della prenotazione non può essere nel futuro. Controlla la data.';
-          err.hidden = false;
-          return;
+          return showError('dates-form', 'Il giorno della prenotazione non può essere nel futuro. Controlla la data.', { field: 'bookingDate' });
         }
         const r = checkWaiting(rules, { cls: state.cls, kind: state.kind, bookingDate: v.bookingDate, appointmentDate: v.appointmentDate });
         if (r.status === 'error') {
-          err.textContent = r.error === 'order'
-            ? 'L\'appuntamento non può essere prima del giorno della prenotazione. Controlla le date.'
-            : 'Scrivi tutte e due le date.';
-          err.hidden = false;
-          return;
+          return r.error === 'order'
+            ? showError('dates-form', 'L\'appuntamento non può essere prima del giorno della prenotazione. Controlla le date.', { field: 'appointmentDate' })
+            : showError('dates-form', 'Scrivi tutte e due le date.');
         }
         Object.assign(state, v, { result: r });
         go(r.status === 'exceeded' ? 'resultB' : 'resultA');
@@ -371,8 +366,8 @@ const screens = {
         <div class="notice warn"><p>Chiedi al CUP un foglio con il giorno della tua richiesta e il numero della ricetta. Conservalo.</p></div>
         <form id="req-form" novalidate>
           <label for="requestDate">Che giorno hai chiesto la prenotazione al CUP?</label>
-          <input type="date" id="requestDate" name="requestDate" value="${esc(state.requestDate || '')}" max="${todayISO()}">
-          <p class="field-error" id="req-error" role="alert" hidden></p>
+          <input type="date" id="requestDate" name="requestDate" value="${esc(state.requestDate || '')}" max="${todayISO()}" aria-describedby="req-form-error">
+          <p class="field-error" id="req-form-error" role="alert" hidden></p>
           <button type="submit" class="btn primary">✔️ Calcola</button>
         </form>
         ${status}
@@ -381,9 +376,8 @@ const screens = {
         document.getElementById('req-form').addEventListener('submit', (e) => {
           e.preventDefault();
           const v = readForm(e.target);
-          const err = document.getElementById('req-error');
-          if (parseDate(v.requestDate) === null) { err.textContent = 'Scrivi il giorno.'; err.hidden = false; return; }
-          if (daysBetween(v.requestDate, todayISO()) < 0) { err.textContent = 'Questo giorno non è ancora arrivato. Controlla la data.'; err.hidden = false; return; }
+          if (parseDate(v.requestDate) === null) return showError('req-form', 'Scrivi il giorno.');
+          if (daysBetween(v.requestDate, todayISO()) < 0) return showError('req-form', 'Questo giorno non è ancora arrivato. Controlla la data.');
           state.requestDate = v.requestDate;
           render();
         });
@@ -513,9 +507,8 @@ const screens = {
           const ok = parseDate(v.firstRequestDate) !== null && daysBetween(v.firstRequestDate, today) >= 0;
           if (ok) state.firstRequestDate = v.firstRequestDate;
           state.reqProtocol = v.reqProtocol;
-          const err = document.getElementById('rem-form-error');
-          err.hidden = ok;
-          err.textContent = ok ? '' : `Scrivi una data giusta, non dopo oggi. Per ora usiamo ${art('il', state.firstRequestDate)}${formatIt(state.firstRequestDate)}.`;
+          if (ok) clearError('rem-form');
+          else showError('rem-form', `Scrivi una data giusta, non dopo oggi. Per ora usiamo ${art('il', state.firstRequestDate)}${formatIt(state.firstRequestDate)}.`, { field: 'firstRequestDate', focus: false });
           document.getElementById('remind-title').textContent = remindTitle();
           const text = tutelaReminder({
             ente: aslIntestazione(),

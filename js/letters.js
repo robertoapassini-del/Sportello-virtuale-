@@ -160,13 +160,18 @@ ${signature(p, today)}
 `;
 }
 
+const MAILTO_TO = /^[^\s@?&#%,;<>"]+@[^\s@?&#%,;<>"]+(,[^\s@?&#%,;<>"]+@[^\s@?&#%,;<>"]+)*$/;
 export function mailtoHref(to, subject, body) {
   // L'indirizzo deve restare corto per le app di posta del telefono; testi troppo lunghi vengono tolti.
   const maxBody = 1800;
   const b = body && body.length > maxBody ? '' : body;
   const params = [`subject=${encodeURIComponent(subject)}`];
   if (b) params.push(`body=${encodeURIComponent(b)}`);
-  return `mailto:${to || ''}?${params.join('&')}`;
+  // Solo indirizzi semplici (anche più d'uno, separati da virgola): un indirizzo scritto da chi usa il sito
+  // non deve aggiungere destinatari o campi («?cc=», «&bcc=») né spezzare il link (audit di sicurezza, giro 6).
+  const t = String(to || '').trim();
+  const addr = MAILTO_TO.test(t) ? t : '';
+  return `mailto:${addr}?${params.join('&')}`;
 }
 
 // Modulo 3 — sollecito per la copia della cartella clinica o dei referti.

@@ -73,6 +73,23 @@ async function main() {
     }
     await ctx.close();
   }
+  // (a2) Audit giro 6: «/.//altro-sito/» si risolve in un pathname «//altro-sito/», che location.assign() leggeva
+  // come indirizzo di un altro sito. Le pagine fuori dal sito rispondono «FUORI» (niente rete vera).
+  for (const t of ['/.//esempio.invalid/', '/..//esempio.invalid/', '/a/..//esempio.invalid/', '/./\\esempio.invalid/', '//esempio.invalid/', '/\\esempio.invalid/', '/%09/esempio.invalid', 'javascript:alert(1)', '/legge-104/']) {
+    const nome = `numeri-utili/?torna=${t}`;
+    const { ctx, page } = await scheda(browser, nome);
+    await ctx.route((u) => u.origin !== ORIGIN, (r) => r.fulfill({ status: 200, contentType: 'text/plain', body: 'FUORI' }));
+    page.on('dialog', (d) => { problemi.push(`${nome}: si apre una finestra di JavaScript`); d.dismiss().catch(() => {}); });
+    await apri(page, at(`numeri-utili/?torna=${encodeURIComponent(t)}`));
+    if (await clicca(page, 'button[data-action="region"][data-region="sicilia"]', nome)) {
+      await page.waitForLoadState('networkidle').catch(() => {});
+      await page.waitForTimeout(300);
+      const u = new URL(page.url());
+      if (u.origin !== ORIGIN) problemi.push(`${nome}: dopo la scelta della regione si va fuori dal sito (${u.href})`);
+      else if (t === '/legge-104/' && u.pathname !== new URL('legge-104/', BASE).pathname) problemi.push(`${nome}: non torna alla pagina giusta (${u.href})`);
+    }
+    await ctx.close();
+  }
   {
     const nome = 'numeri-utili/?torna=/privacy.html';
     const { ctx, page } = await scheda(browser, nome);

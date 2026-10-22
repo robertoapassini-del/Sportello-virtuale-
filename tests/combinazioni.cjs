@@ -260,7 +260,7 @@ async function runCase(page, c) {
           await page.fill('#appointmentDate', c.appt);
           await btn(/Controlla/);
           if (c.expectError || c.expectFutureError) {
-            const e = page.locator('#dates-error');
+            const e = page.locator('#dates-form-error');
             if (!(await e.isVisible())) problems.push('date invertite: nessun messaggio di errore');
             return problems;
           }
@@ -269,7 +269,7 @@ async function runCase(page, c) {
         await page.fill('#requestDate', c.req);
         await btn(/Calcola/);
         if (c.expectReqError) {
-          if (!(await page.locator('#req-error').isVisible())) problems.push('giorno nel futuro accettato');
+          if (!(await page.locator('#req-form-error').isVisible())) problems.push('giorno nel futuro accettato');
           return problems;
         }
       }
@@ -574,7 +574,7 @@ async function runCase(page, c) {
   await page.fill('#certDate', c.cert);
   await btn(/Avanti/);
   if (c.expectCertError) {
-    if (!(await page.locator('#cert-error').isVisible())) problems.push('certificato nel futuro accettato');
+    if (!(await page.locator('#cert-form-error').isVisible())) problems.push('certificato nel futuro accettato');
     return problems;
   }
   await btn({ oncological: /^Per una persona con un tumore/, minor: /^Per un bambino/, other: /^Per un adulto/ }[c.cat]);
@@ -589,7 +589,7 @@ async function runCase(page, c) {
     await page.fill('#domandaDate', c.domanda);
     await btn(/Sì, l'ho fatta/);
     if (c.expectDomError) {
-      if (!(await page.locator('#dom-error').isVisible())) problems.push('domanda prima del certificato accettata');
+      if (!(await page.locator('#dom-form-error').isVisible())) problems.push('domanda prima del certificato accettata');
       return problems;
     }
     await btn(c.conv ? /^Sì, ho il giorno della visita/ : /^No, non ancora/);

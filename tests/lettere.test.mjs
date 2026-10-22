@@ -65,3 +65,30 @@ test('nei js nessun segnaposto tipo «[COMUNE]» o «{{nome}}» al posto di un c
   }
   assert.deepEqual(errori, [], `Segnaposto nei js (usa «__________»):\n${errori.join('\n')}`);
 });
+
+// mailtoHref: l'indirizzo scritto da chi usa il sito (Cartella clinica: «Email o PEC dell'ospedale») non deve
+// poter aggiungere destinatari o campi (?cc=, &bcc=, &body=) né spezzare il link (#, %, spazi). Audit giro 6.
+test('mailtoHref: niente campi in più dall\'indirizzo', () => {
+  for (const to of ['a@b.it?cc=x@evil.example', 'a@b.it&bcc=x@evil.example', 'a@b.it?body=altro', 'a@b.it#x', 'a@b.it%0Abcc:x@evil.example', 'a @b.it', 'a@b.it;x@evil.example', '<a@b.it>']) {
+    const h = L.mailtoHref(to, 'Oggetto', 'Testo\nriga 2');
+    const q = new URL(h).search.slice(1).split('&').map((x) => x.split('=')[0]);
+    assert.deepEqual(q, ['subject', 'body'], `${to} → ${h}`);
+    assert.doesNotMatch(decodeURIComponent(h.slice(7).split('?')[0]), /[?&#\s]|cc|bcc/i, `${to} → ${h}`);
+  }
+  assert.equal(L.mailtoHref('urp@asp.it', 'S', 'B'), 'mailto:urp@asp.it?subject=S&body=B');
+  assert.equal(L.mailtoHref(' urp@asp.it ', 'S', 'B'), 'mailto:urp@asp.it?subject=S&body=B');
+  assert.equal(L.mailtoHref('a@pec.it,b@pec.it', 'S', ''), 'mailto:a@pec.it,b@pec.it?subject=S');
+  assert.equal(L.mailtoHref('', 'S', ''), 'mailto:?subject=S');
+});
+
+test('mailtoHref: tutti gli indirizzi dei dati (data/) restano nel link', () => {
+  const dir = new URL('../data/', import.meta.url);
+  const indirizzi = new Set();
+  const visita = (x) => {
+    if (typeof x === 'string') { if (/^\S+@\S+$/.test(x.trim())) indirizzi.add(x); } else if (x && typeof x === 'object') Object.values(x).forEach(visita);
+  };
+  for (const f of readdirSync(dir, { recursive: true }).filter((x) => x.endsWith('.json'))) visita(JSON.parse(readFileSync(new URL(f, dir), 'utf8')));
+  assert.ok(indirizzi.size > 50, `trovati solo ${indirizzi.size} indirizzi in data/`);
+  const persi = [...indirizzi].filter((a) => L.mailtoHref(a, 'S', '') !== `mailto:${a.trim()}?subject=S`);
+  assert.deepEqual(persi, [], 'indirizzi dei dati che mailtoHref toglie');
+});

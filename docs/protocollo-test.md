@@ -26,7 +26,7 @@ Se non sai se una regola è nazionale, trattala come regionale finché non trovi
 | Comando | Cosa controlla |
 |---|---|
 | `npm test` | dati, numeri e fonti (`contatti`, `provenienza`, `cifre`: anche nel titolo e nella descrizione, con l'unità giusta), pagine aggiornate (`pagine`, anche la 404, fonti mai vuote, niente «noindex»), link interni (`link`), citazioni di legge rilette (`citazioni` + `tests/citazioni.txt`), lettere senza segnaposto (`lettere`), calcoli e festivi (`engine`), testi nazionali (`nazionale`), errori già visti (`errori-noti`), ricerca (`ricerca`: 40 parole → modulo giusto) |
-| `node tests/browser.cjs <indirizzo>` | tutte le pagine in un browser (Sicilia, Lazio, nessuna regione) e i percorsi dei moduli: errori JavaScript, «undefined», pagine troppo larghe (anche con il testo al 250%), pulsanti sotto i 44 px, stampa (titolo, pulsanti), frasi siciliane senza «Sicilia» |
+| `node tests/browser.cjs <indirizzo>` | tutte le pagine in un browser (Sicilia, Lazio, nessuna regione) e i percorsi dei moduli: errori JavaScript, «undefined», pagine troppo larghe (anche con il testo al 250%), pulsanti sotto i 44 px, tastiera (primo Tab, contorno del focus, errori dei campi collegati), stampa (titolo, pulsanti), frasi siciliane senza «Sicilia» |
 | `node tests/combinazioni.cjs <indirizzo>` | tutte le combinazioni di risposte nei moduli, confrontate con un calcolo indipendente |
 | `node tools/confronta-copie.mjs <cartella-copie> [regione…\|nazionali]` | i dati contro le copie notturne delle pagine ufficiali (branch `copie-siti`): cifre dei numeri con prova «pagina» (regionali e `data/numeri.json`) e orari HH:MM dei contatti con prova «pagina» che non sono nella copia del loro url, PEC e indirizzi di invio che non sono in nessuna copia dell'azienda, PEC, indirizzo e orari delle sedi INPS (`inps.json`) che non sono nella copia della pagina della sede, url senza copia. Nella CI è il job «copie», con `--noti tests/copie-noti.txt --base origin/main`: diventa rosso (codice 3) solo per un problema nuovo su un dato che la PR ha cambiato; i problemi già noti, quelli su dati uguali a main («non di questa PR»: è cambiata la pagina ufficiale) e gli url nuovi senza copia vanno solo nel riepilogo del job |
 | `node tests/robustezza.cjs <indirizzo>` | cosa succede quando qualcosa va storto: file di dati che non arrivano, cookie bloccati, indirizzi ostili (`?torna=`), hash rotti |
@@ -87,3 +87,13 @@ tutti i controlli verdi.
   che non stampava); il job «copie» blocca i numeri, le PEC e gli orari cambiati dalla PR che la copia non conferma
   (`tests/copie-noti.txt` per i buchi noti); `confronta-copie.mjs` controlla anche gli orari, le sedi INPS e
   `data/numeri.json`, e `tools/copie.mjs` copia anche le pagine delle sedi INPS e dei numeri nazionali.
+- 22/10/2026 (giro 6) — audit tastiera e lettori di schermo: in `browser.cjs` il primo Tab deve portare a «Vai al
+  contenuto» (i moduli spostavano il focus sul titolo all'apertura), ogni elemento raggiunto con Tab ha un contorno
+  di almeno 2 px (i `summary` non ce l'avevano), e dopo un invio vuoto l'errore è collegato al campo
+  (`aria-describedby`), il campo ha `aria-invalid` e il focus (`showError()` in `js/flow.js`); i percorsi nei moduli
+  anche come utente della Sicilia. In `errori-noti.test.mjs` i link chiamati «qui», «leggi qui», «Fonte».
+- 22/10/2026 (giro 6) — audit di sicurezza e privacy: in `robustezza.cjs` gli indirizzi `?torna=` che si risolvono in
+  «//altro-sito/» («/.//altro-sito/»); `tests/head-script.test.mjs` (lo script in testa a ogni pagina non porta fuori dal
+  sito); `tests/html-esc.test.mjs` (dati dell'utente nell'HTML solo dentro `esc()`); in `lettere.test.mjs` «Manda per
+  email» con indirizzi ostili («?cc=», «&bcc=») e con tutti gli indirizzi di `data/`; in `pagine.test.mjs` il meta
+  referrer su ogni pagina; in `errori-noti.test.mjs` la privacy dice che la ricerca resta nell'indirizzo («#q=»).

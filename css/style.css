@@ -55,7 +55,7 @@ body {
 }
 
 a { color: var(--primary); }
-a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
   outline: 3px solid #8a5a00;
   outline-offset: 2px;
 }
