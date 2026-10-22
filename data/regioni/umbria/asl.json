@@ -15,7 +15,8 @@
     "insalute.regione.umbria.it",
     "salute.regione.umbria.it",
     "accessounico.regione.umbria.it",
-    "cupumbria.it"
+    "cupumbria.it",
+    "ospedale.perugia.it"
    ],
    "guardia_medica_url": "https://www.uslumbria1.it/servizio/guardia-medica-continuita-assistenziale/",
    "pua_url": "https://www.uslumbria1.it/servizio/assistenza-e-cure-domiciliari/",
@@ -473,6 +474,15 @@
      "url": "https://www.uslumbria1.it/azienda/per-il-cittadino/elenco-telefonico/",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "palliative",
+     "label": "Hospice «La Torre sul Colle» di Spoleto (USL Umbria 2)",
+     "number": "0743 210278",
+     "address": "Via Loreto, Spoleto",
+     "url": "https://www.uslumbria2.it/notizie/cure-palliative-e-terapia-del-dolore",
+     "verified": "2026-10-21",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -519,6 +529,10 @@
     {
      "label": "Umbria in Salute – Centrale operativa 116117 (giugno 2025)",
      "url": "https://insalute.regione.umbria.it/novita/umbria-nasce-la-centrale-operativa-116117-per-le-cure-mediche-non-urgenti/"
+    },
+    {
+     "label": "USL Umbria 2 – Cure palliative e terapia del dolore",
+     "url": "https://www.uslumbria2.it/notizie/cure-palliative-e-terapia-del-dolore"
     }
    ],
    "last_verified": "2026-10-21",
@@ -526,9 +540,116 @@
     "116117: la Regione (notizia del 12/06/2025 su insalute.regione.umbria.it) ha approvato la Centrale Operativa 116117, gestita dall'USL Umbria 1, «pienamente operativa entro il 31/12/2025» e collaudo entro marzo 2026. Nelle copie NON c’è una pagina regionale che dica che è attivo in tutta l’Umbria. L’unica pagina che lo usa è quella della guardia medica USL Umbria 1 (agg. 15/09/2026): 116117 solo per il Distretto del Perugino (Perugia, Corciano, Torgiano); gli altri distretti dell'USL 1 e tutta l'USL Umbria 2 (pagina agg. 13/07/2026) hanno ancora numeri locali. Per questo ho messo i numeri locali con la zona e il 116117 solo per il Perugino. Se la Regione pubblica che il 116117 vale per tutta la regione, togliere i numeri locali.",
     "CUP: in Umbria il CUP regionale è il NUS – Numero Umbria Sanità: 800 636363 (numero verde da fisso) e 075 5402963 da cellulare, dal lunedì al venerdì 8–18 nei giorni feriali (pagine Regione e USL). Le USL non hanno un numero CUP telefonico proprio: hanno sportelli CUP e FarmaCUP. Prenotazione online su www.cupumbria.it e app UmbriaFacile.",
     "Guardia medica USL Umbria 1: l’Elenco telefonico (agg. 22/04/2026) ha numeri diversi (es. Gubbio 075 9239468, Perugia 075 36584) da quelli della pagina Guardia medica (agg. 15/09/2026): ho usato quelli della pagina Guardia medica, più recente. Bastia Umbra: sede indicata ma senza numero.",
-    "Cure palliative USL Umbria 1: la pagina è del 05/09/2023, non usata; messo solo l’Hospice di Perugia dall’Elenco telefonico.",
     "USL Umbria 2 (Foligno, Spoleto, Valnerina): nessun numero PUA/cure domiciliari nelle copie (la pagina «Accedere al servizio di assistenza domiciliare» rimanda ai Centri di salute senza numeri). Gli sportelli CUP dell'USL 2 nelle copie non hanno numeri di telefono.",
-    "Mancano protesica, anagrafe/scelta del medico, cartelle cliniche, screening: non ci sono nelle copie."
+    "Cure palliative USL Umbria 1: la pagina «Cure palliative» (agg. 05/09/2023) ha numeri dei PUA diversi da quelli, più recenti, della pagina «Assistenza e cure domiciliari»: non usata. Messi l'Hospice di Perugia (Elenco telefonico) e l'Hospice di Spoleto dell'USL Umbria 2 (pagina «Cure palliative e terapia del dolore», agg. 05/05/2023: confermare con una telefonata).",
+    "Lettere (docs/regioni.md, «Aggiungere le lettere di una regione»): la provincia di Perugia ha due aziende (USL Umbria 1; USL Umbria 2 per Foligno, Spoleto e Valnerina). Una lettera all'URP o alla PEC dell'azienda va all'una o all'altra secondo il comune: serve la domanda «In quale zona?» (sub_areas) prima di accendere i moduli con le lettere. Oggi pec ed emails[0] sono quelli dell'USL Umbria 1.",
+    "Mancano, e sono in pagine[] perché il server le copi: cartelle cliniche (USL 1, USL 2, Azienda Ospedaliera di Perugia), protesica (USL 1 e 2), scelta e revoca (USL 1, USL 2, Regione), screening (USL 1 e 2), percorso di tutela / «presa in carico» del CUP (USL 1, USL 2, Regione)."
+   ],
+   "pagine": [
+    {
+     "tipo": "cartelle",
+     "url": "https://www.uslumbria1.it/servizio/documentazione-clinica/"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://ospedale.perugia.it/pagine/richiedere-la-cartella-clinica-e-la-documentazione-sanitaria"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.ospedale.perugia.it/pagine/documentazione-clinica"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.uslumbria1.it/servizio/ausili-e-assistenza-protesica/"
+    },
+    {
+     "tipo": "anagrafe",
+     "url": "https://www.uslumbria1.it/medici/scelta-cambio-revoca-del-medico-e-del-pediatra/"
+    },
+    {
+     "tipo": "anagrafe",
+     "url": "https://www.uslumbria1.it/servizi-on-line/scelta-e-revoca-online-del-medico-di-famiglia/"
+    },
+    {
+     "tipo": "anagrafe",
+     "url": "https://www.uslumbria1.it/servizio/anagrafe-assistibili/"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.uslumbria1.it/screening/"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.uslumbria1.it/servizio/cure-palliative/"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.uslumbria1.it/come-fare-per/presentare-una-segnalazione-o-un-reclamo-tramite-lurp/"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.uslumbria1.it/ammtrasparente/servizi-erogati/liste-di-attesa/"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.uslumbria1.it/servizio/cup-prenotazioni-allo-sportello-telefoniche-online-e-pagamenti-online/"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.uslumbria2.it/notizie/rilascio-copia-della-cartella-clinica"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.uslumbria2.it/servizi/assistenza-protesica"
+    },
+    {
+     "tipo": "anagrafe",
+     "url": "https://www.uslumbria2.it/notizie/anagrafe-assistibili-iscrizione-al-servizio-sanitario-regionale-tessera-sanitaria-scelta-medico-o-pediatra-di-famiglia-assistenza-allestero-esenzione-per-reddito-o-patologia"
+    },
+    {
+     "tipo": "anagrafe",
+     "url": "https://www.uslumbria2.it/notizie/medici-di-medicina-generale-001"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.uslumbria2.it/servizi/gli-screening-per-la-diagnosi-precoce-e-la-prevenz"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.uslumbria2.it/notizie/cure-palliative-e-terapia-del-dolore"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.uslumbria2.it/notizie/cure-palliative-hospice-spoleto"
+    },
+    {
+     "tipo": "casa",
+     "url": "https://www.uslumbria2.it/notizie/accedere-al-servizio-di-assistenza-domiciliare"
+    },
+    {
+     "tipo": "casa",
+     "url": "https://www.uslumbria2.it/servizi/centri-di-salute-e-punti-di-erogazione-servizi-000"
+    },
+    {
+     "tipo": "tutela",
+     "url": "http://ec.uslumbria2.it/www/sitlc/CUP/PRESA%20IN%20CARICO/presa_in_carico.htm"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.uslumbria2.it/notizie/in-evidenza-limpegno-delle-aziende-sanitarie-e-ospedaliere-dellumbria-per-abbattere-i-tempi-di-attesa"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.uslumbria2.it/media/urp-ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "anagrafe",
+     "url": "https://www.regione.umbria.it/scelta-e-revoca-online-del-medico-di-famiglia"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.regione.umbria.it/-/salute-diritti-liste-di-attesa"
+    }
    ]
   },
   {
@@ -543,7 +664,8 @@
     "insalute.regione.umbria.it",
     "salute.regione.umbria.it",
     "accessounico.regione.umbria.it",
-    "cupumbria.it"
+    "cupumbria.it",
+    "aospterni.it"
    ],
    "guardia_medica_url": "https://www.uslumbria2.it/servizi/guardia-medica",
    "emails": [
@@ -721,6 +843,15 @@
      "proof": "pagina",
      "hours": "Notti feriali 20–8; dal sabato e prefestivi ore 8 fino alle 8 del giorno dopo il festivo",
      "address": "Via A. Gramsci 22, Fabro"
+    },
+    {
+     "topic": "palliative",
+     "label": "Hospice di Terni (USL Umbria 2)",
+     "number": "0744 204207",
+     "address": "Strada Le Grazie 6, Terni",
+     "url": "https://www.uslumbria2.it/notizie/cure-palliative-e-terapia-del-dolore",
+     "verified": "2026-10-21",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -743,14 +874,94 @@
     {
      "label": "Regione Umbria – Prenotare una prestazione sanitaria (NUS)",
      "url": "https://accessounico.regione.umbria.it/it/enti-partecipanti/enti/regione-umbria/salute/prenotare-una-prestazione-sanitaria/"
+    },
+    {
+     "label": "USL Umbria 2 – Cure palliative e terapia del dolore",
+     "url": "https://www.uslumbria2.it/notizie/cure-palliative-e-terapia-del-dolore"
     }
    ],
    "last_verified": "2026-10-21",
    "todo": [
     "116117 non ancora indicato per la provincia di Terni: la pagina Guardia medica dell'USL Umbria 2 (agg. 13/07/2026) dà ancora i numeri locali. Vedi nota sulla voce Perugia.",
     "Guardia medica Arrone (0744 275888) ha lo stesso numero di Terni: messo solo Terni con Arrone tra i comuni.",
-    "Mancano numeri PUA/cure domiciliari, cure palliative, protesica, anagrafe, cartelle cliniche, screening dell'USL Umbria 2: non ci sono nelle copie. Gli sportelli CUP di Terni, Narni-Amelia e Orvieto nelle copie non hanno numeri."
-   ]
+    "Cure domiciliari USL Umbria 2: la pagina dice che il medico di famiglia attiva l'assistenza online con il Centro di salute e che poi la famiglia chiama il Centro di salute; nessun numero PUA nelle copie (pua_url è quella pagina).",
+    "Mancano, e sono in pagine[] perché il server le copi: cartelle cliniche (USL 2, Azienda Ospedaliera di Terni), protesica, scelta e revoca, screening, percorso di tutela / «presa in carico» del CUP. Gli sportelli CUP di Terni, Narni-Amelia e Orvieto nelle copie non hanno numeri."
+   ],
+   "pagine": [
+    {
+     "tipo": "cartelle",
+     "url": "https://www.uslumbria2.it/notizie/rilascio-copia-della-cartella-clinica"
+    },
+    {
+     "tipo": "protesica",
+     "url": "https://www.uslumbria2.it/servizi/assistenza-protesica"
+    },
+    {
+     "tipo": "anagrafe",
+     "url": "https://www.uslumbria2.it/notizie/anagrafe-assistibili-iscrizione-al-servizio-sanitario-regionale-tessera-sanitaria-scelta-medico-o-pediatra-di-famiglia-assistenza-allestero-esenzione-per-reddito-o-patologia"
+    },
+    {
+     "tipo": "anagrafe",
+     "url": "https://www.uslumbria2.it/notizie/medici-di-medicina-generale-001"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.uslumbria2.it/servizi/gli-screening-per-la-diagnosi-precoce-e-la-prevenz"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.uslumbria2.it/notizie/cure-palliative-e-terapia-del-dolore"
+    },
+    {
+     "tipo": "palliative",
+     "url": "https://www.uslumbria2.it/notizie/cure-palliative-hospice-spoleto"
+    },
+    {
+     "tipo": "casa",
+     "url": "https://www.uslumbria2.it/notizie/accedere-al-servizio-di-assistenza-domiciliare"
+    },
+    {
+     "tipo": "casa",
+     "url": "https://www.uslumbria2.it/servizi/centri-di-salute-e-punti-di-erogazione-servizi-000"
+    },
+    {
+     "tipo": "tutela",
+     "url": "http://ec.uslumbria2.it/www/sitlc/CUP/PRESA%20IN%20CARICO/presa_in_carico.htm"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.uslumbria2.it/notizie/in-evidenza-limpegno-delle-aziende-sanitarie-e-ospedaliere-dellumbria-per-abbattere-i-tempi-di-attesa"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.uslumbria2.it/media/urp-ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.aospterni.it/come-fare-per/richiedere-ritirare-copia-della-cartella-clinica/"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.aospterni.it/servizi-2/altri-servizi/richiesta-cartelle-cliniche-e-referti/"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.aospterni.it/servizi-2/altri-servizi/ufficio-relazioni-con-il-pubblico/"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.aospterni.it/in-primo-piano/liste-di-attesa/"
+    },
+    {
+     "tipo": "anagrafe",
+     "url": "https://www.regione.umbria.it/scelta-e-revoca-online-del-medico-di-famiglia"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.regione.umbria.it/-/salute-diritti-liste-di-attesa"
+    }
+   ],
+   "pua_url": "https://www.uslumbria2.it/notizie/accedere-al-servizio-di-assistenza-domiciliare"
   }
  ]
 }

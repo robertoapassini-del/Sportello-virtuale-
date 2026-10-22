@@ -1,0 +1,98 @@
+{
+ "region": "Marche",
+ "last_verified": "2026-10-22",
+ "note": "Indirizzi e PEC delle sedi INPS dalle pagine «sedi» di inps.it, copiate il 22/10/2026 dal server in Italia. Per andare allo sportello si prenota (MyINPS, app, 803 164 / 06 164164). Riforma della disabilità (campo regime), controllata il 22/10/2026 sugli estratti delle notizie INPS e del Dipartimento per la disabilità: nessuna provincia della regione nella prima fase (dal 01/01/2025); dal 30/09/2025 Macerata (seconda fase); dal 01/03/2026 Ancona e Ascoli Piceno (terza fase, 40 province). Le altre province restano col sistema vecchio fino al 31/12/2026; dal 01/01/2027 vale ovunque il nuovo.",
+ "sources": [
+  {
+   "label": "INPS – Direzione regionale Marche",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.038000.038000-elencoStruttureInps.html"
+  },
+  {
+   "label": "Dipartimento per le politiche in favore delle persone con disabilità – le prime 9 province della sperimentazione",
+   "url": "https://www.disabilita.governo.it/it/notizie/individuate-le-9-province-per-sperimentare-la-riforma-disabilita/"
+  },
+  {
+   "label": "Dipartimento per le politiche in favore delle persone con disabilità – altre 11 province (dal 30/09/2025)",
+   "url": "https://www.disabilita.governo.it/it/notizie/individuate-le-altre-11-province-per-la-sperimentazione-della-riforma-della-disabilita/"
+  },
+  {
+   "label": "Dipartimento per le politiche in favore delle persone con disabilità – altre 40 province (dal 01/03/2026)",
+   "url": "https://www.disabilita.governo.it/it/notizie/al-via-sperimentazione-riforma-disabilita-in-altre-40-province/"
+  },
+  {
+   "label": "INPS – Riforma della disabilità: al via la terza fase sperimentale",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html"
+  }
+ ],
+ "provinces": [
+  {
+   "id": "ancona",
+   "name": "Ancona",
+   "regime": "new",
+   "regime_since": "2026-03-01",
+   "pec": "direzione.provinciale.ancona@postacert.inps.gov.it",
+   "address": "Via Ruggeri 3, Ancona",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.030000.030000-elencoStruttureInps.html",
+   "verified": "2026-10-22",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "ascoli-piceno",
+   "name": "Ascoli Piceno",
+   "regime": "new",
+   "regime_since": "2026-03-01",
+   "pec": "direzione.provinciale.ascolipiceno@postacert.inps.gov.it",
+   "address": "Via Rismondo 1, Ascoli Piceno",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.060000.060000-elencoStruttureInps.html",
+   "verified": "2026-10-22",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "fermo",
+   "name": "Fermo",
+   "regime": "old",
+   "regime_since": null,
+   "pec": "direzione.provinciale.fermo@postacert.inps.gov.it",
+   "address": "Via Pompeiana 156, Fermo",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.060001.060001-elencoStruttureInps.html",
+   "verified": "2026-10-22",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "macerata",
+   "name": "Macerata",
+   "regime": "new",
+   "regime_since": "2025-09-30",
+   "pec": "direzione.provinciale.macerata@postacert.inps.gov.it",
+   "address": "Via Dante 8, Macerata",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.440000.440000-elencoStruttureInps.html",
+   "verified": "2026-10-22",
+   "proof": "pagina",
+   "pec_verified": true
+  },
+  {
+   "id": "pesaro-urbino",
+   "name": "Pesaro e Urbino",
+   "regime": "old",
+   "regime_since": null,
+   "pec": "direzione.provinciale.pesaro@postacert.inps.gov.it",
+   "address": "Viale Gramsci 6/10, Pesaro",
+   "status": "ok",
+   "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.590000.590000-elencoStruttureInps.html",
+   "verified": "2026-10-22",
+   "proof": "pagina",
+   "pec_verified": true
+  }
+ ],
+ "todo": [
+  "Regime della riforma della disabilità messo il 22/10/2026 dagli estratti (motore di ricerca) delle pagine disabilita.governo.it e inps.it: i siti non si aprono da qui. Da rileggere per intero sulle pagine e da confermare con una telefonata alla sede (come per la Sicilia).",
+  "Pesaro e Urbino: a Urbino c'è anche un'agenzia INPS (Piazza Repubblica 3, PEC direzione.agenzia.urbino@postacert.inps.gov.it, pagina copiata): qui c'è solo la sede di Pesaro."
+ ]
+}

@@ -69,6 +69,49 @@ test('regioni attive senza «moduli»: hanno i dati di tutti i moduli', () => {
   assert.deepEqual(err, [], err.join('\n'));
 });
 
+// Una regione con «moduli» accende un modulo solo se ha i dati che quel modulo legge (docs/regioni.md, «Aggiungere le
+// lettere di una regione (checklist)»). Senza, il modulo si rompe (a.scelta_medico.how di un'azienda senza
+// scelta_medico) o scrive a un indirizzo vuoto. Nato il 22/10/2026 con l'invalidità in Umbria: con «regime» null la
+// provincia di Perugia, nella riforma dal 2025, avrebbe avuto la procedura vecchia.
+const CAMPI_MODULO = {
+  'liste-attesa': (a) => [
+    ...['channel', 'letter_mode', 'how_to', 'documents_required', 'what_next', 'notes', 'details', 'emails', 'sources', 'phones', 'last_verified']
+      .filter((k) => !(k in a) || a[k] === null || a[k] === ''),
+    ...(a.letter_mode === 'portal' && !a.portal_url ? ['portal_url'] : []),
+    ...(a.letter_mode === 'official_form' && !(a.form_url && (a.form_fields || []).length) ? ['form_url e form_fields'] : []),
+    ...(a.letter_mode && a.letter_mode !== 'portal' && !a.send_to && !a.pec ? ['send_to o pec'] : []),
+  ],
+  'cartella-clinica': (a) => ['emails', 'phones', 'sources'].filter((k) => !Array.isArray(a[k])).concat(a.pec || (a.emails || []).length ? [] : ['pec o emails']),
+  // Medico: senza email né PEC la lettera si stampa e si consegna allo sportello o all'URP (js/medico.js, «Stampa la lettera e consegnala»).
+  'medico-famiglia': (a) => (a.scelta_medico && a.scelta_medico.how ? [] : ['scelta_medico.how']),
+  'assistenza-domiciliare': (a) => ((a.emails || []).length || a.pec ? [] : ['emails o pec']),
+  'cure-palliative': (a) => ((a.emails || []).length || a.pec ? [] : ['emails o pec']),
+  ausili: (a) => (a.pec ? [] : ['pec']),
+  prevenzione: () => [],
+};
+test('regioni con «moduli»: ogni modulo acceso ha i dati che legge', () => {
+  const err = [];
+  for (const r of attive.filter((x) => x.moduli)) {
+    for (const m of r.moduli) if (!reg.modules.some((x) => x.id === m) && m !== 'numeri-utili') err.push(`${r.id}: modulo «${m}» sconosciuto`);
+    const asl = json(fileDi(r, 'asl')).asl;
+    for (const m of r.moduli.filter((x) => CAMPI_MODULO[x])) {
+      for (const a of asl) for (const k of CAMPI_MODULO[m](a)) err.push(`${r.id}/${a.id}: «${m}» acceso ma manca ${k}`);
+    }
+    if (r.moduli.includes('invalidita')) {
+      const f = fileDi(r, 'inps');
+      if (!existsSync(path.join(SITE, f))) { err.push(`${r.id}: «invalidita» acceso ma manca ${f}`); continue; }
+      const ids = new Set(asl.map((a) => a.id));
+      for (const p of json(f).provinces) {
+        if (!ids.has(p.id)) err.push(`${r.id}: sede INPS «${p.id}» senza azienda con lo stesso id`);
+        if (!['old', 'new'].includes(p.regime)) err.push(`${r.id}/${p.id}: «invalidita» acceso ma regime è ${p.regime} (old o new)`);
+        if (p.regime === 'new' && !/^\d{4}-\d{2}-\d{2}$/.test(p.regime_since || '')) err.push(`${r.id}/${p.id}: regime new senza regime_since`);
+        for (const k of ['name', 'pec', 'address', 'url', 'verified', 'proof']) if (!p[k]) err.push(`${r.id}/${p.id}: «invalidita» acceso ma manca ${k}`);
+      }
+    }
+  }
+  assert.deepEqual(err, [], err.join('\n'));
+});
+
 // N22: ogni pagina del sito è nella sitemap (una pagina tolta da moduli.json resta online, vecchia).
 test('ogni pagina .html del sito è nella sitemap (tranne la 404)', () => {
   const salta = new Set(['node_modules', 'tests', 'tools', 'docs', 'data', 'js', 'css', 'fonts', 'copie']); // e le cartelle che cominciano con «.»

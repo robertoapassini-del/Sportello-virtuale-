@@ -1,0 +1,1702 @@
+{
+ "region": "Veneto",
+ "model": "Aziende ULSS",
+ "_note": "Numeri delle ULSS del Veneto per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 22/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono a Numeri utili; le sedi INPS (inps.json) a Invalidità. 9 ULSS per 7 province: Venezia (ULSS 3 e ULSS 4) e Vicenza (ULSS 7 e ULSS 8) hanno una voce sola con i contatti di tutte e due (vedi il todo). Nel Veneto la guardia medica è il 116117 in tutte le ULSS. «pagine»: indirizzi ufficiali in più che il server deve copiare (tools/copie.mjs).",
+ "asl": [
+  {
+   "id": "belluno",
+   "name": "Azienda ULSS 1 Dolomiti",
+   "province": "Belluno",
+   "site_url": "https://www.aulss1.veneto.it/",
+   "official_domains": [
+    "aulss1.veneto.it"
+   ],
+   "guardia_medica_url": "https://www.aulss1.veneto.it/116117",
+   "emails": [
+    "urp@aulss1.veneto.it"
+   ],
+   "pec": "protocollo.aulss1@pecveneto.it",
+   "phones": [
+    {
+     "label": "Centralino del distretto di Belluno",
+     "number": "0437 516111",
+     "address": "Via Feltre 57, 32100 Belluno",
+     "url": "https://www.aulss1.veneto.it/centralini",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "label": "CUP: prenotare visite ed esami (numero unico per tutta la provincia, gratis anche da cellulare)",
+     "number": "0437 1849900",
+     "hours": "Dal lunedì al venerdì 8:00–18:00, sabato 8:00–12:00",
+     "url": "https://www.aulss1.veneto.it/prenotare",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "Guardia medica e servizi del territorio: 116117, gratis",
+     "number": "116117",
+     "hours": "Risponde 24 ore su 24, tutti i giorni",
+     "url": "https://www.aulss1.veneto.it/116117",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica se il 116117 non si riesce a chiamare (in alcune zone vicino al confine della regione): numero verde",
+     "number": "800 311330",
+     "url": "https://www.aulss1.veneto.it/116117",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP: prenotare visite ed esami (numero unico per tutta la provincia, gratis anche da cellulare)",
+     "number": "0437 1849900",
+     "hours": "Dal lunedì al venerdì 8:00–18:00, sabato 8:00–12:00",
+     "url": "https://www.aulss1.veneto.it/prenotare",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP di Belluno: ufficio per i cittadini, reclami",
+     "number": "0437 516797",
+     "hours": "Dal lunedì al venerdì 8:30–12:30 (il pomeriggio su appuntamento)",
+     "url": "https://www.aulss1.veneto.it/urp",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP di Feltre: ufficio per i cittadini, reclami",
+     "number": "0439 883570",
+     "hours": "Lunedì e giovedì 8:30–12:30 e 15:00–17:00; martedì e venerdì 8:30–12:30; mercoledì chiuso",
+     "url": "https://www.aulss1.veneto.it/urp",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino del distretto di Belluno",
+     "number": "0437 516111",
+     "address": "Via Feltre 57, 32100 Belluno",
+     "url": "https://www.aulss1.veneto.it/centralini",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino del distretto di Feltre",
+     "number": "0439 8831",
+     "address": "Viale Bagnols sur Cèze 3, 32032 Feltre (BL)",
+     "url": "https://www.aulss1.veneto.it/centralini",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ULSS 1 Dolomiti – Centralini",
+     "url": "https://www.aulss1.veneto.it/centralini"
+    },
+    {
+     "label": "ULSS 1 Dolomiti – URP",
+     "url": "https://www.aulss1.veneto.it/urp"
+    },
+    {
+     "label": "ULSS 1 Dolomiti – Prenotare",
+     "url": "https://www.aulss1.veneto.it/prenotare"
+    },
+    {
+     "label": "ULSS 1 Dolomiti – 116117",
+     "url": "https://www.aulss1.veneto.it/116117"
+    }
+   ],
+   "last_verified": "2026-10-22",
+   "todo": [
+    "PUA e cure a casa: la pagina «progetti e servizi a sostegno della domiciliarità» dà 404; il 116117 attiva anche i servizi del territorio (non autosufficienza, disabilità). Numero del PUA non trovato nelle copie.",
+    "Cartelle cliniche, protesi e ausili, screening: nessuna pagina copiata con i numeri (aggiunte in «pagine»)."
+   ],
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aulss1.veneto.it/urp"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aulss1.veneto.it/centralini"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aulss1.veneto.it/liste-d-attesa"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aulss1.veneto.it/116117"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss1.veneto.it/distretti-e-territorio"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.aulss1.veneto.it/urp-online"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss1.veneto.it/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss1.veneto.it/prenotare"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss1.veneto.it/cup"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss1.veneto.it/prenota-il-tuo-turno-per-le-analisi-del-sangue"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.aulss1.veneto.it/richiedere-cartelle-cliniche"
+    }
+   ]
+  },
+  {
+   "id": "treviso",
+   "name": "Azienda ULSS 2 Marca Trevigiana",
+   "province": "Treviso",
+   "site_url": "https://www.aulss2.veneto.it/",
+   "official_domains": [
+    "aulss2.veneto.it"
+   ],
+   "guardia_medica_url": "https://www.aulss2.veneto.it/Continuit-assistenziale",
+   "emails": [
+    "urp@aulss2.veneto.it"
+   ],
+   "pec": "protocollo.aulss2@pecveneto.it",
+   "phones": [
+    {
+     "label": "CUP del distretto di Treviso: prenotare visite ed esami",
+     "number": "0422 210701",
+     "hours": "Dal lunedì al venerdì 7:30–18:00, sabato 8:00–12:00",
+     "url": "https://www.aulss2.veneto.it/cup",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "Guardia medica e servizi del territorio: 116117, gratis",
+     "number": "116117",
+     "hours": "Risponde 24 ore su 24, tutti i giorni",
+     "url": "https://www.aulss2.veneto.it/116117",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP del distretto di Treviso: prenotare visite ed esami",
+     "number": "0422 210701",
+     "hours": "Dal lunedì al venerdì 7:30–18:00, sabato 8:00–12:00",
+     "url": "https://www.aulss2.veneto.it/cup",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP del distretto di Asolo: prenotare visite ed esami",
+     "number": "0423 728898",
+     "hours": "Dal lunedì al venerdì 8:00–18:00, sabato 8:00–12:00",
+     "url": "https://www.aulss2.veneto.it/cup",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP del distretto di Pieve di Soligo: prenotare visite ed esami",
+     "number": "0438 659004",
+     "hours": "Dal lunedì al venerdì 7:30–18:00, sabato 8:00–12:00",
+     "url": "https://www.aulss2.veneto.it/cup",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP di Treviso Nord e Treviso Sud (sportelli a Treviso e Oderzo): ufficio per i cittadini, reclami",
+     "number": "0422 322922",
+     "hours": "Telefono: dal lunedì al venerdì 8:30–16:00. Sportello: dal lunedì al venerdì 9:00–12:00",
+     "address": "Piazzale Ospedale 1, 31100 Treviso (Portineria Sud, ingresso 1)",
+     "url": "https://www.aulss2.veneto.it/ufficio-relazioni-con-il-pubblico",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP del distretto di Asolo (sportelli a Castelfranco Veneto e Montebelluna)",
+     "number": "0423 731994",
+     "hours": "Telefono: dal lunedì al venerdì 8:30–16:00. Sportello: dal lunedì al venerdì 9:00–12:00",
+     "url": "https://www.aulss2.veneto.it/ufficio-relazioni-con-il-pubblico",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP del distretto di Pieve di Soligo (sportelli a Conegliano e Vittorio Veneto)",
+     "number": "0438 663608",
+     "hours": "Telefono: dal lunedì al venerdì 8:30–16:00. Sportello: dal lunedì al venerdì 9:00–12:00",
+     "url": "https://www.aulss2.veneto.it/ufficio-relazioni-con-il-pubblico",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ULSS 2 Marca Trevigiana – CUP",
+     "url": "https://www.aulss2.veneto.it/cup"
+    },
+    {
+     "label": "ULSS 2 Marca Trevigiana – Ufficio Relazioni con il Pubblico",
+     "url": "https://www.aulss2.veneto.it/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "label": "ULSS 2 Marca Trevigiana – 116117",
+     "url": "https://www.aulss2.veneto.it/116117"
+    },
+    {
+     "label": "ULSS 2 Marca Trevigiana – Continuità assistenziale",
+     "url": "https://www.aulss2.veneto.it/Continuit-assistenziale"
+    }
+   ],
+   "last_verified": "2026-10-22",
+   "todo": [
+    "Centralino: nessuna copia lo riporta (la pagina «Strutture» risponde 503; aggiunta in «pagine» la pagina «centralini»).",
+    "PUA e cure a casa: la pagina sulle Case della Comunità non dà numeri; il 116117 orienta ai servizi del territorio.",
+    "Cartelle cliniche, protesi e ausili, screening: pagine non copiate."
+   ],
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aulss2.veneto.it/urp"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://aulss2.veneto.it/Strutture"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aulss2.veneto.it/cup-centro-unico-prenotazioni"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aulss2.veneto.it/116117"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aulss2.veneto.it/Continuit-assistenziale"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aulss2.veneto.it/che-cosa-si-pu-trovare-in-una-casa-della-comunit"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.aulss2.veneto.it/liste-attesa"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss2.veneto.it/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss2.veneto.it/urp-online"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss2.veneto.it/cup"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss2.veneto.it/prenotare"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss2.veneto.it/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss2.veneto.it/numeri-utili"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aulss2.veneto.it/centralini"
+    }
+   ]
+  },
+  {
+   "id": "venezia",
+   "name": "ULSS 3 Serenissima e ULSS 4 Veneto Orientale",
+   "province": "Venezia",
+   "site_url": "https://www.aulss3.veneto.it/",
+   "official_domains": [
+    "aulss3.veneto.it",
+    "aulss4.veneto.it"
+   ],
+   "guardia_medica_url": "https://www.aulss3.veneto.it/home/numeri-utili/116117",
+   "emails": [
+    "urp@aulss4.veneto.it"
+   ],
+   "pec": "protocollo.aulss3@pecveneto.it",
+   "phones": [
+    {
+     "label": "CUP dell'ULSS 3 Serenissima (Venezia, Mestre, Mirano-Dolo, Chioggia): prenotare visite ed esami",
+     "number": "041 844844",
+     "url": "https://www.aulss3.veneto.it/Numeri-Utili-1",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "label": "CUP dell'ULSS 4 Veneto Orientale (San Donà di Piave, Portogruaro, Jesolo): prenotare visite ed esami",
+     "number": "0421 1547154",
+     "hours": "Dal lunedì al venerdì 8:00–17:00, sabato 8:00–12:00",
+     "url": "https://www.aulss4.veneto.it/home/cup",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "Guardia medica e servizi del territorio: 116117, gratis (ULSS 3 e ULSS 4)",
+     "number": "116117",
+     "hours": "Risponde 24 ore su 24, tutti i giorni",
+     "url": "https://www.aulss3.veneto.it/home/numeri-utili/116117",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica se il 116117 non si riesce a chiamare (zone vicino al confine della regione, come San Michele al Tagliamento e Bibione): numero verde",
+     "number": "800 311330",
+     "url": "https://www.aulss4.veneto.it/home/numeri-utili/116117-e-continuita-assistenziale/116117",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP dell'ULSS 3 Serenissima (Venezia, Mestre, Mirano-Dolo, Chioggia): prenotare visite ed esami",
+     "number": "041 844844",
+     "url": "https://www.aulss3.veneto.it/Numeri-Utili-1",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP dell'ULSS 4 Veneto Orientale (San Donà di Piave, Portogruaro, Jesolo): prenotare visite ed esami",
+     "number": "0421 1547154",
+     "hours": "Dal lunedì al venerdì 8:00–17:00, sabato 8:00–12:00",
+     "url": "https://www.aulss4.veneto.it/home/cup",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ULSS 4 Veneto Orientale: ufficio per i cittadini, reclami",
+     "number": "0421 228057",
+     "hours": "Telefono: lunedì e mercoledì 8:30–12:30. Sportello: giovedì 8:30–12:30",
+     "address": "Piazza De Gasperi 5, San Donà di Piave",
+     "url": "https://aulss4.veneto.it/amministrazione/urp-ufficio-relazioni-con-il-pubblico",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare (ADI) a Venezia (ULSS 3)",
+     "number": "041 5294903",
+     "url": "https://www.aulss3.veneto.it/Numeri-Utili-1",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare (ADI) a Mestre (ULSS 3)",
+     "number": "041 2608113",
+     "url": "https://www.aulss3.veneto.it/Numeri-Utili-1",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare (ADI) a Mirano (ULSS 3)",
+     "number": "041 5795267",
+     "url": "https://www.aulss3.veneto.it/Numeri-Utili-1",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare (ADI) a Camponogara (ULSS 3)",
+     "number": "041 5133450",
+     "url": "https://www.aulss3.veneto.it/Numeri-Utili-1",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare (ADI) a Chioggia (ULSS 3)",
+     "number": "041 5573314",
+     "url": "https://www.aulss3.veneto.it/Numeri-Utili-1",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare (ADI) a Cavarzere (ULSS 3)",
+     "number": "0426 316471",
+     "url": "https://www.aulss3.veneto.it/Numeri-Utili-1",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Copia della cartella clinica: ospedale di Venezia (ULSS 3)",
+     "number": "041 5294321",
+     "url": "https://www.aulss3.veneto.it/Numeri-Utili-1",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Copia della cartella clinica: ospedale di Mestre (ULSS 3)",
+     "number": "041 9657773",
+     "url": "https://www.aulss3.veneto.it/Numeri-Utili-1",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Copia della cartella clinica: ospedale di Mirano (ULSS 3)",
+     "number": "041 5794179",
+     "url": "https://www.aulss3.veneto.it/Numeri-Utili-1",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Copia della cartella clinica: ospedale di Dolo (ULSS 3)",
+     "number": "041 5133340",
+     "url": "https://www.aulss3.veneto.it/Numeri-Utili-1",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Copia della cartella clinica: ospedale di Noale (ULSS 3)",
+     "number": "041 5896153",
+     "url": "https://www.aulss3.veneto.it/Numeri-Utili-1",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cartelle",
+     "label": "Copia della cartella clinica: ospedale di Chioggia (ULSS 3)",
+     "number": "041 5534266",
+     "url": "https://www.aulss3.veneto.it/Numeri-Utili-1",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "protesica",
+     "label": "Ausili e presidi per invalidi: distretto di Chioggia (ULSS 3)",
+     "number": "041 5573331",
+     "url": "https://www.aulss3.veneto.it/Numeri-Utili-1",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Esami contro i tumori (screening) dell'ULSS 3 a Venezia, Mestre e Chioggia: numero verde",
+     "number": "800 185030",
+     "url": "https://www.aulss3.veneto.it/Numeri-Utili-1",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "palliative",
+     "label": "Cure palliative del distretto di Venezia terraferma (ULSS 3)",
+     "number": "041 2608066",
+     "address": "Via Cappuccina 129, Mestre",
+     "url": "https://www.aulss3.veneto.it/Numeri-Utili-1",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "palliative",
+     "label": "Cure palliative del distretto di Chioggia (ULSS 3)",
+     "number": "041 5573314",
+     "address": "Via Amerigo Vespucci, Chioggia",
+     "url": "https://www.aulss3.veneto.it/Numeri-Utili-1",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "palliative",
+     "label": "Cure palliative del distretto di Mirano-Dolo, sede di Camponogara (ULSS 3)",
+     "number": "041 5133325",
+     "url": "https://www.aulss3.veneto.it/Numeri-Utili-1",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino della sede del distretto di Chioggia (ULSS 3)",
+     "number": "041 5573311",
+     "address": "Via Amerigo Vespucci, Chioggia",
+     "url": "https://www.aulss3.veneto.it/Numeri-Utili-1",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino della Cittadella socio-sanitaria di Cavarzere (ULSS 3)",
+     "number": "0426 316111",
+     "address": "Via N. Sauro 30, Cavarzere",
+     "url": "https://www.aulss3.veneto.it/Numeri-Utili-1",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino del distretto di Mirano-Dolo, sede di Spinea (ULSS 3)",
+     "number": "041 9654000",
+     "address": "Via Murano 17, Spinea",
+     "url": "https://www.aulss3.veneto.it/Numeri-Utili-1",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ULSS 3 Serenissima – Numeri utili",
+     "url": "https://www.aulss3.veneto.it/Numeri-Utili-1"
+    },
+    {
+     "label": "ULSS 3 Serenissima – Centrale 116117",
+     "url": "https://www.aulss3.veneto.it/home/numeri-utili/116117"
+    },
+    {
+     "label": "ULSS 3 Serenissima – PEC",
+     "url": "https://www.aulss3.veneto.it/home/numeri-utili/pec"
+    },
+    {
+     "label": "ULSS 4 Veneto Orientale – CUP",
+     "url": "https://www.aulss4.veneto.it/home/cup"
+    },
+    {
+     "label": "ULSS 4 Veneto Orientale – URP",
+     "url": "https://aulss4.veneto.it/amministrazione/urp-ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "label": "ULSS 4 Veneto Orientale – 116117",
+     "url": "https://www.aulss4.veneto.it/home/numeri-utili/116117-e-continuita-assistenziale/116117"
+    }
+   ],
+   "last_verified": "2026-10-22",
+   "todo": [
+    "Come è fatto: la provincia di Venezia ha due aziende. L'ULSS 3 Serenissima copre Venezia, Mestre, Mirano-Dolo e Chioggia; l'ULSS 4 Veneto Orientale copre San Donà di Piave, Portogruaro e Jesolo. Una sola voce per provincia: i contatti dicono di quale ULSS sono. La PEC in «pec» è dell'ULSS 3; quella dell'ULSS 4 è protocollo.aulss4@pecveneto.it (nelle copie dell'ULSS 4). Per le lettere servirà scegliere l'ULSS (domanda in più o una voce per ULSS).",
+    "ULSS 3: nelle copie mancano il centralino generale e il numero dell'URP (nella pagina «Numeri utili» sono voci chiuse che la copia non apre). Aggiunte in «pagine» le pagine dei centralini e dell'URP.",
+    "ULSS 4: la pagina «Numeri utili» dice CUP 041 844 844 e URP 0418694692, ma le pagine del CUP e dell'URP dicono 0421 1547154 e 0421 228057 (usati questi). Da chiarire con l'URP.",
+    "ULSS 4: PUA e cure a casa si attivano con il 116117 (pagina 116117); nessun numero del PUA nelle copie.",
+    "ULSS 3: la pagina della continuità assistenziale e quella dell'assistenza domiciliare sono copiate quasi vuote."
+   ],
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aulss3.veneto.it/organizzazioni/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aulss3.veneto.it/Numeri-Utili-1"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aulss3.veneto.it/home/dettaglio/organizzazione/prenotare"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aulss3.veneto.it/home/numeri-utili/116117"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aulss3.veneto.it/dettaglio/contenuto/servizio-di-continuita-assistenziale-ex-guardia-medica"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aulss3.veneto.it/Assistenza-Domiciliare-Integrata"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://trasparenza.aulss3.veneto.it/trasparenza-liste-attesa"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://aulss4.veneto.it/amministrazione/urp-ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aulss4.veneto.it/home/numeri-utili"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aulss4.veneto.it/home/cup"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aulss4.veneto.it/home/numeri-utili/116117-e-continuita-assistenziale/116117"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aulss4.veneto.it/home/dettaglio/strutture/casa-della-comunita-di-san-dona-di-piave"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss3.veneto.it/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss3.veneto.it/home/numeri-utili"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss3.veneto.it/organizzazione/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss3.veneto.it/come-fare-per/prenotazioni"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss3.veneto.it/come-fare-per/medici-medicina-generale-pediatri-libera-scelta-e-continuita-assistenziale"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss3.veneto.it/organizzazione/centrale-operativa-116117"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss3.veneto.it/home/numeri-utili/cup"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss3.veneto.it/home/numeri-utili/pec"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss3.veneto.it/home/urp-online"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss4.veneto.it/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss4.veneto.it/home/urp-online"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss4.veneto.it/servizi/continuita-assistenziale-ex-guardia-medica"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss4.veneto.it/servizionline/prenotazione-esami-di-laboratorio-presso-le-strutture-dellazienda-ulss4-veneto-orientale"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss4.veneto.it/home/numeri-utili/116117-e-continuita-assistenziale"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss4.veneto.it/home/numeri-utili/pronto-soccorso-118"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss4.veneto.it/home/numeri-utili/cup"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss4.veneto.it/home/numeri-utili/fornitori-ulss4"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aulss3.veneto.it/home/numeri-utili/centralini"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.aulss3.veneto.it/home/numeri-utili/ufficio-relazioni-con-il-pubblico"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aulss4.veneto.it/home/numeri-utili/centralini"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.aulss4.veneto.it/home/numeri-utili/urp"
+    }
+   ]
+  },
+  {
+   "id": "rovigo",
+   "name": "Azienda ULSS 5 Polesana",
+   "province": "Rovigo",
+   "site_url": "https://www.aulss5.veneto.it/",
+   "official_domains": [
+    "aulss5.veneto.it"
+   ],
+   "guardia_medica_url": "https://www.aulss5.veneto.it/Servizio-di-continuita-assistenziale",
+   "emails": [
+    "urp@aulss5.veneto.it",
+    "cup.provinciale@aulss5.veneto.it"
+   ],
+   "pec": "protocollo.aulss5@pecveneto.it",
+   "phones": [
+    {
+     "label": "Centralino di Rovigo",
+     "number": "0425 3931",
+     "url": "https://www.aulss5.veneto.it/Contatti-e-riferimenti",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "label": "CUP: prenotare visite ed esami da telefono fisso (numero verde, gratis)",
+     "number": "800 061644",
+     "hours": "Dal lunedì al venerdì 8:00–18:00, sabato 8:00–12:00",
+     "url": "https://www.aulss5.veneto.it/Contatti-e-riferimenti",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale) e servizi del territorio: 116117, gratis",
+     "number": "116117",
+     "hours": "Tutte le notti 20:00–8:00; sabato e festivi anche 8:00–20:00",
+     "url": "https://www.aulss5.veneto.it/Servizio-di-continuita-assistenziale",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica se il 116117 non si riesce a chiamare (in alcune zone vicino al confine della regione): numero verde",
+     "number": "800 311330",
+     "url": "https://www.aulss5.veneto.it/Servizio-di-continuita-assistenziale",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP: prenotare visite ed esami da telefono fisso (numero verde, gratis)",
+     "number": "800 061644",
+     "hours": "Dal lunedì al venerdì 8:00–18:00, sabato 8:00–12:00",
+     "url": "https://www.aulss5.veneto.it/Contatti-e-riferimenti",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP: prenotare visite ed esami da cellulare",
+     "number": "0425 362000",
+     "hours": "Dal lunedì al venerdì 8:00–18:00, sabato 8:00–12:00",
+     "url": "https://www.aulss5.veneto.it/Contatti-e-riferimenti",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP: ufficio per i cittadini, reclami",
+     "number": "0425 394151",
+     "hours": "Dal lunedì al giovedì 9:30–12:00",
+     "address": "Ingresso principale dell'Ospedale di Rovigo, Viale Tre Martiri 140, Rovigo",
+     "url": "https://www.aulss5.veneto.it/urp-e-ufficio-stampa",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP: secondo numero",
+     "number": "0425 394812",
+     "hours": "Dal lunedì al giovedì 9:30–12:00",
+     "url": "https://www.aulss5.veneto.it/urp-e-ufficio-stampa",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino di Rovigo",
+     "number": "0425 3931",
+     "url": "https://www.aulss5.veneto.it/Contatti-e-riferimenti",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino di Adria",
+     "number": "0426 940111",
+     "url": "https://www.aulss5.veneto.it/Contatti-e-riferimenti",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ULSS 5 Polesana – Contatti e riferimenti",
+     "url": "https://www.aulss5.veneto.it/Contatti-e-riferimenti"
+    },
+    {
+     "label": "ULSS 5 Polesana – URP",
+     "url": "https://www.aulss5.veneto.it/urp-e-ufficio-stampa"
+    },
+    {
+     "label": "ULSS 5 Polesana – Continuità assistenziale",
+     "url": "https://www.aulss5.veneto.it/Servizio-di-continuita-assistenziale"
+    },
+    {
+     "label": "ULSS 5 Polesana – Prenotare",
+     "url": "https://www.aulss5.veneto.it/prenotare"
+    }
+   ],
+   "last_verified": "2026-10-22",
+   "todo": [
+    "PUA e cure a casa: le pagine sulle Case della Comunità non danno numeri; il 116117 orienta ai servizi del territorio.",
+    "Cartelle cliniche, protesi e ausili, screening: pagine non copiate."
+   ],
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aulss5.veneto.it/urp-e-ufficio-stampa"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aulss5.veneto.it/Contatti-e-riferimenti"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aulss5.veneto.it/prenotare"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aulss5.veneto.it/Servizio-di-continuita-assistenziale"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aulss5.veneto.it/le-case-della-comunit"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss5.veneto.it/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss5.veneto.it/urp-online"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss5.veneto.it/servizio-di-continuita-assistenziale"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss5.veneto.it/116117-tutti-i-servizi-territoriali-attivabili-da-un-unico-numero"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss5.veneto.it/cup"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss5.veneto.it/assistenza-domiciliare-pi-qualit-e-tutele-con-il-registro-regionale-e-gli-sportelli-dedicati"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss5.veneto.it/dal-14-agosto-nuovi-orari-in-tutto-il-territorio-per-la-continuit-assistenziale"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss5.veneto.it/attivazione-del-servizio-di-continuit-assistenziale-diurna-ucad-nel-comune-di-porto-tolle"
+    }
+   ]
+  },
+  {
+   "id": "padova",
+   "name": "Azienda ULSS 6 Euganea",
+   "province": "Padova",
+   "site_url": "https://www.aulss6.veneto.it/",
+   "official_domains": [
+    "aulss6.veneto.it"
+   ],
+   "guardia_medica_url": "https://www.aulss6.veneto.it/116117",
+   "emails": [],
+   "pec": "protocollo.aulss6@pecveneto.it",
+   "phones": [
+    {
+     "label": "URP: ufficio per i cittadini, reclami (numero verde, gratis)",
+     "number": "800 201301",
+     "hours": "Dal lunedì al venerdì 9:00–13:00",
+     "url": "https://www.aulss6.veneto.it/URP",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "label": "CUP dei distretti Padova Bacchiglione, Terme Colli e Piovese: da telefono fisso (costa uno scatto)",
+     "number": "840 000664",
+     "hours": "Dal lunedì al venerdì 8:00–18:00, sabato 8:30–12:30",
+     "url": "https://www.aulss6.veneto.it/cup",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "Guardia medica e servizi del territorio: 116117, gratis",
+     "number": "116117",
+     "hours": "Risponde 24 ore su 24, tutti i giorni",
+     "url": "https://www.aulss6.veneto.it/116117",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP dei distretti Padova Bacchiglione, Terme Colli e Piovese: da telefono fisso (costa uno scatto)",
+     "number": "840 000664",
+     "hours": "Dal lunedì al venerdì 8:00–18:00, sabato 8:30–12:30",
+     "url": "https://www.aulss6.veneto.it/cup",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP dei distretti Padova Bacchiglione, Terme Colli e Piovese: da cellulare",
+     "number": "049 7849314",
+     "hours": "Dal lunedì al venerdì 8:00–18:00, sabato 8:30–12:30",
+     "url": "https://www.aulss6.veneto.it/cup",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP del distretto Alta Padovana: da telefono fisso (costa uno scatto)",
+     "number": "840 888811",
+     "hours": "Dal lunedì al venerdì 8:00–18:00, sabato 8:30–12:30",
+     "url": "https://www.aulss6.veneto.it/cup",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP del distretto Alta Padovana: da cellulare",
+     "number": "049 7849313",
+     "hours": "Dal lunedì al venerdì 8:00–18:00, sabato 8:30–12:30",
+     "url": "https://www.aulss6.veneto.it/cup",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP del distretto Padova Sud: da telefono fisso (numero verde, gratis)",
+     "number": "800 437040",
+     "hours": "Dal lunedì al venerdì 8:00–18:30, sabato 8:00–11:45",
+     "url": "https://www.aulss6.veneto.it/cup",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP del distretto Padova Sud: da cellulare",
+     "number": "0429 714410",
+     "hours": "Dal lunedì al venerdì 8:00–18:30, sabato 8:00–11:45",
+     "url": "https://www.aulss6.veneto.it/cup",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP: ufficio per i cittadini, reclami (numero verde, gratis)",
+     "number": "800 201301",
+     "hours": "Dal lunedì al venerdì 9:00–13:00",
+     "url": "https://www.aulss6.veneto.it/URP",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino del Complesso socio-sanitario ai Colli (Padova)",
+     "number": "049 5496811",
+     "url": "https://www.aulss6.veneto.it/centralini",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ospedale di Camposampiero",
+     "number": "049 9324111",
+     "url": "https://www.aulss6.veneto.it/centralini",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ospedale di Cittadella",
+     "number": "049 9424111",
+     "url": "https://www.aulss6.veneto.it/centralini",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ospedale di Conselve",
+     "number": "049 9598111",
+     "url": "https://www.aulss6.veneto.it/centralini",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ospedale di Piove di Sacco",
+     "number": "049 9718111",
+     "url": "https://www.aulss6.veneto.it/centralini",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ospedale di Schiavonia",
+     "number": "0429 714111",
+     "url": "https://www.aulss6.veneto.it/centralini",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dei servizi ospedalieri di Montagnana",
+     "number": "0429 808111",
+     "url": "https://www.aulss6.veneto.it/centralini",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ULSS 6 Euganea – Centralini",
+     "url": "https://www.aulss6.veneto.it/centralini"
+    },
+    {
+     "label": "ULSS 6 Euganea – CUP",
+     "url": "https://www.aulss6.veneto.it/cup"
+    },
+    {
+     "label": "ULSS 6 Euganea – URP",
+     "url": "https://www.aulss6.veneto.it/URP"
+    },
+    {
+     "label": "ULSS 6 Euganea – 116117",
+     "url": "https://www.aulss6.veneto.it/116117"
+    }
+   ],
+   "last_verified": "2026-10-22",
+   "todo": [
+    "La pagina URP dice che le email a urp@aulss6.veneto.it con reclami o richieste non vengono prese in carico: si usano i moduli del sito o la PEC.",
+    "PUA e cure a casa: la pagina «Casa della Comunità» dà 404; numero del PUA non trovato.",
+    "Azienda Ospedale-Università di Padova: non ancora tra le pagine copiate."
+   ],
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aulss6.veneto.it/URP"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aulss6.veneto.it/centralini"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aulss6.veneto.it/cup"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aulss6.veneto.it/Medici-di-Guardia-Medica"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss6.veneto.it/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss6.veneto.it/prenotare"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss6.veneto.it/urp-online"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss6.veneto.it/medici-di-guardia-medica"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss6.veneto.it/116117"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss6.veneto.it/cup-online"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss6.veneto.it/assistenza-domiciliare-pi-qualit-e-tutele-con-il-registro-regionale-e-gli-sportelli-dedicati"
+    }
+   ]
+  },
+  {
+   "id": "vicenza",
+   "name": "ULSS 8 Berica e ULSS 7 Pedemontana",
+   "province": "Vicenza",
+   "site_url": "https://www.aulss8.veneto.it/",
+   "official_domains": [
+    "aulss8.veneto.it",
+    "aulss7.veneto.it"
+   ],
+   "guardia_medica_url": "https://www.aulss8.veneto.it/116117",
+   "emails": [
+    "urp@aulss7.veneto.it"
+   ],
+   "pec": "protocollo.aulss8@pecveneto.it",
+   "phones": [
+    {
+     "label": "Centralino dell'ospedale San Bortolo di Vicenza (ULSS 8)",
+     "number": "0444 753111",
+     "url": "https://www.aulss8.veneto.it/centralini",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "label": "CUP dell'ULSS 8 Berica, distretto Est: da telefono fisso (numero verde, gratis)",
+     "number": "800 403960",
+     "hours": "Dal lunedì al venerdì 8:00–18:00",
+     "url": "https://www.aulss8.veneto.it/cup",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "label": "CUP dell'ULSS 7 Pedemontana (Bassano e Alto Vicentino): da telefono fisso (numero verde, gratis)",
+     "number": "800 038990",
+     "hours": "Dal lunedì al venerdì 8:00–17:30",
+     "url": "https://www.aulss7.veneto.it/prenotare",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "Guardia medica (continuità assistenziale): 116117, gratis (ULSS 7 e ULSS 8)",
+     "number": "116117",
+     "hours": "Tutte le notti 20:00–8:00; sabato, domenica, prefestivi e festivi 8:00–20:00",
+     "url": "https://www.aulss8.veneto.it/116117",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "guardia",
+     "label": "Guardia medica se il 116117 non si riesce a chiamare: numero verde",
+     "number": "800 311330",
+     "url": "https://www.aulss8.veneto.it/116117",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP dell'ULSS 8 Berica, distretto Est: da telefono fisso (numero verde, gratis)",
+     "number": "800 403960",
+     "hours": "Dal lunedì al venerdì 8:00–18:00",
+     "url": "https://www.aulss8.veneto.it/cup",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP dell'ULSS 8 Berica, distretto Est: da cellulare",
+     "number": "0444 933600",
+     "hours": "Dal lunedì al venerdì 8:00–18:00",
+     "url": "https://www.aulss8.veneto.it/cup",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP dell'ULSS 8 Berica, distretto Ovest: da telefono fisso (numero verde, gratis)",
+     "number": "800 212525",
+     "hours": "Dal lunedì al venerdì 8:00–18:00",
+     "url": "https://www.aulss8.veneto.it/cup",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP dell'ULSS 8 Berica, distretto Ovest: da cellulare",
+     "number": "0444 934813",
+     "hours": "Dal lunedì al venerdì 8:00–18:00",
+     "url": "https://www.aulss8.veneto.it/cup",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP dell'ULSS 7 Pedemontana (Bassano e Alto Vicentino): da telefono fisso (numero verde, gratis)",
+     "number": "800 038990",
+     "hours": "Dal lunedì al venerdì 8:00–17:30",
+     "url": "https://www.aulss7.veneto.it/prenotare",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP dell'ULSS 7 Pedemontana: da cellulare (Bassano)",
+     "number": "0424 884050",
+     "hours": "Dal lunedì al venerdì 8:00–17:30",
+     "url": "https://www.aulss7.veneto.it/prenotare",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP dell'ULSS 7 Pedemontana: da cellulare (Alto Vicentino)",
+     "number": "0445 509800",
+     "hours": "Dal lunedì al venerdì 8:00–17:30",
+     "url": "https://www.aulss7.veneto.it/prenotare",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ULSS 8 Berica: ufficio per i cittadini, reclami",
+     "number": "0444 753535",
+     "hours": "Dal lunedì al venerdì 9:00–13:00; lunedì e mercoledì anche 14:00–16:00",
+     "url": "https://www.aulss8.veneto.it/urp",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ULSS 7 Pedemontana a Bassano (anche per Asiago)",
+     "number": "0424 888556",
+     "hours": "Lunedì, mercoledì, giovedì e venerdì 9:00–10:30; martedì 9:00–12:30",
+     "url": "https://www.aulss7.veneto.it/centralini",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP dell'ULSS 7 Pedemontana a Santorso (Alto Vicentino)",
+     "number": "0445 572040",
+     "hours": "Per ora: lunedì, martedì, giovedì e venerdì 10:30–12:30; mercoledì 14:00–16:00",
+     "url": "https://www.aulss7.veneto.it/centralini",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ospedale San Bortolo di Vicenza (ULSS 8)",
+     "number": "0444 753111",
+     "url": "https://www.aulss8.veneto.it/centralini",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ospedale di Arzignano (ULSS 8)",
+     "number": "0444 479111",
+     "url": "https://www.aulss8.veneto.it/centralini",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ospedale di Lonigo (ULSS 8)",
+     "number": "0444 431111",
+     "url": "https://www.aulss8.veneto.it/centralini",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ospedale di Montecchio Maggiore (ULSS 8)",
+     "number": "0444 708111",
+     "url": "https://www.aulss8.veneto.it/centralini",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ospedale di Noventa Vicentina (ULSS 8)",
+     "number": "0444 755611",
+     "url": "https://www.aulss8.veneto.it/centralini",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ospedale di Valdagno (ULSS 8)",
+     "number": "0445 484111",
+     "url": "https://www.aulss8.veneto.it/centralini",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ospedale di Bassano (ULSS 7)",
+     "number": "0424 888111",
+     "url": "https://www.aulss7.veneto.it/centralini",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ospedale di Santorso (ULSS 7)",
+     "number": "0445 571111",
+     "url": "https://www.aulss7.veneto.it/centralini",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "centralino",
+     "label": "Centralino dell'ospedale di Asiago (ULSS 7)",
+     "number": "0424 604111",
+     "url": "https://www.aulss7.veneto.it/centralini",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ULSS 8 Berica – Centralini",
+     "url": "https://www.aulss8.veneto.it/centralini"
+    },
+    {
+     "label": "ULSS 8 Berica – CUP",
+     "url": "https://www.aulss8.veneto.it/cup"
+    },
+    {
+     "label": "ULSS 8 Berica – URP",
+     "url": "https://www.aulss8.veneto.it/urp"
+    },
+    {
+     "label": "ULSS 8 Berica – 116117",
+     "url": "https://www.aulss8.veneto.it/116117"
+    },
+    {
+     "label": "ULSS 7 Pedemontana – Centralini",
+     "url": "https://www.aulss7.veneto.it/centralini"
+    },
+    {
+     "label": "ULSS 7 Pedemontana – Prenotare",
+     "url": "https://www.aulss7.veneto.it/prenotare"
+    }
+   ],
+   "last_verified": "2026-10-22",
+   "todo": [
+    "Come è fatto: la provincia di Vicenza ha due aziende. L'ULSS 8 Berica copre Vicenza e l'Ovest Vicentino (distretti Est e Ovest); l'ULSS 7 Pedemontana copre Bassano, Asiago e l'Alto Vicentino (Thiene, Schio). La PEC in «pec» è dell'ULSS 8; quella dell'ULSS 7 è protocollo.aulss7@pecveneto.it (nelle copie dell'ULSS 7). Per le lettere servirà scegliere l'ULSS.",
+    "ULSS 8: le copie non dicono quali comuni sono nel distretto Est e quali nel distretto Ovest.",
+    "ULSS 7: l'URP di Santorso ha un orario temporaneo (pagina «centralini»): ricontrollarlo.",
+    "PUA e cure a casa: le pagine dell'ULSS 8 sull'assistenza a casa e sull'URP vecchio danno 404; nessun numero del PUA nelle copie di nessuna delle due ULSS."
+   ],
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aulss7.veneto.it/relazioni-con-il-pubblico-e-comunicazione"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aulss7.veneto.it/centralini"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aulss7.veneto.it/prenotare"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aulss7.veneto.it/116117"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aulss7.veneto.it/continuita-assistenziale"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss7.veneto.it/distretti-territorio"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.aulss7.veneto.it/Liste-di-attesa"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.aulss7.veneto.it/urp-online"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aulss8.veneto.it/centralini"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aulss8.veneto.it/prenotare-visite-ed-esami-tramite-il-cup-centro-unico-di-prenotazione"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aulss8.veneto.it/servizio-di-continuit-assistenziale"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.aulss8.veneto.it/servizi-online/prenota-e-paga-online/percorsi-di-tutela/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss7.veneto.it/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss7.veneto.it/ex-guardia-medica"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss7.veneto.it/prenotazione-ritiro-farmaci-distribuzione-diretta"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss7.veneto.it/cup"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss7.veneto.it/cessazione-dott-de-marchi-emanuele-attivazione-continuit-assistenziale-diurna-cad"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss7.veneto.it/sedi-uffici-amministrativi-territoriali"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss8.veneto.it/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss8.veneto.it/urp-online"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss8.veneto.it/cup-sportelli-cassa-e-casse-automatiche"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss8.veneto.it/prenotazione-spazi-aziendali"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss8.veneto.it/prenotazione-certificazioni-di-idoneit"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss8.veneto.it/prenotazione-visita-per-certificazione-di-idoneit-alla-pratica-sportiva-agonistica"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss8.veneto.it/116117"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss8.veneto.it/cup"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss8.veneto.it/urp"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss8.veneto.it/icup-e-iticket-prenota-e-paga-online-visite-ed-esami"
+    }
+   ]
+  },
+  {
+   "id": "verona",
+   "name": "Azienda ULSS 9 Scaligera",
+   "province": "Verona",
+   "site_url": "https://www.aulss9.veneto.it/",
+   "official_domains": [
+    "aulss9.veneto.it"
+   ],
+   "guardia_medica_url": "https://www.aulss9.veneto.it/servizio-di-continuita-assistenziale-ex-guardia-medica",
+   "pua_url": "https://www.aulss9.veneto.it/servizi-assistenza-domiciliare-integrata-distretto-3",
+   "emails": [
+    "urp@aulss9.veneto.it"
+   ],
+   "pec": "protocollo.aulss9@pecveneto.it",
+   "phones": [
+    {
+     "label": "CUP: prenotare visite ed esami (da fisso e da cellulare)",
+     "number": "045 24552",
+     "hours": "Dal lunedì al venerdì 8:00–18:00, sabato 8:00–13:00",
+     "url": "https://www.aulss9.veneto.it/cup",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "label": "URP: ufficio per i cittadini, reclami (numero unico per tutte le sedi)",
+     "number": "045 8075656",
+     "hours": "Telefono: dal lunedì al venerdì 8:30–12:30. Allo sportello si va su appuntamento",
+     "url": "https://www.aulss9.veneto.it/urp-online",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    }
+   ],
+   "contacts": [
+    {
+     "topic": "guardia",
+     "label": "Guardia medica e servizi del territorio: 116117, gratis",
+     "number": "116117",
+     "hours": "Risponde 24 ore su 24, tutti i giorni",
+     "url": "https://www.aulss9.veneto.it/servizio-116117",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "CUP: prenotare visite ed esami (da fisso e da cellulare)",
+     "number": "045 24552",
+     "hours": "Dal lunedì al venerdì 8:00–18:00, sabato 8:00–13:00",
+     "url": "https://www.aulss9.veneto.it/cup",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "urp",
+     "label": "URP: ufficio per i cittadini, reclami (numero unico per tutte le sedi)",
+     "number": "045 8075656",
+     "hours": "Telefono: dal lunedì al venerdì 8:30–12:30. Allo sportello si va su appuntamento",
+     "url": "https://www.aulss9.veneto.it/urp-online",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare (ADI) del distretto 3, area Nord (Bovolone)",
+     "number": "045 6999647",
+     "hours": "Sportello: dal lunedì al venerdì 10:30–13:00",
+     "url": "https://www.aulss9.veneto.it/servizi-assistenza-domiciliare-integrata-distretto-3",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare (ADI) del distretto 3, area Sud (Legnago)",
+     "number": "0442 622800",
+     "hours": "Sportello: dal lunedì al venerdì 12:00–13:00",
+     "url": "https://www.aulss9.veneto.it/servizi-assistenza-domiciliare-integrata-distretto-3",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare (ADI) del distretto 3, sede di Nogara",
+     "number": "0442 537759",
+     "hours": "Sportello: dal martedì al venerdì 12:30–13:00",
+     "url": "https://www.aulss9.veneto.it/servizi-assistenza-domiciliare-integrata-distretto-3",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Assistenza domiciliare (ADI) del distretto 3, sede di Zevio",
+     "number": "045 6068254",
+     "hours": "Sportello: dal lunedì al venerdì 13:00–13:30",
+     "url": "https://www.aulss9.veneto.it/servizi-assistenza-domiciliare-integrata-distretto-3",
+     "verified": "2026-10-22",
+     "proof": "pagina"
+    }
+   ],
+   "sources": [
+    {
+     "label": "ULSS 9 Scaligera – CUP",
+     "url": "https://www.aulss9.veneto.it/cup"
+    },
+    {
+     "label": "ULSS 9 Scaligera – URP online",
+     "url": "https://www.aulss9.veneto.it/urp-online"
+    },
+    {
+     "label": "ULSS 9 Scaligera – Servizio 116117",
+     "url": "https://www.aulss9.veneto.it/servizio-116117"
+    },
+    {
+     "label": "ULSS 9 Scaligera – Assistenza domiciliare distretto 3",
+     "url": "https://www.aulss9.veneto.it/servizi-assistenza-domiciliare-integrata-distretto-3"
+    }
+   ],
+   "last_verified": "2026-10-22",
+   "todo": [
+    "Centralino: nessuna copia lo riporta (aggiunta in «pagine» la pagina «centralini»).",
+    "Assistenza domiciliare: copiata solo la pagina del distretto 3 (pianura e sud della provincia). Mancano gli altri distretti.",
+    "Azienda Ospedaliera Universitaria Integrata di Verona: non ancora tra le pagine copiate."
+   ],
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.aulss9.veneto.it/urp"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.aulss9.veneto.it/prenotazioni"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aulss9.veneto.it/servizio-116117"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.aulss9.veneto.it/servizio-di-continuita-assistenziale-ex-guardia-medica"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aulss9.veneto.it/servizi-assistenza-domiciliare-integrata-distretto-3"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.aulss9.veneto.it/liste-di-attesa"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss9.veneto.it/"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss9.veneto.it/urp-online"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss9.veneto.it/prenotazioni-visite-e-liste-dattesa"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss9.veneto.it/cup"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aulss9.veneto.it/centralini"
+    }
+   ]
+  }
+ ]
+}

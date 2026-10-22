@@ -218,3 +218,81 @@ Perché è lecito, in breve: contatti e orari di uffici pubblici sono informazio
 di pubblicare; non copiamo testi, prendiamo i dati e citiamo la fonte; non superiamo nessuna protezione (niente
 login, niente CAPTCHA). Il metodo è scritto in `fonti.html` per trasparenza. Da far rileggere al legale insieme
 alle lettere.
+
+## 9. Aggiungere le lettere di una regione (checklist)
+
+Una regione nuova parte con `"moduli": ["numeri-utili"]` in `data/regioni/index.json`. Ogni altro modulo si accende
+**da solo**, aggiungendo il suo id a `moduli`, quando i dati che legge sono tutti provati. Finché un modulo è spento,
+chi abita lì vede la parte valida in tutta Italia e il link ai numeri utili (`regionMissing()` in `js/flow.js`).
+Senza `moduli` la regione si crede pronta per tutto: si toglie solo quando sono accesi tutti.
+
+### Regola delle prove (vale per ogni campo qui sotto)
+
+- **Numeri, indirizzi, PEC, email, orari**: solo dalla copia della pagina ufficiale fatta dal server (branch
+  `copie-siti`), con `url` = la pagina copiata, `verified` = il giorno della copia, `proof: "pagina"`
+  ([regola-numeri.md](regola-numeri.md)). Un estratto del motore di ricerca non basta per un numero, una PEC o
+  l'indirizzo di una lettera.
+- **Come si fa** (`how_to`, `what_next`, `scelta_medico.how`…): le parole della pagina ufficiale copiata, dette in
+  italiano semplice ([regola-italiano.md](regola-italiano.md)), senza aggiungere niente. Una regola di una sola
+  regione si scrive «In Umbria: …».
+- **Date e cifre regionali** (`regime_since`, `booking_deadline_days`…): dal testo dell'atto (DGR, messaggio INPS),
+  anche da un estratto (`proof: "estratto"`, da rileggere per intero al primo giro), con la fonte in `sources`.
+- Se una prova manca, il campo **non si scrive** e si annota nel `todo` dell'azienda. Mai un dato «probabile».
+
+### Cosa legge ogni modulo
+
+Campi di un'azienda in `asl.json` (`asl[]`), salvo dove è scritto `inps.json`. «Facoltativo» vuol dire che senza il
+campo il modulo funziona e dice una frase generica (per esempio «chiedi all'URP»).
+
+| Modulo | Campi regionali necessari | Facoltativi | Chi li controlla |
+|---|---|---|---|
+| tutti | `id`, `name`, `province` (una per azienda), `phones[]`, `emails[]`, `sources[]`, `site_url`; una sede INPS con lo stesso `id` | `contacts[]` con `topic` | `contatti.test` (numeri), `coerenza.test` (id, province, topic, sede INPS) |
+| `liste-attesa` | `channel`, `letter_mode` (`email`, `pec`, `official_form`, `portal`), `how_to`, `documents_required[]`, `what_next[]`, `notes[]`, `details[]`, `last_verified`; con `email`/`pec`: `send_to` o `pec`; con `official_form`: `form_url` e `form_fields[]` (`label`, `source`); con `portal`: `portal_url` | `info_url`, `fast_track`, `sub_areas`, `local_name` e `regional_channel` in cima al file | `coerenza.test` («ogni modulo acceso ha i dati che legge»), `confronta-copie` (PEC e `send_to` in una copia dell'azienda), `combinazioni.cjs` (per ora solo Sicilia) |
+| `cartella-clinica` | `pec` o `emails[]` (il reclamo se l'ospedale è dell'azienda) | `contacts` `topic: "cartelle"`, uno per ospedale, anche quelli delle aziende ospedaliere (dominio in `official_domains`, come il Policlinico di Palermo nell'ASP di Palermo) | `coerenza.test`, `contatti.test` |
+| `medico-famiglia` | `scelta_medico: { how, url }`; `emails[]` o `pec` (la lettera va a `generalContact()`: l'URP, se no la PEC) | `contacts` `topic: "anagrafe"` (sportelli scelta e revoca) | `coerenza.test` |
+| `assistenza-domiciliare` | `emails[]` o `pec` | `contacts` `topic: "casa"` (PUA), `pua_url` | `coerenza.test` |
+| `cure-palliative` | `emails[]` o `pec` | `contacts` `topic: "palliative"` (rete, hospice) | `coerenza.test` |
+| `ausili` | `pec` (la lettera va alla PEC) | `contacts` `topic: "protesica"` | `coerenza.test` |
+| `prevenzione` | niente | `contacts` `topic: "screening"` | — |
+| `invalidita` | `inps.json`: per ogni provincia `id`, `name`, `regime` (`old`/`new`, mai `null`), `regime_since` se `new`, `pec`, `pec_verified`, `address`, `url`, `verified`, `proof` | `hours` | `coerenza.test`, `contatti.test` (sedi INPS), `confronta-copie` (PEC, indirizzo, orari nella copia della sede), `combinazioni.cjs` (tutte le regioni con `invalidita` accesa) |
+
+Due controlli prima di accendere un modulo con una lettera all'azienda:
+
+1. **Una provincia, più aziende.** I moduli cercano l'azienda per provincia. Se una provincia ha due aziende (in
+   Umbria la provincia di Perugia: USL Umbria 1 e, per Foligno, Spoleto e Valnerina, USL Umbria 2) la lettera
+   all'URP o alla PEC va all'una o all'altra secondo il comune. Prima serve la domanda «In quale zona?»
+   (`sub_areas`, sezione 1): finché manca, quei moduli restano spenti.
+2. **Il nome nell'intestazione.** Le lettere scrivono `aslIntestazione()` + «di» + provincia («Azienda Sanitaria
+   Provinciale di Palermo»). Se in quella regione l'azienda non si chiama così («USL di Perugia» non esiste: è
+   «USL Umbria 1»), prima va aggiunto il nome giusto nei dati e nelle lettere.
+
+### I passi
+
+1. Leggi le copie della regione (`git show origin/copie-siti:copie/<regione>/indice.json`: url → file) e riempi i
+   campi della tabella con le prove.
+2. **Indirizzi mancanti → pagine da far copiare al server.** Per ogni campo che manca cerca la pagina ufficiale (solo i
+   domini ufficiali dell'azienda, della Regione, delle aziende ospedaliere, dell'INPS) e mettila in `pagine[]`
+   dell'azienda (`{ "tipo": "cartelle", "url": "…" }`; `tools/copie.mjs` copia `site_url`, `info_url`, `form_url`,
+   `portal_url`, `guardia_medica_url`, `pua_url`, `contacts[].url` e `pagine[].url`). Il campo resta nel `todo`.
+3. Unisci la PR: il server copia le pagine nuove entro 15 minuti (`tools/copie-se-serve.sh`).
+4. **Si accende il modulo dopo la copia.** Leggi le copie nuove, riempi i campi, aggiungi il modulo a `moduli`.
+   `npm test` dice se manca qualcosa («acceso ma manca …»).
+5. Controlli: `npm run pagine`, `npm test`, `node tools/confronta-copie.mjs <copie> <regione> --noti tests/copie-noti.txt --base origin/main`,
+   e i test col browser. Per un modulo con lettera aggiungi la regione ai percorsi di `tests/combinazioni.cjs`
+   (l'invalidità lo fa già da sola per ogni regione che la accende).
+6. Una riga nel `CHANGELOG.md`, con le fonti.
+
+### Umbria, 22/10/2026
+
+Acceso: `invalidita` (sedi INPS di Perugia e Terni dalle copie; riforma dal 01/01/2025 a Perugia e dal 01/03/2026 a
+Terni). Spenti, e cosa manca:
+
+- `liste-attesa`: nessuna pagina copiata sul percorso di tutela. In Umbria, se il CUP non trova posto nei tempi
+  della classe, mette la ricetta in «presa in carico» e ricontatta la persona: serve la pagina che lo dice (in
+  `pagine[]`: USL 1, USL 2, Azienda Ospedaliera di Terni, Regione), poi `letter_mode`, `how_to`, `what_next` e a chi
+  si scrive se nessuno richiama. Poi la domanda «In quale zona?» per la provincia di Perugia.
+- `cartella-clinica`, `medico-famiglia`, `assistenza-domiciliare`, `cure-palliative`, `ausili`: le pagine delle
+  cartelle cliniche (USL 1, USL 2, Aziende Ospedaliere di Perugia e Terni), di protesica, scelta e revoca e cure
+  palliative sono in `pagine[]`; dopo la copia servono gli uffici e, per la provincia di Perugia, la domanda
+  «In quale zona?» e il nome giusto dell'azienda nell'intestazione.
+- `prevenzione`: i numeri dello screening (pagine in `pagine[]`); il modulo dà già il risultato nazionale.
