@@ -2,6 +2,12 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 22/10/2026 — copie: indirizzi rotti del giro delle 7:30 (21 problemi)
+- Fonte: copie del server in Italia (branch `copie-siti`, giro delle 7:30 del 22/10/2026) e prova con browser dal server; sitemap dei siti.
+- Veneto (`fonti.json`): tolte le 8 pagine di salute.regione.veneto.it, che rifiuta ogni connessione non domestica (CloudFront 403 anche da browser): nota nella voce, aggiunta la pagina Sanità di regione.veneto.it. ULSS 1: pagine ADI di Belluno e Feltre al posto di una pagina sparita. ULSS 2: «Contatti» e «Numeri utili» al posto di «Strutture» (404). ULSS 6: elenco «Case della Comunità» (l'indirizzo era troncato). ULSS 8: URP e cure domiciliari (impegnativa di cura, ADI Arzignano) al posto di due pagine 404.
+- Campania (`asl.json`): la pagina regionale «Liste di attesa» non esiste più sul sito nuovo della Regione; al suo posto la pagina della Regione sul monitoraggio delle liste d'attesa e il CUP unico regionale (5 ASL).
+- `tools/copie.mjs`: se un sito risponde 403 al programma ma accetta un browser (ASP Vibo Valentia, ASL VCO), la pagina si riprende col browser.
+
 ## 22/10/2026 — Copie delle pagine ufficiali: email nascoste, PDF, fonti INPS
 - `tools/email-nascoste.mjs` (nuovo), usato da `tools/copie.mjs` prima di fare il testo: rimette in chiaro le email nascoste ai robot. Cloudflare (`data-cfemail`, link `/cdn-cgi/l/email-protection#…`): nelle copie c'era «[email protected]» (123 copie in Sardegna, 3 in Calabria). Joomla (variabili `addy…`, `<joomla-hidden-mail>`): «Questo indirizzo email è protetto dagli spambots» al posto di URP e PEC delle USL toscane. Nell'indice: `email_nascoste`.
 - `tools/copie.mjs`: i PDF si copiano come testo se sul server c'è `pdftotext` (`sudo apt-get install -y poppler-utils`), al massimo 5 MB, con `"pdf": true` nell'indice; senza `pdftotext` restano segnati come prima. Stesse regole di buona educazione: una richiesta alla volta, la pausa, il nostro nome nel User-Agent.

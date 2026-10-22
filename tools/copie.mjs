@@ -235,6 +235,12 @@ for (const { reg, asl } of daCopiare) {
         const rb = await rendi(url);
         if (rb && rb.http === 200 && toText(rb.body).length > toText(r.body).length) { r = rb; voce.browser = true; }
       }
+      // Qualche sito rifiuta i programmi (403 a curl) ma accetta un browser (es. ASP Vibo Valentia, ASL VCO):
+      // si riprova col browser. Se dice 403 anche lui, è un blocco vero e resta un problema.
+      if (r.http === 403) {
+        const rb = await rendi(url);
+        if (rb && rb.http === 200 && !VUOTA(toText(rb.body))) { r = rb; voce.browser = true; }
+      }
       if (!seiPdf(r) && ANTIROBOT.test(toText(r.body || '')) && VUOTA(toText(r.body || ''))) {
         voce.http = r.http; voce.nota = 'controllo anti-robot (CAPTCHA): non copiata';
         problemi.push(`${reg.id}/${a.id}: CAPTCHA ${url}`);

@@ -8,45 +8,18 @@
    "pagine": [
     {
      "tipo": "regione",
-     "url": "https://salute.regione.veneto.it/"
-    },
-    {
-     "tipo": "regione",
-     "url": "https://salute.regione.veneto.it/servizi"
-    },
-    {
-     "tipo": "regione",
      "url": "https://www.regione.veneto.it/aziende-ulss-e-ospedaliere"
     },
     {
      "tipo": "regione",
-     "url": "https://salute.regione.veneto.it/organizzazione-sssr/attivit%C3%A0--del-servizio-socio-sanitario-veneto/assistenza-distrettuale/visite-ed-esami-ambulatoriali/tempi-di-attesa/collegamento-al-sistema-cup-regionale"
-    },
-    {
-     "tipo": "regione",
-     "url": "https://salute.regione.veneto.it/fse-e-servizi-online/fascicolo-sanitario-elettronico-regionale/fse-prenotare-visite-ed-esami"
-    },
-    {
-     "tipo": "regione",
-     "url": "https://salute.regione.veneto.it/lista-faq/presso-quali-strutture-sanitarie-posso-prenotare-visite-ed-esami"
-    },
-    {
-     "tipo": "regione",
-     "url": "https://salute.regione.veneto.it/organizzazione-sssr/il-servizio-socio-sanitario-regionale/assistenza-distrettuale/nue-116117"
-    },
-    {
-     "tipo": "regione",
-     "url": "https://salute.regione.veneto.it/notizie/116117-attivo-tutta-la-regione"
-    },
-    {
-     "tipo": "regione",
-     "url": "https://salute.regione.veneto.it/fse-e-servizi-online/fascicolo-sanitario-elettronico-regionale"
-    },
-    {
-     "tipo": "regione",
      "url": "https://www.regione.veneto.it/web/rete-degli-urp-del-veneto/servizi-sanitari-digitali"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.veneto.it/web/sanita"
     }
-   ]
+   ],
+   "nota": "Il sito salute.regione.veneto.it rifiuta le connessioni che non vengono da una rete domestica italiana (CloudFront, errore 403 anche da un browser): le sue pagine su CUP, Fascicolo sanitario e 116117 non si possono copiare. Le stesse informazioni si prendono dalle pagine delle ULSS."
   },
   {
    "id": "inps-veneto",
@@ -110,7 +83,11 @@
     },
     {
      "tipo": "pua",
-     "url": "https://www.aulss1.veneto.it/service/progetti-e-servizi-a-sostegno-della-domiciliarita/"
+     "url": "https://www.aulss1.veneto.it/assistenza-domiciliare-integrata-distretto-di-belluno"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aulss1.veneto.it/assistenza-domiciliare-integrata-distretto-di-feltre"
     },
     {
      "tipo": "altro",
@@ -137,7 +114,11 @@
     },
     {
      "tipo": "contatti",
-     "url": "https://aulss2.veneto.it/Strutture"
+     "url": "https://www.aulss2.veneto.it/contatti"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.aulss2.veneto.it/numeri-utili"
     },
     {
      "tipo": "cup",
@@ -289,7 +270,7 @@
     },
     {
      "tipo": "pua",
-     "url": "https://www.aulss6.veneto.it/Casa-della-Comunit"
+     "url": "https://www.aulss6.veneto.it/case-della-comunit"
     }
    ]
   },
@@ -347,7 +328,7 @@
    "pagine": [
     {
      "tipo": "urp",
-     "url": "https://www.aulss8.veneto.it/sedi/ufficio-relazioni-con-il-pubblico-urp/"
+     "url": "https://www.aulss8.veneto.it/urp"
     },
     {
      "tipo": "contatti",
@@ -363,7 +344,11 @@
     },
     {
      "tipo": "pua",
-     "url": "https://www.aulss8.veneto.it/servizi/cittadino/curarsi-e-ottenere-assistenza-sanitaria/assistenza-sanitaria-a-casa/"
+     "url": "https://www.aulss8.veneto.it/impegnativa-di-cura-domiciliare"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.aulss8.veneto.it/punto-salute-centro-arzignano-servizio-assistenza-domiciliare-integrata-adi"
     },
     {
      "tipo": "tutela",
