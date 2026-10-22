@@ -2,6 +2,17 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 22/10/2026 — Copie delle pagine ufficiali: email nascoste, PDF, fonti INPS
+- `tools/email-nascoste.mjs` (nuovo), usato da `tools/copie.mjs` prima di fare il testo: rimette in chiaro le email nascoste ai robot. Cloudflare (`data-cfemail`, link `/cdn-cgi/l/email-protection#…`): nelle copie c'era «[email protected]» (123 copie in Sardegna, 3 in Calabria). Joomla (variabili `addy…`, `<joomla-hidden-mail>`): «Questo indirizzo email è protetto dagli spambots» al posto di URP e PEC delle USL toscane. Nell'indice: `email_nascoste`.
+- `tools/copie.mjs`: i PDF si copiano come testo se sul server c'è `pdftotext` (`sudo apt-get install -y poppler-utils`), al massimo 5 MB, con `"pdf": true` nell'indice; senza `pdftotext` restano segnati come prima. Stesse regole di buona educazione: una richiesta alla volta, la pausa, il nostro nome nel User-Agent.
+- `tools/copie.mjs` copia anche: fonti (`sources`) e pagine (`pagine`) di `inps.json`, prova di `regime`; gli url di `regole_fonti` (cartella `regole`); `scelta_medico.url` e `phones[].url`. Legge `fonti.json` anche per le regioni attive (le pagine trovate prima dei dati restano aggiornate; un url già copiato non si riscarica) e cancella le cartelle delle aziende che non sono più in nessun file della regione.
+- `tools/confronta-copie.mjs`: controlla anche gli url di `pagine[]`, `scelta_medico.url`, `regole_fonti` e di fonti e pagine di `inps.json`. Un url non ancora nell'indice è «da copiare» e non conta; conta se la copia c'è stata e non è riuscita. Segnala le cartelle che l'indice non nomina.
+- `tools/copie-se-serve.sh`: la copia a richiesta parte anche quando cambia `tools/email-nascoste.mjs`.
+- Nuovi `tests/copie-email.test.mjs` (esempi fissi di Cloudflare e Joomla 1.5, 3, 4) e `tests/copie-giro.test.mjs` (un giro di `copie.mjs` su un server locale con pagine finte: PDF, email, INPS, `fonti.json`, cartelle tolte e lasciate).
+- `.github/workflows/test.yml`: il job browser (25 minuti in serie) è diviso in tre job paralleli: «browser», «combinazioni», «combinazioni-ny».
+- `tests/copie-noti.txt`: tolte 10 righe che il job segnalava come «non ci sono più» (pagine delle sedi INPS siciliane e home dell'Azienda sanitaria dell'Alto Adige, ora copiate).
+- `docs/regioni.md` (sezioni 8 e 9) e `docs/protocollo-test.md`: quali url si copiano, `pagine[]`, `regole_fonti`, email nascoste, PDF, Playwright sul server.
+
 ## 22/10/2026 — Veneto e Marche attivi: Numeri utili e Invalidità
 - `data/regioni/veneto/asl.json` (nuovo): 7 province, 9 ULSS, 90 numeri letti nelle copie del 22/10/2026 fatte dal server con un browser vero (`"browser": true` per le pagine in JavaScript di ULSS 3 e ULSS 4), proof «pagina». Venezia (ULSS 3 Serenissima e ULSS 4 Veneto Orientale) e Vicenza (ULSS 8 Berica e ULSS 7 Pedemontana) hanno una voce sola con i contatti delle due ULSS, come Roma nel Lazio. Guardia medica: 116117 in tutte le ULSS e il numero verde 800 311330 dove il 116117 non prende. PEC delle ULSS (protocollo.aulssN@pecveneto.it) dalle pagine URP e PEC.
 - `data/regioni/marche/asl.json` (nuovo): 5 AST, una per provincia, 62 numeri dalle copie del 22/10/2026 (pagine «Telefono e posta elettronica», URP, CUP, PUA, cure domiciliari). CUP regionale 800 098798 (fisso), 0721 1779301 e 071 9998010 (cellulare) dalle pagine CUP delle AST. Guardia medica: nelle Marche il 116117 non è ancora attivo; numero trovato solo per Fermo (centralino). PEC ast.<provincia>@emarche.it dove la pagina la chiama PEC (non Fermo: todo).
