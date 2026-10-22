@@ -29,6 +29,7 @@ Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 - `pagine[]`: aggiunte le pagine ufficiali da copiare per quello che manca (cartelle cliniche di tutte le ULSS venete, ASFO e Asuit, protesica e screening, diritto di garanzia ASUGI e ASUFC, scelta del medico ASUFC, contatti e PEC dell'Azienda sanitaria dell'Alto Adige, PUA e invalidità civile in Valle d'Aosta).
 
 ## 22/10/2026 — Zone: una sola zona senza domanda
+- `tests/browser.cjs`: «ASP» non è siciliano anche dove un'azienda ha «ASP» nel nome ufficiale («ASP Basilicata», Potenza), letto dai dati. Basilicata con cartella clinica e medico di famiglia (dati del gruppo Sud).
 - Ausili spenti fuori dalla Sicilia (Toscana, Umbria, Liguria, Valle d'Aosta): il modulo dice «l'ASL deve rispondere entro 20 giorni, se non risponde vale come un sì», che è la regola della Sicilia; nelle altre regioni i giorni li fissa la Regione. Nuovo controllo in `tests/coerenza.test.mjs`: ausili acceso solo in Sicilia finché il modulo non ha i giorni di ogni regione con la fonte.
 - Nuovo `tests/conflitti.test.mjs`: nessun file del repository con i segni di un conflitto di git rimasti dentro (`tests/copie-noti.txt` era stato salvato così unendo il lavoro di due agenti).
 - `js/flow.js` (`provinceChoice`): se l'azienda della provincia ha una sola zona con la lettera (Lombardia: l'ATS e una sola ASST), il modulo usa quella senza chiedere «In quale zona?». `tests/coerenza.test.mjs` chiede ora almeno una zona, non due.
