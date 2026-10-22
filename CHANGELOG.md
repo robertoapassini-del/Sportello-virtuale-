@@ -3,6 +3,7 @@
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
 ## 22/10/2026 — Lazio, Abruzzo, Molise, Campania: dati per i moduli e le lettere
+- `tests/browser.cjs` e `tests/robustezza.cjs`: la regione non attiva e i moduli ancora spenti della Lombardia si leggono dall'indice, non sono scritti a mano (con la Campania attivata il controllo «regione non attiva» falliva).
 - `js/home.js`: per una regione con alcuni moduli completi la frase della pagina iniziale li elenca («In Molise ci sono i numeri utili e, con gli uffici della zona, invalidità, cartella clinica, assistenza a casa e medico di famiglia»).
 - Campania attiva per Numeri utili (`data/regioni/campania/asl.json`, `inps.json`): 5 province, 7 ASL (Avellino, Benevento, Caserta, Napoli 1 Centro, 2 Nord, 3 Sud, Salerno), 57 contatti letti nelle copie del server del 22/10/2026 (proof «pagina»; `confronta-copie` 0 problemi). Le tre ASL di Napoli sono in una voce sola, come Roma nel Lazio. Sedi INPS: pagine «sedi» di inps.it (Avellino, Benevento, Caserta, Napoli, Salerno).
 - Riforma della disabilità (campo `regime` di `inps.json`) in Lazio, Abruzzo, Molise e Campania: nuovo sistema dal 01/01/2025 a Frosinone e Salerno, dal 30/09/2025 a Teramo e Isernia, dal 01/03/2026 a Roma, Chieti, Campobasso e Caserta; vecchio sistema nelle altre fino al 31/12/2026. Fonte: notizie INPS (terza fase, febbraio 2026; seconda fase, messaggio 2600 del 05/09/2025) e Dipartimento per le politiche in favore delle persone con disabilità, letti come estratto: da rileggere sul testo (todo).

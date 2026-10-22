@@ -33,6 +33,11 @@ const SITE = path.resolve(__dirname, '..');
 const urls = fs.readFileSync(path.join(SITE, 'sitemap.xml'), 'utf8').match(/<loc>(.*?)<\/loc>/g)
   .map((x) => x.slice(5, -6).replace('https://guidasanita.it/', BASE));
 const moduli = JSON.parse(fs.readFileSync(path.join(SITE, 'data/moduli.json'), 'utf8')).modules.map((m) => m.id);
+// Le regioni dall'indice, non scritte a mano: quando una regione diventa attiva o accende un modulo, i controlli
+// sotto la seguono (22/10/2026: la Campania attivata faceva fallire il controllo «regione non attiva»).
+const indiceRegioni = JSON.parse(fs.readFileSync(path.join(SITE, 'data/regioni/index.json'), 'utf8')).regioni;
+const INATTIVA = (indiceRegioni.find((r) => !r.attiva) || {}).id;
+const LOMBARDIA = indiceRegioni.find((r) => r.id === 'lombardia') || { moduli: [] };
 // Le pagine delle aree («Visite ed esami»…): il riquadro «Chi può aiutarti» deve aspettare la regione (in Sicilia «ASP»).
 const aree = JSON.parse(fs.readFileSync(path.join(SITE, 'data/moduli.json'), 'utf8')).groups.map((g) => `${BASE}${g.page}/`);
 
@@ -241,13 +246,14 @@ async function erroriCollegati(page, dove, problemi) {
     }
   }
 
-  // Chi non abita in Sicilia (Lombardia: solo i Numeri utili; Campania: non ancora attiva): la schermata di blocco
-  // dei moduli con dati regionali deve portare alla guida scritta (#guida), mai alla prima schermata
-  // (il cui pulsante riporterebbe al blocco: giro senza uscita). Per la Campania anche i Numeri utili nazionali.
+  // Chi non abita in Sicilia (Lombardia: solo alcuni moduli; INATTIVA: una regione non ancora attiva, dall'indice):
+  // la schermata di blocco dei moduli con dati regionali deve portare alla guida scritta (#guida), mai alla prima
+  // schermata (il cui pulsante riporterebbe al blocco: giro senza uscita). Per la regione non attiva anche i Numeri utili nazionali.
   // In Lombardia i moduli che sanno fare il conto senza la provincia non hanno il blocco: li prova il blocco più sotto.
   const regionali = ['liste-attesa', 'invalidita', 'cartella-clinica', 'medico-famiglia', 'assistenza-domiciliare', 'ausili', 'cure-palliative', 'prevenzione'];
-  const bloccatiLombardia = ['invalidita', 'ausili', 'prevenzione'];
-  for (const regione of ['lombardia', 'campania']) {
+  // I moduli che senza uffici non sanno fare il conto, se la Lombardia non li ha ancora accesi.
+  const bloccatiLombardia = ['invalidita', 'ausili', 'prevenzione'].filter((m) => !(LOMBARDIA.moduli || []).includes(m));
+  for (const regione of ['lombardia', INATTIVA].filter(Boolean)) {
     for (const m of regionali.filter((x) => regione !== 'lombardia' || bloccatiLombardia.includes(x))) {
       const ctx = await nuova(regione);
       const page = await ctx.newPage();
@@ -272,7 +278,7 @@ async function erroriCollegati(page, dove, problemi) {
       if (!/📍/.test(r.h1) && !/non abbiamo ancora i dati|regione non c'è ancora/.test(r.h1)) problemi.push(`${dove}: non si vede la schermata di blocco («${r.h1}»)`);
       if (r.guida && !r.link) problemi.push(`${dove}: manca il link alla guida (#guida)`);
       if (r.inizio) problemi.push(`${dove}: c'è ancora il pulsante che riporta all'inizio (giro senza uscita)`);
-      if (regione === 'campania' && !r.numeri) problemi.push(`${dove}: manca il link ai Numeri utili`);
+      if (regione === INATTIVA && !r.numeri) problemi.push(`${dove}: manca il link ai Numeri utili`);
       if (r.link) {
         // Il link alla guida scorre alla guida.
         await page.click('#app a[href="#guida"]');
