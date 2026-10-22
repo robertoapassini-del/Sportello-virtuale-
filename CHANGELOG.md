@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 22/10/2026 — Copie: i PDF si leggono anche senza pdftotext
+- `tools/pdf-testo.mjs` (nuovo): se sul server manca `pdftotext`, `tools/copie.mjs` fa il testo dei PDF con pdf.js 4.10.38, scaricato da npm la prima volta e usato solo se l'impronta sha512 è giusta. Gira in un processo a parte, fermato dopo 60 secondi. Così poppler-utils non serve più per forza: basta unire la pull request.
+- Errore trovato provando: pdf.js scrive i suoi avvisi su stdout, e il testo del PDF non si leggeva. Ora gli avvisi vanno su stderr; `tests/copie-giro.test.mjs` fa un giro senza pdftotext e controlla il testo del PDF.
+- `tools/copie-se-serve.sh`: anche una modifica a `tools/pdf-testo.mjs` fa partire la copia.
+
 ## 22/10/2026 — Prevenzione in Molise, Umbria e Valle d'Aosta
 - `data/regioni/index.json`: prevenzione accesa in Molise, Umbria e Valle d'Aosta, dove ogni azienda ha il numero dello screening nei dati (contatti con prova «pagina» dei giri precedenti).
 - `tests/coerenza.test.mjs`: fuori dalla Sicilia la prevenzione si accende solo se ogni azienda ha un contatto «screening».
