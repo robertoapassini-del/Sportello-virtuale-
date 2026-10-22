@@ -1,7 +1,7 @@
 {
  "region": "Lombardia",
  "model": "ATS e ASST",
- "_note": "Numeri di ATS e ASST della Lombardia per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili (data/regioni/index.json, «moduli»): percorso di tutela, PUA e uffici dei singoli moduli sono ancora da scrivere. In Lombardia la guardia medica è il 116117 e si prenota al numero verde regionale 800 638638.",
+ "_note": "Numeri di ATS e ASST della Lombardia per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili (data/regioni/index.json, «moduli»): percorso di tutela, PUA e uffici dei singoli moduli sono ancora da scrivere. Ogni voce è una provincia con la sua ATS; le ASST della provincia sono in official_domains e nei contatti (vedi il todo di ogni voce). In «pagine» le altre pagine ufficiali da copiare (22/10/2026). In Lombardia la guardia medica è il 116117 e si prenota al numero verde regionale 800 638638.",
  "asl": [
   {
    "id": "bergamo",
@@ -216,7 +216,91 @@
     "CUP delle tre ASST di Bergamo: le pagine di prenotazione indicano solo il numero regionale 800 638638 e gli sportelli CUP, senza un numero CUP aziendale sicuro.",
     "ASST Bergamo Ovest: la pagina Numeri utili riporta anche CUP dei PreSST (es. 0363 590999) con la nota «verificare nella tabella» e vecchi numeri di guardia medica locali: non usati.",
     "PUA dell'ASST Papa Giovanni XXIII e cure domiciliari dell'ASST Bergamo Est: nessun numero nelle pagine copiate.",
-    "La pagina ATS Assistenza domiciliare (aggiornata al 04/03/2025) non riporta numeri: i recapiti sono sul modulo."
+    "La pagina ATS Assistenza domiciliare (aggiornata al 04/03/2025) non riporta numeri: i recapiti sono sul modulo.",
+    "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe.",
+    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): ASST Bergamo Ovest tempi_attesa@asst-bgovest.it (con ricetta e telefono); ASST Bergamo Est rua.tempiattesa@asst-bergamoest.it o sedi territoriali; Papa Giovanni XXIII: nessuna procedura trovata."
+   ],
+   "pagine": [
+    {
+     "tipo": "cup",
+     "url": "https://www.ats-bg.it/accesso-alle-prestazioni-sanitarie-0"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.ats-bg.it/servizio-continuita-assistenziale-ex-guardia-medica"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.ats-bg.it/centrale-unica-116117"
+    },
+    {
+     "tipo": "home",
+     "url": "https://www.asst-pg23.it/"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.asst-pg23.it/reparti/ufficio-relazioni-il-pubblico-urp"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asst-pg23.it/come-fare/prenotare-una-prestazione/prenota-il-servizio-sanitario-nazionale"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asst-pg23.it/servizi-territoriali/case-comunita/continuita-assistenziale"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asst-pg23.it/servizi-territoriali/case-comunita/punto-unico-accesso-pua"
+    },
+    {
+     "tipo": "home",
+     "url": "https://www.asst-bgovest.it/"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://asst-bgovest.it/18.asp"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asst-bgovest.it/63.asp"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asst-bgovest.it/656.asp"
+    },
+    {
+     "tipo": "home",
+     "url": "https://www.asst-bergamoest.it/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asst-bergamoest.it/it/prenotazione-disdetta"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asst-bergamoest.it/it/news/continuita-assistenziale-avvio-della-centrale-uni-ca-bergamo"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asst-bergamoest.it/it/servizi-territoriali"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://asst-bgovest.it/280.asp"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.asst-bgovest.it/212.asp"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.asst-bergamoest.it/it/informazioni/tutela-del-cittadino"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.asst-pg23.it/amministrazione-trasparente/servizi-erogati/liste-attesa"
+    }
    ]
   },
   {
@@ -554,7 +638,79 @@
     "ASST del Garda: la pagina C-DOM non ha numeri di telefono per le cure domiciliari.",
     "ASST Franciacorta: nessun numero PUA/cure domiciliari nelle pagine copiate.",
     "ASST Spedali Civili: la pagina Numeri utili (con il CUP 030 224466) è aggiornata a luglio 2025; l'orario dell'URP 030 3995808 è scritto solo per agosto.",
-    "Pagina URP dell'ASST Valcamonica (scheda URP) non trovata: usata l'altra scheda URP."
+    "Pagina URP dell'ASST Valcamonica (scheda URP) non trovata: usata l'altra scheda URP.",
+    "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe.",
+    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): ASST Spedali Civili percorsotutela.scb@asst-spedalicivili.it con modulo, ricetta e documento; ASST del Garda modulo da mandare a protocollo.aziendale@asst-garda.it."
+   ],
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.ats-brescia.it/riferimenti-urp-asst-strutture-ricovero-e-cura-e-cure-sub-acute-private-accreditate-ambulatori-accreditati"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.ats-brescia.it/continuita-assistenziale-ex-guardia-medica"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.ats-brescia.it/assistenza-sanitaria-base-e-durgenza"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.asst-valcamonica.it/scheda-ist/URP"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asst-valcamonica.it/scheda-ist/servizio-di-continuita-assistenziale-ex-guardia-medica"
+    },
+    {
+     "tipo": "home",
+     "url": "https://www.asst-spedalicivili.it/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.asst-spedalicivili.it/amministrazione-trasparente/telefono-e-posta-elettronica"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://territorio.asst-spedalicivili.it/contenuto/contenuti--ecm/continuita-assistenziale-ex-guardia-medica.ashx"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://territorio.asst-spedalicivili.it/contenuto/contenuti--ecm/assistenza-domiciliare-integrata-ucam-e-cead.ashx"
+    },
+    {
+     "tipo": "home",
+     "url": "https://www.asst-franciacorta.it/"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.asst-franciacorta.it/ufficio-relazioni-con-il-pubblico-u-r-p/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asst-franciacorta.it/rete-territoriale/assistenza-sanitaria/continuita-assistenziale-ex-guardia-medica/"
+    },
+    {
+     "tipo": "home",
+     "url": "https://www.asst-garda.it/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asst-garda.it/prenotazioni/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asst-garda.it/territori/assistenza-sanitaria-2/continuita-assistenziale-ex-guardia-medica/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asst-garda.it/territori/persone-non-autosufficienti-e-disabili/c-dom/"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.asst-spedalicivili.it/percorso-tutela-prestazioni-specialistica-ambulatoriale-e-diagnostica"
+    }
    ]
   },
   {
@@ -743,7 +899,47 @@
     "Le pagine «Numeri utili» e «URP» dell'ATS Insubria hanno la scritta «Scaduto» accanto al titolo, anche se sono state modificate nel 2026: ricontrollare.",
     "ASST Lariana: nessun numero proprio del CUP per le visite SSN (rimanda al Contact Center regionale).",
     "Cure domiciliari / PUA dell'ASST Lariana: la pagina non riporta numeri di telefono.",
-    "Alto Lario: nella pagina contatti dell'ASST Valtellina e Alto Lario non c'è l'Ospedale di Gravedona; c'è solo il Poliambulatorio di Dongo."
+    "Alto Lario: nella pagina contatti dell'ASST Valtellina e Alto Lario non c'è l'Ospedale di Gravedona; c'è solo il Poliambulatorio di Dongo.",
+    "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe.",
+    "Percorso di tutela: l'ASST Lariana ha il «Modulo di istanza di attivazione del percorso di tutela» nella pagina URP (copia del 22/10/2026), senza scritto dove mandarlo; (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server) prima si cerca posto nell'ATS con GP++, poi lo prende in carico l'Ufficio Percorso di Tutela."
+   ],
+   "pagine": [
+    {
+     "tipo": "altro",
+     "url": "https://www.ats-insubria.it/agenzia/ufficio-pubblica-tutela"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.ats-insubria.it/amministrazione-trasparente/category/797-telefono-e-posta-elettronica"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.ats-insubria.it/aree-tematiche/cure-primarie/continuita-assistenziale"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.ats-insubria.it/servizi/cure-domiciliari"
+    },
+    {
+     "tipo": "home",
+     "url": "https://www.asst-lariana.it/"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://asst-lariana.it/amministrazione/unita-organizzativa/direttore-generale/urp"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asst-lariana.it/servizio/continuita-assistenziale-ex-guardia-medica/"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.asst-lariana.it/liste-di-attesa/"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.ats-insubria.it/tempi-attesa"
+    }
    ]
   },
   {
@@ -989,7 +1185,46 @@
     "ASST di Crema: per prenotare la pagina dà solo il numero regionale; nessun CUP proprio.",
     "ASST di Cremona: per l'ospedale di Cremona e Oglio Po il CUP ha sportelli ma per telefono solo il numero regionale.",
     "ASST di Cremona: la pagina contatti (PUA) è aggiornata a luglio 2025.",
-    "Pagina della guardia medica dell'ATS Val Padana non trovata."
+    "Pagina della guardia medica dell'ATS Val Padana non trovata.",
+    "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe."
+   ],
+   "pagine": [
+    {
+     "tipo": "guardia",
+     "url": "https://www.ats-valpadana.it/contenuto-web/-/asset_publisher/0DtvIvbG5Z49/content/continuita-assistenziale-ex-guardia-medica-"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.ats-valpadana.it/cure-domiciliari"
+    },
+    {
+     "tipo": "home",
+     "url": "https://www.asst-cremona.it/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asst-cremona.it/strutture/continuita-assistenziale-ex-guardia-medica"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asst-cremona.it/strutture/integrazione-e-valutazione-fragilita-cremona"
+    },
+    {
+     "tipo": "home",
+     "url": "https://www.asst-crema.it/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asst-crema.it/cup-crema"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asst-crema.it/continuita-assistenziale-ex-guardia-medica"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.asst-cremona.it/amministrazione-trasparente/tempi-d-attesa"
+    }
    ]
   },
   {
@@ -1128,7 +1363,38 @@
    "todo": [
     "PUA delle Case di Comunità dell'ASST di Lecco: recapiti e orari solo in un dépliant non copiato, nessun numero nella pagina.",
     "Il numero 0341 253000 è insieme centralino e prenotazioni dell'ASST di Lecco (solo alcune visite ed esami ospedalieri); per il resto vale il numero regionale.",
-    "Mancano numeri per cure domiciliari, protesica, cartella clinica e scelta del medico dell'ASST di Lecco."
+    "Mancano numeri per cure domiciliari, protesica, cartella clinica e scelta del medico dell'ASST di Lecco.",
+    "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe."
+   ],
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.ats-brianza.it/it/urp-ats-brianza.html"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.ats-brianza.it/guardia-medica"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.ats-brianza.it/cure-domiciliari-cure-palliative"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.ats-brianza.it/servizi-sul-territorio/sportelli-delle-asst"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.asst-lecco.it/informazioni-utili/ufficio-relazioni-col-pubblico/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://asst-lecco.it/continuita-assistenziale"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.asst-lecco.it/amministrazione-trasparente/servizi-erogati/liste-di-attesa/"
+    }
    ]
   },
   {
@@ -1245,7 +1511,59 @@
    "last_verified": "2026-10-21",
    "todo": [
     "ASST di Lodi: per prenotare al telefono la pagina rimanda solo al Contact Center regionale (800 638638 / 02 999599): nessun CUP proprio.",
-    "ASST di Lodi: la pagina cure domiciliari (Valutazione Multidimensionale) non ha numeri di telefono; nessun PUA trovato."
+    "ASST di Lodi: la pagina cure domiciliari (Valutazione Multidimensionale) non ha numeri di telefono; nessun PUA trovato.",
+    "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe.",
+    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): l'ASST di Lodi prende in carico la ricetta con GP++ e poi con uno strumento aziendale; canale per il cittadino non trovato."
+   ],
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.ats-milano.it/urp-upt"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.ats-milano.it/telefono-posta-elettronica"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/assistenza-socio-sanitaria/continuita-assistenziale-guardia-medica"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/assistenza-sociosanitaria/continuita-assistenziale-guardia-medica/continuita-assistenziale/continuita-assistenziale"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.ats-milano.it/notizie/numero-unico-116117"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/disabilita-non-autosufficienza/assistenza-domiciliare/assistenza-domiciliare-integrata-adi/assistenza-domiciliare-integrata-adi"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/assistenza-sociosanitaria/case-comunita/casa-comunita"
+    },
+    {
+     "tipo": "home",
+     "url": "https://www.asst-lodi.it/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.asst-lodi.it/en/contatti"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.asst-lodi.it/en/telefono-e-posta-elettronica"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asst-lodi.it/en/continuita-assitenziale-ex-guardia-medica"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.asst-lodi.it/tempi-di-attesa1"
+    }
    ]
   },
   {
@@ -1389,7 +1707,38 @@
    "todo": [
     "ASST di Mantova: per prenotare le pagine danno solo il numero regionale; nessun CUP telefonico proprio.",
     "Nessun numero per scelta del medico, protesica o PUA nelle pagine copiate dell'ASST di Mantova.",
-    "Il WhatsApp dell'URP dell'ASST di Mantova (cellulare) non è stato messo."
+    "Il WhatsApp dell'URP dell'ASST di Mantova (cellulare) non è stato messo.",
+    "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe."
+   ],
+   "pagine": [
+    {
+     "tipo": "guardia",
+     "url": "https://www.ats-valpadana.it/contenuto-web/-/asset_publisher/0DtvIvbG5Z49/content/continuita-assistenziale-ex-guardia-medica-"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.ats-valpadana.it/cure-domiciliari"
+    },
+    {
+     "tipo": "home",
+     "url": "https://www.asst-mantova.it/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.asst-mantova.it/en/amministrazione-trasparente/telefono-e-posta-elettronica"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asst-mantova.it/come-prenotare-prestazioni-specialistiche-ambulatoriali"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asst-mantova.it/continuita-assistenziale-ex-guardia-medica"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.asst-mantova.it/en/amministrazione-trasparente/liste-di-attesa"
+    }
    ]
   },
   {
@@ -1917,7 +2266,227 @@
     "ASST Ovest Milanese: nessuna pagina PUA/cure domiciliari copiata; pagina URP senza indirizzo dello sportello.",
     "ASST Rhodense: le pagine «contatti» e «prenotazioni» del vecchio sito danno 404; il centralino è preso dal piè di pagina del sito; c'è solo il PUA di Corsico.",
     "ASST Melegnano e Martesana: per il PUA di Peschiera Borromeo due pagine danno numeri diversi (02 9811 8079 e 02 9805 8079): non messo. ADI con molte sedi locali: non messe.",
-    "ATS: pagina Centro Screening senza numero; pagine «urp-upt» e «telefono-posta-elettronica» non copiate (403). Pagina 116117 dell'ASST Fatebenefratelli Sacco «Pagina non trovata»."
+    "ATS: pagina Centro Screening senza numero; pagine «urp-upt» e «telefono-posta-elettronica» non copiate (403). Pagina 116117 dell'ASST Fatebenefratelli Sacco «Pagina non trovata».",
+    "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe.",
+    "Percorso di tutela (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): Niguarda urp@ospedaleniguarda.it o ruainforma@ospedaleniguarda.it; Santi Paolo e Carlo modulo all'URP; Melegnano e Martesana segnalazione all'URP; Rhodense «Istanza di attivazione del percorso di tutela» nella pagina prenotazioni (copia del 21/10/2026, senza indirizzo)."
+   ],
+   "pagine": [
+    {
+     "tipo": "cup",
+     "url": "https://www.prenotasalute.regione.lombardia.it/sito/Menu-principale/Come-prenotare/Contact-Center-numero-verde-800.638.638"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.prenotasalute.regione.lombardia.it/sito/Menu-principale/Come-prenotare"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://prenotasalute.regione.lombardia.it/sito/Menu-principale/Come-prenotare/In-Farmacia"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://prenotasalute.regione.lombardia.it/sito/Menu-istituzionale/Contatti"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.siss.regione.lombardia.it/wps/portal/site/siss/servizi-per-il-territorio/contact-center-regionale"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/prenotazione-online-visite-esami"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/farmaci-visite-esami--prescrizione-prenotazione-ssr"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/servizi-sanitari-online-regione-lombardia"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.regione.lombardia.it/sanita/emergenze-e-urgenze/pronto-soccorso"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.regione.lombardia.it/contatti"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.fascicolosanitario.regione.lombardia.it/app-salutile-prenotazioni"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.fascicolosanitario.regione.lombardia.it/contatti"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.areu.lombardia.it/web/home/continuita-assistenziale"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.areu.lombardia.it/web/home/sistema-delle-cure-mediche-non-urgenti"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.ats-milano.it/urp-upt"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.ats-milano.it/telefono-posta-elettronica"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/assistenza-socio-sanitaria/continuita-assistenziale-guardia-medica"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/assistenza-sociosanitaria/continuita-assistenziale-guardia-medica/continuita-assistenziale/continuita-assistenziale"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.ats-milano.it/notizie/numero-unico-116117"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/disabilita-non-autosufficienza/assistenza-domiciliare/assistenza-domiciliare-integrata-adi/assistenza-domiciliare-integrata-adi"
+    },
+    {
+     "tipo": "home",
+     "url": "https://www.ospedaleniguarda.it/"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.ospedaleniguarda.it/chi-siamo/organizzazione/comunicazione-e-relazioni-esterne-urp"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.ospedaleniguarda.it/contents/prenota_visita_esame"
+    },
+    {
+     "tipo": "home",
+     "url": "https://www.asst-santipaolocarlo.it/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.asst-santipaolocarlo.it/strutture/contatti-asst-sancarlo-sanpaolo"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.asst-santipaolocarlo.it/strutture/territorio"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asst-santipaolocarlo.it/strutture/prenota-visite-ed-esami"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asst-santipaolocarlo.it/eventi/116-117-numero-unico-continuita-assistenziale-ex-guardia-medica"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asst-santipaolocarlo.it/case-comunita"
+    },
+    {
+     "tipo": "home",
+     "url": "https://www.asst-fbf-sacco.it/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://asst-fbf-sacco.it/pages/pazienti/come-prenotare"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asst-fbf-sacco.it/news/info/numero-unico-116-117"
+    },
+    {
+     "tipo": "home",
+     "url": "https://www.asst-nordmilano.it/"
+    },
+    {
+     "tipo": "urp",
+     "url": "http://www.asst-nordmilano.it/urp"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asst-nordmilano.it/cup"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asst-nordmilano.it/continuit%C3%A0-assistenziale"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asst-nordmilano.it/pua-punto-unico-di-accesso"
+    },
+    {
+     "tipo": "home",
+     "url": "https://www.asst-rhodense.it/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.asst-rhodense.it/inew/ASST/contatti.html"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asst-rhodense.it/inew/ASST/prenotazioni.html"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asst-ovestmi.it/news/servizio-continuita-assistenziale"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asst-melegnano-martesana.it/servizi-territoriali/prenotazioni-cup-23"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asst-melegnano-martesana.it/servizi-territoriali/continuita-assistenziale-ex-guardia-medica-8"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asst-melegnano-martesana.it/servizi-territoriali/cure-domiciliari-adi-9"
+    },
+    {
+     "tipo": "home",
+     "url": "https://www.asst-pini-cto.it/"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.asst-pini-cto.it/urp"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://asst-pini-cto.it/telefoni-e-posta-elettronica"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asst-pini-cto.it/it/servizi-al-paziente/ssn-servizio-sanitario-nazionale/prenotazioni/visite-ed-esami"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.regione.lombardia.it/wps/portal/istituzionale/HP/DettaglioServizio/servizi-e-informazioni/Cittadini/salute-e-prevenzione/prenotazioni-ticket-e-tempi-di-attesa/Tempi-attesa-prestazioni-sanitarie/Tempi-attesa-prestazioni-sanitarie"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.asst-santipaolocarlo.it/amministrazione-trasparente/liste-attesa"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.ospedaleniguarda.it/amministrazione_trasparente/servizi-erogati/liste-di-attesa"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.asst-melegnano-martesana.it/amministrazione-trasparente/servizi-erogati-148/liste-di-attesa-152"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.asst-ovestmi.it/strutture/ufficio-pubblica-tutela-upt"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.asst-rhodense.it/v2/varie/prenotazione-referti.html"
+    }
    ]
   },
   {
@@ -2055,7 +2624,46 @@
     "L'ASST di Monza ora si chiama Fondazione IRCCS San Gerardo dei Tintori (sito irccs-sangerardo.it, asst-monza.it porta lì).",
     "CUP del San Gerardo: la pagina indica solo il numero regionale 800 638638 (02 999599 da cellulare) e gli sportelli CUP dell'Ospedale Nuovo e Vecchio, senza un numero proprio.",
     "ASST della Brianza: la home copiata è vuota e la pagina URP non riporta il numero dell'URP; manca anche un numero CUP, cure domiciliari e scelta del medico.",
-    "Cure domiciliari: la pagina ATS rimanda all'ASST della Brianza senza numero di telefono."
+    "Cure domiciliari: la pagina ATS rimanda all'ASST della Brianza senza numero di telefono.",
+    "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe."
+   ],
+   "pagine": [
+    {
+     "tipo": "urp",
+     "url": "https://www.ats-brianza.it/it/urp-ats-brianza.html"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.ats-brianza.it/guardia-medica"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.ats-brianza.it/servizi-sul-territorio/sportelli-delle-asst"
+    },
+    {
+     "tipo": "home",
+     "url": "https://www.asst-monza.it/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://asst-monza.it/contatti"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://asst-monza.it/come-prenotare"
+    },
+    {
+     "tipo": "home",
+     "url": "https://www.asst-brianza.it/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asst-brianza.it/web/index.php/schede/scheda/54"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.irccs-sangerardo.it/liste-di-attesa"
+    }
    ]
   },
   {
@@ -2211,7 +2819,39 @@
    "todo": [
     "ASST di Pavia: per prenotare le pagine danno solo il numero regionale; nessun CUP telefonico proprio.",
     "Il numero CeAD 0382 1958060 viene dalla pagina dell'ATS (aggiornata a febbraio 2025, parla ancora di voucher): da ricontrollare sul sito dell'ASST.",
-    "Nessun numero PUA, protesica o scelta del medico nelle pagine copiate dell'ASST di Pavia."
+    "Nessun numero PUA, protesica o scelta del medico nelle pagine copiate dell'ASST di Pavia.",
+    "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe.",
+    "Percorso di tutela: l'ASST di Pavia rimanda alla «Guida pratica prime visite 2026» (PDF, non copiato) nella notizia dell'11/09/2026 (copia del 21/10/2026)."
+   ],
+   "pagine": [
+    {
+     "tipo": "guardia",
+     "url": "https://www.ats-pavia.it/tuo-medico-pediatra"
+    },
+    {
+     "tipo": "home",
+     "url": "https://asst-pavia.it/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://asst-pavia.it/come-fare-per/prenotare-o-disdire-una-visita/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://asst-pavia.it/servizio/continuita-assistenziale-guardia-medica/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://asst-pavia.it/servizio/assistenza-domiciliare-integrata/"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://asst-pavia.it/novita/notizia/prenotazioni-di-specialistica-ambulatoriale-di-primo-accesso-e-percorso-di-tutela/"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.ats-pavia.it/amministrazione-trasparente/liste-attesa"
+    }
    ]
   },
   {
@@ -2365,7 +3005,42 @@
     "ASST Valtellina e Alto Lario: nella pagina contatti il «Centralino» dei numeri utili è 0342 607111, mentre il centralino dell'Ospedale di Sondrio e il piè di pagina danno 0342 521111. Non ho messo lo 0342 607111: da chiarire.",
     "ASST Valtellina e Alto Lario: nessun numero proprio del CUP (rimanda al Contact Center regionale).",
     "Cure domiciliari / ADI (Servizio Fragilità dell'ASST Valtellina e Alto Lario): nessuna pagina copiata con un numero di telefono.",
-    "La pagina «Telefono e posta elettronica» dell'ATS della Montagna dà «Pagina non trovata»; usata la pagina Contatti."
+    "La pagina «Telefono e posta elettronica» dell'ATS della Montagna dà «Pagina non trovata»; usata la pagina Contatti.",
+    "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe."
+   ],
+   "pagine": [
+    {
+     "tipo": "contatti",
+     "url": "https://www.ats-montagna.it/contatti-2/telefono-e-posta-elettronica-ats-montagna/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.ats-montagna.it/continuita-assistenziale"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.ats-montagna.it/medico-medicina-generale-e-pediatra-famiglia"
+    },
+    {
+     "tipo": "home",
+     "url": "https://www.asst-val.it/"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.asst-val.it/ufficio-relazioni-con-il-pubblico-urp"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asst-val.it/per-il-cittadino/continuita-assistenziale-ex-guardia-medica-numero-unico-116117/"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.asst-val.it/en/liste-di-attesa"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.ats-montagna.it/tempi-attesa-prestazioni-sanitarie"
+    }
    ]
   },
   {
@@ -2563,7 +3238,79 @@
     "ASST Sette Laghi e ASST Valle Olona: nessun numero di telefono proprio del CUP (rimandano al Contact Center regionale); il CUP dell'Ospedale di Circolo è aperto dal lunedì al venerdì 8:15–16:15 (Pad. 6).",
     "ASST Valle Olona non ha un centralino unico: ci sono i centralini dei singoli ospedali.",
     "PUA e cure domiciliari (ASST Valle Olona e Sette Laghi): le pagine non riportano numeri di telefono, rimandano alle Case di Comunità.",
-    "Email degli URP dell'ATS Insubria nascoste sul sito (protezione antispam): non riportate."
+    "Email degli URP dell'ATS Insubria nascoste sul sito (protezione antispam): non riportate.",
+    "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe.",
+    "Percorso di tutela dell'ASST Sette Laghi (pagina «Prenotare visita o esame SSN», copia del 22/10/2026): si chiede a uno dei CUP aziendali (non a Malnate); se non c'è posto nemmeno nell'ATS Insubria, il CUP mette la richiesta in una lista interna e ti richiama; chi rifiuta la data perde la priorità. ASST Valle Olona (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): istanza a protocollo@pec.asst-valleolona.it con oggetto «Richiesta attivazione percorso di garanzia – prestazioni ambulatoriali»."
+   ],
+   "pagine": [
+    {
+     "tipo": "altro",
+     "url": "https://www.ats-insubria.it/agenzia/ufficio-pubblica-tutela"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.ats-insubria.it/amministrazione-trasparente/category/797-telefono-e-posta-elettronica"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.ats-insubria.it/aree-tematiche/cure-primarie/continuita-assistenziale"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.ats-insubria.it/servizi/cure-domiciliari"
+    },
+    {
+     "tipo": "home",
+     "url": "https://www.asst-settelaghi.it/"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.asst-settelaghi.it/ufficio-relazioni-con-il-pubblico-e-comunicazione"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.asst-settelaghi.it/en/contatti1"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asst-settelaghi.it/en/cup-ospedale-circolo"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asst-settelaghi.it/sedi/continuita-assistenziale-casa-di-comunita-di-gazzada"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asst-settelaghi.it/en/area-distrettuale/adi"
+    },
+    {
+     "tipo": "home",
+     "url": "https://www.asst-valleolona.it/"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.asst-valleolona.it/asst-valle-olona/contatti/"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asst-valleolona.it/servizi/prenotazione-visite-specialistiche-ed-esami-cup/"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asst-valleolona.it/dal-7-giugno-il-servizio-di-continuita-assistenziale-si-trasferisce-presso-la-casa-di-comunita-di-saronno/"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asst-valleolona.it/servizi/cure-domiciliari/"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.asst-valleolona.it/amm-trasparente/liste-di-attesa-3/"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.ats-insubria.it/tempi-attesa"
+    }
    ]
   }
  ]

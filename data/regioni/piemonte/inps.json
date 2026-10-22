@@ -1,19 +1,35 @@
 {
  "region": "Piemonte",
- "last_verified": "2026-10-21",
- "note": "Indirizzi e PEC delle sedi INPS dalle pagine «sedi» di inps.it, copiate il 21/10/2026 dal server in Italia. Per andare allo sportello si prenota (MyINPS, app, 803 164 / 06 164164). regime (riforma della disabilità) da verificare: finché è null il modulo invalidità non va attivato per questa regione.",
+ "last_verified": "2026-10-22",
+ "note": "Indirizzi e PEC delle sedi INPS dalle pagine «sedi» di inps.it, copiate il 21/10/2026 dal server in Italia. Per andare allo sportello si prenota (MyINPS, app, 803 164 / 06 164164). Regime della riforma della disabilità (22/10/2026) dagli estratti delle pagine del Dipartimento per la disabilità e dell'INPS: 9 province dal 01/01/2025, 11 dal 30/09/2025, 40 dal 01/03/2026; le altre con la vecchia procedura fino al 31/12/2026.",
  "sources": [
   {
    "label": "INPS – sedi e contatti in Piemonte",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.818000.818000-elencoStruttureInps.html"
+  },
+  {
+   "label": "Dipartimento per le politiche in favore delle persone con disabilità – le prime 9 province della sperimentazione",
+   "url": "https://www.disabilita.governo.it/it/notizie/individuate-le-9-province-per-sperimentare-la-riforma-disabilita/"
+  },
+  {
+   "label": "Dipartimento per le politiche in favore delle persone con disabilità – altre 11 province (dal 30/09/2025)",
+   "url": "https://www.disabilita.governo.it/it/notizie/individuate-le-altre-11-province-per-la-sperimentazione-della-riforma-della-disabilita/"
+  },
+  {
+   "label": "Dipartimento per le politiche in favore delle persone con disabilità – altre 40 province (dal 01/03/2026)",
+   "url": "https://www.disabilita.governo.it/it/notizie/al-via-sperimentazione-riforma-disabilita-in-altre-40-province/"
+  },
+  {
+   "label": "INPS – Riforma della disabilità: al via la terza fase sperimentale",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html"
   }
  ],
  "provinces": [
   {
    "id": "alessandria",
    "name": "Alessandria",
-   "regime": null,
-   "regime_since": null,
+   "regime": "new",
+   "regime_since": "2025-09-30",
    "pec": "direzione.provinciale.alessandria@postacert.inps.gov.it",
    "address": "Via Morbelli 34, Alessandria",
    "status": "ok",
@@ -25,8 +41,8 @@
   {
    "id": "asti",
    "name": "Asti",
-   "regime": null,
-   "regime_since": null,
+   "regime": "new",
+   "regime_since": "2026-03-01",
    "pec": "direzione.provinciale.asti@postacert.inps.gov.it",
    "address": "Via Fratelli Rosselli 22/24, Asti",
    "status": "ok",
@@ -38,7 +54,7 @@
   {
    "id": "biella",
    "name": "Biella",
-   "regime": null,
+   "regime": "old",
    "regime_since": null,
    "pec": "direzione.provinciale.biella@postacert.inps.gov.it",
    "address": "Via Tripoli 14, Biella",
@@ -51,8 +67,8 @@
   {
    "id": "cuneo",
    "name": "Cuneo",
-   "regime": null,
-   "regime_since": null,
+   "regime": "new",
+   "regime_since": "2026-03-01",
    "pec": "direzione.provinciale.cuneo@postacert.inps.gov.it",
    "address": "Corso Santorre. Di Santarosa 15, Cuneo",
    "status": "ok",
@@ -64,7 +80,7 @@
   {
    "id": "novara",
    "name": "Novara",
-   "regime": null,
+   "regime": "old",
    "regime_since": null,
    "pec": "direzione.provinciale.novara@postacert.inps.gov.it",
    "address": "Corso Della Vittoria 8, Novara",
@@ -77,8 +93,8 @@
   {
    "id": "torino",
    "name": "Torino",
-   "regime": null,
-   "regime_since": null,
+   "regime": "new",
+   "regime_since": "2026-03-01",
    "pec": "direzione.provinciale.torino@postacert.inps.gov.it",
    "address": "Corso Vittorio Emanuele II 3, Torino",
    "status": "ok",
@@ -90,7 +106,7 @@
   {
    "id": "verbano-cusio-ossola",
    "name": "Verbano-Cusio-Ossola",
-   "regime": null,
+   "regime": "old",
    "regime_since": null,
    "pec": "direzione.provinciale.verbanocusioossola@postacert.inps.gov.it",
    "address": "Corso Guglielmo Marconi 99, Gravellona Toce",
@@ -103,7 +119,7 @@
   {
    "id": "vercelli",
    "name": "Vercelli",
-   "regime": null,
+   "regime": "old",
    "regime_since": null,
    "pec": "direzione.provinciale.vercelli@postacert.inps.gov.it",
    "address": "Piazza Zumaglini 10, Vercelli",
@@ -115,6 +131,6 @@
   }
  ],
  "todo": [
-  "Riforma della disabilità: verificare quali province sono nella sperimentazione e da quando (campo regime)."
+  "Regime della riforma della disabilità messo il 22/10/2026 dagli estratti (motore di ricerca) delle pagine disabilita.governo.it e inps.it: i siti non si aprono da qui. Da rileggere per intero sulle pagine e da confermare con una telefonata alla sede (come per la Sicilia)."
  ]
 }

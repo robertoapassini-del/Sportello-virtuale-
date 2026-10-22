@@ -7,13 +7,13 @@
     { "id": "calabria", "name": "Calabria", "attiva": true, "asl_label": "ASP", "moduli": ["numeri-utili", "invalidita", "medico-famiglia"] },
     { "id": "campania", "name": "Campania", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili", "invalidita"] },
     { "id": "emilia-romagna", "name": "Emilia-Romagna", "attiva": true, "asl_label": "AUSL", "moduli": ["numeri-utili", "invalidita"] },
-    { "id": "friuli-venezia-giulia", "name": "Friuli-Venezia Giulia", "attiva": true, "asl_label": "Azienda sanitaria", "moduli": ["numeri-utili"] },
+    { "id": "friuli-venezia-giulia", "name": "Friuli-Venezia Giulia", "attiva": true, "asl_label": "Azienda sanitaria", "moduli": ["numeri-utili", "invalidita"] },
     { "id": "lazio", "name": "Lazio", "in": "nel Lazio", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili", "invalidita"] },
     { "id": "liguria", "name": "Liguria", "attiva": true, "asl_label": "ATS", "moduli": ["numeri-utili", "invalidita", "medico-famiglia"] },
     { "id": "lombardia", "name": "Lombardia", "attiva": true, "asl_label": "ATS", "moduli": ["numeri-utili"] },
     { "id": "marche", "name": "Marche", "in": "nelle Marche", "attiva": false, "asl_label": "AST" },
     { "id": "molise", "name": "Molise", "attiva": true, "asl_label": "ASREM", "moduli": ["numeri-utili", "invalidita", "cartella-clinica", "assistenza-domiciliare", "medico-famiglia"] },
-    { "id": "piemonte", "name": "Piemonte", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili"] },
+    { "id": "piemonte", "name": "Piemonte", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili", "invalidita"] },
     { "id": "puglia", "name": "Puglia", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili", "invalidita"] },
     { "id": "sardegna", "name": "Sardegna", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili"] },
     { "id": "sicilia", "name": "Sicilia", "attiva": true, "asl_label": "ASP", "asl_label_long": "Azienda sanitaria provinciale", "asl_intestazione": "Azienda Sanitaria Provinciale", "ente": "Regione Siciliana", "files": { "asl": "asp", "inps": "inps" },
@@ -21,7 +21,7 @@
     { "id": "toscana", "name": "Toscana", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili", "invalidita"] },
     { "id": "trentino-alto-adige", "name": "Trentino-Alto Adige", "attiva": true, "asl_label": "Azienda sanitaria", "moduli": ["numeri-utili"] },
     { "id": "umbria", "name": "Umbria", "attiva": true, "asl_label": "USL", "moduli": ["numeri-utili"] },
-    { "id": "valle-d-aosta", "name": "Valle d'Aosta", "attiva": true, "asl_label": "USL", "moduli": ["numeri-utili"] },
+    { "id": "valle-d-aosta", "name": "Valle d'Aosta", "attiva": true, "asl_label": "USL", "moduli": ["numeri-utili", "liste-attesa", "medico-famiglia"] },
     { "id": "veneto", "name": "Veneto", "in": "nel Veneto", "attiva": false, "asl_label": "ULSS" }
   ]
 }

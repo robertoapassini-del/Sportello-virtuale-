@@ -115,7 +115,111 @@
     "Quasi tutte le pagine di asdaa.it e salute.provincia.bz.it sono fatte in JavaScript: la copia contiene solo «Loading...», quindi niente URP, centralino aziendale, PUA/cure domiciliari, guardia medica né 116117 verificati per la provincia di Bolzano.",
     "Guardia medica: l'unica pagina leggibile (Medicina di base, Comprensorio di Merano, vecchia: cita il 2011) dice che il servizio festivo è fatto a turno dai medici di famiglia e che i nomi dei medici di turno si sanno dal centralino dell'Ospedale di Merano (0473 263333) o su www.asdaa.it/it/servizio-di-turno-medici.asp. Non ho messo numeri di guardia medica: controllare se in Alto Adige è attivo il 116117.",
     "Il numero del CUPP è «100 100» con il prefisso del distretto (0471 Bolzano, 0472 Bressanone, 0473 Merano, 0474 Brunico): sul sito un numero per zona, perché senza prefisso la chiamata non parte (audit del 21/10/2026).",
-    "La pagina «Tempi di prenotazione» di provincia.bz.it non si è aperta (troppi rinvii)."
+    "La pagina «Tempi di prenotazione» di provincia.bz.it non si è aperta (troppi rinvii).",
+    "Nessun modulo acceso: la provincia di Bolzano non ha pagine copiate leggibili (sito fatto in JavaScript) e i moduli si accendono per tutta la regione. Trento da solo avrebbe abbastanza dati per alcuni moduli.",
+    "Scelta del medico (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): allo sportello del distretto, per email con il documento o online con myCIVIS. Cartella clinica: richiesta al Direttore medico dell'ospedale, a pagamento secondo l'estratto. Invalidità: in Alto Adige l'INPS non fa l'accertamento (estratto della notizia INPS sulla terza fase)."
+   ],
+   "pagine": [
+    {
+     "tipo": "home",
+     "url": "https://www.asdaa.it/it/default.asp"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asdaa.it/it/comprensorio-sanitario-di-bolzano"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asdaa.it/it/centro-piani-rencio"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asdaa.it/it/oltrisarco"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asdaa.it/it/bassa-atesina"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://home.asdaa.it/m/it/contatti.asp"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.sabes.it/it/contatti-sabes.asp?addt_apid=53001"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.asdaa.it/it/informazioni-per-pazienti-e-visitatori-bz"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://home.sabes.it/it/ospedali/bolzano/segnalazioni-e-reclami.asp"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asdaa.it/it/one/116-117"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://home.asdaa.it/it/medicina-di-base.asp"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asdaa.it/it/ambulatori-per-le-piccole-urgenze"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asdaa.it/it/temi/pronto-soccorso-solo-per-le-emergenze"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asdaa.it/it/comprensori-sanitari/merano/3181.asp"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://pnrr.asdaa.it/progetti/centrali-operative-territoriali"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://salute.provincia.bz.it/it/numero-116117"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.provincia.bz.it/salute-benessere/salute/cittadini-utenti/tempi-di-prenotazione.asp"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.provincia.bz.it/salute-benessere/salute/cittadini-utenti/fascicolo-sanitario-elettronico-fse.asp"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://salute.provincia.bz.it/it/ticket-esenzioni"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.provincia.bz.it/famiglia-sociale-comunita/anziani/sportelli-unici-assistenza-cura.asp"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.provincia.bz.it/famiglia-sociale-comunita/anziani/assistenza-domiciliare/servizio-infermieristico.asp"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://home.asdaa.it/prevenzione/prestazioni.asp?bnsv_svid=1008640"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://home.asdaa.it/it/servizi-informazione.asp?bnsv_svid=1032224"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asdaa.it/it/servizi-informazione.asp?bnsv_svid=1033546"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asdaa.it/it/one/fascicolo-sanitario-elettronico"
+    }
    ]
   },
   {
@@ -350,7 +454,115 @@
     "116117 a Bolzano: le pagine salute.provincia.bz.it/it/numero-116117 e asdaa.it/it/one/116-117 esistono ma la copia contiene solo «Loading...» (pagine fatte in JavaScript): non ho potuto verificare se e dove il 116117 sia attivo in Alto Adige. Va ricontrollato a mano.",
     "CUP Trento: numero unico provinciale 0461 379400 (lun–ven 8–18, sab 8–13), oppure online su TreC+ e agli sportelli CUP. CUP Bolzano: CUPP (Centro unico di prenotazione provinciale) 100 100 da comporre con il prefisso 0471, 0472, 0473 o 0474 (lun–ven 8–16), e-mail prenotazioni@asdaa.it, online sanibook.asdaa.it.",
     "Le pagine di trentinosalute.net e dell'ufficio stampa della Provincia (comunicato sul 116117) erano «in manutenzione» il 21/10/2026: non usate.",
-    "Mancano numeri verificati per protesica, cartelle cliniche, screening e scelta del medico. Sulla pagina «Telefono e posta elettronica» c'è la rete degli URP territoriali (Borgo, Arco, Tione, Rovereto, Cles…) ma l'elenco è confuso (numeri ripetuti per zone diverse): non usato."
+    "Mancano numeri verificati per protesica, cartelle cliniche, screening e scelta del medico. Sulla pagina «Telefono e posta elettronica» c'è la rete degli URP territoriali (Borgo, Arco, Tione, Rovereto, Cles…) ma l'elenco è confuso (numeri ripetuti per zone diverse): non usato.",
+    "Nessun modulo acceso: la provincia di Bolzano non ha pagine copiate leggibili (sito fatto in JavaScript) e i moduli si accendono per tutta la regione. Trento da solo avrebbe abbastanza dati per alcuni moduli.",
+    "Percorso di tutela in Trentino (pagina trentinosalute.net «Tempi di attesa», copia del 21/10/2026): se la prima visita non si fa nei tempi della classe si attivano «percorsi di tutela» (pre-liste per prenotare dopo, recupero dei posti liberi); non c'è un indirizzo per chiederlo. Scelta del medico (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): cambio online con TreC+ o allo sportello anagrafe sanitaria; prima scelta allo sportello. Cartella clinica (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): modulo per email alla direzione sanitaria dell'ospedale (Trento cartellecliniche.ospedaletrento@asuit.tn.it), prima copia gratis, consegna entro 30 giorni (da confrontare con la L. 24/2017). Cure palliative: pagina Asuit copiata il 21/10/2026, da leggere."
+   ],
+   "pagine": [
+    {
+     "tipo": "altro",
+     "url": "https://www.asuit.tn.it/strutture"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.asuit.tn.it/faq/dove-posso-avere-ulteriori-informazioni"
+    },
+    {
+     "tipo": "contatti",
+     "url": "https://www.asuit.tn.it/amministrazione-trasparente/telefono-e-posta-elettronica"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asuit.tn.it/domande-frequenti/prenotazioni-online-di-prestazioni-sanitarie-domande-frequenti"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://www.asuit.tn.it/servizi/assistenza-specialistica-ambulatoriale"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asuit.tn.it/servizi/trec"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://asuit.tn.it/servizi/continuita-assistenziale-guardia-medica"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asuit.tn.it/strutture/guardia-medica-trento"
+    },
+    {
+     "tipo": "guardia",
+     "url": "https://www.asuit.tn.it/strutture/guardia-medica-rovereto"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.asuit.tn.it/servizi/assistenza-domiciliare"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://asuit.tn.it/servizi/cure-palliative"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.asuit.tn.it/servizi/impegnative-e-ricette"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.apss.tn.it/Azienda/Unita-operative-e-strutture/Ufficio-rapporti-con-il-pubblico-URP"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.apss.tn.it/Servizi-e-Prestazioni/Assistenza-domiciliare"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.provincia.tn.it/Amministrazione/Enti-societa-e-fondazioni/Asuit-Azienda-sanitaria-universitaria-integrata-del-Trentino"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.trentinosalute.net/Argomenti/LISTE-DI-ATTESA"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.trentinosalute.net/Argomenti/SERVIZI-DI-EMERGENZA-E-URGENZA-E-TRASPORTI-SANITARI"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.ufficiostampa.provincia.tn.it/Comunicati/Numero-unico-europeo-116117-oltre-240-mila-chiamate-nel-2025"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.trentinosalute.net/Argomenti/INNOVAZIONE-E-RICERCA/Fascicolo-sanitario-elettronico-FSE"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://trec.trentinosalute.net/"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://trec.trentinosalute.net/domande-frequenti"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://trentinosalute.net/Argomenti/INNOVAZIONE-E-RICERCA/Ecosistema-sanita-digitale-TreC"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.asuit.tn.it/servizi/cambio-o-prima-scelta-del-medico-o-del-pediatra"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.asuit.tn.it/faq/come-posso-richiedere-la-copia-della-mia-cartella-clinica-o-dei-referti"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.asuit.tn.it/servizi/rilascio-documentazione-sanitaria"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://www.asuit.tn.it/servizi/rilascio-documentazione-sanitaria-amministrativa-e-radiologica"
+    }
    ]
   }
  ]
