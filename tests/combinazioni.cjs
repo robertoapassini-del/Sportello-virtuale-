@@ -126,6 +126,14 @@ for (const m of M34) {
     cases.push({ ...base, name: `${tag} ${p} · data nel futuro`, path: 'date', req: add(TODAY, 1), expectReqError: true });
   }
 }
+// Cartella clinica, ricorso al TAR (audit dei mutanti del 22/10/2026, giro 6, N03): prima dei 30 giorni dalla richiesta
+// il sito dice «Se dopo 30 giorni…»; dal trentesimo giorno dice che si può già fare ricorso. Un giorno prima, il giorno
+// stesso e uno dopo, con il dato letto da data/rules-cartella.json.
+const RCART = JSON.parse(fs.readFileSync(path.join(DATA, 'rules-cartella.json'), 'utf8'));
+for (const n of [RCART.integration_days - 1, RCART.integration_days, RCART.integration_days + 1]) {
+  const a = asp.asl[n % asp.asl.length];
+  cases.push({ mod: 3, m: M34[0], p: a.province, a, name: `CART ${a.province} · TAR · richiesta di ${n} giorni fa`, path: 'date', req: add(TODAY, -n), expectH1: M34[0].late, late: n - M34[0].days, tar: n < RCART.integration_days ? 'prima' : 'dopo' });
+}
 
 // Modulo 5: esenzione ticket (calcolo indipendente dal sito).
 const ESE = JSON.parse(fs.readFileSync(path.join(DATA, 'rules-esenzione.json'), 'utf8')).codes;
@@ -170,6 +178,16 @@ for (const [off, h1, name] of [[31, 'Sei ancora in tempo', 'mancano 31 giorni'],
 // Con meno di 15 giorni non si scoraggia («qualche settimana»): si dice di andare oggi stesso.
 for (const [v, name] of [[addM(TODAY, -6), 'verbale di 6 mesi fa (scade adesso)'], [add(addM(TODAY, -6), 9), 'verbale di 6 mesi fa più 9 giorni']]) {
   if (scadRic(v) >= TODAY) cases.push({ mod: 6, name: `RIC · ${name}`, verbale: v, expectH1: 'Muoviti subito: manca poco', deadline: scadRic(v), vietato: 'qualche settimana', richiesto: 'Vai oggi stesso' });
+}
+// Ricorso, giorno per giorno da 150 a 186 giorni dal verbale (giro 6, N04, N09): i giorni che mancano, il titolo, il colore
+// dell'avviso e «Vai oggi stesso» devono andare d'accordo. Urgente fino a 30 giorni, «Vai oggi stesso» sotto i 15.
+for (let n = 150; n <= 186; n++) {
+  const v = add(TODAY, -n);
+  const dl = scadRic(v);
+  if (dl < TODAY) continue;
+  const left = Math.round((Date.parse(dl) - Date.parse(TODAY)) / 864e5);
+  cases.push({ mod: 6, name: `RIC · verbale di ${n} giorni fa (mancano ${left} giorni)`, verbale: v, deadline: dl, left,
+    expectH1: left <= 30 ? 'Muoviti subito: manca poco' : 'Sei ancora in tempo', today: left === 0 });
 }
 cases.push({ mod: 6, name: 'RIC · scaduto da un anno', verbale: addM(TODAY, -18), expectH1: 'I 6 mesi sono passati', deadline: scadRic(addM(TODAY, -18)) });
 cases.push({ mod: 6, name: 'RIC · data nel futuro', verbale: add(TODAY, 1), expectReqError: true });
@@ -336,6 +354,23 @@ async function runCase(page, c) {
           if (c.appt && !t.includes(fmt(c.appt))) problems.push('lettera senza data appuntamento');
           if (c.req && !t.includes(fmt(c.req))) problems.push('lettera senza data della richiesta al CUP');
           if (/undefined|NaN|null/.test(t)) problems.push('lettera con testo sospetto');
+          // Giro 6 (N02, N11, N19), una volta per provincia (classe B): il nome si legge com'è scritto (esc), la data
+          // della firma è oggi in gg/mm/aaaa, e stampando la lettera il foglio non è bianco.
+          if (c.cls.key === 'B') {
+            await page.fill('#f-fullName', 'Maria <b>Rossi</b> & figli');
+            const te = await page.locator('#preview').innerText();
+            if (!te.includes('Maria <b>Rossi</b> & figli')) problems.push('il nome con < > & non si legge com\'è scritto nella lettera (manca esc?)');
+            const firma = te.match(/, (\S+)\s+Firma/);
+            if (!firma || firma[1] !== fmt(TODAY)) problems.push(`data della firma «${firma && firma[1]}», attesa ${fmt(TODAY)}`);
+            await page.fill('#f-fullName', 'Maria Rossi');
+            await page.evaluate(() => { window.print = () => {}; });
+            await page.click('#pdf-btn');
+            await page.emulateMedia({ media: 'print' });
+            const st = await page.evaluate(() => { const e = document.getElementById('print-area'); return { vis: !!e && e.getClientRects().length > 0, n: e ? e.innerText.trim().length : 0 }; });
+            await page.emulateMedia({ media: 'screen' });
+            if (!st.vis || st.n < 200) problems.push('stampando la lettera il foglio è bianco (#print-area non si vede)');
+            await page.waitForTimeout(1100);
+          }
         }
         await checkScreen('lettera');
         await btn(/Fatto! E adesso/);
@@ -344,6 +379,13 @@ async function runCase(page, c) {
       if (after !== 'E adesso?') problems.push(`schermata finale: «${after}»`);
       const t = await page.locator('#reminder').innerText();
       if (!t.includes('SOLLECITO')) problems.push('sollecito mancante');
+      // Il sollecito va allo stesso indirizzo della prima lettera (giro 6, N01: andava alla PEC generale).
+      const to = a.send_to || a.pec;
+      if (to) {
+        const rmail = await page.locator('#rmail-btn').getAttribute('href');
+        if (!rmail.startsWith(`mailto:${to}?`)) problems.push(`sollecito all'indirizzo sbagliato: ${rmail.slice(0, 60)} (la prima lettera va a ${to})`);
+        if (!t.includes(to)) problems.push(`il testo del sollecito non ha l'indirizzo ${to}`);
+      }
       // Il «Se nessuno ti risponde entro…»: con la U non si aspettano i 10 giorni del sollecito,
       // con la B non oltre i 10 giorni della classe. La prima richiesta, se non la cambi, è di oggi.
       const title = await page.locator('#remind-title').innerText();
@@ -409,6 +451,13 @@ async function runCase(page, c) {
     if (c.today && !text.includes('Scade oggi')) problems.push('manca «Scade oggi»');
     if (c.vietato && text.includes(c.vietato)) problems.push(`con pochi giorni c'è ancora «${c.vietato}»`);
     if (c.richiesto && !text.includes(c.richiesto)) problems.push(`manca «${c.richiesto}»`);
+    if (c.left !== undefined) {
+      const urgente = c.left <= 30;
+      if (c.left > 0 && !text.includes(`Mancano ${c.left} ${c.left === 1 ? 'giorno' : 'giorni'}`)) problems.push(`attesi «Mancano ${c.left} giorni»`);
+      const cls = await page.locator('#app .notice').first().getAttribute('class');
+      if (!cls.split(/\s+/).includes(urgente ? 'bad' : 'ok')) problems.push(`mancano ${c.left} giorni: avviso «${cls}», atteso ${urgente ? 'bad (rosso)' : 'ok (verde)'}`);
+      if ((c.left < 15) !== text.includes('Vai oggi stesso')) problems.push(`mancano ${c.left} giorni e «Vai oggi stesso» ${c.left < 15 ? 'manca' : 'c\'è già'}`);
+    }
     return problems;
   }
 
@@ -464,6 +513,11 @@ async function runCase(page, c) {
       await page.check('input[name=isDelegate]'); await page.fill('#f-delegateName', 'Luca Rossi');
       const t = await page.locator('#preview').innerText();
       for (const w of ['Maria Rossi', 'Luca Rossi', `Azienda Sanitaria Provinciale di ${c.p}`]) if (!t.includes(w)) problems.push(`lettera senza «${w}»`);
+      // A chi va (giro 6, N07): cure palliative alla rete locale di cure palliative, assistenza a casa al PUA.
+      const ufficio = c.mod === 11 ? 'Rete locale di cure palliative' : 'Punto Unico di Accesso';
+      const testa = t.split('\n').slice(0, 5).join(' ');
+      if (!testa.includes(ufficio)) problems.push(`lettera non indirizzata a «${ufficio}»`);
+      if (c.mod === 11 && testa.includes('Punto Unico di Accesso')) problems.push('lettera delle cure palliative indirizzata al PUA');
       if (c.req && !t.includes(fmt(c.req))) problems.push('lettera senza data della richiesta');
       if (/undefined|NaN|null/.test(t)) problems.push('lettera con testo sospetto');
       const mail = await page.locator('#mail-btn').getAttribute('href');
@@ -546,6 +600,10 @@ async function runCase(page, c) {
     const text = await checkScreen('risultato');
     if (c.deadline && !text.includes(fmt(c.deadline))) problems.push(`scadenza attesa ${fmt(c.deadline)} non mostrata`);
     if (c.late && !text.includes(`${c.late} ${c.late === 1 ? 'giorno' : 'giorni'} in più`)) problems.push(`giorni di ritardo attesi ${c.late}`);
+    if (c.tar) {
+      const prima = new RegExp(`Se dopo ${RCART.integration_days} giorni dalla richiesta`).test(text);
+      if (prima !== (c.tar === 'prima')) problems.push(`TAR: il testo dice ${prima ? '«Se dopo … giorni»' : 'che si può già fare ricorso'}, atteso ${c.tar === 'prima' ? '«Se dopo … giorni»' : 'che si può già fare ricorso'}`);
+    }
     if (c.full) {
       await btn(/Scriviamo il sollecito insieme/);
       await page.fill('#f-fullName', 'Maria Rossi');
