@@ -1,6 +1,6 @@
 {
  "regione": "basilicata",
- "aggiornato": "2026-10-22T06:31:33.225Z",
+ "aggiornato": "2026-10-22T07:32:01.015Z",
  "pagine": [
   {
    "asl": "matera",
@@ -70,6 +70,29 @@
    "cambiata": false
   },
   {
+   "asl": "matera",
+   "url": "https://www.asmbasilicata.it/servizio/cambiare-scegliere-il-medico-di-base-o-pediatra/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "matera/6ee2c8265d39.txt",
+   "titolo": "Cambiare/scegliere il medico di base o pediatra – ASM Matera",
+   "sha": "bd0b8b2abe003b3f4e0a26b5904803643bbd472f7784f00abf94c18929766d27",
+   "caratteri": 5182,
+   "cambiata": true
+  },
+  {
+   "asl": "matera",
+   "url": "https://old.asmbasilicata.it/servizi/Menu/dinamica.aspx?idSezione=17695&idArea=17697&idCat=17730&ID=18170&TipoElemento=pagina",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "matera/36e845d8630f.txt",
+   "titolo": "Liste di attesa - Azienda Sanitaria locale di Matera",
+   "sha": "0b2a1a437d0232aebae2f8961381c13e62ae6657babf8767b0f2d75863f3878e",
+   "caratteri": 9018,
+   "cambiata": true
+  },
+  {
    "asl": "potenza",
    "url": "https://www.aspbasilicata.it/",
    "controllata": "2026-10-22",
@@ -120,9 +143,9 @@
    "http": 200,
    "file": "potenza/5dbc77a23557.txt",
    "titolo": "Centro Unico di Prenotazione | Centro Servizi Regione Basilicata - Regione Basilicata",
-   "sha": "3395e52d548a88a653c2ed720fa9e69b205c495b97cbbe59936f59e942be99b6",
-   "caratteri": 9054,
-   "cambiata": false
+   "sha": "a247858ba3520f0834792ed7e7208eb92a57fd13a72c414c434304a3d04e4e06",
+   "caratteri": 9064,
+   "cambiata": true
   },
   {
    "asl": "potenza",
@@ -134,6 +157,50 @@
    "sha": "6315812a5131c3151907b14bdc0ba37c92e0ff54f1244b39e76dd14a3a851232",
    "caratteri": 8651,
    "cambiata": false
+  },
+  {
+   "asl": "potenza",
+   "url": "https://www.aspbasilicata.it/servizi-per-i-cittadini/liste-di-attesa/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "potenza/0a039cbc1d47.txt",
+   "titolo": "Liste di attesa - ASP Basilicata",
+   "sha": "95d3b4e849ae65d25f1e3e8ddbd404e5c0cafe09c7a27f629c6da8de9a54d3ce",
+   "caratteri": 7323,
+   "cambiata": true
+  },
+  {
+   "asl": "potenza",
+   "url": "https://www.aspbasilicata.it/come-fare-per/scelta-e-revoca-del-medico-di-famiglia-e-del-pediatra/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "potenza/7a2c22c8c106.txt",
+   "titolo": "Scelta e revoca del Medico di Famiglia e del Pediatra - ASP Basilicata",
+   "sha": "889cae0d44e7d5a2e99a281109334b7875d010786673fe4b3ef9458ad2dd55e4",
+   "caratteri": 10089,
+   "cambiata": true
+  },
+  {
+   "asl": "potenza",
+   "url": "https://www.aspbasilicata.it/organizzazione/azienda/dipartimenti/dipartimento-post-acuzie-continuita-ospedale-territorio/oncologia-critica-territoriale-cure-domiciliari-e-palliative-adi/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "potenza/bc8319be1dd6.txt",
+   "titolo": "UOC Oncologia Critica Territoriale, Cure Domiciliari e Palliative (ADI) - ASP Basilicata",
+   "sha": "4da8a2f624844cd3e0990b46dc9f2a2606f348750544a23afa062e880c440506",
+   "caratteri": 12038,
+   "cambiata": true
+  },
+  {
+   "asl": "potenza",
+   "url": "https://www.regione.basilicata.it/sanita-digitale-nuovi-servizi-online/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "potenza/772f6c77a4a7.txt",
+   "titolo": "Sanità digitale, nuovi servizi online - Regione Basilicata",
+   "sha": "2789284e9a50c521f54a211fe2aa20f341d2a23ff36535a310a2c5f81e6f0d9b",
+   "caratteri": 11607,
+   "cambiata": true
   },
   {
    "asl": "inps-basilicata",

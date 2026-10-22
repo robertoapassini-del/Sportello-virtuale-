@@ -1,6 +1,6 @@
 {
  "regione": "veneto",
- "aggiornato": "2026-10-22T07:15:02.126Z",
+ "aggiornato": "2026-10-22T08:46:11.080Z",
  "pagine": [
   {
    "asl": "regione-veneto",
@@ -339,6 +339,12 @@
   },
   {
    "asl": "ulss2-marca-trevigiana",
+   "url": "https://www.aulss2.veneto.it/liste-attesa",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
+   "asl": "ulss2-marca-trevigiana",
    "url": "https://www.aulss2.veneto.it/urp-online",
    "controllata": "2026-10-22",
    "http": 200,
@@ -401,8 +407,8 @@
    "finale": "https://www.aulss3.veneto.it/home",
    "file": "ulss3-serenissima/16b1625c6d9f.txt",
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
-   "sha": "2e8343d03190b3dd0f6e78ceb4a57362ce4c0842049b6fb3305ef8f37ff6079e",
-   "caratteri": 5882,
+   "sha": "56cc4bd859b15aa1a6963d1d39f02910359536396a5aca9ae75211b7d3715f57",
+   "caratteri": 5859,
    "cambiata": true
   },
   {
@@ -426,9 +432,9 @@
    "finale": "https://www.aulss3.veneto.it/home/numeri-utili",
    "file": "ulss3-serenissima/73cedbd93cdb.txt",
    "titolo": "ULSS 3 SERENISSIMA - Numeri utili",
-   "sha": "c1e9e5faf87a5b8ae14686500bebd3513da0cdbf0a9cb218f8934d7a84de5dc4",
-   "caratteri": 10404,
-   "cambiata": false
+   "sha": "2d9d6cb4fafc1045c6ebf5c4b5200b741e3fafa308e03365fa8a3f6fdd0495ca",
+   "caratteri": 10381,
+   "cambiata": true
   },
   {
    "asl": "ulss3-serenissima",
@@ -463,8 +469,8 @@
    "finale": "https://www.aulss3.veneto.it/home",
    "file": "ulss3-serenissima/d213a293dfcf.txt",
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
-   "sha": "2e8343d03190b3dd0f6e78ceb4a57362ce4c0842049b6fb3305ef8f37ff6079e",
-   "caratteri": 5882,
+   "sha": "56cc4bd859b15aa1a6963d1d39f02910359536396a5aca9ae75211b7d3715f57",
+   "caratteri": 5859,
    "cambiata": true
   },
   {
@@ -476,8 +482,19 @@
    "finale": "https://www.aulss3.veneto.it/home",
    "file": "ulss3-serenissima/3eaad184c615.txt",
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
-   "sha": "2e8343d03190b3dd0f6e78ceb4a57362ce4c0842049b6fb3305ef8f37ff6079e",
-   "caratteri": 5882,
+   "sha": "56cc4bd859b15aa1a6963d1d39f02910359536396a5aca9ae75211b7d3715f57",
+   "caratteri": 5859,
+   "cambiata": true
+  },
+  {
+   "asl": "ulss3-serenissima",
+   "url": "https://trasparenza.aulss3.veneto.it/trasparenza-liste-attesa",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ulss3-serenissima/5a673aa97327.txt",
+   "titolo": "Liste di attesa",
+   "sha": "25e27068be697b320b12812d465fa46f2824e7afb37e51ae3c3fd8924e2ceaad",
+   "caratteri": 12237,
    "cambiata": true
   },
   {
@@ -488,9 +505,9 @@
    "http": 200,
    "file": "ulss3-serenissima/4e732f80417a.txt",
    "titolo": "ULSS 3 SERENISSIMA - Numeri utili",
-   "sha": "c1e9e5faf87a5b8ae14686500bebd3513da0cdbf0a9cb218f8934d7a84de5dc4",
-   "caratteri": 10404,
-   "cambiata": false
+   "sha": "2d9d6cb4fafc1045c6ebf5c4b5200b741e3fafa308e03365fa8a3f6fdd0495ca",
+   "caratteri": 10381,
+   "cambiata": true
   },
   {
    "asl": "ulss3-serenissima",
@@ -536,9 +553,9 @@
    "http": 200,
    "file": "ulss3-serenissima/39d68180d5c5.txt",
    "titolo": "Centrale operativa 116117",
-   "sha": "9f182237137adc2fcef7c7ecce962b9e0b99ee2b431cd29ce51360168a114dcd",
-   "caratteri": 10415,
-   "cambiata": false
+   "sha": "6bdde9632b469730c546e29356791e738ef23ee2e91f3ffe0b441a8d012cc5aa",
+   "caratteri": 10392,
+   "cambiata": true
   },
   {
    "asl": "ulss3-serenissima",
@@ -587,7 +604,7 @@
    "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
    "sha": "900f0771f26a176c4994fc55995772f4d21d05b97fbb41341168bb90fe4f83d5",
    "caratteri": 5121,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ulss4-veneto-orientale",
@@ -1085,6 +1102,17 @@
   },
   {
    "asl": "ulss7-pedemontana",
+   "url": "https://www.aulss7.veneto.it/Liste-di-attesa",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ulss7-pedemontana/4d8025d177b6.txt",
+   "titolo": "Liste di attesa",
+   "sha": "08d5a63d454afce8bddabcd8f9fdf08832934748adbeb0bae670ed3d122fcfd7",
+   "caratteri": 13612,
+   "cambiata": true
+  },
+  {
+   "asl": "ulss7-pedemontana",
    "url": "https://www.aulss7.veneto.it/urp-online",
    "controllata": "2026-10-22",
    "http": 200,
@@ -1202,6 +1230,12 @@
   {
    "asl": "ulss8-berica",
    "url": "https://www.aulss8.veneto.it/servizi/cittadino/curarsi-e-ottenere-assistenza-sanitaria/assistenza-sanitaria-a-casa/",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
+   "asl": "ulss8-berica",
+   "url": "https://www.aulss8.veneto.it/servizi-online/prenota-e-paga-online/percorsi-di-tutela/",
    "controllata": "2026-10-22",
    "http": 404
   },
@@ -1369,6 +1403,17 @@
    "sha": "502955d9e9d4a8d2ec38f79e05eb662099db0d8a8ee21e9497a4fcf3be7028e6",
    "caratteri": 9622,
    "cambiata": false
+  },
+  {
+   "asl": "ulss9-scaligera",
+   "url": "https://www.aulss9.veneto.it/liste-di-attesa",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ulss9-scaligera/f8666cc5842e.txt",
+   "titolo": "Liste di attesa",
+   "sha": "165d977a2903ef98197f535937cea133bb685317e40f2dff6df53ca72e535052",
+   "caratteri": 26704,
+   "cambiata": true
   },
   {
    "asl": "ulss9-scaligera",

@@ -1,6 +1,6 @@
 {
  "regione": "liguria",
- "aggiornato": "2026-10-22T06:40:21.827Z",
+ "aggiornato": "2026-10-22T07:48:43.983Z",
  "pagine": [
   {
    "asl": "genova",
@@ -42,9 +42,9 @@
    "http": 200,
    "file": "genova/6d2ea13a4aa5.txt",
    "titolo": "giunta - Sanità, al via in Liguria il nuovo numero 116117 per i casi meno urgenti. Attivo nel Tigullio da questa sera, martedì 16 dicembre - Regione Liguria",
-   "sha": "4e8011f12f05cb2dc882444ef1253d44505b8f4b8ace345449a1335c2e4dccd6",
-   "caratteri": 4675,
-   "cambiata": false
+   "sha": "c185c7cf6b9fd0dfb9df933af797e8d5f65f3b7a621976a54c6b6a79a6baeb58",
+   "caratteri": 4669,
+   "cambiata": true
   },
   {
    "asl": "genova",
@@ -53,9 +53,9 @@
    "http": 200,
    "file": "genova/97c265ccde78.txt",
    "titolo": "salute - prenotazione visite ed esami col cup - Regione Liguria",
-   "sha": "b2792471431efe5e3a12e37bec7fe29d1a6086a91fec1e66166d954ce16d52bb",
-   "caratteri": 4869,
-   "cambiata": false
+   "sha": "111f37041d70b790ee774e24ce710bda482954409dc28faa90811260df94c0dd",
+   "caratteri": 4863,
+   "cambiata": true
   },
   {
    "asl": "genova",
@@ -113,6 +113,124 @@
    "cambiata": false
   },
   {
+   "asl": "genova",
+   "url": "https://www.asl3.liguria.it/numero-verde-gratuito-per-riduzione-tempi-d-attesa.html",
+   "controllata": "2026-10-22",
+   "http": 500
+  },
+  {
+   "asl": "genova",
+   "url": "https://www.asl3.liguria.it/amministrazione-trasparente/servizi-erogati/liste-di-attesa.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "genova/7b95bf7db8e5.txt",
+   "titolo": "Liste di attesa - Numero Verde - ASL3",
+   "sha": "2eb9f52a250d529494946fb76c6526f0b4fe24786dcc838f8336053ac6e0a74b",
+   "caratteri": 11743,
+   "cambiata": true
+  },
+  {
+   "asl": "genova",
+   "url": "https://www.asl3.liguria.it/ospedali/presidio-ospedaliero-unico/richiesta-cartella-clinica.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "genova/1e2bb5ce1199.txt",
+   "titolo": "Cartella clinica - come e dove richiedere la copia - ASL3",
+   "sha": "cf236b4e16bd3da598aa4deed294fd2b96ed337330d32332d1bf2ce6c6658784",
+   "caratteri": 11491,
+   "cambiata": true
+  },
+  {
+   "asl": "genova",
+   "url": "https://www.asl4.liguria.it/cartelle-cliniche-e-referti/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "genova/a7fcfac55246.txt",
+   "titolo": "Cartelle Cliniche e Referti - Asl4",
+   "sha": "74c7e474ff464102f7134f816700d629a7f13f8e13291967d2fc57415e326bf8",
+   "caratteri": 3177,
+   "cambiata": true
+  },
+  {
+   "asl": "genova",
+   "url": "https://asl3.liguria.it/ambulatori/servizi/disabili/item/542-ufficio-autorizzazioni-protesi.html",
+   "controllata": "2026-10-22",
+   "http": 0,
+   "errore": "curl: (6) Could not resolve host: asl3.liguria.it"
+  },
+  {
+   "asl": "genova",
+   "url": "https://www.asl3.liguria.it/territorio/distretti/distretto-9-medio-ponente/item/751-struttura-semplice-dipartimentale-cure-palliative.html",
+   "controllata": "2026-10-22",
+   "http": 500
+  },
+  {
+   "asl": "genova",
+   "url": "https://www.asl4.liguria.it/cure-palliative-hospice/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "genova/3f213d48a9d9.txt",
+   "titolo": "S.S.A. HOSPICE E CURE PALLIATIVE - Asl4",
+   "sha": "6d528a97880f80b35cc5ae9484bbef725836ac2380b22cbf44a59abe5f03bd39",
+   "caratteri": 6838,
+   "cambiata": true
+  },
+  {
+   "asl": "genova",
+   "url": "https://www.asl3.liguria.it/territorio/servizi/cure-primarie/799-anagrafe-sanitaria-sedi.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "genova/c9d3983c39eb.txt",
+   "titolo": "Anagrafe sanitaria - sedi - ASL3",
+   "sha": "07d38da9c42f622bc326cf7789311fa12684063a283e73f8692c7ef73d4523b3",
+   "caratteri": 13019,
+   "cambiata": true
+  },
+  {
+   "asl": "genova",
+   "url": "https://www.asl4.liguria.it/territorio/distretti/distretto-15/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "genova/b8bbe81fdc7f.txt",
+   "titolo": "SC DISTRETTO 15 - Asl4",
+   "sha": "74ebfbf7c0c126c5ad441dfe90842497227ed41525b5b88e91af8ee9ff566d05",
+   "caratteri": 8027,
+   "cambiata": true
+  },
+  {
+   "asl": "genova",
+   "url": "https://www.atsliguria.it/amministrazione-trasparente-ats/amministrazione-trasparente/servizi-erogati/liste-attesa.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "genova/eea1f8985ae3.txt",
+   "titolo": "Liste di attesa in Liguria per visite e prestazioni diagnostiche - ATS Liguria",
+   "sha": "ffeaecc3df3a0981626b48540133c2e03c64c07b00d8e7506b6a6c7574d925d8",
+   "caratteri": 7750,
+   "cambiata": true
+  },
+  {
+   "asl": "genova",
+   "url": "https://www.regione.liguria.it/homepage-salute/accesso-rapido/salutesimplex-app-portale.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "genova/8cfbeba760c6.txt",
+   "titolo": "salute - Salutesimplex - Regione Liguria",
+   "sha": "59cae06f995f193b70a1d14f08ce13e620fde68d2535d065ae7d72e1d3e88ff4",
+   "caratteri": 5131,
+   "cambiata": true
+  },
+  {
+   "asl": "genova",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "genova/aad63b63390a.txt",
+   "titolo": "Portale Inps - Riforma della disabilità: al via la terza fase sperimentale",
+   "sha": "3e22d1cf04da5a9b152d4fd5f6033e4b4b86d0937bfc137d142d7c9ec25bd108",
+   "caratteri": 46281,
+   "cambiata": true
+  },
+  {
    "asl": "imperia",
    "url": "https://www.asl1.liguria.it/",
    "controllata": "2026-10-22",
@@ -121,6 +239,17 @@
    "titolo": "Home - ASL1",
    "sha": "1ec14bbba28f0df8850fd2680d21fe0deff3e28c000d1517d786758da2cbe484",
    "caratteri": 6611,
+   "cambiata": false
+  },
+  {
+   "asl": "imperia",
+   "url": "https://www.asl1.liguria.it/prenotazioni-e-ticket/numero-verde-gratuito-riduzione-tempi-attesa.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "imperia/0c466e18dc55.txt",
+   "titolo": "Numero verde gratuito per riduzione tempi d'attesa - ASL1",
+   "sha": "5401df9bda519b5be3d0fb2ab325d4548bafd0c7681d2d3effa5a281c6170341",
+   "caratteri": 6225,
    "cambiata": false
   },
   {
@@ -158,17 +287,6 @@
   },
   {
    "asl": "imperia",
-   "url": "https://www.asl1.liguria.it/prenotazioni-e-ticket/numero-verde-gratuito-riduzione-tempi-attesa.html",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "imperia/0c466e18dc55.txt",
-   "titolo": "Numero verde gratuito per riduzione tempi d'attesa - ASL1",
-   "sha": "5401df9bda519b5be3d0fb2ab325d4548bafd0c7681d2d3effa5a281c6170341",
-   "caratteri": 6225,
-   "cambiata": false
-  },
-  {
-   "asl": "imperia",
    "url": "https://www.asl1.liguria.it/urp.html",
    "controllata": "2026-10-22",
    "http": 200,
@@ -196,9 +314,64 @@
    "http": 200,
    "file": "imperia/51c7b22af737.txt",
    "titolo": "salute - Numeri utili delle Case della Comunità - Regione Liguria",
-   "sha": "274e8c723b8daa0e03fb2765f4f489fbc61d037dffd1fb9cc2483a8e1d4a99be",
-   "caratteri": 4359,
-   "cambiata": false
+   "sha": "db9686c5d88d51ca6cc5795589d551dd9ad58e1b5f39f420d9ed0ae8bdc6852e",
+   "caratteri": 4353,
+   "cambiata": true
+  },
+  {
+   "asl": "imperia",
+   "url": "https://www.asl1.liguria.it/servizi-dalla-a-alla-z/409-copia-cartella-clinica-certificato-di-ricovero-degenza.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "imperia/7413fd002e6f.txt",
+   "titolo": "Uffici cartelle cliniche stabilimenti ospedalieri Area 1 - ASL1",
+   "sha": "037c40f8340348822ed57abb9b4cf3e107c581eb68e3d9c247a75db4ff8913a3",
+   "caratteri": 7174,
+   "cambiata": true
+  },
+  {
+   "asl": "imperia",
+   "url": "https://www.asl1.liguria.it/dipartimenti/34-dipartimenti-area-socio-sanitaria/36-dipartimento-cure-primarie/545-medicina-convenzionata-e-protesica.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "imperia/47816b65c47b.txt",
+   "titolo": "Protesica e Medicina convenzionata - ASL1",
+   "sha": "4086195d892fcae5e49022161c71c6f394c68ff18091dd624423e644a81bf332",
+   "caratteri": 9081,
+   "cambiata": true
+  },
+  {
+   "asl": "imperia",
+   "url": "https://www.asl1.liguria.it/servizi-dalla-a-alla-z/1498-punto-unico-accesso.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "imperia/a83914306677.txt",
+   "titolo": "PUA - Punto Unico di Accesso - ASL1",
+   "sha": "5ce099295bb08615a22442450d12d4e50e873b65dd77bd02aca0f9c7d88b8fac",
+   "caratteri": 7908,
+   "cambiata": true
+  },
+  {
+   "asl": "imperia",
+   "url": "https://www.atsliguria.it/amministrazione-trasparente-ats/amministrazione-trasparente/servizi-erogati/liste-attesa.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "imperia/eea1f8985ae3.txt",
+   "titolo": "Liste di attesa in Liguria per visite e prestazioni diagnostiche - ATS Liguria",
+   "sha": "ffeaecc3df3a0981626b48540133c2e03c64c07b00d8e7506b6a6c7574d925d8",
+   "caratteri": 7750,
+   "cambiata": true
+  },
+  {
+   "asl": "imperia",
+   "url": "https://www.regione.liguria.it/homepage-salute/accesso-rapido/salutesimplex-app-portale.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "imperia/8cfbeba760c6.txt",
+   "titolo": "salute - Salutesimplex - Regione Liguria",
+   "sha": "59cae06f995f193b70a1d14f08ce13e620fde68d2535d065ae7d72e1d3e88ff4",
+   "caratteri": 5131,
+   "cambiata": true
   },
   {
    "asl": "la-spezia",
@@ -267,6 +440,94 @@
    "cambiata": false
   },
   {
+   "asl": "la-spezia",
+   "url": "https://www.asl5.liguria.it/Home/RECUPEROPRESTAZIONI.aspx",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "la-spezia/d99605e44fee.txt",
+   "titolo": "RECUPERO PRESTAZIONI",
+   "sha": "9cc80de6279527f4b109523f8b10961354c251c8c57810c9d054c498f8baeaf6",
+   "caratteri": 8728,
+   "cambiata": true
+  },
+  {
+   "asl": "la-spezia",
+   "url": "https://www.asl5.liguria.it/PerilCittadino/Tempidattesa.aspx",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "la-spezia/fe9b15433a57.txt",
+   "titolo": "Tempi d'attesa",
+   "sha": "5ca02d6ca68e0fdbbf818f3858f3a03a8ae123d3177323a2407ab259a1b6cafd",
+   "caratteri": 12662,
+   "cambiata": true
+  },
+  {
+   "asl": "la-spezia",
+   "url": "https://www.asl5.liguria.it/PerilCittadino/RitirorefertiCartellecliniche.aspx",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "la-spezia/ad51c3643061.txt",
+   "titolo": "Ritiro referti/Cartelle cliniche",
+   "sha": "27d1fae7a0bc04fc444cf7cd4ed8ad1b9bfc4b23d8b9d82bab364df764420506",
+   "caratteri": 11977,
+   "cambiata": true
+  },
+  {
+   "asl": "la-spezia",
+   "url": "https://www.asl5.liguria.it/PerilCittadino/Serviziterritoriali/CurePrimarieeAttivit%C3%A0Distrettuali/Fornituraausilieprotesi.aspx",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "la-spezia/e2d35071b9b4.txt",
+   "titolo": "ASL5 Spezzino > Per il Cittadino > Servizi territoriali > Cure Primarie e Attività Distrettuali > Fornitura ausili e protesi",
+   "sha": "d6d84284d2c2106e525e9f0afe2eea2d5c5a296589026f8056470b29ea1056e5",
+   "caratteri": 12109,
+   "cambiata": true
+  },
+  {
+   "asl": "la-spezia",
+   "url": "https://www.asl5.liguria.it/PerilCittadino/Serviziterritoriali/CurePrimarieeAttivit%C3%A0Distrettuali/CurePalliative.aspx",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "la-spezia/11459ee449d3.txt",
+   "titolo": "Cure Palliative",
+   "sha": "daf55c741a66524657a16d9f3a526d632d9c641276023b3b90735a339922154f",
+   "caratteri": 8043,
+   "cambiata": true
+  },
+  {
+   "asl": "la-spezia",
+   "url": "https://www.asl5.liguria.it/Home/ORARICUPANAGRAFEBRUGNATO.aspx",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "la-spezia/5967111bf656.txt",
+   "titolo": "ORARI CUP/ANAGRAFE BRUGNATO",
+   "sha": "cf1c7a4c8e398fa5c09f3eef53ba1aa3150e8e2442ea322c8e5b6cb912e19597",
+   "caratteri": 7185,
+   "cambiata": true
+  },
+  {
+   "asl": "la-spezia",
+   "url": "https://www.atsliguria.it/amministrazione-trasparente-ats/amministrazione-trasparente/servizi-erogati/liste-attesa.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "la-spezia/eea1f8985ae3.txt",
+   "titolo": "Liste di attesa in Liguria per visite e prestazioni diagnostiche - ATS Liguria",
+   "sha": "ffeaecc3df3a0981626b48540133c2e03c64c07b00d8e7506b6a6c7574d925d8",
+   "caratteri": 7750,
+   "cambiata": true
+  },
+  {
+   "asl": "la-spezia",
+   "url": "https://www.regione.liguria.it/homepage-salute/accesso-rapido/salutesimplex-app-portale.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "la-spezia/8cfbeba760c6.txt",
+   "titolo": "salute - Salutesimplex - Regione Liguria",
+   "sha": "59cae06f995f193b70a1d14f08ce13e620fde68d2535d065ae7d72e1d3e88ff4",
+   "caratteri": 5131,
+   "cambiata": true
+  },
+  {
    "asl": "savona",
    "url": "https://www.asl2.liguria.it/",
    "controllata": "2026-10-22",
@@ -328,9 +589,9 @@
    "http": 200,
    "file": "savona/51c7b22af737.txt",
    "titolo": "salute - Numeri utili delle Case della Comunità - Regione Liguria",
-   "sha": "274e8c723b8daa0e03fb2765f4f489fbc61d037dffd1fb9cc2483a8e1d4a99be",
-   "caratteri": 4359,
-   "cambiata": false
+   "sha": "db9686c5d88d51ca6cc5795589d551dd9ad58e1b5f39f420d9ed0ae8bdc6852e",
+   "caratteri": 4353,
+   "cambiata": true
   },
   {
    "asl": "savona",
@@ -342,6 +603,84 @@
    "sha": "4df5d6cd5f90fcb7d900406dc15a4941ea903c83d0716a0ae49c3b9c5701483c",
    "caratteri": 11345,
    "cambiata": false
+  },
+  {
+   "asl": "savona",
+   "url": "https://www.asl2.liguria.it/amministrazione-trasparente/servizi-erogati/liste-di-attesa.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "savona/9cccf5397b0e.txt",
+   "titolo": "Liste di attesa - ASL2",
+   "sha": "9555ab3f986f2e21259b2167161c5517e685e8a039582e375becda961d291f00",
+   "caratteri": 15827,
+   "cambiata": true
+  },
+  {
+   "asl": "savona",
+   "url": "https://asl2.liguria.it/dipartimenti/51-dipartimento-cure-primarie-e-attivit%C3%A0-distrettuali/1243-gestione-liste-attesa.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.asl2.liguria.it/dipartimenti/51-direzione-sociosanitaria/1243-gestione-liste-attesa.html",
+   "file": "savona/74ac37d0efd0.txt",
+   "titolo": "Gestione liste d'attesa - ASL2",
+   "sha": "722c50eb76b1aa8bc44dec57aa8c591c72646cfe235108862563a833974fb783",
+   "caratteri": 9647,
+   "cambiata": true
+  },
+  {
+   "asl": "savona",
+   "url": "https://www.asl2.liguria.it/servizi-dalla-a-alla-z/619-ufficio-protesi-ausili-letto-materassino-antidecubito-carrozzella.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "savona/e923d77913b1.txt",
+   "titolo": "Protesi e ausili (letto, materassino antidecubito, carrozzella, comoda, ecc.): ufficio gestione richieste - ASL2",
+   "sha": "82b0746f00512130cf4abddc28e1ffbcf22afe2a969fde7c347ba7ed01dac712",
+   "caratteri": 9834,
+   "cambiata": true
+  },
+  {
+   "asl": "savona",
+   "url": "https://www.asl2.liguria.it/dipartimenti/654-dipartimento-oncologico/491-rete-cure-palliative.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "savona/8e58d6d92046.txt",
+   "titolo": "Rete delle Cure palliative - ASL2",
+   "sha": "564b29616c48d8408a9c0042c13c45860f35feac362c465934e0226bb4b4f20c",
+   "caratteri": 12131,
+   "cambiata": true
+  },
+  {
+   "asl": "savona",
+   "url": "https://www.asl2.liguria.it/prenotazioni-e-ticket/sportelli-cup.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "savona/fb053669d1dd.txt",
+   "titolo": "Sportelli Polifunzionali - Sedi, orari e servizi attivi - ASL2",
+   "sha": "a67fa6225a91faf3fa9e2ca02d348411c852138c94f69521162013117fb00eb7",
+   "caratteri": 10377,
+   "cambiata": true
+  },
+  {
+   "asl": "savona",
+   "url": "https://www.atsliguria.it/amministrazione-trasparente-ats/amministrazione-trasparente/servizi-erogati/liste-attesa.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "savona/eea1f8985ae3.txt",
+   "titolo": "Liste di attesa in Liguria per visite e prestazioni diagnostiche - ATS Liguria",
+   "sha": "ffeaecc3df3a0981626b48540133c2e03c64c07b00d8e7506b6a6c7574d925d8",
+   "caratteri": 7750,
+   "cambiata": true
+  },
+  {
+   "asl": "savona",
+   "url": "https://www.regione.liguria.it/homepage-salute/accesso-rapido/salutesimplex-app-portale.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "savona/8cfbeba760c6.txt",
+   "titolo": "salute - Salutesimplex - Regione Liguria",
+   "sha": "59cae06f995f193b70a1d14f08ce13e620fde68d2535d065ae7d72e1d3e88ff4",
+   "caratteri": 5131,
+   "cambiata": true
   },
   {
    "asl": "inps-liguria",

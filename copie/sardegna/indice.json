@@ -1,6 +1,6 @@
 {
  "regione": "sardegna",
- "aggiornato": "2026-10-22T06:57:47.310Z",
+ "aggiornato": "2026-10-22T08:18:50.898Z",
  "pagine": [
   {
    "asl": "cagliari",
@@ -69,6 +69,50 @@
    "cambiata": false
   },
   {
+   "asl": "cagliari",
+   "url": "https://www.asl8cagliari.it/percorso-tutela-accesso-alternativo-alle-prestazioni-specialistiche/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "cagliari/2f0705c51e24.txt",
+   "titolo": "Percorso Tutela accesso alternativo alle prestazioni specialistiche - ASL Cagliari",
+   "sha": "1040f72ba4a52baae8179e28a3b073052531020ca9269923d18fec82fec86cf8",
+   "caratteri": 6253,
+   "cambiata": true
+  },
+  {
+   "asl": "cagliari",
+   "url": "https://www.asl8cagliari.it/come_fare_per/monitorare-le-liste-di-attesa/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "cagliari/06c00a935580.txt",
+   "titolo": "Accedere al Percorso di Tutela - ASL Cagliari",
+   "sha": "950b9c479a3d2a36c30e1a912930f5d2b5a693ebcc6a2e3f30492e9dc1356365",
+   "caratteri": 5664,
+   "cambiata": true
+  },
+  {
+   "asl": "cagliari",
+   "url": "https://www.asl8cagliari.it/servizio/scelta-e-revoca-del-medico-online/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "cagliari/5b713d605d4e.txt",
+   "titolo": "Scelta e revoca del medico online - ASL Cagliari",
+   "sha": "ae6c2c88066c50132528be750325b1552a8d173e4c55c5f20e085f1ffff18e14",
+   "caratteri": 8470,
+   "cambiata": true
+  },
+  {
+   "asl": "cagliari",
+   "url": "https://www.sardegnasalute.it/sceltamedico/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "cagliari/a8a8ccd76320.txt",
+   "titolo": "Sardegna Salute - Scelta e revoca del medico",
+   "sha": "2443e17836290666b01537c5cbbe55807b0dd7f6cb9b37fe8494781cccb331e2",
+   "caratteri": 3616,
+   "cambiata": true
+  },
+  {
    "asl": "gallura",
    "url": "https://www.aslgallura.it/",
    "controllata": "2026-10-22",
@@ -133,6 +177,17 @@
    "sha": "baa2d450b6b6cbd62605657849ed26f1a5cab8f877466b1f94ea80d228d40d98",
    "caratteri": 3611,
    "cambiata": false
+  },
+  {
+   "asl": "gallura",
+   "url": "https://www.aslgallura.it/servizio/scelta-e-revoca-del-medico-2/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "gallura/620fbf3dd69b.txt",
+   "titolo": "Scelta e Revoca del Medico - ASL Gallura",
+   "sha": "1523e770cd422fb7dbf88f3363ba02d91a9216410728b7dd54d6401b8b0dc3aa",
+   "caratteri": 4571,
+   "cambiata": true
   },
   {
    "asl": "medio-campidano",
@@ -201,6 +256,17 @@
    "cambiata": false
   },
   {
+   "asl": "medio-campidano",
+   "url": "https://www.aslmediocampidano.it/percorso-di-tutela-accesso-alternativo-a-prestazioni-specialistiche/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "medio-campidano/80ad61abf0cc.txt",
+   "titolo": "Percorso di tutela, accesso alternativo a prestazioni specialistiche - ASL Medio Campidano",
+   "sha": "f489c934f231fb53fcf745b0f609d4fcd29f3254ff710015a833e0f32bdff221",
+   "caratteri": 8712,
+   "cambiata": true
+  },
+  {
    "asl": "nuoro",
    "url": "https://www.asl3nuoro.it/",
    "controllata": "2026-10-22",
@@ -210,6 +276,17 @@
    "sha": "7562f242ef3423fdef69fc23ec3cdd8ed190a6974a71d85ab41cb304c01f3b56",
    "caratteri": 4768,
    "cambiata": false
+  },
+  {
+   "asl": "nuoro",
+   "url": "https://www.asl3nuoro.it/servizio/percorso-di-tutela-di-accesso-alternativo-alle-prestazioni-specialistiche/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "nuoro/98e6ff5311fa.txt",
+   "titolo": "Percorso di tutela di accesso alternativo alle prestazioni specialistiche - ASL Nuoro",
+   "sha": "325be0d4c4fbbeaed17826045d8ff01705bb9443871a75d5072336e983747ac9",
+   "caratteri": 8615,
+   "cambiata": true
   },
   {
    "asl": "nuoro",
@@ -254,6 +331,28 @@
    "sha": "1ef78801b6e84c34d0761722c3df1d15354827177ed63f146b592a9d663e408a",
    "caratteri": 8200,
    "cambiata": false
+  },
+  {
+   "asl": "nuoro",
+   "url": "https://www.asl3nuoro.it/servizio/scelta-e-revoca-del-medico/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "nuoro/58c3bc38e23d.txt",
+   "titolo": "Scelta e Revoca del Medico - ASL Nuoro",
+   "sha": "a3689f41818a401d582956f4fda9da75f19d612277893c59782c1f88e5ffcfd0",
+   "caratteri": 6014,
+   "cambiata": true
+  },
+  {
+   "asl": "nuoro",
+   "url": "https://www.asl3nuoro.it/servizio/hospice-e-cure-palliative/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "nuoro/d18769f8d9c2.txt",
+   "titolo": "Hospice e Cure Palliative - ASL Nuoro",
+   "sha": "1999e7ba3db89cd2401312d133bbe567e65f376ba5b3af545e0cec3810309bf2",
+   "caratteri": 4937,
+   "cambiata": true
   },
   {
    "asl": "ogliastra",
@@ -377,6 +476,17 @@
    "cambiata": false
   },
   {
+   "asl": "oristano",
+   "url": "https://www.asl5oristano.it/servizio/scelta-e-revoca-medico-e-pediatria/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "oristano/5d6b1ca93f54.txt",
+   "titolo": "Scelta e Revoca del Medico e del Pediatria - ASL Oristano",
+   "sha": "f63632fd9fa0416344fd624789a5479673e1c4399e2b4ead29ffac271018c426",
+   "caratteri": 6936,
+   "cambiata": true
+  },
+  {
    "asl": "sassari",
    "url": "https://www.asl1sassari.it/",
    "controllata": "2026-10-22",
@@ -419,6 +529,28 @@
    "sha": "de8573a82830988283c9c3e2ab0bc0f3956c8ffce02139cee3c549262fc1af1b",
    "caratteri": 5446,
    "cambiata": false
+  },
+  {
+   "asl": "sassari",
+   "url": "https://www.asl1sassari.it/il-percorso-di-tutela-la-strada-per-supportare-il-cittadino/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "sassari/a776b2c9c855.txt",
+   "titolo": "Il Percorso di Tutela: la strada per supportare il cittadino - ASL Sassari",
+   "sha": "744eee2e0f9872114aaa60fd70191738886edc9a9b62fe4f0b576c5fda1b631b",
+   "caratteri": 4692,
+   "cambiata": true
+  },
+  {
+   "asl": "sassari",
+   "url": "https://www.asl1sassari.it/asl-sassari-apre-lhospice-san-giovanni-battista/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "sassari/cdd409403003.txt",
+   "titolo": "Asl Sassari: apre l’Hospice San Giovanni Battista - ASL Sassari",
+   "sha": "e1c2a7cb8f2b74964508c5315016dfd7c0357315f432e2ae4ef71ba9c00e4439",
+   "caratteri": 11544,
+   "cambiata": true
   },
   {
    "asl": "sulcis",
@@ -485,6 +617,17 @@
    "sha": "b624ddad7d4ec7af846197ed57bd1565088d05525e2d4c77ea9c77c6aa75e5b3",
    "caratteri": 5677,
    "cambiata": false
+  },
+  {
+   "asl": "sulcis",
+   "url": "https://www.aslsulcis.it/servizio/scelta-revoca-esenzioni/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "sulcis/0a8d79fd5bc8.txt",
+   "titolo": "Scelta / Revoca - Esenzioni - ASL Sulcis Iglesiente",
+   "sha": "53de44f6dd8f7109ec9e551817e8cb7d6c82ffeefdfd22844019d074d0d14170",
+   "caratteri": 6591,
+   "cambiata": true
   },
   {
    "asl": "inps-sardegna",

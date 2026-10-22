@@ -1,6 +1,6 @@
 {
  "regione": "calabria",
- "aggiornato": "2026-10-22T06:32:37.274Z",
+ "aggiornato": "2026-10-22T07:33:10.869Z",
  "pagine": [
   {
    "asl": "catanzaro",
@@ -91,6 +91,28 @@
    "cambiata": false
   },
   {
+   "asl": "catanzaro",
+   "url": "https://ecosanita.regione.calabria.it/faq.php",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "catanzaro/88cb8fda64a8.txt",
+   "titolo": "ECS - Regione Calabria",
+   "sha": "4ba4579626e306f1c3aaf1f3de5a6c1297cc4760e686658a542ce39f4c370c8d",
+   "caratteri": 4196,
+   "cambiata": true
+  },
+  {
+   "asl": "catanzaro",
+   "url": "https://www.asp.cz.it/distretti-sanitari/distretto-sociosanitario-di-catanzaro/scelta-del-medico/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "catanzaro/5f321a899fb7.txt",
+   "titolo": "",
+   "sha": "df9ba084c18abd4902aeead5699ee7a6464955266fae90881733caa76fc25267",
+   "caratteri": 13359,
+   "cambiata": true
+  },
+  {
    "asl": "cosenza",
    "url": "https://www.asp.cosenza.it/",
    "controllata": "2026-10-22",
@@ -119,7 +141,7 @@
    "http": 200,
    "file": "cosenza/fe31bc8fb243.txt",
    "titolo": "Centro Unico di Prenotazione Online - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "d077090fd2a55372bdb8b0d141c0115406c1a0d32d7df00a22a1758706b8281c",
+   "sha": "d6ee60d0437256c4895816395eb8b202b55abf32fb5a624d2a0f442f0ca63080",
    "caratteri": 8094,
    "cambiata": true
   },
@@ -165,7 +187,7 @@
    "titolo": "Assistenza Domiciliare - Azienda Sanitaria Provinciale di Crotone",
    "sha": "886200f01af53203da4f41afef0be40b317f35c6417f073491b6aaa0df0ecc89",
    "caratteri": 9089,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "crotone",
@@ -174,7 +196,7 @@
    "http": 200,
    "file": "crotone/4ab485a670df.txt",
    "titolo": "contatti - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "0c351283ec5a033f2d978c1fd2a07f18563fdf01ee9df70db5caf891b2cbf97d",
+   "sha": "f2a163c8a2c07982f942b742253240605498c54c55e3cf9b94e7d94e38d624b3",
    "caratteri": 7856,
    "cambiata": true
   },
@@ -185,9 +207,9 @@
    "http": 200,
    "file": "reggio-calabria/9c7dc5845640.txt",
    "titolo": "Azienda Sanitaria Provinciale di Reggio Calabria",
-   "sha": "c20204fef7030031f3850dd757f69bebdb401fd54d3303fb67f3e91dcd692b69",
+   "sha": "5fa750abf52dec8e989f325667947300e497fb8b709d8aab1ffdf255f5150991",
    "caratteri": 3874,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "reggio-calabria",
@@ -245,6 +267,17 @@
    "cambiata": false
   },
   {
+   "asl": "reggio-calabria",
+   "url": "https://www.asprc.it/servizi-online/scelta-e-cambio-medico-online/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "reggio-calabria/b3837e728164.txt",
+   "titolo": "Azienda Sanitaria Provinciale di Reggio Calabria",
+   "sha": "363ebb5c8fea824e9aa5bb0e89ef4fd25ab5d578585c2b6390967579e0a45309",
+   "caratteri": 4417,
+   "cambiata": true
+  },
+  {
    "asl": "vibo-valentia",
    "url": "https://www.aspvv.it/",
    "controllata": "2026-10-22",
@@ -260,6 +293,12 @@
    "sha": "abd090276a4cfdd1416483f60a1cb3bc7f9898e2fba6293d9bd995e29018273a",
    "caratteri": 4913,
    "cambiata": false
+  },
+  {
+   "asl": "vibo-valentia",
+   "url": "https://www.aspvv.it/index.php/amministrazione-trasparente-3/servizi-erogati/liste-di-attesa/a-proposito-delle-liste-di-attesa",
+   "controllata": "2026-10-22",
+   "http": 403
   },
   {
    "asl": "inps-calabria",

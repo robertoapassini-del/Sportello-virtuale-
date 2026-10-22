@@ -1,6 +1,6 @@
 {
  "regione": "emilia-romagna",
- "aggiornato": "2026-10-22T06:36:05.302Z",
+ "aggiornato": "2026-10-22T07:42:15.879Z",
  "pagine": [
   {
    "asl": "bologna",
@@ -9,9 +9,9 @@
    "http": 200,
    "file": "bologna/52ee1bcfe6ff.txt",
    "titolo": "Home page — Azienda USL di Bologna",
-   "sha": "bc0d0be14dffa6b4784ef00338d0fd187b43aaee1c0334e73b61362c2583a881",
-   "caratteri": 4155,
-   "cambiata": false
+   "sha": "a22b104d63d566dea2939ea27eb0149efce3829365496e80180125c2ca4e39fc",
+   "caratteri": 4140,
+   "cambiata": true
   },
   {
    "asl": "bologna",
@@ -114,6 +114,94 @@
    "cambiata": false
   },
   {
+   "asl": "bologna",
+   "url": "https://www.ausl.bologna.it/amministrazione-trasparente/servizi-erogati/liste-di-attesa",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "bologna/814d466f458b.txt",
+   "titolo": "Tempi medi di erogazione dei servizi — Azienda USL di Bologna",
+   "sha": "47017fe1a4001febf1257588d9ff5fd43e07a2958a05103a169adb7bb38834ca",
+   "caratteri": 10891,
+   "cambiata": true
+  },
+  {
+   "asl": "bologna",
+   "url": "https://www.ausl.imola.bo.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/2886",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "bologna/4ca59667680a.txt",
+   "titolo": "Servizi erogati - Liste di attesa",
+   "sha": "23788dec707d49cdcc8d15a34665655737c373f36d0811d5f3e6a4525a030852",
+   "caratteri": 18216,
+   "cambiata": true
+  },
+  {
+   "asl": "bologna",
+   "url": "https://www.ausl.bologna.it/guida-ai-servizi/luoghi/15532/295299",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "bologna/6cc9b98fcc80.txt",
+   "titolo": "Rilascio copia cartella clinica — Azienda USL di Bologna",
+   "sha": "2ddb476716f4a990582b453ef49b60357428ae36095027fe264227a81e34720f",
+   "caratteri": 8840,
+   "cambiata": true
+  },
+  {
+   "asl": "bologna",
+   "url": "https://www.ausl.imola.bo.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/9698",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "bologna/1e55fb61460d.txt",
+   "titolo": "Richiesta e Ritiro Copia di Cartelle Cliniche",
+   "sha": "c4565b5b7dede414341485a220f3d78e459227822d86fe8b36c5cdc8a0e6577a",
+   "caratteri": 16138,
+   "cambiata": true
+  },
+  {
+   "asl": "bologna",
+   "url": "https://www.ausl.imola.bo.it/cambio-medico-pediatra",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "bologna/f794b3028b24.txt",
+   "titolo": "Cambio del Medico di Medicina Generale o del Pediatra di Libera Scelta in Azienda USL di Imola",
+   "sha": "456ca06df2df15749a671b1f35e0a427f2fbbcf21dbe6df9e6b26b393a1087ab",
+   "caratteri": 16015,
+   "cambiata": true
+  },
+  {
+   "asl": "bologna",
+   "url": "https://salute.regione.emilia-romagna.it/cure-primarie/visite-ed-esami/il-piano-della-regione-per-ridurre-i-tempi-di-attesa",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "bologna/7531125f61ca.txt",
+   "titolo": "Il Piano della Regione per ridurre i tempi di attesa — Salute",
+   "sha": "e5be218687f0b74d2db8ad2a5fecd5d5feda4a50250250320ca6252704f4362f",
+   "caratteri": 6695,
+   "cambiata": true
+  },
+  {
+   "asl": "bologna",
+   "url": "https://support.fascicolo-sanitario.it/guida/servizi-on-line/cambio%7Crevoca-medico-di-famiglia",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "bologna/917c7dc18179.txt",
+   "titolo": "Support FSE",
+   "sha": "715d9256f5f084126ce43f5081d30b70f1cec898976733d176dfff2f8c4790af",
+   "caratteri": 2798,
+   "cambiata": true
+  },
+  {
+   "asl": "bologna",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "bologna/aad63b63390a.txt",
+   "titolo": "Portale Inps - Riforma della disabilità: al via la terza fase sperimentale",
+   "sha": "3e22d1cf04da5a9b152d4fd5f6033e4b4b86d0937bfc137d142d7c9ec25bd108",
+   "caratteri": 46281,
+   "cambiata": true
+  },
+  {
    "asl": "ferrara",
    "url": "https://www.ausl.fe.it/",
    "controllata": "2026-10-22",
@@ -181,6 +269,84 @@
    "cambiata": false
   },
   {
+   "asl": "ferrara",
+   "url": "https://at.ausl.fe.it/servizi-erogati/liste-di-attesa",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ferrara/cfee7757fd1c.txt",
+   "titolo": "Liste di attesa — Amministrazione trasparente",
+   "sha": "841c4b6edebe50e0f9b1c55229cf4a1244ff1b851bba8f5fb24769f74e24fb95",
+   "caratteri": 6220,
+   "cambiata": true
+  },
+  {
+   "asl": "ferrara",
+   "url": "https://www.ausl.fe.it/come-fare-per/richiedere-copia-della-cartella-clinica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ferrara/a1d31142c42e.txt",
+   "titolo": "Richiedere copia della Cartella Clinica - Azienda Unità Sanitaria Locale di Ferrara",
+   "sha": "94efb5810038f0ba3288a5fceb7a685fd63dfd1f1c320bcbe36cc79e4366a56a",
+   "caratteri": 9132,
+   "cambiata": true
+  },
+  {
+   "asl": "ferrara",
+   "url": "https://www.ospfe.it/servizi/come-fare-per/richiedere-e-ritirare-copia-documentazione-sanitaria",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ferrara/7ad4c0b995d2.txt",
+   "titolo": "Richiedere e ritirare copia documentazione sanitaria - Arcispedale Sant&#x27;Anna",
+   "sha": "650da1a549767af2f98e30de087179449c3b8aa399759740e009e2f13a15b223",
+   "caratteri": 9260,
+   "cambiata": true
+  },
+  {
+   "asl": "ferrara",
+   "url": "https://www.ausl.fe.it/argomenti/dedicato-a/aree-dedicate/rete-cure-palliative",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.ausl.fe.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/rete-cure-palliative",
+   "file": "ferrara/9c1dc80544be.txt",
+   "titolo": "Rete Cure Palliative - Azienda Unità Sanitaria Locale di Ferrara",
+   "sha": "175c2e89b8de46a00887dec8f9f4843024dfa7ed04d159ac7b125c62f290e788",
+   "caratteri": 6580,
+   "cambiata": true
+  },
+  {
+   "asl": "ferrara",
+   "url": "https://www.ausl.fe.it/servizi-e-prestazioni/percorsi-di-cura-e-assistenza/protesi-ausili-e-presidi-per-incontinenza",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ferrara/9610e3d56bc9.txt",
+   "titolo": "Protesi, ausili e presidi (per incontinenza) - Azienda Unità Sanitaria Locale di Ferrara",
+   "sha": "0263c73862bbdd726643009bde95b1f3e681c1ebf6305bbac31644705d812e80",
+   "caratteri": 6563,
+   "cambiata": true
+  },
+  {
+   "asl": "ferrara",
+   "url": "https://salute.regione.emilia-romagna.it/cure-primarie/visite-ed-esami/il-piano-della-regione-per-ridurre-i-tempi-di-attesa",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ferrara/7531125f61ca.txt",
+   "titolo": "Il Piano della Regione per ridurre i tempi di attesa — Salute",
+   "sha": "e5be218687f0b74d2db8ad2a5fecd5d5feda4a50250250320ca6252704f4362f",
+   "caratteri": 6695,
+   "cambiata": true
+  },
+  {
+   "asl": "ferrara",
+   "url": "https://support.fascicolo-sanitario.it/guida/servizi-on-line/cambio%7Crevoca-medico-di-famiglia",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ferrara/917c7dc18179.txt",
+   "titolo": "Support FSE",
+   "sha": "715d9256f5f084126ce43f5081d30b70f1cec898976733d176dfff2f8c4790af",
+   "caratteri": 2798,
+   "cambiata": true
+  },
+  {
    "asl": "forli-cesena",
    "url": "https://www.auslromagna.it/",
    "controllata": "2026-10-22",
@@ -234,6 +400,72 @@
    "sha": "0fe022f7fc11f5cedf0b2d20d2b3337a29e81b754d39affde0246064263ff8c6",
    "caratteri": 3339,
    "cambiata": false
+  },
+  {
+   "asl": "forli-cesena",
+   "url": "https://www.auslromagna.it/servizi/richiedere-copia-cartella-clinica-referti",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "forli-cesena/97b4d69f56ab.txt",
+   "titolo": "Richiedere copia della cartella clinica, referti o documenti - AUSL Romagna",
+   "sha": "6f7580ed1582d8df3057b616e79764c7b46265dc55043b8b67b0bd12aa1ad4c6",
+   "caratteri": 5524,
+   "cambiata": true
+  },
+  {
+   "asl": "forli-cesena",
+   "url": "https://www.auslromagna.it/luoghi/hospice",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "forli-cesena/ebc498b1d1fa.txt",
+   "titolo": "Hospice - AUSL Romagna",
+   "sha": "8e05e49a57453be693f9beeecb53d50dcb1367dab403cd4fadcddc11398d1bda",
+   "caratteri": 2808,
+   "cambiata": true
+  },
+  {
+   "asl": "forli-cesena",
+   "url": "https://www.auslromagna.it/azienda/organizzazione/dipartimenti/oncoematologico/cure-palliative-romagna/uo-cure-palliative-forlimpopoli",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "forli-cesena/52e445cfa27d.txt",
+   "titolo": "Cure Palliative di Forlimpopoli - AUSL Romagna",
+   "sha": "5c592f3f520f65e425e872f23a16a1afb1138aac3146d5011fdc5082c487a248",
+   "caratteri": 3075,
+   "cambiata": true
+  },
+  {
+   "asl": "forli-cesena",
+   "url": "https://www.auslromagna.it/luoghi/hospice/cure-palliative-cesena-e-hospice-savignano-sul-rubicone",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "forli-cesena/29a613f6331a.txt",
+   "titolo": "Cure Palliative e Hospice Savignano di Savignano sul Rubicone - AUSL Romagna",
+   "sha": "1c5f01004d268b4fb8073fe631b41dae1f0cd124144462311b277e89e624265c",
+   "caratteri": 2589,
+   "cambiata": true
+  },
+  {
+   "asl": "forli-cesena",
+   "url": "https://salute.regione.emilia-romagna.it/cure-primarie/visite-ed-esami/il-piano-della-regione-per-ridurre-i-tempi-di-attesa",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "forli-cesena/7531125f61ca.txt",
+   "titolo": "Il Piano della Regione per ridurre i tempi di attesa — Salute",
+   "sha": "e5be218687f0b74d2db8ad2a5fecd5d5feda4a50250250320ca6252704f4362f",
+   "caratteri": 6695,
+   "cambiata": true
+  },
+  {
+   "asl": "forli-cesena",
+   "url": "https://support.fascicolo-sanitario.it/guida/servizi-on-line/cambio%7Crevoca-medico-di-famiglia",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "forli-cesena/917c7dc18179.txt",
+   "titolo": "Support FSE",
+   "sha": "715d9256f5f084126ce43f5081d30b70f1cec898976733d176dfff2f8c4790af",
+   "caratteri": 2798,
+   "cambiata": true
   },
   {
    "asl": "modena",
@@ -291,6 +523,45 @@
    "sha": "11b06964b1bbdad402828636d4627b79a6771a13ad14201d9b8247e73ff06717",
    "caratteri": 4975,
    "cambiata": false
+  },
+  {
+   "asl": "modena",
+   "url": "https://www.ausl.mo.it/modulistica-aziendale/richiesta-copia-cartella-clinica/",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
+   "asl": "modena",
+   "url": "https://www.aou.mo.it/come-fare-per.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "modena/8d8e4d4fd5fa.txt",
+   "titolo": "Come fare per - Azienda Ospedaliero-Universitaria di Modena",
+   "sha": "7e3017ddb404e3ee59f71510325b8cfa553e58457f58aedea2a17c928d46daae",
+   "caratteri": 15154,
+   "cambiata": true
+  },
+  {
+   "asl": "modena",
+   "url": "https://salute.regione.emilia-romagna.it/cure-primarie/visite-ed-esami/il-piano-della-regione-per-ridurre-i-tempi-di-attesa",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "modena/7531125f61ca.txt",
+   "titolo": "Il Piano della Regione per ridurre i tempi di attesa — Salute",
+   "sha": "e5be218687f0b74d2db8ad2a5fecd5d5feda4a50250250320ca6252704f4362f",
+   "caratteri": 6695,
+   "cambiata": true
+  },
+  {
+   "asl": "modena",
+   "url": "https://support.fascicolo-sanitario.it/guida/servizi-on-line/cambio%7Crevoca-medico-di-famiglia",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "modena/917c7dc18179.txt",
+   "titolo": "Support FSE",
+   "sha": "715d9256f5f084126ce43f5081d30b70f1cec898976733d176dfff2f8c4790af",
+   "caratteri": 2798,
+   "cambiata": true
   },
   {
    "asl": "parma",
@@ -368,6 +639,72 @@
    "sha": "b1aa1d3f79db4924f3bde14136bbfaf3af15cf0f50408cc66a4ed0b691bb20b5",
    "caratteri": 11741,
    "cambiata": false
+  },
+  {
+   "asl": "parma",
+   "url": "https://www.ausl.pr.it/come_fare/prenotazioni_disdette/liste_attesa.aspx",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "parma/5ef92c512159.txt",
+   "titolo": "AUSL | Come fare per | Visite ed esami: alcune informazioni utili per accedere alle prestazioni nel rispetto dei tempi di attesa",
+   "sha": "c37a249802769bdbf0ef38aa12905aa43bbd34ec5b860506a336a0980bce32dd",
+   "caratteri": 19078,
+   "cambiata": true
+  },
+  {
+   "asl": "parma",
+   "url": "https://www.ausl.pr.it/come_fare/cartelle_cliniche/cartelle-cliniche.aspx",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "parma/4bcd227522b6.txt",
+   "titolo": "AUSL | Come fare per | Cartelle cliniche",
+   "sha": "6b2c12d6b1f10244514888b94123aa2cc3110bf4df6378fc14a835b889bd5ab8",
+   "caratteri": 10797,
+   "cambiata": true
+  },
+  {
+   "asl": "parma",
+   "url": "https://www.ao.pr.it/curarsi/documentazione-sanitaria/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "parma/3468d9af1884.txt",
+   "titolo": "Documentazione sanitaria | Azienda Ospedaliero-Universitaria di Parma",
+   "sha": "f05ea3937b0a229b7425a807dae5fd536e14c5145b1d8c33c0361c6470e22835",
+   "caratteri": 9544,
+   "cambiata": true
+  },
+  {
+   "asl": "parma",
+   "url": "https://www.ausl.pr.it/servizi_online/scelta_revoca/default.aspx",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "parma/0bcbb833f286.txt",
+   "titolo": "AUSL | Servizi Online | Scelta e revoca del medico e del pediatra on line",
+   "sha": "181bae0e254392b6b0336d003c8118c96d84d2c9f98f57f8621d8ee91420230b",
+   "caratteri": 10585,
+   "cambiata": true
+  },
+  {
+   "asl": "parma",
+   "url": "https://salute.regione.emilia-romagna.it/cure-primarie/visite-ed-esami/il-piano-della-regione-per-ridurre-i-tempi-di-attesa",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "parma/7531125f61ca.txt",
+   "titolo": "Il Piano della Regione per ridurre i tempi di attesa — Salute",
+   "sha": "e5be218687f0b74d2db8ad2a5fecd5d5feda4a50250250320ca6252704f4362f",
+   "caratteri": 6695,
+   "cambiata": true
+  },
+  {
+   "asl": "parma",
+   "url": "https://support.fascicolo-sanitario.it/guida/servizi-on-line/cambio%7Crevoca-medico-di-famiglia",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "parma/917c7dc18179.txt",
+   "titolo": "Support FSE",
+   "sha": "715d9256f5f084126ce43f5081d30b70f1cec898976733d176dfff2f8c4790af",
+   "caratteri": 2798,
+   "cambiata": true
   },
   {
    "asl": "piacenza",
@@ -448,6 +785,61 @@
    "cambiata": false
   },
   {
+   "asl": "piacenza",
+   "url": "https://www.ausl.pc.it/it/come-fare-per/richiesta-rilascio-documenti/rilascio-cartella-clinica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "piacenza/414ee88733e7.txt",
+   "titolo": "Rilascio documenti clinici - Azienda Unità Sanitaria Locale di Piacenza",
+   "sha": "821da8e581404ac53c9e6b08f187792e8b467033248b53cd8c82215cd4fc01da",
+   "caratteri": 8841,
+   "cambiata": true
+  },
+  {
+   "asl": "piacenza",
+   "url": "https://www.ausl.pc.it/it/strutture-e-territorio/dove-siamo/uffici-cartelle-cliniche/ufficio-cartelle-cliniche-di-piacenza",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "piacenza/3fd0586e2617.txt",
+   "titolo": "Ufficio Cartelle cliniche di Piacenza - Azienda Unità Sanitaria Locale di Piacenza",
+   "sha": "5c9cc245639081b31f14fd8416e220be266693ec396e50e2d983524028c3272d",
+   "caratteri": 6890,
+   "cambiata": true
+  },
+  {
+   "asl": "piacenza",
+   "url": "https://www.ausl.pc.it/it/come-fare-per/protesi-e-ausili",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "piacenza/152f862417e5.txt",
+   "titolo": "Richiesta ausilio protesico - Azienda Unità Sanitaria Locale di Piacenza",
+   "sha": "c969ce70a81a0f2f17a9ce3631eb11d84101ae879676a91b680d922791470e93",
+   "caratteri": 9048,
+   "cambiata": true
+  },
+  {
+   "asl": "piacenza",
+   "url": "https://salute.regione.emilia-romagna.it/cure-primarie/visite-ed-esami/il-piano-della-regione-per-ridurre-i-tempi-di-attesa",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "piacenza/7531125f61ca.txt",
+   "titolo": "Il Piano della Regione per ridurre i tempi di attesa — Salute",
+   "sha": "e5be218687f0b74d2db8ad2a5fecd5d5feda4a50250250320ca6252704f4362f",
+   "caratteri": 6695,
+   "cambiata": true
+  },
+  {
+   "asl": "piacenza",
+   "url": "https://support.fascicolo-sanitario.it/guida/servizi-on-line/cambio%7Crevoca-medico-di-famiglia",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "piacenza/917c7dc18179.txt",
+   "titolo": "Support FSE",
+   "sha": "715d9256f5f084126ce43f5081d30b70f1cec898976733d176dfff2f8c4790af",
+   "caratteri": 2798,
+   "cambiata": true
+  },
+  {
    "asl": "ravenna",
    "url": "https://www.auslromagna.it/",
    "controllata": "2026-10-22",
@@ -492,37 +884,69 @@
    "cambiata": false
   },
   {
+   "asl": "ravenna",
+   "url": "https://www.auslromagna.it/servizi/richiedere-copia-cartella-clinica-referti",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ravenna/97b4d69f56ab.txt",
+   "titolo": "Richiedere copia della cartella clinica, referti o documenti - AUSL Romagna",
+   "sha": "6f7580ed1582d8df3057b616e79764c7b46265dc55043b8b67b0bd12aa1ad4c6",
+   "caratteri": 5524,
+   "cambiata": true
+  },
+  {
+   "asl": "ravenna",
+   "url": "https://www.auslromagna.it/luoghi/hospice",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ravenna/ebc498b1d1fa.txt",
+   "titolo": "Hospice - AUSL Romagna",
+   "sha": "8e05e49a57453be693f9beeecb53d50dcb1367dab403cd4fadcddc11398d1bda",
+   "caratteri": 2808,
+   "cambiata": true
+  },
+  {
+   "asl": "ravenna",
+   "url": "https://salute.regione.emilia-romagna.it/cure-primarie/visite-ed-esami/il-piano-della-regione-per-ridurre-i-tempi-di-attesa",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ravenna/7531125f61ca.txt",
+   "titolo": "Il Piano della Regione per ridurre i tempi di attesa — Salute",
+   "sha": "e5be218687f0b74d2db8ad2a5fecd5d5feda4a50250250320ca6252704f4362f",
+   "caratteri": 6695,
+   "cambiata": true
+  },
+  {
+   "asl": "ravenna",
+   "url": "https://support.fascicolo-sanitario.it/guida/servizi-on-line/cambio%7Crevoca-medico-di-famiglia",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "ravenna/917c7dc18179.txt",
+   "titolo": "Support FSE",
+   "sha": "715d9256f5f084126ce43f5081d30b70f1cec898976733d176dfff2f8c4790af",
+   "caratteri": 2798,
+   "cambiata": true
+  },
+  {
    "asl": "reggio-emilia",
    "url": "https://www.ausl.re.it/",
    "controllata": "2026-10-22",
-   "http": 200,
-   "file": "reggio-emilia/accd7fd8e449.txt",
-   "titolo": "Home Page - AUSL RE",
-   "sha": "9eea144a29656c03d5acc75c98ccc7a50eb6447558130c7ada5bde5cda71be10",
-   "caratteri": 10648,
-   "cambiata": false
+   "http": 0,
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "reggio-emilia",
    "url": "https://www.ausl.re.it/cau-e-continuita-assistenziale",
    "controllata": "2026-10-22",
-   "http": 200,
-   "file": "reggio-emilia/39283cb439a7.txt",
-   "titolo": "CAU e Continuità Assistenziale - AUSL RE",
-   "sha": "5faa9cea3b53e6c5e0fe9ab8d8732de04edeaec9971cd057baade4929e4cc74d",
-   "caratteri": 7846,
-   "cambiata": false
+   "http": 0,
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "reggio-emilia",
    "url": "https://www.ausl.re.it/servizio-infermieristico-domiciliare",
    "controllata": "2026-10-22",
-   "http": 200,
-   "file": "reggio-emilia/a1e66265aee4.txt",
-   "titolo": "Servizio Infermieristico Domiciliare - AUSL RE",
-   "sha": "7e2b8da21784a8d50dbe076ecbdb1083986b438cddbfcee3e9d4be4320cd6275",
-   "caratteri": 7863,
-   "cambiata": false
+   "http": 0,
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "reggio-emilia",
@@ -539,34 +963,95 @@
    "asl": "reggio-emilia",
    "url": "https://www.ausl.re.it/prenotazione",
    "controllata": "2026-10-22",
-   "http": 200,
-   "file": "reggio-emilia/7dafa9019eab.txt",
-   "titolo": "Prenotazione esami e visite - AUSL RE",
-   "sha": "03bf30f1ac368a657551e8e308aec446348f67c4b3397b98fa5adb64ca1c66fa",
-   "caratteri": 10517,
-   "cambiata": false
+   "http": 0,
+   "errore": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received"
   },
   {
    "asl": "reggio-emilia",
    "url": "https://www.ausl.re.it/correggio-sabato-24-ottobre-laurp-restera-chiuso",
    "controllata": "2026-10-22",
-   "http": 200,
-   "file": "reggio-emilia/951ab06261af.txt",
-   "titolo": "Correggio, sabato 24 ottobre l’URP resterà chiuso - AUSL RE",
-   "sha": "4a0efaa3ae00f34f6a3b0c1aee4d061c63378b77a00e5b103dbaa46567382e7a",
-   "caratteri": 7148,
-   "cambiata": false
+   "http": 0,
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "reggio-emilia",
    "url": "https://www.ausl.re.it/contatti",
    "controllata": "2026-10-22",
+   "http": 0,
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+  },
+  {
+   "asl": "reggio-emilia",
+   "url": "https://www.ausl.re.it/visite-ed-esami-il-piano-di-interventi-per-ridurre-i-tempi-di-attesa-e-i-disagi-per-i-cittadini",
+   "controllata": "2026-10-22",
+   "http": 0,
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+  },
+  {
+   "asl": "reggio-emilia",
+   "url": "https://www.ausl.re.it/richiedere-documenti-sanitari",
+   "controllata": "2026-10-22",
    "http": 200,
-   "file": "reggio-emilia/b1d00ad5b39c.txt",
-   "titolo": "Contatti - AUSL RE",
-   "sha": "2bcd290877239d29885d4069b2e7d97c3c5b889656485f19512eed3d11ea66d3",
-   "caratteri": 9288,
-   "cambiata": false
+   "file": "reggio-emilia/adf2dabad2d8.txt",
+   "titolo": "Richiedere documenti sanitari - AUSL RE",
+   "sha": "fd9639163e7a42ef7eb0d0aaf13eb53e10f5c9b6b1325c9e9456c38d5552dc84",
+   "caratteri": 9481,
+   "cambiata": true
+  },
+  {
+   "asl": "reggio-emilia",
+   "url": "https://www.ausl.re.it/come-accedere-alle-cure-palliative",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "reggio-emilia/23b24977a530.txt",
+   "titolo": "Come accedere alle Cure Palliative - AUSL RE",
+   "sha": "e9a99e49bf52b108352d1786475c2ea2938931c159bb10aa378ae7e4e39792bd",
+   "caratteri": 7369,
+   "cambiata": true
+  },
+  {
+   "asl": "reggio-emilia",
+   "url": "https://www.ausl.re.it/accoglienza-cure-palliative",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "reggio-emilia/62141f0f244f.txt",
+   "titolo": "Accoglienza Cure Palliative - AUSL RE",
+   "sha": "2940292b314305ccae18effc8a7788b6fad4674d46f42dacf76c20074055d105",
+   "caratteri": 8353,
+   "cambiata": true
+  },
+  {
+   "asl": "reggio-emilia",
+   "url": "https://www.ausl.re.it/Prestazione.jsp?id=30548",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "reggio-emilia/e868183cb507.txt",
+   "titolo": "Protesi e ausili per persone con menomazioni e disabilità - AUSL RE",
+   "sha": "ddd69bb5e93a58afc5ad01686109794d0c26576c9728d8116c8a2b627dc75ef5",
+   "caratteri": 8834,
+   "cambiata": true
+  },
+  {
+   "asl": "reggio-emilia",
+   "url": "https://salute.regione.emilia-romagna.it/cure-primarie/visite-ed-esami/il-piano-della-regione-per-ridurre-i-tempi-di-attesa",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "reggio-emilia/7531125f61ca.txt",
+   "titolo": "Il Piano della Regione per ridurre i tempi di attesa — Salute",
+   "sha": "e5be218687f0b74d2db8ad2a5fecd5d5feda4a50250250320ca6252704f4362f",
+   "caratteri": 6695,
+   "cambiata": true
+  },
+  {
+   "asl": "reggio-emilia",
+   "url": "https://support.fascicolo-sanitario.it/guida/servizi-on-line/cambio%7Crevoca-medico-di-famiglia",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "reggio-emilia/917c7dc18179.txt",
+   "titolo": "Support FSE",
+   "sha": "715d9256f5f084126ce43f5081d30b70f1cec898976733d176dfff2f8c4790af",
+   "caratteri": 2798,
+   "cambiata": true
   },
   {
    "asl": "rimini",
@@ -611,6 +1096,61 @@
    "sha": "0fe022f7fc11f5cedf0b2d20d2b3337a29e81b754d39affde0246064263ff8c6",
    "caratteri": 3339,
    "cambiata": false
+  },
+  {
+   "asl": "rimini",
+   "url": "https://www.auslromagna.it/servizi/richiedere-copia-cartella-clinica-referti",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "rimini/97b4d69f56ab.txt",
+   "titolo": "Richiedere copia della cartella clinica, referti o documenti - AUSL Romagna",
+   "sha": "6f7580ed1582d8df3057b616e79764c7b46265dc55043b8b67b0bd12aa1ad4c6",
+   "caratteri": 5524,
+   "cambiata": true
+  },
+  {
+   "asl": "rimini",
+   "url": "https://www.auslromagna.it/luoghi/hospice",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "rimini/ebc498b1d1fa.txt",
+   "titolo": "Hospice - AUSL Romagna",
+   "sha": "8e05e49a57453be693f9beeecb53d50dcb1367dab403cd4fadcddc11398d1bda",
+   "caratteri": 2808,
+   "cambiata": true
+  },
+  {
+   "asl": "rimini",
+   "url": "https://www.auslromagna.it/azienda/organizzazione/dipartimenti/oncoematologico/cure-palliative-rimini/cure-palliative-rimini-e-hospice-rimini-ssd-rimini",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "rimini/0fae453e0045.txt",
+   "titolo": "Cure Palliative Rimini e Hospice Rimini - AUSL Romagna",
+   "sha": "87b881dca3347b66bd2fb40d5cedb913f7068b5ad296c0badf642ea411a51b1d",
+   "caratteri": 4863,
+   "cambiata": true
+  },
+  {
+   "asl": "rimini",
+   "url": "https://salute.regione.emilia-romagna.it/cure-primarie/visite-ed-esami/il-piano-della-regione-per-ridurre-i-tempi-di-attesa",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "rimini/7531125f61ca.txt",
+   "titolo": "Il Piano della Regione per ridurre i tempi di attesa — Salute",
+   "sha": "e5be218687f0b74d2db8ad2a5fecd5d5feda4a50250250320ca6252704f4362f",
+   "caratteri": 6695,
+   "cambiata": true
+  },
+  {
+   "asl": "rimini",
+   "url": "https://support.fascicolo-sanitario.it/guida/servizi-on-line/cambio%7Crevoca-medico-di-famiglia",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "rimini/917c7dc18179.txt",
+   "titolo": "Support FSE",
+   "sha": "715d9256f5f084126ce43f5081d30b70f1cec898976733d176dfff2f8c4790af",
+   "caratteri": 2798,
+   "cambiata": true
   },
   {
    "asl": "inps-emilia-romagna",

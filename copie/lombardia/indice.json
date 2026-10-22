@@ -1,6 +1,6 @@
 {
  "regione": "lombardia",
- "aggiornato": "2026-10-22T06:44:47.324Z",
+ "aggiornato": "2026-10-22T08:01:25.417Z",
  "pagine": [
   {
    "asl": "bergamo",
@@ -111,6 +111,223 @@
    "sha": "b0b6b34d5b15dfe8493a0f72bc5a4ef1201c3e0f23b216a123383dd6c56efc0a",
    "caratteri": 2845,
    "cambiata": false
+  },
+  {
+   "asl": "bergamo",
+   "url": "https://www.ats-bg.it/accesso-alle-prestazioni-sanitarie-0",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.ats-bg.it/accesso-alle-prestazioni-sanitarie",
+   "file": "bergamo/4eb43f37f7a2.txt",
+   "titolo": "ACCESSO ALLE PRESTAZIONI SANITARIE | ATS BERGAMO",
+   "sha": "963875afed36ef76ae91e2e0c271f7605830e4c7a08b11981d3873779c3852cb",
+   "caratteri": 4930,
+   "cambiata": true
+  },
+  {
+   "asl": "bergamo",
+   "url": "https://www.ats-bg.it/servizio-continuita-assistenziale-ex-guardia-medica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "bergamo/70895e4179c2.txt",
+   "titolo": "SERVIZIO DI CONTINUITA' ASSISTENZIALE - EX GUARDIA MEDICA | ATS BERGAMO",
+   "sha": "f84d82fb89a08a49228a7cc00eb7755a30dcbc4df35ede05bbe076d6228cde42",
+   "caratteri": 1870,
+   "cambiata": true
+  },
+  {
+   "asl": "bergamo",
+   "url": "https://www.ats-bg.it/centrale-unica-116117",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "bergamo/bf04f2699b2d.txt",
+   "titolo": "CENTRALE UNICA - NUMERO EUROPEO ARMONIZZATO (NEA) 116117 | ATS BERGAMO",
+   "sha": "89656ba8da29c445725a477484a371fb6acd384032bdca2bebd5813cc442e2ff",
+   "caratteri": 5389,
+   "cambiata": true
+  },
+  {
+   "asl": "bergamo",
+   "url": "https://www.asst-pg23.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "bergamo/1f85c98b9e36.txt",
+   "titolo": "Home Page | ASST Papa Giovanni XXIII",
+   "sha": "0e131de103222d4fb16046087196053a5becf6e77551973096cd493e20f655ae",
+   "caratteri": 320661,
+   "cambiata": true
+  },
+  {
+   "asl": "bergamo",
+   "url": "https://www.asst-pg23.it/reparti/ufficio-relazioni-il-pubblico-urp",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
+   "asl": "bergamo",
+   "url": "https://www.asst-pg23.it/come-fare/prenotare-una-prestazione/prenota-il-servizio-sanitario-nazionale",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "bergamo/6e08b6016f2e.txt",
+   "titolo": "Prenota con il servizio sanitario nazionale | ASST Papa Giovanni XXIII",
+   "sha": "6b0c9f115cf8730489d3730908b0db4c92201a431ce79fc417fc27e4b3c98689",
+   "caratteri": 16809,
+   "cambiata": true
+  },
+  {
+   "asl": "bergamo",
+   "url": "https://www.asst-pg23.it/servizi-territoriali/case-comunita/continuita-assistenziale",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "bergamo/7301282313dd.txt",
+   "titolo": "Continuità assistenziale (ex Guardia Medica) | ASST Papa Giovanni XXIII",
+   "sha": "51669b43523ad70e34abdc1030c14e76460be28a6e6d52bd0c10709ace81f960",
+   "caratteri": 16051,
+   "cambiata": true
+  },
+  {
+   "asl": "bergamo",
+   "url": "https://www.asst-pg23.it/servizi-territoriali/case-comunita/punto-unico-accesso-pua",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "bergamo/9a160156ee80.txt",
+   "titolo": "Punto unico di accesso PUA | ASST Papa Giovanni XXIII",
+   "sha": "07a0289ff47a38d905df5eb3577b9018845c49d1a7dfa0ed669d34f45850805c",
+   "caratteri": 16675,
+   "cambiata": true
+  },
+  {
+   "asl": "bergamo",
+   "url": "https://www.asst-bgovest.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "bergamo/1584c07280ec.txt",
+   "titolo": "ASST di Bergamo Ovest",
+   "sha": "a6938f762235e3dec86c6ed11ebd1e735e37111bbc58661c5995e0dd35a08637",
+   "caratteri": 3778,
+   "cambiata": true
+  },
+  {
+   "asl": "bergamo",
+   "url": "https://asst-bgovest.it/18.asp",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "bergamo/e13498bd4750.txt",
+   "titolo": "SS comunicazione aziendale, relazioni esterne e ufficio relazioni con il pubblico",
+   "sha": "241336722c0bf22bb1d355905416ec2786536661f3af2317ebb6ca5ec8434b11",
+   "caratteri": 8279,
+   "cambiata": true
+  },
+  {
+   "asl": "bergamo",
+   "url": "https://www.asst-bgovest.it/63.asp",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "bergamo/a38e690ca251.txt",
+   "titolo": "Prenota una visita o un esame con SSR",
+   "sha": "4f54789368d193061251091a97cbf8175aa243852abd179bce59289a01117131",
+   "caratteri": 4779,
+   "cambiata": true
+  },
+  {
+   "asl": "bergamo",
+   "url": "https://www.asst-bgovest.it/656.asp",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "bergamo/49513a54ef94.txt",
+   "titolo": "Continuit� Assistenziale (ex Guardia medica)",
+   "sha": "3ac06a19b0bb642e44fe06ba38d1ea25568fc96ccbde3a73cf72766aae9600de",
+   "caratteri": 7112,
+   "cambiata": true
+  },
+  {
+   "asl": "bergamo",
+   "url": "https://www.asst-bergamoest.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.asst-bergamoest.it/it",
+   "file": "bergamo/3a61ccd27b79.txt",
+   "titolo": "Azienda Socio Sanitaria Territoriale Bergamo Est | Homepage",
+   "sha": "7e3661c9064a10fc66b8d616165e5505a2f45e35be26941bebd7afa1832c9027",
+   "caratteri": 6535,
+   "cambiata": true
+  },
+  {
+   "asl": "bergamo",
+   "url": "https://www.asst-bergamoest.it/it/prenotazione-disdetta",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "bergamo/227ca69cd5b8.txt",
+   "titolo": "Prenotazione",
+   "sha": "ebbad2e14877c6693e9c55906d41b1778fd3a5e248452a60adea5c7f005b1456",
+   "caratteri": 13149,
+   "cambiata": true
+  },
+  {
+   "asl": "bergamo",
+   "url": "https://www.asst-bergamoest.it/it/news/continuita-assistenziale-avvio-della-centrale-uni-ca-bergamo",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "bergamo/91f152d19e13.txt",
+   "titolo": "Continuità assistenziale: avvio della Centrale UNI.CA Bergamo",
+   "sha": "a82d937edc96d668e129d2469d80317b1e16ecfd18c7590e2d4c8573d249035f",
+   "caratteri": 6116,
+   "cambiata": true
+  },
+  {
+   "asl": "bergamo",
+   "url": "https://www.asst-bergamoest.it/it/servizi-territoriali",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "bergamo/908df655d486.txt",
+   "titolo": "Servizi territoriali",
+   "sha": "1f080c6c2403834c93fdc24ee7987efe8a64b678cfdb43efa98fd34a4ea824fa",
+   "caratteri": 20992,
+   "cambiata": true
+  },
+  {
+   "asl": "bergamo",
+   "url": "https://asst-bgovest.it/280.asp",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "bergamo/77c446aaf621.txt",
+   "titolo": "Liste di attesa",
+   "sha": "198d9aebe60d5b6bb8b1e27ce9f2cbe6aa0824a437e4a33c5041740ff9658231",
+   "caratteri": 16589,
+   "cambiata": true
+  },
+  {
+   "asl": "bergamo",
+   "url": "https://www.asst-bgovest.it/212.asp",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "bergamo/293ba7e4a7ba.txt",
+   "titolo": "Tempi di attesa e priorit�",
+   "sha": "9f9abb1ff506af81c5b09c01c089fc3f0f7a4522c1c2a6a40b091ffd95a24f55",
+   "caratteri": 3310,
+   "cambiata": true
+  },
+  {
+   "asl": "bergamo",
+   "url": "https://www.asst-bergamoest.it/it/informazioni/tutela-del-cittadino",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "bergamo/7adbc844a9f0.txt",
+   "titolo": "Tutela del cittadino",
+   "sha": "3103739fd472551f6bcde3bb49f2d1b57e9817a3895cdea6fa1fbed8a8dfbdc6",
+   "caratteri": 13491,
+   "cambiata": true
+  },
+  {
+   "asl": "bergamo",
+   "url": "https://www.asst-pg23.it/amministrazione-trasparente/servizi-erogati/liste-attesa",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "bergamo/6f0e4c3c77ca.txt",
+   "titolo": "Liste di attesa | ASST Papa Giovanni XXIII",
+   "sha": "daa389a41453cc6decdaa756aa2856c49489f5da2f8b02858649f2cd60f82caa",
+   "caratteri": 20209,
+   "cambiata": true
   },
   {
    "asl": "brescia",
@@ -315,6 +532,187 @@
    "cambiata": false
   },
   {
+   "asl": "brescia",
+   "url": "https://www.ats-brescia.it/riferimenti-urp-asst-strutture-ricovero-e-cura-e-cure-sub-acute-private-accreditate-ambulatori-accreditati",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "brescia/705e70642c14.txt",
+   "titolo": "Riferimenti URP: ASST - Strutture di ricovero e cura e di cure sub acute private accreditate - ambulatori accreditati | Agenzia di Tutela della Salute di Brescia",
+   "sha": "3495cf68c9fe411160c07f3f8fb77ee0d9f50f4108544fc7730d4e9fb8f0ddf7",
+   "caratteri": 5412,
+   "cambiata": true
+  },
+  {
+   "asl": "brescia",
+   "url": "https://www.ats-brescia.it/continuita-assistenziale-ex-guardia-medica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "brescia/a6c03764100f.txt",
+   "titolo": "Continuità Assistenziale (ex Guardia Medica) | Agenzia di Tutela della Salute di Brescia",
+   "sha": "47091c267e8818a8141d49a2a80c5ea4f8f36a3fa04fa9d3c381de43f8931ab7",
+   "caratteri": 2308,
+   "cambiata": true
+  },
+  {
+   "asl": "brescia",
+   "url": "https://www.ats-brescia.it/assistenza-sanitaria-base-e-durgenza",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "brescia/fcdb97f55fc5.txt",
+   "titolo": "Assistenza Sanitaria di base e d'urgenza | Agenzia di Tutela della Salute di Brescia",
+   "sha": "87bbada9f5d86c2b8f5c882078e26c5d0e4c0bafb19a7158c0a5b454fd826553",
+   "caratteri": 1371,
+   "cambiata": true
+  },
+  {
+   "asl": "brescia",
+   "url": "https://www.asst-valcamonica.it/scheda-ist/URP",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
+   "asl": "brescia",
+   "url": "https://www.asst-valcamonica.it/scheda-ist/servizio-di-continuita-assistenziale-ex-guardia-medica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "brescia/24ed0e9e5076.txt",
+   "titolo": "Servizio di Continuità assistenziale (ex Guardia medica) | ASST Valcamonica",
+   "sha": "5ecd46194a537f4c25b0c62fca827b65e75e9ebf074177240174eb2302efffdd",
+   "caratteri": 4782,
+   "cambiata": true
+  },
+  {
+   "asl": "brescia",
+   "url": "https://www.asst-spedalicivili.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "brescia/e020ebdbbe0c.txt",
+   "titolo": "Homepage | ASST DEGLI SPEDALI CIVILI DI BRESCIA",
+   "sha": "1ea9d5dd4f8f0354c27a3af8c806e7764509b1332c3af96f248df6af96c61856",
+   "caratteri": 9428,
+   "cambiata": true
+  },
+  {
+   "asl": "brescia",
+   "url": "https://www.asst-spedalicivili.it/amministrazione-trasparente/telefono-e-posta-elettronica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "brescia/3d86fad2ca60.txt",
+   "titolo": "Telefono e posta elettronica | ASST DEGLI SPEDALI CIVILI DI BRESCIA",
+   "sha": "7ad8536a902da2d37971cfe8dccac40cade5b550cc4c85c21e4723f0988ca593",
+   "caratteri": 10984,
+   "cambiata": true
+  },
+  {
+   "asl": "brescia",
+   "url": "https://territorio.asst-spedalicivili.it/contenuto/contenuti--ecm/continuita-assistenziale-ex-guardia-medica.ashx",
+   "controllata": "2026-10-22",
+   "http": 0,
+   "errore": "curl: (6) Could not resolve host: territorio.asst-spedalicivili.it"
+  },
+  {
+   "asl": "brescia",
+   "url": "https://territorio.asst-spedalicivili.it/contenuto/contenuti--ecm/assistenza-domiciliare-integrata-ucam-e-cead.ashx",
+   "controllata": "2026-10-22",
+   "http": 0,
+   "errore": "curl: (6) Could not resolve host: territorio.asst-spedalicivili.it"
+  },
+  {
+   "asl": "brescia",
+   "url": "https://www.asst-franciacorta.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "brescia/42fd230aeb51.txt",
+   "titolo": "ASST Franciacorta - ASST Franciacorta",
+   "sha": "21f3a6d3ab7d83fa3d583fe1bf9f763b8ded27963c1c541fc7fc33da94da11fb",
+   "caratteri": 5651,
+   "cambiata": true
+  },
+  {
+   "asl": "brescia",
+   "url": "https://www.asst-franciacorta.it/ufficio-relazioni-con-il-pubblico-u-r-p/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "brescia/c50b178379e7.txt",
+   "titolo": "UFFICIO RELAZIONI CON IL PUBBLICO (U.R.P.) - ASST Franciacorta",
+   "sha": "856968ae2d23943ef30c7dd2cc16b98508eb9dc79ce8de5a15bb06faf295951a",
+   "caratteri": 4616,
+   "cambiata": true
+  },
+  {
+   "asl": "brescia",
+   "url": "https://www.asst-franciacorta.it/rete-territoriale/assistenza-sanitaria/continuita-assistenziale-ex-guardia-medica/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "brescia/ca0412eee16f.txt",
+   "titolo": "CONTINUIT&Agrave; ASSISTENZIALE (EX GUARDIA MEDICA) - ASST Franciacorta",
+   "sha": "24e67e895e537907cfa2e1fda087a13153527fb033b1d0ea066e55b16d1d25c5",
+   "caratteri": 6975,
+   "cambiata": true
+  },
+  {
+   "asl": "brescia",
+   "url": "https://www.asst-garda.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "brescia/34278d2109c6.txt",
+   "titolo": "AZIENDA SOCIO-SANITARIA TERRITORIALE DEL GARDA",
+   "sha": "83a43dfcb46a065c6c499f42a17d1935f261bc806ab4c3b46586c2cb8b50c729",
+   "caratteri": 1938,
+   "cambiata": true
+  },
+  {
+   "asl": "brescia",
+   "url": "https://www.asst-garda.it/prenotazioni/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "brescia/24859285974c.txt",
+   "titolo": "Prenotazioni di visite ed esami | AZIENDA SOCIO-SANITARIA TERRITORIALE DEL GARDA",
+   "sha": "96602d010bb5e5d3ff092d5f4705f81e2bc37a9953932e96ea62c9ba3770581b",
+   "caratteri": 6804,
+   "cambiata": true
+  },
+  {
+   "asl": "brescia",
+   "url": "https://www.asst-garda.it/territori/assistenza-sanitaria-2/continuita-assistenziale-ex-guardia-medica/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "brescia/34f0e57abdf0.txt",
+   "titolo": "Continuità Assistenziale (ex Guardia Medica) | AZIENDA SOCIO-SANITARIA TERRITORIALE DEL GARDA",
+   "sha": "9441ba8b73fa63f2ed23b40a963505ca7571d6a0e57db43a381f74622dd35844",
+   "caratteri": 4128,
+   "cambiata": true
+  },
+  {
+   "asl": "brescia",
+   "url": "https://www.asst-garda.it/territori/persone-non-autosufficienti-e-disabili/c-dom/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "brescia/be8ad4794123.txt",
+   "titolo": "C-DOM (ex ADI) – CURE DOMICILIARI | AZIENDA SOCIO-SANITARIA TERRITORIALE DEL GARDA",
+   "sha": "741b9d2aa08df57f176bf18a038b4f35d67e5d844a1630f4ea7a174a4d0db729",
+   "caratteri": 2791,
+   "cambiata": true
+  },
+  {
+   "asl": "brescia",
+   "url": "https://www.asst-spedalicivili.it/percorso-tutela-prestazioni-specialistica-ambulatoriale-e-diagnostica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "brescia/f5d03be8c13f.txt",
+   "titolo": "Percorso di Tutela per le prestazioni di specialistica ambulatoriale e diagnostica | ASST DEGLI SPEDALI CIVILI DI BRESCIA",
+   "sha": "c8c0970a9c11f7efaeab5644fe0f557deea59020add502a0bb0f85c168bd343d",
+   "caratteri": 7140,
+   "cambiata": true
+  },
+  {
    "asl": "como",
    "url": "https://www.ats-insubria.it/",
    "controllata": "2026-10-22",
@@ -424,6 +822,106 @@
    "sha": "88cfb09ebf492889d81ba726f5a05d4192d8b179024f87a4e3bb79ac41d7b5d2",
    "caratteri": 6619,
    "cambiata": false
+  },
+  {
+   "asl": "como",
+   "url": "https://www.ats-insubria.it/agenzia/ufficio-pubblica-tutela",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "como/a91deb3f77d7.txt",
+   "titolo": "Ufficio Pubblica Tutela - ATS Insubria",
+   "sha": "488d85a512eeaecc03c5881358408fdbfaffa2b62b83ca411ca37ae86dab5310",
+   "caratteri": 6799,
+   "cambiata": true
+  },
+  {
+   "asl": "como",
+   "url": "https://www.ats-insubria.it/amministrazione-trasparente/category/797-telefono-e-posta-elettronica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "como/a03dace28395.txt",
+   "titolo": "Telefono e posta elettronica - ATS Insubria",
+   "sha": "d5cef1bd54b3a6613b3189f7b06d56454caa7af21df21f6f01d6a466b3826fed",
+   "caratteri": 21185,
+   "cambiata": true
+  },
+  {
+   "asl": "como",
+   "url": "https://www.ats-insubria.it/aree-tematiche/cure-primarie/continuita-assistenziale",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "como/f3ae8ed2f6b7.txt",
+   "titolo": "Continuità Assistenziale (ex Guardia Medica) - ATS Insubria",
+   "sha": "97ec010dba0e65dff67c14928fdb88e6998d6c3611fcce7f655e7550ea91447a",
+   "caratteri": 5007,
+   "cambiata": true
+  },
+  {
+   "asl": "como",
+   "url": "https://www.ats-insubria.it/servizi/cure-domiciliari",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "como/13cd34d7dec4.txt",
+   "titolo": "Cure Domiciliari (CD) - ATS Insubria",
+   "sha": "8c97ca3224f88c4f64342a4954e92f69854241a45d769a71ce1db73ae685bd7e",
+   "caratteri": 6802,
+   "cambiata": true
+  },
+  {
+   "asl": "como",
+   "url": "https://www.asst-lariana.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "como/c20c1330e77e.txt",
+   "titolo": "ASST Lariana",
+   "sha": "9ccf531061d65b43027d4c8472a65e3a6190a86634d0278ba1a31c5f7d883d15",
+   "caratteri": 7582,
+   "cambiata": true
+  },
+  {
+   "asl": "como",
+   "url": "https://asst-lariana.it/amministrazione/unita-organizzativa/direttore-generale/urp",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.asst-lariana.it/amministrazione/unita-organizzativa/direttore-generale/attivita-comunicazione-aziendale-relazioni-esterne/urp/",
+   "file": "como/65bf501eab3e.txt",
+   "titolo": "Ufficio Relazioni con il Pubblico (URP) – ASST Lariana",
+   "sha": "60463049c0b8a4fec5ae400e8041a87bec7983928eecc01dae665cd8b5989f1a",
+   "caratteri": 6740,
+   "cambiata": true
+  },
+  {
+   "asl": "como",
+   "url": "https://www.asst-lariana.it/servizio/continuita-assistenziale-ex-guardia-medica/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "como/cf8398fd1b71.txt",
+   "titolo": "Continuità Assistenziale (ex Guardia Medica) – ASST Lariana",
+   "sha": "b53c572f23ad10f47f6d31f19f25edd2760fb52d4273e807023e9a2b511c2d87",
+   "caratteri": 7372,
+   "cambiata": true
+  },
+  {
+   "asl": "como",
+   "url": "https://www.asst-lariana.it/liste-di-attesa/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "como/7f660c81084a.txt",
+   "titolo": "Liste di attesa – ASST Lariana",
+   "sha": "f2ec73e14d743794e0818ebd29bdd53f638d0f95d0469c267828f2472952f1a6",
+   "caratteri": 12238,
+   "cambiata": true
+  },
+  {
+   "asl": "como",
+   "url": "https://www.ats-insubria.it/tempi-attesa",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "como/cbfeecf8cea1.txt",
+   "titolo": "Informazioni sui Tempi di Attesa delle Prestazioni di Specialistica e Diagnostica Ambulatoriale - ATS Insubria",
+   "sha": "be36aadb52e41a9db461da1630043f18ecf36934d78e77eec8583bd37a9484e9",
+   "caratteri": 13406,
+   "cambiata": true
   },
   {
    "asl": "cremona",
@@ -536,6 +1034,95 @@
    "cambiata": false
   },
   {
+   "asl": "cremona",
+   "url": "https://www.ats-valpadana.it/contenuto-web/-/asset_publisher/0DtvIvbG5Z49/content/continuita-assistenziale-ex-guardia-medica-",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
+   "asl": "cremona",
+   "url": "https://www.ats-valpadana.it/cure-domiciliari",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "cremona/3473783b689f.txt",
+   "titolo": "Cure domiciliari | ATS VALPADANA",
+   "sha": "8552f361ba811cde99d4f4413b32c93769784c8e5f94a9eab00037f32c5864e4",
+   "caratteri": 4120,
+   "cambiata": true
+  },
+  {
+   "asl": "cremona",
+   "url": "https://www.asst-cremona.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "cremona/374765fcb8e3.txt",
+   "titolo": "ASST Cremona | ASST Cremona",
+   "sha": "5fea4e5771b54f891ae32847e9d1d34ee15d8b3424e4f49f7844efb183afc24a",
+   "caratteri": 2621,
+   "cambiata": true
+  },
+  {
+   "asl": "cremona",
+   "url": "https://www.asst-cremona.it/strutture/continuita-assistenziale-ex-guardia-medica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "cremona/66977779d4ad.txt",
+   "titolo": "Continuità Assistenziale (ex guardia medica) | ASST Cremona",
+   "sha": "830eb29b5bf15f630693f0f96a56cf066065994751d8729962a8c2e423c486c6",
+   "caratteri": 4075,
+   "cambiata": true
+  },
+  {
+   "asl": "cremona",
+   "url": "https://www.asst-cremona.it/strutture/integrazione-e-valutazione-fragilita-cremona",
+   "controllata": "2026-10-22",
+   "http": 403
+  },
+  {
+   "asl": "cremona",
+   "url": "https://www.asst-crema.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "cremona/a01bbdacabe5.txt",
+   "titolo": "ASST Crema | EDC - ASST CREMA",
+   "sha": "c90a7ad2dead2cc4bbb51891b1229a9ce6ad0e6a5b711d859442797272c08fb7",
+   "caratteri": 4751,
+   "cambiata": true
+  },
+  {
+   "asl": "cremona",
+   "url": "https://www.asst-crema.it/cup-crema",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "cremona/06ac4bf7e7a4.txt",
+   "titolo": "CUP Presidio Ospedale Maggiore di Crema | EDC - ASST CREMA",
+   "sha": "7ff994e148e0c809aa92c3db85dbe5911627e17548d0c7d6615e7e21e0f365af",
+   "caratteri": 1676,
+   "cambiata": true
+  },
+  {
+   "asl": "cremona",
+   "url": "https://www.asst-crema.it/continuita-assistenziale-ex-guardia-medica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "cremona/66f8793ff4cf.txt",
+   "titolo": "Continuità assistenziale (ex guardia medica) | EDC - ASST CREMA",
+   "sha": "1d7e26060ed1cdcd27d773431ceb88786777c9995cb1ce721dba9a2e1ca63acc",
+   "caratteri": 3219,
+   "cambiata": true
+  },
+  {
+   "asl": "cremona",
+   "url": "https://www.asst-cremona.it/amministrazione-trasparente/tempi-d-attesa",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "cremona/a90555d0d040.txt",
+   "titolo": "TEMPI D'ATTESA | ASST Cremona",
+   "sha": "d37b7dc0dae9836809d2e7be19ba361e14dc3b6e5383b2eacf9afd3d0576cbec",
+   "caratteri": 12214,
+   "cambiata": true
+  },
+  {
    "asl": "lecco",
    "url": "https://www.ats-brianza.it/",
    "controllata": "2026-10-22",
@@ -612,6 +1199,81 @@
    "sha": "0b2239d896dee6c367906ea1f73d0c8cc2964f08de5a3ff3aaf12317791ff164",
    "caratteri": 24688,
    "cambiata": false
+  },
+  {
+   "asl": "lecco",
+   "url": "https://www.ats-brianza.it/it/urp-ats-brianza.html",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
+   "asl": "lecco",
+   "url": "https://www.ats-brianza.it/guardia-medica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "lecco/bf176938ac36.txt",
+   "titolo": "Continuità Assistenziale (ex Guardia Medica)",
+   "sha": "6a4c50e3da533a12d2118ace97ff09096c94d7b684e600359ea8b01734facddb",
+   "caratteri": 6720,
+   "cambiata": true
+  },
+  {
+   "asl": "lecco",
+   "url": "https://www.ats-brianza.it/cure-domiciliari-cure-palliative",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "lecco/c39b3e70f16a.txt",
+   "titolo": "Cure domiciliari / Cure palliative",
+   "sha": "b15b0bdc2baa8fb2da2b95d6ddb1690199764e8d78cc16c9ff0691cd86c91319",
+   "caratteri": 7457,
+   "cambiata": false
+  },
+  {
+   "asl": "lecco",
+   "url": "https://www.ats-brianza.it/servizi-sul-territorio/sportelli-delle-asst",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "file": "lecco/06746983bae5.txt",
+   "titolo": "Sportelli delle ASST",
+   "sha": "517a463974972a055742fc8d5413db0fa71a75c5da6ad7ef2bca44b6e3a7907a",
+   "caratteri": 3580,
+   "cambiata": true
+  },
+  {
+   "asl": "lecco",
+   "url": "https://www.asst-lecco.it/informazioni-utili/ufficio-relazioni-col-pubblico/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.asst-lecco.it/",
+   "file": "lecco/fa19519628bf.txt",
+   "titolo": "ASST Lecco – Regione Lombardia",
+   "sha": "d87cc616dc9821fbb004e1401bf26d76c7eb338d246dfcd6bec409c7fd25399d",
+   "caratteri": 19979,
+   "cambiata": true
+  },
+  {
+   "asl": "lecco",
+   "url": "https://asst-lecco.it/continuita-assistenziale",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.asst-lecco.it/",
+   "file": "lecco/d2dfcd7d62ba.txt",
+   "titolo": "ASST Lecco – Regione Lombardia",
+   "sha": "d87cc616dc9821fbb004e1401bf26d76c7eb338d246dfcd6bec409c7fd25399d",
+   "caratteri": 19979,
+   "cambiata": true
+  },
+  {
+   "asl": "lecco",
+   "url": "https://www.asst-lecco.it/amministrazione-trasparente/servizi-erogati/liste-di-attesa/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "lecco/1e3bf322590b.txt",
+   "titolo": "Liste di attesa – ASST Lecco",
+   "sha": "52af0aa9fe067dbda29821f4f5720980a2f19b95f7022dac1e5cea37a881d8f9",
+   "caratteri": 19008,
+   "cambiata": true
   },
   {
    "asl": "lodi",
@@ -702,6 +1364,123 @@
    "cambiata": false
   },
   {
+   "asl": "lodi",
+   "url": "https://www.ats-milano.it/urp-upt",
+   "controllata": "2026-10-22",
+   "http": 403
+  },
+  {
+   "asl": "lodi",
+   "url": "https://www.ats-milano.it/telefono-posta-elettronica",
+   "controllata": "2026-10-22",
+   "http": 403
+  },
+  {
+   "asl": "lodi",
+   "url": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/assistenza-socio-sanitaria/continuita-assistenziale-guardia-medica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "lodi/4ea2eaaa0d67.txt",
+   "titolo": "Continuità Assistenziale - Guardia medica | ATS Milano",
+   "sha": "0ba63e62c415abb6f2e867c1df9f15a72f7899b87d3c99c067e44834b16a1bc0",
+   "caratteri": 3328,
+   "cambiata": true
+  },
+  {
+   "asl": "lodi",
+   "url": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/assistenza-sociosanitaria/continuita-assistenziale-guardia-medica/continuita-assistenziale/continuita-assistenziale",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "lodi/ca8d909aeadb.txt",
+   "titolo": "Continuità assistenziale | ATS Milano",
+   "sha": "0cb985bb7a3294b55fc9310ffeba03995e32e269d61f1260e6f032d5cf58f9f3",
+   "caratteri": 7687,
+   "cambiata": true
+  },
+  {
+   "asl": "lodi",
+   "url": "https://www.ats-milano.it/notizie/numero-unico-116117",
+   "controllata": "2026-10-22",
+   "http": 403
+  },
+  {
+   "asl": "lodi",
+   "url": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/disabilita-non-autosufficienza/assistenza-domiciliare/assistenza-domiciliare-integrata-adi/assistenza-domiciliare-integrata-adi",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "lodi/89f5fa11b611.txt",
+   "titolo": "Assistenza Domiciliare Integrata (ADI) | ATS Milano",
+   "sha": "507756438b131759a9babc2dc01e4158b048092c94b2d4ed638052ae5b2873f1",
+   "caratteri": 6422,
+   "cambiata": true
+  },
+  {
+   "asl": "lodi",
+   "url": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/assistenza-sociosanitaria/case-comunita/casa-comunita",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "lodi/453f8cabd87c.txt",
+   "titolo": "Casa di comunità | ATS Milano",
+   "sha": "0e7804536daa7f08d2c44c7df154f8454f464a10b9f6a526035a6cf679ae725f",
+   "caratteri": 7888,
+   "cambiata": false
+  },
+  {
+   "asl": "lodi",
+   "url": "https://www.asst-lodi.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "lodi/acddbf4f756b.txt",
+   "titolo": "HOME - www.asst-lodi.it",
+   "sha": "9d3d11dc4e4851f0658312eaf58a88ea775528c784b79dd902c4b20f36962eea",
+   "caratteri": 6194,
+   "cambiata": true
+  },
+  {
+   "asl": "lodi",
+   "url": "https://www.asst-lodi.it/en/contatti",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "lodi/7af6b04faccb.txt",
+   "titolo": "CONTATTI - www.asst-lodi.it",
+   "sha": "39a8221a9d3a04651bcc0c2052c14abb450fc459bc99b418d95715dcbf7ede22",
+   "caratteri": 5999,
+   "cambiata": true
+  },
+  {
+   "asl": "lodi",
+   "url": "https://www.asst-lodi.it/en/telefono-e-posta-elettronica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "lodi/3194403b9580.txt",
+   "titolo": "Telefono e posta elettronica - www.asst-lodi.it",
+   "sha": "4c18ec0e8f5346cdd7c5d1b2662bc8e582fdf20c286d0f46a39ec3d88b17f516",
+   "caratteri": 5642,
+   "cambiata": true
+  },
+  {
+   "asl": "lodi",
+   "url": "https://www.asst-lodi.it/en/continuita-assitenziale-ex-guardia-medica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "lodi/785019376f0c.txt",
+   "titolo": "Continuita assitenziale - ex Guardia Medica - www.asst-lodi.it",
+   "sha": "2f7e1717f0acd17cabfcb8da3b9aea286d4b0198f1da9d50e3dc8d5c0a5bed5e",
+   "caratteri": 6827,
+   "cambiata": true
+  },
+  {
+   "asl": "lodi",
+   "url": "https://www.asst-lodi.it/tempi-di-attesa1",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "lodi/bc83725d0eb8.txt",
+   "titolo": "TempiAttesa - Tempi di Attesa - www.asst-lodi.it",
+   "sha": "d41557cba093e0a87abb39c553d81c9d18f06379886f7afb431c71a7f14fd186",
+   "caratteri": 5150,
+   "cambiata": true
+  },
+  {
    "asl": "mantova",
    "url": "https://www.ats-valpadana.it/",
    "controllata": "2026-10-22",
@@ -766,6 +1545,68 @@
    "sha": "1d914fbec0f0ef67c25893edfa4e489275ce3332f07c81a479fbd69b699f610b",
    "caratteri": 5534,
    "cambiata": false
+  },
+  {
+   "asl": "mantova",
+   "url": "https://www.ats-valpadana.it/contenuto-web/-/asset_publisher/0DtvIvbG5Z49/content/continuita-assistenziale-ex-guardia-medica-",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
+   "asl": "mantova",
+   "url": "https://www.ats-valpadana.it/cure-domiciliari",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "mantova/3473783b689f.txt",
+   "titolo": "Cure domiciliari | ATS VALPADANA",
+   "sha": "8552f361ba811cde99d4f4413b32c93769784c8e5f94a9eab00037f32c5864e4",
+   "caratteri": 4120,
+   "cambiata": true
+  },
+  {
+   "asl": "mantova",
+   "url": "https://www.asst-mantova.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "mantova/dc06edacc507.txt",
+   "titolo": "Homepage | ASST MANTOVA",
+   "sha": "b9e3ce826e5da6a077c1180c07d98be235e8383a5afcacb4b07fa42cf7dac1fc",
+   "caratteri": 8557,
+   "cambiata": true
+  },
+  {
+   "asl": "mantova",
+   "url": "https://www.asst-mantova.it/en/amministrazione-trasparente/telefono-e-posta-elettronica",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
+   "asl": "mantova",
+   "url": "https://www.asst-mantova.it/come-prenotare-prestazioni-specialistiche-ambulatoriali",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "mantova/0cdff04f3f66.txt",
+   "titolo": "COME PRENOTARE LE PRESTAZIONI SPECIALISTICHE AMBULATORIALI | ASST MANTOVA",
+   "sha": "9a77612c24696c1eb864e5e06f7606f445989112a93c118a933b4f846ae48081",
+   "caratteri": 3601,
+   "cambiata": true
+  },
+  {
+   "asl": "mantova",
+   "url": "https://www.asst-mantova.it/continuita-assistenziale-ex-guardia-medica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "mantova/7dd52cd50f42.txt",
+   "titolo": "Continuità Assistenziale (ex Guardia Medica) | ASST MANTOVA",
+   "sha": "b5ca15c4a10ea1de089c3aa2d2ba8e111027e8ef9051ab142b2946197ee982ea",
+   "caratteri": 2971,
+   "cambiata": true
+  },
+  {
+   "asl": "mantova",
+   "url": "https://www.asst-mantova.it/en/amministrazione-trasparente/liste-di-attesa",
+   "controllata": "2026-10-22",
+   "http": 404
   },
   {
    "asl": "milano",
@@ -1022,6 +1863,563 @@
    "cambiata": false
   },
   {
+   "asl": "milano",
+   "url": "https://www.prenotasalute.regione.lombardia.it/sito/Menu-principale/Come-prenotare/Contact-Center-numero-verde-800.638.638",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/dd706d3174e4.txt",
+   "titolo": "Regione Lombardia - Portale prenotazioni - Contact Center (numero verde 800.638.638)",
+   "sha": "c411bbbad5aa8ec774999c1232f4c8790c84b8e7017ad67faa0f97d45ebced66",
+   "caratteri": 1702,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.prenotasalute.regione.lombardia.it/sito/Menu-principale/Come-prenotare",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/62a80776a9cf.txt",
+   "titolo": "Regione Lombardia - Portale prenotazioni - Come prenotare",
+   "sha": "f2768b5f8be2f85b77ab4ae7cfdf6ffb0a39ece7741e014e2ce751a3fed33c52",
+   "caratteri": 5180,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://prenotasalute.regione.lombardia.it/sito/Menu-principale/Come-prenotare/In-Farmacia",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/1e927b9c1605.txt",
+   "titolo": "Regione Lombardia - Portale prenotazioni - In Farmacia",
+   "sha": "7e5911e879494ec6041bd31f3abd39409236e5155088f2f1f69dae07e8be7af7",
+   "caratteri": 1486,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://prenotasalute.regione.lombardia.it/sito/Menu-istituzionale/Contatti",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/68b8f38ddf67.txt",
+   "titolo": "Regione Lombardia - Portale prenotazioni - Contatti",
+   "sha": "a1d2f26dcfdd98df9fd720768d19986b9a71f5ddaa4b5a143d347d61492e5182",
+   "caratteri": 2437,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.siss.regione.lombardia.it/wps/portal/site/siss/servizi-per-il-territorio/contact-center-regionale",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/9f4d8baa7c0f.txt",
+   "titolo": "Regione Lombardia",
+   "sha": "1b707aa8edda51907a130a77ae68038b598aeedfca87f1ecea92f608182aa2bf",
+   "caratteri": 8673,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/prenotazione-online-visite-esami",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/f205976e1c67.txt",
+   "titolo": "Prenotazione online di visite ed esami",
+   "sha": "90aca8790a77dc6a26aeeaaa962494a80f26b197903d1284accba6f61f32d72a",
+   "caratteri": 11447,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/farmaci-visite-esami--prescrizione-prenotazione-ssr",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/6f0e8e6d17c4.txt",
+   "titolo": "Farmaci, visite ed esami: prescrizione e prenotazione tramite SSR",
+   "sha": "a5e47948e56148c5989281bc9640f8d076d68236f8bbc037e7d2896d081af6e6",
+   "caratteri": 21126,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/servizi-sanitari-online-regione-lombardia",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/7a080013b341.txt",
+   "titolo": "I servizi sanitari online di Regione Lombardia",
+   "sha": "b0dd6541d9d9539884b9cfdce7e4b0afcd39ace9663b44285c28857f7f0fb6c4",
+   "caratteri": 17321,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.regione.lombardia.it/sanita/emergenze-e-urgenze/pronto-soccorso",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/0e62576a150d.txt",
+   "titolo": "Pronto Soccorso",
+   "sha": "f93306b553fec1aa8755afcacb90fb5437bea1bcf5ea6c4a7980cc133bd2dc5d",
+   "caratteri": 19727,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.regione.lombardia.it/contatti",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/b3179021ae86.txt",
+   "titolo": "Contatti",
+   "sha": "f12dc724a7fab537d3e09ab079db39f07a5bda4a873a52ab94d18beba57f249d",
+   "caratteri": 8251,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.fascicolosanitario.regione.lombardia.it/app-salutile-prenotazioni",
+   "controllata": "2026-10-22",
+   "http": 0,
+   "errore": "curl: (47) Maximum (50) redirects followed"
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.fascicolosanitario.regione.lombardia.it/contatti",
+   "controllata": "2026-10-22",
+   "http": 0,
+   "errore": "curl: (47) Maximum (50) redirects followed"
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.areu.lombardia.it/web/home/continuita-assistenziale",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/f4e221742319.txt",
+   "titolo": "Continuità Assistenziale - AREU - Agenzia Regionale Emergenza Urgenza",
+   "sha": "38f3dd59e504dcf69d795168dde1f2b4b7746567f0bb96c272ce757f002799b5",
+   "caratteri": 8477,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.areu.lombardia.it/web/home/sistema-delle-cure-mediche-non-urgenti",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/715ec373b6ef.txt",
+   "titolo": "Sistema cure mediche non urgenti - AREU - Agenzia Regionale Emergenza Urgenza",
+   "sha": "383f99953de79681b36185cb2a8693c0eb8fc7ca73ae384416a1db77e58050e9",
+   "caratteri": 11878,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.ats-milano.it/urp-upt",
+   "controllata": "2026-10-22",
+   "http": 403
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.ats-milano.it/telefono-posta-elettronica",
+   "controllata": "2026-10-22",
+   "http": 403
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/assistenza-socio-sanitaria/continuita-assistenziale-guardia-medica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/4ea2eaaa0d67.txt",
+   "titolo": "Continuità Assistenziale - Guardia medica | ATS Milano",
+   "sha": "0ba63e62c415abb6f2e867c1df9f15a72f7899b87d3c99c067e44834b16a1bc0",
+   "caratteri": 3328,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/assistenza-sociosanitaria/continuita-assistenziale-guardia-medica/continuita-assistenziale/continuita-assistenziale",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/ca8d909aeadb.txt",
+   "titolo": "Continuità assistenziale | ATS Milano",
+   "sha": "0cb985bb7a3294b55fc9310ffeba03995e32e269d61f1260e6f032d5cf58f9f3",
+   "caratteri": 7687,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.ats-milano.it/notizie/numero-unico-116117",
+   "controllata": "2026-10-22",
+   "http": 403
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/disabilita-non-autosufficienza/assistenza-domiciliare/assistenza-domiciliare-integrata-adi/assistenza-domiciliare-integrata-adi",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/89f5fa11b611.txt",
+   "titolo": "Assistenza Domiciliare Integrata (ADI) | ATS Milano",
+   "sha": "507756438b131759a9babc2dc01e4158b048092c94b2d4ed638052ae5b2873f1",
+   "caratteri": 6422,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.ospedaleniguarda.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/ef8e145da5fe.txt",
+   "titolo": "Home Page | ASST Grande Ospedale Metropolitano Niguarda",
+   "sha": "f6d47bc5d982fca126000e88b2bd2d090dc4f98d91077c7e628394c442a90277",
+   "caratteri": 5710,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.ospedaleniguarda.it/chi-siamo/organizzazione/comunicazione-e-relazioni-esterne-urp",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/8334f755f710.txt",
+   "titolo": "COMUNICAZIONE E RELAZIONI ESTERNE - URP | ORGANIZZAZIONE | ASST Grande Ospedale Metropolitano Niguarda",
+   "sha": "6afdc96432d889ecf68706defa8985073cf469e5bb51251190d79a23e485e4cc",
+   "caratteri": 5588,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.ospedaleniguarda.it/contents/prenota_visita_esame",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/070bffd43ab1.txt",
+   "titolo": "Prenota Visite ed Esami | ASST Grande Ospedale Metropolitano Niguarda",
+   "sha": "a0ef610ab60f215fc4a7e285a1a085e2b16f6458122ce5afcaf8fe13e434bde9",
+   "caratteri": 6116,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.asst-santipaolocarlo.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/2171fa92b4bc.txt",
+   "titolo": "ASST Santi Paolo e Carlo | ASST Santi Paolo e Carlo",
+   "sha": "55474b2f2004819787a243012b05494bb60d6e7be5b3422d726c2f8d1130dc23",
+   "caratteri": 1907,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.asst-santipaolocarlo.it/strutture/contatti-asst-sancarlo-sanpaolo",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/b226360eeb73.txt",
+   "titolo": "NUMERI UTILI | ASST Santi Paolo e Carlo",
+   "sha": "5402e7a225b1d8477518647c9af08b5c2ff21247e8a0cbfc10ac379ff5be185a",
+   "caratteri": 5425,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.asst-santipaolocarlo.it/strutture/territorio",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.asst-santipaolocarlo.it/strutture/prenota-visite-ed-esami",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/7b03a6dab526.txt",
+   "titolo": "PRENOTA VISITE ED ESAMI | ASST Santi Paolo e Carlo",
+   "sha": "2ac542c9da33ab28458455437c93488dbfd89b6fa5572f65325847c22c3d2607",
+   "caratteri": 3493,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.asst-santipaolocarlo.it/eventi/116-117-numero-unico-continuita-assistenziale-ex-guardia-medica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/4eeb1a4279e8.txt",
+   "titolo": "116.117 numero unico continuità assistenziale (ex guardia medica) | ASST Santi Paolo e Carlo",
+   "sha": "f521f1a9f49b59e00eab6c0d9c745ec35339d8c9ba87379e2c0298e8a3674a43",
+   "caratteri": 2019,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.asst-santipaolocarlo.it/case-comunita",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/fdf3bbd51d23.txt",
+   "titolo": "CASE DI COMUNITÀ | ASST Santi Paolo e Carlo",
+   "sha": "0f21927e6b6acc023e8b5d8448b2625b53899b56f0f0d672bd0c95b71252d328",
+   "caratteri": 2967,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.asst-fbf-sacco.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/355cd7018a8d.txt",
+   "titolo": "Asst Fatebenefratelli Sacco",
+   "sha": "fa2376e6b040a0eca37228b76ef6adf1bfdd073f019e1fd7fd62a62b565c33fd",
+   "caratteri": 9471,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://asst-fbf-sacco.it/pages/pazienti/come-prenotare",
+   "controllata": "2026-10-22",
+   "http": 0,
+   "errore": "curl: (6) Could not resolve host: asst-fbf-sacco.it"
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.asst-fbf-sacco.it/news/info/numero-unico-116-117",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.asst-fbf-sacco.it/404",
+   "file": "milano/8e45555e9dc9.txt",
+   "titolo": "Pagina non trovata",
+   "sha": "11ad2f5557ac8827acc0e1eb24f05a06629383294a7a9b1e76e47b380cbe69ff",
+   "caratteri": 3255,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.asst-nordmilano.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/79595849743a.txt",
+   "titolo": "Home page",
+   "sha": "3b526c92bbd48ea50f5d4d75965c5b55f1addd426bf1765a0fff2c9a8df002dc",
+   "caratteri": 12391,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "http://www.asst-nordmilano.it/urp",
+   "controllata": "2026-10-22",
+   "http": 0,
+   "errore": "curl: (28) Connection timed out after 30002 milliseconds"
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.asst-nordmilano.it/cup",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/4f29258f477b.txt",
+   "titolo": "CUP - Centro Unico Prenotazione",
+   "sha": "ea29141c8d5ca9e4e6ee728d525ba8c77de86754db3d97d215c8ce217ac55345",
+   "caratteri": 17599,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.asst-nordmilano.it/continuit%C3%A0-assistenziale",
+   "controllata": "2026-10-22",
+   "http": 404,
+   "finale": "https://www.asst-nordmilano.it/it/continuit%C3%A0-assistenziale"
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.asst-nordmilano.it/pua-punto-unico-di-accesso",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/7ebd299752ce.txt",
+   "titolo": "PUA - Punto Unico di Accesso",
+   "sha": "fc4d634a88dfa90e5a1955aa19e77fc078d63f9fdd3b851d7d39056d1e7fd0bd",
+   "caratteri": 7876,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.asst-rhodense.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/7e24da1a7c3e.txt",
+   "titolo": "Homepage - ASST Rhodense",
+   "sha": "59d208ed176b238528fd6b8c564b2404c7f63100ff0aa39728c97a92d4e8bccb",
+   "caratteri": 918,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.asst-rhodense.it/inew/ASST/contatti.html",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "finale": "https://www.asst-rhodense.it/v2/404.html",
+   "file": "milano/4e682893b56e.txt",
+   "titolo": "404 - ASST Rhodense",
+   "sha": "2050beee52c40e68aea9279487cc5ac3693f0321344358676283d444c566767e",
+   "caratteri": 1876,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.asst-rhodense.it/inew/ASST/prenotazioni.html",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "finale": "https://www.asst-rhodense.it/v2/404.html",
+   "file": "milano/33af0dc0d52b.txt",
+   "titolo": "404 - ASST Rhodense",
+   "sha": "2050beee52c40e68aea9279487cc5ac3693f0321344358676283d444c566767e",
+   "caratteri": 1876,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.asst-ovestmi.it/news/servizio-continuita-assistenziale",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/1c3db343c048.txt",
+   "titolo": "SERVIZIO DI CONTINUITÀ ASSISTENZIALE | ASST Ovest Milanese",
+   "sha": "deaa1e04780eb6f642e6d7aebab8d22dc5801fac21fa1c17f3c1f83d60f40c97",
+   "caratteri": 2587,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.asst-melegnano-martesana.it/servizi-territoriali/prenotazioni-cup-23",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.asst-melegnano-martesana.it/servizi-territoriali/centro-prenotazioni-cup-23",
+   "file": "milano/024f541bb40a.txt",
+   "titolo": "Centro Prenotazioni - CUP - ASST Melegnano Martesana",
+   "sha": "fd0cf9adf0fb423a12f2a398f6c4bdd00303c51ced8953d5025ae87bec4cbbaa",
+   "caratteri": 8982,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.asst-melegnano-martesana.it/servizi-territoriali/continuita-assistenziale-ex-guardia-medica-8",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/b1f81ac8b1c0.txt",
+   "titolo": "Continuità Assistenziale – ex Guardia Medica - ASST Melegnano Martesana",
+   "sha": "b59ffccf368baab2b0d85c87eba21cfc2aef11995ddf4238a0bd54456fe74c27",
+   "caratteri": 7993,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.asst-melegnano-martesana.it/servizi-territoriali/cure-domiciliari-adi-9",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/40e6e7a51547.txt",
+   "titolo": "Cure Domiciliari A.D.I. - ASST Melegnano Martesana",
+   "sha": "0890715a0ac97173d7f29658d97683963a8b24e91cb81a5807b2d5dfde6d91f6",
+   "caratteri": 11994,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.asst-pini-cto.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.asst-pini-cto.it/it",
+   "certificato": "non valido",
+   "file": "milano/3e6a58d54387.txt",
+   "titolo": "Home page | ASST Gaetano Pini - CTO",
+   "sha": "a9416f2782840f5411a9f7d58d06621c6f770882d648074c163458b8902ab29d",
+   "caratteri": 5769,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.asst-pini-cto.it/urp",
+   "controllata": "2026-10-22",
+   "http": 403,
+   "finale": "https://www.asst-pini-cto.it/it/ufficio-relazioni-pubblico-urp",
+   "certificato": "non valido"
+  },
+  {
+   "asl": "milano",
+   "url": "https://asst-pini-cto.it/telefoni-e-posta-elettronica",
+   "controllata": "2026-10-22",
+   "http": 0,
+   "errore": "curl: (6) Could not resolve host: asst-pini-cto.it"
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.asst-pini-cto.it/it/servizi-al-paziente/ssn-servizio-sanitario-nazionale/prenotazioni/visite-ed-esami",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "milano/c733b7686402.txt",
+   "titolo": "Visite ed esami | ASST Gaetano Pini - CTO",
+   "sha": "e8ff34fa41f5360eff4b1a7ee2eea838f9cac86ad4ed31ff4a081031a662740a",
+   "caratteri": 17030,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.regione.lombardia.it/wps/portal/istituzionale/HP/DettaglioServizio/servizi-e-informazioni/Cittadini/salute-e-prevenzione/prenotazioni-ticket-e-tempi-di-attesa/Tempi-attesa-prestazioni-sanitarie/Tempi-attesa-prestazioni-sanitarie",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/tempi-attesa-pretazioni-sanitarie",
+   "file": "milano/bb1d66ffe548.txt",
+   "titolo": "Tempi di attesa delle prestazioni sanitarie",
+   "sha": "4d72df8e731a018ab3906458c0a088e0d049481f5bf631620e3a4b4d24401c20",
+   "caratteri": 22785,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.asst-santipaolocarlo.it/amministrazione-trasparente/liste-attesa",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/f790cf2438b7.txt",
+   "titolo": "Liste di attesa | ASST Santi Paolo e Carlo",
+   "sha": "fe30c3a9cdfc18c4627a9c1a8614f8a6478a87f3f2418352536aa60aa100edf5",
+   "caratteri": 23510,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.ospedaleniguarda.it/amministrazione_trasparente/servizi-erogati/liste-di-attesa",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/37fafcf1bd96.txt",
+   "titolo": "Liste e Tempi d'attesa | ASST Grande Ospedale Metropolitano Niguarda",
+   "sha": "0482139cac1caa1a11afdffb4e498663e64df5d62643cd06923faddb8304778e",
+   "caratteri": 15135,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.asst-melegnano-martesana.it/amministrazione-trasparente/servizi-erogati-148/liste-di-attesa-152",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/91bb0d244f6b.txt",
+   "titolo": "Liste di attesa - ASST Melegnano Martesana",
+   "sha": "64f20d004324e684c750439d336ce8619332817e3cdbec883570bfa05fcca161",
+   "caratteri": 7290,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.asst-ovestmi.it/strutture/ufficio-pubblica-tutela-upt",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/f97a37ddbc3d.txt",
+   "titolo": "Ufficio di Pubblica Tutela - UPT | ASST Ovest Milanese",
+   "sha": "e3735fe83f7ed963b3b0dc70f4b006496e0be7ee46f9f8f4e0df23571536348c",
+   "caratteri": 4955,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.asst-rhodense.it/v2/varie/prenotazione-referti.html",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "milano/885a393c4db5.txt",
+   "titolo": "ASST Rhodense - PRENOTAZIONI E RITIRO REFERTI",
+   "sha": "514ec514d0f05db8dc1b80027aafb71cf96335e5da5d6dad6aea8ffd360caccb",
+   "caratteri": 8349,
+   "cambiata": true
+  },
+  {
    "asl": "monza-brianza",
    "url": "https://www.ats-brianza.it/",
    "controllata": "2026-10-22",
@@ -1089,6 +2487,110 @@
    "sha": "4456f6a79dac9d8b13d18b7f94794f7b317f9cfb69020d6fe5a59e3c090222f7",
    "caratteri": 10642,
    "cambiata": false
+  },
+  {
+   "asl": "monza-brianza",
+   "url": "https://www.ats-brianza.it/it/urp-ats-brianza.html",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
+   "asl": "monza-brianza",
+   "url": "https://www.ats-brianza.it/guardia-medica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "monza-brianza/bf176938ac36.txt",
+   "titolo": "Continuità Assistenziale (ex Guardia Medica)",
+   "sha": "6a4c50e3da533a12d2118ace97ff09096c94d7b684e600359ea8b01734facddb",
+   "caratteri": 6720,
+   "cambiata": true
+  },
+  {
+   "asl": "monza-brianza",
+   "url": "https://www.ats-brianza.it/servizi-sul-territorio/sportelli-delle-asst",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "file": "monza-brianza/06746983bae5.txt",
+   "titolo": "Sportelli delle ASST",
+   "sha": "517a463974972a055742fc8d5413db0fa71a75c5da6ad7ef2bca44b6e3a7907a",
+   "caratteri": 3580,
+   "cambiata": true
+  },
+  {
+   "asl": "monza-brianza",
+   "url": "https://www.asst-monza.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.irccs-sangerardo.it/",
+   "certificato": "non valido",
+   "file": "monza-brianza/b7a3b1e1a9f6.txt",
+   "titolo": "Fondazione IRCCS San Gerardo dei Tintori - Monza - irccs-sangerardo",
+   "sha": "40f9b5aa11e81ac53bd0ed3a234b76799257ee146e4703850d8f952acfb77114",
+   "caratteri": 18615,
+   "cambiata": true
+  },
+  {
+   "asl": "monza-brianza",
+   "url": "https://asst-monza.it/contatti",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.irccs-sangerardo.it/contatti",
+   "certificato": "non valido",
+   "file": "monza-brianza/3a991b5865ae.txt",
+   "titolo": "Contatti - irccs-sangerardo",
+   "sha": "634a3505a2e83b55e4910fc03804373b057f64aa7f6e12d5ed0dd810049ecd62",
+   "caratteri": 8574,
+   "cambiata": true
+  },
+  {
+   "asl": "monza-brianza",
+   "url": "https://asst-monza.it/come-prenotare",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.irccs-sangerardo.it/come-prenotare-visite-ed-esami-specialistici",
+   "certificato": "non valido",
+   "file": "monza-brianza/ccc5e671ed32.txt",
+   "titolo": "Come prenotare con il Servizio Sanitario Nazionale - irccs-sangerardo",
+   "sha": "61dda4039d04015cbf7fc911f42a546d60a2371c1caf924e885674d1e3565d12",
+   "caratteri": 12069,
+   "cambiata": true
+  },
+  {
+   "asl": "monza-brianza",
+   "url": "https://www.asst-brianza.it/",
+   "controllata": "2026-10-22",
+   "browser": true,
+   "http": 200,
+   "finale": "https://www.asst-brianza.it/web/index.php",
+   "file": "monza-brianza/b209da352e69.txt",
+   "titolo": "Azienda Socio-Sanitaria Territoriale (ASST) della Brianza",
+   "sha": "b4c8b2c39a799b585447165d3d5d69cdde22be6abcb25ae4d13bf6ebdb1cec21",
+   "caratteri": 4444,
+   "cambiata": true
+  },
+  {
+   "asl": "monza-brianza",
+   "url": "https://www.asst-brianza.it/web/index.php/schede/scheda/54",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "monza-brianza/56d706e6f08b.txt",
+   "titolo": "Azienda Socio-Sanitaria Territoriale (ASST) della Brianza",
+   "sha": "15e816255daab0ee7c4c8e9fd6d98b60734e1e8436e9f121a62be0c8057ba75e",
+   "caratteri": 5132,
+   "cambiata": true
+  },
+  {
+   "asl": "monza-brianza",
+   "url": "https://www.irccs-sangerardo.it/liste-di-attesa",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "monza-brianza/0acb45dc8cd7.txt",
+   "titolo": "Liste di attesa - irccs-sangerardo",
+   "sha": "a3bbd0823d06bb6016cad96d08156f58abaa13674a9492af854f4584df51c7e9",
+   "caratteri": 18019,
+   "cambiata": true
   },
   {
    "asl": "pavia",
@@ -1179,6 +2681,83 @@
    "cambiata": false
   },
   {
+   "asl": "pavia",
+   "url": "https://www.ats-pavia.it/tuo-medico-pediatra",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "pavia/647d0c01cf39.txt",
+   "titolo": "Il tuo Medico/pediatra - La Continuità Assistenziale | ATS Pavia",
+   "sha": "7cf699d0f0cdd8e692be95f9edab4004114b7ad9c646f6e4e37370fb7b0c888c",
+   "caratteri": 2441,
+   "cambiata": true
+  },
+  {
+   "asl": "pavia",
+   "url": "https://asst-pavia.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "pavia/14bf1e457a0d.txt",
+   "titolo": "Azienda Socio-Sanitaria Territoriale di Pavia",
+   "sha": "06ee19486f46567475943374a26b1408458c59b1d75681b8cfc5a6dc1e6c9610",
+   "caratteri": 8675,
+   "cambiata": true
+  },
+  {
+   "asl": "pavia",
+   "url": "https://asst-pavia.it/come-fare-per/prenotare-o-disdire-una-visita/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "pavia/3b149645ff04.txt",
+   "titolo": "Prenotare una visita o un esame – Azienda Socio-Sanitaria Territoriale di Pavia",
+   "sha": "6a00b73696cc829e4fb7079cd7c8c7991f77096526cfa02cac504a3e966bff03",
+   "caratteri": 7967,
+   "cambiata": true
+  },
+  {
+   "asl": "pavia",
+   "url": "https://asst-pavia.it/servizio/continuita-assistenziale-guardia-medica/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "pavia/2759801fcc83.txt",
+   "titolo": "Continuità Assistenziale – Ex Guardia medica – Azienda Socio-Sanitaria Territoriale di Pavia",
+   "sha": "ccacda7c6c87320130c5288f443aa95c01c713dcefda4fba90da433295304d78",
+   "caratteri": 7374,
+   "cambiata": true
+  },
+  {
+   "asl": "pavia",
+   "url": "https://asst-pavia.it/servizio/assistenza-domiciliare-integrata/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "pavia/5d019177125d.txt",
+   "titolo": "Cure Domiciliari – Valutazione Multidisciplinare – Azienda Socio-Sanitaria Territoriale di Pavia",
+   "sha": "f142c6239091d9a9bd4cb5866a7ef6b87f8417c0b434458eef9100cae47d4921",
+   "caratteri": 5449,
+   "cambiata": true
+  },
+  {
+   "asl": "pavia",
+   "url": "https://asst-pavia.it/novita/notizia/prenotazioni-di-specialistica-ambulatoriale-di-primo-accesso-e-percorso-di-tutela/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "pavia/498c82f57dd5.txt",
+   "titolo": "Prenotazioni di specialistica ambulatoriale di primo accesso e percorso di tutela – Azienda Socio-Sanitaria Territoriale di Pavia",
+   "sha": "959ccb638774457a7c027a98288e12c36210ff9c246109b00b9c96c5e0fe5a7a",
+   "caratteri": 4227,
+   "cambiata": true
+  },
+  {
+   "asl": "pavia",
+   "url": "https://www.ats-pavia.it/amministrazione-trasparente/liste-attesa",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "pavia/c21776270f05.txt",
+   "titolo": "Liste di attesa | ATS Pavia",
+   "sha": "cf0f2a209ee8243f8a60f45b522d5c76f81e59edcee963ebb3bd374cb76f8bc7",
+   "caratteri": 17061,
+   "cambiata": true
+  },
+  {
    "asl": "sondrio",
    "url": "https://www.ats-montagna.it/",
    "controllata": "2026-10-22",
@@ -1265,6 +2844,80 @@
    "sha": "d81228b3cfed60eeddc07531cb14181fa2e21718a6dee53918ef69577d5bdb71",
    "caratteri": 5978,
    "cambiata": false
+  },
+  {
+   "asl": "sondrio",
+   "url": "https://www.ats-montagna.it/contatti-2/telefono-e-posta-elettronica-ats-montagna/",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
+   "asl": "sondrio",
+   "url": "https://www.ats-montagna.it/continuita-assistenziale",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "sondrio/928751e39f25.txt",
+   "titolo": "Continuità Assistenziale | ATS MONTAGNA",
+   "sha": "f95cf293b15347206ca59611e3fbae035a2b2c38bb8e4109e500eca861d1e95e",
+   "caratteri": 3453,
+   "cambiata": true
+  },
+  {
+   "asl": "sondrio",
+   "url": "https://www.ats-montagna.it/medico-medicina-generale-e-pediatra-famiglia",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "sondrio/41802dabe854.txt",
+   "titolo": "Medico di Medicina Generale e Pediatra di Famiglia | ATS MONTAGNA",
+   "sha": "067a4e1c189fdafa78e10149786fa86b16430c02bf2326689adfed4f513bb531",
+   "caratteri": 6893,
+   "cambiata": true
+  },
+  {
+   "asl": "sondrio",
+   "url": "https://www.asst-val.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "sondrio/cee49d8816ab.txt",
+   "titolo": "ASST - Valtellina e Alto Lario - ASST Valtellina e Alto Lario",
+   "sha": "bbd48361f2f422b3c6131dd8f1946fea19c9f7709f5f6a47de8abb2652933817",
+   "caratteri": 7138,
+   "cambiata": true
+  },
+  {
+   "asl": "sondrio",
+   "url": "https://www.asst-val.it/ufficio-relazioni-con-il-pubblico-urp",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
+   "asl": "sondrio",
+   "url": "https://www.asst-val.it/per-il-cittadino/continuita-assistenziale-ex-guardia-medica-numero-unico-116117/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.asst-val.it/servizi-e-prestazioni/categoria/assistenza-primaria/continuita-assistenziale/",
+   "file": "sondrio/7e79a2cd58c2.txt",
+   "titolo": "Continuità assistenziale - 116117 - Asst Val",
+   "sha": "24638bc9ab60e5137082bef0be198c066bb1ecc8dd45f1af117d0f661c871809",
+   "caratteri": 6627,
+   "cambiata": true
+  },
+  {
+   "asl": "sondrio",
+   "url": "https://www.asst-val.it/en/liste-di-attesa",
+   "controllata": "2026-10-22",
+   "http": 404
+  },
+  {
+   "asl": "sondrio",
+   "url": "https://www.ats-montagna.it/tempi-attesa-prestazioni-sanitarie",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "sondrio/b277774d2d40.txt",
+   "titolo": "Tempi di attesa prestazioni sanitarie | ATS MONTAGNA",
+   "sha": "8f6cd884731ad2493d3c50079b9ea0b048877607508cd7dcad5820a3d9e3d767",
+   "caratteri": 10508,
+   "cambiata": true
   },
   {
    "asl": "varese",
@@ -1376,6 +3029,197 @@
    "sha": "fb876e2da271cd631ff4398e1c3039dbf9a413e77e1d37eff356dad6c23b18a2",
    "caratteri": 6013,
    "cambiata": false
+  },
+  {
+   "asl": "varese",
+   "url": "https://www.ats-insubria.it/agenzia/ufficio-pubblica-tutela",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "varese/a91deb3f77d7.txt",
+   "titolo": "Ufficio Pubblica Tutela - ATS Insubria",
+   "sha": "488d85a512eeaecc03c5881358408fdbfaffa2b62b83ca411ca37ae86dab5310",
+   "caratteri": 6799,
+   "cambiata": true
+  },
+  {
+   "asl": "varese",
+   "url": "https://www.ats-insubria.it/amministrazione-trasparente/category/797-telefono-e-posta-elettronica",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "varese/a03dace28395.txt",
+   "titolo": "Telefono e posta elettronica - ATS Insubria",
+   "sha": "d5cef1bd54b3a6613b3189f7b06d56454caa7af21df21f6f01d6a466b3826fed",
+   "caratteri": 21185,
+   "cambiata": true
+  },
+  {
+   "asl": "varese",
+   "url": "https://www.ats-insubria.it/aree-tematiche/cure-primarie/continuita-assistenziale",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "varese/f3ae8ed2f6b7.txt",
+   "titolo": "Continuità Assistenziale (ex Guardia Medica) - ATS Insubria",
+   "sha": "97ec010dba0e65dff67c14928fdb88e6998d6c3611fcce7f655e7550ea91447a",
+   "caratteri": 5007,
+   "cambiata": true
+  },
+  {
+   "asl": "varese",
+   "url": "https://www.ats-insubria.it/servizi/cure-domiciliari",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "varese/13cd34d7dec4.txt",
+   "titolo": "Cure Domiciliari (CD) - ATS Insubria",
+   "sha": "8c97ca3224f88c4f64342a4954e92f69854241a45d769a71ce1db73ae685bd7e",
+   "caratteri": 6802,
+   "cambiata": true
+  },
+  {
+   "asl": "varese",
+   "url": "https://www.asst-settelaghi.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "varese/2e15c4f801d9.txt",
+   "titolo": "Servizi Sanitari e Assistenza Medica - ASST Settelaghi - ASST Settelaghi",
+   "sha": "ecfb70a33330b899f0ebb42d4e9db0145cfdec7f200bf9bab8ebedabbe71ac79",
+   "caratteri": 5053,
+   "cambiata": true
+  },
+  {
+   "asl": "varese",
+   "url": "https://www.asst-settelaghi.it/ufficio-relazioni-con-il-pubblico-e-comunicazione",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.asst-settelaghi.it/amministrazione-trasparente-archivio/ufficio-relazioni-con-il-pubblico-e-comunicazione",
+   "file": "varese/f38118a9f4e4.txt",
+   "titolo": "Ufficio Relazioni con il Pubblico e Comunicazione — Archivio Amministrazione Trasparente - ASST Settelaghi",
+   "sha": "7e72d0b3c787aac24ec8486fe07f52cc280bf480db3a6cb8f424693877f04fa6",
+   "caratteri": 2236,
+   "cambiata": true
+  },
+  {
+   "asl": "varese",
+   "url": "https://www.asst-settelaghi.it/en/contatti1",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.asst-settelaghi.it/contatti",
+   "file": "varese/98f904cfb89d.txt",
+   "titolo": "Contatti - ASST Settelaghi - ASST Settelaghi",
+   "sha": "7e78becbe9e50850f8d92fdf8901cab2e7b2c340516ebad8371e3c65eb51f32c",
+   "caratteri": 2322,
+   "cambiata": true
+  },
+  {
+   "asl": "varese",
+   "url": "https://www.asst-settelaghi.it/en/cup-ospedale-circolo",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.asst-settelaghi.it/sedi/cup-ospedale-di-circolo",
+   "file": "varese/4d1415008a2b.txt",
+   "titolo": "CUP - Ospedale di Circolo - ASST Settelaghi - ASST Settelaghi",
+   "sha": "e188c75691d2113d6b774bb04fed3427c5244162596773f1d1f09484d118512b",
+   "caratteri": 2617,
+   "cambiata": true
+  },
+  {
+   "asl": "varese",
+   "url": "https://www.asst-settelaghi.it/sedi/continuita-assistenziale-casa-di-comunita-di-gazzada",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "varese/448fa8f9d06c.txt",
+   "titolo": "Continuità assistenziale - Casa di Comunità di Gazzada Schianno - ASST Settelaghi - ASST Settelaghi",
+   "sha": "69453a92033cdad821d8841db10e5dcd9062acbbd7e0459e261c55674ca08e9d",
+   "caratteri": 6427,
+   "cambiata": true
+  },
+  {
+   "asl": "varese",
+   "url": "https://www.asst-settelaghi.it/en/area-distrettuale/adi",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "finale": "https://www.asst-settelaghi.it/polo-territoriale",
+   "file": "varese/942b71646461.txt",
+   "titolo": "Polo territoriale - ASST Settelaghi - ASST Settelaghi",
+   "sha": "02744fddac9d899e312e3c780736448fbf6a1cddc0265bdb152562511c3e6c72",
+   "caratteri": 1849,
+   "cambiata": true
+  },
+  {
+   "asl": "varese",
+   "url": "https://www.asst-valleolona.it/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "varese/625ee56036b9.txt",
+   "titolo": "Home - ASST Valle Olona",
+   "sha": "368efbdcd2909aea5b7c16ace8f9a0add3cc4602572ec42d9f800992e43fcc89",
+   "caratteri": 4205,
+   "cambiata": true
+  },
+  {
+   "asl": "varese",
+   "url": "https://www.asst-valleolona.it/asst-valle-olona/contatti/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "varese/f68caec45730.txt",
+   "titolo": "Contatti - ASST Valle Olona",
+   "sha": "6dbfd6dcd60a09eeb232d6d959d046a80ec5339a3a2ff02d7fc68167b83efec7",
+   "caratteri": 3476,
+   "cambiata": true
+  },
+  {
+   "asl": "varese",
+   "url": "https://www.asst-valleolona.it/servizi/prenotazione-visite-specialistiche-ed-esami-cup/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "varese/f95fa7770007.txt",
+   "titolo": "Prenotazione visite specialistiche ed esami - CUP - ASST Valle Olona",
+   "sha": "8b82794177b46ca9b79badecdcedc5a4b7a8f51fcf1519fe5273a569b5bcc847",
+   "caratteri": 3498,
+   "cambiata": true
+  },
+  {
+   "asl": "varese",
+   "url": "https://www.asst-valleolona.it/dal-7-giugno-il-servizio-di-continuita-assistenziale-si-trasferisce-presso-la-casa-di-comunita-di-saronno/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "varese/19be4372b865.txt",
+   "titolo": "Dal 7 giugno il Servizio di Continuità Assistenziale si trasferisce presso la Casa di Comunità di Saronno - ASST Valle Olona",
+   "sha": "72a3f5b7b7dff77572fa2282b2467a6fb3e5464f51c07995811309a5139fe8a6",
+   "caratteri": 4128,
+   "cambiata": true
+  },
+  {
+   "asl": "varese",
+   "url": "https://www.asst-valleolona.it/servizi/cure-domiciliari/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "varese/c27d02fae6a1.txt",
+   "titolo": "Cure domiciliari - ASST Valle Olona",
+   "sha": "c7836eb64041c1708743a593cfb3d95dea6cf198f62521cc041201afaf617f46",
+   "caratteri": 5752,
+   "cambiata": true
+  },
+  {
+   "asl": "varese",
+   "url": "https://www.asst-valleolona.it/amm-trasparente/liste-di-attesa-3/",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "varese/fa7343016054.txt",
+   "titolo": "Liste di attesa - ASST Valle Olona",
+   "sha": "f21d5d1c4bb45ceb3877ffcf4fff0cb33a44ff5c889ab9bf1841ecaf71313bab",
+   "caratteri": 17893,
+   "cambiata": true
+  },
+  {
+   "asl": "varese",
+   "url": "https://www.ats-insubria.it/tempi-attesa",
+   "controllata": "2026-10-22",
+   "http": 200,
+   "file": "varese/cbfeecf8cea1.txt",
+   "titolo": "Informazioni sui Tempi di Attesa delle Prestazioni di Specialistica e Diagnostica Ambulatoriale - ATS Insubria",
+   "sha": "be36aadb52e41a9db461da1630043f18ecf36934d78e77eec8583bd37a9484e9",
+   "caratteri": 13406,
+   "cambiata": true
   },
   {
    "asl": "inps-lombardia",
