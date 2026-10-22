@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Visita invalidità civile INPS in ritardo? Tempi di legge e sollecito – Guida Sanità</title>
 <meta name="description" content="Entro quando deve arrivare la visita per l&#39;invalidità civile: 15, 30 o 90 giorni con il nuovo regime della riforma della disabilità (in Sicilia a Palermo, Caltanissetta, Catania, Messina), domanda entro 90 giorni e visita con la vecchia procedura. Come sollecitare l&#39;INPS.">
 <meta name="theme-color" content="#0b5f5c">
@@ -10,7 +11,7 @@
 <link rel="icon" href="../logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="manifest" href="../site.webmanifest">
-<script>document.documentElement.className += ' js';if(/\/index\.html$/.test(location.pathname))location.replace(location.pathname.slice(0,-10)+location.search+location.hash);</script>
+<script>document.documentElement.className += ' js';if(/\/index\.html$/.test(location.pathname))location.replace('/'+location.pathname.slice(0,-10).replace(/^[\/\\]+/,'')+location.search+location.hash);</script>
 <link rel="canonical" href="https://guidasanita.it/invalidita/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Guida Sanità">
@@ -19,6 +20,13 @@
 <meta property="og:description" content="Entro quando deve arrivare la visita per l&#39;invalidità civile: 15, 30 o 90 giorni con il nuovo regime della riforma della disabilità (in Sicilia a Palermo, Caltanissetta, Catania, Messina), domanda entro 90 giorni e visita con la vecchia procedura. Come sollecitare l&#39;INPS.">
 <meta property="og:url" content="https://guidasanita.it/invalidita/">
 <link rel="stylesheet" href="../css/style.css">
+<link rel="modulepreload" href="../js/invalidita.js">
+<link rel="modulepreload" href="../js/engine.js">
+<link rel="modulepreload" href="../js/letters.js">
+<link rel="modulepreload" href="../js/common.js">
+<link rel="modulepreload" href="../js/icons.js">
+<link rel="modulepreload" href="../js/controlla.js">
+<link rel="modulepreload" href="../js/flow.js">
 </head>
 <body>
 <header class="site-header">
@@ -35,11 +43,11 @@
 <p class="lead">Il medico ha mandato il certificato all'INPS e la visita non arriva? La legge dice entro quando deve arrivare. Oggi ci sono <strong>due procedure</strong>, e dipende dalla provincia e dalla data del certificato.</p>
 <div class="notice ok">
 <ul>
-<li><strong>Nuovo regime</strong> (la riforma della disabilità: per ora solo in alcune province, in tutta Italia per i certificati dal 1° gennaio 2027; in Sicilia: Palermo per i certificati dal 30 settembre 2025, Caltanissetta, Catania e Messina dal 1° marzo 2026): il certificato è già la domanda. Visita e risultato entro <strong>15 giorni</strong> per un tumore, <strong>30</strong> per un minorenne, <strong>90</strong> per un adulto, dal giorno del certificato.</li>
+<li><strong>Nuovo regime</strong>: il certificato è già la domanda. È la riforma della disabilità: per ora vale solo in alcune province, e in tutta Italia vale per i certificati dal 1° gennaio 2027. In Sicilia vale a Palermo per i certificati dal 30 settembre 2025, e a Caltanissetta, Catania e Messina dal 1° marzo 2026. Visita e risultato entro <strong>15 giorni</strong> per un tumore, <strong>30</strong> per un minorenne, <strong>90</strong> per un adulto, dal giorno del certificato.</li>
 <li><strong>Vecchia procedura</strong> (le altre province e i certificati più vecchi): dopo il certificato serve la <strong>domanda all'INPS entro 90 giorni</strong>, gratis con un patronato. Poi la visita: entro 15 giorni per un tumore, in circa 30 giorni negli altri casi.</li>
 </ul>
 </div>
-<p><strong>Se è tardi</strong>, la pratica resta valida, ma puoi <strong>sollecitare</strong>: vai a un patronato, chiama l'INPS, manda una lettera di sollecito con la PEC.</p>
+<p><strong>Se è tardi</strong>, la pratica resta valida, ma puoi <strong>sollecitare</strong>: vai a un patronato, chiama l'INPS, manda una lettera di sollecito con la PEC (un'email speciale che vale come una raccomandata).</p>
 <p class="js-only"><button type="button" class="btn primary big" disabled data-go="province">✔️ Fai il conto e prepara il sollecito</button></p>
 <p class="muted">Tieni a portata di mano la ricevuta del certificato che ti ha dato il medico. Non ti chiediamo la malattia e non diciamo quanta invalidità ti spetta. Non salviamo niente.</p>
 </div>
@@ -57,28 +65,30 @@
 <!-- /blocco:guida-indice -->
 
 <h3>Per saperne di più: le regole</h3>
-<p>I tempi di 15, 30 e 90 giorni del nuovo regime sono nell'art. 6 del D.Lgs. 62/2024 (riforma della disabilità). La visita entro 15 giorni per i malati oncologici nella vecchia procedura è nell'art. 6 della L. 80/2006. La continuità degli aiuti fino alla visita di revisione è nella L. 114/2014.</p>
+<p>I tempi di 15, 30 e 90 giorni del nuovo regime sono nell'art. 6 del D.Lgs. 62/2024 (riforma della disabilità). La visita entro 15 giorni per i malati oncologici nella vecchia procedura è nell'art. 6 comma 3-bis del D.L. 4/2006 (convertito dalla L. 80/2006). La continuità degli aiuti fino alla visita di revisione è nella L. 114/2014.</p>
 <!-- fonti: create da tools/pagine.mjs -->
 <h3>Da dove vengono queste informazioni</h3>
 <ul class="clean">
 <li><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-05-03;62" target="_blank" rel="noopener">D.Lgs. 62/2024, art. 6 (tempi 90/30/15 giorni)</a></li>
 <li><a href="https://riformadisabilita.gov.it/valutazione-di-base/" target="_blank" rel="noopener">Riforma disabilità – Valutazione di base (riformadisabilita.gov.it)</a></li>
 <li><a href="https://www.disabilita.governo.it/it/notizie/al-via-sperimentazione-riforma-disabilita-in-altre-40-province/" target="_blank" rel="noopener">Province della sperimentazione (disabilita.governo.it)</a></li>
-<li><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2006-03-09;80" target="_blank" rel="noopener">L. 80/2006, art. 6 (malati oncologici: visita entro 15 giorni)</a></li>
+<li><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2006-03-09;80" target="_blank" rel="noopener">Art. 6 c. 3-bis D.L. 4/2006, convertito dalla L. 80/2006 (malati oncologici: visita entro 15 giorni)</a></li>
 <li><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-08-11;114" target="_blank" rel="noopener">L. 114/2014 (benefici fino alla visita di revisione)</a></li>
 <li><a href="https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.domanda-invalidita-civile-e-accertamento-sanitario-50004.accertamento-sanitario.html" target="_blank" rel="noopener">INPS – Invalidità civile e contatti</a></li>
-<li><a href="https://www.inps.it/it/it/inps-comunica/atti/circolari-messaggi-e-normativa/dettaglio.circolari-e-messaggi.2026.02.messaggio-numero-639-del-23-02-2026_15176.html" target="_blank" rel="noopener">INPS – messaggio n. 639/2026 e sedi provinciali</a></li>
+<li><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262" target="_blank" rel="noopener">Codice civile, artt. 316 e 320 (il genitore firma per il figlio minore), 357 (tutore), 404-405 (amministratore di sostegno)</a></li>
+<li><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2004-01-09;6" target="_blank" rel="noopener">L. 6/2004 (amministratore di sostegno)</a></li>
+<li><a href="https://www.informazionefiscale.it/IMG/pdf/16583_messaggio-numero-637-del-23-02-2026.pdf" target="_blank" rel="noopener">INPS – messaggi 635 e 637 del 23/02/2026 (province della riforma della disabilità)</a></li>
 <li><a href="https://www.indicepa.gov.it" target="_blank" rel="noopener">IndicePA – indirizzi PEC delle pubbliche amministrazioni</a></li>
 </ul>
 <p class="muted">Sono informazioni generali, non il parere di un avvocato o di un medico. Controlla sempre con l'INPS o con un patronato. Informazioni controllate il 18 ottobre 2026.</p>
 <!-- /fonti -->
 </section>
 <!-- condividi: creato da tools/pagine.mjs -->
-<div class="wrap share-bar">
+<aside class="wrap share-bar" aria-label="Condividi o stampa">
 <a class="btn share-wa" href="https://wa.me/?text=Visita%20invalidit%C3%A0%20civile%20INPS%20in%20ritardo%3F%20Tempi%20di%20legge%20e%20sollecito%0Ahttps%3A%2F%2Fguidasanita.it%2Finvalidita%2F" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> Condividi su WhatsApp</a>
 <button type="button" class="btn share-print js-inline" data-action="print-page" data-print="guida">🖨️ Stampa la guida</button>
 <p class="print-url">Guida Sanità, gratis e fatta da volontari: https://guidasanita.it/invalidita/</p>
-</div>
+</aside>
 <!-- /condividi -->
 <footer class="site-footer" id="site-footer"><div class="wrap">
 <p><strong>Guida Sanità è fatto da volontari. Non siamo l'azienda sanitaria (ASL), l'INPS né un altro ufficio pubblico.</strong> Diamo informazioni generali, non il parere di un avvocato o di un medico.</p>

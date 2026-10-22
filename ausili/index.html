@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Carrozzina, letto, pannoloni dall&#39;ASL: autorizzazione, tempi e sollecito – Guida Sanità</title>
 <meta name="description" content="Come avere gratis dall&#39;azienda sanitaria (ASL) carrozzina, letto ortopedico, pannoloni, apparecchio acustico e altri ausili: prescrizione dello specialista, domanda all&#39;ufficio protesica, autorizzazione nei tempi fissati dalla Regione (in Sicilia 20 giorni, con silenzio-assenso), consegna e collaudo. Cosa fare se non arrivano.">
 <meta name="theme-color" content="#0b5f5c">
@@ -10,7 +11,7 @@
 <link rel="icon" href="../logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="manifest" href="../site.webmanifest">
-<script>document.documentElement.className += ' js';if(/\/index\.html$/.test(location.pathname))location.replace(location.pathname.slice(0,-10)+location.search+location.hash);</script>
+<script>document.documentElement.className += ' js';if(/\/index\.html$/.test(location.pathname))location.replace('/'+location.pathname.slice(0,-10).replace(/^[\/\\]+/,'')+location.search+location.hash);</script>
 <link rel="canonical" href="https://guidasanita.it/ausili/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Guida Sanità">
@@ -19,6 +20,13 @@
 <meta property="og:description" content="Come avere gratis dall&#39;azienda sanitaria (ASL) carrozzina, letto ortopedico, pannoloni, apparecchio acustico e altri ausili: prescrizione dello specialista, domanda all&#39;ufficio protesica, autorizzazione nei tempi fissati dalla Regione (in Sicilia 20 giorni, con silenzio-assenso), consegna e collaudo. Cosa fare se non arrivano.">
 <meta property="og:url" content="https://guidasanita.it/ausili/">
 <link rel="stylesheet" href="../css/style.css">
+<link rel="modulepreload" href="../js/ausili.js">
+<link rel="modulepreload" href="../js/engine.js">
+<link rel="modulepreload" href="../js/letters.js">
+<link rel="modulepreload" href="../js/common.js">
+<link rel="modulepreload" href="../js/icons.js">
+<link rel="modulepreload" href="../js/controlla.js">
+<link rel="modulepreload" href="../js/flow.js">
 </head>
 <body>
 <header class="site-header">
@@ -32,14 +40,14 @@
 <!-- Prima la risposta scritta, visibile anche senza JavaScript. Il conto dei 20 giorni e il sollecito (js/ausili.js) partono dal pulsante. -->
 <div class="risposta">
 <h1>La carrozzina, il letto o i pannoloni non arrivano?</h1>
-<p class="lead">Carrozzina, deambulatore, letto ortopedico, materasso antidecubito, pannoloni, apparecchio acustico, plantari, busti, montascale, sollevatore: l'azienda sanitaria (ASL) li dà gratis a chi ne ha diritto. Si chiama <strong>assistenza protesica</strong>.</p>
+<p class="lead">Carrozzina, deambulatore, letto ortopedico, materasso antidecubito, pannoloni. E poi apparecchio acustico, plantari, busti, montascale, sollevatore. L'azienda sanitaria (ASL; in Sicilia si chiama ASP) li dà gratis a chi ne ha diritto. Si chiama <strong>assistenza protesica</strong>.</p>
 <div class="notice ok">
 <p><strong>Come funziona, in breve:</strong></p>
 <ol>
-<li>La <strong>prescrizione</strong> la scrive uno specialista del Servizio sanitario (non il medico di famiglia). Di solito serve l'invalidità riconosciuta, o la domanda già fatta.</li>
+<li>La <strong>prescrizione</strong> la scrive uno specialista del Servizio sanitario (non il medico di famiglia). Di solito serve l'invalidità riconosciuta, o la domanda già fatta. Per pannoloni e traverse le regole cambiano da regione a regione. Chiedi al distretto chi può prescriverli.</li>
 <li>Porti la prescrizione all'ufficio <strong>protesica</strong> del tuo distretto e chiedi una <strong>ricevuta con la data</strong>.</li>
-<li>L'ASL deve autorizzare entro il tempo fissato dalla tua Regione. <strong>In Sicilia: entro 20 giorni</strong>; se non risponde, l'autorizzazione vale lo stesso (<strong>silenzio-assenso</strong>). Nelle altre regioni chiedi all'ufficio protesica quanti giorni ha e se vale il silenzio-assenso.</li>
-<li>Un fornitore convenzionato ti porta l'ausilio; poi il medico lo controlla (<strong>collaudo</strong>). In Sicilia entro 20 giorni dalla consegna.</li>
+<li>L'ASL deve autorizzare entro il tempo fissato dalla tua Regione. <strong>In Sicilia: entro 20 giorni</strong>. Se non risponde, l'autorizzazione vale lo stesso (<strong>silenzio-assenso</strong>). Nelle altre regioni chiedi all'ufficio protesica quanti giorni ha e se vale il silenzio-assenso.</li>
+<li>Un fornitore convenzionato ti porta l'ausilio. Poi il medico lo controlla (<strong>collaudo</strong>). In Sicilia entro 20 giorni dalla consegna.</li>
 </ol>
 </div>
 <p><strong>Se il tempo è passato</strong> (in Sicilia 20 giorni), telefona all'ufficio protesica con la ricevuta e manda un <strong>sollecito</strong>: «il tempo è passato, l'autorizzazione vale, consegnate».</p>
@@ -60,24 +68,25 @@
 <!-- /blocco:guida-indice -->
 
 <h3>Per saperne di più: le regole</h3>
-<p>L'assistenza protesica fa parte dei <strong>livelli essenziali di assistenza</strong> (LEA) del <strong>DPCM 12/01/2017</strong>, articoli 17 e 18. L'articolo 18 dice che l'ASL autorizza la fornitura e che le <strong>Regioni</strong> fissano il tempo massimo per farlo. Il vecchio decreto del <strong>nomenclatore</strong> tariffario (DM 332/1999, art. 4), cioè l'elenco ufficiale di protesi e ausili, dava 20 giorni con silenzio-assenso. <strong>In Sicilia</strong> valgono ancora i 20 giorni (direttive della Regione del 2011, che applicano il DM 332/1999).</p>
+<p>L'assistenza protesica fa parte dei <strong>livelli essenziali di assistenza</strong> (LEA). Il <strong>DPCM 12/01/2017</strong> (articoli 17-19 e allegato 12) dice che l'ASL autorizza la fornitura e che le <strong>Regioni</strong> fissano il tempo massimo per farlo. Il vecchio decreto del <strong>nomenclatore</strong> tariffario (DM 332/1999, art. 4), cioè l'elenco ufficiale di protesi e ausili, dava 20 giorni con silenzio-assenso. <strong>In Sicilia</strong> valgono ancora i 20 giorni (direttive della Regione del 2011, che applicano il DM 332/1999).</p>
 <!-- fonti: create da tools/pagine.mjs -->
 <h3>Da dove vengono queste informazioni</h3>
 <ul class="clean">
-<li><a href="https://www.gazzettaufficiale.it/eli/id/2017/03/18/17A02015/sg" target="_blank" rel="noopener">DPCM 12/01/2017 – Livelli essenziali di assistenza, art. 17-18 (assistenza protesica)</a></li>
+<li><a href="https://www.gazzettaufficiale.it/eli/id/2017/03/18/17A02015/sg" target="_blank" rel="noopener">DPCM 12/01/2017 – Livelli essenziali di assistenza, art. 17-19 e allegato 12 (assistenza protesica)</a></li>
 <li><a href="https://www.aspct.it/azienda/dipartimenti/dipartimenti-sanitari/dipartimento-di-riabilitazione/informazioni-generali/allegati/linee-guida-protesi-DM-332-99.pdf" target="_blank" rel="noopener">ASP Catania – Procedure per la fornitura di protesi e ausili (DM 332/1999 e direttive della Regione Siciliana)</a></li>
 <li><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.sanita:decreto:1999-08-27;332" target="_blank" rel="noopener">DM 332/1999 (nomenclatore tariffario protesi e ausili, tempi di autorizzazione)</a></li>
 <li><a href="https://www.salute.gov.it/new/it/tema/livelli-essenziali-di-assistenza/assistenza-protesica/" target="_blank" rel="noopener">Ministero della Salute – assistenza protesica</a></li>
+<li><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262" target="_blank" rel="noopener">Codice civile, artt. 316 e 320 (il genitore firma per il figlio minore), 357 (tutore), 404-405 (amministratore di sostegno)</a></li>
 </ul>
 <p class="muted">Sono informazioni generali, non il parere di un avvocato o di un medico. Controlla sempre con la tua azienda sanitaria (ASL). Informazioni controllate il 18 ottobre 2026.</p>
 <!-- /fonti -->
 </section>
 <!-- condividi: creato da tools/pagine.mjs -->
-<div class="wrap share-bar">
+<aside class="wrap share-bar" aria-label="Condividi o stampa">
 <a class="btn share-wa" href="https://wa.me/?text=Carrozzina%2C%20letto%2C%20pannoloni%20dall'ASL%3A%20autorizzazione%2C%20tempi%20e%20sollecito%0Ahttps%3A%2F%2Fguidasanita.it%2Fausili%2F" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> Condividi su WhatsApp</a>
 <button type="button" class="btn share-print js-inline" data-action="print-page" data-print="guida">🖨️ Stampa la guida</button>
 <p class="print-url">Guida Sanità, gratis e fatta da volontari: https://guidasanita.it/ausili/</p>
-</div>
+</aside>
 <!-- /condividi -->
 <footer class="site-footer" id="site-footer"><div class="wrap">
 <p><strong>Guida Sanità è fatto da volontari. Non siamo l'azienda sanitaria (ASL), l'INPS né un altro ufficio pubblico.</strong> Diamo informazioni generali, non il parere di un avvocato o di un medico.</p>

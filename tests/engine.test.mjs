@@ -132,6 +132,17 @@ test('invalidità: old regime', () => {
   assert.equal(ord.indicative, true);
   assert.equal(ord.deadline, '2026-10-10');
   assert.equal(invDeadline(rulesInv, { regime: 'old', category: 'other', certDate: '2026-09-10', domandaDate: '2026-09-01' }).error, 'order');
+  // Domanda fatta oltre i 90 giorni dal certificato: niente sollecito «regolare», è il caso del tempo finito.
+  const t = '2026-10-18';
+  const late = invDeadline(rulesInv, { regime: 'old', category: 'other', certDate: addDays(t, -200), domandaDate: addDays(t, -40), today: t });
+  assert.equal(late.kind, 'domanda');
+  assert.equal(late.status, 'passed');
+  assert.equal(late.lateDomanda, true);
+  assert.equal(late.deadline, addDays(t, -200 + rulesInv.old_regime.domanda_window_days));
+  assert.equal(late.daysLate, 200 - 40 - rulesInv.old_regime.domanda_window_days);
+  // Al 90° giorno la domanda vale ancora.
+  const ok = invDeadline(rulesInv, { regime: 'old', category: 'other', certDate: '2026-06-01', domandaDate: addDays('2026-06-01', rulesInv.old_regime.domanda_window_days), today: t });
+  assert.equal(ok.kind, 'visit');
   assert.equal(invDeadline(rulesInv, { regime: 'new', category: 'other', certDate: '2026-12-01', today: '2026-10-18' }).error, 'future');
 });
 
@@ -165,6 +176,94 @@ test('letters fill in the facts', () => {
   assert.match(i, /D\.Lgs\. 62\/2024/);
   assert.match(i, /29\/09\/2026/);
   assert.ok(mailtoHref('a@b.it', 'Oggetto è', 'ciao').startsWith('mailto:a@b.it?subject=Oggetto%20%C3%A8&body=ciao'));
+});
+
+test('lettere lette da chi le riceve (audit del 21/10/2026)', async () => {
+  const { cartellaReminder, ausiliReminder, tutelaReminder } = await import('../js/letters.js');
+  const person = { fullName: 'Maria Rossi', city: 'Palermo' };
+  const today = '2026-10-21';
+  const inps = (o) => inpsReminder({ provinceName: 'Palermo', person, certNumber: 'X1', certDate: '2026-06-01', domandaDate: '2026-06-10', today, ...o });
+  // Nuova procedura: perché vale il termine (oncologici, minori) e cosa doveva concludersi.
+  const onc = inps({ regime: 'new', category: 'oncological', deadlineInfo: { legal: 'art. 6 D.Lgs. 62/2024', days: 15, deadline: '2026-06-16' } });
+  assert.match(onc, /trattandosi di persona con patologia oncologica, come indicato nel certificato,/);
+  assert.match(onc, /il procedimento di valutazione di base doveva concludersi entro 15 giorni dalla trasmissione del certificato/);
+  const min = inps({ regime: 'new', category: 'minor', deadlineInfo: { legal: 'art. 6 D.Lgs. 62/2024', days: 30, deadline: '2026-07-01' } });
+  assert.match(min, /trattandosi di minore,/);
+  const adult = inps({ regime: 'new', category: 'other', deadlineInfo: { legal: 'art. 6 D.Lgs. 62/2024', days: 90, deadline: '2026-08-30' } });
+  assert.doesNotMatch(adult, /trattandosi/);
+  // Vecchia procedura oncologica: la visita entro 15 giorni dalla domanda.
+  const oldOnc = inps({ regime: 'old', category: 'oncological', deadlineInfo: { legal: 'art. 6 c. 3-bis D.L. 4/2006', days: 15, deadline: '2026-06-25' } });
+  assert.match(oldOnc, /trattandosi di persona con patologia oncologica[^]*la visita doveva svolgersi entro 15 giorni dalla domanda/);
+  // Vecchia procedura ordinaria: niente termine «ordinario», una sola riga sulla convocazione.
+  const old = inps({ regime: 'old', category: 'minor', deadlineInfo: { legal: null, days: 30, deadline: '2026-07-10' } });
+  assert.match(old, /sono trascorsi 133 giorni dalla presentazione della domanda senza che sia pervenuta alcuna convocazione;/);
+  assert.doesNotMatch(old, /termine indicato come ordinario|trattandosi/);
+  assert.equal(old.match(/non è pervenuta alcuna convocazione/g)?.length ?? 0, 0);
+  assert.equal(old.match(/pervenuta alcuna convocazione/g).length, 1);
+  assert.equal(onc.match(/non è pervenuta alcuna convocazione/g).length, 1);
+
+  // Percorso di tutela: oggetto con prestazione, ricetta e classe; termini con le date.
+  const t = tutelaLetter({ aspName: 'Palermo', person, service: 'Ecografia addome', nre: '190A1', cls: 'D (visita)', maxDays: 30,
+    noDateOffered: true, requestDate: '2026-10-01', prescriptionDate: '2026-09-28', callbackDays: 10, callbackDeadline: '2026-10-11', today });
+  assert.match(t, /Oggetto: Richiesta di attivazione del percorso di tutela – "Ecografia addome", ricetta n\. 190A1, classe D \(visita\)/);
+  assert.match(t, /ricetta n\. 190A1 del 28\/09\/2026/);
+  assert.match(t, /entro i 10 giorni previsti dal PNGLA per la classe D \(visita\)\s+\(termine scaduto l'11\/10\/2026\)/);
+  const tu = tutelaLetter({ aspName: 'Palermo', person, service: 'Visita', nre: '', cls: 'U', maxDays: 3, noDateOffered: true, requestDate: '2026-10-19', today });
+  assert.match(tu, /ricetta n\./);
+  assert.doesNotMatch(tu, /ricontattato|PNGLA per la classe/);
+  const tb = tutelaLetter({ aspName: 'Palermo', person, service: 'Visita', nre: '190A1', cls: 'B', maxDays: 10,
+    bookingDate: '2026-10-01', appointmentDate: '2026-11-20', deadline: '2026-10-11', today });
+  assert.match(tb, /oltre il tempo massimo previsto\s+\(termine scaduto l'11\/10\/2026\)/);
+
+  // Sollecito: protocollo della prima richiesta e libera professione con il solo ticket.
+  const r = tutelaReminder({ aspName: 'Palermo', person, service: 'Visita', nre: '190A1', cls: 'B', firstRequestDate: '2026-10-01', today });
+  assert.match(r, /protocollo n\. ___\)/);
+  assert.match(r, /libero-professionale intramurario con il solo pagamento del ticket \(D\.Lgs\. 124\/1998, art\. 3, c\. 13\)/);
+  assert.match(tutelaReminder({ aspName: 'Palermo', person, cls: 'B', firstRequestDate: '2026-10-01', protocol: 'PG/123', today }), /protocollo n\. PG\/123/);
+
+  // Ausili: il silenzio-assenso non si afferma finché il D.A. siciliano non è letto.
+  const a = ausiliReminder({ aspName: 'Palermo', person, device: 'carrozzina', requestDate: '2026-09-20', deadline: '2026-10-10', today });
+  assert.doesNotMatch(a, /si intende concessa|silenzio-assenso/);
+  assert.match(a, /in Sicilia: direttive regionali sul DM 332\/1999/);
+  assert.match(a, /senza ulteriore ritardo/);
+
+  // Cartella: periodo e reparto da scrivere a penna; «copia della cartella clinica».
+  const c = cartellaReminder({ structure: 'Ospedale Civico', person, requestDate: '2026-10-01', what: 'cartella clinica', episode: '', deadline: '2026-10-08', today });
+  assert.match(c, /copia della cartella clinica relativa a ____________ \(periodo e reparto\)/);
+  assert.doesNotMatch(c, /copia di cartella/);
+  assert.match(cartellaReminder({ person, what: 'referti o immagini', episode: 'visita del 5 settembre', today }), /copia dei referti o delle immagini relativi a visita del 5 settembre/);
+});
+
+test('chi scrive per un altro: delegato, genitore di un minore, tutore o amministratore di sostegno', async () => {
+  const { genericRequest, delegateAttachment } = await import('../js/letters.js');
+  const base = { fullName: 'Giulia Bianchi', isDelegate: true, delegateName: 'Anna Bianchi', delegateCf: 'BNCNNA80A41G273X' };
+  const certo = { certNumber: 'X1', certDate: '2026-07-01', regime: 'new', deadlineInfo: { legal: 'art. 6 D.Lgs. 62/2024', days: 90, deadline: '2026-09-29' }, today: '2026-10-18' };
+  // Delegato (anche quando il ruolo non è scritto: come prima)
+  for (const p of [base, { ...base, delegateRole: 'delegato' }]) {
+    const t = inpsReminder({ provinceName: 'Palermo', person: p, ...certo });
+    assert.match(t, /in qualità di delegato\/a dell'assistito\/a, come da delega allegata/);
+    assert.match(t, /Allega: [^\n]*delega e documento del delegato/);
+  }
+  // Genitore di un minore: niente delega, «responsabilità genitoriale», «figlio/a minore»
+  const g = inpsReminder({ provinceName: 'Palermo', person: { ...base, delegateRole: 'genitore' }, ...certo });
+  assert.doesNotMatch(g, /delega/i);
+  assert.match(g, /Anna Bianchi[^\n]*\n?[^\n]*genitore esercente la responsabilità genitoriale/);
+  assert.match(g, /per il\/la figlio\/a minore/);
+  assert.match(g, /artt\. 316 e 320 c\.c\./);
+  // Tutore, amministratore di sostegno: decreto di nomina, niente delega
+  for (const [kind, name] of [['tutore', 'tutore'], ['amministratore', 'amministratore di sostegno'], [undefined, 'amministratore di sostegno']]) {
+    const p = { ...base, delegateRole: 'tutore', guardianKind: kind, decreeRef: 'del Tribunale di Palermo n. 12/2025' };
+    const t = genericRequest({ to: 'Distretto', person: p, subject: 'Richiesta', premise: ['x'], request: 'y', attachments: ['copia del documento di identità'], today: '2026-10-18' });
+    assert.match(t, new RegExp(`in qualità di ${name} dell'assistito/a`));
+    assert.match(t, /decreto del Tribunale di Palermo n\. 12\/2025/);
+    assert.match(t, /Allega: [^\n]*copia del decreto di nomina/);
+    assert.doesNotMatch(t, /delega/i);
+  }
+  const senzaDecreto = tutelaLetter({ aspName: 'Palermo', person: { ...base, delegateRole: 'tutore' }, cls: 'B', maxDays: 10, bookingDate: '2026-10-01', appointmentDate: '2026-11-20', today: '2026-10-18' });
+  assert.match(senzaDecreto, /decreto del Tribunale di __________/);
+  // Chi scrive per sé: nessun allegato in più, anche se è rimasto scelto un ruolo
+  assert.equal(delegateAttachment({ delegateRole: 'genitore' }), '');
+  assert.doesNotMatch(tutelaLetter({ aspName: 'Palermo', person: { fullName: 'Maria', delegateRole: 'tutore' }, cls: 'B', maxDays: 10, bookingDate: '2026-10-01', appointmentDate: '2026-11-20', today: '2026-10-18' }), /decreto|delega|genitore/);
 });
 
 test('i testi mostrati agli utenti non contengono note interne (TODO)', () => {
@@ -229,11 +328,12 @@ test('esenzione ticket per reddito', async () => {
   assert.deepEqual(e({ ageBand: '65plus', status: 'none', income: 36151.99 }).codes, []);      // un centesimo in più: no
   assert.deepEqual(e({ ageBand: 'under6', status: 'none', income: 20000 }).codes, ['E01']);
   assert.deepEqual(e({ ageBand: '6to59', status: 'none', income: 1000 }).codes, []);
-  assert.deepEqual(e({ ageBand: '6to59', status: 'disoccupato', income: 8263.31 }).codes, ['E02']);
+  assert.deepEqual(e({ ageBand: '6to59', status: 'disoccupato', income: 8263.30 }).codes, ['E02']);
+  assert.deepEqual(e({ ageBand: '6to59', status: 'disoccupato', income: 8263.31 }).codes, []);   // E02 ed E04: «inferiore a», il limite esatto è escluso
   assert.deepEqual(e({ ageBand: '6to59', status: 'disoccupato', income: 8263.32 }).codes, []);
-  assert.deepEqual(e({ ageBand: '6to59', status: 'disoccupato', spouse: true, income: 11362.05 }).codes, ['E02']);
-  assert.deepEqual(e({ ageBand: '6to59', status: 'disoccupato', spouse: true, children: 2, income: 11362.05 + 2 * 516.46 }).codes, ['E02']);
-  assert.deepEqual(e({ ageBand: '6to59', status: 'disoccupato', spouse: false, children: 1, income: 8263.31 + 516.46 + 0.01 }).codes, []);
+  assert.deepEqual(e({ ageBand: '6to59', status: 'disoccupato', spouse: true, income: 11362.04 }).codes, ['E02']);
+  assert.deepEqual(e({ ageBand: '6to59', status: 'disoccupato', spouse: true, children: 2, income: 11362.05 + 2 * 516.46 - 0.01 }).codes, ['E02']);
+  assert.deepEqual(e({ ageBand: '6to59', status: 'disoccupato', spouse: false, children: 1, income: 8263.31 + 516.46 }).codes, []);
   assert.deepEqual(e({ ageBand: '6to59', status: 'sociale', income: 99999 }).codes, ['E03']);      // senza limite di reddito
   assert.deepEqual(e({ ageBand: '60to64', status: 'minimo', income: 8000 }).codes, ['E04']);
   assert.deepEqual(e({ ageBand: '6to59', status: 'minimo', income: 8000 }).codes, ['E04']);       // a carico di chi ha la pensione al minimo
@@ -243,13 +343,25 @@ test('esenzione ticket per reddito', async () => {
   assert.equal(m.thresholds.E01, 36151.98);
 });
 
+test('date del 01/01/1970: parseDate vale 0, ma la data esiste', () => {
+  assert.equal(parseDate('1970-01-01'), 0);
+  assert.equal(formatIt('1970-01-01'), '01/01/1970');
+  assert.equal(art('il', '1970-01-01'), 'il ');
+});
+
 test('ricorso: 6 mesi dal verbale', async () => {
   const { ricorsoDeadline } = await import('../js/engine.js');
   const r = load('../data/rules-ricorso.json');
   assert.equal(r.appeal_months, 6);
-  const a = ricorsoDeadline(r, { verbaleDate: '2026-04-18', today: '2026-10-18' });
-  assert.equal(a.deadline, '2026-10-18'); assert.equal(a.status, 'waiting'); assert.equal(a.daysLeft, 0);
-  assert.equal(ricorsoDeadline(r, { verbaleDate: '2026-04-17', today: '2026-10-18' }).status, 'passed');
+  const a = ricorsoDeadline(r, { verbaleDate: '2026-04-21', today: '2026-10-21' });
+  assert.equal(a.deadline, '2026-10-21'); assert.equal(a.status, 'waiting'); assert.equal(a.daysLeft, 0); assert.equal(a.slittato, false);
+  assert.equal(ricorsoDeadline(r, { verbaleDate: '2026-04-20', today: '2026-10-21' }).status, 'passed');
+  // Sabato, domenica e festivi: il termine slitta al primo giorno lavorativo (art. 155 c.p.c.).
+  const dom = ricorsoDeadline(r, { verbaleDate: '2026-04-18', today: '2026-10-19' });
+  assert.equal(dom.deadline, '2026-10-19'); assert.equal(dom.status, 'waiting'); assert.equal(dom.slittato, true);
+  assert.equal(ricorsoDeadline(r, { verbaleDate: '2026-06-08', today: '2026-12-09' }).deadline, '2026-12-09'); // 8/12 Immacolata
+  assert.equal(ricorsoDeadline(r, { verbaleDate: '2026-09-29', today: '2026-10-01' }).deadline, '2027-03-30'); // 29/3/2027 Lunedì dell'Angelo
+  assert.equal(ricorsoDeadline(r, { verbaleDate: '2026-04-04', today: '2026-10-01' }).deadline, '2026-10-05'); // 4/10/2026 domenica
   assert.equal(ricorsoDeadline(r, { verbaleDate: '2026-10-01', today: '2026-10-18' }).daysLeft, 165);
   assert.equal(ricorsoDeadline(r, { verbaleDate: '2026-12-01', today: '2026-10-18' }).error, 'future');
   for (const s of [...r.sources, ...load('../data/rules-esenzione.json').sources]) assert.match(s.url, /^https:\/\//);
@@ -303,4 +415,42 @@ test('prevenzione per età e sesso; medico o pediatra', async () => {
   assert.equal(medicoChoice(m, { age: 13 }), 'pediatra-o-medico');
   assert.equal(medicoChoice(m, { age: 14 }), 'medico');
   for (const s of [...r.sources, ...m.sources]) assert.match(s.url, /^https:\/\//);
+});
+
+// Audit dei mutanti del 21/10/2026: errori che nessun test prendeva.
+test('festivi nazionali 2026-2030, giorno per giorno', async () => {
+  const { festivo } = await import('../js/engine.js');
+  // Elenco scritto a mano (L. 260/1949 e successive; 4 ottobre dal 2026, L. 151/2025). Non ci sono i santi patroni.
+  const fissi = ['01-01', '01-06', '04-25', '05-01', '06-02', '08-15', '10-04', '11-01', '12-08', '12-25', '12-26'];
+  const lunediAngelo = ['2026-04-06', '2027-03-29', '2028-04-17', '2029-04-02', '2030-04-22'];
+  const attesi = new Set([...[2026, 2027, 2028, 2029, 2030].flatMap((y) => fissi.map((md) => `${y}-${md}`)), ...lunediAngelo]);
+  const sbagliati = [];
+  for (let d = '2026-01-01'; d <= '2030-12-31'; d = addDays(d, 1)) {
+    if (festivo(d) !== attesi.has(d)) sbagliati.push(`${d}: festivo() dice ${festivo(d)}`);
+  }
+  assert.deepEqual(sbagliati, []);
+  assert.equal(festivo('2025-10-04'), false); // San Francesco festivo solo dal 2026
+});
+
+test('cartella clinica: ricorso al TAR dopo 30 giorni di silenzio, entro altri 30 (art. 25 L. 241/1990)', () => {
+  const rc = load('../data/rules-cartella.json');
+  assert.equal(rc.integration_days, 30);
+  assert.equal(rc.appeal_days, 30, 'appeal_days: 30 giorni per il ricorso al TAR (art. 25 c. 4 L. 241/1990). Se cambia, rileggi la legge');
+  // Lo stesso conto di js/cartella.js: dalla richiesta + integration_days, poi + appeal_days.
+  const src = readFileSync(new URL('../js/cartella.js', import.meta.url), 'utf8');
+  assert.match(src, /const from = addDays\(state\.requestDate, rules\.integration_days\);\s*const until = addDays\(from, rules\.appeal_days\);/);
+  const from = addDays('2026-09-01', rc.integration_days);
+  assert.equal(from, '2026-10-01');
+  assert.equal(addDays(from, rc.appeal_days), '2026-10-31');
+});
+
+// Audit dei mutanti, giro 9 (22/10/2026): un sabato contato come giorno lavorativo lo vedeva solo combinazioni.cjs.
+test('il termine che cade di sabato passa al lunedì', async () => {
+  const { primoGiornoUtile, ricorsoDeadline } = await import('../js/engine.js');
+  assert.equal(primoGiornoUtile('2026-10-24'), '2026-10-26'); // sabato → lunedì
+  assert.equal(primoGiornoUtile('2026-10-25'), '2026-10-26'); // domenica → lunedì
+  assert.equal(primoGiornoUtile('2026-10-23'), '2026-10-23'); // venerdì resta
+  const r = ricorsoDeadline(load('../data/rules-ricorso.json'), { verbaleDate: '2026-04-24', today: '2026-10-01' });
+  assert.equal(r.deadline, '2026-10-26');
+  assert.equal(r.slittato, true);
 });

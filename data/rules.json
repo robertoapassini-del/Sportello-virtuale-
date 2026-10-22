@@ -37,7 +37,7 @@
       "verified": "2026-10-18",
       "proof": "estratto",
       "review_by": "2026-12-22",
-      "nota": "Tempi entro cui l'ASP richiama dopo la richiesta del percorso di tutela."
+      "nota": "Tempi entro cui l'ASP richiama quando il CUP non dà una data."
     },
     "prescription_validity_days": {
       "url": "https://sovracup.regione.sicilia.it",
@@ -80,6 +80,10 @@
     {
       "label": "SovraCUP Regione Siciliana (prenotazioni)",
       "url": "https://sovracup.regione.sicilia.it"
+    },
+    {
+      "label": "Codice civile, artt. 316 e 320 (il genitore firma per il figlio minore), 357 (tutore), 404-405 (amministratore di sostegno)",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262"
     }
   ]
 }

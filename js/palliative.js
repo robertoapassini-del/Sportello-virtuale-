@@ -3,9 +3,9 @@
 // Diritto della L. 38/2010. Spieghiamo i passi, i numeri da chiamare e una lettera di richiesta.
 // Scritto con delicatezza: spesso chi legge sta assistendo una persona molto malata.
 import { todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
-import { genericRequest, mailtoHref } from './letters.js';
-import { noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact, aslLabel, aslIntestazione, regione, regioneNonPronta } from './common.js';
-import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
+import { genericRequest, mailtoHref, doctorName } from './letters.js';
+import { noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact, aslLabel, aslIntestazione, regione, regioneNonPronta, syncDelegate } from './common.js';
+import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons, senzaUffici } from './flow.js';
 
 const ROOT = '../';
 const app = document.getElementById('app');
@@ -24,7 +24,7 @@ function sources() {
   const a = state.province ? asp() : null;
   const items = perRegione(rules.sources);
   if (a) { if (a.info_url) items.push({ label: `${a.name} – sito ufficiale`, url: a.info_url }); items.push(...a.sources); }
-  return [items, { verified: rules.last_verified, note: a ? 'I numeri della rete cure palliative della provincia sono ancora da raccogliere.' : '' }];
+  return [items, { verified: rules.last_verified, note: a && !(a.contacts || []).some((c) => c.topic === 'palliative') ? 'I numeri della rete cure palliative della provincia sono ancora da raccogliere.' : '' }];
 }
 
 const whatIs = () => `
@@ -40,7 +40,7 @@ const whatIs = () => `
     <li><strong>Chiedi al medico di famiglia o allo specialista</strong> di attivare le cure palliative. È lui che manda la richiesta alla rete cure palliative dell'${aslLabel()} (o all'hospice).</li>
     <li><strong>Se la persona è in ospedale</strong>, chiedi al reparto di attivarle prima delle dimissioni («dimissione protetta»).</li>
     <li><strong>Un medico della rete valuta</strong> (a casa o in ospedale) e si decide insieme: casa o hospice.</li>
-    <li><strong>L'attivazione deve essere rapida</strong>: di solito pochi giorni. Se passano più di ${rules.reminder_after_days} giorni, chiama di nuovo e sollecita.</li>
+    <li><strong>L'attivazione deve essere rapida</strong>: di solito pochi giorni. Se dopo ${rules.reminder_after_days} giorni nessuno si è fatto vivo, chiama di nuovo e sollecita.</li>
   </ol>
   <details class="card">
     <summary>Il dolore non deve essere sopportato</summary>
@@ -71,8 +71,8 @@ const screens = {
       <div class="hero" aria-hidden="true">🤲</div>
       <h1>Come funziona</h1>
       ${whatIs()}
-      ${aspCalls(asp(), ['palliative', 'casa'])}
-      <button type="button" class="btn primary" data-go="letter">✍️ Prepara una richiesta scritta</button>
+      ${senzaUffici(asp(), () => `${aspCalls(asp(), ['palliative', 'casa'])}
+      <button type="button" class="btn primary" data-go="letter">✍️ Prepara una richiesta scritta</button>`)}
       ${disclaimer(rules.last_verified)}
       ${restartBtn()}`,
   }),
@@ -89,7 +89,7 @@ const screens = {
           <li><strong>Se è già seguita dalla rete</strong>, chiama il numero di reperibilità che vi hanno dato: serve anche per questo.</li>
         </ol>
         <div class="notice urgent"><p>Se la situazione precipita, chiama il <a href="tel:112">112</a>.</p></div>
-        ${aspCalls(a, ['palliative', 'casa'])}
+        ${senzaUffici(a, () => aspCalls(a, ['palliative', 'casa']))}
         ${whatIs()}
         ${disclaimer(rules.last_verified)}
         ${restartBtn()}`,
@@ -104,7 +104,7 @@ const screens = {
       document.getElementById('req-form').addEventListener('submit', (e) => {
         e.preventDefault();
         const v = readForm(e.target);
-        if (!parseDate(v.requestDate)) return showError('req-form', 'Scrivi il giorno.');
+        if (parseDate(v.requestDate) === null) return showError('req-form', 'Scrivi il giorno.');
         if (daysBetween(v.requestDate, todayISO()) < 0) return showError('req-form', 'Questo giorno non è ancora arrivato. Controlla la data.');
         state.requestDate = v.requestDate;
         flow.go('result');
@@ -130,10 +130,10 @@ const screens = {
         <ol class="big-steps">
           <li><strong>Chiama il medico che ha fatto la richiesta</strong> e chiedigli di telefonare lui alla rete cure palliative.</li>
           <li><strong>Chiama l'${aslLabel()}</strong> e chiedi il numero della rete cure palliative o dell'hospice della tua zona.</li>
-          ${late ? `<li><strong>Manda una richiesta scritta</strong> all'${aslLabel()} di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''}. La scriviamo insieme.</li>` : ''}
+          ${late ? `<li><strong>Manda una richiesta scritta</strong> all'${aslLabel()}${a ? ` di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''}. La scriviamo insieme` : ''}.</li>` : ''}
         </ol>
-        ${aspCalls(a, ['palliative', 'casa'])}
-        ${late ? '<button type="button" class="btn primary" data-go="letter">✍️ Scriviamo la richiesta insieme</button>' : ''}
+        ${senzaUffici(a, () => `${aspCalls(a, ['palliative', 'casa'])}
+        ${late ? '<button type="button" class="btn primary" data-go="letter">✍️ Scriviamo la richiesta insieme</button>' : ''}`)}
         ${disclaimer(rules.last_verified)}`,
     };
   },
@@ -171,10 +171,10 @@ const screens = {
           const v = readForm(form);
           for (const k of ['doctor', 'pref']) { state[k] = v[k]; delete v[k]; }
           Object.assign(person, v);
-          form.querySelector('.delegate-fields').hidden = !person.isDelegate;
+          syncDelegate(form, person);
           const where = state.pref === 'hospice' ? 'in regime residenziale (hospice)' : 'a domicilio';
           const premise = [
-            `è affetto/a da una patologia in fase avanzata, come da documentazione del medico curante${state.doctor ? ` (dott. ${state.doctor})` : ''}`,
+            `è affetto/a da una patologia in fase avanzata, come da documentazione del medico curante${state.doctor ? ` (${doctorName(state.doctor)})` : ''}`,
             ...(isReminder ? [`in data ${formatIt(state.requestDate)} è stata inoltrata richiesta di attivazione delle cure palliative, senza riscontro alla data odierna`] : []),
             'la L. 38/2010 garantisce l\'accesso alle cure palliative e alla terapia del dolore, senza oneri a carico dell\'assistito',
           ];
@@ -207,8 +207,9 @@ let flow;
 (async function init() {
   renderFooter(ROOT);
   try { [rules, data] = await Promise.all([loadJSON(`${ROOT}data/rules-palliative.json`), loadRegional(ROOT, 'asl')]); } catch {
-    app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>'; return;
+    avvisoErrore(); return; // la risposta scritta nella pagina resta, con l'avviso sopra
   }
-  flow = createFlow({ app, screens, state, sources, person });
+  // Passi e giorni del sollecito non dipendono dalla regione: senza i suoi dati si salta la provincia (vedi js/flow.js).
+  flow = createFlow({ app, screens, state, sources, person, next: 'stage' });
   flow.render();
 })();

@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Ausili ASL: la consegna del fornitore convenzionato e il collaudo – Guida Sanità</title>
 <meta name="description" content="Dopo l&#39;autorizzazione dell&#39;ASL un fornitore convenzionato consegna l&#39;ausilio; i tempi li fissa il contratto con l&#39;ASL. Cosa fare se il letto o la carrozzina non arrivano, e il collaudo del medico (in Sicilia entro 20 giorni dalla consegna).">
 <meta name="theme-color" content="#0b5f5c">
@@ -10,7 +11,7 @@
 <link rel="icon" href="../../logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
 <link rel="manifest" href="../../site.webmanifest">
-<script>document.documentElement.className += ' js';if(/\/index\.html$/.test(location.pathname))location.replace(location.pathname.slice(0,-10)+location.search+location.hash);</script>
+<script>document.documentElement.className += ' js';if(/\/index\.html$/.test(location.pathname))location.replace('/'+location.pathname.slice(0,-10).replace(/^[\/\\]+/,'')+location.search+location.hash);</script>
 <link rel="canonical" href="https://guidasanita.it/ausili/consegna-e-collaudo/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Guida Sanità">
@@ -19,6 +20,11 @@
 <meta property="og:description" content="Dopo l&#39;autorizzazione dell&#39;ASL un fornitore convenzionato consegna l&#39;ausilio; i tempi li fissa il contratto con l&#39;ASL. Cosa fare se il letto o la carrozzina non arrivano, e il collaudo del medico (in Sicilia entro 20 giorni dalla consegna).">
 <meta property="og:url" content="https://guidasanita.it/ausili/consegna-e-collaudo/">
 <link rel="stylesheet" href="../../css/style.css">
+<link rel="modulepreload" href="../../js/guida.js">
+<link rel="modulepreload" href="../../js/common.js">
+<link rel="modulepreload" href="../../js/engine.js">
+<link rel="modulepreload" href="../../js/icons.js">
+<link rel="modulepreload" href="../../js/controlla.js">
 </head>
 <body>
 <header class="site-header">
@@ -31,7 +37,7 @@
 <!-- Pagina corta della guida «La carrozzina, il letto o i pannoloni non arrivano» (data/moduli.json → "pages"). Nessuna domanda interattiva: solo testo. -->
 <main class="wrap guida" id="app">
 <h1>La consegna del fornitore e il collaudo</h1>
-<p class="lead">Dopo l'autorizzazione, un <strong>fornitore convenzionato</strong> con l'azienda sanitaria (ASL) ti porta l'ausilio. Il suo nome è scritto sull'autorizzazione.</p>
+<p class="lead">Dopo l'autorizzazione, un <strong>fornitore convenzionato</strong> con l'azienda sanitaria (ASL; in Sicilia si chiama ASP) ti porta l'ausilio. Il suo nome è scritto sull'autorizzazione.</p>
 <h2>Quanto ci vuole</h2>
 <p>I tempi di consegna li fissa l'ASL nel contratto con il fornitore: <strong>non c'è un numero di giorni uguale per tutti</strong>. Chiedi all'ufficio protesica quanti giorni ha il fornitore per consegnare.</p>
 
@@ -57,20 +63,21 @@
 <!-- fonti: create da tools/pagine.mjs -->
 <h3>Da dove vengono queste informazioni</h3>
 <ul class="clean">
-<li><a href="https://www.gazzettaufficiale.it/eli/id/2017/03/18/17A02015/sg" target="_blank" rel="noopener">DPCM 12/01/2017 – Livelli essenziali di assistenza, art. 17-18 (assistenza protesica)</a></li>
+<li><a href="https://www.gazzettaufficiale.it/eli/id/2017/03/18/17A02015/sg" target="_blank" rel="noopener">DPCM 12/01/2017 – Livelli essenziali di assistenza, art. 17-19 e allegato 12 (assistenza protesica)</a></li>
 <li><a href="https://www.aspct.it/azienda/dipartimenti/dipartimenti-sanitari/dipartimento-di-riabilitazione/informazioni-generali/allegati/linee-guida-protesi-DM-332-99.pdf" target="_blank" rel="noopener">ASP Catania – Procedure per la fornitura di protesi e ausili (DM 332/1999 e direttive della Regione Siciliana)</a></li>
 <li><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.sanita:decreto:1999-08-27;332" target="_blank" rel="noopener">DM 332/1999 (nomenclatore tariffario protesi e ausili, tempi di autorizzazione)</a></li>
 <li><a href="https://www.salute.gov.it/new/it/tema/livelli-essenziali-di-assistenza/assistenza-protesica/" target="_blank" rel="noopener">Ministero della Salute – assistenza protesica</a></li>
+<li><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262" target="_blank" rel="noopener">Codice civile, artt. 316 e 320 (il genitore firma per il figlio minore), 357 (tutore), 404-405 (amministratore di sostegno)</a></li>
 </ul>
 <p class="muted">Sono informazioni generali, non il parere di un avvocato o di un medico. Controlla sempre con la tua azienda sanitaria (ASL). Informazioni controllate il 18 ottobre 2026.</p>
 <!-- /fonti -->
 </main>
 <!-- condividi: creato da tools/pagine.mjs -->
-<div class="wrap share-bar">
+<aside class="wrap share-bar" aria-label="Condividi o stampa">
 <a class="btn share-wa" href="https://wa.me/?text=Ausili%20ASL%3A%20la%20consegna%20del%20fornitore%20convenzionato%20e%20il%20collaudo%0Ahttps%3A%2F%2Fguidasanita.it%2Fausili%2Fconsegna-e-collaudo%2F" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> Condividi su WhatsApp</a>
 <button type="button" class="btn share-print js-inline" data-action="print-page">🖨️ Stampa questa pagina</button>
 <p class="print-url">Guida Sanità, gratis e fatta da volontari: https://guidasanita.it/ausili/consegna-e-collaudo/</p>
-</div>
+</aside>
 <!-- /condividi -->
 <footer class="site-footer" id="site-footer"><div class="wrap">
 <p><strong>Guida Sanità è fatto da volontari. Non siamo l'azienda sanitaria (ASL), l'INPS né un altro ufficio pubblico.</strong> Diamo informazioni generali, non il parere di un avvocato o di un medico.</p>

@@ -1,6 +1,7 @@
 // Salva una copia in testo semplice delle pagine ufficiali elencate nei dati regionali
 // (data/regioni/<regione>/asp.json: site_url, info_url, portal_url, guardia_medica_url, pua_url,
-// url dei contatti). Per una regione non ancora attiva legge data/regioni/<regione>/fonti.json:
+// url dei contatti; data/regioni/<regione>/inps.json: la pagina di ogni sede INPS, nella cartella «inps-<regione>»)
+// e nei numeri nazionali (data/numeri.json: url dei numeri, nella cartella «nazionali»). Per una regione non ancora attiva legge data/regioni/<regione>/fonti.json:
 // stessa forma ({ asl: [{ id, site_url, pagine: [{ tipo, url }] }] }), solo gli indirizzi da copiare,
 // così i numeri della regione nuova si scrivono leggendo le copie (docs/regola-numeri.md, proof «pagina»). Serve al controllo periodico dei numeri (docs/regioni.md, «Aggiornamento assistito»):
 // gira ogni notte su un server in Italia, perché molti siti delle ASL non rispondono dall'estero,
@@ -118,8 +119,24 @@ const fileAsl = (reg) => (reg.attiva
   ? `data/regioni/${reg.id}/${(reg.files && reg.files.asl) || 'asl'}.json`
   : `data/regioni/${reg.id}/fonti.json`);
 
-for (const reg of regioni.regioni.filter((r) => fs.existsSync(path.join(SITE, fileAsl(r))))) {
-  const asl = read(fileAsl(reg));
+// Le sedi INPS di una regione attiva (inps.json), come un'azienda in più: tools/confronta-copie.mjs controlla
+// pec, indirizzo e orari sulla pagina della sede. Stesso id «inps-<regione>» delle regioni in preparazione.
+const sediInps = (reg) => {
+  const f = `data/regioni/${reg.id}/${(reg.files && reg.files.inps) || 'inps'}.json`;
+  if (!reg.attiva || !fs.existsSync(path.join(SITE, f))) return [];
+  const pagine = (read(f).provinces || []).filter((p) => p.url).map((p) => ({ url: p.url }));
+  return pagine.length ? [{ id: `inps-${reg.id}`, pagine }] : [];
+};
+// I numeri nazionali (data/numeri.json): un gruppo per sezione della pagina Numeri utili.
+const nazionali = () => ({
+  asl: read('data/numeri.json').groups.map((g) => ({ id: g.id, pagine: (g.items || []).filter((n) => n.url).map((n) => ({ url: n.url })) })).filter((g) => g.pagine.length),
+});
+
+const daCopiare = regioni.regioni.filter((r) => fs.existsSync(path.join(SITE, fileAsl(r))))
+  .map((reg) => ({ reg, asl: { asl: [...read(fileAsl(reg)).asl, ...sediInps(reg)] } }));
+daCopiare.push({ reg: { id: 'nazionali', attiva: true }, asl: nazionali() });
+
+for (const { reg, asl } of daCopiare) {
   const dir = path.join(OUT, reg.id);
   fs.mkdirSync(dir, { recursive: true });
   const indiceFile = path.join(dir, 'indice.json');

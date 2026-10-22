@@ -3,9 +3,9 @@
 // Non c'è un numero di giorni fissato dalla legge: spieghiamo i passi e, se nessuno viene,
 // prepariamo un sollecito al distretto. Non chiediamo la malattia.
 import { todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
-import { genericRequest, mailtoHref } from './letters.js';
-import { noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact, aslLabel, regioneInfo, inRegione, regioneLink, aslIntestazione, regione, regioneNonPronta } from './common.js';
-import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
+import { genericRequest, mailtoHref, doctorName, districtLine } from './letters.js';
+import { noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact, complaintTo, aslLabel, regioneInfo, inRegione, regioneLink, aslIntestazione, regione, regioneNonPronta, syncDelegate, delegateNoteText } from './common.js';
+import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons, senzaUffici } from './flow.js';
 
 const ROOT = '../';
 const app = document.getElementById('app');
@@ -24,22 +24,22 @@ function sources() {
   const a = state.province ? asp() : null;
   const items = perRegione(rules.sources);
   if (a) { if (a.info_url) items.push({ label: `${a.name} – sito ufficiale`, url: a.info_url }); items.push(...a.sources); }
-  return [items, { verified: rules.last_verified, note: a ? 'I contatti dei PUA dei distretti sono ancora da raccogliere.' : '' }];
+  return [items, { verified: rules.last_verified, note: a && !(a.contacts || []).some((c) => c.topic === 'casa') ? 'I contatti dei PUA dei distretti sono ancora da raccogliere.' : '' }];
 }
 
 const steps = () => `
   <h2>Come si chiede</h2>
   <ol class="big-steps">
     <li><strong>Parla con il medico di famiglia.</strong> È lui che compila la richiesta di assistenza domiciliare e la manda al distretto. Se la persona è in ospedale, chiedi al reparto la <strong>«dimissione protetta»</strong>: la richiesta parte dall'ospedale prima che torni a casa.</li>
-    <li><strong>La richiesta arriva al PUA</strong> (Punto Unico di Accesso) del distretto dell'${aslLabel()}. Chiedi al medico una copia o il numero della richiesta, con la data.</li>
-    <li><strong>Una équipe viene a casa</strong> per la valutazione (si chiama UVM) e scrive il piano: quante volte a settimana, quali figure (infermiere, fisioterapista, medico, operatore).</li>
-    <li><strong>Iniziano le visite a casa.</strong> È tutto <strong>gratuito</strong>.</li>
+    <li><strong>La richiesta arriva al PUA</strong> (Punto unico di accesso) del distretto dell'${aslLabel()}. Chiedi al medico una copia o il numero della richiesta, con la data.</li>
+    <li><strong>Un'équipe viene a casa</strong> per la valutazione (si chiama UVM) e scrive il piano: quante volte a settimana, quali figure (infermiere, fisioterapista, medico, operatore).</li>
+    <li><strong>Iniziano le visite a casa.</strong> Le cure sanitarie sono <strong>gratuite</strong>; per l'aiuto dell'operatore (OSS), dopo i primi 30 giorni dall'uscita dall'ospedale, può esserci una parte da pagare: chiedi al distretto.</li>
   </ol>
   <details class="card">
     <summary>Cosa comprende e cosa no</summary>
     <ul class="clean">
       <li>Comprende: medicazioni, prelievi, terapie, fisioterapia, controllo di cateteri e sondini, educazione dei familiari.</li>
-      <li>Non comprende la badante né l'aiuto per pulizie e spesa: per quelli si chiede al <strong>Comune</strong> (servizio sociale, SAD) e, se c'è l'invalidità, l'indennità di accompagnamento.</li>
+      <li>Non comprende la badante né l'aiuto per pulizie e spesa: per quelli si chiede al <strong>Comune</strong> (al servizio sociale: il SAD, il servizio di assistenza domiciliare del Comune) e, se c'è l'invalidità, l'indennità di accompagnamento.</li>
       <li>Per i malati gravi in fase avanzata esistono le <a href="../cure-palliative/">cure palliative a casa</a>.</li>
     </ul>
   </details>`;
@@ -59,7 +59,7 @@ const screens = {
       <details class="card">
         <summary>🩹 Serve solo una medicazione o una puntura</summary>
         <ul class="clean">
-          <li>Per una cosa semplice (una medicazione, le iniezioni, il cambio del catetere) non serve tutta l'assistenza domiciliare: esistono le <strong>cure domiciliari di base</strong>, senza la visita della équipe.</li>
+          <li>Per una cosa semplice (una medicazione, le iniezioni, il cambio del catetere) non serve tutta l'assistenza domiciliare: esistono le <strong>cure domiciliari di base</strong>, senza la visita dell'équipe.</li>
           <li>Si chiede sempre al <strong>medico di famiglia</strong>: manda lui la richiesta al distretto.</li>
           <li>Chiedi al medico se c'è qualcosa da pagare e quanto tempo ci vuole: cambia da una zona all'altra.</li>
         </ul>
@@ -68,7 +68,7 @@ const screens = {
       <details class="card">
         <summary>🧪 Il prelievo del sangue a casa</summary>
         <ul class="clean">
-          <li><strong>Con l'${aslLabel()}:</strong> il medico di famiglia scrive sulla ricetta che la persona <strong>non può camminare e non può essere trasportata</strong>. Poi chiedi al medico o al PUA del distretto come mandarla.${inSicilia() ? ' In Sicilia, ad Enna, per esempio, dal 2026 lo fa la Casa della Comunità.' : ''}</li>
+          <li><strong>Con l'${aslLabel()}:</strong> il medico di famiglia scrive sulla ricetta che la persona <strong>non può camminare e non può essere trasportata</strong>. Poi chiedi al medico o al PUA del distretto come mandarla.${inSicilia() ? ' In Sicilia, a Enna, per esempio, dal 2026 lo fa la Casa della Comunità.' : ''}</li>
           <li><strong>Da privato:</strong> con la ricetta, chiama un laboratorio (meglio se convenzionato con l'${aslLabel()}) e chiedi se fa prelievi a casa. Di solito si paga a parte la venuta a casa, anche se sei esente dal ticket. Chiedi il prezzo prima.</li>
         </ul>
       </details>
@@ -142,7 +142,7 @@ const screens = {
       <div class="hero" aria-hidden="true">👨‍⚕️</div>
       <h1>Si parte dal medico di famiglia</h1>
       ${steps()}
-      ${aspCalls(asp(), ['casa'])}
+      ${senzaUffici(asp(), () => aspCalls(asp(), ['casa']))}
       <p>Quando la richiesta è partita, torna qui con la data: ti diciamo quando sollecitare.</p>
       ${disclaimer(rules.last_verified)}
       ${restartBtn()}`,
@@ -157,10 +157,10 @@ const screens = {
         <ol class="big-steps">
           <li><strong>Chiedi al medico di famiglia</strong> di chiedere una nuova valutazione (rivalutazione) al distretto: il piano si può aumentare.</li>
           <li><strong>Chiama il PUA del distretto</strong> e chiedi perché si è interrotta e quando riprende. Segnati nome e data.</li>
-          <li><strong>Se non cambia niente:</strong> reclamo all'URP dell'${aslLabel()} di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''}. Puoi usare la lettera qui sotto.</li>
+          <li><strong>Se non cambia niente:</strong> reclamo ${a ? `${complaintTo(a)}. Puoi usare la lettera qui sotto` : `all'URP dell'${aslLabel()}`}.</li>
         </ol>
-        ${aspCalls(a, ['casa'])}
-        <button type="button" class="btn primary" data-go="letter">✍️ Scriviamo la lettera insieme</button>
+        ${senzaUffici(a, () => `${aspCalls(a, ['casa'])}
+        <button type="button" class="btn primary" data-go="letter">✍️ Scriviamo la lettera insieme</button>`)}
         ${disclaimer(rules.last_verified)}`,
     };
   },
@@ -174,7 +174,7 @@ const screens = {
       document.getElementById('req-form').addEventListener('submit', (e) => {
         e.preventDefault();
         const v = readForm(e.target);
-        if (!parseDate(v.requestDate)) return showError('req-form', 'Scrivi il giorno.');
+        if (parseDate(v.requestDate) === null) return showError('req-form', 'Scrivi il giorno.');
         if (daysBetween(v.requestDate, todayISO()) < 0) return showError('req-form', 'Questo giorno non è ancora arrivato. Controlla la data.');
         state.requestDate = v.requestDate;
         flow.go('result');
@@ -203,10 +203,10 @@ const screens = {
         <ol class="big-steps">
           <li><strong>Chiama il PUA del distretto</strong> e chiedi a che punto è la richiesta. Se non sai il numero, chiama l'${aslLabel()} e chiedi del PUA del tuo comune.</li>
           <li><strong>Chiedi al medico di famiglia</strong> di sollecitare anche lui: la sua telefonata pesa.</li>
-          ${late ? `<li><strong>Manda un sollecito scritto</strong> al distretto e all'URP dell'${aslLabel()} di ${esc(a.province)}. Lo scriviamo insieme.</li>` : ''}
+          ${late ? `<li><strong>Manda un sollecito scritto</strong> al distretto e all'URP dell'${aslLabel()}${a ? ` di ${esc(a.province)}. Lo scriviamo insieme` : ''}.</li>` : ''}
         </ol>
-        ${aspCalls(a, ['casa'])}
-        ${late ? '<button type="button" class="btn primary" data-go="letter">✍️ Scriviamo il sollecito insieme</button>' : ''}
+        ${senzaUffici(a, () => `${aspCalls(a, ['casa'])}
+        ${late ? '<button type="button" class="btn primary" data-go="letter">✍️ Scriviamo il sollecito insieme</button>' : ''}`)}
         ${disclaimer(rules.last_verified)}`,
     };
   },
@@ -240,7 +240,7 @@ const screens = {
             <li><span class="ico" aria-hidden="true">🖊️</span> Firma la lettera</li>
             <li><span class="ico" aria-hidden="true">🪪</span> Allega: documento d'identità (fotocopia o foto)</li>
             <li><span class="ico" aria-hidden="true">📄</span> Allega: copia della richiesta del medico, se ce l'hai</li>
-            <li class="delegate-note"${person.isDelegate ? '' : ' hidden'}><span class="ico" aria-hidden="true">📝</span> Allega: la delega firmata e il tuo documento</li>
+            <li class="delegate-note"${person.isDelegate ? '' : ' hidden'}><span class="ico" aria-hidden="true">📝</span> <span class="delegate-note-text">${esc(delegateNoteText(person))}</span></li>
           </ul></div>
         <p class="muted"><a href="${esc(reportErrorHref(`Assistenza domiciliare ${a.name}`))}">Segnala un errore</a></p>
         ${disclaimer(rules.last_verified)}
@@ -251,17 +251,16 @@ const screens = {
           const v = readForm(form);
           for (const k of ['district', 'doctor']) { state[k] = v[k]; delete v[k]; }
           Object.assign(person, v);
-          form.querySelector('.delegate-fields').hidden = !person.isDelegate;
-          document.querySelectorAll('.delegate-note').forEach((li) => { li.hidden = !person.isDelegate; });
+          syncDelegate(form, person);
           const premise = isReminder
-            ? [`in data ${formatIt(state.requestDate)} il medico di medicina generale${state.doctor ? ` (dott. ${state.doctor})` : ''} ha inoltrato richiesta di attivazione dell'assistenza domiciliare integrata`,
+            ? [`in data ${formatIt(state.requestDate)} il medico di medicina generale${state.doctor ? ` (${doctorName(state.doctor)})` : ''} ha inoltrato richiesta di attivazione dell'assistenza domiciliare integrata`,
                'alla data odierna non è stata effettuata la valutazione domiciliare né è pervenuta alcuna comunicazione',
                'le cure domiciliari rientrano nei livelli essenziali di assistenza (art. 22 DPCM 12/01/2017)']
             : ['è in carico al servizio di assistenza domiciliare integrata del distretto',
                'l\'assistenza è stata interrotta o ridotta senza una nuova valutazione',
                'le cure domiciliari rientrano nei livelli essenziali di assistenza (art. 22 DPCM 12/01/2017)'];
           const text = genericRequest({
-            to: `${aslIntestazione()} di ${a.province}\n${state.district ? `Distretto – ${state.district} – ` : ''}Punto Unico di Accesso\ne p.c. Ufficio Relazioni con il Pubblico`,
+            to: `${aslIntestazione()} di ${a.province}\n${state.district ? `${districtLine(state.district)} – ` : ''}Punto Unico di Accesso\ne p.c. Ufficio Relazioni con il Pubblico`,
             address: to, person,
             subject: isReminder ? `SOLLECITO – Attivazione assistenza domiciliare integrata (richiesta ${art('del', state.requestDate)}${formatIt(state.requestDate)})` : 'Richiesta di rivalutazione del piano di assistenza domiciliare integrata',
             premise,
@@ -291,8 +290,9 @@ let flow;
 (async function init() {
   renderFooter(ROOT);
   try { [rules, data] = await Promise.all([loadJSON(`${ROOT}data/rules-domiciliare.json`), loadRegional(ROOT, 'asl')]); } catch {
-    app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>'; return;
+    avvisoErrore(); return; // la risposta scritta nella pagina resta, con l'avviso sopra
   }
-  flow = createFlow({ app, screens, state, sources, person });
+  // Passi e giorni del sollecito non dipendono dalla regione: senza i suoi dati si salta la provincia (vedi js/flow.js).
+  flow = createFlow({ app, screens, state, sources, person, next: 'stage' });
   flow.render();
 })();

@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Dentista con il Servizio sanitario: cosa è compreso per bambini, malati gravi e redditi bassi – Guida Sanità</title>
 <meta name="description" content="Nel dettaglio le cure dentistiche del Servizio sanitario: per i minori fino a 14 anni visite, sigillature, otturazioni, estrazioni e ortodonzia nei casi gravi; per la vulnerabilità sanitaria tutte le cure necessarie; per la vulnerabilità sociale (ISEE basso) cure di base con ticket o gratis; per tutti visita, urgenze e diagnosi. Cosa resta escluso.">
 <meta name="theme-color" content="#0b5f5c">
@@ -10,7 +11,7 @@
 <link rel="icon" href="../../logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
 <link rel="manifest" href="../../site.webmanifest">
-<script>document.documentElement.className += ' js';if(/\/index\.html$/.test(location.pathname))location.replace(location.pathname.slice(0,-10)+location.search+location.hash);</script>
+<script>document.documentElement.className += ' js';if(/\/index\.html$/.test(location.pathname))location.replace('/'+location.pathname.slice(0,-10).replace(/^[\/\\]+/,'')+location.search+location.hash);</script>
 <link rel="canonical" href="https://guidasanita.it/dentista/chi-ha-diritto/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Guida Sanità">
@@ -19,6 +20,11 @@
 <meta property="og:description" content="Nel dettaglio le cure dentistiche del Servizio sanitario: per i minori fino a 14 anni visite, sigillature, otturazioni, estrazioni e ortodonzia nei casi gravi; per la vulnerabilità sanitaria tutte le cure necessarie; per la vulnerabilità sociale (ISEE basso) cure di base con ticket o gratis; per tutti visita, urgenze e diagnosi. Cosa resta escluso.">
 <meta property="og:url" content="https://guidasanita.it/dentista/chi-ha-diritto/">
 <link rel="stylesheet" href="../../css/style.css">
+<link rel="modulepreload" href="../../js/guida.js">
+<link rel="modulepreload" href="../../js/common.js">
+<link rel="modulepreload" href="../../js/engine.js">
+<link rel="modulepreload" href="../../js/icons.js">
+<link rel="modulepreload" href="../../js/controlla.js">
 </head>
 <body>
 <header class="site-header">
@@ -31,15 +37,22 @@
 <!-- Pagina corta della guida «Il dentista con il Servizio sanitario» (data/moduli.json → "pages"). Nessuna domanda interattiva: solo testo. -->
 <main class="wrap guida" id="app">
 <h1>Chi ha diritto al dentista con il Servizio sanitario e cosa è compreso</h1>
-<p class="lead">Quattro gruppi, con diritti diversi. In tutti i casi si parte con la ricetta del medico e la prenotazione al CUP o all'ambulatorio dell'azienda sanitaria (ASL).</p>
+<p class="lead">Quattro gruppi, con diritti diversi. In tutti i casi si parte con la ricetta del medico e la prenotazione al CUP (l'ufficio dove si prenotano visite ed esami) o all'ambulatorio dell'azienda sanitaria (ASL; in Sicilia si chiama ASP).</p>
 <h2>Bambini e ragazzi fino a 14 anni</h2>
 <p>Visite periodiche, insegnamento dell'igiene, <strong>sigillature</strong> dei molari, fluoro, otturazioni, estrazioni, pulizia. L'<strong>apparecchio</strong> (ortodonzia) è compreso solo per i ragazzi che hanno <strong>anche</strong> una condizione di vulnerabilità sanitaria o sociale e una malocclusione grave, secondo una scala di valutazione: lo decide lo specialista dell'ASL. Non per motivi estetici. In alcune regioni le cure dai 6 ai 14 anni hanno il ticket.</p>
 
 <h2>Vulnerabilità sanitaria: le malattie gravi</h2>
-<p>Chi è in attesa di trapianto o trapiantato, chi ha un tumore in cura (soprattutto alla testa o al collo), chi ha difese immunitarie molto basse, l'emofilia, cardiopatie gravi, alcune malattie rare: tutte le cure dentistiche necessarie sono comprese, perché un'infezione della bocca per loro è pericolosa. Serve la certificazione dello specialista che cura la malattia.</p>
+<p>Per alcune persone un'infezione della bocca è pericolosa. Per loro sono comprese <strong>tutte le cure dentistiche necessarie</strong>. Sono le persone:</p>
+<ul>
+<li>in attesa di trapianto o già trapiantate;</li>
+<li>con un tumore in cura, soprattutto alla testa o al collo;</li>
+<li>con difese immunitarie molto basse;</li>
+<li>con l'emofilia, cardiopatie gravi o alcune malattie rare.</li>
+</ul>
+<p>Serve la certificazione dello specialista che cura la malattia.</p>
 
 <h2>Vulnerabilità sociale: pochi soldi</h2>
-<p>Con un <strong>ISEE basso</strong> le cure di base (visite, estrazioni, otturazioni, pulizia) sono gratis o con il ticket. La soglia la fissa la Regione; chiedi alla tua ASL quale vale nella tua regione e quali documenti portare. Alcune ASL e alcuni Comuni hanno anche il «dentista sociale»: tariffe basse in ambulatori convenzionati.</p>
+<p>Con un <strong>ISEE basso</strong> (l'ISEE è il documento che misura quanto ha la famiglia) le cure di base (visite, estrazioni, otturazioni, pulizia) sono gratis o con il ticket. La soglia la fissa la Regione; chiedi alla tua ASL quale vale nella tua regione e quali documenti portare. Alcune ASL e alcuni Comuni hanno anche il «dentista sociale»: tariffe basse in ambulatori convenzionati.</p>
 
 <h2>Per tutti</h2>
 <p>La <strong>prima visita</strong>, le <strong>urgenze</strong> (dolore forte, ascesso, dente rotto per un trauma) e le radiografie per la diagnosi, con il ticket se non hai l'<a href="../../esenzione-ticket/">esenzione</a>.</p>
@@ -57,17 +70,17 @@
 <h3>Da dove vengono queste informazioni</h3>
 <ul class="clean">
 <li><a href="https://www.salute.gov.it/portale/lea/dettaglioContenutiLea.jsp?lingua=italiano&amp;id=4706&amp;area=Lea&amp;menu=ambulatoriale" target="_blank" rel="noopener">Ministero della Salute – Assistenza odontoiatrica nei LEA</a></li>
-<li><a href="https://www.salute.gov.it/portale/lea/dettaglioContenutiLea.jsp?lingua=italiano&amp;id=4702&amp;area=Lea&amp;menu=leaEssn" target="_blank" rel="noopener">Ministero della Salute – LEA, DPCM 12/01/2017, art. 9</a></li>
+<li><a href="https://www.salute.gov.it/portale/lea/dettaglioContenutiLea.jsp?lingua=italiano&amp;id=4702&amp;area=Lea&amp;menu=leaEssn" target="_blank" rel="noopener">Ministero della Salute – LEA, DPCM 12/01/2017, allegato 4C (condizioni per avere le cure del dentista dal Servizio sanitario)</a></li>
 </ul>
 <p class="muted">Sono informazioni generali, non il parere di un avvocato o di un medico. Controlla sempre con la tua azienda sanitaria (ASL). Informazioni controllate il 20 ottobre 2026.</p>
 <!-- /fonti -->
 </main>
 <!-- condividi: creato da tools/pagine.mjs -->
-<div class="wrap share-bar">
+<aside class="wrap share-bar" aria-label="Condividi o stampa">
 <a class="btn share-wa" href="https://wa.me/?text=Dentista%20con%20il%20Servizio%20sanitario%3A%20cosa%20%C3%A8%20compreso%20per%20bambini%2C%20malati%20gravi%20e%20redditi%20bassi%0Ahttps%3A%2F%2Fguidasanita.it%2Fdentista%2Fchi-ha-diritto%2F" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> Condividi su WhatsApp</a>
 <button type="button" class="btn share-print js-inline" data-action="print-page">🖨️ Stampa questa pagina</button>
 <p class="print-url">Guida Sanità, gratis e fatta da volontari: https://guidasanita.it/dentista/chi-ha-diritto/</p>
-</div>
+</aside>
 <!-- /condividi -->
 <footer class="site-footer" id="site-footer"><div class="wrap">
 <p><strong>Guida Sanità è fatto da volontari. Non siamo l'azienda sanitaria (ASL), l'INPS né un altro ufficio pubblico.</strong> Diamo informazioni generali, non il parere di un avvocato o di un medico.</p>

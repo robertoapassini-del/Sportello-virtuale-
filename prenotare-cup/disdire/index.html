@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Disdire una visita al CUP: entro 2 giorni lavorativi, altrimenti si paga il ticket anche con l&#39;esenzione – Guida Sanità</title>
 <meta name="description" content="Come disdire o spostare una prenotazione al CUP: stessi canali della prenotazione, almeno 2 giorni lavorativi prima. Chi non si presenta senza disdire paga il ticket intero anche se ha l&#39;esenzione (D.L. 73/2024). Le eccezioni e cosa fare se hai perso l&#39;appuntamento.">
 <meta name="theme-color" content="#0b5f5c">
@@ -10,7 +11,7 @@
 <link rel="icon" href="../../logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
 <link rel="manifest" href="../../site.webmanifest">
-<script>document.documentElement.className += ' js';if(/\/index\.html$/.test(location.pathname))location.replace(location.pathname.slice(0,-10)+location.search+location.hash);</script>
+<script>document.documentElement.className += ' js';if(/\/index\.html$/.test(location.pathname))location.replace('/'+location.pathname.slice(0,-10).replace(/^[\/\\]+/,'')+location.search+location.hash);</script>
 <link rel="canonical" href="https://guidasanita.it/prenotare-cup/disdire/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Guida Sanità">
@@ -19,6 +20,11 @@
 <meta property="og:description" content="Come disdire o spostare una prenotazione al CUP: stessi canali della prenotazione, almeno 2 giorni lavorativi prima. Chi non si presenta senza disdire paga il ticket intero anche se ha l&#39;esenzione (D.L. 73/2024). Le eccezioni e cosa fare se hai perso l&#39;appuntamento.">
 <meta property="og:url" content="https://guidasanita.it/prenotare-cup/disdire/">
 <link rel="stylesheet" href="../../css/style.css">
+<link rel="modulepreload" href="../../js/guida.js">
+<link rel="modulepreload" href="../../js/common.js">
+<link rel="modulepreload" href="../../js/engine.js">
+<link rel="modulepreload" href="../../js/icons.js">
+<link rel="modulepreload" href="../../js/controlla.js">
 </head>
 <body>
 <header class="site-header">
@@ -33,10 +39,10 @@
 <h1>Spostare o disdire: entro quando, e cosa succede se non lo fai</h1>
 <p class="lead">Disdire è semplice e aiuta tutti: il posto va a un'altra persona in lista. Ma va fatto <strong>almeno 2 giorni lavorativi prima</strong>.</p>
 <h2>Come si disdice</h2>
-<p>Con gli stessi canali con cui si prenota: online, il numero del CUP, la farmacia, lo sportello. In Sicilia: anche con il SovraCUP. Tieni il foglio della prenotazione: c'è il numero da dire. Se vuoi solo <strong>spostare</strong> la visita, chiedi una nuova data nello stesso momento: la nuova prenotazione fa ripartire i tempi massimi.</p>
+<p>Con gli stessi canali con cui si prenota: online, il numero del CUP (l'ufficio dove si prenotano visite ed esami), la farmacia, lo sportello. In Sicilia: anche con il SovraCUP. Tieni il foglio della prenotazione: c'è il numero da dire. Se vuoi solo <strong>spostare</strong> la visita, chiedi una nuova data nello stesso momento: la nuova prenotazione fa ripartire i tempi massimi.</p>
 
 <h2>Se non ti presenti e non disdici</h2>
-<p>Per legge devi pagare il <strong>ticket intero</strong> della visita, <strong>anche se hai l'esenzione</strong> per reddito, età o malattia. L'azienda sanitaria (ASL) te lo chiede con una lettera. Ogni ASL decide come riscuoterlo: chiedi al CUP come funziona nella tua.</p>
+<p>Per legge devi pagare il <strong>ticket intero</strong> della visita, <strong>anche se hai l'esenzione</strong> per reddito, età o malattia. L'azienda sanitaria (ASL; in Sicilia si chiama ASP) te lo chiede con una lettera. Ogni ASL decide come riscuoterlo: chiedi al CUP come funziona nella tua.</p>
 
 <h2>Le eccezioni</h2>
 <p>Non paghi se non sei potuto andare per un motivo serio e improvviso: un ricovero, un'urgenza, un lutto. Devi però dimostrarlo, per esempio con il certificato del pronto soccorso, e avvisare il CUP appena puoi. Le regole precise cambiano da ASL ad ASL.</p>
@@ -60,11 +66,11 @@
 <!-- /fonti -->
 </main>
 <!-- condividi: creato da tools/pagine.mjs -->
-<div class="wrap share-bar">
+<aside class="wrap share-bar" aria-label="Condividi o stampa">
 <a class="btn share-wa" href="https://wa.me/?text=Disdire%20una%20visita%20al%20CUP%3A%20entro%202%20giorni%20lavorativi%2C%20altrimenti%20si%20paga%20il%20ticket%20anche%20con%20l'esenzione%0Ahttps%3A%2F%2Fguidasanita.it%2Fprenotare-cup%2Fdisdire%2F" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> Condividi su WhatsApp</a>
 <button type="button" class="btn share-print js-inline" data-action="print-page">🖨️ Stampa questa pagina</button>
 <p class="print-url">Guida Sanità, gratis e fatta da volontari: https://guidasanita.it/prenotare-cup/disdire/</p>
-</div>
+</aside>
 <!-- /condividi -->
 <footer class="site-footer" id="site-footer"><div class="wrap">
 <p><strong>Guida Sanità è fatto da volontari. Non siamo l'azienda sanitaria (ASL), l'INPS né un altro ufficio pubblico.</strong> Diamo informazioni generali, non il parere di un avvocato o di un medico.</p>

@@ -129,7 +129,11 @@ function openGraph(html, url) {
 `;
 }
 
-const HEAD_SCRIPT = "<script>document.documentElement.className += ' js';if(/\\/index\\.html$/.test(location.pathname))location.replace(location.pathname.slice(0,-10)+location.search+location.hash);</script>";
+// L'indirizzo nuovo comincia sempre con una sola «/»: «//altro-sito/…/index.html» darebbe «//altro-sito/», cioè un
+// altro sito (audit di sicurezza, giro 6). Le «\» si tolgono anche loro: per il browser valgono come «/».
+const HEAD_SCRIPT = "<script>document.documentElement.className += ' js';if(/\\/index\\.html$/.test(location.pathname))location.replace('/'+location.pathname.slice(0,-10).replace(/^[\\/\\\\]+/,'')+location.search+location.hash);</script>";
+// Ai siti esterni (link ufficiali, WhatsApp) arriva solo l'indirizzo del sito, mai la pagina con quello che c'è dopo.
+const REFERRER = '<meta name="referrer" content="strict-origin-when-cross-origin">';
 
 // «Condividi su WhatsApp» (funziona anche senza JavaScript: è un link) e «Stampa».
 // Sotto, l'indirizzo della pagina: si vede solo sul foglio stampato.
@@ -139,11 +143,11 @@ function shareBar(html, url) {
   const text = `${title.replace(/&#39;/g, "'").replace(/&amp;/g, '&').replace(/&quot;/g, '"')}\n${url}`;
   const guide = /id="guida"/.test(html);
   return `<!-- condividi: creato da tools/pagine.mjs -->
-<div class="wrap share-bar">
+<aside class="wrap share-bar" aria-label="Condividi o stampa">
 <a class="btn share-wa" href="https://wa.me/?text=${encodeURIComponent(text)}" target="_blank" rel="noopener">${WA_ICON} Condividi su WhatsApp</a>
 <button type="button" class="btn share-print js-inline" data-action="print-page"${guide ? ' data-print="guida"' : ''}>🖨️ ${guide ? 'Stampa la guida' : 'Stampa questa pagina'}</button>
 <p class="print-url">Guida Sanità, gratis e fatta da volontari: ${url}</p>
-</div>
+</aside>
 <!-- /condividi -->
 `;
 }
@@ -252,8 +256,32 @@ ${list.map((a) => `<dt id="tutela-${esc(a.id)}">${esc(a.province)} – ${esc(a.n
   },
 };
 
+// Reti lente (audit del 22/10/2026, giro 7): il browser scopre gli import di un modulo solo dopo averlo scaricato,
+// così su un 3G lento common.js, engine.js, flow.js… arrivano uno dopo l'altro. Con <link rel="modulepreload">
+// in testa li chiede tutti insieme. L'elenco viene dagli import scritti nei file js/ (solo quelli statici).
+const importsOf = new Map();
+function moduleGraph(file, seen = new Set()) {
+  if (seen.has(file)) return seen;
+  seen.add(file);
+  if (!importsOf.has(file)) {
+    const src = read(`js/${file}`);
+    importsOf.set(file, [...src.matchAll(/(?:\bfrom\s*|\bimport\s*)['"]\.\/([\w-]+\.js)['"]/g)].map((m) => m[1]));
+  }
+  for (const f of importsOf.get(file)) moduleGraph(f, seen);
+  return seen;
+}
+function modulePreload(html, root) {
+  const files = new Set();
+  for (const [, attrs, body] of html.matchAll(/<script type="module"([^>]*)>([\s\S]*?)<\/script>/g)) {
+    const src = attrs.match(/src="(?:\.\.\/|\.\/)*js\/([\w-]+\.js)"/);
+    const entries = src ? [src[1]] : [...body.matchAll(/from\s*['"](?:\.\.\/|\.\/)*js\/([\w-]+\.js)['"]/g)].map((m) => m[1]);
+    for (const e of entries) for (const f of moduleGraph(e)) files.add(f);
+  }
+  return [...files].map((f) => `<link rel="modulepreload" href="${root}js/${f}">\n`).join('');
+}
+
 for (const p of pages) {
-  const root = '../'.repeat(p.file.split('/').length - 1);
+  const root ='../'.repeat(p.file.split('/').length - 1);
   let html = p.group ? areaPage(p.group, root) : read(p.file).replace(/\r\n/g, '\n');
   const top = header(root, p.area) + breadcrumb(root, p.trail);
   const re = /<header class="site-header">[\s\S]*?<\/header>(\n<nav class="breadcrumb"[\s\S]*?<\/nav>)?/;
@@ -268,6 +296,7 @@ for (const p of pages) {
     .replace(/<link rel="stylesheet"/, (m) => `<link rel="canonical" href="${url}">\n${openGraph(html, url)}${m}`);
   // «/x/index.html» → «/x/»: GitHub Pages non fa redirect 301, quindi lo fa il browser appena apre la pagina.
   html = html.replace(/<script>document\.documentElement\.className[^<]*<\/script>/, () => HEAD_SCRIPT);
+  html = html.replace(/<meta name="referrer"[^>]*>\n/, '').replace(/<meta name="viewport"[^>]*>\n/, (m) => `${m}${REFERRER}\n`);
   // Dati FAQPage di una versione precedente: non ci sono più «Domande frequenti», le domande sono i titoli delle pagine.
   html = html.replace(/<script type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>\n/, '');
   html = html.replace(/<!-- condividi[\s\S]*?<!-- \/condividi -->\n/, '')
@@ -276,6 +305,8 @@ for (const p of pages) {
     if (!BLOCKS[name]) throw new Error(`Blocco sconosciuto «${name}» in ${p.file}`);
     return `<!-- blocco:${name} (creato da tools/pagine.mjs) -->\n${BLOCKS[name](p)}\n<!-- /blocco:${name} -->`;
   });
+  html = html.replace(/<link rel="modulepreload"[^>]*>\n/g, '')
+    .replace(/<link rel="stylesheet"[^>]*>\n/, (m) => `${m}${modulePreload(html, root)}`);
   if (p.module) {
     if (!/<!-- fonti[\s\S]*?<!-- \/fonti -->/.test(html)) throw new Error(`Guida scritta (id="guida" con <!-- fonti --><!-- /fonti -->) non trovata in ${p.file}`);
     html = html.replace(/<!-- fonti[\s\S]*?<!-- \/fonti -->/, () => guideSources(p.module));

@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Non ti danno la cartella clinica? Copia e referti entro 7 giorni, prima copia gratis – Guida Sanità</title>
 <meta name="description" content="L&#39;ospedale deve darti la copia della cartella clinica e dei referti entro 7 giorni dalla richiesta scritta (L. 24/2017). Referti gratis nel Fascicolo Sanitario, prima copia gratis, come chiederla e il sollecito se è in ritardo. Vale in tutta Italia.">
 <meta name="theme-color" content="#0b5f5c">
@@ -10,7 +11,7 @@
 <link rel="icon" href="../logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="manifest" href="../site.webmanifest">
-<script>document.documentElement.className += ' js';if(/\/index\.html$/.test(location.pathname))location.replace(location.pathname.slice(0,-10)+location.search+location.hash);</script>
+<script>document.documentElement.className += ' js';if(/\/index\.html$/.test(location.pathname))location.replace('/'+location.pathname.slice(0,-10).replace(/^[\/\\]+/,'')+location.search+location.hash);</script>
 <link rel="canonical" href="https://guidasanita.it/cartella-clinica/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Guida Sanità">
@@ -19,6 +20,13 @@
 <meta property="og:description" content="L&#39;ospedale deve darti la copia della cartella clinica e dei referti entro 7 giorni dalla richiesta scritta (L. 24/2017). Referti gratis nel Fascicolo Sanitario, prima copia gratis, come chiederla e il sollecito se è in ritardo. Vale in tutta Italia.">
 <meta property="og:url" content="https://guidasanita.it/cartella-clinica/">
 <link rel="stylesheet" href="../css/style.css">
+<link rel="modulepreload" href="../js/cartella.js">
+<link rel="modulepreload" href="../js/engine.js">
+<link rel="modulepreload" href="../js/letters.js">
+<link rel="modulepreload" href="../js/common.js">
+<link rel="modulepreload" href="../js/icons.js">
+<link rel="modulepreload" href="../js/controlla.js">
+<link rel="modulepreload" href="../js/flow.js">
 </head>
 <body>
 <header class="site-header">
@@ -40,7 +48,7 @@
 <li><strong>I 7 giorni partono solo da una richiesta scritta</strong>: chiedi sempre una ricevuta con la data.</li>
 </ul>
 </div>
-<p><strong>Se sono in ritardo</strong>, telefona all'ufficio cartelle cliniche con la ricevuta, poi manda un <strong>sollecito</strong> scritto alla Direzione sanitaria. Dopo 30 giorni di silenzio si può fare ricorso al TAR.</p>
+<p><strong>Se sono in ritardo</strong>, telefona all'ufficio cartelle cliniche con la ricevuta, poi manda un <strong>sollecito</strong> scritto alla Direzione sanitaria. Dopo 30 giorni di silenzio si può fare ricorso al TAR, il tribunale amministrativo.</p>
 <p class="js-only"><button type="button" class="btn primary big" disabled data-go="province">✔️ Fai il conto e prepara il sollecito</button></p>
 <p class="muted">Tieni a portata di mano la ricevuta della richiesta, se ce l'hai. Non salviamo niente.</p>
 </div>
@@ -50,34 +58,35 @@
 <p class="guida-intro">Le regole di questa guida sono leggi dello Stato e valgono in tutta Italia. Gli uffici e i numeri delle aziende sanitarie, per ora, li abbiamo solo per la Sicilia.</p>
 <!-- blocco:guida-indice (creato da tools/pagine.mjs) -->
 <ol class="guida-indice">
-<li aria-current="page"><strong>Non mi danno la cartella clinica o i referti</strong></li>
+<li aria-current="page"><strong>Non ti danno la cartella clinica o i referti?</strong></li>
 <li><a href="fascicolo-sanitario/">Vedere i referti online nel Fascicolo Sanitario</a></li>
 <li><a href="come-chiedere/">Come chiedere la copia all&#39;ospedale, prima copia gratis</a></li>
-<li><a href="ritardo/">Sono in ritardo: sollecito, reclamo, ricorso</a></li>
+<li><a href="ritardo/">L&#39;ospedale è in ritardo: sollecito, reclamo, ricorso</a></li>
 </ol>
 <!-- /blocco:guida-indice -->
 
 <h3>Per saperne di più: le regole</h3>
-<p>Il tempo di 7 giorni per la documentazione sanitaria, e di 30 giorni per le integrazioni, è nella L. 24/2017 (legge Gelli), art. 4, comma 3. Il ricorso al TAR dopo 30 giorni di silenzio è previsto dalla L. 241/1990, art. 25, sull'accesso agli atti. La prima copia gratis dei propri dati sanitari viene dal Regolamento UE 2016/679 (GDPR), art. 12, par. 5 e art. 15, par. 3, come spiegato dal Garante della privacy nelle FAQ di dicembre 2024 sull'accesso alle cartelle cliniche.</p>
+<p>Il tempo di 7 giorni per la documentazione sanitaria, e di 30 giorni per le integrazioni, è nella L. 24/2017 (legge Gelli), art. 4, comma 2. Il ricorso al TAR dopo 30 giorni di silenzio è previsto dalla L. 241/1990, art. 25, sull'accesso agli atti. La prima copia gratis dei propri dati sanitari viene dal Regolamento UE 2016/679 (GDPR), art. 12, par. 5 e art. 15, par. 3, come spiegato dal Garante della privacy nelle FAQ di dicembre 2024 sull'accesso alle cartelle cliniche.</p>
 <!-- fonti: create da tools/pagine.mjs -->
 <h3>Da dove vengono queste informazioni</h3>
 <ul class="clean">
-<li><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2017-03-08;24" target="_blank" rel="noopener">L. 24/2017 (legge Gelli), art. 4, comma 3 (documentazione sanitaria entro 7 giorni)</a></li>
+<li><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2017-03-08;24" target="_blank" rel="noopener">L. 24/2017 (legge Gelli), art. 4, comma 2 (documentazione sanitaria entro 7 giorni)</a></li>
 <li><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1990-08-07;241" target="_blank" rel="noopener">L. 241/1990, art. 25 (accesso agli atti: silenzio dopo 30 giorni e ricorso al TAR)</a></li>
 <li><a href="https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/10086913" target="_blank" rel="noopener">Garante privacy – FAQ sull&#39;accesso alle cartelle cliniche (dicembre 2024): prima copia gratis</a></li>
 <li><a href="https://www.regione.sicilia.it/fascicolosanitario" target="_blank" rel="noopener">Regione Siciliana – Fascicolo Sanitario Elettronico</a></li>
 <li><a href="https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/dipartimento-pianificazione-strategica/fascicolo-sanitario-elettronico-domande-frequenti" target="_blank" rel="noopener">Regione Siciliana – Fascicolo Sanitario Elettronico: domande frequenti</a></li>
 <li><a href="https://www.salute.gov.it" target="_blank" rel="noopener">Ministero della Salute – cartella clinica</a></li>
+<li><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262" target="_blank" rel="noopener">Codice civile, artt. 316 e 320 (il genitore firma per il figlio minore), 357 (tutore), 404-405 (amministratore di sostegno)</a></li>
 </ul>
-<p class="muted">Sono informazioni generali, non il parere di un avvocato o di un medico. Controlla sempre con l'ospedale o con la tua azienda sanitaria (ASL). Informazioni controllate il 18 ottobre 2026.</p>
+<p class="muted">Sono informazioni generali, non il parere di un avvocato o di un medico. Controlla sempre con l'ospedale o con la tua azienda sanitaria (ASL). Informazioni controllate il 19 ottobre 2026.</p>
 <!-- /fonti -->
 </section>
 <!-- condividi: creato da tools/pagine.mjs -->
-<div class="wrap share-bar">
+<aside class="wrap share-bar" aria-label="Condividi o stampa">
 <a class="btn share-wa" href="https://wa.me/?text=Non%20ti%20danno%20la%20cartella%20clinica%3F%20Copia%20e%20referti%20entro%207%20giorni%2C%20prima%20copia%20gratis%0Ahttps%3A%2F%2Fguidasanita.it%2Fcartella-clinica%2F" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> Condividi su WhatsApp</a>
 <button type="button" class="btn share-print js-inline" data-action="print-page" data-print="guida">🖨️ Stampa la guida</button>
 <p class="print-url">Guida Sanità, gratis e fatta da volontari: https://guidasanita.it/cartella-clinica/</p>
-</div>
+</aside>
 <!-- /condividi -->
 <footer class="site-footer" id="site-footer"><div class="wrap">
 <p><strong>Guida Sanità è fatto da volontari. Non siamo l'azienda sanitaria (ASL), l'INPS né un altro ufficio pubblico.</strong> Diamo informazioni generali, non il parere di un avvocato o di un medico.</p>

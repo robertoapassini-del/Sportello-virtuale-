@@ -41,7 +41,7 @@ const topics = () => [
   ['urp', '🏥 Ufficio per i cittadini (URP)', 'Per reclami, informazioni e quando non sai a chi chiedere.'],
   ['casa', '🏠 Infermiere e cure a casa (PUA)', "Il PUA è lo sportello del distretto per l'assistenza a casa. Chiama quello del tuo comune."],
   ['anagrafe', '🪪 Scelta del medico ed esenzioni ticket', 'Lo sportello «scelta e revoca» del distretto: cambiare medico o pediatra, esenzione dal ticket.'],
-  ['screening', '🎗️ Esami contro i tumori (screening)', 'Mammografia, pap test, esame per il colon: gratis e senza ricetta.'],
+  ['screening', '🎗️ Esami contro i tumori (screening)', 'Mammografia, Pap test, esame per il colon: gratis e senza ricetta.'],
   ['cartelle', '📁 Copia della cartella clinica', "L'ufficio dell'ospedale dove c'è stato il ricovero."],
   ['protesica', '🦽 Protesi e ausili (carrozzina, letto, pannoloni)', 'Qui porti la prescrizione dello specialista. Vai a quello del tuo distretto.'],
   ['palliative', '🕊️ Cure palliative e hospice', ''],
@@ -87,6 +87,8 @@ function aspBlock(a) {
 // Voci di data/numeri.json valide solo in una regione («regione»: "sicilia"): si mostrano solo a chi l'ha scelta.
 const perMe = (x) => !x.regione || (x.regione === regione() && !needsRegion() && !regioneNonPronta());
 const nota = (t) => (typeof t === 'string' ? t : t.text);
+// Scorre fino a un blocco, se c'è (senza «?.»: non va su Safari 12, tests/compat.test.mjs).
+const scorriA = (id) => { const el = document.getElementById(id); if (el) el.scrollIntoView({ block: 'start' }); };
 
 const group = (g) => `
   <h2>${esc(g.title)}</h2>
@@ -96,24 +98,35 @@ const group = (g) => `
 // Blocco regionale: la scelta della regione, l'invito se la regione non c'è ancora, oppure le province.
 function regionale(id, a, provinces) {
   if (needsRegion()) return `<p>Prima scegli la tua regione.</p>${regionChoices()}`;
-  if (regioneNonPronta()) return regionMissing('');
+  if (regioneNonPronta()) {
+    return `<p>Guardia medica: chiedi al tuo medico di famiglia il numero della tua zona, o cercalo sul sito della tua azienda sanitaria.</p>
+    ${regionMissing()}`;
+  }
   return `<p>Scegli la tua provincia: guardia medica, CUP per prenotare, ufficio per i cittadini, cure a casa.</p>
     <div class="grid2">${provinces.map((p) => `<a class="btn choice" href="#${esc(p.id)}"${p.id === id ? ' aria-current="true"' : ''}><span class="txt">${esc(p.province)}</span></a>`).join('')}</div>
     ${changeRegionLink()}
     ${aspBlock(a)}`;
 }
 
+// La provincia nell'indirizzo (#palermo). Un indirizzo rotto (#%) non deve bloccare la pagina.
+function hashId() {
+  try { return decodeURIComponent(location.hash.slice(1)); } catch { return ''; }
+}
+
+// Avviso quando una parte dei dati non arriva: i numeri validi in tutta Italia restano.
+const avvisoRegione = () => '<div class="notice bad"><p>Non riusciamo a caricare i numeri della tua regione. Riprova tra poco. I numeri validi in tutta Italia ci sono lo stesso.</p></div>';
+
 function render() {
-  const id = decodeURIComponent(location.hash.slice(1));
-  const a = data.asl.find((x) => x.id === id);
-  const pronta = !needsRegion() && !regioneNonPronta();
-  const provinces = [...data.asl].sort((x, y) => x.province.localeCompare(y.province));
+  const id = hashId();
+  const a = data ? data.asl.find((x) => x.id === id) : null;
+  const pronta = !needsRegion() && !regioneNonPronta() && !!data;
+  const provinces = (data ? [...data.asl] : []).sort((x, y) => x.province.localeCompare(y.province));
   app.innerHTML = `
     <h1>📞 Numeri utili</h1>
     <p class="lead">I numeri giusti da chiamare${pronta ? ` ${esc(inRegione())}` : ''}. Tocca il numero per chiamare.</p>
     ${group(nums.groups[0])}
     <h2 id="regione">${pronta ? `I numeri della tua ${esc(aslLabel())}` : 'I numeri della tua regione'}</h2>
-    ${regionale(id, a, provinces)}
+    ${data || needsRegion() || regioneNonPronta() ? regionale(id, a, provinces) : `${avvisoRegione()}${changeRegionLink()}`}
     ${nums.groups.slice(1).map(group).join('')}
     ${nums.notes.filter(perMe).map((t) => `<div class="notice info"><p>${esc(nota(t))}</p></div>`).join('')}
     ${nums.links.some(perMe) ? `<h2>Su internet</h2>
@@ -131,20 +144,26 @@ async function caricaRegione() {
 // Dopo una scelta: se la regione dei dati è cambiata si caricano i dati nuovi, senza ricaricare la pagina.
 async function ridisegna() {
   if (regione() !== regioneDeiDati()) {
-    try { await caricaRegione(); } catch {
-      app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare i numeri di questa regione. Riprova tra poco.</p></div>'; return;
-    }
+    // Se i dati della regione non arrivano, render() mostra l'avviso e i numeri nazionali.
+    try { await caricaRegione(); } catch { data = null; inps = { provinces: [] }; }
     if (location.hash && location.hash !== '#regione') history.replaceState(null, '', location.pathname);
   }
   render();
-  document.getElementById('regione')?.scrollIntoView({ block: 'start' });
+  scorriA('regione');
 }
 
 // Arrivati da un'altra pagina per cambiare regione (numeri-utili/?torna=/pagina/#regione): scelta la regione,
-// si torna lì. Solo indirizzi di questo sito («/…», mai «//altro-sito»).
+// si torna lì. Solo indirizzi di questo sito: l'indirizzo si risolve come fa il browser
+// («/\\altro-sito» e «/%09/altro-sito» diventano «//altro-sito») e si tiene solo se resta qui.
+// Si usa l'indirizzo intero (u.href, con https://questo-sito): solo il pathname poteva essere «//altro-sito/»
+// («/.//altro-sito/»), che location.assign() legge come un altro sito.
 const torna = (() => {
   const t = new URLSearchParams(location.search).get('torna');
-  return t && /^\/(?!\/)/.test(t) ? t : '';
+  if (!t) return '';
+  try {
+    const u = new URL(t, location.origin);
+    return u.origin === location.origin ? u.href : '';
+  } catch { return ''; }
 })();
 
 app.addEventListener('click', (e) => {
@@ -155,19 +174,29 @@ app.addEventListener('click', (e) => {
 });
 
 window.addEventListener('hashchange', () => {
+  if (!nums) return; // dati non ancora arrivati (o non arrivati): init() disegna
   render();
-  document.getElementById('asp-numeri')?.scrollIntoView({ block: 'start' });
+  scorriA('asp-numeri');
 });
 
 (async function init() {
   renderFooter(ROOT);
+  // Senza i dati della regione la pagina mostra lo stesso i numeri nazionali (render() mette l'avviso).
+  const reg = caricaRegione().catch(() => { data = null; inps = { provinces: [] }; });
   try {
-    [nums] = await Promise.all([loadJSON(`${ROOT}data/numeri.json`), caricaRegione()]);
+    [nums] = await Promise.all([loadJSON(`${ROOT}data/numeri.json`), reg]);
   } catch {
-    app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>'; return;
+    // Senza data/numeri.json resta visibile il testo scritto nella pagina (.static-fallback, con 112, 1522…):
+    // la classe «errore-js» lo mostra (css/style.css). Al posto di «Un momento…» c'è l'avviso.
+    document.documentElement.classList.add('errore-js');
+    const wait = app.querySelector('.js-only');
+    const msg = '<div class="notice bad" role="alert"><p>Non riusciamo a caricare tutta la pagina. I numeri più importanti sono qui sotto. Riprova tra poco.</p></div>';
+    if (wait) wait.remove();
+    app.insertAdjacentHTML('afterbegin', msg);
+    return;
   }
   // «Cambia regione» dalle altre pagine (per esempio dalla home): numeri-utili/#regione.
   if (location.hash === '#regione') regionAction({ dataset: { action: 'change-region' } }, { current: 'province', render, go: render });
   else render();
-  if (location.hash) document.getElementById(location.hash === '#regione' ? 'regione' : 'asp-numeri')?.scrollIntoView({ block: 'start' });
+  if (location.hash) scorriA(location.hash === '#regione' ? 'regione' : 'asp-numeri');
 })();

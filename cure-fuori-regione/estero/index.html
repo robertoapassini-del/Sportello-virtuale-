@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Cure all&#39;estero: in Europa con la ricetta, l&#39;autorizzazione dell&#39;ASL e il rimborso – Guida Sanità</title>
 <meta name="description" content="Come curarsi in un altro Paese europeo con il Servizio sanitario: cure senza autorizzazione rimborsate dall&#39;ASL entro i limiti italiani, cure con autorizzazione preventiva (ricoveri, alta specializzazione), domanda di rimborso con fatture e referti (in Sicilia entro 30 giorni dal rientro). Fuori dall&#39;Europa solo i centri di altissima specializzazione autorizzati.">
 <meta name="theme-color" content="#0b5f5c">
@@ -10,7 +11,7 @@
 <link rel="icon" href="../../logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
 <link rel="manifest" href="../../site.webmanifest">
-<script>document.documentElement.className += ' js';if(/\/index\.html$/.test(location.pathname))location.replace(location.pathname.slice(0,-10)+location.search+location.hash);</script>
+<script>document.documentElement.className += ' js';if(/\/index\.html$/.test(location.pathname))location.replace('/'+location.pathname.slice(0,-10).replace(/^[\/\\]+/,'')+location.search+location.hash);</script>
 <link rel="canonical" href="https://guidasanita.it/cure-fuori-regione/estero/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Guida Sanità">
@@ -19,6 +20,11 @@
 <meta property="og:description" content="Come curarsi in un altro Paese europeo con il Servizio sanitario: cure senza autorizzazione rimborsate dall&#39;ASL entro i limiti italiani, cure con autorizzazione preventiva (ricoveri, alta specializzazione), domanda di rimborso con fatture e referti (in Sicilia entro 30 giorni dal rientro). Fuori dall&#39;Europa solo i centri di altissima specializzazione autorizzati.">
 <meta property="og:url" content="https://guidasanita.it/cure-fuori-regione/estero/">
 <link rel="stylesheet" href="../../css/style.css">
+<link rel="modulepreload" href="../../js/guida.js">
+<link rel="modulepreload" href="../../js/common.js">
+<link rel="modulepreload" href="../../js/engine.js">
+<link rel="modulepreload" href="../../js/icons.js">
+<link rel="modulepreload" href="../../js/controlla.js">
 </head>
 <body>
 <header class="site-header">
@@ -28,14 +34,14 @@
 <nav class="header-nav" aria-label="Argomenti"><div class="wrap"><ul><li><a href="../../visite-esami/" aria-current="true">Visite ed esami</a></li><li><a href="../../prevenzione-medico/">Prevenzione</a></li><li><a href="../../aiuto-a-casa/">Aiuto a casa</a></li><li><a href="../../invalidita-aiuti/">Invalidità</a></li><li><a href="../../tessera-e-ricette/">Tessera e ricette</a></li></ul></div></nav>
 </header>
 <nav class="breadcrumb" aria-label="Sei qui"><div class="wrap"><ol><li><a href="../../">Inizio</a></li><li><a href="../../visite-esami/">Visite ed esami</a></li><li><a href="../../cure-fuori-regione/">Curarsi fuori dalla propria regione</a></li></ol><a class="breadcrumb-back" href="../../cure-fuori-regione/"><span aria-hidden="true">‹ </span>Curarsi fuori dalla propria regione</a></div></nav>
-<!-- Pagina corta della guida «Curarsi fuori dalla Sicilia» (data/moduli.json → "pages"). Nessuna domanda interattiva: solo testo. -->
+<!-- Pagina corta della guida «Curarsi fuori dalla propria regione» (data/moduli.json → "pages"). Nessuna domanda interattiva: solo testo. -->
 <main class="wrap guida" id="app">
 <h1>Le cure all'estero: in Europa e fuori</h1>
-<p class="lead">Due strade diverse, con regole diverse. In tutti e due i casi <strong>parla prima con la tua azienda sanitaria (ASL)</strong>: andare e poi chiedere il rimborso è la cosa più rischiosa.</p>
+<p class="lead">Due strade diverse, con regole diverse. In tutti e due i casi <strong>parla prima con la tua azienda sanitaria (ASL; in Sicilia si chiama ASP)</strong>: andare e poi chiedere il rimborso è la cosa più rischiosa.</p>
 <h2>In Europa, con la direttiva europea</h2>
-<p>Puoi farti curare in un Paese dell'Unione europea, anche da un privato, e chiedere il rimborso alla tua ASL, ma <strong>solo per le cure previste dal Servizio sanitario italiano</strong> e <strong>fino a quanto costerebbero in Italia</strong>: la differenza la paghi tu, e paghi tu anche viaggio e alloggio.</p>
+<p>Puoi farti curare in un Paese dell'Unione europea, anche da un privato. Poi puoi chiedere il rimborso alla tua ASL. Il rimborso c'è <strong>solo per le cure previste dal Servizio sanitario italiano</strong>. E arriva solo <strong>fino a quanto la cura costerebbe in Italia</strong>: la differenza la paghi tu. Paghi tu anche viaggio e alloggio.</p>
 <ul>
-<li>Per le visite e gli esami di solito <strong>non serve autorizzazione</strong>: paghi, conservi fatture e referti, e al rientro chiedi il rimborso all'ASL con il modulo, i documenti clinici (tradotti), le ricevute originali e l'IBAN. In Sicilia la domanda va fatta <strong>entro 30 giorni dal rientro</strong>; nelle altre regioni chiedi alla tua ASL entro quando.</li>
+<li>Per le visite e gli esami di solito <strong>non serve autorizzazione</strong>. Paghi e conservi fatture e referti. Al rientro chiedi il rimborso all'ASL con il modulo, i documenti clinici (tradotti), le ricevute originali e l'IBAN. In Sicilia devi fare la domanda <strong>entro 30 giorni dal rientro</strong>. Nelle altre regioni chiedi alla tua ASL entro quando.</li>
 <li>Per i <strong>ricoveri</strong> e le cure costose serve l'<strong>autorizzazione preventiva</strong> dell'ASL. Puoi chiedere all'ASL una verifica prima di partire, per sapere se serve.</li>
 </ul>
 
@@ -63,11 +69,11 @@
 <!-- /fonti -->
 </main>
 <!-- condividi: creato da tools/pagine.mjs -->
-<div class="wrap share-bar">
+<aside class="wrap share-bar" aria-label="Condividi o stampa">
 <a class="btn share-wa" href="https://wa.me/?text=Cure%20all'estero%3A%20in%20Europa%20con%20la%20ricetta%2C%20l'autorizzazione%20dell'ASL%20e%20il%20rimborso%0Ahttps%3A%2F%2Fguidasanita.it%2Fcure-fuori-regione%2Festero%2F" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> Condividi su WhatsApp</a>
 <button type="button" class="btn share-print js-inline" data-action="print-page">🖨️ Stampa questa pagina</button>
 <p class="print-url">Guida Sanità, gratis e fatta da volontari: https://guidasanita.it/cure-fuori-regione/estero/</p>
-</div>
+</aside>
 <!-- /condividi -->
 <footer class="site-footer" id="site-footer"><div class="wrap">
 <p><strong>Guida Sanità è fatto da volontari. Non siamo l'azienda sanitaria (ASL), l'INPS né un altro ufficio pubblico.</strong> Diamo informazioni generali, non il parere di un avvocato o di un medico.</p>

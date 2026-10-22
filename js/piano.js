@@ -2,7 +2,7 @@
 // Prima la risposta: la pagina mostra subito la risposta scritta; il conto della scadenza parte dal pulsante.
 // Non chiediamo né la malattia né il nome della medicina: solo la data di scadenza del piano.
 import { pianoStatus, todayISO, formatIt, parseDate, art } from './engine.js';
-import { esc, loadJSON, loadRegioni, disclaimer, renderFooter, readForm, aslLabel } from './common.js';
+import { esc, loadJSON, loadRegioni, disclaimer, renderFooter, avvisoErrore, readForm, aslLabel } from './common.js';
 import { createFlow, choice, restartBtn, days, dateForm, showError } from './flow.js';
 
 const ROOT = '../';
@@ -22,7 +22,7 @@ const whatIs = () => `
     <li><strong>Dove prendi la medicina:</strong> molte medicine con il piano non si prendono come le altre. A volte si ritirano alla <strong>farmacia dell'${aslLabel()}</strong> («distribuzione diretta»). Altre volte le dà la tua farmacia <strong>per conto dell'${aslLabel()}</strong> («DPC»): la farmacia la ordina e di solito arriva in un giorno o due. Chiedi al medico o al farmacista quale vale per la tua medicina.</li>
     <li><strong>Prima che scada</strong> serve una nuova visita dallo specialista per rinnovarlo. Se scade, il medico non può più fare la ricetta con il Servizio sanitario.</li>
   </ol>
-  <div class="notice warn"><p>⚠️ La visita per il rinnovo è una <strong>visita di controllo</strong>: può avere tempi lunghi e non c'è la garanzia dei tempi massimi. Per questo va prenotata con largo anticipo, almeno ${rules.book_before_days} giorni prima.</p></div>
+  <div class="notice warn"><p>⚠️ La visita per il rinnovo è una <strong>visita di controllo</strong>: può avere tempi lunghi e non c'è la garanzia dei tempi massimi. Per questo prenotala con largo anticipo, almeno ${rules.book_before_days} giorni prima.</p></div>
   <details class="card">
     <summary>Se la visita non si trova in tempo</summary>
     <ul class="clean">
@@ -65,7 +65,7 @@ const screens = {
       document.getElementById('exp-form').addEventListener('submit', (e) => {
         e.preventDefault();
         const v = readForm(e.target);
-        if (!parseDate(v.expiryDate)) return showError('exp-form', 'Scrivi la data.');
+        if (parseDate(v.expiryDate) === null) return showError('exp-form', 'Scrivi la data.');
         state.expiryDate = v.expiryDate;
         flow.go('result');
       });
@@ -99,7 +99,7 @@ let flow;
   renderFooter(ROOT);
   // L'elenco delle regioni serve a aslLabel(): ASP in Sicilia, ASL, ATS… altrove.
   try { [rules] = await Promise.all([loadJSON(`${ROOT}data/rules-piano.json`), loadRegioni(ROOT)]); } catch {
-    app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>'; return;
+    avvisoErrore(); return; // la risposta scritta nella pagina resta, con l'avviso sopra
   }
   flow = createFlow({ app, screens, state, sources });
   flow.render();

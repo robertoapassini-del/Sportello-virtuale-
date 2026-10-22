@@ -3,8 +3,8 @@
 // Controllo delle condizioni principali con regole fisse. Niente lettera: la domanda si fa
 // all'INPS (o gratis con un patronato o un CAF).
 import { adiCheck, formatEuro } from './engine.js';
-import { esc, loadJSON, disclaimer, renderFooter, readForm } from './common.js';
-import { createFlow, choice, restartBtn, progress } from './flow.js';
+import { esc, loadJSON, disclaimer, renderFooter, avvisoErrore, readForm } from './common.js';
+import { createFlow, choice, restartBtn, progress, showError } from './flow.js';
 
 const ROOT = '../';
 const app = document.getElementById('app');
@@ -28,9 +28,9 @@ const howTo = () => `
     <summary>Quanto dura e cosa controllano</summary>
     <ul class="clean">
       <li>Dura <strong>${rules.duration_months} mesi</strong>. Poi si può rinnovare per altri ${rules.renewal_months} mesi, senza più il mese di stop: la domanda di rinnovo si fa dal mese dopo l'ultimo pagamento. Il primo mese del rinnovo arriva la metà (${rules.renewal_first_month_percent}%), poi l'importo intero.</li>
-      <li>Oltre all'ISEE, controllano il reddito della famiglia (limite di circa ${formatEuro(rules.income_max_base)} l'anno per una persona sola, di più per le famiglie numerose, per chi è in affitto e per le famiglie con tutti sopra i 67 anni: ${formatEuro(rules.income_max_elderly)}), la casa e i risparmi.</li>
+      <li>Oltre all'ISEE, controllano il reddito della famiglia, la casa e i risparmi. Il limite di reddito è ${formatEuro(rules.income_max_base)} l'anno per una persona sola. È più alto per le famiglie numerose e per chi è in affitto. Per le famiglie con tutti sopra i 67 anni è ${formatEuro(rules.income_max_elderly)}.</li>
       <li>Chi può lavorare (tra 18 e 59 anni, senza carichi di cura) deve iscriversi ai percorsi per il lavoro.</li>
-      <li>Se la situazione cambia (lavoro, nascite, trasloco) va comunicato all'INPS.</li>
+      <li>Se la situazione cambia (lavoro, nascite, trasloco), devi dirlo all'INPS.</li>
     </ul>
   </details>`;
 
@@ -64,7 +64,7 @@ const screens = {
       <p>È il numero scritto sull'attestazione ISEE di quest'anno. Lo fa il CAF, gratis.</p>
       <form id="isee-form" novalidate>
         <label for="isee">ISEE, in euro<span class="hint">Per esempio 8000. Senza punti né virgole</span></label>
-        <input type="number" id="isee" name="isee" min="0" step="1" inputmode="numeric" value="${esc(state.isee ?? '')}">
+        <input type="number" id="isee" name="isee" min="0" step="1" inputmode="numeric" value="${esc(state.isee == null ? '' : state.isee)}" aria-describedby="isee-form-error">
         <p class="field-error" id="isee-form-error" role="alert" hidden></p>
         <button type="submit" class="btn primary big">✔️ Controlla</button>
       </form>
@@ -74,12 +74,7 @@ const screens = {
         e.preventDefault();
         const v = readForm(e.target);
         const n = Number(v.isee);
-        if (v.isee === '' || !Number.isFinite(n) || n < 0) {
-          const err = document.getElementById('isee-form-error');
-          err.textContent = 'Scrivi un numero, oppure premi «Non lo so».';
-          err.hidden = false;
-          return;
-        }
+        if (v.isee === '' || !Number.isFinite(n) || n < 0) return showError('isee-form', 'Scrivi un numero, oppure premi «Non lo so».', { field: 'isee' });
         state.isee = n;
         flow.go('result');
       });
@@ -92,7 +87,7 @@ const screens = {
     const why = {
       household: `in famiglia non c'è un minorenne, una persona con almeno 60 anni, una persona con disabilità o una persona seguita dai servizi`,
       residency: `chi fa la domanda non vive in Italia da ${rules.residency_years} anni`,
-      isee: `l'ISEE (${formatEuro(state.isee ?? 0)}) è sopra il limite di ${formatEuro(rules.isee_max)}`,
+      isee: `l'ISEE (${formatEuro(state.isee == null ? 0 : state.isee)}) è sopra il limite di ${formatEuro(rules.isee_max)}`,
     };
     if (r.status === 'no') {
       return {
@@ -143,7 +138,7 @@ let flow;
 (async function init() {
   renderFooter(ROOT);
   try { rules = await loadJSON(`${ROOT}data/rules-adi.json`); } catch {
-    app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>'; return;
+    avvisoErrore(); return; // la risposta scritta nella pagina resta, con l'avviso sopra
   }
   flow = createFlow({ app, screens, state, sources });
   flow.render();

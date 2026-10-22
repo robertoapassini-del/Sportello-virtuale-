@@ -11,15 +11,18 @@
   "age_limits": { "child_under": 6, "elderly_from": 65, "minimo_over": 60 },
   "valid_until": "31 marzo dell'anno dopo",
   "other_exemptions": [
-    { "code": "C01", "text": "Invalidità civile al 100%: non paghi il ticket per visite ed esami." },
-    { "code": "C02", "text": "Invalidità civile dal 67% al 99%: non paghi il ticket per visite ed esami." },
-    { "code": "C03", "text": "Minore con indennità di frequenza: non paghi il ticket per visite ed esami." },
+    { "code": "C01", "text": "Invalidità civile al 100% senza indennità di accompagnamento: non paghi il ticket per visite ed esami." },
+    { "code": "C02", "text": "Invalidità civile al 100% con indennità di accompagnamento: non paghi il ticket per visite ed esami." },
+    { "code": "C03", "text": "Invalidità civile dal 67% al 99%: non paghi il ticket per visite ed esami." },
+    { "code": "C04", "text": "Minore con indennità di frequenza: non paghi il ticket per visite ed esami." },
+    { "code": "C05", "text": "Persona cieca: non paghi il ticket per visite ed esami." },
+    { "code": "C06", "text": "Persona sorda: non paghi il ticket per visite ed esami." },
     { "code": "0xx", "text": "Malattia cronica nell'elenco del Ministero (per esempio diabete, ipertensione grave, asma): non paghi le visite e gli esami per quella malattia. La chiede il medico, la rilascia l'azienda sanitaria." },
     { "code": "048", "text": "Tumore: non paghi visite ed esami legati alla malattia e ai controlli." },
     { "code": "M", "text": "Gravidanza: visite ed esami del percorso nascita gratuiti." },
     { "code": "D", "text": "Esami di prevenzione (screening) nelle fasce di età previste: gratuiti." }
   ],
-  "notes_internal": "TODO-VERIFY: E01 dai 65 anni compiuti (la legge dice «superiore a 65 anni»: confermare con ASP/Sistema TS che vale dal compleanno); soglie aggiornate (DM 11/12/2009; art. 8 c. 16 L. 537/1993) e codici C01-C03 con il legale/ASP. In Sicilia l'esenzione farmaci per reddito ha regole regionali: non calcolarla.",
+  "notes_internal": "TODO-VERIFY: E01 dai 65 anni compiuti (la legge dice «superiore a 65 anni»: confermare con ASP/Sistema TS che vale dal compleanno); soglie aggiornate (DM 11/12/2009; art. 8 c. 16 L. 537/1993) con il legale/ASP. Codici di esenzione per invalidità (da C01 a C06) corretti il 2026-10-21 sulla scheda del Garante disabili della Regione Campania: il significato di ognuno è in other_exemptions. In Sicilia l'esenzione farmaci per reddito ha regole regionali: non calcolarla.",
   "provenienza": {
     "codes.E01": {
       "url": "https://www.salute.gov.it/new/it/tema/esenzioni-dal-ticket/esenzioni-reddito/",
@@ -30,15 +33,17 @@
     },
     "codes.E02": {
       "url": "https://www.salute.gov.it/new/it/tema/esenzioni-dal-ticket/esenzioni-reddito/",
-      "verified": "2026-10-18",
+      "verified": "2026-10-22",
       "proof": "estratto",
-      "review_by": "2027-01-31"
+      "review_by": "2027-01-31",
+      "nota": "Reddito «inferiore a» 8.263,31 euro (11.362,05 con il coniuge a carico, 516,46 in più per ogni figlio a carico): chi ha esattamente il limite non ha l'esenzione. Per E01 invece il reddito è «non superiore» a 36.151,98 (tabelle regionali, es. Regione Piemonte DGR 23/03/2026)."
     },
     "codes.E04": {
       "url": "https://www.salute.gov.it/new/it/tema/esenzioni-dal-ticket/esenzioni-reddito/",
-      "verified": "2026-10-18",
+      "verified": "2026-10-22",
       "proof": "estratto",
-      "review_by": "2027-01-31"
+      "review_by": "2027-01-31",
+      "nota": "Reddito «inferiore a» 8.263,31 euro (11.362,05 con il coniuge a carico, 516,46 in più per ogni figlio a carico): chi ha esattamente il limite non ha l'esenzione. Per E01 invece il reddito è «non superiore» a 36.151,98 (tabelle regionali, es. Regione Piemonte DGR 23/03/2026)."
     },
     "valid_until": {
       "url": "https://www.ausl.pc.it/it/come-fare-per/esenzioni-e-contributi/esenzioni/esenzioni-dal-pagamento-del-ticket",
@@ -61,6 +66,8 @@
     { "label": "Sistema Tessera Sanitaria – esenzioni per reddito", "url": "https://sistemats1.sanita.finanze.it/portale/esenzioni-da-reddito-cittadini" },
     { "label": "AUSL Piacenza – Esenzione ticket per reddito (validità fino al 31 marzo)", "url": "https://www.ausl.pc.it/it/come-fare-per/esenzioni-e-contributi/esenzioni/esenzioni-dal-pagamento-del-ticket" },
     { "label": "ASL Città di Torino – Esenzione ticket per reddito", "url": "https://www.aslcittaditorino.it/prestazioni/esenzione-ticket-per-reddito/" },
-    { "label": "Regione Siciliana – Assessorato della Salute", "url": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute" }
+    { "label": "Garante disabili Regione Campania – Esenzioni per invalidità: i codici (C01-C06)", "url": "https://www.cr.campania.it/garante-disabili/images/Articoli_2025/28_Aprile_2025_-_Esenzioni_per_invalidità_i_codici.pdf" },
+    { "label": "Regione Siciliana – Assessorato della Salute", "url": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute" },
+    { "label": "Codice civile, artt. 316 e 320 (il genitore firma per il figlio minore), 357 (tutore), 404-405 (amministratore di sostegno)", "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262" }
   ]
 }

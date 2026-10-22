@@ -28,7 +28,7 @@ const ECCEZIONI = {
     { testo: /circa 4 mesi$/, perche: 'classe P: 120 giorni arrotondati in mesi', valore: (d) => Math.round(d.rules.max_wait_days.P / 30), unita: 'mesi' },
   ],
   'esenzione-ticket': [
-    { testo: /invalidità civile (al 100|dal 67|dal 67% al 99)%$/, perche: 'percentuali di invalidità dei codici C01 e C02: sono nel testo di other_exemptions' },
+    { testo: /invalidità civile (al 100|dal 67|dal 67% al 99)%$/, perche: 'percentuali di invalidità dei codici C01-C03: sono nel testo di other_exemptions' },
   ],
   'assistenza-domiciliare': [
     { testo: /1\.129,11 euro$/, perche: 'esempio: 1.000 € di spese più la franchigia', valore: (d) => 1000 + d['rules-domiciliare'].detrazione.franchigia, unita: '€' },
@@ -37,17 +37,30 @@ const ECCEZIONI = {
   ],
   invalidita: [
     { testo: /[Hh]ai (<strong>)?6 mesi$/, perche: 'termine del ricorso: sta nel modulo ricorso-invalidita', valore: (d, tutti) => tutti['rules-ricorso'].appeal_months, unita: 'mesi' },
+    { testo: /e il ricorso entro 6 mesi$/, perche: 'termine del ricorso, nella descrizione della pagina: sta nel modulo ricorso-invalidita', valore: (d, tutti) => tutti['rules-ricorso'].appeal_months, unita: 'mesi' },
   ],
   'ricorso-invalidita': [
     { testo: /circa 13\.660 euro$/, perche: 'gratuito patrocinio arrotondato alle decine', valore: (d) => Math.round(d['rules-ricorso'].gratuito_patrocinio_income / 10) * 10, unita: '€' },
     { testo: /circa 27\.300 euro$/, perche: 'doppio del gratuito patrocinio arrotondato alle centinaia', valore: (d) => Math.round(d['rules-ricorso'].no_legal_costs_income / 100) * 100, unita: '€' },
-    { testo: /devono dartela entro 7 giorni$/, perche: 'copia della cartella clinica: sta nel modulo cartella-clinica', valore: (d, tutti) => tutti['rules-cartella'].deadline_days, unita: 'giorni' },
+    { testo: /devono darteli entro 7 giorni$/, perche: 'copia della cartella clinica: sta nel modulo cartella-clinica', valore: (d, tutti) => tutti['rules-cartella'].deadline_days, unita: 'giorni' },
   ],
   'fascicolo-e-ricetta': [
     { testo: /la copia ti spetta entro 7 giorni$/, perche: 'copia della cartella clinica: sta nel modulo cartella-clinica', valore: (d, tutti) => tutti['rules-cartella'].deadline_days, unita: 'giorni' },
+    { testo: /devono dartelo entro 7 giorni$/, perche: 'copia della lettera di dimissione (risposta breve): sta nel modulo cartella-clinica', valore: (d, tutti) => tutti['rules-cartella'].deadline_days, unita: 'giorni' },
   ],
   'legge-104': [
-    { testo: /poco sopra i 57\.000 euro$/, perche: 'tetto 2025 del congedo straordinario, arrotondato: il valore esatto è nelle circolari INPS di gennaio, non nei dati (cambia ogni anno)' },
+    { testo: /hanno compiuto 65 anni$/, perche: 'permessi 104 al parente di terzo grado: età fissata dall\'art. 33 c. 3 L. 104/1992, non una cifra del modulo' },
+    { testo: /verbale sia sbagliato, hai 6 mesi$/, perche: 'termine del ricorso: sta nel modulo ricorso-invalidita', valore: (d, tutti) => tutti['rules-ricorso'].appeal_months, unita: 'mesi' },
+  ],
+  accompagnamento: [
+    { testo: /pensi di averne diritto, hai 6 mesi$/, perche: 'termine del ricorso (risposta breve): sta nel modulo ricorso-invalidita', valore: (d, tutti) => tutti['rules-ricorso'].appeal_months, unita: 'mesi' },
+    { testo: /Circa 550 euro$/, perche: 'descrizione della pagina: importo mensile arrotondato alle decine', valore: (d) => Math.round(d['rules-accompagnamento'].importo_mensile_2026 / 10) * 10, unita: '€' },
+  ],
+  'contrassegno-disabili': [
+    { testo: /Non serve l'invalidità al 100%$/, perche: 'dice che una percentuale di invalidità NON serve: non è una cifra del modulo' },
+  ],
+  'rsa': [
+    { testo: /tutto gratuito per più di 29 giorni$/, perche: 'sospensione dell\'accompagnamento: sta nel modulo accompagnamento', valore: (d, tutti) => tutti['rules-accompagnamento'].ricovero_giorni, unita: 'giorni' },
   ],
   'medico-famiglia': [
     { testo: /a Trapani, dopo un cambio bisogna aspettare 30 giorni$/, perche: 'regola della sola ASP Trapani, scritta nel testo di regioni/sicilia/asp.json (scelta_medico)' },
@@ -67,6 +80,11 @@ function numeri(v, dove, out) {
 const testoVisibile = (html) => html
   .replace(/<script[\s\S]*?<\/script>/g, ' ').replace(/<[^>]+>/g, ' ')
   .replace(/&nbsp;/g, ' ').replace(/&#8217;|&rsquo;/g, '’').replace(/&amp;/g, '&').replace(/\s+/g, ' ');
+// Titolo e descrizioni della pagina, separati da « | » (una cifra non si attacca alla frase dopo).
+const testa = (html) => [
+  ...[...html.matchAll(/<title>([^<]*)<\/title>/g)].map((m) => m[1]),
+  ...[...html.matchAll(/<meta (?:name|property)="(?:description|og:title|og:description|twitter:title|twitter:description)" content="([^"]*)"/g)].map((m) => m[1]),
+].map((t) => testoVisibile(t.replace(/&#39;/g, "'").replace(/&quot;/g, '"'))).join(' | ');
 const numero = (s) => Number(s.replace(/\./g, '').replace(',', '.'));
 const UNITA = /(circa\s+)?(\d{1,3}(?:\.\d{3})+(?:,\d{1,2})?|\d+(?:,\d{1,2})?)\s*(€|euro|ore|ora|giorni|giorno|mesi|mese|anni|anno|settimane|settimana|pazienti|%)(?![\w-])/g;
 function cifre(testo) {
@@ -81,15 +99,40 @@ function cifre(testo) {
   return out;
 }
 
-// Una cifra «torna» se è uguale a un numero dei dati, oppure ne deriva in un modo ovvio:
+// L'unità di un campo dei dati, dal suo nome («appeal_days» → giorni, «isee_max» → €). Così «40 giorni»
+// nella guida non torna con un «40» che nei dati è un'età o una percentuale (audit dei mutanti del 21/10/2026:
+// «appeal_days» 30 → 40 e «3 giorni al mese» → «2» passavano perché 40 e 2 c'erano, ma come altro).
+// Un campo con un nome che non dice l'unità vale per tutte (null).
+const UNITA_CAMPO = [
+  ['%', /percent/],
+  ['ore', /(^|_)ore(_|$)|hours/],
+  ['giorni', /days|giorni/],
+  ['mesi', /months|mesi|mensilita/],
+  ['anni', /years|anni|age|eta_|_until|_under|_over|_from|screening\[\d+\]\.(min|max)$|vaccines\[\d+\]\.min$/],
+  ['€', /income|euro|isee|importo|franchigia|bonus/],
+  ['pazienti', /patients/],
+];
+function unitaCampo(dove) {
+  const nome = dove.replace(/^[^.]*\./, '').toLowerCase(); // senza il nome del file
+  const ultimo = nome.split('.').pop();
+  // Prima la fine del nome («ore_figlio_fino_anni» → anni), poi l'ultimo pezzo («callback_days.B» → giorni),
+  // poi il nome intero.
+  const fine = (ultimo.match(/_([a-z]+)$/) || [])[1] || '';
+  for (const parte of [fine, ultimo, nome]) for (const [u, re] of UNITA_CAMPO) if (re.test(parte)) return u;
+  return null;
+}
+const stessaUnita = (n, u) => { const x = unitaCampo(n.dove); return x === null || x === u; };
+
+// Una cifra «torna» se è uguale a un numero dei dati con la stessa unità, oppure ne deriva in un modo ovvio:
 // 72 ore = 3 giorni; «fino a 64 anni» = sotto i 65; «da 6 a 13 anni» = sotto i 14.
 function torna(c, nums) {
-  const vals = nums.map((n) => n.valore);
-  if (vals.includes(c.valore)) return true;
-  if (c.unita === 'ore' && vals.includes(c.valore / 24)) return true;
-  if (c.unita === 'anni' && vals.includes(c.valore + 1)) return true;
+  if (nums.some((n) => n.valore === c.valore && stessaUnita(n, c.unita))) return true;
+  if (c.unita === 'ore' && nums.some((n) => n.valore === c.valore / 24 && stessaUnita(n, 'giorni'))) return true;
+  if (c.unita === 'anni' && nums.some((n) => n.valore === c.valore + 1 && stessaUnita(n, 'anni'))) return true;
   return false;
 }
+// Per il messaggio di errore: la cifra c'è, ma in un campo di un'altra unità.
+const altraUnita = (c, nums) => nums.filter((n) => n.valore === c.valore).map((n) => `${n.dove} (${unitaCampo(n.dove)})`);
 
 const jsDelModulo = (html) => (html.match(/<script type="module" src="\.\.\/js\/([a-z-]+\.js)"/) || [])[1];
 // Tutti i file di regole, per le eccezioni che rimandano a un altro modulo.
@@ -104,12 +147,19 @@ for (const m of reg.modules) {
     assert.ok(guida, `${m.id}: manca la guida scritta`);
     const js = jsDelModulo(html);
     // La pagina principale (la guida scritta), le pagine corte della guida (moduli.json → "pages") e il js.
-    const fonti = [[`${m.id}/index.html`, testoVisibile(guida[0])]];
+    // Di ogni pagina anche il titolo e la descrizione che si vedono su Google e nei messaggi (<title>, description, og:).
+    const fonti = [[`${m.id}/index.html`, testoVisibile(guida[0])], [`${m.id}/index.html <head>`, testa(html)]];
+    // Anche il resto del <main> della pagina del modulo, fuori dalla guida (la risposta breve, i riquadri): si vede senza
+    // JavaScript e su Google (audit dei mutanti del 22/10/2026, giro 6: «solo entro 6 mesi» → «3 mesi» passava).
+    const mainPagina = html.match(/<main[^>]*>[\s\S]*?<\/main>/);
+    assert.ok(mainPagina, `${m.id}/index.html: manca <main>`);
+    fonti.push([`${m.id}/index.html <main>`, testoVisibile(mainPagina[0].replace(guida[0], ' '))]);
     for (const sp of m.pages || []) {
       const f = `${m.id}/${sp.id}/index.html`;
-      const main = read(f).match(/<main[^>]*>[\s\S]*?<\/main>/);
+      const pagina = read(f);
+      const main = pagina.match(/<main[^>]*>[\s\S]*?<\/main>/);
       assert.ok(main, `${f}: manca <main>`);
-      fonti.push([f, testoVisibile(main[0])]);
+      fonti.push([f, testoVisibile(main[0])], [`${f} <head>`, testa(pagina)]);
     }
     if (js) fonti.push([`js/${js}`, read(`js/${js}`).replace(/\s+/g, ' ')]);
     const eccezioni = [...ECCEZIONI['*'], ...(ECCEZIONI[m.id] || [])].map((e) => ({ ...e, usata: false }));
@@ -118,7 +168,11 @@ for (const m of reg.modules) {
       for (const c of cifre(testo)) {
         if (torna(c, nums)) continue;
         const e = eccezioni.find((x) => x.testo.test(c.prima));
-        if (!e) { errori.push(`${file}: «${c.testo}» (…${c.contesto}…) non sta in ${m.data.join(', ')}`); continue; }
+        if (!e) {
+          const altro = altraUnita(c, nums);
+          errori.push(`${file}: «${c.testo}» (…${c.contesto}…) non sta in ${m.data.join(', ')}${altro.length ? ` come ${c.unita}: c'è solo in ${altro.join(', ')}` : ''}`);
+          continue;
+        }
         e.usata = true;
         if (e.valore) {
           const atteso = e.valore(dati, tutti);

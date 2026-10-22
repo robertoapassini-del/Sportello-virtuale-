@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Esenzione ticket per reddito: chi ha diritto ai codici E01, E02, E03 ed E04 – Guida Sanità</title>
 <meta name="description" content="Chi non paga il ticket per reddito in Italia: bambini sotto i 6 anni, over 65, disoccupati, assegno sociale, pensione al minimo. I limiti di reddito dei codici E01–E04 e quale reddito conta.">
 <meta name="theme-color" content="#0b5f5c">
@@ -10,7 +11,7 @@
 <link rel="icon" href="../../logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
 <link rel="manifest" href="../../site.webmanifest">
-<script>document.documentElement.className += ' js';if(/\/index\.html$/.test(location.pathname))location.replace(location.pathname.slice(0,-10)+location.search+location.hash);</script>
+<script>document.documentElement.className += ' js';if(/\/index\.html$/.test(location.pathname))location.replace('/'+location.pathname.slice(0,-10).replace(/^[\/\\]+/,'')+location.search+location.hash);</script>
 <link rel="canonical" href="https://guidasanita.it/esenzione-ticket/chi-ha-diritto/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Guida Sanità">
@@ -19,6 +20,11 @@
 <meta property="og:description" content="Chi non paga il ticket per reddito in Italia: bambini sotto i 6 anni, over 65, disoccupati, assegno sociale, pensione al minimo. I limiti di reddito dei codici E01–E04 e quale reddito conta.">
 <meta property="og:url" content="https://guidasanita.it/esenzione-ticket/chi-ha-diritto/">
 <link rel="stylesheet" href="../../css/style.css">
+<link rel="modulepreload" href="../../js/guida.js">
+<link rel="modulepreload" href="../../js/common.js">
+<link rel="modulepreload" href="../../js/engine.js">
+<link rel="modulepreload" href="../../js/icons.js">
+<link rel="modulepreload" href="../../js/controlla.js">
 </head>
 <body>
 <header class="site-header">
@@ -38,9 +44,9 @@
 <thead><tr><th scope="col">Codice</th><th scope="col">Chi ne ha diritto</th><th scope="col">Limite di reddito della famiglia</th></tr></thead>
 <tbody>
 <tr><th scope="row">E01</th><td>Bambini sotto i 6 anni e persone di 65 anni o più</td><td>fino a 36.151,98 euro</td></tr>
-<tr><th scope="row">E02</th><td>Disoccupati iscritti al centro per l'impiego, e familiari a carico</td><td>fino a 8.263,31 euro; 11.362,05 euro con il coniuge a carico; 516,46 euro in più per ogni figlio a carico</td></tr>
+<tr><th scope="row">E02</th><td>Disoccupati iscritti al centro per l'impiego, e familiari a carico</td><td>sotto 8.263,31 euro; sotto 11.362,05 euro con il coniuge a carico; 516,46 euro in più per ogni figlio a carico</td></tr>
 <tr><th scope="row">E03</th><td>Chi ha l'assegno sociale (o la pensione sociale), e familiari a carico</td><td>nessun limite da controllare</td></tr>
-<tr><th scope="row">E04</th><td>Chi ha più di 60 anni con la pensione al minimo, e familiari a carico</td><td>fino a 8.263,31 euro; 11.362,05 euro con il coniuge a carico; 516,46 euro in più per ogni figlio a carico</td></tr>
+<tr><th scope="row">E04</th><td>Chi ha più di 60 anni con la pensione al minimo, e familiari a carico</td><td>sotto 8.263,31 euro; sotto 11.362,05 euro con il coniuge a carico; 516,46 euro in più per ogni figlio a carico</td></tr>
 </tbody>
 </table>
 <p>Per l'età conta quella già compiuta. La pensione al minimo è quella «integrata al minimo» dell'INPS.</p>
@@ -76,17 +82,19 @@
 <li><a href="https://sistemats1.sanita.finanze.it/portale/esenzioni-da-reddito-cittadini" target="_blank" rel="noopener">Sistema Tessera Sanitaria – esenzioni per reddito</a></li>
 <li><a href="https://www.ausl.pc.it/it/come-fare-per/esenzioni-e-contributi/esenzioni/esenzioni-dal-pagamento-del-ticket" target="_blank" rel="noopener">AUSL Piacenza – Esenzione ticket per reddito (validità fino al 31 marzo)</a></li>
 <li><a href="https://www.aslcittaditorino.it/prestazioni/esenzione-ticket-per-reddito/" target="_blank" rel="noopener">ASL Città di Torino – Esenzione ticket per reddito</a></li>
+<li><a href="https://www.cr.campania.it/garante-disabili/images/Articoli_2025/28_Aprile_2025_-_Esenzioni_per_invalidità_i_codici.pdf" target="_blank" rel="noopener">Garante disabili Regione Campania – Esenzioni per invalidità: i codici (C01-C06)</a></li>
 <li><a href="https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute" target="_blank" rel="noopener">Regione Siciliana – Assessorato della Salute</a></li>
+<li><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262" target="_blank" rel="noopener">Codice civile, artt. 316 e 320 (il genitore firma per il figlio minore), 357 (tutore), 404-405 (amministratore di sostegno)</a></li>
 </ul>
 <p class="muted">Sono informazioni generali, non il parere di un avvocato o di un medico. Controlla sempre con la tua azienda sanitaria (ASL). Informazioni controllate il 18 ottobre 2026.</p>
 <!-- /fonti -->
 </main>
 <!-- condividi: creato da tools/pagine.mjs -->
-<div class="wrap share-bar">
+<aside class="wrap share-bar" aria-label="Condividi o stampa">
 <a class="btn share-wa" href="https://wa.me/?text=Esenzione%20ticket%20per%20reddito%3A%20chi%20ha%20diritto%20ai%20codici%20E01%2C%20E02%2C%20E03%20ed%20E04%0Ahttps%3A%2F%2Fguidasanita.it%2Fesenzione-ticket%2Fchi-ha-diritto%2F" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> Condividi su WhatsApp</a>
 <button type="button" class="btn share-print js-inline" data-action="print-page">🖨️ Stampa questa pagina</button>
 <p class="print-url">Guida Sanità, gratis e fatta da volontari: https://guidasanita.it/esenzione-ticket/chi-ha-diritto/</p>
-</div>
+</aside>
 <!-- /condividi -->
 <footer class="site-footer" id="site-footer"><div class="wrap">
 <p><strong>Guida Sanità è fatto da volontari. Non siamo l'azienda sanitaria (ASL), l'INPS né un altro ufficio pubblico.</strong> Diamo informazioni generali, non il parere di un avvocato o di un medico.</p>

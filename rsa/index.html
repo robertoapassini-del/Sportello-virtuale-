@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>RSA: come si entra, chi paga la retta, cosa fare dopo il ricovero – Guida Sanità</title>
 <meta name="description" content="La residenza sanitaria assistenziale (RSA) è per chi non è più autosufficiente e non può essere curato a casa: si chiede al medico di famiglia e al distretto dell&#39;ASL, con la valutazione multidimensionale. La quota sanitaria la paga l&#39;ASL, la quota alberghiera la famiglia o il Comune in base all&#39;ISEE. Dopo un ricovero: dimissione protetta e lungodegenza.">
 <meta name="theme-color" content="#0b5f5c">
@@ -10,7 +11,7 @@
 <link rel="icon" href="../logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="manifest" href="../site.webmanifest">
-<script>document.documentElement.className += ' js';if(/\/index\.html$/.test(location.pathname))location.replace(location.pathname.slice(0,-10)+location.search+location.hash);</script>
+<script>document.documentElement.className += ' js';if(/\/index\.html$/.test(location.pathname))location.replace('/'+location.pathname.slice(0,-10).replace(/^[\/\\]+/,'')+location.search+location.hash);</script>
 <link rel="canonical" href="https://guidasanita.it/rsa/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Guida Sanità">
@@ -19,6 +20,11 @@
 <meta property="og:description" content="La residenza sanitaria assistenziale (RSA) è per chi non è più autosufficiente e non può essere curato a casa: si chiede al medico di famiglia e al distretto dell&#39;ASL, con la valutazione multidimensionale. La quota sanitaria la paga l&#39;ASL, la quota alberghiera la famiglia o il Comune in base all&#39;ISEE. Dopo un ricovero: dimissione protetta e lungodegenza.">
 <meta property="og:url" content="https://guidasanita.it/rsa/">
 <link rel="stylesheet" href="../css/style.css">
+<link rel="modulepreload" href="../js/guida.js">
+<link rel="modulepreload" href="../js/common.js">
+<link rel="modulepreload" href="../js/engine.js">
+<link rel="modulepreload" href="../js/icons.js">
+<link rel="modulepreload" href="../js/controlla.js">
 </head>
 <body>
 <header class="site-header">
@@ -32,14 +38,14 @@
 <main class="wrap" id="app">
 <div class="risposta">
 <h1>La RSA: quando a casa non ce la si fa più</h1>
-<p class="lead">La <strong>RSA</strong> (residenza sanitaria assistenziale) è una struttura dove una persona <strong>non più autosufficiente</strong> vive ed è curata giorno e notte, con medici, infermieri e operatori. Non è una casa di riposo: ci si entra per bisogni sanitari, e la decisione passa dall'azienda sanitaria (ASL).</p>
+<p class="lead">La <strong>RSA</strong> (residenza sanitaria assistenziale) è una struttura dove una persona <strong>non più autosufficiente</strong> vive ed è curata giorno e notte, con medici, infermieri e operatori. Non è una casa di riposo: ci si entra per bisogni sanitari, e la decisione passa dall'azienda sanitaria (ASL; in Sicilia si chiama ASP).</p>
 <div class="notice ok">
 <ul>
-<li><strong>Come si entra:</strong> si parte dal <strong>medico di famiglia</strong> (o dal reparto, se la persona è in ospedale), che chiede al distretto dell'ASL la <strong>valutazione multidimensionale</strong>. Una équipe (UVM) valuta la persona e decide se serve la RSA o se basta l'assistenza a casa. Poi si entra in lista per una RSA convenzionata. <a href="come-si-entra/">I passi</a>.</li>
-<li><strong>Chi paga:</strong> nelle RSA convenzionate la <strong>parte sanitaria</strong> della retta la paga l'ASL; la <strong>parte alberghiera</strong> (vitto e alloggio) la paga la famiglia, in base all'ISEE, e se non ce la fa interviene il Comune. <a href="quanto-si-paga/">Quanto e come</a>.</li>
+<li><strong>Come si entra:</strong> si parte dal <strong>medico di famiglia</strong> (o dal reparto, se la persona è in ospedale), che chiede al distretto dell'ASL la <strong>valutazione multidimensionale</strong>. Un'équipe (UVM) valuta la persona e decide se serve la RSA o se basta l'assistenza a casa. Poi si entra in lista per una RSA convenzionata. <a href="come-si-entra/">I passi</a>.</li>
+<li><strong>Chi paga:</strong> nelle RSA convenzionate l'ASL paga la <strong>parte sanitaria</strong> della retta. La <strong>parte alberghiera</strong> (vitto e alloggio) la paga la persona ricoverata, con l'aiuto della famiglia se serve. Quanto paga dipende dall'ISEE, il documento che misura quanto ha la famiglia. Se non ce la fa, interviene il Comune. <a href="quanto-si-paga/">Quanto e come</a>.</li>
 </ul>
 </div>
-<p><strong>La persona è in ospedale e non può tornare a casa?</strong> Chiedi al reparto la <a href="../assistenza-domiciliare/dimissione-protetta/">dimissione protetta</a> e di attivare subito la valutazione: nessuno può essere dimesso senza una soluzione. Nel frattempo ci sono anche la <strong>lungodegenza</strong> e la riabilitazione, che sono ricoveri a carico del Servizio sanitario.</p>
+<p><strong>La persona è in ospedale e non può tornare a casa?</strong> Chiedi al reparto la <a href="../assistenza-domiciliare/dimissione-protetta/">dimissione protetta</a> e di attivare subito la valutazione: chiedi che il posto o l'aiuto a casa sia pronto prima che la persona esca. Nel frattempo ci sono anche la <strong>lungodegenza</strong> e la riabilitazione, che sono ricoveri a carico del Servizio sanitario.</p>
 <p>Se invece a casa si può restare con un aiuto, guarda l'<a href="../assistenza-domiciliare/">assistenza domiciliare</a> e l'<a href="../accompagnamento/">indennità di accompagnamento</a>.</p>
 </div>
 </main>
@@ -61,16 +67,18 @@
 <ul class="clean">
 <li><a href="https://www.regione.sicilia.it/system/files/2025-10/D.A.%20n.1058%20del%208%20ottobre%202025.pdf" target="_blank" rel="noopener">Regione Siciliana – D.A. 1058 dell&#39;8 ottobre 2025 (rette RSA)</a></li>
 <li><a href="https://www.salute.gov.it/portale/lea/dettaglioContenutiLea.jsp?lingua=italiano&amp;id=4702&amp;area=Lea&amp;menu=socioSanitaria" target="_blank" rel="noopener">Ministero della Salute – LEA, assistenza residenziale (DPCM 12/01/2017, art. 30)</a></li>
+<li><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262" target="_blank" rel="noopener">Codice civile, artt. 316 e 320 (il genitore firma per il figlio minore), 357 (tutore), 404-405 (amministratore di sostegno)</a></li>
+<li><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2004-01-09;6" target="_blank" rel="noopener">L. 6/2004 (amministratore di sostegno)</a></li>
 </ul>
 <p class="muted">Sono informazioni generali, non il parere di un avvocato o di un medico. Controlla sempre con la tua azienda sanitaria (ASL). Informazioni controllate il 20 ottobre 2026.</p>
 <!-- /fonti -->
 </section>
 <!-- condividi: creato da tools/pagine.mjs -->
-<div class="wrap share-bar">
+<aside class="wrap share-bar" aria-label="Condividi o stampa">
 <a class="btn share-wa" href="https://wa.me/?text=RSA%3A%20come%20si%20entra%2C%20chi%20paga%20la%20retta%2C%20cosa%20fare%20dopo%20il%20ricovero%0Ahttps%3A%2F%2Fguidasanita.it%2Frsa%2F" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> Condividi su WhatsApp</a>
 <button type="button" class="btn share-print js-inline" data-action="print-page" data-print="guida">🖨️ Stampa la guida</button>
 <p class="print-url">Guida Sanità, gratis e fatta da volontari: https://guidasanita.it/rsa/</p>
-</div>
+</aside>
 <!-- /condividi -->
 <footer class="site-footer" id="site-footer"><div class="wrap">
 <p><strong>Guida Sanità è fatto da volontari. Non siamo l'azienda sanitaria (ASL), l'INPS né un altro ufficio pubblico.</strong> Diamo informazioni generali, non il parere di un avvocato o di un medico.</p>

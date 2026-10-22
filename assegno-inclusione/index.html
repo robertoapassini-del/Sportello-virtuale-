@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Assegno di inclusione (ADI): chi ha diritto, ISEE fino a 10.140 euro, come fare domanda – Guida Sanità</title>
 <meta name="description" content="L&#39;assegno di inclusione è un aiuto INPS ogni mese per le famiglie con pochi soldi: le condizioni (minorenni, over 60, disabilità, 5 anni in Italia, ISEE fino a 10.140 euro), come fare la domanda al patronato o online, quanto dura e il rinnovo.">
 <meta name="theme-color" content="#0b5f5c">
@@ -10,7 +11,7 @@
 <link rel="icon" href="../logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="../apple-touch-icon.png">
 <link rel="manifest" href="../site.webmanifest">
-<script>document.documentElement.className += ' js';if(/\/index\.html$/.test(location.pathname))location.replace(location.pathname.slice(0,-10)+location.search+location.hash);</script>
+<script>document.documentElement.className += ' js';if(/\/index\.html$/.test(location.pathname))location.replace('/'+location.pathname.slice(0,-10).replace(/^[\/\\]+/,'')+location.search+location.hash);</script>
 <link rel="canonical" href="https://guidasanita.it/assegno-inclusione/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Guida Sanità">
@@ -19,6 +20,12 @@
 <meta property="og:description" content="L&#39;assegno di inclusione è un aiuto INPS ogni mese per le famiglie con pochi soldi: le condizioni (minorenni, over 60, disabilità, 5 anni in Italia, ISEE fino a 10.140 euro), come fare la domanda al patronato o online, quanto dura e il rinnovo.">
 <meta property="og:url" content="https://guidasanita.it/assegno-inclusione/">
 <link rel="stylesheet" href="../css/style.css">
+<link rel="modulepreload" href="../js/adi.js">
+<link rel="modulepreload" href="../js/engine.js">
+<link rel="modulepreload" href="../js/common.js">
+<link rel="modulepreload" href="../js/icons.js">
+<link rel="modulepreload" href="../js/controlla.js">
+<link rel="modulepreload" href="../js/flow.js">
 </head>
 <body>
 <header class="site-header">
@@ -38,7 +45,7 @@
 <ul>
 <li>in famiglia c'è almeno <strong>un minorenne</strong>, una persona con <strong>almeno 60 anni</strong>, una persona con <strong>disabilità</strong>, o una persona seguita dai servizi sociali o sanitari;</li>
 <li>chi fa la domanda vive in Italia da <strong>almeno 5 anni</strong>, gli ultimi 2 senza interruzioni;</li>
-<li>l'<strong>ISEE</strong> della famiglia è <strong>fino a 10.140 euro</strong>. L'INPS controlla anche il reddito, la casa e i risparmi.</li>
+<li>l'<strong>ISEE</strong> della famiglia (il documento che misura quanto ha la famiglia) è <strong>fino a 10.140 euro</strong>. L'INPS controlla anche il reddito, la casa e i risparmi.</li>
 </ul>
 </div>
 <p class="js-only"><button type="button" class="btn primary big" disabled data-go="household">✔️ Controlla le condizioni per la tua famiglia</button></p>
@@ -51,7 +58,7 @@
 <p class="guida-intro">Questa guida vale in tutta Italia: l'assegno di inclusione è un aiuto nazionale dell'INPS.</p>
 <!-- blocco:guida-indice (creato da tools/pagine.mjs) -->
 <ol class="guida-indice">
-<li aria-current="page"><strong>Ho diritto all&#39;assegno di inclusione?</strong></li>
+<li aria-current="page"><strong>Hai diritto all&#39;assegno di inclusione?</strong></li>
 <li><a href="requisiti/">Chi ha diritto: famiglia, residenza, ISEE e reddito</a></li>
 <li><a href="domanda/">Come fare la domanda: ISEE, patronato, Comune, Carta</a></li>
 <li><a href="durata-e-rinnovo/">Quanto dura e come si rinnova</a></li>
@@ -73,11 +80,11 @@
 <!-- /fonti -->
 </section>
 <!-- condividi: creato da tools/pagine.mjs -->
-<div class="wrap share-bar">
+<aside class="wrap share-bar" aria-label="Condividi o stampa">
 <a class="btn share-wa" href="https://wa.me/?text=Assegno%20di%20inclusione%20(ADI)%3A%20chi%20ha%20diritto%2C%20ISEE%20fino%20a%2010.140%20euro%2C%20come%20fare%20domanda%0Ahttps%3A%2F%2Fguidasanita.it%2Fassegno-inclusione%2F" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> Condividi su WhatsApp</a>
 <button type="button" class="btn share-print js-inline" data-action="print-page" data-print="guida">🖨️ Stampa la guida</button>
 <p class="print-url">Guida Sanità, gratis e fatta da volontari: https://guidasanita.it/assegno-inclusione/</p>
-</div>
+</aside>
 <!-- /condividi -->
 <footer class="site-footer" id="site-footer"><div class="wrap">
 <p><strong>Guida Sanità è fatto da volontari. Non siamo l'azienda sanitaria (ASL), l'INPS né un altro ufficio pubblico.</strong> Diamo informazioni generali, non il parere di un avvocato o di un medico.</p>

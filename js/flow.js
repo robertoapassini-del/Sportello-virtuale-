@@ -2,7 +2,7 @@
 // riquadri Aiuto e Fonti. Le risposte restano in memoria finché la pagina è aperta.
 import {
   esc, helpBox, sourcesBox, choice, moreHelp, hideHeadingEmoji, enableStart,
-  MAINTAINER_EMAIL, regioni, regioniAttive, regioneInfo, inRegione, regioneDeiDati, regioneNonPronta, regioneSalvata, regione, setRegione,
+  MAINTAINER_EMAIL, regioni, regioniAttive, regioneInfo, inRegione, regioneDeiDati, regioneNonPronta, regioneSalvata, regione, setRegione, regioneRicordata, moduloPagina,
 } from './common.js';
 
 export { choice };
@@ -90,29 +90,49 @@ export function regionChoices() {
     <ul class="regioni-off">${off.map((r) => `<li><button type="button" class="link" data-action="region" data-region="${esc(r.id)}">${esc(r.name)}</button> <small>non ancora disponibile</small></li>`).join('')}</ul>` : ''}`;
 }
 
-// Schermata per chi ha scelto una regione che non c'è ancora: niente uffici e numeri, ma l'invito
-// a leggere la parte valida in tutta Italia (la prima schermata del modulo) e a scriverci.
-export function regionMissing(first = 'intro') {
+// Schermata per chi ha scelto una regione che non c'è ancora (o che per questo modulo non ha i dati):
+// niente uffici e numeri, ma il link alla guida scritta sotto (<section id="guida">, le regole valide
+// in tutta Italia) e, per una regione non attiva, ai Numeri utili nazionali e l'invito a scriverci.
+// Non riporta mai alla prima schermata del modulo: il suo pulsante riporterebbe qui (giro senza uscita).
+const guidaLink = () => (typeof document !== 'undefined' && document.getElementById('guida')
+  ? '<a class="btn choice" href="#guida"><span class="txt">Leggi le regole valide in tutta Italia</span></a>' : '');
+export function regionMissing() {
   const r = regioneNonPronta();
   if (!r) return '';
   // Regione attiva, ma questo modulo non ha ancora i suoi dati: la parte nazionale e i numeri utili della regione.
   if (r.parziale) {
     return `<div class="notice warn"><p><strong>${esc(r.name)}:</strong> per questo argomento uffici e numeri della tua regione non li abbiamo ancora.
       Quello che vale in tutta Italia lo trovi lo stesso.</p></div>
-    ${first ? `<button type="button" class="btn choice" data-go="${esc(first)}"><span class="txt">Leggi cosa vale in tutta Italia</span></button>` : ''}
+    ${guidaLink()}
     ${(r.moduli || []).includes('numeri-utili') ? `<a class="btn primary center" href="../numeri-utili/">📞 I numeri utili: ${esc(r.name)}</a>` : ''}
     <p class="cambia-regione"><button type="button" class="link" data-action="change-region">Hai sbagliato regione? Cambia</button></p>`;
   }
   return `<div class="notice warn"><p><strong>${esc(r.name)}: non c'è ancora.</strong> Uffici e numeri della tua regione non li abbiamo.
       Quello che vale in tutta Italia lo trovi lo stesso.</p></div>
-    ${first ? `<button type="button" class="btn choice" data-go="${esc(first)}"><span class="txt">Leggi cosa vale in tutta Italia</span></button>` : ''}
+    ${guidaLink()}
+    ${moduloPagina() !== 'numeri-utili' ? '<a class="btn primary center" href="../numeri-utili/">📞 I numeri validi in tutta Italia</a>' : ''}
     <a class="btn primary center" href="${esc(regionMail(r.name))}">✉️ Chiedici di aggiungerla</a>
     <p class="muted">Si apre la tua email. Decidi tu se mandarla.</p>
     <p class="cambia-regione"><button type="button" class="link" data-action="change-region">Hai sbagliato regione? Cambia</button></p>`;
 }
-const regionMissingScreen = (first) => ({
-  html: `<h1>📍 ${regioneNonPronta()?.parziale ? 'Qui la tua regione non c\'è ancora' : 'La tua regione non c\'è ancora'}</h1>${regionMissing(first)}`,
+const regionMissingScreen = () => ({
+  html: `<h1>📍 ${(regioneNonPronta() || {}).parziale ? `Per questo argomento ${esc(inRegione())} non abbiamo ancora i dati` : 'La tua regione non c\'è ancora'}</h1>${regionMissing()}`,
 });
+
+// Link alla guida scritta (#guida) dentro #app: scorre alla guida senza aggiungere una voce
+// alla cronologia (il tasto Indietro resta per le schermate). L'ascolto è sul documento, così vale
+// anche dopo che #app è stato ridisegnato.
+if (typeof document !== 'undefined') {
+  document.addEventListener('click', (e) => {
+    const a = e.target.closest && e.target.closest('#app a[href="#guida"]');
+    const g = a && document.getElementById('guida');
+    if (!g) return;
+    e.preventDefault();
+    g.scrollIntoView({ block: 'start' });
+    if (!g.hasAttribute('tabindex')) g.setAttribute('tabindex', '-1');
+    g.focus({ preventScroll: true });
+  });
+}
 
 const regionScreen = () => ({
   html: `<h1>📍 In quale regione abiti?</h1>
@@ -127,16 +147,45 @@ export function changeRegionLink() {
   return `<p class="cambia-regione"><button type="button" class="link" data-action="change-region">Non abiti ${esc(inRegione())}? Cambia regione</button></p>`;
 }
 
+// Regione attiva che per questo modulo non ha ancora uffici e lettere (regioneNonPronta() «parziale»,
+// per esempio la Lombardia con solo i Numeri utili), in un modulo che sa fare il conto senza la provincia.
+// Allora la domanda sulla provincia si salta: le domande e il conto valgono in tutta Italia.
+// Le schermate che mostrano uffici o lettera usano senzaUffici(a, …): senza provincia, al loro posto c'è regionMissing().
+let saltaProvincia = false;
+export const provinciaSaltata = () => saltaProvincia && !needsRegion() && !!(regioneNonPronta() || {}).parziale;
+export const senzaUffici = (a, html) => (a ? html() : regionMissing());
+
 // Mette la scelta della regione davanti alla schermata della provincia (name).
+// next (facoltativo): la schermata dopo la provincia, per i moduli il cui conto non dipende dai dati della regione.
+// Senza next, chi ha una regione senza i dati di questo modulo vede regionMissingScreen().
 // Torna una funzione per il disegno: (current, state) → il link «Cambia regione»
 // se la schermata mostra dati regionali (la provincia o le schermate dopo).
-export function withRegion(screens, name = 'province', first = 'intro') {
+export function withRegion(screens, name = 'province', next = null) {
   const inner = screens[name];
   if (!inner) return () => '';
+  if (next) saltaProvincia = true;
+  // Vero se il pulsante verso la provincia porta a regionMissingScreen().
+  const bloccata = () => !needsRegion() && !!regioneNonPronta() && !(next && provinciaSaltata());
   screens[name] = () => {
     if (needsRegion()) return regionScreen();
-    return regioneNonPronta() ? regionMissingScreen(first) : inner();
+    if (next && provinciaSaltata()) return screens[next]();
+    return regioneNonPronta() ? regionMissingScreen() : inner();
   };
+  // Se il conto non si può fare, il pulsante principale della prima schermata non lo promette
+  // («Fai il conto…» diventa «Uffici e numeri in Lombardia»): dopo c'è solo il rimando alla guida.
+  const intro = screens.intro;
+  if (intro) {
+    screens.intro = () => {
+      const s = intro();
+      if (!bloccata()) return s;
+      const t = document.createElement('template');
+      t.innerHTML = s.html;
+      const b = t.content.querySelector(`button.btn.primary[data-go="${name}"]`);
+      if (!b) return s;
+      b.textContent = `📍 Uffici e numeri ${inRegione()}`;
+      return { ...s, html: t.innerHTML };
+    };
+  }
   return (current, state = {}) => {
     if (current !== name) askRegion = false;
     return !needsRegion() && !regioneNonPronta() && (current === name || state.province) ? changeRegionLink() : '';
@@ -151,7 +200,10 @@ export function regionAction(btn, nav, name = 'province') {
     askRegion = false;
     // Regione attiva diversa da quella dei dati già caricati: si ricarica la pagina con i dati giusti.
     // Una regione non attiva non ha dati: basta ridisegnare (si vede l'invito).
-    if (regioneDeiDati() && !regioneNonPronta() && regione() !== regioneDeiDati()) location.reload();
+    // Se il browser non può ricordare la scelta (localStorage bloccato e niente nome della scheda,
+    // vedi setRegione in js/common.js) ricaricando la si perderebbe e si tornerebbe a «In quale regione abiti?»:
+    // allora si ridisegna, con la scelta in memoria finché la pagina è aperta.
+    if (regioneDeiDati() && !regioneNonPronta() && regione() !== regioneDeiDati() && regioneRicordata()) location.reload();
     else nav.render();
     return true;
   }
@@ -165,9 +217,20 @@ export function regionAction(btn, nav, name = 'province') {
 }
 
 // person (facoltativo): i dati per le lettere, cancellati anche loro con «Ricomincia».
-export function createFlow({ app, screens, state, sources, first = 'intro', person }) {
+// next: vedi withRegion.
+// Dopo un cambio di schermata: in cima, con il focus sul titolo (chi usa un lettore di schermo sente il titolo nuovo).
+// Non alla prima schermata: lì il primo Tab deve portare a «Vai al contenuto» e un indirizzo con #guida deve
+// restare sulla guida (audit del 22/10/2026, giro 6).
+export function moveToTop(app) {
+  window.scrollTo(0, 0);
+  const h1 = app.querySelector('h1');
+  if (h1) { h1.setAttribute('tabindex', '-1'); h1.focus({ preventScroll: true }); }
+}
+
+export function createFlow({ app, screens, state, sources, first = 'intro', person, next }) {
   const nav = createNav({ first, show: (current) => paint(current) });
-  const regionLink = withRegion(screens);
+  const regionLink = withRegion(screens, 'province', next);
+  let dipinto = false;
 
   function paint(current) {
     const s = screens[current]();
@@ -176,9 +239,8 @@ export function createFlow({ app, screens, state, sources, first = 'intro', pers
     enableStart(app);
     hideHeadingEmoji(app);
     if (s.mount) s.mount();
-    window.scrollTo(0, 0);
-    const h1 = app.querySelector('h1');
-    if (h1) { h1.setAttribute('tabindex', '-1'); h1.focus({ preventScroll: true }); }
+    if (dipinto) moveToTop(app);
+    dipinto = true;
   }
   const render = nav.render;
   const go = nav.go;
@@ -203,7 +265,9 @@ export const restartBtn = (label = 'Ricomincia da capo') =>
 
 export const days = (n) => `${n} ${n === 1 ? 'giorno' : 'giorni'}`;
 
+// Se la domanda sulla provincia si salta (provinciaSaltata), le domande sono una in meno.
 export function progress(n, total) {
+  if (provinciaSaltata() && n > 1) { n -= 1; total -= 1; }
   const dots = Array.from({ length: total }, (_, i) => `<span class="dot${i < n ? ' on' : ''}"></span>`).join('');
   return `<p class="progress"><span aria-hidden="true">${dots}</span> Domanda ${n} di ${total}</p>`;
 }
@@ -212,16 +276,37 @@ export function progress(n, total) {
 export function dateForm({ id, name, label, hint, value, button, max }) {
   return `<form id="${id}" novalidate>
     <label for="${name}">${label}${hint ? `<span class="hint">${hint}</span>` : ''}</label>
-    <input type="date" id="${name}" name="${name}" value="${esc(value || '')}" ${max ? `max="${max}"` : ''}>
+    <input type="date" id="${name}" name="${name}" value="${esc(value || '')}" ${max ? `max="${max}"` : ''} aria-describedby="${id}-error">
     <p class="field-error" id="${id}-error" role="alert" hidden></p>
     <button type="submit" class="btn primary big">${button}</button>
   </form>`;
 }
 
-export function showError(formId, text) {
+// Errore in un modulo: il messaggio è in <p id="<form>-error" role="alert">, collegato ai campi con
+// aria-describedby. Il campo da correggere viene segnato (aria-invalid) e riceve il focus.
+// field: il nome del campo sbagliato; se manca, il primo campo vuoto (o il primo campo).
+// focus: false quando il controllo parte mentre la persona scrive (non le si sposta il cursore).
+export function showError(formId, text, { field, focus = true } = {}) {
+  const form = document.getElementById(formId);
   const err = document.getElementById(`${formId}-error`);
   err.textContent = text;
   err.hidden = false;
+  const campi = [...form.querySelectorAll('input:not([type=checkbox]):not([type=radio]):not([type=hidden]), select, textarea')]
+    .filter((c) => c.offsetParent !== null); // solo i campi visibili (non quelli del tutore nascosti)
+  for (const c of campi) c.removeAttribute('aria-invalid');
+  const campo = campi.find((c) => c.name === field) || campi.find((c) => !c.value) || campi[0];
+  if (!campo) return;
+  campo.setAttribute('aria-invalid', 'true');
+  campo.addEventListener('change', () => campo.removeAttribute('aria-invalid'), { once: true });
+  if (focus) campo.focus();
+}
+
+// Toglie il messaggio d'errore e i segni sui campi.
+export function clearError(formId) {
+  const err = document.getElementById(`${formId}-error`);
+  err.textContent = '';
+  err.hidden = true;
+  for (const c of document.getElementById(formId).querySelectorAll('[aria-invalid]')) c.removeAttribute('aria-invalid');
 }
 
 // Pulsanti Stampa / Copia / Email sotto una lettera.

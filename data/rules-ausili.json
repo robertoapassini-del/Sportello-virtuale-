@@ -2,7 +2,7 @@
   "name": "Regole per ausili e protesi (assistenza protesica)",
   "last_verified": "2026-10-18",
   "authorization_days": 20,
-  "legal_basis": "art. 18 DPCM 12/01/2017: il tempo massimo per l'autorizzazione lo fissa la Regione. In Sicilia 20 giorni con silenzio-assenso (direttive regionali del 20/12/2011 sul DM 332/1999, art. 4)",
+  "legal_basis": "DPCM 12/01/2017 (art. 17-19, allegato 12): il tempo massimo per l'autorizzazione lo fissa la Regione. In Sicilia 20 giorni con silenzio-assenso (direttive regionali del 20/12/2011 sul DM 332/1999, art. 4)",
   "collaudo_days": 20,
   "examples": ["carrozzina", "deambulatore", "letto ortopedico", "materasso antidecubito", "pannoloni e traverse", "apparecchio acustico", "plantari e busti", "montascale", "sollevatore"],
   "who_prescribes": "uno specialista del Servizio sanitario (per esempio fisiatra, ortopedico, geriatra, otorino), non il medico di famiglia",
@@ -13,7 +13,7 @@
       "verified": "2026-10-18",
       "proof": "estratto",
       "review_by": "2027-01-31",
-      "nota": "Il DPCM 12/01/2017 (art. 18) lascia alle Regioni il tempo massimo (ricerca del 21/10/2026: Emilia-Romagna 15 giorni, Lazio e Sardegna 20 con silenzio-assenso). I 20 giorni con silenzio-assenso sono del DM 332/1999, applicato in Sicilia dal D.A. 20/12/2011: sul sito valgono solo per la Sicilia. Da leggere il testo del D.A. (DA-VERIFICARE-A-MANO.md)."
+      "nota": "Il DPCM 12/01/2017 (art. 17-19, allegato 12) lascia alle Regioni il tempo massimo (ricerca del 21/10/2026: Emilia-Romagna 15 giorni, Lazio e Sardegna 20 con silenzio-assenso). I 20 giorni con silenzio-assenso sono del DM 332/1999, applicato in Sicilia dal D.A. 20/12/2011: sul sito valgono solo per la Sicilia. Da leggere il testo del D.A. (DA-VERIFICARE-A-MANO.md)."
     },
     "collaudo_days": {
       "url": "https://www.gazzettaufficiale.it/eli/id/2017/03/18/17A02015/sg",
@@ -24,9 +24,10 @@
     }
   },
   "sources": [
-    { "label": "DPCM 12/01/2017 – Livelli essenziali di assistenza, art. 17-18 (assistenza protesica)", "url": "https://www.gazzettaufficiale.it/eli/id/2017/03/18/17A02015/sg" },
+    { "label": "DPCM 12/01/2017 – Livelli essenziali di assistenza, art. 17-19 e allegato 12 (assistenza protesica)", "url": "https://www.gazzettaufficiale.it/eli/id/2017/03/18/17A02015/sg" },
     { "label": "ASP Catania – Procedure per la fornitura di protesi e ausili (DM 332/1999 e direttive della Regione Siciliana)", "url": "https://www.aspct.it/azienda/dipartimenti/dipartimenti-sanitari/dipartimento-di-riabilitazione/informazioni-generali/allegati/linee-guida-protesi-DM-332-99.pdf" },
     { "label": "DM 332/1999 (nomenclatore tariffario protesi e ausili, tempi di autorizzazione)", "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.sanita:decreto:1999-08-27;332" },
-    { "label": "Ministero della Salute – assistenza protesica", "url": "https://www.salute.gov.it/new/it/tema/livelli-essenziali-di-assistenza/assistenza-protesica/" }
+    { "label": "Ministero della Salute – assistenza protesica", "url": "https://www.salute.gov.it/new/it/tema/livelli-essenziali-di-assistenza/assistenza-protesica/" },
+    { "label": "Codice civile, artt. 316 e 320 (il genitore firma per il figlio minore), 357 (tutore), 404-405 (amministratore di sostegno)", "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262" }
   ]
 }

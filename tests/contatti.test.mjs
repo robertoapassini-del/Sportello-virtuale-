@@ -21,6 +21,9 @@ const PROOFS = ['telefono', 'pagina', 'estratto', 'archivio'];
 const today = process.env.OGGI ? new Date(`${process.env.OGGI}T12:00:00Z`) : new Date();
 // Gruppo centrale fino a 5 cifre: alcuni numeri a 11 cifre si scrivono così sulle pagine ufficiali (02 99430 1814).
 const PHONE = /^(\d{2,4} ?\d{3,5} ?\d{0,4}|1\d{2,5})$/;
+// Numeri brevi (che cominciano per 1): solo quelli nazionali che si chiamano davvero così. Un numero come
+// «100100» dell'Alto Adige va composto con il prefisso: senza, il pulsante «Chiama» non funziona (audit del 21/10/2026).
+const BREVI = ['112', '114', '116117', '118', '1500', '1522', '1533', '19696'];
 
 const host = (u) => new URL(u).hostname.replace(/^www\./, '');
 const onDomain = (u, domains) => domains.some((d) => host(u) === d || host(u).endsWith(`.${d}`));
@@ -28,6 +31,7 @@ const onDomain = (u, domains) => domains.some((d) => host(u) === d || host(u).en
 function check(n, where, domains) {
   const name = `${where}: ${n.label || n.title} ${n.number}`;
   assert.match(n.number, PHONE, `${name}: numero scritto male`);
+  if (/^1/.test(n.number)) assert.ok(BREVI.includes(n.number.replace(/\s/g, '')), `${name}: numero breve che non è tra quelli nazionali: serve il prefisso?`);
   assert.ok(n.url, `${name}: manca «url», la pagina ufficiale da cui viene`);
   assert.ok(onDomain(n.url, domains), `${name}: «url» non è un sito ufficiale (${host(n.url)}). Ammessi: ${domains.join(', ')}`);
   assert.ok(PROOFS.includes(n.proof), `${name}: «proof» deve essere ${PROOFS.join(' / ')}`);
@@ -72,4 +76,33 @@ test('Sedi INPS: indirizzo con fonte ufficiale, data e prova recenti', () => {
       check({ ...p, number: '803 164', label: `INPS ${p.name}` }, `regioni/${r.id}/inps.json`, ['inps.it']);
     }
   }
+});
+
+// Un numero o un link di una sola regione in numeri.json ha «regione»: senza, la pagina Numeri utili lo
+// mostra a tutti (il numero verde della Regione Siciliana anche a chi vive a Milano). Audit dei mutanti del 21/10/2026.
+// È regionale se l'url è sul sito di una regione («regione.<nome>.it», anche i sottodomini) o di un'azienda
+// sanitaria di data/regioni/, oppure se il numero è quello di un'azienda sanitaria.
+test('Numeri nazionali: le voci di una sola regione dicono di quale regione sono', () => {
+  const dominiAsl = new Map(); const numeriAsl = new Map();
+  for (const r of regioni) {
+    for (const a of r.asl) {
+      for (const d of [host(a.site_url), ...(a.official_domains || [])]) dominiAsl.set(d, r.id);
+      // I numeri brevi nazionali (112, 116117…) stanno anche negli elenchi delle aziende: non sono regionali.
+      for (const n of [...a.phones, ...(a.contacts || [])]) if (!BREVI.includes(n.number.replace(/\s/g, ''))) numeriAsl.set(n.number.replace(/\s/g, ''), r.id);
+    }
+  }
+  const diRegione = (v) => {
+    const h = v.url ? host(v.url) : '';
+    const m = h.match(/(?:^|\.)regione\.([a-z-]+)\.it$/);
+    if (m) return { regione: m[1], perche: `url su ${h}` };
+    for (const [d, id] of dominiAsl) if (h === d || h.endsWith(`.${d}`)) return { regione: id, perche: `url sul sito di un'azienda sanitaria (${h})` };
+    if (v.number && numeriAsl.has(v.number.replace(/\s/g, ''))) return { regione: numeriAsl.get(v.number.replace(/\s/g, '')), perche: 'numero di un\'azienda sanitaria' };
+    return null;
+  };
+  const errori = [];
+  for (const v of [...nums.groups.flatMap((g) => g.items), ...nums.links]) {
+    const r = diRegione(v);
+    if (r && v.regione !== r.regione) errori.push(`${v.title} (${r.perche}): serve «"regione": "${r.regione}"»${v.regione ? `, non «${v.regione}»` : ''}`);
+  }
+  assert.deepEqual(errori, [], `numeri.json:\n${errori.join('\n')}`);
 });

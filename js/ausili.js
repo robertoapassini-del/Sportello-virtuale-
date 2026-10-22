@@ -1,11 +1,12 @@
 // Modulo 4 — ausili e protesi: «la carrozzina non arriva».
 // Prima la risposta: la pagina mostra subito la risposta scritta; il conto e il sollecito partono dal pulsante.
-// Regola: il tempo per autorizzare lo fissa la Regione (art. 18 DPCM 12/01/2017). Il conto si fa solo per la Sicilia
-// (si arriva scegliendo una provincia siciliana): 20 giorni, poi silenzio-assenso. Non chiediamo mai la malattia.
+// Regola: il tempo per autorizzare lo fissa la Regione (DPCM 12/01/2017, art. 17-19 e allegato 12). Il conto si fa solo per la Sicilia
+// (si arriva scegliendo una provincia siciliana): 20 giorni, poi silenzio-assenso (la lettera non lo cita finché
+// il D.A. 20/12/2011 non è letto: chiede solo l'autorizzazione senza altro ritardo). Non chiediamo mai la malattia.
 import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween, art } from './engine.js';
 import { ausiliReminder, mailtoHref } from './letters.js';
 import { noPecBox,
-  esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, aspCalls, officeBox, personFields, reportErrorHref, generalContact, aslLabel, aslIntestazione,
+  esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, copyText, printText, readForm, aspCalls, officeBox, personFields, reportErrorHref, complaintTo, aslLabel, aslIntestazione, mailLink, generalContact, syncDelegate, delegateNoteText,
 } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons } from './flow.js';
 
@@ -34,7 +35,7 @@ function sources() {
 const steps = () => `
   <h2>Come funziona</h2>
   <ol class="big-steps">
-    <li><strong>La prescrizione.</strong> La scrive ${esc(rules.who_prescribes)}. Di solito serve avere l'invalidità riconosciuta, o la domanda già fatta.</li>
+    <li><strong>La prescrizione.</strong> La scrive ${esc(rules.who_prescribes)}. Di solito serve avere l'invalidità riconosciuta, o la domanda già fatta. Per pannoloni e traverse le regole di prescrizione cambiano da regione a regione: chiedi al distretto chi può prescriverli.</li>
     <li><strong>La domanda all'${aslLabel()}.</strong> Porti la prescrizione all'ufficio «assistenza protesica» del tuo distretto. Chiedi una ricevuta con la data.</li>
     <li><strong>L'autorizzazione.</strong> L'${aslLabel()} deve rispondere entro <strong>${rules.authorization_days} giorni</strong>. Se non risponde, vale come un sì.</li>
     <li><strong>La consegna.</strong> Un fornitore convenzionato ti porta l'ausilio. Poi il medico lo controlla (si chiama collaudo).</li>
@@ -84,7 +85,7 @@ const screens = {
       document.getElementById('req-form').addEventListener('submit', (e) => {
         e.preventDefault();
         const v = readForm(e.target);
-        if (!parseDate(v.requestDate)) return showError('req-form', 'Scrivi il giorno.');
+        if (parseDate(v.requestDate) === null) return showError('req-form', 'Scrivi il giorno.');
         if (daysBetween(v.requestDate, todayISO()) < 0) return showError('req-form', 'Questo giorno non è ancora arrivato. Controlla la data.');
         state.requestDate = v.requestDate;
         flow.go('result');
@@ -114,14 +115,14 @@ const screens = {
         <div class="hero" aria-hidden="true">⚠️</div>
         <h1>I ${rules.authorization_days} giorni sono passati: l'autorizzazione vale lo stesso</h1>
         <div class="notice bad">
-          <p>L'${aslLabel()} doveva rispondere entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>. Sono passati <strong>${days(d.daysLate)} in più</strong>.</p>
+          <p>L'${aslLabel()} doveva rispondere entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>. ${d.daysLate === 1 ? 'È passato' : 'Sono passati'} <strong>${days(d.daysLate)} in più</strong>.</p>
           <p>Per la legge, se l'${aslLabel()} non risponde in tempo <strong>l'autorizzazione si considera data</strong>. Ora deve partire la consegna.</p>
         </div>
         <h2>Cosa fare, in ordine</h2>
         <ol class="big-steps">
           <li><strong>Telefona o vai all'ufficio protesica</strong> con la ricevuta. Di' che i ${rules.authorization_days} giorni sono passati.</li>
           <li><strong>Manda una lettera di sollecito</strong> all'${aslLabel()}. La scriviamo insieme.</li>
-          <li><strong>Se ancora niente:</strong> reclamo all'URP dell'${aslLabel()} di ${esc(a.province)}${generalContact(a) ? ` (${mailLink(generalContact(a))})` : ''},
+          <li><strong>Se ancora niente:</strong> reclamo ${complaintTo(a)},
             un patronato, oppure Cittadinanzattiva (<a href="https://www.cittadinanzattiva.it" target="_blank" rel="noopener">cittadinanzattiva.it</a>).</li>
         </ol>
         ${protesica(a) || aspCalls(a)}
@@ -141,7 +142,7 @@ const screens = {
         <ol class="big-steps">
           <li><strong>Chiama il fornitore</strong> scritto sull'autorizzazione e chiedi la data di consegna.</li>
           <li><strong>Chiama l'ufficio protesica dell'${aslLabel()}</strong> e chiedi quanti giorni ha il fornitore per consegnare.</li>
-          <li><strong>Se il tempo è passato:</strong> reclamo scritto all'${aslLabel()} (URP${generalContact(a) ? `: ${mailLink(generalContact(a))}` : ''}). Un patronato può aiutarti.</li>
+          <li><strong>Se il tempo è passato:</strong> reclamo scritto ${complaintTo(a)}. Un patronato può aiutarti.</li>
         </ol>
         <div class="notice info"><p>Quando l'ausilio arriva, il medico deve controllarlo (collaudo) entro ${rules.collaudo_days} giorni. Se non va bene, può essere sostituito.</p></div>
         ${protesica(a) || aspCalls(a)}
@@ -174,7 +175,7 @@ const screens = {
           ${personFields(person, 'La persona che ha bisogno dell\'ausilio')}
         </form>
         <h2>📄 Ecco il tuo sollecito</h2>
-        <p class="muted">La lettera usa le parole degli uffici. In breve dice: «I ${rules.authorization_days} giorni sono passati, l'autorizzazione vale, consegnate».</p>
+        <p class="muted">La lettera usa le parole degli uffici. In breve dice: «I ${rules.authorization_days} giorni sono passati: autorizzate e consegnate senza altro ritardo».</p>
         <div id="preview" class="letter"></div>
         ${letterButtons()}
         <p id="send-hint"></p>
@@ -185,7 +186,7 @@ const screens = {
             <li><span class="ico" aria-hidden="true">🖊️</span> Firma la lettera</li>
             <li><span class="ico" aria-hidden="true">🪪</span> Allega: documento d'identità (fotocopia o foto)</li>
             <li><span class="ico" aria-hidden="true">📄</span> Allega: copia della prescrizione e della ricevuta</li>
-            <li class="delegate-note"${person.isDelegate ? '' : ' hidden'}><span class="ico" aria-hidden="true">📝</span> Allega: la delega firmata e il tuo documento</li>
+            <li class="delegate-note"${person.isDelegate ? '' : ' hidden'}><span class="ico" aria-hidden="true">📝</span> <span class="delegate-note-text">${esc(delegateNoteText(person))}</span></li>
           </ul>
         </div>
         <p class="muted"><a href="${esc(reportErrorHref(`Ausili ${a.name}`))}">Segnala un errore</a></p>
@@ -197,8 +198,7 @@ const screens = {
           const v = readForm(form);
           for (const k of ['device', 'prescriber', 'protocol']) { state[k] = v[k]; delete v[k]; }
           Object.assign(person, v);
-          form.querySelector('.delegate-fields').hidden = !person.isDelegate;
-          document.querySelectorAll('.delegate-note').forEach((li) => { li.hidden = !person.isDelegate; });
+          syncDelegate(form, person);
           const text = ausiliReminder({
             ente: aslIntestazione(),
             aspName: a.province, address: to, person, device: state.device, requestDate: state.requestDate,
@@ -229,7 +229,7 @@ let flow;
   try {
     [rules, data] = await Promise.all([loadJSON(`${ROOT}data/rules-ausili.json`), loadRegional(ROOT, 'asl')]);
   } catch {
-    app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>';
+    avvisoErrore(); // la risposta scritta nella pagina resta, con l'avviso sopra
     return;
   }
   flow = createFlow({ app, screens, state, sources, person });

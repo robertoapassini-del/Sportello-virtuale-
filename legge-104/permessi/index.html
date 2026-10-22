@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Permessi legge 104: 3 giorni al mese o 2 ore al giorno, chi ne ha diritto e come si chiedono – Guida Sanità</title>
 <meta name="description" content="I permessi della legge 104 (art. 33): 3 giorni al mese retribuiti per il lavoratore dipendente con handicap grave o per il coniuge, i genitori, i figli, i fratelli che assistono una persona con handicap grave; 2 ore al giorno in alternativa. Come si chiedono: domanda all&#39;INPS e comunicazione al datore di lavoro. Dal 2026 anche 10 ore l&#39;anno per visite.">
 <meta name="theme-color" content="#0b5f5c">
@@ -10,7 +11,7 @@
 <link rel="icon" href="../../logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
 <link rel="manifest" href="../../site.webmanifest">
-<script>document.documentElement.className += ' js';if(/\/index\.html$/.test(location.pathname))location.replace(location.pathname.slice(0,-10)+location.search+location.hash);</script>
+<script>document.documentElement.className += ' js';if(/\/index\.html$/.test(location.pathname))location.replace('/'+location.pathname.slice(0,-10).replace(/^[\/\\]+/,'')+location.search+location.hash);</script>
 <link rel="canonical" href="https://guidasanita.it/legge-104/permessi/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Guida Sanità">
@@ -19,6 +20,11 @@
 <meta property="og:description" content="I permessi della legge 104 (art. 33): 3 giorni al mese retribuiti per il lavoratore dipendente con handicap grave o per il coniuge, i genitori, i figli, i fratelli che assistono una persona con handicap grave; 2 ore al giorno in alternativa. Come si chiedono: domanda all&#39;INPS e comunicazione al datore di lavoro. Dal 2026 anche 10 ore l&#39;anno per visite.">
 <meta property="og:url" content="https://guidasanita.it/legge-104/permessi/">
 <link rel="stylesheet" href="../../css/style.css">
+<link rel="modulepreload" href="../../js/guida.js">
+<link rel="modulepreload" href="../../js/common.js">
+<link rel="modulepreload" href="../../js/engine.js">
+<link rel="modulepreload" href="../../js/icons.js">
+<link rel="modulepreload" href="../../js/controlla.js">
 </head>
 <body>
 <header class="site-header">
@@ -35,10 +41,10 @@
 <h2>Chi ne ha diritto</h2>
 <ul>
 <li>Il <strong>lavoratore dipendente con handicap grave</strong>: 3 giorni al mese, oppure 2 ore al giorno (1 ora se lavora meno di 6 ore al giorno).</li>
-<li>Il <strong>familiare che assiste</strong> una persona con handicap grave: coniuge, parte dell'unione civile o convivente, genitori, e parenti o affini fino al terzo grado (figli, fratelli e sorelle, nonni, nipoti, suoceri, cognati). Più familiari possono alternarsi sulla stessa persona, ma i giorni restano 3 al mese in tutto.</li>
-<li>I <strong>genitori di un figlio con handicap grave</strong> con meno di 3 anni possono scegliere anche il prolungamento del congedo parentale o le 2 ore al giorno.</li>
+<li>Il <strong>familiare che assiste</strong> una persona con handicap grave: coniuge, parte dell'unione civile o convivente, genitori, e parenti o affini fino al secondo grado (figli, fratelli e sorelle, nonni, nipoti figli dei figli, suoceri, cognati). Si arriva al terzo grado (zii, nipoti figli di fratelli e sorelle) solo se i genitori o il coniuge della persona con disabilità hanno compiuto 65 anni, hanno malattie invalidanti, sono morti o mancano. Più familiari possono alternarsi sulla stessa persona, ma i giorni restano 3 al mese in tutto.</li>
+<li>I <strong>genitori di un figlio con handicap grave</strong> hanno anche altre due possibilità. Il <strong>prolungamento del congedo parentale</strong>: si usa entro i 12 anni del figlio, per al massimo 3 anni in tutto (contando anche il congedo parentale normale). Le <strong>2 ore di permesso al giorno</strong>: queste valgono solo fino ai 3 anni del figlio.</li>
 </ul>
-<p>Non valgono per i lavoratori autonomi. Per il lavoro part-time i giorni si riducono in proporzione.</p>
+<p>Non valgono per i lavoratori autonomi. Con il part-time orizzontale i 3 giorni restano interi; si riducono in proporzione solo con il part-time verticale o misto fino al 50% dell'orario (circolare INPS 45/2021).</p>
 
 <h2>Come si chiedono</h2>
 <ol>
@@ -49,7 +55,7 @@
 <p>La domanda all'INPS vale finché dura il verbale: se c'è una revisione, va rifatta.</p>
 
 <h2>Le novità dal 2026</h2>
-<p>Dal 1° gennaio 2026 (legge 106/2025) i lavoratori con una <strong>malattia oncologica, invalidante o cronica</strong> che dà un'invalidità dal 74% in su, e i genitori di un figlio minorenne in queste condizioni, hanno <strong>10 ore l'anno in più</strong> di permesso retribuito per visite, esami e cure, con la prescrizione del medico. È una tutela a parte: non dipende dalla 104. Non sono i «permessi doppi» di cui parlano alcuni siti: i 3 giorni al mese restano 3.</p>
+<p>Dal 1° gennaio 2026 c'è una regola nuova (legge 106/2025). Vale per chi lavora e ha una <strong>malattia oncologica, invalidante o cronica</strong>, con un'invalidità dal 74% in su. Vale anche per i genitori di un figlio minorenne in queste condizioni. Hanno <strong>10 ore l'anno in più</strong> di permesso pagato, per visite, esami e cure. Serve la prescrizione del medico. È una tutela a parte: non dipende dalla 104. Non sono i «permessi doppi» di cui parlano alcuni siti: i 3 giorni al mese restano 3.</p>
 <h2>In questa guida</h2>
 <!-- blocco:guida-indice (creato da tools/pagine.mjs) -->
 <ol class="guida-indice">
@@ -62,8 +68,11 @@
 <!-- fonti: create da tools/pagine.mjs -->
 <h3>Da dove vengono queste informazioni</h3>
 <ul class="clean">
+<li><a href="https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/disabili" target="_blank" rel="noopener">Agenzia delle Entrate – Agevolazioni per le persone con disabilità (IVA al 4%, detrazione del 19%)</a></li>
 <li><a href="https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50098.indennit-per-permessi-fruiti-dai-lavoratori-per-assistere-familiari-disabili-in-situazione-di-gravit-o-fruiti-dai-lavoratori-disabili.html" target="_blank" rel="noopener">INPS – Permessi per lavoratori disabili e familiari (legge 104)</a></li>
 <li><a href="https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50097.indennit-per-congedi-straordinari-assistenza-familiari-disabili-.html" target="_blank" rel="noopener">INPS – Congedo straordinario per assistere familiari con disabilità grave</a></li>
+<li><a href="https://servizi2.inps.it/MessaggiZIP/Messaggio%20numero%204805%20del%2016-07-2015.pdf" target="_blank" rel="noopener">INPS – Messaggio 4805/2015 (prolungamento del congedo parentale per figli con handicap grave)</a></li>
+<li><a href="https://servizi2.inps.it/MessaggiZIP/Messaggio%20numero%203114%20del%2007-08-2018.pdf" target="_blank" rel="noopener">INPS – Messaggio 3114/2018 (permessi 104 e part-time)</a></li>
 <li><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1992-02-05;104" target="_blank" rel="noopener">Normattiva – Legge 104/1992</a></li>
 <li><a href="https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-07-18;106" target="_blank" rel="noopener">Normattiva – Legge 106/2025 (malattie oncologiche, invalidanti e croniche)</a></li>
 </ul>
@@ -71,11 +80,11 @@
 <!-- /fonti -->
 </main>
 <!-- condividi: creato da tools/pagine.mjs -->
-<div class="wrap share-bar">
+<aside class="wrap share-bar" aria-label="Condividi o stampa">
 <a class="btn share-wa" href="https://wa.me/?text=Permessi%20legge%20104%3A%203%20giorni%20al%20mese%20o%202%20ore%20al%20giorno%2C%20chi%20ne%20ha%20diritto%20e%20come%20si%20chiedono%0Ahttps%3A%2F%2Fguidasanita.it%2Flegge-104%2Fpermessi%2F" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> Condividi su WhatsApp</a>
 <button type="button" class="btn share-print js-inline" data-action="print-page">🖨️ Stampa questa pagina</button>
 <p class="print-url">Guida Sanità, gratis e fatta da volontari: https://guidasanita.it/legge-104/permessi/</p>
-</div>
+</aside>
 <!-- /condividi -->
 <footer class="site-footer" id="site-footer"><div class="wrap">
 <p><strong>Guida Sanità è fatto da volontari. Non siamo l'azienda sanitaria (ASL), l'INPS né un altro ufficio pubblico.</strong> Diamo informazioni generali, non il parere di un avvocato o di un medico.</p>

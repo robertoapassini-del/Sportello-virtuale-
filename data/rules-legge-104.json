@@ -3,7 +3,10 @@
   "last_verified": "2026-10-20",
   "permessi_giorni_mese": 3,
   "permessi_ore_giorno": 2,
-  "prolungamento_figlio_anni": 3,
+  "prolungamento_congedo_entro_anni_figlio": 12,
+  "prolungamento_congedo_max_anni": 3,
+  "ore_figlio_fino_anni": 3,
+  "permessi_parttime_soglia_percent": 50,
   "ore_extra_anno_2026": 10,
   "congedo_anni": 2,
   "congedo_non_retribuito_mesi": 24,
@@ -11,13 +14,15 @@
   "permessi_orario_minimo_ore": 6,
   "l106_invalidita_min_percent": 74,
   "permessi_ore_giorno_ridotto": 1,
+  "iva_auto_percent": 4,
+  "detrazione_percent": 19,
   "provenienza": {
     "permessi_giorni_mese": {
       "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50098.indennit-per-permessi-fruiti-dai-lavoratori-per-assistere-familiari-disabili-in-situazione-di-gravit-o-fruiti-dai-lavoratori-disabili.html",
       "verified": "2026-10-20",
       "proof": "testo",
       "review_by": "2027-01-31",
-      "nota": "L. 104/1992, art. 33: tre giorni al mese, anche a ore; familiari fino al terzo grado."
+      "nota": "L. 104/1992, art. 33: tre giorni al mese, anche a ore; familiari fino al secondo grado (terzo grado se genitori o coniuge hanno almeno 65 anni, patologie invalidanti, sono deceduti o mancanti, art. 33 c. 3)."
     },
     "permessi_ore_giorno": {
       "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50098.indennit-per-permessi-fruiti-dai-lavoratori-per-assistere-familiari-disabili-in-situazione-di-gravit-o-fruiti-dai-lavoratori-disabili.html",
@@ -26,12 +31,33 @@
       "review_by": "2027-01-31",
       "nota": "2 ore al giorno con orario di almeno 6 ore, 1 ora con orario inferiore."
     },
-    "prolungamento_figlio_anni": {
-      "url": "https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.permessi-retribuiti-legge-104-per-lavoratori-dipendenti-e-familiari-di-persone-con-disabilita-grave.html",
-      "verified": "2026-10-20",
+    "prolungamento_congedo_entro_anni_figlio": {
+      "url": "https://servizi2.inps.it/MessaggiZIP/Messaggio%20numero%204805%20del%2016-07-2015.pdf",
+      "verified": "2026-10-21",
       "proof": "estratto",
       "review_by": "2027-01-31",
-      "nota": "Figli con handicap grave fino a 3 anni: prolungamento del congedo parentale o 2 ore al giorno."
+      "nota": "Art. 33 D.Lgs. 151/2001: il prolungamento del congedo parentale per figlio con handicap grave si usa entro i 12 anni del figlio."
+    },
+    "prolungamento_congedo_max_anni": {
+      "url": "https://servizi2.inps.it/MessaggiZIP/Messaggio%20numero%204805%20del%2016-07-2015.pdf",
+      "verified": "2026-10-21",
+      "proof": "estratto",
+      "review_by": "2027-01-31",
+      "nota": "Art. 33 D.Lgs. 151/2001: prolungamento per al massimo 3 anni, compreso il congedo parentale ordinario."
+    },
+    "ore_figlio_fino_anni": {
+      "url": "https://servizi2.inps.it/MessaggiZIP/Messaggio%20numero%204805%20del%2016-07-2015.pdf",
+      "verified": "2026-10-21",
+      "proof": "estratto",
+      "review_by": "2027-01-31",
+      "nota": "Le 2 ore di permesso al giorno al posto del prolungamento valgono solo fino ai 3 anni del figlio (art. 42 c. 1 D.Lgs. 151/2001). Da non confondere con i 12 anni del prolungamento."
+    },
+    "permessi_parttime_soglia_percent": {
+      "url": "https://servizi2.inps.it/MessaggiZIP/Messaggio%20numero%203114%20del%2007-08-2018.pdf",
+      "verified": "2026-10-21",
+      "proof": "estratto",
+      "review_by": "2027-01-31",
+      "nota": "Part-time orizzontale: 3 giorni interi. Part-time verticale o misto fino al 50% dell'orario pieno: giorni ridotti in proporzione (messaggio INPS 3114/2018, ripreso dalla circolare INPS 45/2021)."
     },
     "ore_extra_anno_2026": {
       "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-07-18;106",
@@ -79,9 +105,27 @@
       "proof": "testo",
       "review_by": "2027-01-31",
       "nota": "1 ora al giorno se l'orario è inferiore a 6 ore."
+    },
+    "iva_auto_percent": {
+      "url": "https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/disabili",
+      "verified": "2026-10-20",
+      "proof": "estratto",
+      "review_by": "2027-01-31",
+      "nota": "Agevolazioni fiscali per le persone con disabilità: IVA al 4% sull'auto e sugli ausili (L. 97/1986 e seguenti). Stessa scheda e stessa cifra di rules-contrassegno-disabili.json."
+    },
+    "detrazione_percent": {
+      "url": "https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/disabili",
+      "verified": "2026-10-20",
+      "proof": "estratto",
+      "review_by": "2027-01-31",
+      "nota": "Detrazione IRPEF del 19% per l'auto e gli ausili delle persone con disabilità. Stessa scheda e stessa cifra di rules-contrassegno-disabili.json."
     }
   },
   "sources": [
+    {
+      "label": "Agenzia delle Entrate – Agevolazioni per le persone con disabilità (IVA al 4%, detrazione del 19%)",
+      "url": "https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/disabili"
+    },
     {
       "label": "INPS – Permessi per lavoratori disabili e familiari (legge 104)",
       "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50098.indennit-per-permessi-fruiti-dai-lavoratori-per-assistere-familiari-disabili-in-situazione-di-gravit-o-fruiti-dai-lavoratori-disabili.html"
@@ -89,6 +133,14 @@
     {
       "label": "INPS – Congedo straordinario per assistere familiari con disabilità grave",
       "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50097.indennit-per-congedi-straordinari-assistenza-familiari-disabili-.html"
+    },
+    {
+      "label": "INPS – Messaggio 4805/2015 (prolungamento del congedo parentale per figli con handicap grave)",
+      "url": "https://servizi2.inps.it/MessaggiZIP/Messaggio%20numero%204805%20del%2016-07-2015.pdf"
+    },
+    {
+      "label": "INPS – Messaggio 3114/2018 (permessi 104 e part-time)",
+      "url": "https://servizi2.inps.it/MessaggiZIP/Messaggio%20numero%203114%20del%2007-08-2018.pdf"
     },
     {
       "label": "Normattiva – Legge 104/1992",

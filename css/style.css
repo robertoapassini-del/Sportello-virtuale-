@@ -55,7 +55,7 @@ body {
 }
 
 a { color: var(--primary); }
-a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
+a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
   outline: 3px solid #8a5a00;
   outline-offset: 2px;
 }
@@ -125,7 +125,7 @@ p { margin: 0 0 12px; }
 @media (min-width: 480px) { .regioni-off { grid-template-columns: 1fr 1fr; } }
 .regioni-off small { font-size: 0.85rem; }
 .cambia-regione { font-size: 0.9rem; margin: 8px 0; }
-button.link { background: none; border: none; color: var(--link); font: inherit; padding: 4px 0; cursor: pointer; text-decoration: underline; }
+button.link { background: none; border: none; color: var(--link); font: inherit; padding: 10px 0; min-height: 44px; cursor: pointer; text-decoration: underline; }
 
 .progress { font-size: 0.85rem; color: var(--muted); margin-bottom: 4px; }
 
@@ -188,7 +188,7 @@ table.fields th { width: 40%; }
 /* Footer */
 .site-footer { border-top: 1px solid var(--border); background: #f1efe9; font-size: 0.85rem; color: var(--muted); padding: 20px 0 32px; }
 .site-footer p { margin: 0 0 10px; }
-.site-footer nav a { margin-right: 14px; display: inline-block; margin-bottom: 6px; }
+.site-footer nav a { margin-right: 14px; display: inline-flex; align-items: center; min-height: 44px; }
 
 .skip-link { position: absolute; left: 8px; top: -100px; z-index: 100; background: #ffeb3b; color: #212b32; padding: 10px 16px; font-weight: 700; border-radius: 4px; }
 .skip-link:focus { top: 8px; outline: 3px solid #212b32; }
@@ -221,7 +221,7 @@ main.guida h2 { margin-top: 28px; }
 .btn.share-wa, .btn.share-wa:hover { background: #0b6b3a; color: #fff; border-bottom-color: #063d21; }
 .btn.share-wa:hover .txt, .btn.share-wa:hover { text-decoration: underline; }
 .js-inline { display: none !important; }
-.js .js-inline { display: inline-flex !important; }
+.pronto .js-inline { display: inline-flex !important; }
 .print-url { display: none; }
 
 /* Print only the letter ("Scarica PDF" = browser print → Salva come PDF). */
@@ -272,7 +272,7 @@ details.help { margin: 28px 0 8px; padding: 12px 16px; border-radius: var(--radi
 details.help .ico { font-size: 1.5rem; }
 p.notice { margin: 12px 0; }
 .back { white-space: nowrap; }
-main { overflow-wrap: anywhere; }
+main, .guida, .share-bar { overflow-wrap: anywhere; }
 details.fonti { margin: 12px 0 8px; padding: 10px 16px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--border); font-size: 0.9rem; }
 details.fonti ul { margin: 8px 0; }
 details.fonti li { margin: 8px 0; }
@@ -288,7 +288,9 @@ button.btn.choice { width: 100%; }
 /* Testata: logo e ricerca sopra, le 4 aree sotto (2×2 sul telefono, in fila sul computer). */
 .site-header { background: var(--header); color: #fff; }
 .header-top { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; padding-top: 12px; padding-bottom: 12px; }
-.site-header a.brand { display: inline-flex; align-items: center; gap: 10px; color: #fff; font-weight: 800; font-size: 1.25rem; letter-spacing: -0.01em; text-decoration: none; white-space: nowrap; }
+.site-header a.brand { display: inline-flex; align-items: center; gap: 10px; color: #fff; font-weight: 800; font-size: 1.25rem; letter-spacing: -0.01em; text-decoration: none; white-space: nowrap; max-width: 100%; }
+/* Con i caratteri molto grandi il nome va a capo invece di uscire dallo schermo. */
+@media (max-width: 400px) { .site-header a.brand { white-space: normal; } }
 .site-header a.brand:hover > span { text-decoration: underline; }
 .brand-mark { width: 40px; height: 40px; flex: none; }
 .brand-tag { display: inline-block; margin-left: 4px; padding: 0 8px; border-radius: 4px; background: rgba(255, 255, 255, 0.16); font-size: 0.75rem; font-weight: 700; vertical-align: 2px; }
@@ -309,7 +311,7 @@ button.btn.choice { width: 100%; }
    agli argomenti si arriva dai riquadri della home e dal link «‹ …» in cima a ogni pagina. */
 .header-nav { display: none; background: var(--header-dark); }
 @media (min-width: 640px) { .header-nav { display: block; } }
-.header-nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 4px; }
+.header-nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 4px; }
 .header-nav a {
   display: block; padding: 12px 14px 8px; color: #fff; font-weight: 700; font-size: 0.85rem; white-space: normal;
   text-decoration: none; border-bottom: 4px solid transparent;
@@ -394,13 +396,19 @@ table.fields th, table.fields td { border-bottom-color: var(--border); }
 .home-about { margin-top: 24px; }
 /* Senza JavaScript si vede il contenuto scritto nella pagina (titolo, descrizione,
    elenco dei moduli); con JavaScript solo «Un momento…» finché la pagina è pronta. */
+/* «pronto» la mette js/common.js quando parte: se lo script non parte (file non arrivato, browser vecchio,
+   blocco della pubblicità) resta il contenuto scritto nella pagina, non un «Un momento…» per sempre.
+   «errore-js»: un modulo non è riuscito a caricare i dati e rimostra il contenuto scritto. */
 .js-only { display: none; }
-.js .js-only { display: block; }
-.js .static-fallback { display: none; }
+.pronto .js-only { display: block; }
+.pronto .static-fallback { display: none; }
+.errore-js .static-fallback { display: block !important; }
+.errore-js .js-only { display: none !important; }
 /* Finché js/common.js non ha messo le icone disegnate e la banda colorata, la pagina non si vede:
    altrimenti per un attimo comparirebbero le emoji e la pagina senza banda. Se lo script non parte,
-   dopo 1,5 secondi si vede comunque (animazione). common.js aggiunge la classe «pronto». */
-.js:not(.pronto) body > * { visibility: hidden; animation: gs-mostra 0s 1.5s forwards; }
+   dopo mezzo secondo si vede comunque (animazione). common.js aggiunge la classe «pronto».
+   Era 1,5 secondi: su un 3G lento la pagina restava bianca troppo a lungo (audit del 22/10/2026, giro 7). */
+.js:not(.pronto) body > * { visibility: hidden; animation: gs-mostra 0s 0.5s forwards; }
 @keyframes gs-mostra { to { visibility: visible; } }
 
 .static-list { padding-left: 1.2rem; }
@@ -412,7 +420,7 @@ table.fields th, table.fields td { border-bottom-color: var(--border); }
 .breadcrumb .wrap { padding-top: 10px; padding-bottom: 10px; }
 .breadcrumb ol { display: none; list-style: none; margin: 0; padding: 0; flex-wrap: wrap; }
 .breadcrumb li + li::before { content: "›"; margin: 0 10px; color: var(--muted); }
-.breadcrumb-back { display: inline-block; font-weight: 700; padding: 4px 0; }
+.breadcrumb-back { display: inline-flex; align-items: center; min-height: 44px; font-weight: 700; }
 @media (min-width: 640px) { .breadcrumb ol { display: flex; } .breadcrumb-back { display: none; } }
 
 /* ---- Pagine delle aree (visite-esami/, aiuto-a-casa/, …) ---- */
@@ -518,6 +526,9 @@ ul.area-list li > .btn { flex: 1; }
   .site-header .brand, .site-header .brand-tag { color: #000 !important; }
   .wrap { max-width: none; padding: 0; }
   .card, .notice, .btn, details.fonti { break-inside: avoid; }
+  .page-band h1, .page-band p, .page-band strong, .page-band .lead, .page-band a { color: #000 !important; }
+  #app button, .cambia-regione, details:not([open]) { display: none !important; }
+  li, .grid2 > * { break-inside: avoid; }
   .guida h2, .guida h3 { break-after: avoid; }
   .guida { margin-top: 12pt; }
   .guida a[href^="http"]::after, .guida a[href^="mailto:"]::after { content: " (" attr(href) ")"; font-size: 9pt; word-break: break-all; }
@@ -525,6 +536,15 @@ ul.area-list li > .btn { flex: 1; }
   .share-bar { display: block; margin: 0; }
   a { color: #000; }
   /* «Stampa la guida»: solo la guida, senza le domande passo passo. */
-  body.printing-guide #app { display: none !important; }
+  /* «Stampa la guida»: la risposta scritta (titolo, regole) e la guida, senza pulsanti né domande. */
+  body.printing-guide #app button, body.printing-guide #app .btn, body.printing-guide #app form { display: none !important; }
   body.printing-guide .guida > h2:first-child { border-top: none; padding-top: 0; }
+  /* Schermata con la lettera (o con «Cosa scrivere nel modulo»), stampata dal menu del browser (Ctrl+P):
+     solo la lettera, senza testata, domande e modulo con i dati personali (js/common.js, markLetter). */
+  body.letter-screen:not(.printing):not(.printing-guide) > *:not(.print-path):not(.print-target),
+  body.letter-screen:not(.printing):not(.printing-guide) .print-path > *:not(.print-path):not(.print-target) { display: none !important; }
+  body.letter-screen:not(.printing):not(.printing-guide) .print-path { display: block !important; margin: 0 !important; padding: 0 !important; border: none !important; background: none !important; box-shadow: none !important; max-width: none !important; }
+  body.letter-screen .letter.print-target { display: block; border: none; border-radius: 0; padding: 0; margin: 0; background: none; font-family: "Times New Roman", serif; font-size: 12pt; line-height: 1.45; color: #000; overflow: visible; }
+  body.letter-screen table.print-target { font-size: 12pt; color: #000; }
+  table.fields caption { position: static !important; width: auto !important; height: auto !important; clip: auto !important; overflow: visible !important; white-space: normal !important; text-align: left; font-weight: 700; font-size: 13pt; margin-bottom: 8pt; }
 }

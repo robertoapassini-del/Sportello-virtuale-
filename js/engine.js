@@ -41,7 +41,7 @@ export function addDays(iso, n) {
 }
 
 export function formatIt(iso) {
-  if (!parseDate(iso)) return '';
+  if (parseDate(iso) === null) return '';
   const [y, m, d] = iso.split('-');
   return `${d}/${m}/${y}`;
 }
@@ -51,7 +51,7 @@ export function formatIt(iso) {
 // 'dal', 'nel', 'fino al'… Restituisce il testo da mettere prima della data,
 // con lo spazio o l'apostrofo. Senza data (campo vuoto) resta «il ».
 export function art(prep, iso) {
-  if (!parseDate(iso) || !['08', '11'].includes(iso.slice(8, 10))) return `${prep} `;
+  if (parseDate(iso) === null || !['08', '11'].includes(iso.slice(8, 10))) return `${prep} `;
   return prep.replace(/\bil$/, "l'").replace(/l$/, "ll'");
 }
 
@@ -70,7 +70,8 @@ export function classKey(cls, kind) {
 export function maxWaitDays(rules, cls, kind) {
   const key = classKey(cls, kind);
   if (!key) return null;
-  return rules.max_wait_days[key] ?? null;
+  const giorni = rules.max_wait_days[key];
+  return giorni == null ? null : giorni;
 }
 
 // Uguale al limite = ancora nei tempi; un giorno in più = superato.
@@ -101,7 +102,7 @@ export function callbackDeadline(rules, { cls, kind, requestDate, today }) {
 
 // province: { regime: 'new'|'old', regime_since: 'YYYY-MM-DD'|null }
 export function invRegime(province, certDate, fullNationalDate = '2027-01-01') {
-  if (!province || !parseDate(certDate)) return null;
+  if (!province || parseDate(certDate) === null) return null;
   if (daysBetween(fullNationalDate, certDate) >= 0) return 'new';
   if (province.regime === 'new' && province.regime_since && daysBetween(province.regime_since, certDate) >= 0) {
     return 'new';
@@ -112,7 +113,7 @@ export function invRegime(province, certDate, fullNationalDate = '2027-01-01') {
 // category: 'oncological' | 'minor' | 'other'
 // Restituisce quale scadenza vale e se è passata.
 export function invDeadline(rulesInv, { regime, category, certDate, domandaDate, today }) {
-  if (!parseDate(certDate)) return { status: 'error', error: 'date' };
+  if (parseDate(certDate) === null) return { status: 'error', error: 'date' };
   if (today && daysBetween(certDate, today) < 0) return { status: 'error', error: 'future' };
 
   if (regime === 'new') {
@@ -129,6 +130,13 @@ export function invDeadline(rulesInv, { regime, category, certDate, domandaDate,
     return withPassed({ kind: 'domanda', days: old.domanda_window_days, from: certDate, deadline, legal: null, indicative: false }, today);
   }
   if (daysBetween(certDate, domandaDate) < 0) return { status: 'error', error: 'order' };
+  // Domanda fatta dopo i 90 giorni: il certificato potrebbe non valere più. Non si propone il sollecito
+  // come se tutto fosse regolare: è il caso «tempo per la domanda finito», con la data della domanda.
+  const domandaLimit = addDays(certDate, old.domanda_window_days);
+  if (daysBetween(domandaLimit, domandaDate) > 0) {
+    return { status: 'passed', kind: 'domanda', lateDomanda: true, days: old.domanda_window_days, from: certDate, deadline: domandaLimit,
+      domandaDate, daysLate: daysBetween(domandaLimit, domandaDate), legal: null, indicative: false };
+  }
   if (category === 'oncological') {
     const deadline = addDays(domandaDate, old.oncological_visit_days);
     return withPassed({ kind: 'visit', days: old.oncological_visit_days, from: domandaDate, deadline, legal: old.oncological_legal_basis, indicative: false }, today);
@@ -146,7 +154,7 @@ function withPassed(r, today) {
 // --- Moduli 3 e 4: scadenza semplice -------------------------------------
 // Una data di partenza + N giorni → la scadenza, e se oggi è già passata.
 export function simpleDeadline({ fromDate, days, today }) {
-  if (!parseDate(fromDate)) return { status: 'error', error: 'date' };
+  if (parseDate(fromDate) === null) return { status: 'error', error: 'date' };
   if (today && daysBetween(fromDate, today) < 0) return { status: 'error', error: 'future' };
   const deadline = addDays(fromDate, days);
   return withPassed({ days, from: fromDate, deadline }, today);
@@ -190,7 +198,7 @@ export function esenzioneReddito(rules, { ageBand, status, spouse = false, child
   if (status === 'disoccupato') {
     out.thresholds.E02 = fam('E02');
     if (!hasIncome) out.maybe.push('E02');
-    else if (income <= out.thresholds.E02) out.codes.push('E02');
+    else if (income < out.thresholds.E02) out.codes.push('E02');
   }
   if (status === 'sociale') out.codes.push('E03');
   // «minimo» = pensione al minimo con più di 60 anni: l'età è quella di chi ha la pensione,
@@ -198,17 +206,49 @@ export function esenzioneReddito(rules, { ageBand, status, spouse = false, child
   if (status === 'minimo') {
     out.thresholds.E04 = fam('E04');
     if (!hasIncome) out.maybe.push('E04');
-    else if (income <= out.thresholds.E04) out.codes.push('E04');
+    else if (income < out.thresholds.E04) out.codes.push('E04');
   }
   return out;
 }
 
+// Pasqua (calendario gregoriano, algoritmo di Meeus): serve per il Lunedì dell'Angelo.
+function pasqua(y) {
+  const a = y % 19; const b = Math.floor(y / 100); const c = y % 100;
+  const d = Math.floor(b / 4); const e = b % 4; const f = Math.floor((b + 8) / 25); const g = Math.floor((b - f + 1) / 3);
+  const h = (19 * a + b - d - g + 15) % 30; const i = Math.floor(c / 4); const k = c % 4;
+  const l = (32 + 2 * e + 2 * i - h - k) % 7; const m = Math.floor((a + 11 * h + 22 * l) / 451);
+  const mese = Math.floor((h + l - 7 * m + 114) / 31); const giorno = ((h + l - 7 * m + 114) % 31) + 1;
+  return `${y}-${String(mese).padStart(2, '0')}-${String(giorno).padStart(2, '0')}`;
+}
+// Festività nazionali (L. 260/1949 e successive; il 4 ottobre, San Francesco, dal 2026: L. 151/2025).
+export function festivo(iso) {
+  const t = parseDate(iso);
+  if (t === null) return false;
+  const md = iso.slice(5);
+  const y = Number(iso.slice(0, 4));
+  return ['01-01', '01-06', '04-25', '05-01', '06-02', '08-15', '11-01', '12-08', '12-25', '12-26'].includes(md)
+    || (md === '10-04' && y >= 2026)
+    || iso === addDays(pasqua(y), 1);
+}
+// Un termine che scade di sabato, di domenica o in un giorno festivo slitta al primo giorno
+// lavorativo dopo (art. 155, commi 4 e 5 c.p.c.; art. 2963 c.c.).
+export function primoGiornoUtile(iso) {
+  let d = iso;
+  for (let i = 0; i < 10 && d; i++) {
+    const wd = new Date(parseDate(d)).getUTCDay();
+    if (wd !== 0 && wd !== 6 && !festivo(d)) return d;
+    d = addDays(d, 1);
+  }
+  return d;
+}
+
 // --- Modulo 6: ricorso contro il verbale di invalidità --------------------
 export function ricorsoDeadline(rules, { verbaleDate, today }) {
-  if (!parseDate(verbaleDate)) return { status: 'error', error: 'date' };
+  if (parseDate(verbaleDate) === null) return { status: 'error', error: 'date' };
   if (today && daysBetween(verbaleDate, today) < 0) return { status: 'error', error: 'future' };
-  const deadline = addMonths(verbaleDate, rules.appeal_months);
-  const r = withPassed({ from: verbaleDate, deadline, months: rules.appeal_months }, today);
+  const scade = addMonths(verbaleDate, rules.appeal_months);
+  const deadline = primoGiornoUtile(scade);
+  const r = withPassed({ from: verbaleDate, deadline, months: rules.appeal_months, slittato: deadline !== scade }, today);
   if (today && r.status === 'waiting') r.daysLeft = daysBetween(today, deadline);
   return r;
 }
@@ -230,7 +270,7 @@ export function adiCheck(rules, { household, residency, isee }) {
 
 // --- Modulo 9: piano terapeutico ------------------------------------------
 export function pianoStatus(rules, { expiryDate, today }) {
-  if (!parseDate(expiryDate)) return { status: 'error', error: 'date' };
+  if (parseDate(expiryDate) === null) return { status: 'error', error: 'date' };
   const bookBy = addDays(expiryDate, -rules.book_before_days);
   const toExpiry = daysBetween(today, expiryDate);
   const status = toExpiry < 0 ? 'expired' : toExpiry <= rules.book_before_days ? 'soon' : 'ok';

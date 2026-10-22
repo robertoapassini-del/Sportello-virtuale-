@@ -6,10 +6,10 @@
 import { invRegime, invDeadline, todayISO, formatIt, parseDate, daysBetween, art } from './engine.js';
 import { inpsReminder, mailtoHref } from './letters.js';
 import { noPecBox,
-  esc, loadJSON, loadRegional, disclaimer, renderFooter, copyText, printText, readForm, mailLink, callButton,
-  personFields, reportErrorHref, choice, helpBox, sourcesBox, moreHelp, hideHeadingEmoji, enableStart, aslLabel,
+  esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, copyText, printText, readForm, mailLink, callButton,
+  personFields, reportErrorHref, choice, helpBox, sourcesBox, moreHelp, hideHeadingEmoji, enableStart, aslLabel, syncDelegate, delegateNoteText,
 } from './common.js';
-import { createNav, withRegion, regionAction } from './flow.js';
+import { createNav, withRegion, regionAction, moveToTop, showError } from './flow.js';
 
 const ROOT = '../';
 const app = document.getElementById('app');
@@ -27,6 +27,7 @@ const back = nav.back;
 const render = nav.render;
 const restart = () => nav.restart(() => { for (const o of [state, person]) for (const k of Object.keys(o)) delete o[k]; });
 
+let dipinto = false;
 function paint(current) {
   const s = screens[current]();
   const backBtn = current === 'intro' ? '' : '<div class="topbar"><button type="button" class="back" data-action="back">← Torna indietro</button></div>';
@@ -34,9 +35,8 @@ function paint(current) {
   enableStart(app);
   hideHeadingEmoji(app);
   if (s.mount) s.mount();
-  window.scrollTo(0, 0);
-  const h1 = app.querySelector('h1');
-  if (h1) { h1.setAttribute('tabindex', '-1'); h1.focus({ preventScroll: true }); }
+  if (dipinto) moveToTop(app);
+  dipinto = true;
 }
 
 app.addEventListener('click', (e) => {
@@ -64,7 +64,7 @@ function screenSources() {
   const items = [...rules.sources, ...inps.sources];
   return sourcesBox(items, {
     verified: rules.last_verified,
-    note: state.province ? 'Gli indirizzi PEC dell\'INPS sono ancora da confermare con l\'ufficio.' : '',
+    note: state.province && prov() && !prov().pec_verified ? 'Gli indirizzi PEC dell\'INPS sono ancora da confermare con l\'ufficio.' : '',
   });
 }
 const regime = () => invRegime(prov(), state.certDate, rules.full_national_application);
@@ -108,7 +108,7 @@ const afterVerbale = `
   <details class="card">
     <summary>Dopo la visita: a cosa può dare diritto</summary>
     <p>Dipende dal risultato. Per esempio: non pagare il ticket, i permessi della legge 104, l'indennità di accompagnamento,
-    la pensione di invalidità, l'aiuto per trovare lavoro, il permesso per il parcheggio.</p>
+    la pensione di invalidità, l'aiuto per trovare lavoro, il contrassegno per il parcheggio.</p>
     <p>Chiedi a un patronato o guarda il sito <a href="https://www.inps.it" target="_blank" rel="noopener">inps.it</a>.</p>
     <p>Se il foglio del risultato ha una scadenza, i tuoi aiuti continuano fino alla nuova visita (legge 114/2014).</p>
     <p>Se il verbale ti sembra sbagliato, hai <strong>6 mesi</strong> per il ricorso: <a href="../ricorso-invalidita/">controlla quanto tempo ti resta</a>.</p>
@@ -133,17 +133,16 @@ const screens = {
       <p>È scritto sulla ricevuta che ti ha dato il medico.</p>
       <form id="cert-form" novalidate>
         <label for="certDate">Giorno del certificato</label>
-        <input type="date" id="certDate" name="certDate" value="${esc(state.certDate || '')}" max="${todayISO()}">
-        <p class="field-error" id="cert-error" role="alert" hidden></p>
+        <input type="date" id="certDate" name="certDate" value="${esc(state.certDate || '')}" max="${todayISO()}" aria-describedby="cert-form-error">
+        <p class="field-error" id="cert-form-error" role="alert" hidden></p>
         <button type="submit" class="btn primary big">Avanti ▶️</button>
       </form>`,
     mount() {
       document.getElementById('cert-form').addEventListener('submit', (e) => {
         e.preventDefault();
         const v = readForm(e.target);
-        const err = document.getElementById('cert-error');
-        if (!parseDate(v.certDate)) { err.textContent = 'Scrivi il giorno.'; err.hidden = false; return; }
-        if (daysBetween(v.certDate, todayISO()) < 0) { err.textContent = 'Questo giorno non è ancora arrivato. Controlla la data.'; err.hidden = false; return; }
+        if (parseDate(v.certDate) === null) return showError('cert-form', 'Scrivi il giorno.');
+        if (daysBetween(v.certDate, todayISO()) < 0) return showError('cert-form', 'Questo giorno non è ancora arrivato. Controlla la data.');
         state.certDate = v.certDate;
         go('category');
       });
@@ -178,8 +177,8 @@ const screens = {
         <p>Anche se l'ha fatta il patronato per te.</p>
         <form id="dom-form" novalidate>
           <label for="domandaDate">Se sì, che giorno?<span class="hint">È scritto sulla ricevuta della domanda</span></label>
-          <input type="date" id="domandaDate" name="domandaDate" value="${esc(state.domandaDate || '')}" max="${todayISO()}">
-          <p class="field-error" id="dom-error" role="alert" hidden></p>
+          <input type="date" id="domandaDate" name="domandaDate" value="${esc(state.domandaDate || '')}" max="${todayISO()}" aria-describedby="dom-form-error">
+          <p class="field-error" id="dom-form-error" role="alert" hidden></p>
           <button type="submit" class="btn primary">✅ Sì, l'ho fatta</button>
         </form>
         <button type="button" class="btn" id="no-dom">❌ No, non ancora</button>`,
@@ -187,10 +186,9 @@ const screens = {
         document.getElementById('dom-form').addEventListener('submit', (e) => {
           e.preventDefault();
           const v = readForm(e.target);
-          const err = document.getElementById('dom-error');
-          if (!parseDate(v.domandaDate)) { err.textContent = 'Scrivi il giorno della domanda.'; err.hidden = false; return; }
-          if (daysBetween(v.domandaDate, todayISO()) < 0) { err.textContent = 'Questo giorno non è ancora arrivato. Controlla la data.'; err.hidden = false; return; }
-          if (daysBetween(state.certDate, v.domandaDate) < 0) { err.textContent = 'La domanda non può essere prima del certificato. Controlla le date.'; err.hidden = false; return; }
+          if (parseDate(v.domandaDate) === null) return showError('dom-form', 'Scrivi il giorno della domanda.');
+          if (daysBetween(v.domandaDate, todayISO()) < 0) return showError('dom-form', 'Questo giorno non è ancora arrivato. Controlla la data.');
+          if (daysBetween(state.certDate, v.domandaDate) < 0) return showError('dom-form', 'La domanda non può essere prima del certificato. Controlla le date.');
           state.domandaDate = v.domandaDate;
           go('convocation');
         });
@@ -214,7 +212,12 @@ const screens = {
     }
 
     if (d.kind === 'domanda') {
-      const body = d.status === 'passed'
+      const body = d.lateDomanda
+        ? `<div class="hero" aria-hidden="true">⏰</div>
+           <h1>Il tempo per la domanda era finito</h1>
+           <div class="notice bad"><p>Bisognava fare la domanda entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>. È stata fatta ${art('il', d.domandaDate)}${esc(formatIt(d.domandaDate))}, ${days(d.daysLate)} dopo.</p>
+           <p><strong>Il certificato potrebbe non valere più: controlla con un patronato.</strong> Prima di sollecitare l'INPS, chiedi se serve un nuovo certificato del medico.</p></div>`
+        : d.status === 'passed'
         ? `<div class="hero" aria-hidden="true">⏰</div>
            <h1>Il tempo per la domanda è finito</h1>
            <div class="notice bad"><p>Bisognava fare la domanda entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>.</p>
@@ -227,8 +230,12 @@ const screens = {
       return { html: `${body}${patronato}${inpsCalls()}${disclaimer(rules.last_verified)}${restartBtn()}` };
     }
 
-    const what = d.kind === 'conclusion' ? 'La visita e il risultato dovevano arrivare' : 'La chiamata per la visita doveva arrivare';
-    const whatFuture = d.kind === 'conclusion' ? 'La visita e il risultato devono arrivare' : 'La chiamata per la visita deve arrivare';
+    // Procedura vecchia con tumore: la legge fissa la data della visita, non della chiamata.
+    const visitDate = d.kind === 'visit' && state.category === 'oncological';
+    const what = d.kind === 'conclusion' ? 'La visita e il risultato dovevano arrivare'
+      : visitDate ? 'La visita doveva arrivare' : 'La chiamata per la visita doveva arrivare';
+    const whatFuture = d.kind === 'conclusion' ? 'La visita e il risultato devono arrivare'
+      : visitDate ? 'La visita deve arrivare' : 'La chiamata per la visita deve arrivare';
     const note = d.indicative ? '<p class="muted">Questa data è indicativa: per questo caso la legge non è precisa.</p>' : '';
     const legal = d.legal ? `<p class="muted">Regola: ${esc(d.legal)}.</p>` : '';
 
@@ -247,7 +254,7 @@ const screens = {
         <h1>È tardi! Puoi sollecitare l'INPS</h1>
         <div class="notice bad">
           <p>${what} entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>.</p>
-          <p>Sono passati <strong>${days(d.daysLate)} in più</strong>.</p>
+          <p>${d.daysLate === 1 ? 'È passato' : 'Sono passati'} <strong>${days(d.daysLate)} in più</strong>.</p>
         </div>
         ${note}${legal}
         <h2>Cosa fare, in ordine</h2>
@@ -268,6 +275,8 @@ const screens = {
   letter: () => {
     const p = prov();
     const r = regime();
+    // Per un minore scrive il genitore: firma come genitore, senza delega (artt. 316 e 320 c.c.).
+    if (state.category === 'minor' && !person.delegateRole) person.delegateRole = 'genitore';
     return {
       html: `<h1>✍️ Scriviamo il sollecito insieme</h1>
         <p>Scrivi i dati qui sotto. Noi li mettiamo nella lettera per l'INPS di ${esc(p.name)}.</p>
@@ -302,7 +311,7 @@ const screens = {
             <li><span class="ico" aria-hidden="true">🪪</span> Allega: documento d'identità (fotocopia o foto)</li>
             <li><span class="ico" aria-hidden="true">📄</span> Allega: ricevuta del certificato</li>
             ${r === 'old' ? '<li><span class="ico" aria-hidden="true">🧾</span> Allega: ricevuta della domanda</li>' : ''}
-            <li class="delegate-note"${person.isDelegate ? '' : ' hidden'}><span class="ico" aria-hidden="true">📝</span> Allega: la delega firmata e il tuo documento</li>
+            <li class="delegate-note"${person.isDelegate ? '' : ' hidden'}><span class="ico" aria-hidden="true">📝</span> <span class="delegate-note-text">${esc(delegateNoteText(person))}</span></li>
           </ul>
         </div>
         <p class="muted">Indirizzo PEC: ${mailLink(p.pec)}${p.pec_verified ? '' : ' (stiamo ancora controllando questo indirizzo)'} ·
@@ -317,16 +326,15 @@ const screens = {
           state.certNumber = v.certNumber; state.domandaNumber = v.domandaNumber;
           delete v.certNumber; delete v.domandaNumber;
           Object.assign(person, v);
-          form.querySelector('.delegate-fields').hidden = !person.isDelegate;
-          document.querySelectorAll('.delegate-note').forEach((li) => { li.hidden = !person.isDelegate; });
+          syncDelegate(form, person);
           const text = inpsReminder({
             provinceName: p.name, inpsPec: p.pec, person, certNumber: state.certNumber, certDate: state.certDate,
-            domandaDate: state.domandaDate, domandaNumber: state.domandaNumber, regime: r, deadlineInfo: deadline(), today: todayISO(),
+            domandaDate: state.domandaDate, domandaNumber: state.domandaNumber, regime: r, category: state.category, deadlineInfo: deadline(), today: todayISO(),
           });
           state.letterText = text;
           document.getElementById('preview').textContent = text;
           document.getElementById('mail-btn').href = mailtoHref(p.pec,
-            `Sollecito convocazione visita invalidità civile${state.certNumber ? ` – certificato n. ${state.certNumber}` : ''}`,
+            `Sollecito convocazione visita invalidità civile${person.fullName ? ` – ${person.fullName}` : ''}${state.certNumber ? ` – certificato n. ${state.certNumber}` : ''}`,
             `Buongiorno,\nin allegato il sollecito firmato, con i documenti.\n\nCordiali saluti\n${person.fullName || ''}`);
         };
         form.addEventListener('input', update);
@@ -368,7 +376,7 @@ const regionLink = withRegion(screens);
   try {
     [rules, inps] = await Promise.all([loadJSON(`${ROOT}data/rules-invalidita.json`), loadRegional(ROOT, 'inps')]);
   } catch {
-    app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>';
+    avvisoErrore(); // la risposta scritta nella pagina resta, con l'avviso sopra
     return;
   }
   render();

@@ -2,17 +2,17 @@
   "name": "Regole per la copia della cartella clinica e dei referti",
   "last_verified": "2026-10-19",
   "deadline_days": 7,
-  "legal_basis": "art. 4, comma 3, L. 24/2017 (legge Gelli): la direzione sanitaria fornisce la documentazione sanitaria disponibile entro 7 giorni dalla richiesta; le eventuali integrazioni entro 30 giorni",
+  "legal_basis": "art. 4, comma 2, L. 24/2017 (legge Gelli): la direzione sanitaria fornisce la documentazione sanitaria disponibile entro 7 giorni dalla richiesta; le eventuali integrazioni entro 30 giorni",
   "integration_days": 30,
   "appeal_days": 30,
-  "notes_internal": "TODO-VERIFY con il legale: 7 giorni dalla L. 24/2017 art. 4 c. 3 (documentazione disponibile), integrazioni entro 30. Per il ricorso resta l'art. 25 L. 241/1990: dopo 30 giorni di silenzio la richiesta si intende respinta (silenzio-rigetto) e si può ricorrere al TAR entro 30 giorni o al difensore civico.",
+  "notes_internal": "TODO-VERIFY con il legale: 7 giorni dalla L. 24/2017 art. 4 c. 2 (documentazione disponibile), integrazioni entro 30. Per il ricorso resta l'art. 25 L. 241/1990: dopo 30 giorni di silenzio la richiesta si intende respinta (silenzio-rigetto) e si può ricorrere al TAR entro 30 giorni o al difensore civico.",
   "provenienza": {
     "deadline_days": {
       "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2017-03-08;24",
       "verified": "2026-10-19",
       "proof": "estratto",
       "review_by": "2027-10-19",
-      "nota": "L. 24/2017, art. 4, comma 3."
+      "nota": "L. 24/2017, art. 4, comma 2."
     },
     "integration_days": {
       "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2017-03-08;24",
@@ -29,11 +29,12 @@
     }
   },
   "sources": [
-    { "label": "L. 24/2017 (legge Gelli), art. 4, comma 3 (documentazione sanitaria entro 7 giorni)", "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2017-03-08;24" },
+    { "label": "L. 24/2017 (legge Gelli), art. 4, comma 2 (documentazione sanitaria entro 7 giorni)", "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2017-03-08;24" },
     { "label": "L. 241/1990, art. 25 (accesso agli atti: silenzio dopo 30 giorni e ricorso al TAR)", "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1990-08-07;241" },
     { "label": "Garante privacy – FAQ sull'accesso alle cartelle cliniche (dicembre 2024): prima copia gratis", "url": "https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/10086913" },
     { "label": "Regione Siciliana – Fascicolo Sanitario Elettronico", "url": "https://www.regione.sicilia.it/fascicolosanitario" },
     { "label": "Regione Siciliana – Fascicolo Sanitario Elettronico: domande frequenti", "url": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/dipartimento-pianificazione-strategica/fascicolo-sanitario-elettronico-domande-frequenti" },
-    { "label": "Ministero della Salute – cartella clinica", "url": "https://www.salute.gov.it" }
+    { "label": "Ministero della Salute – cartella clinica", "url": "https://www.salute.gov.it" },
+    { "label": "Codice civile, artt. 316 e 320 (il genitore firma per il figlio minore), 357 (tutore), 404-405 (amministratore di sostegno)", "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262" }
   ]
 }

@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Ricetta elettronica: il numero NRE, in farmacia solo con la tessera, quanto dura, ricette via email – Guida Sanità</title>
 <meta name="description" content="Come funziona la ricetta elettronica (dematerializzata): il promemoria con il numero NRE, in farmacia e al CUP basta la tessera sanitaria, il medico può mandarla per email o messaggio, la ricetta per i farmaci vale 30 giorni, quella per visite ed esami più a lungo.">
 <meta name="theme-color" content="#0b5f5c">
@@ -10,7 +11,7 @@
 <link rel="icon" href="../../logo.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="../../apple-touch-icon.png">
 <link rel="manifest" href="../../site.webmanifest">
-<script>document.documentElement.className += ' js';if(/\/index\.html$/.test(location.pathname))location.replace(location.pathname.slice(0,-10)+location.search+location.hash);</script>
+<script>document.documentElement.className += ' js';if(/\/index\.html$/.test(location.pathname))location.replace('/'+location.pathname.slice(0,-10).replace(/^[\/\\]+/,'')+location.search+location.hash);</script>
 <link rel="canonical" href="https://guidasanita.it/fascicolo-e-ricetta/ricetta-elettronica/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Guida Sanità">
@@ -19,6 +20,11 @@
 <meta property="og:description" content="Come funziona la ricetta elettronica (dematerializzata): il promemoria con il numero NRE, in farmacia e al CUP basta la tessera sanitaria, il medico può mandarla per email o messaggio, la ricetta per i farmaci vale 30 giorni, quella per visite ed esami più a lungo.">
 <meta property="og:url" content="https://guidasanita.it/fascicolo-e-ricetta/ricetta-elettronica/">
 <link rel="stylesheet" href="../../css/style.css">
+<link rel="modulepreload" href="../../js/guida.js">
+<link rel="modulepreload" href="../../js/common.js">
+<link rel="modulepreload" href="../../js/engine.js">
+<link rel="modulepreload" href="../../js/icons.js">
+<link rel="modulepreload" href="../../js/controlla.js">
 </head>
 <body>
 <header class="site-header">
@@ -33,7 +39,7 @@
 <h1>La ricetta elettronica: NRE, farmacia, quanto dura</h1>
 <p class="lead">La ricetta non è più il foglio rosso. Il medico la scrive al computer e ti dà un <strong>promemoria</strong>, cioè un foglio bianco con il numero della ricetta: l'<strong>NRE</strong>. La ricetta vera è nel sistema.</p>
 <h2>In farmacia e al CUP</h2>
-<p>Basta la <strong>tessera sanitaria</strong>: il farmacista o il CUP vedono le tue ricette. Il promemoria serve solo se vuoi avere il numero sotto mano. Se non hai il foglio e non ricordi niente, con la tessera trovano tutto lo stesso.</p>
+<p>Basta la <strong>tessera sanitaria</strong>: il farmacista o il CUP (l'ufficio dove si prenotano visite ed esami) vedono le tue ricette. Il promemoria serve solo se vuoi avere il numero sotto mano. Se non hai il foglio e non ricordi niente, con la tessera trovano tutto lo stesso.</p>
 
 <h2>La ricetta per email o messaggio</h2>
 <p>Il medico può mandarti il numero NRE <strong>per email, SMS o WhatsApp</strong>, senza farti venire in studio: è permesso. Per le medicine che prendi sempre (le terapie croniche) chiedigli se puoi avere le ricette così. Le ricette sono anche nel <a href="../fascicolo-sanitario/">Fascicolo Sanitario</a>.</p>
@@ -41,11 +47,11 @@
 <h2>Quanto dura</h2>
 <ul>
 <li><strong>Medicine</strong>: la ricetta vale <strong>30 giorni</strong> dal giorno in cui è stata fatta. Dopo, serve una ricetta nuova.</li>
-<li><strong>Visite ed esami</strong>: la ricetta va prenotata <strong>entro 180 giorni</strong> dalla data in cui il medico l'ha scritta (regola nazionale per le ricette dal 30 dicembre 2024; alcune Regioni danno meno tempo, per esempio secondo la priorità). Se prenoti in tempo, vale fino al giorno della visita. Conviene comunque <strong>prenotare subito</strong>: se sulla ricetta c'è una classe di priorità (U, B, D, P), i tempi massimi valgono dal giorno in cui prenoti. Guarda <a href="../../liste-attesa/">la visita è troppo lontana</a>.</li>
+<li><strong>Visite ed esami</strong>: devi prenotare la ricetta <strong>entro 180 giorni</strong> dalla data in cui il medico l'ha scritta (regola nazionale per le ricette dal 30 dicembre 2024; alcune Regioni danno meno tempo, per esempio secondo la priorità). Se prenoti in tempo, vale fino al giorno della visita. Conviene comunque <strong>prenotare subito</strong>: se sulla ricetta c'è una classe di priorità (U, B, D, P), i tempi massimi valgono dal giorno in cui prenoti. Leggi <a href="../../liste-attesa/">cosa fare se la visita è troppo lontana</a>.</li>
 </ul>
 
 <h2>Le medicine con il piano terapeutico</h2>
-<p>Alcune medicine il medico può prescriverle solo se c'è un <a href="../../piano-terapeutico/">piano terapeutico</a> dello specialista. La ricetta è elettronica anche in quel caso, ma la medicina spesso si ritira alla farmacia dell'azienda sanitaria (ASL) o si ordina in farmacia.</p>
+<p>Alcune medicine il medico può prescriverle solo se c'è un <a href="../../piano-terapeutico/">piano terapeutico</a> dello specialista. La ricetta è elettronica anche in quel caso, ma la medicina spesso si ritira alla farmacia dell'azienda sanitaria (ASL; in Sicilia si chiama ASP) o si ordina in farmacia.</p>
 <div class="notice info"><p>Le ricette dei medici <strong>privati</strong> sono su carta bianca e <strong>non valgono</strong> per avere medicine, visite o esami con il Servizio sanitario: devi farle «trascrivere» dal medico di famiglia, che decide se farlo.</p></div>
 <h2>In questa guida</h2>
 <!-- blocco:guida-indice (creato da tools/pagine.mjs) -->
@@ -67,11 +73,11 @@
 <!-- /fonti -->
 </main>
 <!-- condividi: creato da tools/pagine.mjs -->
-<div class="wrap share-bar">
+<aside class="wrap share-bar" aria-label="Condividi o stampa">
 <a class="btn share-wa" href="https://wa.me/?text=Ricetta%20elettronica%3A%20il%20numero%20NRE%2C%20in%20farmacia%20solo%20con%20la%20tessera%2C%20quanto%20dura%2C%20ricette%20via%20email%0Ahttps%3A%2F%2Fguidasanita.it%2Ffascicolo-e-ricetta%2Fricetta-elettronica%2F" target="_blank" rel="noopener"><svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg> Condividi su WhatsApp</a>
 <button type="button" class="btn share-print js-inline" data-action="print-page">🖨️ Stampa questa pagina</button>
 <p class="print-url">Guida Sanità, gratis e fatta da volontari: https://guidasanita.it/fascicolo-e-ricetta/ricetta-elettronica/</p>
-</div>
+</aside>
 <!-- /condividi -->
 <footer class="site-footer" id="site-footer"><div class="wrap">
 <p><strong>Guida Sanità è fatto da volontari. Non siamo l'azienda sanitaria (ASL), l'INPS né un altro ufficio pubblico.</strong> Diamo informazioni generali, non il parere di un avvocato o di un medico.</p>

@@ -126,6 +126,14 @@ for (const m of M34) {
     cases.push({ ...base, name: `${tag} ${p} · data nel futuro`, path: 'date', req: add(TODAY, 1), expectReqError: true });
   }
 }
+// Cartella clinica, ricorso al TAR (audit dei mutanti del 22/10/2026, giro 6, N03): prima dei 30 giorni dalla richiesta
+// il sito dice «Se dopo 30 giorni…»; dal trentesimo giorno dice che si può già fare ricorso. Un giorno prima, il giorno
+// stesso e uno dopo, con il dato letto da data/rules-cartella.json.
+const RCART = JSON.parse(fs.readFileSync(path.join(DATA, 'rules-cartella.json'), 'utf8'));
+for (const n of [RCART.integration_days - 1, RCART.integration_days, RCART.integration_days + 1]) {
+  const a = asp.asl[n % asp.asl.length];
+  cases.push({ mod: 3, m: M34[0], p: a.province, a, name: `CART ${a.province} · TAR · richiesta di ${n} giorni fa`, path: 'date', req: add(TODAY, -n), expectH1: M34[0].late, late: n - M34[0].days, tar: n < RCART.integration_days ? 'prima' : 'dopo' });
+}
 
 // Modulo 5: esenzione ticket (calcolo indipendente dal sito).
 const ESE = JSON.parse(fs.readFileSync(path.join(DATA, 'rules-esenzione.json'), 'utf8')).codes;
@@ -134,9 +142,9 @@ function expectedCodes({ ageBand, status, spouse, children, income }) {
   const codes = [], maybe = [];
   const has = income !== null;
   if (ageBand === 'under6' || ageBand === '65plus') (has ? (income <= ESE.E01.income_max && codes.push('E01')) : maybe.push('E01'));
-  if (status === 'disoccupato') (has ? (income <= fam('E02') && codes.push('E02')) : maybe.push('E02'));
+  if (status === 'disoccupato') (has ? (income < fam('E02') && codes.push('E02')) : maybe.push('E02'));
   if (status === 'sociale') codes.push('E03');
-  if (status === 'minimo') (has ? (income <= fam('E04') && codes.push('E04')) : maybe.push('E04'));
+  if (status === 'minimo') (has ? (income < fam('E04') && codes.push('E04')) : maybe.push('E04'));
   return { codes, maybe, fam };
 }
 const AGE = { under6: /^Meno di 6/, '6to59': /^Da 6 a 59/, '60to64': /^Da 60 a 64/, '65plus': /^65 anni o più/ };
@@ -151,16 +159,37 @@ for (const ageBand of Object.keys(AGE)) for (const status of Object.keys(STATUS)
 }
 // Modulo 6: ricorso entro 6 mesi.
 const addM = (iso, n) => { const [y, m, d] = iso.split('-').map(Number); const t = new Date(Date.UTC(y, m - 1 + n, 1)); const last = new Date(Date.UTC(t.getUTCFullYear(), t.getUTCMonth() + 1, 0)).getUTCDate(); t.setUTCDate(Math.min(d, last)); return t.toISOString().slice(0, 10); };
+// Se i 6 mesi finiscono di sabato, domenica o in un festivo, il termine slitta al primo giorno lavorativo
+// (art. 155 c.p.c.). Calcolo indipendente da js/engine.js: Lunedì dell'Angelo da una tabella, non dalla formula.
+const PASQUETTA = ['2025-04-21', '2026-04-06', '2027-03-29', '2028-04-17', '2029-04-02', '2030-04-22', '2031-04-14', '2032-03-29'];
+const FISSI = ['01-01', '01-06', '04-25', '05-01', '06-02', '08-15', '11-01', '12-08', '12-25', '12-26'];
+const lavorativo = (iso) => { const g = new Date(`${iso}T00:00:00Z`).getUTCDay(); return g !== 0 && g !== 6 && !FISSI.includes(iso.slice(5)) && !(iso.slice(5) === '10-04' && iso >= '2026') && !PASQUETTA.includes(iso); };
+const utile = (iso) => { let d = iso; while (!lavorativo(d)) d = add(d, 1); return d; };
+const scadRic = (v) => utile(addM(v, 6));
 cases.push({ mod: 6, name: 'RIC · senza verbale', path: 'notyet', expectH1: 'Prima serve il verbale' });
-cases.push({ mod: 6, name: 'RIC · verbale oggi', verbale: TODAY, expectH1: 'Sei ancora in tempo', deadline: addM(TODAY, 6) });
+cases.push({ mod: 6, name: 'RIC · verbale oggi', verbale: TODAY, expectH1: 'Sei ancora in tempo', deadline: scadRic(TODAY) });
 // Il verbale che scade proprio in quel giorno (a fine mese non sempre esiste: 31/08 → 28/02 → 28/08).
-const verbaleFor = (deadline) => { for (let n = 170; n <= 190; n++) { const v = add(TODAY, -n); if (addM(v, 6) === deadline) return v; } return null; };
-cases.push({ mod: 6, name: 'RIC · verbale 100 giorni fa (non urgente)', verbale: add(TODAY, -100), expectH1: 'Sei ancora in tempo', deadline: addM(add(TODAY, -100), 6) });
+const verbaleFor = (deadline) => { for (let n = 170; n <= 190; n++) { const v = add(TODAY, -n); if (scadRic(v) === deadline) return v; } return null; };
+cases.push({ mod: 6, name: 'RIC · verbale 100 giorni fa (non urgente)', verbale: add(TODAY, -100), expectH1: 'Sei ancora in tempo', deadline: scadRic(add(TODAY, -100)) });
 for (const [off, h1, name] of [[31, 'Sei ancora in tempo', 'mancano 31 giorni'], [30, 'Muoviti subito: manca poco', 'mancano 30 giorni (urgente)'], [10, 'Muoviti subito: manca poco', 'mancano 10 giorni (urgente)'], [0, 'Muoviti subito: manca poco', 'scade oggi'], [-1, 'I 6 mesi sono passati', 'scaduto ieri']]) {
   const v = verbaleFor(add(TODAY, off));
   if (v) cases.push({ mod: 6, name: `RIC · ${name}`, verbale: v, expectH1: h1, deadline: add(TODAY, off), today: off === 0 });
 }
-cases.push({ mod: 6, name: 'RIC · scaduto da un anno', verbale: addM(TODAY, -18), expectH1: 'I 6 mesi sono passati', deadline: addM(TODAY, -12) });
+// Con meno di 15 giorni non si scoraggia («qualche settimana»): si dice di andare oggi stesso.
+for (const [v, name] of [[addM(TODAY, -6), 'verbale di 6 mesi fa (scade adesso)'], [add(addM(TODAY, -6), 9), 'verbale di 6 mesi fa più 9 giorni']]) {
+  if (scadRic(v) >= TODAY) cases.push({ mod: 6, name: `RIC · ${name}`, verbale: v, expectH1: 'Muoviti subito: manca poco', deadline: scadRic(v), vietato: 'qualche settimana', richiesto: 'Vai oggi stesso' });
+}
+// Ricorso, giorno per giorno da 150 a 186 giorni dal verbale (giro 6, N04, N09): i giorni che mancano, il titolo, il colore
+// dell'avviso e «Vai oggi stesso» devono andare d'accordo. Urgente fino a 30 giorni, «Vai oggi stesso» sotto i 15.
+for (let n = 150; n <= 186; n++) {
+  const v = add(TODAY, -n);
+  const dl = scadRic(v);
+  if (dl < TODAY) continue;
+  const left = Math.round((Date.parse(dl) - Date.parse(TODAY)) / 864e5);
+  cases.push({ mod: 6, name: `RIC · verbale di ${n} giorni fa (mancano ${left} giorni)`, verbale: v, deadline: dl, left,
+    expectH1: left <= 30 ? 'Muoviti subito: manca poco' : 'Sei ancora in tempo', today: left === 0 });
+}
+cases.push({ mod: 6, name: 'RIC · scaduto da un anno', verbale: addM(TODAY, -18), expectH1: 'I 6 mesi sono passati', deadline: scadRic(addM(TODAY, -18)) });
 cases.push({ mod: 6, name: 'RIC · data nel futuro', verbale: add(TODAY, 1), expectReqError: true });
 
 // Modulo 7: assegno di inclusione.
@@ -249,7 +278,7 @@ async function runCase(page, c) {
           await page.fill('#appointmentDate', c.appt);
           await btn(/Controlla/);
           if (c.expectError || c.expectFutureError) {
-            const e = page.locator('#dates-error');
+            const e = page.locator('#dates-form-error');
             if (!(await e.isVisible())) problems.push('date invertite: nessun messaggio di errore');
             return problems;
           }
@@ -258,7 +287,7 @@ async function runCase(page, c) {
         await page.fill('#requestDate', c.req);
         await btn(/Calcola/);
         if (c.expectReqError) {
-          if (!(await page.locator('#req-error').isVisible())) problems.push('giorno nel futuro accettato');
+          if (!(await page.locator('#req-form-error').isVisible())) problems.push('giorno nel futuro accettato');
           return problems;
         }
       }
@@ -325,6 +354,23 @@ async function runCase(page, c) {
           if (c.appt && !t.includes(fmt(c.appt))) problems.push('lettera senza data appuntamento');
           if (c.req && !t.includes(fmt(c.req))) problems.push('lettera senza data della richiesta al CUP');
           if (/undefined|NaN|null/.test(t)) problems.push('lettera con testo sospetto');
+          // Giro 6 (N02, N11, N19), una volta per provincia (classe B): il nome si legge com'è scritto (esc), la data
+          // della firma è oggi in gg/mm/aaaa, e stampando la lettera il foglio non è bianco.
+          if (c.cls.key === 'B') {
+            await page.fill('#f-fullName', 'Maria <b>Rossi</b> & figli');
+            const te = await page.locator('#preview').innerText();
+            if (!te.includes('Maria <b>Rossi</b> & figli')) problems.push('il nome con < > & non si legge com\'è scritto nella lettera (manca esc?)');
+            const firma = te.match(/, (\S+)\s+Firma/);
+            if (!firma || firma[1] !== fmt(TODAY)) problems.push(`data della firma «${firma && firma[1]}», attesa ${fmt(TODAY)}`);
+            await page.fill('#f-fullName', 'Maria Rossi');
+            await page.evaluate(() => { window.print = () => {}; });
+            await page.click('#pdf-btn');
+            await page.emulateMedia({ media: 'print' });
+            const st = await page.evaluate(() => { const e = document.getElementById('print-area'); return { vis: !!e && e.getClientRects().length > 0, n: e ? e.innerText.trim().length : 0 }; });
+            await page.emulateMedia({ media: 'screen' });
+            if (!st.vis || st.n < 200) problems.push('stampando la lettera il foglio è bianco (#print-area non si vede)');
+            await page.waitForTimeout(1100);
+          }
         }
         await checkScreen('lettera');
         await btn(/Fatto! E adesso/);
@@ -333,6 +379,26 @@ async function runCase(page, c) {
       if (after !== 'E adesso?') problems.push(`schermata finale: «${after}»`);
       const t = await page.locator('#reminder').innerText();
       if (!t.includes('SOLLECITO')) problems.push('sollecito mancante');
+      // Il sollecito va allo stesso indirizzo della prima lettera (giro 6, N01: andava alla PEC generale).
+      const to = a.send_to || a.pec;
+      if (to) {
+        const rmail = await page.locator('#rmail-btn').getAttribute('href');
+        if (!rmail.startsWith(`mailto:${to}?`)) problems.push(`sollecito all'indirizzo sbagliato: ${rmail.slice(0, 60)} (la prima lettera va a ${to})`);
+        if (!t.includes(to)) problems.push(`il testo del sollecito non ha l'indirizzo ${to}`);
+      }
+      // Il «Se nessuno ti risponde entro…»: con la U non si aspettano i 10 giorni del sollecito,
+      // con la B non oltre i 10 giorni della classe. La prima richiesta, se non la cambi, è di oggi.
+      const title = await page.locator('#remind-title').innerText();
+      const shown = [...title.matchAll(/(\d{2})\/(\d{2})\/(\d{4})/g)].map((m) => `${m[3]}-${m[2]}-${m[1]}`);
+      if (c.cls.key === 'U') {
+        const main = await page.locator('main').innerText();
+        const late = [...main.matchAll(/(\d{2})\/(\d{2})\/(\d{4})/g)].map((m) => `${m[3]}-${m[2]}-${m[1]}`).filter((d) => d > add(TODAY, 3));
+        if (late.length) problems.push(`classe U: «E adesso?» mostra date oltre i 3 giorni (${late.map(fmt).join(', ')})`);
+        if (!/telefona subito/.test(title)) problems.push(`classe U: titolo del sollecito «${title}»`);
+      } else {
+        const want = add(TODAY, c.cls.key === 'B' ? Math.min(10, LIMIT.B) : 10);
+        if (shown.join() !== want) problems.push(`sollecito: attesa ${fmt(want)}, trovato «${title}»`);
+      }
       await checkScreen('E adesso');
       await btn(/Torna indietro/);
       if (!(await h1()).length) problems.push('Indietro non funziona');
@@ -383,6 +449,15 @@ async function runCase(page, c) {
     const text = await checkScreen('risultato');
     if (c.deadline && !text.includes(fmt(c.deadline))) problems.push(`scadenza attesa ${fmt(c.deadline)} non mostrata`);
     if (c.today && !text.includes('Scade oggi')) problems.push('manca «Scade oggi»');
+    if (c.vietato && text.includes(c.vietato)) problems.push(`con pochi giorni c'è ancora «${c.vietato}»`);
+    if (c.richiesto && !text.includes(c.richiesto)) problems.push(`manca «${c.richiesto}»`);
+    if (c.left !== undefined) {
+      const urgente = c.left <= 30;
+      if (c.left > 0 && !text.includes(`Mancano ${c.left} ${c.left === 1 ? 'giorno' : 'giorni'}`)) problems.push(`attesi «Mancano ${c.left} giorni»`);
+      const cls = await page.locator('#app .notice').first().getAttribute('class');
+      if (!cls.split(/\s+/).includes(urgente ? 'bad' : 'ok')) problems.push(`mancano ${c.left} giorni: avviso «${cls}», atteso ${urgente ? 'bad (rosso)' : 'ok (verde)'}`);
+      if ((c.left < 15) !== text.includes('Vai oggi stesso')) problems.push(`mancano ${c.left} giorni e «Vai oggi stesso» ${c.left < 15 ? 'manca' : 'c\'è già'}`);
+    }
     return problems;
   }
 
@@ -438,6 +513,11 @@ async function runCase(page, c) {
       await page.check('input[name=isDelegate]'); await page.fill('#f-delegateName', 'Luca Rossi');
       const t = await page.locator('#preview').innerText();
       for (const w of ['Maria Rossi', 'Luca Rossi', `Azienda Sanitaria Provinciale di ${c.p}`]) if (!t.includes(w)) problems.push(`lettera senza «${w}»`);
+      // A chi va (giro 6, N07): cure palliative alla rete locale di cure palliative, assistenza a casa al PUA.
+      const ufficio = c.mod === 11 ? 'Rete locale di cure palliative' : 'Punto Unico di Accesso';
+      const testa = t.split('\n').slice(0, 5).join(' ');
+      if (!testa.includes(ufficio)) problems.push(`lettera non indirizzata a «${ufficio}»`);
+      if (c.mod === 11 && testa.includes('Punto Unico di Accesso')) problems.push('lettera delle cure palliative indirizzata al PUA');
       if (c.req && !t.includes(fmt(c.req))) problems.push('lettera senza data della richiesta');
       if (/undefined|NaN|null/.test(t)) problems.push('lettera con testo sospetto');
       const mail = await page.locator('#mail-btn').getAttribute('href');
@@ -473,7 +553,7 @@ async function runCase(page, c) {
     await btn({ '0-5': /sotto i 6 anni/, '6-13': /da 6 a 13/, '14-15': /14 o 15/, '16+': /^Un adulto/ }[c.band]);
     await btn({ change: /^Voglio cambiare/, retire: /va in pensione/, full: /Non trovo nessuno/, temporary: /per studio o lavoro/ }[c.sit]);
     const got = await h1();
-    const want = c.sit === 'full' ? 'Se non trovi nessuno' : `Ecco come fare a ${c.p}`;
+    const want = c.sit === 'full' ? 'Se non trovi nessuno' : `Ecco come fare ${/^a/i.test(c.p) ? "ad" : "a"} ${c.p}`;
     if (!got.startsWith(want)) problems.push(`titolo atteso «${want}», trovato «${got}»`);
     const text = await checkScreen('risultato');
     const who = { '0-5': 'deve avere il pediatra', '6-13': 'puoi scegliere il pediatra o il medico di famiglia', '14-15': 'si passa al medico di famiglia', '16+': 'si passa al medico di famiglia' }[c.band];
@@ -520,6 +600,10 @@ async function runCase(page, c) {
     const text = await checkScreen('risultato');
     if (c.deadline && !text.includes(fmt(c.deadline))) problems.push(`scadenza attesa ${fmt(c.deadline)} non mostrata`);
     if (c.late && !text.includes(`${c.late} ${c.late === 1 ? 'giorno' : 'giorni'} in più`)) problems.push(`giorni di ritardo attesi ${c.late}`);
+    if (c.tar) {
+      const prima = new RegExp(`Se dopo ${RCART.integration_days} giorni dalla richiesta`).test(text);
+      if (prima !== (c.tar === 'prima')) problems.push(`TAR: il testo dice ${prima ? '«Se dopo … giorni»' : 'che si può già fare ricorso'}, atteso ${c.tar === 'prima' ? '«Se dopo … giorni»' : 'che si può già fare ricorso'}`);
+    }
     if (c.full) {
       await btn(/Scriviamo il sollecito insieme/);
       await page.fill('#f-fullName', 'Maria Rossi');
@@ -548,7 +632,7 @@ async function runCase(page, c) {
   await page.fill('#certDate', c.cert);
   await btn(/Avanti/);
   if (c.expectCertError) {
-    if (!(await page.locator('#cert-error').isVisible())) problems.push('certificato nel futuro accettato');
+    if (!(await page.locator('#cert-form-error').isVisible())) problems.push('certificato nel futuro accettato');
     return problems;
   }
   await btn({ oncological: /^Per una persona con un tumore/, minor: /^Per un bambino/, other: /^Per un adulto/ }[c.cat]);
@@ -563,7 +647,7 @@ async function runCase(page, c) {
     await page.fill('#domandaDate', c.domanda);
     await btn(/Sì, l'ho fatta/);
     if (c.expectDomError) {
-      if (!(await page.locator('#dom-error').isVisible())) problems.push('domanda prima del certificato accettata');
+      if (!(await page.locator('#dom-form-error').isVisible())) problems.push('domanda prima del certificato accettata');
       return problems;
     }
     await btn(c.conv ? /^Sì, ho il giorno della visita/ : /^No, non ancora/);
@@ -582,12 +666,30 @@ async function runCase(page, c) {
     await page.fill('#f-certNumber', 'CERT123');
     if (!c.isNew) await page.fill('#f-domandaNumber', 'DOM456');
     const t = await page.locator('#preview').innerText();
-    const wants = ['Maria Rossi', 'CERT123', fmt(c.cert), fmt(c.deadline), `Direzione provinciale di ${c.p}`];
+    // Vecchia procedura, non oncologica: i 30 giorni sono indicativi, la lettera dice solo quanti giorni sono passati.
+    const ordinary = !c.isNew && c.cat !== 'oncological';
+    const elapsed = ordinary ? Math.round((Date.parse(TODAY) - Date.parse(c.domanda)) / 864e5) : 0;
+    const wants = ['Maria Rossi', 'CERT123', fmt(c.cert), ordinary ? `sono trascorsi ${elapsed} giorni` : fmt(c.deadline), `Direzione provinciale di ${c.p}`];
+    if ((t.match(/pervenuta alcuna convocazione/g) || []).length !== 1) problems.push('sollecito: «pervenuta alcuna convocazione» non una sola volta');
     if (!c.isNew) wants.push('DOM456', fmt(c.domanda));
     for (const w of wants) if (!t.includes(w)) problems.push(`sollecito senza «${w}»`);
     if (/undefined|NaN|null/.test(t)) problems.push('sollecito con testo sospetto');
     const mail = await page.locator('#mail-btn').getAttribute('href');
     if (!mail.startsWith(`mailto:${c.pr.pec}?`)) problems.push('PEC INPS sbagliata');
+    // Chi scrive per un altro: per un minore firma il genitore (senza delega), il tutore allega il decreto.
+    await page.check('input[name=isDelegate]'); await page.fill('#f-delegateName', 'Luca Rossi');
+    const role = await page.locator('input[name=delegateRole]:checked').getAttribute('value');
+    if (role !== (c.cat === 'minor' ? 'genitore' : 'delegato')) problems.push(`ruolo di chi scrive: atteso ${c.cat === 'minor' ? 'genitore' : 'delegato'}, scelto ${role}`);
+    const td = await page.locator('#preview').innerText();
+    if (c.cat === 'minor') {
+      if (!td.includes('responsabilità genitoriale') || /delega/i.test(td)) problems.push('sollecito per un minore: deve firmare il genitore, senza delega');
+      const note = await page.locator('.delegate-note').innerText();
+      if (/delega firmata/.test(note)) problems.push('«Prima di mandarla» chiede la delega per un minore');
+    } else if (!td.includes('come da delega allegata')) problems.push('sollecito del delegato senza la delega');
+    await page.check('input[name=delegateRole][value=tutore]');
+    if (!(await page.locator('#f-guardianKind').isVisible())) problems.push('tutore: campi del decreto nascosti');
+    const tt = await page.locator('#preview').innerText();
+    if (!tt.includes('in qualità di amministratore di sostegno') || !tt.includes('copia del decreto di nomina') || /delega/i.test(tt)) problems.push('sollecito del tutore/amministratore di sostegno sbagliato');
     await checkScreen('sollecito');
   }
   return problems;
@@ -601,7 +703,7 @@ async function runCase(page, c) {
   let done = 0;
   const queue = [...cases];
   await Promise.all(Array.from({ length: WORKERS }, async () => {
-    const ctx = await browser.newContext({ ...devices['iPhone SE'] });
+    const ctx = await browser.newContext({ ...devices['iPhone SE'], ...(process.env.TZID ? { timezoneId: process.env.TZID } : {}) });
     // Le province provate sono quelle siciliane: la regione è già scelta, così si va dritti alla provincia.
     await ctx.addInitScript(() => { try { localStorage.setItem('gs-regione', 'sicilia'); } catch { /* niente */ } });
     const page = await ctx.newPage();

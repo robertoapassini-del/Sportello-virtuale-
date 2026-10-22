@@ -14,6 +14,9 @@ Due test la fanno rispettare: se una cifra non è in regola, `npm test` fallisce
   - la cifra è diversa da quella nei dati (per esempio dopo un aggiornamento fatto a metà);
   - la cifra non sta in nessun file di dati: un numero inventato, un refuso, o un numero che prima va
     messo nei dati.
+- La cifra deve avere la stessa unità del dato, che il test legge dal nome del campo («_days»/«_giorni» →
+  giorni, «_ore» → ore, «_months»/«_mesi» → mesi, «_anni»/«age» → anni, «isee»/«income»/«euro» → euro,
+  «percent» → %): «40 giorni» non torna con un'età di 40 anni. Il controllo vale anche per `<title>` e descrizioni.
 - Sono accettate senza dichiararle le cifre che derivano in modo ovvio da un dato: «72 ore» per 3 giorni,
   «fino a 64 anni» per il limite dei 65, «da 6 a 13 anni» per il limite dei 14.
 - Gli **esempi** («se spendi 1.129,11 euro…») e gli **arrotondamenti** («circa 13.660 euro») vanno

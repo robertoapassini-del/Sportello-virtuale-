@@ -3,7 +3,7 @@
 // Regola: il ricorso al giudice va fatto entro 6 mesi dal verbale. Niente lettera:
 // serve un avvocato (o un patronato che lo trova). Non chiediamo la malattia.
 import { ricorsoDeadline, todayISO, formatIt, parseDate, daysBetween, formatEuro, art } from './engine.js';
-import { esc, loadJSON, disclaimer, renderFooter, readForm } from './common.js';
+import { esc, loadJSON, disclaimer, renderFooter, avvisoErrore, readForm } from './common.js';
 import { createFlow, choice, restartBtn, days, dateForm, showError } from './flow.js';
 
 const ROOT = '../';
@@ -25,8 +25,8 @@ const howItWorks = () => `
     <li><strong>Non si può fare ricorso all'INPS</strong> con una lettera: si va dal giudice. Serve un <strong>avvocato</strong>.</li>
     <li>L'avvocato chiede al Tribunale una <strong>nuova visita</strong> con un medico del giudice (si chiama «accertamento tecnico preventivo», ATP).</li>
     <li>Se il medico del giudice ti dà ragione, l'INPS deve adeguarsi, con gli arretrati.</li>
-    <li><strong>Se il reddito della famiglia è basso</strong> (sotto circa ${formatEuro(rules.gratuito_patrocinio_income)} l'anno), l'avvocato lo paga lo Stato: chiedi il «gratuito patrocinio».</li>
-    <li><strong>Se perdi la causa</strong> e il reddito della famiglia è sotto circa ${formatEuro(rules.no_legal_costs_income)} l'anno, <strong>non paghi le spese legali</strong> dell'INPS. Basta una dichiarazione dentro il ricorso: la prepara l'avvocato.</li>
+    <li><strong>Se il reddito della famiglia è basso</strong> (sotto ${formatEuro(rules.gratuito_patrocinio_income)} l'anno), l'avvocato lo paga lo Stato: chiedi il «gratuito patrocinio».</li>
+    <li><strong>Se perdi la causa</strong> e il reddito della famiglia è sotto ${formatEuro(rules.no_legal_costs_income)} l'anno, <strong>non paghi le spese legali</strong> dell'INPS. Basta una dichiarazione dentro il ricorso: la prepara l'avvocato.</li>
   </ol>
   <h2>Cosa portare al patronato o all'avvocato</h2>
   <ul class="icon-list">
@@ -74,7 +74,7 @@ const screens = {
       document.getElementById('v-form').addEventListener('submit', (e) => {
         e.preventDefault();
         const v = readForm(e.target);
-        if (!parseDate(v.verbaleDate)) return showError('v-form', 'Scrivi il giorno.');
+        if (parseDate(v.verbaleDate) === null) return showError('v-form', 'Scrivi il giorno.');
         if (daysBetween(v.verbaleDate, todayISO()) < 0) return showError('v-form', 'Questo giorno non è ancora arrivato. Controlla la data.');
         state.verbaleDate = v.verbaleDate;
         flow.go('result');
@@ -92,9 +92,11 @@ const screens = {
           <div class="hero" aria-hidden="true">${urgent ? '🚨' : '⏰'}</div>
           <h1>${urgent ? 'Muoviti subito: manca poco' : 'Sei ancora in tempo'}</h1>
           <div class="notice ${urgent ? 'bad' : 'ok'}">
-            <p>Puoi fare ricorso <strong>${art('fino al', d.deadline)}${esc(formatIt(d.deadline))}</strong>.</p>
+            <p>Puoi fare ricorso <strong>${art('fino al', d.deadline)}${esc(formatIt(d.deadline))}</strong>.${d.slittato ? ' (I mesi finivano di sabato, di domenica o in un giorno festivo: il termine passa al primo giorno lavorativo.)' : ''}</p>
             <p>${d.daysLeft === 0 ? '<strong>Scade oggi.</strong>' : `Mancano <strong>${days(d.daysLeft)}</strong>.`}</p>
-            <p>L'avvocato ha bisogno di qualche settimana per preparare tutto: non aspettare l'ultimo momento.</p>
+            <p>${d.daysLeft < 15
+    ? '<strong>Vai oggi stesso da un patronato o da un avvocato: si può ancora depositare.</strong>'
+    : 'L\'avvocato ha bisogno di qualche settimana per preparare tutto: non aspettare l\'ultimo momento.'}</p>
           </div>
           ${patronato}
           ${howItWorks()}
@@ -131,7 +133,7 @@ let flow;
   try {
     rules = await loadJSON(`${ROOT}data/rules-ricorso.json`);
   } catch {
-    app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>';
+    avvisoErrore(); // la risposta scritta nella pagina resta, con l'avviso sopra
     return;
   }
   flow = createFlow({ app, screens, state, sources, first: 'intro' });

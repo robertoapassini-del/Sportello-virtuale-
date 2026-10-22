@@ -32,7 +32,7 @@ export function count(path, { title = '', event = false } = {}) {
 }
 
 export function esc(v) {
-  return String(v ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  return String(v == null ? '' : v).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 }
 
 export async function loadJSON(path) {
@@ -60,13 +60,34 @@ export function loadRegioni(root = '') {
   return indiceLoading;
 }
 
-// La scelta salvata nel browser. Il browser può non avere localStorage o bloccarlo.
+// La scelta salvata nel browser. Il browser può non avere localStorage o bloccarlo (cookie bloccati,
+// alcune finestre anonime): allora la scelta resta in memoria e, per non perderla quando la pagina
+// si ricarica o si passa a un'altra pagina del sito nella stessa scheda, anche nel nome della scheda
+// (window.name: resta nel browser, non va al server, e i browser lo cancellano passando a un altro sito).
+const NAME_PREFIX = 'gs-regione:';
+let storageOk = true;
+let regioneInMemoria = (() => {
+  try { return typeof window !== 'undefined' && window.name.startsWith(NAME_PREFIX) ? window.name.slice(NAME_PREFIX.length) : null; } catch { return null; }
+})();
 function savedRegione() {
-  try { return localStorage.getItem(REGIONE_KEY); } catch { return null; }
+  if (!storageOk) return regioneInMemoria;
+  try { const v = localStorage.getItem(REGIONE_KEY); return v == null ? regioneInMemoria : v; } catch { storageOk = false; return regioneInMemoria; }
 }
 export function setRegione(id) {
-  try { localStorage.setItem(REGIONE_KEY, id); } catch { /* non si ricorda: pazienza */ }
+  regioneInMemoria = id;
+  try {
+    localStorage.setItem(REGIONE_KEY, id);
+    if (localStorage.getItem(REGIONE_KEY) === id) return;
+  } catch { /* bloccato: si usa il nome della scheda */ }
+  storageOk = false;
+  try { if (!window.name || window.name.startsWith(NAME_PREFIX)) window.name = `${NAME_PREFIX}${id}`; } catch { /* resta solo in memoria */ }
 }
+// Vero se la scelta resta anche ricaricando la pagina (localStorage oppure nome della scheda): js/flow.js
+// ricarica la pagina per prendere i dati della regione nuova solo se la scelta non si perde.
+export const regioneRicordata = () => {
+  if (storageOk) return true;
+  try { return window.name === `${NAME_PREFIX}${regioneInMemoria}`; } catch { return false; }
+};
 
 // Tutte le regioni dell'indice (vuoto finché l'indice non è caricato) e quelle con i dati.
 export const regioni = () => (indice ? indice.regioni : []);
@@ -291,6 +312,17 @@ export function hideHeadingEmoji(root) {
   }
 }
 
+// Quando un modulo non riesce a partire (dati che non arrivano, errore nello script): la risposta scritta
+// nella pagina resta, sopra c'è l'avviso. La classe «errore-js» nasconde i pulsanti che non funzionerebbero
+// (.js-only) e rimostra il testo per chi non ha JavaScript (.static-fallback): css/style.css.
+export const AVVISO_ERRORE = 'Non riusciamo a caricare tutta la pagina. Le informazioni principali sono qui sotto. Riprova tra poco.';
+export function avvisoErrore(testo = AVVISO_ERRORE) {
+  document.documentElement.classList.add('errore-js');
+  const app = document.getElementById('app');
+  if (!app || app.querySelector('.avviso-errore')) return;
+  app.insertAdjacentHTML('afterbegin', `<div class="notice bad avviso-errore" role="alert"><p>${esc(testo)}</p></div>`);
+}
+
 // I pulsanti che avviano il percorso sono scritti nell'HTML con `disabled`: si sbloccano
 // solo quando il modulo ha caricato i dati, così un tocco arrivato prima non va perso.
 export function enableStart(root) {
@@ -314,6 +346,15 @@ export async function copyText(text, button) {
     const old = button.innerHTML;
     button.textContent = 'Copiato ✓';
     setTimeout(() => { button.innerHTML = old; }, 2000);
+    // Il nuovo testo del pulsante gli screen reader non lo leggono: lo si dice in una zona «status».
+    let st = document.getElementById('gs-status');
+    if (!st) {
+      st = Object.assign(document.createElement('p'), { id: 'gs-status', className: 'sr-only' });
+      st.setAttribute('role', 'status');
+      document.body.append(st);
+    }
+    st.textContent = '';
+    setTimeout(() => { st.textContent = 'Testo copiato. Ora puoi incollarlo nella email o nel messaggio.'; }, 50);
   }
 }
 
@@ -327,11 +368,40 @@ export function printText(text) {
     document.body.appendChild(area);
   }
   area.textContent = text;
-  document.body.classList.add('printing');
-  const done = () => { document.body.classList.remove('printing'); window.removeEventListener('afterprint', done); };
+  printWith('printing');
+}
+
+// Stampa con una classe sul body (solo la lettera, solo la guida). Sul telefono window.print() non aspetta:
+// la finestra di stampa arriva dopo. La classe si toglie a «afterprint» o quando cambia la schermata,
+// mai dopo un tempo fisso, se no si stampa tutta la pagina con i dati (audit del 22/10/2026, giro 8).
+const PRINT_CLASSES = ['printing', 'printing-guide'];
+function clearPrinting() {
+  PRINT_CLASSES.forEach((c) => document.body.classList.remove(c));
+}
+function printWith(cls) {
+  clearPrinting();
+  document.body.classList.add(cls);
+  const done = () => { clearPrinting(); window.removeEventListener('afterprint', done); };
   window.addEventListener('afterprint', done);
   window.print();
-  setTimeout(done, 1000);
+}
+
+// Schermate con una lettera (o con la tabella «Cosa scrivere nel modulo»): anche dal menu del browser
+// (Ctrl+P) si stampa solo quella, senza il modulo con i dati personali (css/style.css, «letter-screen»).
+// Si segnano la lettera (.print-target) e i suoi contenitori (.print-path) a ogni cambio della pagina.
+const LETTER = '#app .letter, #app #preview > table.fields';
+function markLetter() {
+  const app = document.getElementById('app');
+  if (!app) return;
+  const target = Array.prototype.find.call(document.querySelectorAll(LETTER), (el) => el.textContent.trim());
+  const old = document.querySelector('.print-target');
+  if (old === target && (!target || target.parentElement.classList.contains('print-path'))) return;
+  document.querySelectorAll('.print-path, .print-target').forEach((el) => el.classList.remove('print-path', 'print-target'));
+  app.classList.toggle('letter-screen', !!target);
+  document.body.classList.toggle('letter-screen', !!target);
+  if (!target) return;
+  target.classList.add('print-target');
+  for (let n = target.parentElement; n && n !== document.body; n = n.parentElement) n.classList.add('print-path');
 }
 
 // Legge i campi di un modulo in un oggetto (caselle di spunta → vero/falso).
@@ -381,8 +451,28 @@ export function officeBox(a, topic, title, intro = '') {
 
 // Indirizzo generale dell'ASP (URP o PEC del protocollo), per le richieste che NON sono
 // il percorso di tutela: alcune ASP hanno una casella dedicata solo alle liste d'attesa.
+// generalContactInfo dice anche che indirizzo è: 'urp' (email dell'URP), 'pec' (PEC generale
+// del protocollo, NON l'URP), 'email' (un'altra email dell'azienda) oppure '' (nessuno).
+export function generalContactInfo(a) {
+  const urp = a.emails.find((e) => /urp/i.test(e));
+  if (urp) return { addr: urp, kind: 'urp' };
+  if (a.pec) return { addr: a.pec, kind: 'pec' };
+  if (a.emails[0]) return { addr: a.emails[0], kind: 'email' };
+  return { addr: '', kind: '' };
+}
+
 export function generalContact(a) {
-  return a.emails.find((e) => /urp/i.test(e)) || a.pec || a.emails[0] || '';
+  return generalContactInfo(a).addr;
+}
+
+// «a chi» scrivere il reclamo, con il nome giusto dell'indirizzo: «all'URP dell'ASL di X (email)»,
+// oppure «alla PEC dell'ASL di X (pec)» quando l'URP non ha un'email e c'è solo la PEC generale.
+export function complaintTo(a) {
+  const { addr, kind } = generalContactInfo(a);
+  const ente = `${aslLabel()} di ${esc(a.province)}`;
+  if (kind === 'pec') return `alla PEC dell'${ente} (${mailLink(addr)})`;
+  if (kind === 'email') return `all'URP dell'${ente} (email dell'${aslLabel()}: ${mailLink(addr)})`;
+  return `all'URP dell'${ente}${addr ? ` (${mailLink(addr)})` : ''}`;
 }
 
 export function mailLink(addr) {
@@ -395,6 +485,7 @@ export function personFields(p = {}, legend = 'I dati della persona') {
   const f = (name, label, type = 'text', hint = '', extra = '') =>
     `<label for="f-${name}">${label}${hint ? `<span class="hint">${hint}</span>` : ''}</label>
      <input id="f-${name}" name="${name}" type="${type}" value="${esc(p[name] || '')}" ${extra}>`;
+  const role = p.delegateRole || 'delegato';
   return `
   <fieldset>
     <legend>${legend}</legend>
@@ -411,14 +502,53 @@ export function personFields(p = {}, legend = 'I dati della persona') {
   </fieldset>
   <fieldset>
     <legend>Scrivi per un'altra persona?</legend>
-    <label class="check"><input type="checkbox" name="isDelegate" ${p.isDelegate ? 'checked' : ''}> Sì, scrivo per un familiare (per esempio mamma o papà)</label>
+    <label class="check"><input type="checkbox" name="isDelegate" ${p.isDelegate ? 'checked' : ''}> Sì, scrivo per un familiare o per una persona che assisto</label>
     <div class="delegate-fields" ${p.isDelegate ? '' : 'hidden'}>
       ${f('delegateName', 'Il tuo nome e cognome')}
       ${f('delegateCf', 'Il tuo codice fiscale', 'text', '', 'autocapitalize="characters" maxlength="16"')}
-      <p class="muted">Serve una <strong>delega</strong>: un foglio firmato dalla persona, che dice che puoi fare la richiesta per lei.
+      <fieldset class="delegate-role">
+        <legend>Chi sei per questa persona?</legend>
+        <label class="check"><input type="radio" name="delegateRole" value="delegato" ${role === 'delegato' ? 'checked' : ''}> Un familiare o un amico, con la sua delega</label>
+        <label class="check"><input type="radio" name="delegateRole" value="genitore" ${role === 'genitore' ? 'checked' : ''}> Il genitore di un bambino o di un ragazzo (meno di 18 anni)</label>
+        <label class="check"><input type="radio" name="delegateRole" value="tutore" ${role === 'tutore' ? 'checked' : ''}> Il tutore o l'amministratore di sostegno, nominato dal giudice</label>
+      </fieldset>
+      <div class="role-tutore" ${role === 'tutore' ? '' : 'hidden'}>
+        <label for="f-guardianKind">Che cosa sei</label>
+        <select id="f-guardianKind" name="guardianKind">
+          ${[['amministratore', 'Amministratore di sostegno'], ['tutore', 'Tutore']]
+            .map(([v, l]) => `<option value="${v}" ${(p.guardianKind || 'amministratore') === v ? 'selected' : ''}>${l}</option>`).join('')}
+        </select>
+        ${f('decreeRef', 'Il decreto di nomina', 'text', 'Tribunale, numero e data. Se non li sai, lascia vuoto')}
+      </div>
+      <p class="muted role-note" data-role="delegato" ${role === 'delegato' ? '' : 'hidden'}>Serve una <strong>delega</strong>: un foglio firmato dalla persona, che dice che puoi fare la richiesta per lei.
       Allega anche la fotocopia dei documenti di tutti e due.</p>
+      <p class="muted role-note" data-role="genitore" ${role === 'genitore' ? '' : 'hidden'}>Per un figlio con meno di 18 anni <strong>non serve la delega</strong>: firmi tu, come genitore (articoli 316 e 320 del Codice civile). Allega il tuo documento.</p>
+      <p class="muted role-note" data-role="tutore" ${role === 'tutore' ? '' : 'hidden'}>Se la persona non può firmare, firma chi è stato nominato dal giudice: il <strong>tutore</strong> o l'<strong>amministratore di sostegno</strong>. Non serve la delega: allega la <strong>copia del decreto di nomina</strong> e il tuo documento.</p>
     </div>
   </fieldset>`;
+}
+
+// Che cosa allegare per chi scrive per un'altra persona (le righe «Prima di mandarla»).
+export function delegateNoteText(p = {}) {
+  const role = p.delegateRole || 'delegato';
+  if (role === 'genitore') return 'Allega: il tuo documento (firmi come genitore, non serve la delega)';
+  if (role === 'tutore') return 'Allega: la copia del decreto di nomina e il tuo documento';
+  return 'Allega: la delega firmata e il tuo documento';
+}
+
+// Dopo ogni modifica del modulo: mostra i campi giusti per chi scrive per un'altra persona.
+export function syncDelegate(form, p = {}) {
+  const role = p.delegateRole || 'delegato';
+  const box = form.querySelector('.delegate-fields');
+  if (box) box.hidden = !p.isDelegate;
+  form.querySelectorAll('.role-note').forEach((el) => { el.hidden = el.dataset.role !== role; });
+  const t = form.querySelector('.role-tutore');
+  if (t) t.hidden = role !== 'tutore';
+  document.querySelectorAll('.delegate-note').forEach((li) => {
+    li.hidden = !p.isDelegate;
+    const txt = li.querySelector('.delegate-note-text');
+    if (txt) txt.textContent = delegateNoteText(p);
+  });
 }
 
 // ---------- Icone e banda colorata ----------
@@ -446,7 +576,7 @@ function iconSvg([inner, tone]) {
 
 export function iconize(root) {
   if (root.nodeType === 3) root = root.parentElement;
-  if (!root || root.closest?.(SKIP)) return;
+  if (!root || (root.closest && root.closest(SKIP))) return;
   const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
     acceptNode: (n) => (hasEmoji.test(n.data) && !n.parentElement.closest(SKIP) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT),
   });
@@ -455,7 +585,9 @@ export function iconize(root) {
   for (const n of nodes) {
     const frag = document.createDocumentFragment();
     let last = 0;
-    for (const m of n.data.matchAll(emojiRe)) {
+    // Un ciclo con exec() e non matchAll(): matchAll non c'è su Safari 12 (tests/compat.test.mjs).
+    emojiRe.lastIndex = 0;
+    for (let m = emojiRe.exec(n.data); m; m = emojiRe.exec(n.data)) {
       frag.append(n.data.slice(last, m.index), iconSvg(iconOf(m[0])));
       last = m.index + m[0].length;
     }
@@ -471,7 +603,8 @@ function bandify() {
   const app = document.getElementById('app');
   const h1 = app && app.querySelector(':scope > h1');
   if (!h1) return;
-  const hero = h1.previousElementSibling?.classList.contains('hero') ? h1.previousElementSibling : null;
+  const prima = h1.previousElementSibling;
+  const hero = prima && prima.classList.contains('hero') ? prima : null;
   if (!hero && !app.hasAttribute('data-band')) return;
   let start = hero || h1;
   const top = start.previousElementSibling;
@@ -502,18 +635,34 @@ if (typeof document !== 'undefined') {
   document.addEventListener('click', (e) => {
     const b = e.target.closest('button[data-action="print-page"]');
     if (!b) return;
-    const only = b.dataset.print === 'guida';
-    if (only) document.body.classList.add('printing-guide');
-    const done = () => { document.body.classList.remove('printing-guide'); window.removeEventListener('afterprint', done); };
-    window.addEventListener('afterprint', done);
-    window.print();
-    setTimeout(done, 1000);
+    if (b.dataset.print === 'guida') printWith('printing-guide');
+    else { clearPrinting(); window.print(); }
   });
+  // «Stampa» sulla schermata del modulo ufficiale dell'ASP: la tabella «Cosa scrivere nel modulo» (markLetter).
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('button[data-action="print-letter"]')) return;
+    markLetter();
+    clearPrinting();
+    window.print();
+  });
+  // Un errore nello script della pagina prima che il modulo sia partito (c'è ancora un .js-only scritto
+  // nella pagina: «Un momento…» o il pulsante d'inizio bloccato): si rimostra il contenuto scritto con
+  // l'avviso, invece di lasciare un pulsante che non fa niente (audit del 22/10/2026, giro 7).
+  // Gli errori degli script di altri siti non contano.
+  const nonPartita = () => !!document.querySelector('#app .js-only');
+  const nostro = (file) => !file || file.indexOf(location.origin) === 0;
+  window.addEventListener('error', (e) => { if (nostro(e.filename) && nonPartita()) avvisoErrore(); });
+  window.addEventListener('unhandledrejection', () => { if (nonPartita()) avvisoErrore(); });
   iconize(document.body);
   bandify();
   document.documentElement.classList.add('pronto'); // ora la pagina si può vedere (css/style.css)
+  markLetter();
   new MutationObserver((changes) => {
     for (const c of changes) c.addedNodes.forEach((n) => iconize(n));
+    // Una schermata nuova (#app riscritto): la stampa di prima è finita.
+    if (changes.some((c) => c.target.id === 'app')) clearPrinting();
     bandify();
+    markLetter();
   }).observe(document.body, { childList: true, subtree: true });
+  window.addEventListener('popstate', clearPrinting);
 }

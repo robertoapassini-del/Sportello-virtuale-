@@ -4,8 +4,8 @@
 // Calcolo con regole fisse nazionali (codici E01-E04). Nessuna lettera.
 // Non chiediamo la malattia: le esenzioni per malattia le mostriamo solo come informazione.
 import { esenzioneReddito, formatEuro } from './engine.js';
-import { esc, loadJSON, loadRegioni, disclaimer, renderFooter, readForm, aslLabel } from './common.js';
-import { createFlow, choice, restartBtn, progress } from './flow.js';
+import { esc, loadJSON, loadRegioni, disclaimer, renderFooter, avvisoErrore, readForm, aslLabel } from './common.js';
+import { createFlow, choice, restartBtn, progress, showError } from './flow.js';
 
 const ROOT = '../';
 const app = document.getElementById('app');
@@ -25,7 +25,7 @@ const howToGet = () => `
     <li><strong>Se non c'è, vai allo sportello esenzioni dell'${aslLabel()}</strong> (nel distretto o al CUP) con tessera sanitaria e carta d'identità. Firmi un foglio in cui dichiari il reddito (autocertificazione). È gratis. <a href="../numeri-utili/">📍 Dov'è lo sportello nella tua provincia</a></li>
     <li><strong>Quando prenoti, di' che hai l'esenzione.</strong> Deve essere scritta sulla ricetta, altrimenti il ticket lo paghi.</li>
   </ol>
-  <div class="notice warn"><p>⚠️ L'esenzione vale fino al <strong>${esc(rules.valid_until)}</strong>, poi va controllata di nuovo (alcune Regioni la prorogano: chiedi all'${aslLabel()}). Se dichiari un reddito falso, devi restituire i soldi e paghi una multa.</p></div>`;
+  <div class="notice warn"><p>⚠️ L'esenzione vale fino al <strong>${esc(rules.valid_until)}</strong>, poi devi controllarla di nuovo (alcune Regioni la prorogano: chiedi all'${aslLabel()}). Se dichiari un reddito falso, devi restituire i soldi e paghi una multa.</p></div>`;
 
 const otherExemptions = () => `
   <details class="card">
@@ -66,7 +66,7 @@ const screens = {
       <form id="fam-form" novalidate>
         <label class="check"><input type="checkbox" name="spouse" ${state.spouse ? 'checked' : ''}> C'è un coniuge (marito o moglie) a carico</label>
         <label for="children">Quanti figli a carico?<span class="hint">Scrivi 0 se nessuno</span></label>
-        <input type="number" id="children" name="children" min="0" max="20" inputmode="numeric" value="${esc(state.children ?? 0)}">
+        <input type="number" id="children" name="children" min="0" max="20" inputmode="numeric" value="${esc(state.children == null ? 0 : state.children)}">
         <button type="submit" class="btn primary big">Avanti ▶️</button>
       </form>`,
     mount() {
@@ -86,7 +86,7 @@ const screens = {
       <p>Il reddito di tutti insieme, lordo. È sulla dichiarazione dei redditi (730, Redditi) o sulla CU della pensione.</p>
       <form id="inc-form" novalidate>
         <label for="income">Reddito familiare dell'anno scorso, in euro<span class="hint">Per esempio 15000. Senza punti né virgole</span></label>
-        <input type="number" id="income" name="income" min="0" step="1" inputmode="numeric" value="${esc(state.income ?? '')}">
+        <input type="number" id="income" name="income" min="0" step="1" inputmode="numeric" value="${esc(state.income == null ? '' : state.income)}" aria-describedby="inc-form-error">
         <p class="field-error" id="inc-form-error" role="alert" hidden></p>
         <button type="submit" class="btn primary big">✔️ Controlla</button>
       </form>
@@ -96,12 +96,7 @@ const screens = {
         e.preventDefault();
         const v = readForm(e.target);
         const n = Number(v.income);
-        if (v.income === '' || !Number.isFinite(n) || n < 0) {
-          const err = document.getElementById('inc-form-error');
-          err.textContent = 'Scrivi un numero, oppure premi «Non lo so».';
-          err.hidden = false;
-          return;
-        }
+        if (v.income === '' || !Number.isFinite(n) || n < 0) return showError('inc-form', 'Scrivi un numero, oppure premi «Non lo so».', { field: 'income' });
         state.income = n;
         flow.go('result');
       });
@@ -174,7 +169,7 @@ let flow;
     // L'indice delle regioni serve per il nome dell'azienda sanitaria (ASP, ASL, ATS…).
     [rules] = await Promise.all([loadJSON(`${ROOT}data/rules-esenzione.json`), loadRegioni(ROOT)]);
   } catch {
-    app.innerHTML = '<div class="notice bad"><p>Non riusciamo a caricare la pagina. Riprova tra poco.</p></div>';
+    avvisoErrore(); // la risposta scritta nella pagina resta, con l'avviso sopra
     return;
   }
   flow = createFlow({ app, screens, state, sources, first: 'intro' });
