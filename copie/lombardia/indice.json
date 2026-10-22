@@ -1,6 +1,6 @@
 {
  "regione": "lombardia",
- "aggiornato": "2026-10-22T01:45:48.107Z",
+ "aggiornato": "2026-10-22T05:46:13.242Z",
  "pagine": [
   {
    "asl": "bergamo",
@@ -583,12 +583,13 @@
    "asl": "lecco",
    "url": "https://www.ats-brianza.it/urp",
    "controllata": "2026-10-22",
+   "browser": true,
    "http": 200,
    "file": "lecco/a79d6eddb7d2.txt",
    "titolo": "Ufficio Relazioni con il Pubblico",
-   "sha": "5e2f8a9b0196dae99da39377539d4cbb29d7f2f5a113c88ec5fac23e9cf48a90",
-   "caratteri": 6419,
-   "cambiata": false
+   "sha": "c189a4c40bde4571db31a73bc42f08a63dc3c77f1f9c596d97ddd42d81aab888",
+   "caratteri": 6449,
+   "cambiata": true
   },
   {
    "asl": "lecco",
@@ -996,7 +997,7 @@
    "titolo": "ASST Melegnano Martesana",
    "sha": "7898c6c4235528e1196ade4036923fdaa321fa4f69c37f942f825223c40713e0",
    "caratteri": 8413,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "milano",
@@ -1068,12 +1069,13 @@
    "asl": "monza-brianza",
    "url": "https://www.ats-brianza.it/urp",
    "controllata": "2026-10-22",
+   "browser": true,
    "http": 200,
    "file": "monza-brianza/a79d6eddb7d2.txt",
    "titolo": "Ufficio Relazioni con il Pubblico",
-   "sha": "5e2f8a9b0196dae99da39377539d4cbb29d7f2f5a113c88ec5fac23e9cf48a90",
-   "caratteri": 6419,
-   "cambiata": false
+   "sha": "c189a4c40bde4571db31a73bc42f08a63dc3c77f1f9c596d97ddd42d81aab888",
+   "caratteri": 6449,
+   "cambiata": true
   },
   {
    "asl": "monza-brianza",
@@ -1339,7 +1341,7 @@
    "titolo": "URP - Varese - ASST Settelaghi - ASST Settelaghi",
    "sha": "179787374e91ab73de88b792e7de5f597c51eadd13f2717e72f09847f677c743",
    "caratteri": 3512,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "varese",
@@ -1350,7 +1352,7 @@
    "titolo": "PRENOTAZIONE visite e esami con SSN - ASST Settelaghi - ASST Settelaghi",
    "sha": "a5411addd1d6ef08638030a82e7bea2d2f6bd076f5cc3a318a4e9761caf39e2d",
    "caratteri": 12778,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "varese",

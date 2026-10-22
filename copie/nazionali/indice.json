@@ -1,6 +1,6 @@
 {
  "regione": "nazionali",
- "aggiornato": "2026-10-22T02:08:20.630Z",
+ "aggiornato": "2026-10-22T06:15:37.007Z",
  "pagine": [
   {
    "asl": "urgenze",
@@ -35,7 +35,7 @@
    "titolo": "Telefono Azzurro | Sito ufficiale",
    "sha": "44d4bf36af66cf3da003a6718528df9df71b10914aa7f4de976c1eb16b8e831b",
    "caratteri": 14405,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ascolto",
@@ -53,23 +53,13 @@
    "asl": "ascolto",
    "url": "https://www.iss.it/numeri-verdi",
    "controllata": "2026-10-22",
-   "http": 200,
-   "file": "ascolto/c5453074c7aa.txt",
-   "titolo": "Numeri Verdi - ISS",
-   "sha": "2d501180df2cb6ae1346e00349686e5c025648d4520ac94db1ae53954e2368aa",
-   "caratteri": 14269,
-   "cambiata": false
+   "http": 404
   },
   {
    "asl": "ascolto",
    "url": "https://www.iss.it/numeri-verdi/-/asset_publisher/LXvuDqwiaG9G/content/id/3858513",
    "controllata": "2026-10-22",
-   "http": 200,
-   "file": "ascolto/8f7c4b12a9cb.txt",
-   "titolo": "Telefono Verde contro il Fumo - ISS",
-   "sha": "e2a7726715cbba7a14fe58df3ee50f66de3576a93a1229f931a6d57f095c6721",
-   "caratteri": 8063,
-   "cambiata": false
+   "http": 404
   },
   {
    "asl": "ascolto",

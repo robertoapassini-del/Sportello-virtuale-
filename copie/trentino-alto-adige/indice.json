@@ -1,30 +1,41 @@
 {
  "regione": "trentino-alto-adige",
- "aggiornato": "2026-10-22T02:03:40.716Z",
+ "aggiornato": "2026-10-22T06:07:38.609Z",
  "pagine": [
   {
    "asl": "bolzano",
    "url": "https://www.asdaa.it/",
    "controllata": "2026-10-22",
+   "browser": true,
    "http": 200,
-   "finale": "https://www.asdaa.it/it",
+   "finale": "https://www.asdaa.it/it/home",
    "file": "bolzano/a77b7ff470b2.txt",
-   "titolo": "Südtiroler Sanitätsbetrieb",
-   "sha": "392d4be341b5601bf3ac0de4fb35ecc68611c7c9a2e451ea79d9bec90721e5ed",
-   "caratteri": 38,
-   "cambiata": false
+   "titolo": "Azienda Sanitaria dell'Alto Adige",
+   "sha": "223485cd0e858152886470616454a78b625fc3527184a55a069074362ebefc65",
+   "caratteri": 22796,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
    "url": "https://home.sabes.it/it/prenotazione-me.asp",
    "controllata": "2026-10-22",
-   "http": 503
+   "http": 200,
+   "file": "bolzano/3eb4ebd291fc.txt",
+   "titolo": "Prenotazione | Azienda Sanitaria dell'Alto Adige",
+   "sha": "05ff7201f7b12e094c1b11e4feebf3363f00d4ab73cdbf1be189792578d66fb8",
+   "caratteri": 9264,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/servizi.asp",
    "controllata": "2026-10-22",
-   "http": 503
+   "http": 200,
+   "file": "bolzano/436fa81472bf.txt",
+   "titolo": "Servizi | Azienda Sanitaria dell'Alto Adige",
+   "sha": "1391d906e7a71ff2c37d1866915a13f8a9365fe89fa9486b75ac1658dc9b7bd3",
+   "caratteri": 6993,
+   "cambiata": true
   },
   {
    "asl": "trento",
