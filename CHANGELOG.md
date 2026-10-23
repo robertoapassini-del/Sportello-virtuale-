@@ -2,6 +2,14 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 23/10/2026 — Emilia-Romagna, Marche, Toscana, Liguria, Umbria: terzo giro sulle copie
+- Fonti: le copie del server del 23/10/2026 (branch `copie-siti`). Ogni numero, email e PEC nuovo ha l'url della pagina copiata, `verified` 2026-10-23 e `proof` «pagina». Nessun dato dagli estratti del motore di ricerca: gli indirizzi trovati così sono solo in `pagine[]`.
+- Emilia-Romagna: provincia di Bologna divisa in due zone (`sub_areas`): Azienda USL di Bologna (PEC protocollo@pec.ausl.bologna.it, pagina «Contatti e Posta Elettronica Certificata») e Azienda USL di Imola (urp@ausl.imola.bo.it, pagina URP; i 10 comuni dal menu «Medici e Pediatri di Famiglia»). Scelta del medico per tutte le AUSL dal Fascicolo sanitario elettronico (pagina della Regione); AUSL di Imola e di Parma dalle loro pagine. «Prelista» (percorso di tutela) per AUSL della Romagna, Parma e Reggio Emilia; mancano Bologna, Imola, Ferrara, Modena e Piacenza.
+- Marche: scelta del medico per le 5 AST dalle pagine dell'anagrafe assistiti; PEC dell'AST Fermo (ast.fermo@emarche.it, pagina «Note legali»); sportelli anagrafe di Ascoli Piceno, San Benedetto del Tronto e Porto Sant'Elpidio.
+- Umbria: numeri dello screening del seno dell'USL Umbria 1 (7 centri di senologia, pagina «Screening della mammella»).
+- `data/regioni/index.json`: accesi cartella clinica, medico di famiglia, assistenza a casa e cure palliative in Emilia-Romagna; medico di famiglia nelle Marche. Liste d'attesa (Emilia-Romagna, Marche) e prevenzione (Emilia-Romagna, Marche, Toscana, Liguria) restano spente: mancano prove per qualche azienda.
+- `pagine[]`: nuove pagine da copiare (solo domini ufficiali): screening di tutte le AUSL emiliano-romagnole, delle AST, dell'ASL Toscana Sud Est e delle Aree liguri; presa in carico e preliste di Bologna, Ferrara, Modena e Piacenza; tempi di attesa dell'ARS Marche e delle AST di Ancona e Ascoli Piceno. Tolta la pagina cartelle dell'AUSL di Modena (404).
+
 ## 23/10/2026 — Valle d'Aosta, Trentino-Alto Adige, Friuli-Venezia Giulia, Veneto: terzo giro sulle copie (percorso di tutela, screening, medico)
 - Fonti: le copie del 23/10/2026 del branch `copie-siti`. Nelle quattro regioni non c'è ancora nessun PDF copiato. Ogni numero nuovo ha `url` = la pagina copiata, `verified` 2026-10-23, `proof` «pagina».
 - Moduli accesi in `data/regioni/index.json`: Friuli-Venezia Giulia medico di famiglia (ASUFC: `scelta_medico` dalle pagine «Scelta o cambio del medico» e «Anagrafe sanitaria», con 14 sportelli di anagrafe; le altre tre aziende lo avevano già); Trentino-Alto Adige prevenzione (Asuit: numeri verdi dello screening 800 243625 e 800 100616 dalle pagine sul tumore del colon-retto e del seno; Bolzano ha i numeri del CUPP Prevenzione).

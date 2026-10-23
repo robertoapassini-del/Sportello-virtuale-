@@ -1,7 +1,7 @@
 {
  "region": "Marche",
  "model": "AST (Aziende Sanitarie Territoriali)",
- "_note": "Numeri delle 5 AST delle Marche, una per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 22/10/2026 (docs/regola-numeri.md, proof «pagina»). Servono a Numeri utili, cartella clinica, assistenza a casa e cure palliative; le sedi INPS (inps.json) a Invalidità. Si prenota al CUP regionale (800 098798 da fisso). Nelle Marche il 116117 non è ancora attivo: per la guardia medica solo i numeri trovati nelle copie. «pagine»: indirizzi ufficiali in più che il server deve copiare (tools/copie.mjs).",
+ "_note": "Numeri delle 5 AST delle Marche, una per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 22/10/2026 (docs/regola-numeri.md, proof «pagina»). Servono a Numeri utili, cartella clinica, assistenza a casa, cure palliative e medico di famiglia (dal 23/10/2026); le sedi INPS (inps.json) a Invalidità. Si prenota al CUP regionale (800 098798 da fisso). Nelle Marche il 116117 non è ancora attivo: per la guardia medica solo i numeri trovati nelle copie. «pagine»: indirizzi ufficiali in più che il server deve copiare (tools/copie.mjs).",
  "asl": [
   {
    "id": "pesaro-urbino",
@@ -130,14 +130,19 @@
     {
      "label": "AST Pesaro Urbino – PUA di Pesaro",
      "url": "https://www.astpu.marche.it/it/strutture/uffici-amministrativi/punto-unico-di-accesso-pua-pesaro"
+    },
+    {
+     "label": "AST Pesaro Urbino – Anagrafe assistiti e scelta del medico",
+     "url": "https://www.astpu.marche.it/it/servizi-e-prestazioni/sportelli-front-office/anagrafe-sanitaria"
     }
    ],
-   "last_verified": "2026-10-22",
+   "last_verified": "2026-10-23",
    "todo": [
     "Guardia medica: la pagina «guardia medica – continuità assistenziale» è copiata senza numeri. Nelle Marche il 116117 non è ancora attivo (c'è solo il progetto della centrale regionale).",
     "PUA: copiato solo quello di Pesaro; mancano Fano e Urbino.",
     "CUP: le copie dell'AST Pesaro Urbino danno solo il numero verde regionale 800 098 798; i numeri da cellulare (0721 1779301, 071 9998010) sono nelle pagine delle altre AST.",
-    "Moduli (22/10/2026): accesi cartella clinica, assistenza a casa e cure palliative (bastano email URP e PEC, nelle copie, e nome_lettera). Spenti: medico di famiglia (nessuna pagina copiata sulla scelta del medico), ausili (la PEC di Fermo non è scritta come PEC in nessuna copia), liste d'attesa (nessuna pagina copiata sul percorso di tutela). Nuove pagine in pagine[] (trovate col motore di ricerca, nessun dato preso da lì): scelta del medico, cartelle cliniche."
+    "Moduli (23/10/2026): accesi cartella clinica, assistenza a casa, cure palliative e medico di famiglia (scelta del medico dalla copia della pagina dell'anagrafe assistiti). Spenti: liste d'attesa (nessuna copia dice cosa fare se il CUP non trova posto nei tempi: pagine nuove in pagine[]) e prevenzione (nessun numero dello screening nelle copie: pagine nuove in pagine[]).",
+    "Screening e liste d'attesa (23/10/2026): nessun numero dello screening e nessuna pagina sul percorso di tutela nelle copie. Nuove pagine in pagine[] (trovate col motore di ricerca, solo domini ufficiali, nessun dato preso da lì): pagine screening delle AST e «Tempi di attesa prestazioni specialistiche» dell'ARS Marche (DGR 380/2019, percorsi di tutela). Le pagine di regione.marche.it nelle copie sono la pagina del captcha (Radware): forse anche questa."
    ],
    "pagine": [
     {
@@ -199,8 +204,21 @@
     {
      "tipo": "cartelle",
      "url": "https://www.astpu.marche.it/it/come-fare-per/richiedere-la-copia-della-cartella-clinica"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.astpu.marche.it/it/servizi-e-prestazioni/prevenzione-e-vaccini/screening-per-la-prevenzione-dei-tumori"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.regione.marche.it/ars/Settori/Territorio-e-Integrazione-sociosanitaria/Tempi-di-attesa-prestazioni-specialistiche"
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "Per scegliere, cambiare o revocare il medico di famiglia o il pediatra vai a un ufficio di Anagrafe sanitaria dell'AST Pesaro Urbino. Ci sono sedi a Pesaro, Fano, Urbino, Cagli, Fossombrone, Pergola e in altri comuni: l'elenco è sulla pagina dell'AST.",
+    "url": "https://www.astpu.marche.it/it/servizi-e-prestazioni/sportelli-front-office/anagrafe-sanitaria",
+    "url_label": "Sito dell'AST Pesaro Urbino"
+   }
   },
   {
    "id": "ancona",
@@ -388,15 +406,20 @@
     {
      "label": "AST Ancona – Continuità assistenziale",
      "url": "https://www.astancona.marche.it/it/servizi-e-prestazioni/servizi-territoriali/servizio-di-continuita-assistenziale"
+    },
+    {
+     "label": "AST Ancona – Anagrafe assistiti e scelta del medico",
+     "url": "https://www.astancona.marche.it/it/come-fare-per/scegliere-cambiare-un-medico-di-medicina-generale-o-pediatra-di-libera-scelta"
     }
    ],
-   "last_verified": "2026-10-22",
+   "last_verified": "2026-10-23",
    "todo": [
     "Guardia medica: la pagina della continuità assistenziale dà gli orari (notti 20–8, prefestivi 12–20, sabato e festivi 8–20) ma nessun numero. Nelle Marche il 116117 non è ancora attivo.",
     "PUA: la pagina generale non dà numeri; la notizia sul PUA di Jesi dà solo gli orari. Mancano le cure domiciliari di Jesi, Senigallia e Fabriano.",
     "Azienda Ospedaliero Universitaria delle Marche (Torrette di Ancona): non ancora tra le pagine copiate.",
     "Nella pagina delle cure domiciliari l'email dell'area Nord è scritta «adinord.ast.an@sanita.amrche.it» (refuso del sito): non messa.",
-    "Moduli (22/10/2026): accesi cartella clinica, assistenza a casa e cure palliative (bastano email URP e PEC, nelle copie, e nome_lettera). Spenti: medico di famiglia (nessuna pagina copiata sulla scelta del medico), ausili (la PEC di Fermo non è scritta come PEC in nessuna copia), liste d'attesa (nessuna pagina copiata sul percorso di tutela). Nuove pagine in pagine[] (trovate col motore di ricerca, nessun dato preso da lì): scelta del medico, cartelle cliniche."
+    "Moduli (23/10/2026): accesi cartella clinica, assistenza a casa, cure palliative e medico di famiglia (scelta del medico dalla copia della pagina dell'anagrafe assistiti). Spenti: liste d'attesa (nessuna copia dice cosa fare se il CUP non trova posto nei tempi: pagine nuove in pagine[]) e prevenzione (nessun numero dello screening nelle copie: pagine nuove in pagine[]).",
+    "Screening e liste d'attesa (23/10/2026): nessun numero dello screening e nessuna pagina sul percorso di tutela nelle copie. Nuove pagine in pagine[] (trovate col motore di ricerca, solo domini ufficiali, nessun dato preso da lì): pagine screening delle AST e «Tempi di attesa prestazioni specialistiche» dell'ARS Marche (DGR 380/2019, percorsi di tutela). Le pagine di regione.marche.it nelle copie sono la pagina del captcha (Radware): forse anche questa."
    ],
    "pagine": [
     {
@@ -478,8 +501,25 @@
     {
      "tipo": "medico",
      "url": "https://www.astancona.marche.it/it/servizi-e-prestazioni/sportelli-front-office/sportello-anagrafe-assistiti"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.astancona.marche.it/it/servizi-e-prestazioni/screening/screening-oncologici-diagnosi-precoce-del-tumore-della-mammella"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.astancona.marche.it/it/amministrazione-trasparente/servizi-erogati/liste-di-attesa/liste-di-attesa-servizi-ambulatoriali"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.regione.marche.it/ars/Settori/Territorio-e-Integrazione-sociosanitaria/Tempi-di-attesa-prestazioni-specialistiche"
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "Se abiti nel territorio dell'AST Ancona puoi scegliere o cambiare il medico di famiglia, o il pediatra per i tuoi figli, con il Fascicolo sanitario elettronico. Oppure vai allo Sportello Anagrafe assistiti del tuo distretto, con un documento d'identità valido.",
+    "url": "https://www.astancona.marche.it/it/come-fare-per/scegliere-cambiare-un-medico-di-medicina-generale-o-pediatra-di-libera-scelta",
+    "url_label": "Sito dell'AST Ancona"
+   }
   },
   {
    "id": "macerata",
@@ -633,14 +673,19 @@
     {
      "label": "AST Macerata – SMS falsi a nome del CUP Marche",
      "url": "https://www.astmc.marche.it/it/ast-comunica/notizie/attenzione-sms-fraudolenti-a-nome-del-cup-marche"
+    },
+    {
+     "label": "AST Macerata – Anagrafe assistiti e scelta del medico",
+     "url": "https://www.astmc.marche.it/it/servizi-e-prestazioni/sportelli-front-office/sedi-anagrafe-prenotazioni-cassa"
     }
    ],
-   "last_verified": "2026-10-22",
+   "last_verified": "2026-10-23",
    "todo": [
     "CUP: le copie dell'AST Macerata danno il numero verde e lo 0721 1779301 in una notizia sugli SMS falsi; il terzo numero regionale (071 9998010) è nelle pagine delle altre AST.",
     "Guardia medica: nelle copie nessun numero (una notizia dice che quella di Corridonia è nella Casa della Comunità di viale Italia). Nelle Marche il 116117 non è ancora attivo.",
     "PUA e ADI: copiati solo Tolentino e Piediripa (pagina del distretto di Macerata); mancano Civitanova Marche e Camerino.",
-    "Moduli (22/10/2026): accesi cartella clinica, assistenza a casa e cure palliative (bastano email URP e PEC, nelle copie, e nome_lettera). Spenti: medico di famiglia (nessuna pagina copiata sulla scelta del medico), ausili (la PEC di Fermo non è scritta come PEC in nessuna copia), liste d'attesa (nessuna pagina copiata sul percorso di tutela). Nuove pagine in pagine[] (trovate col motore di ricerca, nessun dato preso da lì): scelta del medico, cartelle cliniche."
+    "Moduli (23/10/2026): accesi cartella clinica, assistenza a casa, cure palliative e medico di famiglia (scelta del medico dalla copia della pagina dell'anagrafe assistiti). Spenti: liste d'attesa (nessuna copia dice cosa fare se il CUP non trova posto nei tempi: pagine nuove in pagine[]) e prevenzione (nessun numero dello screening nelle copie: pagine nuove in pagine[]).",
+    "Screening e liste d'attesa (23/10/2026): nessun numero dello screening e nessuna pagina sul percorso di tutela nelle copie. Nuove pagine in pagine[] (trovate col motore di ricerca, solo domini ufficiali, nessun dato preso da lì): pagine screening delle AST e «Tempi di attesa prestazioni specialistiche» dell'ARS Marche (DGR 380/2019, percorsi di tutela). Le pagine di regione.marche.it nelle copie sono la pagina del captcha (Radware): forse anche questa. Per l'AST Macerata non ho trovato una pagina dello screening sul sito ufficiale: da cercare."
    ],
    "pagine": [
     {
@@ -694,8 +739,17 @@
     {
      "tipo": "cartelle",
      "url": "https://www.astmc.marche.it/it/come-fare-per/richiedere-cartelle-cliniche"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.regione.marche.it/ars/Settori/Territorio-e-Integrazione-sociosanitaria/Tempi-di-attesa-prestazioni-specialistiche"
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "Per scegliere o revocare il medico di famiglia o il pediatra vai a una sede Anagrafe/Prenotazioni/Cassa dell'AST Macerata. L'elenco delle sedi è sulla pagina dell'AST.",
+    "url": "https://www.astmc.marche.it/it/servizi-e-prestazioni/sportelli-front-office/sedi-anagrafe-prenotazioni-cassa",
+    "url_label": "Sito dell'AST Macerata"
+   }
   },
   {
    "id": "fermo",
@@ -850,6 +904,14 @@
      "url": "https://www.astfm.marche.it",
      "verified": "2026-10-22",
      "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Anagrafe assistiti dell'AST Fermo – Porto Sant'Elpidio: scelta e revoca del medico",
+     "number": "0734 6257099",
+     "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/sportelli-front-office/anagrafe-assistiti",
+     "verified": "2026-10-23",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -872,13 +934,22 @@
     {
      "label": "AST Fermo – Guardia medica e guardia medica turistica",
      "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/visite-e-prestazioni-specialistiche/guardia-medica-turistica"
+    },
+    {
+     "label": "AST Fermo – Anagrafe assistiti e scelta del medico",
+     "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/sportelli-front-office/anagrafe-assistiti"
+    },
+    {
+     "label": "AST Fermo – Note legali (PEC)",
+     "url": "https://www.astfm.marche.it/it/note-legali"
     }
    ],
-   "last_verified": "2026-10-22",
+   "last_verified": "2026-10-23",
    "todo": [
-    "PEC: il piè di pagina del sito dà ast.fermo@emarche.it (lo stesso sistema PEC delle altre AST), ma nessuna copia la chiama «PEC»: non messa in «pec» finché una pagina non lo scrive.",
     "Guardia medica: la pagina dà per le postazioni il numero del centralino 0734 625111; nelle Marche il 116117 non è ancora attivo.",
-    "Moduli (22/10/2026): accesi cartella clinica, assistenza a casa e cure palliative (bastano email URP e PEC, nelle copie, e nome_lettera). Spenti: medico di famiglia (nessuna pagina copiata sulla scelta del medico), ausili (la PEC di Fermo non è scritta come PEC in nessuna copia), liste d'attesa (nessuna pagina copiata sul percorso di tutela). Nuove pagine in pagine[] (trovate col motore di ricerca, nessun dato preso da lì): scelta del medico, cartelle cliniche, note legali con la PEC."
+    "Moduli (23/10/2026): accesi cartella clinica, assistenza a casa, cure palliative e medico di famiglia (scelta del medico dalla copia della pagina dell'anagrafe assistiti). Spenti: liste d'attesa (nessuna copia dice cosa fare se il CUP non trova posto nei tempi: pagine nuove in pagine[]) e prevenzione (nessun numero dello screening nelle copie: pagine nuove in pagine[]).",
+    "PEC (copia del 23/10/2026 della pagina «Note legali»: «pec: ast.fermo@emarche.it»): messa in «pec».",
+    "Screening e liste d'attesa (23/10/2026): nessun numero dello screening e nessuna pagina sul percorso di tutela nelle copie. Nuove pagine in pagine[] (trovate col motore di ricerca, solo domini ufficiali, nessun dato preso da lì): pagine screening delle AST e «Tempi di attesa prestazioni specialistiche» dell'ARS Marche (DGR 380/2019, percorsi di tutela). Le pagine di regione.marche.it nelle copie sono la pagina del captcha (Radware): forse anche questa."
    ],
    "pagine": [
     {
@@ -940,8 +1011,22 @@
     {
      "tipo": "medico",
      "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/sportelli-front-office/anagrafe-assistiti"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.astfm.marche.it/it/organizzazione/unita-operativa-semplice-dipartimentale/screening-oncologici"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.regione.marche.it/ars/Settori/Territorio-e-Integrazione-sociosanitaria/Tempi-di-attesa-prestazioni-specialistiche"
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "Per scegliere, cambiare o revocare il medico di famiglia o il pediatra vai all'Anagrafe assistiti dell'AST Fermo (Fermo, Porto Sant'Elpidio, Petritoli, Amandola), con il documento d'identità e la tessera sanitaria. Se lo fai per un'altra persona serve la delega: i moduli sono sulla pagina dell'AST. Puoi scrivere anche a anagrafe.ast.fm@sanita.marche.it.",
+    "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/sportelli-front-office/anagrafe-assistiti",
+    "url_label": "Sito dell'AST Fermo"
+   },
+   "pec": "ast.fermo@emarche.it"
   },
   {
    "id": "ascoli-piceno",
@@ -1082,6 +1167,26 @@
      "url": "https://www.astap.marche.it/it",
      "verified": "2026-10-22",
      "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Ufficio Anagrafe assistiti dell'AST Ascoli Piceno – sede di Ascoli Piceno: scelta e revoca del medico",
+     "number": "0736 358476",
+     "hours": "Lunedì–venerdì 8:30–12:30; martedì e giovedì 15–16:30",
+     "address": "Via degli Iris, Ascoli Piceno (ingresso dell'ospedale)",
+     "url": "https://www.astap.marche.it/it/servizi-e-prestazioni/sportelli-front-office/anagrafe-assistiti",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Ufficio Anagrafe assistiti dell'AST Ascoli Piceno – sede di San Benedetto del Tronto: scelta e revoca del medico",
+     "number": "0735 793612",
+     "hours": "Lunedì–venerdì 8:30–12; martedì e giovedì 14:30–16:30",
+     "address": "Via Romagna 7, San Benedetto del Tronto",
+     "url": "https://www.astap.marche.it/it/servizi-e-prestazioni/sportelli-front-office/anagrafe-assistiti",
+     "verified": "2026-10-23",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -1104,13 +1209,18 @@
     {
      "label": "AST Ascoli Piceno – ADI San Benedetto del Tronto",
      "url": "https://www.astap.marche.it/it/servizi-e-prestazioni/servizi-domiciliari/adi-assistenza-domiciliare-integrata-sbt"
+    },
+    {
+     "label": "AST Ascoli Piceno – Anagrafe assistiti e scelta del medico",
+     "url": "https://www.astap.marche.it/it/servizi-e-prestazioni/sportelli-front-office/anagrafe-assistiti"
     }
    ],
-   "last_verified": "2026-10-22",
+   "last_verified": "2026-10-23",
    "todo": [
     "Guardia medica: nessuna pagina copiata con i numeri (la pagina «UOC cure primarie» è quasi vuota). Nelle Marche il 116117 non è ancora attivo.",
     "La pagina CUP dell'AST scrive anche «0721.17793011» (una cifra in più): usato 0721 1779301, come nelle altre pagine.",
-    "Moduli (22/10/2026): accesi cartella clinica, assistenza a casa e cure palliative (bastano email URP e PEC, nelle copie, e nome_lettera). Spenti: medico di famiglia (nessuna pagina copiata sulla scelta del medico), ausili (la PEC di Fermo non è scritta come PEC in nessuna copia), liste d'attesa (nessuna pagina copiata sul percorso di tutela). Nuove pagine in pagine[] (trovate col motore di ricerca, nessun dato preso da lì): scelta del medico, cartelle cliniche."
+    "Moduli (23/10/2026): accesi cartella clinica, assistenza a casa, cure palliative e medico di famiglia (scelta del medico dalla copia della pagina dell'anagrafe assistiti). Spenti: liste d'attesa (nessuna copia dice cosa fare se il CUP non trova posto nei tempi: pagine nuove in pagine[]) e prevenzione (nessun numero dello screening nelle copie: pagine nuove in pagine[]).",
+    "Screening e liste d'attesa (23/10/2026): nessun numero dello screening e nessuna pagina sul percorso di tutela nelle copie. Nuove pagine in pagine[] (trovate col motore di ricerca, solo domini ufficiali, nessun dato preso da lì): pagine screening delle AST e «Tempi di attesa prestazioni specialistiche» dell'ARS Marche (DGR 380/2019, percorsi di tutela). Le pagine di regione.marche.it nelle copie sono la pagina del captcha (Radware): forse anche questa."
    ],
    "pagine": [
     {
@@ -1164,8 +1274,25 @@
     {
      "tipo": "cartelle",
      "url": "https://www.astap.marche.it/it/servizi-e-prestazioni/sportelli-front-office/ufficio-cartelle-cliniche"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.astap.marche.it/it/organizzazione/unita-operativa-semplice-dipartimentale/uosd-screening"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.astap.marche.it/it/amministrazione-trasparente/servizi-erogati/liste-di-attesa"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.regione.marche.it/ars/Settori/Territorio-e-Integrazione-sociosanitaria/Tempi-di-attesa-prestazioni-specialistiche"
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "Per scegliere o revocare il medico di famiglia o il pediatra vai all'Ufficio Anagrafe assistiti, con la tessera sanitaria: ad Ascoli Piceno in via degli Iris (ingresso dell'ospedale) o a San Benedetto del Tronto in via Romagna 7. Puoi mandare la richiesta anche per email: anagrafica.ap@sanita.marche.it (Ascoli) o anagrafica.sbt2@sanita.marche.it (San Benedetto). Se lo fai per un'altra persona, di cui non sei il tutore, serve la delega scritta.",
+    "url": "https://www.astap.marche.it/it/servizi-e-prestazioni/sportelli-front-office/anagrafe-assistiti",
+    "url_label": "Sito dell'AST Ascoli Piceno"
+   }
   }
  ]
 }

@@ -361,7 +361,8 @@
     "Gli ospedali di Genova che non sono dell'ATS (San Martino, Galliera, Gaslini, Evangelico) hanno uffici cartelle loro: pagine ancora da cercare.",
     "Percorso di tutela (copie del 22/10/2026): Area 3 numero verde 800 185055 (lun–ven 9–15, ricette B e D; la pagina dell'Area 3 dice che i contenuti valgono fino al 31/12/2025 e rimanda ad ATS, che a sua volta rimanda alle pagine delle Aree); Area 4 numero verde 800 185088 e cup@asl4.liguria.it. La lettera va alla PEC di ATS Liguria.",
     "Cartelle cliniche dell'Area 3 (Villa Scassi, Micone, Gallino, La Colletta) e dell'Area 4 (Lavagna, Rapallo, Sestri Levante) dalle copie; mancano gli ospedali non ATS (San Martino, Galliera, Gaslini, Evangelico).",
-    "Protesica e cure palliative dell'Area 3: le pagine in pagine[] danno errore (500, dominio senza www): da sostituire con pagine nuove del sito dell'Area 3."
+    "Protesica e cure palliative dell'Area 3: le pagine in pagine[] danno errore (500, dominio senza www): da sostituire con pagine nuove del sito dell'Area 3.",
+    "Screening (23/10/2026): nessun numero dello screening nelle copie delle Aree; la prevenzione resta spenta in Liguria. Nuove pagine in pagine[] (motore di ricerca, solo domini ufficiali delle Aree)."
    ],
    "emails": [],
    "pagine": [
@@ -412,6 +413,18 @@
     {
      "tipo": "inps-riforma",
      "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.asl3.liguria.it/valutazione-organizzazione-screening"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.asl3.liguria.it/screening-mammario.html"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.asl4.liguria.it/territorio/prevenzione/igiene-sanita-pubblica/screening/"
     }
    ],
    "scelta_medico": {
@@ -625,7 +638,8 @@
     "Area 1: nessuna pagina PEC (errore 500); manca una pagina con il numero dell'anagrafe sanitaria/scelta del medico.",
     "Percorso di tutela dell'Area 1 letto sulla pagina (22/10/2026): numero verde 800 18 60 44, poi ti richiamano. La pagina non dice un indirizzo scritto: la lettera va alla PEC generale di ATS Liguria (scelta del sito, come a Catania).",
     "Cartelle cliniche: Imperia 0183 537264 (copia del 22/10/2026). Il numero di Sanremo sulla pagina è scritto «0184 53633» (sembra incompleto): non messo.",
-    "Cure palliative dell'Area 1: pagina ufficiale non trovata, da cercare."
+    "Cure palliative dell'Area 1: pagina ufficiale non trovata, da cercare.",
+    "Screening (23/10/2026): nessun numero dello screening nelle copie delle Aree; la prevenzione resta spenta in Liguria. Nuove pagine in pagine[] (motore di ricerca, solo domini ufficiali delle Aree)."
    ],
    "emails": [],
    "pagine": [
@@ -648,6 +662,10 @@
     {
      "tipo": "regione",
      "url": "https://www.regione.liguria.it/homepage-salute/accesso-rapido/salutesimplex-app-portale.html"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.asl1.liguria.it/prevenzione-e-screening/screening/screening-mammografico.html"
     }
    ],
    "scelta_medico": {
@@ -851,7 +869,8 @@
    "todo": [
     "Scelta del medico: letta nella copia del 21/10/2026 della pagina «Orari CUP e anagrafe Brugnato» (poliss.regione.liguria.it con SPID o CNS, farmacie, email anagrafe.lev@asl5.liguria.it solo per il distretto 17, sportelli PUA Anagrafe). La pagina è un avviso: ricontrollare quando il server la copia di nuovo.",
     "Percorso di tutela (copia del 22/10/2026 della pagina «Recupero prestazioni»): numero verde 800 185466, lun–ven 8:30–12:30, email recupero.prestazioni@asl5.liguria.it (la lettera va lì). La stessa pagina dà ancora la vecchia PEC protocollo.generale@pec.asl5.liguria.it: non usata, la PEC è quella di ATS Liguria.",
-    "Protesica dell'Area 5: la pagina dà solo email (protesica.sp@ e protesicasz@asl5.liguria.it), nessun telefono."
+    "Protesica dell'Area 5: la pagina dà solo email (protesica.sp@ e protesicasz@asl5.liguria.it), nessun telefono.",
+    "Screening (23/10/2026): nessun numero dello screening nelle copie delle Aree; la prevenzione resta spenta in Liguria. Nuove pagine in pagine[] (motore di ricerca, solo domini ufficiali delle Aree)."
    ],
    "pagine": [
     {
@@ -885,6 +904,14 @@
     {
      "tipo": "regione",
      "url": "https://www.regione.liguria.it/homepage-salute/accesso-rapido/salutesimplex-app-portale.html"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.asl5.liguria.it/PerilCittadino/PREVENZIONEESCREENING.aspx"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.asl5.liguria.it/PerilCittadino/PREVENZIONEESCREENING/ScreeningPapTest.aspx"
     }
    ],
    "scelta_medico": {
@@ -1084,7 +1111,8 @@
    "last_verified": "2026-10-22",
    "todo": [
     "Percorso di tutela (copia del 22/10/2026 della pagina «Liste di attesa» dell'Area 2): numero verde 800 183422, lun–ven 9–13, per ricette B, D e P non comprese nella lista di tutela automatica.",
-    "Cartella clinica dell'Area 2: nessuna pagina copiata; protesica: la pagina rimanda alle pagine dei distretti (Albenganese, Finalese, Bormide, Savonese) da aggiungere in pagine[]. Manca il numero dell'anagrafe sanitaria."
+    "Cartella clinica dell'Area 2: nessuna pagina copiata; protesica: la pagina rimanda alle pagine dei distretti (Albenganese, Finalese, Bormide, Savonese) da aggiungere in pagine[]. Manca il numero dell'anagrafe sanitaria.",
+    "Screening (23/10/2026): nessun numero dello screening nelle copie delle Aree; la prevenzione resta spenta in Liguria. Nuove pagine in pagine[] (motore di ricerca, solo domini ufficiali delle Aree)."
    ],
    "emails": [],
    "pagine": [
@@ -1115,6 +1143,10 @@
     {
      "tipo": "regione",
      "url": "https://www.regione.liguria.it/homepage-salute/accesso-rapido/salutesimplex-app-portale.html"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.asl2.liguria.it/prevenzione-e-screening/informativa-screening/screening-oncologici.html"
     }
    ],
    "scelta_medico": {
