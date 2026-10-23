@@ -1,6 +1,6 @@
 {
  "regione": "trentino-alto-adige",
- "aggiornato": "2026-10-23T08:48:59.052Z",
+ "aggiornato": "2026-10-23T11:08:00.354Z",
  "pagine": [
   {
    "asl": "bolzano",
@@ -224,14 +224,12 @@
    "asl": "bolzano",
    "url": "https://www.asdaa.it/it/comprensori-sanitari/merano/3181.asp",
    "controllata": "2026-10-23",
-   "browser": true,
    "http": 200,
-   "finale": "https://home.asdaa.it/it/comprensori-sanitari/merano/3181.asp",
    "file": "bolzano/f2819aebdf8b.txt",
-   "titolo": "Servizio infermieristico | Azienda Sanitaria dell'Alto Adige",
-   "sha": "63e2879d3d25cb6dbc1c59c0b1221e0fa551588ba75db555e10884ce450c7123",
-   "caratteri": 8725,
-   "cambiata": false
+   "titolo": "Südtiroler Sanitätsbetrieb",
+   "sha": "392d4be341b5601bf3ac0de4fb35ecc68611c7c9a2e451ea79d9bec90721e5ed",
+   "caratteri": 38,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
@@ -242,7 +240,7 @@
    "titolo": "",
    "sha": "0a587d83106be7169b8da81032276c36967dfd346b34ac5bcdcf9f23ceb9d87c",
    "caratteri": 297,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -313,14 +311,8 @@
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/servizi-informazione.asp?bnsv_svid=1032224",
    "controllata": "2026-10-23",
-   "browser": true,
-   "http": 200,
-   "finale": "https://www.asdaa.it/it/servizi",
-   "file": "bolzano/bbc0f1d38083.txt",
-   "titolo": "I servizi in myCIVIS - Azienda Sanitaria dell'Alto Adige",
-   "sha": "23d5e5620808fdca87cdce9e33ca5eb0e000b1db5b75e9653a56ef9f51d87256",
-   "caratteri": 22427,
-   "cambiata": true
+   "http": 0,
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "bolzano",
@@ -331,9 +323,9 @@
    "finale": "https://www.asdaa.it/it/servizi",
    "file": "bolzano/1a6f833fe6c4.txt",
    "titolo": "I servizi in myCIVIS - Azienda Sanitaria dell'Alto Adige",
-   "sha": "48d626b2f32f9e512284d32ab9c43505ba754eae3041fc43c881aabace6871e5",
-   "caratteri": 22376,
-   "cambiata": false
+   "sha": "23d5e5620808fdca87cdce9e33ca5eb0e000b1db5b75e9653a56ef9f51d87256",
+   "caratteri": 22427,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
@@ -379,7 +371,7 @@
    "titolo": "",
    "sha": "0a587d83106be7169b8da81032276c36967dfd346b34ac5bcdcf9f23ceb9d87c",
    "caratteri": 297,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -484,7 +476,7 @@
    "titolo": "Direzione generale | Azienda Sanitaria dell’Alto Adige",
    "sha": "6ccb8319ea5a7ed2ea42fe363ffb19a3b016471bdefd4e7c345d0f11437ab076",
    "caratteri": 21204,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -762,9 +754,9 @@
    "http": 200,
    "finale": "https://www.trentinosalute.net/Argomenti/TEMPI-DI-ATTESA",
    "file": "trento/0d2b7924d034.txt",
-   "titolo": "TEMPI DI ATTESA",
-   "sha": "beb5b972a89e8a4ba4ef548658abc1e853a5237237c7c496455a32a62e86fdf8",
-   "caratteri": 7285,
+   "titolo": "TEMPI DI ATTESA - Trentino Salute",
+   "sha": "1d4898ec7137e57bd87560f0e146b0b2ffc50f2ee35e253e2534ebb95f89aba9",
+   "caratteri": 7303,
    "cambiata": true
   },
   {

@@ -1,6 +1,6 @@
 {
  "regione": "lazio",
- "aggiornato": "2026-10-23T07:34:05.715Z",
+ "aggiornato": "2026-10-23T09:49:33.402Z",
  "pagine": [
   {
    "asl": "frosinone",
@@ -210,7 +210,7 @@
      "testo": "Iscrizione alla short list degli Avvocati Esterni"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "frosinone",
@@ -228,7 +228,7 @@
      "testo": "Iscrizione alla short list degli Avvocati Esterni"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "frosinone",
@@ -306,7 +306,7 @@
    "sha": "90a70dd4137ef4b59f4e71874e4ad4823cfa5f5406270a470cd4bef4902a7c58",
    "caratteri": 5325,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "frosinone",
@@ -329,7 +329,7 @@
    "sha": "a55145a71dc2eeb8695de1b93615043481735fa19c7745a4891d18a1f3f86eb6",
    "caratteri": 7378,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "frosinone",
@@ -343,7 +343,7 @@
    "sha": "78885520d8765704558dbfee301829eba53823317f6d39cf18c524d3a6132cbf",
    "caratteri": 6271,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "frosinone",
@@ -357,7 +357,7 @@
    "sha": "5035d0c7785439e13befacab51ddd01f6cf7e8f6e372c2acf35b1bc5e6727f3b",
    "caratteri": 7219,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -387,9 +387,9 @@
    "http": 200,
    "file": "latina/1b6a08522663.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "25015c5b43a61366d98477466f983899fc94941dc880c12de5946d252a06aee3",
+   "sha": "ce21a63b1dc01e21429e11f4a4d7d3560e05c4c5a8985260c2c21f06b0be1818",
    "caratteri": 4170,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "latina",
@@ -636,7 +636,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -645,8 +645,8 @@
    "http": 200,
    "file": "latina/6d5aee6744e3.txt",
    "titolo": "Servizio di Screening",
-   "sha": "c1c1523dcda66c0f7160128ea31b4b54187eed4798e68e5a8841ba18b01b7d31",
-   "caratteri": 9104,
+   "sha": "4963aa51d4f541a8648f2f58fdf26b31d34fd563a8868aa874028be123086142",
+   "caratteri": 9261,
    "link_pdf": [
     {
      "url": "https://www.ausl.latina.it/attachments/article/319/pars%202026.pdf",
@@ -794,9 +794,9 @@
    "http": 200,
    "file": "rieti/1b6a08522663.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "ce21a63b1dc01e21429e11f4a4d7d3560e05c4c5a8985260c2c21f06b0be1818",
+   "sha": "25015c5b43a61366d98477466f983899fc94941dc880c12de5946d252a06aee3",
    "caratteri": 4170,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "rieti",
@@ -1196,7 +1196,7 @@
      "testo": "Programma di Screening Oncologico della Mammella"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "rieti",
@@ -1229,7 +1229,7 @@
      "testo": "Locandina Informativa"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "rieti",
@@ -1385,7 +1385,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "6f6187cd7268d56075b198f3561020d42f09aa3d6b8aeb9c8051ba6b63732997",
    "caratteri": 4010,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -1417,13 +1417,9 @@
    "http": 200,
    "file": "roma/e0d930024e6e.txt",
    "titolo": "Punto Unico di Accesso (PUA)",
-   "sha": "6ce68f0d5f672b263b21954af4ad383655816a9b0983c70c18e870f713e1f4f3",
+   "sha": "c99cd1fe071f6752dc86179f25662c83a2d3cf46d5104315f6ab92e0705fed0f",
    "caratteri": 22475,
    "link_pdf": [
-    {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_arabo.pdf",
-     "testo": "ЗАКОН 104/92"
-    },
     {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_Tagalog.pdf",
      "testo": "GUIDA SUI SERVIZI SOCIALI E SANITARI PER LA DISABILITÀ"
@@ -1431,6 +1427,14 @@
     {
      "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_-_Bangla.pdf",
      "testo": "LEGGE 104/92"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_arabo.pdf",
+     "testo": "ЗАКОН 104/92"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_Ucraino.pdf",
+     "testo": "১০৪/৯২ আইন"
     },
     {
      "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_romeno.pdf",
@@ -1441,8 +1445,8 @@
      "testo": "LEGEA 104/92"
     },
     {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_Ucraino.pdf",
-     "testo": "১০৪/৯২ আইন"
+     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_italiano_1_.pdf",
+     "testo": "মাসিক ভাতা"
     },
     {
      "url": "https://www.aslroma1.it/uploads/files/39_40_DISABILITY-1.pdf",
@@ -1453,8 +1457,8 @@
      "testo": "INDEMNIZAȚIA LUNARĂ DE FRECVENȚĂ"
     },
     {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_italiano_1_.pdf",
-     "testo": "মাসিক ভাতা"
+     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_arabo.pdf",
+     "testo": "BUWANANG BENEPISYO PARA SA MAY KAPANSANAN"
     },
     {
      "url": "https://www.aslroma1.it/uploads/files/47_24_Legge_104_Ucraino.pdf",
@@ -1467,10 +1471,6 @@
     {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_-Spagnolo_CORRETTO.pdf",
      "testo": "قانون 104 / 92"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_arabo.pdf",
-     "testo": "BUWANANG BENEPISYO PARA SA MAY KAPANSANAN"
     }
    ],
    "cambiata": true
@@ -1776,7 +1776,7 @@
    "http": 200,
    "file": "roma/2b46e5d8fe38.txt",
    "titolo": "ASL Roma 2 - Punto Unico di Accesso - PUA",
-   "sha": "eb23741c006d82d38d11dd8c77d1b39cb912361b221b2bccea4b7cb579a20afd",
+   "sha": "a5a93291104a0433accf174f4305fb24b52b8a13178ec36d7166f79675a81b6c",
    "caratteri": 11883,
    "email_nascoste": 11,
    "cambiata": true
@@ -1846,7 +1846,7 @@
    "http": 200,
    "file": "roma/7e7cbafb32a1.txt",
    "titolo": "15.04.05 Liste di attesa",
-   "sha": "e46e44e2c796bc5750e83c73d30ff2b20e1aedc0a9da4afcae2e2c7822ed6172",
+   "sha": "5f9fbefb2773462b6c4edd51a1070e12285156eb33b3064e81f3fb9d77add059",
    "caratteri": 8673,
    "link_pdf": [
     {
@@ -2231,7 +2231,7 @@
    "sha": "e6148ecac7756cebef9704748e6b8aee991265e62dd8c4a14964d9b57e9bb4c4",
    "caratteri": 8848,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -2240,7 +2240,7 @@
    "http": 200,
    "file": "roma/3feb23bab29f.txt",
    "titolo": "ASL Roma 2 - UOSD Coordinamento Screening",
-   "sha": "690f24c3fd7c20389c933a0abfcdb570fceb23210d2bd78842e7f532b602a57b",
+   "sha": "47310cbd69fceac146648cc9bff9003e1b9ab1a2b5a562ed3d076e7c5b2e690d",
    "caratteri": 8743,
    "email_nascoste": 3,
    "cambiata": true
@@ -2264,7 +2264,7 @@
      "testo": "Dichiarazione di Accessibilità"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -2289,7 +2289,7 @@
      "testo": "Scarica il programma"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -2300,7 +2300,7 @@
    "titolo": "Screening Oncologici - ASL Roma 6",
    "sha": "02f62f3ae03bfed5c0f3687e1c662b32c02f4264d002f1c83c8da3d32f06cc8c",
    "caratteri": 20901,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -2586,7 +2586,7 @@
    "sha": "4ecb3ea46150cc181536ac072bd8d1a4b507335155040a8c07a6f0865a39e2cf",
    "caratteri": 9057,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -2599,7 +2599,7 @@
    "sha": "04c932fd314f9780688f761d2185722ee0c186ae20948e1e014866478bc5072c",
    "caratteri": 1318,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "viterbo",
@@ -2625,9 +2625,9 @@
    "http": 200,
    "file": "viterbo/1b6a08522663.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "25015c5b43a61366d98477466f983899fc94941dc880c12de5946d252a06aee3",
+   "sha": "ce21a63b1dc01e21429e11f4a4d7d3560e05c4c5a8985260c2c21f06b0be1818",
    "caratteri": 4170,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "viterbo",
@@ -2637,9 +2637,9 @@
    "finale": "https://salutelazio.it/it/servizi/guardia-medica",
    "file": "viterbo/a14f568f3b2f.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
+   "sha": "35d3aad05a7b0076371577c576aa4a5787bf713c630b0b4c273f9b2e68bbe902",
    "caratteri": 2358,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "viterbo",
@@ -2843,7 +2843,7 @@
      "testo": "Cookie Policy"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "viterbo",
@@ -2860,7 +2860,7 @@
      "testo": "Cookie Policy"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "viterbo",
@@ -3037,7 +3037,7 @@
    "http": 200,
    "file": "regione-lazio/1046951fd7e8.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "02d38f89cd647027e85a881251f40376d3cb428c2798d2e48d8debc95797e93e",
+   "sha": "1bce8ebe3b8686ea81f43bdfe2f8368c4f413f3887be9bbead104452d34aa979",
    "caratteri": 2796,
    "cambiata": true
   },
@@ -3072,7 +3072,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "4a15186e6901930c738ce3a6727f617316791c9f8343ddacbd4f7120b1c73453",
    "caratteri": 2103,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-lazio",
@@ -3092,7 +3092,7 @@
    "http": 200,
    "file": "regione-lazio/652b256db893.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "5cf4d2374d8d906aca0a2dd69e46c02b41d8f5adf5aa5a732584694f9372105d",
+   "sha": "6f6187cd7268d56075b198f3561020d42f09aa3d6b8aeb9c8051ba6b63732997",
    "caratteri": 4010,
    "cambiata": true
   },
@@ -3128,7 +3128,7 @@
    "titolo": "ASL Roma 1",
    "sha": "28faeba4ad0f1b3d623016332c91fb06514682ef6c21cb12ac47946e1a630b3a",
    "caratteri": 17446,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma1",
@@ -3234,7 +3234,7 @@
    "http": 200,
    "file": "asl-roma2/2e0f163ef6a3.txt",
    "titolo": "ASL Roma 2 - Guardia Medica",
-   "sha": "89d25209564b69de5604cefef97100eea9f62bf85258e9210553687cf3c2c9ca",
+   "sha": "1eb8bcf9e8d9c5a05e34f2aa674f029c13a94a9f60c5c97da89776fddb08257d",
    "caratteri": 8091,
    "cambiata": true
   },
@@ -3419,8 +3419,8 @@
    "finale": "https://www.aslroma5.it/",
    "file": "asl-roma5/b09e55c52e23.txt",
    "titolo": "Home - ASL ROMA 5",
-   "sha": "83dfd6dc2b9888d34c25c580b5c38a7db64dddc28dfdee8ca31ec1e222b3ecf4",
-   "caratteri": 15341,
+   "sha": "d4070e8e03750599a48ddfede697253640df1361e60069ff9e849ff8beee4d1e",
+   "caratteri": 15256,
    "link_pdf": [
     {
      "url": "https://www.aslroma5.it/wp-content/uploads/2026/03/PARS-2026.pdf",
@@ -3453,9 +3453,9 @@
    "http": 200,
    "file": "asl-roma5/6f837f29a953.txt",
    "titolo": "Telefono e posta elettronica - ASL ROMA 5",
-   "sha": "75347343228d12bd487ccf106143339449d34ab79e3fedff02beaa34788de0f2",
-   "caratteri": 18414,
-   "cambiata": false
+   "sha": "d7a96d5c4820e0d829116ecb4dbef040f163ef70a0e600fae9c6383e73173e6b",
+   "caratteri": 18434,
+   "cambiata": true
   },
   {
    "asl": "asl-roma5",
@@ -3500,9 +3500,9 @@
    "finale": "https://www.aslroma6.it/",
    "file": "asl-roma6/6fb4776a02ad.txt",
    "titolo": "Home - ASL Roma 6",
-   "sha": "db1c37efbdc2d96db07a0e7ca8368dcf77adf0cde54dfe434a6766b5b477454e",
-   "caratteri": 6335,
-   "cambiata": false
+   "sha": "f654aff6a4f0aa7830c1bc69080d4f6fb230f61f2e671ca457e5ec817df567d9",
+   "caratteri": 6301,
+   "cambiata": true
   },
   {
    "asl": "asl-roma6",
@@ -3611,8 +3611,8 @@
    "finale": "https://www.ausl.latina.it/",
    "file": "asl-latina/375895c3df35.txt",
    "titolo": "Home",
-   "sha": "3cbf8450ebd4c85ff1e8c46f94a20696c846037dcb0d0095c679de49a9919b0f",
-   "caratteri": 8088,
+   "sha": "cf20e306e36403fc8b6601471898be62ed6ca451bbdf1c661a760093065b1fb3",
+   "caratteri": 8223,
    "link_pdf": [
     {
      "url": "https://www.ausl.latina.it/attachments/article/319/pars%202026.pdf",
@@ -3623,7 +3623,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "asl-latina",
@@ -3632,8 +3632,8 @@
    "http": 200,
    "file": "asl-latina/ee9cd0b31e8d.txt",
    "titolo": "Guardia Medica",
-   "sha": "e7d582892e0d8e71df8c1c455c4bcaecacd132e0a9c91967edb99ee2e195ad23",
-   "caratteri": 7475,
+   "sha": "90cc471f341a3e231d4b86c35f4285cf2e88ee0565b647f549b07e857dbc062a",
+   "caratteri": 7610,
    "link_pdf": [
     {
      "url": "https://www.ausl.latina.it/attachments/article/319/pars%202026.pdf",
@@ -3644,7 +3644,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "asl-latina",
