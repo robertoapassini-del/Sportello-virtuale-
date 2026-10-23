@@ -194,6 +194,23 @@ async function main() {
     await ctx.close();
   }
 
+  // (d2) Indice delle regioni che non arriva (23/10/2026): prima valeva la Sicilia per tutti, anche per chi aveva
+  // scelto un'altra regione («Per ora solo in Sicilia», numeri e uffici siciliani). Niente Sicilia sullo schermo.
+  for (const [chi, init] of [['senza regione', null], ['con il Lazio salvato', () => { try { localStorage.setItem('gs-regione', 'lazio'); } catch { /* */ } }]]) {
+    for (const url of ['', 'numeri-utili/', 'liste-attesa/']) {
+      const nome = `${url || 'home'} (indice delle regioni bloccato, ${chi})`;
+      const { ctx, page } = await scheda(browser, nome, { blocca: ['**/data/regioni/index.json'], init: init || undefined });
+      await apri(page, at(url));
+      await page.waitForTimeout(300);
+      const t = await page.evaluate(() => document.getElementById('app') ? document.getElementById('app').innerText : document.body.innerText);
+      // Le frasi che dicono di chi sono («in Sicilia e in Calabria si chiama ASP», «In Sicilia: …») vanno bene.
+      const m = t.replace(/\(ASL; in Sicilia e in Calabria si chiama ASP\)|In Sicilia:[^.\n]*/g, '').match(/[^.\n]*(Sicili|\bASP\b)[^.\n]*/);
+      if (m) problemi.push(`${nome}: «${m[0].trim().slice(0, 120)}»`);
+      if (url === 'numeri-utili/' && !(await si112(page))) problemi.push(`${nome}: il 112 non si vede`);
+      await ctx.close();
+    }
+  }
+
   // (e) Fonti con un file che non arriva: nessun errore, mai «Un momento…».
   for (const [quale, blocca] of [
     ['rules-ausili.json bloccato', ['**/data/rules-ausili.json']],

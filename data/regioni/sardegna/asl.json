@@ -125,6 +125,23 @@
      "address": "Via Sardegna snc, Muravera",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Centro screening dell'ASL Cagliari: numero verde (tumori del seno, del collo dell'utero e del colon)",
+     "number": "800 728259",
+     "hours": "Dal lunedì al venerdì 10:00–13:00",
+     "url": "https://www.asl8cagliari.it/servizio/screening-oncologici/",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "cup",
+     "label": "Libera professione (intramoenia) dell'ASL Cagliari: prenotare nel percorso di tutela, dopo il CupWeb",
+     "number": "070 4677970",
+     "url": "https://www.asl8cagliari.it/wp-content/uploads/2024/05/All._A._Percorso_tutela_ASL_Cagliari-con-Delibera-DG.pdf",
+     "verified": "2026-10-23",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -155,15 +172,27 @@
     {
      "label": "ASL Cagliari – PEC e URP",
      "url": "https://www.asl8cagliari.it/come_fare_per/segnalare-disservizi/"
+    },
+    {
+     "label": "ASL Cagliari – Screening oncologici",
+     "url": "https://www.asl8cagliari.it/servizio/screening-oncologici/"
+    },
+    {
+     "label": "ASL Cagliari – Percorso di tutela (delibera n. 349 del 17/05/2024)",
+     "url": "https://www.asl8cagliari.it/percorso-tutela-accesso-alternativo-alle-prestazioni-specialistiche/"
+    },
+    {
+     "label": "ASL Cagliari – Allegato A, procedura del percorso di tutela (PDF)",
+     "url": "https://www.asl8cagliari.it/wp-content/uploads/2024/05/All._A._Percorso_tutela_ASL_Cagliari-con-Delibera-DG.pdf"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-23",
    "todo": [
     "Guardia medica: la pagina dell'ASL Cagliari (ultima modifica 10 dicembre 2025) indica per quasi tutte le sedi «Telefono 116117» (più cellulari di servizio), ma AREUS il 28 maggio 2026 scriveva che nell'ASL di Cagliari l'attivazione del 116117 era solo «prevista entro l'anno». Le fonti si contraddicono: non ho messo numeri di guardia medica. Da verificare se il 116117 è attivo nel distretto telefonico 070.",
     "Manca il numero del PUA del Distretto 5 (Sarcidano, Barbagia di Seulo e Trexenta).",
-    "Percorso di tutela (pagine dell'ASL copiate il 23/10/2026): adottato con la delibera n. 349 del 17/05/2024 (D.Lgs. 124/1998, art. 3, c. 13); per le prime visite e i primi esami prenotati al CUP (1533, 070 474747) o al CupWeb; percorso A in intramoenia, percorso B dal privato accreditato con rimborso. Le pagine non dicono a chi si fa la domanda né i documenti: sono nell'Allegato A (PDF), che la copia nomina ma senza il suo indirizzo. Manca l'url dell'Allegato A da mettere in «pagine».",
-    "Terzo giro (copie del 23/10/2026): nella Sardegna il server non ha copiato nessun PDF (i moduli e le procedure del percorso di tutela non sono in «pagine»; le copie hanno il nome degli allegati ma non il loro indirizzo). Nessun modulo nuovo. Liste d'attesa: percorso provato solo per Medio Campidano e Nuoro; Cagliari e Sassari senza a chi scrivere e documenti; Gallura, Ogliastra, Oristano e Sulcis senza pagina (le home hanno solo la voce di menu «Percorso di tutela»). In «pagine» ora la procedura dell'ASL Nuoro e la nota dell'ASL Sassari (PDF). Prevenzione: nessun numero degli screening nelle copie. Assistenza a casa: manca ancora un numero del PUA dell'ASL Sassari (la notizia su Alghero dà solo indirizzo e orari); cure palliative e ausili: uffici solo in alcune ASL. Invalidità: regime null in 4 sedi (inps.json, todo). Accesi dal secondo giro: medico di famiglia (pagina regionale «Scelta e revoca del medico») e cartella clinica (URP e PEC nelle copie).",
-    "Pagine aggiunte in «pagine» il 23/10/2026 (quarto giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): pagina del Centro screening. Devono dare il numero e gli orari del centro screening (contacts topic «screening»). L'«Allegato A» del percorso di tutela (PDF) non trovato con il motore di ricerca: lo prende il server dai link PDF della pagina del percorso di tutela (link_pdf)."
+    "Terzo giro (copie del 23/10/2026): nella Sardegna il server non ha copiato nessun PDF (i moduli e le procedure del percorso di tutela non sono in «pagine»; le copie hanno il nome degli allegati ma non il loro indirizzo). Nessun modulo nuovo. Liste d'attesa: percorso provato solo per Medio Campidano e Nuoro; Cagliari e Sassari senza a chi scrivere e documenti; Gallura, Ogliastra, Oristano e Sulcis senza pagina (le home hanno solo la voce di menu «Percorso di tutela»). In «pagine» ora la procedura dell'ASL Nuoro e la nota dell'ASL Sassari (PDF). Prevenzione: (giro del 23/10/2026 sulle copie delle 11:06) numero del centro screening in tutte e 8 le ASL: prevenzione accesa. Assistenza a casa: manca ancora un numero del PUA dell'ASL Sassari (la notizia su Alghero dà solo indirizzo e orari); cure palliative e ausili: uffici solo in alcune ASL. Invalidità: regime null in 4 sedi (inps.json, todo). Accesi dal secondo giro: medico di famiglia (pagina regionale «Scelta e revoca del medico») e cartella clinica (URP e PEC nelle copie).",
+    "Pagine aggiunte in «pagine» il 23/10/2026 (quarto giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): pagina del Centro screening. Devono dare il numero e gli orari del centro screening (contacts topic «screening»). L'«Allegato A» del percorso di tutela (PDF) non trovato con il motore di ricerca: lo prende il server dai link PDF della pagina del percorso di tutela (link_pdf).",
+    "Percorso di tutela (copia del 23/10/2026 dell'Allegato A, PDF, proof «pagina»): percorso A al CUP telefonico (il CUP propone l'intramoenia col solo ticket); percorso B dal CupWeb: stampa della prima data, prenotazione in intramoenia al 070 4677970, entro un giorno stampa e Allegato C a urpcagliari@aslcagliari.it. Poi privato accreditato (solo residenti ASL Cagliari) e rimborso con l'Allegato B all'URP. Scritti channel «email», letter_mode «letter», send_to l'email dell'URP. Gli Allegati B e C sono DOCX: non copiati, quindi niente form_url e form_fields."
    ],
    "emails": [
     "urpcagliari@aslcagliari.it"
@@ -195,7 +224,27 @@
     "how": "In Sardegna puoi scegliere, cambiare o togliere il medico o il pediatra online, con il servizio della Regione «Zente Web» (zente.sardegnasalute.it). Entri con SPID, CIE o la tessera sanitaria attivata (TS-CNS). Il cambio vale subito: stampa il foglio della scelta e portalo al nuovo medico. Online puoi cambiare una volta ogni 30 giorni. Per un medico fuori dal tuo ambito («in deroga») vai allo sportello scelta e revoca della tua ASL.",
     "url": "https://www.sardegnasalute.it/sceltamedico/",
     "url_label": "Sito della Regione"
-   }
+   },
+   "channel": "email",
+   "letter_mode": "letter",
+   "send_to": "urpcagliari@aslcagliari.it",
+   "info_url": "https://www.asl8cagliari.it/percorso-tutela-accesso-alternativo-alle-prestazioni-specialistiche/",
+   "how_to": "Prenota al CUP: 1533 da telefono fisso, 070 474747, oppure sul CupWeb. Prenoti al telefono e non c'è posto nei tempi della tua classe? Il CUP deve proporti una visita in intramoenia, pagando solo il ticket. Prenoti sul CupWeb e la prima data è troppo lontana? Stampa la ricevuta con la prima data. Poi chiama il numero della libera professione, 070 4677970, e prenota in intramoenia. Di' che non hai trovato una data nei tempi della ricetta. Entro un giorno manda la stampa e la dichiarazione (Allegato C) all'URP: urpcagliari@aslcagliari.it.",
+   "documents_required": [
+    "Stampa della ricevuta del CupWeb, con la prima data che ti ha proposto",
+    "Dichiarazione sul CupWeb (Allegato C, modulo dell'ASL)"
+   ],
+   "what_next": [
+    "Così la visita in intramoenia è a carico del Servizio sanitario: paghi solo il ticket, se lo devi.",
+    "Se anche in intramoenia non c'è posto nei tempi, e abiti nell'ASL Cagliari, puoi andare in una struttura privata accreditata. Paghi prima tu.",
+    "Poi chiedi il rimborso all'URP. L'ASL rimborsa fino a una cifra massima, scritta in un tariffario che aggiorna ogni sei mesi."
+   ],
+   "notes": [
+    "In Sardegna, ASL Cagliari: vale per le prime visite e i primi esami. La struttura privata accreditata vale solo per chi abita nell'ASL Cagliari."
+   ],
+   "details": [
+    "Per il rimborso porta all'URP: la domanda (Allegato B), la stampa del CupWeb se hai prenotato lì, la ricetta, la fattura pagata, il documento d'identità e la tessera sanitaria (fotocopie) e il tuo IBAN."
+   ]
   },
   {
    "id": "gallura",
@@ -286,6 +335,16 @@
      "address": "Casa di Comunità, loc. Padule, La Maddalena",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Centro screening oncologici dell'ASL Gallura: numero verde",
+     "number": "800 283333",
+     "hours": "Dal lunedì al venerdì 9:00–12:00",
+     "address": "Viale Aldo Moro, Olbia",
+     "url": "https://www.aslgallura.it/servizio/coordinamento-screening/",
+     "verified": "2026-10-23",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -324,14 +383,19 @@
     {
      "label": "ASL Gallura – PEC e URP",
      "url": "https://www.aslgallura.it/azienda/contatti/"
+    },
+    {
+     "label": "ASL Gallura – Coordinamento screening",
+     "url": "https://www.aslgallura.it/servizio/coordinamento-screening/"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-23",
    "todo": [
     "Nelle pagine copiate non c'è un numero di centralino dell'ASL Gallura (solo la segreteria della Direzione, 0789 552305).",
     "Il numero CUP da cellulare indicato dall'ASL Gallura (070 4675090) è diverso da quello del CupWeb regionale e delle altre ASL (070 276424 / 070 474747): da chiarire.",
-    "Terzo giro (copie del 23/10/2026): nella Sardegna il server non ha copiato nessun PDF (i moduli e le procedure del percorso di tutela non sono in «pagine»; le copie hanno il nome degli allegati ma non il loro indirizzo). Nessun modulo nuovo. Liste d'attesa: percorso provato solo per Medio Campidano e Nuoro; Cagliari e Sassari senza a chi scrivere e documenti; Gallura, Ogliastra, Oristano e Sulcis senza pagina (le home hanno solo la voce di menu «Percorso di tutela»). In «pagine» ora la procedura dell'ASL Nuoro e la nota dell'ASL Sassari (PDF). Prevenzione: nessun numero degli screening nelle copie. Assistenza a casa: manca ancora un numero del PUA dell'ASL Sassari (la notizia su Alghero dà solo indirizzo e orari); cure palliative e ausili: uffici solo in alcune ASL. Invalidità: regime null in 4 sedi (inps.json, todo). Accesi dal secondo giro: medico di famiglia (pagina regionale «Scelta e revoca del medico») e cartella clinica (URP e PEC nelle copie).",
-    "Pagine aggiunte in «pagine» il 23/10/2026 (quarto giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): pagina del Coordinamento screening. Devono dare il numero e gli orari del centro screening (contacts topic «screening»)."
+    "Terzo giro (copie del 23/10/2026): nella Sardegna il server non ha copiato nessun PDF (i moduli e le procedure del percorso di tutela non sono in «pagine»; le copie hanno il nome degli allegati ma non il loro indirizzo). Nessun modulo nuovo. Liste d'attesa: percorso provato solo per Medio Campidano e Nuoro; Cagliari e Sassari senza a chi scrivere e documenti; Gallura, Ogliastra, Oristano e Sulcis senza pagina (le home hanno solo la voce di menu «Percorso di tutela»). In «pagine» ora la procedura dell'ASL Nuoro e la nota dell'ASL Sassari (PDF). Prevenzione: (giro del 23/10/2026 sulle copie delle 11:06) numero del centro screening in tutte e 8 le ASL: prevenzione accesa. Assistenza a casa: manca ancora un numero del PUA dell'ASL Sassari (la notizia su Alghero dà solo indirizzo e orari); cure palliative e ausili: uffici solo in alcune ASL. Invalidità: regime null in 4 sedi (inps.json, todo). Accesi dal secondo giro: medico di famiglia (pagina regionale «Scelta e revoca del medico») e cartella clinica (URP e PEC nelle copie).",
+    "Pagine aggiunte in «pagine» il 23/10/2026 (quarto giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): pagina del Coordinamento screening. Devono dare il numero e gli orari del centro screening (contacts topic «screening»).",
+    "Percorso di tutela (giro del 23/10/2026 sulle copie delle 11:06): nessuna pagina copiata sul percorso di tutela di questa ASL (la home ha solo la voce di menu «Percorso di tutela»). Servono la pagina e il modulo in pagine[]. Finché manca, liste d'attesa resta spenta in Sardegna."
    ],
    "emails": [
     "urp.olbia@aslgallura.it"
@@ -451,6 +515,15 @@
      "url": "https://www.aslmediocampidano.it/servizio/14711/",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Centro screening dell'ASL Medio Campidano: numero verde (dal 1° ottobre 2026 è l'unico numero)",
+     "number": "800 339233",
+     "hours": "Dal lunedì al giovedì 8:30–14:00 e 15:00–17:00; venerdì 8:30–13:00",
+     "url": "https://www.aslmediocampidano.it/centro-screening-numero-verde-800-339233/",
+     "verified": "2026-10-23",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -485,15 +558,24 @@
     {
      "label": "ASL Medio Campidano – Percorso di tutela",
      "url": "https://www.aslmediocampidano.it/percorso-di-tutela-accesso-alternativo-a-prestazioni-specialistiche/"
+    },
+    {
+     "label": "ASL Medio Campidano – Centro screening: numero verde 800 339233",
+     "url": "https://www.aslmediocampidano.it/centro-screening-numero-verde-800-339233/"
+    },
+    {
+     "label": "ASL Medio Campidano – Allegato A, modulo di richiesta del percorso di tutela (PDF)",
+     "url": "https://www.aslmediocampidano.it/wp-content/uploads/2025/04/Allegato-A-Percorso-di-tutela.pdf"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-23",
    "todo": [
     "Guardia medica: secondo AREUS (28 maggio 2026) il 116117 nell'ASL Medio Campidano è previsto «entro l'anno», ma nessuna pagina copiata dice che sia già attivo; nelle pagine dell'ASL non ci sono i numeri delle sedi di guardia medica. Manca il numero da chiamare.",
     "Nella pagina ADI non è chiaro a quale distretto si riferiscano i numeri delle cure domiciliari.",
-    "Percorso di tutela (pagina dell'ASL, copia del 22/10/2026): domanda con il modulo A alla PEC protocollo@pec.aslmediocampidano.it; documenti, risposta dell'URP e rimborso scritti in liste d'attesa. Manca il link al modulo A (allegato della pagina).",
-    "Terzo giro (copie del 23/10/2026): nella Sardegna il server non ha copiato nessun PDF (i moduli e le procedure del percorso di tutela non sono in «pagine»; le copie hanno il nome degli allegati ma non il loro indirizzo). Nessun modulo nuovo. Liste d'attesa: percorso provato solo per Medio Campidano e Nuoro; Cagliari e Sassari senza a chi scrivere e documenti; Gallura, Ogliastra, Oristano e Sulcis senza pagina (le home hanno solo la voce di menu «Percorso di tutela»). In «pagine» ora la procedura dell'ASL Nuoro e la nota dell'ASL Sassari (PDF). Prevenzione: nessun numero degli screening nelle copie. Assistenza a casa: manca ancora un numero del PUA dell'ASL Sassari (la notizia su Alghero dà solo indirizzo e orari); cure palliative e ausili: uffici solo in alcune ASL. Invalidità: regime null in 4 sedi (inps.json, todo). Accesi dal secondo giro: medico di famiglia (pagina regionale «Scelta e revoca del medico») e cartella clinica (URP e PEC nelle copie).",
-    "Pagine aggiunte in «pagine» il 23/10/2026 (quarto giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): pagina del Centro screening e avviso sul numero verde. Devono dare il numero e gli orari del centro screening (contacts topic «screening»). Il «modulo A» del percorso di tutela (PDF) non trovato con il motore di ricerca: lo prende il server dai link PDF della pagina del percorso di tutela (link_pdf)."
+    "Terzo giro (copie del 23/10/2026): nella Sardegna il server non ha copiato nessun PDF (i moduli e le procedure del percorso di tutela non sono in «pagine»; le copie hanno il nome degli allegati ma non il loro indirizzo). Nessun modulo nuovo. Liste d'attesa: percorso provato solo per Medio Campidano e Nuoro; Cagliari e Sassari senza a chi scrivere e documenti; Gallura, Ogliastra, Oristano e Sulcis senza pagina (le home hanno solo la voce di menu «Percorso di tutela»). In «pagine» ora la procedura dell'ASL Nuoro e la nota dell'ASL Sassari (PDF). Prevenzione: (giro del 23/10/2026 sulle copie delle 11:06) numero del centro screening in tutte e 8 le ASL: prevenzione accesa. Assistenza a casa: manca ancora un numero del PUA dell'ASL Sassari (la notizia su Alghero dà solo indirizzo e orari); cure palliative e ausili: uffici solo in alcune ASL. Invalidità: regime null in 4 sedi (inps.json, todo). Accesi dal secondo giro: medico di famiglia (pagina regionale «Scelta e revoca del medico») e cartella clinica (URP e PEC nelle copie).",
+    "Pagine aggiunte in «pagine» il 23/10/2026 (quarto giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): pagina del Centro screening e avviso sul numero verde. Devono dare il numero e gli orari del centro screening (contacts topic «screening»). Il «modulo A» del percorso di tutela (PDF) non trovato con il motore di ricerca: lo prende il server dai link PDF della pagina del percorso di tutela (link_pdf).",
+    "Screening: l'avviso del 2026 dice che dal 1° ottobre 2026 vale solo il numero verde 800 339233; la pagina del servizio ha ancora l'orario vecchio (lunedì–venerdì 9–13, lunedì–giovedì 15–17): scritto l'orario dell'avviso.",
+    "Percorso di tutela: domanda con il modulo A alla PEC protocollo@pec.aslmediocampidano.it (pagina dell'ASL). Il modulo A (PDF) è copiato il 23/10/2026: letter_mode «official_form», form_url e form_fields presi dal testo del modulo (nome, luogo e data di nascita, residenza, C.F., telefono, email, in qualità di, prima visita o esame, data, firma). Nel modulo ci sono anche la data di nascita e la data della ricetta: non sono nei campi del sito, si scrivono a mano."
    ],
    "emails": [
     "urp.sanluri@aslmediocampidano.it"
@@ -519,7 +601,7 @@
     "url_label": "Sito della Regione"
    },
    "channel": "pec",
-   "letter_mode": "letter",
+   "letter_mode": "official_form",
    "send_to": "protocollo@pec.aslmediocampidano.it",
    "info_url": "https://www.aslmediocampidano.it/percorso-di-tutela-accesso-alternativo-a-prestazioni-specialistiche/",
    "how_to": "Chiedi il percorso di tutela all'URP dell'ASL Medio Campidano. Compila il «modulo A – richiesta percorso di tutela»: lo trovi sulla pagina dell'ASL. Mandalo con la PEC a protocollo@pec.aslmediocampidano.it, insieme ai fogli dell'elenco.",
@@ -542,6 +624,49 @@
    "details": [
     "Il tempo per la visita riparte dal giorno della domanda.",
     "Per il rimborso servono: la domanda (Allegato B), l'autorizzazione dell'ASL, la ricevuta del pagamento e il documento d'identità."
+   ],
+   "form_url": "https://www.aslmediocampidano.it/wp-content/uploads/2025/04/Allegato-A-Percorso-di-tutela.pdf",
+   "form_fields": [
+    {
+     "label": "Io sottoscritto/a (nome e cognome)",
+     "source": "fullName"
+    },
+    {
+     "label": "Nato/a a",
+     "source": "birthPlace"
+    },
+    {
+     "label": "Residente a, in via/piazza",
+     "source": "address"
+    },
+    {
+     "label": "C.F.",
+     "source": "cf"
+    },
+    {
+     "label": "Telefono / cellulare",
+     "source": "phone"
+    },
+    {
+     "label": "Email",
+     "source": "email"
+    },
+    {
+     "label": "In qualità di",
+     "fixed": "Diretto interessato (o la casella giusta, se scrivi per un'altra persona)"
+    },
+    {
+     "label": "Prima visita o esame prescritto",
+     "source": "serviceAndNre"
+    },
+    {
+     "label": "Data",
+     "source": "today"
+    },
+    {
+     "label": "Firma",
+     "fixed": "Firma con la penna"
+    }
    ]
   },
   {
@@ -663,6 +788,16 @@
      "address": "Sede del Distretto, località Nuraghe Ruiu, Macomer",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Centro screening dell'ASL Nuoro: numero verde",
+     "number": "800 208084",
+     "hours": "Dal lunedì al venerdì 9:30–11:30; martedì anche 15:00–17:00",
+     "address": "Ospedale Cesare Zonchello, Nuoro, padiglione A, 1° piano",
+     "url": "https://www.asl3nuoro.it/servizio/screening-oncologici/",
+     "verified": "2026-10-23",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -693,14 +828,22 @@
     {
      "label": "Sardegna Salute (Regione Sardegna) – Scelta e revoca del medico",
      "url": "https://www.sardegnasalute.it/sceltamedico/"
+    },
+    {
+     "label": "ASL Nuoro – Screening oncologici",
+     "url": "https://www.asl3nuoro.it/servizio/screening-oncologici/"
+    },
+    {
+     "label": "ASL Nuoro – Allegato A, istanza per il percorso di tutela (PDF)",
+     "url": "https://www.asl3nuoro.it/wp-content/uploads/2024/11/allegato-A-1.pdf"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-23",
    "todo": [
     "Mancano i numeri dei PUA dei Distretti di Siniscola e Sorgono (sono in file allegati non copiati).",
-    "Percorso di tutela: canale, documenti e cosa succede dopo letti nella pagina dell'ASL (copia del 22/10/2026); send_to = urp.nuoro@aslnuoro.it, l'indirizzo che la pagina dà per la domanda. Manca il link al modulo (Allegato A, PDF): form_url resta vuoto.",
-    "Terzo giro (copie del 23/10/2026): nella Sardegna il server non ha copiato nessun PDF (i moduli e le procedure del percorso di tutela non sono in «pagine»; le copie hanno il nome degli allegati ma non il loro indirizzo). Nessun modulo nuovo. Liste d'attesa: percorso provato solo per Medio Campidano e Nuoro; Cagliari e Sassari senza a chi scrivere e documenti; Gallura, Ogliastra, Oristano e Sulcis senza pagina (le home hanno solo la voce di menu «Percorso di tutela»). In «pagine» ora la procedura dell'ASL Nuoro e la nota dell'ASL Sassari (PDF). Prevenzione: nessun numero degli screening nelle copie. Assistenza a casa: manca ancora un numero del PUA dell'ASL Sassari (la notizia su Alghero dà solo indirizzo e orari); cure palliative e ausili: uffici solo in alcune ASL. Invalidità: regime null in 4 sedi (inps.json, todo). Accesi dal secondo giro: medico di famiglia (pagina regionale «Scelta e revoca del medico») e cartella clinica (URP e PEC nelle copie).",
-    "Pagine aggiunte in «pagine» il 23/10/2026 (quarto giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): pagina e carta dei servizi (PDF) del Centro screening. Devono dare il numero e gli orari del centro screening (contacts topic «screening»). L'«Allegato A» del percorso di tutela (PDF) non trovato con il motore di ricerca: lo prende il server dai link PDF della pagina del percorso di tutela (link_pdf)."
+    "Terzo giro (copie del 23/10/2026): nella Sardegna il server non ha copiato nessun PDF (i moduli e le procedure del percorso di tutela non sono in «pagine»; le copie hanno il nome degli allegati ma non il loro indirizzo). Nessun modulo nuovo. Liste d'attesa: percorso provato solo per Medio Campidano e Nuoro; Cagliari e Sassari senza a chi scrivere e documenti; Gallura, Ogliastra, Oristano e Sulcis senza pagina (le home hanno solo la voce di menu «Percorso di tutela»). In «pagine» ora la procedura dell'ASL Nuoro e la nota dell'ASL Sassari (PDF). Prevenzione: (giro del 23/10/2026 sulle copie delle 11:06) numero del centro screening in tutte e 8 le ASL: prevenzione accesa. Assistenza a casa: manca ancora un numero del PUA dell'ASL Sassari (la notizia su Alghero dà solo indirizzo e orari); cure palliative e ausili: uffici solo in alcune ASL. Invalidità: regime null in 4 sedi (inps.json, todo). Accesi dal secondo giro: medico di famiglia (pagina regionale «Scelta e revoca del medico») e cartella clinica (URP e PEC nelle copie).",
+    "Pagine aggiunte in «pagine» il 23/10/2026 (quarto giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): pagina e carta dei servizi (PDF) del Centro screening. Devono dare il numero e gli orari del centro screening (contacts topic «screening»). L'«Allegato A» del percorso di tutela (PDF) non trovato con il motore di ricerca: lo prende il server dai link PDF della pagina del percorso di tutela (link_pdf).",
+    "Percorso di tutela: canale, documenti e cosa succede dopo dalla pagina dell'ASL (copia del 22/10/2026). L'Allegato A (PDF, copia del 23/10/2026) è indirizzato al Direttore generale tramite l'URP, via Amerigo Demurtas 1, email urp.nuoro@aslnuoro.it: letter_mode «official_form», form_url e form_fields presi dal testo del modulo. Nel modulo ci sono anche la data di nascita, la data della ricetta e la data del CUP: si scrivono a mano."
    ],
    "emails": [
     "urp.nuoro@aslnuoro.it"
@@ -728,9 +871,9 @@
     }
    ],
    "channel": "email",
-   "letter_mode": "letter",
+   "letter_mode": "official_form",
    "send_to": "urp.nuoro@aslnuoro.it",
-   "form_url": null,
+   "form_url": "https://www.asl3nuoro.it/wp-content/uploads/2024/11/allegato-A-1.pdf",
    "info_url": "https://www.asl3nuoro.it/servizio/percorso-di-tutela-di-accesso-alternativo-alle-prestazioni-specialistiche/",
    "portal_url": null,
    "fast_track": null,
@@ -758,7 +901,49 @@
     "how": "In Sardegna puoi scegliere, cambiare o togliere il medico o il pediatra online, con il servizio della Regione «Zente Web» (zente.sardegnasalute.it). Entri con SPID, CIE o la tessera sanitaria attivata (TS-CNS). Il cambio vale subito: stampa il foglio della scelta e portalo al nuovo medico. Online puoi cambiare una volta ogni 30 giorni. Per un medico fuori dal tuo ambito («in deroga») vai allo sportello scelta e revoca della tua ASL.",
     "url": "https://www.sardegnasalute.it/sceltamedico/",
     "url_label": "Sito della Regione"
-   }
+   },
+   "form_fields": [
+    {
+     "label": "Il/la sottoscritto/a (nome e cognome)",
+     "source": "fullName"
+    },
+    {
+     "label": "Nato/a a",
+     "source": "birthPlace"
+    },
+    {
+     "label": "Codice fiscale",
+     "source": "cf"
+    },
+    {
+     "label": "Residente a, via, n.",
+     "source": "address"
+    },
+    {
+     "label": "Tel.",
+     "source": "phone"
+    },
+    {
+     "label": "Email",
+     "source": "email"
+    },
+    {
+     "label": "In qualità di",
+     "fixed": "Diretto interessato (o la casella giusta, se scrivi per un'altra persona)"
+    },
+    {
+     "label": "Visita o esame prescritto",
+     "source": "serviceAndNre"
+    },
+    {
+     "label": "Data",
+     "source": "today"
+    },
+    {
+     "label": "Firma",
+     "fixed": "Firma con la penna"
+    }
+   ]
   },
   {
    "id": "ogliastra",
@@ -848,6 +1033,16 @@
      "address": "Via Dottor Giuseppe Pilia 6, Lanusei",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Centro screening dell'ASL Ogliastra (servizi della prevenzione)",
+     "number": "0782 490460",
+     "hours": "Dal lunedì al venerdì 09:00–13:00",
+     "address": "Via Trento vico V 1, Lanusei",
+     "url": "https://www.aslogliastra.it/servizio/prevenzione-e-promozione-della-salute-screening-medicina-dello-sport/",
+     "verified": "2026-10-23",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -874,15 +1069,20 @@
     {
      "label": "Sardegna Salute (Regione Sardegna) – Scelta e revoca del medico",
      "url": "https://www.sardegnasalute.it/sceltamedico/"
+    },
+    {
+     "label": "ASL Ogliastra – Prevenzione e promozione della salute, screening",
+     "url": "https://www.aslogliastra.it/servizio/prevenzione-e-promozione-della-salute-screening-medicina-dello-sport/"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-23",
    "todo": [
     "Nelle pagine copiate non c'è un numero dell'URP dell'ASL Ogliastra.",
     "L'elenco guardie mediche dell'ASL riporta ancora per Jerzu il vecchio numero 0782 70170, ma dal 23 agosto 2025 i numeri 0782 sono stati dismessi: non usato.",
     "Email URP dell'ASL Ogliastra: non c'è nelle copie (c'è protocollo@aslogliastra.it nei «Contatti generali»). Le lettere vanno alla PEC protocollo@pec.aslogliastra.it.",
-    "Terzo giro (copie del 23/10/2026): nella Sardegna il server non ha copiato nessun PDF (i moduli e le procedure del percorso di tutela non sono in «pagine»; le copie hanno il nome degli allegati ma non il loro indirizzo). Nessun modulo nuovo. Liste d'attesa: percorso provato solo per Medio Campidano e Nuoro; Cagliari e Sassari senza a chi scrivere e documenti; Gallura, Ogliastra, Oristano e Sulcis senza pagina (le home hanno solo la voce di menu «Percorso di tutela»). In «pagine» ora la procedura dell'ASL Nuoro e la nota dell'ASL Sassari (PDF). Prevenzione: nessun numero degli screening nelle copie. Assistenza a casa: manca ancora un numero del PUA dell'ASL Sassari (la notizia su Alghero dà solo indirizzo e orari); cure palliative e ausili: uffici solo in alcune ASL. Invalidità: regime null in 4 sedi (inps.json, todo). Accesi dal secondo giro: medico di famiglia (pagina regionale «Scelta e revoca del medico») e cartella clinica (URP e PEC nelle copie).",
-    "Pagine aggiunte in «pagine» il 23/10/2026 (quarto giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): pagina «Prevenzione e promozione della salute». Devono dare il numero e gli orari del centro screening (contacts topic «screening»)."
+    "Terzo giro (copie del 23/10/2026): nella Sardegna il server non ha copiato nessun PDF (i moduli e le procedure del percorso di tutela non sono in «pagine»; le copie hanno il nome degli allegati ma non il loro indirizzo). Nessun modulo nuovo. Liste d'attesa: percorso provato solo per Medio Campidano e Nuoro; Cagliari e Sassari senza a chi scrivere e documenti; Gallura, Ogliastra, Oristano e Sulcis senza pagina (le home hanno solo la voce di menu «Percorso di tutela»). In «pagine» ora la procedura dell'ASL Nuoro e la nota dell'ASL Sassari (PDF). Prevenzione: (giro del 23/10/2026 sulle copie delle 11:06) numero del centro screening in tutte e 8 le ASL: prevenzione accesa. Assistenza a casa: manca ancora un numero del PUA dell'ASL Sassari (la notizia su Alghero dà solo indirizzo e orari); cure palliative e ausili: uffici solo in alcune ASL. Invalidità: regime null in 4 sedi (inps.json, todo). Accesi dal secondo giro: medico di famiglia (pagina regionale «Scelta e revoca del medico») e cartella clinica (URP e PEC nelle copie).",
+    "Pagine aggiunte in «pagine» il 23/10/2026 (quarto giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): pagina «Prevenzione e promozione della salute». Devono dare il numero e gli orari del centro screening (contacts topic «screening»).",
+    "Percorso di tutela (giro del 23/10/2026 sulle copie delle 11:06): nessuna pagina copiata sul percorso di tutela di questa ASL (la home ha solo la voce di menu «Percorso di tutela»). Servono la pagina e il modulo in pagine[]. Finché manca, liste d'attesa resta spenta in Sardegna."
    ],
    "emails": [],
    "pec": "protocollo@pec.aslogliastra.it",
@@ -969,6 +1169,24 @@
      "address": "Via Carducci 41, Oristano",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Centro screening dell'ASL Oristano: numero verde",
+     "number": "800 186000",
+     "hours": "Dal lunedì al venerdì 9–13; giovedì anche 15–17",
+     "url": "https://www.asl5oristano.it/strutture/screening-oncologici/",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Centro screening dell'ASL Oristano",
+     "number": "0783 317007",
+     "hours": "Dal lunedì al venerdì 9–13; giovedì anche 15–17",
+     "url": "https://www.asl5oristano.it/strutture/screening-oncologici/",
+     "verified": "2026-10-23",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -999,14 +1217,20 @@
     {
      "label": "ASL Oristano – PEC e URP",
      "url": "https://www.asl5oristano.it/servizio/ufficio-relazioni-con-il-pubblico/"
+    },
+    {
+     "label": "ASL Oristano – Screening oncologici",
+     "url": "https://www.asl5oristano.it/strutture/screening-oncologici/"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-23",
    "todo": [
     "L'URP dell'ASL Oristano risponde solo via e-mail: nelle pagine non c'è un numero di telefono.",
     "Mancano i numeri dei PUA dei Distretti di Ghilarza-Bosa e Ales-Terralba.",
-    "Terzo giro (copie del 23/10/2026): nella Sardegna il server non ha copiato nessun PDF (i moduli e le procedure del percorso di tutela non sono in «pagine»; le copie hanno il nome degli allegati ma non il loro indirizzo). Nessun modulo nuovo. Liste d'attesa: percorso provato solo per Medio Campidano e Nuoro; Cagliari e Sassari senza a chi scrivere e documenti; Gallura, Ogliastra, Oristano e Sulcis senza pagina (le home hanno solo la voce di menu «Percorso di tutela»). In «pagine» ora la procedura dell'ASL Nuoro e la nota dell'ASL Sassari (PDF). Prevenzione: nessun numero degli screening nelle copie. Assistenza a casa: manca ancora un numero del PUA dell'ASL Sassari (la notizia su Alghero dà solo indirizzo e orari); cure palliative e ausili: uffici solo in alcune ASL. Invalidità: regime null in 4 sedi (inps.json, todo). Accesi dal secondo giro: medico di famiglia (pagina regionale «Scelta e revoca del medico») e cartella clinica (URP e PEC nelle copie).",
-    "Pagine aggiunte in «pagine» il 23/10/2026 (quarto giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): pagina del Centro screening. Devono dare il numero e gli orari del centro screening (contacts topic «screening»)."
+    "Terzo giro (copie del 23/10/2026): nella Sardegna il server non ha copiato nessun PDF (i moduli e le procedure del percorso di tutela non sono in «pagine»; le copie hanno il nome degli allegati ma non il loro indirizzo). Nessun modulo nuovo. Liste d'attesa: percorso provato solo per Medio Campidano e Nuoro; Cagliari e Sassari senza a chi scrivere e documenti; Gallura, Ogliastra, Oristano e Sulcis senza pagina (le home hanno solo la voce di menu «Percorso di tutela»). In «pagine» ora la procedura dell'ASL Nuoro e la nota dell'ASL Sassari (PDF). Prevenzione: (giro del 23/10/2026 sulle copie delle 11:06) numero del centro screening in tutte e 8 le ASL: prevenzione accesa. Assistenza a casa: manca ancora un numero del PUA dell'ASL Sassari (la notizia su Alghero dà solo indirizzo e orari); cure palliative e ausili: uffici solo in alcune ASL. Invalidità: regime null in 4 sedi (inps.json, todo). Accesi dal secondo giro: medico di famiglia (pagina regionale «Scelta e revoca del medico») e cartella clinica (URP e PEC nelle copie).",
+    "Pagine aggiunte in «pagine» il 23/10/2026 (quarto giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): pagina del Centro screening. Devono dare il numero e gli orari del centro screening (contacts topic «screening»).",
+    "Screening (copia del 23/10/2026): messi il numero verde 800 186000 e lo 0783 317007; non messi lo 0783 317019 e i cellulari dei singoli screening (366 8105066, 366 8246108, 349 7751969).",
+    "Percorso di tutela (giro del 23/10/2026 sulle copie delle 11:06): nessuna pagina copiata sul percorso di tutela di questa ASL (la home ha solo la voce di menu «Percorso di tutela»). Servono la pagina e il modulo in pagine[]. Finché manca, liste d'attesa resta spenta in Sardegna."
    ],
    "emails": [
     "urp@asloristano.it"
@@ -1109,6 +1333,25 @@
      "hours": "Dal lunedì al venerdì 9–13",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening oncologici dell'ASL Sassari: numero verde per informazioni, adesione e cambio dell'appuntamento",
+     "number": "800 663355",
+     "hours": "Dal lunedì al venerdì 09:00–13:00; martedì anche 15:00–16:30",
+     "url": "https://www.asl1sassari.it/screening-oncologici-aderite-con-fiducia-allinvito-della-asl-di-sassari/",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening oncologici dell'ASL Sassari",
+     "number": "079 2062213",
+     "hours": "Dal lunedì al venerdì 09:00–13:00; martedì anche 15:00–16:30",
+     "address": "Complesso sanitario di Rizzeddu, via Rizzeddu 21/B, palazzina B, Sassari",
+     "url": "https://www.asl1sassari.it/screening-oncologici-aderite-con-fiducia-allinvito-della-asl-di-sassari/",
+     "verified": "2026-10-23",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -1135,16 +1378,28 @@
     {
      "label": "Sardegna Salute (Regione Sardegna) – Scelta e revoca del medico",
      "url": "https://www.sardegnasalute.it/sceltamedico/"
+    },
+    {
+     "label": "ASL Sassari – Screening oncologici: aderite con fiducia all'invito",
+     "url": "https://www.asl1sassari.it/screening-oncologici-aderite-con-fiducia-allinvito-della-asl-di-sassari/"
+    },
+    {
+     "label": "ASL Sassari – Il Percorso di Tutela (notizia del 05/03/2026)",
+     "url": "https://www.asl1sassari.it/il-percorso-di-tutela-la-strada-per-supportare-il-cittadino/"
+    },
+    {
+     "label": "ASL Sassari – Nota esplicativa sul Percorso di Tutela (PDF)",
+     "url": "https://www.asl1sassari.it/wp-content/uploads/2026/07/Nota-esplicativa-sulle-modalita-di-accesso-al-Percorso-di-Tutela.pdf"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-23",
    "todo": [
     "116117 in Sardegna (gestito da AREUS, centrale a Nuoro, gratuito, 24 ore su 24): attivato dal 10 settembre 2024 nel Sulcis Iglesiente (solo 116117 dal 23 agosto 2025), da maggio 2025 in Ogliastra (solo 116117 dal 23 agosto 2025), a luglio 2025 a Nuoro (solo 116117 dal 23 agosto 2025), a settembre 2025 a Oristano, dal 18–19 dicembre 2025 in Gallura, dal 28 maggio 2026 a Sassari (distretto telefonico 079, 28 postazioni; confermato dall'ASL Sassari il 21 ottobre 2026). Per Medio Campidano e Cagliari AREUS (28 maggio 2026) dice «prevista entro l'anno»: nessuna pagina copiata ne conferma l'avvio (la pagina guardie mediche dell'ASL Cagliari però riporta già il 116117: contraddizione). Quindi NON è ancora su tutto il territorio regionale.",
     "CUP: c'è un numero unico regionale di prenotazione, 1533, gratuito solo da telefono fisso, dal lunedì al venerdì 8–18 (fonte regionale: https://cupweb.sardegnasalute.it/en/aiuto e https://www.sardegnasalute.it/index.php?xsl=316&s=9&v=9&c=2934&esp=1). Da cellulare il CupWeb regionale indica 070 276424 e 070 474747; ma alcune ASL indicano numeri da cellulare diversi: Gallura 070 4675090, Oristano 0783 317293, Ogliastra 0782 490315 (CUP aziendale). Gli sportelli CUP sono delle singole ASL.",
     "Il centralino dell'ASL Sassari nelle pagine è scritto «07920610000» (11 cifre, probabilmente una cifra in più): non usato, da verificare.",
-    "Percorso di tutela (notizia del 05/03/2026, copia del 21/10/2026): si attiva contattando l'URP, per telefono 079 2084490 (lunedì–venerdì 10–13), per email o agli sportelli di Sassari (via Enrico Costa 57), Alghero (via degli Orti 93) e Castelsardo (Porto turistico); classi U 72 ore, B 10 giorni, D 30/60 giorni, P 120 giorni; se non c'è posto l'ASL autorizza il privato accreditato e risponde per iscritto. La pagina non dice i documenti: per questo non ho scritto how_to e gli altri campi.",
-    "Terzo giro (copie del 23/10/2026): nella Sardegna il server non ha copiato nessun PDF (i moduli e le procedure del percorso di tutela non sono in «pagine»; le copie hanno il nome degli allegati ma non il loro indirizzo). Nessun modulo nuovo. Liste d'attesa: percorso provato solo per Medio Campidano e Nuoro; Cagliari e Sassari senza a chi scrivere e documenti; Gallura, Ogliastra, Oristano e Sulcis senza pagina (le home hanno solo la voce di menu «Percorso di tutela»). In «pagine» ora la procedura dell'ASL Nuoro e la nota dell'ASL Sassari (PDF). Prevenzione: nessun numero degli screening nelle copie. Assistenza a casa: manca ancora un numero del PUA dell'ASL Sassari (la notizia su Alghero dà solo indirizzo e orari); cure palliative e ausili: uffici solo in alcune ASL. Invalidità: regime null in 4 sedi (inps.json, todo). Accesi dal secondo giro: medico di famiglia (pagina regionale «Scelta e revoca del medico») e cartella clinica (URP e PEC nelle copie).",
-    "Pagine aggiunte in «pagine» il 23/10/2026 (quarto giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): notizia dell'ASL sugli screening (non c'è una pagina di servizio trovata). Devono dare il numero e gli orari del centro screening (contacts topic «screening»)."
+    "Terzo giro (copie del 23/10/2026): nella Sardegna il server non ha copiato nessun PDF (i moduli e le procedure del percorso di tutela non sono in «pagine»; le copie hanno il nome degli allegati ma non il loro indirizzo). Nessun modulo nuovo. Liste d'attesa: percorso provato solo per Medio Campidano e Nuoro; Cagliari e Sassari senza a chi scrivere e documenti; Gallura, Ogliastra, Oristano e Sulcis senza pagina (le home hanno solo la voce di menu «Percorso di tutela»). In «pagine» ora la procedura dell'ASL Nuoro e la nota dell'ASL Sassari (PDF). Prevenzione: (giro del 23/10/2026 sulle copie delle 11:06) numero del centro screening in tutte e 8 le ASL: prevenzione accesa. Assistenza a casa: manca ancora un numero del PUA dell'ASL Sassari (la notizia su Alghero dà solo indirizzo e orari); cure palliative e ausili: uffici solo in alcune ASL. Invalidità: regime null in 4 sedi (inps.json, todo). Accesi dal secondo giro: medico di famiglia (pagina regionale «Scelta e revoca del medico») e cartella clinica (URP e PEC nelle copie).",
+    "Pagine aggiunte in «pagine» il 23/10/2026 (quarto giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): notizia dell'ASL sugli screening (non c'è una pagina di servizio trovata). Devono dare il numero e gli orari del centro screening (contacts topic «screening»).",
+    "Percorso di tutela (copie del 23/10/2026 della notizia del 05/03/2026 e della «Nota esplicativa», PDF, proof «pagina»): si chiede all'URP per telefono (079 2084490), per email (urp@aslsassari.it) o agli sportelli; documenti: identità o delega, ricetta, prenotazione se c'è; giorni da cui l'URP accetta la richiesta (B 8°, D 25°/55°, P 110°). Scritti channel «email», letter_mode «letter», send_to urp@aslsassari.it. I moduli A e B della procedura (delibera n. 266 del 16/04/2025) servono solo dopo, se non c'è posto: non copiati come moduli."
    ],
    "emails": [
     "urp@aslsassari.it"
@@ -1176,7 +1431,31 @@
     "how": "In Sardegna puoi scegliere, cambiare o togliere il medico o il pediatra online, con il servizio della Regione «Zente Web» (zente.sardegnasalute.it). Entri con SPID, CIE o la tessera sanitaria attivata (TS-CNS). Il cambio vale subito: stampa il foglio della scelta e portalo al nuovo medico. Online puoi cambiare una volta ogni 30 giorni. Per un medico fuori dal tuo ambito («in deroga») vai allo sportello scelta e revoca della tua ASL.",
     "url": "https://www.sardegnasalute.it/sceltamedico/",
     "url_label": "Sito della Regione"
-   }
+   },
+   "channel": "email",
+   "letter_mode": "letter",
+   "send_to": "urp@aslsassari.it",
+   "info_url": "https://www.asl1sassari.it/il-percorso-di-tutela-la-strada-per-supportare-il-cittadino/",
+   "how_to": "Prima prova più volte a prenotare con il CUP. Se ancora non c'è posto nei tempi della tua classe, chiedi il percorso di tutela all'URP dell'ASL Sassari. Puoi telefonare allo 079 2084490 (dal lunedì al venerdì 10–13), scrivere a urp@aslsassari.it o andare a uno sportello: Sassari, Alghero o Castelsardo.",
+   "documents_required": [
+    "Documento d'identità, o la delega firmata dalla persona che deve fare la visita",
+    "Ricetta del medico",
+    "Foglio della prenotazione, se ce l'hai"
+   ],
+   "what_next": [
+    "L'URP controlla che i fogli siano completi e che tu abbia i requisiti.",
+    "Il personale del percorso di tutela cerca un posto: prima nella zona dell'ASL, poi in tutta la Sardegna, anche nelle strutture private accreditate.",
+    "Se trova un posto nei tempi, ti prenota e ti dà il foglio della prenotazione.",
+    "Se non c'è posto, l'ASL ti risponde per iscritto: può proporti l'intramoenia o autorizzarti ad andare da uno specialista privato. Dopo chiedi il rimborso, meno il ticket.",
+    "Se rifiuti un posto nei tempi solo perché preferisci un'altra sede, non puoi chiedere di nuovo il percorso di tutela per la stessa visita."
+   ],
+   "notes": [
+    "In Sardegna, ASL Sassari: l'URP accetta la richiesta solo da un certo giorno, contato dalla data della ricetta. Classe B: dall'8° giorno. Classe D: dal 25° giorno per le visite, dal 55° per gli esami. Classe P: dal 110° giorno."
+   ],
+   "details": [
+    "Vale per le prime visite e i primi esami con classe B, D o P. La classe U ha altri percorsi.",
+    "Sportelli URP: Sassari, via Enrico Costa 57 (piazza Fiume); Alghero, via degli Orti 93; Castelsardo, porto turistico. Dal lunedì al venerdì 9–13; a Sassari anche lunedì e mercoledì 14–15."
+   ]
   },
   {
    "id": "sulcis",
@@ -1289,6 +1568,33 @@
      "address": "Casa della Salute, via Don Pagani, Carloforte",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Centro screening dell'ASL Sulcis Iglesiente: screening del seno",
+     "number": "0781 6683714",
+     "hours": "Dal lunedì al venerdì 10:00–13:00",
+     "url": "https://www.aslsulcis.it/strutture/centro-screening/",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Centro screening dell'ASL Sulcis Iglesiente: screening del colon retto",
+     "number": "0781 6683709",
+     "hours": "Dal lunedì al venerdì 10:00–13:00",
+     "url": "https://www.aslsulcis.it/strutture/centro-screening/",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Centro screening dell'ASL Sulcis Iglesiente: screening del collo dell'utero",
+     "number": "0781 6683710",
+     "hours": "Dal lunedì al venerdì 10:00–13:00",
+     "url": "https://www.aslsulcis.it/strutture/centro-screening/",
+     "verified": "2026-10-23",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -1323,13 +1629,19 @@
     {
      "label": "ASL Sulcis Iglesiente – PEC e URP",
      "url": "https://www.aslsulcis.it/azienda/servizi-e-funzioni-di-staff/urp/"
+    },
+    {
+     "label": "ASL Sulcis Iglesiente – Centro screening",
+     "url": "https://www.aslsulcis.it/strutture/centro-screening/"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-23",
    "todo": [
     "Lo sportello PUA di Carbonia (San Ponziano) è aperto lunedì 9–12.30 e mercoledì 15–17 senza appuntamento, ma la pagina non dà un numero di telefono.",
-    "Terzo giro (copie del 23/10/2026): nella Sardegna il server non ha copiato nessun PDF (i moduli e le procedure del percorso di tutela non sono in «pagine»; le copie hanno il nome degli allegati ma non il loro indirizzo). Nessun modulo nuovo. Liste d'attesa: percorso provato solo per Medio Campidano e Nuoro; Cagliari e Sassari senza a chi scrivere e documenti; Gallura, Ogliastra, Oristano e Sulcis senza pagina (le home hanno solo la voce di menu «Percorso di tutela»). In «pagine» ora la procedura dell'ASL Nuoro e la nota dell'ASL Sassari (PDF). Prevenzione: nessun numero degli screening nelle copie. Assistenza a casa: manca ancora un numero del PUA dell'ASL Sassari (la notizia su Alghero dà solo indirizzo e orari); cure palliative e ausili: uffici solo in alcune ASL. Invalidità: regime null in 4 sedi (inps.json, todo). Accesi dal secondo giro: medico di famiglia (pagina regionale «Scelta e revoca del medico») e cartella clinica (URP e PEC nelle copie).",
-    "Pagine aggiunte in «pagine» il 23/10/2026 (quarto giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): pagine del Centro screening. Devono dare il numero e gli orari del centro screening (contacts topic «screening»)."
+    "Terzo giro (copie del 23/10/2026): nella Sardegna il server non ha copiato nessun PDF (i moduli e le procedure del percorso di tutela non sono in «pagine»; le copie hanno il nome degli allegati ma non il loro indirizzo). Nessun modulo nuovo. Liste d'attesa: percorso provato solo per Medio Campidano e Nuoro; Cagliari e Sassari senza a chi scrivere e documenti; Gallura, Ogliastra, Oristano e Sulcis senza pagina (le home hanno solo la voce di menu «Percorso di tutela»). In «pagine» ora la procedura dell'ASL Nuoro e la nota dell'ASL Sassari (PDF). Prevenzione: (giro del 23/10/2026 sulle copie delle 11:06) numero del centro screening in tutte e 8 le ASL: prevenzione accesa. Assistenza a casa: manca ancora un numero del PUA dell'ASL Sassari (la notizia su Alghero dà solo indirizzo e orari); cure palliative e ausili: uffici solo in alcune ASL. Invalidità: regime null in 4 sedi (inps.json, todo). Accesi dal secondo giro: medico di famiglia (pagina regionale «Scelta e revoca del medico») e cartella clinica (URP e PEC nelle copie).",
+    "Pagine aggiunte in «pagine» il 23/10/2026 (quarto giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): pagine del Centro screening. Devono dare il numero e gli orari del centro screening (contacts topic «screening»).",
+    "Screening (copia del 23/10/2026 della pagina «Centro Screening»): la pagina scrive il numero verde «80023559», con una cifra in meno: non usato. Messi i numeri fissi del seno, del colon e del collo dell'utero; i cellulari no.",
+    "Percorso di tutela (giro del 23/10/2026 sulle copie delle 11:06): nessuna pagina copiata sul percorso di tutela di questa ASL (la home ha solo la voce di menu «Percorso di tutela»). Servono la pagina e il modulo in pagine[]. Finché manca, liste d'attesa resta spenta in Sardegna."
    ],
    "emails": [
     "urp.carbonia@aslsulcis.it",

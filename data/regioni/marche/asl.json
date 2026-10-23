@@ -112,6 +112,33 @@
      "url": "https://www.astpu.marche.it/it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica",
      "verified": "2026-10-22",
      "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening del seno dell'AST Pesaro Urbino: Segreteria Screening",
+     "number": "800 738073",
+     "hours": "Dal lunedì al venerdì 10–13",
+     "url": "https://www.astpu.marche.it/it/servizi-e-prestazioni/prevenzione-e-vaccini/screening-per-la-prevenzione-dei-tumori",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening del collo dell'utero dell'AST Pesaro Urbino: Segreteria Screening",
+     "number": "800 710977",
+     "hours": "Dal lunedì al venerdì 10–13",
+     "url": "https://www.astpu.marche.it/it/servizi-e-prestazioni/prevenzione-e-vaccini/screening-per-la-prevenzione-dei-tumori",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening del colon-retto dell'AST Pesaro Urbino: Segreteria Screening",
+     "number": "800 210858",
+     "hours": "Dal lunedì al venerdì 10–13",
+     "url": "https://www.astpu.marche.it/it/servizi-e-prestazioni/prevenzione-e-vaccini/screening-per-la-prevenzione-dei-tumori",
+     "verified": "2026-10-23",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -141,8 +168,9 @@
     "Guardia medica: la pagina «guardia medica – continuità assistenziale» è copiata senza numeri. Nelle Marche il 116117 non è ancora attivo (c'è solo il progetto della centrale regionale).",
     "PUA: copiato solo quello di Pesaro; mancano Fano e Urbino.",
     "CUP: le copie dell'AST Pesaro Urbino danno solo il numero verde regionale 800 098 798; i numeri da cellulare (0721 1779301, 071 9998010) sono nelle pagine delle altre AST.",
-    "Moduli (23/10/2026): accesi cartella clinica, assistenza a casa, cure palliative e medico di famiglia (scelta del medico dalla copia della pagina dell'anagrafe assistiti). Spenti: liste d'attesa (nessuna copia dice cosa fare se il CUP non trova posto nei tempi: pagine nuove in pagine[]) e prevenzione (nessun numero dello screening nelle copie: pagine nuove in pagine[]).",
-    "Screening e liste d'attesa (23/10/2026): nessun numero dello screening e nessuna pagina sul percorso di tutela nelle copie. Nuove pagine in pagine[] (trovate col motore di ricerca, solo domini ufficiali, nessun dato preso da lì): pagine screening delle AST e «Tempi di attesa prestazioni specialistiche» dell'ARS Marche (DGR 380/2019, percorsi di tutela). Le pagine di regione.marche.it nelle copie sono la pagina del captcha (Radware): forse anche questa."
+    "Screening: tre numeri verdi delle Segreterie Screening (lunedì-venerdì 10-13) dalla pagina «Screening per la prevenzione dei tumori» dell'AST, copia del 23/10/2026 (marche/pesaro-urbino/3a938bf5550a.txt).",
+    "Liste d'attesa (copie del 23/10/2026): la pagina «Tempi di attesa prestazioni specialistiche» dell'ARS Marche, copiata solo nella cartella dell'AST Pesaro Urbino (marche/pesaro-urbino/afe6ab8f30b5.txt; nelle altre è la pagina del captcha), dice che chi non trova posto al CUP nella sua provincia va nella «Lista di presa in carico» e l'AST lo richiama (fino a tre tentativi). Lo stesso, con i giorni per classe (B 5, D 15 o 30, P 90), nella pagina «Liste di attesa servizi ambulatoriali» dell'AST Ancona (ancona/511063bea07c.txt). Manca a chi si scrive se nessuno richiama: solo le pagine URP dell'AST Ascoli Piceno e dell'AST Fermo dicono che l'URP segue le segnalazioni sulle liste di presa in carico. Liste d'attesa resta spento.",
+    "Moduli (23/10/2026): accesi cartella clinica, assistenza a casa, cure palliative e medico di famiglia. Spenti: liste d'attesa (manca a chi si scrive se la lista di presa in carico non richiama) e prevenzione (manca il numero dello screening dell'AST Ascoli Piceno)."
    ],
    "pagine": [
     {
@@ -384,6 +412,15 @@
      "url": "https://www.astancona.marche.it/it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica",
      "verified": "2026-10-22",
      "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening dei tumori dell'AST Ancona: numero verde della Segreteria Screening",
+     "number": "800 267267",
+     "hours": "Dal lunedì al venerdì 9:00–13:00",
+     "url": "https://www.astancona.marche.it/it/servizi-e-prestazioni/screening/screening-oncologici-diagnosi-precoce-del-tumore-della-mammella",
+     "verified": "2026-10-23",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -418,8 +455,9 @@
     "PUA: la pagina generale non dà numeri; la notizia sul PUA di Jesi dà solo gli orari. Mancano le cure domiciliari di Jesi, Senigallia e Fabriano.",
     "Azienda Ospedaliero Universitaria delle Marche (Torrette di Ancona): non ancora tra le pagine copiate.",
     "Nella pagina delle cure domiciliari l'email dell'area Nord è scritta «adinord.ast.an@sanita.amrche.it» (refuso del sito): non messa.",
-    "Moduli (23/10/2026): accesi cartella clinica, assistenza a casa, cure palliative e medico di famiglia (scelta del medico dalla copia della pagina dell'anagrafe assistiti). Spenti: liste d'attesa (nessuna copia dice cosa fare se il CUP non trova posto nei tempi: pagine nuove in pagine[]) e prevenzione (nessun numero dello screening nelle copie: pagine nuove in pagine[]).",
-    "Screening e liste d'attesa (23/10/2026): nessun numero dello screening e nessuna pagina sul percorso di tutela nelle copie. Nuove pagine in pagine[] (trovate col motore di ricerca, solo domini ufficiali, nessun dato preso da lì): pagine screening delle AST e «Tempi di attesa prestazioni specialistiche» dell'ARS Marche (DGR 380/2019, percorsi di tutela). Le pagine di regione.marche.it nelle copie sono la pagina del captcha (Radware): forse anche questa."
+    "Screening: numero verde della Segreteria Screening 800 267 267 (lunedì-venerdì 9:00-13:00) dalla pagina sullo screening del seno dell'AST, copia del 23/10/2026 (marche/ancona/68de5b10ca14.txt).",
+    "Liste d'attesa (copie del 23/10/2026): la pagina «Tempi di attesa prestazioni specialistiche» dell'ARS Marche, copiata solo nella cartella dell'AST Pesaro Urbino (marche/pesaro-urbino/afe6ab8f30b5.txt; nelle altre è la pagina del captcha), dice che chi non trova posto al CUP nella sua provincia va nella «Lista di presa in carico» e l'AST lo richiama (fino a tre tentativi). Lo stesso, con i giorni per classe (B 5, D 15 o 30, P 90), nella pagina «Liste di attesa servizi ambulatoriali» dell'AST Ancona (ancona/511063bea07c.txt). Manca a chi si scrive se nessuno richiama: solo le pagine URP dell'AST Ascoli Piceno e dell'AST Fermo dicono che l'URP segue le segnalazioni sulle liste di presa in carico. Liste d'attesa resta spento.",
+    "Moduli (23/10/2026): accesi cartella clinica, assistenza a casa, cure palliative e medico di famiglia. Spenti: liste d'attesa (manca a chi si scrive se la lista di presa in carico non richiama) e prevenzione (manca il numero dello screening dell'AST Ascoli Piceno)."
    ],
    "pagine": [
     {
@@ -655,6 +693,15 @@
      "url": "https://www.astmc.marche.it/contatti",
      "verified": "2026-10-22",
      "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening dei tumori dell'AST Macerata: numero verde della Segreteria Screening",
+     "number": "800 178008",
+     "hours": "Martedì e giovedì 9–13",
+     "url": "https://www.astmc.marche.it/it/organizzazione/unita-operativa-semplice-dipartimentale/uosd-screening-oncologici",
+     "verified": "2026-10-23",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -684,9 +731,9 @@
     "CUP: le copie dell'AST Macerata danno il numero verde e lo 0721 1779301 in una notizia sugli SMS falsi; il terzo numero regionale (071 9998010) è nelle pagine delle altre AST.",
     "Guardia medica: nelle copie nessun numero (una notizia dice che quella di Corridonia è nella Casa della Comunità di viale Italia). Nelle Marche il 116117 non è ancora attivo.",
     "PUA e ADI: copiati solo Tolentino e Piediripa (pagina del distretto di Macerata); mancano Civitanova Marche e Camerino.",
-    "Moduli (23/10/2026): accesi cartella clinica, assistenza a casa, cure palliative e medico di famiglia (scelta del medico dalla copia della pagina dell'anagrafe assistiti). Spenti: liste d'attesa (nessuna copia dice cosa fare se il CUP non trova posto nei tempi: pagine nuove in pagine[]) e prevenzione (nessun numero dello screening nelle copie: pagine nuove in pagine[]).",
-    "Screening e liste d'attesa (23/10/2026): nessun numero dello screening e nessuna pagina sul percorso di tutela nelle copie. Nuove pagine in pagine[] (trovate col motore di ricerca, solo domini ufficiali, nessun dato preso da lì): pagine screening delle AST e «Tempi di attesa prestazioni specialistiche» dell'ARS Marche (DGR 380/2019, percorsi di tutela). Le pagine di regione.marche.it nelle copie sono la pagina del captcha (Radware): forse anche questa. Per l'AST Macerata non ho trovato una pagina dello screening sul sito ufficiale: da cercare.",
-    "Pagine aggiunte in «pagine» il 23/10/2026 (quarto giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): pagina della UOSD Screening oncologici e pagina della Regione. Devono dare il numero e gli orari del centro screening (contacts topic «screening»)."
+    "Screening: numero verde della Segreteria Screening Oncologici 800 178008 (martedì e giovedì 9-13) dalla pagina della UOSD Screening oncologici, copia del 23/10/2026 (marche/macerata/5556b3a250f4.txt). La pagina dà anche i telefoni delle sedi di Piediripa, Civitanova Marche e Castelraimondo: non messi. La pagina screening della Regione (regione.marche.it) nella copia è il captcha.",
+    "Liste d'attesa (copie del 23/10/2026): la pagina «Tempi di attesa prestazioni specialistiche» dell'ARS Marche, copiata solo nella cartella dell'AST Pesaro Urbino (marche/pesaro-urbino/afe6ab8f30b5.txt; nelle altre è la pagina del captcha), dice che chi non trova posto al CUP nella sua provincia va nella «Lista di presa in carico» e l'AST lo richiama (fino a tre tentativi). Lo stesso, con i giorni per classe (B 5, D 15 o 30, P 90), nella pagina «Liste di attesa servizi ambulatoriali» dell'AST Ancona (ancona/511063bea07c.txt). Manca a chi si scrive se nessuno richiama: solo le pagine URP dell'AST Ascoli Piceno e dell'AST Fermo dicono che l'URP segue le segnalazioni sulle liste di presa in carico. Liste d'attesa resta spento.",
+    "Moduli (23/10/2026): accesi cartella clinica, assistenza a casa, cure palliative e medico di famiglia. Spenti: liste d'attesa (manca a chi si scrive se la lista di presa in carico non richiama) e prevenzione (manca il numero dello screening dell'AST Ascoli Piceno)."
    ],
    "pagine": [
     {
@@ -921,6 +968,15 @@
      "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/sportelli-front-office/anagrafe-assistiti",
      "verified": "2026-10-23",
      "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening dei tumori dell'AST Fermo",
+     "number": "800 185454",
+     "address": "Via Zeppilli 10, Fermo",
+     "url": "https://www.astfm.marche.it/it/organizzazione/unita-operativa-semplice-dipartimentale/screening-oncologici",
+     "verified": "2026-10-23",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -956,9 +1012,10 @@
    "last_verified": "2026-10-23",
    "todo": [
     "Guardia medica: la pagina dà per le postazioni il numero del centralino 0734 625111; nelle Marche il 116117 non è ancora attivo.",
-    "Moduli (23/10/2026): accesi cartella clinica, assistenza a casa, cure palliative e medico di famiglia (scelta del medico dalla copia della pagina dell'anagrafe assistiti). Spenti: liste d'attesa (nessuna copia dice cosa fare se il CUP non trova posto nei tempi: pagine nuove in pagine[]) e prevenzione (nessun numero dello screening nelle copie: pagine nuove in pagine[]).",
     "PEC (copia del 23/10/2026 della pagina «Note legali»: «pec: ast.fermo@emarche.it»): messa in «pec».",
-    "Screening e liste d'attesa (23/10/2026): nessun numero dello screening e nessuna pagina sul percorso di tutela nelle copie. Nuove pagine in pagine[] (trovate col motore di ricerca, solo domini ufficiali, nessun dato preso da lì): pagine screening delle AST e «Tempi di attesa prestazioni specialistiche» dell'ARS Marche (DGR 380/2019, percorsi di tutela). Le pagine di regione.marche.it nelle copie sono la pagina del captcha (Radware): forse anche questa."
+    "Screening: telefono 800 185454 dalla pagina «Screening oncologici» dell'AST, copia del 23/10/2026 (marche/fermo/5319a9a16f31.txt). L'orario della pagina (lunedì-venerdì 10.30-13.00) è l'apertura della sede, non del telefono: non messo. Non messo neanche il numero WhatsApp.",
+    "Liste d'attesa (copie del 23/10/2026): la pagina «Tempi di attesa prestazioni specialistiche» dell'ARS Marche, copiata solo nella cartella dell'AST Pesaro Urbino (marche/pesaro-urbino/afe6ab8f30b5.txt; nelle altre è la pagina del captcha), dice che chi non trova posto al CUP nella sua provincia va nella «Lista di presa in carico» e l'AST lo richiama (fino a tre tentativi). Lo stesso, con i giorni per classe (B 5, D 15 o 30, P 90), nella pagina «Liste di attesa servizi ambulatoriali» dell'AST Ancona (ancona/511063bea07c.txt). Manca a chi si scrive se nessuno richiama: solo le pagine URP dell'AST Ascoli Piceno e dell'AST Fermo dicono che l'URP segue le segnalazioni sulle liste di presa in carico. Liste d'attesa resta spento.",
+    "Moduli (23/10/2026): accesi cartella clinica, assistenza a casa, cure palliative e medico di famiglia. Spenti: liste d'attesa (manca a chi si scrive se la lista di presa in carico non richiama) e prevenzione (manca il numero dello screening dell'AST Ascoli Piceno)."
    ],
    "pagine": [
     {
@@ -1228,8 +1285,9 @@
    "todo": [
     "Guardia medica: nessuna pagina copiata con i numeri (la pagina «UOC cure primarie» è quasi vuota). Nelle Marche il 116117 non è ancora attivo.",
     "La pagina CUP dell'AST scrive anche «0721.17793011» (una cifra in più): usato 0721 1779301, come nelle altre pagine.",
-    "Moduli (23/10/2026): accesi cartella clinica, assistenza a casa, cure palliative e medico di famiglia (scelta del medico dalla copia della pagina dell'anagrafe assistiti). Spenti: liste d'attesa (nessuna copia dice cosa fare se il CUP non trova posto nei tempi: pagine nuove in pagine[]) e prevenzione (nessun numero dello screening nelle copie: pagine nuove in pagine[]).",
-    "Screening e liste d'attesa (23/10/2026): nessun numero dello screening e nessuna pagina sul percorso di tutela nelle copie. Nuove pagine in pagine[] (trovate col motore di ricerca, solo domini ufficiali, nessun dato preso da lì): pagine screening delle AST e «Tempi di attesa prestazioni specialistiche» dell'ARS Marche (DGR 380/2019, percorsi di tutela). Le pagine di regione.marche.it nelle copie sono la pagina del captcha (Radware): forse anche questa."
+    "Liste d'attesa (copie del 23/10/2026): la pagina «Tempi di attesa prestazioni specialistiche» dell'ARS Marche, copiata solo nella cartella dell'AST Pesaro Urbino (marche/pesaro-urbino/afe6ab8f30b5.txt; nelle altre è la pagina del captcha), dice che chi non trova posto al CUP nella sua provincia va nella «Lista di presa in carico» e l'AST lo richiama (fino a tre tentativi). Lo stesso, con i giorni per classe (B 5, D 15 o 30, P 90), nella pagina «Liste di attesa servizi ambulatoriali» dell'AST Ancona (ancona/511063bea07c.txt). Manca a chi si scrive se nessuno richiama: solo le pagine URP dell'AST Ascoli Piceno e dell'AST Fermo dicono che l'URP segue le segnalazioni sulle liste di presa in carico. Liste d'attesa resta spento.",
+    "Moduli (23/10/2026): accesi cartella clinica, assistenza a casa, cure palliative e medico di famiglia. Spenti: liste d'attesa (manca a chi si scrive se la lista di presa in carico non richiama) e prevenzione (manca il numero dello screening dell'AST Ascoli Piceno).",
+    "Screening (copie del 23/10/2026): la pagina «UOSD Screening» dell'AST (marche/ascoli-piceno/0b792a88254f.txt) non ha numeri. Messe in «pagine» (url trovati col motore di ricerca sul sito dell'AST, nessun dato preso da lì) la pagina del servizio «Screening oncologici» e la pagina «Liste di attesa» dei servizi amministrativi: dopo la copia, il contatto «screening» e si accende «prevenzione» nelle Marche."
    ],
    "pagine": [
     {
@@ -1295,6 +1353,14 @@
     {
      "tipo": "tutela",
      "url": "https://www.regione.marche.it/ars/Settori/Territorio-e-Integrazione-sociosanitaria/Tempi-di-attesa-prestazioni-specialistiche"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.astap.marche.it/it/servizi-e-prestazioni/screening/screening-oncologici"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.astap.marche.it/it/servizi-e-prestazioni/servizi-amministrativi/liste-di-attesa"
     }
    ],
    "scelta_medico": {

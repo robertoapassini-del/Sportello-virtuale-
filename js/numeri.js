@@ -3,7 +3,7 @@
 // È il modulo di prova per più regioni (docs/regioni.md, passo 3): cambiando regione i dati si ricaricano
 // senza ricaricare la pagina; per una regione non ancora attiva resta la parte nazionale e l'invito a scriverci.
 // La provincia scelta va nell'indirizzo (#palermo), così la pagina si può condividere.
-import { esc, loadJSON, loadRegional, renderFooter, helpBox, sourcesBox, callButton, hideHeadingEmoji, aslLabel, regioneInfo, inRegione, regione, regioneDeiDati, regioneNonPronta, setRegione } from './common.js';
+import { esc, loadJSON, loadRegional, renderFooter, helpBox, sourcesBox, callButton, hideHeadingEmoji, aslLabel, regioneInfo, inRegione, regione, regioneScelta, fontiNazionali, regioneDeiDati, regioneNonPronta, setRegione } from './common.js';
 import { needsRegion, regionChoices, changeRegionLink, regionAction, regionMissing } from './flow.js';
 
 const ROOT = '../';
@@ -85,7 +85,7 @@ function aspBlock(a) {
 }
 
 // Voci di data/numeri.json valide solo in una regione («regione»: "sicilia"): si mostrano solo a chi l'ha scelta.
-const perMe = (x) => !x.regione || (x.regione === regione() && !needsRegion() && !regioneNonPronta());
+const perMe = (x) => !x.regione || (x.regione === regione() && regioneScelta() && !needsRegion() && !regioneNonPronta());
 const nota = (t) => (typeof t === 'string' ? t : t.text);
 // Scorre fino a un blocco, se c'è (senza «?.»: non va su Safari 12, tests/compat.test.mjs).
 const scorriA = (id) => { const el = document.getElementById(id); if (el) el.scrollIntoView({ block: 'start' }); };
@@ -132,7 +132,7 @@ function render() {
     ${nums.links.some(perMe) ? `<h2>Su internet</h2>
     ${nums.links.filter(perMe).map(link).join('')}` : ''}
     ${helpBox()}
-    ${sourcesBox([...nums.sources, ...(a && pronta ? a.sources : [])], { verified: nums.last_verified })}`;
+    ${sourcesBox([...fontiNazionali(nums.sources), ...(a && pronta ? a.sources : [])], { verified: nums.last_verified })}`;
   hideHeadingEmoji(app);
 }
 

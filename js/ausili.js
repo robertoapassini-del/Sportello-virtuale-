@@ -6,7 +6,7 @@
 import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween, art } from './engine.js';
 import { ausiliReminder, mailtoHref, conZona } from './letters.js';
 import { noPecBox,
-  esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, copyText, printText, readForm, aspCalls, officeBox, personFields, reportErrorHref, complaintTo, aslLabel, mailLink, generalContact, syncDelegate, delegateNoteText,
+  esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, copyText, printText, readForm, aspCalls, officeBox, personFields, reportErrorHref, complaintTo, aslLabel, mailLink, generalContact, syncDelegate, delegateNoteText, fontiNazionali,
 } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons, provinceChoice, zonaScreen, intestazioneAzienda } from './flow.js';
 
@@ -26,7 +26,7 @@ const deadline = () => simpleDeadline({ fromDate: state.requestDate, days: rules
 
 function sources() {
   const a = state.province ? asp() : null;
-  const items = [...rules.sources];
+  const items = fontiNazionali(rules.sources);
   if (a) {
     if (a.info_url) items.push({ label: `${a.name} – sito ufficiale`, url: a.info_url });
     items.push(...a.sources);

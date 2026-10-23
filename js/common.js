@@ -127,16 +127,24 @@ export function regioneNonPronta() {
   const info = regioneInfo();
   return info.moduli && !info.moduli.includes(moduloPagina()) ? { ...info, parziale: true } : null;
 }
+// Vero solo se chi usa il sito ha scelto la Sicilia e la pagina ha i suoi dati. regione() da sola non basta:
+// senza una scelta vale la regione predefinita dell'indice (la Sicilia), ma chi legge può essere di un'altra regione.
+export const sceltaSicilia = () => regioneScelta() && regione() === 'sicilia' && !regioneNonPronta();
+// Le fonti dei file nazionali (data/rules-*.json) che sono della Sicilia (Regione Siciliana, ASP Palermo, Enna…)
+// si mostrano solo a chi ha scelto la Sicilia. Non usarla per le fonti dell'azienda: «ASP» vale anche in Calabria.
+export const fontiNazionali = (list) => list.filter((s) => sceltaSicilia() || !/Sicil|^ASP |Palermo|Catania|\bEnna\b/.test(s.label || ''));
 // La regione dei dati: quella salvata se è attiva, altrimenti la predefinita dell'indice.
+// Se l'indice non arriva, vale la regione salvata (chi ha scelto il Lazio non vede la Sicilia).
 export function regione() {
   if (!indice) return REGIONE_DEFAULT;
+  if (!indice.regioni.length && savedRegione()) return savedRegione();
   return regioneScelta() ? savedRegione() : (indice.default || REGIONE_DEFAULT);
 }
 // La voce dell'indice della regione in uso (nome, asl_label…).
 export const regioneInfo = () => regioni().find((r) => r.id === regione()) || { id: regione(), name: 'Sicilia' };
 // La regione di chi usa il sito, per i testi: quella scelta anche se non è ancora attiva (Campania, Veneto…);
 // se non ha scelto e le regioni sono più di una, nessuna (testi generici). Per i dati invece vale regione().
-const regioneUtente = () => regioneSalvata() || (regioniAttive().length > 1 ? null : regioneInfo());
+const regioneUtente = () => regioneSalvata() || (regioniAttive().length === 1 ? regioneInfo() : null);
 // Come si chiama l'azienda sanitaria nella regione dell'utente: ASP in Sicilia, ATS in Lombardia… (ASL se non si sa).
 export const aslLabel = () => (regioneUtente() || {}).asl_label || 'ASL';
 // «in Sicilia», ma «nel Lazio», «nelle Marche» (campo «in» dell'indice); «nella tua regione» se non si sa.
@@ -144,13 +152,15 @@ export const inRegione = (r = regioneUtente()) => (r ? r.in || `in ${r.name}` : 
 // Come si scrive in testa a una lettera (Sicilia: «Azienda Sanitaria Provinciale di Palermo»).
 export const aslIntestazione = () => regioneInfo().asl_intestazione || aslLabel();
 // Pagine ufficiali della Regione usate nei moduli (data/regioni/index.json, «link»): fse, assessorato, dialisi.
-export const regioneLink = (k) => (regioneInfo().link || {})[k] || '';
+export const regioneLink = (k) => (regioneScelta() && (regioneInfo().link || {})[k]) || '';
 // La regione di cui la pagina ha caricato i dati: se l'utente ne sceglie un'altra, la pagina si ricarica.
 export const regioneDeiDati = () => regioneCaricata;
 // name è il tipo di dati ('asl', 'inps'); il nome del file lo dà l'indice (files), se è diverso.
 export const regionalPath = (root, name) => `${root}data/regioni/${regione()}/${(regioneInfo().files || {})[name] || name}.json`;
 export async function loadRegional(root, name) {
   await loadRegioni(root);
+  // Indice non arrivato e nessuna regione salvata: non sappiamo la regione, niente dati regionali (resta la parte nazionale).
+  if (!regioni().length && !savedRegione()) throw new Error('Elenco delle regioni non arrivato');
   regioneCaricata = regione();
   return loadJSON(regionalPath(root, name));
 }
@@ -213,7 +223,8 @@ export async function renderSources(root = '') {
   try {
     const names = ['rules', 'rules-invalidita', 'rules-cartella', 'rules-ausili', 'rules-esenzione', 'rules-ricorso', 'rules-adi', 'rules-piano', 'rules-domiciliare', 'rules-palliative', 'rules-prevenzione', 'rules-medico'];
     const all = await Promise.all(names.map((n) => loadJSON(`${root}data/${n}.json`)));
-    el.innerHTML = sourcesBox(all.flatMap((r) => r.sources), { verified: all[0].last_verified });
+    await loadRegioni(root); // per fontiNazionali(): le fonti siciliane solo a chi ha scelto la Sicilia
+    el.innerHTML = sourcesBox(fontiNazionali(all.flatMap((r) => r.sources)), { verified: all[0].last_verified });
   } catch { el.innerHTML = ''; }
 }
 
