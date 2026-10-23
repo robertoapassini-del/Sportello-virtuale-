@@ -1,6 +1,6 @@
 {
  "regione": "nazionali",
- "aggiornato": "2026-10-23T03:04:49.467Z",
+ "aggiornato": "2026-10-23T06:46:14.483Z",
  "pagine": [
   {
    "asl": "urgenze",
@@ -11,6 +11,12 @@
    "titolo": "Attivo anche a Palermo il Numero emergenza unico europeo 112 | Ministero dell‘Interno",
    "sha": "62c982c8451c2f0302933e136e64b906babe00208c626eae254c9c39314c1df2",
    "caratteri": 6907,
+   "link_pdf": [
+    {
+     "url": "https://www.interno.gov.it/sites/default/files/allegati/comunicato_pa_presentazione_nue_112_sicilia_occidentale.pdf",
+     "testo": "Il comunicato della prefettura"
+    }
+   ],
    "cambiata": false
   },
   {
@@ -33,9 +39,27 @@
    "finale": "https://azzurro.it/",
    "file": "ascolto/6f8ce0e8bdd0.txt",
    "titolo": "Telefono Azzurro | Sito ufficiale",
-   "sha": "44d4bf36af66cf3da003a6718528df9df71b10914aa7f4de976c1eb16b8e831b",
-   "caratteri": 14405,
-   "cambiata": false
+   "sha": "dc117876c7cdb6496efc8a4f838a2621ed5ec0681fdcf7bb271ee3e1c455817f",
+   "caratteri": 14504,
+   "link_pdf": [
+    {
+     "url": "https://azzurro.it/wp-content/uploads/2025/06/documento_2025-1.pdf",
+     "testo": "Consulta il Modulo L 124 a questo link"
+    },
+    {
+     "url": "https://azzurro.it/wp-content/uploads/2023/05/brochure-lasciti-telefono-azzurro.pdf",
+     "testo": "Scarica brochure"
+    },
+    {
+     "url": "https://azzurro.it/wp-content/uploads/2023/05/leaflet-lasciti-telefono-azzurro.pdf",
+     "testo": "Scarica leaflet"
+    },
+    {
+     "url": "https://azzurro.it/wp-content/uploads/2023/02/Dalla-parte-dei-bambini-dal-bisogno-alla-risposta.compressed.pdf",
+     "testo": "Dalla parte dei bambini - Dal bisogno alla risposta"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "ascolto",
@@ -47,6 +71,12 @@
    "titolo": "Telefono Amico Italia",
    "sha": "aa92548c4dd34d42c550545c84fa3f5809bcfea77127a4323a101b2afbbc2646",
    "caratteri": 7045,
+   "link_pdf": [
+    {
+     "url": "https://www.telefonoamico.it/z_site2021/wp-content/uploads/Statuto-Telefono-Amico-Italia.pdf",
+     "testo": "STATUTO"
+    }
+   ],
    "cambiata": false
   },
   {
@@ -84,6 +114,19 @@
    "cambiata": false
   },
   {
+   "asl": "ascolto",
+   "url": "https://azzurro.it/wp-content/uploads/2025/06/documento_2025-1.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://azzurro.it",
+   "http": 200,
+   "file": "ascolto/8cd25a0cf000.txt",
+   "titolo": "SOS IL TELEFONO AZZURRO ETS",
+   "sha": "78ae3480b45d0de6f28af1acb6d8ae1c5bcbb13cc9668029cf32ad04007dc84b",
+   "caratteri": 4083,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
    "asl": "uffici",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/contatti/contact-center-multicanale.html",
    "controllata": "2026-10-23",
@@ -92,6 +135,12 @@
    "titolo": "Portale Inps - Contact Center Multicanale",
    "sha": "be4eb7feb8ee22751f964a1f60a4edfaab0c3ae937864a0e6b2d613f347e7df1",
    "caratteri": 50852,
+   "link_pdf": [
+    {
+     "url": "https://www.inps.it/content/dam/inps-site/pdf/contatti/INPS_servizi_automatici_guida_120226.pdf",
+     "testo": "guida"
+    }
+   ],
    "cambiata": false
   },
   {
@@ -115,6 +164,19 @@
    "sha": "b78d58c32f99478b0b3b08b2bebe373bfdc118a4a045c15acfc19606f4ac45b6",
    "caratteri": 1567,
    "cambiata": false
+  },
+  {
+   "asl": "uffici",
+   "url": "https://www.inps.it/content/dam/inps-site/pdf/contatti/INPS_servizi_automatici_guida_120226.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.inps.it/it/it/sedi-e-contatti/contatti/contact-center-multicanale.html",
+   "http": 200,
+   "file": "uffici/da1b8b026ff3.txt",
+   "titolo": "Author:",
+   "sha": "956106cb2daecd641370b9ec958de3ad9400597b79c1ec57e79c1664e46ebd05",
+   "caratteri": 9036,
+   "pdf": true,
+   "cambiata": true
   }
  ]
 }

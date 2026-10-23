@@ -1,6 +1,6 @@
 {
  "regione": "sardegna",
- "aggiornato": "2026-10-23T02:34:10.967Z",
+ "aggiornato": "2026-10-23T06:08:21.362Z",
  "pagine": [
   {
    "asl": "cagliari",
@@ -71,6 +71,12 @@
    "sha": "33ff0dc0508b5e4616bf3124b2b64904b10c87689301beec8dadeaa139fa64b8",
    "caratteri": 5089,
    "email_nascoste": 5,
+   "link_pdf": [
+    {
+     "url": "https://www.asl8cagliari.it/wp-content/uploads/2026/08/modulo-reclamo-urp.pdf",
+     "testo": "Modulo URP suggerimenti - reclami - elogi"
+    }
+   ],
    "cambiata": false
   },
   {
@@ -95,6 +101,16 @@
    "sha": "bcfb49a9a326b9e0e1a0b83e94cf4e8b562fa166d3f2070eb69a4fa8080888db",
    "caratteri": 6399,
    "email_nascoste": 3,
+   "link_pdf": [
+    {
+     "url": "https://www.asl8cagliari.it/wp-content/uploads/2024/05/delibera-n-349-del-15-maggio-2024.pdf",
+     "testo": "Deliberazione del Direttore Generale n. 349 del 17 maggio 2024"
+    },
+    {
+     "url": "https://www.asl8cagliari.it/wp-content/uploads/2024/05/All._A._Percorso_tutela_ASL_Cagliari-con-Delibera-DG.pdf",
+     "testo": "Allegato A “Procedura aziendale: ”Percorso di tutela” di accesso alternativo alle prestazioni specialistiche del cittadi"
+    }
+   ],
    "cambiata": false
   },
   {
@@ -107,6 +123,16 @@
    "sha": "93ab47a8b05c3046d23503f202c2d44c77dd09df7875ccfce53fa72b1160ff8f",
    "caratteri": 5786,
    "email_nascoste": 3,
+   "link_pdf": [
+    {
+     "url": "https://www.asl8cagliari.it/wp-content/uploads/2024/10/Percorso_tutela-ASL-Cagliari-descrizione-e-diagrammi.pdf",
+     "testo": "Allegato A – “Procedura aziendale Percorso di tutela di accesso alternativo alle prestazioni specialistiche del cittadin"
+    },
+    {
+     "url": "https://www.asl8cagliari.it/wp-content/uploads/2024/05/Deliberazione-del-Direttore-Generale-n-349-del-17-maggio-2024.pdf",
+     "testo": "Deliberazione del Direttore Generale n 349 del 17 maggio 2024"
+    }
+   ],
    "cambiata": false
   },
   {
@@ -119,7 +145,99 @@
    "sha": "3ca94b592ef9511ad5fc5632bd66af1a31164b9877e7097495652db370442eeb",
    "caratteri": 8874,
    "email_nascoste": 31,
+   "link_pdf": [
+    {
+     "url": "https://www.asl8cagliari.it/wp-content/uploads/2025/09/MODULO_UNICO_SCELTA_REVOCA_MMG_PLS-ASL_CAGLIARI-1.pdf",
+     "testo": "Modulo Unico Scelta e Revoca Medico o Pediatra ASL Cagliari"
+    },
+    {
+     "url": "https://www.asl8cagliari.it/wp-content/uploads/2025/09/4-DUPLICATO-TESSERA-SANITARIA-2.pdf",
+     "testo": "Modulo per la richiesta di duplicato della Tessera Sanitaria"
+    },
+    {
+     "url": "https://www.asl8cagliari.it/wp-content/uploads/2025/09/MODULO-AUTOCERTIFICAZIONE.pdf",
+     "testo": "Modulo di Autocertificazione"
+    }
+   ],
    "cambiata": false
+  },
+  {
+   "asl": "cagliari",
+   "url": "https://www.asl8cagliari.it/wp-content/uploads/2026/08/modulo-reclamo-urp.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asl8cagliari.it/azienda/urp/",
+   "http": 200,
+   "file": "cagliari/0f3cccb64757.txt",
+   "titolo": "Microsoft Word - Nuovo-Modulo-URP-Segnalazioni-Reclami-Suggerimenti-Elogi",
+   "sha": "b81319425c0f5290a3ac5f4d6d81609c761666e4fbc75bfcdddd73372e59bfed",
+   "caratteri": 9112,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "cagliari",
+   "url": "https://www.asl8cagliari.it/wp-content/uploads/2024/05/All._A._Percorso_tutela_ASL_Cagliari-con-Delibera-DG.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asl8cagliari.it/percorso-tutela-accesso-alternativo-alle-prestazioni-specialistiche/",
+   "http": 200,
+   "file": "cagliari/76ea106986c6.txt",
+   "titolo": "ALLEGATO A",
+   "sha": "698194762b06a0c8b912e8aae711c45091cc3d14e0b319306191e424dc0ed043",
+   "caratteri": 7516,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "cagliari",
+   "url": "https://www.asl8cagliari.it/wp-content/uploads/2024/10/Percorso_tutela-ASL-Cagliari-descrizione-e-diagrammi.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asl8cagliari.it/come_fare_per/monitorare-le-liste-di-attesa/",
+   "http": 200,
+   "file": "cagliari/d31de587a79a.txt",
+   "titolo": "ALLEGATO A",
+   "sha": "66c6d0d401c53870c05868b1f2eddecdaf38c9d3a0ef0a802ca12a685d9f5323",
+   "caratteri": 7487,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "cagliari",
+   "url": "https://www.asl8cagliari.it/wp-content/uploads/2025/09/MODULO_UNICO_SCELTA_REVOCA_MMG_PLS-ASL_CAGLIARI-1.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asl8cagliari.it/servizio/scelta-e-revoca-del-medico-online/",
+   "http": 200,
+   "file": "cagliari/723194b1266c.txt",
+   "titolo": "Modulo per la scelta e la revoca del Medico di Medicina Generale/Pediatra di Libera Scelta",
+   "sha": "dae407b79775e5d35a888e22aeeaae3d13fec6753bed97ea5f6476580aefb0a4",
+   "caratteri": 3075,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "cagliari",
+   "url": "https://www.asl8cagliari.it/wp-content/uploads/2025/09/4-DUPLICATO-TESSERA-SANITARIA-2.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asl8cagliari.it/servizio/scelta-e-revoca-del-medico-online/",
+   "http": 200,
+   "file": "cagliari/1b359909f330.txt",
+   "titolo": "RICHIESTA DUPLICATO TESSERA SANITARIA",
+   "sha": "2f82bcd223e5f8fb5542d14a7cb0efef93da1a9250351a6279aadefff9d416a8",
+   "caratteri": 2206,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "cagliari",
+   "url": "https://www.asl8cagliari.it/wp-content/uploads/2025/09/MODULO-AUTOCERTIFICAZIONE.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asl8cagliari.it/servizio/scelta-e-revoca-del-medico-online/",
+   "http": 200,
+   "file": "cagliari/d66c895b1097.txt",
+   "titolo": "DICHIARAZIONE SOSTITUTIVA",
+   "sha": "bf5f6b2b77a742f96eb3302bcd128a44686d790e431e7d52b0e705b353c7e722",
+   "caratteri": 1047,
+   "pdf": true,
+   "cambiata": true
   },
   {
    "asl": "gallura",
@@ -177,6 +295,12 @@
    "sha": "4412de3473a9755c76da107a8b661fa4562dde4064960b20a9eaaa95cfaa7009",
    "caratteri": 2452,
    "email_nascoste": 3,
+   "link_pdf": [
+    {
+     "url": "https://www.aslgallura.it/wp-content/uploads/2022/10/URP_AslGallura_SchedaSegnalazione-1.pdf",
+     "testo": "QUI"
+    }
+   ],
    "cambiata": false
   },
   {
@@ -249,6 +373,24 @@
    "sha": "2d36d894895893a6e6dec9ffc4b5fdf2f57ac990556683a31bf3aeb179480ca3",
    "caratteri": 8918,
    "email_nascoste": 9,
+   "link_pdf": [
+    {
+     "url": "https://www.aslmediocampidano.it/wp-content/uploads/2025/04/Allegato-A-Percorso-di-tutela.pdf",
+     "testo": "Allegato A – modulo di richiesta percorso di tutela"
+    },
+    {
+     "url": "https://www.aslmediocampidano.it/wp-content/uploads/2025/04/Allegato-B-percorso-di-tutela.pdf",
+     "testo": "Allegato B – modulo di richiesta di rimborso"
+    },
+    {
+     "url": "https://www.aslmediocampidano.it/wp-content/uploads/2025/04/PDEL_2025_0000284_Procedura_PV251_percorso_tutela_di_accesso_alternativo_alle_prestazioni_specialistiche_del_cittadino-1.pdf",
+     "testo": "PDEL_2025_0000284_Procedura_PV251_percorso_tutela_di_accesso_alternativo_alle_prestazioni_specialistiche_del_cittadino"
+    },
+    {
+     "url": "https://www.aslmediocampidano.it/wp-content/uploads/2025/04/PDEL_2025_0000284_Delibera_Percorso_di_tutela-1.pdf",
+     "testo": "PDEL_2025_0000284_Delibera_Percorso_di_tutela"
+    }
+   ],
    "cambiata": false
   },
   {
@@ -323,6 +465,58 @@
    "cambiata": false
   },
   {
+   "asl": "medio-campidano",
+   "url": "https://www.aslmediocampidano.it/wp-content/uploads/2025/04/Allegato-A-Percorso-di-tutela.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.aslmediocampidano.it/percorso-di-tutela-accesso-alternativo-a-prestazioni-specialistiche/",
+   "http": 200,
+   "file": "medio-campidano/636cd7ffaab1.txt",
+   "titolo": "PV251 PV 251",
+   "sha": "4c35e7ef9e8cb96ce8acaa6c25ecc826587bdd3a81d490f2b7c16daa509e0342",
+   "caratteri": 2554,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "medio-campidano",
+   "url": "https://www.aslmediocampidano.it/wp-content/uploads/2025/04/Allegato-B-percorso-di-tutela.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.aslmediocampidano.it/percorso-di-tutela-accesso-alternativo-a-prestazioni-specialistiche/",
+   "http": 200,
+   "file": "medio-campidano/7a33a7dbc558.txt",
+   "titolo": "PV251 PV 251",
+   "sha": "31d00e88bfbbc5cc709a147a84bf6556de61c513bfa0ab59fab1e0eee127300b",
+   "caratteri": 2294,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "medio-campidano",
+   "url": "https://www.aslmediocampidano.it/wp-content/uploads/2025/04/PDEL_2025_0000284_Procedura_PV251_percorso_tutela_di_accesso_alternativo_alle_prestazioni_specialistiche_del_cittadino-1.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.aslmediocampidano.it/percorso-di-tutela-accesso-alternativo-a-prestazioni-specialistiche/",
+   "http": 200,
+   "file": "medio-campidano/eb73fac5924d.txt",
+   "titolo": "PV251 PV 251",
+   "sha": "5b0f82308a50e6685afc35138f3891a2a5052e910904fd7b7dc055fee57a51b4",
+   "caratteri": 12213,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "medio-campidano",
+   "url": "https://www.aslmediocampidano.it/wp-content/uploads/2025/04/PDEL_2025_0000284_Delibera_Percorso_di_tutela-1.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.aslmediocampidano.it/percorso-di-tutela-accesso-alternativo-a-prestazioni-specialistiche/",
+   "http": 200,
+   "file": "medio-campidano/6539ef5f0fca.txt",
+   "titolo": "(logo di riferimento)",
+   "sha": "09c697511fc9f55f9b6936894bf39b00dc909d8d7963a8a6cc82993a30421e99",
+   "caratteri": 9605,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
    "asl": "nuoro",
    "url": "https://www.asl3nuoro.it/",
    "controllata": "2026-10-23",
@@ -343,6 +537,24 @@
    "sha": "ae5b17f5950adb243dfa89be49ff18fb6a64f33a6c3b9de63e19e94723e14b7f",
    "caratteri": 8775,
    "email_nascoste": 8,
+   "link_pdf": [
+    {
+     "url": "https://www.asl3nuoro.it/wp-content/uploads/2024/11/DELIBERA-N.1304.pdf",
+     "testo": "Deliberazione del Direttore Generale dell’Asl n.3 di Nuoro n. 1304 del 26/11/2024"
+    },
+    {
+     "url": "https://www.asl3nuoro.it/wp-content/uploads/2024/11/allegato-A-1.pdf",
+     "testo": "Modulo istanza URP (Allegato A)"
+    },
+    {
+     "url": "https://www.asl3nuoro.it/wp-content/uploads/2024/11/allegato-B-modulo-rimborso-3.pdf",
+     "testo": "Richiesta di rimborso per prestazioni specialistiche (Allegato B)"
+    },
+    {
+     "url": "https://www.asl3nuoro.it/wp-content/uploads/2024/11/Procedura-aziendale-modificata-29.08.2025.pdf",
+     "testo": "Procedura aziendale. Percorso di tutela di accesso alternativo alle prestazioni specialistiche."
+    }
+   ],
    "cambiata": false
   },
   {
@@ -390,6 +602,12 @@
    "sha": "65d6418153ad1923b9dc39dfa15ca0adac90607bb8f4e8f96cff780afde553fc",
    "caratteri": 2364,
    "email_nascoste": 7,
+   "link_pdf": [
+    {
+     "url": "https://www.asl3nuoro.it/wp-content/uploads/2026/07/Carta-dei-Servizi-Distretto-di-Sorgono-.pdf",
+     "testo": "Contatti telefonici Distretto di Sorgono"
+    }
+   ],
    "cambiata": false
   },
   {
@@ -426,7 +644,77 @@
    "sha": "79a803f8475df34801e1af42a1f207ede3105a44f076c32cd8300d953ff0f35f",
    "caratteri": 5032,
    "email_nascoste": 7,
+   "link_pdf": [
+    {
+     "url": "https://www.asl3nuoro.it/wp-content/uploads/2024/05/Carta-Servizi-hospice.pdf",
+     "testo": "Carta dei servizi"
+    }
+   ],
    "cambiata": false
+  },
+  {
+   "asl": "nuoro",
+   "url": "https://www.asl3nuoro.it/wp-content/uploads/2024/11/Procedura-aziendale-modificata-29.08.2025.pdf",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "nuoro/ce82e4ff1555.txt",
+   "titolo": "Procedura aziendale.",
+   "sha": "19ee696b456b23cac4942a7706fc4d35f1cd81ee619dd1c4d28fc66d65ecb436",
+   "caratteri": 5963,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "nuoro",
+   "url": "https://www.asl3nuoro.it/wp-content/uploads/2024/11/allegato-A-1.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asl3nuoro.it/servizio/percorso-di-tutela-di-accesso-alternativo-alle-prestazioni-specialistiche/",
+   "http": 200,
+   "file": "nuoro/980257af51e7.txt",
+   "titolo": "ALLEGATO A",
+   "sha": "ea79ac50039a12d5f53477b5ecb7f3e8a4b8b163f20612c801b41e5f2dc0ad4b",
+   "caratteri": 1940,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "nuoro",
+   "url": "https://www.asl3nuoro.it/wp-content/uploads/2024/11/allegato-B-modulo-rimborso-3.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asl3nuoro.it/servizio/percorso-di-tutela-di-accesso-alternativo-alle-prestazioni-specialistiche/",
+   "http": 200,
+   "file": "nuoro/f4e38dad1efd.txt",
+   "titolo": "SERVIZIO SANITARIO",
+   "sha": "63b22b1159b17fb25948b4a5b581d6bbeabe8586c78f13dfa8361dfccfd30252",
+   "caratteri": 2783,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "nuoro",
+   "url": "https://www.asl3nuoro.it/wp-content/uploads/2026/07/Carta-dei-Servizi-Distretto-di-Sorgono-.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asl3nuoro.it/azienda/contatti/",
+   "http": 200,
+   "file": "nuoro/42cc90302371.txt",
+   "titolo": "Distretto Sanitario di Sorgono",
+   "sha": "f75c69adf8eaf40dae7ef352283370c2dc8af483113edbde2e1751da57975771",
+   "caratteri": 14918,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "nuoro",
+   "url": "https://www.asl3nuoro.it/wp-content/uploads/2024/05/Carta-Servizi-hospice.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asl3nuoro.it/servizio/hospice-e-cure-palliative/",
+   "http": 200,
+   "file": "nuoro/7630c0181dfa.txt",
+   "titolo": "CARTA DEI SERVIZI",
+   "sha": "62ea9d8d3960df9a1c971d402fbf667ad59f383923c04d67c6c7284d10a8b885",
+   "caratteri": 8535,
+   "pdf": true,
+   "cambiata": true
   },
   {
    "asl": "ogliastra",
@@ -592,7 +880,22 @@
    "sha": "8c24512d6695d1fd3c6046dc9a7a86dfea72aeb0b6d8681c260b6c052924fc4a",
    "caratteri": 7176,
    "email_nascoste": 19,
+   "link_pdf": [
+    {
+     "url": "https://www.asl5oristano.it/wp-content/uploads/2024/09/Modello-unificato-per-i-tre-Distretti-delle-deleghe-per-Scelta-e-Revoca-del-Medico.pdf",
+     "testo": "Scarica il modulo unificato per i tre Distretti per la delega"
+    }
+   ],
    "cambiata": false
+  },
+  {
+   "asl": "oristano",
+   "url": "https://www.asl5oristano.it/wp-content/uploads/2024/09/Modello-unificato-per-i-tre-Distretti-delle-deleghe-per-Scelta-e-Revoca-del-Medico.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asl5oristano.it/servizio/scelta-e-revoca-medico-e-pediatria/",
+   "http": 200,
+   "pdf": true,
+   "nota": "PDF senza testo (forse una scansione): non copiato"
   },
   {
    "asl": "sassari",
@@ -639,6 +942,12 @@
    "sha": "9f364c634cfe714dca28408866471eaa59b4d586b2cfd7fb9d4a2b9938ce334c",
    "caratteri": 5699,
    "email_nascoste": 23,
+   "link_pdf": [
+    {
+     "url": "https://www.asl1sassari.it/wp-content/uploads/2026/06/modulo-reclami-nuovo-asl-sassari-29.06.26.pdf",
+     "testo": "Modulo reclami Asl Sassari"
+    }
+   ],
    "cambiata": false
   },
   {
@@ -663,6 +972,12 @@
    "sha": "3eb3506406533a50a20b9fa69c48b3b89e6ab17740957682dbd65266db1e60be",
    "caratteri": 4843,
    "email_nascoste": 7,
+   "link_pdf": [
+    {
+     "url": "https://www.asl1sassari.it/wp-content/uploads/2025/04/266_all_PDEL_2025_0000288_Percorso_di_tutela_ASL_SASSARI.pdf",
+     "testo": "https://www.asl1sassari.it/wp-content/uploads/2025/04/266_all_PDEL_2025_0000288_Percorso_di_tutela_ASL_SASSARI.pdf"
+    }
+   ],
    "cambiata": false
   },
   {
@@ -688,6 +1003,44 @@
    "caratteri": 2553,
    "email_nascoste": 5,
    "cambiata": false
+  },
+  {
+   "asl": "sassari",
+   "url": "https://www.asl1sassari.it/wp-content/uploads/2026/07/Nota-esplicativa-sulle-modalita-di-accesso-al-Percorso-di-Tutela.pdf",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "sassari/0725088924b6.txt",
+   "titolo": "Nota esplicativa sulle modalità di accesso al Percorso di Tutela",
+   "sha": "5abc5e9b8df28e54f4492a5e4162f7a304102bd4e03f4404705dc01a14621781",
+   "caratteri": 10117,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "sassari",
+   "url": "https://www.asl1sassari.it/wp-content/uploads/2026/06/modulo-reclami-nuovo-asl-sassari-29.06.26.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asl1sassari.it/azienda/ufficio-relazioni-con-il-pubblico-urp/",
+   "http": 200,
+   "file": "sassari/23a30411950b.txt",
+   "titolo": "Ufficio Relazioni con il Pubblico",
+   "sha": "5381a4ebe06c76f7b271da4188f1525f4789b9c6b6cd6b6a47f53a6d3db87dee",
+   "caratteri": 1752,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "sassari",
+   "url": "https://www.asl1sassari.it/wp-content/uploads/2025/04/266_all_PDEL_2025_0000288_Percorso_di_tutela_ASL_SASSARI.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asl1sassari.it/il-percorso-di-tutela-la-strada-per-supportare-il-cittadino/",
+   "http": 200,
+   "file": "sassari/e6db64ce57b6.txt",
+   "titolo": "Microsoft Word - Percorso di tutela ASL SASSARI",
+   "sha": "bf5047e0c008742d2974892a5625abc8b89ee8820f0a14f41d93b86e7d063872",
+   "caratteri": 15296,
+   "pdf": true,
+   "cambiata": true
   },
   {
    "asl": "sulcis",
@@ -782,7 +1135,38 @@
    "sha": "12d6d319679510ba13bbd06313a09faf026d426522f3ee551889b49e3c405062",
    "caratteri": 6903,
    "email_nascoste": 23,
+   "link_pdf": [
+    {
+     "url": "https://www.aslsulcis.it/wp-content/uploads/2024/10/ASSISTENZA-TEMPORANEA.pdf",
+     "testo": "Modulo richiesta/rinnovo assistenza temporanea"
+    },
+    {
+     "url": "https://www.aslsulcis.it/wp-content/uploads/2024/10/AUTOCERTIFICAZIONE-2.pdf",
+     "testo": "Dichiarazione sostitutiva di certificato di residenza"
+    },
+    {
+     "url": "https://www.aslsulcis.it/wp-content/uploads/2024/10/ESENZIONI-PER-REDDITO.pdf",
+     "testo": "Autocertificazione esenzioni ticket per reddito"
+    },
+    {
+     "url": "https://www.aslsulcis.it/wp-content/uploads/2024/10/mod-extra-ambito-1.pdf",
+     "testo": "Mod. extra ambito"
+    }
+   ],
    "cambiata": false
+  },
+  {
+   "asl": "sulcis",
+   "url": "https://www.aslsulcis.it/wp-content/uploads/2024/10/ASSISTENZA-TEMPORANEA.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.aslsulcis.it/servizio/scelta-revoca-esenzioni/",
+   "http": 200,
+   "file": "sulcis/c57427f2fe67.txt",
+   "titolo": "-.",
+   "sha": "1e259e6b7469d2d8c2d06088c12f6f673990900908e52eb73c60d2690caa7bf1",
+   "caratteri": 1116,
+   "pdf": true,
+   "cambiata": true
   },
   {
    "asl": "inps-sardegna",
@@ -945,8 +1329,34 @@
    "http": 200,
    "file": "regione-sardegna/5dae24b1e42b.txt",
    "titolo": "Aiuto - CupWeb",
-   "sha": "5aae4d6a60e374701d0d7599a9f3fcce27240529e7d4810926dc1d32c124944c",
+   "sha": "a65d12c13b50f7b2af75cd918dd838ad43e96354ebd52a139e4531b945eb10d5",
    "caratteri": 19023,
+   "link_pdf": [
+    {
+     "url": "https://manuali.sardegnasalute.it/manuali/Manuale_PRENOTA_ROSSA_CUP.pdf",
+     "testo": "consulta la guida"
+    },
+    {
+     "url": "https://manuali.sardegnasalute.it/manuali/Manuale_PRENOTA_NRE_CUP.pdf",
+     "testo": "consulta la guida"
+    },
+    {
+     "url": "https://manuali.sardegnasalute.it/manuali/Manuale_DISDETTA_CUP.pdf",
+     "testo": "consulta la guida"
+    },
+    {
+     "url": "https://manuali.sardegnasalute.it/manuali/Manuale_SPOSTA.pdf",
+     "testo": "consulta la guida"
+    },
+    {
+     "url": "https://manuali.sardegnasalute.it/manuali/Manuale_STAMPA.pdf",
+     "testo": "consulta la guida"
+    },
+    {
+     "url": "https://manuali.sardegnasalute.it/manuali/Manuale_PAGAMENTO_CUP.pdf",
+     "testo": "consulta la guida"
+    }
+   ],
    "cambiata": true
   },
   {
@@ -1089,6 +1499,46 @@
    "cambiata": false
   },
   {
+   "asl": "regione-sardegna",
+   "url": "https://manuali.sardegnasalute.it/manuali/Manuale_PRENOTA_ROSSA_CUP.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://cupweb.sardegnasalute.it/en/aiuto",
+   "http": 0,
+   "errore": "curl: (56) OpenSSL SSL_read: OpenSSL/3.0.13: error:0A00045C:SSL routines::tlsv13 alert certificate required, errno 0"
+  },
+  {
+   "asl": "regione-sardegna",
+   "url": "https://manuali.sardegnasalute.it/manuali/Manuale_PRENOTA_NRE_CUP.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://cupweb.sardegnasalute.it/en/aiuto",
+   "http": 0,
+   "errore": "curl: (56) OpenSSL SSL_read: OpenSSL/3.0.13: error:0A00045C:SSL routines::tlsv13 alert certificate required, errno 0"
+  },
+  {
+   "asl": "regione-sardegna",
+   "url": "https://manuali.sardegnasalute.it/manuali/Manuale_DISDETTA_CUP.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://cupweb.sardegnasalute.it/en/aiuto",
+   "http": 0,
+   "errore": "curl: (56) OpenSSL SSL_read: OpenSSL/3.0.13: error:0A00045C:SSL routines::tlsv13 alert certificate required, errno 0"
+  },
+  {
+   "asl": "regione-sardegna",
+   "url": "https://manuali.sardegnasalute.it/manuali/Manuale_SPOSTA.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://cupweb.sardegnasalute.it/en/aiuto",
+   "http": 0,
+   "errore": "curl: (56) OpenSSL SSL_read: OpenSSL/3.0.13: error:0A00045C:SSL routines::tlsv13 alert certificate required, errno 0"
+  },
+  {
+   "asl": "regione-sardegna",
+   "url": "https://manuali.sardegnasalute.it/manuali/Manuale_STAMPA.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://cupweb.sardegnasalute.it/en/aiuto",
+   "http": 0,
+   "errore": "curl: (56) OpenSSL SSL_read: OpenSSL/3.0.13: error:0A00045C:SSL routines::tlsv13 alert certificate required, errno 0"
+  },
+  {
    "asl": "asl-sassari",
    "url": "https://www.asl1sassari.it/i-servizi-online-a-disposizione-della-popolazione/",
    "controllata": "2026-10-23",
@@ -1146,6 +1596,12 @@
    "sha": "e4651dfb7271397819dd70273a154158e3040b951d5909e671adfbe967c72b40",
    "caratteri": 2496,
    "email_nascoste": 9,
+   "link_pdf": [
+    {
+     "url": "https://www.aslgallura.it/wp-content/uploads/2022/10/URP_AslGallura_SchedaSegnalazione-1.pdf",
+     "testo": "link"
+    }
+   ],
    "cambiata": false
   },
   {
@@ -1182,6 +1638,12 @@
    "sha": "43ab8136bc8cb4e01eda56e04b596c5260daa6ae8855557f87aa8eb1fbeb26ce",
    "caratteri": 6186,
    "email_nascoste": 1,
+   "link_pdf": [
+    {
+     "url": "https://www.asl3nuoro.it/wp-content/uploads/2024/07/Fac-simile-ricetta-medica-1.pdf",
+     "testo": "Fac-simile ricetta medica"
+    }
+   ],
    "cambiata": false
   },
   {
@@ -1230,6 +1692,12 @@
    "sha": "ac4f6d0ae70a0dbe3791e3ec73079b9f422da30a6f14c738d1ba71591c10e99e",
    "caratteri": 3811,
    "email_nascoste": 6,
+   "link_pdf": [
+    {
+     "url": "https://www.asl5oristano.it/wp-content/uploads/2026/07/MODULO-URP-ASL-5-OR.pdf",
+     "testo": "Modulo URP"
+    }
+   ],
    "cambiata": false
   },
   {
@@ -1242,6 +1710,12 @@
    "sha": "d8a1580995faf5dd11ad331885c31eac5dcff5362e22557cf1177e4e33caac26",
    "caratteri": 3154,
    "email_nascoste": 5,
+   "link_pdf": [
+    {
+     "url": "https://www.asl5oristano.it/wp-content/uploads/2026/07/MODULO-URP-ASL-5-OR.pdf",
+     "testo": "Modulo Urp"
+    }
+   ],
    "cambiata": false
   },
   {
@@ -1273,6 +1747,19 @@
    "caratteri": 1868,
    "email_nascoste": 3,
    "cambiata": false
+  },
+  {
+   "asl": "asl-oristano",
+   "url": "https://www.asl5oristano.it/wp-content/uploads/2026/07/MODULO-URP-ASL-5-OR.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asl5oristano.it/servizio/ufficio-relazioni-con-il-pubblico/",
+   "http": 200,
+   "file": "asl-oristano/abd0ee7eb59c.txt",
+   "titolo": "Spett.le Ufficio Relazioni con il Pubblico (U.R.P.)",
+   "sha": "1282eb649c9a29e8253595bf88c1169a613f0c1b0db9116f60e94c32ab7f787b",
+   "caratteri": 15806,
+   "pdf": true,
+   "cambiata": true
   },
   {
    "asl": "asl-medio-campidano",

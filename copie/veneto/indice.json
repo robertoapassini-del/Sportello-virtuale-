@@ -1,6 +1,6 @@
 {
  "regione": "veneto",
- "aggiornato": "2026-10-23T03:04:05.651Z",
+ "aggiornato": "2026-10-23T06:45:46.880Z",
  "pagine": [
   {
    "asl": "belluno",
@@ -11,6 +11,17 @@
    "titolo": "Homepage ULSS 1 Dolomiti",
    "sha": "052a5e919f6c738908c1fa965e39956b65c1aca1fa6e568c14c87159d6f528ce",
    "caratteri": 6583,
+   "cambiata": false
+  },
+  {
+   "asl": "belluno",
+   "url": "https://www.aulss1.veneto.it/liste-d-attesa",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "belluno/9bd128f90af4.txt",
+   "titolo": "Tempi d'attesa",
+   "sha": "5521f97b2f30e0bc6eb2521d4774b3a11b7ada4bb5d6baa3e865dc169b0b8882",
+   "caratteri": 9725,
    "cambiata": false
   },
   {
@@ -81,17 +92,6 @@
   },
   {
    "asl": "belluno",
-   "url": "https://www.aulss1.veneto.it/liste-d-attesa",
-   "controllata": "2026-10-23",
-   "http": 200,
-   "file": "belluno/9bd128f90af4.txt",
-   "titolo": "Tempi d'attesa",
-   "sha": "5521f97b2f30e0bc6eb2521d4774b3a11b7ada4bb5d6baa3e865dc169b0b8882",
-   "caratteri": 9725,
-   "cambiata": false
-  },
-  {
-   "asl": "belluno",
    "url": "https://www.aulss1.veneto.it/distretti-e-territorio",
    "controllata": "2026-10-23",
    "http": 200,
@@ -158,9 +158,20 @@
   },
   {
    "asl": "belluno",
-   "url": "https://www.aulss1.veneto.it/service/ufficio-cartelle-cliniche-2/",
+   "url": "https://www.aulss1.veneto.it/service/sisp-screening/",
    "controllata": "2026-10-23",
    "http": 404
+  },
+  {
+   "asl": "belluno",
+   "url": "https://www.aulss1.veneto.it/servizio-di-prevenzione-delle-malattie-croniche-non-trasmissibili-programmi-di-screening-e-promozione-della-salute",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "belluno/b63108626608.txt",
+   "titolo": "Servizio di Prevenzione delle Malattie Croniche non Trasmissibili, Programmi di Screening e Promozione della Salute",
+   "sha": "ea0b74707352d751079e5ce6bcd7516e5b3c37455dbbb8a6402ff7ad63daceaa",
+   "caratteri": 8741,
+   "cambiata": true
   },
   {
    "asl": "treviso",
@@ -258,12 +269,6 @@
   },
   {
    "asl": "treviso",
-   "url": "https://www.aulss2.veneto.it/liste-attesa",
-   "controllata": "2026-10-23",
-   "http": 404
-  },
-  {
-   "asl": "treviso",
    "url": "https://www.aulss2.veneto.it/urp-online",
    "controllata": "2026-10-23",
    "http": 200,
@@ -338,6 +343,50 @@
    "sha": "858a962f510a3da6df661fc92fc040afc0eea6716a95db24f71cc7750f8f6d77",
    "caratteri": 6602,
    "cambiata": false
+  },
+  {
+   "asl": "treviso",
+   "url": "https://www.aulss2.veneto.it/liste-d-attesa",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "treviso/ba08aa06e907.txt",
+   "titolo": "Liste d'attesa",
+   "sha": "5808bc87bc641f2f211f18bbc42e2c9c59247459a2725b6fedd74a4f5e2c2f19",
+   "caratteri": 14139,
+   "cambiata": true
+  },
+  {
+   "asl": "treviso",
+   "url": "https://www.aulss2.veneto.it/liste-di-attesa",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "treviso/8b1c2a7bb300.txt",
+   "titolo": "Liste di Attesa",
+   "sha": "d12fcd12c9e49971af1b02a2e756edef46b025786afb7e1f9efa6d09e6d6311c",
+   "caratteri": 9529,
+   "cambiata": true
+  },
+  {
+   "asl": "treviso",
+   "url": "https://www.aulss2.veneto.it/Servizio-programmi-di-screening",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "treviso/0ffe1a932eb0.txt",
+   "titolo": "Servizio Programmi Di Screening",
+   "sha": "8cea85f9177889985a453c0bcb7f0fd14822a09977787309ffea3eb4988b212e",
+   "caratteri": 4951,
+   "cambiata": true
+  },
+  {
+   "asl": "treviso",
+   "url": "https://www.aulss2.veneto.it/screening-colon-retto",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "treviso/f7b78ff88da5.txt",
+   "titolo": "Screening del tumore del colon-retto",
+   "sha": "85cfe162d0fcfb7c895c7a58326eb35cca314805d4abac4d2491c111a07ae379",
+   "caratteri": 8778,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -416,6 +465,18 @@
   },
   {
    "asl": "venezia",
+   "url": "https://www.aulss4.veneto.it/home/dettaglio/servizi/screening-oncologici",
+   "controllata": "2026-10-23",
+   "browser": true,
+   "http": 200,
+   "file": "venezia/1e68a152143d.txt",
+   "titolo": "Screening Oncologici",
+   "sha": "ede470e54166ee7e74d747f8b7f1cdc9b423b664cdf60afc50dd62494eb0a346",
+   "caratteri": 6333,
+   "cambiata": false
+  },
+  {
+   "asl": "venezia",
    "url": "https://www.aulss3.veneto.it/organizzazioni/ufficio-relazioni-con-il-pubblico",
    "controllata": "2026-10-23",
    "browser": true,
@@ -447,9 +508,9 @@
    "finale": "https://www.aulss3.veneto.it/home",
    "file": "venezia/d213a293dfcf.txt",
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
-   "sha": "56cc4bd859b15aa1a6963d1d39f02910359536396a5aca9ae75211b7d3715f57",
+   "sha": "15bfcb2821e8a5832bef1be74c4be0df286a37caef299a0fa467dcadb748f724",
    "caratteri": 5859,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -460,9 +521,9 @@
    "finale": "https://www.aulss3.veneto.it/home",
    "file": "venezia/3eaad184c615.txt",
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
-   "sha": "56cc4bd859b15aa1a6963d1d39f02910359536396a5aca9ae75211b7d3715f57",
+   "sha": "15bfcb2821e8a5832bef1be74c4be0df286a37caef299a0fa467dcadb748f724",
    "caratteri": 5859,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -642,7 +703,7 @@
    "titolo": "Prenotazione esami di laboratorio presso le strutture dell'A",
    "sha": "6c77e5de6056b83fe18ff4c7613f38247614a291db5815170e35a02e80cf3b87",
    "caratteri": 3562,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -660,13 +721,12 @@
    "asl": "venezia",
    "url": "https://www.aulss4.veneto.it/home/numeri-utili/pronto-soccorso-118",
    "controllata": "2026-10-23",
-   "browser": true,
    "http": 200,
    "file": "venezia/a4b0fb47461e.txt",
    "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
-   "sha": "d2d9433b6a9772b84ab4f303634a1d4d70c4c643ef09a6bacc45875804f31b84",
-   "caratteri": 6617,
-   "cambiata": false
+   "sha": "6bc2275696536324da914a4390835a8856b32ef9c71aa40dd59c0c5b84156a8f",
+   "caratteri": 45,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -701,9 +761,9 @@
    "finale": "https://www.aulss3.veneto.it/home",
    "file": "venezia/a029f2332558.txt",
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
-   "sha": "56cc4bd859b15aa1a6963d1d39f02910359536396a5aca9ae75211b7d3715f57",
+   "sha": "3612af2ebca948ecdb9ae14f5dddd449aa51dee262c275a7ecfb69271068e0d5",
    "caratteri": 5859,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -714,9 +774,9 @@
    "finale": "https://www.aulss3.veneto.it/home",
    "file": "venezia/b6eaeaaa2085.txt",
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
-   "sha": "56cc4bd859b15aa1a6963d1d39f02910359536396a5aca9ae75211b7d3715f57",
+   "sha": "3612af2ebca948ecdb9ae14f5dddd449aa51dee262c275a7ecfb69271068e0d5",
    "caratteri": 5859,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -753,9 +813,9 @@
    "finale": "https://www.aulss3.veneto.it/home",
    "file": "venezia/e677293f92f5.txt",
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
-   "sha": "56cc4bd859b15aa1a6963d1d39f02910359536396a5aca9ae75211b7d3715f57",
+   "sha": "3612af2ebca948ecdb9ae14f5dddd449aa51dee262c275a7ecfb69271068e0d5",
    "caratteri": 5859,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -772,15 +832,27 @@
   },
   {
    "asl": "venezia",
-   "url": "https://www.aulss4.veneto.it/home/dettaglio/servizi/screening-oncologici",
+   "url": "https://www.aulss4.veneto.it/myportal/ASSL10VE/api/content/download?id=67404e862b17ae008d493d14",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "venezia/1604cec1ab3a.txt",
+   "titolo": "Piano Attuativo Aziendale",
+   "sha": "d78984a9cca547688b2a2a7b998764f5eb7af774ef32b948ac4f4b0591630eac",
+   "caratteri": 58816,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "venezia",
+   "url": "https://www.aulss4.veneto.it/home/azienda/strutture/case-della-comunita",
    "controllata": "2026-10-23",
    "browser": true,
    "http": 200,
-   "file": "venezia/1e68a152143d.txt",
-   "titolo": "Screening Oncologici",
-   "sha": "ede470e54166ee7e74d747f8b7f1cdc9b423b664cdf60afc50dd62494eb0a346",
-   "caratteri": 6333,
-   "cambiata": false
+   "file": "venezia/7d9796dc61fd.txt",
+   "titolo": "Azienda ULSS n. 4 Veneto Orientale - Case della Comunità",
+   "sha": "29ad99bcc7cc69f17cc55c30eb885b44c77f2e14e91751b524b67d7da70f754f",
+   "caratteri": 4826,
+   "cambiata": true
   },
   {
    "asl": "rovigo",
@@ -927,12 +999,6 @@
   },
   {
    "asl": "rovigo",
-   "url": "https://www.aulss5.veneto.it/cartelle-cliniche",
-   "controllata": "2026-10-23",
-   "http": 404
-  },
-  {
-   "asl": "rovigo",
    "url": "https://www.aulss5.veneto.it/ritiro-referti-e-cartelle-cliniche",
    "controllata": "2026-10-23",
    "http": 200,
@@ -952,6 +1018,41 @@
    "sha": "7127610960296fbc39dfb8c9aa86928b1428637f55edab386d050ec46721a4e6",
    "caratteri": 9653,
    "cambiata": false
+  },
+  {
+   "asl": "rovigo",
+   "url": "https://www.aulss5.veneto.it/lista-di-attesa",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "rovigo/40babd60d336.txt",
+   "titolo": "Liste di attesa",
+   "sha": "712b6fc3c5ed57451ca25b4baae7cea380a744767a004ba9a4ecbba1ef4dc658",
+   "caratteri": 18014,
+   "cambiata": true
+  },
+  {
+   "asl": "rovigo",
+   "url": "http://www.aulss5.veneto.it/amministrazione-trasparente/servizi-erogati/liste-di-attesa/50686.html",
+   "controllata": "2026-10-23",
+   "http": 404,
+   "finale": "https://www.aulss5.veneto.it:443/amministrazione-trasparente/servizi-erogati/liste-di-attesa/50686.html"
+  },
+  {
+   "asl": "rovigo",
+   "url": "https://www.aulss5.veneto.it/Screening-mammografico",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "rovigo/defab0a31164.txt",
+   "titolo": "Screening mammografico",
+   "sha": "6a18459b038b0ca224052100b968bef6143c42e7bc15ca7809aee70b7ef06a98",
+   "caratteri": 6986,
+   "cambiata": true
+  },
+  {
+   "asl": "rovigo",
+   "url": "https://www.aulss5.veneto.it/index.cfm?action=mys.apridoc&iddoc=764",
+   "controllata": "2026-10-23",
+   "http": 404
   },
   {
    "asl": "padova",
@@ -1078,18 +1179,6 @@
   },
   {
    "asl": "padova",
-   "url": "https://www.aulss6.veneto.it/Cartelle-Cliniche-Ospedale-SantAntonio",
-   "controllata": "2026-10-23",
-   "http": 404
-  },
-  {
-   "asl": "padova",
-   "url": "https://www.aulss6.veneto.it/Cartelle-Cliniche-Ospedale-di-Cittadella",
-   "controllata": "2026-10-23",
-   "http": 404
-  },
-  {
-   "asl": "padova",
    "url": "https://www.aulss6.veneto.it/ufficio-cartelle-cliniche-schiavonia",
    "controllata": "2026-10-23",
    "http": 200,
@@ -1098,6 +1187,62 @@
    "sha": "f655c4945aad36d06ef68aa0c078be720ac7fee9818ff1aab5a554c31b183fd7",
    "caratteri": 7312,
    "cambiata": false
+  },
+  {
+   "asl": "padova",
+   "url": "https://www.aulss6.veneto.it/trasparenza-disposizioni-aziendali-merito-applicazione-dlgs-124-98",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "padova/f4f15dda494a.txt",
+   "titolo": "Disposizioni aziendali in merito all'applicazione del D.Lgs n.124/98",
+   "sha": "d3376eb243645d3a3b6c53cc0b97dae91419e932eef695bf9b788ca0efd447df",
+   "caratteri": 6602,
+   "cambiata": true
+  },
+  {
+   "asl": "padova",
+   "url": "https://www.aulss6.veneto.it/apridoc/5CF07358885D472A92884C1BA85BEE6A35740",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "padova/7ed94866356b.txt",
+   "titolo": "Piano Attuativo Aziendale 2026 (4)(1).docx",
+   "sha": "58fc67311d2295fa9e0a0df8f79248d4fcd686acbb9a75069c6a223754a36dd2",
+   "caratteri": 42090,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "padova",
+   "url": "https://www.aulss6.veneto.it/Screening-del-collo-dellutero",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "padova/0c193dfa2ffb.txt",
+   "titolo": "Screening del collo dell'utero",
+   "sha": "1333a7fdb6b655f674b80d9e75d9508339b1eee1230a09053418179ae3fb09bd",
+   "caratteri": 6681,
+   "cambiata": true
+  },
+  {
+   "asl": "padova",
+   "url": "https://www.aulss6.veneto.it/Screening-del-tumore-della-mammella",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "padova/e6b1692f2ee6.txt",
+   "titolo": "Screening della mammella",
+   "sha": "bef25506c7db9c967f8bc171ca04b8809b679083cfc0db4c90244597583fb572",
+   "caratteri": 6027,
+   "cambiata": true
+  },
+  {
+   "asl": "padova",
+   "url": "https://www.aulss6.veneto.it/Screening-del-tumore-del-colon-retto",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "padova/bac18a9708cb.txt",
+   "titolo": "Screening del tumore del colon retto",
+   "sha": "7c7e0bd02bba22b05bec3ac77ef4adf21549aa80c34b44c646170706d32d4234",
+   "caratteri": 8342,
+   "cambiata": true
   },
   {
    "asl": "vicenza",
@@ -1288,12 +1433,6 @@
   },
   {
    "asl": "vicenza",
-   "url": "https://www.aulss8.veneto.it/servizi-online/prenota-e-paga-online/percorsi-di-tutela/",
-   "controllata": "2026-10-23",
-   "http": 404
-  },
-  {
-   "asl": "vicenza",
    "url": "https://www.aulss7.veneto.it/",
    "controllata": "2026-10-23",
    "http": 200,
@@ -1470,9 +1609,54 @@
   },
   {
    "asl": "vicenza",
-   "url": "https://www.aulss8.veneto.it/unita-operative/centrale-unica-screening-2/",
+   "url": "https://www.aulss8.veneto.it/servizi-online/prenota-e-paga-online/ambiti-di-garanzia/",
    "controllata": "2026-10-23",
    "http": 404
+  },
+  {
+   "asl": "vicenza",
+   "url": "https://www.aulss8.veneto.it/amm-trasparente/liste-di-attesa/",
+   "controllata": "2026-10-23",
+   "http": 404
+  },
+  {
+   "asl": "vicenza",
+   "url": "https://www.aulss8.veneto.it/servizi/cittadino/curarsi-e-ottenere-assistenza-sanitaria/screening-per-la-prevenzione-dei-tumori/",
+   "controllata": "2026-10-23",
+   "http": 404
+  },
+  {
+   "asl": "vicenza",
+   "url": "https://www.aulss8.veneto.it/servizio-di-epidemiologia",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "vicenza/e9374aa66201.txt",
+   "titolo": "Servizio di Epidemiologia - Screening Oncologici e Sorveglianza PFAS",
+   "sha": "33feb9ecee25b88a58bf3085edac566fb04908108116b0fe592380f42beeb182",
+   "caratteri": 9023,
+   "cambiata": true
+  },
+  {
+   "asl": "vicenza",
+   "url": "https://www.aulss7.veneto.it/programma-screening",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "vicenza/68ffdcddb8d9.txt",
+   "titolo": "Programmi di screening",
+   "sha": "9f12857311a06474f836288026b5b7f1e8187a24b4d42455c10915373e4b026a",
+   "caratteri": 7027,
+   "cambiata": true
+  },
+  {
+   "asl": "vicenza",
+   "url": "https://www.aulss7.veneto.it/screening-colon-retto",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "vicenza/c8535c514e45.txt",
+   "titolo": "Screening Colon Retto",
+   "sha": "2f8f813c0096c2835e4d280070681fb12a19358f7329bdf6a9b1ebce3321329d",
+   "caratteri": 7432,
+   "cambiata": true
   },
   {
    "asl": "verona",
@@ -1483,6 +1667,17 @@
    "titolo": "Homepage ULSS 9 Scaligera",
    "sha": "52bb78a593c2cb28074207d2eef4d0ce7efa248f9e1102fb90dadb996f301114",
    "caratteri": 6955,
+   "cambiata": false
+  },
+  {
+   "asl": "verona",
+   "url": "https://www.aulss9.veneto.it/liste-di-attesa",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "verona/f8666cc5842e.txt",
+   "titolo": "Liste di attesa",
+   "sha": "fbb933618a85e0933d1e8bd0b5eb4943853cc3942e82b9a1666fd40224d0877b",
+   "caratteri": 26689,
    "cambiata": false
   },
   {
@@ -1542,6 +1737,17 @@
   },
   {
    "asl": "verona",
+   "url": "https://episcreenpro.aulss9.veneto.it/Screening-Oncologici",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "verona/adcf6eeb4d6b.txt",
+   "titolo": "Screening Oncologici Episcreenpro Ulss 9 Scaligera",
+   "sha": "d4cc43396d33944bc5f275813538cddc8c1dd496445d1eed709c9fedda9e3b32",
+   "caratteri": 9924,
+   "cambiata": false
+  },
+  {
+   "asl": "verona",
    "url": "https://www.aulss9.veneto.it/urp",
    "controllata": "2026-10-23",
    "http": 200,
@@ -1560,17 +1766,6 @@
    "titolo": "Prenotazioni e disdette",
    "sha": "19b02e27e4b070802558eceaaa95ed75fe0c93be449c8e64001beea9d16c7ee7",
    "caratteri": 4924,
-   "cambiata": false
-  },
-  {
-   "asl": "verona",
-   "url": "https://www.aulss9.veneto.it/liste-di-attesa",
-   "controllata": "2026-10-23",
-   "http": 200,
-   "file": "verona/f8666cc5842e.txt",
-   "titolo": "Liste di attesa",
-   "sha": "fbb933618a85e0933d1e8bd0b5eb4943853cc3942e82b9a1666fd40224d0877b",
-   "caratteri": 26689,
    "cambiata": false
   },
   {
@@ -1615,17 +1810,6 @@
    "titolo": "Assistenza Protesica",
    "sha": "cc111780dce71f540895bd0c76b2d5fbe775d2790629346ed67369e8a75c0b25",
    "caratteri": 6973,
-   "cambiata": false
-  },
-  {
-   "asl": "verona",
-   "url": "https://episcreenpro.aulss9.veneto.it/Screening-Oncologici",
-   "controllata": "2026-10-23",
-   "http": 200,
-   "file": "verona/adcf6eeb4d6b.txt",
-   "titolo": "Screening Oncologici Episcreenpro Ulss 9 Scaligera",
-   "sha": "d4cc43396d33944bc5f275813538cddc8c1dd496445d1eed709c9fedda9e3b32",
-   "caratteri": 9924,
    "cambiata": false
   },
   {
@@ -1795,6 +1979,12 @@
    "cambiata": false
   },
   {
+   "asl": "ulss2-marca-trevigiana",
+   "url": "https://www.aulss2.veneto.it/liste-attesa",
+   "controllata": "2026-10-23",
+   "http": 404
+  },
+  {
    "asl": "ulss6-euganea",
    "url": "https://www.aulss6.veneto.it/case-della-comunit",
    "controllata": "2026-10-23",
@@ -1804,6 +1994,12 @@
    "sha": "7f90929d7b3ddc613ede9bf8aef4a882631e351cc2c7dc331ffbcb6df0bd8270",
    "caratteri": 6362,
    "cambiata": false
+  },
+  {
+   "asl": "ulss8-berica",
+   "url": "https://www.aulss8.veneto.it/servizi-online/prenota-e-paga-online/percorsi-di-tutela/",
+   "controllata": "2026-10-23",
+   "http": 404
   }
  ]
 }
