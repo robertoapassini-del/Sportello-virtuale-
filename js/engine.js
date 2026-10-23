@@ -278,6 +278,18 @@ export function pianoStatus(rules, { expiryDate, today }) {
 }
 
 // --- Modulo 12: prevenzione gratuita per età -----------------------------
+// Il numero dello screening da scrivere nella frase «chiama il numero dello screening…»: solo se l'azienda ne ha uno.
+// Con più numeri (più aziende nella provincia, come Roma e Perugia, o un numero per esame) la frase rimanda all'elenco
+// sotto, con il nome di ogni ufficio: prima a Roma si dava a tutti il numero dell'ASL Roma 1. Senza numeri: in Sicilia
+// quello di rules.screening_numbers (numeri delle ASP siciliane), altrove nessuno.
+export function numeroScreening(a, { regione, province, screeningNumbers = {} } = {}) {
+  const scr = ((a && a.contacts) || []).filter((c) => c.topic === 'screening' && c.number);
+  if (scr.length === 1) return { numero: scr[0].number, elenco: false };
+  if (scr.length > 1) return { numero: null, elenco: true };
+  return { numero: a && regione === 'sicilia' ? screeningNumbers[province] || null : null, elenco: false };
+}
+
+
 // sex: 'F' | 'M'. Restituisce gli screening e i vaccini gratuiti per quell'età,
 // e quelli che arriveranno più avanti (con l'età da cui partono).
 export function prevenzione(rules, { age, sex }) {

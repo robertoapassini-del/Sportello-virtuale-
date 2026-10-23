@@ -124,5 +124,6 @@ Le modifiche precise sono in `mut.py` dell'audit; qui la descrizione.
 | P27 | numero col prefisso +39 attaccato non trovato nella copia | `tools/cerca-numero.mjs` | prima nessuno (Roma 3, 23/10); ora cerca-numero.test |
 | P28 | portale della Regione senza `portal_label` (il pulsante dice «sito dell'ASL») | `data/regioni/lazio/asl.json` | prima nessuno; ora coerenza.test |
 | P29 | il pulsante del portale torna a dire «sito dell'ASL» | `js/liste-attesa.js` | browser.cjs (giro per regioni) |
+| P30 | prevenzione: nella frase il numero del primo contatto «screening» anche con più aziende nella provincia | `js/engine.js` (numeroScreening) | prima nessuno (Roma, Perugia; 23/10); ora engine.test |
 
 Andamento: giro 5 presi 4 su 30, giro 6 presi 6 su 30, giro 9 presi 20 su 22.

@@ -2,6 +2,9 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 23/10/2026 — Prevenzione: il numero giusto dove ci sono più aziende
+- Errore trovato: nella prevenzione la frase «chiama il numero dello screening dell'ASL di …» dava il primo numero dei contatti. A Roma (6 ASL) tutti avevano il numero dell'ASL Roma 1, a Perugia quello dell'USL Umbria 2. Ora, con più numeri, la frase rimanda all'elenco sotto, dove ogni numero ha il nome del suo ufficio (`js/engine.js`, `numeroScreening`; test in `tests/engine.test.mjs`).
+
 ## 23/10/2026 — Lazio: PEC dell'ASL Roma 2; liste d'attesa, cartella clinica, assistenza a casa e cure palliative accese
 - `data/regioni/lazio/asl.json`, zona Roma 2: PEC protocollo.generale@pec.aslroma2.it. Fonti: PDF dell'ASL «Modulo mancata disdetta» (https://www.aslroma2.it/attachments/Documenti/CUP/Modulo%20mancata%20disdetta.pdf) e elenco PEC delle ASL della Regione Lazio (2021), copie del 23/10/2026. Era l'ultima zona senza indirizzo.
 - `data/regioni/index.json`: nel Lazio accese liste d'attesa, cartella clinica, assistenza a casa e cure palliative.
