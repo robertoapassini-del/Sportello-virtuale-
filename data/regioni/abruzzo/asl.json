@@ -231,12 +231,34 @@
     "Guardia medica: le 23 postazioni ASL 2 non hanno più un numero proprio, si accede col 116117.",
     "Cure domiciliari: la pagina dell'ASL 2 ha anche i numeri delle sedi distrettuali (Francavilla, Ortona, Guardiagrele, Atessa, San Salvo, Gissi…): se servono, aggiungerli.",
     "Scelta del medico (scelta_medico): dalla pagina «Servizi online» del Portale Sanità della Regione Abruzzo (copia del 22/10/2026): scelta e cambio del medico o del pediatra online, con SPID o utenza regionale, per i maggiorenni iscritti ad «Abruzzo Sanità online»; delega per minori o non autosufficienti. Mancano i numeri degli sportelli scelta e revoca dei distretti di Ortona, Francavilla, Guardiagrele, Atessa e delle altre sedi.",
-    "Percorso di tutela (liste d'attesa): la pagina «Liste di attesa» dell'ASL 2 (copia del 22/10/2026, aggiornata al 23/09/2026) dice solo di chiedere all'URP la procedura. Manca come e dove si manda la richiesta."
+    "Percorso di tutela (liste d'attesa): la pagina «Liste di attesa» dell'ASL 2 (copia del 22/10/2026, aggiornata al 23/09/2026) dice solo di chiedere all'URP la procedura. Manca come e dove si manda la richiesta.",
+    "Screening: nelle copie del 23/10/2026 non c'è il numero dello screening. Messe in «pagine» le pagine screening dell'ASL: dopo la copia, il contatto «screening».",
+    "Percorso di tutela: messo in «pagine» il piano operativo aziendale sulle liste di attesa (PDF): dopo la copia, vedere se dice come chiedere il percorso di tutela."
    ],
    "pagine": [
     {
      "tipo": "liste-attesa",
      "url": "https://www.asl2abruzzo.it/organizzazione/funzioni-di-staff/servizio-governo-delle-liste-dattesa-e-dei-sistemi-di-prenotazione/liste-di-attesa/"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.asl2abruzzo.it/partecipa-screening-oncologici-gratuiti/"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.asl2abruzzo.it/organizzazione/dipartimento-di-prevenzione/screening-oncologici/screening-mammografico/"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.asl2abruzzo.it/organizzazione/dipartimento-di-prevenzione/screening-oncologici/lo-screening-per-la-prevenzionedei-tumori-del-colon-retto/"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.asl2abruzzo.it/organizzazione/dipartimento-di-prevenzione/screening-oncologici/screening-per-la-prevenzionedei-tumori-della-cervice-uterina/"
+    },
+    {
+     "tipo": "liste-attesa",
+     "url": "https://www.asl2abruzzo.it/files/piano-operativo-aziendale-leste-di-attesa_def.pdf"
     }
    ],
    "scelta_medico": {
@@ -383,12 +405,18 @@
     "Pagina «Informazioni per l'utenza» dell'ASL 1: contiene vecchi avvisi con numeri di guardia medica (0862 3485790, 0862 366025) e un numero COVID: superati dal 116117, non usati.",
     "La pagina Contattaci dell'ASL 1 non si è potuta copiare (errore 403); la pagina del nuovo servizio cure domiciliari dà errore 401.",
     "Scelta del medico (scelta_medico): dalla pagina «Servizi online» del Portale Sanità della Regione Abruzzo (copia del 22/10/2026): scelta e cambio del medico o del pediatra online, con SPID o utenza regionale, per i maggiorenni iscritti ad «Abruzzo Sanità online»; delega per minori o non autosufficienti. Mancano i numeri degli sportelli scelta e revoca dei distretti: nelle copie non ci sono.",
-    "Percorso di tutela: la pagina «Liste d'attesa» dell'ASL 1 (copia del 22/10/2026) dice che, se il CUP dà una data oltre i tempi, l'ASL mette la persona nella lista di «presa in carico» e il CUP la richiama con una nuova data (DGR 351/2025, delibera 1387/2025). C'è il «Modulo per attivare il percorso di tutela» (file): il suo indirizzo non è nella copia; serve in «pagine» per scrivere form_url, send_to e how_to."
+    "Percorso di tutela: la pagina «Liste d'attesa» dell'ASL 1 (copia del 22/10/2026) dice che, se il CUP dà una data oltre i tempi, l'ASL mette la persona nella lista di «presa in carico» e il CUP la richiama con una nuova data (DGR 351/2025, delibera 1387/2025). C'è il «Modulo per attivare il percorso di tutela» (file): il suo indirizzo non è nella copia; serve in «pagine» per scrivere form_url, send_to e how_to.",
+    "Screening: nelle copie del 23/10/2026 non c'è il numero dello screening e non ho trovato la pagina dell'ASL 1 da far copiare: da cercare sul sito.",
+    "Percorso di tutela: messa in «pagine» la procedura aziendale (moduli/output_immagine.php?id=2135, agosto 2025, DGR 351/2025): dopo la copia, how_to e send_to dal testo del PDF."
    ],
    "pagine": [
     {
      "tipo": "liste-attesa",
      "url": "https://www.asl1abruzzo.it/pagina536_liste-dattesa.html"
+    },
+    {
+     "tipo": "liste-attesa",
+     "url": "https://www.asl1abruzzo.it/moduli/output_immagine.php?id=2135"
     }
    ],
    "scelta_medico": {
@@ -496,12 +524,18 @@
     "Il CUP «CUP ASL Pescara» (idSezione=1006) è un avviso del 2018: non usato.",
     "Cure domiciliari: manca ancora il numero del PUA/ADI. Per questo il modulo «assistenza domiciliare» resta spento in Abruzzo.",
     "Scelta del medico (scelta_medico): dalla pagina «Servizi online» del Portale Sanità della Regione Abruzzo (copia del 22/10/2026): scelta e cambio del medico o del pediatra online, con SPID o utenza regionale, per i maggiorenni iscritti ad «Abruzzo Sanità online»; delega per minori o non autosufficienti. Mancano i numeri degli sportelli scelta e revoca dei distretti: nelle copie non ci sono.",
-    "Percorso di tutela: la pagina «Liste di attesa e percorsi di tutela» (Sezione.jsp?idSezione=1105, copia del 22/10/2026, aggiornata al 10/09/2026) dice che vale per i residenti nell'ASL di Pescara con una prima visita o un primo esame e la classe sulla ricetta; la procedura la attiva l'ASL; per informazioni e aiuto c'è l'URP. «S.O.S. Liste di attesa» (classi B e D): 085 4253254, prenotazioni.cup@asl.pe.it. C'è «Modulistica per l'attivazione del percorso di tutela» (file): serve il suo indirizzo in «pagine» per scrivere letter_mode, send_to e how_to."
+    "Percorso di tutela: la pagina «Liste di attesa e percorsi di tutela» (Sezione.jsp?idSezione=1105, copia del 22/10/2026, aggiornata al 10/09/2026) dice che vale per i residenti nell'ASL di Pescara con una prima visita o un primo esame e la classe sulla ricetta; la procedura la attiva l'ASL; per informazioni e aiuto c'è l'URP. «S.O.S. Liste di attesa» (classi B e D): 085 4253254, prenotazioni.cup@asl.pe.it. C'è «Modulistica per l'attivazione del percorso di tutela» (file): serve il suo indirizzo in «pagine» per scrivere letter_mode, send_to e how_to.",
+    "Screening: nelle copie del 23/10/2026 non c'è il numero dello screening. Messe in «pagine» le pagine screening dell'ASL: dopo la copia, il contatto «screening».",
+    "Percorso di tutela: l'indirizzo della «Modulistica per l'attivazione del percorso di tutela» non è ancora noto: la pagina Liste di attesa (copia del 23/10/2026) non ha i link."
    ],
    "pagine": [
     {
      "tipo": "liste-attesa",
      "url": "https://www.asl.pe.it/Sezione.jsp?idSezione=1105"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.asl.pe.it/DettaglioStruttura.jsp?id=108&idSezione=11"
     }
    ],
    "scelta_medico": {
@@ -654,6 +688,15 @@
      "hours": "Dal lunedì al sabato 09:00–13:00; martedì e giovedì anche 15:00–18:00",
      "verified": "2026-10-22",
      "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening oncologici gratuiti dell'ASL di Teramo (seno, collo dell'utero, colon-retto): informazioni, cambio dell'appuntamento, lettera d'invito non arrivata – numero verde gratuito",
+     "number": "800 210002",
+     "url": "https://www.aslteramo.it/cittadini-utenti/",
+     "hours": "Dal lunedì al venerdì 9–21; sabato 9–17",
+     "verified": "2026-10-23",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -692,7 +735,8 @@
     "Le pagine «Prenotazioni» e «Informazioni sui CUP» non riportano numeri nella copia; il CUP telefonico viene dalla pagina «Cittadini Utenti».",
     "Cartelle cliniche: la pagina «Cittadini Utenti» dice anche che la copia costa 5 euro più 0,20 a foglio. Non scritto: la prima copia dei propri dati è gratis (art. 15 GDPR, Garante), come dice il modulo.",
     "Scelta del medico (scelta_medico): dalla pagina «Servizi online» del Portale Sanità della Regione Abruzzo (copia del 22/10/2026): scelta e cambio del medico o del pediatra online, con SPID o utenza regionale, per i maggiorenni iscritti ad «Abruzzo Sanità online»; delega per minori o non autosufficienti. Mancano i numeri degli sportelli scelta e revoca dei distretti: nelle copie non ci sono.",
-    "Percorso di tutela: la notizia «SOS liste di attesa» (copia del 22/10/2026, febbraio 2024) dice che il percorso di tutela si attiva solo con la PEC, o senza PEC scrivendo a cupla@aslteramo.it (0861 429815, classi B e D); il servizio era sperimentale per il 2024. Serve una pagina più recente dell'ASL di Teramo prima di scrivere letter_mode e send_to."
+    "Percorso di tutela: la notizia «SOS liste di attesa» (copia del 22/10/2026, febbraio 2024) dice che il percorso di tutela si attiva solo con la PEC, o senza PEC scrivendo a cupla@aslteramo.it (0861 429815, classi B e D); il servizio era sperimentale per il 2024. Serve una pagina più recente dell'ASL di Teramo prima di scrivere letter_mode e send_to.",
+    "Screening: numero verde 800 21 00 02 e informazione.screening@aslteramo.it dalla pagina «Cittadini Utenti» (copia del 23/10/2026)."
    ],
    "pagine": [
     {

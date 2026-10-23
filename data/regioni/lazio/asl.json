@@ -176,7 +176,9 @@
     "Il CUP dell'ASL di Frosinone usa solo il numero regionale ReCUP 06 9939: nelle pagine non c'è un numero CUP proprio (gli sportelli di Anagni e Alatri rimandano al centralino).",
     "Manca un numero del PUA / cure domiciliari: le pagine copiate (Distretti sanitari) non riportano telefoni.",
     "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari.",
-    "Liste d'attesa: how_to, documents_required, what_next e details dalla pagina «Pass di garanzia» di Salute Lazio (copia del 22/10/2026, pubblicata il 28/05/2026; le stesse frasi sono nelle pagine dell'ASL Roma 1 e dell'ASL Roma 5). letter_mode «portal» con portal_url la pagina della Regione: il pulsante del modulo oggi dice «Vai al sito dell'ASL» (js/liste-attesa.js), andrebbe «Vai al sito della Regione». Il modulo resta spento finché mancano le zone di Roma 2 e Roma 3."
+    "Liste d'attesa: how_to, documents_required, what_next e details dalla pagina «Pass di garanzia» di Salute Lazio (copia del 22/10/2026, pubblicata il 28/05/2026; le stesse frasi sono nelle pagine dell'ASL Roma 1 e dell'ASL Roma 5). letter_mode «portal» con portal_url la pagina della Regione: il pulsante del modulo oggi dice «Vai al sito dell'ASL» (js/liste-attesa.js), andrebbe «Vai al sito della Regione». Il modulo resta spento finché manca un indirizzo della zona di Roma 2 (copie del 23/10/2026). Il portale è della Regione: in details c'è la frase «Nel Lazio il Pass di garanzia è un servizio della Regione…».",
+    "Screening (copie del 23/10/2026): nessuna pagina copiata dell'ASL ha il numero dello screening. Messi in «pagine» il depliant di Salute Lazio sullo screening del seno (numero verde ed email di ogni ASL) e la pagina «Screening oncologici» della Regione: dopo la copia, un contatto «screening» per ogni ASL e si accende «prevenzione».",
+    "Percorso di tutela (PDF «Percorsi di tutela» dell'ASL, copia del 23/10/2026): se il CUP non trova posto in tempo, il back office del CUP e il servizio Recall richiamano la persona e, se serve, passano la richiesta al Direttore del distretto. Il PDF non dà un indirizzo a cui scrivere: resta il Pass di garanzia della Regione."
    ],
    "pagine": [
     {
@@ -186,6 +188,14 @@
     {
      "tipo": "liste-attesa",
      "url": "https://www.asl.fr.it/wp-content/uploads/Percorsi-di-Tutela.pdf"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://salutelazio.it/documents/10182/9850609/Depliant+cura+seno/0751b383-dd31-89b9-4cdb-4e9c1a312709"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://regione.lazio.it/enti/salute/screening-oncologici"
     }
    ],
    "channel": "cup",
@@ -208,7 +218,8 @@
    "details": [
     "Nel Lazio il Pass di garanzia vale per le ricette con classe di priorità B (breve) e D (differibile).",
     "Con il Pass l'ASL si impegna a darti la visita o l'esame, anche in una struttura accreditata o in intramoenia.",
-    "Puoi chiedere e attivare il Pass anche per un familiare: entri con il tuo SPID o la tua CIE e scrivi i suoi dati."
+    "Puoi chiedere e attivare il Pass anche per un familiare: entri con il tuo SPID o la tua CIE e scrivi i suoi dati.",
+    "Nel Lazio il Pass di garanzia è un servizio della Regione: il sito è Salute Lazio, non quello dell'ASL."
    ],
    "fast_track": null
   },
@@ -376,12 +387,21 @@
     "Contraddizione sull'URP di Terracina-Fondi: la pagina Contatti dà 0771 505980, la pagina URP (aggiornata il 21/10/2026) dà 0771 505805; ho usato quest'ultimo.",
     "La pagina Contatti riporta ancora il vecchio numero della guardia medica (0773 520888): non usato, vale il 116117.",
     "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari.",
-    "Liste d'attesa: how_to, documents_required, what_next e details dalla pagina «Pass di garanzia» di Salute Lazio (copia del 22/10/2026, pubblicata il 28/05/2026; le stesse frasi sono nelle pagine dell'ASL Roma 1 e dell'ASL Roma 5). letter_mode «portal» con portal_url la pagina della Regione: il pulsante del modulo oggi dice «Vai al sito dell'ASL» (js/liste-attesa.js), andrebbe «Vai al sito della Regione». Il modulo resta spento finché mancano le zone di Roma 2 e Roma 3."
+    "Liste d'attesa: how_to, documents_required, what_next e details dalla pagina «Pass di garanzia» di Salute Lazio (copia del 22/10/2026, pubblicata il 28/05/2026; le stesse frasi sono nelle pagine dell'ASL Roma 1 e dell'ASL Roma 5). letter_mode «portal» con portal_url la pagina della Regione: il pulsante del modulo oggi dice «Vai al sito dell'ASL» (js/liste-attesa.js), andrebbe «Vai al sito della Regione». Il modulo resta spento finché manca un indirizzo della zona di Roma 2 (copie del 23/10/2026). Il portale è della Regione: in details c'è la frase «Nel Lazio il Pass di garanzia è un servizio della Regione…».",
+    "Screening (copie del 23/10/2026): nessuna pagina copiata dell'ASL ha il numero dello screening. Messi in «pagine» il depliant di Salute Lazio sullo screening del seno (numero verde ed email di ogni ASL) e la pagina «Screening oncologici» della Regione: dopo la copia, un contatto «screening» per ogni ASL e si accende «prevenzione»."
    ],
    "pagine": [
     {
      "tipo": "liste-attesa",
      "url": "https://salutelazio.it/it/pass-di-garanzia"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://salutelazio.it/documents/10182/9850609/Depliant+cura+seno/0751b383-dd31-89b9-4cdb-4e9c1a312709"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://regione.lazio.it/enti/salute/screening-oncologici"
     }
    ],
    "channel": "cup",
@@ -404,7 +424,8 @@
    "details": [
     "Nel Lazio il Pass di garanzia vale per le ricette con classe di priorità B (breve) e D (differibile).",
     "Con il Pass l'ASL si impegna a darti la visita o l'esame, anche in una struttura accreditata o in intramoenia.",
-    "Puoi chiedere e attivare il Pass anche per un familiare: entri con il tuo SPID o la tua CIE e scrivi i suoi dati."
+    "Puoi chiedere e attivare il Pass anche per un familiare: entri con il tuo SPID o la tua CIE e scrivi i suoi dati.",
+    "Nel Lazio il Pass di garanzia è un servizio della Regione: il sito è Salute Lazio, non quello dell'ASL."
    ],
    "fast_track": null
   },
@@ -608,12 +629,21 @@
     "Per prenotare visite ed esami il numero è il ReCUP regionale 06 9939: lo 0746 278058 è indicato per i prelievi e come call center aziendale/libera professione.",
     "Nessun numero per scelta del medico ed esenzioni nelle pagine copiate.",
     "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari.",
-    "Liste d'attesa: how_to, documents_required, what_next e details dalla pagina «Pass di garanzia» di Salute Lazio (copia del 22/10/2026, pubblicata il 28/05/2026; le stesse frasi sono nelle pagine dell'ASL Roma 1 e dell'ASL Roma 5). letter_mode «portal» con portal_url la pagina della Regione: il pulsante del modulo oggi dice «Vai al sito dell'ASL» (js/liste-attesa.js), andrebbe «Vai al sito della Regione». Il modulo resta spento finché mancano le zone di Roma 2 e Roma 3."
+    "Liste d'attesa: how_to, documents_required, what_next e details dalla pagina «Pass di garanzia» di Salute Lazio (copia del 22/10/2026, pubblicata il 28/05/2026; le stesse frasi sono nelle pagine dell'ASL Roma 1 e dell'ASL Roma 5). letter_mode «portal» con portal_url la pagina della Regione: il pulsante del modulo oggi dice «Vai al sito dell'ASL» (js/liste-attesa.js), andrebbe «Vai al sito della Regione». Il modulo resta spento finché manca un indirizzo della zona di Roma 2 (copie del 23/10/2026). Il portale è della Regione: in details c'è la frase «Nel Lazio il Pass di garanzia è un servizio della Regione…».",
+    "Screening (copie del 23/10/2026): nessuna pagina copiata dell'ASL ha il numero dello screening. Messi in «pagine» il depliant di Salute Lazio sullo screening del seno (numero verde ed email di ogni ASL) e la pagina «Screening oncologici» della Regione: dopo la copia, un contatto «screening» per ogni ASL e si accende «prevenzione»."
    ],
    "pagine": [
     {
      "tipo": "liste-attesa",
      "url": "https://salutelazio.it/it/pass-di-garanzia"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://salutelazio.it/documents/10182/9850609/Depliant+cura+seno/0751b383-dd31-89b9-4cdb-4e9c1a312709"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://regione.lazio.it/enti/salute/screening-oncologici"
     }
    ],
    "channel": "cup",
@@ -636,7 +666,8 @@
    "details": [
     "Nel Lazio il Pass di garanzia vale per le ricette con classe di priorità B (breve) e D (differibile).",
     "Con il Pass l'ASL si impegna a darti la visita o l'esame, anche in una struttura accreditata o in intramoenia.",
-    "Puoi chiedere e attivare il Pass anche per un familiare: entri con il tuo SPID o la tua CIE e scrivi i suoi dati."
+    "Puoi chiedere e attivare il Pass anche per un familiare: entri con il tuo SPID o la tua CIE e scrivi i suoi dati.",
+    "Nel Lazio il Pass di garanzia è un servizio della Regione: il sito è Salute Lazio, non quello dell'ASL."
    ],
    "fast_track": null
   },
@@ -1069,9 +1100,13 @@
     {
      "label": "Salute Lazio – Pass di garanzia",
      "url": "https://salutelazio.it/it/pass-di-garanzia"
+    },
+    {
+     "label": "ASL Roma 3 – Liste di attesa e percorsi di tutela",
+     "url": "https://www.aslroma3.it/amministrazione-trasparente/liste-attesa-new/"
     }
    ],
-   "last_verified": "2026-10-22",
+   "last_verified": "2026-10-23",
    "todo": [
     "CUP: tutte e sei le ASL rimandano al ReCUP regionale 06 9939 e agli sportelli CUP; nessun numero CUP proprio per i cittadini.",
     "Guardia medica: la pagina dell'ASL Roma 3 e le FAQ dell'ASL Roma 5 riportano ancora il vecchio numero 06 58526811 accanto al 116117: non usato.",
@@ -1079,8 +1114,12 @@
     "ASL Roma 5: la pagina URP dà solo l'email urp@aslroma5.it, nessun telefono; PUA trovato solo per Tivoli (gli altri distretti non copiati).",
     "ASL Roma 3 e Roma 6: le pagine assistenza domiciliare e PUA non danno numeri (rimandano al PUA del distretto).",
     "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari.",
-    "Liste d'attesa: how_to, documents_required, what_next e details dalla pagina «Pass di garanzia» di Salute Lazio (copia del 22/10/2026, pubblicata il 28/05/2026; le stesse frasi sono nelle pagine dell'ASL Roma 1 e dell'ASL Roma 5). letter_mode «portal» con portal_url la pagina della Regione: il pulsante del modulo oggi dice «Vai al sito dell'ASL» (js/liste-attesa.js), andrebbe «Vai al sito della Regione». Il modulo resta spento finché mancano le zone di Roma 2 e Roma 3.",
-    "Zone (sub_areas, copie del 22/10/2026): Roma 1 (PEC protocollo@pec.aslroma1.it e urp@aslroma1.it, pagine Contatti e URP; distretti 1, 2, 3, 13, 14, 15 dalla pagina PUA), Roma 4 (protocollo@pec.aslroma4.it, pagine Contatti e URP), Roma 5 (protocollo@pec.aslroma5.it), Roma 6 (servizio.protocollo@pec.aslroma6.it, pagina URP). Roma 2: la pagina URP copiata non mostra email né PEC (i municipi IV–IX sono nel menu dei distretti): serve la pagina «PEC» dell'ASL Roma 2. Roma 3: nessuna pagina copiata (il sito www.aslroma3.it non risponde al server, curl 56 e timeout): servono indirizzo e PEC da un'altra pagina ufficiale. Mancano anche i comuni di Roma 3, 4, 5 e 6. Finché Roma 2 e Roma 3 non hanno pec o emails, tests/coerenza.test.mjs tiene spenti i moduli con la lettera."
+    "Liste d'attesa: how_to, documents_required, what_next e details dalla pagina «Pass di garanzia» di Salute Lazio (copia del 22/10/2026, pubblicata il 28/05/2026; le stesse frasi sono nelle pagine dell'ASL Roma 1 e dell'ASL Roma 5). letter_mode «portal» con portal_url la pagina della Regione: il pulsante del modulo oggi dice «Vai al sito dell'ASL» (js/liste-attesa.js), andrebbe «Vai al sito della Regione». Il modulo resta spento finché manca un indirizzo della zona di Roma 2 (copie del 23/10/2026). Il portale è della Regione: in details c'è la frase «Nel Lazio il Pass di garanzia è un servizio della Regione…».",
+    "Screening (copie del 23/10/2026): nessuna pagina copiata dell'ASL ha il numero dello screening. Messi in «pagine» il depliant di Salute Lazio sullo screening del seno (numero verde ed email di ogni ASL) e la pagina «Screening oncologici» della Regione: dopo la copia, un contatto «screening» per ogni ASL e si accende «prevenzione».",
+    "Zone (sub_areas): Roma 1 (PEC protocollo@pec.aslroma1.it e urp@aslroma1.it, pagine Contatti e URP; distretti 1, 2, 3, 13, 14, 15 dalla pagina PUA), Roma 3 (copia del 23/10/2026 della pagina URP: urp@aslroma3.it e PEC urp@pec.aslroma3.it; distretti Fiumicino e Municipi X, XI e XII dal menu dell'ASL), Roma 4 (protocollo@pec.aslroma4.it), Roma 5 (protocollo@pec.aslroma5.it), Roma 6 (servizio.protocollo@pec.aslroma6.it). Roma 2: la pagina URP copiata (23/10/2026) non ha email né PEC; la home ha un link «PEC»: messa in «pagine» la pagina https://www.aslroma2.it/index.php/pec e l'elenco delle PEC delle ASL della Regione Lazio. Finché Roma 2 non ha pec o emails, tests/coerenza.test.mjs tiene spenti i moduli con la lettera.",
+    "Comuni delle zone Roma 4, 5 e 6: nelle copie ci sono solo alcune sedi (Civitavecchia, Bracciano, Tivoli). Messe in «pagine» le pagine dei distretti (Roma 4 e Roma 5) e «Comuni del territorio» (Roma 6).",
+    "Percorso di tutela dell'ASL Roma 3 (pagina Liste di attesa, copia del 23/10/2026): oltre al Pass di garanzia, si può mandare a protocollo@pec.aslroma3.it il «Modulo presentazione istanza» con ricetta, documento e promemoria della prenotazione (Delibera n. 597 del 06/06/2024). Il modulo è un file e la copia non ha il suo indirizzo: scritto solo nei details della zona.",
+    "Centralino ASL Roma 3 06 56481: nella copia del 23/10/2026 della pagina «Servizio prenotazioni» è scritto «+390656481» (confronta-copie non lo riconosce). La stessa pagina ha in fondo link pubblicitari di siti di scommesse: sembra manomessa. Da confermare il numero su un'altra pagina dell'ASL Roma 3 o con una telefonata."
    ],
    "pagine": [
     {
@@ -1106,6 +1145,46 @@
     {
      "tipo": "liste-attesa",
      "url": "https://www.aslroma5.it/percorso-di-garanzia-nella-regione-lazio/"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://salutelazio.it/documents/10182/9850609/Depliant+cura+seno/0751b383-dd31-89b9-4cdb-4e9c1a312709"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://regione.lazio.it/enti/salute/screening-oncologici"
+    },
+    {
+     "tipo": "pec",
+     "url": "https://www.aslroma2.it/index.php/pec"
+    },
+    {
+     "tipo": "pec",
+     "url": "https://www.regione.lazio.it/sites/default/files/2021-03/Elenco%20indirizzi%20PEC%20ASL.pdf"
+    },
+    {
+     "tipo": "comuni",
+     "url": "https://www.aslroma4.it/azienda/distretti"
+    },
+    {
+     "tipo": "comuni",
+     "url": "https://www.aslroma5.it/asl-roma-5-distretti-sanitari/"
+    },
+    {
+     "tipo": "comuni",
+     "url": "https://www.aslroma6.it/-/comuni-del-territorio"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.aslroma1.it/uploads/files/12_59_volantino_A5.pdf"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.aslroma3.it/wp-content/uploads/2026/05/Brochure-dello-screening-mammografico.pdf"
+    },
+    {
+     "tipo": "liste-attesa",
+     "url": "https://www.aslroma1.it/uploads/files/59_26_Tempi_di_erogazione_delle_prestazioni_sanitarie_.pdf"
     }
    ],
    "channel": "cup",
@@ -1128,7 +1207,8 @@
    "details": [
     "Nel Lazio il Pass di garanzia vale per le ricette con classe di priorità B (breve) e D (differibile).",
     "Con il Pass l'ASL si impegna a darti la visita o l'esame, anche in una struttura accreditata o in intramoenia.",
-    "Puoi chiedere e attivare il Pass anche per un familiare: entri con il tuo SPID o la tua CIE e scrivi i suoi dati."
+    "Puoi chiedere e attivare il Pass anche per un familiare: entri con il tuo SPID o la tua CIE e scrivi i suoi dati.",
+    "Nel Lazio il Pass di garanzia è un servizio della Regione: il sito è Salute Lazio, non quello dell'ASL."
    ],
    "fast_track": null,
    "sub_areas": [
@@ -1157,7 +1237,23 @@
     {
      "id": "roma3",
      "label": "ASL Roma 3",
-     "nome_lettera": "ASL Roma 3"
+     "nome_lettera": "ASL Roma 3",
+     "comuni": [
+      "Roma: municipi X, XI e XII",
+      "Fiumicino"
+     ],
+     "pec": "urp@pec.aslroma3.it",
+     "emails": [
+      "urp@aslroma3.it"
+     ],
+     "site_url": "https://www.aslroma3.it",
+     "details": [
+      "Nel Lazio il Pass di garanzia vale per le ricette con classe di priorità B (breve) e D (differibile).",
+      "Con il Pass l'ASL si impegna a darti la visita o l'esame, anche in una struttura accreditata o in intramoenia.",
+      "Puoi chiedere e attivare il Pass anche per un familiare: entri con il tuo SPID o la tua CIE e scrivi i suoi dati.",
+      "Nel Lazio il Pass di garanzia è un servizio della Regione: il sito è Salute Lazio, non quello dell'ASL.",
+      "Nell'ASL Roma 3 puoi anche mandare la richiesta del percorso di tutela con la PEC a protocollo@pec.aslroma3.it. Allega il modulo dell'ASL, la ricetta, il documento d'identità e il foglio della prenotazione con la prima data che ti hanno dato."
+     ]
     },
     {
      "id": "roma4",
@@ -1425,12 +1521,21 @@
     "La pagina Contatti aziendali è aggiornata al 2023: centralino e numero verde presi dalla pagina Azienda (agg. 11/2025), che riporta gli stessi numeri.",
     "Nessun numero per scelta del medico ed esenzioni nelle pagine copiate.",
     "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari.",
-    "Liste d'attesa: how_to, documents_required, what_next e details dalla pagina «Pass di garanzia» di Salute Lazio (copia del 22/10/2026, pubblicata il 28/05/2026; le stesse frasi sono nelle pagine dell'ASL Roma 1 e dell'ASL Roma 5). letter_mode «portal» con portal_url la pagina della Regione: il pulsante del modulo oggi dice «Vai al sito dell'ASL» (js/liste-attesa.js), andrebbe «Vai al sito della Regione». Il modulo resta spento finché mancano le zone di Roma 2 e Roma 3."
+    "Liste d'attesa: how_to, documents_required, what_next e details dalla pagina «Pass di garanzia» di Salute Lazio (copia del 22/10/2026, pubblicata il 28/05/2026; le stesse frasi sono nelle pagine dell'ASL Roma 1 e dell'ASL Roma 5). letter_mode «portal» con portal_url la pagina della Regione: il pulsante del modulo oggi dice «Vai al sito dell'ASL» (js/liste-attesa.js), andrebbe «Vai al sito della Regione». Il modulo resta spento finché manca un indirizzo della zona di Roma 2 (copie del 23/10/2026). Il portale è della Regione: in details c'è la frase «Nel Lazio il Pass di garanzia è un servizio della Regione…».",
+    "Screening (copie del 23/10/2026): nessuna pagina copiata dell'ASL ha il numero dello screening. Messi in «pagine» il depliant di Salute Lazio sullo screening del seno (numero verde ed email di ogni ASL) e la pagina «Screening oncologici» della Regione: dopo la copia, un contatto «screening» per ogni ASL e si accende «prevenzione»."
    ],
    "pagine": [
     {
      "tipo": "liste-attesa",
      "url": "https://salutelazio.it/it/pass-di-garanzia"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://salutelazio.it/documents/10182/9850609/Depliant+cura+seno/0751b383-dd31-89b9-4cdb-4e9c1a312709"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://regione.lazio.it/enti/salute/screening-oncologici"
     }
    ],
    "channel": "cup",
@@ -1453,7 +1558,8 @@
    "details": [
     "Nel Lazio il Pass di garanzia vale per le ricette con classe di priorità B (breve) e D (differibile).",
     "Con il Pass l'ASL si impegna a darti la visita o l'esame, anche in una struttura accreditata o in intramoenia.",
-    "Puoi chiedere e attivare il Pass anche per un familiare: entri con il tuo SPID o la tua CIE e scrivi i suoi dati."
+    "Puoi chiedere e attivare il Pass anche per un familiare: entri con il tuo SPID o la tua CIE e scrivi i suoi dati.",
+    "Nel Lazio il Pass di garanzia è un servizio della Regione: il sito è Salute Lazio, non quello dell'ASL."
    ],
    "fast_track": null
   }
