@@ -1,6 +1,6 @@
 {
  "regione": "veneto",
- "aggiornato": "2026-10-23T06:45:46.880Z",
+ "aggiornato": "2026-10-23T09:05:41.542Z",
  "pagine": [
   {
    "asl": "belluno",
@@ -171,7 +171,7 @@
    "titolo": "Servizio di Prevenzione delle Malattie Croniche non Trasmissibili, Programmi di Screening e Promozione della Salute",
    "sha": "ea0b74707352d751079e5ce6bcd7516e5b3c37455dbbb8a6402ff7ad63daceaa",
    "caratteri": 8741,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "treviso",
@@ -353,7 +353,7 @@
    "titolo": "Liste d'attesa",
    "sha": "5808bc87bc641f2f211f18bbc42e2c9c59247459a2725b6fedd74a4f5e2c2f19",
    "caratteri": 14139,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "treviso",
@@ -364,7 +364,7 @@
    "titolo": "Liste di Attesa",
    "sha": "d12fcd12c9e49971af1b02a2e756edef46b025786afb7e1f9efa6d09e6d6311c",
    "caratteri": 9529,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "treviso",
@@ -375,7 +375,7 @@
    "titolo": "Servizio Programmi Di Screening",
    "sha": "8cea85f9177889985a453c0bcb7f0fd14822a09977787309ffea3eb4988b212e",
    "caratteri": 4951,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "treviso",
@@ -386,7 +386,7 @@
    "titolo": "Screening del tumore del colon-retto",
    "sha": "85cfe162d0fcfb7c895c7a58326eb35cca314805d4abac4d2491c111a07ae379",
    "caratteri": 8778,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -397,9 +397,9 @@
    "finale": "https://www.aulss3.veneto.it/home",
    "file": "venezia/16b1625c6d9f.txt",
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
-   "sha": "56cc4bd859b15aa1a6963d1d39f02910359536396a5aca9ae75211b7d3715f57",
+   "sha": "3ef915dc07530d9ff7abccdf1e904ba55529e86d6791a767f23d01de69d1d0f5",
    "caratteri": 5859,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -508,7 +508,7 @@
    "finale": "https://www.aulss3.veneto.it/home",
    "file": "venezia/d213a293dfcf.txt",
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
-   "sha": "15bfcb2821e8a5832bef1be74c4be0df286a37caef299a0fa467dcadb748f724",
+   "sha": "3ef915dc07530d9ff7abccdf1e904ba55529e86d6791a767f23d01de69d1d0f5",
    "caratteri": 5859,
    "cambiata": true
   },
@@ -516,13 +516,12 @@
    "asl": "venezia",
    "url": "https://www.aulss3.veneto.it/Assistenza-Domiciliare-Integrata",
    "controllata": "2026-10-23",
-   "browser": true,
    "http": 200,
-   "finale": "https://www.aulss3.veneto.it/home",
+   "finale": "https://www.aulss3.veneto.it/dettaglio/contenuto/assistenza-domiciliare-integrata-adi",
    "file": "venezia/3eaad184c615.txt",
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
-   "sha": "15bfcb2821e8a5832bef1be74c4be0df286a37caef299a0fa467dcadb748f724",
-   "caratteri": 5859,
+   "sha": "8357c3df048ee62b237df5f1c0798f7afb9809f7a40dee8a34997fae5c66edcc",
+   "caratteri": 29,
    "cambiata": true
   },
   {
@@ -564,73 +563,67 @@
    "asl": "venezia",
    "url": "https://www.aulss3.veneto.it/home/numeri-utili",
    "controllata": "2026-10-23",
-   "browser": true,
    "http": 200,
    "file": "venezia/4e732f80417a.txt",
-   "titolo": "ULSS 3 SERENISSIMA - Numeri utili",
-   "sha": "2d9d6cb4fafc1045c6ebf5c4b5200b741e3fafa308e03365fa8a3f6fdd0495ca",
-   "caratteri": 10381,
-   "cambiata": false
+   "titolo": "myPortal | ULSS 3 SERENISSIMA",
+   "sha": "8357c3df048ee62b237df5f1c0798f7afb9809f7a40dee8a34997fae5c66edcc",
+   "caratteri": 29,
+   "cambiata": true
   },
   {
    "asl": "venezia",
    "url": "https://www.aulss3.veneto.it/organizzazione/ufficio-relazioni-con-il-pubblico",
    "controllata": "2026-10-23",
-   "browser": true,
    "http": 200,
    "file": "venezia/02aa01a4fd92.txt",
-   "titolo": "Ufficio Relazioni con il Pubblico",
-   "sha": "2d7dd5b5df2ff27659ec5b80333dc29f3cc284f971f0e6129ff843e65ebe3285",
-   "caratteri": 6495,
-   "cambiata": false
+   "titolo": "myPortal | ULSS 3 SERENISSIMA",
+   "sha": "8357c3df048ee62b237df5f1c0798f7afb9809f7a40dee8a34997fae5c66edcc",
+   "caratteri": 29,
+   "cambiata": true
   },
   {
    "asl": "venezia",
    "url": "https://www.aulss3.veneto.it/come-fare-per/prenotazioni",
    "controllata": "2026-10-23",
-   "browser": true,
    "http": 200,
    "file": "venezia/94b10fd120ae.txt",
-   "titolo": "ULSS 3 SERENISSIMA - Prenotare o disdire una prestazione",
-   "sha": "24cb0231314153f570e3aa81d3f988c1fc648ed27bbd901b52da8962850af619",
-   "caratteri": 4174,
-   "cambiata": false
+   "titolo": "myPortal | ULSS 3 SERENISSIMA",
+   "sha": "8357c3df048ee62b237df5f1c0798f7afb9809f7a40dee8a34997fae5c66edcc",
+   "caratteri": 29,
+   "cambiata": true
   },
   {
    "asl": "venezia",
    "url": "https://www.aulss3.veneto.it/come-fare-per/medici-medicina-generale-pediatri-libera-scelta-e-continuita-assistenziale",
    "controllata": "2026-10-23",
-   "browser": true,
    "http": 200,
    "file": "venezia/97e8ec10f5af.txt",
-   "titolo": "Medici Medicina Generale, Pediatri Libera Scelta e Continuit",
-   "sha": "52756ca8b2dedff8e23b92608d12f95cdbd184d48e30b61d3f7625edf3f683d4",
-   "caratteri": 4645,
-   "cambiata": false
+   "titolo": "myPortal | ULSS 3 SERENISSIMA",
+   "sha": "8357c3df048ee62b237df5f1c0798f7afb9809f7a40dee8a34997fae5c66edcc",
+   "caratteri": 29,
+   "cambiata": true
   },
   {
    "asl": "venezia",
    "url": "https://www.aulss3.veneto.it/organizzazione/centrale-operativa-116117",
    "controllata": "2026-10-23",
-   "browser": true,
    "http": 200,
    "file": "venezia/39d68180d5c5.txt",
-   "titolo": "Centrale operativa 116117",
-   "sha": "6bdde9632b469730c546e29356791e738ef23ee2e91f3ffe0b441a8d012cc5aa",
-   "caratteri": 10392,
-   "cambiata": false
+   "titolo": "myPortal | ULSS 3 SERENISSIMA",
+   "sha": "8357c3df048ee62b237df5f1c0798f7afb9809f7a40dee8a34997fae5c66edcc",
+   "caratteri": 29,
+   "cambiata": true
   },
   {
    "asl": "venezia",
    "url": "https://www.aulss3.veneto.it/home/numeri-utili/cup",
    "controllata": "2026-10-23",
-   "browser": true,
    "http": 200,
    "file": "venezia/5a46483d1b7e.txt",
-   "titolo": "ULSS 3 SERENISSIMA - CUP - Centro Unico Prenotazioni",
-   "sha": "b33b2f30619c3fc55be0520b1aabe89be7fee56add89d84f7ae23ff650b8b4e3",
-   "caratteri": 3540,
-   "cambiata": false
+   "titolo": "myPortal | ULSS 3 SERENISSIMA",
+   "sha": "8357c3df048ee62b237df5f1c0798f7afb9809f7a40dee8a34997fae5c66edcc",
+   "caratteri": 29,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -660,26 +653,24 @@
    "asl": "venezia",
    "url": "https://www.aulss4.veneto.it/",
    "controllata": "2026-10-23",
-   "browser": true,
    "http": 200,
    "finale": "https://www.aulss4.veneto.it/home",
    "file": "venezia/782f4fd5fd90.txt",
    "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
-   "sha": "900f0771f26a176c4994fc55995772f4d21d05b97fbb41341168bb90fe4f83d5",
-   "caratteri": 5121,
-   "cambiata": false
+   "sha": "6bc2275696536324da914a4390835a8856b32ef9c71aa40dd59c0c5b84156a8f",
+   "caratteri": 45,
+   "cambiata": true
   },
   {
    "asl": "venezia",
    "url": "https://www.aulss4.veneto.it/home/urp-online",
    "controllata": "2026-10-23",
-   "browser": true,
    "http": 200,
    "file": "venezia/07d218b31df3.txt",
-   "titolo": "Azienda ULSS n. 4 Veneto Orientale - Ufficio Relazioni con il Pubblico",
-   "sha": "1e2030667e6e682b078dbe5354f751efc1d8f45c234408b9c9e6fc4d1445f7d6",
-   "caratteri": 5619,
-   "cambiata": false
+   "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
+   "sha": "6bc2275696536324da914a4390835a8856b32ef9c71aa40dd59c0c5b84156a8f",
+   "caratteri": 45,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -700,10 +691,10 @@
    "browser": true,
    "http": 200,
    "file": "venezia/7259f23ba486.txt",
-   "titolo": "Prenotazione esami di laboratorio presso le strutture dell'A",
-   "sha": "6c77e5de6056b83fe18ff4c7613f38247614a291db5815170e35a02e80cf3b87",
-   "caratteri": 3562,
-   "cambiata": false
+   "titolo": "Azienda ULSS n. 4 Veneto Orientale - Prenotazione esami di laboratorio presso le strutture dell'Azienda Ulss4 \"Veneto Orientale\"",
+   "sha": "639a5afddb6322348a5a2962cc2fba1c554e07dede861388a1a1a61d719c21fe",
+   "caratteri": 3630,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -721,11 +712,12 @@
    "asl": "venezia",
    "url": "https://www.aulss4.veneto.it/home/numeri-utili/pronto-soccorso-118",
    "controllata": "2026-10-23",
+   "browser": true,
    "http": 200,
    "file": "venezia/a4b0fb47461e.txt",
    "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
-   "sha": "6bc2275696536324da914a4390835a8856b32ef9c71aa40dd59c0c5b84156a8f",
-   "caratteri": 45,
+   "sha": "d2d9433b6a9772b84ab4f303634a1d4d70c4c643ef09a6bacc45875804f31b84",
+   "caratteri": 6617,
    "cambiata": true
   },
   {
@@ -761,7 +753,7 @@
    "finale": "https://www.aulss3.veneto.it/home",
    "file": "venezia/a029f2332558.txt",
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
-   "sha": "3612af2ebca948ecdb9ae14f5dddd449aa51dee262c275a7ecfb69271068e0d5",
+   "sha": "3ef915dc07530d9ff7abccdf1e904ba55529e86d6791a767f23d01de69d1d0f5",
    "caratteri": 5859,
    "cambiata": true
   },
@@ -774,7 +766,7 @@
    "finale": "https://www.aulss3.veneto.it/home",
    "file": "venezia/b6eaeaaa2085.txt",
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
-   "sha": "3612af2ebca948ecdb9ae14f5dddd449aa51dee262c275a7ecfb69271068e0d5",
+   "sha": "3ef915dc07530d9ff7abccdf1e904ba55529e86d6791a767f23d01de69d1d0f5",
    "caratteri": 5859,
    "cambiata": true
   },
@@ -813,7 +805,7 @@
    "finale": "https://www.aulss3.veneto.it/home",
    "file": "venezia/e677293f92f5.txt",
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
-   "sha": "3612af2ebca948ecdb9ae14f5dddd449aa51dee262c275a7ecfb69271068e0d5",
+   "sha": "3ef915dc07530d9ff7abccdf1e904ba55529e86d6791a767f23d01de69d1d0f5",
    "caratteri": 5859,
    "cambiata": true
   },
@@ -840,7 +832,7 @@
    "sha": "d78984a9cca547688b2a2a7b998764f5eb7af774ef32b948ac4f4b0591630eac",
    "caratteri": 58816,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -852,7 +844,7 @@
    "titolo": "Azienda ULSS n. 4 Veneto Orientale - Case della Comunità",
    "sha": "29ad99bcc7cc69f17cc55c30eb885b44c77f2e14e91751b524b67d7da70f754f",
    "caratteri": 4826,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "rovigo",
@@ -1028,7 +1020,7 @@
    "titolo": "Liste di attesa",
    "sha": "712b6fc3c5ed57451ca25b4baae7cea380a744767a004ba9a4ecbba1ef4dc658",
    "caratteri": 18014,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "rovigo",
@@ -1046,7 +1038,7 @@
    "titolo": "Screening mammografico",
    "sha": "6a18459b038b0ca224052100b968bef6143c42e7bc15ca7809aee70b7ef06a98",
    "caratteri": 6986,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "rovigo",
@@ -1197,7 +1189,7 @@
    "titolo": "Disposizioni aziendali in merito all'applicazione del D.Lgs n.124/98",
    "sha": "d3376eb243645d3a3b6c53cc0b97dae91419e932eef695bf9b788ca0efd447df",
    "caratteri": 6602,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "padova",
@@ -1209,7 +1201,7 @@
    "sha": "58fc67311d2295fa9e0a0df8f79248d4fcd686acbb9a75069c6a223754a36dd2",
    "caratteri": 42090,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "padova",
@@ -1220,7 +1212,7 @@
    "titolo": "Screening del collo dell'utero",
    "sha": "1333a7fdb6b655f674b80d9e75d9508339b1eee1230a09053418179ae3fb09bd",
    "caratteri": 6681,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "padova",
@@ -1231,7 +1223,7 @@
    "titolo": "Screening della mammella",
    "sha": "bef25506c7db9c967f8bc171ca04b8809b679083cfc0db4c90244597583fb572",
    "caratteri": 6027,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "padova",
@@ -1242,7 +1234,7 @@
    "titolo": "Screening del tumore del colon retto",
    "sha": "7c7e0bd02bba22b05bec3ac77ef4adf21549aa80c34b44c646170706d32d4234",
    "caratteri": 8342,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "vicenza",
@@ -1634,7 +1626,7 @@
    "titolo": "Servizio di Epidemiologia - Screening Oncologici e Sorveglianza PFAS",
    "sha": "33feb9ecee25b88a58bf3085edac566fb04908108116b0fe592380f42beeb182",
    "caratteri": 9023,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "vicenza",
@@ -1645,7 +1637,7 @@
    "titolo": "Programmi di screening",
    "sha": "9f12857311a06474f836288026b5b7f1e8187a24b4d42455c10915373e4b026a",
    "caratteri": 7027,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "vicenza",
@@ -1656,7 +1648,7 @@
    "titolo": "Screening Colon Retto",
    "sha": "2f8f813c0096c2835e4d280070681fb12a19358f7329bdf6a9b1ebce3321329d",
    "caratteri": 7432,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "verona",

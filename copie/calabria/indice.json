@@ -1,6 +1,6 @@
 {
  "regione": "calabria",
- "aggiornato": "2026-10-23T04:55:12.229Z",
+ "aggiornato": "2026-10-23T07:10:47.838Z",
  "pagine": [
   {
    "asl": "catanzaro",
@@ -378,7 +378,7 @@
    "sha": "9718c6f20b0b02390df51c516e8989cccd892b045186e119577bf06728c98716",
    "caratteri": 7381,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "catanzaro",
@@ -400,7 +400,7 @@
    "sha": "a078ccd7991d2121af5236e50aaf508ce4cb4531e83843f502cfc1753dbfef75",
    "caratteri": 134854,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "cosenza",
@@ -455,7 +455,7 @@
    "http": 200,
    "file": "cosenza/fe31bc8fb243.txt",
    "titolo": "Centro Unico di Prenotazione Online - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "b28a47712c0aa4cca8026b94f73abf67d199530117d3f54b13ecd632619a25a6",
+   "sha": "ed1b91adc97cc8020e7378993dc9e46e15f6d1193e78fd85d78bc5f8ca02d46e",
    "caratteri": 8094,
    "cambiata": true
   },
@@ -560,9 +560,9 @@
    "http": 200,
    "file": "crotone/4ab485a670df.txt",
    "titolo": "contatti - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "02f14f346392864ce87b43e55e3ddbfcd84b1424ad979dfa066d85ffba8628b5",
+   "sha": "ce00af11373731cef797563af26331de7b9b9e8f26ed91e794faa2efc9fc9103",
    "caratteri": 7856,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "crotone",
@@ -778,7 +778,7 @@
    "sha": "9718c6f20b0b02390df51c516e8989cccd892b045186e119577bf06728c98716",
    "caratteri": 7381,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "reggio-calabria",
@@ -858,6 +858,12 @@
   },
   {
    "asl": "vibo-valentia",
+   "url": "https://www.aspvv.it/index.php/azienda/presentazione/la-direzione-generale-e-uffici-di-staff/ufficio-comunicazione-e-urp",
+   "controllata": "2026-10-23",
+   "http": 403
+  },
+  {
+   "asl": "vibo-valentia",
    "url": "https://www.asprc.it/files/upload/modulo-esercizio-diritti-asprc-medpd-a100624.pdf",
    "controllata": "2026-10-23",
    "da_pagina": "https://www.asprc.it/servizi/numeri-utili/",
@@ -867,7 +873,7 @@
    "sha": "9718c6f20b0b02390df51c516e8989cccd892b045186e119577bf06728c98716",
    "caratteri": 7381,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "inps-calabria",
@@ -1288,7 +1294,7 @@
    "http": 200,
    "file": "asp-crotone/a6bd80f5d25e.txt",
    "titolo": "La Guardia medica - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "548b65aadd25e4ff9f023946a6bd829f193ed1957d5a57bc85ef247331f5baf2",
+   "sha": "1edd7e76f4cc540c6ce2df8124cc129f2979a567bd85b6c5f9596c5d94893fa2",
    "caratteri": 5228,
    "link_pdf": [
     {
@@ -1296,7 +1302,7 @@
      "testo": "Scarica la carta dei servizi"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "asp-crotone",
@@ -1331,7 +1337,7 @@
    "sha": "46cb22de6e00801b11dd46a448af38fd3808a87931abae92ca1ee2019e2aba8f",
    "caratteri": 10738,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asp-reggio-calabria",

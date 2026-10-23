@@ -1,6 +1,6 @@
 {
  "regione": "lazio",
- "aggiornato": "2026-10-23T05:16:25.255Z",
+ "aggiornato": "2026-10-23T07:34:05.715Z",
  "pagine": [
   {
    "asl": "frosinone",
@@ -27,9 +27,9 @@
    "http": 200,
    "file": "frosinone/1b6a08522663.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "25015c5b43a61366d98477466f983899fc94941dc880c12de5946d252a06aee3",
+   "sha": "ce21a63b1dc01e21429e11f4a4d7d3560e05c4c5a8985260c2c21f06b0be1818",
    "caratteri": 4170,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "frosinone",
@@ -39,9 +39,9 @@
    "finale": "https://salutelazio.it/it/servizi/guardia-medica",
    "file": "frosinone/a14f568f3b2f.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
+   "sha": "35d3aad05a7b0076371577c576aa4a5787bf713c630b0b4c273f9b2e68bbe902",
    "caratteri": 2358,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "frosinone",
@@ -164,6 +164,70 @@
      "testo": "Il manuale di identità visiva"
     }
    ],
+   "cambiata": false
+  },
+  {
+   "asl": "frosinone",
+   "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-prevenzione/uosd-coordinamento-screening/",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "frosinone/bc00811c9b33.txt",
+   "titolo": "UOSD Coordinamento Screening | ASL Frosinone",
+   "sha": "cc1f7a6f55974a9edfb47be98ee811f82d906432df609036d95a5793185bf0ca",
+   "caratteri": 24801,
+   "link_pdf": [
+    {
+     "url": "https://www.asl.fr.it/wp-content/uploads/All3_Modello_infomrativa.-screeningpdf.pdf",
+     "testo": "INFORMATIVA SUL TRATTAMENTO DEI DATI PERSONALI"
+    },
+    {
+     "url": "https://www.asl.fr.it/wp-content/uploads/Accesso_utente_FSE_LOCANDINA_04_4_25_screening_esito.pdf",
+     "testo": "Come scaricare la comunicazione"
+    },
+    {
+     "url": "https://www.asl.fr.it/wp-content/uploads/Come-accedere-al-Fascicolo-Sanitario-Elettronico-1.pdf",
+     "testo": "Come accedere all’FSE"
+    },
+    {
+     "url": "https://www.asl.fr.it/wp-content/uploads/nota-informativa-screening-mammografico.pdf",
+     "testo": "Nota informativa screening mammografico 184.96 KB 184.96 KB"
+    },
+    {
+     "url": "https://www.asl.fr.it/wp-content/uploads/nota-informativa-screening-colon-retto.pdf",
+     "testo": "Nota informativa screening colon retto 166.74 KB 166.74 KB"
+    },
+    {
+     "url": "https://www.asl.fr.it/wp-content/uploads/nota-informativa-screening-cervice-uterina.pdf",
+     "testo": "Nota informativa screening cervico uterina 181.74 KB 181.74 KB"
+    },
+    {
+     "url": "https://www.asl.fr.it/wp-content/uploads/Come-accedere-al-Fascicolo-Sanitario-Elettronico.pdf",
+     "testo": "Come-accedere-al-Fascicolo-Sanitario-Elettronico 1.56 MB 1.56 MB"
+    },
+    {
+     "url": "https://www.asl.fr.it/wp-content/uploads/DELIBERA_N._365_DEL_25.05.2020_0.pdf",
+     "testo": "Iscrizione alla short list degli Avvocati Esterni"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "frosinone",
+   "url": "https://www.asl.fr.it/servizi/prevenzione/screening-oncologici/",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "frosinone/3f147c5d6997.txt",
+   "titolo": "Prevenzione: Screening oncologici | ASL Frosinone",
+   "sha": "482b74256a8248a30417a14c4afc3dea607803d0317777009d6f7f3af4060b74",
+   "caratteri": 4337,
+   "link_pdf": [
+    {
+     "url": "https://www.asl.fr.it/wp-content/uploads/DELIBERA_N._365_DEL_25.05.2020_0.pdf",
+     "testo": "Iscrizione alla short list degli Avvocati Esterni"
+    }
+   ],
    "cambiata": true
   },
   {
@@ -178,7 +242,7 @@
    "sha": "24f34999f8e6f473252e56e2eb10987ca208c4c3e26f2d88369f7fd5a9055a66",
    "caratteri": 5342,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "frosinone",
@@ -192,7 +256,7 @@
    "sha": "c5aa3ace9e774d224a6d4cf056ea73d41e1b34ffba977f5d587795bf665bf412",
    "caratteri": 346,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "frosinone",
@@ -206,7 +270,7 @@
    "sha": "5b94ec7f4875c1860cbb887407723687f88388a856c203b0fa9f9bca74a8434e",
    "caratteri": 265,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "frosinone",
@@ -220,7 +284,7 @@
    "sha": "ead6f70d8809a19eaf64dcb91b8bc73429fd3fc88007617c41b2846a793b8a61",
    "caratteri": 372,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "frosinone",
@@ -229,6 +293,71 @@
    "da_pagina": "https://regione.lazio.it/enti/salute/screening-oncologici",
    "http": 403,
    "nota": "controllo anti-robot (CAPTCHA): non copiata"
+  },
+  {
+   "asl": "frosinone",
+   "url": "https://www.asl.fr.it/wp-content/uploads/All3_Modello_infomrativa.-screeningpdf.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-prevenzione/uosd-coordinamento-screening/",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "frosinone/835a4a179b6b.txt",
+   "titolo": "Microsoft Word - 2023_07_18_Modello_infomrativa",
+   "sha": "90a70dd4137ef4b59f4e71874e4ad4823cfa5f5406270a470cd4bef4902a7c58",
+   "caratteri": 5325,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "frosinone",
+   "url": "https://www.asl.fr.it/wp-content/uploads/Accesso_utente_FSE_LOCANDINA_04_4_25_screening_esito.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-prevenzione/uosd-coordinamento-screening/",
+   "http": 0,
+   "certificato": "non valido",
+   "errore": "file più grande di 5 MB: non copiato"
+  },
+  {
+   "asl": "frosinone",
+   "url": "https://www.asl.fr.it/wp-content/uploads/nota-informativa-screening-mammografico.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-prevenzione/uosd-coordinamento-screening/",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "frosinone/11857628cb57.txt",
+   "titolo": "ASL",
+   "sha": "a55145a71dc2eeb8695de1b93615043481735fa19c7745a4891d18a1f3f86eb6",
+   "caratteri": 7378,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "frosinone",
+   "url": "https://www.asl.fr.it/wp-content/uploads/nota-informativa-screening-colon-retto.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-prevenzione/uosd-coordinamento-screening/",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "frosinone/db2e0af68e0f.txt",
+   "titolo": "ASL",
+   "sha": "78885520d8765704558dbfee301829eba53823317f6d39cf18c524d3a6132cbf",
+   "caratteri": 6271,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "frosinone",
+   "url": "https://www.asl.fr.it/wp-content/uploads/nota-informativa-screening-cervice-uterina.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-prevenzione/uosd-coordinamento-screening/",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "frosinone/92f4f82ec732.txt",
+   "titolo": "ASL",
+   "sha": "5035d0c7785439e13befacab51ddd01f6cf7e8f6e372c2acf35b1bc5e6727f3b",
+   "caratteri": 7219,
+   "pdf": true,
+   "cambiata": true
   },
   {
    "asl": "latina",
@@ -270,9 +399,9 @@
    "finale": "https://salutelazio.it/it/servizi/guardia-medica",
    "file": "latina/a14f568f3b2f.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
+   "sha": "35d3aad05a7b0076371577c576aa4a5787bf713c630b0b4c273f9b2e68bbe902",
    "caratteri": 2358,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "latina",
@@ -490,6 +619,44 @@
      "testo": "Il manuale di identità visiva"
     }
    ],
+   "cambiata": false
+  },
+  {
+   "asl": "latina",
+   "url": "https://www.ausl.latina.it/prevenzione-stili-di-vita/psv-screening-oncologici",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "latina/ea194b301ae9.txt",
+   "titolo": "Screening oncologici",
+   "sha": "0ada913e92501786357a832807cbf1ed56470b43676205c8b05c5b180526aebf",
+   "caratteri": 5126,
+   "link_pdf": [
+    {
+     "url": "https://www.ausl.latina.it/attachments/category/31/CONTRATTO_asl%20latina-PolizzaRTCO.pdf",
+     "testo": "Polizza RTCO"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "latina",
+   "url": "https://www.ausl.latina.it/112-azienda/dipartimento-prevenzione/2854-servizio-di-screening",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "latina/6d5aee6744e3.txt",
+   "titolo": "Servizio di Screening",
+   "sha": "c1c1523dcda66c0f7160128ea31b4b54187eed4798e68e5a8841ba18b01b7d31",
+   "caratteri": 9104,
+   "link_pdf": [
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/319/pars%202026.pdf",
+     "testo": "Piano Annuale per la Gestione del Rischio Sanitario 2026"
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/category/31/CONTRATTO_asl%20latina-PolizzaRTCO.pdf",
+     "testo": "Polizza RTCO"
+    }
+   ],
    "cambiata": true
   },
   {
@@ -503,7 +670,7 @@
    "sha": "033e10f93f8bcec21b62b4ddee916546421979ea078e0fcb02186e38a85a7b42",
    "caratteri": 1353,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -516,7 +683,7 @@
    "sha": "6a907d1a7c4d978dedaecdee2f763079fe3840bdcd4666c480f7523e221ec346",
    "caratteri": 379,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -529,7 +696,7 @@
    "sha": "ca2eef49d8b64b575faf506f19bc2e5cda8abc4f1749ff7e642f064c0178a272",
    "caratteri": 831,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -542,7 +709,7 @@
    "sha": "887f01e8b4ba1b932416971f70e11da51320c5de18f8c6a6d0486b698c73f009",
    "caratteri": 2576,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -555,7 +722,7 @@
    "sha": "98711ed65e1c6ec97fb32f2ce256fceadf2ddfee1e2416abde5081a84abfb8ba",
    "caratteri": 4212,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -568,7 +735,7 @@
    "sha": "9024af58dfcdbdbb0a07991752142e91bc7bbcfb3c8d92a54ad3a634a6f494c4",
    "caratteri": 2082,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -581,7 +748,7 @@
    "sha": "224273f8de79871e605c3115d15b3dad9f726d517de836533b6c338dc1ae1980",
    "caratteri": 1720,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -627,9 +794,9 @@
    "http": 200,
    "file": "rieti/1b6a08522663.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "25015c5b43a61366d98477466f983899fc94941dc880c12de5946d252a06aee3",
+   "sha": "ce21a63b1dc01e21429e11f4a4d7d3560e05c4c5a8985260c2c21f06b0be1818",
    "caratteri": 4170,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "rieti",
@@ -639,9 +806,9 @@
    "finale": "https://salutelazio.it/it/servizi/guardia-medica",
    "file": "rieti/a14f568f3b2f.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
+   "sha": "35d3aad05a7b0076371577c576aa4a5787bf713c630b0b4c273f9b2e68bbe902",
    "caratteri": 2358,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "rieti",
@@ -896,6 +1063,172 @@
      "testo": "Il manuale di identità visiva"
     }
    ],
+   "cambiata": false
+  },
+  {
+   "asl": "rieti",
+   "url": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti-aree-e-staff/dipartimento-della-prevenzione/uoc-igiene-e-sanita-pubblica/uos-coordinamento-screening-di-popolazione/",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "rieti/541b7e2b32fd.txt",
+   "titolo": "UOS Coordinamento Screening di Popolazione – ASL Rieti",
+   "sha": "fd9a364991d18d5067ac50e7750df4e1559cab29dcaca40c6691bc924e1968c6",
+   "caratteri": 20644,
+   "link_pdf": [
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/2025/01/Brochure_dimissione_A4__GIUSTIFICATO__1_.pdf",
+     "testo": "Raccomandazioni per la corretta gestione delle terapie farmacologiche a casa"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/2025/06/NON-SI-TROVA_Carenze_indisponibilita_farmaci_2024-1.pdf_fixed-1.pdf",
+     "testo": "Vademecum AIFA sui Farmaci carenti o non disponibili"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/2025/01/SiTI_MPOXV.pdf",
+     "testo": "Mpox – Vaiolo delle Scimmie – Le Raccomandazioni della Società Italiana d’igiene, Medicina Preventiva e Sanità Pubblica"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/2026/07/RACCOMANDAZIONI-DEL-DIPARTIMENTO-DI-PREVENZIONE-DELLA-ASL-RIETI-IN-CASO-DI-TEMPORANEA-MANCATA-POTABILITA-approvata-fovi.pdf",
+     "testo": "Raccomandazioni in caso di mancata potabilità dell’acqua per uso domestico"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/2025/06/FSE_LOCANDINA_09_4_25_screening_esito.pdf",
+     "testo": "Locandina Informativa"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/2026/10/a3_verticale.pdf",
+     "testo": "Locandina Informativa"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/brochure_lazio_Cervice_migranti_ita.pdf",
+     "testo": "Programma di Screening Oncologico della Cervice Uterina"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/brochure_lazio_Cervice_migranti_fra.pdf",
+     "testo": "Programma di Screening Oncologico della Cervice Uterina"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/brochure_lazio_Cervice_migranti_eng.pdf",
+     "testo": "Programma di Screening Oncologico della Cervice Uterina"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/brochure_lazio_Cervice_Spagnolo.pdf",
+     "testo": "Programma di Screening Oncologico della Cervice Uterina"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/brochure_lazio_Cervice_Arabo.pdf",
+     "testo": "Programma di Screening Oncologico della Cervice Uterina"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/brochure_lazio_Cervice_Bangla.pdf",
+     "testo": "Programma di Screening Oncologico della Cervice Uterina"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/brochure_lazio_Cervice_cinese.pdf",
+     "testo": "Programma di Screening Oncologico della Cervice Uterina"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/brochure_lazio_Cervice_Dari.pdf",
+     "testo": "Programma di Screening Oncologico della Cervice Uterina"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/brochure_lazio_Cervice_migranti_rum.pdf",
+     "testo": "Programma di Screening Oncologico della Cervice Uterina"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/brochure_lazio_Cervice_migranti_russo.pdf",
+     "testo": "Programma di Screening Oncologico della Cervice Uterina"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/brochure_lazio_Cervice_Somalo.pdf",
+     "testo": "Programma di Screening Oncologico della Cervice Uterina"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/brochure_lazio_Cervice_tagalog.pdf",
+     "testo": "Programma di Screening Oncologico della Cervice Uterina"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/brochure_lazio_Cervice_tigrino.pdf",
+     "testo": "Programma di Screening Oncologico della Cervice Uterina"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/brochure_lazio_Cervice_Ucraino.pdf",
+     "testo": "Programma di Screening Oncologico della Cervice Uterina"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/brochure_lazio_mammografia_migranti_ita.pdf",
+     "testo": "Programma di Screening Oncologico della Mammella"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/brochure_lazio_mammografia_migranti_fra.pdf",
+     "testo": "Programma di Screening Oncologico della Mammella"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/brochure_lazio_mammografia_migranti_eng.pdf",
+     "testo": "Programma di Screening Oncologico della Mammella"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/brochure_lazio_mammografia_Spagnolo.pdf",
+     "testo": "Programma di Screening Oncologico della Mammella"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/brochure_lazio_Mammografia_Arabo.pdf",
+     "testo": "Programma di Screening Oncologico della Mammella"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/brochure_lazio_mammografia_Bangla.pdf",
+     "testo": "Programma di Screening Oncologico della Mammella"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/brochure_lazio_mammografia_cinese.pdf",
+     "testo": "Programma di Screening Oncologico della Mammella"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/brochure_lazio_mammografia_Dari.pdf",
+     "testo": "Programma di Screening Oncologico della Mammella"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/brochure_lazio_mammografia_migranti_Rum.pdf",
+     "testo": "Programma di Screening Oncologico della Mammella"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/brochure_lazio_mammografia_migranti_russo__1_.pdf",
+     "testo": "Programma di Screening Oncologico della Mammella"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "rieti",
+   "url": "https://www.asl.rieti.it/iniziative-di-screening-e-prevenzione/",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "rieti/c473cd885713.txt",
+   "titolo": "Iniziative di Screening e Prevenzione – ASL Rieti",
+   "sha": "3245d9f84de1eef7d0df7da5b137bc6eb457eded98966e50dfd96205dc8da83b",
+   "caratteri": 188455,
+   "link_pdf": [
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/2025/01/Brochure_dimissione_A4__GIUSTIFICATO__1_.pdf",
+     "testo": "Raccomandazioni per la corretta gestione delle terapie farmacologiche a casa"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/2025/06/NON-SI-TROVA_Carenze_indisponibilita_farmaci_2024-1.pdf_fixed-1.pdf",
+     "testo": "Vademecum AIFA sui Farmaci carenti o non disponibili"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/2025/01/SiTI_MPOXV.pdf",
+     "testo": "Mpox – Vaiolo delle Scimmie – Le Raccomandazioni della Società Italiana d’igiene, Medicina Preventiva e Sanità Pubblica"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/2026/07/RACCOMANDAZIONI-DEL-DIPARTIMENTO-DI-PREVENZIONE-DELLA-ASL-RIETI-IN-CASO-DI-TEMPORANEA-MANCATA-POTABILITA-approvata-fovi.pdf",
+     "testo": "Raccomandazioni in caso di mancata potabilità dell’acqua per uso domestico"
+    },
+    {
+     "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/REGIONE_LAZIO_OTTOBRE_ROSA_locandina.pdf",
+     "testo": "Locandina Informativa"
+    }
+   ],
    "cambiata": true
   },
   {
@@ -909,7 +1242,7 @@
    "sha": "afcab4e03b1db1a34bd07c7a495eb7a35cc9e9b38267dde9e302bbcce7ea6e07",
    "caratteri": 5365,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "rieti",
@@ -922,7 +1255,7 @@
    "sha": "ee67724556cdc15172f36aaaeca0e200e4cbfa57eb27365406de296141c92515",
    "caratteri": 78760,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "rieti",
@@ -943,7 +1276,7 @@
    "sha": "78a45a0f6cf5df5ae218c10bea2f6adc215739a3a576d98d59c2c9651d2c1c0d",
    "caratteri": 17132,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "rieti",
@@ -992,7 +1325,7 @@
    "sha": "069bf2fb22c19da8712716b437fea5fcc65142c125cb03a611116d729e2c8753",
    "caratteri": 1824,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "rieti",
@@ -1003,6 +1336,46 @@
    "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
+   "asl": "rieti",
+   "url": "https://www.asl.rieti.it/wp-content/uploads/2025/06/FSE_LOCANDINA_09_4_25_screening_esito.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti-aree-e-staff/dipartimento-della-prevenzione/uoc-igiene-e-sanita-pubblica/uos-coordinamento-screening-di-popolazione/",
+   "http": 0,
+   "errore": "file più grande di 5 MB: non copiato"
+  },
+  {
+   "asl": "rieti",
+   "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/brochure_lazio_Cervice_migranti_ita.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti-aree-e-staff/dipartimento-della-prevenzione/uoc-igiene-e-sanita-pubblica/uos-coordinamento-screening-di-popolazione/",
+   "http": 0,
+   "errore": "file più grande di 5 MB: non copiato"
+  },
+  {
+   "asl": "rieti",
+   "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/brochure_lazio_Cervice_migranti_fra.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti-aree-e-staff/dipartimento-della-prevenzione/uoc-igiene-e-sanita-pubblica/uos-coordinamento-screening-di-popolazione/",
+   "http": 0,
+   "errore": "file più grande di 5 MB: non copiato"
+  },
+  {
+   "asl": "rieti",
+   "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/brochure_lazio_Cervice_migranti_eng.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti-aree-e-staff/dipartimento-della-prevenzione/uoc-igiene-e-sanita-pubblica/uos-coordinamento-screening-di-popolazione/",
+   "http": 0,
+   "errore": "file più grande di 5 MB: non copiato"
+  },
+  {
+   "asl": "rieti",
+   "url": "https://www.asl.rieti.it/wp-content/uploads/fileadmin/user_upload/brochure_lazio_Cervice_Spagnolo.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti-aree-e-staff/dipartimento-della-prevenzione/uoc-igiene-e-sanita-pubblica/uos-coordinamento-screening-di-popolazione/",
+   "http": 0,
+   "errore": "file più grande di 5 MB: non copiato"
+  },
+  {
    "asl": "roma",
    "url": "https://www.salutelazio.it/",
    "controllata": "2026-10-23",
@@ -1010,9 +1383,9 @@
    "finale": "https://salutelazio.it/it",
    "file": "roma/753559e36904.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "f13c9eeb4924a61ff758ef61496e0efa7bdc4b642b901535cb8689a074e2f47e",
+   "sha": "6f6187cd7268d56075b198f3561020d42f09aa3d6b8aeb9c8051ba6b63732997",
    "caratteri": 4010,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "roma",
@@ -1021,9 +1394,9 @@
    "http": 200,
    "file": "roma/1b6a08522663.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "25015c5b43a61366d98477466f983899fc94941dc880c12de5946d252a06aee3",
+   "sha": "ce21a63b1dc01e21429e11f4a4d7d3560e05c4c5a8985260c2c21f06b0be1818",
    "caratteri": 4170,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "roma",
@@ -1033,9 +1406,9 @@
    "finale": "https://salutelazio.it/it/servizi/guardia-medica",
    "file": "roma/a14f568f3b2f.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
+   "sha": "35d3aad05a7b0076371577c576aa4a5787bf713c630b0b4c273f9b2e68bbe902",
    "caratteri": 2358,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "roma",
@@ -1044,7 +1417,7 @@
    "http": 200,
    "file": "roma/e0d930024e6e.txt",
    "titolo": "Punto Unico di Accesso (PUA)",
-   "sha": "db256e48a8a29bd66676b02ec6d271b6ea6338cf353a11d14c737b2fbeffa12e",
+   "sha": "6ce68f0d5f672b263b21954af4ad383655816a9b0983c70c18e870f713e1f4f3",
    "caratteri": 22475,
    "link_pdf": [
     {
@@ -1060,16 +1433,16 @@
      "testo": "LEGGE 104/92"
     },
     {
+     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_romeno.pdf",
+     "testo": "ЩОМІСЯЧНА ДОПОМОГА НА ШКОЛЯРІВ З ІНВАЛІДНІСТЮ"
+    },
+    {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ-Bangla-Rev.pdf",
      "testo": "LEGEA 104/92"
     },
     {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_Ucraino.pdf",
      "testo": "১০৪/৯২ আইন"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_romeno.pdf",
-     "testo": "ЩОМІСЯЧНА ДОПОМОГА НА ШКОЛЯРІВ З ІНВАЛІДНІСТЮ"
     },
     {
      "url": "https://www.aslroma1.it/uploads/files/39_40_DISABILITY-1.pdf",
@@ -1084,6 +1457,10 @@
      "testo": "মাসিক ভাতা"
     },
     {
+     "url": "https://www.aslroma1.it/uploads/files/47_24_Legge_104_Ucraino.pdf",
+     "testo": "LEY 104/92"
+    },
+    {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_italiano.pdf",
      "testo": "SUBSIDIO MENSUAL DE FRECUENCIA"
     },
@@ -1094,10 +1471,6 @@
     {
      "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_arabo.pdf",
      "testo": "BUWANANG BENEPISYO PARA SA MAY KAPANSANAN"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_Legge_104_Ucraino.pdf",
-     "testo": "LEY 104/92"
     }
    ],
    "cambiata": true
@@ -1403,7 +1776,7 @@
    "http": 200,
    "file": "roma/2b46e5d8fe38.txt",
    "titolo": "ASL Roma 2 - Punto Unico di Accesso - PUA",
-   "sha": "d65d50624258303b6c0c7efa830f6933e312b6d324f49ac33ecfa1cc31aeb5d0",
+   "sha": "eb23741c006d82d38d11dd8c77d1b39cb912361b221b2bccea4b7cb579a20afd",
    "caratteri": 11883,
    "email_nascoste": 11,
    "cambiata": true
@@ -1473,7 +1846,7 @@
    "http": 200,
    "file": "roma/7e7cbafb32a1.txt",
    "titolo": "15.04.05 Liste di attesa",
-   "sha": "9c308f828d8a2e7f92927bef5fb06b3912680fd64a00dbebf24c8cce3f2df808",
+   "sha": "e46e44e2c796bc5750e83c73d30ff2b20e1aedc0a9da4afcae2e2c7822ed6172",
    "caratteri": 8673,
    "link_pdf": [
     {
@@ -1741,7 +2114,7 @@
      "testo": "Il manuale di identità visiva"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -1759,7 +2132,7 @@
    "sha": "09d042b039fd413e9b88bffcd181beb7f01e05e679e54904b3efb2a04c9c9861",
    "caratteri": 567,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -1776,7 +2149,7 @@
      "testo": "Dichiarazione di Accessibilità"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -1787,7 +2160,7 @@
    "titolo": "ASL Roma 5 - Distretti Sanitari - ASL ROMA 5",
    "sha": "aa771592c7149e627fa811aaa656049baefb62c3ef582d2c68f73cac880c766a",
    "caratteri": 12136,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -1798,7 +2171,7 @@
    "titolo": "Comuni del Territorio - ASL Roma 6",
    "sha": "c435663fde92553cbb33d03396fe9701c33be7ff0c46d0e73727f3041e8d199c",
    "caratteri": 10618,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -1810,7 +2183,7 @@
    "sha": "a2a8fcf5e275a70ca481cd9d6fc8736ffee80aabf52fe7c770f2508be7e2726b",
    "caratteri": 2591,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -1822,7 +2195,7 @@
    "sha": "44620a0e700d71dd2e6583614d8129d3e22a30681d73c1fde177f2699f0cb2ca",
    "caratteri": 5356,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -1834,6 +2207,99 @@
    "sha": "b6d17567a375716f650592d37d6feac83ee6b5d6c12ee3cd3cddaedb74c284c6",
    "caratteri": 2737,
    "pdf": true,
+   "cambiata": false
+  },
+  {
+   "asl": "roma",
+   "url": "https://www.aslroma2.it/attachments/article/243/Regolamento%20pubblica%20tutela.pdf",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "roma/0c2608efba48.txt",
+   "titolo": "Deliberazione ASL Roma 2 n. 1582 del 14.11.2016",
+   "sha": "03035fa53d31c49eec87e0b63ba80ce70c81cf74a2854e8bfdb34b7b22a9bcf1",
+   "caratteri": 10560,
+   "pdf": true,
+   "cambiata": false
+  },
+  {
+   "asl": "roma",
+   "url": "https://www.aslroma2.it/attachments/article/359/INFORMATIVA%20.pdf",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "roma/9c07a4daab8b.txt",
+   "titolo": "Segnalazioni Whistleblowing",
+   "sha": "e6148ecac7756cebef9704748e6b8aee991265e62dd8c4a14964d9b57e9bb4c4",
+   "caratteri": 8848,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "roma",
+   "url": "https://www.aslroma2.it/index.php/area-della-prevenzione-attiva/uosd-coordinamento-screening",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "roma/3feb23bab29f.txt",
+   "titolo": "ASL Roma 2 - UOSD Coordinamento Screening",
+   "sha": "690f24c3fd7c20389c933a0abfcdb570fceb23210d2bd78842e7f532b602a57b",
+   "caratteri": 8743,
+   "email_nascoste": 3,
+   "cambiata": true
+  },
+  {
+   "asl": "roma",
+   "url": "https://www.aslroma4.it/azienda/dipartimenti/dipartimento-di-prevenzione/servizio-igiene-e-sanita-pubblica-s-i-s-p/screening-oncologici-asl-roma-4",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "roma/a73825184bc0.txt",
+   "titolo": "Screening oncologici - ASL ROMA 4",
+   "sha": "047b06d1af0f4c4067e860668872e969363eb1f5a56feb5b8de8f37fd1316e1a",
+   "caratteri": 2962,
+   "link_pdf": [
+    {
+     "url": "https://www.aslroma4.it/pdf/2022/screening/Nota-Informativa-dati-personali-screening-dati-contatto.pdf",
+     "testo": "Informazioni sul Trattamento dei Dati Personali Attività Screening Oncologico"
+    },
+    {
+     "url": "https://www.aslroma4.it/pdf/2025/Modello-di-Autovalutazione-AGID-Sistema-Trasparenza-Amministrativa.pdf",
+     "testo": "Dichiarazione di Accessibilità"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "roma",
+   "url": "https://www.aslroma5.it/programmi-di-screening-oncologici/",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "roma/d9f6a6489234.txt",
+   "titolo": "Programmi di screening oncologici - ASL ROMA 5",
+   "sha": "39e773e5f8bf78845d03729cfb5f2dcdf7bcd0c7464cd72651161822579778a4",
+   "caratteri": 43988,
+   "link_pdf": [
+    {
+     "url": "https://www.aslroma5.it/wp-content/uploads/2024/11/screening-citologico-OPEN-DAY-2024.pdf",
+     "testo": ""
+    },
+    {
+     "url": "https://www.aslroma5.it/wp-content/uploads/2023/05/ecm-genetica-mammella-2023-locandina.pdf",
+     "testo": "Scarica la locandina"
+    },
+    {
+     "url": "https://www.aslroma5.it/wp-content/uploads/2023/05/ecm-genetica-mammella-2023-programma.pdf",
+     "testo": "Scarica il programma"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "roma",
+   "url": "https://www.aslroma6.it/screening",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "roma/f0e5d1ccfa60.txt",
+   "titolo": "Screening Oncologici - ASL Roma 6",
+   "sha": "02f62f3ae03bfed5c0f3687e1c662b32c02f4264d002f1c83c8da3d32f06cc8c",
+   "caratteri": 20901,
    "cambiata": true
   },
   {
@@ -1847,7 +2313,7 @@
    "sha": "1168ada97f4f8b6faa05c7d1473cb7a1489bda23da626cb50f2def80482e9326",
    "caratteri": 2319,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -1860,7 +2326,7 @@
    "sha": "a6ecc35fa31555317852de5f8e673c7a0f1201a333d34851e87f2c8c978ed3d3",
    "caratteri": 22830,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -1873,20 +2339,7 @@
    "sha": "31d8239a1387cecdb38a140ada9e6d6127e41a02874505af6cb7032ec58ec505",
    "caratteri": 2282,
    "pdf": true,
-   "cambiata": true
-  },
-  {
-   "asl": "roma",
-   "url": "https://www.aslroma2.it/attachments/article/243/Regolamento%20pubblica%20tutela.pdf",
-   "controllata": "2026-10-23",
-   "da_pagina": "https://www.aslroma2.it/index.php/urp",
-   "http": 200,
-   "file": "roma/0c2608efba48.txt",
-   "titolo": "Deliberazione ASL Roma 2 n. 1582 del 14.11.2016",
-   "sha": "03035fa53d31c49eec87e0b63ba80ce70c81cf74a2854e8bfdb34b7b22a9bcf1",
-   "caratteri": 10560,
-   "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -1908,7 +2361,7 @@
    "sha": "9c3de8e0307fcfa07412f693d4c3d98dfeae4c65ff29e92a8736a90164426831",
    "caratteri": 43136,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -1921,7 +2374,7 @@
    "sha": "5afdf92201515ccfbfee4eee4925b7a96b2f3823f37fb7bde60a5c7e5bbbcf6d",
    "caratteri": 37255,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -1934,7 +2387,7 @@
    "sha": "3eb9198b66926bd966a2b82a3b7debe8e0b1b22174d57634deef716cb0cfaf2d",
    "caratteri": 36957,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -1947,7 +2400,7 @@
    "sha": "c0e0571ff7b4258a3c30ac1456c02f7a967672a4df12a9412ccfeb6cc716598e",
    "caratteri": 10196,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -1960,7 +2413,7 @@
    "sha": "d3237314c1121f597ad27ef9036b0dad8897c6227330921d0838fd8bce8e9b8f",
    "caratteri": 6160,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -1973,7 +2426,7 @@
    "sha": "b1a505f96b464b20586874274dc69db9f1316ae46acecd51d697dc6e471449a6",
    "caratteri": 1937,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -1986,7 +2439,7 @@
    "sha": "99dca22ff8bd22ae2b288e93cffc4116978b6fdf022d9fadc8212a01c2c57454",
    "caratteri": 3435,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -1999,7 +2452,7 @@
    "sha": "9c25f1922f4c89f8c75fcccb26d312766ecbcb5e6d882bef684fa16350de868c",
    "caratteri": 2771,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -2012,7 +2465,7 @@
    "sha": "e46978207ea87380ef040c5ea0aced6b081a2070c8135590618f87ee073bb549",
    "caratteri": 2213,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -2025,7 +2478,7 @@
    "sha": "1fdd247f3a77cd50ca11cd0516be9a9a9f9c4e65fcaf740d428c34ba7922032a",
    "caratteri": 21196,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -2038,7 +2491,7 @@
    "sha": "b20155d7e4617899d7e72cfd3c350b9df9ef65d5088d533bf0c15082409a0ca6",
    "caratteri": 16390,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -2051,7 +2504,7 @@
    "sha": "e7c58eeff6d96c01b742692eefd3ce2f0ffb3ae60b33bd877e7595efec5e72bb",
    "caratteri": 15797,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -2064,7 +2517,7 @@
    "sha": "e030c49fa39615e42924efe03cea0e4da78e093079b11e24424f478cd3aa2f93",
    "caratteri": 5660,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -2077,7 +2530,7 @@
    "sha": "1227194d57ac68846b27ed32e8e79b8f54d6163da841991764e4b0f24f7cab74",
    "caratteri": 481,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -2099,7 +2552,7 @@
    "sha": "af354f79890dbc2e6751f68046ac0fc6a8bfe38f9c6c7ee74848434f5a84bd62",
    "caratteri": 2567,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -2112,7 +2565,7 @@
    "sha": "da2121feccb2c4a6571cfb56fa60df9b9ecedfb6cf1396ecc606ebfc69bf5294",
    "caratteri": 5198,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -2121,6 +2574,32 @@
    "da_pagina": "https://regione.lazio.it/enti/salute/screening-oncologici",
    "http": 403,
    "nota": "controllo anti-robot (CAPTCHA): non copiata"
+  },
+  {
+   "asl": "roma",
+   "url": "https://www.aslroma4.it/pdf/2022/screening/Nota-Informativa-dati-personali-screening-dati-contatto.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.aslroma4.it/azienda/dipartimenti/dipartimento-di-prevenzione/servizio-igiene-e-sanita-pubblica-s-i-s-p/screening-oncologici-asl-roma-4",
+   "http": 200,
+   "file": "roma/42eedcdd5789.txt",
+   "titolo": "INFORMAZIONI SUL TRATTAMENTO DEI DATI PERSONALI",
+   "sha": "4ecb3ea46150cc181536ac072bd8d1a4b507335155040a8c07a6f0865a39e2cf",
+   "caratteri": 9057,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "roma",
+   "url": "https://www.aslroma5.it/wp-content/uploads/2024/11/screening-citologico-OPEN-DAY-2024.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.aslroma5.it/programmi-di-screening-oncologici/",
+   "http": 200,
+   "file": "roma/f39b2447f283.txt",
+   "titolo": "PREVENIRE PER VIVERE MEGLIO",
+   "sha": "04c932fd314f9780688f761d2185722ee0c186ae20948e1e014866478bc5072c",
+   "caratteri": 1318,
+   "pdf": true,
+   "cambiata": true
   },
   {
    "asl": "viterbo",
@@ -2347,6 +2826,40 @@
      "testo": "Il manuale di identità visiva"
     }
    ],
+   "cambiata": false
+  },
+  {
+   "asl": "viterbo",
+   "url": "https://www.asl.vt.it/screening-per-la-prevenzione-dei-tumori-della-mammella",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "viterbo/4766d29e952d.txt",
+   "titolo": "ASL Viterbo - Screening per la prevenzione dei tumori della mammella - ASL VITERBO",
+   "sha": "c548db732b8a8dae4d7ac0be86cd12c0b1026741064156d98d757957d1769b7f",
+   "caratteri": 8537,
+   "link_pdf": [
+    {
+     "url": "https://www.asl.vt.it/cookie-policy.pdf",
+     "testo": "Cookie Policy"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "viterbo",
+   "url": "https://www.asl.vt.it/screening-per-la-prevenzione-del-tumore-del-colon-retto",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "viterbo/b4b46fd20ad4.txt",
+   "titolo": "ASL Viterbo - Screening per la prevenzione del tumore del colon retto - ASL VITERBO",
+   "sha": "a1d9816962f3c5e14e4ff2c636bc481776cec5c4bce14e6386dcc1a5a804e5da",
+   "caratteri": 7779,
+   "link_pdf": [
+    {
+     "url": "https://www.asl.vt.it/cookie-policy.pdf",
+     "testo": "Cookie Policy"
+    }
+   ],
    "cambiata": true
   },
   {
@@ -2360,7 +2873,7 @@
    "sha": "fcbb31a524ed7a32b65ddc6aad03cb56394b06d858979fa009106ef010c10975",
    "caratteri": 1443,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "viterbo",
@@ -2373,7 +2886,7 @@
    "sha": "4e61e935c3952e787ed45124c502dc78f87652439860deb070cc353e9bc896d0",
    "caratteri": 5403,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "viterbo",
@@ -2386,7 +2899,7 @@
    "sha": "702d7f1fa8a956df2c418471f5b3e84d4c90d6f654971007aaaff4fc43623413",
    "caratteri": 1493,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "viterbo",
@@ -2399,7 +2912,7 @@
    "sha": "3aa8221182f1b9c3ee8a8466c6d583b8e618e94d425df78e996f632175dad63a",
    "caratteri": 3296,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "viterbo",
@@ -2430,7 +2943,7 @@
    "sha": "d398e209317e37e1817892a7389531234190405090ec8888f2558be3cce53845",
    "caratteri": 17107,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "viterbo",
@@ -2524,9 +3037,9 @@
    "http": 200,
    "file": "regione-lazio/1046951fd7e8.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "1bce8ebe3b8686ea81f43bdfe2f8368c4f413f3887be9bbead104452d34aa979",
+   "sha": "02d38f89cd647027e85a881251f40376d3cb428c2798d2e48d8debc95797e93e",
    "caratteri": 2796,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "regione-lazio",
@@ -2557,9 +3070,9 @@
    "http": 200,
    "file": "regione-lazio/c3145a208b2c.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "48199ce6b951501c02e991b940f8e9adec94561d534835ac5f18a86bd84cca38",
+   "sha": "4a15186e6901930c738ce3a6727f617316791c9f8343ddacbd4f7120b1c73453",
    "caratteri": 2103,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "regione-lazio",
@@ -2579,9 +3092,9 @@
    "http": 200,
    "file": "regione-lazio/652b256db893.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "f13c9eeb4924a61ff758ef61496e0efa7bdc4b642b901535cb8689a074e2f47e",
+   "sha": "5cf4d2374d8d906aca0a2dd69e46c02b41d8f5adf5aa5a732584694f9372105d",
    "caratteri": 4010,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "regione-lazio",
@@ -2613,9 +3126,9 @@
    "finale": "https://www.aslroma1.it/",
    "file": "asl-roma1/a00ffe2984a3.txt",
    "titolo": "ASL Roma 1",
-   "sha": "5a353d7fbe019aeb5b9817f6673b9c7c8f0b8de232388f6b009435742f84bbb5",
-   "caratteri": 17425,
-   "cambiata": false
+   "sha": "28faeba4ad0f1b3d623016332c91fb06514682ef6c21cb12ac47946e1a630b3a",
+   "caratteri": 17446,
+   "cambiata": true
   },
   {
    "asl": "asl-roma1",
@@ -2721,7 +3234,7 @@
    "http": 200,
    "file": "asl-roma2/2e0f163ef6a3.txt",
    "titolo": "ASL Roma 2 - Guardia Medica",
-   "sha": "19d0ff7ba90e1fa8df893354d71b3a74a391de4dda994b337883805aacff5df6",
+   "sha": "89d25209564b69de5604cefef97100eea9f62bf85258e9210553687cf3c2c9ca",
    "caratteri": 8091,
    "cambiata": true
   },
@@ -2736,7 +3249,7 @@
    "sha": "4d0156bf77317e65d73168e1d2159c318668d9b276f74be249afa6429986f5f2",
    "caratteri": 53,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma2",
@@ -2749,7 +3262,7 @@
    "sha": "69b7478f577deffd03f83b270f1bb3053d0a42afae2d18ecd8c31a9f2f26d2ed",
    "caratteri": 8369,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma3",
@@ -2829,7 +3342,7 @@
    "sha": "3bef6616ef144d294b5b40e3a1270d79fc1944fd166855506cbcfcfa849499bc",
    "caratteri": 4802,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma3",
@@ -2906,15 +3419,15 @@
    "finale": "https://www.aslroma5.it/",
    "file": "asl-roma5/b09e55c52e23.txt",
    "titolo": "Home - ASL ROMA 5",
-   "sha": "117d54172476a57e67c2aef0b0d0223e596f0d587953458d370ae20456efdd13",
-   "caratteri": 15391,
+   "sha": "83dfd6dc2b9888d34c25c580b5c38a7db64dddc28dfdee8ca31ec1e222b3ecf4",
+   "caratteri": 15341,
    "link_pdf": [
     {
      "url": "https://www.aslroma5.it/wp-content/uploads/2026/03/PARS-2026.pdf",
      "testo": "PARS 2026"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "asl-roma5",
@@ -2977,7 +3490,7 @@
    "sha": "55cfe8f02b0f907af502545c8f25d0ed80f58363e810e8276d9f8e34bb9541c4",
    "caratteri": 14964,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma6",

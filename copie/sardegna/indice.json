@@ -1,6 +1,6 @@
 {
  "regione": "sardegna",
- "aggiornato": "2026-10-23T06:08:21.362Z",
+ "aggiornato": "2026-10-23T08:27:08.568Z",
  "pagine": [
   {
    "asl": "cagliari",
@@ -163,6 +163,18 @@
   },
   {
    "asl": "cagliari",
+   "url": "https://www.asl8cagliari.it/servizio/screening-oncologici/",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "cagliari/eae6f7103bd8.txt",
+   "titolo": "Screening oncologici - ASL Cagliari",
+   "sha": "47d25914820d1b173809e93f63daa4bab0ee512ab4f9e1c220be5202e469e97d",
+   "caratteri": 5221,
+   "email_nascoste": 9,
+   "cambiata": true
+  },
+  {
+   "asl": "cagliari",
    "url": "https://www.asl8cagliari.it/wp-content/uploads/2026/08/modulo-reclamo-urp.pdf",
    "controllata": "2026-10-23",
    "da_pagina": "https://www.asl8cagliari.it/azienda/urp/",
@@ -172,7 +184,7 @@
    "sha": "b81319425c0f5290a3ac5f4d6d81609c761666e4fbc75bfcdddd73372e59bfed",
    "caratteri": 9112,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "cagliari",
@@ -185,7 +197,7 @@
    "sha": "698194762b06a0c8b912e8aae711c45091cc3d14e0b319306191e424dc0ed043",
    "caratteri": 7516,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "cagliari",
@@ -198,7 +210,7 @@
    "sha": "66c6d0d401c53870c05868b1f2eddecdaf38c9d3a0ef0a802ca12a685d9f5323",
    "caratteri": 7487,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "cagliari",
@@ -211,7 +223,7 @@
    "sha": "dae407b79775e5d35a888e22aeeaae3d13fec6753bed97ea5f6476580aefb0a4",
    "caratteri": 3075,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "cagliari",
@@ -224,7 +236,7 @@
    "sha": "2f82bcd223e5f8fb5542d14a7cb0efef93da1a9250351a6279aadefff9d416a8",
    "caratteri": 2206,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "cagliari",
@@ -237,7 +249,7 @@
    "sha": "bf5f6b2b77a742f96eb3302bcd128a44686d790e431e7d52b0e705b353c7e722",
    "caratteri": 1047,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "gallura",
@@ -352,16 +364,28 @@
    "cambiata": false
   },
   {
+   "asl": "gallura",
+   "url": "https://www.aslgallura.it/servizio/coordinamento-screening/",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "gallura/54d6bd990d24.txt",
+   "titolo": "Coordinamento Screening - ASL Gallura",
+   "sha": "dd6c54aad859aa2652b68e44aa5bd983e4259aa8b012cb6be6259c362e2d411c",
+   "caratteri": 6335,
+   "email_nascoste": 3,
+   "cambiata": true
+  },
+  {
    "asl": "medio-campidano",
    "url": "https://www.aslmediocampidano.it/",
    "controllata": "2026-10-23",
    "http": 200,
    "file": "medio-campidano/65e99d67910c.txt",
    "titolo": "ASL Medio Campidano - Home Page",
-   "sha": "3eef3042f8e3378895e5529a2c6fccafbc18ccae1aeb45bf376d4cbc39926b4c",
-   "caratteri": 6853,
+   "sha": "4e5a9f77e7466376836e192644e52234e0c381e521852dda7a5df027621e92c6",
+   "caratteri": 6963,
    "email_nascoste": 4,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "medio-campidano",
@@ -466,6 +490,36 @@
   },
   {
    "asl": "medio-campidano",
+   "url": "https://www.aslmediocampidano.it/servizio/prevenzione-e-promozione-della-salute-centro-screening-e-malattie-croniche-promozione-sani-stili-di-vita-e-medicina-dello-sport/",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "medio-campidano/c22b4434a52a.txt",
+   "titolo": "Prevenzione e promozione della salute, Centro screening e malattie croniche, Promozione sani stili di vita e Medicina dello sport - ASL Medio Campidano",
+   "sha": "fcf1e9ee59bd6126ea646204e5d6d41d385ab431d79b2bd5687c613f794bd763",
+   "caratteri": 9201,
+   "email_nascoste": 27,
+   "link_pdf": [
+    {
+     "url": "https://www.aslmediocampidano.it/wp-content/uploads/2024/02/informativa-trattamento-dati-personali-nellambito-dei-programmi-di-screening-oncologici.pdf",
+     "testo": "Informativa trattamento dati personali nell’ambito dei programmi di screening oncologici"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "medio-campidano",
+   "url": "https://www.aslmediocampidano.it/centro-screening-numero-verde-800-339233/",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "medio-campidano/ac68b2fc697c.txt",
+   "titolo": "Centro Screening: numero verde 800 339233 - ASL Medio Campidano",
+   "sha": "ca6c0de6e3ce5688cf5876185893f199c5c2d18f69fd897db284202fb97dcda8",
+   "caratteri": 2511,
+   "email_nascoste": 5,
+   "cambiata": true
+  },
+  {
+   "asl": "medio-campidano",
    "url": "https://www.aslmediocampidano.it/wp-content/uploads/2025/04/Allegato-A-Percorso-di-tutela.pdf",
    "controllata": "2026-10-23",
    "da_pagina": "https://www.aslmediocampidano.it/percorso-di-tutela-accesso-alternativo-a-prestazioni-specialistiche/",
@@ -475,7 +529,7 @@
    "sha": "4c35e7ef9e8cb96ce8acaa6c25ecc826587bdd3a81d490f2b7c16daa509e0342",
    "caratteri": 2554,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "medio-campidano",
@@ -488,7 +542,7 @@
    "sha": "31d00e88bfbbc5cc709a147a84bf6556de61c513bfa0ab59fab1e0eee127300b",
    "caratteri": 2294,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "medio-campidano",
@@ -501,7 +555,7 @@
    "sha": "5b0f82308a50e6685afc35138f3891a2a5052e910904fd7b7dc055fee57a51b4",
    "caratteri": 12213,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "medio-campidano",
@@ -513,6 +567,19 @@
    "titolo": "(logo di riferimento)",
    "sha": "09c697511fc9f55f9b6936894bf39b00dc909d8d7963a8a6cc82993a30421e99",
    "caratteri": 9605,
+   "pdf": true,
+   "cambiata": false
+  },
+  {
+   "asl": "medio-campidano",
+   "url": "https://www.aslmediocampidano.it/wp-content/uploads/2024/02/informativa-trattamento-dati-personali-nellambito-dei-programmi-di-screening-oncologici.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.aslmediocampidano.it/servizio/prevenzione-e-promozione-della-salute-centro-screening-e-malattie-croniche-promozione-sani-stili-di-vita-e-medicina-dello-sport/",
+   "http": 200,
+   "file": "medio-campidano/af4817c12a23.txt",
+   "titolo": "INFORMATIVA SUL TRATTAMENTO DEI DATI PERSONALI",
+   "sha": "3cd4ac2af2faa9eff21eaa4289c94c054f155ccfcbea413cb9f79d942fbbdd0c",
+   "caratteri": 15977,
    "pdf": true,
    "cambiata": true
   },
@@ -662,6 +729,36 @@
    "sha": "19ee696b456b23cac4942a7706fc4d35f1cd81ee619dd1c4d28fc66d65ecb436",
    "caratteri": 5963,
    "pdf": true,
+   "cambiata": false
+  },
+  {
+   "asl": "nuoro",
+   "url": "https://www.asl3nuoro.it/servizio/screening-oncologici/",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "nuoro/656e59179b94.txt",
+   "titolo": "Screening Oncologici - ASL Nuoro",
+   "sha": "f3f449f9b0e71b6f13c091adee2fe409162468f554e401221367d68894ae9f22",
+   "caratteri": 6766,
+   "email_nascoste": 3,
+   "link_pdf": [
+    {
+     "url": "https://www.asl3nuoro.it/wp-content/uploads/2026/09/carta-dei-servizi-screening-oncologici-Rev.-28.09.2026.pdf",
+     "testo": "Carta dei servizi"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "nuoro",
+   "url": "https://www.asl3nuoro.it/wp-content/uploads/2024/05/carta-dei-servizi-screening-oncologici-REV.-Nov.-2024.pdf",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "nuoro/8960d0b1093c.txt",
+   "titolo": "Microsoft Word - ultima bozza carta dei servizi centro screening (6)",
+   "sha": "0572d2732bc2ad91515bc158866d3bf02836dfed7b4392842a21dc797c75296f",
+   "caratteri": 25640,
+   "pdf": true,
    "cambiata": true
   },
   {
@@ -675,7 +772,7 @@
    "sha": "ea79ac50039a12d5f53477b5ecb7f3e8a4b8b163f20612c801b41e5f2dc0ad4b",
    "caratteri": 1940,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "nuoro",
@@ -688,7 +785,7 @@
    "sha": "63b22b1159b17fb25948b4a5b581d6bbeabe8586c78f13dfa8361dfccfd30252",
    "caratteri": 2783,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "nuoro",
@@ -701,7 +798,7 @@
    "sha": "f75c69adf8eaf40dae7ef352283370c2dc8af483113edbde2e1751da57975771",
    "caratteri": 14918,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "nuoro",
@@ -713,6 +810,19 @@
    "titolo": "CARTA DEI SERVIZI",
    "sha": "62ea9d8d3960df9a1c971d402fbf667ad59f383923c04d67c6c7284d10a8b885",
    "caratteri": 8535,
+   "pdf": true,
+   "cambiata": false
+  },
+  {
+   "asl": "nuoro",
+   "url": "https://www.asl3nuoro.it/wp-content/uploads/2026/09/carta-dei-servizi-screening-oncologici-Rev.-28.09.2026.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asl3nuoro.it/servizio/screening-oncologici/",
+   "http": 200,
+   "file": "nuoro/3fd2533586a2.txt",
+   "titolo": "Microsoft Word - bozza rivista settembre 29.09.2026 carta dei servizi centro screening _3_.docx",
+   "sha": "1783030f0008e7fa4f4ab556ecf9aa1639f1a052c1bb172ec6d77f7f75d3ed79",
+   "caratteri": 26657,
    "pdf": true,
    "cambiata": true
   },
@@ -788,16 +898,115 @@
    "cambiata": false
   },
   {
+   "asl": "ogliastra",
+   "url": "https://www.aslogliastra.it/servizio/prevenzione-e-promozione-della-salute-screening-medicina-dello-sport/",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "ogliastra/0f831f882410.txt",
+   "titolo": "Prevenzione e Promozione della Salute - ASL Ogliastra",
+   "sha": "8ff5173896035ea0ceb76dd6c416ef27407f89d48182291414d6387aec8b7097",
+   "caratteri": 32244,
+   "email_nascoste": 20,
+   "link_pdf": [
+    {
+     "url": "https://www.aslogliastra.it/wp-content/uploads/2026/09/informativa-trattamento-dati-personali-Programmi-screening-oncologici-ASL-Ogliastra.pdf",
+     "testo": "INFORMATIVA TRATTAMENTO DATI PERSONALI SCREENING ONCOLOGICI"
+    },
+    {
+     "url": "https://www.aslogliastra.it/wp-content/uploads/2024/04/8_136_20101014104602.pdf",
+     "testo": "– Scarica la brochure dello screening del tumore della cervice uterina"
+    },
+    {
+     "url": "https://www.aslogliastra.it/wp-content/uploads/2024/04/8_136_20101129113100.pdf",
+     "testo": "– Scarica la brochure dello screening del tumore del colon retto"
+    },
+    {
+     "url": "https://www.aslogliastra.it/wp-content/uploads/2024/04/100D_CCR_2018_bassaDef.pdf",
+     "testo": "le 100 domande sullo screening colorettale"
+    },
+    {
+     "url": "https://www.aslogliastra.it/wp-content/uploads/2024/04/8_136_20101129112833.pdf",
+     "testo": "Scarica la brochure dello screening del tumore della mammella"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "ogliastra",
+   "url": "https://www.aslogliastra.it/wp-content/uploads/2026/09/informativa-trattamento-dati-personali-Programmi-screening-oncologici-ASL-Ogliastra.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.aslogliastra.it/servizio/prevenzione-e-promozione-della-salute-screening-medicina-dello-sport/",
+   "http": 200,
+   "file": "ogliastra/c08bfe60c0f6.txt",
+   "titolo": "INFORMATIVA SUL TRATTAMENTO DEI DATI PERSONALI",
+   "sha": "acde6b5fcdf43205ccaae953b32ce143590cc612d6d302e189c689c588304573",
+   "caratteri": 15956,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "ogliastra",
+   "url": "https://www.aslogliastra.it/wp-content/uploads/2024/04/8_136_20101014104602.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.aslogliastra.it/servizio/prevenzione-e-promozione-della-salute-screening-medicina-dello-sport/",
+   "http": 200,
+   "file": "ogliastra/4971ec516b63.txt",
+   "titolo": "Layout 1 (Page 1)",
+   "sha": "013b406bc48eb4845977d894f1fed2320c90a806239d650e01b2a729f7983a47",
+   "caratteri": 3452,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "ogliastra",
+   "url": "https://www.aslogliastra.it/wp-content/uploads/2024/04/8_136_20101129113100.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.aslogliastra.it/servizio/prevenzione-e-promozione-della-salute-screening-medicina-dello-sport/",
+   "http": 200,
+   "file": "ogliastra/7a8828cbd0a1.txt",
+   "titolo": "Layout 1 (Page 1)",
+   "sha": "86febbc19615f0508633a7e288fb9504e32b1c357c88da7f829825841ade5fda",
+   "caratteri": 4740,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "ogliastra",
+   "url": "https://www.aslogliastra.it/wp-content/uploads/2024/04/100D_CCR_2018_bassaDef.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.aslogliastra.it/servizio/prevenzione-e-promozione-della-salute-screening-medicina-dello-sport/",
+   "http": 200,
+   "file": "ogliastra/cdaea1c06994.txt",
+   "titolo": "Le 100",
+   "sha": "6c11f644fe85f7f910a9d624564cb52b4cf13c154b9c5038293b16e4c7c09241",
+   "caratteri": 111646,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "ogliastra",
+   "url": "https://www.aslogliastra.it/wp-content/uploads/2024/04/8_136_20101129112833.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.aslogliastra.it/servizio/prevenzione-e-promozione-della-salute-screening-medicina-dello-sport/",
+   "http": 200,
+   "file": "ogliastra/b9363b6ce7c6.txt",
+   "titolo": "Layout 1 (Page 1)",
+   "sha": "da65229c079577d221def87a4a4266cdc1cf948318d13a92049d95c154024724",
+   "caratteri": 3843,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
    "asl": "oristano",
    "url": "https://www.asl5oristano.it/",
    "controllata": "2026-10-23",
    "http": 200,
    "file": "oristano/766feec05db7.txt",
    "titolo": "Home Page - ASL Oristano",
-   "sha": "c79970633578cc9ee6f6f646583109365861e8d99db36f9f8a66a534b21872e8",
-   "caratteri": 7372,
+   "sha": "f1a9c2ab629b84497eb2042659da2f77343a16ff766591d8b59e53847431aff3",
+   "caratteri": 7438,
    "email_nascoste": 2,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "oristano",
@@ -887,6 +1096,18 @@
     }
    ],
    "cambiata": false
+  },
+  {
+   "asl": "oristano",
+   "url": "https://www.asl5oristano.it/strutture/screening-oncologici/",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "oristano/7ec919f93e25.txt",
+   "titolo": "Screening oncologici - ASL Oristano",
+   "sha": "761a4013c7d6ec12247383f230613b58cf3830ffea3ea097d1528e6ab9a1739a",
+   "caratteri": 2938,
+   "email_nascoste": 6,
+   "cambiata": true
   },
   {
    "asl": "oristano",
@@ -1014,6 +1235,32 @@
    "sha": "5abc5e9b8df28e54f4492a5e4162f7a304102bd4e03f4404705dc01a14621781",
    "caratteri": 10117,
    "pdf": true,
+   "cambiata": false
+  },
+  {
+   "asl": "sassari",
+   "url": "https://www.asl1sassari.it/screening-oncologici-aderite-con-fiducia-allinvito-della-asl-di-sassari/",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "sassari/6922678e4cb9.txt",
+   "titolo": "Screening oncologici: aderite con fiducia all’invito della Asl di Sassari - ASL Sassari",
+   "sha": "86b1523637541a01818c352f241916862e78e07d65fb838914bbdc5209279098",
+   "caratteri": 7715,
+   "email_nascoste": 9,
+   "link_pdf": [
+    {
+     "url": "https://www.asl1sassari.it/wp-content/uploads/2026/09/Allegato-1-Screening-del-tumore-del-collo-dellutero.pdf",
+     "testo": "Screening del tumore del collo dell'utero"
+    },
+    {
+     "url": "https://www.asl1sassari.it/wp-content/uploads/2026/09/Allegato-2-Screening-del-tumore-della-mammella.pdf",
+     "testo": "Screening del tumore della mammella"
+    },
+    {
+     "url": "https://www.asl1sassari.it/wp-content/uploads/2026/09/Allegato-3-Screening-del-tumore-del-colon-retto.pdf",
+     "testo": "Screening del tumore del colon retto"
+    }
+   ],
    "cambiata": true
   },
   {
@@ -1027,7 +1274,7 @@
    "sha": "5381a4ebe06c76f7b271da4188f1525f4789b9c6b6cd6b6a47f53a6d3db87dee",
    "caratteri": 1752,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "sassari",
@@ -1039,6 +1286,45 @@
    "titolo": "Microsoft Word - Percorso di tutela ASL SASSARI",
    "sha": "bf5047e0c008742d2974892a5625abc8b89ee8820f0a14f41d93b86e7d063872",
    "caratteri": 15296,
+   "pdf": true,
+   "cambiata": false
+  },
+  {
+   "asl": "sassari",
+   "url": "https://www.asl1sassari.it/wp-content/uploads/2026/09/Allegato-1-Screening-del-tumore-del-collo-dellutero.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asl1sassari.it/screening-oncologici-aderite-con-fiducia-allinvito-della-asl-di-sassari/",
+   "http": 200,
+   "file": "sassari/720b91670d78.txt",
+   "titolo": "CAMPAGNE SCREENING",
+   "sha": "b1f3b04dc419faf3b4bca215935fa2d14a0737144c7f7fea1e88b03e77935388",
+   "caratteri": 3411,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "sassari",
+   "url": "https://www.asl1sassari.it/wp-content/uploads/2026/09/Allegato-2-Screening-del-tumore-della-mammella.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asl1sassari.it/screening-oncologici-aderite-con-fiducia-allinvito-della-asl-di-sassari/",
+   "http": 200,
+   "file": "sassari/23cda959ab23.txt",
+   "titolo": "SCREENING",
+   "sha": "0e930974010980c596f44913a7e1a6f247e4a9d1bbe3ef30872e5b9e6677f13c",
+   "caratteri": 3446,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "sassari",
+   "url": "https://www.asl1sassari.it/wp-content/uploads/2026/09/Allegato-3-Screening-del-tumore-del-colon-retto.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asl1sassari.it/screening-oncologici-aderite-con-fiducia-allinvito-della-asl-di-sassari/",
+   "http": 200,
+   "file": "sassari/0491d03379fc.txt",
+   "titolo": "CAMPAGNE SCREENING DEL",
+   "sha": "41cf547e9992f0a67faa46d4c0141dd19b765706015b1cad2cc1c6f239ae4778",
+   "caratteri": 3723,
    "pdf": true,
    "cambiata": true
   },
@@ -1157,6 +1443,30 @@
   },
   {
    "asl": "sulcis",
+   "url": "https://www.aslsulcis.it/strutture/centro-screening/",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "sulcis/f38a1718733a.txt",
+   "titolo": "Centro Screening - ASL Sulcis Iglesiente",
+   "sha": "16f9f0f14d5f4898ebea8af45b4cafd609d35e654c32f247a594e2bc357dd323",
+   "caratteri": 2512,
+   "email_nascoste": 4,
+   "cambiata": true
+  },
+  {
+   "asl": "sulcis",
+   "url": "https://www.aslsulcis.it/servizio/screening-oncologici/",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "sulcis/0d352ec62acf.txt",
+   "titolo": "Screening oncologici - ASL Sulcis Iglesiente",
+   "sha": "04b0e59b08fd595f485e3bfc393b9ecb2450c3dcad9d194d5e8a4cfebb5bbc61",
+   "caratteri": 8533,
+   "email_nascoste": 5,
+   "cambiata": true
+  },
+  {
+   "asl": "sulcis",
    "url": "https://www.aslsulcis.it/wp-content/uploads/2024/10/ASSISTENZA-TEMPORANEA.pdf",
    "controllata": "2026-10-23",
    "da_pagina": "https://www.aslsulcis.it/servizio/scelta-revoca-esenzioni/",
@@ -1166,7 +1476,7 @@
    "sha": "1e259e6b7469d2d8c2d06088c12f6f673990900908e52eb73c60d2690caa7bf1",
    "caratteri": 1116,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "inps-sardegna",
@@ -1258,6 +1568,61 @@
   },
   {
    "asl": "inps-sardegna",
+   "url": "https://www.inps.it/it/it/inps-comunica/dossier/riforma-della-disabilita/fase-sperimentale.html",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "inps-sardegna/ea390ed5e426.txt",
+   "titolo": "Portale Inps - Fase sperimentale",
+   "sha": "1faa43c19eb74a351d7652340dd479eab380545e617836113ad8f10f1fac9f6a",
+   "caratteri": 52227,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-sardegna",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.accertamento-disabilit-sperimentazione-estesa-ad-altre-40-province.html",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "inps-sardegna/8058bf2c338f.txt",
+   "titolo": "Portale Inps - Accertamento disabilità: sperimentazione estesa ad altre 40 province",
+   "sha": "1089f36cec2bd46a1194f4ed94986e1f5e68f80004294ae3826b973b4a067bf5",
+   "caratteri": 42762,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-sardegna",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.03.avviata-la-terza-fase-sperimentale-della-riforma-della-disabilit.html",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "inps-sardegna/ab403a001823.txt",
+   "titolo": "Portale Inps - Avviata la terza fase sperimentale della riforma della disabilità",
+   "sha": "530b470cfd4a6d158dcd5c3fe79e0075589af6deccc9a6503fd31489cc150b65",
+   "caratteri": 43653,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-sardegna",
+   "url": "https://www.normattiva.it/eli/id/2026/02/19/26G00039/ORIGINAL",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "inps-sardegna/e1d7eb0b684f.txt",
+   "titolo": "DECRETO-LEGGE 19 febbraio 2026, n. 19 - Normattiva",
+   "sha": "94f1e36654d0110ca027160f5c0a3911c8abb5bdca9a4a77523f1047749d6c10",
+   "caratteri": 13528,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-sardegna",
+   "url": "https://www.normattiva.it/eli/id/2026/04/20/26A01962/ORIGINAL",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "inps-sardegna/4c05459b2c8a.txt",
+   "titolo": "TESTO COORDINATO DEL DECRETO-LEGGE 19 febbraio 2026, n. 19 - Normattiva",
+   "sha": "87972c6ddf63dfee5eacabea5c00fcbfdbbeb565ed8eafa1e9d3530123ce0aeb",
+   "caratteri": 9073,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-sardegna",
    "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2024.12.accertamento-della-disabilit-avvio-sperimentazione-della-riforma.html",
    "controllata": "2026-10-23",
    "http": 200,
@@ -1329,8 +1694,8 @@
    "http": 200,
    "file": "regione-sardegna/5dae24b1e42b.txt",
    "titolo": "Aiuto - CupWeb",
-   "sha": "a65d12c13b50f7b2af75cd918dd838ad43e96354ebd52a139e4531b945eb10d5",
-   "caratteri": 19023,
+   "sha": "6a60c23b78943d2f2c26ef2f791b19bd2eb275b0784abf709b5f624bc8e1ee4a",
+   "caratteri": 19024,
    "link_pdf": [
     {
      "url": "https://manuali.sardegnasalute.it/manuali/Manuale_PRENOTA_ROSSA_CUP.pdf",
@@ -1759,7 +2124,7 @@
    "sha": "1282eb649c9a29e8253595bf88c1169a613f0c1b0db9116f60e94c32ab7f787b",
    "caratteri": 15806,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-medio-campidano",
