@@ -258,7 +258,8 @@ export function renderFooter(root = '') {
     <nav aria-label="Informazioni">
       <a href="${root}privacy.html">Privacy</a>
       <a href="${root}fonti.html">Da dove prendiamo le informazioni</a>
-      <a href="${root}note-legali.html">Chi siamo</a>
+      <a href="${root}chi-siamo.html">Chi siamo</a>
+      <a href="${root}note-legali.html">Note legali</a>
       <a href="${esc(reportErrorHref())}">Segnala un errore</a>
     </nav>
     <p>Il sito è libero: codice con licenza MIT, testi con licenza CC BY 4.0.</p>

@@ -37,7 +37,8 @@ function copertura() {
     : '<p class="home-regione">Le regole valgono in tutta Italia.</p>';
 }
 
-// Chi siamo in una riga sopra le scelte; il resto sotto. Con una regione attiva sola: «Per ora solo in <regione>».
+// Sotto il titolo, la frase che dice a cosa serve il sito (è anche la descrizione per Google: senza, Google
+// mostrava il riquadro «Stai male adesso?»). Poi chi siamo in una riga sopra le scelte; il resto sotto. Con una regione attiva sola: «Per ora solo in <regione>».
 // Con più regioni: quale si sta guardando e il link per cambiarla (la scelta è in Numeri utili).
 function intro() {
   const scelta = regioneSalvata() || regioneInfo();
@@ -48,6 +49,7 @@ function intro() {
   return `
   <section class="home-intro page-band">
   <h1>Di cosa hai bisogno?</h1>
+  <p class="lead home-lead">La visita è troppo lontana? La visita per l'invalidità non arriva? Ti aiutiamo a far valere i tuoi diritti nella sanità, in tutta Italia.</p>
   <p class="home-trust">Gratis. Siamo volontari: <strong>non siamo l'${esc(ente)} né l'INPS</strong>.${una ? ` Per ora solo in ${esc(regioneInfo().name)}.` : ''}</p>
   ${piu ? `<p class="home-regione">📍 ${regioneSalvata() ? `Stai guardando: <strong>${esc(scelta.name)}</strong> · <a href="numeri-utili/?torna=${encodeURIComponent(location.pathname)}#regione">Cambia regione</a>` : `<a href="numeri-utili/?torna=${encodeURIComponent(location.pathname)}#regione">Scegli la tua regione</a> per vedere i numeri e gli uffici della tua zona`}</p>` : ''}
   ${piu ? copertura() : ''}

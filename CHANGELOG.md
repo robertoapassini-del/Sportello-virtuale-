@@ -2,6 +2,17 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 23/10/2026 — Come appare il sito su Google: nome, titoli, anteprima, dati strutturati, «Chi siamo»
+- Errore trovato (ricerca «site:guidasanita.it»): Google mostrava «guidasanita.it» al posto del nome, tagliava i titoli lunghi (fino a 131 caratteri) e usava il riquadro «Stai male adesso?» come descrizione della home.
+- Home: dati strutturati JSON-LD «WebSite» (nome «Guida Sanità») e «Organization» (logo `icon-512.png`); sotto il titolo la frase che dice a cosa serve il sito, prima del riquadro dell'urgenza (`index.html`, `js/home.js`).
+- Titoli: al massimo 60 caratteri; « – Guida Sanità» solo sui titoli corti (`tools/pagine.mjs`). Riscritti 76 titoli, con le parole che la gente cerca (`docs/ricerche-frequenti.md`). I testi delle pagine non cambiano.
+- Anteprima nei messaggi: `og-image.png` (1200 x 630, logo, nome e frase del sito, fatta con `node tools/og-image.cjs`), `og:image`, `og:locale` e `twitter:card` in ogni pagina; `og:type` «article» nelle guide.
+- Dati strutturati in ogni pagina: «BreadcrumbList» (il percorso) e, nelle guide, «Article» con `dateModified`. Niente «FAQPage»: Google la mostra solo per siti di enti pubblici o sanitari ufficiali.
+- Icone con percorso assoluto («/favicon.ico»…).
+- `sitemap.xml` con `lastmod`: la data del controllo più recente nei file `data/` della pagina (privacy: la data scritta nella pagina).
+- «Chi siamo» (`chi-siamo.html`) e «Note legali» (`note-legali.html`) ora sono due pagine, con i link nel piè di pagina e nella privacy. Testi spostati, non cambiati.
+- Nuovi controlli: `tests/seo.test.mjs` (canonical, icone, anteprima, titoli, JSON-LD valido, lastmod, frase della home, le due pagine). Ha trovato un errore nel generatore: contava «&#39;» come 5 caratteri.
+
 ## 23/10/2026 — Google Trends per l'Italia e 7 regioni: risultati e ricerca della home
 - `docs/ricerche-frequenti.md`, punto 3b: 3 confronti per l'Italia e le query associate di 4 temi in 8 zone (Google Trends, 23/10/2025 – 23/10/2026, raccolti dal proprietario). Il fascicolo sanitario è il tema più cercato (4,7 volte la legge 104), ma il link al fascicolo della Regione c'è solo per la Sicilia; pronto soccorso e guardia medica insieme valgono 3 volte la legge 104 e non hanno una pagina.
 - Ricerca della home: «fse» portava prima alla cartella clinica (tolta la parola da `cartella-clinica`, che resta trovata con «fascicolo»); parole nuove «annullare annullamento stampa» (CUP) e «residenza trasferimento curante» (medico).
