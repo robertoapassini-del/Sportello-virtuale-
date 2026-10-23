@@ -4,7 +4,7 @@
   "regioni": [
     { "id": "abruzzo", "name": "Abruzzo", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili", "invalidita", "cartella-clinica", "medico-famiglia"] },
     { "id": "basilicata", "name": "Basilicata", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili", "invalidita", "cartella-clinica", "medico-famiglia", "assistenza-domiciliare"] },
-    { "id": "calabria", "name": "Calabria", "attiva": true, "asl_label": "ASP", "moduli": ["numeri-utili", "invalidita", "medico-famiglia"] },
+    { "id": "calabria", "name": "Calabria", "attiva": true, "asl_label": "ASP", "moduli": ["numeri-utili", "invalidita", "medico-famiglia", "cartella-clinica", "assistenza-domiciliare", "cure-palliative"] },
     { "id": "campania", "name": "Campania", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili", "invalidita", "cartella-clinica", "assistenza-domiciliare"] },
     { "id": "emilia-romagna", "name": "Emilia-Romagna", "attiva": true, "asl_label": "AUSL", "moduli": ["numeri-utili", "invalidita", "cartella-clinica", "medico-famiglia", "assistenza-domiciliare", "cure-palliative"] },
     { "id": "friuli-venezia-giulia", "name": "Friuli-Venezia Giulia", "attiva": true, "asl_label": "Azienda sanitaria", "moduli": ["numeri-utili", "invalidita", "medico-famiglia"] },
@@ -19,7 +19,7 @@
     { "id": "sicilia", "name": "Sicilia", "attiva": true, "asl_label": "ASP", "asl_label_long": "Azienda sanitaria provinciale", "asl_intestazione": "Azienda Sanitaria Provinciale", "ente": "Regione Siciliana", "files": { "asl": "asp", "inps": "inps" },
       "link": { "fse": "https://www.regione.sicilia.it/fascicolosanitario", "assessorato": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute", "dialisi": "https://regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/dipartimento-pianificazione-strategica/altri-contenuti/albo-trasporto-emodializzati" } },
     { "id": "toscana", "name": "Toscana", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili", "invalidita", "liste-attesa", "cartella-clinica", "medico-famiglia", "assistenza-domiciliare", "cure-palliative"] },
-    { "id": "trentino-alto-adige", "name": "Trentino-Alto Adige", "attiva": true, "asl_label": "Azienda sanitaria", "moduli": ["numeri-utili", "prevenzione"] },
+    { "id": "trentino-alto-adige", "name": "Trentino-Alto Adige", "attiva": true, "asl_label": "Azienda sanitaria", "moduli": ["numeri-utili", "prevenzione", "cartella-clinica", "assistenza-domiciliare", "cure-palliative"] },
     { "id": "umbria", "name": "Umbria", "attiva": true, "asl_label": "USL", "moduli": ["numeri-utili", "invalidita", "liste-attesa", "cartella-clinica", "medico-famiglia", "assistenza-domiciliare", "cure-palliative", "prevenzione"] },
     { "id": "valle-d-aosta", "name": "Valle d'Aosta", "attiva": true, "asl_label": "USL", "moduli": ["numeri-utili", "liste-attesa", "medico-famiglia", "cartella-clinica", "cure-palliative", "prevenzione"] },
     { "id": "veneto", "name": "Veneto", "in": "nel Veneto", "attiva": true, "asl_label": "ULSS", "moduli": ["numeri-utili", "invalidita"] }

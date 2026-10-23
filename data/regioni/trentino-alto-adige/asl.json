@@ -118,6 +118,10 @@
    ],
    "sources": [
     {
+     "label": "Azienda sanitaria dell'Alto Adige – Direzione generale, contatti (pagina letta dall'Italia il 23/10/2026)",
+     "url": "https://www.asdaa.it/it/contatti/53003"
+    },
+    {
      "label": "Azienda sanitaria dell'Alto Adige – Prenotazione (CUPP)",
      "url": "https://home.sabes.it/it/prenotazione-me.asp"
     },
@@ -138,8 +142,9 @@
      "url": "https://www.asdaa.it/it/centro-piani-rencio"
     }
    ],
-   "last_verified": "2026-10-22",
+   "last_verified": "2026-10-23",
    "todo": [
+    "PEC dg@pec.sabes.it (Direzione generale, via Thomas Alva Edison 10/D, Bolzano): letta il 23/10/2026 da chi cura il sito, dall'Italia, sulla pagina dei contatti della Direzione generale. È la PEC generale dell'azienda: le lettere vanno lì finché non c'è un'email dell'URP o dell'ufficio reclami. gd@asdaa.it è la segreteria della Direzione: non usata. Mancano ancora URP, percorso di tutela e scelta del medico.",
     "Copie del 22/10/2026 (pagine aperte nel browser): ora si leggono le pagine dei distretti, del 116117 e della Medicina di base. Il 116117 è attivo dal 15/09/2026 solo nel Comprensorio sanitario di Bolzano (fase pilota di circa un anno; pagina della Provincia). La guardia medica con un numero suo c'è solo nei distretti di Bolzano, Laives-Bronzolo-Vadena e Oltradige e in alcuni comuni (pagina Medicina di base): altrove il servizio è fatto a turno dai medici di famiglia. Le pagine di home.sabes.it e home.asdaa.it/it/servizi.asp oggi rispondono 503.",
     "Il numero del CUPP è «100 100» con il prefisso del distretto (0471 Bolzano, 0472 Bressanone, 0473 Merano, 0474 Brunico): sul sito un numero per zona, perché senza prefisso la chiamata non parte (audit del 21/10/2026).",
     "La pagina «Tempi di prenotazione» di provincia.bz.it non si è aperta (troppi rinvii).",
@@ -286,8 +291,13 @@
     {
      "tipo": "altro",
      "url": "https://home.asdaa.it/it/amministrazione-trasparente/cartadeiservizisanitari.asp"
+    },
+    {
+     "tipo": "PEC e contatti della Direzione generale",
+     "url": "https://www.asdaa.it/it/contatti/53003"
     }
-   ]
+   ],
+   "pec": "dg@pec.sabes.it"
   },
   {
    "id": "trento",

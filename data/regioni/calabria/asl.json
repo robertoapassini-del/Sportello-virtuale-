@@ -586,6 +586,10 @@
    ],
    "sources": [
     {
+     "label": "ASP Vibo Valentia – Ufficio Comunicazione e URP (pagina letta dall'Italia il 23/10/2026: il sito blocca il server delle copie)",
+     "url": "https://www.aspvv.it/index.php/azienda/presentazione/la-direzione-generale-e-uffici-di-staff/ufficio-comunicazione-e-urp"
+    },
+    {
      "label": "ASP Reggio Calabria – Numeri utili (centralini delle ASP)",
      "url": "https://www.asprc.it/servizi/numeri-utili/"
     },
@@ -598,26 +602,33 @@
      "url": "https://ecosanita.regione.calabria.it/faq.php"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-23",
    "todo": [
-    "Il sito aspvv.it non si è lasciato copiare (errore 403 su tutte le pagine): mancano URP, CUP, PUA/assistenza domiciliare e tutti i numeri dell'ASP di Vibo Valentia.",
+    "PEC (aspvibovalentia@pec.it) ed email URP (urp@aspvv.it): lette il 23/10/2026 da chi cura il sito, dall'Italia, sulla pagina «Ufficio Comunicazione e URP» dell'ASP. Il sito blocca il server delle copie (403): la copia non c'è, la riga è in tests/copie-noti.txt. Mancano ancora CUP, PUA/assistenza domiciliare, numeri dell'URP e percorso di tutela.",
     "L'unico numero (0963 339541, sede di Mileto) viene dalla pagina «Numeri utili» dell'ASP di Reggio Calabria: da confermare sul sito dell'ASP di Vibo.",
     "CUP: non ho messo il numero regionale 0961 789789 perché la pagina CUP online di Crotone non elenca l'ASP di Vibo tra le aziende prenotabili: da verificare.",
     "Senza PEC né email: la lettera del medico di famiglia dice di consegnarla allo sportello. Il sito aspvv.it dà 403 al server: pagina del percorso di tutela in «pagine».",
     "Terzo giro (copie del 23/10/2026, anche i PDF): nessun modulo nuovo. Il sito aspvv.it risponde ancora 403 al server su tutte le pagine: l'ASP di Vibo Valentia resta senza PEC, email, URP e percorso di tutela, e tiene spente le lettere di tutta la Calabria. Le «Linee guida del CUP della Calabria» (PDF della Regione, copiato) dicono solo che ogni azienda deve attivare i «percorsi di tutela» quando non c'è posto entro i tempi: niente canale, documenti né indirizzo per azienda. Screening: numero solo a Reggio Calabria. Accesi dal secondo giro: invalidità e medico di famiglia (FAQ di Ecosanità, Regione Calabria). Mancano anche protesica, cure palliative e uffici cartelle cliniche (pagine in «pagine»). Da provare: la PEC dell'ASP di Vibo nell'indice ufficiale delle PA (IndicePA), se si decide di copiarlo."
    ],
-   "emails": [],
+   "emails": [
+    "urp@aspvv.it"
+   ],
    "pagine": [
     {
      "tipo": "liste di attesa e percorso di tutela",
      "url": "https://www.aspvv.it/index.php/amministrazione-trasparente-3/servizi-erogati/liste-di-attesa/a-proposito-delle-liste-di-attesa"
+    },
+    {
+     "tipo": "URP e PEC",
+     "url": "https://www.aspvv.it/index.php/azienda/presentazione/la-direzione-generale-e-uffici-di-staff/ufficio-comunicazione-e-urp"
     }
    ],
    "scelta_medico": {
     "how": "Puoi cambiare il medico o il pediatra online, sul portale della Regione Calabria «Ecosistema Calabria Sanità», con SPID o CIE. Vedi i medici del tuo distretto che hanno ancora posto e scegli. Se va bene, il cambio vale subito. Se il medico che vuoi ha già tutti i pazienti, devi andare allo sportello dell'ASP.",
     "url": "https://ecosanita.regione.calabria.it/faq.php",
     "url_label": "Sito della Regione"
-   }
+   },
+   "pec": "aspvibovalentia@pec.it"
   }
  ]
 }
