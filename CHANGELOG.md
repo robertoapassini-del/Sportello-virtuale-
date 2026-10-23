@@ -2,6 +2,13 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 23/10/2026 — Lazio: prevenzione accesa; Marche: numeri dello screening di 4 AST su 5
+- `data/regioni/lazio/asl.json`: un contatto «screening» per ogni ASL, dalle copie del 23/10/2026 delle pagine dello screening. Frosinone 800 003422 (pagina «UOSD Coordinamento Screening»), Latina 800 065560 (pagina «Servizio di Screening»), Rieti 800 646999 (pagina «UOS Coordinamento Screening di Popolazione»), Viterbo 800 840359 (pagine dello screening del seno e del colon-retto). Roma, tra i contatti dell'azienda: Roma 1 800 536693 (volantino PDF dell'ASL Roma 1), Roma 2 800 405051 e 06 51006675 (pagina «UOSD Coordinamento Screening»), Roma 3 800 634634 (brochure PDF dello screening del seno), Roma 4 800 539762, Roma 5 800 894549, Roma 6 800 430264 e 06 93273281 (seno e colon-retto), 800 160622 e 06 93273791 (collo dell'utero), dalle pagine dello screening di ogni ASL. Orari solo dove la pagina li scrive chiari.
+- `data/regioni/index.json`: nel Lazio accesa la prevenzione.
+- Lazio, `pagine[]`: tolto il depliant screening di Salute Lazio (la copia risponde 404). Nuove pagine per la scelta del medico: «Medico di famiglia» di Salute Lazio (tutte le ASL) e le pagine delle ASL di Latina, Rieti e Viterbo (url trovati col motore di ricerca sui domini ufficiali, nessun dato preso dagli estratti). Il medico di famiglia resta spento: nelle copie non c'è come si sceglie il medico.
+- `data/regioni/marche/asl.json`: contatti «screening» dell'AST Pesaro Urbino (800 738073 seno, 800 710977 collo dell'utero, 800 210858 colon-retto), Ancona (800 267267), Macerata (800 178008) e Fermo (800 185454), dalle pagine dello screening delle AST copiate il 23/10/2026. Prevenzione resta spenta: la pagina «UOSD Screening» dell'AST Ascoli Piceno non ha numeri (nuova pagina «Screening oncologici» in `pagine[]`).
+- Marche, liste d'attesa: resta spento. La pagina dell'ARS Marche e quella dell'AST Ancona dicono che chi non trova posto va nella «Lista di presa in carico» e l'AST lo richiama, ma non dicono a chi scrivere se nessuno richiama (solo gli URP di Ascoli Piceno e Fermo). Annotato nel `todo` di ogni AST.
+
 ## 23/10/2026 — Prevenzione: il numero giusto dove ci sono più aziende
 - Errore trovato: nella prevenzione la frase «chiama il numero dello screening dell'ASL di …» dava il primo numero dei contatti. A Roma (6 ASL) tutti avevano il numero dell'ASL Roma 1, a Perugia quello dell'USL Umbria 2. Ora, con più numeri, la frase rimanda all'elenco sotto, dove ogni numero ha il nome del suo ufficio (`js/engine.js`, `numeroScreening`; test in `tests/engine.test.mjs`).
 

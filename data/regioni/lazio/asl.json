@@ -143,6 +143,15 @@
      "url": "https://www.asl.fr.it/contatti/",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening dei tumori dell'ASL di Frosinone: numero verde gratuito, anche da cellulare",
+     "number": "800 003422",
+     "hours": "Dal lunedì al venerdì 9:00–14:00",
+     "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-prevenzione/uosd-coordinamento-screening/",
+     "verified": "2026-10-23",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -177,9 +186,10 @@
     "Manca un numero del PUA / cure domiciliari: le pagine copiate (Distretti sanitari) non riportano telefoni.",
     "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari.",
     "Liste d'attesa: how_to, documents_required, what_next e details dalla pagina «Pass di garanzia» di Salute Lazio (copia del 22/10/2026, pubblicata il 28/05/2026; le stesse frasi sono nelle pagine dell'ASL Roma 1 e dell'ASL Roma 5). letter_mode «portal» con portal_url la pagina della Regione: il pulsante del modulo oggi dice «Vai al sito dell'ASL» (js/liste-attesa.js), andrebbe «Vai al sito della Regione». Il modulo resta spento finché manca un indirizzo della zona di Roma 2 (copie del 23/10/2026). Il portale è della Regione: in details c'è la frase «Nel Lazio il Pass di garanzia è un servizio della Regione…».",
-    "Screening (copie del 23/10/2026): nessuna pagina copiata dell'ASL ha il numero dello screening. Messi in «pagine» il depliant di Salute Lazio sullo screening del seno (numero verde ed email di ogni ASL) e la pagina «Screening oncologici» della Regione: dopo la copia, un contatto «screening» per ogni ASL e si accende «prevenzione».",
     "Percorso di tutela (PDF «Percorsi di tutela» dell'ASL, copia del 23/10/2026): se il CUP non trova posto in tempo, il back office del CUP e il servizio Recall richiamano la persona e, se serve, passano la richiesta al Direttore del distretto. Il PDF non dà un indirizzo a cui scrivere: resta il Pass di garanzia della Regione.",
-    "Pagine aggiunte in «pagine» il 23/10/2026 (quarto giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): pagine del Coordinamento screening. Devono dare il numero e gli orari del centro screening (contacts topic «screening»)."
+    "Screening: numero verde 800 003 422 (lunedì-venerdì 9:00-14:00) dalla pagina «UOSD Coordinamento Screening» dell'ASL, copia del 23/10/2026 (lazio/frosinone/bc00811c9b33.txt). La stessa pagina dice che il call center risponde dalle 8.30 alle 15.15: messo l'orario del numero verde.",
+    "Tolto da «pagine» il depliant screening di Salute Lazio: la copia del 23/10/2026 risponde 404.",
+    "Medico di famiglia (copie del 23/10/2026): nessuna pagina copiata spiega come si sceglie o si cambia il medico (ci sono solo voci di menu e numeri). Messe in «pagine» la pagina «Medico di famiglia» di Salute Lazio. Dopo la copia: scelta_medico.how e url, poi si accende «medico-famiglia» se ce l'hanno tutte e 5 le aziende."
    ],
    "pagine": [
     {
@@ -192,10 +202,6 @@
     },
     {
      "tipo": "screening",
-     "url": "https://salutelazio.it/documents/10182/9850609/Depliant+cura+seno/0751b383-dd31-89b9-4cdb-4e9c1a312709"
-    },
-    {
-     "tipo": "screening",
      "url": "https://regione.lazio.it/enti/salute/screening-oncologici"
     },
     {
@@ -205,6 +211,10 @@
     {
      "tipo": "screening",
      "url": "https://www.asl.fr.it/servizi/prevenzione/screening-oncologici/"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://salutelazio.it/it/servizi/medico-di-famiglia"
     }
    ],
    "channel": "cup",
@@ -362,6 +372,15 @@
      "url": "https://www.ausl.latina.it/gs-guidaservizi/132-visite-ed-esami/4350-cup",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening dei tumori dell'ASL di Latina: numero verde",
+     "number": "800 065560",
+     "hours": "Dal lunedì al venerdì 9.00–13.00; dal lunedì al giovedì anche 15.00–17.00",
+     "url": "https://www.ausl.latina.it/112-azienda/dipartimento-prevenzione/2854-servizio-di-screening",
+     "verified": "2026-10-23",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -398,17 +417,14 @@
     "La pagina Contatti riporta ancora il vecchio numero della guardia medica (0773 520888): non usato, vale il 116117.",
     "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari.",
     "Liste d'attesa: how_to, documents_required, what_next e details dalla pagina «Pass di garanzia» di Salute Lazio (copia del 22/10/2026, pubblicata il 28/05/2026; le stesse frasi sono nelle pagine dell'ASL Roma 1 e dell'ASL Roma 5). letter_mode «portal» con portal_url la pagina della Regione: il pulsante del modulo oggi dice «Vai al sito dell'ASL» (js/liste-attesa.js), andrebbe «Vai al sito della Regione». Il modulo resta spento finché manca un indirizzo della zona di Roma 2 (copie del 23/10/2026). Il portale è della Regione: in details c'è la frase «Nel Lazio il Pass di garanzia è un servizio della Regione…».",
-    "Screening (copie del 23/10/2026): nessuna pagina copiata dell'ASL ha il numero dello screening. Messi in «pagine» il depliant di Salute Lazio sullo screening del seno (numero verde ed email di ogni ASL) e la pagina «Screening oncologici» della Regione: dopo la copia, un contatto «screening» per ogni ASL e si accende «prevenzione».",
-    "Pagine aggiunte in «pagine» il 23/10/2026 (quarto giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): pagine del Servizio di screening. Devono dare il numero e gli orari del centro screening (contacts topic «screening»)."
+    "Screening: numero verde 800 065 560 con gli orari dalla pagina «Servizio di Screening» dell'ASL, copia del 23/10/2026 (lazio/latina/6d5aee6744e3.txt); lo stesso numero è nella pagina «Screening oncologici» (latina/ea194b301ae9.txt).",
+    "Tolto da «pagine» il depliant screening di Salute Lazio: la copia del 23/10/2026 risponde 404.",
+    "Medico di famiglia (copie del 23/10/2026): nessuna pagina copiata spiega come si sceglie o si cambia il medico (ci sono solo voci di menu e numeri). Messe in «pagine» la pagina «Medico di famiglia» di Salute Lazio e la pagina «Scegliere il medico» dell'ASL di Latina. Dopo la copia: scelta_medico.how e url, poi si accende «medico-famiglia» se ce l'hanno tutte e 5 le aziende."
    ],
    "pagine": [
     {
      "tipo": "liste-attesa",
      "url": "https://salutelazio.it/it/pass-di-garanzia"
-    },
-    {
-     "tipo": "screening",
-     "url": "https://salutelazio.it/documents/10182/9850609/Depliant+cura+seno/0751b383-dd31-89b9-4cdb-4e9c1a312709"
     },
     {
      "tipo": "screening",
@@ -421,6 +437,14 @@
     {
      "tipo": "screening",
      "url": "https://www.ausl.latina.it/112-azienda/dipartimento-prevenzione/2854-servizio-di-screening"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://salutelazio.it/it/servizi/medico-di-famiglia"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.ausl.latina.it/comefare/cf-sceltamedico"
     }
    ],
    "channel": "cup",
@@ -607,6 +631,15 @@
      "url": "https://www.asl.rieti.it/aiuto-al-cittadino/pua-punto-unico-di-accesso/",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening dei tumori dell'ASL di Rieti: numero verde, unico per i tre screening",
+     "number": "800 646999",
+     "hours": "Dal lunedì al venerdì 9.00–13.00",
+     "url": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti-aree-e-staff/dipartimento-della-prevenzione/uoc-igiene-e-sanita-pubblica/uos-coordinamento-screening-di-popolazione/",
+     "verified": "2026-10-23",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -650,17 +683,14 @@
     "Nessun numero per scelta del medico ed esenzioni nelle pagine copiate.",
     "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari.",
     "Liste d'attesa: how_to, documents_required, what_next e details dalla pagina «Pass di garanzia» di Salute Lazio (copia del 22/10/2026, pubblicata il 28/05/2026; le stesse frasi sono nelle pagine dell'ASL Roma 1 e dell'ASL Roma 5). letter_mode «portal» con portal_url la pagina della Regione: il pulsante del modulo oggi dice «Vai al sito dell'ASL» (js/liste-attesa.js), andrebbe «Vai al sito della Regione». Il modulo resta spento finché manca un indirizzo della zona di Roma 2 (copie del 23/10/2026). Il portale è della Regione: in details c'è la frase «Nel Lazio il Pass di garanzia è un servizio della Regione…».",
-    "Screening (copie del 23/10/2026): nessuna pagina copiata dell'ASL ha il numero dello screening. Messi in «pagine» il depliant di Salute Lazio sullo screening del seno (numero verde ed email di ogni ASL) e la pagina «Screening oncologici» della Regione: dopo la copia, un contatto «screening» per ogni ASL e si accende «prevenzione».",
-    "Pagine aggiunte in «pagine» il 23/10/2026 (quarto giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): pagine del Coordinamento screening. Devono dare il numero e gli orari del centro screening (contacts topic «screening»)."
+    "Screening: numero verde 800 64 69 99 (lunedì-venerdì 9.00-13.00) dalla pagina «UOS Coordinamento Screening di Popolazione» dell'ASL, copia del 23/10/2026 (lazio/rieti/541b7e2b32fd.txt).",
+    "Tolto da «pagine» il depliant screening di Salute Lazio: la copia del 23/10/2026 risponde 404.",
+    "Medico di famiglia (copie del 23/10/2026): nessuna pagina copiata spiega come si sceglie o si cambia il medico (ci sono solo voci di menu e numeri). Messe in «pagine» la pagina «Medico di famiglia» di Salute Lazio e la pagina «Scegliere il medico di base/pediatra» dell'ASL di Rieti. Dopo la copia: scelta_medico.how e url, poi si accende «medico-famiglia» se ce l'hanno tutte e 5 le aziende."
    ],
    "pagine": [
     {
      "tipo": "liste-attesa",
      "url": "https://salutelazio.it/it/pass-di-garanzia"
-    },
-    {
-     "tipo": "screening",
-     "url": "https://salutelazio.it/documents/10182/9850609/Depliant+cura+seno/0751b383-dd31-89b9-4cdb-4e9c1a312709"
     },
     {
      "tipo": "screening",
@@ -673,6 +703,14 @@
     {
      "tipo": "screening",
      "url": "https://www.asl.rieti.it/iniziative-di-screening-e-prevenzione/"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://salutelazio.it/it/servizi/medico-di-famiglia"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.asl.rieti.it/come-fare-per/scegliere-il-medico-di-base/pediatra"
     }
    ],
    "channel": "cup",
@@ -1064,6 +1102,94 @@
      "url": "https://www.aslroma5.it/servizi_distrettuali/pua-punto-unico-di-accesso-casa-della-comunita-tivoli/",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening dei tumori dell'ASL Roma 1: numero verde",
+     "number": "800 536693",
+     "url": "https://www.aslroma1.it/uploads/files/12_59_volantino_A5.pdf",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening dei tumori dell'ASL Roma 2: numero verde",
+     "number": "800 405051",
+     "hours": "Dal lunedì al venerdì 8.00–18.00",
+     "url": "https://www.aslroma2.it/index.php/area-della-prevenzione-attiva/uosd-coordinamento-screening",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening dei tumori dell'ASL Roma 2: altro numero",
+     "number": "06 51006675",
+     "hours": "Dal lunedì al venerdì 8.00–18.00",
+     "url": "https://www.aslroma2.it/index.php/area-della-prevenzione-attiva/uosd-coordinamento-screening",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening dei tumori dell'ASL Roma 3: numero verde",
+     "number": "800 634634",
+     "url": "https://www.aslroma3.it/wp-content/uploads/2026/05/Brochure-dello-screening-mammografico.pdf",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening dei tumori dell'ASL Roma 4: numero verde",
+     "number": "800 539762",
+     "hours": "Dal lunedì al venerdì 9.00–13.00; martedì e giovedì anche 14.30–16.30",
+     "url": "https://www.aslroma4.it/azienda/dipartimenti/dipartimento-di-prevenzione/servizio-igiene-e-sanita-pubblica-s-i-s-p/screening-oncologici-asl-roma-4",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening dei tumori dell'ASL Roma 5: numero verde",
+     "number": "800 894549",
+     "hours": "Dal lunedì al venerdì 8:00–13:00 e 14:00–17:00",
+     "url": "https://www.aslroma5.it/programmi-di-screening-oncologici/",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening del seno e del colon-retto dell'ASL Roma 6: numero verde, solo da telefono fisso",
+     "number": "800 430264",
+     "hours": "Dal lunedì al sabato 10.00–13.00; dal lunedì al venerdì anche 15.00–19.00",
+     "url": "https://www.aslroma6.it/screening",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening del seno e del colon-retto dell'ASL Roma 6: da telefono fisso e da cellulare",
+     "number": "06 93273281",
+     "hours": "Dal lunedì al venerdì 15.00–19.00",
+     "url": "https://www.aslroma6.it/screening",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening del collo dell'utero dell'ASL Roma 6: numero verde, solo da telefono fisso",
+     "number": "800 160622",
+     "hours": "Dal lunedì al sabato 10.00–13.00; dal lunedì al venerdì anche 15.00–19.00",
+     "url": "https://www.aslroma6.it/screening",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening del collo dell'utero dell'ASL Roma 6: da telefono fisso e da cellulare",
+     "number": "06 93273791",
+     "hours": "Dal lunedì al venerdì 15.00–19.00",
+     "url": "https://www.aslroma6.it/screening",
+     "verified": "2026-10-23",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -1154,12 +1280,13 @@
     "ASL Roma 3 e Roma 6: le pagine assistenza domiciliare e PUA non danno numeri (rimandano al PUA del distretto).",
     "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari.",
     "Liste d'attesa: how_to, documents_required, what_next e details dalla pagina «Pass di garanzia» di Salute Lazio (copia del 22/10/2026, pubblicata il 28/05/2026; le stesse frasi sono nelle pagine dell'ASL Roma 1 e dell'ASL Roma 5). letter_mode «portal» con portal_url la pagina della Regione: il pulsante del modulo oggi dice «Vai al sito dell'ASL» (js/liste-attesa.js), andrebbe «Vai al sito della Regione». Il modulo resta spento finché manca un indirizzo della zona di Roma 2 (copie del 23/10/2026). Il portale è della Regione: in details c'è la frase «Nel Lazio il Pass di garanzia è un servizio della Regione…».",
-    "Screening (copie del 23/10/2026): nessuna pagina copiata dell'ASL ha il numero dello screening. Messi in «pagine» il depliant di Salute Lazio sullo screening del seno (numero verde ed email di ogni ASL) e la pagina «Screening oncologici» della Regione: dopo la copia, un contatto «screening» per ogni ASL e si accende «prevenzione».",
     "Zone (sub_areas): Roma 1 (PEC protocollo@pec.aslroma1.it e urp@aslroma1.it, pagine Contatti e URP; distretti 1, 2, 3, 13, 14, 15 dalla pagina PUA), Roma 3 (copia del 23/10/2026 della pagina URP: urp@aslroma3.it e PEC urp@pec.aslroma3.it; distretti Fiumicino e Municipi X, XI e XII dal menu dell'ASL), Roma 4 (protocollo@pec.aslroma4.it), Roma 5 (protocollo@pec.aslroma5.it), Roma 6 (servizio.protocollo@pec.aslroma6.it). Roma 2: la pagina URP copiata (23/10/2026) non ha email né PEC; la home ha un link «PEC»: messa in «pagine» la pagina https://www.aslroma2.it/index.php/pec e l'elenco delle PEC delle ASL della Regione Lazio. Finché Roma 2 non ha pec o emails, tests/coerenza.test.mjs tiene spenti i moduli con la lettera.",
     "Comuni delle zone Roma 4, 5 e 6: nelle copie ci sono solo alcune sedi (Civitavecchia, Bracciano, Tivoli). Messe in «pagine» le pagine dei distretti (Roma 4 e Roma 5) e «Comuni del territorio» (Roma 6).",
     "Percorso di tutela dell'ASL Roma 3 (pagina Liste di attesa, copia del 23/10/2026): oltre al Pass di garanzia, si può mandare a protocollo@pec.aslroma3.it il «Modulo presentazione istanza» con ricetta, documento e promemoria della prenotazione (Delibera n. 597 del 06/06/2024). Il modulo è un file e la copia non ha il suo indirizzo: scritto solo nei details della zona.",
     "Centralino ASL Roma 3 06 56481: nella copia del 23/10/2026 della pagina «Servizio prenotazioni» è scritto «+390656481» (confronta-copie non lo riconosce). La stessa pagina ha in fondo link pubblicitari di siti di scommesse: sembra manomessa. Da confermare il numero su un'altra pagina dell'ASL Roma 3 o con una telefonata.",
-    "Pagine aggiunte in «pagine» il 23/10/2026 (quarto giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): ASL Roma 2: regolamento di pubblica tutela (PDF) e informativa privacy (PDF): devono dare la PEC o l'email dell'URP a cui si scrive (zona Roma 2 in sub_areas). Screening di Roma 2, Roma 4, Roma 5 e Roma 6: Devono dare il numero e gli orari del centro screening (contacts topic «screening»)."
+    "Screening (copie del 23/10/2026): un numero per ogni ASL di Roma, tra i contatti dell'azienda (come Perugia: il modulo prevenzione non chiede la zona). Roma 1: volantino PDF dell'ASL Roma 1 (lazio/roma/ab6581b6a1a1.txt; ha i numeri verdi di tutte le ASL del Lazio, in due colonne: orari non usati perché non si capisce a quale ASL vanno). Roma 2: pagina UOSD Coordinamento Screening (roma/3feb23bab29f.txt). Roma 3: brochure PDF dello screening del seno dell'ASL Roma 3 (roma/a24dcd63ae88.txt; tabella spezzata, orari non usati). Roma 4: pagina Screening oncologici (roma/a73825184bc0.txt). Roma 5: pagina Programmi di screening (roma/d9f6a6489234.txt). Roma 6: pagina Screening (roma/f0e5d1ccfa60.txt). Le zone in sub_areas non hanno contacts propri: se si aggiungono, vanno copiati anche gli altri contatti della zona (conZona sostituisce l'intero elenco).",
+    "Tolto da «pagine» il depliant screening di Salute Lazio: la copia del 23/10/2026 risponde 404.",
+    "Medico di famiglia (copie del 23/10/2026): nessuna pagina copiata spiega come si sceglie o si cambia il medico (ci sono solo voci di menu e numeri). Messe in «pagine» la pagina «Medico di famiglia» di Salute Lazio (vale per tutte le ASL di Roma). Dopo la copia: scelta_medico.how e url, poi si accende «medico-famiglia» se ce l'hanno tutte e 5 le aziende."
    ],
    "pagine": [
     {
@@ -1185,10 +1312,6 @@
     {
      "tipo": "liste-attesa",
      "url": "https://www.aslroma5.it/percorso-di-garanzia-nella-regione-lazio/"
-    },
-    {
-     "tipo": "screening",
-     "url": "https://salutelazio.it/documents/10182/9850609/Depliant+cura+seno/0751b383-dd31-89b9-4cdb-4e9c1a312709"
     },
     {
      "tipo": "screening",
@@ -1249,6 +1372,10 @@
     {
      "tipo": "screening",
      "url": "https://www.aslroma6.it/screening"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://salutelazio.it/it/servizi/medico-di-famiglia"
     }
    ],
    "channel": "cup",
@@ -1548,6 +1675,15 @@
      "url": "https://www.asl.vt.it/adi-assistenza-domiciliare-integrata",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening dei tumori dell'ASL di Viterbo: numero verde",
+     "number": "800 840359",
+     "hours": "Dal lunedì al venerdì 9.00–13.00",
+     "url": "https://www.asl.vt.it/screening-per-la-prevenzione-dei-tumori-della-mammella",
+     "verified": "2026-10-23",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -1588,17 +1724,14 @@
     "Nessun numero per scelta del medico ed esenzioni nelle pagine copiate.",
     "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari.",
     "Liste d'attesa: how_to, documents_required, what_next e details dalla pagina «Pass di garanzia» di Salute Lazio (copia del 22/10/2026, pubblicata il 28/05/2026; le stesse frasi sono nelle pagine dell'ASL Roma 1 e dell'ASL Roma 5). letter_mode «portal» con portal_url la pagina della Regione: il pulsante del modulo oggi dice «Vai al sito dell'ASL» (js/liste-attesa.js), andrebbe «Vai al sito della Regione». Il modulo resta spento finché manca un indirizzo della zona di Roma 2 (copie del 23/10/2026). Il portale è della Regione: in details c'è la frase «Nel Lazio il Pass di garanzia è un servizio della Regione…».",
-    "Screening (copie del 23/10/2026): nessuna pagina copiata dell'ASL ha il numero dello screening. Messi in «pagine» il depliant di Salute Lazio sullo screening del seno (numero verde ed email di ogni ASL) e la pagina «Screening oncologici» della Regione: dopo la copia, un contatto «screening» per ogni ASL e si accende «prevenzione».",
-    "Pagine aggiunte in «pagine» il 23/10/2026 (quarto giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): pagine degli screening. Devono dare il numero e gli orari del centro screening (contacts topic «screening»)."
+    "Screening: numero verde 800 840359 (lunedì-venerdì 9.00-13.00) dalle pagine dell'ASL sullo screening del seno e del colon-retto, copie del 23/10/2026 (lazio/viterbo/4766d29e952d.txt, b4b46fd20ad4.txt).",
+    "Tolto da «pagine» il depliant screening di Salute Lazio: la copia del 23/10/2026 risponde 404.",
+    "Medico di famiglia (copie del 23/10/2026): nessuna pagina copiata spiega come si sceglie o si cambia il medico (ci sono solo voci di menu e numeri). Messe in «pagine» la pagina «Medico di famiglia» di Salute Lazio e la pagina «Scelta e revoca del medico o pediatra» dell'ASL di Viterbo. Dopo la copia: scelta_medico.how e url, poi si accende «medico-famiglia» se ce l'hanno tutte e 5 le aziende."
    ],
    "pagine": [
     {
      "tipo": "liste-attesa",
      "url": "https://salutelazio.it/it/pass-di-garanzia"
-    },
-    {
-     "tipo": "screening",
-     "url": "https://salutelazio.it/documents/10182/9850609/Depliant+cura+seno/0751b383-dd31-89b9-4cdb-4e9c1a312709"
     },
     {
      "tipo": "screening",
@@ -1611,6 +1744,14 @@
     {
      "tipo": "screening",
      "url": "https://www.asl.vt.it/screening-per-la-prevenzione-del-tumore-del-colon-retto"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://salutelazio.it/it/servizi/medico-di-famiglia"
+    },
+    {
+     "tipo": "medico",
+     "url": "https://www.asl.vt.it/scelta-e-revoca-del-medico-o-pediatra"
     }
    ],
    "channel": "cup",
