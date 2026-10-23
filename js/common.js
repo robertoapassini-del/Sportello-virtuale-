@@ -1,6 +1,6 @@
 // Funzioni comuni del sito: testo sicuro, caricamento dati, piè di pagina,
 // copia e stampa. L'unica cosa inviata è il conteggio
-// anonimo delle visite e dei «Sì / No» (vedi count()): mai quello che scrivi.
+// anonimo delle visite, dei «Sì / No» e delle ricerche senza risultati (vedi count()): mai quello che scrivi.
 import { formatIt, art } from './engine.js';
 import { ICONS } from './icons.js';
 import { checkWith } from './controlla.js';
@@ -28,8 +28,27 @@ export function count(path, { title = '', event = false } = {}) {
     try { from = new URL(document.referrer).origin; } catch { /* nessuna provenienza */ }
     if (from && from !== location.origin) q.set('r', from);
   }
-  try { new Image().src = `https://${GOATCOUNTER_CODE}.goatcounter.com/count?${q}`; } catch { /* non importa */ }
+  const url = `https://${GOATCOUNTER_CODE}.goatcounter.com/count?${q}`;
+  // sendBeacon arriva anche se la pagina si chiude subito dopo (clic su un risultato della ricerca).
+  try { if (navigator.sendBeacon && navigator.sendBeacon(url)) return; } catch { /* si prova con l'immagine */ }
+  try { new Image().src = url; } catch { /* non importa */ }
 }
+
+// Nomi degli eventi contati: solo pagina, risposta e regione scelta, mai le parole scritte
+// (tests/conteggi.test.mjs). La regione («nessuna» se non è scelta) dice dove una pagina non aiuta.
+// «utile-no/esenzione-ticket/lombardia», «ricerca-vuota/sicilia», «ricerca-clic/legge-104».
+const idRegione = (id) => (/^[a-z-]+$/.test(id || '') ? id : 'nessuna');
+export function eventoUtile(risposta, pathname, regioneId) {
+  const p = String(pathname || '/').replace(/index\.html$/, '').replace(/\/?$/, '/');
+  return `utile-${risposta === 'si' ? 'si' : 'no'}${p}${idRegione(regioneId)}`;
+}
+export function eventoRicerca(cosa, regioneId) {
+  return `ricerca-${cosa === 'vuota' ? 'vuota' : 'fatta'}/${idRegione(regioneId)}`;
+}
+export const eventoClic = (modulo) => `ricerca-clic/${/^[a-z0-9/-]+$/.test(modulo || '') ? modulo : 'altro'}`;
+// L'id della regione scelta da chi usa il sito, anche se non ancora attiva ('' se non l'ha scelta).
+// Letto dal browser: alcune pagine non caricano l'elenco delle regioni. idRegione() scarta i valori strani.
+export const idRegioneScelta = () => savedRegione() || '';
 
 export function esc(v) {
   return String(v == null ? '' : v).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -238,8 +257,8 @@ export function renderFooter(root = '') {
 }
 
 // «Questa pagina ti è stata utile?» sopra il piè di pagina, come NHS.uk.
-// Contiamo solo quanti «Sì» e quanti «No» per pagina (evento GoatCounter
-// «utile-si/…» o «utile-no/…»): con «No» si può scriverci un'email, se si vuole. Sotto, la data dell'ultimo controllo.
+// Contiamo solo quanti «Sì» e quanti «No» per pagina e regione (evento GoatCounter
+// «utile-si/…/sicilia» o «utile-no/…/nessuna», vedi eventoUtile()): con «No» si può scriverci un'email, se si vuole. Sotto, la data dell'ultimo controllo.
 function renderFeedback(footer, root) {
   if (document.getElementById('page-feedback')) return;
   footer.insertAdjacentHTML('beforebegin', `<section class="page-feedback" id="page-feedback" aria-labelledby="fb-q"><div class="wrap">
@@ -254,7 +273,7 @@ function renderFeedback(footer, root) {
   box.addEventListener('click', (e) => {
     const b = e.target.closest('button[data-fb]');
     if (!b) return;
-    count(`utile-${b.dataset.fb}${location.pathname}`, { title: `Utile: ${b.dataset.fb === 'si' ? 'Sì' : 'No'} – ${document.title}`, event: true });
+    count(eventoUtile(b.dataset.fb, location.pathname, idRegioneScelta()), { title: `Utile: ${b.dataset.fb === 'si' ? 'Sì' : 'No'} – ${document.title}`, event: true });
     box.innerHTML = b.dataset.fb === 'si'
       ? '<p><strong>Grazie!</strong> Puoi mostrare questa pagina anche a chi ne ha bisogno.</p>'
       : `<p><strong>Ci dispiace.</strong> Se vuoi, <a href="${esc(reportErrorHref(document.title))}">scrivici cosa non andava</a>: si apre il tuo programma di posta e decidi tu se mandare.</p>

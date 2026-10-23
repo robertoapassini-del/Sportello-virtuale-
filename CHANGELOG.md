@@ -2,6 +2,14 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 23/10/2026 — Cosa cercano le persone, in tutta Italia; statistiche anonime della ricerca
+- `docs/ricerche-frequenti.md` riscritto per tutte le regioni: fonti in ordine di valore, come rifare Google Trends per l'Italia e per regione, tabella ricerche → pagina, ricerche ancora senza pagina (pronto soccorso e codice bianco, pensione e assegno di invalidità, certificato di malattia e visita fiscale, stranieri e STP). La ricerca della Sicilia del 19/10/2026 resta in fondo.
+- Statistiche (GoatCounter), mai le parole scritte: «Sì / No» con la regione scelta (`utile-no/<pagina>/<regione>`), `ricerca-fatta/<regione>`, `ricerca-vuota/<regione>` e `ricerca-clic/<modulo>` (`js/common.js`, `js/home.js`). I conteggi partono con `sendBeacon`, così arrivano anche quando si apre un risultato. Pagina privacy aggiornata.
+- Ricerca senza risultati: link «Scrivici cosa cercavi» (email vuota, la scrive la persona).
+- Parole della ricerca: «impegnativa» (CUP), «pensione assegno mensile» (invalidità), «ats asst ausl ulss azienda sanitaria» (Numeri utili). Prima «impegnativa», «ats» e «ulss» non trovavano niente e «pensione invalidità» dava prima l'esenzione ticket.
+- Errore trovato durante la prova: sulle pagine che non caricano l'elenco delle regioni il «No» arrivava senza regione. Ora la regione si legge dal browser.
+- Nuovi controlli: `tests/conteggi.test.mjs` (nomi degli eventi, nessun testo scritto in `count()`, regione senza l'elenco, pagina privacy); 20 ricerche nuove in `tests/ricerca.test.mjs`.
+
 ## 23/10/2026 — Lazio: PEC dell'ASL Roma 2; liste d'attesa, cartella clinica, assistenza a casa e cure palliative accese
 - `data/regioni/lazio/asl.json`, zona Roma 2: PEC protocollo.generale@pec.aslroma2.it. Fonti: PDF dell'ASL «Modulo mancata disdetta» (https://www.aslroma2.it/attachments/Documenti/CUP/Modulo%20mancata%20disdetta.pdf) e elenco PEC delle ASL della Regione Lazio (2021), copie del 23/10/2026. Era l'ultima zona senza indirizzo.
 - `data/regioni/index.json`: nel Lazio accese liste d'attesa, cartella clinica, assistenza a casa e cure palliative.

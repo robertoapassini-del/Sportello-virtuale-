@@ -67,6 +67,27 @@ const CASI = [
   ['prenotare una tac', 'prenotare-cup'],
   ['prenotare risonanza', 'prenotare-cup'],
   ['prenotare ecografia', 'prenotare-cup'],
+  // Ricerche frequenti in tutta Italia (docs/ricerche-frequenti.md, 23/10/2026).
+  ['impegnativa', 'prenotare-cup'],
+  ['disdire prenotazione', 'prenotare-cup'],
+  ['ats', 'numeri-utili'],
+  ['ulss', 'numeri-utili'],
+  ['azienda sanitaria', 'numeri-utili'],
+  ['116117', 'numeri-utili'],
+  ['farmacia di turno', 'numeri-utili'],
+  ['pensione invalidità', 'invalidita'],
+  ['assegno invalidità', 'invalidita'],
+  ['importo accompagnamento', 'accompagnamento'],
+  ['permessi 104', 'legge-104'],
+  ['congedo straordinario', 'legge-104'],
+  ['fascicolo sanitario', 'fascicolo-e-ricetta'],
+  ['ricetta elettronica', 'fascicolo-e-ricetta'],
+  ['cambio medico', 'medico-famiglia'],
+  ['scelta in deroga', 'medico-famiglia'],
+  ['rinnovo esenzione', 'esenzione-ticket'],
+  ['esenzione over 65', 'esenzione-ticket'],
+  ['tessera sanitaria smarrita', 'tessera-sanitaria'],
+  ['pass disabili', 'contrassegno-disabili'],
 ];
 
 test(`almeno 35 ricerche hanno il risultato giusto per primo`, () => {
