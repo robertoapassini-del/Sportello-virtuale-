@@ -267,7 +267,8 @@
     "Copie del 22/10/2026 lette per i moduli (proof «pagina»): cartella clinica (Ufficio cartelle cliniche dell'Ospedale Parini, 0165 543240, martedì e giovedì 8:30–13; richiesta di persona, per posta alla Direzione medica di presidio, Viale Ginevra 3, o per email a ufficiocartellecliniche@ausl.vda.it con il documento; consegna entro 7 giorni se la cartella è disponibile), cure palliative (segreteria 0165 545573, curepalliative@ausl.vda.it, Beauregard; l'ADI-CP si attiva con richiesta alla SS Cure Palliative), protesica (0165 544806, servizio.ausili@ausl.vda.it, via Guido Rey 1; riparazioni 0165 545714 o 0165 545711), screening (0165 231205, screening.inva@invallee.it, via Guido Rey 5). Accesi cartella-clinica, cure-palliative e ausili. Prevenzione ha tutti i dati (numero dello screening) ma resta spenta: il giro generico di tests/browser.cjs clicca la provincia subito dopo il primo pulsante, mentre prevenzione chiede prima sesso ed età, e il percorso si ferma (da correggere nel test, non nei dati).",
     "PUA / cure domiciliari: nessuna copia dà il numero o l'indirizzo di un PUA. La pagina «Assistenza domiciliare (ADI)» è solo la scheda del progetto PNRR; la pagina «Area territoriale» dice che l'ADI la segue l'Area territoriale, senza contatti. Per questo assistenza-domiciliare resta spenta: serve la pagina dei distretti con il punto di accesso (aggiunta in «pagine»).",
     "Le pagine regionali «Assistenza sanitaria» e «Servizi sul territorio» ora si copiano (22/10/2026): elencano le voci (Assistenza domiciliare integrata, Servizi per invalidi civili) ma senza numeri.",
-    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): invalidita, medico, pua. Da leggere quando ci sono le copie."
+    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): invalidita, medico, pua. Da leggere quando ci sono le copie.",
+    "Copie del 23/10/2026: nessun PDF e nessuna pagina nuova con un PUA o un punto di accesso alle cure a casa (la pagina Distretto 1 dà solo i numeri delle Case della Comunità di Aosta e Morgex, non del PUA). assistenza-domiciliare resta spenta. Tolte da «pagine» due pagine che rispondono 404 (vecchia pagina ADI datapage.asp?id=230 e accertamento handicap della Regione); aggiunte (url trovati con il motore di ricerca, nessun dato preso dagli estratti) la pagina ADI su www2.ausl.vda.it e tre pagine della Regione (assistenti sociali, accompagnamento e assistenza, assistenza sanitaria di base), che parlano del PUA."
    ],
    "fast_track": null,
    "how_to": "Chiama il CUP dell'USL allo 0165 548387 (dal lunedì al venerdì 8–16:30) o vai a uno sportello CUP. Chiedi di attivare il «percorso di tutela». Se non ti danno una data in tempo, stampa la lettera e portala all'URP dell'USL (via Guido Rey 1, Aosta) o a uno sportello CUP. Fatti dare una copia con timbro e data.",
@@ -382,10 +383,6 @@
      "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/aderire-alle-campagne-di-screening"
     },
     {
-     "tipo": "pua",
-     "url": "http://www.ausl.vda.it/datapage.asp?id=230"
-    },
-    {
      "tipo": "medico",
      "url": "https://www2.ausl.vda.it/datapage.asp?id=995&l=1"
     },
@@ -394,8 +391,20 @@
      "url": "https://www.regione.vda.it/servsociali/invalidita_civile_i/invalidi_i/default_i.asp"
     },
     {
-     "tipo": "invalidita",
-     "url": "https://www.regione.vda.it/servsociali/invalidita_civile_i/accertamento_handicap/default_i.asp"
+     "tipo": "pua",
+     "url": "https://www2.ausl.vda.it/datapage.asp?id=230&l=1"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.regione.vda.it/servsociali/famiglia/servizi/assistenti_sociali/default_i.asp"
+    },
+    {
+     "tipo": "pua",
+     "url": "https://www.regione.vda.it/servsociali/disabilita/servizi/accompagnamento_integrazione_assistenza_i/default_i.asp"
+    },
+    {
+     "tipo": "regione",
+     "url": "https://www.regione.vda.it/sanita/servizi_territorio/ass_sanitaria/default_i.asp"
     }
    ]
   }

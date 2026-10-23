@@ -82,6 +82,24 @@
      "url": "https://www.asmbasilicata.it/servizio/guardia-medica-servizio-di-continuita-assistenziale/",
      "verified": "2026-10-21",
      "proof": "pagina"
+    },
+    {
+     "topic": "casa",
+     "label": "Cure domiciliari (ADI) dell'ASM, Distretto di Policoro",
+     "number": "0835 986456",
+     "address": "Sede del Distretto, via Moncenisio, Policoro",
+     "url": "https://old.asmbasilicata.it/servizi/Menu/dinamica.aspx?idSezione=616&idArea=17682&idCat=17691&ID=41146&TipoElemento=pagina",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "protesica",
+     "label": "Ufficio protesi dell'ASM, Distretto di Policoro",
+     "number": "0835 986420",
+     "address": "Sede del Distretto, via Moncenisio, Policoro",
+     "url": "https://old.asmbasilicata.it/servizi/Menu/dinamica.aspx?idSezione=616&idArea=17682&idCat=17691&ID=41146&TipoElemento=pagina",
+     "verified": "2026-10-23",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -116,13 +134,17 @@
     {
      "label": "ASM Matera – Modalità di tutela (reclami)",
      "url": "https://www.asmbasilicata.it/modalita-di-tutela/"
+    },
+    {
+     "label": "ASM Matera – Distretto di Policoro (ADI e protesi)",
+     "url": "https://old.asmbasilicata.it/servizi/Menu/dinamica.aspx?idSezione=616&idArea=17682&idCat=17691&ID=41146&TipoElemento=pagina"
     }
    ],
    "last_verified": "2026-10-21",
    "todo": [
     "La pagina guardia medica dell'ASM (pubblicata 16/12/2025) elenca ancora i numeri per comune e non nomina il 116117: non li ho messi perché la Regione dice che il 116117 è attivo in tutta la Basilicata.",
-    "Mancano (copie del 22/10/2026): PUA / cure domiciliari (ADI), cure palliative, protesica, uffici cartelle cliniche, screening dell'ASM. Le pagine sono in «pagine» (cartella clinica, scelta e revoca agli sportelli, anziani e hospice, distretto di Policoro): da leggere dopo la copia.",
-    "Moduli (22/10/2026, secondo giro): acceso solo invalidità. Medico di famiglia e cartella clinica: i dati che i moduli leggono ci sono (scelta_medico dalle pagine ASM e ASP, URP e PEC nelle copie), ma restano spenti: tests/browser.cjs segnala «ASP» fuori dalla Sicilia nel nome ufficiale «ASP Basilicata» (intestazione «Spett.le ASP Basilicata – …», riquadri dei numeri). Serve un'eccezione nel test per «ASP Basilicata» (o un'altra intestazione decisa insieme); poi si accendono tutti e due. Spenti anche: liste d'attesa (la pagina «Modalità di tutela» parla solo di reclami; la pagina liste di attesa del vecchio sito ha solo delibere e tempi), assistenza a casa, cure palliative e ausili (nessun ufficio ADI, palliative o protesi dell'ASM nelle copie)."
+    "Mancano (copie del 23/10/2026): PUA e cure domiciliari di Matera città e degli altri distretti (c'è solo il Distretto di Policoro, vecchio sito), cure palliative, uffici cartelle cliniche, screening dell'ASM. La pagina «cure a casa e hospice» del nuovo sito (dinamica.aspx?ID=18568) risponde 404: tolta da «pagine».",
+    "Terzo giro (copie del 23/10/2026, anche i PDF): acceso assistenza a casa (lettera all'URP o alla PEC di ogni azienda; uffici ADI: 5 sedi dell'ASP, a Matera solo il Distretto di Policoro). Spenti: liste d'attesa (nessuna copia dice il percorso di tutela: la pagina «Liste di attesa» dell'ASP ha solo tempi e delibere, la «Carta dei servizi» dell'ASP, PDF copiato, non ne parla; a Matera «Modalità di tutela» parla solo di reclami), prevenzione (nessun numero degli screening: nella Carta dei servizi dell'ASP ci sono solo gli ambulatori del pap-test di alcuni consultori), cure palliative (nessun ufficio a Matera), ausili (spento fuori dalla Sicilia). Accesi dal secondo giro: invalidità, medico di famiglia e cartella clinica."
    ],
    "pagine": [
     {
@@ -140,10 +162,6 @@
     {
      "tipo": "scelta del medico (sportelli)",
      "url": "https://www.asmbasilicata.it/servizio/scelta-revoca-medico-di-famiglia-4/"
-    },
-    {
-     "tipo": "cure a casa e hospice",
-     "url": "https://www.asmbasilicata.it/servizi/Menu/dinamica.aspx?ID=18568&TipoElemento=categoria&idArea=18563&idCat=18568&idSezione=18562"
     },
     {
      "tipo": "protesica e ADI (Policoro)",
@@ -447,7 +465,7 @@
     "CUP: c'è un unico call center regionale, numero verde 800 814 814 (lunedì–venerdì 7–19, sabato 7–14), confermato da Regione, ASP e ASM. Non ho trovato numeri CUP telefonici propri delle aziende: solo sportelli di persona.",
     "Il numero verde 800 013 504 nella pagina URP dell'ASP è scritto sotto la sede di Lagonegro: non è chiaro se valga per tutta l'ASP.",
     "Mancano: email URP generica dell'ASP (nella pagina PEC c'è la PEC dell'URP rpct_urp@pec.aspbasilicata.it; nelle lettere va la PEC del protocollo, come dice la pagina), ufficio protesica, uffici cartelle cliniche, screening. Pagine di cartella clinica e protesica in «pagine»; la Carta dei servizi (PDF) non è ancora estratta.",
-    "Moduli (22/10/2026, secondo giro): acceso solo invalidità. Medico di famiglia e cartella clinica: i dati che i moduli leggono ci sono (scelta_medico dalle pagine ASM e ASP, URP e PEC nelle copie), ma restano spenti: tests/browser.cjs segnala «ASP» fuori dalla Sicilia nel nome ufficiale «ASP Basilicata» (intestazione «Spett.le ASP Basilicata – …», riquadri dei numeri). Serve un'eccezione nel test per «ASP Basilicata» (o un'altra intestazione decisa insieme); poi si accendono tutti e due. Spenti anche: liste d'attesa (la pagina «Liste di attesa» ha solo tempi e delibere, niente percorso di tutela), ausili (nessun ufficio protesi nelle copie). Assistenza a casa e cure palliative avrebbero i dati qui (centri di coordinamento ADI, PEC curedomiciliari@ e curepalliative@pec.aspbasilicata.it), ma a Matera mancano."
+    "Terzo giro (copie del 23/10/2026, anche i PDF): acceso assistenza a casa (lettera all'URP o alla PEC di ogni azienda; uffici ADI: 5 sedi dell'ASP, a Matera solo il Distretto di Policoro). Spenti: liste d'attesa (nessuna copia dice il percorso di tutela: la pagina «Liste di attesa» dell'ASP ha solo tempi e delibere, la «Carta dei servizi» dell'ASP, PDF copiato, non ne parla; a Matera «Modalità di tutela» parla solo di reclami), prevenzione (nessun numero degli screening: nella Carta dei servizi dell'ASP ci sono solo gli ambulatori del pap-test di alcuni consultori), cure palliative (nessun ufficio a Matera), ausili (spento fuori dalla Sicilia). Accesi dal secondo giro: invalidità, medico di famiglia e cartella clinica."
    ],
    "pagine": [
     {

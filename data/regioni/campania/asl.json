@@ -152,25 +152,50 @@
     {
      "label": "ASL Avellino – Cure domiciliari",
      "url": "https://www.aslavellino.it/index.php/it/per-il-cittadino/cura-e-assistenza/cure-domiciliari-agli-anziani"
+    },
+    {
+     "label": "ASL Avellino – Percorso di tutela aziendale (PDF)",
+     "url": "https://aslavellino.it/images/vz/Tempi_di_attesa/tutela/percorso_di_tutela.pdf"
     }
    ],
-   "last_verified": "2026-10-22",
+   "last_verified": "2026-10-23",
    "todo": [
     "Guardia medica: la pagina ha più di 40 presidi con il loro numero; messi solo Avellino e Ariano Irpino. Gli altri sono sulla pagina.",
     "URP: ogni sede ha anche un secondo numero (Avellino 0825 292165, Ariano 0825 877663, Calitri 0827 203011); i presidi di Montemiletto (0825 963364) non sono messi.",
     "Manca un numero del PUA dei distretti: la pagina del Coordinamento socio-sanitario dà solo lo 0825 292060 dell'ufficio centrale.",
-    "Percorso di tutela: nelle copie non c'è come chiederlo. Aggiunte a «pagine» le pagine «Liste di attesa» della Regione e delle ASL trovate col motore di ricerca. L'ASL Napoli 3 Sud (pagina CUP) dice che le richieste sul percorso di tutela vanno all'URP."
+    "Percorso di tutela (PDF «Percorso di tutela aziendale», copia del 23/10/2026): istanza per email a urp@aslavellino.it con dati anagrafici, telefono ed email, fotocopia della prenotazione, del documento e della tessera sanitaria e della ricetta; niente rimborsi a prestazione già fatta. Il PDF non dice cosa succede dopo e in quanto tempo: what_next vuoto. Liste d'attesa resta spento in Campania finché mancano le altre ASL.",
+    "Screening: messa in «pagine» la pagina «Screening oncologici» dell'ASL (Centrale screening): dopo la copia, il contatto «screening».",
+    "La notizia della Regione Campania sulle liste d'attesa (dati del monitoraggio) risponde 404 al server (copia del 23/10/2026): tolta da «pagine»."
    ],
    "pagine": [
     {
      "tipo": "liste-attesa",
-     "url": "https://www.regione.campania.it/regione/it/news/primo-piano/liste-d-attesa-la-campania-dell-eccellenza-presentati-i-dati-del-monitoraggio-scarica-il-report"
+     "url": "https://aslavellino.it/images/vz/Tempi_di_attesa/tutela/percorso_di_tutela.pdf"
     },
     {
-     "tipo": "liste-attesa",
-     "url": "https://aslavellino.it/images/vz/Tempi_di_attesa/tutela/percorso_di_tutela.pdf"
+     "tipo": "screening",
+     "url": "https://www.aslavellino.it/index.php/it/per-il-cittadino/prevenzione/screening-oncologici"
     }
-   ]
+   ],
+   "channel": "urp",
+   "letter_mode": "email",
+   "send_to": "urp@aslavellino.it",
+   "info_url": "https://aslavellino.it/images/vz/Tempi_di_attesa/tutela/percorso_di_tutela.pdf",
+   "how_to": "Prenota prima al CUP. Se l'ASL non riesce a darti la prima visita o il primo esame nei tempi della classe di priorità (U, B, D, P), chiedi il «percorso di tutela». Manda subito la richiesta per email all'URP: urp@aslavellino.it. Nella richiesta scrivi nome, cognome, data e luogo di nascita, residenza, codice fiscale, telefono ed email.",
+   "documents_required": [
+    "Fotocopia del foglio della prenotazione",
+    "Fotocopia del documento d'identità e della tessera sanitaria",
+    "Fotocopia della ricetta del medico"
+   ],
+   "what_next": [],
+   "notes": [
+    "L'ASL di Avellino non rimborsa dopo una visita già fatta a pagamento, in intramoenia o da un privato. Manda la richiesta prima."
+   ],
+   "details": [
+    "Nell'ASL di Avellino il percorso di tutela vale per chi abita nel territorio dell'ASL, per le prime visite e i primi esami con la ricetta del Servizio sanitario.",
+    "L'ASL prende in carico solo le richieste mandate in questo modo, all'indirizzo urp@aslavellino.it."
+   ],
+   "fast_track": null
   },
   {
    "id": "benevento",
@@ -272,16 +297,19 @@
     "Guardia medica e PUA: le pagine elencano le sedi ma i numeri sono nelle sottopagine, non copiate. Da aggiungere a pagine[] le sottopagine dei PUA dei 5 distretti.",
     "PEC: nelle copie c'è la PEC dell'URP (urp@pec.aslbenevento.it) e quella della direzione del distretto di Benevento (direzione.distrettobn1@pec.aslbenevento.it); la PEC del protocollo generale non è nelle copie.",
     "La vecchia pagina URP (unita-operativa/ufficio-relazioni-con-il-pubblico) dà 404.",
-    "Percorso di tutela: nelle copie non c'è come chiederlo. Aggiunte a «pagine» le pagine «Liste di attesa» della Regione e delle ASL trovate col motore di ricerca. L'ASL Napoli 3 Sud (pagina CUP) dice che le richieste sul percorso di tutela vanno all'URP."
+    "Percorso di tutela: nelle copie non c'è come chiederlo. Aggiunte a «pagine» le pagine «Liste di attesa» della Regione e delle ASL trovate col motore di ricerca. L'ASL Napoli 3 Sud (pagina CUP) dice che le richieste sul percorso di tutela vanno all'URP.",
+    "Screening: nelle copie del 23/10/2026 non c'è il numero dello screening; messa in «pagine» la pagina screening dell'ASL.",
+    "Percorso di tutela: la pagina Liste d'attesa (copia del 23/10/2026) spiega i percorsi di tutela ma non dice a chi scrivere né come.",
+    "La notizia della Regione Campania sulle liste d'attesa (dati del monitoraggio) risponde 404 al server (copia del 23/10/2026): tolta da «pagine»."
    ],
    "pagine": [
     {
      "tipo": "liste-attesa",
-     "url": "https://www.regione.campania.it/regione/it/news/primo-piano/liste-d-attesa-la-campania-dell-eccellenza-presentati-i-dati-del-monitoraggio-scarica-il-report"
+     "url": "https://www.aslbenevento.it/liste-d-attesa"
     },
     {
-     "tipo": "liste-attesa",
-     "url": "https://www.aslbenevento.it/liste-d-attesa"
+     "tipo": "screening",
+     "url": "https://www.aslbenevento.it/notizie/ci-prendiamo-cura-di-te-con-gli-screening-oncologici-gratuiti"
     }
    ]
   },
@@ -434,12 +462,14 @@
     "Guardia medica: nelle copie non c'è una pagina con le sedi e i numeri. Da cercare e aggiungere (guardia_medica_url).",
     "Le pagine del portale salute (portalesalute.aslcaserta.it, ADI distretti 12 e 13) rispondono 403 al server: non copiate.",
     "Telefono e posta elettronica: la pagina ha i numeri di tutti gli uffici dei distretti (PUA, ADI, medicina di base); messi solo alcuni.",
-    "Percorso di tutela: nelle copie non c'è come chiederlo. Aggiunte a «pagine» le pagine «Liste di attesa» della Regione e delle ASL trovate col motore di ricerca. L'ASL Napoli 3 Sud (pagina CUP) dice che le richieste sul percorso di tutela vanno all'URP."
+    "Percorso di tutela: nelle copie non c'è come chiederlo. Aggiunte a «pagine» le pagine «Liste di attesa» della Regione e delle ASL trovate col motore di ricerca. L'ASL Napoli 3 Sud (pagina CUP) dice che le richieste sul percorso di tutela vanno all'URP.",
+    "Screening: nelle copie del 23/10/2026 non c'è il numero dello screening; messa in «pagine» la pagina screening dell'ASL.",
+    "La notizia della Regione Campania sulle liste d'attesa (dati del monitoraggio) risponde 404 al server (copia del 23/10/2026): tolta da «pagine»."
    ],
    "pagine": [
     {
-     "tipo": "liste-attesa",
-     "url": "https://www.regione.campania.it/regione/it/news/primo-piano/liste-d-attesa-la-campania-dell-eccellenza-presentati-i-dati-del-monitoraggio-scarica-il-report"
+     "tipo": "screening",
+     "url": "https://www.aslcaserta.it/index.php/screening-oncologici/"
     }
    ]
   },
@@ -638,6 +668,22 @@
      "url": "https://www.aslnapoli3sud.it/rubrica",
      "verified": "2026-10-22",
      "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "ASL Napoli 3 Sud, Screening e Promozione della Salute: screening del seno (mammografia)",
+     "number": "081 18436545",
+     "url": "https://www.aslnapoli3sud.it/rubrica",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "ASL Napoli 3 Sud, Screening e Promozione della Salute: screening del colon-retto",
+     "number": "081 18436557",
+     "url": "https://www.aslnapoli3sud.it/rubrica",
+     "verified": "2026-10-23",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -685,12 +731,43 @@
     "Guardia medica: ogni distretto ha i suoi presidi con i numeri (Napoli 1 Centro: pagina guardia-medica-emergenza-territoriale; Napoli 3 Sud: continuità assistenziale). Non messi: sono decine.",
     "PUA dell'ASL Napoli 2 Nord: altri distretti (38 Marano 081 18841425 e Quarto 081 18840415, 44, 46, 36) sono sulla pagina.",
     "Percorso di tutela: nelle copie non c'è come chiederlo. Aggiunte a «pagine» le pagine «Liste di attesa» della Regione e delle ASL trovate col motore di ricerca. L'ASL Napoli 3 Sud (pagina CUP) dice che le richieste sul percorso di tutela vanno all'URP.",
-    "Zone (sub_areas, copie del 22/10/2026): Napoli 1 Centro (urpcentrale@aslnapoli1centro.it e PEC urpcentrale@pec.aslna1centro.it, pagina URP), Napoli 2 Nord (urp@aslnapoli2nord.it e PEC protocollo@pec.aslnapoli2nord.it, pagine URP e PUA), Napoli 3 Sud (relazionipubbliche@aslnapoli3sud.it, pagina URP; PEC protocollo@pec.aslnapoli3sud.it, pagine CUP e rubrica). In ogni zona phones e contacts sono quelli della sua ASL. Mancano i comuni di ogni ASL (sotto il pulsante «In quale zona?»): nelle copie non c'è un elenco dei comuni per distretto. Servono le pagine dei distretti delle tre ASL in «pagine»."
+    "Zone (sub_areas, copie del 22/10/2026): Napoli 1 Centro (urpcentrale@aslnapoli1centro.it e PEC urpcentrale@pec.aslna1centro.it, pagina URP), Napoli 2 Nord (urp@aslnapoli2nord.it e PEC protocollo@pec.aslnapoli2nord.it, pagine URP e PUA), Napoli 3 Sud (relazionipubbliche@aslnapoli3sud.it, pagina URP; PEC protocollo@pec.aslnapoli3sud.it, pagine CUP e rubrica). In ogni zona phones e contacts sono quelli della sua ASL. Mancano i comuni di ogni ASL (sotto il pulsante «In quale zona?»): nelle copie non c'è un elenco dei comuni per distretto. Servono le pagine dei distretti delle tre ASL in «pagine».",
+    "Screening (copie del 23/10/2026): per l'ASL Napoli 3 Sud la rubrica dà i numeri della UOC Screening e Promozione della Salute (seno 081 18436545, 081 18436544, 081 18436599; colon-retto 081 18436557, 081 18436505, 081 18436568): messi il primo di ognuno, nella zona Napoli 3. Per Napoli 1 Centro e Napoli 2 Nord messe in «pagine» le pagine screening.",
+    "Percorso di tutela: la pagina CUP dell'ASL Napoli 3 Sud rimanda a www.aslnapoli3sud.it/liste-di-attesa; messa in «pagine» con la «Procedura Tutela» (PDF). Comuni delle zone: messe in «pagine» le pagine dei distretti delle tre ASL.",
+    "La notizia della Regione Campania sulle liste d'attesa (dati del monitoraggio) risponde 404 al server (copia del 23/10/2026): tolta da «pagine»."
    ],
    "pagine": [
     {
+     "tipo": "screening",
+     "url": "https://www.aslnapoli1centro.it/screening-oncologici"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.aslnapoli2nord.it/servizio/screening-oncologici/"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.aslnapoli3sud.it/it/home/screening"
+    },
+    {
      "tipo": "liste-attesa",
-     "url": "https://www.regione.campania.it/regione/it/news/primo-piano/liste-d-attesa-la-campania-dell-eccellenza-presentati-i-dati-del-monitoraggio-scarica-il-report"
+     "url": "https://www.aslnapoli3sud.it/liste-di-attesa"
+    },
+    {
+     "tipo": "liste-attesa",
+     "url": "https://www.aslnapoli3sud.it/documents/20121/0/Procedura+Tutela+(2).pdf/f3cf1bea-c6b7-e05a-cbf2-64babaf443ab?t=1788444382067"
+    },
+    {
+     "tipo": "comuni",
+     "url": "https://www.aslnapoli1centro.it/distretti"
+    },
+    {
+     "tipo": "comuni",
+     "url": "https://www.aslnapoli2nord.it/strutture/distretti/"
+    },
+    {
+     "tipo": "comuni",
+     "url": "https://www.aslnapoli3sud.it/en/l-azienda/chi-siamo"
     }
    ],
    "sub_areas": [
@@ -907,6 +984,22 @@
        "url": "https://www.aslnapoli3sud.it/rubrica",
        "verified": "2026-10-22",
        "proof": "pagina"
+      },
+      {
+       "topic": "screening",
+       "label": "ASL Napoli 3 Sud, Screening e Promozione della Salute: screening del seno (mammografia)",
+       "number": "081 18436545",
+       "url": "https://www.aslnapoli3sud.it/rubrica",
+       "verified": "2026-10-23",
+       "proof": "pagina"
+      },
+      {
+       "topic": "screening",
+       "label": "ASL Napoli 3 Sud, Screening e Promozione della Salute: screening del colon-retto",
+       "number": "081 18436557",
+       "url": "https://www.aslnapoli3sud.it/rubrica",
+       "verified": "2026-10-23",
+       "proof": "pagina"
       }
      ]
     }
@@ -1059,16 +1152,19 @@
     "Cure domiciliari: la pagina ha i numeri di tutti i 13 distretti (60–72); messi solo alcuni. La pagina non dice quali comuni sono in ogni distretto.",
     "Guardia medica: la pagina elenca le sedi di tutti i comuni con il numero; messe solo le due di Salerno.",
     "URP: la pagina ha anche le sedi dei distretti e degli ospedali; messa solo la sede centrale.",
-    "Percorso di tutela: nelle copie non c'è come chiederlo. Aggiunte a «pagine» le pagine «Liste di attesa» della Regione e delle ASL trovate col motore di ricerca. L'ASL Napoli 3 Sud (pagina CUP) dice che le richieste sul percorso di tutela vanno all'URP."
+    "Percorso di tutela: nelle copie non c'è come chiederlo. Aggiunte a «pagine» le pagine «Liste di attesa» della Regione e delle ASL trovate col motore di ricerca. L'ASL Napoli 3 Sud (pagina CUP) dice che le richieste sul percorso di tutela vanno all'URP.",
+    "Screening: nelle copie del 23/10/2026 non c'è il numero dello screening; messa in «pagine» la pagina screening dell'ASL.",
+    "Percorso di tutela: la pagina Liste di attesa (copia del 23/10/2026) ha «Percorso di tutela Procedura - Istanza scaricabile» (file) ma non il suo indirizzo: da trovare e mettere in «pagine».",
+    "La notizia della Regione Campania sulle liste d'attesa (dati del monitoraggio) risponde 404 al server (copia del 23/10/2026): tolta da «pagine»."
    ],
    "pagine": [
     {
      "tipo": "liste-attesa",
-     "url": "https://www.regione.campania.it/regione/it/news/primo-piano/liste-d-attesa-la-campania-dell-eccellenza-presentati-i-dati-del-monitoraggio-scarica-il-report"
+     "url": "https://www.aslsalerno.it/pagina2430_liste-di-attesa.html"
     },
     {
-     "tipo": "liste-attesa",
-     "url": "https://www.aslsalerno.it/pagina2430_liste-di-attesa.html"
+     "tipo": "screening",
+     "url": "https://www.aslsalerno.it/pagina2482_screening-colon-retto.html"
     }
    ]
   }

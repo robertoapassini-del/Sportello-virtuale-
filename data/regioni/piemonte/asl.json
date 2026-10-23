@@ -136,7 +136,7 @@
    "todo": [
     "Il numero 0131 306111 è scritto in fondo al sito accanto alla sede legale, senza la parola «centralino».",
     "Le cure domiciliari non hanno numeri nelle pagine copiate; c'è solo lo sportello unico del Distretto di Valenza.",
-    "Moduli (giro 2, 22/10/2026): acceso medico-famiglia (scelta del medico dalla pagina della Regione, «Il mio medico» di Salute Piemonte, uguale per tutte le ASL). Liste d'attesa, cartella clinica, assistenza a casa, cure palliative e ausili restano spenti per tutto il Piemonte finché l'ASL VCO (sito 403 dal server) non ha email o PEC e il percorso di tutela provati, e finché Biella non ha l'indirizzo per il percorso di tutela.",
+    "Moduli (giro 3, 23/10/2026): accesi anche cartella clinica, assistenza a casa e cure palliative (ora ogni ASL ha una PEC o un'email provata: per l'ASL VCO la PEC protocollo@pec.aslvco.it dal Bollettino della Regione Piemonte n. 46 del 13/11/2025, PDF copiato il 23/10/2026). Liste d'attesa restano spente: mancano il percorso di tutela dell'ASL VCO (aslvco.it chiede un CAPTCHA al server) e l'indirizzo per la domanda all'ASL Biella. Prevenzione resta spenta: il numero dello screening (Prevenzione Serena) è provato solo per Torino; la pagina della Regione è in pagine[].",
     "Percorso di tutela: dalla pagina copiata il 22/10/2026 (email urp@aslal.it). Cartelle cliniche: la pagina «Portale interscambio immagini radiologiche e ritiro cartella clinica online» non è ancora in pagine[]."
    ],
    "pagine": [
@@ -167,6 +167,10 @@
     {
      "tipo": "cartelle",
      "url": "https://www.aslal.it/cartella-integrata-c"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.regione.piemonte.it/web/temi/sanita/prevenzione/prevenzione-serena"
     }
    ],
    "channel": "email",
@@ -327,7 +331,7 @@
    "last_verified": "2026-10-21",
    "todo": [
     "La pagina sulle cure domiciliari dell'ASL Asti non ha numeri (si attivano dal medico di famiglia).",
-    "Moduli (giro 2, 22/10/2026): acceso medico-famiglia (scelta del medico dalla pagina della Regione, «Il mio medico» di Salute Piemonte, uguale per tutte le ASL). Liste d'attesa, cartella clinica, assistenza a casa, cure palliative e ausili restano spenti per tutto il Piemonte finché l'ASL VCO (sito 403 dal server) non ha email o PEC e il percorso di tutela provati, e finché Biella non ha l'indirizzo per il percorso di tutela.",
+    "Moduli (giro 3, 23/10/2026): accesi anche cartella clinica, assistenza a casa e cure palliative (ora ogni ASL ha una PEC o un'email provata: per l'ASL VCO la PEC protocollo@pec.aslvco.it dal Bollettino della Regione Piemonte n. 46 del 13/11/2025, PDF copiato il 23/10/2026). Liste d'attesa restano spente: mancano il percorso di tutela dell'ASL VCO (aslvco.it chiede un CAPTCHA al server) e l'indirizzo per la domanda all'ASL Biella. Prevenzione resta spenta: il numero dello screening (Prevenzione Serena) è provato solo per Torino; la pagina della Regione è in pagine[].",
     "Percorso di tutela: dalla pagina copiata il 22/10/2026 (tempiattesa@asl.at.it o sportelli URP). Mancano pagine copiate su cartelle cliniche, cure palliative e protesica."
    ],
    "pagine": [
@@ -342,6 +346,10 @@
     {
      "tipo": "tutela",
      "url": "https://asl.at.it/focus/percorso-di-tutela-dei-cittadini-assistiti/"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.regione.piemonte.it/web/temi/sanita/prevenzione/prevenzione-serena"
     }
    ],
    "channel": "email",
@@ -497,11 +505,12 @@
    "todo": [
     "La notizia sul 116117 è del 1° luglio 2022 e diceva che i vecchi numeri locali restavano attivi «al momento»: non li ho messi.",
     "La pagina «Prenotare una visita» dell'ASL Biella dà «Pagina non trovata» (404).",
-    "Moduli (giro 2, 22/10/2026): acceso medico-famiglia (scelta del medico dalla pagina della Regione, «Il mio medico» di Salute Piemonte, uguale per tutte le ASL). Liste d'attesa, cartella clinica, assistenza a casa, cure palliative e ausili restano spenti per tutto il Piemonte finché l'ASL VCO (sito 403 dal server) non ha email o PEC e il percorso di tutela provati, e finché Biella non ha l'indirizzo per il percorso di tutela.",
+    "Moduli (giro 3, 23/10/2026): accesi anche cartella clinica, assistenza a casa e cure palliative (ora ogni ASL ha una PEC o un'email provata: per l'ASL VCO la PEC protocollo@pec.aslvco.it dal Bollettino della Regione Piemonte n. 46 del 13/11/2025, PDF copiato il 23/10/2026). Liste d'attesa restano spente: mancano il percorso di tutela dell'ASL VCO (aslvco.it chiede un CAPTCHA al server) e l'indirizzo per la domanda all'ASL Biella. Prevenzione resta spenta: il numero dello screening (Prevenzione Serena) è provato solo per Torino; la pagina della Regione è in pagine[].",
     "Percorso di tutela: la pagina copiata il 22/10/2026 dice di presentare la domanda «all'ASL di appartenenza» con ricetta, modulo privacy, documento e tessera, ma non dice a quale indirizzo (l'email URP è solo per informazioni): letter_mode e send_to non scritti. Alla fine, se non c'è posto, l'ASL deve fare la visita in libera professione (intramoenia).",
     "Cartelle cliniche (pagina copiata il 22/10/2026): Ufficio Documentazione Clinica, Ospedale degli Infermi di Ponderano, lunedì–venerdì 8–13 e 13.30–16; email cartelle.cliniche@aslbi.piemonte.it, PEC direzionesanitariapresidio@cert.aslbi.piemonte.it. Nessun numero di telefono sulla pagina: contatto non messo.",
     "La pagina protesica «ausili-sanitari-tramite-asl» dà 404.",
-    "Percorso di tutela: pagine «tempi di attesa / percorsi di tutela» e modulo di istanza messe in pagine[] (22/10/2026); l'estratto cita tempiattesa@aslbi.piemonte.it solo per informazioni, non usato."
+    "Percorso di tutela: pagine «tempi di attesa / percorsi di tutela» e modulo di istanza messe in pagine[] (22/10/2026); l'estratto cita tempiattesa@aslbi.piemonte.it solo per informazioni, non usato.",
+    "Percorso di tutela (copia del 23/10/2026): la pagina «Percorsi di tutela: informazioni utili» elenca i documenti (ricetta, modulo privacy, documento, tessera) e rimanda al «Modulo ASL di Biella_Percorso di Tutela», ma non dice dove mandare la domanda; la pagina di download copiata non contiene il PDF. Serve l'indirizzo del PDF del modulo in pagine[]."
    ],
    "pagine": [
     {
@@ -547,6 +556,10 @@
     {
      "tipo": "tutela",
      "url": "https://aslbi.piemonte.it/come-fare-per/tempi-di-attesa/"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.regione.piemonte.it/web/temi/sanita/prevenzione/prevenzione-serena"
     }
    ],
    "scelta_medico": {
@@ -736,7 +749,7 @@
    "last_verified": "2026-10-21",
    "todo": [
     "Le pagine sulle cure domiciliari dell'ASL CN1 non hanno numeri; per l'ASL CN2 non c'è una pagina copiata sulle cure domiciliari.",
-    "Moduli (giro 2, 22/10/2026): acceso medico-famiglia (scelta del medico dalla pagina della Regione, «Il mio medico» di Salute Piemonte, uguale per tutte le ASL). Liste d'attesa, cartella clinica, assistenza a casa, cure palliative e ausili restano spenti per tutto il Piemonte finché l'ASL VCO (sito 403 dal server) non ha email o PEC e il percorso di tutela provati, e finché Biella non ha l'indirizzo per il percorso di tutela.",
+    "Moduli (giro 3, 23/10/2026): accesi anche cartella clinica, assistenza a casa e cure palliative (ora ogni ASL ha una PEC o un'email provata: per l'ASL VCO la PEC protocollo@pec.aslvco.it dal Bollettino della Regione Piemonte n. 46 del 13/11/2025, PDF copiato il 23/10/2026). Liste d'attesa restano spente: mancano il percorso di tutela dell'ASL VCO (aslvco.it chiede un CAPTCHA al server) e l'indirizzo per la domanda all'ASL Biella. Prevenzione resta spenta: il numero dello screening (Prevenzione Serena) è provato solo per Torino; la pagina della Regione è in pagine[].",
     "Zone in sub_areas (22/10/2026): ASL CN1 e ASL CN2 Alba-Bra con PEC e URP dalle copie. Percorso di tutela: CN1 dalla pagina «Prenotare visite/esami» (PEC protocollo@aslcn1.legalmailPA.it o URP di Cuneo, Savigliano, Mondovì), CN2 dalla pagina copiata (urp@aslcn2.it)."
    ],
    "pagine": [
@@ -763,6 +776,10 @@
     {
      "tipo": "tutela",
      "url": "https://www.aslcn2.it/liste-di-attesa/tempi-di-attesa-prestazioni-ambulatoriali-giorno-indice/percorsi-di-tutela-disponibili/"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.regione.piemonte.it/web/temi/sanita/prevenzione/prevenzione-serena"
     }
    ],
    "sub_areas": [
@@ -970,7 +987,7 @@
    "todo": [
     "La pagina della guardia medica dell'ASL Novara dà «Pagina non trovata» (404): il 116117 è preso dalla pagina dell'ASL TO3 che dice che vale in tutto il Piemonte; la pagina dell'ASL AL dice che Novara è stata la prima ad attivarlo.",
     "In testa al sito c'è «URP 0321-374111», che è il centralino: ho messo come URP il numero dell'Ufficio Relazioni Esterne.",
-    "Moduli (giro 2, 22/10/2026): acceso medico-famiglia (scelta del medico dalla pagina della Regione, «Il mio medico» di Salute Piemonte, uguale per tutte le ASL). Liste d'attesa, cartella clinica, assistenza a casa, cure palliative e ausili restano spenti per tutto il Piemonte finché l'ASL VCO (sito 403 dal server) non ha email o PEC e il percorso di tutela provati, e finché Biella non ha l'indirizzo per il percorso di tutela.",
+    "Moduli (giro 3, 23/10/2026): accesi anche cartella clinica, assistenza a casa e cure palliative (ora ogni ASL ha una PEC o un'email provata: per l'ASL VCO la PEC protocollo@pec.aslvco.it dal Bollettino della Regione Piemonte n. 46 del 13/11/2025, PDF copiato il 23/10/2026). Liste d'attesa restano spente: mancano il percorso di tutela dell'ASL VCO (aslvco.it chiede un CAPTCHA al server) e l'indirizzo per la domanda all'ASL Biella. Prevenzione resta spenta: il numero dello screening (Prevenzione Serena) è provato solo per Torino; la pagina della Regione è in pagine[].",
     "Percorso di tutela: dalla pagina copiata il 22/10/2026 (ure@asl.novara.it, solo classi B e D). C'è anche un modulo PDF, non copiato. Mancano pagine copiate su cartelle cliniche e cure palliative."
    ],
    "pagine": [
@@ -989,6 +1006,10 @@
     {
      "tipo": "tutela",
      "url": "https://www.asl.novara.it/it/come-fare-per/percorso-tutela-cittadini-assistiti-dallasl-novara-nel-rispetto-tempi-attesa-per-prestazioni"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.regione.piemonte.it/web/temi/sanita/prevenzione/prevenzione-serena"
     }
    ],
    "channel": "email",
@@ -1530,7 +1551,7 @@
     "ASL TO5: i quattro numeri (Chieri, Carmagnola, Moncalieri, Nichelino) sono in testa al sito senza la parola «centralino»; la pagina sulle cure domiciliari è del 2021 e non ha numeri; il PUA non ha numeri nelle copie.",
     "ASL TO4: nelle copie non c'è un numero unico dell'URP, solo i punti di ascolto nelle sedi; i tre numeri di Chivasso/Ciriè/Ivrea sono nella sezione «Contatti» del sito, probabilmente i centralini.",
     "ASL Città di Torino: la pagina PUA non ha numeri; cure domiciliari copiate solo per la zona Nord Est (Circoscrizione 6).",
-    "Moduli (giro 2, 22/10/2026): acceso medico-famiglia (scelta del medico dalla pagina della Regione, «Il mio medico» di Salute Piemonte, uguale per tutte le ASL). Liste d'attesa, cartella clinica, assistenza a casa, cure palliative e ausili restano spenti per tutto il Piemonte finché l'ASL VCO (sito 403 dal server) non ha email o PEC e il percorso di tutela provati, e finché Biella non ha l'indirizzo per il percorso di tutela.",
+    "Moduli (giro 3, 23/10/2026): accesi anche cartella clinica, assistenza a casa e cure palliative (ora ogni ASL ha una PEC o un'email provata: per l'ASL VCO la PEC protocollo@pec.aslvco.it dal Bollettino della Regione Piemonte n. 46 del 13/11/2025, PDF copiato il 23/10/2026). Liste d'attesa restano spente: mancano il percorso di tutela dell'ASL VCO (aslvco.it chiede un CAPTCHA al server) e l'indirizzo per la domanda all'ASL Biella. Prevenzione resta spenta: il numero dello screening (Prevenzione Serena) è provato solo per Torino; la pagina della Regione è in pagine[].",
     "Zone in sub_areas (22/10/2026): ASL Città di Torino, TO3, TO4 e TO5 con PEC, URP e percorso di tutela dalle copie. Cartelle cliniche: TO5 cartellecliniche@aslto5.piemonte.it; TO4 a qualunque Direzione medica di presidio; nessun numero di telefono messo. Città di Torino: la pagina dice che la copia della documentazione si paga (da confrontare con la prima copia gratuita della regola nazionale)."
    ],
    "pagine": [
@@ -1905,14 +1926,18 @@
     {
      "label": "ASL TO3 – Continuità assistenziale (116117 in tutto il Piemonte)",
      "url": "https://www.aslto3.piemonte.it/servizi/guardia-medica/"
+    },
+    {
+     "label": "Bollettino Ufficiale della Regione Piemonte n. 46 del 13/11/2025 – Avviso dell'ASL VCO (PEC e sede legale)",
+     "url": "https://www.regione.piemonte.it/governo/bollettino/abbonati/2025/46/attach/co_azienda%20sanitaria%20locale%20vco_2025-11-03_97606.pdf"
     }
    ],
    "last_verified": "2026-10-21",
    "todo": [
     "Il sito dell'ASL VCO (aslvco.it) ha risposto «403 vietato» a tutte le pagine: mancano centralino, URP, cure domiciliari e la pagina sul trasferimento della guardia medica di Verbania. Da ricopiare.",
-    "Moduli (giro 2, 22/10/2026): acceso medico-famiglia (scelta del medico dalla pagina della Regione, «Il mio medico» di Salute Piemonte, uguale per tutte le ASL). Liste d'attesa, cartella clinica, assistenza a casa, cure palliative e ausili restano spenti per tutto il Piemonte finché l'ASL VCO (sito 403 dal server) non ha email o PEC e il percorso di tutela provati, e finché Biella non ha l'indirizzo per il percorso di tutela.",
+    "Moduli (giro 3, 23/10/2026): accesi anche cartella clinica, assistenza a casa e cure palliative (ora ogni ASL ha una PEC o un'email provata: per l'ASL VCO la PEC protocollo@pec.aslvco.it dal Bollettino della Regione Piemonte n. 46 del 13/11/2025, PDF copiato il 23/10/2026). Liste d'attesa restano spente: mancano il percorso di tutela dell'ASL VCO (aslvco.it chiede un CAPTCHA al server) e l'indirizzo per la domanda all'ASL Biella. Prevenzione resta spenta: il numero dello screening (Prevenzione Serena) è provato solo per Torino; la pagina della Regione è in pagine[].",
     "Percorso di tutela (estratto del 22/10/2026, non usato): email urp@aslvco.it o ai CUP firmando una richiesta. Il sito aslvco.it risponde 403 anche nella copia del 22/10/2026: servono email URP, PEC e la pagina del percorso di tutela da un'altra pagina ufficiale (Regione Piemonte) o una nuova copia.",
-    "PEC dell'ASL VCO: estratti del 22/10/2026 (Bollettino della Regione Piemonte del 13/11/2025 e pagina «Azienda sanitaria locale VCO» della Regione) dicono protocollo@pec.aslvco.it, sede in via Mazzini 117, Omegna; la pagina della Regione dà come sito aslvco.org. Non usato: le pagine sono in pagine[] per la copia del server."
+    "PEC dell'ASL VCO (23/10/2026): protocollo@pec.aslvco.it, sede legale in via Mazzini 117, Omegna, dal PDF del Bollettino della Regione Piemonte n. 46 del 13/11/2025 (avviso dell'ASL, copiato il 23/10/2026). Il sito aslvco.it chiede ancora un CAPTCHA al server: mancano centralino, URP, cure domiciliari e il percorso di tutela. Il PDF «Percorso di tutela del Cittadino prestazioni specialistiche» è in pagine[] (trovato col motore di ricerca, non letto)."
    ],
    "emails": [],
    "pagine": [
@@ -1955,13 +1980,22 @@
     {
      "tipo": "contatti",
      "url": "https://www.regione.piemonte.it/governo/bollettino/abbonati/2025/46/attach/co_azienda%20sanitaria%20locale%20vco_2025-11-03_97606.pdf"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.regione.piemonte.it/web/temi/sanita/prevenzione/prevenzione-serena"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://aslvco.it/wp-content/uploads/2024/11/Percorso-di-tutela-del-Cittadino-prestazioni-specialistiche_ASL-1.pdf"
     }
    ],
    "scelta_medico": {
     "how": "In Piemonte puoi scegliere o cambiare il medico di famiglia o il pediatra online, con il servizio «Il mio medico» di Salute Piemonte. Puoi farlo anche per i figli minorenni. Oppure vai all'ufficio scelta e revoca del distretto della tua ASL. Porta la tessera sanitaria, il codice fiscale e un documento d'identità. Se hai cambiato Comune, porta anche il certificato di residenza.",
     "url": "https://www.salutepiemonte.it/servizi/il-mio-medico?nid=75",
     "url_label": "Il mio medico (Salute Piemonte)"
-   }
+   },
+   "pec": "protocollo@pec.aslvco.it"
   },
   {
    "id": "vercelli",
@@ -2088,7 +2122,7 @@
    "todo": [
     "La pagina «Richiedere assistenza domiciliare» non ha numeri: manca un numero per le cure domiciliari.",
     "Il numero URP 0163 426410 è elencato senza dire la sede: probabilmente Borgosesia (prefisso 0163).",
-    "Moduli (giro 2, 22/10/2026): acceso medico-famiglia (scelta del medico dalla pagina della Regione, «Il mio medico» di Salute Piemonte, uguale per tutte le ASL). Liste d'attesa, cartella clinica, assistenza a casa, cure palliative e ausili restano spenti per tutto il Piemonte finché l'ASL VCO (sito 403 dal server) non ha email o PEC e il percorso di tutela provati, e finché Biella non ha l'indirizzo per il percorso di tutela.",
+    "Moduli (giro 3, 23/10/2026): accesi anche cartella clinica, assistenza a casa e cure palliative (ora ogni ASL ha una PEC o un'email provata: per l'ASL VCO la PEC protocollo@pec.aslvco.it dal Bollettino della Regione Piemonte n. 46 del 13/11/2025, PDF copiato il 23/10/2026). Liste d'attesa restano spente: mancano il percorso di tutela dell'ASL VCO (aslvco.it chiede un CAPTCHA al server) e l'indirizzo per la domanda all'ASL Biella. Prevenzione resta spenta: il numero dello screening (Prevenzione Serena) è provato solo per Torino; la pagina della Regione è in pagine[].",
     "Percorso di tutela: dalla pagina copiata il 22/10/2026 (email URP, PEC, raccomandata o sportello URP). Cartelle cliniche (pagina copiata): Ufficio Cartelle cliniche, lunedì–venerdì 8–16.30, email cartelle.cliniche.vc@aslvc.piemonte.it; nessun numero di telefono sulla pagina."
    ],
    "pagine": [
@@ -2111,6 +2145,10 @@
     {
      "tipo": "palliative",
      "url": "https://aslvc.piemonte.it/organizzazione/direzione-sanitaria/sc-distretto/ssdu-cure-palliative-e-hospice/"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.regione.piemonte.it/web/temi/sanita/prevenzione/prevenzione-serena"
     }
    ],
    "channel": "email",

@@ -127,7 +127,7 @@
   }
  ],
  "todo": [
-  "Riforma della disabilità: regime letto solo negli estratti delle notizie INPS (22/10/2026, prova «estratto»); rileggere per intero le pagine INPS delle fonti da una connessione italiana. Il server non le copia: tools/copie.mjs copia solo provinces[].url di inps.json.",
-  "Regime null per Gallura (Olbia), Ogliastra (Lanusei), Medio Campidano (Sanluri) e Sulcis Iglesiente (Carbonia): gli elenchi INPS dicono «Sassari» e «Cagliari» ma non dicono se valgono anche per i territori delle nuove province sarde. Chiedere all'INPS o a un patronato. Finché c'è un null il modulo invalidità resta spento per la Sardegna."
+  "Riforma della disabilità: le tre notizie INPS delle fonti (avvio della sperimentazione, seconda e terza fase) ora sono copiate dal server (copie del 23/10/2026). Dicono: dal 01/01/2025 «Sassari», dal 01/03/2026 «Cagliari»; Nuoro e Oristano non ci sono.",
+  "Regime null per Gallura (Olbia), Ogliastra (Lanusei), Medio Campidano (Sanluri) e Sulcis Iglesiente (Carbonia): le notizie INPS copiate dicono «Sassari» e «Cagliari» ma non dicono se valgono anche per i territori delle nuove province sarde; le pagine delle sedi INPS hanno solo la voce di menu «Riforma della disabilità». Chiedere all'INPS o a un patronato. Finché c'è un null il modulo invalidità resta spento per la Sardegna."
  ]
 }

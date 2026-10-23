@@ -269,6 +269,10 @@ di aziende sanitarie. Lo facciamo in tre pezzi, ognuno con un compito solo:
    la prima volta lo scarica da npm (versione fissa) e controlla la sua impronta sha512; serve Node 20. Così basta
    una pull request, senza entrare nel server. Se manca anche pdf.js, i PDF sono segnati e basta («file, non
    controllato»). `pdftotext` resta il migliore: `sudo apt-get install -y poppler-utils`. DOC, XLS e ZIP non si copiano.
+   I link ai PDF di ogni pagina copiata (stesso dominio, al massimo 30) sono nell'indice, in `link_pdf` (indirizzo e testo
+   del link): da lì si prendono gli indirizzi dei moduli da mettere in `pagine[]`. Quelli che sembrano moduli o guide
+   (tutela, modulo, istanza, carta dei servizi, liste d'attesa, screening…) si copiano subito, al massimo 5 per pagina,
+   con `da_pagina` = la pagina che li linka.
    Si presenta con nome e sito nel `User-Agent`, una pagina alla volta, una pausa tra una pagina e l'altra, mai
    portali di prenotazione, login o CAPTCHA. Se un'ASL chiede di smettere, si toglie dalla lista.
    **Copia a richiesta, senza aspettare la notte:** `tools/copie-se-serve.sh` gira sul server ogni 15 minuti.
