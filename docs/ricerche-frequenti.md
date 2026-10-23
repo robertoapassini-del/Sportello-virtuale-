@@ -1,162 +1,259 @@
-# Cosa cercano le persone (ottobre 2026)
+# Cosa cercano le persone
 
-Ricerca fatta il 19/10/2026 per decidere quali pagine aggiungere o migliorare. Da rifare ogni 3–6 mesi.
+Questo documento serve a decidere quali pagine aggiungere o migliorare. Dal 22/10/2026 il sito copre tutte le 20
+regioni: la prima ricerca (19/10/2026) era fatta solo sulla Sicilia ed è riassunta in fondo.
 
-## Fonti usate
+Ultimo aggiornamento: 23/10/2026. Da rifare ogni 3 mesi, o quando cambia molto il numero di visite.
 
-- **Google Trends**, regione **Sicilia**, ultimi 12 mesi. I numeri sono relativi: 100 è il termine più cercato nel
-  confronto, non un numero di ricerche.
-- **Google Search Console** (guidasanita.it): ancora nessun dato, il sito è appena stato aggiunto. Ricontrollare
-  tra 2–4 settimane.
-- **GoatCounter**, ultima settimana: 74 visite, 1 sola da Google. Circa l'80% da telefono (iOS + Android).
-- **Ricerca web**: Rapporto civico sulla salute 2025 di Cittadinanzattiva, Istat, notizie siciliane, guide
-  generaliste. Le fonti sono in fondo. **Non ci sono dati di volume** per le singole domande.
+## 1. Le fonti, in ordine di valore
 
-## 1. Le parole che la gente usa davvero (Google Trends, Sicilia)
+1. **Search Console** (guidasanita.it), *Rendimento → Query*. Dice con quali parole il sito compare su Google,
+   anche quando nessuno clicca. Proprietà aggiunta il 19/10/2026: i primi dati utili arrivano a metà novembre.
+   Non divide per regione, ma le parole spesso la dicono («asl roma 1», «cup lombardia»).
+2. **GoatCounter**, le statistiche del sito (vedi il punto 2 qui sotto). Dicono cosa succede *dentro* il sito.
+3. **Google Trends**: dice cosa cerca la gente in generale, anche quello che il sito non tratta ancora. I numeri
+   sono relativi: 100 è il termine più cercato nel confronto, non un numero di ricerche.
+4. **Email** a info@guidasanita.it dal link «Scrivici cosa cercavi» (ricerca senza risultati) e dal «No» a
+   «Ti è stata utile?».
 
-Primo confronto, media su 12 mesi:
+## 2. Cosa contano le statistiche del sito
 
-| Termine                | Media |
-|------------------------|------:|
-| legge 104              | 44    |
-| guardia medica         | 40    |
-| invalidità civile      | 24    |
-| esenzione ticket       | 19    |
-| liste d'attesa         | 0     |
+Mai le parole scritte (lo promette la pagina privacy, lo controlla `tests/conteggi.test.mjs`). Gli eventi:
 
-Secondo confronto, media su 12 mesi:
+| Evento GoatCounter                    | Quando                                                        | Cosa ci dice                              |
+|---------------------------------------|---------------------------------------------------------------|-------------------------------------------|
+| `utile-si/<pagina>/<regione>`         | «Sì» a «Ti è stata utile?»                                    | la pagina aiuta, in quella regione        |
+| `utile-no/<pagina>/<regione>`         | «No» a «Ti è stata utile?»                                    | la pagina non aiuta, in quella regione    |
+| `ricerca-fatta/<regione>`             | una ricerca di almeno 3 lettere (una volta per pagina aperta) | quanti usano la ricerca                   |
+| `ricerca-vuota/<regione>`             | la ricerca resta senza risultati (una volta per pagina aperta)| quanto spesso la ricerca delude           |
+| `ricerca-clic/<modulo>`               | si apre un risultato della ricerca                            | cosa si cerca di più dentro il sito       |
 
-| Termine                     | Media |
-|-----------------------------|------:|
-| legge 104                   | 46    |
-| fascicolo sanitario         | 34    |
-| cambio medico               | 26    |
-| prenotazione cup            | 12    |
-| indennità di accompagnamento| 1     |
+`<regione>` è l'id della regione scelta (`lombardia`, `valle-d-aosta`…) o `nessuna`. Gli eventi `utile-…` fino al
+22/10/2026 non avevano la regione: per i totali di una pagina si sommano le due forme.
 
-Terzo confronto, media su 12 mesi:
+**Come leggerli** (GoatCounter → filtro per nome):
 
-| Termine                 | Media |
-|-------------------------|------:|
-| tessera sanitaria       | 44    |
-| legge 104               | 34    |
-| pronto soccorso         | 33    |
-| medico di base          | 22    |
-| certificato di malattia | 4     |
+- `ricerca-vuota` diviso `ricerca-fatta`: se supera 1 su 5, guardare le email «Non ho trovato» e la tabella del
+  punto 4.
+- `utile-no` di una pagina in una regione molto più alto che nelle altre: i dati di quella regione mancano o
+  sono sbagliati. Controllare `data/regioni/<regione>/` e il `todo`.
+- `ricerca-clic`: i moduli più aperti dalla ricerca sono quelli che la gente non trova nei menu. Valutare se
+  metterli tra i «più cercati» della home.
 
-Quarto confronto, media su 12 mesi:
+## 3. Google Trends: come rifare la ricerca
 
-| Termine            | Media |
-|--------------------|------:|
-| medico di base     | 70    |
-| asp con te         | 40    |
-| medico di famiglia | 22    |
-| tempi di attesa    | 1     |
-| percorso di tutela | 0     |
+Sempre con **«legge 104»** come termine di riferimento, così i numeri si confrontano tra una volta e l'altra.
 
-**Cosa ci dice:**
+1. **Italia, ultimi 12 mesi.** Rifare i quattro confronti della Sicilia (punto 6) con «Italia». Poi un confronto
+   con i temi che il sito non ha ancora: «certificato di malattia», «visita fiscale», «guardia medica»,
+   «pronto soccorso», «codice STP».
+2. **Per regione.** Per ogni tema forte («prenotazione cup», «cambio medico», «esenzione ticket», «fascicolo
+   sanitario») aprire «Interesse per regione» e le «Query associate» di 4–5 regioni grandi (Lombardia, Lazio,
+   Campania, Sicilia, Veneto, Emilia-Romagna, Puglia). Lì escono i nomi locali: il nome dell'azienda con la città
+   («asl napoli 1», «ats milano»), il portale o l'app della Regione.
+3. Scrivere qui sotto le tabelle, con la data. I nomi locali **non** vanno nelle pagine finché non c'è la fonte
+   ufficiale nei file `data/regioni/` (`docs/regola-numeri.md`, `docs/regioni.md`).
 
-- **«Medico di base», non «medico di famiglia».** In Sicilia si cerca «medico di base» circa 3 volte di più. Oggi
-  la frase «medico di base» non compare in nessuna pagina del sito.
-- **Nessuno cerca «liste d'attesa», «tempi di attesa» o «percorso di tutela».** Le persone cercano lo strumento:
-  «prenotazione cup», «sovracup palermo», «asp con te». La pagina delle liste d'attesa deve contenere queste parole.
-- **«ASP con te»** (l'app dell'ASP di Catania) è molto cercata ed è legata a esenzione ticket, CUP, medico e
-  fascicolo. Il sito non la nomina mai.
-- **Tessera sanitaria, fascicolo sanitario, pronto soccorso e guardia medica** sono cercati molto. Il sito ne
-  parla solo dentro altre pagine o nei numeri utili.
-- **Picchi stagionali:**
-  - **guardia medica**: Natale e Ferragosto, quando il medico di base non c'è;
-  - **esenzione ticket**: gennaio e aprile (rinnovi);
-  - **legge 104**: settembre (notizie di novità INPS).
+**Picchi stagionali** già visti in Sicilia, da controllare in tutta Italia: guardia medica a Natale e a
+Ferragosto; esenzione ticket a gennaio e aprile (rinnovi); legge 104 a settembre (notizie INPS).
 
-### Ricerche in crescita (Google Trends, «query associate»)
+## 3b. Risultati: Italia, 23/10/2026
 
-| Tema                | Ricerche in crescita                                                                                  |
-|---------------------|-------------------------------------------------------------------------------------------------------|
-| esenzione ticket    | «rinnovo esenzione ticket 2026», «esenzione ticket over 65», «delega per esenzione ticket», «asp con te» |
-| medico di base      | «scelta in deroga medico di base», «scelta del medico di base online», «sportello.asppalermo.org cambio medico», «cambio medico di base vicino a me» |
-| invalidità civile   | «pensione / assegno invalidità civile 2026», «limite reddito invalidità civile 2026»                  |
-| accompagnamento     | «aumento indennità di accompagnamento 2026», «indennità di accompagnamento importo»                   |
-| legge 104           | «permessi doppi», «bonus 300 euro legge 104», «novità 2026 inps»                                      |
-| tessera sanitaria   | «ho smarrito la tessera sanitaria cosa devo fare»                                                     |
-| guardia medica      | «guardia medica + nome del paese», «farmacia di turno oggi»                                           |
-| pronto soccorso     | «pronto soccorso pediatrico vicino a me»                                                              |
-| certificato malattia| «consulta / scaricare certificato di malattia»                                                        |
+Google Trends, Italia, 23/10/2025 – 23/10/2026, tutte le categorie, Ricerca Google, sempre «Termine di
+ricerca». Raccolti dal proprietario con Claude in Chrome, dai dati che la pagina carica per il grafico (le medie
+sono quelle a sinistra del grafico). Ottobre 2025 conta solo l'ultima settimana.
 
-## 2. Cosa migliorare nelle pagine che ci sono già
+### Confronti
 
-1. **Medico di famiglia** (`medico-famiglia/`)
-   - Aggiungere «medico di base» nel titolo e nel testo, per esempio «Cambiare medico di base (medico di
-     famiglia) o pediatra».
-   - Coprire la **scelta in deroga** (un medico fuori dal proprio ambito).
-   - Mettere il link al servizio online di ogni ASP: Sportello ASP Palermo, «Cambio Medico» Messina, Ragusa online,
-     Catania via email.
-   - Rispondere a «il mio medico è andato in pensione, cosa faccio?».
-2. **Liste d'attesa** (`liste-attesa/`)
-   - Usare le parole «prenotazione CUP», «SovraCUP» e «ASP con te», non solo «percorso di tutela».
-   - Spiegare se **rifiutare la prima data proposta** fa perdere la priorità.
-3. **Esenzione ticket** (`esenzione-ticket/`)
-   - Spiegare il **rinnovo** (si rinnova da solo o no? quando?) e la **delega**.
-   - Spiegare la richiesta tramite **ASP con te**.
-   - Usare la frase «esenzione ticket over 65».
-4. **Invalidità** (`invalidita/`, `invalidita-aiuti/`)
-   - Chiarire che invalidità, **legge 104**, **accompagnamento** e **contrassegno disabili** sono riconoscimenti
-     distinti.
-   - Indicare importi e limiti di reddito dell'anno in corso: sono le ricerche in crescita.
-5. **Cartella clinica** (`cartella-clinica/`)
-   - Aggiungere «come vedo i referti sul fascicolo sanitario».
-6. **Numeri utili** (`numeri-utili/`)
-   - È la pagina giusta per **guardia medica**, **farmacia di turno** e **116117**.
-   - Spiegare con chiarezza se il 116117 funziona già in Sicilia (vedi «Da verificare»).
+| Confronto | Termine                      | Media | Picco (settimana, valore)        | Mesi più alti                 |
+|-----------|------------------------------|------:|----------------------------------|-------------------------------|
+| 1         | legge 104                    | 28    | 20–26 set 2026 (59)              | set 2026, fine ott 2025       |
+| 1         | guardia medica               | 39    | 21–27 dic 2025 (100)             | dic 2025, ago, lug 2026       |
+| 1         | invalidità civile            | 15    | 20–26 set 2026 (35)              | set, mar 2026                 |
+| 1         | esenzione ticket             | 8     | 29 mar – 4 apr 2026 (22)         | apr, mar 2026                 |
+| 1         | prenotazione cup             | 10    | 12–18 apr 2026 (13)              | quasi piatto                  |
+| 2         | legge 104                    | 16    | 20–26 set 2026 (34)              | set 2026, fine ott 2025, lug  |
+| 2         | fascicolo sanitario          | 75    | 18–24 ott 2026 (100)             | ott, mar, giu 2026            |
+| 2         | cambio medico                | 7     | 9, in 4 settimane                | piatto                        |
+| 2         | tessera sanitaria            | 21    | 19–25 apr 2026 (53)              | apr, mag, giu 2026            |
+| 2         | pronto soccorso              | 25    | 19–25 lug 2026 (43)              | ago, lug, giu 2026            |
+| 3         | legge 104                    | 48    | 20–26 set 2026 (100)             | set 2026, fine ott 2025, lug  |
+| 3         | medico di base               | 55    | 18–24 ott 2026 (74)              | ott, set, gen 2026            |
+| 3         | certificato di malattia      | 9     | 14–20 dic 2025 (13)              | ott, gen, set 2026            |
+| 3         | visita fiscale               | 11    | 14–20 dic 2025 (18)              | nov 2025, gen, mar 2026       |
+| 3         | indennità di accompagnamento | 2     | dic 2025 (4)                     | nov 2025 – gen 2026           |
 
-## 3. Pagine nuove possibili (in ordine di priorità)
+**Classifica**, con «legge 104» = 1 (media della parola diviso la media di «legge 104» nello stesso confronto):
 
-Ordine deciso mettendo insieme Google Trends e i problemi segnalati dai cittadini.
+| Tema                    | Volte legge 104 | Pagina oggi                                  |
+|-------------------------|----------------:|----------------------------------------------|
+| fascicolo sanitario     | 4,7             | `fascicolo-e-ricetta/`, ma senza il link della Regione (c'è solo per la Sicilia) |
+| pronto soccorso         | 1,6             | nessuna (solo `numeri-utili/`)               |
+| guardia medica          | 1,4             | nessuna (solo `numeri-utili/`)               |
+| tessera sanitaria       | 1,3             | `tessera-sanitaria/`                         |
+| medico di base          | 1,1             | `medico-famiglia/`                           |
+| legge 104               | 1               | `legge-104/`                                 |
+| invalidità civile       | 0,5             | `invalidita/`                                |
+| cambio medico           | 0,4             | `medico-famiglia/`                           |
+| prenotazione cup        | 0,4             | `prenotare-cup/`                             |
+| esenzione ticket        | 0,3             | `esenzione-ticket/`                          |
+| visita fiscale          | 0,2             | nessuna                                      |
+| certificato di malattia | 0,2             | nessuna                                      |
+| accompagnamento         | 0,04            | `accompagnamento/`                           |
 
-1. **Tessera sanitaria**: scaduta, smarrita, non arrivata, uso all'estero (TEAM).
-2. **Fascicolo sanitario elettronico in Sicilia**: come attivarlo, perché non vedo i referti, ricetta elettronica.
-   Dal 31/03/2026 tutte le strutture devono caricare i referti; in Sicilia lo usa pochissima gente.
-3. **Legge 104**: permessi, congedo straordinario, differenza con l'invalidità.
-4. **Pronto soccorso e guardia medica**: quando andare, cosa significano i codici colore, quanto si paga con il
-   codice bianco, chi chiamare di notte e nei festivi.
-5. **Prenotare, spostare e disdire al CUP / SovraCUP**, e se si paga quando non si disdice.
-6. **Indennità di accompagnamento**: pagina propria, oggi è solo dentro l'invalidità.
-7. **Cure fuori dalla Sicilia**: rimborso di viaggio e soggiorno (L.R. 202/1979).
-8. **Contrassegno disabili e parcheggio.**
-9. **Dopo il ricovero**: RSA e lungodegenza, cosa fare se a casa non ce la si fa.
-10. Psicologo e salute mentale, dentista nel SSN, certificato di malattia e visita fiscale, stranieri e codice STP.
+### Query associate (Italia, Lombardia, Lazio, Campania, Veneto, Puglia, Emilia-Romagna, Sicilia)
 
-## 4. Da verificare a mano prima di scrivere
+Le prime 5 di ogni lista. Tra parentesi il valore («Più popolari») o la crescita («In aumento»).
 
-Questi dati vengono dalla ricerca web e non sono controllati:
+**Prenotazione CUP**
+- Italia: cup online prenotazione (100), cup online (92), prenotazione cup toscana (42), numero prenotazione cup
+  (36). In aumento: puglia salute prenotazione (+110%), centro unico di prenotazione (+70%), salute lazio (+60%),
+  salute piemonte (+50%).
+- Lombardia: cup lombardia (100), prenotazione cup online (73), numero prenotazione cup (54).
+- Lazio: cup lazio (100), prenotazione online (50), cup roma (40). In aumento: salute lazio (+90%).
+- Campania: prenotazione cup online (100), cup online (96), numero prenotazione cup (89). Solo 4 query.
+- Veneto: prenotazione cup online (100), numero prenotazione cup (46), disdire prenotazione cup (25). In aumento:
+  disdire prenotazione cup (+50%).
+- Puglia: puglia salute prenotazione (100), numero prenotazione cup (90), disdetta prenotazione cup (43). In
+  aumento: annullare prenotazione cup (+200%).
+- Emilia-Romagna: prenotazione cup bologna (100), numero prenotazione cup (94), stampa prenotazione cup (84). In
+  aumento: disdire prenotazione cup (+80%), numero verde prenotazione cup (+70%).
+- Sicilia: cup palermo (100), cup online (90), cup policlinico (45). In aumento: sovracup palermo (+80%).
 
-- [ ] Ticket del pronto soccorso per il codice bianco in Sicilia: 25 € secondo una fonte datata.
-- [ ] Il **116117** è già attivo in Sicilia? La L.R. 11 del 24/04/2026 finanzia le centrali di Palermo e Catania.
-- [ ] Esiste in Sicilia una sanzione per chi non disdice la prenotazione al CUP?
-- [ ] Come si entra in RSA in Sicilia (valutazione UVM): procedura e costi.
+**Cambio medico**
+- Italia: cambio medico base (100), cambio medico asl (31), cambio medico online (30). In aumento: cambio medico
+  di base vicino a me (+300%), salute lazio cambio medico di base (+110%), toscana salute cambio medico (+70%),
+  cambio medico online fvg (+70%), sinfonia cambio medico (+60%).
+- «cambio medico di base vicino a me» cresce in tutte le regioni tranne la Puglia.
+- «fascicolo sanitario cambio medico» è tra le prime in Lombardia, Lazio, Veneto, Emilia-Romagna e Sicilia: in
+  molte regioni il medico si cambia dal fascicolo.
+- Nomi locali: Lazio «salute lazio» e «asl roma»; Campania «sinfonia»; Veneto «ulss 3/6/9» e «sanità km zero»;
+  Puglia «pugliasalute»; Sicilia «asp» (100) e «asp palermo».
 
-## 5. Come continuare a misurare
+**Esenzione ticket**
+- Italia: reddito esenzione ticket (100), esenzione ticket per reddito (76), esenzione ticket online (58), asl
+  esenzione ticket (51). In aumento: rinnovo esenzione ticket 2026 e rinnovo online 2026 (Impennata), asp con te
+  (+1.050%), sinfonia (+90%), esenzione ticket over 65 (+60%), codice e01 (+50%), certificato esenzione (+40%).
+- Lazio: esenzione ticket over 65 (+450%), quando scade esenzione ticket (+50%).
+- Sicilia: delega per esenzione ticket (+300%), asp con te (Impennata), esenzione e02 (+40%).
+- In molte regioni la prima ricerca è «esenzione ticket» + nome della regione.
 
-- **Search Console**: fra 2–4 settimane guardare *Rendimento → Query*. Mostra le ricerche con cui il sito
-  compare su Google, anche quando nessuno clicca: quelle sono le pagine da migliorare per prime.
-- **GoatCounter**: `/visite-esami` e `/visite-esami/index.html` vengono contati come due pagine diverse. Va bene,
-  ma per leggere i numeri bisogna sommarli.
-- **Google Trends**: rifare i confronti con «legge 104» come termine di riferimento, così i numeri restano
-  confrontabili tra una volta e l'altra.
+**Fascicolo sanitario**
+- In tutte le regioni la prima ricerca è «fascicolo sanitario» + nome della regione: la gente cerca il portale
+  della propria Regione.
+- In aumento: come accedere al fascicolo sanitario (+50%), fascicolo sanitario login, accedi con CIE (Lombardia
+  +600%), fse, fascicolo sanitario 2.0 (Campania +300%), doctolib (Lazio, Veneto, Emilia-Romagna).
+- Nomi locali: Puglia «puglia salute», Lazio «salute lazio», Veneto «sanità km zero», Sicilia «cefpas» (Impennata)
+  e «asp con te».
+- Nota sulla Sicilia: nella lista «Più popolari» la riga 10 ripeteva la 9 per un errore di copia; sono 9 query.
 
-## Fonti principali
+### Cosa ci dice
 
-- Cittadinanzattiva, Rapporto civico sulla salute 2025:
-  - <https://tg24.sky.it/salute-e-benessere/2025/12/18/sanita-liste-attesa-allarme-cittadinanzattiva>
-  - <https://www.lasicilia.it/news/cronaca/3010016/sanita-in-sicilia-aspettare-e-diventata-la-regola-e-la-regione-non-fornisce-i-dati-sui-tempi-effettivi-delle-liste-d-attesa.html>
-- Istat, rinuncia alle cure 2024: <https://www.dire.it/06-11-2025/1193696-aumentano-italiani-che-rifiutano-curarsi-istat-sono-quasi-6-milioni-primo-motivo-lunghe-attese/>
-- Medici di base a Palermo: <https://www.blogsicilia.it/comunicati-stampa/carenza-di-medici-di-base-a-palermo-lallarme-di-cittadinanzattiva/1223472/>
-- 116117 in Sicilia:
-  - <https://www.regione.sicilia.it/la-regione-informa/servizio-cure-non-urgenti-dieci-milioni-realizzare-due-sedi-operative-sicilia>
-  - <https://www.balarm.it/news/anche-in-sicilia-se-stai-male-arriva-il-116-117-da-quando-e-attivo-il-nuovo-numero-157470>
-- Fascicolo sanitario in Sicilia:
-  - <https://www.blogsicilia.it/oltrelostretto/fascicolo-sanitario-elettronico-2-0-obbligo-31-marzo-2026/1242992/>
-  - <https://qds.it/fascicolo-sanitario-elettronico-sicilia-in-ritardo/>
-- Ticket del pronto soccorso per regione: <https://www.quotidianosanita.it/insights/ticket-pronto-soccorso-quanto-si-paga-regione-per-regione/>
-- Cure fuori regione: <https://www.lasicilia.it/news/attualita/3049752/la-fuga-per-la-vita-l-esodo-silenzioso-dei-malati-oncologici-siciliani-verso-le-strutture-del-nord.html>
-- Contrassegno disabili: <https://www.lasicilia.it/news/cronaca/3038176/pass-disabili-e-pass-rosa-per-circolazione-e-parcheggi-riservati-come-richiederli-con-pratiche-semplici-e-digitali.html>
+1. **Il fascicolo sanitario è il tema più cercato**, quasi 5 volte la legge 104. La gente vuole il link del
+   fascicolo della propria Regione, ma il sito lo ha solo per la Sicilia (`link.fse` in
+   `data/regioni/index.json`). Le copie del server (branch `copie-siti`) hanno già pagine ufficiali del fascicolo
+   per 16 regioni: mancano Friuli-Venezia Giulia, Lombardia, Veneto e la Sicilia stessa.
+2. **Pronto soccorso e guardia medica insieme valgono 3 volte la legge 104** e non hanno una pagina. Picchi: guardia
+   medica a Natale e in estate, pronto soccorso d'estate.
+3. **Le persone cercano lo strumento online**: «cup online», «cambio medico online», «esenzione ticket online».
+   Ogni pagina deve portare subito al servizio online della Regione o dell'azienda.
+4. **«Numero prenotazione cup»** è tra le prime ricerche in quasi tutte le regioni: il numero del CUP della propria
+   azienda deve essere in alto nella pagina del CUP.
+5. **Disdire e annullare** una prenotazione crescono (Veneto, Puglia, Emilia-Romagna).
+6. **I portali regionali hanno un nome** (Salute Lazio, Puglia Salute, Sinfonia in Campania, Sanità km zero in
+   Veneto, Toscana Salute, Salute Piemonte, ASP con te in Sicilia). Vanno nei dati solo dopo la copia della pagina
+   ufficiale; poi nelle parole chiave della ricerca, come «aspconte».
+7. **Accompagnamento** si cerca poco con questo nome (0,04): la gente lo cerca dentro «invalidità civile».
+
+## 4. Ricerche e pagine: cosa c'è e cosa manca
+
+Ogni ricerca di questa tabella che ha una pagina è anche in `tests/ricerca.test.mjs`: se la ricerca della home
+smette di portare alla pagina giusta, il test fallisce. Una riga nuova qui = una riga nuova nel test.
+
+### Ricerche che hanno già una pagina
+
+| Ricerca                                         | Pagina                  |
+|-------------------------------------------------|-------------------------|
+| legge 104, permessi 104, congedo straordinario  | `legge-104/`            |
+| invalidità civile, pensione/assegno invalidità  | `invalidita/`           |
+| indennità di accompagnamento, importo           | `accompagnamento/`      |
+| esenzione ticket, rinnovo, over 65, delega      | `esenzione-ticket/`     |
+| medico di base, cambio medico, scelta in deroga | `medico-famiglia/`      |
+| prenotazione CUP, disdire, impegnativa          | `prenotare-cup/`        |
+| liste d'attesa, visita troppo lontana           | `liste-attesa/`         |
+| tessera sanitaria smarrita, scaduta, TEAM       | `tessera-sanitaria/`    |
+| fascicolo sanitario, ricetta elettronica        | `fascicolo-e-ricetta/`  |
+| guardia medica, 116117, farmacia di turno       | `numeri-utili/`         |
+| ASL, ATS, ULSS, azienda sanitaria               | `numeri-utili/`         |
+| pass/contrassegno disabili                      | `contrassegno-disabili/`|
+| RSA, casa di riposo                             | `rsa/`                  |
+| cure fuori regione                              | `cure-fuori-regione/`   |
+| psicologo, dentista                             | `psicologo/`, `dentista/` |
+
+### Ricerche senza una pagina giusta (prova del 23/10/2026 sulla ricerca della home)
+
+In ordine di priorità (con i numeri del punto 3b). Prima di scrivere: fonte ufficiale per ogni cifra, nazionale o
+regione per regione.
+
+0. **Link al fascicolo sanitario di ogni Regione** (non è una pagina nuova, ma è la cosa più cercata): `link.fse`
+   in `data/regioni/index.json` per tutte le regioni, dalle copie del server, e il link anche in
+   `fascicolo-e-ricetta/`, non solo nella cartella clinica.
+1. **Pronto soccorso e guardia medica.** «codice bianco» porta all'esenzione ticket, «pronto soccorso
+   pediatrico» solo ai Numeri utili. Serve una pagina: quando andare, codici colore, ticket del codice bianco
+   (cambia per regione: una fonte datata diceva 25 € in Sicilia, da non usare), chi chiamare di notte e nei
+   festivi.
+2. **Pensione e assegno di invalidità.** La ricerca porta a `invalidita/`, che parla della visita ma non dice
+   quanto si prende né i limiti di reddito. Sono ricerche in crescita (importi dell'anno in corso).
+3. **Certificato di malattia e visita fiscale.** Oggi «certificato di malattia» porta all'esenzione ticket e
+   «visita fiscale» alle liste d'attesa: risultati sbagliati.
+4. **Stranieri: codice STP, iscrizione al servizio sanitario.** «straniero» e «stp» non trovano niente.
+5. **Occhiali, logopedista, colonscopia**: non trovano niente o trovano poco. Valutare se bastano parole chiave
+   nelle pagine che ci sono (ausili, prenotare-cup, prevenzione) o se serve altro.
+
+### Nomi locali che mancano nei dati
+
+- `regional_channel` (portale o app di prenotazione della Regione) è vuoto in tutte le 20 regioni.
+- `local_name` (come si chiama il percorso di tutela) c'è solo in Sicilia, Toscana, Liguria e Valle d'Aosta;
+  in Emilia-Romagna è «da verificare».
+- `link.fse` (fascicolo della Regione) c'è solo per la Sicilia: vedi il punto 0 qui sopra.
+- Le parole «sovracup» e «aspconte» nelle parole chiave valgono solo per la Sicilia. I nomi trovati il 23/10/2026
+  (punto 3b, n. 6) si aggiungono quando sono nei dati della regione con la fonte.
+
+## 5. Le pagine da migliorare (dalla ricerca in Sicilia, ancora valide)
+
+- **Liste d'attesa**: usare le parole che la gente scrive («prenotazione CUP», il nome del portale della
+  Regione), non solo «percorso di tutela».
+- **Invalidità**: chiarire che invalidità, legge 104, accompagnamento e contrassegno sono cose diverse.
+- **Numeri utili**: guardia medica e farmacia di turno sono cercate molto, soprattutto nei festivi.
+
+## 6. La prima ricerca: Sicilia, 19/10/2026
+
+Google Trends, regione Sicilia, media su 12 mesi. In quella settimana GoatCounter contava 74 visite, 1 sola da
+Google, circa l'80% da telefono.
+
+| Confronto | Termini (media)                                                                                     |
+|-----------|-----------------------------------------------------------------------------------------------------|
+| 1         | legge 104 (44), guardia medica (40), invalidità civile (24), esenzione ticket (19), liste d'attesa (0) |
+| 2         | legge 104 (46), fascicolo sanitario (34), cambio medico (26), prenotazione cup (12), indennità di accompagnamento (1) |
+| 3         | tessera sanitaria (44), legge 104 (34), pronto soccorso (33), medico di base (22), certificato di malattia (4) |
+| 4         | medico di base (70), asp con te (40), medico di famiglia (22), tempi di attesa (1), percorso di tutela (0) |
+
+Cosa ci ha detto: la gente scrive «medico di base», non «medico di famiglia»; cerca lo strumento («prenotazione
+cup», «asp con te») e non «liste d'attesa» o «percorso di tutela»; tessera sanitaria, fascicolo, pronto soccorso
+e guardia medica sono molto cercati.
+
+Ricerche in crescita allora: «rinnovo esenzione ticket 2026», «esenzione ticket over 65», «scelta in deroga medico
+di base», «pensione / assegno invalidità civile 2026», «aumento indennità di accompagnamento 2026», «permessi
+doppi» (legge 104), «ho smarrito la tessera sanitaria», «guardia medica» + paese, «farmacia di turno oggi»,
+«pronto soccorso pediatrico vicino a me», «scaricare certificato di malattia».
+
+Da quella ricerca sono nate le pagine tessera sanitaria, fascicolo, legge 104, CUP, accompagnamento, cure fuori
+regione, contrassegno, RSA, psicologo e dentista.
+
+Fonti della ricerca siciliana: Cittadinanzattiva, Rapporto civico sulla salute 2025
+(<https://tg24.sky.it/salute-e-benessere/2025/12/18/sanita-liste-attesa-allarme-cittadinanzattiva>); Istat,
+rinuncia alle cure 2024
+(<https://www.dire.it/06-11-2025/1193696-aumentano-italiani-che-rifiutano-curarsi-istat-sono-quasi-6-milioni-primo-motivo-lunghe-attese/>);
+ticket del pronto soccorso per regione
+(<https://www.quotidianosanita.it/insights/ticket-pronto-soccorso-quanto-si-paga-regione-per-regione/>). Sono
+fonti per scegliere i temi, non per le cifre: le cifre vanno prese dalle fonti ufficiali.

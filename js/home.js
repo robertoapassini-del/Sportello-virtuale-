@@ -2,14 +2,14 @@
 // alla pagina dell'area (per esempio visite-esami/), come la home di NHS.uk.
 // La ricerca è nella testata: qui i risultati compaiono mentre si scrive.
 import { cerca } from './cerca.js';
-import { esc, loadJSON, loadRegioni, renderFooter, helpBox, sourcesBox, fontiNazionali, aslLabel, regioniAttive, regioneInfo, regioneSalvata, inRegione } from './common.js';
+import { esc, loadJSON, loadRegioni, renderFooter, helpBox, sourcesBox, fontiNazionali, aslLabel, regioniAttive, regioneInfo, regioneSalvata, inRegione, count, eventoRicerca, eventoClic, idRegioneScelta, MAINTAINER_EMAIL } from './common.js';
 
 const app = document.getElementById('app');
 let reg;
 let rulesSources = [];
 
-function card(href, icon, title, small) {
-  return `<a class="btn choice" href="${esc(href)}"><span class="ico" aria-hidden="true">${icon}</span><span class="txt">${esc(title)}${small ? ` <small>${esc(small)}</small>` : ''}</span></a>`;
+function card(href, icon, title, small, id = '') {
+  return `<a class="btn choice" href="${esc(href)}"${id ? ` data-modulo="${esc(id)}"` : ''}><span class="ico" aria-hidden="true">${icon}</span><span class="txt">${esc(title)}${small ? ` <small>${esc(small)}</small>` : ''}</span></a>`;
 }
 
 // Nomi brevi dei moduli con dati regionali, per la frase sulla regione (copertura).
@@ -37,7 +37,8 @@ function copertura() {
     : '<p class="home-regione">Le regole valgono in tutta Italia.</p>';
 }
 
-// Chi siamo in una riga sopra le scelte; il resto sotto. Con una regione attiva sola: «Per ora solo in <regione>».
+// Sotto il titolo, la frase che dice a cosa serve il sito (è anche la descrizione per Google: senza, Google
+// mostrava il riquadro «Stai male adesso?»). Poi chi siamo in una riga sopra le scelte; il resto sotto. Con una regione attiva sola: «Per ora solo in <regione>».
 // Con più regioni: quale si sta guardando e il link per cambiarla (la scelta è in Numeri utili).
 function intro() {
   const scelta = regioneSalvata() || regioneInfo();
@@ -48,6 +49,7 @@ function intro() {
   return `
   <section class="home-intro page-band">
   <h1>Di cosa hai bisogno?</h1>
+  <p class="lead home-lead">La visita è troppo lontana? La visita per l'invalidità non arriva? Ti aiutiamo a far valere i tuoi diritti nella sanità, in tutta Italia.</p>
   <p class="home-trust">Gratis. Siamo volontari: <strong>non siamo l'${esc(ente)} né l'INPS</strong>.${una ? ` Per ora solo in ${esc(regioneInfo().name)}.` : ''}</p>
   ${piu ? `<p class="home-regione">📍 ${regioneSalvata() ? `Stai guardando: <strong>${esc(scelta.name)}</strong> · <a href="numeri-utili/?torna=${encodeURIComponent(location.pathname)}#regione">Cambia regione</a>` : `<a href="numeri-utili/?torna=${encodeURIComponent(location.pathname)}#regione">Scegli la tua regione</a> per vedere i numeri e gli uffici della tua zona`}</p>` : ''}
   ${piu ? copertura() : ''}
@@ -102,12 +104,31 @@ function render() {
 // La pagina «Numeri utili» non è un modulo, ma la ricerca deve trovarla.
 const NUMERI = {
   id: 'numeri-utili', icon: '📞', title: 'Numeri utili', get small() { return `Guardia medica, CUP, ${aslLabel()}, INPS`; },
-  keywords: 'numero numeri telefono chiamare guardia medica notte cup urp centralino inps tessera sanitaria farmacia turno violenza 1522 112 118 116117 pua pronto soccorso ambulanza urgente urgenza urgenze emergenza sto male malore continuita assistenziale festivi',
+  keywords: 'numero numeri telefono chiamare guardia medica notte cup urp centralino inps tessera sanitaria farmacia turno violenza 1522 112 118 116117 pua pronto soccorso ambulanza urgente urgenza urgenze emergenza sto male malore continuita assistenziale festivi ats asst ausl ulss azienda sanitaria',
 };
 
 // Quando non troviamo niente, ricordiamo sempre il 112 a chi sta male adesso.
+// L'email per dirci cosa mancava parte vuota: le parole cercate le scrive la persona, se vuole.
+const SCRIVICI = `mailto:${MAINTAINER_EMAIL}?subject=${encodeURIComponent('Non ho trovato quello che cercavo')}&body=${encodeURIComponent('Cosa cercavi? (non scrivere dati sulla tua salute)\n\n')}`;
 const NIENTE = '<p class="muted">Non abbiamo trovato niente con queste parole. Prova con un\'altra parola, oppure scegli uno dei riquadri qui sotto.</p>'
+  + `<p>Non c'è quello che ti serve? <a href="${esc(SCRIVICI)}">Scrivici cosa cercavi</a>: ci aiuta a scrivere le pagine che mancano.</p>`
   + '<p><strong>Se stai male adesso chiama il <a href="tel:112">112</a>.</strong></p>';
+
+// Statistiche della ricerca (docs/ricerche-frequenti.md): contiamo una volta per pagina aperta
+// se qualcuno ha cercato e se la ricerca è rimasta senza risultati, e quale risultato apre.
+// Mai le parole scritte. Si conta dopo 2 secondi senza scrivere, o subito con Invio.
+const contate = { fatta: false, vuota: false };
+let ultimiRisultati = -1;
+let attesa = null;
+function contaRicerca() {
+  clearTimeout(attesa);
+  if (ultimiRisultati < 0) return;
+  for (const cosa of ultimiRisultati ? ['fatta'] : ['fatta', 'vuota']) {
+    if (contate[cosa]) continue;
+    contate[cosa] = true;
+    count(eventoRicerca(cosa, idRegioneScelta()), { title: cosa === 'vuota' ? 'Ricerca senza risultati' : 'Ricerca', event: true });
+  }
+}
 
 // La ricerca resta nell'indirizzo (#q=…): aperto un risultato, il tasto Indietro la ritrova.
 function saveQuery(text) {
@@ -122,6 +143,7 @@ function showResults(text, submitted = false) {
   const list = document.getElementById('q-results');
   const q = text.trim();
   if (q.length < 3) {
+    ultimiRisultati = -1;
     if (submitted && q) {
       box.hidden = false;
       document.getElementById('q-title').textContent = 'Risultati della ricerca';
@@ -135,7 +157,11 @@ function showResults(text, submitted = false) {
   // I testi di data/moduli.json dicono «ASL»: nei risultati si usa la sigla della regione
   // («dell'ASP» in Sicilia, «all'ATS» in Lombardia). Le forme con l'apostrofo vanno bene per tutte.
   const ente = (t) => String(t || '').replace(/\bASL\b/g, aslLabel());
-  list.innerHTML = hits.length ? hits.map((h) => card(h.href, h.icon, ente(h.title), ente(h.small))).join('') : NIENTE;
+  list.innerHTML = hits.length ? hits.map((h) => card(h.href, h.icon, ente(h.title), ente(h.small), h.id)).join('') : NIENTE;
+  ultimiRisultati = hits.length;
+  clearTimeout(attesa);
+  if (submitted) contaRicerca();
+  else attesa = setTimeout(contaRicerca, 2000);
 }
 
 (async function init() {
@@ -169,6 +195,12 @@ function showResults(text, submitted = false) {
       showResults(hq.value, true);
       saveQuery(hq.value);
       document.getElementById('q-box').scrollIntoView({ block: 'start' });
+    });
+    document.getElementById('q-results').addEventListener('click', (e) => {
+      const a = e.target.closest('a[data-modulo]');
+      if (!a) return;
+      contaRicerca();
+      count(eventoClic(a.dataset.modulo), { title: 'Risultato della ricerca aperto', event: true });
     });
     // Ricerca partita da un'altra pagina: ./#q=carrozzina (o ?q= senza JavaScript).
     const asked = new URLSearchParams(location.hash.slice(1)).get('q') || params.get('q');

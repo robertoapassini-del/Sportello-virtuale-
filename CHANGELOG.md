@@ -2,6 +2,30 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 23/10/2026 — Come appare il sito su Google: nome, titoli, anteprima, dati strutturati, «Chi siamo»
+- Errore trovato (ricerca «site:guidasanita.it»): Google mostrava «guidasanita.it» al posto del nome, tagliava i titoli lunghi (fino a 131 caratteri) e usava il riquadro «Stai male adesso?» come descrizione della home.
+- Home: dati strutturati JSON-LD «WebSite» (nome «Guida Sanità») e «Organization» (logo `icon-512.png`); sotto il titolo la frase che dice a cosa serve il sito, prima del riquadro dell'urgenza (`index.html`, `js/home.js`).
+- Titoli: al massimo 60 caratteri; « – Guida Sanità» solo sui titoli corti (`tools/pagine.mjs`). Riscritti 76 titoli, con le parole che la gente cerca (`docs/ricerche-frequenti.md`). I testi delle pagine non cambiano.
+- Anteprima nei messaggi: `og-image.png` (1200 x 630, logo, nome e frase del sito, fatta con `node tools/og-image.cjs`), `og:image`, `og:locale` e `twitter:card` in ogni pagina; `og:type` «article» nelle guide.
+- Dati strutturati in ogni pagina: «BreadcrumbList» (il percorso) e, nelle guide, «Article» con `dateModified`. Niente «FAQPage»: Google la mostra solo per siti di enti pubblici o sanitari ufficiali.
+- Icone con percorso assoluto («/favicon.ico»…).
+- `sitemap.xml` con `lastmod`: la data del controllo più recente nei file `data/` della pagina (privacy: la data scritta nella pagina).
+- «Chi siamo» (`chi-siamo.html`) e «Note legali» (`note-legali.html`) ora sono due pagine, con i link nel piè di pagina e nella privacy. Testi spostati, non cambiati.
+- Nuovi controlli: `tests/seo.test.mjs` (canonical, icone, anteprima, titoli, JSON-LD valido, lastmod, frase della home, le due pagine). Ha trovato un errore nel generatore: contava «&#39;» come 5 caratteri.
+
+## 23/10/2026 — Google Trends per l'Italia e 7 regioni: risultati e ricerca della home
+- `docs/ricerche-frequenti.md`, punto 3b: 3 confronti per l'Italia e le query associate di 4 temi in 8 zone (Google Trends, 23/10/2025 – 23/10/2026, raccolti dal proprietario). Il fascicolo sanitario è il tema più cercato (4,7 volte la legge 104), ma il link al fascicolo della Regione c'è solo per la Sicilia; pronto soccorso e guardia medica insieme valgono 3 volte la legge 104 e non hanno una pagina.
+- Ricerca della home: «fse» portava prima alla cartella clinica (tolta la parola da `cartella-clinica`, che resta trovata con «fascicolo»); parole nuove «annullare annullamento stampa» (CUP) e «residenza trasferimento curante» (medico).
+- Nuovi controlli: 13 ricerche prese da Google Trends in `tests/ricerca.test.mjs`.
+
+## 23/10/2026 — Cosa cercano le persone, in tutta Italia; statistiche anonime della ricerca
+- `docs/ricerche-frequenti.md` riscritto per tutte le regioni: fonti in ordine di valore, come rifare Google Trends per l'Italia e per regione, tabella ricerche → pagina, ricerche ancora senza pagina (pronto soccorso e codice bianco, pensione e assegno di invalidità, certificato di malattia e visita fiscale, stranieri e STP). La ricerca della Sicilia del 19/10/2026 resta in fondo.
+- Statistiche (GoatCounter), mai le parole scritte: «Sì / No» con la regione scelta (`utile-no/<pagina>/<regione>`), `ricerca-fatta/<regione>`, `ricerca-vuota/<regione>` e `ricerca-clic/<modulo>` (`js/common.js`, `js/home.js`). I conteggi partono con `sendBeacon`, così arrivano anche quando si apre un risultato. Pagina privacy aggiornata.
+- Ricerca senza risultati: link «Scrivici cosa cercavi» (email vuota, la scrive la persona).
+- Parole della ricerca: «impegnativa» (CUP), «pensione assegno mensile» (invalidità), «ats asst ausl ulss azienda sanitaria» (Numeri utili). Prima «impegnativa», «ats» e «ulss» non trovavano niente e «pensione invalidità» dava prima l'esenzione ticket.
+- Errore trovato durante la prova: sulle pagine che non caricano l'elenco delle regioni il «No» arrivava senza regione. Ora la regione si legge dal browser.
+- Nuovi controlli: `tests/conteggi.test.mjs` (nomi degli eventi, nessun testo scritto in `count()`, regione senza l'elenco, pagina privacy); 20 ricerche nuove in `tests/ricerca.test.mjs`.
+
 ## 23/10/2026 — Friuli-Venezia Giulia, Piemonte, Sardegna: liste d'attesa in Friuli-Venezia Giulia, prevenzione in tutte e tre
 - Fonti: le copie del server del 23/10/2026 delle 11:06 (branch `copie-siti`), anche il testo dei PDF. Ogni numero e ogni email nuova ha `url` = la pagina copiata, `verified` 2026-10-23, `proof` «pagina». Nessun dato dagli estratti del motore di ricerca.
 - Friuli-Venezia Giulia, ASUFC (Udine): `what_next` del diritto di garanzia dal regolamento aziendale (DDG n. 706 del 28/06/2024, PDF https://asufc.sanita.fvg.it/export/sites/asufc/it/amministrazione_trasparente/documenti_AT/16_servizi-erogati/liste_attesa/2024_706_regolamento_diritto_garanzia_REG.pdf): controllo dei requisiti, pre-lista, telefonata con la nuova data; chi rifiuta una data proposta perde il diritto. Il programma attuativo 2026 (PDF) dice che il percorso resta in vigore. Nota: si può mandare un'altra persona con una delega.

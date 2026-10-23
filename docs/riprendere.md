@@ -1,4 +1,4 @@
-# Da dove riprendere (lavoro del 18/10/2026)
+# Da dove riprendere (lavoro del 18/10/2026, aggiornato il 23/10/2026)
 
 Nota per continuare da un altro computer o in una nuova sessione con Claude.
 
@@ -13,6 +13,25 @@ Nota per continuare da un altro computer o in una nuova sessione con Claude.
 - Assistenza domiciliare: schermata «Consigli pratici».
 
 ## Da fare
+
+**Prima di tutto (23/10/2026, dalle ricerche su Google Trends, `docs/ricerche-frequenti.md` punto 3b):**
+
+A. **Link al fascicolo sanitario di ogni Regione.** È il tema più cercato (4,7 volte la legge 104), ma `link.fse`
+   in `data/regioni/index.json` c'è solo per la Sicilia.
+   - Le copie del server (branch `copie-siti`, `copie/<regione>/indice.json`) hanno già pagine ufficiali del
+     fascicolo per 16 regioni. Per ognuna: scegliere la pagina d'accesso della Regione, controllare nella copia che
+     sia quella giusta, scriverla in `link.fse` con la fonte (`docs/regioni.md`).
+   - Friuli-Venezia Giulia, Lombardia e Veneto non hanno copie: aggiungere la pagina del fascicolo in `pagine[]`
+     e aspettare la copia (oppure cambiare `tools/copie-richiesta.txt`).
+   - Mostrare il link anche in `fascicolo-e-ricetta/` (oggi solo in `js/cartella.js`), con la sigla da `aslLabel()`
+     e il nome della Regione. Poi `npm run pagine`, `npm test`, controlli col browser, una riga nel `CHANGELOG.md`.
+   - Dopo: i nomi dei portali (Salute Lazio, Puglia Salute, Sinfonia, Sanità km zero…) nelle parole chiave, solo
+     se sono nei dati con la fonte.
+
+B. **Pagina «Pronto soccorso e guardia medica».** Insieme valgono 3 volte la legge 104 e non hanno una pagina:
+   quando andare, codici colore, ticket del codice bianco (cambia per regione, solo da delibere), chi chiamare di
+   notte e nei festivi. Picchi: Natale ed estate.
+
 
 1. **Fatto il 19/10/2026 dall'Italia** (vedi CHANGELOG): restano 6 numeri da telefonare. Per il giro successivo: aprire le pagine di
    [da-verificare.md](da-verificare.md) e, per ogni numero confermato, mettere `"proof": "pagina"` e la data.

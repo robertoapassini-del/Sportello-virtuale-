@@ -32,7 +32,7 @@ scritto (`tests/telefoni-vecchi.cjs`).
 
 | Comando | Cosa controlla |
 |---|---|
-| `npm test` | dati, numeri e fonti (`contatti`, `provenienza`, `cifre`: anche nel titolo e nella descrizione, con l'unità giusta), pagine aggiornate (`pagine`, anche la 404, fonti mai vuote, niente «noindex»), link interni (`link`), citazioni di legge rilette (`citazioni` + `tests/citazioni.txt`), lettere senza segnaposto (`lettere`), calcoli e festivi (`engine`), testi nazionali (`nazionale`), errori già visti (`errori-noti`), ricerca (`ricerca`: 40 parole → modulo giusto), italiano semplice (`leggibilita`: Gulpease ≥ 60 per pagina e ≥ 65 per modulo, frasi fino a 40 parole, niente parole da ufficio) |
+| `npm test` | dati, numeri e fonti (`contatti`, `provenienza`, `cifre`: anche nel titolo e nella descrizione, con l'unità giusta), pagine aggiornate (`pagine`, anche la 404, fonti mai vuote, niente «noindex»), link interni (`link`), citazioni di legge rilette (`citazioni` + `tests/citazioni.txt`), lettere senza segnaposto (`lettere`), calcoli e festivi (`engine`), testi nazionali (`nazionale`), errori già visti (`errori-noti`), ricerca (`ricerca`: 79 ricerche → modulo giusto), statistiche senza testi scritti (`conteggi`), come appare su Google e nei messaggi (`seo`), italiano semplice (`leggibilita`: Gulpease ≥ 60 per pagina e ≥ 65 per modulo, frasi fino a 40 parole, niente parole da ufficio) |
 | `npm test` | dati, numeri e fonti (`contatti`, `provenienza`, `cifre`: anche nel titolo e nella descrizione, con l'unità giusta), pagine aggiornate (`pagine`, anche la 404, fonti mai vuote, niente «noindex»), link interni (`link`), citazioni di legge rilette (`citazioni` + `tests/citazioni.txt`), lettere senza segnaposto (`lettere`), calcoli e festivi (`engine`), testi nazionali (`nazionale`), errori già visti (`errori-noti`), ricerca (`ricerca`: 40 parole → modulo giusto), coerenza tra le parti del sito (`coerenza`: link nei js, dati delle regioni, sitemap, leggi con un solo anno, pulsanti con un nome, percorso «‹ indietro», data «Informazioni controllate il», WhatsApp, parole della ricerca in `tests/ricerca-parole.txt`) |
 | `node tests/browser.cjs <indirizzo>` | tutte le pagine in un browser (Sicilia, Lazio, nessuna regione) e i percorsi dei moduli: errori JavaScript, «undefined», pagine troppo larghe (anche con il testo al 250%), pulsanti sotto i 44 px, tastiera (primo Tab, contorno del focus, errori dei campi collegati), stampa (titolo, pulsanti), frasi siciliane senza «Sicilia» |
 | `node tests/combinazioni.cjs <indirizzo>` | tutte le combinazioni di risposte nei moduli, confrontate con un calcolo indipendente; nella CI anche con il fuso orario di New York (`TZ=America/New_York TZID=America/New_York`) |
@@ -157,3 +157,12 @@ già in elenco. Chiunque può rifarli: ogni riga dice quale file cambiare e come
 - 23/10/2026 — il sito dice quello che c'è, non quello che manca: in `coerenza.test.mjs`, `errori-noti.test.mjs` e
   `browser.cjs` (ogni pagina) niente «per ora solo…», «non abbiamo ancora», «non ancora in tutte le regioni»; nei moduli
   senza i dati della regione il pulsante non c'è.
+- 23/10/2026 — `tests/conteggi.test.mjs`: le statistiche ora contano anche la ricerca (fatta, senza risultati,
+  risultato aperto) e la regione nei «Sì / No». Il test controlla che in `count()` non entri mai un testo scritto
+  e che la regione arrivi anche dalle pagine che non caricano l'elenco delle regioni (sulla pagina della legge 104
+  il «No» arrivava con «nessuna»). In `ricerca.test.mjs` 20 ricerche nuove, prese da `docs/ricerche-frequenti.md`.
+- 23/10/2026 — `tests/seo.test.mjs`: Google mostrava «guidasanita.it» al posto del nome del sito, titoli tagliati e il
+  riquadro «Stai male adesso?» come descrizione della home. Il test controlla canonical, icone assolute, immagine di
+  anteprima, titoli (60 caratteri, « – Guida Sanità» solo sui corti), JSON-LD valido (WebSite, Organization,
+  BreadcrumbList, Article), `lastmod` della sitemap, la frase sotto il titolo della home e le pagine «Chi siamo» e
+  «Note legali».

@@ -30,11 +30,12 @@ const home = read('index.html');
 // Icone del sito: favicon.ico (Google e browser vecchi), logo.svg (browser nuovi),
 // apple-touch-icon.png (iPhone), site.webmanifest (Android). Google mostra l'icona nei risultati
 // solo se sta a un indirizzo vero e stabile, non scritta dentro la pagina (data:).
-const icons = (root) => [
-  `<link rel="icon" href="${root}favicon.ico" sizes="48x48">`,
-  `<link rel="icon" href="${root}logo.svg" type="image/svg+xml">`,
-  `<link rel="apple-touch-icon" href="${root}apple-touch-icon.png">`,
-  `<link rel="manifest" href="${root}site.webmanifest">`,
+// Percorso assoluto («/favicon.ico»): è lo stesso in ogni pagina, anche nelle sottocartelle.
+const icons = () => [
+  '<link rel="icon" href="/favicon.ico" sizes="48x48">',
+  '<link rel="icon" href="/logo.svg" type="image/svg+xml">',
+  '<link rel="apple-touch-icon" href="/apple-touch-icon.png">',
+  '<link rel="manifest" href="/site.webmanifest">',
 ].join('\n');
 const MARK = home.match(/<svg class="brand-mark"[\s\S]*?<\/svg>/)[0];
 const groupById = Object.fromEntries(reg.groups.map((g) => [g.id, g]));
@@ -45,7 +46,7 @@ const href = (root, page) => root + page || './';
 // Ogni pagina: file, area attiva nel menu, percorso (senza la pagina stessa).
 const pages = [
   { file: 'index.html', trail: [] },
-  ...['fonti.html', 'privacy.html', 'note-legali.html', 'numeri-utili/index.html'].map((file) => ({ file, trail: [INIZIO] })),
+  ...['fonti.html', 'privacy.html', 'chi-siamo.html', 'note-legali.html', 'numeri-utili/index.html'].map((file) => ({ file, trail: [INIZIO] })),
   ...reg.groups.map((g) => ({ file: `${g.page}/index.html`, area: g.id, trail: [INIZIO], group: g })),
   ...reg.modules.flatMap((m) => {
     const g = groupById[m.group];
@@ -84,7 +85,7 @@ function areaPage(g, root) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${esc(g.title)} – Guida Sanità</title>
+<title>${esc(g.title)}</title>
 <meta name="description" content="${esc(g.intro)}">
 <meta name="theme-color" content="#0b5f5c">
 ${icons(root)}
@@ -116,17 +117,57 @@ ${others.map((o) => `<li><a href="${root}${o.page}/">${esc(o.title)}</a></li>`).
 const base = read('sitemap.xml').match(/<loc>(.*?)<\/loc>/)[1];
 const pageUrl = (file) => base + file.replace(/(^|\/)index\.html$/, '$1');
 
-// Anteprima quando si manda il link su WhatsApp o altrove: titolo, frase, indirizzo.
-function openGraph(html, url) {
+// Titoli (<title>): Google ne mostra circa 60 caratteri. Un titolo corto finisce con « – Guida Sanità»;
+// uno lungo (una domanda, una frase) resta senza, perché il nome del sito lo taglierebbe. La home comincia col nome.
+const SUFFISSO = ' – Guida Sanità';
+const TITOLO_MAX = 60;
+function titolo(html, file) {
+  const t = html.match(/<title>(.*?)<\/title>/)[1];
+  if (file === 'index.html') return t;
+  const base = t.replace(/ [–-] Guida Sanità$/, '');
+  // Si contano i caratteri che si leggono: «&#39;» è un apostrofo solo.
+  return testo(base).length + SUFFISSO.length <= TITOLO_MAX ? base + SUFFISSO : base;
+}
+const testo = (s) => s.replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
+
+// Anteprima quando si manda il link su WhatsApp, Facebook o altrove: titolo, frase, indirizzo, immagine (og-image.png).
+const OG_IMAGE = 'og-image.png';
+function openGraph(html, url, guida) {
   const title = html.match(/<title>(.*?)<\/title>/)[1];
   const desc = html.match(/<meta name="description" content="(.*?)">/)[1];
-  return `<meta property="og:type" content="website">
+  return `<meta property="og:type" content="${guida ? 'article' : 'website'}">
 <meta property="og:site_name" content="Guida Sanità">
 <meta property="og:locale" content="it_IT">
 <meta property="og:title" content="${title}">
 <meta property="og:description" content="${desc}">
 <meta property="og:url" content="${url}">
+<meta property="og:image" content="${base}${OG_IMAGE}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Guida Sanità: sanità, cure e invalidità, cosa ti spetta e come chiederlo">
+<meta name="twitter:card" content="summary_large_image">
 `;
+}
+
+// Dati strutturati (schema.org, JSON-LD) per Google: nome del sito e logo nella home, percorso in ogni pagina,
+// «Article» nelle guide. Niente FAQPage: Google la mostra solo per siti di enti pubblici o sanitari ufficiali.
+const org = () => ({ '@type': 'Organization', '@id': `${base}#org`, name: 'Guida Sanità', url: base, logo: `${base}icon-512.png`, email: EMAIL });
+function jsonLd(p, html, url) {
+  const graph = [];
+  if (p.file === 'index.html') {
+    graph.push({ '@type': 'WebSite', '@id': `${base}#sito`, name: 'Guida Sanità', alternateName: 'guidasanita.it', url: base, inLanguage: 'it-IT', publisher: { '@id': `${base}#org` } }, org());
+  } else {
+    const h1 = testo(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)[1].replace(/<[^>]+>/g, '')).trim();
+    const items = [...p.trail.map((t) => ({ name: t.label, url: t.href ? base + t.href : base })), { name: h1, url }];
+    graph.push({ '@type': 'BreadcrumbList', itemListElement: items.map((x, i) => ({ '@type': 'ListItem', position: i + 1, name: x.name, item: x.url })) });
+    if (p.module) {
+      const desc = testo(html.match(/<meta name="description" content="(.*?)">/)[1]);
+      const d = dataModifica(p);
+      graph.push({ '@type': 'Article', headline: testo(html.match(/<title>(.*?)<\/title>/)[1].replace(/ – Guida Sanità$/, '')), description: desc, inLanguage: 'it-IT', mainEntityOfPage: url, ...(d ? { dateModified: d } : {}), author: { '@id': `${base}#org` }, publisher: org(), image: `${base}${OG_IMAGE}` });
+    }
+  }
+  const json = JSON.stringify({ '@context': 'https://schema.org', '@graph': graph }).replace(/</g, '\\u003c');
+  return `<script type="application/ld+json">${json}</script>\n`;
 }
 
 // L'indirizzo nuovo comincia sempre con una sola «/»: «//altro-sito/…/index.html» darebbe «//altro-sito/», cioè un
@@ -160,7 +201,8 @@ const footer = (root) => `<footer class="site-footer" id="site-footer"><div clas
 <nav aria-label="Informazioni">
 <a href="${root}privacy.html">Privacy</a>
 <a href="${root}fonti.html">Da dove prendiamo le informazioni</a>
-<a href="${root}note-legali.html">Chi siamo</a>
+<a href="${root}chi-siamo.html">Chi siamo</a>
+<a href="${root}note-legali.html">Note legali</a>
 <a href="mailto:${EMAIL}">Scrivici: ${EMAIL}</a>
 </nav>
 </div></footer>`;
@@ -172,6 +214,18 @@ const regioni = dataFile('regioni/index');
 const REGIONE = regioni.default;
 const regionalFile = (name) => dataFile(`regioni/${REGIONE}/${name}`);
 const dateIt = (d) => { const [y, m, g] = d.split('-').map(Number); return `${g === 1 ? '1º' : g} ${['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno', 'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre'][m - 1]} ${y}`; };
+// Data dell'ultima modifica delle informazioni (sitemap «lastmod», «dateModified» delle guide): il controllo più recente
+// nei file data/ del modulo (last_verified). Area: i suoi moduli; home: tutti; Numeri utili: data/numeri.json;
+// privacy: la data «Ultimo aggiornamento» scritta nella pagina. Le altre pagine non hanno una data.
+const MESI = ['gennaio', 'febbraio', 'marzo', 'aprile', 'maggio', 'giugno', 'luglio', 'agosto', 'settembre', 'ottobre', 'novembre', 'dicembre'];
+const verificate = (m) => (m.data || []).map(dataFile).flatMap((d) => JSON.stringify(d).match(/"last_verified":"\d{4}-\d{2}-\d{2}"/g) || []).map((x) => x.slice(-11, -1));
+function dataModifica(p, html = '') {
+  const mods = p.module ? [p.module] : p.group ? reg.modules.filter((m) => m.group === p.group.id) : p.file === 'index.html' ? reg.modules : [];
+  if (mods.length) return mods.flatMap(verificate).sort().pop() || null;
+  if (p.file === 'numeri-utili/index.html') return dataFile('numeri').last_verified || null;
+  const u = html.match(/Ultimo aggiornamento: (\d{1,2}) ([a-z]+) (\d{4})/);
+  return u && MESI.includes(u[2]) ? `${u[3]}-${String(MESI.indexOf(u[2]) + 1).padStart(2, '0')}-${u[1].padStart(2, '0')}` : null;
+}
 function guideSources(m) {
   const files = (m.data || []).map(dataFile);
   const seen = new Set();
@@ -280,6 +334,7 @@ function modulePreload(html, root) {
   return [...files].map((f) => `<link rel="modulepreload" href="${root}js/${f}">\n`).join('');
 }
 
+const lastmod = new Map();
 for (const p of pages) {
   const root ='../'.repeat(p.file.split('/').length - 1);
   let html = p.group ? areaPage(p.group, root) : read(p.file).replace(/\r\n/g, '\n');
@@ -289,16 +344,19 @@ for (const p of pages) {
   html = html.replace(re, () => top).replace('<meta name="theme-color" content="#ffffff">', '<meta name="theme-color" content="#0b5f5c">');
   // Le icone sono le stesse in ogni pagina: si tolgono quelle che ci sono e si rimettono tutte, con il percorso giusto.
   html = html.replace(/<link rel="(?:icon|apple-touch-icon|manifest)"[^\n]*>\n/g, '')
-    .replace(/<meta name="theme-color"[^>]*>\n/, (m) => `${m}${icons(root)}\n`);
+    .replace(/<meta name="theme-color"[^>]*>\n/, (m) => `${m}${icons()}\n`);
+  html = html.replace(/<title>.*?<\/title>/, () => `<title>${titolo(html, p.file)}</title>`);
   // Indirizzo canonico: «/x/» e «/x/index.html» sono la stessa pagina per Google.
   const url = pageUrl(p.file);
-  html = html.replace(/<link rel="canonical"[^>]*>\n/, '').replace(/<meta property="og:[^>]*>\n/g, '')
-    .replace(/<link rel="stylesheet"/, (m) => `<link rel="canonical" href="${url}">\n${openGraph(html, url)}${m}`);
+  html = html.replace(/<link rel="canonical"[^>]*>\n/, '').replace(/<meta (?:property="og:|name="twitter:)[^>]*>\n/g, '')
+    .replace(/<link rel="stylesheet"/, (m) => `<link rel="canonical" href="${url}">\n${openGraph(html, url, Boolean(p.module))}${m}`);
   // «/x/index.html» → «/x/»: GitHub Pages non fa redirect 301, quindi lo fa il browser appena apre la pagina.
   html = html.replace(/<script>document\.documentElement\.className[^<]*<\/script>/, () => HEAD_SCRIPT);
   html = html.replace(/<meta name="referrer"[^>]*>\n/, '').replace(/<meta name="viewport"[^>]*>\n/, (m) => `${m}${REFERRER}\n`);
-  // Dati FAQPage di una versione precedente: non ci sono più «Domande frequenti», le domande sono i titoli delle pagine.
-  html = html.replace(/<script type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>\n/, '');
+  // Dati strutturati: si tolgono quelli che ci sono e si rimettono, subito dopo l'anteprima (og:).
+  html = html.replace(/<script type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>\n/g, '')
+    .replace(/<link rel="stylesheet"/, (m) => `${jsonLd(p, html, url)}${m}`);
+  lastmod.set(url, dataModifica(p, html));
   html = html.replace(/<!-- condividi[\s\S]*?<!-- \/condividi -->\n/, '')
     .replace(/<footer class="site-footer"[\s\S]*?<\/footer>/, () => `${shareBar(html, url)}${footer(root)}`);
   html = html.replace(/<!-- blocco:([a-z-]+)[^>]*-->[\s\S]*?<!-- \/blocco:\1 -->/g, (_, name) => {
@@ -317,7 +375,7 @@ for (const p of pages) {
 const urls = pages.map((p) => pageUrl(p.file)).sort((a, b) => (a === base ? -1 : b === base ? 1 : a.localeCompare(b)));
 write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map((u) => `  <url><loc>${u}</loc></url>`).join('\n')}
+${urls.map((u) => `  <url><loc>${u}</loc>${lastmod.get(u) ? `<lastmod>${lastmod.get(u)}</lastmod>` : ''}</url>`).join('\n')}
 </urlset>
 `);
 if (CHECK) {

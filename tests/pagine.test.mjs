@@ -11,7 +11,7 @@ import { fileURLToPath } from 'node:url';
 const site = new URL('../', import.meta.url);
 const read = (f) => readFileSync(new URL(f, site), 'utf8');
 const reg = JSON.parse(read('data/moduli.json'));
-const html = ['index.html', 'fonti.html', 'privacy.html', 'note-legali.html', 'numeri-utili/index.html',
+const html = ['index.html', 'fonti.html', 'privacy.html', 'chi-siamo.html', 'note-legali.html', 'numeri-utili/index.html',
   ...reg.groups.map((g) => `${g.page}/index.html`), ...reg.modules.map((m) => `${m.id}/index.html`),
   ...reg.modules.flatMap((m) => (m.pages || []).map((sp) => `${m.id}/${sp.id}/index.html`))];
 const words = (s) => s.replace(/<script[\s\S]*?<\/script>/g, '').replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length;
