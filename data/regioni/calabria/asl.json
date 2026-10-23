@@ -1,6 +1,12 @@
 {
  "region": "Calabria",
  "model": "ASP",
+ "regole_fonti": {
+  "fse": {
+   "url": "https://www.fascicolosanitario.regione.calabria.it/",
+   "nota": "Da copiare: è l'indirizzo citato nella pagina dell'ASP di Crotone sul Fascicolo (https://www.asp.crotone.it/fascicolo-sanitario-elettronico/, copia del 23/10/2026)."
+  }
+ },
  "_note": "Numeri delle aziende sanitarie della Calabria (ASP) per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili. Il 116117 è attivo in tutta la Calabria dal 28/07/2026; CUP regionale 0961 789789.",
  "asl": [
   {

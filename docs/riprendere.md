@@ -16,17 +16,18 @@ Nota per continuare da un altro computer o in una nuova sessione con Claude.
 
 **Prima di tutto (23/10/2026, dalle ricerche su Google Trends, `docs/ricerche-frequenti.md` punto 3b):**
 
-A. **Link al fascicolo sanitario di ogni Regione.** È il tema più cercato (4,7 volte la legge 104), ma `link.fse`
-   in `data/regioni/index.json` c'è solo per la Sicilia.
-   - Le copie del server (branch `copie-siti`, `copie/<regione>/indice.json`) hanno già pagine ufficiali del
-     fascicolo per 16 regioni. Per ognuna: scegliere la pagina d'accesso della Regione, controllare nella copia che
-     sia quella giusta, scriverla in `link.fse` con la fonte (`docs/regioni.md`).
-   - Friuli-Venezia Giulia, Lombardia e Veneto non hanno copie: aggiungere la pagina del fascicolo in `pagine[]`
-     e aspettare la copia (oppure cambiare `tools/copie-richiesta.txt`).
-   - Mostrare il link anche in `fascicolo-e-ricetta/` (oggi solo in `js/cartella.js`), con la sigla da `aslLabel()`
-     e il nome della Regione. Poi `npm run pagine`, `npm test`, controlli col browser, una riga nel `CHANGELOG.md`.
-   - Dopo: i nomi dei portali (Salute Lazio, Puglia Salute, Sinfonia, Sanità km zero…) nelle parole chiave, solo
-     se sono nei dati con la fonte.
+A. **Link al fascicolo sanitario di ogni Regione.** Fatto il 23/10/2026 per 10 regioni più la Sicilia (CHANGELOG).
+   Resta da fare:
+   - dopo la copia del server (parte da sola quando la PR è su main): Lombardia, Veneto, Friuli-Venezia Giulia,
+     Calabria, Marche, Puglia hanno `regole_fonti.fse` senza `proof`. Per ognuna: leggere la copia in `copie-siti`
+     (`copie/<regione>/regole/`), mettere `verified`, `proof: "pagina"` e la frase in `nota`, poi `link.fse`
+     nell'indice e `npm run pagine`. Se la copia non riesce (Lombardia: le sottopagine davano «troppi redirect»),
+     cercare un'altra pagina ufficiale;
+   - Lazio e Campania: nelle copie ci sono solo notizie. Trovare la pagina ufficiale del Fascicolo, metterla in
+     `regole_fonti.fse` senza `proof`, aspettare la copia;
+   - Trentino-Alto Adige: il Fascicolo è diverso a Trento e a Bolzano. Serve un link per zona, non uno per regione;
+   - i nomi dei portali (Salute Lazio, Puglia Salute, Sinfonia, Sanità km zero…) nelle parole chiave della ricerca,
+     solo se sono nei dati con la fonte.
 
 B. **Pagina «Pronto soccorso e guardia medica».** Insieme valgono 3 volte la legge 104 e non hanno una pagina:
    quando andare, codici colore, ticket del codice bianco (cambia per regione, solo da delibere), chi chiamare di

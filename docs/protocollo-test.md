@@ -166,3 +166,6 @@ già in elenco. Chiunque può rifarli: ogni riga dice quale file cambiare e come
   anteprima, titoli (60 caratteri, « – Guida Sanità» solo sui corti), JSON-LD valido (WebSite, Organization,
   BreadcrumbList, Article), `lastmod` della sitemap, la frase sotto il titolo della home e le pagine «Chi siamo» e
   «Note legali».
+- 23/10/2026 — `coerenza.test.mjs`, «link al Fascicolo della Regione»: un `link.fse` dell'indice delle regioni c'è solo con
+  la prova in `regole_fonti.fse` del file della regione (stesso indirizzo, proof «pagina», giorno e frase). Prima il link
+  siciliano non aveva prova e il server non lo copiava.

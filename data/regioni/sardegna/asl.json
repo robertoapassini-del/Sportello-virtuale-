@@ -1,6 +1,14 @@
 {
  "region": "Sardegna",
  "model": "ASL",
+ "regole_fonti": {
+  "fse": {
+   "url": "https://www.regione.sardegna.it/servizi/accesso-ai-servizi-on-line/indice-dei-servizi/fascicolo-sanitario-elettronico-2-0",
+   "verified": "2026-10-23",
+   "proof": "pagina",
+   "nota": "«Nuovo portale per l’accesso dei cittadini al proprio Fascicolo Sanitario Elettronico». Pagina della Regione Sardegna (autenticazione TS-CNS, CIE, SPID), copia del 23/10/2026."
+  }
+ },
  "_note": "Numeri delle 8 ASL della Sardegna, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili. Il 116117 (AREUS) è attivo in 6 ASL su 8: non ancora confermato per Medio Campidano e Cagliari. CUP regionale 1533 da fisso.",
  "asl": [
   {

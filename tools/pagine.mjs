@@ -260,6 +260,17 @@ const BLOCKS = {
     });
     return `<ol class="guida-indice">\n${items.join('\n')}\n</ol>`;
   },
+  // Il sito del Fascicolo Sanitario di ogni Regione (data/regioni/index.json → link.fse; la prova è in
+  // regole_fonti.fse del file della regione). Scritto nella pagina: si legge anche senza JavaScript, e Google lo
+  // trova quando si cerca «fascicolo sanitario» con il nome della regione (docs/ricerche-frequenti.md, punto 3b).
+  'fse-regioni': () => {
+    const con = regioni.regioni.filter((r) => r.link && r.link.fse).sort((a, b) => a.name.localeCompare(b.name, 'it'));
+    const dove = (r) => r.in || `in ${r.name}`;
+    return `<ul class="fse-regioni">
+${con.map((r) => `<li><a href="${esc(r.link.fse)}" target="_blank" rel="noopener">Fascicolo sanitario ${esc(dove(r))}</a></li>`).join('\n')}
+</ul>
+<p>Per le altre regioni cerca «fascicolo sanitario» e il nome della regione sul sito della Regione.</p>`;
+  },
   // Liste d'attesa: tempi massimi per classe di priorità (data/rules.json).
   'classi-priorita': () => {
     const r = dataFile('rules');

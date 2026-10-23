@@ -1,6 +1,14 @@
 {
   "region": "Sicilia",
   "model": "asl",
+  "regole_fonti": {
+    "fse": {
+      "url": "https://www.regione.sicilia.it/fascicolosanitario",
+      "verified": "2026-10-20",
+      "proof": "pagina",
+      "nota": "Fonte della guida del Fascicolo (data/rules-fascicolo-e-ricetta.json, controllata il 20/10/2026)."
+    }
+  },
   "local_name": "percorso di tutela",
   "booking_deadline_days": null,
   "no_class_rule": "da verificare",

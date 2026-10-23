@@ -1,6 +1,12 @@
 {
  "region": "Friuli-Venezia Giulia",
  "model": "Aziende sanitarie",
+ "regole_fonti": {
+  "fse": {
+   "url": "https://sesamo.sanita.fvg.it/",
+   "nota": "Da copiare: SESAMO, citato nella pagina di ASUGI sul cambio del medico («è attivo all’interno del Fascicolo sanitario elettronico (su SESAMO)», copia del 23/10/2026)."
+  }
+ },
  "_note": "Numeri delle aziende sanitarie del Friuli-Venezia Giulia (ASUGI, ASUFC, ASFO) per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Servono a Numeri utili, al medico di famiglia e, con le sedi INPS (inps.json), a Invalidità (data/regioni/index.json, «moduli»). Il 116117 è attivo in tutta la regione (2026); Call center unico salute e sociale 0434 223522.",
  "asl": [
   {

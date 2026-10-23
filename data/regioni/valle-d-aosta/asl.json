@@ -1,6 +1,14 @@
 {
  "region": "Valle d'Aosta",
  "model": "USL",
+ "regole_fonti": {
+  "fse": {
+   "url": "https://www.regione.vda.it/sanita/risorse_informative/fse_i.aspx",
+   "verified": "2026-10-23",
+   "proof": "pagina",
+   "nota": "«Accedere al tuo FSE è facile e sicuro. ACCEDI AL PORTALE FSE VDA». Pagina della Regione Valle d'Aosta, copia del 23/10/2026."
+  }
+ },
  "local_name": "percorso di tutela",
  "booking_deadline_days": null,
  "no_class_rule": "da verificare",

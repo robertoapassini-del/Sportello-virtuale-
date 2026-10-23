@@ -1,6 +1,14 @@
 {
  "region": "Piemonte",
  "model": "ASL",
+ "regole_fonti": {
+  "fse": {
+   "url": "https://www.regione.piemonte.it/web/temi/sanita/strumenti-operativi/fascicolo-sanitario-elettronico-20",
+   "verified": "2026-10-23",
+   "proof": "pagina",
+   "nota": "«Il Fascicolo Sanitario Elettronico 2.0»: pagina della Regione Piemonte, copia del 23/10/2026 («gli utenti possono accedere al FSE indipendentemente dalla Regione in cui sono stati generati i dati»)."
+  }
+ },
  "_note": "Numeri delle ASL del Piemonte per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili. In Piemonte la guardia medica è il 116117 in tutta la regione e si prenota al CUP Piemonte 800 000 500.",
  "asl": [
   {
