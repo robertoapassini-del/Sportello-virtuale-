@@ -1,7 +1,7 @@
 {
  "region": "Friuli-Venezia Giulia",
  "model": "Aziende sanitarie",
- "_note": "Numeri delle aziende sanitarie del Friuli-Venezia Giulia (ASUGI, ASUFC, ASFO) per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili. Il 116117 è attivo in tutta la regione (2026); Call center unico salute e sociale 0434 223522.",
+ "_note": "Numeri delle aziende sanitarie del Friuli-Venezia Giulia (ASUGI, ASUFC, ASFO) per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Servono a Numeri utili, al medico di famiglia e, con le sedi INPS (inps.json), a Invalidità (data/regioni/index.json, «moduli»). Il 116117 è attivo in tutta la regione (2026); Call center unico salute e sociale 0434 223522.",
  "asl": [
   {
    "id": "gorizia",
@@ -179,16 +179,20 @@
     {
      "label": "ASUGI – Scelta e revoca del medico di medicina generale e del pediatra",
      "url": "https://asugi.sanita.fvg.it/it/servizi/dist_amm_scelta_revoca_mmg_pls.html"
+    },
+    {
+     "label": "ASUGI – Percorso di tutela, diritto di garanzia",
+     "url": "https://asugi.sanita.fvg.it/it/amm_trasp_asugi/25_percorso_tutela/index.html"
     }
    ],
-   "last_verified": "2026-10-22",
+   "last_verified": "2026-10-23",
    "todo": [
     "Ospedale di Monfalcone: guasto telefonico a metà ottobre 2026, il 14/10 «in ripristino»; nel frattempo l'ASUGI indica il centralino di Gorizia 0481 5921.",
     "PUA/cure domiciliari Area Isontina: la pagina PUA Alto Isontino risponde «non trovata» (404); nessun numero sicuro.",
-    "Percorso di tutela in Friuli-Venezia Giulia: si chiama «diritto di garanzia» (regolamenti aziendali 2024; la responsabile è l'azienda di residenza). Chi rifiuta la data proposta nei tempi, o sceglie una struttura fuori dall'azienda, perde il diritto (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server). Nessun modulo acceso: pagine dei servizi non ancora copiate.",
-    "Diritto di garanzia ASUGI: come Trieste (sportelli del CUP ospedaliero) (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server).",
     "Copia del 22/10/2026 della pagina ASUGI «Scelta / revoca» (proof «pagina»): SESAMO con SPID o Login FVG (assistenza 0434 223555), sportelli di anagrafe sanitaria (a Trieste su appuntamento), PEC a asugi@certsanita.fvg.it. Il diritto di garanzia ASUGI («Percorso di tutela - Diritto di Garanzia») è una voce del menu ma la pagina non è ancora copiata: aggiunta in «pagine». Mancano ancora: cartelle cliniche, protesica, cure palliative, screening.",
-    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): tutela. Da leggere quando ci sono le copie."
+    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): tutela. Da leggere quando ci sono le copie.",
+    "Diritto di garanzia ASUGI (copia del 23/10/2026 della pagina «Percorso di tutela - Diritto di Garanzia», proof «pagina»): si chiede agli sportelli CUP degli ospedali di Trieste (Maggiore, Cattinara), Gorizia e Monfalcone; requisiti: residenza nella zona ASUGI, ricetta valida con quesito diagnostico, prima data fuori tempo in tutte le strutture (anche private accreditate). Si fa la fotocopia dell'impegnativa e si entra nella lista B, D o P (copia all'utente); l'ASUGI cerca la soluzione. Scritti channel «cup», letter_mode «fallback» (nessun indirizzo email per la richiesta: la lettera ha la PEC asugi@certsanita.fvg.it). La pagina non dice entro quando chiedere né se e quando richiamano: è nel regolamento (PDF, aggiunto in «pagine»). Liste d'attesa resta spenta per la regione finché Udine (ASUFC) non ha «what_next».",
+    "Pagine aggiunte in «pagine» il 23/10/2026 (terzo giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): regolamento del diritto di garanzia (PDF), tempi di attesa, richiesta di documentazione e modulo delle cartelle cliniche (PDF), screening (ASUGI e Regione). Mancano ancora: cartelle cliniche, protesica, cure palliative, screening."
    ],
    "pagine": [
     {
@@ -202,12 +206,58 @@
     {
      "tipo": "tutela",
      "url": "https://asugi.sanita.fvg.it/it/amm_trasp_asugi/25_percorso_tutela/index.html"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/amm_trasp_asugi/allegati/016_servizi_erogati/regolamento_diritto_garanzia.pdf"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/amm_trasp_asugi/allegati/001_disposizioni_generali/01_atti_generali/regolamenti/2024_regolamento_diritto_garanzia.pdf"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://asugi.sanita.fvg.it/it/amm_trasp_asugi/23_liste_attesa/"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://asugi.sanita.fvg.it/it/servizi/dist_richiesta_documentazione.html"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://asugi.sanita.fvg.it/it/approfondimenti/onco_screen_regionali.html"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/screening-prevenzione-tumori/FOGLIA7/aziende/asugi.html"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dir_amm/moduli/richiesta_cartelle_cliniche_isontina.pdf"
     }
    ],
    "scelta_medico": {
     "how": "Puoi scegliere o cambiare il medico online, nel Fascicolo sanitario su SESAMO, con SPID o Login FVG (assistenza al telefono 0434 223555). Oppure vai a uno sportello di anagrafe sanitaria: a Trieste solo su appuntamento. Puoi anche mandare una PEC, da un'altra PEC, a asugi@certsanita.fvg.it con il modulo firmato, il documento d'identità e un numero di telefono.",
     "url": "https://asugi.sanita.fvg.it/it/servizi/dist_amm_scelta_revoca_mmg_pls.html"
-   }
+   },
+   "channel": "cup",
+   "letter_mode": "fallback",
+   "send_to": null,
+   "info_url": "https://asugi.sanita.fvg.it/it/amm_trasp_asugi/25_percorso_tutela/index.html",
+   "how_to": "In Friuli-Venezia Giulia il percorso di tutela si chiama «diritto di garanzia». Vale per le prime visite e i primi esami con classe B, D o P. Puoi chiederlo se nessuna struttura dell'ASUGI, anche privata convenzionata, ti dà una data nei tempi della classe. Devi abitare nella zona dell'ASUGI. Vai a uno sportello CUP degli ospedali: Maggiore o Cattinara a Trieste, Gorizia o Monfalcone.",
+   "documents_required": [
+    "Ricetta (impegnativa) valida, con scritto il motivo della visita (quesito diagnostico)"
+   ],
+   "what_next": [
+    "Allo sportello fanno una fotocopia della ricetta e ti mettono in una lista: B, D o P. Ti danno una copia.",
+    "L'ASUGI cerca un posto nelle sue strutture o in una struttura privata convenzionata, in tutta la sua zona."
+   ],
+   "notes": [],
+   "details": [
+    "Sportello CUP dell'Ospedale Maggiore di Trieste (piazza dell'Ospitale 1, piano terra): dal lunedì al venerdì 7:00–19:00, sabato 7:00–12:00.",
+    "Sportello CUP dell'Ospedale di Cattinara (strada di Fiume 447, palazzina poliambulatori): dal lunedì al venerdì 7:30–19:00.",
+    "Sportelli CUP degli ospedali di Gorizia (via Fatebenefratelli 34) e Monfalcone (via Galvani 1): dal lunedì al venerdì 8:30–19:00."
+   ]
   },
   {
    "id": "pordenone",
@@ -423,7 +473,8 @@
     "Orari URP Pordenone e Spilimbergo non scritti nella pagina.",
     "Percorso di tutela in Friuli-Venezia Giulia: si chiama «diritto di garanzia» (regolamenti aziendali 2024; la responsabile è l'azienda di residenza). Chi rifiuta la data proposta nei tempi, o sceglie una struttura fuori dall'azienda, perde il diritto (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server). Scelta del medico online su SESAMO (Fascicolo sanitario) con SPID, CIE o CRS (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server). Nessun modulo acceso: pagine dei servizi non ancora copiate.",
     "Diritto di garanzia ASFO (copia del 22/10/2026 della pagina «Liste di attesa», proof «pagina»): email a tempidiattesa@asfo.sanita.fvg.it con promemoria, impegnativa e telefono, o di persona agli sportelli CUP di Pordenone, San Vito, Sacile, Spilimbergo. La segnalazione va fatta entro 4 giorni lavorativi dalla prenotazione (B), 10 (D), 40 (P): sono termini per chi chiede, non per la risposta (l'estratto di stamattina diceva il contrario). Scelta del medico online su SESAMO (pagina copiata). Cartelle cliniche: la pagina Contatti (21/10/2026) dice che dal 18/06/2026 l'ufficio copia cartelle cliniche è al nuovo ospedale di Pordenone, sportello CUP del piano terra, senza numero: manca la pagina «Richiesta documentazione sanitaria» (aggiunta in «pagine»).",
-    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): cartelle. Da leggere quando ci sono le copie."
+    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): cartelle. Da leggere quando ci sono le copie.",
+    "Pagine aggiunte in «pagine» il 23/10/2026 (terzo giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): regolamento del diritto di garanzia (PDF), screening (ASFO e Regione). La pagina «Richiesta documentazione sanitaria» ora è copiata: da leggere per le cartelle cliniche."
    ],
    "pagine": [
     {
@@ -457,6 +508,18 @@
     {
      "tipo": "cartelle",
      "url": "https://asfo.sanita.fvg.it/it/servizi/richiesta_documentazione_sanitaria.html"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/amministrazione_trasparente/16_servizi_erogati/_doc/ASFO_Regolamento_aziendale_per_il_diritto_di_garanzia1.0.pdf"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://asfo.sanita.fvg.it/it/schede/screening_prevenzione_tumori.html"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/screening-prevenzione-tumori/FOGLIA7/aziende/asfo.html"
     }
    ],
    "channel": "email",
@@ -640,18 +703,22 @@
     {
      "label": "ASUGI – Scelta e revoca del medico di medicina generale e del pediatra",
      "url": "https://asugi.sanita.fvg.it/it/servizi/dist_amm_scelta_revoca_mmg_pls.html"
+    },
+    {
+     "label": "ASUGI – Percorso di tutela, diritto di garanzia",
+     "url": "https://asugi.sanita.fvg.it/it/amm_trasp_asugi/25_percorso_tutela/index.html"
     }
    ],
-   "last_verified": "2026-10-22",
+   "last_verified": "2026-10-23",
    "todo": [
     "116117: attivo in tutto il FVG. Prima solo per ASUGI (Trieste e Gorizia) dal 19 gennaio 2026, al posto del numero verde 800 614302 (pagina news ASUGI); dal 13 aprile 2026 anche in ASUFC (Udine) e ASFO (Pordenone) (news ASUFC e ASFO). La pagina della Regione (aggiornata 30/07/2026) dice che la centrale è a Trieste e risponde a tutta la regione: gratuito, 24/7, attiva la guardia medica (feriali 20–8, weekend e festivi) e i servizi territoriali. Quindi niente vecchi numeri locali di guardia medica.",
     "CUP: in FVG c'è un solo numero regionale, il Call center unico salute e sociale 0434 223522 (gestito da ARCS), lun–ven 7–22, sabato 7–20, da fisso, cellulare ed estero; resta attivo anche 848 448 884 solo da rete fissa. Le aziende non hanno un CUP telefonico proprio: hanno solo sportelli CUP e farmacie abilitate.",
     "Cure a casa (ADI/PUA) Trieste: nelle copie non c'è un numero chiaro di accesso alle cure domiciliari (solo numeri di ambulatori dei distretti); si attiva tramite medico di famiglia o 116117.",
     "L'ARCS indica per l'URP di Trieste anche 040 3997180 (gestione reclami), diverso dal 040 3994880 delle pagine ASUGI: ho messo quello delle pagine ASUGI.",
-    "Percorso di tutela in Friuli-Venezia Giulia: si chiama «diritto di garanzia» (regolamenti aziendali 2024; la responsabile è l'azienda di residenza). Chi rifiuta la data proposta nei tempi, o sceglie una struttura fuori dall'azienda, perde il diritto (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server). Nessun modulo acceso: pagine dei servizi non ancora copiate.",
-    "Diritto di garanzia ASUGI (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): si attiva agli sportelli del CUP ospedaliero; ti richiamano entro 3 giorni lavorativi (B), 10 (D), 40 (P). Scelta del medico anche con PEC a asugi@certsanita.fvg.it. Cartella clinica: a pagamento, modulo al CUP, 30-60 giorni (da confrontare con i 7 giorni della L. 24/2017).",
     "Copia del 22/10/2026 della pagina ASUGI «Scelta / revoca» (proof «pagina»): SESAMO con SPID o Login FVG (assistenza 0434 223555), sportelli di anagrafe sanitaria (a Trieste su appuntamento), PEC a asugi@certsanita.fvg.it. Il diritto di garanzia ASUGI («Percorso di tutela - Diritto di Garanzia») è una voce del menu ma la pagina non è ancora copiata: aggiunta in «pagine». Mancano ancora: cartelle cliniche, protesica, cure palliative, screening.",
-    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): tutela. Da leggere quando ci sono le copie."
+    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): tutela. Da leggere quando ci sono le copie.",
+    "Diritto di garanzia ASUGI (copia del 23/10/2026 della pagina «Percorso di tutela - Diritto di Garanzia», proof «pagina»): si chiede agli sportelli CUP degli ospedali di Trieste (Maggiore, Cattinara), Gorizia e Monfalcone; requisiti: residenza nella zona ASUGI, ricetta valida con quesito diagnostico, prima data fuori tempo in tutte le strutture (anche private accreditate). Si fa la fotocopia dell'impegnativa e si entra nella lista B, D o P (copia all'utente); l'ASUGI cerca la soluzione. Scritti channel «cup», letter_mode «fallback» (nessun indirizzo email per la richiesta: la lettera ha la PEC asugi@certsanita.fvg.it). La pagina non dice entro quando chiedere né se e quando richiamano: è nel regolamento (PDF, aggiunto in «pagine»). Liste d'attesa resta spenta per la regione finché Udine (ASUFC) non ha «what_next».",
+    "Pagine aggiunte in «pagine» il 23/10/2026 (terzo giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): regolamento del diritto di garanzia (PDF), tempi di attesa, richiesta di documentazione e modulo delle cartelle cliniche (PDF), screening (ASUGI e Regione). Mancano ancora: cartelle cliniche, protesica, cure palliative, screening."
    ],
    "pagine": [
     {
@@ -753,12 +820,58 @@
     {
      "tipo": "tutela",
      "url": "https://asugi.sanita.fvg.it/it/amm_trasp_asugi/25_percorso_tutela/index.html"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/amm_trasp_asugi/allegati/016_servizi_erogati/regolamento_diritto_garanzia.pdf"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/amm_trasp_asugi/allegati/001_disposizioni_generali/01_atti_generali/regolamenti/2024_regolamento_diritto_garanzia.pdf"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://asugi.sanita.fvg.it/it/amm_trasp_asugi/23_liste_attesa/"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://asugi.sanita.fvg.it/it/servizi/dist_richiesta_documentazione.html"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://asugi.sanita.fvg.it/it/approfondimenti/onco_screen_regionali.html"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/screening-prevenzione-tumori/FOGLIA7/aziende/asugi.html"
+    },
+    {
+     "tipo": "cartelle",
+     "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dss/moduli/cup_mod_rich_cart_clin_rev00.pdf"
     }
    ],
    "scelta_medico": {
     "how": "Puoi scegliere o cambiare il medico online, nel Fascicolo sanitario su SESAMO, con SPID o Login FVG (assistenza al telefono 0434 223555). Oppure vai a uno sportello di anagrafe sanitaria: a Trieste solo su appuntamento. Puoi anche mandare una PEC, da un'altra PEC, a asugi@certsanita.fvg.it con il modulo firmato, il documento d'identità e un numero di telefono.",
     "url": "https://asugi.sanita.fvg.it/it/servizi/dist_amm_scelta_revoca_mmg_pls.html"
-   }
+   },
+   "channel": "cup",
+   "letter_mode": "fallback",
+   "send_to": null,
+   "info_url": "https://asugi.sanita.fvg.it/it/amm_trasp_asugi/25_percorso_tutela/index.html",
+   "how_to": "In Friuli-Venezia Giulia il percorso di tutela si chiama «diritto di garanzia». Vale per le prime visite e i primi esami con classe B, D o P. Puoi chiederlo se nessuna struttura dell'ASUGI, anche privata convenzionata, ti dà una data nei tempi della classe. Devi abitare nella zona dell'ASUGI. Vai a uno sportello CUP degli ospedali: Maggiore o Cattinara a Trieste, Gorizia o Monfalcone.",
+   "documents_required": [
+    "Ricetta (impegnativa) valida, con scritto il motivo della visita (quesito diagnostico)"
+   ],
+   "what_next": [
+    "Allo sportello fanno una fotocopia della ricetta e ti mettono in una lista: B, D o P. Ti danno una copia.",
+    "L'ASUGI cerca un posto nelle sue strutture o in una struttura privata convenzionata, in tutta la sua zona."
+   ],
+   "notes": [],
+   "details": [
+    "Sportello CUP dell'Ospedale Maggiore di Trieste (piazza dell'Ospitale 1, piano terra): dal lunedì al venerdì 7:00–19:00, sabato 7:00–12:00.",
+    "Sportello CUP dell'Ospedale di Cattinara (strada di Fiume 447, palazzina poliambulatori): dal lunedì al venerdì 7:30–19:00.",
+    "Sportelli CUP degli ospedali di Gorizia (via Fatebenefratelli 34) e Monfalcone (via Galvani 1): dal lunedì al venerdì 8:30–19:00."
+   ]
   },
   {
    "id": "udine",
@@ -877,6 +990,131 @@
      "verified": "2026-10-21",
      "proof": "pagina",
      "address": "Piazzale Santa Maria della Misericordia 15, Udine"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Anagrafe sanitaria ASUFC – Cividale del Friuli: scelta e revoca del medico",
+     "number": "0432 1796345",
+     "address": "Via Carraria 29, Cividale del Friuli",
+     "url": "https://asufc.sanita.fvg.it/it/servizi/anagrafe_sanitaria.html",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Anagrafe sanitaria ASUFC – Manzano: scelta e revoca del medico",
+     "number": "0432 742414",
+     "address": "Via Drusin 25, Manzano",
+     "url": "https://asufc.sanita.fvg.it/it/servizi/anagrafe_sanitaria.html",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Anagrafe sanitaria ASUFC – Tarcento: scelta e revoca del medico",
+     "number": "0432 780233",
+     "address": "Via Coianiz 2, Tarcento",
+     "url": "https://asufc.sanita.fvg.it/it/servizi/anagrafe_sanitaria.html",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Anagrafe sanitaria ASUFC – Tricesimo (risponde la sede di Tarcento): scelta e revoca del medico",
+     "number": "0432 852505",
+     "address": "Via dei Carpini 3, Tricesimo",
+     "url": "https://asufc.sanita.fvg.it/it/servizi/anagrafe_sanitaria.html",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Anagrafe sanitaria ASUFC – Udine e Tavagnacco (ufficio informazioni del distretto di Udine): scelta e revoca del medico",
+     "number": "0432 553800",
+     "url": "https://asufc.sanita.fvg.it/it/servizi/anagrafe_sanitaria.html",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Anagrafe sanitaria ASUFC – Tolmezzo: scelta e revoca del medico",
+     "number": "0433 462421",
+     "address": "Via Carnia Libera 1944 n. 29, Tolmezzo",
+     "url": "https://asufc.sanita.fvg.it/it/servizi/anagrafe_sanitaria.html",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Anagrafe sanitaria ASUFC – Gemona del Friuli: scelta e revoca del medico",
+     "number": "0432 989351",
+     "address": "Piazza Rodolone 2, Gemona del Friuli",
+     "url": "https://asufc.sanita.fvg.it/it/servizi/anagrafe_sanitaria.html",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Anagrafe sanitaria ASUFC – Tarvisio: scelta e revoca del medico",
+     "number": "0428 416121",
+     "address": "Via Ludmilla Tarmann 9, Tarvisio",
+     "url": "https://asufc.sanita.fvg.it/it/servizi/anagrafe_sanitaria.html",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Anagrafe sanitaria ASUFC – San Daniele del Friuli: scelta e revoca del medico",
+     "number": "0432 949568",
+     "address": "Via Carducci 5, San Daniele del Friuli",
+     "url": "https://asufc.sanita.fvg.it/it/servizi/anagrafe_sanitaria.html",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Anagrafe sanitaria ASUFC – Codroipo: scelta e revoca del medico",
+     "number": "0432 1910165",
+     "address": "Viale Duodo 82, Codroipo",
+     "url": "https://asufc.sanita.fvg.it/it/servizi/anagrafe_sanitaria.html",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Anagrafe sanitaria ASUFC – Cervignano del Friuli: scelta e revoca del medico",
+     "number": "0431 387734",
+     "address": "Via Trieste 75, Cervignano del Friuli",
+     "url": "https://asufc.sanita.fvg.it/it/servizi/anagrafe_sanitaria.html",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Anagrafe sanitaria ASUFC – Palmanova: scelta e revoca del medico",
+     "number": "0432 921917",
+     "address": "Via Natisone 11, Palmanova",
+     "url": "https://asufc.sanita.fvg.it/it/servizi/anagrafe_sanitaria.html",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Anagrafe sanitaria ASUFC – Latisana: scelta e revoca del medico",
+     "number": "0431 529402",
+     "address": "Piazza Matteotti 8, Latisana",
+     "url": "https://asufc.sanita.fvg.it/it/servizi/anagrafe_sanitaria.html",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "anagrafe",
+     "label": "Anagrafe sanitaria ASUFC – San Giorgio di Nogaro: scelta e revoca del medico",
+     "number": "0431 624815",
+     "address": "Via Palmanova 1, San Giorgio di Nogaro",
+     "url": "https://asufc.sanita.fvg.it/it/servizi/anagrafe_sanitaria.html",
+     "verified": "2026-10-23",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -903,16 +1141,28 @@
     {
      "label": "ARCS – Come contattare il CUP",
      "url": "https://arcs.sanita.fvg.it/it/informazioni-per-i-cittadini/come-contattare-il-cup-e-prenotare-una-prestazione-sanitaria"
+    },
+    {
+     "label": "ASUFC – Liste di attesa e diritto di garanzia",
+     "url": "https://asufc.sanita.fvg.it/it/amministrazione_trasparente/trasparenza_ASUFC/16_servizi_erogati/04_liste_attesa.html"
+    },
+    {
+     "label": "ASUFC – Scelta o cambio del medico o del pediatra",
+     "url": "https://asufc.sanita.fvg.it/it/schede/medici_pediatri/cambio_medico.html"
+    },
+    {
+     "label": "ASUFC – Anagrafe sanitaria (sportelli)",
+     "url": "https://asufc.sanita.fvg.it/it/servizi/anagrafe_sanitaria.html"
     }
    ],
-   "last_verified": "2026-10-21",
+   "last_verified": "2026-10-23",
    "todo": [
     "PUA/cure domiciliari ASUFC: si attivano tramite medico, servizi sociali o PUAI della Casa della Comunità, ma nelle copie non c'è un numero del PUAI; ci sono solo cellulari di infermieri di comunità di singoli comuni (Taipana, Reana), non messi.",
     "La pagina URP dell'ASUFC copiata è la versione tedesca del sito (stesso contenuto).",
-    "Percorso di tutela in Friuli-Venezia Giulia: si chiama «diritto di garanzia» (regolamenti aziendali 2024; la responsabile è l'azienda di residenza). Chi rifiuta la data proposta nei tempi, o sceglie una struttura fuori dall'azienda, perde il diritto (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server). Nessun modulo acceso: pagine dei servizi non ancora copiate.",
-    "Diritto di garanzia ASUFC: regolamento del 28/06/2024; come si chiede non trovato (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server).",
-    "Copie del 22/10/2026: nessuna pagina ASUFC su scelta del medico, cartelle cliniche, protesica, cure palliative, screening o diritto di garanzia (aggiunte in «pagine»). Per questo in Friuli-Venezia Giulia non si accende nessun modulo nuovo: i moduli valgono per tutta la regione.",
-    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): medico, tutela. Da leggere quando ci sono le copie."
+    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): medico, tutela. Da leggere quando ci sono le copie.",
+    "Diritto di garanzia ASUFC (copia del 23/10/2026 della pagina «Liste di attesa», proof «pagina»): si chiede agli sportelli CUP o ai Punti di Salute (elenco con gli orari nella pagina); requisiti: residenza nella zona ASUFC, ricetta dematerializzata valida con quesito diagnostico, un appuntamento già prenotato fuori dai tempi in tutte le strutture (anche private accreditate), richiesta entro 4 giorni feriali dalla prenotazione. Manca «what_next»: la pagina non dice cosa succede dopo la richiesta (se e quando richiamano). È nel regolamento (DDG n. 706 del 28/06/2024, PDF aggiunto in «pagine»). Finché manca, liste-attesa resta spenta in tutta la regione.",
+    "Scelta del medico (copie del 23/10/2026 delle pagine «Scelta o cambio del Medico o del pediatra» e «Anagrafe sanitaria», proof «pagina»): all'ufficio Anagrafe del distretto di residenza, con documento, tessera sanitaria e certificato di residenza; per alcune sedi su appuntamento. La pagina ASUFC non parla della scelta online su SESAMO: non scritta. Acceso medico-famiglia in Friuli-Venezia Giulia (tutte e quattro le aziende hanno scelta_medico).",
+    "Pagine aggiunte in «pagine» il 23/10/2026 (terzo giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): regolamento del diritto di garanzia (PDF), segreteria screening ASUFC, programma regionale di screening. Mancano ancora: cartelle cliniche, protesica, cure palliative, screening."
    ],
    "pagine": [
     {
@@ -946,8 +1196,40 @@
     {
      "tipo": "tutela",
      "url": "https://asufc.sanita.fvg.it/it/amministrazione_trasparente/trasparenza_ASUFC/16_servizi_erogati/04_liste_attesa.html"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://asufc.sanita.fvg.it/export/sites/asufc/it/amministrazione_trasparente/documenti_AT/16_servizi-erogati/liste_attesa/2024_706_regolamento_diritto_garanzia_REG.pdf"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://asufc.sanita.fvg.it/it/strutture/dir_sanitaria/dipartimento_prevenzione/screening_mal_cronico-degenerative/segreteria-screening.html"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/screening-prevenzione-tumori/FOGLIA1/"
     }
-   ]
+   ],
+   "channel": "cup",
+   "letter_mode": "fallback",
+   "send_to": null,
+   "info_url": "https://asufc.sanita.fvg.it/it/amministrazione_trasparente/trasparenza_ASUFC/16_servizi_erogati/04_liste_attesa.html",
+   "how_to": "In Friuli-Venezia Giulia il percorso di tutela si chiama «diritto di garanzia». Vale per le prime visite e i primi esami con classe B, D o P. Puoi chiederlo se hai già una data, ma nessuna struttura dell'ASUFC, anche privata convenzionata, ti dà un posto nei tempi della classe. Devi abitare nella zona dell'ASUFC. Vai a uno sportello CUP o a un Punto di Salute dell'ASUFC.",
+   "documents_required": [
+    "Ricetta elettronica valida, con scritto il motivo della visita (quesito diagnostico)",
+    "Foglio della prenotazione con la data troppo lontana"
+   ],
+   "notes": [
+    "Fallo presto: entro 4 giorni feriali dal giorno in cui hai prenotato il primo appuntamento."
+   ],
+   "details": [
+    "Gli sportelli sono a Udine (ospedale, Gervasutta e via San Valentino), Tarcento, Tricesimo, Povoletto, Cividale, Manzano, Latisana, San Giorgio di Nogaro, Palmanova, Cervignano, Codroipo, Gemona, San Daniele, Tolmezzo, Tarvisio, Pontebba e Moggio Udinese.",
+    "Sportello CUP dell'ospedale di Udine (piazzale Santa Maria della Misericordia 15): dal lunedì al venerdì 7:30–18:15, sabato 7:30–12:15. Gli orari delle altre sedi sono nella pagina dell'ASUFC."
+   ],
+   "scelta_medico": {
+    "how": "Per scegliere o cambiare il medico o il pediatra vai all'ufficio Anagrafe sanitaria del distretto dove abiti. Porta il documento d'identità, la tessera sanitaria e il certificato di residenza. Il cambio è gratis e si può fare quando vuoi. Non devi dire il motivo. In alcune sedi e in alcuni giorni serve un appuntamento.",
+    "url": "https://asufc.sanita.fvg.it/it/schede/medici_pediatri/cambio_medico.html"
+   }
   }
  ]
 }

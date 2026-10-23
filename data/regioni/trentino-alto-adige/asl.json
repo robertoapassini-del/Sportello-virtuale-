@@ -1,7 +1,7 @@
 {
  "region": "Trentino-Alto Adige",
  "model": "Aziende sanitarie provinciali",
- "_note": "Numeri delle aziende sanitarie di Trento (Asuit) e dell'Alto Adige (ASDAA) per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili. A Trento la guardia medica è il 116117; a Bolzano le pagine dell'azienda non si sono lasciate copiare e i numeri sono pochi.",
+ "_note": "Numeri delle aziende sanitarie di Trento (Asuit) e dell'Alto Adige (ASDAA) per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Servono a Numeri utili e, con i numeri dello screening, a Prevenzione (data/regioni/index.json, «moduli»). A Trento la guardia medica è il 116117; a Bolzano le pagine dell'azienda non si sono lasciate copiare e i numeri sono pochi.",
  "asl": [
   {
    "id": "bolzano",
@@ -146,7 +146,9 @@
     "Nessun modulo acceso: la provincia di Bolzano non ha pagine copiate leggibili (sito fatto in JavaScript) e i moduli si accendono per tutta la regione. Trento da solo avrebbe abbastanza dati per alcuni moduli.",
     "Scelta del medico (22/10/2026, solo estratto del motore di ricerca: non usato nei dati; pagina messa in «pagine» per la copia del server): allo sportello del distretto, per email con il documento o online con myCIVIS. Cartella clinica: richiesta al Direttore medico dell'ospedale, a pagamento secondo l'estratto. Invalidità: in Alto Adige l'INPS non fa l'accertamento (estratto della notizia INPS sulla terza fase).",
     "Lettere: nelle copie non c'è né l'email dell'URP né la PEC generale dell'Azienda sanitaria dell'Alto Adige (solo la PEC del Dipartimento di prevenzione, prevention@pec.sabes.it, e le email dei distretti). Senza un indirizzo dell'azienda nessun modulo con una lettera si può accendere per la regione. Aggiunte in «pagine» la pagina dei contatti e della PEC.",
-    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): contatti, urp. Da leggere quando ci sono le copie."
+    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): contatti, urp. Da leggere quando ci sono le copie.",
+    "Copie del 23/10/2026: ancora nessuna email dell'URP né PEC generale dell'Azienda sanitaria dell'Alto Adige. Le pagine nuove (Direzione amministrativa, asdaa.it/it/contatti/53004) danno solo l'ufficio della Direzione amministrativa (da@asdaa.it, vd.da@pec.sabes.it, 0471 223614): non è l'indirizzo per le lettere dei cittadini, non usato. La pagina «Informazioni per pazienti e visitatori» nomina l'URP dell'Ospedale di Bolzano ma senza recapiti. Le pagine di home.asdaa.it e home.sabes.it rispondono 503 al server delle copie: i numeri dello screening (CUPP Prevenzione) restano quelli della copia del 21/10/2026.",
+    "Pagine aggiunte in «pagine» il 23/10/2026 (terzo giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): Ospedale di Bolzano e URP (Bolzano, Bressanone), tempi di prenotazione e liste di attesa, Carta dei servizi. Il percorso di tutela, la PEC e l'URP restano da trovare."
    ],
    "pagine": [
     {
@@ -260,6 +262,30 @@
     {
      "tipo": "urp",
      "url": "https://pnrr.asdaa.it/note_legali"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.asdaa.it/it/ospedale-di-bolzano"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://home.asdaa.it/it/comprensori-sanitari/bolzano/2852.asp?addt_apid=53058"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.sabes.it/it/ospedali/bressanone/3779.asp?addt_apid=53297"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://home.asdaa.it/it/tempi-di-prenotazione.asp"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://home.asdaa.it/it/amministrazione-trasparente/4070.asp"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://home.asdaa.it/it/amministrazione-trasparente/cartadeiservizisanitari.asp"
     }
    ]
   },
@@ -675,6 +701,24 @@
      "url": "https://asuit.tn.it/servizi/cure-palliative",
      "verified": "2026-10-22",
      "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Coordinamento screening di Asuit: numero verde per lo screening del colon-retto e del collo dell'utero (Pap test, HPV)",
+     "number": "800 243625",
+     "hours": "Dal lunedì al venerdì 9:00–12:00",
+     "url": "https://www.asuit.tn.it/servizi/screening-del-tumore-del-colon-retto",
+     "verified": "2026-10-23",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening mammografico di Asuit (tumore del seno): numero verde",
+     "number": "800 100616",
+     "hours": "Dal lunedì al venerdì 9–12 e 13:30–15:30",
+     "url": "https://www.asuit.tn.it/servizi/screening-del-tumore-del-seno",
+     "verified": "2026-10-23",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -713,9 +757,17 @@
     {
      "label": "Asuit – Cambio o prima scelta del medico o del pediatra",
      "url": "https://www.asuit.tn.it/servizi/cambio-o-prima-scelta-del-medico-o-del-pediatra"
+    },
+    {
+     "label": "Asuit – Screening del tumore del seno",
+     "url": "https://www.asuit.tn.it/servizi/screening-del-tumore-del-seno"
+    },
+    {
+     "label": "Asuit – Screening del tumore del colon-retto",
+     "url": "https://www.asuit.tn.it/servizi/screening-del-tumore-del-colon-retto"
     }
    ],
-   "last_verified": "2026-10-22",
+   "last_verified": "2026-10-23",
    "todo": [
     "Nome attuale dell'azienda di Trento: dal 2026 l'APSS (Azienda provinciale per i servizi sanitari) è diventata Asuit – Azienda sanitaria universitaria integrata del Trentino (pagina della Provincia aggiornata il 13/03/2026; sito nuovo asuit.tn.it, i vecchi indirizzi apss.tn.it rimandano alla home di Asuit).",
     "116117 a Trento: attivo per la guardia medica in tutta la provincia (pagina Asuit «Continuità assistenziale», aggiornata il 07/10/2026). Da fuori provincia, dal Primiero e dalle zone di confine con il Veneto si chiama invece 800 016017. Per questo non ho messo numeri locali delle singole sedi di guardia medica.",
@@ -725,7 +777,7 @@
     "Nessun modulo acceso: la provincia di Bolzano non ha pagine copiate leggibili (sito fatto in JavaScript) e i moduli si accendono per tutta la regione. Trento da solo avrebbe abbastanza dati per alcuni moduli.",
     "Percorso di tutela in Trentino (pagina trentinosalute.net «Tempi di attesa», copia del 21/10/2026): se la prima visita non si fa nei tempi della classe si attivano «percorsi di tutela» (pre-liste per prenotare dopo, recupero dei posti liberi); non c'è un indirizzo per chiederlo.",
     "Copie del 22/10/2026 lette (proof «pagina»): scelta del medico (TreC+ se il medico ha posti liberi; prima scelta e deroghe allo sportello anagrafe sanitaria su appuntamento, 0461 371037; 16 sportelli con numero e indirizzo), cartella clinica (modulo firmato e documento per email alla Direzione medica dell'ospedale o alla cassa dell'ospedale; prima copia gratis; la pagina dice «entro 30 giorni», più dei 7 giorni della L. 24/2017 per la documentazione disponibile: il modulo nazionale resta quello giusto), cure palliative (si attivano dal PUA del distretto). Mancano ancora: protesica e screening (pagine aggiunte in «pagine»).",
-    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): protesica, screening. Da leggere quando ci sono le copie."
+    "Screening (copie del 23/10/2026 delle pagine Asuit sul tumore del seno e del colon-retto, proof «pagina»): numero verde 800 243625 per colon-retto e cervice (lun–ven 9–12), 800 100 616 per la mammografia (lun–ven 9–12 e 13:30–15:30), screening@asuit.tn.it, segreteria 0461 904632. Acceso «prevenzione» nella regione (Bolzano ha i numeri del CUPP Prevenzione). La pagina della protesica (Ufficio multizonale, Trento) ora è copiata: da leggere. Tolta da «pagine» la pagina TreC di trentinosalute.net (404)."
    ],
    "pagine": [
     {
@@ -811,10 +863,6 @@
     {
      "tipo": "regione",
      "url": "https://trec.trentinosalute.net/domande-frequenti"
-    },
-    {
-     "tipo": "regione",
-     "url": "https://trentinosalute.net/Argomenti/INNOVAZIONE-E-RICERCA/Ecosistema-sanita-digitale-TreC"
     },
     {
      "tipo": "medico",

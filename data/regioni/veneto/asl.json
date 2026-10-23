@@ -143,13 +143,19 @@
     {
      "label": "ULSS 1 Dolomiti – Assistenza domiciliare integrata, distretto di Feltre",
      "url": "https://www.aulss1.veneto.it/assistenza-domiciliare-integrata-distretto-di-feltre"
+    },
+    {
+     "label": "ULSS 1 Dolomiti – Tempi di attesa e percorsi di tutela",
+     "url": "https://www.aulss1.veneto.it/liste-d-attesa"
     }
    ],
-   "last_verified": "2026-10-22",
+   "last_verified": "2026-10-23",
    "todo": [
     "Cure a casa (copie del 22/10/2026): ADI del distretto di Belluno (0437 516812) e di Feltre (0439 883107), su richiesta del medico di famiglia. Il numero di un PUA non c'è.",
     "Cartelle cliniche (copia del 22/10/2026 della pagina «Richiedere cartelle cliniche»): la richiesta si fa agli Uffici cartelle cliniche di Belluno, Feltre, Pieve di Cadore e Agordo; il costo si sa alla fine della pratica; il ritiro è allo sportello CUP/cassa o per raccomandata. I numeri degli uffici sono in pagine collegate non ancora copiate (aggiunte in «pagine»). Protesi e ausili, screening: pagine non copiate.",
-    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): cartelle. Da leggere quando ci sono le copie."
+    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): cartelle. Da leggere quando ci sono le copie.",
+    "Percorso di tutela (copia del 23/10/2026 della pagina «Tempi d'attesa», proof «pagina»): se la prima visita non si può dare nei tempi al momento della prenotazione, l'ULSS 1 mette la richiesta in una lista di pre-appuntamento e il reparto la programma nei tempi. Scritti how_to e what_next; mancano documents_required (la pagina non dice cosa portare) e un indirizzo dove scrivere se nessuno richiama. Liste-attesa resta spenta nel Veneto: mancano ULSS 2, 4, 5, 6 e 8.",
+    "Pagine aggiunte in «pagine» il 23/10/2026 (terzo giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): screening. Tolta la pagina «ufficio-cartelle-cliniche-2» (404). La pagina «Modulo richiesta documentazione sanitaria» (Feltre) ora è copiata: da leggere."
    ],
    "pagine": [
     {
@@ -201,9 +207,22 @@
      "url": "https://www.aulss1.veneto.it/ufficio-cartelle-cliniche-feltre"
     },
     {
-     "tipo": "cartelle",
-     "url": "https://www.aulss1.veneto.it/service/ufficio-cartelle-cliniche-2/"
+     "tipo": "screening",
+     "url": "https://www.aulss1.veneto.it/service/sisp-screening/"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.aulss1.veneto.it/servizio-di-prevenzione-delle-malattie-croniche-non-trasmissibili-programmi-di-screening-e-promozione-della-salute"
     }
+   ],
+   "channel": "cup",
+   "letter_mode": "fallback",
+   "send_to": null,
+   "info_url": "https://www.aulss1.veneto.it/liste-d-attesa",
+   "how_to": "Nel Veneto il percorso di tutela parte dal CUP. Se al momento della prenotazione non c'è posto nei tempi della classe, l'ULSS 1 attiva da sola i «percorsi di tutela» per le prime visite e i primi esami.",
+   "what_next": [
+    "Il CUP ti mette in una lista di pre-appuntamento.",
+    "Il reparto riceve la lista e programma la visita entro i tempi della classe scritta sulla ricetta."
    ]
   },
   {
@@ -319,7 +338,8 @@
     "Centralino: nessuna copia lo riporta (la pagina «Strutture» risponde 503; aggiunta in «pagine» la pagina «centralini»).",
     "PUA e cure a casa: la pagina sulle Case della Comunità non dà numeri; il 116117 orienta ai servizi del territorio.",
     "Cartelle cliniche, protesi e ausili, screening: pagine non copiate.",
-    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): cartelle, protesica. Da leggere quando ci sono le copie."
+    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): cartelle, protesica. Da leggere quando ci sono le copie.",
+    "Pagine aggiunte in «pagine» il 23/10/2026 (terzo giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): liste d'attesa e percorsi di tutela (la pagina «liste-attesa» risponde 404: tolta), screening. Ora sono copiate le pagine «Documentazione sanitaria», «Ufficio cartelle cliniche Treviso» e «Richiedere dispositivi di assistenza protesica»: da leggere."
    ],
    "pagine": [
     {
@@ -345,10 +365,6 @@
     {
      "tipo": "pua",
      "url": "https://www.aulss2.veneto.it/che-cosa-si-pu-trovare-in-una-casa-della-comunit"
-    },
-    {
-     "tipo": "tutela",
-     "url": "https://www.aulss2.veneto.it/liste-attesa"
     },
     {
      "tipo": "altro",
@@ -389,6 +405,22 @@
     {
      "tipo": "protesica",
      "url": "https://www.aulss2.veneto.it/richiedere-dispositivi-di-assistenza-protesica"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.aulss2.veneto.it/liste-d-attesa"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.aulss2.veneto.it/liste-di-attesa"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.aulss2.veneto.it/Servizio-programmi-di-screening"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.aulss2.veneto.it/screening-colon-retto"
     }
    ]
   },
@@ -633,6 +665,15 @@
      "url": "https://www.aulss3.veneto.it/Numeri-Utili-1",
      "verified": "2026-10-22",
      "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Esami contro i tumori (screening) dell'ULSS 4 a San Donà di Piave, Portogruaro e Jesolo: call center",
+     "number": "0421 228243",
+     "hours": "Dal lunedì al venerdì 9:00–14:00",
+     "url": "https://www.aulss4.veneto.it/home/dettaglio/servizi/screening-oncologici",
+     "verified": "2026-10-23",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -659,9 +700,13 @@
     {
      "label": "ULSS 4 Veneto Orientale – 116117",
      "url": "https://www.aulss4.veneto.it/home/numeri-utili/116117-e-continuita-assistenziale/116117"
+    },
+    {
+     "label": "ULSS 4 Veneto Orientale – Screening oncologici",
+     "url": "https://www.aulss4.veneto.it/home/dettaglio/servizi/screening-oncologici"
     }
    ],
-   "last_verified": "2026-10-22",
+   "last_verified": "2026-10-23",
    "todo": [
     "Come è fatto: la provincia di Venezia ha due aziende. L'ULSS 3 Serenissima copre Venezia, Mestre, Mirano-Dolo e Chioggia; l'ULSS 4 Veneto Orientale copre San Donà di Piave, Portogruaro e Jesolo. Una sola voce per provincia: i contatti dicono di quale ULSS sono. La PEC in «pec» è dell'ULSS 3; quella dell'ULSS 4 è protocollo.aulss4@pecveneto.it (nelle copie dell'ULSS 4). Per le lettere servirà scegliere l'ULSS (domanda in più o una voce per ULSS).",
     "ULSS 3: nelle copie mancano il centralino generale e il numero dell'URP (nella pagina «Numeri utili» sono voci chiuse che la copia non apre). Aggiunte in «pagine» le pagine dei centralini e dell'URP.",
@@ -669,7 +714,9 @@
     "ULSS 4: PUA e cure a casa si attivano con il 116117 (pagina 116117); nessun numero del PUA nelle copie.",
     "ULSS 3: la pagina della continuità assistenziale e quella dell'assistenza domiciliare sono copiate quasi vuote.",
     "Zone per le lettere (22/10/2026): sub_areas con ULSS 3 Serenissima (PEC protocollo.aulss3@pecveneto.it, pagina URP e pagina PEC dell'ULSS 3: l'URP non ha un'email, si scrive con il modulo web, per posta o con la PEC) e ULSS 4 Veneto Orientale (urp@aulss4.veneto.it e protocollo.aulss4@pecveneto.it, pagina URP dell'ULSS 4). Nome ufficiale dall'elenco della Regione («Azienda ULSS 3 Serenissima», «Azienda ULSS 4 Veneto Orientale»). I comuni sotto il pulsante sono le sedi che le copie nominano (distretti e presidi), non l'elenco completo: manca la pagina con tutti i comuni di ogni ULSS (aggiunte in «pagine»). aziende_multiple resta true.",
-    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): cartelle, protesica, screening. Da leggere quando ci sono le copie."
+    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): cartelle, protesica, screening. Da leggere quando ci sono le copie.",
+    "Copie del 23/10/2026 (proof «pagina»): screening dell'ULSS 4 (call center 0421 228243, lun–ven 9–14, prevenzione.screening@aulss4.veneto.it). Percorso di tutela dell'ULSS 3 (pagina «Liste di attesa» di trasparenza.aulss3.veneto.it): al CUP, per le prestazioni garantite, presa in carico in un centro accreditato con promemoria e richiamata; altrimenti pre-appuntamento; intramoenia con il solo ticket su richiesta. Scritto nella zona ulss3 (how_to, what_next). Mancano per l'ULSS 4 la pagina del percorso di tutela e per tutte e due documents_required.",
+    "Pagine aggiunte in «pagine» il 23/10/2026 (terzo giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): Piano attuativo liste d'attesa dell'ULSS 4 (PDF: percorsi di tutela e i 21 comuni dell'ULSS 4), Case della Comunità dell'ULSS 4. I comuni delle zone restano quelli delle sedi nominate nelle copie. Le pagine «Assistenza protesica» (ULSS 3) e «Richiedere la cartella clinica» (ULSS 4) sono copiate quasi vuote (pagine fatte in JavaScript)."
    ],
    "pagine": [
     {
@@ -815,6 +862,14 @@
     {
      "tipo": "screening",
      "url": "https://www.aulss4.veneto.it/home/dettaglio/servizi/screening-oncologici"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.aulss4.veneto.it/myportal/ASSL10VE/api/content/download?id=67404e862b17ae008d493d14"
+    },
+    {
+     "tipo": "altro",
+     "url": "https://www.aulss4.veneto.it/home/azienda/strutture/case-della-comunita"
     }
    ],
    "sub_areas": [
@@ -836,7 +891,18 @@
      "nome_lettera": "Azienda ULSS 3 Serenissima",
      "pec": "protocollo.aulss3@pecveneto.it",
      "emails": [],
-     "site_url": "https://www.aulss3.veneto.it/"
+     "site_url": "https://www.aulss3.veneto.it/",
+     "channel": "cup",
+     "letter_mode": "fallback",
+     "send_to": null,
+     "info_url": "https://trasparenza.aulss3.veneto.it/trasparenza-liste-attesa",
+     "how_to": "Nel Veneto il percorso di tutela parte dal CUP. Se al CUP non c'è posto subito, per le visite e gli esami «garantiti» l'ULSS 3 ti propone la presa in carico in un centro privato convenzionato.",
+     "what_next": [
+      "Se accetti, ti danno un promemoria con il numero della presa in carico.",
+      "Il centro convenzionato ti chiama e ti dà la data.",
+      "Per le visite non «garantite» la richiesta va in una lista di pre-appuntamento.",
+      "Se non c'è posto nei tempi, puoi chiedere la visita in libera professione (intramoenia) pagando solo il ticket."
+     ]
     },
     {
      "id": "ulss4",
@@ -987,7 +1053,8 @@
    "todo": [
     "PUA e cure a casa: le pagine sulle Case della Comunità non danno numeri; il 116117 orienta ai servizi del territorio.",
     "Cartelle cliniche, protesi e ausili, screening: pagine non copiate.",
-    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): cartelle, protesica. Da leggere quando ci sono le copie."
+    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): cartelle, protesica. Da leggere quando ci sono le copie.",
+    "Pagine aggiunte in «pagine» il 23/10/2026 (terzo giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): liste di attesa e percorsi di tutela, screening (pagina e guida in PDF). Tolta «cartelle-cliniche» (404). Ora sono copiate «Ritiro referti e cartelle cliniche» e «Servizio Assistenza Protesica»: da leggere."
    ],
    "pagine": [
     {
@@ -1044,15 +1111,27 @@
     },
     {
      "tipo": "cartelle",
-     "url": "https://www.aulss5.veneto.it/cartelle-cliniche"
-    },
-    {
-     "tipo": "cartelle",
      "url": "https://www.aulss5.veneto.it/ritiro-referti-e-cartelle-cliniche"
     },
     {
      "tipo": "protesica",
      "url": "https://www.aulss5.veneto.it/Servizio-Assistenza-Protesica"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.aulss5.veneto.it/lista-di-attesa"
+    },
+    {
+     "tipo": "tutela",
+     "url": "http://www.aulss5.veneto.it/amministrazione-trasparente/servizi-erogati/liste-di-attesa/50686.html"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.aulss5.veneto.it/Screening-mammografico"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.aulss5.veneto.it/index.cfm?action=mys.apridoc&iddoc=764"
     }
    ]
   },
@@ -1239,7 +1318,8 @@
     "La pagina URP dice che le email a urp@aulss6.veneto.it con reclami o richieste non vengono prese in carico: si usano i moduli del sito o la PEC.",
     "PUA e cure a casa: la pagina «Casa della Comunità» dà 404; numero del PUA non trovato.",
     "Azienda Ospedale-Università di Padova: non ancora tra le pagine copiate.",
-    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): cartelle. Da leggere quando ci sono le copie."
+    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): cartelle. Da leggere quando ci sono le copie.",
+    "Pagine aggiunte in «pagine» il 23/10/2026 (terzo giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): D.Lgs. 124/98 e Piano attuativo liste d'attesa 2026 (PDF), screening. Tolte due pagine delle cartelle cliniche (404). Ora è copiata la pagina «Ufficio Cartelle Cliniche Padova Sud»: da leggere."
    ],
    "pagine": [
     {
@@ -1288,15 +1368,27 @@
     },
     {
      "tipo": "cartelle",
-     "url": "https://www.aulss6.veneto.it/Cartelle-Cliniche-Ospedale-SantAntonio"
-    },
-    {
-     "tipo": "cartelle",
-     "url": "https://www.aulss6.veneto.it/Cartelle-Cliniche-Ospedale-di-Cittadella"
-    },
-    {
-     "tipo": "cartelle",
      "url": "https://www.aulss6.veneto.it/ufficio-cartelle-cliniche-schiavonia"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.aulss6.veneto.it/trasparenza-disposizioni-aziendali-merito-applicazione-dlgs-124-98"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.aulss6.veneto.it/apridoc/5CF07358885D472A92884C1BA85BEE6A35740"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.aulss6.veneto.it/Screening-del-collo-dellutero"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.aulss6.veneto.it/Screening-del-tumore-della-mammella"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.aulss6.veneto.it/Screening-del-tumore-del-colon-retto"
     }
    ]
   },
@@ -1574,14 +1666,15 @@
      "url": "https://www.aulss8.veneto.it/punto-salute-centro-arzignano-servizio-assistenza-domiciliare-integrata-adi"
     }
    ],
-   "last_verified": "2026-10-22",
+   "last_verified": "2026-10-23",
    "todo": [
     "Come è fatto: la provincia di Vicenza ha due aziende. L'ULSS 8 Berica copre Vicenza e l'Ovest Vicentino (distretti Est e Ovest); l'ULSS 7 Pedemontana copre Bassano, Asiago e l'Alto Vicentino (Thiene, Schio). La PEC in «pec» è dell'ULSS 8; quella dell'ULSS 7 è protocollo.aulss7@pecveneto.it (nelle copie dell'ULSS 7). Per le lettere servirà scegliere l'ULSS.",
     "ULSS 8: le copie non dicono quali comuni sono nel distretto Est e quali nel distretto Ovest.",
     "ULSS 7: l'URP di Santorso ha un orario temporaneo (pagina «centralini»): ricontrollarlo.",
     "Zone per le lettere (22/10/2026): sub_areas con ULSS 8 Berica (protocollo@aulss8.veneto.it e protocollo.aulss8@pecveneto.it: la pagina «URP online» dice di scrivere a questi due indirizzi) e ULSS 7 Pedemontana (urp@aulss7.veneto.it e protocollo.aulss7@pecveneto.it, pagina «Relazioni con il pubblico»). I comuni dell'ULSS 7 vengono dalla pagina «Distretti e territorio» dell'ULSS 7; per l'ULSS 8 le copie non danno l'elenco: sono gli altri comuni della provincia. Nome ufficiale dall'elenco della Regione. aziende_multiple resta true.",
     "PUA e cure a casa: nelle copie c'è solo l'ADI del Punto Salute Centro di Arzignano (ULSS 8, distretto Ovest) e l'Impegnativa di cura domiciliare del distretto Est (0444 756405). Mancano gli altri punti ADI dell'ULSS 8 e quelli dell'ULSS 7.",
-    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): cartelle, protesica, screening. Da leggere quando ci sono le copie."
+    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): cartelle, protesica, screening. Da leggere quando ci sono le copie.",
+    "Percorso di tutela dell'ULSS 7 (copia del 23/10/2026 della pagina «Liste di attesa», proof «pagina»): pre-appuntamento e richiamata con la prima data trovata; prima una sede dell'altro distretto; chi rifiuta la prima data aziendale perde la garanzia; over 75, fragili e oncologici nella sede più vicina. Scritto nella zona ulss7 (how_to, what_next). Per l'ULSS 8 le pagine «percorsi di tutela» e «centrale unica screening» rispondono 404 al server: tolte, aggiunte (url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti) «ambiti di garanzia», «liste di attesa» e le pagine dello screening dell'ULSS 8 e dell'ULSS 7. Ora sono copiate le pagine delle cartelle cliniche (ULSS 8 e ULSS 7) e della protesica (ULSS 7): da leggere."
    ],
    "pagine": [
     {
@@ -1627,10 +1720,6 @@
     {
      "tipo": "guardia",
      "url": "https://www.aulss8.veneto.it/servizio-di-continuit-assistenziale"
-    },
-    {
-     "tipo": "tutela",
-     "url": "https://www.aulss8.veneto.it/servizi-online/prenota-e-paga-online/percorsi-di-tutela/"
     },
     {
      "tipo": "altro",
@@ -1713,8 +1802,28 @@
      "url": "https://www.aulss7.veneto.it/assistenza-protesica"
     },
     {
+     "tipo": "tutela",
+     "url": "https://www.aulss8.veneto.it/servizi-online/prenota-e-paga-online/ambiti-di-garanzia/"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://www.aulss8.veneto.it/amm-trasparente/liste-di-attesa/"
+    },
+    {
      "tipo": "screening",
-     "url": "https://www.aulss8.veneto.it/unita-operative/centrale-unica-screening-2/"
+     "url": "https://www.aulss8.veneto.it/servizi/cittadino/curarsi-e-ottenere-assistenza-sanitaria/screening-per-la-prevenzione-dei-tumori/"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.aulss8.veneto.it/servizio-di-epidemiologia"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.aulss7.veneto.it/programma-screening"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.aulss7.veneto.it/screening-colon-retto"
     }
    ],
    "sub_areas": [
@@ -1751,7 +1860,17 @@
      "emails": [
       "urp@aulss7.veneto.it"
      ],
-     "site_url": "https://www.aulss7.veneto.it/"
+     "site_url": "https://www.aulss7.veneto.it/",
+     "channel": "cup",
+     "letter_mode": "fallback",
+     "send_to": null,
+     "info_url": "https://www.aulss7.veneto.it/Liste-di-attesa",
+     "how_to": "Nel Veneto il percorso di tutela parte dal CUP. Se al momento della prenotazione non c'è posto nei tempi della classe, l'ULSS 7 attiva da sola i «percorsi di tutela» per le prime visite e i primi esami. Se nel tuo distretto non c'è posto, ti propone una sede dell'altro distretto. Se rifiuti la prima data in una sede dell'ULSS, la garanzia decade.",
+     "what_next": [
+      "Il CUP ti mette in una lista di pre-appuntamento.",
+      "L'ULSS 7 cerca altri posti il prima possibile e poi ti richiama con la prima data trovata.",
+      "Se hai più di 75 anni, sei una persona fragile o un malato oncologico, la visita va fatta nella sede più vicina a te."
+     ]
     }
    ]
   },
@@ -1851,6 +1970,15 @@
      "url": "https://www.aulss9.veneto.it/servizi-assistenza-domiciliare-integrata-distretto-3",
      "verified": "2026-10-22",
      "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Segreteria degli screening oncologici dell'ULSS 9 Scaligera (email coordscreening@aulss9.veneto.it)",
+     "number": "045 6712016",
+     "hours": "Dal lunedì al venerdì 8:00–16:00",
+     "url": "https://episcreenpro.aulss9.veneto.it/Screening-Oncologici",
+     "verified": "2026-10-23",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -1869,14 +1997,23 @@
     {
      "label": "ULSS 9 Scaligera – Assistenza domiciliare distretto 3",
      "url": "https://www.aulss9.veneto.it/servizi-assistenza-domiciliare-integrata-distretto-3"
+    },
+    {
+     "label": "ULSS 9 Scaligera – Screening oncologici",
+     "url": "https://episcreenpro.aulss9.veneto.it/Screening-Oncologici"
+    },
+    {
+     "label": "ULSS 9 Scaligera – Liste di attesa e percorsi di tutela",
+     "url": "https://www.aulss9.veneto.it/liste-di-attesa"
     }
    ],
-   "last_verified": "2026-10-22",
+   "last_verified": "2026-10-23",
    "todo": [
     "Centralino: nessuna copia lo riporta (aggiunta in «pagine» la pagina «centralini»).",
     "Assistenza domiciliare: copiata solo la pagina del distretto 3 (pianura e sud della provincia). Mancano gli altri distretti.",
     "Azienda Ospedaliera Universitaria Integrata di Verona: non ancora tra le pagine copiate.",
-    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): cartelle, protesica, screening. Da leggere quando ci sono le copie."
+    "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): cartelle, protesica, screening. Da leggere quando ci sono le copie.",
+    "Copie del 23/10/2026 (proof «pagina»): screening (segreteria 045 6712016, lun–ven 8–16, coordscreening@aulss9.veneto.it, pagina episcreenpro.aulss9.veneto.it); percorso di tutela (pagina «Liste di attesa»: lista unica di pre-appuntamento, richiamata con la prima data, voucher per alcune visite di classe D con chiamata del centro entro 2 giorni lavorativi, intramoenia con il solo ticket). Mancano documents_required (la pagina non dice cosa portare). Ora sono copiate «Richiesta copia documentazione sanitaria» e «Assistenza Protesica»: da leggere."
    ],
    "pagine": [
     {
@@ -1935,6 +2072,17 @@
      "tipo": "screening",
      "url": "https://episcreenpro.aulss9.veneto.it/Screening-Oncologici"
     }
+   ],
+   "channel": "cup",
+   "letter_mode": "fallback",
+   "send_to": null,
+   "info_url": "https://www.aulss9.veneto.it/liste-di-attesa",
+   "how_to": "Nel Veneto il percorso di tutela parte dal CUP. Se al momento della prenotazione non c'è posto nei tempi della classe, gli operatori dell'ULSS 9 mettono la tua richiesta in una lista di pre-appuntamento, unica per tutta l'azienda.",
+   "what_next": [
+    "La lista si scorre in ordine di data, per ogni classe.",
+    "L'ULSS 9 ti richiama e ti propone la prima data trovata.",
+    "Per alcune visite di classe D puoi ricevere per email un buono (voucher) per un centro privato convenzionato: il centro ti chiama entro 2 giorni lavorativi.",
+    "Se i tempi proposti superano quelli della classe, puoi chiedere la visita in libera professione (intramoenia) pagando solo il ticket."
    ]
   }
  ]
