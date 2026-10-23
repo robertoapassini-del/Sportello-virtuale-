@@ -76,6 +76,9 @@ async function controlla(page, dove, regione, problemi) {
   const strano = testo.match(/.{0,40}(\bundefined\b|\bNaN\b|\[object Object\]).{0,30}/);
   if (strano) problemi.push(`${dove}: testo strano «${strano[0]}»`);
   if (await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1)) problemi.push(`${dove}: più larga dello schermo`);
+  // 23/10/2026: «Per gli altri argomenti le lettere già pronte, per ora, solo in Sicilia»: il sito dice quello che c'è.
+  const manca = testo.match(/.{0,40}(lettere già pronte, per ora|non abbiamo ancora|non li abbiamo ancora|ancora da raccogliere|non ancora (in|per) tutte).{0,30}/);
+  if (manca) problemi.push(`${dove}: dice quello che manca: «${manca[0]}»`);
   // fonti.html è l'elenco delle fonti di tutte le regioni (anche Calabria e Basilicata hanno le ASP): lì i nomi vanno bene.
   if (regione !== 'sicilia' && !dove.includes('/fonti.html')) for (const f of await page.evaluate(fraseSiciliane, aspNellaRegione(regione))) problemi.push(`${dove}: frase siciliana senza «Sicilia»: «${f}»`);
   // 23/10/2026: senza regione scelta i moduli mostravano le fonti della Regione Siciliana e dell'ASP di Palermo (anche nel
@@ -290,8 +293,7 @@ async function erroriCollegati(page, dove, problemi) {
   }
 
   // Chi non abita in Sicilia (Lombardia: solo alcuni moduli; INATTIVA: una regione non ancora attiva, dall'indice):
-  // la schermata di blocco dei moduli con dati regionali deve portare alla guida scritta (#guida), mai alla prima
-  // schermata (il cui pulsante riporterebbe al blocco: giro senza uscita). Per la regione non attiva anche i Numeri utili nazionali.
+  // nei moduli che senza i dati della regione non sanno fare niente non c'è il pulsante; resta la guida scritta.
   // In Lombardia i moduli che sanno fare il conto senza la provincia non hanno il blocco: li prova il blocco più sotto.
   const regionali = ['liste-attesa', 'invalidita', 'cartella-clinica', 'medico-famiglia', 'assistenza-domiciliare', 'ausili', 'cure-palliative', 'prevenzione'];
   // I moduli che senza uffici non sanno fare il conto, se la Lombardia non li ha ancora accesi.
@@ -303,37 +305,21 @@ async function erroriCollegati(page, dove, problemi) {
       const dove = `${regione} /${m}/ blocco regione`;
       errori(page, () => dove);
       await page.goto(`${BASE}${m}/`, { waitUntil: 'networkidle' });
-      const start = page.locator('#app button[data-go="province"]:not([disabled]), #app .btn.primary:not([disabled])').first();
-      if (!(await start.count())) { problemi.push(`${dove}: non trovo il pulsante principale`); await ctx.close(); continue; }
-      // Un pulsante che non si può cliccare è un problema da elencare, non un motivo per fermare tutti i controlli
-      // (giro 6, N20: senza la classe «pronto» il pulsante resta nascosto).
-      try { await start.click({ timeout: 5000 }); } catch { problemi.push(`${dove}: il pulsante principale non si può cliccare`); await ctx.close(); continue; }
       await page.waitForTimeout(300);
-      // Prevenzione: prima sesso ed età, poi il risultato nazionale (vedi sotto); qui basta il pulsante principale.
-      if (m === 'prevenzione') { await ctx.close(); continue; }
+      // 23/10/2026: senza i dati della regione il pulsante verso gli uffici non si vede (prima portava a una schermata
+      // «non abbiamo ancora i dati»). Resta la guida scritta. Prevenzione: il pulsante porta al risultato nazionale.
       const r = await page.evaluate(() => ({
-        h1: (document.querySelector('#app h1') || {}).innerText || '',
+        bottone: !!document.querySelector('#app button[data-go="province"]:not([disabled])'),
         guida: !!document.getElementById('guida'),
-        link: !!document.querySelector('#app a[href="#guida"]'),
-        inizio: !!document.querySelector('#app button[data-go="intro"]'),
-        numeri: !!document.querySelector('#app a[href$="numeri-utili/"]'),
       }));
-      if (!/📍/.test(r.h1) && !/non abbiamo ancora i dati|regione non c'è ancora/.test(r.h1)) problemi.push(`${dove}: non si vede la schermata di blocco («${r.h1}»)`);
-      if (r.guida && !r.link) problemi.push(`${dove}: manca il link alla guida (#guida)`);
-      if (r.inizio) problemi.push(`${dove}: c'è ancora il pulsante che riporta all'inizio (giro senza uscita)`);
-      if (regione === INATTIVA && !r.numeri) problemi.push(`${dove}: manca il link ai Numeri utili`);
-      if (r.link) {
-        // Il link alla guida scorre alla guida.
-        await page.click('#app a[href="#guida"]');
-        await page.waitForTimeout(300);
-        const vista = await page.evaluate(() => Math.abs(document.getElementById('guida').getBoundingClientRect().top) < 5);
-        if (!vista) problemi.push(`${dove}: il link alla guida non porta alla guida`);
-      }
+      if (m !== 'prevenzione' && r.bottone) problemi.push(`${dove}: c'è il pulsante verso uffici che la regione non ha`);
+      if (!r.guida) problemi.push(`${dove}: manca la guida scritta`);
       await ctx.close();
     }
   }
   // Regione attiva ma senza i dati di questi moduli (Lombardia, audit del 21/10/2026, giro 5): le domande e il conto
-  // valgono in tutta Italia e si devono poter fare; al posto di uffici e lettera c'è regionMissing().
+  // valgono in tutta Italia e si devono poter fare; al posto di uffici e lettera c'è regionMissing() (rimando neutro ai
+  // numeri utili: dal 23/10/2026 il sito non dice più che i dati mancano).
   // Invalidità (la procedura dipende dalla provincia) e ausili (i giorni li fissa la Regione) restano bloccati,
   // ma il pulsante non deve promettere il «conto». In Sicilia lo stesso percorso arriva fino alla lettera.
   {
@@ -361,7 +347,8 @@ async function erroriCollegati(page, dove, problemi) {
       h1: (document.querySelector('#app h1') || {}).innerText || '',
       testo: document.getElementById('app').innerText,
       lettera: !!document.querySelector('#app [data-go="letter"]'),
-      manca: /uffici e numeri della tua regione non li abbiamo ancora/.test(document.getElementById('app').innerText),
+      numeri: !!document.querySelector('#app a[href$="numeri-utili/"]'),
+      manca: /non abbiamo ancora|non li abbiamo ancora/.test(document.getElementById('app').innerText),
     }));
     // Solo i moduli che la Lombardia non ha ancora acceso (quelli accesi hanno gli uffici e la lettera).
     for (const m of [...Object.keys(percorsi), 'invalidita', 'ausili'].filter((x) => !(LOMBARDIA.moduli || []).includes(x))) {
@@ -370,24 +357,24 @@ async function erroriCollegati(page, dove, problemi) {
       const dove = `lombardia /${m}/ conto senza uffici`;
       errori(page, () => dove);
       await page.goto(`${BASE}${m}/`, { waitUntil: 'networkidle' });
-      const start = page.locator('#app .btn.primary:not([disabled])').first();
-      const etichetta = await start.innerText();
-      try { await start.click({ timeout: 5000 }); } catch { problemi.push(`${dove}: il pulsante principale non si può cliccare`); await ctx.close(); continue; }
-      await page.waitForTimeout(300);
-      let r = await leggi(page);
       if (!percorsi[m]) {
-        if (/conto/i.test(etichetta)) problemi.push(`${dove}: il pulsante promette il conto («${etichetta}») ma il conto non c'è`);
-        if (!/non abbiamo ancora i dati/.test(r.h1)) problemi.push(`${dove}: non si vede la schermata di blocco («${r.h1}»)`);
+        // Senza il conto (invalidità, ausili) il pulsante non c'è: niente promesse, niente «non abbiamo ancora i dati».
+        if (await page.locator('#app button[data-go="province"]:not([disabled])').count()) problemi.push(`${dove}: c'è il pulsante ma il conto non c'è`);
         await ctx.close();
         continue;
       }
-      if (/non abbiamo ancora i dati/.test(r.h1)) { problemi.push(`${dove}: dopo il pulsante c'è il blocco («${r.h1}»)`); await ctx.close(); continue; }
+      const start = page.locator('#app .btn.primary:not([disabled])').first();
+      try { await start.click({ timeout: 5000 }); } catch { problemi.push(`${dove}: il pulsante principale non si può cliccare`); await ctx.close(); continue; }
+      await page.waitForTimeout(300);
+      let r = await leggi(page);
+      if (r.manca) { problemi.push(`${dove}: dopo il pulsante dice che mancano i dati («${r.h1}»)`); await ctx.close(); continue; }
       try { await segui(page, percorsi[m].passi); } catch (e) { problemi.push(`${dove}: percorso interrotto (${e.message.split('\n')[0]})`); await ctx.close(); continue; }
       r = await leggi(page);
       const { data, testo } = percorsi[m];
       if (data && !r.testo.includes(data)) problemi.push(`${dove}: manca la data calcolata ${data} («${r.h1}»)`);
       if (testo && !testo.test(r.testo)) problemi.push(`${dove}: manca «${testo.source}» («${r.h1}»)`);
-      if (!r.manca) problemi.push(`${dove}: manca l'avviso «uffici e numeri non li abbiamo ancora»`);
+      if (r.manca) problemi.push(`${dove}: dice che mancano i dati della regione`);
+      if (!r.numeri) problemi.push(`${dove}: al posto degli uffici manca il rimando ai numeri utili`);
       if (r.lettera) problemi.push(`${dove}: c'è il pulsante della lettera senza l'ufficio a cui mandarla`);
       await controlla(page, dove, 'lombardia', problemi);
       await ctx.close();

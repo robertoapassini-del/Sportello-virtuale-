@@ -2,6 +2,13 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 23/10/2026 — Il sito dice quello che c'è, non quello che manca
+- La home diceva «Per gli altri argomenti le lettere già pronte, per ora, solo in Sicilia». Ora dice solo cosa c'è nella regione scelta: «In Lombardia trovi anche i numeri utili e gli uffici della zona per: invalidità».
+- Moduli senza i dati della regione (invalidità e ausili dove non sono accesi): il pulsante principale e il consiglio sotto non si vedono più. Prima diventava «Uffici e numeri in …» e portava a «Per questo argomento … non abbiamo ancora i dati». Resta la guida scritta.
+- Moduli che fanno il conto anche senza uffici: al posto dell'avviso «uffici e numeri non li abbiamo ancora» c'è il rimando ai numeri utili e all'URP. Tolti anche «non abbiamo ancora un indirizzo sicuro» (liste d'attesa) e «contatti ancora da raccogliere» (fonti di assistenza a casa e cure palliative).
+- Guide: tolte le frasi «(non ancora in tutte le regioni)» e «li abbiamo per molte regioni, non ancora per tutte»; negli ausili, che ci sono solo in Sicilia, «In Sicilia il percorso in questa guida…».
+- Controlli: `tests/coerenza.test.mjs` (guide), una riga in `tests/errori-noti.test.mjs` (pagine e JS), `tests/browser.cjs` su ogni pagina e nei moduli senza dati (niente pulsante, niente «non abbiamo ancora»).
+
 ## 23/10/2026 — Audit «solo in Sicilia»: frasi superate, dati siciliani a chi non ha scelto la Sicilia, regole regionali scritte come nazionali
 - Errore trovato: 10 pagine dicevano «per ora solo per la Sicilia» (uffici, numeri, lettere) per moduli accesi anche in altre regioni: liste d'attesa, cartella clinica, assistenza a casa, cure palliative, invalidità. Corrette; nuovo controllo in `tests/coerenza.test.mjs` che legge `data/regioni/index.json` (al posto della riga di `tests/errori-noti.test.mjs` che obbligava a scrivere «solo per la Sicilia»).
 - «(ASL; in Sicilia si chiama ASP)» in 44 frasi: anche in Calabria l'azienda si chiama ASP (`data/regioni/index.json`). Ora «in Sicilia e in Calabria».

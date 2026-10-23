@@ -25,7 +25,7 @@ function sources() {
   const a = state.province ? asp() : null;
   const items = fontiNazionali(rules.sources);
   if (a) { if (a.info_url) items.push({ label: `${a.name} – sito ufficiale`, url: a.info_url }); items.push(...a.sources); }
-  return [items, { verified: rules.last_verified, note: a && !(a.contacts || []).some((c) => c.topic === 'palliative') ? 'I numeri della rete cure palliative della provincia sono ancora da raccogliere.' : '' }];
+  return [items, { verified: rules.last_verified, note: '' }];
 }
 
 const whatIs = () => `
