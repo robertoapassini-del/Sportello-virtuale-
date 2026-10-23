@@ -1,7 +1,7 @@
 // Modulo 12 — prevenzione gratuita per età: screening oncologici e vaccini.
 // Prima la risposta: la pagina mostra subito la risposta scritta; il percorso per età parte dal pulsante.
 // Regole fisse per età e sesso. Non chiediamo la malattia.
-import { prevenzione } from './engine.js';
+import { prevenzione, numeroScreening } from './engine.js';
 import { esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, readForm, callButton, officeBox, aslLabel, regione, regioneNonPronta, fontiNazionali } from './common.js';
 import { createFlow, choice, restartBtn, progress, needsRegion, showError } from './flow.js';
 
@@ -62,8 +62,8 @@ const screens = {
     // Regione senza i dati di questo modulo: niente ufficio né numero della provincia.
     const a = regioneNonPronta() ? null : data.asl.find((x) => x.id === state.province);
     const scr = a && (a.contacts || []).find((c) => c.topic === 'screening');
-    // screening_numbers sono numeri delle ASP siciliane: valgono solo per la Sicilia.
-    const num = scr ? scr.number : (a && regione() === 'sicilia' ? rules.screening_numbers[state.province] : undefined);
+    // Un numero solo nella frase; con più numeri (più aziende nella provincia, o uno per esame) l'elenco sotto.
+    const { numero: num, elenco } = numeroScreening(a, { regione: regione(), province: state.province, screeningNumbers: rules.screening_numbers });
     const later = r.later.slice(0, 3).map((x) => `<li><span class="ico" aria-hidden="true">${x.icon}</span><span>${esc(x.title)}: <strong>dai ${x.min} anni</strong></span></li>`).join('');
     const none = !r.screening.length && !r.vaccines.length;
     return {
@@ -81,7 +81,7 @@ const screens = {
         <h2>Come prenotare</h2>
         <ol class="big-steps">
           <li><strong>Chiedi al medico di famiglia:</strong> sa quali controlli ti mancano e fa molti vaccini direttamente nello studio.</li>
-          <li><strong>Per gli esami contro i tumori</strong> chiama il numero dello screening dell'${aslLabel()}${a ? ` di ${esc(a.province)}` : ''}${num ? `: <strong>${esc(num)}</strong>` : ' (te lo dà il CUP o l\'URP)'}. Se hai ricevuto una lettera di invito, c'è scritto il numero.</li>
+          <li><strong>Per gli esami contro i tumori</strong> chiama il numero dello screening dell'${aslLabel()}${a ? ` di ${esc(a.province)}` : ''}${num ? `: <strong>${esc(num)}</strong>` : elenco ? ': trovi i numeri qui sotto, con il nome di ogni ufficio' : ' (te lo dà il CUP o l\'URP)'}. Se hai ricevuto una lettera di invito, c'è scritto il numero.</li>
           <li><strong>Per i vaccini</strong> puoi andare anche al centro vaccinale dell'${aslLabel()} o, dove c'è il servizio, in farmacia.</li>
         </ol>
         ${scr ? officeBox(a, 'screening', '🎗️ Prenotare gli esami contro i tumori') : num ? callButton('Numero verde screening', num) : ''}

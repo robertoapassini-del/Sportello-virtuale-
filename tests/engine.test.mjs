@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import {
   parseDate, daysBetween, addDays, formatIt, checkWaiting, callbackDeadline,
-  invRegime, invDeadline, maxWaitDays, art,
+  invRegime, invDeadline, maxWaitDays, art, numeroScreening,
 } from '../js/engine.js';
 import { tutelaLetter, inpsReminder, mailtoHref } from '../js/letters.js';
 
@@ -453,4 +453,13 @@ test('il termine che cade di sabato passa al lunedì', async () => {
   const r = ricorsoDeadline(load('../data/rules-ricorso.json'), { verbaleDate: '2026-04-24', today: '2026-10-01' });
   assert.equal(r.deadline, '2026-10-26');
   assert.equal(r.slittato, true);
+});
+
+// Errore trovato il 23/10/2026: a Roma (6 ASL) e a Perugia (2 USL) la frase dava a tutti il numero della prima azienda.
+test('numero dello screening: uno solo nella frase, se no l\'elenco', () => {
+  const c = (number) => ({ topic: 'screening', number });
+  assert.deepEqual(numeroScreening({ contacts: [c('800 111111')] }, { regione: 'lazio' }), { numero: '800 111111', elenco: false });
+  assert.deepEqual(numeroScreening({ contacts: [c('800 111111'), c('800 222222')] }, { regione: 'lazio' }), { numero: null, elenco: true });
+  assert.deepEqual(numeroScreening({ contacts: [] }, { regione: 'sicilia', province: 'palermo', screeningNumbers: { palermo: '800 333333' } }), { numero: '800 333333', elenco: false });
+  assert.deepEqual(numeroScreening({ contacts: [] }, { regione: 'lazio', province: 'palermo', screeningNumbers: { palermo: '800 333333' } }), { numero: null, elenco: false });
 });
