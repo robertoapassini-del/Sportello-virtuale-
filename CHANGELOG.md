@@ -2,6 +2,13 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 23/10/2026 — Puglia, Basilicata, Calabria, Sardegna: terzo giro sulle copie (anche i PDF)
+- Puglia: prevenzione accesa. Ogni ASL ha il numero degli screening oncologici, letto sulla home dell'ASL copiata il 23/10/2026. Nuovo il numero verde 800 957773 dell'ASL Foggia (https://www.sanita.puglia.it/web/asl-foggia); per l'ASL Lecce lo stesso numero ora viene dalla home del portale nuovo (https://www.sanita.puglia.it/web/asl-lecce), non più dal vecchio portale sist.
+- Basilicata: assistenza a casa accesa (la lettera va all'URP o alla PEC di ogni azienda, già provate). Nuovi per l'ASM Matera, Distretto di Policoro: ADI 0835 986456 e ufficio protesi 0835 986420, via Moncenisio (pagina del Distretto sul vecchio sito old.asmbasilicata.it, copia del 23/10/2026). Tolta da «pagine» la pagina «cure a casa e hospice» dell'ASM, che risponde 404.
+- Liste d'attesa: restano spente in tutte e quattro le regioni. In Puglia e in Sardegna il server non ha copiato PDF; la Carta dei servizi dell'ASP Basilicata (PDF) e le Linee guida del CUP della Calabria (PDF) non danno canale, documenti e indirizzo per azienda; l'ASP di Vibo Valentia risponde ancora 403.
+- Sardegna: in «pagine» la procedura del percorso di tutela dell'ASL Nuoro e la nota dell'ASL Sassari (PDF), da leggere dopo la copia. `inps.json`: le notizie INPS sulla riforma ora sono copiate, ma non dicono se «Sassari» e «Cagliari» valgono per Gallura, Ogliastra, Medio Campidano e Sulcis: regime ancora null.
+- `todo` aggiornati in tutte le aziende delle quattro regioni (riga «Terzo giro»).
+
 ## 23/10/2026 — Copie: i link ai PDF delle pagine; numeri col +39
 - `tools/copie.mjs`: per ogni pagina copiata l'indice ha i link ai PDF dello stesso dominio (`link_pdf`, con il testo del link). Quelli che sembrano moduli o guide (tutela, modulo, istanza, carta dei servizi, liste d'attesa, screening) si copiano subito, al massimo 5 per pagina. Prima i moduli di tutela linkati nelle pagine non si trovavano senza il motore di ricerca (terzo giro sulle regioni). Test in `tests/copie-giro.test.mjs`.
 - Errore trovato: `tools/confronta-copie.mjs` non trovava un numero scritto con il prefisso attaccato (ASL Roma 3: «+390656481»). Ora la ricerca è in `tools/cerca-numero.mjs`, con `tests/cerca-numero.test.mjs`.

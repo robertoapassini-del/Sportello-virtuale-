@@ -3,7 +3,7 @@
   "default": "sicilia",
   "regioni": [
     { "id": "abruzzo", "name": "Abruzzo", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili", "invalidita", "cartella-clinica", "medico-famiglia"] },
-    { "id": "basilicata", "name": "Basilicata", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili", "invalidita", "cartella-clinica", "medico-famiglia"] },
+    { "id": "basilicata", "name": "Basilicata", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili", "invalidita", "cartella-clinica", "medico-famiglia", "assistenza-domiciliare"] },
     { "id": "calabria", "name": "Calabria", "attiva": true, "asl_label": "ASP", "moduli": ["numeri-utili", "invalidita", "medico-famiglia"] },
     { "id": "campania", "name": "Campania", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili", "invalidita", "cartella-clinica", "assistenza-domiciliare"] },
     { "id": "emilia-romagna", "name": "Emilia-Romagna", "attiva": true, "asl_label": "AUSL", "moduli": ["numeri-utili", "invalidita"] },
@@ -14,7 +14,7 @@
     { "id": "marche", "name": "Marche", "in": "nelle Marche", "attiva": true, "asl_label": "AST", "moduli": ["numeri-utili", "invalidita", "cartella-clinica", "assistenza-domiciliare", "cure-palliative"] },
     { "id": "molise", "name": "Molise", "attiva": true, "asl_label": "ASREM", "moduli": ["numeri-utili", "invalidita", "cartella-clinica", "assistenza-domiciliare", "medico-famiglia", "prevenzione"] },
     { "id": "piemonte", "name": "Piemonte", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili", "invalidita", "medico-famiglia"] },
-    { "id": "puglia", "name": "Puglia", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili", "invalidita", "cartella-clinica", "medico-famiglia"] },
+    { "id": "puglia", "name": "Puglia", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili", "invalidita", "cartella-clinica", "medico-famiglia", "prevenzione"] },
     { "id": "sardegna", "name": "Sardegna", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili", "cartella-clinica", "medico-famiglia"] },
     { "id": "sicilia", "name": "Sicilia", "attiva": true, "asl_label": "ASP", "asl_label_long": "Azienda sanitaria provinciale", "asl_intestazione": "Azienda Sanitaria Provinciale", "ente": "Regione Siciliana", "files": { "asl": "asp", "inps": "inps" },
       "link": { "fse": "https://www.regione.sicilia.it/fascicolosanitario", "assessorato": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute", "dialisi": "https://regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/dipartimento-pianificazione-strategica/altri-contenuti/albo-trasporto-emodializzati" } },
