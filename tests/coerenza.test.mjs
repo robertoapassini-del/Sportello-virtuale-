@@ -319,3 +319,24 @@ test('ausili: acceso solo in Sicilia (i 20 giorni e il silenzio-assenso sono sic
   const accesi = indice.regioni.filter((r) => r.attiva && r.id !== 'sicilia' && (!r.moduli || r.moduli.includes('ausili'))).map((r) => r.id);
   assert.deepEqual(accesi, []);
 });
+
+// 23/10/2026: le guide dicevano «per ora solo per la Sicilia» anche dove il modulo era acceso in altre regioni
+// (liste d'attesa, cartella, assistenza a casa, cure palliative, invalidità). Poi la regola: il sito dice quello che c'è,
+// non quello che manca («per ora solo…», «non ancora in tutte le regioni», «se li abbiamo»). Se il modulo è acceso solo
+// in Sicilia, la frase sul percorso («Il percorso in questa guida la prepara…») lo dice come regola della Sicilia.
+test('guide: niente «per ora solo…» né «non ancora in tutte le regioni»; i moduli solo siciliani lo dicono', () => {
+  const MANCA = /per ora,? (li abbiamo )?solo (per|in) (la )?Sicilia|solo quelle della Sicilia|non ancora (in|per) tutte|se li abbiamo|non abbiamo ancora|non li abbiamo ancora/;
+  const errori = [];
+  for (const dir of readdirSync(SITE, { withFileTypes: true }).filter((e) => e.isDirectory() && existsSync(path.join(SITE, e.name, 'index.html')))) {
+    const fuori = indice.regioni.some((r) => r.attiva && r.id !== 'sicilia' && (!r.moduli || r.moduli.includes(dir.name)));
+    const pagine = [path.join(dir.name, 'index.html'), ...readdirSync(path.join(SITE, dir.name), { withFileTypes: true })
+      .filter((e) => e.isDirectory() && existsSync(path.join(SITE, dir.name, e.name, 'index.html'))).map((e) => path.join(dir.name, e.name, 'index.html'))];
+    for (const f of pagine) {
+      readFileSync(path.join(SITE, f), 'utf8').split('\n').forEach((riga, i) => {
+        if (MANCA.test(riga)) errori.push(`${f}:${i + 1}: «${riga.match(MANCA)[0]}»: di' quello che c'è, non quello che manca`);
+        if (!fuori && /in questa guida<\/a> /.test(riga) && !/Sicilia/.test(riga)) errori.push(`${f}:${i + 1}: il modulo «${dir.name}» è acceso solo in Sicilia: dillo («In Sicilia il percorso…»)`);
+      });
+    }
+  }
+  assert.deepEqual(errori, []);
+});

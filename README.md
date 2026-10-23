@@ -1,6 +1,6 @@
 # Guida Sanità
 
-Sito gratuito che dice alle persone in Sicilia cosa spetta loro, entro quando e come chiederlo: sanità, cure e invalidità. Moduli:
+Sito gratuito che dice alle persone in tutta Italia cosa spetta loro, entro quando e come chiederlo: sanità, cure e invalidità. Moduli:
 
 - **Modulo 1 – Liste d'attesa:** la visita o l'esame è troppo lontano rispetto alla classe di priorità della ricetta.
 - **Modulo 2 – Invalidità civile:** la visita per l'invalidità non arriva entro i tempi di legge.
@@ -19,7 +19,7 @@ Temi **solo testo** (`static` in `data/moduli.json`: risposta in cima e pagine c
 
 - Area **Tessera e ricette** (`tessera-e-ricette/`): tessera sanitaria (`tessera-sanitaria/`), fascicolo sanitario e ricetta elettronica (`fascicolo-e-ricetta/`), prenotare e disdire al CUP (`prenotare-cup/`).
 - In **Invalidità**: legge 104 (`legge-104/`), indennità di accompagnamento (`accompagnamento/`), contrassegno disabili (`contrassegno-disabili/`).
-- In **Visite ed esami**: curarsi fuori dalla Sicilia (`cure-fuori-regione/`), dentista (`dentista/`), psicologo (`psicologo/`). In **Aiuto a casa**: RSA (`rsa/`).
+- In **Visite ed esami**: curarsi fuori dalla propria regione (`cure-fuori-regione/`), dentista (`dentista/`), psicologo (`psicologo/`). In **Aiuto a casa**: RSA (`rsa/`).
 
 Requisiti completi: [SPEC.md](SPEC.md).
 
@@ -32,7 +32,7 @@ Requisiti completi: [SPEC.md](SPEC.md).
   «Sì / No» di «Ti è stata utile?» con GoatCounter (`GOATCOUNTER_CODE` in `js/common.js`).
 - **Decide il computer con regole fisse** (`js/engine.js`).
 - I dati di ASP e INPS si aggiornano a mano nei file `data/regioni/<regione>/*.json`, le regole nazionali in `data/*.json`,
-  ognuno con data di verifica e fonte. Per ora c'è solo la Sicilia: il piano per le altre regioni è in [docs/regioni.md](docs/regioni.md).
+  ognuno con data di verifica e fonte. Ci sono tutte le 20 regioni; quali moduli sono accesi in ogni regione lo dice `data/regioni/index.json` (regole in [docs/regioni.md](docs/regioni.md)).
 - **Copie delle pagine ufficiali** (`tools/copie.mjs`): ogni notte un piccolo server in Italia salva in testo le
   pagine ufficiali delle ASL elencate nei dati (molti siti ASL non rispondono dall'estero) nel branch `copie-siti`.
   Una routine settimanale di Claude le confronta con i dati e propone le modifiche con una pull request: nessun

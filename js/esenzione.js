@@ -4,7 +4,7 @@
 // Calcolo con regole fisse nazionali (codici E01-E04). Nessuna lettera.
 // Non chiediamo la malattia: le esenzioni per malattia le mostriamo solo come informazione.
 import { esenzioneReddito, formatEuro } from './engine.js';
-import { esc, loadJSON, loadRegioni, disclaimer, renderFooter, avvisoErrore, readForm, aslLabel } from './common.js';
+import { esc, loadJSON, loadRegioni, disclaimer, renderFooter, avvisoErrore, readForm, aslLabel, fontiNazionali } from './common.js';
 import { createFlow, choice, restartBtn, progress, showError } from './flow.js';
 
 const ROOT = '../';
@@ -14,7 +14,7 @@ const answerHtml = app.innerHTML;
 let rules;
 const state = {};
 
-const sources = () => [rules.sources, { verified: rules.last_verified }];
+const sources = () => [fontiNazionali(rules.sources), { verified: rules.last_verified }];
 
 const ageText = { under6: 'meno di 6 anni', '6to59': 'tra 6 e 59 anni', '60to64': 'tra 60 e 64 anni', '65plus': '65 anni o più' };
 
@@ -62,7 +62,7 @@ const screens = {
   family: () => ({
     html: `${progress(3, 4)}
       <h1>👨‍👩‍👧 La famiglia</h1>
-      <p>Conta chi è nello stesso stato di famiglia e a carico.</p>
+      <p>Conta la famiglia per il fisco: tu, il marito o la moglie (se non siete separati) e chi è a tuo carico.</p>
       <form id="fam-form" novalidate>
         <label class="check"><input type="checkbox" name="spouse" ${state.spouse ? 'checked' : ''}> C'è un coniuge (marito o moglie) a carico</label>
         <label for="children">Quanti figli a carico?<span class="hint">Scrivi 0 se nessuno</span></label>
@@ -155,7 +155,7 @@ const screens = {
         <div class="notice warn"><p>Con i dati che hai scritto (${esc(ageText[state.ageBand])}), ${esc(why.join('; '))}.</p></div>
         <p>Ma potresti non pagare per <strong>altri motivi</strong>: una malattia cronica, un'invalidità, la gravidanza, gli esami di prevenzione. Guarda qui sotto.</p>
         ${otherExemptions()}
-        <div class="notice info"><p>Se la situazione è cambiata (per esempio hai perso il lavoro quest'anno), chiedi allo sportello esenzioni dell'${aslLabel()}: in alcuni casi conta la situazione di adesso.</p></div>
+        <div class="notice info"><p>Questo conto vale per i codici nazionali. Alcune Regioni danno altre esenzioni per reddito: chiedi allo sportello esenzioni dell'${aslLabel()}. Chiedi anche se la situazione è cambiata (per esempio hai perso il lavoro quest'anno): in alcuni casi conta la situazione di adesso.</p></div>
         ${disclaimer(rules.last_verified)}
         ${restartBtn()}`,
     };

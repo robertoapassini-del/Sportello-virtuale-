@@ -56,7 +56,6 @@ const ERRORI = [
   [/tutto gratuito<\/strong> per più di un mese/, 'accompagnamento: si sospende dopo 29 giorni di ricovero gratuito, non «un mese»'],
   [/nessuno può essere dimesso/i, 'dimissione protetta: è un percorso organizzativo regionale, non un divieto di dimissione'],
   [/L'assistenza domiciliare è gratuita\./, 'ADI: gratuite le cure sanitarie; l\'aiuto dell\'operatore dopo 30 giorni può avere una quota (DPCM 2017 art. 22)'],
-  [/in questa guida<\/a> la (prepara|scrive)(?![^.]*solo per la Sicilia)/, 'la lettera già scritta c\'è per ora solo per la Sicilia: dirlo (fuori dalla Sicilia il percorso si ferma)'],
   [/data-go="\$\{(esc\()?first\)?\}"[^`]*Leggi cosa vale/, '«Leggi cosa vale in tutta Italia» riportava all\'inizio del modulo: giro senza uscita (va alla guida #guida)'],
   [/DM 24\/11\/2022/, 'bonus psicologo: il decreto è del 24/11/2023'],
   [/tutto\s*(<strong>)?\s*gratuit/i, 'ADI: gratuite solo le cure sanitarie (DPCM 2017 art. 22)', /ricovero è <strong>tutto gratuito|tutto gratuito per più di 29/],
@@ -84,6 +83,9 @@ const ERRORI = [
   // Verifica dei fatti del 22/10/2026 (giro 7).
   [/[Ss]i sospende[^.]{0,120}29 giorni|29 giorni[^.]{0,60}si sospende/, 'accompagnamento: non si sospende se la struttura non dà tutta l\'assistenza (messaggio INPS 3347/2023): dirlo', /3347|tutta l'assistenza/],
   [/fino a 8\.263,31/, 'esenzione E02/E04: reddito «inferiore a» 8.263,31 (il limite esatto è escluso): «sotto 8.263,31»'],
+  // 23/10/2026: «Per gli altri argomenti le lettere già pronte, per ora, solo in Sicilia» e «non abbiamo ancora i dati»:
+  // il sito dice quello che c'è; dove mancano i dati della regione il pulsante del modulo non si vede (js/flow.js).
+  [/lettere già pronte, per ora|non abbiamo ancora|non li abbiamo ancora|ancora da raccogliere|non ancora (in|per) tutte le regioni/, 'non dire quello che manca: mostra solo quello che c\'è nella regione', /^\s*\/\//],
   [/uffici e lettere solo per la Sicilia|le lettere per ora solo per la Sicilia/, 'home: le regioni con le lettere si calcolano dall\'indice (regioni senza «moduli»), non si scrive «solo per la Sicilia»'],
 ];
 

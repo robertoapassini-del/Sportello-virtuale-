@@ -4,7 +4,7 @@
 import { medicoChoice, todayISO } from './engine.js';
 import { genericRequest, mailtoHref, conZona } from './letters.js';
 import {
-  noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, copyText, printText, readForm, aspCalls, officeBox, personFields, reportErrorHref, generalContact, aslLabel, syncDelegate,
+  noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, copyText, printText, readForm, aspCalls, officeBox, personFields, reportErrorHref, generalContact, aslLabel, syncDelegate, fontiNazionali,
 } from './common.js';
 import { createFlow, choice, restartBtn, progress, letterButtons, senzaUffici, provinceChoice, zonaScreen, intestazioneAzienda } from './flow.js';
 
@@ -24,7 +24,7 @@ const asp = () => conZona(aziendaBase(), state.zona);
 
 function sources() {
   const a = state.province ? asp() : null;
-  const items = [...rules.sources];
+  const items = fontiNazionali(rules.sources);
   if (a) {
     if (a.scelta_medico.url) items.push({ label: `${a.name} – scelta del medico`, url: a.scelta_medico.url });
     if (a.info_url) items.push({ label: `${a.name} – sito ufficiale`, url: a.info_url });
@@ -98,7 +98,7 @@ const screens = {
         <div class="notice info"><p>${whoText()}</p></div>
         ${extra}
         <h2>Dove si fa</h2>
-        ${a ? '' : `<p>Allo sportello «scelta e revoca» del distretto dell'${aslLabel()} dove abiti. In alcune province si può fare anche online, sul sito dell'${aslLabel()}.</p>`}
+        ${a ? '' : `<p>Allo sportello «scelta e revoca» del distretto dell'${aslLabel()} dove abiti. In molte regioni si può fare anche online: sul sito della Regione, nel Fascicolo sanitario o sul sito dell'${aslLabel()}.</p>`}
         ${senzaUffici(a, () => `<p>${esc(a.scelta_medico.how)}</p>
         ${a.scelta_medico.url ? `<a class="btn" href="${esc(a.scelta_medico.url)}" target="_blank" rel="noopener">💻 ${esc(a.scelta_medico.url_label || `Sito dell'${aslLabel()}`)}</a>` : ''}
         ${sportelli(a)}`)}

@@ -124,8 +124,7 @@ export function regionMissing() {
   if (!r) return '';
   // Regione attiva, ma questo modulo non ha ancora i suoi dati: la parte nazionale e i numeri utili della regione.
   if (r.parziale) {
-    return `<div class="notice warn"><p><strong>${esc(r.name)}:</strong> per questo argomento uffici e numeri della tua regione non li abbiamo ancora.
-      Quello che vale in tutta Italia lo trovi lo stesso.</p></div>
+    return `<p>Per gli uffici della tua zona guarda i numeri utili o chiedi all'URP della tua azienda sanitaria.</p>
     ${guidaLink()}
     ${(r.moduli || []).includes('numeri-utili') ? `<a class="btn primary center" href="../numeri-utili/">📞 I numeri utili: ${esc(r.name)}</a>` : ''}
     <p class="cambia-regione"><button type="button" class="link" data-action="change-region">Hai sbagliato regione? Cambia</button></p>`;
@@ -139,7 +138,7 @@ export function regionMissing() {
     <p class="cambia-regione"><button type="button" class="link" data-action="change-region">Hai sbagliato regione? Cambia</button></p>`;
 }
 const regionMissingScreen = () => ({
-  html: `<h1>📍 ${(regioneNonPronta() || {}).parziale ? `Per questo argomento ${esc(inRegione())} non abbiamo ancora i dati` : 'La tua regione non c\'è ancora'}</h1>${regionMissing()}`,
+  html: `<h1>📍 ${(regioneNonPronta() || {}).parziale ? `Uffici e numeri ${esc(inRegione())}` : 'La tua regione non c\'è ancora'}</h1>${regionMissing()}`,
 });
 
 // Link alla guida scritta (#guida) dentro #app: scorre alla guida senza aggiungere una voce
@@ -194,8 +193,8 @@ export function withRegion(screens, name = 'province', next = null) {
     if (next && provinciaSaltata()) return screens[next]();
     return regioneNonPronta() ? regionMissingScreen() : inner();
   };
-  // Se il conto non si può fare, il pulsante principale della prima schermata non lo promette
-  // («Fai il conto…» diventa «Uffici e numeri in Lombardia»): dopo c'è solo il rimando alla guida.
+  // Se il conto non si può fare, il pulsante principale della prima schermata non si vede: resta la guida scritta.
+  // (23/10/2026: prima diventava «Uffici e numeri in Lombardia» e portava a «non abbiamo ancora i dati».)
   const intro = screens.intro;
   if (intro) {
     screens.intro = () => {
@@ -205,7 +204,10 @@ export function withRegion(screens, name = 'province', next = null) {
       t.innerHTML = s.html;
       const b = t.content.querySelector(`button.btn.primary[data-go="${name}"]`);
       if (!b) return s;
-      b.textContent = `📍 Uffici e numeri ${inRegione()}`;
+      // Via anche il consiglio subito sotto («Tieni a portata di mano la ricetta…»): vale solo per il conto.
+      const riga = b.closest('p') || b;
+      if (riga.nextElementSibling && riga.nextElementSibling.matches('p.muted')) riga.nextElementSibling.remove();
+      riga.remove();
       return { ...s, html: t.innerHTML };
     };
   }

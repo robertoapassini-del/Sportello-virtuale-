@@ -4,7 +4,7 @@
 // prepariamo un sollecito al distretto. Non chiediamo la malattia.
 import { todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
 import { genericRequest, mailtoHref, doctorName, districtLine, conZona } from './letters.js';
-import { noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact, complaintTo, aslLabel, regioneInfo, inRegione, regioneLink, regione, regioneNonPronta, syncDelegate, delegateNoteText } from './common.js';
+import { noPecBox, esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, copyText, printText, readForm, mailLink, aspCalls, personFields, reportErrorHref, generalContact, complaintTo, aslLabel, regioneInfo, inRegione, regioneLink, regione, regioneNonPronta, sceltaSicilia, fontiNazionali, syncDelegate, delegateNoteText } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons, senzaUffici, provinceChoice, zonaScreen, intestazioneAzienda } from './flow.js';
 
 const ROOT = '../';
@@ -19,14 +19,13 @@ const person = {};
 const aziendaBase = () => data.asl.find((a) => a.id === state.province);
 const asp = () => conZona(aziendaBase(), state.zona);
 // I fatti solo siciliani (Enna, le fonti della Regione Siciliana) si mostrano solo a chi usa i dati della Sicilia.
-const inSicilia = () => regione() === 'sicilia' && !regioneNonPronta();
-const perRegione = (list) => list.filter((s) => inSicilia() || !/Sicil|\bASP\b/.test(s.label));
+const inSicilia = sceltaSicilia;
 
 function sources() {
   const a = state.province ? asp() : null;
-  const items = perRegione(rules.sources);
+  const items = fontiNazionali(rules.sources);
   if (a) { if (a.info_url) items.push({ label: `${a.name} – sito ufficiale`, url: a.info_url }); items.push(...a.sources); }
-  return [items, { verified: rules.last_verified, note: a && !(a.contacts || []).some((c) => c.topic === 'casa') ? 'I contatti dei PUA dei distretti sono ancora da raccogliere.' : '' }];
+  return [items, { verified: rules.last_verified, note: '' }];
 }
 
 const steps = () => `
@@ -34,7 +33,7 @@ const steps = () => `
   <ol class="big-steps">
     <li><strong>Parla con il medico di famiglia.</strong> È lui che compila la richiesta di assistenza domiciliare e la manda al distretto. Se la persona è in ospedale, chiedi al reparto la <strong>«dimissione protetta»</strong>: la richiesta parte dall'ospedale prima che torni a casa.</li>
     <li><strong>La richiesta arriva al PUA</strong> (Punto unico di accesso) del distretto dell'${aslLabel()}. Chiedi al medico una copia o il numero della richiesta, con la data.</li>
-    <li><strong>Un'équipe viene a casa</strong> per la valutazione (si chiama UVM) e scrive il piano: quante volte a settimana, quali figure (infermiere, fisioterapista, medico, operatore).</li>
+    <li><strong>Un'équipe viene a casa</strong> per la valutazione (in molte regioni si chiama UVM) e scrive il piano: quante volte a settimana, quali figure (infermiere, fisioterapista, medico, operatore).</li>
     <li><strong>Iniziano le visite a casa.</strong> Le cure sanitarie sono <strong>gratuite</strong>; per l'aiuto dell'operatore (OSS), dopo i primi 30 giorni dall'uscita dall'ospedale, può esserci una parte da pagare: chiedi al distretto.</li>
   </ol>
   <details class="card">
@@ -271,7 +270,7 @@ const screens = {
             premise,
             request: isReminder
               ? 'la valutazione domiciliare e l\'attivazione dell\'assistenza nel più breve tempo possibile, e di essere informato/a per iscritto sui tempi previsti.'
-              : 'una nuova valutazione domiciliare (UVM) e il ripristino o l\'adeguamento del piano di assistenza, e di essere informato/a per iscritto sui tempi previsti.',
+              : 'una nuova valutazione multidimensionale a domicilio e il ripristino o l\'adeguamento del piano di assistenza, e di essere informato/a per iscritto sui tempi previsti.',
             attachments: ['copia del documento di identità', 'copia della richiesta del medico, se disponibile'],
             today: todayISO(),
           });
