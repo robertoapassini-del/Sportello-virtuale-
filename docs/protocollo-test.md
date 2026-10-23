@@ -154,3 +154,6 @@ già in elenco. Chiunque può rifarli: ogni riga dice quale file cambiare e come
   è acceso anche in un'altra regione (10 frasi superate); in `browser.cjs` niente link a siti siciliani (Regione Siciliana,
   ASP di Palermo e Catania, SovraCUP) fuori dalla Sicilia o senza regione scelta, anche nel riquadro delle fonti; in
   `robustezza.cjs` l'indice delle regioni che non arriva (prima valeva la Sicilia per tutti).
+- 23/10/2026 — il sito dice quello che c'è, non quello che manca: in `coerenza.test.mjs`, `errori-noti.test.mjs` e
+  `browser.cjs` (ogni pagina) niente «per ora solo…», «non abbiamo ancora», «non ancora in tutte le regioni»; nei moduli
+  senza i dati della regione il pulsante non c'è.

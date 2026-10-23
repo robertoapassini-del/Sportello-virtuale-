@@ -591,7 +591,7 @@ function updateLetter(a, official) {
   if (!to && howToEmail) {
     hint.innerHTML = `📧 Puoi scrivere all'indirizzo indicato sopra; per sicurezza stampa la lettera e portala anche all'ufficio URP, facendoti dare una ricevuta.`;
   } else if (!to) {
-    hint.innerHTML = `🏥 Per questa ${aslLabel()} non abbiamo ancora un indirizzo sicuro. <strong>Stampa la lettera e portala all'ufficio URP</strong> o al CUP.`;
+    hint.innerHTML = `🏥 <strong>Stampa la lettera e portala all'ufficio URP</strong> o al CUP, facendoti dare una ricevuta.`;
   } else if (a.channel === 'pec' || /@pec\./.test(to)) {
     hint.innerHTML = `📨 L'indirizzo dell'${aslLabel()} è una PEC (una email speciale). <strong>Se non hai la PEC, stampa la lettera e portala all'ufficio URP.</strong>`;
   } else {
