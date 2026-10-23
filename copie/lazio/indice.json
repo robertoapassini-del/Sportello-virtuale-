@@ -1,11 +1,11 @@
 {
  "regione": "lazio",
- "aggiornato": "2026-10-22T20:52:06.011Z",
+ "aggiornato": "2026-10-23T01:51:43.217Z",
  "pagine": [
   {
    "asl": "frosinone",
    "url": "https://www.asl.fr.it/",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "certificato": "non valido",
    "file": "frosinone/7edb33279de3.txt",
@@ -17,30 +17,30 @@
   {
    "asl": "frosinone",
    "url": "https://salutelazio.it/it/pass-di-garanzia",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "frosinone/1b6a08522663.txt",
    "titolo": "Fascicolo Sanitario",
    "sha": "25015c5b43a61366d98477466f983899fc94941dc880c12de5946d252a06aee3",
    "caratteri": 4170,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "frosinone",
    "url": "https://www.salutelazio.it/guardia-medica",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "finale": "https://salutelazio.it/it/servizi/guardia-medica",
    "file": "frosinone/a14f568f3b2f.txt",
    "titolo": "Fascicolo Sanitario",
    "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
    "caratteri": 2358,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "frosinone",
    "url": "https://www.asl.fr.it/contatti/",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "certificato": "non valido",
    "file": "frosinone/b835754e92ab.txt",
@@ -52,7 +52,7 @@
   {
    "asl": "frosinone",
    "url": "https://www.regione.lazio.it/cittadini/salute/recup",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "frosinone/26ed044c4c86.txt",
    "titolo": "| Regione Lazio | CITTADINI-SALUTE-ReCUP PRENOTAZIONI PRESTAZIONI SANITARIE",
@@ -63,7 +63,7 @@
   {
    "asl": "frosinone",
    "url": "https://www.asl.fr.it/azienda/strutture-in-staff-alla-direzione-strategica/uoc-ufficio-relazioni-con-il-pubblico-comunicazione-accoglienza-tutela-e-partecipazione/",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "certificato": "non valido",
    "file": "frosinone/86441e3efc70.txt",
@@ -75,7 +75,7 @@
   {
    "asl": "frosinone",
    "url": "https://www.asl.fr.it/wp-content/uploads/Percorsi-di-Tutela.pdf",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "certificato": "non valido",
    "file": "frosinone/e11398790ca3.txt",
@@ -83,68 +83,68 @@
    "sha": "fe46c8e4584289433b9317ed06ed472f1933bd5d41a29c0c193da0dbaab92ecc",
    "caratteri": 2906,
    "pdf": true,
-   "cambiata": true
-  },
-  {
-   "asl": "latina",
-   "url": "https://www.ausl.latina.it/",
-   "controllata": "2026-10-22",
-   "http": 200,
-   "file": "latina/5272b204d144.txt",
-   "titolo": "Home",
-   "sha": "04b131cd36d06ad0697a330cf4dfad8b1b545944b2cfaed130985d286ca4b47b",
-   "caratteri": 8088,
    "cambiata": false
   },
   {
    "asl": "latina",
+   "url": "https://www.ausl.latina.it/",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "latina/5272b204d144.txt",
+   "titolo": "Home",
+   "sha": "3cbf8450ebd4c85ff1e8c46f94a20696c846037dcb0d0095c679de49a9919b0f",
+   "caratteri": 8088,
+   "cambiata": true
+  },
+  {
+   "asl": "latina",
    "url": "https://salutelazio.it/it/pass-di-garanzia",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "latina/1b6a08522663.txt",
    "titolo": "Fascicolo Sanitario",
    "sha": "25015c5b43a61366d98477466f983899fc94941dc880c12de5946d252a06aee3",
    "caratteri": 4170,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
    "url": "https://www.salutelazio.it/guardia-medica",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "finale": "https://salutelazio.it/it/servizi/guardia-medica",
    "file": "latina/a14f568f3b2f.txt",
    "titolo": "Fascicolo Sanitario",
    "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
    "caratteri": 2358,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
    "url": "https://www.ausl.latina.it/gs-guidaaiservizi/gs-assistenzadomiciliare",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "latina/82fd94286a41.txt",
    "titolo": "Assistenza domiciliare",
-   "sha": "b6ddac0c47a61d3c33bf08f1ed3223fa65d8e8b116a83d63b8f755927eded658",
+   "sha": "bd36c1e0b29d8b191d160dcb7ae466ba0df62c004b48a12d0e41755381c45051",
    "caratteri": 6594,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "latina",
    "url": "https://www.ausl.latina.it/contatti",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "latina/609f939b7117.txt",
    "titolo": "Contatti",
-   "sha": "f172882be9cc26e2819b4f01b1104bcdd9b95624eb6df28a80a19039d5fa06ad",
+   "sha": "bfe1f8302502216148f0e83775f26c2079adda9f98b22f4afe2d35ac7bd6ba7a",
    "caratteri": 3960,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "latina",
    "url": "https://www.regione.lazio.it/cittadini/salute/recup",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "latina/26ed044c4c86.txt",
    "titolo": "| Regione Lazio | CITTADINI-SALUTE-ReCUP PRENOTAZIONI PRESTAZIONI SANITARIE",
@@ -155,29 +155,29 @@
   {
    "asl": "latina",
    "url": "https://www.ausl.latina.it/ufficio-relazioni-con-il-pubblico",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "latina/ba673f85fb8b.txt",
    "titolo": "Ufficio relazioni con il pubblico",
-   "sha": "b80bfbc03a389613298dbca272767962b15ad300792adb16519b50d2bfa6e861",
+   "sha": "547f1e795a0cb7c9c1c1beda4afd31376f7db42722a652a51120fb83161b164a",
    "caratteri": 5866,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "latina",
    "url": "https://www.ausl.latina.it/gs-guidaservizi/132-visite-ed-esami/4350-cup",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "latina/a4ce186313fd.txt",
    "titolo": "CUP",
-   "sha": "025fe44ba73c6d6f9199e385750bdd274a125e600deb1b843a5200a1670d2113",
+   "sha": "90b317d3cf191092c76c3268da335bca4335c88fee288a31e11a959ed16585db",
    "caratteri": 8945,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "rieti",
    "url": "https://www.asl.rieti.it/",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "rieti/1ca932fcd676.txt",
    "titolo": "HomePage – ASL Rieti",
@@ -188,30 +188,30 @@
   {
    "asl": "rieti",
    "url": "https://salutelazio.it/it/pass-di-garanzia",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "rieti/1b6a08522663.txt",
    "titolo": "Fascicolo Sanitario",
    "sha": "25015c5b43a61366d98477466f983899fc94941dc880c12de5946d252a06aee3",
    "caratteri": 4170,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "rieti",
    "url": "https://www.salutelazio.it/guardia-medica",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "finale": "https://salutelazio.it/it/servizi/guardia-medica",
    "file": "rieti/a14f568f3b2f.txt",
    "titolo": "Fascicolo Sanitario",
    "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
    "caratteri": 2358,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "rieti",
    "url": "https://www.asl.rieti.it/aiuto-al-cittadino/pua-punto-unico-di-accesso/",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "rieti/900c075b7321.txt",
    "titolo": "PUA - Punto Unico di Accesso – ASL Rieti",
@@ -222,7 +222,7 @@
   {
    "asl": "rieti",
    "url": "https://www.asl.rieti.it/aiuto-al-cittadino/contatti/",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "rieti/03d880b84b1e.txt",
    "titolo": "Contatti – ASL Rieti",
@@ -233,7 +233,7 @@
   {
    "asl": "rieti",
    "url": "https://www.regione.lazio.it/cittadini/salute/recup",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "rieti/26ed044c4c86.txt",
    "titolo": "| Regione Lazio | CITTADINI-SALUTE-ReCUP PRENOTAZIONI PRESTAZIONI SANITARIE",
@@ -244,7 +244,7 @@
   {
    "asl": "rieti",
    "url": "https://www.asl.rieti.it/aiuto-al-cittadino/urp/",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "rieti/e95a1c8bc438.txt",
    "titolo": "URP - Ufficio Relazioni con il Pubblico – ASL Rieti",
@@ -255,7 +255,7 @@
   {
    "asl": "rieti",
    "url": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti-aree-e-staff/staff-direzione-sanitaria/cup-uosd-gestione-della-domanda-accessibilita-offerta-e-alpi/",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "rieti/35e40355b813.txt",
    "titolo": "CUP - UOSD Gestione della domanda, Accessibilità dell'Offerta e Alpi – ASL Rieti",
@@ -266,7 +266,7 @@
   {
    "asl": "rieti",
    "url": "https://www.asl.rieti.it/come-fare-per/assistenza-domiciliare-integrata-adi/",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "rieti/4a2e3a17110b.txt",
    "titolo": "Assistenza Domiciliare Integrata - ADI – ASL Rieti",
@@ -277,53 +277,53 @@
   {
    "asl": "roma",
    "url": "https://www.salutelazio.it/",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "finale": "https://salutelazio.it/it",
    "file": "roma/753559e36904.txt",
    "titolo": "Fascicolo Sanitario",
    "sha": "f13c9eeb4924a61ff758ef61496e0efa7bdc4b642b901535cb8689a074e2f47e",
    "caratteri": 4010,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
    "url": "https://salutelazio.it/it/pass-di-garanzia",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "roma/1b6a08522663.txt",
    "titolo": "Fascicolo Sanitario",
    "sha": "25015c5b43a61366d98477466f983899fc94941dc880c12de5946d252a06aee3",
    "caratteri": 4170,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
    "url": "https://www.salutelazio.it/guardia-medica",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "finale": "https://salutelazio.it/it/servizi/guardia-medica",
    "file": "roma/a14f568f3b2f.txt",
    "titolo": "Fascicolo Sanitario",
    "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
    "caratteri": 2358,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
    "url": "https://www.aslroma1.it/punto-unico-accesso",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "roma/e0d930024e6e.txt",
    "titolo": "Punto Unico di Accesso (PUA)",
-   "sha": "2c7c2c05ff4f8a542fbad3e5b803b90a4ad4fa86200635aa22b5f4a3bc118d9e",
+   "sha": "935d90e37e08aba1e3850efe2cdf513df2c8255215a5e90050ad6c150163b86f",
    "caratteri": 22475,
    "cambiata": true
   },
   {
    "asl": "roma",
    "url": "https://www.aslroma1.it/contatti",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "roma/ed97ee7b8fec.txt",
    "titolo": "Contatti",
@@ -334,7 +334,7 @@
   {
    "asl": "roma",
    "url": "https://www.aslroma3.it/servizio-prenotazioni",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "finale": "https://www.aslroma3.it/servizio-prenotazioni/",
    "file": "roma/970ecccf7d85.txt",
@@ -346,7 +346,7 @@
   {
    "asl": "roma",
    "url": "https://www.aslroma4.it/contatti",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "roma/d068cbc55a66.txt",
    "titolo": "Contatti - ASL ROMA 4",
@@ -357,7 +357,7 @@
   {
    "asl": "roma",
    "url": "https://www.regione.lazio.it/cittadini/salute/recup",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "roma/26ed044c4c86.txt",
    "titolo": "| Regione Lazio | CITTADINI-SALUTE-ReCUP PRENOTAZIONI PRESTAZIONI SANITARIE",
@@ -368,7 +368,7 @@
   {
    "asl": "roma",
    "url": "https://www.aslroma1.it/ufficio-relazioni-pubblico",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "roma/c5bb2a393b86.txt",
    "titolo": "Ufficio per le Relazioni con il Pubblico (URP)",
@@ -379,7 +379,7 @@
   {
    "asl": "roma",
    "url": "https://www.aslroma2.it/index.php/urp",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "roma/b40867ade080.txt",
    "titolo": "ASL Roma 2 - URP",
@@ -390,7 +390,7 @@
   {
    "asl": "roma",
    "url": "https://www.aslroma3.it/urp/",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "roma/2d834cda3719.txt",
    "titolo": "Urp - Asl Roma 3",
@@ -401,7 +401,7 @@
   {
    "asl": "roma",
    "url": "https://www.aslroma4.it/urp-ufficio-relazioni-con-il-pubblico",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "roma/1e57e716ae5a.txt",
    "titolo": "URP Ufficio relazioni con il pubblico - ASL ROMA 4",
@@ -412,7 +412,7 @@
   {
    "asl": "roma",
    "url": "https://www.aslroma6.it/servizi-al-cittadino/urp-ufficio-relazioni-col-pubblico",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "roma/085c854f4947.txt",
    "titolo": "URP - Ufficio Relazioni col Pubblico - ASL Roma 6",
@@ -423,11 +423,11 @@
   {
    "asl": "roma",
    "url": "https://www.aslroma2.it/index.php/servizi-4d/punto-unico-di-accesso-pua",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "roma/2b46e5d8fe38.txt",
    "titolo": "ASL Roma 2 - Punto Unico di Accesso - PUA",
-   "sha": "941122cc8a2683e5f463eba603bc05fffe2d42cd5f44a4b1b743bb6d57f4fda7",
+   "sha": "9ca5aa13e4eb51fa4289362efecf3333a7317cf5b8ef5c3198eab2f5a1d71112",
    "caratteri": 11883,
    "email_nascoste": 11,
    "cambiata": true
@@ -435,7 +435,7 @@
   {
    "asl": "roma",
    "url": "https://www.aslroma2.it/index.php/servizi/assistenza-domiciliare-mn?view=page&id=12",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "roma/4bc051a4e59c.txt",
    "titolo": "Assistenza Domiciliare",
@@ -446,7 +446,7 @@
   {
    "asl": "roma",
    "url": "https://www.aslroma4.it/pua-punto-unico-di-accesso",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "roma/70969bb7916c.txt",
    "titolo": "PUA Punto unico di accesso - ASL ROMA 4",
@@ -457,7 +457,7 @@
   {
    "asl": "roma",
    "url": "https://www.aslroma5.it/servizi_distrettuali/pua-punto-unico-di-accesso-casa-della-comunita-tivoli/",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "roma/9021e446163f.txt",
    "titolo": "P.U.A. (punto unico di accesso) – Casa della Comunità Tivoli - ASL ROMA 5",
@@ -468,7 +468,7 @@
   {
    "asl": "roma",
    "url": "https://www.aslroma1.it/il-percorso-di-garanzia-nella-regione-lazio",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "roma/a267d29fc53d.txt",
    "titolo": "Il percorso di garanzia nella Regione Lazio",
@@ -479,18 +479,18 @@
   {
    "asl": "roma",
    "url": "https://ammtrasp.aslroma2.it/index.php/15-04-liste-di-attesa/15-04-05-liste-di-attesa",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "roma/7e7cbafb32a1.txt",
    "titolo": "15.04.05 Liste di attesa",
-   "sha": "5e3158228c061129caae03f6978f583f235341d1cb0b9bee78b8c1acac10a586",
+   "sha": "c2b2de5583572485cb6f302f915543332139142830bf661acab97c028bd59143",
    "caratteri": 8673,
    "cambiata": true
   },
   {
    "asl": "roma",
    "url": "https://www.aslroma3.it/amministrazione-trasparente/liste-attesa-new/",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "roma/17a23a5b9772.txt",
    "titolo": "Liste di attesa - Asl Roma 3",
@@ -501,7 +501,7 @@
   {
    "asl": "roma",
    "url": "https://www.aslroma4.it/servizi-on-line/liste-di-attesa",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "roma/42c0e279128f.txt",
    "titolo": "Liste di attesa - ASL ROMA 4",
@@ -512,7 +512,7 @@
   {
    "asl": "roma",
    "url": "https://www.aslroma5.it/percorso-di-garanzia-nella-regione-lazio/",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "roma/3d42876ac50c.txt",
    "titolo": "Percorso di garanzia nella Regione Lazio - ASL ROMA 5",
@@ -523,7 +523,7 @@
   {
    "asl": "viterbo",
    "url": "https://www.asl.vt.it/",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "viterbo/66db58dce4bc.txt",
    "titolo": "Home - ASL VITERBO",
@@ -534,30 +534,30 @@
   {
    "asl": "viterbo",
    "url": "https://salutelazio.it/it/pass-di-garanzia",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "viterbo/1b6a08522663.txt",
    "titolo": "Fascicolo Sanitario",
    "sha": "25015c5b43a61366d98477466f983899fc94941dc880c12de5946d252a06aee3",
    "caratteri": 4170,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "viterbo",
    "url": "https://www.salutelazio.it/guardia-medica",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "finale": "https://salutelazio.it/it/servizi/guardia-medica",
    "file": "viterbo/a14f568f3b2f.txt",
    "titolo": "Fascicolo Sanitario",
    "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
    "caratteri": 2358,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "viterbo",
    "url": "https://www.asl.vt.it/pua-punto-unico-di-accesso",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "viterbo/b4482986047f.txt",
    "titolo": "PUA - Punto Unico di Accesso ASL Viterbo - ASL VITERBO",
@@ -568,7 +568,7 @@
   {
    "asl": "viterbo",
    "url": "https://www.asl.vt.it/azienda",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "viterbo/0214bc38f60a.txt",
    "titolo": "ASL Viterbo - Azienda Sanitaria Locale Viterbo - ASL VITERBO",
@@ -579,7 +579,7 @@
   {
    "asl": "viterbo",
    "url": "https://www.regione.lazio.it/cittadini/salute/recup",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "viterbo/26ed044c4c86.txt",
    "titolo": "| Regione Lazio | CITTADINI-SALUTE-ReCUP PRENOTAZIONI PRESTAZIONI SANITARIE",
@@ -590,7 +590,7 @@
   {
    "asl": "viterbo",
    "url": "https://www.asl.vt.it/approfondimenti/638",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "viterbo/030120895607.txt",
    "titolo": "Attivo nella provincia di Viterbo il numero 116117 - ASL VITERBO",
@@ -601,7 +601,7 @@
   {
    "asl": "viterbo",
    "url": "https://www.asl.vt.it/urp-ufficio-relazioni-con-il-pubblico",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "viterbo/23cb09be8c81.txt",
    "titolo": "URP — Ufficio Relazioni con il Pubblico - ASL VITERBO",
@@ -612,7 +612,7 @@
   {
    "asl": "viterbo",
    "url": "https://www.asl.vt.it/adi-assistenza-domiciliare-integrata",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "viterbo/fec58ae06641.txt",
    "titolo": "ASL Viterbo - Assistenza Domiciliare Integrata ADI - ASL VITERBO",
@@ -623,7 +623,7 @@
   {
    "asl": "inps-lazio",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.708100.708100-elencoStruttureInps.html",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "inps-lazio/e67fc7da2073.txt",
    "titolo": "Portale Inps - DCM Roma",
@@ -634,7 +634,7 @@
   {
    "asl": "inps-lazio",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.330000.330000-elencoStruttureInps.html",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "inps-lazio/1301fbc34025.txt",
    "titolo": "Portale Inps - Frosinone",
@@ -645,7 +645,7 @@
   {
    "asl": "inps-lazio",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.400000.400000-elencoStruttureInps.html",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "inps-lazio/b31306f599a8.txt",
    "titolo": "Portale Inps - Latina",
@@ -656,7 +656,7 @@
   {
    "asl": "inps-lazio",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.690000.690000-elencoStruttureInps.html",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "inps-lazio/d4c8f02aaec3.txt",
    "titolo": "Portale Inps - Rieti",
@@ -667,7 +667,7 @@
   {
    "asl": "inps-lazio",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.920000.920000-elencoStruttureInps.html",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "inps-lazio/cc03e6649745.txt",
    "titolo": "Portale Inps - Viterbo",
@@ -678,7 +678,7 @@
   {
    "asl": "inps-lazio",
    "url": "https://www.disabilita.governo.it/it/notizie/al-via-sperimentazione-riforma-disabilita-in-altre-40-province/",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "inps-lazio/cb8037740243.txt",
    "titolo": "Al via sperimentazione riforma disabilità in altre 40 province",
@@ -689,7 +689,7 @@
   {
    "asl": "inps-lazio",
    "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "inps-lazio/aad63b63390a.txt",
    "titolo": "Portale Inps - Riforma della disabilità: al via la terza fase sperimentale",
@@ -700,7 +700,7 @@
   {
    "asl": "regione-lazio",
    "url": "https://salutelazio.it/it/servizi/prestazioni-prenotabili-on-line",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "regione-lazio/1046951fd7e8.txt",
    "titolo": "Fascicolo Sanitario",
@@ -711,7 +711,7 @@
   {
    "asl": "regione-lazio",
    "url": "https://www.regione.lazio.it/notizie/salute-attivo-in-tutta-la-regione-il-numero-116117",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "regione-lazio/5c2143728c8c.txt",
    "titolo": "| Regione Lazio | Sanità, attivo in tutto il Lazio l'116117 per le cure mediche non urgenti",
@@ -722,7 +722,7 @@
   {
    "asl": "regione-lazio",
    "url": "https://comunicazione.regione.lazio.it/curalazio/116117-il-numero-unico-europeo-per-cure-non-urgenti",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "regione-lazio/53039e0847a8.txt",
    "titolo": "116117 – Il numero unico europeo per cure non urgenti - Curalazio",
@@ -733,18 +733,18 @@
   {
    "asl": "regione-lazio",
    "url": "https://salutelazio.it/it/servizi/emergenza",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "regione-lazio/c3145a208b2c.txt",
    "titolo": "Fascicolo Sanitario",
    "sha": "48199ce6b951501c02e991b940f8e9adec94561d534835ac5f18a86bd84cca38",
    "caratteri": 2103,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-lazio",
    "url": "https://www.regione.lazio.it/cittadini/salute",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "regione-lazio/712489e75be3.txt",
    "titolo": "| Regione Lazio | CITTADINI-SALUTE",
@@ -755,7 +755,7 @@
   {
    "asl": "regione-lazio",
    "url": "https://salutelazio.it/it",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "regione-lazio/652b256db893.txt",
    "titolo": "Fascicolo Sanitario",
@@ -766,7 +766,7 @@
   {
    "asl": "regione-lazio",
    "url": "https://www.regione.lazio.it/notizie/fascicolo-sanitario-elettronico",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "regione-lazio/ad496e12b883.txt",
    "titolo": "| Regione Lazio | Fascicolo Sanitario Elettronico, parte la campagna di comunicazione",
@@ -777,7 +777,7 @@
   {
    "asl": "regione-lazio",
    "url": "https://regione.lazio.it/urp/rete-degli-urp",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "regione-lazio/ce4b09d9b858.txt",
    "titolo": "| Regione Lazio | URP-RETE DEGLI URP",
@@ -788,7 +788,7 @@
   {
    "asl": "asl-roma1",
    "url": "https://www.aslroma1.it",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "finale": "https://www.aslroma1.it/",
    "file": "asl-roma1/a00ffe2984a3.txt",
@@ -800,7 +800,7 @@
   {
    "asl": "asl-roma1",
    "url": "https://www.aslroma1.it/sportelli-cup",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "asl-roma1/f75587a41968.txt",
    "titolo": "Sportelli CUP",
@@ -811,7 +811,7 @@
   {
    "asl": "asl-roma1",
    "url": "https://www.aslroma1.it/prenotazioni-visite-ed-esami",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "asl-roma1/5a56eab3b5f0.txt",
    "titolo": "Prenotazioni visite ed esami",
@@ -822,7 +822,7 @@
   {
    "asl": "asl-roma1",
    "url": "https://www.aslroma1.it/guardia-medica-continuita-assistenziale",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "asl-roma1/55a26339dfe9.txt",
    "titolo": "Guardia Medica – Continuità Assistenziale",
@@ -833,7 +833,7 @@
   {
    "asl": "asl-roma1",
    "url": "https://www.aslroma1.it/assistenza-domiciliare",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "asl-roma1/892fcf24a03e.txt",
    "titolo": "Assistenza Domiciliare",
@@ -844,7 +844,7 @@
   {
    "asl": "asl-roma2",
    "url": "https://www.aslroma2.it",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "finale": "https://www.aslroma2.it/",
    "file": "asl-roma2/634f829b5f5d.txt",
@@ -856,7 +856,7 @@
   {
    "asl": "asl-roma2",
    "url": "https://www.aslroma2.it/index.php/servizi/cup-sportelli-polifunzionali?view=page&id=4",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "asl-roma2/0be5e3a48c22.txt",
    "titolo": "CUP - Sportelli Polifunzionali",
@@ -867,18 +867,18 @@
   {
    "asl": "asl-roma2",
    "url": "https://www.aslroma2.it/index.php/servizi/guardia-medica",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "asl-roma2/2e0f163ef6a3.txt",
    "titolo": "ASL Roma 2 - Guardia Medica",
-   "sha": "cfcf998afb5ce3ea611952b5ab04183ddfece70c523dc176667b6f2a10f5c2e2",
+   "sha": "ed7b6df5c826f5d1698c7f086b73509806883c8649d898cfb5ee330e052492c6",
    "caratteri": 8091,
    "cambiata": true
   },
   {
    "asl": "asl-roma3",
    "url": "https://www.aslroma3.it",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "finale": "https://www.aslroma3.it/",
    "file": "asl-roma3/572f8599edd5.txt",
@@ -890,7 +890,7 @@
   {
    "asl": "asl-roma3",
    "url": "https://www.aslroma3.it/come-fare-per/prenotare-una-visita/",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "asl-roma3/09d0e9d04d62.txt",
    "titolo": "Prenotare una visita - Asl Roma 3",
@@ -901,7 +901,7 @@
   {
    "asl": "asl-roma3",
    "url": "https://www.aslroma3.it/servizi-dalla-a-alla-z/g/guardia-medica/",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "asl-roma3/fcd4fcf114ab.txt",
    "titolo": "Guardia Medica - Asl Roma 3",
@@ -912,7 +912,7 @@
   {
    "asl": "asl-roma3",
    "url": "https://www.aslroma3.it/assistenza-domiciliare/",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "asl-roma3/fd663f62e3c1.txt",
    "titolo": "Assistenza domiciliare - Asl Roma 3",
@@ -923,7 +923,7 @@
   {
    "asl": "asl-roma4",
    "url": "https://www.aslroma4.it",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "finale": "https://www.aslroma4.it/",
    "file": "asl-roma4/3c589cc1e86b.txt",
@@ -935,7 +935,7 @@
   {
    "asl": "asl-roma4",
    "url": "https://www.aslroma4.it/come-fare-per/come-fare-per-prenota-una-visita",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "asl-roma4/1b4d52905b06.txt",
    "titolo": "Come fare per prenotare una visita - ASL ROMA 4",
@@ -946,7 +946,7 @@
   {
    "asl": "asl-roma4",
    "url": "https://www.aslroma4.it/guida-ai-servizi/assistenza-domiciliare/cure-domiciliari",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "asl-roma4/eebc974cc496.txt",
    "titolo": "Cure Domiciliari - ASL ROMA 4",
@@ -957,19 +957,19 @@
   {
    "asl": "asl-roma5",
    "url": "https://www.aslroma5.it",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "finale": "https://www.aslroma5.it/",
    "file": "asl-roma5/b09e55c52e23.txt",
    "titolo": "Home - ASL ROMA 5",
-   "sha": "e4c4093eab8c4205b43f50e5a0665e2c5b211a15642747470f0683eeb622776a",
-   "caratteri": 15292,
-   "cambiata": false
+   "sha": "117d54172476a57e67c2aef0b0d0223e596f0d587953458d370ae20456efdd13",
+   "caratteri": 15391,
+   "cambiata": true
   },
   {
    "asl": "asl-roma5",
    "url": "https://www.aslroma5.it/unita_operative/urp-e-comunicazione/",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "asl-roma5/5e92da774d93.txt",
    "titolo": "URP e Comunicazione - ASL ROMA 5",
@@ -980,7 +980,7 @@
   {
    "asl": "asl-roma5",
    "url": "https://www.aslroma5.it/amministrazione-trasparente/telefono-e-posta-elettronica/",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "asl-roma5/6f837f29a953.txt",
    "titolo": "Telefono e posta elettronica - ASL ROMA 5",
@@ -991,7 +991,7 @@
   {
    "asl": "asl-roma5",
    "url": "https://www.aslroma5.it/cup-centro-unico-di-prenotazione/",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "asl-roma5/1c68f02f87e7.txt",
    "titolo": "CUP - Centro unico di prenotazione - ASL ROMA 5",
@@ -1002,7 +1002,7 @@
   {
    "asl": "asl-roma5",
    "url": "https://www.aslroma5.it/faq-domande-frequenti/",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "asl-roma5/bab4ab70894f.txt",
    "titolo": "FAQ - Domande frequenti - ASL ROMA 5",
@@ -1013,7 +1013,7 @@
   {
    "asl": "asl-roma6",
    "url": "https://www.aslroma6.it",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "finale": "https://www.aslroma6.it/",
    "file": "asl-roma6/6fb4776a02ad.txt",
@@ -1025,7 +1025,7 @@
   {
    "asl": "asl-roma6",
    "url": "https://www.aslroma6.it/servizi-al-cittadino/sportelli-cup",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "asl-roma6/078b6e77f89a.txt",
    "titolo": "Sportelli CUP - ASL Roma 6",
@@ -1036,7 +1036,7 @@
   {
    "asl": "asl-roma6",
    "url": "https://www.aslroma6.it/-/guardia-medica-e-continuita-assistenziale",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "asl-roma6/9639c08bf5af.txt",
    "titolo": "Continuità Assistenziale - ASL Roma 6",
@@ -1047,7 +1047,7 @@
   {
    "asl": "asl-roma6",
    "url": "https://www.aslroma6.it/punto-unico-di-accesso-pua",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "asl-roma6/207ce72a1113.txt",
    "titolo": "Punto Unico di Accesso (PUA) - ASL Roma 6",
@@ -1058,7 +1058,7 @@
   {
    "asl": "asl-roma6",
    "url": "https://www.aslroma6.it/come-fare-per/assistenza-domiciliare",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "asl-roma6/1291215c31f8.txt",
    "titolo": "Assistenza domiciliare - ASL Roma 6",
@@ -1069,7 +1069,7 @@
   {
    "asl": "asl-frosinone",
    "url": "https://www.asl.fr.it",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "finale": "https://www.asl.fr.it/",
    "certificato": "non valido",
@@ -1082,7 +1082,7 @@
   {
    "asl": "asl-frosinone",
    "url": "https://www.asl.fr.it/azienda/strutture-in-staff-alla-direzione-strategica/recup-aziendale/",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "certificato": "non valido",
    "file": "asl-frosinone/6948fe2ed637.txt",
@@ -1094,7 +1094,7 @@
   {
    "asl": "asl-frosinone",
    "url": "https://www.asl.fr.it/strutture/distretti-sanitari/",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "certificato": "non valido",
    "file": "asl-frosinone/f4d6936846fe.txt",
@@ -1106,52 +1106,52 @@
   {
    "asl": "asl-latina",
    "url": "https://www.ausl.latina.it",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "finale": "https://www.ausl.latina.it/",
    "file": "asl-latina/375895c3df35.txt",
    "titolo": "Home",
-   "sha": "04b131cd36d06ad0697a330cf4dfad8b1b545944b2cfaed130985d286ca4b47b",
+   "sha": "3cbf8450ebd4c85ff1e8c46f94a20696c846037dcb0d0095c679de49a9919b0f",
    "caratteri": 8088,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "asl-latina",
    "url": "https://www.ausl.latina.it/25-dedicato-a/468-guardiamedica",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "asl-latina/ee9cd0b31e8d.txt",
    "titolo": "Guardia Medica",
-   "sha": "ed47e7d5240fc99e749f80929621c996400933a6971302de4c49a4011a64959c",
+   "sha": "e7d582892e0d8e71df8c1c455c4bcaecacd132e0a9c91967edb99ee2e195ad23",
    "caratteri": 7475,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "asl-latina",
    "url": "https://www.ausl.latina.it/index.php/pua",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "asl-latina/5d3f2e229170.txt",
    "titolo": "PUA",
-   "sha": "712a328154bfb2b88f6a30489b18a573436b30d3fef246c8dbcf529448fd5bf2",
+   "sha": "870e2b04ed10380d57c0d2f484a9f6e4eb12f6febdfac6d6410613f009f093c6",
    "caratteri": 4482,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "asl-latina",
    "url": "https://www.ausl.latina.it/index.php/assistenza-domiciliare",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "asl-latina/6cc43dec50c4.txt",
    "titolo": "Assistenza domiciliare",
-   "sha": "3d72883708e7e248edc2bf9fe055f694419420c6dd3370de375e71a23efbf1a9",
+   "sha": "35660d0df997a846df8614be44641c3631d8caa7575ee2566bbdc20fc795e272",
    "caratteri": 6416,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "asl-rieti",
    "url": "https://www.asl.rieti.it",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "finale": "https://www.asl.rieti.it/",
    "file": "asl-rieti/4a05a5747491.txt",
@@ -1163,7 +1163,7 @@
   {
    "asl": "asl-rieti",
    "url": "https://www.asl.rieti.it/aiuto-al-cittadino/urp",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "finale": "https://www.asl.rieti.it/aiuto-al-cittadino/urp/",
    "file": "asl-rieti/fd163fc4ae6e.txt",
@@ -1175,13 +1175,13 @@
   {
    "asl": "asl-rieti",
    "url": "https://www.asl.rieti.it/guida-ai-servizi/cup-centro-unico-di-prenotazione",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 404
   },
   {
    "asl": "asl-rieti",
    "url": "https://www.asl.rieti.it/guida-ai-servizi/guardia-medica/",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "asl-rieti/54a105863cb5.txt",
    "titolo": "Guardia Medica – ASL Rieti",
@@ -1192,13 +1192,13 @@
   {
    "asl": "asl-rieti",
    "url": "https://www.asl.rieti.it/come-fare-per/uosd-assistenza-domiciliare-integrata-adi",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 404
   },
   {
    "asl": "asl-viterbo",
    "url": "https://www.asl.vt.it",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "finale": "https://www.asl.vt.it/",
    "file": "asl-viterbo/29ada9bc28c2.txt",
@@ -1210,7 +1210,7 @@
   {
    "asl": "asl-viterbo",
    "url": "https://www.asl.vt.it/prenotazione-visite-ed-esami",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "asl-viterbo/bf2504efc0ef.txt",
    "titolo": "ASL Viterbo - Prenotazione visite ed esami - ASL VITERBO",
@@ -1221,7 +1221,7 @@
   {
    "asl": "asl-viterbo",
    "url": "https://www.asl.vt.it/guardia-medica",
-   "controllata": "2026-10-22",
+   "controllata": "2026-10-23",
    "http": 200,
    "file": "asl-viterbo/751ed9816bfb.txt",
    "titolo": "ASL Viterbo - Servizio di Guardia Medica - ASL VITERBO",
