@@ -510,7 +510,8 @@
     "Cartelle cliniche (pagina copiata il 22/10/2026): Ufficio Documentazione Clinica, Ospedale degli Infermi di Ponderano, lunedì–venerdì 8–13 e 13.30–16; email cartelle.cliniche@aslbi.piemonte.it, PEC direzionesanitariapresidio@cert.aslbi.piemonte.it. Nessun numero di telefono sulla pagina: contatto non messo.",
     "La pagina protesica «ausili-sanitari-tramite-asl» dà 404.",
     "Percorso di tutela: pagine «tempi di attesa / percorsi di tutela» e modulo di istanza messe in pagine[] (22/10/2026); l'estratto cita tempiattesa@aslbi.piemonte.it solo per informazioni, non usato.",
-    "Percorso di tutela (copia del 23/10/2026): la pagina «Percorsi di tutela: informazioni utili» elenca i documenti (ricetta, modulo privacy, documento, tessera) e rimanda al «Modulo ASL di Biella_Percorso di Tutela», ma non dice dove mandare la domanda; la pagina di download copiata non contiene il PDF. Serve l'indirizzo del PDF del modulo in pagine[]."
+    "Percorso di tutela (copia del 23/10/2026): la pagina «Percorsi di tutela: informazioni utili» elenca i documenti (ricetta, modulo privacy, documento, tessera) e rimanda al «Modulo ASL di Biella_Percorso di Tutela», ma non dice dove mandare la domanda; la pagina di download copiata non contiene il PDF. Serve l'indirizzo del PDF del modulo in pagine[].",
+    "Pagine aggiunte in «pagine» il 23/10/2026 (quarto giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): Carta dei servizi (sezione Tutela). Deve dire a chi e a quale indirizzo si manda la domanda del percorso di tutela. Il PDF «Modulo ASL di Biella_Percorso di Tutela» non trovato con il motore di ricerca: lo prende il server dai link PDF della pagina «tempi di attesa / percorsi di tutela» (link_pdf)."
    ],
    "pagine": [
     {
@@ -560,6 +561,10 @@
     {
      "tipo": "screening",
      "url": "https://www.regione.piemonte.it/web/temi/sanita/prevenzione/prevenzione-serena"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://aslbi.piemonte.it/azienda/carta-dei-servizi/"
     }
    ],
    "scelta_medico": {

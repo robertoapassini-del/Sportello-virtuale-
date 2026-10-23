@@ -178,7 +178,8 @@
     "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari.",
     "Liste d'attesa: how_to, documents_required, what_next e details dalla pagina «Pass di garanzia» di Salute Lazio (copia del 22/10/2026, pubblicata il 28/05/2026; le stesse frasi sono nelle pagine dell'ASL Roma 1 e dell'ASL Roma 5). letter_mode «portal» con portal_url la pagina della Regione: il pulsante del modulo oggi dice «Vai al sito dell'ASL» (js/liste-attesa.js), andrebbe «Vai al sito della Regione». Il modulo resta spento finché manca un indirizzo della zona di Roma 2 (copie del 23/10/2026). Il portale è della Regione: in details c'è la frase «Nel Lazio il Pass di garanzia è un servizio della Regione…».",
     "Screening (copie del 23/10/2026): nessuna pagina copiata dell'ASL ha il numero dello screening. Messi in «pagine» il depliant di Salute Lazio sullo screening del seno (numero verde ed email di ogni ASL) e la pagina «Screening oncologici» della Regione: dopo la copia, un contatto «screening» per ogni ASL e si accende «prevenzione».",
-    "Percorso di tutela (PDF «Percorsi di tutela» dell'ASL, copia del 23/10/2026): se il CUP non trova posto in tempo, il back office del CUP e il servizio Recall richiamano la persona e, se serve, passano la richiesta al Direttore del distretto. Il PDF non dà un indirizzo a cui scrivere: resta il Pass di garanzia della Regione."
+    "Percorso di tutela (PDF «Percorsi di tutela» dell'ASL, copia del 23/10/2026): se il CUP non trova posto in tempo, il back office del CUP e il servizio Recall richiamano la persona e, se serve, passano la richiesta al Direttore del distretto. Il PDF non dà un indirizzo a cui scrivere: resta il Pass di garanzia della Regione.",
+    "Pagine aggiunte in «pagine» il 23/10/2026 (quarto giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): pagine del Coordinamento screening. Devono dare il numero e gli orari del centro screening (contacts topic «screening»)."
    ],
    "pagine": [
     {
@@ -196,6 +197,14 @@
     {
      "tipo": "screening",
      "url": "https://regione.lazio.it/enti/salute/screening-oncologici"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.asl.fr.it/strutture/dipartimenti/dipartimento-di-prevenzione/uosd-coordinamento-screening/"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.asl.fr.it/servizi/prevenzione/screening-oncologici/"
     }
    ],
    "channel": "cup",
@@ -388,7 +397,8 @@
     "La pagina Contatti riporta ancora il vecchio numero della guardia medica (0773 520888): non usato, vale il 116117.",
     "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari.",
     "Liste d'attesa: how_to, documents_required, what_next e details dalla pagina «Pass di garanzia» di Salute Lazio (copia del 22/10/2026, pubblicata il 28/05/2026; le stesse frasi sono nelle pagine dell'ASL Roma 1 e dell'ASL Roma 5). letter_mode «portal» con portal_url la pagina della Regione: il pulsante del modulo oggi dice «Vai al sito dell'ASL» (js/liste-attesa.js), andrebbe «Vai al sito della Regione». Il modulo resta spento finché manca un indirizzo della zona di Roma 2 (copie del 23/10/2026). Il portale è della Regione: in details c'è la frase «Nel Lazio il Pass di garanzia è un servizio della Regione…».",
-    "Screening (copie del 23/10/2026): nessuna pagina copiata dell'ASL ha il numero dello screening. Messi in «pagine» il depliant di Salute Lazio sullo screening del seno (numero verde ed email di ogni ASL) e la pagina «Screening oncologici» della Regione: dopo la copia, un contatto «screening» per ogni ASL e si accende «prevenzione»."
+    "Screening (copie del 23/10/2026): nessuna pagina copiata dell'ASL ha il numero dello screening. Messi in «pagine» il depliant di Salute Lazio sullo screening del seno (numero verde ed email di ogni ASL) e la pagina «Screening oncologici» della Regione: dopo la copia, un contatto «screening» per ogni ASL e si accende «prevenzione».",
+    "Pagine aggiunte in «pagine» il 23/10/2026 (quarto giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): pagine del Servizio di screening. Devono dare il numero e gli orari del centro screening (contacts topic «screening»)."
    ],
    "pagine": [
     {
@@ -402,6 +412,14 @@
     {
      "tipo": "screening",
      "url": "https://regione.lazio.it/enti/salute/screening-oncologici"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.ausl.latina.it/prevenzione-stili-di-vita/psv-screening-oncologici"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.ausl.latina.it/112-azienda/dipartimento-prevenzione/2854-servizio-di-screening"
     }
    ],
    "channel": "cup",
@@ -630,7 +648,8 @@
     "Nessun numero per scelta del medico ed esenzioni nelle pagine copiate.",
     "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari.",
     "Liste d'attesa: how_to, documents_required, what_next e details dalla pagina «Pass di garanzia» di Salute Lazio (copia del 22/10/2026, pubblicata il 28/05/2026; le stesse frasi sono nelle pagine dell'ASL Roma 1 e dell'ASL Roma 5). letter_mode «portal» con portal_url la pagina della Regione: il pulsante del modulo oggi dice «Vai al sito dell'ASL» (js/liste-attesa.js), andrebbe «Vai al sito della Regione». Il modulo resta spento finché manca un indirizzo della zona di Roma 2 (copie del 23/10/2026). Il portale è della Regione: in details c'è la frase «Nel Lazio il Pass di garanzia è un servizio della Regione…».",
-    "Screening (copie del 23/10/2026): nessuna pagina copiata dell'ASL ha il numero dello screening. Messi in «pagine» il depliant di Salute Lazio sullo screening del seno (numero verde ed email di ogni ASL) e la pagina «Screening oncologici» della Regione: dopo la copia, un contatto «screening» per ogni ASL e si accende «prevenzione»."
+    "Screening (copie del 23/10/2026): nessuna pagina copiata dell'ASL ha il numero dello screening. Messi in «pagine» il depliant di Salute Lazio sullo screening del seno (numero verde ed email di ogni ASL) e la pagina «Screening oncologici» della Regione: dopo la copia, un contatto «screening» per ogni ASL e si accende «prevenzione».",
+    "Pagine aggiunte in «pagine» il 23/10/2026 (quarto giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): pagine del Coordinamento screening. Devono dare il numero e gli orari del centro screening (contacts topic «screening»)."
    ],
    "pagine": [
     {
@@ -644,6 +663,14 @@
     {
      "tipo": "screening",
      "url": "https://regione.lazio.it/enti/salute/screening-oncologici"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.asl.rieti.it/organizzazione-aziendale/dipartimenti-aree-e-staff/dipartimento-della-prevenzione/uoc-igiene-e-sanita-pubblica/uos-coordinamento-screening-di-popolazione/"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.asl.rieti.it/iniziative-di-screening-e-prevenzione/"
     }
    ],
    "channel": "cup",
@@ -1119,7 +1146,8 @@
     "Zone (sub_areas): Roma 1 (PEC protocollo@pec.aslroma1.it e urp@aslroma1.it, pagine Contatti e URP; distretti 1, 2, 3, 13, 14, 15 dalla pagina PUA), Roma 3 (copia del 23/10/2026 della pagina URP: urp@aslroma3.it e PEC urp@pec.aslroma3.it; distretti Fiumicino e Municipi X, XI e XII dal menu dell'ASL), Roma 4 (protocollo@pec.aslroma4.it), Roma 5 (protocollo@pec.aslroma5.it), Roma 6 (servizio.protocollo@pec.aslroma6.it). Roma 2: la pagina URP copiata (23/10/2026) non ha email né PEC; la home ha un link «PEC»: messa in «pagine» la pagina https://www.aslroma2.it/index.php/pec e l'elenco delle PEC delle ASL della Regione Lazio. Finché Roma 2 non ha pec o emails, tests/coerenza.test.mjs tiene spenti i moduli con la lettera.",
     "Comuni delle zone Roma 4, 5 e 6: nelle copie ci sono solo alcune sedi (Civitavecchia, Bracciano, Tivoli). Messe in «pagine» le pagine dei distretti (Roma 4 e Roma 5) e «Comuni del territorio» (Roma 6).",
     "Percorso di tutela dell'ASL Roma 3 (pagina Liste di attesa, copia del 23/10/2026): oltre al Pass di garanzia, si può mandare a protocollo@pec.aslroma3.it il «Modulo presentazione istanza» con ricetta, documento e promemoria della prenotazione (Delibera n. 597 del 06/06/2024). Il modulo è un file e la copia non ha il suo indirizzo: scritto solo nei details della zona.",
-    "Centralino ASL Roma 3 06 56481: nella copia del 23/10/2026 della pagina «Servizio prenotazioni» è scritto «+390656481» (confronta-copie non lo riconosce). La stessa pagina ha in fondo link pubblicitari di siti di scommesse: sembra manomessa. Da confermare il numero su un'altra pagina dell'ASL Roma 3 o con una telefonata."
+    "Centralino ASL Roma 3 06 56481: nella copia del 23/10/2026 della pagina «Servizio prenotazioni» è scritto «+390656481» (confronta-copie non lo riconosce). La stessa pagina ha in fondo link pubblicitari di siti di scommesse: sembra manomessa. Da confermare il numero su un'altra pagina dell'ASL Roma 3 o con una telefonata.",
+    "Pagine aggiunte in «pagine» il 23/10/2026 (quarto giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): ASL Roma 2: regolamento di pubblica tutela (PDF) e informativa privacy (PDF): devono dare la PEC o l'email dell'URP a cui si scrive (zona Roma 2 in sub_areas). Screening di Roma 2, Roma 4, Roma 5 e Roma 6: Devono dare il numero e gli orari del centro screening (contacts topic «screening»)."
    ],
    "pagine": [
     {
@@ -1185,6 +1213,30 @@
     {
      "tipo": "liste-attesa",
      "url": "https://www.aslroma1.it/uploads/files/59_26_Tempi_di_erogazione_delle_prestazioni_sanitarie_.pdf"
+    },
+    {
+     "tipo": "urp",
+     "url": "https://www.aslroma2.it/attachments/article/243/Regolamento%20pubblica%20tutela.pdf"
+    },
+    {
+     "tipo": "pec",
+     "url": "https://www.aslroma2.it/attachments/article/359/INFORMATIVA%20.pdf"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.aslroma2.it/index.php/area-della-prevenzione-attiva/uosd-coordinamento-screening"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.aslroma4.it/azienda/dipartimenti/dipartimento-di-prevenzione/servizio-igiene-e-sanita-pubblica-s-i-s-p/screening-oncologici-asl-roma-4"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.aslroma5.it/programmi-di-screening-oncologici/"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.aslroma6.it/screening"
     }
    ],
    "channel": "cup",
@@ -1522,7 +1574,8 @@
     "Nessun numero per scelta del medico ed esenzioni nelle pagine copiate.",
     "ReCUP: la pagina della Regione con orari e numero è aggiornata al 12/08/2021: confermare gli orari.",
     "Liste d'attesa: how_to, documents_required, what_next e details dalla pagina «Pass di garanzia» di Salute Lazio (copia del 22/10/2026, pubblicata il 28/05/2026; le stesse frasi sono nelle pagine dell'ASL Roma 1 e dell'ASL Roma 5). letter_mode «portal» con portal_url la pagina della Regione: il pulsante del modulo oggi dice «Vai al sito dell'ASL» (js/liste-attesa.js), andrebbe «Vai al sito della Regione». Il modulo resta spento finché manca un indirizzo della zona di Roma 2 (copie del 23/10/2026). Il portale è della Regione: in details c'è la frase «Nel Lazio il Pass di garanzia è un servizio della Regione…».",
-    "Screening (copie del 23/10/2026): nessuna pagina copiata dell'ASL ha il numero dello screening. Messi in «pagine» il depliant di Salute Lazio sullo screening del seno (numero verde ed email di ogni ASL) e la pagina «Screening oncologici» della Regione: dopo la copia, un contatto «screening» per ogni ASL e si accende «prevenzione»."
+    "Screening (copie del 23/10/2026): nessuna pagina copiata dell'ASL ha il numero dello screening. Messi in «pagine» il depliant di Salute Lazio sullo screening del seno (numero verde ed email di ogni ASL) e la pagina «Screening oncologici» della Regione: dopo la copia, un contatto «screening» per ogni ASL e si accende «prevenzione».",
+    "Pagine aggiunte in «pagine» il 23/10/2026 (quarto giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): pagine degli screening. Devono dare il numero e gli orari del centro screening (contacts topic «screening»)."
    ],
    "pagine": [
     {
@@ -1536,6 +1589,14 @@
     {
      "tipo": "screening",
      "url": "https://regione.lazio.it/enti/salute/screening-oncologici"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.asl.vt.it/screening-per-la-prevenzione-dei-tumori-della-mammella"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.asl.vt.it/screening-per-la-prevenzione-del-tumore-del-colon-retto"
     }
    ],
    "channel": "cup",

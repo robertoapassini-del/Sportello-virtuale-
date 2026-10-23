@@ -685,7 +685,8 @@
     "Guardia medica: nelle copie nessun numero (una notizia dice che quella di Corridonia è nella Casa della Comunità di viale Italia). Nelle Marche il 116117 non è ancora attivo.",
     "PUA e ADI: copiati solo Tolentino e Piediripa (pagina del distretto di Macerata); mancano Civitanova Marche e Camerino.",
     "Moduli (23/10/2026): accesi cartella clinica, assistenza a casa, cure palliative e medico di famiglia (scelta del medico dalla copia della pagina dell'anagrafe assistiti). Spenti: liste d'attesa (nessuna copia dice cosa fare se il CUP non trova posto nei tempi: pagine nuove in pagine[]) e prevenzione (nessun numero dello screening nelle copie: pagine nuove in pagine[]).",
-    "Screening e liste d'attesa (23/10/2026): nessun numero dello screening e nessuna pagina sul percorso di tutela nelle copie. Nuove pagine in pagine[] (trovate col motore di ricerca, solo domini ufficiali, nessun dato preso da lì): pagine screening delle AST e «Tempi di attesa prestazioni specialistiche» dell'ARS Marche (DGR 380/2019, percorsi di tutela). Le pagine di regione.marche.it nelle copie sono la pagina del captcha (Radware): forse anche questa. Per l'AST Macerata non ho trovato una pagina dello screening sul sito ufficiale: da cercare."
+    "Screening e liste d'attesa (23/10/2026): nessun numero dello screening e nessuna pagina sul percorso di tutela nelle copie. Nuove pagine in pagine[] (trovate col motore di ricerca, solo domini ufficiali, nessun dato preso da lì): pagine screening delle AST e «Tempi di attesa prestazioni specialistiche» dell'ARS Marche (DGR 380/2019, percorsi di tutela). Le pagine di regione.marche.it nelle copie sono la pagina del captcha (Radware): forse anche questa. Per l'AST Macerata non ho trovato una pagina dello screening sul sito ufficiale: da cercare.",
+    "Pagine aggiunte in «pagine» il 23/10/2026 (quarto giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): pagina della UOSD Screening oncologici e pagina della Regione. Devono dare il numero e gli orari del centro screening (contacts topic «screening»)."
    ],
    "pagine": [
     {
@@ -743,6 +744,14 @@
     {
      "tipo": "tutela",
      "url": "https://www.regione.marche.it/ars/Settori/Territorio-e-Integrazione-sociosanitaria/Tempi-di-attesa-prestazioni-specialistiche"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.astmc.marche.it/it/organizzazione/unita-operativa-semplice-dipartimentale/uosd-screening-oncologici"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.regione.marche.it/Regione-Utile/Salute/Screening-oncologici"
     }
    ],
    "scelta_medico": {

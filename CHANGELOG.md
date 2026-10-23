@@ -2,6 +2,14 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 23/10/2026 — Friuli-Venezia Giulia, Piemonte, Lazio, Marche, Sardegna: quarto giro, pagine da copiare
+- Solo indirizzi in `pagine[]` (35 nuovi), trovati con il motore di ricerca sui domini ufficiali (aziende, Regioni, inps.it, normattiva.it). Nessun numero, PEC, email o regola presi dagli estratti: si scrivono dopo la copia del server. Per ogni azienda una riga nel `todo` dice cosa deve provare la pagina.
+- ASUFC (Udine): programma attuativo 2026 sui tempi di attesa (PDF) e pagina del CUP di Udine, per «what_next» del diritto di garanzia (con il regolamento DDG 706/2024 già in `pagine`).
+- ASL Biella: Carta dei servizi (a chi si manda la domanda del percorso di tutela). Il PDF del modulo non trovato: lo prende il server dai link PDF della pagina.
+- Lazio, ASL Roma 2: regolamento di pubblica tutela e informativa privacy (PDF), per la PEC o l'email della zona Roma 2. Screening: pagine di Frosinone, Latina, Rieti, Viterbo, Roma 2, Roma 4, Roma 5, Roma 6.
+- Marche: pagina della UOSD Screening oncologici dell'AST Macerata e pagina screening della Regione.
+- Sardegna: pagine del centro screening di tutte e 8 le ASL. Allegati A dei percorsi di tutela di Cagliari, Medio Campidano e Nuoro non trovati: li prende il server dai link PDF delle pagine. `inps.json`: nuovo `pagine` in cima al file (pagina INPS «Fase sperimentale», due notizie sulla terza fase, decreto-legge 19/2026 e testo coordinato su Normattiva), per il regime di Olbia, Lanusei, Sanluri e Carbonia.
+
 ## 23/10/2026 — Calabria e Alto Adige: PEC che mancavano; lettere accese
 - `data/regioni/trentino-alto-adige/asl.json`, Azienda sanitaria dell'Alto Adige: PEC dg@pec.sabes.it (Direzione generale). Fonte: https://www.asdaa.it/it/contatti/53003, letta dall'Italia il 23/10/2026; pagina aggiunta a «pagine» per la copia, riga in `tests/copie-noti.txt` finché la copia non c'è. In `index.json` accese cartella clinica, assistenza a casa e cure palliative (Trento aveva già PEC ed email URP).
 - `data/regioni/calabria/asl.json`, ASP di Vibo Valentia: PEC aspvibovalentia@pec.it ed email URP urp@aspvv.it. Fonte: pagina «Ufficio Comunicazione e URP» dell'ASP (https://www.aspvv.it/index.php/azienda/presentazione/la-direzione-generale-e-uffici-di-staff/ufficio-comunicazione-e-urp), letta dall'Italia il 23/10/2026: il sito blocca il server delle copie (403), quindi la riga della PEC è in `tests/copie-noti.txt`. L'indirizzo «comunicazione@» è per la stampa: non usato.

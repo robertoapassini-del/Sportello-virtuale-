@@ -1162,7 +1162,8 @@
     "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): medico, tutela. Da leggere quando ci sono le copie.",
     "Diritto di garanzia ASUFC (copia del 23/10/2026 della pagina «Liste di attesa», proof «pagina»): si chiede agli sportelli CUP o ai Punti di Salute (elenco con gli orari nella pagina); requisiti: residenza nella zona ASUFC, ricetta dematerializzata valida con quesito diagnostico, un appuntamento già prenotato fuori dai tempi in tutte le strutture (anche private accreditate), richiesta entro 4 giorni feriali dalla prenotazione. Manca «what_next»: la pagina non dice cosa succede dopo la richiesta (se e quando richiamano). È nel regolamento (DDG n. 706 del 28/06/2024, PDF aggiunto in «pagine»). Finché manca, liste-attesa resta spenta in tutta la regione.",
     "Scelta del medico (copie del 23/10/2026 delle pagine «Scelta o cambio del Medico o del pediatra» e «Anagrafe sanitaria», proof «pagina»): all'ufficio Anagrafe del distretto di residenza, con documento, tessera sanitaria e certificato di residenza; per alcune sedi su appuntamento. La pagina ASUFC non parla della scelta online su SESAMO: non scritta. Acceso medico-famiglia in Friuli-Venezia Giulia (tutte e quattro le aziende hanno scelta_medico).",
-    "Pagine aggiunte in «pagine» il 23/10/2026 (terzo giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): regolamento del diritto di garanzia (PDF), segreteria screening ASUFC, programma regionale di screening. Mancano ancora: cartelle cliniche, protesica, cure palliative, screening."
+    "Pagine aggiunte in «pagine» il 23/10/2026 (terzo giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): regolamento del diritto di garanzia (PDF), segreteria screening ASUFC, programma regionale di screening. Mancano ancora: cartelle cliniche, protesica, cure palliative, screening.",
+    "Pagine aggiunte in «pagine» il 23/10/2026 (quarto giro, url trovati con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): programma attuativo 2026 sui tempi di attesa (PDF) e pagina del CUP di Udine. Con il regolamento del diritto di garanzia (DDG 706/2024, già in «pagine», non ancora copiato) devono dire cosa succede dopo la richiesta: chi richiama la persona, entro quando, dove si fa la visita, cosa succede se rifiuta la data (per «what_next»)."
    ],
    "pagine": [
     {
@@ -1208,6 +1209,14 @@
     {
      "tipo": "screening",
      "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/screening-prevenzione-tumori/FOGLIA1/"
+    },
+    {
+     "tipo": "tutela",
+     "url": "https://asufc.sanita.fvg.it/export/sites/asufc/it/amministrazione_trasparente/documenti_AT/13_bilanci/2025_1184_PA2026_def-liste-attesa.pdf"
+    },
+    {
+     "tipo": "cup",
+     "url": "https://asufc.sanita.fvg.it/it/strutture/dir_sanitaria/dip_assistenza_territoriale/distretto_udine/serv_ammin_ud/cup_dist_ud/index.html"
     }
    ],
    "channel": "cup",
