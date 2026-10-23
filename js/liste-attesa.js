@@ -7,7 +7,7 @@ import { checkWaiting, callbackDeadline, maxWaitDays, todayISO, formatIt, parseD
 import { tutelaLetter, tutelaReminder, mailtoHref, conZona, nomeZona } from './letters.js';
 import { noPecBox,
   esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, copyText, printText, readForm, mailLink, callButton, aspCalls,
-  personFields, reportErrorHref, generalContactInfo, choice, helpBox, sourcesBox, moreHelp, hideHeadingEmoji, enableStart, aslLabel, regione, regioneInfo, regioneLink, generalContact, syncDelegate, delegateNoteText,
+  personFields, reportErrorHref, generalContactInfo, choice, helpBox, sourcesBox, moreHelp, hideHeadingEmoji, enableStart, aslLabel, regione, regioneInfo, regioneLink, fontiNazionali, generalContact, syncDelegate, delegateNoteText,
 } from './common.js';
 import { RICETTA_SVG } from './ricetta-svg.js';
 import { createNav, withRegion, regionAction, senzaUffici, progress as progressBar, moveToTop, showError, clearError, provinceChoice, zonaScreen, intestazioneAzienda } from './flow.js';
@@ -64,7 +64,7 @@ function screenSources() {
     if (a.portal_url && a.portal_url !== a.info_url) items.push({ label: `${a.name} – portale per la richiesta`, url: a.portal_url });
     items.push(...a.sources);
   }
-  items.push(...rules.sources);
+  items.push(...fontiNazionali(rules.sources));
   return sourcesBox(items, { verified: a ? a.last_verified : rules.last_verified });
 }
 
@@ -91,7 +91,7 @@ const warnings = () => `
   <div class="card">
     <h2 style="margin-top:0">❗ Importante</h2>
     <ul class="icon-list">
-      <li><span class="ico" aria-hidden="true">💶</span> Vai dal privato a pagamento solo se l'${aslLabel()} te lo scrive: altrimenti potresti non avere i soldi indietro.</li>
+      <li><span class="ico" aria-hidden="true">💶</span> Non andare dal privato a pagamento da solo: di solito i soldi non te li ridanno. Alcune aziende sanitarie rimborsano, ma solo se te lo scrivono prima.</li>
       <li><span class="ico" aria-hidden="true">🧾</span> Conserva il foglio della prenotazione.</li>
       <li><span class="ico" aria-hidden="true">📅</span> Non perdere l'appuntamento che hai già. Se non ci vai, disdicilo: altrimenti potresti pagare il ticket.</li>
     </ul>
@@ -489,7 +489,7 @@ const screens = {
           <li>${regioneLink('assessorato') || regione() === 'sicilia' ? `<strong>Scrivi alla ${esc(regioneInfo().ente || 'tua Regione')}</strong>, ufficio URP dell'Assessorato della Salute${regioneLink('assessorato') ? `
             (<a href="${esc(regioneLink('assessorato'))}" target="_blank" rel="noopener">${esc(new URL(regioneLink('assessorato')).hostname.replace(/^www\./, ''))}</a>)` : ''}.` : '<strong>Scrivi alla tua Regione</strong> (guarda il sito della Regione per l\'ufficio giusto).'}</li>
         </ol>
-        <div class="notice warn"><p>💶 Vai dal privato a pagamento <strong>solo se l'${aslLabel()} te lo scrive</strong>. Altrimenti potresti non avere i soldi indietro.</p></div>
+        <div class="notice warn"><p>💶 <strong>Non andare dal privato a pagamento da solo</strong>: di solito i soldi non te li ridanno. Alcune aziende sanitarie rimborsano, ma solo se te lo scrivono prima.</p></div>
         <div class="card">
           <h2 style="margin-top:0">📄 Il sollecito, già pronto</h2>
           <form id="rem-form" novalidate>

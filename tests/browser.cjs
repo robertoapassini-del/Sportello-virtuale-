@@ -78,6 +78,25 @@ async function controlla(page, dove, regione, problemi) {
   if (await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1)) problemi.push(`${dove}: più larga dello schermo`);
   // fonti.html è l'elenco delle fonti di tutte le regioni (anche Calabria e Basilicata hanno le ASP): lì i nomi vanno bene.
   if (regione !== 'sicilia' && !dove.includes('/fonti.html')) for (const f of await page.evaluate(fraseSiciliane, aspNellaRegione(regione))) problemi.push(`${dove}: frase siciliana senza «Sicilia»: «${f}»`);
+  // 23/10/2026: senza regione scelta i moduli mostravano le fonti della Regione Siciliana e dell'ASP di Palermo (anche nel
+  // riquadro delle fonti, che il controllo qui sopra salta) e il link all'elenco siciliano per la dialisi.
+  // Non guarda l'elenco fisso scritto da tools/pagine.mjs («Da dove vengono queste informazioni» fuori da details.fonti:
+  // i nomi dicono di chi sono)
+  // né la privacy e le fonti, che elencano apposta i siti di tutte le regioni.
+  if (regione !== 'sicilia' && !/\/(fonti|privacy)\.html/.test(dove)) {
+    const sic = await page.evaluate(() => [...document.querySelectorAll('#app a[href]')]
+      .filter((a) => { const ul = a.closest('ul'); const prima = ul && ul.previousElementSibling; return a.closest('details.fonti') || !(prima && /Da dove vengono/.test(prima.textContent)); })
+      // Come per le frasi: va bene se la frase o il titoletto sopra dicono «Sicilia» («In Sicilia: …»).
+      .filter((a) => {
+        const frase = a.closest('p, li, dd, dt, td');
+        if (frase && /Sicili/.test(frase.innerText)) return false;
+        const titoli = [...document.querySelectorAll('#app h2, #app h3, #app h4')].filter((h) => h.compareDocumentPosition(a) & Node.DOCUMENT_POSITION_FOLLOWING);
+        return !(titoli.length && /Sicili/.test(titoli[titoli.length - 1].innerText));
+      })
+      .map((a) => a.href)
+      .filter((h) => /regione\.sicilia\.it|asppalermo|aspct\.it|sanitainsicilia|sovracup/i.test(h)));
+    for (const h of sic) problemi.push(`${dove}: link siciliano fuori dalla Sicilia: ${h}`);
+  }
 }
 
 // Accessibilità (audit del 21/10/2026): pulsanti e link da toccare alti almeno 44 px; con il testo

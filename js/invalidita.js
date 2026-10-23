@@ -99,7 +99,7 @@ function regimeSteps(r) {
   return `<ol class="big-steps">
       <li>Il medico manda il certificato all'INPS.</li>
       <li>Poi bisogna fare la <strong>domanda all'INPS entro ${rules.old_regime.domanda_window_days} giorni</strong>. Un patronato la fa gratis per te.</li>
-      <li>L'${aslLabel()} ti chiama per la visita.</li>
+      <li>Ti chiamano per la visita: secondo la provincia, la fa la commissione dell'${aslLabel()} o quella dell'INPS.</li>
       <li>Ricevi un foglio con il risultato.</li>
     </ol>`;
 }

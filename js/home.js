@@ -2,7 +2,7 @@
 // alla pagina dell'area (per esempio visite-esami/), come la home di NHS.uk.
 // La ricerca è nella testata: qui i risultati compaiono mentre si scrive.
 import { cerca } from './cerca.js';
-import { esc, loadJSON, loadRegioni, renderFooter, helpBox, sourcesBox, aslLabel, regioniAttive, regioneInfo, regioneSalvata, inRegione } from './common.js';
+import { esc, loadJSON, loadRegioni, renderFooter, helpBox, sourcesBox, fontiNazionali, aslLabel, regioniAttive, regioneInfo, regioneSalvata, inRegione } from './common.js';
 
 const app = document.getElementById('app');
 let reg;
@@ -41,17 +41,18 @@ function copertura() {
     : `<p class="home-regione">Le regole valgono in tutta Italia. ${dove} non abbiamo ancora i numeri utili della zona.${dopo}</p>`;
 }
 
-// Chi siamo in una riga sopra le scelte; il resto sotto. Con una regione sola: «Per ora solo in <regione>».
+// Chi siamo in una riga sopra le scelte; il resto sotto. Con una regione attiva sola: «Per ora solo in <regione>».
 // Con più regioni: quale si sta guardando e il link per cambiarla (la scelta è in Numeri utili).
 function intro() {
   const scelta = regioneSalvata() || regioneInfo();
   const piu = regioniAttive().length > 1;
+  const una = regioniAttive().length === 1; // zero se l'indice non arriva: allora niente «Per ora solo in…»
   // Finché non si sceglie la regione, il nome generico: la sigla cambia da regione a regione (ASP, ASL, ATS…).
-  const ente = piu && !regioneSalvata() ? 'azienda sanitaria (ASL)' : (scelta.asl_label || aslLabel());
+  const ente = !una && !regioneSalvata() ? 'azienda sanitaria (ASL)' : (scelta.asl_label || aslLabel());
   return `
   <section class="home-intro page-band">
   <h1>Di cosa hai bisogno?</h1>
-  <p class="home-trust">Gratis. Siamo volontari: <strong>non siamo l'${esc(ente)} né l'INPS</strong>.${piu ? '' : ` Per ora solo in ${esc(regioneInfo().name)}.`}</p>
+  <p class="home-trust">Gratis. Siamo volontari: <strong>non siamo l'${esc(ente)} né l'INPS</strong>.${una ? ` Per ora solo in ${esc(regioneInfo().name)}.` : ''}</p>
   ${piu ? `<p class="home-regione">📍 ${regioneSalvata() ? `Stai guardando: <strong>${esc(scelta.name)}</strong> · <a href="numeri-utili/?torna=${encodeURIComponent(location.pathname)}#regione">Cambia regione</a>` : `<a href="numeri-utili/?torna=${encodeURIComponent(location.pathname)}#regione">Scegli la tua regione</a> per vedere i numeri e gli uffici della tua zona`}</p>` : ''}
   ${piu ? copertura() : ''}
   </section>`;
@@ -99,7 +100,7 @@ function render() {
     <div class="area-grid">${reg.groups.map((g) => card(`${g.page}/`, g.icon, g.title, g.small)).join('')}</div>
     <div class="home-row">${urgent}${frequent()}</div>
     ${about}
-    ${helpBox()}${sourcesBox(rulesSources, {})}`;
+    ${helpBox()}${sourcesBox(fontiNazionali(rulesSources), {})}`;
 }
 
 // La pagina «Numeri utili» non è un modulo, ma la ricerca deve trovarla.
