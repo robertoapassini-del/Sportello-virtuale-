@@ -88,6 +88,20 @@ const CASI = [
   ['esenzione over 65', 'esenzione-ticket'],
   ['tessera sanitaria smarrita', 'tessera-sanitaria'],
   ['pass disabili', 'contrassegno-disabili'],
+  // Google Trends Italia e 7 regioni, 23/10/2026: le frasi più cercate e in crescita.
+  ['fse', 'fascicolo-e-ricetta'],
+  ['fascicolo sanitario lombardia', 'fascicolo-e-ricetta'],
+  ['come accedere al fascicolo sanitario', 'fascicolo-e-ricetta'],
+  ['cup online', 'prenotare-cup'],
+  ['numero prenotazione cup', 'prenotare-cup'],
+  ['annullare prenotazione cup', 'prenotare-cup'],
+  ['stampa prenotazione cup', 'prenotare-cup'],
+  ['cambio medico di base vicino a me', 'medico-famiglia'],
+  ['cambio medico curante', 'medico-famiglia'],
+  ['cambio residenza', 'medico-famiglia'],
+  ['rinnovo esenzione ticket 2026', 'esenzione-ticket'],
+  ['quando scade esenzione ticket', 'esenzione-ticket'],
+  ['esenzione e02', 'esenzione-ticket'],
 ];
 
 test(`almeno 35 ricerche hanno il risultato giusto per primo`, () => {

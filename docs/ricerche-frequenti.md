@@ -57,6 +57,114 @@ Sempre con **«legge 104»** come termine di riferimento, così i numeri si conf
 **Picchi stagionali** già visti in Sicilia, da controllare in tutta Italia: guardia medica a Natale e a
 Ferragosto; esenzione ticket a gennaio e aprile (rinnovi); legge 104 a settembre (notizie INPS).
 
+## 3b. Risultati: Italia, 23/10/2026
+
+Google Trends, Italia, 23/10/2025 – 23/10/2026, tutte le categorie, Ricerca Google, sempre «Termine di
+ricerca». Raccolti dal proprietario con Claude in Chrome, dai dati che la pagina carica per il grafico (le medie
+sono quelle a sinistra del grafico). Ottobre 2025 conta solo l'ultima settimana.
+
+### Confronti
+
+| Confronto | Termine                      | Media | Picco (settimana, valore)        | Mesi più alti                 |
+|-----------|------------------------------|------:|----------------------------------|-------------------------------|
+| 1         | legge 104                    | 28    | 20–26 set 2026 (59)              | set 2026, fine ott 2025       |
+| 1         | guardia medica               | 39    | 21–27 dic 2025 (100)             | dic 2025, ago, lug 2026       |
+| 1         | invalidità civile            | 15    | 20–26 set 2026 (35)              | set, mar 2026                 |
+| 1         | esenzione ticket             | 8     | 29 mar – 4 apr 2026 (22)         | apr, mar 2026                 |
+| 1         | prenotazione cup             | 10    | 12–18 apr 2026 (13)              | quasi piatto                  |
+| 2         | legge 104                    | 16    | 20–26 set 2026 (34)              | set 2026, fine ott 2025, lug  |
+| 2         | fascicolo sanitario          | 75    | 18–24 ott 2026 (100)             | ott, mar, giu 2026            |
+| 2         | cambio medico                | 7     | 9, in 4 settimane                | piatto                        |
+| 2         | tessera sanitaria            | 21    | 19–25 apr 2026 (53)              | apr, mag, giu 2026            |
+| 2         | pronto soccorso              | 25    | 19–25 lug 2026 (43)              | ago, lug, giu 2026            |
+| 3         | legge 104                    | 48    | 20–26 set 2026 (100)             | set 2026, fine ott 2025, lug  |
+| 3         | medico di base               | 55    | 18–24 ott 2026 (74)              | ott, set, gen 2026            |
+| 3         | certificato di malattia      | 9     | 14–20 dic 2025 (13)              | ott, gen, set 2026            |
+| 3         | visita fiscale               | 11    | 14–20 dic 2025 (18)              | nov 2025, gen, mar 2026       |
+| 3         | indennità di accompagnamento | 2     | dic 2025 (4)                     | nov 2025 – gen 2026           |
+
+**Classifica**, con «legge 104» = 1 (media della parola diviso la media di «legge 104» nello stesso confronto):
+
+| Tema                    | Volte legge 104 | Pagina oggi                                  |
+|-------------------------|----------------:|----------------------------------------------|
+| fascicolo sanitario     | 4,7             | `fascicolo-e-ricetta/`, ma senza il link della Regione (c'è solo per la Sicilia) |
+| pronto soccorso         | 1,6             | nessuna (solo `numeri-utili/`)               |
+| guardia medica          | 1,4             | nessuna (solo `numeri-utili/`)               |
+| tessera sanitaria       | 1,3             | `tessera-sanitaria/`                         |
+| medico di base          | 1,1             | `medico-famiglia/`                           |
+| legge 104               | 1               | `legge-104/`                                 |
+| invalidità civile       | 0,5             | `invalidita/`                                |
+| cambio medico           | 0,4             | `medico-famiglia/`                           |
+| prenotazione cup        | 0,4             | `prenotare-cup/`                             |
+| esenzione ticket        | 0,3             | `esenzione-ticket/`                          |
+| visita fiscale          | 0,2             | nessuna                                      |
+| certificato di malattia | 0,2             | nessuna                                      |
+| accompagnamento         | 0,04            | `accompagnamento/`                           |
+
+### Query associate (Italia, Lombardia, Lazio, Campania, Veneto, Puglia, Emilia-Romagna, Sicilia)
+
+Le prime 5 di ogni lista. Tra parentesi il valore («Più popolari») o la crescita («In aumento»).
+
+**Prenotazione CUP**
+- Italia: cup online prenotazione (100), cup online (92), prenotazione cup toscana (42), numero prenotazione cup
+  (36). In aumento: puglia salute prenotazione (+110%), centro unico di prenotazione (+70%), salute lazio (+60%),
+  salute piemonte (+50%).
+- Lombardia: cup lombardia (100), prenotazione cup online (73), numero prenotazione cup (54).
+- Lazio: cup lazio (100), prenotazione online (50), cup roma (40). In aumento: salute lazio (+90%).
+- Campania: prenotazione cup online (100), cup online (96), numero prenotazione cup (89). Solo 4 query.
+- Veneto: prenotazione cup online (100), numero prenotazione cup (46), disdire prenotazione cup (25). In aumento:
+  disdire prenotazione cup (+50%).
+- Puglia: puglia salute prenotazione (100), numero prenotazione cup (90), disdetta prenotazione cup (43). In
+  aumento: annullare prenotazione cup (+200%).
+- Emilia-Romagna: prenotazione cup bologna (100), numero prenotazione cup (94), stampa prenotazione cup (84). In
+  aumento: disdire prenotazione cup (+80%), numero verde prenotazione cup (+70%).
+- Sicilia: cup palermo (100), cup online (90), cup policlinico (45). In aumento: sovracup palermo (+80%).
+
+**Cambio medico**
+- Italia: cambio medico base (100), cambio medico asl (31), cambio medico online (30). In aumento: cambio medico
+  di base vicino a me (+300%), salute lazio cambio medico di base (+110%), toscana salute cambio medico (+70%),
+  cambio medico online fvg (+70%), sinfonia cambio medico (+60%).
+- «cambio medico di base vicino a me» cresce in tutte le regioni tranne la Puglia.
+- «fascicolo sanitario cambio medico» è tra le prime in Lombardia, Lazio, Veneto, Emilia-Romagna e Sicilia: in
+  molte regioni il medico si cambia dal fascicolo.
+- Nomi locali: Lazio «salute lazio» e «asl roma»; Campania «sinfonia»; Veneto «ulss 3/6/9» e «sanità km zero»;
+  Puglia «pugliasalute»; Sicilia «asp» (100) e «asp palermo».
+
+**Esenzione ticket**
+- Italia: reddito esenzione ticket (100), esenzione ticket per reddito (76), esenzione ticket online (58), asl
+  esenzione ticket (51). In aumento: rinnovo esenzione ticket 2026 e rinnovo online 2026 (Impennata), asp con te
+  (+1.050%), sinfonia (+90%), esenzione ticket over 65 (+60%), codice e01 (+50%), certificato esenzione (+40%).
+- Lazio: esenzione ticket over 65 (+450%), quando scade esenzione ticket (+50%).
+- Sicilia: delega per esenzione ticket (+300%), asp con te (Impennata), esenzione e02 (+40%).
+- In molte regioni la prima ricerca è «esenzione ticket» + nome della regione.
+
+**Fascicolo sanitario**
+- In tutte le regioni la prima ricerca è «fascicolo sanitario» + nome della regione: la gente cerca il portale
+  della propria Regione.
+- In aumento: come accedere al fascicolo sanitario (+50%), fascicolo sanitario login, accedi con CIE (Lombardia
+  +600%), fse, fascicolo sanitario 2.0 (Campania +300%), doctolib (Lazio, Veneto, Emilia-Romagna).
+- Nomi locali: Puglia «puglia salute», Lazio «salute lazio», Veneto «sanità km zero», Sicilia «cefpas» (Impennata)
+  e «asp con te».
+- Nota sulla Sicilia: nella lista «Più popolari» la riga 10 ripeteva la 9 per un errore di copia; sono 9 query.
+
+### Cosa ci dice
+
+1. **Il fascicolo sanitario è il tema più cercato**, quasi 5 volte la legge 104. La gente vuole il link del
+   fascicolo della propria Regione, ma il sito lo ha solo per la Sicilia (`link.fse` in
+   `data/regioni/index.json`). Le copie del server (branch `copie-siti`) hanno già pagine ufficiali del fascicolo
+   per 16 regioni: mancano Friuli-Venezia Giulia, Lombardia, Veneto e la Sicilia stessa.
+2. **Pronto soccorso e guardia medica insieme valgono 3 volte la legge 104** e non hanno una pagina. Picchi: guardia
+   medica a Natale e in estate, pronto soccorso d'estate.
+3. **Le persone cercano lo strumento online**: «cup online», «cambio medico online», «esenzione ticket online».
+   Ogni pagina deve portare subito al servizio online della Regione o dell'azienda.
+4. **«Numero prenotazione cup»** è tra le prime ricerche in quasi tutte le regioni: il numero del CUP della propria
+   azienda deve essere in alto nella pagina del CUP.
+5. **Disdire e annullare** una prenotazione crescono (Veneto, Puglia, Emilia-Romagna).
+6. **I portali regionali hanno un nome** (Salute Lazio, Puglia Salute, Sinfonia in Campania, Sanità km zero in
+   Veneto, Toscana Salute, Salute Piemonte, ASP con te in Sicilia). Vanno nei dati solo dopo la copia della pagina
+   ufficiale; poi nelle parole chiave della ricerca, come «aspconte».
+7. **Accompagnamento** si cerca poco con questo nome (0,04): la gente lo cerca dentro «invalidità civile».
+
 ## 4. Ricerche e pagine: cosa c'è e cosa manca
 
 Ogni ricerca di questa tabella che ha una pagina è anche in `tests/ricerca.test.mjs`: se la ricerca della home
@@ -84,8 +192,12 @@ smette di portare alla pagina giusta, il test fallisce. Una riga nuova qui = una
 
 ### Ricerche senza una pagina giusta (prova del 23/10/2026 sulla ricerca della home)
 
-In ordine di priorità. Prima di scrivere: fonte ufficiale per ogni cifra, nazionale o regione per regione.
+In ordine di priorità (con i numeri del punto 3b). Prima di scrivere: fonte ufficiale per ogni cifra, nazionale o
+regione per regione.
 
+0. **Link al fascicolo sanitario di ogni Regione** (non è una pagina nuova, ma è la cosa più cercata): `link.fse`
+   in `data/regioni/index.json` per tutte le regioni, dalle copie del server, e il link anche in
+   `fascicolo-e-ricetta/`, non solo nella cartella clinica.
 1. **Pronto soccorso e guardia medica.** «codice bianco» porta all'esenzione ticket, «pronto soccorso
    pediatrico» solo ai Numeri utili. Serve una pagina: quando andare, codici colore, ticket del codice bianco
    (cambia per regione: una fonte datata diceva 25 € in Sicilia, da non usare), chi chiamare di notte e nei
@@ -103,8 +215,9 @@ In ordine di priorità. Prima di scrivere: fonte ufficiale per ogni cifra, nazio
 - `regional_channel` (portale o app di prenotazione della Regione) è vuoto in tutte le 20 regioni.
 - `local_name` (come si chiama il percorso di tutela) c'è solo in Sicilia, Toscana, Liguria e Valle d'Aosta;
   in Emilia-Romagna è «da verificare».
-- Le parole «sovracup» e «aspconte» nelle parole chiave valgono solo per la Sicilia: le parole delle altre
-  regioni si aggiungono dopo il punto 3.
+- `link.fse` (fascicolo della Regione) c'è solo per la Sicilia: vedi il punto 0 qui sopra.
+- Le parole «sovracup» e «aspconte» nelle parole chiave valgono solo per la Sicilia. I nomi trovati il 23/10/2026
+  (punto 3b, n. 6) si aggiungono quando sono nei dati della regione con la fonte.
 
 ## 5. Le pagine da migliorare (dalla ricerca in Sicilia, ancora valide)
 

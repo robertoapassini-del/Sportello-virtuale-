@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 23/10/2026 — Google Trends per l'Italia e 7 regioni: risultati e ricerca della home
+- `docs/ricerche-frequenti.md`, punto 3b: 3 confronti per l'Italia e le query associate di 4 temi in 8 zone (Google Trends, 23/10/2025 – 23/10/2026, raccolti dal proprietario). Il fascicolo sanitario è il tema più cercato (4,7 volte la legge 104), ma il link al fascicolo della Regione c'è solo per la Sicilia; pronto soccorso e guardia medica insieme valgono 3 volte la legge 104 e non hanno una pagina.
+- Ricerca della home: «fse» portava prima alla cartella clinica (tolta la parola da `cartella-clinica`, che resta trovata con «fascicolo»); parole nuove «annullare annullamento stampa» (CUP) e «residenza trasferimento curante» (medico).
+- Nuovi controlli: 13 ricerche prese da Google Trends in `tests/ricerca.test.mjs`.
+
 ## 23/10/2026 — Cosa cercano le persone, in tutta Italia; statistiche anonime della ricerca
 - `docs/ricerche-frequenti.md` riscritto per tutte le regioni: fonti in ordine di valore, come rifare Google Trends per l'Italia e per regione, tabella ricerche → pagina, ricerche ancora senza pagina (pronto soccorso e codice bianco, pensione e assegno di invalidità, certificato di malattia e visita fiscale, stranieri e STP). La ricerca della Sicilia del 19/10/2026 resta in fondo.
 - Statistiche (GoatCounter), mai le parole scritte: «Sì / No» con la regione scelta (`utile-no/<pagina>/<regione>`), `ricerca-fatta/<regione>`, `ricerca-vuota/<regione>` e `ricerca-clic/<modulo>` (`js/common.js`, `js/home.js`). I conteggi partono con `sendBeacon`, così arrivano anche quando si apre un risultato. Pagina privacy aggiornata.
