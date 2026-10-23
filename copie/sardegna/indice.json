@@ -1,6 +1,6 @@
 {
  "regione": "sardegna",
- "aggiornato": "2026-10-23T10:43:56.047Z",
+ "aggiornato": "2026-10-23T12:58:31.048Z",
  "pagine": [
   {
    "asl": "cagliari",
@@ -12,6 +12,28 @@
    "sha": "d08538026681f56957af4766de480b007d5df83733675180c653b4b9cb908288",
    "caratteri": 5454,
    "email_nascoste": 2,
+   "cambiata": false
+  },
+  {
+   "asl": "cagliari",
+   "url": "https://www.asl8cagliari.it/percorso-tutela-accesso-alternativo-alle-prestazioni-specialistiche/",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "cagliari/2f0705c51e24.txt",
+   "titolo": "Percorso Tutela accesso alternativo alle prestazioni specialistiche - ASL Cagliari",
+   "sha": "bcfb49a9a326b9e0e1a0b83e94cf4e8b562fa166d3f2070eb69a4fa8080888db",
+   "caratteri": 6399,
+   "email_nascoste": 3,
+   "link_pdf": [
+    {
+     "url": "https://www.asl8cagliari.it/wp-content/uploads/2024/05/delibera-n-349-del-15-maggio-2024.pdf",
+     "testo": "Deliberazione del Direttore Generale n. 349 del 17 maggio 2024"
+    },
+    {
+     "url": "https://www.asl8cagliari.it/wp-content/uploads/2024/05/All._A._Percorso_tutela_ASL_Cagliari-con-Delibera-DG.pdf",
+     "testo": "Allegato A “Procedura aziendale: ”Percorso di tutela” di accesso alternativo alle prestazioni specialistiche del cittadi"
+    }
+   ],
    "cambiata": false
   },
   {
@@ -93,24 +115,26 @@
   },
   {
    "asl": "cagliari",
-   "url": "https://www.asl8cagliari.it/percorso-tutela-accesso-alternativo-alle-prestazioni-specialistiche/",
+   "url": "https://www.asl8cagliari.it/servizio/screening-oncologici/",
    "controllata": "2026-10-23",
    "http": 200,
-   "file": "cagliari/2f0705c51e24.txt",
-   "titolo": "Percorso Tutela accesso alternativo alle prestazioni specialistiche - ASL Cagliari",
-   "sha": "bcfb49a9a326b9e0e1a0b83e94cf4e8b562fa166d3f2070eb69a4fa8080888db",
-   "caratteri": 6399,
-   "email_nascoste": 3,
-   "link_pdf": [
-    {
-     "url": "https://www.asl8cagliari.it/wp-content/uploads/2024/05/delibera-n-349-del-15-maggio-2024.pdf",
-     "testo": "Deliberazione del Direttore Generale n. 349 del 17 maggio 2024"
-    },
-    {
-     "url": "https://www.asl8cagliari.it/wp-content/uploads/2024/05/All._A._Percorso_tutela_ASL_Cagliari-con-Delibera-DG.pdf",
-     "testo": "Allegato A “Procedura aziendale: ”Percorso di tutela” di accesso alternativo alle prestazioni specialistiche del cittadi"
-    }
-   ],
+   "file": "cagliari/eae6f7103bd8.txt",
+   "titolo": "Screening oncologici - ASL Cagliari",
+   "sha": "47d25914820d1b173809e93f63daa4bab0ee512ab4f9e1c220be5202e469e97d",
+   "caratteri": 5221,
+   "email_nascoste": 9,
+   "cambiata": false
+  },
+  {
+   "asl": "cagliari",
+   "url": "https://www.asl8cagliari.it/wp-content/uploads/2024/05/All._A._Percorso_tutela_ASL_Cagliari-con-Delibera-DG.pdf",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "cagliari/76ea106986c6.txt",
+   "titolo": "ALLEGATO A",
+   "sha": "698194762b06a0c8b912e8aae711c45091cc3d14e0b319306191e424dc0ed043",
+   "caratteri": 7516,
+   "pdf": true,
    "cambiata": false
   },
   {
@@ -163,18 +187,6 @@
   },
   {
    "asl": "cagliari",
-   "url": "https://www.asl8cagliari.it/servizio/screening-oncologici/",
-   "controllata": "2026-10-23",
-   "http": 200,
-   "file": "cagliari/eae6f7103bd8.txt",
-   "titolo": "Screening oncologici - ASL Cagliari",
-   "sha": "47d25914820d1b173809e93f63daa4bab0ee512ab4f9e1c220be5202e469e97d",
-   "caratteri": 5221,
-   "email_nascoste": 9,
-   "cambiata": false
-  },
-  {
-   "asl": "cagliari",
    "url": "https://www.asl8cagliari.it/wp-content/uploads/2026/08/modulo-reclamo-urp.pdf",
    "controllata": "2026-10-23",
    "da_pagina": "https://www.asl8cagliari.it/azienda/urp/",
@@ -183,19 +195,6 @@
    "titolo": "Microsoft Word - Nuovo-Modulo-URP-Segnalazioni-Reclami-Suggerimenti-Elogi",
    "sha": "b81319425c0f5290a3ac5f4d6d81609c761666e4fbc75bfcdddd73372e59bfed",
    "caratteri": 9112,
-   "pdf": true,
-   "cambiata": false
-  },
-  {
-   "asl": "cagliari",
-   "url": "https://www.asl8cagliari.it/wp-content/uploads/2024/05/All._A._Percorso_tutela_ASL_Cagliari-con-Delibera-DG.pdf",
-   "controllata": "2026-10-23",
-   "da_pagina": "https://www.asl8cagliari.it/percorso-tutela-accesso-alternativo-alle-prestazioni-specialistiche/",
-   "http": 200,
-   "file": "cagliari/76ea106986c6.txt",
-   "titolo": "ALLEGATO A",
-   "sha": "698194762b06a0c8b912e8aae711c45091cc3d14e0b319306191e424dc0ed043",
-   "caratteri": 7516,
    "pdf": true,
    "cambiata": false
   },
@@ -341,6 +340,18 @@
   },
   {
    "asl": "gallura",
+   "url": "https://www.aslgallura.it/servizio/coordinamento-screening/",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "gallura/54d6bd990d24.txt",
+   "titolo": "Coordinamento Screening - ASL Gallura",
+   "sha": "dd6c54aad859aa2652b68e44aa5bd983e4259aa8b012cb6be6259c362e2d411c",
+   "caratteri": 6335,
+   "email_nascoste": 3,
+   "cambiata": false
+  },
+  {
+   "asl": "gallura",
    "url": "https://www.aslgallura.it/servizio/scelta-e-revoca-del-medico-2/",
    "controllata": "2026-10-23",
    "http": 200,
@@ -361,18 +372,6 @@
    "sha": "5afe07a83c9b34b90ab789e1080fba4dd7380c01dcc855a61faad0830cd5a0ae",
    "caratteri": 4053,
    "email_nascoste": 1,
-   "cambiata": false
-  },
-  {
-   "asl": "gallura",
-   "url": "https://www.aslgallura.it/servizio/coordinamento-screening/",
-   "controllata": "2026-10-23",
-   "http": 200,
-   "file": "gallura/54d6bd990d24.txt",
-   "titolo": "Coordinamento Screening - ASL Gallura",
-   "sha": "dd6c54aad859aa2652b68e44aa5bd983e4259aa8b012cb6be6259c362e2d411c",
-   "caratteri": 6335,
-   "email_nascoste": 3,
    "cambiata": false
   },
   {
@@ -415,6 +414,18 @@
      "testo": "PDEL_2025_0000284_Delibera_Percorso_di_tutela"
     }
    ],
+   "cambiata": false
+  },
+  {
+   "asl": "medio-campidano",
+   "url": "https://www.aslmediocampidano.it/wp-content/uploads/2025/04/Allegato-A-Percorso-di-tutela.pdf",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "medio-campidano/636cd7ffaab1.txt",
+   "titolo": "PV251 PV 251",
+   "sha": "4c35e7ef9e8cb96ce8acaa6c25ecc826587bdd3a81d490f2b7c16daa509e0342",
+   "caratteri": 2554,
+   "pdf": true,
    "cambiata": false
   },
   {
@@ -490,6 +501,18 @@
   },
   {
    "asl": "medio-campidano",
+   "url": "https://www.aslmediocampidano.it/centro-screening-numero-verde-800-339233/",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "medio-campidano/ac68b2fc697c.txt",
+   "titolo": "Centro Screening: numero verde 800 339233 - ASL Medio Campidano",
+   "sha": "ca6c0de6e3ce5688cf5876185893f199c5c2d18f69fd897db284202fb97dcda8",
+   "caratteri": 2511,
+   "email_nascoste": 5,
+   "cambiata": false
+  },
+  {
+   "asl": "medio-campidano",
    "url": "https://www.aslmediocampidano.it/servizio/prevenzione-e-promozione-della-salute-centro-screening-e-malattie-croniche-promozione-sani-stili-di-vita-e-medicina-dello-sport/",
    "controllata": "2026-10-23",
    "http": 200,
@@ -504,31 +527,6 @@
      "testo": "Informativa trattamento dati personali nell’ambito dei programmi di screening oncologici"
     }
    ],
-   "cambiata": false
-  },
-  {
-   "asl": "medio-campidano",
-   "url": "https://www.aslmediocampidano.it/centro-screening-numero-verde-800-339233/",
-   "controllata": "2026-10-23",
-   "http": 200,
-   "file": "medio-campidano/ac68b2fc697c.txt",
-   "titolo": "Centro Screening: numero verde 800 339233 - ASL Medio Campidano",
-   "sha": "ca6c0de6e3ce5688cf5876185893f199c5c2d18f69fd897db284202fb97dcda8",
-   "caratteri": 2511,
-   "email_nascoste": 5,
-   "cambiata": false
-  },
-  {
-   "asl": "medio-campidano",
-   "url": "https://www.aslmediocampidano.it/wp-content/uploads/2025/04/Allegato-A-Percorso-di-tutela.pdf",
-   "controllata": "2026-10-23",
-   "da_pagina": "https://www.aslmediocampidano.it/percorso-di-tutela-accesso-alternativo-a-prestazioni-specialistiche/",
-   "http": 200,
-   "file": "medio-campidano/636cd7ffaab1.txt",
-   "titolo": "PV251 PV 251",
-   "sha": "4c35e7ef9e8cb96ce8acaa6c25ecc826587bdd3a81d490f2b7c16daa509e0342",
-   "caratteri": 2554,
-   "pdf": true,
    "cambiata": false
   },
   {
@@ -592,7 +590,7 @@
    "titolo": "ASL Nuoro - Home Page",
    "sha": "e6b9c79d465ab2ea04ad92bec72a5b37b7b9a876aa01a10723acc566119cd6df",
    "caratteri": 4721,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "nuoro",
@@ -622,6 +620,18 @@
      "testo": "Procedura aziendale. Percorso di tutela di accesso alternativo alle prestazioni specialistiche."
     }
    ],
+   "cambiata": false
+  },
+  {
+   "asl": "nuoro",
+   "url": "https://www.asl3nuoro.it/wp-content/uploads/2024/11/allegato-A-1.pdf",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "nuoro/980257af51e7.txt",
+   "titolo": "ALLEGATO A",
+   "sha": "ea79ac50039a12d5f53477b5ecb7f3e8a4b8b163f20612c801b41e5f2dc0ad4b",
+   "caratteri": 1940,
+   "pdf": true,
    "cambiata": false
   },
   {
@@ -691,6 +701,24 @@
   },
   {
    "asl": "nuoro",
+   "url": "https://www.asl3nuoro.it/servizio/screening-oncologici/",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "nuoro/656e59179b94.txt",
+   "titolo": "Screening Oncologici - ASL Nuoro",
+   "sha": "f3f449f9b0e71b6f13c091adee2fe409162468f554e401221367d68894ae9f22",
+   "caratteri": 6766,
+   "email_nascoste": 3,
+   "link_pdf": [
+    {
+     "url": "https://www.asl3nuoro.it/wp-content/uploads/2026/09/carta-dei-servizi-screening-oncologici-Rev.-28.09.2026.pdf",
+     "testo": "Carta dei servizi"
+    }
+   ],
+   "cambiata": false
+  },
+  {
+   "asl": "nuoro",
    "url": "https://www.asl3nuoro.it/servizio/scelta-e-revoca-del-medico/",
    "controllata": "2026-10-23",
    "http": 200,
@@ -733,24 +761,6 @@
   },
   {
    "asl": "nuoro",
-   "url": "https://www.asl3nuoro.it/servizio/screening-oncologici/",
-   "controllata": "2026-10-23",
-   "http": 200,
-   "file": "nuoro/656e59179b94.txt",
-   "titolo": "Screening Oncologici - ASL Nuoro",
-   "sha": "f3f449f9b0e71b6f13c091adee2fe409162468f554e401221367d68894ae9f22",
-   "caratteri": 6766,
-   "email_nascoste": 3,
-   "link_pdf": [
-    {
-     "url": "https://www.asl3nuoro.it/wp-content/uploads/2026/09/carta-dei-servizi-screening-oncologici-Rev.-28.09.2026.pdf",
-     "testo": "Carta dei servizi"
-    }
-   ],
-   "cambiata": false
-  },
-  {
-   "asl": "nuoro",
    "url": "https://www.asl3nuoro.it/wp-content/uploads/2024/05/carta-dei-servizi-screening-oncologici-REV.-Nov.-2024.pdf",
    "controllata": "2026-10-23",
    "http": 200,
@@ -758,19 +768,6 @@
    "titolo": "Microsoft Word - ultima bozza carta dei servizi centro screening (6)",
    "sha": "0572d2732bc2ad91515bc158866d3bf02836dfed7b4392842a21dc797c75296f",
    "caratteri": 25640,
-   "pdf": true,
-   "cambiata": false
-  },
-  {
-   "asl": "nuoro",
-   "url": "https://www.asl3nuoro.it/wp-content/uploads/2024/11/allegato-A-1.pdf",
-   "controllata": "2026-10-23",
-   "da_pagina": "https://www.asl3nuoro.it/servizio/percorso-di-tutela-di-accesso-alternativo-alle-prestazioni-specialistiche/",
-   "http": 200,
-   "file": "nuoro/980257af51e7.txt",
-   "titolo": "ALLEGATO A",
-   "sha": "ea79ac50039a12d5f53477b5ecb7f3e8a4b8b163f20612c801b41e5f2dc0ad4b",
-   "caratteri": 1940,
    "pdf": true,
    "cambiata": false
   },
@@ -802,19 +799,6 @@
   },
   {
    "asl": "nuoro",
-   "url": "https://www.asl3nuoro.it/wp-content/uploads/2024/05/Carta-Servizi-hospice.pdf",
-   "controllata": "2026-10-23",
-   "da_pagina": "https://www.asl3nuoro.it/servizio/hospice-e-cure-palliative/",
-   "http": 200,
-   "file": "nuoro/7630c0181dfa.txt",
-   "titolo": "CARTA DEI SERVIZI",
-   "sha": "62ea9d8d3960df9a1c971d402fbf667ad59f383923c04d67c6c7284d10a8b885",
-   "caratteri": 8535,
-   "pdf": true,
-   "cambiata": false
-  },
-  {
-   "asl": "nuoro",
    "url": "https://www.asl3nuoro.it/wp-content/uploads/2026/09/carta-dei-servizi-screening-oncologici-Rev.-28.09.2026.pdf",
    "controllata": "2026-10-23",
    "da_pagina": "https://www.asl3nuoro.it/servizio/screening-oncologici/",
@@ -823,6 +807,19 @@
    "titolo": "Microsoft Word - bozza rivista settembre 29.09.2026 carta dei servizi centro screening _3_.docx",
    "sha": "1783030f0008e7fa4f4ab556ecf9aa1639f1a052c1bb172ec6d77f7f75d3ed79",
    "caratteri": 26657,
+   "pdf": true,
+   "cambiata": false
+  },
+  {
+   "asl": "nuoro",
+   "url": "https://www.asl3nuoro.it/wp-content/uploads/2024/05/Carta-Servizi-hospice.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asl3nuoro.it/servizio/hospice-e-cure-palliative/",
+   "http": 200,
+   "file": "nuoro/7630c0181dfa.txt",
+   "titolo": "CARTA DEI SERVIZI",
+   "sha": "62ea9d8d3960df9a1c971d402fbf667ad59f383923c04d67c6c7284d10a8b885",
+   "caratteri": 8535,
    "pdf": true,
    "cambiata": false
   },
@@ -1003,8 +1000,8 @@
    "http": 200,
    "file": "oristano/766feec05db7.txt",
    "titolo": "Home Page - ASL Oristano",
-   "sha": "07f19d65d04278d97560de46d356ac8daf7d5d544e894065f3de59083b4e4e02",
-   "caratteri": 7438,
+   "sha": "45a82a6f8ea21035a97b06bdf8c32021f84c798a9ef4f412c5e0d1465312d7ae",
+   "caratteri": 7343,
    "email_nascoste": 2,
    "cambiata": true
   },
@@ -1081,6 +1078,18 @@
   },
   {
    "asl": "oristano",
+   "url": "https://www.asl5oristano.it/strutture/screening-oncologici/",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "oristano/7ec919f93e25.txt",
+   "titolo": "Screening oncologici - ASL Oristano",
+   "sha": "761a4013c7d6ec12247383f230613b58cf3830ffea3ea097d1528e6ab9a1739a",
+   "caratteri": 2938,
+   "email_nascoste": 6,
+   "cambiata": false
+  },
+  {
+   "asl": "oristano",
    "url": "https://www.asl5oristano.it/servizio/scelta-e-revoca-medico-e-pediatria/",
    "controllata": "2026-10-23",
    "http": 200,
@@ -1095,18 +1104,6 @@
      "testo": "Scarica il modulo unificato per i tre Distretti per la delega"
     }
    ],
-   "cambiata": false
-  },
-  {
-   "asl": "oristano",
-   "url": "https://www.asl5oristano.it/strutture/screening-oncologici/",
-   "controllata": "2026-10-23",
-   "http": 200,
-   "file": "oristano/7ec919f93e25.txt",
-   "titolo": "Screening oncologici - ASL Oristano",
-   "sha": "761a4013c7d6ec12247383f230613b58cf3830ffea3ea097d1528e6ab9a1739a",
-   "caratteri": 2938,
-   "email_nascoste": 6,
    "cambiata": false
   },
   {
@@ -1128,7 +1125,25 @@
    "sha": "306d7908407192fb54922d2fc91879176de00db8db26b1fb3bdf20b8cbb30dd1",
    "caratteri": 4249,
    "email_nascoste": 4,
-   "cambiata": true
+   "cambiata": false
+  },
+  {
+   "asl": "sassari",
+   "url": "https://www.asl1sassari.it/il-percorso-di-tutela-la-strada-per-supportare-il-cittadino/",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "sassari/a776b2c9c855.txt",
+   "titolo": "Il Percorso di Tutela: la strada per supportare il cittadino - ASL Sassari",
+   "sha": "3eb3506406533a50a20b9fa69c48b3b89e6ab17740957682dbd65266db1e60be",
+   "caratteri": 4843,
+   "email_nascoste": 7,
+   "link_pdf": [
+    {
+     "url": "https://www.asl1sassari.it/wp-content/uploads/2025/04/266_all_PDEL_2025_0000288_Percorso_di_tutela_ASL_SASSARI.pdf",
+     "testo": "https://www.asl1sassari.it/wp-content/uploads/2025/04/266_all_PDEL_2025_0000288_Percorso_di_tutela_ASL_SASSARI.pdf"
+    }
+   ],
+   "cambiata": false
   },
   {
    "asl": "sassari",
@@ -1185,18 +1200,26 @@
   },
   {
    "asl": "sassari",
-   "url": "https://www.asl1sassari.it/il-percorso-di-tutela-la-strada-per-supportare-il-cittadino/",
+   "url": "https://www.asl1sassari.it/screening-oncologici-aderite-con-fiducia-allinvito-della-asl-di-sassari/",
    "controllata": "2026-10-23",
    "http": 200,
-   "file": "sassari/a776b2c9c855.txt",
-   "titolo": "Il Percorso di Tutela: la strada per supportare il cittadino - ASL Sassari",
-   "sha": "3eb3506406533a50a20b9fa69c48b3b89e6ab17740957682dbd65266db1e60be",
-   "caratteri": 4843,
-   "email_nascoste": 7,
+   "file": "sassari/6922678e4cb9.txt",
+   "titolo": "Screening oncologici: aderite con fiducia all’invito della Asl di Sassari - ASL Sassari",
+   "sha": "86b1523637541a01818c352f241916862e78e07d65fb838914bbdc5209279098",
+   "caratteri": 7715,
+   "email_nascoste": 9,
    "link_pdf": [
     {
-     "url": "https://www.asl1sassari.it/wp-content/uploads/2025/04/266_all_PDEL_2025_0000288_Percorso_di_tutela_ASL_SASSARI.pdf",
-     "testo": "https://www.asl1sassari.it/wp-content/uploads/2025/04/266_all_PDEL_2025_0000288_Percorso_di_tutela_ASL_SASSARI.pdf"
+     "url": "https://www.asl1sassari.it/wp-content/uploads/2026/09/Allegato-1-Screening-del-tumore-del-collo-dellutero.pdf",
+     "testo": "Screening del tumore del collo dell'utero"
+    },
+    {
+     "url": "https://www.asl1sassari.it/wp-content/uploads/2026/09/Allegato-2-Screening-del-tumore-della-mammella.pdf",
+     "testo": "Screening del tumore della mammella"
+    },
+    {
+     "url": "https://www.asl1sassari.it/wp-content/uploads/2026/09/Allegato-3-Screening-del-tumore-del-colon-retto.pdf",
+     "testo": "Screening del tumore del colon retto"
     }
    ],
    "cambiata": false
@@ -1239,28 +1262,15 @@
   },
   {
    "asl": "sassari",
-   "url": "https://www.asl1sassari.it/screening-oncologici-aderite-con-fiducia-allinvito-della-asl-di-sassari/",
+   "url": "https://www.asl1sassari.it/wp-content/uploads/2025/04/266_all_PDEL_2025_0000288_Percorso_di_tutela_ASL_SASSARI.pdf",
    "controllata": "2026-10-23",
+   "da_pagina": "https://www.asl1sassari.it/il-percorso-di-tutela-la-strada-per-supportare-il-cittadino/",
    "http": 200,
-   "file": "sassari/6922678e4cb9.txt",
-   "titolo": "Screening oncologici: aderite con fiducia all’invito della Asl di Sassari - ASL Sassari",
-   "sha": "86b1523637541a01818c352f241916862e78e07d65fb838914bbdc5209279098",
-   "caratteri": 7715,
-   "email_nascoste": 9,
-   "link_pdf": [
-    {
-     "url": "https://www.asl1sassari.it/wp-content/uploads/2026/09/Allegato-1-Screening-del-tumore-del-collo-dellutero.pdf",
-     "testo": "Screening del tumore del collo dell'utero"
-    },
-    {
-     "url": "https://www.asl1sassari.it/wp-content/uploads/2026/09/Allegato-2-Screening-del-tumore-della-mammella.pdf",
-     "testo": "Screening del tumore della mammella"
-    },
-    {
-     "url": "https://www.asl1sassari.it/wp-content/uploads/2026/09/Allegato-3-Screening-del-tumore-del-colon-retto.pdf",
-     "testo": "Screening del tumore del colon retto"
-    }
-   ],
+   "file": "sassari/e6db64ce57b6.txt",
+   "titolo": "Microsoft Word - Percorso di tutela ASL SASSARI",
+   "sha": "bf5047e0c008742d2974892a5625abc8b89ee8820f0a14f41d93b86e7d063872",
+   "caratteri": 15296,
+   "pdf": true,
    "cambiata": false
   },
   {
@@ -1273,19 +1283,6 @@
    "titolo": "Ufficio Relazioni con il Pubblico",
    "sha": "5381a4ebe06c76f7b271da4188f1525f4789b9c6b6cd6b6a47f53a6d3db87dee",
    "caratteri": 1752,
-   "pdf": true,
-   "cambiata": false
-  },
-  {
-   "asl": "sassari",
-   "url": "https://www.asl1sassari.it/wp-content/uploads/2025/04/266_all_PDEL_2025_0000288_Percorso_di_tutela_ASL_SASSARI.pdf",
-   "controllata": "2026-10-23",
-   "da_pagina": "https://www.asl1sassari.it/il-percorso-di-tutela-la-strada-per-supportare-il-cittadino/",
-   "http": 200,
-   "file": "sassari/e6db64ce57b6.txt",
-   "titolo": "Microsoft Word - Percorso di tutela ASL SASSARI",
-   "sha": "bf5047e0c008742d2974892a5625abc8b89ee8820f0a14f41d93b86e7d063872",
-   "caratteri": 15296,
    "pdf": true,
    "cambiata": false
   },
@@ -1338,7 +1335,7 @@
    "sha": "7d3b9f6f53c507141451fe4a8880c89a3211cce0743ceec80c91ca026a78586e",
    "caratteri": 4899,
    "email_nascoste": 2,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "sulcis",
@@ -1413,6 +1410,18 @@
   },
   {
    "asl": "sulcis",
+   "url": "https://www.aslsulcis.it/strutture/centro-screening/",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "sulcis/f38a1718733a.txt",
+   "titolo": "Centro Screening - ASL Sulcis Iglesiente",
+   "sha": "16f9f0f14d5f4898ebea8af45b4cafd609d35e654c32f247a594e2bc357dd323",
+   "caratteri": 2512,
+   "email_nascoste": 4,
+   "cambiata": false
+  },
+  {
+   "asl": "sulcis",
    "url": "https://www.aslsulcis.it/servizio/scelta-revoca-esenzioni/",
    "controllata": "2026-10-23",
    "http": 200,
@@ -1439,18 +1448,6 @@
      "testo": "Mod. extra ambito"
     }
    ],
-   "cambiata": false
-  },
-  {
-   "asl": "sulcis",
-   "url": "https://www.aslsulcis.it/strutture/centro-screening/",
-   "controllata": "2026-10-23",
-   "http": 200,
-   "file": "sulcis/f38a1718733a.txt",
-   "titolo": "Centro Screening - ASL Sulcis Iglesiente",
-   "sha": "16f9f0f14d5f4898ebea8af45b4cafd609d35e654c32f247a594e2bc357dd323",
-   "caratteri": 2512,
-   "email_nascoste": 4,
    "cambiata": false
   },
   {
@@ -1694,8 +1691,8 @@
    "http": 200,
    "file": "regione-sardegna/5dae24b1e42b.txt",
    "titolo": "Aiuto - CupWeb",
-   "sha": "5aae4d6a60e374701d0d7599a9f3fcce27240529e7d4810926dc1d32c124944c",
-   "caratteri": 19023,
+   "sha": "6a60c23b78943d2f2c26ef2f791b19bd2eb275b0784abf709b5f624bc8e1ee4a",
+   "caratteri": 19024,
    "link_pdf": [
     {
      "url": "https://manuali.sardegnasalute.it/manuali/Manuale_PRENOTA_ROSSA_CUP.pdf",
@@ -1849,7 +1846,7 @@
    "sha": "33c1ee3b671434658f3c49f26c808b31b9f393019cdd715c906ec1666c456608",
    "caratteri": 5534,
    "email_nascoste": 1,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-sardegna",

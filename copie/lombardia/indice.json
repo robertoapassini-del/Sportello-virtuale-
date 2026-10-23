@@ -1,6 +1,6 @@
 {
  "regione": "lombardia",
- "aggiornato": "2026-10-23T10:12:55.535Z",
+ "aggiornato": "2026-10-23T12:27:47.111Z",
  "pagine": [
   {
    "asl": "bergamo",
@@ -159,7 +159,7 @@
    "http": 200,
    "file": "bergamo/1f85c98b9e36.txt",
    "titolo": "Home Page | ASST Papa Giovanni XXIII",
-   "sha": "31527be16823d4165c60a2aa8ccbdb9e27052900b257b41c7ead296fbfb02681",
+   "sha": "9ee59b1b5f150a78681e421af5f60d98f3b94a30807d614c734b5efb7ae2550b",
    "caratteri": 320078,
    "cambiata": true
   },
@@ -1317,7 +1317,7 @@
    "titolo": "Home Page - ATS Insubria",
    "sha": "f08315409e0c6eba2c83e518b98056c50b2428999bab2c0d02e31252aa5d6d0f",
    "caratteri": 12762,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "como",
@@ -1520,9 +1520,9 @@
    "http": 200,
    "file": "como/c20c1330e77e.txt",
    "titolo": "ASST Lariana",
-   "sha": "34bd954bcfa0514b38db257a9ed29b4a94163b24f64f395be64dbbacbdbe2b80",
-   "caratteri": 7720,
-   "cambiata": false
+   "sha": "b3fda21c195434fb241b58f90b12926094dd754a4888bdd5e2180619f84fccf2",
+   "caratteri": 7689,
+   "cambiata": true
   },
   {
    "asl": "como",
@@ -1823,7 +1823,7 @@
    "titolo": "Homepage | ATS VALPADANA",
    "sha": "377e430f51fa1d3173063519575f32e65c735d353a6fafb9058277bfc1c63eed",
    "caratteri": 4666,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "cremona",
@@ -2008,7 +2008,7 @@
    "titolo": "ASST Cremona | ASST Cremona",
    "sha": "9ab30ad1e99dc6b26349ae52e7d7574cb3f99cb05e6f56b0a2ed9aa1a3879134",
    "caratteri": 2581,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "cremona",
@@ -2034,9 +2034,9 @@
    "http": 200,
    "file": "cremona/a01bbdacabe5.txt",
    "titolo": "ASST Crema | EDC - ASST CREMA",
-   "sha": "c90a7ad2dead2cc4bbb51891b1229a9ce6ad0e6a5b711d859442797272c08fb7",
-   "caratteri": 4751,
-   "cambiata": false
+   "sha": "e7fdba390656dab16dcfe0ff2a73f1dd8667f483c59779f2b2291210ce856b1a",
+   "caratteri": 4806,
+   "cambiata": true
   },
   {
    "asl": "cremona",
@@ -2191,7 +2191,7 @@
      "testo": "MAGGIO 2023 SCARICA"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "cremona",
@@ -3247,7 +3247,7 @@
    "titolo": "HOME - www.asst-lodi.it",
    "sha": "7127694b220acd3550f8b168e540800eb5b9992bdce38995c36de493d10aea2e",
    "caratteri": 6161,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "lodi",
@@ -3421,7 +3421,7 @@
    "titolo": "Homepage | ATS VALPADANA",
    "sha": "377e430f51fa1d3173063519575f32e65c735d353a6fafb9058277bfc1c63eed",
    "caratteri": 4666,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "mantova",
@@ -4111,7 +4111,7 @@
    "titolo": "ASST Melegnano Martesana",
    "sha": "2c06bbfc765053e5fdb9e9f0a4b07ad6127bf143adfa47c02065063d1643f538",
    "caratteri": 8441,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "milano",
@@ -4131,7 +4131,7 @@
    "http": 200,
    "file": "milano/36bf45b8b2fd.txt",
    "titolo": "Punto Unico di Accesso PUA - ASST Melegnano Martesana",
-   "sha": "7bd634415593e219ec6e26082d54bfaa7728e9a6b1af312cd40d4fe17ca3b344",
+   "sha": "dac3bca526bb945420d539eb6291a383995797c02a17ad2df7d2975f21118107",
    "caratteri": 9120,
    "cambiata": true
   },
@@ -4205,7 +4205,7 @@
    "titolo": "Prenotazione online di visite ed esami",
    "sha": "90aca8790a77dc6a26aeeaaa962494a80f26b197903d1284accba6f61f32d72a",
    "caratteri": 11447,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "milano",
@@ -4417,7 +4417,7 @@
    "titolo": "Sistema cure mediche non urgenti - AREU - Agenzia Regionale Emergenza Urgenza",
    "sha": "383f99953de79681b36185cb2a8693c0eb8fc7ca73ae384416a1db77e58050e9",
    "caratteri": 11878,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "milano",
@@ -4488,35 +4488,19 @@
    "asl": "milano",
    "url": "https://www.ospedaleniguarda.it/",
    "controllata": "2026-10-23",
-   "http": 200,
-   "file": "milano/ef8e145da5fe.txt",
-   "titolo": "Home Page | ASST Grande Ospedale Metropolitano Niguarda",
-   "sha": "f6d47bc5d982fca126000e88b2bd2d090dc4f98d91077c7e628394c442a90277",
-   "caratteri": 5710,
-   "cambiata": false
+   "http": 500
   },
   {
    "asl": "milano",
    "url": "https://www.ospedaleniguarda.it/chi-siamo/organizzazione/comunicazione-e-relazioni-esterne-urp",
    "controllata": "2026-10-23",
-   "http": 200,
-   "finale": "https://www.ospedaleniguarda.it/chi-siamo/organizzazione",
-   "file": "milano/8334f755f710.txt",
-   "titolo": "Organizzazione | ASST Grande Ospedale Metropolitano Niguarda",
-   "sha": "019775f52b7d5df0432744cca4f59bcb0e525c77753d353405f0f93b4dbd5fe6",
-   "caratteri": 7022,
-   "cambiata": false
+   "http": 500
   },
   {
    "asl": "milano",
    "url": "https://www.ospedaleniguarda.it/contents/prenota_visita_esame",
    "controllata": "2026-10-23",
-   "http": 200,
-   "file": "milano/070bffd43ab1.txt",
-   "titolo": "Prenota Visite ed Esami | ASST Grande Ospedale Metropolitano Niguarda",
-   "sha": "a0ef610ab60f215fc4a7e285a1a085e2b16f6458122ce5afcaf8fe13e434bde9",
-   "caratteri": 6116,
-   "cambiata": false
+   "http": 500
   },
   {
    "asl": "milano",
@@ -4636,8 +4620,8 @@
    "http": 200,
    "file": "milano/79595849743a.txt",
    "titolo": "Home page",
-   "sha": "422c8fbd3e233c847ec690337862398afd0c41f335db1ec9452f247cb5088932",
-   "caratteri": 12340,
+   "sha": "b63142bbda2a4702d081a891d45e06eb904168aa6ed006b1c88e453aa0ca77ef",
+   "caratteri": 12229,
    "cambiata": true
   },
   {
@@ -4854,7 +4838,7 @@
    "http": 200,
    "file": "milano/40e6e7a51547.txt",
    "titolo": "Cure Domiciliari A.D.I. - ASST Melegnano Martesana",
-   "sha": "ced3484ce673f904b7ac7542fd512cff356fe7fe2ed79925c86abc4628883db6",
+   "sha": "a881ee7519a3ecfaea22ba0b61897e976a4561edbab8ebf90b12474b4fffb7eb",
    "caratteri": 12008,
    "cambiata": true
   },
@@ -5119,7 +5103,7 @@
      "testo": "Tempi di attesa maggio SCARICA"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "milano",
@@ -5261,7 +5245,7 @@
    "http": 200,
    "file": "milano/91bb0d244f6b.txt",
    "titolo": "Liste di attesa - ASST Melegnano Martesana",
-   "sha": "716b1e699c6eab6cfd9d745398250158c6a44f1b6a955d1700e8f37d6db631b2",
+   "sha": "cdb87592fc4a45cf55a5cc9f40d9560864aa7b44024d0a2b22a3a51b9e0f927a",
    "caratteri": 7290,
    "cambiata": true
   },
@@ -6236,7 +6220,7 @@
    "titolo": "Azienda Socio-Sanitaria Territoriale di Pavia",
    "sha": "6c19b4bce0eee770eed9596879aa6a422a615b09490ff1e403d114b8491348a6",
    "caratteri": 8344,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "pavia",
@@ -6374,8 +6358,8 @@
    "http": 200,
    "file": "sondrio/1785012ca51b.txt",
    "titolo": "ATS Montagna | ATS MONTAGNA",
-   "sha": "d28a51f3142d5be758c3e6d1fc50adb1f3391c14b5efaee6a956fc630ee4822c",
-   "caratteri": 3703,
+   "sha": "f14a3d2219b5dabcd6ce1d7270a209093f08ae9cc5cf4ac8d54967777253e9a4",
+   "caratteri": 3815,
    "cambiata": true
   },
   {
@@ -6889,7 +6873,7 @@
    "titolo": "Home Page - ATS Insubria",
    "sha": "f08315409e0c6eba2c83e518b98056c50b2428999bab2c0d02e31252aa5d6d0f",
    "caratteri": 12762,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "varese",
@@ -7002,7 +6986,7 @@
    "titolo": "Contatti - ASST Settelaghi - ASST Settelaghi",
    "sha": "2345caf163176b17dec71b3c236851278eb81f575cc45ad3b771d8d6a64a6d7c",
    "caratteri": 2311,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "varese",
@@ -7013,7 +6997,7 @@
    "titolo": "URP - Varese - ASST Settelaghi - ASST Settelaghi",
    "sha": "383ade2ac9672dfe87ecab83b1fbc0e4745dfba1063808fc9c06ccfc2c85a661",
    "caratteri": 3471,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "varese",
@@ -7024,7 +7008,7 @@
    "titolo": "PRENOTAZIONE visite e esami con SSN - ASST Settelaghi - ASST Settelaghi",
    "sha": "3849abec0560da4de04c28176fc0a4c167d1bd0e86ecc6ea2bedca20571097e8",
    "caratteri": 12617,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "varese",
@@ -7193,7 +7177,7 @@
    "http": 200,
    "file": "varese/2e15c4f801d9.txt",
    "titolo": "Servizi Sanitari e Assistenza Medica - ASST Settelaghi - ASST Settelaghi",
-   "sha": "b11f0e7f40e2dff334685546cfb4772bc08f7f36ffc7054b84fd7fb31117804c",
+   "sha": "5dff5491d67a1c927321ff0f1532464f318f77b66764e70fc6440633c62806e3",
    "caratteri": 5050,
    "cambiata": true
   },
@@ -7207,7 +7191,7 @@
    "titolo": "Ufficio Relazioni con il Pubblico e Comunicazione — Archivio Amministrazione Trasparente - ASST Settelaghi",
    "sha": "50d278345de93285821f0b34c9e897cdb09d95efbcd2db2613a47d4c4f81580a",
    "caratteri": 2235,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "varese",
@@ -7219,7 +7203,7 @@
    "titolo": "Contatti - ASST Settelaghi - ASST Settelaghi",
    "sha": "2345caf163176b17dec71b3c236851278eb81f575cc45ad3b771d8d6a64a6d7c",
    "caratteri": 2311,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "varese",
@@ -7231,7 +7215,7 @@
    "titolo": "CUP - Ospedale di Circolo - ASST Settelaghi - ASST Settelaghi",
    "sha": "5e1c8633a8d2395f1c7e07b92d0e66759f9baa258675792905e2ee2992a8163d",
    "caratteri": 2596,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "varese",
@@ -7240,8 +7224,8 @@
    "http": 200,
    "file": "varese/448fa8f9d06c.txt",
    "titolo": "Continuità assistenziale - Casa di Comunità di Gazzada Schianno - ASST Settelaghi - ASST Settelaghi",
-   "sha": "a84a9f7e282f6f3c248fd537c084a7b936be48b8c8c8fb7b2d227e90ded10641",
-   "caratteri": 6411,
+   "sha": "4d9d73a42c532b98ab1a19445d6cdd317e417563d3fca90a54f5f2f70b722ef1",
+   "caratteri": 6410,
    "cambiata": true
   },
   {
@@ -7254,7 +7238,7 @@
    "titolo": "Polo territoriale - ASST Settelaghi - ASST Settelaghi",
    "sha": "d556ace45b245ed4d4cd0b4dfa8a203ec7add72bf4659de7e316329fd613bb70",
    "caratteri": 1848,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "varese",
@@ -7263,8 +7247,8 @@
    "http": 200,
    "file": "varese/625ee56036b9.txt",
    "titolo": "Home - ASST Valle Olona",
-   "sha": "4afde2f777e1c7712e2a347e814d5f0699d3c98e70444aaf995601731f6a3499",
-   "caratteri": 4154,
+   "sha": "cc4d0b3367ec29265c4d069d7d44969f4062e649d6979ee5ad8bc52a102ad24f",
+   "caratteri": 4122,
    "link_pdf": [
     {
      "url": "https://www.asst-valleolona.it/wp-content/uploads/2026/09/Asst-Valleolona-Carta-dei-Servizi-Busto-Via-Stelvio-09.09.2026-Cartacea.pdf",

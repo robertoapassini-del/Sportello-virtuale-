@@ -1,6 +1,6 @@
 {
  "regione": "piemonte",
- "aggiornato": "2026-10-23T10:30:55.318Z",
+ "aggiornato": "2026-10-23T12:46:05.651Z",
  "pagine": [
   {
    "asl": "alessandria",
@@ -131,7 +131,7 @@
    "titolo": "Il mio medico | Salute Piemonte",
    "sha": "240b5024f646a78f919b42fcb17956ffcb83ba8340c7f9f5b757025025117e8d",
    "caratteri": 3367,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "alessandria",
@@ -201,6 +201,39 @@
     }
    ],
    "cambiata": false
+  },
+  {
+   "asl": "alessandria",
+   "url": "https://www.regione.piemonte.it/web/temi/sanita/prevenzione/prevenzione-serena",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "alessandria/054a6c79664a.txt",
+   "titolo": "Prevenzione Serena | Regione Piemonte",
+   "sha": "9e1d6e01b37ff9642dd94892bb58d11abc0e6974b79f30dc0c234f66c29c7a95",
+   "caratteri": 20968,
+   "link_pdf": [
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_copertura_da_invito_da_esami_2018.pdf",
+     "testo": "Report copertura da invito da esami 2018"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_colorettale_2017.pdf",
+     "testo": "Report attivit&agrave; screening colorettale 2017"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2020-10/prevenzione_serena_attivita_screening_mammografico_2017.pdf",
+     "testo": "Attivit&agrave; screening mammografico 2017"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_cervicale_2016_2017.pdf",
+     "testo": "Report attivit&agrave; screening cervicale 2016 - 2017"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-03/report_2016_17.pdf",
+     "testo": "Report annuale Prevenzione Serena: risultati 2015/16 e dati preliminari 2017"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "alessandria",
@@ -373,39 +406,6 @@
   },
   {
    "asl": "alessandria",
-   "url": "https://www.regione.piemonte.it/web/temi/sanita/prevenzione/prevenzione-serena",
-   "controllata": "2026-10-23",
-   "http": 200,
-   "file": "alessandria/054a6c79664a.txt",
-   "titolo": "Prevenzione Serena | Regione Piemonte",
-   "sha": "497e6b7cb32ec0b0f69c6ef220f2c3880680bfc02c93cb6d20aefe4f4c545cc3",
-   "caratteri": 20963,
-   "link_pdf": [
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_copertura_da_invito_da_esami_2018.pdf",
-     "testo": "Report copertura da invito da esami 2018"
-    },
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_colorettale_2017.pdf",
-     "testo": "Report attivit&agrave; screening colorettale 2017"
-    },
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2020-10/prevenzione_serena_attivita_screening_mammografico_2017.pdf",
-     "testo": "Attivit&agrave; screening mammografico 2017"
-    },
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_cervicale_2016_2017.pdf",
-     "testo": "Report attivit&agrave; screening cervicale 2016 - 2017"
-    },
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-03/report_2016_17.pdf",
-     "testo": "Report annuale Prevenzione Serena: risultati 2015/16 e dati preliminari 2017"
-    }
-   ],
-   "cambiata": true
-  },
-  {
-   "asl": "alessandria",
    "url": "https://www.aslal.it/allegati/Allegati%20URP/dlb219-2023_aggiornamento_Regolamento_Pubblica_Tutela.pdf",
    "controllata": "2026-10-23",
    "da_pagina": "https://www.aslal.it/",
@@ -527,7 +527,7 @@
    "http": 200,
    "file": "asti/4a6d36d1ae1b.txt",
    "titolo": "Percorso di tutela dei Cittadini assistiti - Asl At",
-   "sha": "f033f8b7daa71258ce9de7883abd5451beb0d90bee93e037828802f92260d7b7",
+   "sha": "9b391e98913915b6690d648a37ee8956c377cde5005e724bb5c0fc1c2134fa07",
    "caratteri": 12092,
    "cambiata": true
   },
@@ -563,7 +563,7 @@
    "titolo": "Il mio medico | Salute Piemonte",
    "sha": "240b5024f646a78f919b42fcb17956ffcb83ba8340c7f9f5b757025025117e8d",
    "caratteri": 3367,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "asti",
@@ -574,7 +574,7 @@
    "titolo": "Urp e contatti - Asl At",
    "sha": "818337a0d0c3037dfdceee1e68e9f569e4731f04a54548afbf332bf69f5ea3b8",
    "caratteri": 12350,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asti",
@@ -600,6 +600,39 @@
     {
      "url": "https://asl.at.it/wp-content/uploads/2023/03/Informativa-CUP-Regionale.pdf",
      "testo": "informativa CUP Regionale"
+    }
+   ],
+   "cambiata": false
+  },
+  {
+   "asl": "asti",
+   "url": "https://www.regione.piemonte.it/web/temi/sanita/prevenzione/prevenzione-serena",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "asti/054a6c79664a.txt",
+   "titolo": "Prevenzione Serena | Regione Piemonte",
+   "sha": "9e1d6e01b37ff9642dd94892bb58d11abc0e6974b79f30dc0c234f66c29c7a95",
+   "caratteri": 20968,
+   "link_pdf": [
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_copertura_da_invito_da_esami_2018.pdf",
+     "testo": "Report copertura da invito da esami 2018"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_colorettale_2017.pdf",
+     "testo": "Report attivit&agrave; screening colorettale 2017"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2020-10/prevenzione_serena_attivita_screening_mammografico_2017.pdf",
+     "testo": "Attivit&agrave; screening mammografico 2017"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_cervicale_2016_2017.pdf",
+     "testo": "Report attivit&agrave; screening cervicale 2016 - 2017"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-03/report_2016_17.pdf",
+     "testo": "Report annuale Prevenzione Serena: risultati 2015/16 e dati preliminari 2017"
     }
    ],
    "cambiata": true
@@ -631,39 +664,6 @@
    "sha": "d1452c901254011099bfeb2928fbe452f2c0bfcc39a019d93259f74d9bee06e3",
    "caratteri": 11878,
    "cambiata": false
-  },
-  {
-   "asl": "asti",
-   "url": "https://www.regione.piemonte.it/web/temi/sanita/prevenzione/prevenzione-serena",
-   "controllata": "2026-10-23",
-   "http": 200,
-   "file": "asti/054a6c79664a.txt",
-   "titolo": "Prevenzione Serena | Regione Piemonte",
-   "sha": "497e6b7cb32ec0b0f69c6ef220f2c3880680bfc02c93cb6d20aefe4f4c545cc3",
-   "caratteri": 20963,
-   "link_pdf": [
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_copertura_da_invito_da_esami_2018.pdf",
-     "testo": "Report copertura da invito da esami 2018"
-    },
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_colorettale_2017.pdf",
-     "testo": "Report attivit&agrave; screening colorettale 2017"
-    },
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2020-10/prevenzione_serena_attivita_screening_mammografico_2017.pdf",
-     "testo": "Attivit&agrave; screening mammografico 2017"
-    },
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_cervicale_2016_2017.pdf",
-     "testo": "Report attivit&agrave; screening cervicale 2016 - 2017"
-    },
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-03/report_2016_17.pdf",
-     "testo": "Report annuale Prevenzione Serena: risultati 2015/16 e dati preliminari 2017"
-    }
-   ],
-   "cambiata": true
   },
   {
    "asl": "asti",
@@ -747,7 +747,7 @@
    "titolo": "Il mio medico | Salute Piemonte",
    "sha": "240b5024f646a78f919b42fcb17956ffcb83ba8340c7f9f5b757025025117e8d",
    "caratteri": 3367,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "biella",
@@ -756,8 +756,8 @@
    "http": 200,
    "file": "biella/6336a1b9cee7.txt",
    "titolo": "Contatti - ASL Biella",
-   "sha": "b820579bff66fdedf0354e44f6430a8a19ccd0b69d445d54116a5e80eff94cff",
-   "caratteri": 1906,
+   "sha": "bff054c14aafa8d737ce627ed6029aecdaa8d7008dba5623c08616f831776e0f",
+   "caratteri": 1905,
    "cambiata": true
   },
   {
@@ -806,8 +806,41 @@
    "http": 200,
    "file": "biella/b814052848ef.txt",
    "titolo": "Cure Palliative - ASL Biella",
-   "sha": "8b30da2c594c8623a54455c7c30aeaf7b8306798ffcb8229808584fc7156c712",
-   "caratteri": 5399,
+   "sha": "18b0d8ecc679fbb318d57f1bd1118352ee307b5afe76485c1ae893e3057bfe30",
+   "caratteri": 5398,
+   "cambiata": true
+  },
+  {
+   "asl": "biella",
+   "url": "https://www.regione.piemonte.it/web/temi/sanita/prevenzione/prevenzione-serena",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "biella/054a6c79664a.txt",
+   "titolo": "Prevenzione Serena | Regione Piemonte",
+   "sha": "9e1d6e01b37ff9642dd94892bb58d11abc0e6974b79f30dc0c234f66c29c7a95",
+   "caratteri": 20968,
+   "link_pdf": [
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_copertura_da_invito_da_esami_2018.pdf",
+     "testo": "Report copertura da invito da esami 2018"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_colorettale_2017.pdf",
+     "testo": "Report attivit&agrave; screening colorettale 2017"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2020-10/prevenzione_serena_attivita_screening_mammografico_2017.pdf",
+     "testo": "Attivit&agrave; screening mammografico 2017"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_cervicale_2016_2017.pdf",
+     "testo": "Report attivit&agrave; screening cervicale 2016 - 2017"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-03/report_2016_17.pdf",
+     "testo": "Report annuale Prevenzione Serena: risultati 2015/16 e dati preliminari 2017"
+    }
+   ],
    "cambiata": true
   },
   {
@@ -910,39 +943,6 @@
    "sha": "651aed547524feee374e5047e8e14d84ca4363d9d3b5743e8247187252b090aa",
    "caratteri": 1731,
    "cambiata": false
-  },
-  {
-   "asl": "biella",
-   "url": "https://www.regione.piemonte.it/web/temi/sanita/prevenzione/prevenzione-serena",
-   "controllata": "2026-10-23",
-   "http": 200,
-   "file": "biella/054a6c79664a.txt",
-   "titolo": "Prevenzione Serena | Regione Piemonte",
-   "sha": "497e6b7cb32ec0b0f69c6ef220f2c3880680bfc02c93cb6d20aefe4f4c545cc3",
-   "caratteri": 20963,
-   "link_pdf": [
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_copertura_da_invito_da_esami_2018.pdf",
-     "testo": "Report copertura da invito da esami 2018"
-    },
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_colorettale_2017.pdf",
-     "testo": "Report attivit&agrave; screening colorettale 2017"
-    },
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2020-10/prevenzione_serena_attivita_screening_mammografico_2017.pdf",
-     "testo": "Attivit&agrave; screening mammografico 2017"
-    },
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_cervicale_2016_2017.pdf",
-     "testo": "Report attivit&agrave; screening cervicale 2016 - 2017"
-    },
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-03/report_2016_17.pdf",
-     "testo": "Report annuale Prevenzione Serena: risultati 2015/16 e dati preliminari 2017"
-    }
-   ],
-   "cambiata": true
   },
   {
    "asl": "biella",
@@ -1077,7 +1077,7 @@
    "titolo": "Il mio medico | Salute Piemonte",
    "sha": "240b5024f646a78f919b42fcb17956ffcb83ba8340c7f9f5b757025025117e8d",
    "caratteri": 3367,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "cuneo",
@@ -1204,6 +1204,39 @@
    "sha": "280e0164d1ed099c2a1b21d8ffb1943cec9c2ffa9ff1df44fe821e1b074ccbd1",
    "caratteri": 3506,
    "cambiata": false
+  },
+  {
+   "asl": "cuneo",
+   "url": "https://www.regione.piemonte.it/web/temi/sanita/prevenzione/prevenzione-serena",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "cuneo/054a6c79664a.txt",
+   "titolo": "Prevenzione Serena | Regione Piemonte",
+   "sha": "9e1d6e01b37ff9642dd94892bb58d11abc0e6974b79f30dc0c234f66c29c7a95",
+   "caratteri": 20968,
+   "link_pdf": [
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_copertura_da_invito_da_esami_2018.pdf",
+     "testo": "Report copertura da invito da esami 2018"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_colorettale_2017.pdf",
+     "testo": "Report attivit&agrave; screening colorettale 2017"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2020-10/prevenzione_serena_attivita_screening_mammografico_2017.pdf",
+     "testo": "Attivit&agrave; screening mammografico 2017"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_cervicale_2016_2017.pdf",
+     "testo": "Report attivit&agrave; screening cervicale 2016 - 2017"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-03/report_2016_17.pdf",
+     "testo": "Report annuale Prevenzione Serena: risultati 2015/16 e dati preliminari 2017"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "cuneo",
@@ -1356,8 +1389,8 @@
    "http": 200,
    "file": "cuneo/7c4dcafe9f2a.txt",
    "titolo": "ASL CN2 - Azienda Sanitaria Locale CN2 - Alba e Bra",
-   "sha": "3a8ac057f40efb2d6409a6f9afbf7e7feca99e1a09d36dda7e3e251df006b6e5",
-   "caratteri": 11325,
+   "sha": "ff3c20ad1a946eaa1b2afc4609ab52ecc77cb033a500ea38a1b7d1fef10bfa3d",
+   "caratteri": 11223,
    "link_pdf": [
     {
      "url": "https://www.aslcn2.it/media/2026/10/1_cuore-e-rianimazione-whd_pieghevole_.pdf",
@@ -1400,7 +1433,7 @@
      "testo": "Bando - scadenza 19/11/2026 - pubblicato il 21/10/2026"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "cuneo",
@@ -1472,39 +1505,6 @@
     }
    ],
    "cambiata": false
-  },
-  {
-   "asl": "cuneo",
-   "url": "https://www.regione.piemonte.it/web/temi/sanita/prevenzione/prevenzione-serena",
-   "controllata": "2026-10-23",
-   "http": 200,
-   "file": "cuneo/054a6c79664a.txt",
-   "titolo": "Prevenzione Serena | Regione Piemonte",
-   "sha": "497e6b7cb32ec0b0f69c6ef220f2c3880680bfc02c93cb6d20aefe4f4c545cc3",
-   "caratteri": 20963,
-   "link_pdf": [
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_copertura_da_invito_da_esami_2018.pdf",
-     "testo": "Report copertura da invito da esami 2018"
-    },
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_colorettale_2017.pdf",
-     "testo": "Report attivit&agrave; screening colorettale 2017"
-    },
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2020-10/prevenzione_serena_attivita_screening_mammografico_2017.pdf",
-     "testo": "Attivit&agrave; screening mammografico 2017"
-    },
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_cervicale_2016_2017.pdf",
-     "testo": "Report attivit&agrave; screening cervicale 2016 - 2017"
-    },
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-03/report_2016_17.pdf",
-     "testo": "Report annuale Prevenzione Serena: risultati 2015/16 e dati preliminari 2017"
-    }
-   ],
-   "cambiata": true
   },
   {
    "asl": "cuneo",
@@ -1677,32 +1677,6 @@
   },
   {
    "asl": "cuneo",
-   "url": "https://www.aslcn1.it/fileadmin/ASLCN1/Logistica_Direzione_Amministrativa_Presidi/Gestione_front_office/Documentazione_Tempi_di_attesa/Nota_per_Aziende_-_Tempi_di_attesa_per_le_prestazioni_specialistiche_-_D._Lgs._124-1998.pdf",
-   "controllata": "2026-10-23",
-   "da_pagina": "https://www.aslcn1.it/cosa-fare-per/prenotare-visite/esami",
-   "http": 200,
-   "file": "cuneo/50c4e2a6c66f.txt",
-   "titolo": "Author:          Settore Sistemi Informativi",
-   "sha": "1b3e2adf0439e768b07501938f6de54d12c3674a6c3a1e438076f3d7358d51b4",
-   "caratteri": 9758,
-   "pdf": true,
-   "cambiata": false
-  },
-  {
-   "asl": "cuneo",
-   "url": "https://www.aslcn2.it/media/2023/04/TUTELA.pdf",
-   "controllata": "2026-10-23",
-   "da_pagina": "https://www.aslcn2.it/liste-di-attesa/tempi-di-attesa-prestazioni-ambulatoriali-giorno-indice/percorsi-di-tutela-disponibili/",
-   "http": 200,
-   "file": "cuneo/ca04b449f468.txt",
-   "titolo": "Microsoft Word - TUTELA.doc",
-   "sha": "b352a6fc53a3c2f387d7a57abf972395ec4c2dc6653537ab20c16b8189e21742",
-   "caratteri": 2835,
-   "pdf": true,
-   "cambiata": false
-  },
-  {
-   "asl": "cuneo",
    "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_colorettale_2017.pdf",
    "controllata": "2026-10-23",
    "da_pagina": "https://www.regione.piemonte.it/web/temi/sanita/prevenzione/prevenzione-serena",
@@ -1741,6 +1715,32 @@
    "cambiata": false
   },
   {
+   "asl": "cuneo",
+   "url": "https://www.aslcn1.it/fileadmin/ASLCN1/Logistica_Direzione_Amministrativa_Presidi/Gestione_front_office/Documentazione_Tempi_di_attesa/Nota_per_Aziende_-_Tempi_di_attesa_per_le_prestazioni_specialistiche_-_D._Lgs._124-1998.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.aslcn1.it/cosa-fare-per/prenotare-visite/esami",
+   "http": 200,
+   "file": "cuneo/50c4e2a6c66f.txt",
+   "titolo": "Author:          Settore Sistemi Informativi",
+   "sha": "1b3e2adf0439e768b07501938f6de54d12c3674a6c3a1e438076f3d7358d51b4",
+   "caratteri": 9758,
+   "pdf": true,
+   "cambiata": false
+  },
+  {
+   "asl": "cuneo",
+   "url": "https://www.aslcn2.it/media/2023/04/TUTELA.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.aslcn2.it/liste-di-attesa/tempi-di-attesa-prestazioni-ambulatoriali-giorno-indice/percorsi-di-tutela-disponibili/",
+   "http": 200,
+   "file": "cuneo/ca04b449f468.txt",
+   "titolo": "Microsoft Word - TUTELA.doc",
+   "sha": "b352a6fc53a3c2f387d7a57abf972395ec4c2dc6653537ab20c16b8189e21742",
+   "caratteri": 2835,
+   "pdf": true,
+   "cambiata": false
+  },
+  {
    "asl": "novara",
    "url": "https://www.asl.novara.it/",
    "controllata": "2026-10-23",
@@ -1749,7 +1749,7 @@
    "titolo": "Homepage ASL Novara | ASL Novara",
    "sha": "bfd075d58dced52948c3bcb3105790354da77ce012c036239346b5262b2b1469",
    "caratteri": 10674,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "novara",
@@ -1770,7 +1770,7 @@
    "certificato": "non valido",
    "file": "novara/42ffdf775f1d.txt",
    "titolo": "Continuità assistenziale (ex Guardia medica) | A.S.L. TO3",
-   "sha": "4ecd69b861d2403852d16375ad22942fae06231183729fb087f5069ec78036c9",
+   "sha": "b9c3734d1bba4f3286efe4205fb8d7c9bfe4e4c6746ec3dcaef9566887f9a03b",
    "caratteri": 3110,
    "cambiata": true
   },
@@ -1795,7 +1795,7 @@
    "titolo": "Il mio medico | Salute Piemonte",
    "sha": "240b5024f646a78f919b42fcb17956ffcb83ba8340c7f9f5b757025025117e8d",
    "caratteri": 3367,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "novara",
@@ -1818,6 +1818,39 @@
    "sha": "27fc955e890bbacef44f2c90388d86bbf79a6fa9d90507746d774bef269396b2",
    "caratteri": 7495,
    "cambiata": false
+  },
+  {
+   "asl": "novara",
+   "url": "https://www.regione.piemonte.it/web/temi/sanita/prevenzione/prevenzione-serena",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "novara/054a6c79664a.txt",
+   "titolo": "Prevenzione Serena | Regione Piemonte",
+   "sha": "9e1d6e01b37ff9642dd94892bb58d11abc0e6974b79f30dc0c234f66c29c7a95",
+   "caratteri": 20968,
+   "link_pdf": [
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_copertura_da_invito_da_esami_2018.pdf",
+     "testo": "Report copertura da invito da esami 2018"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_colorettale_2017.pdf",
+     "testo": "Report attivit&agrave; screening colorettale 2017"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2020-10/prevenzione_serena_attivita_screening_mammografico_2017.pdf",
+     "testo": "Attivit&agrave; screening mammografico 2017"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_cervicale_2016_2017.pdf",
+     "testo": "Report attivit&agrave; screening cervicale 2016 - 2017"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-03/report_2016_17.pdf",
+     "testo": "Report annuale Prevenzione Serena: risultati 2015/16 e dati preliminari 2017"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "novara",
@@ -1846,39 +1879,6 @@
    "url": "https://www.asl.novara.it/it/attivita/servizio-continuita-assistenziale-ex-guardia-medica",
    "controllata": "2026-10-23",
    "http": 404
-  },
-  {
-   "asl": "novara",
-   "url": "https://www.regione.piemonte.it/web/temi/sanita/prevenzione/prevenzione-serena",
-   "controllata": "2026-10-23",
-   "http": 200,
-   "file": "novara/054a6c79664a.txt",
-   "titolo": "Prevenzione Serena | Regione Piemonte",
-   "sha": "497e6b7cb32ec0b0f69c6ef220f2c3880680bfc02c93cb6d20aefe4f4c545cc3",
-   "caratteri": 20963,
-   "link_pdf": [
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_copertura_da_invito_da_esami_2018.pdf",
-     "testo": "Report copertura da invito da esami 2018"
-    },
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_colorettale_2017.pdf",
-     "testo": "Report attivit&agrave; screening colorettale 2017"
-    },
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2020-10/prevenzione_serena_attivita_screening_mammografico_2017.pdf",
-     "testo": "Attivit&agrave; screening mammografico 2017"
-    },
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_cervicale_2016_2017.pdf",
-     "testo": "Report attivit&agrave; screening cervicale 2016 - 2017"
-    },
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-03/report_2016_17.pdf",
-     "testo": "Report annuale Prevenzione Serena: risultati 2015/16 e dati preliminari 2017"
-    }
-   ],
-   "cambiata": true
   },
   {
    "asl": "novara",
@@ -1962,7 +1962,7 @@
    "titolo": "Il mio medico | Salute Piemonte",
    "sha": "240b5024f646a78f919b42fcb17956ffcb83ba8340c7f9f5b757025025117e8d",
    "caratteri": 3367,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "torino",
@@ -1975,7 +1975,7 @@
    "caratteri": 6008,
    "link_pdf": [
     {
-     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2019/02/farmacup.pdf?x31912",
+     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2019/02/farmacup.pdf?x66151",
      "testo": "clicca qui"
     }
    ],
@@ -1989,7 +1989,7 @@
    "certificato": "non valido",
    "file": "torino/b838f80535f8.txt",
    "titolo": "Contatti | A.S.L. TO3",
-   "sha": "fb50c046520f9b50afc38f45c45d9e8be983c1e2319abc3d7fbcd29eb067e794",
+   "sha": "a4a82bcd5003cff5ccbee11f86b8452535c0a19186ffb01bad0748c1be94142e",
    "caratteri": 2193,
    "cambiata": true
   },
@@ -2008,7 +2008,7 @@
      "testo": "Piano di comunicazione Aziendale"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -2019,7 +2019,7 @@
    "titolo": "Homepage | ASL TO5",
    "sha": "2f4d1a50bd46502d78b773d459b59c5921e9da80ec2e70cc2ad2d80ed886052a",
    "caratteri": 10486,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -2072,47 +2072,47 @@
    "caratteri": 8519,
    "link_pdf": [
     {
-     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2021/09/Presentazione-URP.pdf?x31912",
+     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2021/09/Presentazione-URP.pdf?x66151",
      "testo": "Scarica la locandina"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Modulo-segnalazioni-urp-settembre-2026.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Modulo-segnalazioni-urp-settembre-2026.pdf?x66151",
      "testo": "Modulo segnalazioni urp settembre 2026"
     },
     {
-     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2022/04/Procedura-gestione-ed-elaborazione-delle-segnalazioni.pdf?x31912",
+     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2022/04/Procedura-gestione-ed-elaborazione-delle-segnalazioni.pdf?x66151",
      "testo": "Procedura gestione ed elaborazione delle segnalazioni"
     },
     {
-     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2022/04/Delibera-454-del-1%C2%B0-aprile-2022-Regolamento-Pubblica-Tutela.pdf?x31912",
+     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2022/04/Delibera-454-del-1%C2%B0-aprile-2022-Regolamento-Pubblica-Tutela.pdf?x66151",
      "testo": "Delibera 454 del 1° aprile 2022 Regolamento Pubblica Tutela"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/10/Elogi-anno-2024.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/10/Elogi-anno-2024.pdf?x66151",
      "testo": "Elogi anno 2024"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Claim-Form.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Claim-Form.pdf?x66151",
      "testo": "Claim-Form"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Lettre-de-reclamation.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Lettre-de-reclamation.pdf?x66151",
      "testo": "Lettre-de-reclamation"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Modulo-de-registro.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Modulo-de-registro.pdf?x66151",
      "testo": "Modulo-de-registro"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2021/09/Presentazione-URP.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2021/09/Presentazione-URP.pdf?x66151",
      "testo": "Presentazione URP"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2022/04/Procedura-gestione-ed-elaborazione-delle-segnalazioni.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2022/04/Procedura-gestione-ed-elaborazione-delle-segnalazioni.pdf?x66151",
      "testo": "Procedura gestione ed elaborazione delle segnalazioni"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2022/04/Delibera-454-del-1%C2%B0-aprile-2022-Regolamento-Pubblica-Tutela.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2022/04/Delibera-454-del-1%C2%B0-aprile-2022-Regolamento-Pubblica-Tutela.pdf?x66151",
      "testo": "Delibera 454 del 1° aprile 2022 Regolamento Pubblica Tutela"
     }
    ],
@@ -2126,7 +2126,7 @@
    "certificato": "non valido",
    "file": "torino/53d58dce5be6.txt",
    "titolo": "U.R.P. | A.S.L. TO3",
-   "sha": "eec5d30e4572c5ac8abc494f81cbe465da457aec3c6a89935ecdd18fc6e6403d",
+   "sha": "ea2d917c8f28247a4915cc29ae88eb49d931ac584ef97ba5cdc249ddbe25e778",
    "caratteri": 7182,
    "link_pdf": [
     {
@@ -2192,7 +2192,7 @@
    "certificato": "non valido",
    "file": "torino/42ffdf775f1d.txt",
    "titolo": "Continuità assistenziale (ex Guardia medica) | A.S.L. TO3",
-   "sha": "4ecd69b861d2403852d16375ad22942fae06231183729fb087f5069ec78036c9",
+   "sha": "b9c3734d1bba4f3286efe4205fb8d7c9bfe4e4c6746ec3dcaef9566887f9a03b",
    "caratteri": 3110,
    "cambiata": true
   },
@@ -2243,7 +2243,7 @@
    "certificato": "non valido",
    "file": "torino/47f0299742b3.txt",
    "titolo": "Assistenza a domicilio | A.S.L. TO3",
-   "sha": "3de15cd5fa06586ab14e471e9677c1526c9de583ca8313ec7240d55492304490",
+   "sha": "97620163e46b5edca64680dece8ca6569050b078c71e06a6b81e0a680f4f9990",
    "caratteri": 6250,
    "cambiata": true
   },
@@ -2306,7 +2306,7 @@
    "titolo": "Servizi | Salute Piemonte",
    "sha": "db4d086e2de051cc32f2d6e1b6f3b60fe197dd280150e32d1a164f553615ca36",
    "caratteri": 4918,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -2384,7 +2384,7 @@
    "titolo": "Gestione consensi | Salute Piemonte",
    "sha": "f2519f047e8afbb962a7d2ee5553998fa12be35fbe0d9da0d3d9aa4762af13dd",
    "caratteri": 4079,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -2393,8 +2393,8 @@
    "http": 200,
    "file": "torino/0df5ce662258.txt",
    "titolo": "Il Fascicolo Sanitario Elettronico 2.0 | Regione Piemonte",
-   "sha": "66257e4cb9f2c03d57494a4f0d583e2a65f5f2d09424edabd442570f8e35e85b",
-   "caratteri": 20018,
+   "sha": "e63150f68e94a0c035e8dcd48f30e22eede9057a561ef58e6a7d9fed4f8f93fe",
+   "caratteri": 20023,
    "cambiata": true
   },
   {
@@ -2416,8 +2416,8 @@
    "http": 200,
    "file": "torino/83ce8b1bf05c.txt",
    "titolo": "L'ASL TO3 rinnova l'assistenza medica turistica nelle alte Valli Susa e Chisone | Regione Piemonte",
-   "sha": "ad95738827351ec694f7218e4d947f4419307b01dcb55702171035d321c93aba",
-   "caratteri": 14996,
+   "sha": "b780aec83578b72797eb36329b1d0d2203970537a42d6d5a71dce6664e3ca5bd",
+   "caratteri": 15001,
    "cambiata": true
   },
   {
@@ -2427,8 +2427,8 @@
    "http": 200,
    "file": "torino/02e76f98243d.txt",
    "titolo": "Sportello per il cittadino - URP di Torino | Regione Piemonte",
-   "sha": "9d1d1bddce329be03ba2083aead5667fed2af9ab4be2f385b17f28f212da0ea1",
-   "caratteri": 17628,
+   "sha": "5e08197c2042bf2d07ddae4d8e9ae69c5c5727b00925150e40ff1217e076bef7",
+   "caratteri": 17633,
    "cambiata": true
   },
   {
@@ -2453,35 +2453,35 @@
    "caratteri": 12824,
    "link_pdf": [
     {
-     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2020/09/Elenco-Farmacie-Aderenti.pdf?x31912",
+     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2020/09/Elenco-Farmacie-Aderenti.pdf?x66151",
      "testo": "Elenco Farmacie Aderenti)"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/09/Informativa-genitori.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/09/Informativa-genitori.pdf?x66151",
      "testo": "Informativa genitori"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/09/Consenso-informato.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/09/Consenso-informato.pdf?x66151",
      "testo": "Consenso informato"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/09/Consenso-informato-del-genitore-non-accompagnante.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/09/Consenso-informato-del-genitore-non-accompagnante.pdf?x66151",
      "testo": "Consenso informato del genitore non accompagnante"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/09/Dichiarazione-sostitutiva-atto-di-notorieta_.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/09/Dichiarazione-sostitutiva-atto-di-notorieta_.pdf?x66151",
      "testo": "Dichiarazione sostitutiva atto di notorietà"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/06/Allegato-1-Informativa-Privacy-CUP.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/06/Allegato-1-Informativa-Privacy-CUP.pdf?x66151",
      "testo": "Allegato 1 – Informativa Privacy CUP"
     },
     {
-     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2023/03/Guida-alla-lettura-Tempi-di-Attesa.pdf?x31912",
+     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2023/03/Guida-alla-lettura-Tempi-di-Attesa.pdf?x66151",
      "testo": "Guida alla lettura Tempi di Attesa"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/09/Elenco-Farmacie-Aderenti.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/09/Elenco-Farmacie-Aderenti.pdf?x66151",
      "testo": "Elenco Farmacie Aderenti"
     }
    ],
@@ -2520,31 +2520,31 @@
    "caratteri": 9547,
    "link_pdf": [
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/02/Mod.A-Richiesta-Valutazione-Geriatrica.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/02/Mod.A-Richiesta-Valutazione-Geriatrica.pdf?x66151",
      "testo": "Mod.A Richiesta Valutazione Geriatrica"
     },
     {
-     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2020/04/informativa-trattamento-dati-e-cambio-di-residenza.pdf?x31912",
+     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2020/04/informativa-trattamento-dati-e-cambio-di-residenza.pdf?x66151",
      "testo": "informativa trattamento dati e cambio di residenza"
     },
     {
-     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2020/03/Mod.B_Scheda-Informativa-Sanitaria.pdf?x31912",
+     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2020/03/Mod.B_Scheda-Informativa-Sanitaria.pdf?x66151",
      "testo": "Mod.B_Scheda Informativa Sanitaria"
     },
     {
-     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2023/05/Impegno-Rifiuto-ad-ottenere-ISEE.pdf?x31912",
+     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2023/05/Impegno-Rifiuto-ad-ottenere-ISEE.pdf?x66151",
      "testo": "Impegno / Rifiuto ad ottenere l’ISEE"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/03/Mod.B_Scheda-Informativa-Sanitaria.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/03/Mod.B_Scheda-Informativa-Sanitaria.pdf?x66151",
      "testo": "Mod.B_Scheda Informativa Sanitaria"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/informativa-trattamento-dati-e-cambio-di-residenza.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/informativa-trattamento-dati-e-cambio-di-residenza.pdf?x66151",
      "testo": "informativa trattamento dati e cambio di residenza"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2023/05/Impegno-Rifiuto-ad-ottenere-ISEE.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2023/05/Impegno-Rifiuto-ad-ottenere-ISEE.pdf?x66151",
      "testo": "Impegno Rifiuto ad ottenere ISEE"
     }
    ],
@@ -2558,8 +2558,8 @@
    "certificato": "non valido",
    "file": "torino/f6d0f76be991.txt",
    "titolo": "A.S.L. TO3",
-   "sha": "73a61b4438acd26d11353a21e413bacd715f89f88aaab7182d6a733bc30951bd",
-   "caratteri": 3072,
+   "sha": "33cd78142303fc30ebbe794840a77ea97748d099815e15dfe4eead0a876039bb",
+   "caratteri": 2920,
    "cambiata": true
   },
   {
@@ -2570,7 +2570,7 @@
    "certificato": "non valido",
    "file": "torino/58d10c286b3e.txt",
    "titolo": "Prenotazioni | A.S.L. TO3",
-   "sha": "a467fc184da0d4e3d38f27cb03d71766741acb96e94af66432a0bdac4387a044",
+   "sha": "6aa3dbaa76ed46577d1fed03c12a4c0c44f0927f9ed97f5854a1838f3fe060d9",
    "caratteri": 6578,
    "cambiata": true
   },
@@ -2582,7 +2582,7 @@
    "certificato": "non valido",
    "file": "torino/b4f5a3c3ea56.txt",
    "titolo": "CUP – Centri Unici di Prenotazione | A.S.L. TO3",
-   "sha": "a0e3db146e557949e02941ba24a664c45ac93b2d210f90c6fd85a4e10162f369",
+   "sha": "a446f8128c9966152257b85d4d494a4707a43c2af05fabc78b95fc4f97a3527b",
    "caratteri": 10031,
    "cambiata": true
   },
@@ -2594,7 +2594,7 @@
    "certificato": "non valido",
    "file": "torino/98d162d039ff.txt",
    "titolo": "Medico di famiglia & pediatra | A.S.L. TO3",
-   "sha": "0af623fa8b2d05653f5204b0ff5024ecf5f760f8a2cefa40c5b7da59b6fabf1e",
+   "sha": "9cda803729f2c9d9359f8f309ab91d4cf4b9c083d0c76a307ed627b426bbdfd8",
    "caratteri": 10962,
    "link_pdf": [
     {
@@ -2718,23 +2718,23 @@
    "caratteri": 8873,
    "link_pdf": [
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Allegato-1-Istanza-attivazione-percorso-di-tutela-per-sito.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Allegato-1-Istanza-attivazione-percorso-di-tutela-per-sito.pdf?x66151",
      "testo": "Allegato 1 – Istanza attivazione percorso di tutela"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/04/Informativa-in-estratto.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/04/Informativa-in-estratto.pdf?x66151",
      "testo": "Informativa privacy"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/09/Elenco-Farmacie-Aderenti.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/09/Elenco-Farmacie-Aderenti.pdf?x66151",
      "testo": "Farmacie aderenti"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/Nota-Regione-Piemonte-26-aprile-2024.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/Nota-Regione-Piemonte-26-aprile-2024.pdf?x66151",
      "testo": "Nota Regione Piemonte 26 aprile 2024"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/12/Nota-Regione-Piemonte-25-giugno-2024.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/12/Nota-Regione-Piemonte-25-giugno-2024.pdf?x66151",
      "testo": "Nota Regione Piemonte 25 giugno 2024"
     }
    ],
@@ -2751,35 +2751,35 @@
    "caratteri": 8272,
    "link_pdf": [
     {
-     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2023/03/Guida-alla-lettura-Tempi-di-Attesa.pdf?x31912",
+     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2023/03/Guida-alla-lettura-Tempi-di-Attesa.pdf?x66151",
      "testo": "Guida alla lettura Tempi di Attesa"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/PAA_ASL_CDT_2024-Deliberazione-1040_31-Luglio-2024.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/PAA_ASL_CDT_2024-Deliberazione-1040_31-Luglio-2024.pdf?x66151",
      "testo": "PAA_ASL_CDT_2024 Deliberazione 1040_31 Luglio 2024"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/PAA_ASL_CDT_2023_Aggiornamento-Deliberazione-1449_09-Novembre-2023.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/PAA_ASL_CDT_2023_Aggiornamento-Deliberazione-1449_09-Novembre-2023.pdf?x66151",
      "testo": "PAA_ASL_CDT_2023_Aggiornamento Deliberazione 1449_09 Novembre 2023"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/PAA_ASL_CDT_2023-Deliberazione-994_20-Luglio-2023.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/PAA_ASL_CDT_2023-Deliberazione-994_20-Luglio-2023.pdf?x66151",
      "testo": "PAA_ASL_CDT_2023 Deliberazione 994_20 Luglio 2023"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/PAA_ASL_CDT_2022_Aggiornamento-Deliberazione-2392_02-Dicembre-2022.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/PAA_ASL_CDT_2022_Aggiornamento-Deliberazione-2392_02-Dicembre-2022.pdf?x66151",
      "testo": "PAA_ASL_CDT_2022_Aggiornamento Deliberazione 2392_02 Dicembre 2022"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/PAA_ASL_CDT_2022-Deliberazione-581_29-Aprile-2022-.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/PAA_ASL_CDT_2022-Deliberazione-581_29-Aprile-2022-.pdf?x66151",
      "testo": "PAA_ASL_CDT_2022 Deliberazione 581_29 Aprile 2022"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/PAA_ASL_CDT_2021_Aggiornamento-Deliberazione-1520_16-Dicembre-2021.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/PAA_ASL_CDT_2021_Aggiornamento-Deliberazione-1520_16-Dicembre-2021.pdf?x66151",
      "testo": "PAA_ASL_CDT_2021_Aggiornamento Deliberazione 1520_16 Dicembre 2021"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/PAA_ASL_CDT_2021-Deliberazione-841_23-Luglio-2021.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/PAA_ASL_CDT_2021-Deliberazione-841_23-Luglio-2021.pdf?x66151",
      "testo": "PAA_ASL_CDT_2021 Deliberazione 841_23 Luglio 2021"
     }
    ],
@@ -2793,7 +2793,7 @@
    "certificato": "non valido",
    "file": "torino/90f61ae2b1aa.txt",
    "titolo": "Tempi di attesa | A.S.L. TO3",
-   "sha": "25d768fa12748daf2a7edd1e2ef16bd5fd253d716f9fa32f2c09c29f9e5e8c59",
+   "sha": "79f0ae4d4c6049c42c16959286618ebad48cdc5b09b79a43510648c9d413972b",
    "caratteri": 9452,
    "link_pdf": [
     {
@@ -2905,27 +2905,27 @@
    "caratteri": 10082,
    "link_pdf": [
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/11/Tariffario-1.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/11/Tariffario-1.pdf?x66151",
      "testo": "Tariffario"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/11/Delibera-1584-del-18.11.2025-Regolamento-accesso-1.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/11/Delibera-1584-del-18.11.2025-Regolamento-accesso-1.pdf?x66151",
      "testo": "Delibera 1584 del 18.11.2025 – Regolamento accesso"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/12/Allegato-3-Richiesta-di-accesso-alla-documentazione-sanitaria_firma-evidenziata.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/12/Allegato-3-Richiesta-di-accesso-alla-documentazione-sanitaria_firma-evidenziata.pdf?x66151",
      "testo": "Allegato 3 – Richiesta di accesso alla documentazione sanitaria_"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/12/Allegato-11-Delega-al-ritiro-di-documentazione.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/12/Allegato-11-Delega-al-ritiro-di-documentazione.pdf?x66151",
      "testo": "Allegato 11 – Delega al ritiro di documentazione"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/12/Allegato-12-Dichiarazione-sostitutiva-di-atto-di-notorieta-art.-47-DPR-445_2000.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/12/Allegato-12-Dichiarazione-sostitutiva-di-atto-di-notorieta-art.-47-DPR-445_2000.pdf?x66151",
      "testo": "Allegato 12 – Dichiarazione sostitutiva di atto di notorietà – art. 47 DPR 445_2000"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/12/Indicazioni-modalita-di-pagamento-PagoPA-su-Salute-Piemonte.pdf?x31912",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/12/Indicazioni-modalita-di-pagamento-PagoPA-su-Salute-Piemonte.pdf?x66151",
      "testo": "Indicazioni modalità di pagamento PagoPA su Salute Piemonte"
     }
    ],
@@ -2979,7 +2979,7 @@
    "certificato": "non valido",
    "file": "torino/b82056cf0d81.txt",
    "titolo": "Assistenza protesica e integrativa | A.S.L. TO3",
-   "sha": "4473707115fb29af8a2cccb5293b174a8055a5b9d105ae3ad482d0ad1076c782",
+   "sha": "d3a2969d2de393808aed3fa6f99c52c8b4ca65afd0a23d889d26fe7cf371e7f1",
    "caratteri": 13647,
    "cambiata": true
   },
@@ -3033,8 +3033,8 @@
    "http": 200,
    "file": "torino/1df1dd473541.txt",
    "titolo": "Il medico di famiglia e il pediatra di libera scelta | Regione Piemonte",
-   "sha": "74b03877c453fe8ae7f68c5b6dcfc6b25230068a55c8a23d4af6fe97dd63df30",
-   "caratteri": 15702,
+   "sha": "a983ff9dac2b004a869474dc0bea6488fdc86b88fd25841ee2dc40f3c96f7ed6",
+   "caratteri": 15707,
    "cambiata": true
   },
   {
@@ -3045,8 +3045,41 @@
    "http": 200,
    "file": "torino/d2ea54329f13.txt",
    "titolo": "Faq | Salute Piemonte",
-   "sha": "0dbb2401297c67df2e4256ada0d0cfb5db2b114a0e21e87969087d8890a0cc3e",
-   "caratteri": 23105,
+   "sha": "3c44c020b40396b36281a6807572ebd9850682cb62b2d5efed58cc9de75f149d",
+   "caratteri": 23119,
+   "cambiata": true
+  },
+  {
+   "asl": "torino",
+   "url": "https://www.regione.piemonte.it/web/temi/sanita/prevenzione/prevenzione-serena",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "torino/054a6c79664a.txt",
+   "titolo": "Prevenzione Serena | Regione Piemonte",
+   "sha": "9e1d6e01b37ff9642dd94892bb58d11abc0e6974b79f30dc0c234f66c29c7a95",
+   "caratteri": 20968,
+   "link_pdf": [
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_copertura_da_invito_da_esami_2018.pdf",
+     "testo": "Report copertura da invito da esami 2018"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_colorettale_2017.pdf",
+     "testo": "Report attivit&agrave; screening colorettale 2017"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2020-10/prevenzione_serena_attivita_screening_mammografico_2017.pdf",
+     "testo": "Attivit&agrave; screening mammografico 2017"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_cervicale_2016_2017.pdf",
+     "testo": "Report attivit&agrave; screening cervicale 2016 - 2017"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-03/report_2016_17.pdf",
+     "testo": "Report annuale Prevenzione Serena: risultati 2015/16 e dati preliminari 2017"
+    }
+   ],
    "cambiata": true
   },
   {
@@ -3077,11 +3110,11 @@
   },
   {
    "asl": "torino",
-   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Modulo-segnalazioni-urp-settembre-2026.pdf?x31912",
+   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Modulo-segnalazioni-urp-settembre-2026.pdf?x66151",
    "controllata": "2026-10-23",
    "da_pagina": "https://www.aslcittaditorino.it/urp/",
    "http": 200,
-   "file": "torino/0c20c1eae7fe.txt",
+   "file": "torino/ce313d650120.txt",
    "titolo": "AI Direttore Amministrativo",
    "sha": "e40f2e05e1c93205e75d387571d9d49186e831c59c91ec631e7ebe531145fe94",
    "caratteri": 3884,
@@ -3090,12 +3123,12 @@
   },
   {
    "asl": "torino",
-   "url": "http://www.aslcittaditorino.it/wp-content/uploads/2022/04/Delibera-454-del-1%C2%B0-aprile-2022-Regolamento-Pubblica-Tutela.pdf?x31912",
+   "url": "http://www.aslcittaditorino.it/wp-content/uploads/2022/04/Delibera-454-del-1%C2%B0-aprile-2022-Regolamento-Pubblica-Tutela.pdf?x66151",
    "controllata": "2026-10-23",
    "da_pagina": "https://www.aslcittaditorino.it/urp/",
    "http": 200,
-   "finale": "https://www.aslcittaditorino.it:443/wp-content/uploads/2022/04/Delibera-454-del-1%C2%B0-aprile-2022-Regolamento-Pubblica-Tutela.pdf?x31912",
-   "file": "torino/854bbbd0cce4.txt",
+   "finale": "https://www.aslcittaditorino.it:443/wp-content/uploads/2022/04/Delibera-454-del-1%C2%B0-aprile-2022-Regolamento-Pubblica-Tutela.pdf?x66151",
+   "file": "torino/790e4d44982a.txt",
    "titolo": "SERVIZIO SANITARIO NAZIONALE",
    "sha": "078808276d77e7f6293935ac1f41dcd451e88a4eaf61eac9345d9926e240aa9f",
    "caratteri": 19523,
@@ -3104,11 +3137,11 @@
   },
   {
    "asl": "torino",
-   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Modulo-de-registro.pdf?x31912",
+   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Modulo-de-registro.pdf?x66151",
    "controllata": "2026-10-23",
    "da_pagina": "https://www.aslcittaditorino.it/urp/",
    "http": 200,
-   "file": "torino/accc7b9bdd6e.txt",
+   "file": "torino/179ad2fef2ac.txt",
    "titolo": "AI Direttore Amministrativo",
    "sha": "ebe3a6eb2ee7d896570b2a293f05199c8d1ec97415c106c1d3198cc895ed5e34",
    "caratteri": 2279,
@@ -3117,11 +3150,11 @@
   },
   {
    "asl": "torino",
-   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2022/04/Delibera-454-del-1%C2%B0-aprile-2022-Regolamento-Pubblica-Tutela.pdf?x31912",
+   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2022/04/Delibera-454-del-1%C2%B0-aprile-2022-Regolamento-Pubblica-Tutela.pdf?x66151",
    "controllata": "2026-10-23",
    "da_pagina": "https://www.aslcittaditorino.it/urp/",
    "http": 200,
-   "file": "torino/27f6c6f7d31b.txt",
+   "file": "torino/970ef44231ff.txt",
    "titolo": "SERVIZIO SANITARIO NAZIONALE",
    "sha": "078808276d77e7f6293935ac1f41dcd451e88a4eaf61eac9345d9926e240aa9f",
    "caratteri": 19523,
@@ -3144,12 +3177,12 @@
   },
   {
    "asl": "torino",
-   "url": "http://www.aslcittaditorino.it/wp-content/uploads/2023/03/Guida-alla-lettura-Tempi-di-Attesa.pdf?x31912",
+   "url": "http://www.aslcittaditorino.it/wp-content/uploads/2023/03/Guida-alla-lettura-Tempi-di-Attesa.pdf?x66151",
    "controllata": "2026-10-23",
    "da_pagina": "https://www.aslcittaditorino.it/come-fare-per/prenotare-una-visita/",
    "http": 200,
-   "finale": "https://www.aslcittaditorino.it:443/wp-content/uploads/2023/03/Guida-alla-lettura-Tempi-di-Attesa.pdf?x31912",
-   "file": "torino/5f9b39a25906.txt",
+   "finale": "https://www.aslcittaditorino.it:443/wp-content/uploads/2023/03/Guida-alla-lettura-Tempi-di-Attesa.pdf?x66151",
+   "file": "torino/979d23b20fd7.txt",
    "titolo": "GUIDA ALLA LETTURA",
    "sha": "c260963f3d3fb673e0167733c68a101fc2f26ab079af6aadd58582d7db0e3719",
    "caratteri": 12128,
@@ -3172,11 +3205,11 @@
   },
   {
    "asl": "torino",
-   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Allegato-1-Istanza-attivazione-percorso-di-tutela-per-sito.pdf?x31912",
+   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Allegato-1-Istanza-attivazione-percorso-di-tutela-per-sito.pdf?x66151",
    "controllata": "2026-10-23",
    "da_pagina": "https://www.aslcittaditorino.it/tempi-di-attesa-prestazioni-specialistiche/",
    "http": 200,
-   "file": "torino/55efe306d2f4.txt",
+   "file": "torino/40356908eb88.txt",
    "titolo": "AI Direttore Amministrativo",
    "sha": "9b086d58ac2dcf2d5a088215301677755d4ac07c3c1aa10063836a5cd862b777",
    "caratteri": 2587,
@@ -3238,6 +3271,45 @@
    "cambiata": false
   },
   {
+   "asl": "torino",
+   "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_colorettale_2017.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.regione.piemonte.it/web/temi/sanita/prevenzione/prevenzione-serena",
+   "http": 200,
+   "file": "torino/b97a8f1e98eb.txt",
+   "titolo": "Comunicazione Ecografia appuntamento",
+   "sha": "b5711f9dfd03b76bba3c70088a68aed77c656d0dad2ccaebc0b70ffaeca7d0ec",
+   "caratteri": 18592,
+   "pdf": true,
+   "cambiata": false
+  },
+  {
+   "asl": "torino",
+   "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2020-10/prevenzione_serena_attivita_screening_mammografico_2017.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.regione.piemonte.it/web/temi/sanita/prevenzione/prevenzione-serena",
+   "http": 200,
+   "file": "torino/1312e99f7995.txt",
+   "titolo": "Comunicazione Ecografia appuntamento",
+   "sha": "c4e2176fad0b16facdea8a97d117570a58c9462bd3951b5786e102f590266068",
+   "caratteri": 17268,
+   "pdf": true,
+   "cambiata": false
+  },
+  {
+   "asl": "torino",
+   "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_cervicale_2016_2017.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.regione.piemonte.it/web/temi/sanita/prevenzione/prevenzione-serena",
+   "http": 200,
+   "file": "torino/fe27ca267803.txt",
+   "titolo": "Comunicazione Ecografia appuntamento",
+   "sha": "d96a151f08665326897973d13c12f472c01b514b5d3aa2112b8a3bf8d47f814e",
+   "caratteri": 15869,
+   "pdf": true,
+   "cambiata": false
+  },
+  {
    "asl": "verbano-cusio-ossola",
    "url": "https://www.aslvco.it/",
    "controllata": "2026-10-23",
@@ -3252,7 +3324,7 @@
    "certificato": "non valido",
    "file": "verbano-cusio-ossola/42ffdf775f1d.txt",
    "titolo": "Continuità assistenziale (ex Guardia medica) | A.S.L. TO3",
-   "sha": "4ecd69b861d2403852d16375ad22942fae06231183729fb087f5069ec78036c9",
+   "sha": "b9c3734d1bba4f3286efe4205fb8d7c9bfe4e4c6746ec3dcaef9566887f9a03b",
    "caratteri": 3110,
    "cambiata": true
   },
@@ -3266,7 +3338,7 @@
    "titolo": "Il mio medico | Salute Piemonte",
    "sha": "240b5024f646a78f919b42fcb17956ffcb83ba8340c7f9f5b757025025117e8d",
    "caratteri": 3367,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "verbano-cusio-ossola",
@@ -3278,6 +3350,39 @@
    "sha": "0c91c91bd819654e563e13e231f2a9cae3e427c8b7bab8d14ac7c325c70d9ed4",
    "caratteri": 2197,
    "cambiata": false
+  },
+  {
+   "asl": "verbano-cusio-ossola",
+   "url": "https://www.regione.piemonte.it/web/temi/sanita/prevenzione/prevenzione-serena",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "verbano-cusio-ossola/054a6c79664a.txt",
+   "titolo": "Prevenzione Serena | Regione Piemonte",
+   "sha": "9e1d6e01b37ff9642dd94892bb58d11abc0e6974b79f30dc0c234f66c29c7a95",
+   "caratteri": 20968,
+   "link_pdf": [
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_copertura_da_invito_da_esami_2018.pdf",
+     "testo": "Report copertura da invito da esami 2018"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_colorettale_2017.pdf",
+     "testo": "Report attivit&agrave; screening colorettale 2017"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2020-10/prevenzione_serena_attivita_screening_mammografico_2017.pdf",
+     "testo": "Attivit&agrave; screening mammografico 2017"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_cervicale_2016_2017.pdf",
+     "testo": "Report attivit&agrave; screening cervicale 2016 - 2017"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-03/report_2016_17.pdf",
+     "testo": "Report annuale Prevenzione Serena: risultati 2015/16 e dati preliminari 2017"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "verbano-cusio-ossola",
@@ -3344,39 +3449,6 @@
    "caratteri": 59129,
    "pdf": true,
    "cambiata": false
-  },
-  {
-   "asl": "verbano-cusio-ossola",
-   "url": "https://www.regione.piemonte.it/web/temi/sanita/prevenzione/prevenzione-serena",
-   "controllata": "2026-10-23",
-   "http": 200,
-   "file": "verbano-cusio-ossola/054a6c79664a.txt",
-   "titolo": "Prevenzione Serena | Regione Piemonte",
-   "sha": "497e6b7cb32ec0b0f69c6ef220f2c3880680bfc02c93cb6d20aefe4f4c545cc3",
-   "caratteri": 20963,
-   "link_pdf": [
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_copertura_da_invito_da_esami_2018.pdf",
-     "testo": "Report copertura da invito da esami 2018"
-    },
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_colorettale_2017.pdf",
-     "testo": "Report attivit&agrave; screening colorettale 2017"
-    },
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2020-10/prevenzione_serena_attivita_screening_mammografico_2017.pdf",
-     "testo": "Attivit&agrave; screening mammografico 2017"
-    },
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_cervicale_2016_2017.pdf",
-     "testo": "Report attivit&agrave; screening cervicale 2016 - 2017"
-    },
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-03/report_2016_17.pdf",
-     "testo": "Report annuale Prevenzione Serena: risultati 2015/16 e dati preliminari 2017"
-    }
-   ],
-   "cambiata": true
   },
   {
    "asl": "verbano-cusio-ossola",
@@ -3477,11 +3549,12 @@
    "asl": "vercelli",
    "url": "https://www.salutepiemonte.it/servizi/il-mio-medico?nid=75",
    "controllata": "2026-10-23",
+   "browser": true,
    "http": 200,
    "file": "vercelli/dfb330ee803a.txt",
-   "titolo": "Salute Piemonte",
-   "sha": "538b55c900c69ec006420cf626c4267ed952d45fdfc8af0cf0a8cc0f0b8025d6",
-   "caratteri": 15,
+   "titolo": "Il mio medico | Salute Piemonte",
+   "sha": "240b5024f646a78f919b42fcb17956ffcb83ba8340c7f9f5b757025025117e8d",
+   "caratteri": 3367,
    "cambiata": true
   },
   {
@@ -3582,6 +3655,39 @@
   },
   {
    "asl": "vercelli",
+   "url": "https://www.regione.piemonte.it/web/temi/sanita/prevenzione/prevenzione-serena",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "vercelli/054a6c79664a.txt",
+   "titolo": "Prevenzione Serena | Regione Piemonte",
+   "sha": "9e1d6e01b37ff9642dd94892bb58d11abc0e6974b79f30dc0c234f66c29c7a95",
+   "caratteri": 20968,
+   "link_pdf": [
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_copertura_da_invito_da_esami_2018.pdf",
+     "testo": "Report copertura da invito da esami 2018"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_colorettale_2017.pdf",
+     "testo": "Report attivit&agrave; screening colorettale 2017"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2020-10/prevenzione_serena_attivita_screening_mammografico_2017.pdf",
+     "testo": "Attivit&agrave; screening mammografico 2017"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_cervicale_2016_2017.pdf",
+     "testo": "Report attivit&agrave; screening cervicale 2016 - 2017"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-03/report_2016_17.pdf",
+     "testo": "Report annuale Prevenzione Serena: risultati 2015/16 e dati preliminari 2017"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "vercelli",
    "url": "https://aslvc.piemonte.it/casa-della-comunita-vercelli-guardia-medica-pronto-soccorso/",
    "controllata": "2026-10-23",
    "http": 200,
@@ -3641,39 +3747,6 @@
    "sha": "3e6a611ca8b07cded578891dccd106b6b5ee6595ab22f10ae22a0e1b8bb71259",
    "caratteri": 2866,
    "cambiata": false
-  },
-  {
-   "asl": "vercelli",
-   "url": "https://www.regione.piemonte.it/web/temi/sanita/prevenzione/prevenzione-serena",
-   "controllata": "2026-10-23",
-   "http": 200,
-   "file": "vercelli/054a6c79664a.txt",
-   "titolo": "Prevenzione Serena | Regione Piemonte",
-   "sha": "497e6b7cb32ec0b0f69c6ef220f2c3880680bfc02c93cb6d20aefe4f4c545cc3",
-   "caratteri": 20963,
-   "link_pdf": [
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_copertura_da_invito_da_esami_2018.pdf",
-     "testo": "Report copertura da invito da esami 2018"
-    },
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_colorettale_2017.pdf",
-     "testo": "Report attivit&agrave; screening colorettale 2017"
-    },
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2020-10/prevenzione_serena_attivita_screening_mammografico_2017.pdf",
-     "testo": "Attivit&agrave; screening mammografico 2017"
-    },
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-08/prevenzione_serena_attivita_screening_cervicale_2016_2017.pdf",
-     "testo": "Report attivit&agrave; screening cervicale 2016 - 2017"
-    },
-    {
-     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2019-03/report_2016_17.pdf",
-     "testo": "Report annuale Prevenzione Serena: risultati 2015/16 e dati preliminari 2017"
-    }
-   ],
-   "cambiata": true
   },
   {
    "asl": "vercelli",

@@ -1,6 +1,6 @@
 {
  "regione": "friuli-venezia-giulia",
- "aggiornato": "2026-10-23T09:42:16.721Z",
+ "aggiornato": "2026-10-23T11:56:45.888Z",
  "pagine": [
   {
    "asl": "gorizia",
@@ -10,15 +10,15 @@
    "finale": "https://asugi.sanita.fvg.it/it/",
    "file": "gorizia/fd037280c738.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI)",
-   "sha": "6a081c5a45cc96e3cb2ec9a8b17ce2c4b9fd2b8bb196baa4aaaa553af5f2db32",
-   "caratteri": 6609,
+   "sha": "9c77fec7c826a2ac0db379065e97c92076ceb48cc0367cc00c36a861f414753a",
+   "caratteri": 6583,
    "link_pdf": [
     {
      "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dir_san/all_farma/mat_info/somministrazione_farmaci.pdf",
      "testo": "Somministrazione farmaci in contesti extrafamiliari (indicazioni operative)"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "gorizia",
@@ -168,6 +168,17 @@
      "testo": "Somministrazione farmaci in contesti extrafamiliari (indicazioni operative)"
     }
    ],
+   "cambiata": false
+  },
+  {
+   "asl": "gorizia",
+   "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/screening-prevenzione-tumori/FOGLIA7/aziende/asugi.html",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "gorizia/01a82917dd4b.txt",
+   "titolo": "Regione Autonoma Friuli Venezia Giulia - Azienda Sanitaria Universitaria Giuliano Isontina",
+   "sha": "54663f97db8b8ab4b808f1cf13f69a191fe48b6ec50a3cc268ff0c04db0156cc",
+   "caratteri": 2621,
    "cambiata": false
   },
   {
@@ -333,17 +344,6 @@
   },
   {
    "asl": "gorizia",
-   "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/screening-prevenzione-tumori/FOGLIA7/aziende/asugi.html",
-   "controllata": "2026-10-23",
-   "http": 200,
-   "file": "gorizia/01a82917dd4b.txt",
-   "titolo": "Regione Autonoma Friuli Venezia Giulia - Azienda Sanitaria Universitaria Giuliano Isontina",
-   "sha": "54663f97db8b8ab4b808f1cf13f69a191fe48b6ec50a3cc268ff0c04db0156cc",
-   "caratteri": 2621,
-   "cambiata": false
-  },
-  {
-   "asl": "gorizia",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dir_amm/moduli/richiesta_cartelle_cliniche_isontina.pdf",
    "controllata": "2026-10-23",
    "http": 200,
@@ -492,15 +492,15 @@
    "finale": "https://asfo.sanita.fvg.it/it/",
    "file": "pordenone/d6361f40166d.txt",
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Home",
-   "sha": "ccd9f2fb172fcc7d46a12635649b060937f4319088bdecb50939748841a89516",
-   "caratteri": 7391,
+   "sha": "1fdfd595e63dd5f7156715d5288683c74e9c2937f89c99ac3f76fcbc58783493",
+   "caratteri": 7239,
    "link_pdf": [
     {
      "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/servizi/documenti/Asap/26_08_26-ASAP.PDF",
      "testo": "Asap - Ambulatori Sperimentali Di Assistenza Primaria"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "pordenone",
@@ -606,8 +606,8 @@
    "http": 200,
    "file": "pordenone/1c9a29335f63.txt",
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - 116117 Numero Unico Europeo per la Sanità NON Urgente",
-   "sha": "72a86e7fed08d92e9e414b33911b9bcc0ed9532b78c9dd58cde5951bc9e837e9",
-   "caratteri": 7775,
+   "sha": "29ec83a646ece8ee21e9c95d013da618fee3fe83d2869d585728b010ed09c17f",
+   "caratteri": 7757,
    "link_pdf": [
     {
      "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/servizi/documenti/Asap/26_08_26-ASAP.PDF",
@@ -618,7 +618,7 @@
      "testo": "Informativa sul trattamento dei dati personali 116117"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "pordenone",
@@ -681,6 +681,17 @@
      "testo": "Asap - Ambulatori Sperimentali Di Assistenza Primaria"
     }
    ],
+   "cambiata": false
+  },
+  {
+   "asl": "pordenone",
+   "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/screening-prevenzione-tumori/FOGLIA7/aziende/asfo.html",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "pordenone/f42683db18a8.txt",
+   "titolo": "Regione Autonoma Friuli Venezia Giulia - Azienda Sanitaria Friuli Occidentale",
+   "sha": "45e9a9fc0167a31a747d8516b4bb1dd2e0eea1d79913ebb357d28fd36576033e",
+   "caratteri": 1736,
    "cambiata": false
   },
   {
@@ -924,17 +935,6 @@
   },
   {
    "asl": "pordenone",
-   "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/screening-prevenzione-tumori/FOGLIA7/aziende/asfo.html",
-   "controllata": "2026-10-23",
-   "http": 200,
-   "file": "pordenone/f42683db18a8.txt",
-   "titolo": "Regione Autonoma Friuli Venezia Giulia - Azienda Sanitaria Friuli Occidentale",
-   "sha": "45e9a9fc0167a31a747d8516b4bb1dd2e0eea1d79913ebb357d28fd36576033e",
-   "caratteri": 1736,
-   "cambiata": false
-  },
-  {
-   "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/servizi/documenti/territorio/dapa/dip_dipendenze/gioco_dazzardo_guida_familiarii.pdf",
    "controllata": "2026-10-23",
    "da_pagina": "https://asfo.sanita.fvg.it/it/servizi/contatti.html",
@@ -1136,15 +1136,15 @@
    "finale": "https://asugi.sanita.fvg.it/it/",
    "file": "trieste/fd037280c738.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI)",
-   "sha": "6a081c5a45cc96e3cb2ec9a8b17ce2c4b9fd2b8bb196baa4aaaa553af5f2db32",
-   "caratteri": 6609,
+   "sha": "9c77fec7c826a2ac0db379065e97c92076ceb48cc0367cc00c36a861f414753a",
+   "caratteri": 6583,
    "link_pdf": [
     {
      "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dir_san/all_farma/mat_info/somministrazione_farmaci.pdf",
      "testo": "Somministrazione farmaci in contesti extrafamiliari (indicazioni operative)"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "trieste",
@@ -1294,6 +1294,17 @@
      "testo": "Somministrazione farmaci in contesti extrafamiliari (indicazioni operative)"
     }
    ],
+   "cambiata": false
+  },
+  {
+   "asl": "trieste",
+   "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/screening-prevenzione-tumori/FOGLIA7/aziende/asugi.html",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "trieste/01a82917dd4b.txt",
+   "titolo": "Regione Autonoma Friuli Venezia Giulia - Azienda Sanitaria Universitaria Giuliano Isontina",
+   "sha": "54663f97db8b8ab4b808f1cf13f69a191fe48b6ec50a3cc268ff0c04db0156cc",
+   "caratteri": 2621,
    "cambiata": false
   },
   {
@@ -1626,15 +1637,15 @@
    "http": 200,
    "file": "trieste/066a533de9ed.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Accesso agli sportelli CUP",
-   "sha": "bfdf298e4ac91ca4768d4d5ef1d5707288bc0a2ea842d8fbbeedc1dddca0a3b6",
-   "caratteri": 15656,
+   "sha": "d8bfed27cea62dfb2855105a059d8efaacce19c12f8a662f6b27b3e078aba4dc",
+   "caratteri": 15664,
    "link_pdf": [
     {
      "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dir_san/all_farma/mat_info/somministrazione_farmaci.pdf",
      "testo": "Somministrazione farmaci in contesti extrafamiliari (indicazioni operative)"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "trieste",
@@ -1651,7 +1662,7 @@
      "testo": "Somministrazione farmaci in contesti extrafamiliari (indicazioni operative)"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trieste",
@@ -1905,17 +1916,6 @@
      "testo": "Dichiarazione di autocertificazione per poter usufruire della prestazione in regime di esenzione [pdf - 484,16 KB] (il l"
     }
    ],
-   "cambiata": false
-  },
-  {
-   "asl": "trieste",
-   "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/screening-prevenzione-tumori/FOGLIA7/aziende/asugi.html",
-   "controllata": "2026-10-23",
-   "http": 200,
-   "file": "trieste/01a82917dd4b.txt",
-   "titolo": "Regione Autonoma Friuli Venezia Giulia - Azienda Sanitaria Universitaria Giuliano Isontina",
-   "sha": "54663f97db8b8ab4b808f1cf13f69a191fe48b6ec50a3cc268ff0c04db0156cc",
-   "caratteri": 2621,
    "cambiata": false
   },
   {
@@ -2430,6 +2430,17 @@
   },
   {
    "asl": "udine",
+   "url": "https://asufc.sanita.fvg.it/it/strutture/dir_sanitaria/dipartimento_prevenzione/screening_mal_cronico-degenerative/segreteria-screening.html",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "udine/d616d3fa1dec.txt",
+   "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - Segreteria unica - Screening",
+   "sha": "64551ee1bfa267db32991a12d579aef5c9badcd5bdd5d69cece61bd854958fb4",
+   "caratteri": 4427,
+   "cambiata": false
+  },
+  {
+   "asl": "udine",
    "url": "https://asufc.sanita.fvg.it/it/schede/cup.html",
    "controllata": "2026-10-23",
    "http": 200,
@@ -2505,17 +2516,6 @@
    "sha": "ec18ad4ac63d0f0acddea36fd6e20240fbbcce9324a22cbf96d09c0e8e99e483",
    "caratteri": 23088,
    "pdf": true,
-   "cambiata": false
-  },
-  {
-   "asl": "udine",
-   "url": "https://asufc.sanita.fvg.it/it/strutture/dir_sanitaria/dipartimento_prevenzione/screening_mal_cronico-degenerative/segreteria-screening.html",
-   "controllata": "2026-10-23",
-   "http": 200,
-   "file": "udine/d616d3fa1dec.txt",
-   "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - Segreteria unica - Screening",
-   "sha": "64551ee1bfa267db32991a12d579aef5c9badcd5bdd5d69cece61bd854958fb4",
-   "caratteri": 4427,
    "cambiata": false
   },
   {
