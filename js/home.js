@@ -79,7 +79,7 @@ const frequent = () => `
 
 // Riquadro rosso per chi sta male adesso (come le «care card» urgenti di NHS.uk).
 const urgent = `
-  <section class="care-urgent" aria-labelledby="urg-title">
+  <section class="care-urgent" aria-labelledby="urg-title" data-nosnippet>
     <h2 id="urg-title">Stai male adesso?</h2>
     <div class="care-body">
       <p>Questo sito non serve per le urgenze.</p>
