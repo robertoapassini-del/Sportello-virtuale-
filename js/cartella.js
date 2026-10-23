@@ -6,7 +6,7 @@
 import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
 import { cartellaReminder, mailtoHref, conZona } from './letters.js';
 import { noPecBox,
-  esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, copyText, printText, readForm, mailLink, aspCalls, officeBox, personFields, reportErrorHref, generalContactInfo, aslLabel, regioneInfo, regioneLink, regione, generalContact, syncDelegate, delegateNoteText, fontiNazionali,
+  esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, copyText, printText, readForm, mailLink, aspCalls, officeBox, personFields, reportErrorHref, generalContactInfo, aslLabel, regioneInfo, regioneLink, inRegione, regione, generalContact, syncDelegate, delegateNoteText, fontiNazionali,
 } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons, senzaUffici, provinceChoice, zonaScreen } from './flow.js';
 
@@ -49,7 +49,7 @@ function sources() {
 const howToAsk = () => `
   <h2>Come si chiede</h2>
   <ol class="big-steps">
-    <li><strong>Prima guarda nel Fascicolo Sanitario Elettronico</strong> (FSE): molti referti si scaricano già lì, gratis, con SPID, CIE o CNS. ${regioneLink('fse') ? `<a href="${esc(regioneLink('fse'))}" target="_blank" rel="noopener">💻 Fascicolo Sanitario della ${esc(regioneInfo().ente || 'tua Regione')}</a>` : ''}</li>
+    <li><strong>Prima guarda nel Fascicolo Sanitario Elettronico</strong> (FSE): molti referti si scaricano già lì, gratis, con SPID, CIE o CNS. ${regioneLink('fse') ? `<a href="${esc(regioneLink('fse'))}" target="_blank" rel="noopener">💻 Fascicolo Sanitario ${esc(regioneInfo().ente ? `della ${regioneInfo().ente}` : inRegione(regioneInfo()))}</a>` : ''}</li>
     <li><strong>Vai all'ufficio cartelle cliniche</strong> dell'ospedale (a volte si chiama «Direzione sanitaria» o «Archivio»). Oppure all'URP. Molti ospedali hanno anche un modulo sul sito.</li>
     <li><strong>Porta la carta d'identità.</strong> Se chiedi per un familiare, serve una <strong>delega firmata</strong> da lui e la copia del suo documento. Il tutore o l'amministratore di sostegno porta il decreto di nomina. Se la persona è morta, possono chiederla gli eredi e i familiari stretti: porta una dichiarazione firmata che dice chi sei per lei.</li>
     <li><strong>Chiedi una ricevuta</strong> con il giorno della richiesta. Da quel giorno partono i ${rules.deadline_days} giorni.</li>

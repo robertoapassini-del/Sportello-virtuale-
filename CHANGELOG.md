@@ -2,6 +2,14 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 23/10/2026 — Il link al Fascicolo Sanitario di ogni Regione
+- Il fascicolo sanitario è la cosa più cercata (Google Trends, `docs/ricerche-frequenti.md` punto 3b), ma il sito aveva il link solo per la Sicilia.
+- `data/regioni/index.json`, `link.fse` per 10 regioni nuove, dalle copie del server del 23/10/2026 (branch `copie-siti`): Abruzzo (sanita.regione.abruzzo.it/fse), Basilicata, Emilia-Romagna, Liguria, Molise (pagina dell'ASREM), Piemonte, Sardegna, Toscana (fascicolosanitario.regione.toscana.it), Umbria, Valle d'Aosta. La prova di ognuno è in `regole_fonti.fse` del file della regione: indirizzo, giorno, «pagina» e la frase della pagina tra «…». La Sicilia ha ora la sua prova (fonte della guida, 20/10/2026).
+- Da copiare, senza link finché la copia non c'è (`regole_fonti.fse` senza `proof`): Lombardia, Veneto, Friuli-Venezia Giulia (SESAMO), Calabria, Marche (il nuovo portale fse.sanita.marche.it) e Puglia (la pagina in italiano: la copia era quella in inglese). Gli indirizzi sono quelli citati nelle copie di pagine ufficiali delle aziende sanitarie.
+- Senza un indirizzo buono nelle copie: Lazio e Campania (solo notizie), Trentino-Alto Adige (il Fascicolo è diverso a Trento e a Bolzano).
+- Pagine: l'elenco «Il sito del Fascicolo nella tua regione» (blocco `fse-regioni` di `tools/pagine.mjs`, si legge anche senza JavaScript) in `fascicolo-e-ricetta/`, `fascicolo-e-ricetta/fascicolo-sanitario/` e `cartella-clinica/fascicolo-sanitario/`. Nel modulo della cartella clinica il pulsante dice la regione («Fascicolo Sanitario in Toscana»), non più «della tua Regione».
+- Nuovo controllo in `tests/coerenza.test.mjs`: un `link.fse` c'è solo con la sua prova in `regole_fonti.fse` (stesso indirizzo, «pagina», giorno, frase).
+
 ## 23/10/2026 — Come appare il sito su Google: nome, titoli, anteprima, dati strutturati, «Chi siamo»
 - Errore trovato (ricerca «site:guidasanita.it»): Google mostrava «guidasanita.it» al posto del nome, tagliava i titoli lunghi (fino a 131 caratteri) e usava il riquadro «Stai male adesso?» come descrizione della home.
 - Home: dati strutturati JSON-LD «WebSite» (nome «Guida Sanità») e «Organization» (logo `icon-512.png`); sotto il titolo la frase che dice a cosa serve il sito, prima del riquadro dell'urgenza (`index.html`, `js/home.js`).

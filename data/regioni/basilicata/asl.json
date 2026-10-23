@@ -1,6 +1,14 @@
 {
  "region": "Basilicata",
  "model": "ASP e ASM",
+ "regole_fonti": {
+  "fse": {
+   "url": "https://www.regione.basilicata.it/fascicolo-sanitario-elettronico-2-0/",
+   "verified": "2026-10-23",
+   "proof": "pagina",
+   "nota": "«Il Fascicolo Sanitario Elettronico 2.0 è una piattaforma digitale che raccoglie e organizza tutte le tue informazioni mediche in un unico luogo». Pagina della Regione Basilicata, copia del 23/10/2026."
+  }
+ },
  "_note": "Numeri dell'ASP Basilicata (Potenza) e dell'ASM (Matera), letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili. Il 116117 è attivo in tutta la Basilicata; CUP regionale 800 814814.",
  "asl": [
   {

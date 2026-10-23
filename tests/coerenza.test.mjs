@@ -340,3 +340,21 @@ test('guide: niente «per ora solo…» né «non ancora in tutte le regioni»; 
   }
   assert.deepEqual(errori, []);
 });
+
+// Il link al Fascicolo Sanitario della Regione (link.fse dell'indice) ha la sua prova in regole_fonti.fse del file della
+// regione: stesso indirizzo, letto sulla pagina (proof «pagina») in un giorno preciso. Il server copia ogni notte gli
+// url di regole_fonti, così una pagina che sparisce si vede. Una voce senza proof è solo «da copiare»: niente link.
+// 23/10/2026: il fascicolo è la cosa più cercata (docs/ricerche-frequenti.md, punto 3b), ma il link c'era solo in Sicilia.
+test('link al Fascicolo della Regione: solo con la prova in regole_fonti.fse', () => {
+  const errori = [];
+  for (const r of indice.regioni) {
+    const f = `data/regioni/${r.id}/${(r.files && r.files.asl) || 'asl'}.json`;
+    const prova = existsSync(path.join(SITE, f)) ? (json(f).regole_fonti || {}).fse : null;
+    const link = r.link && r.link.fse;
+    if (link && !prova) errori.push(`${r.id}: link.fse senza regole_fonti.fse in ${f}`);
+    if (link && prova && (prova.url !== link || prova.proof !== 'pagina' || !/^\d{4}-\d{2}-\d{2}$/.test(prova.verified || '') || !prova.nota))
+      errori.push(`${r.id}: regole_fonti.fse non prova il link (url, proof «pagina», verified, nota)`);
+    if (!link && prova && prova.proof) errori.push(`${r.id}: regole_fonti.fse ha la prova ma manca link.fse nell'indice`);
+  }
+  assert.deepEqual(errori, []);
+});

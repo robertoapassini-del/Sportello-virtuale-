@@ -1,6 +1,14 @@
 {
  "region": "Molise",
  "model": "ASReM",
+ "regole_fonti": {
+  "fse": {
+   "url": "https://www.asrem.molise.it/servizi-per-il-cittadino/fascicolo-sanitario-elettronico/",
+   "verified": "2026-10-23",
+   "proof": "pagina",
+   "nota": "«Puoi accedere al sito del Fascicolo Sanitario al seguente indirizzo https://fse.regione.molise.it». Pagina dell'ASREM, l'unica azienda sanitaria del Molise, copia del 23/10/2026."
+  }
+ },
  "_note": "Numeri dell'ASReM per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Servono a Numeri utili e ai moduli accesi in data/regioni/index.json («moduli»). Il 116117 è attivo in tutto il Molise dal 06/10/2026; Call Center Sanitario regionale 800 639595 (da cellulare 0875 752626).",
  "asl": [
   {

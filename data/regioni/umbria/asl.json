@@ -1,6 +1,14 @@
 {
  "region": "Umbria",
  "model": "USL",
+ "regole_fonti": {
+  "fse": {
+   "url": "https://www.regione.umbria.it/salute/sanita-digitale/fascicolosanitario",
+   "verified": "2026-10-23",
+   "proof": "pagina",
+   "nota": "«Per accedere è necessario avere l’identità SPID o una carta nazionale dei servizi (CNS)». Pagina della Regione Umbria, copia del 23/10/2026."
+  }
+ },
  "_note": "Numeri delle USL Umbria 1 e Umbria 2 per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Servono a Numeri utili e, dalle copie del 22/10/2026, ai moduli con le lettere (liste d'attesa, cartella clinica, medico, assistenza a casa, cure palliative, ausili). Nella provincia di Perugia la lettera va all'USL Umbria 1 o all'USL Umbria 2 secondo il comune (sub_areas). Il 116117 vale solo nel Distretto del Perugino; altrove restano i numeri di guardia medica. CUP regionale (NUS) 800 636363, da cellulare 075 5402963.",
  "asl": [
   {

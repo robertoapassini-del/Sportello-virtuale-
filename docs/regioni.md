@@ -257,6 +257,10 @@ di aziende sanitarie. Lo facciamo in tre pezzi, ognuno con un compito solo:
    **`regole_fonti`** (in cima ad `asl.json`, Emilia-Romagna, Liguria, Toscana): la prova delle regole regionali
    in cima al file, un campo per regola: `{ "local_name": { "url", "verified", "proof", "nota" } }`. `nota` riporta
    la frase della pagina tra «…». Anche questi url si copiano.
+   `regole_fonti.fse` (tutte le regioni) è la prova del link al Fascicolo Sanitario della Regione, `link.fse` in
+   `data/regioni/index.json`: stesso indirizzo. Una voce senza `proof` è solo «da copiare» (indirizzo citato da
+   un'altra pagina ufficiale): dopo la copia si legge la pagina, si mettono `verified`, `proof` e la frase in
+   `nota`, poi `link.fse` (controllo in `tests/coerenza.test.mjs`).
    **Email nascoste ai robot.** Molti siti mostrano l'indirizzo con un piccolo script: curl vedeva solo
    «[email protected]» (Cloudflare: 123 copie in Sardegna, 3 in Calabria) o «Questo indirizzo email è protetto dagli
    spambots» (Joomla: URP e PEC delle USL toscane). `tools/email-nascoste.mjs` rimette l'indirizzo in chiaro prima di

@@ -1,6 +1,14 @@
 {
  "region": "Abruzzo",
  "model": "ASL",
+ "regole_fonti": {
+  "fse": {
+   "url": "https://sanita.regione.abruzzo.it/fse",
+   "verified": "2026-10-23",
+   "proof": "pagina",
+   "nota": "«Puoi accedere disponendo della Tessera Sanitaria-CNS già attivata e di un lettore di smart card o delle credenziali SPID». Pagina della Regione Abruzzo, copia del 23/10/2026."
+  }
+ },
  "_note": "Numeri delle ASL dell'Abruzzo per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Servono a Numeri utili e ai moduli accesi in data/regioni/index.json («moduli»). Il 116117 è attivo in tutto l'Abruzzo (giugno 2026); CUP unico 800 827827 (da cellulare 0872 226).",
  "asl": [
   {
