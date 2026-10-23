@@ -10,6 +10,27 @@ Vanno riletti da una connessione italiana o confermati per telefono.
 
 Quando chiudi un punto: correggi il sito se serve, scrivi la modifica in `CHANGELOG.md` e cancella la riga da qui.
 
+## 0a. Audit «solo in Sicilia» del 23/10/2026: punti che servono una fonte
+
+Trovati rileggendo il sito come un utente fuori dalla Sicilia. Il testo è già stato reso prudente dove era sbagliato;
+per scrivere la regola giusta serve la fonte ufficiale in `data/`.
+
+- [ ] **Esenzione per reddito, quale famiglia conta**: ora il sito dice «la famiglia per il fisco: tu, il coniuge non separato e chi è a carico» (prima «stesso stato di famiglia»). Rileggere la pagina del Ministero della Salute sui ticket e scrivere la regola con la fonte in `data/rules-esenzione.json`.
+- [ ] **Esenzioni regionali per reddito**: Lombardia E05 (65 anni e più, fino a 38.500 euro), E02F per chi cerca il primo lavoro, E12/E13; Puglia E94–E96 sui farmaci. Con le fonti, il conto di `js/esenzione.js` può dirlo nella regione giusta.
+- [ ] **Lombardia, ATS e ASST**: gli sportelli (scelta del medico, esenzioni, farmacia per i farmaci con il piano) sono dell'ASST, ma `aslLabel()` dice «ATS». Serve un nome per gli sportelli in `data/regioni/index.json`. Controllare anche la Liguria (ATS).
+- [ ] **Invalidità in Valle d'Aosta e in Trentino-Alto Adige**: le prestazioni le paga la Regione o la Provincia, non l'INPS. Le pagine dicono «INPS» e «vale in tutta Italia». Il modulo lì è spento. Scrivere l'eccezione con la fonte.
+- [ ] **112 NUE**: non è ancora attivo in tutte le regioni (dove manca, risponde il 112 dei Carabinieri). La fonte in `data/numeri.json` è la notizia di Palermo: mettere la pagina nazionale del Ministero dell'Interno.
+- [ ] **Guardia medica e 116117**: Numeri utili dice «ogni zona ha il suo numero», ma in molte regioni c'è il 116117 per tutta la regione (è nei dati regionali). Scrivere il consiglio dai dati.
+- [ ] **Esami fuori dallo screening senza ticket** (L. 388/2000 art. 85 c. 4: mammografia ogni 2 anni 45–69, Pap test ogni 3 anni 25–65, colonscopia ogni 5 anni dopo i 45): ora il sito dice solo «a certe età il ticket non si paga». Rileggere l'articolo e scrivere le età.
+- [ ] **Screening del colon in Piemonte** (sigmoidoscopia a 58 anni) e Regioni con età più larghe (mammografia 45–74): scriverlo con la fonte.
+- [ ] **RSA**: come si entra in Lombardia (domanda alla RSA), Toscana (quota sanitaria e scelta libera), Veneto (impegnativa di residenzialità), Emilia-Romagna (CRA). Il sito ora dice solo che cambia da regione a regione. Anche: primo periodo dopo un ricovero (trattamenti estensivi, DPCM 12/01/2017 art. 30) tutto a carico del Servizio sanitario.
+- [ ] **Cure palliative gratis**: il sito lo attribuisce alla L. 38/2010; la gratuità viene dai LEA (DPCM 12/01/2017 art. 23 e 31). Rileggere e correggere la citazione.
+- [ ] **Liste d'attesa**: giorni del richiamo dopo «nessuna data» (`data/rules.json`, `callback_days`) secondo il PNGLA 2026-2028 (DM 26/06/2026, GU n. 195 del 24/08/2026); nel Lazio la priorità della ricetta vale solo se prenoti entro un tempo (U 10, B 20, D 40/70, P 130: SPEC.md 4.3), il modulo è acceso e non lo dice.
+- [ ] **Disdetta al CUP**: la frase «paghi il ticket anche se hai l'esenzione» è scritta come sicura; rileggere l'art. 3 del D.L. 73/2024 (deve o può?).
+- [ ] **Invalidità, vecchia procedura**: le province dove la visita la fa l'INPS e non l'ASL (convenzioni, art. 18 c. 22 D.L. 98/2011). Ora il sito dice «secondo la provincia»; con l'elenco, il sollecito può andare anche all'ufficio dell'ASL.
+- [ ] **Tessera sanitaria e permesso di soggiorno**: la tessera scade con il permesso e non si rinnova da sola. Aggiungere con la fonte (Agenzia delle Entrate).
+- [ ] **Date «Informazioni controllate il»**: `data/moduli.json` legge sempre `regioni/sicilia/asp`, anche per chi è in un'altra regione.
+
 ## 0. Temi nuovi del 20/10/2026: letti sulle fonti ufficiali, cosa resta aperto
 
 Il 20/10/2026, dal browser di Roberto (connessione italiana), sono state lette per intero: la scheda INPS dell'indennità

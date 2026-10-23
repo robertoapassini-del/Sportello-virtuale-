@@ -2,7 +2,7 @@
 // Prima la risposta: la pagina mostra subito la risposta scritta; il conto della scadenza parte dal pulsante.
 // Non chiediamo né la malattia né il nome della medicina: solo la data di scadenza del piano.
 import { pianoStatus, todayISO, formatIt, parseDate, art } from './engine.js';
-import { esc, loadJSON, loadRegioni, disclaimer, renderFooter, avvisoErrore, readForm, aslLabel } from './common.js';
+import { esc, loadJSON, loadRegioni, disclaimer, renderFooter, avvisoErrore, readForm, aslLabel, fontiNazionali } from './common.js';
 import { createFlow, choice, restartBtn, days, dateForm, showError } from './flow.js';
 
 const ROOT = '../';
@@ -11,7 +11,7 @@ const app = document.getElementById('app');
 const answerHtml = app.innerHTML;
 let rules;
 const state = {};
-const sources = () => [rules.sources, { verified: rules.last_verified }];
+const sources = () => [fontiNazionali(rules.sources), { verified: rules.last_verified }];
 
 const whatIs = () => `
   <h2>Cos'è e come funziona</h2>

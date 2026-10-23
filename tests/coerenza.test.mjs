@@ -319,3 +319,24 @@ test('ausili: acceso solo in Sicilia (i 20 giorni e il silenzio-assenso sono sic
   const accesi = indice.regioni.filter((r) => r.attiva && r.id !== 'sicilia' && (!r.moduli || r.moduli.includes('ausili'))).map((r) => r.id);
   assert.deepEqual(accesi, []);
 });
+
+// 23/10/2026: le guide dicevano «per ora solo per la Sicilia» anche dove il modulo era acceso in altre regioni
+// (liste d'attesa, cartella, assistenza a casa, cure palliative, invalidità). Il controllo legge l'indice: se il modulo
+// è acceso fuori dalla Sicilia, le sue pagine non dicono «solo per la Sicilia»; se è acceso solo in Sicilia, la frase
+// «Il percorso in questa guida la prepara» dice che vale solo per la Sicilia.
+test('guide: «solo per la Sicilia» solo dove il modulo è acceso solo in Sicilia', () => {
+  const SOLO = /per ora,? (li abbiamo )?solo (per|in) (la )?Sicilia|solo quelle della Sicilia/;
+  const errori = [];
+  for (const dir of readdirSync(SITE, { withFileTypes: true }).filter((e) => e.isDirectory() && existsSync(path.join(SITE, e.name, 'index.html')))) {
+    const fuori = indice.regioni.some((r) => r.attiva && r.id !== 'sicilia' && (!r.moduli || r.moduli.includes(dir.name)));
+    const pagine = [path.join(dir.name, 'index.html'), ...readdirSync(path.join(SITE, dir.name), { withFileTypes: true })
+      .filter((e) => e.isDirectory() && existsSync(path.join(SITE, dir.name, e.name, 'index.html'))).map((e) => path.join(dir.name, e.name, 'index.html'))];
+    for (const f of pagine) {
+      readFileSync(path.join(SITE, f), 'utf8').split('\n').forEach((riga, i) => {
+        if (fuori && SOLO.test(riga)) errori.push(`${f}:${i + 1}: il modulo «${dir.name}» è acceso anche fuori dalla Sicilia`);
+        if (!fuori && /in questa guida<\/a> la (prepara|scrive)(?![^.]*(solo (per la|in) Sicilia))/.test(riga)) errori.push(`${f}:${i + 1}: la lettera c'è solo per la Sicilia: dirlo`);
+      });
+    }
+  }
+  assert.deepEqual(errori, []);
+});

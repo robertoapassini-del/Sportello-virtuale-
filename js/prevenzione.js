@@ -2,7 +2,7 @@
 // Prima la risposta: la pagina mostra subito la risposta scritta; il percorso per età parte dal pulsante.
 // Regole fisse per età e sesso. Non chiediamo la malattia.
 import { prevenzione } from './engine.js';
-import { esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, readForm, callButton, officeBox, aslLabel, regione, regioneNonPronta } from './common.js';
+import { esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, readForm, callButton, officeBox, aslLabel, regione, regioneNonPronta, fontiNazionali } from './common.js';
 import { createFlow, choice, restartBtn, progress, needsRegion, showError } from './flow.js';
 
 const ROOT = '../';
@@ -12,7 +12,7 @@ const answerHtml = app.innerHTML;
 let rules;
 let data;
 const state = {};
-const sources = () => [rules.sources, { verified: rules.last_verified, note: `Le età possono cambiare con le campagne regionali: chiedi conferma al medico o all'${aslLabel()}.` }];
+const sources = () => [fontiNazionali(rules.sources), { verified: rules.last_verified, note: `Le età possono cambiare con le campagne regionali: chiedi conferma al medico o all'${aslLabel()}.` }];
 
 const item = (x, extra) => `<li><span class="ico" aria-hidden="true">${x.icon}</span><span><strong>${esc(x.title)}</strong> – ${extra}<br><span class="muted">${esc(x.how)}</span></span></li>`;
 
