@@ -1,6 +1,6 @@
 {
  "regione": "valle-d-aosta",
- "aggiornato": "2026-10-23T13:29:47.365Z",
+ "aggiornato": "2026-10-23T20:56:09.162Z",
  "pagine": [
   {
    "asl": "aosta",
@@ -9,8 +9,8 @@
    "http": 200,
    "file": "aosta/8c0e7f3ef863.txt",
    "titolo": "Home",
-   "sha": "0d717803c1ef447628d00949a191f305df7785a78a73dc4ec910e8a739d05007",
-   "caratteri": 10042,
+   "sha": "07e90beb1071db25ac98fef262b561219f76b93fab6942d3bc6ae2cb3194ed2a",
+   "caratteri": 8023,
    "cambiata": true
   },
   {
@@ -757,6 +757,17 @@
    "controllata": "2026-10-23",
    "da_pagina": "https://www.regione.vda.it/sanita/assistenza_sanitaria/regione/tempi_attesa/default_i.asp",
    "http": 404
+  },
+  {
+   "asl": "regole",
+   "url": "https://www.regione.vda.it/sanita/risorse_informative/fse_i.aspx",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "regole/2299686866f1.txt",
+   "titolo": "Fascicolo Sanitario Elettronico - Regione Autonoma Valle d'Aosta",
+   "sha": "ed0cdfa5daf117c4528725594ffcb2135f53ef1dd40d7a88a37ebaa1f9cffd74",
+   "caratteri": 11785,
+   "cambiata": false
   },
   {
    "asl": "inps-valle-d-aosta",

@@ -1,6 +1,6 @@
 {
  "regione": "sardegna",
- "aggiornato": "2026-10-23T12:58:31.048Z",
+ "aggiornato": "2026-10-23T20:26:35.376Z",
  "pagine": [
   {
    "asl": "cagliari",
@@ -830,10 +830,10 @@
    "http": 200,
    "file": "ogliastra/bc22f9e6e85d.txt",
    "titolo": "ASL Ogliastra - Home Page",
-   "sha": "50e1c7241bc3ab6eaa7ce674113b2857c95ad21ee8515f4e3bbd3d51548b5340",
-   "caratteri": 4063,
+   "sha": "f394b88339e8b4bf97d650344731644e8fda76be7fd113d1ce7fbd89cc8518d0",
+   "caratteri": 4057,
    "email_nascoste": 2,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "ogliastra",
@@ -1003,7 +1003,7 @@
    "sha": "45a82a6f8ea21035a97b06bdf8c32021f84c798a9ef4f412c5e0d1465312d7ae",
    "caratteri": 7343,
    "email_nascoste": 2,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "oristano",
@@ -1122,10 +1122,10 @@
    "http": 200,
    "file": "sassari/02311b0ebe08.txt",
    "titolo": "ASL Sassari - Home Page",
-   "sha": "306d7908407192fb54922d2fc91879176de00db8db26b1fb3bdf20b8cbb30dd1",
-   "caratteri": 4249,
+   "sha": "d64fcbd8848eac9ff33e1adedeae0d55a08c5775eced5d03b327dd6a8513d908",
+   "caratteri": 4336,
    "email_nascoste": 4,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "sassari",
@@ -1476,6 +1476,17 @@
    "cambiata": false
   },
   {
+   "asl": "regole",
+   "url": "https://www.regione.sardegna.it/servizi/accesso-ai-servizi-on-line/indice-dei-servizi/fascicolo-sanitario-elettronico-2-0",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "regole/1ced7bc4693f.txt",
+   "titolo": "Fascicolo Sanitario Elettronico 2.0 - Regione Autonoma della Sardegna",
+   "sha": "0701bd1a25991f25e8bd97fdd2db3f56e8369edecfb4bc06a822a40a08066e13",
+   "caratteri": 2571,
+   "cambiata": false
+  },
+  {
    "asl": "inps-sardegna",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.170000.170000-elencoStruttureInps.html",
    "controllata": "2026-10-23",
@@ -1691,8 +1702,8 @@
    "http": 200,
    "file": "regione-sardegna/5dae24b1e42b.txt",
    "titolo": "Aiuto - CupWeb",
-   "sha": "6a60c23b78943d2f2c26ef2f791b19bd2eb275b0784abf709b5f624bc8e1ee4a",
-   "caratteri": 19024,
+   "sha": "4dec17bb352d0e87418b147235d41968ca5dc945f401e12fa7f289c133f13325",
+   "caratteri": 19023,
    "link_pdf": [
     {
      "url": "https://manuali.sardegnasalute.it/manuali/Manuale_PRENOTA_ROSSA_CUP.pdf",
@@ -1800,17 +1811,6 @@
    "titolo": "Sardegna Salute - Come fare per - Utilizzare il fascicolo sanitario elettronico",
    "sha": "f1867cfc6e16ad3ea2ef6f5e539f32d92068e764092d27c72575db2d42ada496",
    "caratteri": 7143,
-   "cambiata": false
-  },
-  {
-   "asl": "regione-sardegna",
-   "url": "https://www.regione.sardegna.it/servizi/accesso-ai-servizi-on-line/indice-dei-servizi/fascicolo-sanitario-elettronico-2-0",
-   "controllata": "2026-10-23",
-   "http": 200,
-   "file": "regione-sardegna/1ced7bc4693f.txt",
-   "titolo": "Fascicolo Sanitario Elettronico 2.0 - Regione Autonoma della Sardegna",
-   "sha": "0701bd1a25991f25e8bd97fdd2db3f56e8369edecfb4bc06a822a40a08066e13",
-   "caratteri": 2571,
    "cambiata": false
   },
   {

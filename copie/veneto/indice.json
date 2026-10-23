@@ -1,6 +1,6 @@
 {
  "regione": "veneto",
- "aggiornato": "2026-10-23T13:38:57.971Z",
+ "aggiornato": "2026-10-23T21:05:04.205Z",
  "pagine": [
   {
    "asl": "belluno",
@@ -193,7 +193,7 @@
    "titolo": "Continuità Assistenziale",
    "sha": "55d850051c7b7113e1fd3834cfbebeb835fbf65ac10bf60d18221bf3be1a351e",
    "caratteri": 8343,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "treviso",
@@ -215,7 +215,7 @@
    "titolo": "116117",
    "sha": "2fb5ac99f8373d0b88f42bc55447b420a947e998e2ffd49d3f19489513049519",
    "caratteri": 5284,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "treviso",
@@ -237,7 +237,7 @@
    "titolo": "Ufficio Relazioni con il Pubblico (URP)",
    "sha": "d25ff98af450b771535b73995e869c7237df986ae033f9c1a13386b998379c39",
    "caratteri": 5715,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "treviso",
@@ -265,7 +265,7 @@
    "titolo": "Che cosa si può trovare in una Casa della Comunità",
    "sha": "d232338d16c7ebec79d0f691903106e3ec65f27570141e2620b096408169807e",
    "caratteri": 13851,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "treviso",
@@ -276,7 +276,7 @@
    "titolo": "Ufficio Relazioni con il Pubblico (URP)",
    "sha": "a882d0e32491179feae44c2b4c2303c7747f0114c2100ffe3b74300749a93644",
    "caratteri": 5712,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "treviso",
@@ -298,7 +298,7 @@
    "titolo": "Numeri utili",
    "sha": "fd925c6fe7e47ae8342f97a3ee58db37f36ccd93ae241893028ec720145f3624",
    "caratteri": 3242,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "treviso",
@@ -309,7 +309,7 @@
    "titolo": "Centralini",
    "sha": "eb804053d6bb325ef94e35c5301f5522240238ede7d3d85b73491272b20858cc",
    "caratteri": 3428,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "treviso",
@@ -331,7 +331,7 @@
    "titolo": "Ufficio Cartelle Cliniche Treviso",
    "sha": "d463b4a99bc3d2735be76cdb651515288519ddbdd4d757ec74152d0e9c554cd7",
    "caratteri": 4220,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "treviso",
@@ -342,7 +342,7 @@
    "titolo": "Richiedere dispositivi di assistenza protesica",
    "sha": "c7c14132d6a1928075002d008a5d90b92c62e8acc316f7c101cfcac2a9a0b187",
    "caratteri": 6646,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "treviso",
@@ -375,7 +375,7 @@
    "titolo": "Servizio Programmi Di Screening",
    "sha": "025a5191a99a0ce57b76c2e2f71696178552190a2c579a503dd70c9cba6d2b72",
    "caratteri": 4995,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "treviso",
@@ -386,7 +386,7 @@
    "titolo": "Screening del tumore del colon-retto",
    "sha": "5e9a1dfca709836b1ee1c5746bd4dddffa2e9cb3a722c569bdffd4cb5f59a3b6",
    "caratteri": 8822,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -700,9 +700,9 @@
    "browser": true,
    "http": 200,
    "file": "venezia/7259f23ba486.txt",
-   "titolo": "Azienda ULSS n. 4 Veneto Orientale - Prenotazione esami di laboratorio presso le strutture dell'Azienda Ulss4 \"Veneto Orientale\"",
-   "sha": "639a5afddb6322348a5a2962cc2fba1c554e07dede861388a1a1a61d719c21fe",
-   "caratteri": 3630,
+   "titolo": "Prenotazione esami di laboratorio presso le strutture dell'A",
+   "sha": "6c77e5de6056b83fe18ff4c7613f38247614a291db5815170e35a02e80cf3b87",
+   "caratteri": 3562,
    "cambiata": true
   },
   {
@@ -852,7 +852,7 @@
    "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
    "sha": "6bc2275696536324da914a4390835a8856b32ef9c71aa40dd59c0c5b84156a8f",
    "caratteri": 45,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "rovigo",
@@ -863,7 +863,7 @@
    "titolo": "Homepage - ULSS 5 Polesana",
    "sha": "4187a849d165132d3cc300b2db3855d47f81e6a71b3c3b257061a9ffeb2e9b36",
    "caratteri": 5775,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "rovigo",
@@ -1811,6 +1811,27 @@
    "sha": "cc111780dce71f540895bd0c76b2d5fbe775d2790629346ed67369e8a75c0b25",
    "caratteri": 6973,
    "cambiata": false
+  },
+  {
+   "asl": "regole",
+   "url": "https://salute.regione.veneto.it/fse-e-servizi-online/fascicolo-sanitario-elettronico-regionale",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "regole/e22af149bf27.txt",
+   "titolo": "Fascicolo Sanitario Elettronico regionale | Regione del Veneto",
+   "sha": "55b8befe8b6df489507cd7f549a3ed1fcaa008191c23458682c4e33a540c5f2d",
+   "caratteri": 11323,
+   "link_pdf": [
+    {
+     "url": "https://salute.regione.veneto.it/contents/2026-08/Il%20nuovo%20logo%20SSSR.pptx.pdf?VersionId=7kL2zjvZTHlpMZ.VP.WJPnRpp3IfTUSg",
+     "testo": "Logo SSSR"
+    },
+    {
+     "url": "https://salute.regione.veneto.it/contents/2026-03/Delega%20al%20rilascio%20del%20consenso%20FSE_v.marzo%202021.def_.pdf?VersionId=mm39XsNqqeuJAt.W2OE8B0qWuwjlszOI",
+     "testo": "Delega al rilascio del consenso FSE_v.marzo 2021.def_.pdf"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "inps-veneto",

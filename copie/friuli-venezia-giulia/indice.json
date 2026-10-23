@@ -1,6 +1,6 @@
 {
  "regione": "friuli-venezia-giulia",
- "aggiornato": "2026-10-23T11:56:45.888Z",
+ "aggiornato": "2026-10-23T19:26:19.845Z",
  "pagine": [
   {
    "asl": "gorizia",
@@ -18,7 +18,7 @@
      "testo": "Somministrazione farmaci in contesti extrafamiliari (indicazioni operative)"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "gorizia",
@@ -500,7 +500,7 @@
      "testo": "Asap - Ambulatori Sperimentali Di Assistenza Primaria"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "pordenone",
@@ -618,7 +618,7 @@
      "testo": "Informativa sul trattamento dei dati personali 116117"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "pordenone",
@@ -1144,7 +1144,7 @@
      "testo": "Somministrazione farmaci in contesti extrafamiliari (indicazioni operative)"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trieste",
@@ -1637,7 +1637,7 @@
    "http": 200,
    "file": "trieste/066a533de9ed.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Accesso agli sportelli CUP",
-   "sha": "d8bfed27cea62dfb2855105a059d8efaacce19c12f8a662f6b27b3e078aba4dc",
+   "sha": "3143ca7624f977020956d438f00cdd942172e81e3a680492c956625edd5197a8",
    "caratteri": 15664,
    "link_pdf": [
     {
@@ -2336,9 +2336,9 @@
    "http": 200,
    "file": "udine/dc6df4e8355e.txt",
    "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - Nuovo numero unico per prenotare le vaccinazioni",
-   "sha": "b6c1dee07b7e4aa7a62837a458fd51e663f4953e99ba244984bf180bbb7c0523",
-   "caratteri": 5557,
-   "cambiata": false
+   "sha": "c9bedc652ad66fe224a3a6d4f0bc210dfa1a9fb1ba4a1f58a30a222672820a21",
+   "caratteri": 5558,
+   "cambiata": true
   },
   {
    "asl": "udine",
@@ -2347,15 +2347,15 @@
    "http": 200,
    "file": "udine/af13b12ad9af.txt",
    "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - Attivazione del servizio 116117 dal 13 aprile 2026",
-   "sha": "a038f421f4a25cf4e7f8c90bd98acb8ce063d6f635d6f5ff654b487d41f1f777",
-   "caratteri": 6716,
+   "sha": "99e67366e97d44b12bb1b9775bc429dfe268a53de92a2bbe4eda8cadf55f6398",
+   "caratteri": 6717,
    "link_pdf": [
     {
      "url": "https://asufc.sanita.fvg.it/export/sites/asufc/it/documenti/privacy/informativa_116117.pdf",
      "testo": "informativa_116117 [pdf - 203 KB] (il link apre una nuova finestra)"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "udine",
@@ -2641,6 +2641,19 @@
    "sha": "74db742793a4eab9396d25a65d003c7ab8d819ac7aa8abd40b84a1a01534d4ab",
    "caratteri": 8508,
    "pdf": true,
+   "cambiata": false
+  },
+  {
+   "asl": "regole",
+   "url": "https://sesamo.sanita.fvg.it/",
+   "controllata": "2026-10-23",
+   "browser": true,
+   "http": 200,
+   "finale": "https://sesamo.sanita.fvg.it/sesamo/#/index",
+   "file": "regole/74066a35798d.txt",
+   "titolo": "SESAMO - Piattaforma elettronica di servizi salute in mobilità",
+   "sha": "ad8f0e94fdab9131a0a226edc6b54cf70e5ef04b8642b86e5b7db9c58db480bf",
+   "caratteri": 6208,
    "cambiata": false
   },
   {

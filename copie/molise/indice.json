@@ -1,6 +1,6 @@
 {
  "regione": "molise",
- "aggiornato": "2026-10-23T12:37:04.907Z",
+ "aggiornato": "2026-10-23T20:04:58.505Z",
  "pagine": [
   {
    "asl": "campobasso",
@@ -84,7 +84,7 @@
    "http": 200,
    "file": "campobasso/8ad9d62a827a.txt",
    "titolo": "URP – l’Ufficio relazioni con il pubblico di ASReM – Asrem",
-   "sha": "dd554b7daf1d8573691b9e20195a67c46a6e0bfe61937d03d5c29e6ab25de3ba",
+   "sha": "492b46b74bb922f47a115f9b7211b700304b76d5a9ba0f9295860067519b03d1",
    "caratteri": 13376,
    "link_pdf": [
     {
@@ -562,7 +562,7 @@
    "http": 200,
    "file": "isernia/8ad9d62a827a.txt",
    "titolo": "URP – l’Ufficio relazioni con il pubblico di ASReM – Asrem",
-   "sha": "dd554b7daf1d8573691b9e20195a67c46a6e0bfe61937d03d5c29e6ab25de3ba",
+   "sha": "492b46b74bb922f47a115f9b7211b700304b76d5a9ba0f9295860067519b03d1",
    "caratteri": 13376,
    "link_pdf": [
     {
@@ -854,6 +854,85 @@
    "cambiata": false
   },
   {
+   "asl": "regole",
+   "url": "https://www.asrem.molise.it/servizi-per-il-cittadino/fascicolo-sanitario-elettronico/",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "regole/0e8696534214.txt",
+   "titolo": "Fascicolo Sanitario Elettronico – Asrem",
+   "sha": "4ec1bfccc45d03ac182dbf96be0fd3bc8104f8b1cee9584999760b779ec11252",
+   "caratteri": 25079,
+   "link_pdf": [
+    {
+     "url": "https://www.asrem.molise.it/wp-content/uploads/2024/08/RegioneMolise_InformativaFSE2_0_rev14082024.pdf",
+     "testo": "RegioneMolise_InformativaFSE2_0_rev14082024"
+    },
+    {
+     "url": "https://www.asrem.molise.it/wp-content/uploads/2024/08/50.-Consenso-personale_rev14082024.pdf",
+     "testo": "Consenso personale"
+    },
+    {
+     "url": "https://www.asrem.molise.it/wp-content/uploads/2024/08/50.-Revoca-personale_rev14082024.pdf",
+     "testo": "Revoca personale"
+    },
+    {
+     "url": "https://www.asrem.molise.it/wp-content/uploads/2024/08/51.-Consenso-per-minori_rev14082024.pdf",
+     "testo": "Consenso per minori"
+    },
+    {
+     "url": "https://www.asrem.molise.it/wp-content/uploads/2024/08/51.-Revoca-per-minori_rev14082024.pdf",
+     "testo": "Revoca per minori"
+    },
+    {
+     "url": "https://www.asrem.molise.it/wp-content/uploads/2024/08/52.-Consenso-per-soggetti-sottoposti-a-tutela_rev14082024.pdf",
+     "testo": "Consenso per soggetti sottoposti a tutela"
+    },
+    {
+     "url": "https://www.asrem.molise.it/wp-content/uploads/2024/08/52.-Revoca-per-soggetti-sottoposti-a-tutela_rev14082024.pdf",
+     "testo": "Revoca per soggetti sottoposti a tutela"
+    },
+    {
+     "url": "https://www.asrem.molise.it/wp-content/uploads/2024/02/RegioneMolise_InformativaFSE2_0.pdf",
+     "testo": "Per maggiori dettagli consulta l’informativa e consenso al trattamento dei dati personali. (297.16 KB)"
+    },
+    {
+     "url": "https://www.asrem.molise.it/wp-content/uploads/2022/06/FAQ_FSE.pdf",
+     "testo": "FAQ_FSE"
+    },
+    {
+     "url": "https://www.asrem.molise.it/wp-content/uploads/2024/05/ASReM_Aggiornamento-Cookie-Policy_V.1.0.pdf",
+     "testo": "Cookie Policy"
+    }
+   ],
+   "cambiata": false
+  },
+  {
+   "asl": "regole",
+   "url": "https://www.asrem.molise.it/wp-content/uploads/2024/08/52.-Consenso-per-soggetti-sottoposti-a-tutela_rev14082024.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asrem.molise.it/servizi-per-il-cittadino/fascicolo-sanitario-elettronico/",
+   "http": 200,
+   "file": "regole/1933d3521e28.txt",
+   "titolo": "REGIONE MOLISE",
+   "sha": "783d8941a7c661ba64ed26c65660b94bfc57e305f8ba3a814204dfa38e03f23a",
+   "caratteri": 3362,
+   "pdf": true,
+   "cambiata": false
+  },
+  {
+   "asl": "regole",
+   "url": "https://www.asrem.molise.it/wp-content/uploads/2024/08/52.-Revoca-per-soggetti-sottoposti-a-tutela_rev14082024.pdf",
+   "controllata": "2026-10-23",
+   "da_pagina": "https://www.asrem.molise.it/servizi-per-il-cittadino/fascicolo-sanitario-elettronico/",
+   "http": 200,
+   "file": "regole/b2f058ef22c8.txt",
+   "titolo": "REGIONE MOLISE",
+   "sha": "7a846c35a9d7323db9eb989f4c7b43ecd12d1db82630194af2f370329b08b61f",
+   "caratteri": 2975,
+   "pdf": true,
+   "cambiata": false
+  },
+  {
    "asl": "inps-molise",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.190000.190000-elencoStruttureInps.html",
    "controllata": "2026-10-23",
@@ -1026,59 +1105,6 @@
   },
   {
    "asl": "asrem",
-   "url": "https://www.asrem.molise.it/servizi-per-il-cittadino/fascicolo-sanitario-elettronico/",
-   "controllata": "2026-10-23",
-   "http": 200,
-   "file": "asrem/0e8696534214.txt",
-   "titolo": "Fascicolo Sanitario Elettronico – Asrem",
-   "sha": "4ec1bfccc45d03ac182dbf96be0fd3bc8104f8b1cee9584999760b779ec11252",
-   "caratteri": 25079,
-   "link_pdf": [
-    {
-     "url": "https://www.asrem.molise.it/wp-content/uploads/2024/08/RegioneMolise_InformativaFSE2_0_rev14082024.pdf",
-     "testo": "RegioneMolise_InformativaFSE2_0_rev14082024"
-    },
-    {
-     "url": "https://www.asrem.molise.it/wp-content/uploads/2024/08/50.-Consenso-personale_rev14082024.pdf",
-     "testo": "Consenso personale"
-    },
-    {
-     "url": "https://www.asrem.molise.it/wp-content/uploads/2024/08/50.-Revoca-personale_rev14082024.pdf",
-     "testo": "Revoca personale"
-    },
-    {
-     "url": "https://www.asrem.molise.it/wp-content/uploads/2024/08/51.-Consenso-per-minori_rev14082024.pdf",
-     "testo": "Consenso per minori"
-    },
-    {
-     "url": "https://www.asrem.molise.it/wp-content/uploads/2024/08/51.-Revoca-per-minori_rev14082024.pdf",
-     "testo": "Revoca per minori"
-    },
-    {
-     "url": "https://www.asrem.molise.it/wp-content/uploads/2024/08/52.-Consenso-per-soggetti-sottoposti-a-tutela_rev14082024.pdf",
-     "testo": "Consenso per soggetti sottoposti a tutela"
-    },
-    {
-     "url": "https://www.asrem.molise.it/wp-content/uploads/2024/08/52.-Revoca-per-soggetti-sottoposti-a-tutela_rev14082024.pdf",
-     "testo": "Revoca per soggetti sottoposti a tutela"
-    },
-    {
-     "url": "https://www.asrem.molise.it/wp-content/uploads/2024/02/RegioneMolise_InformativaFSE2_0.pdf",
-     "testo": "Per maggiori dettagli consulta l’informativa e consenso al trattamento dei dati personali. (297.16 KB)"
-    },
-    {
-     "url": "https://www.asrem.molise.it/wp-content/uploads/2022/06/FAQ_FSE.pdf",
-     "testo": "FAQ_FSE"
-    },
-    {
-     "url": "https://www.asrem.molise.it/wp-content/uploads/2024/05/ASReM_Aggiornamento-Cookie-Policy_V.1.0.pdf",
-     "testo": "Cookie Policy"
-    }
-   ],
-   "cambiata": false
-  },
-  {
-   "asl": "asrem",
    "url": "https://www.asrem.molise.it/lazienda/i-distretti-socio-sanitari/cure-domiciliari/cure-domiciliari-distretto-di-termoli/",
    "controllata": "2026-10-23",
    "http": 200,
@@ -1229,32 +1255,6 @@
    "titolo": "Modulo_presentazione_giustificativo_versione_aggiornata",
    "sha": "c59d96530ded59d89b1d91a833134e1b3142e007c8c6a7485c47ea4d5fdb2a9f",
    "caratteri": 2907,
-   "pdf": true,
-   "cambiata": false
-  },
-  {
-   "asl": "asrem",
-   "url": "https://www.asrem.molise.it/wp-content/uploads/2024/08/52.-Consenso-per-soggetti-sottoposti-a-tutela_rev14082024.pdf",
-   "controllata": "2026-10-23",
-   "da_pagina": "https://www.asrem.molise.it/servizi-per-il-cittadino/fascicolo-sanitario-elettronico/",
-   "http": 200,
-   "file": "asrem/1933d3521e28.txt",
-   "titolo": "REGIONE MOLISE",
-   "sha": "783d8941a7c661ba64ed26c65660b94bfc57e305f8ba3a814204dfa38e03f23a",
-   "caratteri": 3362,
-   "pdf": true,
-   "cambiata": false
-  },
-  {
-   "asl": "asrem",
-   "url": "https://www.asrem.molise.it/wp-content/uploads/2024/08/52.-Revoca-per-soggetti-sottoposti-a-tutela_rev14082024.pdf",
-   "controllata": "2026-10-23",
-   "da_pagina": "https://www.asrem.molise.it/servizi-per-il-cittadino/fascicolo-sanitario-elettronico/",
-   "http": 200,
-   "file": "asrem/b2f058ef22c8.txt",
-   "titolo": "REGIONE MOLISE",
-   "sha": "7a846c35a9d7323db9eb989f4c7b43ecd12d1db82630194af2f370329b08b61f",
-   "caratteri": 2975,
    "pdf": true,
    "cambiata": false
   },

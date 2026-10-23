@@ -1,6 +1,6 @@
 {
  "regione": "calabria",
- "aggiornato": "2026-10-23T11:40:39.007Z",
+ "aggiornato": "2026-10-23T19:10:45.732Z",
  "pagine": [
   {
    "asl": "catanzaro",
@@ -455,7 +455,7 @@
    "http": 200,
    "file": "cosenza/fe31bc8fb243.txt",
    "titolo": "Centro Unico di Prenotazione Online - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "e34f055840f42a642e490087c9f62755f4eef72026a7f57711a75286cad2230a",
+   "sha": "805edd46588e3e7f7c3f085ed9d4680f30d89eba6eafefc44e1fa8930af4e3a7",
    "caratteri": 8094,
    "cambiata": true
   },
@@ -531,7 +531,7 @@
    "http": 200,
    "file": "crotone/794ccfdda2f9.txt",
    "titolo": "Assistenza Domiciliare - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "6741cf3c0b17a261a2243213b902edca9668da73b74f10bdcaeae2eff4c60d41",
+   "sha": "fd747325276c829fc8c1a85e92e8aafe5f765d28bb88cc138811bff312d7e4f1",
    "caratteri": 9089,
    "link_pdf": [
     {
@@ -560,9 +560,9 @@
    "http": 200,
    "file": "crotone/4ab485a670df.txt",
    "titolo": "contatti - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "15c3a5bf988237dfa805c128a5060857189cba28589753aaa2c953654fa2278c",
+   "sha": "095b364f946e52861fbe6ffd5a75117f374ea4e01c35d8b84950a7583ac9eb3c",
    "caratteri": 7856,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "crotone",
@@ -874,6 +874,17 @@
    "caratteri": 7381,
    "pdf": true,
    "cambiata": false
+  },
+  {
+   "asl": "regole",
+   "url": "https://www.fascicolosanitario.regione.calabria.it/",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "regole/41c3e058f714.txt",
+   "titolo": "Fascicolo Sanitario Elettronico – Regione Calabria",
+   "sha": "2d9baaffffdcd8a9198ee05893f205cd9180522d41811f6451cde40eb35c44e0",
+   "caratteri": 1756,
+   "cambiata": true
   },
   {
    "asl": "inps-calabria",
@@ -1283,9 +1294,9 @@
    "http": 200,
    "file": "asp-crotone/285c2adcd2fb.txt",
    "titolo": "Contatti - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "4ec97a822ebbd38f16b4cbbe4aa92617e2e0f9c2a2dd7bfea4d9c934d5e4b7ed",
+   "sha": "94aa0cf138d6f6bf74151ae3d57cf8f1870cc6609aea778d464d4dd48dc341e7",
    "caratteri": 4521,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "asp-crotone",
@@ -1311,7 +1322,7 @@
    "http": 200,
    "file": "asp-crotone/7cfbfca8e650.txt",
    "titolo": "Fascicolo sanitario elettronico - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "600f13de8d615ca663604601ab6c1e2cc917b0d94131838f74f9a56953cc3c6a",
+   "sha": "ba6ad1ae91ffaa38db33b080868e942cec974249321f776f3956654789fa91ab",
    "caratteri": 10734,
    "cambiata": true
   },
@@ -1324,7 +1335,7 @@
    "titolo": "Area Sub-Distrettuale di Crotone - Azienda Sanitaria Provinciale di Crotone",
    "sha": "9312b3bd54134f460c8c7eede414e71daf0fca9cc6b890b0c891ce42228ebc38",
    "caratteri": 5230,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asp-crotone",

@@ -1,6 +1,6 @@
 {
  "regione": "umbria",
- "aggiornato": "2026-10-23T13:26:43.889Z",
+ "aggiornato": "2026-10-23T20:53:06.307Z",
  "pagine": [
   {
    "asl": "perugia",
@@ -328,7 +328,7 @@
    "titolo": "Richiedere la documentazione sanitaria - Azienda Ospedaliera Perugia",
    "sha": "6c9d392cafde8087eb462cf58e15299c6a3a7f5becb4076d635add611dc2f106",
    "caratteri": 4838,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "perugia",
@@ -1141,6 +1141,23 @@
    "errore": "file più grande di 5 MB: non copiato"
   },
   {
+   "asl": "regole",
+   "url": "https://www.regione.umbria.it/salute/sanita-digitale/fascicolosanitario",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "regole/25ebbe0fc8cf.txt",
+   "titolo": "Fascicolo Sanitario Elettronico - Regione Umbria",
+   "sha": "50f63d6c9181e3d28ee34eb9fd1798cf205b34562f148265bc445ee21d1de0df",
+   "caratteri": 5568,
+   "link_pdf": [
+    {
+     "url": "https://salute.regione.umbria.it/documenti/informativa.pdf",
+     "testo": "https://salute.regione.umbria.it/documenti/informativa.pdf"
+    }
+   ],
+   "cambiata": false
+  },
+  {
    "asl": "inps-umbria",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.580000.580000-elencoStruttureInps.html",
    "controllata": "2026-10-23",
@@ -1205,7 +1222,7 @@
    "titolo": "Umbria in Salute",
    "sha": "e926294a69414c323e8004d38d2551f4bebebedfbb10dd46276043fd579e7d56",
    "caratteri": 4936,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-umbria",
@@ -1287,23 +1304,6 @@
     {
      "url": "https://insalute.regione.umbria.it/fse-documenti/informativa.pdf",
      "testo": "Leggi l'informativa sulla privacy"
-    }
-   ],
-   "cambiata": false
-  },
-  {
-   "asl": "regione-umbria",
-   "url": "https://www.regione.umbria.it/salute/sanita-digitale/fascicolosanitario",
-   "controllata": "2026-10-23",
-   "http": 200,
-   "file": "regione-umbria/25ebbe0fc8cf.txt",
-   "titolo": "Fascicolo Sanitario Elettronico - Regione Umbria",
-   "sha": "50f63d6c9181e3d28ee34eb9fd1798cf205b34562f148265bc445ee21d1de0df",
-   "caratteri": 5568,
-   "link_pdf": [
-    {
-     "url": "https://salute.regione.umbria.it/documenti/informativa.pdf",
-     "testo": "https://salute.regione.umbria.it/documenti/informativa.pdf"
     }
    ],
    "cambiata": false

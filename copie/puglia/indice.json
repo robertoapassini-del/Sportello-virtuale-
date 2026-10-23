@@ -1,6 +1,6 @@
 {
  "regione": "puglia",
- "aggiornato": "2026-10-23T12:49:41.572Z",
+ "aggiornato": "2026-10-23T20:18:11.500Z",
  "pagine": [
   {
    "asl": "bari",
@@ -165,7 +165,7 @@
    "titolo": "Home - ASL Barletta Andria Trani - PugliaSalute",
    "sha": "4d0111a0812fb54bae549f36893ef7d2019bcdf3de6919dad222dfa7808a98cb",
    "caratteri": 9616,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "barletta-andria-trani",
@@ -231,7 +231,7 @@
    "titolo": "Home - ASL Barletta Andria Trani - PugliaSalute",
    "sha": "592b79a130a2ee67db4369c89f004242ca4f78d544ec0233b492f5e9786fc303",
    "caratteri": 9027,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "barletta-andria-trani",
@@ -729,6 +729,17 @@
    "cambiata": false
   },
   {
+   "asl": "regole",
+   "url": "https://www.sanita.puglia.it/fascicolo-sanitario-elettronico",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "regole/3706a052c57e.txt",
+   "titolo": "Fascicolo Sanitario Elettronico - PugliaSalute",
+   "sha": "9e7641e3dc13522dea615997b70a53ed376c7b09d2a829556b31f713ef0a7a8d",
+   "caratteri": 9787,
+   "cambiata": true
+  },
+  {
    "asl": "inps-puglia",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.090100.090100-elencoStruttureInps.html",
    "controllata": "2026-10-23",
@@ -1040,7 +1051,7 @@
    "titolo": "CUP - ASL Taranto - PugliaSalute",
    "sha": "910ef69b9c1f90e6d0217805a1d44a3cd200fb73a7ec7cf19a271aa8f8f54444",
    "caratteri": 7847,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-taranto",

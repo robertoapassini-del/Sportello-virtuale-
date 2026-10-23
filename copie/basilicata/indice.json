@@ -1,6 +1,6 @@
 {
  "regione": "basilicata",
- "aggiornato": "2026-10-23T11:37:00.047Z",
+ "aggiornato": "2026-10-23T19:07:08.079Z",
  "pagine": [
   {
    "asl": "matera",
@@ -9,8 +9,8 @@
    "http": 200,
    "file": "matera/0293f11dd9e7.txt",
    "titolo": "ASM Matera",
-   "sha": "d1e2160335e7a2b778369dc7809f9ad86a9f3c10bb6680ce0ecd928e22bca32f",
-   "caratteri": 8033,
+   "sha": "617a43bab5661db6dc7f6af1a8fcb32ce3c82e6d55df876fbb2447de511a54c5",
+   "caratteri": 8161,
    "cambiata": true
   },
   {
@@ -48,8 +48,8 @@
    "http": 200,
    "file": "matera/a4a72d01829e.txt",
    "titolo": "Latronico sul Numero europeo Armonizzato - AGR Basilicata",
-   "sha": "4810f51592b2ff3037ea49887a684e799ad2dd1f920a8a08f10e202954062c1a",
-   "caratteri": 5325,
+   "sha": "9b0efa21091a7f7b35ff63a08a5e9e29fdc85ab5fcfbd7510347b29eb179a884",
+   "caratteri": 5288,
    "cambiata": true
   },
   {
@@ -199,7 +199,7 @@
    "titolo": "ASP Basilicata",
    "sha": "0ad814e72e35d60e89086faaadedd49890659d38a5e63572a0172e8d931a5ea8",
    "caratteri": 5195,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "potenza",
@@ -255,8 +255,8 @@
    "http": 200,
    "file": "potenza/a4a72d01829e.txt",
    "titolo": "Latronico sul Numero europeo Armonizzato - AGR Basilicata",
-   "sha": "4810f51592b2ff3037ea49887a684e799ad2dd1f920a8a08f10e202954062c1a",
-   "caratteri": 5325,
+   "sha": "9b0efa21091a7f7b35ff63a08a5e9e29fdc85ab5fcfbd7510347b29eb179a884",
+   "caratteri": 5288,
    "cambiata": true
   },
   {
@@ -266,8 +266,8 @@
    "http": 200,
    "file": "potenza/5dbc77a23557.txt",
    "titolo": "Centro Unico di Prenotazione | Centro Servizi Regione Basilicata - Regione Basilicata",
-   "sha": "9f47f6c6c00b4352759312f3ad0288aca8a4028aa49a20486947271f003e1ea1",
-   "caratteri": 9039,
+   "sha": "ac5d5ebac38ebcaf1ae116799e3f0e6797c0cf81ee4cb6c6563c59f74b3087e5",
+   "caratteri": 9040,
    "cambiata": true
   },
   {
@@ -388,8 +388,8 @@
    "http": 200,
    "file": "potenza/772f6c77a4a7.txt",
    "titolo": "Sanità digitale, nuovi servizi online - Regione Basilicata",
-   "sha": "4ef6ef688f0b0142da4625b1a8f66f49fd0d4db80f3fc06eceaf1deff6b7337a",
-   "caratteri": 11560,
+   "sha": "3a45d22be21a36d0eda0a3681e6452f88770e93668597c82e7f2d330b47cf840",
+   "caratteri": 11552,
    "cambiata": true
   },
   {
@@ -437,7 +437,7 @@
    "controllata": "2026-10-23",
    "da_pagina": "https://www.aspbasilicata.it/come-fare-per/scelta-e-revoca-del-medico-di-famiglia-e-del-pediatra/",
    "http": 0,
-   "errore": "curl: (28) Connection timed out after 60002 milliseconds"
+   "errore": "curl: (28) Connection timed out after 60001 milliseconds"
   },
   {
    "asl": "potenza",
@@ -451,6 +451,17 @@
    "caratteri": 35404,
    "pdf": true,
    "cambiata": false
+  },
+  {
+   "asl": "regole",
+   "url": "https://www.regione.basilicata.it/fascicolo-sanitario-elettronico-2-0/",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "regole/3961077a0e4e.txt",
+   "titolo": "Fascicolo Sanitario Elettronico 2.0 - Regione Basilicata",
+   "sha": "530f0ef4a6848793cb93cec86f72d7fc37b3430afbb2d658e8cd8b31c58e1943",
+   "caratteri": 10085,
+   "cambiata": true
   },
   {
    "asl": "inps-basilicata",
@@ -514,8 +525,8 @@
    "http": 200,
    "file": "regione-basilicata/2f606e3336a5.txt",
    "titolo": "Fanelli: “CUP, attiva prenotazione online delle prestazioni\" - Regione Basilicata",
-   "sha": "2c74a7d60201b8c9e92130219e8ba3cfc11fab1a950636bef8e7c9e2e70c1f55",
-   "caratteri": 12181,
+   "sha": "8eb38eabf07522305b7928bd80ef67940fc1ebe794b58909617a24432bd39ef1",
+   "caratteri": 12169,
    "cambiata": true
   },
   {
@@ -526,8 +537,8 @@
    "finale": "https://www.regione.basilicata.it/privacy/",
    "file": "regione-basilicata/8f50bf0e199f.txt",
    "titolo": "Trattamento dati personali e privacy - Regione Basilicata",
-   "sha": "c4c1f163faf133c2b94ca4924b05dc22335b94b16cb10617dcc05ef7ade1bf99",
-   "caratteri": 16241,
+   "sha": "89b30cf1a36cc196cc81f6dd97925114364faacc62f864edf6025a6837c0cc38",
+   "caratteri": 16249,
    "link_pdf": [
     {
      "url": "https://www.regione.basilicata.it/wp-content/uploads/2024/12/Privacy-Atto-designazione-responsabile-protezione-dati.pdf",
@@ -592,8 +603,8 @@
    "finale": "https://www.regione.basilicata.it/?temi-spp=servizi-online",
    "file": "regione-basilicata/24e95f5e1ed6.txt",
    "titolo": "Servizi online - Regione Basilicata",
-   "sha": "769e3741e6908ef6582c33098a9a9db3f665d8cc7b3dff16ae56a105f8680912",
-   "caratteri": 8991,
+   "sha": "1298be8752f116aff4d7c351e94947bd01100d02bbee8616c75b0e48c8f15f82",
+   "caratteri": 8988,
    "cambiata": true
   },
   {
@@ -606,17 +617,6 @@
    "sha": "ce1e7cfb5c6216bbf842d6ff093aada4da0127b23947ab1898d2ee28b6781cfc",
    "caratteri": 8036,
    "cambiata": false
-  },
-  {
-   "asl": "regione-basilicata",
-   "url": "https://www.regione.basilicata.it/fascicolo-sanitario-elettronico-2-0/",
-   "controllata": "2026-10-23",
-   "http": 200,
-   "file": "regione-basilicata/3961077a0e4e.txt",
-   "titolo": "Fascicolo Sanitario Elettronico 2.0 - Regione Basilicata",
-   "sha": "d005830fc37bf03edcebceb52af0f23012636289643fcacb8206bd169cde16be",
-   "caratteri": 10097,
-   "cambiata": true
   },
   {
    "asl": "regione-basilicata",

@@ -1,6 +1,6 @@
 {
  "regione": "emilia-romagna",
- "aggiornato": "2026-10-23T11:51:49.208Z",
+ "aggiornato": "2026-10-23T19:21:33.226Z",
  "pagine": [
   {
    "asl": "bologna",
@@ -9,8 +9,8 @@
    "http": 200,
    "file": "bologna/52ee1bcfe6ff.txt",
    "titolo": "Home page — Azienda USL di Bologna",
-   "sha": "ef839b3a1692a7e6cb998b200813f0a1c5abfffac6f768f66c6f7c0738f93582",
-   "caratteri": 4212,
+   "sha": "d9fa3c70eaf65da217b90efde598b8bdd69c106150f8256e8633d4c4999656f3",
+   "caratteri": 4208,
    "link_pdf": [
     {
      "url": "https://www.ausl.bologna.it/asl-bologna/staff/socs/socs-trasparenza/organigramma-statico/ORG.pdf",
@@ -21,7 +21,7 @@
      "testo": "Cookie policy"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "bologna",
@@ -1029,9 +1029,9 @@
    "http": 200,
    "file": "parma/48b61e81aa33.txt",
    "titolo": "AUSL",
-   "sha": "eb2fd758a047141629fb5194334fb1a377ac49d25e1153d8d1d186b16f819356",
-   "caratteri": 10576,
-   "cambiata": false
+   "sha": "5333506335a2366c30eb8f3338572f9d452e2a07a237f453629a0cb0caa274f2",
+   "caratteri": 10586,
+   "cambiata": true
   },
   {
    "asl": "parma",
@@ -1643,9 +1643,9 @@
    "http": 200,
    "file": "reggio-emilia/accd7fd8e449.txt",
    "titolo": "Home Page - AUSL RE",
-   "sha": "03696f198c5d3411aa3e842888d1229ae999bdb7bd8950651d2f2417956a9ab6",
-   "caratteri": 10901,
-   "cambiata": false
+   "sha": "f08e4e8d27410bce8b83d86619a7ae67cf11348fbd4f476ad430aeef02138245",
+   "caratteri": 10964,
+   "cambiata": true
   },
   {
    "asl": "reggio-emilia",
@@ -1999,6 +1999,17 @@
   },
   {
    "asl": "regole",
+   "url": "https://salute.regione.emilia-romagna.it/fascicolo-sanitario-elettronico-2-0",
+   "controllata": "2026-10-23",
+   "http": 200,
+   "file": "regole/1c51603487a6.txt",
+   "titolo": "Fascicolo Sanitario Elettronico 2.0 — Salute",
+   "sha": "01b1ed4f4c2d5290a831d46339390ab6e9716efaf2359f086634604844fa12c7",
+   "caratteri": 4327,
+   "cambiata": false
+  },
+  {
+   "asl": "regole",
    "url": "https://salute.regione.emilia-romagna.it/campagne/tempi-dattesa-per-visite-ed-esami",
    "controllata": "2026-10-23",
    "http": 200,
@@ -2158,9 +2169,9 @@
    "http": 200,
    "file": "regione-emilia-romagna/4a532d4d1cff.txt",
    "titolo": "Salute",
-   "sha": "e8ca017269043ce43dca34a6d305e91ad0fbc723fea85f5b914257ea8fb3cf9e",
-   "caratteri": 7002,
-   "cambiata": false
+   "sha": "e023ed6d1831a87795a1d4d75feeaf3c5cfdd45305dc65279872f7a3920e8869",
+   "caratteri": 6666,
+   "cambiata": true
   },
   {
    "asl": "regione-emilia-romagna",
@@ -2521,7 +2532,7 @@
    "titolo": "Home",
    "sha": "dabf1ef90f2dfd563ac19520e19f3b53da5cacff7118f26132594b1f145099a5",
    "caratteri": 14578,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ausl-imola",
