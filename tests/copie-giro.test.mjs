@@ -56,10 +56,13 @@ const PAGINE = {
   '/inps-fonte': `<html><head><title>Riforma della disabilità</title></head><body><p>${lungo}</p></body></html>`,
   '/inps-pagina': `<html><head><title>Province della riforma</title></head><body><p>${lungo}</p></body></html>`,
   '/vecchia-fonte': `<html><head><title>Pagina di fonti.json</title></head><body><p>${lungo}</p></body></html>`,
+  '/tutela': `<html><head><title>Percorso di tutela</title></head><body><p><a href="/modulo-tutela.pdf">Scarica il modulo</a> · <a href="/delibera-12.pdf">Delibera n. 12</a> · <a href="https://altro-sito.example/modulo.pdf">Modulo di un altro sito</a></p><p>${lungo}</p></body></html>`,
   '/nazionale': `<html><head><title>Numero nazionale</title></head><body><p>${lungo}</p></body></html>`,
 };
 const FILE = {
   '/modulo.pdf': pdf('Modulo di reclamo URP tel. 0577 535222'),
+  '/modulo-tutela.pdf': pdf('Istanza di attivazione del percorso di tutela'),
+  '/delibera-12.pdf': pdf('Delibera numero 12'),
   '/allegato': pdf('Allegato alla delibera'), // un PDF dietro un indirizzo senza «.pdf»
   '/grande.pdf': Buffer.concat([pdf('Troppo grande'), Buffer.alloc(5 * 1024 * 1024 + 10, 32)]),
 };
@@ -89,7 +92,7 @@ function sito() {
     asl: [{
       id: 'centro', site_url: `${base}/asl`,
       phones: [{ number: '0577 535111', url: `${base}/telefono` }],
-      contacts: [{ title: 'URP', url: `${base}/urp` }],
+      contacts: [{ title: 'URP', url: `${base}/urp` }, { title: 'Tutela', url: `${base}/tutela` }],
       scelta_medico: { how: '…', url: `${base}/medico` },
       pagine: [{ tipo: 'tutela', url: `${base}/modulo.pdf` }, { tipo: 'tutela', url: `${base}/allegato` }, { tipo: 'cartelle', url: `${base}/grande.pdf` }, { tipo: 'cartelle', url: `${base}/sparita` }],
     }],
@@ -162,6 +165,17 @@ test('un giro di copie.mjs su pagine finte', { skip: !conCurl && 'manca curl' },
   }
   assert.equal(indice(out, 'prova').find((p) => p.url === `${base}/sparita`).http, 404);
 
+  // I PDF linkati da una pagina: tutti nell'indice (stesso dominio); il modulo si copia subito, la delibera no.
+  const tutela = indice(out, 'prova').find((p) => p.url === `${base}/tutela`);
+  assert.deepEqual(tutela.link_pdf.map((l) => l.url), [`${base}/modulo-tutela.pdf`, `${base}/delibera-12.pdf`]);
+  assert.equal(tutela.link_pdf[0].testo, 'Scarica il modulo');
+  assert.ok(!richieste.includes('/delibera-12.pdf'), 'una delibera linkata non si scarica');
+  if (conPdftotext || /l'ha fatto pdf\.js/.test(log)) {
+    const modulo = indice(out, 'prova').find((p) => p.url === `${base}/modulo-tutela.pdf`);
+    assert.equal(modulo.da_pagina, `${base}/tutela`);
+    assert.match(copia(out, 'prova', `${base}/modulo-tutela.pdf`), /percorso di tutela/);
+  }
+
   // Cartelle: via quelle delle aziende che non ci sono più, restano le altre.
   assert.ok(!fs.existsSync(path.join(out, 'prova/asl-vecchia')));
   assert.ok(!fs.existsSync(path.join(out, 'nuova/asl-sparita')));
@@ -173,6 +187,8 @@ test('un giro di copie.mjs su pagine finte', { skip: !conCurl && 'manca curl' },
   await giro(out, { COPIE_SENZA_PDF: '1' });
   assert.equal(indice(out, 'prova').find((p) => p.url === `${base}/modulo.pdf`).nota, 'file, non controllato');
   assert.ok(!richieste.slice(prima).includes('/modulo.pdf'), 'senza pdftotext un .pdf non si scarica');
+  assert.ok(!richieste.slice(prima).includes('/modulo-tutela.pdf'), 'senza chi fa il testo, i PDF linkati non si seguono');
+  assert.ok(!indice(out, 'prova').some((p) => p.url === `${base}/modulo-tutela.pdf`));
   assert.equal(indice(out, 'prova').find((p) => p.url === `${base}/allegato`).nota, 'file, non controllato');
 
   // Un giro senza pdftotext ma con pdf.js (tools/pdf-testo.mjs): i PDF si copiano lo stesso.

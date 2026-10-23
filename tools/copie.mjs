@@ -172,6 +172,27 @@ function scopri(html, base) {
   return [...trovati];
 }
 
+// I PDF linkati da una pagina copiata, sullo stesso sito (o su un altro sito dello stesso dominio, es.
+// asl.regione.it e regione.it): si scrivono nell'indice («link_pdf», al massimo 30), così chi scrive i dati sa dove
+// sono i moduli senza cercarli. Quelli che sembrano moduli o guide per il cittadino (UTILI) si copiano anche
+// subito, al massimo 5 per pagina e solo se c'è chi fa il testo dei PDF.
+const UTILI = /tutela|modul|istanza|domanda|carta.dei.servizi|guida|liste.d.?attesa|tempi.d.?attesa|screening|prenota/i;
+const MAX_LINK_PDF = 30;
+const MAX_PDF_SEGUITI = 5;
+function linkPdf(html, base) {
+  const dominio = (u) => u.hostname.replace(/^www\./, '').split('.').slice(-2).join('.');
+  const da = new URL(base);
+  const trovati = new Map();
+  for (const [, href, testo] of html.matchAll(/<a\b[^>]*href="([^"#]+)"[^>]*>([\s\S]*?)<\/a>/gi)) {
+    let u;
+    try { u = new URL(href.replace(/&amp;/g, '&'), base); } catch { continue; }
+    if (!/^https?:$/.test(u.protocol) || !PDF.test(u.pathname) || dominio(u) !== dominio(da) || /login|accedi|area.riservata/i.test(u.href)) continue;
+    if (!trovati.has(u.href)) trovati.set(u.href, toText(testo).replace(/\s+/g, ' ').trim().slice(0, 120));
+    if (trovati.size >= MAX_LINK_PDF) break;
+  }
+  return [...trovati].map(([url, testo]) => ({ url, testo }));
+}
+
 const regioni = read('data/regioni/index.json');
 let totale = 0; let ok = 0; let cambiate = 0; const problemi = []; const cartelleTolte = [];
 
@@ -241,6 +262,7 @@ for (const { reg, asl } of daCopiare) {
 
   for (const a of asl.asl) {
     const urls = new Set();
+    const seguiti = new Map(); // PDF seguiti da una pagina (link_pdf): url del PDF → url della pagina
     for (const k of ['site_url', 'info_url', 'form_url', 'portal_url', 'guardia_medica_url', 'pua_url']) if (a[k]) urls.add(a[k]);
     if (a.scelta_medico && a.scelta_medico.url) urls.add(a.scelta_medico.url);
     for (const c of [...(a.phones || []), ...(a.contacts || []), ...(a.pagine || [])]) if (c.url) urls.add(c.url);
@@ -249,7 +271,7 @@ for (const { reg, asl } of daCopiare) {
       if (a.fonti && giaCopiati.has(url)) continue;
       giaCopiati.add(url);
       totale++;
-      const voce = { asl: a.id, url, controllata: new Date().toISOString().slice(0, 10) };
+      const voce = { asl: a.id, url, controllata: new Date().toISOString().slice(0, 10), da_pagina: seguiti.get(url) };
       if (SKIP.test(url) && !(CON_PDF && PDF.test(url))) { voce.nota = 'file, non controllato'; pagine.push(voce); continue; }
       let r = scarica(url, PDF.test(url) ? MAX_PDF : undefined);
       if (r.http === 200 && /html/i.test(r.type || '') && VUOTA(toText(r.body)) && !ANTIROBOT.test(r.body)) {
@@ -280,6 +302,11 @@ for (const { reg, asl } of daCopiare) {
         voce.file = nome; voce.titolo = titolo; voce.sha = sha(testo); voce.caratteri = testo.length;
         if (t.pdf) voce.pdf = true;
         if (t.email) voce.email_nascoste = t.email;
+        if (!t.pdf) {
+          const lp = linkPdf(r.body, r.finale || url);
+          if (lp.length) voce.link_pdf = lp;
+          if (CON_PDF) for (const l of lp.filter((x) => UTILI.test(x.url) || UTILI.test(x.testo)).slice(0, MAX_PDF_SEGUITI)) if (!urls.has(l.url)) { urls.add(l.url); seguiti.set(l.url, url); }
+        }
         const p = primaPerUrl.get(url);
         voce.cambiata = !p || p.sha !== voce.sha;
         if (p && p.sha !== voce.sha) cambiate++;
@@ -287,7 +314,7 @@ for (const { reg, asl } of daCopiare) {
       } else if (r.http === 200 && (seiPdf(r) || SKIP.test(r.finale || url))) {
         voce.nota = 'file, non controllato'; // un file (anche un PDF dietro un indirizzo senza «.pdf») senza pdftotext
       } else {
-        problemi.push(`${reg.id}/${a.id}: ${r.http || r.errore} ${url}`);
+        problemi.push(`${reg.id}/${a.id}: ${r.http || r.errore} ${url}${voce.da_pagina ? ` (link nella pagina ${voce.da_pagina})` : ''}`);
       }
       pagine.push(voce);
       await sleep(PAUSA_MS);

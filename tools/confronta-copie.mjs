@@ -26,6 +26,7 @@
 // Codici di uscita: 0 nessun problema (con --noti: nessun problema che blocca), 3 problemi (con --noti: almeno
 // un problema nuovo su un dato cambiato), 2 mancano le copie o gli argomenti sono sbagliati, 1 il programma si rompe.
 // Con --noti un url nuovo senza copia non blocca: la copia si fa dopo l'unione (tools/copie-se-serve.sh).
+import { cifre, regexNumero } from './cerca-numero.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
@@ -61,12 +62,6 @@ if (ignote.length) { console.error(`Regioni sconosciute: ${ignote.join(', ')}`);
 const regioni = scelte.length ? indice.regioni.filter((r) => scelte.includes(r.id)) : tutte;
 const conNazionali = !scelte.length || scelte.includes('nazionali');
 
-// Cifre del numero, con separatori qualsiasi tra l'una e l'altra (spazi, punti, trattini, barre…).
-const cifre = (numero) => String(numero).replace(/\D/g, '');
-const regexNumero = (numero) => {
-  const c = cifre(numero);
-  return c ? new RegExp(`(?<!\\d)${c.split('').join('[^\\d\\n]{0,3}')}(?!\\d)`) : null;
-};
 // Orari HH:MM (anche 8.30 o 8,30) di un testo, scritti come «8:30».
 const orari = (s) => [...new Set([...String(s || '').matchAll(/(?<!\d[:.,]?)(\d{1,2})[:.,](\d{2})(?![\d:.,]?\d)/g)]
   .filter(([, h, m]) => +h < 24 && +m < 60).map(([, h, m]) => `${+h}:${m}`))];

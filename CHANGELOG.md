@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 23/10/2026 — Copie: i link ai PDF delle pagine; numeri col +39
+- `tools/copie.mjs`: per ogni pagina copiata l'indice ha i link ai PDF dello stesso dominio (`link_pdf`, con il testo del link). Quelli che sembrano moduli o guide (tutela, modulo, istanza, carta dei servizi, liste d'attesa, screening) si copiano subito, al massimo 5 per pagina. Prima i moduli di tutela linkati nelle pagine non si trovavano senza il motore di ricerca (terzo giro sulle regioni). Test in `tests/copie-giro.test.mjs`.
+- Errore trovato: `tools/confronta-copie.mjs` non trovava un numero scritto con il prefisso attaccato (ASL Roma 3: «+390656481»). Ora la ricerca è in `tools/cerca-numero.mjs`, con `tests/cerca-numero.test.mjs`.
+
 ## 22/10/2026 — Copie: i PDF si leggono anche senza pdftotext
 - `tools/pdf-testo.mjs` (nuovo): se sul server manca `pdftotext`, `tools/copie.mjs` fa il testo dei PDF con pdf.js 4.10.38, scaricato da npm la prima volta e usato solo se l'impronta sha512 è giusta. Gira in un processo a parte, fermato dopo 60 secondi. Così poppler-utils non serve più per forza: basta unire la pull request.
 - Errore trovato provando: pdf.js scrive i suoi avvisi su stdout, e il testo del PDF non si leggeva. Ora gli avvisi vanno su stderr; `tests/copie-giro.test.mjs` fa un giro senza pdftotext e controlla il testo del PDF.
