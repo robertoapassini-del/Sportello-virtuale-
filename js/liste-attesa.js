@@ -104,7 +104,8 @@ function aspSteps(a) {
 
   let sendBtn;
   if (a.letter_mode === 'portal') {
-    sendBtn = `<a class="btn primary" href="${esc(a.portal_url)}" target="_blank" rel="noopener">💻 Vai al sito dell'${aslLabel()}</a>`;
+    // portal_label: di chi è il portale, se non è il sito dell'azienda (Lazio: «sito della Regione (Salute Lazio)»).
+    sendBtn = `<a class="btn primary" href="${esc(a.portal_url)}" target="_blank" rel="noopener">💻 Vai al ${esc(a.portal_label || `sito dell'${aslLabel()}`)}</a>`;
   } else if (a.letter_mode === 'official_form') {
     sendBtn = '<button type="button" class="btn primary" data-go="letter">✍️ Ti aiutiamo a compilare il modulo</button>';
   } else {

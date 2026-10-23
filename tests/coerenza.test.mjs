@@ -79,6 +79,9 @@ const CAMPI_MODULO = {
     ...['channel', 'letter_mode', 'how_to', 'documents_required', 'what_next', 'notes', 'details', 'emails', 'sources', 'phones', 'last_verified']
       .filter((k) => !(k in a) || a[k] === null || a[k] === ''),
     ...(a.letter_mode === 'portal' && !a.portal_url ? ['portal_url'] : []),
+    // Il pulsante dice «Vai al sito dell'ASL»: se il portale è su un altro sito (Lazio: Salute Lazio, della Regione), serve portal_label.
+    ...(a.letter_mode === 'portal' && a.portal_url && a.site_url && !a.portal_label
+      && new URL(a.portal_url).hostname.replace(/^www\./, '') !== new URL(a.site_url).hostname.replace(/^www\./, '') ? ['portal_label (il portale non è sul sito dell\'azienda)'] : []),
     ...(a.letter_mode === 'official_form' && !(a.form_url && (a.form_fields || []).length) ? ['form_url e form_fields'] : []),
     ...(a.letter_mode && a.letter_mode !== 'portal' && !a.send_to && !a.pec ? ['send_to o pec'] : []),
   ],

@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 23/10/2026 — Lazio: PEC dell'ASL Roma 2; liste d'attesa, cartella clinica, assistenza a casa e cure palliative accese
+- `data/regioni/lazio/asl.json`, zona Roma 2: PEC protocollo.generale@pec.aslroma2.it. Fonti: PDF dell'ASL «Modulo mancata disdetta» (https://www.aslroma2.it/attachments/Documenti/CUP/Modulo%20mancata%20disdetta.pdf) e elenco PEC delle ASL della Regione Lazio (2021), copie del 23/10/2026. Era l'ultima zona senza indirizzo.
+- `data/regioni/index.json`: nel Lazio accese liste d'attesa, cartella clinica, assistenza a casa e cure palliative.
+- Errore trovato: nel Lazio la richiesta per le liste d'attesa si fa sul portale della Regione (Salute Lazio), ma il pulsante diceva «Vai al sito dell'ASL». Ora c'è il campo `portal_label` (`js/liste-attesa.js`); `tests/coerenza.test.mjs` lo chiede quando il portale non è sul sito dell'azienda, e `tests/browser.cjs` controlla il pulsante.
+
 ## 23/10/2026 — Friuli-Venezia Giulia, Piemonte, Lazio, Marche, Sardegna: quarto giro, pagine da copiare
 - Solo indirizzi in `pagine[]` (35 nuovi), trovati con il motore di ricerca sui domini ufficiali (aziende, Regioni, inps.it, normattiva.it). Nessun numero, PEC, email o regola presi dagli estratti: si scrivono dopo la copia del server. Per ogni azienda una riga nel `todo` dice cosa deve provare la pagina.
 - ASUFC (Udine): programma attuativo 2026 sui tempi di attesa (PDF) e pagina del CUP di Udine, per «what_next» del diritto di garanzia (con il regolamento DDG 706/2024 già in `pagine`).
