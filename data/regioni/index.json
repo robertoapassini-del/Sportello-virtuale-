@@ -8,7 +8,7 @@
     { "id": "campania", "name": "Campania", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili", "invalidita", "cartella-clinica", "assistenza-domiciliare"] },
     { "id": "emilia-romagna", "name": "Emilia-Romagna", "attiva": true, "asl_label": "AUSL", "moduli": ["numeri-utili", "invalidita", "cartella-clinica", "medico-famiglia", "assistenza-domiciliare", "cure-palliative"] },
     { "id": "friuli-venezia-giulia", "name": "Friuli-Venezia Giulia", "attiva": true, "asl_label": "Azienda sanitaria", "moduli": ["numeri-utili", "invalidita", "medico-famiglia"] },
-    { "id": "lazio", "name": "Lazio", "in": "nel Lazio", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili", "invalidita"] },
+    { "id": "lazio", "name": "Lazio", "in": "nel Lazio", "attiva": true, "asl_label": "ASL", "moduli": ["numeri-utili", "invalidita", "liste-attesa", "cartella-clinica", "assistenza-domiciliare", "cure-palliative"] },
     { "id": "liguria", "name": "Liguria", "attiva": true, "asl_label": "ATS", "moduli": ["numeri-utili", "invalidita", "medico-famiglia", "liste-attesa", "cartella-clinica", "assistenza-domiciliare", "cure-palliative"] },
     { "id": "lombardia", "name": "Lombardia", "attiva": true, "asl_label": "ATS", "moduli": ["numeri-utili", "invalidita"] },
     { "id": "marche", "name": "Marche", "in": "nelle Marche", "attiva": true, "asl_label": "AST", "moduli": ["numeri-utili", "invalidita", "cartella-clinica", "medico-famiglia", "assistenza-domiciliare", "cure-palliative"] },

@@ -486,8 +486,15 @@ async function erroriCollegati(page, dove, problemi) {
           await segui(page, percorsi[m].passi);
           dove = `${base} risultato`;
           await guarda();
+          // Liste d'attesa con richiesta su un portale (Lazio: Salute Lazio): niente lettera, il pulsante porta al portale
+          // e dice di chi è (portal_label; senza, «sito dell'<sigla>»).
+          const x = { ...a, ...(zona || {}) };
+          const portale = m === 'liste-attesa' && x.letter_mode === 'portal' ? page.locator(`#app a.btn.primary[href="${x.portal_url}"]`).first() : null;
           const b = page.locator('#app [data-go="letter"]').first();
-          if (!(await b.count())) problemi.push(`${dove}: manca il pulsante della lettera`);
+          if (portale) {
+            if (!(await portale.count())) problemi.push(`${dove}: manca il pulsante del portale ${x.portal_url}`);
+            else if (x.portal_label && !(await portale.innerText()).includes(x.portal_label)) problemi.push(`${dove}: il pulsante del portale non dice «${x.portal_label}»`);
+          } else if (!(await b.count())) problemi.push(`${dove}: manca il pulsante della lettera`);
           else {
             await b.click();
             await page.waitForTimeout(300);

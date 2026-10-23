@@ -210,6 +210,7 @@
    "channel": "cup",
    "letter_mode": "portal",
    "portal_url": "https://salutelazio.it/it/pass-di-garanzia",
+   "portal_label": "sito della Regione (Salute Lazio)",
    "how_to": "Prenota prima al CUP: allo sportello, al call center ReCUP o online. Se nella tua zona non c'è posto nei tempi della ricetta, ti dicono che hai diritto al «Pass di garanzia» e ti danno un numero. Poi attiva il Pass online, sul sito Salute Lazio della Regione, con SPID o CIE. Puoi chiederlo e attivarlo anche allo sportello CUP o al ReCUP.",
    "documents_required": [
     "Codice fiscale",
@@ -425,6 +426,7 @@
    "channel": "cup",
    "letter_mode": "portal",
    "portal_url": "https://salutelazio.it/it/pass-di-garanzia",
+   "portal_label": "sito della Regione (Salute Lazio)",
    "how_to": "Prenota prima al CUP: allo sportello, al call center ReCUP o online. Se nella tua zona non c'è posto nei tempi della ricetta, ti dicono che hai diritto al «Pass di garanzia» e ti danno un numero. Poi attiva il Pass online, sul sito Salute Lazio della Regione, con SPID o CIE. Puoi chiederlo e attivarlo anche allo sportello CUP o al ReCUP.",
    "documents_required": [
     "Codice fiscale",
@@ -676,6 +678,7 @@
    "channel": "cup",
    "letter_mode": "portal",
    "portal_url": "https://salutelazio.it/it/pass-di-garanzia",
+   "portal_label": "sito della Regione (Salute Lazio)",
    "how_to": "Prenota prima al CUP: allo sportello, al call center ReCUP o online. Se nella tua zona non c'è posto nei tempi della ricetta, ti dicono che hai diritto al «Pass di garanzia» e ti danno un numero. Poi attiva il Pass online, sul sito Salute Lazio della Regione, con SPID o CIE. Puoi chiederlo e attivarlo anche allo sportello CUP o al ReCUP.",
    "documents_required": [
     "Codice fiscale",
@@ -1131,10 +1134,19 @@
     {
      "label": "ASL Roma 3 – Liste di attesa e percorsi di tutela",
      "url": "https://www.aslroma3.it/amministrazione-trasparente/liste-attesa-new/"
+    },
+    {
+     "label": "ASL Roma 2 – Modulo per la mancata disdetta (PDF): PEC dell'azienda, protocollo.generale@pec.aslroma2.it",
+     "url": "https://www.aslroma2.it/attachments/Documenti/CUP/Modulo%20mancata%20disdetta.pdf"
+    },
+    {
+     "label": "Regione Lazio – Elenco indirizzi PEC delle ASL (PDF, 2021)",
+     "url": "https://www.regione.lazio.it/sites/default/files/2021-03/Elenco%20indirizzi%20PEC%20ASL.pdf"
     }
    ],
    "last_verified": "2026-10-23",
    "todo": [
+    "Zona Roma 2: PEC protocollo.generale@pec.aslroma2.it, scritta nel PDF dell'ASL «Modulo mancata disdetta» (copia del 23/10/2026, lazio/asl-roma2/23eff03f38e7.txt) e nell'elenco PEC delle ASL della Regione Lazio (2021, lazio/roma/a33e76030bd7.txt). Manca ancora un'email dell'URP di Roma 2: la pagina URP ha solo telefoni e indirizzo.",
     "CUP: tutte e sei le ASL rimandano al ReCUP regionale 06 9939 e agli sportelli CUP; nessun numero CUP proprio per i cittadini.",
     "Guardia medica: la pagina dell'ASL Roma 3 e le FAQ dell'ASL Roma 5 riportano ancora il vecchio numero 06 58526811 accanto al 116117: non usato.",
     "ASL Roma 2, Roma 5 e Roma 6: nelle pagine copiate non c'è un centralino generale.",
@@ -1242,6 +1254,7 @@
    "channel": "cup",
    "letter_mode": "portal",
    "portal_url": "https://salutelazio.it/it/pass-di-garanzia",
+   "portal_label": "sito della Regione (Salute Lazio)",
    "how_to": "Prenota prima al CUP: allo sportello, al call center ReCUP o online. Se nella tua zona non c'è posto nei tempi della ricetta, ti dicono che hai diritto al «Pass di garanzia» e ti danno un numero. Poi attiva il Pass online, sul sito Salute Lazio della Regione, con SPID o CIE. Puoi chiederlo e attivarlo anche allo sportello CUP o al ReCUP.",
    "documents_required": [
     "Codice fiscale",
@@ -1284,7 +1297,8 @@
       "Roma: municipi IV, V, VI, VII, VIII e IX"
      ],
      "nome_lettera": "ASL Roma 2",
-     "site_url": "https://www.aslroma2.it"
+     "site_url": "https://www.aslroma2.it",
+     "pec": "protocollo.generale@pec.aslroma2.it"
     },
     {
      "id": "roma3",
@@ -1602,6 +1616,7 @@
    "channel": "cup",
    "letter_mode": "portal",
    "portal_url": "https://salutelazio.it/it/pass-di-garanzia",
+   "portal_label": "sito della Regione (Salute Lazio)",
    "how_to": "Prenota prima al CUP: allo sportello, al call center ReCUP o online. Se nella tua zona non c'è posto nei tempi della ricetta, ti dicono che hai diritto al «Pass di garanzia» e ti danno un numero. Poi attiva il Pass online, sul sito Salute Lazio della Regione, con SPID o CIE. Puoi chiederlo e attivarlo anche allo sportello CUP o al ReCUP.",
    "documents_required": [
     "Codice fiscale",
