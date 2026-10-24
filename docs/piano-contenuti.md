@@ -45,10 +45,10 @@ L'ordine viene da quanto si cercano (Google Trends, `ricerche-frequenti.md` punt
 
 | Tema | Perché | Area |
 |---|---|---|
-| Pronto soccorso: quando andare, i codici, il ticket | 1,6 volte «legge 104», solo in Numeri utili | nuova: Urgenze |
-| Guardia medica e 116117: quando, come, dove | 1,4 volte «legge 104», picchi a Natale e Ferragosto | nuova: Urgenze |
-| Certificato di malattia per il lavoro | 0,2, ma tutto l'anno | nuova: Lavoro e malattia |
-| Visita fiscale: fasce orarie, se non sei a casa | 0,2 | nuova: Lavoro e malattia |
+| Pronto soccorso: quando andare, i codici, il ticket | 1,6 volte «legge 104», solo in Numeri utili | nuova: Urgenze. Aspetta la copia dell'allegato dell'accordo Stato-Regioni e del comma 796 della L. 296/2006 (salute.gov.it ha una protezione anti-robot) |
+| Guardia medica e 116117: quando, come, dove | 1,4 volte «legge 104», picchi a Natale e Ferragosto | nuova: Urgenze. Serve una fonte nazionale che si copi (salute.gov.it no): l'accordo dei medici di medicina generale, o le pagine delle ASL già copiate |
+| Certificato di malattia per il lavoro | 0,2, ma tutto l'anno | **fatto il 24/10/2026**: `certificato-malattia/`, area «Malattia e lavoro» |
+| Visita fiscale: fasce orarie, se non sei a casa | 0,2 | **fatto il 24/10/2026**: `visita-fiscale/` |
 | Link della Regione per CUP e cambio medico online | ricerche «cup + regione», «cambio medico online» | dati regionali |
 
 ### Secondo giro: domande frequenti, con una pagina vicina
@@ -97,3 +97,16 @@ ordine:
 
 **Fatto il 24/10/2026:** il server copia anche le fonti delle regole nazionali e le pagine dei temi nuovi
 (`data/fonti-nazionali.json`). Le pagine del primo giro si scrivono quando arrivano le copie.
+
+## 5. Fonti nazionali da sistemare (prima copia, 24/10/2026)
+
+Fonti delle regole nazionali: 128 voci, 107 indirizzi diversi. 100 sono copie vere. Le altre:
+- 404, da sostituire con la pagina nuova dello stesso ente: tre schede dell'Agenzia delle Entrate (agevolazioni
+  per i disabili, detrazioni per le spese sanitarie, tessera sanitaria), la scheda INPS dell'indennità di
+  accompagnamento, la pagina della ricetta dematerializzata di sistemats1, il PDF del consenso al Fascicolo
+  della Regione Siciliana;
+- un PDF INPS dell'assegno di inclusione più grande di 5 MB;
+- due moduli della Regione Siciliana fatti di sole immagini (non hanno testo);
+- 16 voci (15 indirizzi) di salute.gov.it: protezione anti-robot (Gcore). Non la superiamo: per ogni cifra che viene da lì
+  serve un'altra fonte ufficiale (legge su Normattiva, Gazzetta Ufficiale, accordo Stato-Regioni).
+
