@@ -46,10 +46,17 @@ function sources() {
   return [items, { verified: rules.last_verified }];
 }
 
+// Il Fascicolo della regione (data/regioni/index.json → link.fse): un indirizzo, o uno per zona { in, url }.
+function fseLinks() {
+  const fse = regioneLink('fse');
+  if (Array.isArray(fse)) return fse;
+  return fse ? [{ in: regioneInfo().ente ? `della ${regioneInfo().ente}` : inRegione(regioneInfo()), url: fse }] : [];
+}
+
 const howToAsk = () => `
   <h2>Come si chiede</h2>
   <ol class="big-steps">
-    <li><strong>Prima guarda nel Fascicolo Sanitario Elettronico</strong> (FSE): molti referti si scaricano già lì, gratis, con SPID, CIE o CNS. ${regioneLink('fse') ? `<a href="${esc(regioneLink('fse'))}" target="_blank" rel="noopener">💻 Fascicolo Sanitario ${esc(regioneInfo().ente ? `della ${regioneInfo().ente}` : inRegione(regioneInfo()))}</a>` : ''}</li>
+    <li><strong>Prima guarda nel Fascicolo Sanitario Elettronico</strong> (FSE): molti referti si scaricano già lì, gratis, con SPID, CIE o CNS. ${fseLinks().map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">💻 Fascicolo Sanitario ${esc(l.in)}</a>`).join(' ')}</li>
     <li><strong>Vai all'ufficio cartelle cliniche</strong> dell'ospedale (a volte si chiama «Direzione sanitaria» o «Archivio»). Oppure all'URP. Molti ospedali hanno anche un modulo sul sito.</li>
     <li><strong>Porta la carta d'identità.</strong> Se chiedi per un familiare, serve una <strong>delega firmata</strong> da lui e la copia del suo documento. Il tutore o l'amministratore di sostegno porta il decreto di nomina. Se la persona è morta, possono chiederla gli eredi e i familiari stretti: porta una dichiarazione firmata che dice chi sei per lei.</li>
     <li><strong>Chiedi una ricevuta</strong> con il giorno della richiesta. Da quel giorno partono i ${rules.deadline_days} giorni.</li>

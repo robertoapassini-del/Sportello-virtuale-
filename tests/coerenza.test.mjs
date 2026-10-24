@@ -350,11 +350,17 @@ test('link al Fascicolo della Regione: solo con la prova in regole_fonti.fse', (
   for (const r of indice.regioni) {
     const f = `data/regioni/${r.id}/${(r.files && r.files.asl) || 'asl'}.json`;
     const prova = existsSync(path.join(SITE, f)) ? (json(f).regole_fonti || {}).fse : null;
-    const link = r.link && r.link.fse;
-    if (link && !prova) errori.push(`${r.id}: link.fse senza regole_fonti.fse in ${f}`);
-    if (link && prova && (prova.url !== link || prova.proof !== 'pagina' || !/^\d{4}-\d{2}-\d{2}$/.test(prova.verified || '') || !prova.nota))
-      errori.push(`${r.id}: regole_fonti.fse non prova il link (url, proof «pagina», verified, nota)`);
-    if (!link && prova && prova.proof) errori.push(`${r.id}: regole_fonti.fse ha la prova ma manca link.fse nell'indice`);
+    // Un indirizzo, o uno per zona ({ in, url }: Trento e Bolzano); la prova ha la stessa forma.
+    const lista = (x) => (x ? (Array.isArray(x) ? x : [typeof x === 'string' ? { url: x } : x]) : []);
+    const link = lista(r.link && r.link.fse);
+    const prove = lista(prova);
+    if (link.length && !prove.length) errori.push(`${r.id}: link.fse senza regole_fonti.fse in ${f}`);
+    if (link.length && prove.length) {
+      const bene = link.length === prove.length && link.every((l, i) => prove[i].url === l.url && prove[i].proof === 'pagina'
+        && /^\d{4}-\d{2}-\d{2}$/.test(prove[i].verified || '') && prove[i].nota && (link.length === 1 || (l.in && l.in === prove[i].in)));
+      if (!bene) errori.push(`${r.id}: regole_fonti.fse non prova il link (url, proof «pagina», verified, nota)`);
+    }
+    if (!link.length && prove.some((x) => x.proof)) errori.push(`${r.id}: regole_fonti.fse ha la prova ma manca link.fse nell'indice`);
   }
   assert.deepEqual(errori, []);
 });
