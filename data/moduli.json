@@ -1,6 +1,15 @@
 {
   "groups": [
     {
+      "id": "urgenze",
+      "page": "urgenze",
+      "short": "Urgenze",
+      "intro": "Stai male e non puoi aspettare? Qui trovi come funziona il pronto soccorso: il triage, i codici, il ticket. Per un'emergenza chiama subito il 112.",
+      "icon": "🚑",
+      "title": "Urgenze e pronto soccorso",
+      "small": "Come funziona il pronto soccorso, i codici del triage, il ticket"
+    },
+    {
       "id": "cure",
       "page": "visite-esami",
       "short": "Visite ed esami",
@@ -617,6 +626,24 @@
         {
           "id": "se-non-ti-trovano",
           "title": "Se il medico non ti trova, o devi cambiare indirizzo"
+        }
+      ]
+    },
+    {
+      "id": "pronto-soccorso",
+      "group": "urgenze",
+      "static": true,
+      "data": [
+        "rules-pronto-soccorso"
+      ],
+      "icon": "🚑",
+      "title": "Il pronto soccorso: come funziona",
+      "small": "Il triage, i codici da 1 a 5, quando paghi il ticket",
+      "keywords": "pronto soccorso ps dea emergenza urgenza urgente triage codice codici colore rosso arancione azzurro giallo verde bianco attesa aspettare ore ticket pagare 25 euro ambulanza ospedale notte sto male infermiere osservazione ricovero",
+      "pages": [
+        {
+          "id": "i-codici",
+          "title": "I codici del pronto soccorso, da 1 a 5"
         }
       ]
     }

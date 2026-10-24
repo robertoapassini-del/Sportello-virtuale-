@@ -44,6 +44,9 @@ const PAUSA_MS = process.env.COPIE_PAUSA_MS ? +process.env.COPIE_PAUSA_MS : 1500
 const SKIP = /\.(pdf|docx?|xlsx?|odt|zip)(\?|$)/i; // file da scaricare: ne registriamo solo che esistono
 const PDF = /\.pdf(\?|$)/i; // …tranne i PDF, se c'è pdftotext
 const MAX_PDF = 5 * 1024 * 1024;
+// Le fonti nazionali (regole-*, tema-*) sono poche e servono per intero: l'allegato dell'accordo Stato-Regioni sul
+// triage del 2019 pesa più di 5 MB (24/10/2026). Per loro il limite è più alto.
+const MAX_PDF_NAZIONALI = 20 * 1024 * 1024;
 const comando = (cmd, args) => { try { execFileSync(cmd, args, { stdio: 'ignore' }); return true; } catch { return false; } };
 const PDF_TESTO = path.join(path.dirname(fileURLToPath(import.meta.url)), 'pdf-testo.mjs');
 const errorePdfjs = () => {
@@ -76,7 +79,7 @@ function toText(html) {
 
 // Scarica con curl (segue i redirect, tempo massimo 30 s). Se il certificato del sito è installato
 // male (succede, es. ASP Messina) riprova senza controllarlo e lo segna: il contenuto è lo stesso.
-// I PDF hanno un limite di grandezza (MAX_PDF): oltre, curl si ferma (codice 63).
+// I PDF hanno un limite di grandezza (MAX_PDF, MAX_PDF_NAZIONALI per le fonti nazionali): oltre, curl si ferma (codice 63).
 function scarica(url, maxByte) {
   const tmp = path.join(OUT, '.tmp.scaricata');
   const args = ['-sS', '-L', '--max-time', maxByte ? '60' : '30', ...(maxByte ? ['--max-filesize', String(maxByte)] : []),
@@ -291,7 +294,8 @@ for (const { reg, asl } of daCopiare) {
       totale++;
       const voce = { asl: a.id, url, controllata: new Date().toISOString().slice(0, 10), da_pagina: seguiti.get(url) };
       if (SKIP.test(url) && !(CON_PDF && PDF.test(url))) { voce.nota = 'file, non controllato'; pagine.push(voce); continue; }
-      let r = scarica(url, PDF.test(url) ? MAX_PDF : undefined);
+      const maxPdf = reg.id === 'nazionali' && /^(regole|tema)-/.test(a.id) ? MAX_PDF_NAZIONALI : MAX_PDF;
+      let r = scarica(url, PDF.test(url) ? maxPdf : undefined);
       if (r.http === 200 && /html/i.test(r.type || '') && VUOTA(toText(r.body)) && !ANTIROBOT.test(r.body)) {
         const rb = await rendi(url);
         if (rb && rb.http === 200 && toText(rb.body).length > toText(r.body).length) { r = rb; voce.browser = true; }
