@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 24/10/2026 — Fonti nazionali: PDF fino a 20 MB
+- La copia del 24/10/2026 non ha preso l'allegato dell'accordo Stato-Regioni sul triage del 01/08/2019: il PDF pesa più di 5 MB, il limite del server. `tools/copie.mjs` ora ha un limite di 20 MB solo per le fonti nazionali (cartelle `nazionali/regole-*` e `nazionali/tema-*`); per le regioni resta 5 MB. Nuovo caso in `tests/copie-giro.test.mjs`, provato: senza la correzione fallisce.
+- Tolto da `data/fonti-nazionali.json` l'indirizzo del comma 796 della L. 296/2006: Normattiva mostra solo i primi 100 commi dell'art. 1, anche con l'indirizzo del comma. Il ticket del codice bianco al pronto soccorso si prende dalle pagine ufficiali delle Regioni (in Lombardia, per esempio, la pagina della Regione sul pronto soccorso).
+
 ## 24/10/2026 — Area nuova «Malattia e lavoro»: certificato di malattia e visita fiscale
 - Due temi nuovi, scritti leggendo le copie del server del 24/10/2026 (branch `copie-siti`, `nazionali/tema-*`): `certificato-malattia/` (con «Nei giorni di festa, in ospedale, se guarisci prima») e `visita-fiscale/` (con «Se il medico non ti trova, o devi cambiare indirizzo»). Area nuova `malattia-e-lavoro/`.
 - Dati in `data/rules-malattia.json`, ognuno con la fonte letta per intero: guida INPS «Certificazione di malattia e visite mediche di controllo» (marzo 2024), messaggio INPS n. 4640/2023 (fasce orarie dei dipendenti pubblici dopo la sentenza del TAR Lazio n. 16305/2023), D.L. 463/1983 art. 5 comma 14, D.Lgs. 165/2001 art. 55-septies. Fasce dalle 10 alle 12 e dalle 17 alle 19, ogni giorno, privati e pubblici; ricontrollo a sei mesi perché l'INPS le ha fissate «fino a nuove disposizioni».

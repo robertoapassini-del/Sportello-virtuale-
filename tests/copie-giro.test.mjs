@@ -112,7 +112,7 @@ function sito() {
   w('data/numeri.json', { groups: [{ id: 'emergenze', items: [{ number: '112', url: `${base}/nazionale` }] }] });
   // Regole nazionali (fonti e provenienza) e pagine dei temi da scrivere.
   w('data/rules-prova.json', { sources: [{ label: 'Legge', url: `${base}/legge` }], provenienza: { soglia: { url: `${base}/decreto`, proof: 'testo' }, altra: { url: `${base}/legge` } } });
-  w('data/fonti-nazionali.json', { temi: [{ id: 'pronto-soccorso', pagine: [{ tipo: 'ministero', url: `${base}/ministero` }, { tipo: 'ministero', url: `${base}/gcore` }] }] });
+  w('data/fonti-nazionali.json', { temi: [{ id: 'pronto-soccorso', pagine: [{ tipo: 'ministero', url: `${base}/ministero` }, { tipo: 'ministero', url: `${base}/gcore` }, { tipo: 'accordo', url: `${base}/grande.pdf` }] }] });
   return s;
 }
 
@@ -161,6 +161,12 @@ test('un giro di copie.mjs su pagine finte', { skip: !conCurl && 'manca curl' },
   assert.ok(PAGINE['/gcore'].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').length > 500);
   const gcore = naz.find((p) => p.url === `${base}/gcore`);
   assert.ok(!gcore.file && /anti-robot/.test(gcore.nota || ''), JSON.stringify(gcore));
+
+  // Lo stesso PDF di più di 5 MB: nelle fonti nazionali si copia (limite di 20 MB), nelle regioni no (sotto).
+  if (conPdftotext || /l'ha fatto pdf\.js/.test(log)) {
+    const grandeNaz = naz.find((p) => p.url === `${base}/grande.pdf`);
+    assert.ok(grandeNaz.file && grandeNaz.pdf, JSON.stringify(grandeNaz));
+  }
 
   // fonti.json di una regione attiva: la pagina nuova si copia, quella già copiata non si riscarica.
   assert.equal(indice(out, 'prova').find((p) => p.url === `${base}/vecchia-fonte`).asl, 'asl-centro');
