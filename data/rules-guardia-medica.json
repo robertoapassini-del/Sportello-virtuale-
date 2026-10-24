@@ -13,17 +13,21 @@
       "verified": "2026-10-24",
       "proof": "testo",
       "review_by": "2027-06-30",
-      "nota": "Pagine ufficiali delle aziende sanitarie di 17 regioni su 20, copie del server del 24/10/2026, cercate tutte: la notte «dalle 20 alle 8». ASP Basilicata: «dalle ore 20,00 alle ore 8,00 di tutti i giorni feriali; – dalle ore 10,00 del sabato o di altro giorno prefestivo alle ore 8,00 del lunedì o, comunque, del giorno successivo al festivo» (lo stesso nell'ASL di Cagliari e nell'ASL Roma 5). Regione Friuli-Venezia Giulia (ARCS): «nel fine settimana dalle 8.00 del sabato fino alle 8.00 del lunedì». La regola nazionale è nell'Accordo collettivo nazionale della medicina generale: da leggere quando c'è la copia (data/fonti-nazionali.json)."
+      "nota": "Pagine ufficiali delle aziende sanitarie di 17 regioni su 20, copie del server del 24/10/2026, cercate tutte: la notte «dalle 20 alle 8». ASP Basilicata: «dalle ore 20,00 alle ore 8,00 di tutti i giorni feriali; – dalle ore 10,00 del sabato o di altro giorno prefestivo alle ore 8,00 del lunedì o, comunque, del giorno successivo al festivo» (lo stesso nell'ASL di Cagliari e nell'ASL Roma 5). Regione Friuli-Venezia Giulia (ARCS): «nel fine settimana dalle 8.00 del sabato fino alle 8.00 del lunedì». L'Accordo collettivo nazionale 2019-2021 (intesa Stato-Regioni del 4/4/2024, PDF copiato dal server il 24/10/2026, testo con errori di lettura automatica) non fissa questi orari: chiede la «continuità dell'assistenza notturna, diurna, feriale e festiva» e lascia alle Regioni l'organizzazione, anche «con ridotta presenza nell'orario notturno avanzato (ore 24.00 - 8.00)»."
     },
     "certificato_max_days": {
       "url": "https://www.ausl.mo.it/servizi-e-prestazioni/guardia-medica/",
       "verified": "2026-10-24",
       "proof": "testo",
       "review_by": "2027-06-30",
-      "nota": "Lo scrivono le pagine ufficiali delle aziende sanitarie di 14 regioni (copie del server del 24/10/2026). AUSL Modena: «Certificati di malattia per un periodo massimo di 3 giorni». ASP Basilicata: il medico di guardia medica «può prescrivere farmaci, per terapie non differibili, può rilasciare certificati di malattia per un periodo massimo dì tre giorni e può proporre il ricovero ospedaliero». Da confermare sull'Accordo collettivo nazionale quando c'è la copia."
+      "nota": "Lo scrivono le pagine ufficiali delle aziende sanitarie di 14 regioni (copie del server del 24/10/2026). AUSL Modena: «Certificati di malattia per un periodo massimo di 3 giorni». ASP Basilicata: il medico di guardia medica «può prescrivere farmaci, per terapie non differibili, può rilasciare certificati di malattia per un periodo massimo dì tre giorni e può proporre il ricovero ospedaliero». L'Accordo collettivo nazionale 2019-2021 (intesa del 4/4/2024) mette tra i compiti il rilascio delle certificazioni di «assenza per malattia dei lavoratori dipendenti», ma non dice per quanti giorni: il limite di 3 giorni è delle aziende sanitarie."
     }
   },
   "sources": [
+    {
+      "label": "Conferenza Stato-Regioni – Intesa del 4/4/2024 sull'Accordo collettivo nazionale della medicina generale (PDF)",
+      "url": "https://www.statoregioni.it/media/lkwegvuy/p-1-csr-atto-rep-n-51-4apr2024.pdf"
+    },
     {
       "label": "ASP Basilicata – Continuità assistenziale (ex guardia medica)",
       "url": "https://www.aspbasilicata.it/come-fare-per/continuita-assistenziale-ex-guardia-medica/"
