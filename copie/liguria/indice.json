@@ -1,13 +1,13 @@
 {
  "regione": "liguria",
- "aggiornato": "2026-10-24T02:33:30.250Z",
+ "aggiornato": "2026-10-24T05:05:05.070Z",
  "pagine": [
   {
    "asl": "genova",
    "url": "https://www.asl3.liguria.it/",
    "controllata": "2026-10-24",
    "http": 0,
-   "errore": "curl: (28) Operation timed out after 30000 milliseconds with 0 bytes received"
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "genova",
@@ -28,7 +28,7 @@
    "url": "https://www.asl3.liguria.it/territorio/servizi/cure-primarie/3764-assistenza-domiciliare-integrata.html",
    "controllata": "2026-10-24",
    "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "errore": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received"
   },
   {
    "asl": "genova",
@@ -48,8 +48,8 @@
    "http": 200,
    "file": "genova/6d2ea13a4aa5.txt",
    "titolo": "giunta - Sanità, al via in Liguria il nuovo numero 116117 per i casi meno urgenti. Attivo nel Tigullio da questa sera, martedì 16 dicembre - Regione Liguria",
-   "sha": "5851320caf356fa7b42b298a2afbc2118fcd4b7896da2a6e933bceb6d3c5e4dd",
-   "caratteri": 4675,
+   "sha": "b50c57d5a76e097bc16b8a15ca56f9ef58561a949a9f8e5aa07b423fad999457",
+   "caratteri": 4669,
    "cambiata": true
   },
   {
@@ -59,8 +59,8 @@
    "http": 200,
    "file": "genova/97c265ccde78.txt",
    "titolo": "salute - prenotazione visite ed esami col cup - Regione Liguria",
-   "sha": "d1709780df2453c688471ef530d7ffe5056a6385a51adfc16b84e3abc0b21133",
-   "caratteri": 4869,
+   "sha": "a105ab71df88b152561406649674b008dc11cc04b8f19be13154b57f82463ab4",
+   "caratteri": 4863,
    "cambiata": true
   },
   {
@@ -68,7 +68,7 @@
    "url": "https://www.asl3.liguria.it/azienda/organi-aziendali/direzione-aziendale/staff/strutture-staff-direzione-generale/ufficio-stampa-comunicazione-e-urp.html",
    "controllata": "2026-10-24",
    "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "errore": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received"
   },
   {
    "asl": "genova",
@@ -100,7 +100,7 @@
    "url": "https://www.asl3.liguria.it/urp.html",
    "controllata": "2026-10-24",
    "http": 0,
-   "errore": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received"
+   "errore": "curl: (28) Operation timed out after 30000 milliseconds with 0 bytes received"
   },
   {
    "asl": "genova",
@@ -222,7 +222,7 @@
    "url": "https://www.asl3.liguria.it/numero-verde-gratuito-per-riduzione-tempi-d-attesa.html",
    "controllata": "2026-10-24",
    "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "errore": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received"
   },
   {
    "asl": "genova",
@@ -236,7 +236,7 @@
    "url": "https://www.asl3.liguria.it/territorio/distretti/distretto-9-medio-ponente/item/751-struttura-semplice-dipartimentale-cure-palliative.html",
    "controllata": "2026-10-24",
    "http": 0,
-   "errore": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received"
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "genova",
@@ -284,8 +284,8 @@
    "http": 200,
    "file": "genova/8cfbeba760c6.txt",
    "titolo": "salute - Salutesimplex - Regione Liguria",
-   "sha": "4e98a2f0efedea87d84f733d38114c6b807367b4fc5062339faaa77afab3617b",
-   "caratteri": 5137,
+   "sha": "90bbfae817fda08dea10558131d7fb1fc8fe7c7a92b1c604928e7ded2fddf026",
+   "caratteri": 5131,
    "cambiata": true
   },
   {
@@ -304,14 +304,13 @@
    "url": "https://www.asl3.liguria.it/valutazione-organizzazione-screening",
    "controllata": "2026-10-24",
    "http": 0,
-   "errore": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received"
+   "errore": "curl: (28) Operation timed out after 30000 milliseconds with 0 bytes received"
   },
   {
    "asl": "genova",
    "url": "https://www.asl3.liguria.it/screening-mammario.html",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 500
   },
   {
    "asl": "genova",
@@ -487,8 +486,8 @@
    "http": 200,
    "file": "imperia/51c7b22af737.txt",
    "titolo": "salute - Numeri utili delle Case della Comunità - Regione Liguria",
-   "sha": "77e7444b2f22d5f9f965c39b920d2e8770f33921ef5b4eac16bb59b29daaccaf",
-   "caratteri": 4359,
+   "sha": "9b885286b40dbaf6bd076210a4bbb947af2a032ebe1f5d2b9edb4b872b951788",
+   "caratteri": 4353,
    "cambiata": true
   },
   {
@@ -545,8 +544,8 @@
    "http": 200,
    "file": "imperia/8cfbeba760c6.txt",
    "titolo": "salute - Salutesimplex - Regione Liguria",
-   "sha": "4e98a2f0efedea87d84f733d38114c6b807367b4fc5062339faaa77afab3617b",
-   "caratteri": 5137,
+   "sha": "90bbfae817fda08dea10558131d7fb1fc8fe7c7a92b1c604928e7ded2fddf026",
+   "caratteri": 5131,
    "cambiata": true
   },
   {
@@ -941,8 +940,8 @@
    "http": 200,
    "file": "la-spezia/8cfbeba760c6.txt",
    "titolo": "salute - Salutesimplex - Regione Liguria",
-   "sha": "4e98a2f0efedea87d84f733d38114c6b807367b4fc5062339faaa77afab3617b",
-   "caratteri": 5137,
+   "sha": "90bbfae817fda08dea10558131d7fb1fc8fe7c7a92b1c604928e7ded2fddf026",
+   "caratteri": 5131,
    "cambiata": true
   },
   {
@@ -1090,8 +1089,8 @@
    "http": 200,
    "file": "savona/51c7b22af737.txt",
    "titolo": "salute - Numeri utili delle Case della Comunità - Regione Liguria",
-   "sha": "77e7444b2f22d5f9f965c39b920d2e8770f33921ef5b4eac16bb59b29daaccaf",
-   "caratteri": 4359,
+   "sha": "9b885286b40dbaf6bd076210a4bbb947af2a032ebe1f5d2b9edb4b872b951788",
+   "caratteri": 4353,
    "cambiata": true
   },
   {
@@ -1170,8 +1169,8 @@
    "http": 200,
    "file": "savona/8cfbeba760c6.txt",
    "titolo": "salute - Salutesimplex - Regione Liguria",
-   "sha": "4e98a2f0efedea87d84f733d38114c6b807367b4fc5062339faaa77afab3617b",
-   "caratteri": 5137,
+   "sha": "90bbfae817fda08dea10558131d7fb1fc8fe7c7a92b1c604928e7ded2fddf026",
+   "caratteri": 5131,
    "cambiata": true
   },
   {
@@ -1192,8 +1191,8 @@
    "http": 200,
    "file": "regole/0699e2b18fbf.txt",
    "titolo": "salute - fascicolo sanitario elettronico - Regione Liguria",
-   "sha": "895e169c685d875908620818254d09d64a613dc3ec050ff44b16b0cca644ad7e",
-   "caratteri": 3211,
+   "sha": "846a895dcdf5794a0f0e853a5407c2e07922a7f8b92361061c5bdd1b495400c7",
+   "caratteri": 3205,
    "cambiata": true
   },
   {
@@ -1214,8 +1213,8 @@
    "http": 200,
    "file": "regole/97c265ccde78.txt",
    "titolo": "salute - prenotazione visite ed esami col cup - Regione Liguria",
-   "sha": "d1709780df2453c688471ef530d7ffe5056a6385a51adfc16b84e3abc0b21133",
-   "caratteri": 4869,
+   "sha": "a105ab71df88b152561406649674b008dc11cc04b8f19be13154b57f82463ab4",
+   "caratteri": 4863,
    "cambiata": true
   },
   {
@@ -1293,7 +1292,7 @@
    "titolo": "homepage salute - Regione Liguria",
    "sha": "ae6903fce39a00730da26831c3c7d7fe29f294535bc2ad400974ff0ed58cb698",
    "caratteri": 4186,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-liguria",
@@ -1304,7 +1303,7 @@
    "titolo": "giunta - Sanità, dal primo agosto in funzione il nuovo numero del Cup Liguria: 010 5383400 - Regione Liguria",
    "sha": "450ac6f354536cf0a68f311f1be0565a1ed01f47a59c3ba0fa1164773f8aa1a7",
    "caratteri": 3834,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-liguria",
@@ -1326,7 +1325,7 @@
    "titolo": "salute - Messaggi truffa con richieste del Centro Unico di Prenotazioni (CUP) - Regione Liguria",
    "sha": "e98c1f7605e3ae2c924ee3dc0f2b4fb85116bcad6765aeef8d7b871ad285af0a",
    "caratteri": 3681,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-liguria",
@@ -1337,7 +1336,7 @@
    "titolo": "giunta - Sanità territoriale, nel Tigullio oltre 5mila chiamate al 116117 nei primi mesi del 2026 - Regione Liguria",
    "sha": "4296f8c82ff8094129947682fac7b7e9b2e8431f4f1fd84297523ddeb2a75f7c",
    "caratteri": 4222,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-liguria",
@@ -1348,7 +1347,7 @@
    "titolo": "giunta - Sanità, prosegue a Genova il ciclo di conferenze dei sindaci di Asl. Assessore Nicolò: \"In Liguria pronto a partire il numero unico per la continuità assistenziale\" - Regione Liguria",
    "sha": "9b7d39aafdca710ae17aee75b582f61beb3d0a613d0f37cae2e8de9c4911df34",
    "caratteri": 4459,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-liguria",
@@ -1370,7 +1369,7 @@
    "titolo": "salute - la nuova sanità ligure più vicina, più facile, più pronta - Regione Liguria",
    "sha": "b930b1ac9bf45225f1add6f95d558de6f18df9c539b01124be63476a41eb3d51",
    "caratteri": 5493,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-liguria",
@@ -1460,7 +1459,7 @@
    "titolo": "giunta - Sanità, nasce la nuova \"Azienda Liguria Salute\": più snella e con funzioni operative al servizio dell’assessorato - Regione Liguria",
    "sha": "58aeec6816c2d1affd85aa62933c9a72e6e8473ea082f4a718081c484bdc59c7",
    "caratteri": 5689,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl1-imperiese",
@@ -1620,15 +1619,20 @@
    "asl": "asl3-genovese",
    "url": "https://www.asl3.liguria.it/urp/sedi.html",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "asl3-genovese/c320f31517bd.txt",
+   "titolo": "Sedi Uffici Relazioni con il pubblico (URP) - ASL3",
+   "sha": "1d4d461473be559fdb08e94be1d6b48626589fa27ea14053e5e68c7c140fee11",
+   "caratteri": 6557,
+   "email_nascoste": 3,
+   "cambiata": true
   },
   {
    "asl": "asl3-genovese",
    "url": "http://www.asl3.liguria.it/contatti.html.html",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 9967 milliseconds with 0 bytes received"
+   "http": 500,
+   "finale": "https://www.asl3.liguria.it/contatti.html.html"
   },
   {
    "asl": "asl3-genovese",
@@ -1641,36 +1645,46 @@
    "asl": "asl3-genovese",
    "url": "https://www.asl3.liguria.it/tutte-le-comunicazioni/comunicazioni-2024/5086-prenotazione-visite-esami-dal-1-agosto-call-center-cup-liguria-nuovo-numero.html",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30000 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "asl3-genovese/91a5fa5c58b0.txt",
+   "titolo": "Prenotazione visite ed esami specialistici: dal 1° agosto 2024 il call center del CUP Liguria cambia numero - ASL3",
+   "sha": "bc92ca7bf2f7bed975e3dd712dfd5c91d40f8375bb31630743f1f5b8d2a339c5",
+   "caratteri": 6697,
+   "cambiata": true
   },
   {
    "asl": "asl3-genovese",
    "url": "https://www.asl3.liguria.it/medici-e-pediatri/info-generali/continuita_assistenza.html",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "asl3-genovese/fc3ddc6eb012.txt",
+   "titolo": "Continuità assistenziale - ASL3",
+   "sha": "47ba9191c26bb5f067fd2602b11ad24a07a78bd2e95963e4e73e2cdd152512fd",
+   "caratteri": 7966,
+   "cambiata": true
   },
   {
    "asl": "asl3-genovese",
    "url": "https://www.asl3.liguria.it/nuovo-numero-verde-unico-guardia-medica-800-893-580.html",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30000 milliseconds with 0 bytes received"
+   "http": 500
   },
   {
    "asl": "asl3-genovese",
    "url": "https://www.asl3.liguria.it/contatti-home/item/2940-cure-domiciliari-sedi-contatti.html",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received"
+   "http": 500
   },
   {
    "asl": "asl3-genovese",
    "url": "https://www.asl3.liguria.it/territorio/distretti/attivit%C3%A0-distretti.html",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "asl3-genovese/0ad9503e7ee6.txt",
+   "titolo": "Attività distretti - ASL3",
+   "sha": "d7937004932bf94546088eec5f3f8abadd73124f38192e9b53d0a64827ac104b",
+   "caratteri": 9228,
+   "cambiata": true
   },
   {
    "asl": "asl4-chiavarese",

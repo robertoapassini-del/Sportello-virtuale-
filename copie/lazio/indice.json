@@ -1,6 +1,6 @@
 {
  "regione": "lazio",
- "aggiornato": "2026-10-24T02:09:12.031Z",
+ "aggiornato": "2026-10-24T04:53:37.111Z",
  "pagine": [
   {
    "asl": "frosinone",
@@ -369,7 +369,7 @@
    "url": "https://www.ausl.latina.it/",
    "controllata": "2026-10-24",
    "http": 0,
-   "errore": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received"
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "latina",
@@ -438,7 +438,7 @@
    "url": "https://www.ausl.latina.it/112-azienda/dipartimento-prevenzione/2854-servizio-di-screening",
    "controllata": "2026-10-24",
    "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "errore": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received"
   },
   {
    "asl": "latina",
@@ -1164,37 +1164,9 @@
    "http": 200,
    "file": "roma/e0d930024e6e.txt",
    "titolo": "Punto Unico di Accesso (PUA)",
-   "sha": "d181b30e18ed5c3d1760445ea8807b35c0e1273a5110c4fb7dd7197257d6145e",
+   "sha": "d5550538fbe7c463c160402f055c678f79caceeaf615cf5fff53daa036432315",
    "caratteri": 22475,
    "link_pdf": [
-    {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ-Bangla-Rev.pdf",
-     "testo": "LEGEA 104/92"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_Ucraino.pdf",
-     "testo": "১০৪/৯২ আইন"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_romeno.pdf",
-     "testo": "ЩОМІСЯЧНА ДОПОМОГА НА ШКОЛЯРІВ З ІНВАЛІДНІСТЮ"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/39_40_DISABILITY-1.pdf",
-     "testo": "الاستفادة النقدیة الشھریة"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_-_Romeno.pdf",
-     "testo": "INDEMNIZAȚIA LUNARĂ DE FRECVENȚĂ"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_italiano_1_.pdf",
-     "testo": "মাসিক ভাতা"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_italiano.pdf",
-     "testo": "SUBSIDIO MENSUAL DE FRECUENCIA"
-    },
     {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_-Spagnolo_CORRETTO.pdf",
      "testo": "قانون 104 / 92"
@@ -1208,8 +1180,8 @@
      "testo": "LEY 104/92"
     },
     {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_arabo.pdf",
-     "testo": "ЗАКОН 104/92"
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_italiano.pdf",
+     "testo": "SUBSIDIO MENSUAL DE FRECUENCIA"
     },
     {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_Tagalog.pdf",
@@ -1218,6 +1190,34 @@
     {
      "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_-_Bangla.pdf",
      "testo": "LEGGE 104/92"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_arabo.pdf",
+     "testo": "ЗАКОН 104/92"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_Ucraino.pdf",
+     "testo": "১০৪/৯২ আইন"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_romeno.pdf",
+     "testo": "ЩОМІСЯЧНА ДОПОМОГА НА ШКОЛЯРІВ З ІНВАЛІДНІСТЮ"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ-Bangla-Rev.pdf",
+     "testo": "LEGEA 104/92"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_-_Romeno.pdf",
+     "testo": "INDEMNIZAȚIA LUNARĂ DE FRECVENȚĂ"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_italiano_1_.pdf",
+     "testo": "মাসিক ভাতা"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/39_40_DISABILITY-1.pdf",
+     "testo": "الاستفادة النقدیة الشھریة"
     }
    ],
    "cambiata": true
@@ -1523,7 +1523,7 @@
    "http": 200,
    "file": "roma/2b46e5d8fe38.txt",
    "titolo": "ASL Roma 2 - Punto Unico di Accesso - PUA",
-   "sha": "21040fb481f50fb71273d5c13f625fbeacd25a1038b7d00547f60ca624ba86c0",
+   "sha": "c83452c1f7a5d1e6cba3a306d945fc80042f906f37fa43b20919ae72152f9e9a",
    "caratteri": 11883,
    "email_nascoste": 11,
    "cambiata": true
@@ -1594,7 +1594,7 @@
    "http": 200,
    "file": "roma/3feb23bab29f.txt",
    "titolo": "ASL Roma 2 - UOSD Coordinamento Screening",
-   "sha": "8114e0e14a8a1b4778d51ff8deef3afe187604b679b8f5b2fd28413ff38ec562",
+   "sha": "24db1169946b305ce9fbb564ca72a871869f925aab15f315bc80d587afa0636d",
    "caratteri": 8743,
    "email_nascoste": 3,
    "cambiata": true
@@ -1686,7 +1686,7 @@
    "http": 200,
    "file": "roma/7e7cbafb32a1.txt",
    "titolo": "15.04.05 Liste di attesa",
-   "sha": "7b4cf025074c017d95bf8675c9f986348dfc24144f55b0bdde9a33ab5210d058",
+   "sha": "ccefd104f88d4b67013d2911e5f06d1ac8917e3141a3f59667aabc30088e9355",
    "caratteri": 8672,
    "link_pdf": [
     {
@@ -3049,7 +3049,7 @@
    "http": 200,
    "file": "asl-roma2/2e0f163ef6a3.txt",
    "titolo": "ASL Roma 2 - Guardia Medica",
-   "sha": "b0f8d5e54b89c373116d78eaaf10997451f52cf7489bf0add3246eb7208710d7",
+   "sha": "96701075f7ca193b3a1d29e247511d6dbedb6824ea135f919a05c92ea1a5a399",
    "caratteri": 8091,
    "cambiata": true
   },
@@ -3430,7 +3430,7 @@
    "url": "https://www.ausl.latina.it/25-dedicato-a/468-guardiamedica",
    "controllata": "2026-10-24",
    "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "errore": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received"
   },
   {
    "asl": "asl-latina",
@@ -3444,7 +3444,7 @@
    "url": "https://www.ausl.latina.it/index.php/assistenza-domiciliare",
    "controllata": "2026-10-24",
    "http": 0,
-   "errore": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received"
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "asl-rieti",

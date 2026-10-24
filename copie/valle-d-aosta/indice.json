@@ -1,6 +1,6 @@
 {
  "regione": "valle-d-aosta",
- "aggiornato": "2026-10-24T03:52:27.716Z",
+ "aggiornato": "2026-10-24T06:21:06.394Z",
  "pagine": [
   {
    "asl": "aosta",
@@ -9,8 +9,8 @@
    "http": 200,
    "file": "aosta/8c0e7f3ef863.txt",
    "titolo": "Home",
-   "sha": "060b472dbdaafdc04570f545c1af337a3de9374f03de9e9568dfd63953ebb15f",
-   "caratteri": 8241,
+   "sha": "c56d6ea125ad05e302d1a4707566740aeb22e204f7b16afde778da003de8fd15",
+   "caratteri": 8572,
    "cambiata": true
   },
   {
@@ -375,22 +375,18 @@
    "asl": "aosta",
    "url": "https://www.regione.vda.it/sanita/servizi_territorio/ass_sanitaria/turisti/default_i.asp",
    "controllata": "2026-10-24",
-   "http": 200,
-   "file": "aosta/904b813c72c2.txt",
-   "titolo": "Assistenza medica ai turisti - Regione autonoma Valle d'Aosta",
-   "sha": "3e486633b601550266b93992bef292ef0646c2dfec8594121a467a053265500f",
-   "caratteri": 5582,
-   "cambiata": false
+   "http": 403
   },
   {
    "asl": "aosta",
    "url": "https://www.regione.vda.it/sanita/assistenza_sanitaria/regione/tempi_attesa/default_i.asp",
    "controllata": "2026-10-24",
+   "browser": true,
    "http": 200,
    "file": "aosta/45bd9ada9b36.txt",
    "titolo": "Tempi di attesa - Regione autonoma Valle d'Aosta",
-   "sha": "0aeeb7ffa57f48cdd586041690e6a5a486d75f294c8eb2dbac5e52b4fafa5a25",
-   "caratteri": 8818,
+   "sha": "4f5b22449a0e965049f5519fc5f2df103f85e82e3fb92a32110688168bdaf2bc",
+   "caratteri": 8646,
    "link_pdf": [
     {
      "url": "https://www.ausl.vda.it/Media/AUSL/Hierarchy/3/369/del_2022_435_fd.pdf",
@@ -401,7 +397,7 @@
      "testo": "modulistica"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "aosta",
@@ -635,12 +631,7 @@
    "asl": "aosta",
    "url": "https://www.regione.vda.it/sanita/servizi_territorio/ass_sanitaria/default_i.asp",
    "controllata": "2026-10-24",
-   "http": 200,
-   "file": "aosta/eb3ed26b6adb.txt",
-   "titolo": "Assistenza sanitaria di base - Regione autonoma Valle d'Aosta",
-   "sha": "82d37a74e4264d81b36e493420caf32dce95c45a8a5cc83e38f0b82222152edb",
-   "caratteri": 6798,
-   "cambiata": false
+   "http": 403
   },
   {
    "asl": "aosta",

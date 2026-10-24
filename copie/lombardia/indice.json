@@ -1,6 +1,6 @@
 {
  "regione": "lombardia",
- "aggiornato": "2026-10-24T02:50:49.945Z",
+ "aggiornato": "2026-10-24T05:22:16.695Z",
  "pagine": [
   {
    "asl": "bergamo",
@@ -159,7 +159,7 @@
    "http": 200,
    "file": "bergamo/1f85c98b9e36.txt",
    "titolo": "Home Page | ASST Papa Giovanni XXIII",
-   "sha": "ba2abc47fb434aa319157902ee523300e322ef54f5c3260cafb6c8a2dc8487f6",
+   "sha": "092989ce79b788377f506df10236d72d49eb8600bcba17a18e890830dd819e15",
    "caratteri": 320078,
    "cambiata": true
   },
@@ -2397,7 +2397,12 @@
    "asl": "lecco",
    "url": "https://www.ats-brianza.it/",
    "controllata": "2026-10-24",
-   "http": 503
+   "http": 200,
+   "file": "lecco/8aa4447940ee.txt",
+   "titolo": "Home ATS Brianza",
+   "sha": "8d09ade9937a80d2e7c8e6f10fbe143ba476609b8ab66c617edf048fd94d8b33",
+   "caratteri": 6323,
+   "cambiata": true
   },
   {
    "asl": "lecco",
@@ -2461,7 +2466,7 @@
      "testo": "Carta dei Servizi Casa di Comunità Introbio"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "lecco",
@@ -2472,7 +2477,7 @@
    "titolo": "ASST Lecco – Regione Lombardia",
    "sha": "4161bf54e1b962044016d0f93789f538b4c5f0f69bd523a748a36112df4155ac",
    "caratteri": 20116,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "lecco",
@@ -2489,7 +2494,20 @@
    "asl": "lecco",
    "url": "https://www.ats-brianza.it/urp",
    "controllata": "2026-10-24",
-   "http": 503
+   "browser": true,
+   "http": 200,
+   "file": "lecco/a79d6eddb7d2.txt",
+   "titolo": "Ufficio Relazioni con il Pubblico",
+   "sha": "ff4caeed0cf3e5a9313614c72f512eee751de28bb0ce743547f919bbc42b3625",
+   "caratteri": 6478,
+   "email_nascoste": 2,
+   "link_pdf": [
+    {
+     "url": "https://www.ats-brianza.it/images/urp/regolamento-urp-rev-02-2023.pdf",
+     "testo": "Regolamento Ufficio relazioni con il pubblico"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "lecco",
@@ -2500,7 +2518,7 @@
    "titolo": "PRENOTAZIONI – ASST Lecco",
    "sha": "f1662510370d9b1b0c393248518dfd671dae2373939ca96ad5354d12afbb7ca4",
    "caratteri": 27126,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "lecco",
@@ -2593,31 +2611,54 @@
      "testo": "Questionari gradimento degenza anno 2018"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "lecco",
    "url": "https://www.ats-brianza.it/it/urp-ats-brianza.html",
    "controllata": "2026-10-24",
-   "http": 503
+   "http": 404
   },
   {
    "asl": "lecco",
    "url": "https://www.ats-brianza.it/guardia-medica",
    "controllata": "2026-10-24",
-   "http": 503
+   "http": 200,
+   "file": "lecco/bf176938ac36.txt",
+   "titolo": "Continuità Assistenziale (ex Guardia Medica)",
+   "sha": "ecd9284ec7d0f93acd9c13a9ac0b9c1187199540cd8e55dab3183525c27c4ed7",
+   "caratteri": 6720,
+   "link_pdf": [
+    {
+     "url": "https://www.ats-brianza.it/images/AVVISO_non_iscritti_al_SSR_2023.pdf",
+     "testo": "questa nota per i residenti fuori regione non iscritti al Servizio Sanitario Regionale"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "lecco",
    "url": "https://www.ats-brianza.it/cure-domiciliari-cure-palliative",
    "controllata": "2026-10-24",
-   "http": 503
+   "http": 200,
+   "file": "lecco/c39b3e70f16a.txt",
+   "titolo": "Cure domiciliari / Cure palliative",
+   "sha": "2e334dc0f5bc482509a1587145525a67ef44dfaba8c6701ebec872557ad507d2",
+   "caratteri": 7457,
+   "cambiata": true
   },
   {
    "asl": "lecco",
    "url": "https://www.ats-brianza.it/servizi-sul-territorio/sportelli-delle-asst",
    "controllata": "2026-10-24",
-   "http": 503
+   "browser": true,
+   "http": 200,
+   "file": "lecco/06746983bae5.txt",
+   "titolo": "Sportelli delle ASST",
+   "sha": "517a463974972a055742fc8d5413db0fa71a75c5da6ad7ef2bca44b6e3a7907a",
+   "caratteri": 3580,
+   "email_nascoste": 1,
+   "cambiata": true
   },
   {
    "asl": "lecco",
@@ -2629,7 +2670,7 @@
    "titolo": "ASST Lecco – Regione Lombardia",
    "sha": "4161bf54e1b962044016d0f93789f538b4c5f0f69bd523a748a36112df4155ac",
    "caratteri": 20116,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "lecco",
@@ -2641,7 +2682,7 @@
    "titolo": "ASST Lecco – Regione Lombardia",
    "sha": "4161bf54e1b962044016d0f93789f538b4c5f0f69bd523a748a36112df4155ac",
    "caratteri": 20116,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "lecco",
@@ -2774,7 +2815,7 @@
      "testo": "Monitoraggio marzo 2026"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "lecco",
@@ -5220,7 +5261,7 @@
    "http": 200,
    "file": "milano/91bb0d244f6b.txt",
    "titolo": "Liste di attesa - ASST Melegnano Martesana",
-   "sha": "8087417ad8db59237d0668218fecd5ac1e9183a237e94a46ee3c99aa5ac86908",
+   "sha": "82aa6a6b8660805ead98eb9b4d7acec3ff32632523105de30bbca873808a632d",
    "caratteri": 7290,
    "cambiata": true
   },
@@ -5738,7 +5779,12 @@
    "asl": "monza-brianza",
    "url": "https://www.ats-brianza.it/",
    "controllata": "2026-10-24",
-   "http": 503
+   "http": 200,
+   "file": "monza-brianza/8aa4447940ee.txt",
+   "titolo": "Home ATS Brianza",
+   "sha": "8d09ade9937a80d2e7c8e6f10fbe143ba476609b8ab66c617edf048fd94d8b33",
+   "caratteri": 6323,
+   "cambiata": true
   },
   {
    "asl": "monza-brianza",
@@ -5755,7 +5801,12 @@
    "asl": "monza-brianza",
    "url": "https://www.ats-brianza.it/cure-domiciliari-cure-palliative",
    "controllata": "2026-10-24",
-   "http": 503
+   "http": 200,
+   "file": "monza-brianza/c39b3e70f16a.txt",
+   "titolo": "Cure domiciliari / Cure palliative",
+   "sha": "2e334dc0f5bc482509a1587145525a67ef44dfaba8c6701ebec872557ad507d2",
+   "caratteri": 7457,
+   "cambiata": true
   },
   {
    "asl": "monza-brianza",
@@ -5796,7 +5847,20 @@
    "asl": "monza-brianza",
    "url": "https://www.ats-brianza.it/urp",
    "controllata": "2026-10-24",
-   "http": 503
+   "browser": true,
+   "http": 200,
+   "file": "monza-brianza/a79d6eddb7d2.txt",
+   "titolo": "Ufficio Relazioni con il Pubblico",
+   "sha": "ff4caeed0cf3e5a9313614c72f512eee751de28bb0ce743547f919bbc42b3625",
+   "caratteri": 6478,
+   "email_nascoste": 2,
+   "link_pdf": [
+    {
+     "url": "https://www.ats-brianza.it/images/urp/regolamento-urp-rev-02-2023.pdf",
+     "testo": "Regolamento Ufficio relazioni con il pubblico"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "monza-brianza",
@@ -5815,19 +5879,37 @@
    "asl": "monza-brianza",
    "url": "https://www.ats-brianza.it/it/urp-ats-brianza.html",
    "controllata": "2026-10-24",
-   "http": 503
+   "http": 404
   },
   {
    "asl": "monza-brianza",
    "url": "https://www.ats-brianza.it/guardia-medica",
    "controllata": "2026-10-24",
-   "http": 503
+   "http": 200,
+   "file": "monza-brianza/bf176938ac36.txt",
+   "titolo": "Continuità Assistenziale (ex Guardia Medica)",
+   "sha": "ecd9284ec7d0f93acd9c13a9ac0b9c1187199540cd8e55dab3183525c27c4ed7",
+   "caratteri": 6720,
+   "link_pdf": [
+    {
+     "url": "https://www.ats-brianza.it/images/AVVISO_non_iscritti_al_SSR_2023.pdf",
+     "testo": "questa nota per i residenti fuori regione non iscritti al Servizio Sanitario Regionale"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "monza-brianza",
    "url": "https://www.ats-brianza.it/servizi-sul-territorio/sportelli-delle-asst",
    "controllata": "2026-10-24",
-   "http": 503
+   "browser": true,
+   "http": 200,
+   "file": "monza-brianza/06746983bae5.txt",
+   "titolo": "Sportelli delle ASST",
+   "sha": "517a463974972a055742fc8d5413db0fa71a75c5da6ad7ef2bca44b6e3a7907a",
+   "caratteri": 3580,
+   "email_nascoste": 1,
+   "cambiata": true
   },
   {
    "asl": "monza-brianza",
@@ -5840,7 +5922,7 @@
    "titolo": "Fondazione IRCCS San Gerardo dei Tintori - Monza - irccs-sangerardo",
    "sha": "eebd2947e0283d2e3c51184cb478bc5961153a6ed52866b59937416767d76e62",
    "caratteri": 17651,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "monza-brianza",
@@ -6875,7 +6957,7 @@
      "testo": ""
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "varese",
@@ -7147,8 +7229,8 @@
    "finale": "https://www.asst-settelaghi.it/sedi/cup-ospedale-di-circolo",
    "file": "varese/4d1415008a2b.txt",
    "titolo": "CUP - Ospedale di Circolo - ASST Settelaghi - ASST Settelaghi",
-   "sha": "fe483fc819adb462543a447629cf5e9ab2bbab4c2f9c7cf4dbd8cb65e94ac617",
-   "caratteri": 2597,
+   "sha": "5e1c8633a8d2395f1c7e07b92d0e66759f9baa258675792905e2ee2992a8163d",
+   "caratteri": 2596,
    "cambiata": true
   },
   {
@@ -7181,8 +7263,8 @@
    "http": 200,
    "file": "varese/625ee56036b9.txt",
    "titolo": "Home - ASST Valle Olona",
-   "sha": "cc4d0b3367ec29265c4d069d7d44969f4062e649d6979ee5ad8bc52a102ad24f",
-   "caratteri": 4122,
+   "sha": "acd848fc33466f4c733866f7b9e06c7fa8cec971645a53d09801a06e55dafc33",
+   "caratteri": 4130,
    "link_pdf": [
     {
      "url": "https://www.asst-valleolona.it/wp-content/uploads/2026/09/Asst-Valleolona-Carta-dei-Servizi-Busto-Via-Stelvio-09.09.2026-Cartacea.pdf",
@@ -7277,7 +7359,7 @@
      "testo": ""
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "varese",
@@ -7514,8 +7596,8 @@
    "http": 200,
    "file": "varese/fa7343016054.txt",
    "titolo": "Liste di attesa - ASST Valle Olona",
-   "sha": "6d84de302a829b21bf61fc6a568a7f8bb770f57ec7ae669a0f7c7baac60cd766",
-   "caratteri": 17892,
+   "sha": "f21d5d1c4bb45ceb3877ffcf4fff0cb33a44ff5c889ab9bf1841ecaf71313bab",
+   "caratteri": 17893,
    "link_pdf": [
     {
      "url": "https://www.asst-valleolona.it/wp-content/uploads/2020/12/DGR1865del09_07_2019.pdf",
