@@ -1,6 +1,6 @@
 {
  "regione": "nazionali",
- "aggiornato": "2026-10-24T11:10:44.434Z",
+ "aggiornato": "2026-10-24T13:26:49.908Z",
  "pagine": [
   {
    "asl": "urgenze",
@@ -364,11 +364,7 @@
    "url": "https://www.salute.gov.it/new/it/tema/livelli-essenziali-di-assistenza/assistenza-protesica/",
    "controllata": "2026-10-24",
    "http": 200,
-   "file": "regole-ausili/9d1f50533dda.txt",
-   "titolo": "Gcore",
-   "sha": "dfae27cb4a057644fc84f74630e069b3196bbeda7d54c7218056748b92e76fdf",
-   "caratteri": 520,
-   "cambiata": true
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "regole-ausili",
@@ -469,12 +465,7 @@
    "url": "https://www.salute.gov.it",
    "controllata": "2026-10-24",
    "http": 200,
-   "finale": "https://www.salute.gov.it/",
-   "file": "regole-cartella/e6728ca35c1e.txt",
-   "titolo": "Gcore",
-   "sha": "dfae27cb4a057644fc84f74630e069b3196bbeda7d54c7218056748b92e76fdf",
-   "caratteri": 520,
-   "cambiata": true
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "regole-cartella",
@@ -564,7 +555,7 @@
    "titolo": "Polizia Municipale - Comune di Palermo",
    "sha": "7fc9a005ea4b821cd298d531ce0c05af599d19521e425642ffd0cd9ffe5d371f",
    "caratteri": 6491,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-cure-fuori-regione",
@@ -623,11 +614,7 @@
    "url": "https://www.salute.gov.it/portale/assistenzaSanitaria/dettaglioContenutiAssistenzaSanitaria.jsp?lingua=italiano&id=883&area=Assistenza%20sanitaria&menu=italiani",
    "controllata": "2026-10-24",
    "http": 200,
-   "file": "regole-cure-fuori-regione/885b07eedc91.txt",
-   "titolo": "Gcore",
-   "sha": "d5984861f233fc18170b7737ab6e3818acdca367439d0beca7a63fa425940982",
-   "caratteri": 520,
-   "cambiata": true
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "regole-cure-fuori-regione",
@@ -673,22 +660,14 @@
    "url": "https://www.salute.gov.it/portale/lea/dettaglioContenutiLea.jsp?lingua=italiano&id=4706&area=Lea&menu=ambulatoriale",
    "controllata": "2026-10-24",
    "http": 200,
-   "file": "regole-dentista/924658da88e1.txt",
-   "titolo": "Gcore",
-   "sha": "d5984861f233fc18170b7737ab6e3818acdca367439d0beca7a63fa425940982",
-   "caratteri": 520,
-   "cambiata": true
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "regole-dentista",
    "url": "https://www.salute.gov.it/portale/lea/dettaglioContenutiLea.jsp?lingua=italiano&id=4702&area=Lea&menu=leaEssn",
    "controllata": "2026-10-24",
    "http": 200,
-   "file": "regole-dentista/c774b06b8f18.txt",
-   "titolo": "Gcore",
-   "sha": "d5984861f233fc18170b7737ab6e3818acdca367439d0beca7a63fa425940982",
-   "caratteri": 520,
-   "cambiata": true
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "regole-dentista",
@@ -712,11 +691,7 @@
    "url": "https://www.salute.gov.it/new/it/tema/nuova-assistenza-distrettuale/assistenza-domiciliare/",
    "controllata": "2026-10-24",
    "http": 200,
-   "file": "regole-domiciliare/75050115ec89.txt",
-   "titolo": "Gcore",
-   "sha": "d5984861f233fc18170b7737ab6e3818acdca367439d0beca7a63fa425940982",
-   "caratteri": 520,
-   "cambiata": true
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "regole-domiciliare",
@@ -855,11 +830,7 @@
    "url": "https://www.salute.gov.it/new/it/tema/esenzioni-dal-ticket/esenzioni-reddito/",
    "controllata": "2026-10-24",
    "http": 200,
-   "file": "regole-esenzione/9182ccb0c353.txt",
-   "titolo": "Gcore",
-   "sha": "49e2c36e96126707c1c51cd14ecf06dfb045f6f0baad5fbb4d572b7c89c87471",
-   "caratteri": 520,
-   "cambiata": true
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "regole-esenzione",
@@ -905,7 +876,7 @@
    "caratteri": 15273,
    "link_pdf": [
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x22123",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x63241",
      "testo": "Modulo per AUTOCERTIFICAZIONE"
     }
    ],
@@ -947,11 +918,11 @@
   },
   {
    "asl": "regole-esenzione",
-   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x22123",
+   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x63241",
    "controllata": "2026-10-24",
    "da_pagina": "https://www.aslcittaditorino.it/prestazioni/esenzione-ticket-per-reddito/",
    "http": 200,
-   "file": "regole-esenzione/fb084c52b539.txt",
+   "file": "regole-esenzione/cae7ef021416.txt",
    "titolo": "Autocertificazione di esenzione",
    "sha": "0ec5d984b6bd5ef03f12e32ef41b78dfdf250def32f239cb24d846beeee617d9",
    "caratteri": 10878,
@@ -1225,6 +1196,132 @@
    "cambiata": false
   },
   {
+   "asl": "regole-malattia",
+   "url": "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/documents/Certificazione_malattia_visite_mediche_controllo_lavoratori_privati_pubblici_2024_v04.pdf",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-malattia/298562afafdb.txt",
+   "titolo": "Sostegni, Sussidi e Indennità",
+   "sha": "a314a9fcd8e98b94f8c261099b0cf04086551ff6e2bd83596778b2b5c601e710",
+   "caratteri": 14999,
+   "pdf": true,
+   "cambiata": false
+  },
+  {
+   "asl": "regole-malattia",
+   "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.indennit--di-malattia-e-visite-mediche-di-controllo.html",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-malattia/f7b2d13868fd.txt",
+   "titolo": "Portale Inps - Indennità di malattia/degenza ospedaliera e visite mediche di controllo",
+   "sha": "2783fcd1312850c339a054582019cc2fd501ebd93474f74967e3afddb824326c",
+   "caratteri": 61450,
+   "link_pdf": [
+    {
+     "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/514KEY-tabella_regolamento_per_definizione_termini_di_conclusione.pdf",
+     "testo": "tabella"
+    },
+    {
+     "url": "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/documents/30sett2024_INPS_Guida_sostegni_RGB_tutelaprevidenzialedellamalattia_settembre2024.pdf",
+     "testo": "Tutela previdenziale della malattia"
+    },
+    {
+     "url": "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/2026/Certificazione_malattia_visite_mediche_controllo.pdf",
+     "testo": "Certificazione di malattia e visite mediche di controllo per i lavoratori privati e pubblici"
+    },
+    {
+     "url": "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/documents/Opuscolo_malattia_estero.pdf",
+     "testo": "Certificazione di malattia all’estero 2025"
+    },
+    {
+     "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/FAQ_Certificati_di_malattia_telematici.pdf",
+     "testo": "FAQ Certificati di malattia telematici"
+    }
+   ],
+   "cambiata": false
+  },
+  {
+   "asl": "regole-malattia",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.consultazione-dei-certificati-di-malattia-telematici.html",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-malattia/3258a502482e.txt",
+   "titolo": "Portale Inps - Consultazione dei certificati di malattia telematici",
+   "sha": "f3401144f2da345c369bbaf5c4e252b046d8d5ed819ec104072ebb612be85e05",
+   "caratteri": 43896,
+   "link_pdf": [
+    {
+     "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/FAQ_Certificati_di_malattia_telematici.pdf",
+     "testo": "FAQ"
+    }
+   ],
+   "cambiata": false
+  },
+  {
+   "asl": "regole-malattia",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.sportello-per-il-cittadino-per-le-visite-mediche-di-controllo-54345.sportello-per-il-cittadino-per-le-visite-mediche-di-controllo.html",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-malattia/7155e8bd6b46.txt",
+   "titolo": "Portale Inps - Sportello per il cittadino per le visite mediche di controllo",
+   "sha": "6b2a95865faf282d6906a216181527f27d8f10dd3457ea69408f86cb659b8fdf",
+   "caratteri": 45176,
+   "link_pdf": [
+    {
+     "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/2026/Manuale_utente_Sportello_per_il_cittadino_per_le_visite%20mediche_di_controllo.pdf",
+     "testo": "Manuale utente – Sportello per il cittadino per le visite mediche di controllo"
+    }
+   ],
+   "cambiata": false
+  },
+  {
+   "asl": "regole-malattia",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2023/12/Circolare_14389/Allegati/14553_Messaggio-numero-4640-del-22-12-2023.pdf",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-malattia/c12428d056d3.txt",
+   "titolo": "Direzione Centrale Ammortizzatori Sociali",
+   "sha": "f0a17750323fc5ae2e8dc218aa437fdcbbc2d71a4ffaaf93e2e251e696727d38",
+   "caratteri": 3826,
+   "pdf": true,
+   "cambiata": false
+  },
+  {
+   "asl": "regole-malattia",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:1983-09-12;463~art5",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-malattia/ce902999c11a.txt",
+   "titolo": "DECRETO-LEGGE 12 settembre 1983, n. 463 - Normattiva",
+   "sha": "9aafac5014e0d8f4efcf5e8826fa6742b86296943ddb9e177b741b608c73cfbf",
+   "caratteri": 11179,
+   "cambiata": false
+  },
+  {
+   "asl": "regole-malattia",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2001-03-30;165~art55septies",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-malattia/84fdec7c0d0c.txt",
+   "titolo": "DECRETO LEGISLATIVO 30 marzo 2001, n. 165 - Normattiva",
+   "sha": "06b5109d4d7ddb230f1a0c0c29330873e14bb038de95974aae046efd5ce7d527",
+   "caratteri": 14279,
+   "cambiata": false
+  },
+  {
+   "asl": "regole-malattia",
+   "url": "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/documents/30sett2024_INPS_Guida_sostegni_RGB_tutelaprevidenzialedellamalattia_settembre2024.pdf",
+   "controllata": "2026-10-24",
+   "da_pagina": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.indennit--di-malattia-e-visite-mediche-di-controllo.html",
+   "http": 200,
+   "file": "regole-malattia/5bbc8eeacaf7.txt",
+   "titolo": "Sostegni, Sussidi e Indennità",
+   "sha": "0743bba3a08f4c7dfd91c371aea75cc6a4975f2b33acb9fa9d6473292bf24c7c",
+   "caratteri": 8793,
+   "pdf": true,
+   "cambiata": false
+  },
+  {
    "asl": "regole-medico",
    "url": "https://www.sisac.info/anteprimaNewsHome.do?tipo=WEB&idArea=201011221610481056&idNews=20260624094802420",
    "controllata": "2026-10-24",
@@ -1240,12 +1337,7 @@
    "url": "https://www.salute.gov.it",
    "controllata": "2026-10-24",
    "http": 200,
-   "finale": "https://www.salute.gov.it/",
-   "file": "regole-medico/e6728ca35c1e.txt",
-   "titolo": "Gcore",
-   "sha": "0ed93da0dc00e179aabbb8ffa0e0549d8cc85bb60b603d42634c72fe375952ec",
-   "caratteri": 520,
-   "cambiata": true
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "regole-medico",
@@ -1286,11 +1378,7 @@
    "url": "https://www.salute.gov.it/new/it/tema/cure-palliative-e-terapia-del-dolore/",
    "controllata": "2026-10-24",
    "http": 200,
-   "file": "regole-palliative/b29e861d2346.txt",
-   "titolo": "Gcore",
-   "sha": "0ed93da0dc00e179aabbb8ffa0e0549d8cc85bb60b603d42634c72fe375952ec",
-   "caratteri": 520,
-   "cambiata": true
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "regole-palliative",
@@ -1332,7 +1420,7 @@
    "http": 200,
    "file": "regole-piano/0f06e59a557d.txt",
    "titolo": "Note AIFA | Agenzia Italiana del Farmaco",
-   "sha": "8d513194f656878c122b8bc657e5b5eef4c01ab463c5485cbcc570fab50a3129",
+   "sha": "91a6e9f1bcfbcd50933322e0c81c13916f2d6072e815d750d0eea8c60beddc32",
    "caratteri": 13892,
    "link_pdf": [
     {
@@ -1359,11 +1447,7 @@
    "url": "https://www.salute.gov.it/new/it/tema/ricetta-elettronica-e-cup/la-ricetta-elettronica/",
    "controllata": "2026-10-24",
    "http": 200,
-   "file": "regole-piano/18e0d429bd16.txt",
-   "titolo": "Gcore",
-   "sha": "0ed93da0dc00e179aabbb8ffa0e0549d8cc85bb60b603d42634c72fe375952ec",
-   "caratteri": 520,
-   "cambiata": true
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "regole-piano",
@@ -1471,11 +1555,7 @@
    "url": "https://www.salute.gov.it/new/it/tema/tumori-e-screening/",
    "controllata": "2026-10-24",
    "http": 200,
-   "file": "regole-prevenzione/901daa281618.txt",
-   "titolo": "Gcore",
-   "sha": "0ed93da0dc00e179aabbb8ffa0e0549d8cc85bb60b603d42634c72fe375952ec",
-   "caratteri": 520,
-   "cambiata": true
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "regole-prevenzione",
@@ -1495,11 +1575,7 @@
    "url": "https://www.salute.gov.it/new/it/tema/vaccinazioni/piano-nazionale-prevenzione-vaccinale/",
    "controllata": "2026-10-24",
    "http": 200,
-   "file": "regole-prevenzione/c2d04dbfeef4.txt",
-   "titolo": "Gcore",
-   "sha": "0ed93da0dc00e179aabbb8ffa0e0549d8cc85bb60b603d42634c72fe375952ec",
-   "caratteri": 520,
-   "cambiata": true
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "regole-prevenzione",
@@ -1538,11 +1614,7 @@
    "url": "https://www.salute.gov.it/portale/saluteMentale/homeSaluteMentale.jsp",
    "controllata": "2026-10-24",
    "http": 200,
-   "file": "regole-psicologo/00a23d03f020.txt",
-   "titolo": "Gcore",
-   "sha": "76f2a7f5ce9668e67ab4baa30da2102df597e69a214cf57853690488d9ad6808",
-   "caratteri": 520,
-   "cambiata": true
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "regole-psicologo",
@@ -1633,11 +1705,7 @@
    "url": "https://www.salute.gov.it/portale/lea/dettaglioContenutiLea.jsp?lingua=italiano&id=4702&area=Lea&menu=socioSanitaria",
    "controllata": "2026-10-24",
    "http": 200,
-   "file": "regole-rsa/bc4481e74ff8.txt",
-   "titolo": "Gcore",
-   "sha": "76f2a7f5ce9668e67ab4baa30da2102df597e69a214cf57853690488d9ad6808",
-   "caratteri": 520,
-   "cambiata": true
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "regole-rsa",
@@ -1683,11 +1751,7 @@
    "url": "https://www.salute.gov.it/portale/assistenzaSanitaria/dettaglioContenutiAssistenzaSanitaria.jsp?lingua=italiano&id=1096&area=Assistenza%20sanitaria&menu=vuoto",
    "controllata": "2026-10-24",
    "http": 200,
-   "file": "regole-tessera-sanitaria/ee5237440cc7.txt",
-   "titolo": "Gcore",
-   "sha": "76f2a7f5ce9668e67ab4baa30da2102df597e69a214cf57853690488d9ad6808",
-   "caratteri": 520,
-   "cambiata": true
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "regole-tessera-sanitaria",
@@ -1706,11 +1770,7 @@
    "url": "https://www.salute.gov.it/new/it/tema/liste-di-attesa/piano-nazionale-governo-liste-di-attesa/",
    "controllata": "2026-10-24",
    "http": 200,
-   "file": "regole-liste-attesa/d10b3eb21e76.txt",
-   "titolo": "Gcore",
-   "sha": "76f2a7f5ce9668e67ab4baa30da2102df597e69a214cf57853690488d9ad6808",
-   "caratteri": 520,
-   "cambiata": true
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "regole-liste-attesa",
@@ -1773,22 +1833,14 @@
    "url": "https://www.salute.gov.it/new/it/tema/112-118-e-pronto-soccorso/",
    "controllata": "2026-10-24",
    "http": 200,
-   "file": "tema-pronto-soccorso/c6d4d2f39c46.txt",
-   "titolo": "Gcore",
-   "sha": "76f2a7f5ce9668e67ab4baa30da2102df597e69a214cf57853690488d9ad6808",
-   "caratteri": 520,
-   "cambiata": true
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "tema-pronto-soccorso",
    "url": "https://www.salute.gov.it/new/it/news-e-media/notizie/pronto-soccorso-libera-della-conferenza-stato-regioni-alle-nuove-linee-di/",
    "controllata": "2026-10-24",
    "http": 200,
-   "file": "tema-pronto-soccorso/aa563b50339e.txt",
-   "titolo": "Gcore",
-   "sha": "76f2a7f5ce9668e67ab4baa30da2102df597e69a214cf57853690488d9ad6808",
-   "caratteri": 520,
-   "cambiata": true
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "tema-pronto-soccorso",
@@ -1823,10 +1875,24 @@
    "url": "https://www.salute.gov.it/new/it/tema/esenzioni-dal-ticket/ticket-ed-esenzioni/",
    "controllata": "2026-10-24",
    "http": 200,
-   "file": "tema-pronto-soccorso/b85fb1ccd9ac.txt",
-   "titolo": "Gcore",
-   "sha": "de1c80057d232577f310e2430d735fc08fd24e3a7cb926a1b524080b5339815a",
-   "caratteri": 520,
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
+  },
+  {
+   "asl": "tema-pronto-soccorso",
+   "url": "https://www.statoregioni.it/media/1953/p-01-csr-atto-rep-n-143-01-agosto2019.pdf",
+   "controllata": "2026-10-24",
+   "http": 0,
+   "errore": "file più grande di 5 MB: non copiato"
+  },
+  {
+   "asl": "tema-pronto-soccorso",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2006-12-27;296~art1-com796",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "tema-pronto-soccorso/58e39bfc70c2.txt",
+   "titolo": "LEGGE 27 dicembre 2006, n. 296 - Normattiva",
+   "sha": "1df8134519641c05d96b510e4bfeb66542cb890394f96d8cf25c95e289d1af40",
+   "caratteri": 146663,
    "cambiata": true
   },
   {
@@ -1834,226 +1900,35 @@
    "url": "https://www.salute.gov.it/new/en/tema/nuova-assistenza-distrettuale/116117-european-non-emergency-call-number-5/",
    "controllata": "2026-10-24",
    "http": 200,
-   "file": "tema-guardia-medica/c3024e6ac103.txt",
-   "titolo": "Gcore",
-   "sha": "de1c80057d232577f310e2430d735fc08fd24e3a7cb926a1b524080b5339815a",
-   "caratteri": 520,
-   "cambiata": true
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "tema-guardia-medica",
    "url": "https://www.salute.gov.it/new/it/tema/statistiche-sanitarie/assistenza-sanitaria-distrettuale/",
    "controllata": "2026-10-24",
    "http": 200,
-   "file": "tema-guardia-medica/1368c6d83b89.txt",
-   "titolo": "Gcore",
-   "sha": "de1c80057d232577f310e2430d735fc08fd24e3a7cb926a1b524080b5339815a",
-   "caratteri": 520,
-   "cambiata": true
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "tema-guardia-medica",
    "url": "https://www.salute.gov.it/new/it/tema/ondate-di-calore/chi-rivolgersi/",
    "controllata": "2026-10-24",
    "http": 200,
-   "file": "tema-guardia-medica/4eaa36358999.txt",
-   "titolo": "Gcore",
-   "sha": "de1c80057d232577f310e2430d735fc08fd24e3a7cb926a1b524080b5339815a",
-   "caratteri": 520,
-   "cambiata": true
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "tema-guardia-medica",
    "url": "https://www.salute.gov.it/new/it/tema/cure-nellunione-europea/cure-urgenti-e-necessarie-italia-ehic/",
    "controllata": "2026-10-24",
    "http": 200,
-   "file": "tema-guardia-medica/5a922793846a.txt",
-   "titolo": "Gcore",
-   "sha": "de1c80057d232577f310e2430d735fc08fd24e3a7cb926a1b524080b5339815a",
-   "caratteri": 520,
-   "cambiata": true
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "tema-guardia-medica",
    "url": "https://www.salute.gov.it/new/it/tema/nuova-assistenza-distrettuale/riforma-dellassistenza-territoriale/",
    "controllata": "2026-10-24",
    "http": 200,
-   "file": "tema-guardia-medica/b8714778bd70.txt",
-   "titolo": "Gcore",
-   "sha": "de1c80057d232577f310e2430d735fc08fd24e3a7cb926a1b524080b5339815a",
-   "caratteri": 520,
-   "cambiata": true
-  },
-  {
-   "asl": "tema-certificato-malattia",
-   "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.indennit--di-malattia-e-visite-mediche-di-controllo.html",
-   "controllata": "2026-10-24",
-   "http": 200,
-   "file": "tema-certificato-malattia/f7b2d13868fd.txt",
-   "titolo": "Portale Inps - Indennità di malattia/degenza ospedaliera e visite mediche di controllo",
-   "sha": "2783fcd1312850c339a054582019cc2fd501ebd93474f74967e3afddb824326c",
-   "caratteri": 61450,
-   "link_pdf": [
-    {
-     "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/514KEY-tabella_regolamento_per_definizione_termini_di_conclusione.pdf",
-     "testo": "tabella"
-    },
-    {
-     "url": "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/documents/30sett2024_INPS_Guida_sostegni_RGB_tutelaprevidenzialedellamalattia_settembre2024.pdf",
-     "testo": "Tutela previdenziale della malattia"
-    },
-    {
-     "url": "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/2026/Certificazione_malattia_visite_mediche_controllo.pdf",
-     "testo": "Certificazione di malattia e visite mediche di controllo per i lavoratori privati e pubblici"
-    },
-    {
-     "url": "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/documents/Opuscolo_malattia_estero.pdf",
-     "testo": "Certificazione di malattia all’estero 2025"
-    },
-    {
-     "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/FAQ_Certificati_di_malattia_telematici.pdf",
-     "testo": "FAQ Certificati di malattia telematici"
-    }
-   ],
-   "cambiata": false
-  },
-  {
-   "asl": "tema-certificato-malattia",
-   "url": "https://www.inps.it/it/it/lavoro/malattia.html",
-   "controllata": "2026-10-24",
-   "http": 200,
-   "file": "tema-certificato-malattia/007b8ffe65f9.txt",
-   "titolo": "Portale Inps - Malattia",
-   "sha": "a2f3de328d19ccb52c8862147eb9208ab04d6fb2c99f91d71f57630481fc8239",
-   "caratteri": 46716,
-   "cambiata": false
-  },
-  {
-   "asl": "tema-certificato-malattia",
-   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.consultazione-dei-certificati-di-malattia-telematici.html",
-   "controllata": "2026-10-24",
-   "http": 200,
-   "file": "tema-certificato-malattia/3258a502482e.txt",
-   "titolo": "Portale Inps - Consultazione dei certificati di malattia telematici",
-   "sha": "f3401144f2da345c369bbaf5c4e252b046d8d5ed819ec104072ebb612be85e05",
-   "caratteri": 43896,
-   "link_pdf": [
-    {
-     "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/FAQ_Certificati_di_malattia_telematici.pdf",
-     "testo": "FAQ"
-    }
-   ],
-   "cambiata": false
-  },
-  {
-   "asl": "tema-certificato-malattia",
-   "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.49909.normativa-di-riferimento-per-la-certificazione-telematica-di-malattia.html",
-   "controllata": "2026-10-24",
-   "http": 200,
-   "file": "tema-certificato-malattia/41bdfd8195dd.txt",
-   "titolo": "Portale Inps - Normativa di riferimento per la certificazione telematica di malattia",
-   "sha": "9fbe926769490cb1e1b9d97dd32a0f9430f5dd866f235ad6028c7d35795de9d7",
-   "caratteri": 50107,
-   "cambiata": false
-  },
-  {
-   "asl": "tema-certificato-malattia",
-   "url": "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/documents/Certificazione_malattia_visite_mediche_controllo_lavoratori_privati_pubblici_2024_v04.pdf",
-   "controllata": "2026-10-24",
-   "http": 200,
-   "file": "tema-certificato-malattia/298562afafdb.txt",
-   "titolo": "Sostegni, Sussidi e Indennità",
-   "sha": "a314a9fcd8e98b94f8c261099b0cf04086551ff6e2bd83596778b2b5c601e710",
-   "caratteri": 14999,
-   "pdf": true,
-   "cambiata": false
-  },
-  {
-   "asl": "tema-certificato-malattia",
-   "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/FAQ_Certificati_di_malattia_telematici.pdf",
-   "controllata": "2026-10-24",
-   "http": 200,
-   "file": "tema-certificato-malattia/413fc1652798.txt",
-   "titolo": "Il lavoratore è tenuto a produrre copia dell'attestato telematico di malattia al",
-   "sha": "b394c8a7cc85709e0303a9e681fddc27ba0da0a4d21b3299acc800591b8b24e7",
-   "caratteri": 10047,
-   "pdf": true,
-   "cambiata": false
-  },
-  {
-   "asl": "tema-certificato-malattia",
-   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2001-03-30;165~art55septies",
-   "controllata": "2026-10-24",
-   "http": 200,
-   "file": "tema-certificato-malattia/84fdec7c0d0c.txt",
-   "titolo": "DECRETO LEGISLATIVO 30 marzo 2001, n. 165 - Normattiva",
-   "sha": "06b5109d4d7ddb230f1a0c0c29330873e14bb038de95974aae046efd5ce7d527",
-   "caratteri": 14279,
-   "cambiata": false
-  },
-  {
-   "asl": "tema-certificato-malattia",
-   "url": "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/documents/30sett2024_INPS_Guida_sostegni_RGB_tutelaprevidenzialedellamalattia_settembre2024.pdf",
-   "controllata": "2026-10-24",
-   "da_pagina": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.indennit--di-malattia-e-visite-mediche-di-controllo.html",
-   "http": 200,
-   "file": "tema-certificato-malattia/5bbc8eeacaf7.txt",
-   "titolo": "Sostegni, Sussidi e Indennità",
-   "sha": "0743bba3a08f4c7dfd91c371aea75cc6a4975f2b33acb9fa9d6473292bf24c7c",
-   "caratteri": 8793,
-   "pdf": true,
-   "cambiata": false
-  },
-  {
-   "asl": "tema-visita-fiscale",
-   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.sportello-per-il-cittadino-per-le-visite-mediche-di-controllo-54345.sportello-per-il-cittadino-per-le-visite-mediche-di-controllo.html",
-   "controllata": "2026-10-24",
-   "http": 200,
-   "file": "tema-visita-fiscale/7155e8bd6b46.txt",
-   "titolo": "Portale Inps - Sportello per il cittadino per le visite mediche di controllo",
-   "sha": "6b2a95865faf282d6906a216181527f27d8f10dd3457ea69408f86cb659b8fdf",
-   "caratteri": 45176,
-   "link_pdf": [
-    {
-     "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/2026/Manuale_utente_Sportello_per_il_cittadino_per_le_visite%20mediche_di_controllo.pdf",
-     "testo": "Manuale utente – Sportello per il cittadino per le visite mediche di controllo"
-    }
-   ],
-   "cambiata": false
-  },
-  {
-   "asl": "tema-visita-fiscale",
-   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2023.12.lavoratori-pubblici-fasce-orarie-di-reperibilit-per-le-visite-mediche.html",
-   "controllata": "2026-10-24",
-   "http": 200,
-   "file": "tema-visita-fiscale/9107d516daf8.txt",
-   "titolo": "Portale Inps - Lavoratori pubblici: fasce orarie di reperibilità per le visite mediche",
-   "sha": "508095f5e980ee7da0daafebcdd2066aa9d31c48892688e7c0d741bdd30efdb4",
-   "caratteri": 42475,
-   "cambiata": false
-  },
-  {
-   "asl": "tema-visita-fiscale",
-   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2023/12/Circolare_14389/Allegati/14553_Messaggio-numero-4640-del-22-12-2023.pdf",
-   "controllata": "2026-10-24",
-   "http": 200,
-   "file": "tema-visita-fiscale/c12428d056d3.txt",
-   "titolo": "Direzione Centrale Ammortizzatori Sociali",
-   "sha": "f0a17750323fc5ae2e8dc218aa437fdcbbc2d71a4ffaaf93e2e251e696727d38",
-   "caratteri": 3826,
-   "pdf": true,
-   "cambiata": false
-  },
-  {
-   "asl": "tema-visita-fiscale",
-   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:1983-09-12;463~art5",
-   "controllata": "2026-10-24",
-   "http": 200,
-   "file": "tema-visita-fiscale/ce902999c11a.txt",
-   "titolo": "DECRETO-LEGGE 12 settembre 1983, n. 463 - Normattiva",
-   "sha": "9aafac5014e0d8f4efcf5e8826fa6742b86296943ddb9e177b741b608c73cfbf",
-   "caratteri": 11179,
-   "cambiata": false
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   }
  ]
 }

@@ -1,6 +1,6 @@
 {
  "regione": "lombardia",
- "aggiornato": "2026-10-24T09:55:38.323Z",
+ "aggiornato": "2026-10-24T12:10:10.112Z",
  "pagine": [
   {
    "asl": "bergamo",
@@ -159,7 +159,7 @@
    "http": 200,
    "file": "bergamo/1f85c98b9e36.txt",
    "titolo": "Home Page | ASST Papa Giovanni XXIII",
-   "sha": "2d24d8f0e857e2b2ece5c4bb778404b88cb5ce8e041f59af4d7bcb6f1f8585fe",
+   "sha": "f30105df8ac96efb16bc3d55678e1361bf6b09926a42b89ce2bc7437bf9e8b1e",
    "caratteri": 320078,
    "cambiata": true
   },
@@ -2008,7 +2008,7 @@
    "titolo": "ASST Cremona | ASST Cremona",
    "sha": "4c5efe5b9830b43a82372c287370475bf13c68267153d05a66680429183e8351",
    "caratteri": 2795,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "cremona",
@@ -4111,7 +4111,7 @@
    "titolo": "ASST Melegnano Martesana",
    "sha": "2c06bbfc765053e5fdb9e9f0a4b07ad6127bf143adfa47c02065063d1643f538",
    "caratteri": 8441,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "milano",
@@ -4122,7 +4122,7 @@
    "titolo": "URP - Ufficio Relazioni con il Pubblico - ASST Melegnano Martesana",
    "sha": "83c79cad15bf2c9a9418b845f6cfe6c9ca2086a68d55d78b901bd86f7bb45a15",
    "caratteri": 7162,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "milano",
@@ -4133,7 +4133,7 @@
    "titolo": "Punto Unico di Accesso PUA - ASST Melegnano Martesana",
    "sha": "49642b233a5bc581306fc9cd4335f92f4ab91e0286d1c84013e6d7233ca9c26a",
    "caratteri": 9122,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "milano",
@@ -4645,7 +4645,7 @@
    "url": "http://www.asst-nordmilano.it/urp",
    "controllata": "2026-10-24",
    "http": 0,
-   "errore": "curl: (28) Connection timed out after 30001 milliseconds"
+   "errore": "curl: (28) Connection timed out after 30002 milliseconds"
   },
   {
    "asl": "milano",
@@ -4834,7 +4834,7 @@
    "titolo": "Centro Prenotazioni - CUP - ASST Melegnano Martesana",
    "sha": "74104b00ed9d88c886ba7de48b06b895b79a5dad8a6eae51e297693dbbc60a44",
    "caratteri": 8982,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "milano",
@@ -4845,7 +4845,7 @@
    "titolo": "Continuità Assistenziale – ex Guardia Medica - ASST Melegnano Martesana",
    "sha": "b59ffccf368baab2b0d85c87eba21cfc2aef11995ddf4238a0bd54456fe74c27",
    "caratteri": 7993,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "milano",
@@ -4856,7 +4856,7 @@
    "titolo": "Cure Domiciliari A.D.I. - ASST Melegnano Martesana",
    "sha": "0d00265b7333c4cf90fd7ab46d0ad05a0fb5c04c47a7ff9c44cbcfedb6c4b9d7",
    "caratteri": 12010,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "milano",
@@ -5261,7 +5261,7 @@
    "http": 200,
    "file": "milano/91bb0d244f6b.txt",
    "titolo": "Liste di attesa - ASST Melegnano Martesana",
-   "sha": "f1f5cb1943f0604e8ff9474a72efdfe9fdd0bc5133b1e4f868832aaaebcab93b",
+   "sha": "d3745f9ea556502e6915d49c55e5c57f465b87408241a88851ce66b3e2487601",
    "caratteri": 7290,
    "cambiata": true
   },
@@ -7000,9 +7000,9 @@
    "http": 200,
    "file": "varese/2721720199d5.txt",
    "titolo": "Contatti - ASST Settelaghi - ASST Settelaghi",
-   "sha": "2345caf163176b17dec71b3c236851278eb81f575cc45ad3b771d8d6a64a6d7c",
+   "sha": "98beaeaf9d1c27b4cf090310fb39d141a6d4fbfec2a1c5ef8153fc1a9f3d8e28",
    "caratteri": 2311,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "varese",
@@ -7091,8 +7091,8 @@
    "http": 200,
    "file": "varese/eb494f844be9.txt",
    "titolo": "URP - Ufficio Relazioni con il Pubblico - ASST Valle Olona",
-   "sha": "fb876e2da271cd631ff4398e1c3039dbf9a413e77e1d37eff356dad6c23b18a2",
-   "caratteri": 6013,
+   "sha": "cdfe0a07bcdb81dbbd834921bb810f341f9691f2146d3ad6ceebfbac67be9fdf",
+   "caratteri": 6003,
    "link_pdf": [
     {
      "url": "https://www.asst-valleolona.it/wp-content/uploads/2023/08/A0652_P13_Pd01_MS06-Opuscolo-rifiuti-sanitari-pericolosi.pdf",
@@ -7139,7 +7139,7 @@
      "testo": ""
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "varese",
@@ -7217,9 +7217,9 @@
    "finale": "https://www.asst-settelaghi.it/contatti",
    "file": "varese/98f904cfb89d.txt",
    "titolo": "Contatti - ASST Settelaghi - ASST Settelaghi",
-   "sha": "2345caf163176b17dec71b3c236851278eb81f575cc45ad3b771d8d6a64a6d7c",
+   "sha": "98beaeaf9d1c27b4cf090310fb39d141a6d4fbfec2a1c5ef8153fc1a9f3d8e28",
    "caratteri": 2311,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "varese",
@@ -7359,7 +7359,7 @@
      "testo": ""
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "varese",
@@ -7539,8 +7539,8 @@
    "http": 200,
    "file": "varese/c27d02fae6a1.txt",
    "titolo": "Cure domiciliari - ASST Valle Olona",
-   "sha": "c7836eb64041c1708743a593cfb3d95dea6cf198f62521cc041201afaf617f46",
-   "caratteri": 5752,
+   "sha": "d699bfebd6cff6309e4bd5391412b632d83532dbf6da503f8042705103b0e620",
+   "caratteri": 5751,
    "link_pdf": [
     {
      "url": "https://www.asst-valleolona.it/wp-content/uploads/2023/08/A0652_P13_Pd01_MS06-Opuscolo-rifiuti-sanitari-pericolosi.pdf",
@@ -7587,7 +7587,7 @@
      "testo": ""
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "varese",

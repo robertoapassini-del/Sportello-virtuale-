@@ -1,6 +1,6 @@
 {
  "regione": "calabria",
- "aggiornato": "2026-10-24T09:10:45.408Z",
+ "aggiornato": "2026-10-24T11:25:32.017Z",
  "pagine": [
   {
    "asl": "catanzaro",
@@ -455,7 +455,7 @@
    "http": 200,
    "file": "cosenza/fe31bc8fb243.txt",
    "titolo": "Centro Unico di Prenotazione Online - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "803a827ca28ebe8816368a3a1b84560594649d25c8735cf1942cb528cc0bb304",
+   "sha": "269b09cb0687a7380ed4bd3252c141f9bbbc6513131c380920da2a4186afce77",
    "caratteri": 8094,
    "cambiata": true
   },
@@ -539,7 +539,7 @@
      "testo": "Scheda di proposta di accesso ai servizi territoriali"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "crotone",
@@ -802,7 +802,8 @@
    "asl": "vibo-valentia",
    "url": "https://www.aspvv.it/",
    "controllata": "2026-10-24",
-   "http": 403
+   "http": 403,
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "vibo-valentia",
@@ -854,13 +855,15 @@
    "asl": "vibo-valentia",
    "url": "https://www.aspvv.it/index.php/amministrazione-trasparente-3/servizi-erogati/liste-di-attesa/a-proposito-delle-liste-di-attesa",
    "controllata": "2026-10-24",
-   "http": 403
+   "http": 403,
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "vibo-valentia",
    "url": "https://www.aspvv.it/index.php/azienda/presentazione/la-direzione-generale-e-uffici-di-staff/ufficio-comunicazione-e-urp",
    "controllata": "2026-10-24",
-   "http": 403
+   "http": 403,
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "vibo-valentia",
@@ -1324,7 +1327,7 @@
    "titolo": "Fascicolo sanitario elettronico - Azienda Sanitaria Provinciale di Crotone",
    "sha": "886ca41f852bf3a2eaaaf32141f25927a2134e0ccf45cb1a5e5338253d954103",
    "caratteri": 10734,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asp-crotone",
@@ -1417,13 +1420,15 @@
    "asl": "asp-vibo-valentia",
    "url": "https://www.aspvv.it/index.php/urp",
    "controllata": "2026-10-24",
-   "http": 403
+   "http": 403,
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "asp-vibo-valentia",
    "url": "https://www.aspvv.it/index.php/numeri-utili",
    "controllata": "2026-10-24",
-   "http": 403
+   "http": 403,
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "asp-vibo-valentia",
@@ -1436,19 +1441,22 @@
    "asl": "asp-vibo-valentia",
    "url": "https://www.aspvv.it/index.php/servizi-sanitari/servizio-di-continuita-assistenziale-ex-guardia-media",
    "controllata": "2026-10-24",
-   "http": 403
+   "http": 403,
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "asp-vibo-valentia",
    "url": "https://www.aspvv.it/index.php/organizzazione/distretti/pua-punto-unico-di-accesso",
    "controllata": "2026-10-24",
-   "http": 403
+   "http": 403,
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "asp-vibo-valentia",
    "url": "https://www.aspvv.it/index.php/organizzazione/distretti/cure-primarie-ss",
    "controllata": "2026-10-24",
-   "http": 403
+   "http": 403,
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
   }
  ]
 }

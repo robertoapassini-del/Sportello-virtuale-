@@ -1,6 +1,6 @@
 {
  "regione": "liguria",
- "aggiornato": "2026-10-24T09:38:27.273Z",
+ "aggiornato": "2026-10-24T11:53:08.131Z",
  "pagine": [
   {
    "asl": "genova",
@@ -65,9 +65,9 @@
    "http": 200,
    "file": "genova/6d2ea13a4aa5.txt",
    "titolo": "giunta - Sanità, al via in Liguria il nuovo numero 116117 per i casi meno urgenti. Attivo nel Tigullio da questa sera, martedì 16 dicembre - Regione Liguria",
-   "sha": "8803f2cdbdb4456ffad8898fe6a9b6477956478affab27a21d49a36228e1a8f4",
+   "sha": "4c485cafc6dd652a4d2e6bb5d61fdfea8a4b5c7e90432898fcc52bd9f9d56c07",
    "caratteri": 4669,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "genova",
@@ -76,9 +76,9 @@
    "http": 200,
    "file": "genova/97c265ccde78.txt",
    "titolo": "salute - prenotazione visite ed esami col cup - Regione Liguria",
-   "sha": "54f1b8f2a30bd71c373a73d3b27bf07d089626556f3f33e5069801b8b72d5358",
+   "sha": "fb6200ca2d6d518604b3d17c803f6453d30edbbfe14bdf6800e1af204afb09f4",
    "caratteri": 4863,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "genova",
@@ -305,8 +305,12 @@
    "asl": "genova",
    "url": "https://www.atsliguria.it/amministrazione-trasparente-ats/amministrazione-trasparente/servizi-erogati/liste-attesa.html",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (35) OpenSSL/3.0.13: error:0A000438:SSL routines::tlsv1 alert internal error"
+   "http": 200,
+   "file": "genova/eea1f8985ae3.txt",
+   "titolo": "Liste di attesa in Liguria per visite e prestazioni diagnostiche - ATS Liguria",
+   "sha": "ffeaecc3df3a0981626b48540133c2e03c64c07b00d8e7506b6a6c7574d925d8",
+   "caratteri": 7750,
+   "cambiata": true
   },
   {
    "asl": "genova",
@@ -315,9 +319,9 @@
    "http": 200,
    "file": "genova/8cfbeba760c6.txt",
    "titolo": "salute - Salutesimplex - Regione Liguria",
-   "sha": "a6055ab83101fd78f91ad2d9a49af1f6f4ac3675b29112f3c25b2b359ba481c5",
+   "sha": "55891e99803622b1624f7e6d16fadbbd6124e8c8c2e9ba881bfbd56edd047290",
    "caratteri": 5131,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "genova",
@@ -522,9 +526,9 @@
    "http": 200,
    "file": "imperia/51c7b22af737.txt",
    "titolo": "salute - Numeri utili delle Case della Comunità - Regione Liguria",
-   "sha": "36d49766d6ee187cc93ae60919287f7fa78b96fa6d86fd3143a880add8dd203c",
+   "sha": "aa5442356283701ad41f0d3195c57db4466ded2fe79d2fa4ce93ef9075e4b89d",
    "caratteri": 4353,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "imperia",
@@ -566,8 +570,12 @@
    "asl": "imperia",
    "url": "https://www.atsliguria.it/amministrazione-trasparente-ats/amministrazione-trasparente/servizi-erogati/liste-attesa.html",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (35) OpenSSL/3.0.13: error:0A000438:SSL routines::tlsv1 alert internal error"
+   "http": 200,
+   "file": "imperia/eea1f8985ae3.txt",
+   "titolo": "Liste di attesa in Liguria per visite e prestazioni diagnostiche - ATS Liguria",
+   "sha": "ffeaecc3df3a0981626b48540133c2e03c64c07b00d8e7506b6a6c7574d925d8",
+   "caratteri": 7750,
+   "cambiata": true
   },
   {
    "asl": "imperia",
@@ -576,9 +584,9 @@
    "http": 200,
    "file": "imperia/8cfbeba760c6.txt",
    "titolo": "salute - Salutesimplex - Regione Liguria",
-   "sha": "a6055ab83101fd78f91ad2d9a49af1f6f4ac3675b29112f3c25b2b359ba481c5",
+   "sha": "55891e99803622b1624f7e6d16fadbbd6124e8c8c2e9ba881bfbd56edd047290",
    "caratteri": 5131,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "imperia",
@@ -958,8 +966,12 @@
    "asl": "la-spezia",
    "url": "https://www.atsliguria.it/amministrazione-trasparente-ats/amministrazione-trasparente/servizi-erogati/liste-attesa.html",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (35) OpenSSL/3.0.13: error:0A000438:SSL routines::tlsv1 alert internal error"
+   "http": 200,
+   "file": "la-spezia/eea1f8985ae3.txt",
+   "titolo": "Liste di attesa in Liguria per visite e prestazioni diagnostiche - ATS Liguria",
+   "sha": "ffeaecc3df3a0981626b48540133c2e03c64c07b00d8e7506b6a6c7574d925d8",
+   "caratteri": 7750,
+   "cambiata": true
   },
   {
    "asl": "la-spezia",
@@ -968,9 +980,9 @@
    "http": 200,
    "file": "la-spezia/8cfbeba760c6.txt",
    "titolo": "salute - Salutesimplex - Regione Liguria",
-   "sha": "a6055ab83101fd78f91ad2d9a49af1f6f4ac3675b29112f3c25b2b359ba481c5",
+   "sha": "55891e99803622b1624f7e6d16fadbbd6124e8c8c2e9ba881bfbd56edd047290",
    "caratteri": 5131,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "la-spezia",
@@ -1117,9 +1129,9 @@
    "http": 200,
    "file": "savona/51c7b22af737.txt",
    "titolo": "salute - Numeri utili delle Case della Comunità - Regione Liguria",
-   "sha": "36d49766d6ee187cc93ae60919287f7fa78b96fa6d86fd3143a880add8dd203c",
+   "sha": "aa5442356283701ad41f0d3195c57db4466ded2fe79d2fa4ce93ef9075e4b89d",
    "caratteri": 4353,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "savona",
@@ -1183,8 +1195,12 @@
    "asl": "savona",
    "url": "https://www.atsliguria.it/amministrazione-trasparente-ats/amministrazione-trasparente/servizi-erogati/liste-attesa.html",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (35) OpenSSL/3.0.13: error:0A000438:SSL routines::tlsv1 alert internal error"
+   "http": 200,
+   "file": "savona/eea1f8985ae3.txt",
+   "titolo": "Liste di attesa in Liguria per visite e prestazioni diagnostiche - ATS Liguria",
+   "sha": "ffeaecc3df3a0981626b48540133c2e03c64c07b00d8e7506b6a6c7574d925d8",
+   "caratteri": 7750,
+   "cambiata": true
   },
   {
    "asl": "savona",
@@ -1193,9 +1209,9 @@
    "http": 200,
    "file": "savona/8cfbeba760c6.txt",
    "titolo": "salute - Salutesimplex - Regione Liguria",
-   "sha": "a6055ab83101fd78f91ad2d9a49af1f6f4ac3675b29112f3c25b2b359ba481c5",
+   "sha": "55891e99803622b1624f7e6d16fadbbd6124e8c8c2e9ba881bfbd56edd047290",
    "caratteri": 5131,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "savona",
@@ -1215,16 +1231,20 @@
    "http": 200,
    "file": "regole/0699e2b18fbf.txt",
    "titolo": "salute - fascicolo sanitario elettronico - Regione Liguria",
-   "sha": "ac9fbcee1a3668cef763705caf2a285150f7e40544c674dfd4986d7db64fc30b",
+   "sha": "3dbba64dda77d34474eadb5e1389c5ef631c66c8000f457fdb8f253d9fbc0d68",
    "caratteri": 3205,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "regole",
    "url": "https://www.atsliguria.it/amministrazione-trasparente-ats/amministrazione-trasparente/servizi-erogati/liste-attesa.html",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (35) OpenSSL/3.0.13: error:0A000438:SSL routines::tlsv1 alert internal error"
+   "http": 200,
+   "file": "regole/eea1f8985ae3.txt",
+   "titolo": "Liste di attesa in Liguria per visite e prestazioni diagnostiche - ATS Liguria",
+   "sha": "ffeaecc3df3a0981626b48540133c2e03c64c07b00d8e7506b6a6c7574d925d8",
+   "caratteri": 7750,
+   "cambiata": true
   },
   {
    "asl": "regole",
@@ -1233,9 +1253,9 @@
    "http": 200,
    "file": "regole/97c265ccde78.txt",
    "titolo": "salute - prenotazione visite ed esami col cup - Regione Liguria",
-   "sha": "54f1b8f2a30bd71c373a73d3b27bf07d089626556f3f33e5069801b8b72d5358",
+   "sha": "fb6200ca2d6d518604b3d17c803f6453d30edbbfe14bdf6800e1af204afb09f4",
    "caratteri": 4863,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "inps-liguria",
@@ -1310,9 +1330,9 @@
    "http": 200,
    "file": "regione-liguria/5c4c10804fbd.txt",
    "titolo": "homepage salute - Regione Liguria",
-   "sha": "d0debaf2048c10521a6e8f94c22cf8d7feb4b95d0176f4fbbd5a23984459a57e",
+   "sha": "4edfb1f503bc6ac99d0921ed3675732715bc5938113c3c8c623fd72719dd9732",
    "caratteri": 4186,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "regione-liguria",
@@ -1321,9 +1341,9 @@
    "http": 200,
    "file": "regione-liguria/1ae711d1b324.txt",
    "titolo": "giunta - Sanità, dal primo agosto in funzione il nuovo numero del Cup Liguria: 010 5383400 - Regione Liguria",
-   "sha": "068482dc55867c3990162d69ad90e613fd6ab96ed2de762f2265bb62908110cd",
+   "sha": "bb0589596751cf23b5064a02dc89294d2635bf57a8d2bf1898a2adeafb69ae44",
    "caratteri": 3834,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "regione-liguria",
@@ -1343,9 +1363,9 @@
    "http": 200,
    "file": "regione-liguria/af75bda55c30.txt",
    "titolo": "salute - Messaggi truffa con richieste del Centro Unico di Prenotazioni (CUP) - Regione Liguria",
-   "sha": "299ba171f0ce3417c8c12986b54986006e808543c9754753a995b8642ce4e69a",
+   "sha": "0acd3fd98790bbe01ede6037ef40b52fa99aadea699a1e0a299e5468aa68bfd8",
    "caratteri": 3681,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "regione-liguria",
@@ -1354,9 +1374,9 @@
    "http": 200,
    "file": "regione-liguria/58c9218673e2.txt",
    "titolo": "giunta - Sanità territoriale, nel Tigullio oltre 5mila chiamate al 116117 nei primi mesi del 2026 - Regione Liguria",
-   "sha": "5669dc72a6a76d83d346c5499c0efef1106522bbeb483bef6f95ee5e0da200be",
+   "sha": "1bd3c0a60ac380dd51bba62e968743ce028be5aedf01b1b9ce40fe32eac60ac7",
    "caratteri": 4222,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "regione-liguria",
@@ -1365,16 +1385,20 @@
    "http": 200,
    "file": "regione-liguria/6f7021132ab0.txt",
    "titolo": "giunta - Sanità, prosegue a Genova il ciclo di conferenze dei sindaci di Asl. Assessore Nicolò: \"In Liguria pronto a partire il numero unico per la continuità assistenziale\" - Regione Liguria",
-   "sha": "f44bfc5e1284c61a70f32eb1977ab670209dd7943ccc9cbe3a1017af1d4e619d",
+   "sha": "ea5b45d35e75677805e42d3028f5b92cc31366951eb7fdbe35c8c9232a128cc1",
    "caratteri": 4459,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "regione-liguria",
    "url": "https://www.liguriadigitale.it/esperienze/fascicolo-sanitario-elettronico-fse.html",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (35) OpenSSL/3.0.13: error:0A000438:SSL routines::tlsv1 alert internal error"
+   "http": 200,
+   "file": "regione-liguria/5be084d4c546.txt",
+   "titolo": "Fascicolo Sanitario Elettronico (FSE) - Liguria Digitale",
+   "sha": "17dabe5aa2a8d2e551e642ef4b803202e66d0240d011f38c8b608e77ec024f82",
+   "caratteri": 2720,
+   "cambiata": true
   },
   {
    "asl": "regione-liguria",
@@ -1383,9 +1407,9 @@
    "http": 200,
    "file": "regione-liguria/c3a4df77f258.txt",
    "titolo": "salute - la nuova sanità ligure più vicina, più facile, più pronta - Regione Liguria",
-   "sha": "240b245f23e9a69a1e99698a0e974c6fcf3d29c1751ca27a1d487fac3b8cb693",
+   "sha": "300bac1c9a16314002249d8c3ef7378d04e05b1fe26dc8670bcb48350bf46416",
    "caratteri": 5493,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "regione-liguria",
@@ -1402,43 +1426,69 @@
    "asl": "regione-liguria",
    "url": "https://www.atsliguria.it/",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (35) OpenSSL/3.0.13: error:0A000438:SSL routines::tlsv1 alert internal error"
+   "http": 200,
+   "file": "regione-liguria/5231b93536bb.txt",
+   "titolo": "Benvenuti nel sito dell'Azienda Tutela della Salute Liguria (ATS Liguria) - ATS Liguria",
+   "sha": "9499c7360cf0a1387e5b4bfcb6a394c3f97fcfeb5515b6fda5209ac4a87a9b83",
+   "caratteri": 3031,
+   "cambiata": true
   },
   {
    "asl": "regione-liguria",
    "url": "https://www.atsliguria.it/azienda.html",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (35) OpenSSL/3.0.13: error:0A000438:SSL routines::tlsv1 alert internal error"
+   "http": 200,
+   "file": "regione-liguria/55267a0e1f86.txt",
+   "titolo": "Azienda - ATS Liguria",
+   "sha": "c4a61fd2036a42224d08d806017817fd3e3cd30615145f591150b490b023beae",
+   "caratteri": 5173,
+   "cambiata": true
   },
   {
    "asl": "regione-liguria",
    "url": "https://www.atsliguria.it/aree-sociosanitarie-locali.html",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (35) OpenSSL/3.0.13: error:0A000438:SSL routines::tlsv1 alert internal error"
+   "http": 200,
+   "file": "regione-liguria/51709dceb09c.txt",
+   "titolo": "Aree sociosanitarie locali - ATS Liguria",
+   "sha": "6afd1cd325a21549b492ba49037f5f0fa160d4114be5bb053a9ca0a44fae3bb9",
+   "caratteri": 4049,
+   "cambiata": true
   },
   {
    "asl": "regione-liguria",
    "url": "https://www.atsliguria.it/liguria-salute.html",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (35) OpenSSL/3.0.13: error:0A000438:SSL routines::tlsv1 alert internal error"
+   "http": 200,
+   "file": "regione-liguria/19cdd30c5153.txt",
+   "titolo": "Area Liguria Salute - ATS Liguria",
+   "sha": "ceabdf0ef51cd2259bb8acc826fbf7205ed162bdbba1e49044887e90cea46240",
+   "caratteri": 2246,
+   "cambiata": true
   },
   {
    "asl": "regione-liguria",
    "url": "https://www.liguriasalute.atsliguria.it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica.html",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (35) OpenSSL/3.0.13: error:0A000438:SSL routines::tlsv1 alert internal error"
+   "http": 200,
+   "file": "regione-liguria/a49e0a0a213f.txt",
+   "titolo": "Contatti - Liguria Salute - Sistema Sanitario Regione Liguria",
+   "sha": "9fcbbef21c6383e9e3d30af366ae5745ba6a7f3aa5f33c75a3ff93c512d332f2",
+   "caratteri": 1513,
+   "email_nascoste": 1,
+   "cambiata": true
   },
   {
    "asl": "regione-liguria",
    "url": "https://www.alisa.liguria.it/dipartimenti-interaziendali-regionali-diar/diar-distretti.html",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (35) OpenSSL/3.0.13: error:0A000438:SSL routines::tlsv1 alert internal error"
+   "http": 200,
+   "finale": "https://www.liguriasalute.atsliguria.it/dipartimenti-interaziendali-regionali-diar/diar-distretti.html",
+   "file": "regione-liguria/b40adafb2286.txt",
+   "titolo": "DIAR Distretti - Liguria Salute - Sistema Sanitario Regione Liguria",
+   "sha": "1ffdac3788f9debe1f6fadade810e96ea2f5b5d8992e74cff5f721e8dffb6ea6",
+   "caratteri": 3427,
+   "cambiata": true
   },
   {
    "asl": "regione-liguria",
@@ -1447,9 +1497,9 @@
    "http": 200,
    "file": "regione-liguria/57db21873280.txt",
    "titolo": "giunta - Sanità, nasce la nuova \"Azienda Liguria Salute\": più snella e con funzioni operative al servizio dell’assessorato - Regione Liguria",
-   "sha": "2fd507bebb914d1bb5fc1d1bede3ae83793239db34b1cb140098cf9d11c8f4a5",
+   "sha": "a6b24b8ab1a58279601030802f18666dbda03183ae7b28aa9f20886e508fa550",
    "caratteri": 5689,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "asl1-imperiese",
