@@ -1,0 +1,87 @@
+{
+  "name": "Certificato di malattia e visita fiscale",
+  "last_verified": "2026-10-24",
+  "invio_cartaceo_days": 2,
+  "reperibilita": {
+    "mattina": "10-12",
+    "pomeriggio": "17-19"
+  },
+  "esonero_invalidita_percent": 67,
+  "assenza_visita_days": 10,
+  "assenza_visita_dopo_percent": 50,
+  "pubblici_certificato_ssn_dopo_days": 10,
+  "provenienza": {
+    "invio_cartaceo_days": {
+      "url": "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/documents/Certificazione_malattia_visite_mediche_controllo_lavoratori_privati_pubblici_2024_v04.pdf",
+      "verified": "2026-10-24",
+      "proof": "testo",
+      "review_by": "2027-10-24",
+      "nota": "Guida INPS «Certificazione di malattia e visite mediche di controllo per i lavoratori privati e pubblici», aggiornata a marzo 2024, passo 3. Letta per intero sulla copia del server (branch copie-siti, nazionali/tema-certificato-malattia, 24/10/2026): «Il certificato cartaceo va consegnato all’INPS (o inviato con R/R) entro due giorni SOLO se sei un lavoratore privato con diritto all’indennità di malattia dell’INPS». Per gli altri lavoratori vale il contratto."
+    },
+    "reperibilita": {
+      "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2023/12/Circolare_14389/Allegati/14553_Messaggio-numero-4640-del-22-12-2023.pdf",
+      "verified": "2026-10-24",
+      "proof": "testo",
+      "review_by": "2027-04-24",
+      "nota": "Privati: guida INPS 2024, passo 8 («Fasce di reperibilità: ore 10.00 - 12.00 e 17.00 - 19.00»). Pubblici: messaggio INPS n. 4640 del 22/12/2023, dopo la sentenza del TAR Lazio n. 16305/2023 che ha annullato le fasce del DM 206/2017 («dalle ore 10 alle 12 e dalle ore 17 alle 19 di tutti i giorni (compresi domeniche e festivi)»), «fino a nuove disposizioni»: per questo il ricontrollo è a sei mesi. Copie del server del 24/10/2026."
+    },
+    "esonero_invalidita_percent": {
+      "url": "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/documents/Certificazione_malattia_visite_mediche_controllo_lavoratori_privati_pubblici_2024_v04.pdf",
+      "verified": "2026-10-24",
+      "proof": "testo",
+      "review_by": "2027-10-24",
+      "nota": "Guida INPS 2024, passi 2 e 9: niente obbligo di reperibilità per patologie gravi con terapie salvavita, per alcune cause di servizio dei dipendenti pubblici e per lo «Stato patologico connesso a invalidità riconosciuta pari o superiore al 67%». Lo segnala il medico nel certificato (privati: circolare INPS n. 95/2016; pubblici: DM 206/2017)."
+    },
+    "assenza_visita_days": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:1983-09-12;463~art5",
+      "verified": "2026-10-24",
+      "proof": "testo",
+      "review_by": "2027-10-24",
+      "nota": "D.L. 463/1983, art. 5, comma 14 (convertito dalla L. 638/1983), letto sulla copia del server del 24/10/2026: chi «risulti assente alla visita di controllo senza giustificato motivo, decade dal diritto a qualsiasi trattamento economico per l'intero periodo sino a dieci giorni e nella misura della metà per l'ulteriore periodo». La Corte costituzionale (sentenza n. 78/1988) chiede una seconda visita prima del taglio a metà."
+    },
+    "assenza_visita_dopo_percent": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:1983-09-12;463~art5",
+      "verified": "2026-10-24",
+      "proof": "testo",
+      "review_by": "2027-10-24",
+      "nota": "D.L. 463/1983, art. 5, comma 14: dopo i primi dieci giorni il trattamento si perde «nella misura della metà per l'ulteriore periodo», cioè il 50%. Vale per i lavoratori privati con l'indennità INPS; per i pubblici decide l'amministrazione."
+    },
+    "pubblici_certificato_ssn_dopo_days": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2001-03-30;165~art55septies",
+      "verified": "2026-10-24",
+      "proof": "testo",
+      "review_by": "2027-10-24",
+      "nota": "D.Lgs. 165/2001, art. 55-septies, comma 1, letto sulla copia del server del 24/10/2026: per i dipendenti pubblici, con una malattia «protratta per un periodo superiore a dieci giorni, e, in ogni caso, dopo il secondo evento di malattia nell'anno solare» il certificato lo fa «una struttura sanitaria pubblica o un medico convenzionato con il Servizio sanitario nazionale». Comma 2: il certificato va all'INPS per via telematica."
+    }
+  },
+  "sources": [
+    {
+      "label": "INPS – Certificazione di malattia e visite mediche di controllo (guida, marzo 2024)",
+      "url": "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/documents/Certificazione_malattia_visite_mediche_controllo_lavoratori_privati_pubblici_2024_v04.pdf"
+    },
+    {
+      "label": "INPS – Indennità di malattia e visite mediche di controllo",
+      "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.indennit--di-malattia-e-visite-mediche-di-controllo.html"
+    },
+    {
+      "label": "INPS – Consultazione dei certificati di malattia telematici",
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.consultazione-dei-certificati-di-malattia-telematici.html"
+    },
+    {
+      "label": "INPS – Sportello per il cittadino per le visite mediche di controllo",
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.sportello-per-il-cittadino-per-le-visite-mediche-di-controllo-54345.sportello-per-il-cittadino-per-le-visite-mediche-di-controllo.html"
+    },
+    {
+      "label": "INPS – Messaggio n. 4640 del 22/12/2023 (fasce orarie dei dipendenti pubblici)",
+      "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2023/12/Circolare_14389/Allegati/14553_Messaggio-numero-4640-del-22-12-2023.pdf"
+    },
+    {
+      "label": "Normattiva – D.L. 463/1983, art. 5 (visite di controllo e assenza)",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:1983-09-12;463~art5"
+    },
+    {
+      "label": "Normattiva – D.Lgs. 165/2001, art. 55-septies (malattia dei dipendenti pubblici)",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2001-03-30;165~art55septies"
+    }
+  ]
+}

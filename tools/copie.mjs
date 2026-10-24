@@ -99,8 +99,12 @@ function scarica(url, maxByte) {
 
 // Browser vero per le pagine fatte con JavaScript. Playwright è facoltativo: locale (npm i playwright
 // nella cartella del sito) o globale (npm i -g playwright); senza, le pagine restano quelle scaricate.
+// Una pagina anti-robot è corta: la pagina di Gcore ha circa 520 caratteri, più del limite di VUOTA.
+const ANTIROBOT_CORTA = (testo) => ANTIROBOT.test(testo) && (VUOTA(testo) || testo.length < 2000);
 const VUOTA = (testo) => testo.length < 500 || /enable javascript|attiva(re)? (il )?javascript|abilita(re)? (il )?javascript|^loading\.{3}/im.test(testo);
-const ANTIROBOT = /captcha|radware|verify you are human|are you a robot|sei un robot|access denied|attention required/i;
+// «Browser Validation Page» e «Please enable cookies»: la protezione Gcore di salute.gov.it (24/10/2026: le copie del
+// Ministero erano questa pagina, segnata come copiata).
+const ANTIROBOT = /captcha|radware|verify you are human|are you a robot|sei un robot|access denied|attention required|browser validation page|please enable cookies/i;
 let browser; let senzaBrowser = !!process.env.COPIE_SENZA_BROWSER;
 async function apriBrowser() {
   if (browser || senzaBrowser) return browser;
@@ -298,7 +302,7 @@ for (const { reg, asl } of daCopiare) {
         const rb = await rendi(url);
         if (rb && rb.http === 200 && !VUOTA(toText(rb.body))) { r = rb; voce.browser = true; }
       }
-      if (!seiPdf(r) && ANTIROBOT.test(toText(r.body || '')) && VUOTA(toText(r.body || ''))) {
+      if (!seiPdf(r) && ANTIROBOT_CORTA(toText(r.body || ''))) {
         voce.http = r.http; voce.nota = 'controllo anti-robot (CAPTCHA): non copiata';
         problemi.push(`${reg.id}/${a.id}: CAPTCHA ${url}`);
         pagine.push(voce); await sleep(PAUSA_MS); continue;

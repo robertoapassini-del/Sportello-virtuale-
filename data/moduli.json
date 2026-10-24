@@ -37,6 +37,15 @@
       "small": "Domanda e visita INPS, legge 104, accompagnamento, ricorso"
     },
     {
+      "id": "lavoro",
+      "page": "malattia-e-lavoro",
+      "short": "Malattia e lavoro",
+      "intro": "Sei malato e non puoi andare al lavoro? Qui trovi come funziona il certificato di malattia e quando devi farti trovare a casa per la visita fiscale.",
+      "icon": "💼",
+      "title": "Malattia e lavoro",
+      "small": "Certificato di malattia, visita fiscale, orari in cui stare a casa"
+    },
+    {
       "id": "servizi",
       "page": "tessera-e-ricette",
       "short": "Tessera e ricette",
@@ -572,6 +581,42 @@
         {
           "id": "bonus-psicologo",
           "title": "Il bonus psicologo dell'INPS"
+        }
+      ]
+    },
+    {
+      "id": "certificato-malattia",
+      "group": "lavoro",
+      "static": true,
+      "data": [
+        "rules-malattia"
+      ],
+      "icon": "🤒",
+      "title": "Il certificato di malattia per il lavoro",
+      "small": "Lo fa il medico e lo manda all'INPS. Cosa devi controllare tu",
+      "keywords": "certificato malattia malato lavoro lavorare assenza assente medico inps protocollo puc attestato datore di lavoro capo ufficio festivo festivi sabato domenica weekend guardia medica continuita assistenziale ricovero ospedale pronto soccorso cartaceo carta dipendente pubblico privato guarito prima rientro rettifica prognosi dialisi chemioterapia indennita",
+      "pages": [
+        {
+          "id": "festivi-e-ospedale",
+          "title": "Nei giorni di festa, in ospedale, se guarisci prima"
+        }
+      ]
+    },
+    {
+      "id": "visita-fiscale",
+      "group": "lavoro",
+      "static": true,
+      "data": [
+        "rules-malattia"
+      ],
+      "icon": "🏠",
+      "title": "La visita fiscale: quando farti trovare a casa",
+      "small": "Dalle 10 alle 12 e dalle 17 alle 19, anche nei giorni di festa",
+      "keywords": "visita fiscale medico fiscale visita di controllo fasce orarie fascia reperibilita reperibile orari stare a casa uscire campanello assente non mi hanno trovato sanzione multa esonero salvavita invalidita dipendente pubblico privato cambio indirizzo domicilio inps infortunio",
+      "pages": [
+        {
+          "id": "se-non-ti-trovano",
+          "title": "Se il medico non ti trova, o devi cambiare indirizzo"
         }
       ]
     }

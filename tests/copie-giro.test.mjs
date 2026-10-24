@@ -62,6 +62,7 @@ const PAGINE = {
   '/legge': `<html><head><title>Legge</title></head><body><p>${lungo}</p></body></html>`,
   '/decreto': `<html><head><title>Decreto</title></head><body><p>${lungo}</p></body></html>`,
   '/ministero': `<html><head><title>Ministero</title></head><body><p>${lungo}</p></body></html>`,
+  '/gcore': '<html><head><title>Gcore</title></head><body><h1>Please enable cookies</h1><p>This website uses a security service to protect itself from online attacks. The service requires full cookie support to view the website. Enable cookies on your browser and try again.</p><h2>Browser Validation Page</h2><p>www.salute.gov.it is using security service for protection against online attacks. This process is automatic. You will be redirected once the validation is complete.</p><p>Reference ID 62ed87d89e5ddf992814dcf0e7d01302</p><p>IP address 195.231.79.234</p><p>Date and time 10/24/2026 08:56 AM UTC</p></body></html>',
 };
 const FILE = {
   '/modulo.pdf': pdf('Modulo di reclamo URP tel. 0577 535222'),
@@ -111,7 +112,7 @@ function sito() {
   w('data/numeri.json', { groups: [{ id: 'emergenze', items: [{ number: '112', url: `${base}/nazionale` }] }] });
   // Regole nazionali (fonti e provenienza) e pagine dei temi da scrivere.
   w('data/rules-prova.json', { sources: [{ label: 'Legge', url: `${base}/legge` }], provenienza: { soglia: { url: `${base}/decreto`, proof: 'testo' }, altra: { url: `${base}/legge` } } });
-  w('data/fonti-nazionali.json', { temi: [{ id: 'pronto-soccorso', pagine: [{ tipo: 'ministero', url: `${base}/ministero` }] }] });
+  w('data/fonti-nazionali.json', { temi: [{ id: 'pronto-soccorso', pagine: [{ tipo: 'ministero', url: `${base}/ministero` }, { tipo: 'ministero', url: `${base}/gcore` }] }] });
   return s;
 }
 
@@ -155,6 +156,11 @@ test('un giro di copie.mjs su pagine finte', { skip: !conCurl && 'manca curl' },
   const naz = indice(out, 'nazionali');
   assert.deepEqual(naz.filter((p) => p.asl === 'regole-prova').map((p) => p.url).sort(), [`${base}/decreto`, `${base}/legge`]);
   assert.ok(copia(out, 'nazionali', `${base}/ministero`) && naz.find((p) => p.url === `${base}/ministero`).asl === 'tema-pronto-soccorso');
+  // La pagina anti-robot di Gcore (salute.gov.it) non è una copia: si segna e basta.
+  // Il testo è più lungo di 500 caratteri, come quello vero: non basta la regola delle pagine vuote.
+  assert.ok(PAGINE['/gcore'].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').length > 500);
+  const gcore = naz.find((p) => p.url === `${base}/gcore`);
+  assert.ok(!gcore.file && /anti-robot/.test(gcore.nota || ''), JSON.stringify(gcore));
 
   // fonti.json di una regione attiva: la pagina nuova si copia, quella già copiata non si riscarica.
   assert.equal(indice(out, 'prova').find((p) => p.url === `${base}/vecchia-fonte`).asl, 'asl-centro');
