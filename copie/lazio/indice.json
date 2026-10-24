@@ -1,6 +1,6 @@
 {
  "regione": "lazio",
- "aggiornato": "2026-10-24T11:48:02.952Z",
+ "aggiornato": "2026-10-24T16:33:24.016Z",
  "pagine": [
   {
    "asl": "frosinone",
@@ -400,13 +400,8 @@
    "asl": "latina",
    "url": "https://www.salutelazio.it/guardia-medica",
    "controllata": "2026-10-24",
-   "http": 200,
-   "finale": "https://salutelazio.it/it/servizi/guardia-medica",
-   "file": "latina/a14f568f3b2f.txt",
-   "titolo": "Fascicolo Sanitario",
-   "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
-   "caratteri": 2358,
-   "cambiata": false
+   "http": 502,
+   "finale": "https://salutelazio.it/it/servizi/guardia-medica"
   },
   {
    "asl": "latina",
@@ -1518,29 +1513,9 @@
    "http": 200,
    "file": "roma/e0d930024e6e.txt",
    "titolo": "Punto Unico di Accesso (PUA)",
-   "sha": "2601a0764789dd78e17b8f5404008da5b7fa345a939d74a99c445e57d69792d3",
+   "sha": "c99cd1fe071f6752dc86179f25662c83a2d3cf46d5104315f6ab92e0705fed0f",
    "caratteri": 22475,
    "link_pdf": [
-    {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_italiano.pdf",
-     "testo": "SUBSIDIO MENSUAL DE FRECUENCIA"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_-Spagnolo_CORRETTO.pdf",
-     "testo": "قانون 104 / 92"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_arabo.pdf",
-     "testo": "BUWANANG BENEPISYO PARA SA MAY KAPANSANAN"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_Legge_104_Ucraino.pdf",
-     "testo": "LEY 104/92"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_arabo.pdf",
-     "testo": "ЗАКОН 104/92"
-    },
     {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_Tagalog.pdf",
      "testo": "GUIDA SUI SERVIZI SOCIALI E SANITARI PER LA DISABILITÀ"
@@ -1550,8 +1525,8 @@
      "testo": "LEGGE 104/92"
     },
     {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ-Bangla-Rev.pdf",
-     "testo": "LEGEA 104/92"
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_arabo.pdf",
+     "testo": "ЗАКОН 104/92"
     },
     {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_Ucraino.pdf",
@@ -1562,6 +1537,14 @@
      "testo": "ЩОМІСЯЧНА ДОПОМОГА НА ШКОЛЯРІВ З ІНВАЛІДНІСТЮ"
     },
     {
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ-Bangla-Rev.pdf",
+     "testo": "LEGEA 104/92"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_italiano_1_.pdf",
+     "testo": "মাসিক ভাতা"
+    },
+    {
      "url": "https://www.aslroma1.it/uploads/files/39_40_DISABILITY-1.pdf",
      "testo": "الاستفادة النقدیة الشھریة"
     },
@@ -1570,8 +1553,20 @@
      "testo": "INDEMNIZAȚIA LUNARĂ DE FRECVENȚĂ"
     },
     {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_italiano_1_.pdf",
-     "testo": "মাসিক ভাতা"
+     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_arabo.pdf",
+     "testo": "BUWANANG BENEPISYO PARA SA MAY KAPANSANAN"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/47_24_Legge_104_Ucraino.pdf",
+     "testo": "LEY 104/92"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_italiano.pdf",
+     "testo": "SUBSIDIO MENSUAL DE FRECUENCIA"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_-Spagnolo_CORRETTO.pdf",
+     "testo": "قانون 104 / 92"
     }
    ],
    "cambiata": true
@@ -1877,7 +1872,7 @@
    "http": 200,
    "file": "roma/2b46e5d8fe38.txt",
    "titolo": "ASL Roma 2 - Punto Unico di Accesso - PUA",
-   "sha": "71b319dce83e995a90bb18a46d7eaa5ad39f8a6b5ecb9f0f23793a64d897c901",
+   "sha": "834b082daf2134f4aa8d9eff521d9a1f2ab382732ba691c65544dbfb39d28544",
    "caratteri": 11883,
    "email_nascoste": 11,
    "cambiata": true
@@ -1948,7 +1943,7 @@
    "http": 200,
    "file": "roma/3feb23bab29f.txt",
    "titolo": "ASL Roma 2 - UOSD Coordinamento Screening",
-   "sha": "ab0177d65955169315b7caf00b78e67c1f2b05edf8b6df7c2a0bc67d8b2fba15",
+   "sha": "af707050ddbb59c83c2d3cd1c8612498d8058316dc70f79c25b3fce8641cf832",
    "caratteri": 8743,
    "email_nascoste": 3,
    "cambiata": true
@@ -2040,7 +2035,7 @@
    "http": 200,
    "file": "roma/7e7cbafb32a1.txt",
    "titolo": "15.04.05 Liste di attesa",
-   "sha": "2e6257cf4d19c819d2321e4d27e432c63d14e4cccb7b40d6ac943c4a5a6038d7",
+   "sha": "e9fb1b1a91e70de3e29fb71bea54a834568ee17914e3cd1c2e901c2632358169",
    "caratteri": 8672,
    "link_pdf": [
     {
@@ -3403,7 +3398,7 @@
    "http": 200,
    "file": "asl-roma2/2e0f163ef6a3.txt",
    "titolo": "ASL Roma 2 - Guardia Medica",
-   "sha": "9d9d5956dc986a7d456db1ee3c6c3af49508ea004821499367b41b711b1f2b2b",
+   "sha": "9c0495f744fd75c523504f9db1528ca425790fb5f4c6055166f2df509159db56",
    "caratteri": 8091,
    "cambiata": true
   },

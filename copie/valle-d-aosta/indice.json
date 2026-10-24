@@ -1,6 +1,6 @@
 {
  "regione": "valle-d-aosta",
- "aggiornato": "2026-10-24T13:11:03.527Z",
+ "aggiornato": "2026-10-24T17:55:58.204Z",
  "pagine": [
   {
    "asl": "aosta",
@@ -9,8 +9,8 @@
    "http": 200,
    "file": "aosta/8c0e7f3ef863.txt",
    "titolo": "Home",
-   "sha": "4d60409a33099d506923dcd0e699df833bce5db91ca666988a4ee7add9f4e5ad",
-   "caratteri": 9190,
+   "sha": "20b3e26e12067878173d744d019c6ecbdbf36df0ce0fb879e7c6fc92dcdf3854",
+   "caratteri": 7868,
    "cambiata": true
   },
   {
@@ -364,8 +364,12 @@
    "asl": "aosta",
    "url": "https://www.regione.vda.it/sanita/servizi_territorio/emergenza/default_i.asp",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "aosta/51e8ee9f96f1.txt",
+   "titolo": "Emergenza sanitaria - Regione autonoma Valle d'Aosta",
+   "sha": "59d02fa359b9ab13453c9e566714494db206c7974de22135c1ea785eb8989104",
+   "caratteri": 7209,
+   "cambiata": true
   },
   {
    "asl": "aosta",
@@ -439,9 +443,9 @@
    "http": 200,
    "file": "aosta/9ce81fb22998.txt",
    "titolo": "Azienda",
-   "sha": "e76dd078d179091fc85d761f3525d6ffcdf0b6565f3f01677f541c631d084c48",
-   "caratteri": 5606,
-   "cambiata": false
+   "sha": "b32fd7306886f9542b1bb61d6e7b0aec53ebde8bd4af6c69e33c9dd2f65bd255",
+   "caratteri": 5595,
+   "cambiata": true
   },
   {
    "asl": "aosta",

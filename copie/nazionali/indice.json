@@ -1,6 +1,6 @@
 {
  "regione": "nazionali",
- "aggiornato": "2026-10-24T13:26:49.908Z",
+ "aggiornato": "2026-10-24T18:11:09.369Z",
  "pagine": [
   {
    "asl": "urgenze",
@@ -39,8 +39,8 @@
    "finale": "https://azzurro.it/",
    "file": "ascolto/6f8ce0e8bdd0.txt",
    "titolo": "Telefono Azzurro | Sito ufficiale",
-   "sha": "4d4d75d3a5d1422011e98ee30da62aa8e44a6667479ade8963d6309cdb6bc415",
-   "caratteri": 14457,
+   "sha": "8f4d18e113424c1eaf2a5d8eb7b1b6bd13609d2f48f69c1b59325eb9ceb4a533",
+   "caratteri": 14358,
    "link_pdf": [
     {
      "url": "https://azzurro.it/wp-content/uploads/2025/06/documento_2025-1.pdf",
@@ -59,7 +59,7 @@
      "testo": "Dalla parte dei bambini - Dal bisogno alla risposta"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "ascolto",
@@ -296,8 +296,13 @@
    "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/Template_Tutorial_Invio_domanda_ADI.pdf",
    "controllata": "2026-10-24",
    "da_pagina": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.assegno-di-inclusione-adi.html",
-   "http": 0,
-   "errore": "file più grande di 5 MB: non copiato"
+   "http": 200,
+   "file": "regole-adi/d90e1c5026d8.txt",
+   "titolo": "Alis solor sentia peliae nobiscia alit mod mo omnis conem eria dolumquunt",
+   "sha": "584a68ff7ff4bfdbf9797bfbde59e75d2387ca7ece183d1c30f554519b53c524",
+   "caratteri": 23392,
+   "pdf": true,
+   "cambiata": true
   },
   {
    "asl": "regole-adi",
@@ -876,7 +881,7 @@
    "caratteri": 15273,
    "link_pdf": [
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x63241",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x66439",
      "testo": "Modulo per AUTOCERTIFICAZIONE"
     }
    ],
@@ -918,11 +923,11 @@
   },
   {
    "asl": "regole-esenzione",
-   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x63241",
+   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x66439",
    "controllata": "2026-10-24",
    "da_pagina": "https://www.aslcittaditorino.it/prestazioni/esenzione-ticket-per-reddito/",
    "http": 200,
-   "file": "regole-esenzione/cae7ef021416.txt",
+   "file": "regole-esenzione/505ecca0fee7.txt",
    "titolo": "Autocertificazione di esenzione",
    "sha": "0ec5d984b6bd5ef03f12e32ef41b78dfdf250def32f239cb24d846beeee617d9",
    "caratteri": 10878,
@@ -1420,7 +1425,7 @@
    "http": 200,
    "file": "regole-piano/0f06e59a557d.txt",
    "titolo": "Note AIFA | Agenzia Italiana del Farmaco",
-   "sha": "91a6e9f1bcfbcd50933322e0c81c13916f2d6072e815d750d0eea8c60beddc32",
+   "sha": "8d513194f656878c122b8bc657e5b5eef4c01ab463c5485cbcc570fab50a3129",
    "caratteri": 13892,
    "link_pdf": [
     {
@@ -1587,6 +1592,180 @@
    "sha": "7ff51231c8ceb34a091f08ddc44a38ffdb8f157bd5f1341a7ad2b3c03dc5d4f4",
    "caratteri": 3275,
    "cambiata": false
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://www.statoregioni.it/it/conferenza-stato-regioni/sedute-2019/seduta-del-01082019/atti/repertorio-atto-n-143csr/",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-pronto-soccorso/7137685c5a71.txt",
+   "titolo": "Repertorio atto n. 143/CSR",
+   "sha": "8db803ea1c8b0b21cc020f2862b43b721f1764cd366d4c3dee94477a5e7b1e49",
+   "caratteri": 15772,
+   "link_pdf": [
+    {
+     "url": "https://www.statoregioni.it/media/1953/p-01-csr-atto-rep-n-143-01-agosto2019.pdf",
+     "testo": "SCARICA"
+    }
+   ],
+   "cambiata": false
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://www.regione.lombardia.it/sanita/emergenze-e-urgenze/pronto-soccorso",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-pronto-soccorso/0e62576a150d.txt",
+   "titolo": "Pronto Soccorso - Regione Lombardia",
+   "sha": "50b33739a679ff5a0318fa751a39d7e22667bd47c6d6ac12e3d3ec8cc27288ed",
+   "caratteri": 19747,
+   "link_pdf": [
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett42.pdf",
+     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 42/2026"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett41.pdf",
+     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 41/2026"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett40.pdf",
+     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 40/2026"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett39.pdf",
+     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 39/2026"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett38.pdf",
+     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 38/2026"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett37.pdf.pdf",
+     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 37/2026"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett36.pdf.pdf",
+     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 36/2026"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett35.pdf",
+     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 35/2026"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett34.pdf",
+     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 34/2026"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett33.pdf",
+     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 33/2026"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett32.pdf",
+     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 32/2026"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett31.pdf",
+     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 31/2026"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett30.pdf",
+     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 30/2026"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett29.pdf",
+     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 29/2026"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett28.pdf",
+     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 28/2026"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett17.pdf",
+     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 17/2026"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett27.pdf",
+     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 27/2026"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett26.pdf",
+     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 26/2026"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett25.pdf",
+     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 25/2026"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett24.pdf",
+     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 24/2026"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett23%20ok.pdf",
+     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 23/2026"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett22.pdf.pdf",
+     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 22/2026"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett21.pdf.pdf",
+     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 21/2026"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett12.pdf",
+     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 12/2026"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett20ok.pdf.pdf",
+     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 20/2026"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett19.pdf",
+     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 19/2026"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett18.pdf",
+     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 18/2026"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett16.pdf",
+     "testo": "Report sorveglinaza accessi pronto soccorso - Settimana 16/2026"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett15.pdf",
+     "testo": "Report sorveglianza accessi pronto soccorso Settimana 15/2026"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett14.pdf",
+     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 14/2026"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/carte_dei_servizi/cds_asugi_generale_rev_010.pdf",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-pronto-soccorso/e30cb20763c1.txt",
+   "titolo": "CARTA DEI SERVIZI",
+   "sha": "51e9d4544fa6595efc1bda397324c8222f5972e2789abdee17ef6c0f4ba57c67",
+   "caratteri": 96375,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://www.asl8cagliari.it/servizio/servizi-digitali-cup-web/",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-pronto-soccorso/fc53a4a22a4c.txt",
+   "titolo": "Cup web - ASL Cagliari",
+   "sha": "7dcbc30d4aa1c38501c13e7d421b4ba87cb6dfb0c67b21d5eb63f601863984c0",
+   "caratteri": 4163,
+   "email_nascoste": 3,
+   "cambiata": true
   },
   {
    "asl": "regole-psicologo",
@@ -1881,19 +2060,9 @@
    "asl": "tema-pronto-soccorso",
    "url": "https://www.statoregioni.it/media/1953/p-01-csr-atto-rep-n-143-01-agosto2019.pdf",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "file più grande di 5 MB: non copiato"
-  },
-  {
-   "asl": "tema-pronto-soccorso",
-   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2006-12-27;296~art1-com796",
-   "controllata": "2026-10-24",
    "http": 200,
-   "file": "tema-pronto-soccorso/58e39bfc70c2.txt",
-   "titolo": "LEGGE 27 dicembre 2006, n. 296 - Normattiva",
-   "sha": "1df8134519641c05d96b510e4bfeb66542cb890394f96d8cf25c95e289d1af40",
-   "caratteri": 146663,
-   "cambiata": true
+   "pdf": true,
+   "nota": "PDF senza testo (forse una scansione): non copiato"
   },
   {
    "asl": "tema-guardia-medica",
