@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 24/10/2026 — Guardia medica: le fonti nazionali da copiare
+- Le pagine del Ministero sulla guardia medica (continuità assistenziale) e sul 116117 non si copiano: salute.gov.it ha una protezione anti-robot. In `data/fonti-nazionali.json` ci sono ora le fonti dell'Accordo collettivo nazionale della medicina generale: le pagine della SISAC sull'accordo del 4 aprile 2024 e sul testo consolidato del 26 giugno 2026, l'intesa del 15 gennaio 2026 in Gazzetta Ufficiale, l'intesa del 4 aprile 2024 della Conferenza Stato-Regioni (pagina e PDF).
+- `tests/coerenza.test.mjs`: sisac.info tra i siti ufficiali di `fonti-nazionali.json`.
+
 ## 24/10/2026 — Area nuova «Urgenze»: il pronto soccorso
 - Nuova pagina `pronto-soccorso/` (con «I codici del pronto soccorso, da 1 a 5») nell'area nuova `urgenze/`: il triage, i codici di priorità, il ticket, cosa portare.
 - Fonti, tutte lette sulle copie del server del 24/10/2026 (`data/rules-pronto-soccorso.json`): l'accordo Stato-Regioni del 01/08/2019 (Rep. n. 143/CSR, codici numerici da 1 a 5 in tutta Italia, colori a scelta delle Regioni); la pagina della Regione Lombardia sul pronto soccorso (significato dei 5 codici; ticket di 25 euro per il codice bianco alla dimissione); la carta dei servizi dell'ASUGI in Friuli-Venezia Giulia (tempi: 15, 60, 120 e 240 minuti); l'ASL di Cagliari (ticket per codice bianco e verde). Le regole regionali sono scritte come tali.
