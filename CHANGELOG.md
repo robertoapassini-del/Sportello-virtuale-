@@ -15,6 +15,11 @@ Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 - Stesso cambio nel titolo della home («…: come fare») e nella descrizione per Google e WhatsApp.
 - Riga della regione: «Le regole valgono in tutta Italia» (tolto «e i conti», poco chiaro).
 - `tests/seo.test.mjs` controlla la frase nuova.
+## 24/10/2026 — Fascicolo Sanitario: Marche e Trentino-Alto Adige; nuove pagine da copiare per Lombardia, Lazio e Campania
+- Marche: `link.fse` alla pagina dell'AST Fermo sul Fascicolo («Come accedere Fascicolo Sanitario https://fse.sanita.marche.it/it», copia del 23/10/2026), perché il nuovo portale regionale ha risposto 500 alla copia.
+- Trentino-Alto Adige: il Fascicolo è diverso nelle due province, quindi `link.fse` e `regole_fonti.fse` possono essere un elenco `{ in, url }`. Trento: Trentino Salute (servizi online con TreC+); Bolzano: Azienda Sanitaria dell'Alto Adige (myCIVIS, con Carta Servizi, SPID o CIE). Copie del 23/10/2026. L'elenco nelle pagine e il pulsante della cartella clinica mostrano un link per provincia (`tools/pagine.mjs`, `js/cartella.js`); `tests/coerenza.test.mjs` controlla anche gli elenchi.
+- Da copiare (indirizzi trovati con il motore di ricerca sui siti ufficiali il 24/10/2026): Lombardia, la pagina della Regione «I servizi sanitari online» (il sito del Fascicolo non si copia); Lazio, il portale Salute Lazio; Campania, la pagina della Regione sul Fascicolo (Portale Salute del Cittadino, app SINFONIA Salute).
+- L'elenco «Il sito del Fascicolo nella tua regione» ha ora 17 regioni (18 link).
 
 ## 24/10/2026 — Fascicolo Sanitario: link anche per Veneto, Friuli-Venezia Giulia, Calabria e Puglia
 - Le pagine messe in `regole_fonti.fse` il 23/10/2026 sono state copiate dal server la sera stessa (branch `copie-siti`, cartella `regole`). Lette le copie: `verified`, `proof: "pagina"` e la frase in `nota`; poi `link.fse` in `data/regioni/index.json`. Veneto: Portale della Salute («Accedi al Fascicolo Sanitario Elettronico Regionale»); Friuli-Venezia Giulia: SESAMO (copia aperta col browser); Calabria: fascicolosanitario.regione.calabria.it («ACCEDI AL TUO FASCICOLO»); Puglia: la pagina in italiano di PugliaSalute.

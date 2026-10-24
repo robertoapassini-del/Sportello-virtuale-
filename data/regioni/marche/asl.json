@@ -3,8 +3,10 @@
  "model": "AST (Aziende Sanitarie Territoriali)",
  "regole_fonti": {
   "fse": {
-   "url": "https://fse.sanita.marche.it/it",
-   "nota": "Da copiare: «Come accedere Fascicolo Sanitario https://fse.sanita.marche.it/it» nella pagina dell'AST Fermo (copia del 23/10/2026); il vecchio portale fse-classic dice «Il nuovo Fascicolo Sanitario è disponibile per i cittadini»."
+   "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/servizi-amministrativi/fascicolo-sanitario-elettronico",
+   "verified": "2026-10-23",
+   "proof": "pagina",
+   "nota": "«Come accedere Fascicolo Sanitario https://fse.sanita.marche.it/it … Il Fascicolo Sanitario Elettronico (FSE) è lo strumento digitale messo a disposizione da Regione Marche». Pagina dell'AST Fermo, copia del 23/10/2026. Il nuovo portale fse.sanita.marche.it ha risposto 500 alla copia del 23/10/2026."
   }
  },
  "_note": "Numeri delle 5 AST delle Marche, una per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 22/10/2026 (docs/regola-numeri.md, proof «pagina»). Servono a Numeri utili, cartella clinica, assistenza a casa, cure palliative e medico di famiglia (dal 23/10/2026); le sedi INPS (inps.json) a Invalidità. Si prenota al CUP regionale (800 098798 da fisso). Nelle Marche il 116117 non è ancora attivo: per la guardia medica solo i numeri trovati nelle copie. «pagine»: indirizzi ufficiali in più che il server deve copiare (tools/copie.mjs).",

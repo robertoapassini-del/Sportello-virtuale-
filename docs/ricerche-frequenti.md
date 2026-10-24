@@ -196,7 +196,7 @@ In ordine di priorità (con i numeri del punto 3b). Prima di scrivere: fonte uff
 regione per regione.
 
 0. **Link al fascicolo sanitario di ogni Regione** (non è una pagina nuova, ma è la cosa più cercata). Fatto il
-   23/10/2026 per 11 regioni e il 24/10 per altre 4 (15 su 20), con l'elenco nelle pagine del fascicolo; le altre in `docs/riprendere.md`, punto A.
+   23/10/2026 per 11 regioni e il 24/10 per altre 6 (17 su 20), con l'elenco nelle pagine del fascicolo; le altre in `docs/riprendere.md`, punto A.
 1. **Pronto soccorso e guardia medica.** «codice bianco» porta all'esenzione ticket, «pronto soccorso
    pediatrico» solo ai Numeri utili. Serve una pagina: quando andare, codici colore, ticket del codice bianco
    (cambia per regione: una fonte datata diceva 25 € in Sicilia, da non usare), chi chiamare di notte e nei
@@ -214,7 +214,7 @@ regione per regione.
 - `regional_channel` (portale o app di prenotazione della Regione) è vuoto in tutte le 20 regioni.
 - `local_name` (come si chiama il percorso di tutela) c'è solo in Sicilia, Toscana, Liguria e Valle d'Aosta;
   in Emilia-Romagna è «da verificare».
-- `link.fse` (fascicolo della Regione): 15 regioni su 20 il 24/10/2026, vedi il punto 0 qui sopra.
+- `link.fse` (fascicolo della Regione): 17 regioni su 20 il 24/10/2026, vedi il punto 0 qui sopra.
 - Le parole «sovracup» e «aspconte» nelle parole chiave valgono solo per la Sicilia. I nomi trovati il 23/10/2026
   (punto 3b, n. 6) si aggiungono quando sono nei dati della regione con la fonte.
 

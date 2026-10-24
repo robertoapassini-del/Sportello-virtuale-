@@ -264,10 +264,11 @@ const BLOCKS = {
   // regole_fonti.fse del file della regione). Scritto nella pagina: si legge anche senza JavaScript, e Google lo
   // trova quando si cerca «fascicolo sanitario» con il nome della regione (docs/ricerche-frequenti.md, punto 3b).
   'fse-regioni': () => {
+    // Dove il Fascicolo cambia da zona a zona (Trentino-Alto Adige: Trento e Bolzano) link.fse è un elenco { in, url }.
     const con = regioni.regioni.filter((r) => r.link && r.link.fse).sort((a, b) => a.name.localeCompare(b.name, 'it'));
-    const dove = (r) => r.in || `in ${r.name}`;
+    const voci = con.flatMap((r) => (Array.isArray(r.link.fse) ? r.link.fse : [{ in: r.in || `in ${r.name}`, url: r.link.fse }]));
     return `<ul class="fse-regioni">
-${con.map((r) => `<li><a href="${esc(r.link.fse)}" target="_blank" rel="noopener">Fascicolo sanitario ${esc(dove(r))}</a></li>`).join('\n')}
+${voci.map((v) => `<li><a href="${esc(v.url)}" target="_blank" rel="noopener">Fascicolo sanitario ${esc(v.in)}</a></li>`).join('\n')}
 </ul>
 <p>Per le altre regioni cerca «fascicolo sanitario» e il nome della regione sul sito della Regione.</p>`;
   },

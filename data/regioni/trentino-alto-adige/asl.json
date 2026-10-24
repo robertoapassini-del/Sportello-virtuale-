@@ -1,6 +1,24 @@
 {
  "region": "Trentino-Alto Adige",
  "model": "Aziende sanitarie provinciali",
+ "regole_fonti": {
+  "fse": [
+   {
+    "in": "in provincia di Trento",
+    "url": "https://www.trentinosalute.net/Argomenti/INNOVAZIONE-E-RICERCA/Fascicolo-sanitario-elettronico-FSE",
+    "verified": "2026-10-23",
+    "proof": "pagina",
+    "nota": "«Fascicolo sanitario elettronico (FSE) - Trentino Salute»: servizi online «accessibili dalla piattaforma TreC+». Copia del 23/10/2026."
+   },
+   {
+    "in": "in provincia di Bolzano",
+    "url": "https://www.asdaa.it/it/one/fascicolo-sanitario-elettronico",
+    "verified": "2026-10-23",
+    "proof": "pagina",
+    "nota": "«Il Fascicolo sanitario elettronico è consultabile accedendo nell’apposita sezione della Rete civica myCIVIS … tra la Carta Servizi, lo SPID o la Carta d’identità elettronica (CIE)». Azienda Sanitaria dell'Alto Adige, copia del 23/10/2026."
+   }
+  ]
+ },
  "_note": "Numeri delle aziende sanitarie di Trento (Asuit) e dell'Alto Adige (ASDAA) per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Servono a Numeri utili e, con i numeri dello screening, a Prevenzione (data/regioni/index.json, «moduli»). A Trento la guardia medica è il 116117; a Bolzano le pagine dell'azienda non si sono lasciate copiare e i numeri sono pochi.",
  "asl": [
   {
