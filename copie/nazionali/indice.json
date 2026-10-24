@@ -1,6 +1,6 @@
 {
  "regione": "nazionali",
- "aggiornato": "2026-10-24T20:24:47.271Z",
+ "aggiornato": "2026-10-24T22:46:07.931Z",
  "pagine": [
   {
    "asl": "urgenze",
@@ -558,9 +558,9 @@
    "http": 200,
    "file": "regole-contrassegno-disabili/206ded71e91b.txt",
    "titolo": "Polizia Municipale - Comune di Palermo",
-   "sha": "7fc9a005ea4b821cd298d531ce0c05af599d19521e425642ffd0cd9ffe5d371f",
-   "caratteri": 6491,
-   "cambiata": false
+   "sha": "ef79b8181f0617e0746c46c8b6fabaffe5fb5a0d4b6cb645fdea37c407a468c6",
+   "caratteri": 1872,
+   "cambiata": true
   },
   {
    "asl": "regole-cure-fuori-regione",
@@ -881,7 +881,7 @@
    "caratteri": 15273,
    "link_pdf": [
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x85460",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x35784",
      "testo": "Modulo per AUTOCERTIFICAZIONE"
     }
    ],
@@ -923,11 +923,11 @@
   },
   {
    "asl": "regole-esenzione",
-   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x85460",
+   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x35784",
    "controllata": "2026-10-24",
    "da_pagina": "https://www.aslcittaditorino.it/prestazioni/esenzione-ticket-per-reddito/",
    "http": 200,
-   "file": "regole-esenzione/e6ff5846fdca.txt",
+   "file": "regole-esenzione/5cda14743741.txt",
    "titolo": "Autocertificazione di esenzione",
    "sha": "0ec5d984b6bd5ef03f12e32ef41b78dfdf250def32f239cb24d846beeee617d9",
    "caratteri": 10878,
@@ -1029,7 +1029,7 @@
    "titolo": "Continuità Assistenziale (ex Guardia Medica) - ASP Basilicata",
    "sha": "06fdcf9a02323b61e77b06e7e70a3e2e93a79daf9c85fded47b123e13dbee531",
    "caratteri": 3878,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-guardia-medica",
@@ -1041,7 +1041,7 @@
    "titolo": "Continuità assistenziale (guardia medica) - SERVIZIO SANITARIO REGIONALE EMILIA-ROMAGNA",
    "sha": "1791de1c54eaa4277707cb59ec566a02a2ba9c06c58a2f6f7356ecdfbe77d751",
    "caratteri": 5500,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-guardia-medica",
@@ -1052,7 +1052,7 @@
    "titolo": "116117 Numero Unico Europeo per la Sanità NON Urgente | ARCS",
    "sha": "75b83bf31a06f039e5ff06be2f9b2a4646675743f20a955b2a91b47dbd1eca01",
    "caratteri": 3760,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-guardia-medica",
@@ -1592,7 +1592,7 @@
    "http": 200,
    "file": "regole-piano/0f06e59a557d.txt",
    "titolo": "Note AIFA | Agenzia Italiana del Farmaco",
-   "sha": "8d513194f656878c122b8bc657e5b5eef4c01ab463c5485cbcc570fab50a3129",
+   "sha": "91a6e9f1bcfbcd50933322e0c81c13916f2d6072e815d750d0eea8c60beddc32",
    "caratteri": 13892,
    "link_pdf": [
     {
@@ -1612,7 +1612,7 @@
      "testo": "Piano terapeutico per prescrizione SSN di Lamivudina (ex Nota 32 bis) [0.04 Mb] [PDF] >"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "regole-piano",
@@ -2019,9 +2019,9 @@
    "http": 200,
    "file": "regole-ricorso/be52f8679d51.txt",
    "titolo": "Gazzetta Ufficiale",
-   "sha": "1660de78f1155ee0a2ee147eab36f52a676e3792f07c97b1abe265c83771f11d",
-   "caratteri": 3099,
-   "cambiata": false
+   "sha": "4b259004b55ac0496b86dff59cbc62aaee11c27ed4b8f982f5153b143d635759",
+   "caratteri": 3137,
+   "cambiata": true
   },
   {
    "asl": "regole-ricorso",
@@ -2232,6 +2232,78 @@
    "nota": "PDF senza testo (forse una scansione): non copiato"
   },
   {
+   "asl": "tema-pronto-soccorso",
+   "url": "https://www.regione.piemonte.it/governo/bollettino/abbonati/2021/17/attach/dgr_03088_1050_16042021.pdf",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "tema-pronto-soccorso/352f1315a44f.txt",
+   "titolo": "DGR_03088_1050_16042021_pdf",
+   "sha": "dcdacb0d59bbc7542316797fa2c3b345bbfca91a00abd0f117607ebe2292bd67",
+   "caratteri": 122100,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-pronto-soccorso",
+   "url": "https://servizissiir.regione.emilia-romagna.it/deliberegiunta/servlet/AdapterHTTP?action_name=ACTIONRICERCADELIBERE&operation=downloadTesto&codProtocollo=GPG/2021/1291&ENTE=1",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "tema-pronto-soccorso/c36aa6cd0448.txt",
+   "titolo": "REGIONE EMILIA-ROMAGNA",
+   "sha": "04239e4ba0b988f4f190f6f715f6481ed895de67867cc74cbf18417dd67f4324",
+   "caratteri": 69586,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-pronto-soccorso",
+   "url": "https://bur.regione.veneto.it/BurvServices/pubblica/Download.aspx?name=Dgr_1035_19_AllegatoA_401204.pdf&type=9&storico=False",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "tema-pronto-soccorso/e20466c78f16.txt",
+   "titolo": "ALLEGATO A DGR nr. 1035 del 12 luglio 2019 pag. 1 di 7",
+   "sha": "c3ba4a360e4b0e699f53bf83d49c8a29e132e1e4abd77a03da6255b032cd4108",
+   "caratteri": 17866,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-pronto-soccorso",
+   "url": "https://burp.regione.puglia.it/documents/20135/2153768/DEL_266_2023.pdf/057757e7-8a1d-5924-f897-a80bc8a771a9?version=1.0&t=1683116430246",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "tema-pronto-soccorso/e688133819d0.txt",
+   "titolo": "28100 Bollettino Ufficiale della Regione Puglia - n. 41 del 3-5-2023",
+   "sha": "66c86862f2b9a067daf6800ed1a312ab9f465260045e08d959ac33e44eb70112",
+   "caratteri": 102309,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-pronto-soccorso",
+   "url": "https://www.regione.lazio.it/sites/default/files/2023-05/Manuale%20Regionale%20Triage%20Intra-ospedaliero%20Modello%20Lazio%20a%20cinque%20codici%20%E2%80%93%20anno%202022.pdf",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "tema-pronto-soccorso/2bfb3cbb00e3.txt",
+   "titolo": "Manuale regionale Triage intra-ospedaliero modello Lazio a cinque codici",
+   "sha": "704010c08b513a6f5b3d69aa5e7130b79ce395c7fc97a6897a944eaa311395fd",
+   "caratteri": 1055088,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-pronto-soccorso",
+   "url": "https://burc.regione.campania.it/eBurcWeb/directServlet?DOCUMENT_ID=00147924&ATTACH_ID=225928",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "tema-pronto-soccorso/ff37b8c5caf3.txt",
+   "titolo": "Indicazioni per l’organizzazione del",
+   "sha": "1f5be2738b7cdbebf2a009a396f3c914dea529b5a63ae35e54ffc7b5845b0cec",
+   "caratteri": 178252,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
    "asl": "tema-guardia-medica",
    "url": "https://www.salute.gov.it/new/en/tema/nuova-assistenza-distrettuale/116117-european-non-emergency-call-number-5/",
    "controllata": "2026-10-24",
@@ -2286,7 +2358,7 @@
    "titolo": "SISAC - Struttura Interregionale Sanitari Convenzionati",
    "sha": "4bf490a58318059223730344bfb89d2827823b6a71a54f554a37e74198b2b324",
    "caratteri": 2924,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "tema-guardia-medica",
@@ -2297,7 +2369,7 @@
    "titolo": "Gazzetta Ufficiale",
    "sha": "28409463b54192d078277850549d88ff586d0ec1661b31bd9357d7b422c041a8",
    "caratteri": 1021,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "tema-guardia-medica",
@@ -2314,7 +2386,7 @@
      "testo": "SCARICA"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "tema-guardia-medica",
@@ -2326,7 +2398,7 @@
    "sha": "29c05864bbb281c64316603c1b424354bb4f274cc34611c77ca538f5a9d4e73a",
    "caratteri": 350171,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   }
  ]
 }

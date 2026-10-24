@@ -1,6 +1,6 @@
 {
  "regione": "trentino-alto-adige",
- "aggiornato": "2026-10-24T20:02:37.187Z",
+ "aggiornato": "2026-10-24T22:23:38.196Z",
  "pagine": [
   {
    "asl": "bolzano",
@@ -59,7 +59,7 @@
    "titolo": "Prenotazione | Azienda Sanitaria dell'Alto Adige",
    "sha": "05ff7201f7b12e094c1b11e4feebf3363f00d4ab73cdbf1be189792578d66fb8",
    "caratteri": 9264,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -125,13 +125,8 @@
    "asl": "bolzano",
    "url": "https://home.asdaa.it/m/it/contatti.asp",
    "controllata": "2026-10-24",
-   "http": 200,
-   "finale": "https://home.asdaa.it/ricerca/ricerca.asp?404;m/it/contatti.asp",
-   "file": "bolzano/0374f6fa570c.txt",
-   "titolo": "Cerca | Azienda Sanitaria dell'Alto Adige",
-   "sha": "29f6e726c6a96a355d66b1de50e9c9134becbb28db6fbe72d4919d89929834d0",
-   "caratteri": 6973,
-   "cambiata": false
+   "http": 0,
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "bolzano",
@@ -154,22 +149,16 @@
    "http": 200,
    "file": "bolzano/55ed5d9f3c74.txt",
    "titolo": "Info per pazienti e visitatori | Ospedale di Bolzano",
-   "sha": "87cba349147bc9564e477d7a2f5bbd64143c65d1b80b07b2130c2bdb410585df",
-   "caratteri": 24600,
-   "cambiata": false
+   "sha": "9105d4773204a135566c7acd74cf69de44f1dc743edde377bfeda23d64bfb534",
+   "caratteri": 24473,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
    "url": "https://home.sabes.it/it/ospedali/bolzano/segnalazioni-e-reclami.asp",
    "controllata": "2026-10-24",
-   "browser": true,
-   "http": 200,
-   "finale": "https://www.asdaa.it/it/ospedali",
-   "file": "bolzano/aea8b401c57d.txt",
-   "titolo": "Ospedali | Azienda Sanitaria dell’Alto Adige",
-   "sha": "b12403b91ca8df4132a55a626aca024f6e17ca3885c42a3d3e1e3e28e5755bbb",
-   "caratteri": 19997,
-   "cambiata": false
+   "http": 0,
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "bolzano",
@@ -187,13 +176,12 @@
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/medicina-di-base.asp",
    "controllata": "2026-10-24",
-   "browser": true,
    "http": 200,
    "finale": "https://www.asdaa.it/it/servizio-di-medicina-di-base-territorio-bz",
    "file": "bolzano/aa3b128c6f97.txt",
-   "titolo": "Servizio di Medicina di base | Comprensorio Bolzano",
-   "sha": "e8836091903d28884335bc7cb510f6e122ba99abf14c44abf959feb22a8d820c",
-   "caratteri": 31049,
+   "titolo": "Südtiroler Sanitätsbetrieb",
+   "sha": "392d4be341b5601bf3ac0de4fb35ecc68611c7c9a2e451ea79d9bec90721e5ed",
+   "caratteri": 38,
    "cambiata": true
   },
   {
@@ -300,27 +288,14 @@
    "asl": "bolzano",
    "url": "https://home.asdaa.it/prevenzione/prestazioni.asp?bnsv_svid=1008640",
    "controllata": "2026-10-24",
-   "browser": true,
-   "http": 200,
-   "finale": "https://www.asdaa.it/it/prevenzione-salute?bnsv_svid=1008640",
-   "file": "bolzano/fbeef31a6b03.txt",
-   "titolo": "Prevenzione e salute | Azienda Sanitaria dell'Alto Adige",
-   "sha": "4a5c682adb8e5fa06ec37f92f6309af07a12aca6dfe4f79be3844468fd6abdb1",
-   "caratteri": 21924,
-   "cambiata": false
+   "http": 503
   },
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/servizi-informazione.asp?bnsv_svid=1032224",
    "controllata": "2026-10-24",
-   "browser": true,
-   "http": 200,
-   "finale": "https://www.asdaa.it/it/servizi",
-   "file": "bolzano/bbc0f1d38083.txt",
-   "titolo": "I servizi in myCIVIS - Azienda Sanitaria dell'Alto Adige",
-   "sha": "9c37d2d197ea62bfceac1d94a09010533e9af772ec585da181d12024ca5171ab",
-   "caratteri": 22424,
-   "cambiata": false
+   "http": 0,
+   "errore": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received"
   },
   {
    "asl": "bolzano",
@@ -331,9 +306,9 @@
    "finale": "https://www.asdaa.it/it/servizi",
    "file": "bolzano/1a6f833fe6c4.txt",
    "titolo": "I servizi in myCIVIS - Azienda Sanitaria dell'Alto Adige",
-   "sha": "762515db464f1e5bef09388c32ac94b605fd70f67be30b3255436ae3f0f53f92",
-   "caratteri": 22343,
-   "cambiata": false
+   "sha": "0b2c689d09453cce5a2d9897215f7803a72f599ba2e05684e7deaa7129ad23e4",
+   "caratteri": 22291,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
@@ -408,27 +383,25 @@
    "asl": "bolzano",
    "url": "https://www.sabes.it/it/ospedali/bressanone/3779.asp?addt_apid=53297",
    "controllata": "2026-10-24",
-   "browser": true,
    "http": 200,
-   "finale": "https://www.asdaa.it/it/ospedali?addt_apid=53297",
+   "finale": "https://www.asdaa.it/it/ospedali/bressanone/3779.asp?addt_apid=53297",
    "file": "bolzano/992adf74401f.txt",
-   "titolo": "Ospedali | Azienda Sanitaria dell’Alto Adige",
-   "sha": "b12403b91ca8df4132a55a626aca024f6e17ca3885c42a3d3e1e3e28e5755bbb",
-   "caratteri": 19997,
-   "cambiata": false
+   "titolo": "Südtiroler Sanitätsbetrieb",
+   "sha": "392d4be341b5601bf3ac0de4fb35ecc68611c7c9a2e451ea79d9bec90721e5ed",
+   "caratteri": 38,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/tempi-di-prenotazione.asp",
    "controllata": "2026-10-24",
-   "browser": true,
    "http": 200,
    "finale": "https://www.asdaa.it/it/informazioni-sulle-liste-d-attesa-e-sulle-classi-di-priorita",
    "file": "bolzano/28039e100121.txt",
-   "titolo": "Azienda Sanitaria dell’Alto Adige",
-   "sha": "d52b31d3feaefb7d6c46b0c8b90f9b259d927e3ac00bffcf7119da0388024aef",
-   "caratteri": 2297,
-   "cambiata": false
+   "titolo": "Südtiroler Sanitätsbetrieb",
+   "sha": "392d4be341b5601bf3ac0de4fb35ecc68611c7c9a2e451ea79d9bec90721e5ed",
+   "caratteri": 38,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
@@ -722,14 +695,9 @@
    "asl": "trento",
    "url": "https://www.apss.tn.it/Azienda/Unita-operative-e-strutture/Ufficio-rapporti-con-il-pubblico-URP",
    "controllata": "2026-10-24",
-   "http": 200,
-   "finale": "https://www.asuit.tn.it/",
+   "http": 0,
    "certificato": "non valido",
-   "file": "trento/00438a822dda.txt",
-   "titolo": "Homepage | ASUIT Trento",
-   "sha": "4f38db5e191452e904defd20556f591d757ccca8a665c04c118e3a2bf501ad4e",
-   "caratteri": 10837,
-   "cambiata": false
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "trento",
@@ -765,7 +733,7 @@
    "titolo": "TEMPI DI ATTESA - Trentino Salute",
    "sha": "1d4898ec7137e57bd87560f0e146b0b2ffc50f2ee35e253e2534ebb95f89aba9",
    "caratteri": 7303,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -776,7 +744,7 @@
    "titolo": "SERVIZI DI EMERGENZA E URGENZA E TRASPORTI SANITARI",
    "sha": "d529b0c447f2cae8f61af4b52776dbbe82e4d2bc63b2ca8779f4435253d7691f",
    "caratteri": 3355,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
