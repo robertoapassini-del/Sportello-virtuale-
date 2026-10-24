@@ -1,6 +1,6 @@
 {
  "regione": "lazio",
- "aggiornato": "2026-10-24T07:18:22.418Z",
+ "aggiornato": "2026-10-24T09:33:25.976Z",
  "pagine": [
   {
    "asl": "frosinone",
@@ -383,7 +383,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -392,9 +392,9 @@
    "http": 200,
    "file": "latina/1b6a08522663.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "ce21a63b1dc01e21429e11f4a4d7d3560e05c4c5a8985260c2c21f06b0be1818",
+   "sha": "25015c5b43a61366d98477466f983899fc94941dc880c12de5946d252a06aee3",
    "caratteri": 4170,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -463,7 +463,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -480,7 +480,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -540,7 +540,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -597,7 +597,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -618,7 +618,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -656,7 +656,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -708,7 +708,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -721,7 +721,7 @@
    "sha": "033e10f93f8bcec21b62b4ddee916546421979ea078e0fcb02186e38a85a7b42",
    "caratteri": 1353,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -734,7 +734,7 @@
    "sha": "6a907d1a7c4d978dedaecdee2f763079fe3840bdcd4666c480f7523e221ec346",
    "caratteri": 379,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -747,7 +747,7 @@
    "sha": "ca2eef49d8b64b575faf506f19bc2e5cda8abc4f1749ff7e642f064c0178a272",
    "caratteri": 831,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -760,7 +760,7 @@
    "sha": "887f01e8b4ba1b932416971f70e11da51320c5de18f8c6a6d0486b698c73f009",
    "caratteri": 2576,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -773,7 +773,7 @@
    "sha": "98711ed65e1c6ec97fb32f2ce256fceadf2ddfee1e2416abde5081a84abfb8ba",
    "caratteri": 4212,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -786,7 +786,7 @@
    "sha": "9024af58dfcdbdbb0a07991752142e91bc7bbcfb3c8d92a54ad3a634a6f494c4",
    "caratteri": 2082,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -799,7 +799,7 @@
    "sha": "224273f8de79871e605c3115d15b3dad9f726d517de836533b6c338dc1ae1980",
    "caratteri": 1720,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -820,7 +820,7 @@
    "sha": "52693066d6234023dc9116ed8945605b2bacc25fd5dad8453951c4530c965d32",
    "caratteri": 1487,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -833,7 +833,7 @@
    "sha": "ff364de138a3cdfedb017135316b828199d4353e6b950b0a1254d3286bb46b95",
    "caratteri": 2075,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -846,7 +846,7 @@
    "sha": "117b2d04eb4955e56a689ed338318ef864ef4302aab41d620add2f3d03f82041",
    "caratteri": 751,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "rieti",
@@ -1518,25 +1518,9 @@
    "http": 200,
    "file": "roma/e0d930024e6e.txt",
    "titolo": "Punto Unico di Accesso (PUA)",
-   "sha": "2c7c2c05ff4f8a542fbad3e5b803b90a4ad4fa86200635aa22b5f4a3bc118d9e",
+   "sha": "c99cd1fe071f6752dc86179f25662c83a2d3cf46d5104315f6ab92e0705fed0f",
    "caratteri": 22475,
    "link_pdf": [
-    {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_arabo.pdf",
-     "testo": "BUWANANG BENEPISYO PARA SA MAY KAPANSANAN"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_Legge_104_Ucraino.pdf",
-     "testo": "LEY 104/92"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_italiano.pdf",
-     "testo": "SUBSIDIO MENSUAL DE FRECUENCIA"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_-Spagnolo_CORRETTO.pdf",
-     "testo": "قانون 104 / 92"
-    },
     {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_Tagalog.pdf",
      "testo": "GUIDA SUI SERVIZI SOCIALI E SANITARI PER LA DISABILITÀ"
@@ -1572,6 +1556,22 @@
     {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_-_Romeno.pdf",
      "testo": "INDEMNIZAȚIA LUNARĂ DE FRECVENȚĂ"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_arabo.pdf",
+     "testo": "BUWANANG BENEPISYO PARA SA MAY KAPANSANAN"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/47_24_Legge_104_Ucraino.pdf",
+     "testo": "LEY 104/92"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_italiano.pdf",
+     "testo": "SUBSIDIO MENSUAL DE FRECUENCIA"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_-Spagnolo_CORRETTO.pdf",
+     "testo": "قانون 104 / 92"
     }
    ],
    "cambiata": true
@@ -1877,7 +1877,7 @@
    "http": 200,
    "file": "roma/2b46e5d8fe38.txt",
    "titolo": "ASL Roma 2 - Punto Unico di Accesso - PUA",
-   "sha": "3f68f85d2934245b9db30c2532b81ebba68f646a9178c02dabe3e11c31260438",
+   "sha": "1bc9aeba779bc1ca75b4afb1042491f025ce2cea8b172ec90338a7e8d9808dbe",
    "caratteri": 11883,
    "email_nascoste": 11,
    "cambiata": true
@@ -1948,7 +1948,7 @@
    "http": 200,
    "file": "roma/3feb23bab29f.txt",
    "titolo": "ASL Roma 2 - UOSD Coordinamento Screening",
-   "sha": "5c43e1bd28c604ca86f692d7dd8055633f15bd9509f0d0b1ff8df0a27774452a",
+   "sha": "ab6efd7280bf3ca1c06f44acb8777321a85fea1cb42d948dedd3d5d88faf6d29",
    "caratteri": 8743,
    "email_nascoste": 3,
    "cambiata": true
@@ -2040,7 +2040,7 @@
    "http": 200,
    "file": "roma/7e7cbafb32a1.txt",
    "titolo": "15.04.05 Liste di attesa",
-   "sha": "7499a307e740a4d1b33e81103826abb53a7189478ff13118cc2ea50610a22b07",
+   "sha": "cba9404e64dd23f22aa2f39716a3adb14f0266534ce6a49c1eae161f5b05c0d0",
    "caratteri": 8672,
    "link_pdf": [
     {
@@ -3403,7 +3403,7 @@
    "http": 200,
    "file": "asl-roma2/2e0f163ef6a3.txt",
    "titolo": "ASL Roma 2 - Guardia Medica",
-   "sha": "5b8b925a78f22b3bedbfe579557987b88290c5371fb7201bee05c591a3335eb8",
+   "sha": "cbedc0f891540f653fd8ba74f53adb952dc74bce5b68ef3bda39dae248f0d76c",
    "caratteri": 8091,
    "cambiata": true
   },
@@ -3792,7 +3792,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-latina",
@@ -3813,7 +3813,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-latina",
@@ -3830,7 +3830,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-latina",
@@ -3887,7 +3887,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-rieti",

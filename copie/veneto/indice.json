@@ -1,6 +1,6 @@
 {
  "regione": "veneto",
- "aggiornato": "2026-10-24T08:50:54.125Z",
+ "aggiornato": "2026-10-24T11:04:40.224Z",
  "pagine": [
   {
    "asl": "belluno",
@@ -591,9 +591,9 @@
    "browser": true,
    "http": 200,
    "file": "venezia/94b10fd120ae.txt",
-   "titolo": "Prenotare o disdire una prestazione",
-   "sha": "a51ae7f9b870c22239253622f0138713b1c93868e8e1172cca209c15cb31b6b6",
-   "caratteri": 4153,
+   "titolo": "ULSS 3 SERENISSIMA - Prenotare o disdire una prestazione",
+   "sha": "24cb0231314153f570e3aa81d3f988c1fc648ed27bbd901b52da8962850af619",
+   "caratteri": 4174,
    "cambiata": true
   },
   {
@@ -751,7 +751,7 @@
    "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
    "sha": "3436cb4ccb06982efa76a6f058e98451c4ee687e5cd4f825116d73204212fa0d",
    "caratteri": 3793,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -796,11 +796,13 @@
    "asl": "venezia",
    "url": "https://www.aulss4.veneto.it/home/numeri-utili/urp",
    "controllata": "2026-10-24",
+   "browser": true,
    "http": 200,
+   "finale": "https://www.aulss4.veneto.it/home",
    "file": "venezia/c6d66422d89c.txt",
    "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
-   "sha": "6bc2275696536324da914a4390835a8856b32ef9c71aa40dd59c0c5b84156a8f",
-   "caratteri": 45,
+   "sha": "732090978b4d4f0c72da874070dd02dd44478b3cbfa60e0ce5260b2ea08664e4",
+   "caratteri": 5121,
    "cambiata": true
   },
   {

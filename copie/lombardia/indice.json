@@ -1,6 +1,6 @@
 {
  "regione": "lombardia",
- "aggiornato": "2026-10-24T07:40:44.572Z",
+ "aggiornato": "2026-10-24T09:55:38.323Z",
  "pagine": [
   {
    "asl": "bergamo",
@@ -159,7 +159,7 @@
    "http": 200,
    "file": "bergamo/1f85c98b9e36.txt",
    "titolo": "Home Page | ASST Papa Giovanni XXIII",
-   "sha": "9f64131a8c58e6395a288a3e6351d1c1640a9853f877559f6b7bbc3989a72a51",
+   "sha": "2d24d8f0e857e2b2ece5c4bb778404b88cb5ce8e041f59af4d7bcb6f1f8585fe",
    "caratteri": 320078,
    "cambiata": true
   },
@@ -2006,9 +2006,9 @@
    "http": 200,
    "file": "cremona/374765fcb8e3.txt",
    "titolo": "ASST Cremona | ASST Cremona",
-   "sha": "9ab30ad1e99dc6b26349ae52e7d7574cb3f99cb05e6f56b0a2ed9aa1a3879134",
-   "caratteri": 2581,
-   "cambiata": false
+   "sha": "4c5efe5b9830b43a82372c287370475bf13c68267153d05a66680429183e8351",
+   "caratteri": 2795,
+   "cambiata": true
   },
   {
    "asl": "cremona",
@@ -4106,19 +4106,34 @@
    "asl": "milano",
    "url": "https://www.asst-melegnano-martesana.it/",
    "controllata": "2026-10-24",
-   "http": 503
+   "http": 200,
+   "file": "milano/58610140905d.txt",
+   "titolo": "ASST Melegnano Martesana",
+   "sha": "2c06bbfc765053e5fdb9e9f0a4b07ad6127bf143adfa47c02065063d1643f538",
+   "caratteri": 8441,
+   "cambiata": true
   },
   {
    "asl": "milano",
    "url": "https://www.asst-melegnano-martesana.it/servizi-territoriali/urp-ufficio-relazioni-con-il-pubblico-32",
    "controllata": "2026-10-24",
-   "http": 503
+   "http": 200,
+   "file": "milano/3eee4e95bfe1.txt",
+   "titolo": "URP - Ufficio Relazioni con il Pubblico - ASST Melegnano Martesana",
+   "sha": "83c79cad15bf2c9a9418b845f6cfe6c9ca2086a68d55d78b901bd86f7bb45a15",
+   "caratteri": 7162,
+   "cambiata": true
   },
   {
    "asl": "milano",
    "url": "https://www.asst-melegnano-martesana.it/servizi-territoriali/punto-unico-di-accesso-pua-20",
    "controllata": "2026-10-24",
-   "http": 503
+   "http": 200,
+   "file": "milano/36bf45b8b2fd.txt",
+   "titolo": "Punto Unico di Accesso PUA - ASST Melegnano Martesana",
+   "sha": "49642b233a5bc581306fc9cd4335f92f4ab91e0286d1c84013e6d7233ca9c26a",
+   "caratteri": 9122,
+   "cambiata": true
   },
   {
    "asl": "milano",
@@ -4630,7 +4645,7 @@
    "url": "http://www.asst-nordmilano.it/urp",
    "controllata": "2026-10-24",
    "http": 0,
-   "errore": "curl: (28) Connection timed out after 30002 milliseconds"
+   "errore": "curl: (28) Connection timed out after 30001 milliseconds"
   },
   {
    "asl": "milano",
@@ -4813,19 +4828,35 @@
    "asl": "milano",
    "url": "https://www.asst-melegnano-martesana.it/servizi-territoriali/prenotazioni-cup-23",
    "controllata": "2026-10-24",
-   "http": 503
+   "http": 200,
+   "finale": "https://www.asst-melegnano-martesana.it/servizi-territoriali/centro-prenotazioni-cup-23",
+   "file": "milano/024f541bb40a.txt",
+   "titolo": "Centro Prenotazioni - CUP - ASST Melegnano Martesana",
+   "sha": "74104b00ed9d88c886ba7de48b06b895b79a5dad8a6eae51e297693dbbc60a44",
+   "caratteri": 8982,
+   "cambiata": true
   },
   {
    "asl": "milano",
    "url": "https://www.asst-melegnano-martesana.it/servizi-territoriali/continuita-assistenziale-ex-guardia-medica-8",
    "controllata": "2026-10-24",
-   "http": 503
+   "http": 200,
+   "file": "milano/b1f81ac8b1c0.txt",
+   "titolo": "Continuità Assistenziale – ex Guardia Medica - ASST Melegnano Martesana",
+   "sha": "b59ffccf368baab2b0d85c87eba21cfc2aef11995ddf4238a0bd54456fe74c27",
+   "caratteri": 7993,
+   "cambiata": true
   },
   {
    "asl": "milano",
    "url": "https://www.asst-melegnano-martesana.it/servizi-territoriali/cure-domiciliari-adi-9",
    "controllata": "2026-10-24",
-   "http": 503
+   "http": 200,
+   "file": "milano/40e6e7a51547.txt",
+   "titolo": "Cure Domiciliari A.D.I. - ASST Melegnano Martesana",
+   "sha": "0d00265b7333c4cf90fd7ab46d0ad05a0fb5c04c47a7ff9c44cbcfedb6c4b9d7",
+   "caratteri": 12010,
+   "cambiata": true
   },
   {
    "asl": "milano",
@@ -5227,7 +5258,12 @@
    "asl": "milano",
    "url": "https://www.asst-melegnano-martesana.it/amministrazione-trasparente/servizi-erogati-148/liste-di-attesa-152",
    "controllata": "2026-10-24",
-   "http": 503
+   "http": 200,
+   "file": "milano/91bb0d244f6b.txt",
+   "titolo": "Liste di attesa - ASST Melegnano Martesana",
+   "sha": "f1f5cb1943f0604e8ff9474a72efdfe9fdd0bc5133b1e4f868832aaaebcab93b",
+   "caratteri": 7290,
+   "cambiata": true
   },
   {
    "asl": "milano",
@@ -7227,8 +7263,8 @@
    "http": 200,
    "file": "varese/625ee56036b9.txt",
    "titolo": "Home - ASST Valle Olona",
-   "sha": "acd848fc33466f4c733866f7b9e06c7fa8cec971645a53d09801a06e55dafc33",
-   "caratteri": 4130,
+   "sha": "a95edca23493923b5dacfe1037dab125b189c627bf445f61302b7f11320f1b73",
+   "caratteri": 4186,
    "link_pdf": [
     {
      "url": "https://www.asst-valleolona.it/wp-content/uploads/2026/09/Asst-Valleolona-Carta-dei-Servizi-Busto-Via-Stelvio-09.09.2026-Cartacea.pdf",
@@ -7323,7 +7359,7 @@
      "testo": ""
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "varese",
