@@ -4,7 +4,9 @@
  "regole_fonti": {
   "fse": {
    "url": "https://salute.regione.veneto.it/fse-e-servizi-online/fascicolo-sanitario-elettronico-regionale",
-   "nota": "Da copiare: la sua sottopagina «fse-funzione-delega» è citata nelle copie delle pagine delle ULSS venete (23/10/2026)."
+   "verified": "2026-10-23",
+   "proof": "pagina",
+   "nota": "«Accedi al Fascicolo Sanitario Elettronico Regionale. Nel tuo Fascicolo puoi trovare: I documenti e i referti, La possibilità di cambiare il Medico di famiglia…». Portale della Salute della Regione del Veneto, copia del 23/10/2026."
   }
  },
  "_note": "Numeri delle ULSS del Veneto per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 22/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono a Numeri utili; le sedi INPS (inps.json) a Invalidità. 9 ULSS per 7 province: Venezia (ULSS 3 e ULSS 4) e Vicenza (ULSS 7 e ULSS 8) hanno una voce sola con i contatti di tutte e due e le zone in sub_areas, una per ULSS, per le lettere (vedi il todo). Nel Veneto la guardia medica è il 116117 in tutte le ULSS. «pagine»: indirizzi ufficiali in più che il server deve copiare (tools/copie.mjs).",

@@ -2,6 +2,12 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 24/10/2026 — Fascicolo Sanitario: link anche per Veneto, Friuli-Venezia Giulia, Calabria e Puglia
+- Le pagine messe in `regole_fonti.fse` il 23/10/2026 sono state copiate dal server la sera stessa (branch `copie-siti`, cartella `regole`). Lette le copie: `verified`, `proof: "pagina"` e la frase in `nota`; poi `link.fse` in `data/regioni/index.json`. Veneto: Portale della Salute («Accedi al Fascicolo Sanitario Elettronico Regionale»); Friuli-Venezia Giulia: SESAMO (copia aperta col browser); Calabria: fascicolosanitario.regione.calabria.it («ACCEDI AL TUO FASCICOLO»); Puglia: la pagina in italiano di PugliaSalute.
+- Sicilia: la prova del link ora è la copia della pagina della Regione (23/10/2026).
+- Non copiate: Lombardia (il sito rimanda all'infinito, «troppi redirect», come le altre sue pagine: serve un'altra pagina ufficiale) e Marche (errore 500 del server del portale: si riprova alla prossima copia). Restano anche Lazio, Campania e Trentino-Alto Adige.
+- L'elenco «Il sito del Fascicolo nella tua regione» ha ora 15 regioni.
+
 ## 23/10/2026 — Il link al Fascicolo Sanitario di ogni Regione
 - Il fascicolo sanitario è la cosa più cercata (Google Trends, `docs/ricerche-frequenti.md` punto 3b), ma il sito aveva il link solo per la Sicilia.
 - `data/regioni/index.json`, `link.fse` per 10 regioni nuove, dalle copie del server del 23/10/2026 (branch `copie-siti`): Abruzzo (sanita.regione.abruzzo.it/fse), Basilicata, Emilia-Romagna, Liguria, Molise (pagina dell'ASREM), Piemonte, Sardegna, Toscana (fascicolosanitario.regione.toscana.it), Umbria, Valle d'Aosta. La prova di ognuno è in `regole_fonti.fse` del file della regione: indirizzo, giorno, «pagina» e la frase della pagina tra «…». La Sicilia ha ora la sua prova (fonte della guida, 20/10/2026).

@@ -18,11 +18,11 @@ Nota per continuare da un altro computer o in una nuova sessione con Claude.
 
 A. **Link al fascicolo sanitario di ogni Regione.** Fatto il 23/10/2026 per 10 regioni più la Sicilia (CHANGELOG).
    Resta da fare:
-   - dopo la copia del server (parte da sola quando la PR è su main): Lombardia, Veneto, Friuli-Venezia Giulia,
-     Calabria, Marche, Puglia hanno `regole_fonti.fse` senza `proof`. Per ognuna: leggere la copia in `copie-siti`
-     (`copie/<regione>/regole/`), mettere `verified`, `proof: "pagina"` e la frase in `nota`, poi `link.fse`
-     nell'indice e `npm run pagine`. Se la copia non riesce (Lombardia: le sottopagine davano «troppi redirect»),
-     cercare un'altra pagina ufficiale;
+   - fatto il 24/10/2026 per Veneto, Friuli-Venezia Giulia, Calabria e Puglia (15 regioni in tutto);
+   - Lombardia: la copia di fascicolosanitario.regione.lombardia.it non riesce («troppi redirect», anche per le sue
+     sottopagine). Cercare un'altra pagina ufficiale (Regione Lombardia o un'ATS) che spieghi come entrare e metterla
+     in `regole_fonti.fse` al posto di quella di adesso;
+   - Marche: fse.sanita.marche.it/it ha risposto 500 il 23/10. Guardare la copia successiva: se riesce, prova e link;
    - Lazio e Campania: nelle copie ci sono solo notizie. Trovare la pagina ufficiale del Fascicolo, metterla in
      `regole_fonti.fse` senza `proof`, aspettare la copia;
    - Trentino-Alto Adige: il Fascicolo è diverso a Trento e a Bolzano. Serve un link per zona, non uno per regione;
