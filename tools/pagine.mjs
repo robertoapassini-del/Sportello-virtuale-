@@ -272,6 +272,24 @@ ${voci.map((v) => `<li><a href="${esc(v.url)}" target="_blank" rel="noopener">Fa
 </ul>
 <p>Per le altre regioni cerca «fascicolo sanitario» e il nome della regione sul sito della Regione.</p>`;
   },
+  // Guardia medica: dove risponde il 116117. Dai numeri delle aziende sanitarie di ogni regione attiva (asl.json, in
+  // Sicilia asp.json: «files» nell'indice), che hanno già fonte e prova (docs/regola-numeri.md). Così l'elenco si
+  // aggiorna da solo quando la routine settimanale conferma o cambia un numero.
+  'numero-europeo': () => {
+    const conNumero = (a) => [...(a.phones || []), ...(a.contacts || [])].some((c) => c && String(c.number || '').replace(/\s/g, '') === '116117');
+    const righe = regioni.regioni.filter((r) => r.attiva).map((r) => {
+      const f = `data/regioni/${r.id}/${(r.files && r.files.asl) || 'asl'}.json`;
+      const asl = fs.existsSync(path.join(SITE, f)) ? JSON.parse(read(f)).asl || [] : [];
+      return { r, asl, con: asl.filter(conNumero) };
+    }).filter((x) => x.asl.length).sort((a, b) => a.r.name.localeCompare(b.r.name, 'it'));
+    const tutte = righe.filter((x) => x.con.length === x.asl.length);
+    const parte = righe.filter((x) => x.con.length && x.con.length < x.asl.length);
+    return `<ul class="regioni-116117">
+<li><strong>In tutta la regione</strong>: ${tutte.map((x) => esc(x.r.name)).join(', ')}.</li>
+${parte.length ? `<li><strong>Solo in una parte della regione</strong>: ${parte.map((x) => `${esc(x.r.name)}: ${x.con.map((a) => esc(a.name)).join(', ')}`).join('; ')}.</li>
+` : ''}</ul>
+<p>Nelle altre regioni e zone la guardia medica ha il numero della sua azienda sanitaria: lo trovi nei <a href="../numeri-utili/">numeri utili</a>, scegliendo la tua provincia.</p>`;
+  },
   // Liste d'attesa: tempi massimi per classe di priorità (data/rules.json).
   'classi-priorita': () => {
     const r = dataFile('rules');

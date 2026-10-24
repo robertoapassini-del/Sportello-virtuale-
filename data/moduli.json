@@ -4,10 +4,10 @@
       "id": "urgenze",
       "page": "urgenze",
       "short": "Urgenze",
-      "intro": "Stai male e non puoi aspettare? Qui trovi come funziona il pronto soccorso: il triage, i codici, il ticket. Per un'emergenza chiama subito il 112.",
+      "intro": "Stai male e non puoi aspettare? Qui trovi come funzionano il pronto soccorso e la guardia medica: il triage, i codici, il ticket, il numero 116117. Per un'emergenza chiama subito il 112.",
       "icon": "🚑",
-      "title": "Urgenze e pronto soccorso",
-      "small": "Come funziona il pronto soccorso, i codici del triage, il ticket"
+      "title": "Urgenze, pronto soccorso e guardia medica",
+      "small": "Pronto soccorso, codici del triage, guardia medica e 116117"
     },
     {
       "id": "cure",
@@ -646,6 +646,18 @@
           "title": "I codici del pronto soccorso, da 1 a 5"
         }
       ]
+    },
+    {
+      "id": "guardia-medica",
+      "group": "urgenze",
+      "static": true,
+      "data": [
+        "rules-guardia-medica"
+      ],
+      "icon": "🌙",
+      "title": "La guardia medica: il medico di notte e nei festivi",
+      "small": "Quando c'è, cosa fa, il numero 116117 nella tua regione",
+      "keywords": "guardia medica continuita assistenziale 116117 medico notte sera festivi festivo weekend sabato domenica prefestivo numero chiamare ricetta farmaco certificato malattia visita a casa domicilio ex guardia medica"
     }
   ]
 }
