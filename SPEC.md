@@ -43,8 +43,9 @@ on how to request tutela. Patient associations call it a "Babel" of procedures.
 5. **Never automate CUP/booking portals, logins or CAPTCHAs.** Public *information* pages of the
    ASLs (contacts, opening hours, how-to pages) may be read by a polite, identified script at low
    frequency (once a day, one page at a time, from a server in Italy because many ASL sites refuse
-   foreign connections) to keep the data current. The script only proposes changes; a person
-   approves them. Details: `docs/regioni.md`, «Aggiornamento assistito».
+   foreign connections) to keep the data current. Since 24/10/2026 (owner's decision) the update is
+   automatic: the weekly routine changes a datum only when the official copy proves it, and merges its own
+   pull request when CI is green. Details: `docs/regioni.md`, «Aggiornamento assistito».
 
 ## 3. Tech stack (beginner-friendly)
 

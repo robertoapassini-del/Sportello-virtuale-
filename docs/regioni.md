@@ -246,6 +246,10 @@ di aziende sanitarie. Lo facciamo in tre pezzi, ognuno con un compito solo:
    - `fonti.json`, se c'è, **anche dopo l'attivazione**: ogni azienda nella sua cartella (`asl-roma1`…). Un url già
      copiato per `asl.json` non si scarica una seconda volta. Solo per le regioni in preparazione il server segue anche
      i link della homepage.
+   - Le fonti delle regole nazionali: `sources` e gli url di `provenienza` di ogni `data/rules*.json` (cartelle
+     `nazionali/regole-<file>`), e le pagine dei temi ancora da scrivere, `data/fonti-nazionali.json` (cartelle
+     `nazionali/tema-<id>`): le leggi e le pagine del Ministero e dell'INPS si ricontrollano da sole, e le pagine
+     nuove del sito si scrivono leggendo le copie.
    Le cartelle di aziende che non sono più in nessuno di questi file si cancellano a ogni giro (mai `indice.json`,
    mai la cartella di un'azienda che c'è ancora). Una pagina che non serve più si toglie dal file, non dal server.
    **`pagine[]`** (in `asl.json` e `fonti.json`): le pagine ufficiali da far copiare, che non hanno un campo loro.
@@ -295,13 +299,17 @@ di aziende sanitarie. Lo facciamo in tre pezzi, ognuno con un compito solo:
    `cd /opt/guidasanita && npm install --no-save playwright && sudo npx playwright install --with-deps chromium`.
    Le pagine con CAPTCHA o controllo anti-robot non si copiano neanche così: sono segnate nell'indice e vanno
    sostituite con altre pagine ufficiali.
-2. **Claude confronta e propone.** Una routine settimanale di Claude Code (cloud, inclusa nell'abbonamento) legge
+2. **Claude confronta e corregge.** Una routine settimanale di Claude Code (cloud, inclusa nell'abbonamento) legge
    le copie, le confronta con `data/regioni/<regione>/*.json` e apre una pull request: per ogni numero trovato
    nella pagina ufficiale aggiorna `verified` e `proof: "pagina"`; per ogni numero non trovato, pagina rotta
    (404, indirizzo cambiato) o orario diverso scrive una riga «prima / dopo / fonte» e un `todo`. Non cancella
    mai un numero da sola. Se non c'è niente da cambiare, non apre niente.
-3. **Una persona approva.** Il proprietario legge la pull request dal telefono e fa «merge»: è l'unico gesto umano
-   che resta. I test (`tests/contatti.test.mjs`) continuano a bloccare numeri senza fonte, data o prova.
+3. **La pull request si unisce da sola.** Decisione del proprietario del 24/10/2026: per ora il sito si aggiorna
+   da solo. Quando la copia mostra chiaramente un dato nuovo per lo stesso ufficio (e quello vecchio non c'è più),
+   la routine lo cambia, apre la pull request e la unisce quando la CI è tutta verde. I casi dubbi restano un
+   `todo`. La sicurezza sono i controlli: `tests/contatti.test.mjs` blocca numeri senza fonte, data o prova, e il
+   job «copie» blocca ogni dato nuovo che la copia della pagina ufficiale non conferma. Il testo della routine è in
+   `docs/routine-aggiornamento.md`.
 
 Cosa serve una volta sola: il server (chiave SSH del PC del proprietario, accesso solo con chiave, aggiornamenti
 automatici), la chiave di deploy del server sul repository GitHub (scrittura, serve per il branch `copie-siti`),
