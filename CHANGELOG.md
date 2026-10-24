@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 24/10/2026 — Triage: le linee di indirizzo dalle Regioni
+- L'allegato dell'accordo Stato-Regioni del 01/08/2019 sul triage è arrivato con la copia del 24/10/2026, ma è una scansione: il PDF non ha testo («PDF senza testo»). Le stesse linee di indirizzo nazionali sono negli atti con cui le Regioni le hanno adottate: in `data/fonti-nazionali.json` ci sono ora quelli di Piemonte (DGR del 16/04/2021), Emilia-Romagna (GPG/2021/1291), Veneto (DGR 1035/2019, allegato A), Puglia (DGR 266/2023), Lazio (manuale regionale a cinque codici, 2022) e Campania (BURC). I tempi nazionali si aggiungono alla pagina dei codici dopo averli letti nelle copie.
+- `tests/coerenza.test.mjs`: tra i siti ufficiali di `fonti-nazionali.json` anche quelli delle Regioni e dei loro bollettini (`regione.<nome>.it`).
+
 ## 24/10/2026 — La guardia medica e il 116117
 - Nuova pagina `guardia-medica/` nell'area «Urgenze» (ora «Urgenze, pronto soccorso e guardia medica»): quando c'è, cosa fa e cosa non fa, il certificato di malattia fino a 3 giorni, il 116117.
 - Fonti (`data/rules-guardia-medica.json`), dalle copie del server del 24/10/2026: le pagine ufficiali delle aziende sanitarie di 17 regioni su 20 dicono la notte «dalle 20 alle 8»; nel fine settimana si comincia alle 10 (ASP Basilicata, ASL Cagliari, ASL Roma 5) o alle 8 (Regione Friuli-Venezia Giulia, ARCS) del sabato o del giorno prima della festa. Il certificato fino a 3 giorni lo scrivono le aziende di 14 regioni (per esempio l'AUSL di Modena). Da confermare sull'Accordo collettivo nazionale quando arriva la copia.
