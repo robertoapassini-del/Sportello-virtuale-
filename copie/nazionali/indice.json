@@ -1,6 +1,6 @@
 {
  "regione": "nazionali",
- "aggiornato": "2026-10-24T06:30:31.352Z",
+ "aggiornato": "2026-10-24T08:57:04.405Z",
  "pagine": [
   {
    "asl": "urgenze",
@@ -39,8 +39,8 @@
    "finale": "https://azzurro.it/",
    "file": "ascolto/6f8ce0e8bdd0.txt",
    "titolo": "Telefono Azzurro | Sito ufficiale",
-   "sha": "8f4d18e113424c1eaf2a5d8eb7b1b6bd13609d2f48f69c1b59325eb9ceb4a533",
-   "caratteri": 14358,
+   "sha": "4d4d75d3a5d1422011e98ee30da62aa8e44a6667479ade8963d6309cdb6bc415",
+   "caratteri": 14457,
    "link_pdf": [
     {
      "url": "https://azzurro.it/wp-content/uploads/2025/06/documento_2025-1.pdf",
@@ -59,7 +59,7 @@
      "testo": "Dalla parte dei bambini - Dal bisogno alla risposta"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "ascolto",
@@ -177,6 +177,1883 @@
    "caratteri": 9036,
    "pdf": true,
    "cambiata": false
+  },
+  {
+   "asl": "regole-accompagnamento",
+   "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.indennit-di-accompagnamento-agli-invalidi-civili.html",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-accompagnamento/38a27f90eabe.txt",
+   "titolo": "Portale Inps - Indennità di accompagnamento agli invalidi civili",
+   "sha": "e82cda17ee5cde1690a3221e19242d0292ed7a745b8805e0e141bab751aa67e4",
+   "caratteri": 47267,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-accompagnamento",
+   "url": "https://www.inps.it/it/it/inps-comunica/atti/circolari-messaggi-e-normativa/dettaglio.circolari-e-messaggi.2026.02.messaggio-numero-628-del-23-02-2026_15173.html",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-accompagnamento/7a944df149e0.txt",
+   "titolo": "",
+   "sha": "3767a6cec60e62b43d23b8f036b5d54a33492e9049ccf9183fa1fd40a6658753",
+   "caratteri": 41600,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-accompagnamento",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1980-02-11;18",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-accompagnamento/a9fa2391758f.txt",
+   "titolo": "LEGGE 11 febbraio 1980, n. 18 - Normattiva",
+   "sha": "aa0a7060280c9ea1593ce6595d57814a4042af6303e99405b836e3f9914cf7ce",
+   "caratteri": 5697,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-accompagnamento",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.schede-servizio-strumento.schede-servizi.indennita-di-accompagnamento-per-invalidi-civili-50612.html",
+   "controllata": "2026-10-24",
+   "http": 404,
+   "finale": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.indennita-di-accompagnamento-per-invalidi-civili-50612.html"
+  },
+  {
+   "asl": "regole-adi",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.03.assegno-di-inclusione-addio-al-mese-di-stop.html",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-adi/671003747518.txt",
+   "titolo": "Portale Inps - Assegno di Inclusione: addio al mese di stop",
+   "sha": "d9e6c068e42c6a7340a6dfa915cc4e0ca29d729eea9df87e87e4f647e4562b21",
+   "caratteri": 43350,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-adi",
+   "url": "https://www.lavoro.gov.it/notizie/pagine/adi-cosa-cambia-con-la-legge-di-bilancio-2026",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-adi/e5b8f825865b.txt",
+   "titolo": "ADI: cosa cambia con la Legge di Bilancio 2026 | Ministero del Lavoro e delle Politiche Sociali",
+   "sha": "b6bc9ba047441c44ccf710b3c4a96cabe41dc329896d025f1b05506d5104bf15",
+   "caratteri": 8362,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-adi",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.assegno-di-inclusione-adi.html",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-adi/9d2cb0a5b4db.txt",
+   "titolo": "Portale Inps - Assegno di Inclusione (ADI)",
+   "sha": "a0702345596bfd33c5db3409b894f20202750943f35e12ce39294724fa763cc8",
+   "caratteri": 64854,
+   "link_pdf": [
+    {
+     "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/Template_Tutorial_Invio_domanda_ADI.pdf",
+     "testo": "Tutorial ADI: invio domanda"
+    },
+    {
+     "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/TEMPLATE_Tutorial_Gestione_domanda_ADI-24-06-2024.pdf",
+     "testo": "Tutorial ADI: Gestione domanda"
+    },
+    {
+     "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/ALLEGATO_Tutorial_ADI_Istruzioni_gestione_domanda_24-06-2024.pdf",
+     "testo": "Allegato Istruzioni per la gestione della domanda"
+    },
+    {
+     "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/2025/Calendario_pagamenti_ADI_settembre_dicembre_2025.pdf",
+     "testo": "Calendario pagamenti ADI – settembre/dicembre 2025"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "regole-adi",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2023-05-04;48",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-adi/ee6892632fa5.txt",
+   "titolo": "DECRETO-LEGGE 4 maggio 2023, n. 48 - Normattiva",
+   "sha": "8c8605297ea72f71d9fae7f30a0f891365f533788a86af197ff1d45482f93692",
+   "caratteri": 8965,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-adi",
+   "url": "https://www.lavoro.gov.it/stampa-e-media/campagne/pagine/assegno-di-inclusione",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-adi/48e35dc58d7a.txt",
+   "titolo": "Assegno di inclusione | Ministero del Lavoro e delle Politiche Sociali",
+   "sha": "1d40fa5ffaff566f38864353f9143d98896e65eaecbea459ce020224bc4434ce",
+   "caratteri": 7088,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-adi",
+   "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/Template_Tutorial_Invio_domanda_ADI.pdf",
+   "controllata": "2026-10-24",
+   "da_pagina": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.assegno-di-inclusione-adi.html",
+   "http": 0,
+   "errore": "file più grande di 5 MB: non copiato"
+  },
+  {
+   "asl": "regole-adi",
+   "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/TEMPLATE_Tutorial_Gestione_domanda_ADI-24-06-2024.pdf",
+   "controllata": "2026-10-24",
+   "da_pagina": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.assegno-di-inclusione-adi.html",
+   "http": 200,
+   "file": "regole-adi/ab5c3b6f0226.txt",
+   "titolo": "Alis solor sentia peliae nobiscia alit mod mo omnis conem eria dolumquunt",
+   "sha": "90aca87779f49d5196c83ca4d2805bb39842971ac38b1140a7c149a1e1c3d099",
+   "caratteri": 8506,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-adi",
+   "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/ALLEGATO_Tutorial_ADI_Istruzioni_gestione_domanda_24-06-2024.pdf",
+   "controllata": "2026-10-24",
+   "da_pagina": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.assegno-di-inclusione-adi.html",
+   "http": 200,
+   "file": "regole-adi/0c15d4491f0c.txt",
+   "titolo": "Alis solor sentia peliae nobiscia alit mod mo omnis conem eria dolumquunt",
+   "sha": "fc217cadaa078aaa6d3a247d46e6797e8c7affca65a74cb4f1a7ef11cb4b77b7",
+   "caratteri": 9754,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-ausili",
+   "url": "https://www.gazzettaufficiale.it/eli/id/2017/03/18/17A02015/sg",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-ausili/be95c7c22d37.txt",
+   "titolo": "Gazzetta Ufficiale",
+   "sha": "3f7844a6641d6606050a54aa3f959785afa66f20ac4119eac7cdc0481fa942e5",
+   "caratteri": 729,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-ausili",
+   "url": "https://www.aspct.it/azienda/dipartimenti/dipartimenti-sanitari/dipartimento-di-riabilitazione/informazioni-generali/allegati/linee-guida-protesi-DM-332-99.pdf",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-ausili/4586d392af25.txt",
+   "titolo": "procedure protesi",
+   "sha": "1b61f537442067ca50aa6fb102f772691f2a583b67aa73a5e5e55ab883c6dd11",
+   "caratteri": 56639,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-ausili",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:ministero.sanita:decreto:1999-08-27;332",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-ausili/352441699183.txt",
+   "titolo": "DECRETO 27 agosto 1999, n. 332 - Normattiva",
+   "sha": "12527de17a91f6bf4f18ce59b273deb37c93aefd45f79b7f1da2d168c19037ae",
+   "caratteri": 10218,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-ausili",
+   "url": "https://www.salute.gov.it/new/it/tema/livelli-essenziali-di-assistenza/assistenza-protesica/",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-ausili/9d1f50533dda.txt",
+   "titolo": "Gcore",
+   "sha": "61b4a678a29697e6bf89c52dd98b6a064cc18f2f884a8e81ff4342d9eb065f6c",
+   "caratteri": 520,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-ausili",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-ausili/889dffbe2de4.txt",
+   "titolo": "REGIO DECRETO 16 marzo 1942, n. 262 - Normattiva",
+   "sha": "b575cecf075912107cbe45b6faed3f44fed6c986acb90c2d817b9382fd993623",
+   "caratteri": 72890,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-cartella",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2017-03-08;24",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-cartella/edc6f3ca4ed7.txt",
+   "titolo": "LEGGE 8 marzo 2017, n. 24 - Normattiva",
+   "sha": "5ddd5ff36e34859266f332d6b608724abd4e27c67e5cf210d9b019060e41d507",
+   "caratteri": 4558,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-cartella",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1990-08-07;241",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-cartella/35ed50aed302.txt",
+   "titolo": "LEGGE 7 agosto 1990, n. 241 - Normattiva",
+   "sha": "5733597b9bd1dc92ae23b139d2b0c6416e2b4ee8109ff2208b147f2172ac50f9",
+   "caratteri": 5838,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-cartella",
+   "url": "https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/10086913",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-cartella/e8d2327aabff.txt",
+   "titolo": "FAQ in materia di accesso alle cartelle cliniche ai sensi del RGDP - Garante Privacy",
+   "sha": "9786afcd8659b9a0afb5806711d56deb5a11f82c0d47930b788e01bef7089cbe",
+   "caratteri": 2632,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-cartella",
+   "url": "https://www.regione.sicilia.it/fascicolosanitario",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-cartella/e9b99fa3a9b9.txt",
+   "titolo": "Fascicolo Sanitario Elettronico (FSE) | Regione Siciliana",
+   "sha": "c1447f540cd9338187d34ebf4652a569cd03c78171fef59315fd25e036dbcb25",
+   "caratteri": 3161,
+   "link_pdf": [
+    {
+     "url": "https://www.regione.sicilia.it/system/files/2024-02/F.S.E.%20Informativa%20Regione%20Sicilia%20new%20-%2020%20febbraio%202024.pdf",
+     "testo": "F.S.E. Informativa Regione Sicilia new - 20 febbraio 2024.pdf"
+    },
+    {
+     "url": "https://www.regione.sicilia.it/system/files/2025-10/FSE_Consenso_consultazione.pdf",
+     "testo": "FSE_Consenso_consultazione.pdf"
+    },
+    {
+     "url": "https://www.regione.sicilia.it/system/files/2025-10/FSE_Consenso_consultazione_minore.pdf",
+     "testo": "FSE_Consenso_consultazione_minore.pdf"
+    },
+    {
+     "url": "https://www.regione.sicilia.it/system/files/2025-10/FSE_Consenso_consultazione_minore_un_genitore.pdf",
+     "testo": "FSE_Consenso_consultazione_minore_un_genitore.pdf"
+    },
+    {
+     "url": "https://www.regione.sicilia.it/system/files/2025-10/FSE_Consenso_consultazione_minore_genitore_impossibilitato.pdf",
+     "testo": "FSE_Consenso_consultazione_minore_genitore_impossibilitato.pdf"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "regole-cartella",
+   "url": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/dipartimento-pianificazione-strategica/fascicolo-sanitario-elettronico-domande-frequenti",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-cartella/c71176c9b057.txt",
+   "titolo": "Fascicolo Sanitario Elettronico - Domande Frequenti | Regione Siciliana",
+   "sha": "d858e3feb7c6a2a7830f2a41f44c6ab0c0e05dc2892a906c0162f6bc6b6c58d3",
+   "caratteri": 7050,
+   "link_pdf": [
+    {
+     "url": "https://www.regione.sicilia.it/sites/default/files/2025-10/FSE_Consenso_consultazione.pdf",
+     "testo": "specifico modulo"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "regole-cartella",
+   "url": "https://www.salute.gov.it",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "finale": "https://www.salute.gov.it/",
+   "file": "regole-cartella/e6728ca35c1e.txt",
+   "titolo": "Gcore",
+   "sha": "2fd94dfdae70080733577689c00a4c0cd5f7bacc31b3b310b190ad9971b49638",
+   "caratteri": 520,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-cartella",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-cartella/889dffbe2de4.txt",
+   "titolo": "REGIO DECRETO 16 marzo 1942, n. 262 - Normattiva",
+   "sha": "b575cecf075912107cbe45b6faed3f44fed6c986acb90c2d817b9382fd993623",
+   "caratteri": 72890,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-cartella",
+   "url": "https://www.regione.sicilia.it/sites/default/files/2025-10/FSE_Consenso_consultazione.pdf",
+   "controllata": "2026-10-24",
+   "da_pagina": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/dipartimento-pianificazione-strategica/fascicolo-sanitario-elettronico-domande-frequenti",
+   "http": 404
+  },
+  {
+   "asl": "regole-contrassegno-disabili",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1992-12-16;495",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-contrassegno-disabili/de630df996d8.txt",
+   "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 16 dicembre 1992, n. 495 - Normattiva",
+   "sha": "f40f7d3672f4671398e95c59d6d8a3feac9e0702f5a490321dcf6ff9e58635e9",
+   "caratteri": 17731,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-contrassegno-disabili",
+   "url": "https://docs.comune.palermo.it/assistenza-sociale-dettaglio.php?cat=323",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-contrassegno-disabili/0f9cc08769f2.txt",
+   "titolo": "Servizi di cittadinanza sociale - Servizi per Tematica",
+   "sha": "e55dc8c536750e9896fbf5edf01af35d3891e48bf724c532e560a0b8bb978f41",
+   "caratteri": 8274,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-contrassegno-disabili",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1992-04-30;285~art188",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-contrassegno-disabili/fe6770f4c6b7.txt",
+   "titolo": "DECRETO LEGISLATIVO 30 aprile 1992, n. 285 - Normattiva",
+   "sha": "5c88f81a618b214c3235a97e3cc0e56611bdddcd34496e1f3465370bd5b7e24e",
+   "caratteri": 28083,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-contrassegno-disabili",
+   "url": "https://www.brocardi.it/notizie-giuridiche/disabili-nuovo-codice-della-strada-sosta-auto-gratuita-anche-posti/4545.html",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-contrassegno-disabili/aa5e48c6d399.txt",
+   "titolo": "Disabili e nuovo Codice della Strada, sosta auto gratuita anche nei posti blu e attraversamento pi� semplice: le novit� - Brocardi.it",
+   "sha": "3634836c78091399210723a548bc4e52f2eb4efbad6622898b03c887222fcde0",
+   "caratteri": 6549,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-contrassegno-disabili",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1992-12-16;495~art381",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-contrassegno-disabili/c5bf08f8addf.txt",
+   "titolo": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA 16 dicembre 1992, n. 495 - Normattiva",
+   "sha": "a42cf5c9145bba7bd8676f561d5d84038d0f5f8418723d6cf90ff881d9d7744b",
+   "caratteri": 16624,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-contrassegno-disabili",
+   "url": "https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/disabili",
+   "controllata": "2026-10-24",
+   "http": 404
+  },
+  {
+   "asl": "regole-contrassegno-disabili",
+   "url": "https://web.comune.palermo.it/polizia-municipale.php",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-contrassegno-disabili/206ded71e91b.txt",
+   "titolo": "Polizia Municipale - Comune di Palermo",
+   "sha": "d93826fb2d977352806250b32428a7fdd19d27b24ddfb436f02b153535d0fc5a",
+   "caratteri": 6326,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-cure-fuori-regione",
+   "url": "https://regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/dipartimento-pianificazione-strategica/altri-contenuti/direttiva-trasfrontaliera",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-cure-fuori-regione/b3d453b46bb8.txt",
+   "titolo": "Direttiva Transfrontaliera | Regione Siciliana",
+   "sha": "94e61cfa349f466b6b60f97885f5d7a83a7bbccb2d5ad209cc62f1d4b5c6e7fc",
+   "caratteri": 4045,
+   "link_pdf": [
+    {
+     "url": "https://regione.sicilia.it/system/files/2026-02/direttiva_2011-24-ue_del_parlamento_europeo_e_del_consiglio.pdf",
+     "testo": "direttiva_2011-24-ue_del_parlamento_europeo_e_del_consiglio.pdf"
+    },
+    {
+     "url": "https://regione.sicilia.it/system/files/2026-02/d.lgs_._n.38_del_4_marzo_2014.pdf",
+     "testo": "d.lgs_._n.38_del_4_marzo_2014.pdf"
+    },
+    {
+     "url": "https://regione.sicilia.it/system/files/2026-02/linee_guida_del_21_dicembre_2017_sul_rimborso_delle_spese_sanitarie_sostenute_allestero.pdf",
+     "testo": "linee_guida_del_21_dicembre_2017_sul_rimborso_delle_spese_sanitarie_sostenute_allestero.pdf"
+    },
+    {
+     "url": "https://regione.sicilia.it/system/files/2026-02/decreto_ministeriale_16_aprile_2018_n.50.pdf",
+     "testo": "decreto_ministeriale_16_aprile_2018_n.50.pdf"
+    },
+    {
+     "url": "https://regione.sicilia.it/system/files/2026-02/direttiva_assessoriale_regione_siciliana_-_prot._n.9368_dell_11.02.2026.pdf",
+     "testo": "direttiva_assessoriale_regione_siciliana_-_prot._n.9368_dell_11.02.2026.pdf"
+    },
+    {
+     "url": "https://regione.sicilia.it/system/files/2026-02/modulo_di_richiesta_di_autorizzazione_preventiva.pdf",
+     "testo": "modulo_di_richiesta_di_autorizzazione_preventiva.pdf"
+    },
+    {
+     "url": "https://regione.sicilia.it/system/files/2026-02/modulo_di_richiesta_rimborso_spese.pdf",
+     "testo": "modulo_di_richiesta_rimborso_spese.pdf"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "regole-cure-fuori-regione",
+   "url": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/assistenza-sanitaria-indiretta-transfrontaliera-sicilia",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-cure-fuori-regione/42e7e84db165.txt",
+   "titolo": "Assistenza sanitaria indiretta transfrontaliera in Sicilia | Regione Siciliana",
+   "sha": "df384d984e78a83aaba17936b2fdb0b5369fbd7838069a04cdd20d5b767d8420",
+   "caratteri": 4048,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-cure-fuori-regione",
+   "url": "https://www.salute.gov.it/portale/assistenzaSanitaria/dettaglioContenutiAssistenzaSanitaria.jsp?lingua=italiano&id=883&area=Assistenza%20sanitaria&menu=italiani",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-cure-fuori-regione/885b07eedc91.txt",
+   "titolo": "Gcore",
+   "sha": "2fd94dfdae70080733577689c00a4c0cd5f7bacc31b3b310b190ad9971b49638",
+   "caratteri": 520,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-cure-fuori-regione",
+   "url": "https://regione.sicilia.it/system/files/2026-02/linee_guida_del_21_dicembre_2017_sul_rimborso_delle_spese_sanitarie_sostenute_allestero.pdf",
+   "controllata": "2026-10-24",
+   "da_pagina": "https://regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/dipartimento-pianificazione-strategica/altri-contenuti/direttiva-trasfrontaliera",
+   "http": 200,
+   "file": "regole-cure-fuori-regione/c13b5cf1aba0.txt",
+   "titolo": "Microsoft Word - linee guida transfrontaliera 13 02 2018",
+   "sha": "0160b7929a4bae95d4438b18d48ebe13671850196cb7e8a3cff7ad21f35009c7",
+   "caratteri": 151520,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-cure-fuori-regione",
+   "url": "https://regione.sicilia.it/system/files/2026-02/modulo_di_richiesta_di_autorizzazione_preventiva.pdf",
+   "controllata": "2026-10-24",
+   "da_pagina": "https://regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/dipartimento-pianificazione-strategica/altri-contenuti/direttiva-trasfrontaliera",
+   "http": 200,
+   "file": "regole-cure-fuori-regione/96c00e2b0772.txt",
+   "titolo": "REPUBBLICA ITALIANA",
+   "sha": "d3daf7f0cd4d92025b91b8f5311daba7b3fb996c1d36eeacde254d4d80920b67",
+   "caratteri": 3413,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-cure-fuori-regione",
+   "url": "https://regione.sicilia.it/system/files/2026-02/modulo_di_richiesta_rimborso_spese.pdf",
+   "controllata": "2026-10-24",
+   "da_pagina": "https://regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/dipartimento-pianificazione-strategica/altri-contenuti/direttiva-trasfrontaliera",
+   "http": 200,
+   "file": "regole-cure-fuori-regione/2faa912d797b.txt",
+   "titolo": "REPUBBLICA ITALIANA",
+   "sha": "838885a4e88121061e7ec52b12fa27ef630287849926cbd36af4266f8ecf56c3",
+   "caratteri": 3692,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-dentista",
+   "url": "https://www.salute.gov.it/portale/lea/dettaglioContenutiLea.jsp?lingua=italiano&id=4706&area=Lea&menu=ambulatoriale",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-dentista/924658da88e1.txt",
+   "titolo": "Gcore",
+   "sha": "2fd94dfdae70080733577689c00a4c0cd5f7bacc31b3b310b190ad9971b49638",
+   "caratteri": 520,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-dentista",
+   "url": "https://www.salute.gov.it/portale/lea/dettaglioContenutiLea.jsp?lingua=italiano&id=4702&area=Lea&menu=leaEssn",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-dentista/c774b06b8f18.txt",
+   "titolo": "Gcore",
+   "sha": "2fd94dfdae70080733577689c00a4c0cd5f7bacc31b3b310b190ad9971b49638",
+   "caratteri": 520,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-dentista",
+   "url": "https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/detrazioni-spese-sanitarie",
+   "controllata": "2026-10-24",
+   "http": 404
+  },
+  {
+   "asl": "regole-domiciliare",
+   "url": "https://www.gazzettaufficiale.it/eli/id/2017/03/18/17A02015/sg",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-domiciliare/be95c7c22d37.txt",
+   "titolo": "Gazzetta Ufficiale",
+   "sha": "3f7844a6641d6606050a54aa3f959785afa66f20ac4119eac7cdc0481fa942e5",
+   "caratteri": 729,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-domiciliare",
+   "url": "https://www.salute.gov.it/new/it/tema/nuova-assistenza-distrettuale/assistenza-domiciliare/",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-domiciliare/75050115ec89.txt",
+   "titolo": "Gcore",
+   "sha": "2fd94dfdae70080733577689c00a4c0cd5f7bacc31b3b310b190ad9971b49638",
+   "caratteri": 520,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-domiciliare",
+   "url": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-domiciliare/a7255a63705b.txt",
+   "titolo": "Assessorato della salute | Regione Siciliana",
+   "sha": "7ff51231c8ceb34a091f08ddc44a38ffdb8f157bd5f1341a7ad2b3c03dc5d4f4",
+   "caratteri": 3275,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-domiciliare",
+   "url": "https://www.fnopi.it/gli-ordini-provinciali/ricerca-albo/",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-domiciliare/a7b322bffc9b.txt",
+   "titolo": "Ricerca Albo | Iscrizione all’albo di un professionista FNOPI",
+   "sha": "e890be1533711edbba87bfdbdcdc8ef484ae1206299f1cf1e3c2c00721334a03",
+   "caratteri": 11405,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-domiciliare",
+   "url": "https://www.agenziaentrate.gov.it/portale/le-spese-sanitarie-e-i-mezzi-di-ausilio",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-domiciliare/c82f75cd0328.txt",
+   "titolo": "L'Agenzia - Le spese sanitarie e i mezzi di ausilio - Agenzia delle Entrate",
+   "sha": "69c2955d1c17ef78996270a50841ca08df06d44a091fb50fec9899817f65587d",
+   "caratteri": 17873,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-domiciliare",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/2707545/Provvedimento+tracciabilità+oneri+sanitari+e+veterinari.pdf/882b7149-79d6-2941-d04d-6131504a324a",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-domiciliare/d757483402cf.txt",
+   "titolo": "Provvedimento tracciabilità oneri sanitarie 10 2 20",
+   "sha": "565822d2f5b0dbf1a40ab8038981f27e6b1fe3c3165a996574ff4b3729df8464",
+   "caratteri": 5482,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-domiciliare",
+   "url": "https://regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/dipartimento-pianificazione-strategica/altri-contenuti/albo-trasporto-emodializzati",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-domiciliare/964f14d278ab.txt",
+   "titolo": "Albo trasporto emodializzati | Regione Siciliana",
+   "sha": "5496bc118da74d256f01d55f38c53f4f38f8e58d080262874ec39cc6384beb07",
+   "caratteri": 2469,
+   "link_pdf": [
+    {
+     "url": "https://regione.sicilia.it/system/files/2026-10/d.a._n.1993_del_13_ottobre_2011_0.pdf",
+     "testo": "d.a._n.1993_del_13_ottobre_2011.pdf"
+    },
+    {
+     "url": "https://regione.sicilia.it/system/files/2026-10/d.a._n.34_del_16_gennaio_2019.pdf",
+     "testo": "d.a._n.34_del_16_gennaio_2019.pdf"
+    },
+    {
+     "url": "https://regione.sicilia.it/system/files/2026-10/nuovo_modulo_di_richiesta_iscrizione_albo_trasporto_emodializzati.pdf",
+     "testo": "nuovo_modulo_di_richiesta_iscrizione_albo_trasporto_emodializzati.pdf"
+    },
+    {
+     "url": "https://regione.sicilia.it/system/files/2026-10/modulo_per_autocertificazione_antimafia.pdf",
+     "testo": "modulo_per_autocertificazione_antimafia.pdf"
+    },
+    {
+     "url": "https://regione.sicilia.it/system/files/2026-07/albo_trasporto_emodializzati_aggiornato_al_29_luglio_2026.pdf",
+     "testo": "albo_trasporto_emodializzati_aggiornato_al_29_luglio_2026.pdf"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "regole-domiciliare",
+   "url": "https://www.asppalermo.org/wp-content/uploads/2025/04/PT_OTLT.pdf",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-domiciliare/e0205fe70876.txt",
+   "titolo": "REGIONE  SICILIANA",
+   "sha": "3d2b1fd76d9ac3ab99d27ab5e154d5547389f362d2165fd512ac7d1ba3e96350",
+   "caratteri": 3561,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-domiciliare",
+   "url": "https://www.sanitainsicilia.it/sanita-di-prossimita-a-enna-al-via-i-prelievi-di-sangue-a-domicilio-per-i-pazienti-fragili",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "finale": "https://www.sanitainsicilia.it/sanita-di-prossimita-a-enna-al-via-i-prelievi-di-sangue-a-domicilio-per-i-pazienti-fragili/",
+   "certificato": "non valido",
+   "file": "regole-domiciliare/a17dfcfe64c9.txt",
+   "titolo": "Sanità di prossimità a Enna: al via i prelievi di sangue a domicilio per i pazienti fragili",
+   "sha": "ab386c417776f4410e2803799d0ecfaa7c4885da267678417379df23c247a15c",
+   "caratteri": 7173,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-domiciliare",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-domiciliare/889dffbe2de4.txt",
+   "titolo": "REGIO DECRETO 16 marzo 1942, n. 262 - Normattiva",
+   "sha": "b575cecf075912107cbe45b6faed3f44fed6c986acb90c2d817b9382fd993623",
+   "caratteri": 72890,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-domiciliare",
+   "url": "https://regione.sicilia.it/system/files/2026-10/nuovo_modulo_di_richiesta_iscrizione_albo_trasporto_emodializzati.pdf",
+   "controllata": "2026-10-24",
+   "da_pagina": "https://regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/dipartimento-pianificazione-strategica/altri-contenuti/albo-trasporto-emodializzati",
+   "http": 200,
+   "pdf": true,
+   "nota": "PDF senza testo (forse una scansione): non copiato"
+  },
+  {
+   "asl": "regole-domiciliare",
+   "url": "https://regione.sicilia.it/system/files/2026-10/modulo_per_autocertificazione_antimafia.pdf",
+   "controllata": "2026-10-24",
+   "da_pagina": "https://regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/dipartimento-pianificazione-strategica/altri-contenuti/albo-trasporto-emodializzati",
+   "http": 200,
+   "pdf": true,
+   "nota": "PDF senza testo (forse una scansione): non copiato"
+  },
+  {
+   "asl": "regole-esenzione",
+   "url": "https://www.salute.gov.it/new/it/tema/esenzioni-dal-ticket/esenzioni-reddito/",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-esenzione/9182ccb0c353.txt",
+   "titolo": "Gcore",
+   "sha": "709ebf4553b2fdddb1c0af00647ac1cd04d669294ad40c0fba3b034f864fd2f5",
+   "caratteri": 520,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-esenzione",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1993-12-24;537",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-esenzione/b96d6a5c939b.txt",
+   "titolo": "LEGGE 24 dicembre 1993, n. 537 - Normattiva",
+   "sha": "fa72d93a29572d06e74b0c9ce6c5ac0cc14b58ae466123a2858b9e0c5d419b94",
+   "caratteri": 31260,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-esenzione",
+   "url": "https://sistemats1.sanita.finanze.it/portale/esenzioni-da-reddito-cittadini",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-esenzione/2cdbabbe9097.txt",
+   "titolo": "Esenzioni da reddito - Sistema Tessera Sanitaria",
+   "sha": "2a0c583aba2aa636cf4f5644cdfef3ad6c8608a966eec5f99fd9de13c4ba7f49",
+   "caratteri": 2780,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-esenzione",
+   "url": "https://www.ausl.pc.it/it/come-fare-per/esenzioni-e-contributi/esenzioni/esenzioni-dal-pagamento-del-ticket",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-esenzione/5d1aa6460e71.txt",
+   "titolo": "Esenzione ticket per reddito - Azienda Unità Sanitaria Locale di Piacenza",
+   "sha": "4046226f1dc5feff52161a4091f575b80d3de27ce8834a3ba5237c26287b624d",
+   "caratteri": 13522,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-esenzione",
+   "url": "https://www.aslcittaditorino.it/prestazioni/esenzione-ticket-per-reddito/",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-esenzione/8635db92a2f1.txt",
+   "titolo": "Esenzione ticket per reddito | Azienda Sanitaria Locale \"Città di Torino\"",
+   "sha": "08ee8330a01cb96ad3e1de6910dc8c92c2580fef7a417bdb0a20197657161a9f",
+   "caratteri": 15273,
+   "link_pdf": [
+    {
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x58563",
+     "testo": "Modulo per AUTOCERTIFICAZIONE"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "regole-esenzione",
+   "url": "https://www.cr.campania.it/garante-disabili/images/Articoli_2025/28_Aprile_2025_-_Esenzioni_per_invalidità_i_codici.pdf",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-esenzione/0696bab4297c.txt",
+   "titolo": "Esenzioni per invalidità: i codici",
+   "sha": "cd53ae43cefab54c3ae1130091c4e0ff40282b99c2b69fe23b23a0da54594b4c",
+   "caratteri": 4539,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-esenzione",
+   "url": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-esenzione/a7255a63705b.txt",
+   "titolo": "Assessorato della salute | Regione Siciliana",
+   "sha": "7ff51231c8ceb34a091f08ddc44a38ffdb8f157bd5f1341a7ad2b3c03dc5d4f4",
+   "caratteri": 3275,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-esenzione",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-esenzione/889dffbe2de4.txt",
+   "titolo": "REGIO DECRETO 16 marzo 1942, n. 262 - Normattiva",
+   "sha": "b575cecf075912107cbe45b6faed3f44fed6c986acb90c2d817b9382fd993623",
+   "caratteri": 72890,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-esenzione",
+   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x58563",
+   "controllata": "2026-10-24",
+   "da_pagina": "https://www.aslcittaditorino.it/prestazioni/esenzione-ticket-per-reddito/",
+   "http": 200,
+   "file": "regole-esenzione/29f4c21d9cbb.txt",
+   "titolo": "Autocertificazione di esenzione",
+   "sha": "0ec5d984b6bd5ef03f12e32ef41b78dfdf250def32f239cb24d846beeee617d9",
+   "caratteri": 10878,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-fascicolo-e-ricetta",
+   "url": "https://www.regione.sicilia.it/fascicolosanitario",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-fascicolo-e-ricetta/e9b99fa3a9b9.txt",
+   "titolo": "Fascicolo Sanitario Elettronico (FSE) | Regione Siciliana",
+   "sha": "c1447f540cd9338187d34ebf4652a569cd03c78171fef59315fd25e036dbcb25",
+   "caratteri": 3161,
+   "link_pdf": [
+    {
+     "url": "https://www.regione.sicilia.it/system/files/2024-02/F.S.E.%20Informativa%20Regione%20Sicilia%20new%20-%2020%20febbraio%202024.pdf",
+     "testo": "F.S.E. Informativa Regione Sicilia new - 20 febbraio 2024.pdf"
+    },
+    {
+     "url": "https://www.regione.sicilia.it/system/files/2025-10/FSE_Consenso_consultazione.pdf",
+     "testo": "FSE_Consenso_consultazione.pdf"
+    },
+    {
+     "url": "https://www.regione.sicilia.it/system/files/2025-10/FSE_Consenso_consultazione_minore.pdf",
+     "testo": "FSE_Consenso_consultazione_minore.pdf"
+    },
+    {
+     "url": "https://www.regione.sicilia.it/system/files/2025-10/FSE_Consenso_consultazione_minore_un_genitore.pdf",
+     "testo": "FSE_Consenso_consultazione_minore_un_genitore.pdf"
+    },
+    {
+     "url": "https://www.regione.sicilia.it/system/files/2025-10/FSE_Consenso_consultazione_minore_genitore_impossibilitato.pdf",
+     "testo": "FSE_Consenso_consultazione_minore_genitore_impossibilitato.pdf"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "regole-fascicolo-e-ricetta",
+   "url": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/dipartimento-pianificazione-strategica/fascicolo-sanitario-elettronico-domande-frequenti",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-fascicolo-e-ricetta/c71176c9b057.txt",
+   "titolo": "Fascicolo Sanitario Elettronico - Domande Frequenti | Regione Siciliana",
+   "sha": "d858e3feb7c6a2a7830f2a41f44c6ab0c0e05dc2892a906c0162f6bc6b6c58d3",
+   "caratteri": 7050,
+   "link_pdf": [
+    {
+     "url": "https://www.regione.sicilia.it/sites/default/files/2025-10/FSE_Consenso_consultazione.pdf",
+     "testo": "specifico modulo"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "regole-fascicolo-e-ricetta",
+   "url": "https://www.fascicolosanitario.gov.it",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "finale": "https://www.fascicolosanitario.gov.it/portale/home",
+   "file": "regole-fascicolo-e-ricetta/51a9b5c0ac8b.txt",
+   "titolo": "Home - Fascicolo Sanitario Elettronico",
+   "sha": "b83216c05c28dd858228b41111f6d100c052c8cf25468167fefd398af2a7c2e2",
+   "caratteri": 5804,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-fascicolo-e-ricetta",
+   "url": "https://sistemats1.sanita.finanze.it/portale/ricetta-dematerializzata",
+   "controllata": "2026-10-24",
+   "http": 404
+  },
+  {
+   "asl": "regole-fascicolo-e-ricetta",
+   "url": "https://www.gazzettaufficiale.it/atto/serie_generale/caricaArticolo?art.versione=1&art.idGruppo=0&art.flagTipoArticolo=0&art.codiceRedazionale=24A06929&art.idArticolo=5&art.idSottoArticolo=1&art.idSottoArticolo1=10&art.dataPubblicazioneGazzetta=2024-12-27&art.progressivo=0",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-fascicolo-e-ricetta/28ba1b75068c.txt",
+   "titolo": "",
+   "sha": "05f9d916cc2c592fc11d6076c73820feca00d2f69be101a19f7db91d1f2c0b89",
+   "caratteri": 5483,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-fascicolo-e-ricetta",
+   "url": "https://www.regione.sicilia.it/sites/default/files/2025-10/FSE_Consenso_consultazione.pdf",
+   "controllata": "2026-10-24",
+   "da_pagina": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/dipartimento-pianificazione-strategica/fascicolo-sanitario-elettronico-domande-frequenti",
+   "http": 404
+  },
+  {
+   "asl": "regole-invalidita",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-05-03;62",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-invalidita/243e7c818b7c.txt",
+   "titolo": "DECRETO LEGISLATIVO 3 maggio 2024, n. 62 - Normattiva",
+   "sha": "0ac41efd3d374f64a130d5baad7522a1f287384365313036fc1ba34a4bbd2751",
+   "caratteri": 59445,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-invalidita",
+   "url": "https://riformadisabilita.gov.it/valutazione-di-base/",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-invalidita/a88afb9af5c9.txt",
+   "titolo": "Valutazione di base - Riforma Disabilità",
+   "sha": "58fd377bcd806d10b6a0d956af7dcc33c3911156deb815e139b48a9f80396d9b",
+   "caratteri": 14868,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-invalidita",
+   "url": "https://www.disabilita.governo.it/it/notizie/al-via-sperimentazione-riforma-disabilita-in-altre-40-province/",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-invalidita/cb8037740243.txt",
+   "titolo": "Al via sperimentazione riforma disabilità in altre 40 province",
+   "sha": "4ec5a460fb50b2e4f8c1006136eb2184acf64b45b3b190e378501ad4c004e6e3",
+   "caratteri": 3002,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-invalidita",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2006-03-09;80",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-invalidita/9b47cbac8fc2.txt",
+   "titolo": "LEGGE 9 marzo 2006, n. 80 - Normattiva",
+   "sha": "11a0c9cb6649dca26b8bc0fa00386d96c59efcd02d2ef71c8f241c8eb555c480",
+   "caratteri": 3847,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-invalidita",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2014-08-11;114",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-invalidita/dad861dec066.txt",
+   "titolo": "LEGGE 11 agosto 2014, n. 114 - Normattiva",
+   "sha": "aa4142b0bdfc85532e9a9a482ffea32b93d244c64f446324cb3f6f835db7d3e3",
+   "caratteri": 4554,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-invalidita",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.domanda-invalidita-civile-e-accertamento-sanitario-50004.accertamento-sanitario.html",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-invalidita/1b201aa89abf.txt",
+   "titolo": "Portale Inps - Domanda invalidità civile e accertamento sanitario",
+   "sha": "50523104a027d78c47f75d6dd712b5485d40d650a79310c2c9dd7f4d240b0dab",
+   "caratteri": 52374,
+   "link_pdf": [
+    {
+     "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/515KEY-tutorial_allegazione_documentazione_sanitaria_invalidit_civile.pdf",
+     "testo": "tutorial"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "regole-invalidita",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-invalidita/889dffbe2de4.txt",
+   "titolo": "REGIO DECRETO 16 marzo 1942, n. 262 - Normattiva",
+   "sha": "b575cecf075912107cbe45b6faed3f44fed6c986acb90c2d817b9382fd993623",
+   "caratteri": 72890,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-invalidita",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2004-01-09;6",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-invalidita/bc097eb15ff1.txt",
+   "titolo": "LEGGE 9 gennaio 2004, n. 6 - Normattiva",
+   "sha": "b7fd3d16ec9407215fd65de8b2247ecb3fd55fa186f902d72ddcfacef264e5e1",
+   "caratteri": 4215,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-legge-104",
+   "url": "https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/disabili",
+   "controllata": "2026-10-24",
+   "http": 404
+  },
+  {
+   "asl": "regole-legge-104",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50098.indennit-per-permessi-fruiti-dai-lavoratori-per-assistere-familiari-disabili-in-situazione-di-gravit-o-fruiti-dai-lavoratori-disabili.html",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-legge-104/696ccc2b0545.txt",
+   "titolo": "Portale Inps - Permessi legge 104/1992",
+   "sha": "c7ad0511dfa8ffe74a1d4fe733c6f35b6e631d52a38f72b3a3580955f426bec9",
+   "caratteri": 57615,
+   "link_pdf": [
+    {
+     "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/514KEY-tabella_regolamento_per_definizione_termini_di_conclusione.pdf",
+     "testo": "tabella"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "regole-legge-104",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50097.indennit-per-congedi-straordinari-assistenza-familiari-disabili-.html",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-legge-104/301761fdb19d.txt",
+   "titolo": "Portale Inps - Domande di congedi straordinari",
+   "sha": "1677ab72db9043deb58e379d156d98b465894ba683b4bfa4eb23b6e22a955967",
+   "caratteri": 53166,
+   "link_pdf": [
+    {
+     "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/514KEY-tabella_regolamento_per_definizione_termini_di_conclusione.pdf",
+     "testo": "tabella"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "regole-legge-104",
+   "url": "https://servizi2.inps.it/MessaggiZIP/Messaggio%20numero%204805%20del%2016-07-2015.pdf",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-legge-104/002e32de1040.txt",
+   "titolo": "Direzione Centrale Prestazioni a Sostegno del Reddito",
+   "sha": "77d0af850a49fa6197eb0658fc3cb22d42d8d73eb78285ee5f92d560730455cb",
+   "caratteri": 5899,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-legge-104",
+   "url": "https://servizi2.inps.it/MessaggiZIP/Messaggio%20numero%203114%20del%2007-08-2018.pdf",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-legge-104/7bb86052bffa.txt",
+   "titolo": "Direzione Centrale Ammortizzatori Sociali",
+   "sha": "37425ee277aae47466f3a7446a47bcd3d065ef7dab465a38034cb3f26704a32f",
+   "caratteri": 9737,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-legge-104",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1992-02-05;104",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-legge-104/292f49baf598.txt",
+   "titolo": "LEGGE 5 febbraio 1992, n. 104 - Normattiva",
+   "sha": "e4a8c62b55837695cbcf7e615e7e693edc2d4b0fe521100966301eb3c2d6ad59",
+   "caratteri": 5024,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-legge-104",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2025-07-18;106",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-legge-104/ac892b60e86b.txt",
+   "titolo": "LEGGE 18 luglio 2025, n. 106 - Normattiva",
+   "sha": "f30dc774606ac80ed6876017b53a5e26a7130cba03e186fea0cd68e508d99a8c",
+   "caratteri": 8155,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-medico",
+   "url": "https://www.sisac.info/anteprimaNewsHome.do?tipo=WEB&idArea=201011221610481056&idNews=20260624094802420",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-medico/450c08d26e3b.txt",
+   "titolo": "SISAC - Struttura Interregionale Sanitari Convenzionati",
+   "sha": "a1442407145403949b1b58171c96d7686a7c6287216bde41dabc0955ff0664f5",
+   "caratteri": 3614,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-medico",
+   "url": "https://www.salute.gov.it",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "finale": "https://www.salute.gov.it/",
+   "file": "regole-medico/e6728ca35c1e.txt",
+   "titolo": "Gcore",
+   "sha": "921289bc465cb55f76bfee747db234700935b9d9ab0243b3379f285893d234c2",
+   "caratteri": 520,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-medico",
+   "url": "https://sistemats1.sanita.finanze.it",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "finale": "https://sistemats1.sanita.finanze.it/portale/home",
+   "file": "regole-medico/3f6a2c26be3f.txt",
+   "titolo": "Home - Sistema Tessera Sanitaria",
+   "sha": "bb9feaa4854694ff0254eaa5c90b24dc33bde7cac6103c1dccb02dc0da82780a",
+   "caratteri": 7523,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-medico",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-medico/889dffbe2de4.txt",
+   "titolo": "REGIO DECRETO 16 marzo 1942, n. 262 - Normattiva",
+   "sha": "b575cecf075912107cbe45b6faed3f44fed6c986acb90c2d817b9382fd993623",
+   "caratteri": 72890,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-palliative",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2010-03-15;38",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-palliative/790930cf8b43.txt",
+   "titolo": "LEGGE 15 marzo 2010, n. 38 - Normattiva",
+   "sha": "841c360ba9b35677c9cde6832a1a56f1c0228623251bab7a6cb5946f28cf4331",
+   "caratteri": 6248,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-palliative",
+   "url": "https://www.salute.gov.it/new/it/tema/cure-palliative-e-terapia-del-dolore/",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-palliative/b29e861d2346.txt",
+   "titolo": "Gcore",
+   "sha": "921289bc465cb55f76bfee747db234700935b9d9ab0243b3379f285893d234c2",
+   "caratteri": 520,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-palliative",
+   "url": "https://www.fedcp.org/hospice",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-palliative/1fbbfeefdf58.txt",
+   "titolo": "Hospice e Servizi Domiciliari (UCP) in Italia",
+   "sha": "a9b4c50813a61714e4c7e2a37a6056b1971193d688697a56b7b1663e097a7745",
+   "caratteri": 19062,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-palliative",
+   "url": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-palliative/a7255a63705b.txt",
+   "titolo": "Assessorato della salute | Regione Siciliana",
+   "sha": "7ff51231c8ceb34a091f08ddc44a38ffdb8f157bd5f1341a7ad2b3c03dc5d4f4",
+   "caratteri": 3275,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-palliative",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-palliative/889dffbe2de4.txt",
+   "titolo": "REGIO DECRETO 16 marzo 1942, n. 262 - Normattiva",
+   "sha": "b575cecf075912107cbe45b6faed3f44fed6c986acb90c2d817b9382fd993623",
+   "caratteri": 72890,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-piano",
+   "url": "https://www.aifa.gov.it/note-aifa",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-piano/0f06e59a557d.txt",
+   "titolo": "Note AIFA | Agenzia Italiana del Farmaco",
+   "sha": "91a6e9f1bcfbcd50933322e0c81c13916f2d6072e815d750d0eea8c60beddc32",
+   "caratteri": 13892,
+   "link_pdf": [
+    {
+     "url": "https://www.aifa.gov.it/documents/20142/3104101/PT_eritropoietine_ex_nota_12.pdf",
+     "testo": "Piano terapeutico per la prescrizione di eritropoietine (ex Nota 12) [0.51 Mb] [PDF] >"
+    },
+    {
+     "url": "https://www.aifa.gov.it/documents/20142/3104101/PT_fattori_di_crescita_granulocitari_ex_note_30_30bis.pdf",
+     "testo": "Piano terapeutico per prescrizione di Fattori di Crescita Granulocitari (ex Nota 30 e 30 bis) [0.17 Mb] [PDF] >"
+    },
+    {
+     "url": "https://www.aifa.gov.it/documents/20142/648668/piano_terapeutico_interferoni_ex_nota_32.pdf",
+     "testo": "Piano terapeutico per prescrizione SSN di Interferoni (ex Nota 32) [0.05 Mb] [PDF] >"
+    },
+    {
+     "url": "https://www.aifa.gov.it/documents/20142/0/PT_Lamivudina_-_clean.pdf",
+     "testo": "Piano terapeutico per prescrizione SSN di Lamivudina (ex Nota 32 bis) [0.04 Mb] [PDF] >"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "regole-piano",
+   "url": "https://www.salute.gov.it/new/it/tema/ricetta-elettronica-e-cup/la-ricetta-elettronica/",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-piano/18e0d429bd16.txt",
+   "titolo": "Gcore",
+   "sha": "921289bc465cb55f76bfee747db234700935b9d9ab0243b3379f285893d234c2",
+   "caratteri": 520,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-piano",
+   "url": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/dipartimento-pianificazione-strategica/dpc",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-piano/5c33b47420d5.txt",
+   "titolo": "D.P.C. | Regione Siciliana",
+   "sha": "55943a1e6a02985917328c80f229eb9b84aacc115e6611ccfe8dd370a25518de",
+   "caratteri": 1606,
+   "link_pdf": [
+    {
+     "url": "http://pti.regione.sicilia.it/portal/page/portal/PIR_PORTALE/PIR_LaStrutturaRegionale/PIR_AssessoratoSalute/PIR_DipPianificazioneStrategica/PIR_Infoedocumenti/PIR_Avvisiecomunicazioni/PIR_AttivitaAreeeServizi/PIR_Servizio7/PIR_DPC/Comunicazione%20avvio%20sistema%20PT%20web.pdf",
+     "testo": "Comunicazione avvio sistema PT web"
+    },
+    {
+     "url": "http://pti.regione.sicilia.it/portal/page/portal/PIR_PORTALE/PIR_LaStrutturaRegionale/PIR_AssessoratoSalute/PIR_DipPianificazioneStrategica/PIR_Infoedocumenti/PIR_Avvisiecomunicazioni/PIR_AttivitaAreeeServizi/PIR_Servizio7/PIR_DPC/PT%20web%20manuale%20Medico.pdf",
+     "testo": "PT web manuale Medico"
+    },
+    {
+     "url": "http://pti.regione.sicilia.it/portal/page/portal/PIR_PORTALE/PIR_LaStrutturaRegionale/PIR_AssessoratoSalute/PIR_DipPianificazioneStrategica/PIR_Infoedocumenti/PIR_Avvisiecomunicazioni/PIR_AttivitaAreeeServizi/PIR_Servizio7/PIR_DPC/Distribuzione%20per%20Conto%20dei%20%20NAO%20-%20Chiarimenti.pdf",
+     "testo": "Distribuzione per Conto dei NAO - Chiarimenti"
+    },
+    {
+     "url": "http://pti.regione.sicilia.it/portal/page/portal/PIR_PORTALE/PIR_LaStrutturaRegionale/PIR_AssessoratoSalute/PIR_DipPianificazioneStrategica/PIR_Infoedocumenti/PIR_Avvisiecomunicazioni/PIR_AttivitaAreeeServizi/PIR_Servizio7/PIR_DPC/DISCIPLINARE%20-%20Accordo%20DPC%202017.pdf",
+     "testo": "DISCIPLINARE - Accordo DPC 2017"
+    },
+    {
+     "url": "http://pti.regione.sicilia.it/portal/page/portal/PIR_PORTALE/PIR_LaStrutturaRegionale/PIR_AssessoratoSalute/PIR_DipPianificazioneStrategica/PIR_Infoedocumenti/PIR_Avvisiecomunicazioni/PIR_AttivitaAreeeServizi/PIR_Servizio7/PIR_DPC/D.A.n.1857%20del%2026-09-2017-DPC.pdf",
+     "testo": "D.A.n.1857 del 26-09-2017-DPC"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "regole-piano",
+   "url": "https://www.aifa.gov.it/documents/20142/241052/2020.07.07_Rapporto_AIFA_Piani_di_Rientro.pdf/d0d3ef0f-4816-2c27-4817-1d45930e030a",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-piano/2ce7469ad8b4.txt",
+   "titolo": "Author:          Ivano Comessatti",
+   "sha": "31bb7048aeb730fe11d52e0eb7ea5ed4cd37dbd5677edc5d0375975626f6ed40",
+   "caratteri": 427242,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-piano",
+   "url": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-piano/a7255a63705b.txt",
+   "titolo": "Assessorato della salute | Regione Siciliana",
+   "sha": "7ff51231c8ceb34a091f08ddc44a38ffdb8f157bd5f1341a7ad2b3c03dc5d4f4",
+   "caratteri": 3275,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-prenotare-cup",
+   "url": "https://sovracup.regione.sicilia.it",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "finale": "https://sovracup.regione.sicilia.it/",
+   "file": "regole-prenotare-cup/38cac7fac307.txt",
+   "titolo": "",
+   "sha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "caratteri": 0,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-prenotare-cup",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2024-06-07;73~art3",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-prenotare-cup/2ec315371942.txt",
+   "titolo": "DECRETO-LEGGE 7 giugno 2024, n. 73 - Normattiva",
+   "sha": "6d4c5f372d77bfd6600cc38e64fa245ebf76a93e3eea50030de9d4ae89de04df",
+   "caratteri": 13752,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-prevenzione",
+   "url": "https://www.epicentro.iss.it/screening/",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-prevenzione/83888a82ebe2.txt",
+   "titolo": "Screening oncologici",
+   "sha": "b5dd48cad301d6695c75bb7205c9d4eb5f9d1ce81f33fb83e1def503effc30a4",
+   "caratteri": 9502,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-prevenzione",
+   "url": "https://screening.asppalermo.org/",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-prevenzione/0cf99bf0e6d9.txt",
+   "titolo": "Screening Oncologici ASP di Palermo",
+   "sha": "d12d6541b143625d85783ff1bbd3412649e198cef60ace9f65fd9849efcd2cc7",
+   "caratteri": 9154,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-prevenzione",
+   "url": "https://www.salute.gov.it/new/it/tema/tumori-e-screening/",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-prevenzione/901daa281618.txt",
+   "titolo": "Gcore",
+   "sha": "c07db61b5ae921c53cff7e6f3702baf5b57f6e6c55bda3501211c80f14106ef6",
+   "caratteri": 520,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-prevenzione",
+   "url": "https://www.osservatorionazionalescreening.it",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "finale": "https://osservatorionazionalescreening.it/",
+   "file": "regole-prevenzione/b92b844d4047.txt",
+   "titolo": "ONS | Osservatorio Nazionale Screening",
+   "sha": "60cb629ff3a59919cc4559bd0c4b9fe5d612f3233d0296fc6082c8d40ff54b48",
+   "caratteri": 3127,
+   "email_nascoste": 1,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-prevenzione",
+   "url": "https://www.salute.gov.it/new/it/tema/vaccinazioni/piano-nazionale-prevenzione-vaccinale/",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-prevenzione/c2d04dbfeef4.txt",
+   "titolo": "Gcore",
+   "sha": "c07db61b5ae921c53cff7e6f3702baf5b57f6e6c55bda3501211c80f14106ef6",
+   "caratteri": 520,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-prevenzione",
+   "url": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-prevenzione/a7255a63705b.txt",
+   "titolo": "Assessorato della salute | Regione Siciliana",
+   "sha": "7ff51231c8ceb34a091f08ddc44a38ffdb8f157bd5f1341a7ad2b3c03dc5d4f4",
+   "caratteri": 3275,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-psicologo",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.contributo-per-sostenere-le-spese-relative-a-sessioni-di-psicoterapia-bonus-psicologo.html",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-psicologo/87961f2ae2e2.txt",
+   "titolo": "Portale Inps - Contributo per sostenere le spese relative a sessioni di psicoterapia - Bonus psicologo",
+   "sha": "7a0a15ff44b6e1cfea1e89271156c6385c2843d2046a087010433c5489933aa0",
+   "caratteri": 47417,
+   "link_pdf": [
+    {
+     "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/Tutorial_Cittadino_Bonus_Psicologo_2025.pdf",
+     "testo": "Bonus psicologo 2025: tutorial per il cittadino"
+    },
+    {
+     "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/Tutorial_Professionista_Bonus_Psicologo_2025.pdf",
+     "testo": "Bonus psicologo 2025: tutorial per il professionista"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "regole-psicologo",
+   "url": "https://www.salute.gov.it/portale/saluteMentale/homeSaluteMentale.jsp",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-psicologo/00a23d03f020.txt",
+   "titolo": "Gcore",
+   "sha": "c07db61b5ae921c53cff7e6f3702baf5b57f6e6c55bda3501211c80f14106ef6",
+   "caratteri": 520,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-psicologo",
+   "url": "https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/detrazioni-spese-sanitarie",
+   "controllata": "2026-10-24",
+   "http": 404
+  },
+  {
+   "asl": "regole-ricorso",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2003-09-30;269",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-ricorso/39ddded51944.txt",
+   "titolo": "DECRETO-LEGGE 30 settembre 2003, n. 269 - Normattiva",
+   "sha": "1a136e436274339c428d74ae7b35cb75da023c930594a76ee33d4d5826465b05",
+   "caratteri": 10820,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-ricorso",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1940-10-28;1443",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-ricorso/87d1455bc0d7.txt",
+   "titolo": "REGIO DECRETO 28 ottobre 1940, n. 1443 - Normattiva",
+   "sha": "b74ca93f9d6bbb7270902609eafbab6dbd80fb24ffad1e0eb8ae0cc30b3e83a8",
+   "caratteri": 35874,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-ricorso",
+   "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.51293.ricorso-giurisdizionale.html",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-ricorso/8085a7f0d759.txt",
+   "titolo": "Portale Inps - Ricorso giurisdizionale",
+   "sha": "c87a69103b3f099b89a37b2cc73cd5343f999adac3ec67d5a391c7ff9929e6fe",
+   "caratteri": 44577,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-ricorso",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1941-12-18;1368",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-ricorso/f526a8729342.txt",
+   "titolo": "REGIO DECRETO 18 dicembre 1941, n. 1368 - Normattiva",
+   "sha": "fb1a257981cc837846bc29fe51a1e726308206c747134c5c6ad0ba9b245e6fd7",
+   "caratteri": 10988,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-ricorso",
+   "url": "https://www.gazzettaufficiale.it/gazzetta/serie_generale/caricaDettaglio?dataPubblicazioneGazzetta=2025-07-11&numeroGazzetta=159",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-ricorso/be52f8679d51.txt",
+   "titolo": "Gazzetta Ufficiale",
+   "sha": "1660de78f1155ee0a2ee147eab36f52a676e3792f07c97b1abe265c83771f11d",
+   "caratteri": 3099,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-ricorso",
+   "url": "https://www.giustizia.it/giustizia/page/it/patrocinio_a_spese_dello_stato_nei_giudizi_civili_e_amministrativi",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-ricorso/4b0319f0ab28.txt",
+   "titolo": "Ministero della giustizia | Patrocinio a spese dello Stato nei giudizi civili e amministrativi",
+   "sha": "fcd8bf1c30294c98c02b4788012d21c77ab9a6601421d1815c884b839d4446cb",
+   "caratteri": 11059,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-rsa",
+   "url": "https://www.regione.sicilia.it/system/files/2025-10/D.A.%20n.1058%20del%208%20ottobre%202025.pdf",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-rsa/eb37e13b50bf.txt",
+   "titolo": "D",
+   "sha": "9b173ef28cfc831d20047b6d768f568359e1eea0919fc47ca02b9429f3611df0",
+   "caratteri": 6588,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-rsa",
+   "url": "https://www.salute.gov.it/portale/lea/dettaglioContenutiLea.jsp?lingua=italiano&id=4702&area=Lea&menu=socioSanitaria",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-rsa/bc4481e74ff8.txt",
+   "titolo": "Gcore",
+   "sha": "c07db61b5ae921c53cff7e6f3702baf5b57f6e6c55bda3501211c80f14106ef6",
+   "caratteri": 520,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-rsa",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-rsa/889dffbe2de4.txt",
+   "titolo": "REGIO DECRETO 16 marzo 1942, n. 262 - Normattiva",
+   "sha": "b575cecf075912107cbe45b6faed3f44fed6c986acb90c2d817b9382fd993623",
+   "caratteri": 72890,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-rsa",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2004-01-09;6",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-rsa/bc097eb15ff1.txt",
+   "titolo": "LEGGE 9 gennaio 2004, n. 6 - Normattiva",
+   "sha": "b7fd3d16ec9407215fd65de8b2247ecb3fd55fa186f902d72ddcfacef264e5e1",
+   "caratteri": 4215,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-tessera-sanitaria",
+   "url": "https://www.agenziaentrate.gov.it/portale/web/guest/schede/istanze/tessera-sanitaria",
+   "controllata": "2026-10-24",
+   "http": 404
+  },
+  {
+   "asl": "regole-tessera-sanitaria",
+   "url": "https://sistemats1.sanita.finanze.it/portale/it/tessera-sanitaria/faq-sulla-team",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-tessera-sanitaria/73e8aa6e12aa.txt",
+   "titolo": "FAQ sulla TEAM - Sistema Tessera Sanitaria",
+   "sha": "f808dc2d1b5322a7416d685127904b197ba826cbf23b2952aa7544432082ffb3",
+   "caratteri": 6299,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-tessera-sanitaria",
+   "url": "https://www.salute.gov.it/portale/assistenzaSanitaria/dettaglioContenutiAssistenzaSanitaria.jsp?lingua=italiano&id=1096&area=Assistenza%20sanitaria&menu=vuoto",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-tessera-sanitaria/ee5237440cc7.txt",
+   "titolo": "Gcore",
+   "sha": "c07db61b5ae921c53cff7e6f3702baf5b57f6e6c55bda3501211c80f14106ef6",
+   "caratteri": 520,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-tessera-sanitaria",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/d/guest/guida_tessera_sanitaria_052025",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-tessera-sanitaria/052683e7c762.txt",
+   "titolo": "Guida Tessera Sanitaria",
+   "sha": "9b6bfc7db7caaa864017ac59fea9ee598b230942bcb96ff95e02301abe8d1fe4",
+   "caratteri": 22490,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-liste-attesa",
+   "url": "https://www.salute.gov.it/new/it/tema/liste-di-attesa/piano-nazionale-governo-liste-di-attesa/",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-liste-attesa/d10b3eb21e76.txt",
+   "titolo": "Gcore",
+   "sha": "c07db61b5ae921c53cff7e6f3702baf5b57f6e6c55bda3501211c80f14106ef6",
+   "caratteri": 520,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-liste-attesa",
+   "url": "https://www.gazzettaufficiale.it/eli/id/2026/08/24/26A04113/sg",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-liste-attesa/3a32664a782f.txt",
+   "titolo": "Gazzetta Ufficiale",
+   "sha": "cdb69be82473c7884a7c536af1f26dc9d6290eb86437bfd984d86329d9cf0f34",
+   "caratteri": 663,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-liste-attesa",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1998-04-29;124",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-liste-attesa/aefc7ae9665e.txt",
+   "titolo": "DECRETO LEGISLATIVO 29 aprile 1998, n. 124 - Normattiva",
+   "sha": "b09bef19533af0872c2ed9d10f82f1ab29a33b42b6e56e7a867eeeef2dead1ab",
+   "caratteri": 9420,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-liste-attesa",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2024-06-07;73",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-liste-attesa/0c568203df1a.txt",
+   "titolo": "DECRETO-LEGGE 7 giugno 2024, n. 73 - Normattiva",
+   "sha": "66d29dd3331bd7dcc1b5f723d063054b74a1688b95689343c58adc8fb8564673",
+   "caratteri": 10967,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-liste-attesa",
+   "url": "https://sovracup.regione.sicilia.it",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "finale": "https://sovracup.regione.sicilia.it/",
+   "file": "regole-liste-attesa/38cac7fac307.txt",
+   "titolo": "",
+   "sha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "caratteri": 0,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-liste-attesa",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole-liste-attesa/889dffbe2de4.txt",
+   "titolo": "REGIO DECRETO 16 marzo 1942, n. 262 - Normattiva",
+   "sha": "b575cecf075912107cbe45b6faed3f44fed6c986acb90c2d817b9382fd993623",
+   "caratteri": 72890,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-pronto-soccorso",
+   "url": "https://www.salute.gov.it/new/it/tema/112-118-e-pronto-soccorso/",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "tema-pronto-soccorso/c6d4d2f39c46.txt",
+   "titolo": "Gcore",
+   "sha": "c60a6924a02a9848ec1cf6cdde7b29141b549a388c94427b6de49234adec1528",
+   "caratteri": 520,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-pronto-soccorso",
+   "url": "https://www.salute.gov.it/new/it/news-e-media/notizie/pronto-soccorso-libera-della-conferenza-stato-regioni-alle-nuove-linee-di/",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "tema-pronto-soccorso/aa563b50339e.txt",
+   "titolo": "Gcore",
+   "sha": "c60a6924a02a9848ec1cf6cdde7b29141b549a388c94427b6de49234adec1528",
+   "caratteri": 520,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-pronto-soccorso",
+   "url": "https://www.statoregioni.it/it/conferenza-stato-regioni/sedute-2019/seduta-del-01082019/atti/repertorio-atto-n-143csr/",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "tema-pronto-soccorso/7137685c5a71.txt",
+   "titolo": "Repertorio atto n. 143/CSR",
+   "sha": "8db803ea1c8b0b21cc020f2862b43b721f1764cd366d4c3dee94477a5e7b1e49",
+   "caratteri": 15772,
+   "link_pdf": [
+    {
+     "url": "https://www.statoregioni.it/media/1953/p-01-csr-atto-rep-n-143-01-agosto2019.pdf",
+     "testo": "SCARICA"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "tema-pronto-soccorso",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2006-12-27;296~art1",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "tema-pronto-soccorso/c31244d79dbe.txt",
+   "titolo": "LEGGE 27 dicembre 2006, n. 296 - Normattiva",
+   "sha": "1df8134519641c05d96b510e4bfeb66542cb890394f96d8cf25c95e289d1af40",
+   "caratteri": 146663,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-pronto-soccorso",
+   "url": "https://www.salute.gov.it/new/it/tema/esenzioni-dal-ticket/ticket-ed-esenzioni/",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "tema-pronto-soccorso/b85fb1ccd9ac.txt",
+   "titolo": "Gcore",
+   "sha": "c60a6924a02a9848ec1cf6cdde7b29141b549a388c94427b6de49234adec1528",
+   "caratteri": 520,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-guardia-medica",
+   "url": "https://www.salute.gov.it/new/en/tema/nuova-assistenza-distrettuale/116117-european-non-emergency-call-number-5/",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "tema-guardia-medica/c3024e6ac103.txt",
+   "titolo": "Gcore",
+   "sha": "c60a6924a02a9848ec1cf6cdde7b29141b549a388c94427b6de49234adec1528",
+   "caratteri": 520,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-guardia-medica",
+   "url": "https://www.salute.gov.it/new/it/tema/statistiche-sanitarie/assistenza-sanitaria-distrettuale/",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "tema-guardia-medica/1368c6d83b89.txt",
+   "titolo": "Gcore",
+   "sha": "c60a6924a02a9848ec1cf6cdde7b29141b549a388c94427b6de49234adec1528",
+   "caratteri": 520,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-guardia-medica",
+   "url": "https://www.salute.gov.it/new/it/tema/ondate-di-calore/chi-rivolgersi/",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "tema-guardia-medica/4eaa36358999.txt",
+   "titolo": "Gcore",
+   "sha": "c60a6924a02a9848ec1cf6cdde7b29141b549a388c94427b6de49234adec1528",
+   "caratteri": 520,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-guardia-medica",
+   "url": "https://www.salute.gov.it/new/it/tema/cure-nellunione-europea/cure-urgenti-e-necessarie-italia-ehic/",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "tema-guardia-medica/5a922793846a.txt",
+   "titolo": "Gcore",
+   "sha": "c60a6924a02a9848ec1cf6cdde7b29141b549a388c94427b6de49234adec1528",
+   "caratteri": 520,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-guardia-medica",
+   "url": "https://www.salute.gov.it/new/it/tema/nuova-assistenza-distrettuale/riforma-dellassistenza-territoriale/",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "tema-guardia-medica/b8714778bd70.txt",
+   "titolo": "Gcore",
+   "sha": "c60a6924a02a9848ec1cf6cdde7b29141b549a388c94427b6de49234adec1528",
+   "caratteri": 520,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-certificato-malattia",
+   "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.indennit--di-malattia-e-visite-mediche-di-controllo.html",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "tema-certificato-malattia/f7b2d13868fd.txt",
+   "titolo": "Portale Inps - Indennità di malattia/degenza ospedaliera e visite mediche di controllo",
+   "sha": "2783fcd1312850c339a054582019cc2fd501ebd93474f74967e3afddb824326c",
+   "caratteri": 61450,
+   "link_pdf": [
+    {
+     "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/514KEY-tabella_regolamento_per_definizione_termini_di_conclusione.pdf",
+     "testo": "tabella"
+    },
+    {
+     "url": "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/documents/30sett2024_INPS_Guida_sostegni_RGB_tutelaprevidenzialedellamalattia_settembre2024.pdf",
+     "testo": "Tutela previdenziale della malattia"
+    },
+    {
+     "url": "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/2026/Certificazione_malattia_visite_mediche_controllo.pdf",
+     "testo": "Certificazione di malattia e visite mediche di controllo per i lavoratori privati e pubblici"
+    },
+    {
+     "url": "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/documents/Opuscolo_malattia_estero.pdf",
+     "testo": "Certificazione di malattia all’estero 2025"
+    },
+    {
+     "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/FAQ_Certificati_di_malattia_telematici.pdf",
+     "testo": "FAQ Certificati di malattia telematici"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "tema-certificato-malattia",
+   "url": "https://www.inps.it/it/it/lavoro/malattia.html",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "tema-certificato-malattia/007b8ffe65f9.txt",
+   "titolo": "Portale Inps - Malattia",
+   "sha": "a2f3de328d19ccb52c8862147eb9208ab04d6fb2c99f91d71f57630481fc8239",
+   "caratteri": 46716,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-certificato-malattia",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.consultazione-dei-certificati-di-malattia-telematici.html",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "tema-certificato-malattia/3258a502482e.txt",
+   "titolo": "Portale Inps - Consultazione dei certificati di malattia telematici",
+   "sha": "f3401144f2da345c369bbaf5c4e252b046d8d5ed819ec104072ebb612be85e05",
+   "caratteri": 43896,
+   "link_pdf": [
+    {
+     "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/FAQ_Certificati_di_malattia_telematici.pdf",
+     "testo": "FAQ"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "tema-certificato-malattia",
+   "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.49909.normativa-di-riferimento-per-la-certificazione-telematica-di-malattia.html",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "tema-certificato-malattia/41bdfd8195dd.txt",
+   "titolo": "Portale Inps - Normativa di riferimento per la certificazione telematica di malattia",
+   "sha": "9fbe926769490cb1e1b9d97dd32a0f9430f5dd866f235ad6028c7d35795de9d7",
+   "caratteri": 50107,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-certificato-malattia",
+   "url": "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/documents/Certificazione_malattia_visite_mediche_controllo_lavoratori_privati_pubblici_2024_v04.pdf",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "tema-certificato-malattia/298562afafdb.txt",
+   "titolo": "Sostegni, Sussidi e Indennità",
+   "sha": "a314a9fcd8e98b94f8c261099b0cf04086551ff6e2bd83596778b2b5c601e710",
+   "caratteri": 14999,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-certificato-malattia",
+   "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/FAQ_Certificati_di_malattia_telematici.pdf",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "tema-certificato-malattia/413fc1652798.txt",
+   "titolo": "Il lavoratore è tenuto a produrre copia dell'attestato telematico di malattia al",
+   "sha": "b394c8a7cc85709e0303a9e681fddc27ba0da0a4d21b3299acc800591b8b24e7",
+   "caratteri": 10047,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-certificato-malattia",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2001-03-30;165~art55septies",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "tema-certificato-malattia/84fdec7c0d0c.txt",
+   "titolo": "DECRETO LEGISLATIVO 30 marzo 2001, n. 165 - Normattiva",
+   "sha": "06b5109d4d7ddb230f1a0c0c29330873e14bb038de95974aae046efd5ce7d527",
+   "caratteri": 14279,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-certificato-malattia",
+   "url": "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/documents/30sett2024_INPS_Guida_sostegni_RGB_tutelaprevidenzialedellamalattia_settembre2024.pdf",
+   "controllata": "2026-10-24",
+   "da_pagina": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.indennit--di-malattia-e-visite-mediche-di-controllo.html",
+   "http": 200,
+   "file": "tema-certificato-malattia/5bbc8eeacaf7.txt",
+   "titolo": "Sostegni, Sussidi e Indennità",
+   "sha": "0743bba3a08f4c7dfd91c371aea75cc6a4975f2b33acb9fa9d6473292bf24c7c",
+   "caratteri": 8793,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-visita-fiscale",
+   "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.sportello-per-il-cittadino-per-le-visite-mediche-di-controllo-54345.sportello-per-il-cittadino-per-le-visite-mediche-di-controllo.html",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "tema-visita-fiscale/7155e8bd6b46.txt",
+   "titolo": "Portale Inps - Sportello per il cittadino per le visite mediche di controllo",
+   "sha": "6b2a95865faf282d6906a216181527f27d8f10dd3457ea69408f86cb659b8fdf",
+   "caratteri": 45176,
+   "link_pdf": [
+    {
+     "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/2026/Manuale_utente_Sportello_per_il_cittadino_per_le_visite%20mediche_di_controllo.pdf",
+     "testo": "Manuale utente – Sportello per il cittadino per le visite mediche di controllo"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "tema-visita-fiscale",
+   "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2023.12.lavoratori-pubblici-fasce-orarie-di-reperibilit-per-le-visite-mediche.html",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "tema-visita-fiscale/9107d516daf8.txt",
+   "titolo": "Portale Inps - Lavoratori pubblici: fasce orarie di reperibilità per le visite mediche",
+   "sha": "508095f5e980ee7da0daafebcdd2066aa9d31c48892688e7c0d741bdd30efdb4",
+   "caratteri": 42475,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-visita-fiscale",
+   "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2023/12/Circolare_14389/Allegati/14553_Messaggio-numero-4640-del-22-12-2023.pdf",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "tema-visita-fiscale/c12428d056d3.txt",
+   "titolo": "Direzione Centrale Ammortizzatori Sociali",
+   "sha": "f0a17750323fc5ae2e8dc218aa437fdcbbc2d71a4ffaaf93e2e251e696727d38",
+   "caratteri": 3826,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-visita-fiscale",
+   "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:1983-09-12;463~art5",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "tema-visita-fiscale/ce902999c11a.txt",
+   "titolo": "DECRETO-LEGGE 12 settembre 1983, n. 463 - Normattiva",
+   "sha": "9aafac5014e0d8f4efcf5e8826fa6742b86296943ddb9e177b741b608c73cfbf",
+   "caratteri": 11179,
+   "cambiata": true
   }
  ]
 }

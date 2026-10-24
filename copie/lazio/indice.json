@@ -1,6 +1,6 @@
 {
  "regione": "lazio",
- "aggiornato": "2026-10-24T04:53:37.111Z",
+ "aggiornato": "2026-10-24T07:18:22.418Z",
  "pagine": [
   {
    "asl": "frosinone",
@@ -368,8 +368,22 @@
    "asl": "latina",
    "url": "https://www.ausl.latina.it/",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "latina/5272b204d144.txt",
+   "titolo": "Home",
+   "sha": "649bcc6fffbdb92dec0753fa1ee2bfed028e9c6051110408fc4b5a5423e34f6f",
+   "caratteri": 8143,
+   "link_pdf": [
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/319/pars%202026.pdf",
+     "testo": "Piano Annuale per la Gestione del Rischio Sanitario 2026"
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/category/31/CONTRATTO_asl%20latina-PolizzaRTCO.pdf",
+     "testo": "Polizza RTCO"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "latina",
@@ -378,9 +392,9 @@
    "http": 200,
    "file": "latina/1b6a08522663.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "25015c5b43a61366d98477466f983899fc94941dc880c12de5946d252a06aee3",
+   "sha": "ce21a63b1dc01e21429e11f4a4d7d3560e05c4c5a8985260c2c21f06b0be1818",
    "caratteri": 4170,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "latina",
@@ -398,15 +412,75 @@
    "asl": "latina",
    "url": "https://www.ausl.latina.it/gs-guidaaiservizi/gs-assistenzadomiciliare",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "latina/82fd94286a41.txt",
+   "titolo": "Assistenza domiciliare",
+   "sha": "3fd44615ce566eb27c36c5ae17495ce2c01b8c42e4439b0405b065ad1eef8c0c",
+   "caratteri": 6593,
+   "link_pdf": [
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/41/Dichiarazione%20Sostitutiva%20della%20posizione%20reddituale%20per%20accesso%20in%20RSA.PDF",
+     "testo": ""
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/41/Scheda%20Sanitaria%20per%20proposta%20di%20ricovero%20in%20RSA%20o%20Lungodegenza.PDF",
+     "testo": ""
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/41/Scheda%20Socio-Anagrafica%20per%20accesso%20in%20RSA.PDF",
+     "testo": ""
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/41/Modulo%20Richiesta%20Ricovero%20RSA%20o%20Lungodegenza.PDF",
+     "testo": ""
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/41/Scheda%20regionale%20RPC.pdf",
+     "testo": ""
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/41/Allegato%20Contatti%20CAD%20aziendali.pdf",
+     "testo": ""
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/41/Allegato%20Prestazioni%20Erogabili%20in%20ADI.pdf",
+     "testo": ""
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/41/Modulistica%20ADP.pdf",
+     "testo": ""
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/41/Modulistica%20ADP%20Scheda%20Accessi%20Mensili.pdf",
+     "testo": ""
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/41/Modulistica%20ADP%20-%20Allegato%20G%20-%20Accordo%20Collettivo%20Nazionale.pdf",
+     "testo": ""
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/category/31/CONTRATTO_asl%20latina-PolizzaRTCO.pdf",
+     "testo": "Polizza RTCO"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "latina",
    "url": "https://www.ausl.latina.it/contatti",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "latina/609f939b7117.txt",
+   "titolo": "Contatti",
+   "sha": "6d6739c1c6d0ac3b849e9dc06cbd89fecd629485a19619720f4a7d6c6837c856",
+   "caratteri": 3959,
+   "link_pdf": [
+    {
+     "url": "https://www.ausl.latina.it/attachments/category/31/CONTRATTO_asl%20latina-PolizzaRTCO.pdf",
+     "testo": "Polizza RTCO"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "latina",
@@ -423,22 +497,128 @@
    "asl": "latina",
    "url": "https://www.ausl.latina.it/ufficio-relazioni-con-il-pubblico",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "latina/ba673f85fb8b.txt",
+   "titolo": "Ufficio relazioni con il pubblico",
+   "sha": "de85209fd809ac41d75ef65b0eba7b480cb2163d1f975be1066a7aacc9abd3be",
+   "caratteri": 5865,
+   "link_pdf": [
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/181/Report%20URP%202025.pdf",
+     "testo": "Report segnalazioni anno 2025"
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/181/URP%20Richiesta%20Accesso%20Atti%20-%20Aggiornato.pdf",
+     "testo": "Scarica il documento"
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/181/Questionario%20qualit%C3%A0%20percepita%20N.pdf",
+     "testo": "Scarica il documento"
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/649/Allegato%201%20-%20RPT2024.pdf",
+     "testo": "Scarica il documento"
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/649/Allegato%204%20-%20RPT2024.pdf",
+     "testo": "Scarica il documento"
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/649/Allegato%202%20-%20RPT2024.pdf",
+     "testo": "Delega all’inoltro di un Reclamo o Segnalazione a parenti, affini, conoscenti"
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/649/Allegato%203%20-%20RPT2024.pdf",
+     "testo": "Delega all’inoltro di un Reclamo o Segnalazione ad organismi di tutela dei diritti degli utenti o ad associazioni di vol"
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/649/Allegato%205%20-%20RPT2024.pdf",
+     "testo": "Richiesta attivazione percorso di tutela per la prestazione"
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/category/31/CONTRATTO_asl%20latina-PolizzaRTCO.pdf",
+     "testo": "Polizza RTCO"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "latina",
    "url": "https://www.ausl.latina.it/gs-guidaservizi/132-visite-ed-esami/4350-cup",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "latina/a4ce186313fd.txt",
+   "titolo": "CUP",
+   "sha": "674b2706a55ac1dc04c23ff06be1628c5e0225ea6826f35c901baa6f10041a3f",
+   "caratteri": 8944,
+   "link_pdf": [
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/4350/AVVISO%20riduzione%20validit%C3%A0%20ricette.pdf",
+     "testo": "AVVISO"
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/4350/ASL_LATINA_ORARI_SPORTELLI%20CUP.pdf",
+     "testo": "Elenco Sportelli CUP"
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/4350/Disdetta%20delle%20prenotazioni.pdf",
+     "testo": "Come Disdire una prenotazione"
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/4350/Alpi%20Luglio%20aggiornamento.pdf",
+     "testo": "Elenco dirigenti medici in libera professione aggiornato al 31-07-2026"
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/4350/Richiesta%20esame%20PET2%20oncologica.pdf",
+     "testo": "Richiesta Esame PET-TC con F-18 FDG"
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/4350/Richiesta%20esame%20PET1%20oncologica%20colina.pdf",
+     "testo": "Richiesta Esame con F-18-Metil-colina"
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/4350/Questionario%20Scintigrafia%20Miocardica.pdf",
+     "testo": "Richiesta di Scintigrafia miocardica di perfusione"
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/4350/TC%20CUORE%20allegato%20Det_G03216_21032024.pdf",
+     "testo": "Determina Regionale G03216 del 21 marzo 2024"
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/4350/TC%20Cuore.pdf",
+     "testo": "Richiesta Esame TC del Cuore"
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/4350/Cinerm%20cuore.pdf",
+     "testo": "Richiesta Esame Cine RM Cuore"
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/category/31/CONTRATTO_asl%20latina-PolizzaRTCO.pdf",
+     "testo": "Polizza RTCO"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "latina",
    "url": "https://www.ausl.latina.it/112-azienda/dipartimento-prevenzione/2854-servizio-di-screening",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "latina/6d5aee6744e3.txt",
+   "titolo": "Servizio di Screening",
+   "sha": "45cee4047547d002ebc86745bd848ecb4c2e0f49b00bcf95eedb2f52cd243954",
+   "caratteri": 9159,
+   "link_pdf": [
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/319/pars%202026.pdf",
+     "testo": "Piano Annuale per la Gestione del Rischio Sanitario 2026"
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/category/31/CONTRATTO_asl%20latina-PolizzaRTCO.pdf",
+     "testo": "Polizza RTCO"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "latina",
@@ -465,8 +645,18 @@
    "asl": "latina",
    "url": "https://www.ausl.latina.it/prevenzione-stili-di-vita/psv-screening-oncologici",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "latina/ea194b301ae9.txt",
+   "titolo": "Screening oncologici",
+   "sha": "1f175c6f0fbafb6aa8084e5880c4b92d44d3ef8ed9fe80d49fb5ad0e8da877df",
+   "caratteri": 5125,
+   "link_pdf": [
+    {
+     "url": "https://www.ausl.latina.it/attachments/category/31/CONTRATTO_asl%20latina-PolizzaRTCO.pdf",
+     "testo": "Polizza RTCO"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "latina",
@@ -483,8 +673,133 @@
    "asl": "latina",
    "url": "https://www.ausl.latina.it/comefare/cf-sceltamedico",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "latina/9aefd102a041.txt",
+   "titolo": "Scegliere il medico",
+   "sha": "511a230e762b046b6619037df9eaf0b001d1d1ca7d8cdcec38f9d9862b3e5a6b",
+   "caratteri": 5071,
+   "link_pdf": [
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/25/Orario%20CSB%20Area%20S.O..pdf",
+     "testo": ""
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/25/ORARI%20CSB%20ISOLE%20PONTINE.pdf",
+     "testo": ""
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/25/Modulo%20Richiesta%20Pediatra%20di%20Libera%20Scelta.PDF",
+     "testo": "Modulo Richiesta Pediatra di Libera Scelta"
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/25/Modulo%20Richiesta%20Medico%20Medicina%20Generale.pdf",
+     "testo": "Modulo Richiesta Medico Medicina Generale"
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/25/Dichiarazione%20per%20il%20Rilascio%20del%20Codice%20ENI.pdf",
+     "testo": "Dichiarazione per il Rilascio del Codice ENI"
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/25/Modulo%20Richiesta%20Tessera%20TEAM.pdf",
+     "testo": "Modulo Richiesta Tessera TEAM"
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/category/31/CONTRATTO_asl%20latina-PolizzaRTCO.pdf",
+     "testo": "Polizza RTCO"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "latina",
+   "url": "https://www.ausl.latina.it/attachments/article/41/Modulo%20Richiesta%20Ricovero%20RSA%20o%20Lungodegenza.PDF",
+   "controllata": "2026-10-24",
+   "da_pagina": "https://www.ausl.latina.it/gs-guidaaiservizi/gs-assistenzadomiciliare",
+   "http": 200,
+   "file": "latina/6296936ee3be.txt",
+   "titolo": "DISTRETTO SOCIO SANITARIO LT/1",
+   "sha": "033e10f93f8bcec21b62b4ddee916546421979ea078e0fcb02186e38a85a7b42",
+   "caratteri": 1353,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "latina",
+   "url": "https://www.ausl.latina.it/attachments/article/41/Modulistica%20ADP.pdf",
+   "controllata": "2026-10-24",
+   "da_pagina": "https://www.ausl.latina.it/gs-guidaaiservizi/gs-assistenzadomiciliare",
+   "http": 200,
+   "file": "latina/9e00b7edffd9.txt",
+   "titolo": "Alla ASL__________________________________________",
+   "sha": "6a907d1a7c4d978dedaecdee2f763079fe3840bdcd4666c480f7523e221ec346",
+   "caratteri": 379,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "latina",
+   "url": "https://www.ausl.latina.it/attachments/article/41/Modulistica%20ADP%20Scheda%20Accessi%20Mensili.pdf",
+   "controllata": "2026-10-24",
+   "da_pagina": "https://www.ausl.latina.it/gs-guidaaiservizi/gs-assistenzadomiciliare",
+   "http": 200,
+   "file": "latina/3976964782fa.txt",
+   "titolo": "DIPARTIMENTO ASSISTENZA PRIMARIA– D.A.P.",
+   "sha": "ca2eef49d8b64b575faf506f19bc2e5cda8abc4f1749ff7e642f064c0178a272",
+   "caratteri": 831,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "latina",
+   "url": "https://www.ausl.latina.it/attachments/article/41/Modulistica%20ADP%20-%20Allegato%20G%20-%20Accordo%20Collettivo%20Nazionale.pdf",
+   "controllata": "2026-10-24",
+   "da_pagina": "https://www.ausl.latina.it/gs-guidaaiservizi/gs-assistenzadomiciliare",
+   "http": 200,
+   "file": "latina/e852d627bbad.txt",
+   "titolo": "Al CAD Distretto 1 - 2 - 3 - 4 - 5",
+   "sha": "887f01e8b4ba1b932416971f70e11da51320c5de18f8c6a6d0486b698c73f009",
+   "caratteri": 2576,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "latina",
+   "url": "https://www.ausl.latina.it/attachments/article/649/Allegato%203%20-%20RPT2024.pdf",
+   "controllata": "2026-10-24",
+   "da_pagina": "https://www.ausl.latina.it/ufficio-relazioni-con-il-pubblico",
+   "http": 200,
+   "file": "latina/2dfd073511fa.txt",
+   "titolo": "DELEGA ALL’INOLTRO DI UN RECLAMO O SEGNALAZIONE",
+   "sha": "98711ed65e1c6ec97fb32f2ce256fceadf2ddfee1e2416abde5081a84abfb8ba",
+   "caratteri": 4212,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "latina",
+   "url": "https://www.ausl.latina.it/attachments/article/649/Allegato%205%20-%20RPT2024.pdf",
+   "controllata": "2026-10-24",
+   "da_pagina": "https://www.ausl.latina.it/ufficio-relazioni-con-il-pubblico",
+   "http": 200,
+   "file": "latina/d0958968485c.txt",
+   "titolo": "Microsoft Word - Modulo percorsi tutela.01",
+   "sha": "9024af58dfcdbdbb0a07991752142e91bc7bbcfb3c8d92a54ad3a634a6f494c4",
+   "caratteri": 2082,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "latina",
+   "url": "https://www.ausl.latina.it/attachments/article/4350/Disdetta%20delle%20prenotazioni.pdf",
+   "controllata": "2026-10-24",
+   "da_pagina": "https://www.ausl.latina.it/gs-guidaservizi/132-visite-ed-esami/4350-cup",
+   "http": 200,
+   "file": "latina/e04dd88d9e83.txt",
+   "titolo": "Disdetta delle prenotazioni",
+   "sha": "224273f8de79871e605c3115d15b3dad9f726d517de836533b6c338dc1ae1980",
+   "caratteri": 1720,
+   "pdf": true,
+   "cambiata": true
   },
   {
    "asl": "latina",
@@ -493,6 +808,45 @@
    "da_pagina": "https://regione.lazio.it/enti/salute/screening-oncologici",
    "http": 403,
    "nota": "controllo anti-robot (CAPTCHA): non copiata"
+  },
+  {
+   "asl": "latina",
+   "url": "https://www.ausl.latina.it/attachments/article/25/Modulo%20Richiesta%20Pediatra%20di%20Libera%20Scelta.PDF",
+   "controllata": "2026-10-24",
+   "da_pagina": "https://www.ausl.latina.it/comefare/cf-sceltamedico",
+   "http": 200,
+   "file": "latina/6f6527120197.txt",
+   "titolo": "ALL’AZIENDA SANITARIA LOCALE DI LATINA",
+   "sha": "52693066d6234023dc9116ed8945605b2bacc25fd5dad8453951c4530c965d32",
+   "caratteri": 1487,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "latina",
+   "url": "https://www.ausl.latina.it/attachments/article/25/Modulo%20Richiesta%20Medico%20Medicina%20Generale.pdf",
+   "controllata": "2026-10-24",
+   "da_pagina": "https://www.ausl.latina.it/comefare/cf-sceltamedico",
+   "http": 200,
+   "file": "latina/49a686a45e83.txt",
+   "titolo": "ALL’AZIENDA SANITARIA LOCALE DI LATINA",
+   "sha": "ff364de138a3cdfedb017135316b828199d4353e6b950b0a1254d3286bb46b95",
+   "caratteri": 2075,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "latina",
+   "url": "https://www.ausl.latina.it/attachments/article/25/Modulo%20Richiesta%20Tessera%20TEAM.pdf",
+   "controllata": "2026-10-24",
+   "da_pagina": "https://www.ausl.latina.it/comefare/cf-sceltamedico",
+   "http": 200,
+   "file": "latina/574d76bc1c78.txt",
+   "titolo": "UFFICIO SCELTA/REVOCA MEDICO",
+   "sha": "117b2d04eb4955e56a689ed338318ef864ef4302aab41d620add2f3d03f82041",
+   "caratteri": 751,
+   "pdf": true,
+   "cambiata": true
   },
   {
    "asl": "rieti",
@@ -1164,13 +1518,9 @@
    "http": 200,
    "file": "roma/e0d930024e6e.txt",
    "titolo": "Punto Unico di Accesso (PUA)",
-   "sha": "d5550538fbe7c463c160402f055c678f79caceeaf615cf5fff53daa036432315",
+   "sha": "2c7c2c05ff4f8a542fbad3e5b803b90a4ad4fa86200635aa22b5f4a3bc118d9e",
    "caratteri": 22475,
    "link_pdf": [
-    {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_-Spagnolo_CORRETTO.pdf",
-     "testo": "قانون 104 / 92"
-    },
     {
      "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_arabo.pdf",
      "testo": "BUWANANG BENEPISYO PARA SA MAY KAPANSANAN"
@@ -1182,6 +1532,10 @@
     {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_italiano.pdf",
      "testo": "SUBSIDIO MENSUAL DE FRECUENCIA"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_-Spagnolo_CORRETTO.pdf",
+     "testo": "قانون 104 / 92"
     },
     {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_Tagalog.pdf",
@@ -1208,16 +1562,16 @@
      "testo": "LEGEA 104/92"
     },
     {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_-_Romeno.pdf",
-     "testo": "INDEMNIZAȚIA LUNARĂ DE FRECVENȚĂ"
-    },
-    {
      "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_italiano_1_.pdf",
      "testo": "মাসিক ভাতা"
     },
     {
      "url": "https://www.aslroma1.it/uploads/files/39_40_DISABILITY-1.pdf",
      "testo": "الاستفادة النقدیة الشھریة"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_-_Romeno.pdf",
+     "testo": "INDEMNIZAȚIA LUNARĂ DE FRECVENȚĂ"
     }
    ],
    "cambiata": true
@@ -1523,7 +1877,7 @@
    "http": 200,
    "file": "roma/2b46e5d8fe38.txt",
    "titolo": "ASL Roma 2 - Punto Unico di Accesso - PUA",
-   "sha": "c83452c1f7a5d1e6cba3a306d945fc80042f906f37fa43b20919ae72152f9e9a",
+   "sha": "3f68f85d2934245b9db30c2532b81ebba68f646a9178c02dabe3e11c31260438",
    "caratteri": 11883,
    "email_nascoste": 11,
    "cambiata": true
@@ -1594,7 +1948,7 @@
    "http": 200,
    "file": "roma/3feb23bab29f.txt",
    "titolo": "ASL Roma 2 - UOSD Coordinamento Screening",
-   "sha": "24db1169946b305ce9fbb564ca72a871869f925aab15f315bc80d587afa0636d",
+   "sha": "5c43e1bd28c604ca86f692d7dd8055633f15bd9509f0d0b1ff8df0a27774452a",
    "caratteri": 8743,
    "email_nascoste": 3,
    "cambiata": true
@@ -1686,7 +2040,7 @@
    "http": 200,
    "file": "roma/7e7cbafb32a1.txt",
    "titolo": "15.04.05 Liste di attesa",
-   "sha": "ccefd104f88d4b67013d2911e5f06d1ac8917e3141a3f59667aabc30088e9355",
+   "sha": "7499a307e740a4d1b33e81103826abb53a7189478ff13118cc2ea50610a22b07",
    "caratteri": 8672,
    "link_pdf": [
     {
@@ -2769,6 +3123,17 @@
    "cambiata": false
   },
   {
+   "asl": "regole",
+   "url": "https://salutelazio.it/it",
+   "controllata": "2026-10-24",
+   "http": 200,
+   "file": "regole/652b256db893.txt",
+   "titolo": "Fascicolo Sanitario",
+   "sha": "f13c9eeb4924a61ff758ef61496e0efa7bdc4b642b901535cb8689a074e2f47e",
+   "caratteri": 4010,
+   "cambiata": false
+  },
+  {
    "asl": "inps-lazio",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.708100.708100-elencoStruttureInps.html",
    "controllata": "2026-10-24",
@@ -2898,17 +3263,6 @@
    "titolo": "| Regione Lazio | CITTADINI-SALUTE",
    "sha": "6f3258ef58d9fd8bf00f24ed756617afd77c5ac0e597d48e84ca2f33baeb4de2",
    "caratteri": 7942,
-   "cambiata": false
-  },
-  {
-   "asl": "regione-lazio",
-   "url": "https://salutelazio.it/it",
-   "controllata": "2026-10-24",
-   "http": 200,
-   "file": "regione-lazio/652b256db893.txt",
-   "titolo": "Fascicolo Sanitario",
-   "sha": "f13c9eeb4924a61ff758ef61496e0efa7bdc4b642b901535cb8689a074e2f47e",
-   "caratteri": 4010,
    "cambiata": false
   },
   {
@@ -3049,7 +3403,7 @@
    "http": 200,
    "file": "asl-roma2/2e0f163ef6a3.txt",
    "titolo": "ASL Roma 2 - Guardia Medica",
-   "sha": "96701075f7ca193b3a1d29e247511d6dbedb6824ea135f919a05c92ea1a5a399",
+   "sha": "5b8b925a78f22b3bedbfe579557987b88290c5371fb7201bee05c591a3335eb8",
    "caratteri": 8091,
    "cambiata": true
   },
@@ -3422,29 +3776,118 @@
    "asl": "asl-latina",
    "url": "https://www.ausl.latina.it",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "finale": "https://www.ausl.latina.it/",
+   "file": "asl-latina/375895c3df35.txt",
+   "titolo": "Home",
+   "sha": "649bcc6fffbdb92dec0753fa1ee2bfed028e9c6051110408fc4b5a5423e34f6f",
+   "caratteri": 8143,
+   "link_pdf": [
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/319/pars%202026.pdf",
+     "testo": "Piano Annuale per la Gestione del Rischio Sanitario 2026"
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/category/31/CONTRATTO_asl%20latina-PolizzaRTCO.pdf",
+     "testo": "Polizza RTCO"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "asl-latina",
    "url": "https://www.ausl.latina.it/25-dedicato-a/468-guardiamedica",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "asl-latina/ee9cd0b31e8d.txt",
+   "titolo": "Guardia Medica",
+   "sha": "5a5e5638ce77873b90a2e5b17230e204a40d4cdb3b1c6844d460b1ca8a67387b",
+   "caratteri": 7530,
+   "link_pdf": [
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/319/pars%202026.pdf",
+     "testo": "Piano Annuale per la Gestione del Rischio Sanitario 2026"
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/category/31/CONTRATTO_asl%20latina-PolizzaRTCO.pdf",
+     "testo": "Polizza RTCO"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "asl-latina",
    "url": "https://www.ausl.latina.it/index.php/pua",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "asl-latina/5d3f2e229170.txt",
+   "titolo": "PUA",
+   "sha": "a3e92de0a33c61de23a049ec0131db7dc6aea07b1eb16ff61ad8bae6421a75a9",
+   "caratteri": 4481,
+   "link_pdf": [
+    {
+     "url": "https://www.ausl.latina.it/attachments/category/31/CONTRATTO_asl%20latina-PolizzaRTCO.pdf",
+     "testo": "Polizza RTCO"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "asl-latina",
    "url": "https://www.ausl.latina.it/index.php/assistenza-domiciliare",
    "controllata": "2026-10-24",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "asl-latina/6cc43dec50c4.txt",
+   "titolo": "Assistenza domiciliare",
+   "sha": "9dc2b1b03c9ba2fdd8a125128d5815ef5e59e9c70d5efdac2dce194f4a0290a1",
+   "caratteri": 6415,
+   "link_pdf": [
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/41/Dichiarazione%20Sostitutiva%20della%20posizione%20reddituale%20per%20accesso%20in%20RSA.PDF",
+     "testo": ""
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/41/Scheda%20Sanitaria%20per%20proposta%20di%20ricovero%20in%20RSA%20o%20Lungodegenza.PDF",
+     "testo": ""
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/41/Scheda%20Socio-Anagrafica%20per%20accesso%20in%20RSA.PDF",
+     "testo": ""
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/41/Modulo%20Richiesta%20Ricovero%20RSA%20o%20Lungodegenza.PDF",
+     "testo": ""
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/41/Scheda%20regionale%20RPC.pdf",
+     "testo": ""
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/41/Allegato%20Contatti%20CAD%20aziendali.pdf",
+     "testo": ""
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/41/Allegato%20Prestazioni%20Erogabili%20in%20ADI.pdf",
+     "testo": ""
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/41/Modulistica%20ADP.pdf",
+     "testo": ""
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/41/Modulistica%20ADP%20Scheda%20Accessi%20Mensili.pdf",
+     "testo": ""
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/article/41/Modulistica%20ADP%20-%20Allegato%20G%20-%20Accordo%20Collettivo%20Nazionale.pdf",
+     "testo": ""
+    },
+    {
+     "url": "https://www.ausl.latina.it/attachments/category/31/CONTRATTO_asl%20latina-PolizzaRTCO.pdf",
+     "testo": "Polizza RTCO"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "asl-rieti",
