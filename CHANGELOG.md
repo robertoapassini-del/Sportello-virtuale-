@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 24/10/2026 — Guardia medica: la regola nazionale
+- Letto l'Accordo collettivo nazionale della medicina generale 2019-2021 (PDF dell'intesa Stato-Regioni del 4/4/2024, copiato dal server il 24/10/2026; il testo ha errori di lettura automatica). La guardia medica è un compito dei medici del «ruolo unico» di assistenza primaria: continuità dell'assistenza di notte e di giorno, feriale e festiva; cure non differibili in ambulatorio o a casa, anche con il 116117; ricette per terapie non differibili, proposte di ricovero, certificati di malattia per i lavoratori dipendenti. Le Regioni organizzano il servizio, anche con meno medici da mezzanotte alle 8.
+- L'accordo non fissa gli orari dalle 20 alle 8 né il limite di 3 giorni del certificato: restano regole scritte dalle aziende sanitarie, e la pagina `guardia-medica/` ora lo dice. Note aggiornate in `data/rules-guardia-medica.json`.
+
 ## 24/10/2026 — Triage: le linee di indirizzo dalle Regioni
 - L'allegato dell'accordo Stato-Regioni del 01/08/2019 sul triage è arrivato con la copia del 24/10/2026, ma è una scansione: il PDF non ha testo («PDF senza testo»). Le stesse linee di indirizzo nazionali sono negli atti con cui le Regioni le hanno adottate: in `data/fonti-nazionali.json` ci sono ora quelli di Piemonte (DGR del 16/04/2021), Emilia-Romagna (GPG/2021/1291), Veneto (DGR 1035/2019, allegato A), Puglia (DGR 266/2023), Lazio (manuale regionale a cinque codici, 2022) e Campania (BURC). I tempi nazionali si aggiungono alla pagina dei codici dopo averli letti nelle copie.
 - `tests/coerenza.test.mjs`: tra i siti ufficiali di `fonti-nazionali.json` anche quelli delle Regioni e dei loro bollettini (`regione.<nome>.it`).

@@ -46,7 +46,7 @@ L'ordine viene da quanto si cercano (Google Trends, `ricerche-frequenti.md` punt
 | Tema | Perché | Area |
 |---|---|---|
 | Pronto soccorso: quando andare, i codici, il ticket | 1,6 volte «legge 104», solo in Numeri utili | **fatto il 24/10/2026**: `pronto-soccorso/`, area «Urgenze», con le regole di Lombardia, Friuli-Venezia Giulia e Sardegna. Da aggiungere: i tempi nazionali dall'allegato dell'accordo Stato-Regioni (copia dei PDF fino a 20 MB) e il ticket delle altre regioni dalle loro pagine ufficiali |
-| Guardia medica e 116117: quando, come, dove | 1,4 volte «legge 104», picchi a Natale e Ferragosto | **fatto il 24/10/2026**: `guardia-medica/`, dalle pagine delle aziende sanitarie; l'elenco del 116117 si crea dai dati. Da aggiungere: la regola nazionale dall'Accordo collettivo nazionale (fonti in `fonti-nazionali.json`) |
+| Guardia medica e 116117: quando, come, dove | 1,4 volte «legge 104», picchi a Natale e Ferragosto | **fatto il 24/10/2026**: `guardia-medica/`, dalle pagine delle aziende sanitarie; l'elenco del 116117 si crea dai dati. Regola nazionale dall'Accordo collettivo nazionale aggiunta lo stesso giorno |
 | Certificato di malattia per il lavoro | 0,2, ma tutto l'anno | **fatto il 24/10/2026**: `certificato-malattia/`, area «Malattia e lavoro» |
 | Visita fiscale: fasce orarie, se non sei a casa | 0,2 | **fatto il 24/10/2026**: `visita-fiscale/` |
 | Link della Regione per CUP e cambio medico online | ricerche «cup + regione», «cambio medico online» | dati regionali |
