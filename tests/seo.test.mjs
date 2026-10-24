@@ -82,7 +82,7 @@ test('sitemap: lastmod con una data vera, mai nel futuro', () => {
 
 test('home: sotto il titolo la frase che dice a cosa serve il sito, prima del riquadro «Stai male adesso?»', () => {
   const home = read('index.html');
-  assert.match(home, /<h1>Di cosa hai bisogno\?<\/h1>\n<p class="lead">La visita è troppo lontana\?/);
+  assert.match(home, /<h1>Di cosa hai bisogno\?<\/h1>\n<p class="lead">Come prenoti una visita\?/);
   const js = read('js/home.js');
   assert.ok(js.indexOf('home-lead') > 0 && js.indexOf('home-lead') < js.indexOf('${urgent}'));
 });

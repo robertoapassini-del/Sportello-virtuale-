@@ -33,7 +33,7 @@ function copertura() {
     ? `${dove} trovi anche i numeri utili e gli uffici della zona per: ${esc(elenco)}.`
     : `${dove} trovi anche i numeri utili.`;
   return r.attiva
-    ? `<p class="home-regione">Le regole e i conti valgono in tutta Italia. ${qui}</p>`
+    ? `<p class="home-regione">Le regole valgono in tutta Italia. ${qui}</p>`
     : '<p class="home-regione">Le regole valgono in tutta Italia.</p>';
 }
 
@@ -49,7 +49,7 @@ function intro() {
   return `
   <section class="home-intro page-band">
   <h1>Di cosa hai bisogno?</h1>
-  <p class="lead home-lead">La visita è troppo lontana? La visita per l'invalidità non arriva? Ti aiutiamo a far valere i tuoi diritti nella sanità, in tutta Italia.</p>
+  <p class="lead home-lead">Come prenoti una visita? Come chiedi l'esenzione dal ticket o l'invalidità? Qui trovi i passi da fare, con parole semplici e fonti ufficiali. In tutta Italia.</p>
   <p class="home-trust">Gratis. Siamo volontari: <strong>non siamo l'${esc(ente)} né l'INPS</strong>.${una ? ` Per ora solo in ${esc(regioneInfo().name)}.` : ''}</p>
   ${piu ? `<p class="home-regione">📍 ${regioneSalvata() ? `Stai guardando: <strong>${esc(scelta.name)}</strong> · <a href="numeri-utili/?torna=${encodeURIComponent(location.pathname)}#regione">Cambia regione</a>` : `<a href="numeri-utili/?torna=${encodeURIComponent(location.pathname)}#regione">Scegli la tua regione</a> per vedere i numeri e gli uffici della tua zona`}</p>` : ''}
   ${piu ? copertura() : ''}

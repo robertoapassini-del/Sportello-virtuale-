@@ -2,6 +2,12 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 24/10/2026 — Pagina iniziale: a cosa serve il sito
+- La frase sotto «Di cosa hai bisogno?» parlava solo di cose che non funzionano («La visita è troppo lontana?», «far valere i tuoi diritti»). Il sito serve anche a sapere come fare: ora dice «Come prenoti una visita? Come chiedi l'esenzione dal ticket o l'invalidità? Qui trovi i passi da fare, con parole semplici e fonti ufficiali. In tutta Italia.»
+- Stesso cambio nel titolo della home («…: come fare») e nella descrizione per Google e WhatsApp.
+- Riga della regione: «Le regole valgono in tutta Italia» (tolto «e i conti», poco chiaro).
+- `tests/seo.test.mjs` controlla la frase nuova.
+
 ## 24/10/2026 — Fascicolo Sanitario: link anche per Veneto, Friuli-Venezia Giulia, Calabria e Puglia
 - Le pagine messe in `regole_fonti.fse` il 23/10/2026 sono state copiate dal server la sera stessa (branch `copie-siti`, cartella `regole`). Lette le copie: `verified`, `proof: "pagina"` e la frase in `nota`; poi `link.fse` in `data/regioni/index.json`. Veneto: Portale della Salute («Accedi al Fascicolo Sanitario Elettronico Regionale»); Friuli-Venezia Giulia: SESAMO (copia aperta col browser); Calabria: fascicolosanitario.regione.calabria.it («ACCEDI AL TUO FASCICOLO»); Puglia: la pagina in italiano di PugliaSalute.
 - Sicilia: la prova del link ora è la copia della pagina della Regione (23/10/2026).
