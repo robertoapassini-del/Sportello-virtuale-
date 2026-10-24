@@ -261,6 +261,8 @@ di aziende sanitarie. Lo facciamo in tre pezzi, ognuno con un compito solo:
    `data/regioni/index.json`: stesso indirizzo. Una voce senza `proof` è solo «da copiare» (indirizzo citato da
    un'altra pagina ufficiale): dopo la copia si legge la pagina, si mettono `verified`, `proof` e la frase in
    `nota`, poi `link.fse` (controllo in `tests/coerenza.test.mjs`).
+   Dove il Fascicolo cambia da zona a zona (Trentino-Alto Adige) `link.fse` e `regole_fonti.fse` sono elenchi
+   `{ "in": "in provincia di Trento", "url" }`, nello stesso ordine.
    **Email nascoste ai robot.** Molti siti mostrano l'indirizzo con un piccolo script: curl vedeva solo
    «[email protected]» (Cloudflare: 123 copie in Sardegna, 3 in Calabria) o «Questo indirizzo email è protetto dagli
    spambots» (Joomla: URP e PEC delle USL toscane). `tools/email-nascoste.mjs` rimette l'indirizzo in chiaro prima di
