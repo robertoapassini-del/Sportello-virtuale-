@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 24/10/2026 — Pronto soccorso: i tempi nazionali del triage
+- Letti gli atti delle Regioni sul triage copiati dal server il 24/10/2026. Le linee di indirizzo nazionali del 2019 (riportate dalla DGR del Piemonte del 16/04/2021 «come da direttive nazionali», dal documento della Campania sul BURC e dalla delibera dell'Emilia-Romagna GPG/2021/1291): codice 1 accesso immediato, 2 entro 15 minuti, 3 entro 60, 4 entro 120, 5 entro 240, con un afflusso normale.
+- `pronto-soccorso/i-codici/`: i tempi ora sono quelli nazionali (prima erano solo quelli della carta dei servizi dell'ASUGI, Friuli-Venezia Giulia, uguali). In Veneto la Regione ha un modello suo (DGR 1035/2019): scritto come regola regionale. Fonti e dati in `data/rules-pronto-soccorso.json`.
+
 ## 24/10/2026 — Guardia medica: la regola nazionale
 - Letto l'Accordo collettivo nazionale della medicina generale 2019-2021 (PDF dell'intesa Stato-Regioni del 4/4/2024, copiato dal server il 24/10/2026; il testo ha errori di lettura automatica). La guardia medica è un compito dei medici del «ruolo unico» di assistenza primaria: continuità dell'assistenza di notte e di giorno, feriale e festiva; cure non differibili in ambulatorio o a casa, anche con il 116117; ricette per terapie non differibili, proposte di ricovero, certificati di malattia per i lavoratori dipendenti. Le Regioni organizzano il servizio, anche con meno medici da mezzanotte alle 8.
 - L'accordo non fissa gli orari dalle 20 alle 8 né il limite di 3 giorni del certificato: restano regole scritte dalle aziende sanitarie, e la pagina `guardia-medica/` ora lo dice. Note aggiornate in `data/rules-guardia-medica.json`.

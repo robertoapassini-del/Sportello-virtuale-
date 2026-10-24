@@ -3,11 +3,15 @@
   "last_verified": "2026-10-24",
   "codici_numero": 5,
   "ticket_bianco_lombardia_euro": 25,
-  "attesa_fvg_minuti": {
+  "attesa_nazionale_minuti": {
     "codice_2": 15,
     "codice_3": 60,
     "codice_4": 120,
     "codice_5": 240
+  },
+  "attesa_veneto_minuti": {
+    "codice_5_infermiere": 30,
+    "codice_5_medico": 60
   },
   "provenienza": {
     "codici_numero": {
@@ -15,7 +19,7 @@
       "verified": "2026-10-24",
       "proof": "testo",
       "review_by": "2027-10-24",
-      "nota": "Conferenza Stato-Regioni, accordo del 01/08/2019 (Rep. atti n. 143/CSR) sulle «Linee di indirizzo nazionali sul Triage intraospedaliero», letto sulla copia del server del 24/10/2026: le Regioni sono d'accordo «nel rispetto dell'introduzione del codice numerico di priorità da 5 ad 1» e «possano mantenere il proprio sistema di colori per il triage se già in uso». I tempi nazionali sono nell'allegato PDF, che il server copia dal 24/10/2026 (limite di 20 MB): da aggiungere quando c'è la copia."
+      "nota": "Conferenza Stato-Regioni, accordo del 01/08/2019 (Rep. atti n. 143/CSR) sulle «Linee di indirizzo nazionali sul Triage intraospedaliero», letto sulla copia del server del 24/10/2026: le Regioni sono d'accordo «nel rispetto dell'introduzione del codice numerico di priorità da 5 ad 1» e «possano mantenere il proprio sistema di colori per il triage se già in uso». L'allegato PDF con le linee di indirizzo è una scansione senza testo: i tempi sono letti negli atti con cui le Regioni le hanno adottate (attesa_nazionale_minuti)."
     },
     "ticket_bianco_lombardia_euro": {
       "url": "https://www.regione.lombardia.it/sanita/emergenze-e-urgenze/pronto-soccorso",
@@ -24,12 +28,19 @@
       "review_by": "2027-01-31",
       "nota": "Regione Lombardia, pagina «Pronto Soccorso», copia del server del 24/10/2026: gli accessi in «codice bianco alla dimissione» pagano la «quota fissa per l’accesso», che la pagina dice di 25,00 euro, «nel rispetto delle esenzioni» (delibera regionale n. 3379 del 2012). Paga il ticket anche chi se ne va prima della chiusura del verbale, con qualunque codice. Regola della sola Lombardia."
     },
-    "attesa_fvg_minuti": {
-      "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/carte_dei_servizi/cds_asugi_generale_rev_010.pdf",
+    "attesa_nazionale_minuti": {
+      "url": "https://www.regione.piemonte.it/governo/bollettino/abbonati/2021/17/attach/dgr_03088_1050_16042021.pdf",
       "verified": "2026-10-24",
       "proof": "testo",
       "review_by": "2027-10-24",
-      "nota": "Carta dei servizi dell'ASUGI (Trieste e Gorizia, Friuli-Venezia Giulia), rev. 10, copia del server del 24/10/2026: codice rosso «accesso immediato», arancione «accesso entro 15 minuti», azzurro «accesso entro 60 minuti», verde «accesso entro 120 minuti», bianco «accesso entro 240 minuti». Regola scritta da un'azienda del Friuli-Venezia Giulia."
+      "nota": "Linee di indirizzo nazionali sul triage (accordo Stato-Regioni del 01/08/2019), lette negli atti regionali copiati dal server il 24/10/2026. Regione Piemonte, DGR del 16/04/2021, «come da direttive nazionali»: codice 1 «Accesso immediato», 2 «Accesso entro 15 minuti», 3 «Accesso entro 60 minuti», 4 «Accesso entro 120 minuti», 5 «Accesso entro 240 minuti», tempi validi «quando siano presenti condizioni di normale affluenza». La stessa tabella è nel documento della Regione Campania sul BURC («L’Accordo Stato Regioni del 2019 ha identificato un nuovo sistema di codifica») e nella delibera dell'Emilia-Romagna GPG/2021/1291 (Tabella 1)."
+    },
+    "attesa_veneto_minuti": {
+      "url": "https://bur.regione.veneto.it/BurvServices/pubblica/Download.aspx?name=Dgr_1035_19_AllegatoA_401204.pdf&type=9&storico=False",
+      "verified": "2026-10-24",
+      "proof": "testo",
+      "review_by": "2027-10-24",
+      "nota": "Regione Veneto, DGR n. 1035 del 12/07/2019, allegato A, copia del server del 24/10/2026: codice 5 «PIC entro 30 minuti», «visita medica entro 60 minuti dalla PIC» (PIC: presa in cura infermieristica). Regola della sola Regione Veneto."
     }
   },
   "sources": [
@@ -42,12 +53,24 @@
       "url": "https://www.regione.lombardia.it/sanita/emergenze-e-urgenze/pronto-soccorso"
     },
     {
-      "label": "ASUGI (Friuli-Venezia Giulia) – Carta dei servizi: codici e tempi del pronto soccorso",
-      "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/carte_dei_servizi/cds_asugi_generale_rev_010.pdf"
-    },
-    {
       "label": "ASL Cagliari (Sardegna) – Servizi digitali: pagare il ticket del pronto soccorso",
       "url": "https://www.asl8cagliari.it/servizio/servizi-digitali-cup-web/"
+    },
+    {
+      "label": "Regione Piemonte – DGR del 16/04/2021, linee di indirizzo per il triage",
+      "url": "https://www.regione.piemonte.it/governo/bollettino/abbonati/2021/17/attach/dgr_03088_1050_16042021.pdf"
+    },
+    {
+      "label": "Regione Campania (BURC) – Indicazioni per l'organizzazione del triage",
+      "url": "https://burc.regione.campania.it/eBurcWeb/directServlet?DOCUMENT_ID=00147924&ATTACH_ID=225928"
+    },
+    {
+      "label": "Regione Emilia-Romagna – Delibera GPG/2021/1291 sul triage",
+      "url": "https://servizissiir.regione.emilia-romagna.it/deliberegiunta/servlet/AdapterHTTP?action_name=ACTIONRICERCADELIBERE&operation=downloadTesto&codProtocollo=GPG/2021/1291&ENTE=1"
+    },
+    {
+      "label": "Regione Veneto – DGR 1035/2019, allegato A (triage)",
+      "url": "https://bur.regione.veneto.it/BurvServices/pubblica/Download.aspx?name=Dgr_1035_19_AllegatoA_401204.pdf&type=9&storico=False"
     }
   ]
 }
