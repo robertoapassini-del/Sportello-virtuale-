@@ -25,7 +25,7 @@ p { font-size: 46px; font-weight: 700; line-height: 1.25; margin: 48px 0 0; max-
 .url { font-size: 34px; font-weight: 700; margin-top: 40px; color: #bfe8e2; }
 </style></head><body>
 <div class="top">${MARK.replace('class="brand-mark" ', '')}<h1>Guida Sanità</h1></div>
-<p>Sanità, cure e invalidità: cosa ti spetta, entro quando e come chiederlo.</p>
+<p>La sanità pubblica: come si fa, con parole semplici e fonti ufficiali.</p>
 <div class="url">guidasanita.it · gratis, fatto da volontari</div>
 </body></html>`;
 

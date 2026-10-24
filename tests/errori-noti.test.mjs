@@ -111,3 +111,16 @@ test('la privacy dice che le parole cercate restano nell\'indirizzo e nella cron
   const privacy = fs.readFileSync(path.join(SITE, 'privacy.html'), 'utf8');
   assert.match(privacy, /«#q=»[^<]*cronologia/, 'privacy.html: manca la frase sulla ricerca nell\'indirizzo («#q=») e nella cronologia');
 });
+
+// 24/10/2026, la missione (CLAUDE.md): prima come si fa, poi cosa fare se qualcosa non va. Titoli e home dicevano
+// solo il problema («La visita per l'invalidità non arriva», «Il verbale è sbagliato»). Le frasi dei problemi restano
+// nelle parole chiave e nelle pagine «Se qualcosa non va»; i titoli dei moduli e delle aree dicono la procedura.
+test('titoli dei moduli e home: prima la procedura, non solo il problema', () => {
+  const reg = JSON.parse(fs.readFileSync(path.join(SITE, 'data/moduli.json'), 'utf8'));
+  const PROBLEMA = /non arriv|troppo lontan|è sbagliat|non ti danno|in ritardo/i;
+  const brutti = [...reg.groups.map((g) => g.title), ...reg.modules.map((m) => m.title)].filter((t) => PROBLEMA.test(t));
+  assert.deepEqual(brutti, [], 'titoli scritti come problema: scrivi la procedura (il problema va in «small» o nelle parole chiave)');
+  const home = fs.readFileSync(path.join(SITE, 'js/home.js'), 'utf8');
+  const frequenti = home.match(/const FREQUENTI = \[([\s\S]*?)\];/)[1];
+  assert.ok(!PROBLEMA.test(frequenti), 'js/home.js: «Le domande più frequenti» sono procedure; i problemi vanno in «Qualcosa non va?» (NON_VA)');
+});

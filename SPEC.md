@@ -1,5 +1,9 @@
 # Diritto in Tempo — Build Spec (MVP, Sicily) — v2.2
 
+> **Storia del progetto.** Questo è il primo progetto (ottobre 2026): uno strumento per i reclami, solo in Sicilia.
+> Dal 24/10/2026 la missione è più larga: tutta la sanità pubblica, in tutta Italia, prima come si fa e poi cosa
+> fare se qualcosa non va. La missione di oggi è in [CLAUDE.md](CLAUDE.md). Le regole tecniche qui sotto valgono ancora.
+
 > v2.2 adds a second module: **Invalidità civile** (section 12). Build module 1 (liste d'attesa) first;
 > module 2 reuses the same engine (deadline check + letter + contacts).
 

@@ -33,7 +33,7 @@ function copertura() {
     ? `${dove} trovi anche i numeri utili e gli uffici della zona per: ${esc(elenco)}.`
     : `${dove} trovi anche i numeri utili.`;
   return r.attiva
-    ? `<p class="home-regione">Le regole e i conti valgono in tutta Italia. ${qui}</p>`
+    ? `<p class="home-regione">Le regole valgono in tutta Italia. ${qui}</p>`
     : '<p class="home-regione">Le regole valgono in tutta Italia.</p>';
 }
 
@@ -49,7 +49,7 @@ function intro() {
   return `
   <section class="home-intro page-band">
   <h1>Di cosa hai bisogno?</h1>
-  <p class="lead home-lead">La visita è troppo lontana? La visita per l'invalidità non arriva? Ti aiutiamo a far valere i tuoi diritti nella sanità, in tutta Italia.</p>
+  <p class="lead home-lead">Come prenoti una visita? Come chiedi l'esenzione dal ticket o l'invalidità? Qui trovi i passi da fare, con parole semplici e fonti ufficiali. In tutta Italia.</p>
   <p class="home-trust">Gratis. Siamo volontari: <strong>non siamo l'${esc(ente)} né l'INPS</strong>.${una ? ` Per ora solo in ${esc(regioneInfo().name)}.` : ''}</p>
   ${piu ? `<p class="home-regione">📍 ${regioneSalvata() ? `Stai guardando: <strong>${esc(scelta.name)}</strong> · <a href="numeri-utili/?torna=${encodeURIComponent(location.pathname)}#regione">Cambia regione</a>` : `<a href="numeri-utili/?torna=${encodeURIComponent(location.pathname)}#regione">Scegli la tua regione</a> per vedere i numeri e gli uffici della tua zona`}</p>` : ''}
   ${piu ? copertura() : ''}
@@ -63,20 +63,30 @@ const results = `
   </section>`;
 
 const about = `
-  <div class="notice info home-about"><p>Sanità, cure e invalidità: ti diciamo cosa ti spetta, entro quando e come chiederlo. Con parole semplici.</p></div>`;
+  <div class="notice info home-about"><p>Tutto quello che serve sapere sulla sanità pubblica, con parole semplici. Ogni informazione viene da una fonte ufficiale. Ogni notte il sito copia le pagine ufficiali e controlla numeri e indirizzi.</p></div>`;
 
-// Le domande più frequenti: link d'azione con la freccia verde, come NHS.uk.
+// Le domande più frequenti: link d'azione con la freccia verde, come NHS.uk. Prima come si fa (le ricerche più
+// frequenti su Google, docs/ricerche-frequenti.md, punto 3b), poi cosa fare se qualcosa non va (24/10/2026).
 const FREQUENTI = [
-  ['liste-attesa', 'Controlla se la tua visita è troppo lontana'],
+  ['fascicolo-e-ricetta/fascicolo-sanitario', 'Entra nel Fascicolo Sanitario'],
+  ['medico-famiglia', 'Cambia il medico di base'],
+  ['prenotare-cup', 'Prenota o disdici una visita al CUP'],
   ['esenzione-ticket', 'Scopri se devi pagare il ticket'],
-  ['invalidita', "Controlla se la visita per l'invalidità è in ritardo"],
+  ['legge-104', 'Chiedi la legge 104'],
 ];
+const NON_VA = [
+  ['liste-attesa', 'Controlla se la tua visita è troppo lontana'],
+  ['invalidita', "Controlla se la visita per l'invalidità è in ritardo"],
+  ['ausili', 'La carrozzina o il letto non arrivano'],
+];
+const azioni = (lista) => `
+  <ul class="action-links">${lista.map(([id, text]) => `
+    <li><a class="action-link" href="${id}/"><span class="arrow" aria-hidden="true">▶️</span><span class="txt">${esc(text)}</span></a></li>`).join('')}
+  </ul>`;
 const frequent = () => `
   <section class="frequent">
-  <h2>Le domande più frequenti</h2>
-  <ul class="action-links">${FREQUENTI.map(([id, text]) => `
-    <li><a class="action-link" href="${id}/"><span class="arrow" aria-hidden="true">▶️</span><span class="txt">${esc(text)}</span></a></li>`).join('')}
-  </ul>
+  <h2>Le domande più frequenti</h2>${azioni(FREQUENTI)}
+  <h2>Qualcosa non va?</h2>${azioni(NON_VA)}
   </section>`;
 
 // Riquadro rosso per chi sta male adesso (come le «care card» urgenti di NHS.uk).
