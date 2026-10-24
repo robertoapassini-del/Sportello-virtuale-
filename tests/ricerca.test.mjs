@@ -46,7 +46,10 @@ const CASI = [
   ['alzheimer', 'assistenza-domiciliare'],
   ['demenza', 'assistenza-domiciliare'],
   ['riabilitazione', 'assistenza-domiciliare'],
-  ['pronto soccorso', 'numeri-utili'],
+  ['pronto soccorso', 'pronto-soccorso'], // dal 24/10/2026 c'è la pagina; prima portava ai numeri utili
+  ['codice bianco', 'pronto-soccorso'],
+  ['visita fiscale', 'visita-fiscale'],
+  ['certificato di malattia', 'certificato-malattia'],
   ['ambulanza', 'numeri-utili'],
   ['urgente', 'numeri-utili'],
   ['guardia medica', 'numeri-utili'],

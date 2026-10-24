@@ -2,6 +2,13 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 24/10/2026 — Area nuova «Urgenze»: il pronto soccorso
+- Nuova pagina `pronto-soccorso/` (con «I codici del pronto soccorso, da 1 a 5») nell'area nuova `urgenze/`: il triage, i codici di priorità, il ticket, cosa portare.
+- Fonti, tutte lette sulle copie del server del 24/10/2026 (`data/rules-pronto-soccorso.json`): l'accordo Stato-Regioni del 01/08/2019 (Rep. n. 143/CSR, codici numerici da 1 a 5 in tutta Italia, colori a scelta delle Regioni); la pagina della Regione Lombardia sul pronto soccorso (significato dei 5 codici; ticket di 25 euro per il codice bianco alla dimissione); la carta dei servizi dell'ASUGI in Friuli-Venezia Giulia (tempi: 15, 60, 120 e 240 minuti); l'ASL di Cagliari (ticket per codice bianco e verde). Le regole regionali sono scritte come tali.
+- Da aggiungere quando arriva la copia dell'allegato dell'accordo Stato-Regioni (PR «Fonti nazionali: PDF fino a 20 MB»): le definizioni e i tempi nazionali.
+- Notato: la pagina dell'ASL TO5 (Piemonte) sul pronto soccorso mostra ancora i 4 colori di prima del 2019.
+- Ricerca: «pronto soccorso» e «codice bianco» portano alla pagina nuova (prima «pronto soccorso» portava ai numeri utili); nuove ricerche di prova per «visita fiscale» e «certificato di malattia» in `tests/ricerca.test.mjs`.
+
 ## 24/10/2026 — Fonti nazionali: PDF fino a 20 MB
 - La copia del 24/10/2026 non ha preso l'allegato dell'accordo Stato-Regioni sul triage del 01/08/2019: il PDF pesa più di 5 MB, il limite del server. `tools/copie.mjs` ora ha un limite di 20 MB solo per le fonti nazionali (cartelle `nazionali/regole-*` e `nazionali/tema-*`); per le regioni resta 5 MB. Nuovo caso in `tests/copie-giro.test.mjs`, provato: senza la correzione fallisce.
 - Tolto da `data/fonti-nazionali.json` l'indirizzo del comma 796 della L. 296/2006: Normattiva mostra solo i primi 100 commi dell'art. 1, anche con l'indirizzo del comma. Il ticket del codice bianco al pronto soccorso si prende dalle pagine ufficiali delle Regioni (in Lombardia, per esempio, la pagina della Regione sul pronto soccorso).
