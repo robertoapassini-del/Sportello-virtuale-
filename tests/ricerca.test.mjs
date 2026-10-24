@@ -52,7 +52,7 @@ const CASI = [
   ['certificato di malattia', 'certificato-malattia'],
   ['ambulanza', 'numeri-utili'],
   ['urgente', 'numeri-utili'],
-  ['guardia medica', 'numeri-utili'],
+  ['guardia medica', 'guardia-medica'], // dal 24/10/2026 c'è la pagina; prima portava ai numeri utili
   ['psicologo', 'psicologo'],
   ['cartella clinica', 'cartella-clinica'],
   ['visita troppo lontana', 'liste-attesa'],
@@ -76,7 +76,7 @@ const CASI = [
   ['ats', 'numeri-utili'],
   ['ulss', 'numeri-utili'],
   ['azienda sanitaria', 'numeri-utili'],
-  ['116117', 'numeri-utili'],
+  ['116117', 'guardia-medica'],
   ['farmacia di turno', 'numeri-utili'],
   ['pensione invalidità', 'invalidita'],
   ['assegno invalidità', 'invalidita'],

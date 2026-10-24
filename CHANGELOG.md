@@ -2,6 +2,16 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 24/10/2026 — La guardia medica e il 116117
+- Nuova pagina `guardia-medica/` nell'area «Urgenze» (ora «Urgenze, pronto soccorso e guardia medica»): quando c'è, cosa fa e cosa non fa, il certificato di malattia fino a 3 giorni, il 116117.
+- Fonti (`data/rules-guardia-medica.json`), dalle copie del server del 24/10/2026: le pagine ufficiali delle aziende sanitarie di 17 regioni su 20 dicono la notte «dalle 20 alle 8»; nel fine settimana si comincia alle 10 (ASP Basilicata, ASL Cagliari, ASL Roma 5) o alle 8 (Regione Friuli-Venezia Giulia, ARCS) del sabato o del giorno prima della festa. Il certificato fino a 3 giorni lo scrivono le aziende di 14 regioni (per esempio l'AUSL di Modena). Da confermare sull'Accordo collettivo nazionale quando arriva la copia.
+- Nuovo blocco `numero-europeo` in `tools/pagine.mjs`: l'elenco delle regioni dove la guardia medica risponde al 116117, in tutta la regione o solo in alcune aziende. Viene dai numeri delle aziende sanitarie (`asl.json`), che hanno già fonte e prova: si aggiorna da solo. Oggi: 11 regioni in tutto il territorio, 3 in parte (Liguria, Sardegna, Umbria).
+- Ricerca: «guardia medica» e «116117» portano alla pagina nuova (prima ai numeri utili).
+
+## 24/10/2026 — Guardia medica: le fonti nazionali da copiare
+- Le pagine del Ministero sulla guardia medica (continuità assistenziale) e sul 116117 non si copiano: salute.gov.it ha una protezione anti-robot. In `data/fonti-nazionali.json` ci sono ora le fonti dell'Accordo collettivo nazionale della medicina generale: le pagine della SISAC sull'accordo del 4 aprile 2024 e sul testo consolidato del 26 giugno 2026, l'intesa del 15 gennaio 2026 in Gazzetta Ufficiale, l'intesa del 4 aprile 2024 della Conferenza Stato-Regioni (pagina e PDF).
+- `tests/coerenza.test.mjs`: sisac.info tra i siti ufficiali di `fonti-nazionali.json`.
+
 ## 24/10/2026 — Area nuova «Urgenze»: il pronto soccorso
 - Nuova pagina `pronto-soccorso/` (con «I codici del pronto soccorso, da 1 a 5») nell'area nuova `urgenze/`: il triage, i codici di priorità, il ticket, cosa portare.
 - Fonti, tutte lette sulle copie del server del 24/10/2026 (`data/rules-pronto-soccorso.json`): l'accordo Stato-Regioni del 01/08/2019 (Rep. n. 143/CSR, codici numerici da 1 a 5 in tutta Italia, colori a scelta delle Regioni); la pagina della Regione Lombardia sul pronto soccorso (significato dei 5 codici; ticket di 25 euro per il codice bianco alla dimissione); la carta dei servizi dell'ASUGI in Friuli-Venezia Giulia (tempi: 15, 60, 120 e 240 minuti); l'ASL di Cagliari (ticket per codice bianco e verde). Le regole regionali sono scritte come tali.

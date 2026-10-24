@@ -366,9 +366,9 @@ test('link al Fascicolo della Regione: solo con la prova in regole_fonti.fse', (
 });
 
 // 24/10/2026: le pagine dei temi da scrivere (data/fonti-nazionali.json) le copia il server, e le pagine del sito
-// si scrivono leggendo le copie: devono essere pagine ufficiali (Ministero, INPS, leggi, Conferenza Stato-Regioni).
+// si scrivono leggendo le copie: devono essere pagine ufficiali (Ministero, INPS, leggi, Conferenza Stato-Regioni, SISAC).
 test('fonti-nazionali.json: solo indirizzi ufficiali, ogni tema con un id e almeno una pagina', () => {
-  const UFFICIALI = /^https:\/\/(www\.)?(salute\.gov\.it|inps\.it|normattiva\.it|gazzettaufficiale\.it|statoregioni\.it|agenziaentrate\.gov\.it|lavoro\.gov\.it|aifa\.gov\.it|iss\.it)\//;
+  const UFFICIALI = /^https:\/\/(www\.)?(salute\.gov\.it|inps\.it|normattiva\.it|gazzettaufficiale\.it|statoregioni\.it|sisac\.info|agenziaentrate\.gov\.it|lavoro\.gov\.it|aifa\.gov\.it|iss\.it)\//;
   const { temi } = JSON.parse(read('data/fonti-nazionali.json'));
   const brutti = [];
   const ids = new Set();
