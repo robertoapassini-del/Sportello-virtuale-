@@ -3,7 +3,8 @@
 // guardia_medica_url, pua_url, scelta_medico.url, url di phones, contacts e pagine; in cima al file gli url di
 // regole_fonti, nella cartella «regole»; data/regioni/<regione>/inps.json: la pagina di ogni sede INPS, sources e
 // pagine, nella cartella «inps-<regione>») e nei numeri nazionali (data/numeri.json: url dei numeri, nella cartella
-// «nazionali»). Legge anche data/regioni/<regione>/fonti.json, se c'è, per ogni regione, attiva o no:
+// «nazionali»), con le fonti delle regole nazionali (data/rules*.json: sources e provenienza, cartelle «regole-<file>») e le
+// pagine dei temi da scrivere (data/fonti-nazionali.json, cartelle «tema-<id>»). Legge anche data/regioni/<regione>/fonti.json, se c'è, per ogni regione, attiva o no:
 // stessa forma ({ asl: [{ id, site_url, pagine: [{ tipo, url }] }] }), solo gli indirizzi da copiare,
 // così i numeri della regione nuova si scrivono leggendo le copie (docs/regola-numeri.md, proof «pagina»).
 // Regola semplice: si copia ogni url scritto nei file della regione. Le cartelle delle aziende che non sono più in
@@ -239,8 +240,21 @@ const nazionali = () => ({
   asl: read('data/numeri.json').groups.map((g) => ({ id: g.id, pagine: (g.items || []).filter((n) => n.url).map((n) => ({ url: n.url })) })).filter((g) => g.pagine.length),
 });
 
+// Le fonti delle regole nazionali (data/rules*.json: sources e gli url di provenienza), un gruppo per file
+// («regole-esenzione»…), e le pagine ufficiali dei temi ancora da scrivere (data/fonti-nazionali.json, un gruppo per
+// tema, «tema-pronto-soccorso»…): così anche le leggi e le pagine del Ministero e dell'INPS si ricontrollano da sole.
+const urlDentro = (x) => (Array.isArray(x) ? x.flatMap(urlDentro)
+  : x && typeof x === 'object' ? [...(typeof x.url === 'string' ? [x.url] : []), ...Object.values(x).flatMap(urlDentro)] : []);
+const regoleNazionali = () => fs.readdirSync(path.join(SITE, 'data')).filter((f) => /^rules.*\.json$/.test(f)).sort().map((f) => {
+  const j = read(`data/${f}`);
+  const urls = [...(j.sources || []).map(urlDi), ...urlDentro(j.provenienza || {})].filter((u) => /^https?:/.test(u || ''));
+  return { id: `regole-${f.replace(/^rules-?|\.json$/g, '') || 'liste-attesa'}`, pagine: [...new Set(urls)].map((url) => ({ url })) };
+}).filter((g) => g.pagine.length);
+const temiNuovi = () => (esiste('data/fonti-nazionali.json') ? read('data/fonti-nazionali.json').temi || [] : [])
+  .map((t) => ({ id: `tema-${t.id}`, pagine: (t.pagine || []).filter((p) => urlDi(p)).map((p) => ({ url: urlDi(p) })) })).filter((g) => g.pagine.length);
+
 const daCopiare = regioni.regioni.map((reg) => ({ reg, asl: { asl: aziendeRegione(reg) } })).filter((x) => x.asl.asl.length);
-daCopiare.push({ reg: { id: 'nazionali', attiva: true }, asl: nazionali() });
+daCopiare.push({ reg: { id: 'nazionali', attiva: true }, asl: { asl: [...nazionali().asl, ...regoleNazionali(), ...temiNuovi()] } });
 
 // Il testo da salvare di una risposta: pagina HTML (con le email nascoste in chiaro) o PDF. null se non è né l'una né l'altro.
 function testoRisposta(r) {

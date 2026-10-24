@@ -6,6 +6,7 @@
 //   - sedi INPS: anche le fonti (sources) e le pagine (pagine) di inps.json;
 //   - regole_fonti in cima ad asl.json, scelta_medico.url, phones[].url;
 //   - fonti.json letto anche per una regione attiva, senza riscaricare gli url già copiati;
+//   - fonti delle regole nazionali (data/rules*.json) e pagine dei temi da scrivere (data/fonti-nazionali.json);
 //   - le cartelle delle aziende che non sono più nei dati si tolgono, quelle delle aziende che ci sono restano.
 import { test, before, after } from 'node:test';
 import assert from 'node:assert/strict';
@@ -58,6 +59,9 @@ const PAGINE = {
   '/vecchia-fonte': `<html><head><title>Pagina di fonti.json</title></head><body><p>${lungo}</p></body></html>`,
   '/tutela': `<html><head><title>Percorso di tutela</title></head><body><p><a href="/modulo-tutela.pdf">Scarica il modulo</a> · <a href="/delibera-12.pdf">Delibera n. 12</a> · <a href="https://altro-sito.example/modulo.pdf">Modulo di un altro sito</a></p><p>${lungo}</p></body></html>`,
   '/nazionale': `<html><head><title>Numero nazionale</title></head><body><p>${lungo}</p></body></html>`,
+  '/legge': `<html><head><title>Legge</title></head><body><p>${lungo}</p></body></html>`,
+  '/decreto': `<html><head><title>Decreto</title></head><body><p>${lungo}</p></body></html>`,
+  '/ministero': `<html><head><title>Ministero</title></head><body><p>${lungo}</p></body></html>`,
 };
 const FILE = {
   '/modulo.pdf': pdf('Modulo di reclamo URP tel. 0577 535222'),
@@ -105,6 +109,9 @@ function sito() {
   w('data/regioni/prova/fonti.json', { asl: [{ id: 'asl-centro', site_url: `${base}/asl`, pagine: [{ url: `${base}/vecchia-fonte` }] }] });
   w('data/regioni/nuova/fonti.json', { asl: [{ id: 'asl-nuova', site_url: `${base}/vecchia-fonte` }] });
   w('data/numeri.json', { groups: [{ id: 'emergenze', items: [{ number: '112', url: `${base}/nazionale` }] }] });
+  // Regole nazionali (fonti e provenienza) e pagine dei temi da scrivere.
+  w('data/rules-prova.json', { sources: [{ label: 'Legge', url: `${base}/legge` }], provenienza: { soglia: { url: `${base}/decreto`, proof: 'testo' }, altra: { url: `${base}/legge` } } });
+  w('data/fonti-nazionali.json', { temi: [{ id: 'pronto-soccorso', pagine: [{ tipo: 'ministero', url: `${base}/ministero` }] }] });
   return s;
 }
 
@@ -143,6 +150,11 @@ test('un giro di copie.mjs su pagine finte', { skip: !conCurl && 'manca curl' },
     const p = indice(out, 'prova').find((x) => x.url === `${base}${u}`);
     assert.ok(p && p.file && p.asl === 'inps-prova', `manca la copia INPS di ${u}`);
   }
+
+  // Regole nazionali: le fonti e la provenienza di data/rules-prova.json, una volta sola; i temi da scrivere.
+  const naz = indice(out, 'nazionali');
+  assert.deepEqual(naz.filter((p) => p.asl === 'regole-prova').map((p) => p.url).sort(), [`${base}/decreto`, `${base}/legge`]);
+  assert.ok(copia(out, 'nazionali', `${base}/ministero`) && naz.find((p) => p.url === `${base}/ministero`).asl === 'tema-pronto-soccorso');
 
   // fonti.json di una regione attiva: la pagina nuova si copia, quella già copiata non si riscarica.
   assert.equal(indice(out, 'prova').find((p) => p.url === `${base}/vecchia-fonte`).asl, 'asl-centro');

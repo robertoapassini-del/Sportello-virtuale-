@@ -92,5 +92,8 @@ ordine:
 4. **Turni per regione.** Con migliaia di pagine, il server non le copia tutte ogni notte: ogni regione ha il suo
    turno, ogni 2–3 giorni. Le procedure non cambiano da un giorno all'altro, quindi basta.
 
-Da decidere al punto 3: la proposta del server si pubblica da sola, o la unisce una persona? Oggi la regola
-(`SPEC.md`, principio 5) è che una persona approva.
+**Deciso il 24/10/2026:** per ora il sito si aggiorna da solo. La proposta si unisce da sola quando la CI è verde
+(`docs/regioni.md`, sezione 8; testo della routine in `docs/routine-aggiornamento.md`).
+
+**Fatto il 24/10/2026:** il server copia anche le fonti delle regole nazionali e le pagine dei temi nuovi
+(`data/fonti-nazionali.json`). Le pagine del primo giro si scrivono quando arrivano le copie.

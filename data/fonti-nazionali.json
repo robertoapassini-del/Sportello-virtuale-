@@ -1,0 +1,46 @@
+{
+  "_note": "Pagine ufficiali dei temi ancora da scrivere (docs/piano-contenuti.md). Il server le copia ogni notte (tools/copie.mjs, cartella copie/nazionali/tema-<id> del branch copie-siti). Le pagine del sito si scrivono leggendo le copie; poi ogni cifra va in un file data/rules-*.json con la sua provenienza. Qui ci sono solo indirizzi, nessun fatto. Indirizzi trovati il 24/10/2026 con la ricerca sui domini ufficiali.",
+  "temi": [
+    {
+      "id": "pronto-soccorso",
+      "pagine": [
+        { "tipo": "ministero", "url": "https://www.salute.gov.it/new/it/tema/112-118-e-pronto-soccorso/" },
+        { "tipo": "ministero", "url": "https://www.salute.gov.it/new/it/news-e-media/notizie/pronto-soccorso-libera-della-conferenza-stato-regioni-alle-nuove-linee-di/" },
+        { "tipo": "accordo", "url": "https://www.statoregioni.it/it/conferenza-stato-regioni/sedute-2019/seduta-del-01082019/atti/repertorio-atto-n-143csr/" },
+        { "tipo": "legge", "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2006-12-27;296~art1" },
+        { "tipo": "ministero", "url": "https://www.salute.gov.it/new/it/tema/esenzioni-dal-ticket/ticket-ed-esenzioni/" }
+      ]
+    },
+    {
+      "id": "guardia-medica",
+      "pagine": [
+        { "tipo": "ministero", "url": "https://www.salute.gov.it/new/en/tema/nuova-assistenza-distrettuale/116117-european-non-emergency-call-number-5/" },
+        { "tipo": "ministero", "url": "https://www.salute.gov.it/new/it/tema/statistiche-sanitarie/assistenza-sanitaria-distrettuale/" },
+        { "tipo": "ministero", "url": "https://www.salute.gov.it/new/it/tema/ondate-di-calore/chi-rivolgersi/" },
+        { "tipo": "ministero", "url": "https://www.salute.gov.it/new/it/tema/cure-nellunione-europea/cure-urgenti-e-necessarie-italia-ehic/" },
+        { "tipo": "ministero", "url": "https://www.salute.gov.it/new/it/tema/nuova-assistenza-distrettuale/riforma-dellassistenza-territoriale/" }
+      ]
+    },
+    {
+      "id": "certificato-malattia",
+      "pagine": [
+        { "tipo": "inps", "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.indennit--di-malattia-e-visite-mediche-di-controllo.html" },
+        { "tipo": "inps", "url": "https://www.inps.it/it/it/lavoro/malattia.html" },
+        { "tipo": "inps", "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.consultazione-dei-certificati-di-malattia-telematici.html" },
+        { "tipo": "inps", "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.49909.normativa-di-riferimento-per-la-certificazione-telematica-di-malattia.html" },
+        { "tipo": "inps", "url": "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/documents/Certificazione_malattia_visite_mediche_controllo_lavoratori_privati_pubblici_2024_v04.pdf" },
+        { "tipo": "inps", "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/FAQ_Certificati_di_malattia_telematici.pdf" },
+        { "tipo": "legge", "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2001-03-30;165~art55septies" }
+      ]
+    },
+    {
+      "id": "visita-fiscale",
+      "pagine": [
+        { "tipo": "inps", "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.sportello-per-il-cittadino-per-le-visite-mediche-di-controllo-54345.sportello-per-il-cittadino-per-le-visite-mediche-di-controllo.html" },
+        { "tipo": "inps", "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2023.12.lavoratori-pubblici-fasce-orarie-di-reperibilit-per-le-visite-mediche.html" },
+        { "tipo": "inps", "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2023/12/Circolare_14389/Allegati/14553_Messaggio-numero-4640-del-22-12-2023.pdf" },
+        { "tipo": "legge", "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:1983-09-12;463~art5" }
+      ]
+    }
+  ]
+}

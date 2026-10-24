@@ -2,6 +2,12 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 24/10/2026 — Il server copia anche le fonti nazionali; il sito si aggiorna da solo
+- `tools/copie.mjs` copia ogni notte anche le fonti delle regole nazionali (`sources` e `provenienza` di ogni `data/rules*.json`, 97 indirizzi: Normattiva, Ministero della Salute, INPS…; cartelle `nazionali/regole-<file>`) e le pagine dei temi da scrivere (`data/fonti-nazionali.json`, cartelle `nazionali/tema-<id>`). `tools/copie-se-serve.sh` rifà la copia anche quando cambiano questi file.
+- Nuovo `data/fonti-nazionali.json`: le pagine ufficiali per pronto soccorso, guardia medica e 116117, certificato di malattia e visita fiscale (Ministero della Salute, Conferenza Stato-Regioni, INPS, Normattiva). Solo indirizzi, nessun fatto: le pagine si scrivono leggendo le copie, perché da qui i siti ufficiali non si aprono.
+- Decisione del proprietario: per ora il sito si aggiorna da solo. La routine settimanale cambia un dato quando la copia ufficiale lo dimostra e unisce la sua pull request quando la CI è verde (`docs/regioni.md` sezione 8, `SPEC.md` principio 5). Il testo nuovo della routine è in `docs/routine-aggiornamento.md`.
+- Controlli nuovi: `tests/copie-giro.test.mjs` (fonti nazionali e temi copiati, una volta sola) e `tests/coerenza.test.mjs` (in `fonti-nazionali.json` solo siti ufficiali).
+
 ## 24/10/2026 — La missione nuova: tutta la sanità pubblica, prima come si fa
 - Missione scritta in `CLAUDE.md` (e in `README.md`, «Chi siamo»): spiegare a tutti la sanità pubblica con parole semplici e fonti ufficiali, prima come si fa e poi cosa fare se qualcosa non va, con un sito che si aggiorna da solo. `SPEC.md` è segnato come storia del progetto.
 - Titoli dei moduli e delle pagine sulla procedura, non sul problema: «Quanto puoi aspettare una visita o un esame», «Avere la cartella clinica e i referti», «Carrozzina, letto, pannoloni: come averli gratis», «Invalidità civile: la domanda e la visita», «Il ricorso contro il verbale di invalidità», «La tessera sanitaria: rinnovo, duplicato, estero», «Un infermiere o un medico a casa». Cambiati anche titolo per Google, descrizione e frase d'apertura delle pagine principali; i fatti e le cifre restano gli stessi. Gli indirizzi delle pagine non cambiano.
