@@ -63,20 +63,30 @@ const results = `
   </section>`;
 
 const about = `
-  <div class="notice info home-about"><p>Sanità, cure e invalidità: ti diciamo cosa ti spetta, entro quando e come chiederlo. Con parole semplici.</p></div>`;
+  <div class="notice info home-about"><p>Tutto quello che serve sapere sulla sanità pubblica, con parole semplici. Ogni informazione viene da una fonte ufficiale. Ogni notte il sito copia le pagine ufficiali e controlla numeri e indirizzi.</p></div>`;
 
-// Le domande più frequenti: link d'azione con la freccia verde, come NHS.uk.
+// Le domande più frequenti: link d'azione con la freccia verde, come NHS.uk. Prima come si fa (le ricerche più
+// frequenti su Google, docs/ricerche-frequenti.md, punto 3b), poi cosa fare se qualcosa non va (24/10/2026).
 const FREQUENTI = [
-  ['liste-attesa', 'Controlla se la tua visita è troppo lontana'],
+  ['fascicolo-e-ricetta/fascicolo-sanitario', 'Entra nel Fascicolo Sanitario'],
+  ['medico-famiglia', 'Cambia il medico di base'],
+  ['prenotare-cup', 'Prenota o disdici una visita al CUP'],
   ['esenzione-ticket', 'Scopri se devi pagare il ticket'],
-  ['invalidita', "Controlla se la visita per l'invalidità è in ritardo"],
+  ['legge-104', 'Chiedi la legge 104'],
 ];
+const NON_VA = [
+  ['liste-attesa', 'Controlla se la tua visita è troppo lontana'],
+  ['invalidita', "Controlla se la visita per l'invalidità è in ritardo"],
+  ['ausili', 'La carrozzina o il letto non arrivano'],
+];
+const azioni = (lista) => `
+  <ul class="action-links">${lista.map(([id, text]) => `
+    <li><a class="action-link" href="${id}/"><span class="arrow" aria-hidden="true">▶️</span><span class="txt">${esc(text)}</span></a></li>`).join('')}
+  </ul>`;
 const frequent = () => `
   <section class="frequent">
-  <h2>Le domande più frequenti</h2>
-  <ul class="action-links">${FREQUENTI.map(([id, text]) => `
-    <li><a class="action-link" href="${id}/"><span class="arrow" aria-hidden="true">▶️</span><span class="txt">${esc(text)}</span></a></li>`).join('')}
-  </ul>
+  <h2>Le domande più frequenti</h2>${azioni(FREQUENTI)}
+  <h2>Qualcosa non va?</h2>${azioni(NON_VA)}
   </section>`;
 
 // Riquadro rosso per chi sta male adesso (come le «care card» urgenti di NHS.uk).

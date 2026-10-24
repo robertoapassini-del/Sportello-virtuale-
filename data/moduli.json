@@ -4,10 +4,10 @@
       "id": "cure",
       "page": "visite-esami",
       "short": "Visite ed esami",
-      "intro": "Hai una ricetta e l'appuntamento è troppo lontano? Non sai se devi pagare il ticket? Qui trovi cosa ti spetta e come chiederlo.",
+      "intro": "Come si prenota una visita o un esame, quando non paghi il ticket, come avere le medicine e i referti. E cosa fare se la data è troppo lontana.",
       "icon": "🩺",
       "title": "Una visita, un esame, una medicina",
-      "small": "Appuntamenti lontani, ticket, piano terapeutico, referti"
+      "small": "Prenotare, tempi di attesa, ticket, medicine, referti, dentista"
     },
     {
       "id": "prevenzione",
@@ -22,7 +22,7 @@
       "id": "casa",
       "page": "aiuto-a-casa",
       "short": "Aiuto a casa",
-      "intro": "Una persona della famiglia è malata e deve essere curata a casa? Qui trovi come chiedere l'infermiere, gli ausili e le cure palliative.",
+      "intro": "Una persona della famiglia è malata e deve essere curata a casa? Qui trovi come si chiedono l'infermiere, gli ausili, le cure palliative e la RSA.",
       "icon": "🏠",
       "title": "Aiuto a casa per una persona malata",
       "small": "Infermiere a casa, carrozzina, letto, pannoloni, cure palliative"
@@ -31,10 +31,10 @@
       "id": "invalidita",
       "page": "invalidita-aiuti",
       "short": "Invalidità",
-      "intro": "La visita per l'invalidità, il verbale e gli aiuti economici. Ti diciamo i tempi di legge e cosa fare.",
+      "intro": "Come si chiedono l'invalidità civile, la legge 104, l'accompagnamento e gli altri aiuti. I passi da fare, i tempi di legge e cosa fare se qualcosa va storto.",
       "icon": "♿",
       "title": "Invalidità e aiuti economici",
-      "small": "Visita INPS, verbale sbagliato, assegno di inclusione"
+      "small": "Domanda e visita INPS, legge 104, accompagnamento, ricorso"
     },
     {
       "id": "servizi",
@@ -55,8 +55,8 @@
         "regioni/sicilia/asp"
       ],
       "icon": "📅",
-      "title": "La visita o l'esame è troppo lontano",
-      "small": "Il CUP mi ha dato un appuntamento tra tanto tempo",
+      "title": "Quanto puoi aspettare una visita o un esame",
+      "small": "I tempi massimi e cosa fare se il CUP ti dà una data lontana",
       "keywords": "visita esame appuntamento cup prenotazione prenotare sovracup aspconte disdire lista attesa lontano tempi ricetta priorità tutela percorso di tutela intramoenia sollecito ecografia eco tac risonanza",
       "pages": [
         {
@@ -135,8 +135,8 @@
         "regioni/sicilia/asp"
       ],
       "icon": "📁",
-      "title": "Non ti danno la cartella clinica o i referti?",
-      "small": "L'ho chiesta all'ospedale e non arriva",
+      "title": "Avere la cartella clinica e i referti",
+      "small": "Online o dall'ospedale, entro 7 giorni. E se tarda",
       "keywords": "cartella clinica referti documenti ospedale copia radiografia esami ricovero fascicolo sanitario elettronico spid cie cns ricetta elettronica nre garante privacy tar",
       "pages": [
         {
@@ -213,8 +213,8 @@
         "regioni/sicilia/asp"
       ],
       "icon": "🏠",
-      "title": "Serve un infermiere o un medico a casa",
-      "small": "Assistenza domiciliare dell'ASL",
+      "title": "Un infermiere o un medico a casa",
+      "small": "Come si chiede l'assistenza domiciliare all'ASL",
       "keywords": "infermiere casa domicilio assistenza domiciliare adi fisioterapia allettato anziano pua uvm dimissione protetta prelievo ossigeno dialisi badante oss detrazione riabilitazione fisioterapista alzheimer demenza esce uscita uscire dimessa dimesso dimissioni ospedale cammina",
       "pages": [
         {
@@ -243,8 +243,8 @@
         "regioni/sicilia/asp"
       ],
       "icon": "🦽",
-      "title": "La carrozzina, il letto o i pannoloni non arrivano",
-      "small": "Ho fatto la domanda all'ASL e aspetto",
+      "title": "Carrozzina, letto, pannoloni: come averli gratis",
+      "small": "La prescrizione, la domanda all'ASL, i tempi. E se non arrivano",
       "keywords": "carrozzina letto pannoloni ausili protesi deambulatore materasso apparecchio acustico plantari protesica silenzio assenso collaudo fornitore incontinenza montascale sollevatore sedia a rotelle pannolini",
       "pages": [
         {
@@ -295,8 +295,8 @@
         "regioni/sicilia/inps"
       ],
       "icon": "♿",
-      "title": "La visita per l'invalidità non arriva",
-      "small": "Il medico ha mandato il certificato all'INPS",
+      "title": "Invalidità civile: la domanda e la visita",
+      "small": "Dal certificato del medico al verbale. E se la visita tarda",
       "keywords": "invalidità invalidità civile inps visita certificato commissione legge 104 handicap accompagnamento indennità contrassegno valutazione di base riforma disabilità patronato pec verbale revisione pensione assegno mensile",
       "pages": [
         {
@@ -320,8 +320,8 @@
         "rules-ricorso"
       ],
       "icon": "⚖️",
-      "title": "Il verbale di invalidità è sbagliato",
-      "small": "Ho 6 mesi per il ricorso: quanto mi resta?",
+      "title": "Il ricorso contro il verbale di invalidità",
+      "small": "Non sei d'accordo? Hai 6 mesi: quanto ti resta?",
       "keywords": "verbale ricorso invalidità percentuale sbagliato avvocato giudice aggravamento atp accertamento tecnico preventivo gratuito patrocinio arretrati",
       "pages": [
         {
@@ -371,8 +371,8 @@
         "rules-tessera-sanitaria"
       ],
       "icon": "🪪",
-      "title": "La tessera sanitaria è scaduta o l'hai persa?",
-      "small": "Rinnovo, duplicato, uso all'estero",
+      "title": "La tessera sanitaria: rinnovo, duplicato, estero",
+      "small": "Se è scaduta, l'hai persa o vai all'estero",
       "keywords": "tessera sanitaria scaduta smarrita persa rubata duplicato rinnovo team estero cns codice fiscale agenzia entrate",
       "pages": [
         {

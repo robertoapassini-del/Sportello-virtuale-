@@ -2,6 +2,14 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 24/10/2026 — La missione nuova: tutta la sanità pubblica, prima come si fa
+- Missione scritta in `CLAUDE.md` (e in `README.md`, «Chi siamo»): spiegare a tutti la sanità pubblica con parole semplici e fonti ufficiali, prima come si fa e poi cosa fare se qualcosa non va, con un sito che si aggiorna da solo. `SPEC.md` è segnato come storia del progetto.
+- Titoli dei moduli e delle pagine sulla procedura, non sul problema: «Quanto puoi aspettare una visita o un esame», «Avere la cartella clinica e i referti», «Carrozzina, letto, pannoloni: come averli gratis», «Invalidità civile: la domanda e la visita», «Il ricorso contro il verbale di invalidità», «La tessera sanitaria: rinnovo, duplicato, estero», «Un infermiere o un medico a casa». Cambiati anche titolo per Google, descrizione e frase d'apertura delle pagine principali; i fatti e le cifre restano gli stessi. Gli indirizzi delle pagine non cambiano.
+- Presentazione delle aree «Visite ed esami», «Aiuto a casa» e «Invalidità» riscritta sulla procedura.
+- Home: «Le domande più frequenti» ora sono le ricerche più frequenti (Fascicolo, cambio medico, CUP, ticket, legge 104; `docs/ricerche-frequenti.md` punto 3b); i problemi sono nel blocco nuovo «Qualcosa non va?». Il riquadro in basso dice da dove vengono le informazioni e la copia notturna. Nuova frase anche nell'immagine di anteprima (`og-image.png`).
+- Nuovo `docs/piano-contenuti.md`: cosa tratta il sito e cosa no, lo schema di ogni pagina, i temi che mancano in ordine (pronto soccorso, guardia medica, certificato di malattia, visita fiscale…) e il piano dell'aggiornamento automatico delle procedure.
+- Nuovo controllo in `tests/errori-noti.test.mjs`: nessun titolo di modulo o di area scritto come problema, e domande frequenti della home senza problemi.
+
 ## 24/10/2026 — Pagina iniziale: a cosa serve il sito
 - La frase sotto «Di cosa hai bisogno?» parlava solo di cose che non funzionano («La visita è troppo lontana?», «far valere i tuoi diritti»). Il sito serve anche a sapere come fare: ora dice «Come prenoti una visita? Come chiedi l'esenzione dal ticket o l'invalidità? Qui trovi i passi da fare, con parole semplici e fonti ufficiali. In tutta Italia.»
 - Stesso cambio nel titolo della home («…: come fare») e nella descrizione per Google e WhatsApp.

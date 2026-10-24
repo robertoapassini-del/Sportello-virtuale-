@@ -144,7 +144,7 @@ function openGraph(html, url, guida) {
 <meta property="og:image" content="${base}${OG_IMAGE}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Guida Sanità: sanità, cure e invalidità, cosa ti spetta e come chiederlo">
+<meta property="og:image:alt" content="Guida Sanità: la sanità pubblica, come si fa, con parole semplici e fonti ufficiali">
 <meta name="twitter:card" content="summary_large_image">
 `;
 }

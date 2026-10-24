@@ -1,6 +1,6 @@
 # Guida Sanità
 
-Sito gratuito che dice alle persone in tutta Italia cosa spetta loro, entro quando e come chiederlo: sanità, cure e invalidità. Moduli:
+Sito gratuito che spiega a tutti, in tutta Italia e con parole semplici, la sanità pubblica: come si fa, cosa spetta, cosa fare se qualcosa non va. Ogni informazione viene da una fonte ufficiale e il sito si tiene aggiornato da solo con la copia notturna delle pagine ufficiali. La missione è in [CLAUDE.md](CLAUDE.md). Moduli:
 
 - **Modulo 1 – Liste d'attesa:** la visita o l'esame è troppo lontano rispetto alla classe di priorità della ricetta.
 - **Modulo 2 – Invalidità civile:** la visita per l'invalidità non arriva entro i tempi di legge.
