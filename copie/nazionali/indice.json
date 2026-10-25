@@ -1,6 +1,6 @@
 {
  "regione": "nazionali",
- "aggiornato": "2026-10-25T01:18:29.937Z",
+ "aggiornato": "2026-10-25T03:48:07.519Z",
  "pagine": [
   {
    "asl": "urgenze",
@@ -39,8 +39,8 @@
    "finale": "https://azzurro.it/",
    "file": "ascolto/6f8ce0e8bdd0.txt",
    "titolo": "Telefono Azzurro | Sito ufficiale",
-   "sha": "8f4d18e113424c1eaf2a5d8eb7b1b6bd13609d2f48f69c1b59325eb9ceb4a533",
-   "caratteri": 14358,
+   "sha": "4d4d75d3a5d1422011e98ee30da62aa8e44a6667479ade8963d6309cdb6bc415",
+   "caratteri": 14457,
    "link_pdf": [
     {
      "url": "https://azzurro.it/wp-content/uploads/2025/06/documento_2025-1.pdf",
@@ -59,7 +59,7 @@
      "testo": "Dalla parte dei bambini - Dal bisogno alla risposta"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "ascolto",
@@ -247,8 +247,8 @@
    "http": 200,
    "file": "regole-adi/9d2cb0a5b4db.txt",
    "titolo": "Portale Inps - Assegno di Inclusione (ADI)",
-   "sha": "8eac29cfa06cc485b0e5b45b9d30555841d24ace79a5b2d09a96aa2c156e9943",
-   "caratteri": 65194,
+   "sha": "a0702345596bfd33c5db3409b894f20202750943f35e12ce39294724fa763cc8",
+   "caratteri": 64854,
    "link_pdf": [
     {
      "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/Template_Tutorial_Invio_domanda_ADI.pdf",
@@ -560,7 +560,7 @@
    "titolo": "Polizia Municipale - Comune di Palermo",
    "sha": "d5018f2f436727680a2839adbae7787ef9e5aa68b4948f944e09642b93d39f64",
    "caratteri": 3754,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-cure-fuori-regione",
@@ -793,6 +793,7 @@
    "url": "https://www.sanitainsicilia.it/sanita-di-prossimita-a-enna-al-via-i-prelievi-di-sangue-a-domicilio-per-i-pazienti-fragili",
    "controllata": "2026-10-25",
    "http": 200,
+   "finale": "https://www.sanitainsicilia.it/sanita-di-prossimita-a-enna-al-via-i-prelievi-di-sangue-a-domicilio-per-i-pazienti-fragili/",
    "certificato": "non valido",
    "file": "regole-domiciliare/a17dfcfe64c9.txt",
    "titolo": "Sanità di prossimità a Enna: al via i prelievi di sangue a domicilio per i pazienti fragili",
@@ -880,7 +881,7 @@
    "caratteri": 15273,
    "link_pdf": [
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x30937",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x35237",
      "testo": "Modulo per AUTOCERTIFICAZIONE"
     }
    ],
@@ -922,11 +923,11 @@
   },
   {
    "asl": "regole-esenzione",
-   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x30937",
+   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x35237",
    "controllata": "2026-10-25",
    "da_pagina": "https://www.aslcittaditorino.it/prestazioni/esenzione-ticket-per-reddito/",
    "http": 200,
-   "file": "regole-esenzione/074e3d886044.txt",
+   "file": "regole-esenzione/465455c154f7.txt",
    "titolo": "Autocertificazione di esenzione",
    "sha": "0ec5d984b6bd5ef03f12e32ef41b78dfdf250def32f239cb24d846beeee617d9",
    "caratteri": 10878,
@@ -1260,8 +1261,8 @@
    "http": 200,
    "file": "regole-invalidita/1b201aa89abf.txt",
    "titolo": "Portale Inps - Domanda invalidità civile e accertamento sanitario",
-   "sha": "f040a424affd68d2222d784eadd2a073cee4e32ff5edf5811ffa2008a355d49b",
-   "caratteri": 52714,
+   "sha": "50523104a027d78c47f75d6dd712b5485d40d650a79310c2c9dd7f4d240b0dab",
+   "caratteri": 52374,
    "link_pdf": [
     {
      "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/515KEY-tutorial_allegazione_documentazione_sanitaria_invalidit_civile.pdf",
@@ -1305,8 +1306,8 @@
    "http": 200,
    "file": "regole-legge-104/696ccc2b0545.txt",
    "titolo": "Portale Inps - Permessi legge 104/1992",
-   "sha": "305799370bbc8ce9a4619cb5cdc9ac52da8c835ed09514493752820fb7d9ba98",
-   "caratteri": 57955,
+   "sha": "c7ad0511dfa8ffe74a1d4fe733c6f35b6e631d52a38f72b3a3580955f426bec9",
+   "caratteri": 57615,
    "link_pdf": [
     {
      "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/514KEY-tabella_regolamento_per_definizione_termini_di_conclusione.pdf",
@@ -1322,8 +1323,8 @@
    "http": 200,
    "file": "regole-legge-104/301761fdb19d.txt",
    "titolo": "Portale Inps - Domande di congedi straordinari",
-   "sha": "a8f4d3950eb682533b0b1a02460d87f3775cb660577859ff8b76c7ffe7fd8d60",
-   "caratteri": 53506,
+   "sha": "1677ab72db9043deb58e379d156d98b465894ba683b4bfa4eb23b6e22a955967",
+   "caratteri": 53166,
    "link_pdf": [
     {
      "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/514KEY-tabella_regolamento_per_definizione_termini_di_conclusione.pdf",
@@ -1430,8 +1431,8 @@
    "http": 200,
    "file": "regole-malattia/3258a502482e.txt",
    "titolo": "Portale Inps - Consultazione dei certificati di malattia telematici",
-   "sha": "6ee88c19dbaca54a961304194e725a0ffc40c85fa14448f8d15aaf002d35a519",
-   "caratteri": 44071,
+   "sha": "f3401144f2da345c369bbaf5c4e252b046d8d5ed819ec104072ebb612be85e05",
+   "caratteri": 43896,
    "link_pdf": [
     {
      "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/FAQ_Certificati_di_malattia_telematici.pdf",
@@ -1455,7 +1456,7 @@
      "testo": "Manuale utente – Sportello per il cittadino per le visite mediche di controllo"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-malattia",
@@ -1603,7 +1604,7 @@
    "http": 200,
    "file": "regole-piano/0f06e59a557d.txt",
    "titolo": "Note AIFA | Agenzia Italiana del Farmaco",
-   "sha": "91a6e9f1bcfbcd50933322e0c81c13916f2d6072e815d750d0eea8c60beddc32",
+   "sha": "8d513194f656878c122b8bc657e5b5eef4c01ab463c5485cbcc570fab50a3129",
    "caratteri": 13892,
    "link_pdf": [
     {
@@ -1623,7 +1624,7 @@
      "testo": "Piano terapeutico per prescrizione SSN di Lamivudina (ex Nota 32 bis) [0.04 Mb] [PDF] >"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "regole-piano",
@@ -1923,18 +1924,6 @@
   },
   {
    "asl": "regole-pronto-soccorso",
-   "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/carte_dei_servizi/cds_asugi_generale_rev_010.pdf",
-   "controllata": "2026-10-25",
-   "http": 200,
-   "file": "regole-pronto-soccorso/e30cb20763c1.txt",
-   "titolo": "CARTA DEI SERVIZI",
-   "sha": "51e9d4544fa6595efc1bda397324c8222f5972e2789abdee17ef6c0f4ba57c67",
-   "caratteri": 96375,
-   "pdf": true,
-   "cambiata": false
-  },
-  {
-   "asl": "regole-pronto-soccorso",
    "url": "https://www.asl8cagliari.it/servizio/servizi-digitali-cup-web/",
    "controllata": "2026-10-25",
    "http": 200,
@@ -1943,6 +1932,54 @@
    "sha": "7dcbc30d4aa1c38501c13e7d421b4ba87cb6dfb0c67b21d5eb63f601863984c0",
    "caratteri": 4163,
    "email_nascoste": 3,
+   "cambiata": false
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://www.regione.piemonte.it/governo/bollettino/abbonati/2021/17/attach/dgr_03088_1050_16042021.pdf",
+   "controllata": "2026-10-25",
+   "http": 200,
+   "file": "regole-pronto-soccorso/352f1315a44f.txt",
+   "titolo": "DGR_03088_1050_16042021_pdf",
+   "sha": "dcdacb0d59bbc7542316797fa2c3b345bbfca91a00abd0f117607ebe2292bd67",
+   "caratteri": 122100,
+   "pdf": true,
+   "cambiata": false
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://burc.regione.campania.it/eBurcWeb/directServlet?DOCUMENT_ID=00147924&ATTACH_ID=225928",
+   "controllata": "2026-10-25",
+   "http": 200,
+   "file": "regole-pronto-soccorso/ff37b8c5caf3.txt",
+   "titolo": "Indicazioni per l’organizzazione del",
+   "sha": "1f5be2738b7cdbebf2a009a396f3c914dea529b5a63ae35e54ffc7b5845b0cec",
+   "caratteri": 178252,
+   "pdf": true,
+   "cambiata": false
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://servizissiir.regione.emilia-romagna.it/deliberegiunta/servlet/AdapterHTTP?action_name=ACTIONRICERCADELIBERE&operation=downloadTesto&codProtocollo=GPG/2021/1291&ENTE=1",
+   "controllata": "2026-10-25",
+   "http": 200,
+   "file": "regole-pronto-soccorso/c36aa6cd0448.txt",
+   "titolo": "REGIONE EMILIA-ROMAGNA",
+   "sha": "04239e4ba0b988f4f190f6f715f6481ed895de67867cc74cbf18417dd67f4324",
+   "caratteri": 69586,
+   "pdf": true,
+   "cambiata": false
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://bur.regione.veneto.it/BurvServices/pubblica/Download.aspx?name=Dgr_1035_19_AllegatoA_401204.pdf&type=9&storico=False",
+   "controllata": "2026-10-25",
+   "http": 200,
+   "file": "regole-pronto-soccorso/e20466c78f16.txt",
+   "titolo": "ALLEGATO A DGR nr. 1035 del 12 luglio 2019 pag. 1 di 7",
+   "sha": "c3ba4a360e4b0e699f53bf83d49c8a29e132e1e4abd77a03da6255b032cd4108",
+   "caratteri": 17866,
+   "pdf": true,
    "cambiata": false
   },
   {
@@ -1964,7 +2001,7 @@
      "testo": "Bonus psicologo 2025: tutorial per il professionista"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-psicologo",
@@ -2030,9 +2067,9 @@
    "http": 200,
    "file": "regole-ricorso/be52f8679d51.txt",
    "titolo": "Gazzetta Ufficiale",
-   "sha": "4b259004b55ac0496b86dff59cbc62aaee11c27ed4b8f982f5153b143d635759",
-   "caratteri": 3137,
-   "cambiata": false
+   "sha": "1660de78f1155ee0a2ee147eab36f52a676e3792f07c97b1abe265c83771f11d",
+   "caratteri": 3099,
+   "cambiata": true
   },
   {
    "asl": "regole-ricorso",

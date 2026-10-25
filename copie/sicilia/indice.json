@@ -1,6 +1,6 @@
 {
  "regione": "sicilia",
- "aggiornato": "2026-10-25T00:40:45.868Z",
+ "aggiornato": "2026-10-25T03:07:33.699Z",
  "pagine": [
   {
    "asl": "palermo",
@@ -911,8 +911,12 @@
    "asl": "palermo",
    "url": "https://www.policlinico.pa.it/web/guest/cartella-clinica",
    "controllata": "2026-10-25",
-   "http": 0,
-   "errore": "curl: (28) Connection timed out after 30002 milliseconds"
+   "http": 200,
+   "file": "palermo/18b1ecabe067.txt",
+   "titolo": "Cartella clinica - A.O.U.P. \"P. Giaccone\"",
+   "sha": "4e24b21c2383cd77d360d41d49b0e40487e304ce341a4092e36e9bf95b599945",
+   "caratteri": 12943,
+   "cambiata": true
   },
   {
    "asl": "palermo",
@@ -921,7 +925,7 @@
    "http": 200,
    "file": "palermo/1c749ae9389c.txt",
    "titolo": "Notizie e servizi utili",
-   "sha": "56ab4e5ac46630575e8c8e4c995fb631826ce040375587e456238396919f867b",
+   "sha": "67bc4b8446cfd7b92bf535e3dee43fe48014b29905a6b56ea1395b8fb6820389",
    "caratteri": 8112,
    "cambiata": true
   },
@@ -1888,7 +1892,7 @@
    "certificato": "non valido",
    "file": "messina/b93a7c51f846.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e Ausili riabilitativi, acustiche, busto ortopedico, microinfusori e ventilatorio – Messina – ASP Messina",
-   "sha": "61ddb83ff7ba9a7911a39323080374a55c5f67984e6d84e94c69b9a195b22c15",
+   "sha": "eb0c00e15fc76246a102f50ee6f37d09bd4d0371cc6f12845e2366b1d729d070",
    "caratteri": 5340,
    "cambiata": true
   },
@@ -1900,7 +1904,7 @@
    "certificato": "non valido",
    "file": "messina/49a8cb5433ae.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico – Milazzo (ME) – ASP Messina",
-   "sha": "47fa1074d96be01e740859fa31938102dd0b0565f031a12f0763362a4987427f",
+   "sha": "320cec29e9ddaebf65f851804d25d6a8b1266a6a1621e3eb8aeac1d03bc7c539",
    "caratteri": 5231,
    "cambiata": true
   },
@@ -1912,7 +1916,7 @@
    "certificato": "non valido",
    "file": "messina/af0dd7dea31e.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico – Barcellona Pozzo di Gotto (ME) – ASP Messina",
-   "sha": "c6a641dfb0f28a420dbee13426f09bc6b0fdb4751a57eea3121daab63cf7757b",
+   "sha": "e11031cc7924f6ccac3be02983a92288b9c98b940f94aa68abc2898f581556ff",
    "caratteri": 5405,
    "cambiata": true
   },
@@ -1924,7 +1928,7 @@
    "certificato": "non valido",
    "file": "messina/46de8177530f.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico – Patti (ME) – ASP Messina",
-   "sha": "5a28ec44fff5fd5ac5c84bfc7390ae797066590861acde6f78b2e31d0fda61c9",
+   "sha": "835c3d8b65bc2906f98b48c99c40685e35ed33415bec9ad069affae9ebb450cc",
    "caratteri": 5202,
    "cambiata": true
   },
@@ -1936,7 +1940,7 @@
    "certificato": "non valido",
    "file": "messina/6f2b15365da4.txt",
    "titolo": "Autorizzazione Assistenza Integrativa – Presidi per diabetici, celiaci, incontinenti, pannoloni, stomizzati – Messina – ASP Messina",
-   "sha": "f6908fc2143044578a3fe291aa6ca686633ddcad49229dd7d84669c3b32cf266",
+   "sha": "194f3878c41c740094dd781cb7286e13756a70bacfb619cf75e3748fc5f910ed",
    "caratteri": 5241,
    "cambiata": true
   },
@@ -1948,7 +1952,7 @@
    "certificato": "non valido",
    "file": "messina/d31336f3a7de.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico- Sant’Agata di Militello (ME) – ASP Messina",
-   "sha": "a2da6e2932adc68a2bca140d6d04903ad77aa145a6e6af43f9497d03682d22f0",
+   "sha": "9b8ce2aa3fd917c43ed8266ce7a735576f16dba6cf715a43a18bfb870b0678a0",
    "caratteri": 5334,
    "cambiata": true
   },
@@ -1960,7 +1964,7 @@
    "certificato": "non valido",
    "file": "messina/b054a0ed7979.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico – Lipari (ME) – ASP Messina",
-   "sha": "d1f18c7cbe5d9a4cabe817376304d356ac6f1355a4d5a6fc0cbb4843a670b12e",
+   "sha": "259969c6675ddc32740e3ff79b1fe1351915d7bd249617cc4d5edca5bb375ac0",
    "caratteri": 5234,
    "cambiata": true
   },
@@ -1972,7 +1976,7 @@
    "certificato": "non valido",
    "file": "messina/f956bab565c6.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico – Mistretta (ME) – ASP Messina",
-   "sha": "1961592c920de7cb069801b0d4bd05121563ef49df94743a0dc6a715d7317674",
+   "sha": "005392c3316c1615ddb1a96e2aca6cd5c2f9930a52b0d2e67195664825ffd74a",
    "caratteri": 5397,
    "cambiata": true
   },
@@ -1984,7 +1988,7 @@
    "certificato": "non valido",
    "file": "messina/fd0ebd947108.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico – Taormina (ME) – ASP Messina",
-   "sha": "64fc96512d7fda595fce8e120741ce3cf7aacc1813ba142d155683aa490549ae",
+   "sha": "e4e766d5f3353b17c63a029360bb2968126abe5822a8295ecb51127430f0d6fb",
    "caratteri": 5251,
    "cambiata": true
   },
@@ -2211,8 +2215,8 @@
    "finale": "https://portalesalute.asp.sr.it/home",
    "file": "siracusa/13f9f6cc3bed.txt",
    "titolo": "Portale della salute",
-   "sha": "f9a4688d1a9e768ccd746d458b3159900a4f015ced7a6bd9b5733a3e2b369a3e",
-   "caratteri": 5178,
+   "sha": "3b311ba47496acb508f1eb06ee502f22b55874f037dee7d8354cc25278c22395",
+   "caratteri": 5128,
    "cambiata": true
   },
   {
@@ -3471,9 +3475,9 @@
    "http": 200,
    "file": "enna/829c26248ffc.txt",
    "titolo": "Liste di attesa / Servizi erogati / Amministrazione trasparente / Homepage - Azienda Sanitaria Provinciale di Enna",
-   "sha": "ca7de50e02b81876329bf3dc559228a9ba6ad660eef04cd948703f70879d82ad",
-   "caratteri": 5057,
-   "cambiata": false
+   "sha": "61272429dce4e93cf45b3e82bad519bebc2a26e087f0d5b0cc2f3f7d589de2b4",
+   "caratteri": 5058,
+   "cambiata": true
   },
   {
    "asl": "enna",
@@ -3526,7 +3530,7 @@
    "http": 200,
    "file": "enna/d5fac6338bb4.txt",
    "titolo": "CUP – Prenotazione prestazioni sanitarie / Percorsi di cura e assistenza / Servizi e prestazioni / Homepage - Azienda Sanitaria Provinciale di Enna",
-   "sha": "21e4d5b58f756a26e2228b72ee0daf0eec1de5be3e39b39167f1c25c329811ec",
+   "sha": "b6119f4eaf0794c07728e8180929fd05047e72e6583950b184f582a36ce8bd8e",
    "caratteri": 7558,
    "cambiata": true
   },
@@ -3796,7 +3800,7 @@
    "titolo": "IpaPortale",
    "sha": "b69aad6cee74ae1438a12d08d2c2781a5c94dd196d80434774beceabc785b3b8",
    "caratteri": 2621,
-   "cambiata": true
+   "cambiata": false
   }
  ]
 }

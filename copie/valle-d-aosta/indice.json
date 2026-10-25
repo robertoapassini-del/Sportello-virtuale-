@@ -1,6 +1,6 @@
 {
  "regione": "valle-d-aosta",
- "aggiornato": "2026-10-25T01:02:37.724Z",
+ "aggiornato": "2026-10-25T03:32:08.824Z",
  "pagine": [
   {
    "asl": "aosta",
@@ -9,7 +9,7 @@
    "http": 200,
    "file": "aosta/8c0e7f3ef863.txt",
    "titolo": "Home",
-   "sha": "304458e73af31d4600e4250f3f33b09b628133f0f848d40c2fcc66bef790ba50",
+   "sha": "cdd224964932701e8a1a79b813870cab0b797ebe313a74cff005d85ac6310ed6",
    "caratteri": 7870,
    "cambiata": true
   },
@@ -583,7 +583,7 @@
    "titolo": "Azienda USL della Valle d'Aosta",
    "sha": "ae65647740172f874a5517285c20a238c7d676f5b6c163df053767f85f0e5475",
    "caratteri": 1024,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "aosta",
@@ -607,7 +607,7 @@
    "titolo": "Azienda USL della Valle d'Aosta",
    "sha": "ae65647740172f874a5517285c20a238c7d676f5b6c163df053767f85f0e5475",
    "caratteri": 1024,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "aosta",
@@ -727,7 +727,7 @@
    "controllata": "2026-10-25",
    "da_pagina": "https://www.ausl.vda.it/urp/urp-ufficio-relazioni-con-il-pubblico",
    "http": 0,
-   "errore": "curl: (28) Connection timed out after 60001 milliseconds"
+   "errore": "curl: (28) Connection timed out after 60002 milliseconds"
   },
   {
    "asl": "aosta",
