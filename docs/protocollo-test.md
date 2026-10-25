@@ -30,7 +30,7 @@ trova uno nuovo, si aggiunge un controllo che lo avrebbe preso.
 ## Regola nazionale
 
 Il sito vale in tutta Italia. Una regola di una sola regione si scrive dicendo di quale regione è
-(«In Sicilia: …»), con accanto cosa fare nelle altre regioni. «ASP» è il nome siciliano (e calabrese) dell'azienda
+(«In Sicilia: …»), con accanto cosa fare nelle altre regioni. «ASP» è il nome siciliano (e calabrese, e di Potenza) dell'azienda
 sanitaria: nei testi per tutti si scrive «azienda sanitaria (ASL)», nei JS si usa `aslLabel()`.
 Se non sai se una regola è nazionale, trattala come regionale finché non trovi la fonte.
 

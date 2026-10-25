@@ -1,6 +1,24 @@
 {
   "name": "RSA e lungodegenza",
-  "last_verified": "2026-10-20",
+  "last_verified": "2026-10-25",
+  "sicilia_ssr_tutto_giorni": 60,
+  "sicilia_quota_ssr_percent": 50,
+  "provenienza": {
+    "sicilia_ssr_tutto_giorni": {
+      "url": "https://www.regione.sicilia.it/system/files/2025-10/D.A.%20n.1058%20del%208%20ottobre%202025.pdf",
+      "verified": "2026-10-25",
+      "proof": "testo",
+      "review_by": "2027-10-25",
+      "nota": "Regione Siciliana, D.A. 1058 dell'8/10/2025, copia del server del 25/10/2026, che riporta le regole confermate: la retta è «a totale carico del SSR per i ricoveri della durata massima di giorni 60 e per l’intera durata dei ricoveri di persone con malattia di Alzheimer». Regola della sola Sicilia."
+    },
+    "sicilia_quota_ssr_percent": {
+      "url": "https://www.regione.sicilia.it/system/files/2025-10/D.A.%20n.1058%20del%208%20ottobre%202025.pdf",
+      "verified": "2026-10-25",
+      "proof": "testo",
+      "review_by": "2027-10-25",
+      "nota": "Stesso D.A.: dopo i primi 60 giorni «il 50% della retta giornaliera come sopra determinata dovrà essere posta a carico del SSR e il restante 50% del costo complessivo a carico del comune di residenza dell’assistito, fatta salva l’eventuale compartecipazione di quest’ultimo in relazione alla propria capacità contributiva». Regola della sola Sicilia."
+    }
+  },
   "sources": [
     {
       "label": "Regione Siciliana – D.A. 1058 dell'8 ottobre 2025 (rette RSA)",

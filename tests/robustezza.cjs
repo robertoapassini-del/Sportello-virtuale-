@@ -203,8 +203,8 @@ async function main() {
       await apri(page, at(url));
       await page.waitForTimeout(300);
       const t = await page.evaluate(() => document.getElementById('app') ? document.getElementById('app').innerText : document.body.innerText);
-      // Le frasi che dicono di chi sono («in Sicilia e in Calabria si chiama ASP», «In Sicilia: …») vanno bene.
-      const m = t.replace(/\(ASL; in Sicilia e in Calabria si chiama ASP\)|In Sicilia:[^.\n]*/g, '').match(/[^.\n]*(Sicili|\bASP\b)[^.\n]*/);
+      // Le frasi che dicono di chi sono («in Sicilia, in Calabria e a Potenza si chiama ASP», «In Sicilia: …») vanno bene.
+      const m = t.replace(/\(ASL; in Sicilia, in Calabria e a Potenza si chiama ASP\)|In Sicilia:[^.\n]*/g, '').match(/[^.\n]*(Sicili|\bASP\b)[^.\n]*/);
       if (m) problemi.push(`${nome}: «${m[0].trim().slice(0, 120)}»`);
       if (url === 'numeri-utili/' && !(await si112(page))) problemi.push(`${nome}: il 112 non si vede`);
       await ctx.close();

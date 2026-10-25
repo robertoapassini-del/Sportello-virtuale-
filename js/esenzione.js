@@ -25,7 +25,7 @@ const howToGet = () => `
     <li><strong>Se non c'è, vai allo sportello esenzioni dell'${aslLabel()}</strong> (nel distretto o al CUP) con tessera sanitaria e carta d'identità. Firmi un foglio in cui dichiari il reddito (autocertificazione). È gratis. <a href="../numeri-utili/">📍 Dov'è lo sportello nella tua provincia</a></li>
     <li><strong>Quando prenoti, di' che hai l'esenzione.</strong> Deve essere scritta sulla ricetta, altrimenti il ticket lo paghi.</li>
   </ol>
-  <div class="notice warn"><p>⚠️ L'esenzione vale fino al <strong>${esc(rules.valid_until)}</strong>, poi devi controllarla di nuovo (alcune Regioni la prorogano: chiedi all'${aslLabel()}). Se dichiari un reddito falso, devi restituire i soldi e paghi una multa.</p></div>`;
+  <div class="notice warn"><p>⚠️ L'esenzione vale fino al <strong>${esc(rules.valid_until)}</strong>, poi devi controllarla di nuovo (alcune Regioni la prorogano: chiedi all'${aslLabel()}). Se dichiari il falso, perdi l'esenzione, devi restituire i soldi e rischi una denuncia penale.</p></div>`;
 
 const otherExemptions = () => `
   <details class="card">
@@ -53,7 +53,7 @@ const screens = {
     html: `${progress(2, 4)}
       <h1>📋 C'è una di queste situazioni?</h1>
       <p>Vale per la persona o per chi la mantiene (per esempio il genitore o il coniuge di cui è a carico).</p>
-      ${choice('💼', 'Disoccupato iscritto al centro per l\'impiego', { status: 'disoccupato' }, 'family', 'Ha perso il lavoro ed è iscritto come disoccupato. Non vale per chi non ha mai lavorato o per le casalinghe')}
+      ${choice('💼', 'Disoccupato iscritto al centro per l\'impiego', { status: 'disoccupato' }, 'family', 'Ha perso un lavoro da dipendente ed è iscritto come disoccupato. Non vale per chi non ha mai lavorato o per le casalinghe')}
       ${choice('🏛️', 'Ha l\'assegno sociale', { status: 'sociale' }, 'family', 'Si chiamava «pensione sociale»')}
       ${choice('👴', 'Ha la pensione al minimo e più di 60 anni', { status: 'minimo' }, 'family', 'La pensione «integrata al minimo» dell\'INPS')}
       ${choice('➖', 'Nessuna di queste', { status: 'none' }, 'family')}`,
@@ -64,7 +64,7 @@ const screens = {
       <h1>👨‍👩‍👧 La famiglia</h1>
       <p>Conta la famiglia per il fisco: tu, il marito o la moglie (se non siete separati) e chi è a tuo carico.</p>
       <form id="fam-form" novalidate>
-        <label class="check"><input type="checkbox" name="spouse" ${state.spouse ? 'checked' : ''}> C'è un coniuge (marito o moglie) a carico</label>
+        <label class="check"><input type="checkbox" name="spouse" ${state.spouse ? 'checked' : ''}> ${state.status === 'disoccupato' ? 'C\'è il marito o la moglie (non separati), anche se ha un reddito suo' : 'C\'è un coniuge (marito o moglie) a carico'}</label>
         <label for="children">Quanti figli a carico?<span class="hint">Scrivi 0 se nessuno</span></label>
         <input type="number" id="children" name="children" min="0" max="20" inputmode="numeric" value="${esc(state.children == null ? 0 : state.children)}">
         <button type="submit" class="btn primary big">Avanti ▶️</button>
