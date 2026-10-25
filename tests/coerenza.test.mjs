@@ -380,3 +380,26 @@ test('fonti-nazionali.json: solo indirizzi ufficiali, ogni tema con un id e alme
   }
   assert.deepEqual(brutti, []);
 });
+
+// 25/10/2026: le pagine nuove (pronto soccorso, guardia medica, certificato di malattia) mostravano emoji colorate al posto
+// delle icone del sito: 🚑, 🌙 e 🤒 non erano in js/icons.js (si aggiungono in tools/icone.mjs, poi «npm run icone»).
+test('ogni emoji del sito ha la sua icona in js/icons.js', () => {
+  const icone = read('js/icons.js');
+  const chiavi = new Set([...icone.matchAll(/^\s*"([^"]+)":\[/gm)].map((m) => m[1]));
+  const ha = (e) => chiavi.has(e) || chiavi.has(e.replace(/️/g, '')) || chiavi.has(`${e}️`);
+  const EMOJI = /\p{Extended_Pictographic}(?:️|‍\p{Extended_Pictographic}️?)*/gu;
+  const SALTA = new Set(['node_modules', 'tests', 'tools', 'docs', 'fonts', 'css']);
+  const mancano = [];
+  const giro = (dir) => {
+    for (const e of readdirSync(path.join(SITE, dir), { withFileTypes: true })) {
+      if (SALTA.has(e.name) || e.name.startsWith('.')) continue;
+      const f = dir ? `${dir}/${e.name}` : e.name;
+      if (e.isDirectory()) giro(f);
+      else if (/\.(html|js|json)$/.test(e.name) && f !== 'js/icons.js') {
+        for (const m of read(f).matchAll(EMOJI)) if (!ha(m[0])) mancano.push(`${m[0]} in ${f}`);
+      }
+    }
+  };
+  giro('');
+  assert.deepEqual([...new Set(mancano)], [], 'aggiungi l\'emoji in tools/icone.mjs e lancia «npm install --no-save lucide-static && npm run icone»');
+});

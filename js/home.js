@@ -97,7 +97,7 @@ const urgent = `
       <p>Questo sito non serve per le urgenze.</p>
       <ul>
         <li>Se è grave, chiama subito il <a href="tel:112"><strong>112</strong></a>.</li>
-        <li>La sera, di notte e nei giorni di festa: chiama la <strong>guardia medica</strong> della tua zona.</li>
+        <li>La sera, di notte e nei giorni di festa: chiama la <a href="guardia-medica/"><strong>guardia medica</strong></a> della tua zona.</li>
       </ul>
     </div>
   </section>`;

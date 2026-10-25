@@ -15,6 +15,8 @@ const ICONS = {
   '🩺': ['stethoscope'], '🛡️': ['shield-check'], '🏠': ['house'], '♿': ['accessibility'], '🦽': ['accessibility'],
   '📅': ['calendar-days'], '🗓️': ['calendar'], '🎫': ['ticket'], '💊': ['pill'], '📁': ['folder-open'], '🗂️': ['folder-open'],
   '👨‍⚕️': ['stethoscope'], '⚖️': ['scale'], '🪪': ['id-card'], '🕊️': ['bird'], '🤲': ['hand-heart'],
+  // urgenze, malattia e lavoro (24/10/2026)
+  '🚑': ['ambulance'], '🌙': ['moon'], '🤒': ['thermometer'],
   // prevenzione
   '🎀': ['ribbon'], '🎗️': ['ribbon'], '🌸': ['flower-2'], '🧪': ['test-tube'], '🤧': ['thermometer'], '🫁': ['wind'],
   '🔥': ['flame'], '🩹': ['bandage'], '💉': ['syringe'], '🔬': ['microscope'],
@@ -33,7 +35,7 @@ const ICONS = {
   '📍': ['map-pin'], '🏥': ['hospital'], '🏢': ['building-2'], '🏛️': ['landmark'], '🚚': ['truck'], '📞': ['phone'], '☎️': ['phone'],
   '📱': ['smartphone'], '💻': ['laptop'], '💼': ['briefcase'], '🎒': ['backpack'], '🍪': ['cookie'],
   // soldi
-  '💶': ['euro'], '💳': ['credit-card'],
+  '💶': ['euro'], '💳': ['credit-card'], '📊': ['chart-column'],
   // tempo
   '⏳': ['hourglass'], '⌛': ['hourglass'], '⏰': ['alarm-clock'],
   // significato: sì / no / attenzione
