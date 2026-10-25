@@ -21,6 +21,8 @@ Per chi scrive vuol dire:
 Prima di ogni modifica leggi [docs/protocollo-test.md](docs/protocollo-test.md) e seguilo:
 - nessun fatto, cifra o numero di telefono senza fonte ufficiale nei file `data/` (docs/regola-numeri.md, docs/regola-cifre.md);
 - italiano semplice: Gulpease, frasi corte, niente parole da ufficio, verbi attivi (docs/regola-italiano.md);
+- ogni frase toccata si rilegge contro la fonte prima di unire: è vera, non dice di più della fonte, non contraddice
+  le frasi vicine né le altre pagine (docs/protocollo-test.md, punto 4);
 - regole di una sola regione scritte come tali («In Sicilia: …»); nei JS la sigla dell'azienda sanitaria viene da `aslLabel()`;
 - dopo la modifica: `npm run pagine`, `npm test`, e i controlli col browser (`tests/browser.cjs`, `tests/combinazioni.cjs`);
 - ogni errore trovato diventa un controllo (`tests/errori-noti.test.mjs` o un test nuovo) e una riga nel `CHANGELOG.md` (fine riga CRLF).

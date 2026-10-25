@@ -13,6 +13,19 @@ trova uno nuovo, si aggiunge un controllo che lo avrebbe preso.
 3. Chi cambia `data/regioni/` o `data/numeri.json` lancia `node tools/confronta-copie.mjs <cartella-copie> <regione>` sulle copie delle
    pagine ufficiali (branch `copie-siti`, cartella `copie/`) e corregge, o annota nel `todo`, ogni problema che riguarda
    quello che ha cambiato.
+4. **Rileggi ogni frase che tocchi, una per una, prima di unire.** I test controllano cifre, fonti e parole, ma
+   non il senso. Per ogni frase nuova o cambiata (anche titoli, descrizioni, FAQ e testi nei JS):
+   - **È vera?** Trova la frase della fonte (nota in `provenienza` o copia del server) che la dice. Se non c'è, la
+     frase non va.
+   - **Dice di più della fonte?** Parole come «sempre», «mai», «tutti», «gratis», «massimo», «garantito», «entro»:
+     la fonte mette condizioni («con un afflusso normale», «se hai l'esenzione», «in alcune regioni»)? Le condizioni
+     vanno scritte.
+   - **È logica?** Due frasi vicine non si devono contraddire (esempio vero: «Sono tempi massimi. Se arriva una
+     persona più grave, passa prima di te»: se qualcuno passa prima, non è un massimo).
+   - **Vale in tutta Italia?** Se no, «In <Regione>: …».
+   - **È coerente col resto del sito?** Cerca lo stesso fatto nelle altre pagine (`grep`) e controlla che dicano la
+     stessa cosa.
+   - **È un consiglio medico?** Allora non va.
 
 ## Regola nazionale
 
