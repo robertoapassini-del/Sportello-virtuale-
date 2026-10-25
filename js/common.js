@@ -239,7 +239,7 @@ export function noPecBox() {
     <summary><span class="ico" aria-hidden="true">📨</span> Non hai la PEC? Ecco 4 modi per mandarla lo stesso</summary>
     <p>La PEC è un'email speciale che vale come una raccomandata. Un'email normale mandata a un indirizzo PEC spesso viene rifiutata. Ecco cosa puoi fare:</p>
     <ul class="icon-list">
-      <li><span class="ico" aria-hidden="true">🏢</span><span><strong>Patronato</strong> (INCA, ACLI, INAS…): porti la lettera firmata e i documenti, la mandano loro con la loro PEC. È gratis.</span></li>
+      <li><span class="ico" aria-hidden="true">🏢</span><span><strong>Patronato</strong> (INCA, ACLI, INAS…): per le pratiche con l'INPS può mandare la richiesta per te, gratis. Per le lettere all'azienda sanitaria o all'ospedale chiedi se possono farlo.</span></li>
       <li><span class="ico" aria-hidden="true">🏥</span><span><strong>A mano</strong>: porti la lettera all'ufficio (URP, distretto, ospedale) e ti fai dare una copia con <strong>timbro e data</strong>. Quella copia è la tua prova.</span></li>
       <li><span class="ico" aria-hidden="true">✉️</span><span><strong>Raccomandata con ricevuta di ritorno</strong> (A/R), dall'ufficio postale. Costa pochi euro. Conserva la ricevuta.</span></li>
       <li><span class="ico" aria-hidden="true">👨‍👩‍👧</span><span><strong>Un familiare con la PEC</strong> può mandarla per te. Allega la delega firmata e i documenti di tutti e due.</span></li>
@@ -253,7 +253,7 @@ export function renderFooter(root = '') {
   const el = document.getElementById('site-footer');
   if (!el) return;
   el.innerHTML = `<div class="wrap">
-    <p>🔒 <strong>Non salviamo niente.</strong> Quello che scrivi resta sul tuo telefono e si cancella quando chiudi la pagina.</p>
+    <p>🔒 <strong>Non salviamo niente.</strong> Quello che scrivi nei moduli resta sul tuo telefono e si cancella quando chiudi la pagina. Il sito ricorda solo la regione che scegli.</p>
     <p><strong>Guida Sanità è fatto da volontari. Non siamo l'${regioneScelta() ? aslLabel() : 'azienda sanitaria (ASL)'}, l'INPS né un altro ufficio pubblico.</strong> Diamo informazioni generali, non il parere di un avvocato o di un medico.</p>
     <nav aria-label="Informazioni">
       <a href="${root}privacy.html">Privacy</a>

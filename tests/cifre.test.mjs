@@ -42,7 +42,6 @@ const ECCEZIONI = {
   'ricorso-invalidita': [
     { testo: /circa 13\.660 euro$/, perche: 'gratuito patrocinio arrotondato alle decine', valore: (d) => Math.round(d['rules-ricorso'].gratuito_patrocinio_income / 10) * 10, unita: '€' },
     { testo: /circa 27\.300 euro$/, perche: 'doppio del gratuito patrocinio arrotondato alle centinaia', valore: (d) => Math.round(d['rules-ricorso'].no_legal_costs_income / 100) * 100, unita: '€' },
-    { testo: /devono darteli entro 7 giorni$/, perche: 'copia della cartella clinica: sta nel modulo cartella-clinica', valore: (d, tutti) => tutti['rules-cartella'].deadline_days, unita: 'giorni' },
   ],
   'fascicolo-e-ricetta': [
     { testo: /la copia ti spetta entro 7 giorni$/, perche: 'copia della cartella clinica: sta nel modulo cartella-clinica', valore: (d, tutti) => tutti['rules-cartella'].deadline_days, unita: 'giorni' },

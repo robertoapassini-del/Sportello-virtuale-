@@ -64,7 +64,7 @@ const screens = {
       <h1>👨‍👩‍👧 La famiglia</h1>
       <p>Conta la famiglia per il fisco: tu, il marito o la moglie (se non siete separati) e chi è a tuo carico.</p>
       <form id="fam-form" novalidate>
-        <label class="check"><input type="checkbox" name="spouse" ${state.spouse ? 'checked' : ''}> ${state.status === 'disoccupato' ? 'C\'è il marito o la moglie (non separati), anche se ha un reddito suo' : 'C\'è un coniuge (marito o moglie) a carico'}</label>
+        <label class="check"><input type="checkbox" name="spouse" ${state.spouse ? 'checked' : ''}> C'è il marito o la moglie (non separati), anche se ha un reddito suo</label>
         <label for="children">Quanti figli a carico?<span class="hint">Scrivi 0 se nessuno</span></label>
         <input type="number" id="children" name="children" min="0" max="20" inputmode="numeric" value="${esc(state.children == null ? 0 : state.children)}">
         <button type="submit" class="btn primary big">Avanti ▶️</button>

@@ -2,6 +2,15 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 25/10/2026 — Seconda rilettura: coerenza tra pagine
+- Riletti insieme lo stesso fatto in pagine diverse, `data/moduli.json`, i testi comuni dei JS, le pagine delle aree e i testi delle regioni (`docs/revisione-2026-10-25.md`, ultima sezione).
+- Esenzione E04: il limite di 11.362,05 euro vale «in presenza del coniuge» anche qui (modulo di autocertificazione dell'ASL Città di Torino); il calcolo fa la stessa domanda per E02 ed E04.
+- Cure palliative: titolo e descrizioni «gratis per legge (L. 38/2010)» → «senza ticket perché sono nei LEA» (`data/rules-palliative.json`, `legal_basis`).
+- `data/moduli.json`: esenzione (non «per età»), congedo «fino a» 2 anni, vaccini per gli adulti, ausili «chi li ha gratis e come», area «Visite ed esami» senza la prenotazione.
+- Piè di pagina (il sito ricorda la regione), PEC e patronato, «Controlla sempre» del modulo psicologo, 7 giorni «dalla richiesta scritta», accompagnamento «più di 29 giorni», tessera «di solito», RSA (ISEE della persona, dimissione protetta regionale).
+- `data/regioni/` Piemonte, Friuli-Venezia Giulia e Puglia: certificato di residenza «o un'autocertificazione».
+- Nuovi controlli: 7 righe in `tests/errori-noti.test.mjs` (seconda rilettura), provate sulla versione di prima. Tolta un'eccezione di `tests/cifre.test.mjs` che non serve più.
+
 ## 25/10/2026 — Revisione completa dei contenuti
 - Perché: il proprietario ha trovato nel triage una frase semplice ma sbagliata. Riletto tutto il sito, frase per frase, contro le copie delle fonti ufficiali del server. Elenco completo, con quello che resta da verificare: `docs/revisione-2026-10-25.md`.
 - Corretti i fatti sbagliati: congedo straordinario e permessi 104 per la stessa persona (si può, non negli stessi giorni); prolungamento del congedo parentale entro i 14 anni (`data/rules-legge-104.json`, scheda INPS); revisione del verbale e permessi; aggravamento durante il ricorso; dati AP70 nel nuovo regime; spese per l'infermiere deducibili anche in contanti per chi ha una disabilità; Fascicolo e strutture private (dal 2020); RSA in Sicilia (60 giorni e Alzheimer a carico dell'ASP, poi metà Comune: `data/rules-rsa.json`, D.A. 1058/2025); esenzione E02 con il coniuge, E01 senza familiari a carico, C05 e C06, dichiarazione falsa; esenzione online sul Sistema TS; assegno di inclusione (rinnovi ripetuti, PAD, soglia 8.190 euro); bonus psicologo (ultimo periodo 15/09–14/11/2025); D.A. della DPC in Sicilia; guardia medica e ricette; L. 38/2010 e dolore; codici del pronto soccorso dal 2019; ASPConTe e SPID; ASP anche a Potenza; liste d'attesa (sei mesi, sollecito della classe B dopo 5 giorni, anche in `tests/combinazioni.cjs`); numeri utili senza frasi non provate.
