@@ -1,6 +1,6 @@
 {
  "regione": "calabria",
- "aggiornato": "2026-10-25T02:40:37.249Z",
+ "aggiornato": "2026-10-25T20:10:57.345Z",
  "pagine": [
   {
    "asl": "catanzaro",
@@ -406,11 +406,10 @@
    "asl": "cosenza",
    "url": "https://www.asp.cosenza.it/",
    "controllata": "2026-10-25",
-   "browser": true,
    "http": 200,
    "file": "cosenza/98b4eff5aacc.txt",
    "titolo": "ASP Cosenza – Dipartimento Tutela della Salute e Politiche Sanitarie",
-   "sha": "a016347d72632f11dea5e2b795429db6125ec66911d87430596cf032ae648c24",
+   "sha": "9d46e30601f917a358281eed6bf87a6396c6d18dc98e11eb6fd75021b7454edc",
    "caratteri": 4930,
    "link_pdf": [
     {
@@ -456,7 +455,7 @@
    "http": 200,
    "file": "cosenza/fe31bc8fb243.txt",
    "titolo": "Centro Unico di Prenotazione Online - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "3b2473025a2f231a2922149978eb64c4c52ca4ef30840787f7d81f5c43957e30",
+   "sha": "34a1c512ed986dd9eeb14f3219ec3aa05e4ecb3c90075ff9887471e742232eaf",
    "caratteri": 8094,
    "cambiata": true
   },
@@ -532,7 +531,7 @@
    "http": 200,
    "file": "crotone/794ccfdda2f9.txt",
    "titolo": "Assistenza Domiciliare - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "b6917458ca02fe27febd419cf2ca6b1571ba12e61a61d585fd884fc87d29a133",
+   "sha": "f1cf649a98b594f1cdf51adfdceecae404269ba3974a4c0396a649124aabe3fd",
    "caratteri": 9089,
    "link_pdf": [
     {
@@ -540,7 +539,7 @@
      "testo": "Scheda di proposta di accesso ai servizi territoriali"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "crotone",
@@ -561,9 +560,9 @@
    "http": 200,
    "file": "crotone/4ab485a670df.txt",
    "titolo": "contatti - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "1291ee1fd82fe57433f649d58c7583f81c7de472882ee0d0e9a663f682e9447a",
+   "sha": "ffb15431ded586d7bfc2460b43b8e6de72347b37c4bde858de6344b24d76475a",
    "caratteri": 7856,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "crotone",
@@ -787,7 +786,8 @@
    "controllata": "2026-10-25",
    "da_pagina": "https://www.asprc.it/amministrazione/direzione/funzioni-di-staff/s-c-coordinamento-staff-direzione-strategica/urp/",
    "http": 200,
-   "nota": "file, non controllato"
+   "pdf": true,
+   "nota": "PDF senza testo (forse una scansione): non copiato"
   },
   {
    "asl": "reggio-calabria",
@@ -883,8 +883,11 @@
    "url": "https://www.fascicolosanitario.regione.calabria.it/",
    "controllata": "2026-10-25",
    "http": 200,
-   "pdf": true,
-   "nota": "pdftotext: Command failed: pdftotext -layout -enc UTF-8 -q /opt/guidasanita/copie/copie/.tmp.pdf -"
+   "file": "regole/41c3e058f714.txt",
+   "titolo": "Fascicolo Sanitario Elettronico – Regione Calabria",
+   "sha": "2d9baaffffdcd8a9198ee05893f205cd9180522d41811f6451cde40eb35c44e0",
+   "caratteri": 1756,
+   "cambiata": true
   },
   {
    "asl": "inps-calabria",
@@ -1294,9 +1297,9 @@
    "http": 200,
    "file": "asp-crotone/285c2adcd2fb.txt",
    "titolo": "Contatti - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "6347468d9276cd24b8e9aa9d10799e5081b2f9ae47224d88e4dddfce893c59d5",
+   "sha": "c80d555f692d5e80e539ea35c3e0df25dbfff0004b8f9f9d73308d883ae75425",
    "caratteri": 4521,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "asp-crotone",
@@ -1305,7 +1308,7 @@
    "http": 200,
    "file": "asp-crotone/a6bd80f5d25e.txt",
    "titolo": "La Guardia medica - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "e16ab947a6af351b637a275c25f94c5a1597bcd33b317f8a06b833c2a5486a1b",
+   "sha": "40015d1120676953285025e82a0e6c43c9ec1461e7848bd8fe24bb46a5a6c57e",
    "caratteri": 5228,
    "link_pdf": [
     {
@@ -1313,7 +1316,7 @@
      "testo": "Scarica la carta dei servizi"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "asp-crotone",
@@ -1322,9 +1325,9 @@
    "http": 200,
    "file": "asp-crotone/7cfbfca8e650.txt",
    "titolo": "Fascicolo sanitario elettronico - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "ff9a3be3f16d08df5778f7ca0ef4eef4a17b39dcedd8ca4c143509305e2a1c75",
+   "sha": "91d3434e5a8d2fc9856f6151784d8348a08b50f8426513c2d11b6917ccfa3184",
    "caratteri": 10734,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "asp-crotone",

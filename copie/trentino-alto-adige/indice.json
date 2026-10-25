@@ -1,6 +1,6 @@
 {
  "regione": "trentino-alto-adige",
- "aggiornato": "2026-10-25T03:25:29.865Z",
+ "aggiornato": "2026-10-25T21:52:00.718Z",
  "pagine": [
   {
    "asl": "bolzano",
@@ -54,8 +54,12 @@
    "asl": "bolzano",
    "url": "https://home.sabes.it/it/prenotazione-me.asp",
    "controllata": "2026-10-25",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "bolzano/3eb4ebd291fc.txt",
+   "titolo": "Prenotazione | Azienda Sanitaria dell'Alto Adige",
+   "sha": "05ff7201f7b12e094c1b11e4feebf3363f00d4ab73cdbf1be189792578d66fb8",
+   "caratteri": 9264,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
@@ -72,11 +76,13 @@
    "asl": "bolzano",
    "url": "https://www.asdaa.it/it/default.asp",
    "controllata": "2026-10-25",
+   "browser": true,
    "http": 200,
+   "finale": "https://www.asdaa.it/it/home",
    "file": "bolzano/9e045b839f76.txt",
-   "titolo": "Südtiroler Sanitätsbetrieb",
-   "sha": "392d4be341b5601bf3ac0de4fb35ecc68611c7c9a2e451ea79d9bec90721e5ed",
-   "caratteri": 38,
+   "titolo": "Azienda Sanitaria dell'Alto Adige",
+   "sha": "22b9e75437dc604328a03f8d73938f7280b3cfc15c35bbdc3fdecc28f4264be3",
+   "caratteri": 22767,
    "cambiata": true
   },
   {
@@ -156,14 +162,13 @@
    "asl": "bolzano",
    "url": "https://home.sabes.it/it/ospedali/bolzano/segnalazioni-e-reclami.asp",
    "controllata": "2026-10-25",
-   "browser": true,
    "http": 200,
    "finale": "https://www.asdaa.it/it/ospedali",
    "file": "bolzano/aea8b401c57d.txt",
-   "titolo": "Ospedali | Azienda Sanitaria dell’Alto Adige",
-   "sha": "b12403b91ca8df4132a55a626aca024f6e17ca3885c42a3d3e1e3e28e5755bbb",
-   "caratteri": 19997,
-   "cambiata": false
+   "titolo": "Südtiroler Sanitätsbetrieb",
+   "sha": "392d4be341b5601bf3ac0de4fb35ecc68611c7c9a2e451ea79d9bec90721e5ed",
+   "caratteri": 38,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
@@ -181,8 +186,7 @@
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/medicina-di-base.asp",
    "controllata": "2026-10-25",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 503
   },
   {
    "asl": "bolzano",
@@ -217,7 +221,7 @@
    "titolo": "Südtiroler Sanitätsbetrieb",
    "sha": "392d4be341b5601bf3ac0de4fb35ecc68611c7c9a2e451ea79d9bec90721e5ed",
    "caratteri": 38,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -286,14 +290,13 @@
    "asl": "bolzano",
    "url": "https://home.asdaa.it/prevenzione/prestazioni.asp?bnsv_svid=1008640",
    "controllata": "2026-10-25",
-   "browser": true,
    "http": 200,
    "finale": "https://www.asdaa.it/it/prevenzione-salute?bnsv_svid=1008640",
    "file": "bolzano/fbeef31a6b03.txt",
-   "titolo": "Prevenzione e salute | Azienda Sanitaria dell'Alto Adige",
-   "sha": "4a5c682adb8e5fa06ec37f92f6309af07a12aca6dfe4f79be3844468fd6abdb1",
-   "caratteri": 21924,
-   "cambiata": false
+   "titolo": "Südtiroler Sanitätsbetrieb",
+   "sha": "392d4be341b5601bf3ac0de4fb35ecc68611c7c9a2e451ea79d9bec90721e5ed",
+   "caratteri": 38,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
@@ -304,8 +307,8 @@
    "finale": "https://www.asdaa.it/it/servizi",
    "file": "bolzano/bbc0f1d38083.txt",
    "titolo": "I servizi in myCIVIS - Azienda Sanitaria dell'Alto Adige",
-   "sha": "5c3ee1302df229d43c12ee672a254f731468c12412c85137e0974b6696c1a865",
-   "caratteri": 22329,
+   "sha": "5c9056790aa11dc095f4e30ae3916b137611964ef0a4f0e2843a229a33f7ba67",
+   "caratteri": 22347,
    "cambiata": true
   },
   {
@@ -319,7 +322,7 @@
    "titolo": "I servizi in myCIVIS - Azienda Sanitaria dell'Alto Adige",
    "sha": "5c3ee1302df229d43c12ee672a254f731468c12412c85137e0974b6696c1a865",
    "caratteri": 22329,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -388,7 +391,7 @@
    "titolo": "Amministrazione | Azienda Sanitaria dell'Alto Adige",
    "sha": "709c68c9b91472b8f702a471fb12a1adb318f2961cd6b377eb0123429ebf393a",
    "caratteri": 6752,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -401,26 +404,64 @@
    "titolo": "Ospedali | Azienda Sanitaria dell’Alto Adige",
    "sha": "b12403b91ca8df4132a55a626aca024f6e17ca3885c42a3d3e1e3e28e5755bbb",
    "caratteri": 19997,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/tempi-di-prenotazione.asp",
    "controllata": "2026-10-25",
-   "http": 0,
-   "errore": "curl: (56) Recv failure: Connection reset by peer"
+   "browser": true,
+   "http": 200,
+   "finale": "https://www.asdaa.it/it/informazioni-sulle-liste-d-attesa-e-sulle-classi-di-priorita",
+   "file": "bolzano/28039e100121.txt",
+   "titolo": "Azienda Sanitaria dell’Alto Adige",
+   "sha": "d52b31d3feaefb7d6c46b0c8b90f9b259d927e3ac00bffcf7119da0388024aef",
+   "caratteri": 2297,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/amministrazione-trasparente/4070.asp",
    "controllata": "2026-10-25",
-   "http": 503
+   "http": 200,
+   "file": "bolzano/f3492fe57fb2.txt",
+   "titolo": "Liste di attesa | Azienda Sanitaria dell'Alto Adige",
+   "sha": "3be36ece77f7921ae9f89dba854521bbcd8aea50225269d0d2dd5f239099c065",
+   "caratteri": 8830,
+   "link_pdf": [
+    {
+     "url": "https://home.asdaa.it/download/DGP_n._915_del_05.11.2019_-_PPGLA_2019-2021(1).pdf",
+     "testo": "Deliberazione della Giunta provinciale n. 915 del 05.11.2019 - Piano Provinciale per il governo delle liste di attesa 20"
+    },
+    {
+     "url": "https://home.asdaa.it/download/SABES_2020.02.04_n._84_-_PAAGTA_2020-2022(1).pdf",
+     "testo": "Deliberazione aziendale n. 84 del 04.02.2020 - Piano Attuativo Aziendale per il governo dei tempi di attesa 2020-2022 de"
+    },
+    {
+     "url": "https://home.asdaa.it/download/1B_-_Esempio_della_rilevazione_-_Tempo_medio_di_attesa_effettivo(1).pdf",
+     "testo": "cliccare qui"
+    },
+    {
+     "url": "https://home.asdaa.it/download/Allegato_4A_-_Esempio_della_rilevazione_-_Indice_ministeriale_v2(1).pdf",
+     "testo": "cliccare qui"
+    },
+    {
+     "url": "https://home.asdaa.it/download/4B_-_Esempio_della_rilevazione_-_Indice_dell_offerta.pdf",
+     "testo": "cliccare qui"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/amministrazione-trasparente/cartadeiservizisanitari.asp",
    "controllata": "2026-10-25",
-   "http": 503
+   "http": 200,
+   "file": "bolzano/a5da44f29c93.txt",
+   "titolo": "Carta dei Servizi Sanitari | Azienda Sanitaria dell'Alto Adige",
+   "sha": "be947c6255ecb1d6025f860d1cfdfb8e2c8dc5840b2f2d33c8cac76f81858f97",
+   "caratteri": 8164,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
@@ -441,9 +482,9 @@
    "http": 200,
    "file": "trento/731021dc4745.txt",
    "titolo": "Homepage | ASUIT Trento",
-   "sha": "4f38db5e191452e904defd20556f591d757ccca8a665c04c118e3a2bf501ad4e",
-   "caratteri": 10837,
-   "cambiata": false
+   "sha": "9493478edb49fbeafb60cda5e2a4bb88077d1fbc5f35f7cf05d124b757d9d126",
+   "caratteri": 10791,
+   "cambiata": true
   },
   {
    "asl": "trento",
@@ -675,9 +716,9 @@
    "certificato": "non valido",
    "file": "trento/00438a822dda.txt",
    "titolo": "Homepage | ASUIT Trento",
-   "sha": "4f38db5e191452e904defd20556f591d757ccca8a665c04c118e3a2bf501ad4e",
-   "caratteri": 10837,
-   "cambiata": false
+   "sha": "9493478edb49fbeafb60cda5e2a4bb88077d1fbc5f35f7cf05d124b757d9d126",
+   "caratteri": 10791,
+   "cambiata": true
   },
   {
    "asl": "trento",
@@ -688,9 +729,9 @@
    "certificato": "non valido",
    "file": "trento/89eb44173d6d.txt",
    "titolo": "Homepage | ASUIT Trento",
-   "sha": "4f38db5e191452e904defd20556f591d757ccca8a665c04c118e3a2bf501ad4e",
-   "caratteri": 10837,
-   "cambiata": false
+   "sha": "9493478edb49fbeafb60cda5e2a4bb88077d1fbc5f35f7cf05d124b757d9d126",
+   "caratteri": 10791,
+   "cambiata": true
   },
   {
    "asl": "trento",
@@ -710,9 +751,9 @@
    "http": 200,
    "finale": "https://www.trentinosalute.net/Argomenti/TEMPI-DI-ATTESA",
    "file": "trento/0d2b7924d034.txt",
-   "titolo": "TEMPI DI ATTESA",
-   "sha": "beb5b972a89e8a4ba4ef548658abc1e853a5237237c7c496455a32a62e86fdf8",
-   "caratteri": 7285,
+   "titolo": "TEMPI DI ATTESA - Trentino Salute",
+   "sha": "1d4898ec7137e57bd87560f0e146b0b2ffc50f2ee35e253e2534ebb95f89aba9",
+   "caratteri": 7303,
    "cambiata": true
   },
   {
@@ -769,7 +810,7 @@
      "testo": "Delibera_596_2018"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -853,7 +894,7 @@
      "testo": "Delibera_596_2018"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole",

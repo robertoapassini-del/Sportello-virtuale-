@@ -1,6 +1,6 @@
 {
  "regione": "nazionali",
- "aggiornato": "2026-10-25T03:48:07.519Z",
+ "aggiornato": "2026-10-25T22:15:15.939Z",
  "pagine": [
   {
    "asl": "urgenze",
@@ -39,8 +39,8 @@
    "finale": "https://azzurro.it/",
    "file": "ascolto/6f8ce0e8bdd0.txt",
    "titolo": "Telefono Azzurro | Sito ufficiale",
-   "sha": "4d4d75d3a5d1422011e98ee30da62aa8e44a6667479ade8963d6309cdb6bc415",
-   "caratteri": 14457,
+   "sha": "8f4d18e113424c1eaf2a5d8eb7b1b6bd13609d2f48f69c1b59325eb9ceb4a533",
+   "caratteri": 14358,
    "link_pdf": [
     {
      "url": "https://azzurro.it/wp-content/uploads/2025/06/documento_2025-1.pdf",
@@ -83,23 +83,25 @@
    "asl": "ascolto",
    "url": "https://www.iss.it/numeri-verdi",
    "controllata": "2026-10-25",
+   "browser": true,
    "http": 200,
    "file": "ascolto/c5453074c7aa.txt",
-   "titolo": "Numeri Verdi - ISS",
-   "sha": "2d501180df2cb6ae1346e00349686e5c025648d4520ac94db1ae53954e2368aa",
-   "caratteri": 14269,
-   "cambiata": false
+   "titolo": "Request Rejected",
+   "sha": "495e6ef4a47969a800ae250e12cb3ce4fff9196ba97ae11c20e7966c3a5d88e7",
+   "caratteri": 142,
+   "cambiata": true
   },
   {
    "asl": "ascolto",
    "url": "https://www.iss.it/numeri-verdi/-/asset_publisher/LXvuDqwiaG9G/content/id/3858513",
    "controllata": "2026-10-25",
+   "browser": true,
    "http": 200,
    "file": "ascolto/8f7c4b12a9cb.txt",
-   "titolo": "Telefono Verde contro il Fumo - ISS",
-   "sha": "e2a7726715cbba7a14fe58df3ee50f66de3576a93a1229f931a6d57f095c6721",
-   "caratteri": 8063,
-   "cambiata": false
+   "titolo": "Request Rejected",
+   "sha": "de407fecd4da5ba4bcd51dac48783af17338e6b92b36f72b009db3ce3e82efef",
+   "caratteri": 142,
+   "cambiata": true
   },
   {
    "asl": "ascolto",
@@ -267,7 +269,7 @@
      "testo": "Calendario pagamenti ADI – settembre/dicembre 2025"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-adi",
@@ -558,9 +560,9 @@
    "http": 200,
    "file": "regole-contrassegno-disabili/206ded71e91b.txt",
    "titolo": "Polizia Municipale - Comune di Palermo",
-   "sha": "d5018f2f436727680a2839adbae7787ef9e5aa68b4948f944e09642b93d39f64",
-   "caratteri": 3754,
-   "cambiata": false
+   "sha": "560497137ccafd04ef299d862103612ed2e8a42c0753714d79d4d423e22463a2",
+   "caratteri": 4357,
+   "cambiata": true
   },
   {
    "asl": "regole-cure-fuori-regione",
@@ -881,7 +883,7 @@
    "caratteri": 15273,
    "link_pdf": [
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x35237",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x24635",
      "testo": "Modulo per AUTOCERTIFICAZIONE"
     }
    ],
@@ -923,11 +925,11 @@
   },
   {
    "asl": "regole-esenzione",
-   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x35237",
+   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x24635",
    "controllata": "2026-10-25",
    "da_pagina": "https://www.aslcittaditorino.it/prestazioni/esenzione-ticket-per-reddito/",
    "http": 200,
-   "file": "regole-esenzione/465455c154f7.txt",
+   "file": "regole-esenzione/e285b3a5a2fd.txt",
    "titolo": "Autocertificazione di esenzione",
    "sha": "0ec5d984b6bd5ef03f12e32ef41b78dfdf250def32f239cb24d846beeee617d9",
    "caratteri": 10878,
@@ -1269,7 +1271,7 @@
      "testo": "tutorial"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-invalidita",
@@ -1314,7 +1316,7 @@
      "testo": "tabella"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-legge-104",
@@ -1331,7 +1333,7 @@
      "testo": "tabella"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-legge-104",
@@ -1439,7 +1441,7 @@
      "testo": "FAQ"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-malattia",
@@ -1448,15 +1450,15 @@
    "http": 200,
    "file": "regole-malattia/7155e8bd6b46.txt",
    "titolo": "Portale Inps - Sportello per il cittadino per le visite mediche di controllo",
-   "sha": "65f9d0dc315a3178c08d9e944c5e753f9611a3f57035f228281d90e3bc5c7061",
-   "caratteri": 45321,
+   "sha": "6b2a95865faf282d6906a216181527f27d8f10dd3457ea69408f86cb659b8fdf",
+   "caratteri": 45176,
    "link_pdf": [
     {
      "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/2026/Manuale_utente_Sportello_per_il_cittadino_per_le_visite%20mediche_di_controllo.pdf",
      "testo": "Manuale utente – Sportello per il cittadino per le visite mediche di controllo"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "regole-malattia",
@@ -1604,7 +1606,7 @@
    "http": 200,
    "file": "regole-piano/0f06e59a557d.txt",
    "titolo": "Note AIFA | Agenzia Italiana del Farmaco",
-   "sha": "8d513194f656878c122b8bc657e5b5eef4c01ab463c5485cbcc570fab50a3129",
+   "sha": "91a6e9f1bcfbcd50933322e0c81c13916f2d6072e815d750d0eea8c60beddc32",
    "caratteri": 13892,
    "link_pdf": [
     {
@@ -1771,6 +1773,17 @@
    "sha": "7ff51231c8ceb34a091f08ddc44a38ffdb8f157bd5f1341a7ad2b3c03dc5d4f4",
    "caratteri": 3275,
    "cambiata": false
+  },
+  {
+   "asl": "regole-prevenzione",
+   "url": "https://www.aspct.it/comunicazione/news/default.aspx?news=28761",
+   "controllata": "2026-10-25",
+   "http": 200,
+   "file": "regole-prevenzione/403ebc21f9ea.txt",
+   "titolo": "ASPCONTE AMPLIA I SERVIZI: ARRIVA LA PIATTAFORMA ONLINE PER GLI SCREENING ONCOLOGICI » News",
+   "sha": "7c32a6b6b804d00b6749efe43c4caa2450d1d6d8a1a1a1fe1ca1e0a81c5eb501",
+   "caratteri": 5454,
+   "cambiata": true
   },
   {
    "asl": "regole-pronto-soccorso",
@@ -1989,8 +2002,8 @@
    "http": 200,
    "file": "regole-psicologo/87961f2ae2e2.txt",
    "titolo": "Portale Inps - Contributo per sostenere le spese relative a sessioni di psicoterapia - Bonus psicologo",
-   "sha": "ccb6b97be4f61d8e96ac780fb95dce4d12ef9159c74acd67df0c1419a0acca63",
-   "caratteri": 47640,
+   "sha": "7a0a15ff44b6e1cfea1e89271156c6385c2843d2046a087010433c5489933aa0",
+   "caratteri": 47417,
    "link_pdf": [
     {
      "url": "https://www.inps.it/content/dam/inps-site/pdf/allegati/Tutorial_Cittadino_Bonus_Psicologo_2025.pdf",
@@ -2001,7 +2014,7 @@
      "testo": "Bonus psicologo 2025: tutorial per il professionista"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "regole-psicologo",
@@ -2069,7 +2082,7 @@
    "titolo": "Gazzetta Ufficiale",
    "sha": "1660de78f1155ee0a2ee147eab36f52a676e3792f07c97b1abe265c83771f11d",
    "caratteri": 3099,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-ricorso",

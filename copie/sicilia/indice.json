@@ -1,6 +1,6 @@
 {
  "regione": "sicilia",
- "aggiornato": "2026-10-25T03:07:33.699Z",
+ "aggiornato": "2026-10-25T21:36:16.389Z",
  "pagine": [
   {
    "asl": "palermo",
@@ -9,8 +9,8 @@
    "http": 200,
    "file": "palermo/5a293fa66461.txt",
    "titolo": "ASP Palermo – Azienda Sanitaria Provinciale di Palermo",
-   "sha": "e25a08b50c96bcd5930129b551adaece9c0572c137c2acc489041783b908872b",
-   "caratteri": 9620,
+   "sha": "2883bd88990c0e061ded326630a8b081815272470b7113c807ea9dd645f0e9cc",
+   "caratteri": 9616,
    "link_pdf": [
     {
      "url": "https://www.asppalermo.org/wp-content/uploads/2025/04/guida_al_portale.pdf",
@@ -21,7 +21,7 @@
      "testo": "--> Autorizzazioni di assistenza protesica e integrativa Procedura Online"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "palermo",
@@ -99,7 +99,7 @@
    "url": "https://sportello.asppalermo.org/",
    "controllata": "2026-10-25",
    "http": 0,
-   "errore": "curl: (28) Connection timed out after 30002 milliseconds"
+   "errore": "curl: (28) Connection timed out after 30001 milliseconds"
   },
   {
    "asl": "palermo",
@@ -916,7 +916,7 @@
    "titolo": "Cartella clinica - A.O.U.P. \"P. Giaccone\"",
    "sha": "4e24b21c2383cd77d360d41d49b0e40487e304ce341a4092e36e9bf95b599945",
    "caratteri": 12943,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "palermo",
@@ -925,7 +925,7 @@
    "http": 200,
    "file": "palermo/1c749ae9389c.txt",
    "titolo": "Notizie e servizi utili",
-   "sha": "67bc4b8446cfd7b92bf535e3dee43fe48014b29905a6b56ea1395b8fb6820389",
+   "sha": "8590a278383ec5370ddbf7b0360e57c3e2996b29b67a4f4d3cd7f0bb69efaec6",
    "caratteri": 8112,
    "cambiata": true
   },
@@ -1705,9 +1705,9 @@
    "certificato": "non valido",
    "file": "messina/3a03ba45f31d.txt",
    "titolo": "Portale Azienda Sanitaria",
-   "sha": "053ce5b103965667041ac5a8570ee2bcb7981db45c1bf6a45844750563f2b02e",
-   "caratteri": 8258,
-   "cambiata": false
+   "sha": "3037dce0d0c9535626f9457135c83d910344c1ec51887c3ef55c5b6f95b75233",
+   "caratteri": 8268,
+   "cambiata": true
   },
   {
    "asl": "messina",
@@ -1717,8 +1717,8 @@
    "certificato": "non valido",
    "file": "messina/1306772dff0d.txt",
    "titolo": "Liste di Attesa » Altri contenuti",
-   "sha": "8658fccf7f109a02bbfa7e6438809bc405e51d4b9bf584ed6e6668a4d24561f0",
-   "caratteri": 12022,
+   "sha": "06e95fda7599722aea8f487d9363f14b67f0d55b7d128abfc47746c58c67f5cb",
+   "caratteri": 12032,
    "link_pdf": [
     {
      "url": "https://www.asp.messina.it/altri-contenuti/allegati-altri-contenuti/allegati-liste-di-attesa/DA-N.-631-12.04.19.pdf",
@@ -1769,7 +1769,7 @@
      "testo": "Modello di domanda"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "messina",
@@ -1804,9 +1804,9 @@
    "certificato": "non valido",
    "file": "messina/143531e7297a.txt",
    "titolo": "Casa della Comunità di Via del Vespro a Messina » Strutture",
-   "sha": "858885c39da6a99c52db181af2dd37f7077a4a5c338c1838ac65fb6d9a4aaf67",
-   "caratteri": 4099,
-   "cambiata": false
+   "sha": "c8abe3215138089a55553666ce70d8e99af1de3b86d3bf8bf9d4bad18d9a4a6d",
+   "caratteri": 4109,
+   "cambiata": true
   },
   {
    "asl": "messina",
@@ -1828,8 +1828,8 @@
    "certificato": "non valido",
    "file": "messina/03b76434cc5a.txt",
    "titolo": "CUP - Centro Unico Prenotazioni » URP",
-   "sha": "c14a8df80b84acdbf55f9516056e589a85fe0143bd3b23f0bdb76553a38b0626",
-   "caratteri": 7085,
+   "sha": "d228a1818a826caf85d1da06f97f9b4058aa0398290491e7c3a60fb6fd2df712",
+   "caratteri": 7095,
    "link_pdf": [
     {
      "url": "https://www.asp.messina.it/contents/2026/6/16/Modello-di-domanda.pdf",
@@ -1840,7 +1840,7 @@
      "testo": "Procedura-Percorso-di-Tutela.pdf"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "messina",
@@ -1850,9 +1850,9 @@
    "certificato": "non valido",
    "file": "messina/463a841e72a3.txt",
    "titolo": "Cos'è l'URP - Ufficio Relazioni con il Pubblico » URP",
-   "sha": "41137d57910362bad31f2c72b0456dd3a7f5ee31e74181be58e194cf46bbbc70",
-   "caratteri": 8787,
-   "cambiata": false
+   "sha": "f1a02919a976b09d1917fe555a3622f8e688829eea93ad83ee8f6187c29b40e1",
+   "caratteri": 8797,
+   "cambiata": true
   },
   {
    "asl": "messina",
@@ -1880,9 +1880,9 @@
    "certificato": "non valido",
    "file": "messina/455400cf41c1.txt",
    "titolo": "Alessandro Grippa » Personale",
-   "sha": "fe405466214d3c1cc32b28d2d520b8da46a01c7ee8ca79c7e9cefd47a92f0c7d",
-   "caratteri": 1688,
-   "cambiata": false
+   "sha": "749ee3046edbb3ea6ea5f87184fc8fd769ecf974479a8775a4716b8472e0af49",
+   "caratteri": 1698,
+   "cambiata": true
   },
   {
    "asl": "messina",
@@ -1892,7 +1892,7 @@
    "certificato": "non valido",
    "file": "messina/b93a7c51f846.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e Ausili riabilitativi, acustiche, busto ortopedico, microinfusori e ventilatorio – Messina – ASP Messina",
-   "sha": "eb0c00e15fc76246a102f50ee6f37d09bd4d0371cc6f12845e2366b1d729d070",
+   "sha": "6f4fb418f455339a6ca8883dfc10203ea06f6f52684cb729b48bc4dd80a874eb",
    "caratteri": 5340,
    "cambiata": true
   },
@@ -1904,7 +1904,7 @@
    "certificato": "non valido",
    "file": "messina/49a8cb5433ae.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico – Milazzo (ME) – ASP Messina",
-   "sha": "320cec29e9ddaebf65f851804d25d6a8b1266a6a1621e3eb8aeac1d03bc7c539",
+   "sha": "ed71b94def6b45b6bb1f9565c58285f4cb8338c00bca3ff9d5a7550676fe23c6",
    "caratteri": 5231,
    "cambiata": true
   },
@@ -1916,7 +1916,7 @@
    "certificato": "non valido",
    "file": "messina/af0dd7dea31e.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico – Barcellona Pozzo di Gotto (ME) – ASP Messina",
-   "sha": "e11031cc7924f6ccac3be02983a92288b9c98b940f94aa68abc2898f581556ff",
+   "sha": "c3aecd3559c4d373ed9aae36c642608f020d6b231d574a5a2316f913ad3cdf12",
    "caratteri": 5405,
    "cambiata": true
   },
@@ -1928,7 +1928,7 @@
    "certificato": "non valido",
    "file": "messina/46de8177530f.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico – Patti (ME) – ASP Messina",
-   "sha": "835c3d8b65bc2906f98b48c99c40685e35ed33415bec9ad069affae9ebb450cc",
+   "sha": "5e5acc0251e014794ba352acd932d864d61bf38297482eff0e2c17da4dd4a696",
    "caratteri": 5202,
    "cambiata": true
   },
@@ -1940,7 +1940,7 @@
    "certificato": "non valido",
    "file": "messina/6f2b15365da4.txt",
    "titolo": "Autorizzazione Assistenza Integrativa – Presidi per diabetici, celiaci, incontinenti, pannoloni, stomizzati – Messina – ASP Messina",
-   "sha": "194f3878c41c740094dd781cb7286e13756a70bacfb619cf75e3748fc5f910ed",
+   "sha": "5c4d22fcb563c1c1fce97c32cc9c291b9c801b5a9f8fd3b74a9d43f28c861aeb",
    "caratteri": 5241,
    "cambiata": true
   },
@@ -1952,7 +1952,7 @@
    "certificato": "non valido",
    "file": "messina/d31336f3a7de.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico- Sant’Agata di Militello (ME) – ASP Messina",
-   "sha": "9b8ce2aa3fd917c43ed8266ce7a735576f16dba6cf715a43a18bfb870b0678a0",
+   "sha": "28c02d30e23fc6f199fac00103333b844fb0241846f2c495dc6314c7ed43f980",
    "caratteri": 5334,
    "cambiata": true
   },
@@ -1964,7 +1964,7 @@
    "certificato": "non valido",
    "file": "messina/b054a0ed7979.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico – Lipari (ME) – ASP Messina",
-   "sha": "259969c6675ddc32740e3ff79b1fe1351915d7bd249617cc4d5edca5bb375ac0",
+   "sha": "0020001770fb9afac6e018f8a0462491265004ed14d470c16ce4a97959d16a74",
    "caratteri": 5234,
    "cambiata": true
   },
@@ -1976,7 +1976,7 @@
    "certificato": "non valido",
    "file": "messina/f956bab565c6.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico – Mistretta (ME) – ASP Messina",
-   "sha": "005392c3316c1615ddb1a96e2aca6cd5c2f9930a52b0d2e67195664825ffd74a",
+   "sha": "3d986b634f8310cf61aafb891b9392bcbe10f1ef347e8c97dd8e9b733d88b31a",
    "caratteri": 5397,
    "cambiata": true
   },
@@ -1988,7 +1988,7 @@
    "certificato": "non valido",
    "file": "messina/fd0ebd947108.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico – Taormina (ME) – ASP Messina",
-   "sha": "e4e766d5f3353b17c63a029360bb2968126abe5822a8295ecb51127430f0d6fb",
+   "sha": "b6d1170a4acdea3c065ce39e59edc0b62c251cee21b0ff159795721561ea949e",
    "caratteri": 5251,
    "cambiata": true
   },
@@ -2011,9 +2011,9 @@
    "certificato": "non valido",
    "file": "messina/dec8fced4460.txt",
    "titolo": "Screening per la prevenzione dei tumori » Servizi e prestazioni",
-   "sha": "834fda3a425a5cf2a670addfaf3bf6cef9702b63d1d080785a52791a5d865788",
-   "caratteri": 9197,
-   "cambiata": false
+   "sha": "102594ff1423457c9af1f1f6a01e4a5d597b34a688f887a976569e53f89b2556",
+   "caratteri": 9207,
+   "cambiata": true
   },
   {
    "asl": "messina",
@@ -2023,8 +2023,8 @@
    "certificato": "non valido",
    "file": "messina/e1918ddf7660.txt",
    "titolo": "Scelta e revoca del Medico di Medicina Generale (Medico di Famiglia) e Pediatra Libera Scelta » Come fare per",
-   "sha": "5b5f2757d0a944c7af520c7a0c3f07b96259bf67d8b86e597ac1595821f33051",
-   "caratteri": 11278,
+   "sha": "3575bdb2eb70eb4bb6bf1f76eedc16d3e8d158261fd7b58a6666673964322609",
+   "caratteri": 11288,
    "link_pdf": [
     {
      "url": "https://www.asp.messina.it/wp-content/uploads/2019/11/2-Modulo-di-delega-generale-servizi-anagrafe-assistiti-scelta-Medico-cambio-o-revoca-Medico-Duplicato-libretto-.pdf",
@@ -2047,7 +2047,7 @@
      "testo": "Modulo autocertificazione nascita figlio/a (Dichiarazione sostitutiva di certificazione)"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "messina",
@@ -2057,8 +2057,8 @@
    "certificato": "non valido",
    "file": "messina/a650818fcdea.txt",
    "titolo": "Rilascio esenzione ticket sanitario per reddito, età, disoccupazione e pensioni al minimo sociale » Come fare per",
-   "sha": "4296f218223f5e38a5af800886bb03a6d834d231e9e969f019aedbb31974c328",
-   "caratteri": 5925,
+   "sha": "77cc71f6fc709db776eebe3de1047fc2b0f0f5082d1b057df709ebb272f23297",
+   "caratteri": 5935,
    "link_pdf": [
     {
      "url": "http://www.asp.messina.it/wp-content/uploads/2018/04/Delega-consegna-e-ritiro-attestazione-esenzione-ticket-per-reddito-et%C3%A0-o-disoccupazione.pdf",
@@ -2069,7 +2069,7 @@
      "testo": "Autocertificazione-del-diritto-esenzione-pagamento-ticket-per-reddito.pdf"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "messina",
@@ -2079,9 +2079,9 @@
    "certificato": "non valido",
    "file": "messina/4a56ad717acf.txt",
    "titolo": "Presidio Continuità Assistenziale (ex Guardia Medica) – Messina Sud » Strutture",
-   "sha": "e859f704c8061a43ac5978a12da6f7e9048cc74e066c3030653d19eb7c4ba71b",
-   "caratteri": 2583,
-   "cambiata": false
+   "sha": "06cfe2aeffb154f94173775be647863047810221c9b747499d3a529875326094",
+   "caratteri": 2593,
+   "cambiata": true
   },
   {
    "asl": "messina",
@@ -2091,9 +2091,9 @@
    "certificato": "non valido",
    "file": "messina/29cb4c8b5f65.txt",
    "titolo": "Presidio Continuità Assistenziale (ex Guardia Medica) – Messina Centro » Strutture",
-   "sha": "955f0920e08bbf69ebde1ff2ed6a79104d9bd4e40283abbeb7f54545e856ab7b",
-   "caratteri": 2527,
-   "cambiata": false
+   "sha": "0cb605f4f5dca5628581491ac9d0d9c293b6aa2f4e4f18fbdf340a46ac9cad36",
+   "caratteri": 2537,
+   "cambiata": true
   },
   {
    "asl": "messina",
@@ -2103,9 +2103,9 @@
    "certificato": "non valido",
    "file": "messina/e497701303e1.txt",
    "titolo": "Presidio Continuità Assistenziale (ex Guardia Medica) – Messina Nord » Strutture",
-   "sha": "398c436871a02e877429f345f78244e396d5fe8eb45509a80d1ca2f691c8e886",
-   "caratteri": 2514,
-   "cambiata": false
+   "sha": "e9f31dd8f6d11079a45bf14ec0128d836e92df099efa4490b4fd69693eb3be7f",
+   "caratteri": 2524,
+   "cambiata": true
   },
   {
    "asl": "messina",
@@ -2215,8 +2215,8 @@
    "finale": "https://portalesalute.asp.sr.it/home",
    "file": "siracusa/13f9f6cc3bed.txt",
    "titolo": "Portale della salute",
-   "sha": "3b311ba47496acb508f1eb06ee502f22b55874f037dee7d8354cc25278c22395",
-   "caratteri": 5128,
+   "sha": "f9a4688d1a9e768ccd746d458b3159900a4f015ced7a6bd9b5733a3e2b369a3e",
+   "caratteri": 5178,
    "cambiata": true
   },
   {
@@ -2410,13 +2410,13 @@
    "asl": "agrigento",
    "url": "https://www.aspag.it/curie-primarie-assistenza-domiciliare-cure-domiciliari/",
    "controllata": "2026-10-25",
+   "browser": true,
    "http": 200,
    "file": "agrigento/1e17667be69b.txt",
    "titolo": "Curie Primarie -Assistenza Domiciliare -Cure Domiciliari – ASP Agrigento",
-   "sha": "afd1d4ed0bdc004904fceed43d413f25884c34cd5cda525858ebb7468ec81591",
-   "caratteri": 7261,
-   "email_nascoste": 18,
-   "cambiata": false
+   "sha": "2e39ecae88f2348a20c7bc164381d9a54befaa9066a4492e1922f31af2c709bb",
+   "caratteri": 9337,
+   "cambiata": true
   },
   {
    "asl": "agrigento",
@@ -2662,13 +2662,13 @@
    "asl": "agrigento",
    "url": "https://www.aspag.it/assistenza-sanitaria-di-base-licata-distretto-sanitario-licata/",
    "controllata": "2026-10-25",
+   "browser": true,
    "http": 200,
    "file": "agrigento/d921b4e86aa4.txt",
    "titolo": "Assistenza Sanitaria di Base – DS Licata – ASP Agrigento",
-   "sha": "76a64b86318976fa138cbfd0311ef2e3d0d4f6edfa598610f8f16cde6cc15902",
-   "caratteri": 1968,
-   "email_nascoste": 1,
-   "cambiata": false
+   "sha": "d0338b72c7029e14f30b56a20545b5762ad42598f4a9020b38409ac41a4a420d",
+   "caratteri": 4061,
+   "cambiata": true
   },
   {
    "asl": "agrigento",
@@ -2908,8 +2908,8 @@
    "http": 200,
    "file": "catania/35f73e7d1c3c.txt",
    "titolo": "Richiesta documentazione sanitaria",
-   "sha": "51c2a6b63aa1a46dea2564b08e53eccb76b006a0a4f95123436d60c7dec0b430",
-   "caratteri": 7457,
+   "sha": "693e1e98c0229fb88a6eee4d26fd3ee7a55d28689ba9828a36c1aa0d990a3125",
+   "caratteri": 7479,
    "link_pdf": [
     {
      "url": "https://www.ao-garibaldi.ct.it/utente/richiesta-documentazione-sanitaria/allegati/linee-guida%202026.pdf",
@@ -2928,7 +2928,7 @@
      "testo": "Modulo delega"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "catania",
@@ -3477,7 +3477,7 @@
    "titolo": "Liste di attesa / Servizi erogati / Amministrazione trasparente / Homepage - Azienda Sanitaria Provinciale di Enna",
    "sha": "61272429dce4e93cf45b3e82bad519bebc2a26e087f0d5b0cc2f3f7d589de2b4",
    "caratteri": 5058,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "enna",
@@ -3532,7 +3532,7 @@
    "titolo": "CUP – Prenotazione prestazioni sanitarie / Percorsi di cura e assistenza / Servizi e prestazioni / Homepage - Azienda Sanitaria Provinciale di Enna",
    "sha": "b6119f4eaf0794c07728e8180929fd05047e72e6583950b184f582a36ce8bd8e",
    "caratteri": 7558,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "enna",
@@ -3608,9 +3608,9 @@
    "http": 200,
    "file": "enna/b0e28ab06b54.txt",
    "titolo": "Esenzione ticket / Come fare per / Homepage - Azienda Sanitaria Provinciale di Enna",
-   "sha": "3a2131354e9e1c3fd0f3b7fc55752ce5945375cd99528dc7185b4f011b0d74a2",
+   "sha": "6855ea2dfc017db7f6b3d8a4a8d09bb289f184d4c61416b522b960aea66e431f",
    "caratteri": 2038,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "enna",
@@ -3798,9 +3798,9 @@
    "finale": "https://www.indicepa.gov.it/ipa-portale/",
    "file": "inps-sicilia/4c8be6d3916e.txt",
    "titolo": "IpaPortale",
-   "sha": "b69aad6cee74ae1438a12d08d2c2781a5c94dd196d80434774beceabc785b3b8",
+   "sha": "7896eca30739f2f90fe142f4486df5aa5665aefb8add730bab41c83fdaa02d9e",
    "caratteri": 2621,
-   "cambiata": false
+   "cambiata": true
   }
  ]
 }
