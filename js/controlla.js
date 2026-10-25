@@ -11,6 +11,8 @@ export const CHECK_WITH = {
   'accompagnamento': "con l'INPS o con un patronato",
   'legge-104': "con l'INPS o con un patronato",
   'tessera-sanitaria': "con l'Agenzia delle Entrate o con la tua ASP",
+  'certificato-malattia': "con l'INPS, con il tuo medico o con il datore di lavoro",
+  'visita-fiscale': "con l'INPS o con il datore di lavoro",
 };
 
 export const checkWith = (slug, asl = 'azienda sanitaria (ASL)') => `Controlla sempre ${(CHECK_WITH[slug] || 'con la tua ASP').replace(/\bASP\b/g, asl)}.`;
