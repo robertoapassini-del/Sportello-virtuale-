@@ -106,7 +106,7 @@ const screens = {
         <h2>Come scegliere</h2>
         <ul class="clean">
           <li>Allo sportello ti danno l'elenco dei medici della tua zona che hanno ancora posto.</li>
-          <li>Ogni medico può avere al massimo circa ${migliaia(rules.max_patients_medico)} pazienti, ogni pediatra circa ${migliaia(rules.max_patients_pediatra)}: se è pieno, non può prenderti.</li>
+          <li>Ogni medico può avere al massimo circa ${migliaia(rules.max_patients_medico)} pazienti, ogni pediatra circa ${migliaia(rules.max_patients_pediatra)}: se è pieno, di solito non può prenderti (ci sono alcuni casi in deroga).</li>
           <li>Chiedi a vicini e parenti, e guarda gli orari dello studio e se fa visite a casa.</li>
         </ul>
         ${a ? aspCalls(a) : ''}

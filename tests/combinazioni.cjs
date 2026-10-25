@@ -395,7 +395,7 @@ async function runCase(page, c) {
         if (!t.includes(to)) problems.push(`il testo del sollecito non ha l'indirizzo ${to}`);
       }
       // Il «Se nessuno ti risponde entro…»: con la U non si aspettano i 10 giorni del sollecito,
-      // con la B non oltre i 10 giorni della classe. La prima richiesta, se non la cambi, è di oggi.
+      // con la B dopo i 5 giorni del richiamo (i 10 della classe partono prima, dalla prenotazione). La prima richiesta, se non la cambi, è di oggi.
       const title = await page.locator('#remind-title').innerText();
       const shown = [...title.matchAll(/(\d{2})\/(\d{2})\/(\d{4})/g)].map((m) => `${m[3]}-${m[2]}-${m[1]}`);
       if (c.cls.key === 'U') {
@@ -404,7 +404,7 @@ async function runCase(page, c) {
         if (late.length) problems.push(`classe U: «E adesso?» mostra date oltre i 3 giorni (${late.map(fmt).join(', ')})`);
         if (!/telefona subito/.test(title)) problems.push(`classe U: titolo del sollecito «${title}»`);
       } else {
-        const want = add(TODAY, c.cls.key === 'B' ? Math.min(10, LIMIT.B) : 10);
+        const want = add(TODAY, c.cls.key === 'B' ? Math.min(10, CALLBACK.B) : 10);
         if (shown.join() !== want) problems.push(`sollecito: attesa ${fmt(want)}, trovato «${title}»`);
       }
       await checkScreen('E adesso');
