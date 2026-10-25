@@ -105,6 +105,14 @@ const ERRORI = [
   [/in Sicilia e in Calabria si chiama ASP/, "si chiama ASP anche l'azienda sanitaria di Potenza (Basilicata)"],
   [/con tutti sopra i 67 anni/, "assegno di inclusione: 8.190 euro anche con altri familiari con disabilità grave, e da 67 anni compiuti («pari o superiore»)"],
   [/e paghi una multa/, 'esenzione: chi dichiara il falso rischia anche sanzioni penali (art. 75 e 76 D.P.R. 445/2000)'],
+  // Seconda rilettura del 25/10/2026 (coerenza tra pagine): docs/revisione-2026-10-25.md.
+  [/11\.362,05 euro con il coniuge a carico|C'è un coniuge \(marito o moglie\) a carico/, "esenzione E02 ed E04: il limite più alto vale «in presenza del coniuge», anche con un reddito suo (modulo di autocertificazione)"],
+  [/Esenzione per età o per reddito/, "esenzione: nessun codice dipende solo dall'età (E01 chiede anche il reddito)"],
+  [/gratis per legge|diritto gratuito \((L\.|legge) 38/, 'cure palliative: la L. 38/2010 dà il diritto; il ticket non si paga perché sono nei LEA'],
+  [/pannoloni: come averli gratis/, 'ausili: gratis solo per chi ne ha diritto'],
+  [/congedo straordinario: 2 anni|il congedo di 2 anni/, 'congedo straordinario: «fino a» 2 anni nella vita lavorativa'],
+  [/vaccini gratis per adulti e bambini/, 'la pagina dei vaccini parla degli adulti; per i bambini rimanda al pediatra'],
+  [/Quello che scrivi resta sul tuo telefono e si cancella/, 'il sito ricorda la regione scelta: dirlo (privacy.html)'],
 ];
 
 test('nessuno degli errori già trovati è tornato', () => {

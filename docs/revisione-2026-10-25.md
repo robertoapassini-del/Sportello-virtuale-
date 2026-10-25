@@ -83,5 +83,31 @@ Gli errori che si riconoscono da come sono scritti sono in `tests/errori-noti.te
 - **Regno Unito e tessera europea (TEAM)**: tolto dall'elenco finché non c'è una fonte.
 - **Note legali, «minori di 14 anni»**: coerenza con i numeri per bambini e ragazzi.
 - **Silenzio-assenso e 20 giorni degli ausili in Sicilia**: leggere il D.A. 20/12/2011 (DA-VERIFICARE-A-MANO.md).
-- **Coerenza tra pagine diverse**: la sesta rilettura (lo stesso fatto detto in modo diverso in pagine diverse,
-  i testi di `data/moduli.json`, i testi delle regioni) si è fermata a metà; da rifare.
+- **Accompagnamento e RSA in Sicilia**: nei primi 60 giorni l'ASP paga tutta la retta. Conta come «ricovero a
+  totale carico» che sospende l'indennità dopo 29 giorni? Nessuna fonte INPS nelle copie: chiedere a un patronato.
+- **Lombardia, «la tua ATS»**: i servizi li danno le ASST; l'avviso «URP della tua ATS» va scritto meglio
+  (`asl_label` in `data/regioni/index.json`).
+- **Palermo, «L'ASP ti telefona entro 2 giorni»** (`data/regioni/sicilia/asp.json`): manca la frase della fonte.
+
+## Seconda rilettura: coerenza tra pagine (25/10/2026)
+
+Due riletture in più: lo stesso fatto in pagine diverse; `data/moduli.json`, testi comuni dei JS, pagine delle
+aree e testi delle regioni. Corretti:
+- **Esenzione E04**: anche qui il limite di 11.362,05 euro vale «in presenza del coniuge» (modulo di
+  autocertificazione): pagina e calcolo ora fanno la stessa domanda per E02 ed E04.
+- **Cure palliative**: titolo e descrizioni dicevano «gratis per legge (L. 38/2010)»; ora «senza ticket perché
+  sono nei LEA», come le sottopagine.
+- **Moduli**: «Esenzione per età o per reddito» (nessun codice dipende solo dall'età); «congedo di 2 anni» →
+  «fino a 2 anni»; vaccini «per adulti e bambini» → «per gli adulti», come la pagina; «Carrozzina… come averli
+  gratis» → «chi li ha gratis e come»; l'area «Visite ed esami» non prometteva più la prenotazione, che sta in
+  «Tessera e ricette».
+- **Piè di pagina**: «Non salviamo niente» ora dice anche che il sito ricorda la regione scelta.
+- **PEC**: il patronato manda le pratiche all'INPS; per le lettere all'ASL o all'ospedale bisogna chiedere.
+- **Psicologo**: «Controlla sempre con la tua ASL o, per il bonus psicologo, con l'INPS».
+- **Tempi di 7 giorni per i referti**: «dalla richiesta scritta», come nella pagina della cartella clinica.
+- **Accompagnamento**: «più di un mese» → «più di 29 giorni», con la condizione dell'assistenza completa.
+- **Tessera sanitaria**: la nuova arriva «di solito» prima della scadenza.
+- **RSA**: conta l'ISEE sociosanitario della persona ricoverata; la dimissione protetta la prevedono le regole
+  della Regione.
+- **Piemonte, Friuli-Venezia Giulia, Puglia**: per il medico, al posto del certificato di residenza va bene anche
+  l'autocertificazione.
