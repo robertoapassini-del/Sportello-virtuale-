@@ -21,14 +21,15 @@ const howTo = () => `
   <ol class="big-steps">
     <li><strong>Fai l'ISEE</strong> al CAF (gratis). Senza ISEE non si può fare la domanda.</li>
     <li><strong>Fai la domanda</strong>: al patronato o al CAF, oppure da solo sul sito dell'INPS con lo SPID.</li>
+    <li><strong>Firma online il patto di attivazione digitale (PAD)</strong> sul sito SIISL: il patronato ti aiuta. L'assegno parte dal mese dopo la firma.</li>
     <li><strong>Vai all'appuntamento con i servizi sociali</strong> del Comune: ti chiamano loro, è obbligatorio. Firmi un «patto» con gli impegni della famiglia.</li>
     <li><strong>Ricevi la Carta di inclusione</strong> alle Poste: i soldi arrivano ogni mese sulla carta.</li>
   </ol>
   <details class="card">
     <summary>Quanto dura e cosa controllano</summary>
     <ul class="clean">
-      <li>Dura <strong>${rules.duration_months} mesi</strong>. Poi si può rinnovare per altri ${rules.renewal_months} mesi, senza più il mese di stop: la domanda di rinnovo si fa dal mese dopo l'ultimo pagamento. Il primo mese del rinnovo arriva la metà (${rules.renewal_first_month_percent}%), poi l'importo intero.</li>
-      <li>Oltre all'ISEE, controllano il reddito della famiglia, la casa e i risparmi. Il limite di reddito è ${formatEuro(rules.income_max_base)} l'anno per una persona sola. È più alto per le famiglie numerose e per chi è in affitto. Per le famiglie con tutti sopra i 67 anni è ${formatEuro(rules.income_max_elderly)}.</li>
+      <li>Dura <strong>${rules.duration_months} mesi</strong>. Poi si può rinnovare per altri ${rules.renewal_months} mesi, senza più il mese di stop: la domanda di rinnovo si fa dal mese dopo l'ultimo pagamento. Il primo mese del rinnovo arriva la metà (${rules.renewal_first_month_percent}%), poi l'importo intero. Dopo si può rinnovare ancora, ogni volta per ${rules.renewal_months} mesi, con una nuova domanda.</li>
+      <li>Oltre all'ISEE, controllano il reddito della famiglia, la casa e i risparmi. Il limite di reddito è ${formatEuro(rules.income_max_base)} l'anno per una persona sola. È più alto per le famiglie numerose e per chi è in affitto. Per le famiglie in cui tutti hanno almeno 67 anni (o gli altri hanno una disabilità grave) è ${formatEuro(rules.income_max_elderly)}.</li>
       <li>Chi può lavorare (tra 18 e 59 anni, senza carichi di cura) deve iscriversi ai percorsi per il lavoro.</li>
       <li>Se la situazione cambia (lavoro, nascite, trasloco), devi dirlo all'INPS.</li>
     </ul>

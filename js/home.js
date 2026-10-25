@@ -33,8 +33,8 @@ function copertura() {
     ? `${dove} trovi anche i numeri utili e gli uffici della zona per: ${esc(elenco)}.`
     : `${dove} trovi anche i numeri utili.`;
   return r.attiva
-    ? `<p class="home-regione">Le regole valgono in tutta Italia. ${qui}</p>`
-    : '<p class="home-regione">Le regole valgono in tutta Italia.</p>';
+    ? `<p class="home-regione">Le regole nazionali valgono in tutta Italia; quelle di una sola regione lo dicono. ${qui}</p>`
+    : '<p class="home-regione">Le regole nazionali valgono in tutta Italia; quelle di una sola regione lo dicono.</p>';
 }
 
 // Sotto il titolo, la frase che dice a cosa serve il sito (è anche la descrizione per Google: senza, Google

@@ -87,6 +87,24 @@ const ERRORI = [
   // il sito dice quello che c'è; dove mancano i dati della regione il pulsante del modulo non si vede (js/flow.js).
   [/lettere già pronte, per ora|non abbiamo ancora|non li abbiamo ancora|ancora da raccogliere|non ancora (in|per) tutte le regioni/, 'non dire quello che manca: mostra solo quello che c\'è nella regione', /^\s*\/\//],
   [/uffici e lettere solo per la Sicilia|le lettere per ora solo per la Sicilia/, 'home: le regioni con le lettere si calcolano dall\'indice (regioni senza «moduli»), non si scrive «solo per la Sicilia»'],
+  // Revisione completa del 25/10/2026: frasi più ampie della fonte, sbagliate o contraddittorie (docs/revisione-2026-10-25.md).
+  [/[Ss]ono tempi massimi/, 'triage: i tempi valgono «quando siano presenti condizioni di normale affluenza», non sono una garanzia'],
+  [/non si può prendere nello stesso periodo in cui un altro familiare/, 'congedo straordinario e permessi 104 per la stessa persona: si possono, «purché non negli stessi giorni» (scheda INPS)'],
+  [/entro i 12 anni del figlio/, 'prolungamento del congedo parentale: entro i 14 anni del figlio (scheda INPS sui permessi 104)'],
+  [/non mentre c'è un ricorso in corso/, "aggravamento: l'INPS lo ammette anche durante un ricorso («con l'eccezione delle domande di aggravamento»)"],
+  [/si considera data|l'autorizzazione vale lo stesso|vale come un sì/, 'ausili: il silenzio-assenso in Sicilia non ha ancora una fonte letta (DA-VERIFICARE-A-MANO.md)'],
+  [/31 marzo 2026 anche in quelle private|Dal 2026 tutte le strutture/, 'Fascicolo: i documenti dei privati ci vanno dal 2020 (fascicolosanitario.gov.it); la data 2026 non ha fonte'],
+  [/Per legge devi pagare il <strong>ticket intero/, 'disdetta: il D.L. 73/2024 rimanda alle linee di indirizzo i casi in cui si paga («può dover pagare»)'],
+  [/trattano la ricetta senza lettera come classe/, 'ricetta senza classe di priorità: nessuna fonte dice come la trattano le aziende'],
+  [/D\.A\. n\. 367 del 3 aprile 2025/, 'DPC in Sicilia: la pagina della Regione cita il D.A. n. 1857 del 26/09/2017'],
+  [/ogni anno c'è un periodo per fare domanda|nei periodi che l'INPS (apre|annuncia) ogni anno|periodo che l(&#39;|')INPS apre ogni anno/, "bonus psicologo: l'INPS apre i periodi quando ci sono i fondi; non è un appuntamento di ogni anno"],
+  [/in contanti non si può/, 'infermiere: per chi ha una disabilità la spesa è deducibile anche in contanti (Agenzia delle Entrate)'],
+  [/ti (<strong>)?rimborsa i chilometri/, 'dialisi: il rimborso dei chilometri con la propria auto non ha fonte'],
+  [/Ti dà le <strong>medicine/, 'guardia medica: fa la ricetta per le terapie «non differibili», non dà le medicine'],
+  [/che non richiede lo SPID/, 'ASPConTe: la pagina dell\'ASP Catania chiede lo SPID'],
+  [/in Sicilia e in Calabria si chiama ASP/, "si chiama ASP anche l'azienda sanitaria di Potenza (Basilicata)"],
+  [/con tutti sopra i 67 anni/, "assegno di inclusione: 8.190 euro anche con altri familiari con disabilità grave, e da 67 anni compiuti («pari o superiore»)"],
+  [/e paghi una multa/, 'esenzione: chi dichiara il falso rischia anche sanzioni penali (art. 75 e 76 D.P.R. 445/2000)'],
 ];
 
 test('nessuno degli errori già trovati è tornato', () => {

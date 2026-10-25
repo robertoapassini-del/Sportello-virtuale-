@@ -461,9 +461,10 @@ const screens = {
     const a = asp();
     const today = todayISO();
     if (!state.firstRequestDate) state.firstRequestDate = today;
-    // Con la classe U non si aspetta il sollecito; con la B si sollecita prima che finisca il tempo della classe.
+    // Con la classe U non si aspetta il sollecito; con la B si sollecita dopo i giorni del richiamo (5), perché i
+    // 10 giorni della classe partono dalla prenotazione, che viene prima della richiesta di tutela (revisione del 25/10/2026).
     const urgent = state.cls === 'U';
-    const remindAfter = state.cls === 'B' ? Math.min(rules.reminder_after_days, rules.max_wait_days.B) : rules.reminder_after_days;
+    const remindAfter = state.cls === 'B' ? Math.min(rules.reminder_after_days, rules.callback_days.B) : rules.reminder_after_days;
     const remindTitle = () => {
       if (urgent) return `Se entro ${days(rules.max_wait_days.U - 1)} nessuno ti chiama, telefona subito all'${aslLabel()} e al tuo medico`;
       const on = addDays(state.firstRequestDate, remindAfter);

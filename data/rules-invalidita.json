@@ -9,7 +9,10 @@
       "other": 90
     },
     "extra_documents_days_before_visit": 7,
-    "minor_age": 18
+    "minor_age": 18,
+    "sospensione_giorni": 60,
+    "eccezione_eta_anni": 70,
+    "eccezione_fino_al": "2026-12-31"
   },
   "old_regime": {
     "domanda_window_days": 90,
@@ -44,6 +47,27 @@
       "proof": "estratto",
       "review_by": "2027-01-01",
       "nota": "Minorenne: sotto i 18 anni."
+    },
+    "new_regime.sospensione_giorni": {
+      "url": "https://riformadisabilita.gov.it/valutazione-di-base/",
+      "verified": "2026-10-25",
+      "proof": "testo",
+      "review_by": "2027-04-25",
+      "nota": "Sito del Governo sulla riforma della disabilità, copia del server del 25/10/2026: «I termini possono essere sospesi per 60 giorni se per la Commissione Inps serve un’integrazione documentale o ulteriori approfondimenti diagnostici» e «La sospensione dei 60 giorni può, su richiesta, essere prorogata per ulteriori 60 giorni»."
+    },
+    "new_regime.eccezione_eta_anni": {
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.domanda-invalidita-civile-e-accertamento-sanitario-50004.accertamento-sanitario.html",
+      "verified": "2026-10-25",
+      "proof": "testo",
+      "review_by": "2027-01-01",
+      "nota": "Scheda INPS sull'accertamento sanitario, copia del server del 25/10/2026: la procedura vecchia resta anche nelle province sperimentali «per i soggetti ultrasettantenni non autosufficienti», cioè chi ha più di 70 anni (data di fine in eccezione_fino_al)."
+    },
+    "new_regime.eccezione_fino_al": {
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.domanda-invalidita-civile-e-accertamento-sanitario-50004.accertamento-sanitario.html",
+      "verified": "2026-10-25",
+      "proof": "testo",
+      "review_by": "2027-01-01",
+      "nota": "Stessa scheda INPS: per gli ultrasettantenni non autosufficienti la procedura vecchia vale «fino al 31 dicembre 2026»."
     },
     "old_regime.domanda_window_days": {
       "url": "https://riformadisabilita.gov.it/valutazione-di-base/",

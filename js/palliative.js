@@ -32,8 +32,8 @@ const whatIs = () => `
   <h2>Cosa sono e cosa danno</h2>
   <ul class="icon-list">
     <li><span class="ico" aria-hidden="true">🏠</span> <span><strong>A casa:</strong> medici e infermieri esperti vengono a casa, anche più volte a settimana, con reperibilità telefonica. Controllano il dolore e gli altri sintomi, e aiutano la famiglia.</span></li>
-    <li><span class="ico" aria-hidden="true">🏥</span> <span><strong>In hospice:</strong> una struttura dove la persona è seguita giorno e notte, con la famiglia sempre presente. Non è un ospedale.</span></li>
-    <li><span class="ico" aria-hidden="true">💶</span> <span><strong>Gratis:</strong> niente ticket, per legge.</span></li>
+    <li><span class="ico" aria-hidden="true">🏥</span> <span><strong>In hospice:</strong> una struttura dove la persona è seguita giorno e notte. Non è un ospedale: di solito la famiglia può stare con la persona a lungo.</span></li>
+    <li><span class="ico" aria-hidden="true">💶</span> <span><strong>Gratis:</strong> niente ticket, perché sono nei livelli essenziali di assistenza (LEA).</span></li>
     <li><span class="ico" aria-hidden="true">❤️</span> <span><strong>Per chi:</strong> non solo per i tumori. Anche per malattie gravi del cuore, dei polmoni, dei reni, neurologiche, in fase avanzata.</span></li>
   </ul>
   <h2>Come si attivano</h2>
@@ -41,11 +41,11 @@ const whatIs = () => `
     <li><strong>Chiedi al medico di famiglia o allo specialista</strong> di attivare le cure palliative. È lui che manda la richiesta alla rete cure palliative dell'${aslLabel()} (o all'hospice).</li>
     <li><strong>Se la persona è in ospedale</strong>, chiedi al reparto di attivarle prima delle dimissioni («dimissione protetta»).</li>
     <li><strong>Un medico della rete valuta</strong> (a casa o in ospedale) e si decide insieme: casa o hospice.</li>
-    <li><strong>L'attivazione deve essere rapida</strong>: di solito pochi giorni. Se dopo ${rules.reminder_after_days} giorni nessuno si è fatto vivo, chiama di nuovo e sollecita.</li>
+    <li><strong>La legge nazionale non fissa un numero di giorni</strong> per l'attivazione. Se dopo ${rules.reminder_after_days} giorni nessuno si è fatto vivo, chiama di nuovo e sollecita.</li>
   </ol>
   <details class="card">
     <summary>Il dolore non deve essere sopportato</summary>
-    <p>La legge 38/2010 dice che il dolore va misurato e curato, in ospedale e a casa. Se il dolore non è controllato, chiedi al medico la <strong>terapia del dolore</strong> o la visita in un <strong>centro di terapia del dolore</strong>. Le medicine forti contro il dolore (oppioidi) si possono prescrivere con la ricetta normale.</p>
+    <p>La legge 38/2010 garantisce l'accesso alla terapia del dolore, e dice che in ospedale il dolore va misurato e scritto nella cartella clinica. Se il dolore non è controllato, chiedi al medico la <strong>terapia del dolore</strong> o la visita in un <strong>centro di terapia del dolore</strong>. Le medicine forti contro il dolore (oppioidi) si possono prescrivere con la ricetta normale.</p>
   </details>`;
 
 const screens = {
@@ -128,7 +128,7 @@ const screens = {
         <h1>${late ? 'Troppo tempo: sollecita oggi' : 'La richiesta è partita'}</h1>
         <div class="notice ${late ? 'bad' : 'info'}">
           <p>Richiesta ${art('del', state.requestDate)}${esc(formatIt(state.requestDate))}: sono passati <strong>${days(waited)}</strong>.</p>
-          <p>Le cure palliative devono partire in pochi giorni. ${late ? 'Non aspettare oltre.' : `Se entro ${art('il', remindOn)}<strong>${esc(formatIt(remindOn))}</strong> nessuno si è fatto vivo, torna qui per sollecitare per iscritto.`}</p>
+          <p>La legge non fissa un numero di giorni, ma non serve aspettare a lungo. ${late ? 'Non aspettare oltre.' : `Se entro ${art('il', remindOn)}<strong>${esc(formatIt(remindOn))}</strong> nessuno si è fatto vivo, torna qui per sollecitare per iscritto.`}</p>
         </div>
         <h2>Cosa fare</h2>
         <ol class="big-steps">
@@ -180,7 +180,7 @@ const screens = {
           const premise = [
             `è affetto/a da una patologia in fase avanzata, come da documentazione del medico curante${state.doctor ? ` (${doctorName(state.doctor)})` : ''}`,
             ...(isReminder ? [`in data ${formatIt(state.requestDate)} è stata inoltrata richiesta di attivazione delle cure palliative, senza riscontro alla data odierna`] : []),
-            'la L. 38/2010 garantisce l\'accesso alle cure palliative e alla terapia del dolore, senza oneri a carico dell\'assistito',
+            'la L. 38/2010 garantisce l\'accesso alle cure palliative e alla terapia del dolore all\'interno dei livelli essenziali di assistenza',
           ];
           const text = genericRequest({
             to: `${intestazioneAzienda(a)}\nRete locale di cure palliative\ne p.c. Ufficio Relazioni con il Pubblico`,
