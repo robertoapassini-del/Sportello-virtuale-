@@ -717,6 +717,9 @@ async function runCase(page, c) {
   const queue = [...cases];
   await Promise.all(Array.from({ length: WORKERS }, async () => {
     const ctx = await browser.newContext({ ...devices['iPhone SE'], ...(process.env.TZID ? { timezoneId: process.env.TZID } : {}) });
+    // L'orologio del browser resta fermo all'istante in cui il test ha calcolato «oggi» (now): il 25/10/2026 il giro
+    // con il fuso di New York è passato dalla mezzanotte a metà prova, e il sito contava i giorni da una data diversa.
+    await ctx.clock.setFixedTime(now);
     // Le province provate sono quelle siciliane: la regione è già scelta, così si va dritti alla provincia.
     // Per i casi di un'altra regione (invalidità in Umbria) la regione è in sessionStorage («test-regione»).
     await ctx.addInitScript(() => { try { localStorage.setItem('gs-regione', sessionStorage.getItem('test-regione') || 'sicilia'); } catch { /* niente */ } });

@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 25/10/2026 — Combinazioni: l'orologio del browser fermo
+- Errore trovato dalla CI: il giro `combinazioni-ny` della PR #76 è partito alle 23:51 di New York ed è passato dalla mezzanotte a metà prova. Il test calcola «oggi» una volta sola, il sito leggeva l'ora vera: 41 casi al limite di un giorno («richiesta da 29 giorni», «data nel futuro») davano un risultato diverso. Non era un errore del sito.
+- `tests/combinazioni.cjs`: l'orologio di ogni contesto del browser resta fermo all'istante del calcolo (`clock.setFixedTime`). Provato con «oggi» spostato a ieri: con la correzione 6666 casi senza problemi.
+
 ## 25/10/2026 — Pagine nuove come il resto del sito
 - Errore trovato dal proprietario: le pagine nuove mostravano emoji colorate al posto delle icone del sito. 🚑 (pronto soccorso, area «Urgenze»), 🌙 (guardia medica) e 🤒 (certificato di malattia) non erano in `js/icons.js`; nemmeno 📊 in `privacy.html`. Aggiunte in `tools/icone.mjs` (Lucide 1.59.0: ambulance, moon, thermometer, chart-column) e rifatto `js/icons.js`. Nuovo controllo in `tests/coerenza.test.mjs`: ogni emoji del sito deve avere la sua icona (provato: senza le icone nuove fallisce).
 - `pronto-soccorso/i-codici/`: «Sono tempi massimi. Se arriva una persona più grave, passa prima di te» si contraddiceva. Ora: i tempi non sono una garanzia, sono gli obiettivi con un afflusso normale (come dice la delibera del Piemonte); nei giorni pieni si aspetta di più, e chi è più grave passa sempre prima.
