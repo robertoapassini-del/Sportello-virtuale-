@@ -24,7 +24,7 @@ const howItWorks = () => `
   <ol class="big-steps">
     <li><strong>Non si può fare ricorso all'INPS</strong> con una lettera: si va dal giudice. Serve un <strong>avvocato</strong>.</li>
     <li>L'avvocato chiede al Tribunale una <strong>nuova visita</strong> con un medico del giudice (si chiama «accertamento tecnico preventivo», ATP).</li>
-    <li>Se il medico del giudice ti dà ragione, l'INPS deve adeguarsi, con gli arretrati.</li>
+    <li>Se il medico del giudice ti dà ragione e nessuno contesta, il giudice lo conferma. Poi l'INPS controlla gli altri requisiti (per esempio il reddito) e paga, con gli arretrati. Se invece una delle due parti contesta, la causa continua.</li>
     <li><strong>Se il reddito della famiglia è basso</strong> (sotto ${formatEuro(rules.gratuito_patrocinio_income)} l'anno), l'avvocato lo paga lo Stato: chiedi il «gratuito patrocinio».</li>
     <li><strong>Se perdi la causa</strong> e il reddito della famiglia è sotto ${formatEuro(rules.no_legal_costs_income)} l'anno, <strong>non paghi le spese legali</strong> dell'INPS. Basta una dichiarazione dentro il ricorso: la prepara l'avvocato.</li>
   </ol>
@@ -38,7 +38,7 @@ const howItWorks = () => `
 const aggravamento = `
   <details class="card">
     <summary>Se la salute è peggiorata: la domanda di aggravamento</summary>
-    <p>Non è un ricorso: è una <strong>nuova domanda</strong>, con un nuovo certificato del medico, che dice che la situazione è peggiorata. Si può fare in qualsiasi momento, ma <strong>non mentre c'è un ricorso in corso</strong>. Un patronato la fa gratis.</p>
+    <p>Non è un ricorso: è una <strong>nuova domanda</strong>, con un nuovo certificato del medico, che dice che la situazione è peggiorata. Si può fare in qualsiasi momento, <strong>anche mentre c'è un ricorso in corso</strong>. Chiedi al patronato se ti conviene: la fa gratis.</p>
   </details>`;
 
 const screens = {
@@ -68,8 +68,8 @@ const screens = {
   date: () => ({
     html: `
       <h1>📅 Che giorno hai ricevuto il verbale?</h1>
-      <p>Il giorno in cui è arrivata la raccomandata, l'email o la PEC. Se non lo ricordi, guarda il timbro sulla busta o la data dell'email. In mancanza, usa la data scritta sul verbale: è più prudente.</p>
-      ${dateForm({ id: 'v-form', name: 'verbaleDate', label: 'Giorno in cui l\'hai ricevuto', value: state.verbaleDate, button: '✔️ Controlla', max: todayISO() })}`,
+      <p>La legge conta i ${rules.appeal_months} mesi dal giorno in cui il verbale ti è arrivato (raccomandata, email o PEC). L'INPS invece scrive che contano dalla data del verbale. <strong>Per stare tranquillo, usa la data scritta sul verbale</strong>: viene prima, quindi la scadenza è più prudente.</p>
+      ${dateForm({ id: 'v-form', name: 'verbaleDate', label: 'Data scritta sul verbale (o giorno in cui l\'hai ricevuto)', value: state.verbaleDate, button: '✔️ Controlla', max: todayISO() })}`,
     mount() {
       document.getElementById('v-form').addEventListener('submit', (e) => {
         e.preventDefault();

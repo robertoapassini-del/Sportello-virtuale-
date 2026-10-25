@@ -1,8 +1,8 @@
 // Modulo 4 — ausili e protesi: «la carrozzina non arriva».
 // Prima la risposta: la pagina mostra subito la risposta scritta; il conto e il sollecito partono dal pulsante.
 // Regola: il tempo per autorizzare lo fissa la Regione (DPCM 12/01/2017, art. 17-19 e allegato 12). Il conto si fa solo per la Sicilia
-// (si arriva scegliendo una provincia siciliana): 20 giorni, poi silenzio-assenso (la lettera non lo cita finché
-// il D.A. 20/12/2011 non è letto: chiede solo l'autorizzazione senza altro ritardo). Non chiediamo mai la malattia.
+// (si arriva scegliendo una provincia siciliana): 20 giorni. Il silenzio-assenso non si scrive finché il
+// D.A. 20/12/2011 non è letto: pagine e lettera chiedono solo l'autorizzazione senza altro ritardo. Non chiediamo mai la malattia.
 import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween, art } from './engine.js';
 import { ausiliReminder, mailtoHref, conZona } from './letters.js';
 import { noPecBox,
@@ -39,8 +39,8 @@ const steps = () => `
   <ol class="big-steps">
     <li><strong>La prescrizione.</strong> La scrive ${esc(rules.who_prescribes)}. Di solito serve avere l'invalidità riconosciuta, o la domanda già fatta. Per pannoloni e traverse le regole di prescrizione cambiano da regione a regione: chiedi al distretto chi può prescriverli.</li>
     <li><strong>La domanda all'${aslLabel()}.</strong> Porti la prescrizione all'ufficio «assistenza protesica» del tuo distretto. Chiedi una ricevuta con la data.</li>
-    <li><strong>L'autorizzazione.</strong> L'${aslLabel()} deve rispondere entro <strong>${rules.authorization_days} giorni</strong>. Se non risponde, vale come un sì.</li>
-    <li><strong>La consegna.</strong> Un fornitore convenzionato ti porta l'ausilio. Poi il medico lo controlla (si chiama collaudo).</li>
+    <li><strong>L'autorizzazione.</strong> L'${aslLabel()} deve rispondere entro <strong>${rules.authorization_days} giorni</strong>. Se non risponde, manda un sollecito.</li>
+    <li><strong>La consegna.</strong> Un fornitore convenzionato ti porta l'ausilio. Poi vai dal medico che lo controlla (si chiama collaudo), entro ${rules.collaudo_days} giorni.</li>
   </ol>`;
 
 // Uffici protesi e ausili della provincia, con indirizzo e orari.
@@ -118,10 +118,10 @@ const screens = {
     return {
       html: `
         <div class="hero" aria-hidden="true">⚠️</div>
-        <h1>I ${rules.authorization_days} giorni sono passati: l'autorizzazione vale lo stesso</h1>
+        <h1>I ${rules.authorization_days} giorni sono passati: manda il sollecito</h1>
         <div class="notice bad">
           <p>L'${aslLabel()} doveva rispondere entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>. ${d.daysLate === 1 ? 'È passato' : 'Sono passati'} <strong>${days(d.daysLate)} in più</strong>.</p>
-          <p>Per la legge, se l'${aslLabel()} non risponde in tempo <strong>l'autorizzazione si considera data</strong>. Ora deve partire la consegna.</p>
+          <p>Chiedi l'autorizzazione e la consegna senza altro ritardo.</p>
         </div>
         <h2>Cosa fare, in ordine</h2>
         <ol class="big-steps">
@@ -149,7 +149,7 @@ const screens = {
           <li><strong>Chiama l'ufficio protesica dell'${aslLabel()}</strong> e chiedi quanti giorni ha il fornitore per consegnare.</li>
           <li><strong>Se il tempo è passato:</strong> reclamo scritto ${complaintTo(a)}. Un patronato può aiutarti.</li>
         </ol>
-        <div class="notice info"><p>Quando l'ausilio arriva, il medico deve controllarlo (collaudo) entro ${rules.collaudo_days} giorni. Se non va bene, può essere sostituito.</p></div>
+        <div class="notice info"><p>Quando l'ausilio arriva, entro ${rules.collaudo_days} giorni devi andare al collaudo dal medico che l'ha prescritto (o chiedere la visita a casa con la richiesta del medico di famiglia). Se non ci vai senza un motivo, l'${aslLabel()} può farti pagare l'ausilio. Se l'ausilio non va bene, può essere sostituito.</p></div>
         ${protesica(a) || aspCalls(a)}
         ${disclaimer(rules.last_verified)}
         ${restartBtn()}`,

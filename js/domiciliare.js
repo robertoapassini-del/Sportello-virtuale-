@@ -34,7 +34,7 @@ const steps = () => `
     <li><strong>Parla con il medico di famiglia.</strong> È lui che compila la richiesta di assistenza domiciliare e la manda al distretto. Se la persona è in ospedale, chiedi al reparto la <strong>«dimissione protetta»</strong>: la richiesta parte dall'ospedale prima che torni a casa.</li>
     <li><strong>La richiesta arriva al PUA</strong> (Punto unico di accesso) del distretto dell'${aslLabel()}. Chiedi al medico una copia o il numero della richiesta, con la data.</li>
     <li><strong>Un'équipe viene a casa</strong> per la valutazione (in molte regioni si chiama UVM) e scrive il piano: quante volte a settimana, quali figure (infermiere, fisioterapista, medico, operatore).</li>
-    <li><strong>Iniziano le visite a casa.</strong> Le cure sanitarie sono <strong>gratuite</strong>; per l'aiuto dell'operatore (OSS), dopo i primi 30 giorni dall'uscita dall'ospedale, può esserci una parte da pagare: chiedi al distretto.</li>
+    <li><strong>Iniziano le visite a casa.</strong> Le cure sanitarie sono <strong>gratuite</strong>; l'aiuto dell'operatore (OSS) è gratis per i primi 30 giorni dopo una dimissione protetta dall'ospedale; dopo, e negli altri casi, può esserci una parte da pagare: chiedi al distretto.</li>
   </ol>
   <details class="card">
     <summary>Cosa comprende e cosa no</summary>
@@ -69,7 +69,7 @@ const screens = {
       <details class="card">
         <summary>🧪 Il prelievo del sangue a casa</summary>
         <ul class="clean">
-          <li><strong>Con l'${aslLabel()}:</strong> il medico di famiglia scrive sulla ricetta che la persona <strong>non può camminare e non può essere trasportata</strong>. Poi chiedi al medico o al PUA del distretto come mandarla.${inSicilia() ? ' In Sicilia, a Enna, per esempio, dal 2026 lo fa la Casa della Comunità.' : ''}</li>
+          <li><strong>Con l'${aslLabel()}:</strong> chiedi al medico di famiglia o al PUA del distretto come avere il prelievo a casa: cambia da una zona all'altra.${inSicilia() ? ' In Sicilia, a Enna, dal 2026 lo fa la Casa della Comunità: il medico scrive sulla ricetta che la persona <strong>non può camminare e non può essere trasportata</strong>.' : ''}</li>
           <li><strong>Da privato:</strong> con la ricetta, chiama un laboratorio (meglio se convenzionato con l'${aslLabel()}) e chiedi se fa prelievi a casa. Di solito si paga a parte la venuta a casa, anche se sei esente dal ticket. Chiedi il prezzo prima.</li>
         </ul>
       </details>
@@ -79,15 +79,16 @@ const screens = {
         <ul class="clean">
           <li><strong>Controlla che sia davvero infermiere:</strong> deve essere iscritto all'albo. Lo puoi vedere su internet: scegli la provincia e scrivi il nome. <a href="https://www.fnopi.it/gli-ordini-provinciali/ricerca-albo/" target="_blank" rel="noopener">💻 Cerca nell'albo degli infermieri (FNOPI)</a></li>
           <li><strong>Chi fa cosa:</strong> l'<strong>infermiere</strong> fa punture, flebo, medicazioni e catetere. L'<strong>OSS</strong> (operatore socio-sanitario) aiuta a lavarsi, vestirsi e muoversi, ma non fa le cure. La <strong>badante</strong> fa compagnia e aiuta in casa.</li>
-          <li><strong>Puoi scaricare dalle tasse il 19%</strong> di quello che spendi per l'infermiere, anche senza ricetta. Servono due cose: la <strong>fattura</strong>, con scritto «infermiere» e cosa ha fatto, e il <strong>pagamento con carta, bancomat o bonifico</strong>. Se paghi in contanti, non puoi scaricarlo.</li>
-          <li>Il 19% si calcola solo sulla parte che <strong>supera 129,11 euro</strong>. Questi 129,11 euro si tolgono una volta sola all'anno, sommando tutte le spese mediche della famiglia fiscale: per esempio, se in un anno spendi 1.129,11 euro, scarichi il 19% di 1.000 euro, cioè 190 euro.</li>
+          <li><strong>Puoi scaricare dalle tasse il 19%</strong> di quello che spendi per l'infermiere, anche senza ricetta. Servono due cose: la <strong>fattura</strong>, con scritto «infermiere» e cosa ha fatto, e il <strong>pagamento con carta, bancomat o bonifico</strong>. Se paghi in contanti, il 19% non spetta.</li>
+          <li>Il 19% si calcola solo sulla parte che <strong>supera 129,11 euro</strong>. Questi 129,11 euro si tolgono una volta sola all'anno, sul totale delle spese mediche: per esempio, se in un anno spendi 1.129,11 euro, scarichi il 19% di 1.000 euro, cioè 190 euro.</li>
+          <li><strong>Se la persona ha una disabilità riconosciuta</strong>, la regola è un'altra: la spesa per l'infermiere si toglie tutta dal reddito, anche se paghi in contanti. Chiedi a un CAF.</li>
           <li>Anche la badante si può scaricare, per chi non è autosufficiente e con alcuni limiti. Chiedi a un CAF o a un patronato.</li>
         </ul>
       </details>
 
       <details class="card">
         <summary>🏥 Prima di uscire dall'ospedale</summary>
-        <p>Se la persona torna a casa e non è autonoma, chiedi al reparto la <strong>dimissione protetta</strong>: l'ospedale avvisa il distretto prima dell'uscita, così l'aiuto a casa parte subito. Prima di uscire chiedi:</p>
+        <p>Se la persona torna a casa e non è autonoma, chiedi al reparto la <strong>dimissione protetta</strong>: l'ospedale avvisa il distretto prima dell'uscita, così l'aiuto a casa può partire prima. Prima di uscire chiedi:</p>
         <ul class="clean">
           <li>la <strong>lettera di dimissione</strong>, con le medicine scritte bene: nome, quanto e a che ora;</li>
           <li>le <strong>prime medicine</strong> dalla farmacia dell'ospedale;</li>
@@ -111,10 +112,10 @@ const screens = {
         <summary>🚚 Il trasporto per la dialisi</summary>
         <ul class="clean">
           ${regioneLink('dialisi') && !regioneNonPronta() ? `<li>${esc(inRegione().replace(/^./, (c) => c.toUpperCase()))} il trasporto per la dialisi lo <strong>paga l'${aslLabel()}</strong>. Lo fanno associazioni e ditte iscritte in un elenco della Regione.</li>
-          <li>Se vai con la tua auto, l'${aslLabel()} ti <strong>rimborsa i chilometri</strong> da casa al centro dialisi.</li>`
+          <li>Se vai con la tua auto, chiedi al centro dialisi se l'${aslLabel()} rimborsa il viaggio.</li>`
     : `<li>Chi paga il trasporto per la dialisi, e se rimborsa i chilometri con la tua auto, lo decide la Regione: chiedi al centro dialisi o al distretto dell'${aslLabel()}.</li>`}
           <li>Serve un certificato del medico di famiglia. Chiedi al centro dialisi come fare la domanda.</li>
-          <li>Per le altre visite, il trasporto in ambulanza è gratis solo nelle emergenze (112). Per una visita programmata, chiedi prima al distretto chi paga.</li>
+          <li>Nelle emergenze l'ambulanza (112) è gratis. Per una visita programmata, chiedi prima al distretto se il trasporto lo paga l'${aslLabel()}.</li>
         </ul>
         ${regioneLink('dialisi') && !regioneNonPronta() ? `<p><a href="${esc(regioneLink('dialisi'))}" target="_blank" rel="noopener">💻 Elenco della Regione per il trasporto dei dializzati</a></p>` : ''}
       </details>

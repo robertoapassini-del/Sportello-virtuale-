@@ -86,6 +86,7 @@ const screens = {
         </ol>
         ${scr ? officeBox(a, 'screening', '🎗️ Prenotare gli esami contro i tumori') : num ? callButton('Numero verde screening', num) : ''}
         ${later ? `<details class="card"><summary>Cosa arriverà più avanti</summary><ul class="icon-list">${later}</ul></details>` : ''}
+        ${r.screening.length || state.age >= 45 ? `<p class="muted">Alcune Regioni invitano agli esami contro i tumori anche altre età. Chiedi al numero dello screening.</p>` : ''}
         <div class="notice info"><p>Se hai una malattia cronica, sei incinta o lavori con persone fragili, alcuni vaccini sono gratis anche prima di queste età. Chiedi al medico.</p></div>
         ${disclaimer(rules.last_verified)}
         ${restartBtn()}`,

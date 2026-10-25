@@ -239,13 +239,19 @@ const screens = {
     const note = d.indicative ? '<p class="muted">Questa data è indicativa: per questo caso la legge non è precisa.</p>' : '';
     const legal = d.legal ? `<p class="muted">Regola: ${esc(d.legal)}.</p>` : '';
 
+    // Nuovo regime: i tempi si fermano se l'INPS chiede documenti; chi ha più di 70 anni e non è autosufficiente
+    // segue ancora la vecchia procedura (scheda INPS, fino al 31/12/2026).
+    const nr = rules.new_regime;
+    const avvisiNuovo = d.kind === 'conclusion' ? `<div class="notice info"><p>Se l'INPS ti chiede altri documenti o esami, questi tempi si fermano per ${nr.sospensione_giorni} giorni (su richiesta, altri ${nr.sospensione_giorni}).</p>
+      ${daysBetween(todayISO(), nr.eccezione_fino_al) >= 0 ? `<p>La persona ha più di ${nr.eccezione_eta_anni} anni e non è autosufficiente? Fino ${art('al', nr.eccezione_fino_al)}${esc(formatIt(nr.eccezione_fino_al))} per lei vale la vecchia procedura, anche in questa provincia: serve la domanda all'INPS entro ${rules.old_regime.domanda_window_days} giorni dal certificato. Chiedi a un patronato.</p>` : ''}</div>` : '';
+
     if (d.status !== 'passed') {
       return {
         html: `<div class="hero" aria-hidden="true">✅</div>
           <h1>Non è ancora tardi</h1>
           <div class="notice ok"><p>${whatFuture} entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>.</p>
           <p>Se non arriva niente, torna qui quel giorno.</p></div>
-          ${note}${legal}${patronato}${afterVerbale}${disclaimer(rules.last_verified)}${restartBtn()}`,
+          ${avvisiNuovo}${note}${legal}${patronato}${afterVerbale}${disclaimer(rules.last_verified)}${restartBtn()}`,
       };
     }
 
@@ -256,7 +262,7 @@ const screens = {
           <p>${what} entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>.</p>
           <p>${d.daysLate === 1 ? 'È passato' : 'Sono passati'} <strong>${days(d.daysLate)} in più</strong>.</p>
         </div>
-        ${note}${legal}
+        ${avvisiNuovo}${note}${legal}
         <h2>Cosa fare, in ordine</h2>
         <ol class="big-steps">
           <li><p><strong>Vai a un patronato.</strong> È gratis. Controlla la pratica e sollecita l'INPS per te.</p></li>
