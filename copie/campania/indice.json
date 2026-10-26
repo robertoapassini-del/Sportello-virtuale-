@@ -1,6 +1,6 @@
 {
  "regione": "campania",
- "aggiornato": "2026-10-26T09:45:01.419Z",
+ "aggiornato": "2026-10-26T15:00:22.583Z",
  "pagine": [
   {
    "asl": "avellino",
@@ -9,8 +9,8 @@
    "http": 200,
    "file": "avellino/50d19ec529c1.txt",
    "titolo": "ASL Avellino - Home",
-   "sha": "d792647a7f113b52f5266e15de15bf1aa13fd3d94db616ba14f336b95c595879",
-   "caratteri": 20546,
+   "sha": "5070676e2c66e5dc9aa6aa0e6fffd433fd8433997bf50140b5c5de6603d16f92",
+   "caratteri": 20982,
    "link_pdf": [
     {
      "url": "https://www.aslavellino.it/images/vz/PNES/20250930/Regolamento_Concessione_Patrocinio.pdf",
@@ -42,9 +42,9 @@
    "http": 200,
    "file": "avellino/c31ecd416c07.txt",
    "titolo": "ASL Avellino - Continuità assistenziale (ex guardia medica)",
-   "sha": "894b79d47b30df1d5aac5e0362d99890797738441cb116231455604d2c0a31f9",
-   "caratteri": 39822,
-   "cambiata": false
+   "sha": "4692670301f2036d80a6acc3e3c3f2dd5202048f0365f49fa6c72e907cc211fe",
+   "caratteri": 39858,
+   "cambiata": true
   },
   {
    "asl": "avellino",
@@ -409,9 +409,9 @@
    "certificato": "non valido",
    "file": "benevento/6c3c4b805852.txt",
    "titolo": "Home | ASL - Benevento",
-   "sha": "0580ecc08db488f81646801a6624e2eedaec1f67efab49533bd5609af99ab64e",
+   "sha": "5378744d2ef02dbed051b6f5f1280b6fa008985c7bc3fb0bf82712ada0c70409",
    "caratteri": 5076,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "benevento",
@@ -689,8 +689,8 @@
    "certificato": "non valido",
    "file": "caserta/e125f0b729f0.txt",
    "titolo": "Asl Caserta - Home Page - Asl Caserta",
-   "sha": "cce61f6bf2199cc1262397d4410ef5f9d4c5aea0e149aa45a836674f7118a052",
-   "caratteri": 22739,
+   "sha": "044459d745cf9cd865b5290a2fd6f5232662fc9fc5ab963f5958cddc491975fa",
+   "caratteri": 22744,
    "cambiata": true
   },
   {
@@ -741,7 +741,7 @@
    "certificato": "non valido",
    "file": "caserta/fa7a6264af83.txt",
    "titolo": "Telefono e Posta Elettronica - Asl Caserta",
-   "sha": "5d25b2b16382bba364ac63a0662555fe1f5d8f88fb2bb1362c80447c7d058356",
+   "sha": "739cd969325cdd252309a4a64616ad28a155231bea01fdfffaba5bbee6550e67",
    "caratteri": 72892,
    "link_pdf": [
     {
@@ -761,7 +761,7 @@
    "titolo": "Screening oncologici - Asl Caserta",
    "sha": "a9dceb2b24fd926e42413f6fe417153ee9470d58d0233e566d23e2cffc151d47",
    "caratteri": 16059,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "caserta",
@@ -813,8 +813,8 @@
    "certificato": "non valido",
    "file": "napoli/69d17eab3008.txt",
    "titolo": "Home - Portal Na 1",
-   "sha": "107c76029bffca81d6cc5dd13d3f7123b97f344cab16cafd9e5035ab5e6ffa60",
-   "caratteri": 13342,
+   "sha": "126ff2e9010246ec4ef3280ffcb1bb4bbb7ae25db105d93d67cdf7a56f2a119b",
+   "caratteri": 13384,
    "cambiata": true
   },
   {
@@ -825,9 +825,9 @@
    "certificato": "non valido",
    "file": "napoli/8897fa8d88e4.txt",
    "titolo": "Guardia Medica - Emergenza Territoriale - Portal Na 1",
-   "sha": "a23bf59db255a6f0d90fb968fd2edeaf9ce2f31dc23d77725054203e5e418d58",
-   "caratteri": 7105,
-   "cambiata": false
+   "sha": "dae49e3c913b41d710731f461036494a84c3db8242339cbe8871f6247066b79b",
+   "caratteri": 7217,
+   "cambiata": true
   },
   {
    "asl": "napoli",
@@ -837,8 +837,8 @@
    "certificato": "non valido",
    "file": "napoli/2f2947c35b17.txt",
    "titolo": "Porta Unica di Accesso (PUA) – ASL Napoli 2 Nord",
-   "sha": "d736cf747b7e0986e06246e7cfb3b61f04cccbdc62e6a4510d2f4d22444a8db9",
-   "caratteri": 10961,
+   "sha": "842d19108e226de65737935e9fdef4746df4dd26092882bf12f10c4ed348c641",
+   "caratteri": 10958,
    "cambiata": true
   },
   {
@@ -849,8 +849,8 @@
    "certificato": "non valido",
    "file": "napoli/7623db2690d0.txt",
    "titolo": "Numero verde prenotazioni visite – ASL Napoli 2 Nord",
-   "sha": "e47be24fe0ff29d555c67e24f7c9cea4806d76642d7698a2150e58cd038ca97d",
-   "caratteri": 7809,
+   "sha": "bd88e7cbe6e3b4187133c97e48e3cd6cfb7d493d538a08cb376d93adb7b01901",
+   "caratteri": 7808,
    "cambiata": true
   },
   {
@@ -872,9 +872,9 @@
    "certificato": "non valido",
    "file": "napoli/da92d8c627d8.txt",
    "titolo": "URP - Portal Na 1",
-   "sha": "2f1bfeb44c5fc996f294a558cde0923ca07de9ca6fcbabcf360547e64ad38196",
-   "caratteri": 6991,
-   "cambiata": false
+   "sha": "2327afcedfe59991cde224ce482c0a3f6555ed068c14d72d51f6e81523cf0882",
+   "caratteri": 7103,
+   "cambiata": true
   },
   {
    "asl": "napoli",
@@ -884,8 +884,8 @@
    "certificato": "non valido",
    "file": "napoli/a8448bfc505e.txt",
    "titolo": "U.O.C. URP e Marketing Sanitario – ASL Napoli 2 Nord",
-   "sha": "2972b1af2d33f505e1b8fe085e6ac63931e337182b0e0767b7c7fd6296091d38",
-   "caratteri": 5915,
+   "sha": "422608b44048b5a1a2f3518096e9e76ecefd55055f02decce00da82b665ec66c",
+   "caratteri": 5912,
    "cambiata": true
   },
   {
@@ -908,9 +908,9 @@
    "certificato": "non valido",
    "file": "napoli/a4463ca8b10a.txt",
    "titolo": "Cure domiciliari e assistenza residenziale - Portal Na 1",
-   "sha": "b4ee344afff6e9aa497901a64e9b041d2bdd121cea8d060f42e96121f6be788b",
-   "caratteri": 9905,
-   "cambiata": false
+   "sha": "b49cdc6060306ff7ea8b8226099d61cef238576a1bbfdd286d2f542a0b2b0245",
+   "caratteri": 10017,
+   "cambiata": true
   },
   {
    "asl": "napoli",
@@ -931,9 +931,9 @@
    "certificato": "non valido",
    "file": "napoli/a6febd8ac1fa.txt",
    "titolo": "Screening Oncologici - Portal Na 1",
-   "sha": "49902a5e599933cffd59e905439aebd1f523d46ec3531645779e4d65bd10805c",
-   "caratteri": 7784,
-   "cambiata": false
+   "sha": "216d14f9ea1a41fb30df69d82bf4cf989f1cb4bca0c059f7b576fc2f6c697f85",
+   "caratteri": 7896,
+   "cambiata": true
   },
   {
    "asl": "napoli",
@@ -943,8 +943,8 @@
    "certificato": "non valido",
    "file": "napoli/1d583e81f431.txt",
    "titolo": "Screening Oncologici – ASL Napoli 2 Nord",
-   "sha": "1792bb0ea6e3b30ccd013b49a67aff9a3f5ac1c8579abe1c7aef1e52c2223567",
-   "caratteri": 32349,
+   "sha": "77f3016b793855d2f38765a3d5bad6b03c2cae1d44e9844fdd1cd7a76fd39dbf",
+   "caratteri": 32343,
    "link_pdf": [
     {
      "url": "https://www.aslnapoli2nord.it/images/screening/pieghevole_A4_albanese_campania.pdf",
@@ -1045,9 +1045,9 @@
    "certificato": "non valido",
    "file": "napoli/200134bedbe2.txt",
    "titolo": "Distretti - Portal Na 1",
-   "sha": "bc0d9e5710cd50a5ab34a305080ca0aab3c9a27f202c1c78738b4fc8af76b9d3",
-   "caratteri": 7308,
-   "cambiata": false
+   "sha": "cfbaad34f0bf28b07589b3dde9195a636b97c5a104cf07b02751d2490427f7fc",
+   "caratteri": 7420,
+   "cambiata": true
   },
   {
    "asl": "napoli",
@@ -1057,8 +1057,8 @@
    "certificato": "non valido",
    "file": "napoli/50dc9aeab0db.txt",
    "titolo": "Distretti – ASL Napoli 2 Nord",
-   "sha": "a5c6a190d617def3ca711dc51a29770f6cb61976ce75612d75aed2177a799816",
-   "caratteri": 6414,
+   "sha": "4b3a672e59c07fe67ead928fd84f11173fe3315b2cea910ab7fa5d91d8a171e9",
+   "caratteri": 6415,
    "cambiata": true
   },
   {
@@ -1149,9 +1149,9 @@
    "http": 200,
    "file": "salerno/dee155c4a938.txt",
    "titolo": "Home Page - ASL Salerno",
-   "sha": "18c012a266cc59b4049c5920be552d6dee02635f572c50c8cac80741cb9eb9b4",
-   "caratteri": 9456,
-   "cambiata": false
+   "sha": "a9da160a75a6ed51194532055bf8091591d58446c97a7e08bf50697db860c605",
+   "caratteri": 9372,
+   "cambiata": true
   },
   {
    "asl": "salerno",
@@ -1604,9 +1604,9 @@
    "certificato": "non valido",
    "file": "asl-caserta/395cd3bbb5ee.txt",
    "titolo": "Punti di Prenotazione Attivi - Asl Caserta",
-   "sha": "0e4feb57b84a27da7f2d4c478fb932db4a8027cd65a461b1e6235079bf771aa0",
-   "caratteri": 43597,
-   "cambiata": false
+   "sha": "9449b293ea6b5e077213f63b7078d8720bfa174aef376266e00bd9f497903740",
+   "caratteri": 43583,
+   "cambiata": true
   },
   {
    "asl": "asl-caserta",
@@ -1640,9 +1640,9 @@
    "certificato": "non valido",
    "file": "asl-napoli-1-centro/1cb2d9b7f573.txt",
    "titolo": "CUP - Portal Na 1",
-   "sha": "7abea5b3c384aa6f87d06dfe5126fc438afe5a015e42f097e68aabd2ab54e79e",
-   "caratteri": 7142,
-   "cambiata": false
+   "sha": "23e39d30a19a90f3b94b1e94a24457d183ae7fe8bf7598f73b64c70f2565c804",
+   "caratteri": 7254,
+   "cambiata": true
   },
   {
    "asl": "asl-napoli-1-centro",
@@ -1652,9 +1652,9 @@
    "certificato": "non valido",
    "file": "asl-napoli-1-centro/01d50f031682.txt",
    "titolo": "Come faccio per prenotare visite ed esami? - Portal Na 1",
-   "sha": "726ce5b6786d018c6f2389f31fd5c6b64e2090d39f6b1f50c8b635c888105c33",
-   "caratteri": 7226,
-   "cambiata": false
+   "sha": "46b998388cb0899bbb1d974c1afd56e2d571ef1a661c19872088d2f2cc00d9fa",
+   "caratteri": 7338,
+   "cambiata": true
   },
   {
    "asl": "asl-napoli-1-centro",
@@ -1664,9 +1664,9 @@
    "certificato": "non valido",
    "file": "asl-napoli-1-centro/c3624f13feba.txt",
    "titolo": "Come richiedere visite a domicilio? - Portal Na 1",
-   "sha": "cea1e25c04af8118bc3da9fbc394d5e0233980497dec961d6b953a16bc71a84e",
-   "caratteri": 6384,
-   "cambiata": false
+   "sha": "9892ede7619a3b14cc232dbe0baac3377b6dd5228cb7d30ab567ece3956aa05e",
+   "caratteri": 6496,
+   "cambiata": true
   },
   {
    "asl": "asl-napoli-2-nord",
@@ -1676,8 +1676,8 @@
    "certificato": "non valido",
    "file": "asl-napoli-2-nord/a1d7306b646d.txt",
    "titolo": "ASL Napoli 2 Nord",
-   "sha": "1134e23552114ee9caafde4c87baa5d8d53052ea433d49dbce7db8a21474837a",
-   "caratteri": 7272,
+   "sha": "71e556c6d799e54ead56bd14ad98203c6ca08caaeba23009bd92c08005784727",
+   "caratteri": 8437,
    "cambiata": true
   },
   {
@@ -1689,8 +1689,8 @@
    "certificato": "non valido",
    "file": "asl-napoli-2-nord/aaa502e24a40.txt",
    "titolo": "Azienda – ASL Napoli 2 Nord",
-   "sha": "eeb78c32b1efd461fa84023e90260adbcc098795aa02158ba2b0c97bd9c93b9a",
-   "caratteri": 13846,
+   "sha": "314be04b4ede6b6afb3faa793123fd7208a07ef285c747f7777707a71e62c2b7",
+   "caratteri": 13851,
    "cambiata": true
   },
   {
@@ -1702,8 +1702,8 @@
    "certificato": "non valido",
    "file": "asl-napoli-2-nord/a040d4f22b9d.txt",
    "titolo": "ASL Napoli 2 Nord",
-   "sha": "2e3d666eac77616810959fe51bc96ec95e913646cabe2515946681845e03ef68",
-   "caratteri": 7273,
+   "sha": "9c287ca3e6edc99399ad6703f45ebc31cefa90af393e2db0397a70e5e8145340",
+   "caratteri": 8435,
    "cambiata": true
   },
   {
