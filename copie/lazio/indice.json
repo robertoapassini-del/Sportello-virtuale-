@@ -1,6 +1,6 @@
 {
  "regione": "lazio",
- "aggiornato": "2026-10-26T03:03:05.128Z",
+ "aggiornato": "2026-10-26T10:04:23.840Z",
  "pagine": [
   {
    "asl": "frosinone",
@@ -27,9 +27,9 @@
    "http": 200,
    "file": "frosinone/1b6a08522663.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "25015c5b43a61366d98477466f983899fc94941dc880c12de5946d252a06aee3",
+   "sha": "ce21a63b1dc01e21429e11f4a4d7d3560e05c4c5a8985260c2c21f06b0be1818",
    "caratteri": 4170,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "frosinone",
@@ -392,9 +392,9 @@
    "http": 200,
    "file": "latina/1b6a08522663.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "25015c5b43a61366d98477466f983899fc94941dc880c12de5946d252a06aee3",
+   "sha": "ce21a63b1dc01e21429e11f4a4d7d3560e05c4c5a8985260c2c21f06b0be1818",
    "caratteri": 4170,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "latina",
@@ -404,9 +404,9 @@
    "finale": "https://salutelazio.it/it/servizi/guardia-medica",
    "file": "latina/a14f568f3b2f.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
+   "sha": "35d3aad05a7b0076371577c576aa4a5787bf713c630b0b4c273f9b2e68bbe902",
    "caratteri": 2358,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "latina",
@@ -1495,9 +1495,9 @@
    "http": 200,
    "file": "roma/1b6a08522663.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "25015c5b43a61366d98477466f983899fc94941dc880c12de5946d252a06aee3",
+   "sha": "ce21a63b1dc01e21429e11f4a4d7d3560e05c4c5a8985260c2c21f06b0be1818",
    "caratteri": 4170,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "roma",
@@ -1507,9 +1507,9 @@
    "finale": "https://salutelazio.it/it/servizi/guardia-medica",
    "file": "roma/a14f568f3b2f.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
+   "sha": "35d3aad05a7b0076371577c576aa4a5787bf713c630b0b4c273f9b2e68bbe902",
    "caratteri": 2358,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "roma",
@@ -1518,40 +1518,12 @@
    "http": 200,
    "file": "roma/e0d930024e6e.txt",
    "titolo": "Punto Unico di Accesso (PUA)",
-   "sha": "c5282c5d72ea767e149577c7f158a58c79ea3da91ffe5dcf69ea92e5ec9f7a98",
+   "sha": "db256e48a8a29bd66676b02ec6d271b6ea6338cf353a11d14c737b2fbeffa12e",
    "caratteri": 22475,
    "link_pdf": [
     {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_italiano_1_.pdf",
-     "testo": "মাসিক ভাতা"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_romeno.pdf",
-     "testo": "Indennità di frequenza mensile"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/39_40_DISABILITY-1.pdf",
-     "testo": "الاستفادة النقدیة الشھریة"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_-_Romeno.pdf",
-     "testo": "INDEMNIZAȚIA LUNARĂ DE FRECVENȚĂ"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_arabo.pdf",
-     "testo": "BUWANANG BENEPISYO PARA SA MAY KAPANSANAN"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_Legge_104_Ucraino.pdf",
-     "testo": "LEY 104/92"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_italiano.pdf",
-     "testo": "SUBSIDIO MENSUAL DE FRECUENCIA"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_-Spagnolo_CORRETTO.pdf",
-     "testo": "قانون 104 / 92"
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_arabo.pdf",
+     "testo": "ЗАКОН 104/92"
     },
     {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_Tagalog.pdf",
@@ -1562,16 +1534,44 @@
      "testo": "LEGGE 104/92"
     },
     {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_arabo.pdf",
-     "testo": "ЗАКОН 104/92"
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ-Bangla-Rev.pdf",
+     "testo": "LEGEA 104/92"
     },
     {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_Ucraino.pdf",
      "testo": "১০৪/৯২ আইন"
     },
     {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ-Bangla-Rev.pdf",
-     "testo": "LEGEA 104/92"
+     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_romeno.pdf",
+     "testo": "ЩОМІСЯЧНА ДОПОМОГА НА ШКОЛЯРІВ З ІНВАЛІДНІСТЮ"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/39_40_DISABILITY-1.pdf",
+     "testo": "الاستفادة النقدیة الشھریة"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_-_Romeno.pdf",
+     "testo": "INDEMNIZAȚIA LUNARĂ DE FRECVENȚĂ"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_italiano_1_.pdf",
+     "testo": "মাসিক ভাতা"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_italiano.pdf",
+     "testo": "SUBSIDIO MENSUAL DE FRECUENCIA"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_-Spagnolo_CORRETTO.pdf",
+     "testo": "قانون 104 / 92"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_arabo.pdf",
+     "testo": "BUWANANG BENEPISYO PARA SA MAY KAPANSANAN"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/47_24_Legge_104_Ucraino.pdf",
+     "testo": "LEY 104/92"
     }
    ],
    "cambiata": true
@@ -1877,7 +1877,7 @@
    "http": 200,
    "file": "roma/2b46e5d8fe38.txt",
    "titolo": "ASL Roma 2 - Punto Unico di Accesso - PUA",
-   "sha": "9dba3149ac62c759e4c9e7e1549ade23f93775abfdad7dcb6fab31bf7103ff5c",
+   "sha": "906fc3cd2ba7e8b8560587da2acd1ed9dcf206fab151e91980f83423f8a7790c",
    "caratteri": 11883,
    "email_nascoste": 11,
    "cambiata": true
@@ -1948,7 +1948,7 @@
    "http": 200,
    "file": "roma/3feb23bab29f.txt",
    "titolo": "ASL Roma 2 - UOSD Coordinamento Screening",
-   "sha": "82129dbedec7fdc3fd20b256dc97357113c8dc4d917f5fca68356a5e76b879cf",
+   "sha": "75ee7765faeb41ea048dca3b55770aa4b09ca9a6db56b853545d3552ffbc726b",
    "caratteri": 8743,
    "email_nascoste": 3,
    "cambiata": true
@@ -2040,7 +2040,7 @@
    "http": 200,
    "file": "roma/7e7cbafb32a1.txt",
    "titolo": "15.04.05 Liste di attesa",
-   "sha": "80add7dbd3e91db5ef0a737f67635d87513883863766eb0fc808fd037669056a",
+   "sha": "5c14b0fa90a544ef58b17df2d1cb8e027951324f9f9c40844137fe47e8546e20",
    "caratteri": 8672,
    "link_pdf": [
     {
@@ -2731,9 +2731,9 @@
    "http": 200,
    "file": "viterbo/1b6a08522663.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "25015c5b43a61366d98477466f983899fc94941dc880c12de5946d252a06aee3",
+   "sha": "ce21a63b1dc01e21429e11f4a4d7d3560e05c4c5a8985260c2c21f06b0be1818",
    "caratteri": 4170,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "viterbo",
@@ -2743,9 +2743,9 @@
    "finale": "https://salutelazio.it/it/servizi/guardia-medica",
    "file": "viterbo/a14f568f3b2f.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
+   "sha": "35d3aad05a7b0076371577c576aa4a5787bf713c630b0b4c273f9b2e68bbe902",
    "caratteri": 2358,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "viterbo",
@@ -3129,9 +3129,9 @@
    "http": 200,
    "file": "regole/652b256db893.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "f13c9eeb4924a61ff758ef61496e0efa7bdc4b642b901535cb8689a074e2f47e",
+   "sha": "6f6187cd7268d56075b198f3561020d42f09aa3d6b8aeb9c8051ba6b63732997",
    "caratteri": 4010,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "inps-lazio",
@@ -3217,9 +3217,9 @@
    "http": 200,
    "file": "regione-lazio/1046951fd7e8.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "1bce8ebe3b8686ea81f43bdfe2f8368c4f413f3887be9bbead104452d34aa979",
+   "sha": "02d38f89cd647027e85a881251f40376d3cb428c2798d2e48d8debc95797e93e",
    "caratteri": 2796,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "regione-lazio",
@@ -3250,9 +3250,9 @@
    "http": 200,
    "file": "regione-lazio/c3145a208b2c.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "48199ce6b951501c02e991b940f8e9adec94561d534835ac5f18a86bd84cca38",
+   "sha": "4a15186e6901930c738ce3a6727f617316791c9f8343ddacbd4f7120b1c73453",
    "caratteri": 2103,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "regione-lazio",
@@ -3403,7 +3403,7 @@
    "http": 200,
    "file": "asl-roma2/2e0f163ef6a3.txt",
    "titolo": "ASL Roma 2 - Guardia Medica",
-   "sha": "156edfbf9057d7e0a6a4fa52bbe94dc5d16e058c05919d555e6f9edea5ece739",
+   "sha": "682e7359654d591bad7f6e93e4caaf9ed3e74fc2b087f21e27b4c58b9d668bb6",
    "caratteri": 8091,
    "cambiata": true
   },

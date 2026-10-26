@@ -1,6 +1,6 @@
 {
  "regione": "basilicata",
- "aggiornato": "2026-10-26T02:36:45.432Z",
+ "aggiornato": "2026-10-26T09:37:03.865Z",
  "pagine": [
   {
    "asl": "matera",
@@ -9,9 +9,9 @@
    "http": 200,
    "file": "matera/0293f11dd9e7.txt",
    "titolo": "ASM Matera",
-   "sha": "617a43bab5661db6dc7f6af1a8fcb32ce3c82e6d55df876fbb2447de511a54c5",
-   "caratteri": 8161,
-   "cambiata": false
+   "sha": "d34261f096cc6e82cdbf18afd28640c4f0683da28ed61aaef6966d5d4f3002b5",
+   "caratteri": 8171,
+   "cambiata": true
   },
   {
    "asl": "matera",
@@ -197,9 +197,9 @@
    "http": 200,
    "file": "potenza/28b106b78182.txt",
    "titolo": "ASP Basilicata",
-   "sha": "0ad814e72e35d60e89086faaadedd49890659d38a5e63572a0172e8d931a5ea8",
+   "sha": "a331e3d7f1aefa0cd7bf6298cd1d86f629643c098c3a5eef13b88d61150e178c",
    "caratteri": 5195,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "potenza",
@@ -266,9 +266,9 @@
    "http": 200,
    "file": "potenza/5dbc77a23557.txt",
    "titolo": "Centro Unico di Prenotazione | Centro Servizi Regione Basilicata - Regione Basilicata",
-   "sha": "e8962956eb60c71e0891b6afb950607f031c851c565d6e3cabfa2222eda1778c",
-   "caratteri": 9015,
-   "cambiata": false
+   "sha": "058b6ee2e8333c3edad01353345a1b893543a3aba4978ba80aa35570683d6756",
+   "caratteri": 9035,
+   "cambiata": true
   },
   {
    "asl": "potenza",
@@ -388,9 +388,9 @@
    "http": 200,
    "file": "potenza/772f6c77a4a7.txt",
    "titolo": "Sanità digitale, nuovi servizi online - Regione Basilicata",
-   "sha": "c7adc6f42b30c6375124debee108128de880fc658b23c82a3313edbe2c27e088",
-   "caratteri": 11557,
-   "cambiata": false
+   "sha": "2d9337165dc872924198ed25cbdd4f8ce93b401ccaed207344cd3417416c9722",
+   "caratteri": 11535,
+   "cambiata": true
   },
   {
    "asl": "potenza",
@@ -437,7 +437,7 @@
    "controllata": "2026-10-26",
    "da_pagina": "https://www.aspbasilicata.it/come-fare-per/scelta-e-revoca-del-medico-di-famiglia-e-del-pediatra/",
    "http": 0,
-   "errore": "curl: (28) Connection timed out after 60002 milliseconds"
+   "errore": "curl: (28) Connection timed out after 60001 milliseconds"
   },
   {
    "asl": "potenza",
@@ -459,9 +459,9 @@
    "http": 200,
    "file": "regole/3961077a0e4e.txt",
    "titolo": "Fascicolo Sanitario Elettronico 2.0 - Regione Basilicata",
-   "sha": "38d083fbaff354a7db4c59e3460ce6bb4de899076ee764eef24664b5c2e41701",
-   "caratteri": 10094,
-   "cambiata": false
+   "sha": "7a44c1e91485bd7340ee277a573926854f92671b0cb8e50f75188af3852ab6a2",
+   "caratteri": 10072,
+   "cambiata": true
   },
   {
    "asl": "inps-basilicata",
@@ -525,9 +525,9 @@
    "http": 200,
    "file": "regione-basilicata/2f606e3336a5.txt",
    "titolo": "Fanelli: “CUP, attiva prenotazione online delle prestazioni\" - Regione Basilicata",
-   "sha": "2dce9487854a86448f53fe872731c867fc66cd203d78c10991e2aa4afb1cd51c",
-   "caratteri": 12178,
-   "cambiata": false
+   "sha": "0b55201470e89c76e8ed966ebef29d3214b367a840f06dd652f0ccb7ef329865",
+   "caratteri": 12156,
+   "cambiata": true
   },
   {
    "asl": "regione-basilicata",
@@ -537,8 +537,8 @@
    "finale": "https://www.regione.basilicata.it/privacy/",
    "file": "regione-basilicata/8f50bf0e199f.txt",
    "titolo": "Trattamento dati personali e privacy - Regione Basilicata",
-   "sha": "b1a2e868f1a20232c12feaf3a7976a2340c31aac51a956a77f027fc0b5fcfb77",
-   "caratteri": 16244,
+   "sha": "570bd8df1685c7513f1366fe41055f92983030ebe28d607ebb70e6e128b28e66",
+   "caratteri": 16235,
    "link_pdf": [
     {
      "url": "https://www.regione.basilicata.it/wp-content/uploads/2024/12/Privacy-Atto-designazione-responsabile-protezione-dati.pdf",
@@ -593,7 +593,7 @@
      "testo": "Sintesi informazioni sulla contitolarità - Lotto 2"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "regione-basilicata",
@@ -603,9 +603,9 @@
    "finale": "https://www.regione.basilicata.it/?temi-spp=servizi-online",
    "file": "regione-basilicata/24e95f5e1ed6.txt",
    "titolo": "Servizi online - Regione Basilicata",
-   "sha": "9834820cbcebf92edcfc35e32283841dbc1971d0c8b34995a0c05662c0f2287e",
-   "caratteri": 8997,
-   "cambiata": false
+   "sha": "0d54acb37b3d147a129b47fb428c9aece0417e6d4f141457d84dedc22fadaff5",
+   "caratteri": 8982,
+   "cambiata": true
   },
   {
    "asl": "regione-basilicata",

@@ -1,6 +1,6 @@
 {
  "regione": "nazionali",
- "aggiornato": "2026-10-26T04:41:41.122Z",
+ "aggiornato": "2026-10-26T11:49:29.699Z",
  "pagine": [
   {
    "asl": "urgenze",
@@ -59,7 +59,7 @@
      "testo": "Dalla parte dei bambini - Dal bisogno alla risposta"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ascolto",
@@ -83,24 +83,22 @@
    "asl": "ascolto",
    "url": "https://www.iss.it/numeri-verdi",
    "controllata": "2026-10-26",
-   "browser": true,
    "http": 200,
    "file": "ascolto/c5453074c7aa.txt",
-   "titolo": "Request Rejected",
-   "sha": "dcf8971f147489dd0e65dfa7f53633375115f4d7f3bf39daf431b82d91438b81",
-   "caratteri": 142,
+   "titolo": "Numeri Verdi - ISS",
+   "sha": "2d501180df2cb6ae1346e00349686e5c025648d4520ac94db1ae53954e2368aa",
+   "caratteri": 14269,
    "cambiata": true
   },
   {
    "asl": "ascolto",
    "url": "https://www.iss.it/numeri-verdi/-/asset_publisher/LXvuDqwiaG9G/content/id/3858513",
    "controllata": "2026-10-26",
-   "browser": true,
    "http": 200,
    "file": "ascolto/8f7c4b12a9cb.txt",
-   "titolo": "Request Rejected",
-   "sha": "a83cdb2fcc808dd503599809f956abc7e5f1c390d2d2abc350f930740a013dd5",
-   "caratteri": 142,
+   "titolo": "Telefono Verde contro il Fumo - ISS",
+   "sha": "e2a7726715cbba7a14fe58df3ee50f66de3576a93a1229f931a6d57f095c6721",
+   "caratteri": 8063,
    "cambiata": true
   },
   {
@@ -111,9 +109,9 @@
    "finale": "https://www.uniticontrolaids.it/",
    "file": "ascolto/8e5b59246f4d.txt",
    "titolo": "Uniti contro l'AIDS",
-   "sha": "562236225ddd4194f88805918f57e9f8bfc0396b9882eff8b3e1dba324a5edef",
-   "caratteri": 55075,
-   "cambiata": false
+   "sha": "d0cfc74354e9625da32f9b0e5687566227e31f0b068175b9a9465a378cdb6f74",
+   "caratteri": 55019,
+   "cambiata": true
   },
   {
    "asl": "ascolto",
@@ -560,9 +558,9 @@
    "http": 200,
    "file": "regole-contrassegno-disabili/206ded71e91b.txt",
    "titolo": "Polizia Municipale - Comune di Palermo",
-   "sha": "ef79b8181f0617e0746c46c8b6fabaffe5fb5a0d4b6cb645fdea37c407a468c6",
-   "caratteri": 1872,
-   "cambiata": false
+   "sha": "570561959e2cc5c3bb10857f1a966ffa2212553b49bb8a66d1f6116ca4826fe8",
+   "caratteri": 4950,
+   "cambiata": true
   },
   {
    "asl": "regole-cure-fuori-regione",
@@ -718,9 +716,9 @@
    "http": 200,
    "file": "regole-domiciliare/a7b322bffc9b.txt",
    "titolo": "Ricerca Albo | Iscrizione all’albo di un professionista FNOPI",
-   "sha": "e890be1533711edbba87bfdbdcdc8ef484ae1206299f1cf1e3c2c00721334a03",
-   "caratteri": 11405,
-   "cambiata": false
+   "sha": "a722d1ab72bd629c88446b481f905d3ea5caa049c248374aecece006eecdb2f9",
+   "caratteri": 11074,
+   "cambiata": true
   },
   {
    "asl": "regole-domiciliare",
@@ -883,7 +881,7 @@
    "caratteri": 15273,
    "link_pdf": [
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x58689",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x96941",
      "testo": "Modulo per AUTOCERTIFICAZIONE"
     }
    ],
@@ -925,11 +923,11 @@
   },
   {
    "asl": "regole-esenzione",
-   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x58689",
+   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x96941",
    "controllata": "2026-10-26",
    "da_pagina": "https://www.aslcittaditorino.it/prestazioni/esenzione-ticket-per-reddito/",
    "http": 200,
-   "file": "regole-esenzione/be32ff160f52.txt",
+   "file": "regole-esenzione/a2640ec25e37.txt",
    "titolo": "Autocertificazione di esenzione",
    "sha": "0ec5d984b6bd5ef03f12e32ef41b78dfdf250def32f239cb24d846beeee617d9",
    "caratteri": 10878,
@@ -1603,30 +1601,8 @@
    "asl": "regole-piano",
    "url": "https://www.aifa.gov.it/note-aifa",
    "controllata": "2026-10-26",
-   "http": 200,
-   "file": "regole-piano/0f06e59a557d.txt",
-   "titolo": "Note AIFA | Agenzia Italiana del Farmaco",
-   "sha": "91a6e9f1bcfbcd50933322e0c81c13916f2d6072e815d750d0eea8c60beddc32",
-   "caratteri": 13892,
-   "link_pdf": [
-    {
-     "url": "https://www.aifa.gov.it/documents/20142/3104101/PT_eritropoietine_ex_nota_12.pdf",
-     "testo": "Piano terapeutico per la prescrizione di eritropoietine (ex Nota 12) [0.51 Mb] [PDF] >"
-    },
-    {
-     "url": "https://www.aifa.gov.it/documents/20142/3104101/PT_fattori_di_crescita_granulocitari_ex_note_30_30bis.pdf",
-     "testo": "Piano terapeutico per prescrizione di Fattori di Crescita Granulocitari (ex Nota 30 e 30 bis) [0.17 Mb] [PDF] >"
-    },
-    {
-     "url": "https://www.aifa.gov.it/documents/20142/648668/piano_terapeutico_interferoni_ex_nota_32.pdf",
-     "testo": "Piano terapeutico per prescrizione SSN di Interferoni (ex Nota 32) [0.05 Mb] [PDF] >"
-    },
-    {
-     "url": "https://www.aifa.gov.it/documents/20142/0/PT_Lamivudina_-_clean.pdf",
-     "testo": "Piano terapeutico per prescrizione SSN di Lamivudina (ex Nota 32 bis) [0.04 Mb] [PDF] >"
-    }
-   ],
-   "cambiata": true
+   "http": 0,
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "regole-piano",

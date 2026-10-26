@@ -1,6 +1,6 @@
 {
  "regione": "veneto",
- "aggiornato": "2026-10-26T04:34:39.186Z",
+ "aggiornato": "2026-10-26T11:41:46.272Z",
  "pagine": [
   {
    "asl": "belluno",
@@ -169,9 +169,22 @@
    "http": 200,
    "file": "belluno/b63108626608.txt",
    "titolo": "Servizio di Prevenzione delle Malattie Croniche non Trasmissibili, Programmi di Screening e Promozione della Salute",
-   "sha": "ea0b74707352d751079e5ce6bcd7516e5b3c37455dbbb8a6402ff7ad63daceaa",
-   "caratteri": 8741,
-   "cambiata": false
+   "sha": "6810f655c0314d81c7e5951c215e7879fdc67665785ec48b1d2d0d96044ec0de",
+   "caratteri": 11536,
+   "link_pdf": [
+    {
+     "url": "https://www.aulss1.veneto.it/Screening_Oncologici__flyer_4.pdf",
+     "testo": "Flyer Screening Oncologici"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "belluno",
+   "url": "https://www.aulss1.veneto.it/Screening_Oncologici__flyer_4.pdf",
+   "controllata": "2026-10-26",
+   "da_pagina": "https://www.aulss1.veneto.it/servizio-di-prevenzione-delle-malattie-croniche-non-trasmissibili-programmi-di-screening-e-promozione-della-salute",
+   "http": 404
   },
   {
    "asl": "treviso",
@@ -180,9 +193,9 @@
    "http": 200,
    "file": "treviso/3f2877cab1fe.txt",
    "titolo": "Homepage - ULSS 2 Marca Trevigiana",
-   "sha": "175a60773c29eae2b708fcbd3a946019e471ab2c19e00801b2250dc174e695ea",
-   "caratteri": 6308,
-   "cambiata": false
+   "sha": "27ea390e383e7c42fe01bfd90b7723e4c276166f8ae0f8ccf853e9dd8cc46c6e",
+   "caratteri": 6272,
+   "cambiata": true
   },
   {
    "asl": "treviso",
@@ -700,9 +713,9 @@
    "browser": true,
    "http": 200,
    "file": "venezia/7259f23ba486.txt",
-   "titolo": "Azienda ULSS n. 4 Veneto Orientale - Prenotazione esami di laboratorio presso le strutture dell'Azienda Ulss4 \"Veneto Orientale\"",
-   "sha": "639a5afddb6322348a5a2962cc2fba1c554e07dede861388a1a1a61d719c21fe",
-   "caratteri": 3630,
+   "titolo": "Prenotazione esami di laboratorio presso le strutture dell'A",
+   "sha": "6c77e5de6056b83fe18ff4c7613f38247614a291db5815170e35a02e80cf3b87",
+   "caratteri": 3562,
    "cambiata": true
   },
   {
@@ -862,9 +875,9 @@
    "http": 200,
    "file": "rovigo/ebfa4575c105.txt",
    "titolo": "Homepage - ULSS 5 Polesana",
-   "sha": "4187a849d165132d3cc300b2db3855d47f81e6a71b3c3b257061a9ffeb2e9b36",
-   "caratteri": 5775,
-   "cambiata": false
+   "sha": "7c0159f7f44924d70880446ee5c9cc9f4b412f560937ff3cf0f452d846318a6f",
+   "caratteri": 5841,
+   "cambiata": true
   },
   {
    "asl": "rovigo",
@@ -1062,9 +1075,9 @@
    "http": 200,
    "file": "padova/326a059622c6.txt",
    "titolo": "Homepage ULSS6 Euganea",
-   "sha": "45f2ecdca66f66d7743153af4cd377e82ac5b52fc24f390849f69a1672ab45ec",
-   "caratteri": 7150,
-   "cambiata": false
+   "sha": "398bdbb9e892a3c431317e445123818f407533254ead613b5cf16680e4f8f61e",
+   "caratteri": 7125,
+   "cambiata": true
   },
   {
    "asl": "padova",
@@ -1193,8 +1206,12 @@
    "asl": "padova",
    "url": "https://www.aulss6.veneto.it/trasparenza-disposizioni-aziendali-merito-applicazione-dlgs-124-98",
    "controllata": "2026-10-26",
-   "http": 0,
-   "errore": "curl: (52) Empty reply from server"
+   "http": 200,
+   "file": "padova/f4f15dda494a.txt",
+   "titolo": "Disposizioni aziendali in merito all'applicazione del D.Lgs n.124/98",
+   "sha": "d3376eb243645d3a3b6c53cc0b97dae91419e932eef695bf9b788ca0efd447df",
+   "caratteri": 6602,
+   "cambiata": true
   },
   {
    "asl": "padova",
@@ -1248,9 +1265,9 @@
    "http": 200,
    "file": "vicenza/6ab81c5aab52.txt",
    "titolo": "Homepage ULSS 8 Berica",
-   "sha": "6696e41d3d72dc2b6654eb84af9d6d5e4c545e7ac3dcc549b556d02ac47bd766",
-   "caratteri": 6131,
-   "cambiata": false
+   "sha": "f85ef57b23c3cb62387c6df63742e0b8bb3407dda895b3563d7efba05ae51dae",
+   "caratteri": 6118,
+   "cambiata": true
   },
   {
    "asl": "vicenza",
@@ -1534,9 +1551,9 @@
    "http": 200,
    "file": "vicenza/822d5940e687.txt",
    "titolo": "Patenti monocratiche e certificazioni di idoneità",
-   "sha": "6fd4247806441545f58c727944e71a312b90e923e688974a641b3f44694933a1",
-   "caratteri": 5809,
-   "cambiata": false
+   "sha": "fb1b971518672861515afabc6cde642f1b95d2d01618fa7fb9b645e205274586",
+   "caratteri": 5994,
+   "cambiata": true
   },
   {
    "asl": "vicenza",
@@ -1662,9 +1679,9 @@
    "http": 200,
    "file": "verona/573d29fe4d0f.txt",
    "titolo": "Homepage ULSS 9 Scaligera",
-   "sha": "ba655ad4b6d7970d456d6a12e73fad190e4cf024eae6f4429bcd14a7564645dc",
-   "caratteri": 6988,
-   "cambiata": false
+   "sha": "a17727e757ce2ca7317a5db35411df418700ef3cb4503294db765d03be15849f",
+   "caratteri": 6976,
+   "cambiata": true
   },
   {
    "asl": "verona",
