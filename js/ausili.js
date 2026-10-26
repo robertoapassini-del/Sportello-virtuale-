@@ -149,7 +149,7 @@ const screens = {
           <li><strong>Chiama l'ufficio protesica dell'${aslLabel()}</strong> e chiedi quanti giorni ha il fornitore per consegnare.</li>
           <li><strong>Se il tempo è passato:</strong> reclamo scritto ${complaintTo(a)}. Un patronato può aiutarti.</li>
         </ol>
-        <div class="notice info"><p>Quando l'ausilio arriva, entro ${rules.collaudo_days} giorni devi andare al collaudo dal medico che l'ha prescritto (o chiedere la visita a casa con la richiesta del medico di famiglia). Se non ci vai senza un motivo, l'${aslLabel()} può farti pagare l'ausilio. Se l'ausilio non va bene, può essere sostituito.</p></div>
+        <div class="notice info"><p>Quando l'ausilio arriva, entro ${rules.collaudo_days} giorni devi andare al collaudo dal medico che l'ha prescritto (o chiedere la visita a casa con la richiesta del medico di famiglia). Le procedure dell'ASP di Catania dicono che, se non ci vai senza un motivo, l'ASP può farti pagare l'ausilio. Se l'ausilio non va bene, può essere sostituito.</p></div>
         ${protesica(a) || aspCalls(a)}
         ${disclaimer(rules.last_verified)}
         ${restartBtn()}`,
