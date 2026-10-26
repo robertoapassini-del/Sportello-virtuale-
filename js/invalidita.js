@@ -250,7 +250,7 @@ const screens = {
         html: `<div class="hero" aria-hidden="true">✅</div>
           <h1>Non è ancora tardi</h1>
           <div class="notice ok"><p>${whatFuture} entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>.</p>
-          <p>Se non arriva niente, torna qui quel giorno.</p></div>
+          <p>${d.deadline === todayISO() ? 'Oggi è l\'ultimo giorno. ' : ''}Se non arriva niente, torna qui il giorno dopo.</p></div>
           ${avvisiNuovo}${note}${legal}${patronato}${afterVerbale}${disclaimer(rules.last_verified)}${restartBtn()}`,
       };
     }

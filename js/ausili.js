@@ -109,7 +109,7 @@ const screens = {
           <h1>Non è ancora tardi</h1>
           <div class="notice ok">
             <p>L'${aslLabel()} deve rispondere entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong> (${rules.authorization_days} giorni dalla domanda).</p>
-            <p>Se a quella data non hai notizie, torna qui.</p>
+            <p>Se a quella data non hai notizie, torna qui il giorno dopo.</p>
           </div>
           ${disclaimer(rules.last_verified)}
           ${restartBtn()}`,

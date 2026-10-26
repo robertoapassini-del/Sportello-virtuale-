@@ -43,6 +43,12 @@ test('regioni: id e province unici, sedi INPS con gli stessi id, topic conosciut
   const err = [];
   assert.ok(TOPICS.length >= 8, `topic letti da js/numeri.js: ${TOPICS}`);
   for (const r of indice.regioni) if (!r.asl_label) err.push(`${r.id}: manca asl_label in index.json`);
+  // asl_label_servizi (chi dà i servizi, se non è l'azienda di asl_label): solo dove il «model» dei dati nomina
+  // tutte e due le sigle. 26/10/2026: in Lombardia le ASST; messa per sbaglio sulla Liguria, che ha solo l'ATS.
+  for (const r of attive) if (r.asl_label_servizi) {
+    const model = json(fileDi(r, 'asl')).model || '';
+    if (!new RegExp(`\\b${r.asl_label}\\b`).test(model) || !new RegExp(`\\b${r.asl_label_servizi}\\b`).test(model)) err.push(`${r.id}: asl_label_servizi «${r.asl_label_servizi}», ma il model dei dati è «${model}»`);
+  }
   for (const r of attive) {
     const asl = json(fileDi(r, 'asl')).asl;
     const dup = (k) => asl.map((a) => a[k]).filter((v, i, a) => a.indexOf(v) !== i);
