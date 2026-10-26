@@ -158,3 +158,8 @@ Ancora da verificare (manca la fonte nelle copie, o serve un lavoro sui dati):
   dell'ISS (la copia di stanotte era bloccata), numero del Sistema TS (non è nel testo della pagina).
 - **Prima copia gratis della cartella clinica**: rileggere la FAQ del Garante su cosa è gratis.
 - **Cure all'estero in Sicilia, 30 giorni dal rientro**: il PDF della direttiva regionale non è nelle copie.
+
+## Gruppo 1 corretto (26/10/2026)
+- **Lombardia**: sigla dei servizi «ASST» (`asl_label_servizi`), l'ATS resta per siti, numeri, URP e screening.
+- **Lazio**: il sollecito parla del Pass di garanzia (`request_name`), non di una lettera con protocollo.
+- **Scadenza oggi**: «torna qui il giorno dopo», e «Oggi è l'ultimo giorno».

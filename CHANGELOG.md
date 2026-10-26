@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 26/10/2026 — Lombardia, Lazio e scadenze di oggi
+- Lombardia: visite, ospedali, cure a casa, ausili, medico e farmacia sono delle ASST, non dell'ATS (`docs/regioni.md`). `data/regioni/index.json`: campo nuovo `asl_label_servizi: "ASST"`. Nei JS `aslLabel()` dà la sigla dei servizi, `aslEnte()` quella dell'azienda dei dati (siti, numeri, URP, screening, intestazioni). Nuovo controllo in `tests/coerenza.test.mjs`: la sigla dei servizi c'è solo dove il «model» dei dati nomina tutte e due le aziende. Provato: la sigla messa per sbaglio sulla Liguria (che ha solo l'ATS) lo fa fallire.
+- Lazio: il sollecito del percorso di tutela parlava di una lettera con protocollo, ma nel Lazio si attiva il «Pass di garanzia» (online o al CUP). Campo nuovo `request_name` nelle aziende con `letter_mode: "portal"`; il sollecito, il campo del numero e l'oggetto dell'email parlano del Pass (`js/letters.js`, `js/liste-attesa.js`).
+- Scadenze: «torna qui quel giorno» → «torna qui il giorno dopo» (il giorno della scadenza non è ancora tardi), e «Oggi è l'ultimo giorno» quando la scadenza è oggi (invalidità, richiamo del CUP, ausili, cartella clinica). Nuova riga in `tests/errori-noti.test.mjs`.
+
 ## 26/10/2026 — Terzo giro di rilettura
 - Tre riletture con le copie della notte del 26/10/2026 (pagine A–L, pagine M–Z, testo delle schermate dei moduli nel browser). Elenco completo e punti aperti: `docs/revisione-2026-10-25.md`, sezione «Terzo giro».
 - Corretti: direttiva UE per le cure all'estero senza la Svizzera (errore del primo giro); congedo straordinario (ordine dei familiari e indennità); bonus psicologo per ISEE e codice «se accolta»; assegno di inclusione (famiglia dell'ISEE, SFL solo se manca il requisito della famiglia); intramoenia nelle schermate delle liste d'attesa; data del verbale nel ricorso; commissione della vecchia procedura e sollecito del nuovo regime; «Non salviamo quello che scrivi» su tutte le pagine; e altre frasi più ampie della fonte (ambulanza, contrassegno, SPID, ricetta, accompagnamento, collaudo di Catania, piano terapeutico, screening, neuropsichiatria, Telefono Amico, Cagliari, duplicato con chip, numero del Sistema TS, «è di oggi»). Note di E02 ed E04 in `data/rules-esenzione.json` allineate alla pagina.

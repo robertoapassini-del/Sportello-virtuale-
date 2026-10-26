@@ -126,6 +126,7 @@ const ERRORI = [
   [/fai la visita in ospedale pagando solo il ticket|la fai in ospedale pagando solo il ticket/, "percorso di tutela: l'intramoenia la organizza l'ASL e si paga il ticket solo se dovuto; da soli si paga la tariffa intera"],
   [/secondo la provincia, la fa la commissione/, 'invalidità, vecchia procedura: la commissione dipende dalla Regione (convenzione con l\'INPS), non dalla provincia già scelta'],
   [/Che giorno hai ricevuto il verbale/, 'ricorso: per prudenza i 6 mesi si contano dalla data scritta sul verbale (l\'INPS conta «dall\'emissione»)'],
+  [/torna qui quel giorno/, 'scadenze: il giorno della scadenza non è ancora tardi; si torna il giorno dopo (26/10/2026)'],
 ];
 
 test('nessuno degli errori già trovati è tornato', () => {

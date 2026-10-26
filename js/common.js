@@ -146,11 +146,15 @@ export const regioneInfo = () => regioni().find((r) => r.id === regione()) || { 
 // se non ha scelto e le regioni sono più di una, nessuna (testi generici). Per i dati invece vale regione().
 const regioneUtente = () => regioneSalvata() || (regioniAttive().length === 1 ? regioneInfo() : null);
 // Come si chiama l'azienda sanitaria nella regione dell'utente: ASP in Sicilia, ATS in Lombardia… (ASL se non si sa).
-export const aslLabel = () => (regioneUtente() || {}).asl_label || 'ASL';
+// aslEnte(): l'azienda dei dati (in Lombardia l'ATS: siti, numeri, URP, screening).
+// aslLabel(): chi dà i servizi (visite, ospedali, cure a casa, ausili, medico, farmacia): in Lombardia le ASST
+// («asl_label_servizi» dell'indice; revisione del 26/10/2026). Nelle altre regioni sono la stessa azienda.
+export const aslEnte = () => (regioneUtente() || {}).asl_label || 'ASL';
+export const aslLabel = () => { const r = regioneUtente() || {}; return r.asl_label_servizi || r.asl_label || 'ASL'; };
 // «in Sicilia», ma «nel Lazio», «nelle Marche» (campo «in» dell'indice); «nella tua regione» se non si sa.
 export const inRegione = (r = regioneUtente()) => (r ? r.in || `in ${r.name}` : 'nella tua regione');
 // Come si scrive in testa a una lettera (Sicilia: «Azienda Sanitaria Provinciale di Palermo»).
-export const aslIntestazione = () => regioneInfo().asl_intestazione || aslLabel();
+export const aslIntestazione = () => regioneInfo().asl_intestazione || aslEnte();
 // Pagine ufficiali della Regione usate nei moduli (data/regioni/index.json, «link»): fse, assessorato, dialisi.
 export const regioneLink = (k) => (regioneScelta() && (regioneInfo().link || {})[k]) || '';
 // La regione di cui la pagina ha caricato i dati: se l'utente ne sceglie un'altra, la pagina si ricarica.
@@ -193,8 +197,8 @@ export function helpBox() {
       <li><span class="ico" aria-hidden="true">💊</span> La farmacia</li>
       <li><span class="ico" aria-hidden="true">👨‍⚕️</span> Il tuo medico di famiglia</li>
       <li><span class="ico" aria-hidden="true">🏢</span> Un patronato (per esempio INCA, ACLI, INAS). È gratis.</li>
-      <li><span class="ico" aria-hidden="true">🏥</span> L'ufficio URP della tua ${esc(aslLabel())}: è l'ufficio che ascolta i cittadini</li>
-      <li><span class="ico" aria-hidden="true">📞</span> <a href="${siteRoot()}numeri-utili/">I numeri utili: guardia medica, CUP, ${esc(aslLabel())}, INPS</a></li>
+      <li><span class="ico" aria-hidden="true">🏥</span> L'ufficio URP della tua ${esc(aslLabel())}${aslLabel() !== aslEnte() ? ` o dell'${esc(aslEnte())}` : ''}: è l'ufficio che ascolta i cittadini</li>
+      <li><span class="ico" aria-hidden="true">📞</span> <a href="${siteRoot()}numeri-utili/">I numeri utili: guardia medica, CUP, ${esc(aslEnte())}, INPS</a></li>
     </ul>
     <p>Puoi mostrare questa pagina a chi ti aiuta.</p>
   </details>`;
@@ -254,7 +258,7 @@ export function renderFooter(root = '') {
   if (!el) return;
   el.innerHTML = `<div class="wrap">
     <p>🔒 <strong>Non salviamo quello che scrivi.</strong> Quello che scrivi nei moduli resta sul tuo telefono e si cancella quando chiudi la pagina. Il sito ricorda solo la regione che scegli.</p>
-    <p><strong>Guida Sanità è fatto da volontari. Non siamo l'${regioneScelta() ? aslLabel() : 'azienda sanitaria (ASL)'}, l'INPS né un altro ufficio pubblico.</strong> Diamo informazioni generali, non il parere di un avvocato o di un medico.</p>
+    <p><strong>Guida Sanità è fatto da volontari. Non siamo l'${regioneScelta() ? (aslLabel() !== aslEnte() ? `${aslLabel()}, l'${aslEnte()}` : aslLabel()) : 'azienda sanitaria (ASL)'}, l'INPS né un altro ufficio pubblico.</strong> Diamo informazioni generali, non il parere di un avvocato o di un medico.</p>
     <nav aria-label="Informazioni">
       <a href="${root}privacy.html">Privacy</a>
       <a href="${root}fonti.html">Da dove prendiamo le informazioni</a>
@@ -500,9 +504,9 @@ export function generalContact(a) {
 // oppure «alla PEC dell'ASL di X (pec)» quando l'URP non ha un'email e c'è solo la PEC generale.
 export function complaintTo(a) {
   const { addr, kind } = generalContactInfo(a);
-  const ente = `${aslLabel()} di ${esc(a.province)}`;
+  const ente = `${aslEnte()} di ${esc(a.province)}`;
   if (kind === 'pec') return `alla PEC dell'${ente} (${mailLink(addr)})`;
-  if (kind === 'email') return `all'URP dell'${ente} (email dell'${aslLabel()}: ${mailLink(addr)})`;
+  if (kind === 'email') return `all'URP dell'${ente} (email dell'${aslEnte()}: ${mailLink(addr)})`;
   return `all'URP dell'${ente}${addr ? ` (${mailLink(addr)})` : ''}`;
 }
 

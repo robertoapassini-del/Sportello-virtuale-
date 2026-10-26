@@ -6,7 +6,7 @@
 import { simpleDeadline, todayISO, formatIt, parseDate, daysBetween, addDays, art } from './engine.js';
 import { cartellaReminder, mailtoHref, conZona } from './letters.js';
 import { noPecBox,
-  esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, copyText, printText, readForm, mailLink, aspCalls, officeBox, personFields, reportErrorHref, generalContactInfo, aslLabel, regioneInfo, regioneLink, inRegione, regione, generalContact, syncDelegate, delegateNoteText, fontiNazionali,
+  esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, copyText, printText, readForm, mailLink, aspCalls, officeBox, personFields, reportErrorHref, generalContactInfo, aslLabel, aslEnte, regioneInfo, regioneLink, inRegione, regione, generalContact, syncDelegate, delegateNoteText, fontiNazionali,
 } from './common.js';
 import { createFlow, choice, restartBtn, days, progress, dateForm, showError, letterButtons, senzaUffici, provinceChoice, zonaScreen } from './flow.js';
 
@@ -27,7 +27,7 @@ const asp = () => conZona(aziendaBase(), state.zona);
 const aspComplaint = (a) => {
   const { addr, kind } = generalContactInfo(a);
   if (!addr) return '';
-  const label = { urp: 'URP', pec: `PEC dell'${aslLabel()}`, email: `email dell'${aslLabel()}` }[kind];
+  const label = { urp: 'URP', pec: `PEC dell'${aslEnte()}`, email: `email dell'${aslEnte()}` }[kind];
   return ` di ${esc(a.province)}: ${label} ${mailLink(addr)}`;
 };
 const deadline = () => simpleDeadline({ fromDate: state.requestDate, days: rules.deadline_days, today: todayISO() });
@@ -142,7 +142,7 @@ const screens = {
           <h1>Non è ancora tardi</h1>
           <div class="notice ok">
             <p>Devono darti ${whatLabel[state.what]} entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong> (${rules.deadline_days} giorni dalla richiesta).</p>
-            <p>Se a quella data non hai niente, torna qui. Se manca solo qualche foglio, il resto deve arrivare entro ${rules.integration_days} giorni dalla richiesta.</p>
+            <p>Se a quella data non hai niente, torna qui il giorno dopo. Se manca solo qualche foglio, il resto deve arrivare entro ${rules.integration_days} giorni dalla richiesta.</p>
           </div>
           <p>Nel frattempo puoi telefonare all'ufficio cartelle cliniche e chiedere a che punto è.</p>
           ${disclaimer(rules.last_verified)}

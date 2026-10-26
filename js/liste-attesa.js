@@ -357,7 +357,7 @@ const screens = {
     let status = '';
     if (cb.status === 'waiting') {
       status = `<div class="notice info"><p>📞 L'${aslLabel()} deve richiamarti entro ${art('il', cb.deadline)}<strong>${esc(formatIt(cb.deadline))}</strong>.</p>
-        <p>Se non ti chiamano, torna qui quel giorno.</p></div>`;
+        <p>${cb.deadline === todayISO() ? 'Oggi è l\'ultimo giorno. ' : ''}Se non ti chiamano, torna qui il giorno dopo.</p></div>`;
     } else if (cb.status === 'passed') {
       status = `<div class="notice bad"><p>⚠️ Dovevano richiamarti entro ${art('il', cb.deadline)}<strong>${esc(formatIt(cb.deadline))}</strong>. Non l'hanno fatto.</p>
         <p>Ora puoi chiedere all'${aslLabel()} di farti fare la visita in tempo.</p></div>
@@ -482,7 +482,7 @@ const screens = {
         </ul>
         <h2 id="remind-title">${esc(remindTitle())}</h2>
         <ol class="big-steps">
-          <li><strong>Manda un sollecito</strong>: una seconda lettera per ricordarlo all'${aslLabel()}. La trovi qui sotto, già pronta.</li>
+          <li><strong>Manda un sollecito</strong>: ${a.letter_mode === 'portal' ? `uno scritto per ricordare all'${aslLabel()} ${a.request_name ? `il ${esc(a.request_name)}` : 'la richiesta'} che hai fatto` : `una seconda lettera per ricordarlo all'${aslLabel()}`}. La trovi qui sotto, già pronta.</li>
           <li><strong>Fai un reclamo</strong> ${urpKind === 'pec' ? `alla PEC dell'${aslLabel()} (${mailLink(urp)})` : `all'ufficio URP della tua ${aslLabel()}${urp ? ` (${urpKind === 'email' ? `email dell'${aslLabel()}: ` : ''}${mailLink(urp)})` : ''}`}.</li>
           <li><strong>Chiedi aiuto a un'associazione</strong> di pazienti: Cittadinanzattiva
             (<a href="https://www.cittadinanzattiva.it" target="_blank" rel="noopener">cittadinanzattiva.it</a>) oppure
@@ -494,10 +494,10 @@ const screens = {
         <div class="card">
           <h2 style="margin-top:0">📄 Il sollecito, già pronto</h2>
           <form id="rem-form" novalidate>
-            <label for="firstRequestDate">Che giorno hai mandato la prima richiesta?</label>
+            <label for="firstRequestDate">${a.letter_mode === 'portal' ? `Che giorno hai attivato ${a.request_name ? `il ${esc(a.request_name)}` : 'la richiesta'}?` : 'Che giorno hai mandato la prima richiesta?'}</label>
             <input type="date" id="firstRequestDate" name="firstRequestDate" value="${esc(state.firstRequestDate)}" max="${today}" aria-describedby="rem-form-error">
             <p class="field-error" id="rem-form-error" role="alert" hidden></p>
-            <label for="f-reqProtocol">Numero di protocollo della richiesta<span class="hint">Se te l'hanno dato</span></label>
+            <label for="f-reqProtocol">${a.letter_mode === 'portal' ? `Numero ${a.request_name ? `del ${esc(a.request_name)}` : 'della richiesta'}` : 'Numero di protocollo della richiesta'}<span class="hint">Se te l'hanno dato</span></label>
             <input id="f-reqProtocol" name="reqProtocol" type="text" value="${esc(state.reqProtocol || '')}">
           </form>
           <div id="reminder" class="letter"></div>
@@ -524,12 +524,13 @@ const screens = {
             intestazione: intestazioneAzienda(a),
             aspName: a.province, aspAddress: a.send_to || a.pec || '', person, service: state.service, nre: state.nre,
             cls: classText(), firstRequestDate: state.firstRequestDate, protocol: state.reqProtocol, today,
+            portale: a.letter_mode === 'portal' ? { nome: a.request_name } : null, // senza canale: il Pass si attiva anche al CUP
           });
           state.reminderText = text;
           document.getElementById('reminder').textContent = text;
           document.getElementById('rmail-btn').hidden = !(a.send_to || a.pec);
           document.getElementById('rmail-btn').href = mailtoHref(a.send_to || a.pec || '',
-            `SOLLECITO – Richiesta percorso di tutela${person.fullName ? ` – ${person.fullName}` : ''}`,
+            `SOLLECITO – ${a.letter_mode === 'portal' && a.request_name ? a.request_name : 'Richiesta percorso di tutela'}${person.fullName ? ` – ${person.fullName}` : ''}`,
             `Buongiorno,\nin allegato il sollecito firmato.\n\nCordiali saluti\n${person.fullName || ''}`);
         };
         document.getElementById('rem-form').addEventListener('change', update);
