@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 26/10/2026 — Copie: la pagina «Request Rejected» dell'ISS non è una copia
+- Errore trovato con il confronto delle copie del 26/10/2026: le pagine dei numeri verdi dell'ISS (dipendenze, fumo) erano la pagina del filtro «Request Rejected», salvata come copia; il confronto segnalava i numeri come spariti. I numeri del sito non cambiano.
+- `tools/copie.mjs`: «Request Rejected» e «The requested URL was rejected» sono riconosciuti come pagina anti-robot (come Gcore): la pagina si segna e non si salva. Nuovo caso in `tests/copie-giro.test.mjs`, provato: senza la correzione fallisce.
+
 ## 25/10/2026 — Seconda rilettura: coerenza tra pagine
 - Riletti insieme lo stesso fatto in pagine diverse, `data/moduli.json`, i testi comuni dei JS, le pagine delle aree e i testi delle regioni (`docs/revisione-2026-10-25.md`, ultima sezione).
 - Esenzione E04: il limite di 11.362,05 euro vale «in presenza del coniuge» anche qui (modulo di autocertificazione dell'ASL Città di Torino); il calcolo fa la stessa domanda per E02 ed E04.

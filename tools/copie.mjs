@@ -106,8 +106,9 @@ function scarica(url, maxByte) {
 const ANTIROBOT_CORTA = (testo) => ANTIROBOT.test(testo) && (VUOTA(testo) || testo.length < 2000);
 const VUOTA = (testo) => testo.length < 500 || /enable javascript|attiva(re)? (il )?javascript|abilita(re)? (il )?javascript|^loading\.{3}/im.test(testo);
 // «Browser Validation Page» e «Please enable cookies»: la protezione Gcore di salute.gov.it (24/10/2026: le copie del
-// Ministero erano questa pagina, segnata come copiata).
-const ANTIROBOT = /captcha|radware|verify you are human|are you a robot|sei un robot|access denied|attention required|browser validation page|please enable cookies/i;
+// Ministero erano questa pagina, segnata come copiata). «Request Rejected»: il filtro dell'ISS (26/10/2026: le copie
+// dei numeri verdi erano questa pagina, e il confronto ha segnalato i numeri come spariti).
+const ANTIROBOT = /captcha|radware|verify you are human|are you a robot|sei un robot|access denied|attention required|browser validation page|please enable cookies|request rejected|the requested url was rejected/i;
 let browser; let senzaBrowser = !!process.env.COPIE_SENZA_BROWSER;
 async function apriBrowser() {
   if (browser || senzaBrowser) return browser;
