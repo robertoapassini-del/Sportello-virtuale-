@@ -1,6 +1,6 @@
 {
  "regione": "veneto",
- "aggiornato": "2026-10-26T01:22:40.597Z",
+ "aggiornato": "2026-10-26T04:34:39.186Z",
  "pagine": [
   {
    "asl": "belluno",
@@ -700,10 +700,10 @@
    "browser": true,
    "http": 200,
    "file": "venezia/7259f23ba486.txt",
-   "titolo": "Prenotazione esami di laboratorio presso le strutture dell'A",
-   "sha": "6c77e5de6056b83fe18ff4c7613f38247614a291db5815170e35a02e80cf3b87",
-   "caratteri": 3562,
-   "cambiata": false
+   "titolo": "Azienda ULSS n. 4 Veneto Orientale - Prenotazione esami di laboratorio presso le strutture dell'Azienda Ulss4 \"Veneto Orientale\"",
+   "sha": "639a5afddb6322348a5a2962cc2fba1c554e07dede861388a1a1a61d719c21fe",
+   "caratteri": 3630,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -1193,12 +1193,8 @@
    "asl": "padova",
    "url": "https://www.aulss6.veneto.it/trasparenza-disposizioni-aziendali-merito-applicazione-dlgs-124-98",
    "controllata": "2026-10-26",
-   "http": 200,
-   "file": "padova/f4f15dda494a.txt",
-   "titolo": "Disposizioni aziendali in merito all'applicazione del D.Lgs n.124/98",
-   "sha": "d3376eb243645d3a3b6c53cc0b97dae91419e932eef695bf9b788ca0efd447df",
-   "caratteri": 6602,
-   "cambiata": false
+   "http": 0,
+   "errore": "curl: (52) Empty reply from server"
   },
   {
    "asl": "padova",
