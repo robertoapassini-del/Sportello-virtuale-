@@ -253,7 +253,7 @@ export function renderFooter(root = '') {
   const el = document.getElementById('site-footer');
   if (!el) return;
   el.innerHTML = `<div class="wrap">
-    <p>🔒 <strong>Non salviamo niente.</strong> Quello che scrivi nei moduli resta sul tuo telefono e si cancella quando chiudi la pagina. Il sito ricorda solo la regione che scegli.</p>
+    <p>🔒 <strong>Non salviamo quello che scrivi.</strong> Quello che scrivi nei moduli resta sul tuo telefono e si cancella quando chiudi la pagina. Il sito ricorda solo la regione che scegli.</p>
     <p><strong>Guida Sanità è fatto da volontari. Non siamo l'${regioneScelta() ? aslLabel() : 'azienda sanitaria (ASL)'}, l'INPS né un altro ufficio pubblico.</strong> Diamo informazioni generali, non il parere di un avvocato o di un medico.</p>
     <nav aria-label="Informazioni">
       <a href="${root}privacy.html">Privacy</a>

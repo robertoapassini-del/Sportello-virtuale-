@@ -143,7 +143,7 @@ function aspSteps(a) {
       <h3>Aspetta la risposta</h3>
       <ul class="clean">
         ${a.what_next.map((w) => `<li>${esc(w)}</li>`).join('')}
-        <li>Se non c'è posto, fai la visita in ospedale pagando solo il ticket.</li>
+        <li>Se non c'è posto, l'${aslLabel()} deve fartela fare in ospedale in intramoenia: paghi solo il ticket, se lo devi pagare. Non prenotarla da solo.</li>
       </ul>
       ${a.letter_mode === 'portal' ? '<button type="button" class="btn" data-go="after">⏳ Ho fatto la richiesta: e adesso?</button>' : ''}
     </li>
@@ -332,7 +332,7 @@ const screens = {
           <p>Il tuo appuntamento è ${art('il', state.appointmentDate)}<strong>${esc(formatIt(state.appointmentDate))}</strong>:
           <strong>${days(r.excess)} di troppo</strong>.</p>
         </div>
-        <p>Puoi chiedere all'${aslLabel()} di farti fare la visita prima. Se serve, la fai in ospedale pagando solo il ticket.</p>
+        <p>Puoi chiedere all'${aslLabel()} di farti fare la visita prima. Se non c'è posto, deve fartela fare in ospedale in intramoenia: paghi solo il ticket, se lo devi pagare.</p>
         ${senzaUffici(a, () => aspSteps(a))}
         ${warnings()}
         ${disclaimer((a || rules).last_verified)}`,

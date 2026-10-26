@@ -166,7 +166,7 @@ export function inpsReminder({ provinceName, inpsPec, person: p, certNumber, cer
   const why = category === 'oncological' ? ' trattandosi di persona con patologia oncologica, come indicato nel certificato,'
     : category === 'minor' && regime === 'new' ? ' trattandosi di minore,' : '';
   const what = regime === 'new'
-    ? `il procedimento di valutazione di base doveva concludersi entro ${deadlineInfo.days} giorni dalla trasmissione del certificato`
+    ? `il procedimento di valutazione di base doveva concludersi entro ${deadlineInfo.days} giorni dalla trasmissione del certificato, e non è stata comunicata alcuna sospensione per integrazione documentale`
     : `la visita doveva svolgersi entro ${deadlineInfo.days} giorni dalla domanda`;
   // Senza base di legge (vecchia procedura ordinaria) i 30 giorni sono indicativi: si dice solo quanto tempo è passato.
   const elapsed = domandaDate && today ? daysBetween(domandaDate, today) : null;
@@ -234,7 +234,7 @@ PREMESSO CHE
 - alla data odierna non ha ricevuto quanto richiesto né alcuna comunicazione;
 
 SOLLECITA
-la consegna della documentazione richiesta nel più breve tempo possibile e chiede di essere informato/a per iscritto su data e modalità di ritiro. Chiede inoltre che la prima copia sia rilasciata gratuitamente, ai sensi dell'art. 15 del Regolamento UE 2016/679 (GDPR).
+la consegna della documentazione richiesta nel più breve tempo possibile e chiede di essere informato/a per iscritto su data e modalità di ritiro. Chiede inoltre, per i propri dati personali, che la prima copia sia rilasciata gratuitamente, ai sensi dell'art. 15 del Regolamento UE 2016/679 (GDPR).
 ${delegateBlock(p)}
 Allega: copia del documento di identità; copia della richiesta ${art('del', requestDate)}${requestDate ? formatIt(requestDate) : '__________'}${extra(p)}.
 
