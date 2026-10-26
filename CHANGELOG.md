@@ -2,6 +2,19 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 26/10/2026 — controllo automatico dei contatti
+- Copie del server del 26/10/2026 (branch `copie-siti`). Controllate 846 pagine: quelle dei contatti delle aziende e i link `site_url`, `info_url`, `guardia_medica_url`, `pua_url` di tutte le 20 regioni.
+- Confermati 1.647 numeri: sono nella copia della loro pagina. `verified` ora è 2026-10-26, `proof: "pagina"`. Nessun numero, indirizzo o orario cambiato.
+- Dubbi (un `todo` nell'azienda, decide una persona):
+  - Lombardia, PUA di Rozzano: nei dati 02 9811 8990, sulla pagina dell'ASST Melegnano e della Martesana ora c'è 02 9805.8990 – 02 9805.8991.
+  - Pagine che ora portano a un altro indirizzo (numeri non ricontrollati): Matera (URP di Policoro), Napoli 3 Sud (URP), Bologna (CUP), Ferrara (URP), Modena (CUPWEB e guardia medica), Salute Lazio (guardia medica, tutte e 5 le aziende), Como (URP), Milano (ASST Santi Paolo e Carlo), Monza e Brianza (URP dell'ASST Brianza porta alla homepage; ASST Monza porta a irccs-sangerardo.it), Varese (contatti), Venezia (numeri utili ULSS 3, URP ULSS 4), Padova (URP).
+  - Homepage che non risponde al server (403): ASP di Vibo Valentia, ASL VCO.
+- Dubbi solo segnalati (già noti o senza un numero nuovo):
+  - Numeri non trovati nella copia: ASP di Enna (7 numeri, la pagina li mostra solo con JavaScript, già in `tests/copie-noti.txt`); Caltanissetta, centralino 0934 506111 (sulla homepage c'è solo il CUP 0934 506506, già nel `todo`); Palermo, Ospedale Civico cartelle cliniche (la pagina non ha il numero, già nel `todo`); Ragusa, 4 PUA con `proof: "estratto"` (la homepage non li ha); Firenze, Segretariato sociale Nord Ovest 055 6930444 (la notizia non è più sulla homepage); Alto Adige, CUPP 100 100 (la pagina scrive «100 100 (pref. 0471, 0472, 0473, 0474)»: è lo stesso numero, scritto a parte dal prefisso).
+  - Orario: Siracusa, PUA di Augusta «16:30» non è nella pagina (già noto).
+  - Indirizzo: Palermo, Ospedale Cervello «Via Trabucco 180» non è nella pagina (già nel `todo`). Gli altri indirizzi diversi sono solo abbreviazioni («Circ.ne», «V. Veneto», «P. Togiatti»).
+  - Titolo vuoto (la pagina risponde 200 e ha il testo): ASP di Catanzaro, homepage, guardia medica e PUA; comunicato sul 116117 usato da Cosenza e Vibo Valentia.
+
 ## 25/10/2026 — Seconda rilettura: coerenza tra pagine
 - Riletti insieme lo stesso fatto in pagine diverse, `data/moduli.json`, i testi comuni dei JS, le pagine delle aree e i testi delle regioni (`docs/revisione-2026-10-25.md`, ultima sezione).
 - Esenzione E04: il limite di 11.362,05 euro vale «in presenza del coniuge» anche qui (modulo di autocertificazione dell'ASL Città di Torino); il calcolo fa la stessa domanda per E02 ed E04.
