@@ -622,8 +622,8 @@ async function erroriCollegati(page, dove, problemi) {
     } catch (e) { problemi.push(`${dove}: percorso interrotto (${e.message.split('\n')[0]})`); }
     await ctx.close();
   }
-  // La ricerca della home: i testi di data/moduli.json dicono «ASL», ma in Sicilia è l'ASP e in Lombardia l'ATS.
-  for (const [regione, sigla] of [['sicilia', 'ASP'], ['lombardia', 'ATS']]) {
+  // La ricerca della home: i testi di data/moduli.json dicono «ASL», ma in Sicilia è l'ASP e in Lombardia, per i servizi, l'ASST (asl_label_servizi).
+  for (const [regione, sigla] of [['sicilia', 'ASP'], ['lombardia', 'ASST']]) {
     const ctx = await nuova(regione);
     const page = await ctx.newPage();
     const dove = `${regione} / ricerca «carrozzina»`;
