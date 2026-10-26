@@ -111,3 +111,50 @@ aree e testi delle regioni. Corretti:
   della Regione.
 - **Piemonte, Friuli-Venezia Giulia, Puglia**: per il medico, al posto del certificato di residenza va bene anche
   l'autocertificazione.
+
+## Terzo giro (26/10/2026): pagine, schermate dei moduli, copie nuove
+
+Tre riletture con le copie della notte del 26/10: pagine A–L, pagine M–Z con la home, e il testo che si vede
+davvero nelle schermate dei moduli e nelle lettere (provato nel browser, con date ai bordi e quattro regioni).
+Il confronto automatico con le copie (`tools/confronta-copie.mjs nazionali`) ha trovato un errore del server.
+
+Corretti:
+- **Copie**: la pagina «Request Rejected» del filtro dell'ISS era salvata come copia; ora è riconosciuta
+  come anti-robot (`tools/copie.mjs`, `tests/copie-giro.test.mjs`).
+- **Cure all'estero**: la direttiva 2011/24/UE vale nell'UE e in Norvegia, Islanda e Liechtenstein, non in
+  Svizzera (linee guida nazionali). Errore introdotto nel primo giro.
+- **Congedo straordinario**: si passa al familiare dopo solo se i precedenti mancano, sono morti o hanno una
+  malattia invalidante; l'indennità è l'ultima retribuzione (voci fisse e continuative), non «lo stipendio base».
+- **Bonus psicologo**: 1.500 euro solo con ISEE sotto 15.000 (anche nella pagina dello psicologo); il codice
+  arriva se la domanda è accolta.
+- **Assegno di inclusione**: conta la famiglia dell'ISEE, non lo stato di famiglia; il Supporto per la
+  formazione e il lavoro si propone solo se manca il requisito della famiglia.
+- **Liste d'attesa (schermate)**: l'intramoenia la organizza l'ASL e si paga il ticket «se lo devi pagare»;
+  non va prenotata da soli.
+- **Ricorso (schermate)**: si chiede la data scritta sul verbale, la più prudente.
+- **Invalidità**: la commissione della vecchia procedura dipende dalla Regione; il sollecito del nuovo regime
+  dice che non è stata comunicata nessuna sospensione.
+- **Privacy**: «Non salviamo niente» → «Non salviamo quello che scrivi» su tutte le pagine; la privacy dice che
+  restano la regione e le parole della ricerca.
+- **Altri**: trasporto in ambulanza da scaricare (per le persone con disabilità), contrassegno («multa», non
+  «ritiro»), SPID (alcuni gestori chiedono un costo), ricetta in farmacia «di solito» con la sola tessera,
+  accompagnamento per bambini e over 65 nelle descrizioni, collaudo (regola delle procedure dell'ASP di
+  Catania), piano terapeutico (niente «ricetta ogni mese», niente «un giorno o due»), screening (dove si fanno
+  lo dice la lettera di invito), neuropsichiatria anche con il medico di famiglia, Telefono Amico nei numeri utili,
+  pronto soccorso «ASL di Cagliari», duplicato della tessera (solo con il chip), numero del Sistema TS
+  (assistenza, non «tessera persa»), «è di oggi» al posto di «sono passati 0 giorni», note di E02 ed E04.
+
+Ancora da verificare (manca la fonte nelle copie, o serve un lavoro sui dati):
+- **Lazio, sollecito del percorso di tutela**: in Lazio si usa il Pass di garanzia online, ma il sollecito parla
+  di una lettera con protocollo. Serve un testo per le aziende con `letter_mode: 'portal'`.
+- **Lombardia, ATS e ASST**: nelle schermate (liste d'attesa, invalidità, cartella clinica, cure a casa, piano
+  terapeutico) la sigla è «ATS», ma i servizi sono delle ASST. Serve una sigla di servizio separata.
+- **Richiamo del CUP (5, 10, 15, 30 giorni)**: la nota di `callback_days` in `data/rules.json` non ha la frase
+  del PNGLA, e la copia del PNGLA non ha testo.
+- **Scadenza oggi**: «torna qui quel giorno» quando quel giorno è oggi (invalidità, cartella clinica, ausili).
+- **Fonti senza testo nelle copie**: `rules-medico.json` (la pagina SISAC non ha le cifre; c'è un ACN nuovo del
+  26/06/2026), `rules-ricorso.json` (D.L. 269/2003 art. 42, art. 152 disp. att. c.p.c., DM del 22/04/2025;
+  giustizia.it dice ancora 12.838,01 euro), certificato sostitutivo della tessera (6 mesi), numeri verdi
+  dell'ISS (la copia di stanotte era bloccata), numero del Sistema TS (non è nel testo della pagina).
+- **Prima copia gratis della cartella clinica**: rileggere la FAQ del Garante su cosa è gratis.
+- **Cure all'estero in Sicilia, 30 giorni dal rientro**: il PDF della direttiva regionale non è nelle copie.

@@ -127,7 +127,7 @@ const screens = {
         <div class="hero" aria-hidden="true">${late ? '⚠️' : '⏳'}</div>
         <h1>${late ? 'Troppo tempo: sollecita oggi' : 'La richiesta è partita'}</h1>
         <div class="notice ${late ? 'bad' : 'info'}">
-          <p>Richiesta ${art('del', state.requestDate)}${esc(formatIt(state.requestDate))}: sono passati <strong>${days(waited)}</strong>.</p>
+          <p>Richiesta ${art('del', state.requestDate)}${esc(formatIt(state.requestDate))}: ${waited === 0 ? 'è di oggi' : `sono passati <strong>${days(waited)}</strong>`}.</p>
           <p>La legge non fissa un numero di giorni, ma non serve aspettare a lungo. ${late ? 'Non aspettare oltre.' : `Se entro ${art('il', remindOn)}<strong>${esc(formatIt(remindOn))}</strong> nessuno si è fatto vivo, torna qui per sollecitare per iscritto.`}</p>
         </div>
         <h2>Cosa fare</h2>

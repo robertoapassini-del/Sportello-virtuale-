@@ -2,6 +2,12 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 26/10/2026 — Terzo giro di rilettura
+- Tre riletture con le copie della notte del 26/10/2026 (pagine A–L, pagine M–Z, testo delle schermate dei moduli nel browser). Elenco completo e punti aperti: `docs/revisione-2026-10-25.md`, sezione «Terzo giro».
+- Corretti: direttiva UE per le cure all'estero senza la Svizzera (errore del primo giro); congedo straordinario (ordine dei familiari e indennità); bonus psicologo per ISEE e codice «se accolta»; assegno di inclusione (famiglia dell'ISEE, SFL solo se manca il requisito della famiglia); intramoenia nelle schermate delle liste d'attesa; data del verbale nel ricorso; commissione della vecchia procedura e sollecito del nuovo regime; «Non salviamo quello che scrivi» su tutte le pagine; e altre frasi più ampie della fonte (ambulanza, contrassegno, SPID, ricetta, accompagnamento, collaudo di Catania, piano terapeutico, screening, neuropsichiatria, Telefono Amico, Cagliari, duplicato con chip, numero del Sistema TS, «è di oggi»). Note di E02 ed E04 in `data/rules-esenzione.json` allineate alla pagina.
+- `data/numeri.json`: il numero del Sistema TS è l'assistenza per i servizi online, non per la «tessera persa» (la pagina copiata lo descrive così).
+- Nuovi controlli: 12 righe in `tests/errori-noti.test.mjs` (terzo giro), provate sulla versione di prima; «non salviamo niente» si cerca anche con la minuscola.
+
 ## 26/10/2026 — Copie: la pagina «Request Rejected» dell'ISS non è una copia
 - Errore trovato con il confronto delle copie del 26/10/2026: le pagine dei numeri verdi dell'ISS (dipendenze, fumo) erano la pagina del filtro «Request Rejected», salvata come copia; il confronto segnalava i numeri come spariti. I numeri del sito non cambiano.
 - `tools/copie.mjs`: «Request Rejected» e «The requested URL was rejected» sono riconosciuti come pagina anti-robot (come Gcore): la pagina si segna e non si salva. Nuovo caso in `tests/copie-giro.test.mjs`, provato: senza la correzione fallisce.

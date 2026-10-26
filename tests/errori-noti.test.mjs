@@ -121,8 +121,11 @@ const ERRORI = [
   [/stesso stato di famiglia/, "assegno di inclusione: conta il nucleo dell'ISEE, non lo stato di famiglia del Comune"],
   [/SPID si attiva gratis/, 'SPID: alcuni gestori chiedono un costo'],
   [/ricetta ogni mese/, 'piano terapeutico: nessuna fonte dice che la ricetta è mensile'],
-  [/Non salviamo niente/, 'il sito ricorda la regione e conta le visite: «Non salviamo quello che scrivi» (privacy.html)'],
+  [/[Nn]on salviamo niente/, 'il sito ricorda la regione e conta le visite: «Non salviamo quello che scrivi» (privacy.html)'],
   [/con ISEE fino a 50\.000 euro \(l/, 'bonus psicologo: 1.500 euro solo con ISEE sotto 15.000 (scheda INPS)'],
+  [/fai la visita in ospedale pagando solo il ticket|la fai in ospedale pagando solo il ticket/, "percorso di tutela: l'intramoenia la organizza l'ASL e si paga il ticket solo se dovuto; da soli si paga la tariffa intera"],
+  [/secondo la provincia, la fa la commissione/, 'invalidità, vecchia procedura: la commissione dipende dalla Regione (convenzione con l\'INPS), non dalla provincia già scelta'],
+  [/Che giorno hai ricevuto il verbale/, 'ricorso: per prudenza i 6 mesi si contano dalla data scritta sul verbale (l\'INPS conta «dall\'emissione»)'],
 ];
 
 test('nessuno degli errori già trovati è tornato', () => {
