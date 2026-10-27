@@ -1,6 +1,6 @@
 {
  "regione": "valle-d-aosta",
- "aggiornato": "2026-10-27T04:26:24.248Z",
+ "aggiornato": "2026-10-27T06:58:10.318Z",
  "pagine": [
   {
    "asl": "aosta",
@@ -9,8 +9,8 @@
    "http": 200,
    "file": "aosta/8c0e7f3ef863.txt",
    "titolo": "Home",
-   "sha": "9b22c141d0c9c6297e9782469f2f7d982fa02203eb6283a8a351a6a181099ebe",
-   "caratteri": 8383,
+   "sha": "c85d6e636d7bca235bc612736061c8d7a5f045f14085664c608d1f3a7d692056",
+   "caratteri": 8597,
    "cambiata": true
   },
   {
@@ -484,7 +484,7 @@
    "titolo": "Ambulatori ad accesso diretto",
    "sha": "6014ee26c76ca8222396143e3a32957ae83e30e525d02d7221209432292c8718",
    "caratteri": 6353,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "aosta",
@@ -823,6 +823,18 @@
    "sha": "3e22d1cf04da5a9b152d4fd5f6033e4b4b86d0937bfc137d142d7c9ec25bd108",
    "caratteri": 46281,
    "cambiata": false
+  },
+  {
+   "asl": "ticket-pronto-soccorso",
+   "url": "https://www.ausl.vda.it/Media/AUSL/Hierarchy/7/720/Pagamento%20prestazioni%20di%20Pronto%20Soccorso.pdf",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "ticket-pronto-soccorso/672486ba47f0.txt",
+   "titolo": "Informativa_PS",
+   "sha": "69bf3c76777dcbf433eb40872a1b1635832dfb22773689c889ebc6cbe45f74ec",
+   "caratteri": 1548,
+   "pdf": true,
+   "cambiata": true
   }
  ]
 }

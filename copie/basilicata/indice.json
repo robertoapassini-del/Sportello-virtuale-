@@ -1,6 +1,6 @@
 {
  "regione": "basilicata",
- "aggiornato": "2026-10-27T02:36:56.427Z",
+ "aggiornato": "2026-10-27T05:06:52.349Z",
  "pagine": [
   {
    "asl": "matera",
@@ -50,7 +50,7 @@
    "titolo": "Latronico sul Numero europeo Armonizzato - AGR Basilicata",
    "sha": "d110d92774ebdb6745f95fd819536aeff8925cbdf4173c4997b4166090031b7a",
    "caratteri": 5335,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "matera",
@@ -257,7 +257,7 @@
    "titolo": "Latronico sul Numero europeo Armonizzato - AGR Basilicata",
    "sha": "d110d92774ebdb6745f95fd819536aeff8925cbdf4173c4997b4166090031b7a",
    "caratteri": 5335,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "potenza",
@@ -437,7 +437,7 @@
    "controllata": "2026-10-27",
    "da_pagina": "https://www.aspbasilicata.it/come-fare-per/scelta-e-revoca-del-medico-di-famiglia-e-del-pediatra/",
    "http": 0,
-   "errore": "curl: (28) Connection timed out after 60002 milliseconds"
+   "errore": "curl: (28) Connection timed out after 60001 milliseconds"
   },
   {
    "asl": "potenza",
@@ -605,7 +605,7 @@
    "titolo": "Servizi online - Regione Basilicata",
    "sha": "57dab7b8bde5e72d6fbcada51291a13e815cddef0ce22bd51a9ec170ad26e688",
    "caratteri": 8995,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-basilicata",
@@ -851,6 +851,17 @@
    "sha": "7212cd5e32458689fa21247bf8147165eea0aefd67492dcb6f30c5d8901ee32b",
    "caratteri": 9290,
    "cambiata": false
+  },
+  {
+   "asl": "ticket-pronto-soccorso",
+   "url": "https://www.aspbasilicata.it/2013/09/26/il-funzionamento-dei-codici-colore-presso-i-pronto-soccorso-degli-ospedali/",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "ticket-pronto-soccorso/65ff21ae7fc6.txt",
+   "titolo": "Il funzionamento dei codici-colore presso i Pronto Soccorso degli Ospedali - ASP Basilicata",
+   "sha": "f6582557224114aa4d2a6d7b63f8db67c712851ea6dd44b9b77a7ee443693988",
+   "caratteri": 5008,
+   "cambiata": true
   }
  ]
 }

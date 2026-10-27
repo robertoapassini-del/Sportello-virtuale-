@@ -1,6 +1,6 @@
 {
  "regione": "emilia-romagna",
- "aggiornato": "2026-10-27T02:51:32.248Z",
+ "aggiornato": "2026-10-27T05:21:21.573Z",
  "pagine": [
   {
    "asl": "bologna",
@@ -1031,7 +1031,7 @@
    "titolo": "AUSL",
    "sha": "6b9333fd21c146b15645eee5893b82bbd0841ade0d63adbc14e0cc7ac02f61ab",
    "caratteri": 11340,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "parma",
@@ -1645,7 +1645,7 @@
    "titolo": "Home Page - AUSL RE",
    "sha": "ad5f2c85378493cd518c5f92846fa64b4b9b78c841cfd0df51a10e0ba4889952",
    "caratteri": 11338,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "reggio-emilia",
@@ -2689,6 +2689,24 @@
    "sha": "b9e90eb2edfa527d3bfce1dc2ad63993ff5a4465b1ab6a71f513cd7cbc4bd9af",
    "caratteri": 6530,
    "cambiata": false
+  },
+  {
+   "asl": "ticket-pronto-soccorso",
+   "url": "https://www.regione.emilia-romagna.it/ticket-ps",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "ticket-pronto-soccorso/9e6c542f5f7a.txt",
+   "titolo": "Come funzionano le visite al Pronto soccorso: le regole per l'applicazione del ticket - Regione Emilia-Romagna",
+   "sha": "d41f36c44ba4068209145fb026fd3d277a3b0bf579c4c236925d7dd2284d62af",
+   "caratteri": 6909,
+   "cambiata": true
+  },
+  {
+   "asl": "ticket-pronto-soccorso",
+   "url": "https://www.ausl.mo.it/come-fare-per/ticket-esenzioni-rimborsi/ticket-pronto-soccorso/",
+   "controllata": "2026-10-27",
+   "http": 404,
+   "finale": "https://www.ausl.mo.it/ausl-comunica/ticket-esenzioni-dal-pagamento-e-rimborsi/ticket-pronto-soccorso"
   }
  ]
 }

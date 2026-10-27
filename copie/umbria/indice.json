@@ -1,6 +1,6 @@
 {
  "regione": "umbria",
- "aggiornato": "2026-10-27T04:23:22.956Z",
+ "aggiornato": "2026-10-27T06:55:00.847Z",
  "pagine": [
   {
    "asl": "perugia",
@@ -85,9 +85,9 @@
    "http": 200,
    "file": "perugia/49d1959527fc.txt",
    "titolo": "Contatti - USL Umbria 2",
-   "sha": "46f779065d620da77a030cf72f4d57c00e8042b3aa5cac004a48ec45621aeae6",
-   "caratteri": 3357,
-   "cambiata": false
+   "sha": "ba6e020058766796310fdeefc2f724d85a6bcf03ecac1fb73d449226c6769e4b",
+   "caratteri": 3344,
+   "cambiata": true
   },
   {
    "asl": "perugia",
@@ -211,9 +211,9 @@
    "http": 200,
    "file": "perugia/aa0f36041456.txt",
    "titolo": "U.R.P. Ufficio Relazioni con il Pubblico - USL Umbria 2",
-   "sha": "635b2001cc8d6c12286d9c8e999fd56fe3b8be5bc278e2f4b69f517637089644",
-   "caratteri": 4920,
-   "cambiata": false
+   "sha": "5a4545b27a68f1f568182093413138a7559b2b5fca10cf4f5b19fb3d6d634c1f",
+   "caratteri": 4907,
+   "cambiata": true
   },
   {
    "asl": "perugia",
@@ -222,9 +222,9 @@
    "http": 200,
    "file": "perugia/636b04fad357.txt",
    "titolo": "USL Umbria 2 - Terni",
-   "sha": "1b31341cc80e214e95faa848b320b4298b9c9b3ec8d743038d347ea28589c240",
-   "caratteri": 9243,
-   "cambiata": false
+   "sha": "a078ec4f1971c369c029c49b316e5c727fa050253de823651438a23c7fbe6b91",
+   "caratteri": 9230,
+   "cambiata": true
   },
   {
    "asl": "perugia",
@@ -233,9 +233,9 @@
    "http": 200,
    "file": "perugia/d7281c2cde64.txt",
    "titolo": "Cure palliative e terapia del dolore - USL Umbria 2",
-   "sha": "49d40f772d0119e49b71e5bf1b13582c557df3a6c4431e5dae64b7b3c54cd77a",
-   "caratteri": 4843,
-   "cambiata": false
+   "sha": "da4c012a10c3b91b68a36ee10fa03db7d10bbcf37458f9d21431449bb5dd60b5",
+   "caratteri": 4830,
+   "cambiata": true
   },
   {
    "asl": "perugia",
@@ -244,9 +244,9 @@
    "http": 200,
    "file": "perugia/e32e5bf81ed3.txt",
    "titolo": "Rilascio copia della cartella clinica - USL Umbria 2",
-   "sha": "90e2815feb8cd415411a39b6f7048a5f8787daaa1e922cc9eecd5996df701824",
-   "caratteri": 6718,
-   "cambiata": false
+   "sha": "b39dc94b0d33cf5beb5170d3d00e6147df1769e8f5301ef582399d1af4d5205b",
+   "caratteri": 6705,
+   "cambiata": true
   },
   {
    "asl": "perugia",
@@ -276,9 +276,9 @@
    "http": 200,
    "file": "perugia/86f24d837340.txt",
    "titolo": "USL Umbria 2 - Disabili",
-   "sha": "f0da0990181c2d3e5ab71968055a9074e7aa0549950f98f630c86968e2fde60c",
-   "caratteri": 15006,
-   "cambiata": false
+   "sha": "590c8af7381aa1714e38d3d96e6b2d15a26de3bf060f8a883819d96ffce5a400",
+   "caratteri": 14993,
+   "cambiata": true
   },
   {
    "asl": "perugia",
@@ -287,9 +287,9 @@
    "http": 200,
    "file": "perugia/10b257958e81.txt",
    "titolo": "USL Umbria 2 - Donne",
-   "sha": "fdd00c378db98d1438c7f3f47570e241b32554958354367c7ee872835f4ad550",
-   "caratteri": 12584,
-   "cambiata": false
+   "sha": "6976bd529dae2170d2990494d35af900fb041f1c8d6727d6276acd16bb0bfb16",
+   "caratteri": 12571,
+   "cambiata": true
   },
   {
    "asl": "perugia",
@@ -400,8 +400,83 @@
    "asl": "perugia",
    "url": "https://www.uslumbria1.it/come-fare-per/presentare-una-segnalazione-o-un-reclamo-tramite-lurp/",
    "controllata": "2026-10-27",
-   "http": 0,
-   "errore": "curl: (28) Connection timed out after 30002 milliseconds"
+   "http": 200,
+   "finale": "https://www.uslumbria1.it/u-r-p/",
+   "file": "perugia/b2b7aab90c1b.txt",
+   "titolo": "U.R.P. - USL Umbria 1",
+   "sha": "c83ba761b768f442d1e75bf52b4e1b2a4a7111f45584c22b08bd7125ec1c3f24",
+   "caratteri": 7474,
+   "link_pdf": [
+    {
+     "url": "https://www.uslumbria1.it/wp-content/uploads/2026/08/PGA01GESTIONE-RECLAMI-Rev.06-del-2026-1_signed_signed.pdf",
+     "testo": "PGA01 PROCEDURA PER LA GESTIONE DEI RECLAMI_REV.06_26PGA01 PROCEDURA PER LA GESTIONE DEI RECLAMI_REV.06_26"
+    },
+    {
+     "url": "https://www.uslumbria1.it/wp-content/uploads/2023/08/MOD-01-Reclamo_Elogio.pdf",
+     "testo": "Modulo Reclamo - Segnalazione - Elogio"
+    },
+    {
+     "url": "https://www.uslumbria1.it/wp-content/uploads/2026/02/All.02-SCHEDA-Segnalazione-Rischio-evento.pdf",
+     "testo": "Scheda Segnalazione Rischio (per utenti che assistono ad incidente/evento che venga percepito come rischioso per la sicu"
+    },
+    {
+     "url": "https://www.uslumbria1.it/wp-content/uploads/2026/09/REPORT-URP-2024.pdf",
+     "testo": "Report Segnalazioni-Reclami anno 2024"
+    },
+    {
+     "url": "https://www.uslumbria1.it/wp-content/uploads/2026/09/RELAZIONE-annuale-2023-112.pdf",
+     "testo": "Report Segnalazioni-Reclami anno 2023"
+    },
+    {
+     "url": "https://www.uslumbria1.it/wp-content/uploads/2023/08/Report-Segnalazioni-Reclami-anno-2022.pdf",
+     "testo": "Report Segnalazioni-Reclami anno 2022"
+    },
+    {
+     "url": "https://www.uslumbria1.it/wp-content/uploads/2023/08/SINTESI-Report-AZIONI-DI-MIGLIORAMENTO-2022241.pdf",
+     "testo": "Report Azioni di Miglioramento anno 2022"
+    },
+    {
+     "url": "https://www.uslumbria1.it/wp-content/uploads/2023/03/0-REPORT-URP-2021-con-allegati-ok.pdf",
+     "testo": "Report Segnalazioni reclami elogi anno 2021"
+    },
+    {
+     "url": "https://www.uslumbria1.it/wp-content/uploads/2022/06/sintesi-Report-URP-Reclami-ed-elogi-2020-Copia.pdf",
+     "testo": "Report Segnalazioni-reclami anno 2020"
+    },
+    {
+     "url": "https://www.uslumbria1.it/wp-content/uploads/2022/06/SINTESI-REPORT-RECLAMI-2019.pdf",
+     "testo": "Report Segnalazioni-reclami anno 2019"
+    },
+    {
+     "url": "https://www.uslumbria1.it/wp-content/uploads/2022/06/SINTESI-Report-AZIONI-DI-MIGLIORAMENTO-2019.pdf",
+     "testo": "Report Azioni di Miglioramento anno 2019"
+    },
+    {
+     "url": "https://www.uslumbria1.it/wp-content/uploads/2022/06/SINTESI-Report-Reclami-2018.pdf",
+     "testo": "Report Segnalazioni-reclami anno 2018"
+    },
+    {
+     "url": "https://www.uslumbria1.it/wp-content/uploads/2022/06/SINTESI-Report-Azioni-di-Miglioramento-Reclami-2018.pdf",
+     "testo": "Report Azioni di Miglioramento anno 2018"
+    },
+    {
+     "url": "https://www.uslumbria1.it/wp-content/uploads/2022/06/SINTESI-Report-Reclami-2017doc.pdf",
+     "testo": "Report Segnalazioni-reclami anno 2017"
+    },
+    {
+     "url": "https://www.uslumbria1.it/wp-content/uploads/2022/06/SINTESI-Report-Azioni-di-Miglioramento-Reclami-anno-2017.pdf",
+     "testo": "Report Azioni di Miglioramento anno 2017"
+    },
+    {
+     "url": "https://www.uslumbria1.it/wp-content/uploads/2022/06/SINTESI-report-Reclami-2016.pdf",
+     "testo": "Report Segnalazioni-reclami anno 2016"
+    },
+    {
+     "url": "https://www.uslumbria1.it/wp-content/uploads/2022/06/SINTESI-Report-Azioni-di-Miglioramento-Reclami-anno-2016.pdf",
+     "testo": "Report Azioni di Miglioramento anno 2016"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "perugia",
@@ -490,9 +565,9 @@
    "http": 200,
    "file": "perugia/6a5aa25dcc05.txt",
    "titolo": "Anagrafe Assistibili Aziendale, Mobilità Internazionale e Assistenza allo Straniero. Iscrizione al Servizio Sanitario Regionale, Tessera Sanitaria, Fascicolo Sanitario Elettronico, scelta Medico o Pediatra di famiglia, Assistenza all'estero, esenzione per - USL Umbria 2",
-   "sha": "9554562305e72a1009637b06bd1f8d04a197b9e3591c1119a45857db402e3027",
-   "caratteri": 17654,
-   "cambiata": false
+   "sha": "ce5dbe7733a411eb320f6d22ee8c6e5fbb7fbd61195ba631793feb8434afb90e",
+   "caratteri": 17641,
+   "cambiata": true
   },
   {
    "asl": "perugia",
@@ -501,9 +576,9 @@
    "http": 200,
    "file": "perugia/5f26f05cf1c5.txt",
    "titolo": "Medici di Medicina Generale - USL Umbria 2",
-   "sha": "3bc39f33571f04ddece8fc3227247bbd9685c286040a055ce24339cccc2a099a",
-   "caratteri": 5178,
-   "cambiata": false
+   "sha": "d048136bdb41233dd3460b9c92c073845578c7829292ebe1c97a0cba539832c5",
+   "caratteri": 5165,
+   "cambiata": true
   },
   {
    "asl": "perugia",
@@ -512,9 +587,9 @@
    "http": 200,
    "file": "perugia/4b24a8507331.txt",
    "titolo": "Cure palliative - Hospice Spoleto - USL Umbria 2",
-   "sha": "f5312662823436de67e3491b7d6af44d2bc3309a0c81ebf7269d0317970d2082",
-   "caratteri": 7665,
-   "cambiata": false
+   "sha": "6399ce665d4d313ee7c0854494e997e5afea13441ab321e71bbba199fc164415",
+   "caratteri": 7652,
+   "cambiata": true
   },
   {
    "asl": "perugia",
@@ -523,9 +598,9 @@
    "http": 200,
    "file": "perugia/6462fa181c3d.txt",
    "titolo": "Accedere al servizio di assistenza domiciliare - USL Umbria 2",
-   "sha": "9d462bacab53871cf52337b56de384b9bd4ed05285eab417b6076f3b4de1c987",
-   "caratteri": 2638,
-   "cambiata": false
+   "sha": "fbaca9c36b902a6f20f1ad61b6979a435133617fca609cab1152ff0cd7f3073d",
+   "caratteri": 2625,
+   "cambiata": true
   },
   {
    "asl": "perugia",
@@ -534,9 +609,9 @@
    "http": 200,
    "file": "perugia/eaed628d5b1d.txt",
    "titolo": "USL Umbria 2 - Terni",
-   "sha": "e8e9769e3a4be9b8aed2867f719dd2e265c08fb972f95c9bf3e444411cbc323a",
-   "caratteri": 9256,
-   "cambiata": false
+   "sha": "5863fd273d1397680832c29637fd95afe636919f5ca34519f81688d8b0eaadd4",
+   "caratteri": 9243,
+   "cambiata": true
   },
   {
    "asl": "perugia",
@@ -545,9 +620,9 @@
    "http": 200,
    "file": "perugia/16c1e9660abd.txt",
    "titolo": "IN EVIDENZA - L'impegno delle aziende sanitarie e ospedaliere dell'Umbria per abbattere i tempi di attesa - USL Umbria 2",
-   "sha": "a597d9f699ef3a03b1a052441149537e9c15126ac1160298f34a374183cbe97a",
-   "caratteri": 7603,
-   "cambiata": false
+   "sha": "bb8f80b98971bea43588e26970dea26ca0fda18be62fb2123e4982d0ca9319bf",
+   "caratteri": 7590,
+   "cambiata": true
   },
   {
    "asl": "perugia",
@@ -556,9 +631,9 @@
    "http": 200,
    "file": "perugia/b2c783c1f4b6.txt",
    "titolo": "Urp - Ufficio relazioni con il pubblico aziendale - USL Umbria 2",
-   "sha": "df0d1ee82a2f26dc6ace63aedb82f065ce51cd808e0f40e71457f9f962b34462",
-   "caratteri": 1389,
-   "cambiata": false
+   "sha": "9a58345fa7d205a47c5d4deea14f45dc19098d89c00ce4d9d8e0a97b2aa6af57",
+   "caratteri": 1376,
+   "cambiata": true
   },
   {
    "asl": "perugia",
@@ -680,9 +755,9 @@
    "http": 200,
    "file": "terni/b95a36fc8bff.txt",
    "titolo": "USL Umbria 2",
-   "sha": "a64ac490e0812e19b8c68f46ece336388780c7a2e0ab20aa20ee8df46149cd5b",
-   "caratteri": 2354,
-   "cambiata": false
+   "sha": "69a5db3e79f8c8e937a26fecf7f6ec01698796160a4c608f9cbd0d97b8d59ebe",
+   "caratteri": 2341,
+   "cambiata": true
   },
   {
    "asl": "terni",
@@ -702,9 +777,9 @@
    "http": 200,
    "file": "terni/636b04fad357.txt",
    "titolo": "USL Umbria 2 - Terni",
-   "sha": "1b31341cc80e214e95faa848b320b4298b9c9b3ec8d743038d347ea28589c240",
-   "caratteri": 9243,
-   "cambiata": false
+   "sha": "a078ec4f1971c369c029c49b316e5c727fa050253de823651438a23c7fbe6b91",
+   "caratteri": 9230,
+   "cambiata": true
   },
   {
    "asl": "terni",
@@ -713,9 +788,9 @@
    "http": 200,
    "file": "terni/6462fa181c3d.txt",
    "titolo": "Accedere al servizio di assistenza domiciliare - USL Umbria 2",
-   "sha": "9d462bacab53871cf52337b56de384b9bd4ed05285eab417b6076f3b4de1c987",
-   "caratteri": 2638,
-   "cambiata": false
+   "sha": "fbaca9c36b902a6f20f1ad61b6979a435133617fca609cab1152ff0cd7f3073d",
+   "caratteri": 2625,
+   "cambiata": true
   },
   {
    "asl": "terni",
@@ -724,9 +799,9 @@
    "http": 200,
    "file": "terni/6a5aa25dcc05.txt",
    "titolo": "Anagrafe Assistibili Aziendale, Mobilità Internazionale e Assistenza allo Straniero. Iscrizione al Servizio Sanitario Regionale, Tessera Sanitaria, Fascicolo Sanitario Elettronico, scelta Medico o Pediatra di famiglia, Assistenza all'estero, esenzione per - USL Umbria 2",
-   "sha": "9554562305e72a1009637b06bd1f8d04a197b9e3591c1119a45857db402e3027",
-   "caratteri": 17654,
-   "cambiata": false
+   "sha": "ce5dbe7733a411eb320f6d22ee8c6e5fbb7fbd61195ba631793feb8434afb90e",
+   "caratteri": 17641,
+   "cambiata": true
   },
   {
    "asl": "terni",
@@ -735,9 +810,9 @@
    "http": 200,
    "file": "terni/49d1959527fc.txt",
    "titolo": "Contatti - USL Umbria 2",
-   "sha": "46f779065d620da77a030cf72f4d57c00e8042b3aa5cac004a48ec45621aeae6",
-   "caratteri": 3357,
-   "cambiata": false
+   "sha": "ba6e020058766796310fdeefc2f724d85a6bcf03ecac1fb73d449226c6769e4b",
+   "caratteri": 3344,
+   "cambiata": true
   },
   {
    "asl": "terni",
@@ -769,9 +844,9 @@
    "http": 200,
    "file": "terni/fa865d986b41.txt",
    "titolo": "Informazioni utili e contatti - USL Umbria 2",
-   "sha": "0e6bfbc0c62c3c2f9e26b45a7719106a4b5e575fb8d3b2a07665e2ee29e2a9a8",
-   "caratteri": 6532,
-   "cambiata": false
+   "sha": "1679cfe94c291644d34d78288a535a6de6261430c19b468967ab0cf1cd6f20c2",
+   "caratteri": 6519,
+   "cambiata": true
   },
   {
    "asl": "terni",
@@ -780,9 +855,9 @@
    "http": 200,
    "file": "terni/aa0f36041456.txt",
    "titolo": "U.R.P. Ufficio Relazioni con il Pubblico - USL Umbria 2",
-   "sha": "635b2001cc8d6c12286d9c8e999fd56fe3b8be5bc278e2f4b69f517637089644",
-   "caratteri": 4920,
-   "cambiata": false
+   "sha": "5a4545b27a68f1f568182093413138a7559b2b5fca10cf4f5b19fb3d6d634c1f",
+   "caratteri": 4907,
+   "cambiata": true
   },
   {
    "asl": "terni",
@@ -791,9 +866,9 @@
    "http": 200,
    "file": "terni/d7281c2cde64.txt",
    "titolo": "Cure palliative e terapia del dolore - USL Umbria 2",
-   "sha": "49d40f772d0119e49b71e5bf1b13582c557df3a6c4431e5dae64b7b3c54cd77a",
-   "caratteri": 4843,
-   "cambiata": false
+   "sha": "da4c012a10c3b91b68a36ee10fa03db7d10bbcf37458f9d21431449bb5dd60b5",
+   "caratteri": 4830,
+   "cambiata": true
   },
   {
    "asl": "terni",
@@ -802,9 +877,9 @@
    "http": 200,
    "file": "terni/e32e5bf81ed3.txt",
    "titolo": "Rilascio copia della cartella clinica - USL Umbria 2",
-   "sha": "90e2815feb8cd415411a39b6f7048a5f8787daaa1e922cc9eecd5996df701824",
-   "caratteri": 6718,
-   "cambiata": false
+   "sha": "b39dc94b0d33cf5beb5170d3d00e6147df1769e8f5301ef582399d1af4d5205b",
+   "caratteri": 6705,
+   "cambiata": true
   },
   {
    "asl": "terni",
@@ -813,9 +888,9 @@
    "http": 200,
    "file": "terni/86f24d837340.txt",
    "titolo": "USL Umbria 2 - Disabili",
-   "sha": "f0da0990181c2d3e5ab71968055a9074e7aa0549950f98f630c86968e2fde60c",
-   "caratteri": 15006,
-   "cambiata": false
+   "sha": "590c8af7381aa1714e38d3d96e6b2d15a26de3bf060f8a883819d96ffce5a400",
+   "caratteri": 14993,
+   "cambiata": true
   },
   {
    "asl": "terni",
@@ -824,9 +899,9 @@
    "http": 200,
    "file": "terni/10b257958e81.txt",
    "titolo": "USL Umbria 2 - Donne",
-   "sha": "fdd00c378db98d1438c7f3f47570e241b32554958354367c7ee872835f4ad550",
-   "caratteri": 12584,
-   "cambiata": false
+   "sha": "6976bd529dae2170d2990494d35af900fb041f1c8d6727d6276acd16bb0bfb16",
+   "caratteri": 12571,
+   "cambiata": true
   },
   {
    "asl": "terni",
@@ -835,9 +910,9 @@
    "http": 200,
    "file": "terni/5f26f05cf1c5.txt",
    "titolo": "Medici di Medicina Generale - USL Umbria 2",
-   "sha": "3bc39f33571f04ddece8fc3227247bbd9685c286040a055ce24339cccc2a099a",
-   "caratteri": 5178,
-   "cambiata": false
+   "sha": "d048136bdb41233dd3460b9c92c073845578c7829292ebe1c97a0cba539832c5",
+   "caratteri": 5165,
+   "cambiata": true
   },
   {
    "asl": "terni",
@@ -846,9 +921,9 @@
    "http": 200,
    "file": "terni/4b24a8507331.txt",
    "titolo": "Cure palliative - Hospice Spoleto - USL Umbria 2",
-   "sha": "f5312662823436de67e3491b7d6af44d2bc3309a0c81ebf7269d0317970d2082",
-   "caratteri": 7665,
-   "cambiata": false
+   "sha": "6399ce665d4d313ee7c0854494e997e5afea13441ab321e71bbba199fc164415",
+   "caratteri": 7652,
+   "cambiata": true
   },
   {
    "asl": "terni",
@@ -857,9 +932,9 @@
    "http": 200,
    "file": "terni/eaed628d5b1d.txt",
    "titolo": "USL Umbria 2 - Terni",
-   "sha": "e8e9769e3a4be9b8aed2867f719dd2e265c08fb972f95c9bf3e444411cbc323a",
-   "caratteri": 9256,
-   "cambiata": false
+   "sha": "5863fd273d1397680832c29637fd95afe636919f5ca34519f81688d8b0eaadd4",
+   "caratteri": 9243,
+   "cambiata": true
   },
   {
    "asl": "terni",
@@ -868,9 +943,9 @@
    "http": 200,
    "file": "terni/16c1e9660abd.txt",
    "titolo": "IN EVIDENZA - L'impegno delle aziende sanitarie e ospedaliere dell'Umbria per abbattere i tempi di attesa - USL Umbria 2",
-   "sha": "a597d9f699ef3a03b1a052441149537e9c15126ac1160298f34a374183cbe97a",
-   "caratteri": 7603,
-   "cambiata": false
+   "sha": "bb8f80b98971bea43588e26970dea26ca0fda18be62fb2123e4982d0ca9319bf",
+   "caratteri": 7590,
+   "cambiata": true
   },
   {
    "asl": "terni",
@@ -879,9 +954,9 @@
    "http": 200,
    "file": "terni/b2c783c1f4b6.txt",
    "titolo": "Urp - Ufficio relazioni con il pubblico aziendale - USL Umbria 2",
-   "sha": "df0d1ee82a2f26dc6ace63aedb82f065ce51cd808e0f40e71457f9f962b34462",
-   "caratteri": 1389,
-   "cambiata": false
+   "sha": "9a58345fa7d205a47c5d4deea14f45dc19098d89c00ce4d9d8e0a97b2aa6af57",
+   "caratteri": 1376,
+   "cambiata": true
   },
   {
    "asl": "terni",
@@ -1324,9 +1399,9 @@
    "http": 200,
    "file": "usl-umbria2/32d17b758efb.txt",
    "titolo": "Distretti - USL Umbria 2",
-   "sha": "3357a01a9495829d0ff7c332c3f2c1de29ad6c4833e60e8c61399f06babb502f",
-   "caratteri": 2000,
-   "cambiata": false
+   "sha": "4e04eea1edca6698e2247b3335e604e9ac774edbefaa01a64456c5731dd79b48",
+   "caratteri": 1987,
+   "cambiata": true
   },
   {
    "asl": "usl-umbria2",
@@ -1335,9 +1410,9 @@
    "http": 200,
    "file": "usl-umbria2/b5ca4a49ff90.txt",
    "titolo": "Sezione per il cittadino - USL Umbria 2",
-   "sha": "3e4a77e7203d44b705b330e2ac17c29c38c39b78986725d164df80174738f714",
-   "caratteri": 1843,
-   "cambiata": false
+   "sha": "5931bb50460269d602023e1e72972f47cc1d6f1c71a8b1e641c82e6734a31451",
+   "caratteri": 1830,
+   "cambiata": true
   },
   {
    "asl": "usl-umbria2",
@@ -1346,9 +1421,9 @@
    "http": 200,
    "file": "usl-umbria2/a22c38d34b2f.txt",
    "titolo": "USL Umbria 2 - Terni",
-   "sha": "e848b1e72215d5829517d28320e5458d82f8692914bd69eba3a1de71d80b6bb1",
-   "caratteri": 9534,
-   "cambiata": false
+   "sha": "25732ec07f06b93b681229456ea8bf7f150418850613e3f9b45bba4e4b7137da",
+   "caratteri": 9521,
+   "cambiata": true
   },
   {
    "asl": "usl-umbria2",
@@ -1357,9 +1432,41 @@
    "http": 200,
    "file": "usl-umbria2/493110ae74dc.txt",
    "titolo": "Servizio NUS (Numero Umbria Sanità) e CUP WEB (Prenotazioni e pagamenti online) della Regione Umbria - USL Umbria 2",
-   "sha": "6c7d507f0598807ef0cd421a352d74610539bc1ae33bec4f2276ce9249b863e8",
-   "caratteri": 2577,
-   "cambiata": false
+   "sha": "d6e9aa2238120fe7fa122fd3f3e97b63290e7fa19faf0508ac8ff481e71851fa",
+   "caratteri": 2564,
+   "cambiata": true
+  },
+  {
+   "asl": "ticket-pronto-soccorso",
+   "url": "https://www.uslumbria2.it/notizie/accedere-al-pronto-soccorso",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "ticket-pronto-soccorso/1c6a2f93540d.txt",
+   "titolo": "Accedere al Pronto Soccorso - USL Umbria 2",
+   "sha": "a8fe728ea2f5873cc406bf24003aa1ca554ae17e03fa801fa403127ccaa97e61",
+   "caratteri": 3940,
+   "cambiata": true
+  },
+  {
+   "asl": "ticket-pronto-soccorso",
+   "url": "https://www.uslumbria1.it/servizio/pronto-soccorso-118/",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "ticket-pronto-soccorso/24e47e33af6c.txt",
+   "titolo": "Pronto Soccorso - 118 - USL Umbria 1",
+   "sha": "87f351e713087870bd2bbf1c421804422c35188197b8f9f276a9b86e3130f790",
+   "caratteri": 8945,
+   "link_pdf": [
+    {
+     "url": "https://www.uslumbria1.it/wp-content/uploads/2022/05/DDG_1335-2017_Modalita-richiesta-documentazione-sanitaria.pdf",
+     "testo": "Procedura"
+    },
+    {
+     "url": "https://www.uslumbria1.it/wp-content/uploads/2022/05/Triage_COMPLETO_DEFINITIVO.pdf",
+     "testo": "Scheda di accoglienza e triage mulitilingue (Inglese, Rumeno, Arabo e Cinese)"
+    }
+   ],
+   "cambiata": true
   }
  ]
 }

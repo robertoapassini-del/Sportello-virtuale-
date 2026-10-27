@@ -1,6 +1,6 @@
 {
  "regione": "liguria",
- "aggiornato": "2026-10-27T03:08:49.526Z",
+ "aggiornato": "2026-10-27T05:38:49.555Z",
  "pagine": [
   {
    "asl": "genova",
@@ -11,7 +11,7 @@
    "titolo": "Home - ASL3",
    "sha": "55a9e1fa18f930f9244c3db2e0ed87eb18b569c2ffedb3ef5ba09a76a3ce8a32",
    "caratteri": 7904,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "genova",
@@ -1811,6 +1811,18 @@
     }
    ],
    "cambiata": false
+  },
+  {
+   "asl": "ticket-pronto-soccorso",
+   "url": "https://www.asl1.liguria.it/emergenze-e-guardia-medica/codice-bianco-pronto-soccorso.html",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "ticket-pronto-soccorso/4a4188a32920.txt",
+   "titolo": "Codice Bianco Pronto Soccorso - ASL1",
+   "sha": "3e5cb268b2380b79e696f55f24c3b7f41af9f339141c85b9f7adde6c29555db7",
+   "caratteri": 6966,
+   "email_nascoste": 1,
+   "cambiata": true
   }
  ]
 }

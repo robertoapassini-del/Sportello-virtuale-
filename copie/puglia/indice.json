@@ -1,6 +1,6 @@
 {
  "regione": "puglia",
- "aggiornato": "2026-10-27T03:47:53.599Z",
+ "aggiornato": "2026-10-27T06:18:35.368Z",
  "pagine": [
   {
    "asl": "bari",
@@ -919,45 +919,29 @@
    "asl": "regione-puglia",
    "url": "https://www.regione.puglia.it/en/web/comunicazione-istituzionale/-/fascicolo-sanitario-elettronico-tu-al-centro-dei-nostri-servizi",
    "controllata": "2026-10-27",
-   "http": 200,
-   "file": "regione-puglia/4c3ef73f9b29.txt",
-   "titolo": "Fascicolo sanitario elettronico: tu al centro dei nostri servizi - Comunicazione Istituzionale - Regione Puglia",
-   "sha": "9de52303185d3b8aa719b7f59c60eb1510ea1fb8d43fcfdca9b90e49e84f4519",
-   "caratteri": 3046,
-   "cambiata": false
+   "http": 0,
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "regione-puglia",
    "url": "https://www.regione.puglia.it/web/salute-sport-e-buona-vita/-/attiva-il-fascicolo-sanitario-elettronico-in-farmacia",
    "controllata": "2026-10-27",
-   "http": 200,
-   "file": "regione-puglia/5d14b74c736d.txt",
-   "titolo": "Attiva il Fascicolo sanitario elettronico in farmacia - Salute, sport e buona vita - Regione Puglia",
-   "sha": "df1ae1bf59cb341652150039b8c3d4e8e3fd0f0a916c448f9073ed546bd64be0",
-   "caratteri": 2790,
-   "cambiata": false
+   "http": 0,
+   "errore": "curl: (52) Empty reply from server"
   },
   {
    "asl": "regione-puglia",
    "url": "https://www.regione.puglia.it/web/salute-sport-e-buona-vita/-/servizi-online-di-puglia-salute-in-manutenzione-come-prenotare-le-prestazioni-specialistiche",
    "controllata": "2026-10-27",
-   "http": 200,
-   "file": "regione-puglia/35efdd7389a5.txt",
-   "titolo": "Servizi online di Puglia Salute in manutenzione, come prenotare le prestazioni specialistiche - Salute, sport e buona vita - Regione Puglia",
-   "sha": "f62748c829210bdcc02263638f229ccc3cac5345c878ffa5f7e0e5ccaaa6e5ee",
-   "caratteri": 2823,
-   "cambiata": false
+   "http": 0,
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "regione-puglia",
    "url": "https://press.regione.puglia.it/-/in-puglia-sar%C3%A0-attivato-il-116117-il-nuovo-numero-da-chiamare-per-l-assistenza-territoriale.-dal-ministero-%C3%A8-giunta-l-autorizzazione",
    "controllata": "2026-10-27",
-   "http": 200,
-   "file": "regione-puglia/16e9622ec34c.txt",
-   "titolo": "In Puglia sarà attivato il 116117, il nuovo numero da chiamare per l’assistenza territoriale. Dal Ministero è giunta l’autorizzazione - PRESS REGIONE - Regione Puglia",
-   "sha": "e179dd4fdb0b1ea1c66c8ae5fec4fe76e0f4d1f38d04ec0f5234a218ee1ba116",
-   "caratteri": 4397,
-   "cambiata": false
+   "http": 0,
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "inps-puglia",
@@ -1063,6 +1047,18 @@
    "sha": "0762b5f340a657dfdd0b6f32033e45df9e0b970e628981896b1d74ebe45c16cf",
    "caratteri": 6015,
    "cambiata": false
+  },
+  {
+   "asl": "ticket-pronto-soccorso",
+   "url": "https://sist.sanita.puglia.it/documents/25619/125067/Tabella+Quota+Fissa+e+Ticket+Pronto+Soccorso+e+Specialistica.pdf/e4c9a358-1d08-4670-a298-843990cb1225",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "ticket-pronto-soccorso/faefd0a9ef08.txt",
+   "titolo": "Tabella Quota Fissa e Ticket Pronto Soccorso e Specialistica FINALE.xlsx",
+   "sha": "d2ff4bf02ca549d977460562e562f9c780493bed51c0b1df1ebb8d0bbf72d7b6",
+   "caratteri": 4675,
+   "pdf": true,
+   "cambiata": true
   }
  ]
 }

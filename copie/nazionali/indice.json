@@ -1,6 +1,6 @@
 {
  "regione": "nazionali",
- "aggiornato": "2026-10-27T04:43:18.223Z",
+ "aggiornato": "2026-10-27T07:15:03.266Z",
  "pagine": [
   {
    "asl": "urgenze",
@@ -59,7 +59,7 @@
      "testo": "Dalla parte dei bambini - Dal bisogno alla risposta"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ascolto",
@@ -558,8 +558,8 @@
    "http": 200,
    "file": "regole-contrassegno-disabili/206ded71e91b.txt",
    "titolo": "Polizia Municipale - Comune di Palermo",
-   "sha": "ef79b8181f0617e0746c46c8b6fabaffe5fb5a0d4b6cb645fdea37c407a468c6",
-   "caratteri": 1872,
+   "sha": "1f9d79868e1ab13d4cbe1ddacb3db44a3b3eedfbcfc3ab27544f3182c4f1ce9d",
+   "caratteri": 5042,
    "cambiata": true
   },
   {
@@ -881,7 +881,7 @@
    "caratteri": 15273,
    "link_pdf": [
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x96021",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x57487",
      "testo": "Modulo per AUTOCERTIFICAZIONE"
     }
    ],
@@ -923,11 +923,11 @@
   },
   {
    "asl": "regole-esenzione",
-   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x96021",
+   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x57487",
    "controllata": "2026-10-27",
    "da_pagina": "https://www.aslcittaditorino.it/prestazioni/esenzione-ticket-per-reddito/",
    "http": 200,
-   "file": "regole-esenzione/dcb07b1c2011.txt",
+   "file": "regole-esenzione/c124ed5aa000.txt",
    "titolo": "Autocertificazione di esenzione",
    "sha": "0ec5d984b6bd5ef03f12e32ef41b78dfdf250def32f239cb24d846beeee617d9",
    "caratteri": 10878,
@@ -1568,7 +1568,7 @@
    "sha": "c66f24691b8e27eaa344a6c456d6deba602b0e00d629ad20f740e2b14bf209ad",
    "caratteri": 6917,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-palliative",
@@ -1628,8 +1628,8 @@
    "http": 200,
    "file": "regole-piano/0f06e59a557d.txt",
    "titolo": "Note AIFA | Agenzia Italiana del Farmaco",
-   "sha": "4d533109fb25d1d1add258caa0dc6dd73c380cefa689494b7f2d7b6930874c22",
-   "caratteri": 13870,
+   "sha": "9b38aabf6a74935c1af83d65f8f69877242b58d58b58f615beaccd85126b92bf",
+   "caratteri": 13888,
    "link_pdf": [
     {
      "url": "https://www.aifa.gov.it/documents/20142/3104101/PT_eritropoietine_ex_nota_12.pdf",
@@ -1968,6 +1968,23 @@
    "caratteri": 4163,
    "email_nascoste": 3,
    "cambiata": false
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://www.asp.cz.it/ticket/",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-pronto-soccorso/87235351474a.txt",
+   "titolo": "",
+   "sha": "4e1d772f4deb91bf950aad98543e24ce45a7b7e9f06df44c93b842f71e60b881",
+   "caratteri": 11269,
+   "link_pdf": [
+    {
+     "url": "https://www.asp.cz.it/files/Allegati%20pagine/rimborsi%20ticket.pdf",
+     "testo": "Rimborso Ticket"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "regole-pronto-soccorso",
@@ -2493,7 +2510,7 @@
    "sha": "ddceeab82ba0a12cf67cc8231438a667e82c6ab7b1b6b70a18e621422535ceb2",
    "caratteri": 163979,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "tema-verifiche",
@@ -2510,7 +2527,7 @@
      "testo": "Gazzetta Ufficiale della Repubblica Italiana n. 159 dell&rsquo;11 luglio 2025.pdf"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "tema-verifiche",
@@ -2522,7 +2539,7 @@
    "sha": "7873dc03b07e92456247db8140ccb361d4791914810d4d776a2c3cdc1b885d51",
    "caratteri": 383474,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "tema-verifiche",
@@ -2534,7 +2551,7 @@
    "sha": "2fb147ed051ff4ea40c0f4860b6a1a0dc1d411b7e54395a6fb1713cd47f7fb27",
    "caratteri": 105427,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "tema-verifiche",
@@ -2546,7 +2563,7 @@
    "sha": "c66f24691b8e27eaa344a6c456d6deba602b0e00d629ad20f740e2b14bf209ad",
    "caratteri": 6917,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "tema-verifiche",
@@ -2557,7 +2574,7 @@
    "titolo": "D.A. n.780 del 30/07/2021 | Regione Siciliana",
    "sha": "57b066e8279b28a9fab930cbdb60d56473f6a2149e4be49974c4b13e701e7620",
    "caratteri": 2294,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "tema-verifiche",
@@ -2574,7 +2591,7 @@
    "titolo": "Cartelle cliniche - Garante Privacy",
    "sha": "37bf085dfd19b6fa3a3d16ac4553bc2790c7c68355b158926cca4a8edd373149",
    "caratteri": 12227,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "tema-verifiche",
@@ -2586,7 +2603,7 @@
    "sha": "02885971026536b2787ebd6729a2ead79b54b6da00a8f52ed2bcf9b360b4309d",
    "caratteri": 7429,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "tema-verifiche",
@@ -2597,7 +2614,7 @@
    "titolo": "LEGGE 24 dicembre 1993, n. 537 - Normattiva",
    "sha": "129159f77dc8deb2d79d83d62ebdeb407313037f807dbe79dc5a59d8740e876e",
    "caratteri": 21765,
-   "cambiata": true
+   "cambiata": false
   }
  ]
 }

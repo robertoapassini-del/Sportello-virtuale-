@@ -1,6 +1,6 @@
 {
  "regione": "veneto",
- "aggiornato": "2026-10-27T04:35:28.131Z",
+ "aggiornato": "2026-10-27T07:07:13.881Z",
  "pagine": [
   {
    "asl": "belluno",
@@ -537,13 +537,12 @@
    "asl": "venezia",
    "url": "https://www.aulss4.veneto.it/home/dettaglio/strutture/casa-della-comunita-di-san-dona-di-piave",
    "controllata": "2026-10-27",
-   "browser": true,
    "http": 200,
    "file": "venezia/97f30e8bfdf9.txt",
-   "titolo": "Casa della Comunità di San Donà di Piave",
-   "sha": "62c415b08490abae4d9ae002d01afe40c11f07b8b81b68995d7c01fcc3c2de3b",
-   "caratteri": 9153,
-   "cambiata": false
+   "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
+   "sha": "6bc2275696536324da914a4390835a8856b32ef9c71aa40dd59c0c5b84156a8f",
+   "caratteri": 45,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -807,11 +806,13 @@
    "asl": "venezia",
    "url": "https://www.aulss4.veneto.it/dettaglio/contenuto/richiedere-la-cartella-clinica",
    "controllata": "2026-10-27",
+   "browser": true,
    "http": 200,
+   "finale": "https://www.aulss4.veneto.it/home",
    "file": "venezia/901abe8bfa4a.txt",
    "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
-   "sha": "6bc2275696536324da914a4390835a8856b32ef9c71aa40dd59c0c5b84156a8f",
-   "caratteri": 45,
+   "sha": "8b1b2e4c90ba26e77f7aff14da75be9cdcfa7664256822e2d2aeaad870c1a503",
+   "caratteri": 5269,
    "cambiata": true
   },
   {
@@ -1047,7 +1048,7 @@
    "titolo": "Homepage ULSS6 Euganea",
    "sha": "42d9ed0e5f01e2939bc735f8e4fb6fcb9ece553f439c236f14db898ebaf81acc",
    "caratteri": 7067,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "padova",
@@ -1999,6 +2000,41 @@
    "url": "https://www.aulss8.veneto.it/servizi-online/prenota-e-paga-online/percorsi-di-tutela/",
    "controllata": "2026-10-27",
    "http": 404
+  },
+  {
+   "asl": "ticket-pronto-soccorso",
+   "url": "https://salute.regione.veneto.it/organizzazione-sssr/il-servizio-socio-sanitario-regionale/assistenza-ospedaliera/pronto-soccorso/dimissioni",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "ticket-pronto-soccorso/22eab8bc5c5d.txt",
+   "titolo": "Dimissioni | Regione del Veneto",
+   "sha": "b4040616f1572ac58d5557eb0ca5e06b22b1bacd0cd1a24e290b4ebcd5596250",
+   "caratteri": 6192,
+   "link_pdf": [
+    {
+     "url": "https://salute.regione.veneto.it/contents/2026-08/Il%20nuovo%20logo%20SSSR.pptx.pdf?VersionId=7kL2zjvZTHlpMZ.VP.WJPnRpp3IfTUSg",
+     "testo": "Logo SSSR"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "ticket-pronto-soccorso",
+   "url": "https://salute.regione.veneto.it/assistenza-ospedaliera/pronto-soccorso/esenzioni",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "finale": "https://salute.regione.veneto.it/organizzazione-sssr/il-servizio-socio-sanitario-regionale/assistenza-ospedaliera/pronto-soccorso/esenzioni",
+   "file": "ticket-pronto-soccorso/f661c220e10e.txt",
+   "titolo": "Esenzioni | Regione del Veneto",
+   "sha": "89c0757c44d75a785a2208aaf87fec0006665caea73ce076ba8ec6d1a379e6f0",
+   "caratteri": 4876,
+   "link_pdf": [
+    {
+     "url": "https://salute.regione.veneto.it/contents/2026-08/Il%20nuovo%20logo%20SSSR.pptx.pdf?VersionId=7kL2zjvZTHlpMZ.VP.WJPnRpp3IfTUSg",
+     "testo": "Logo SSSR"
+    }
+   ],
+   "cambiata": true
   }
  ]
 }

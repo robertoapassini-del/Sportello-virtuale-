@@ -1,6 +1,6 @@
 {
  "regione": "lazio",
- "aggiornato": "2026-10-27T03:03:38.194Z",
+ "aggiornato": "2026-10-27T05:33:41.027Z",
  "pagine": [
   {
    "asl": "frosinone",
@@ -29,7 +29,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "25015c5b43a61366d98477466f983899fc94941dc880c12de5946d252a06aee3",
    "caratteri": 4170,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "frosinone",
@@ -41,7 +41,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
    "caratteri": 2358,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "frosinone",
@@ -383,7 +383,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -394,7 +394,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "25015c5b43a61366d98477466f983899fc94941dc880c12de5946d252a06aee3",
    "caratteri": 4170,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -406,7 +406,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
    "caratteri": 2358,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -463,7 +463,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -480,7 +480,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -540,7 +540,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -597,7 +597,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -618,7 +618,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -656,7 +656,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -708,7 +708,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -875,7 +875,7 @@
      "testo": "Raccomandazioni in caso di mancata potabilità dell’acqua per uso domestico"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "rieti",
@@ -886,7 +886,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "25015c5b43a61366d98477466f983899fc94941dc880c12de5946d252a06aee3",
    "caratteri": 4170,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "rieti",
@@ -898,7 +898,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
    "caratteri": 2358,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "rieti",
@@ -1497,7 +1497,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "25015c5b43a61366d98477466f983899fc94941dc880c12de5946d252a06aee3",
    "caratteri": 4170,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -1509,7 +1509,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
    "caratteri": 2358,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -1518,9 +1518,13 @@
    "http": 200,
    "file": "roma/e0d930024e6e.txt",
    "titolo": "Punto Unico di Accesso (PUA)",
-   "sha": "db256e48a8a29bd66676b02ec6d271b6ea6338cf353a11d14c737b2fbeffa12e",
+   "sha": "2fd9b6847d4f20e6c5cacf091cbbc0613cee5273f60d4e7815b1808b80802eb5",
    "caratteri": 22475,
    "link_pdf": [
+    {
+     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_-_Bangla.pdf",
+     "testo": "LEGGE 104/92"
+    },
     {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_arabo.pdf",
      "testo": "ЗАКОН 104/92"
@@ -1528,14 +1532,6 @@
     {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_Tagalog.pdf",
      "testo": "GUIDA SUI SERVIZI SOCIALI E SANITARI PER LA DISABILITÀ"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_-_Bangla.pdf",
-     "testo": "LEGGE 104/92"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ-Bangla-Rev.pdf",
-     "testo": "LEGEA 104/92"
     },
     {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_Ucraino.pdf",
@@ -1546,6 +1542,14 @@
      "testo": "ЩОМІСЯЧНА ДОПОМОГА НА ШКОЛЯРІВ З ІНВАЛІДНІСТЮ"
     },
     {
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ-Bangla-Rev.pdf",
+     "testo": "LEGEA 104/92"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_italiano_1_.pdf",
+     "testo": "মাসিক ভাতা"
+    },
+    {
      "url": "https://www.aslroma1.it/uploads/files/39_40_DISABILITY-1.pdf",
      "testo": "الاستفادة النقدیة الشھریة"
     },
@@ -1554,8 +1558,12 @@
      "testo": "INDEMNIZAȚIA LUNARĂ DE FRECVENȚĂ"
     },
     {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_italiano_1_.pdf",
-     "testo": "মাসিক ভাতা"
+     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_arabo.pdf",
+     "testo": "BUWANANG BENEPISYO PARA SA MAY KAPANSANAN"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/47_24_Legge_104_Ucraino.pdf",
+     "testo": "LEY 104/92"
     },
     {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_italiano.pdf",
@@ -1564,14 +1572,6 @@
     {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_-Spagnolo_CORRETTO.pdf",
      "testo": "قانون 104 / 92"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_arabo.pdf",
-     "testo": "BUWANANG BENEPISYO PARA SA MAY KAPANSANAN"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_Legge_104_Ucraino.pdf",
-     "testo": "LEY 104/92"
     }
    ],
    "cambiata": true
@@ -1877,7 +1877,7 @@
    "http": 200,
    "file": "roma/2b46e5d8fe38.txt",
    "titolo": "ASL Roma 2 - Punto Unico di Accesso - PUA",
-   "sha": "32d2585689ca5412066d8f5e992fd4aa3c08ee2af346b68d606a2013291cdd48",
+   "sha": "3217b6fd71e21f38bdbc6d73738369869feb1297214dde95065f9e75507f459d",
    "caratteri": 11883,
    "email_nascoste": 11,
    "cambiata": true
@@ -1948,7 +1948,7 @@
    "http": 200,
    "file": "roma/3feb23bab29f.txt",
    "titolo": "ASL Roma 2 - UOSD Coordinamento Screening",
-   "sha": "308948f1cd19a5d2fc950c95bef9dfe1a8c8735f57c9584b4df3de64a4e01c67",
+   "sha": "80045c3dc475f3f8522ba20527d5a587ef1201191d439ca1d49a2d5bbfe06c92",
    "caratteri": 8743,
    "email_nascoste": 3,
    "cambiata": true
@@ -2040,7 +2040,7 @@
    "http": 200,
    "file": "roma/7e7cbafb32a1.txt",
    "titolo": "15.04.05 Liste di attesa",
-   "sha": "ea2eedcaba511f493ffc148dfd204e0730c25655b4f4d718c0a8322627bf9646",
+   "sha": "c17b40b30761bc281f59c2db28dc77f2551d472cbb59c7b3df30d87c2f93abe2",
    "caratteri": 8673,
    "link_pdf": [
     {
@@ -2733,7 +2733,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "25015c5b43a61366d98477466f983899fc94941dc880c12de5946d252a06aee3",
    "caratteri": 4170,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "viterbo",
@@ -2745,7 +2745,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
    "caratteri": 2358,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "viterbo",
@@ -3131,7 +3131,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "f13c9eeb4924a61ff758ef61496e0efa7bdc4b642b901535cb8689a074e2f47e",
    "caratteri": 4010,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "inps-lazio",
@@ -3219,7 +3219,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "1bce8ebe3b8686ea81f43bdfe2f8368c4f413f3887be9bbead104452d34aa979",
    "caratteri": 2796,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-lazio",
@@ -3330,7 +3330,7 @@
    "titolo": "Guardia Medica – Continuità Assistenziale",
    "sha": "702d201af9bb6d40445199f5d37a6edcbfc1769a79d8c13296387d90c93758a9",
    "caratteri": 17901,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma1",
@@ -3403,7 +3403,7 @@
    "http": 200,
    "file": "asl-roma2/2e0f163ef6a3.txt",
    "titolo": "ASL Roma 2 - Guardia Medica",
-   "sha": "79018f18b733f768c60931f8f61e8738ad45d86cc5cc928a55c664da1103133d",
+   "sha": "69652d7a7b1ad23aba2afdb90be104bf83b1e0ec9850181f414e9ddcb4d33ba8",
    "caratteri": 8091,
    "cambiata": true
   },
@@ -3449,7 +3449,7 @@
      "testo": ""
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma3",
@@ -3477,7 +3477,7 @@
      "testo": "Scarica Locandina"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma3",
@@ -3498,7 +3498,7 @@
      "testo": "modulo"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma3",
@@ -3544,7 +3544,7 @@
      "testo": "Dichiarazione di Accessibilità"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma4",
@@ -3792,7 +3792,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-latina",
@@ -3813,7 +3813,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-latina",
@@ -3830,7 +3830,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-latina",
@@ -3887,7 +3887,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-rieti",
@@ -3917,7 +3917,7 @@
      "testo": "Raccomandazioni in caso di mancata potabilità dell’acqua per uso domestico"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-rieti",
@@ -4077,6 +4077,52 @@
     }
    ],
    "cambiata": false
+  },
+  {
+   "asl": "ticket-pronto-soccorso",
+   "url": "https://www.aslroma2.it/index.php/uoc-medicina-d-urgenza-e-pronto-soccorso-2",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "ticket-pronto-soccorso/6f2a28e1087b.txt",
+   "titolo": "ASL Roma 2 - UOC Medicina d'Urgenza e Pronto Soccorso",
+   "sha": "4605d554b87cf29160cc0abeee3e343de2c30873d9100973d086426f83ac1d70",
+   "caratteri": 14507,
+   "email_nascoste": 4,
+   "cambiata": true
+  },
+  {
+   "asl": "ticket-pronto-soccorso",
+   "url": "https://www.asl.vt.it/pagamento-ticket-ed-esenzioni",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "ticket-pronto-soccorso/1837f3fc6e31.txt",
+   "titolo": "Pagamento ticket ed esenzioni ASL Viterbo - ASL VITERBO",
+   "sha": "570f6546d83de41a60fe4c8c1b06b4ea28b67797e762a6875eece030ad3bb23e",
+   "caratteri": 6329,
+   "link_pdf": [
+    {
+     "url": "https://www.asl.vt.it/storage/uploads/forms/7d4f9528e984dc4a3eadcb14505e15c7.pdf",
+     "testo": "istanza"
+    },
+    {
+     "url": "https://www.asl.vt.it/cookie-policy.pdf",
+     "testo": "Cookie Policy"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "ticket-pronto-soccorso",
+   "url": "https://www.asl.vt.it/storage/uploads/forms/7d4f9528e984dc4a3eadcb14505e15c7.pdf",
+   "controllata": "2026-10-27",
+   "da_pagina": "https://www.asl.vt.it/pagamento-ticket-ed-esenzioni",
+   "http": 200,
+   "file": "ticket-pronto-soccorso/3806247eff72.txt",
+   "titolo": "SISTEMA SANITARIO REGIONALE",
+   "sha": "05e2addf5f1b86e28583a38ceb4f8d322f49189904287545bd323a2cc9f3dd94",
+   "caratteri": 1476,
+   "pdf": true,
+   "cambiata": true
   }
  ]
 }
