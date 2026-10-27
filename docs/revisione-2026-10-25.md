@@ -193,9 +193,15 @@ Lette le copie della notte del 27/10 (tema «verifiche»).
 - **Prima copia gratis della cartella clinica**: confermata dalla FAQ del Garante; il sito già lo scrive bene.
 
 Ancora aperti:
-- **Franchigia di 129,11 euro**: la guida non dice se si conta sul totale delle spese dell'anno, come scrive la
-  pagina dei consigli pratici dell'assistenza a casa. Serve la scheda dell'Agenzia delle Entrate sulle spese sanitarie.
 - **E01**: la L. 537/1993 dice «età superiore a sessantacinque anni». Resta da chiarire se vale dal compleanno.
 - **Pediatri (rep. 28/CSR)**: la copia ha solo l'intesa, non il testo dell'accordo. Serve l'url dell'allegato.
 - **Ausili in Sicilia (D.A. 780/2021)**: la copia ha solo la pagina con i link. Serve l'url del PDF del decreto.
 - **Cure all'estero in Sicilia (direttiva 9368/2026)**: l'url risponde 404. Serve un indirizzo nuovo.
+
+## Gruppo 2, terzo passo (27/10/2026)
+- **Franchigia di 129,11 euro**: la guida dell'Agenzia delle Entrate sulle spese sanitarie dice «19% della differenza tra il
+  totale della somma spesa e la franchigia». Le pagine del dentista e dello psicologo ora dicono «sul totale delle spese
+  mediche dell'anno», come la pagina dei consigli pratici.
+- **Direttiva siciliana 9368/2026**: risponde 404 anche con «www». La pagina della Regione sulle cure all'estero non dice i
+  30 giorni dal rientro: il punto resta aperto.
+- **D.A. 780/2021 (ausili in Sicilia)**: anche il PDF risponde 404. Resta aperto.
