@@ -181,7 +181,7 @@
       "icon": "🛡️",
       "title": "Quali controlli e vaccini puoi fare gratis?",
       "small": "Esami contro i tumori e vaccini per la tua età",
-      "keywords": "prevenzione screening mammografia pap test hpv colon tumore vaccino influenza pneumococco zoster fuoco sant'antonio tetano gratis consultorio kit lettera invito calendario vaccinale",
+      "keywords": "prevenzione screening mammografia pap test hpv colon tumore vaccino influenza pneumococco zoster fuoco sant'antonio tetano gratis consultorio kit lettera invito calendario vaccinale vaccini obbligatori bambini nido scuola materna esavalente morbillo varicella meningococco multa esonero",
       "pages": [
         {
           "id": "screening",
@@ -190,6 +190,10 @@
         {
           "id": "vaccini",
           "title": "I vaccini gratis per gli adulti, e dove farli"
+        },
+        {
+          "id": "vaccini-bambini",
+          "title": "I vaccini dei bambini: obbligatori, gratis, e la scuola"
         }
       ]
     },
@@ -413,7 +417,7 @@
       "icon": "💻",
       "title": "Il fascicolo sanitario e la ricetta elettronica",
       "small": "Vedere referti e ricette online, andare in farmacia senza foglio",
-      "keywords": "fascicolo sanitario elettronico fse ricetta elettronica dematerializzata nre promemoria spid cie cns referti online consenso delega ricetta scaduta",
+      "keywords": "fascicolo sanitario elettronico fse ricetta elettronica dematerializzata nre promemoria spid cie cns referti online consenso delega ricetta scaduta ticket farmaci medicine farmacia quota confezione generico equivalente fascia a fascia c",
       "pages": [
         {
           "id": "fascicolo-sanitario",
@@ -422,6 +426,10 @@
         {
           "id": "ricetta-elettronica",
           "title": "La ricetta elettronica: NRE, farmacia, quanto dura"
+        },
+        {
+          "id": "ticket-farmaci",
+          "title": "Le medicine in farmacia: quanto si paga, regione per regione"
         }
       ]
     },

@@ -1,6 +1,6 @@
 {
   "name": "Prevenzione gratuita per età: screening oncologici e vaccini",
-  "last_verified": "2026-10-19",
+  "last_verified": "2026-10-27",
   "screening": [
     {
       "id": "mammografia",
@@ -78,6 +78,13 @@
       "how": "Al centro vaccinale dell'azienda sanitaria."
     }
   ],
+  "vaccini_bambini": {
+    "obbligatori": 10,
+    "fino_anni": 16,
+    "multa_min_euro": 100,
+    "multa_max_euro": 500,
+    "gratis_non_obbligatori": 4
+  },
   "screening_numbers": {
     "catania": "800 894 007"
   },
@@ -142,10 +149,20 @@
       "verified": "2026-10-19",
       "proof": "estratto",
       "review_by": "2027-10-19"
+    },
+    "vaccini_bambini": {
+      "url": "https://www.epicentro.iss.it/vaccini/obbligovaccinale",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-10-27",
+      "nota": "ISS (EpiCentro), «Obbligo vaccinale», copia del server del 27/10/2026: diventano obbligatorie le vaccinazioni «per la frequenza scolastica di bambini e ragazzi di età compresa fra 0 e 16 anni a seconda della coorte di nascita» contro «difterite, tetano, pertosse, poliomielite, epatite B, Haemophilus influenzae tipo b, morbillo, parotite, rosolia e varicella»; «La mancata somministrazione dei vaccini obbligatori preclude l’iscrizione agli asili nido e alle scuole materne»; per i più grandi «è prevista una multa da 100 a 500 euro»; «Oltre ai dieci vaccini obbligatori, se ne aggiungono quattro non obbligatori, la cui offerta è attiva e gratuita: anti-meningococcica B, anti-meningococcica C, anti-pneumococcica e anti-rotavirus»; esonerati i bambini «già immunizzati a seguito di malattia naturale» e quelli con «specifiche condizioni cliniche che rappresentano una controindicazione»."
     }
   },
   "sources": [
-    { "label": "Istituto Superiore di Sanità (EpiCentro) – Screening oncologici: età e intervalli nei LEA", "url": "https://www.epicentro.iss.it/screening/" },
+    {
+      "label": "Istituto Superiore di Sanità (EpiCentro) – Screening oncologici: età e intervalli nei LEA",
+      "url": "https://www.epicentro.iss.it/screening/"
+    },
     {
       "label": "ASP Palermo – Screening oncologici: età ed esami",
       "url": "https://screening.asppalermo.org/"
@@ -165,6 +182,22 @@
     {
       "label": "Regione Siciliana – Assessorato della Salute (campagne vaccinali e screening)",
       "url": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute"
+    },
+    {
+      "label": "Istituto Superiore di Sanità (EpiCentro) – Obbligo vaccinale",
+      "url": "https://www.epicentro.iss.it/vaccini/obbligovaccinale"
+    },
+    {
+      "label": "Normattiva – Legge 119/2017 (vaccini obbligatori)",
+      "url": "https://www.normattiva.it/eli/id/2017/08/05/17G00132/CONSOLIDATED/20210504"
+    },
+    {
+      "label": "Regione Piemonte – Obbligo vaccinale e scuola, anno 2025-2026",
+      "url": "https://www.regione.piemonte.it/web/temi/sanita/prevenzione/obbligo-vaccinale-indicazioni-operative-per-gli-adempimenti-dellanno-scolastico-2025-2026"
+    },
+    {
+      "label": "Regione Toscana – Nuove disposizioni in materia di vaccinazioni (L.R. 51/2018)",
+      "url": "https://www.regione.toscana.it/-/nuove-disposizioni-in-materia-di-vaccinazioni"
     }
   ]
 }
