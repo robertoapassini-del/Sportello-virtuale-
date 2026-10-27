@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 27/10/2026 — Pronto soccorso: il ticket nelle altre regioni (primo passo)
+- `pronto-soccorso/`: aggiunta la Calabria. All'ASP di Catanzaro i codici bianco e verde non seguiti da ricovero pagano 25 euro di quota fissa, più una quota per gli altri esami «fino ad un massimo di 45 euro» (pagina «Ticket» dell'ASP, aggiornata il 15/04/2026, copia del server). Dati e fonte in `data/rules-pronto-soccorso.json`.
+- Per altre 15 regioni le pagine ufficiali trovate con la ricerca sono in `data/regioni/<regione>/fonti.json`, voce `ticket-pronto-soccorso` (nuovo `data/regioni/sicilia/fonti.json`): il server le copia, poi il ticket si scrive leggendo le copie. Il Molise non ha una pagina ufficiale con l'importo.
+
 ## 27/10/2026 — Fonti da verificare: indirizzi per il server
 - `data/fonti-nazionali.json`: tema nuovo «verifiche» con 10 fonti ufficiali per le frasi «da verificare» (`docs/revisione-2026-10-25.md`, gruppo 2): Gazzetta del gratuito patrocinio e del PNGLA, Corte d'appello dell'Aquila, guida dell'Agenzia delle Entrate sulla disabilità, accordo dei pediatri 2026, D.A. 780/2021 (ausili in Sicilia), direttiva siciliana 9368/2026, Garante (cartelle cliniche), messaggio INPS 18291/2011, L. 537/1993. `tests/coerenza.test.mjs`: giustizia.it e garanteprivacy.it tra i siti ufficiali.
 - `data/rules-medico.json`: massimale (1.500), scelta del medico dai 6 anni e scelta temporanea (3 mesi–1 anno) con la frase dell'ACN 2024 (rep. 51/CSR), già nelle copie; prima la fonte era una notizia SISAC senza le cifre. `medico-famiglia/scelta-temporanea/`: prima l'azienda cancella dall'elenco del medico della residenza (ACN, art. 39 c. 6), al posto di «chiedi cosa succede».
