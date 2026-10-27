@@ -53,6 +53,16 @@ Cosa ci dice:
   attivo (controllato il 27/10/2026) e il `canonical` delle pagine è `https://`: Google le unirà da solo.
 - **Sitemap** (`https://guidasanita.it/sitemap.xml`): inviata in Search Console di recente (controllato il 27/10/2026).
 
+**Indicizzazione** (export «Pagine» del 27/10/2026, dati fino al 23/10): **10 pagine indicizzate, 52 no**, su circa 100
+pagine del sito.
+- 51 «Rilevata, ma attualmente non indicizzata»: Google le conosce ma non le ha ancora lette. È normale per un sito
+  nato da una settimana; si riduce da sola nelle prossime settimane.
+- 1 «Pagina con reindirizzamento»: con ogni probabilità `http://guidasanita.it/`, che porta a `https://`. Va bene così
+  (convalida avviata).
+- Per accelerare le pagine più importanti: in Search Console, «Controllo URL» → «Richiedi indicizzazione», qualche
+  pagina al giorno (Google ne accetta poche). Prima quelle con più ricerche: liste-attesa, legge-104/permessi,
+  invalidita, esenzione-ticket, pronto-soccorso, guardia-medica, medico-famiglia, prenotare-cup.
+
 Prossimo export: fine novembre 2026, con le stesse colonne, per confrontare clic e posizioni pagina per pagina.
 
 ## 2. Cosa contano le statistiche del sito
