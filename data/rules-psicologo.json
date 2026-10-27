@@ -23,6 +23,7 @@
   ],
   "bonus_uso_mesi": 9,
   "detrazione_percent": 19,
+  "detrazione_franchigia_euro": 129.11,
   "prima_seduta_giorni": 60,
   "provenienza": {
     "bonus_max": {
@@ -59,6 +60,13 @@
       "proof": "secondaria",
       "review_by": "2027-01-31",
       "nota": "Il bonus va usato entro circa 9 mesi (270 giorni) dall'assegnazione, secondo le guide lette."
+    },
+    "detrazione_franchigia_euro": {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/233439/Guida_alle_agevolazioni_fiscali_per_le_persone_con_disabilità.pdf/42fab204-85c5-9dcf-6750-b4afb6aeb74e",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-10-27",
+      "nota": "Guida dell'Agenzia delle Entrate sulle agevolazioni per le persone con disabilità (copia del server del 27/10/2026): «possono essere detratte dall'imposta, per la parte eccedente l'importo di 129,11 euro, le spese sanitarie specialistiche»."
     },
     "detrazione_percent": {
       "url": "https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/detrazioni-spese-sanitarie",

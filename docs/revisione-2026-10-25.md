@@ -178,3 +178,24 @@ copia dopo l'unione, poi si leggono e si correggono le frasi.
   sulla disabilità, accordo dei pediatri (rep. 28/CSR del 18/03/2026), ausili in Sicilia (D.A. 780/2021, che forse
   sostituisce il D.A. del 2011), cure all'estero in Sicilia (direttiva 9368/2026), FAQ del Garante sulle cartelle
   cliniche, messaggio INPS 18291/2011 sul ricovero gratuito, L. 537/1993 (esenzione E01).
+
+## Gruppo 2, secondo passo (27/10/2026): copie lette
+
+Lette le copie della notte del 27/10 (tema «verifiche»).
+- **Gratuito patrocinio**: confermato 13.659,64 euro (Gazzetta n. 159 dell'11/07/2025 e Corte d'appello dell'Aquila).
+- **Richiamo del CUP**: la frase del PNGLA dà 5, 10, 15 e 30 giorni. Più avanti lo stesso piano scrive «massimo 20
+  giorni per le priorità P». Il sito tiene 30: da chiarire con la Regione o il Ministero.
+- **Accompagnamento e RSA in Sicilia**: chiarito dal messaggio INPS 18291/2011. Il ricovero è gratuito anche se la
+  parte della persona la paga un ente pubblico. Nei primi 60 giorni pagati dall'ASP valgono le regole del ricovero
+  gratuito (sospensione dai 30 giorni, se la struttura dà tutta l'assistenza).
+- **Detrazione al 19%**: detta la franchigia di 129,11 euro per dentista e psicologo (guida dell'Agenzia delle Entrate).
+- **IVA al 4% sull'auto**: conta cosa è scritto nel verbale, e ci sono limiti di cilindrata (stessa guida).
+- **Prima copia gratis della cartella clinica**: confermata dalla FAQ del Garante; il sito già lo scrive bene.
+
+Ancora aperti:
+- **Franchigia di 129,11 euro**: la guida non dice se si conta sul totale delle spese dell'anno, come scrive la
+  pagina dei consigli pratici dell'assistenza a casa. Serve la scheda dell'Agenzia delle Entrate sulle spese sanitarie.
+- **E01**: la L. 537/1993 dice «età superiore a sessantacinque anni». Resta da chiarire se vale dal compleanno.
+- **Pediatri (rep. 28/CSR)**: la copia ha solo l'intesa, non il testo dell'accordo. Serve l'url dell'allegato.
+- **Ausili in Sicilia (D.A. 780/2021)**: la copia ha solo la pagina con i link. Serve l'url del PDF del decreto.
+- **Cure all'estero in Sicilia (direttiva 9368/2026)**: l'url risponde 404. Serve un indirizzo nuovo.
