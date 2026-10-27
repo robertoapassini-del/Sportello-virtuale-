@@ -4,6 +4,7 @@
   "eta_minori_max": 14,
   "isee_vulnerabilita_sociale": 8000,
   "detrazione_percent": 19,
+  "detrazione_franchigia_euro": 129.11,
   "provenienza": {
     "eta_minori_max": {
       "url": "https://www.salute.gov.it/portale/lea/dettaglioContenutiLea.jsp?lingua=italiano&id=4706&area=Lea&menu=ambulatoriale",
@@ -18,6 +19,13 @@
       "proof": "secondaria",
       "review_by": "2027-01-31",
       "nota": "Soglia ISEE della vulnerabilità sociale: la fissa la Regione; 8.000 euro è il valore citato dalle guide per molte regioni. Sul sito è scritto «intorno agli 8.000 euro in molte regioni». Da verificare per la Sicilia."
+    },
+    "detrazione_franchigia_euro": {
+      "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/233439/Guida_alle_agevolazioni_fiscali_per_le_persone_con_disabilità.pdf/42fab204-85c5-9dcf-6750-b4afb6aeb74e",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-10-27",
+      "nota": "Guida dell'Agenzia delle Entrate sulle agevolazioni per le persone con disabilità (copia del server del 27/10/2026): «possono essere detratte dall'imposta, per la parte eccedente l'importo di 129,11 euro, le spese sanitarie specialistiche»."
     },
     "detrazione_percent": {
       "url": "https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/detrazioni-spese-sanitarie",

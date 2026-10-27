@@ -2,6 +2,15 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 27/10/2026 — Fonti da verificare: letto le copie della notte
+- `data/rules-ricorso.json`: il limite del gratuito patrocinio (13.659,64 euro) ora ha la frase della Gazzetta n. 159 dell'11/07/2025 (decreto del 22/04/2025); `tests/citazioni.txt`: «art. 76 comma 1».
+- `data/rules.json`: il richiamo del CUP (5, 10, 15, 30 giorni) ora ha la frase del PNGLA 2025-2027 (Gazzetta S.O. 32 del 24/08/2026). Più avanti il piano scrive «massimo 20 giorni per le priorità P»: il sito tiene 30, da chiarire.
+- `data/rules-accompagnamento.json`: fonte nuova, messaggio INPS 18291/2011. `rsa/quanto-si-paga/`: il ricovero conta come gratuito anche se la parte della persona la paga un ente pubblico; in Sicilia i primi 60 giorni pagati dall'ASP sono ricovero gratuito.
+- `dentista/chi-ha-diritto/` e `psicologo/bonus-psicologo/`: il 19% si calcola solo sulla parte che supera 129,11 euro (guida dell'Agenzia delle Entrate sulla disabilità).
+- `legge-104/`: per l'auto conta cosa è scritto nel verbale, e ci sono limiti di cilindrata (stessa guida).
+- Controllati senza cambiare niente: prima copia gratis della cartella clinica (FAQ del Garante); E01 (la L. 537/1993 dice «età superiore a sessantacinque anni»: resta da chiarire se vale dal compleanno).
+- Copie senza il testo che serviva: accordo dei pediatri (rep. 28/CSR, solo l'intesa senza l'allegato), D.A. 780/2021 della Sicilia (solo la pagina con i link agli allegati). La direttiva siciliana 9368/2026 risponde 404.
+
 ## 27/10/2026 — Pronto soccorso: il ticket nelle altre regioni (primo passo)
 - `pronto-soccorso/`: aggiunta la Calabria. All'ASP di Catanzaro i codici bianco e verde non seguiti da ricovero pagano 25 euro di quota fissa, più una quota per gli altri esami «fino ad un massimo di 45 euro» (pagina «Ticket» dell'ASP, aggiornata il 15/04/2026, copia del server). Dati e fonte in `data/rules-pronto-soccorso.json`.
 - Per altre 15 regioni le pagine ufficiali trovate con la ricerca sono in `data/regioni/<regione>/fonti.json`, voce `ticket-pronto-soccorso` (nuovo `data/regioni/sicilia/fonti.json`): il server le copia, poi il ticket si scrive leggendo le copie. Il Molise non ha una pagina ufficiale con l'importo.
