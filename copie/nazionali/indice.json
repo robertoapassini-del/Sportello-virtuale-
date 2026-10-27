@@ -1,6 +1,6 @@
 {
  "regione": "nazionali",
- "aggiornato": "2026-10-27T07:15:03.266Z",
+ "aggiornato": "2026-10-27T09:46:28.785Z",
  "pagine": [
   {
    "asl": "urgenze",
@@ -39,8 +39,8 @@
    "finale": "https://azzurro.it/",
    "file": "ascolto/6f8ce0e8bdd0.txt",
    "titolo": "Telefono Azzurro | Sito ufficiale",
-   "sha": "8f4d18e113424c1eaf2a5d8eb7b1b6bd13609d2f48f69c1b59325eb9ceb4a533",
-   "caratteri": 14358,
+   "sha": "4d4d75d3a5d1422011e98ee30da62aa8e44a6667479ade8963d6309cdb6bc415",
+   "caratteri": 14457,
    "link_pdf": [
     {
      "url": "https://azzurro.it/wp-content/uploads/2025/06/documento_2025-1.pdf",
@@ -59,7 +59,7 @@
      "testo": "Dalla parte dei bambini - Dal bisogno alla risposta"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "ascolto",
@@ -198,6 +198,18 @@
    "titolo": "",
    "sha": "3767a6cec60e62b43d23b8f036b5d54a33492e9049ccf9183fa1fd40a6658753",
    "caratteri": 41600,
+   "cambiata": false
+  },
+  {
+   "asl": "regole-accompagnamento",
+   "url": "https://servizi2.inps.it/MessaggiZIP/Messaggio%20numero%2018291%20del%2026-09-2011.pdf",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-accompagnamento/05d79da6fe03.txt",
+   "titolo": "Direzione Centrale Pensioni",
+   "sha": "02885971026536b2787ebd6729a2ead79b54b6da00a8f52ed2bcf9b360b4309d",
+   "caratteri": 7429,
+   "pdf": true,
    "cambiata": false
   },
   {
@@ -560,7 +572,7 @@
    "titolo": "Polizia Municipale - Comune di Palermo",
    "sha": "1f9d79868e1ab13d4cbe1ddacb3db44a3b3eedfbcfc3ab27544f3182c4f1ce9d",
    "caratteri": 5042,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-cure-fuori-regione",
@@ -673,6 +685,18 @@
    "controllata": "2026-10-27",
    "http": 200,
    "nota": "controllo anti-robot (CAPTCHA): non copiata"
+  },
+  {
+   "asl": "regole-dentista",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/233439/Guida_alle_agevolazioni_fiscali_per_le_persone_con_disabilità.pdf/42fab204-85c5-9dcf-6750-b4afb6aeb74e",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-dentista/908fd4e5c310.txt",
+   "titolo": "LE AGEVOLAZIONI FISCALI",
+   "sha": "2fb147ed051ff4ea40c0f4860b6a1a0dc1d411b7e54395a6fb1713cd47f7fb27",
+   "caratteri": 105427,
+   "pdf": true,
+   "cambiata": false
   },
   {
    "asl": "regole-dentista",
@@ -881,7 +905,7 @@
    "caratteri": 15273,
    "link_pdf": [
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x57487",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x29867",
      "testo": "Modulo per AUTOCERTIFICAZIONE"
     }
    ],
@@ -923,11 +947,11 @@
   },
   {
    "asl": "regole-esenzione",
-   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x57487",
+   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x29867",
    "controllata": "2026-10-27",
    "da_pagina": "https://www.aslcittaditorino.it/prestazioni/esenzione-ticket-per-reddito/",
    "http": 200,
-   "file": "regole-esenzione/c124ed5aa000.txt",
+   "file": "regole-esenzione/f295d9bfc9f8.txt",
    "titolo": "Autocertificazione di esenzione",
    "sha": "0ec5d984b6bd5ef03f12e32ef41b78dfdf250def32f239cb24d846beeee617d9",
    "caratteri": 10878,
@@ -1648,7 +1672,7 @@
      "testo": "Piano terapeutico per prescrizione SSN di Lamivudina (ex Nota 32 bis) [0.04 Mb] [PDF] >"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-piano",
@@ -1984,7 +2008,7 @@
      "testo": "Rimborso Ticket"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-pronto-soccorso",
@@ -2064,6 +2088,18 @@
   },
   {
    "asl": "regole-psicologo",
+   "url": "https://www.agenziaentrate.gov.it/portale/documents/20143/233439/Guida_alle_agevolazioni_fiscali_per_le_persone_con_disabilità.pdf/42fab204-85c5-9dcf-6750-b4afb6aeb74e",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-psicologo/908fd4e5c310.txt",
+   "titolo": "LE AGEVOLAZIONI FISCALI",
+   "sha": "2fb147ed051ff4ea40c0f4860b6a1a0dc1d411b7e54395a6fb1713cd47f7fb27",
+   "caratteri": 105427,
+   "pdf": true,
+   "cambiata": false
+  },
+  {
+   "asl": "regole-psicologo",
    "url": "https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/detrazioni-spese-sanitarie",
    "controllata": "2026-10-27",
    "http": 404
@@ -2132,6 +2168,18 @@
    "titolo": "Ministero della giustizia | Patrocinio a spese dello Stato nei giudizi civili e amministrativi",
    "sha": "fcd8bf1c30294c98c02b4788012d21c77ab9a6601421d1815c884b839d4446cb",
    "caratteri": 11059,
+   "cambiata": false
+  },
+  {
+   "asl": "regole-ricorso",
+   "url": "https://www.gazzettaufficiale.it/eli/gu/2025/07/11/159/sg/pdf",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-ricorso/27081f6d0176.txt",
+   "titolo": "SERIE GENERALE",
+   "sha": "ddceeab82ba0a12cf67cc8231438a667e82c6ab7b1b6b70a18e621422535ceb2",
+   "caratteri": 163979,
+   "pdf": true,
    "cambiata": false
   },
   {
@@ -2272,6 +2320,18 @@
    "titolo": "REGIO DECRETO 16 marzo 1942, n. 262 - Normattiva",
    "sha": "b575cecf075912107cbe45b6faed3f44fed6c986acb90c2d817b9382fd993623",
    "caratteri": 72890,
+   "cambiata": false
+  },
+  {
+   "asl": "regole-liste-attesa",
+   "url": "https://www.gazzettaufficiale.it/eli/gu/2026/08/24/195/so/32/sg/pdf",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-liste-attesa/d75c4f85dc37.txt",
+   "titolo": "Supplemento ordinario alla “Gazzetta Ufficiale„ n. 195 del 24 agosto 2026 - Serie generale",
+   "sha": "7873dc03b07e92456247db8140ccb361d4791914810d4d776a2c3cdc1b885d51",
+   "caratteri": 383474,
+   "pdf": true,
    "cambiata": false
   },
   {

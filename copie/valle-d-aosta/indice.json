@@ -1,6 +1,6 @@
 {
  "regione": "valle-d-aosta",
- "aggiornato": "2026-10-27T06:58:10.318Z",
+ "aggiornato": "2026-10-27T09:28:04.207Z",
  "pagine": [
   {
    "asl": "aosta",
@@ -9,8 +9,8 @@
    "http": 200,
    "file": "aosta/8c0e7f3ef863.txt",
    "titolo": "Home",
-   "sha": "c85d6e636d7bca235bc612736061c8d7a5f045f14085664c608d1f3a7d692056",
-   "caratteri": 8597,
+   "sha": "c98df28397fb93993392ce05b9bdbc5cb2af1b67bbd26949e00a32697f53ad6f",
+   "caratteri": 11784,
    "cambiata": true
   },
   {
@@ -84,8 +84,8 @@
    "http": 200,
    "file": "aosta/6384dba61aa0.txt",
    "titolo": "Scelta e revoca del medico o del pediatra di famiglia",
-   "sha": "9002c9458d9732298c0b7881328325a19a2f712793af8f56e9dc0eeec0205f31",
-   "caratteri": 13724,
+   "sha": "dcd6047879353adcd7bfe9653a67186c42ecac04792c5f9eba178718d33e2417",
+   "caratteri": 13650,
    "link_pdf": [
     {
      "url": "https://www.ausl.vda.it/Media/AUSL/cupscelrev/Modulo%201%20scelta%20e%20revoca%20residenti.pdf",
@@ -156,7 +156,7 @@
      "testo": "Modulo 15 consenso ISEE Documento pdf (632Kb)"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "aosta",
@@ -727,7 +727,7 @@
    "controllata": "2026-10-27",
    "da_pagina": "https://www.ausl.vda.it/urp/urp-ufficio-relazioni-con-il-pubblico",
    "http": 0,
-   "errore": "curl: (28) Connection timed out after 60002 milliseconds"
+   "errore": "curl: (28) Connection timed out after 60001 milliseconds"
   },
   {
    "asl": "aosta",
@@ -834,7 +834,7 @@
    "sha": "69bf3c76777dcbf433eb40872a1b1635832dfb22773689c889ebc6cbe45f74ec",
    "caratteri": 1548,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   }
  ]
 }

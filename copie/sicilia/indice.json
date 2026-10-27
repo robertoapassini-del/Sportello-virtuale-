@@ -1,6 +1,6 @@
 {
  "regione": "sicilia",
- "aggiornato": "2026-10-27T06:35:39.358Z",
+ "aggiornato": "2026-10-27T09:05:41.353Z",
  "pagine": [
   {
    "asl": "palermo",
@@ -98,8 +98,12 @@
    "asl": "palermo",
    "url": "https://sportello.asppalermo.org/",
    "controllata": "2026-10-27",
-   "http": 0,
-   "errore": "curl: (28) Connection timed out after 30002 milliseconds"
+   "http": 200,
+   "file": "palermo/79e2ef7d2582.txt",
+   "titolo": "Sportello Online - Asp Palermo - Index",
+   "sha": "72474b573c8da98d84b4ccc7948075f0a16a704e2e95d4dd5eb1c68a4d1dce3b",
+   "caratteri": 1264,
+   "cambiata": true
   },
   {
    "asl": "palermo",
@@ -914,9 +918,9 @@
    "http": 200,
    "file": "palermo/18b1ecabe067.txt",
    "titolo": "Cartella clinica - A.O.U.P. \"P. Giaccone\"",
-   "sha": "5fd97d95a39113bfdce583687da2ab0908590d37748b65df4da9c7326e86c4a9",
-   "caratteri": 12967,
-   "cambiata": false
+   "sha": "68bce8e252bb7e06ab4c9af6808e6b608940d455016ec13457d6b62ce2daee08",
+   "caratteri": 12994,
+   "cambiata": true
   },
   {
    "asl": "palermo",
@@ -925,7 +929,7 @@
    "http": 200,
    "file": "palermo/1c749ae9389c.txt",
    "titolo": "Notizie e servizi utili",
-   "sha": "6199b161201aa22b84f91fde57585bce03bdb56b9b26c884329bf08600dde419",
+   "sha": "d65034fb38c6294f626237bf790f848823af07a0ad11c82c629940dd0550640b",
    "caratteri": 8112,
    "cambiata": true
   },
@@ -1007,8 +1011,8 @@
    "http": 200,
    "file": "ragusa/4149216fee04.txt",
    "titolo": "Azienda Sanitaria Provinciale di Ragusa",
-   "sha": "999c81514a3307a0b87d001a197d131880ef1807ec5d1091aeed168904b999c6",
-   "caratteri": 4407,
+   "sha": "90a42f09e3d9e0cbde3a09ecc5f83f862095a7e0b305b9b342f5e5942678ab4a",
+   "caratteri": 4398,
    "email_nascoste": 2,
    "link_pdf": [
     {
@@ -1016,7 +1020,7 @@
      "testo": "Avviso manifestazione interesse tatuaggi piercing 2026.pdf"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "ragusa",
@@ -1438,9 +1442,9 @@
    "finale": "https://www.asp.cl.it:443/it",
    "file": "caltanissetta/856c7c18d905.txt",
    "titolo": "| ASP Caltanissetta",
-   "sha": "190278838252d15a4be9a790182adadaf0eaebef3fff7cf054d7b836fb034256",
+   "sha": "f9ac4e03345178849aa770e31f5090c04ea267ba9641c7c955d53b6023ecfc95",
    "caratteri": 8360,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "caltanissetta",
@@ -1705,9 +1709,9 @@
    "certificato": "non valido",
    "file": "messina/3a03ba45f31d.txt",
    "titolo": "Portale Azienda Sanitaria",
-   "sha": "cc57ac10b0d45f6ed589202ef19ea3e3c0accdf649b187de5af354abd9859724",
+   "sha": "e7a90c1258e880513667f736bb22a0e7e5f281fccfeffad8a4e9889463ff45af",
    "caratteri": 8132,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "messina",
@@ -1892,7 +1896,7 @@
    "certificato": "non valido",
    "file": "messina/b93a7c51f846.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e Ausili riabilitativi, acustiche, busto ortopedico, microinfusori e ventilatorio – Messina – ASP Messina",
-   "sha": "8f7bdf99fcb5425a3f6553db09829a13d1f10fa3d86ff3d37395de5f95c601bf",
+   "sha": "f09f4d830b16cbe5497b1963e31e7d4d91a88e55f3ab90507ecbf81e73d191aa",
    "caratteri": 5340,
    "cambiata": true
   },
@@ -1904,7 +1908,7 @@
    "certificato": "non valido",
    "file": "messina/49a8cb5433ae.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico – Milazzo (ME) – ASP Messina",
-   "sha": "a559dface74cd9ab471332b780886060207d7e55c9694cf45abd5b99611d0092",
+   "sha": "6b54f8c1a3ec06ad2bfe4046815d7968cafbf601ffe1206a02901d6a310c0072",
    "caratteri": 5231,
    "cambiata": true
   },
@@ -1916,7 +1920,7 @@
    "certificato": "non valido",
    "file": "messina/af0dd7dea31e.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico – Barcellona Pozzo di Gotto (ME) – ASP Messina",
-   "sha": "44bba16479d2b5ce1a3baa0bf74fd83021d533a11a4b101bb66ab907d5404fdf",
+   "sha": "6065d0d3c7406169cae2b312bd02f7590ee9b922f6cd699e66836e423807459b",
    "caratteri": 5405,
    "cambiata": true
   },
@@ -1928,7 +1932,7 @@
    "certificato": "non valido",
    "file": "messina/46de8177530f.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico – Patti (ME) – ASP Messina",
-   "sha": "157731ca95d6083cd45cf950fe40130feb38701f6f7d46908976d1ff83a84eac",
+   "sha": "15a2e0cb454b728cda9da917c5b5eff3f14de315756084e2b766ffdf6c1752de",
    "caratteri": 5202,
    "cambiata": true
   },
@@ -1940,7 +1944,7 @@
    "certificato": "non valido",
    "file": "messina/6f2b15365da4.txt",
    "titolo": "Autorizzazione Assistenza Integrativa – Presidi per diabetici, celiaci, incontinenti, pannoloni, stomizzati – Messina – ASP Messina",
-   "sha": "b651589d42189e558dbb309dd34b099dadc7eaa29c0b71b50b29fb7c0ba7e438",
+   "sha": "b101a8642a878fd2258f0785023d3a52b9614ed2ffd4faa569b2fdf11d70545f",
    "caratteri": 5241,
    "cambiata": true
   },
@@ -1952,7 +1956,7 @@
    "certificato": "non valido",
    "file": "messina/d31336f3a7de.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico- Sant’Agata di Militello (ME) – ASP Messina",
-   "sha": "2a7302f2911fb15497027e5c653973651aaabd50ce4149151021e1eeb363c2ba",
+   "sha": "0667eedfe2f1342f030c0e432af92f94a6ceac55bfbd9333e3a512f1d7b11c69",
    "caratteri": 5334,
    "cambiata": true
   },
@@ -1964,7 +1968,7 @@
    "certificato": "non valido",
    "file": "messina/b054a0ed7979.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico – Lipari (ME) – ASP Messina",
-   "sha": "2782e5a137b69dc2d9e3598e050bd76aa1844fd5020641fc453643a4be2bee88",
+   "sha": "3523e70f0c603f4a93d33d25c0e8d967f3ee108d27d267fb9bbe3ee1c6e05997",
    "caratteri": 5234,
    "cambiata": true
   },
@@ -1976,7 +1980,7 @@
    "certificato": "non valido",
    "file": "messina/f956bab565c6.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico – Mistretta (ME) – ASP Messina",
-   "sha": "3aa663c407e06309d902faf3181474ce8e58e5d3a68b2f4af3ec396b4c518c5a",
+   "sha": "72ea913cca47603d52f89c238369d4a2f0ecfb1de17564a9ff5928fd20467c21",
    "caratteri": 5397,
    "cambiata": true
   },
@@ -1988,7 +1992,7 @@
    "certificato": "non valido",
    "file": "messina/fd0ebd947108.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico – Taormina (ME) – ASP Messina",
-   "sha": "ac0fc53cae90a0331829972905e235ab6a6d77d50abda0b480e311e2b9ae6701",
+   "sha": "ce682a8d70f828d4e4368fcbc0017769cf09249fa6d046ee30cb901c3e239bc5",
    "caratteri": 5251,
    "cambiata": true
   },
@@ -2180,9 +2184,9 @@
    "http": 200,
    "file": "siracusa/34b04da66b87.txt",
    "titolo": "Azienda Sanitaria Provinciale di Siracusa",
-   "sha": "ea4ab6221ff15400ac0ad61abf6de39efc0fea2b6fb2e492ffc2464f51a82f88",
-   "caratteri": 4877,
-   "cambiata": false
+   "sha": "c943bb0fead66e2ba4f64356880a3122b1a13d3e11061533664dadc24b5fb435",
+   "caratteri": 5012,
+   "cambiata": true
   },
   {
    "asl": "siracusa",
@@ -2729,9 +2733,9 @@
    "http": 200,
    "file": "catania/9e2376ba71a3.txt",
    "titolo": "Azienda Sanitaria Provinciale di Catania",
-   "sha": "6c694a5f82038df542033fe80edf064869fece2cd0e0f89d08f06b0eaafc0187",
-   "caratteri": 14222,
-   "cambiata": false
+   "sha": "eb6845f2503ba3944da218cd5346fb0298272831a6a25009e7da628978c6bf5d",
+   "caratteri": 14321,
+   "cambiata": true
   },
   {
    "asl": "catania",
@@ -2877,7 +2881,7 @@
    "titolo": "Acireale",
    "sha": "b57d59925e707856f1a4b9e73991331d585d4615e24aa2a2bc1f880e36b1f98c",
    "caratteri": 11043,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "catania",
@@ -2928,7 +2932,7 @@
      "testo": "Modulo delega"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "catania",
@@ -3477,7 +3481,7 @@
    "titolo": "Liste di attesa / Servizi erogati / Amministrazione trasparente / Homepage - Azienda Sanitaria Provinciale di Enna",
    "sha": "61272429dce4e93cf45b3e82bad519bebc2a26e087f0d5b0cc2f3f7d589de2b4",
    "caratteri": 5058,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "enna",
@@ -3800,7 +3804,7 @@
    "titolo": "IpaPortale",
    "sha": "0684f1cc3980c0f5f5cbc1fb53b9e4015b1e781bb880f5e3e456c2fb704f0c34",
    "caratteri": 2621,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ticket-pronto-soccorso",
@@ -3811,7 +3815,7 @@
    "titolo": "Pronto soccorso - Azienda Sanitaria Provinciale di Siracusa",
    "sha": "6d67d79ab6189e65078cb935a5adca939376404a60165f87873075cd1a852719",
    "caratteri": 5739,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ticket-pronto-soccorso",
@@ -3822,7 +3826,7 @@
    "titolo": "U.O.C. Pronto Soccorso",
    "sha": "6ec92e25088ea6893905170fcad8503c10818ffefede9ec092c59735e9529c1c",
    "caratteri": 5706,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ticket-pronto-soccorso",
@@ -3835,7 +3839,7 @@
    "sha": "aa2e6c93dc38941ee0a99cb7bb15fb3e68f1429c4cdfbd966be80b86aed2f3b7",
    "caratteri": 2677,
    "email_nascoste": 2,
-   "cambiata": true
+   "cambiata": false
   }
  ]
 }

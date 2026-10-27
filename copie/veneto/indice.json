@@ -1,6 +1,6 @@
 {
  "regione": "veneto",
- "aggiornato": "2026-10-27T07:07:13.881Z",
+ "aggiornato": "2026-10-27T09:38:10.399Z",
  "pagine": [
   {
    "asl": "belluno",
@@ -537,11 +537,12 @@
    "asl": "venezia",
    "url": "https://www.aulss4.veneto.it/home/dettaglio/strutture/casa-della-comunita-di-san-dona-di-piave",
    "controllata": "2026-10-27",
+   "browser": true,
    "http": 200,
    "file": "venezia/97f30e8bfdf9.txt",
-   "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
-   "sha": "6bc2275696536324da914a4390835a8856b32ef9c71aa40dd59c0c5b84156a8f",
-   "caratteri": 45,
+   "titolo": "Casa della Comunità di San Donà di Piave",
+   "sha": "62c415b08490abae4d9ae002d01afe40c11f07b8b81b68995d7c01fcc3c2de3b",
+   "caratteri": 9153,
    "cambiata": true
   },
   {
@@ -575,10 +576,10 @@
    "browser": true,
    "http": 200,
    "file": "venezia/94b10fd120ae.txt",
-   "titolo": "ULSS 3 SERENISSIMA - Prenotare o disdire una prestazione",
-   "sha": "24cb0231314153f570e3aa81d3f988c1fc648ed27bbd901b52da8962850af619",
-   "caratteri": 4174,
-   "cambiata": false
+   "titolo": "Prenotare o disdire una prestazione",
+   "sha": "a51ae7f9b870c22239253622f0138713b1c93868e8e1172cca209c15cb31b6b6",
+   "caratteri": 4153,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -684,10 +685,10 @@
    "browser": true,
    "http": 200,
    "file": "venezia/7259f23ba486.txt",
-   "titolo": "Azienda ULSS n. 4 Veneto Orientale - Prenotazione esami di laboratorio presso le strutture dell'Azienda Ulss4 \"Veneto Orientale\"",
-   "sha": "639a5afddb6322348a5a2962cc2fba1c554e07dede861388a1a1a61d719c21fe",
-   "caratteri": 3630,
-   "cambiata": false
+   "titolo": "Prenotazione esami di laboratorio presso le strutture dell'A",
+   "sha": "6c77e5de6056b83fe18ff4c7613f38247614a291db5815170e35a02e80cf3b87",
+   "caratteri": 3562,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -813,7 +814,7 @@
    "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
    "sha": "8b1b2e4c90ba26e77f7aff14da75be9cdcfa7664256822e2d2aeaad870c1a503",
    "caratteri": 5269,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -846,9 +847,9 @@
    "http": 200,
    "file": "rovigo/ebfa4575c105.txt",
    "titolo": "Homepage - ULSS 5 Polesana",
-   "sha": "7c0159f7f44924d70880446ee5c9cc9f4b412f560937ff3cf0f452d846318a6f",
-   "caratteri": 5841,
-   "cambiata": false
+   "sha": "bc8ed8b08ac73d0c67266f8e1d13933de286e2ded968248ab7849b9a884398a3",
+   "caratteri": 5816,
+   "cambiata": true
   },
   {
    "asl": "rovigo",
@@ -890,9 +891,9 @@
    "http": 200,
    "file": "rovigo/9cf019b088e3.txt",
    "titolo": "Prenotazioni e ticket",
-   "sha": "fde9f9d220177364a5617ef4c17d78e3d7e8d3d709cd875ce9e06435f522ca70",
-   "caratteri": 13215,
-   "cambiata": false
+   "sha": "e582a91343b00686cdf1c329ad29123986bb529c65dbbecb73813efa8aff3f50",
+   "caratteri": 13245,
+   "cambiata": true
   },
   {
    "asl": "rovigo",
@@ -1069,9 +1070,9 @@
    "finale": "https://www.aulss6.veneto.it/urp-online",
    "file": "padova/2845adf697d8.txt",
    "titolo": "URP online",
-   "sha": "6b0bac98530f45c5ce4274542838a390e1809b2d3a0458689caa0beb89ea0bba",
-   "caratteri": 8514,
-   "cambiata": false
+   "sha": "7be150e9982b98c162b236dfc2b32f4499a4bf422be0a94764257a0a0a0094d7",
+   "caratteri": 8554,
+   "cambiata": true
   },
   {
    "asl": "padova",
@@ -1124,9 +1125,9 @@
    "http": 200,
    "file": "padova/89c846b39a69.txt",
    "titolo": "URP online",
-   "sha": "6b0bac98530f45c5ce4274542838a390e1809b2d3a0458689caa0beb89ea0bba",
-   "caratteri": 8514,
-   "cambiata": false
+   "sha": "7be150e9982b98c162b236dfc2b32f4499a4bf422be0a94764257a0a0a0094d7",
+   "caratteri": 8554,
+   "cambiata": true
   },
   {
    "asl": "padova",
@@ -1236,9 +1237,9 @@
    "http": 200,
    "file": "vicenza/6ab81c5aab52.txt",
    "titolo": "Homepage ULSS 8 Berica",
-   "sha": "f85ef57b23c3cb62387c6df63742e0b8bb3407dda895b3563d7efba05ae51dae",
-   "caratteri": 6118,
-   "cambiata": false
+   "sha": "7af5b23bad75b318e409d94564917b94ad3d66b57cb8c666c0f2414c9a11613b",
+   "caratteri": 6145,
+   "cambiata": true
   },
   {
    "asl": "vicenza",
@@ -2016,7 +2017,7 @@
      "testo": "Logo SSSR"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ticket-pronto-soccorso",
@@ -2034,7 +2035,7 @@
      "testo": "Logo SSSR"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   }
  ]
 }

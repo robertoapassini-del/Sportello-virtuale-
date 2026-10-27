@@ -1,6 +1,6 @@
 {
  "regione": "basilicata",
- "aggiornato": "2026-10-27T05:06:52.349Z",
+ "aggiornato": "2026-10-27T07:36:53.487Z",
  "pagine": [
   {
    "asl": "matera",
@@ -437,7 +437,7 @@
    "controllata": "2026-10-27",
    "da_pagina": "https://www.aspbasilicata.it/come-fare-per/scelta-e-revoca-del-medico-di-famiglia-e-del-pediatra/",
    "http": 0,
-   "errore": "curl: (28) Connection timed out after 60001 milliseconds"
+   "errore": "curl: (28) Connection timed out after 60002 milliseconds"
   },
   {
    "asl": "potenza",
@@ -861,7 +861,7 @@
    "titolo": "Il funzionamento dei codici-colore presso i Pronto Soccorso degli Ospedali - ASP Basilicata",
    "sha": "f6582557224114aa4d2a6d7b63f8db67c712851ea6dd44b9b77a7ee443693988",
    "caratteri": 5008,
-   "cambiata": true
+   "cambiata": false
   }
  ]
 }
