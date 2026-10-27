@@ -2,6 +2,14 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 27/10/2026 — Gravidanza: visite ed esami senza ticket
+- `esenzione-ticket/gravidanza/` (pagina nuova): cosa non si paga in gravidanza (DPCM 12/01/2017, art. 59, letto nel vademecum dell'Emilia-Romagna), il codice M, l'Agenda di gravidanza del Piemonte, il libretto della Toscana, il NIPT gratis in Emilia-Romagna. Copie del server del 27/10/2026.
+- `data/rules-esenzione.json`: «gravidanza_nipt_emilia_romagna» (dal 2024, tra la 10ª e la 13ª settimana) con la frase della fonte, una scheda per cifra; 4 fonti nuove. `tests/citazioni.txt`: «art. 59 | DPCM 12/01/2017».
+
+## 27/10/2026 — Malattia cronica o rara: niente ticket, come si chiede
+- `esenzione-ticket/malattia-cronica-rara/` (pagina nuova): cosa copre l'esenzione, il codice sulla ricetta, cosa portare all'ASL, la malattia rara e il codice R99, le regole delle aziende di Palermo e Torino. Letto nelle copie del server del 27/10/2026 (ASP Palermo, ASL Città di Torino, vademecum dell'Emilia-Romagna, Regione Umbria).
+- `data/rules-esenzione.json`: 4 fonti nuove. Il PDF dei codici della Lombardia non è stato copiato (la copia è la pagina del portale).
+
 ## 27/10/2026 — Franchigia di 129,11 euro sul totale dell'anno
 - `dentista/chi-ha-diritto/` e `psicologo/bonus-psicologo/`: il 19% si calcola sulla parte che supera 129,11 euro, «sul totale delle spese mediche dell'anno». Fonte: guida dell'Agenzia delle Entrate «Le spese sanitarie» (copia del 27/10/2026), ora nella provenienza di `data/rules-dentista.json` e `data/rules-psicologo.json`.
 - `docs/revisione-2026-10-25.md`: chiuso il punto della franchigia; la direttiva siciliana 9368/2026 e il PDF del D.A. 780/2021 rispondono 404.

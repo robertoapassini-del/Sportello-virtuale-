@@ -3,24 +3,74 @@
   "last_verified": "2026-10-18",
   "income_year_note": "Il reddito è quello complessivo del nucleo familiare dell'anno precedente, lordo (quello che c'è sulla dichiarazione dei redditi o sulla CU).",
   "codes": {
-    "E01": { "label": "Bambini sotto i 6 anni e persone di 65 anni o più", "income_max": 36151.98 },
-    "E02": { "label": "Disoccupati iscritti al centro per l'impiego, e familiari a carico", "income_base": 8263.31, "income_with_spouse": 11362.05, "income_per_child": 516.46 },
-    "E03": { "label": "Chi ha l'assegno sociale (o la pensione sociale), e familiari a carico", "income_max": null },
-    "E04": { "label": "Chi ha più di 60 anni con la pensione al minimo, e familiari a carico", "income_base": 8263.31, "income_with_spouse": 11362.05, "income_per_child": 516.46 }
+    "E01": {
+      "label": "Bambini sotto i 6 anni e persone di 65 anni o più",
+      "income_max": 36151.98
+    },
+    "E02": {
+      "label": "Disoccupati iscritti al centro per l'impiego, e familiari a carico",
+      "income_base": 8263.31,
+      "income_with_spouse": 11362.05,
+      "income_per_child": 516.46
+    },
+    "E03": {
+      "label": "Chi ha l'assegno sociale (o la pensione sociale), e familiari a carico",
+      "income_max": null
+    },
+    "E04": {
+      "label": "Chi ha più di 60 anni con la pensione al minimo, e familiari a carico",
+      "income_base": 8263.31,
+      "income_with_spouse": 11362.05,
+      "income_per_child": 516.46
+    }
   },
-  "age_limits": { "child_under": 6, "elderly_from": 65, "minimo_over": 60 },
+  "age_limits": {
+    "child_under": 6,
+    "elderly_from": 65,
+    "minimo_over": 60
+  },
   "valid_until": "31 marzo dell'anno dopo",
   "other_exemptions": [
-    { "code": "C01", "text": "Invalidità civile al 100% senza indennità di accompagnamento: non paghi il ticket per visite ed esami." },
-    { "code": "C02", "text": "Invalidità civile al 100% con indennità di accompagnamento: non paghi il ticket per visite ed esami." },
-    { "code": "C03", "text": "Invalidità civile dal 67% al 99%: non paghi il ticket per visite ed esami." },
-    { "code": "C04", "text": "Minore con indennità di frequenza: non paghi il ticket per visite ed esami." },
-    { "code": "C05", "text": "Persona cieca, o che vede al massimo un decimo con tutti e due gli occhi: non paghi il ticket per visite ed esami." },
-    { "code": "C06", "text": "Persona sorda dalla nascita, o da prima di imparare a parlare: non paghi il ticket per visite ed esami." },
-    { "code": "0xx", "text": "Malattia cronica nell'elenco del Ministero (per esempio diabete, ipertensione grave, asma): non paghi le visite e gli esami per quella malattia. La chiede il medico, la rilascia l'azienda sanitaria." },
-    { "code": "048", "text": "Tumore: non paghi visite ed esami legati alla malattia e ai controlli." },
-    { "code": "M", "text": "Gravidanza: visite ed esami del percorso nascita gratuiti." },
-    { "code": "D", "text": "Esami di prevenzione (screening) nelle fasce di età previste: gratuiti." }
+    {
+      "code": "C01",
+      "text": "Invalidità civile al 100% senza indennità di accompagnamento: non paghi il ticket per visite ed esami."
+    },
+    {
+      "code": "C02",
+      "text": "Invalidità civile al 100% con indennità di accompagnamento: non paghi il ticket per visite ed esami."
+    },
+    {
+      "code": "C03",
+      "text": "Invalidità civile dal 67% al 99%: non paghi il ticket per visite ed esami."
+    },
+    {
+      "code": "C04",
+      "text": "Minore con indennità di frequenza: non paghi il ticket per visite ed esami."
+    },
+    {
+      "code": "C05",
+      "text": "Persona cieca, o che vede al massimo un decimo con tutti e due gli occhi: non paghi il ticket per visite ed esami."
+    },
+    {
+      "code": "C06",
+      "text": "Persona sorda dalla nascita, o da prima di imparare a parlare: non paghi il ticket per visite ed esami."
+    },
+    {
+      "code": "0xx",
+      "text": "Malattia cronica nell'elenco del Ministero (per esempio diabete, ipertensione grave, asma): non paghi le visite e gli esami per quella malattia. La chiede il medico, la rilascia l'azienda sanitaria."
+    },
+    {
+      "code": "048",
+      "text": "Tumore: non paghi visite ed esami legati alla malattia e ai controlli."
+    },
+    {
+      "code": "M",
+      "text": "Gravidanza: visite ed esami del percorso nascita gratuiti."
+    },
+    {
+      "code": "D",
+      "text": "Esami di prevenzione (screening) nelle fasce di età previste: gratuiti."
+    }
   ],
   "notes_internal": "TODO-VERIFY: E01 dai 65 anni compiuti (la legge dice «superiore a 65 anni»: confermare con ASP/Sistema TS che vale dal compleanno); soglie aggiornate (DM 11/12/2009; art. 8 c. 16 L. 537/1993) con il legale/ASP. Codici di esenzione per invalidità (da C01 a C06) corretti il 2026-10-21 sulla scheda del Garante disabili della Regione Campania: il significato di ognuno è in other_exemptions. In Sicilia l'esenzione farmaci per reddito ha regole regionali: non calcolarla.",
   "provenienza": {
@@ -58,16 +108,98 @@
       "proof": "estratto",
       "review_by": "2027-01-31",
       "nota": "E01 sotto i 6 anni e dai 65; E04 oltre i 60. DA VERIFICARE: la legge dice «superiore a 65 anni», il sito conta dal compleanno."
+    },
+    "gravidanza_nipt_emilia_romagna.dal_anno": {
+      "url": "https://salute.regione.emilia-romagna.it/cure-primarie/consultori/percorso-nascita/nipt",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-10-27",
+      "nota": "Regione Emilia-Romagna, pagina «NIPT», copia del server del 27/10/2026: «ha deciso di renderlo gratuito dall'1 luglio 2024 su tutto il territorio regionale per le donne in gravidanza, indipendentemente dall'età e dalla presenza di fattori di rischio»; offerto alle residenti e alle assistite, «incluse donne iscritte come Straniere Temporaneamente Presenti - STP»."
+    },
+    "gravidanza_nipt_emilia_romagna.settimana_da": {
+      "url": "https://salute.regione.emilia-romagna.it/cure-primarie/consultori/percorso-nascita/nipt",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-10-27",
+      "nota": "Regione Emilia-Romagna, pagina «NIPT», copia del server del 27/10/2026: «la possibilità di effettuare gratuitamente il Nipt fra la 10 a e la 13 a settimana di gestazione»."
+    },
+    "gravidanza_nipt_emilia_romagna.settimana_a": {
+      "url": "https://salute.regione.emilia-romagna.it/cure-primarie/consultori/percorso-nascita/nipt",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-10-27",
+      "nota": "Regione Emilia-Romagna, pagina «NIPT», copia del server del 27/10/2026: «fra la 10 a e la 13 a settimana di gestazione»."
     }
   },
   "sources": [
-    { "label": "Ministero della Salute – Esenzioni per reddito (E01, E02, E03, E04)", "url": "https://www.salute.gov.it/new/it/tema/esenzioni-dal-ticket/esenzioni-reddito/" },
-    { "label": "L. 537/1993, art. 8, comma 16 (esenzione per reddito)", "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1993-12-24;537" },
-    { "label": "Sistema Tessera Sanitaria – esenzioni per reddito", "url": "https://sistemats1.sanita.finanze.it/portale/esenzioni-da-reddito-cittadini" },
-    { "label": "AUSL Piacenza – Esenzione ticket per reddito (validità fino al 31 marzo)", "url": "https://www.ausl.pc.it/it/come-fare-per/esenzioni-e-contributi/esenzioni/esenzioni-dal-pagamento-del-ticket" },
-    { "label": "ASL Città di Torino – Esenzione ticket per reddito", "url": "https://www.aslcittaditorino.it/prestazioni/esenzione-ticket-per-reddito/" },
-    { "label": "Garante disabili Regione Campania – Esenzioni per invalidità: i codici (C01-C06)", "url": "https://www.cr.campania.it/garante-disabili/images/Articoli_2025/28_Aprile_2025_-_Esenzioni_per_invalidità_i_codici.pdf" },
-    { "label": "Regione Siciliana – Assessorato della Salute", "url": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute" },
-    { "label": "Codice civile, artt. 316 e 320 (il genitore firma per il figlio minore), 357 (tutore), 404-405 (amministratore di sostegno)", "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262" }
-  ]
+    {
+      "label": "Ministero della Salute – Esenzioni per reddito (E01, E02, E03, E04)",
+      "url": "https://www.salute.gov.it/new/it/tema/esenzioni-dal-ticket/esenzioni-reddito/"
+    },
+    {
+      "label": "L. 537/1993, art. 8, comma 16 (esenzione per reddito)",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1993-12-24;537"
+    },
+    {
+      "label": "Sistema Tessera Sanitaria – esenzioni per reddito",
+      "url": "https://sistemats1.sanita.finanze.it/portale/esenzioni-da-reddito-cittadini"
+    },
+    {
+      "label": "AUSL Piacenza – Esenzione ticket per reddito (validità fino al 31 marzo)",
+      "url": "https://www.ausl.pc.it/it/come-fare-per/esenzioni-e-contributi/esenzioni/esenzioni-dal-pagamento-del-ticket"
+    },
+    {
+      "label": "ASL Città di Torino – Esenzione ticket per reddito",
+      "url": "https://www.aslcittaditorino.it/prestazioni/esenzione-ticket-per-reddito/"
+    },
+    {
+      "label": "Garante disabili Regione Campania – Esenzioni per invalidità: i codici (C01-C06)",
+      "url": "https://www.cr.campania.it/garante-disabili/images/Articoli_2025/28_Aprile_2025_-_Esenzioni_per_invalidità_i_codici.pdf"
+    },
+    {
+      "label": "Regione Siciliana – Assessorato della Salute",
+      "url": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute"
+    },
+    {
+      "label": "Codice civile, artt. 316 e 320 (il genitore firma per il figlio minore), 357 (tutore), 404-405 (amministratore di sostegno)",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262"
+    },
+    {
+      "label": "ASP Palermo (Sicilia) – Ticket: esenzione per patologia",
+      "url": "https://www.asppalermo.org/servizio/ticket-esenzione-per-patologia/"
+    },
+    {
+      "label": "ASL Città di Torino (Piemonte) – Esenzione ticket per patologia",
+      "url": "https://www.aslcittaditorino.it/prestazioni/esenzione-ticket-per-patologia-malattia/"
+    },
+    {
+      "label": "Regione Emilia-Romagna – Vademecum delle esenzioni dal ticket",
+      "url": "https://salute.regione.emilia-romagna.it/normativa-e-documentazione/linee-di-indirizzo/esenzione-ticket/vademecum_esenzioni.pdf"
+    },
+    {
+      "label": "Regione Umbria – Esenzioni ticket: malattie rare",
+      "url": "https://insalute.regione.umbria.it/wp-content/uploads/2026/02/Esenzioni-ticket.pdf"
+    },
+    {
+      "label": "Regione Emilia-Romagna – NIPT, test prenatale gratuito",
+      "url": "https://salute.regione.emilia-romagna.it/cure-primarie/consultori/percorso-nascita/nipt"
+    },
+    {
+      "label": "Regione Piemonte – Esenzione dal ticket per visite ed esami in gravidanza",
+      "url": "https://www.regione.piemonte.it/web/temi/sanita/sostegno-alle-cure/esenzione-dal-ticket-per-visite-esami-gravidanza"
+    },
+    {
+      "label": "Regione Piemonte – Agenda di gravidanza",
+      "url": "https://www.regione.piemonte.it/web/temi/sanita/salute-materno-infantile/agenda-gravidanza"
+    },
+    {
+      "label": "Regione Toscana – Nascere in Toscana",
+      "url": "https://www.regione.toscana.it/nascere-in-toscana"
+    }
+  ],
+  "gravidanza_nipt_emilia_romagna": {
+    "dal_anno": 2024,
+    "settimana_da": 10,
+    "settimana_a": 13
+  }
 }
