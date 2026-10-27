@@ -163,3 +163,18 @@ Ancora da verificare (manca la fonte nelle copie, o serve un lavoro sui dati):
 - **Lombardia**: sigla dei servizi «ASST» (`asl_label_servizi`), l'ATS resta per siti, numeri, URP e screening.
 - **Lazio**: il sollecito parla del Pass di garanzia (`request_name`), non di una lettera con protocollo.
 - **Scadenza oggi**: «torna qui il giorno dopo», e «Oggi è l'ultimo giorno».
+
+## Gruppo 2, primo passo (27/10/2026): fonti da copiare
+
+Da questa sessione i siti ufficiali non si aprono: le fonti si leggono solo nelle copie del server. Con la ricerca
+abbiamo trovato gli indirizzi giusti e li abbiamo messi in `data/fonti-nazionali.json`, tema «verifiche»: il server li
+copia dopo l'unione, poi si leggono e si correggono le frasi.
+- **Medico di famiglia**: massimale di 1.500, scelta del medico dai 6 anni e scelta temporanea da 3 mesi a 1 anno
+  letti nell'ACN 2024 (rep. 51/CSR), che era già nelle copie. Nuovo nella pagina: prima della scelta temporanea
+  l'azienda cancella la persona dall'elenco del medico della residenza.
+- **Gratuito patrocinio**: la cifra del sito (13.659,64 euro) è quella del decreto del 22/04/2025; la pagina di
+  giustizia.it è vecchia. Da confermare sulla Gazzetta n. 159 dell'11/07/2025.
+- **In copia dalla prossima notte**: Gazzetta del PNGLA (S.O. n. 32 del 24/08/2026), guida dell'Agenzia delle Entrate
+  sulla disabilità, accordo dei pediatri (rep. 28/CSR del 18/03/2026), ausili in Sicilia (D.A. 780/2021, che forse
+  sostituisce il D.A. del 2011), cure all'estero in Sicilia (direttiva 9368/2026), FAQ del Garante sulle cartelle
+  cliniche, messaggio INPS 18291/2011 sul ricovero gratuito, L. 537/1993 (esenzione E01).

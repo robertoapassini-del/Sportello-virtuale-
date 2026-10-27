@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 27/10/2026 — Fonti da verificare: indirizzi per il server
+- `data/fonti-nazionali.json`: tema nuovo «verifiche» con 10 fonti ufficiali per le frasi «da verificare» (`docs/revisione-2026-10-25.md`, gruppo 2): Gazzetta del gratuito patrocinio e del PNGLA, Corte d'appello dell'Aquila, guida dell'Agenzia delle Entrate sulla disabilità, accordo dei pediatri 2026, D.A. 780/2021 (ausili in Sicilia), direttiva siciliana 9368/2026, Garante (cartelle cliniche), messaggio INPS 18291/2011, L. 537/1993. `tests/coerenza.test.mjs`: giustizia.it e garanteprivacy.it tra i siti ufficiali.
+- `data/rules-medico.json`: massimale (1.500), scelta del medico dai 6 anni e scelta temporanea (3 mesi–1 anno) con la frase dell'ACN 2024 (rep. 51/CSR), già nelle copie; prima la fonte era una notizia SISAC senza le cifre. `medico-famiglia/scelta-temporanea/`: prima l'azienda cancella dall'elenco del medico della residenza (ACN, art. 39 c. 6), al posto di «chiedi cosa succede».
+- `data/rules-ricorso.json`: nota del gratuito patrocinio (giustizia.it ha ancora la cifra del 2023).
+
 ## 26/10/2026 — Lombardia, Lazio e scadenze di oggi
 - Lombardia: visite, ospedali, cure a casa, ausili, medico e farmacia sono delle ASST, non dell'ATS (`docs/regioni.md`). `data/regioni/index.json`: campo nuovo `asl_label_servizi: "ASST"`. Nei JS `aslLabel()` dà la sigla dei servizi, `aslEnte()` quella dell'azienda dei dati (siti, numeri, URP, screening, intestazioni). Nuovo controllo in `tests/coerenza.test.mjs`: la sigla dei servizi c'è solo dove il «model» dei dati nomina tutte e due le aziende. Provato: la sigla messa per sbaglio sulla Liguria (che ha solo l'ATS) lo fa fallire.
 - Lazio: il sollecito del percorso di tutela parlava di una lettera con protocollo, ma nel Lazio si attiva il «Pass di garanzia» (online o al CUP). Campo nuovo `request_name` nelle aziende con `letter_mode: "portal"`; il sollecito, il campo del numero e l'oggetto dell'email parlano del Pass (`js/letters.js`, `js/liste-attesa.js`).
