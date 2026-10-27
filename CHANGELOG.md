@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 27/10/2026 — Franchigia di 129,11 euro sul totale dell'anno
+- `dentista/chi-ha-diritto/` e `psicologo/bonus-psicologo/`: il 19% si calcola sulla parte che supera 129,11 euro, «sul totale delle spese mediche dell'anno». Fonte: guida dell'Agenzia delle Entrate «Le spese sanitarie» (copia del 27/10/2026), ora nella provenienza di `data/rules-dentista.json` e `data/rules-psicologo.json`.
+- `docs/revisione-2026-10-25.md`: chiuso il punto della franchigia; la direttiva siciliana 9368/2026 e il PDF del D.A. 780/2021 rispondono 404.
+
 ## 27/10/2026 — I vaccini dei bambini
 - `prevenzione/vaccini-bambini/` (pagina nuova): i 10 vaccini obbligatori da 0 a 16 anni, i 4 gratis non obbligatori, nido e scuola dell'infanzia, la multa, l'esonero; le regole di Piemonte e Toscana per la scuola. Letto nelle copie del server del 27/10/2026 (ISS, Regione Piemonte, Regione Toscana).
 - `data/rules-prevenzione.json`: «vaccini_bambini» con la frase dell'ISS; 4 fonti nuove. `prevenzione/vaccini/`: link alla pagina nuova.
