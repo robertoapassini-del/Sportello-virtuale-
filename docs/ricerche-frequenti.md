@@ -51,6 +51,7 @@ Cosa ci dice:
   descrizioni sono cambiati dopo questi dati: si guarda il prossimo export.
 - **http://guidasanita.it/**: Google ha visto anche l'indirizzo senza «s». «Enforce HTTPS» di GitHub Pages era già
   attivo (controllato il 27/10/2026) e il `canonical` delle pagine è `https://`: Google le unirà da solo.
+- **Sitemap** (`https://guidasanita.it/sitemap.xml`): inviata in Search Console di recente (controllato il 27/10/2026).
 
 Prossimo export: fine novembre 2026, con le stesse colonne, per confrontare clic e posizioni pagina per pagina.
 
