@@ -2,6 +2,12 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 27/10/2026 — Descrizioni per Google entro 155 caratteri
+- Search Console (19–24/10/2026): 119 impressioni e 2 clic; 10 pagine indicizzate, 51 «rilevate, ma non indicizzate». Le descrizioni erano quasi tutte tra 250 e 415 caratteri: Google le tagliava prima della cifra utile.
+- Riscritte le descrizioni di tutte le 88 pagine (prima la risposta e la cifra, poi come si fa), con le stesse cifre di prima; tolte le regole della sola Sicilia dalle descrizioni nazionali (ausili, invalidità, liste d'attesa, CUP, cure all'estero, fascicolo).
+- `data/moduli.json`: intro dell'area «Urgenze» più corta (è anche la descrizione della pagina).
+- Nuovo controllo in `tests/seo.test.mjs`: descrizione tra 50 e 155 caratteri in ogni pagina.
+
 ## 25/10/2026 — Seconda rilettura: coerenza tra pagine
 - Riletti insieme lo stesso fatto in pagine diverse, `data/moduli.json`, i testi comuni dei JS, le pagine delle aree e i testi delle regioni (`docs/revisione-2026-10-25.md`, ultima sezione).
 - Esenzione E04: il limite di 11.362,05 euro vale «in presenza del coniuge» anche qui (modulo di autocertificazione dell'ASL Città di Torino); il calcolo fa la stessa domanda per E02 ed E04.
