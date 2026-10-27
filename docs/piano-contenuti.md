@@ -53,7 +53,7 @@ L'ordine viene da quanto si cercano (Google Trends, `ricerche-frequenti.md` punt
 
 ### Secondo giro: domande frequenti, con una pagina vicina
 
-- Esenzione per malattia cronica o rara: codici, come si chiede (oggi è una sottopagina dell'esenzione). 27/10/2026: fonti in copia (tema «esenzione-patologia»).
+- Esenzione per malattia cronica o rara: codici, come si chiede (oggi è una sottopagina dell'esenzione). **Fatto il 27/10/2026**: `esenzione-ticket/malattia-cronica-rara/`, dalle copie.
 - Le medicine: ticket in farmacia (cambia per regione), farmaci gratis e a pagamento, farmacia dei servizi. 27/10/2026: pagine del ticket dei farmaci di 14 regioni in copia (voce «ticket-farmaci»).
 - Vaccini per i bambini: obbligatori, scuola, dove si fanno. 27/10/2026: fonti in copia (tema «vaccini-bambini» di `data/fonti-nazionali.json`).
 - Gravidanza e parto: esami gratis, consultorio, dopo il parto. 27/10/2026: fonti in copia (tema «gravidanza»).
