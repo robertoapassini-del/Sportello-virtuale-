@@ -2,6 +2,12 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 27/10/2026 — Pronto soccorso: il ticket regione per regione
+- `pronto-soccorso/il-ticket/` (pagina nuova): la regola nazionale (L. 296/2006: 25 euro per il codice bianco non seguito da ricovero; non pagano i minori di 14 anni, i traumi e gli avvelenamenti acuti) e le regole di 17 regioni, lette nelle copie del server del 27/10/2026. Dove la fonte è di un'azienda sanitaria, la pagina dice quale.
+- `data/rules-pronto-soccorso.json`: cifre nuove con la frase della fonte (Emilia-Romagna 25 euro e fino a 36,15 per ricetta; ASL 1 Liguria fino a 61,15 euro ed entro 7 giorni; Puglia 10 euro per ricetta; ASL CN1 trauma entro 36 ore; Toscana sud est fino a 50 euro; Veneto osservazione oltre 4 ore) e 24 fonti nuove.
+- `pronto-soccorso/`: al posto dell'elenco delle regioni, la regola di base e il link alla pagina nuova.
+- `tests/provenienza.test.mjs`: un intero scritto con i centesimi nella fonte («€ 10,00») ora vale come la cifra 10. Provato con l'errore messo apposta (10 → 11): il test fallisce.
+
 ## 27/10/2026 — Fonti da verificare: letto le copie della notte
 - `data/rules-ricorso.json`: il limite del gratuito patrocinio (13.659,64 euro) ora ha la frase della Gazzetta n. 159 dell'11/07/2025 (decreto del 22/04/2025); `tests/citazioni.txt`: «art. 76 comma 1».
 - `data/rules.json`: il richiamo del CUP (5, 10, 15, 30 giorni) ora ha la frase del PNGLA 2025-2027 (Gazzetta S.O. 32 del 24/08/2026). Più avanti il piano scrive «massimo 20 giorni per le priorità P»: il sito tiene 30, da chiarire.

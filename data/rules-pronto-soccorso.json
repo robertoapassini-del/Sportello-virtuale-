@@ -1,10 +1,21 @@
 {
   "name": "Pronto soccorso: triage, codici e ticket",
-  "last_verified": "2026-10-24",
+  "last_verified": "2026-10-27",
   "codici_numero": 5,
   "ticket_bianco_lombardia_euro": 25,
   "ticket_calabria_catanzaro_euro": 25,
   "ticket_calabria_catanzaro_max_euro": 45,
+  "ticket_nazionale_euro": 25,
+  "ticket_nazionale_minori_anni": 14,
+  "ticket_emilia_romagna_euro": 25,
+  "ticket_emilia_romagna_esami_max_euro": 36.15,
+  "ticket_emilia_romagna_trauma_ore": 24,
+  "ticket_liguria_asl1_max_euro": 61.15,
+  "ticket_liguria_asl1_giorni": 7,
+  "ticket_puglia_ricetta_euro": 10,
+  "ticket_piemonte_cn1_trauma_ore": 36,
+  "ticket_toscana_sudest_max_euro": 50,
+  "ticket_veneto_obi_ore": 4,
   "attesa_nazionale_minuti": {
     "codice_2": 15,
     "codice_3": 60,
@@ -57,6 +68,83 @@
       "proof": "testo",
       "review_by": "2027-10-24",
       "nota": "Regione Veneto, DGR n. 1035 del 12/07/2019, allegato A, copia del server del 24/10/2026: codice 5 «PIC entro 30 minuti», «visita medica entro 60 minuti dalla PIC» (PIC: presa in cura infermieristica). Regola della sola Regione Veneto."
+    },
+    "ticket_nazionale_euro": {
+      "url": "https://www.asl1.liguria.it/emergenze-e-guardia-medica/codice-bianco-pronto-soccorso.html",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-04-27",
+      "nota": "ASL 1 della Liguria, pagina «Codice Bianco Pronto Soccorso», copia del server del 27/10/2026, con il testo della L. 296/2006 (finanziaria 2007): «per le prestazioni erogate in regime di pronto soccorso ospedaliero non seguite da ricovero, la cui condizione è stata codificata come codice bianco, a eccezione di quelli afferenti al pronto soccorso a seguito di traumatismi e avvelenamenti acuti, gli assistiti non esenti sono tenuti al pagamento di una quota fissa pari a 25 euro»."
+    },
+    "ticket_nazionale_minori_anni": {
+      "url": "https://www.asl1.liguria.it/emergenze-e-guardia-medica/codice-bianco-pronto-soccorso.html",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-04-27",
+      "nota": "Stessa pagina, stessa legge: «La quota fissa per le prestazioni erogate in regime di pronto soccorso non è dovuta dagli assistiti non esenti di età inferiore a 14 anni»."
+    },
+    "ticket_emilia_romagna_euro": {
+      "url": "https://www.regione.emilia-romagna.it/ticket-ps",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-04-27",
+      "nota": "Regione Emilia-Romagna, pagina «le regole per l'applicazione del ticket», copia del server del 27/10/2026: pagano le persone a cui «all'ingresso al Pronto soccorso (triage)» viene assegnato il «codice BIANCO» o il «codice VERDE»; «Il ticket del Pronto soccorso è di € 25 e comprende la visita di presa in carico del medico di PS»; «è previsto un ulteriore ticket di € 25 per ogni eventuale successiva visita di consulenza»."
+    },
+    "ticket_emilia_romagna_esami_max_euro": {
+      "url": "https://www.regione.emilia-romagna.it/ticket-ps",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-04-27",
+      "nota": "Stessa pagina: «fino a un massimo di € 36,15 per ricetta, per gli esami eventualmente prescritti dal medico di Pronto soccorso»."
+    },
+    "ticket_emilia_romagna_trauma_ore": {
+      "url": "https://www.regione.emilia-romagna.it/ticket-ps",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-04-27",
+      "nota": "Stessa pagina, non pagano: «le persone che accedono al Pronto soccorso a seguito di un evento traumatico avvenuto nelle 24 ore precedenti»; anche «le bambine e i bambini fino a 14 anni», le persone «trasferite in Osservazione breve intensiva (OBI)», chi viene ricoverato, chi ha «subito un infortunio sul lavoro», chi abbandona «prima di essere visitate», chi arriva con l'impegnativa del medico."
+    },
+    "ticket_liguria_asl1_max_euro": {
+      "url": "https://www.asl1.liguria.it/emergenze-e-guardia-medica/codice-bianco-pronto-soccorso.html",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-04-27",
+      "nota": "ASL 1 della Liguria, stessa pagina: «I pazienti dimessi dal Pronto Soccorso con codice bianco sono tenuti al pagamento del ticket di 25 euro»; «L'importo dovuto può essere incrementato, fino ad un massimo di € 61,15, in caso di esecuzione di prestazioni diagnostiche e/o strumentali»."
+    },
+    "ticket_liguria_asl1_giorni": {
+      "url": "https://www.asl1.liguria.it/emergenze-e-guardia-medica/codice-bianco-pronto-soccorso.html",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-04-27",
+      "nota": "Stessa pagina: «si ricorda il termine di 7 giorni per il pagamento del ticket al fine di evitare aggravi di spesa»."
+    },
+    "ticket_puglia_ricetta_euro": {
+      "url": "https://sist.sanita.puglia.it/documents/25619/125067/Tabella+Quota+Fissa+e+Ticket+Pronto+Soccorso+e+Specialistica.pdf/e4c9a358-1d08-4670-a298-843990cb1225",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-04-27",
+      "nota": "Regione Puglia, tabella riepilogativa delle quote per pronto soccorso e specialistica (D.L. 98/2011), copia del server del 27/10/2026. Riga del «CODICE BIANCO (assegnato all'atto della dimissione)»: quota fissa per ricetta «€ 10,00», quota fissa per accesso al pronto soccorso «€ 25,00», ticket fino a «€ 36,15». Il testo della tabella è spezzato: letto riga per riga."
+    },
+    "ticket_piemonte_cn1_trauma_ore": {
+      "url": "https://www.aslcn1.it/fileadmin/ASLCN1/Dip_Emergenza_Urgenza/Medicina_Urgenza_Savigliano/Informativa_per_pagamento_ticket_PS.pdf",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-04-27",
+      "nota": "ASL CN1, informativa per il pagamento del ticket di pronto soccorso, copia del server del 27/10/2026: «CODIFICATE DAL MEDICO ALLA DIMISSIONE COME CODICE BIANCO SONO TENUTI AL PAGAMENTO DEL TICKET DI € 25,00»; «NON PAGA IL TICKET L'ASSISTITO CHE SI RIVOLGE AL PRONTO SOCCORSO PER: TRAUMATISMO ENTRO LE 36 ORE DALL'EVENTO /AVVELENAMENTO ACUTO»."
+    },
+    "ticket_toscana_sudest_max_euro": {
+      "url": "https://www.uslsudest.toscana.it/come-fare-per/pagare-il-ticket",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-04-27",
+      "nota": "Azienda USL Toscana sud est, pagina «Pagare il ticket», copia del server del 27/10/2026: «Il ticket in Pronto Soccorso è dovuto per i codice di priorità 4 e 5. In questi casi è previsto il pagamento di un ticket di € 25, oltre eventuali ticket per esami di controllo svolti durante l'accesso, fino ad un importo massimo di € 50»."
+    },
+    "ticket_veneto_obi_ore": {
+      "url": "https://salute.regione.veneto.it/organizzazione-sssr/il-servizio-socio-sanitario-regionale/assistenza-ospedaliera/pronto-soccorso/dimissioni",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-04-27",
+      "nota": "Regione Veneto, pagina «Dimissioni» del pronto soccorso, copia del server del 27/10/2026: chi è «classificato alla dimissione come codice bianco» paga «una quota fissa di 25 euro» e «i ticket sulle prestazioni erogate»; esclusi i «casi che abbiano determinato un ricovero in Osservazione Breve Intensiva per più di 4 ore»."
     }
   },
   "sources": [
@@ -91,6 +179,102 @@
     {
       "label": "Regione Veneto – DGR 1035/2019, allegato A (triage)",
       "url": "https://bur.regione.veneto.it/BurvServices/pubblica/Download.aspx?name=Dgr_1035_19_AllegatoA_401204.pdf&type=9&storico=False"
+    },
+    {
+      "label": "Legge 296/2006 (finanziaria 2007) e ASL 1 Liguria – Ticket del codice bianco",
+      "url": "https://www.asl1.liguria.it/emergenze-e-guardia-medica/codice-bianco-pronto-soccorso.html"
+    },
+    {
+      "label": "Regione Campania – Decreto del 2010 sul ticket del pronto soccorso (BURC n. 66 del 04/10/2010)",
+      "url": "https://burc.regione.campania.it/eBurcWeb/directServlet?DOCUMENT_ID=14882&ATTACH_ID=14781"
+    },
+    {
+      "label": "AORN Cardarelli (Campania) – Informativa sul ticket del codice bianco",
+      "url": "https://www.ospedalecardarelli.it/migrate/DOCUMENT_FILE_123748.pdf"
+    },
+    {
+      "label": "Regione Emilia-Romagna – Pronto soccorso: le regole del ticket",
+      "url": "https://www.regione.emilia-romagna.it/ticket-ps"
+    },
+    {
+      "label": "ASL Roma 2 (Lazio) – Pronto soccorso: ticket del codice bianco",
+      "url": "https://www.aslroma2.it/index.php/uoc-medicina-d-urgenza-e-pronto-soccorso-2"
+    },
+    {
+      "label": "ASL Viterbo (Lazio) – Pagamento ticket ed esenzioni",
+      "url": "https://www.asl.vt.it/pagamento-ticket-ed-esenzioni"
+    },
+    {
+      "label": "ASL Teramo (Abruzzo) – Pronto soccorso",
+      "url": "https://www.aslteramo.it/prestazioni_servizi/osservazione-breve-pronto-soccorso-teramo/"
+    },
+    {
+      "label": "ASL Lanciano Vasto Chieti (Abruzzo) – Pagare il ticket",
+      "url": "https://www.asl2abruzzo.it/come-fare-per/pagare-il-ticket-per-una-visita-o-un-esame/"
+    },
+    {
+      "label": "Azienda ospedaliero universitaria delle Marche – Pronto soccorso",
+      "url": "https://portale.ospedaliriuniti.marche.it/archivio13_reparti_0_289.html"
+    },
+    {
+      "label": "Regione Piemonte – DGR del 07/08/2020 sul ticket del codice bianco",
+      "url": "https://www.regione.piemonte.it/governo/bollettino/abbonati/2020/37/attach/dgr_01859_1050_07082020.pdf"
+    },
+    {
+      "label": "ASL CN1 (Piemonte) – Informativa sul ticket del pronto soccorso",
+      "url": "https://www.aslcn1.it/fileadmin/ASLCN1/Dip_Emergenza_Urgenza/Medicina_Urgenza_Savigliano/Informativa_per_pagamento_ticket_PS.pdf"
+    },
+    {
+      "label": "ASL Città di Torino – Pagare il ticket",
+      "url": "https://www.aslcittaditorino.it/come-fare-per/pagare-il-ticket/"
+    },
+    {
+      "label": "Regione Puglia – Tabella delle quote per pronto soccorso e specialistica",
+      "url": "https://sist.sanita.puglia.it/documents/25619/125067/Tabella+Quota+Fissa+e+Ticket+Pronto+Soccorso+e+Specialistica.pdf/e4c9a358-1d08-4670-a298-843990cb1225"
+    },
+    {
+      "label": "ASP Siracusa (Sicilia) – Pronto soccorso: ticket del codice bianco",
+      "url": "https://www.asp.sr.it/Servizi-e-prestazioni/Pronto-soccorso"
+    },
+    {
+      "label": "ASP Catania (Sicilia) – Pronto soccorso di Biancavilla: ticket del codice bianco",
+      "url": "https://www.aspct.it/azienda/presidi-ospedalieri/biancavilla/pronto-soccorso/"
+    },
+    {
+      "label": "ASP Ragusa (Sicilia) – I nuovi codici del pronto soccorso",
+      "url": "https://www.asp.rg.it/news/3496-in-vigore-i-nuovi-codici-colore-per-classificare-le-urgenze-al-pronto-soccorso.html"
+    },
+    {
+      "label": "Regione Toscana – Accedere al pronto soccorso",
+      "url": "https://www.regione.toscana.it/it/accedere-al-pronto-soccorso"
+    },
+    {
+      "label": "Azienda USL Toscana sud est – Pagare il ticket",
+      "url": "https://www.uslsudest.toscana.it/come-fare-per/pagare-il-ticket"
+    },
+    {
+      "label": "Provincia di Trento – I criteri del ticket del pronto soccorso dal 01/08/2016",
+      "url": "https://www.ufficiostampa.provincia.tn.it/content/download/38838/647260/file/Tabella_nuovi_criteri_ticket_pronto_soccorso.pdf"
+    },
+    {
+      "label": "USL Umbria 2 – Accedere al pronto soccorso",
+      "url": "https://www.uslumbria2.it/notizie/accedere-al-pronto-soccorso"
+    },
+    {
+      "label": "USL Umbria 1 – Pronto soccorso",
+      "url": "https://www.uslumbria1.it/servizio/pronto-soccorso-118/"
+    },
+    {
+      "label": "Azienda USL Valle d'Aosta – Pagamento delle prestazioni di pronto soccorso",
+      "url": "https://www.ausl.vda.it/Media/AUSL/Hierarchy/7/720/Pagamento%20prestazioni%20di%20Pronto%20Soccorso.pdf"
+    },
+    {
+      "label": "Regione Veneto – Pronto soccorso: dimissioni e ticket",
+      "url": "https://salute.regione.veneto.it/organizzazione-sssr/il-servizio-socio-sanitario-regionale/assistenza-ospedaliera/pronto-soccorso/dimissioni"
+    },
+    {
+      "label": "Regione Veneto – Pronto soccorso: esenzioni",
+      "url": "https://salute.regione.veneto.it/assistenza-ospedaliera/pronto-soccorso/esenzioni"
     }
   ]
 }
