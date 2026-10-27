@@ -2,6 +2,12 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 27/10/2026 — Cambio del medico online, regione per regione
+- `medico-famiglia/come-si-fa/`: elenco nuovo con il servizio online di 12 regioni (Abruzzo, Basilicata, Calabria, Campania, Friuli-Venezia Giulia, Liguria, Lombardia, Piemonte, Sardegna, provincia di Trento, Umbria, Veneto), più la Sicilia che c'era già. Letto nelle copie del server del 27/10/2026; dove la pagina è di un'azienda sanitaria, la frase lo dice.
+- `data/rules-medico.json`: «online_attesa_giorni» (Lombardia 30, ASL3 Liguria 31) con la frase della fonte, e 12 fonti nuove.
+- `tests/cifre.test.mjs`: tolta l'eccezione dei 30 giorni di Trapani, ora la cifra è nei dati.
+- Copie che mancano: Emilia-Romagna, Lazio, Molise, Puglia, Toscana, Valle d'Aosta (la pagina non è stata copiata).
+
 ## 27/10/2026 — Fonti da copiare per il terzo giro
 - `data/fonti-nazionali.json`: temi nuovi «dat» (testamento biologico, L. 219/2017), «stranieri» (iscrizione, STP ed ENI) e «consultorio», con le pagine ufficiali delle Regioni; `data/regioni/lazio/fonti.json`: la pagina dei consultori del Lazio. Il server le copia; le pagine si scrivono dalla copia.
 
