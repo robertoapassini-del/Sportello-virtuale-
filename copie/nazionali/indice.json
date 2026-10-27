@@ -1,6 +1,6 @@
 {
  "regione": "nazionali",
- "aggiornato": "2026-10-27T14:18:16.546Z",
+ "aggiornato": "2026-10-27T16:55:01.156Z",
  "pagine": [
   {
    "asl": "urgenze",
@@ -65,19 +65,8 @@
    "asl": "ascolto",
    "url": "https://www.telefonoamico.it",
    "controllata": "2026-10-27",
-   "http": 200,
-   "finale": "https://www.telefonoamico.it/",
-   "file": "ascolto/bb5eb1483659.txt",
-   "titolo": "Telefono Amico Italia",
-   "sha": "aa92548c4dd34d42c550545c84fa3f5809bcfea77127a4323a101b2afbbc2646",
-   "caratteri": 7045,
-   "link_pdf": [
-    {
-     "url": "https://www.telefonoamico.it/z_site2021/wp-content/uploads/Statuto-Telefono-Amico-Italia.pdf",
-     "testo": "STATUTO"
-    }
-   ],
-   "cambiata": false
+   "http": 0,
+   "errore": "curl: (28) Connection timed out after 30003 milliseconds"
   },
   {
    "asl": "ascolto",
@@ -111,7 +100,7 @@
    "titolo": "Uniti contro l'AIDS",
    "sha": "51aae5ad3859fe6aad69bca8cb386ad7e883cf5c94b79446e1c252355380115b",
    "caratteri": 54965,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ascolto",
@@ -570,9 +559,9 @@
    "http": 200,
    "file": "regole-contrassegno-disabili/206ded71e91b.txt",
    "titolo": "Polizia Municipale - Comune di Palermo",
-   "sha": "1f9d79868e1ab13d4cbe1ddacb3db44a3b3eedfbcfc3ab27544f3182c4f1ce9d",
-   "caratteri": 5042,
-   "cambiata": false
+   "sha": "2f069e02cf8ab34f6d41c6018688521702ebb97484d36d679a4c46be79c2183f",
+   "caratteri": 5166,
+   "cambiata": true
   },
   {
    "asl": "regole-cure-fuori-regione",
@@ -905,7 +894,7 @@
    "caratteri": 15273,
    "link_pdf": [
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x60604",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x37401",
      "testo": "Modulo per AUTOCERTIFICAZIONE"
     }
    ],
@@ -947,11 +936,11 @@
   },
   {
    "asl": "regole-esenzione",
-   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x60604",
+   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x37401",
    "controllata": "2026-10-27",
    "da_pagina": "https://www.aslcittaditorino.it/prestazioni/esenzione-ticket-per-reddito/",
    "http": 200,
-   "file": "regole-esenzione/9397923a1806.txt",
+   "file": "regole-esenzione/9ea7727a6529.txt",
    "titolo": "Autocertificazione di esenzione",
    "sha": "0ec5d984b6bd5ef03f12e32ef41b78dfdf250def32f239cb24d846beeee617d9",
    "caratteri": 10878,
@@ -1221,7 +1210,7 @@
      "testo": "Report sorveglianza accessi pronto soccorso Settimana 15/2026"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-invalidita",
@@ -1775,12 +1764,7 @@
    "asl": "regole-prevenzione",
    "url": "https://screening.asppalermo.org/",
    "controllata": "2026-10-27",
-   "http": 200,
-   "file": "regole-prevenzione/0cf99bf0e6d9.txt",
-   "titolo": "Screening Oncologici ASP di Palermo",
-   "sha": "d12d6541b143625d85783ff1bbd3412649e198cef60ace9f65fd9849efcd2cc7",
-   "caratteri": 9154,
-   "cambiata": false
+   "http": 503
   },
   {
    "asl": "regole-prevenzione",
@@ -1979,7 +1963,7 @@
      "testo": "Report sorveglianza accessi pronto soccorso Settimana 15/2026"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-pronto-soccorso",
@@ -2068,7 +2052,7 @@
    "sha": "3e5cb268b2380b79e696f55f24c3b7f41af9f339141c85b9f7adde6c29555db7",
    "caratteri": 6966,
    "email_nascoste": 1,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-pronto-soccorso",
@@ -2080,7 +2064,7 @@
    "sha": "a5b174c86b917694529e9872e42eb809143c2233432a7e01bce9e512f88dca20",
    "caratteri": 14403,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-pronto-soccorso",
@@ -2092,7 +2076,7 @@
    "sha": "6b0b7aba345f4419ecaafbd3e0d4b812e525ad720419a1e3e02a1388b9980f60",
    "caratteri": 1281,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-pronto-soccorso",
@@ -2103,7 +2087,7 @@
    "titolo": "Come funzionano le visite al Pronto soccorso: le regole per l'applicazione del ticket - Regione Emilia-Romagna",
    "sha": "d41f36c44ba4068209145fb026fd3d277a3b0bf579c4c236925d7dd2284d62af",
    "caratteri": 6909,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-pronto-soccorso",
@@ -2112,7 +2096,7 @@
    "http": 200,
    "file": "regole-pronto-soccorso/6f2a28e1087b.txt",
    "titolo": "ASL Roma 2 - UOC Medicina d'Urgenza e Pronto Soccorso",
-   "sha": "59bb9e46a0d7d9a6c7e66364985205b31bb66a08ede53ee470336439b6c2dd2d",
+   "sha": "9514c1aec8b56ffeb37d5e7f3f5fa026a35956d8c77f0b60073305684f269002",
    "caratteri": 14507,
    "email_nascoste": 4,
    "cambiata": true
@@ -2136,7 +2120,7 @@
      "testo": "Cookie Policy"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-pronto-soccorso",
@@ -2145,7 +2129,7 @@
    "http": 200,
    "file": "regole-pronto-soccorso/3db9dee43359.txt",
    "titolo": "PRONTO SOCCORSO Teramo – Azienda Sanitaria Locale di Teramo",
-   "sha": "71115cfece188d93210b47cde68a2155156b766570af14e3e4a62bcdf766b197",
+   "sha": "2034e21911744a125dd97d130923fa868099703bca75b30ecba8620e52e1202d",
    "caratteri": 6338,
    "link_pdf": [
     {
@@ -2168,7 +2152,7 @@
    "titolo": "Pagare il ticket per una visita o un esame | ASL2 Abruzzo",
    "sha": "c880076cead26bc0fc1574d36a0d84cba92d0e6573d72c94ef1b5017e50eeef9",
    "caratteri": 7881,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-pronto-soccorso",
@@ -2179,7 +2163,7 @@
    "titolo": "Azienda Ospedaliero Universitaria delle Marche - pronto soccorso e medicina d'urgenza",
    "sha": "831a9eef39f094c538b758e010d1cc756383724dded0499d4065e5d5f927bc53",
    "caratteri": 8011,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-pronto-soccorso",
@@ -2191,7 +2175,7 @@
    "sha": "1ea958a1333cf224dc8485b24b3fb4b2d1198216daca5fca7ec9979e7bf73f10",
    "caratteri": 8608,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-pronto-soccorso",
@@ -2203,7 +2187,7 @@
    "sha": "d9a7ac70ec52581ae2e8e37f0c63a2d9ff42bea0c6cc243c569ce06c5027ddbe",
    "caratteri": 1953,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-pronto-soccorso",
@@ -2214,7 +2198,7 @@
    "titolo": "Pagare il ticket | Azienda Sanitaria Locale \"Città di Torino\"",
    "sha": "550da777a570c6faf0aedde73bb2a01d58ed196577a2d56cc2789b8c1b7387c4",
    "caratteri": 7550,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-pronto-soccorso",
@@ -2226,7 +2210,7 @@
    "sha": "d2ff4bf02ca549d977460562e562f9c780493bed51c0b1df1ebb8d0bbf72d7b6",
    "caratteri": 4675,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-pronto-soccorso",
@@ -2237,7 +2221,7 @@
    "titolo": "Pronto soccorso - Azienda Sanitaria Provinciale di Siracusa",
    "sha": "c712259bd370a5cd5a6eb572cb6c1a4e63965bdc472c00b031619c4d2f5f44f0",
    "caratteri": 5740,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-pronto-soccorso",
@@ -2248,7 +2232,7 @@
    "titolo": "U.O.C. Pronto Soccorso",
    "sha": "6ec92e25088ea6893905170fcad8503c10818ffefede9ec092c59735e9529c1c",
    "caratteri": 5706,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-pronto-soccorso",
@@ -2261,7 +2245,7 @@
    "sha": "aa2e6c93dc38941ee0a99cb7bb15fb3e68f1429c4cdfbd966be80b86aed2f3b7",
    "caratteri": 2677,
    "email_nascoste": 2,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-pronto-soccorso",
@@ -2272,7 +2256,7 @@
    "titolo": "Accedere al pronto soccorso - Regione Toscana",
    "sha": "244dd454376d2890eab37fe3eb7dd8a350e3312500e09b9a295611aed8af2bd9",
    "caratteri": 5599,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-pronto-soccorso",
@@ -2293,7 +2277,7 @@
      "testo": "sportelli della Banca Monte dei Paschi di Siena"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-pronto-soccorso",
@@ -2305,7 +2289,7 @@
    "sha": "da2c9040f13bbdbda6cd669560b9b165e96c577385f74c98c56d0d64b8ac749d",
    "caratteri": 2585,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-pronto-soccorso",
@@ -2316,7 +2300,7 @@
    "titolo": "Accedere al Pronto Soccorso - USL Umbria 2",
    "sha": "60f4bccf1040efe85ba18e9d454ea1e7e2e4f306e18fd1f5ae6c77486b5a4f36",
    "caratteri": 3949,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-pronto-soccorso",
@@ -2337,7 +2321,7 @@
      "testo": "Scheda di accoglienza e triage mulitilingue (Inglese, Rumeno, Arabo e Cinese)"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-pronto-soccorso",
@@ -2349,7 +2333,7 @@
    "sha": "69bf3c76777dcbf433eb40872a1b1635832dfb22773689c889ebc6cbe45f74ec",
    "caratteri": 1548,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-pronto-soccorso",
@@ -2366,7 +2350,7 @@
      "testo": "Logo SSSR"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-pronto-soccorso",
@@ -2384,7 +2368,7 @@
      "testo": "Logo SSSR"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-pronto-soccorso",
@@ -2397,7 +2381,7 @@
    "sha": "05e2addf5f1b86e28583a38ceb4f8d322f49189904287545bd323a2cc9f3dd94",
    "caratteri": 1476,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-psicologo",
@@ -3015,7 +2999,7 @@
    "titolo": "Agenzia informa - Le Agevolazioni Fiscali sulle Spese Sanitarie",
    "sha": "1bd8c4b5c5deac2ce436d8970a95097c2e76bb803358b4032442b6cf614d56af",
    "caratteri": 55195,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "tema-verifiche",
@@ -3060,7 +3044,7 @@
    "titolo": "LEGGE 31 luglio 2017, n. 119 - Normattiva",
    "sha": "89662d76c6be257c9d7945bf1b380e147ddccf3e54d742c2e571e9b39f390729",
    "caratteri": 4409,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "tema-vaccini-bambini",
@@ -3072,7 +3056,7 @@
    "sha": "c220896da3b486871697800afb31c70f99edd729bde6aba91c7792a44e983e64",
    "caratteri": 219979,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "tema-vaccini-bambini",
@@ -3101,7 +3085,7 @@
      "testo": "banner"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "tema-vaccini-bambini",
@@ -3110,7 +3094,7 @@
    "http": 200,
    "file": "tema-vaccini-bambini/a8b3e7fb7065.txt",
    "titolo": "Obbligo vaccinale, le indicazioni operative per gli adempimenti dell'anno scolastico 2025-2026 | Regione Piemonte",
-   "sha": "842b47ddf02469f99a9f52d0a95b5efe8d241041d1e95000f8f9195f80c246fb",
+   "sha": "136194c284dc7ca5cbe08398ff03497505654eebb1683291f26fe3fb4fbc9537",
    "caratteri": 15496,
    "cambiata": true
   },
@@ -3123,7 +3107,7 @@
    "titolo": "Nuove disposizioni in materia di vaccinazioni - Regione Toscana",
    "sha": "f47b7e52d39b506f61cbe783d60705956b1f297bab381e14aeb6ba673f36cac7",
    "caratteri": 13436,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "tema-vaccini-bambini",
@@ -3144,7 +3128,7 @@
      "testo": "Scarica il calendario"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "tema-vaccini-bambini",
@@ -3156,6 +3140,207 @@
    "sha": "f4998c761ab5b887d2f888a98f692a208d499efd48ebdc5ccd95989a1e7cb1f5",
    "caratteri": 132175,
    "pdf": true,
+   "cambiata": false
+  },
+  {
+   "asl": "tema-esenzione-patologia",
+   "url": "https://www.regione.lombardia.it/wps/wcm/connect/34219f9f-5f97-4a77-99d9-f43d7b4ba390/Esenzioni+per+patologia.pdf?MOD=AJPERES&CACHEID=ROOTWORKSPACE-34219f9f-5f97-4a77-99d9-f43d7b4ba390-nAtO8a6",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "finale": "https://www.regione.lombardia.it/404",
+   "file": "tema-esenzione-patologia/6dd6ade8e1e7.txt",
+   "titolo": "404 - Regione Lombardia",
+   "sha": "222cf4c068d9a30f35a6f9783f25d632febf65ea6f98774a4c8d53e14d3c5836",
+   "caratteri": 3724,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-esenzione-patologia",
+   "url": "https://salute.regione.emilia-romagna.it/normativa-e-documentazione/linee-di-indirizzo/esenzione-ticket/vademecum_esenzioni.pdf",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "tema-esenzione-patologia/38a45e38217c.txt",
+   "titolo": "Chi ha diritto all’esenzione:",
+   "sha": "3d87d7202c2a6c4345e6f3d3b40d68515d71c334af7c3f479142458d53471a57",
+   "caratteri": 117629,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-esenzione-patologia",
+   "url": "https://insalute.regione.umbria.it/wp-content/uploads/2026/02/Esenzioni-ticket.pdf",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "tema-esenzione-patologia/c6a2e0c053b1.txt",
+   "titolo": "5. Esenzioni ticket",
+   "sha": "af6f2ec2b8a76e791568f8b7dddd054804294ee9fd2d3c3cea1e27c315edf9d3",
+   "caratteri": 2656,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-gravidanza",
+   "url": "https://www.regione.piemonte.it/web/temi/sanita/sostegno-alle-cure/esenzione-dal-ticket-per-visite-esami-gravidanza",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "tema-gravidanza/ee32fdd65028.txt",
+   "titolo": "Esenzione dal ticket per visite ed esami in gravidanza | Regione Piemonte",
+   "sha": "f581ec6b5a16a0d9d291bba07767d6bbebe0aa002fe81f22e7338d71a6b5e8e7",
+   "caratteri": 14558,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-gravidanza",
+   "url": "https://www.regione.piemonte.it/web/temi/sanita/salute-materno-infantile/agenda-gravidanza",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "tema-gravidanza/75d7c08318ea.txt",
+   "titolo": "Agenda di gravidanza | Regione Piemonte",
+   "sha": "6c4ee0df6aae89e306776821990089b87555c8cb595713e56de31bc788abd786",
+   "caratteri": 15012,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-gravidanza",
+   "url": "https://www.regione.toscana.it/nascere-in-toscana",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "tema-gravidanza/72298c2b00ef.txt",
+   "titolo": "Nascere in Toscana - Regione Toscana",
+   "sha": "cd590e989a8b2241a96574ca7ce5f1651e9f55952ebeeea510a000eee6300e04",
+   "caratteri": 12129,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-gravidanza",
+   "url": "https://salute.regione.emilia-romagna.it/cure-primarie/ticket-esenzioni/esenzioni",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "tema-gravidanza/86e7e76adb16.txt",
+   "titolo": "Esenzioni dal pagamento del ticket — Salute",
+   "sha": "44eaf63bd5760b5d2b926b1b29f3da8899d518c80af58597b8f2c1e377610bb2",
+   "caratteri": 2615,
+   "link_pdf": [
+    {
+     "url": "https://salute.regione.emilia-romagna.it/normativa-e-documentazione/leggi-atti/regionali/circolari/2019/2019_01_Circolare2_Esenzioniticket.pdf",
+     "testo": "Circolare n. 2/2019: \"Linee guida su applicazione delle condizioni di esenzione dalla compartecipazione alla spesa sanit"
+    },
+    {
+     "url": "https://salute.regione.emilia-romagna.it/normativa-e-documentazione/linee-di-indirizzo/esenzione-ticket/vademecum_esenzioni.pdf",
+     "testo": "Linee guida sulle condizioni di esenzione dalla compartecipazione alla spesa sanitaria (ticket) per le prestazioni di sp"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "tema-gravidanza",
+   "url": "https://salute.regione.emilia-romagna.it/cure-primarie/consultori/percorso-nascita/nipt",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "tema-gravidanza/e1200ce51f0a.txt",
+   "titolo": "NIPT (Non Invasive Prenatal Test) — Salute",
+   "sha": "d6dd732f71ba467dbe24382655def6a46926dc2fa505c26cdefeaeedba3b7316",
+   "caratteri": 4738,
+   "link_pdf": [
+    {
+     "url": "https://salute.regione.emilia-romagna.it/cure-primarie/consultori/percorso-nascita/nipt/nipt_informativa-paziente.pdf/@@download/file/NIPT_Informativa%20paziente.pdf",
+     "testo": "Nota informativa all'esecuzione del NIPT ( 198.3 KB)"
+    },
+    {
+     "url": "https://salute.regione.emilia-romagna.it/cure-primarie/consultori/percorso-nascita/nipt/nipt_consenso-informato_adulto-1.pdf/@@download/file/NIPT_Consenso%20informato_adulto.pdf",
+     "testo": "Consenso informato all'esecuzione del NIPT ( 200.38 KB)"
+    },
+    {
+     "url": "https://salute.regione.emilia-romagna.it/cure-primarie/consultori/percorso-nascita/nipt/nipt_consenso-informato_tutelalegale-1.pdf/@@download/file/NIPT_Consenso%20informato_tutelalegale.pdf",
+     "testo": "Consenso informato all'esecuzione del NIPT ( 243.54 KB)"
+    },
+    {
+     "url": "https://salute.regione.emilia-romagna.it/cure-primarie/consultori/percorso-nascita/nipt/nipt_informativa-privacy.pdf/@@download/file/NIPT_Informativa%20privacy.pdf",
+     "testo": "Informativa sul trattamento dei dati personali ( 209.02 KB)"
+    },
+    {
+     "url": "https://salute.regione.emilia-romagna.it/cure-primarie/consultori/percorso-nascita/nipt/nipt_informativa-medico.pdf/@@download/file/NIPT_Informativa%20medico.pdf",
+     "testo": "Nota informativa all'esecuzione del NIPT ( 192.6 KB)"
+    },
+    {
+     "url": "https://salute.regione.emilia-romagna.it/cure-primarie/consultori/percorso-nascita/nipt/modulo-anamnestico-per-ginecologo-curante.pdf/@@download/file/MODULO%20ANAMNESTICO%20PER%20GINECOLOGO%20CURANTE.pdf",
+     "testo": "Modulo anamnestico per il professionista privato ( 68.78 KB)"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "tema-gravidanza",
+   "url": "https://salute.regione.emilia-romagna.it/normativa-e-documentazione/leggi-atti/regionali/circolari/2019/2019_01_Circolare2_Esenzioniticket.pdf",
+   "controllata": "2026-10-27",
+   "da_pagina": "https://salute.regione.emilia-romagna.it/cure-primarie/ticket-esenzioni/esenzioni",
+   "http": 200,
+   "file": "tema-gravidanza/e4e83a740d04.txt",
+   "titolo": "REGIONE EMILIA-ROMAGNA ( r_emiro )",
+   "sha": "703576d8117ef68f9c02afc44aeb57e798f95dc74f16bb2b7743baadab343866",
+   "caratteri": 948,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-gravidanza",
+   "url": "https://salute.regione.emilia-romagna.it/normativa-e-documentazione/linee-di-indirizzo/esenzione-ticket/vademecum_esenzioni.pdf",
+   "controllata": "2026-10-27",
+   "da_pagina": "https://salute.regione.emilia-romagna.it/cure-primarie/ticket-esenzioni/esenzioni",
+   "http": 200,
+   "file": "tema-gravidanza/38a45e38217c.txt",
+   "titolo": "Chi ha diritto all’esenzione:",
+   "sha": "3d87d7202c2a6c4345e6f3d3b40d68515d71c334af7c3f479142458d53471a57",
+   "caratteri": 117629,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-gravidanza",
+   "url": "https://salute.regione.emilia-romagna.it/cure-primarie/consultori/percorso-nascita/nipt/nipt_consenso-informato_tutelalegale-1.pdf/@@download/file/NIPT_Consenso%20informato_tutelalegale.pdf",
+   "controllata": "2026-10-27",
+   "da_pagina": "https://salute.regione.emilia-romagna.it/cure-primarie/consultori/percorso-nascita/nipt",
+   "http": 200,
+   "file": "tema-gravidanza/ce50c1618a06.txt",
+   "titolo": "CONSENSO INFORMATO AL TRATTAMENTO DEI DATI PERSONALI, PARTICOLARI, GENETICI E DEI CAMPIONI",
+   "sha": "f0760f08e2c04aacc37e9ec00329dec33bc1cd6fd2b17a1400cc77855fc760d4",
+   "caratteri": 11400,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-gravidanza",
+   "url": "https://salute.regione.emilia-romagna.it/cure-primarie/consultori/percorso-nascita/nipt/modulo-anamnestico-per-ginecologo-curante.pdf/@@download/file/MODULO%20ANAMNESTICO%20PER%20GINECOLOGO%20CURANTE.pdf",
+   "controllata": "2026-10-27",
+   "da_pagina": "https://salute.regione.emilia-romagna.it/cure-primarie/consultori/percorso-nascita/nipt",
+   "http": 200,
+   "file": "tema-gravidanza/b843ab54cb4f.txt",
+   "titolo": "Subject:",
+   "sha": "3f87d06f6f661a3e73718ce158adf48af46da1f87d5bb67db8621d405392bd8d",
+   "caratteri": 884,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-trasporto-sanitario",
+   "url": "https://www.regione.toscana.it/-/trasporto-sanitario",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "tema-trasporto-sanitario/402c37e4e818.txt",
+   "titolo": "Trasporto sanitario - Regione Toscana",
+   "sha": "1d160d4ebf3d1a26bfb264884e02173cf9035292d46b83660f0b0199bb3a6454",
+   "caratteri": 7483,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-trasporto-sanitario",
+   "url": "https://www.regione.toscana.it/-/trasporto-per-persone-con-fragilit%C3%A0-socio-economica",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "tema-trasporto-sanitario/a4fbb8dc1cef.txt",
+   "titolo": "Trasporto per persone con fragilità socio-economica - Regione Toscana",
+   "sha": "d6714ec84cccd2eaee3a434b9016859c109999f0e7d1b92a130910a943488e8e",
+   "caratteri": 5838,
    "cambiata": true
   }
  ]

@@ -1,6 +1,6 @@
 {
  "regione": "veneto",
- "aggiornato": "2026-10-27T14:08:19.173Z",
+ "aggiornato": "2026-10-27T16:44:14.094Z",
  "pagine": [
   {
    "asl": "belluno",
@@ -9,9 +9,9 @@
    "http": 200,
    "file": "belluno/16a20db33829.txt",
    "titolo": "Homepage ULSS 1 Dolomiti",
-   "sha": "052a5e919f6c738908c1fa965e39956b65c1aca1fa6e568c14c87159d6f528ce",
-   "caratteri": 6583,
-   "cambiata": false
+   "sha": "acf972ab0b50792fc8fb3523a0485ffb0cf225334a57476e8c8d91d07181f50f",
+   "caratteri": 6382,
+   "cambiata": true
   },
   {
    "asl": "belluno",
@@ -182,7 +182,7 @@
    "titolo": "Homepage - ULSS 2 Marca Trevigiana",
    "sha": "61238b22c3c13c07255fb17f04fea0b0f3798e1007d9e6573bbc9141b131fc92",
    "caratteri": 6289,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "treviso",
@@ -342,7 +342,7 @@
    "titolo": "Richiedere dispositivi di assistenza protesica",
    "sha": "c7c14132d6a1928075002d008a5d90b92c62e8acc316f7c101cfcac2a9a0b187",
    "caratteri": 6646,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "treviso",
@@ -364,7 +364,7 @@
    "titolo": "Liste di Attesa",
    "sha": "87ae48a0251be6f6206f334a439b0722defa544ed979abf72b84f569fc74c898",
    "caratteri": 9573,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "treviso",
@@ -375,7 +375,7 @@
    "titolo": "Servizio Programmi Di Screening",
    "sha": "025a5191a99a0ce57b76c2e2f71696178552190a2c579a503dd70c9cba6d2b72",
    "caratteri": 4995,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "treviso",
@@ -399,7 +399,7 @@
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
    "sha": "de7b601a2a733fc9c48dbd5df7ce9fa278991af7439bc0b87027d9a3997d585c",
    "caratteri": 6317,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -483,9 +483,9 @@
    "http": 200,
    "file": "venezia/a7ef142fb2f6.txt",
    "titolo": "Ufficio Relazioni con il Pubblico",
-   "sha": "ea2d6636d96823925538b58d81dfbbb53ac6d3102771a770f78ce15f6b4592c2",
-   "caratteri": 6495,
-   "cambiata": false
+   "sha": "3e12f0324e3dec6bbccde0d2efcbb409598e0a2f816fe475f799c106ceff00ab",
+   "caratteri": 6531,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -510,7 +510,7 @@
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
    "sha": "de7b601a2a733fc9c48dbd5df7ce9fa278991af7439bc0b87027d9a3997d585c",
    "caratteri": 6317,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -523,7 +523,7 @@
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
    "sha": "de7b601a2a733fc9c48dbd5df7ce9fa278991af7439bc0b87027d9a3997d585c",
    "caratteri": 6317,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -580,9 +580,9 @@
    "http": 200,
    "file": "venezia/02aa01a4fd92.txt",
    "titolo": "Ufficio Relazioni con il Pubblico",
-   "sha": "2d7dd5b5df2ff27659ec5b80333dc29f3cc284f971f0e6129ff843e65ebe3285",
-   "caratteri": 6495,
-   "cambiata": false
+   "sha": "6d09eb97cba7706dd6ee77df389af22586241c2291e5d6b53a9c86e5da0340b9",
+   "caratteri": 6531,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -591,9 +591,9 @@
    "browser": true,
    "http": 200,
    "file": "venezia/94b10fd120ae.txt",
-   "titolo": "ULSS 3 SERENISSIMA - Prenotare o disdire una prestazione",
-   "sha": "24cb0231314153f570e3aa81d3f988c1fc648ed27bbd901b52da8962850af619",
-   "caratteri": 4174,
+   "titolo": "Prenotare o disdire una prestazione",
+   "sha": "a51ae7f9b870c22239253622f0138713b1c93868e8e1172cca209c15cb31b6b6",
+   "caratteri": 4153,
    "cambiata": true
   },
   {
@@ -606,7 +606,7 @@
    "titolo": "Medici Medicina Generale, Pediatri Libera Scelta",
    "sha": "27729a901b4cdcb7682da8e238b6f3ec27eb70c117185f74cb085397097cc524",
    "caratteri": 4606,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -685,13 +685,12 @@
    "asl": "venezia",
    "url": "https://www.aulss4.veneto.it/servizi/continuita-assistenziale-ex-guardia-medica",
    "controllata": "2026-10-27",
-   "browser": true,
    "http": 200,
    "file": "venezia/32a54d5acee3.txt",
-   "titolo": "Continuità Assistenziale (ex Guardia medica)",
-   "sha": "6a4f62362252c53752500cba436ea879159075817bf97dbb9852e4c9356da762",
-   "caratteri": 4944,
-   "cambiata": false
+   "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
+   "sha": "6bc2275696536324da914a4390835a8856b32ef9c71aa40dd59c0c5b84156a8f",
+   "caratteri": 45,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -703,7 +702,7 @@
    "titolo": "Azienda ULSS n. 4 Veneto Orientale - Prenotazione esami di laboratorio presso le strutture dell'Azienda Ulss4 \"Veneto Orientale\"",
    "sha": "639a5afddb6322348a5a2962cc2fba1c554e07dede861388a1a1a61d719c21fe",
    "caratteri": 3630,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -715,7 +714,7 @@
    "titolo": "Azienda ULSS n. 4 Veneto Orientale - 116117 e Continuità Assistenziale",
    "sha": "6418952a2e8d22b121116a7ee3ee2591cfc302d6c5bd29be7454989b7679a99c",
    "caratteri": 3268,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -764,7 +763,7 @@
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
    "sha": "de7b601a2a733fc9c48dbd5df7ce9fa278991af7439bc0b87027d9a3997d585c",
    "caratteri": 6317,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -777,7 +776,7 @@
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
    "sha": "de7b601a2a733fc9c48dbd5df7ce9fa278991af7439bc0b87027d9a3997d585c",
    "caratteri": 6317,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -816,20 +815,18 @@
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
    "sha": "de7b601a2a733fc9c48dbd5df7ce9fa278991af7439bc0b87027d9a3997d585c",
    "caratteri": 6317,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
    "url": "https://www.aulss4.veneto.it/dettaglio/contenuto/richiedere-la-cartella-clinica",
    "controllata": "2026-10-27",
-   "browser": true,
    "http": 200,
-   "finale": "https://www.aulss4.veneto.it/home",
    "file": "venezia/901abe8bfa4a.txt",
    "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
-   "sha": "8b1b2e4c90ba26e77f7aff14da75be9cdcfa7664256822e2d2aeaad870c1a503",
-   "caratteri": 5269,
-   "cambiata": false
+   "sha": "6bc2275696536324da914a4390835a8856b32ef9c71aa40dd59c0c5b84156a8f",
+   "caratteri": 45,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -1540,7 +1537,7 @@
    "titolo": "Patenti monocratiche e certificazioni di idoneità",
    "sha": "f875a6badd04e2652c3bd4596282c0b311eb798572aa807fe126a41bbc699d28",
    "caratteri": 5950,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "vicenza",
@@ -1998,7 +1995,7 @@
    "titolo": "Ufficio Relazioni con il Pubblico (URP)",
    "sha": "d25ff98af450b771535b73995e869c7237df986ae033f9c1a13386b998379c39",
    "caratteri": 5715,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ulss2-marca-trevigiana",
@@ -2078,7 +2075,7 @@
      "testo": "Delega al rilascio del consenso FSE_v.marzo 2021.def_.pdf"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ticket-farmaci",
@@ -2096,7 +2093,7 @@
      "testo": "Logo SSSR"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   }
  ]
 }

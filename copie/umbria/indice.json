@@ -1,6 +1,6 @@
 {
  "regione": "umbria",
- "aggiornato": "2026-10-27T13:55:36.327Z",
+ "aggiornato": "2026-10-27T16:31:20.881Z",
  "pagine": [
   {
    "asl": "perugia",
@@ -326,9 +326,9 @@
    "http": 200,
    "file": "perugia/3cfb9d154ac5.txt",
    "titolo": "Richiedere la documentazione sanitaria - Azienda Ospedaliera Perugia",
-   "sha": "26a2fd85cf090aff132dd383dd967bfda133ee46f592e524bc7ff1d4eeb1afb4",
-   "caratteri": 4825,
-   "cambiata": false
+   "sha": "eeeb83007eb3c33e4e83bae5c4ba0a5014ca4fc4891014b847a19ec45aeda8c3",
+   "caratteri": 4883,
+   "cambiata": true
   },
   {
    "asl": "perugia",
@@ -1222,7 +1222,7 @@
    "titolo": "Umbria in Salute",
    "sha": "9af54fb51e1eb464771c75c03ee55c75059d3680c8b5bf2353a718e06778d4c7",
    "caratteri": 4883,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-umbria",
@@ -1478,7 +1478,7 @@
    "titolo": "Servizi al cittadino – Umbria in Salute",
    "sha": "87f4f8c034eb61153a05fb6890d069a4f6404f66db7ff302f4a9b963cc373e1c",
    "caratteri": 3016,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ticket-farmaci",
@@ -1489,6 +1489,17 @@
    "titolo": "Ticket: pagamento - esenzione - Regione Umbria",
    "sha": "6a6af6b98489e795996d8358f24f4bcaf035a7c78f23cad293db5aa3efb32c27",
    "caratteri": 2841,
+   "cambiata": false
+  },
+  {
+   "asl": "riabilitazione",
+   "url": "https://www.uslumbria1.it/servizio/riabilitazione-adulti/",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "riabilitazione/5ae071dfc4be.txt",
+   "titolo": "Riabilitazione Adulti - USL Umbria 1",
+   "sha": "3a0c3e290ae7b83568a842128d0770107487aeddc63564cd4e95f17798b916d8",
+   "caratteri": 16488,
    "cambiata": true
   }
  ]

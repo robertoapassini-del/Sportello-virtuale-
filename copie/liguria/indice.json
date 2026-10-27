@@ -1,6 +1,6 @@
 {
  "regione": "liguria",
- "aggiornato": "2026-10-27T12:40:57.869Z",
+ "aggiornato": "2026-10-27T15:11:40.210Z",
  "pagine": [
   {
    "asl": "genova",
@@ -9,9 +9,9 @@
    "http": 200,
    "file": "genova/af11d444fbe0.txt",
    "titolo": "Home - ASL3",
-   "sha": "55a9e1fa18f930f9244c3db2e0ed87eb18b569c2ffedb3ef5ba09a76a3ce8a32",
-   "caratteri": 7904,
-   "cambiata": false
+   "sha": "5278915ca2389197bb4adfc717e77e82fededbac49e466774e6eb50e91ae8ffb",
+   "caratteri": 8004,
+   "cambiata": true
   },
   {
    "asl": "genova",
@@ -1143,7 +1143,7 @@
    "sha": "aea289dbbb7e7985a1fbf8adb9153795e56203e7e13776502bffe206ff30d597",
    "caratteri": 11809,
    "email_nascoste": 5,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "savona",
@@ -1648,8 +1648,8 @@
    "http": 200,
    "file": "asl4-chiavarese/17af5299b98d.txt",
    "titolo": "Asl4 - Area Sociosanitaria Locale n. 4",
-   "sha": "ff0199bdf412a6080d4b76a908fef68fa2de0bace054b76f505f315b3fa6e355",
-   "caratteri": 4327,
+   "sha": "f09a3174d22df98ce854ac6675a95ec371bb341bfeebf4c8508819c8edf5d285",
+   "caratteri": 4265,
    "cambiata": true
   },
   {
@@ -1833,7 +1833,7 @@
    "titolo": "Cambio medico - ASL3",
    "sha": "4dafac5c33cf1f07a846732836d535e02ed126a8a86a49fd0c280628405fe909",
    "caratteri": 12312,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "medico-online",
@@ -1856,6 +1856,30 @@
    "titolo": "Esenzione per patologia cronica o malattia rara - ASL3",
    "sha": "f87ddf012c1a86cdefd6b7d9bfc28dffddae2631a3e4fdecf50509c85324df05",
    "caratteri": 9358,
+   "cambiata": false
+  },
+  {
+   "asl": "trasporto-sanitario",
+   "url": "https://www.asl3.liguria.it/territorio/servizi/cure-primarie/item/200-rilascio-autorizzazioni-per-trasporti-programmati-in-ambulanza.html",
+   "controllata": "2026-10-27",
+   "http": 500
+  },
+  {
+   "asl": "trasporto-sanitario",
+   "url": "https://www.asl3.liguria.it/territorio/servizi/cure-primarie/item/199-rimborsi-emodialisi.html",
+   "controllata": "2026-10-27",
+   "http": 500
+  },
+  {
+   "asl": "riabilitazione",
+   "url": "https://www.asl3.liguria.it/component/content/article/82-struttura-complessa-recupero-e-rieducazione-funzionale.html?catid=1051",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "riabilitazione/a3ddda670b29.txt",
+   "titolo": "Struttura Complessa Recupero e Rieducazione Funzionale - ASL3",
+   "sha": "5b093b46aa929abf016b2fee24366091eda270fc85f5ca92bd2a5ebc536cc631",
+   "caratteri": 22451,
+   "email_nascoste": 25,
    "cambiata": true
   }
  ]

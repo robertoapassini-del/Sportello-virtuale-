@@ -1,6 +1,6 @@
 {
  "regione": "lazio",
- "aggiornato": "2026-10-27T12:35:38.448Z",
+ "aggiornato": "2026-10-27T15:05:44.683Z",
  "pagine": [
   {
    "asl": "frosinone",
@@ -18,7 +18,7 @@
      "testo": "Iscrizione alla short list degli Avvocati Esterni"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "frosinone",
@@ -41,7 +41,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
    "caratteri": 2358,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "frosinone",
@@ -383,7 +383,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -406,7 +406,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
    "caratteri": 2358,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -618,7 +618,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -898,7 +898,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
    "caratteri": 2358,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "rieti",
@@ -1486,7 +1486,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "eefc07f97ad9dcc276de92ead70fe36fd4e25bc671fba85deef57bd4d131bb12",
    "caratteri": 4010,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -1509,7 +1509,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
    "caratteri": 2358,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -1518,24 +1518,12 @@
    "http": 200,
    "file": "roma/e0d930024e6e.txt",
    "titolo": "Punto Unico di Accesso (PUA)",
-   "sha": "9161b330a43f7ba8f378e2832358a31e358a18f8f51cc31c4d03daa422b25353",
+   "sha": "2601a0764789dd78e17b8f5404008da5b7fa345a939d74a99c445e57d69792d3",
    "caratteri": 22475,
    "link_pdf": [
     {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_italiano_1_.pdf",
-     "testo": "মাসিক ভাতা"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_romeno.pdf",
-     "testo": "Indennità di frequenza mensile"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/39_40_DISABILITY-1.pdf",
-     "testo": "الاستفادة النقدیة الشھریة"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_-_Romeno.pdf",
-     "testo": "INDEMNIZAȚIA LUNARĂ DE FRECVENȚĂ"
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_italiano.pdf",
+     "testo": "SUBSIDIO MENSUAL DE FRECUENCIA"
     },
     {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_-Spagnolo_CORRETTO.pdf",
@@ -1550,8 +1538,8 @@
      "testo": "LEY 104/92"
     },
     {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_italiano.pdf",
-     "testo": "SUBSIDIO MENSUAL DE FRECUENCIA"
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_arabo.pdf",
+     "testo": "ЗАКОН 104/92"
     },
     {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_Tagalog.pdf",
@@ -1562,16 +1550,28 @@
      "testo": "LEGGE 104/92"
     },
     {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_arabo.pdf",
-     "testo": "ЗАКОН 104/92"
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ-Bangla-Rev.pdf",
+     "testo": "LEGEA 104/92"
     },
     {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_Ucraino.pdf",
      "testo": "১০৪/৯২ আইন"
     },
     {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ-Bangla-Rev.pdf",
-     "testo": "LEGEA 104/92"
+     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_romeno.pdf",
+     "testo": "ЩОМІСЯЧНА ДОПОМОГА НА ШКОЛЯРІВ З ІНВАЛІДНІСТЮ"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/39_40_DISABILITY-1.pdf",
+     "testo": "الاستفادة النقدیة الشھریة"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_-_Romeno.pdf",
+     "testo": "INDEMNIZAȚIA LUNARĂ DE FRECVENȚĂ"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_italiano_1_.pdf",
+     "testo": "মাসিক ভাতা"
     }
    ],
    "cambiata": true
@@ -1877,7 +1877,7 @@
    "http": 200,
    "file": "roma/2b46e5d8fe38.txt",
    "titolo": "ASL Roma 2 - Punto Unico di Accesso - PUA",
-   "sha": "319b58d531c2165776a6bfadf7eb73fe234559b0dd8f9be12e9854e5f91f1095",
+   "sha": "fca6b43af689ade264d767e898bdabb23c66f6062c2561568a888bfe5a3932b2",
    "caratteri": 11883,
    "email_nascoste": 11,
    "cambiata": true
@@ -1948,7 +1948,7 @@
    "http": 200,
    "file": "roma/3feb23bab29f.txt",
    "titolo": "ASL Roma 2 - UOSD Coordinamento Screening",
-   "sha": "3a53d1042cd28b36b9395238782430d96971261960f7540f45d6a76fd0b3b2aa",
+   "sha": "fcb485cc209e412ef5e70026cc205e7a7ff120ed5039fbed1b63f39c2f9f695b",
    "caratteri": 8743,
    "email_nascoste": 3,
    "cambiata": true
@@ -2040,7 +2040,7 @@
    "http": 200,
    "file": "roma/7e7cbafb32a1.txt",
    "titolo": "15.04.05 Liste di attesa",
-   "sha": "92e3812d1258c713d9020cc8f5d039a8b8b773f91771b275e8313a2b3a350f08",
+   "sha": "64f61f167b61612abb96a26ff8c0df79ce112ec6845f5f0ae2d05caca582d464",
    "caratteri": 8673,
    "link_pdf": [
     {
@@ -2714,15 +2714,15 @@
    "http": 200,
    "file": "viterbo/66db58dce4bc.txt",
    "titolo": "Home - ASL VITERBO",
-   "sha": "46d7a41e83b374e2d1b6baf9915cc75814d5aa3865eae335799a67b8829f4ebe",
-   "caratteri": 9979,
+   "sha": "dbe482cec2f097cf0d3e64179a1e105038a79048602968aab22b660143793a18",
+   "caratteri": 9994,
    "link_pdf": [
     {
      "url": "https://www.asl.vt.it/cookie-policy.pdf",
      "testo": "Cookie Policy"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "viterbo",
@@ -2745,7 +2745,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
    "caratteri": 2358,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "viterbo",
@@ -3099,7 +3099,7 @@
    "sha": "ff7c571ba5a4871768a6bb05b2e2601f3134a645510e4ef2ed9b3edf3a32bf22",
    "caratteri": 7569,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "viterbo",
@@ -3131,7 +3131,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "eefc07f97ad9dcc276de92ead70fe36fd4e25bc671fba85deef57bd4d131bb12",
    "caratteri": 4010,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "inps-lazio",
@@ -3219,7 +3219,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "1bce8ebe3b8686ea81f43bdfe2f8368c4f413f3887be9bbead104452d34aa979",
    "caratteri": 2796,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-lazio",
@@ -3297,7 +3297,7 @@
    "titolo": "ASL Roma 1",
    "sha": "4303cf88abf2b81679708b33b7e6972acc87b5b35fb2cf9df78766c1bdca678d",
    "caratteri": 17543,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma1",
@@ -3403,7 +3403,7 @@
    "http": 200,
    "file": "asl-roma2/2e0f163ef6a3.txt",
    "titolo": "ASL Roma 2 - Guardia Medica",
-   "sha": "a64ce84edbe94f4dd8a546877c32bf8535e41b42ca6f3ed54024f63f1ceb4699",
+   "sha": "d87e10e410e3bb4b670d1d4e79323f714befecc859ac15257eb2ee30fbe44d98",
    "caratteri": 8091,
    "cambiata": true
   },
@@ -3449,7 +3449,7 @@
      "testo": ""
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma3",
@@ -3477,7 +3477,7 @@
      "testo": "Scarica Locandina"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma3",
@@ -3498,7 +3498,7 @@
      "testo": "modulo"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma3",
@@ -3588,15 +3588,15 @@
    "finale": "https://www.aslroma5.it/",
    "file": "asl-roma5/b09e55c52e23.txt",
    "titolo": "Home - ASL ROMA 5",
-   "sha": "a15cb694843a332ce81bd22e0c2cae20a7937a89c2ef3a28adb76348b68d3e22",
-   "caratteri": 15581,
+   "sha": "89fbfbdd2f1431d109b130f7ba0cd60c2a9faf032cc0d2c6c971d95bf369d03b",
+   "caratteri": 15578,
    "link_pdf": [
     {
      "url": "https://www.aslroma5.it/wp-content/uploads/2026/03/PARS-2026.pdf",
      "testo": "PARS 2026"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "asl-roma5",
@@ -3734,7 +3734,7 @@
      "testo": "Iscrizione alla short list degli Avvocati Esterni"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-frosinone",
@@ -3792,7 +3792,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-latina",
@@ -3813,7 +3813,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-latina",
@@ -4034,15 +4034,15 @@
    "finale": "https://www.asl.vt.it/",
    "file": "asl-viterbo/29ada9bc28c2.txt",
    "titolo": "Home - ASL VITERBO",
-   "sha": "46d7a41e83b374e2d1b6baf9915cc75814d5aa3865eae335799a67b8829f4ebe",
-   "caratteri": 9979,
+   "sha": "dbe482cec2f097cf0d3e64179a1e105038a79048602968aab22b660143793a18",
+   "caratteri": 9994,
    "link_pdf": [
     {
      "url": "https://www.asl.vt.it/cookie-policy.pdf",
      "testo": "Cookie Policy"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "asl-viterbo",
@@ -4085,7 +4085,7 @@
    "http": 200,
    "file": "ticket-pronto-soccorso/6f2a28e1087b.txt",
    "titolo": "ASL Roma 2 - UOC Medicina d'Urgenza e Pronto Soccorso",
-   "sha": "9db3bd96873d2e95ff7a7d6327541d0642dfed8459a32c92e4b4d90e309bda3e",
+   "sha": "0f8837bf40aebc48c82cd03023b7d823eb8cd9205d1a013ffc707efcc9077775",
    "caratteri": 14507,
    "email_nascoste": 4,
    "cambiata": true
@@ -4133,7 +4133,7 @@
    "titolo": "| Regione Lazio | ENTI-SALUTE-FARMACI",
    "sha": "40a621ad336efc59b782b604557ac0bcbb7fd33db5fef840c8def4007ae20ec0",
    "caratteri": 10818,
-   "cambiata": true
+   "cambiata": false
   }
  ]
 }
