@@ -1,6 +1,6 @@
 {
  "regione": "lazio",
- "aggiornato": "2026-10-27T17:38:02.885Z",
+ "aggiornato": "2026-10-27T20:06:16.329Z",
  "pagine": [
   {
    "asl": "frosinone",
@@ -1518,7 +1518,7 @@
    "http": 200,
    "file": "roma/e0d930024e6e.txt",
    "titolo": "Punto Unico di Accesso (PUA)",
-   "sha": "db256e48a8a29bd66676b02ec6d271b6ea6338cf353a11d14c737b2fbeffa12e",
+   "sha": "6ce68f0d5f672b263b21954af4ad383655816a9b0983c70c18e870f713e1f4f3",
    "caratteri": 22475,
    "link_pdf": [
     {
@@ -1534,16 +1534,16 @@
      "testo": "LEGGE 104/92"
     },
     {
+     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_romeno.pdf",
+     "testo": "ЩОМІСЯЧНА ДОПОМОГА НА ШКОЛЯРІВ З ІНВАЛІДНІСТЮ"
+    },
+    {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ-Bangla-Rev.pdf",
      "testo": "LEGEA 104/92"
     },
     {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_Ucraino.pdf",
      "testo": "১০৪/৯২ আইন"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_romeno.pdf",
-     "testo": "ЩОМІСЯЧНА ДОПОМОГА НА ШКОЛЯРІВ З ІНВАЛІДНІСТЮ"
     },
     {
      "url": "https://www.aslroma1.it/uploads/files/39_40_DISABILITY-1.pdf",
@@ -1558,6 +1558,10 @@
      "testo": "মাসিক ভাতা"
     },
     {
+     "url": "https://www.aslroma1.it/uploads/files/47_24_Legge_104_Ucraino.pdf",
+     "testo": "LEY 104/92"
+    },
+    {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_italiano.pdf",
      "testo": "SUBSIDIO MENSUAL DE FRECUENCIA"
     },
@@ -1568,10 +1572,6 @@
     {
      "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_arabo.pdf",
      "testo": "BUWANANG BENEPISYO PARA SA MAY KAPANSANAN"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_Legge_104_Ucraino.pdf",
-     "testo": "LEY 104/92"
     }
    ],
    "cambiata": true
@@ -1877,7 +1877,7 @@
    "http": 200,
    "file": "roma/2b46e5d8fe38.txt",
    "titolo": "ASL Roma 2 - Punto Unico di Accesso - PUA",
-   "sha": "c756c89e86ff4952acc178f02f9cfaf01bfae39a94b4b77fe1fbcd0c90be5eee",
+   "sha": "dd45b38045e055cd722efbc3b6cca46bfa6d483a3d78441059ce0e5bcfb2757b",
    "caratteri": 11883,
    "email_nascoste": 11,
    "cambiata": true
@@ -1948,7 +1948,7 @@
    "http": 200,
    "file": "roma/3feb23bab29f.txt",
    "titolo": "ASL Roma 2 - UOSD Coordinamento Screening",
-   "sha": "9facff4af8f2f7aa75bcfd3ab8e8e14c7169b9e93fb07b8a24739ac0a132f5df",
+   "sha": "ec516abced9c3eec76f43785224d3f45dae6b15d4433261e6b9fc92bec08dc0d",
    "caratteri": 8743,
    "email_nascoste": 3,
    "cambiata": true
@@ -2040,7 +2040,7 @@
    "http": 200,
    "file": "roma/7e7cbafb32a1.txt",
    "titolo": "15.04.05 Liste di attesa",
-   "sha": "b758c1150208ed65e119c92c37fba97d0e32eedcd2a4b56fe7b340dda9b400ff",
+   "sha": "c684a97241dcf4de5bcd6c2d30b071928224ab3e914e8671bb6eb85be2984e40",
    "caratteri": 8673,
    "link_pdf": [
     {
@@ -3403,7 +3403,7 @@
    "http": 200,
    "file": "asl-roma2/2e0f163ef6a3.txt",
    "titolo": "ASL Roma 2 - Guardia Medica",
-   "sha": "29b015a1f17bea59bbdcc5c5fa2d8be0f8b1e72ce016e34ee9ef292e28ed0118",
+   "sha": "cd446f0d8da702454dbb8dc9b06f953cee0387500099ba86c7771ac0b24d693b",
    "caratteri": 8091,
    "cambiata": true
   },
@@ -4085,7 +4085,7 @@
    "http": 200,
    "file": "ticket-pronto-soccorso/6f2a28e1087b.txt",
    "titolo": "ASL Roma 2 - UOC Medicina d'Urgenza e Pronto Soccorso",
-   "sha": "b1e53a46e7a13bc47289b69dd6b7de0993ca3e31140239118938c8830f94bd45",
+   "sha": "6b807c6309296955cb6292956ff457e17033e57521c79a029bf80a42bae0e975",
    "caratteri": 14507,
    "email_nascoste": 4,
    "cambiata": true
@@ -4145,7 +4145,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "b7123a008640ee64afb24bb321272e89307ae101b781a99efb3cf542567af088",
    "caratteri": 3368,
-   "cambiata": true
+   "cambiata": false
   }
  ]
 }

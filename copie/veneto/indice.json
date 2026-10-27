@@ -1,6 +1,6 @@
 {
  "regione": "veneto",
- "aggiornato": "2026-10-27T19:14:42.641Z",
+ "aggiornato": "2026-10-27T21:42:29.926Z",
  "pagine": [
   {
    "asl": "belluno",
@@ -552,13 +552,12 @@
    "asl": "venezia",
    "url": "https://www.aulss4.veneto.it/home/dettaglio/strutture/casa-della-comunita-di-san-dona-di-piave",
    "controllata": "2026-10-27",
-   "browser": true,
    "http": 200,
    "file": "venezia/97f30e8bfdf9.txt",
-   "titolo": "Casa della Comunità di San Donà di Piave",
-   "sha": "62c415b08490abae4d9ae002d01afe40c11f07b8b81b68995d7c01fcc3c2de3b",
-   "caratteri": 9153,
-   "cambiata": false
+   "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
+   "sha": "6bc2275696536324da914a4390835a8856b32ef9c71aa40dd59c0c5b84156a8f",
+   "caratteri": 45,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -594,7 +593,7 @@
    "titolo": "ULSS 3 SERENISSIMA - Prenotare o disdire una prestazione",
    "sha": "24cb0231314153f570e3aa81d3f988c1fc648ed27bbd901b52da8962850af619",
    "caratteri": 4174,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -691,7 +690,7 @@
    "titolo": "Continuità Assistenziale (ex Guardia medica)",
    "sha": "6a4f62362252c53752500cba436ea879159075817bf97dbb9852e4c9356da762",
    "caratteri": 4944,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -700,10 +699,10 @@
    "browser": true,
    "http": 200,
    "file": "venezia/7259f23ba486.txt",
-   "titolo": "Azienda ULSS n. 4 Veneto Orientale - Prenotazione esami di laboratorio presso le strutture dell'Azienda Ulss4 \"Veneto Orientale\"",
-   "sha": "639a5afddb6322348a5a2962cc2fba1c554e07dede861388a1a1a61d719c21fe",
-   "caratteri": 3630,
-   "cambiata": false
+   "titolo": "Prenotazione esami di laboratorio presso le strutture dell'A",
+   "sha": "6c77e5de6056b83fe18ff4c7613f38247614a291db5815170e35a02e80cf3b87",
+   "caratteri": 3562,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -829,7 +828,7 @@
    "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
    "sha": "8b1b2e4c90ba26e77f7aff14da75be9cdcfa7664256822e2d2aeaad870c1a503",
    "caratteri": 5269,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -1204,13 +1203,8 @@
    "asl": "padova",
    "url": "https://www.aulss6.veneto.it/apridoc/5CF07358885D472A92884C1BA85BEE6A35740",
    "controllata": "2026-10-27",
-   "http": 200,
-   "file": "padova/7ed94866356b.txt",
-   "titolo": "Piano Attuativo Aziendale 2026 (4)(1).docx",
-   "sha": "58fc67311d2295fa9e0a0df8f79248d4fcd686acbb9a75069c6a223754a36dd2",
-   "caratteri": 42090,
-   "pdf": true,
-   "cambiata": false
+   "http": 0,
+   "errore": "curl: (18) transfer closed with outstanding read data remaining"
   },
   {
    "asl": "padova",
