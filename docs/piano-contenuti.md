@@ -63,12 +63,12 @@ L'ordine viene da quanto si cercano (Google Trends, `ricerche-frequenti.md` punt
 
 ### Terzo giro: domande meno frequenti
 
-- Stranieri: iscrizione al Servizio sanitario, codice STP e ENI, cure urgenti.
+- Stranieri: iscrizione al Servizio sanitario, codice STP e ENI, cure urgenti. 27/10/2026: fonti in copia (tema «stranieri»).
 - Italiani all'estero (AIRE) e chi torna in Italia.
-- Consultorio: contraccezione, interruzione di gravidanza, aiuto alle famiglie.
+- Consultorio: contraccezione, interruzione di gravidanza, aiuto alle famiglie. 27/10/2026: fonti in copia (tema «consultorio»).
 - Dipendenze (SerD) e gioco d'azzardo.
 - Malattie rare: centro di riferimento, esenzione.
-- Donazione di sangue e di organi; testamento biologico (DAT).
+- Donazione di sangue e di organi; testamento biologico (DAT). 27/10/2026: fonti del testamento biologico in copia (tema «dat»).
 - Consenso informato e privacy dei dati sanitari.
 - Certificati: idoneità sportiva, patente, scuola.
 - Cure termali con il Servizio sanitario.
