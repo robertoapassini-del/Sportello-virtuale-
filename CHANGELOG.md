@@ -2,6 +2,9 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 27/10/2026 — Fonti da copiare per il terzo giro
+- `data/fonti-nazionali.json`: temi nuovi «dat» (testamento biologico, L. 219/2017), «stranieri» (iscrizione, STP ed ENI) e «consultorio», con le pagine ufficiali delle Regioni; `data/regioni/lazio/fonti.json`: la pagina dei consultori del Lazio. Il server le copia; le pagine si scrivono dalla copia.
+
 ## 27/10/2026 — Fonti da copiare per il secondo giro
 - `data/fonti-nazionali.json`: temi nuovi «esenzione-patologia», «gravidanza», «trasporto-sanitario», con le pagine ufficiali delle Regioni (Lombardia, Emilia-Romagna, Umbria, Piemonte, Toscana).
 - `data/regioni/<regione>/fonti.json`: le stesse voci con le pagine delle aziende sanitarie (ASL3 Liguria, ASP Palermo, ASL Città di Torino, USL Umbria 1), più «riabilitazione». Il server le copia; le pagine si scrivono dalla copia.
