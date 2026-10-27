@@ -58,7 +58,7 @@ L'ordine viene da quanto si cercano (Google Trends, `ricerche-frequenti.md` punt
 - Vaccini per i bambini: obbligatori, scuola, dove si fanno. 27/10/2026: fonti in copia (tema «vaccini-bambini» di `data/fonti-nazionali.json`).
 - Gravidanza e parto: esami gratis, consultorio, dopo il parto. **Fatto il 27/10/2026**: `esenzione-ticket/gravidanza/`, dalle copie (manca ancora il «dopo il parto» oltre al puerperio).
 - Ricovero in ospedale: cosa portare, dimissioni, chi assiste.
-- Riabilitazione: fisioterapia e logopedia con il Servizio sanitario. 27/10/2026: pagine di tre aziende sanitarie in copia (voce «riabilitazione» dei `fonti.json`).
+- Riabilitazione: fisioterapia e logopedia con il Servizio sanitario. **Fatto il 27/10/2026**: `prenotare-cup/riabilitazione/`, dalle copie di tre aziende sanitarie.
 - Trasporto sanitario: ambulanza non urgente, dialisi, visite. 27/10/2026: fonti in copia (tema «trasporto-sanitario»).
 
 ### Terzo giro: domande meno frequenti

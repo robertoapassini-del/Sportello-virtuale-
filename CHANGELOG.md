@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 27/10/2026 — Fisioterapia e logopedia con il Servizio sanitario
+- `prenotare-cup/riabilitazione/` (pagina nuova): la ricetta per la visita dal fisiatra, la prenotazione al CUP, il progetto riabilitativo individuale; le regole delle aziende di Torino, Liguria (ASL3) e Umbria 1. Letto nelle copie del server del 27/10/2026.
+- `data/rules-prenotare-cup.json`: 3 fonti nuove. Il trasporto sanitario non urgente aspetta altre copie: per ora c'è solo la Toscana.
+
 ## 27/10/2026 — Gravidanza: visite ed esami senza ticket
 - `esenzione-ticket/gravidanza/` (pagina nuova): cosa non si paga in gravidanza (DPCM 12/01/2017, art. 59, letto nel vademecum dell'Emilia-Romagna), il codice M, l'Agenda di gravidanza del Piemonte, il libretto della Toscana, il NIPT gratis in Emilia-Romagna. Copie del server del 27/10/2026.
 - `data/rules-esenzione.json`: «gravidanza_nipt_emilia_romagna» (dal 2024, tra la 10ª e la 13ª settimana) con la frase della fonte, una scheda per cifra; 4 fonti nuove. `tests/citazioni.txt`: «art. 59 | DPCM 12/01/2017».
