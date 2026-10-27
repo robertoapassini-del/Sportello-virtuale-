@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 27/10/2026 — Fonti da copiare per il secondo giro
+- `data/fonti-nazionali.json`: temi nuovi «esenzione-patologia», «gravidanza», «trasporto-sanitario», con le pagine ufficiali delle Regioni (Lombardia, Emilia-Romagna, Umbria, Piemonte, Toscana).
+- `data/regioni/<regione>/fonti.json`: le stesse voci con le pagine delle aziende sanitarie (ASL3 Liguria, ASP Palermo, ASL Città di Torino, USL Umbria 1), più «riabilitazione». Il server le copia; le pagine si scrivono dalla copia.
+
 ## 27/10/2026 — Fonti nuove da copiare: cambio medico online, ticket dei farmaci, vaccini
 - `data/regioni/<regione>/fonti.json`: voce nuova «medico-online» in 19 regioni (pagine ufficiali del cambio del medico online) e «ticket-farmaci» in 14 regioni. Il server le copia; le frasi si scrivono dopo, dalla copia.
 - `data/fonti-nazionali.json`: tema nuovo «vaccini-bambini» (L. 119/2017, ISS, pagine di 4 Regioni). Nel tema «verifiche»: il PDF del D.A. 780/2021, la direttiva siciliana 9368/2026 con «www» e la pagina della Regione sulle cure all'estero, la scheda dell'Agenzia delle Entrate sulle spese sanitarie.
