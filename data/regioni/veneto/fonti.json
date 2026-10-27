@@ -390,6 +390,22 @@
      "url": "https://www.aulss9.veneto.it/liste-di-attesa"
     }
    ]
+  },
+  {
+   "id": "ticket-pronto-soccorso",
+   "name": "Ticket del pronto soccorso",
+   "tipo": "regione",
+   "_nota": "Indirizzi trovati con la ricerca il 27/10/2026 (docs/piano-contenuti.md, primo giro): il ticket per i codici non urgenti. Da leggere nella copia prima di scriverlo.",
+   "pagine": [
+    {
+     "tipo": "pronto-soccorso",
+     "url": "https://salute.regione.veneto.it/organizzazione-sssr/il-servizio-socio-sanitario-regionale/assistenza-ospedaliera/pronto-soccorso/dimissioni"
+    },
+    {
+     "tipo": "pronto-soccorso",
+     "url": "https://salute.regione.veneto.it/assistenza-ospedaliera/pronto-soccorso/esenzioni"
+    }
+   ]
   }
  ]
 }

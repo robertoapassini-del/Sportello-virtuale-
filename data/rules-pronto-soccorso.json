@@ -3,6 +3,8 @@
   "last_verified": "2026-10-24",
   "codici_numero": 5,
   "ticket_bianco_lombardia_euro": 25,
+  "ticket_calabria_catanzaro_euro": 25,
+  "ticket_calabria_catanzaro_max_euro": 45,
   "attesa_nazionale_minuti": {
     "codice_2": 15,
     "codice_3": 60,
@@ -27,6 +29,20 @@
       "proof": "testo",
       "review_by": "2027-01-31",
       "nota": "Regione Lombardia, pagina «Pronto Soccorso», copia del server del 24/10/2026: gli accessi in «codice bianco alla dimissione» pagano la «quota fissa per l’accesso», che la pagina dice di 25,00 euro, «nel rispetto delle esenzioni» (delibera regionale n. 3379 del 2012). Paga il ticket anche chi se ne va prima della chiusura del verbale, con qualunque codice. Regola della sola Lombardia."
+    },
+    "ticket_calabria_catanzaro_euro": {
+      "url": "https://www.asp.cz.it/ticket/",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-04-27",
+      "nota": "ASP di Catanzaro, pagina «Ticket» (ultimo aggiornamento 15/04/2026), copia del server: «per le prestazioni erogate dal Pronto Soccorso limitatamente ai codici bianco o verde, (ad eccezione di quelle con codice d'urgenza o che esitano in ricovero) sono soggette a ticket quota fissa di € 25 euro e quota variabile per altre prestazioni fino ad un massimo di €45». Regola dell'azienda di Catanzaro (Calabria)."
+    },
+    "ticket_calabria_catanzaro_max_euro": {
+      "url": "https://www.asp.cz.it/ticket/",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-04-27",
+      "nota": "Stessa pagina dell'ASP di Catanzaro: «quota variabile per altre prestazioni fino ad un massimo di €45»."
     },
     "attesa_nazionale_minuti": {
       "url": "https://www.regione.piemonte.it/governo/bollettino/abbonati/2021/17/attach/dgr_03088_1050_16042021.pdf",
@@ -55,6 +71,10 @@
     {
       "label": "ASL Cagliari (Sardegna) – Servizi digitali: pagare il ticket del pronto soccorso",
       "url": "https://www.asl8cagliari.it/servizio/servizi-digitali-cup-web/"
+    },
+    {
+      "label": "ASP di Catanzaro (Calabria) – Ticket: anche il pronto soccorso per codici bianchi e verdi",
+      "url": "https://www.asp.cz.it/ticket/"
     },
     {
       "label": "Regione Piemonte – DGR del 16/04/2021, linee di indirizzo per il triage",
