@@ -53,13 +53,13 @@ L'ordine viene da quanto si cercano (Google Trends, `ricerche-frequenti.md` punt
 
 ### Secondo giro: domande frequenti, con una pagina vicina
 
-- Esenzione per malattia cronica o rara: codici, come si chiede (oggi è una sottopagina dell'esenzione).
+- Esenzione per malattia cronica o rara: codici, come si chiede (oggi è una sottopagina dell'esenzione). 27/10/2026: fonti in copia (tema «esenzione-patologia»).
 - Le medicine: ticket in farmacia (cambia per regione), farmaci gratis e a pagamento, farmacia dei servizi. 27/10/2026: pagine del ticket dei farmaci di 14 regioni in copia (voce «ticket-farmaci»).
 - Vaccini per i bambini: obbligatori, scuola, dove si fanno. 27/10/2026: fonti in copia (tema «vaccini-bambini» di `data/fonti-nazionali.json`).
-- Gravidanza e parto: esami gratis, consultorio, dopo il parto.
+- Gravidanza e parto: esami gratis, consultorio, dopo il parto. 27/10/2026: fonti in copia (tema «gravidanza»).
 - Ricovero in ospedale: cosa portare, dimissioni, chi assiste.
-- Riabilitazione: fisioterapia e logopedia con il Servizio sanitario.
-- Trasporto sanitario: ambulanza non urgente, dialisi, visite.
+- Riabilitazione: fisioterapia e logopedia con il Servizio sanitario. 27/10/2026: pagine di tre aziende sanitarie in copia (voce «riabilitazione» dei `fonti.json`).
+- Trasporto sanitario: ambulanza non urgente, dialisi, visite. 27/10/2026: fonti in copia (tema «trasporto-sanitario»).
 
 ### Terzo giro: domande meno frequenti
 
