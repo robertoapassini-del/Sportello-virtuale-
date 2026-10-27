@@ -1,6 +1,6 @@
 {
  "regione": "emilia-romagna",
- "aggiornato": "2026-10-27T07:51:26.799Z",
+ "aggiornato": "2026-10-27T12:22:59.174Z",
  "pagine": [
   {
    "asl": "bologna",
@@ -9,8 +9,8 @@
    "http": 200,
    "file": "bologna/52ee1bcfe6ff.txt",
    "titolo": "Home page — Azienda USL di Bologna",
-   "sha": "69c144973897fc62f1cf0c7dd85213d6cf4a06698c087311e4e682622538189b",
-   "caratteri": 4210,
+   "sha": "409ed2bc7ae9ed0fd424a70d604575af914a2038621a17af8466e55e2d07574e",
+   "caratteri": 4393,
    "link_pdf": [
     {
      "url": "https://www.ausl.bologna.it/asl-bologna/staff/socs/socs-trasparenza/organigramma-statico/ORG.pdf",
@@ -21,7 +21,7 @@
      "testo": "Cookie policy"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "bologna",
@@ -625,7 +625,7 @@
    "titolo": "Richiedere e ritirare copia documentazione sanitaria - Arcispedale Sant'Anna",
    "sha": "20bea5ff809f56d867ec1c805f7647e44e7af34b56d85150e7250b1ca1cd0cc0",
    "caratteri": 9262,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ferrara",
@@ -1643,9 +1643,9 @@
    "http": 200,
    "file": "reggio-emilia/accd7fd8e449.txt",
    "titolo": "Home Page - AUSL RE",
-   "sha": "ad5f2c85378493cd518c5f92846fa64b4b9b78c841cfd0df51a10e0ba4889952",
-   "caratteri": 11338,
-   "cambiata": false
+   "sha": "9d33fadcda60a2582b5581d25d16a4bc31c4b62f96d8a24c9fb80275b5df5abb",
+   "caratteri": 10771,
+   "cambiata": true
   },
   {
    "asl": "reggio-emilia",
@@ -2433,9 +2433,9 @@
    "http": 200,
    "file": "ausl-modena/8978d204a573.txt",
    "titolo": "Come fare per - SERVIZIO SANITARIO REGIONALE EMILIA-ROMAGNA",
-   "sha": "aae0c472615195a46dd55d3bfbe9a357ee6ce340679e73745b94afbd3e3fb232",
+   "sha": "fcda6bc0da43b734ad0665ff4dc91794a42728c5188070f763e0c0d9af6c1742",
    "caratteri": 2027,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "ausl-bologna",
@@ -2530,9 +2530,9 @@
    "finale": "https://www.ausl.imola.bo.it/home",
    "file": "ausl-imola/cd7d3a537196.txt",
    "titolo": "Home",
-   "sha": "dabf1ef90f2dfd563ac19520e19f3b53da5cacff7118f26132594b1f145099a5",
-   "caratteri": 14578,
-   "cambiata": false
+   "sha": "f8ce0da9513ae93634eef60cba7be3319c18333bc489d2a52cc795e441f4ca60",
+   "caratteri": 14618,
+   "cambiata": true
   },
   {
    "asl": "ausl-imola",
@@ -2707,6 +2707,27 @@
    "controllata": "2026-10-27",
    "http": 404,
    "finale": "https://www.ausl.mo.it/ausl-comunica/ticket-esenzioni-dal-pagamento-e-rimborsi/ticket-pronto-soccorso"
+  },
+  {
+   "asl": "ticket-farmaci",
+   "url": "https://salute.regione.emilia-romagna.it/cure-primarie/ticket-esenzioni",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "ticket-farmaci/19e3f3954c02.txt",
+   "titolo": "Come si applica il ticket? — Salute",
+   "sha": "61fd1c669a98559eff02bafb10d70379b3541d1d4329bb0010af8569920ad8f4",
+   "caratteri": 12016,
+   "link_pdf": [
+    {
+     "url": "https://salute.regione.emilia-romagna.it/normativa-e-documentazione/leggi-atti/regionali/circolari/2019/2019_01_Circolare2_Esenzioniticket.pdf",
+     "testo": "circolare regionale n. 2/2019."
+    },
+    {
+     "url": "https://salute.regione.emilia-romagna.it/cure-primarie/ticket-esenzioni/locandina-ticket-ps.pdf/@@download/file/locandina%20ticket%20ps.pdf",
+     "testo": "Scarica in formato pdf ( 72.09 KB)"
+    }
+   ],
+   "cambiata": true
   }
  ]
 }

@@ -1,6 +1,6 @@
 {
  "regione": "nazionali",
- "aggiornato": "2026-10-27T09:46:28.785Z",
+ "aggiornato": "2026-10-27T14:18:16.546Z",
  "pagine": [
   {
    "asl": "urgenze",
@@ -59,7 +59,7 @@
      "testo": "Dalla parte dei bambini - Dal bisogno alla risposta"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ascolto",
@@ -109,9 +109,9 @@
    "finale": "https://www.uniticontrolaids.it/",
    "file": "ascolto/8e5b59246f4d.txt",
    "titolo": "Uniti contro l'AIDS",
-   "sha": "d0cfc74354e9625da32f9b0e5687566227e31f0b068175b9a9465a378cdb6f74",
-   "caratteri": 55019,
-   "cambiata": false
+   "sha": "51aae5ad3859fe6aad69bca8cb386ad7e883cf5c94b79446e1c252355380115b",
+   "caratteri": 54965,
+   "cambiata": true
   },
   {
    "asl": "ascolto",
@@ -905,7 +905,7 @@
    "caratteri": 15273,
    "link_pdf": [
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x29867",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x60604",
      "testo": "Modulo per AUTOCERTIFICAZIONE"
     }
    ],
@@ -947,11 +947,11 @@
   },
   {
    "asl": "regole-esenzione",
-   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x29867",
+   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x60604",
    "controllata": "2026-10-27",
    "da_pagina": "https://www.aslcittaditorino.it/prestazioni/esenzione-ticket-per-reddito/",
    "http": 200,
-   "file": "regole-esenzione/f295d9bfc9f8.txt",
+   "file": "regole-esenzione/9397923a1806.txt",
    "titolo": "Autocertificazione di esenzione",
    "sha": "0ec5d984b6bd5ef03f12e32ef41b78dfdf250def32f239cb24d846beeee617d9",
    "caratteri": 10878,
@@ -1097,9 +1097,13 @@
    "http": 200,
    "file": "regole-guardia-medica/0e62576a150d.txt",
    "titolo": "Pronto Soccorso - Regione Lombardia",
-   "sha": "50b33739a679ff5a0318fa751a39d7e22667bd47c6d6ac12e3d3ec8cc27288ed",
-   "caratteri": 19747,
+   "sha": "43cc757ac76398754e1393362e0cdadca608d16cfa9489b000252867b32334a2",
+   "caratteri": 19865,
    "link_pdf": [
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett43.pdf",
+     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 43/2026"
+    },
     {
      "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett42.pdf",
      "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 42/2026"
@@ -1215,13 +1219,9 @@
     {
      "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett15.pdf",
      "testo": "Report sorveglianza accessi pronto soccorso Settimana 15/2026"
-    },
-    {
-     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett14.pdf",
-     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 14/2026"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "regole-invalidita",
@@ -1855,9 +1855,13 @@
    "http": 200,
    "file": "regole-pronto-soccorso/0e62576a150d.txt",
    "titolo": "Pronto Soccorso - Regione Lombardia",
-   "sha": "50b33739a679ff5a0318fa751a39d7e22667bd47c6d6ac12e3d3ec8cc27288ed",
-   "caratteri": 19747,
+   "sha": "43cc757ac76398754e1393362e0cdadca608d16cfa9489b000252867b32334a2",
+   "caratteri": 19865,
    "link_pdf": [
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett43.pdf",
+     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 43/2026"
+    },
     {
      "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett42.pdf",
      "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 42/2026"
@@ -1973,13 +1977,9 @@
     {
      "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett15.pdf",
      "testo": "Report sorveglianza accessi pronto soccorso Settimana 15/2026"
-    },
-    {
-     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/13-emergenze-e-urgenze/red-pronto-soccorso/allegati/bollettini-soerveglianza-sindromica-pronto-soccorso/Report_2026_sett14.pdf",
-     "testo": "Report sorveglianza accessi Pronto Soccorso - Settimana 14/2026"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "regole-pronto-soccorso",
@@ -2057,6 +2057,347 @@
    "caratteri": 17866,
    "pdf": true,
    "cambiata": false
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://www.asl1.liguria.it/emergenze-e-guardia-medica/codice-bianco-pronto-soccorso.html",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-pronto-soccorso/4a4188a32920.txt",
+   "titolo": "Codice Bianco Pronto Soccorso - ASL1",
+   "sha": "3e5cb268b2380b79e696f55f24c3b7f41af9f339141c85b9f7adde6c29555db7",
+   "caratteri": 6966,
+   "email_nascoste": 1,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://burc.regione.campania.it/eBurcWeb/directServlet?DOCUMENT_ID=14882&ATTACH_ID=14781",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-pronto-soccorso/6258deb6a9cd.txt",
+   "titolo": "n. 66 del 4 Ottobre 2010",
+   "sha": "a5b174c86b917694529e9872e42eb809143c2233432a7e01bce9e512f88dca20",
+   "caratteri": 14403,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://www.ospedalecardarelli.it/migrate/DOCUMENT_FILE_123748.pdf",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-pronto-soccorso/d28c855450f6.txt",
+   "titolo": "INFORMATIVA SULLE PRESTAZIONI SANITARIE EROGATE IN PRONTO SOCCORSO E",
+   "sha": "6b0b7aba345f4419ecaafbd3e0d4b812e525ad720419a1e3e02a1388b9980f60",
+   "caratteri": 1281,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://www.regione.emilia-romagna.it/ticket-ps",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-pronto-soccorso/9e6c542f5f7a.txt",
+   "titolo": "Come funzionano le visite al Pronto soccorso: le regole per l'applicazione del ticket - Regione Emilia-Romagna",
+   "sha": "d41f36c44ba4068209145fb026fd3d277a3b0bf579c4c236925d7dd2284d62af",
+   "caratteri": 6909,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://www.aslroma2.it/index.php/uoc-medicina-d-urgenza-e-pronto-soccorso-2",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-pronto-soccorso/6f2a28e1087b.txt",
+   "titolo": "ASL Roma 2 - UOC Medicina d'Urgenza e Pronto Soccorso",
+   "sha": "59bb9e46a0d7d9a6c7e66364985205b31bb66a08ede53ee470336439b6c2dd2d",
+   "caratteri": 14507,
+   "email_nascoste": 4,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://www.asl.vt.it/pagamento-ticket-ed-esenzioni",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-pronto-soccorso/1837f3fc6e31.txt",
+   "titolo": "Pagamento ticket ed esenzioni ASL Viterbo - ASL VITERBO",
+   "sha": "570f6546d83de41a60fe4c8c1b06b4ea28b67797e762a6875eece030ad3bb23e",
+   "caratteri": 6329,
+   "link_pdf": [
+    {
+     "url": "https://www.asl.vt.it/storage/uploads/forms/7d4f9528e984dc4a3eadcb14505e15c7.pdf",
+     "testo": "istanza"
+    },
+    {
+     "url": "https://www.asl.vt.it/cookie-policy.pdf",
+     "testo": "Cookie Policy"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://www.aslteramo.it/prestazioni_servizi/osservazione-breve-pronto-soccorso-teramo/",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-pronto-soccorso/3db9dee43359.txt",
+   "titolo": "PRONTO SOCCORSO Teramo – Azienda Sanitaria Locale di Teramo",
+   "sha": "71115cfece188d93210b47cde68a2155156b766570af14e3e4a62bcdf766b197",
+   "caratteri": 6338,
+   "link_pdf": [
+    {
+     "url": "https://www.aslteramo.it/wp-content/uploads/2020/01/Organigramma-Aziendale-2020.pdf",
+     "testo": "Organigramma"
+    },
+    {
+     "url": "https://www.aslteramo.it/wp-content/uploads/2025/03/PEC.pdf",
+     "testo": "Indirizzi PEC"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://www.asl2abruzzo.it/come-fare-per/pagare-il-ticket-per-una-visita-o-un-esame/",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-pronto-soccorso/58fe15caa334.txt",
+   "titolo": "Pagare il ticket per una visita o un esame | ASL2 Abruzzo",
+   "sha": "c880076cead26bc0fc1574d36a0d84cba92d0e6573d72c94ef1b5017e50eeef9",
+   "caratteri": 7881,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://portale.ospedaliriuniti.marche.it/archivio13_reparti_0_289.html",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-pronto-soccorso/252945137e2b.txt",
+   "titolo": "Azienda Ospedaliero Universitaria delle Marche - pronto soccorso e medicina d'urgenza",
+   "sha": "831a9eef39f094c538b758e010d1cc756383724dded0499d4065e5d5f927bc53",
+   "caratteri": 8011,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://www.regione.piemonte.it/governo/bollettino/abbonati/2020/37/attach/dgr_01859_1050_07082020.pdf",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-pronto-soccorso/0621ed460bd4.txt",
+   "titolo": "DGR_01859_1050_07082020_pdf",
+   "sha": "1ea958a1333cf224dc8485b24b3fb4b2d1198216daca5fca7ec9979e7bf73f10",
+   "caratteri": 8608,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://www.aslcn1.it/fileadmin/ASLCN1/Dip_Emergenza_Urgenza/Medicina_Urgenza_Savigliano/Informativa_per_pagamento_ticket_PS.pdf",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-pronto-soccorso/57751bc05b96.txt",
+   "titolo": "Informativarivistaperpagamentoticket_REV (1)",
+   "sha": "d9a7ac70ec52581ae2e8e37f0c63a2d9ff42bea0c6cc243c569ce06c5027ddbe",
+   "caratteri": 1953,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://www.aslcittaditorino.it/come-fare-per/pagare-il-ticket/",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-pronto-soccorso/af49a3226f52.txt",
+   "titolo": "Pagare il ticket | Azienda Sanitaria Locale \"Città di Torino\"",
+   "sha": "550da777a570c6faf0aedde73bb2a01d58ed196577a2d56cc2789b8c1b7387c4",
+   "caratteri": 7550,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://sist.sanita.puglia.it/documents/25619/125067/Tabella+Quota+Fissa+e+Ticket+Pronto+Soccorso+e+Specialistica.pdf/e4c9a358-1d08-4670-a298-843990cb1225",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-pronto-soccorso/faefd0a9ef08.txt",
+   "titolo": "Tabella Quota Fissa e Ticket Pronto Soccorso e Specialistica FINALE.xlsx",
+   "sha": "d2ff4bf02ca549d977460562e562f9c780493bed51c0b1df1ebb8d0bbf72d7b6",
+   "caratteri": 4675,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://www.asp.sr.it/Servizi-e-prestazioni/Pronto-soccorso",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-pronto-soccorso/42757b5b2b39.txt",
+   "titolo": "Pronto soccorso - Azienda Sanitaria Provinciale di Siracusa",
+   "sha": "c712259bd370a5cd5a6eb572cb6c1a4e63965bdc472c00b031619c4d2f5f44f0",
+   "caratteri": 5740,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://www.aspct.it/azienda/presidi-ospedalieri/biancavilla/pronto-soccorso/",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-pronto-soccorso/760a71423d7a.txt",
+   "titolo": "U.O.C. Pronto Soccorso",
+   "sha": "6ec92e25088ea6893905170fcad8503c10818ffefede9ec092c59735e9529c1c",
+   "caratteri": 5706,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://www.asp.rg.it/news/3496-in-vigore-i-nuovi-codici-colore-per-classificare-le-urgenze-al-pronto-soccorso.html",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "finale": "https://asp.rg.it/news/3496-in-vigore-i-nuovi-codici-colore-per-classificare-le-urgenze-al-pronto-soccorso.html",
+   "file": "regole-pronto-soccorso/0bb26b39e2b0.txt",
+   "titolo": "In vigore i nuovi codici colore per classificare le urgenze al Pronto Soccorso",
+   "sha": "aa2e6c93dc38941ee0a99cb7bb15fb3e68f1429c4cdfbd966be80b86aed2f3b7",
+   "caratteri": 2677,
+   "email_nascoste": 2,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://www.regione.toscana.it/it/accedere-al-pronto-soccorso",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-pronto-soccorso/b8cdcecdf163.txt",
+   "titolo": "Accedere al pronto soccorso - Regione Toscana",
+   "sha": "244dd454376d2890eab37fe3eb7dd8a350e3312500e09b9a295611aed8af2bd9",
+   "caratteri": 5599,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://www.uslsudest.toscana.it/come-fare-per/pagare-il-ticket",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-pronto-soccorso/ff4d7d58b04e.txt",
+   "titolo": "Pagare il ticket",
+   "sha": "9d7eea186ffbe2ff4fc430e730be521e14f2f56200200f7f71e7536736dcc03b",
+   "caratteri": 4804,
+   "link_pdf": [
+    {
+     "url": "https://www.uslsudest.toscana.it/images/perc-ass/stranieri/istruzioni-pagopa-stranieri.pdf",
+     "testo": "Manuale per pagamenti cittadini stranieri suPagoPA"
+    },
+    {
+     "url": "https://www.uslsudest.toscana.it/images/servizi/Filiali-Monte-Paschi-pagamento-ticket.pdf",
+     "testo": "sportelli della Banca Monte dei Paschi di Siena"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://www.ufficiostampa.provincia.tn.it/content/download/38838/647260/file/Tabella_nuovi_criteri_ticket_pronto_soccorso.pdf",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-pronto-soccorso/8db9681e8b74.txt",
+   "titolo": "Tabella nuovi criteri ticket pronto soccorso",
+   "sha": "da2c9040f13bbdbda6cd669560b9b165e96c577385f74c98c56d0d64b8ac749d",
+   "caratteri": 2585,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://www.uslumbria2.it/notizie/accedere-al-pronto-soccorso",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-pronto-soccorso/1c6a2f93540d.txt",
+   "titolo": "Accedere al Pronto Soccorso - USL Umbria 2",
+   "sha": "60f4bccf1040efe85ba18e9d454ea1e7e2e4f306e18fd1f5ae6c77486b5a4f36",
+   "caratteri": 3949,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://www.uslumbria1.it/servizio/pronto-soccorso-118/",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-pronto-soccorso/24e47e33af6c.txt",
+   "titolo": "Pronto Soccorso - 118 - USL Umbria 1",
+   "sha": "87f351e713087870bd2bbf1c421804422c35188197b8f9f276a9b86e3130f790",
+   "caratteri": 8945,
+   "link_pdf": [
+    {
+     "url": "https://www.uslumbria1.it/wp-content/uploads/2022/05/DDG_1335-2017_Modalita-richiesta-documentazione-sanitaria.pdf",
+     "testo": "Procedura"
+    },
+    {
+     "url": "https://www.uslumbria1.it/wp-content/uploads/2022/05/Triage_COMPLETO_DEFINITIVO.pdf",
+     "testo": "Scheda di accoglienza e triage mulitilingue (Inglese, Rumeno, Arabo e Cinese)"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://www.ausl.vda.it/Media/AUSL/Hierarchy/7/720/Pagamento%20prestazioni%20di%20Pronto%20Soccorso.pdf",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-pronto-soccorso/672486ba47f0.txt",
+   "titolo": "Informativa_PS",
+   "sha": "69bf3c76777dcbf433eb40872a1b1635832dfb22773689c889ebc6cbe45f74ec",
+   "caratteri": 1548,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://salute.regione.veneto.it/organizzazione-sssr/il-servizio-socio-sanitario-regionale/assistenza-ospedaliera/pronto-soccorso/dimissioni",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-pronto-soccorso/22eab8bc5c5d.txt",
+   "titolo": "Dimissioni | Regione del Veneto",
+   "sha": "b4040616f1572ac58d5557eb0ca5e06b22b1bacd0cd1a24e290b4ebcd5596250",
+   "caratteri": 6192,
+   "link_pdf": [
+    {
+     "url": "https://salute.regione.veneto.it/contents/2026-08/Il%20nuovo%20logo%20SSSR.pptx.pdf?VersionId=7kL2zjvZTHlpMZ.VP.WJPnRpp3IfTUSg",
+     "testo": "Logo SSSR"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://salute.regione.veneto.it/assistenza-ospedaliera/pronto-soccorso/esenzioni",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "finale": "https://salute.regione.veneto.it/organizzazione-sssr/il-servizio-socio-sanitario-regionale/assistenza-ospedaliera/pronto-soccorso/esenzioni",
+   "file": "regole-pronto-soccorso/f661c220e10e.txt",
+   "titolo": "Esenzioni | Regione del Veneto",
+   "sha": "89c0757c44d75a785a2208aaf87fec0006665caea73ce076ba8ec6d1a379e6f0",
+   "caratteri": 4876,
+   "link_pdf": [
+    {
+     "url": "https://salute.regione.veneto.it/contents/2026-08/Il%20nuovo%20logo%20SSSR.pptx.pdf?VersionId=7kL2zjvZTHlpMZ.VP.WJPnRpp3IfTUSg",
+     "testo": "Logo SSSR"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "regole-pronto-soccorso",
+   "url": "https://www.asl.vt.it/storage/uploads/forms/7d4f9528e984dc4a3eadcb14505e15c7.pdf",
+   "controllata": "2026-10-27",
+   "da_pagina": "https://www.asl.vt.it/pagamento-ticket-ed-esenzioni",
+   "http": 200,
+   "file": "regole-pronto-soccorso/3806247eff72.txt",
+   "titolo": "SISTEMA SANITARIO REGIONALE",
+   "sha": "05e2addf5f1b86e28583a38ceb4f8d322f49189904287545bd323a2cc9f3dd94",
+   "caratteri": 1476,
+   "pdf": true,
+   "cambiata": true
   },
   {
    "asl": "regole-psicologo",
@@ -2644,6 +2985,40 @@
   },
   {
    "asl": "tema-verifiche",
+   "url": "https://www.regione.sicilia.it/sites/default/files/2026-02/direttiva_assessoriale_regione_siciliana_-_prot._n.9368_dell_11.02.2026.pdf",
+   "controllata": "2026-10-27",
+   "http": 404
+  },
+  {
+   "asl": "tema-verifiche",
+   "url": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-salute/assistenza-sanitaria-indiretta-transfrontaliera-sicilia",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "tema-verifiche/42e7e84db165.txt",
+   "titolo": "Assistenza sanitaria indiretta transfrontaliera in Sicilia | Regione Siciliana",
+   "sha": "df384d984e78a83aaba17936b2fdb0b5369fbd7838069a04cdd20d5b767d8420",
+   "caratteri": 4048,
+   "cambiata": false
+  },
+  {
+   "asl": "tema-verifiche",
+   "url": "https://www.regione.sicilia.it/sites/default/files/2021-09/D.A.%20n.780%20del%2030.07.2021.pdf",
+   "controllata": "2026-10-27",
+   "http": 404
+  },
+  {
+   "asl": "tema-verifiche",
+   "url": "https://www1.agenziaentrate.gov.it/web_app_entrate/spese_sanitarie.html",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "tema-verifiche/0ca8997eb333.txt",
+   "titolo": "Agenzia informa - Le Agevolazioni Fiscali sulle Spese Sanitarie",
+   "sha": "1bd8c4b5c5deac2ce436d8970a95097c2e76bb803358b4032442b6cf614d56af",
+   "caratteri": 55195,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-verifiche",
    "url": "https://www.garanteprivacy.it/temi/sanita-e-ricerca-scientifica/cartelle-cliniche",
    "controllata": "2026-10-27",
    "http": 200,
@@ -2675,6 +3050,113 @@
    "sha": "129159f77dc8deb2d79d83d62ebdeb407313037f807dbe79dc5a59d8740e876e",
    "caratteri": 21765,
    "cambiata": false
+  },
+  {
+   "asl": "tema-vaccini-bambini",
+   "url": "https://www.normattiva.it/eli/id/2017/08/05/17G00132/CONSOLIDATED/20210504",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "tema-vaccini-bambini/eec62c2cfaa4.txt",
+   "titolo": "LEGGE 31 luglio 2017, n. 119 - Normattiva",
+   "sha": "89662d76c6be257c9d7945bf1b380e147ddccf3e54d742c2e571e9b39f390729",
+   "caratteri": 4409,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-vaccini-bambini",
+   "url": "https://www.gazzettaufficiale.it/eli/gu/2017/08/05/182/sg/pdf",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "tema-vaccini-bambini/aefb71188770.txt",
+   "titolo": "SERIE GENERALE",
+   "sha": "c220896da3b486871697800afb31c70f99edd729bde6aba91c7792a44e983e64",
+   "caratteri": 219979,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-vaccini-bambini",
+   "url": "https://www.epicentro.iss.it/vaccini/obbligovaccinale",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "tema-vaccini-bambini/a91a9aba03ea.txt",
+   "titolo": "Obbligo vaccinale: cos’è e perché è importante",
+   "sha": "fa95f6500d3a44f758d8e5306a529d8820d1efc76743f53c828da37cb77e05f4",
+   "caratteri": 18847,
+   "link_pdf": [
+    {
+     "url": "https://www.epicentro.iss.it/vaccini/pdf/communications%20package%20italian.pdf",
+     "testo": "Kit di comunicazione"
+    },
+    {
+     "url": "https://www.epicentro.iss.it/vaccini/pdf/Vaccines%20Work%20poster%20italian.pdf",
+     "testo": "I vaccini? funzionano!"
+    },
+    {
+     "url": "https://www.epicentro.iss.it/vaccini/pdf/Vaccines%20Work%20white%20poster%20italian.pdf",
+     "testo": "I vaccini proteggono la salute in ogni fase della vita"
+    },
+    {
+     "url": "https://www.epicentro.iss.it/vaccini/pdf/Italian%20baby%20banner%20exact%20size.pdf",
+     "testo": "banner"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "tema-vaccini-bambini",
+   "url": "https://www.regione.piemonte.it/web/temi/sanita/prevenzione/obbligo-vaccinale-indicazioni-operative-per-gli-adempimenti-dellanno-scolastico-2025-2026",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "tema-vaccini-bambini/a8b3e7fb7065.txt",
+   "titolo": "Obbligo vaccinale, le indicazioni operative per gli adempimenti dell'anno scolastico 2025-2026 | Regione Piemonte",
+   "sha": "842b47ddf02469f99a9f52d0a95b5efe8d241041d1e95000f8f9195f80c246fb",
+   "caratteri": 15496,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-vaccini-bambini",
+   "url": "https://www.regione.toscana.it/-/nuove-disposizioni-in-materia-di-vaccinazioni",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "tema-vaccini-bambini/23285b61a63c.txt",
+   "titolo": "Nuove disposizioni in materia di vaccinazioni - Regione Toscana",
+   "sha": "f47b7e52d39b506f61cbe783d60705956b1f297bab381e14aeb6ba673f36cac7",
+   "caratteri": 13436,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-vaccini-bambini",
+   "url": "https://salute.regione.emilia-romagna.it/sanita-pubblica/vaccinazioni/vaccinazioni-per-target-diversi/vaccinazioni-per-bambini-e-adolescenti/il-calendario-vaccinale-pediatrico",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "tema-vaccini-bambini/4af30e1c5ce2.txt",
+   "titolo": "Il calendario vaccinale pediatrico — Salute",
+   "sha": "ea15ddfabb0e5a027b91e4068e9d93e821913bf0b38db26ac52047574fd56e5c",
+   "caratteri": 3996,
+   "link_pdf": [
+    {
+     "url": "https://salute.regione.emilia-romagna.it/sanita-pubblica/vaccinazioni/vaccinazioni-per-target-diversi/vaccinazioni-per-bambini-e-adolescenti/c029_calendario-vaccinale_a4_web.pdf/@@download/file/C029_calendario-vaccinale_A4_web.pdf",
+     "testo": "Calendario vaccinale pediatrico della Regione Emilia-Romagna ( 347.87 KB)"
+    },
+    {
+     "url": "https://salute.regione.emilia-romagna.it/normativa-e-documentazione/materiale-informativo/vaccinazioni/c029_calendario-vaccinale_a4_web.pdf",
+     "testo": "Scarica il calendario"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "tema-vaccini-bambini",
+   "url": "https://salute.regione.veneto.it/contents/2026-07/MANUALE_MALATTIE_INFETTIVE_SCUOLE_2026.pdf?VersionId=ZAnQlUuUYr7GFv2MadlkHBULv6SBzEo2",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "tema-vaccini-bambini/428919332041.txt",
+   "titolo": "1",
+   "sha": "f4998c761ab5b887d2f888a98f692a208d499efd48ebdc5ccd95989a1e7cb1f5",
+   "caratteri": 132175,
+   "pdf": true,
+   "cambiata": true
   }
  ]
 }

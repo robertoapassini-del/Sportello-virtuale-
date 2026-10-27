@@ -1,6 +1,6 @@
 {
  "regione": "puglia",
- "aggiornato": "2026-10-27T08:47:38.193Z",
+ "aggiornato": "2026-10-27T13:19:35.241Z",
  "pagine": [
   {
    "asl": "bari",
@@ -372,9 +372,9 @@
    "http": 200,
    "file": "foggia/cb113d17017e.txt",
    "titolo": "Home - ASL Foggia - PugliaSalute",
-   "sha": "2aa587de1b6e59ae29a1d1d237a1bb7bb65232f98faee4d6f7c326801d0e4c56",
-   "caratteri": 8926,
-   "cambiata": false
+   "sha": "1c787f64a3f02dac41900ccb9876ad2cb0f7072b513b3940e1c1172e03f4dab5",
+   "caratteri": 8887,
+   "cambiata": true
   },
   {
    "asl": "foggia",
@@ -592,9 +592,9 @@
    "http": 200,
    "file": "taranto/b295f08823b5.txt",
    "titolo": "Home - ASL Taranto - PugliaSalute",
-   "sha": "03ba0ece3daf350e4d7a696d42ec451f5f9d5ed3c0e9fbe1b6339fc3f62b7203",
-   "caratteri": 8762,
-   "cambiata": false
+   "sha": "44089ff740ddf5db369bc8f2b2a9ec84e21cfd59695b8618166edb9802a72e49",
+   "caratteri": 8663,
+   "cambiata": true
   },
   {
    "asl": "taranto",
@@ -658,9 +658,9 @@
    "http": 200,
    "file": "taranto/fc06d0689439.txt",
    "titolo": "Home - ASL Taranto - PugliaSalute",
-   "sha": "a8b698735fd7d4c4d5354bc5914b12bb8b3457d45b5212276765a56c584db9f4",
-   "caratteri": 8203,
-   "cambiata": false
+   "sha": "ca88fce6e622ea8a363f347e285ed61ed6ec575624dddc30c3a4eb0c4ff44c03",
+   "caratteri": 8104,
+   "cambiata": true
   },
   {
    "asl": "taranto",
@@ -924,7 +924,7 @@
    "titolo": "Fascicolo sanitario elettronico: tu al centro dei nostri servizi - Comunicazione Istituzionale - Regione Puglia",
    "sha": "9de52303185d3b8aa719b7f59c60eb1510ea1fb8d43fcfdca9b90e49e84f4519",
    "caratteri": 3046,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-puglia",
@@ -935,7 +935,7 @@
    "titolo": "Attiva il Fascicolo sanitario elettronico in farmacia - Salute, sport e buona vita - Regione Puglia",
    "sha": "df1ae1bf59cb341652150039b8c3d4e8e3fd0f0a916c448f9073ed546bd64be0",
    "caratteri": 2790,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-puglia",
@@ -946,7 +946,7 @@
    "titolo": "Servizi online di Puglia Salute in manutenzione, come prenotare le prestazioni specialistiche - Salute, sport e buona vita - Regione Puglia",
    "sha": "f62748c829210bdcc02263638f229ccc3cac5345c878ffa5f7e0e5ccaaa6e5ee",
    "caratteri": 2823,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-puglia",
@@ -957,7 +957,7 @@
    "titolo": "In Puglia sarà attivato il 116117, il nuovo numero da chiamare per l’assistenza territoriale. Dal Ministero è giunta l’autorizzazione - PRESS REGIONE - Regione Puglia",
    "sha": "e179dd4fdb0b1ea1c66c8ae5fec4fe76e0f4d1f38d04ec0f5234a218ee1ba116",
    "caratteri": 4397,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "inps-puglia",
@@ -1049,7 +1049,7 @@
    "http": 200,
    "file": "asl-taranto/c6848cf0528d.txt",
    "titolo": "CUP - ASL Taranto - PugliaSalute",
-   "sha": "5f08a30bd73b7acf4855ae489c78d3cc52c4aacad99935ce5f2f4e12272c35c3",
+   "sha": "f3b5a39aebd4b98b99bd429091d1dea6d89325d84159486b638ae35e0ff41aa0",
    "caratteri": 7847,
    "cambiata": true
   },
@@ -1075,6 +1075,23 @@
    "caratteri": 4675,
    "pdf": true,
    "cambiata": false
+  },
+  {
+   "asl": "ticket-farmaci",
+   "url": "https://www.sanita.puglia.it/-/esenzione-ticket-per-reddito-rinnovi-automatici-dal-1-aprile-2026",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "ticket-farmaci/d746c693fead.txt",
+   "titolo": "Esenzione ticket per reddito: rinnovi automatici dal 1° aprile 2026 - PugliaSalute",
+   "sha": "8fcaf8fc679243091b948b9fdad2c08311de8fc6d3035516e990c71083629b4f",
+   "caratteri": 7988,
+   "cambiata": true
+  },
+  {
+   "asl": "ticket-farmaci",
+   "url": "https://sanita.puglia.it/documents/20182/126541/tabella+esenzione+ticket+farmaci+(tabella+esenzione+10+10+11.pdf)/f08c303d-94db-4b8b-a91d-2ce9605536c3",
+   "controllata": "2026-10-27",
+   "http": 404
   }
  ]
 }

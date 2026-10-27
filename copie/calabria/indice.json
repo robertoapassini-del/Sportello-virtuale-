@@ -1,6 +1,6 @@
 {
  "regione": "calabria",
- "aggiornato": "2026-10-27T07:40:32.834Z",
+ "aggiornato": "2026-10-27T12:12:01.218Z",
  "pagine": [
   {
    "asl": "catanzaro",
@@ -455,7 +455,7 @@
    "http": 200,
    "file": "cosenza/fe31bc8fb243.txt",
    "titolo": "Centro Unico di Prenotazione Online - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "b405d4779f9dadc28c6d4f9a34a972c4813e6a22d1cabc178229cab860df905f",
+   "sha": "1798388b83300a8b53cab5e79724b1033c87a74ed62174ba49f381fbc54df338",
    "caratteri": 8094,
    "cambiata": true
   },
@@ -531,7 +531,7 @@
    "http": 200,
    "file": "crotone/794ccfdda2f9.txt",
    "titolo": "Assistenza Domiciliare - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "34f1812d1e3c1e77bd874fe81e1b1d8546978cb86c670e978dfc7f98cb9acbfd",
+   "sha": "9a37f097152ea8f4920cdda69e20d7cc82496058a8d1b139ffe9cfba51c6e24e",
    "caratteri": 9089,
    "link_pdf": [
     {
@@ -539,7 +539,7 @@
      "testo": "Scheda di proposta di accesso ai servizi territoriali"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "crotone",
@@ -560,7 +560,7 @@
    "http": 200,
    "file": "crotone/4ab485a670df.txt",
    "titolo": "contatti - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "06a180478e9dfb44314b23fa048ddfc214dcfdfe11e91f3c65e5e5933762c0ee",
+   "sha": "9510ed7d930424a64a1e6a62073ec361187bf6874aa4d8e2cfdbf5318857089c",
    "caratteri": 7856,
    "cambiata": true
   },
@@ -578,15 +578,15 @@
    "http": 200,
    "file": "reggio-calabria/9c7dc5845640.txt",
    "titolo": "Azienda Sanitaria Provinciale di Reggio Calabria",
-   "sha": "a66d753a803b112937482f81925b77cab2e79a8ed3147576277a6f1c3074ec69",
-   "caratteri": 3872,
+   "sha": "b77080ea2981abbb529e93f9a6de3bc079ffbaf0f44c6c6b04baa9023aac955d",
+   "caratteri": 3890,
    "link_pdf": [
     {
      "url": "https://www.asprc.it/files/upload/modulo-esercizio-diritti-asprc-medpd-a100624.pdf",
      "testo": "Mod. esercizio diritti interessati"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "reggio-calabria",
@@ -1325,7 +1325,7 @@
    "http": 200,
    "file": "asp-crotone/7cfbfca8e650.txt",
    "titolo": "Fascicolo sanitario elettronico - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "53631eba4410fe58cbfc7ccf7922380a19a7664a7e6f9ca151e66b17362e79cf",
+   "sha": "689a9f4ae8ad32535156c2213ced6f430ba923c35765c8cc7bc858c7402a51b8",
    "caratteri": 10734,
    "cambiata": true
   },
@@ -1457,6 +1457,39 @@
    "controllata": "2026-10-27",
    "http": 403,
    "nota": "controllo anti-robot (CAPTCHA): non copiata"
+  },
+  {
+   "asl": "medico-online",
+   "url": "https://www.asp.cz.it/scelta-e-revoca-medico-on-line/",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "medico-online/2653a25cfb55.txt",
+   "titolo": "",
+   "sha": "b0e3c372cc40c2a130821d4e5111abf773b7182d4ce5fd5f5e53d473712bd066",
+   "caratteri": 5068,
+   "link_pdf": [
+    {
+     "url": "http://sviluppoweb.asp.cz.it/files/Scelta%20e%20Revoca%20Medico%20on%20line%20L.S./modello%20scelta%20e%20revoca%20medico.pdf",
+     "testo": "MODELLO RICHIESTA SCELTA E REVOCA"
+    },
+    {
+     "url": "https://www.asp.cz.it/files/Distretto%20Catanzaro%20L.S.%20_PUA/distretto-catanzaro-a-aloisio-2024/medicina-generale/medici-medicina-generale-pubblicazione-al-06-10-2026.pdf",
+     "testo": "ELENCO DEI MEDICI E PEDIATRI AFFERENTI AL DISTRETTO"
+    },
+    {
+     "url": "https://www.asp.cz.it/files/Distretto%20Sanitario%20Soverato/dss%20soverato%20aloisio%202024/mmg-pls/mmg-pls-dss-3-publicazione-al-21-10-2026.pdf",
+     "testo": "DISTRETTO DI SOVERATO E POLI AFFERENTI"
+    },
+    {
+     "url": "https://www.asp.cz.it/files/distretto%20di%20lamezia%20terme/medici-per-bacheca-aggiornato-al-16-19-2026.pdf",
+     "testo": "DISTRETTO DI LAMEZIA TERME E POLI AFFERENTI"
+    },
+    {
+     "url": "https://www.asp.cz.it/files/distretto%20di%20lamezia%20terme/Distretto%20Lamezia%20%20MMG%20e%20PLS%20per%20ambiti.AGG...pdf",
+     "testo": ""
+    }
+   ],
+   "cambiata": true
   }
  ]
 }

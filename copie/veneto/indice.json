@@ -1,6 +1,6 @@
 {
  "regione": "veneto",
- "aggiornato": "2026-10-27T09:38:10.399Z",
+ "aggiornato": "2026-10-27T14:08:19.173Z",
  "pagine": [
   {
    "asl": "belluno",
@@ -180,9 +180,9 @@
    "http": 200,
    "file": "treviso/3f2877cab1fe.txt",
    "titolo": "Homepage - ULSS 2 Marca Trevigiana",
-   "sha": "4ee066d04b1f02520d9aa9b55ef70ddf6f9a42bb873b55df14e2cbcf45c6553c",
-   "caratteri": 6287,
-   "cambiata": false
+   "sha": "61238b22c3c13c07255fb17f04fea0b0f3798e1007d9e6573bbc9141b131fc92",
+   "caratteri": 6289,
+   "cambiata": true
   },
   {
    "asl": "treviso",
@@ -337,7 +337,12 @@
    "asl": "treviso",
    "url": "https://www.aulss2.veneto.it/richiedere-dispositivi-di-assistenza-protesica",
    "controllata": "2026-10-27",
-   "http": 500
+   "http": 200,
+   "file": "treviso/aaa20e98d96e.txt",
+   "titolo": "Richiedere dispositivi di assistenza protesica",
+   "sha": "c7c14132d6a1928075002d008a5d90b92c62e8acc316f7c101cfcac2a9a0b187",
+   "caratteri": 6646,
+   "cambiata": true
   },
   {
    "asl": "treviso",
@@ -354,13 +359,23 @@
    "asl": "treviso",
    "url": "https://www.aulss2.veneto.it/liste-di-attesa",
    "controllata": "2026-10-27",
-   "http": 500
+   "http": 200,
+   "file": "treviso/8b1c2a7bb300.txt",
+   "titolo": "Liste di Attesa",
+   "sha": "87ae48a0251be6f6206f334a439b0722defa544ed979abf72b84f569fc74c898",
+   "caratteri": 9573,
+   "cambiata": true
   },
   {
    "asl": "treviso",
    "url": "https://www.aulss2.veneto.it/Servizio-programmi-di-screening",
    "controllata": "2026-10-27",
-   "http": 500
+   "http": 200,
+   "file": "treviso/0ffe1a932eb0.txt",
+   "titolo": "Servizio Programmi Di Screening",
+   "sha": "025a5191a99a0ce57b76c2e2f71696178552190a2c579a503dd70c9cba6d2b72",
+   "caratteri": 4995,
+   "cambiata": true
   },
   {
    "asl": "treviso",
@@ -382,9 +397,9 @@
    "finale": "https://www.aulss3.veneto.it/home",
    "file": "venezia/16b1625c6d9f.txt",
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
-   "sha": "ed04bf3347934d4c36b004af6809bb0a7b2e3cf44debd2bd2574d1d14d0665d8",
-   "caratteri": 6413,
-   "cambiata": false
+   "sha": "de7b601a2a733fc9c48dbd5df7ce9fa278991af7439bc0b87027d9a3997d585c",
+   "caratteri": 6317,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -493,9 +508,9 @@
    "finale": "https://www.aulss3.veneto.it/home",
    "file": "venezia/d213a293dfcf.txt",
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
-   "sha": "ed04bf3347934d4c36b004af6809bb0a7b2e3cf44debd2bd2574d1d14d0665d8",
-   "caratteri": 6413,
-   "cambiata": false
+   "sha": "de7b601a2a733fc9c48dbd5df7ce9fa278991af7439bc0b87027d9a3997d585c",
+   "caratteri": 6317,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -506,9 +521,9 @@
    "finale": "https://www.aulss3.veneto.it/home",
    "file": "venezia/3eaad184c615.txt",
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
-   "sha": "ed04bf3347934d4c36b004af6809bb0a7b2e3cf44debd2bd2574d1d14d0665d8",
-   "caratteri": 6413,
-   "cambiata": false
+   "sha": "de7b601a2a733fc9c48dbd5df7ce9fa278991af7439bc0b87027d9a3997d585c",
+   "caratteri": 6317,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -543,7 +558,7 @@
    "titolo": "Casa della Comunità di San Donà di Piave",
    "sha": "62c415b08490abae4d9ae002d01afe40c11f07b8b81b68995d7c01fcc3c2de3b",
    "caratteri": 9153,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -576,9 +591,9 @@
    "browser": true,
    "http": 200,
    "file": "venezia/94b10fd120ae.txt",
-   "titolo": "Prenotare o disdire una prestazione",
-   "sha": "a51ae7f9b870c22239253622f0138713b1c93868e8e1172cca209c15cb31b6b6",
-   "caratteri": 4153,
+   "titolo": "ULSS 3 SERENISSIMA - Prenotare o disdire una prestazione",
+   "sha": "24cb0231314153f570e3aa81d3f988c1fc648ed27bbd901b52da8962850af619",
+   "caratteri": 4174,
    "cambiata": true
   },
   {
@@ -588,10 +603,10 @@
    "browser": true,
    "http": 200,
    "file": "venezia/97e8ec10f5af.txt",
-   "titolo": "Medici Medicina Generale, Pediatri Libera Scelta e Continuit",
-   "sha": "52756ca8b2dedff8e23b92608d12f95cdbd184d48e30b61d3f7625edf3f683d4",
-   "caratteri": 4645,
-   "cambiata": false
+   "titolo": "Medici Medicina Generale, Pediatri Libera Scelta",
+   "sha": "27729a901b4cdcb7682da8e238b6f3ec27eb70c117185f74cb085397097cc524",
+   "caratteri": 4606,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -685,9 +700,9 @@
    "browser": true,
    "http": 200,
    "file": "venezia/7259f23ba486.txt",
-   "titolo": "Prenotazione esami di laboratorio presso le strutture dell'A",
-   "sha": "6c77e5de6056b83fe18ff4c7613f38247614a291db5815170e35a02e80cf3b87",
-   "caratteri": 3562,
+   "titolo": "Azienda ULSS n. 4 Veneto Orientale - Prenotazione esami di laboratorio presso le strutture dell'Azienda Ulss4 \"Veneto Orientale\"",
+   "sha": "639a5afddb6322348a5a2962cc2fba1c554e07dede861388a1a1a61d719c21fe",
+   "caratteri": 3630,
    "cambiata": true
   },
   {
@@ -698,9 +713,9 @@
    "http": 200,
    "file": "venezia/7e3d7e26db54.txt",
    "titolo": "Azienda ULSS n. 4 Veneto Orientale - 116117 e Continuità Assistenziale",
-   "sha": "4f8940a732628fb3db1c36e646ffd6632597507783c0e36d9ab5ffecd10d8c3c",
-   "caratteri": 3302,
-   "cambiata": false
+   "sha": "6418952a2e8d22b121116a7ee3ee2591cfc302d6c5bd29be7454989b7679a99c",
+   "caratteri": 3268,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -747,9 +762,9 @@
    "finale": "https://www.aulss3.veneto.it/home",
    "file": "venezia/a029f2332558.txt",
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
-   "sha": "ed04bf3347934d4c36b004af6809bb0a7b2e3cf44debd2bd2574d1d14d0665d8",
-   "caratteri": 6413,
-   "cambiata": false
+   "sha": "de7b601a2a733fc9c48dbd5df7ce9fa278991af7439bc0b87027d9a3997d585c",
+   "caratteri": 6317,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -760,9 +775,9 @@
    "finale": "https://www.aulss3.veneto.it/home",
    "file": "venezia/b6eaeaaa2085.txt",
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
-   "sha": "ed04bf3347934d4c36b004af6809bb0a7b2e3cf44debd2bd2574d1d14d0665d8",
-   "caratteri": 6413,
-   "cambiata": false
+   "sha": "de7b601a2a733fc9c48dbd5df7ce9fa278991af7439bc0b87027d9a3997d585c",
+   "caratteri": 6317,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -799,9 +814,9 @@
    "finale": "https://www.aulss3.veneto.it/home",
    "file": "venezia/e677293f92f5.txt",
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
-   "sha": "ed04bf3347934d4c36b004af6809bb0a7b2e3cf44debd2bd2574d1d14d0665d8",
-   "caratteri": 6413,
-   "cambiata": false
+   "sha": "de7b601a2a733fc9c48dbd5df7ce9fa278991af7439bc0b87027d9a3997d585c",
+   "caratteri": 6317,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -849,7 +864,7 @@
    "titolo": "Homepage - ULSS 5 Polesana",
    "sha": "bc8ed8b08ac73d0c67266f8e1d13933de286e2ded968248ab7849b9a884398a3",
    "caratteri": 5816,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "rovigo",
@@ -893,7 +908,7 @@
    "titolo": "Prenotazioni e ticket",
    "sha": "e582a91343b00686cdf1c329ad29123986bb529c65dbbecb73813efa8aff3f50",
    "caratteri": 13245,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "rovigo",
@@ -1072,7 +1087,7 @@
    "titolo": "URP online",
    "sha": "7be150e9982b98c162b236dfc2b32f4499a4bf422be0a94764257a0a0a0094d7",
    "caratteri": 8554,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "padova",
@@ -1127,7 +1142,7 @@
    "titolo": "URP online",
    "sha": "7be150e9982b98c162b236dfc2b32f4499a4bf422be0a94764257a0a0a0094d7",
    "caratteri": 8554,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "padova",
@@ -1239,7 +1254,7 @@
    "titolo": "Homepage ULSS 8 Berica",
    "sha": "7af5b23bad75b318e409d94564917b94ad3d66b57cb8c666c0f2414c9a11613b",
    "caratteri": 6145,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "vicenza",
@@ -1523,9 +1538,9 @@
    "http": 200,
    "file": "vicenza/822d5940e687.txt",
    "titolo": "Patenti monocratiche e certificazioni di idoneità",
-   "sha": "fb1b971518672861515afabc6cde642f1b95d2d01618fa7fb9b645e205274586",
-   "caratteri": 5994,
-   "cambiata": false
+   "sha": "f875a6badd04e2652c3bd4596282c0b311eb798572aa807fe126a41bbc699d28",
+   "caratteri": 5950,
+   "cambiata": true
   },
   {
    "asl": "vicenza",
@@ -1977,13 +1992,19 @@
    "asl": "ulss2-marca-trevigiana",
    "url": "https://www.aulss2.veneto.it/contatti",
    "controllata": "2026-10-27",
-   "http": 500
+   "http": 200,
+   "finale": "https://www.aulss2.veneto.it/urp",
+   "file": "ulss2-marca-trevigiana/eb775fab6e7d.txt",
+   "titolo": "Ufficio Relazioni con il Pubblico (URP)",
+   "sha": "d25ff98af450b771535b73995e869c7237df986ae033f9c1a13386b998379c39",
+   "caratteri": 5715,
+   "cambiata": true
   },
   {
    "asl": "ulss2-marca-trevigiana",
    "url": "https://www.aulss2.veneto.it/liste-attesa",
    "controllata": "2026-10-27",
-   "http": 500
+   "http": 404
   },
   {
    "asl": "ulss6-euganea",
@@ -2036,6 +2057,46 @@
     }
    ],
    "cambiata": false
+  },
+  {
+   "asl": "medico-online",
+   "url": "https://salute.regione.veneto.it/web/fser/cerca-medici-e-pediatri",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "finale": "https://salute.regione.veneto.it/fse-e-servizi-online/fascicolo-sanitario-elettronico-regionale",
+   "file": "medico-online/4ddaae633dc5.txt",
+   "titolo": "Fascicolo Sanitario Elettronico regionale | Regione del Veneto",
+   "sha": "55b8befe8b6df489507cd7f549a3ed1fcaa008191c23458682c4e33a540c5f2d",
+   "caratteri": 11323,
+   "link_pdf": [
+    {
+     "url": "https://salute.regione.veneto.it/contents/2026-08/Il%20nuovo%20logo%20SSSR.pptx.pdf?VersionId=7kL2zjvZTHlpMZ.VP.WJPnRpp3IfTUSg",
+     "testo": "Logo SSSR"
+    },
+    {
+     "url": "https://salute.regione.veneto.it/contents/2026-03/Delega%20al%20rilascio%20del%20consenso%20FSE_v.marzo%202021.def_.pdf?VersionId=mm39XsNqqeuJAt.W2OE8B0qWuwjlszOI",
+     "testo": "Delega al rilascio del consenso FSE_v.marzo 2021.def_.pdf"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "ticket-farmaci",
+   "url": "https://salute.regione.veneto.it/assistenza-farmaceutica/esenzioni-dalla-compartecipazione-alla-spesa-farmaceutica",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "finale": "https://salute.regione.veneto.it/organizzazione-sssr/il-servizio-socio-sanitario-regionale/assistenza-ospedaliera/assistenza-farmaceutica/esenzioni-dalla-compartecipazione-alla-spesa-farmaceutica",
+   "file": "ticket-farmaci/e56fe5d584d7.txt",
+   "titolo": "Esenzioni dalla compartecipazione alla spesa farmaceutica | Regione del Veneto",
+   "sha": "8e5c083cbd09264af9fe7aeaa5cfc74996f583372f659e408d62378d8d69e938",
+   "caratteri": 7362,
+   "link_pdf": [
+    {
+     "url": "https://salute.regione.veneto.it/contents/2026-08/Il%20nuovo%20logo%20SSSR.pptx.pdf?VersionId=7kL2zjvZTHlpMZ.VP.WJPnRpp3IfTUSg",
+     "testo": "Logo SSSR"
+    }
+   ],
+   "cambiata": true
   }
  ]
 }

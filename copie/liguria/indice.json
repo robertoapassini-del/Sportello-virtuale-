@@ -1,6 +1,6 @@
 {
  "regione": "liguria",
- "aggiornato": "2026-10-27T08:09:00.296Z",
+ "aggiornato": "2026-10-27T12:40:57.869Z",
  "pagine": [
   {
    "asl": "genova",
@@ -1140,10 +1140,10 @@
    "http": 200,
    "file": "savona/8e58d6d92046.txt",
    "titolo": "Rete delle Cure palliative - ASL2",
-   "sha": "03a6eb9f7357b5eb892dc30c5f81839fe5a64b748891d15ede1652fe9fa71e59",
-   "caratteri": 11805,
+   "sha": "aea289dbbb7e7985a1fbf8adb9153795e56203e7e13776502bffe206ff30d597",
+   "caratteri": 11809,
    "email_nascoste": 5,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "savona",
@@ -1648,9 +1648,9 @@
    "http": 200,
    "file": "asl4-chiavarese/17af5299b98d.txt",
    "titolo": "Asl4 - Area Sociosanitaria Locale n. 4",
-   "sha": "d6e1df1979cb8af054b22afb22843f8e85fc52a61efd3d8f490be6510af9fa54",
-   "caratteri": 4150,
-   "cambiata": false
+   "sha": "ff0199bdf412a6080d4b76a908fef68fa2de0bace054b76f505f315b3fa6e355",
+   "caratteri": 4327,
+   "cambiata": true
   },
   {
    "asl": "asl4-chiavarese",
@@ -1823,6 +1823,40 @@
    "caratteri": 6966,
    "email_nascoste": 1,
    "cambiata": false
+  },
+  {
+   "asl": "medico-online",
+   "url": "https://www.asl3.liguria.it/medici-e-pediatri/cambio-medico.html",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "medico-online/f604eb0a6fa6.txt",
+   "titolo": "Cambio medico - ASL3",
+   "sha": "4dafac5c33cf1f07a846732836d535e02ed126a8a86a49fd0c280628405fe909",
+   "caratteri": 12312,
+   "cambiata": true
+  },
+  {
+   "asl": "medico-online",
+   "url": "https://www.regione.liguria.it/component/content/article.html?id=36301&Itemid=8220",
+   "controllata": "2026-10-27",
+   "http": 403
+  },
+  {
+   "asl": "ticket-farmaci",
+   "url": "https://www.regione.liguria.it/homepage-salute/come-fare-per/esenzione-ticket.html",
+   "controllata": "2026-10-27",
+   "http": 403
+  },
+  {
+   "asl": "ticket-farmaci",
+   "url": "https://www.asl3.liguria.it/prenotazioni-e-ticket/esenzione-per-patologia-cronica-o-malattia-rara.html",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "ticket-farmaci/e28ebd631c86.txt",
+   "titolo": "Esenzione per patologia cronica o malattia rara - ASL3",
+   "sha": "f87ddf012c1a86cdefd6b7d9bfc28dffddae2631a3e4fdecf50509c85324df05",
+   "caratteri": 9358,
+   "cambiata": true
   }
  ]
 }
