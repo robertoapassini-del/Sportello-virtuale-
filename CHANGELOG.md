@@ -2,6 +2,9 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 27/10/2026 — Fonte del testamento biologico corretta
+- `data/fonti-nazionali.json`, tema «dat»: al posto della Gazzetta n. 297/2017 (che non contiene la legge) il testo vigente della L. 219/2017 su Normattiva. La legge è nella Gazzetta n. 12 del 16/01/2018.
+
 ## 27/10/2026 — Testamento biologico, stranieri, consultorio
 - `cure-palliative/testamento-biologico/` (pagina nuova): le DAT della L. 219/2017, chi le fa, dove (notaio, Comune, azienda sanitaria, consolato), senza tasse, il fiduciario, la banca dati nazionale; gli sportelli toscani. Fonte: Regione Toscana (la copia della Gazzetta indicata nel tema «dat» non contiene la legge: indirizzo sbagliato, da correggere).
 - `tessera-sanitaria/stranieri/` (pagina nuova): l'iscrizione con il permesso di soggiorno, l'iscrizione volontaria, il codice STP (6 mesi, rinnovabile); i Centri ISI del Piemonte e i minori in Emilia-Romagna. `data/rules-tessera-sanitaria.json`: «stp_mesi» e «stp_minori_medico_fino_anni_emilia_romagna» con la frase della fonte.
