@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 27/10/2026 — Fonti nuove da copiare: cambio medico online, ticket dei farmaci, vaccini
+- `data/regioni/<regione>/fonti.json`: voce nuova «medico-online» in 19 regioni (pagine ufficiali del cambio del medico online) e «ticket-farmaci» in 14 regioni. Il server le copia; le frasi si scrivono dopo, dalla copia.
+- `data/fonti-nazionali.json`: tema nuovo «vaccini-bambini» (L. 119/2017, ISS, pagine di 4 Regioni). Nel tema «verifiche»: il PDF del D.A. 780/2021, la direttiva siciliana 9368/2026 con «www» e la pagina della Regione sulle cure all'estero, la scheda dell'Agenzia delle Entrate sulle spese sanitarie.
+- `medico-famiglia/come-si-fa/`: tolta una frase ripetuta.
+
 ## 27/10/2026 — Pronto soccorso: il ticket regione per regione
 - `pronto-soccorso/il-ticket/` (pagina nuova): la regola nazionale (L. 296/2006: 25 euro per il codice bianco non seguito da ricovero; non pagano i minori di 14 anni, i traumi e gli avvelenamenti acuti) e le regole di 17 regioni, lette nelle copie del server del 27/10/2026. Dove la fonte è di un'azienda sanitaria, la pagina dice quale.
 - `data/rules-pronto-soccorso.json`: cifre nuove con la frase della fonte (Emilia-Romagna 25 euro e fino a 36,15 per ricetta; ASL 1 Liguria fino a 61,15 euro ed entro 7 giorni; Puglia 10 euro per ricetta; ASL CN1 trauma entro 36 ore; Toscana sud est fino a 50 euro; Veneto osservazione oltre 4 ore) e 24 fonti nuove.
