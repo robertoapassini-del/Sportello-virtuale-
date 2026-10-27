@@ -17,6 +17,20 @@
       "proof": "secondaria",
       "review_by": "2027-10-20",
       "nota": "Le FAQ del Sistema TS confermano il certificato sostitutivo chiesto all'ASL, senza dire la durata: 6 mesi viene dalle guide. Da confermare."
+    },
+    "stp_mesi": {
+      "url": "https://salute.regione.emilia-romagna.it/stranieri",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-10-27",
+      "nota": "Regione Emilia-Romagna, «Cittadini stranieri», copia del server del 27/10/2026: agli stranieri non in regola con il soggiorno «viene rilasciato un apposito tesserino di iscrizione al Servizio sanitario (STP, Straniero Temporaneamente Presente), a carattere temporaneo (6 mesi), rinnovabile». Anche la Regione Piemonte: «Il tesserino ha validità semestrale ed è rinnovabile»."
+    },
+    "stp_minori_medico_fino_anni_emilia_romagna": {
+      "url": "https://salute.regione.emilia-romagna.it/stranieri",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-10-27",
+      "nota": "Stessa pagina: «In Emilia-Romagna hanno diritto al pediatra e al medico di famiglia fino al 18mo anno di età anche ragazzi e ragazze minorenni, figli di migranti senza permesso di soggiorno»; «La scelta del medico è a tempo determinato, con validità annuale»."
     }
   },
   "sources": [
@@ -35,6 +49,16 @@
     {
       "label": "Agenzia delle Entrate – Guida «La tessera sanitaria»",
       "url": "https://www.agenziaentrate.gov.it/portale/documents/d/guest/guida_tessera_sanitaria_052025"
+    },
+    {
+      "label": "Regione Emilia-Romagna – Cittadini stranieri",
+      "url": "https://salute.regione.emilia-romagna.it/stranieri"
+    },
+    {
+      "label": "Regione Piemonte – Assistenza sanitaria agli stranieri",
+      "url": "https://www.regione.piemonte.it/web/temi/sanita/accesso-ai-servizi-sanitari/assistenza-sanitaria-agli-stranieri"
     }
-  ]
+  ],
+  "stp_mesi": 6,
+  "stp_minori_medico_fino_anni_emilia_romagna": 18
 }

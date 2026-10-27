@@ -2,6 +2,12 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 27/10/2026 — Testamento biologico, stranieri, consultorio
+- `cure-palliative/testamento-biologico/` (pagina nuova): le DAT della L. 219/2017, chi le fa, dove (notaio, Comune, azienda sanitaria, consolato), senza tasse, il fiduciario, la banca dati nazionale; gli sportelli toscani. Fonte: Regione Toscana (la copia della Gazzetta indicata nel tema «dat» non contiene la legge: indirizzo sbagliato, da correggere).
+- `tessera-sanitaria/stranieri/` (pagina nuova): l'iscrizione con il permesso di soggiorno, l'iscrizione volontaria, il codice STP (6 mesi, rinnovabile); i Centri ISI del Piemonte e i minori in Emilia-Romagna. `data/rules-tessera-sanitaria.json`: «stp_mesi» e «stp_minori_medico_fino_anni_emilia_romagna» con la frase della fonte.
+- `prevenzione/consultorio/` (pagina nuova): cosa fa il consultorio, l'accesso senza ricetta, gli spazi per i ragazzi (Emilia-Romagna, Toscana, Lazio), Piemonte, Lombardia. `data/rules-prevenzione.json`: «consultorio_ragazzi» con la frase della fonte.
+- Copie del server del 27/10/2026, sera.
+
 ## 27/10/2026 — Fisioterapia e logopedia con il Servizio sanitario
 - `prenotare-cup/riabilitazione/` (pagina nuova): la ricetta per la visita dal fisiatra, la prenotazione al CUP, il progetto riabilitativo individuale; le regole delle aziende di Torino, Liguria (ASL3) e Umbria 1. Letto nelle copie del server del 27/10/2026.
 - `data/rules-prenotare-cup.json`: 3 fonti nuove. Il trasporto sanitario non urgente aspetta altre copie: per ora c'è solo la Toscana.
