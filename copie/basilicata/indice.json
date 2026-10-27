@@ -1,6 +1,6 @@
 {
  "regione": "basilicata",
- "aggiornato": "2026-10-27T14:38:07.516Z",
+ "aggiornato": "2026-10-27T17:08:39.994Z",
  "pagine": [
   {
    "asl": "matera",
@@ -100,9 +100,9 @@
    "certificato": "non valido",
    "file": "matera/ba15fecc3c01.txt",
    "titolo": "Distretto Policoro - Azienda Sanitaria locale di Matera",
-   "sha": "66104edf4573322883872db1c1d56e8534b2f18d14df40d0661eaed53786d094",
+   "sha": "197a2d11976ebc75bc7e1db262d2ebbdc497ab9ba382848ce518745374c765d8",
    "caratteri": 6307,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "matera",
@@ -197,8 +197,8 @@
    "http": 200,
    "file": "potenza/28b106b78182.txt",
    "titolo": "ASP Basilicata",
-   "sha": "7c355fec7ba3a5b36d7da5fbda2d324a67eb4366391206c4b24970080d319b7e",
-   "caratteri": 5222,
+   "sha": "21722041e74e51c2493c30e8fc1a34ae0adf7f40207744a0f356cca6e3fe85fc",
+   "caratteri": 5280,
    "cambiata": true
   },
   {
@@ -266,9 +266,9 @@
    "http": 200,
    "file": "potenza/5dbc77a23557.txt",
    "titolo": "Centro Unico di Prenotazione | Centro Servizi Regione Basilicata - Regione Basilicata",
-   "sha": "8ded68dd4d52c7838d947b18046e2a718a4886ce421b3fdd6af5c4b390fbe879",
-   "caratteri": 9057,
-   "cambiata": false
+   "sha": "77267d2d2a04bc1fb093edc916ca4775d834e5dc6ae44e84e80e40bc3054516d",
+   "caratteri": 9019,
+   "cambiata": true
   },
   {
    "asl": "potenza",
@@ -392,9 +392,9 @@
    "http": 200,
    "file": "potenza/772f6c77a4a7.txt",
    "titolo": "Sanità digitale, nuovi servizi online - Regione Basilicata",
-   "sha": "76561d11aa8c61da2f4e96586da070517c7df28c98122d3ea60e7d81cb4674a6",
-   "caratteri": 11503,
-   "cambiata": false
+   "sha": "c580b32561e18d4fb10f8d62cb278bc3024ee69ce42980937d9ffe3e4d6f7957",
+   "caratteri": 11613,
+   "cambiata": true
   },
   {
    "asl": "potenza",
@@ -441,7 +441,7 @@
    "controllata": "2026-10-27",
    "da_pagina": "https://www.aspbasilicata.it/come-fare-per/scelta-e-revoca-del-medico-di-famiglia-e-del-pediatra/",
    "http": 0,
-   "errore": "curl: (28) Connection timed out after 60002 milliseconds"
+   "errore": "curl: (28) Connection timed out after 60001 milliseconds"
   },
   {
    "asl": "potenza",
@@ -463,9 +463,9 @@
    "http": 200,
    "file": "regole/3961077a0e4e.txt",
    "titolo": "Fascicolo Sanitario Elettronico 2.0 - Regione Basilicata",
-   "sha": "6e47cf84769912d14c9bc3ffc750e52d251515d6e29a3caa04365ef472087cf8",
-   "caratteri": 10040,
-   "cambiata": false
+   "sha": "6f3a60dda61103320410f46d0051e9b1472bc147c3491ca824682584f6a6a702",
+   "caratteri": 10150,
+   "cambiata": true
   },
   {
    "asl": "inps-basilicata",
@@ -529,9 +529,9 @@
    "http": 200,
    "file": "regione-basilicata/2f606e3336a5.txt",
    "titolo": "Fanelli: “CUP, attiva prenotazione online delle prestazioni\" - Regione Basilicata",
-   "sha": "7cc4a9fe05a96fd0f41b75e5273a98a590904c87c56fb3652b783252c613bbfa",
-   "caratteri": 12124,
-   "cambiata": false
+   "sha": "042c32a57ec9dbb5bcbb17a7915e4ed9e48aa59a64b76fa8d9289260a150a985",
+   "caratteri": 12234,
+   "cambiata": true
   },
   {
    "asl": "regione-basilicata",
@@ -541,8 +541,8 @@
    "finale": "https://www.regione.basilicata.it/privacy/",
    "file": "regione-basilicata/8f50bf0e199f.txt",
    "titolo": "Trattamento dati personali e privacy - Regione Basilicata",
-   "sha": "fe091503553c654f728e50fe43a99f67aa7cdc5ecd6d09f9261719cb59b44d77",
-   "caratteri": 16257,
+   "sha": "e9e5edb090273355251f4d1cda3fffe6fddfd58449785424c6e4c33a5beaf183",
+   "caratteri": 16236,
    "link_pdf": [
     {
      "url": "https://www.regione.basilicata.it/wp-content/uploads/2024/12/Privacy-Atto-designazione-responsabile-protezione-dati.pdf",
@@ -597,7 +597,7 @@
      "testo": "Sintesi informazioni sulla contitolarità - Lotto 2"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "regione-basilicata",
@@ -607,8 +607,8 @@
    "finale": "https://www.regione.basilicata.it/?temi-spp=servizi-online",
    "file": "regione-basilicata/24e95f5e1ed6.txt",
    "titolo": "Servizi online - Regione Basilicata",
-   "sha": "8a317a52a256261d753a68ef994dc28a5c9066d5da7c6ee6518a77578cb26580",
-   "caratteri": 8971,
+   "sha": "f7db09e8d20204e206b61d84649a6a216617f86317c5091897e4ee7e99e3a465",
+   "caratteri": 9019,
    "cambiata": true
   },
   {
@@ -910,9 +910,9 @@
    "http": 200,
    "file": "ticket-farmaci/691ce0debd03.txt",
    "titolo": "Sanità, precisazioni sui 2.50 a ricetta - Regione Basilicata",
-   "sha": "28cea2a4a804c98e5a6d4b8a6ff83b482fbc2439d554145bde9c17563fc09273",
-   "caratteri": 12447,
-   "cambiata": false
+   "sha": "3c824398aa35fde10356435d04e86c7fe264d09448cb3c7e55f5af35b533459d",
+   "caratteri": 12557,
+   "cambiata": true
   }
  ]
 }

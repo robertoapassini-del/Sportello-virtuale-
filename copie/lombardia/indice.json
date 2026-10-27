@@ -1,6 +1,6 @@
 {
  "regione": "lombardia",
- "aggiornato": "2026-10-27T15:29:56.686Z",
+ "aggiornato": "2026-10-27T18:02:49.077Z",
  "pagine": [
   {
    "asl": "bergamo",
@@ -159,7 +159,7 @@
    "http": 200,
    "file": "bergamo/1f85c98b9e36.txt",
    "titolo": "Home Page | ASST Papa Giovanni XXIII",
-   "sha": "1becb1f8a8af6d186b61ff209f0b5fe20835f46e08853e22162ed024d01a5a57",
+   "sha": "a02a0bcea32e59f5d1ef368d09fcc96b34abf99ca0de77e74cdc13a995853e34",
    "caratteri": 321478,
    "cambiata": true
   },
@@ -211,7 +211,7 @@
    "titolo": "ASST di Bergamo Ovest",
    "sha": "b9766303063695f6c580d4656597043a8714d7a942a70fc67e425aa46545125f",
    "caratteri": 3629,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bergamo",
@@ -1054,9 +1054,9 @@
    "certificato": "non valido",
    "file": "brescia/34278d2109c6.txt",
    "titolo": "AZIENDA SOCIO-SANITARIA TERRITORIALE DEL GARDA",
-   "sha": "8c976182d20b1ed501d272c6e0f3c202c05a8f7a05878f7a94bb3e2322c22d4b",
+   "sha": "5476927fa9d04549740fd919f10ae371ff31f00528da261ad5443a8d813b4335",
    "caratteri": 1952,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "brescia",
@@ -1520,9 +1520,9 @@
    "http": 200,
    "file": "como/c20c1330e77e.txt",
    "titolo": "ASST Lariana",
-   "sha": "2b9ed6118dda6133bba1bf6d634b6bfed11b49dae51b7a04ba476cb910a7faeb",
-   "caratteri": 7838,
-   "cambiata": false
+   "sha": "a832de0cc3d58e6d7ad8ea461400631bf6d2ec4ec366c15518f6c5f0c188c49b",
+   "caratteri": 7895,
+   "cambiata": true
   },
   {
    "asl": "como",
@@ -3247,7 +3247,7 @@
    "titolo": "HOME - www.asst-lodi.it",
    "sha": "2da9599cb07ed62845dfdcf17facdf1be25d6a926e1e3e9c856ff5a189578bf7",
    "caratteri": 6163,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "lodi",
@@ -4133,7 +4133,7 @@
    "titolo": "Punto Unico di Accesso PUA - ASST Melegnano Martesana",
    "sha": "c5d129de7bab2a234f684dbc8e6b1bfd75d91e68de7d3bea32e1c8d723d61bb6",
    "caratteri": 9122,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "milano",
@@ -4856,7 +4856,7 @@
    "titolo": "Cure Domiciliari A.D.I. - ASST Melegnano Martesana",
    "sha": "79a3d4b4b9a04fb2aafb2e2e95c229ba8498117b6af226d2dd99b4818a83e7df",
    "caratteri": 12010,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "milano",
@@ -5261,7 +5261,7 @@
    "http": 200,
    "file": "milano/91bb0d244f6b.txt",
    "titolo": "Liste di attesa - ASST Melegnano Martesana",
-   "sha": "2cea6b322021b644bdeff80766b727d251591b1e3c6faa8aaf1b5d8479959d24",
+   "sha": "ce79c6cbc51452277e90765fd9d5f265e83ce24bf753f67e5d62ddbe1ab4af06",
    "caratteri": 7290,
    "cambiata": true
   },
@@ -6109,7 +6109,7 @@
    "titolo": "HomePage | ATS Pavia",
    "sha": "7a4a8476d6327bc78eac7092eab2d6671014e7f71269c0edafa9bb2f4e1a1af0",
    "caratteri": 6195,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "pavia",
@@ -7013,7 +7013,7 @@
    "titolo": "URP - Varese - ASST Settelaghi - ASST Settelaghi",
    "sha": "383ade2ac9672dfe87ecab83b1fbc0e4745dfba1063808fc9c06ccfc2c85a661",
    "caratteri": 3471,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "varese",
@@ -7024,7 +7024,7 @@
    "titolo": "PRENOTAZIONE visite e esami con SSN - ASST Settelaghi - ASST Settelaghi",
    "sha": "3849abec0560da4de04c28176fc0a4c167d1bd0e86ecc6ea2bedca20571097e8",
    "caratteri": 12617,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "varese",
@@ -7231,7 +7231,7 @@
    "titolo": "CUP - Ospedale di Circolo - ASST Settelaghi - ASST Settelaghi",
    "sha": "5e1c8633a8d2395f1c7e07b92d0e66759f9baa258675792905e2ee2992a8163d",
    "caratteri": 2596,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "varese",
@@ -7263,8 +7263,8 @@
    "http": 200,
    "file": "varese/625ee56036b9.txt",
    "titolo": "Home - ASST Valle Olona",
-   "sha": "84e4408e5126c2abe4a92f52b8da28cbc61dba7c1b3ded6e3da6eea1fb4d56b2",
-   "caratteri": 4153,
+   "sha": "4ae7f611ef1c70efaefbe1b8fa6e0a86fbb7a443f7e21d3748f8918609807d0c",
+   "caratteri": 4145,
    "link_pdf": [
     {
      "url": "https://www.asst-valleolona.it/wp-content/uploads/2026/09/Asst-Valleolona-Carta-dei-Servizi-Busto-Via-Stelvio-09.09.2026-Cartacea.pdf",
@@ -7539,8 +7539,8 @@
    "http": 200,
    "file": "varese/c27d02fae6a1.txt",
    "titolo": "Cure domiciliari - ASST Valle Olona",
-   "sha": "c7836eb64041c1708743a593cfb3d95dea6cf198f62521cc041201afaf617f46",
-   "caratteri": 5752,
+   "sha": "d699bfebd6cff6309e4bd5391412b632d83532dbf6da503f8042705103b0e620",
+   "caratteri": 5751,
    "link_pdf": [
     {
      "url": "https://www.asst-valleolona.it/wp-content/uploads/2023/08/A0652_P13_Pd01_MS06-Opuscolo-rifiuti-sanitari-pericolosi.pdf",
@@ -7587,7 +7587,7 @@
      "testo": ""
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "varese",

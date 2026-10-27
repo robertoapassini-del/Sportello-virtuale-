@@ -1,6 +1,6 @@
 {
  "regione": "veneto",
- "aggiornato": "2026-10-27T16:44:14.094Z",
+ "aggiornato": "2026-10-27T19:14:42.641Z",
  "pagine": [
   {
    "asl": "belluno",
@@ -11,7 +11,7 @@
    "titolo": "Homepage ULSS 1 Dolomiti",
    "sha": "acf972ab0b50792fc8fb3523a0485ffb0cf225334a57476e8c8d91d07181f50f",
    "caratteri": 6382,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "belluno",
@@ -485,7 +485,7 @@
    "titolo": "Ufficio Relazioni con il Pubblico",
    "sha": "3e12f0324e3dec6bbccde0d2efcbb409598e0a2f816fe475f799c106ceff00ab",
    "caratteri": 6531,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -582,7 +582,7 @@
    "titolo": "Ufficio Relazioni con il Pubblico",
    "sha": "6d09eb97cba7706dd6ee77df389af22586241c2291e5d6b53a9c86e5da0340b9",
    "caratteri": 6531,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -591,9 +591,9 @@
    "browser": true,
    "http": 200,
    "file": "venezia/94b10fd120ae.txt",
-   "titolo": "Prenotare o disdire una prestazione",
-   "sha": "a51ae7f9b870c22239253622f0138713b1c93868e8e1172cca209c15cb31b6b6",
-   "caratteri": 4153,
+   "titolo": "ULSS 3 SERENISSIMA - Prenotare o disdire una prestazione",
+   "sha": "24cb0231314153f570e3aa81d3f988c1fc648ed27bbd901b52da8962850af619",
+   "caratteri": 4174,
    "cambiata": true
   },
   {
@@ -685,11 +685,12 @@
    "asl": "venezia",
    "url": "https://www.aulss4.veneto.it/servizi/continuita-assistenziale-ex-guardia-medica",
    "controllata": "2026-10-27",
+   "browser": true,
    "http": 200,
    "file": "venezia/32a54d5acee3.txt",
-   "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
-   "sha": "6bc2275696536324da914a4390835a8856b32ef9c71aa40dd59c0c5b84156a8f",
-   "caratteri": 45,
+   "titolo": "Continuità Assistenziale (ex Guardia medica)",
+   "sha": "6a4f62362252c53752500cba436ea879159075817bf97dbb9852e4c9356da762",
+   "caratteri": 4944,
    "cambiata": true
   },
   {
@@ -821,11 +822,13 @@
    "asl": "venezia",
    "url": "https://www.aulss4.veneto.it/dettaglio/contenuto/richiedere-la-cartella-clinica",
    "controllata": "2026-10-27",
+   "browser": true,
    "http": 200,
+   "finale": "https://www.aulss4.veneto.it/home",
    "file": "venezia/901abe8bfa4a.txt",
    "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
-   "sha": "6bc2275696536324da914a4390835a8856b32ef9c71aa40dd59c0c5b84156a8f",
-   "caratteri": 45,
+   "sha": "8b1b2e4c90ba26e77f7aff14da75be9cdcfa7664256822e2d2aeaad870c1a503",
+   "caratteri": 5269,
    "cambiata": true
   },
   {

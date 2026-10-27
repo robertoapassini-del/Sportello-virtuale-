@@ -1,6 +1,6 @@
 {
  "regione": "nazionali",
- "aggiornato": "2026-10-27T16:55:01.156Z",
+ "aggiornato": "2026-10-27T19:27:43.879Z",
  "pagine": [
   {
    "asl": "urgenze",
@@ -65,8 +65,19 @@
    "asl": "ascolto",
    "url": "https://www.telefonoamico.it",
    "controllata": "2026-10-27",
-   "http": 0,
-   "errore": "curl: (28) Connection timed out after 30003 milliseconds"
+   "http": 200,
+   "finale": "https://www.telefonoamico.it/",
+   "file": "ascolto/bb5eb1483659.txt",
+   "titolo": "Telefono Amico Italia",
+   "sha": "aa92548c4dd34d42c550545c84fa3f5809bcfea77127a4323a101b2afbbc2646",
+   "caratteri": 7045,
+   "link_pdf": [
+    {
+     "url": "https://www.telefonoamico.it/z_site2021/wp-content/uploads/Statuto-Telefono-Amico-Italia.pdf",
+     "testo": "STATUTO"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "ascolto",
@@ -561,7 +572,7 @@
    "titolo": "Polizia Municipale - Comune di Palermo",
    "sha": "2f069e02cf8ab34f6d41c6018688521702ebb97484d36d679a4c46be79c2183f",
    "caratteri": 5166,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-cure-fuori-regione",
@@ -894,7 +905,7 @@
    "caratteri": 15273,
    "link_pdf": [
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x37401",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x68606",
      "testo": "Modulo per AUTOCERTIFICAZIONE"
     }
    ],
@@ -936,11 +947,11 @@
   },
   {
    "asl": "regole-esenzione",
-   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x37401",
+   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x68606",
    "controllata": "2026-10-27",
    "da_pagina": "https://www.aslcittaditorino.it/prestazioni/esenzione-ticket-per-reddito/",
    "http": 200,
-   "file": "regole-esenzione/9ea7727a6529.txt",
+   "file": "regole-esenzione/08037ee87a49.txt",
    "titolo": "Autocertificazione di esenzione",
    "sha": "0ec5d984b6bd5ef03f12e32ef41b78dfdf250def32f239cb24d846beeee617d9",
    "caratteri": 10878,
@@ -1014,6 +1025,198 @@
    "url": "https://sistemats1.sanita.finanze.it/portale/ricetta-dematerializzata",
    "controllata": "2026-10-27",
    "http": 404
+  },
+  {
+   "asl": "regole-fascicolo-e-ricetta",
+   "url": "https://www.regione.lazio.it/enti/salute/farmaci",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-fascicolo-e-ricetta/07a610f2b82e.txt",
+   "titolo": "| Regione Lazio | ENTI-SALUTE-FARMACI",
+   "sha": "40a621ad336efc59b782b604557ac0bcbb7fd33db5fef840c8def4007ae20ec0",
+   "caratteri": 10818,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-fascicolo-e-ricetta",
+   "url": "https://salute.regione.emilia-romagna.it/cure-primarie/ticket-esenzioni",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-fascicolo-e-ricetta/19e3f3954c02.txt",
+   "titolo": "Come si applica il ticket? — Salute",
+   "sha": "61fd1c669a98559eff02bafb10d70379b3541d1d4329bb0010af8569920ad8f4",
+   "caratteri": 12016,
+   "link_pdf": [
+    {
+     "url": "https://salute.regione.emilia-romagna.it/normativa-e-documentazione/leggi-atti/regionali/circolari/2019/2019_01_Circolare2_Esenzioniticket.pdf",
+     "testo": "circolare regionale n. 2/2019."
+    },
+    {
+     "url": "https://salute.regione.emilia-romagna.it/cure-primarie/ticket-esenzioni/locandina-ticket-ps.pdf/@@download/file/locandina%20ticket%20ps.pdf",
+     "testo": "Scarica in formato pdf ( 72.09 KB)"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "regole-fascicolo-e-ricetta",
+   "url": "https://www.regione.lombardia.it/sanita/ticket-ed-esenzioni/ticket-esenzioni-prestazioni-ssr",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-fascicolo-e-ricetta/79d69c470209.txt",
+   "titolo": "Ticket, esenzioni ed erogabilità delle prestazioni a carico del SSR - Regione Lombardia",
+   "sha": "5add55e9e0d830b3be296cd56563906b281e04e71209e412751afe3f038a79cc",
+   "caratteri": 40296,
+   "link_pdf": [
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/07-ticket-ed-esenzioni/ticket-esenzioni-prerstazioni-ssr/allegato%208%20dpcm%2012%2001%202017.pdf",
+     "testo": "Allegato 8"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/07-ticket-ed-esenzioni/ticket-esenzioni-prerstazioni-ssr/allegato%207%20dpcm%2012%2001%202017.pdf",
+     "testo": "Allegato 7"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/07-ticket-ed-esenzioni/ticket-esenzioni-prerstazioni-ssr/allegati/DGR+3685+del+2024+-+RECEPIMENTO+NUOVI+LEA.pdf",
+     "testo": "DGR n. XII3685 del 20/12/2024 - Ulteriori disposizioni in merito al DPCM 12.1.2017"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/07-ticket-ed-esenzioni/ticket-esenzioni-prerstazioni-ssr/allegati/dgr+7063+del+11.09.2017.pdf",
+     "testo": "DGR n. 7063 dell'11 settembre 2017 - Individuazione, in fase di prima applicazione, dei presidi per le nuove malattie ra"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/07-ticket-ed-esenzioni/ticket-esenzioni-prerstazioni-ssr/allegati/DGR+937+2010.pdf",
+     "testo": "DGR n. 937 del 1° dicembre 2010 - Determinazioni in ordine alla gestione del Servizio Sanitario Regionale per l'esercizi"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/07-ticket-ed-esenzioni/ticket-esenzioni-prerstazioni-ssr/allegati/dgr+4201+esenzioni.pdf",
+     "testo": "DGR n. 4201 del 18 gennaio 2021 - Disposizioni in materia di esenzioni dal ticket sanitario"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/07-ticket-ed-esenzioni/ticket-esenzioni-prerstazioni-ssr/allegati/LEA+2017+dgr+6800+30.6.2017.pdf",
+     "testo": "DGR n. X/6800 del 30 giugno 2017 - Approvazione delle prime disposizioni attuative del DPCM 12.1.2017 \"Definizione e agg"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/07-ticket-ed-esenzioni/ticket-esenzioni-prerstazioni-ssr/allegati/DPCM+NUOVI+LEA+12+01+2017.pdf",
+     "testo": "DPCM 12 gennaio 2017 - \"Definizione e aggiornamento dei Livelli Essenziali di Assistenza di cui all'art. 1 comma 7 Dlgs "
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/07-ticket-ed-esenzioni/ticket-esenzioni-prerstazioni-ssr/allegati/categorie+esenti+spesa+farmaceutica.pdf",
+     "testo": "Categorie esenti dalla compartecipazione alla spesa sanitaria per l'assistenz farmaceutica"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/07-ticket-ed-esenzioni/ticket-esenzioni-prerstazioni-ssr/accordion/Esenzione+spesa+farmaceutica+patologie+croniche+rare+reddito.pdf",
+     "testo": "Esenzione dalla spesa farmaceutica per patologie croniche/malattie rare e reddito"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/07-ticket-ed-esenzioni/ticket-esenzioni-prerstazioni-ssr/allegati/delibera+7895_2023.pdf",
+     "testo": "DGR 7895 del 6 febbraio 2023 - Esenzione nazionale dal ticket sanitario per la specialistica ambulatoriale E02"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/07-ticket-ed-esenzioni/ticket-esenzioni-prerstazioni-ssr/allegati/TABELLA+AGGIORNATA+DELLE+ESENZIONI+PER+REDDI.pdf",
+     "testo": "Tabella codici esenzioni per reddito"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/07-ticket-ed-esenzioni/ticket-esenzioni-prerstazioni-ssr/allegati/Tabelle+limiti+massimi+di+reddito+(002).pdf",
+     "testo": "Tabella limiti massimi esenzioni per reddito E30 ed E40"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/07-ticket-ed-esenzioni/ticket-esenzioni-prerstazioni-ssr/allegati/14715_Circolare-numero-25-del-29-01-2024.pdf",
+     "testo": "Circolare INPS n. 25 del 29 gennaio 2004"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/07-ticket-ed-esenzioni/ticket-esenzioni-prerstazioni-ssr/allegati/Tabelle%20limiti%20massimi%20di%20reddito%20(002).pdf",
+     "testo": "Limiti massimi di reddito"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/07-ticket-ed-esenzioni/ticket-esenzioni-prerstazioni-ssr/allegati/allegato+8+dpcm+12+1+2017+malatie+croniche+invalidanti.pdf",
+     "testo": "Allegato 8 DPCM 12 gennaio 2017"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/07-ticket-ed-esenzioni/ticket-esenzioni-prerstazioni-ssr/allegati/Allegato%207%20dpcm%2012%201%202017.pdf",
+     "testo": "Allegato 7 DPCM 12 1 2017"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/07-ticket-ed-esenzioni/ticket-esenzioni-prerstazioni-ssr/allegati/DGR2003_13796.pdf",
+     "testo": "DGR n, VII/13796 del 25 luglio 2003 - Modifiche della classificazione, delle tariffe e della erogabilità a carico del se"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/07-ticket-ed-esenzioni/ticket-esenzioni-prerstazioni-ssr/DGR%20IX-3379%202012.pdf",
+     "testo": "delibera regionale n. 3379 del 2012"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/07-ticket-ed-esenzioni/ticket-esenzioni-prerstazioni-ssr/allegati/DGR+3685+del+2024%20(1).pdf",
+     "testo": "DGR-XII-3685-20-12-24: Ulteriori determinazioni in merito al DPCM 12.1.2017 a seguito dell'entrata in vigore dei decreti"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/07-ticket-ed-esenzioni/ticket-esenzioni-prerstazioni-ssr/allegati/Allegato+Regole+2020+-+DGR+2672+del+16+dicembre+2019.pdf",
+     "testo": "Allegato DGR 2672/2019 - Regole 2020 - Par. 6.14: Esenzioni"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/07-ticket-ed-esenzioni/ticket-esenzioni-prerstazioni-ssr/allegati/Comunicazioni-Prime_indicazioni_per_la_applicazione_dei_LEA_2017-Circolare_.pdf",
+     "testo": "Circolare Ministero Salute-0035643-06/11/2017-DGPROGS-MDS-P"
+    },
+    {
+     "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/07-ticket-ed-esenzioni/ticket-esenzioni-prerstazioni-ssr/allegati/DGR+n.+XII_4956+del+8.9.2025.pdf",
+     "testo": "DGR n. XII/4956 dell'8 settembre 2025"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "regole-fascicolo-e-ricetta",
+   "url": "https://www.regione.piemonte.it/web/temi/sanita/farmaci-dispositivi-medici/ticket-sui-farmaci",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-fascicolo-e-ricetta/d021709c72a2.txt",
+   "titolo": "Ticket sui farmaci | Regione Piemonte",
+   "sha": "34a0efcf2d52e8883d836f33186d33a4c8ca8ddef93740389cac47c088b43253",
+   "caratteri": 14307,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-fascicolo-e-ricetta",
+   "url": "https://www.regione.umbria.it/salute/ticket-pagamento-esenzione",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-fascicolo-e-ricetta/60708f9ec14e.txt",
+   "titolo": "Ticket: pagamento - esenzione - Regione Umbria",
+   "sha": "6a6af6b98489e795996d8358f24f4bcaf035a7c78f23cad293db5aa3efb32c27",
+   "caratteri": 2841,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-fascicolo-e-ricetta",
+   "url": "https://agr.regione.basilicata.it/post/farmaci-quota-di-250-euro-esenti-le-fasce-fragili",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-fascicolo-e-ricetta/ab50cb44dc0e.txt",
+   "titolo": "Farmaci, quota di 2,50 euro: esenti le fasce fragili - AGR Basilicata",
+   "sha": "69bbdd9b14f329f3b4b61d8d79ff5dda4813a43c226225c3787c73dc133fbeca",
+   "caratteri": 6537,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-fascicolo-e-ricetta",
+   "url": "https://www.aslsalerno.it/archivio2_come-fare-per_0_121.html",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-fascicolo-e-ricetta/b5ef2849d771.txt",
+   "titolo": "Farmaci, dispositivi e presidi medici - ASL Salerno",
+   "sha": "0a78f22ab3efa9dbf543f99f9f08b45f6f6d4b194ec464016f7cea4f5d0a78a2",
+   "caratteri": 10800,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-fascicolo-e-ricetta",
+   "url": "https://www.asl3.liguria.it/prenotazioni-e-ticket/esenzione-per-patologia-cronica-o-malattia-rara.html",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-fascicolo-e-ricetta/e28ebd631c86.txt",
+   "titolo": "Esenzione per patologia cronica o malattia rara - ASL3",
+   "sha": "f87ddf012c1a86cdefd6b7d9bfc28dffddae2631a3e4fdecf50509c85324df05",
+   "caratteri": 9358,
+   "cambiata": true
   },
   {
    "asl": "regole-fascicolo-e-ricetta",
@@ -1561,6 +1764,182 @@
   },
   {
    "asl": "regole-medico",
+   "url": "https://sanita.regione.abruzzo.it/come-fare/scelta-medico-e-pediatra",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "regole-medico/de177011202a.txt",
+   "titolo": "Scelta e revoca del medico di medicina generale (MMG) e del pediatra di libera scelta (PLS) | Regione Abruzzo - Portale Sanità",
+   "sha": "a3a867c348dab1f87f2ce3d13fda59b2d576a8652e341eef6b5c8deefdf470a1",
+   "caratteri": 2920,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-medico",
+   "url": "https://www.aspbasilicata.it/servizi-on-line/portale-anagrafe-web/",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-medico/06817467c1bb.txt",
+   "titolo": "Portale Anagrafe Web - ASP Basilicata",
+   "sha": "c57158693e9bf3eb175d37012d470f0c342a444bf145cd3e07725d2c8754c288",
+   "caratteri": 4156,
+   "link_pdf": [
+    {
+     "url": "http://www.aspbasilicata.it/wp-content/uploads/Guida-Utente-Portale-Anagrafe-Web-in-formato-pdf.pdf",
+     "testo": "Guida Utente Portale Anagrafe Web [in formato pdf]"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "regole-medico",
+   "url": "https://www.asp.cz.it/scelta-e-revoca-medico-on-line/",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-medico/2653a25cfb55.txt",
+   "titolo": "",
+   "sha": "b0e3c372cc40c2a130821d4e5111abf773b7182d4ce5fd5f5e53d473712bd066",
+   "caratteri": 5068,
+   "link_pdf": [
+    {
+     "url": "http://sviluppoweb.asp.cz.it/files/Scelta%20e%20Revoca%20Medico%20on%20line%20L.S./modello%20scelta%20e%20revoca%20medico.pdf",
+     "testo": "MODELLO RICHIESTA SCELTA E REVOCA"
+    },
+    {
+     "url": "https://www.asp.cz.it/files/Distretto%20Catanzaro%20L.S.%20_PUA/distretto-catanzaro-a-aloisio-2024/medicina-generale/medici-medicina-generale-pubblicazione-al-06-10-2026.pdf",
+     "testo": "ELENCO DEI MEDICI E PEDIATRI AFFERENTI AL DISTRETTO"
+    },
+    {
+     "url": "https://www.asp.cz.it/files/Distretto%20Sanitario%20Soverato/dss%20soverato%20aloisio%202024/mmg-pls/mmg-pls-dss-3-publicazione-al-21-10-2026.pdf",
+     "testo": "DISTRETTO DI SOVERATO E POLI AFFERENTI"
+    },
+    {
+     "url": "https://www.asp.cz.it/files/distretto%20di%20lamezia%20terme/medici-per-bacheca-aggiornato-al-16-19-2026.pdf",
+     "testo": "DISTRETTO DI LAMEZIA TERME E POLI AFFERENTI"
+    },
+    {
+     "url": "https://www.asp.cz.it/files/distretto%20di%20lamezia%20terme/Distretto%20Lamezia%20%20MMG%20e%20PLS%20per%20ambiti.AGG...pdf",
+     "testo": ""
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "regole-medico",
+   "url": "https://www.regione.campania.it/node/32056",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-medico/aaaa846ec67c.txt",
+   "titolo": "Scelta e revoca del Medico di Medicina Generale (MMG) e del Pediatra di Libera Scelta (PLS) | Regione Campania",
+   "sha": "381116d0303a047e0a1f76c0350a5cb27393116ec11e35a06642855ae8b675b5",
+   "caratteri": 3464,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-medico",
+   "url": "https://sesamo.sanita.fvg.it/sesamo/res/brochure/html_version/sesamo-brochure-b/pagina-3.html",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-medico/376f11980454.txt",
+   "titolo": "DU FVG Sesamo Support Brochure B",
+   "sha": "2b2120a9467da3755f96b424dd43a5e3a4dc96121ed7d1bade61f9081b9c21d9",
+   "caratteri": 1746,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-medico",
+   "url": "https://www.asl3.liguria.it/medici-e-pediatri/cambio-medico.html",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-medico/f604eb0a6fa6.txt",
+   "titolo": "Cambio medico - ASL3",
+   "sha": "4dafac5c33cf1f07a846732836d535e02ed126a8a86a49fd0c280628405fe909",
+   "caratteri": 12312,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-medico",
+   "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-medico/0d021fb4d437.txt",
+   "titolo": "Cambio medico - Regione Lombardia",
+   "sha": "dd2f8de25df138cdca8512eaa66149826582818241cb5fd0d25eef19f63ef4c7",
+   "caratteri": 11846,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-medico",
+   "url": "https://www.salutepiemonte.it/news/il-mio-medico-guida-completa-al-servizio?nid=881",
+   "controllata": "2026-10-27",
+   "browser": true,
+   "http": 200,
+   "file": "regole-medico/c06859373ef2.txt",
+   "titolo": "Il mio medico, guida completa al servizio | Salute Piemonte",
+   "sha": "3a3dde39d459cd678bb42de13dbd270f7cc0268f7617449e3219b99d55f427f4",
+   "caratteri": 4167,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-medico",
+   "url": "https://www.regione.sardegna.it/servizi/accesso-ai-servizi-on-line/indice-dei-servizi/zenteweb-scelta-e-revoca-del-medico",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-medico/c4992758861a.txt",
+   "titolo": "Zenteweb - Scelta e Revoca del medico - Regione Autonoma della Sardegna",
+   "sha": "89eaba62d333bbf32b54387d506350f7e4f7de9acf73268954d9d12734ba9b10",
+   "caratteri": 2508,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-medico",
+   "url": "https://www.apss.tn.it/content/view/full/21609",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "finale": "https://www.asuit.tn.it/",
+   "certificato": "non valido",
+   "file": "regole-medico/669b1d1e3c26.txt",
+   "titolo": "Homepage | ASUIT Trento",
+   "sha": "d876565621f7f04dbce97e90a1fb799073f1bd4fc6e19a8e225f78d3dc7cc3a1",
+   "caratteri": 9599,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-medico",
+   "url": "https://salute.regione.umbria.it/cms/en/scelta-revoca-medico-informazioni",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "finale": "https://insalute.regione.umbria.it/servizi-al-cittadino/",
+   "file": "regole-medico/772025aa0a77.txt",
+   "titolo": "Servizi al cittadino – Umbria in Salute",
+   "sha": "87f4f8c034eb61153a05fb6890d069a4f6404f66db7ff302f4a9b963cc373e1c",
+   "caratteri": 3016,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-medico",
+   "url": "https://salute.regione.veneto.it/web/fser/cerca-medici-e-pediatri",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "finale": "https://salute.regione.veneto.it/fse-e-servizi-online/fascicolo-sanitario-elettronico-regionale",
+   "file": "regole-medico/4ddaae633dc5.txt",
+   "titolo": "Fascicolo Sanitario Elettronico regionale | Regione del Veneto",
+   "sha": "55b8befe8b6df489507cd7f549a3ed1fcaa008191c23458682c4e33a540c5f2d",
+   "caratteri": 11323,
+   "link_pdf": [
+    {
+     "url": "https://salute.regione.veneto.it/contents/2026-08/Il%20nuovo%20logo%20SSSR.pptx.pdf?VersionId=7kL2zjvZTHlpMZ.VP.WJPnRpp3IfTUSg",
+     "testo": "Logo SSSR"
+    },
+    {
+     "url": "https://salute.regione.veneto.it/contents/2026-03/Delega%20al%20rilascio%20del%20consenso%20FSE_v.marzo%202021.def_.pdf?VersionId=mm39XsNqqeuJAt.W2OE8B0qWuwjlszOI",
+     "testo": "Delega al rilascio del consenso FSE_v.marzo 2021.def_.pdf"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "regole-medico",
    "url": "https://www.statoregioni.it/media/lkwegvuy/p-1-csr-atto-rep-n-51-4apr2024.pdf",
    "controllata": "2026-10-27",
    "http": 200,
@@ -1582,6 +1961,14 @@
    "caratteri": 6917,
    "pdf": true,
    "cambiata": false
+  },
+  {
+   "asl": "regole-medico",
+   "url": "http://www.aspbasilicata.it/wp-content/uploads/Guida-Utente-Portale-Anagrafe-Web-in-formato-pdf.pdf",
+   "controllata": "2026-10-27",
+   "da_pagina": "https://www.aspbasilicata.it/servizi-on-line/portale-anagrafe-web/",
+   "http": 0,
+   "errore": "curl: (28) Connection timed out after 60002 milliseconds"
   },
   {
    "asl": "regole-palliative",
@@ -1641,8 +2028,8 @@
    "http": 200,
    "file": "regole-piano/0f06e59a557d.txt",
    "titolo": "Note AIFA | Agenzia Italiana del Farmaco",
-   "sha": "9b38aabf6a74935c1af83d65f8f69877242b58d58b58f615beaccd85126b92bf",
-   "caratteri": 13888,
+   "sha": "4d533109fb25d1d1add258caa0dc6dd73c380cefa689494b7f2d7b6930874c22",
+   "caratteri": 13870,
    "link_pdf": [
     {
      "url": "https://www.aifa.gov.it/documents/20142/3104101/PT_eritropoietine_ex_nota_12.pdf",
@@ -1661,7 +2048,7 @@
      "testo": "Piano terapeutico per prescrizione SSN di Lamivudina (ex Nota 32 bis) [0.04 Mb] [PDF] >"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "regole-piano",
@@ -1764,7 +2151,12 @@
    "asl": "regole-prevenzione",
    "url": "https://screening.asppalermo.org/",
    "controllata": "2026-10-27",
-   "http": 503
+   "http": 200,
+   "file": "regole-prevenzione/0cf99bf0e6d9.txt",
+   "titolo": "Screening Oncologici ASP di Palermo",
+   "sha": "d12d6541b143625d85783ff1bbd3412649e198cef60ace9f65fd9849efcd2cc7",
+   "caratteri": 9154,
+   "cambiata": true
   },
   {
    "asl": "regole-prevenzione",
@@ -1802,6 +2194,68 @@
    "titolo": "Assessorato della salute | Regione Siciliana",
    "sha": "7ff51231c8ceb34a091f08ddc44a38ffdb8f157bd5f1341a7ad2b3c03dc5d4f4",
    "caratteri": 3275,
+   "cambiata": false
+  },
+  {
+   "asl": "regole-prevenzione",
+   "url": "https://www.epicentro.iss.it/vaccini/obbligovaccinale",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-prevenzione/a91a9aba03ea.txt",
+   "titolo": "Obbligo vaccinale: cos’è e perché è importante",
+   "sha": "fa95f6500d3a44f758d8e5306a529d8820d1efc76743f53c828da37cb77e05f4",
+   "caratteri": 18847,
+   "link_pdf": [
+    {
+     "url": "https://www.epicentro.iss.it/vaccini/pdf/communications%20package%20italian.pdf",
+     "testo": "Kit di comunicazione"
+    },
+    {
+     "url": "https://www.epicentro.iss.it/vaccini/pdf/Vaccines%20Work%20poster%20italian.pdf",
+     "testo": "I vaccini? funzionano!"
+    },
+    {
+     "url": "https://www.epicentro.iss.it/vaccini/pdf/Vaccines%20Work%20white%20poster%20italian.pdf",
+     "testo": "I vaccini proteggono la salute in ogni fase della vita"
+    },
+    {
+     "url": "https://www.epicentro.iss.it/vaccini/pdf/Italian%20baby%20banner%20exact%20size.pdf",
+     "testo": "banner"
+    }
+   ],
+   "cambiata": false
+  },
+  {
+   "asl": "regole-prevenzione",
+   "url": "https://www.normattiva.it/eli/id/2017/08/05/17G00132/CONSOLIDATED/20210504",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-prevenzione/eec62c2cfaa4.txt",
+   "titolo": "LEGGE 31 luglio 2017, n. 119 - Normattiva",
+   "sha": "89662d76c6be257c9d7945bf1b380e147ddccf3e54d742c2e571e9b39f390729",
+   "caratteri": 4409,
+   "cambiata": false
+  },
+  {
+   "asl": "regole-prevenzione",
+   "url": "https://www.regione.piemonte.it/web/temi/sanita/prevenzione/obbligo-vaccinale-indicazioni-operative-per-gli-adempimenti-dellanno-scolastico-2025-2026",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-prevenzione/a8b3e7fb7065.txt",
+   "titolo": "Obbligo vaccinale, le indicazioni operative per gli adempimenti dell'anno scolastico 2025-2026 | Regione Piemonte",
+   "sha": "1f7998a92d67b8d8f730d5554bba7627c747de46e83eb24a08197ab83e1a224f",
+   "caratteri": 15496,
+   "cambiata": true
+  },
+  {
+   "asl": "regole-prevenzione",
+   "url": "https://www.regione.toscana.it/-/nuove-disposizioni-in-materia-di-vaccinazioni",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "regole-prevenzione/23285b61a63c.txt",
+   "titolo": "Nuove disposizioni in materia di vaccinazioni - Regione Toscana",
+   "sha": "f47b7e52d39b506f61cbe783d60705956b1f297bab381e14aeb6ba673f36cac7",
+   "caratteri": 13436,
    "cambiata": false
   },
   {
@@ -2096,7 +2550,7 @@
    "http": 200,
    "file": "regole-pronto-soccorso/6f2a28e1087b.txt",
    "titolo": "ASL Roma 2 - UOC Medicina d'Urgenza e Pronto Soccorso",
-   "sha": "9514c1aec8b56ffeb37d5e7f3f5fa026a35956d8c77f0b60073305684f269002",
+   "sha": "18a5a98a2f2b17ff1f001da51a626d8071daac62c088c500ddecef915f6f4559",
    "caratteri": 14507,
    "email_nascoste": 4,
    "cambiata": true
@@ -2129,7 +2583,7 @@
    "http": 200,
    "file": "regole-pronto-soccorso/3db9dee43359.txt",
    "titolo": "PRONTO SOCCORSO Teramo – Azienda Sanitaria Locale di Teramo",
-   "sha": "2034e21911744a125dd97d130923fa868099703bca75b30ecba8620e52e1202d",
+   "sha": "3cd078f685ae855b28cc6bb2d299a45e50323b87e0b70fb5f22bfd5a26f1397a",
    "caratteri": 6338,
    "link_pdf": [
     {
@@ -3094,7 +3548,7 @@
    "http": 200,
    "file": "tema-vaccini-bambini/a8b3e7fb7065.txt",
    "titolo": "Obbligo vaccinale, le indicazioni operative per gli adempimenti dell'anno scolastico 2025-2026 | Regione Piemonte",
-   "sha": "136194c284dc7ca5cbe08398ff03497505654eebb1683291f26fe3fb4fbc9537",
+   "sha": "1f7998a92d67b8d8f730d5554bba7627c747de46e83eb24a08197ab83e1a224f",
    "caratteri": 15496,
    "cambiata": true
   },
@@ -3152,7 +3606,7 @@
    "titolo": "404 - Regione Lombardia",
    "sha": "222cf4c068d9a30f35a6f9783f25d632febf65ea6f98774a4c8d53e14d3c5836",
    "caratteri": 3724,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "tema-esenzione-patologia",
@@ -3164,7 +3618,7 @@
    "sha": "3d87d7202c2a6c4345e6f3d3b40d68515d71c334af7c3f479142458d53471a57",
    "caratteri": 117629,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "tema-esenzione-patologia",
@@ -3176,7 +3630,7 @@
    "sha": "af6f2ec2b8a76e791568f8b7dddd054804294ee9fd2d3c3cea1e27c315edf9d3",
    "caratteri": 2656,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "tema-gravidanza",
@@ -3185,7 +3639,7 @@
    "http": 200,
    "file": "tema-gravidanza/ee32fdd65028.txt",
    "titolo": "Esenzione dal ticket per visite ed esami in gravidanza | Regione Piemonte",
-   "sha": "f581ec6b5a16a0d9d291bba07767d6bbebe0aa002fe81f22e7338d71a6b5e8e7",
+   "sha": "1690ad03358dfa7a86ac8bb3418670a268e8f11fe41ae327f0de926818544465",
    "caratteri": 14558,
    "cambiata": true
   },
@@ -3196,7 +3650,7 @@
    "http": 200,
    "file": "tema-gravidanza/75d7c08318ea.txt",
    "titolo": "Agenda di gravidanza | Regione Piemonte",
-   "sha": "6c4ee0df6aae89e306776821990089b87555c8cb595713e56de31bc788abd786",
+   "sha": "089d730303a4a516d2c38f95b228f114c0b0bc20a3d1832cc499de9b96859247",
    "caratteri": 15012,
    "cambiata": true
   },
@@ -3209,7 +3663,7 @@
    "titolo": "Nascere in Toscana - Regione Toscana",
    "sha": "cd590e989a8b2241a96574ca7ce5f1651e9f55952ebeeea510a000eee6300e04",
    "caratteri": 12129,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "tema-gravidanza",
@@ -3230,7 +3684,7 @@
      "testo": "Linee guida sulle condizioni di esenzione dalla compartecipazione alla spesa sanitaria (ticket) per le prestazioni di sp"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "tema-gravidanza",
@@ -3267,7 +3721,7 @@
      "testo": "Modulo anamnestico per il professionista privato ( 68.78 KB)"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "tema-gravidanza",
@@ -3280,7 +3734,7 @@
    "sha": "703576d8117ef68f9c02afc44aeb57e798f95dc74f16bb2b7743baadab343866",
    "caratteri": 948,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "tema-gravidanza",
@@ -3293,7 +3747,7 @@
    "sha": "3d87d7202c2a6c4345e6f3d3b40d68515d71c334af7c3f479142458d53471a57",
    "caratteri": 117629,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "tema-gravidanza",
@@ -3306,7 +3760,7 @@
    "sha": "f0760f08e2c04aacc37e9ec00329dec33bc1cd6fd2b17a1400cc77855fc760d4",
    "caratteri": 11400,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "tema-gravidanza",
@@ -3319,7 +3773,7 @@
    "sha": "3f87d06f6f661a3e73718ce158adf48af46da1f87d5bb67db8621d405392bd8d",
    "caratteri": 884,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "tema-trasporto-sanitario",
@@ -3330,7 +3784,7 @@
    "titolo": "Trasporto sanitario - Regione Toscana",
    "sha": "1d160d4ebf3d1a26bfb264884e02173cf9035292d46b83660f0b0199bb3a6454",
    "caratteri": 7483,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "tema-trasporto-sanitario",
@@ -3341,6 +3795,159 @@
    "titolo": "Trasporto per persone con fragilità socio-economica - Regione Toscana",
    "sha": "d6714ec84cccd2eaee3a434b9016859c109999f0e7d1b92a130910a943488e8e",
    "caratteri": 5838,
+   "cambiata": false
+  },
+  {
+   "asl": "tema-dat",
+   "url": "https://www.gazzettaufficiale.it/eli/gu/2017/12/21/297/sg/pdf",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "tema-dat/b4148fb359a9.txt",
+   "titolo": "SERIE GENERALE",
+   "sha": "460b1cb3d3949bb8ed62037f1b696baae3cc2e5d8ab1fd83b78b5222f5a90891",
+   "caratteri": 406527,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-dat",
+   "url": "https://www.regione.toscana.it/-/biotestamento",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "tema-dat/18d0a81987d4.txt",
+   "titolo": "Disposizioni anticipate di trattamento - Testamento biologico - Regione Toscana",
+   "sha": "97140ca468d055a8669e7e6132759ccf40a9a8a722bfe12d5521b41b9eff72d3",
+   "caratteri": 8270,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-dat",
+   "url": "https://www.regione.toscana.it/documents/10180/15539781/Allegato+A+-+Decisione+_N.6-20-07-18.pdf/bf5e9c79-b0f6-4325-9357-df7994bf853d",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "tema-dat/d18c538f3864.txt",
+   "titolo": "\"INDIRIZZI ATTUATIVI DELLA LEGGE 22 DICEMBRE 2017 N. 219:",
+   "sha": "7b8048b8708935a48b913a212b04ef977fbdd098abdcd8746b5e94c4ba0c4fb9",
+   "caratteri": 202950,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-stranieri",
+   "url": "https://www.regione.piemonte.it/web/temi/sanita/accesso-ai-servizi-sanitari/assistenza-sanitaria-agli-stranieri",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "tema-stranieri/e766a7604ca0.txt",
+   "titolo": "Assistenza sanitaria agli stranieri | Regione Piemonte",
+   "sha": "e3998882d5fb19c297bd81a445fbd16eff7209f27b1ed4286028ad87f904980d",
+   "caratteri": 19271,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-stranieri",
+   "url": "https://salute.regione.veneto.it/contents/2024-12/Normativaassistenzasanitariastranieri.pdf?VersionId=TawG656zX.y56HzjNFpvCfHFOVp6W73h",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "tema-stranieri/60335a8a5deb.txt",
+   "titolo": "Indicazioni",
+   "sha": "30435f2aad9297247274780a34619d66c8251bc1de280df4000e20868d9f4f5c",
+   "caratteri": 150191,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-stranieri",
+   "url": "https://salute.regione.emilia-romagna.it/stranieri",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "tema-stranieri/1b7d2e166576.txt",
+   "titolo": "Cittadini stranieri — Salute",
+   "sha": "9681c8507ac02fc46b4aaa8232f6dc00714dc41364c37354fab2e103567a1229",
+   "caratteri": 10987,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-stranieri",
+   "url": "https://www2.immigrazione.regione.toscana.it/?q=node/2266",
+   "controllata": "2026-10-27",
+   "http": 403,
+   "nota": "controllo anti-robot (CAPTCHA): non copiata"
+  },
+  {
+   "asl": "tema-consultorio",
+   "url": "https://www.regione.lombardia.it/sanita/strutture-sanitarie-e-sociosanitarie/consultori/la-rete-dei-consultori-familiari",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "tema-consultorio/d8bf8834a6e8.txt",
+   "titolo": "La rete dei consultori familiari - Regione Lombardia",
+   "sha": "69bc33389674d75c86d447158c111d852c71019ffcf1d7d20da458a8b822d29a",
+   "caratteri": 10429,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-consultorio",
+   "url": "https://www.regione.toscana.it/-/i-consultori",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "tema-consultorio/0419e41d1dbe.txt",
+   "titolo": "I consultori - Regione Toscana",
+   "sha": "4f4e0b9eb0275e2355a692b0b8e5510d21f79d32ebdcfe3e743239bfcc8381df",
+   "caratteri": 6762,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-consultorio",
+   "url": "https://www.regione.piemonte.it/web/temi/sanita/salute-materno-infantile/consultori",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "tema-consultorio/5129f546f754.txt",
+   "titolo": "Consultori | Regione Piemonte",
+   "sha": "d17561205897c7248a0d6554ddfa922da217600b606b7ab13ab8cdfe03d8290b",
+   "caratteri": 18217,
+   "link_pdf": [
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2021-11/documento_di_indirizzo_consultori_giovani_definitivo_aprile_2018_0.pdf",
+     "testo": "Documento di indirizzo - Spazio Giovani"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2021-11/documento_edusex_online_rev1_del_9-12-2020.pdf",
+     "testo": "L&rsquo;educazione affettiva e sessuale on line. Documento di indirizzo"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2020-11/richiesta_ivg_minori.pdf",
+     "testo": "Scheda richiesta per l'interruzione volontaria di gravidanza per minori"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2020-11/scheda_anamnesi_ivg.pdf",
+     "testo": "Scheda anamnesi per l'interruzione volontaria di gravidanza per minori"
+    },
+    {
+     "url": "https://www.regione.piemonte.it/web/sites/default/files/media/documenti/2020-11/scheda_accoglienza_ivg.pdf",
+     "testo": "Scheda accoglienza per l'interruzione gravidanza volontaria per minori"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "tema-consultorio",
+   "url": "https://salute.regione.emilia-romagna.it/cure-primarie/consultori/consultori-familiari",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "tema-consultorio/7e730fde5f19.txt",
+   "titolo": "La rete dei Consultori — Salute",
+   "sha": "8ba0b0b2bbc976dbac9acb36da481e8284e031f61f3094bcab4f084b0d404ace",
+   "caratteri": 3130,
+   "cambiata": true
+  },
+  {
+   "asl": "tema-consultorio",
+   "url": "https://salute.regione.emilia-romagna.it/cure-primarie/consultori/spazio-giovani",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "file": "tema-consultorio/37f81c8968b8.txt",
+   "titolo": "Spazio Giovani — Salute",
+   "sha": "07ecfb9890d13711e8b3d08b8d9b807fe07780eefc4895ff0c2b9665c87405b2",
+   "caratteri": 3726,
    "cambiata": true
   }
  ]

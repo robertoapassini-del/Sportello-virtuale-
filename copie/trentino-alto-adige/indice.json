@@ -1,6 +1,6 @@
 {
  "regione": "trentino-alto-adige",
- "aggiornato": "2026-10-27T16:27:38.134Z",
+ "aggiornato": "2026-10-27T18:57:50.431Z",
  "pagine": [
   {
    "asl": "bolzano",
@@ -13,18 +13,14 @@
    "titolo": "Azienda Sanitaria dell'Alto Adige",
    "sha": "2491479f4eff238b91a29afd2115a51e4b73c35e69964fe47e27767a8d4dd76f",
    "caratteri": 22863,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
    "url": "https://home.sabes.it/it/comprensori-sanitari/merano/3026.asp",
    "controllata": "2026-10-27",
-   "http": 200,
-   "file": "bolzano/5cedc1cec8ce.txt",
-   "titolo": "Servizio di Medicina di base | Azienda Sanitaria dell'Alto Adige",
-   "sha": "4aa21f2cac727e1a1c548a8bc863b49426f8ef9e974baf1b9d82548280179e2b",
-   "caratteri": 15699,
-   "cambiata": false
+   "http": 0,
+   "errore": "curl: (56) Recv failure: Connection reset by peer"
   },
   {
    "asl": "bolzano",
@@ -54,31 +50,23 @@
    "asl": "bolzano",
    "url": "https://home.sabes.it/it/prenotazione-me.asp",
    "controllata": "2026-10-27",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 503
   },
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/servizi.asp",
    "controllata": "2026-10-27",
-   "http": 200,
-   "file": "bolzano/436fa81472bf.txt",
-   "titolo": "Servizi | Azienda Sanitaria dell'Alto Adige",
-   "sha": "147a3571b0c2654cc729240c2aaa603bdb60119dceb22299b6f7a867e1685474",
-   "caratteri": 6980,
-   "cambiata": true
+   "http": 503
   },
   {
    "asl": "bolzano",
    "url": "https://www.asdaa.it/it/default.asp",
    "controllata": "2026-10-27",
-   "browser": true,
    "http": 200,
-   "finale": "https://www.asdaa.it/it/home",
    "file": "bolzano/9e045b839f76.txt",
-   "titolo": "Azienda Sanitaria dell'Alto Adige",
-   "sha": "2491479f4eff238b91a29afd2115a51e4b73c35e69964fe47e27767a8d4dd76f",
-   "caratteri": 22863,
+   "titolo": "Südtiroler Sanitätsbetrieb",
+   "sha": "392d4be341b5601bf3ac0de4fb35ecc68611c7c9a2e451ea79d9bec90721e5ed",
+   "caratteri": 38,
    "cambiata": true
   },
   {
@@ -127,18 +115,19 @@
    "titolo": "Cerca | Azienda Sanitaria dell'Alto Adige",
    "sha": "29f6e726c6a96a355d66b1de50e9c9134becbb28db6fbe72d4919d89929834d0",
    "caratteri": 6973,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
    "url": "https://www.sabes.it/it/contatti-sabes.asp?addt_apid=53001",
    "controllata": "2026-10-27",
+   "browser": true,
    "http": 200,
-   "finale": "https://www.asdaa.it/it/contatti-sabes.asp?addt_apid=53001",
+   "finale": "https://www.asdaa.it/it/contatti",
    "file": "bolzano/d9a4378728a4.txt",
-   "titolo": "Südtiroler Sanitätsbetrieb",
-   "sha": "392d4be341b5601bf3ac0de4fb35ecc68611c7c9a2e451ea79d9bec90721e5ed",
-   "caratteri": 38,
+   "titolo": "Contatti | Azienda Sanitaria dell’Alto Adige",
+   "sha": "bda5400de8e6a2c03f6e372ceeee71a3935a38f421c0d49a7003f471b1d17963",
+   "caratteri": 19469,
    "cambiata": true
   },
   {
@@ -182,12 +171,13 @@
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/medicina-di-base.asp",
    "controllata": "2026-10-27",
+   "browser": true,
    "http": 200,
    "finale": "https://www.asdaa.it/it/servizio-di-medicina-di-base-territorio-bz",
    "file": "bolzano/aa3b128c6f97.txt",
-   "titolo": "Südtiroler Sanitätsbetrieb",
-   "sha": "392d4be341b5601bf3ac0de4fb35ecc68611c7c9a2e451ea79d9bec90721e5ed",
-   "caratteri": 38,
+   "titolo": "Servizio di Medicina di base | Comprensorio Bolzano",
+   "sha": "e8836091903d28884335bc7cb510f6e122ba99abf14c44abf959feb22a8d820c",
+   "caratteri": 31049,
    "cambiata": true
   },
   {
@@ -223,7 +213,7 @@
    "titolo": "Südtiroler Sanitätsbetrieb",
    "sha": "392d4be341b5601bf3ac0de4fb35ecc68611c7c9a2e451ea79d9bec90721e5ed",
    "caratteri": 38,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -310,8 +300,8 @@
    "finale": "https://www.asdaa.it/it/servizi",
    "file": "bolzano/bbc0f1d38083.txt",
    "titolo": "I servizi in myCIVIS - Azienda Sanitaria dell'Alto Adige",
-   "sha": "6f1803907f93a83ba26fa6daa29d344df616b4b5f8e1c6c3851d4e133b657283",
-   "caratteri": 22376,
+   "sha": "1bff268d35d3ae1076ef60b27eee23f637526f0adb5de2712513bf2005f16b83",
+   "caratteri": 22350,
    "cambiata": true
   },
   {
@@ -383,7 +373,7 @@
    "titolo": "Ospedale di Bolzano",
    "sha": "56e7a5108830eab97f967dc0d8940e345591485761277fef44bd5bb9a27e7ea2",
    "caratteri": 22293,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -487,7 +477,7 @@
    "titolo": "Homepage | ASUIT Trento",
    "sha": "d876565621f7f04dbce97e90a1fb799073f1bd4fc6e19a8e225f78d3dc7cc3a1",
    "caratteri": 9599,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -721,7 +711,7 @@
    "titolo": "Homepage | ASUIT Trento",
    "sha": "d876565621f7f04dbce97e90a1fb799073f1bd4fc6e19a8e225f78d3dc7cc3a1",
    "caratteri": 9599,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -734,7 +724,7 @@
    "titolo": "Homepage | ASUIT Trento",
    "sha": "d876565621f7f04dbce97e90a1fb799073f1bd4fc6e19a8e225f78d3dc7cc3a1",
    "caratteri": 9599,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -995,7 +985,7 @@
    "titolo": "Homepage | ASUIT Trento",
    "sha": "d876565621f7f04dbce97e90a1fb799073f1bd4fc6e19a8e225f78d3dc7cc3a1",
    "caratteri": 9599,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ticket-pronto-soccorso",
@@ -1027,7 +1017,7 @@
    "titolo": "Homepage | ASUIT Trento",
    "sha": "d876565621f7f04dbce97e90a1fb799073f1bd4fc6e19a8e225f78d3dc7cc3a1",
    "caratteri": 9599,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ticket-farmaci",
@@ -1040,7 +1030,7 @@
    "titolo": "Homepage | ASUIT Trento",
    "sha": "d876565621f7f04dbce97e90a1fb799073f1bd4fc6e19a8e225f78d3dc7cc3a1",
    "caratteri": 9599,
-   "cambiata": true
+   "cambiata": false
   }
  ]
 }

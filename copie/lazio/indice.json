@@ -1,6 +1,6 @@
 {
  "regione": "lazio",
- "aggiornato": "2026-10-27T15:05:44.683Z",
+ "aggiornato": "2026-10-27T17:38:02.885Z",
  "pagine": [
   {
    "asl": "frosinone",
@@ -1518,25 +1518,9 @@
    "http": 200,
    "file": "roma/e0d930024e6e.txt",
    "titolo": "Punto Unico di Accesso (PUA)",
-   "sha": "2601a0764789dd78e17b8f5404008da5b7fa345a939d74a99c445e57d69792d3",
+   "sha": "db256e48a8a29bd66676b02ec6d271b6ea6338cf353a11d14c737b2fbeffa12e",
    "caratteri": 22475,
    "link_pdf": [
-    {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_italiano.pdf",
-     "testo": "SUBSIDIO MENSUAL DE FRECUENCIA"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_-Spagnolo_CORRETTO.pdf",
-     "testo": "قانون 104 / 92"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_arabo.pdf",
-     "testo": "BUWANANG BENEPISYO PARA SA MAY KAPANSANAN"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_Legge_104_Ucraino.pdf",
-     "testo": "LEY 104/92"
-    },
     {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_arabo.pdf",
      "testo": "ЗАКОН 104/92"
@@ -1572,6 +1556,22 @@
     {
      "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_italiano_1_.pdf",
      "testo": "মাসিক ভাতা"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_italiano.pdf",
+     "testo": "SUBSIDIO MENSUAL DE FRECUENCIA"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_-Spagnolo_CORRETTO.pdf",
+     "testo": "قانون 104 / 92"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_arabo.pdf",
+     "testo": "BUWANANG BENEPISYO PARA SA MAY KAPANSANAN"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/47_24_Legge_104_Ucraino.pdf",
+     "testo": "LEY 104/92"
     }
    ],
    "cambiata": true
@@ -1877,7 +1877,7 @@
    "http": 200,
    "file": "roma/2b46e5d8fe38.txt",
    "titolo": "ASL Roma 2 - Punto Unico di Accesso - PUA",
-   "sha": "fca6b43af689ade264d767e898bdabb23c66f6062c2561568a888bfe5a3932b2",
+   "sha": "c756c89e86ff4952acc178f02f9cfaf01bfae39a94b4b77fe1fbcd0c90be5eee",
    "caratteri": 11883,
    "email_nascoste": 11,
    "cambiata": true
@@ -1948,7 +1948,7 @@
    "http": 200,
    "file": "roma/3feb23bab29f.txt",
    "titolo": "ASL Roma 2 - UOSD Coordinamento Screening",
-   "sha": "fcb485cc209e412ef5e70026cc205e7a7ff120ed5039fbed1b63f39c2f9f695b",
+   "sha": "9facff4af8f2f7aa75bcfd3ab8e8e14c7169b9e93fb07b8a24739ac0a132f5df",
    "caratteri": 8743,
    "email_nascoste": 3,
    "cambiata": true
@@ -2040,7 +2040,7 @@
    "http": 200,
    "file": "roma/7e7cbafb32a1.txt",
    "titolo": "15.04.05 Liste di attesa",
-   "sha": "64f61f167b61612abb96a26ff8c0df79ce112ec6845f5f0ae2d05caca582d464",
+   "sha": "b758c1150208ed65e119c92c37fba97d0e32eedcd2a4b56fe7b340dda9b400ff",
    "caratteri": 8673,
    "link_pdf": [
     {
@@ -2722,7 +2722,7 @@
      "testo": "Cookie Policy"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "viterbo",
@@ -3403,7 +3403,7 @@
    "http": 200,
    "file": "asl-roma2/2e0f163ef6a3.txt",
    "titolo": "ASL Roma 2 - Guardia Medica",
-   "sha": "d87e10e410e3bb4b670d1d4e79323f714befecc859ac15257eb2ee30fbe44d98",
+   "sha": "29b015a1f17bea59bbdcc5c5fa2d8be0f8b1e72ce016e34ee9ef292e28ed0118",
    "caratteri": 8091,
    "cambiata": true
   },
@@ -3596,7 +3596,7 @@
      "testo": "PARS 2026"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma5",
@@ -4042,7 +4042,7 @@
      "testo": "Cookie Policy"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-viterbo",
@@ -4085,7 +4085,7 @@
    "http": 200,
    "file": "ticket-pronto-soccorso/6f2a28e1087b.txt",
    "titolo": "ASL Roma 2 - UOC Medicina d'Urgenza e Pronto Soccorso",
-   "sha": "0f8837bf40aebc48c82cd03023b7d823eb8cd9205d1a013ffc707efcc9077775",
+   "sha": "b1e53a46e7a13bc47289b69dd6b7de0993ca3e31140239118938c8830f94bd45",
    "caratteri": 14507,
    "email_nascoste": 4,
    "cambiata": true
@@ -4134,6 +4134,18 @@
    "sha": "40a621ad336efc59b782b604557ac0bcbb7fd33db5fef840c8def4007ae20ec0",
    "caratteri": 10818,
    "cambiata": false
+  },
+  {
+   "asl": "consultorio",
+   "url": "https://www.salutelazio.it/consultori-familiari",
+   "controllata": "2026-10-27",
+   "http": 200,
+   "finale": "https://salutelazio.it/it/servizi/consultori-familiari",
+   "file": "consultorio/8bee6b344496.txt",
+   "titolo": "Fascicolo Sanitario",
+   "sha": "b7123a008640ee64afb24bb321272e89307ae101b781a99efb3cf542567af088",
+   "caratteri": 3368,
+   "cambiata": true
   }
  ]
 }
