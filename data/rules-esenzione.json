@@ -108,6 +108,27 @@
       "proof": "estratto",
       "review_by": "2027-01-31",
       "nota": "E01 sotto i 6 anni e dai 65; E04 oltre i 60. DA VERIFICARE: la legge dice «superiore a 65 anni», il sito conta dal compleanno."
+    },
+    "gravidanza_nipt_emilia_romagna.dal_anno": {
+      "url": "https://salute.regione.emilia-romagna.it/cure-primarie/consultori/percorso-nascita/nipt",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-10-27",
+      "nota": "Regione Emilia-Romagna, pagina «NIPT», copia del server del 27/10/2026: «ha deciso di renderlo gratuito dall'1 luglio 2024 su tutto il territorio regionale per le donne in gravidanza, indipendentemente dall'età e dalla presenza di fattori di rischio»; offerto alle residenti e alle assistite, «incluse donne iscritte come Straniere Temporaneamente Presenti - STP»."
+    },
+    "gravidanza_nipt_emilia_romagna.settimana_da": {
+      "url": "https://salute.regione.emilia-romagna.it/cure-primarie/consultori/percorso-nascita/nipt",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-10-27",
+      "nota": "Regione Emilia-Romagna, pagina «NIPT», copia del server del 27/10/2026: «la possibilità di effettuare gratuitamente il Nipt fra la 10 a e la 13 a settimana di gestazione»."
+    },
+    "gravidanza_nipt_emilia_romagna.settimana_a": {
+      "url": "https://salute.regione.emilia-romagna.it/cure-primarie/consultori/percorso-nascita/nipt",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-10-27",
+      "nota": "Regione Emilia-Romagna, pagina «NIPT», copia del server del 27/10/2026: «fra la 10 a e la 13 a settimana di gestazione»."
     }
   },
   "sources": [
@@ -158,6 +179,27 @@
     {
       "label": "Regione Umbria – Esenzioni ticket: malattie rare",
       "url": "https://insalute.regione.umbria.it/wp-content/uploads/2026/02/Esenzioni-ticket.pdf"
+    },
+    {
+      "label": "Regione Emilia-Romagna – NIPT, test prenatale gratuito",
+      "url": "https://salute.regione.emilia-romagna.it/cure-primarie/consultori/percorso-nascita/nipt"
+    },
+    {
+      "label": "Regione Piemonte – Esenzione dal ticket per visite ed esami in gravidanza",
+      "url": "https://www.regione.piemonte.it/web/temi/sanita/sostegno-alle-cure/esenzione-dal-ticket-per-visite-esami-gravidanza"
+    },
+    {
+      "label": "Regione Piemonte – Agenda di gravidanza",
+      "url": "https://www.regione.piemonte.it/web/temi/sanita/salute-materno-infantile/agenda-gravidanza"
+    },
+    {
+      "label": "Regione Toscana – Nascere in Toscana",
+      "url": "https://www.regione.toscana.it/nascere-in-toscana"
     }
-  ]
+  ],
+  "gravidanza_nipt_emilia_romagna": {
+    "dal_anno": 2024,
+    "settimana_da": 10,
+    "settimana_a": 13
+  }
 }
