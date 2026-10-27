@@ -213,6 +213,13 @@
      "url": "https://www.uslumbria1.it/servizio/pronto-soccorso-118/"
     }
    ]
-  }
+  },
+  {"id": "medico-online", "name": "Cambio del medico online", "tipo": "regione", "_nota": "Indirizzi trovati con la ricerca il 27/10/2026 (docs/piano-contenuti.md, link della Regione per il cambio del medico online). Da leggere nella copia prima di scriverlo.", "pagine": [
+   {"tipo": "medico", "url": "https://www.regione.umbria.it/scelta-e-revoca-online-del-medico-di-famiglia"},
+   {"tipo": "medico", "url": "https://salute.regione.umbria.it/cms/en/scelta-revoca-medico-informazioni"}
+  ]},
+  {"id": "ticket-farmaci", "name": "Ticket dei farmaci", "tipo": "regione", "_nota": "Indirizzi trovati con la ricerca il 27/10/2026 (docs/piano-contenuti.md, secondo giro: il ticket dei farmaci). Da leggere nella copia prima di scriverlo.", "pagine": [
+   {"tipo": "farmaci", "url": "https://www.regione.umbria.it/salute/ticket-pagamento-esenzione"}
+  ]}
  ]
 }

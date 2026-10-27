@@ -45,17 +45,17 @@ L'ordine viene da quanto si cercano (Google Trends, `ricerche-frequenti.md` punt
 
 | Tema | Perché | Area |
 |---|---|---|
-| Pronto soccorso: quando andare, i codici, il ticket | 1,6 volte «legge 104», solo in Numeri utili | **fatto il 24/10/2026**: `pronto-soccorso/`, area «Urgenze», con le regole di Lombardia, Friuli-Venezia Giulia e Sardegna. Tempi nazionali del triage aggiunti lo stesso giorno (dagli atti delle Regioni). Da aggiungere: il ticket delle altre regioni dalle loro pagine ufficiali. 27/10/2026: aggiunta la Calabria (ASP Catanzaro); per altre 15 regioni le pagine trovate con la ricerca sono in `data/regioni/<regione>/fonti.json` (`ticket-pronto-soccorso`) e si scrivono dopo la copia; il Molise non ha una pagina ufficiale |
+| Pronto soccorso: quando andare, i codici, il ticket | 1,6 volte «legge 104», solo in Numeri utili | **fatto il 24/10/2026**: `pronto-soccorso/`, area «Urgenze», con le regole di Lombardia, Friuli-Venezia Giulia e Sardegna. Tempi nazionali del triage aggiunti lo stesso giorno (dagli atti delle Regioni). Da aggiungere: il ticket delle altre regioni dalle loro pagine ufficiali. 27/10/2026: aggiunta la Calabria (ASP Catanzaro); per altre 15 regioni le pagine trovate con la ricerca sono in `data/regioni/<regione>/fonti.json` (`ticket-pronto-soccorso`) e si scrivono dopo la copia; il Molise non ha una pagina ufficiale 27/10/2026, secondo passo: sottopagina `pronto-soccorso/il-ticket/` con la regola nazionale e 17 regioni (letto le copie del server). Mancano Basilicata (pagina del 2013), Friuli-Venezia Giulia, Molise e provincia di Bolzano. |
 | Guardia medica e 116117: quando, come, dove | 1,4 volte «legge 104», picchi a Natale e Ferragosto | **fatto il 24/10/2026**: `guardia-medica/`, dalle pagine delle aziende sanitarie; l'elenco del 116117 si crea dai dati. Regola nazionale dall'Accordo collettivo nazionale aggiunta lo stesso giorno |
 | Certificato di malattia per il lavoro | 0,2, ma tutto l'anno | **fatto il 24/10/2026**: `certificato-malattia/`, area «Malattia e lavoro» |
 | Visita fiscale: fasce orarie, se non sei a casa | 0,2 | **fatto il 24/10/2026**: `visita-fiscale/` |
-| Link della Regione per CUP e cambio medico online | ricerche «cup + regione», «cambio medico online» | dati regionali |
+| Link della Regione per CUP e cambio medico online | ricerche «cup + regione», «cambio medico online» | dati regionali. 27/10/2026: il CUP c'è già in tutte le regioni (contatti «cup» delle aziende). Pagine del cambio medico online in 19 regioni messe in copia (voce «medico-online» di `fonti.json`); si scrivono dalla copia. Per le Marche nessuna pagina ufficiale trovata |
 
 ### Secondo giro: domande frequenti, con una pagina vicina
 
 - Esenzione per malattia cronica o rara: codici, come si chiede (oggi è una sottopagina dell'esenzione).
-- Le medicine: ticket in farmacia (cambia per regione), farmaci gratis e a pagamento, farmacia dei servizi.
-- Vaccini per i bambini: obbligatori, scuola, dove si fanno.
+- Le medicine: ticket in farmacia (cambia per regione), farmaci gratis e a pagamento, farmacia dei servizi. 27/10/2026: pagine del ticket dei farmaci di 14 regioni in copia (voce «ticket-farmaci»).
+- Vaccini per i bambini: obbligatori, scuola, dove si fanno. 27/10/2026: fonti in copia (tema «vaccini-bambini» di `data/fonti-nazionali.json`).
 - Gravidanza e parto: esami gratis, consultorio, dopo il parto.
 - Ricovero in ospedale: cosa portare, dimissioni, chi assiste.
 - Riabilitazione: fisioterapia e logopedia con il Servizio sanitario.

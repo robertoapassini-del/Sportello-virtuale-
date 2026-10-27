@@ -308,6 +308,12 @@
      "url": "https://www.uslsudest.toscana.it/come-fare-per/pagare-il-ticket"
     }
    ]
-  }
+  },
+  {"id": "medico-online", "name": "Cambio del medico online", "tipo": "regione", "_nota": "Indirizzi trovati con la ricerca il 27/10/2026 (docs/piano-contenuti.md, link della Regione per il cambio del medico online). Da leggere nella copia prima di scriverlo.", "pagine": [
+   {"tipo": "medico", "url": "https://www.regione.toscana.it/scegliere-il-medico-di-base"}
+  ]},
+  {"id": "ticket-farmaci", "name": "Ticket dei farmaci", "tipo": "regione", "_nota": "Indirizzi trovati con la ricerca il 27/10/2026 (docs/piano-contenuti.md, secondo giro: il ticket dei farmaci). Da leggere nella copia prima di scriverlo.", "pagine": [
+   {"tipo": "farmaci", "url": "https://www.regione.toscana.it/ticket-sanitari"}
+  ]}
  ]
 }

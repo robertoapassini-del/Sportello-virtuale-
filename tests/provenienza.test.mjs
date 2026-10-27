@@ -85,7 +85,9 @@ test('ogni file data/rules*.json ha almeno una fonte con url e nome', () => {
 // Per una scheda che copre un gruppo di cifre basta che una delle cifre stia nella frase.
 const comeNelTesto = (n) => {
   const [i, dec] = String(n).split('.');
-  return [String(n), `${i.replace(/\B(?=(\d{3})+(?!\d))/g, '.')}${dec ? `,${dec.padEnd(2, '0')}` : ''}`, String(n).replace('.', ',')];
+  const mig = i.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+  // Un intero si scrive anche con i centesimi: «€ 10,00» è 10.
+  return [String(n), `${mig}${dec ? `,${dec.padEnd(2, '0')}` : ''}`, String(n).replace('.', ','), ...(dec ? [] : [`${mig},00`])];
 };
 const valore = (obj, percorso) => percorso.split('.').reduce((a, k) => (a == null ? a : Array.isArray(a) ? a.find((x) => x && x.id === k) ?? a[Number(k)] : a[k]), obj);
 test('la cifra dei dati sta nella frase della fonte copiata nella nota', () => {

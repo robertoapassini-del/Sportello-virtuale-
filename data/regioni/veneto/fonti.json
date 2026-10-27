@@ -406,6 +406,12 @@
      "url": "https://salute.regione.veneto.it/assistenza-ospedaliera/pronto-soccorso/esenzioni"
     }
    ]
-  }
+  },
+  {"id": "medico-online", "name": "Cambio del medico online", "tipo": "regione", "_nota": "Indirizzi trovati con la ricerca il 27/10/2026 (docs/piano-contenuti.md, link della Regione per il cambio del medico online). Da leggere nella copia prima di scriverlo.", "pagine": [
+   {"tipo": "medico", "url": "https://salute.regione.veneto.it/web/fser/cerca-medici-e-pediatri"}
+  ]},
+  {"id": "ticket-farmaci", "name": "Ticket dei farmaci", "tipo": "regione", "_nota": "Indirizzi trovati con la ricerca il 27/10/2026 (docs/piano-contenuti.md, secondo giro: il ticket dei farmaci). Da leggere nella copia prima di scriverlo.", "pagine": [
+   {"tipo": "farmaci", "url": "https://salute.regione.veneto.it/assistenza-farmaceutica/esenzioni-dalla-compartecipazione-alla-spesa-farmaceutica"}
+  ]}
  ]
 }
