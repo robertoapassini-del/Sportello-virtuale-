@@ -1,6 +1,6 @@
 {
  "regione": "basilicata",
- "aggiornato": "2026-10-27T19:38:03.097Z",
+ "aggiornato": "2026-10-27T22:08:42.736Z",
  "pagine": [
   {
    "asl": "matera",
@@ -50,7 +50,7 @@
    "titolo": "Latronico sul Numero europeo Armonizzato - AGR Basilicata",
    "sha": "50b62fa6f4c0bf1a61df23bb7f4c2443c8bd2f2fd9d82fca29e410d51c4dfc5b",
    "caratteri": 5363,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "matera",
@@ -102,7 +102,7 @@
    "titolo": "Distretto Policoro - Azienda Sanitaria locale di Matera",
    "sha": "bf4e178a5b6556e97060f81f9ac3b6175433f4867a7132429de2c48c8c522af0",
    "caratteri": 6307,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "matera",
@@ -257,7 +257,7 @@
    "titolo": "Latronico sul Numero europeo Armonizzato - AGR Basilicata",
    "sha": "50b62fa6f4c0bf1a61df23bb7f4c2443c8bd2f2fd9d82fca29e410d51c4dfc5b",
    "caratteri": 5363,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "potenza",
@@ -615,12 +615,7 @@
    "asl": "regione-basilicata",
    "url": "https://www.salute.basilicata.it/",
    "controllata": "2026-10-27",
-   "http": 200,
-   "file": "regione-basilicata/48632ed247cd.txt",
-   "titolo": "Home - Salute Basilicata",
-   "sha": "ce1e7cfb5c6216bbf842d6ff093aada4da0127b23947ab1898d2ee28b6781cfc",
-   "caratteri": 8036,
-   "cambiata": false
+   "http": 500
   },
   {
    "asl": "regione-basilicata",
@@ -901,7 +896,7 @@
    "titolo": "Farmaci, quota di 2,50 euro: esenti le fasce fragili - AGR Basilicata",
    "sha": "69bbdd9b14f329f3b4b61d8d79ff5dda4813a43c226225c3787c73dc133fbeca",
    "caratteri": 6537,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ticket-farmaci",

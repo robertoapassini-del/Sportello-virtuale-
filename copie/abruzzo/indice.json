@@ -1,6 +1,6 @@
 {
  "regione": "abruzzo",
- "aggiornato": "2026-10-27T19:33:54.954Z",
+ "aggiornato": "2026-10-27T22:04:37.331Z",
  "pagine": [
   {
    "asl": "chieti",
@@ -874,12 +874,8 @@
    "asl": "laquila",
    "url": "https://www.asl1abruzzo.it/",
    "controllata": "2026-10-27",
-   "http": 200,
-   "file": "laquila/2a5085bbced3.txt",
-   "titolo": "ASL 1 - Avezzano Sulmona L'Aquila - Home",
-   "sha": "0beb0971cef5c728b72dcfa112506e9b7c8f7ff210f6b7c6b1b329afd3209352",
-   "caratteri": 5788,
-   "cambiata": false
+   "http": 0,
+   "errore": "curl: (28) Connection timed out after 30002 milliseconds"
   },
   {
    "asl": "laquila",
@@ -1429,7 +1425,7 @@
    "http": 200,
    "file": "teramo/05b30d65a47c.txt",
    "titolo": "ASL Teramo",
-   "sha": "90d422c293e4ec3f477524b92f806f6e455d092287e9b3676ae4ff8129511b7f",
+   "sha": "3efa4fb53cfeaac3d65d7d270b91a0b30e827253326979468eb2728f6b519c10",
    "caratteri": 4608,
    "link_pdf": [
     {
@@ -1450,7 +1446,7 @@
    "http": 200,
    "file": "teramo/1a6c122acb81.txt",
    "titolo": "ASL Teramo | Guardia medica",
-   "sha": "58e227048a00844e2272b0733b676c33146036dfaf5317c8db0db19d359600c1",
+   "sha": "18b249692025a4d42c0a79fff7e2c08689fbc0b73a4613a99535967a89456de9",
    "caratteri": 3898,
    "link_pdf": [
     {
@@ -1471,7 +1467,7 @@
    "http": 200,
    "file": "teramo/0b60fd7c1527.txt",
    "titolo": "Cure Domiciliari – ADI – Azienda Sanitaria Locale di Teramo",
-   "sha": "181d8e98391d13e5257c72b8beb07e4537144dec7b38e4c1b534d60f1ff5ed5f",
+   "sha": "bfa32871d5946cad32beee1c94108c55f1b2b5559b86a413991e5f1d710ccba8",
    "caratteri": 9214,
    "link_pdf": [
     {
@@ -1544,7 +1540,7 @@
    "http": 200,
    "file": "teramo/b5041cabb133.txt",
    "titolo": "Contatti – Azienda Sanitaria Locale di Teramo",
-   "sha": "0f80df2953ff41b87a6a0e0f5ebc2c472a25b963e224f131d2af05938cb22193",
+   "sha": "d2703b3f8b0eff5e5f18306e36e56dcb6450ffce030f3a8f2faa7684b298afcd",
    "caratteri": 4551,
    "link_pdf": [
     {
@@ -1565,7 +1561,7 @@
    "http": 200,
    "file": "teramo/f58daad63724.txt",
    "titolo": "ASL Teramo | Come fare per… Cittadini Utenti",
-   "sha": "bbcd9bbc17c1345b6be03921eadda414e6f5079882900f93bbb3e085d6976314",
+   "sha": "1c04dbdb48225b8a6d2bf3cac9d507b11edcf0fe92829795f2470ed4775820bb",
    "caratteri": 50330,
    "link_pdf": [
     {
@@ -1634,7 +1630,7 @@
    "http": 200,
    "file": "teramo/5cf8b65c79d1.txt",
    "titolo": "“Sos liste di attesa”, da oggi al via un nuovo servizio – Azienda Sanitaria Locale di Teramo",
-   "sha": "0d63a6bae5413ea3247dde382bb387f03bfa7a21e3f636c046056413151ba566",
+   "sha": "b406f3703ed4248631871d76c0b0288d1e129ee6f948c6022167f40c8845f773",
    "caratteri": 5892,
    "link_pdf": [
     {
@@ -1886,7 +1882,7 @@
      "testo": "PAA - ASL Teramo"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-abruzzo",
@@ -2012,7 +2008,7 @@
    "http": 200,
    "file": "asl-teramo/6f4b31c72c79.txt",
    "titolo": "UFFICIO RELAZIONI CON IL PUBBLICO (aggiornato 10.2026) – Azienda Sanitaria Locale di Teramo",
-   "sha": "837b16d74ec98fd406dd5b2f014eced69641cf8d8315c7f2b4a1b191826ab0a4",
+   "sha": "ad59722815adb6534f7bf2cc69aa1ac56620b1766224dc0c9e9b54062df666c1",
    "caratteri": 4976,
    "link_pdf": [
     {
@@ -2057,7 +2053,7 @@
    "http": 200,
    "file": "asl-teramo/92c5ebe913c0.txt",
    "titolo": "Prenotazioni – Azienda Sanitaria Locale di Teramo",
-   "sha": "57945a0918c9c137327503b74009cdd9307d3ef0f9f0f18cf4bafa336b79a834",
+   "sha": "d153eb4637ba58ead742af23ef79bd6bb3ed72638f0e4293b4a5de7ecaad6491",
    "caratteri": 2310,
    "link_pdf": [
     {
@@ -2078,7 +2074,7 @@
    "http": 200,
    "file": "asl-teramo/ecdeb416f17c.txt",
    "titolo": "Informazioni sui CUP – Azienda Sanitaria Locale di Teramo",
-   "sha": "9f0b5612f52f29009e69134845dcd13b175406acccd9dca51386176b7b3983e6",
+   "sha": "4b7878c8c905b848024019296f15c0d164cf3892543acd9aa890c4476e6c7f22",
    "caratteri": 3843,
    "link_pdf": [
     {
@@ -2099,7 +2095,7 @@
    "http": 200,
    "file": "asl-teramo/bf79a3a9ebb6.txt",
    "titolo": "118, Pronto Soccorso e Guardia Medica (come attivare i Servizi di Urgenza/Emergenza Sanitaria) – Azienda Sanitaria Locale di Teramo",
-   "sha": "9f5ebb00db84fbc487f407294dc753817ddff9f6281d6a8bd16457a4001c3971",
+   "sha": "25ef3570711f9ba80f248a1abf911513a6cb35d021113372382d666fa1000765",
    "caratteri": 3361,
    "link_pdf": [
     {
@@ -2120,7 +2116,7 @@
    "http": 200,
    "file": "ticket-pronto-soccorso/3db9dee43359.txt",
    "titolo": "PRONTO SOCCORSO Teramo – Azienda Sanitaria Locale di Teramo",
-   "sha": "3cd078f685ae855b28cc6bb2d299a45e50323b87e0b70fb5f22bfd5a26f1397a",
+   "sha": "58ab7e254da2aa289b4490bee26f4a89b6b520e1aa17acbfcf418cad2d75f287",
    "caratteri": 6338,
    "link_pdf": [
     {
