@@ -23,6 +23,7 @@
   ],
   "bonus_uso_mesi": 9,
   "detrazione_percent": 19,
+  "detrazione_franchigia_euro": 129.11,
   "prima_seduta_giorni": 60,
   "provenienza": {
     "bonus_max": {
@@ -60,6 +61,13 @@
       "review_by": "2027-01-31",
       "nota": "Il bonus va usato entro circa 9 mesi (270 giorni) dall'assegnazione, secondo le guide lette."
     },
+    "detrazione_franchigia_euro": {
+      "url": "https://www1.agenziaentrate.gov.it/web_app_entrate/spese_sanitarie.html",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-10-27",
+      "nota": "Agenzia delle Entrate, guida «Le spese sanitarie», copia del server del 27/10/2026: «È possibile portare in detrazione dall’Irpef il 19% delle spese sanitarie per la parte eccedente l’importo di 129,11 euro. In sostanza, la detrazione spettante è pari al 19% della differenza tra il totale della somma spesa e la franchigia di 129,11 euro». La ripartizione in quattro quote guarda all'«ammontare complessivo annuo» delle spese."
+    },
     "detrazione_percent": {
       "url": "https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/detrazioni-spese-sanitarie",
       "verified": "2026-10-20",
@@ -83,6 +91,10 @@
     {
       "label": "Ministero della Salute – Salute mentale",
       "url": "https://www.salute.gov.it/portale/saluteMentale/homeSaluteMentale.jsp"
+    },
+    {
+      "label": "Agenzia delle Entrate – Le spese sanitarie: detrazione del 19% e franchigia",
+      "url": "https://www1.agenziaentrate.gov.it/web_app_entrate/spese_sanitarie.html"
     }
   ]
 }

@@ -18,8 +18,8 @@ const whatIs = () => `
   <ol class="big-steps">
     <li><strong>Alcune medicine</strong> il medico di famiglia può prescriverle solo se c'è un <strong>piano terapeutico</strong>: un foglio scritto da uno <strong>specialista del Servizio sanitario</strong> (in ospedale o in un centro autorizzato), non da un medico privato.</li>
     <li><strong>Il piano ha una scadenza</strong>, scritta sul foglio: di solito ${rules.typical_duration_months.join(' o ')} mesi.</li>
-    <li><strong>Con il piano valido</strong>, il medico di famiglia ti fa la ricetta ogni mese. Tieni una copia del piano: a volte la farmacia la chiede.</li>
-    <li><strong>Dove prendi la medicina:</strong> molte medicine con il piano non si prendono come le altre. A volte si ritirano alla <strong>farmacia dell'${aslLabel()}</strong> («distribuzione diretta»). Altre volte le dà la tua farmacia <strong>per conto dell'${aslLabel()}</strong> («DPC»): la farmacia la ordina e di solito arriva in un giorno o due. Chiedi al medico o al farmacista quale vale per la tua medicina.</li>
+    <li><strong>Con il piano valido</strong>, il medico di famiglia ti fa le ricette. Tieni una copia del piano: a volte la farmacia la chiede.</li>
+    <li><strong>Dove prendi la medicina:</strong> molte medicine con il piano non si prendono come le altre. A volte si ritirano alla <strong>farmacia dell'${aslLabel()}</strong> («distribuzione diretta»). Altre volte le dà la tua farmacia <strong>per conto dell'${aslLabel()}</strong> («DPC»): la farmacia la ordina e te la dà quando arriva (chiedi quando). Chiedi al medico o al farmacista quale vale per la tua medicina.</li>
     <li><strong>Prima che scada</strong> serve una nuova visita dallo specialista per rinnovarlo. Se scade, il medico non può più fare la ricetta con il Servizio sanitario.</li>
   </ol>
   <div class="notice warn"><p>⚠️ La visita per il rinnovo è una <strong>visita di controllo</strong>: può avere tempi lunghi e non c'è la garanzia dei tempi massimi. Per questo prenotala con largo anticipo, almeno ${rules.book_before_days} giorni prima.</p></div>
@@ -76,7 +76,7 @@ const screens = {
     const r = pianoStatus(rules, { expiryDate: state.expiryDate, today: todayISO() });
     const box = {
       ok: ['🗓️', 'Hai tempo: segnati la data', 'ok',
-        `Il piano scade ${art('il', state.expiryDate)}<strong>${esc(formatIt(state.expiryDate))}</strong>. Prenota la visita per il rinnovo <strong>entro ${art('il', r.bookBy)}${esc(formatIt(r.bookBy))}</strong>, così la fai prima della scadenza.`],
+        `Il piano scade ${art('il', state.expiryDate)}<strong>${esc(formatIt(state.expiryDate))}</strong>. Prenota la visita per il rinnovo <strong>entro ${art('il', r.bookBy)}${esc(formatIt(r.bookBy))}</strong>, così hai più tempo per farla prima della scadenza.`],
       soon: ['⏰', 'Prenota adesso il rinnovo', 'warn',
         `Il piano scade ${art('il', state.expiryDate)}<strong>${esc(formatIt(state.expiryDate))}</strong>, ${r.toExpiry === 0 ? '<strong>oggi</strong>' : `tra ${days(r.toExpiry)}`}. Chiama subito per la visita dallo specialista: le liste possono essere lunghe.`],
       expired: ['⚠️', 'Il piano è scaduto', 'bad',

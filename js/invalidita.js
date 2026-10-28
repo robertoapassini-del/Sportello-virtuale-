@@ -99,7 +99,7 @@ function regimeSteps(r) {
   return `<ol class="big-steps">
       <li>Il medico manda il certificato all'INPS.</li>
       <li>Poi bisogna fare la <strong>domanda all'INPS entro ${rules.old_regime.domanda_window_days} giorni</strong>. Un patronato la fa gratis per te.</li>
-      <li>Ti chiamano per la visita: secondo la provincia, la fa la commissione dell'${aslLabel()} o quella dell'INPS.</li>
+      <li>Ti chiamano per la visita: la fa la commissione dell'azienda sanitaria o, dove la Regione ha affidato le visite all'INPS, quella dell'INPS. Il patronato ti dice quale.</li>
       <li>Ricevi un foglio con il risultato.</li>
     </ol>`;
 }
@@ -250,7 +250,7 @@ const screens = {
         html: `<div class="hero" aria-hidden="true">✅</div>
           <h1>Non è ancora tardi</h1>
           <div class="notice ok"><p>${whatFuture} entro ${art('il', d.deadline)}<strong>${esc(formatIt(d.deadline))}</strong>.</p>
-          <p>Se non arriva niente, torna qui quel giorno.</p></div>
+          <p>${d.deadline === todayISO() ? 'Oggi è l\'ultimo giorno. ' : ''}Se non arriva niente, torna qui il giorno dopo.</p></div>
           ${avvisiNuovo}${note}${legal}${patronato}${afterVerbale}${disclaimer(rules.last_verified)}${restartBtn()}`,
       };
     }

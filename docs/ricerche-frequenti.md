@@ -3,7 +3,8 @@
 Questo documento serve a decidere quali pagine aggiungere o migliorare. Dal 22/10/2026 il sito copre tutte le 20
 regioni: la prima ricerca (19/10/2026) era fatta solo sulla Sicilia ed è riassunta in fondo.
 
-Ultimo aggiornamento: 23/10/2026. Da rifare ogni 3 mesi, o quando cambia molto il numero di visite.
+Ultimo aggiornamento: 27/10/2026 (primi dati di Search Console, punto 1b). Da rifare ogni 3 mesi, o quando cambia molto
+il numero di visite.
 
 ## 1. Le fonti, in ordine di valore
 
@@ -15,6 +16,54 @@ Ultimo aggiornamento: 23/10/2026. Da rifare ogni 3 mesi, o quando cambia molto i
    sono relativi: 100 è il termine più cercato nel confronto, non un numero di ricerche.
 4. **Email** a info@guidasanita.it dal link «Scrivici cosa cercavi» (ricerca senza risultati) e dal «No» a
    «Ti è stata utile?».
+
+## 1b. Search Console: i primi dati (export del 26/10/2026)
+
+Ricerca web, «ultimi 3 mesi»: in pratica dal 19 al 24/10/2026, perché il sito è su Google dal 19/10. **2 clic,
+119 impressioni.** Sono troppo pochi per decidere: servono a confrontare i prossimi export, dopo i titoli
+riscritti il 24-26/10/2026.
+
+| Pagina | Clic | Impressioni | Posizione media |
+|---|---|---|---|
+| cartella-clinica/ | 0 | 61 | 15,0 |
+| liste-attesa/ | 0 | 50 | 6,9 |
+| ricorso-invalidita/ | 0 | 21 | 6,2 |
+| cure-palliative/ | 0 | 18 | 4,6 |
+| legge-104/permessi/ | 0 | 17 | 25,5 |
+| aiuto-a-casa/ | 0 | 16 | 14,9 |
+| prevenzione-medico/ | 0 | 14 | 6,0 |
+| note-legali.html | 1 | 14 | 7,0 |
+| home (https) | 0 | 13 | 1,1 |
+| home (http) | 1 | 5 | 1,2 |
+
+- **Paesi**: Italia 98 impressioni (posizione 15,9), Svizzera 17 (i 2 clic). Dispositivi: telefono 68, computer 51.
+- **Query**: «documentazione clinica» (4, posizione 57), «cartella ambulatoriale», «cartella clinica digitale» (2
+  ciascuna), poi una alla volta: «prenotazione cup sicilia» (38), «legge 104 3 giorni al mese» (42), «legge 104 e
+  permessi» (45), «legge 104 a ore per familiari» (73), «cartelle cliniche online» (80), «legge 104 permessi lavoro»
+  (82), «aiuto sanitario» (84), «legge 104 comma 1 art 3 permessi lavorativi» (95).
+
+Cosa ci dice:
+- **Cartella clinica**: le query sono di chi lavora in sanità (documentazione, cartella digitale o ambulatoriale), non
+  di chi chiede la copia. Non è il nostro pubblico: niente da cambiare.
+- **Legge 104**: le query sono proprio le nostre («3 giorni al mese», «permessi lavoro», «a ore per familiari»), ma
+  siamo lontani (posizione 42-95). Il titolo dice già «3 giorni al mese»: è questione di tempo.
+- **Liste d'attesa, ricorso, cure palliative**: già in prima pagina (posizione 5-7) ma senza clic. I titoli e le
+  descrizioni sono cambiati dopo questi dati: si guarda il prossimo export.
+- **http://guidasanita.it/**: Google ha visto anche l'indirizzo senza «s». «Enforce HTTPS» di GitHub Pages era già
+  attivo (controllato il 27/10/2026) e il `canonical` delle pagine è `https://`: Google le unirà da solo.
+- **Sitemap** (`https://guidasanita.it/sitemap.xml`): inviata in Search Console di recente (controllato il 27/10/2026).
+
+**Indicizzazione** (export «Pagine» del 27/10/2026, dati fino al 23/10): **10 pagine indicizzate, 52 no**, su circa 100
+pagine del sito.
+- 51 «Rilevata, ma attualmente non indicizzata»: Google le conosce ma non le ha ancora lette. È normale per un sito
+  nato da una settimana; si riduce da sola nelle prossime settimane.
+- 1 «Pagina con reindirizzamento»: con ogni probabilità `http://guidasanita.it/`, che porta a `https://`. Va bene così
+  (convalida avviata).
+- Per accelerare le pagine più importanti: in Search Console, «Controllo URL» → «Richiedi indicizzazione», qualche
+  pagina al giorno (Google ne accetta poche). Prima quelle con più ricerche: liste-attesa, legge-104/permessi,
+  invalidita, esenzione-ticket, pronto-soccorso, guardia-medica, medico-famiglia, prenotare-cup.
+
+Prossimo export: fine novembre 2026, con le stesse colonne, per confrontare clic e posizioni pagina per pagina.
 
 ## 2. Cosa contano le statistiche del sito
 

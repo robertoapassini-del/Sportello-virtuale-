@@ -113,6 +113,20 @@ const ERRORI = [
   [/congedo straordinario: 2 anni|il congedo di 2 anni/, 'congedo straordinario: «fino a» 2 anni nella vita lavorativa'],
   [/vaccini gratis per adulti e bambini/, 'la pagina dei vaccini parla degli adulti; per i bambini rimanda al pediatra'],
   [/Quello che scrivi resta sul tuo telefono e si cancella/, 'il sito ricorda la regione scelta: dirlo (privacy.html)'],
+  // Terzo giro del 26/10/2026 (copie della notte del 26/10).
+  [/Unione europea, o in Svizzera/, 'cure all\'estero con la direttiva 2011/24/UE: UE e Spazio economico europeo (Norvegia, Islanda, Liechtenstein), non la Svizzera (linee guida nazionali)'],
+  [/se manca o non può, i <strong>genitori/, 'congedo straordinario: si passa al familiare dopo solo se i precedenti «mancano, sono deceduti o sono affetti da patologie invalidanti» (scheda INPS)'],
+  [/pari allo stipendio base/, "congedo straordinario: «pari all'ultima retribuzione», con le voci fisse e continuative (scheda INPS)"],
+  [/multa e il ritiro/, "contrassegno usato male: l'art. 188 c. 4 prevede la multa; il ritiro non ha fonte"],
+  [/stesso stato di famiglia/, "assegno di inclusione: conta il nucleo dell'ISEE, non lo stato di famiglia del Comune"],
+  [/SPID si attiva gratis/, 'SPID: alcuni gestori chiedono un costo'],
+  [/ricetta ogni mese/, 'piano terapeutico: nessuna fonte dice che la ricetta è mensile'],
+  [/[Nn]on salviamo niente/, 'il sito ricorda la regione e conta le visite: «Non salviamo quello che scrivi» (privacy.html)'],
+  [/con ISEE fino a 50\.000 euro \(l/, 'bonus psicologo: 1.500 euro solo con ISEE sotto 15.000 (scheda INPS)'],
+  [/fai la visita in ospedale pagando solo il ticket|la fai in ospedale pagando solo il ticket/, "percorso di tutela: l'intramoenia la organizza l'ASL e si paga il ticket solo se dovuto; da soli si paga la tariffa intera"],
+  [/secondo la provincia, la fa la commissione/, 'invalidità, vecchia procedura: la commissione dipende dalla Regione (convenzione con l\'INPS), non dalla provincia già scelta'],
+  [/Che giorno hai ricevuto il verbale/, 'ricorso: per prudenza i 6 mesi si contano dalla data scritta sul verbale (l\'INPS conta «dall\'emissione»)'],
+  [/torna qui quel giorno/, 'scadenze: il giorno della scadenza non è ancora tardi; si torna il giorno dopo (26/10/2026)'],
 ];
 
 test('nessuno degli errori già trovati è tornato', () => {

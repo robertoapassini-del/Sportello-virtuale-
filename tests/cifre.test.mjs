@@ -62,7 +62,6 @@ const ECCEZIONI = {
     { testo: /tutto gratuito per più di 29 giorni$/, perche: 'sospensione dell\'accompagnamento: sta nel modulo accompagnamento', valore: (d, tutti) => tutti['rules-accompagnamento'].ricovero_giorni, unita: 'giorni' },
   ],
   'medico-famiglia': [
-    { testo: /a Trapani, dopo un cambio bisogna aspettare 30 giorni$/, perche: 'regola della sola ASP Trapani, scritta nel testo di regioni/sicilia/asp.json (scelta_medico)' },
   ],
 };
 

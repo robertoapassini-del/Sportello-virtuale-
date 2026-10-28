@@ -1,6 +1,6 @@
 {
   "name": "Regole per scegliere o cambiare il medico di famiglia o il pediatra",
-  "last_verified": "2026-10-18",
+  "last_verified": "2026-10-27",
   "pediatra_only_until": 6,
   "pediatra_or_medico_until": 14,
   "pediatra_extension_until": 16,
@@ -10,47 +10,67 @@
     3,
     12
   ],
-  "notes_internal": "TODO-VERIFY: massimali e deroghe (ACN medicina generale e pediatria); canale di scelta per ogni ASP (sportello scelta/revoca, email, app ASPConTe a Catania dal 2025, portale); regole per i domiciliati (scelta temporanea).",
+  "online_attesa_giorni": {
+    "lombardia": 30,
+    "liguria_asl3": 31
+  },
+  "notes_internal": "Massimale e scelta temporanea del medico letti nell'ACN 2024 (27/10/2026). TODO-VERIFY: massimali e deroghe dei pediatri (ACN 18/03/2026); canale di scelta per ogni ASP (sportello scelta/revoca, email, app ASPConTe a Catania dal 2025, portale); regole per i domiciliati (scelta temporanea).",
   "provenienza": {
     "pediatra_only_until": {
-      "url": "https://www.sisac.info/anteprimaNewsHome.do?tipo=WEB&idArea=201011221610481056&idNews=20260624094802420",
-      "verified": "2026-10-18",
-      "proof": "estratto",
-      "review_by": "2027-03-31",
-      "nota": "ACN pediatria. Controllare l'ACN del 18/03/2026."
+      "url": "https://www.statoregioni.it/media/lkwegvuy/p-1-csr-atto-rep-n-51-4apr2024.pdf",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-10-27",
+      "nota": "ACN della medicina generale 2019-2021 (intesa Stato-Regioni rep. n. 51/CSR del 4/4/2024), copia del server: «Per i minori che abbiano compiuto il sesto anno di età i genitori o chi ha la tutela legale possono effettuare la scelta nei confronti del medico del ruolo unico di assistenza primaria». Fino ai 6 anni, quindi, solo il pediatra."
     },
     "pediatra_or_medico_until": {
-      "url": "https://www.sisac.info/anteprimaNewsHome.do?tipo=WEB&idArea=201011221610481056&idNews=20260624094802420",
+      "url": "https://www.statoregioni.it/media/vvapysbf/p-2-csr-atto-rep-n28-18marzo2026.pdf",
       "verified": "2026-10-18",
       "proof": "estratto",
-      "review_by": "2027-03-31"
+      "review_by": "2027-03-31",
+      "nota": "Accordo dei pediatri 2022-2024 (intesa rep. n. 28/CSR del 18/03/2026): da leggere nella copia del server (tema-verifiche)."
     },
     "pediatra_extension_until": {
-      "url": "https://www.sisac.info/anteprimaNewsHome.do?tipo=WEB&idArea=201011221610481056&idNews=20260624094802420",
+      "url": "https://www.statoregioni.it/media/vvapysbf/p-2-csr-atto-rep-n28-18marzo2026.pdf",
       "verified": "2026-10-18",
       "proof": "estratto",
-      "review_by": "2027-03-31"
+      "review_by": "2027-03-31",
+      "nota": "Accordo dei pediatri 2022-2024 (intesa rep. n. 28/CSR del 18/03/2026): da leggere nella copia del server (tema-verifiche)."
     },
     "max_patients_medico": {
-      "url": "https://www.sisac.info/anteprimaNewsHome.do?tipo=WEB&idArea=201011221610481056&idNews=20260624094802420",
-      "verified": "2026-10-18",
-      "proof": "estratto",
-      "review_by": "2027-03-31",
-      "nota": "ACN medicina generale."
+      "url": "https://www.statoregioni.it/media/lkwegvuy/p-1-csr-atto-rep-n-51-4apr2024.pdf",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-10-27",
+      "nota": "ACN della medicina generale 2019-2021 (rep. n. 51/CSR del 4/4/2024), art. 38, copia del server: attività oraria che si riduce «fino al massimale di 1.500 assistiti» («d) da 1.201, a 1.500 assistiti, 6 ore»); l'AIR può alzarlo fino a 1.800 per le forme organizzative multiprofessionali e le aree disagiate. Nella copia (testo letto da una scansione) il numero è scritto «L.500»."
     },
     "max_patients_pediatra": {
-      "url": "https://www.sisac.info/anteprimaNewsHome.do?tipo=WEB&idArea=201011221610481056&idNews=20260624094802420",
+      "url": "https://www.statoregioni.it/media/vvapysbf/p-2-csr-atto-rep-n28-18marzo2026.pdf",
       "verified": "2026-10-18",
       "proof": "estratto",
       "review_by": "2027-03-31",
-      "nota": "880, fino a 1.000 con deroghe (ACN 2022, art. 36). Da rileggere nell'ACN del 18/03/2026."
+      "nota": "880, fino a 1.000 con deroghe (ACN 2022, art. 36). Da rileggere nell'accordo dei pediatri 2022-2024 (rep. n. 28/CSR del 18/03/2026), copia del server (tema-verifiche)."
     },
     "temporary_months": {
-      "url": "https://www.sisac.info/anteprimaNewsHome.do?tipo=WEB&idArea=201011221610481056&idNews=20260624094802420",
-      "verified": "2026-10-18",
-      "proof": "secondaria",
-      "review_by": "2027-03-31",
-      "nota": "Scelta temporanea da 3 a 12 mesi: dalle pagine delle ASP."
+      "url": "https://www.statoregioni.it/media/lkwegvuy/p-1-csr-atto-rep-n-51-4apr2024.pdf",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-10-27",
+      "nota": "ACN della medicina generale 2019-2021 (rep. n. 51/CSR del 4/4/2024), art. 39, comma 6, copia del server: «Per il cittadino non residente la scelta è a tempo determinato per una durata minima di 3 mesi e massima di 1 anno, espressamente prorogabile»; «L'Azienda provvede all'iscrizione temporanea previo accertamento dell'avvenuta cancellazione dall'elenco del medico a ciclo di scelta dell'Azienda di provenienza». Nella copia (scansione) «1 anno» è scritto «L anno»."
+    },
+    "online_attesa_giorni.lombardia": {
+      "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-10-27",
+      "nota": "Regione Lombardia, pagina «Cambio medico», copia del server del 27/10/2026: «se l’operazione viene effettuata attraverso il servizio online, prima di un ulteriore cambio devono essere trascorsi almeno 30 giorni». Anche: «quando viene scelto il medico o il pediatra per la prima volta, bisogna recarsi presso gli sportelli di scelta e revoca delle ASST»; «Non sono visibili i nominativi dei medici che hanno superato il carico massimo di assistiti»."
+    },
+    "online_attesa_giorni.liguria_asl3": {
+      "url": "https://www.asl3.liguria.it/medici-e-pediatri/cambio-medico.html",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-10-27",
+      "nota": "ASL3 (Liguria), pagina «Cambio medico», copia del server del 27/10/2026: si può cambiare online se il cittadino non ha usato la funzione di cambio medico «nei 31 giorni precedenti»; la scelta del pediatra «è disponibile solo nella modalità di accesso con Tessera sanitaria (del minorenne interessato)»; «è possibile procedere all'operazione anche presso le farmacie aderenti al progetto»."
     }
   },
   "sources": [
@@ -69,6 +89,54 @@
     {
       "label": "Codice civile, artt. 316 e 320 (il genitore firma per il figlio minore), 357 (tutore), 404-405 (amministratore di sostegno)",
       "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:regio.decreto:1942-03-16;262"
+    },
+    {
+      "label": "Regione Abruzzo – Scelta e revoca del medico e del pediatra",
+      "url": "https://sanita.regione.abruzzo.it/come-fare/scelta-medico-e-pediatra"
+    },
+    {
+      "label": "ASP Basilicata (Potenza) – Portale Anagrafe Web",
+      "url": "https://www.aspbasilicata.it/servizi-on-line/portale-anagrafe-web/"
+    },
+    {
+      "label": "ASP di Catanzaro (Calabria) – Scelta e revoca del medico online",
+      "url": "https://www.asp.cz.it/scelta-e-revoca-medico-on-line/"
+    },
+    {
+      "label": "Regione Campania – Scelta e revoca del medico e del pediatra",
+      "url": "https://www.regione.campania.it/node/32056"
+    },
+    {
+      "label": "Sesamo (Friuli-Venezia Giulia) – Cambio del medico o del pediatra",
+      "url": "https://sesamo.sanita.fvg.it/sesamo/res/brochure/html_version/sesamo-brochure-b/pagina-3.html"
+    },
+    {
+      "label": "ASL3 (Liguria) – Cambio medico",
+      "url": "https://www.asl3.liguria.it/medici-e-pediatri/cambio-medico.html"
+    },
+    {
+      "label": "Regione Lombardia – Cambio medico",
+      "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico"
+    },
+    {
+      "label": "Salute Piemonte – Il mio medico, guida al servizio",
+      "url": "https://www.salutepiemonte.it/news/il-mio-medico-guida-completa-al-servizio?nid=881"
+    },
+    {
+      "label": "Regione Sardegna – ZenteWeb, scelta e revoca del medico",
+      "url": "https://www.regione.sardegna.it/servizi/accesso-ai-servizi-on-line/indice-dei-servizi/zenteweb-scelta-e-revoca-del-medico"
+    },
+    {
+      "label": "APSS Trento – Cambio o prima scelta del medico",
+      "url": "https://www.apss.tn.it/content/view/full/21609"
+    },
+    {
+      "label": "Regione Umbria – Scelta e revoca del medico",
+      "url": "https://salute.regione.umbria.it/cms/en/scelta-revoca-medico-informazioni"
+    },
+    {
+      "label": "Regione Veneto – Cerca medici e pediatri, cambio medico nel Fascicolo",
+      "url": "https://salute.regione.veneto.it/web/fser/cerca-medici-e-pediatri"
     }
   ]
 }

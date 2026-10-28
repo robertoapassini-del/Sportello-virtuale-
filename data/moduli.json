@@ -100,7 +100,7 @@
       "icon": "🎫",
       "title": "Devo pagare il ticket?",
       "small": "Chi non paga: età con reddito basso, disoccupati, pensioni minime",
-      "keywords": "ticket pagare esenzione reddito età over 65 anziani pensione disoccupato rinnovo delega aspconte gratis patologia malattia cronica invalidità gravidanza 048 pensionato pensionati",
+      "keywords": "ticket pagare esenzione reddito età over 65 anziani pensione disoccupato rinnovo delega aspconte gratis patologia malattia cronica invalidità gravidanza 048 pensionato pensionati malattia rara r99 certificato specialista attestato codice esenzione patologia diabete incinta parto ostetrica ginecologo corso preparazione nascita nipt agenda libretto gravidanza puerperio",
       "pages": [
         {
           "id": "chi-ha-diritto",
@@ -117,6 +117,14 @@
         {
           "id": "altre-esenzioni",
           "title": "Esenzione per malattia, invalidità, gravidanza"
+        },
+        {
+          "id": "malattia-cronica-rara",
+          "title": "Malattia cronica o rara: niente ticket, come si chiede"
+        },
+        {
+          "id": "gravidanza",
+          "title": "Gravidanza: visite ed esami senza ticket"
         }
       ]
     },
@@ -181,7 +189,7 @@
       "icon": "🛡️",
       "title": "Quali controlli e vaccini puoi fare gratis?",
       "small": "Esami contro i tumori e vaccini per la tua età",
-      "keywords": "prevenzione screening mammografia pap test hpv colon tumore vaccino influenza pneumococco zoster fuoco sant'antonio tetano gratis consultorio kit lettera invito calendario vaccinale",
+      "keywords": "prevenzione screening mammografia pap test hpv colon tumore vaccino influenza pneumococco zoster fuoco sant'antonio tetano gratis consultorio kit lettera invito calendario vaccinale vaccini obbligatori bambini nido scuola materna esavalente morbillo varicella meningococco multa esonero consultorio familiare contraccezione pillola del giorno dopo ginecologo ivg interruzione gravidanza spazio giovani adolescenti",
       "pages": [
         {
           "id": "screening",
@@ -190,6 +198,14 @@
         {
           "id": "vaccini",
           "title": "I vaccini gratis per gli adulti, e dove farli"
+        },
+        {
+          "id": "vaccini-bambini",
+          "title": "I vaccini dei bambini: obbligatori, gratis, e la scuola"
+        },
+        {
+          "id": "consultorio",
+          "title": "Il consultorio: cosa fa e come ci si va"
         }
       ]
     },
@@ -289,7 +305,7 @@
       "icon": "🕊️",
       "title": "Cure palliative a casa o in hospice",
       "small": "Per una malattia grave e avanzata",
-      "keywords": "cure palliative hospice dolore terapia malattia grave tumore fine vita reperibilità terapia del dolore oppioidi legge 38 rete locale",
+      "keywords": "cure palliative hospice dolore terapia malattia grave tumore fine vita reperibilità terapia del dolore oppioidi legge 38 rete locale testamento biologico biotestamento dat disposizioni anticipate di trattamento fiduciario legge 219 notaio comune",
       "pages": [
         {
           "id": "cosa-sono",
@@ -302,6 +318,10 @@
         {
           "id": "dolore",
           "title": "Se il dolore non è controllato"
+        },
+        {
+          "id": "testamento-biologico",
+          "title": "Il testamento biologico (DAT): cos'è e come si fa"
         }
       ]
     },
@@ -391,7 +411,7 @@
       "icon": "🪪",
       "title": "La tessera sanitaria: rinnovo, duplicato, estero",
       "small": "Se è scaduta, l'hai persa o vai all'estero",
-      "keywords": "tessera sanitaria scaduta smarrita persa rubata duplicato rinnovo team estero cns codice fiscale agenzia entrate",
+      "keywords": "tessera sanitaria scaduta smarrita persa rubata duplicato rinnovo team estero cns codice fiscale agenzia entrate stranieri straniero immigrati permesso di soggiorno stp iscrizione servizio sanitario centro isi iscrizione volontaria",
       "pages": [
         {
           "id": "smarrita",
@@ -400,6 +420,10 @@
         {
           "id": "estero",
           "title": "All'estero: la TEAM"
+        },
+        {
+          "id": "stranieri",
+          "title": "Stranieri: iscriversi al Servizio sanitario, e il codice STP"
         }
       ]
     },
@@ -413,7 +437,7 @@
       "icon": "💻",
       "title": "Il fascicolo sanitario e la ricetta elettronica",
       "small": "Vedere referti e ricette online, andare in farmacia senza foglio",
-      "keywords": "fascicolo sanitario elettronico fse ricetta elettronica dematerializzata nre promemoria spid cie cns referti online consenso delega ricetta scaduta",
+      "keywords": "fascicolo sanitario elettronico fse ricetta elettronica dematerializzata nre promemoria spid cie cns referti online consenso delega ricetta scaduta ticket farmaci medicine farmacia quota confezione generico equivalente fascia a fascia c",
       "pages": [
         {
           "id": "fascicolo-sanitario",
@@ -422,6 +446,10 @@
         {
           "id": "ricetta-elettronica",
           "title": "La ricetta elettronica: NRE, farmacia, quanto dura"
+        },
+        {
+          "id": "ticket-farmaci",
+          "title": "Le medicine in farmacia: quanto si paga, regione per regione"
         }
       ]
     },
@@ -435,11 +463,15 @@
       "icon": "📅",
       "title": "Prenotare, spostare o disdire una visita al CUP",
       "small": "Online, in farmacia, al telefono. Se non disdici puoi dover pagare il ticket",
-      "keywords": "cup prenotare prenotazione sovracup disdire disdetta spostare appuntamento farmacia numero verde aspconte ticket mancata disdetta tac risonanza ecografia esame esami visita impegnativa annullare annullamento stampa",
+      "keywords": "cup prenotare prenotazione sovracup disdire disdetta spostare appuntamento farmacia numero verde aspconte ticket mancata disdetta tac risonanza ecografia esame esami visita impegnativa annullare annullamento stampa fisioterapia fisioterapista logopedia logopedista riabilitazione fisiatra progetto riabilitativo",
       "pages": [
         {
           "id": "disdire",
           "title": "Spostare o disdire: entro quando, e cosa succede se non lo fai"
+        },
+        {
+          "id": "riabilitazione",
+          "title": "Fisioterapia e logopedia con il Servizio sanitario: come si comincia"
         }
       ]
     },
@@ -644,6 +676,10 @@
         {
           "id": "i-codici",
           "title": "I codici del pronto soccorso, da 1 a 5"
+        },
+        {
+          "id": "il-ticket",
+          "title": "Il ticket del pronto soccorso, regione per regione"
         }
       ]
     },

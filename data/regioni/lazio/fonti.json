@@ -385,6 +385,31 @@
      "url": "https://www.asl.vt.it/adi-assistenza-domiciliare-integrata"
     }
    ]
-  }
+  },
+  {
+   "id": "ticket-pronto-soccorso",
+   "name": "Ticket del pronto soccorso",
+   "tipo": "regione",
+   "_nota": "Indirizzi trovati con la ricerca il 27/10/2026 (docs/piano-contenuti.md, primo giro): il ticket per i codici non urgenti. Da leggere nella copia prima di scriverlo.",
+   "pagine": [
+    {
+     "tipo": "pronto-soccorso",
+     "url": "https://www.aslroma2.it/index.php/uoc-medicina-d-urgenza-e-pronto-soccorso-2"
+    },
+    {
+     "tipo": "pronto-soccorso",
+     "url": "https://www.asl.vt.it/pagamento-ticket-ed-esenzioni"
+    }
+   ]
+  },
+  {"id": "medico-online", "name": "Cambio del medico online", "tipo": "regione", "_nota": "Indirizzi trovati con la ricerca il 27/10/2026 (docs/piano-contenuti.md, link della Regione per il cambio del medico online). Da leggere nella copia prima di scriverlo.", "pagine": [
+   {"tipo": "medico", "url": "https://salutelazio.it/it/servizi/medico-di-famiglia"}
+  ]},
+  {"id": "ticket-farmaci", "name": "Ticket dei farmaci", "tipo": "regione", "_nota": "Indirizzi trovati con la ricerca il 27/10/2026 (docs/piano-contenuti.md, secondo giro: il ticket dei farmaci). Da leggere nella copia prima di scriverlo.", "pagine": [
+   {"tipo": "farmaci", "url": "https://www.regione.lazio.it/enti/salute/farmaci"}
+  ]},
+  {"id": "consultorio", "name": "Consultorio familiare", "tipo": "regione", "_nota": "Indirizzi trovati con la ricerca il 27/10/2026 (docs/piano-contenuti.md, terzo giro: consultorio familiare). Da leggere nella copia prima di scriverlo.", "pagine": [
+   {"tipo": "consultorio", "url": "https://www.salutelazio.it/consultori-familiari"}
+  ]}
  ]
 }

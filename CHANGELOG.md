@@ -7,7 +7,99 @@ Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 - Riscritte le descrizioni di tutte le 88 pagine (prima la risposta e la cifra, poi come si fa), con le stesse cifre di prima; tolte le regole della sola Sicilia dalle descrizioni nazionali (ausili, invalidità, liste d'attesa, CUP, cure all'estero, fascicolo).
 - `data/moduli.json`: intro dell'area «Urgenze» più corta (è anche la descrizione della pagina).
 - Nuovo controllo in `tests/seo.test.mjs`: descrizione tra 50 e 155 caratteri in ogni pagina.
+- Dopo l'unione con main (28/10/2026): accorciate anche le descrizioni delle 10 pagine nuove e delle 5 cambiate nel frattempo (accompagnamento, ricetta elettronica, pronto soccorso), partendo dal testo nuovo.
 - Titoli delle 5 pagine già in prima pagina su Google (Search Console: cartella clinica, liste d'attesa, ricorso, cure palliative, permessi 104) riscritti con le parole che la gente cerca e la procedura prima del problema.
+
+## 27/10/2026 — Fonte del testamento biologico corretta
+- `data/fonti-nazionali.json`, tema «dat»: al posto della Gazzetta n. 297/2017 (che non contiene la legge) il testo vigente della L. 219/2017 su Normattiva. La legge è nella Gazzetta n. 12 del 16/01/2018.
+
+## 27/10/2026 — Testamento biologico, stranieri, consultorio
+- `cure-palliative/testamento-biologico/` (pagina nuova): le DAT della L. 219/2017, chi le fa, dove (notaio, Comune, azienda sanitaria, consolato), senza tasse, il fiduciario, la banca dati nazionale; gli sportelli toscani. Fonte: Regione Toscana (la copia della Gazzetta indicata nel tema «dat» non contiene la legge: indirizzo sbagliato, da correggere).
+- `tessera-sanitaria/stranieri/` (pagina nuova): l'iscrizione con il permesso di soggiorno, l'iscrizione volontaria, il codice STP (6 mesi, rinnovabile); i Centri ISI del Piemonte e i minori in Emilia-Romagna. `data/rules-tessera-sanitaria.json`: «stp_mesi» e «stp_minori_medico_fino_anni_emilia_romagna» con la frase della fonte.
+- `prevenzione/consultorio/` (pagina nuova): cosa fa il consultorio, l'accesso senza ricetta, gli spazi per i ragazzi (Emilia-Romagna, Toscana, Lazio), Piemonte, Lombardia. `data/rules-prevenzione.json`: «consultorio_ragazzi» con la frase della fonte.
+- Copie del server del 27/10/2026, sera.
+
+## 27/10/2026 — Fisioterapia e logopedia con il Servizio sanitario
+- `prenotare-cup/riabilitazione/` (pagina nuova): la ricetta per la visita dal fisiatra, la prenotazione al CUP, il progetto riabilitativo individuale; le regole delle aziende di Torino, Liguria (ASL3) e Umbria 1. Letto nelle copie del server del 27/10/2026.
+- `data/rules-prenotare-cup.json`: 3 fonti nuove. Il trasporto sanitario non urgente aspetta altre copie: per ora c'è solo la Toscana.
+
+## 27/10/2026 — Gravidanza: visite ed esami senza ticket
+- `esenzione-ticket/gravidanza/` (pagina nuova): cosa non si paga in gravidanza (DPCM 12/01/2017, art. 59, letto nel vademecum dell'Emilia-Romagna), il codice M, l'Agenda di gravidanza del Piemonte, il libretto della Toscana, il NIPT gratis in Emilia-Romagna. Copie del server del 27/10/2026.
+- `data/rules-esenzione.json`: «gravidanza_nipt_emilia_romagna» (dal 2024, tra la 10ª e la 13ª settimana) con la frase della fonte, una scheda per cifra; 4 fonti nuove. `tests/citazioni.txt`: «art. 59 | DPCM 12/01/2017».
+
+## 27/10/2026 — Malattia cronica o rara: niente ticket, come si chiede
+- `esenzione-ticket/malattia-cronica-rara/` (pagina nuova): cosa copre l'esenzione, il codice sulla ricetta, cosa portare all'ASL, la malattia rara e il codice R99, le regole delle aziende di Palermo e Torino. Letto nelle copie del server del 27/10/2026 (ASP Palermo, ASL Città di Torino, vademecum dell'Emilia-Romagna, Regione Umbria).
+- `data/rules-esenzione.json`: 4 fonti nuove. Il PDF dei codici della Lombardia non è stato copiato (la copia è la pagina del portale).
+
+## 27/10/2026 — Franchigia di 129,11 euro sul totale dell'anno
+- `dentista/chi-ha-diritto/` e `psicologo/bonus-psicologo/`: il 19% si calcola sulla parte che supera 129,11 euro, «sul totale delle spese mediche dell'anno». Fonte: guida dell'Agenzia delle Entrate «Le spese sanitarie» (copia del 27/10/2026), ora nella provenienza di `data/rules-dentista.json` e `data/rules-psicologo.json`.
+- `docs/revisione-2026-10-25.md`: chiuso il punto della franchigia; la direttiva siciliana 9368/2026 e il PDF del D.A. 780/2021 rispondono 404.
+
+## 27/10/2026 — I vaccini dei bambini
+- `prevenzione/vaccini-bambini/` (pagina nuova): i 10 vaccini obbligatori da 0 a 16 anni, i 4 gratis non obbligatori, nido e scuola dell'infanzia, la multa, l'esonero; le regole di Piemonte e Toscana per la scuola. Letto nelle copie del server del 27/10/2026 (ISS, Regione Piemonte, Regione Toscana).
+- `data/rules-prevenzione.json`: «vaccini_bambini» con la frase dell'ISS; 4 fonti nuove. `prevenzione/vaccini/`: link alla pagina nuova.
+
+## 27/10/2026 — Le medicine in farmacia: il ticket regione per regione
+- `fascicolo-e-ricetta/ticket-farmaci/` (pagina nuova): classe A e classe C, la differenza col generico, e il ticket dei farmaci di 7 regioni (Basilicata, Campania-ASL Salerno, Emilia-Romagna, Liguria-ASL3, Lombardia, Piemonte, Umbria), letto nelle copie del server del 27/10/2026.
+- `data/rules-fascicolo-e-ricetta.json`: «ticket_farmaci_euro» e «ticket_farmaci_piemonte_abolito_anno» con la frase della fonte, 8 fonti nuove. In Basilicata la data di inizio della quota non è chiara (le note della Regione dicono 1° settembre o 1° ottobre 2026): il sito non la scrive.
+- In Veneto la pagina della Regione racconta la quota del 2002 al passato: non scritta finché non c'è la cifra di oggi.
+
+## 27/10/2026 — Cambio del medico online, regione per regione
+- `medico-famiglia/come-si-fa/`: elenco nuovo con il servizio online di 12 regioni (Abruzzo, Basilicata, Calabria, Campania, Friuli-Venezia Giulia, Liguria, Lombardia, Piemonte, Sardegna, provincia di Trento, Umbria, Veneto), più la Sicilia che c'era già. Letto nelle copie del server del 27/10/2026; dove la pagina è di un'azienda sanitaria, la frase lo dice.
+- `data/rules-medico.json`: «online_attesa_giorni» (Lombardia 30, ASL3 Liguria 31) con la frase della fonte, e 12 fonti nuove.
+- `tests/cifre.test.mjs`: tolta l'eccezione dei 30 giorni di Trapani, ora la cifra è nei dati.
+- Copie che mancano: Emilia-Romagna, Lazio, Molise, Puglia, Toscana, Valle d'Aosta (la pagina non è stata copiata).
+
+## 27/10/2026 — Fonti da copiare per il terzo giro
+- `data/fonti-nazionali.json`: temi nuovi «dat» (testamento biologico, L. 219/2017), «stranieri» (iscrizione, STP ed ENI) e «consultorio», con le pagine ufficiali delle Regioni; `data/regioni/lazio/fonti.json`: la pagina dei consultori del Lazio. Il server le copia; le pagine si scrivono dalla copia.
+
+## 27/10/2026 — Fonti da copiare per il secondo giro
+- `data/fonti-nazionali.json`: temi nuovi «esenzione-patologia», «gravidanza», «trasporto-sanitario», con le pagine ufficiali delle Regioni (Lombardia, Emilia-Romagna, Umbria, Piemonte, Toscana).
+- `data/regioni/<regione>/fonti.json`: le stesse voci con le pagine delle aziende sanitarie (ASL3 Liguria, ASP Palermo, ASL Città di Torino, USL Umbria 1), più «riabilitazione». Il server le copia; le pagine si scrivono dalla copia.
+
+## 27/10/2026 — Fonti nuove da copiare: cambio medico online, ticket dei farmaci, vaccini
+- `data/regioni/<regione>/fonti.json`: voce nuova «medico-online» in 19 regioni (pagine ufficiali del cambio del medico online) e «ticket-farmaci» in 14 regioni. Il server le copia; le frasi si scrivono dopo, dalla copia.
+- `data/fonti-nazionali.json`: tema nuovo «vaccini-bambini» (L. 119/2017, ISS, pagine di 4 Regioni). Nel tema «verifiche»: il PDF del D.A. 780/2021, la direttiva siciliana 9368/2026 con «www» e la pagina della Regione sulle cure all'estero, la scheda dell'Agenzia delle Entrate sulle spese sanitarie.
+- `medico-famiglia/come-si-fa/`: tolta una frase ripetuta.
+
+## 27/10/2026 — Pronto soccorso: il ticket regione per regione
+- `pronto-soccorso/il-ticket/` (pagina nuova): la regola nazionale (L. 296/2006: 25 euro per il codice bianco non seguito da ricovero; non pagano i minori di 14 anni, i traumi e gli avvelenamenti acuti) e le regole di 17 regioni, lette nelle copie del server del 27/10/2026. Dove la fonte è di un'azienda sanitaria, la pagina dice quale.
+- `data/rules-pronto-soccorso.json`: cifre nuove con la frase della fonte (Emilia-Romagna 25 euro e fino a 36,15 per ricetta; ASL 1 Liguria fino a 61,15 euro ed entro 7 giorni; Puglia 10 euro per ricetta; ASL CN1 trauma entro 36 ore; Toscana sud est fino a 50 euro; Veneto osservazione oltre 4 ore) e 24 fonti nuove.
+- `pronto-soccorso/`: al posto dell'elenco delle regioni, la regola di base e il link alla pagina nuova.
+- `tests/provenienza.test.mjs`: un intero scritto con i centesimi nella fonte («€ 10,00») ora vale come la cifra 10. Provato con l'errore messo apposta (10 → 11): il test fallisce.
+
+## 27/10/2026 — Fonti da verificare: letto le copie della notte
+- `data/rules-ricorso.json`: il limite del gratuito patrocinio (13.659,64 euro) ora ha la frase della Gazzetta n. 159 dell'11/07/2025 (decreto del 22/04/2025); `tests/citazioni.txt`: «art. 76 comma 1».
+- `data/rules.json`: il richiamo del CUP (5, 10, 15, 30 giorni) ora ha la frase del PNGLA 2025-2027 (Gazzetta S.O. 32 del 24/08/2026). Più avanti il piano scrive «massimo 20 giorni per le priorità P»: il sito tiene 30, da chiarire.
+- `data/rules-accompagnamento.json`: fonte nuova, messaggio INPS 18291/2011. `rsa/quanto-si-paga/`: il ricovero conta come gratuito anche se la parte della persona la paga un ente pubblico; in Sicilia i primi 60 giorni pagati dall'ASP sono ricovero gratuito.
+- `dentista/chi-ha-diritto/` e `psicologo/bonus-psicologo/`: il 19% si calcola solo sulla parte che supera 129,11 euro (guida dell'Agenzia delle Entrate sulla disabilità).
+- `legge-104/`: per l'auto conta cosa è scritto nel verbale, e ci sono limiti di cilindrata (stessa guida).
+- Controllati senza cambiare niente: prima copia gratis della cartella clinica (FAQ del Garante); E01 (la L. 537/1993 dice «età superiore a sessantacinque anni»: resta da chiarire se vale dal compleanno).
+- Copie senza il testo che serviva: accordo dei pediatri (rep. 28/CSR, solo l'intesa senza l'allegato), D.A. 780/2021 della Sicilia (solo la pagina con i link agli allegati). La direttiva siciliana 9368/2026 risponde 404.
+
+## 27/10/2026 — Pronto soccorso: il ticket nelle altre regioni (primo passo)
+- `pronto-soccorso/`: aggiunta la Calabria. All'ASP di Catanzaro i codici bianco e verde non seguiti da ricovero pagano 25 euro di quota fissa, più una quota per gli altri esami «fino ad un massimo di 45 euro» (pagina «Ticket» dell'ASP, aggiornata il 15/04/2026, copia del server). Dati e fonte in `data/rules-pronto-soccorso.json`.
+- Per altre 15 regioni le pagine ufficiali trovate con la ricerca sono in `data/regioni/<regione>/fonti.json`, voce `ticket-pronto-soccorso` (nuovo `data/regioni/sicilia/fonti.json`): il server le copia, poi il ticket si scrive leggendo le copie. Il Molise non ha una pagina ufficiale con l'importo.
+
+## 27/10/2026 — Fonti da verificare: indirizzi per il server
+- `data/fonti-nazionali.json`: tema nuovo «verifiche» con 10 fonti ufficiali per le frasi «da verificare» (`docs/revisione-2026-10-25.md`, gruppo 2): Gazzetta del gratuito patrocinio e del PNGLA, Corte d'appello dell'Aquila, guida dell'Agenzia delle Entrate sulla disabilità, accordo dei pediatri 2026, D.A. 780/2021 (ausili in Sicilia), direttiva siciliana 9368/2026, Garante (cartelle cliniche), messaggio INPS 18291/2011, L. 537/1993. `tests/coerenza.test.mjs`: giustizia.it e garanteprivacy.it tra i siti ufficiali.
+- `data/rules-medico.json`: massimale (1.500), scelta del medico dai 6 anni e scelta temporanea (3 mesi–1 anno) con la frase dell'ACN 2024 (rep. 51/CSR), già nelle copie; prima la fonte era una notizia SISAC senza le cifre. `medico-famiglia/scelta-temporanea/`: prima l'azienda cancella dall'elenco del medico della residenza (ACN, art. 39 c. 6), al posto di «chiedi cosa succede».
+- `data/rules-ricorso.json`: nota del gratuito patrocinio (giustizia.it ha ancora la cifra del 2023).
+
+## 26/10/2026 — Lombardia, Lazio e scadenze di oggi
+- Lombardia: visite, ospedali, cure a casa, ausili, medico e farmacia sono delle ASST, non dell'ATS (`docs/regioni.md`). `data/regioni/index.json`: campo nuovo `asl_label_servizi: "ASST"`. Nei JS `aslLabel()` dà la sigla dei servizi, `aslEnte()` quella dell'azienda dei dati (siti, numeri, URP, screening, intestazioni). Nuovo controllo in `tests/coerenza.test.mjs`: la sigla dei servizi c'è solo dove il «model» dei dati nomina tutte e due le aziende. Provato: la sigla messa per sbaglio sulla Liguria (che ha solo l'ATS) lo fa fallire.
+- Lazio: il sollecito del percorso di tutela parlava di una lettera con protocollo, ma nel Lazio si attiva il «Pass di garanzia» (online o al CUP). Campo nuovo `request_name` nelle aziende con `letter_mode: "portal"`; il sollecito, il campo del numero e l'oggetto dell'email parlano del Pass (`js/letters.js`, `js/liste-attesa.js`).
+- Scadenze: «torna qui quel giorno» → «torna qui il giorno dopo» (il giorno della scadenza non è ancora tardi), e «Oggi è l'ultimo giorno» quando la scadenza è oggi (invalidità, richiamo del CUP, ausili, cartella clinica). Nuova riga in `tests/errori-noti.test.mjs`.
+
+## 26/10/2026 — Terzo giro di rilettura
+- Tre riletture con le copie della notte del 26/10/2026 (pagine A–L, pagine M–Z, testo delle schermate dei moduli nel browser). Elenco completo e punti aperti: `docs/revisione-2026-10-25.md`, sezione «Terzo giro».
+- Corretti: direttiva UE per le cure all'estero senza la Svizzera (errore del primo giro); congedo straordinario (ordine dei familiari e indennità); bonus psicologo per ISEE e codice «se accolta»; assegno di inclusione (famiglia dell'ISEE, SFL solo se manca il requisito della famiglia); intramoenia nelle schermate delle liste d'attesa; data del verbale nel ricorso; commissione della vecchia procedura e sollecito del nuovo regime; «Non salviamo quello che scrivi» su tutte le pagine; e altre frasi più ampie della fonte (ambulanza, contrassegno, SPID, ricetta, accompagnamento, collaudo di Catania, piano terapeutico, screening, neuropsichiatria, Telefono Amico, Cagliari, duplicato con chip, numero del Sistema TS, «è di oggi»). Note di E02 ed E04 in `data/rules-esenzione.json` allineate alla pagina.
+- `data/numeri.json`: il numero del Sistema TS è l'assistenza per i servizi online, non per la «tessera persa» (la pagina copiata lo descrive così).
+- Nuovi controlli: 12 righe in `tests/errori-noti.test.mjs` (terzo giro), provate sulla versione di prima; «non salviamo niente» si cerca anche con la minuscola.
+
+## 26/10/2026 — Copie: la pagina «Request Rejected» dell'ISS non è una copia
+- Errore trovato con il confronto delle copie del 26/10/2026: le pagine dei numeri verdi dell'ISS (dipendenze, fumo) erano la pagina del filtro «Request Rejected», salvata come copia; il confronto segnalava i numeri come spariti. I numeri del sito non cambiano.
+- `tools/copie.mjs`: «Request Rejected» e «The requested URL was rejected» sono riconosciuti come pagina anti-robot (come Gcore): la pagina si segna e non si salva. Nuovo caso in `tests/copie-giro.test.mjs`, provato: senza la correzione fallisce.
 
 ## 25/10/2026 — Seconda rilettura: coerenza tra pagine
 - Riletti insieme lo stesso fatto in pagine diverse, `data/moduli.json`, i testi comuni dei JS, le pagine delle aree e i testi delle regioni (`docs/revisione-2026-10-25.md`, ultima sezione).
