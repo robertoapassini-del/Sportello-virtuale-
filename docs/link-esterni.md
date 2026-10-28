@@ -100,6 +100,9 @@ regioni: Superando.it, Disabili.com, Redattore Sociale (redattoresociale.it), Qu
 L'angolo per il comunicato: «Il sito che ogni notte rilegge le pagine ufficiali di 20 Regioni e dice, con
 parole semplici, cosa ti spetta».
 
+Il comunicato pronto, con l'email di accompagnamento, la scheda e le domande probabili, è in
+`docs/comunicato-stampa.md`.
+
 ### E. Wikipedia
 
 Nelle voci «Invalidità civile», «Legge 104/1992», «Indennità di accompagnamento», «Ticket sanitario» si può
