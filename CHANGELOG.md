@@ -7,6 +7,7 @@ Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 - Riscritte le descrizioni di tutte le 88 pagine (prima la risposta e la cifra, poi come si fa), con le stesse cifre di prima; tolte le regole della sola Sicilia dalle descrizioni nazionali (ausili, invalidità, liste d'attesa, CUP, cure all'estero, fascicolo).
 - `data/moduli.json`: intro dell'area «Urgenze» più corta (è anche la descrizione della pagina).
 - Nuovo controllo in `tests/seo.test.mjs`: descrizione tra 50 e 155 caratteri in ogni pagina.
+- Titoli delle 5 pagine già in prima pagina su Google (Search Console: cartella clinica, liste d'attesa, ricorso, cure palliative, permessi 104) riscritti con le parole che la gente cerca e la procedura prima del problema.
 
 ## 25/10/2026 — Seconda rilettura: coerenza tra pagine
 - Riletti insieme lo stesso fatto in pagine diverse, `data/moduli.json`, i testi comuni dei JS, le pagine delle aree e i testi delle regioni (`docs/revisione-2026-10-25.md`, ultima sezione).
