@@ -16,6 +16,8 @@ il numero di visite.
    sono relativi: 100 è il termine più cercato nel confronto, non un numero di ricerche.
 4. **Email** a info@guidasanita.it dal link «Scrivici cosa cercavi» (ricerca senza risultati) e dal «No» a
    «Ti è stata utile?».
+5. **Search Console → Link**: chi linka il sito. Senza link da fuori Google tiene le pagine fuori dall'archivio
+   (24/10/2026: 10 indicizzate su 61). La strategia e il registro dei contatti sono in `docs/link-esterni.md`.
 
 ## 1b. Search Console: i primi dati (export del 26/10/2026)
 
