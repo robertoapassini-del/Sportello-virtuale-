@@ -2,6 +2,14 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 27/10/2026 — Descrizioni per Google entro 155 caratteri
+- Search Console (19–24/10/2026): 119 impressioni e 2 clic; 10 pagine indicizzate, 51 «rilevate, ma non indicizzate». Le descrizioni erano quasi tutte tra 250 e 415 caratteri: Google le tagliava prima della cifra utile.
+- Riscritte le descrizioni di tutte le 88 pagine (prima la risposta e la cifra, poi come si fa), con le stesse cifre di prima; tolte le regole della sola Sicilia dalle descrizioni nazionali (ausili, invalidità, liste d'attesa, CUP, cure all'estero, fascicolo).
+- `data/moduli.json`: intro dell'area «Urgenze» più corta (è anche la descrizione della pagina).
+- Nuovo controllo in `tests/seo.test.mjs`: descrizione tra 50 e 155 caratteri in ogni pagina.
+- Dopo l'unione con main (28/10/2026): accorciate anche le descrizioni delle 10 pagine nuove e delle 5 cambiate nel frattempo (accompagnamento, ricetta elettronica, pronto soccorso), partendo dal testo nuovo.
+- Titoli delle 5 pagine già in prima pagina su Google (Search Console: cartella clinica, liste d'attesa, ricorso, cure palliative, permessi 104) riscritti con le parole che la gente cerca e la procedura prima del problema.
+
 ## 27/10/2026 — Fonte del testamento biologico corretta
 - `data/fonti-nazionali.json`, tema «dat»: al posto della Gazzetta n. 297/2017 (che non contiene la legge) il testo vigente della L. 219/2017 su Normattiva. La legge è nella Gazzetta n. 12 del 16/01/2018.
 
