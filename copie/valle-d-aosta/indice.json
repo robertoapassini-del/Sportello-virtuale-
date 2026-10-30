@@ -1,6 +1,6 @@
 {
  "regione": "valle-d-aosta",
- "aggiornato": "2026-10-30T04:42:35.623Z",
+ "aggiornato": "2026-10-30T07:32:30.638Z",
  "pagine": [
   {
    "asl": "aosta",
@@ -9,8 +9,8 @@
    "http": 200,
    "file": "aosta/8c0e7f3ef863.txt",
    "titolo": "Home",
-   "sha": "08639b30a11b137f3b4caabdd6cb68ab75e6229e66338883dc39b2294854ec39",
-   "caratteri": 8377,
+   "sha": "bf8b3b2a7a51a9395e10c924205464936fd673db71e4ac3df71088affa3be4d7",
+   "caratteri": 8692,
    "cambiata": true
   },
   {
@@ -482,9 +482,9 @@
    "http": 200,
    "file": "aosta/de0a9b274e10.txt",
    "titolo": "Ambulatori ad accesso diretto",
-   "sha": "6014ee26c76ca8222396143e3a32957ae83e30e525d02d7221209432292c8718",
-   "caratteri": 6353,
-   "cambiata": false
+   "sha": "703954b6942567dc1dd473167f45e7842ab3234e887cf19e41dc5e5f3daf268f",
+   "caratteri": 6263,
+   "cambiata": true
   },
   {
    "asl": "aosta",
@@ -733,7 +733,7 @@
    "controllata": "2026-10-30",
    "da_pagina": "https://www.ausl.vda.it/urp/urp-ufficio-relazioni-con-il-pubblico",
    "http": 0,
-   "errore": "curl: (28) Connection timed out after 60001 milliseconds"
+   "errore": "curl: (28) Connection timed out after 60002 milliseconds"
   },
   {
    "asl": "aosta",

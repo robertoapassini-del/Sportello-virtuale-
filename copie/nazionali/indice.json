@@ -1,6 +1,6 @@
 {
  "regione": "nazionali",
- "aggiornato": "2026-10-30T05:07:37.334Z",
+ "aggiornato": "2026-10-30T07:57:06.573Z",
  "pagine": [
   {
    "asl": "urgenze",
@@ -570,9 +570,9 @@
    "http": 200,
    "file": "regole-contrassegno-disabili/206ded71e91b.txt",
    "titolo": "Polizia Municipale - Comune di Palermo",
-   "sha": "ef79b8181f0617e0746c46c8b6fabaffe5fb5a0d4b6cb645fdea37c407a468c6",
-   "caratteri": 1872,
-   "cambiata": false
+   "sha": "cc11bb42d99dccdf22836dec64583fda6db45b9675732ca03e48b04c5ecb4de4",
+   "caratteri": 5395,
+   "cambiata": true
   },
   {
    "asl": "regole-cure-fuori-regione",
@@ -904,7 +904,7 @@
    "caratteri": 15273,
    "link_pdf": [
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x85175",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x35070",
      "testo": "Modulo per AUTOCERTIFICAZIONE"
     }
    ],
@@ -970,7 +970,7 @@
    "titolo": "Esenzione ticket per patologia / malattia | Azienda Sanitaria Locale \"Città di Torino\"",
    "sha": "f29d0ef7304407d5f46eeaf7b59ba3fc875a00ee0f1f9416e9211cfde99287ed",
    "caratteri": 10207,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-esenzione",
@@ -1040,7 +1040,7 @@
    "http": 200,
    "file": "regole-esenzione/ee32fdd65028.txt",
    "titolo": "Esenzione dal ticket per visite ed esami in gravidanza | Regione Piemonte",
-   "sha": "705326e505e1e343a22264f3e137c122585ae7e3068e4c174d6b7260a1170821",
+   "sha": "9a973d5799dddb9f818770371883ef0cc059b8a197621758a0034d6bdd9bbab1",
    "caratteri": 14558,
    "cambiata": true
   },
@@ -1051,7 +1051,7 @@
    "http": 200,
    "file": "regole-esenzione/75d7c08318ea.txt",
    "titolo": "Agenda di gravidanza | Regione Piemonte",
-   "sha": "30f08fcc93ffc408da6b5c69b39fe2fd6e7c4001dce386efa315cbcc20238538",
+   "sha": "cd890ff36c74bb2a13cd40ff6527a6602068e06ac644b2948ed5ec6f09a1246d",
    "caratteri": 15012,
    "cambiata": true
   },
@@ -1068,11 +1068,11 @@
   },
   {
    "asl": "regole-esenzione",
-   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x85175",
+   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/Modulo-Autocertificazione-maggio-2024.pdf?x35070",
    "controllata": "2026-10-30",
    "da_pagina": "https://www.aslcittaditorino.it/prestazioni/esenzione-ticket-per-reddito/",
    "http": 200,
-   "file": "regole-esenzione/be63a55092b5.txt",
+   "file": "regole-esenzione/31af9c503f55.txt",
    "titolo": "Autocertificazione di esenzione",
    "sha": "0ec5d984b6bd5ef03f12e32ef41b78dfdf250def32f239cb24d846beeee617d9",
    "caratteri": 10878,
@@ -1330,7 +1330,7 @@
    "http": 200,
    "file": "regole-fascicolo-e-ricetta/d021709c72a2.txt",
    "titolo": "Ticket sui farmaci | Regione Piemonte",
-   "sha": "c2c096354917f99ed147fa2fc2d4754304810e93d11fce4d9dcb9396128e4e22",
+   "sha": "21c7b4661ebccf4dcebe761c2287eb5e1fd6caa9b66858bd62af2ac81b530c14",
    "caratteri": 14307,
    "cambiata": true
   },
@@ -1354,7 +1354,7 @@
    "titolo": "Farmaci, quota di 2,50 euro: esenti le fasce fragili - AGR Basilicata",
    "sha": "3721ff5263787f854910ca79a1e4d78181290b8eacb4d9ccde269cd4073c7407",
    "caratteri": 6526,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-fascicolo-e-ricetta",
@@ -1371,8 +1371,12 @@
    "asl": "regole-fascicolo-e-ricetta",
    "url": "https://www.asl3.liguria.it/prenotazioni-e-ticket/esenzione-per-patologia-cronica-o-malattia-rara.html",
    "controllata": "2026-10-30",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30000 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "regole-fascicolo-e-ricetta/e28ebd631c86.txt",
+   "titolo": "Esenzione per patologia cronica o malattia rara - ASL3",
+   "sha": "f87ddf012c1a86cdefd6b7d9bfc28dffddae2631a3e4fdecf50509c85324df05",
+   "caratteri": 9358,
+   "cambiata": true
   },
   {
    "asl": "regole-fascicolo-e-ricetta",
@@ -2006,8 +2010,12 @@
    "asl": "regole-medico",
    "url": "https://www.asl3.liguria.it/medici-e-pediatri/cambio-medico.html",
    "controllata": "2026-10-30",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "regole-medico/f604eb0a6fa6.txt",
+   "titolo": "Cambio medico - ASL3",
+   "sha": "4dafac5c33cf1f07a846732836d535e02ed126a8a86a49fd0c280628405fe909",
+   "caratteri": 12312,
+   "cambiata": true
   },
   {
    "asl": "regole-medico",
@@ -2053,7 +2061,7 @@
    "titolo": "Homepage | ASUIT Trento",
    "sha": "305c9dd5c8ee8c9ad8b9017cddd592c90a2b2b0f0320e4377a6ae9edd1a24f13",
    "caratteri": 9909,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole-medico",
@@ -2190,8 +2198,8 @@
    "http": 200,
    "file": "regole-piano/0f06e59a557d.txt",
    "titolo": "Note AIFA | Agenzia Italiana del Farmaco",
-   "sha": "34c7fb17330ecaafef899078c280fd32d19b3d1edbc8bde354a632a15862f633",
-   "caratteri": 13835,
+   "sha": "e71be2495c399f8b7882004a3083cc483658aa01bbf5312d013dbb5e38ce6818",
+   "caratteri": 13896,
    "link_pdf": [
     {
      "url": "https://www.aifa.gov.it/documents/20142/3104101/PT_eritropoietine_ex_nota_12.pdf",
@@ -2309,19 +2317,19 @@
    "caratteri": 12942,
    "link_pdf": [
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/09/Guida-informativa-per-la-donna-operata-al-seno-1.pdf?x85175",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/09/Guida-informativa-per-la-donna-operata-al-seno-1.pdf?x35070",
      "testo": "Guida informativa per la donna operata al seno"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/09/Epicondilite.pdf?x85175",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/09/Epicondilite.pdf?x35070",
      "testo": "Epicondilite: il gomito del tennista"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/09/Lombalgia.pdf?x85175",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/09/Lombalgia.pdf?x35070",
      "testo": "Lombalgia"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/09/Spalla.pdf?x85175",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/09/Spalla.pdf?x35070",
      "testo": "Spalla: lesione della cuffia dei rotatori"
     }
    ],
@@ -2331,8 +2339,13 @@
    "asl": "regole-prenotare-cup",
    "url": "https://www.asl3.liguria.it/component/content/article/82-struttura-complessa-recupero-e-rieducazione-funzionale.html?catid=1051",
    "controllata": "2026-10-30",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "regole-prenotare-cup/a3ddda670b29.txt",
+   "titolo": "Struttura Complessa Recupero e Rieducazione Funzionale - ASL3",
+   "sha": "5b093b46aa929abf016b2fee24366091eda270fc85f5ca92bd2a5ebc536cc631",
+   "caratteri": 22451,
+   "email_nascoste": 25,
+   "cambiata": true
   },
   {
    "asl": "regole-prenotare-cup",
@@ -2347,11 +2360,11 @@
   },
   {
    "asl": "regole-prenotare-cup",
-   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/09/Guida-informativa-per-la-donna-operata-al-seno-1.pdf?x85175",
+   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/09/Guida-informativa-per-la-donna-operata-al-seno-1.pdf?x35070",
    "controllata": "2026-10-30",
    "da_pagina": "https://www.aslcittaditorino.it/strutture/recupero-e-rieducazione-funzionale/",
    "http": 200,
-   "file": "regole-prenotare-cup/f7357f2b7db3.txt",
+   "file": "regole-prenotare-cup/1eaa0f53c2e0.txt",
    "titolo": "LA RIABILITAZIONE SENOLOGICA",
    "sha": "808e0e2bb3d7a715af67d6916896a4850a2df2c89f746c40fae18eeb74890b63",
    "caratteri": 15293,
@@ -2465,7 +2478,7 @@
    "http": 200,
    "file": "regole-prevenzione/a8b3e7fb7065.txt",
    "titolo": "Obbligo vaccinale, le indicazioni operative per gli adempimenti dell'anno scolastico 2025-2026 | Regione Piemonte",
-   "sha": "05d24426684946ab2a16d50c33f0597b031705536a08f3d1343979bea7575787",
+   "sha": "8ceec8e49bf7f20c0d4562e06c824cc97bf947a8020619b0138debfc4ac4720d",
    "caratteri": 15496,
    "cambiata": true
   },
@@ -2520,7 +2533,7 @@
    "http": 200,
    "file": "regole-prevenzione/5129f546f754.txt",
    "titolo": "Consultori | Regione Piemonte",
-   "sha": "b907919939b46190e5291b48a230fea40318a0a3e235957573cff54374f26caf",
+   "sha": "c6f627c3c950c87b7ca81f9d5a43bf77c43bcaf156b9475c41a0d5e70eed21c9",
    "caratteri": 18217,
    "link_pdf": [
     {
@@ -2861,7 +2874,7 @@
    "http": 200,
    "file": "regole-pronto-soccorso/6f2a28e1087b.txt",
    "titolo": "ASL Roma 2 - UOC Medicina d'Urgenza e Pronto Soccorso",
-   "sha": "304505f6aee65eb3656de482919b8560b02f2a4c92b9da59dca3f9a9407838e7",
+   "sha": "1feaf5957245162e5dda5c5d3213b780e46fc583aecd888cdb753363b96769bb",
    "caratteri": 14507,
    "email_nascoste": 4,
    "cambiata": true
@@ -2894,7 +2907,7 @@
    "http": 200,
    "file": "regole-pronto-soccorso/3db9dee43359.txt",
    "titolo": "PRONTO SOCCORSO Teramo – Azienda Sanitaria Locale di Teramo",
-   "sha": "2071bd9f4380205deda2cdbfd9f187dd5f8450b74ab48f50b2eb8761440cd1ed",
+   "sha": "aaeb7ea3dcf6d5df8c2ec9b678aee2872ca0eae17c6f13af91ea36b3d606eccb",
    "caratteri": 6338,
    "link_pdf": [
     {
@@ -3366,7 +3379,7 @@
    "http": 200,
    "file": "regole-tessera-sanitaria/e766a7604ca0.txt",
    "titolo": "Assistenza sanitaria agli stranieri | Regione Piemonte",
-   "sha": "a76a521b8da136c3c18849e074cb169c1a7a58dd6cf804c8533ed12b2c22e57a",
+   "sha": "45ef6171ae542389179e03bddce78915578a16294d91a2d87fc2847d29ff23b7",
    "caratteri": 19271,
    "cambiata": true
   },
@@ -3880,7 +3893,7 @@
    "http": 200,
    "file": "tema-vaccini-bambini/a8b3e7fb7065.txt",
    "titolo": "Obbligo vaccinale, le indicazioni operative per gli adempimenti dell'anno scolastico 2025-2026 | Regione Piemonte",
-   "sha": "05d24426684946ab2a16d50c33f0597b031705536a08f3d1343979bea7575787",
+   "sha": "8ceec8e49bf7f20c0d4562e06c824cc97bf947a8020619b0138debfc4ac4720d",
    "caratteri": 15496,
    "cambiata": true
   },
@@ -3971,7 +3984,7 @@
    "http": 200,
    "file": "tema-gravidanza/ee32fdd65028.txt",
    "titolo": "Esenzione dal ticket per visite ed esami in gravidanza | Regione Piemonte",
-   "sha": "705326e505e1e343a22264f3e137c122585ae7e3068e4c174d6b7260a1170821",
+   "sha": "9a973d5799dddb9f818770371883ef0cc059b8a197621758a0034d6bdd9bbab1",
    "caratteri": 14558,
    "cambiata": true
   },
@@ -3982,7 +3995,7 @@
    "http": 200,
    "file": "tema-gravidanza/75d7c08318ea.txt",
    "titolo": "Agenda di gravidanza | Regione Piemonte",
-   "sha": "30f08fcc93ffc408da6b5c69b39fe2fd6e7c4001dce386efa315cbcc20238538",
+   "sha": "cd890ff36c74bb2a13cd40ff6527a6602068e06ac644b2948ed5ec6f09a1246d",
    "caratteri": 15012,
    "cambiata": true
   },
@@ -4170,7 +4183,7 @@
    "http": 200,
    "file": "tema-stranieri/e766a7604ca0.txt",
    "titolo": "Assistenza sanitaria agli stranieri | Regione Piemonte",
-   "sha": "a76a521b8da136c3c18849e074cb169c1a7a58dd6cf804c8533ed12b2c22e57a",
+   "sha": "45ef6171ae542389179e03bddce78915578a16294d91a2d87fc2847d29ff23b7",
    "caratteri": 19271,
    "cambiata": true
   },
@@ -4233,7 +4246,7 @@
    "http": 200,
    "file": "tema-consultorio/5129f546f754.txt",
    "titolo": "Consultori | Regione Piemonte",
-   "sha": "b907919939b46190e5291b48a230fea40318a0a3e235957573cff54374f26caf",
+   "sha": "c6f627c3c950c87b7ca81f9d5a43bf77c43bcaf156b9475c41a0d5e70eed21c9",
    "caratteri": 18217,
    "link_pdf": [
     {

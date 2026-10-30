@@ -1,6 +1,6 @@
 {
  "regione": "veneto",
- "aggiornato": "2026-10-30T04:52:00.992Z",
+ "aggiornato": "2026-10-30T07:43:47.540Z",
  "pagine": [
   {
    "asl": "belluno",
@@ -66,7 +66,7 @@
    "titolo": "Urp",
    "sha": "d3e41eafe384210239c02ee4c229d3cee609eaa4ee33f9f7013d222364082884",
    "caratteri": 6367,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "belluno",
@@ -110,7 +110,7 @@
    "titolo": "Urp Online",
    "sha": "71aadf423fb36e038fe0fce979d634f72eebd6dbe9652d180abfbcb672506d0f",
    "caratteri": 5351,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "belluno",
@@ -180,8 +180,8 @@
    "http": 200,
    "file": "treviso/3f2877cab1fe.txt",
    "titolo": "Homepage - ULSS 2 Marca Trevigiana",
-   "sha": "aff630d2acd0dc73834b84dc5d6699fe26b706c06af536a09a6c0ba512264d46",
-   "caratteri": 6343,
+   "sha": "ba04eb9b088307fd38bb7698eabf5fc1f75dfe3b902f073a972570a600268885",
+   "caratteri": 6278,
    "cambiata": true
   },
   {
@@ -399,7 +399,7 @@
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
    "sha": "7eb08f23d190b97ec3beb8d9c119c7660f0294f9172059cc90e8b7e4127bc166",
    "caratteri": 6433,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -417,14 +417,13 @@
    "asl": "venezia",
    "url": "https://www.aulss3.veneto.it/Numeri-Utili-1",
    "controllata": "2026-10-30",
-   "browser": true,
    "http": 200,
    "finale": "https://www.aulss3.veneto.it/home/numeri-utili",
    "file": "venezia/73cedbd93cdb.txt",
-   "titolo": "ULSS 3 SERENISSIMA - Numeri utili",
-   "sha": "2d9d6cb4fafc1045c6ebf5c4b5200b741e3fafa308e03365fa8a3f6fdd0495ca",
-   "caratteri": 10381,
-   "cambiata": false
+   "titolo": "myPortal | ULSS 3 SERENISSIMA",
+   "sha": "8357c3df048ee62b237df5f1c0798f7afb9809f7a40dee8a34997fae5c66edcc",
+   "caratteri": 29,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -510,7 +509,7 @@
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
    "sha": "7eb08f23d190b97ec3beb8d9c119c7660f0294f9172059cc90e8b7e4127bc166",
    "caratteri": 6433,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -523,7 +522,7 @@
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
    "sha": "7eb08f23d190b97ec3beb8d9c119c7660f0294f9172059cc90e8b7e4127bc166",
    "caratteri": 6433,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -594,7 +593,7 @@
    "titolo": "ULSS 3 SERENISSIMA - Prenotare o disdire una prestazione",
    "sha": "fbcab6fd77c63a07810b60fbb0816bab1da9fa168f1018a74147a27a44f29a05",
    "caratteri": 3876,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -603,10 +602,10 @@
    "browser": true,
    "http": 200,
    "file": "venezia/97e8ec10f5af.txt",
-   "titolo": "Medici Medicina Generale, Pediatri Libera Scelta",
-   "sha": "27729a901b4cdcb7682da8e238b6f3ec27eb70c117185f74cb085397097cc524",
-   "caratteri": 4606,
-   "cambiata": false
+   "titolo": "ULSS 3 SERENISSIMA - Medici Medicina Generale, Pediatri Libera Scelta",
+   "sha": "13ccaab1b6ef5ce98aee4f77e82804579bfca695dbfc32570f7a323d40801063",
+   "caratteri": 4627,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -667,7 +666,7 @@
    "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
    "sha": "5995cd562a709f34fcde181ee12d863be0ad7bf626326c3da0a5d43e3f573b9e",
    "caratteri": 5317,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -697,13 +696,12 @@
    "asl": "venezia",
    "url": "https://www.aulss4.veneto.it/servizionline/prenotazione-esami-di-laboratorio-presso-le-strutture-dellazienda-ulss4-veneto-orientale",
    "controllata": "2026-10-30",
-   "browser": true,
    "http": 200,
    "file": "venezia/7259f23ba486.txt",
-   "titolo": "Prenotazione esami di laboratorio presso le strutture dell'A",
-   "sha": "6c77e5de6056b83fe18ff4c7613f38247614a291db5815170e35a02e80cf3b87",
-   "caratteri": 3562,
-   "cambiata": false
+   "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
+   "sha": "6bc2275696536324da914a4390835a8856b32ef9c71aa40dd59c0c5b84156a8f",
+   "caratteri": 45,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -764,7 +762,7 @@
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
    "sha": "7eb08f23d190b97ec3beb8d9c119c7660f0294f9172059cc90e8b7e4127bc166",
    "caratteri": 6433,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -777,7 +775,7 @@
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
    "sha": "7eb08f23d190b97ec3beb8d9c119c7660f0294f9172059cc90e8b7e4127bc166",
    "caratteri": 6433,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -790,7 +788,7 @@
    "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
    "sha": "5995cd562a709f34fcde181ee12d863be0ad7bf626326c3da0a5d43e3f573b9e",
    "caratteri": 5317,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -803,7 +801,7 @@
    "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
    "sha": "5995cd562a709f34fcde181ee12d863be0ad7bf626326c3da0a5d43e3f573b9e",
    "caratteri": 5317,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -816,7 +814,7 @@
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
    "sha": "7eb08f23d190b97ec3beb8d9c119c7660f0294f9172059cc90e8b7e4127bc166",
    "caratteri": 6433,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -829,7 +827,7 @@
    "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
    "sha": "5995cd562a709f34fcde181ee12d863be0ad7bf626326c3da0a5d43e3f573b9e",
    "caratteri": 5317,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -1064,7 +1062,7 @@
    "titolo": "Homepage ULSS6 Euganea",
    "sha": "bfe504c0196321e8eb3d207c810e8061870fb8a7a160194d3ffb3b950a287146",
    "caratteri": 7119,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "padova",
@@ -1187,7 +1185,7 @@
    "titolo": "Ufficio Cartelle Cliniche Padova Sud",
    "sha": "7d22fae565e88089abd6ca7af486c7bed1b441f77f0bb38b592c1cd07cba406a",
    "caratteri": 7329,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "padova",
@@ -1254,7 +1252,7 @@
    "titolo": "Homepage ULSS 8 Berica",
    "sha": "3b3225083fe51cc869bb3ba482a9ba91e8c152c04febb6e9c500001272afd8a7",
    "caratteri": 6326,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "vicenza",
@@ -1540,7 +1538,7 @@
    "titolo": "Patenti monocratiche e certificazioni di idoneità",
    "sha": "51b0e8a6353e492783ecdbb748e6dda8d0b3931cacbd48282adbf5f907e2ee5f",
    "caratteri": 5994,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "vicenza",

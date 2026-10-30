@@ -1,6 +1,6 @@
 {
  "regione": "sicilia",
- "aggiornato": "2026-10-30T04:17:50.996Z",
+ "aggiornato": "2026-10-30T07:07:42.098Z",
  "pagine": [
   {
    "asl": "palermo",
@@ -21,7 +21,7 @@
      "testo": "--> Autorizzazioni di assistenza protesica e integrativa Procedura Online"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "palermo",
@@ -42,7 +42,7 @@
      "testo": "https://www.asppalermo.org/wp-content/uploads/2026/08/Modulo-Richiesta-Accesso-al-Percorso-di-Tutela-revisionato-1.pdf"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "palermo",
@@ -75,7 +75,7 @@
      "testo": "Elenco Presidi di Continuità Assistenziale - Distretto 42 di Palermo"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "palermo",
@@ -92,7 +92,7 @@
      "testo": "Guida al Sito"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "palermo",
@@ -153,7 +153,7 @@
      "testo": "Informativa URP"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "palermo",
@@ -289,7 +289,7 @@
      "testo": "ELENCO FARMACIE TERRITORIALI"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "palermo",
@@ -424,7 +424,7 @@
      "testo": "ELENCO FARMACIE TERRITORIALI"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "palermo",
@@ -497,7 +497,7 @@
      "testo": "ELENCO FARMACIE TERRITORIALI"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "palermo",
@@ -918,9 +918,9 @@
    "http": 200,
    "file": "palermo/18b1ecabe067.txt",
    "titolo": "Cartella clinica - A.O.U.P. \"P. Giaccone\"",
-   "sha": "110510d9af9291dbd234c7cad0eacad1eff7a882e8e3942177b05e50c2641f19",
-   "caratteri": 13402,
-   "cambiata": false
+   "sha": "4ceba8c93e8fe732669526a6c770e033d394588685513317a63f1664bbcd3a0a",
+   "caratteri": 13435,
+   "cambiata": true
   },
   {
    "asl": "palermo",
@@ -929,7 +929,7 @@
    "http": 200,
    "file": "palermo/1c749ae9389c.txt",
    "titolo": "Notizie e servizi utili",
-   "sha": "2bc8525b1fa504d899704e30c731032f74773c3da14a7d2400a273be39a9a2fb",
+   "sha": "677458033bce7d2b809e4321cb8f802966905090950d7d919c4b6c6d4418e0a8",
    "caratteri": 8112,
    "cambiata": true
   },
@@ -1014,7 +1014,7 @@
    "sha": "05cddd601475d811d3b56a636517a76121ba0b2fea28617b6b074eaa4b92c4e8",
    "caratteri": 4693,
    "email_nascoste": 2,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ragusa",
@@ -1438,7 +1438,7 @@
    "titolo": "| ASP Caltanissetta",
    "sha": "2cf0b7dad2fe398f117029bcf627f9eafd80b81faa13c48c60fc139bc590eaf3",
    "caratteri": 8861,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "caltanissetta",
@@ -1890,7 +1890,7 @@
    "certificato": "non valido",
    "file": "messina/b93a7c51f846.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e Ausili riabilitativi, acustiche, busto ortopedico, microinfusori e ventilatorio – Messina – ASP Messina",
-   "sha": "3247f2c3eebf4ec5749a7c9570558c7ce70f3f3734e2b7ff6ac6d746681b29a4",
+   "sha": "ffd17af37fdc7f57da882b917d42d13a6331a286611f693a7ee46c31b33e56dd",
    "caratteri": 5340,
    "cambiata": true
   },
@@ -1902,7 +1902,7 @@
    "certificato": "non valido",
    "file": "messina/49a8cb5433ae.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico – Milazzo (ME) – ASP Messina",
-   "sha": "d24e3258c6a8cf0dee6ed516b33393d7ae3a0c0b3dd585edc8cfe3432c14dd54",
+   "sha": "3fbb81e9b70ab26a8190fc5b42872488b8a2cd338b6c92932761e1a4be64a483",
    "caratteri": 5231,
    "cambiata": true
   },
@@ -1914,7 +1914,7 @@
    "certificato": "non valido",
    "file": "messina/af0dd7dea31e.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico – Barcellona Pozzo di Gotto (ME) – ASP Messina",
-   "sha": "69a41d0334d251f79b4f21c7da71913e66ba85b16a6e9e638ea1ee9cb9108a25",
+   "sha": "800be4331558cd34070d5d5b1e19c4005710cea1f6a08f6fd7b4e9b52bd0cb1b",
    "caratteri": 5405,
    "cambiata": true
   },
@@ -1926,7 +1926,7 @@
    "certificato": "non valido",
    "file": "messina/46de8177530f.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico – Patti (ME) – ASP Messina",
-   "sha": "0eee22228328c24364a5ed5dd9167650aea5b587fff0d1afd1b235e5679b5533",
+   "sha": "738177f786fdf8c65e1b47a615369048198b0e6e8da75108cee5ec74b2ed11f0",
    "caratteri": 5204,
    "cambiata": true
   },
@@ -1938,7 +1938,7 @@
    "certificato": "non valido",
    "file": "messina/6f2b15365da4.txt",
    "titolo": "Autorizzazione Assistenza Integrativa – Presidi per diabetici, celiaci, incontinenti, pannoloni, stomizzati – Messina – ASP Messina",
-   "sha": "4d26b5f7a0147f9e30ec924e41e043d079af106509944d0f5a6e090ed92a9adb",
+   "sha": "20860a1341b3c1d34e8f9e866002b3164c441182fc4c9edf7cf0b33b6effc372",
    "caratteri": 5241,
    "cambiata": true
   },
@@ -1950,7 +1950,7 @@
    "certificato": "non valido",
    "file": "messina/d31336f3a7de.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico- Sant’Agata di Militello (ME) – ASP Messina",
-   "sha": "b068adb7d9332a83b3c1ba7e6761590517744473c142c6420e1dc0593d6127bc",
+   "sha": "af6f5640feeb910e5d7d0d938eba043465b664e1bd2efd65021e0a383acaa398",
    "caratteri": 5334,
    "cambiata": true
   },
@@ -1962,7 +1962,7 @@
    "certificato": "non valido",
    "file": "messina/b054a0ed7979.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico – Lipari (ME) – ASP Messina",
-   "sha": "48b3a93ae8e4b8037b15487d15c9481ab20e37665c66c6e53490a0a907273b5f",
+   "sha": "f3b7f578a409a89397292839f25a61277011601ddac2307af6ffdc2ca8e29e9f",
    "caratteri": 5234,
    "cambiata": true
   },
@@ -1974,7 +1974,7 @@
    "certificato": "non valido",
    "file": "messina/f956bab565c6.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico – Mistretta (ME) – ASP Messina",
-   "sha": "0acd572caccbf8dd28e20e1a8ab71bee756f61b633d05fef2127adaa58a4410b",
+   "sha": "22766a93a545277c6a372cecd78567cc9275ff9b89216171a173f38b34176af8",
    "caratteri": 5397,
    "cambiata": true
   },
@@ -1986,7 +1986,7 @@
    "certificato": "non valido",
    "file": "messina/fd0ebd947108.txt",
    "titolo": "Autorizzazione assistenza protesica – Protesi e ausili riabilitativi, acustiche, busto ortopedico – Taormina (ME) – ASP Messina",
-   "sha": "a049bd26c459a05d67998b79bea9399d5473f4e4e3ee0e4bcb99d04b03ff7564",
+   "sha": "807601db1825e793976ff357a377c0e71f56a1291b2ef4a1552dd1f2e8f05fb9",
    "caratteri": 5251,
    "cambiata": true
   },
@@ -2180,7 +2180,7 @@
    "titolo": "Azienda Sanitaria Provinciale di Siracusa",
    "sha": "fc0d81e3d01d11ca4377fc2d53cecabb37e209549a2224fb2249bf477192dc5c",
    "caratteri": 5186,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "siracusa",
@@ -2213,9 +2213,9 @@
    "finale": "https://portalesalute.asp.sr.it/home",
    "file": "siracusa/13f9f6cc3bed.txt",
    "titolo": "Portale della salute",
-   "sha": "3b311ba47496acb508f1eb06ee502f22b55874f037dee7d8354cc25278c22395",
-   "caratteri": 5128,
-   "cambiata": false
+   "sha": "f9a4688d1a9e768ccd746d458b3159900a4f015ced7a6bd9b5733a3e2b369a3e",
+   "caratteri": 5178,
+   "cambiata": true
   },
   {
    "asl": "siracusa",
@@ -2729,7 +2729,7 @@
    "titolo": "Azienda Sanitaria Provinciale di Catania",
    "sha": "e1b382fbd5de280abd2ad7c33ae55eb955f8c1296443eb13afeffba4f3247f7b",
    "caratteri": 14600,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "catania",
@@ -3101,7 +3101,7 @@
    "titolo": "ASPTrapani.it - portale dei servizi on-line ASP 9 di Trapani",
    "sha": "0476a8064acb72d790b3641b6150c4f4df1cc66025c240103af4e4e468c5a594",
    "caratteri": 6940,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trapani",
@@ -3118,7 +3118,7 @@
      "testo": "Revisione della Procedura Gestionale di Sistema “Prestazioni garantite”"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trapani",
@@ -3140,7 +3140,7 @@
    "titolo": "P.U.A. - ASPTrapani.it - portale dei servizi on-line ASP 9 di Trapani",
    "sha": "18cbad3f0677f78950e870105affef0b33878fa1f9aa449d271530d158c2673c",
    "caratteri": 3323,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trapani",
@@ -3162,7 +3162,7 @@
    "titolo": "Sportelli Cup - telefono - ASPTrapani.it - portale dei servizi on-line ASP 9 di Trapani",
    "sha": "b05463a6bf18a982037aec9cc61094cdfa2583b6c7dda776d6dd0aba99788f57",
    "caratteri": 2180,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trapani",
@@ -3195,7 +3195,7 @@
      "testo": "Richiesta di rilascio della documentazione clinica"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trapani",
@@ -3206,7 +3206,7 @@
    "titolo": "U.V.M. / P.U.A. - Disabilità Gravissima - Alcamo - ASPTrapani.it - portale dei servizi on-line ASP 9 di Trapani",
    "sha": "f439275ea9cd58c2c896f45ffda0d9b5be1bd09d73e98bbfbeb5bb810149ab1f",
    "caratteri": 5335,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trapani",
@@ -3217,7 +3217,7 @@
    "titolo": "U.V.M./ P.U.A. – Disabilità Gravissima - Marsala - ASPTrapani.it - portale dei servizi on-line ASP 9 di Trapani",
    "sha": "626587df8c67b9cd49789faab97fd652fc8ba090e74fb2905c83a4b230029d3e",
    "caratteri": 2734,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trapani",
@@ -3228,7 +3228,7 @@
    "titolo": "U.V.M./ P.U.A. – Disabilità Gravissima - Mazara - ASPTrapani.it - portale dei servizi on-line ASP 9 di Trapani",
    "sha": "a9de9118a680df2b9832acf304e1c1c6459a15cd213f151960dfdb91c942c6a7",
    "caratteri": 5009,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trapani",
@@ -3239,7 +3239,7 @@
    "titolo": "U.V.M. / P.U.A. - Disabilità Gravissima - Castelvetrano - ASPTrapani.it - portale dei servizi on-line ASP 9 di Trapani",
    "sha": "0702cbcfb2753c65ceb5ee3ac587f37676c90e5eea19a67a690b5d352a02224e",
    "caratteri": 2635,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trapani",
@@ -3250,7 +3250,7 @@
    "titolo": "Hospice, Cure palliative e Terapia del dolore - ASPTrapani.it - portale dei servizi on-line ASP 9 di Trapani",
    "sha": "ebd650b279a34bcda2e4170c0804eccb91d57263fd3d246e6cbad7b230b6f406",
    "caratteri": 4715,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trapani",
@@ -3291,7 +3291,7 @@
      "testo": "Documentazione necessaria per stomie"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trapani",
@@ -3302,7 +3302,7 @@
    "titolo": "Assistenza Protesica Integrativa e Riabilitativa Residenziale e Sem. - Alcamo - ASPTrapani.it - portale dei servizi on-line ASP 9 di Trapani",
    "sha": "ed3f2e0df4656c167729e902b1a2878cdb5df791fd3c1edfe1ff427a7845bfce",
    "caratteri": 7729,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trapani",
@@ -3313,7 +3313,7 @@
    "titolo": "Cure Primarie Specialistica Interna ed Esterna - Castelvetrano - ASPTrapani.it - portale dei servizi on-line ASP 9 di Trapani",
    "sha": "a97f38f2745f579ced15c135a50639a96e39b11f5c676f031f77d1b899e6615a",
    "caratteri": 3507,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trapani",
@@ -3324,7 +3324,7 @@
    "titolo": "Assistenza Protesica Integrativa e Riabilitativa Residenziale e Sem. - Mazara - ASPTrapani.it - portale dei servizi on-line ASP 9 di Trapani",
    "sha": "ad4e0796cd0cd90659f2dd2198e716498e3e03a29b37b6be310542da02f0aeef",
    "caratteri": 3333,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trapani",
@@ -3335,7 +3335,7 @@
    "titolo": "Ospedale S.Antonio Abate - Trapani - ASPTrapani.it - portale dei servizi on-line ASP 9 di Trapani",
    "sha": "99db97bb532991ff2950d292a8a3eec901c49e66ce0d9ac9dc4fd46a78172b93",
    "caratteri": 4659,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trapani",
@@ -3363,7 +3363,7 @@
      "testo": "📄 Modello autocertificazione diritto esenzione"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trapani",
@@ -3374,7 +3374,7 @@
    "titolo": "Cure Primarie Specialistica Interna ed Esterna - Marsala - ASPTrapani.it - portale dei servizi on-line ASP 9 di Trapani",
    "sha": "2ba61ce0c97c986a60e5767e2713209bd6965b89d642c2691b5faf6909556437",
    "caratteri": 3803,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trapani",
@@ -3385,7 +3385,7 @@
    "titolo": "Cure Primarie Specialistica Interna ed Esterna - Alcamo - ASPTrapani.it - portale dei servizi on-line ASP 9 di Trapani",
    "sha": "d3cadf9b4e51067aee90d9f70753d6d6aaa455571fabe309906d99467519de5b",
    "caratteri": 5889,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trapani",
@@ -3464,7 +3464,7 @@
    "titolo": "Azienda Sanitaria Provinciale di Enna",
    "sha": "0c89ba84e9f54fb92b6b57afcb6515d00dd646b27e0f13073dff62c117d179e7",
    "caratteri": 5895,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "enna",
@@ -3530,7 +3530,7 @@
    "titolo": "CUP – Prenotazione prestazioni sanitarie / Percorsi di cura e assistenza / Servizi e prestazioni / Homepage - Azienda Sanitaria Provinciale di Enna",
    "sha": "b6119f4eaf0794c07728e8180929fd05047e72e6583950b184f582a36ce8bd8e",
    "caratteri": 7558,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "enna",
@@ -3606,7 +3606,7 @@
    "http": 200,
    "file": "enna/b0e28ab06b54.txt",
    "titolo": "Esenzione ticket / Come fare per / Homepage - Azienda Sanitaria Provinciale di Enna",
-   "sha": "6855ea2dfc017db7f6b3d8a4a8d09bb289f184d4c61416b522b960aea66e431f",
+   "sha": "3a2131354e9e1c3fd0f3b7fc55752ce5945375cd99528dc7185b4f011b0d74a2",
    "caratteri": 2038,
    "cambiata": true
   },
@@ -3791,8 +3791,14 @@
    "asl": "inps-sicilia",
    "url": "https://www.indicepa.gov.it",
    "controllata": "2026-10-30",
-   "http": 503,
-   "finale": "https://www.indicepa.gov.it/"
+   "browser": true,
+   "http": 200,
+   "finale": "https://www.indicepa.gov.it/ipa-portale/",
+   "file": "inps-sicilia/4c8be6d3916e.txt",
+   "titolo": "IpaPortale",
+   "sha": "9eb2cdf770f6b31e79b46901581276c4f392fb694be39823d4ff6c7718514fe1",
+   "caratteri": 2621,
+   "cambiata": true
   },
   {
    "asl": "ticket-pronto-soccorso",
