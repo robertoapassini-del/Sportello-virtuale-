@@ -4,7 +4,9 @@
  "regole_fonti": {
   "fse": {
    "url": "https://salutelazio.it/it",
-   "nota": "Da copiare: portale Salute Lazio della Regione, pagina «Fascicolo Sanitario Elettronico», trovata con il motore di ricerca il 24/10/2026. Il FSE 2.0 del Lazio è partito il 17/06/2026 (notizia della Regione, copia del 23/10/2026)."
+   "verified": "2026-10-29",
+   "proof": "pagina",
+   "nota": "«Entra nel fascicolo sanitario elettronico del cittadino. Con il Fascicolo Sanitario Elettronico - FSE - hai a portata di mano tutto ciò che ti serve per la tua salute». Portale Salute Lazio della Regione, copia del 29/10/2026."
   }
  },
  "_note": "Numeri delle ASL del Lazio per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili (data/regioni/index.json, «moduli»). Nel Lazio la guardia medica è il 116117 (dal 24/08/2026) e si prenota al ReCUP 06 9939. «pagine»: indirizzi ufficiali in più che il server deve copiare (tools/copie.mjs), per i dati dei moduli non ancora accesi.",

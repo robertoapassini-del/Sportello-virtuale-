@@ -269,8 +269,7 @@ const BLOCKS = {
     const voci = con.flatMap((r) => (Array.isArray(r.link.fse) ? r.link.fse : [{ in: r.in || `in ${r.name}`, url: r.link.fse }]));
     return `<ul class="fse-regioni">
 ${voci.map((v) => `<li><a href="${esc(v.url)}" target="_blank" rel="noopener">Fascicolo sanitario ${esc(v.in)}</a></li>`).join('\n')}
-</ul>
-<p>Per le altre regioni cerca «fascicolo sanitario» e il nome della regione sul sito della Regione.</p>`;
+</ul>${con.length < regioni.regioni.length ? '\n<p>Per le altre regioni cerca «fascicolo sanitario» e il nome della regione sul sito della Regione.</p>' : ''}`;
   },
   // Guardia medica: dove risponde il 116117. Dai numeri delle aziende sanitarie di ogni regione attiva (asl.json, in
   // Sicilia asp.json: «files» nell'indice), che hanno già fonte e prova (docs/regola-numeri.md). Così l'elenco si

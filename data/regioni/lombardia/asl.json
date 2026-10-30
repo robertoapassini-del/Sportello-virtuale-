@@ -4,7 +4,9 @@
  "regole_fonti": {
   "fse": {
    "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/servizi-sanitari-online-regione-lombardia",
-   "nota": "Da copiare: pagina della Regione «I servizi sanitari online di Regione Lombardia», trovata con il motore di ricerca il 24/10/2026. Il sito del Fascicolo (fascicolosanitario.regione.lombardia.it) non si copia: «troppi redirect» il 23/10/2026."
+   "verified": "2026-10-29",
+   "proof": "pagina",
+   "nota": "«Il Fascicolo Sanitario Elettronico (FSE) raccoglie i dati e i documenti digitali sanitari e socio-sanitari … Per accedere al tuo Fascicolo sanitario è necessario autenticarsi con una delle modalità d’accesso previste». Pagina della Regione Lombardia «I servizi sanitari online», copia del 29/10/2026. Il sito del Fascicolo (fascicolosanitario.regione.lombardia.it) non si copia: «troppi redirect» il 23/10/2026."
   }
  },
  "_note": "Numeri di ATS e ASST della Lombardia per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Per ora servono solo a Numeri utili (data/regioni/index.json, «moduli»): percorso di tutela, PUA e uffici dei singoli moduli sono ancora da scrivere. Ogni voce è una provincia con la sua ATS; le ASST della provincia sono in official_domains e nei contatti (vedi il todo di ogni voce). In «pagine» le altre pagine ufficiali da copiare (22/10/2026). In Lombardia la guardia medica è il 116117 e si prenota al numero verde regionale 800 638638.",

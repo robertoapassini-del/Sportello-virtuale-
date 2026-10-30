@@ -244,16 +244,12 @@ smette di portare alla pagina giusta, il test fallisce. Una riga nuova qui = una
 In ordine di priorità (con i numeri del punto 3b). Prima di scrivere: fonte ufficiale per ogni cifra, nazionale o
 regione per regione.
 
-0. **Link al fascicolo sanitario di ogni Regione** (non è una pagina nuova, ma è la cosa più cercata). Fatto il
-   23/10/2026 per 11 regioni e il 24/10 per altre 6 (17 su 20), con l'elenco nelle pagine del fascicolo; le altre in `docs/riprendere.md`, punto A.
-1. **Pronto soccorso e guardia medica.** «codice bianco» porta all'esenzione ticket, «pronto soccorso
-   pediatrico» solo ai Numeri utili. Serve una pagina: quando andare, codici colore, ticket del codice bianco
-   (cambia per regione: una fonte datata diceva 25 € in Sicilia, da non usare), chi chiamare di notte e nei
-   festivi.
+0. **Link al fascicolo sanitario di ogni Regione** (non è una pagina nuova, ma è la cosa più cercata). Fatto per tutte le 20 regioni il 30/10/2026, con l'elenco nelle pagine del fascicolo.
+1. **Pronto soccorso e guardia medica.** Fatto: pagine `pronto-soccorso/`, `guardia-medica/` e `urgenze/`.
 2. **Pensione e assegno di invalidità.** La ricerca porta a `invalidita/`, che parla della visita ma non dice
    quanto si prende né i limiti di reddito. Sono ricerche in crescita (importi dell'anno in corso).
-3. **Certificato di malattia e visita fiscale.** Oggi «certificato di malattia» porta all'esenzione ticket e
-   «visita fiscale» alle liste d'attesa: risultati sbagliati.
+3. **Certificato di malattia e visita fiscale.** Fatto: pagine `certificato-malattia/`, `visita-fiscale/` e
+   `malattia-e-lavoro/`.
 4. **Stranieri: codice STP, iscrizione al servizio sanitario.** «straniero» e «stp» non trovano niente.
 5. **Occhiali, logopedista, colonscopia**: non trovano niente o trovano poco. Valutare se bastano parole chiave
    nelle pagine che ci sono (ausili, prenotare-cup, prevenzione) o se serve altro.
@@ -263,7 +259,7 @@ regione per regione.
 - `regional_channel` (portale o app di prenotazione della Regione) è vuoto in tutte le 20 regioni.
 - `local_name` (come si chiama il percorso di tutela) c'è solo in Sicilia, Toscana, Liguria e Valle d'Aosta;
   in Emilia-Romagna è «da verificare».
-- `link.fse` (fascicolo della Regione): 17 regioni su 20 il 24/10/2026, vedi il punto 0 qui sopra.
+- `link.fse` (fascicolo della Regione): tutte le 20 regioni il 30/10/2026.
 - Le parole «sovracup» e «aspconte» nelle parole chiave valgono solo per la Sicilia. I nomi trovati il 23/10/2026
   (punto 3b, n. 6) si aggiungono quando sono nei dati della regione con la fonte.
 
