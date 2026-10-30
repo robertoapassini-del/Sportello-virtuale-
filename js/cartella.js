@@ -161,8 +161,8 @@ const screens = {
         <ol class="big-steps">
           <li><strong>Telefona o vai all'ufficio cartelle cliniche</strong> con la ricevuta. Spesso basta questo.</li>
           <li><strong>Manda una lettera di sollecito</strong> alla Direzione sanitaria dell'ospedale.${a ? ' La scriviamo insieme.' : ''}</li>
-          <li><strong>Se ancora niente:</strong> reclamo all'URP dell'ospedale (o dell'${aslLabel()}, se l'ospedale è dell'${aslLabel()}${a ? aspComplaint(a) : ''}), oppure a Cittadinanzattiva
-            (<a href="https://www.cittadinanzattiva.it" target="_blank" rel="noopener">cittadinanzattiva.it</a>). ${tarText()}</li>
+          <li><strong>Se ancora niente:</strong> reclamo all'URP dell'ospedale (o dell'${aslLabel()}, se l'ospedale è dell'${aslLabel()}${a ? aspComplaint(a) : ''}), oppure al Tribunale per i diritti del malato di Cittadinanzattiva
+            (<a href="https://pit.cittadinanzattiva.it" target="_blank" rel="noopener">pit.cittadinanzattiva.it</a>): sono volontari, non un tribunale. ${tarText()}</li>
         </ol>
         ${senzaUffici(a, () => `${officeBox(a, 'cartelle', '🏥 Gli uffici cartelle cliniche', "Chiama quello dell'ospedale dove c'è stato il ricovero.") || aspCalls(a)}
         <button type="button" class="btn primary" data-go="letter">✍️ Scriviamo il sollecito insieme</button>`)}

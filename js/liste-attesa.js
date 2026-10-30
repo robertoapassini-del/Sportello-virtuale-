@@ -484,9 +484,9 @@ const screens = {
         <ol class="big-steps">
           <li><strong>Manda un sollecito</strong>: ${a.letter_mode === 'portal' ? `uno scritto per ricordare all'${aslLabel()} ${a.request_name ? `il ${esc(a.request_name)}` : 'la richiesta'} che hai fatto` : `una seconda lettera per ricordarlo all'${aslLabel()}`}. La trovi qui sotto, già pronta.</li>
           <li><strong>Fai un reclamo</strong> ${urpKind === 'pec' ? `alla PEC dell'${aslLabel()} (${mailLink(urp)})` : `all'ufficio URP della tua ${aslLabel()}${urp ? ` (${urpKind === 'email' ? `email dell'${aslLabel()}: ` : ''}${mailLink(urp)})` : ''}`}.</li>
-          <li><strong>Chiedi aiuto a un'associazione</strong> di pazienti: Cittadinanzattiva
-            (<a href="https://www.cittadinanzattiva.it" target="_blank" rel="noopener">cittadinanzattiva.it</a>) oppure
-            Associazione Luca Coscioni (<a href="https://www.associazionelucacoscioni.it" target="_blank" rel="noopener">associazionelucacoscioni.it</a>).</li>
+          <li><strong>Chiedi aiuto a un'associazione</strong> di pazienti: il Tribunale per i diritti del malato di Cittadinanzattiva
+            (<a href="https://pit.cittadinanzattiva.it" target="_blank" rel="noopener">pit.cittadinanzattiva.it</a>): sono volontari, non un tribunale. Oppure
+            l'Associazione Luca Coscioni (<a href="https://www.associazionelucacoscioni.it" target="_blank" rel="noopener">associazionelucacoscioni.it</a>).</li>
           <li>${regioneLink('assessorato') || regione() === 'sicilia' ? `<strong>Scrivi alla ${esc(regioneInfo().ente || 'tua Regione')}</strong>, ufficio URP dell'Assessorato della Salute${regioneLink('assessorato') ? `
             (<a href="${esc(regioneLink('assessorato'))}" target="_blank" rel="noopener">${esc(new URL(regioneLink('assessorato')).hostname.replace(/^www\./, ''))}</a>)` : ''}.` : '<strong>Scrivi alla tua Regione</strong> (guarda il sito della Regione per l\'ufficio giusto).'}</li>
         </ol>
