@@ -1,34 +1,51 @@
 {
  "regione": "liguria",
- "aggiornato": "2026-10-30T06:12:23.741Z",
+ "aggiornato": "2026-10-30T08:41:19.193Z",
  "pagine": [
   {
    "asl": "genova",
    "url": "https://www.asl3.liguria.it/",
    "controllata": "2026-10-30",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "genova/af11d444fbe0.txt",
+   "titolo": "Home - ASL3",
+   "sha": "1de1e9dad10c1dd076f08942dc3e4836cc204ae1bfad69260e3e27989d620bde",
+   "caratteri": 7852,
+   "cambiata": true
   },
   {
    "asl": "genova",
    "url": "https://www.asl3.liguria.it/amministrazione-trasparente/servizi-erogati/liste-di-attesa.html",
    "controllata": "2026-10-30",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30000 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "genova/7b95bf7db8e5.txt",
+   "titolo": "Liste di attesa - Numero Verde - ASL3",
+   "sha": "2eb9f52a250d529494946fb76c6526f0b4fe24786dcc838f8336053ac6e0a74b",
+   "caratteri": 11743,
+   "cambiata": true
   },
   {
    "asl": "genova",
    "url": "https://www.asl3.liguria.it/ospedali/emergenza.html",
    "controllata": "2026-10-30",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "genova/a47a023463a4.txt",
+   "titolo": "Emergenze e guardia medica - ASL3",
+   "sha": "10c59d3563185e640f8ffe2e0ec88630f7b2a24f76a9510bc95079f16456dfe0",
+   "caratteri": 13679,
+   "cambiata": true
   },
   {
    "asl": "genova",
    "url": "https://www.asl3.liguria.it/territorio/servizi/cure-primarie/3764-assistenza-domiciliare-integrata.html",
    "controllata": "2026-10-30",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "genova/6dd3c8988f52.txt",
+   "titolo": "Assistenza domiciliare integrata - ASL3",
+   "sha": "194ad23fd94f6a7db779eb88732fd9b61314400c5bfeeb706b8a0dfa5f7db90b",
+   "caratteri": 9768,
+   "email_nascoste": 8,
+   "cambiata": true
   },
   {
    "asl": "genova",
@@ -57,8 +74,13 @@
    "asl": "genova",
    "url": "https://www.asl3.liguria.it/azienda/organi-aziendali/direzione-aziendale/staff/strutture-staff-direzione-generale/ufficio-stampa-comunicazione-e-urp.html",
    "controllata": "2026-10-30",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "genova/3a30046f5edf.txt",
+   "titolo": "Ufficio stampa e della Comunicazione e Urp - ASL3",
+   "sha": "cca960ef50c8b269ec7087f2d730d3fe28fb1426f31a4a8fb095af2d82943464",
+   "caratteri": 12356,
+   "email_nascoste": 3,
+   "cambiata": true
   },
   {
    "asl": "genova",
@@ -89,8 +111,13 @@
    "asl": "genova",
    "url": "https://www.asl3.liguria.it/urp.html",
    "controllata": "2026-10-30",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "genova/69b49618cf27.txt",
+   "titolo": "URP - ASL3",
+   "sha": "f980dfdc906c20473593b6f58815028eb4dcef732d5a5440ff258a520e4806d6",
+   "caratteri": 8310,
+   "email_nascoste": 2,
+   "cambiata": true
   },
   {
    "asl": "genova",
@@ -154,8 +181,13 @@
    "asl": "genova",
    "url": "https://www.asl3.liguria.it/ospedali/presidio-ospedaliero-unico/richiesta-cartella-clinica.html",
    "controllata": "2026-10-30",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "genova/1e2bb5ce1199.txt",
+   "titolo": "Cartella clinica - come e dove richiedere la copia - ASL3",
+   "sha": "9e5468ef480b0b7e81176808df7b66a6617fc9744e4ab603f5c8b2f3b9df64ff",
+   "caratteri": 11057,
+   "email_nascoste": 8,
+   "cambiata": true
   },
   {
    "asl": "genova",
@@ -211,8 +243,7 @@
    "asl": "genova",
    "url": "https://www.asl3.liguria.it/numero-verde-gratuito-per-riduzione-tempi-d-attesa.html",
    "controllata": "2026-10-30",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received"
+   "http": 500
   },
   {
    "asl": "genova",
@@ -225,15 +256,19 @@
    "asl": "genova",
    "url": "https://www.asl3.liguria.it/territorio/distretti/distretto-9-medio-ponente/item/751-struttura-semplice-dipartimentale-cure-palliative.html",
    "controllata": "2026-10-30",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30000 milliseconds with 0 bytes received"
+   "http": 500
   },
   {
    "asl": "genova",
    "url": "https://www.asl3.liguria.it/territorio/servizi/cure-primarie/799-anagrafe-sanitaria-sedi.html",
    "controllata": "2026-10-30",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "genova/c9d3983c39eb.txt",
+   "titolo": "Anagrafe sanitaria - sedi - ASL3",
+   "sha": "26da677a94c203aa791f0c732f3bd25cab18db6e084f1209cc5e9700c632242b",
+   "caratteri": 11988,
+   "email_nascoste": 17,
+   "cambiata": true
   },
   {
    "asl": "genova",
@@ -288,15 +323,19 @@
    "asl": "genova",
    "url": "https://www.asl3.liguria.it/valutazione-organizzazione-screening",
    "controllata": "2026-10-30",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "genova/92c4cee52a77.txt",
+   "titolo": "Struttura Semplice Dipartimentale Valutazione e Organizzazione dello Screening - ASL3",
+   "sha": "66b5f1430eaa75c5a7a0a08c736da69b7b1bd269a2169d77d6767d9f8681907c",
+   "caratteri": 18820,
+   "email_nascoste": 11,
+   "cambiata": true
   },
   {
    "asl": "genova",
    "url": "https://www.asl3.liguria.it/screening-mammario.html",
    "controllata": "2026-10-30",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 500
   },
   {
    "asl": "genova",
@@ -392,9 +431,9 @@
    "http": 200,
    "file": "imperia/2a5ca2f341ce.txt",
    "titolo": "Home - ASL1",
-   "sha": "5734b03aa19517c52b3e06271ec738ab45a063f83dbb80a3e4f4b38e1bf1f957",
-   "caratteri": 6624,
-   "cambiata": false
+   "sha": "03a5a75ff2bdcd7b62cea8ef38211c087381daaa0fa8b0268326c668b24ee255",
+   "caratteri": 6620,
+   "cambiata": true
   },
   {
    "asl": "imperia",
@@ -1310,9 +1349,9 @@
    "http": 200,
    "file": "regione-liguria/5231b93536bb.txt",
    "titolo": "Benvenuti nel sito dell'Azienda Tutela della Salute Liguria (ATS Liguria) - ATS Liguria",
-   "sha": "7bdee7edefc6c20350ebb0a1be9c28014662c17352515c69e89fe717ce3127d0",
-   "caratteri": 2979,
-   "cambiata": false
+   "sha": "3188ee1184e57ddf5cc1b52715a38a566bda496941732752ce90aeaf4c96472a",
+   "caratteri": 2860,
+   "cambiata": true
   },
   {
    "asl": "regione-liguria",
@@ -1535,15 +1574,20 @@
    "asl": "asl3-genovese",
    "url": "https://www.asl3.liguria.it/urp/sedi.html",
    "controllata": "2026-10-30",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "asl3-genovese/c320f31517bd.txt",
+   "titolo": "Sedi Uffici Relazioni con il pubblico (URP) - ASL3",
+   "sha": "1d4d461473be559fdb08e94be1d6b48626589fa27ea14053e5e68c7c140fee11",
+   "caratteri": 6557,
+   "email_nascoste": 3,
+   "cambiata": true
   },
   {
    "asl": "asl3-genovese",
    "url": "http://www.asl3.liguria.it/contatti.html.html",
    "controllata": "2026-10-30",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 26277 milliseconds with 0 bytes received"
+   "http": 500,
+   "finale": "https://www.asl3.liguria.it/contatti.html.html"
   },
   {
    "asl": "asl3-genovese",
@@ -1556,36 +1600,46 @@
    "asl": "asl3-genovese",
    "url": "https://www.asl3.liguria.it/tutte-le-comunicazioni/comunicazioni-2024/5086-prenotazione-visite-esami-dal-1-agosto-call-center-cup-liguria-nuovo-numero.html",
    "controllata": "2026-10-30",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "asl3-genovese/91a5fa5c58b0.txt",
+   "titolo": "Prenotazione visite ed esami specialistici: dal 1° agosto 2024 il call center del CUP Liguria cambia numero - ASL3",
+   "sha": "bc92ca7bf2f7bed975e3dd712dfd5c91d40f8375bb31630743f1f5b8d2a339c5",
+   "caratteri": 6697,
+   "cambiata": true
   },
   {
    "asl": "asl3-genovese",
    "url": "https://www.asl3.liguria.it/medici-e-pediatri/info-generali/continuita_assistenza.html",
    "controllata": "2026-10-30",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "asl3-genovese/fc3ddc6eb012.txt",
+   "titolo": "Continuità assistenziale - ASL3",
+   "sha": "47ba9191c26bb5f067fd2602b11ad24a07a78bd2e95963e4e73e2cdd152512fd",
+   "caratteri": 7966,
+   "cambiata": true
   },
   {
    "asl": "asl3-genovese",
    "url": "https://www.asl3.liguria.it/nuovo-numero-verde-unico-guardia-medica-800-893-580.html",
    "controllata": "2026-10-30",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 500
   },
   {
    "asl": "asl3-genovese",
    "url": "https://www.asl3.liguria.it/contatti-home/item/2940-cure-domiciliari-sedi-contatti.html",
    "controllata": "2026-10-30",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 500
   },
   {
    "asl": "asl3-genovese",
    "url": "https://www.asl3.liguria.it/territorio/distretti/attivit%C3%A0-distretti.html",
    "controllata": "2026-10-30",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "asl3-genovese/0ad9503e7ee6.txt",
+   "titolo": "Attività distretti - ASL3",
+   "sha": "d7937004932bf94546088eec5f3f8abadd73124f38192e9b53d0a64827ac104b",
+   "caratteri": 9228,
+   "cambiata": true
   },
   {
    "asl": "asl4-chiavarese",
@@ -1774,8 +1828,12 @@
    "asl": "medico-online",
    "url": "https://www.asl3.liguria.it/medici-e-pediatri/cambio-medico.html",
    "controllata": "2026-10-30",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "medico-online/f604eb0a6fa6.txt",
+   "titolo": "Cambio medico - ASL3",
+   "sha": "4dafac5c33cf1f07a846732836d535e02ed126a8a86a49fd0c280628405fe909",
+   "caratteri": 12312,
+   "cambiata": true
   },
   {
    "asl": "medico-online",
@@ -1793,29 +1851,36 @@
    "asl": "ticket-farmaci",
    "url": "https://www.asl3.liguria.it/prenotazioni-e-ticket/esenzione-per-patologia-cronica-o-malattia-rara.html",
    "controllata": "2026-10-30",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "ticket-farmaci/e28ebd631c86.txt",
+   "titolo": "Esenzione per patologia cronica o malattia rara - ASL3",
+   "sha": "f87ddf012c1a86cdefd6b7d9bfc28dffddae2631a3e4fdecf50509c85324df05",
+   "caratteri": 9358,
+   "cambiata": true
   },
   {
    "asl": "trasporto-sanitario",
    "url": "https://www.asl3.liguria.it/territorio/servizi/cure-primarie/item/200-rilascio-autorizzazioni-per-trasporti-programmati-in-ambulanza.html",
    "controllata": "2026-10-30",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 500
   },
   {
    "asl": "trasporto-sanitario",
    "url": "https://www.asl3.liguria.it/territorio/servizi/cure-primarie/item/199-rimborsi-emodialisi.html",
    "controllata": "2026-10-30",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 500
   },
   {
    "asl": "riabilitazione",
    "url": "https://www.asl3.liguria.it/component/content/article/82-struttura-complessa-recupero-e-rieducazione-funzionale.html?catid=1051",
    "controllata": "2026-10-30",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "riabilitazione/a3ddda670b29.txt",
+   "titolo": "Struttura Complessa Recupero e Rieducazione Funzionale - ASL3",
+   "sha": "5b093b46aa929abf016b2fee24366091eda270fc85f5ca92bd2a5ebc536cc631",
+   "caratteri": 22451,
+   "email_nascoste": 25,
+   "cambiata": true
   }
  ]
 }
