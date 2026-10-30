@@ -10,6 +10,12 @@ Vanno riletti da una connessione italiana o confermati per telefono.
 
 Quando chiudi un punto: correggi il sito se serve, scrivi la modifica in `CHANGELOG.md` e cancella la riga da qui.
 
+## 0. Pensione e assegno di invalidità (30/10/2026)
+
+- [ ] **Importi 2026** in `data/rules-invalidita.json` (`pensione_inabilita`, `assegno_mensile`): presi dal riassunto del motore di ricerca delle schede INPS, `proof: "estratto"`. Rileggere le schede sulla copia del server, copiare la frase esatta nella nota e portare a `"testo"`. L'importo dell'assegno mensile: la scheda dice 340 euro (arrotondato), la circolare 153/2025 340,71.
+- [ ] **Assegno mensile e lavoro**: un sito non ufficiale dice che serve l'iscrizione al collocamento mirato. Il sito non lo scrive: controllare sulla scheda INPS.
+- [ ] **Accompagnamento insieme alla pensione**: il sito non dice se si possono avere tutti e due. Scriverlo con la fonte INPS.
+
 ## 0a. Audit «solo in Sicilia» del 23/10/2026: punti che servono una fonte
 
 Trovati rileggendo il sito come un utente fuori dalla Sicilia. Il testo è già stato reso prudente dove era sbagliato;

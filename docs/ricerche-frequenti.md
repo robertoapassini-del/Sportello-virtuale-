@@ -246,11 +246,10 @@ regione per regione.
 
 0. **Link al fascicolo sanitario di ogni Regione** (non è una pagina nuova, ma è la cosa più cercata). Fatto per tutte le 20 regioni il 30/10/2026, con l'elenco nelle pagine del fascicolo.
 1. **Pronto soccorso e guardia medica.** Fatto: pagine `pronto-soccorso/`, `guardia-medica/` e `urgenze/`.
-2. **Pensione e assegno di invalidità.** La ricerca porta a `invalidita/`, che parla della visita ma non dice
-   quanto si prende né i limiti di reddito. Sono ricerche in crescita (importi dell'anno in corso).
+2. **Pensione e assegno di invalidità.** Fatto il 30/10/2026: `invalidita/pensione-e-assegno/`.
 3. **Certificato di malattia e visita fiscale.** Fatto: pagine `certificato-malattia/`, `visita-fiscale/` e
    `malattia-e-lavoro/`.
-4. **Stranieri: codice STP, iscrizione al servizio sanitario.** «straniero» e «stp» non trovano niente.
+4. **Stranieri: codice STP, iscrizione al servizio sanitario.** Fatto il 27/10/2026: `tessera-sanitaria/stranieri/`.
 5. **Occhiali, logopedista, colonscopia**: non trovano niente o trovano poco. Valutare se bastano parole chiave
    nelle pagine che ci sono (ausili, prenotare-cup, prevenzione) o se serve altro.
 
