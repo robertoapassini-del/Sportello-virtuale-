@@ -2,6 +2,12 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 30/10/2026 — Pagina nuova: pensione e assegno di invalidità (importi 2026)
+- `invalidita/pensione-e-assegno/`: chi ha diritto alla pensione di inabilità (100%) e all'assegno mensile (dal 74% al 99%), da 18 a 67 anni; 340,71 euro al mese per 13 mensilità nel 2026; limite di reddito personale 20.029,55 euro (pensione) e 5.852,21 euro (assegno); come si chiede; a 67 anni la pensione diventa assegno sociale. Era una ricerca in crescita senza risposta sul sito (`docs/ricerche-frequenti.md`, punto 2).
+- `data/rules-invalidita.json`: campi `pensione_inabilita` e `assegno_mensile`. Fonti: schede INPS e circolare INPS 153 del 19/12/2025, allegato 2. Prova «estratto»: il sito INPS non si apre da qui; le schede sono nella provenienza, quindi il server le copia e si portano a «testo» (DA-VERIFICARE-A-MANO.md, punto 0). L'importo dell'assegno mensile è scritto arrotondato (340 euro) sulla scheda e 340,71 nella circolare.
+- Errore trovato prima di unire: nella nota della provenienza avevo messo tra «…» il riassunto del motore di ricerca, come se fosse la frase della scheda. Il test della provenienza l'ha fermato su una cifra; ora le note dicono che è un riassunto, senza virgolette.
+- `invalidita/visita-e-verbale/`: il rimando agli importi.
+
 ## 30/10/2026 — Fascicolo Sanitario: link per Lombardia, Lazio e Campania (20 regioni su 20)
 - Le pagine messe in `regole_fonti.fse` il 24/10/2026 sono state copiate dal server il 29/10/2026 (branch `copie-siti`, cartella `regole`). Lette le copie: `verified`, `proof: "pagina"`, la frase in `nota`, poi `link.fse` in `data/regioni/index.json`. Lombardia: pagina della Regione «I servizi sanitari online» («Per accedere al tuo Fascicolo sanitario è necessario autenticarsi…»); Lazio: portale Salute Lazio («Entra nel fascicolo sanitario elettronico del cittadino»); Campania: pagina della Regione («È possibile accedere al proprio FSE, collegandosi al Portale Salute del Cittadino…»).
 - L'elenco «Il sito del Fascicolo nella tua regione» ha ora tutte le 20 regioni (21 link: Trento e Bolzano). La frase «Per le altre regioni cerca…» compare solo se manca qualche regione (`tools/pagine.mjs`).
