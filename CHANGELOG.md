@@ -2,6 +2,12 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 31/10/2026 — Pensione e assegno di invalidità: riletti sulle schede INPS copiate
+- Le schede INPS sono state copiate dal server il 31/10/2026 (`copie/nazionali/regole-invalidita/`, aggiornate dall'INPS il 20/07/2026). Prova portata da «estratto» a «testo», con le frasi esatte nella nota (`data/rules-invalidita.json`).
+- Errore trovato: per l'assegno mensile mancava un requisito. La scheda INPS chiede il «mancato svolgimento di attività lavorativa»: ora la pagina lo dice, e consiglia il patronato a chi lavora. La norma citata dalla scheda non è scritta sul sito finché non è riletta su Normattiva (DA-VERIFICARE-A-MANO.md, punto 0).
+- Errore trovato: l'importo dell'assegno mensile era 340,71 euro, preso dalla circolare 153/2025, ma in quella circolare la riga con 340,71 è dei ciechi civili. La scheda INPS dice «340 euro»: ora la pagina scrive 340 euro per l'assegno e 340,71 per la pensione di inabilità.
+- Anche l'assegno mensile, a 67 anni, diventa assegno sociale (prima la pagina lo diceva solo della pensione). Aggiunta la residenza stabile in Italia.
+
 ## 30/10/2026 — Pagina nuova: pensione e assegno di invalidità (importi 2026)
 - `invalidita/pensione-e-assegno/`: chi ha diritto alla pensione di inabilità (100%) e all'assegno mensile (dal 74% al 99%), da 18 a 67 anni; 340,71 euro al mese per 13 mensilità nel 2026; limite di reddito personale 20.029,55 euro (pensione) e 5.852,21 euro (assegno); come si chiede; a 67 anni la pensione diventa assegno sociale. Era una ricerca in crescita senza risposta sul sito (`docs/ricerche-frequenti.md`, punto 2).
 - `data/rules-invalidita.json`: campi `pensione_inabilita` e `assegno_mensile`. Fonti: schede INPS e circolare INPS 153 del 19/12/2025, allegato 2. Prova «estratto»: il sito INPS non si apre da qui; le schede sono nella provenienza, quindi il server le copia e si portano a «testo» (DA-VERIFICARE-A-MANO.md, punto 0). L'importo dell'assegno mensile è scritto arrotondato (340 euro) sulla scheda e 340,71 nella circolare.
