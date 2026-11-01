@@ -2,6 +2,9 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 02/11/2026 — Puglia: accese assistenza a casa e cure palliative
+- `data/regioni/index.json`: in Puglia accesi `assistenza-domiciliare` e `cure-palliative`. Leggono solo URP e PEC di ogni ASL, già provati dalle copie del server (gli stessi della cartella clinica). Liste d'attesa resta spenta: solo l'ASL Brindisi spiega il percorso nei tempi della ricetta (copia del 01/11/2026 di «Modalità di prenotazione»); il motivo è nel `todo` di ogni ASL.
+
 ## 01/11/2026 — IndexNow: Bing rilegge subito le pagine cambiate
 - `3c0ecdf89c2ace8539d2e7f0c68d136f.txt`: il file della chiave IndexNow nella cartella del sito (la chiave è pubblica per scelta: prova che il sito è nostro).
 - `tools/indexnow.mjs`: trova le pagine HTML cambiate tra due commit e le manda a api.indexnow.org (Bing, DuckDuckGo e gli altri motori che usano IndexNow). Con `--prova` stampa e non manda niente.
