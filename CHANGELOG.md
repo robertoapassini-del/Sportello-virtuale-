@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 02/11/2026 — Sardegna: accesi assistenza a casa e cure palliative; pagine nuove da copiare
+- `data/regioni/index.json`: accesi `assistenza-domiciliare` e `cure-palliative` per la Sardegna. Leggono solo la PEC dell'ASL, già provata dalle copie (ognuna delle 8 ASL ha `pec`).
+- `data/regioni/sardegna/asl.json`: in `pagine[]` la pagina «Percorso di tutela» dell'ASL Gallura e dell'ASL Oristano (link dal menu della home). Ogliastra e Sulcis: nessuna pagina trovata, annotato nel `todo`. Liste d'attesa resta spenta.
+- `data/regioni/sardegna/inps.json`: in `pagine[]` le pagine INPS dei messaggi n. 635 e n. 637 del 23/02/2026 (province della riforma della disabilità). Invalidità resta spenta finché le copie non dicono il regime di Olbia, Lanusei, Sanluri e Carbonia.
+
 ## 01/11/2026 — IndexNow: Bing rilegge subito le pagine cambiate
 - `3c0ecdf89c2ace8539d2e7f0c68d136f.txt`: il file della chiave IndexNow nella cartella del sito (la chiave è pubblica per scelta: prova che il sito è nostro).
 - `tools/indexnow.mjs`: trova le pagine HTML cambiate tra due commit e le manda a api.indexnow.org (Bing, DuckDuckGo e gli altri motori che usano IndexNow). Con `--prova` stampa e non manda niente.
