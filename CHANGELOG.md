@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 02/11/2026 — Liguria: numeri degli screening
+- `data/regioni/liguria/asl.json`: numeri degli screening oncologici dalle copie del server del 01/11/2026 (area genovese: colon-retto, collo dell'utero, seno; area imperiese: Senologia di Sanremo e Radiologia di Imperia; area spezzina: ufficio screening). Area savonese: nessun numero nella copia, annotato nel `todo`.
+- Area savonese: `informativa-screening.html` in `pagine[]` perché il server la copi; `prevenzione` resta spenta fino alla copia.
+
 ## 01/11/2026 — IndexNow: Bing rilegge subito le pagine cambiate
 - `3c0ecdf89c2ace8539d2e7f0c68d136f.txt`: il file della chiave IndexNow nella cartella del sito (la chiave è pubblica per scelta: prova che il sito è nostro).
 - `tools/indexnow.mjs`: trova le pagine HTML cambiate tra due commit e le manda a api.indexnow.org (Bing, DuckDuckGo e gli altri motori che usano IndexNow). Con `--prova` stampa e non manda niente.
