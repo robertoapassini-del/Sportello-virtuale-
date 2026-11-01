@@ -2,6 +2,12 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 01/11/2026 — Combinazioni: il test controlla che il browser conti dallo stesso giorno
+- Errore trovato dalla CI (PR #66, 24/10/2026, e PR #76): il giro `combinazioni-ny` partito alle 23:51 di New York è passato dalla mezzanotte a metà prova. Il test calcola «oggi» una volta sola, il sito a ogni caso: tutti i casi provati dopo mezzanotte sbagliavano di un giorno, anche in moduli che la PR non toccava. Non era un errore del sito. L'orologio fermo (25/10/2026) c'era già; ora il test è più solido.
+- `tests/combinazioni.cjs`: «oggi» si conta nel fuso del browser (`TZID`), non in quello di Node. Dopo ogni caso il test legge il giorno del browser: se è diverso da quello del test, il caso fallisce e dice perché (prima si vedeva solo un titolo sbagliato). Con `COMBINAZIONI_ORA` il giro parte da un istante scelto, per simulare la mezzanotte.
+- Provato con un giro che parte alle 23:59:30 di New York: con l'orologio che va avanti 6563 casi su 6667 falliscono, tutti con «il browser conta da 2026-10-24, il test da 2026-10-23»; con l'orologio fermo 6667 casi senza problemi.
+- Nuovo controllo: in `tests/errori-noti.test.mjs` l'orologio fermo, «oggi» nel fuso del browser e il confronto dopo ogni caso devono esserci. Riga nel registro di `docs/protocollo-test.md`.
+
 ## 01/11/2026 — IndexNow: Bing rilegge subito le pagine cambiate
 - `3c0ecdf89c2ace8539d2e7f0c68d136f.txt`: il file della chiave IndexNow nella cartella del sito (la chiave è pubblica per scelta: prova che il sito è nostro).
 - `tools/indexnow.mjs`: trova le pagine HTML cambiate tra due commit e le manda a api.indexnow.org (Bing, DuckDuckGo e gli altri motori che usano IndexNow). Con `--prova` stampa e non manda niente.
