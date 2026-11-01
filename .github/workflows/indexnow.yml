@@ -1,0 +1,22 @@
+name: IndexNow
+# Dopo ogni push su main avvisa Bing (IndexNow) delle pagine HTML cambiate: tools/indexnow.mjs.
+# Aspetta 3 minuti perché GitHub Pages pubblichi il sito, così Bing legge le pagine nuove.
+on:
+  push:
+    branches: [main]
+    paths: ['**.html']
+permissions:
+  contents: read
+jobs:
+  avvisa:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: sleep 180
+      - run: |
+          node tools/indexnow.mjs "${{ github.event.before }}" "${{ github.sha }}"

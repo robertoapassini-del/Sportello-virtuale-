@@ -182,3 +182,6 @@ già in elenco. Chiunque può rifarli: ogni riga dice quale file cambiare e come
 - 23/10/2026 — `coerenza.test.mjs`, «link al Fascicolo della Regione»: un `link.fse` dell'indice delle regioni c'è solo con
   la prova in `regole_fonti.fse` del file della regione (stesso indirizzo, proof «pagina», giorno e frase). Prima il link
   siciliano non aveva prova e il server non lo copiava.
+- 01/11/2026 — `tests/indexnow.test.mjs`: il file della chiave IndexNow c'è e contiene la chiave di `tools/indexnow.mjs`
+  (senza, Bing rifiuta gli avvisi senza dirlo), gli indirizzi mandati sono quelli della sitemap, il workflow
+  `.github/workflows/indexnow.yml` lancia lo script dopo i push su main.

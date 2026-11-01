@@ -2,6 +2,12 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 01/11/2026 — IndexNow: Bing rilegge subito le pagine cambiate
+- `3c0ecdf89c2ace8539d2e7f0c68d136f.txt`: il file della chiave IndexNow nella cartella del sito (la chiave è pubblica per scelta: prova che il sito è nostro).
+- `tools/indexnow.mjs`: trova le pagine HTML cambiate tra due commit e le manda a api.indexnow.org (Bing, DuckDuckGo e gli altri motori che usano IndexNow). Con `--prova` stampa e non manda niente.
+- `.github/workflows/indexnow.yml`: dopo ogni push su main che cambia pagine HTML aspetta 3 minuti (pubblicazione di GitHub Pages) e lancia lo script. Un errore di IndexNow si stampa e non ferma niente.
+- Nuovo controllo: `tests/indexnow.test.mjs` (la chiave è nel file, da file a indirizzo come la sitemap, il workflow lancia lo script).
+
 ## 01/11/2026 — Pagine che portano a un indirizzo nuovo: indirizzi aggiornati
 - Nei dati c'erano i `todo` del controllo del 26/10/2026 per le pagine delle aziende che ora portano a un altro indirizzo. Con le copie del server del 01/11/2026 (campo `finale` dell'indice): 22 indirizzi aggiornati, solo dove la copia della pagina nuova contiene tutti i numeri che la usano (cercati con `tools/cerca-numero.mjs`), e tolti i loro `todo`. Basilicata (URP Policoro), Campania (URP Napoli 3 Sud), Emilia-Romagna (CUP Bologna, URP Ferrara, CUPWEB e guardia medica di Modena), Lazio (guardia medica di Salute Lazio per le 5 aziende, prenotazioni Roma 3), Lombardia (URP Como, contatti Santi Paolo e Carlo, Valle Olona, IRCCS San Gerardo), Marche (guardia medica Pesaro Urbino, contatti Macerata, prenotare ad Ascoli Piceno), Veneto (numeri utili ULSS 3, URP ULSS 4 e Padova).
 - Non toccati, con il loro `todo`: ASST Brianza (la pagina ora porta alla homepage), ASST Monza (dominio nuovo dell'IRCCS San Gerardo, l'URP 039 2332225 non è nella pagina nuova), Imola (CAD/CAU porta alla homepage, l'800 040050 non c'è). Non cambiati i rimandi delle homepage (per esempio a «/it»).
