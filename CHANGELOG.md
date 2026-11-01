@@ -2,6 +2,19 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 02/11/2026 — Esenzione ticket: i codici in più delle Regioni
+- Nuova pagina `esenzione-ticket/regioni/` («Le esenzioni in più di alcune Regioni»), linkata da «Chi ha diritto». Altroconsumo ne copre 4; qui 8, ognuna scritta «In <Regione>: …».
+- `data/rules-esenzione.json`: nuovo elenco `regionali` con le cifre e una scheda di provenienza per regione. Fonti ufficiali lette il 02/11/2026 (alcune da agenti, segnate «estratto»):
+  - Toscana E90, E91, E92 (pagina della Regione del 12/03/2026, riletta: ISEE fino a 18.000 euro, autocertificazione fino al 31/12/2026, solo in Toscana);
+  - Emilia-Romagna E99 (pagina della Regione del 04/09/2026: ISEE fino a 15.000 euro, prorogata al 31/12/2028; i contrasti con la DGR 1390/2025 su data della perdita del lavoro e farmaci di fascia C non sono scritti);
+  - Lombardia E05, E12, E13, E14 (pagina della Regione del 28/07/2026, riletta, e tabella collegata, del 2020: da ricontrollare);
+  - Valle d'Aosta IS01, IS02 (quota fissa sulle medicine, DGR 1899/2017 coordinata con la DGR 1124/2025);
+  - Provincia di Trento E99 (ASUIT, 09/03/2026), Provincia di Bolzano E11 ed E99 (tabella provinciale del 07/04/2026);
+  - Liguria EPF (ASL5 senza data e manifesto regionale del 2017, citato dalla ASL2 nel 2026: ricontrollo entro febbraio 2027);
+  - Campania E20-E24 (DGR 191/2023, Allegato 2).
+- Lasciate fuori: Puglia (E94-E96: i siti della sanità pugliese non si aprono da qui, solo estratti di ricerca), Basilicata (E05: la DGR 544/2026 non dice la soglia), Lazio (E10: probabilmente senza effetto dopo l'abolizione del superticket), i codici per il dentista di Veneto (6R0, 7RQ) e Calabria (E05-E07).
+- `tests/ricerca.test.mjs`: «esenzione per reddito» ora dà 6 risultati (c'è la pagina nuova), il limite passa da 5 a 6.
+
 ## 02/11/2026 — Quello che i siti simili hanno e noi no: visita fiscale, esenzione, titoli
 - Confronto con altri siti (money.it, Altroconsumo, Studio Cataldi, deQuo e altri): le lacune vere, rilette sulla fonte ufficiale.
 - Visita fiscale (`visita-fiscale/se-non-ti-trovano/`): mancava la terza assenza. Scheda INPS «Indennità di malattia e visite mediche di controllo», aggiornata il 21/09/2026: alla terza assenza non giustificata si perde tutta l'indennità da quel giorno. Aggiunto anche che la perdita non tocca i giorni di ricovero né quelli già controllati (D.L. 463/1983, art. 5 c. 14). `data/rules-malattia.json`: campo `assenza_visita_terza_percent` con la provenienza, e la scheda INPS tra le fonti.

@@ -35,6 +35,98 @@
     "pagare_min_giorni": 30,
     "pagare_max_giorni": 120
   },
+  "regionali": [
+    {
+      "id": "toscana",
+      "codici": "E90, E91, E92",
+      "isee_max": 18000,
+      "valida_fino": "2026-12-31"
+    },
+    {
+      "id": "emilia-romagna",
+      "codici": "E99",
+      "isee_max": 15000,
+      "prorogata_fino": "2028-12-31"
+    },
+    {
+      "id": "lombardia",
+      "codici": "E05, E12, E13, E14",
+      "E05": {
+        "eta_over": 65,
+        "income_min": 36151.98,
+        "income_max": 38500
+      },
+      "E12": {
+        "income_max": 27000
+      },
+      "E14": {
+        "eta_from": 66,
+        "income_max": 18000
+      }
+    },
+    {
+      "id": "valle-d-aosta",
+      "codici": "IS01, IS02",
+      "IS01": {
+        "isee_max": 9999
+      },
+      "IS02": {
+        "isee_min": 10000,
+        "isee_max": 25000,
+        "euro_confezione": 1,
+        "euro_ricetta_max": 2
+      }
+    },
+    {
+      "id": "trento",
+      "codici": "E99"
+    },
+    {
+      "id": "bolzano",
+      "codici": "E11, E99",
+      "E11": {
+        "eta_over": 65,
+        "income_min": 36151.98,
+        "income_max": 40000
+      },
+      "E99": {
+        "volte_reddito_minimo": 1.5
+      }
+    },
+    {
+      "id": "liguria",
+      "codici": "EPF",
+      "EPF": {
+        "eta_from": 6,
+        "eta_until": 65,
+        "income_max": 36151.98
+      }
+    },
+    {
+      "id": "campania",
+      "codici": "E20, E21, E22, E23, E24",
+      "E20": {
+        "income_max": 16000
+      },
+      "E21": {
+        "persone": 3,
+        "income_max": 19000
+      },
+      "E22": {
+        "persone_da": 4,
+        "persone_a": 5,
+        "income_max": 23000
+      },
+      "E23": {
+        "persone_oltre": 5,
+        "income_max": 25000
+      },
+      "E24": {
+        "income_min": 36151.98,
+        "income_max": 52000
+      }
+    }
+  ],
   "other_exemptions": [
     {
       "code": "C01",
@@ -155,6 +247,55 @@
       "proof": "testo",
       "review_by": "2027-10-27",
       "nota": "Regione Emilia-Romagna, pagina «NIPT», copia del server del 27/10/2026: «fra la 10 a e la 13 a settimana di gestazione»."
+    },
+    "regionali.toscana": {
+      "url": "https://www.regione.toscana.it/-/esenzioni",
+      "verified": "2026-11-02",
+      "proof": "testo",
+      "review_by": "2027-01-15",
+      "nota": "Pagina «Esenzioni» della Regione Toscana, aggiornata al 12/03/2026, letta il 02/11/2026: E90 disoccupati con DID, E91 cassa integrazione o contratto di solidarietà difensivo, E92 mobilità con DID, tutti con familiari a carico e «Isee fino a 18.000 euro»; residenti in Toscana, «validità sul solo territorio regionale»; autocertificazione «che ha validità fino al 31 dicembre 2026»."
+    },
+    "regionali.emilia-romagna": {
+      "url": "https://salute.regione.emilia-romagna.it/cure-primarie/ticket-esenzioni/esenzioni/esenzione-ticket-per-reddito/lavoratori-colpiti-dalla-crisi-economica",
+      "verified": "2026-11-02",
+      "proof": "estratto",
+      "review_by": "2027-05-02",
+      "nota": "Pagina della Regione Emilia-Romagna sui lavoratori colpiti dalla crisi economica, ultima modifica 04/09/2026, letta da un agente con WebFetch il 02/11/2026: esenzione prorogata fino al 31 dicembre 2028; ISEE pari o inferiore a 15.000 euro (nella pagina: 15mila); chi ha perso involontariamente il lavoro a tempo indeterminato, chi ha chiuso la partita IVA, chi è sospeso con ammortizzatori sociali, e i familiari a carico, residenti in Emilia-Romagna; visite ed esami e farmaci di fascia A; autocertificazione sul Fascicolo sanitario elettronico, una per persona. Contrasti con la DGR 1390/2025 (data della perdita del lavoro, farmaci di fascia C): il sito non li riporta."
+    },
+    "regionali.lombardia": {
+      "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/07-ticket-ed-esenzioni/ticket-esenzioni-prerstazioni-ssr/allegati/TABELLA+AGGIORNATA+DELLE+ESENZIONI+PER+REDDI.pdf",
+      "verified": "2026-11-02",
+      "proof": "estratto",
+      "review_by": "2027-05-02",
+      "nota": "Tabella regionale delle esenzioni per reddito (PDF senza data, metadati 2020), collegata dalla pagina regionale aggiornata il 28/07/2026 (https://www.regione.lombardia.it/sanita/ticket-ed-esenzioni/ticket-esenzioni-prestazioni-ssr), letta il 02/11/2026: la pagina conferma i codici E05, E12, E13, E14 e che E05 ed E14 sono certificate dal MEF e assegnate in automatico. Dalla tabella (letta da un agente): E05 «Assistito > 65 anni» con reddito complessivo tra 36.151,98 e 38.500,00 €, solo specialistica; E12 disoccupati con DID e reddito familiare fino a 27.000 €, specialistica e farmaci; E13 cassa integrazione straordinaria o mobilità sotto i massimali INPS, specialistica e farmaci; E14 età uguale o superiore a 66 anni e reddito familiare fiscale fino a 18.000 €, solo farmaci. Da ricontrollare: la tabella è del 2020."
+    },
+    "regionali.valle-d-aosta": {
+      "url": "https://www.regione.vda.it/sanita/servizi_territorio/ass_farmaceutica/farmaci/quota_fissa_ricette_i.aspx",
+      "verified": "2026-11-02",
+      "proof": "estratto",
+      "review_by": "2027-05-02",
+      "nota": "Pagina della Regione Valle d'Aosta sulla quota fissa delle ricette (aggiornata il 12/12/2025) e testo della DGR 1899/2017 coordinato con la DGR 1124/2025, letti da un agente il 02/11/2026: IS01 ISEE tra 0 e 9.999 €, esclusi dalla quota fissa; IS02 ISEE tra 10.000 e 25.000 €, 1 euro a confezione fino a un massimo di 2 euro a ricetta; valgono fino al 31 dicembre di ogni anno; l'Azienda USL ricava l'ISEE dall'INPS con il consenso, se no lo comunica l'assistito agli uffici scelta/revoca."
+    },
+    "regionali.bolzano": {
+      "url": "https://salute.provincia.bz.it/it/ticket-esenzioni",
+      "verified": "2026-11-02",
+      "proof": "estratto",
+      "review_by": "2027-05-02",
+      "nota": "Tabella riassuntiva ticket ed esenzioni della Provincia di Bolzano, allegata alla pagina aggiornata il 07/04/2026, letta da un agente il 02/11/2026: E11 «Soggetti residenti di età superiore ai 65 anni con reddito famigliare compreso tra € 36.151,98 e € 40.000,00», con autodichiarazione, nel foglio della specialistica ambulatoriale; E99 nuclei sotto 1,5 volte il reddito minimo di inserimento (DPGP 30/2000), ticket zero, attestazione del distretto sociale."
+    },
+    "regionali.liguria": {
+      "url": "https://www.asl5.liguria.it/PerilCittadino/Prenotazioniticketesenzioni/Esenzioneticket.aspx",
+      "verified": "2026-11-02",
+      "proof": "estratto",
+      "review_by": "2027-02-02",
+      "nota": "ASL5 Spezzino (pagina senza data) e manifesto regionale «Esenzione ticket per reddito» (2017), letti da un agente il 02/11/2026: EPF per chi ha tra sei e sessantacinque anni, una patologia cronica, nucleo fiscale con reddito complessivo lordo inferiore a 36.151,98 €; esenti dai farmaci correlati alla patologia; certificato annuale. La ASL2 (pagina aggiornata il 21/04/2026) cita EPF tra i codici prorogati nel 2026. Fonte da ricontrollare presto."
+    },
+    "regionali.campania": {
+      "url": "https://burc.regione.campania.it/eBurcWeb/directServlet?DOCUMENT_ID=00137897&ATTACH_ID=207173",
+      "verified": "2026-11-02",
+      "proof": "testo",
+      "review_by": "2027-05-02",
+      "nota": "DGR Campania n. 191 del 19/04/2023 (BURC n. 30 del 24/04/2023), Allegato 2 «Codici di esenzione regionale», letto da un agente il 02/11/2026: E20 reddito complessivo del nucleo non superiore a 16.000 €; E21 nucleo di tre persone fino a 19.000 €; E22 quattro o cinque persone fino a 23.000 €; E23 oltre cinque persone fino a 25.000 €; E24 reddito tra 36.151,98 e 52.000 € solo con un codice per patologia, malattia rara o condizione. Reddito del nucleo fiscale, non ISEE. Per quali prestazioni valgono la delibera non lo dice: il sito rimanda all'ASL."
     }
   },
   "sources": [
@@ -229,6 +370,38 @@
     {
       "label": "Regione Toscana – Nascere in Toscana",
       "url": "https://www.regione.toscana.it/nascere-in-toscana"
+    },
+    {
+      "label": "Regione Toscana – Esenzioni (E90, E91, E92)",
+      "url": "https://www.regione.toscana.it/-/esenzioni"
+    },
+    {
+      "label": "Regione Emilia-Romagna – Esenzione E99 per i lavoratori colpiti dalla crisi",
+      "url": "https://salute.regione.emilia-romagna.it/cure-primarie/ticket-esenzioni/esenzioni/esenzione-ticket-per-reddito/lavoratori-colpiti-dalla-crisi-economica"
+    },
+    {
+      "label": "Regione Lombardia – Ticket ed esenzioni (E05, E12, E13, E14)",
+      "url": "https://www.regione.lombardia.it/sanita/ticket-ed-esenzioni/ticket-esenzioni-prestazioni-ssr"
+    },
+    {
+      "label": "Regione Valle d'Aosta – Quota fissa sulle ricette (IS01, IS02)",
+      "url": "https://www.regione.vda.it/sanita/servizi_territorio/ass_farmaceutica/farmaci/quota_fissa_ricette_i.aspx"
+    },
+    {
+      "label": "Azienda sanitaria di Trento (ASUIT) – Esenzione per reddito (E99)",
+      "url": "https://www.asuit.tn.it/servizi/ticket-esenzione-reddito"
+    },
+    {
+      "label": "Provincia di Bolzano – Ticket ed esenzioni (E11, E99)",
+      "url": "https://salute.provincia.bz.it/it/ticket-esenzioni"
+    },
+    {
+      "label": "ASL5 Liguria – Esenzione ticket (EPF)",
+      "url": "https://www.asl5.liguria.it/PerilCittadino/Prenotazioniticketesenzioni/Esenzioneticket.aspx"
+    },
+    {
+      "label": "Regione Campania – DGR 191/2023, codici di esenzione regionale (E20-E24)",
+      "url": "https://burc.regione.campania.it/eBurcWeb/directServlet?DOCUMENT_ID=00137897&ATTACH_ID=207173"
     }
   ],
   "gravidanza_nipt_emilia_romagna": {
