@@ -128,7 +128,7 @@ const screens = {
           <li><strong>Telefona o vai all'ufficio protesica</strong> con la ricevuta. Di' che i ${rules.authorization_days} giorni sono passati.</li>
           <li><strong>Manda una lettera di sollecito</strong> all'${aslLabel()}. La scriviamo insieme.</li>
           <li><strong>Se ancora niente:</strong> reclamo ${complaintTo(a)},
-            un patronato, oppure Cittadinanzattiva (<a href="https://www.cittadinanzattiva.it" target="_blank" rel="noopener">cittadinanzattiva.it</a>).</li>
+            un patronato, oppure il Tribunale per i diritti del malato di Cittadinanzattiva (<a href="https://pit.cittadinanzattiva.it" target="_blank" rel="noopener">pit.cittadinanzattiva.it</a>): sono volontari, non un tribunale.</li>
         </ol>
         ${protesica(a) || aspCalls(a)}
         <button type="button" class="btn primary" data-go="letter">✍️ Scriviamo il sollecito insieme</button>
