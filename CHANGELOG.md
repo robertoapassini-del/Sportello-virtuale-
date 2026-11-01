@@ -6,6 +6,9 @@ Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 - `data/regioni/index.json`: in Abruzzo accesi `assistenza-domiciliare` e `cure-palliative` (leggono URP e PEC delle quattro ASL, già provati).
 - `data/regioni/abruzzo/asl.json`: contatti «screening» dell'ASL 2 (800 727057, 800 893436, 800 567529; pagina «Partecipa agli screening oncologici gratuiti», copia del 01/11/2026) e dell'ASL di Pescara (085 425 3939; pagina «Screening Oncologici», copia del 01/11/2026). `prevenzione` resta spento: manca il numero dello screening dell'ASL 1. `liste-attesa` resta spento: l'ASL 2 non dice come si manda l'istanza del percorso di tutela (motivi nel `todo`).
 
+## 02/11/2026 — Emilia-Romagna: pagine da copiare per liste d'attesa e screening
+- `data/regioni/emilia-romagna/asl.json`, `pagine[]`: CUP e numero verde di Modena, CupTel e Sportello unico di Piacenza, CUP telefonico dell'AUSL di Bologna (liste d'attesa); pagine dei centri screening di Modena, Ferrara, Forlì, Cesena e Ravenna (prevenzione). Tolte 3 pagine che nella copia danno 404 (screening e liste d'attesa di Modena, screening di Reggio Emilia). Dopo la copia si riempiono i campi e si accendono i moduli.
+
 ## 01/11/2026 — IndexNow: Bing rilegge subito le pagine cambiate
 - `3c0ecdf89c2ace8539d2e7f0c68d136f.txt`: il file della chiave IndexNow nella cartella del sito (la chiave è pubblica per scelta: prova che il sito è nostro).
 - `tools/indexnow.mjs`: trova le pagine HTML cambiate tra due commit e le manda a api.indexnow.org (Bing, DuckDuckGo e gli altri motori che usano IndexNow). Con `--prova` stampa e non manda niente.
