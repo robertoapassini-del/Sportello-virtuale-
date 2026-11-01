@@ -164,3 +164,14 @@ test('titoli dei moduli e home: prima la procedura, non solo il problema', () =>
   const frequenti = home.match(/const FREQUENTI = \[([\s\S]*?)\];/)[1];
   assert.ok(!PROBLEMA.test(frequenti), 'js/home.js: «Le domande più frequenti» sono procedure; i problemi vanno in «Qualcosa non va?» (NON_VA)');
 });
+
+// 25/10 e 01/11/2026: il giro `combinazioni-ny` partito alle 23:51 di New York è passato dalla mezzanotte a metà prova.
+// Il test contava «oggi» una volta sola, il sito a ogni caso: i casi dopo mezzanotte sbagliavano di un giorno.
+// L'orologio del browser resta fermo all'istante del test, «oggi» si conta nel fuso del browser e ogni caso controlla
+// che il browser conti dallo stesso giorno.
+test('combinazioni.cjs: il browser e il test contano dallo stesso giorno, anche a mezzanotte', () => {
+  const s = fs.readFileSync(path.join(SITE, 'tests/combinazioni.cjs'), 'utf8');
+  assert.match(s, /ctx\.clock\.setFixedTime\(now\)/, 'l\'orologio del browser deve restare fermo all\'istante del test (clock.setFixedTime(now))');
+  assert.match(s, /const TODAY = giornoNelFuso\(now\)/, '«oggi» va contato da now nel fuso del browser (TZID)');
+  assert.match(s, /oggiPagina !== TODAY/, 'dopo ogni caso il test controlla che il browser conti dallo stesso giorno');
+});

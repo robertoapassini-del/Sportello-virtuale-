@@ -30,8 +30,14 @@ const sediInps = [
 
 // ---------- calcoli indipendenti (non usano js/engine.js) ----------
 const pad = (n) => String(n).padStart(2, '0');
-const now = new Date();
-const TODAY = `${now.getFullYear()}-${pad(now.getMonth() + 1)}-${pad(now.getDate())}`;
+// «Adesso» del test. Con COMBINAZIONI_ORA (un istante ISO, per esempio 2026-10-23T23:59:30-04:00) il giro parte da
+// quell'istante: serve a simulare un giro che passa la mezzanotte (docs/protocollo-test.md). Nella CI non c'è.
+const now = process.env.COMBINAZIONI_ORA ? new Date(process.env.COMBINAZIONI_ORA) : new Date();
+if (Number.isNaN(now.getTime())) throw new Error(`COMBINAZIONI_ORA non è una data: ${process.env.COMBINAZIONI_ORA}`);
+// «Oggi» si conta nel fuso del browser (TZID), non in quello di Node: se i due fusi sono diversi il giorno può cambiare.
+const FUSO = process.env.TZID || Intl.DateTimeFormat().resolvedOptions().timeZone;
+const giornoNelFuso = (d) => new Intl.DateTimeFormat('en-CA', { timeZone: FUSO, year: 'numeric', month: '2-digit', day: '2-digit' }).format(d);
+const TODAY = giornoNelFuso(now);
 function add(iso, n) {
   const [y, m, d] = iso.split('-').map(Number);
   const t = new Date(Date.UTC(y, m - 1, d + n));
@@ -729,6 +735,10 @@ async function runCase(page, c) {
       const c = queue.shift();
       let problems;
       try { problems = await runCase(page, c); } catch (e) { problems = [`il percorso si è bloccato: ${e.message.split('\n')[0]}`]; }
+      // Dopo ogni caso: il browser conta ancora dallo stesso giorno del test. Se l'orologio non è fermo (o il fuso è
+      // diverso), il caso fallisce con il motivo vero, non con un titolo sbagliato di un giorno.
+      const oggiPagina = await page.evaluate(() => { const d = new Date(); return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; }).catch(() => null);
+      if (oggiPagina && oggiPagina !== TODAY) problems.push(`il browser conta da ${oggiPagina}, il test da ${TODAY}: l'orologio del browser non è fermo all'ora del test`);
       if (problems.length) failures.push({ name: c.name, problems });
       if (c.regione && c.regione !== 'sicilia') await page.evaluate(() => sessionStorage.removeItem('test-regione')).catch(() => {});
       done++;
@@ -736,7 +746,7 @@ async function runCase(page, c) {
     await ctx.close();
   }));
   await browser.close();
-  console.log(`Oggi: ${TODAY}. Casi provati: ${done}. Con problemi: ${failures.length}. Errori JavaScript: ${jsErrors.length}.`);
+  console.log(`Oggi: ${TODAY} (fuso ${FUSO}). Casi provati: ${done}. Con problemi: ${failures.length}. Errori JavaScript: ${jsErrors.length}.`);
   for (const f of failures) console.log(`✗ ${f.name}\n    - ${f.problems.join('\n    - ')}`);
   for (const e of [...new Set(jsErrors)]) console.log(`JS: ${e}`);
   process.exit(failures.length || jsErrors.length ? 1 : 0);
