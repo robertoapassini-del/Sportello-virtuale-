@@ -1,6 +1,6 @@
 {
  "regione": "lazio",
- "aggiornato": "2026-11-01T17:36:50.303Z",
+ "aggiornato": "2026-11-01T20:08:17.279Z",
  "pagine": [
   {
    "asl": "frosinone",
@@ -893,9 +893,9 @@
    "http": 200,
    "file": "rieti/4d0ac27ae2c7.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "35d3aad05a7b0076371577c576aa4a5787bf713c630b0b4c273f9b2e68bbe902",
+   "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
    "caratteri": 2358,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "rieti",
@@ -1481,9 +1481,9 @@
    "finale": "https://salutelazio.it/it",
    "file": "roma/753559e36904.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "eefc07f97ad9dcc276de92ead70fe36fd4e25bc671fba85deef57bd4d131bb12",
+   "sha": "7198c941f98e6f6e1fa846f3b817f663dc376e7c4f15f9ddcd0f93b54091ae77",
    "caratteri": 4010,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "roma",
@@ -1514,7 +1514,7 @@
    "http": 200,
    "file": "roma/e0d930024e6e.txt",
    "titolo": "Punto Unico di Accesso (PUA)",
-   "sha": "db256e48a8a29bd66676b02ec6d271b6ea6338cf353a11d14c737b2fbeffa12e",
+   "sha": "2c85fb4983c046cdc2454637a20c7c79d5d648193e02d0488c7e1e5a57a66f39",
    "caratteri": 22475,
    "link_pdf": [
     {
@@ -1554,6 +1554,10 @@
      "testo": "মাসিক ভাতা"
     },
     {
+     "url": "https://www.aslroma1.it/uploads/files/47_24_Legge_104_Ucraino.pdf",
+     "testo": "LEY 104/92"
+    },
+    {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_italiano.pdf",
      "testo": "SUBSIDIO MENSUAL DE FRECUENCIA"
     },
@@ -1564,10 +1568,6 @@
     {
      "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_arabo.pdf",
      "testo": "BUWANANG BENEPISYO PARA SA MAY KAPANSANAN"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_Legge_104_Ucraino.pdf",
-     "testo": "LEY 104/92"
     }
    ],
    "cambiata": true
@@ -1872,7 +1872,7 @@
    "http": 200,
    "file": "roma/2b46e5d8fe38.txt",
    "titolo": "ASL Roma 2 - Punto Unico di Accesso - PUA",
-   "sha": "d50dc7f064a1977935491c54adaba301c9196fc09a5b559cc98056baa39d0cf8",
+   "sha": "9446109b5d3af11702d384db08073cc93da347874b9dbe859a61a76542fd12d7",
    "caratteri": 11883,
    "email_nascoste": 11,
    "cambiata": true
@@ -1943,7 +1943,7 @@
    "http": 200,
    "file": "roma/3feb23bab29f.txt",
    "titolo": "ASL Roma 2 - UOSD Coordinamento Screening",
-   "sha": "44959da0067c2bec8080e7aeb16fc53ace2e683a21cafbf24a6f503d121a1368",
+   "sha": "76791e8ba04c32876604f0948d9f7ed5848cab5569e85504c8a1fb4d8d953b53",
    "caratteri": 8743,
    "email_nascoste": 3,
    "cambiata": true
@@ -2035,7 +2035,7 @@
    "http": 200,
    "file": "roma/7e7cbafb32a1.txt",
    "titolo": "15.04.05 Liste di attesa",
-   "sha": "8e77aa9463665ed86699283a01da878dd82fcbe2c72a53de6da02a3f2bd3d45a",
+   "sha": "4613176ea02075eef81556bb57c2ddb1bf625ed0a7fd8566d503ecadb775d72a",
    "caratteri": 8675,
    "link_pdf": [
     {
@@ -2265,7 +2265,7 @@
      "testo": "Dichiarazione di Accessibilità"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -2360,13 +2360,7 @@
    "asl": "roma",
    "url": "https://www.aslroma1.it/uploads/files/59_26_Tempi_di_erogazione_delle_prestazioni_sanitarie_.pdf",
    "controllata": "2026-11-01",
-   "http": 200,
-   "file": "roma/f25f8225880e.txt",
-   "titolo": "Regolamento PT delibera n. 820_CS del 06.10.2023.pdf",
-   "sha": "b6d17567a375716f650592d37d6feac83ee6b5d6c12ee3cd3cddaedb74c284c6",
-   "caratteri": 2737,
-   "pdf": true,
-   "cambiata": false
+   "http": 403
   },
   {
    "asl": "roma",
@@ -3409,7 +3403,7 @@
    "http": 200,
    "file": "asl-roma2/2e0f163ef6a3.txt",
    "titolo": "ASL Roma 2 - Guardia Medica",
-   "sha": "014e84cb4578bfe30f19aed64297d752fc623d4da4f024143f42edf2dceb091a",
+   "sha": "9b1d2149808b572dc39512dc1daba07ad262805f15fa19cea0b09ac1dd0dc3a1",
    "caratteri": 8091,
    "cambiata": true
   },
@@ -4091,7 +4085,7 @@
    "http": 200,
    "file": "ticket-pronto-soccorso/6f2a28e1087b.txt",
    "titolo": "ASL Roma 2 - UOC Medicina d'Urgenza e Pronto Soccorso",
-   "sha": "62be871321e3947dce3e148d0541fd7626d705d38af987d168770a156ace8f3b",
+   "sha": "13e71b9fb79eee1bd2cb76d0c59168ba9fdc8d75534318a706c41b383e78077b",
    "caratteri": 14507,
    "email_nascoste": 4,
    "cambiata": true

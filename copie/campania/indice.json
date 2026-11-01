@@ -1,6 +1,6 @@
 {
  "regione": "campania",
- "aggiornato": "2026-11-01T17:16:53.080Z",
+ "aggiornato": "2026-11-01T19:48:11.478Z",
  "pagine": [
   {
    "asl": "avellino",
@@ -177,6 +177,17 @@
      "testo": "Modulo 7"
     }
    ],
+   "cambiata": false
+  },
+  {
+   "asl": "avellino",
+   "url": "https://www.regione.campania.it/node/32056",
+   "controllata": "2026-11-01",
+   "http": 200,
+   "file": "avellino/aaaa846ec67c.txt",
+   "titolo": "Scelta e revoca del Medico di Medicina Generale (MMG) e del Pediatra di Libera Scelta (PLS) | Regione Campania",
+   "sha": "381116d0303a047e0a1f76c0350a5cb27393116ec11e35a06642855ae8b675b5",
+   "caratteri": 3464,
    "cambiata": false
   },
   {
@@ -439,6 +450,17 @@
   },
   {
    "asl": "benevento",
+   "url": "https://www.regione.campania.it/node/32056",
+   "controllata": "2026-11-01",
+   "http": 200,
+   "file": "benevento/aaaa846ec67c.txt",
+   "titolo": "Scelta e revoca del Medico di Medicina Generale (MMG) e del Pediatra di Libera Scelta (PLS) | Regione Campania",
+   "sha": "381116d0303a047e0a1f76c0350a5cb27393116ec11e35a06642855ae8b675b5",
+   "caratteri": 3464,
+   "cambiata": false
+  },
+  {
+   "asl": "benevento",
    "url": "https://www.aslbenevento.it/servizio-strutturale/centralino-aziendale",
    "controllata": "2026-11-01",
    "http": 200,
@@ -613,6 +635,30 @@
   },
   {
    "asl": "benevento",
+   "url": "https://www.aslbenevento.it/servizio-strutturale/screening-del-tumore-del-colon-retto-distretto-sanitario-benevento",
+   "controllata": "2026-11-01",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "benevento/d2a3f320e946.txt",
+   "titolo": "Screening del Tumore del Colon Retto (Distretto Sanitario Benevento) | ASL Benevento",
+   "sha": "f04fd1be7c3834043f67821cbf292c87322551bcd6c13cd5d7eeb7c467f4085e",
+   "caratteri": 3345,
+   "cambiata": true
+  },
+  {
+   "asl": "benevento",
+   "url": "https://www.aslbenevento.it/servizio-strutturale/screening-del-tumore-del-colon-retto-distretto-sanitario-montesarchio",
+   "controllata": "2026-11-01",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "benevento/daa8f0ce88df.txt",
+   "titolo": "Screening del Tumore del Colon Retto (Distretto Sanitario Montesarchio) | ASL Benevento",
+   "sha": "a9703a133de052bd93dd73bfc285f517b6b9215b79ca6438d8ec9000c20a44d1",
+   "caratteri": 3625,
+   "cambiata": true
+  },
+  {
+   "asl": "benevento",
    "url": "https://www.aslbenevento.it/sites/default/files/2025-03/Guida%20Ulteriore%20Alla%20Comprensione%20Dei%20Dati_0.pdf",
    "controllata": "2026-11-01",
    "da_pagina": "https://www.aslbenevento.it/liste-d-attesa",
@@ -691,7 +737,18 @@
    "titolo": "Asl Caserta - Home Page - Asl Caserta",
    "sha": "e99de80f9782f100346836d1b44d136a4044dfa26eadf10757e6e5a8d2794697",
    "caratteri": 20239,
-   "cambiata": true
+   "cambiata": false
+  },
+  {
+   "asl": "caserta",
+   "url": "https://www.regione.campania.it/node/32056",
+   "controllata": "2026-11-01",
+   "http": 200,
+   "file": "caserta/aaaa846ec67c.txt",
+   "titolo": "Scelta e revoca del Medico di Medicina Generale (MMG) e del Pediatra di Libera Scelta (PLS) | Regione Campania",
+   "sha": "381116d0303a047e0a1f76c0350a5cb27393116ec11e35a06642855ae8b675b5",
+   "caratteri": 3464,
+   "cambiata": false
   },
   {
    "asl": "caserta",
@@ -749,7 +806,7 @@
      "testo": "Allegato"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "caserta",
@@ -761,7 +818,7 @@
    "titolo": "Screening oncologici - Asl Caserta",
    "sha": "a9dceb2b24fd926e42413f6fe417153ee9470d58d0233e566d23e2cffc151d47",
    "caratteri": 16059,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "caserta",
@@ -837,9 +894,20 @@
    "certificato": "non valido",
    "file": "napoli/2f2947c35b17.txt",
    "titolo": "Porta Unica di Accesso (PUA) – ASL Napoli 2 Nord",
-   "sha": "83acf6c3c060fe0dbb6545b3de43cd3ad39344660679bf54c83270b102483410",
-   "caratteri": 10960,
+   "sha": "8ee2c4a793d92f038288a5c6c400b30a76a5c78b9371b99032a7d8b70b6ff980",
+   "caratteri": 10961,
    "cambiata": true
+  },
+  {
+   "asl": "napoli",
+   "url": "https://www.regione.campania.it/node/32056",
+   "controllata": "2026-11-01",
+   "http": 200,
+   "file": "napoli/aaaa846ec67c.txt",
+   "titolo": "Scelta e revoca del Medico di Medicina Generale (MMG) e del Pediatra di Libera Scelta (PLS) | Regione Campania",
+   "sha": "381116d0303a047e0a1f76c0350a5cb27393116ec11e35a06642855ae8b675b5",
+   "caratteri": 3464,
+   "cambiata": false
   },
   {
    "asl": "napoli",
@@ -849,7 +917,7 @@
    "certificato": "non valido",
    "file": "napoli/7623db2690d0.txt",
    "titolo": "Numero verde prenotazioni visite – ASL Napoli 2 Nord",
-   "sha": "458149da243223c5e6793d505c7b5034fda56a519de473cf1d07d2ea06861085",
+   "sha": "0d69c91c4bbc33bc94e819a93e6e9ae7343ab6c8d27ce442e6b93f64188bae08",
    "caratteri": 7809,
    "cambiata": true
   },
@@ -884,8 +952,8 @@
    "certificato": "non valido",
    "file": "napoli/a8448bfc505e.txt",
    "titolo": "U.O.C. URP e Marketing Sanitario – ASL Napoli 2 Nord",
-   "sha": "c0b26f00bb7eaf92983ac30ca4a9fabe4d279f6e075848977407bca87c1a309d",
-   "caratteri": 5914,
+   "sha": "12ed473cf039c0f7b68c6c6685c8b88de2ac6a503b3014d0f3e91c5ede016c78",
+   "caratteri": 5911,
    "cambiata": true
   },
   {
@@ -942,8 +1010,8 @@
    "certificato": "non valido",
    "file": "napoli/1d583e81f431.txt",
    "titolo": "Screening Oncologici – ASL Napoli 2 Nord",
-   "sha": "f76241f87af083741c37c2b4195aa20cfe8828450c31c8be759d92e5d9f51d1a",
-   "caratteri": 32346,
+   "sha": "c286241da41f5c5bb27e92b8130aaf0433ef8fe7ff3ca6ef29f0eb31231c06cd",
+   "caratteri": 32352,
    "link_pdf": [
     {
      "url": "https://www.aslnapoli2nord.it/images/screening/pieghevole_A4_albanese_campania.pdf",
@@ -1056,8 +1124,8 @@
    "certificato": "non valido",
    "file": "napoli/50dc9aeab0db.txt",
    "titolo": "Distretti – ASL Napoli 2 Nord",
-   "sha": "6a69d8ffd1ad17d7fb942071b37e380893fe74cfe90721a3b6003bc99b87bf26",
-   "caratteri": 6413,
+   "sha": "fad3b244b540e19d84d73cd4ac235adcdc21f550da913983c18b4e9d3bb05310",
+   "caratteri": 6414,
    "cambiata": true
   },
   {
@@ -1070,6 +1138,69 @@
    "sha": "4a0956b86609de924366221889efc04e74ac99150ad01ec887d62a7a6f833d85",
    "caratteri": 2754,
    "cambiata": false
+  },
+  {
+   "asl": "napoli",
+   "url": "https://www.aslnapoli1centro.it/consultorio-ds29",
+   "controllata": "2026-11-01",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "napoli/feae1dccd230.txt",
+   "titolo": "Consultorio - Portal Na 1",
+   "sha": "873572ca519658ee19a0cf2ecaf425fec41873483274cf083db2ce55c72537c0",
+   "caratteri": 9091,
+   "cambiata": true
+  },
+  {
+   "asl": "napoli",
+   "url": "https://www.aslnapoli1centro.it/diagnostica-per-immagini-ds24",
+   "controllata": "2026-11-01",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "napoli/4e0390d97809.txt",
+   "titolo": "Diagnostica per immagini - Portal Na 1",
+   "sha": "022a49313961be253cc71fb4070cf6b55b92961a38ddf01a0aa5aaf60c287c19",
+   "caratteri": 7192,
+   "cambiata": true
+  },
+  {
+   "asl": "napoli",
+   "url": "https://www.aslnapoli1centro.it/tempi-di-attesa",
+   "controllata": "2026-11-01",
+   "http": 428,
+   "finale": "https://aslnapoli1centro.portaleamministrazionetrasparente.it/pagina800_liste-di-attesa.html",
+   "certificato": "non valido"
+  },
+  {
+   "asl": "napoli",
+   "url": "https://www.aslnapoli2nord.it/trasparenza/liste-di-attesa/",
+   "controllata": "2026-11-01",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "napoli/bb8ae0c11329.txt",
+   "titolo": "Liste di attesa – ASL Napoli 2 Nord",
+   "sha": "9fecdb8c2d58923134cad0a888d75bbde9a8682c9ee73507f4f7c34e3e7af93c",
+   "caratteri": 2851,
+   "cambiata": true
+  },
+  {
+   "asl": "napoli",
+   "url": "https://www.aslnapoli2nord.it/servizi/prenotazioni/",
+   "controllata": "2026-11-01",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "napoli/a3cc219db89e.txt",
+   "titolo": "Prenotazioni – ASL Napoli 2 Nord",
+   "sha": "0a7c5b8ce4ac90ce2dd2f78abdc628372e3d7502e2c121fc94691b23a2fa0db5",
+   "caratteri": 17545,
+   "cambiata": true
+  },
+  {
+   "asl": "napoli",
+   "url": "https://screening.aslnapoli2nord.it/",
+   "controllata": "2026-11-01",
+   "http": 0,
+   "errore": "curl: (35) Recv failure: Connection reset by peer"
   },
   {
    "asl": "napoli",
@@ -1172,6 +1303,17 @@
    "titolo": "Cure Domiciliari - ASL Salerno",
    "sha": "3c69e06923821b678018f20c751a684e2d6b08c5de0d3b43aa598aea0d3ba790",
    "caratteri": 6648,
+   "cambiata": false
+  },
+  {
+   "asl": "salerno",
+   "url": "https://www.regione.campania.it/node/32056",
+   "controllata": "2026-11-01",
+   "http": 200,
+   "file": "salerno/aaaa846ec67c.txt",
+   "titolo": "Scelta e revoca del Medico di Medicina Generale (MMG) e del Pediatra di Libera Scelta (PLS) | Regione Campania",
+   "sha": "381116d0303a047e0a1f76c0350a5cb27393116ec11e35a06642855ae8b675b5",
+   "caratteri": 3464,
    "cambiata": false
   },
   {
@@ -1593,7 +1735,7 @@
    "titolo": "CUP Distretto 12 - Asl Caserta",
    "sha": "5f252da67be68f140a6b14a8e914ae362d0638d8a21345b3ddf6eef89fb44a61",
    "caratteri": 28762,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-caserta",
@@ -1603,9 +1745,9 @@
    "certificato": "non valido",
    "file": "asl-caserta/395cd3bbb5ee.txt",
    "titolo": "Punti di Prenotazione Attivi - Asl Caserta",
-   "sha": "9449b293ea6b5e077213f63b7078d8720bfa174aef376266e00bd9f497903740",
-   "caratteri": 43583,
-   "cambiata": false
+   "sha": "0e4feb57b84a27da7f2d4c478fb932db4a8027cd65a461b1e6235079bf771aa0",
+   "caratteri": 43597,
+   "cambiata": true
   },
   {
    "asl": "asl-caserta",
@@ -1677,8 +1819,8 @@
    "certificato": "non valido",
    "file": "asl-napoli-2-nord/a1d7306b646d.txt",
    "titolo": "ASL Napoli 2 Nord",
-   "sha": "637df6987a523bcea909cf56d69914f1366670cd979c7e9628f96596d0e65808",
-   "caratteri": 7568,
+   "sha": "f9fe7c9b0ba6285573590d3f0f5faa83bfbba5055f303eb688f7c51e48319240",
+   "caratteri": 7570,
    "cambiata": true
   },
   {
@@ -1690,8 +1832,8 @@
    "certificato": "non valido",
    "file": "asl-napoli-2-nord/aaa502e24a40.txt",
    "titolo": "Azienda – ASL Napoli 2 Nord",
-   "sha": "e5515f18458ce167327aa67169aa12d77f963725029ddfcc43b143fbf7041b28",
-   "caratteri": 13844,
+   "sha": "ddf0cf320d99a4da29c11a638213045e892f3ed58d2dafcdb9409aa8c7d3a88a",
+   "caratteri": 13842,
    "cambiata": true
   },
   {
@@ -1703,8 +1845,8 @@
    "certificato": "non valido",
    "file": "asl-napoli-2-nord/a040d4f22b9d.txt",
    "titolo": "ASL Napoli 2 Nord",
-   "sha": "f9fe7c9b0ba6285573590d3f0f5faa83bfbba5055f303eb688f7c51e48319240",
-   "caratteri": 7570,
+   "sha": "18cbbf867e7dce690357324589b3507e837e577843b22b6305b0818480de6d60",
+   "caratteri": 7575,
    "cambiata": true
   },
   {
@@ -1773,17 +1915,6 @@
    "sha": "6b0b7aba345f4419ecaafbd3e0d4b812e525ad720419a1e3e02a1388b9980f60",
    "caratteri": 1281,
    "pdf": true,
-   "cambiata": false
-  },
-  {
-   "asl": "medico-online",
-   "url": "https://www.regione.campania.it/node/32056",
-   "controllata": "2026-11-01",
-   "http": 200,
-   "file": "medico-online/aaaa846ec67c.txt",
-   "titolo": "Scelta e revoca del Medico di Medicina Generale (MMG) e del Pediatra di Libera Scelta (PLS) | Regione Campania",
-   "sha": "381116d0303a047e0a1f76c0350a5cb27393116ec11e35a06642855ae8b675b5",
-   "caratteri": 3464,
    "cambiata": false
   },
   {
