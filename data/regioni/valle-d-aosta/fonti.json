@@ -121,6 +121,21 @@
      "url": "https://www.ausl.vda.it/f-a-q/come-fare-per/scelta-e-revoca-del-medico-o-del-pediatra-di-famiglia"
     }
    ]
-  }
+  },
+  {
+   "id": "ticket-pronto-soccorso",
+   "name": "Ticket del pronto soccorso",
+   "tipo": "regione",
+   "_nota": "Indirizzi trovati con la ricerca il 27/10/2026 (docs/piano-contenuti.md, primo giro): il ticket per i codici non urgenti. Da leggere nella copia prima di scriverlo.",
+   "pagine": [
+    {
+     "tipo": "pronto-soccorso",
+     "url": "https://www.ausl.vda.it/Media/AUSL/Hierarchy/7/720/Pagamento%20prestazioni%20di%20Pronto%20Soccorso.pdf"
+    }
+   ]
+  },
+  {"id": "medico-online", "name": "Cambio del medico online", "tipo": "regione", "_nota": "Indirizzi trovati con la ricerca il 27/10/2026 (docs/piano-contenuti.md, link della Regione per il cambio del medico online). Da leggere nella copia prima di scriverlo.", "pagine": [
+   {"tipo": "medico", "url": "https://www2.ausl.vda.it/datapage.asp?id=995&l=1"}
+  ]}
  ]
 }

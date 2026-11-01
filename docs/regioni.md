@@ -39,9 +39,12 @@ elencarle tutte e dire «non ancora disponibile» per quelle vuote.
 
 - `id`: minuscolo, senza accenti, usato nei nomi delle cartelle e in `localStorage`.
 - `attiva`: solo le regioni con `attiva: true` hanno la cartella con i dati e compaiono tra le scelte.
-- `asl_label`: come si chiama l'azienda sanitaria nella regione (ASP in Sicilia, ATS/ASST in Lombardia, ASL quasi
+- `asl_label`: come si chiama l'azienda sanitaria nella regione (ASP in Sicilia, ATS in Lombardia, ASL quasi
   ovunque, AUSL in Emilia‑Romagna, ULSS in Veneto, ASUGI/ASUFC in Friuli…). I testi dei moduli useranno questa
   parola al posto di «ASP» scritto a mano.
+- `asl_label_servizi` (facoltativo): chi dà i servizi, se non è l'azienda di `asl_label`. In Lombardia «ASST»: visite,
+  ospedali, cure a casa, ausili, medico e farmacia sono delle ASST, l'ATS controlla. I JS: `aslLabel()` per i servizi,
+  `aslEnte()` per l'azienda dei dati (siti, numeri, URP, screening).
 
 ### I file di una regione
 
@@ -350,6 +353,7 @@ campo il modulo funziona e dice una frase generica (per esempio «chiedi all'URP
 | tutti | `id`, `name`, `province` (una per azienda), `phones[]`, `emails[]`, `sources[]`, `site_url`; una sede INPS con lo stesso `id` | `contacts[]` con `topic` | `contatti.test` (numeri), `coerenza.test` (id, province, topic, sede INPS) |
 | tutti quelli con una lettera all'azienda (sotto) | `nome_lettera` (se la regione non ha `asl_intestazione`); con `aziende_multiple`: `sub_areas` oggetto con `id`, `label`, `nome_lettera` e `pec`, `emails` o `send_to` | `sub_areas` anche senza `aziende_multiple` (uffici diversi nella stessa azienda) | `coerenza.test` (anche ogni zona con i campi del modulo), `aziende.test`, `browser.cjs` (intestazione e indirizzo della lettera in ogni regione) |
 | `liste-attesa` | `channel`, `letter_mode` (`email`, `pec`, `official_form`, `portal`), `how_to`, `documents_required[]`, `what_next[]`, `notes[]`, `details[]`, `last_verified`; con `email`/`pec`: `send_to` o `pec`; con `official_form`: `form_url` e `form_fields[]` (`label`, `source`); con `portal`: `portal_url`, e `portal_label` se il portale non è sul sito dell'azienda (il pulsante dice «Vai al sito dell'<sigla>»; Lazio: «sito della Regione (Salute Lazio)») | `info_url`, `fast_track`, `sub_areas`, `local_name` e `regional_channel` in cima al file | `coerenza.test` («ogni modulo acceso ha i dati che legge»), `confronta-copie` (PEC e `send_to` in una copia dell'azienda), `combinazioni.cjs` (per ora solo Sicilia) |
+| | Con `letter_mode: "portal"`, `request_name` (facoltativo) dice come si chiama la richiesta online (Lazio: «Pass di garanzia»): il sollecito parla di quella, non di una lettera con protocollo |
 | `cartella-clinica` | `pec` o `emails[]` (il reclamo se l'ospedale è dell'azienda) | `contacts` `topic: "cartelle"`, uno per ospedale, anche quelli delle aziende ospedaliere (dominio in `official_domains`, come il Policlinico di Palermo nell'ASP di Palermo) | `coerenza.test`, `contatti.test` |
 | `medico-famiglia` | `scelta_medico: { how, url }`; `emails[]` o `pec` (la lettera va a `generalContact()`: l'URP, se no la PEC) | `contacts` `topic: "anagrafe"` (sportelli scelta e revoca); `scelta_medico.url_label`, il testo del pulsante di `url` (se manca: «Sito dell'<sigla>»; per esempio «Sito della Regione») | `coerenza.test` |
 | `assistenza-domiciliare` | `emails[]` o `pec` | `contacts` `topic: "casa"` (PUA), `pua_url` | `coerenza.test` |

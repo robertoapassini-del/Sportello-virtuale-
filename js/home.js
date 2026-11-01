@@ -2,7 +2,7 @@
 // alla pagina dell'area (per esempio visite-esami/), come la home di NHS.uk.
 // La ricerca è nella testata: qui i risultati compaiono mentre si scrive.
 import { cerca } from './cerca.js';
-import { esc, loadJSON, loadRegioni, renderFooter, helpBox, sourcesBox, fontiNazionali, aslLabel, regioniAttive, regioneInfo, regioneSalvata, inRegione, count, eventoRicerca, eventoClic, idRegioneScelta, MAINTAINER_EMAIL } from './common.js';
+import { esc, loadJSON, loadRegioni, renderFooter, helpBox, sourcesBox, fontiNazionali, aslLabel, aslEnte, regioniAttive, regioneInfo, regioneSalvata, inRegione, count, eventoRicerca, eventoClic, idRegioneScelta, MAINTAINER_EMAIL } from './common.js';
 
 const app = document.getElementById('app');
 let reg;
@@ -113,7 +113,7 @@ function render() {
 
 // La pagina «Numeri utili» non è un modulo, ma la ricerca deve trovarla.
 const NUMERI = {
-  id: 'numeri-utili', icon: '📞', title: 'Numeri utili', get small() { return `Guardia medica, CUP, ${aslLabel()}, INPS`; },
+  id: 'numeri-utili', icon: '📞', title: 'Numeri utili', get small() { return `Guardia medica, CUP, ${aslEnte()}, INPS`; },
   keywords: 'numero numeri telefono chiamare guardia medica notte cup urp centralino inps tessera sanitaria farmacia turno violenza 1522 112 118 116117 pua pronto soccorso ambulanza urgente urgenza urgenze emergenza sto male malore continuita assistenziale festivi ats asst ausl ulss azienda sanitaria',
 };
 

@@ -16,18 +16,12 @@ Nota per continuare da un altro computer o in una nuova sessione con Claude.
 
 **Prima di tutto (23/10/2026, dalle ricerche su Google Trends, `docs/ricerche-frequenti.md` punto 3b):**
 
-A. **Link al fascicolo sanitario di ogni Regione.** Fatto il 23/10/2026 per 10 regioni più la Sicilia (CHANGELOG).
-   Resta da fare:
-   - fatto il 24/10/2026 per Veneto, Friuli-Venezia Giulia, Calabria e Puglia (15 regioni in tutto);
-   - fatto il 24/10/2026 anche per Marche (pagina dell'AST Fermo) e Trentino-Alto Adige (un link per Trento e uno
-     per Bolzano): 17 regioni;
-   - Lombardia, Lazio, Campania: in `regole_fonti.fse` c'è una pagina ufficiale nuova, senza `proof`. Dopo la copia:
-     leggere `copie/<regione>/regole/`, mettere `verified`, `proof: "pagina"`, la frase in `nota`, poi `link.fse`;
+A. **Link al fascicolo sanitario di ogni Regione.** Fatto per tutte le 20 regioni il 30/10/2026 (CHANGELOG). Resta:
    - Marche: se fse.sanita.marche.it/it si copia, si può passare dal link dell'AST Fermo a quello del portale;
    - i nomi dei portali (Salute Lazio, Puglia Salute, Sinfonia, Sanità km zero…) nelle parole chiave della ricerca,
      solo se sono nei dati con la fonte.
 
-B. **Pagina «Pronto soccorso e guardia medica».** Insieme valgono 3 volte la legge 104 e non hanno una pagina:
+B. **Fatto** (pagine `pronto-soccorso/`, `guardia-medica/`, `urgenze/`). **Pagina «Pronto soccorso e guardia medica».** Insieme valgono 3 volte la legge 104 e non hanno una pagina:
    quando andare, codici colore, ticket del codice bianco (cambia per regione, solo da delibere), chi chiamare di
    notte e nei festivi. Picchi: Natale ed estate.
 

@@ -51,6 +51,17 @@ test('titoli: al massimo 60 caratteri; « – Guida Sanità» solo sui titoli co
   assert.deepEqual(brutti, []);
 });
 
+test('descrizioni: al massimo 155 caratteri (Google ne mostra circa 150-160, sul telefono meno)', () => {
+  // 27/10/2026: quasi tutte erano tra 250 e 415 caratteri; su Google restava una frase tagliata, spesso prima della cifra utile.
+  const brutti = [];
+  for (const p of pagine) {
+    const d = testo((p.html.match(/<meta name="description" content="([^"]*)">/) || [, ''])[1]);
+    if (d.length < 50) brutti.push(`${p.file}: descrizione corta o mancante (${d.length} caratteri)`);
+    if (d.length > 155) brutti.push(`${p.file}: ${d.length} caratteri`);
+  }
+  assert.deepEqual(brutti, []);
+});
+
 test('dati strutturati: JSON valido; nome e logo nella home; percorso ovunque; Article nelle guide', () => {
   const home = pagine.find((p) => p.file === 'index.html').html;
   const g = ld(home)[0]['@graph'];

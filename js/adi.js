@@ -44,7 +44,7 @@ const screens = {
     html: `${progress(1, 3)}
       <h1>👨‍👩‍👧 In famiglia c'è almeno una di queste persone?</h1>
       <ul class="icon-list">${rules.household_conditions.map((c) => `<li><span class="ico" aria-hidden="true">👉</span>${esc(c)}</li>`).join('')}</ul>
-      <p>Basta una sola. Conta chi è nello stesso stato di famiglia.</p>
+      <p>Basta una sola. Conta la famiglia scritta nell'ISEE.</p>
       ${choice('✅', 'Sì', { household: true }, 'residency')}
       ${choice('❌', 'No, nessuna', { household: false }, 'residency')}
       ${choice('🤷', 'Non lo so', { household: null }, 'residency', 'Per esempio: la disabilità non è ancora riconosciuta')}`,
@@ -97,7 +97,7 @@ const screens = {
           <h1>Con questi dati non ci sono le condizioni</h1>
           <div class="notice warn"><p>Perché: ${esc(r.reasons.map((k) => why[k]).join('; '))}.</p></div>
           <p>Se qualcosa cambia (per esempio viene riconosciuta una disabilità, o l'ISEE scende), puoi rifare il controllo.</p>
-          <p>Per chi tra 18 e 59 anni può lavorare c'è un altro aiuto, il <strong>Supporto per la formazione e il lavoro</strong>: chiedi al patronato o al CAF.</p>
+          ${r.reasons.length === 1 && r.reasons[0] === 'household' ? '<p>Per chi tra 18 e 59 anni può lavorare c\'è un altro aiuto, il <strong>Supporto per la formazione e il lavoro</strong>: chiedi al patronato o al CAF.</p>' : ''}
           ${caf}
           ${disclaimer(rules.last_verified)}
           ${restartBtn()}`,

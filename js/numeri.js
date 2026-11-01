@@ -3,7 +3,7 @@
 // È il modulo di prova per più regioni (docs/regioni.md, passo 3): cambiando regione i dati si ricaricano
 // senza ricaricare la pagina; per una regione non ancora attiva resta la parte nazionale e l'invito a scriverci.
 // La provincia scelta va nell'indirizzo (#palermo), così la pagina si può condividere.
-import { esc, loadJSON, loadRegional, renderFooter, helpBox, sourcesBox, callButton, hideHeadingEmoji, aslLabel, regioneInfo, inRegione, regione, regioneScelta, fontiNazionali, regioneDeiDati, regioneNonPronta, setRegione } from './common.js';
+import { esc, loadJSON, loadRegional, renderFooter, helpBox, sourcesBox, callButton, hideHeadingEmoji, aslEnte, regioneInfo, inRegione, regione, regioneScelta, fontiNazionali, regioneDeiDati, regioneNonPronta, setRegione } from './common.js';
 import { needsRegion, regionChoices, changeRegionLink, regionAction, regionMissing } from './flow.js';
 
 const ROOT = '../';
@@ -36,7 +36,7 @@ const link = (l) => `<div class="card num">
 // Contatti dell'azienda sanitaria divisi per argomento (campo contacts, topic). È una funzione
 // perché i testi usano la sigla dell'azienda sanitaria della regione scelta.
 const topics = () => [
-  ['guardia', '🩺 Guardia medica', `Di solito risponde la sera dalle 20 alle 8, nei fine settimana e nei giorni di festa. Ogni zona ha il suo numero: se il tuo non c'è, guarda l'elenco sul sito dell'${aslLabel()}.`],
+  ['guardia', '🩺 Guardia medica', `Di solito risponde la sera dalle 20 alle 8, nei fine settimana e nei giorni di festa. Ogni zona ha il suo numero: se il tuo non c'è, guarda l'elenco sul sito dell'${aslEnte()}.`],
   ['cup', '📅 Prenotare visite ed esami (CUP)', 'Tieni pronta la ricetta e la tessera sanitaria.'],
   ['urp', '🏥 Ufficio per i cittadini (URP)', 'Per reclami, informazioni e quando non sai a chi chiedere.'],
   ['casa', '🏠 Infermiere e cure a casa (PUA)', "Il PUA è lo sportello del distretto per l'assistenza a casa. Chiama quello del tuo comune."],
@@ -63,9 +63,9 @@ function inpsBlock(id) {
 function aspBlock(a) {
   if (!a) return '';
   const pages = [
-    a.site_url && [`Sito dell'${aslLabel()}`, a.site_url],
+    a.site_url && [`Sito dell'${aslEnte()}`, a.site_url],
     a.guardia_medica_url && ['Guardia medica: tutte le sedi e i numeri', a.guardia_medica_url],
-    a.pua_url && [`Cure a casa (PUA): pagina dell'${aslLabel()}`, a.pua_url],
+    a.pua_url && [`Cure a casa (PUA): pagina dell'${aslEnte()}`, a.pua_url],
   ].filter(Boolean);
   const contacts = a.contacts || [];
   return `<section id="asp-numeri" aria-labelledby="asp-title">
@@ -77,7 +77,7 @@ function aspBlock(a) {
         ${tip ? `<p>${esc(tip)}</p>` : ''}
         ${list.map(item).join('')}
         ${t === 'guardia' && a.guardia_medica_url ? `<p>${ext(a.guardia_medica_url, 'Tutte le sedi della guardia medica')}</p>` : ''}
-        ${t === 'guardia' && !list.length && !a.guardia_medica_url ? `<p>Non abbiamo ancora il numero: chiedi al centralino dell'${esc(aslLabel())} o al tuo medico di famiglia.</p>` : ''}`;
+        ${t === 'guardia' && !list.length && !a.guardia_medica_url ? `<p>Non abbiamo ancora il numero: chiedi al centralino dell'${esc(aslEnte())} o al tuo medico di famiglia.</p>` : ''}`;
     }).join('')}
     ${inpsBlock(a.id)}
     ${pages.length ? `<h3>💻 Su internet</h3><ul class="clean">${pages.map(([l, u]) => `<li>${ext(u, l)}</li>`).join('')}</ul>` : ''}
@@ -125,7 +125,7 @@ function render() {
     <h1>📞 Numeri utili</h1>
     <p class="lead">I numeri giusti da chiamare${pronta ? ` ${esc(inRegione())}` : ''}. Tocca il numero per chiamare.</p>
     ${group(nums.groups[0])}
-    <h2 id="regione">${pronta ? `I numeri della tua ${esc(aslLabel())}` : 'I numeri della tua regione'}</h2>
+    <h2 id="regione">${pronta ? `I numeri della tua ${esc(aslEnte())}` : 'I numeri della tua regione'}</h2>
     ${data || needsRegion() || regioneNonPronta() ? regionale(id, a, provinces) : `${avvisoRegione()}${changeRegionLink()}`}
     ${nums.groups.slice(1).map(group).join('')}
     ${nums.notes.filter(perMe).map((t) => `<div class="notice info"><p>${esc(nota(t))}</p></div>`).join('')}

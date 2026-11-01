@@ -27,6 +27,23 @@
     "contact_center_mobile": "06 164164",
     "inps_risponde_url": "https://www.inps.it/it/it/sedi-e-contatti/contatti/inps-risponde.html"
   },
+  "pensione_inabilita": {
+    "invalidita_percent": 100,
+    "eta_min_anni": 18,
+    "eta_max_anni": 67,
+    "importo_mensile_2026": 340.71,
+    "mensilita": 13,
+    "income_limit_2026": 20029.55
+  },
+  "assegno_mensile": {
+    "invalidita_percent_min": 74,
+    "invalidita_percent_max": 99,
+    "eta_min_anni": 18,
+    "eta_max_anni": 67,
+    "importo_mensile_2026": 340,
+    "mensilita": 13,
+    "income_limit_2026": 5852.21
+  },
   "provenienza": {
     "new_regime.deadline_days": {
       "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:2024-05-03;62",
@@ -96,6 +113,20 @@
       "proof": "estratto",
       "review_by": "2027-01-01",
       "nota": "Data in cui la riforma vale ovunque: i decreti di proroga escono spesso a fine anno."
+    },
+    "pensione_inabilita": {
+      "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.pensione-di-inabilit-agli-invalidi-civili.html",
+      "verified": "2026-10-31",
+      "proof": "testo",
+      "review_by": "2027-01-31",
+      "nota": "Scheda INPS «Pensione di inabilità agli invalidi civili» (ultimo aggiornamento 20/07/2026), copia del server del 31/10/2026: «Per il 2026 l’importo della pensione è di 340,71 euro e viene corrisposto per 13 mensilità.» «Il limite di reddito personale annuo è pari a 20.029,55 euro.» Requisiti: «inabilità totale e permanente (100%)», «età compresa tra i 18 e i 67 anni». «Al compimento dell’età anagrafica per il diritto all’assegno sociale (per il 2026 pari a 67 anni), la pensione di inabilità si trasforma in assegno sociale sostitutivo.» Cambiano ogni gennaio (circolare INPS 153 del 19/12/2025)."
+    },
+    "assegno_mensile": {
+      "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.assegno-mensile-di-assistenza.html",
+      "verified": "2026-10-31",
+      "proof": "testo",
+      "review_by": "2027-01-31",
+      "nota": "Scheda INPS «Assegno mensile di assistenza» (ultimo aggiornamento 20/07/2026), copia del server del 31/10/2026: «Per il 2026 l’importo dell’assegno è di 340 euro. Il limite di reddito personale annuo è pari a 5.852,21 euro.» Requisiti: «percentuale di invalidità compresa tra il 74% e il 99%», «mancato svolgimento di attività lavorativa» (la scheda cita il decreto-legge del 2021 che ha ridefinito l'inattività lavorativa: da rileggere su Normattiva prima di citarlo sul sito), «età compresa tra i 18 e i 67 anni», residenza stabile in Italia. «L’assegno mensile di assistenza viene corrisposto per 13 mensilità». A 67 anni «si trasforma in assegno sociale sostitutivo». Il 30/10/2026 il sito scriveva 340,71 euro preso dalla circolare 153/2025: nella circolare quella riga è dei ciechi civili; vale la scheda."
     }
   },
   "sources": [
@@ -130,6 +161,18 @@
     {
       "label": "L. 6/2004 (amministratore di sostegno)",
       "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2004-01-09;6"
+    },
+    {
+      "label": "INPS – Pensione di inabilità agli invalidi civili",
+      "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.pensione-di-inabilit-agli-invalidi-civili.html"
+    },
+    {
+      "label": "INPS – Assegno mensile di assistenza",
+      "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.assegno-mensile-di-assistenza.html"
+    },
+    {
+      "label": "INPS – Circolare 153 del 19/12/2025, allegato 2 (importi 2026)",
+      "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2025/12/Circolare_15109/Allegati/16486_Circolare-numero-153-del-19-12-2025_Allegato-n-2.pdf"
     }
   ]
 }

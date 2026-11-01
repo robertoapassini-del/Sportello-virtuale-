@@ -138,20 +138,29 @@ ${signature(p, today)}
 }
 
 // Modulo 1 — sollecito se l'ASP non risponde.
-export function tutelaReminder({ intestazione, ente = 'Azienda Sanitaria Provinciale', aspName, aspAddress, person: p, service, nre, cls, firstRequestDate, protocol, today }) {
+// portale: la richiesta fatta online (Lazio: il Pass di garanzia sul sito Salute Lazio), non con una lettera:
+// { nome: 'Pass di garanzia', canale: 'sito della Regione (Salute Lazio)' }. Revisione del 26/10/2026.
+export function tutelaReminder({ intestazione, ente = 'Azienda Sanitaria Provinciale', aspName, aspAddress, person: p, service, nre, cls, firstRequestDate, protocol, today, portale = null }) {
+  const data = firstRequestDate ? formatIt(firstRequestDate) : '__________';
+  const richiesta = portale
+    ? `in data ${data} ha attivato${portale.canale ? `, tramite il ${portale.canale},` : ''} ${portale.nome ? `il ${portale.nome}` : 'la richiesta di garanzia dei tempi di attesa'} per la prestazione sopra indicata (n. ${blank(protocol, '___')}).`
+    : `in data ${data} ha chiesto l'attivazione del percorso di tutela per la prestazione sopra indicata (protocollo n. ${blank(protocol, '___')}).`;
+  const allega = portale
+    ? `la ricevuta o la schermata ${portale.nome ? `del ${portale.nome}` : 'della richiesta'} ${art('del', firstRequestDate)}${data}${extra(p)}`
+    : `copia della richiesta ${art('del', firstRequestDate)}${data} e relativi allegati${extra(p)}`;
   return `Spett.le ${intestazione || `${ente} di ${aspName}`}
 ${aspAddress || ''}
 
-Oggetto: SOLLECITO – Richiesta di attivazione del percorso di tutela ${art('del', firstRequestDate)}${firstRequestDate ? formatIt(firstRequestDate) : '__________'} (prestazione "${blank(service)}", ricetta n. ${blank(nre)}, classe di priorità ${cls})
+Oggetto: SOLLECITO – ${portale && portale.nome ? portale.nome : 'Richiesta di attivazione del percorso di tutela'} ${art('del', firstRequestDate)}${data} (prestazione "${blank(service)}", ricetta n. ${blank(nre)}, classe di priorità ${cls})
 
 ${personBlock(p)}
 
-in data ${firstRequestDate ? formatIt(firstRequestDate) : '__________'} ha chiesto l'attivazione del percorso di tutela per la prestazione sopra indicata (protocollo n. ${blank(protocol, '___')}). Alla data odierna non ha ricevuto risposta né proposta di appuntamento entro i tempi massimi previsti.
+${richiesta} Alla data odierna non ha ricevuto risposta né proposta di appuntamento entro i tempi massimi previsti.
 
 SOLLECITA
 un riscontro nel più breve tempo possibile e l'erogazione della prestazione secondo quanto previsto dal Piano Nazionale di Governo delle Liste d'Attesa 2026-2028 ovvero, in mancanza, l'erogazione in regime libero-professionale intramurario con il solo pagamento del ticket (D.Lgs. 124/1998, art. 3, c. 13).
 ${delegateBlock(p)}
-Allega: copia della richiesta ${art('del', firstRequestDate)}${firstRequestDate ? formatIt(firstRequestDate) : '__________'} e relativi allegati${extra(p)}.
+Allega: ${allega}.
 
 ${signature(p, today)}
 `;
@@ -166,7 +175,7 @@ export function inpsReminder({ provinceName, inpsPec, person: p, certNumber, cer
   const why = category === 'oncological' ? ' trattandosi di persona con patologia oncologica, come indicato nel certificato,'
     : category === 'minor' && regime === 'new' ? ' trattandosi di minore,' : '';
   const what = regime === 'new'
-    ? `il procedimento di valutazione di base doveva concludersi entro ${deadlineInfo.days} giorni dalla trasmissione del certificato`
+    ? `il procedimento di valutazione di base doveva concludersi entro ${deadlineInfo.days} giorni dalla trasmissione del certificato, e non è stata comunicata alcuna sospensione per integrazione documentale`
     : `la visita doveva svolgersi entro ${deadlineInfo.days} giorni dalla domanda`;
   // Senza base di legge (vecchia procedura ordinaria) i 30 giorni sono indicativi: si dice solo quanto tempo è passato.
   const elapsed = domandaDate && today ? daysBetween(domandaDate, today) : null;
@@ -234,7 +243,7 @@ PREMESSO CHE
 - alla data odierna non ha ricevuto quanto richiesto né alcuna comunicazione;
 
 SOLLECITA
-la consegna della documentazione richiesta nel più breve tempo possibile e chiede di essere informato/a per iscritto su data e modalità di ritiro. Chiede inoltre che la prima copia sia rilasciata gratuitamente, ai sensi dell'art. 15 del Regolamento UE 2016/679 (GDPR).
+la consegna della documentazione richiesta nel più breve tempo possibile e chiede di essere informato/a per iscritto su data e modalità di ritiro. Chiede inoltre, per i propri dati personali, che la prima copia sia rilasciata gratuitamente, ai sensi dell'art. 15 del Regolamento UE 2016/679 (GDPR).
 ${delegateBlock(p)}
 Allega: copia del documento di identità; copia della richiesta ${art('del', requestDate)}${requestDate ? formatIt(requestDate) : '__________'}${extra(p)}.
 

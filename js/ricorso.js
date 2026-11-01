@@ -58,7 +58,7 @@ const screens = {
     html: `
       <div class="hero" aria-hidden="true">⏳</div>
       <h1>Prima serve il verbale</h1>
-      <p>Il ricorso si può fare solo dopo aver ricevuto il verbale. I ${rules.appeal_months} mesi partono da quel giorno.</p>
+      <p>Il ricorso si può fare solo dopo aver ricevuto il verbale. Per stare tranquillo conta i ${rules.appeal_months} mesi dalla data scritta sul verbale.</p>
       <p>Se la visita non arriva, c'è un'altra pagina che ti aiuta:</p>
       <a class="btn choice" href="../invalidita/"><span class="ico" aria-hidden="true">♿</span><span class="txt">Invalidità civile: la domanda e la visita</span></a>
       ${disclaimer(rules.last_verified)}
@@ -67,9 +67,9 @@ const screens = {
 
   date: () => ({
     html: `
-      <h1>📅 Che giorno hai ricevuto il verbale?</h1>
+      <h1>📅 Che data c'è scritta sul verbale?</h1>
       <p>La legge conta i ${rules.appeal_months} mesi dal giorno in cui il verbale ti è arrivato (raccomandata, email o PEC). L'INPS invece scrive che contano dalla data del verbale. <strong>Per stare tranquillo, usa la data scritta sul verbale</strong>: viene prima, quindi la scadenza è più prudente.</p>
-      ${dateForm({ id: 'v-form', name: 'verbaleDate', label: 'Data scritta sul verbale (o giorno in cui l\'hai ricevuto)', value: state.verbaleDate, button: '✔️ Controlla', max: todayISO() })}`,
+      ${dateForm({ id: 'v-form', name: 'verbaleDate', label: 'Data scritta sul verbale', value: state.verbaleDate, button: '✔️ Controlla', max: todayISO() })}`,
     mount() {
       document.getElementById('v-form').addEventListener('submit', (e) => {
         e.preventDefault();

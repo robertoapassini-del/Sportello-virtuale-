@@ -63,6 +63,7 @@ const PAGINE = {
   '/decreto': `<html><head><title>Decreto</title></head><body><p>${lungo}</p></body></html>`,
   '/ministero': `<html><head><title>Ministero</title></head><body><p>${lungo}</p></body></html>`,
   '/gcore': '<html><head><title>Gcore</title></head><body><h1>Please enable cookies</h1><p>This website uses a security service to protect itself from online attacks. The service requires full cookie support to view the website. Enable cookies on your browser and try again.</p><h2>Browser Validation Page</h2><p>www.salute.gov.it is using security service for protection against online attacks. This process is automatic. You will be redirected once the validation is complete.</p><p>Reference ID 62ed87d89e5ddf992814dcf0e7d01302</p><p>IP address 195.231.79.234</p><p>Date and time 10/24/2026 08:56 AM UTC</p></body></html>',
+  '/rifiutata': '<html><head><title>Request Rejected</title></head><body>Request Rejected The requested URL was rejected. Please consult with your administrator.<br><br>Your support ID is: &lt;7090491115415635082&gt;<br><br><a href="javascript:history.back();">[Go Back]</a></body></html>',
 };
 const FILE = {
   '/modulo.pdf': pdf('Modulo di reclamo URP tel. 0577 535222'),
@@ -112,7 +113,7 @@ function sito() {
   w('data/numeri.json', { groups: [{ id: 'emergenze', items: [{ number: '112', url: `${base}/nazionale` }] }] });
   // Regole nazionali (fonti e provenienza) e pagine dei temi da scrivere.
   w('data/rules-prova.json', { sources: [{ label: 'Legge', url: `${base}/legge` }], provenienza: { soglia: { url: `${base}/decreto`, proof: 'testo' }, altra: { url: `${base}/legge` } } });
-  w('data/fonti-nazionali.json', { temi: [{ id: 'pronto-soccorso', pagine: [{ tipo: 'ministero', url: `${base}/ministero` }, { tipo: 'ministero', url: `${base}/gcore` }, { tipo: 'accordo', url: `${base}/grande.pdf` }] }] });
+  w('data/fonti-nazionali.json', { temi: [{ id: 'pronto-soccorso', pagine: [{ tipo: 'ministero', url: `${base}/ministero` }, { tipo: 'ministero', url: `${base}/gcore` }, { tipo: 'ministero', url: `${base}/rifiutata` }, { tipo: 'accordo', url: `${base}/grande.pdf` }] }] });
   return s;
 }
 
@@ -161,6 +162,9 @@ test('un giro di copie.mjs su pagine finte', { skip: !conCurl && 'manca curl' },
   assert.ok(PAGINE['/gcore'].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').length > 500);
   const gcore = naz.find((p) => p.url === `${base}/gcore`);
   assert.ok(!gcore.file && /anti-robot/.test(gcore.nota || ''), JSON.stringify(gcore));
+  // La pagina «Request Rejected» del filtro dell'ISS (26/10/2026) nemmeno.
+  const rifiutata = naz.find((p) => p.url === `${base}/rifiutata`);
+  assert.ok(!rifiutata.file && /anti-robot/.test(rifiutata.nota || ''), JSON.stringify(rifiutata));
 
   // Lo stesso PDF di più di 5 MB: nelle fonti nazionali si copia (limite di 20 MB), nelle regioni no (sotto).
   if (conPdftotext || /l'ha fatto pdf\.js/.test(log)) {

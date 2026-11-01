@@ -199,7 +199,7 @@ const screens = {
         <div class="hero" aria-hidden="true">${late ? '⚠️' : '⏳'}</div>
         <h1>${late ? 'Aspetti da troppo: sollecita' : 'La richiesta è partita'}</h1>
         <div class="notice ${late ? 'bad' : 'info'}">
-          <p>Hai fatto la richiesta ${art('il', state.requestDate)}${esc(formatIt(state.requestDate))}: sono passati <strong>${days(waited)}</strong>.</p>
+          <p>Hai fatto la richiesta ${art('il', state.requestDate)}${esc(formatIt(state.requestDate))}: ${waited === 0 ? 'è di oggi' : `sono passati <strong>${days(waited)}</strong>`}.</p>
           <p>La legge non fissa un numero di giorni per la valutazione a casa. ${late
             ? `Ma ${rules.reminder_after_days} giorni senza notizie sono troppi: è il momento di sollecitare.`
             : `Se entro ${art('il', remindOn)}<strong>${esc(formatIt(remindOn))}</strong> nessuno ti ha chiamato, torna qui per sollecitare.`}</p>

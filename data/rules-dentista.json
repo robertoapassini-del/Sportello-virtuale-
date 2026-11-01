@@ -4,6 +4,7 @@
   "eta_minori_max": 14,
   "isee_vulnerabilita_sociale": 8000,
   "detrazione_percent": 19,
+  "detrazione_franchigia_euro": 129.11,
   "provenienza": {
     "eta_minori_max": {
       "url": "https://www.salute.gov.it/portale/lea/dettaglioContenutiLea.jsp?lingua=italiano&id=4706&area=Lea&menu=ambulatoriale",
@@ -18,6 +19,13 @@
       "proof": "secondaria",
       "review_by": "2027-01-31",
       "nota": "Soglia ISEE della vulnerabilità sociale: la fissa la Regione; 8.000 euro è il valore citato dalle guide per molte regioni. Sul sito è scritto «intorno agli 8.000 euro in molte regioni». Da verificare per la Sicilia."
+    },
+    "detrazione_franchigia_euro": {
+      "url": "https://www1.agenziaentrate.gov.it/web_app_entrate/spese_sanitarie.html",
+      "verified": "2026-10-27",
+      "proof": "testo",
+      "review_by": "2027-10-27",
+      "nota": "Agenzia delle Entrate, guida «Le spese sanitarie», copia del server del 27/10/2026: «È possibile portare in detrazione dall’Irpef il 19% delle spese sanitarie per la parte eccedente l’importo di 129,11 euro. In sostanza, la detrazione spettante è pari al 19% della differenza tra il totale della somma spesa e la franchigia di 129,11 euro». La ripartizione in quattro quote guarda all'«ammontare complessivo annuo» delle spese."
     },
     "detrazione_percent": {
       "url": "https://www.agenziaentrate.gov.it/portale/web/guest/schede/agevolazioni/detrazioni-spese-sanitarie",
@@ -35,6 +43,10 @@
     {
       "label": "Ministero della Salute – LEA, DPCM 12/01/2017, allegato 4C (condizioni per avere le cure del dentista dal Servizio sanitario)",
       "url": "https://www.salute.gov.it/portale/lea/dettaglioContenutiLea.jsp?lingua=italiano&id=4702&area=Lea&menu=leaEssn"
+    },
+    {
+      "label": "Agenzia delle Entrate – Le spese sanitarie: detrazione del 19% e franchigia",
+      "url": "https://www1.agenziaentrate.gov.it/web_app_entrate/spese_sanitarie.html"
     }
   ]
 }

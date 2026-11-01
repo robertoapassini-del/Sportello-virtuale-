@@ -419,6 +419,36 @@
      "url": "https://www.asl5.liguria.it/PerilCittadino/Serviziterritoriali.aspx"
     }
    ]
-  }
+  },
+  {
+   "id": "ticket-pronto-soccorso",
+   "name": "Ticket del pronto soccorso",
+   "tipo": "regione",
+   "_nota": "Indirizzi trovati con la ricerca il 27/10/2026 (docs/piano-contenuti.md, primo giro): il ticket per i codici non urgenti. Da leggere nella copia prima di scriverlo.",
+   "pagine": [
+    {
+     "tipo": "pronto-soccorso",
+     "url": "https://www.asl1.liguria.it/emergenze-e-guardia-medica/codice-bianco-pronto-soccorso.html"
+    }
+   ]
+  },
+  {"id": "medico-online", "name": "Cambio del medico online", "tipo": "regione", "_nota": "Indirizzi trovati con la ricerca il 27/10/2026 (docs/piano-contenuti.md, link della Regione per il cambio del medico online). Da leggere nella copia prima di scriverlo.", "pagine": [
+   {"tipo": "medico", "url": "https://www.asl3.liguria.it/medici-e-pediatri/cambio-medico.html"},
+   {"tipo": "medico", "url": "https://www.regione.liguria.it/component/content/article.html?id=36301&Itemid=8220"}
+  ]},
+  {"id": "ticket-farmaci", "name": "Ticket dei farmaci", "tipo": "regione", "_nota": "Indirizzi trovati con la ricerca il 27/10/2026 (docs/piano-contenuti.md, secondo giro: il ticket dei farmaci). Da leggere nella copia prima di scriverlo.", "pagine": [
+   {"tipo": "farmaci", "url": "https://www.regione.liguria.it/homepage-salute/come-fare-per/esenzione-ticket.html"},
+   {"tipo": "farmaci", "url": "https://www.asl3.liguria.it/prenotazioni-e-ticket/esenzione-per-patologia-cronica-o-malattia-rara.html"}
+  ]},
+  {"id": "esenzione-patologia", "name": "Esenzione per malattia cronica o rara", "tipo": "regione", "_nota": "Indirizzi trovati con la ricerca il 27/10/2026 (docs/piano-contenuti.md, secondo giro: esenzione per malattia cronica o rara). Da leggere nella copia prima di scriverlo.", "pagine": [
+   {"tipo": "esenzione-patologia", "url": "https://www.asl3.liguria.it/prenotazioni-e-ticket/esenzione-per-patologia-cronica-o-malattia-rara.html"}
+  ]},
+  {"id": "trasporto-sanitario", "name": "Trasporto sanitario non urgente", "tipo": "regione", "_nota": "Indirizzi trovati con la ricerca il 27/10/2026 (docs/piano-contenuti.md, secondo giro: trasporto sanitario non urgente). Da leggere nella copia prima di scriverlo.", "pagine": [
+   {"tipo": "trasporto-sanitario", "url": "https://www.asl3.liguria.it/territorio/servizi/cure-primarie/item/200-rilascio-autorizzazioni-per-trasporti-programmati-in-ambulanza.html"},
+   {"tipo": "trasporto-sanitario", "url": "https://www.asl3.liguria.it/territorio/servizi/cure-primarie/item/199-rimborsi-emodialisi.html"}
+  ]},
+  {"id": "riabilitazione", "name": "Riabilitazione: fisioterapia e logopedia", "tipo": "regione", "_nota": "Indirizzi trovati con la ricerca il 27/10/2026 (docs/piano-contenuti.md, secondo giro: riabilitazione: fisioterapia e logopedia). Da leggere nella copia prima di scriverlo.", "pagine": [
+   {"tipo": "riabilitazione", "url": "https://www.asl3.liguria.it/component/content/article/82-struttura-complessa-recupero-e-rieducazione-funzionale.html?catid=1051"}
+  ]}
  ]
 }

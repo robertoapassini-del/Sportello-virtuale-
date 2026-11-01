@@ -2,7 +2,7 @@
 // Prima la risposta: la pagina mostra subito la risposta scritta; il percorso per età parte dal pulsante.
 // Regole fisse per età e sesso. Non chiediamo la malattia.
 import { prevenzione, numeroScreening } from './engine.js';
-import { esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, readForm, callButton, officeBox, aslLabel, regione, regioneNonPronta, fontiNazionali } from './common.js';
+import { esc, loadJSON, loadRegional, disclaimer, renderFooter, avvisoErrore, readForm, callButton, officeBox, aslLabel, aslEnte, regione, regioneNonPronta, fontiNazionali } from './common.js';
 import { createFlow, choice, restartBtn, progress, needsRegion, showError } from './flow.js';
 
 const ROOT = '../';
@@ -81,7 +81,7 @@ const screens = {
         <h2>Come prenotare</h2>
         <ol class="big-steps">
           <li><strong>Chiedi al medico di famiglia:</strong> sa quali controlli ti mancano e fa molti vaccini direttamente nello studio.</li>
-          <li><strong>Per gli esami contro i tumori</strong> chiama il numero dello screening dell'${aslLabel()}${a ? ` di ${esc(a.province)}` : ''}${num ? `: <strong>${esc(num)}</strong>` : elenco ? ': trovi i numeri qui sotto, con il nome di ogni ufficio' : ' (te lo dà il CUP o l\'URP)'}. Se hai ricevuto una lettera di invito, c'è scritto il numero.</li>
+          <li><strong>Per gli esami contro i tumori</strong> chiama il numero dello screening dell'${aslEnte()}${a ? ` di ${esc(a.province)}` : ''}${num ? `: <strong>${esc(num)}</strong>` : elenco ? ': trovi i numeri qui sotto, con il nome di ogni ufficio' : ' (te lo dà il CUP o l\'URP)'}. Se hai ricevuto una lettera di invito, c'è scritto il numero.</li>
           <li><strong>Per i vaccini</strong> puoi andare anche al centro vaccinale dell'${aslLabel()} o, dove c'è il servizio, in farmacia.</li>
         </ol>
         ${scr ? officeBox(a, 'screening', '🎗️ Prenotare gli esami contro i tumori') : num ? callButton('Numero verde screening', num) : ''}
