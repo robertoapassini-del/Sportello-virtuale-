@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 02/11/2026 — Basilicata: cure palliative accese, pagine per screening e liste d'attesa
+- `data/regioni/index.json`: in Basilicata acceso `cure-palliative` (legge `emails[]` o `pec` dell'ASP di Potenza e dell'ASM di Matera, già provati).
+- `data/regioni/basilicata/asl.json`: in `pagine[]` di ogni azienda le pagine degli screening della Regione (salute.basilicata.it, screening.regione.basilicata.it), da copiare; `todo` aggiornato. `prevenzione` resta spento finché la copia non dà il contatto.
+- `data/regioni/basilicata/fonti.json`: in `pagine[]` della Regione la notizia e il PDF del Piano regionale liste d'attesa 2025, da copiare. `liste-attesa` resta spento.
+
 ## 01/11/2026 — IndexNow: Bing rilegge subito le pagine cambiate
 - `3c0ecdf89c2ace8539d2e7f0c68d136f.txt`: il file della chiave IndexNow nella cartella del sito (la chiave è pubblica per scelta: prova che il sito è nostro).
 - `tools/indexnow.mjs`: trova le pagine HTML cambiate tra due commit e le manda a api.indexnow.org (Bing, DuckDuckGo e gli altri motori che usano IndexNow). Con `--prova` stampa e non manda niente.
