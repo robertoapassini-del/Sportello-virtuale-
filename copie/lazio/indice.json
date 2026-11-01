@@ -1,6 +1,6 @@
 {
  "regione": "lazio",
- "aggiornato": "2026-11-01T11:21:00.083Z",
+ "aggiornato": "2026-11-01T17:36:50.303Z",
  "pagine": [
   {
    "asl": "frosinone",
@@ -40,7 +40,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
    "caratteri": 2358,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "frosinone",
@@ -404,7 +404,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
    "caratteri": 2358,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -893,7 +893,7 @@
    "http": 200,
    "file": "rieti/4d0ac27ae2c7.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
+   "sha": "35d3aad05a7b0076371577c576aa4a5787bf713c630b0b4c273f9b2e68bbe902",
    "caratteri": 2358,
    "cambiata": true
   },
@@ -1505,7 +1505,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
    "caratteri": 2358,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -1514,13 +1514,9 @@
    "http": 200,
    "file": "roma/e0d930024e6e.txt",
    "titolo": "Punto Unico di Accesso (PUA)",
-   "sha": "59fca717c2a067c3e709e92e45160e5ac3d7513743790ebd8c96a237a02aaf3f",
+   "sha": "db256e48a8a29bd66676b02ec6d271b6ea6338cf353a11d14c737b2fbeffa12e",
    "caratteri": 22475,
    "link_pdf": [
-    {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_-_Bangla.pdf",
-     "testo": "LEGGE 104/92"
-    },
     {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_arabo.pdf",
      "testo": "ЗАКОН 104/92"
@@ -1530,8 +1526,8 @@
      "testo": "GUIDA SUI SERVIZI SOCIALI E SANITARI PER LA DISABILITÀ"
     },
     {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_romeno.pdf",
-     "testo": "ЩОМІСЯЧНА ДОПОМОГА НА ШКОЛЯРІВ З ІНВАЛІДНІСТЮ"
+     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_-_Bangla.pdf",
+     "testo": "LEGGE 104/92"
     },
     {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ-Bangla-Rev.pdf",
@@ -1542,8 +1538,8 @@
      "testo": "১০৪/৯২ আইন"
     },
     {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_italiano_1_.pdf",
-     "testo": "মাসিক ভাতা"
+     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_romeno.pdf",
+     "testo": "ЩОМІСЯЧНА ДОПОМОГА НА ШКОЛЯРІВ З ІНВАЛІДНІСТЮ"
     },
     {
      "url": "https://www.aslroma1.it/uploads/files/39_40_DISABILITY-1.pdf",
@@ -1554,12 +1550,8 @@
      "testo": "INDEMNIZAȚIA LUNARĂ DE FRECVENȚĂ"
     },
     {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_arabo.pdf",
-     "testo": "BUWANANG BENEPISYO PARA SA MAY KAPANSANAN"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_Legge_104_Ucraino.pdf",
-     "testo": "LEY 104/92"
+     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_italiano_1_.pdf",
+     "testo": "মাসিক ভাতা"
     },
     {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_italiano.pdf",
@@ -1568,6 +1560,14 @@
     {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_-Spagnolo_CORRETTO.pdf",
      "testo": "قانون 104 / 92"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_arabo.pdf",
+     "testo": "BUWANANG BENEPISYO PARA SA MAY KAPANSANAN"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/47_24_Legge_104_Ucraino.pdf",
+     "testo": "LEY 104/92"
     }
    ],
    "cambiata": true
@@ -1592,7 +1592,7 @@
    "titolo": "Servizio Prenotazioni ASL ROMA 3",
    "sha": "30309b5e173dff51c2ace40ae2de0ef292f29adf71567d5335acd7318a30d987",
    "caratteri": 1383,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -1872,7 +1872,7 @@
    "http": 200,
    "file": "roma/2b46e5d8fe38.txt",
    "titolo": "ASL Roma 2 - Punto Unico di Accesso - PUA",
-   "sha": "35978afed172e6dfb37f1b276c1088ec3bfbe337081745212e196b10ed834e21",
+   "sha": "d50dc7f064a1977935491c54adaba301c9196fc09a5b559cc98056baa39d0cf8",
    "caratteri": 11883,
    "email_nascoste": 11,
    "cambiata": true
@@ -1943,7 +1943,7 @@
    "http": 200,
    "file": "roma/3feb23bab29f.txt",
    "titolo": "ASL Roma 2 - UOSD Coordinamento Screening",
-   "sha": "7061eb9b9a8b3d491332608535cf4b4478a1d7f02f37ae40d626b0d58bcefbd2",
+   "sha": "44959da0067c2bec8080e7aeb16fc53ace2e683a21cafbf24a6f503d121a1368",
    "caratteri": 8743,
    "email_nascoste": 3,
    "cambiata": true
@@ -2035,7 +2035,7 @@
    "http": 200,
    "file": "roma/7e7cbafb32a1.txt",
    "titolo": "15.04.05 Liste di attesa",
-   "sha": "ebe590557f3e07dd872fe89ed53a809f55a31a9bf3a4626565e10e9f17d7c3e8",
+   "sha": "8e77aa9463665ed86699283a01da878dd82fcbe2c72a53de6da02a3f2bd3d45a",
    "caratteri": 8675,
    "link_pdf": [
     {
@@ -2206,7 +2206,66 @@
    "asl": "roma",
    "url": "https://www.aslroma4.it/servizi-on-line/liste-di-attesa",
    "controllata": "2026-11-01",
-   "http": 504
+   "http": 200,
+   "file": "roma/42c0e279128f.txt",
+   "titolo": "Liste di attesa - ASL ROMA 4",
+   "sha": "ee61844998cf542a15c6e9d39834f0843c6791e88b57073ba21bcde247a7f4a9",
+   "caratteri": 4744,
+   "link_pdf": [
+    {
+     "url": "https://www.aslroma4.it/pdf/lista-attesa/delib-89-160120-piano-attuatvo-az.pdf",
+     "testo": "Piano attuativo aziendale ASL Roma 4 del Piano Regionale di Governo delle Liste di Attesa (PRGLA) di cui al DCA n. 302/2"
+    },
+    {
+     "url": "https://www.aslroma4.it/pdf/lista-attesa/piano-ATTUATTIVO.pdf",
+     "testo": "Piano attuativo aziendale ASL ROMA 4"
+    },
+    {
+     "url": "https://www.aslroma4.it/pdf/lista-attesa/PRGLA-piano-lazio-2019-2021.pdf",
+     "testo": "PRGLA (Piano Regionale Governo Liste di attesa)"
+    },
+    {
+     "url": "https://www.aslroma4.it/pdf/lista-attesa/DGR-1344-App-prescrittiva.pdf",
+     "testo": "AMBITI DI GARANZIA E APPROPPRIATEZZA PRESCRITTIVA DGR1344"
+    },
+    {
+     "url": "https://www.aslroma4.it/pdf/2024/lista-attesa/LDA-MEDIANECLASSEA-giu-sett-2024.pdf",
+     "testo": "> VALORE MEDIANO TEMPI DI ATTESA GIUGNO SETTEMBRE 2024"
+    },
+    {
+     "url": "https://www.aslroma4.it/pdf/2024/lista-attesa/LDA-MEDIANECLASSEA-apr-mag-2024.pdf",
+     "testo": "> VALORE MEDIANO TEMPI DI ATTESA APRILE MAGGIO 2024"
+    },
+    {
+     "url": "https://www.aslroma4.it/pdf/2024/lista-attesa/LISTA-ATTESA-GEN-MAR-2024.pdf",
+     "testo": "> VALORE MEDIANO TEMPI DI ATTESA GENNAIO MARZO 2024"
+    },
+    {
+     "url": "https://www.aslroma4.it/pdf/2023/lista-attesa/LUGLIOSETTEMBREASLROMA4.pdf",
+     "testo": "> VALORE MEDIANO TEMPI DI ATTESA LUGLIO SETTEMBRE 2023"
+    },
+    {
+     "url": "https://www.aslroma4.it/pdf/2023/lista-attesa/VALORE-MEDIANO-TEMPI-DI-ATTESA-APRILE-GIUGNO-2023.pdf",
+     "testo": "> VALORE MEDIANO TEMPI DI ATTESA APRILE GIUGNO 2023"
+    },
+    {
+     "url": "https://www.aslroma4.it/pdf/2023/lista-attesa/VALORE-MEDIANO-TEMPI-DI-ATTESA-GEN-MAR-2023.pdf",
+     "testo": "> VALORE MEDIANO TEMPI DI ATTESA GEN MAR 2023"
+    },
+    {
+     "url": "https://www.aslroma4.it/pdf/2023/lista-attesa/VALORE-MEDIANO-TEMPI-DI-ATTESA-ANNO-2022.pdf",
+     "testo": "> VALORE MEDIANO TEMPI DI ATTESA ANNO 2022"
+    },
+    {
+     "url": "https://www.aslroma4.it/pdf/2024/lista-attesa/Tempi-erogazione-prestazioni-sanitarie.pdf",
+     "testo": "> Tempi erogazione prestazioni sanitarie"
+    },
+    {
+     "url": "https://www.aslroma4.it/pdf/2025/Modello-di-Autovalutazione-AGID-Sistema-Trasparenza-Amministrativa.pdf",
+     "testo": "Dichiarazione di Accessibilità"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "roma",
@@ -2680,7 +2739,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
    "caratteri": 2358,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "viterbo",
@@ -3154,7 +3213,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "1bce8ebe3b8686ea81f43bdfe2f8368c4f413f3887be9bbead104452d34aa979",
    "caratteri": 2796,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regione-lazio",
@@ -3350,7 +3409,7 @@
    "http": 200,
    "file": "asl-roma2/2e0f163ef6a3.txt",
    "titolo": "ASL Roma 2 - Guardia Medica",
-   "sha": "aae72c9a263a3885d0555f72667c08bc058ab8acc8be76643daaeb70a819a834",
+   "sha": "014e84cb4578bfe30f19aed64297d752fc623d4da4f024143f42edf2dceb091a",
    "caratteri": 8091,
    "cambiata": true
   },
@@ -3543,7 +3602,7 @@
      "testo": "PARS 2026"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma5",
@@ -4032,7 +4091,7 @@
    "http": 200,
    "file": "ticket-pronto-soccorso/6f2a28e1087b.txt",
    "titolo": "ASL Roma 2 - UOC Medicina d'Urgenza e Pronto Soccorso",
-   "sha": "7ebaf4a11ccf7d765a31d190198a9faf9d1d4721f089a8b11ba129cbb98514a9",
+   "sha": "62be871321e3947dce3e148d0541fd7626d705d38af987d168770a156ace8f3b",
    "caratteri": 14507,
    "email_nascoste": 4,
    "cambiata": true

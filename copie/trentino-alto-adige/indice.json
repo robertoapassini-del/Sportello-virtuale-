@@ -1,6 +1,6 @@
 {
  "regione": "trentino-alto-adige",
- "aggiornato": "2026-11-01T12:38:27.714Z",
+ "aggiornato": "2026-11-01T18:54:16.464Z",
  "pagine": [
   {
    "asl": "bolzano",
@@ -24,7 +24,7 @@
    "titolo": "Servizio di Medicina di base | Azienda Sanitaria dell'Alto Adige",
    "sha": "4aa21f2cac727e1a1c548a8bc863b49426f8ef9e974baf1b9d82548280179e2b",
    "caratteri": 15699,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -137,14 +137,13 @@
    "asl": "bolzano",
    "url": "https://www.sabes.it/it/contatti-sabes.asp?addt_apid=53001",
    "controllata": "2026-11-01",
-   "browser": true,
    "http": 200,
-   "finale": "https://www.asdaa.it/it/contatti",
+   "finale": "https://www.asdaa.it/it/contatti-sabes.asp?addt_apid=53001",
    "file": "bolzano/d9a4378728a4.txt",
-   "titolo": "Contatti | Azienda Sanitaria dell’Alto Adige",
-   "sha": "1ea1aea25ec5078c00e181a42ae1ad228ae55201caf90558a4e0119eb7de62c4",
-   "caratteri": 19497,
-   "cambiata": false
+   "titolo": "Südtiroler Sanitätsbetrieb",
+   "sha": "392d4be341b5601bf3ac0de4fb35ecc68611c7c9a2e451ea79d9bec90721e5ed",
+   "caratteri": 38,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
@@ -169,7 +168,7 @@
    "titolo": "Ospedali | Azienda Sanitaria dell’Alto Adige",
    "sha": "a9a8fabe6e682f9e90ebe587035c1fcae214a3becc23a95de435547184658c07",
    "caratteri": 20025,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -187,8 +186,14 @@
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/medicina-di-base.asp",
    "controllata": "2026-11-01",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "browser": true,
+   "http": 200,
+   "finale": "https://www.asdaa.it/it/servizio-di-medicina-di-base-territorio-bz",
+   "file": "bolzano/aa3b128c6f97.txt",
+   "titolo": "Servizio di Medicina di base | Comprensorio Bolzano",
+   "sha": "9f63eccd18bf68b6497f3f3805f65acbf0102e407f3051776fe9f692e20a6813",
+   "caratteri": 31077,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
@@ -218,11 +223,13 @@
    "asl": "bolzano",
    "url": "https://www.asdaa.it/it/comprensori-sanitari/merano/3181.asp",
    "controllata": "2026-11-01",
+   "browser": true,
    "http": 200,
+   "finale": "https://home.asdaa.it/it/comprensori-sanitari/merano/3181.asp",
    "file": "bolzano/f2819aebdf8b.txt",
-   "titolo": "Südtiroler Sanitätsbetrieb",
-   "sha": "392d4be341b5601bf3ac0de4fb35ecc68611c7c9a2e451ea79d9bec90721e5ed",
-   "caratteri": 38,
+   "titolo": "Servizio infermieristico | Azienda Sanitaria dell'Alto Adige",
+   "sha": "63e2879d3d25cb6dbc1c59c0b1221e0fa551588ba75db555e10884ce450c7123",
+   "caratteri": 8725,
    "cambiata": true
   },
   {
@@ -312,7 +319,7 @@
    "titolo": "I servizi in myCIVIS - Azienda Sanitaria dell'Alto Adige",
    "sha": "d4dfeb2e0457a0231cbb59a643e543aeba87bdab206529140950b3c9001fa7b5",
    "caratteri": 22350,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -323,8 +330,8 @@
    "finale": "https://www.asdaa.it/it/servizi",
    "file": "bolzano/1a6f833fe6c4.txt",
    "titolo": "I servizi in myCIVIS - Azienda Sanitaria dell'Alto Adige",
-   "sha": "d4dfeb2e0457a0231cbb59a643e543aeba87bdab206529140950b3c9001fa7b5",
-   "caratteri": 22350,
+   "sha": "2d3de91b7fb4eb37c29d42729dc7e186c6221f3cc4da821dad90a953714753ab",
+   "caratteri": 22357,
    "cambiata": true
   },
   {
@@ -400,12 +407,13 @@
    "asl": "bolzano",
    "url": "https://www.sabes.it/it/ospedali/bressanone/3779.asp?addt_apid=53297",
    "controllata": "2026-11-01",
+   "browser": true,
    "http": 200,
-   "finale": "https://www.asdaa.it/it/ospedali/bressanone/3779.asp?addt_apid=53297",
+   "finale": "https://www.asdaa.it/it/ospedali?addt_apid=53297",
    "file": "bolzano/992adf74401f.txt",
-   "titolo": "Südtiroler Sanitätsbetrieb",
-   "sha": "392d4be341b5601bf3ac0de4fb35ecc68611c7c9a2e451ea79d9bec90721e5ed",
-   "caratteri": 38,
+   "titolo": "Ospedali | Azienda Sanitaria dell’Alto Adige",
+   "sha": "a9a8fabe6e682f9e90ebe587035c1fcae214a3becc23a95de435547184658c07",
+   "caratteri": 20025,
    "cambiata": true
   },
   {
@@ -452,7 +460,7 @@
      "testo": "cliccare qui"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -762,9 +770,9 @@
    "controllata": "2026-11-01",
    "http": 200,
    "file": "trento/80c54c57d0ca.txt",
-   "titolo": "SERVIZI DI EMERGENZA E URGENZA E TRASPORTI SANITARI",
-   "sha": "d529b0c447f2cae8f61af4b52776dbbe82e4d2bc63b2ca8779f4435253d7691f",
-   "caratteri": 3355,
+   "titolo": "SERVIZI DI EMERGENZA E URGENZA E TRASPORTI SANITARI - Trentino Salute",
+   "sha": "360f9dd8d577240162122c44228bc84e93c8c96105059fdc6512ca7f620267d1",
+   "caratteri": 3373,
    "cambiata": true
   },
   {
