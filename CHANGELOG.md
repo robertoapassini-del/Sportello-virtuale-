@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 02/11/2026 — Toscana: prevenzione accesa
+- `data/regioni/toscana/asl.json`: numeri dello screening dell'Azienda USL Toscana Sud Est per Arezzo (0575 379138), Grosseto (0564 486486) e Siena (0577 536132), dalla copia del 01/11/2026 della pagina «Screening» (uslsudest.toscana.it/percorsi-assistenziali/screening). Le altre province avevano già il contatto.
+- `data/regioni/index.json`: Toscana, modulo `prevenzione` acceso.
+
 ## 01/11/2026 — IndexNow: Bing rilegge subito le pagine cambiate
 - `3c0ecdf89c2ace8539d2e7f0c68d136f.txt`: il file della chiave IndexNow nella cartella del sito (la chiave è pubblica per scelta: prova che il sito è nostro).
 - `tools/indexnow.mjs`: trova le pagine HTML cambiate tra due commit e le manda a api.indexnow.org (Bing, DuckDuckGo e gli altri motori che usano IndexNow). Con `--prova` stampa e non manda niente.
