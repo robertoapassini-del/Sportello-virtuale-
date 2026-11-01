@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 02/11/2026 — Valle d'Aosta: acceso assistenza-domiciliare, invalidità resta spenta
+- `data/regioni/valle-d-aosta/asl.json`: PUA della Regione in `contacts` `topic: "casa"` (numero verde 800 066214, lun–ven 8:30–16:30, info.pua@regione.vda.it), dalla copia del 01/11/2026 della pagina regionale «Assistenti sociali» (https://www.regione.vda.it/servsociali/famiglia/servizi/assistenti_sociali/default_i.asp). Acceso `assistenza-domiciliare` in `data/regioni/index.json`.
+- Invalidità civile: la pagina regionale «Invalidi civili, ciechi e sordomuti» (copia del 01/11/2026) dice che in Valle d'Aosta la domanda delle provvidenze va alla Regione (legge regionale 11/1999), non all'INPS. Il modulo nazionale non si adatta e resta spento, con il motivo nel `todo`.
+
 ## 01/11/2026 — IndexNow: Bing rilegge subito le pagine cambiate
 - `3c0ecdf89c2ace8539d2e7f0c68d136f.txt`: il file della chiave IndexNow nella cartella del sito (la chiave è pubblica per scelta: prova che il sito è nostro).
 - `tools/indexnow.mjs`: trova le pagine HTML cambiate tra due commit e le manda a api.indexnow.org (Bing, DuckDuckGo e gli altri motori che usano IndexNow). Con `--prova` stampa e non manda niente.
