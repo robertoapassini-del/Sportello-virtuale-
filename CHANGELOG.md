@@ -28,6 +28,9 @@ Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 ## 30/10/2026 — Fascicolo Sanitario: link per Lombardia, Lazio e Campania (20 regioni su 20)
 - Le pagine messe in `regole_fonti.fse` il 24/10/2026 sono state copiate dal server il 29/10/2026 (branch `copie-siti`, cartella `regole`). Lette le copie: `verified`, `proof: "pagina"`, la frase in `nota`, poi `link.fse` in `data/regioni/index.json`. Lombardia: pagina della Regione «I servizi sanitari online» («Per accedere al tuo Fascicolo sanitario è necessario autenticarsi…»); Lazio: portale Salute Lazio («Entra nel fascicolo sanitario elettronico del cittadino»); Campania: pagina della Regione («È possibile accedere al proprio FSE, collegandosi al Portale Salute del Cittadino…»).
 - L'elenco «Il sito del Fascicolo nella tua regione» ha ora tutte le 20 regioni (21 link: Trento e Bolzano). La frase «Per le altre regioni cerca…» compare solo se manca qualche regione (`tools/pagine.mjs`).
+## 30/10/2026 — Il portale del Tribunale per i diritti del malato
+- Cittadinanzattiva (risposta del responsabile comunicazione del 30/10/2026) è d'accordo a essere indicata dal sito. Dove il sito diceva «Cittadinanzattiva» senza link o con il link alla home, ora rimanda al portale del Tribunale per i diritti del malato, pit.cittadinanzattiva.it, che raccoglie le segnalazioni (notizia di cittadinanzattiva.it «Trent'anni di tutela: il Rapporto PiT Salute 2026»).
+- Pagine: liste d'attesa (nessuna risposta, percorso di tutela), cartella clinica in ritardo, ausili dopo 20 giorni; script `js/liste-attesa.js`, `js/ausili.js`, `js/cartella.js`. Ogni volta si dice che sono volontari, non un tribunale.
 
 ## 27/10/2026 — Descrizioni per Google entro 155 caratteri
 - Search Console (19–24/10/2026): 119 impressioni e 2 clic; 10 pagine indicizzate, 51 «rilevate, ma non indicizzate». Le descrizioni erano quasi tutte tra 250 e 415 caratteri: Google le tagliava prima della cifra utile.
