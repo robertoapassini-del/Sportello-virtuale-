@@ -6,6 +6,9 @@ Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 - `data/regioni/piemonte/asl.json`: le aziende di Cuneo e Torino (con le zone) hanno in cima i campi delle liste d'attesa della prima zona (ASL CN1, ASL Città di Torino), come fa l'Umbria; nessun dato nuovo, sono gli stessi già provati dalle copie del 22/10/2026.
 - Liste d'attesa resta spenta: mancano l'indirizzo per la domanda all'ASL Biella (i file del percorso di tutela sono dietro pulsanti senza indirizzo .pdf) e ogni pagina dell'ASL VCO (aslvco.it risponde 403 al server anche nella copia del 01/11/2026). Annotato nel `todo`.
 
+## 02/11/2026 — Emilia-Romagna: pagine da copiare per liste d'attesa e screening
+- `data/regioni/emilia-romagna/asl.json`, `pagine[]`: CUP e numero verde di Modena, CupTel e Sportello unico di Piacenza, CUP telefonico dell'AUSL di Bologna (liste d'attesa); pagine dei centri screening di Modena, Ferrara, Forlì, Cesena e Ravenna (prevenzione). Tolte 3 pagine che nella copia danno 404 (screening e liste d'attesa di Modena, screening di Reggio Emilia). Dopo la copia si riempiono i campi e si accendono i moduli.
+
 ## 01/11/2026 — IndexNow: Bing rilegge subito le pagine cambiate
 - `3c0ecdf89c2ace8539d2e7f0c68d136f.txt`: il file della chiave IndexNow nella cartella del sito (la chiave è pubblica per scelta: prova che il sito è nostro).
 - `tools/indexnow.mjs`: trova le pagine HTML cambiate tra due commit e le manda a api.indexnow.org (Bing, DuckDuckGo e gli altri motori che usano IndexNow). Con `--prova` stampa e non manda niente.
