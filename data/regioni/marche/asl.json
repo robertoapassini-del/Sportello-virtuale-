@@ -20,7 +20,7 @@
    "official_domains": [
     "astpu.marche.it"
    ],
-   "guardia_medica_url": "https://www.astpu.marche.it/it/strutture/guardia-medica-continuita-assistenziale",
+   "guardia_medica_url": "https://www.astpu.marche.it/it/strutture/guardia-medica-continuita-assistenziale?sort=materializedName",
    "pua_url": "https://www.astpu.marche.it/it/strutture/uffici-amministrativi/punto-unico-di-accesso-pua-pesaro",
    "emails": [
     "urp.ast.pu@sanita.marche.it"
@@ -203,7 +203,7 @@
     },
     {
      "tipo": "guardia",
-     "url": "https://www.astpu.marche.it/it/strutture/guardia-medica-continuita-assistenziale"
+     "url": "https://www.astpu.marche.it/it/strutture/guardia-medica-continuita-assistenziale?sort=materializedName"
     },
     {
      "tipo": "pua",
@@ -584,7 +584,7 @@
     {
      "label": "Centralino dell'ospedale di Macerata",
      "number": "0733 2571",
-     "url": "https://www.astmc.marche.it/contatti",
+     "url": "https://www.astmc.marche.it/it/contatti",
      "verified": "2026-10-26",
      "proof": "pagina"
     },
@@ -666,7 +666,7 @@
      "topic": "centralino",
      "label": "Centralino dell'ospedale di Macerata",
      "number": "0733 2571",
-     "url": "https://www.astmc.marche.it/contatti",
+     "url": "https://www.astmc.marche.it/it/contatti",
      "verified": "2026-10-26",
      "proof": "pagina"
     },
@@ -674,7 +674,7 @@
      "topic": "centralino",
      "label": "Centralino dell'ospedale di Civitanova Marche",
      "number": "0733 8231",
-     "url": "https://www.astmc.marche.it/contatti",
+     "url": "https://www.astmc.marche.it/it/contatti",
      "verified": "2026-10-26",
      "proof": "pagina"
     },
@@ -682,7 +682,7 @@
      "topic": "centralino",
      "label": "Centralino dell'ospedale di Camerino",
      "number": "0737 6391",
-     "url": "https://www.astmc.marche.it/contatti",
+     "url": "https://www.astmc.marche.it/it/contatti",
      "verified": "2026-10-26",
      "proof": "pagina"
     },
@@ -690,7 +690,7 @@
      "topic": "centralino",
      "label": "Centralino dell'ospedale di San Severino Marche",
      "number": "0733 6311",
-     "url": "https://www.astmc.marche.it/contatti",
+     "url": "https://www.astmc.marche.it/it/contatti",
      "verified": "2026-10-26",
      "proof": "pagina"
     },
@@ -698,7 +698,7 @@
      "topic": "centralino",
      "label": "Centralino dell'ospedale di comunità di Recanati",
      "number": "071 75831",
-     "url": "https://www.astmc.marche.it/contatti",
+     "url": "https://www.astmc.marche.it/it/contatti",
      "verified": "2026-10-26",
      "proof": "pagina"
     },
@@ -715,7 +715,7 @@
    "sources": [
     {
      "label": "AST Macerata – Contatti",
-     "url": "https://www.astmc.marche.it/contatti"
+     "url": "https://www.astmc.marche.it/it/contatti"
     },
     {
      "label": "AST Macerata – URP",
@@ -790,7 +790,7 @@
     },
     {
      "tipo": "altro",
-     "url": "https://www.astmc.marche.it/contatti"
+     "url": "https://www.astmc.marche.it/it/contatti"
     },
     {
      "tipo": "cartelle",
@@ -1111,7 +1111,7 @@
    "official_domains": [
     "astap.marche.it"
    ],
-   "pua_url": "https://www.astap.marche.it/come-fare-per/come-prenotare-una-prestazione-con-priorita-urgente-u",
+   "pua_url": "https://www.astap.marche.it/it/come-fare-per/come-prenotare-una-prestazione-con-priorita-urgente-u",
    "emails": [
     "urp.ast.ap@sanita.marche.it"
    ],
@@ -1176,7 +1176,7 @@
      "number": "0736 358786",
      "hours": "Dal lunedì al venerdì 8:00–14:00 e 14:30–17:30; sabato 8:00–14:00",
      "address": "Via degli Iris, Ascoli Piceno",
-     "url": "https://www.astap.marche.it/come-fare-per/come-prenotare-una-prestazione-con-priorita-urgente-u",
+     "url": "https://www.astap.marche.it/it/come-fare-per/come-prenotare-una-prestazione-con-priorita-urgente-u",
      "verified": "2026-10-26",
      "proof": "pagina"
     },
@@ -1186,7 +1186,7 @@
      "number": "0736 844413",
      "hours": "Dal lunedì al venerdì 8:00–14:00",
      "address": "Viale Marco Polo 13, Comunanza",
-     "url": "https://www.astap.marche.it/come-fare-per/come-prenotare-una-prestazione-con-priorita-urgente-u",
+     "url": "https://www.astap.marche.it/it/come-fare-per/come-prenotare-una-prestazione-con-priorita-urgente-u",
      "verified": "2026-10-26",
      "proof": "pagina"
     },
@@ -1196,7 +1196,7 @@
      "number": "0736 887917",
      "hours": "Dal lunedì al sabato 8:00–14:00",
      "address": "Via Giuseppe Garibaldi 3, Offida",
-     "url": "https://www.astap.marche.it/come-fare-per/come-prenotare-una-prestazione-con-priorita-urgente-u",
+     "url": "https://www.astap.marche.it/it/come-fare-per/come-prenotare-una-prestazione-con-priorita-urgente-u",
      "verified": "2026-10-26",
      "proof": "pagina"
     },
@@ -1206,7 +1206,7 @@
      "number": "0735 793604",
      "hours": "Dal lunedì al venerdì 8:30–13:00 e 14:00–18:00; sabato 8:30–13:00",
      "address": "Via Manara 3/7, San Benedetto del Tronto (corpo F, piano 0)",
-     "url": "https://www.astap.marche.it/come-fare-per/come-prenotare-una-prestazione-con-priorita-urgente-u",
+     "url": "https://www.astap.marche.it/it/come-fare-per/come-prenotare-una-prestazione-con-priorita-urgente-u",
      "verified": "2026-10-26",
      "proof": "pagina"
     },
@@ -1274,7 +1274,7 @@
     },
     {
      "label": "AST Ascoli Piceno – Punti unici di accesso (prestazioni urgenti U)",
-     "url": "https://www.astap.marche.it/come-fare-per/come-prenotare-una-prestazione-con-priorita-urgente-u"
+     "url": "https://www.astap.marche.it/it/come-fare-per/come-prenotare-una-prestazione-con-priorita-urgente-u"
     },
     {
      "label": "AST Ascoli Piceno – ADI Ascoli Piceno",
@@ -1332,7 +1332,7 @@
     },
     {
      "tipo": "altro",
-     "url": "https://www.astap.marche.it/come-fare-per/come-prenotare-una-prestazione-con-priorita-urgente-u"
+     "url": "https://www.astap.marche.it/it/come-fare-per/come-prenotare-una-prestazione-con-priorita-urgente-u"
     },
     {
      "tipo": "altro",
