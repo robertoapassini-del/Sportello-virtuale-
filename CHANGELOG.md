@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 02/11/2026 — Trentino-Alto Adige: pagine da copiare per medico, liste di attesa e invalidità
+- `data/regioni/trentino-alto-adige/asl.json`: in «pagine» la scelta del medico e la carta dei servizi dei medici di base dell’Azienda sanitaria dell’Alto Adige, i piani per le liste di attesa di Bolzano (DGP 915/2019, delibera 84/2020) e di Trento (pagina «Liste di attesa» di Asuit, piano attuativo, DGP 696/2019). Moduli invalidita, liste-attesa e medico-famiglia ancora spenti, motivi nel `todo`.
+- `data/regioni/trentino-alto-adige/inps.json`: nel `todo` la frase della notizia INPS (copia del 01/11/2026): in provincia di Bolzano l’INPS non gestisce l’accertamento della disabilità. Il modulo invalidita resta spento.
+
 ## 01/11/2026 — IndexNow: Bing rilegge subito le pagine cambiate
 - `3c0ecdf89c2ace8539d2e7f0c68d136f.txt`: il file della chiave IndexNow nella cartella del sito (la chiave è pubblica per scelta: prova che il sito è nostro).
 - `tools/indexnow.mjs`: trova le pagine HTML cambiate tra due commit e le manda a api.indexnow.org (Bing, DuckDuckGo e gli altri motori che usano IndexNow). Con `--prova` stampa e non manda niente.
