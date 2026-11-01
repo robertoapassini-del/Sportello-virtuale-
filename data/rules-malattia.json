@@ -9,8 +9,16 @@
   "esonero_invalidita_percent": 67,
   "assenza_visita_days": 10,
   "assenza_visita_dopo_percent": 50,
+  "assenza_visita_terza_percent": 100,
   "pubblici_certificato_ssn_dopo_days": 10,
   "provenienza": {
+    "assenza_visita_terza_percent": {
+      "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.indennit--di-malattia-e-visite-mediche-di-controllo.html",
+      "verified": "2026-11-02",
+      "proof": "testo",
+      "review_by": "2027-11-02",
+      "nota": "Scheda INPS «Indennità di malattia/degenza ospedaliera e visite mediche di controllo», aggiornata il 21/09/2026, letta il 02/11/2026: alla prima assenza non giustificata si perde l'indennità per un massimo di dieci giorni di calendario dall'inizio dell'evento; alla seconda il 50% nel restante periodo; alla terza «il totale dell'indennità, dalla data della terza assenza alla visita di controllo non giustificata». Il D.L. 463/1983, art. 5 c. 14, esclude dalla perdita i giorni «di ricovero ospedaliero o già accertati da precedente visita di controllo»."
+    },
     "invio_cartaceo_days": {
       "url": "https://www.inps.it/content/dam/inps-site/pdf/inpscomunica/documents/Certificazione_malattia_visite_mediche_controllo_lavoratori_privati_pubblici_2024_v04.pdf",
       "verified": "2026-10-24",
@@ -74,6 +82,10 @@
     {
       "label": "INPS – Messaggio n. 4640 del 22/12/2023 (fasce orarie dei dipendenti pubblici)",
       "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2023/12/Circolare_14389/Allegati/14553_Messaggio-numero-4640-del-22-12-2023.pdf"
+    },
+    {
+      "label": "INPS – Indennità di malattia e visite mediche di controllo (le assenze alla visita)",
+      "url": "https://www.inps.it/it/it/dettaglio-approfondimento.schede-informative.indennit--di-malattia-e-visite-mediche-di-controllo.html"
     },
     {
       "label": "Normattiva – D.L. 463/1983, art. 5 (visite di controllo e assenza)",

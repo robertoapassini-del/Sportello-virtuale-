@@ -2,6 +2,15 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 02/11/2026 — Quello che i siti simili hanno e noi no: visita fiscale, esenzione, titoli
+- Confronto con altri siti (money.it, Altroconsumo, Studio Cataldi, deQuo e altri): le lacune vere, rilette sulla fonte ufficiale.
+- Visita fiscale (`visita-fiscale/se-non-ti-trovano/`): mancava la terza assenza. Scheda INPS «Indennità di malattia e visite mediche di controllo», aggiornata il 21/09/2026: alla terza assenza non giustificata si perde tutta l'indennità da quel giorno. Aggiunto anche che la perdita non tocca i giorni di ricovero né quelli già controllati (D.L. 463/1983, art. 5 c. 14). `data/rules-malattia.json`: campo `assenza_visita_terza_percent` con la provenienza, e la scheda INPS tra le fonti.
+- Esenzione per reddito (`esenzione-ticket/chi-ha-diritto/`): non è l'ISEE; conta la famiglia per il fisco, non lo stato di famiglia; il coniuge conta anche se non vive con te; chi vive con te con un reddito suo fa famiglia a parte. Fonte: FAQ del Sistema Tessera Sanitaria (lette il 02/11/2026). Le righe dei modelli citate dalla FAQ sono dei modelli 2014: non riportate.
+- Esenzione, i controlli (`esenzione-ticket/rinnovo/`, nuova parte «Se ti arriva la lettera dei controlli»): l'ASL controlla tutte le autocertificazioni entro 6 mesi; se l'esenzione non spettava manda la lettera con un termine da 30 a 120 giorni per pagare o portare i documenti; dopo, niente nuove visite specialistiche ed esami con il Servizio sanitario fino al pagamento. Fonte: D.M. 11/12/2009, art. 1 commi 10 e 11, letto per intero in Gazzetta Ufficiale. `data/rules-esenzione.json`: campi `controlli.*` con la provenienza. Nuove parole della ricerca in `data/moduli.json`.
+- Cifre che cambiano ogni anno (`accompagnamento/`, `invalidita/pensione-e-assegno/`): accanto agli importi, da dove vengono (schede INPS aggiornate a luglio 2026). `dateModified` nei dati strutturati c'era già.
+- Titoli e descrizioni con le parole che si cercano: «Visita fiscale: gli orari per dipendenti pubblici e privati», «Esenzione ticket: chi ne ha diritto, come si chiede, rinnovo», «Esenzione ticket: il rinnovo e la lettera dei controlli»; descrizione della pagina «se non ti trovano» con le tre assenze.
+- `tests/citazioni.txt`: «art. 1 | ?» (D.M. 11/12/2009, riletto sul testo).
+
 ## 01/11/2026 — IndexNow: Bing rilegge subito le pagine cambiate
 - `3c0ecdf89c2ace8539d2e7f0c68d136f.txt`: il file della chiave IndexNow nella cartella del sito (la chiave è pubblica per scelta: prova che il sito è nostro).
 - `tools/indexnow.mjs`: trova le pagine HTML cambiate tra due commit e le manda a api.indexnow.org (Bing, DuckDuckGo e gli altri motori che usano IndexNow). Con `--prova` stampa e non manda niente.
