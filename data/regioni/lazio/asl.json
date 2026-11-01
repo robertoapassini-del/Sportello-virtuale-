@@ -197,7 +197,7 @@
     "Percorso di tutela (PDF «Percorsi di tutela» dell'ASL, copia del 23/10/2026): se il CUP non trova posto in tempo, il back office del CUP e il servizio Recall richiamano la persona e, se serve, passano la richiesta al Direttore del distretto. Il PDF non dà un indirizzo a cui scrivere: resta il Pass di garanzia della Regione.",
     "Screening: numero verde 800 003 422 (lunedì-venerdì 9:00-14:00) dalla pagina «UOSD Coordinamento Screening» dell'ASL, copia del 23/10/2026 (lazio/frosinone/bc00811c9b33.txt). La stessa pagina dice che il call center risponde dalle 8.30 alle 15.15: messo l'orario del numero verde.",
     "Tolto da «pagine» il depliant screening di Salute Lazio: la copia del 23/10/2026 risponde 404.",
-    "Medico di famiglia (copie del 23/10/2026): nessuna pagina copiata spiega come si sceglie o si cambia il medico (ci sono solo voci di menu e numeri). Messe in «pagine» la pagina «Medico di famiglia» di Salute Lazio. Dopo la copia: scelta_medico.how e url, poi si accende «medico-famiglia» se ce l'hanno tutte e 5 le aziende."
+    "Medico di famiglia: scelta_medico.how dalla pagina «Medico di famiglia e pediatra» di Salute Lazio (copia del 01/11/2026, pubblicata il 01/09/2026), che vale per tutte le ASL del Lazio."
    ],
    "pagine": [
     {
@@ -250,7 +250,12 @@
     "Puoi chiedere e attivare il Pass anche per un familiare: entri con il tuo SPID o la tua CIE e scrivi i suoi dati.",
     "Nel Lazio il Pass di garanzia è un servizio della Regione: il sito è Salute Lazio, non quello dell'ASL."
    ],
-   "fast_track": null
+   "fast_track": null,
+   "scelta_medico": {
+    "how": "Nel Lazio puoi scegliere o cambiare il medico di famiglia online, nel tuo Fascicolo Sanitario Elettronico (FSE), nella parte sul medico di famiglia e pediatra. Lì puoi anche cercare un medico libero. Puoi anche andare allo sportello della tua ASL: revochi il medico che hai e scegli il nuovo. La prima volta che scegli un medico nel Lazio vai allo sportello dell'ASL di residenza o di domicilio. Per il pediatra vai allo sportello con il documento del genitore, l'autocertificazione dello stato di famiglia e il codice fiscale del bambino.",
+    "url": "https://salutelazio.it/it/servizi/medico-di-famiglia",
+    "url_label": "Sito della Regione (Salute Lazio)"
+   }
   },
   {
    "id": "latina",
@@ -428,7 +433,7 @@
     "Liste d'attesa: how_to, documents_required, what_next e details dalla pagina «Pass di garanzia» di Salute Lazio (copia del 22/10/2026, pubblicata il 28/05/2026; le stesse frasi sono nelle pagine dell'ASL Roma 1 e dell'ASL Roma 5). letter_mode «portal» con portal_url la pagina della Regione: il pulsante del modulo oggi dice «Vai al sito dell'ASL» (js/liste-attesa.js), andrebbe «Vai al sito della Regione». Il modulo resta spento finché manca un indirizzo della zona di Roma 2 (copie del 23/10/2026). Il portale è della Regione: in details c'è la frase «Nel Lazio il Pass di garanzia è un servizio della Regione…».",
     "Screening: numero verde 800 065 560 con gli orari dalla pagina «Servizio di Screening» dell'ASL, copia del 23/10/2026 (lazio/latina/6d5aee6744e3.txt); lo stesso numero è nella pagina «Screening oncologici» (latina/ea194b301ae9.txt).",
     "Tolto da «pagine» il depliant screening di Salute Lazio: la copia del 23/10/2026 risponde 404.",
-    "Medico di famiglia (copie del 23/10/2026): nessuna pagina copiata spiega come si sceglie o si cambia il medico (ci sono solo voci di menu e numeri). Messe in «pagine» la pagina «Medico di famiglia» di Salute Lazio e la pagina «Scegliere il medico» dell'ASL di Latina. Dopo la copia: scelta_medico.how e url, poi si accende «medico-famiglia» se ce l'hanno tutte e 5 le aziende."
+    "Medico di famiglia: scelta_medico.how dalla pagina «Medico di famiglia e pediatra» di Salute Lazio (copia del 01/11/2026, pubblicata il 01/09/2026), che vale per tutte le ASL del Lazio."
    ],
    "pagine": [
     {
@@ -481,7 +486,12 @@
     "Puoi chiedere e attivare il Pass anche per un familiare: entri con il tuo SPID o la tua CIE e scrivi i suoi dati.",
     "Nel Lazio il Pass di garanzia è un servizio della Regione: il sito è Salute Lazio, non quello dell'ASL."
    ],
-   "fast_track": null
+   "fast_track": null,
+   "scelta_medico": {
+    "how": "Nel Lazio puoi scegliere o cambiare il medico di famiglia online, nel tuo Fascicolo Sanitario Elettronico (FSE), nella parte sul medico di famiglia e pediatra. Lì puoi anche cercare un medico libero. Puoi anche andare allo sportello della tua ASL: revochi il medico che hai e scegli il nuovo. La prima volta che scegli un medico nel Lazio vai allo sportello dell'ASL di residenza o di domicilio. Per il pediatra vai allo sportello con il documento del genitore, l'autocertificazione dello stato di famiglia e il codice fiscale del bambino.",
+    "url": "https://salutelazio.it/it/servizi/medico-di-famiglia",
+    "url_label": "Sito della Regione (Salute Lazio)"
+   }
   },
   {
    "id": "rieti",
@@ -695,7 +705,8 @@
     "Liste d'attesa: how_to, documents_required, what_next e details dalla pagina «Pass di garanzia» di Salute Lazio (copia del 22/10/2026, pubblicata il 28/05/2026; le stesse frasi sono nelle pagine dell'ASL Roma 1 e dell'ASL Roma 5). letter_mode «portal» con portal_url la pagina della Regione: il pulsante del modulo oggi dice «Vai al sito dell'ASL» (js/liste-attesa.js), andrebbe «Vai al sito della Regione». Il modulo resta spento finché manca un indirizzo della zona di Roma 2 (copie del 23/10/2026). Il portale è della Regione: in details c'è la frase «Nel Lazio il Pass di garanzia è un servizio della Regione…».",
     "Screening: numero verde 800 64 69 99 (lunedì-venerdì 9.00-13.00) dalla pagina «UOS Coordinamento Screening di Popolazione» dell'ASL, copia del 23/10/2026 (lazio/rieti/541b7e2b32fd.txt).",
     "Tolto da «pagine» il depliant screening di Salute Lazio: la copia del 23/10/2026 risponde 404.",
-    "Medico di famiglia (copie del 23/10/2026): nessuna pagina copiata spiega come si sceglie o si cambia il medico (ci sono solo voci di menu e numeri). Messe in «pagine» la pagina «Medico di famiglia» di Salute Lazio e la pagina «Scegliere il medico di base/pediatra» dell'ASL di Rieti. Dopo la copia: scelta_medico.how e url, poi si accende «medico-famiglia» se ce l'hanno tutte e 5 le aziende."
+    "Medico di famiglia: scelta_medico.how dalla pagina «Medico di famiglia e pediatra» di Salute Lazio (copia del 01/11/2026, pubblicata il 01/09/2026), che vale per tutte le ASL del Lazio.",
+    "Tolta da «pagine» la pagina «Scegliere il medico di base/pediatra» dell'ASL di Rieti: la copia del 01/11/2026 risponde 404."
    ],
    "pagine": [
     {
@@ -717,10 +728,6 @@
     {
      "tipo": "medico",
      "url": "https://salutelazio.it/it/servizi/medico-di-famiglia"
-    },
-    {
-     "tipo": "medico",
-     "url": "https://www.asl.rieti.it/come-fare-per/scegliere-il-medico-di-base/pediatra"
     }
    ],
    "channel": "cup",
@@ -748,7 +755,12 @@
     "Puoi chiedere e attivare il Pass anche per un familiare: entri con il tuo SPID o la tua CIE e scrivi i suoi dati.",
     "Nel Lazio il Pass di garanzia è un servizio della Regione: il sito è Salute Lazio, non quello dell'ASL."
    ],
-   "fast_track": null
+   "fast_track": null,
+   "scelta_medico": {
+    "how": "Nel Lazio puoi scegliere o cambiare il medico di famiglia online, nel tuo Fascicolo Sanitario Elettronico (FSE), nella parte sul medico di famiglia e pediatra. Lì puoi anche cercare un medico libero. Puoi anche andare allo sportello della tua ASL: revochi il medico che hai e scegli il nuovo. La prima volta che scegli un medico nel Lazio vai allo sportello dell'ASL di residenza o di domicilio. Per il pediatra vai allo sportello con il documento del genitore, l'autocertificazione dello stato di famiglia e il codice fiscale del bambino.",
+    "url": "https://salutelazio.it/it/servizi/medico-di-famiglia",
+    "url_label": "Sito della Regione (Salute Lazio)"
+   }
   },
   {
    "id": "roma",
@@ -1297,7 +1309,7 @@
     "Centralino ASL Roma 3 06 56481: nella copia del 23/10/2026 della pagina «Servizio prenotazioni» è scritto «+390656481» (confronta-copie non lo riconosce). La stessa pagina ha in fondo link pubblicitari di siti di scommesse: sembra manomessa. Da confermare il numero su un'altra pagina dell'ASL Roma 3 o con una telefonata.",
     "Screening (copie del 23/10/2026): un numero per ogni ASL di Roma, tra i contatti dell'azienda (come Perugia: il modulo prevenzione non chiede la zona). Roma 1: volantino PDF dell'ASL Roma 1 (lazio/roma/ab6581b6a1a1.txt; ha i numeri verdi di tutte le ASL del Lazio, in due colonne: orari non usati perché non si capisce a quale ASL vanno). Roma 2: pagina UOSD Coordinamento Screening (roma/3feb23bab29f.txt). Roma 3: brochure PDF dello screening del seno dell'ASL Roma 3 (roma/a24dcd63ae88.txt; tabella spezzata, orari non usati). Roma 4: pagina Screening oncologici (roma/a73825184bc0.txt). Roma 5: pagina Programmi di screening (roma/d9f6a6489234.txt). Roma 6: pagina Screening (roma/f0e5d1ccfa60.txt). Le zone in sub_areas non hanno contacts propri: se si aggiungono, vanno copiati anche gli altri contatti della zona (conZona sostituisce l'intero elenco).",
     "Tolto da «pagine» il depliant screening di Salute Lazio: la copia del 23/10/2026 risponde 404.",
-    "Medico di famiglia (copie del 23/10/2026): nessuna pagina copiata spiega come si sceglie o si cambia il medico (ci sono solo voci di menu e numeri). Messe in «pagine» la pagina «Medico di famiglia» di Salute Lazio (vale per tutte le ASL di Roma). Dopo la copia: scelta_medico.how e url, poi si accende «medico-famiglia» se ce l'hanno tutte e 5 le aziende."
+    "Medico di famiglia: scelta_medico.how dalla pagina «Medico di famiglia e pediatra» di Salute Lazio (copia del 01/11/2026, pubblicata il 01/09/2026), che vale per tutte le ASL del Lazio."
    ],
    "pagine": [
     {
@@ -1484,7 +1496,12 @@
      "pec": "servizio.protocollo@pec.aslroma6.it",
      "site_url": "https://www.aslroma6.it"
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "Nel Lazio puoi scegliere o cambiare il medico di famiglia online, nel tuo Fascicolo Sanitario Elettronico (FSE), nella parte sul medico di famiglia e pediatra. Lì puoi anche cercare un medico libero. Puoi anche andare allo sportello della tua ASL: revochi il medico che hai e scegli il nuovo. La prima volta che scegli un medico nel Lazio vai allo sportello dell'ASL di residenza o di domicilio. Per il pediatra vai allo sportello con il documento del genitore, l'autocertificazione dello stato di famiglia e il codice fiscale del bambino.",
+    "url": "https://salutelazio.it/it/servizi/medico-di-famiglia",
+    "url_label": "Sito della Regione (Salute Lazio)"
+   }
   },
   {
    "id": "viterbo",
@@ -1738,7 +1755,7 @@
     "Liste d'attesa: how_to, documents_required, what_next e details dalla pagina «Pass di garanzia» di Salute Lazio (copia del 22/10/2026, pubblicata il 28/05/2026; le stesse frasi sono nelle pagine dell'ASL Roma 1 e dell'ASL Roma 5). letter_mode «portal» con portal_url la pagina della Regione: il pulsante del modulo oggi dice «Vai al sito dell'ASL» (js/liste-attesa.js), andrebbe «Vai al sito della Regione». Il modulo resta spento finché manca un indirizzo della zona di Roma 2 (copie del 23/10/2026). Il portale è della Regione: in details c'è la frase «Nel Lazio il Pass di garanzia è un servizio della Regione…».",
     "Screening: numero verde 800 840359 (lunedì-venerdì 9.00-13.00) dalle pagine dell'ASL sullo screening del seno e del colon-retto, copie del 23/10/2026 (lazio/viterbo/4766d29e952d.txt, b4b46fd20ad4.txt).",
     "Tolto da «pagine» il depliant screening di Salute Lazio: la copia del 23/10/2026 risponde 404.",
-    "Medico di famiglia (copie del 23/10/2026): nessuna pagina copiata spiega come si sceglie o si cambia il medico (ci sono solo voci di menu e numeri). Messe in «pagine» la pagina «Medico di famiglia» di Salute Lazio e la pagina «Scelta e revoca del medico o pediatra» dell'ASL di Viterbo. Dopo la copia: scelta_medico.how e url, poi si accende «medico-famiglia» se ce l'hanno tutte e 5 le aziende."
+    "Medico di famiglia: scelta_medico.how dalla pagina «Medico di famiglia e pediatra» di Salute Lazio (copia del 01/11/2026, pubblicata il 01/09/2026), che vale per tutte le ASL del Lazio."
    ],
    "pagine": [
     {
@@ -1791,7 +1808,12 @@
     "Puoi chiedere e attivare il Pass anche per un familiare: entri con il tuo SPID o la tua CIE e scrivi i suoi dati.",
     "Nel Lazio il Pass di garanzia è un servizio della Regione: il sito è Salute Lazio, non quello dell'ASL."
    ],
-   "fast_track": null
+   "fast_track": null,
+   "scelta_medico": {
+    "how": "Nel Lazio puoi scegliere o cambiare il medico di famiglia online, nel tuo Fascicolo Sanitario Elettronico (FSE), nella parte sul medico di famiglia e pediatra. Lì puoi anche cercare un medico libero. Puoi anche andare allo sportello della tua ASL: revochi il medico che hai e scegli il nuovo. La prima volta che scegli un medico nel Lazio vai allo sportello dell'ASL di residenza o di domicilio. Per il pediatra vai allo sportello con il documento del genitore, l'autocertificazione dello stato di famiglia e il codice fiscale del bambino.",
+    "url": "https://salutelazio.it/it/servizi/medico-di-famiglia",
+    "url_label": "Sito della Regione (Salute Lazio)"
+   }
   }
  ]
 }

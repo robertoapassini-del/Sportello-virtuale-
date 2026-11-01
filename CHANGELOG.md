@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 02/11/2026 — Lazio: acceso il modulo del medico di famiglia
+
+- `data/regioni/lazio/asl.json`: `scelta_medico` (come si sceglie e si cambia il medico: FSE o sportello dell'ASL; il pediatra allo sportello) in tutte e 5 le aziende, dalla pagina «Medico di famiglia e pediatra» di Salute Lazio (copia del 01/11/2026). Tolta da `pagine` la pagina dell'ASL di Rieti che risponde 404. `data/regioni/index.json`: «medico-famiglia» acceso nel Lazio.
+
 ## 01/11/2026 — IndexNow: Bing rilegge subito le pagine cambiate
 - `3c0ecdf89c2ace8539d2e7f0c68d136f.txt`: il file della chiave IndexNow nella cartella del sito (la chiave è pubblica per scelta: prova che il sito è nostro).
 - `tools/indexnow.mjs`: trova le pagine HTML cambiate tra due commit e le manda a api.indexnow.org (Bing, DuckDuckGo e gli altri motori che usano IndexNow). Con `--prova` stampa e non manda niente.
