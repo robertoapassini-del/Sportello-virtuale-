@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 02/11/2026 — Veneto: accesi prevenzione, medico di famiglia, cure a casa, cartelle cliniche e cure palliative
+- `data/regioni/veneto/asl.json`: numeri dello screening di ULSS 1, 2, 5, 6, 7 e 8 (copie del 01/11/2026 delle pagine dello screening, proof «pagina»); `scelta_medico` dalla pagina «Servizi sanitari digitali» della Rete degli URP del Veneto (Fascicolo «Sanità Km zero» con SPID o CIE, app viviVeneto); due pagine dell'ULSS 8 in `pagine` per il percorso di tutela.
+- `data/regioni/index.json`: Veneto con prevenzione, medico-famiglia, assistenza-domiciliare, cartella-clinica, cure-palliative. Liste d'attesa resta spenta (il motivo è nel `todo`).
+
 ## 01/11/2026 — IndexNow: Bing rilegge subito le pagine cambiate
 - `3c0ecdf89c2ace8539d2e7f0c68d136f.txt`: il file della chiave IndexNow nella cartella del sito (la chiave è pubblica per scelta: prova che il sito è nostro).
 - `tools/indexnow.mjs`: trova le pagine HTML cambiate tra due commit e le manda a api.indexnow.org (Bing, DuckDuckGo e gli altri motori che usano IndexNow). Con `--prova` stampa e non manda niente.
