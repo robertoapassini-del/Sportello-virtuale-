@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 01/11/2026 — Pagine che portano a un indirizzo nuovo: indirizzi aggiornati
+- Nei dati c'erano i `todo` del controllo del 26/10/2026 per le pagine delle aziende che ora portano a un altro indirizzo. Con le copie del server del 01/11/2026 (campo `finale` dell'indice): 22 indirizzi aggiornati, solo dove la copia della pagina nuova contiene tutti i numeri che la usano (cercati con `tools/cerca-numero.mjs`), e tolti i loro `todo`. Basilicata (URP Policoro), Campania (URP Napoli 3 Sud), Emilia-Romagna (CUP Bologna, URP Ferrara, CUPWEB e guardia medica di Modena), Lazio (guardia medica di Salute Lazio per le 5 aziende, prenotazioni Roma 3), Lombardia (URP Como, contatti Santi Paolo e Carlo, Valle Olona, IRCCS San Gerardo), Marche (guardia medica Pesaro Urbino, contatti Macerata, prenotare ad Ascoli Piceno), Veneto (numeri utili ULSS 3, URP ULSS 4 e Padova).
+- Non toccati, con il loro `todo`: ASST Brianza (la pagina ora porta alla homepage), ASST Monza (dominio nuovo dell'IRCCS San Gerardo, l'URP 039 2332225 non è nella pagina nuova), Imola (CAD/CAU porta alla homepage, l'800 040050 non c'è). Non cambiati i rimandi delle homepage (per esempio a «/it»).
+- Liguria: la notte del 01/11/2026 il sito della Regione ha risposto 403 a 19 pagine su 21 (anche quella del Fascicolo). È un blocco del server che copia, non una pagina sparita: link lasciati, da riguardare alla copia dopo.
+
 ## 31/10/2026 — Pensione e assegno di invalidità: riletti sulle schede INPS copiate
 - Le schede INPS sono state copiate dal server il 31/10/2026 (`copie/nazionali/regole-invalidita/`, aggiornate dall'INPS il 20/07/2026). Prova portata da «estratto» a «testo», con le frasi esatte nella nota (`data/rules-invalidita.json`).
 - Errore trovato: per l'assegno mensile mancava un requisito. La scheda INPS chiede il «mancato svolgimento di attività lavorativa»: ora la pagina lo dice, e consiglia il patronato a chi lavora. La norma citata dalla scheda non è scritta sul sito finché non è riletta su Normattiva (DA-VERIFICARE-A-MANO.md, punto 0).
@@ -116,6 +121,19 @@ Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 ## 26/10/2026 — Copie: la pagina «Request Rejected» dell'ISS non è una copia
 - Errore trovato con il confronto delle copie del 26/10/2026: le pagine dei numeri verdi dell'ISS (dipendenze, fumo) erano la pagina del filtro «Request Rejected», salvata come copia; il confronto segnalava i numeri come spariti. I numeri del sito non cambiano.
 - `tools/copie.mjs`: «Request Rejected» e «The requested URL was rejected» sono riconosciuti come pagina anti-robot (come Gcore): la pagina si segna e non si salva. Nuovo caso in `tests/copie-giro.test.mjs`, provato: senza la correzione fallisce.
+
+## 26/10/2026 — controllo automatico dei contatti
+- Copie del server del 26/10/2026 (branch `copie-siti`). Controllate 846 pagine: quelle dei contatti delle aziende e i link `site_url`, `info_url`, `guardia_medica_url`, `pua_url` di tutte le 20 regioni.
+- Confermati 1.647 numeri: sono nella copia della loro pagina. `verified` ora è 2026-10-26, `proof: "pagina"`. Nessun numero, indirizzo o orario cambiato.
+- Dubbi (un `todo` nell'azienda, decide una persona):
+  - Lombardia, PUA di Rozzano: nei dati 02 9811 8990, sulla pagina dell'ASST Melegnano e della Martesana ora c'è 02 9805.8990 – 02 9805.8991.
+  - Pagine che ora portano a un altro indirizzo (numeri non ricontrollati): Matera (URP di Policoro), Napoli 3 Sud (URP), Bologna (CUP), Ferrara (URP), Modena (CUPWEB e guardia medica), Salute Lazio (guardia medica, tutte e 5 le aziende), Como (URP), Milano (ASST Santi Paolo e Carlo), Monza e Brianza (URP dell'ASST Brianza porta alla homepage; ASST Monza porta a irccs-sangerardo.it), Varese (contatti), Venezia (numeri utili ULSS 3, URP ULSS 4), Padova (URP).
+  - Homepage che non risponde al server (403): ASP di Vibo Valentia, ASL VCO.
+- Dubbi solo segnalati (già noti o senza un numero nuovo):
+  - Numeri non trovati nella copia: ASP di Enna (7 numeri, la pagina li mostra solo con JavaScript, già in `tests/copie-noti.txt`); Caltanissetta, centralino 0934 506111 (sulla homepage c'è solo il CUP 0934 506506, già nel `todo`); Palermo, Ospedale Civico cartelle cliniche (la pagina non ha il numero, già nel `todo`); Ragusa, 4 PUA con `proof: "estratto"` (la homepage non li ha); Firenze, Segretariato sociale Nord Ovest 055 6930444 (la notizia non è più sulla homepage); Alto Adige, CUPP 100 100 (la pagina scrive «100 100 (pref. 0471, 0472, 0473, 0474)»: è lo stesso numero, scritto a parte dal prefisso).
+  - Orario: Siracusa, PUA di Augusta «16:30» non è nella pagina (già noto).
+  - Indirizzo: Palermo, Ospedale Cervello «Via Trabucco 180» non è nella pagina (già nel `todo`). Gli altri indirizzi diversi sono solo abbreviazioni («Circ.ne», «V. Veneto», «P. Togiatti»).
+  - Titolo vuoto (la pagina risponde 200 e ha il testo): ASP di Catanzaro, homepage, guardia medica e PUA; comunicato sul 116117 usato da Cosenza e Vibo Valentia.
 
 ## 25/10/2026 — Seconda rilettura: coerenza tra pagine
 - Riletti insieme lo stesso fatto in pagine diverse, `data/moduli.json`, i testi comuni dei JS, le pagine delle aree e i testi delle regioni (`docs/revisione-2026-10-25.md`, ultima sezione).
