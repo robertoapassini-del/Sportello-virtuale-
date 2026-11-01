@@ -43,7 +43,8 @@ elencarle tutte e dire «non ancora disponibile» per quelle vuote.
   ovunque, AUSL in Emilia‑Romagna, ULSS in Veneto, ASUGI/ASUFC in Friuli…). I testi dei moduli useranno questa
   parola al posto di «ASP» scritto a mano.
 - `asl_label_servizi` (facoltativo): chi dà i servizi, se non è l'azienda di `asl_label`. In Lombardia «ASST»: visite,
-  ospedali, cure a casa, ausili, medico e farmacia sono delle ASST, l'ATS controlla. I JS: `aslLabel()` per i servizi,
+  ospedali, cure a casa, ausili, medico e farmacia sono delle ASST, l'ATS controlla. In Liguria «ASL»: dal 2026 c'è una sola
+  ATS Liguria, divisa in 5 aree sociosanitarie locali (ASL) che danno i servizi. I JS: `aslLabel()` per i servizi,
   `aslEnte()` per l'azienda dei dati (siti, numeri, URP, screening).
 
 ### I file di una regione

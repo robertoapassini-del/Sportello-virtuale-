@@ -23,7 +23,6 @@ per scrivere la regola giusta serve la fonte ufficiale in `data/`.
 
 - [ ] **Esenzione per reddito, quale famiglia conta**: ora il sito dice «la famiglia per il fisco: tu, il coniuge non separato e chi è a carico» (prima «stesso stato di famiglia»). Rileggere la pagina del Ministero della Salute sui ticket e scrivere la regola con la fonte in `data/rules-esenzione.json`.
 - [ ] **Esenzioni regionali per reddito**: Lombardia E05 (65 anni e più, fino a 38.500 euro), E02F per chi cerca il primo lavoro, E12/E13; Puglia E94–E96 sui farmaci. Con le fonti, il conto di `js/esenzione.js` può dirlo nella regione giusta.
-- [ ] **Lombardia, ATS e ASST**: gli sportelli (scelta del medico, esenzioni, farmacia per i farmaci con il piano) sono dell'ASST, ma `aslLabel()` dice «ATS». Serve un nome per gli sportelli in `data/regioni/index.json`. Controllare anche la Liguria (ATS).
 - [ ] **Invalidità in Valle d'Aosta e in Trentino-Alto Adige**: le prestazioni le paga la Regione o la Provincia, non l'INPS. Le pagine dicono «INPS» e «vale in tutta Italia». Il modulo lì è spento. Scrivere l'eccezione con la fonte.
 - [ ] **112 NUE**: non è ancora attivo in tutte le regioni (dove manca, risponde il 112 dei Carabinieri). La fonte in `data/numeri.json` è la notizia di Palermo: mettere la pagina nazionale del Ministero dell'Interno.
 - [ ] **Guardia medica e 116117**: Numeri utili dice «ogni zona ha il suo numero», ma in molte regioni c'è il 116117 per tutta la regione (è nei dati regionali). Scrivere il consiglio dai dati.

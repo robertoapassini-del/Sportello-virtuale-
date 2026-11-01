@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 01/11/2026 — Lombardia e Liguria: chi dà i servizi e chi è l'azienda
+- Chiuso il punto «Lombardia, ATS e ASST» di `DA-VERIFICARE-A-MANO.md`. In Lombardia era già a posto dal 26/10/2026 (`asl_label_servizi: "ASST"`, `aslLabel()` per i servizi e `aslEnte()` per siti, numeri e URP). Riletto il sito come utente lombardo: «ATS» compare solo nei nomi delle fonti e dei numeri, mai al posto dell'ASST.
+- Liguria: la homepage dell'area spezzina (https://www.asl5.liguria.it/, copia del 01/11/2026) dice che dal 1° gennaio 2026, con la L.R. 18 del 12/12/2025, le cinque aziende sono una sola, «Azienda tutela della salute Liguria (Ats Liguria)», divisa in «cinque Aree sociosanitarie locali (Asl) che erogano agli assistiti servizi». Quindi `asl_label` resta «ATS» e si aggiunge `asl_label_servizi: "ASL"` in `data/regioni/index.json`: i moduli dicono «la tua ASL» per gli uffici e «ATS» per l'azienda. Frase della fonte nel `_note` di `data/regioni/liguria/asl.json`; `model` aggiornato per il controllo di `tests/coerenza.test.mjs`.
+
 ## 01/11/2026 — IndexNow: Bing rilegge subito le pagine cambiate
 - `3c0ecdf89c2ace8539d2e7f0c68d136f.txt`: il file della chiave IndexNow nella cartella del sito (la chiave è pubblica per scelta: prova che il sito è nostro).
 - `tools/indexnow.mjs`: trova le pagine HTML cambiate tra due commit e le manda a api.indexnow.org (Bing, DuckDuckGo e gli altri motori che usano IndexNow). Con `--prova` stampa e non manda niente.

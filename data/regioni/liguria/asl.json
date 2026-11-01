@@ -1,6 +1,6 @@
 {
  "region": "Liguria",
- "model": "ATS Liguria",
+ "model": "ATS Liguria e ASL (aree sociosanitarie locali)",
  "local_name": "percorso di tutela",
  "booking_deadline_days": null,
  "no_class_rule": "P",
@@ -33,7 +33,7 @@
    "proof": "pagina"
   }
  },
- "_note": "Numeri delle aziende sanitarie della Liguria (dal 2026 ATS Liguria, con 5 aree sociosanitarie) per provincia, letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Servono a Numeri utili, Medico di famiglia e, dalle copie del 22/10/2026, agli altri moduli con le lettere; le sedi INPS (inps.json) a Invalidità. Prenotazioni: CUP Liguria 010 5383400. Il 116117 è attivo solo nel Tigullio (dal 16/12/2025); altrove restano i numeri di guardia medica delle aree.",
+ "_note": "Numeri delle aziende sanitarie della Liguria per provincia. Dal 1° gennaio 2026 c'è una sola azienda, ATS Liguria, con 5 aree sociosanitarie locali che la pagina ufficiale chiama ASL e che danno i servizi: https://www.asl5.liguria.it/ (copia del 01/11/2026): «a seguito della L. R. Liguria n. 18 del 12.12.25, a decorrere dall'1 gennaio 2026, le cinque Aziende sociosanitarie liguri e Liguria salute si sono fuse in un'unica azienda regionale, denominata Azienda tutela della salute Liguria (Ats Liguria). Ats Liguria si articola in un'Area di gestione dei servizi accentrati e in cinque Aree sociosanitarie locali (Asl) che erogano agli assistiti servizi». Per questo nell'indice asl_label è ATS e asl_label_servizi è ASL. Numeri letti letti nelle copie delle pagine ufficiali fatte dal server in Italia il 21/10/2026 (docs/regola-numeri.md, proof «pagina»). Servono a Numeri utili, Medico di famiglia e, dalle copie del 22/10/2026, agli altri moduli con le lettere; le sedi INPS (inps.json) a Invalidità. Prenotazioni: CUP Liguria 010 5383400. Il 116117 è attivo solo nel Tigullio (dal 16/12/2025); altrove restano i numeri di guardia medica delle aree.",
  "asl": [
   {
    "id": "genova",
