@@ -1,6 +1,6 @@
 {
  "regione": "sardegna",
- "aggiornato": "2026-11-01T04:00:33.070Z",
+ "aggiornato": "2026-11-01T09:44:00.625Z",
  "pagine": [
   {
    "asl": "cagliari",
@@ -837,7 +837,7 @@
    "sha": "0c09b416b8a32be538c863cf4d0d86e82b20d17548d179c430394acf2eb0d647",
    "caratteri": 3990,
    "email_nascoste": 2,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ogliastra",
@@ -1129,7 +1129,7 @@
    "sha": "fbe7b69bc16ab2a3e9a0929ca54d4390728c0e307a37148b9a90e1b80cb3fe0a",
    "caratteri": 4293,
    "email_nascoste": 4,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "sassari",
@@ -1339,7 +1339,7 @@
    "sha": "ba7ae521f024c9a6cb52dd59c8d9d5a3cf7231bc8b23eab9546699a0f25ea7ae",
    "caratteri": 4685,
    "email_nascoste": 2,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "sulcis",
@@ -1706,7 +1706,7 @@
    "http": 200,
    "file": "regione-sardegna/5dae24b1e42b.txt",
    "titolo": "Aiuto - CupWeb",
-   "sha": "20e8a1c7e5506a0763bc5763205de98414eb3f8089dbaeb3a5cc55f2857328b7",
+   "sha": "6a60c23b78943d2f2c26ef2f791b19bd2eb275b0784abf709b5f624bc8e1ee4a",
    "caratteri": 19024,
    "link_pdf": [
     {
@@ -1821,12 +1821,13 @@
    "asl": "regione-sardegna",
    "url": "https://fse20.sardegnasalute.it/domande-frequenti",
    "controllata": "2026-11-01",
+   "browser": true,
    "http": 200,
    "file": "regione-sardegna/3ab61e64ae1d.txt",
    "titolo": "FSE",
-   "sha": "6747ab5896f4c7ee1d5e4b29810188b35b95e1e3d123405683870bb6538153c3",
-   "caratteri": 3,
-   "cambiata": false
+   "sha": "0935aee2780d098649653a1be0ced3140b09dcdba7a8330f6626dde6447ab0d4",
+   "caratteri": 33405,
+   "cambiata": true
   },
   {
    "asl": "regione-sardegna",
