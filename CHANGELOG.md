@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 02/11/2026 — Lombardia: pagine dello screening e scelta del medico
+- `data/regioni/lombardia/asl.json`: in `pagine[]` di 10 province la pagina screening della propria ATS (Brescia, Brianza, Insubria, Milano, Montagna, Val Padana), come la linka la pagina regionale «Screening: a chi sono rivolti e come aderire» (copia del 01/11/2026). Dopo la copia del server: il numero del centro screening in `contacts` e il modulo `prevenzione` acceso.
+- `scelta_medico` in ogni provincia, dalla pagina «Cambio medico» della Regione Lombardia (copia del 01/11/2026): online sul Fascicolo con SPID, CIE o CNS; prima scelta e casi particolari allo sportello «Scelta e revoca» dell'ASST.
+- Nel `todo`: le lettere all'ASST restano spente perché nessuna pagina ufficiale copiata dà i comuni di ogni ASST nelle province con più ASST.
+
 ## 02/11/2026 — Campania: medico di famiglia e cure palliative accesi
 - `data/regioni/campania/asl.json`: `scelta_medico` in ogni ASL e zona di Napoli dalla pagina della Regione «Scelta e revoca del Medico» (regione.campania.it/node/32056, copia del 01/11/2026): portale Sinfonia, app Campania in Salute o ufficio Assistenza sanitaria di base del distretto. Contatti «screening» di Avellino (0825 292029) e Caserta (800 984043, 0823 210545) dalle copie del 01/11/2026. Nuove pagine da copiare: screening di Benevento e Napoli 1 Centro, liste d'attesa di Napoli 1 Centro e Napoli 2 Nord.
 - `data/regioni/index.json`: in Campania accesi `medico-famiglia` e `cure-palliative` (ogni ASL e zona ha email o PEC). Restano spenti `liste-attesa` (manca il percorso di tutela di Benevento, Caserta, Napoli 1, Napoli 2 e Salerno) e `prevenzione` (manca il numero dello screening di Benevento, Napoli 1, Napoli 2 e Salerno): il motivo è nei `todo`.

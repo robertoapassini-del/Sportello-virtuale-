@@ -228,7 +228,9 @@
     "La pagina ATS Assistenza domiciliare (aggiornata al 04/03/2025) non riporta numeri: i recapiti sono sul modulo.",
     "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe.",
     "Zone in sub_areas: una per ASST, con nome ufficiale, PEC e email URP dalle copie. Testo sotto il pulsante («comuni», 23/10/2026) dalle copie del 23/10/2026: ASST Papa Giovanni XXIII, home page (i due distretti); ASST Bergamo Ovest, pagina ADI (quattro distretti); ASST Bergamo Est, pagine consultori e URP dei distretti. Dove la copia dà solo ospedali o Case di Comunità, il testo dice quelli: mancano gli elenchi dei comuni di ogni ASST. Le lettere all'ASST restano spente.",
-    "Percorso di tutela (copie del 22/10/2026): ASST Bergamo Ovest (tempi_attesa@asst-bgovest.it, pagina 280.asp) e ASST Bergamo Est (lista di presa in carico, rua.tempiattesa@asst-bergamoest.it) scritti nelle zone. ASST Papa Giovanni XXIII: la pagina «liste di attesa» dice che il CUP usa GP++ e poi le liste di presa in carico, ma non dice a chi scrivere: letter_mode non scritto."
+    "Percorso di tutela (copie del 22/10/2026): ASST Bergamo Ovest (tempi_attesa@asst-bgovest.it, pagina 280.asp) e ASST Bergamo Est (lista di presa in carico, rua.tempiattesa@asst-bergamoest.it) scritti nelle zone. ASST Papa Giovanni XXIII: la pagina «liste di attesa» dice che il CUP usa GP++ e poi le liste di presa in carico, ma non dice a chi scrivere: letter_mode non scritto.",
+    "Scelta del medico (scelta_medico, 02/11/2026): dalla pagina «Cambio medico» della Regione Lombardia (copia del 01/11/2026), uguale per tutte le ASST. Mancano i numeri degli sportelli scelta e revoca delle ASST.",
+    "Lettere all'ASST (cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa) ancora spente (02/11/2026): nelle province con più ASST la zona si sceglie da ospedali o distretti, non dai comuni; nessuna pagina ufficiale copiata dà l'elenco dei comuni di ogni ASST (cercate: siti delle ATS, pagina regionale delle ASST). Serve quella pagina in pagine[], poi i comuni nelle zone."
    ],
    "pagine": [
     {
@@ -389,7 +391,12 @@
      "details": [],
      "info_url": "https://www.asst-bergamoest.it/it/informazioni/tutela-del-cittadino"
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "In Lombardia puoi cambiare il medico di famiglia, o il pediatra di un figlio minorenne, online sul Fascicolo Sanitario Elettronico. Entri con SPID, CIE o tessera sanitaria (CNS) con PIN e lettore. Online vedi solo i medici del tuo comune che hanno ancora posto. La prima scelta del medico si fa allo sportello «Scelta e revoca» della tua ASST. Allo sportello vai anche per i medici che non hanno più posto o per i casi particolari.",
+    "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
+    "url_label": "Sito della Regione"
+   }
   },
   {
    "id": "brescia",
@@ -731,7 +738,10 @@
     "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe.",
     "Zone in sub_areas: una per ASST, con nome ufficiale, PEC e email URP dalle copie. Testo sotto il pulsante («comuni», 23/10/2026) dalle copie del 23/10/2026: ASST Spedali Civili, pagina URP (distretti); ASST Franciacorta, «Come prenotare una visita» (Case di Comunità); ASST del Garda, pagina URP (ospedali); ASST Valcamonica, pagina guardia medica (ospedali e Case di Comunità). Dove la copia dà solo ospedali o Case di Comunità, il testo dice quelli: mancano gli elenchi dei comuni di ogni ASST. Le lettere all'ASST restano spente.",
     "Percorso di tutela (copie del 22/10/2026): ASST Spedali Civili scritto nella zona (percorsotutela.scb@asst-spedalicivili.it, con modulo). ASST Franciacorta, del Garda e Valcamonica: nessuna pagina copiata sul percorso di tutela (estratto del 22/10/2026 per il Garda: modulo a protocollo.aziendale@asst-garda.it, non usato).",
-    "Screening (23/10/2026): nessuna copia dà il numero del centro screening dell'ATS. In pagine[] l'elenco dei centri screening della Regione Lombardia (PDF) e la pagina regionale sugli screening, da leggere dopo la prossima copia."
+    "Screening (23/10/2026): nessuna copia dà il numero del centro screening dell'ATS. In pagine[] l'elenco dei centri screening della Regione Lombardia (PDF) e la pagina regionale sugli screening, da leggere dopo la prossima copia.",
+    "Screening (02/11/2026): in pagine[] la pagina screening dell'ATS, linkata dalla pagina regionale «Screening: a chi sono rivolti e come aderire» (paragrafo «Contatti dei centri screening delle ATS»). Dopo la copia: il numero del centro screening in contacts (topic «screening»).",
+    "Scelta del medico (scelta_medico, 02/11/2026): dalla pagina «Cambio medico» della Regione Lombardia (copia del 01/11/2026), uguale per tutte le ASST. Mancano i numeri degli sportelli scelta e revoca delle ASST.",
+    "Lettere all'ASST (cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa) ancora spente (02/11/2026): nelle province con più ASST la zona si sceglie da ospedali o distretti, non dai comuni; nessuna pagina ufficiale copiata dà l'elenco dei comuni di ogni ASST (cercate: siti delle ATS, pagina regionale delle ASST). Serve quella pagina in pagine[], poi i comuni nelle zone."
    ],
    "pagine": [
     {
@@ -809,6 +819,10 @@
     {
      "tipo": "screening",
      "url": "https://www.regione.lombardia.it/sanita/prevenzione-e-stili-di-vita/screening-per-la-diagnosi-precoce-dei-tumori"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.ats-brescia.it/screening-aderisci-alla-prevenzione"
     }
    ],
    "sub_areas": [
@@ -887,7 +901,12 @@
       "urp@asst-valcamonica.it"
      ]
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "In Lombardia puoi cambiare il medico di famiglia, o il pediatra di un figlio minorenne, online sul Fascicolo Sanitario Elettronico. Entri con SPID, CIE o tessera sanitaria (CNS) con PIN e lettore. Online vedi solo i medici del tuo comune che hanno ancora posto. La prima scelta del medico si fa allo sportello «Scelta e revoca» della tua ASST. Allo sportello vai anche per i medici che non hanno più posto o per i casi particolari.",
+    "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
+    "url_label": "Sito della Regione"
+   }
   },
   {
    "id": "como",
@@ -1080,7 +1099,10 @@
     "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe.",
     "Zone in sub_areas: una per ASST, con nome ufficiale, PEC e email URP dalle copie. Testo sotto il pulsante («comuni», 23/10/2026) dalle copie del 23/10/2026: ASST Lariana, «Telefono e posta elettronica» (PEC dei sei distretti). Dove la copia dà solo ospedali o Case di Comunità, il testo dice quelli: mancano gli elenchi dei comuni di ogni ASST. Le lettere all'ASST restano spente.",
     "Percorso di tutela: ASST Lariana, pagina «liste di attesa» (copia del 22/10/2026): se non c'è posto in tutta l'ATS, l'Ufficio Percorso di Tutela prende in carico la ricetta; nella pagina URP c'è il «Modulo di istanza di attivazione del percorso di tutela» (PDF non copiato), ma nessuna copia dice dove mandarlo. ASST Valtellina e Alto Lario: la pagina liste di attesa dà 404.",
-    "Screening (23/10/2026): nessuna copia dà il numero del centro screening dell'ATS. In pagine[] l'elenco dei centri screening della Regione Lombardia (PDF) e la pagina regionale sugli screening, da leggere dopo la prossima copia."
+    "Screening (23/10/2026): nessuna copia dà il numero del centro screening dell'ATS. In pagine[] l'elenco dei centri screening della Regione Lombardia (PDF) e la pagina regionale sugli screening, da leggere dopo la prossima copia.",
+    "Screening (02/11/2026): in pagine[] la pagina screening dell'ATS, linkata dalla pagina regionale «Screening: a chi sono rivolti e come aderire» (paragrafo «Contatti dei centri screening delle ATS»). Dopo la copia: il numero del centro screening in contacts (topic «screening»).",
+    "Scelta del medico (scelta_medico, 02/11/2026): dalla pagina «Cambio medico» della Regione Lombardia (copia del 01/11/2026), uguale per tutte le ASST. Mancano i numeri degli sportelli scelta e revoca delle ASST.",
+    "Lettere all'ASST (cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa) ancora spente (02/11/2026): nelle province con più ASST la zona si sceglie da ospedali o distretti, non dai comuni; nessuna pagina ufficiale copiata dà l'elenco dei comuni di ogni ASST (cercate: siti delle ATS, pagina regionale delle ASST). Serve quella pagina in pagine[], poi i comuni nelle zone."
    ],
    "pagine": [
     {
@@ -1126,6 +1148,10 @@
     {
      "tipo": "screening",
      "url": "https://www.regione.lombardia.it/sanita/prevenzione-e-stili-di-vita/screening-per-la-diagnosi-precoce-dei-tumori"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.ats-insubria.it/aree-tematiche/screening"
     }
    ],
    "sub_areas": [
@@ -1155,7 +1181,12 @@
       "Alto Lario"
      ]
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "In Lombardia puoi cambiare il medico di famiglia, o il pediatra di un figlio minorenne, online sul Fascicolo Sanitario Elettronico. Entri con SPID, CIE o tessera sanitaria (CNS) con PIN e lettore. Online vedi solo i medici del tuo comune che hanno ancora posto. La prima scelta del medico si fa allo sportello «Scelta e revoca» della tua ASST. Allo sportello vai anche per i medici che non hanno più posto o per i casi particolari.",
+    "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
+    "url_label": "Sito della Regione"
+   }
   },
   {
    "id": "cremona",
@@ -1405,7 +1436,10 @@
     "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe.",
     "Zone in sub_areas: una per ASST, con nome ufficiale, PEC e email URP dalle copie. Testo sotto il pulsante («comuni», 23/10/2026) dalle copie del 23/10/2026: ASST di Cremona, pagina CUP (ospedali e Case di Comunità); ASST di Crema, «Contatti e numeri utili» (Distretto Cremasco). Dove la copia dà solo ospedali o Case di Comunità, il testo dice quelli: mancano gli elenchi dei comuni di ogni ASST. Le lettere all'ASST restano spente.",
     "Percorso di tutela: nessuna pagina copiata dell'ASST di Cremona o di Crema dice come chiederlo (la pagina «tempi d'attesa» di Cremona non ne parla).",
-    "Screening (23/10/2026): nessuna copia dà il numero del centro screening dell'ATS. In pagine[] l'elenco dei centri screening della Regione Lombardia (PDF) e la pagina regionale sugli screening, da leggere dopo la prossima copia."
+    "Screening (23/10/2026): nessuna copia dà il numero del centro screening dell'ATS. In pagine[] l'elenco dei centri screening della Regione Lombardia (PDF) e la pagina regionale sugli screening, da leggere dopo la prossima copia.",
+    "Screening (02/11/2026): in pagine[] la pagina screening dell'ATS, linkata dalla pagina regionale «Screening: a chi sono rivolti e come aderire» (paragrafo «Contatti dei centri screening delle ATS»). Dopo la copia: il numero del centro screening in contacts (topic «screening»).",
+    "Scelta del medico (scelta_medico, 02/11/2026): dalla pagina «Cambio medico» della Regione Lombardia (copia del 01/11/2026), uguale per tutte le ASST. Mancano i numeri degli sportelli scelta e revoca delle ASST.",
+    "Lettere all'ASST (cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa) ancora spente (02/11/2026): nelle province con più ASST la zona si sceglie da ospedali o distretti, non dai comuni; nessuna pagina ufficiale copiata dà l'elenco dei comuni di ogni ASST (cercate: siti delle ATS, pagina regionale delle ASST). Serve quella pagina in pagine[], poi i comuni nelle zone."
    ],
    "pagine": [
     {
@@ -1459,6 +1493,10 @@
     {
      "tipo": "screening",
      "url": "https://www.regione.lombardia.it/sanita/prevenzione-e-stili-di-vita/screening-per-la-diagnosi-precoce-dei-tumori"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.ats-valpadana.it/screening-oncologici"
     }
    ],
    "sub_areas": [
@@ -1488,7 +1526,12 @@
       "urp@asst-crema.it"
      ]
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "In Lombardia puoi cambiare il medico di famiglia, o il pediatra di un figlio minorenne, online sul Fascicolo Sanitario Elettronico. Entri con SPID, CIE o tessera sanitaria (CNS) con PIN e lettore. Online vedi solo i medici del tuo comune che hanno ancora posto. La prima scelta del medico si fa allo sportello «Scelta e revoca» della tua ASST. Allo sportello vai anche per i medici che non hanno più posto o per i casi particolari.",
+    "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
+    "url_label": "Sito della Regione"
+   }
   },
   {
    "id": "lecco",
@@ -1631,7 +1674,10 @@
     "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe.",
     "Zone in sub_areas: una sola ASST, con nome ufficiale, PEC e email URP dalle copie. Con una zona sola la lettera va a quella senza la domanda «In quale zona?» (tests/coerenza.test.mjs lo accetta dal 22/10/2026): i comuni non servono. Le lettere all'ASST restano spente finché le province con più ASST non sono complete.",
     "Percorso di tutela: la pagina «liste di attesa» dell'ASST di Lecco (copia del 22/10/2026) non dice come chiederlo.",
-    "Screening (23/10/2026): nessuna copia dà il numero del centro screening dell'ATS. In pagine[] l'elenco dei centri screening della Regione Lombardia (PDF) e la pagina regionale sugli screening, da leggere dopo la prossima copia."
+    "Screening (23/10/2026): nessuna copia dà il numero del centro screening dell'ATS. In pagine[] l'elenco dei centri screening della Regione Lombardia (PDF) e la pagina regionale sugli screening, da leggere dopo la prossima copia.",
+    "Screening (02/11/2026): in pagine[] la pagina screening dell'ATS, linkata dalla pagina regionale «Screening: a chi sono rivolti e come aderire» (paragrafo «Contatti dei centri screening delle ATS»). Dopo la copia: il numero del centro screening in contacts (topic «screening»).",
+    "Scelta del medico (scelta_medico, 02/11/2026): dalla pagina «Cambio medico» della Regione Lombardia (copia del 01/11/2026), uguale per tutte le ASST. Mancano i numeri degli sportelli scelta e revoca delle ASST.",
+    "Lettere all'ASST (cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa) ancora spente (02/11/2026): nelle province con più ASST la zona si sceglie da ospedali o distretti, non dai comuni; nessuna pagina ufficiale copiata dà l'elenco dei comuni di ogni ASST (cercate: siti delle ATS, pagina regionale delle ASST). Serve quella pagina in pagine[], poi i comuni nelle zone."
    ],
    "pagine": [
     {
@@ -1669,6 +1715,10 @@
     {
      "tipo": "screening",
      "url": "https://www.regione.lombardia.it/sanita/prevenzione-e-stili-di-vita/screening-per-la-diagnosi-precoce-dei-tumori"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.ats-brianza.it/it/screening-oncologici.html"
     }
    ],
    "sub_areas": [
@@ -1682,7 +1732,12 @@
       "urp@asst-lecco.it"
      ]
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "In Lombardia puoi cambiare il medico di famiglia, o il pediatra di un figlio minorenne, online sul Fascicolo Sanitario Elettronico. Entri con SPID, CIE o tessera sanitaria (CNS) con PIN e lettore. Online vedi solo i medici del tuo comune che hanno ancora posto. La prima scelta del medico si fa allo sportello «Scelta e revoca» della tua ASST. Allo sportello vai anche per i medici che non hanno più posto o per i casi particolari.",
+    "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
+    "url_label": "Sito della Regione"
+   }
   },
   {
    "id": "lodi",
@@ -1803,7 +1858,10 @@
     "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe.",
     "Zone in sub_areas: una sola ASST, con nome ufficiale, PEC e email URP dalle copie. Con una zona sola la lettera va a quella senza la domanda «In quale zona?» (tests/coerenza.test.mjs lo accetta dal 22/10/2026): i comuni non servono. Le lettere all'ASST restano spente finché le province con più ASST non sono complete.",
     "Percorso di tutela: la pagina «tempi di attesa» dell'ASST di Lodi (copia del 22/10/2026) non dice a chi scrivere.",
-    "Screening (23/10/2026): nessuna copia dà il numero del centro screening dell'ATS. In pagine[] l'elenco dei centri screening della Regione Lombardia (PDF) e la pagina regionale sugli screening, da leggere dopo la prossima copia."
+    "Screening (23/10/2026): nessuna copia dà il numero del centro screening dell'ATS. In pagine[] l'elenco dei centri screening della Regione Lombardia (PDF) e la pagina regionale sugli screening, da leggere dopo la prossima copia.",
+    "Screening (02/11/2026): in pagine[] la pagina screening dell'ATS, linkata dalla pagina regionale «Screening: a chi sono rivolti e come aderire» (paragrafo «Contatti dei centri screening delle ATS»). Dopo la copia: il numero del centro screening in contacts (topic «screening»).",
+    "Scelta del medico (scelta_medico, 02/11/2026): dalla pagina «Cambio medico» della Regione Lombardia (copia del 01/11/2026), uguale per tutte le ASST. Mancano i numeri degli sportelli scelta e revoca delle ASST.",
+    "Lettere all'ASST (cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa) ancora spente (02/11/2026): nelle province con più ASST la zona si sceglie da ospedali o distretti, non dai comuni; nessuna pagina ufficiale copiata dà l'elenco dei comuni di ogni ASST (cercate: siti delle ATS, pagina regionale delle ASST). Serve quella pagina in pagine[], poi i comuni nelle zone."
    ],
    "pagine": [
     {
@@ -1865,6 +1923,10 @@
     {
      "tipo": "screening",
      "url": "https://www.regione.lombardia.it/sanita/prevenzione-e-stili-di-vita/screening-per-la-diagnosi-precoce-dei-tumori"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/prevenzione/screening-oncologico"
     }
    ],
    "sub_areas": [
@@ -1878,7 +1940,12 @@
       "urp@asst-lodi.it"
      ]
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "In Lombardia puoi cambiare il medico di famiglia, o il pediatra di un figlio minorenne, online sul Fascicolo Sanitario Elettronico. Entri con SPID, CIE o tessera sanitaria (CNS) con PIN e lettore. Online vedi solo i medici del tuo comune che hanno ancora posto. La prima scelta del medico si fa allo sportello «Scelta e revoca» della tua ASST. Allo sportello vai anche per i medici che non hanno più posto o per i casi particolari.",
+    "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
+    "url_label": "Sito della Regione"
+   }
   },
   {
    "id": "mantova",
@@ -2026,7 +2093,10 @@
     "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe.",
     "Zone in sub_areas: una sola ASST, con nome ufficiale, PEC e email URP dalle copie. Con una zona sola la lettera va a quella senza la domanda «In quale zona?» (tests/coerenza.test.mjs lo accetta dal 22/10/2026): i comuni non servono. Le lettere all'ASST restano spente finché le province con più ASST non sono complete.",
     "Percorso di tutela: la pagina liste di attesa dell'ASST di Mantova dà 404; nessuna copia ne parla.",
-    "Screening (23/10/2026): nessuna copia dà il numero del centro screening dell'ATS. In pagine[] l'elenco dei centri screening della Regione Lombardia (PDF) e la pagina regionale sugli screening, da leggere dopo la prossima copia."
+    "Screening (23/10/2026): nessuna copia dà il numero del centro screening dell'ATS. In pagine[] l'elenco dei centri screening della Regione Lombardia (PDF) e la pagina regionale sugli screening, da leggere dopo la prossima copia.",
+    "Screening (02/11/2026): in pagine[] la pagina screening dell'ATS, linkata dalla pagina regionale «Screening: a chi sono rivolti e come aderire» (paragrafo «Contatti dei centri screening delle ATS»). Dopo la copia: il numero del centro screening in contacts (topic «screening»).",
+    "Scelta del medico (scelta_medico, 02/11/2026): dalla pagina «Cambio medico» della Regione Lombardia (copia del 01/11/2026), uguale per tutte le ASST. Mancano i numeri degli sportelli scelta e revoca delle ASST.",
+    "Lettere all'ASST (cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa) ancora spente (02/11/2026): nelle province con più ASST la zona si sceglie da ospedali o distretti, non dai comuni; nessuna pagina ufficiale copiata dà l'elenco dei comuni di ogni ASST (cercate: siti delle ATS, pagina regionale delle ASST). Serve quella pagina in pagine[], poi i comuni nelle zone."
    ],
    "pagine": [
     {
@@ -2064,6 +2134,10 @@
     {
      "tipo": "screening",
      "url": "https://www.regione.lombardia.it/sanita/prevenzione-e-stili-di-vita/screening-per-la-diagnosi-precoce-dei-tumori"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.ats-valpadana.it/screening-oncologici"
     }
    ],
    "sub_areas": [
@@ -2077,7 +2151,12 @@
       "urp@asst-mantova.it"
      ]
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "In Lombardia puoi cambiare il medico di famiglia, o il pediatra di un figlio minorenne, online sul Fascicolo Sanitario Elettronico. Entri con SPID, CIE o tessera sanitaria (CNS) con PIN e lettore. Online vedi solo i medici del tuo comune che hanno ancora posto. La prima scelta del medico si fa allo sportello «Scelta e revoca» della tua ASST. Allo sportello vai anche per i medici che non hanno più posto o per i casi particolari.",
+    "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
+    "url_label": "Sito della Regione"
+   }
   },
   {
    "id": "milano",
@@ -2611,7 +2690,10 @@
     "Percorso di tutela (copie del 22/10/2026): Niguarda scritto nella zona (lista di presa in carico, poi URP o ruainforma@ospedaleniguarda.it, con modulo). Santi Paolo e Carlo: si chiede ai CUP aziendali, o all'URP con il modulo allegato (quale URP non è detto). Melegnano e Martesana: «Segnalazione per attivare il percorso di tutela» all'URP. Rhodense: «Istanza di attivazione del percorso di tutela» nella pagina URP, senza indirizzo. Ovest Milanese: modulo di segnalazione all'Ufficio Pubblica Tutela, senza indirizzo. Fatebenefratelli Sacco e Nord Milano: nessuna pagina copiata.",
     "Screening (23/10/2026): nessuna copia dà il numero del centro screening dell'ATS. In pagine[] l'elenco dei centri screening della Regione Lombardia (PDF) e la pagina regionale sugli screening, da leggere dopo la prossima copia.",
     "Percorso di tutela (23/10/2026): nelle copie della Lombardia non c'è ancora nessun PDF. In pagine[] il PDF dell'Ufficio Pubblica Tutela dell'ASST Ovest Milanese e la Carta dei Servizi 2026 dell'ASST Santi Paolo e Carlo (trovati col motore di ricerca, domini ufficiali, non letti).",
-    "Controllo automatico del 26/10/2026: PUA Rozzano (ASST Melegnano e della Martesana): sul sito ora c'è 02 9805.8990 – 02 9805.8991 (pagina del 26/10/2026). Il numero 02 9811 8990 non è nella pagina."
+    "Controllo automatico del 26/10/2026: PUA Rozzano (ASST Melegnano e della Martesana): sul sito ora c'è 02 9805.8990 – 02 9805.8991 (pagina del 26/10/2026). Il numero 02 9811 8990 non è nella pagina.",
+    "Screening (02/11/2026): in pagine[] la pagina screening dell'ATS, linkata dalla pagina regionale «Screening: a chi sono rivolti e come aderire» (paragrafo «Contatti dei centri screening delle ATS»). Dopo la copia: il numero del centro screening in contacts (topic «screening»).",
+    "Scelta del medico (scelta_medico, 02/11/2026): dalla pagina «Cambio medico» della Regione Lombardia (copia del 01/11/2026), uguale per tutte le ASST. Mancano i numeri degli sportelli scelta e revoca delle ASST.",
+    "Lettere all'ASST (cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa) ancora spente (02/11/2026): nelle province con più ASST la zona si sceglie da ospedali o distretti, non dai comuni; nessuna pagina ufficiale copiata dà l'elenco dei comuni di ogni ASST (cercate: siti delle ATS, pagina regionale delle ASST). Serve quella pagina in pagine[], poi i comuni nelle zone."
    ],
    "pagine": [
     {
@@ -2845,6 +2927,10 @@
     {
      "tipo": "tutela",
      "url": "https://asst-santipaolocarlo.it/system/files/field_allegati_trasparenza/allegati/2511/paragrafi/41378/Carta%20dei%20Servizi%202026.pdf"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/prevenzione/screening-oncologico"
     }
    ],
    "sub_areas": [
@@ -2961,7 +3047,12 @@
       "urp.cernusco@asst-melegnano-martesana.it"
      ]
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "In Lombardia puoi cambiare il medico di famiglia, o il pediatra di un figlio minorenne, online sul Fascicolo Sanitario Elettronico. Entri con SPID, CIE o tessera sanitaria (CNS) con PIN e lettore. Online vedi solo i medici del tuo comune che hanno ancora posto. La prima scelta del medico si fa allo sportello «Scelta e revoca» della tua ASST. Allo sportello vai anche per i medici che non hanno più posto o per i casi particolari.",
+    "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
+    "url_label": "Sito della Regione"
+   }
   },
   {
    "id": "monza-brianza",
@@ -3105,7 +3196,10 @@
     "Percorso di tutela: San Gerardo, pagina «liste di attesa» (copia del 22/10/2026): ci si rivolge al responsabile dei tempi d'attesa / URP con un modulo; l'indirizzo non è nella copia. ASST della Brianza: nessuna pagina copiata.",
     "Screening (23/10/2026): nessuna copia dà il numero del centro screening dell'ATS. In pagine[] l'elenco dei centri screening della Regione Lombardia (PDF) e la pagina regionale sugli screening, da leggere dopo la prossima copia.",
     "Controllo automatico del 26/10/2026: la pagina https://www.asst-brianza.it/web/index.php/pages/name/ufficiorelazioniconilpubblico ora porta a https://www.asst-brianza.it/web/index.php (copia del 26/10/2026). Numeri non ricontrollati: 039 66541.",
-    "Controllo automatico del 26/10/2026: la pagina https://www.asst-monza.it/ufficio-per-relazioni-con-il-pubblico ora porta a https://www.irccs-sangerardo.it/ufficio-per-le-relazioni-col-pubblico (copia del 26/10/2026). Numeri non ricontrollati: 039 2332225."
+    "Controllo automatico del 26/10/2026: la pagina https://www.asst-monza.it/ufficio-per-relazioni-con-il-pubblico ora porta a https://www.irccs-sangerardo.it/ufficio-per-le-relazioni-col-pubblico (copia del 26/10/2026). Numeri non ricontrollati: 039 2332225.",
+    "Screening (02/11/2026): in pagine[] la pagina screening dell'ATS, linkata dalla pagina regionale «Screening: a chi sono rivolti e come aderire» (paragrafo «Contatti dei centri screening delle ATS»). Dopo la copia: il numero del centro screening in contacts (topic «screening»).",
+    "Scelta del medico (scelta_medico, 02/11/2026): dalla pagina «Cambio medico» della Regione Lombardia (copia del 01/11/2026), uguale per tutte le ASST. Mancano i numeri degli sportelli scelta e revoca delle ASST.",
+    "Lettere all'ASST (cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa) ancora spente (02/11/2026): nelle province con più ASST la zona si sceglie da ospedali o distretti, non dai comuni; nessuna pagina ufficiale copiata dà l'elenco dei comuni di ogni ASST (cercate: siti delle ATS, pagina regionale delle ASST). Serve quella pagina in pagine[], poi i comuni nelle zone."
    ],
    "pagine": [
     {
@@ -3151,6 +3245,10 @@
     {
      "tipo": "screening",
      "url": "https://www.regione.lombardia.it/sanita/prevenzione-e-stili-di-vita/screening-per-la-diagnosi-precoce-dei-tumori"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.ats-brianza.it/it/screening-oncologici.html"
     }
    ],
    "sub_areas": [
@@ -3178,7 +3276,12 @@
      "pec": "protocollo@pec.asst-brianza.it",
      "emails": []
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "In Lombardia puoi cambiare il medico di famiglia, o il pediatra di un figlio minorenne, online sul Fascicolo Sanitario Elettronico. Entri con SPID, CIE o tessera sanitaria (CNS) con PIN e lettore. Online vedi solo i medici del tuo comune che hanno ancora posto. La prima scelta del medico si fa allo sportello «Scelta e revoca» della tua ASST. Allo sportello vai anche per i medici che non hanno più posto o per i casi particolari.",
+    "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
+    "url_label": "Sito della Regione"
+   }
   },
   {
    "id": "pavia",
@@ -3337,7 +3440,9 @@
     "Nessun numero PUA, protesica o scelta del medico nelle pagine copiate dell'ASST di Pavia.",
     "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe.",
     "Zone in sub_areas: una sola ASST, con nome ufficiale, PEC e email URP dalle copie. Con una zona sola la lettera va a quella senza la domanda «In quale zona?» (tests/coerenza.test.mjs lo accetta dal 22/10/2026): i comuni non servono. Le lettere all'ASST restano spente finché le province con più ASST non sono complete.",
-    "Percorso di tutela: l'ASST di Pavia rimanda alla «Guida pratica prime visite 2026» (PDF, non ancora copiato: i PDF non sono estratti nella copia del 22/10/2026)."
+    "Percorso di tutela: l'ASST di Pavia rimanda alla «Guida pratica prime visite 2026» (PDF, non ancora copiato: i PDF non sono estratti nella copia del 22/10/2026).",
+    "Scelta del medico (scelta_medico, 02/11/2026): dalla pagina «Cambio medico» della Regione Lombardia (copia del 01/11/2026), uguale per tutte le ASST. Mancano i numeri degli sportelli scelta e revoca delle ASST.",
+    "Lettere all'ASST (cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa) ancora spente (02/11/2026): nelle province con più ASST la zona si sceglie da ospedali o distretti, non dai comuni; nessuna pagina ufficiale copiata dà l'elenco dei comuni di ogni ASST (cercate: siti delle ATS, pagina regionale delle ASST). Serve quella pagina in pagine[], poi i comuni nelle zone."
    ],
    "pagine": [
     {
@@ -3380,7 +3485,12 @@
       "urp@asst-pavia.it"
      ]
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "In Lombardia puoi cambiare il medico di famiglia, o il pediatra di un figlio minorenne, online sul Fascicolo Sanitario Elettronico. Entri con SPID, CIE o tessera sanitaria (CNS) con PIN e lettore. Online vedi solo i medici del tuo comune che hanno ancora posto. La prima scelta del medico si fa allo sportello «Scelta e revoca» della tua ASST. Allo sportello vai anche per i medici che non hanno più posto o per i casi particolari.",
+    "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
+    "url_label": "Sito della Regione"
+   }
   },
   {
    "id": "sondrio",
@@ -3538,7 +3648,10 @@
     "Come è fatto il file: una voce per provincia con il nome dell'ATS (che controlla e programma); visite, CUP, PUA, cure a casa, cartelle cliniche e percorso di tutela li fanno le ASST e gli IRCCS (ospedali e territorio), che sono più di una per provincia (Milano 7, Bergamo 3, Brescia 4, Varese 2, Cremona 2, Monza 2). Il percorso di tutela si chiede all'ASST (spesso al CUP aziendale), non all'ATS: per la lettera serve scegliere l'ASST (domanda in più nel codice, o una voce per ASST). Dal 15/09/2026 in Lombardia le ricette U si prenotano entro 10 giorni e le B entro 30 (pagina dell'ASST di Pavia, copia del 21/10/2026; l'estratto dell'ATS di Pavia cita la DGR XII/6692 del 03/08/2026): da mettere nei dati quando c'è un campo per classe.",
     "Zone in sub_areas: una sola ASST, con nome ufficiale, PEC e email URP dalle copie. Con una zona sola la lettera va a quella senza la domanda «In quale zona?» (tests/coerenza.test.mjs lo accetta dal 22/10/2026): i comuni non servono. Le lettere all'ASST restano spente finché le province con più ASST non sono complete.",
     "Percorso di tutela: la pagina liste di attesa dell'ASST Valtellina e Alto Lario dà 404; c'è solo la pagina dei tempi d'attesa dell'ATS della Montagna.",
-    "Screening (23/10/2026): nessuna copia dà il numero del centro screening dell'ATS. In pagine[] l'elenco dei centri screening della Regione Lombardia (PDF) e la pagina regionale sugli screening, da leggere dopo la prossima copia."
+    "Screening (23/10/2026): nessuna copia dà il numero del centro screening dell'ATS. In pagine[] l'elenco dei centri screening della Regione Lombardia (PDF) e la pagina regionale sugli screening, da leggere dopo la prossima copia.",
+    "Screening (02/11/2026): in pagine[] la pagina screening dell'ATS, linkata dalla pagina regionale «Screening: a chi sono rivolti e come aderire» (paragrafo «Contatti dei centri screening delle ATS»). Dopo la copia: il numero del centro screening in contacts (topic «screening»).",
+    "Scelta del medico (scelta_medico, 02/11/2026): dalla pagina «Cambio medico» della Regione Lombardia (copia del 01/11/2026), uguale per tutte le ASST. Mancano i numeri degli sportelli scelta e revoca delle ASST.",
+    "Lettere all'ASST (cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa) ancora spente (02/11/2026): nelle province con più ASST la zona si sceglie da ospedali o distretti, non dai comuni; nessuna pagina ufficiale copiata dà l'elenco dei comuni di ogni ASST (cercate: siti delle ATS, pagina regionale delle ASST). Serve quella pagina in pagine[], poi i comuni nelle zone."
    ],
    "pagine": [
     {
@@ -3580,6 +3693,10 @@
     {
      "tipo": "screening",
      "url": "https://www.regione.lombardia.it/sanita/prevenzione-e-stili-di-vita/screening-per-la-diagnosi-precoce-dei-tumori"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.ats-montagna.it/screening"
     }
    ],
    "sub_areas": [
@@ -3593,7 +3710,12 @@
       "urp@asst-val.it"
      ]
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "In Lombardia puoi cambiare il medico di famiglia, o il pediatra di un figlio minorenne, online sul Fascicolo Sanitario Elettronico. Entri con SPID, CIE o tessera sanitaria (CNS) con PIN e lettore. Online vedi solo i medici del tuo comune che hanno ancora posto. La prima scelta del medico si fa allo sportello «Scelta e revoca» della tua ASST. Allo sportello vai anche per i medici che non hanno più posto o per i casi particolari.",
+    "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
+    "url_label": "Sito della Regione"
+   }
   },
   {
    "id": "varese",
@@ -3796,7 +3918,10 @@
     "Zone in sub_areas: una per ASST, con nome ufficiale, PEC e email URP dalle copie. Testo sotto il pulsante («comuni», 23/10/2026) dalle copie del 23/10/2026: ASST dei Sette Laghi, pagina ADI (sette distretti); ASST della Valle Olona, pagina contatti (quattro distretti). Dove la copia dà solo ospedali o Case di Comunità, il testo dice quelli: mancano gli elenchi dei comuni di ogni ASST. Le lettere all'ASST restano spente.",
     "Percorso di tutela (copie del 22/10/2026): ASST Valle Olona scritto nella zona (PEC protocollo@pec.asst-valleolona.it, con modulo e oggetto). ASST Sette Laghi: si chiede a un CUP aziendale (non a Malnate); se non c'è posto neanche nell'ATS, il CUP mette la ricetta in una lista interna e ti richiama; chi rifiuta perde la priorità. Non c'è un indirizzo per scrivere: letter_mode non scritto.",
     "Screening (23/10/2026): nessuna copia dà il numero del centro screening dell'ATS. In pagine[] l'elenco dei centri screening della Regione Lombardia (PDF) e la pagina regionale sugli screening, da leggere dopo la prossima copia.",
-    "ASST della Valle Olona: il modulo PDF per attivare il percorso di tutela (link nella pagina «Liste di attesa», copia del 23/10/2026) è in pagine[]; dopo la copia si possono scrivere form_url e form_fields."
+    "ASST della Valle Olona: il modulo PDF per attivare il percorso di tutela (link nella pagina «Liste di attesa», copia del 23/10/2026) è in pagine[]; dopo la copia si possono scrivere form_url e form_fields.",
+    "Screening (02/11/2026): in pagine[] la pagina screening dell'ATS, linkata dalla pagina regionale «Screening: a chi sono rivolti e come aderire» (paragrafo «Contatti dei centri screening delle ATS»). Dopo la copia: il numero del centro screening in contacts (topic «screening»).",
+    "Scelta del medico (scelta_medico, 02/11/2026): dalla pagina «Cambio medico» della Regione Lombardia (copia del 01/11/2026), uguale per tutte le ASST. Mancano i numeri degli sportelli scelta e revoca delle ASST.",
+    "Lettere all'ASST (cartella-clinica, medico-famiglia, assistenza-domiciliare, cure-palliative, liste-attesa) ancora spente (02/11/2026): nelle province con più ASST la zona si sceglie da ospedali o distretti, non dai comuni; nessuna pagina ufficiale copiata dà l'elenco dei comuni di ogni ASST (cercate: siti delle ATS, pagina regionale delle ASST). Serve quella pagina in pagine[], poi i comuni nelle zone."
    ],
    "pagine": [
     {
@@ -3878,6 +4003,10 @@
     {
      "tipo": "tutela",
      "url": "https://www.asst-valleolona.it/wp-content/uploads/2026/10/Modulo-istanza-attivazione-percorso-tutela_editabile.pdf"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.ats-insubria.it/aree-tematiche/screening"
     }
    ],
    "sub_areas": [
@@ -3935,7 +4064,12 @@
      ],
      "info_url": "https://www.asst-valleolona.it/amm-trasparente/liste-di-attesa-3/"
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "In Lombardia puoi cambiare il medico di famiglia, o il pediatra di un figlio minorenne, online sul Fascicolo Sanitario Elettronico. Entri con SPID, CIE o tessera sanitaria (CNS) con PIN e lettore. Online vedi solo i medici del tuo comune che hanno ancora posto. La prima scelta del medico si fa allo sportello «Scelta e revoca» della tua ASST. Allo sportello vai anche per i medici che non hanno più posto o per i casi particolari.",
+    "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
+    "url_label": "Sito della Regione"
+   }
   }
  ]
 }
