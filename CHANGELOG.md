@@ -2,10 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
-## 02/11/2026 — Emilia-Romagna: pagine da copiare per liste d'attesa e screening
-- `data/regioni/emilia-romagna/asl.json`, `pagine[]`: CUP e numero verde di Modena, CupTel e Sportello unico di Piacenza, CUP telefonico dell'AUSL di Bologna (liste d'attesa); pagine dei centri screening di Modena, Ferrara, Forlì, Cesena e Ravenna (prevenzione). Tolte 3 pagine che nella copia danno 404 (screening e liste d'attesa di Modena, screening di Reggio Emilia). Dopo la copia si riempiono i campi e si accendono i moduli.
 ## 02/11/2026 — Puglia: accese assistenza a casa e cure palliative
 - `data/regioni/index.json`: in Puglia accesi `assistenza-domiciliare` e `cure-palliative`. Leggono solo URP e PEC di ogni ASL, già provati dalle copie del server (gli stessi della cartella clinica). Liste d'attesa resta spenta: solo l'ASL Brindisi spiega il percorso nei tempi della ricetta (copia del 01/11/2026 di «Modalità di prenotazione»); il motivo è nel `todo` di ogni ASL.
+
+## 02/11/2026 — Emilia-Romagna: pagine da copiare per liste d'attesa e screening
+- `data/regioni/emilia-romagna/asl.json`, `pagine[]`: CUP e numero verde di Modena, CupTel e Sportello unico di Piacenza, CUP telefonico dell'AUSL di Bologna (liste d'attesa); pagine dei centri screening di Modena, Ferrara, Forlì, Cesena e Ravenna (prevenzione). Tolte 3 pagine che nella copia danno 404 (screening e liste d'attesa di Modena, screening di Reggio Emilia). Dopo la copia si riempiono i campi e si accendono i moduli.
 
 ## 01/11/2026 — IndexNow: Bing rilegge subito le pagine cambiate
 - `3c0ecdf89c2ace8539d2e7f0c68d136f.txt`: il file della chiave IndexNow nella cartella del sito (la chiave è pubblica per scelta: prova che il sito è nostro).
