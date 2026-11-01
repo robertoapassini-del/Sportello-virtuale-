@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 02/11/2026 — Calabria: pagine dello screening e delle liste d'attesa da copiare
+
+- `data/regioni/calabria/asl.json`: in `pagine` lo screening dell'ASP di Catanzaro (asp.cz.it), di Cosenza (asp.cosenza.it) e di Crotone (sirio.aspkr.it, linkato da asp.crotone.it), la pagina «Liste di attesa» dell'ASP di Catanzaro e l'URP di Crotone. Moduli liste-attesa e prevenzione ancora spenti: motivo nel `todo`.
+
 ## 01/11/2026 — IndexNow: Bing rilegge subito le pagine cambiate
 - `3c0ecdf89c2ace8539d2e7f0c68d136f.txt`: il file della chiave IndexNow nella cartella del sito (la chiave è pubblica per scelta: prova che il sito è nostro).
 - `tools/indexnow.mjs`: trova le pagine HTML cambiate tra due commit e le manda a api.indexnow.org (Bing, DuckDuckGo e gli altri motori che usano IndexNow). Con `--prova` stampa e non manda niente.
