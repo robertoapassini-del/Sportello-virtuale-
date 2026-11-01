@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 02/11/2026 — Friuli-Venezia Giulia: accese cartelle cliniche, cure a casa e cure palliative
+- `data/regioni/friuli-venezia-giulia/asl.json`: dalla copia del server del 01/11/2026. ASFO: uffici copia cartelle degli ospedali di Pordenone (0434 399604), San Vito (0434 841206) e Spilimbergo (0427 595631), pagina «Richiesta documentazione sanitaria». ASUGI area isontina: Hospice (0481 487563) e ambulatorio di cure palliative (0481 487592) di Monfalcone, sede di Cormons (0481 629238); area giuliana: informazioni cartelle RSA San Giusto e Ospedale di Comunità (040 3997454), pagina «Accesso alla documentazione». In `pagine` (da copiare): cure palliative e hospice di ASUFC, ASFO e ASUGI area giuliana, modulo cartelle e guida cure domiciliari dell'ASUFC.
+- `data/regioni/index.json`: accesi `cartella-clinica`, `assistenza-domiciliare`, `cure-palliative` (le lettere vanno alla PEC o all'URP di ogni azienda, già provati). Quello che manca è nel `todo` di ogni azienda.
+
 ## 01/11/2026 — IndexNow: Bing rilegge subito le pagine cambiate
 - `3c0ecdf89c2ace8539d2e7f0c68d136f.txt`: il file della chiave IndexNow nella cartella del sito (la chiave è pubblica per scelta: prova che il sito è nostro).
 - `tools/indexnow.mjs`: trova le pagine HTML cambiate tra due commit e le manda a api.indexnow.org (Bing, DuckDuckGo e gli altri motori che usano IndexNow). Con `--prova` stampa e non manda niente.
