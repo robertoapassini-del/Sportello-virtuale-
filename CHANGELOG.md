@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 02/11/2026 — Legge 104: l'accertamento provvisorio se la visita tarda
+- Mancava, e un sito simile (legge104.it) lo spiega: con la vecchia procedura, se la commissione non decide entro 45 giorni dalla domanda, un medico specialista dell'azienda sanitaria fa un accertamento provvisorio, valido solo per permessi, sede di lavoro e congedo straordinario fino al verbale; alla visita si può chiedere anche un certificato provvisorio. Fonte: D.L. 324/1993, art. 2, commi 2, 3 e 3-quater, letto per intero su Normattiva il 02/11/2026 (45 giorni dal D.L. 90/2014, art. 25 c. 4). Il D.Lgs. 62/2024 non cita il D.L. 324/1993: per il nuovo regime la pagina non ne parla.
+- `data/rules-legge-104.json`: nuovo campo `accertamento_provvisorio_giorni` (45) con la provenienza e la fonte nell'elenco. `legge-104/come-si-ottiene/`: nuovo paragrafo «Se la visita tarda e ti servono i permessi». `legge-104/permessi/`: rimando dal requisito del verbale. `data/moduli.json`: parole della ricerca («certificato provvisorio», «visita in ritardo»). `tests/citazioni.txt`: 5 citazioni rilette sul testo.
+
 ## 01/11/2026 — IndexNow: Bing rilegge subito le pagine cambiate
 - `3c0ecdf89c2ace8539d2e7f0c68d136f.txt`: il file della chiave IndexNow nella cartella del sito (la chiave è pubblica per scelta: prova che il sito è nostro).
 - `tools/indexnow.mjs`: trova le pagine HTML cambiate tra due commit e le manda a api.indexnow.org (Bing, DuckDuckGo e gli altri motori che usano IndexNow). Con `--prova` stampa e non manda niente.

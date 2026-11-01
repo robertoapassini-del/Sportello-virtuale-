@@ -16,6 +16,7 @@
   "permessi_ore_giorno_ridotto": 1,
   "iva_auto_percent": 4,
   "detrazione_percent": 19,
+  "accertamento_provvisorio_giorni": 45,
   "provenienza": {
     "permessi_giorni_mese": {
       "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.50098.indennit-per-permessi-fruiti-dai-lavoratori-per-assistere-familiari-disabili-in-situazione-di-gravit-o-fruiti-dai-lavoratori-disabili.html",
@@ -119,6 +120,13 @@
       "proof": "estratto",
       "review_by": "2027-01-31",
       "nota": "Detrazione IRPEF del 19% per l'auto e gli ausili delle persone con disabilità. Stessa scheda e stessa cifra di rules-contrassegno-disabili.json."
+    },
+    "accertamento_provvisorio_giorni": {
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:1993-08-27;324~art2",
+      "verified": "2026-11-02",
+      "proof": "testo",
+      "review_by": "2027-11-02",
+      "nota": "D.L. 324/1993, art. 2, testo in vigore dal 19/8/2014 (45 giorni al posto di 90 dal D.L. 90/2014, art. 25 c. 4). Comma 2: se la commissione dell'art. 4 L. 104/1992 non si pronuncia entro 45 giorni dalla presentazione della domanda, l'accertamento si fa in via provvisoria da un medico specialista nella patologia denunciata, in servizio presso l'azienda sanitaria da cui è assistito l'interessato, solo ai fini degli artt. 21 e 33 L. 104/1992 e dell'art. 42 D.Lgs. 151/2001. Comma 3: vale fino all'accertamento definitivo. Comma 3-quater: per le stesse agevolazioni lavorative la commissione, su richiesta motivata, può rilasciare un certificato provvisorio al termine della visita, valido fino all'accertamento definitivo della commissione INPS. Il D.Lgs. 62/2024 (riforma, valutazione di base) non cita il D.L. 324/1993: per il nuovo regime la pagina non ne parla."
     }
   },
   "sources": [
@@ -145,6 +153,10 @@
     {
       "label": "Normattiva – Legge 104/1992",
       "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1992-02-05;104"
+    },
+    {
+      "label": "Normattiva – D.L. 324/1993, art. 2 (accertamento e certificato provvisorio della 104)",
+      "url": "https://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:1993-08-27;324~art2"
     },
     {
       "label": "Normattiva – Legge 106/2025 (malattie oncologiche, invalidanti e croniche)",
