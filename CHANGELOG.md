@@ -2,6 +2,10 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 02/11/2026 — Molise: cure palliative accese
+
+- Molise: acceso «cure-palliative». Contatto «palliative» in tutte e due le province: Hospice del Molise «Madre Teresa di Calcutta» a Larino, tel. 0874 827775, hospice@asrem.org (pagina ASReM https://www.asrem.molise.it/lazienda/i-distretti-socio-sanitari/lhospice/, copia del server dell'01/11/2026). Liste d'attesa resta spenta: mancano gli indirizzi dei PDF della DDG 1696/2024 (todo).
+
 ## 01/11/2026 — IndexNow: Bing rilegge subito le pagine cambiate
 - `3c0ecdf89c2ace8539d2e7f0c68d136f.txt`: il file della chiave IndexNow nella cartella del sito (la chiave è pubblica per scelta: prova che il sito è nostro).
 - `tools/indexnow.mjs`: trova le pagine HTML cambiate tra due commit e le manda a api.indexnow.org (Bing, DuckDuckGo e gli altri motori che usano IndexNow). Con `--prova` stampa e non manda niente.
