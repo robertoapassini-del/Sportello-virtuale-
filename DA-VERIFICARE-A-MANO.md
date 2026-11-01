@@ -10,6 +10,12 @@ Vanno riletti da una connessione italiana o confermati per telefono.
 
 Quando chiudi un punto: correggi il sito se serve, scrivi la modifica in `CHANGELOG.md` e cancella la riga da qui.
 
+## 0. Pensione e assegno di invalidità (30/10/2026)
+
+- [ ] **Assegno mensile e lavoro**: la scheda INPS chiede il «mancato svolgimento di attività lavorativa» e cita una norma del 2021 che ha ridefinito l'inattività lavorativa. Rileggerla su Normattiva e scrivere cosa conta come lavoro (per esempio sotto una certa soglia di reddito), con la citazione in `tests/citazioni.txt`.
+- [ ] **Importo dell'assegno mensile**: la scheda INPS dice 340 euro (scritto così sul sito dal 31/10/2026). Trovare nella circolare INPS 153/2025 la riga degli invalidi parziali e controllare se l'importo esatto è un altro.
+- [ ] **Accompagnamento insieme alla pensione**: il sito non dice se si possono avere tutti e due. Scriverlo con la fonte INPS.
+
 ## 0a. Audit «solo in Sicilia» del 23/10/2026: punti che servono una fonte
 
 Trovati rileggendo il sito come un utente fuori dalla Sicilia. Il testo è già stato reso prudente dove era sbagliato;
