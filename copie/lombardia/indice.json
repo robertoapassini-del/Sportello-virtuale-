@@ -1,6 +1,6 @@
 {
  "regione": "lombardia",
- "aggiornato": "2026-11-01T09:12:40.886Z",
+ "aggiornato": "2026-11-01T11:43:43.414Z",
  "pagine": [
   {
    "asl": "bergamo",
@@ -159,7 +159,7 @@
    "http": 200,
    "file": "bergamo/1f85c98b9e36.txt",
    "titolo": "Home Page | ASST Papa Giovanni XXIII",
-   "sha": "6c5828b136628422163ac3fc4ccd6e06365a66507d8a288a9846260c36f8835f",
+   "sha": "bb5398ea09321b68f21df9e5fd86e4c2a24555daff9389f30605c7cf01fd0522",
    "caratteri": 322025,
    "cambiata": true
   },
@@ -474,9 +474,9 @@
    "http": 200,
    "file": "brescia/a9f01d73631b.txt",
    "titolo": "ATS Brescia | Agenzia di Tutela della Salute di Brescia",
-   "sha": "93b4681ab971362dbc10ec98b1aeaa95cd63e74752fd1ddb48e5501a47ca0a41",
-   "caratteri": 3428,
-   "cambiata": false
+   "sha": "5518611349c3c8596d4bfb9853e4cf032efa79eced09c16751c5eaf41ef58fb9",
+   "caratteri": 3311,
+   "cambiata": true
   },
   {
    "asl": "brescia",
@@ -708,9 +708,9 @@
    "certificato": "non valido",
    "file": "brescia/2f13a472ee16.txt",
    "titolo": "Contatti | AZIENDA SOCIO-SANITARIA TERRITORIALE DEL GARDA",
-   "sha": "f7bad60ab60e1259da8a2745ae36a94e53a2539cb5975c6400e010841ea21ca4",
+   "sha": "f85b44c738684d053a468a60a17d1d3782acb91b0eeed84f8e7b1ea151a1b55e",
    "caratteri": 1615,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "brescia",
@@ -1410,11 +1410,10 @@
   },
   {
    "asl": "como",
-   "url": "https://www.asst-lariana.it/amministrazione/unita-organizzativa/direttore-generale/urp/",
+   "url": "https://www.asst-lariana.it/amministrazione/unita-organizzativa/direttore-generale/attivita-comunicazione-aziendale-relazioni-esterne/urp/",
    "controllata": "2026-11-01",
    "http": 200,
-   "finale": "https://www.asst-lariana.it/amministrazione/unita-organizzativa/direttore-generale/attivita-comunicazione-aziendale-relazioni-esterne/urp/",
-   "file": "como/54261bffa9e3.txt",
+   "file": "como/bcd30d5a5dde.txt",
    "titolo": "Ufficio Relazioni con il Pubblico (URP) – ASST Lariana",
    "sha": "60463049c0b8a4fec5ae400e8041a87bec7983928eecc01dae665cd8b5989f1a",
    "caratteri": 6740,
@@ -1428,7 +1427,7 @@
      "testo": "Modulo di istanza di attivazione del percorso di tutela (Formato pdf (501 kb))"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "como",
@@ -1658,7 +1657,7 @@
    "asl": "como",
    "url": "https://www.asst-lariana.it/wp-content/uploads/2024/10/Modulo-istanza-attivazione-percorso-tutela.pdf",
    "controllata": "2026-11-01",
-   "da_pagina": "https://www.asst-lariana.it/amministrazione/unita-organizzativa/direttore-generale/urp/",
+   "da_pagina": "https://www.asst-lariana.it/amministrazione/unita-organizzativa/direttore-generale/attivita-comunicazione-aziendale-relazioni-esterne/urp/",
    "http": 200,
    "file": "como/995545a05d72.txt",
    "titolo": "Subject:",
@@ -3890,11 +3889,10 @@
   },
   {
    "asl": "milano",
-   "url": "https://www.asst-santipaolocarlo.it/strutture/contattaci-presidio-san-paolo",
+   "url": "https://www.asst-santipaolocarlo.it/strutture/contatti-asst-sancarlo-sanpaolo",
    "controllata": "2026-11-01",
    "http": 200,
-   "finale": "https://www.asst-santipaolocarlo.it/strutture/contatti-asst-sancarlo-sanpaolo",
-   "file": "milano/07f7d49513ba.txt",
+   "file": "milano/b226360eeb73.txt",
    "titolo": "NUMERI UTILI | ASST Santi Paolo e Carlo",
    "sha": "5402e7a225b1d8477518647c9af08b5c2ff21247e8a0cbfc10ac379ff5be185a",
    "caratteri": 5425,
@@ -4523,17 +4521,6 @@
    "titolo": "ASST Santi Paolo e Carlo | ASST Santi Paolo e Carlo",
    "sha": "e30f71e39082d69e892d06011fd67d975155c828ee0609820c3f6ab37355d1c2",
    "caratteri": 1886,
-   "cambiata": false
-  },
-  {
-   "asl": "milano",
-   "url": "https://www.asst-santipaolocarlo.it/strutture/contatti-asst-sancarlo-sanpaolo",
-   "controllata": "2026-11-01",
-   "http": 200,
-   "file": "milano/b226360eeb73.txt",
-   "titolo": "NUMERI UTILI | ASST Santi Paolo e Carlo",
-   "sha": "5402e7a225b1d8477518647c9af08b5c2ff21247e8a0cbfc10ac379ff5be185a",
-   "caratteri": 5425,
    "cambiata": false
   },
   {
@@ -5241,7 +5228,7 @@
    "http": 200,
    "file": "milano/91bb0d244f6b.txt",
    "titolo": "Liste di attesa - ASST Melegnano Martesana",
-   "sha": "d65a6b15ae6877931872f6ad38a7646fa838f019a95bb3fc686918806e8095da",
+   "sha": "e62ad500e0cb2057f834bd893203b3412ad71628fe014cb7d9cde2b201c903c7",
    "caratteri": 7290,
    "cambiata": true
   },
@@ -5790,15 +5777,14 @@
   },
   {
    "asl": "monza-brianza",
-   "url": "https://www.irccs-sangerardo.it/contatti",
+   "url": "https://www.irccs-sangerardo.it/contattaci",
    "controllata": "2026-11-01",
    "http": 200,
-   "finale": "https://www.irccs-sangerardo.it/contattaci",
-   "file": "monza-brianza/1ae6141cb291.txt",
+   "file": "monza-brianza/075157602237.txt",
    "titolo": "Contattaci - IRCCS San gerardo",
    "sha": "f998073c994b9cf63ed774c8c5bffe3da0f67f46412ddef56791c58b3022b3a5",
    "caratteri": 1150,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "monza-brianza",
@@ -6216,7 +6202,7 @@
    "titolo": "Azienda Socio-Sanitaria Territoriale di Pavia",
    "sha": "7e8a6ece0c27918e4576652b0f98a716d26dee752de77ebff675c8ad0015d614",
    "caratteri": 8270,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "pavia",
@@ -6987,15 +6973,14 @@
    "titolo": "PRENOTAZIONE visite e esami con SSN - ASST Settelaghi - ASST Settelaghi",
    "sha": "3849abec0560da4de04c28176fc0a4c167d1bd0e86ecc6ea2bedca20571097e8",
    "caratteri": 12617,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "varese",
-   "url": "https://www.asst-valleolona.it/contatti/",
+   "url": "https://www.asst-valleolona.it/asst-valle-olona/contatti/",
    "controllata": "2026-11-01",
    "http": 200,
-   "finale": "https://www.asst-valleolona.it/asst-valle-olona/contatti/",
-   "file": "varese/5fb98ed00d26.txt",
+   "file": "varese/f68caec45730.txt",
    "titolo": "Contatti - ASST Valle Olona",
    "sha": "6dbfd6dcd60a09eeb232d6d959d046a80ec5339a3a2ff02d7fc68167b83efec7",
    "caratteri": 3476,
@@ -7102,7 +7087,7 @@
      "testo": ""
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "varese",
@@ -7322,63 +7307,6 @@
      "testo": ""
     }
    ],
-   "cambiata": true
-  },
-  {
-   "asl": "varese",
-   "url": "https://www.asst-valleolona.it/asst-valle-olona/contatti/",
-   "controllata": "2026-11-01",
-   "http": 200,
-   "file": "varese/f68caec45730.txt",
-   "titolo": "Contatti - ASST Valle Olona",
-   "sha": "6dbfd6dcd60a09eeb232d6d959d046a80ec5339a3a2ff02d7fc68167b83efec7",
-   "caratteri": 3476,
-   "link_pdf": [
-    {
-     "url": "https://www.asst-valleolona.it/wp-content/uploads/2023/08/A0652_P13_Pd01_MS06-Opuscolo-rifiuti-sanitari-pericolosi.pdf",
-     "testo": ""
-    },
-    {
-     "url": "https://www.asst-valleolona.it/wp-content/uploads/2024/02/Decalogo-indicazioni-agenti-bio_REV.2021.pdf",
-     "testo": ""
-    },
-    {
-     "url": "https://www.asst-valleolona.it/wp-content/uploads/2023/08/202105-Informativa-Lavoro-Agile.pdf",
-     "testo": ""
-    },
-    {
-     "url": "https://www.asst-valleolona.it/wp-content/uploads/2023/10/SUVA_prevenzione-cadute-in-piano.pdf",
-     "testo": ""
-    },
-    {
-     "url": "https://www.asst-valleolona.it/wp-content/uploads/2023/10/Il-lavoro-al-videoterminale.pdf",
-     "testo": ""
-    },
-    {
-     "url": "https://www.asst-valleolona.it/wp-content/uploads/2023/08/I-disturbi-muscolo-scheletrici-lavorativi_inail.pdf",
-     "testo": ""
-    },
-    {
-     "url": "https://www.asst-valleolona.it/wp-content/uploads/2023/08/Back-school.pdf",
-     "testo": ""
-    },
-    {
-     "url": "https://www.asst-valleolona.it/wp-content/uploads/2023/08/A0652_P13_Pd01_MS05-Info-stampanti_fotocopiatrici_toner.pdf",
-     "testo": ""
-    },
-    {
-     "url": "https://www.asst-valleolona.it/wp-content/uploads/2023/08/AgentiChimiciPericolosi2023.pdf",
-     "testo": ""
-    },
-    {
-     "url": "https://www.asst-valleolona.it/wp-content/uploads/2023/08/20240220_Opuscolo-amianto.pdf",
-     "testo": ""
-    },
-    {
-     "url": "https://www.asst-valleolona.it/wp-content/uploads/2023/07/La-segnaletica-di-salute-e-sicurezza-sul-lavoro.pdf",
-     "testo": ""
-    }
-   ],
    "cambiata": false
   },
   {
@@ -7502,8 +7430,8 @@
    "http": 200,
    "file": "varese/c27d02fae6a1.txt",
    "titolo": "Cure domiciliari - ASST Valle Olona",
-   "sha": "d699bfebd6cff6309e4bd5391412b632d83532dbf6da503f8042705103b0e620",
-   "caratteri": 5751,
+   "sha": "c7836eb64041c1708743a593cfb3d95dea6cf198f62521cc041201afaf617f46",
+   "caratteri": 5752,
    "link_pdf": [
     {
      "url": "https://www.asst-valleolona.it/wp-content/uploads/2023/08/A0652_P13_Pd01_MS06-Opuscolo-rifiuti-sanitari-pericolosi.pdf",

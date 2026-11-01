@@ -1,6 +1,6 @@
 {
  "regione": "marche",
- "aggiornato": "2026-11-01T09:19:39.338Z",
+ "aggiornato": "2026-11-01T11:51:03.617Z",
  "pagine": [
   {
    "asl": "pesaro-urbino",
@@ -16,16 +16,15 @@
   },
   {
    "asl": "pesaro-urbino",
-   "url": "https://www.astpu.marche.it/it/strutture/guardia-medica-continuita-assistenziale",
+   "url": "https://www.astpu.marche.it/it/strutture/guardia-medica-continuita-assistenziale?sort=materializedName",
    "controllata": "2026-11-01",
    "browser": true,
    "http": 200,
-   "finale": "https://www.astpu.marche.it/it/strutture/guardia-medica-continuita-assistenziale?sort=materializedName",
-   "file": "pesaro-urbino/8a137e2be00a.txt",
+   "file": "pesaro-urbino/3d5819a831ee.txt",
    "titolo": "Guardia medica / Continuità assistenziale",
    "sha": "a55bb8a6b3c80f4c45969b52d6e46cb4ddbce4ece758f89b9149ffa3ec437e69",
    "caratteri": 2774,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "pesaro-urbino",
@@ -35,9 +34,9 @@
    "http": 200,
    "file": "pesaro-urbino/12e66042a80f.txt",
    "titolo": "Punto Unico di Accesso (PUA) - Pesaro",
-   "sha": "b5856a554ac32caf2f70910e03b7aeeaf2af8553201bd06a98ace96213a107da",
-   "caratteri": 4897,
-   "cambiata": false
+   "sha": "012d8039d3773ef2d967a2d12d96c942363ff56adffbffbdf79cecff8e6de7d2",
+   "caratteri": 4899,
+   "cambiata": true
   },
   {
    "asl": "pesaro-urbino",
@@ -83,7 +82,7 @@
    "http": 200,
    "file": "pesaro-urbino/90e5ce90a0b4.txt",
    "titolo": "Ufficio Relazioni con il Pubblico",
-   "sha": "9fb24d437d09d44fff0abb4f02c979a7a8983b61909e7401edff900aeecce793",
+   "sha": "6b1b44d8f1addff76228961a674d2f50babaa5e4b1e93140ab48c6245b5abcba",
    "caratteri": 5008,
    "cambiata": true
   },
@@ -95,7 +94,7 @@
    "http": 200,
    "file": "pesaro-urbino/3a938bf5550a.txt",
    "titolo": "Screening per la prevenzione dei tumori",
-   "sha": "33dbc99d9c0f9274a211c4eaf0190790cfaa24741350d1c60b7ba1efb51754d0",
+   "sha": "5c5292f4e1fbf02b7f141a4eae74c96f2cf5bcdf6f8461c5a480fadbda5d197b",
    "caratteri": 5263,
    "cambiata": true
   },
@@ -107,8 +106,8 @@
    "http": 200,
    "file": "pesaro-urbino/5c2860425ba4.txt",
    "titolo": "Urp e Comunicazione",
-   "sha": "5481b43d2e2b515e474f6629b2df99c2eb94774b1146f22d60623015e75571b5",
-   "caratteri": 6894,
+   "sha": "f945523bce19d0f160c115ea7bb4d70bd7e6d69a6f32a207ff59732e28c0c11b",
+   "caratteri": 6892,
    "cambiata": true
   },
   {
@@ -120,7 +119,7 @@
    "finale": "https://www.astpu.marche.it/it/strutture/uffici-amministrativi?sort=materializedName",
    "file": "pesaro-urbino/d8d17600e492.txt",
    "titolo": "Uffici e sportelli aperti al pubblico",
-   "sha": "0063e002522f477985396ba52eb6dc04be1e80b965725434ed66e1d7348ed0a1",
+   "sha": "f22ec4688a62847328ebd1178e88d3dc40eb0cf12b52bec7b0c013a08970f9e9",
    "caratteri": 2711,
    "cambiata": true
   },
@@ -133,7 +132,7 @@
    "finale": "https://www.astpu.marche.it/it/utenti/prestatori-di-cura?sort=-createdAt",
    "file": "pesaro-urbino/179629432be3.txt",
    "titolo": "Prestatori di cura",
-   "sha": "3bd085524cbd861238ff48af2eedc31170d8b9313b3a56ed0d3b7746fa65a49d",
+   "sha": "c832b9c8622c1c3226ee478ca4105c9dee207ec2fc4fdc552aa7f488e4515df5",
    "caratteri": 2920,
    "cambiata": true
   },
@@ -146,8 +145,8 @@
    "finale": "https://www.astpu.marche.it/it/come-fare-per/prenotare-disdire-o-spostare-una-visita-esame-diagnostico",
    "file": "pesaro-urbino/3701f447d9b1.txt",
    "titolo": "Prenotare, disdire o spostare una visita/esame diagnostico",
-   "sha": "8f42a1d7dfcf70bd5654b0ed5088a2f3898b83e580619c8221ffea6b99739410",
-   "caratteri": 3781,
+   "sha": "ac78f68438043d1aefc371a0a26f003bab69f322674884c30a144d167b24300f",
+   "caratteri": 3783,
    "cambiata": true
   },
   {
@@ -161,7 +160,7 @@
    "titolo": "Prenotare il prelievo del sangue o consegnare il campione biologico",
    "sha": "22d6ffa835bc70828327a3bf3fd01c8eb6e6d4b879116f39ea99a2780cde71cc",
    "caratteri": 2713,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "pesaro-urbino",
@@ -174,7 +173,7 @@
    "titolo": "Telefono e posta elettronica",
    "sha": "083f6c0a4623ecfef0d6df75c9ac7a27139d7b15c593024661497cdbec5a2e1d",
    "caratteri": 5318,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "pesaro-urbino",
@@ -185,7 +184,7 @@
    "finale": "https://www.astpu.marche.it/it/organizzazione/ufficio-relazioni-con-il-pubblico",
    "file": "pesaro-urbino/32afcf32d969.txt",
    "titolo": "Ufficio Relazioni con il Pubblico",
-   "sha": "9fb24d437d09d44fff0abb4f02c979a7a8983b61909e7401edff900aeecce793",
+   "sha": "a84e0981f096f17313248b2befca67551a0bbb8571ea36996a510f58c341528e",
    "caratteri": 5008,
    "cambiata": true
   },
@@ -415,8 +414,8 @@
    "http": 200,
    "file": "ancona/1d041baa2337.txt",
    "titolo": "Comunicazione, Formazione e Urp",
-   "sha": "3b99d2f834c6eebc0e91d5a7e5b8a7d4acb915fd9b0d46f9a4f52e7ac491367c",
-   "caratteri": 6061,
+   "sha": "edadcdc34fd65251c54e3a48d124b17ceb78bf873dc285315c107cacb1f56295",
+   "caratteri": 6063,
    "cambiata": true
   },
   {
@@ -466,7 +465,7 @@
    "titolo": "Servizi Territoriali",
    "sha": "1383e6fffcc411341b9dc54eaa0df7629e4f7bd44be0ba435235cb9e743ae028",
    "caratteri": 4662,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ancona",
@@ -529,9 +528,9 @@
    "finale": "https://www.astancona.marche.it/it/come-fare-per/prenotare-una-visita-presso-la-commissione-medica-locale-patenti",
    "file": "ancona/104ad17399ec.txt",
    "titolo": "Prenotare una visita presso la Commissione Medica Locale Patenti",
-   "sha": "7e7561d42ed3eb260e65e371f19b24ea07f4d6b8cbda8f382e0d7ecaa3683bb2",
+   "sha": "9a493b2fe1b528ebd487f618225b10d693addc31f22584d9fc36d8d0ea5c81f1",
    "caratteri": 3475,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "ancona",
@@ -648,16 +647,15 @@
   },
   {
    "asl": "macerata",
-   "url": "https://www.astmc.marche.it/contatti",
+   "url": "https://www.astmc.marche.it/it/contatti",
    "controllata": "2026-11-01",
    "browser": true,
    "http": 200,
-   "finale": "https://www.astmc.marche.it/it/contatti",
-   "file": "macerata/e52fd2df45d5.txt",
+   "file": "macerata/d7e568e84c9c.txt",
    "titolo": "Contatti Utili",
    "sha": "8b60feb479425cffc3bede990dd25e9a154e7e8cb7b8ee88526a1ea55bb6259c",
    "caratteri": 2123,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "macerata",
@@ -679,9 +677,9 @@
    "http": 200,
    "file": "macerata/89d6129266bc.txt",
    "titolo": "Ufficio Relazioni con il Pubblico (URP)",
-   "sha": "960e0e5ae8fbef0b162fc984759781f1e74ee1fb96071f933064e75ad1442ac2",
-   "caratteri": 4617,
-   "cambiata": false
+   "sha": "6c79550d6f6547a7eb270648e29f25793553695d0e72cedc24dab0fc5ca1d461",
+   "caratteri": 4619,
+   "cambiata": true
   },
   {
    "asl": "macerata",
@@ -792,8 +790,8 @@
    "http": 200,
    "file": "macerata/9dc022db6de8.txt",
    "titolo": "RICHIEDERE CARTELLE CLINICHE",
-   "sha": "a9343db0acddaa0d24c4989830a8f140c6c69c61f5cad033a00c76b585997356",
-   "caratteri": 2237,
+   "sha": "5558255fe60d6282a899024f0d969ff76853e9f454c07564ad7784ec43dc7cb2",
+   "caratteri": 2236,
    "cambiata": true
   },
   {
@@ -821,7 +819,7 @@
    "titolo": "AST Fermo",
    "sha": "26f884e9098e717d92e062b3f4a01ee026f65adf7f6bf5279a9467c577066941",
    "caratteri": 3690,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "fermo",
@@ -891,9 +889,9 @@
    "http": 200,
    "file": "fermo/e91cdc7ba5f5.txt",
    "titolo": "URP",
-   "sha": "91ffd7e4bce963d548b0ab74535de76b315c7d182c3dbda69562e7f4f6ad17fb",
-   "caratteri": 5350,
-   "cambiata": false
+   "sha": "d31a55ea24a9f719de406a3eb1a38655f417aaa1fb6f5cf193aa0b442c7be5ea",
+   "caratteri": 5348,
+   "cambiata": true
   },
   {
    "asl": "fermo",
@@ -1023,16 +1021,15 @@
    "titolo": "AST Ascoli Piceno",
    "sha": "3b235531b9a435d51cf29d5f237981fea409e8521b919fd63b8fe513386d6f50",
    "caratteri": 5459,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ascoli-piceno",
-   "url": "https://www.astap.marche.it/come-fare-per/come-prenotare-una-prestazione-con-priorita-urgente-u",
+   "url": "https://www.astap.marche.it/it/come-fare-per/come-prenotare-una-prestazione-con-priorita-urgente-u",
    "controllata": "2026-11-01",
    "browser": true,
    "http": 200,
-   "finale": "https://www.astap.marche.it/it/come-fare-per/come-prenotare-una-prestazione-con-priorita-urgente-u",
-   "file": "ascoli-piceno/72fc1a7400a4.txt",
+   "file": "ascoli-piceno/2c9113fe94ac.txt",
    "titolo": "Come prenotare una prestazione con priorità urgente (U)",
    "sha": "e5592dcbdffce5f183888611cbde7cea989b81280848370cb5daacd8cddd472f",
    "caratteri": 4249,
@@ -1048,7 +1045,7 @@
    "titolo": "ANAGRAFE ASSISTITI",
    "sha": "28e4601e191ff277f45b5d232c66d8e1ee237a0d66af87f94d4913ed9533fca7",
    "caratteri": 9532,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ascoli-piceno",
@@ -1060,7 +1057,7 @@
    "titolo": "Prenotare, disdire o spostare una visita/esame diagnostico",
    "sha": "6af11e1492fa2c88ab1cd163198cd6d9b3da593c300f7a61db6af86bbb665096",
    "caratteri": 5155,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ascoli-piceno",
@@ -1072,7 +1069,7 @@
    "titolo": "Ufficio relazioni con il Pubblico (URP)",
    "sha": "997f48682cf69cdecb1faf32d21687c4233fce4160ba8d94b9291cdce8db3cda",
    "caratteri": 5652,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ascoli-piceno",
@@ -1130,9 +1127,9 @@
    "http": 200,
    "file": "ascoli-piceno/2ad480175639.txt",
    "titolo": "UOC Distretto di Ascoli Piceno",
-   "sha": "44412778d6a29497f0f059dd40ab914699bca1beda17b00625846a403e6cf861",
+   "sha": "2a6010b35bd5c9debbfd6c8a1159d5798248795b7db00260ce244f054520e45a",
    "caratteri": 4357,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "ascoli-piceno",
@@ -1168,7 +1165,7 @@
    "http": 200,
    "file": "ascoli-piceno/3c0041753c2f.txt",
    "titolo": "Ufficio Cartelle Cliniche",
-   "sha": "65b12423472785ab1ec38c0358c18b4d358064013ffbe6644085fd97d39d670f",
+   "sha": "e56aef785781ef9d8ecc68404c20bff76111f2479bd4c7d31b3ea08e395e0bb7",
    "caratteri": 8827,
    "cambiata": true
   },
@@ -1180,7 +1177,7 @@
    "http": 200,
    "file": "ascoli-piceno/0b792a88254f.txt",
    "titolo": "UOSD Screening",
-   "sha": "5a3e9502cb4feb13392e102e0cd6c3257a2ecef6794dc53224fb23f49168b39d",
+   "sha": "4cd7524c43d8311a5fc96f83a053a40f88287e61c6f22eda0591a771f0c704ae",
    "caratteri": 3729,
    "cambiata": true
   },
@@ -1192,9 +1189,9 @@
    "http": 200,
    "file": "ascoli-piceno/bc178799cd21.txt",
    "titolo": "Liste di attesa",
-   "sha": "06f2675c350427575b633fe22c2568ccdb6966fb686347b67bd4e2dbb3e99729",
+   "sha": "5996ef02a6f1aa491825432311c92c8bf505c46446cb7f38e9228f8220a5731a",
    "caratteri": 6283,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "ascoli-piceno",
@@ -1213,7 +1210,7 @@
    "titolo": "SCREENING ONCOLOGICI",
    "sha": "4680faa91abb73b0e91820fb96b98e10e24e107930aa086bb1ad836659959870",
    "caratteri": 5887,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ascoli-piceno",
@@ -1225,7 +1222,7 @@
    "titolo": "LISTE DI ATTESA",
    "sha": "1f75e941c6a6097bce8b022ce0cc6f31815ce9b88070ed94038f35a8959f3ae4",
    "caratteri": 3857,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole",
@@ -1447,6 +1444,19 @@
    "sha": "d6505796e093d53130b6428a95db624f5391fa16dc9f9e1f8cf5473e04624cb8",
    "caratteri": 42582,
    "cambiata": false
+  },
+  {
+   "asl": "ast-pesaro-urbino",
+   "url": "https://www.astpu.marche.it/it/strutture/guardia-medica-continuita-assistenziale",
+   "controllata": "2026-11-01",
+   "browser": true,
+   "http": 200,
+   "finale": "https://www.astpu.marche.it/it/strutture/guardia-medica-continuita-assistenziale?sort=materializedName",
+   "file": "ast-pesaro-urbino/8a137e2be00a.txt",
+   "titolo": "Guardia medica / Continuità assistenziale",
+   "sha": "e92a91dc6628ff3d04d2c1247c1d0fc9764e6c6f2e69b95500f68dec7a4eab82",
+   "caratteri": 2774,
+   "cambiata": true
   },
   {
    "asl": "ticket-pronto-soccorso",

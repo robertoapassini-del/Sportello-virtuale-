@@ -1,6 +1,6 @@
 {
  "regione": "veneto",
- "aggiornato": "2026-11-01T10:23:48.124Z",
+ "aggiornato": "2026-11-01T12:54:47.103Z",
  "pagine": [
   {
    "asl": "belluno",
@@ -415,12 +415,11 @@
   },
   {
    "asl": "venezia",
-   "url": "https://www.aulss3.veneto.it/Numeri-Utili-1",
+   "url": "https://www.aulss3.veneto.it/home/numeri-utili",
    "controllata": "2026-11-01",
    "browser": true,
    "http": 200,
-   "finale": "https://www.aulss3.veneto.it/home/numeri-utili",
-   "file": "venezia/73cedbd93cdb.txt",
+   "file": "venezia/4e732f80417a.txt",
    "titolo": "ULSS 3 SERENISSIMA - Numeri utili",
    "sha": "2d9d6cb4fafc1045c6ebf5c4b5200b741e3fafa308e03365fa8a3f6fdd0495ca",
    "caratteri": 10381,
@@ -452,16 +451,15 @@
   },
   {
    "asl": "venezia",
-   "url": "https://aulss4.veneto.it/amministrazione/urp-ufficio-relazioni-con-il-pubblico",
+   "url": "https://www.aulss4.veneto.it/servizionline/urp-ufficio-relazioni-con-il-pubblico",
    "controllata": "2026-11-01",
    "browser": true,
    "http": 200,
-   "finale": "https://www.aulss4.veneto.it/servizionline/urp-ufficio-relazioni-con-il-pubblico",
-   "file": "venezia/56a4d3d36924.txt",
+   "file": "venezia/0fc90d5b2483.txt",
    "titolo": "URP - Ufficio Relazioni con il Pubblico",
    "sha": "d25943393fc85cd71be451c4505c54f0135e9764bd570f5463c04933d8eead38",
    "caratteri": 5857,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -562,18 +560,6 @@
   },
   {
    "asl": "venezia",
-   "url": "https://www.aulss3.veneto.it/home/numeri-utili",
-   "controllata": "2026-11-01",
-   "browser": true,
-   "http": 200,
-   "file": "venezia/4e732f80417a.txt",
-   "titolo": "ULSS 3 SERENISSIMA - Numeri utili",
-   "sha": "2d9d6cb4fafc1045c6ebf5c4b5200b741e3fafa308e03365fa8a3f6fdd0495ca",
-   "caratteri": 10381,
-   "cambiata": false
-  },
-  {
-   "asl": "venezia",
    "url": "https://www.aulss3.veneto.it/organizzazione/ufficio-relazioni-con-il-pubblico",
    "controllata": "2026-11-01",
    "browser": true,
@@ -591,10 +577,10 @@
    "browser": true,
    "http": 200,
    "file": "venezia/94b10fd120ae.txt",
-   "titolo": "ULSS 3 SERENISSIMA - Prenotare o disdire una prestazione",
-   "sha": "fbcab6fd77c63a07810b60fbb0816bab1da9fa168f1018a74147a27a44f29a05",
-   "caratteri": 3876,
-   "cambiata": false
+   "titolo": "Prenotare o disdire una prestazione",
+   "sha": "b69c4cf60ae58f72f3d9ca0797bc2fbe29e1e6d99f3b9a3eb763b25b23c08a8b",
+   "caratteri": 3855,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -703,7 +689,7 @@
    "titolo": "Azienda ULSS n. 4 Veneto Orientale - Prenotazione esami di laboratorio presso le strutture dell'Azienda Ulss4 \"Veneto Orientale\"",
    "sha": "639a5afddb6322348a5a2962cc2fba1c554e07dede861388a1a1a61d719c21fe",
    "caratteri": 3630,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -715,7 +701,7 @@
    "titolo": "Azienda ULSS n. 4 Veneto Orientale - 116117 e Continuità Assistenziale",
    "sha": "6418952a2e8d22b121116a7ee3ee2591cfc302d6c5bd29be7454989b7679a99c",
    "caratteri": 3268,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -1079,11 +1065,10 @@
   },
   {
    "asl": "padova",
-   "url": "https://www.aulss6.veneto.it/URP",
+   "url": "https://www.aulss6.veneto.it/urp-online",
    "controllata": "2026-11-01",
    "http": 200,
-   "finale": "https://www.aulss6.veneto.it/urp-online",
-   "file": "padova/2845adf697d8.txt",
+   "file": "padova/89c846b39a69.txt",
    "titolo": "URP online",
    "sha": "d9770a2cfd1d2351bb855fd1ec7094a3cb56379b5c455c659fd026b7b0d8e488",
    "caratteri": 8638,
@@ -1131,17 +1116,6 @@
    "titolo": "Come prenotare",
    "sha": "b9113f8e474ab0ef42881b8dfa3b16f8b2ea86c9077678a34fcab625b9e3cab8",
    "caratteri": 5088,
-   "cambiata": false
-  },
-  {
-   "asl": "padova",
-   "url": "https://www.aulss6.veneto.it/urp-online",
-   "controllata": "2026-11-01",
-   "http": 200,
-   "file": "padova/89c846b39a69.txt",
-   "titolo": "URP online",
-   "sha": "d9770a2cfd1d2351bb855fd1ec7094a3cb56379b5c455c659fd026b7b0d8e488",
-   "caratteri": 8638,
    "cambiata": false
   },
   {
@@ -2005,6 +1979,44 @@
    "url": "https://www.aulss2.veneto.it/liste-attesa",
    "controllata": "2026-11-01",
    "http": 404
+  },
+  {
+   "asl": "ulss3-serenissima",
+   "url": "https://www.aulss3.veneto.it/Numeri-Utili-1",
+   "controllata": "2026-11-01",
+   "browser": true,
+   "http": 200,
+   "finale": "https://www.aulss3.veneto.it/home/numeri-utili",
+   "file": "ulss3-serenissima/73cedbd93cdb.txt",
+   "titolo": "ULSS 3 SERENISSIMA - Numeri utili",
+   "sha": "2d9d6cb4fafc1045c6ebf5c4b5200b741e3fafa308e03365fa8a3f6fdd0495ca",
+   "caratteri": 10381,
+   "cambiata": false
+  },
+  {
+   "asl": "ulss4-veneto-orientale",
+   "url": "https://aulss4.veneto.it/amministrazione/urp-ufficio-relazioni-con-il-pubblico",
+   "controllata": "2026-11-01",
+   "browser": true,
+   "http": 200,
+   "finale": "https://www.aulss4.veneto.it/servizionline/urp-ufficio-relazioni-con-il-pubblico",
+   "file": "ulss4-veneto-orientale/56a4d3d36924.txt",
+   "titolo": "URP - Ufficio Relazioni con il Pubblico",
+   "sha": "d25943393fc85cd71be451c4505c54f0135e9764bd570f5463c04933d8eead38",
+   "caratteri": 5857,
+   "cambiata": false
+  },
+  {
+   "asl": "ulss6-euganea",
+   "url": "https://www.aulss6.veneto.it/URP",
+   "controllata": "2026-11-01",
+   "http": 200,
+   "finale": "https://www.aulss6.veneto.it/urp-online",
+   "file": "ulss6-euganea/2845adf697d8.txt",
+   "titolo": "URP online",
+   "sha": "d9770a2cfd1d2351bb855fd1ec7094a3cb56379b5c455c659fd026b7b0d8e488",
+   "caratteri": 8638,
+   "cambiata": false
   },
   {
    "asl": "ulss6-euganea",
