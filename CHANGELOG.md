@@ -32,6 +32,10 @@ Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 - `data/regioni/sardegna/asl.json`: in `pagine[]` la pagina «Percorso di tutela» dell'ASL Gallura e dell'ASL Oristano (link dal menu della home). Ogliastra e Sulcis: nessuna pagina trovata, annotato nel `todo`. Liste d'attesa resta spenta.
 - `data/regioni/sardegna/inps.json`: in `pagine[]` le pagine INPS dei messaggi n. 635 e n. 637 del 23/02/2026 (province della riforma della disabilità). Invalidità resta spenta finché le copie non dicono il regime di Olbia, Lanusei, Sanluri e Carbonia.
 
+## 02/11/2026 — Basilicata: cure palliative accese, pagine per screening e liste d'attesa
+- `data/regioni/index.json`: in Basilicata acceso `cure-palliative` (legge `emails[]` o `pec` dell'ASP di Potenza e dell'ASM di Matera, già provati).
+- `data/regioni/basilicata/asl.json`: in `pagine[]` di ogni azienda le pagine degli screening della Regione (salute.basilicata.it, screening.regione.basilicata.it), da copiare; `todo` aggiornato. `prevenzione` resta spento finché la copia non dà il contatto.
+- `data/regioni/basilicata/fonti.json`: in `pagine[]` della Regione la notizia e il PDF del Piano regionale liste d'attesa 2025, da copiare. `liste-attesa` resta spento.
 ## 02/11/2026 — Campania: medico di famiglia e cure palliative accesi
 - `data/regioni/campania/asl.json`: `scelta_medico` in ogni ASL e zona di Napoli dalla pagina della Regione «Scelta e revoca del Medico» (regione.campania.it/node/32056, copia del 01/11/2026): portale Sinfonia, app Campania in Salute o ufficio Assistenza sanitaria di base del distretto. Contatti «screening» di Avellino (0825 292029) e Caserta (800 984043, 0823 210545) dalle copie del 01/11/2026. Nuove pagine da copiare: screening di Benevento e Napoli 1 Centro, liste d'attesa di Napoli 1 Centro e Napoli 2 Nord.
 - `data/regioni/index.json`: in Campania accesi `medico-famiglia` e `cure-palliative` (ogni ASL e zona ha email o PEC). Restano spenti `liste-attesa` (manca il percorso di tutela di Benevento, Caserta, Napoli 1, Napoli 2 e Salerno) e `prevenzione` (manca il numero dello screening di Benevento, Napoli 1, Napoli 2 e Salerno): il motivo è nei `todo`.
