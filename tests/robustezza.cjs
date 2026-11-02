@@ -131,8 +131,11 @@ async function main() {
     }
     await ctx.close();
   }
-  // Lazio e Lombardia non hanno ancora gli uffici di questo modulo: si salta la provincia e si va alla prima domanda (js/flow.js, withRegion).
-  for (const [reg, atteso] of [['sicilia', /Dove abita/], ['lazio', /Per chi è/], ['lombardia', /Per chi è/], [INATTIVA, /La tua regione non c'è ancora/]]) {
+  // Le regioni attive senza gli uffici di questo modulo (prima Lazio e Lombardia; il Lazio l'ha acceso il 02/11/2026 e il test si
+// è rotto): si salta la provincia e si va alla prima domanda (js/flow.js, withRegion). Le prime due, lette da index.json.
+const SENZA_MEDICO = JSON.parse(require('fs').readFileSync(path.join(__dirname, '..', 'data/regioni/index.json'), 'utf8')).regioni
+  .filter((r) => r.attiva && r.moduli && !r.moduli.includes('medico-famiglia')).slice(0, 2).map((r) => [r.id, /Per chi è/]);
+  for (const [reg, atteso] of [['sicilia', /Dove abita/], ...SENZA_MEDICO, [INATTIVA, /La tua regione non c'è ancora/]]) {
     const nome = `medico-famiglia/ senza localStorage (${reg})`;
     const { ctx, page } = await scheda(browser, nome, { init: STORAGE_BLOCCATO, finta: reg === INATTIVA });
     await apri(page, at('medico-famiglia/'));
