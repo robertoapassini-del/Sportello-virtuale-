@@ -2,6 +2,17 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 02/11/2026 — controllo automatico dei contatti
+- Copie delle pagine ufficiali del 02/11/2026 (branch `copie-siti`): controllate 848 pagine. Sono le pagine dei contatti (`phones`, `contacts`) e i link `site_url`, `info_url`, `guardia_medica_url`, `pua_url` delle aziende di tutte le 20 regioni.
+- 1701 numeri confermati: il numero c'è nella copia della sua pagina. `verified` ora è 2026-11-02, `proof` «pagina». Per il CUPP dell'Alto Adige la pagina scrive «100 100 (pref. 0471, 0472, 0473, 0474)».
+- Nessun numero, indirizzo o orario cambiato. I dubbi nuovi sono nel `todo` dell'azienda:
+  - Medio Campidano, centralino 070 93841: sulla pagina «Contatti» ora c'è «Telefono: 070/93781».
+  - Bolzano, guardia medica 0471 438288: sulla pagina del distretto Centro-Piani-Rencio ora c'è «Tel.: 116117».
+  - Imola, guardia medica 800 040050: la pagina CAD_CAU porta alla home del sito.
+  - Liguria: 3 pagine della Regione rispondono 403. Sono le prove del 116117 del Tigullio, del CUP Liguria (010 5383400) e dei numeri delle Case della Comunità di Sanremo, Albenga, Cairo Montenotte, Pietra Ligure e Vado Ligure.
+  - Agrigento, anagrafe di Bivona 0922 993041: la pagina non risponde.
+- Dubbi già nel `todo`, non ripetuti: PUA di Rozzano (sul sito 02 9805.8990), URP di Monza (la pagina porta al sito dell'IRCCS San Gerardo), centralino dell'ASST della Brianza a Vimercate (la pagina dell'URP porta alla home), numeri di Enna nelle pagine fatte con JavaScript, PUA di Ragusa, centralino di Caltanissetta, cartelle del Civico di Palermo, segretariato sociale di Firenze.
+- Non rispondono `site_url` di Vibo Valentia (403) e del VCO (403). Pagine senza titolo nella copia: `site_url`, `guardia_medica_url` e `pua_url` di Catanzaro, `guardia_medica_url` di Cosenza e di Vibo Valentia (una pagina dell'ASP di Catanzaro).
 ## 02/11/2026 — Campania: medico di famiglia e cure palliative accesi
 - `data/regioni/campania/asl.json`: `scelta_medico` in ogni ASL e zona di Napoli dalla pagina della Regione «Scelta e revoca del Medico» (regione.campania.it/node/32056, copia del 01/11/2026): portale Sinfonia, app Campania in Salute o ufficio Assistenza sanitaria di base del distretto. Contatti «screening» di Avellino (0825 292029) e Caserta (800 984043, 0823 210545) dalle copie del 01/11/2026. Nuove pagine da copiare: screening di Benevento e Napoli 1 Centro, liste d'attesa di Napoli 1 Centro e Napoli 2 Nord.
 - `data/regioni/index.json`: in Campania accesi `medico-famiglia` e `cure-palliative` (ogni ASL e zona ha email o PEC). Restano spenti `liste-attesa` (manca il percorso di tutela di Benevento, Caserta, Napoli 1, Napoli 2 e Salerno) e `prevenzione` (manca il numero dello screening di Benevento, Napoli 1, Napoli 2 e Salerno): il motivo è nei `todo`.
