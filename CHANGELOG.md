@@ -5,6 +5,9 @@ Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 ## 02/11/2026 — Calabria: pagine dello screening e delle liste d'attesa da copiare
 
 - `data/regioni/calabria/asl.json`: in `pagine` lo screening dell'ASP di Catanzaro (asp.cz.it), di Cosenza (asp.cosenza.it) e di Crotone (sirio.aspkr.it, linkato da asp.crotone.it), la pagina «Liste di attesa» dell'ASP di Catanzaro e l'URP di Crotone. Moduli liste-attesa e prevenzione ancora spenti: motivo nel `todo`.
+## 02/11/2026 — Liguria: numeri degli screening
+- `data/regioni/liguria/asl.json`: numeri degli screening oncologici dalle copie del server del 01/11/2026 (area genovese: colon-retto, collo dell'utero, seno; area imperiese: Senologia di Sanremo e Radiologia di Imperia; area spezzina: ufficio screening). Area savonese: nessun numero nella copia, annotato nel `todo`.
+- Area savonese: `informativa-screening.html` in `pagine[]` perché il server la copi; `prevenzione` resta spenta fino alla copia.
 
 ## 02/11/2026 — Campania: medico di famiglia e cure palliative accesi
 - `data/regioni/campania/asl.json`: `scelta_medico` in ogni ASL e zona di Napoli dalla pagina della Regione «Scelta e revoca del Medico» (regione.campania.it/node/32056, copia del 01/11/2026): portale Sinfonia, app Campania in Salute o ufficio Assistenza sanitaria di base del distretto. Contatti «screening» di Avellino (0825 292029) e Caserta (800 984043, 0823 210545) dalle copie del 01/11/2026. Nuove pagine da copiare: screening di Benevento e Napoli 1 Centro, liste d'attesa di Napoli 1 Centro e Napoli 2 Nord.
