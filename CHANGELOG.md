@@ -19,6 +19,9 @@ Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 - `data/regioni/index.json`: in Abruzzo accesi `assistenza-domiciliare` e `cure-palliative` (leggono URP e PEC delle quattro ASL, già provati).
 - `data/regioni/abruzzo/asl.json`: contatti «screening» dell'ASL 2 (800 727057, 800 893436, 800 567529; pagina «Partecipa agli screening oncologici gratuiti», copia del 01/11/2026) e dell'ASL di Pescara (085 425 3939; pagina «Screening Oncologici», copia del 01/11/2026). `prevenzione` resta spento: manca il numero dello screening dell'ASL 1. `liste-attesa` resta spento: l'ASL 2 non dice come si manda l'istanza del percorso di tutela (motivi nel `todo`).
 - `tests/browser.cjs`: un nome di città siciliana dopo Via, Piazza, Corso, Circonvallazione… è una strada: «Circonvallazione Ragusa 1, Teramo» non è più una frase siciliana.
+## 02/11/2026 — Toscana: prevenzione accesa
+- `data/regioni/toscana/asl.json`: numeri dello screening dell'Azienda USL Toscana Sud Est per Arezzo (0575 379138), Grosseto (0564 486486) e Siena (0577 536132), dalla copia del 01/11/2026 della pagina «Screening» (uslsudest.toscana.it/percorsi-assistenziali/screening). Le altre province avevano già il contatto.
+- `data/regioni/index.json`: Toscana, modulo `prevenzione` acceso.
 
 ## 02/11/2026 — Campania: medico di famiglia e cure palliative accesi
 - `data/regioni/campania/asl.json`: `scelta_medico` in ogni ASL e zona di Napoli dalla pagina della Regione «Scelta e revoca del Medico» (regione.campania.it/node/32056, copia del 01/11/2026): portale Sinfonia, app Campania in Salute o ufficio Assistenza sanitaria di base del distretto. Contatti «screening» di Avellino (0825 292029) e Caserta (800 984043, 0823 210545) dalle copie del 01/11/2026. Nuove pagine da copiare: screening di Benevento e Napoli 1 Centro, liste d'attesa di Napoli 1 Centro e Napoli 2 Nord.
