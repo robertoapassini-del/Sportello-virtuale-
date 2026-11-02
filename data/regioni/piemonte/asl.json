@@ -550,6 +550,7 @@
    ],
    "last_verified": "2026-10-23",
    "todo": [
+    "Controllo del 02/11/2026 (copia del server del 01/11/2026): la pagina «Percorsi di tutela» ha quattro file (sintesi, modulo, procedura, elenco prestazioni) dietro pulsanti «Download» senza indirizzo .pdf, e nessuna pagina copiata dice a quale indirizzo si manda la domanda. Liste d'attesa resta spenta in Piemonte. Serve l'indirizzo diretto dei file (o una pagina che dica dove mandare la domanda) in pagine[].",
     "La notizia sul 116117 è del 1° luglio 2022 e diceva che i vecchi numeri locali restavano attivi «al momento»: non li ho messi.",
     "La pagina «Prenotare una visita» dell'ASL Biella dà «Pagina non trovata» (404).",
     "Moduli (giro 3, 23/10/2026): accesi anche cartella clinica, assistenza a casa e cure palliative (ora ogni ASL ha una PEC o un'email provata: per l'ASL VCO la PEC protocollo@pec.aslvco.it dal Bollettino della Regione Piemonte n. 46 del 13/11/2025, PDF copiato il 23/10/2026). Liste d'attesa restano spente: mancano il percorso di tutela dell'ASL VCO (aslvco.it chiede un CAPTCHA al server) e l'indirizzo per la domanda all'ASL Biella. Prevenzione accesa il 23/10/2026: numero verde di Prevenzione Serena 800 001141 (7 giorni su 7, 8–20) dalla copia della pagina della Regione, che dice «presente su tutto il territorio piemontese».",
@@ -813,6 +814,27 @@
     }
    ],
    "last_verified": "2026-10-23",
+   "channel": "pec",
+   "letter_mode": "letter",
+   "send_to": "protocollo@aslcn1.legalmailPA.it",
+   "how_to": "Prima prova a prenotare con il CUP Piemonte: numero verde 800 000 500 (tutti i giorni 8–20), app «CUP Piemonte», portale Salute Piemonte o una farmacia. Se non c'è posto nei tempi della tua classe, chiedi il percorso di tutela all'ASL CN1: manda la richiesta firmata, con la data, alla casella protocollo@aslcn1.legalmailPA.it (è una PEC). Oppure portala all'URP di Cuneo, Savigliano o Mondovì. Sul sito dell'ASL c'è il modulo.",
+   "documents_required": [
+    "Richiesta di attivazione del percorso di tutela, con data e firma",
+    "Ricetta del medico con la classe di priorità",
+    "Documento d'identità (fotocopia)",
+    "Una tua dichiarazione: in quali giorni e da quale telefono hai chiamato il CUP, o a quale sportello sei andato. Servono almeno tre tentativi in giorni diversi"
+   ],
+   "what_next": [
+    "L'ASL controlla i fogli e cerca di nuovo un posto con il CUP regionale.",
+    "Se rifiuti la prima data che rispetta i tempi della tua classe, in qualunque posto del Piemonte, perdi la tutela."
+   ],
+   "notes": [
+    "Vale per le prime visite e i primi esami con classe B, D o P del Piano nazionale delle liste d'attesa."
+   ],
+   "details": [
+    "In Piemonte l'ASL non rimborsa le visite e gli esami che hai già fatto a pagamento da un privato."
+   ],
+   "info_url": "https://www.aslcn1.it/cosa-fare-per/prenotare-visite/esami",
    "todo": [
     "Le pagine sulle cure domiciliari dell'ASL CN1 non hanno numeri; per l'ASL CN2 non c'è una pagina copiata sulle cure domiciliari.",
     "Moduli (giro 3, 23/10/2026): accesi anche cartella clinica, assistenza a casa e cure palliative (ora ogni ASL ha una PEC o un'email provata: per l'ASL VCO la PEC protocollo@pec.aslvco.it dal Bollettino della Regione Piemonte n. 46 del 13/11/2025, PDF copiato il 23/10/2026). Liste d'attesa restano spente: mancano il percorso di tutela dell'ASL VCO (aslvco.it chiede un CAPTCHA al server) e l'indirizzo per la domanda all'ASL Biella. Prevenzione accesa il 23/10/2026: numero verde di Prevenzione Serena 800 001141 (7 giorni su 7, 8–20) dalla copia della pagina della Regione, che dice «presente su tutto il territorio piemontese».",
@@ -1624,6 +1646,26 @@
     }
    ],
    "last_verified": "2026-10-21",
+   "channel": "email",
+   "letter_mode": "letter",
+   "send_to": "tempiattesa@aslcittaditorino.it",
+   "how_to": "Prima prova a prenotare con il CUP Piemonte: numero verde 800 000 500 (tutti i giorni 8–20), app «CUP Piemonte», portale Salute Piemonte o una farmacia. Se non c'è posto nei tempi della tua classe, chiedi il percorso di tutela all'ASL Città di Torino: manda una email a tempiattesa@aslcittaditorino.it e scrivi un tuo numero di telefono. Se non puoi mandare l'email, porta i fogli a una sede dell'URP e compila lì il modulo «Allegato 1».",
+   "documents_required": [
+    "Ricetta del medico con la classe di priorità",
+    "Documento d'identità (fotocopia)",
+    "Una prova che il CUP non ti ha dato posto in tempo: per esempio il giorno in cui hai chiamato l'800 000 500, da quale numero e cosa ti hanno detto, o la schermata dell'app CUP Piemonte"
+   ],
+   "what_next": [
+    "L'ASL controlla la ricetta e cerca un posto.",
+    "Se rifiuti la prima data che rispetta i tempi della tua classe, perdi la tutela."
+   ],
+   "notes": [
+    "Vale per le prime visite e i primi esami con classe B, D o P."
+   ],
+   "details": [
+    "In Piemonte l'ASL non rimborsa le visite e gli esami che hai già fatto a pagamento da un privato."
+   ],
+   "info_url": "https://www.aslcittaditorino.it/tempi-di-attesa-prestazioni-specialistiche/",
    "todo": [
     "116117: tutte le ASL con pagine copiate (Città di Torino, TO3, TO4, TO5, Vercelli, Biella, CN1, CN2, Asti, Alessandria) dicono che la guardia medica si chiama solo al 116117; la pagina dell'ASL TO3 dice «attivo su tutto il territorio del Piemonte», la TO4 «attivo in tutto il Piemonte», la TO5 e la Città di Torino «numero unico regionale». Quindi niente vecchi numeri locali di guardia medica. Per Novara e VCO (pagine non copiate) ho messo il 116117 con la pagina dell'ASL TO3 che dice che vale in tutto il Piemonte.",
     "CUP regionale: esiste «CUP Piemonte», numero verde 800 000 500 (gratuito da fisso e cellulare), tutti i giorni 8–20, per prenotare, spostare e disdire visite ed esami di tutte le ASL e aziende ospedaliere; lo citano la pagina della Regione (servizi.regione.piemonte.it) e tutte le ASL. Le ASL non hanno più un loro numero di prenotazione generale: restano solo numeri per sportelli o casi particolari.",
@@ -2031,6 +2073,7 @@
    ],
    "last_verified": "2026-10-23",
    "todo": [
+    "Controllo del 02/11/2026 (copia del server del 01/11/2026): aslvco.it risponde ancora 403 a tutte le pagine, anche al PDF del percorso di tutela. Liste d'attesa resta spenta in Piemonte finché non c'è una copia del percorso di tutela dell'ASL VCO (dal sito o da un'altra pagina ufficiale).",
     "Il sito dell'ASL VCO (aslvco.it) ha risposto «403 vietato» a tutte le pagine: mancano centralino, URP, cure domiciliari e la pagina sul trasferimento della guardia medica di Verbania. Da ricopiare.",
     "Moduli (giro 3, 23/10/2026): accesi anche cartella clinica, assistenza a casa e cure palliative (ora ogni ASL ha una PEC o un'email provata: per l'ASL VCO la PEC protocollo@pec.aslvco.it dal Bollettino della Regione Piemonte n. 46 del 13/11/2025, PDF copiato il 23/10/2026). Liste d'attesa restano spente: mancano il percorso di tutela dell'ASL VCO (aslvco.it chiede un CAPTCHA al server) e l'indirizzo per la domanda all'ASL Biella. Prevenzione accesa il 23/10/2026: numero verde di Prevenzione Serena 800 001141 (7 giorni su 7, 8–20) dalla copia della pagina della Regione, che dice «presente su tutto il territorio piemontese».",
     "Percorso di tutela (estratto del 22/10/2026, non usato): email urp@aslvco.it o ai CUP firmando una richiesta. Il sito aslvco.it risponde 403 anche nella copia del 22/10/2026: servono email URP, PEC e la pagina del percorso di tutela da un'altra pagina ufficiale (Regione Piemonte) o una nuova copia.",

@@ -150,11 +150,24 @@
    ],
    "last_verified": "2026-10-21",
    "todo": [
+    "Quarto giro (02/11/2026): acceso cure palliative (lettera all'URP o alla PEC dell'azienda; uffici della rete solo dove le copie li danno). Spenti: prevenzione (manca il contatto screening: il numero verde regionale è su salute.basilicata.it e screening.regione.basilicata.it, pagine aggiunte in «pagine», da leggere dopo la copia), liste d'attesa (nessuna copia dice il percorso di tutela; in «pagine» della Regione, fonti.json, il Piano regionale liste d'attesa 2025, da leggere dopo la copia).",
     "La pagina guardia medica dell'ASM (pubblicata 16/12/2025) elenca ancora i numeri per comune e non nomina il 116117: non li ho messi perché la Regione dice che il 116117 è attivo in tutta la Basilicata.",
     "Mancano (copie del 23/10/2026): PUA e cure domiciliari di Matera città e degli altri distretti (c'è solo il Distretto di Policoro, vecchio sito), cure palliative, uffici cartelle cliniche, screening dell'ASM. La pagina «cure a casa e hospice» del nuovo sito (dinamica.aspx?ID=18568) risponde 404: tolta da «pagine».",
     "Terzo giro (copie del 23/10/2026, anche i PDF): acceso assistenza a casa (lettera all'URP o alla PEC di ogni azienda; uffici ADI: 5 sedi dell'ASP, a Matera solo il Distretto di Policoro). Spenti: liste d'attesa (nessuna copia dice il percorso di tutela: la pagina «Liste di attesa» dell'ASP ha solo tempi e delibere, la «Carta dei servizi» dell'ASP, PDF copiato, non ne parla; a Matera «Modalità di tutela» parla solo di reclami), prevenzione (nessun numero degli screening: nella Carta dei servizi dell'ASP ci sono solo gli ambulatori del pap-test di alcuni consultori), cure palliative (nessun ufficio a Matera), ausili (spento fuori dalla Sicilia). Accesi dal secondo giro: invalidità, medico di famiglia e cartella clinica."
    ],
    "pagine": [
+    {
+     "tipo": "screening",
+     "url": "https://www.salute.basilicata.it/servizi-agli-assistiti/servizi-di-prevenzione/screening-oncologici/"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://screening.regione.basilicata.it/"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.salute.basilicata.it/assistenza/screening-oncologici/"
+    },
     {
      "tipo": "scelta del medico",
      "url": "https://www.asmbasilicata.it/servizio/cambiare-scegliere-il-medico-di-base-o-pediatra/"
@@ -469,6 +482,7 @@
    ],
    "last_verified": "2026-10-21",
    "todo": [
+    "Quarto giro (02/11/2026): acceso cure palliative (lettera all'URP o alla PEC dell'azienda; uffici della rete solo dove le copie li danno). Spenti: prevenzione (manca il contatto screening: il numero verde regionale è su salute.basilicata.it e screening.regione.basilicata.it, pagine aggiunte in «pagine», da leggere dopo la copia), liste d'attesa (nessuna copia dice il percorso di tutela; in «pagine» della Regione, fonti.json, il Piano regionale liste d'attesa 2025, da leggere dopo la copia).",
     "116117: la Regione (AGR, 11 agosto 2026) scrive che dal 25 maggio il 116117 è attivo in tutta la Basilicata, gratuito e H24; anche la pagina 118 dell'ASP dice «Il NEA 116117 è attualmente attivo». È in una prima fase (triage telefonico, orientamento, trasferimento alla guardia medica competente quando è in turno), gestito dalla Centrale Operativa 118. Per questo non ho messo i vecchi numeri locali di guardia medica (la pagina «Guardia medica» dell'ASP li elenca ancora per comune).",
     "CUP: c'è un unico call center regionale, numero verde 800 814 814 (lunedì–venerdì 7–19, sabato 7–14), confermato da Regione, ASP e ASM. Non ho trovato numeri CUP telefonici propri delle aziende: solo sportelli di persona.",
     "Il numero verde 800 013 504 nella pagina URP dell'ASP è scritto sotto la sede di Lagonegro: non è chiaro se valga per tutta l'ASP.",
@@ -476,6 +490,18 @@
     "Terzo giro (copie del 23/10/2026, anche i PDF): acceso assistenza a casa (lettera all'URP o alla PEC di ogni azienda; uffici ADI: 5 sedi dell'ASP, a Matera solo il Distretto di Policoro). Spenti: liste d'attesa (nessuna copia dice il percorso di tutela: la pagina «Liste di attesa» dell'ASP ha solo tempi e delibere, la «Carta dei servizi» dell'ASP, PDF copiato, non ne parla; a Matera «Modalità di tutela» parla solo di reclami), prevenzione (nessun numero degli screening: nella Carta dei servizi dell'ASP ci sono solo gli ambulatori del pap-test di alcuni consultori), cure palliative (nessun ufficio a Matera), ausili (spento fuori dalla Sicilia). Accesi dal secondo giro: invalidità, medico di famiglia e cartella clinica."
    ],
    "pagine": [
+    {
+     "tipo": "screening",
+     "url": "https://www.salute.basilicata.it/servizi-agli-assistiti/servizi-di-prevenzione/screening-oncologici/"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://screening.regione.basilicata.it/"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.salute.basilicata.it/assistenza/screening-oncologici/"
+    },
     {
      "tipo": "liste di attesa",
      "url": "https://www.aspbasilicata.it/servizi-per-i-cittadini/liste-di-attesa/"
