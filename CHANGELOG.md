@@ -4,7 +4,7 @@ Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
 ## 02/11/2026 — Lazio: acceso il modulo del medico di famiglia
 
-- `data/regioni/lazio/asl.json`: `scelta_medico` (come si sceglie e si cambia il medico: FSE o sportello dell'ASL; il pediatra allo sportello) in tutte e 5 le aziende, dalla pagina «Medico di famiglia e pediatra» di Salute Lazio (copia del 01/11/2026). Tolta da `pagine` la pagina dell'ASL di Rieti che risponde 404. `data/regioni/index.json`: «medico-famiglia» acceso nel Lazio.
+- `data/regioni/lazio/asl.json`: `scelta_medico` (come si sceglie e si cambia il medico: FSE o sportello dell'ASL; il pediatra allo sportello) in tutte e 5 le aziende, dalla pagina «Medico di famiglia e pediatra» di Salute Lazio (copia del 01/11/2026). Tolta da `pagine` la pagina dell'ASL di Rieti che risponde 404. `data/regioni/index.json`: «medico-famiglia» acceso nel Lazio. `tests/robustezza.cjs`: le regioni senza il modulo del medico ora si leggono da `index.json` (il test aveva il Lazio scritto a mano).
 ## 02/11/2026 — Emilia-Romagna: pagine da copiare per liste d'attesa e screening
 - `data/regioni/emilia-romagna/asl.json`, `pagine[]`: CUP e numero verde di Modena, CupTel e Sportello unico di Piacenza, CUP telefonico dell'AUSL di Bologna (liste d'attesa); pagine dei centri screening di Modena, Ferrara, Forlì, Cesena e Ravenna (prevenzione). Tolte 3 pagine che nella copia danno 404 (screening e liste d'attesa di Modena, screening di Reggio Emilia). Dopo la copia si riempiono i campi e si accendono i moduli.
 
