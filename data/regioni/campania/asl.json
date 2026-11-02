@@ -138,6 +138,14 @@
      "address": "Piazza Mazzini, Ariano Irpino",
      "verified": "2026-10-26",
      "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Centrale screening oncologici dell'ASL di Avellino",
+     "number": "0825 292029",
+     "url": "https://www.aslavellino.it/index.php/it/per-il-cittadino/prevenzione/screening-oncologici",
+     "verified": "2026-11-01",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -172,8 +180,9 @@
     "URP: ogni sede ha anche un secondo numero (Avellino 0825 292165, Ariano 0825 877663, Calitri 0827 203011); i presidi di Montemiletto (0825 963364) non sono messi.",
     "Manca un numero del PUA dei distretti: la pagina del Coordinamento socio-sanitario dà solo lo 0825 292060 dell'ufficio centrale.",
     "Percorso di tutela (PDF «Percorso di tutela aziendale», copia del 23/10/2026): istanza per email a urp@aslavellino.it con dati anagrafici, telefono ed email, fotocopia della prenotazione, del documento e della tessera sanitaria e della ricetta; niente rimborsi a prestazione già fatta. Il PDF non dice cosa succede dopo e in quanto tempo: what_next vuoto. Liste d'attesa resta spento in Campania finché mancano le altre ASL.",
-    "Screening: messa in «pagine» la pagina «Screening oncologici» dell'ASL (Centrale screening): dopo la copia, il contatto «screening».",
-    "La notizia della Regione Campania sulle liste d'attesa (dati del monitoraggio) risponde 404 al server (copia del 23/10/2026): tolta da «pagine»."
+    "La notizia della Regione Campania sulle liste d'attesa (dati del monitoraggio) risponde 404 al server (copia del 23/10/2026): tolta da «pagine».",
+    "Medico di famiglia (copia del 01/11/2026 della pagina della Regione «Scelta e revoca del Medico»): online sul portale Sinfonia o con l'app Campania in Salute, oppure all'ufficio Assistenza sanitaria di base del distretto.",
+    "Screening (copia del 01/11/2026): messo il numero della pagina «Screening oncologici» dell'ASL."
    ],
    "pagine": [
     {
@@ -203,7 +212,12 @@
     "Nell'ASL di Avellino il percorso di tutela vale per chi abita nel territorio dell'ASL, per le prime visite e i primi esami con la ricetta del Servizio sanitario.",
     "L'ASL prende in carico solo le richieste mandate in questo modo, all'indirizzo urp@aslavellino.it."
    ],
-   "fast_track": null
+   "fast_track": null,
+   "scelta_medico": {
+    "how": "Puoi farlo online, nel portale «Salute del cittadino» della Regione (Sinfonia) o con l'app «Campania in Salute». Puoi anche andare all'ufficio Assistenza sanitaria di base del tuo distretto.",
+    "url": "https://www.regione.campania.it/node/32056",
+    "url_label": "Sito della Regione"
+   }
   },
   {
    "id": "benevento",
@@ -308,7 +322,9 @@
     "Percorso di tutela: nelle copie non c'è come chiederlo. Aggiunte a «pagine» le pagine «Liste di attesa» della Regione e delle ASL trovate col motore di ricerca. L'ASL Napoli 3 Sud (pagina CUP) dice che le richieste sul percorso di tutela vanno all'URP.",
     "Screening: nelle copie del 23/10/2026 non c'è il numero dello screening; messa in «pagine» la pagina screening dell'ASL.",
     "Percorso di tutela: la pagina Liste d'attesa (copia del 23/10/2026) spiega i percorsi di tutela ma non dice a chi scrivere né come.",
-    "La notizia della Regione Campania sulle liste d'attesa (dati del monitoraggio) risponde 404 al server (copia del 23/10/2026): tolta da «pagine»."
+    "La notizia della Regione Campania sulle liste d'attesa (dati del monitoraggio) risponde 404 al server (copia del 23/10/2026): tolta da «pagine».",
+    "Medico di famiglia (copia del 01/11/2026 della pagina della Regione «Scelta e revoca del Medico»): online sul portale Sinfonia o con l'app Campania in Salute, oppure all'ufficio Assistenza sanitaria di base del distretto.",
+    "Screening: messe in «pagine» le pagine dello screening del colon-retto dei distretti di Benevento e Montesarchio (numero del coordinamento aziendale e email screeningoncologici@): dopo la copia, il contatto «screening»."
    ],
    "pagine": [
     {
@@ -318,8 +334,21 @@
     {
      "tipo": "screening",
      "url": "https://www.aslbenevento.it/notizie/ci-prendiamo-cura-di-te-con-gli-screening-oncologici-gratuiti"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.aslbenevento.it/servizio-strutturale/screening-del-tumore-del-colon-retto-distretto-sanitario-benevento"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.aslbenevento.it/servizio-strutturale/screening-del-tumore-del-colon-retto-distretto-sanitario-montesarchio"
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "Puoi farlo online, nel portale «Salute del cittadino» della Regione (Sinfonia) o con l'app «Campania in Salute». Puoi anche andare all'ufficio Assistenza sanitaria di base del tuo distretto.",
+    "url": "https://www.regione.campania.it/node/32056",
+    "url_label": "Sito della Regione"
+   }
   },
   {
    "id": "caserta",
@@ -448,6 +477,24 @@
      "url": "https://www.aslcaserta.it/index.php/telefono-e-posta-elettronica/",
      "verified": "2026-10-26",
      "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening oncologici dell'ASL di Caserta (numero verde, tasto 3, da telefono fisso)",
+     "number": "800 984043",
+     "url": "https://www.aslcaserta.it/index.php/screening-oncologici/",
+     "hours": "Dal lunedì al venerdì 8:00–14:00",
+     "verified": "2026-11-01",
+     "proof": "pagina"
+    },
+    {
+     "topic": "screening",
+     "label": "Screening oncologici dell'ASL di Caserta (tasto 3, da cellulare)",
+     "number": "0823 210545",
+     "url": "https://www.aslcaserta.it/index.php/screening-oncologici/",
+     "hours": "Dal lunedì al venerdì 8:00–14:00",
+     "verified": "2026-11-01",
+     "proof": "pagina"
     }
    ],
    "sources": [
@@ -471,15 +518,22 @@
     "Le pagine del portale salute (portalesalute.aslcaserta.it, ADI distretti 12 e 13) rispondono 403 al server: non copiate.",
     "Telefono e posta elettronica: la pagina ha i numeri di tutti gli uffici dei distretti (PUA, ADI, medicina di base); messi solo alcuni.",
     "Percorso di tutela: nelle copie non c'è come chiederlo. Aggiunte a «pagine» le pagine «Liste di attesa» della Regione e delle ASL trovate col motore di ricerca. L'ASL Napoli 3 Sud (pagina CUP) dice che le richieste sul percorso di tutela vanno all'URP.",
-    "Screening: nelle copie del 23/10/2026 non c'è il numero dello screening; messa in «pagine» la pagina screening dell'ASL.",
-    "La notizia della Regione Campania sulle liste d'attesa (dati del monitoraggio) risponde 404 al server (copia del 23/10/2026): tolta da «pagine»."
+    "La notizia della Regione Campania sulle liste d'attesa (dati del monitoraggio) risponde 404 al server (copia del 23/10/2026): tolta da «pagine».",
+    "Medico di famiglia (copia del 01/11/2026 della pagina della Regione «Scelta e revoca del Medico»): online sul portale Sinfonia o con l'app Campania in Salute, oppure all'ufficio Assistenza sanitaria di base del distretto.",
+    "Screening (copia del 01/11/2026): messo il numero della pagina «Screening oncologici» dell'ASL.",
+    "Liste d'attesa (01/11/2026): nessuna pagina ufficiale trovata col motore di ricerca su come chiedere il percorso di tutela. Liste d'attesa resta spento in Campania."
    ],
    "pagine": [
     {
      "tipo": "screening",
      "url": "https://www.aslcaserta.it/index.php/screening-oncologici/"
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "Puoi farlo online, nel portale «Salute del cittadino» della Regione (Sinfonia) o con l'app «Campania in Salute». Puoi anche andare all'ufficio Assistenza sanitaria di base del tuo distretto.",
+    "url": "https://www.regione.campania.it/node/32056",
+    "url_label": "Sito della Regione"
+   }
   },
   {
    "id": "napoli",
@@ -742,7 +796,10 @@
     "Zone (sub_areas, copie del 22/10/2026): Napoli 1 Centro (urpcentrale@aslnapoli1centro.it e PEC urpcentrale@pec.aslna1centro.it, pagina URP), Napoli 2 Nord (urp@aslnapoli2nord.it e PEC protocollo@pec.aslnapoli2nord.it, pagine URP e PUA), Napoli 3 Sud (relazionipubbliche@aslnapoli3sud.it, pagina URP; PEC protocollo@pec.aslnapoli3sud.it, pagine CUP e rubrica). In ogni zona phones e contacts sono quelli della sua ASL. Mancano i comuni di ogni ASL (sotto il pulsante «In quale zona?»): nelle copie non c'è un elenco dei comuni per distretto. Servono le pagine dei distretti delle tre ASL in «pagine».",
     "Screening (copie del 23/10/2026): per l'ASL Napoli 3 Sud la rubrica dà i numeri della UOC Screening e Promozione della Salute (seno 081 18436545, 081 18436544, 081 18436599; colon-retto 081 18436557, 081 18436505, 081 18436568): messi il primo di ognuno, nella zona Napoli 3. Per Napoli 1 Centro e Napoli 2 Nord messe in «pagine» le pagine screening.",
     "Percorso di tutela: la pagina CUP dell'ASL Napoli 3 Sud rimanda a www.aslnapoli3sud.it/liste-di-attesa; messa in «pagine» con la «Procedura Tutela» (PDF). Comuni delle zone: messe in «pagine» le pagine dei distretti delle tre ASL.",
-    "La notizia della Regione Campania sulle liste d'attesa (dati del monitoraggio) risponde 404 al server (copia del 23/10/2026): tolta da «pagine»."
+    "La notizia della Regione Campania sulle liste d'attesa (dati del monitoraggio) risponde 404 al server (copia del 23/10/2026): tolta da «pagine».",
+    "Medico di famiglia (copia del 01/11/2026 della pagina della Regione «Scelta e revoca del Medico»): online sul portale Sinfonia o con l'app Campania in Salute, oppure all'ufficio Assistenza sanitaria di base del distretto.",
+    "Screening e liste d'attesa (01/11/2026): messe in «pagine» le pagine del consultorio e della diagnostica per immagini dell'ASL Napoli 1 Centro, «Tempi di attesa» di Napoli 1 Centro, «Liste di attesa» e «Prenotazioni» e il sito screening di Napoli 2 Nord. Per Napoli 2 Nord la pagina screening copiata dà solo un numero WhatsApp (334 1126590) e l'email prenotazioniscreening@aslnapoli2nord.it.",
+    "Liste d'attesa per Napoli 3 Sud (Procedura Tutela, copia del 01/11/2026): la richiesta di inserimento nel percorso di garanzia (Allegato A) va alla UOC Relazioni con il Pubblico, con ricevuta della prenotazione CUP con la prima data, impegnativa, documento e tessera sanitaria. Da scrivere quando ci sono anche Napoli 1 e Napoli 2."
    ],
    "pagine": [
     {
@@ -776,6 +833,30 @@
     {
      "tipo": "comuni",
      "url": "https://www.aslnapoli3sud.it/en/l-azienda/chi-siamo"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.aslnapoli1centro.it/consultorio-ds29"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://www.aslnapoli1centro.it/diagnostica-per-immagini-ds24"
+    },
+    {
+     "tipo": "liste-attesa",
+     "url": "https://www.aslnapoli1centro.it/tempi-di-attesa"
+    },
+    {
+     "tipo": "liste-attesa",
+     "url": "https://www.aslnapoli2nord.it/trasparenza/liste-di-attesa/"
+    },
+    {
+     "tipo": "liste-attesa",
+     "url": "https://www.aslnapoli2nord.it/servizi/prenotazioni/"
+    },
+    {
+     "tipo": "screening",
+     "url": "https://screening.aslnapoli2nord.it/"
     }
    ],
    "sub_areas": [
@@ -844,7 +925,12 @@
        "verified": "2026-10-22",
        "proof": "pagina"
       }
-     ]
+     ],
+     "scelta_medico": {
+      "how": "Puoi farlo online, nel portale «Salute del cittadino» della Regione (Sinfonia) o con l'app «Campania in Salute». Puoi anche andare all'ufficio Assistenza sanitaria di base del tuo distretto.",
+      "url": "https://www.regione.campania.it/node/32056",
+      "url_label": "Sito della Regione"
+     }
     },
     {
      "id": "napoli2",
@@ -929,7 +1015,12 @@
        "verified": "2026-10-22",
        "proof": "pagina"
       }
-     ]
+     ],
+     "scelta_medico": {
+      "how": "Puoi farlo online, nel portale «Salute del cittadino» della Regione (Sinfonia) o con l'app «Campania in Salute». Puoi anche andare all'ufficio Assistenza sanitaria di base del tuo distretto.",
+      "url": "https://www.regione.campania.it/node/32056",
+      "url_label": "Sito della Regione"
+     }
     },
     {
      "id": "napoli3",
@@ -1009,9 +1100,19 @@
        "verified": "2026-10-23",
        "proof": "pagina"
       }
-     ]
+     ],
+     "scelta_medico": {
+      "how": "Puoi farlo online, nel portale «Salute del cittadino» della Regione (Sinfonia) o con l'app «Campania in Salute». Puoi anche andare all'ufficio Assistenza sanitaria di base del tuo distretto.",
+      "url": "https://www.regione.campania.it/node/32056",
+      "url_label": "Sito della Regione"
+     }
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "Puoi farlo online, nel portale «Salute del cittadino» della Regione (Sinfonia) o con l'app «Campania in Salute». Puoi anche andare all'ufficio Assistenza sanitaria di base del tuo distretto.",
+    "url": "https://www.regione.campania.it/node/32056",
+    "url_label": "Sito della Regione"
+   }
   },
   {
    "id": "salerno",
@@ -1163,7 +1264,10 @@
     "Percorso di tutela: nelle copie non c'è come chiederlo. Aggiunte a «pagine» le pagine «Liste di attesa» della Regione e delle ASL trovate col motore di ricerca. L'ASL Napoli 3 Sud (pagina CUP) dice che le richieste sul percorso di tutela vanno all'URP.",
     "Screening: nelle copie del 23/10/2026 non c'è il numero dello screening; messa in «pagine» la pagina screening dell'ASL.",
     "Percorso di tutela: la pagina Liste di attesa (copia del 23/10/2026) ha «Percorso di tutela Procedura - Istanza scaricabile» (file) ma non il suo indirizzo: da trovare e mettere in «pagine».",
-    "La notizia della Regione Campania sulle liste d'attesa (dati del monitoraggio) risponde 404 al server (copia del 23/10/2026): tolta da «pagine»."
+    "La notizia della Regione Campania sulle liste d'attesa (dati del monitoraggio) risponde 404 al server (copia del 23/10/2026): tolta da «pagine».",
+    "Medico di famiglia (copia del 01/11/2026 della pagina della Regione «Scelta e revoca del Medico»): online sul portale Sinfonia o con l'app Campania in Salute, oppure all'ufficio Assistenza sanitaria di base del distretto.",
+    "Liste d'attesa (01/11/2026): nessuna pagina ufficiale trovata col motore di ricerca su come chiedere il percorso di tutela. Liste d'attesa resta spento in Campania.",
+    "Screening: la pagina dello screening del colon-retto (copia del 01/11/2026) dà solo numeri dei distretti (Salerno città: 089 694319); manca un numero per tutta l'ASL. Prevenzione resta spento."
    ],
    "pagine": [
     {
@@ -1174,7 +1278,12 @@
      "tipo": "screening",
      "url": "https://www.aslsalerno.it/pagina2482_screening-colon-retto.html"
     }
-   ]
+   ],
+   "scelta_medico": {
+    "how": "Puoi farlo online, nel portale «Salute del cittadino» della Regione (Sinfonia) o con l'app «Campania in Salute». Puoi anche andare all'ufficio Assistenza sanitaria di base del tuo distretto.",
+    "url": "https://www.regione.campania.it/node/32056",
+    "url_label": "Sito della Regione"
+   }
   }
  ]
 }
