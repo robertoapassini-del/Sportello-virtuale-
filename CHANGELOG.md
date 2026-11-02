@@ -22,6 +22,9 @@ Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 ## 02/11/2026 — Toscana: prevenzione accesa
 - `data/regioni/toscana/asl.json`: numeri dello screening dell'Azienda USL Toscana Sud Est per Arezzo (0575 379138), Grosseto (0564 486486) e Siena (0577 536132), dalla copia del 01/11/2026 della pagina «Screening» (uslsudest.toscana.it/percorsi-assistenziali/screening). Le altre province avevano già il contatto.
 - `data/regioni/index.json`: Toscana, modulo `prevenzione` acceso.
+## 02/11/2026 — Marche: acceso il modulo prevenzione
+- `data/regioni/marche/asl.json`: AST Ascoli Piceno, contatto «screening» 800 586657 (dal lunedì al venerdì 12–14) dalla copia del 01/11/2026 della pagina «Screening oncologici» dell'AST (astap.marche.it). Ora tutte e cinque le AST hanno il numero dello screening. Nel `todo` l'Ufficio Presa in carico dell'AST Ascoli Piceno (pagina «Liste di attesa» dell'AST): liste d'attesa resta spento, manca lo stesso ufficio nelle altre AST.
+- `data/regioni/index.json`: Marche, acceso `prevenzione`.
 
 ## 02/11/2026 — Campania: medico di famiglia e cure palliative accesi
 - `data/regioni/campania/asl.json`: `scelta_medico` in ogni ASL e zona di Napoli dalla pagina della Regione «Scelta e revoca del Medico» (regione.campania.it/node/32056, copia del 01/11/2026): portale Sinfonia, app Campania in Salute o ufficio Assistenza sanitaria di base del distretto. Contatti «screening» di Avellino (0825 292029) e Caserta (800 984043, 0823 210545) dalle copie del 01/11/2026. Nuove pagine da copiare: screening di Benevento e Napoli 1 Centro, liste d'attesa di Napoli 1 Centro e Napoli 2 Nord.
