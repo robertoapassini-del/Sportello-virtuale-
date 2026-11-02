@@ -7,6 +7,9 @@ Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 - `data/regioni/index.json`: in Campania accesi `medico-famiglia` e `cure-palliative` (ogni ASL e zona ha email o PEC). Restano spenti `liste-attesa` (manca il percorso di tutela di Benevento, Caserta, Napoli 1, Napoli 2 e Salerno) e `prevenzione` (manca il numero dello screening di Benevento, Napoli 1, Napoli 2 e Salerno): il motivo è nei `todo`.
 ## 02/11/2026 — Emilia-Romagna: pagine da copiare per liste d'attesa e screening
 - `data/regioni/emilia-romagna/asl.json`, `pagine[]`: CUP e numero verde di Modena, CupTel e Sportello unico di Piacenza, CUP telefonico dell'AUSL di Bologna (liste d'attesa); pagine dei centri screening di Modena, Ferrara, Forlì, Cesena e Ravenna (prevenzione). Tolte 3 pagine che nella copia danno 404 (screening e liste d'attesa di Modena, screening di Reggio Emilia). Dopo la copia si riempiono i campi e si accendono i moduli.
+## 02/11/2026 — Veneto: accesi prevenzione, medico di famiglia, cure a casa, cartelle cliniche e cure palliative
+- `data/regioni/veneto/asl.json`: numeri dello screening di ULSS 1, 2, 5, 6, 7 e 8 (copie del 01/11/2026 delle pagine dello screening, proof «pagina»); `scelta_medico` dalla pagina «Servizi sanitari digitali» della Rete degli URP del Veneto (Fascicolo «Sanità Km zero» con SPID o CIE, app viviVeneto); due pagine dell'ULSS 8 in `pagine` per il percorso di tutela.
+- `data/regioni/index.json`: Veneto con prevenzione, medico-famiglia, assistenza-domiciliare, cartella-clinica, cure-palliative. Liste d'attesa resta spenta (il motivo è nel `todo`).
 
 ## 01/11/2026 — IndexNow: Bing rilegge subito le pagine cambiate
 - `3c0ecdf89c2ace8539d2e7f0c68d136f.txt`: il file della chiave IndexNow nella cartella del sito (la chiave è pubblica per scelta: prova che il sito è nostro).
