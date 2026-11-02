@@ -1,6 +1,6 @@
 {
  "regione": "lazio",
- "aggiornato": "2026-11-02T06:06:14.386Z",
+ "aggiornato": "2026-11-02T08:37:49.335Z",
  "pagine": [
   {
    "asl": "frosinone",
@@ -38,9 +38,20 @@
    "http": 200,
    "file": "frosinone/4d0ac27ae2c7.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "35d3aad05a7b0076371577c576aa4a5787bf713c630b0b4c273f9b2e68bbe902",
+   "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
    "caratteri": 2358,
-   "cambiata": true
+   "cambiata": false
+  },
+  {
+   "asl": "frosinone",
+   "url": "https://salutelazio.it/it/servizi/medico-di-famiglia",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "frosinone/6fd003cf961c.txt",
+   "titolo": "Medico di Famiglia | Scelta e Revoca – Salute Lazio",
+   "sha": "c314b238ab066d57e57346c4ca47d94a7ec1b3f2a9f0c19457ee7d9c05f26498",
+   "caratteri": 5570,
+   "cambiata": false
   },
   {
    "asl": "frosinone",
@@ -221,17 +232,6 @@
      "testo": "Iscrizione alla short list degli Avvocati Esterni"
     }
    ],
-   "cambiata": false
-  },
-  {
-   "asl": "frosinone",
-   "url": "https://salutelazio.it/it/servizi/medico-di-famiglia",
-   "controllata": "2026-11-02",
-   "http": 200,
-   "file": "frosinone/6fd003cf961c.txt",
-   "titolo": "Medico di Famiglia | Scelta e Revoca – Salute Lazio",
-   "sha": "c314b238ab066d57e57346c4ca47d94a7ec1b3f2a9f0c19457ee7d9c05f26498",
-   "caratteri": 5570,
    "cambiata": false
   },
   {
@@ -465,6 +465,17 @@
   },
   {
    "asl": "latina",
+   "url": "https://salutelazio.it/it/servizi/medico-di-famiglia",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "latina/6fd003cf961c.txt",
+   "titolo": "Medico di Famiglia | Scelta e Revoca – Salute Lazio",
+   "sha": "c314b238ab066d57e57346c4ca47d94a7ec1b3f2a9f0c19457ee7d9c05f26498",
+   "caratteri": 5570,
+   "cambiata": false
+  },
+  {
+   "asl": "latina",
    "url": "https://www.ausl.latina.it/contatti",
    "controllata": "2026-11-02",
    "http": 200,
@@ -658,17 +669,6 @@
   },
   {
    "asl": "latina",
-   "url": "https://salutelazio.it/it/servizi/medico-di-famiglia",
-   "controllata": "2026-11-02",
-   "http": 200,
-   "file": "latina/6fd003cf961c.txt",
-   "titolo": "Medico di Famiglia | Scelta e Revoca – Salute Lazio",
-   "sha": "c314b238ab066d57e57346c4ca47d94a7ec1b3f2a9f0c19457ee7d9c05f26498",
-   "caratteri": 5570,
-   "cambiata": false
-  },
-  {
-   "asl": "latina",
    "url": "https://www.ausl.latina.it/comefare/cf-sceltamedico",
    "controllata": "2026-11-02",
    "http": 200,
@@ -853,8 +853,8 @@
    "http": 200,
    "file": "rieti/1ca932fcd676.txt",
    "titolo": "HomePage – ASL Rieti",
-   "sha": "edd01ded37b4d6c5891901361a7c8d35774f66f04e58f081d749cb3a07cec331",
-   "caratteri": 13839,
+   "sha": "8be1d9429fc46b13e001748ff34a15e200f2e5df2490230e0f29969f18d060f7",
+   "caratteri": 14093,
    "link_pdf": [
     {
      "url": "https://www.asl.rieti.it/wp-content/uploads/2025/01/Brochure_dimissione_A4__GIUSTIFICATO__1_.pdf",
@@ -873,7 +873,7 @@
      "testo": "Raccomandazioni in caso di mancata potabilità dell’acqua per uso domestico"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "rieti",
@@ -948,6 +948,17 @@
      "testo": "Deliberazione 08 Giugno 2021, n.341 – Linee Guida Regionali per il riconoscimento del Caregiver Familiare"
     }
    ],
+   "cambiata": false
+  },
+  {
+   "asl": "rieti",
+   "url": "https://salutelazio.it/it/servizi/medico-di-famiglia",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "rieti/6fd003cf961c.txt",
+   "titolo": "Medico di Famiglia | Scelta e Revoca – Salute Lazio",
+   "sha": "c314b238ab066d57e57346c4ca47d94a7ec1b3f2a9f0c19457ee7d9c05f26498",
+   "caratteri": 5570,
    "cambiata": false
   },
   {
@@ -1314,23 +1325,6 @@
   },
   {
    "asl": "rieti",
-   "url": "https://salutelazio.it/it/servizi/medico-di-famiglia",
-   "controllata": "2026-11-02",
-   "http": 200,
-   "file": "rieti/6fd003cf961c.txt",
-   "titolo": "Medico di Famiglia | Scelta e Revoca – Salute Lazio",
-   "sha": "c314b238ab066d57e57346c4ca47d94a7ec1b3f2a9f0c19457ee7d9c05f26498",
-   "caratteri": 5570,
-   "cambiata": false
-  },
-  {
-   "asl": "rieti",
-   "url": "https://www.asl.rieti.it/come-fare-per/scegliere-il-medico-di-base/pediatra",
-   "controllata": "2026-11-02",
-   "http": 404
-  },
-  {
-   "asl": "rieti",
    "url": "https://www.asl.rieti.it/wp-content/uploads/2025/03/All._1_Domanda_riconoscimento_caregiver_DGR-751-03-10-2024-AllegatoA1-.pdf",
    "controllata": "2026-11-02",
    "da_pagina": "https://www.asl.rieti.it/aiuto-al-cittadino/pua-punto-unico-di-accesso/",
@@ -1514,9 +1508,21 @@
    "http": 200,
    "file": "roma/e0d930024e6e.txt",
    "titolo": "Punto Unico di Accesso (PUA)",
-   "sha": "885d352602faa57081b157f95fcde5ddaa1cda5f99a7926b2bab17a485d8d8eb",
+   "sha": "c99cd1fe071f6752dc86179f25662c83a2d3cf46d5104315f6ab92e0705fed0f",
    "caratteri": 22475,
    "link_pdf": [
+    {
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_Tagalog.pdf",
+     "testo": "GUIDA SUI SERVIZI SOCIALI E SANITARI PER LA DISABILITÀ"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_-_Bangla.pdf",
+     "testo": "LEGGE 104/92"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_arabo.pdf",
+     "testo": "ЗАКОН 104/92"
+    },
     {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_Ucraino.pdf",
      "testo": "১০৪/৯২ আইন"
@@ -1542,10 +1548,6 @@
      "testo": "INDEMNIZAȚIA LUNARĂ DE FRECVENȚĂ"
     },
     {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_-Spagnolo_CORRETTO.pdf",
-     "testo": "قانون 104 / 92"
-    },
-    {
      "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_arabo.pdf",
      "testo": "BUWANANG BENEPISYO PARA SA MAY KAPANSANAN"
     },
@@ -1558,19 +1560,22 @@
      "testo": "SUBSIDIO MENSUAL DE FRECUENCIA"
     },
     {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_Tagalog.pdf",
-     "testo": "GUIDA SUI SERVIZI SOCIALI E SANITARI PER LA DISABILITÀ"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_-_Bangla.pdf",
-     "testo": "LEGGE 104/92"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_arabo.pdf",
-     "testo": "ЗАКОН 104/92"
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_-Spagnolo_CORRETTO.pdf",
+     "testo": "قانون 104 / 92"
     }
    ],
    "cambiata": true
+  },
+  {
+   "asl": "roma",
+   "url": "https://salutelazio.it/it/servizi/medico-di-famiglia",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "roma/6fd003cf961c.txt",
+   "titolo": "Medico di Famiglia | Scelta e Revoca – Salute Lazio",
+   "sha": "c314b238ab066d57e57346c4ca47d94a7ec1b3f2a9f0c19457ee7d9c05f26498",
+   "caratteri": 5570,
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -1872,7 +1877,7 @@
    "http": 200,
    "file": "roma/2b46e5d8fe38.txt",
    "titolo": "ASL Roma 2 - Punto Unico di Accesso - PUA",
-   "sha": "1f7e7c14db4bc193bc0a1ce8dc318d9faf428b7bb193c525ca4a742a32cee782",
+   "sha": "c837b2967cf95e13381fef829596fbe0bf76e18dadea3eaba3ef53b07824242c",
    "caratteri": 11883,
    "email_nascoste": 11,
    "cambiata": true
@@ -1943,7 +1948,7 @@
    "http": 200,
    "file": "roma/3feb23bab29f.txt",
    "titolo": "ASL Roma 2 - UOSD Coordinamento Screening",
-   "sha": "fc316753ed3a049f44d5ccc06573da6d40976987fe72a5d75e0aa82bbed4513a",
+   "sha": "0d780e5da56f01a7bf21b2bd2e98fc16fb34adecab59f7b50def9a58ce4a38bb",
    "caratteri": 8743,
    "email_nascoste": 3,
    "cambiata": true
@@ -2035,7 +2040,7 @@
    "http": 200,
    "file": "roma/7e7cbafb32a1.txt",
    "titolo": "15.04.05 Liste di attesa",
-   "sha": "5460d4a70056ba1dff2265c0896507f1a3dd7dcd4c69532c94bbbf34b17de047",
+   "sha": "76ace72a6f793c0e7ba3248f58a83262f1bcb968847c31db7e03dff6f8497036",
    "caratteri": 8673,
    "link_pdf": [
     {
@@ -2390,17 +2395,6 @@
    "sha": "e6148ecac7756cebef9704748e6b8aee991265e62dd8c4a14964d9b57e9bb4c4",
    "caratteri": 8848,
    "pdf": true,
-   "cambiata": false
-  },
-  {
-   "asl": "roma",
-   "url": "https://salutelazio.it/it/servizi/medico-di-famiglia",
-   "controllata": "2026-11-02",
-   "http": 200,
-   "file": "roma/6fd003cf961c.txt",
-   "titolo": "Medico di Famiglia | Scelta e Revoca – Salute Lazio",
-   "sha": "c314b238ab066d57e57346c4ca47d94a7ec1b3f2a9f0c19457ee7d9c05f26498",
-   "caratteri": 5570,
    "cambiata": false
   },
   {
@@ -2780,6 +2774,17 @@
   },
   {
    "asl": "viterbo",
+   "url": "https://salutelazio.it/it/servizi/medico-di-famiglia",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "viterbo/6fd003cf961c.txt",
+   "titolo": "Medico di Famiglia | Scelta e Revoca – Salute Lazio",
+   "sha": "c314b238ab066d57e57346c4ca47d94a7ec1b3f2a9f0c19457ee7d9c05f26498",
+   "caratteri": 5570,
+   "cambiata": false
+  },
+  {
+   "asl": "viterbo",
    "url": "https://www.asl.vt.it/azienda",
    "controllata": "2026-11-02",
    "http": 200,
@@ -2954,17 +2959,6 @@
      "testo": "Cookie Policy"
     }
    ],
-   "cambiata": false
-  },
-  {
-   "asl": "viterbo",
-   "url": "https://salutelazio.it/it/servizi/medico-di-famiglia",
-   "controllata": "2026-11-02",
-   "http": 200,
-   "file": "viterbo/6fd003cf961c.txt",
-   "titolo": "Medico di Famiglia | Scelta e Revoca – Salute Lazio",
-   "sha": "c314b238ab066d57e57346c4ca47d94a7ec1b3f2a9f0c19457ee7d9c05f26498",
-   "caratteri": 5570,
    "cambiata": false
   },
   {
@@ -3409,7 +3403,7 @@
    "http": 200,
    "file": "asl-roma2/2e0f163ef6a3.txt",
    "titolo": "ASL Roma 2 - Guardia Medica",
-   "sha": "86467cc873e3d2302d0d88f2673c00d2a8a918a525e47d09e8fe4d203ec619ff",
+   "sha": "13c608de822cc62706e307bafc7ce461b23e3a124d6fb8621f90dc6942dacf3c",
    "caratteri": 8091,
    "cambiata": true
   },
@@ -3675,9 +3669,9 @@
    "finale": "https://www.aslroma6.it/",
    "file": "asl-roma6/6fb4776a02ad.txt",
    "titolo": "Home - ASL Roma 6",
-   "sha": "20f56cdba6f2086d948b6acf086d693213e4196a58c8c96c0c8a0609cdf4f315",
-   "caratteri": 6226,
-   "cambiata": false
+   "sha": "d3b4b970b5d63e3a52a7e7aa2f9dbd9ca869b625a4a5a9e596752722815653b7",
+   "caratteri": 6211,
+   "cambiata": true
   },
   {
    "asl": "asl-roma6",
@@ -3903,8 +3897,8 @@
    "finale": "https://www.asl.rieti.it/",
    "file": "asl-rieti/4a05a5747491.txt",
    "titolo": "HomePage – ASL Rieti",
-   "sha": "edd01ded37b4d6c5891901361a7c8d35774f66f04e58f081d749cb3a07cec331",
-   "caratteri": 13839,
+   "sha": "8be1d9429fc46b13e001748ff34a15e200f2e5df2490230e0f29969f18d060f7",
+   "caratteri": 14093,
    "link_pdf": [
     {
      "url": "https://www.asl.rieti.it/wp-content/uploads/2025/01/Brochure_dimissione_A4__GIUSTIFICATO__1_.pdf",
@@ -3923,7 +3917,7 @@
      "testo": "Raccomandazioni in caso di mancata potabilità dell’acqua per uso domestico"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "asl-rieti",
@@ -4091,7 +4085,7 @@
    "http": 200,
    "file": "ticket-pronto-soccorso/6f2a28e1087b.txt",
    "titolo": "ASL Roma 2 - UOC Medicina d'Urgenza e Pronto Soccorso",
-   "sha": "ae4ce3d3bb26b6638b3574253f7214c7a4a80ea1e1ca0466032fb0a885580ca4",
+   "sha": "c64c92024b8e2979c309041cb5c4dc523951b862721125b1924a3f2ceb79dc42",
    "caratteri": 14507,
    "email_nascoste": 4,
    "cambiata": true

@@ -1,6 +1,6 @@
 {
  "regione": "abruzzo",
- "aggiornato": "2026-11-02T05:33:58.301Z",
+ "aggiornato": "2026-11-02T08:03:52.460Z",
  "pagine": [
   {
    "asl": "chieti",
@@ -404,6 +404,17 @@
   },
   {
    "asl": "chieti",
+   "url": "https://www.asl2abruzzo.it/partecipa-screening-oncologici-gratuiti/",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "chieti/4a9137f35bb5.txt",
+   "titolo": "Partecipa agli screening oncologici gratuiti della Asl | ASL2 Abruzzo",
+   "sha": "f6c3acb6331e65d78125a44f45fbc5a60e4e52c7937066a245672225dc4d79ce",
+   "caratteri": 4533,
+   "cambiata": false
+  },
+  {
+   "asl": "chieti",
    "url": "https://www.asl2abruzzo.it/organizzazione/funzioni-di-staff/servizio-governo-delle-liste-dattesa-e-dei-sistemi-di-prenotazione/liste-di-attesa/",
    "controllata": "2026-11-02",
    "http": 200,
@@ -433,17 +444,6 @@
      "testo": "Ospedale VASTO anno 2025"
     }
    ],
-   "cambiata": false
-  },
-  {
-   "asl": "chieti",
-   "url": "https://www.asl2abruzzo.it/partecipa-screening-oncologici-gratuiti/",
-   "controllata": "2026-11-02",
-   "http": 200,
-   "file": "chieti/4a9137f35bb5.txt",
-   "titolo": "Partecipa agli screening oncologici gratuiti della Asl | ASL2 Abruzzo",
-   "sha": "f6c3acb6331e65d78125a44f45fbc5a60e4e52c7937066a245672225dc4d79ce",
-   "caratteri": 4533,
    "cambiata": false
   },
   {
@@ -1179,6 +1179,27 @@
   },
   {
    "asl": "pescara",
+   "url": "https://www.asl.pe.it/DettaglioStruttura.jsp?id=108&idSezione=11",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "pescara/4c4cc7eabd07.txt",
+   "titolo": "Screening Oncologici - Azienda USL di Pescara",
+   "sha": "97d644e836e48d63d6d5696e4842dc6ee9b4a8f6569f9996782350193ce3cf8a",
+   "caratteri": 6736,
+   "link_pdf": [
+    {
+     "url": "https://www.asl.pe.it/allegati/percorsi/cittadini/screening-oncologici/Schema%20cervice%20per%20sito%20ASL%202023%20pdf.pdf",
+     "testo": "Percorso cervice"
+    },
+    {
+     "url": "https://www.asl.pe.it/allegati/percorsi/cittadini/screening-oncologici/Link%20Gisci%20per%20stranieri%20per%20sito%20ASL%202023.pdf",
+     "testo": "Info in lingue straniere sul Percorso cervice"
+    }
+   ],
+   "cambiata": false
+  },
+  {
+   "asl": "pescara",
    "url": "https://www.asl.pe.it/Sezione.jsp?idSezione=1105",
    "controllata": "2026-11-02",
    "http": 200,
@@ -1206,27 +1227,6 @@
     {
      "url": "https://www.asl.pe.it/allegati/SCHEDA%20ISTANZA%20PERCORSO%20DI%20TUTELA.pdf",
      "testo": "Modulistica per l&rsquo;attivazione del percorso di tutela"
-    }
-   ],
-   "cambiata": false
-  },
-  {
-   "asl": "pescara",
-   "url": "https://www.asl.pe.it/DettaglioStruttura.jsp?id=108&idSezione=11",
-   "controllata": "2026-11-02",
-   "http": 200,
-   "file": "pescara/4c4cc7eabd07.txt",
-   "titolo": "Screening Oncologici - Azienda USL di Pescara",
-   "sha": "97d644e836e48d63d6d5696e4842dc6ee9b4a8f6569f9996782350193ce3cf8a",
-   "caratteri": 6736,
-   "link_pdf": [
-    {
-     "url": "https://www.asl.pe.it/allegati/percorsi/cittadini/screening-oncologici/Schema%20cervice%20per%20sito%20ASL%202023%20pdf.pdf",
-     "testo": "Percorso cervice"
-    },
-    {
-     "url": "https://www.asl.pe.it/allegati/percorsi/cittadini/screening-oncologici/Link%20Gisci%20per%20stranieri%20per%20sito%20ASL%202023.pdf",
-     "testo": "Info in lingue straniere sul Percorso cervice"
     }
    ],
    "cambiata": false
@@ -1372,32 +1372,6 @@
   },
   {
    "asl": "pescara",
-   "url": "https://www.asl.pe.it/allegati/Comunicazione%20dell'attivazione%20del%20percorso%20di%20tutela%20solo%20per%20i%20soli%20residenti%20nell'ASL%20di%20Pescara%20.pdf",
-   "controllata": "2026-11-02",
-   "da_pagina": "https://www.asl.pe.it/Sezione.jsp?idSezione=1105",
-   "http": 200,
-   "file": "pescara/83e52bb951b7.txt",
-   "titolo": "ASL di Pescara",
-   "sha": "0d572a0463ba472974cfd186d3372205485f2bd76b0c70bd75fb55515c5af81f",
-   "caratteri": 948,
-   "pdf": true,
-   "cambiata": false
-  },
-  {
-   "asl": "pescara",
-   "url": "https://www.asl.pe.it/allegati/SCHEDA%20ISTANZA%20PERCORSO%20DI%20TUTELA.pdf",
-   "controllata": "2026-11-02",
-   "da_pagina": "https://www.asl.pe.it/Sezione.jsp?idSezione=1105",
-   "http": 200,
-   "file": "pescara/d0ee55379dcf.txt",
-   "titolo": "Modulo Reclamo, rilievo, suggerimento, proposta",
-   "sha": "cc528d4ef53151f8d5b17b46aa31d146ac075ffba05b129e6e2f432c3a4b74d3",
-   "caratteri": 4900,
-   "pdf": true,
-   "cambiata": false
-  },
-  {
-   "asl": "pescara",
    "url": "https://www.asl.pe.it/allegati/percorsi/cittadini/screening-oncologici/Schema%20cervice%20per%20sito%20ASL%202023%20pdf.pdf",
    "controllata": "2026-11-02",
    "da_pagina": "https://www.asl.pe.it/DettaglioStruttura.jsp?id=108&idSezione=11",
@@ -1423,14 +1397,40 @@
    "cambiata": false
   },
   {
+   "asl": "pescara",
+   "url": "https://www.asl.pe.it/allegati/Comunicazione%20dell'attivazione%20del%20percorso%20di%20tutela%20solo%20per%20i%20soli%20residenti%20nell'ASL%20di%20Pescara%20.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.asl.pe.it/Sezione.jsp?idSezione=1105",
+   "http": 200,
+   "file": "pescara/83e52bb951b7.txt",
+   "titolo": "ASL di Pescara",
+   "sha": "0d572a0463ba472974cfd186d3372205485f2bd76b0c70bd75fb55515c5af81f",
+   "caratteri": 948,
+   "pdf": true,
+   "cambiata": false
+  },
+  {
+   "asl": "pescara",
+   "url": "https://www.asl.pe.it/allegati/SCHEDA%20ISTANZA%20PERCORSO%20DI%20TUTELA.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.asl.pe.it/Sezione.jsp?idSezione=1105",
+   "http": 200,
+   "file": "pescara/d0ee55379dcf.txt",
+   "titolo": "Modulo Reclamo, rilievo, suggerimento, proposta",
+   "sha": "cc528d4ef53151f8d5b17b46aa31d146ac075ffba05b129e6e2f432c3a4b74d3",
+   "caratteri": 4900,
+   "pdf": true,
+   "cambiata": false
+  },
+  {
    "asl": "teramo",
    "url": "https://www.aslteramo.it/",
    "controllata": "2026-11-02",
    "http": 200,
    "file": "teramo/05b30d65a47c.txt",
    "titolo": "ASL Teramo",
-   "sha": "43fecc860d88a23113f72c0ab5e17a28485bcdc49df85e14c3d4d414dbc65963",
-   "caratteri": 4488,
+   "sha": "43311ad16b2adccfdeb02eccfbd9d16d142dd89a3ef07c7416ffcbd10d43fdff",
+   "caratteri": 4489,
    "link_pdf": [
     {
      "url": "https://www.aslteramo.it/wp-content/uploads/2020/01/Organigramma-Aziendale-2020.pdf",
@@ -1450,7 +1450,7 @@
    "http": 200,
    "file": "teramo/1a6c122acb81.txt",
    "titolo": "ASL Teramo | Guardia medica",
-   "sha": "b565aaee159e0fed327168c0f46c171fee91dfd5f417345161203ac95eb97bf2",
+   "sha": "692ccedb98e73f66979bb9d458285ea896fe0c7e94d48cab10eef4327d281ed9",
    "caratteri": 3898,
    "link_pdf": [
     {
@@ -1471,7 +1471,7 @@
    "http": 200,
    "file": "teramo/0b60fd7c1527.txt",
    "titolo": "Cure Domiciliari – ADI – Azienda Sanitaria Locale di Teramo",
-   "sha": "f8b79d3560bf38b634c78658b48a08862f4dd52bfd629ff2b582030acab7373a",
+   "sha": "3c089e2886209f49a0156ab3b127f30ae2ef47b8b645ebc201beb1ad1542f60d",
    "caratteri": 9214,
    "link_pdf": [
     {
@@ -1544,8 +1544,8 @@
    "http": 200,
    "file": "teramo/b5041cabb133.txt",
    "titolo": "Contatti – Azienda Sanitaria Locale di Teramo",
-   "sha": "d6a58c1a90cc7f6012a6c8e0c949e987bc627dd4be257eadf5f6c02402e6d6e1",
-   "caratteri": 4551,
+   "sha": "68a10330c685404a54e6fc3936651908120bbdf4bf8793698c3fcf7af65ea638",
+   "caratteri": 4552,
    "link_pdf": [
     {
      "url": "https://www.aslteramo.it/wp-content/uploads/2020/01/Organigramma-Aziendale-2020.pdf",
@@ -1565,7 +1565,7 @@
    "http": 200,
    "file": "teramo/f58daad63724.txt",
    "titolo": "ASL Teramo | Come fare per… Cittadini Utenti",
-   "sha": "194520c3dce2ef8bae91d027cfc2ebfbbc55ef2dccc34b264e8fdfbf05cbb319",
+   "sha": "c833b50c7d2dbb4b10dbe813b10c0a53ee07404068f220f6362920c0ecfaf908",
    "caratteri": 50330,
    "link_pdf": [
     {
@@ -1634,7 +1634,7 @@
    "http": 200,
    "file": "teramo/5cf8b65c79d1.txt",
    "titolo": "“Sos liste di attesa”, da oggi al via un nuovo servizio – Azienda Sanitaria Locale di Teramo",
-   "sha": "abf9ef2f48184bb97d4c29a397a3b03c9e8dfc1ffacac12eb7ae70664147c4b1",
+   "sha": "b8c43f6107316e42f8af73d16df139c085e142cc1b7a72383e5d222be6952c23",
    "caratteri": 5888,
    "link_pdf": [
     {
@@ -2012,7 +2012,7 @@
    "http": 200,
    "file": "asl-teramo/6f4b31c72c79.txt",
    "titolo": "UFFICIO RELAZIONI CON IL PUBBLICO (aggiornato 10.2026) – Azienda Sanitaria Locale di Teramo",
-   "sha": "a4f01679e23342be2833cace8c275527e71382b4a82222824860afa6217ae491",
+   "sha": "be6868d444b9365e39fab1ec14f7cde9ed5ec4f793f1bdb38b8c055d6be2965e",
    "caratteri": 4976,
    "link_pdf": [
     {
@@ -2057,7 +2057,7 @@
    "http": 200,
    "file": "asl-teramo/92c5ebe913c0.txt",
    "titolo": "Prenotazioni – Azienda Sanitaria Locale di Teramo",
-   "sha": "e346f5186a7c487a1ff95992f1ede203f2de6af8d206d64b7f86c77132796083",
+   "sha": "8a5aae2bc674806fcb08955c9c003375b01b66183b1a70f93fbefa39f74f9c32",
    "caratteri": 2310,
    "link_pdf": [
     {
@@ -2078,7 +2078,7 @@
    "http": 200,
    "file": "asl-teramo/ecdeb416f17c.txt",
    "titolo": "Informazioni sui CUP – Azienda Sanitaria Locale di Teramo",
-   "sha": "798c584b84424d174e320e130f54aba6f4c2312abf6010f128d5347dd7892e31",
+   "sha": "13e0471f6d440a8e3d05475247088db19b109c12333d4dbda7819cd8a9e3c4e8",
    "caratteri": 3843,
    "link_pdf": [
     {
@@ -2099,7 +2099,7 @@
    "http": 200,
    "file": "asl-teramo/bf79a3a9ebb6.txt",
    "titolo": "118, Pronto Soccorso e Guardia Medica (come attivare i Servizi di Urgenza/Emergenza Sanitaria) – Azienda Sanitaria Locale di Teramo",
-   "sha": "8fc0d9d8e5f32f23b42f2fdcbd926dd3b100d41d0be8055cd5a7f73248043349",
+   "sha": "4984064e6f0de74be0c2ea86331a59a39f5d207bca503deaabd473ff1433b1b5",
    "caratteri": 3361,
    "link_pdf": [
     {
@@ -2120,7 +2120,7 @@
    "http": 200,
    "file": "ticket-pronto-soccorso/3db9dee43359.txt",
    "titolo": "PRONTO SOCCORSO Teramo – Azienda Sanitaria Locale di Teramo",
-   "sha": "c7f6011c1d994a3da3b86f8c79415fd75277fd686502a881d0979a43e74a5ae2",
+   "sha": "8f99a692f6ed0e8c6d0a8e86c4bff790d71950bfb228fd7a9f4ac13f08d8c94e",
    "caratteri": 6338,
    "link_pdf": [
     {

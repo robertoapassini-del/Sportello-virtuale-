@@ -1,6 +1,6 @@
 {
  "regione": "lombardia",
- "aggiornato": "2026-11-02T06:29:10.014Z",
+ "aggiornato": "2026-11-02T09:02:53.940Z",
  "pagine": [
   {
    "asl": "bergamo",
@@ -33,6 +33,17 @@
    "titolo": "ASSISTENZA DOMICILIARE | ATS BERGAMO",
    "sha": "7d79156570476f0ae3ed14b2e54bf2486e927956ab9ddb329d2406b869123d23",
    "caratteri": 2752,
+   "cambiata": false
+  },
+  {
+   "asl": "bergamo",
+   "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "bergamo/0d021fb4d437.txt",
+   "titolo": "Cambio medico - Regione Lombardia",
+   "sha": "dd2f8de25df138cdca8512eaa66149826582818241cb5fd0d25eef19f63ef4c7",
+   "caratteri": 11846,
    "cambiata": false
   },
   {
@@ -159,8 +170,8 @@
    "http": 200,
    "file": "bergamo/1f85c98b9e36.txt",
    "titolo": "Home Page | ASST Papa Giovanni XXIII",
-   "sha": "387e515f9b56f4238acd698e4525a4c4786381b24719eb1a7a44fbe93c74d38e",
-   "caratteri": 322025,
+   "sha": "df36d1ce16642eeaa78da9a0fb364b8954e7e2c49f972f73c17498063ff469c1",
+   "caratteri": 321650,
    "cambiata": true
   },
   {
@@ -508,6 +519,17 @@
   },
   {
    "asl": "brescia",
+   "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "brescia/0d021fb4d437.txt",
+   "titolo": "Cambio medico - Regione Lombardia",
+   "sha": "dd2f8de25df138cdca8512eaa66149826582818241cb5fd0d25eef19f63ef4c7",
+   "caratteri": 11846,
+   "cambiata": false
+  },
+  {
+   "asl": "brescia",
    "url": "https://www.ats-brescia.it/contatti",
    "controllata": "2026-11-02",
    "http": 200,
@@ -524,9 +546,9 @@
    "http": 200,
    "file": "brescia/181e293b749f.txt",
    "titolo": "Contatti | ATS MONTAGNA",
-   "sha": "23c960b82ea50363772f731c60442cfe0ac4af8c7b066a4e12cd6b7e94f3bed3",
-   "caratteri": 2038,
-   "cambiata": false
+   "sha": "fe9e4bd18fc474c7fe609e8b4f1e56ca7cd5e4c3a2e713dd83a6e9dd1043c584",
+   "caratteri": 2055,
+   "cambiata": true
   },
   {
    "asl": "brescia",
@@ -1066,7 +1088,7 @@
    "certificato": "non valido",
    "file": "brescia/24859285974c.txt",
    "titolo": "Prenotazioni di visite ed esami | AZIENDA SOCIO-SANITARIA TERRITORIALE DEL GARDA",
-   "sha": "35139f25f56f1d0f0856bccbad30d425b84b1d8e610154153af0999c1307c567",
+   "sha": "8327c25a8d5ac1baa7721d961f29dc1bc1eb018acf4bf42448b229f29355ca10",
    "caratteri": 6827,
    "cambiata": true
   },
@@ -1163,6 +1185,43 @@
     }
    ],
    "cambiata": false
+  },
+  {
+   "asl": "brescia",
+   "url": "https://www.ats-brescia.it/screening-aderisci-alla-prevenzione",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "brescia/0b5a5d95be7c.txt",
+   "titolo": "Screening - Aderisci alla prevenzione | Agenzia di Tutela della Salute di Brescia",
+   "sha": "ac242a395d0e5211caaa6322620d6297b588c0c383524b3ca82f33fa22018fa9",
+   "caratteri": 3872,
+   "link_pdf": [
+    {
+     "url": "https://www.ats-brescia.it/system/files/pagina_standard/files/655/22453/21082025_Locandina%202025%20screening%20con%20qr%20code.pdf",
+     "testo": "Locandina ITALIANO"
+    },
+    {
+     "url": "https://www.ats-brescia.it/system/files/pagina_standard/files/655/18023/Cartolina%20Screening%202025%20A5%20%282%29.pdf",
+     "testo": "Cartolina ITALIANO"
+    },
+    {
+     "url": "https://www.ats-brescia.it/system/files/pagina_standard/files/655/21899/INGLESE%20Cartolina%20Screening%202025%20A5%20%281%29.pdf",
+     "testo": "Cartolina INGLESE"
+    },
+    {
+     "url": "https://www.ats-brescia.it/system/files/pagina_standard/files/655/21900/FRANCESE%20Cartolina%20Screening%202025%20A5.pdf",
+     "testo": "Cartolina FRANCESE"
+    },
+    {
+     "url": "https://www.ats-brescia.it/system/files/pagina_standard/files/655/21901/ARABO%20Cartolina%20Screening%202025%20A5%20%281%29.pdf",
+     "testo": "Cartolina ARABO"
+    },
+    {
+     "url": "https://www.ats-brescia.it/system/files/pagina_standard/files/655/26848/Locandina%20screening%20Regione%20Lombardia.pdf",
+     "testo": "Locandina screening Regione Lombardia"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "brescia",
@@ -1309,6 +1368,71 @@
    "cambiata": false
   },
   {
+   "asl": "brescia",
+   "url": "https://www.ats-brescia.it/system/files/pagina_standard/files/655/22453/21082025_Locandina%202025%20screening%20con%20qr%20code.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.ats-brescia.it/screening-aderisci-alla-prevenzione",
+   "http": 200,
+   "file": "brescia/bfd28e3f7f5e.txt",
+   "titolo": "Copia di locandina 2025 screening con qr code",
+   "sha": "2743ba0f30bb2062966b2a1998d4c8d927ba4b12d8966b1034cda5b8f79187c2",
+   "caratteri": 1782,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "brescia",
+   "url": "https://www.ats-brescia.it/system/files/pagina_standard/files/655/18023/Cartolina%20Screening%202025%20A5%20%282%29.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.ats-brescia.it/screening-aderisci-alla-prevenzione",
+   "http": 200,
+   "file": "brescia/78151402e3ff.txt",
+   "titolo": "Cartolina Screening 2025 A5",
+   "sha": "7bd59e7650c2d16d5e06ce839f3f36625648109742d5452b2947f645d8847e00",
+   "caratteri": 1286,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "brescia",
+   "url": "https://www.ats-brescia.it/system/files/pagina_standard/files/655/21899/INGLESE%20Cartolina%20Screening%202025%20A5%20%281%29.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.ats-brescia.it/screening-aderisci-alla-prevenzione",
+   "http": 200,
+   "file": "brescia/4615e83b8189.txt",
+   "titolo": "INGLESE Cartolina Screening 2025 A5",
+   "sha": "340017f9a73afa956a2b6cd5d3c36005dadd9f5bd7a6889c73f0ca77ddba0837",
+   "caratteri": 1376,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "brescia",
+   "url": "https://www.ats-brescia.it/system/files/pagina_standard/files/655/21900/FRANCESE%20Cartolina%20Screening%202025%20A5.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.ats-brescia.it/screening-aderisci-alla-prevenzione",
+   "http": 200,
+   "file": "brescia/797d3a535082.txt",
+   "titolo": "FRANCESE Cartolina Screening 2025 A5",
+   "sha": "14a23459cc0523cc5c6a32988742683dd9c98b376e6a0974665f5f1fb5ca7ede",
+   "caratteri": 1408,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "brescia",
+   "url": "https://www.ats-brescia.it/system/files/pagina_standard/files/655/21901/ARABO%20Cartolina%20Screening%202025%20A5%20%281%29.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.ats-brescia.it/screening-aderisci-alla-prevenzione",
+   "http": 200,
+   "file": "brescia/9c482ea5c1a1.txt",
+   "titolo": "ARABO Cartolina Screening 2025 A5",
+   "sha": "984fe178c71c54b8ce265b981422e10467be0073d409933156f0d0f0bab41c93",
+   "caratteri": 1424,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
    "asl": "como",
    "url": "https://www.ats-insubria.it/",
    "controllata": "2026-11-02",
@@ -1343,6 +1467,17 @@
   },
   {
    "asl": "como",
+   "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "como/0d021fb4d437.txt",
+   "titolo": "Cambio medico - Regione Lombardia",
+   "sha": "dd2f8de25df138cdca8512eaa66149826582818241cb5fd0d25eef19f63ef4c7",
+   "caratteri": 11846,
+   "cambiata": false
+  },
+  {
+   "asl": "como",
    "url": "https://www.ats-insubria.it/agenzia/numeri-utili",
    "controllata": "2026-11-02",
    "http": 200,
@@ -1359,9 +1494,9 @@
    "http": 200,
    "file": "como/181e293b749f.txt",
    "titolo": "Contatti | ATS MONTAGNA",
-   "sha": "23c960b82ea50363772f731c60442cfe0ac4af8c7b066a4e12cd6b7e94f3bed3",
-   "caratteri": 2038,
-   "cambiata": false
+   "sha": "fe9e4bd18fc474c7fe609e8b4f1e56ca7cd5e4c3a2e713dd83a6e9dd1043c584",
+   "caratteri": 2055,
+   "cambiata": true
   },
   {
    "asl": "como",
@@ -1436,15 +1571,15 @@
    "http": 200,
    "file": "como/1afcf6160883.txt",
    "titolo": "Ufficio Relazioni con il Pubblico (URP) | ATS MONTAGNA",
-   "sha": "ae58c4fc78528f8c72c67d2950dbb56f049e81ddc97a7b2279dd5b40ff1be35d",
-   "caratteri": 2833,
+   "sha": "59ecb7020dedd9e14e7694847c0a2a117cecb964ef926cee78c8bbee05aaa758",
+   "caratteri": 2850,
    "link_pdf": [
     {
      "url": "https://www.ats-montagna.it/system/files/field_info/allegati/2566/paragrafi/7058/Modulo_reclami_encomi_segnalazioni_feb_2026.pdf",
      "testo": "Modulo_reclami_encomi_segnalazioni_feb_2026.pdf"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "como",
@@ -1655,6 +1790,18 @@
   },
   {
    "asl": "como",
+   "url": "https://www.ats-insubria.it/aree-tematiche/screening",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "como/bb9638d21243.txt",
+   "titolo": "Screening - ATS Insubria",
+   "sha": "c613e1e7278f119ad05c7d55e878754434bf663d9f9b34dcb0b773c319f1f395",
+   "caratteri": 7660,
+   "email_nascoste": 2,
+   "cambiata": true
+  },
+  {
+   "asl": "como",
    "url": "https://www.asst-lariana.it/wp-content/uploads/2024/10/Modulo-istanza-attivazione-percorso-tutela.pdf",
    "controllata": "2026-11-02",
    "da_pagina": "https://www.asst-lariana.it/amministrazione/unita-organizzativa/direttore-generale/attivita-comunicazione-aziendale-relazioni-esterne/urp/",
@@ -1827,6 +1974,17 @@
    "titolo": "Informazioni e contatti | ASST Cremona",
    "sha": "393dff127c1f04135599787af443b2098e5518b0110eab3e36b6c2abd96f4b21",
    "caratteri": 2614,
+   "cambiata": false
+  },
+  {
+   "asl": "cremona",
+   "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "cremona/0d021fb4d437.txt",
+   "titolo": "Cambio medico - Regione Lombardia",
+   "sha": "dd2f8de25df138cdca8512eaa66149826582818241cb5fd0d25eef19f63ef4c7",
+   "caratteri": 11846,
    "cambiata": false
   },
   {
@@ -2260,6 +2418,27 @@
   },
   {
    "asl": "cremona",
+   "url": "https://www.ats-valpadana.it/screening-oncologici",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "cremona/b675b28479a0.txt",
+   "titolo": "Screening oncologici | ATS VALPADANA",
+   "sha": "65c80b96e03e114d4d35b8a344c61ef2a509b8075fc0a3958d9f8d474e3be806",
+   "caratteri": 2730,
+   "link_pdf": [
+    {
+     "url": "https://www.ats-valpadana.it/system/files/field_blocco_redazionale/allegati/2356/paragrafi/14919/Brochure%20Screening%20Oncologici.pdf",
+     "testo": "Brochure Screening Oncologici.pdf"
+    },
+    {
+     "url": "https://www.ats-valpadana.it/system/files/field_blocco_redazionale/allegati/2356/paragrafi/19773/Calendario%20prevenzione%202026%20-%2019.10.2026.pdf",
+     "testo": "Calendario prevenzione 2026 - 19.10.2026.pdf"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "cremona",
    "url": "https://www.ats-valpadana.it/system/files/field_blocco_redazionale/allegati/2485/paragrafi/15505/Modulo%20segnalazioni%20URP.pdf",
    "controllata": "2026-11-02",
    "da_pagina": "https://www.ats-valpadana.it/ufficio-relazioni-pubblico",
@@ -2389,6 +2568,19 @@
    "cambiata": false
   },
   {
+   "asl": "cremona",
+   "url": "https://www.ats-valpadana.it/system/files/field_blocco_redazionale/allegati/2356/paragrafi/14919/Brochure%20Screening%20Oncologici.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.ats-valpadana.it/screening-oncologici",
+   "http": 200,
+   "file": "cremona/b9de13362235.txt",
+   "titolo": "Diagnosi precoce del tumore della mammella",
+   "sha": "434b7e0fe1f23aa51a480f64ef62c3e95400d93e5b4905cdffd1102897087523",
+   "caratteri": 4209,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
    "asl": "lecco",
    "url": "https://www.ats-brianza.it/",
    "controllata": "2026-11-02",
@@ -2461,6 +2653,17 @@
      "testo": "Carta dei Servizi Casa di Comunità Introbio"
     }
    ],
+   "cambiata": false
+  },
+  {
+   "asl": "lecco",
+   "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "lecco/0d021fb4d437.txt",
+   "titolo": "Cambio medico - Regione Lombardia",
+   "sha": "dd2f8de25df138cdca8512eaa66149826582818241cb5fd0d25eef19f63ef4c7",
+   "caratteri": 11846,
    "cambiata": false
   },
   {
@@ -2857,6 +3060,45 @@
   },
   {
    "asl": "lecco",
+   "url": "https://www.ats-brianza.it/it/screening-oncologici.html",
+   "controllata": "2026-11-02",
+   "browser": true,
+   "http": 200,
+   "finale": "https://www.ats-brianza.it/screening-oncologici",
+   "file": "lecco/5099ec5c052e.txt",
+   "titolo": "Screening",
+   "sha": "73a5e6fb3869b22bd8de9ed37fabde3f49a43ad26f226bdd05b6f7bcdfab320f",
+   "caratteri": 5379,
+   "link_pdf": [
+    {
+     "url": "https://www.ats-brianza.it/images/screening/Informativa_ATS_screening.pdf",
+     "testo": "Informativa relativa al trattamento dei dati personali per il servizio degli screening oncologici (collo dell’utero,mamm"
+    },
+    {
+     "url": "https://www.ats-brianza.it/images/screening/progetto_screening_ITA.pdf",
+     "testo": "Programmi di Screening oncologici attivi sul territorio di ATS Brianza"
+    },
+    {
+     "url": "https://www.ats-brianza.it/images/screening/progetto_screening_ENG.pdf",
+     "testo": "Cancer Screening Programmes ATS Brianza Area"
+    },
+    {
+     "url": "https://www.ats-brianza.it/images/screening/progetto_screening_FRA.pdf",
+     "testo": "Programmes de dépistage oncologique actifs sur le territoire de ATS Brianza"
+    },
+    {
+     "url": "https://www.ats-brianza.it/images/screening/progetto_screening_SPA.pdf",
+     "testo": "Programas de Cribado Oncológico en ATS Brianza"
+    },
+    {
+     "url": "https://www.ats-brianza.it/images/screening/progetto_screening_DEU.pdf",
+     "testo": "Onkologische screeningprogramme, die im gebiet der ats brianza aktiv sind"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "lecco",
    "url": "https://www.asst-lecco.it/wp-content/uploads/2026/08/asst_lecco_carta_servizi_CdC_lecco_aggiornamento_02.07.2026.pdf",
    "controllata": "2026-11-02",
    "da_pagina": "https://www.asst-lecco.it/territorio/case-di-comunita/",
@@ -3047,6 +3289,71 @@
    "cambiata": false
   },
   {
+   "asl": "lecco",
+   "url": "https://www.ats-brianza.it/images/screening/Informativa_ATS_screening.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.ats-brianza.it/it/screening-oncologici.html",
+   "http": 200,
+   "file": "lecco/c75010bf57d6.txt",
+   "titolo": "INFORMATIVA RELATIVA AL TRATTAMENTO DEI DATI PERSONALI",
+   "sha": "501d4c14ebdecc96c51f745a1d34886290a1174f7f84f86435110fdee66a57a2",
+   "caratteri": 15636,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "lecco",
+   "url": "https://www.ats-brianza.it/images/screening/progetto_screening_ITA.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.ats-brianza.it/it/screening-oncologici.html",
+   "http": 200,
+   "file": "lecco/bff4f283dbd8.txt",
+   "titolo": "progetto screening",
+   "sha": "a4a6bd9e5a002fa702bca60ef049724883aacbfedcb8f707b209847105c991ab",
+   "caratteri": 2868,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "lecco",
+   "url": "https://www.ats-brianza.it/images/screening/progetto_screening_ENG.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.ats-brianza.it/it/screening-oncologici.html",
+   "http": 200,
+   "file": "lecco/9b8afe3bf9a8.txt",
+   "titolo": "progetto screening",
+   "sha": "f32378fa0f4c878c444f3cad6868630135533a563e7a62e265ac05bdee662350",
+   "caratteri": 1781,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "lecco",
+   "url": "https://www.ats-brianza.it/images/screening/progetto_screening_FRA.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.ats-brianza.it/it/screening-oncologici.html",
+   "http": 200,
+   "file": "lecco/d2aca62becfc.txt",
+   "titolo": "progetto screening",
+   "sha": "6a332433d728d03d24a90c7ed66153cc6995c20ed591b36816665d0805622dc9",
+   "caratteri": 2901,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "lecco",
+   "url": "https://www.ats-brianza.it/images/screening/progetto_screening_SPA.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.ats-brianza.it/it/screening-oncologici.html",
+   "http": 200,
+   "file": "lecco/a72b78508b35.txt",
+   "titolo": "progetto screening",
+   "sha": "1f362932022231ae7062416b0d9c2367780e7a711d708e84791b0fdec9236a0b",
+   "caratteri": 2607,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
    "asl": "lodi",
    "url": "https://www.ats-milano.it/",
    "controllata": "2026-11-02",
@@ -3077,6 +3384,17 @@
    "titolo": "Valutazione Multidimensionale - www.asst-lodi.it",
    "sha": "bfe025aefa3cebdaf95747e39db6520b1b521820b31217459edd44222d719f8d",
    "caratteri": 5649,
+   "cambiata": false
+  },
+  {
+   "asl": "lodi",
+   "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "lodi/0d021fb4d437.txt",
+   "titolo": "Cambio medico - Regione Lombardia",
+   "sha": "dd2f8de25df138cdca8512eaa66149826582818241cb5fd0d25eef19f63ef4c7",
+   "caratteri": 11846,
    "cambiata": false
   },
   {
@@ -3344,6 +3662,47 @@
   },
   {
    "asl": "lodi",
+   "url": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/prevenzione/screening-oncologico",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "lodi/5212dc889775.txt",
+   "titolo": "Screening oncologico | ATS Milano",
+   "sha": "7d4221865e09e26aa10a6fe140fc80506d57e1366b17d4bc4814f523efc2cd2d",
+   "caratteri": 6083,
+   "link_pdf": [
+    {
+     "url": "https://www.ats-milano.it/sites/default/files/2025-10/Informativa%20privacy%20e%20modulo%20di%20revoca.pdf",
+     "testo": "Screening oncologico - Informativa privacy e modulo revoca"
+    },
+    {
+     "url": "https://www.ats-milano.it/sites/default/files/2026-10/EUCanscreen_locandina_def.pdf",
+     "testo": "Locandina offerta screening Regione Lombardia"
+    },
+    {
+     "url": "https://www.ats-milano.it/sites/default/files/2024-05/Screening%20-%20Italiano%20-%20linguaggio%20semplice.pdf",
+     "testo": "Screening oncologico - Programmi (Italiano semplice)"
+    },
+    {
+     "url": "https://www.ats-milano.it/sites/default/files/2024-05/Screening%20-%20Franc%CC%A7ais.pdf",
+     "testo": "Screening oncologico - Programmi (Français)"
+    },
+    {
+     "url": "https://www.ats-milano.it/sites/default/files/2024-05/Screening%20-%20Espan%CC%83ol.pdf",
+     "testo": "Screening oncologico - Programmi (Español)"
+    },
+    {
+     "url": "https://www.ats-milano.it/sites/default/files/2024-05/Screening%20-%20English.pdf",
+     "testo": "Screening oncologico - Programmi (English)"
+    },
+    {
+     "url": "https://www.ats-milano.it/sites/default/files/2024-05/Screening%20-%20Arabic.pdf",
+     "testo": "Screening oncologico - Programmi (Arabic)"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "lodi",
    "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/05-prevenzione-e-stili-di-vita/red-screening-per-la-diagnosi/allegati/Report%20screening%20oncologici%20lombardia%202023.pdf",
    "controllata": "2026-11-02",
    "da_pagina": "https://www.regione.lombardia.it/sanita/prevenzione-e-stili-di-vita/screening-per-la-diagnosi-precoce-dei-tumori",
@@ -3408,6 +3767,71 @@
    "cambiata": false
   },
   {
+   "asl": "lodi",
+   "url": "https://www.ats-milano.it/sites/default/files/2025-10/Informativa%20privacy%20e%20modulo%20di%20revoca.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/prevenzione/screening-oncologico",
+   "http": 200,
+   "file": "lodi/27fde75afee9.txt",
+   "titolo": "Microsoft Word - Informativa privacy e modulo di revoca",
+   "sha": "6a142930365471c11d86112e3c45ec9fb6ec8e8a000a8c7f7d448e2c40966f32",
+   "caratteri": 9411,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "lodi",
+   "url": "https://www.ats-milano.it/sites/default/files/2026-10/EUCanscreen_locandina_def.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/prevenzione/screening-oncologico",
+   "http": 200,
+   "file": "lodi/077aa12ca61e.txt",
+   "titolo": "Prenditi",
+   "sha": "a729cc028ac05fc7ca39b0d31ead139371247f6e5277c6c5f7662534e403a714",
+   "caratteri": 1565,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "lodi",
+   "url": "https://www.ats-milano.it/sites/default/files/2024-05/Screening%20-%20Italiano%20-%20linguaggio%20semplice.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/prevenzione/screening-oncologico",
+   "http": 200,
+   "file": "lodi/cfc551b0d13b.txt",
+   "titolo": "1",
+   "sha": "8106c640dc8ee0f1ea9b6137c95691e35ee5da4804c3a2f93ae834376c6cb879",
+   "caratteri": 11322,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "lodi",
+   "url": "https://www.ats-milano.it/sites/default/files/2024-05/Screening%20-%20Franc%CC%A7ais.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/prevenzione/screening-oncologico",
+   "http": 200,
+   "file": "lodi/19744be1f84f.txt",
+   "titolo": "1",
+   "sha": "8099814a6bcb7629e97077d08fb80c8b9aab3c9024347241d720a9c505d1bbaf",
+   "caratteri": 12816,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "lodi",
+   "url": "https://www.ats-milano.it/sites/default/files/2024-05/Screening%20-%20Espan%CC%83ol.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/prevenzione/screening-oncologico",
+   "http": 200,
+   "file": "lodi/63e749b3a37d.txt",
+   "titolo": "Programa de cribado oncológico",
+   "sha": "ac13ebfc7c25bc871a31619b1629061b3859401f0628f29dfddf0a8c016e625b",
+   "caratteri": 12326,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
    "asl": "mantova",
    "url": "https://www.ats-valpadana.it/",
    "controllata": "2026-11-02",
@@ -3448,6 +3872,17 @@
      "testo": "CARTA DEI SERVIZI"
     }
    ],
+   "cambiata": false
+  },
+  {
+   "asl": "mantova",
+   "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "mantova/0d021fb4d437.txt",
+   "titolo": "Cambio medico - Regione Lombardia",
+   "sha": "dd2f8de25df138cdca8512eaa66149826582818241cb5fd0d25eef19f63ef4c7",
+   "caratteri": 11846,
    "cambiata": false
   },
   {
@@ -3553,9 +3988,9 @@
    "http": 200,
    "file": "mantova/dc06edacc507.txt",
    "titolo": "Homepage | ASST MANTOVA",
-   "sha": "09fcc1c5028012fba161fc6b44804b87615c2c743ab756cccb5fc52a3b2d30ac",
-   "caratteri": 8342,
-   "cambiata": false
+   "sha": "41f99a972843c95be0e09e743ae8f0e94e7bbce36a3cf442d26815b4cfb05b49",
+   "caratteri": 8297,
+   "cambiata": true
   },
   {
    "asl": "mantova",
@@ -3643,6 +4078,27 @@
     }
    ],
    "cambiata": false
+  },
+  {
+   "asl": "mantova",
+   "url": "https://www.ats-valpadana.it/screening-oncologici",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "mantova/b675b28479a0.txt",
+   "titolo": "Screening oncologici | ATS VALPADANA",
+   "sha": "65c80b96e03e114d4d35b8a344c61ef2a509b8075fc0a3958d9f8d474e3be806",
+   "caratteri": 2730,
+   "link_pdf": [
+    {
+     "url": "https://www.ats-valpadana.it/system/files/field_blocco_redazionale/allegati/2356/paragrafi/14919/Brochure%20Screening%20Oncologici.pdf",
+     "testo": "Brochure Screening Oncologici.pdf"
+    },
+    {
+     "url": "https://www.ats-valpadana.it/system/files/field_blocco_redazionale/allegati/2356/paragrafi/19773/Calendario%20prevenzione%202026%20-%2019.10.2026.pdf",
+     "testo": "Calendario prevenzione 2026 - 19.10.2026.pdf"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "mantova",
@@ -3788,6 +4244,19 @@
    "cambiata": false
   },
   {
+   "asl": "mantova",
+   "url": "https://www.ats-valpadana.it/system/files/field_blocco_redazionale/allegati/2356/paragrafi/14919/Brochure%20Screening%20Oncologici.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.ats-valpadana.it/screening-oncologici",
+   "http": 200,
+   "file": "mantova/b9de13362235.txt",
+   "titolo": "Diagnosi precoce del tumore della mammella",
+   "sha": "434b7e0fe1f23aa51a480f64ef62c3e95400d93e5b4905cdffd1102897087523",
+   "caratteri": 4209,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
    "asl": "milano",
    "url": "https://www.ats-milano.it/",
    "controllata": "2026-11-02",
@@ -3824,6 +4293,17 @@
      "testo": "Deliberazione n. XI/6760 del 25.07.2022"
     }
    ],
+   "cambiata": false
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "milano/0d021fb4d437.txt",
+   "titolo": "Cambio medico - Regione Lombardia",
+   "sha": "dd2f8de25df138cdca8512eaa66149826582818241cb5fd0d25eef19f63ef4c7",
+   "caratteri": 11846,
    "cambiata": false
   },
   {
@@ -4619,9 +5099,9 @@
    "http": 200,
    "file": "milano/79595849743a.txt",
    "titolo": "Home page",
-   "sha": "c9fc4c191e469e2879bd34793bac36d85c34fe36d18901d648e322e86f2a637c",
-   "caratteri": 12127,
-   "cambiata": false
+   "sha": "7f00ec9ce165c3d441188b48467489e93ad74e81e1ff024ecfb60a77233633c9",
+   "caratteri": 12150,
+   "cambiata": true
   },
   {
    "asl": "milano",
@@ -4637,9 +5117,9 @@
    "http": 200,
    "file": "milano/4f29258f477b.txt",
    "titolo": "CUP - Centro Unico Prenotazione",
-   "sha": "ea29141c8d5ca9e4e6ee728d525ba8c77de86754db3d97d215c8ce217ac55345",
-   "caratteri": 17599,
-   "cambiata": false
+   "sha": "f11abcb37df31dbd4407d62b00908779bd0ac6d27e845674787a80f375f67cdc",
+   "caratteri": 17644,
+   "cambiata": true
   },
   {
    "asl": "milano",
@@ -5228,7 +5708,7 @@
    "http": 200,
    "file": "milano/91bb0d244f6b.txt",
    "titolo": "Liste di attesa - ASST Melegnano Martesana",
-   "sha": "221d9c80442fd01fb232477ed3f9b27f22ea11f960016bb6523de60da8473796",
+   "sha": "9a04ea6d249a4fef1d8c813c9da6fa39c68d1ce9b4c0c2c9da465d8834797a28",
    "caratteri": 7290,
    "cambiata": true
   },
@@ -5394,6 +5874,47 @@
    "caratteri": 48887,
    "pdf": true,
    "cambiata": false
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/prevenzione/screening-oncologico",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "milano/5212dc889775.txt",
+   "titolo": "Screening oncologico | ATS Milano",
+   "sha": "7d4221865e09e26aa10a6fe140fc80506d57e1366b17d4bc4814f523efc2cd2d",
+   "caratteri": 6083,
+   "link_pdf": [
+    {
+     "url": "https://www.ats-milano.it/sites/default/files/2025-10/Informativa%20privacy%20e%20modulo%20di%20revoca.pdf",
+     "testo": "Screening oncologico - Informativa privacy e modulo revoca"
+    },
+    {
+     "url": "https://www.ats-milano.it/sites/default/files/2026-10/EUCanscreen_locandina_def.pdf",
+     "testo": "Locandina offerta screening Regione Lombardia"
+    },
+    {
+     "url": "https://www.ats-milano.it/sites/default/files/2024-05/Screening%20-%20Italiano%20-%20linguaggio%20semplice.pdf",
+     "testo": "Screening oncologico - Programmi (Italiano semplice)"
+    },
+    {
+     "url": "https://www.ats-milano.it/sites/default/files/2024-05/Screening%20-%20Franc%CC%A7ais.pdf",
+     "testo": "Screening oncologico - Programmi (Français)"
+    },
+    {
+     "url": "https://www.ats-milano.it/sites/default/files/2024-05/Screening%20-%20Espan%CC%83ol.pdf",
+     "testo": "Screening oncologico - Programmi (Español)"
+    },
+    {
+     "url": "https://www.ats-milano.it/sites/default/files/2024-05/Screening%20-%20English.pdf",
+     "testo": "Screening oncologico - Programmi (English)"
+    },
+    {
+     "url": "https://www.ats-milano.it/sites/default/files/2024-05/Screening%20-%20Arabic.pdf",
+     "testo": "Screening oncologico - Programmi (Arabic)"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "milano",
@@ -5743,6 +6264,71 @@
    "cambiata": false
   },
   {
+   "asl": "milano",
+   "url": "https://www.ats-milano.it/sites/default/files/2025-10/Informativa%20privacy%20e%20modulo%20di%20revoca.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/prevenzione/screening-oncologico",
+   "http": 200,
+   "file": "milano/27fde75afee9.txt",
+   "titolo": "Microsoft Word - Informativa privacy e modulo di revoca",
+   "sha": "6a142930365471c11d86112e3c45ec9fb6ec8e8a000a8c7f7d448e2c40966f32",
+   "caratteri": 9411,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.ats-milano.it/sites/default/files/2026-10/EUCanscreen_locandina_def.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/prevenzione/screening-oncologico",
+   "http": 200,
+   "file": "milano/077aa12ca61e.txt",
+   "titolo": "Prenditi",
+   "sha": "a729cc028ac05fc7ca39b0d31ead139371247f6e5277c6c5f7662534e403a714",
+   "caratteri": 1565,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.ats-milano.it/sites/default/files/2024-05/Screening%20-%20Italiano%20-%20linguaggio%20semplice.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/prevenzione/screening-oncologico",
+   "http": 200,
+   "file": "milano/cfc551b0d13b.txt",
+   "titolo": "1",
+   "sha": "8106c640dc8ee0f1ea9b6137c95691e35ee5da4804c3a2f93ae834376c6cb879",
+   "caratteri": 11322,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.ats-milano.it/sites/default/files/2024-05/Screening%20-%20Franc%CC%A7ais.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/prevenzione/screening-oncologico",
+   "http": 200,
+   "file": "milano/19744be1f84f.txt",
+   "titolo": "1",
+   "sha": "8099814a6bcb7629e97077d08fb80c8b9aab3c9024347241d720a9c505d1bbaf",
+   "caratteri": 12816,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "milano",
+   "url": "https://www.ats-milano.it/sites/default/files/2024-05/Screening%20-%20Espan%CC%83ol.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/prevenzione/screening-oncologico",
+   "http": 200,
+   "file": "milano/63e749b3a37d.txt",
+   "titolo": "Programa de cribado oncológico",
+   "sha": "ac13ebfc7c25bc871a31619b1629061b3859401f0628f29dfddf0a8c016e625b",
+   "caratteri": 12326,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
    "asl": "monza-brianza",
    "url": "https://www.ats-brianza.it/",
    "controllata": "2026-11-02",
@@ -5773,6 +6359,17 @@
    "titolo": "Cure domiciliari / Cure palliative",
    "sha": "df1cee82e5377c8c69b50be4ee71a2d0fc6f03c55ada6a1b1ed0d27b161feac5",
    "caratteri": 7458,
+   "cambiata": false
+  },
+  {
+   "asl": "monza-brianza",
+   "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "monza-brianza/0d021fb4d437.txt",
+   "titolo": "Cambio medico - Regione Lombardia",
+   "sha": "dd2f8de25df138cdca8512eaa66149826582818241cb5fd0d25eef19f63ef4c7",
+   "caratteri": 11846,
    "cambiata": false
   },
   {
@@ -6003,6 +6600,45 @@
   },
   {
    "asl": "monza-brianza",
+   "url": "https://www.ats-brianza.it/it/screening-oncologici.html",
+   "controllata": "2026-11-02",
+   "browser": true,
+   "http": 200,
+   "finale": "https://www.ats-brianza.it/screening-oncologici",
+   "file": "monza-brianza/5099ec5c052e.txt",
+   "titolo": "Screening",
+   "sha": "73a5e6fb3869b22bd8de9ed37fabde3f49a43ad26f226bdd05b6f7bcdfab320f",
+   "caratteri": 5379,
+   "link_pdf": [
+    {
+     "url": "https://www.ats-brianza.it/images/screening/Informativa_ATS_screening.pdf",
+     "testo": "Informativa relativa al trattamento dei dati personali per il servizio degli screening oncologici (collo dell’utero,mamm"
+    },
+    {
+     "url": "https://www.ats-brianza.it/images/screening/progetto_screening_ITA.pdf",
+     "testo": "Programmi di Screening oncologici attivi sul territorio di ATS Brianza"
+    },
+    {
+     "url": "https://www.ats-brianza.it/images/screening/progetto_screening_ENG.pdf",
+     "testo": "Cancer Screening Programmes ATS Brianza Area"
+    },
+    {
+     "url": "https://www.ats-brianza.it/images/screening/progetto_screening_FRA.pdf",
+     "testo": "Programmes de dépistage oncologique actifs sur le territoire de ATS Brianza"
+    },
+    {
+     "url": "https://www.ats-brianza.it/images/screening/progetto_screening_SPA.pdf",
+     "testo": "Programas de Cribado Oncológico en ATS Brianza"
+    },
+    {
+     "url": "https://www.ats-brianza.it/images/screening/progetto_screening_DEU.pdf",
+     "testo": "Onkologische screeningprogramme, die im gebiet der ats brianza aktiv sind"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "monza-brianza",
    "url": "https://www.regione.lombardia.it/content/dam/rl/canali-tematici-servizi/01-sanita/05-prevenzione-e-stili-di-vita/red-screening-per-la-diagnosi/allegati/Report%20screening%20oncologici%20lombardia%202023.pdf",
    "controllata": "2026-11-02",
    "da_pagina": "https://www.regione.lombardia.it/sanita/prevenzione-e-stili-di-vita/screening-per-la-diagnosi-precoce-dei-tumori",
@@ -6067,15 +6703,80 @@
    "cambiata": false
   },
   {
+   "asl": "monza-brianza",
+   "url": "https://www.ats-brianza.it/images/screening/Informativa_ATS_screening.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.ats-brianza.it/it/screening-oncologici.html",
+   "http": 200,
+   "file": "monza-brianza/c75010bf57d6.txt",
+   "titolo": "INFORMATIVA RELATIVA AL TRATTAMENTO DEI DATI PERSONALI",
+   "sha": "501d4c14ebdecc96c51f745a1d34886290a1174f7f84f86435110fdee66a57a2",
+   "caratteri": 15636,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "monza-brianza",
+   "url": "https://www.ats-brianza.it/images/screening/progetto_screening_ITA.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.ats-brianza.it/it/screening-oncologici.html",
+   "http": 200,
+   "file": "monza-brianza/bff4f283dbd8.txt",
+   "titolo": "progetto screening",
+   "sha": "a4a6bd9e5a002fa702bca60ef049724883aacbfedcb8f707b209847105c991ab",
+   "caratteri": 2868,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "monza-brianza",
+   "url": "https://www.ats-brianza.it/images/screening/progetto_screening_ENG.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.ats-brianza.it/it/screening-oncologici.html",
+   "http": 200,
+   "file": "monza-brianza/9b8afe3bf9a8.txt",
+   "titolo": "progetto screening",
+   "sha": "f32378fa0f4c878c444f3cad6868630135533a563e7a62e265ac05bdee662350",
+   "caratteri": 1781,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "monza-brianza",
+   "url": "https://www.ats-brianza.it/images/screening/progetto_screening_FRA.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.ats-brianza.it/it/screening-oncologici.html",
+   "http": 200,
+   "file": "monza-brianza/d2aca62becfc.txt",
+   "titolo": "progetto screening",
+   "sha": "6a332433d728d03d24a90c7ed66153cc6995c20ed591b36816665d0805622dc9",
+   "caratteri": 2901,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "monza-brianza",
+   "url": "https://www.ats-brianza.it/images/screening/progetto_screening_SPA.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.ats-brianza.it/it/screening-oncologici.html",
+   "http": 200,
+   "file": "monza-brianza/a72b78508b35.txt",
+   "titolo": "progetto screening",
+   "sha": "1f362932022231ae7062416b0d9c2367780e7a711d708e84791b0fdec9236a0b",
+   "caratteri": 2607,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
    "asl": "pavia",
    "url": "https://www.ats-pavia.it/",
    "controllata": "2026-11-02",
    "http": 200,
    "file": "pavia/665f56521c3c.txt",
    "titolo": "HomePage | ATS Pavia",
-   "sha": "6ca4bbddf4b525a469d0066fb0c11a44fea9289dfae964b079e134ebbee86945",
-   "caratteri": 5741,
-   "cambiata": false
+   "sha": "b284029c988633591d38af5b865ef3c868b1806673b7f016fb158fa723d190d3",
+   "caratteri": 5639,
+   "cambiata": true
   },
   {
    "asl": "pavia",
@@ -6111,6 +6812,17 @@
      "testo": "dgr_6867_2022.pdf"
     }
    ],
+   "cambiata": false
+  },
+  {
+   "asl": "pavia",
+   "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "pavia/0d021fb4d437.txt",
+   "titolo": "Cambio medico - Regione Lombardia",
+   "sha": "dd2f8de25df138cdca8512eaa66149826582818241cb5fd0d25eef19f63ef4c7",
+   "caratteri": 11846,
    "cambiata": false
   },
   {
@@ -6200,9 +6912,9 @@
    "http": 200,
    "file": "pavia/14bf1e457a0d.txt",
    "titolo": "Azienda Socio-Sanitaria Territoriale di Pavia",
-   "sha": "7e8a6ece0c27918e4576652b0f98a716d26dee752de77ebff675c8ad0015d614",
-   "caratteri": 8270,
-   "cambiata": false
+   "sha": "f0cc533d786853600973badd85d16e211137e3bc1b2eda57d1a1df3ee61d1e4c",
+   "caratteri": 8180,
+   "cambiata": true
   },
   {
    "asl": "pavia",
@@ -6340,9 +7052,9 @@
    "http": 200,
    "file": "sondrio/1785012ca51b.txt",
    "titolo": "ATS Montagna | ATS MONTAGNA",
-   "sha": "1236c5c5889c0bd05c2ec2deb2ae6f683520185cd5f0bf78991bd43ba6447213",
-   "caratteri": 3873,
-   "cambiata": false
+   "sha": "cfc531214d7065044ff47354676bc25bdfb8489d39aa2e7bddcebd9321251690",
+   "caratteri": 3890,
+   "cambiata": true
   },
   {
    "asl": "sondrio",
@@ -6362,8 +7074,19 @@
    "http": 200,
    "file": "sondrio/6d8f6a0ed496.txt",
    "titolo": "Cure Domiciliari C-DOM | ATS MONTAGNA",
-   "sha": "472c7de1031f7fe2a2ee7d7a40b442ee14ef009f64bd00be5147f18d28ff9550",
-   "caratteri": 2160,
+   "sha": "5e8f358bf908bc85997ff2d835266205aa20b4a363e50b5392a732c40229b219",
+   "caratteri": 2177,
+   "cambiata": true
+  },
+  {
+   "asl": "sondrio",
+   "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "sondrio/0d021fb4d437.txt",
+   "titolo": "Cambio medico - Regione Lombardia",
+   "sha": "dd2f8de25df138cdca8512eaa66149826582818241cb5fd0d25eef19f63ef4c7",
+   "caratteri": 11846,
    "cambiata": false
   },
   {
@@ -6373,9 +7096,9 @@
    "http": 200,
    "file": "sondrio/181e293b749f.txt",
    "titolo": "Contatti | ATS MONTAGNA",
-   "sha": "23c960b82ea50363772f731c60442cfe0ac4af8c7b066a4e12cd6b7e94f3bed3",
-   "caratteri": 2038,
-   "cambiata": false
+   "sha": "fe9e4bd18fc474c7fe609e8b4f1e56ca7cd5e4c3a2e713dd83a6e9dd1043c584",
+   "caratteri": 2055,
+   "cambiata": true
   },
   {
    "asl": "sondrio",
@@ -6395,15 +7118,15 @@
    "http": 200,
    "file": "sondrio/1afcf6160883.txt",
    "titolo": "Ufficio Relazioni con il Pubblico (URP) | ATS MONTAGNA",
-   "sha": "ae58c4fc78528f8c72c67d2950dbb56f049e81ddc97a7b2279dd5b40ff1be35d",
-   "caratteri": 2833,
+   "sha": "59ecb7020dedd9e14e7694847c0a2a117cecb964ef926cee78c8bbee05aaa758",
+   "caratteri": 2850,
    "link_pdf": [
     {
      "url": "https://www.ats-montagna.it/system/files/field_info/allegati/2566/paragrafi/7058/Modulo_reclami_encomi_segnalazioni_feb_2026.pdf",
      "testo": "Modulo_reclami_encomi_segnalazioni_feb_2026.pdf"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "sondrio",
@@ -6521,9 +7244,9 @@
    "http": 200,
    "file": "sondrio/928751e39f25.txt",
    "titolo": "Continuità Assistenziale | ATS MONTAGNA",
-   "sha": "f95cf293b15347206ca59611e3fbae035a2b2c38bb8e4109e500eca861d1e95e",
-   "caratteri": 3453,
-   "cambiata": false
+   "sha": "36beb9a247ac2991bbd3e9e411ccef73e2c228ab37f02a1373787382cb94f666",
+   "caratteri": 3470,
+   "cambiata": true
   },
   {
    "asl": "sondrio",
@@ -6532,9 +7255,9 @@
    "http": 200,
    "file": "sondrio/41802dabe854.txt",
    "titolo": "Medico di Medicina Generale e Pediatra di Famiglia | ATS MONTAGNA",
-   "sha": "067a4e1c189fdafa78e10149786fa86b16430c02bf2326689adfed4f513bb531",
-   "caratteri": 6893,
-   "cambiata": false
+   "sha": "26ed536460c9338befe7e2def5f3dbc6eca4d9851494e8cb3185fe604d92c751",
+   "caratteri": 6910,
+   "cambiata": true
   },
   {
    "asl": "sondrio",
@@ -6578,8 +7301,8 @@
    "http": 200,
    "file": "sondrio/b277774d2d40.txt",
    "titolo": "Tempi di attesa prestazioni sanitarie | ATS MONTAGNA",
-   "sha": "8f6cd884731ad2493d3c50079b9ea0b048877607508cd7dcad5820a3d9e3d767",
-   "caratteri": 10508,
+   "sha": "f66e484fd77f7b1802788ef07e2876d10dac7f00703c0debd6b4834a8cbecbb7",
+   "caratteri": 10525,
    "link_pdf": [
     {
      "url": "https://www.ats-montagna.it/system/files/field_blocco_redazionale/allegati/2649/paragrafi/5688/DGR_XII_2224_2024_all.pdf",
@@ -6606,7 +7329,7 @@
      "testo": "Prime visite specialistiche: cosa bisogna sapere - Brochure"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "sondrio",
@@ -6650,6 +7373,27 @@
     }
    ],
    "cambiata": false
+  },
+  {
+   "asl": "sondrio",
+   "url": "https://www.ats-montagna.it/screening",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "sondrio/8af49b397fa8.txt",
+   "titolo": "Screening | ATS MONTAGNA",
+   "sha": "fb14abdd803295cf056290053b4225365c1e32833514f9a46904ff42d2070d14",
+   "caratteri": 2077,
+   "link_pdf": [
+    {
+     "url": "https://www.ats-montagna.it/system/files/pagina_standard/files/7274/5671/20230522_Informativa-Attivita-di-screening.pdf",
+     "testo": "INFORMATIVA PRIVACY ATTIVITÀ DI SCREENING"
+    },
+    {
+     "url": "https://www.ats-montagna.it/system/files/pagina_standard/files/7274/7019/EUCanscreen_locandina_def.pdf",
+     "testo": "Locandina screening regionale"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "sondrio",
@@ -6830,6 +7574,32 @@
    "cambiata": false
   },
   {
+   "asl": "sondrio",
+   "url": "https://www.ats-montagna.it/system/files/pagina_standard/files/7274/5671/20230522_Informativa-Attivita-di-screening.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.ats-montagna.it/screening",
+   "http": 200,
+   "file": "sondrio/cc62fd1e4d3a.txt",
+   "titolo": "(Microsoft Word - 20230522_Informativa - Attivit\\340 di screening.docx)",
+   "sha": "9735c533d4681867b08ccdc832227a77b840b9af140725093fd031d3c638f0be",
+   "caratteri": 11073,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "sondrio",
+   "url": "https://www.ats-montagna.it/system/files/pagina_standard/files/7274/7019/EUCanscreen_locandina_def.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.ats-montagna.it/screening",
+   "http": 200,
+   "file": "sondrio/e829909d7e5c.txt",
+   "titolo": "971c358835d84aec",
+   "sha": "a729cc028ac05fc7ca39b0d31ead139371247f6e5277c6c5f7662534e403a714",
+   "caratteri": 1565,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
    "asl": "varese",
    "url": "https://www.ats-insubria.it/",
    "controllata": "2026-11-02",
@@ -6910,6 +7680,17 @@
   },
   {
    "asl": "varese",
+   "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "varese/0d021fb4d437.txt",
+   "titolo": "Cambio medico - Regione Lombardia",
+   "sha": "dd2f8de25df138cdca8512eaa66149826582818241cb5fd0d25eef19f63ef4c7",
+   "caratteri": 11846,
+   "cambiata": false
+  },
+  {
+   "asl": "varese",
    "url": "https://www.ats-insubria.it/agenzia/numeri-utili",
    "controllata": "2026-11-02",
    "http": 200,
@@ -6960,9 +7741,9 @@
    "http": 200,
    "file": "varese/8f9749388b3f.txt",
    "titolo": "URP - Varese - ASST Settelaghi - ASST Settelaghi",
-   "sha": "383ade2ac9672dfe87ecab83b1fbc0e4745dfba1063808fc9c06ccfc2c85a661",
-   "caratteri": 3471,
-   "cambiata": false
+   "sha": "1a32939b112dcd54f5c821cca5ac3590b9add9a7fc094e82005231f472354236",
+   "caratteri": 3473,
+   "cambiata": true
   },
   {
    "asl": "varese",
@@ -6973,7 +7754,7 @@
    "titolo": "PRENOTAZIONE visite e esami con SSN - ASST Settelaghi - ASST Settelaghi",
    "sha": "3849abec0560da4de04c28176fc0a4c167d1bd0e86ecc6ea2bedca20571097e8",
    "caratteri": 12617,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "varese",
@@ -6982,8 +7763,8 @@
    "http": 200,
    "file": "varese/f68caec45730.txt",
    "titolo": "Contatti - ASST Valle Olona",
-   "sha": "7c666e04edaea8a5dc69fe04a52a8b929e964e9a632a318d384870ee4c4421d7",
-   "caratteri": 3475,
+   "sha": "6dbfd6dcd60a09eeb232d6d959d046a80ec5339a3a2ff02d7fc68167b83efec7",
+   "caratteri": 3476,
    "link_pdf": [
     {
      "url": "https://www.asst-valleolona.it/wp-content/uploads/2023/08/A0652_P13_Pd01_MS06-Opuscolo-rifiuti-sanitari-pericolosi.pdf",
@@ -7039,8 +7820,8 @@
    "http": 200,
    "file": "varese/eb494f844be9.txt",
    "titolo": "URP - Ufficio Relazioni con il Pubblico - ASST Valle Olona",
-   "sha": "cdfe0a07bcdb81dbbd834921bb810f341f9691f2146d3ad6ceebfbac67be9fdf",
-   "caratteri": 6003,
+   "sha": "fb876e2da271cd631ff4398e1c3039dbf9a413e77e1d37eff356dad6c23b18a2",
+   "caratteri": 6013,
    "link_pdf": [
     {
      "url": "https://www.asst-valleolona.it/wp-content/uploads/2023/08/A0652_P13_Pd01_MS06-Opuscolo-rifiuti-sanitari-pericolosi.pdf",
@@ -7087,7 +7868,7 @@
      "testo": ""
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "varese",
@@ -7141,9 +7922,9 @@
    "http": 200,
    "file": "varese/2e15c4f801d9.txt",
    "titolo": "Servizi Sanitari e Assistenza Medica - ASST Settelaghi - ASST Settelaghi",
-   "sha": "a8ef78d87bf7e1b575d2720152ec5f81a3af50becb729dc36bf0dfd75e2734e7",
-   "caratteri": 5001,
-   "cambiata": false
+   "sha": "62b6de3f9cff0a989a8737d2fc65885a6aa036b0ef26d885cc6f80a613dde184",
+   "caratteri": 4975,
+   "cambiata": true
   },
   {
    "asl": "varese",
@@ -7211,8 +7992,8 @@
    "http": 200,
    "file": "varese/625ee56036b9.txt",
    "titolo": "Home - ASST Valle Olona",
-   "sha": "c37642ce0740eba4c87680510561110f80ea09a807ec5f1e21a550af71398f95",
-   "caratteri": 4092,
+   "sha": "8c4555e168ccecb1b276bb9152b41d020f9ac2e94930d46085ad3c4c3427ddf8",
+   "caratteri": 4084,
    "link_pdf": [
     {
      "url": "https://www.asst-valleolona.it/wp-content/uploads/2026/09/Asst-Valleolona-Carta-dei-Servizi-Busto-Via-Stelvio-09.09.2026-Cartacea.pdf",
@@ -7430,8 +8211,8 @@
    "http": 200,
    "file": "varese/c27d02fae6a1.txt",
    "titolo": "Cure domiciliari - ASST Valle Olona",
-   "sha": "d699bfebd6cff6309e4bd5391412b632d83532dbf6da503f8042705103b0e620",
-   "caratteri": 5751,
+   "sha": "c7836eb64041c1708743a593cfb3d95dea6cf198f62521cc041201afaf617f46",
+   "caratteri": 5752,
    "link_pdf": [
     {
      "url": "https://www.asst-valleolona.it/wp-content/uploads/2023/08/A0652_P13_Pd01_MS06-Opuscolo-rifiuti-sanitari-pericolosi.pdf",
@@ -7680,6 +8461,18 @@
    "caratteri": 6052,
    "pdf": true,
    "cambiata": false
+  },
+  {
+   "asl": "varese",
+   "url": "https://www.ats-insubria.it/aree-tematiche/screening",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "varese/bb9638d21243.txt",
+   "titolo": "Screening - ATS Insubria",
+   "sha": "c613e1e7278f119ad05c7d55e878754434bf663d9f9b34dcb0b773c319f1f395",
+   "caratteri": 7660,
+   "email_nascoste": 2,
+   "cambiata": true
   },
   {
    "asl": "varese",
@@ -8046,17 +8839,6 @@
    "titolo": "Portale Inps - Riforma della disabilità: al via la terza fase sperimentale",
    "sha": "c6930fc23272735701d365ad24f19e4fe8b2201d94f8d532a9f97b23835d22f0",
    "caratteri": 46308,
-   "cambiata": false
-  },
-  {
-   "asl": "medico-online",
-   "url": "https://www.regione.lombardia.it/sanita/prenotazioni-e-tempi-d-attesa/cambio-medico",
-   "controllata": "2026-11-02",
-   "http": 200,
-   "file": "medico-online/0d021fb4d437.txt",
-   "titolo": "Cambio medico - Regione Lombardia",
-   "sha": "dd2f8de25df138cdca8512eaa66149826582818241cb5fd0d25eef19f63ef4c7",
-   "caratteri": 11846,
    "cambiata": false
   },
   {

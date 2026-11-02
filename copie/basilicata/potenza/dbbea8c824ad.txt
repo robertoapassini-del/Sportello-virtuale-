@@ -1,0 +1,302 @@
+https://idp.sanita.basilicata.it:9443/authenticationendpoint/resources/SISIR%20-%20Guida%20Accesso%20agli%20applicativi%20-%20v1%20-%20r2.pdf
+Guida Accesso applicativi
+
+Guida Accesso applicativi
+SISIR Regione Basilicata
+ultimo aggiornamento 05/12/2022
+
+SISIR - Guida Accesso agli applicativi - v1 - r2 Pagina 1 di 17
+
+Indice generale
+1.Storia del documento 3
+2.Glossario 3
+3.Introduzione 4
+4.Riferimenti utili 4
+4.1.Assistenza tecnica 4
+4.2.Invio segnalazioni e/o suggerimenti 4
+5.Specifiche Tecniche 4
+6.Accesso all'applicativo 5
+6.1.CIE TS-CNS Medico/Utente 6
+6.1.1Accesso con CIE 6
+6.1.2Accesso con TS-CNS 10
+6.2.OTP Utente 11
+6.3.SPID 14
+6.3.1Accesso SPID Medico 14
+6.3.2Accesso SPID Utente 14
+7.Pagina di accesso all'applicativo e menù operativi 16
+7.1.Menù operazioni utente 16
+
+SISIR - Guida Accesso agli applicativi - v1 - r2 Pagina 2 di 17
+
+1. STORIA DEL DOCUMENTO
+Data Revisione Descrizione Autore
+15/12/20 v.1 – r.1 Prima stesura del documento Dott. Antonello D'Elia
+05/12/22 v.1 – r.2 Adeguamento documento con nuova interfaccia grafica pagina di Dott. Antonello D'Elia
+accesso
+
+2. GLOSSARIO
+CIE Carta d'Identità Elettronica
+CNS Carta Nazionale dei Servizi
+FSE Fascicolo Sanitario Elettronico
+MEF Ministero Economia e Finanze
+NFC Near Field Comunication
+OTP One Time Password
+SISIR Sistema Informativo Sanitario Integrato Regionale
+SOGEI Società Generale d'Informatica del MEF
+SPID Sistema Pubblico di Identità Digitale
+SSN Servizio Sanitario Nazionale
+SSO Single Sign-On
+TS Tessera Sanitaria
+
+SISIR - Guida Accesso agli applicativi - v1 - r2 Pagina 3 di 17
+
+3. INTRODUZIONE
+Il presente documento ha l'obiettivo di guidare l'utente opportunamente abilitato ad effettuare
+l'accesso all'interno degli applicativi in SSO del SISIR della Regione Basilicata illustrando tutte le
+modalità previste e le relative procedure da eseguire.
+
+NOTA: non tutti gli applicativi prevedono necessariamente tutte le modalità di accesso illustrate di
+seguito.
+
+4. RIFERIMENTI UTILI
+
+4.1. Assistenza tecnica
+Per ricevere assistenza tecnica sull'utilizzo di un applicativo e/o supporto in help-desk è possibile
+contattare il centralino telefonico raggiungibile al numero di 0971 469356 e disponibile dal Lunedì
+al Venerdì nei giorni e negli orari lavorativi.
+
+4.2. Invio segnalazioni e/o suggerimenti
+Per segnalare anomalie riscontrate o suggerimenti volti al miglioramento dell'utilizzo
+dell'applicativo è possibile inviare una mail all'indirizzo ticket@sanita.basilicata.it
+
+5. SPECIFICHE TECNICHE
+Per una migliore e più celere assistenza, a volte potrebbe essere utile rilevare il numero di
+versione identificativo dell'applicativo in uso: una volta effettuato l'accesso, tale informazione è
+riportata a piè di pagina nelle schermate dell'applicativo
+
+SISIR - Guida Accesso agli applicativi - v1 - r2 Pagina 4 di 17
+
+6. ACCESSO ALL'APPLICATIVO
+Accedendo all'indirizzo web di riferimento di un applicativo in SSO del SISIR, nel rispetto degli
+standard previsti dallo stesso, verrà mostrata una schermata come quella raffigurata nell'immagine
+sottostante per permettere all'operatore di effettuare l'accesso.
+
+Illustrazione 1: Schermata iniziale per l'accesso all'applicativo
+
+Per accedere all'applicativo è necessario che l'utenza dell'operatore sia stata censita all'interno
+dell'archivio.
+In caso di problemi con l'accesso si prega di contattare il servizio di assistenza tecnica così
+come indicato nell'apposito paragrafo Assistenza tecnica.
+Le modalità di accesso previste sono le seguenti:
+• CIE TS-CNS Medico/Utente
+• OTP Utente
+• SPID (Medico/Utente)
+di seguito verranno descritti requisiti e procedure da seguire per ciascuna di esse.
+
+SISIR - Guida Accesso agli applicativi - v1 - r2 Pagina 5 di 17
+
+6.1. CIE TS-CNS Medico/Utente
+Il Sistema di autenticazione “CIE TS-CNS” è lo strumento per effettuare l'accesso nel caso in cui si
+disponga di una Carta Nazionale dei Servizi (CNS).
+Fisicamente possono fungere da CNS i seguenti dispositivi:
+
+Carta d'Identità Elettronica (CIE) Token USB certificato CNS Tessera Sanitaria abilitata a CNS
+
+6.1.1 Accesso con CIE
+Per utilizzare la Carta di Identità Elettronica (CIE) come strumento di autenticazione all'interno
+degli applicativi SISIR è necessario disporre del codice PIN ad essa associato e di un lettore NFC
+opportunamente installato all'interno del sistema utilizzato unitamente al software Middleware CIE
+che è disponibile gratuitamente al seguente indirizzo web:
+https://www.cartaidentita.interno.gov.it/identificazione-digitale/software-cie/
+
+Una volta collegato la CIE al lettore NFC, avviando il software
+Middleware CIE verrà visualizzata una schermata come quella
+riportata di seguito
+
+SISIR - Guida Accesso agli applicativi - v1 - r2 Pagina 6 di 17
+
+Illustrazione 2: Schermata di avvio software "Middleware CIE"
+
+Cliccando sul pulsante “Continua” posto in basso per procedere verrà mostrato un memo degli
+strumenti necessari per l’utilizzo di CIE ID:
+
+Illustrazione 3: Schermata memo strumenti necessari per l'utilizzo di CIE ID
+
+Cliccando sul pulsante “Inizia” posto in basso per proseguire verrà mostrata la schermata per
+l'acquisizione del codice PIN della CIE che permetterà l'abbinamento della stessa al sistema in
+uso:
+
+SISIR - Guida Accesso agli applicativi - v1 - r2 Pagina 7 di 17
+
+Illustrazione 4: Schermata acquisizione codice PIN della CIE
+
+Appoggiando la CIE sul lettore di smart card collegato alla postazione, digitando il PIN e
+selezionando il tasto "Abbina" si avvia la procedura. È necessario fornire il PIN per esteso,
+digitando tutte e 8 le cifre. A seguito dell’abbinamento sarà necessario sollevare e poggiare la
+carta nuovamente sul lettore, prima di iniziare la navigazione e qualunque autenticazione con la
+CIE. Non sarà più necessario infine digitare tutte e 8 le cifre del PIN, ma verranno richieste solo le
+ultime 4.
+
+Illustrazione 5: schermata di “Autenticazione in corso...” procedura CIE ID
+
+SISIR - Guida Accesso agli applicativi - v1 - r2 Pagina 8 di 17
+
+Al termine della procedura, la CIE sarà abilitata all’uso e verrà visualizzata la seguente schermata
+con il messaggio di conferma abilitazione CIE avvenuta con successo:
+
+Illustrazione 6: Schermata conferma abilitazione CIE
+
+cliccando su OK per terminare verrà visualizzata la schermata di riepilogo delle informazioni
+appena acquisite dal sistema
+
+Illustrazione 7: Schermata riepilogo abbinamento CIE
+
+SISIR - Guida Accesso agli applicativi - v1 - r2 Pagina 9 di 17
+
+Una volta collegati alla pagina di accesso verrà così richiesto di immettere il codice PIN del
+dispositivo mediante l'apposita finestra popup:
+
+Illustrazione 8: Finestra popup per immissione PIN accesso con CIE
+
+Se le credenziali sono valide e corrette, cliccando sul pulsante
+“CIE TS-CNS Medico/Utente” come quello raffigurato a lato verrà
+effettuato l'accesso al Sistema e l'operatore visualizzerà l'homepage dell'applicativo.
+
+6.1.2 Accesso con TS-CNS
+In modo preliminare, per effettuare l'accesso con token CNS o TS abilitata a CNS è necessario
+che il dispositivo utilizzato sia connesso al sistema prima di aprire il browser web ed aprire la
+pagina di accesso all'applicativo
+Per effettuare l'accesso con il dispositivo USB certificato CNS è
+necessario collegare lo stesso ad una porta USB della macchina in uso
+e disporre del relativo Codice PIN.
+
+Per effettuare l'accesso con Tessera Sanitaria abilitata a CNS è
+necessario inserire la stessa all'interno di un lettore smartcard
+configurato ed attivo nella macchina in uso e disporre del relativo
+Codice PIN.
+
+Una volta collegati alla pagina di accesso verrà così richiesto di immettere il codice PIN del
+dispositivo mediante l'apposita finestra popup:
+
+SISIR - Guida Accesso agli applicativi - v1 - r2 Pagina 10 di 17
+
+Illustrazione 9: Finestra popup per immissione codice autenticazione accesso con CNS
+
+Se le credenziali sono valide e corrette, cliccando sul pulsante “CIE TS-
+CNS Medico/Utente” come quello raffigurato a lato verrà effettuato
+l'accesso al Sistema e l'operatore visualizzerà l'homepage dell'applicativo.
+
+6.2. OTP Utente
+Per accedere all'interno degli applicativi SISIR con la modalità OTP è necessario che il proprio
+nominativo sia stato preventivamente censito all'interno del sistema OTP manager e che sia stato
+indicato lo strumento personale (PEC o Numero di cellulare) mediante il quale ricevere la
+password temporanea attraverso un messaggio di posta elettronica o un SMS.
+
+Cliccando sul pulsante “OTP Utente” come quello raffigurato a lato
+verrà visualizzata una schermata come quella nell'immagine
+seguente in cui verrà richiesto di inserire il proprio Codice Fiscale senza spaziatura tra gruppi di
+caratteri
+
+SISIR - Guida Accesso agli applicativi - v1 - r2 Pagina 11 di 17
+
+Illustrazione 10: Accesso OTP - step 1
+
+NOTA: qualora non si è registrati al servizio di accesso con OTP è possibile cliccare sul ling
+“REGISTRATI” riportato in basso alla schermata visualizzata e seguire la procedura guidata per
+effettuare la registrazione.
+
+Una volta digitato il Codice Fiscale, per proseguire occorrerà cliccare sul pulsante “Avanti”: se il
+Codice Fiscale risulta correttamente registrato verrà inviato un codice alfanumerico tramite lo
+strumento di ricezione OTP indicato in fase di registrazione (messaggio di posta elettronica o
+SMS) e verrà mostrata una schermata come quella nell'immagine seguente:
+
+Illustrazione 11: Illustrazione 10: Accesso OTP - step 2
+
+SISIR - Guida Accesso agli applicativi - v1 - r2 Pagina 12 di 17
+
+All'interno del campo “Inserisci il codice” occorrerà digitare la password temporanea ricevuta
+facendo attenzione a rispettare i caratteri in maiuscolo e quelli in minuscolo: nel caso ci sia
+necessità di visualizzare i caratteri digitati, è possibile cliccare sull'icona “occhio” posta all'estremità
+del campo e raffigurata a lato.
+
+Al termine, cliccando sul pulsante “Conferma”, se le informazioni inserite sono corrette, e
+l'operatore risulta opportunamente abilitato, verrà effettuato l'accesso all'applicativo e verrà
+visualizzata l'hompage dello stesso.
+
+SISIR - Guida Accesso agli applicativi - v1 - r2 Pagina 13 di 17
+
+6.3. SPID
+SPID è il Sistema Pubblico di Identità Digitale: la soluzione che permette di accedere a tutti i
+servizi online della Pubblica Amministrazione con un'unica Identità Digitale (username e
+password) utilizzabile da computer, tablet e smartphone.
+Il link per richiedere le credenziali SPID è https://www.spid.gov.it/richiedi-spid.
+
+IMPORTANTE : l'accesso mediante la procedura di identificazione SPID livello 3 consente la
+consultazione dei dati personali di chi accede e di terzi (come ad es. nel caso di un Medico
+che può consultare le informazioni dei propri assistiti), mentre la procedura di identificazione
+SPID livello 2 consente la consultazione esclusivamente dei dati personali di chi accede.
+
+6.3.1 Accesso SPID Medico
+L'Accesso “SPID Medico” è previsto nel caso in cui l'operatore debba accedere e consultare le
+informazioni dei propri dati e di quelli di terzi (es. Medico che accede al FSE di un suo assistito).
+Per tale modalità di accesso è necessario che l'operatore disponga di un proprio account SPID
+livello 3
+Per accedere con tale modalità occorre cliccare sul pulsante “SPID
+Medico” come quello raffigurato a lato
+
+6.3.2 Accesso SPID Utente
+L'Accesso “SPID Utente” è previsto nel caso in cui l'operatore debba accedere e consultare
+esclusivamente i propri dati personali (es. assistito che accede al proprio FSE).
+Per tale modalità di accesso è necessario che l'operatore disponga di un proprio account SPID
+livello 2
+Per accedere con tale modalità occorre cliccare sul pulsante
+“SPID Utente” come quello raffigurato a lato
+
+A prescindere della tipologia di accesso SPID selezionata (Medico o Utente) si verrà
+reindirizzati alla pagina della Regione Basilicata come quella nell'immagine seguente:
+
+SISIR - Guida Accesso agli applicativi - v1 - r2 Pagina 14 di 17
+
+Illustrazione 12: Pagina per l'autenticazione con SPID
+
+da cui sarà possibile selezionare l'ente certificatore e seguire l'apposita procedura di
+identificazione ed autenticazione che varia da SPID livello 2 (che prevede un'autenticazione a
+2 fattori) a SPID livello 3 (che prevede un'autenticazione a 3 fattori).
+
+SISIR - Guida Accesso agli applicativi - v1 - r2 Pagina 15 di 17
+
+7. PAGINA DI ACCESSO ALL'APPLICATIVO E MENÙ OPERATIVI
+Una volta effettuato l'accesso all'applicativo verrà visualizzata la homepage che tipicamente
+presenta una barra arancione in alto all'interno della quale è contenuto un menù utente
+
+7.1. Menù operazioni utente
+
+Per le operazioni relative all'attività dell'utente che prescinde dalle operazioni funzionali specifiche
+dell'applicativo, è presente un menù generale accessibile mediante un click sull'icona triangolare
+posta a seguire il nome dell'operatore loggato in alto a destra sul banner dell'intestazione
+
+Illustrazione 13: Schermata esemplificativa menù operatore
+
+che comprende le seguenti voci:
+• Video Guida: se viene visualizzata, questa voce permette (tramite un click su di essa) di
+aprire una nuova finestra del browser contenente al suo interno un video-tutorial
+esemplificativo delle funzionalità previste dall'applicativo;
+• Guida Utente: se viene visualizzata, questa voce permette (tramite un click su di essa) di
+aprire una nuova finestra del browser in uso contenente al suo interno l'ultima versione
+disponibile della guida utente dell'applicativo in formato PDF;
+• Segnala un problema: questa voce permette (tramite un click su di essa) di visualizzare
+una finestra popup da cui sarà possibile digitare una descrizione testuale di un problema o
+di un'anomalia riscontrata nell'utilizzo dell'applicativo in modo tale che la stessa possa
+essere presa in carico dal servizio tecnico che provvederà alla risoluzione;
+
+SISIR - Guida Accesso agli applicativi - v1 - r2 Pagina 16 di 17
+
+• Accedi al portale di assistenza: questa voce permette (tramite un click su di essa) di
+effettuare l'accesso al portale di assistenza tecnica del SISIR di Basilicata, da cui sarà
+possibile (pervia autenticazione) inviare segnalazioni e/o richieste di assistenza mediante
+l'apertura di ticket e/o seguire la relativa evoluzione nel processo di presa in carico da parte
+di un operatore del supporto;
+• Esci: questa voce permette (tramite un click su di essa) di effettuare le operazioni di logout
+e disconnessione dell'operatore corrente dall'applicativo;
+
+SISIR - Guida Accesso agli applicativi - v1 - r2 Pagina 17 di 17

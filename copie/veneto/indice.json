@@ -1,6 +1,6 @@
 {
  "regione": "veneto",
- "aggiornato": "2026-11-02T07:43:10.818Z",
+ "aggiornato": "2026-11-02T10:20:42.808Z",
  "pagine": [
   {
    "asl": "belluno",
@@ -191,9 +191,9 @@
    "http": 200,
    "file": "treviso/3f2877cab1fe.txt",
    "titolo": "Homepage - ULSS 2 Marca Trevigiana",
-   "sha": "35cebdce6c7450209660e6f858ba89fba98aef73fadca32bfb6c6a96615e477a",
-   "caratteri": 6258,
-   "cambiata": false
+   "sha": "f7b8edf674472534e7a58e3eb210f37c8db33116c51fca89061394a8a3533601",
+   "caratteri": 21901,
+   "cambiata": true
   },
   {
    "asl": "treviso",
@@ -419,19 +419,20 @@
    "finale": "https://www.aulss3.veneto.it/home",
    "file": "venezia/16b1625c6d9f.txt",
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
-   "sha": "7eb08f23d190b97ec3beb8d9c119c7660f0294f9172059cc90e8b7e4127bc166",
-   "caratteri": 6433,
-   "cambiata": false
+   "sha": "f4b9dac7409e262e6d265367c64dbf9edaa386a6da544debf1969805ac851542",
+   "caratteri": 6150,
+   "cambiata": true
   },
   {
    "asl": "venezia",
    "url": "https://www.aulss3.veneto.it/home/numeri-utili/116117",
    "controllata": "2026-11-02",
+   "browser": true,
    "http": 200,
    "file": "venezia/b2b315e09b76.txt",
-   "titolo": "myPortal | ULSS 3 SERENISSIMA",
-   "sha": "8357c3df048ee62b237df5f1c0798f7afb9809f7a40dee8a34997fae5c66edcc",
-   "caratteri": 29,
+   "titolo": "ULSS 3 SERENISSIMA - Centrale 116117",
+   "sha": "38d9270bfec969cade40ebb537076133b7a01385de1af707afa494d5ee819171",
+   "caratteri": 7877,
    "cambiata": true
   },
   {
@@ -485,11 +486,12 @@
    "asl": "venezia",
    "url": "https://www.aulss4.veneto.it/servizionline/urp-ufficio-relazioni-con-il-pubblico",
    "controllata": "2026-11-02",
+   "browser": true,
    "http": 200,
    "file": "venezia/0fc90d5b2483.txt",
-   "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
-   "sha": "6bc2275696536324da914a4390835a8856b32ef9c71aa40dd59c0c5b84156a8f",
-   "caratteri": 45,
+   "titolo": "URP - Ufficio Relazioni con il Pubblico",
+   "sha": "d25943393fc85cd71be451c4505c54f0135e9764bd570f5463c04933d8eead38",
+   "caratteri": 5857,
    "cambiata": true
   },
   {
@@ -537,9 +539,9 @@
    "finale": "https://www.aulss3.veneto.it/home",
    "file": "venezia/d213a293dfcf.txt",
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
-   "sha": "7eb08f23d190b97ec3beb8d9c119c7660f0294f9172059cc90e8b7e4127bc166",
-   "caratteri": 6433,
-   "cambiata": false
+   "sha": "f4b9dac7409e262e6d265367c64dbf9edaa386a6da544debf1969805ac851542",
+   "caratteri": 6150,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -550,9 +552,9 @@
    "finale": "https://www.aulss3.veneto.it/home",
    "file": "venezia/3eaad184c615.txt",
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
-   "sha": "7eb08f23d190b97ec3beb8d9c119c7660f0294f9172059cc90e8b7e4127bc166",
-   "caratteri": 6433,
-   "cambiata": false
+   "sha": "f4b9dac7409e262e6d265367c64dbf9edaa386a6da544debf1969805ac851542",
+   "caratteri": 6150,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -609,9 +611,9 @@
    "http": 200,
    "file": "venezia/94b10fd120ae.txt",
    "titolo": "ULSS 3 SERENISSIMA - Prenotare o disdire una prestazione",
-   "sha": "fbcab6fd77c63a07810b60fbb0816bab1da9fa168f1018a74147a27a44f29a05",
+   "sha": "b7747d2f8a236bd9dc8e25ff369b22b081fdd64032159a29c9868d1e38b07225",
    "caratteri": 3876,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -714,22 +716,24 @@
    "asl": "venezia",
    "url": "https://www.aulss4.veneto.it/servizionline/prenotazione-esami-di-laboratorio-presso-le-strutture-dellazienda-ulss4-veneto-orientale",
    "controllata": "2026-11-02",
+   "browser": true,
    "http": 200,
    "file": "venezia/7259f23ba486.txt",
-   "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
-   "sha": "6bc2275696536324da914a4390835a8856b32ef9c71aa40dd59c0c5b84156a8f",
-   "caratteri": 45,
+   "titolo": "Azienda ULSS n. 4 Veneto Orientale - Prenotazione esami di laboratorio presso le strutture dell'Azienda Ulss4 \"Veneto Orientale\"",
+   "sha": "639a5afddb6322348a5a2962cc2fba1c554e07dede861388a1a1a61d719c21fe",
+   "caratteri": 3630,
    "cambiata": true
   },
   {
    "asl": "venezia",
    "url": "https://www.aulss4.veneto.it/home/numeri-utili/116117-e-continuita-assistenziale",
    "controllata": "2026-11-02",
+   "browser": true,
    "http": 200,
    "file": "venezia/7e3d7e26db54.txt",
-   "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
-   "sha": "6bc2275696536324da914a4390835a8856b32ef9c71aa40dd59c0c5b84156a8f",
-   "caratteri": 45,
+   "titolo": "Azienda ULSS n. 4 Veneto Orientale - 116117 e Continuità Assistenziale",
+   "sha": "6418952a2e8d22b121116a7ee3ee2591cfc302d6c5bd29be7454989b7679a99c",
+   "caratteri": 3268,
    "cambiata": true
   },
   {
@@ -777,9 +781,9 @@
    "finale": "https://www.aulss3.veneto.it/home",
    "file": "venezia/a029f2332558.txt",
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
-   "sha": "7eb08f23d190b97ec3beb8d9c119c7660f0294f9172059cc90e8b7e4127bc166",
-   "caratteri": 6433,
-   "cambiata": false
+   "sha": "f4b9dac7409e262e6d265367c64dbf9edaa386a6da544debf1969805ac851542",
+   "caratteri": 6150,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -790,9 +794,9 @@
    "finale": "https://www.aulss3.veneto.it/home",
    "file": "venezia/b6eaeaaa2085.txt",
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
-   "sha": "7eb08f23d190b97ec3beb8d9c119c7660f0294f9172059cc90e8b7e4127bc166",
-   "caratteri": 6433,
-   "cambiata": false
+   "sha": "f4b9dac7409e262e6d265367c64dbf9edaa386a6da544debf1969805ac851542",
+   "caratteri": 6150,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -829,9 +833,9 @@
    "finale": "https://www.aulss3.veneto.it/home",
    "file": "venezia/e677293f92f5.txt",
    "titolo": "myPortal | ULSS 3 SERENISSIMA",
-   "sha": "7eb08f23d190b97ec3beb8d9c119c7660f0294f9172059cc90e8b7e4127bc166",
-   "caratteri": 6433,
-   "cambiata": false
+   "sha": "f4b9dac7409e262e6d265367c64dbf9edaa386a6da544debf1969805ac851542",
+   "caratteri": 6150,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -879,7 +883,7 @@
    "titolo": "Homepage - ULSS 5 Polesana",
    "sha": "7b8ae78fe7220123a1aec884272b09f7347285144296737ca0884da7a94bda26",
    "caratteri": 5718,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "rovigo",
@@ -1088,9 +1092,9 @@
    "http": 200,
    "file": "padova/326a059622c6.txt",
    "titolo": "Homepage ULSS6 Euganea",
-   "sha": "4e5550d004b3694a75509c31f99dfdcbc0bb02f4b4aa24015ae3626ee50962b9",
-   "caratteri": 7176,
-   "cambiata": false
+   "sha": "15a7079c56617a54bc7658f9c597ac69f0de404f4e937869c94f9157a378c891",
+   "caratteri": 7255,
+   "cambiata": true
   },
   {
    "asl": "padova",
@@ -1277,9 +1281,9 @@
    "http": 200,
    "file": "vicenza/6ab81c5aab52.txt",
    "titolo": "Homepage ULSS 8 Berica",
-   "sha": "cfc45753642f8406d3f359cef7dedb232ce864d950a3094f2af4f7b7ce0049c2",
-   "caratteri": 6198,
-   "cambiata": false
+   "sha": "64f9fb590cc4b6791ab85ae60ce0260bc67fd3a596bc9259ae3f5591f278708c",
+   "caratteri": 6186,
+   "cambiata": true
   },
   {
    "asl": "vicenza",
@@ -1711,7 +1715,7 @@
    "sha": "4c70cfd8bacb66aa14c3b93bca3b80f543b4e15362bbb319a4d060b199b94ef5",
    "caratteri": 109613,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "verona",

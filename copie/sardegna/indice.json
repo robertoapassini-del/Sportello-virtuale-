@@ -1,6 +1,6 @@
 {
  "regione": "sardegna",
- "aggiornato": "2026-11-02T06:59:37.437Z",
+ "aggiornato": "2026-11-02T09:34:47.502Z",
  "pagine": [
   {
    "asl": "cagliari",
@@ -375,16 +375,28 @@
    "cambiata": false
   },
   {
+   "asl": "gallura",
+   "url": "https://www.aslgallura.it/percorso-di-tutela/",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "gallura/15f0fd4f4ec0.txt",
+   "titolo": "Percorso di tutela - ASL Gallura",
+   "sha": "9b6a3e05b07622d0aa588a181cbaec6866ee13b0910b4c58d1a74ead2805c718",
+   "caratteri": 2882,
+   "email_nascoste": 1,
+   "cambiata": true
+  },
+  {
    "asl": "medio-campidano",
    "url": "https://www.aslmediocampidano.it/",
    "controllata": "2026-11-02",
    "http": 200,
    "file": "medio-campidano/65e99d67910c.txt",
    "titolo": "ASL Medio Campidano - Home Page",
-   "sha": "2c25f753abd08a5c5cb5ba3dcbc18b5b18b8593f71d001617ce6e69e59fdedef",
-   "caratteri": 6440,
+   "sha": "30f9b156573303deafde32ffb099362d1d18f8a99921290fb2d736be6afe0fc8",
+   "caratteri": 6192,
    "email_nascoste": 4,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "medio-campidano",
@@ -592,9 +604,9 @@
    "http": 200,
    "file": "nuoro/581060021d18.txt",
    "titolo": "ASL Nuoro - Home Page",
-   "sha": "25b223fb3fe7e6d7b55655e99ade1a44fc30a3795a767b82ccec41b188d3e77a",
-   "caratteri": 5219,
-   "cambiata": false
+   "sha": "065c529909b52244427dd2fc12eb1b57e9e94d2de8f1cb4f7bd41d0e2d9b4edb",
+   "caratteri": 5194,
+   "cambiata": true
   },
   {
    "asl": "nuoro",
@@ -1004,10 +1016,10 @@
    "http": 200,
    "file": "oristano/766feec05db7.txt",
    "titolo": "Home Page - ASL Oristano",
-   "sha": "d49e52a0705432ca9b2a2a4406881a7ef356fff193e0dae8f2a5fb4d14c4913c",
-   "caratteri": 7608,
+   "sha": "c5bd4d581d3a1fdb0410ef47861652bf7824311339a1bcf5f4ff1687e815e1a1",
+   "caratteri": 7874,
    "email_nascoste": 2,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "oristano",
@@ -1112,12 +1124,102 @@
   },
   {
    "asl": "oristano",
+   "url": "https://www.asl5oristano.it/servizio/percorso-di-tutela/",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "oristano/c194f32c9bb4.txt",
+   "titolo": "Percorso di Tutela - ASL Oristano",
+   "sha": "0972d53a3ab293b50d9fe487d87c2e372c4eb168cb35935c8631275303a682b0",
+   "caratteri": 7132,
+   "email_nascoste": 4,
+   "link_pdf": [
+    {
+     "url": "https://www.asl5oristano.it/wp-content/uploads/2026/09/PDEL_2026_0000424_Allegato_1_Regolamento_percorso_di_tutela.pdf",
+     "testo": "Regolamento del percorso di tutela"
+    },
+    {
+     "url": "https://www.asl5oristano.it/wp-content/uploads/2026/09/PDEL_2026_0000424_allegato_2_modulo_istanza.pdf",
+     "testo": "Modulo istanza"
+    },
+    {
+     "url": "https://www.asl5oristano.it/wp-content/uploads/2026/09/PDEL_2026_0000424_allegato_3_dichiarazione_sostitutiva_di_atto_notorio.pdf",
+     "testo": "Dichiarazione sostitutiva di atto notorio"
+    },
+    {
+     "url": "https://www.asl5oristano.it/wp-content/uploads/2026/09/PDEL_2026_0000424_allegato_4_dichiarazione_sostitutiva_di_certificazione_di_residenza.pdf",
+     "testo": "Dichiarazione sostitutiva di certificazione di residenza"
+    },
+    {
+     "url": "https://www.asl5oristano.it/wp-content/uploads/2026/09/PDEL_2026_0000424_Allegato_5_MODULO_RIMBORSO_VISITA_IN_INTRAMOENIA_ASL5_Oristano.pdf",
+     "testo": "Modulo rimborso visita in intramoenia"
+    },
+    {
+     "url": "https://www.asl5oristano.it/wp-content/uploads/2026/09/PDEL_2026_0000424_Allegato_6_MODULO_RIMBORSO_VISITA_IN_PRIVATO_ACCREDITATO_ASL5_Oristano.pdf",
+     "testo": "Modulo rimborso prestazioni specialistiche"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "oristano",
    "url": "https://www.asl5oristano.it/wp-content/uploads/2024/09/Modello-unificato-per-i-tre-Distretti-delle-deleghe-per-Scelta-e-Revoca-del-Medico.pdf",
    "controllata": "2026-11-02",
    "da_pagina": "https://www.asl5oristano.it/servizio/scelta-e-revoca-medico-e-pediatria/",
    "http": 200,
    "pdf": true,
    "nota": "PDF senza testo (forse una scansione): non copiato"
+  },
+  {
+   "asl": "oristano",
+   "url": "https://www.asl5oristano.it/wp-content/uploads/2026/09/PDEL_2026_0000424_Allegato_1_Regolamento_percorso_di_tutela.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.asl5oristano.it/servizio/percorso-di-tutela/",
+   "http": 200,
+   "file": "oristano/907e878713f8.txt",
+   "titolo": "CONVENZIONE STAGE",
+   "sha": "c59e43c3c7ff943c08046d933fd446c605df20e6543a41f17ecd3223f446ac35",
+   "caratteri": 17026,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "oristano",
+   "url": "https://www.asl5oristano.it/wp-content/uploads/2026/09/PDEL_2026_0000424_allegato_2_modulo_istanza.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.asl5oristano.it/servizio/percorso-di-tutela/",
+   "http": 200,
+   "file": "oristano/7d8671bb6963.txt",
+   "titolo": "Allegato 2 - Istanza di autorizzazione all’inserimento nel percorso di tutela per prestazioni",
+   "sha": "24e1ef9972db00d69d487f4632d68459985b744b168d9862b8904f007f84c0fa",
+   "caratteri": 2152,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "oristano",
+   "url": "https://www.asl5oristano.it/wp-content/uploads/2026/09/PDEL_2026_0000424_Allegato_5_MODULO_RIMBORSO_VISITA_IN_INTRAMOENIA_ASL5_Oristano.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.asl5oristano.it/servizio/percorso-di-tutela/",
+   "http": 200,
+   "file": "oristano/79d3828662f1.txt",
+   "titolo": "Allegato 5",
+   "sha": "93593546243f853a2537765c73a3b6df9055abe1879ad2ea25b25c4f11ad8cf9",
+   "caratteri": 3346,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "oristano",
+   "url": "https://www.asl5oristano.it/wp-content/uploads/2026/09/PDEL_2026_0000424_Allegato_6_MODULO_RIMBORSO_VISITA_IN_PRIVATO_ACCREDITATO_ASL5_Oristano.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.asl5oristano.it/servizio/percorso-di-tutela/",
+   "http": 200,
+   "file": "oristano/d16febdfd341.txt",
+   "titolo": "Allegato 6",
+   "sha": "26aa8a7a864f818b46bc3edb1ea897353b4d742ae351f67e5f50dcb6d266b1e2",
+   "caratteri": 3367,
+   "pdf": true,
+   "cambiata": true
   },
   {
    "asl": "sassari",
@@ -1635,6 +1737,28 @@
   },
   {
    "asl": "inps-sardegna",
+   "url": "https://www.inps.it/it/it/inps-comunica/atti/circolari-messaggi-e-normativa/dettaglio.circolari-e-messaggi.2026.02.messaggio-numero-635-del-23-02-2026_15174.html",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "inps-sardegna/cccb8fb66c47.txt",
+   "titolo": "",
+   "sha": "1dc384a02f2e418c920e5a9f57f0cf5b6b7f29822ea3202890e4b56bb6dc75bd",
+   "caratteri": 41627,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-sardegna",
+   "url": "https://www.inps.it/it/it/inps-comunica/atti/circolari-messaggi-e-normativa/dettaglio.circolari-e-messaggi.2026.02.messaggio-numero-637-del-23-02-2026_15175.html",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "inps-sardegna/fe6bf974a7bb.txt",
+   "titolo": "",
+   "sha": "0626e00fcee2d3070920d78e1c39df709826bc1e15500e3cbbd3409b2d6fd4f0",
+   "caratteri": 41627,
+   "cambiata": true
+  },
+  {
+   "asl": "inps-sardegna",
    "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2024.12.accertamento-della-disabilit-avvio-sperimentazione-della-riforma.html",
    "controllata": "2026-11-02",
    "http": 200,
@@ -1706,8 +1830,8 @@
    "http": 200,
    "file": "regione-sardegna/5dae24b1e42b.txt",
    "titolo": "Aiuto - CupWeb",
-   "sha": "35ca0071ab76e79683508519297b82437000f61d46c2779abcae96207058b746",
-   "caratteri": 19023,
+   "sha": "6a60c23b78943d2f2c26ef2f791b19bd2eb275b0784abf709b5f624bc8e1ee4a",
+   "caratteri": 19024,
    "link_pdf": [
     {
      "url": "https://manuali.sardegnasalute.it/manuali/Manuale_PRENOTA_ROSSA_CUP.pdf",

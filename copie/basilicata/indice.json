@@ -1,6 +1,6 @@
 {
  "regione": "basilicata",
- "aggiornato": "2026-11-02T05:38:10.076Z",
+ "aggiornato": "2026-11-02T08:08:34.972Z",
  "pagine": [
   {
    "asl": "matera",
@@ -105,6 +105,48 @@
   },
   {
    "asl": "matera",
+   "url": "https://www.salute.basilicata.it/servizi-agli-assistiti/servizi-di-prevenzione/screening-oncologici/",
+   "controllata": "2026-11-02",
+   "browser": true,
+   "http": 200,
+   "finale": "https://idp.sanita.basilicata.it:9443/authenticationendpoint/login.do?RelayState=mFdI-yzQI4H7B_Ox6x7VaaO1Hrq1V80FiG-VdpjlDGw.clvvXjpO1vo.servizi.salute.basilicata.it&commonAuthCallerPath=%2Fsamlsso&forceAuth=true&passiveAuth=false&tenantDomain=carbon.super&sessionDataKey=4631aefa-7b18-45a9-a427-49e0cf87f054&relyingParty=id.salute.basilicata.it&type=samlsso&sp=id.salute.basilicata.it&isSaaSApp=false&authenticators=SAMLSSOAuthenticator:SPID_LIV_2:SPID_LIV_3:LOCAL",
+   "file": "matera/de4da2f6f01b.txt",
+   "titolo": "SISIR",
+   "sha": "e05eab48fb40c3ac25b451eb03c57e087cf5cd055d28a95424ac258b3f6fb579",
+   "caratteri": 1065,
+   "link_pdf": [
+    {
+     "url": "https://idp.sanita.basilicata.it:9443/authenticationendpoint/resources/SISIR%20-%20Guida%20Accesso%20agli%20applicativi%20-%20v1%20-%20r2.pdf",
+     "testo": "Manuale d'uso"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "matera",
+   "url": "https://screening.regione.basilicata.it/",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "matera/5531e554e5bf.txt",
+   "titolo": "Screening Basilicata",
+   "sha": "d1bb237178bbb7a99dcb87a8b9a81671533c0050e28922f377728d9537e097d9",
+   "caratteri": 20,
+   "cambiata": true
+  },
+  {
+   "asl": "matera",
+   "url": "https://www.salute.basilicata.it/assistenza/screening-oncologici/",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "matera/a258d18f1fc2.txt",
+   "titolo": "Archivi Faq - Salute Basilicata",
+   "sha": "554fbe77369c27058b3d11bbc6347542c9a2ceef4eb7c79d5ccc1eaf7e091dff",
+   "caratteri": 5935,
+   "cambiata": true
+  },
+  {
+   "asl": "matera",
    "url": "https://old.asmbasilicata.it/servizi/Menu/dinamica.aspx?idSezione=17695&idArea=17697&idCat=17730&ID=18170&TipoElemento=pagina",
    "controllata": "2026-11-02",
    "http": 200,
@@ -188,6 +230,19 @@
    "caratteri": 688,
    "pdf": true,
    "cambiata": false
+  },
+  {
+   "asl": "matera",
+   "url": "https://idp.sanita.basilicata.it:9443/authenticationendpoint/resources/SISIR%20-%20Guida%20Accesso%20agli%20applicativi%20-%20v1%20-%20r2.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.salute.basilicata.it/servizi-agli-assistiti/servizi-di-prevenzione/screening-oncologici/",
+   "http": 200,
+   "file": "matera/dbbea8c824ad.txt",
+   "titolo": "Guida Accesso applicativi",
+   "sha": "b48fa1241e96d63f1ac035b2475fd9567cb8468b3b696a7d63f5f35b40e5e8f2",
+   "caratteri": 14229,
+   "pdf": true,
+   "cambiata": true
   },
   {
    "asl": "potenza",
@@ -333,6 +388,48 @@
   },
   {
    "asl": "potenza",
+   "url": "https://www.salute.basilicata.it/servizi-agli-assistiti/servizi-di-prevenzione/screening-oncologici/",
+   "controllata": "2026-11-02",
+   "browser": true,
+   "http": 200,
+   "finale": "https://idp.sanita.basilicata.it:9443/authenticationendpoint/login.do?RelayState=DUJUgLBNdLoPMraycky24QcMvTMRNuTBNFJrGwO2oXc.cbyglC5DEKo.servizi.salute.basilicata.it&commonAuthCallerPath=%2Fsamlsso&forceAuth=true&passiveAuth=false&tenantDomain=carbon.super&sessionDataKey=cd0dbb4a-d539-434b-900f-0de3d81ea82d&relyingParty=id.salute.basilicata.it&type=samlsso&sp=id.salute.basilicata.it&isSaaSApp=false&authenticators=SAMLSSOAuthenticator:SPID_LIV_2:SPID_LIV_3:LOCAL",
+   "file": "potenza/de4da2f6f01b.txt",
+   "titolo": "SISIR",
+   "sha": "e05eab48fb40c3ac25b451eb03c57e087cf5cd055d28a95424ac258b3f6fb579",
+   "caratteri": 1065,
+   "link_pdf": [
+    {
+     "url": "https://idp.sanita.basilicata.it:9443/authenticationendpoint/resources/SISIR%20-%20Guida%20Accesso%20agli%20applicativi%20-%20v1%20-%20r2.pdf",
+     "testo": "Manuale d'uso"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "potenza",
+   "url": "https://screening.regione.basilicata.it/",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "potenza/5531e554e5bf.txt",
+   "titolo": "Screening Basilicata",
+   "sha": "d1bb237178bbb7a99dcb87a8b9a81671533c0050e28922f377728d9537e097d9",
+   "caratteri": 20,
+   "cambiata": true
+  },
+  {
+   "asl": "potenza",
+   "url": "https://www.salute.basilicata.it/assistenza/screening-oncologici/",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "potenza/a258d18f1fc2.txt",
+   "titolo": "Archivi Faq - Salute Basilicata",
+   "sha": "554fbe77369c27058b3d11bbc6347542c9a2ceef4eb7c79d5ccc1eaf7e091dff",
+   "caratteri": 5935,
+   "cambiata": true
+  },
+  {
+   "asl": "potenza",
    "url": "https://www.aspbasilicata.it/servizi-per-i-cittadini/liste-di-attesa/",
    "controllata": "2026-11-02",
    "http": 200,
@@ -454,6 +551,19 @@
    "caratteri": 35404,
    "pdf": true,
    "cambiata": false
+  },
+  {
+   "asl": "potenza",
+   "url": "https://idp.sanita.basilicata.it:9443/authenticationendpoint/resources/SISIR%20-%20Guida%20Accesso%20agli%20applicativi%20-%20v1%20-%20r2.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://www.salute.basilicata.it/servizi-agli-assistiti/servizi-di-prevenzione/screening-oncologici/",
+   "http": 200,
+   "file": "potenza/dbbea8c824ad.txt",
+   "titolo": "Guida Accesso applicativi",
+   "sha": "b48fa1241e96d63f1ac035b2475fd9567cb8468b3b696a7d63f5f35b40e5e8f2",
+   "caratteri": 14229,
+   "pdf": true,
+   "cambiata": true
   },
   {
    "asl": "regole",
@@ -632,6 +742,29 @@
    "caratteri": 6639,
    "pdf": true,
    "cambiata": false
+  },
+  {
+   "asl": "regione-basilicata",
+   "url": "https://www.regione.basilicata.it/liste-dattesa-ok-a-piano-per-la-specialistica/",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "regione-basilicata/6b0c6f848ed1.txt",
+   "titolo": "Liste d’attesa, ok a piano per la specialistica - Regione Basilicata",
+   "sha": "e95eddcaa53529acfccead165bc5b05a17fb40f3781f876d9559946b59a5edc3",
+   "caratteri": 12177,
+   "cambiata": true
+  },
+  {
+   "asl": "regione-basilicata",
+   "url": "https://www.regione.basilicata.it/wp-content/uploads/giunta/docs/DOCUMENT_FILE_3084825.pdf",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "regione-basilicata/370c9dfdf61e.txt",
+   "titolo": "Microsoft Word - Allegato 2 RELAZIONE SULLA GESTIONE Consolidato 2020_20apr2022",
+   "sha": "26b171819d76fd08d583521d1368c8a7d1b37c3d4e0b1e47a270c0343f01054f",
+   "caratteri": 84810,
+   "pdf": true,
+   "cambiata": true
   },
   {
    "asl": "inps-basilicata",
@@ -901,7 +1034,7 @@
    "controllata": "2026-11-02",
    "da_pagina": "https://www.aspbasilicata.it/servizi-on-line/portale-anagrafe-web/",
    "http": 0,
-   "errore": "curl: (28) Connection timed out after 60001 milliseconds"
+   "errore": "curl: (28) Connection timed out after 60003 milliseconds"
   },
   {
    "asl": "ticket-farmaci",

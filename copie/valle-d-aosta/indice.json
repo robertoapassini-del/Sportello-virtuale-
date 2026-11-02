@@ -1,6 +1,6 @@
 {
  "regione": "valle-d-aosta",
- "aggiornato": "2026-11-02T07:31:28.148Z",
+ "aggiornato": "2026-11-02T10:09:10.496Z",
  "pagine": [
   {
    "asl": "aosta",
@@ -9,8 +9,8 @@
    "http": 200,
    "file": "aosta/8c0e7f3ef863.txt",
    "titolo": "Home",
-   "sha": "53309dff113f3d6aabc1ebcf0f5b200f205064558d09f7df10b873cbc02a8181",
-   "caratteri": 8756,
+   "sha": "f0da2687519c5dcfa8306da73b9074b8beca422d29102ec9955514eadf4d1160",
+   "caratteri": 11637,
    "cambiata": true
   },
   {
@@ -285,6 +285,17 @@
   },
   {
    "asl": "aosta",
+   "url": "https://www.regione.vda.it/servsociali/famiglia/servizi/assistenti_sociali/default_i.asp",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "aosta/fa2bb9c03b18.txt",
+   "titolo": "Assistenti sociali - Regione autonoma Valle d'Aosta",
+   "sha": "099822d4c1a24d859f09bfb707346fe9b46f617aaa615964eb8d547e9d5c35c7",
+   "caratteri": 10248,
+   "cambiata": false
+  },
+  {
+   "asl": "aosta",
    "url": "https://www.ausl.vda.it/chi-siamo/ospedale-strutture-reparti-e-servizi-sanitari/reparti/hospice-e-cure-palliative/sede-e-contatti",
    "controllata": "2026-11-02",
    "http": 200,
@@ -301,8 +312,8 @@
    "http": 200,
    "file": "aosta/be0e4b04b0fb.txt",
    "titolo": "Ausili, protesi e ortesi",
-   "sha": "a2b419fd090db7dcf39aec0570d878e6a800d660d68d892bba64c6a02c09646c",
-   "caratteri": 4672,
+   "sha": "d4a4ee0d23dbbffa285f39a185704b16689de02769ddf4c2e3538683740d1971",
+   "caratteri": 4717,
    "link_pdf": [
     {
      "url": "https://www.ausl.vda.it/Media/AUSL/Hierarchy/2/213/2022_vademecum_comodato_d_uso_ausili.pdf",
@@ -482,8 +493,8 @@
    "http": 200,
    "file": "aosta/de0a9b274e10.txt",
    "titolo": "Ambulatori ad accesso diretto",
-   "sha": "f03da7489d358c4a79730d051dbd5edd3bacd3d8715b70be289366a6934edb64",
-   "caratteri": 6128,
+   "sha": "6f1fec6cf2bc20a57e87a736b05a9d643573f54a6e1884498f6b57e9ce1ae2b1",
+   "caratteri": 6218,
    "cambiata": true
   },
   {
@@ -607,17 +618,6 @@
    "titolo": "Azienda USL della Valle d'Aosta",
    "sha": "ae65647740172f874a5517285c20a238c7d676f5b6c163df053767f85f0e5475",
    "caratteri": 1024,
-   "cambiata": false
-  },
-  {
-   "asl": "aosta",
-   "url": "https://www.regione.vda.it/servsociali/famiglia/servizi/assistenti_sociali/default_i.asp",
-   "controllata": "2026-11-02",
-   "http": 200,
-   "file": "aosta/fa2bb9c03b18.txt",
-   "titolo": "Assistenti sociali - Regione autonoma Valle d'Aosta",
-   "sha": "099822d4c1a24d859f09bfb707346fe9b46f617aaa615964eb8d547e9d5c35c7",
-   "caratteri": 10248,
    "cambiata": false
   },
   {

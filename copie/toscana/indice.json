@@ -1,6 +1,6 @@
 {
  "regione": "toscana",
- "aggiornato": "2026-11-02T07:17:54.056Z",
+ "aggiornato": "2026-11-02T09:54:10.514Z",
  "pagine": [
   {
    "asl": "arezzo",
@@ -160,6 +160,19 @@
   },
   {
    "asl": "arezzo",
+   "url": "https://www.uslsudest.toscana.it/percorsi-assistenziali/screening",
+   "controllata": "2026-11-02",
+   "browser": true,
+   "http": 200,
+   "file": "arezzo/80590d638aae.txt",
+   "titolo": "Screening",
+   "sha": "bc97ea2fc7ce238f612235785c992668fd50e3e5b115d27c05937aab6e21ee44",
+   "caratteri": 34851,
+   "email_nascoste": 3,
+   "cambiata": false
+  },
+  {
+   "asl": "arezzo",
    "url": "https://www.uslsudest.toscana.it/attivita-di-tutela",
    "controllata": "2026-11-02",
    "http": 200,
@@ -247,25 +260,6 @@
    "sha": "c6930fc23272735701d365ad24f19e4fe8b2201d94f8d532a9f97b23835d22f0",
    "caratteri": 46308,
    "cambiata": false
-  },
-  {
-   "asl": "arezzo",
-   "url": "https://www.uslsudest.toscana.it/percorsi-assistenziali/screening",
-   "controllata": "2026-11-02",
-   "browser": true,
-   "http": 200,
-   "file": "arezzo/80590d638aae.txt",
-   "titolo": "Screening",
-   "sha": "bc97ea2fc7ce238f612235785c992668fd50e3e5b115d27c05937aab6e21ee44",
-   "caratteri": 34851,
-   "email_nascoste": 3,
-   "cambiata": false
-  },
-  {
-   "asl": "arezzo",
-   "url": "https://www.uslsudest.toscana.it/comunicati-stampa/arezzo-screening-provincia-arezzo-la-segreteria-cambia-numero-e-amplia-l-orario",
-   "controllata": "2026-11-02",
-   "http": 404
   },
   {
    "asl": "arezzo",
@@ -467,9 +461,9 @@
    "http": 200,
    "file": "firenze/394d839724e9.txt",
    "titolo": "Guardia Medica",
-   "sha": "f22d12a9ab2d756750df26c76dd7e20956b311ccf071fe5fdc16ad9fe1e56a28",
+   "sha": "a6a27e31bec634b6bbc9135ca125719a31e35eab21fd7f7b6eda3c1f0b5d7979",
    "caratteri": 1181,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "firenze",
@@ -489,7 +483,7 @@
    "http": 200,
    "file": "firenze/18b27551d55d.txt",
    "titolo": "Scelta e cambio del Medico di famiglia o del Pediatra",
-   "sha": "3f153b0c4ba1f0c0de1f5377d074f8b7034fbc932da15a21b1ccb531a9277928",
+   "sha": "14faa61a3627e243ff52ab0d4de58bbdea1fc123f15c0715a220bca27a9a8a78",
    "caratteri": 1568,
    "cambiata": true
   },
@@ -592,7 +586,7 @@
    "http": 200,
    "file": "firenze/e0a15d6ac889.txt",
    "titolo": "Cartelle cliniche",
-   "sha": "b112a53d920a1ec0b8a1019dcd3d63cb6f6a639642cdd3978d9ca790b43d5fa1",
+   "sha": "ac7e399a491c82572baf0a3e5cc3b047c17b280e8e0572de815d51ce053e66d4",
    "caratteri": 1524,
    "link_pdf": [
     {
@@ -869,6 +863,19 @@
   },
   {
    "asl": "grosseto",
+   "url": "https://www.uslsudest.toscana.it/percorsi-assistenziali/screening",
+   "controllata": "2026-11-02",
+   "browser": true,
+   "http": 200,
+   "file": "grosseto/80590d638aae.txt",
+   "titolo": "Screening",
+   "sha": "bc97ea2fc7ce238f612235785c992668fd50e3e5b115d27c05937aab6e21ee44",
+   "caratteri": 34851,
+   "email_nascoste": 3,
+   "cambiata": false
+  },
+  {
+   "asl": "grosseto",
    "url": "https://www.uslsudest.toscana.it/attivita-di-tutela",
    "controllata": "2026-11-02",
    "http": 200,
@@ -951,19 +958,6 @@
    "titolo": "Scegliere il medico di base - Regione Toscana",
    "sha": "de384c53dbd0c551f03885fad4c7f3620f663bd7dd21aac13dad221341796973",
    "caratteri": 5093,
-   "cambiata": false
-  },
-  {
-   "asl": "grosseto",
-   "url": "https://www.uslsudest.toscana.it/percorsi-assistenziali/screening",
-   "controllata": "2026-11-02",
-   "browser": true,
-   "http": 200,
-   "file": "grosseto/80590d638aae.txt",
-   "titolo": "Screening",
-   "sha": "bc97ea2fc7ce238f612235785c992668fd50e3e5b115d27c05937aab6e21ee44",
-   "caratteri": 34851,
-   "email_nascoste": 3,
    "cambiata": false
   },
   {
@@ -1169,9 +1163,9 @@
    "http": 200,
    "file": "livorno/dcd342d67ea4.txt",
    "titolo": "Home",
-   "sha": "615add09de8b02c6a85c33f8a79704b5e1433acfe754d649c480a9832e6f2711",
-   "caratteri": 4032,
-   "cambiata": false
+   "sha": "0fcb992bd48729f8f1a03ad622d45cfdd5330bb4edd1a3903cd3778f85eaf42c",
+   "caratteri": 4009,
+   "cambiata": true
   },
   {
    "asl": "livorno",
@@ -1235,8 +1229,8 @@
    "http": 200,
    "file": "livorno/969cbc1150a3.txt",
    "titolo": "Contatti e sedi - URP - Ufficio Relazioni con il Pubblico",
-   "sha": "98f1fd2bd35b6f540cd884ca3ca4ac2bf97f84a22abc0b39ffcdb31b772ff3ba",
-   "caratteri": 6709,
+   "sha": "a5fffa5d1109e47266389205065121cdd1aefda061756e0a3963a361b699a819",
+   "caratteri": 6686,
    "email_nascoste": 11,
    "link_pdf": [
     {
@@ -1264,7 +1258,7 @@
      "testo": "Urp Relazione tutela 2021 def.pdf"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "livorno",
@@ -1273,10 +1267,10 @@
    "http": 200,
    "file": "livorno/b68c6ddf23f9.txt",
    "titolo": "Cure palliative- Zona Livornese",
-   "sha": "933a18c23c18e09fe3a58fa6594442512d9b89dc1d0471b445a585a744860f57",
-   "caratteri": 4964,
+   "sha": "c36cefa1be9b9d8974984f2392f88cd230ae33badbe9d0ecd6f3ee28671fc25f",
+   "caratteri": 4941,
    "email_nascoste": 4,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "livorno",
@@ -1397,9 +1391,9 @@
    "http": 200,
    "file": "lucca/dcd342d67ea4.txt",
    "titolo": "Home",
-   "sha": "615add09de8b02c6a85c33f8a79704b5e1433acfe754d649c480a9832e6f2711",
-   "caratteri": 4032,
-   "cambiata": false
+   "sha": "0fcb992bd48729f8f1a03ad622d45cfdd5330bb4edd1a3903cd3778f85eaf42c",
+   "caratteri": 4009,
+   "cambiata": true
   },
   {
    "asl": "lucca",
@@ -1463,8 +1457,8 @@
    "http": 200,
    "file": "lucca/969cbc1150a3.txt",
    "titolo": "Contatti e sedi - URP - Ufficio Relazioni con il Pubblico",
-   "sha": "98f1fd2bd35b6f540cd884ca3ca4ac2bf97f84a22abc0b39ffcdb31b772ff3ba",
-   "caratteri": 6709,
+   "sha": "a5fffa5d1109e47266389205065121cdd1aefda061756e0a3963a361b699a819",
+   "caratteri": 6686,
    "email_nascoste": 11,
    "link_pdf": [
     {
@@ -1492,7 +1486,7 @@
      "testo": "Urp Relazione tutela 2021 def.pdf"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "lucca",
@@ -1613,9 +1607,9 @@
    "http": 200,
    "file": "massa-carrara/dcd342d67ea4.txt",
    "titolo": "Home",
-   "sha": "615add09de8b02c6a85c33f8a79704b5e1433acfe754d649c480a9832e6f2711",
-   "caratteri": 4032,
-   "cambiata": false
+   "sha": "0fcb992bd48729f8f1a03ad622d45cfdd5330bb4edd1a3903cd3778f85eaf42c",
+   "caratteri": 4009,
+   "cambiata": true
   },
   {
    "asl": "massa-carrara",
@@ -1679,8 +1673,8 @@
    "http": 200,
    "file": "massa-carrara/969cbc1150a3.txt",
    "titolo": "Contatti e sedi - URP - Ufficio Relazioni con il Pubblico",
-   "sha": "98f1fd2bd35b6f540cd884ca3ca4ac2bf97f84a22abc0b39ffcdb31b772ff3ba",
-   "caratteri": 6709,
+   "sha": "a5fffa5d1109e47266389205065121cdd1aefda061756e0a3963a361b699a819",
+   "caratteri": 6686,
    "email_nascoste": 11,
    "link_pdf": [
     {
@@ -1708,7 +1702,7 @@
      "testo": "Urp Relazione tutela 2021 def.pdf"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "massa-carrara",
@@ -1841,9 +1835,9 @@
    "http": 200,
    "file": "pisa/dcd342d67ea4.txt",
    "titolo": "Home",
-   "sha": "615add09de8b02c6a85c33f8a79704b5e1433acfe754d649c480a9832e6f2711",
-   "caratteri": 4032,
-   "cambiata": false
+   "sha": "0fcb992bd48729f8f1a03ad622d45cfdd5330bb4edd1a3903cd3778f85eaf42c",
+   "caratteri": 4009,
+   "cambiata": true
   },
   {
    "asl": "pisa",
@@ -1907,8 +1901,8 @@
    "http": 200,
    "file": "pisa/969cbc1150a3.txt",
    "titolo": "Contatti e sedi - URP - Ufficio Relazioni con il Pubblico",
-   "sha": "98f1fd2bd35b6f540cd884ca3ca4ac2bf97f84a22abc0b39ffcdb31b772ff3ba",
-   "caratteri": 6709,
+   "sha": "a5fffa5d1109e47266389205065121cdd1aefda061756e0a3963a361b699a819",
+   "caratteri": 6686,
    "email_nascoste": 11,
    "link_pdf": [
     {
@@ -1936,7 +1930,7 @@
      "testo": "Urp Relazione tutela 2021 def.pdf"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "pisa",
@@ -1946,7 +1940,7 @@
    "http": 200,
    "file": "pisa/62ab9d3437ba.txt",
    "titolo": "Richiesta Cartella Clinica",
-   "sha": "90679d05f5fd018aa2902291d6528beffb62aa58f3b5629d5a0a9891593f8f38",
+   "sha": "7a40df934755e58f6e22a1ff0cf5d3a5e80080fb775fb4904e31bdb827968a5e",
    "caratteri": 12417,
    "email_nascoste": 4,
    "cambiata": true
@@ -2106,9 +2100,9 @@
    "http": 200,
    "file": "pistoia/394d839724e9.txt",
    "titolo": "Guardia Medica",
-   "sha": "f22d12a9ab2d756750df26c76dd7e20956b311ccf071fe5fdc16ad9fe1e56a28",
+   "sha": "a6a27e31bec634b6bbc9135ca125719a31e35eab21fd7f7b6eda3c1f0b5d7979",
    "caratteri": 1181,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "pistoia",
@@ -2128,7 +2122,7 @@
    "http": 200,
    "file": "pistoia/18b27551d55d.txt",
    "titolo": "Scelta e cambio del Medico di famiglia o del Pediatra",
-   "sha": "e8e2779334fb77868ef68dd365dfc4a7537e2c498b30da062e8c8f4c745406e7",
+   "sha": "06f0cb50294b9d33afd1524081713be90cfa71c3042d717e7043b9e52632e3aa",
    "caratteri": 1568,
    "cambiata": true
   },
@@ -2168,7 +2162,7 @@
    "http": 200,
    "file": "pistoia/e0a15d6ac889.txt",
    "titolo": "Cartelle cliniche",
-   "sha": "b112a53d920a1ec0b8a1019dcd3d63cb6f6a639642cdd3978d9ca790b43d5fa1",
+   "sha": "ac7e399a491c82572baf0a3e5cc3b047c17b280e8e0572de815d51ce053e66d4",
    "caratteri": 1524,
    "link_pdf": [
     {
@@ -2277,9 +2271,9 @@
    "http": 200,
    "file": "prato/394d839724e9.txt",
    "titolo": "Guardia Medica",
-   "sha": "f22d12a9ab2d756750df26c76dd7e20956b311ccf071fe5fdc16ad9fe1e56a28",
+   "sha": "a6a27e31bec634b6bbc9135ca125719a31e35eab21fd7f7b6eda3c1f0b5d7979",
    "caratteri": 1181,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "prato",
@@ -2299,7 +2293,7 @@
    "http": 200,
    "file": "prato/18b27551d55d.txt",
    "titolo": "Scelta e cambio del Medico di famiglia o del Pediatra",
-   "sha": "79f9e749c36b40da5986e4d02fa7af92b46deeb26f4ce23eb072c53c251de6a2",
+   "sha": "06f0cb50294b9d33afd1524081713be90cfa71c3042d717e7043b9e52632e3aa",
    "caratteri": 1568,
    "cambiata": true
   },
@@ -2352,7 +2346,7 @@
    "http": 200,
    "file": "prato/e0a15d6ac889.txt",
    "titolo": "Cartelle cliniche",
-   "sha": "b112a53d920a1ec0b8a1019dcd3d63cb6f6a639642cdd3978d9ca790b43d5fa1",
+   "sha": "ac7e399a491c82572baf0a3e5cc3b047c17b280e8e0572de815d51ce053e66d4",
    "caratteri": 1524,
    "link_pdf": [
     {
@@ -2559,6 +2553,19 @@
   },
   {
    "asl": "siena",
+   "url": "https://www.uslsudest.toscana.it/percorsi-assistenziali/screening",
+   "controllata": "2026-11-02",
+   "browser": true,
+   "http": 200,
+   "file": "siena/80590d638aae.txt",
+   "titolo": "Screening",
+   "sha": "bc97ea2fc7ce238f612235785c992668fd50e3e5b115d27c05937aab6e21ee44",
+   "caratteri": 34851,
+   "email_nascoste": 3,
+   "cambiata": false
+  },
+  {
+   "asl": "siena",
    "url": "https://www.uslsudest.toscana.it/attivita-di-tutela",
    "controllata": "2026-11-02",
    "http": 200,
@@ -2658,19 +2665,6 @@
    "titolo": "Scegliere il medico di base - Regione Toscana",
    "sha": "de384c53dbd0c551f03885fad4c7f3620f663bd7dd21aac13dad221341796973",
    "caratteri": 5093,
-   "cambiata": false
-  },
-  {
-   "asl": "siena",
-   "url": "https://www.uslsudest.toscana.it/percorsi-assistenziali/screening",
-   "controllata": "2026-11-02",
-   "browser": true,
-   "http": 200,
-   "file": "siena/80590d638aae.txt",
-   "titolo": "Screening",
-   "sha": "bc97ea2fc7ce238f612235785c992668fd50e3e5b115d27c05937aab6e21ee44",
-   "caratteri": 34851,
-   "email_nascoste": 3,
    "cambiata": false
   },
   {
@@ -3182,7 +3176,7 @@
    "http": 200,
    "file": "usl-toscana-centro/8c13b91ebea8.txt",
    "titolo": "Numeri utili",
-   "sha": "b664aedbfc7cf9e9b777ae5841238049abe42a1b978036262d6f5af606150862",
+   "sha": "43d8d4bd2ae28fc9f7dc5d0ca0f040cecec4497e7c75fef0b5efe7f0274a9632",
    "caratteri": 586,
    "cambiata": true
   },
@@ -3243,7 +3237,7 @@
    "http": 200,
    "file": "usl-toscana-centro/580c1bcca19c.txt",
    "titolo": "Guardia Medica (sedi territoriali)",
-   "sha": "a4127c38bc0ddd345c6d73510c77987c061fec4ab28727b707458e8b223ed0e7",
+   "sha": "6980a5329ce566dcee46ec1007921fffbc2b38c58796dee4ff001957ea453754",
    "caratteri": 588,
    "cambiata": true
   },
@@ -3261,7 +3255,7 @@
    "http": 200,
    "file": "usl-toscana-centro/704cbf0770e8.txt",
    "titolo": "Guardia Medica Turistica",
-   "sha": "99c0cb531f001140bff14a1a4166a8bac74ce77e840382e80decfaab252a715f",
+   "sha": "f45416807f389f3b07178750da1e7f64e32e6401c6b0c42b35e9fc43e0e9c868",
    "caratteri": 1233,
    "cambiata": true
   },

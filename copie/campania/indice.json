@@ -1,6 +1,6 @@
 {
  "regione": "campania",
- "aggiornato": "2026-11-02T05:46:22.213Z",
+ "aggiornato": "2026-11-02T08:17:20.080Z",
  "pagine": [
   {
    "asl": "avellino",
@@ -509,6 +509,18 @@
   },
   {
    "asl": "benevento",
+   "url": "https://www.aslbenevento.it/servizio-strutturale/screening-del-tumore-del-colon-retto-distretto-sanitario-montesarchio",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "benevento/daa8f0ce88df.txt",
+   "titolo": "Screening del Tumore del Colon Retto (Distretto Sanitario Montesarchio) | ASL Benevento",
+   "sha": "a9703a133de052bd93dd73bfc285f517b6b9215b79ca6438d8ec9000c20a44d1",
+   "caratteri": 3625,
+   "cambiata": false
+  },
+  {
+   "asl": "benevento",
    "url": "https://www.aslbenevento.it/liste-d-attesa",
    "controllata": "2026-11-02",
    "http": 200,
@@ -647,18 +659,6 @@
   },
   {
    "asl": "benevento",
-   "url": "https://www.aslbenevento.it/servizio-strutturale/screening-del-tumore-del-colon-retto-distretto-sanitario-montesarchio",
-   "controllata": "2026-11-02",
-   "http": 200,
-   "certificato": "non valido",
-   "file": "benevento/daa8f0ce88df.txt",
-   "titolo": "Screening del Tumore del Colon Retto (Distretto Sanitario Montesarchio) | ASL Benevento",
-   "sha": "a9703a133de052bd93dd73bfc285f517b6b9215b79ca6438d8ec9000c20a44d1",
-   "caratteri": 3625,
-   "cambiata": false
-  },
-  {
-   "asl": "benevento",
    "url": "https://www.aslbenevento.it/sites/default/files/2025-03/Guida%20Ulteriore%20Alla%20Comprensione%20Dei%20Dati_0.pdf",
    "controllata": "2026-11-02",
    "da_pagina": "https://www.aslbenevento.it/liste-d-attesa",
@@ -735,8 +735,8 @@
    "certificato": "non valido",
    "file": "caserta/e125f0b729f0.txt",
    "titolo": "Asl Caserta - Home Page - Asl Caserta",
-   "sha": "f63f53e88b9712812ef1d78fd3116b22a9fc99de74e091f39b480b95ebb0ce8a",
-   "caratteri": 20241,
+   "sha": "d6b620b0553d30f36d91bcd7a80da8ef9be85721a0b17a748caf47a7248d856f",
+   "caratteri": 20244,
    "cambiata": true
   },
   {
@@ -758,15 +758,15 @@
    "certificato": "non valido",
    "file": "caserta/2b6b1b2defcc.txt",
    "titolo": "Servizio Relazioni con il Pubblico - Asl Caserta",
-   "sha": "15e7fa08648b58fa9043336bbe47e87d5bda23a34acfb3dc5ff24e2af973fe3b",
-   "caratteri": 17127,
+   "sha": "05e13a87154e8bf8578e93781791e2fa91c69f8ae8e96243549eb323f95b29da",
+   "caratteri": 17141,
    "link_pdf": [
     {
      "url": "https://www.aslcaserta.it/wp-content/uploads/ServiziInformazioni/20200207-modulo-raccolta-reclami-segnalazioni.pdf",
      "testo": "Modulo raccolta reclami/segnalazioni/suggerimenti/encomi (pdf)"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "caserta",
@@ -776,8 +776,8 @@
    "certificato": "non valido",
    "file": "caserta/9dfc8cc1310b.txt",
    "titolo": "CUP – Prenotazioni, Pagamenti e Disdette - Asl Caserta",
-   "sha": "b804befaf865c0e73cf16578e9b3a7c70ddd32829f303449f8bb6fca3b84ad58",
-   "caratteri": 18127,
+   "sha": "8faafc7ddb5f88dcac8627efcdf4ab5f60adbb53802a4f6731d69067d2ef9dea",
+   "caratteri": 18113,
    "link_pdf": [
     {
      "url": "https://www.aslcaserta.it/wp-content/uploads/Come%20fare%20per/CUP%20prenotazioni%20e%20Pagamenti/Allegato%20B%20-%20Modulo%20istanza%20di%20annullamento%20in%20autotutela.pdf%20%28116%2C4%20KB%29.pdf",
@@ -788,7 +788,7 @@
      "testo": "Disciplinare per la gestione delle mancate disdette"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "caserta",
@@ -798,7 +798,7 @@
    "certificato": "non valido",
    "file": "caserta/fa7a6264af83.txt",
    "titolo": "Telefono e Posta Elettronica - Asl Caserta",
-   "sha": "2f063b4793ec79adcfe7002fbd4e265e8d3728b81864f4c2a60e9c70d7645706",
+   "sha": "f256ac78b99e64425ce7d09b7a5cb66f0341657ebde61c7ba275abcde172e305",
    "caratteri": 72991,
    "link_pdf": [
     {
@@ -806,7 +806,7 @@
      "testo": "Allegato"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "caserta",
@@ -816,9 +816,9 @@
    "certificato": "non valido",
    "file": "caserta/0fe91e3b6805.txt",
    "titolo": "Screening oncologici - Asl Caserta",
-   "sha": "a9dceb2b24fd926e42413f6fe417153ee9470d58d0233e566d23e2cffc151d47",
-   "caratteri": 16059,
-   "cambiata": false
+   "sha": "d7d95d204312e15ae5de8a21a8c0ac7389e88f5a8697e6dd40447761febcaf30",
+   "caratteri": 16045,
+   "cambiata": true
   },
   {
    "asl": "caserta",
@@ -870,9 +870,9 @@
    "certificato": "non valido",
    "file": "napoli/69d17eab3008.txt",
    "titolo": "Home - Portal Na 1",
-   "sha": "51d1c4ed8335814577dd1eceb410a1bf844c025cf66990b3a5d73d3f92c3c2a3",
-   "caratteri": 13486,
-   "cambiata": false
+   "sha": "e00976e1a0150cbce2a2fcd47b5e92145c9d8f3ba954cc9a60d182d90b0f8077",
+   "caratteri": 13610,
+   "cambiata": true
   },
   {
    "asl": "napoli",
@@ -894,7 +894,7 @@
    "certificato": "non valido",
    "file": "napoli/2f2947c35b17.txt",
    "titolo": "Porta Unica di Accesso (PUA) – ASL Napoli 2 Nord",
-   "sha": "0fd68968e22f84c151bfc9c2e03dc7a534a4386174037338fd4874ad5cd36d08",
+   "sha": "6e912ff62ec39955d44dc5dd008985cc2b8dfd767ea3f0f23353225fd1738f52",
    "caratteri": 10961,
    "cambiata": true
   },
@@ -917,8 +917,8 @@
    "certificato": "non valido",
    "file": "napoli/7623db2690d0.txt",
    "titolo": "Numero verde prenotazioni visite – ASL Napoli 2 Nord",
-   "sha": "088938d6047c03595b1ab10d01afe05b77775e1c03603c36b1391416ee4c64a9",
-   "caratteri": 7812,
+   "sha": "b33424c5b61fba6686ae19c805b9b50e32ac52c62edc9cab6d438d54b4080944",
+   "caratteri": 7807,
    "cambiata": true
   },
   {
@@ -952,8 +952,8 @@
    "certificato": "non valido",
    "file": "napoli/a8448bfc505e.txt",
    "titolo": "U.O.C. URP e Marketing Sanitario – ASL Napoli 2 Nord",
-   "sha": "b1e5706e581aef75449959050aea921bef0917801acc8e6daf8bb499faeac4dd",
-   "caratteri": 5911,
+   "sha": "b74ecc63ae6e6e65d64f1fa82b4d56fc7d727c0865d5f30893c54cf235f7fad6",
+   "caratteri": 5915,
    "cambiata": true
   },
   {
@@ -992,14 +992,14 @@
   },
   {
    "asl": "napoli",
-   "url": "https://www.aslnapoli1centro.it/screening-oncologici",
+   "url": "https://www.aslnapoli1centro.it/diagnostica-per-immagini-ds24",
    "controllata": "2026-11-02",
    "http": 200,
    "certificato": "non valido",
-   "file": "napoli/a6febd8ac1fa.txt",
-   "titolo": "Screening Oncologici - Portal Na 1",
-   "sha": "59343c9a9565f9de1f302c25267801504ff26cba309bc17a71e72aab7cb4270b",
-   "caratteri": 7974,
+   "file": "napoli/4e0390d97809.txt",
+   "titolo": "Diagnostica per immagini - Portal Na 1",
+   "sha": "022a49313961be253cc71fb4070cf6b55b92961a38ddf01a0aa5aaf60c287c19",
+   "caratteri": 7192,
    "cambiata": false
   },
   {
@@ -1010,8 +1010,8 @@
    "certificato": "non valido",
    "file": "napoli/1d583e81f431.txt",
    "titolo": "Screening Oncologici – ASL Napoli 2 Nord",
-   "sha": "9fd9ea0f41182183fba3c35336b4dbd66df500bf3831feeca799baf8a786f62f",
-   "caratteri": 32349,
+   "sha": "619120f8d74ca1d6dd1c507963950be1c6f894b19029007bccf027a205cfa9d3",
+   "caratteri": 32345,
    "link_pdf": [
     {
      "url": "https://www.aslnapoli2nord.it/images/screening/pieghevole_A4_albanese_campania.pdf",
@@ -1070,6 +1070,18 @@
   },
   {
    "asl": "napoli",
+   "url": "https://www.aslnapoli1centro.it/screening-oncologici",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "certificato": "non valido",
+   "file": "napoli/a6febd8ac1fa.txt",
+   "titolo": "Screening Oncologici - Portal Na 1",
+   "sha": "59343c9a9565f9de1f302c25267801504ff26cba309bc17a71e72aab7cb4270b",
+   "caratteri": 7974,
+   "cambiata": false
+  },
+  {
+   "asl": "napoli",
    "url": "https://www.aslnapoli3sud.it/it/home/screening",
    "controllata": "2026-11-02",
    "http": 200,
@@ -1124,8 +1136,8 @@
    "certificato": "non valido",
    "file": "napoli/50dc9aeab0db.txt",
    "titolo": "Distretti – ASL Napoli 2 Nord",
-   "sha": "c919133de6af7c02d6073d199ef54bb98de2e3b9b38602251e140fa007a63871",
-   "caratteri": 6419,
+   "sha": "fad3b244b540e19d84d73cd4ac235adcdc21f550da913983c18b4e9d3bb05310",
+   "caratteri": 6414,
    "cambiata": true
   },
   {
@@ -1153,18 +1165,6 @@
   },
   {
    "asl": "napoli",
-   "url": "https://www.aslnapoli1centro.it/diagnostica-per-immagini-ds24",
-   "controllata": "2026-11-02",
-   "http": 200,
-   "certificato": "non valido",
-   "file": "napoli/4e0390d97809.txt",
-   "titolo": "Diagnostica per immagini - Portal Na 1",
-   "sha": "022a49313961be253cc71fb4070cf6b55b92961a38ddf01a0aa5aaf60c287c19",
-   "caratteri": 7192,
-   "cambiata": false
-  },
-  {
-   "asl": "napoli",
    "url": "https://www.aslnapoli1centro.it/tempi-di-attesa",
    "controllata": "2026-11-02",
    "http": 428,
@@ -1179,8 +1179,8 @@
    "certificato": "non valido",
    "file": "napoli/bb8ae0c11329.txt",
    "titolo": "Liste di attesa – ASL Napoli 2 Nord",
-   "sha": "943d949eaf67dde099e26a5f4e03659d858ae249289948ac57464754dbbb8100",
-   "caratteri": 2864,
+   "sha": "3bd3753364314f86a8c8b75ec2dc7ce0db42af50aaa978ec4254aa47420ce4f2",
+   "caratteri": 2857,
    "cambiata": true
   },
   {
@@ -1191,16 +1191,9 @@
    "certificato": "non valido",
    "file": "napoli/a3cc219db89e.txt",
    "titolo": "Prenotazioni – ASL Napoli 2 Nord",
-   "sha": "d617f13f510d09e858330cc211722d157e89754024df5984f4337882bff88bc9",
-   "caratteri": 17536,
+   "sha": "290f569d5f100a30b157b6c8a8210ea70492307844a5263734f5302fc96f6809",
+   "caratteri": 17540,
    "cambiata": true
-  },
-  {
-   "asl": "napoli",
-   "url": "https://screening.aslnapoli2nord.it/",
-   "controllata": "2026-11-02",
-   "http": 0,
-   "errore": "curl: (35) Recv failure: Connection reset by peer"
   },
   {
    "asl": "napoli",
@@ -1370,6 +1363,28 @@
    "sha": "2f0f5d22191f5b763f10b3788f60e8f91ba09eb7da06b3064625636522f4b09f",
    "caratteri": 16253,
    "cambiata": false
+  },
+  {
+   "asl": "salerno",
+   "url": "https://www.aslsalerno.it/pagina2480_screening-mammografico.html",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "salerno/004e38bc586e.txt",
+   "titolo": "Screening mammografico - ASL Salerno",
+   "sha": "1e1824f834276865b9c79d9f0fad9ecb7e1a260c752bc890621578a8ad6940e0",
+   "caratteri": 5133,
+   "cambiata": true
+  },
+  {
+   "asl": "salerno",
+   "url": "https://www.aslsalerno.it/pagina2481_screening-cervice-uterina.html",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "salerno/dc546363d752.txt",
+   "titolo": "Screening cervice uterina - ASL Salerno",
+   "sha": "f05d883b72caa703fc067cc2bc3b98853ad9d964eaa5b957c8e7d7d78cf700ef",
+   "caratteri": 4995,
+   "cambiata": true
   },
   {
    "asl": "regole",
@@ -1819,8 +1834,8 @@
    "certificato": "non valido",
    "file": "asl-napoli-2-nord/a1d7306b646d.txt",
    "titolo": "ASL Napoli 2 Nord",
-   "sha": "365251feaae1af2f50a8da9a5c69fdf837ad9d420245e177bb6fd335ce257b30",
-   "caratteri": 7573,
+   "sha": "8a6f1b084e4c719d22ef93b5864ba4b80b0b80a562e342691e5a8c1ddde25bfe",
+   "caratteri": 7576,
    "cambiata": true
   },
   {
@@ -1832,8 +1847,8 @@
    "certificato": "non valido",
    "file": "asl-napoli-2-nord/aaa502e24a40.txt",
    "titolo": "Azienda – ASL Napoli 2 Nord",
-   "sha": "b9dbadff3b96da052e8ef52d4a6980c67c3141d976bb13f8ef8c6c5dbe97c990",
-   "caratteri": 13851,
+   "sha": "5ed485d14b6c12299397e17143f6d95ed931d6d1707a8e37f0276e26a4eb44c7",
+   "caratteri": 13849,
    "cambiata": true
   },
   {
@@ -1845,8 +1860,8 @@
    "certificato": "non valido",
    "file": "asl-napoli-2-nord/a040d4f22b9d.txt",
    "titolo": "ASL Napoli 2 Nord",
-   "sha": "df1eb6f375c4f25801217b74dd6b9169b12f90e1e505e21205e8896e06b5d3c8",
-   "caratteri": 7571,
+   "sha": "bcb4f32e346bbecd74acd0dd0e5843714f22f8d3bfe45abb83877d54c5aa7c6f",
+   "caratteri": 7572,
    "cambiata": true
   },
   {

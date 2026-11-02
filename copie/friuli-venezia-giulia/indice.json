@@ -1,6 +1,6 @@
 {
  "regione": "friuli-venezia-giulia",
- "aggiornato": "2026-11-02T05:58:31.744Z",
+ "aggiornato": "2026-11-02T08:30:13.941Z",
  "pagine": [
   {
    "asl": "gorizia",
@@ -183,6 +183,31 @@
   },
   {
    "asl": "gorizia",
+   "url": "https://asugi.sanita.fvg.it/it/servizi/dist_richiesta_documentazione.html",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "gorizia/a87577f3d73e.txt",
+   "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Accesso alla documentazione prodotta dal Dipartimento dell'Assistenza Distrettuale",
+   "sha": "4bc6be17fb57e8354480c7ce949bf9b24eb2d9912552910fb9b19dc361debe82",
+   "caratteri": 14998,
+   "link_pdf": [
+    {
+     "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dir_san/all_farma/mat_info/somministrazione_farmaci.pdf",
+     "testo": "Somministrazione farmaci in contesti extrafamiliari (indicazioni operative)"
+    },
+    {
+     "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dat/moduli/dist_richiesta_doc_sanitaria_giul_edit.pdf",
+     "testo": "Modulo per area giuliana [pdf - 307,22 KB] (il link apre una nuova finestra)"
+    },
+    {
+     "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dat/moduli/dist_richiesta_doc_sanitaria_ison_edit.pdf",
+     "testo": "Modulo per area isontina [pdf - 311,01 KB] (il link apre una nuova finestra)"
+    }
+   ],
+   "cambiata": false
+  },
+  {
+   "asl": "gorizia",
    "url": "https://asugi.sanita.fvg.it/it/strutture/direz_sanitaria/dad/area_isontina/go_dist_alto_isontino/pua_ai/",
    "controllata": "2026-11-02",
    "http": 404
@@ -298,31 +323,6 @@
   },
   {
    "asl": "gorizia",
-   "url": "https://asugi.sanita.fvg.it/it/servizi/dist_richiesta_documentazione.html",
-   "controllata": "2026-11-02",
-   "http": 200,
-   "file": "gorizia/a87577f3d73e.txt",
-   "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Accesso alla documentazione prodotta dal Dipartimento dell'Assistenza Distrettuale",
-   "sha": "4bc6be17fb57e8354480c7ce949bf9b24eb2d9912552910fb9b19dc361debe82",
-   "caratteri": 14998,
-   "link_pdf": [
-    {
-     "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dir_san/all_farma/mat_info/somministrazione_farmaci.pdf",
-     "testo": "Somministrazione farmaci in contesti extrafamiliari (indicazioni operative)"
-    },
-    {
-     "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dat/moduli/dist_richiesta_doc_sanitaria_giul_edit.pdf",
-     "testo": "Modulo per area giuliana [pdf - 307,22 KB] (il link apre una nuova finestra)"
-    },
-    {
-     "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dat/moduli/dist_richiesta_doc_sanitaria_ison_edit.pdf",
-     "testo": "Modulo per area isontina [pdf - 311,01 KB] (il link apre una nuova finestra)"
-    }
-   ],
-   "cambiata": false
-  },
-  {
-   "asl": "gorizia",
    "url": "https://asugi.sanita.fvg.it/it/approfondimenti/onco_screen_regionali.html",
    "controllata": "2026-11-02",
    "http": 200,
@@ -421,32 +421,6 @@
   },
   {
    "asl": "gorizia",
-   "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/amm_trasp_asugi/allegati/016_servizi_erogati/guida_lettura_tda.pdf",
-   "controllata": "2026-11-02",
-   "da_pagina": "https://asugi.sanita.fvg.it/it/amm_trasp_asugi/23_liste_attesa/",
-   "http": 200,
-   "file": "gorizia/d039e7b2c255.txt",
-   "titolo": "Microsoft Word - Pubblicazione sito guida ai dati aggiornamento luglio 2024",
-   "sha": "7d86ff9bd7d51b43a013976ac38f3d961a54f5b8351ad9b1b74fe9ca1eebef96",
-   "caratteri": 7187,
-   "pdf": true,
-   "cambiata": false
-  },
-  {
-   "asl": "gorizia",
-   "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/amm_trasp_asugi/allegati/016_servizi_erogati/spiegazione_metodo_2025.pdf",
-   "controllata": "2026-11-02",
-   "da_pagina": "https://asugi.sanita.fvg.it/it/amm_trasp_asugi/23_liste_attesa/",
-   "http": 200,
-   "file": "gorizia/ef6c89e76919.txt",
-   "titolo": "Tempi di attesa:",
-   "sha": "48ed2ae064e630e52521d9e0032ae5a82e6ccab85922bbf2af6cadb376384249",
-   "caratteri": 2946,
-   "pdf": true,
-   "cambiata": false
-  },
-  {
-   "asl": "gorizia",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dat/moduli/dist_richiesta_doc_sanitaria_giul_edit.pdf",
    "controllata": "2026-11-02",
    "da_pagina": "https://asugi.sanita.fvg.it/it/servizi/dist_richiesta_documentazione.html",
@@ -468,6 +442,32 @@
    "titolo": "Richiesta Cartelle 2020 ASUGI senza protocollo",
    "sha": "d4b7c056132f37b35f9bd27d968cc601beab15afa32ee3d63bafac72b1f0c821",
    "caratteri": 9073,
+   "pdf": true,
+   "cambiata": false
+  },
+  {
+   "asl": "gorizia",
+   "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/amm_trasp_asugi/allegati/016_servizi_erogati/guida_lettura_tda.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://asugi.sanita.fvg.it/it/amm_trasp_asugi/23_liste_attesa/",
+   "http": 200,
+   "file": "gorizia/d039e7b2c255.txt",
+   "titolo": "Microsoft Word - Pubblicazione sito guida ai dati aggiornamento luglio 2024",
+   "sha": "7d86ff9bd7d51b43a013976ac38f3d961a54f5b8351ad9b1b74fe9ca1eebef96",
+   "caratteri": 7187,
+   "pdf": true,
+   "cambiata": false
+  },
+  {
+   "asl": "gorizia",
+   "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/amm_trasp_asugi/allegati/016_servizi_erogati/spiegazione_metodo_2025.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://asugi.sanita.fvg.it/it/amm_trasp_asugi/23_liste_attesa/",
+   "http": 200,
+   "file": "gorizia/ef6c89e76919.txt",
+   "titolo": "Tempi di attesa:",
+   "sha": "48ed2ae064e630e52521d9e0032ae5a82e6ccab85922bbf2af6cadb376384249",
+   "caratteri": 2946,
    "pdf": true,
    "cambiata": false
   },
@@ -696,6 +696,39 @@
   },
   {
    "asl": "pordenone",
+   "url": "https://asfo.sanita.fvg.it/it/servizi/richiesta_documentazione_sanitaria.html",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "pordenone/797fb03e264e.txt",
+   "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Richiesta documentazione sanitaria",
+   "sha": "fc7969cb2736d53302bfeb7a3e468804d68ff64cd9bad1d183ff1d90c017c352",
+   "caratteri": 9364,
+   "link_pdf": [
+    {
+     "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/servizi/documenti/Asap/26_08_26-ASAP.PDF",
+     "testo": "Asap - Ambulatori Sperimentali Di Assistenza Primaria"
+    },
+    {
+     "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/servizi/documenti/ospedali/richiesta_doc_sanitaria/Modulo-istanza-copia-doc.sanitaria.pdf",
+     "testo": "Modulo istanza copia doc. sanitaria [pdf - 39,47 KB] (il link apre una nuova finestra)"
+    },
+    {
+     "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/servizi/documenti/ospedali/richiesta_doc_sanitaria/informativa_ai_genitori_per_espressione_del_consenso_alle_prestazioni.pdf",
+     "testo": "Informativa ai genitori per l'espressione del consenso alle prestazioni sanitarie [pdf - 557,45 KB] (il link apre una nu"
+    },
+    {
+     "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/servizi/documenti/ospedali/richiesta_doc_sanitaria/Regolamento-AsFO-accesso-documentale-e-civico_dicembre-2024.pdf",
+     "testo": "Regolamento in materia di accesso documentale e civico dell’Azienda sanitaria Friuli Occidentale [pdf - 386,15 KB] (il l"
+    },
+    {
+     "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/servizi/documenti/ospedali/richiesta_doc_sanitaria/Tariffe-copie.pdf",
+     "testo": "Tariffe copie"
+    }
+   ],
+   "cambiata": false
+  },
+  {
+   "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/it/servizi/contatti.html",
    "controllata": "2026-11-02",
    "http": 200,
@@ -861,39 +894,6 @@
   },
   {
    "asl": "pordenone",
-   "url": "https://asfo.sanita.fvg.it/it/servizi/richiesta_documentazione_sanitaria.html",
-   "controllata": "2026-11-02",
-   "http": 200,
-   "file": "pordenone/797fb03e264e.txt",
-   "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Richiesta documentazione sanitaria",
-   "sha": "fc7969cb2736d53302bfeb7a3e468804d68ff64cd9bad1d183ff1d90c017c352",
-   "caratteri": 9364,
-   "link_pdf": [
-    {
-     "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/servizi/documenti/Asap/26_08_26-ASAP.PDF",
-     "testo": "Asap - Ambulatori Sperimentali Di Assistenza Primaria"
-    },
-    {
-     "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/servizi/documenti/ospedali/richiesta_doc_sanitaria/Modulo-istanza-copia-doc.sanitaria.pdf",
-     "testo": "Modulo istanza copia doc. sanitaria [pdf - 39,47 KB] (il link apre una nuova finestra)"
-    },
-    {
-     "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/servizi/documenti/ospedali/richiesta_doc_sanitaria/informativa_ai_genitori_per_espressione_del_consenso_alle_prestazioni.pdf",
-     "testo": "Informativa ai genitori per l'espressione del consenso alle prestazioni sanitarie [pdf - 557,45 KB] (il link apre una nu"
-    },
-    {
-     "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/servizi/documenti/ospedali/richiesta_doc_sanitaria/Regolamento-AsFO-accesso-documentale-e-civico_dicembre-2024.pdf",
-     "testo": "Regolamento in materia di accesso documentale e civico dell’Azienda sanitaria Friuli Occidentale [pdf - 386,15 KB] (il l"
-    },
-    {
-     "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/servizi/documenti/ospedali/richiesta_doc_sanitaria/Tariffe-copie.pdf",
-     "testo": "Tariffe copie"
-    }
-   ],
-   "cambiata": false
-  },
-  {
-   "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/amministrazione_trasparente/16_servizi_erogati/_doc/ASFO_Regolamento_aziendale_per_il_diritto_di_garanzia1.0.pdf",
    "controllata": "2026-11-02",
    "http": 200,
@@ -931,6 +931,61 @@
      "testo": "Volantino - Screening: la migliore difesa contro i tumori del colon retto"
     }
    ],
+   "cambiata": false
+  },
+  {
+   "asl": "pordenone",
+   "url": "https://asfo.sanita.fvg.it/it/servizi/cure_intermedie_2.html",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "pordenone/4fb3774ef419.txt",
+   "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Palliative Cure",
+   "sha": "dc8ea5a5173900166c54ae760f8fc82dabc0b217114e9d8f6473cb02f93e40f5",
+   "caratteri": 9029,
+   "link_pdf": [
+    {
+     "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/servizi/documenti/Asap/26_08_26-ASAP.PDF",
+     "testo": "Asap - Ambulatori Sperimentali Di Assistenza Primaria"
+    },
+    {
+     "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/servizi/documenti/territorio/dapa/rete_cure_intermedie/LR_10_1998.pdf",
+     "testo": "Art. 25 L.R. 10/1998 (Unità di Valutazione Distrettuale) [pdf - 12,46 KB] (il link apre una nuova finestra)"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "pordenone",
+   "url": "https://asfo.sanita.fvg.it/it/strutture/direzione_sanitaria/assist_territ/rete_cure_intermedie/hospice/",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "pordenone/52d639f7b902.txt",
+   "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Hospice \"Il Gabbiano\"",
+   "sha": "c03ab06dabe7f3a99cfa19ae868c03b9e38b2999bd212bc092ab6b82d6031893",
+   "caratteri": 10008,
+   "link_pdf": [
+    {
+     "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/servizi/documenti/Asap/26_08_26-ASAP.PDF",
+     "testo": "Asap - Ambulatori Sperimentali Di Assistenza Primaria"
+    },
+    {
+     "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/azienda_informa/azienda_informa_allegati/Carta-dei-servizi-2025-Hospice/Carta-servizi-HOSPICE-2025.pdf",
+     "testo": "Carta servizi - HOSPICE \"Il Gabbiano\" [pdf - 296,25 KB] (il link apre una nuova finestra)"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "pordenone",
+   "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/servizi/documenti/ospedali/richiesta_doc_sanitaria/Modulo-istanza-copia-doc.sanitaria.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://asfo.sanita.fvg.it/it/servizi/richiesta_documentazione_sanitaria.html",
+   "http": 200,
+   "file": "pordenone/170b63b6eba7.txt",
+   "titolo": "All’Azienda sanitaria Friuli Occidentale",
+   "sha": "9e3560f6c5c10e20ec1e6a898f5db0e0e660ac0ea3474b193c52642f0b6bd34b",
+   "caratteri": 5190,
+   "pdf": true,
    "cambiata": false
   },
   {
@@ -1078,19 +1133,6 @@
   },
   {
    "asl": "pordenone",
-   "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/servizi/documenti/ospedali/richiesta_doc_sanitaria/Modulo-istanza-copia-doc.sanitaria.pdf",
-   "controllata": "2026-11-02",
-   "da_pagina": "https://asfo.sanita.fvg.it/it/servizi/richiesta_documentazione_sanitaria.html",
-   "http": 200,
-   "file": "pordenone/170b63b6eba7.txt",
-   "titolo": "All’Azienda sanitaria Friuli Occidentale",
-   "sha": "9e3560f6c5c10e20ec1e6a898f5db0e0e660ac0ea3474b193c52642f0b6bd34b",
-   "caratteri": 5190,
-   "pdf": true,
-   "cambiata": false
-  },
-  {
-   "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/schede/opuscoli_informativi/definitivo-2.pdf",
    "controllata": "2026-11-02",
    "da_pagina": "https://asfo.sanita.fvg.it/it/schede/screening_prevenzione_tumori.html",
@@ -1127,6 +1169,19 @@
    "caratteri": 892,
    "pdf": true,
    "cambiata": false
+  },
+  {
+   "asl": "pordenone",
+   "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/azienda_informa/azienda_informa_allegati/Carta-dei-servizi-2025-Hospice/Carta-servizi-HOSPICE-2025.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://asfo.sanita.fvg.it/it/strutture/direzione_sanitaria/assist_territ/rete_cure_intermedie/hospice/",
+   "http": 200,
+   "file": "pordenone/4708090f1759.txt",
+   "titolo": "Microsoft Word - CARTA_SERVIZI_HOSPICE-2025",
+   "sha": "76282074497e7fc63b9d223864881a7fd63dee681ca10b78432dda0deb39ef0f",
+   "caratteri": 17472,
+   "pdf": true,
+   "cambiata": true
   },
   {
    "asl": "trieste",
@@ -1305,6 +1360,31 @@
    "titolo": "Regione Autonoma Friuli Venezia Giulia - Azienda Sanitaria Universitaria Giuliano Isontina",
    "sha": "54663f97db8b8ab4b808f1cf13f69a191fe48b6ec50a3cc268ff0c04db0156cc",
    "caratteri": 2621,
+   "cambiata": false
+  },
+  {
+   "asl": "trieste",
+   "url": "https://asugi.sanita.fvg.it/it/servizi/dist_richiesta_documentazione.html",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "trieste/a87577f3d73e.txt",
+   "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Accesso alla documentazione prodotta dal Dipartimento dell'Assistenza Distrettuale",
+   "sha": "4bc6be17fb57e8354480c7ce949bf9b24eb2d9912552910fb9b19dc361debe82",
+   "caratteri": 14998,
+   "link_pdf": [
+    {
+     "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dir_san/all_farma/mat_info/somministrazione_farmaci.pdf",
+     "testo": "Somministrazione farmaci in contesti extrafamiliari (indicazioni operative)"
+    },
+    {
+     "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dat/moduli/dist_richiesta_doc_sanitaria_giul_edit.pdf",
+     "testo": "Modulo per area giuliana [pdf - 307,22 KB] (il link apre una nuova finestra)"
+    },
+    {
+     "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dat/moduli/dist_richiesta_doc_sanitaria_ison_edit.pdf",
+     "testo": "Modulo per area isontina [pdf - 311,01 KB] (il link apre una nuova finestra)"
+    }
+   ],
    "cambiata": false
   },
   {
@@ -1874,31 +1954,6 @@
   },
   {
    "asl": "trieste",
-   "url": "https://asugi.sanita.fvg.it/it/servizi/dist_richiesta_documentazione.html",
-   "controllata": "2026-11-02",
-   "http": 200,
-   "file": "trieste/a87577f3d73e.txt",
-   "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Accesso alla documentazione prodotta dal Dipartimento dell'Assistenza Distrettuale",
-   "sha": "4bc6be17fb57e8354480c7ce949bf9b24eb2d9912552910fb9b19dc361debe82",
-   "caratteri": 14998,
-   "link_pdf": [
-    {
-     "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dir_san/all_farma/mat_info/somministrazione_farmaci.pdf",
-     "testo": "Somministrazione farmaci in contesti extrafamiliari (indicazioni operative)"
-    },
-    {
-     "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dat/moduli/dist_richiesta_doc_sanitaria_giul_edit.pdf",
-     "testo": "Modulo per area giuliana [pdf - 307,22 KB] (il link apre una nuova finestra)"
-    },
-    {
-     "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dat/moduli/dist_richiesta_doc_sanitaria_ison_edit.pdf",
-     "testo": "Modulo per area isontina [pdf - 311,01 KB] (il link apre una nuova finestra)"
-    }
-   ],
-   "cambiata": false
-  },
-  {
-   "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/it/approfondimenti/onco_screen_regionali.html",
    "controllata": "2026-11-02",
    "http": 200,
@@ -1929,6 +1984,41 @@
    "caratteri": 15172,
    "pdf": true,
    "cambiata": false
+  },
+  {
+   "asl": "trieste",
+   "url": "https://asugi.sanita.fvg.it/it/strutture/direz_serv_sociosan/dad/area_giuliana/sc_cure_palliative_hospice/",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "trieste/6d3292c99340.txt",
+   "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - SC Rete Cure Palliative e Hospice (Area Giuliana)",
+   "sha": "23bca5d5b783a8b8c387a52f76fbd5f36f1c75230e3e48fa73e5174a8aaf82b6",
+   "caratteri": 13610,
+   "link_pdf": [
+    {
+     "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dir_san/all_farma/mat_info/somministrazione_farmaci.pdf",
+     "testo": "Somministrazione farmaci in contesti extrafamiliari (indicazioni operative)"
+    },
+    {
+     "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/carte_dei_servizi/2026_gs_cure_palliative_01.pdf",
+     "testo": "Carta dei Servizi [pdf - 102,63 KB] (il link apre una nuova finestra) La Carta dei Servizi illustra la Struttura, le sue"
+    },
+    {
+     "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/carte_dei_servizi/SL_cds_cure_palliative_rev_01.pdf",
+     "testo": "Vodnik po storitvah [pdf - 546,37 KB] (il link apre una nuova finestra)"
+    },
+    {
+     "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dao/mat_info/libretto_esercizi.pdf",
+     "testo": "Muoversi a casa [pdf - 1,49 MB] (il link apre una nuova finestra)"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "trieste",
+   "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/carte_dei_servizi/2024_gs_cure_palliative_03.pdf",
+   "controllata": "2026-11-02",
+   "http": 500
   },
   {
    "asl": "trieste",
@@ -1992,6 +2082,32 @@
    "titolo": "MODELLO DI DELEGA / POOBLASTILO",
    "sha": "7fa9afe95fe0d1b2c8ba8d5e643914d356b5fd52957efffbe2a4b53a142cf08a",
    "caratteri": 3154,
+   "pdf": true,
+   "cambiata": false
+  },
+  {
+   "asl": "trieste",
+   "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dat/moduli/dist_richiesta_doc_sanitaria_giul_edit.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://asugi.sanita.fvg.it/it/servizi/dist_richiesta_documentazione.html",
+   "http": 200,
+   "file": "trieste/9180b8765a17.txt",
+   "titolo": "Richiesta Cartelle 2020 ASUGI senza protocollo",
+   "sha": "d002045d477e907c28c01782866a7e327e3d549cf54f66cc9d1e83368b0dfa3a",
+   "caratteri": 10126,
+   "pdf": true,
+   "cambiata": false
+  },
+  {
+   "asl": "trieste",
+   "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dat/moduli/dist_richiesta_doc_sanitaria_ison_edit.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://asugi.sanita.fvg.it/it/servizi/dist_richiesta_documentazione.html",
+   "http": 200,
+   "file": "trieste/0fafe295041d.txt",
+   "titolo": "Richiesta Cartelle 2020 ASUGI senza protocollo",
+   "sha": "d4b7c056132f37b35f9bd27d968cc601beab15afa32ee3d63bafac72b1f0c821",
+   "caratteri": 9073,
    "pdf": true,
    "cambiata": false
   },
@@ -2114,32 +2230,6 @@
   },
   {
    "asl": "trieste",
-   "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dat/moduli/dist_richiesta_doc_sanitaria_giul_edit.pdf",
-   "controllata": "2026-11-02",
-   "da_pagina": "https://asugi.sanita.fvg.it/it/servizi/dist_richiesta_documentazione.html",
-   "http": 200,
-   "file": "trieste/9180b8765a17.txt",
-   "titolo": "Richiesta Cartelle 2020 ASUGI senza protocollo",
-   "sha": "d002045d477e907c28c01782866a7e327e3d549cf54f66cc9d1e83368b0dfa3a",
-   "caratteri": 10126,
-   "pdf": true,
-   "cambiata": false
-  },
-  {
-   "asl": "trieste",
-   "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dat/moduli/dist_richiesta_doc_sanitaria_ison_edit.pdf",
-   "controllata": "2026-11-02",
-   "da_pagina": "https://asugi.sanita.fvg.it/it/servizi/dist_richiesta_documentazione.html",
-   "http": 200,
-   "file": "trieste/0fafe295041d.txt",
-   "titolo": "Richiesta Cartelle 2020 ASUGI senza protocollo",
-   "sha": "d4b7c056132f37b35f9bd27d968cc601beab15afa32ee3d63bafac72b1f0c821",
-   "caratteri": 9073,
-   "pdf": true,
-   "cambiata": false
-  },
-  {
-   "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dao/moduli/2025_esenzione_esami_screening.pdf",
    "controllata": "2026-11-02",
    "da_pagina": "https://asugi.sanita.fvg.it/it/approfondimenti/onco_screen_regionali.html",
@@ -2150,6 +2240,19 @@
    "caratteri": 4721,
    "pdf": true,
    "cambiata": false
+  },
+  {
+   "asl": "trieste",
+   "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/carte_dei_servizi/2026_gs_cure_palliative_01.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://asugi.sanita.fvg.it/it/strutture/direz_serv_sociosan/dad/area_giuliana/sc_cure_palliative_hospice/",
+   "http": 200,
+   "file": "trieste/d18aa5b3629f.txt",
+   "titolo": "Subject:",
+   "sha": "edb3a040c990c2e455a1ff3a1059cd9a4fa9e70cd5eb4ab5199602a28b3cfe1a",
+   "caratteri": 15644,
+   "pdf": true,
+   "cambiata": true
   },
   {
    "asl": "udine",
@@ -2554,6 +2657,58 @@
   },
   {
    "asl": "udine",
+   "url": "https://asufc.sanita.fvg.it/it/strutture/dir_sanitaria/dip_assistenza_territoriale/00_cure_palliative/",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "udine/201250116116.txt",
+   "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - SOC Cure Palliative",
+   "sha": "4113c90516ef8328540b5f510a55358f3d5d586073cb45ef2fc9d78ec28109bf",
+   "caratteri": 5516,
+   "cambiata": true
+  },
+  {
+   "asl": "udine",
+   "url": "https://asufc.sanita.fvg.it/it/strutture/dir_sanitaria/dip_assistenza_territoriale/00_cure_palliative/hospice_UD/index.html",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "udine/140fc7d4d6ba.txt",
+   "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - Hospice Udine",
+   "sha": "072d147325449a50af9ba63d76ca8e4f1e73068f8e32a28050300d4e8a94183a",
+   "caratteri": 6107,
+   "link_pdf": [
+    {
+     "url": "https://asufc.sanita.fvg.it/export/sites/asufc/it/strutture/dir_sanitaria/guide_servizi_ASUFC/2026_Hospice.pdf",
+     "testo": "Guida ai servizi [pdf - 329,01 KB] (il link apre una nuova finestra)"
+    }
+   ],
+   "cambiata": true
+  },
+  {
+   "asl": "udine",
+   "url": "https://asufc.sanita.fvg.it/export/sites/asufc/it/documenti/DMO_Santa-Maria/ALL_02_Modulo_rich_copia_cartella_docum_SMM.pdf",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "udine/77efa5515da0.txt",
+   "titolo": "PRESIDIO OSPEDALIERO ALL_02_DMPUD_PR_18",
+   "sha": "5e6160fe4c461f44a692c39adec92e7a33d11165109f6b1e9d6e47c57d78e415",
+   "caratteri": 3075,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "udine",
+   "url": "https://asufc.sanita.fvg.it/export/sites/asufc/it/strutture/dir_sanitaria/dip_assistenza_territoriale/distretto_udine/Distretto-Friuli-Centrale-cds_cure-domiciliari.pdf",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "udine/10c58de7f2d6.txt",
+   "titolo": "Guida ai servizi cure domiciliari",
+   "sha": "c97d16a8b753ed9b2e4d3400304409e2f7e388dcd43a4c4d89f7dc504cd40706",
+   "caratteri": 25791,
+   "pdf": true,
+   "cambiata": true
+  },
+  {
+   "asl": "udine",
    "url": "https://asufc.sanita.fvg.it/export/sites/asufc/it/amministrazione_trasparente/documenti_AT/16_servizi-erogati/liste_attesa/tempi_spec-amb_spiegazione-metodo.pdf",
    "controllata": "2026-11-02",
    "da_pagina": "https://asufc.sanita.fvg.it/it/amministrazione_trasparente/trasparenza_ASUFC/16_servizi_erogati/04_liste_attesa.html",
@@ -2642,6 +2797,19 @@
    "caratteri": 8508,
    "pdf": true,
    "cambiata": false
+  },
+  {
+   "asl": "udine",
+   "url": "https://asufc.sanita.fvg.it/export/sites/asufc/it/strutture/dir_sanitaria/guide_servizi_ASUFC/2026_Hospice.pdf",
+   "controllata": "2026-11-02",
+   "da_pagina": "https://asufc.sanita.fvg.it/it/strutture/dir_sanitaria/dip_assistenza_territoriale/00_cure_palliative/hospice_UD/index.html",
+   "http": 200,
+   "file": "udine/8ec8e20148df.txt",
+   "titolo": "GUIDA AI SERVIZI",
+   "sha": "712983c3ab800319442902323daadf7c098b0792acceb793b79c1fb5e60eb3e5",
+   "caratteri": 21201,
+   "pdf": true,
+   "cambiata": true
   },
   {
    "asl": "regole",

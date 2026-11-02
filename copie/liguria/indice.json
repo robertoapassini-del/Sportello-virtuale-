@@ -1,6 +1,6 @@
 {
  "regione": "liguria",
- "aggiornato": "2026-11-02T06:11:38.726Z",
+ "aggiornato": "2026-11-02T08:43:20.423Z",
  "pagine": [
   {
    "asl": "genova",
@@ -241,6 +241,18 @@
   },
   {
    "asl": "genova",
+   "url": "https://www.asl3.liguria.it/valutazione-organizzazione-screening",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "genova/92c4cee52a77.txt",
+   "titolo": "Struttura Semplice Dipartimentale Valutazione e Organizzazione dello Screening - ASL3",
+   "sha": "66b5f1430eaa75c5a7a0a08c736da69b7b1bd269a2169d77d6767d9f8681907c",
+   "caratteri": 18820,
+   "email_nascoste": 11,
+   "cambiata": false
+  },
+  {
+   "asl": "genova",
    "url": "https://www.asl3.liguria.it/numero-verde-gratuito-per-riduzione-tempi-d-attesa.html",
    "controllata": "2026-11-02",
    "http": 500
@@ -317,18 +329,6 @@
    "titolo": "Portale Inps - Riforma della disabilità: al via la terza fase sperimentale",
    "sha": "c6930fc23272735701d365ad24f19e4fe8b2201d94f8d532a9f97b23835d22f0",
    "caratteri": 46308,
-   "cambiata": false
-  },
-  {
-   "asl": "genova",
-   "url": "https://www.asl3.liguria.it/valutazione-organizzazione-screening",
-   "controllata": "2026-11-02",
-   "http": 200,
-   "file": "genova/92c4cee52a77.txt",
-   "titolo": "Struttura Semplice Dipartimentale Valutazione e Organizzazione dello Screening - ASL3",
-   "sha": "66b5f1430eaa75c5a7a0a08c736da69b7b1bd269a2169d77d6767d9f8681907c",
-   "caratteri": 18820,
-   "email_nascoste": 11,
    "cambiata": false
   },
   {
@@ -536,6 +536,17 @@
   },
   {
    "asl": "imperia",
+   "url": "https://www.asl1.liguria.it/prevenzione-e-screening/screening/screening-mammografico.html",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "imperia/68bf1725133f.txt",
+   "titolo": "Screening mammografico - ASL1",
+   "sha": "701a1f7df9629760ecf96468696afe76ec7b091278009e7792a3c2fdc6ce64ec",
+   "caratteri": 7159,
+   "cambiata": false
+  },
+  {
+   "asl": "imperia",
    "url": "https://www.asl1.liguria.it/servizi-dalla-a-alla-z/1498-punto-unico-accesso.html",
    "controllata": "2026-11-02",
    "http": 200,
@@ -562,17 +573,6 @@
    "url": "https://www.regione.liguria.it/homepage-salute/accesso-rapido/salutesimplex-app-portale.html",
    "controllata": "2026-11-02",
    "http": 403
-  },
-  {
-   "asl": "imperia",
-   "url": "https://www.asl1.liguria.it/prevenzione-e-screening/screening/screening-mammografico.html",
-   "controllata": "2026-11-02",
-   "http": 200,
-   "file": "imperia/68bf1725133f.txt",
-   "titolo": "Screening mammografico - ASL1",
-   "sha": "701a1f7df9629760ecf96468696afe76ec7b091278009e7792a3c2fdc6ce64ec",
-   "caratteri": 7159,
-   "cambiata": false
   },
   {
    "asl": "la-spezia",
@@ -881,6 +881,23 @@
   },
   {
    "asl": "la-spezia",
+   "url": "https://www.asl5.liguria.it/PerilCittadino/PREVENZIONEESCREENING/ScreeningPapTest.aspx",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "la-spezia/98e30493a90c.txt",
+   "titolo": "Screening Pap Test",
+   "sha": "a254f23eebf6b2380535733cb9ff0ff8b021139fa9acad13f8b3693a2a16ffad",
+   "caratteri": 8636,
+   "link_pdf": [
+    {
+     "url": "http://www.asl5.liguria.it/Portals/0/Comunicati/20200325_DONAZIONE.pdf",
+     "testo": "[clicca qui]"
+    }
+   ],
+   "cambiata": false
+  },
+  {
+   "asl": "la-spezia",
    "url": "https://www.asl5.liguria.it/PerilCittadino/Tempidattesa.aspx",
    "controllata": "2026-11-02",
    "http": 200,
@@ -963,23 +980,6 @@
    "titolo": "PREVENZIONE E SCREENING",
    "sha": "a4defd8b8abbabd9f249d964346bbc70a441bb71e38577145cdd64ad6f58b162",
    "caratteri": 5613,
-   "link_pdf": [
-    {
-     "url": "http://www.asl5.liguria.it/Portals/0/Comunicati/20200325_DONAZIONE.pdf",
-     "testo": "[clicca qui]"
-    }
-   ],
-   "cambiata": false
-  },
-  {
-   "asl": "la-spezia",
-   "url": "https://www.asl5.liguria.it/PerilCittadino/PREVENZIONEESCREENING/ScreeningPapTest.aspx",
-   "controllata": "2026-11-02",
-   "http": 200,
-   "file": "la-spezia/98e30493a90c.txt",
-   "titolo": "Screening Pap Test",
-   "sha": "a254f23eebf6b2380535733cb9ff0ff8b021139fa9acad13f8b3693a2a16ffad",
-   "caratteri": 8636,
    "link_pdf": [
     {
      "url": "http://www.asl5.liguria.it/Portals/0/Comunicati/20200325_DONAZIONE.pdf",
@@ -1183,6 +1183,18 @@
    "sha": "ba7df8912478bcc5a6adbda8edb2b9a791d4144a203d42f1104ff6d388e744e9",
    "caratteri": 10953,
    "cambiata": false
+  },
+  {
+   "asl": "savona",
+   "url": "https://www.asl2.liguria.it/prevenzione-e-screening/informativa-screening.html",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "savona/efd7cf68866e.txt",
+   "titolo": "Screening - ASL2",
+   "sha": "22ca60c4125def95bf04342206529847d1d825858359da5d73446faae160848e",
+   "caratteri": 8637,
+   "email_nascoste": 1,
+   "cambiata": true
   },
   {
    "asl": "regole",
@@ -1648,9 +1660,9 @@
    "http": 200,
    "file": "asl4-chiavarese/17af5299b98d.txt",
    "titolo": "Asl4 - Area Sociosanitaria Locale n. 4",
-   "sha": "a6888ecc2acbedc026ac3613e451b1827f821a2bcdb456d833f6f0f149d18b43",
-   "caratteri": 4209,
-   "cambiata": false
+   "sha": "f75230b3f9f4271d162a0aee3fed9e9a54853ab8195222c582f49287972a9320",
+   "caratteri": 4759,
+   "cambiata": true
   },
   {
    "asl": "asl4-chiavarese",
