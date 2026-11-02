@@ -2,10 +2,9 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
-## 02/11/2026 — Trentino-Alto Adige: pagine da copiare per medico, liste di attesa e invalidità
-- `data/regioni/trentino-alto-adige/asl.json`: in «pagine» la scelta del medico e la carta dei servizi dei medici di base dell’Azienda sanitaria dell’Alto Adige, i piani per le liste di attesa di Bolzano (DGP 915/2019, delibera 84/2020) e di Trento (pagina «Liste di attesa» di Asuit, piano attuativo, DGP 696/2019). Moduli invalidita, liste-attesa e medico-famiglia ancora spenti, motivi nel `todo`.
-- `data/regioni/trentino-alto-adige/inps.json`: nel `todo` la frase della notizia INPS (copia del 01/11/2026): in provincia di Bolzano l’INPS non gestisce l’accertamento della disabilità. Il modulo invalidita resta spento.
-
+## 02/11/2026 — Campania: medico di famiglia e cure palliative accesi
+- `data/regioni/campania/asl.json`: `scelta_medico` in ogni ASL e zona di Napoli dalla pagina della Regione «Scelta e revoca del Medico» (regione.campania.it/node/32056, copia del 01/11/2026): portale Sinfonia, app Campania in Salute o ufficio Assistenza sanitaria di base del distretto. Contatti «screening» di Avellino (0825 292029) e Caserta (800 984043, 0823 210545) dalle copie del 01/11/2026. Nuove pagine da copiare: screening di Benevento e Napoli 1 Centro, liste d'attesa di Napoli 1 Centro e Napoli 2 Nord.
+- `data/regioni/index.json`: in Campania accesi `medico-famiglia` e `cure-palliative` (ogni ASL e zona ha email o PEC). Restano spenti `liste-attesa` (manca il percorso di tutela di Benevento, Caserta, Napoli 1, Napoli 2 e Salerno) e `prevenzione` (manca il numero dello screening di Benevento, Napoli 1, Napoli 2 e Salerno): il motivo è nei `todo`.
 ## 02/11/2026 — Emilia-Romagna: pagine da copiare per liste d'attesa e screening
 - `data/regioni/emilia-romagna/asl.json`, `pagine[]`: CUP e numero verde di Modena, CupTel e Sportello unico di Piacenza, CUP telefonico dell'AUSL di Bologna (liste d'attesa); pagine dei centri screening di Modena, Ferrara, Forlì, Cesena e Ravenna (prevenzione). Tolte 3 pagine che nella copia danno 404 (screening e liste d'attesa di Modena, screening di Reggio Emilia). Dopo la copia si riempiono i campi e si accendono i moduli.
 
