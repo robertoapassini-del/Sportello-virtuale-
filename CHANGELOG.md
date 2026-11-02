@@ -5,6 +5,9 @@ Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 ## 02/11/2026 — Puglia: accese assistenza a casa e cure palliative
 - `data/regioni/index.json`: in Puglia accesi `assistenza-domiciliare` e `cure-palliative`. Leggono solo URP e PEC di ogni ASL, già provati dalle copie del server (gli stessi della cartella clinica). Liste d'attesa resta spenta: solo l'ASL Brindisi spiega il percorso nei tempi della ricetta (copia del 01/11/2026 di «Modalità di prenotazione»); il motivo è nel `todo` di ogni ASL.
 
+## 02/11/2026 — Campania: medico di famiglia e cure palliative accesi
+- `data/regioni/campania/asl.json`: `scelta_medico` in ogni ASL e zona di Napoli dalla pagina della Regione «Scelta e revoca del Medico» (regione.campania.it/node/32056, copia del 01/11/2026): portale Sinfonia, app Campania in Salute o ufficio Assistenza sanitaria di base del distretto. Contatti «screening» di Avellino (0825 292029) e Caserta (800 984043, 0823 210545) dalle copie del 01/11/2026. Nuove pagine da copiare: screening di Benevento e Napoli 1 Centro, liste d'attesa di Napoli 1 Centro e Napoli 2 Nord.
+- `data/regioni/index.json`: in Campania accesi `medico-famiglia` e `cure-palliative` (ogni ASL e zona ha email o PEC). Restano spenti `liste-attesa` (manca il percorso di tutela di Benevento, Caserta, Napoli 1, Napoli 2 e Salerno) e `prevenzione` (manca il numero dello screening di Benevento, Napoli 1, Napoli 2 e Salerno): il motivo è nei `todo`.
 ## 02/11/2026 — Emilia-Romagna: pagine da copiare per liste d'attesa e screening
 - `data/regioni/emilia-romagna/asl.json`, `pagine[]`: CUP e numero verde di Modena, CupTel e Sportello unico di Piacenza, CUP telefonico dell'AUSL di Bologna (liste d'attesa); pagine dei centri screening di Modena, Ferrara, Forlì, Cesena e Ravenna (prevenzione). Tolte 3 pagine che nella copia danno 404 (screening e liste d'attesa di Modena, screening di Reggio Emilia). Dopo la copia si riempiono i campi e si accendono i moduli.
 
