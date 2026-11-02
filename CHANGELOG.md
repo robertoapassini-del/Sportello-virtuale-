@@ -1176,6 +1176,9 @@ Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 ## 02/11/2026 — Valle d'Aosta: acceso assistenza-domiciliare, invalidità resta spenta
 - `data/regioni/valle-d-aosta/asl.json`: PUA della Regione in `contacts` `topic: "casa"` (numero verde 800 066214, lun–ven 8:30–16:30, info.pua@regione.vda.it), dalla copia del 01/11/2026 della pagina regionale «Assistenti sociali» (https://www.regione.vda.it/servsociali/famiglia/servizi/assistenti_sociali/default_i.asp). Acceso `assistenza-domiciliare` in `data/regioni/index.json`.
 - Invalidità civile: la pagina regionale «Invalidi civili, ciechi e sordomuti» (copia del 01/11/2026) dice che in Valle d'Aosta la domanda delle provvidenze va alla Regione (legge regionale 11/1999), non all'INPS. Il modulo nazionale non si adatta e resta spento, con il motivo nel `todo`.
+## 02/11/2026 — Piemonte: liste d'attesa, campi in cima a Cuneo e Torino
+- `data/regioni/piemonte/asl.json`: le aziende di Cuneo e Torino (con le zone) hanno in cima i campi delle liste d'attesa della prima zona (ASL CN1, ASL Città di Torino), come fa l'Umbria; nessun dato nuovo, sono gli stessi già provati dalle copie del 22/10/2026.
+- Liste d'attesa resta spenta: mancano l'indirizzo per la domanda all'ASL Biella (i file del percorso di tutela sono dietro pulsanti senza indirizzo .pdf) e ogni pagina dell'ASL VCO (aslvco.it risponde 403 al server anche nella copia del 01/11/2026). Annotato nel `todo`.
 
 ## 02/11/2026 — Emilia-Romagna: pagine da copiare per liste d'attesa e screening
 - `data/regioni/emilia-romagna/asl.json`, `pagine[]`: CUP e numero verde di Modena, CupTel e Sportello unico di Piacenza, CUP telefonico dell'AUSL di Bologna (liste d'attesa); pagine dei centri screening di Modena, Ferrara, Forlì, Cesena e Ravenna (prevenzione). Tolte 3 pagine che nella copia danno 404 (screening e liste d'attesa di Modena, screening di Reggio Emilia). Dopo la copia si riempiono i campi e si accendono i moduli.
