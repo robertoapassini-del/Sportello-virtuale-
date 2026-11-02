@@ -1,6 +1,6 @@
 {
  "regione": "veneto",
- "aggiornato": "2026-11-02T04:41:06.213Z",
+ "aggiornato": "2026-11-02T07:43:10.818Z",
  "pagine": [
   {
    "asl": "belluno",
@@ -33,6 +33,17 @@
    "titolo": "116117",
    "sha": "b748b3aab0975e9d9598ac4d2c2c11e65e1dd899638f444ca7fc5a1c15534ceb",
    "caratteri": 4905,
+   "cambiata": false
+  },
+  {
+   "asl": "belluno",
+   "url": "https://www.regione.veneto.it/web/rete-degli-urp-del-veneto/servizi-sanitari-digitali",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "belluno/513a7cf5a2a6.txt",
+   "titolo": "servizi sanitari digitali - Regione del Veneto",
+   "sha": "2d82a72e7339784f528791e5e40ff553f25645fbab78a786d9ca4b7557679859",
+   "caratteri": 7334,
    "cambiata": false
   },
   {
@@ -88,6 +99,17 @@
    "titolo": "Assistenza domiciliare integrata Distretto di Feltre",
    "sha": "7508fe161883ac45329f38919e20f7f2fb3a749dbc15dc926db08e1aaa02002a",
    "caratteri": 5205,
+   "cambiata": false
+  },
+  {
+   "asl": "belluno",
+   "url": "https://www.aulss1.veneto.it/servizio-di-prevenzione-delle-malattie-croniche-non-trasmissibili-programmi-di-screening-e-promozione-della-salute",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "belluno/b63108626608.txt",
+   "titolo": "Servizio di Prevenzione delle Malattie Croniche non Trasmissibili, Programmi di Screening e Promozione della Salute",
+   "sha": "6e3dab24df64f48aa470da4c53edbb09e067f9ebe03846ad6fab531287439ad7",
+   "caratteri": 11508,
    "cambiata": false
   },
   {
@@ -163,17 +185,6 @@
    "http": 404
   },
   {
-   "asl": "belluno",
-   "url": "https://www.aulss1.veneto.it/servizio-di-prevenzione-delle-malattie-croniche-non-trasmissibili-programmi-di-screening-e-promozione-della-salute",
-   "controllata": "2026-11-02",
-   "http": 200,
-   "file": "belluno/b63108626608.txt",
-   "titolo": "Servizio di Prevenzione delle Malattie Croniche non Trasmissibili, Programmi di Screening e Promozione della Salute",
-   "sha": "6e3dab24df64f48aa470da4c53edbb09e067f9ebe03846ad6fab531287439ad7",
-   "caratteri": 11508,
-   "cambiata": false
-  },
-  {
    "asl": "treviso",
    "url": "https://www.aulss2.veneto.it/",
    "controllata": "2026-11-02",
@@ -193,6 +204,17 @@
    "titolo": "Continuità Assistenziale",
    "sha": "55d850051c7b7113e1fd3834cfbebeb835fbf65ac10bf60d18221bf3be1a351e",
    "caratteri": 8343,
+   "cambiata": false
+  },
+  {
+   "asl": "treviso",
+   "url": "https://www.regione.veneto.it/web/rete-degli-urp-del-veneto/servizi-sanitari-digitali",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "treviso/513a7cf5a2a6.txt",
+   "titolo": "servizi sanitari digitali - Regione del Veneto",
+   "sha": "2d82a72e7339784f528791e5e40ff553f25645fbab78a786d9ca4b7557679859",
+   "caratteri": 7334,
    "cambiata": false
   },
   {
@@ -226,6 +248,17 @@
    "titolo": "Ufficio Relazioni Con Il Pubblico",
    "sha": "fd58eb3ab1c76d59da35dc5d6d6eeb965dab62389994bb4ab4a16fa8301e28e8",
    "caratteri": 9669,
+   "cambiata": false
+  },
+  {
+   "asl": "treviso",
+   "url": "https://www.aulss2.veneto.it/Servizio-programmi-di-screening",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "treviso/0ffe1a932eb0.txt",
+   "titolo": "Servizio Programmi Di Screening",
+   "sha": "025a5191a99a0ce57b76c2e2f71696178552190a2c579a503dd70c9cba6d2b72",
+   "caratteri": 4995,
    "cambiata": false
   },
   {
@@ -368,17 +401,6 @@
   },
   {
    "asl": "treviso",
-   "url": "https://www.aulss2.veneto.it/Servizio-programmi-di-screening",
-   "controllata": "2026-11-02",
-   "http": 200,
-   "file": "treviso/0ffe1a932eb0.txt",
-   "titolo": "Servizio Programmi Di Screening",
-   "sha": "025a5191a99a0ce57b76c2e2f71696178552190a2c579a503dd70c9cba6d2b72",
-   "caratteri": 4995,
-   "cambiata": false
-  },
-  {
-   "asl": "treviso",
    "url": "https://www.aulss2.veneto.it/screening-colon-retto",
    "controllata": "2026-11-02",
    "http": 200,
@@ -405,12 +427,22 @@
    "asl": "venezia",
    "url": "https://www.aulss3.veneto.it/home/numeri-utili/116117",
    "controllata": "2026-11-02",
-   "browser": true,
    "http": 200,
    "file": "venezia/b2b315e09b76.txt",
-   "titolo": "ULSS 3 SERENISSIMA - Centrale 116117",
-   "sha": "38d9270bfec969cade40ebb537076133b7a01385de1af707afa494d5ee819171",
-   "caratteri": 7877,
+   "titolo": "myPortal | ULSS 3 SERENISSIMA",
+   "sha": "8357c3df048ee62b237df5f1c0798f7afb9809f7a40dee8a34997fae5c66edcc",
+   "caratteri": 29,
+   "cambiata": true
+  },
+  {
+   "asl": "venezia",
+   "url": "https://www.regione.veneto.it/web/rete-degli-urp-del-veneto/servizi-sanitari-digitali",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "venezia/513a7cf5a2a6.txt",
+   "titolo": "servizi sanitari digitali - Regione del Veneto",
+   "sha": "2d82a72e7339784f528791e5e40ff553f25645fbab78a786d9ca4b7557679859",
+   "caratteri": 7334,
    "cambiata": false
   },
   {
@@ -453,13 +485,12 @@
    "asl": "venezia",
    "url": "https://www.aulss4.veneto.it/servizionline/urp-ufficio-relazioni-con-il-pubblico",
    "controllata": "2026-11-02",
-   "browser": true,
    "http": 200,
    "file": "venezia/0fc90d5b2483.txt",
-   "titolo": "URP - Ufficio Relazioni con il Pubblico",
-   "sha": "d25943393fc85cd71be451c4505c54f0135e9764bd570f5463c04933d8eead38",
-   "caratteri": 5857,
-   "cambiata": false
+   "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
+   "sha": "6bc2275696536324da914a4390835a8856b32ef9c71aa40dd59c0c5b84156a8f",
+   "caratteri": 45,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -556,7 +587,7 @@
    "titolo": "Casa della Comunità di San Donà di Piave",
    "sha": "62c415b08490abae4d9ae002d01afe40c11f07b8b81b68995d7c01fcc3c2de3b",
    "caratteri": 9153,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -683,25 +714,23 @@
    "asl": "venezia",
    "url": "https://www.aulss4.veneto.it/servizionline/prenotazione-esami-di-laboratorio-presso-le-strutture-dellazienda-ulss4-veneto-orientale",
    "controllata": "2026-11-02",
-   "browser": true,
    "http": 200,
    "file": "venezia/7259f23ba486.txt",
-   "titolo": "Azienda ULSS n. 4 Veneto Orientale - Prenotazione esami di laboratorio presso le strutture dell'Azienda Ulss4 \"Veneto Orientale\"",
-   "sha": "639a5afddb6322348a5a2962cc2fba1c554e07dede861388a1a1a61d719c21fe",
-   "caratteri": 3630,
+   "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
+   "sha": "6bc2275696536324da914a4390835a8856b32ef9c71aa40dd59c0c5b84156a8f",
+   "caratteri": 45,
    "cambiata": true
   },
   {
    "asl": "venezia",
    "url": "https://www.aulss4.veneto.it/home/numeri-utili/116117-e-continuita-assistenziale",
    "controllata": "2026-11-02",
-   "browser": true,
    "http": 200,
    "file": "venezia/7e3d7e26db54.txt",
-   "titolo": "Azienda ULSS n. 4 Veneto Orientale - 116117 e Continuità Assistenziale",
-   "sha": "6418952a2e8d22b121116a7ee3ee2591cfc302d6c5bd29be7454989b7679a99c",
-   "caratteri": 3268,
-   "cambiata": false
+   "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
+   "sha": "6bc2275696536324da914a4390835a8856b32ef9c71aa40dd59c0c5b84156a8f",
+   "caratteri": 45,
+   "cambiata": true
   },
   {
    "asl": "venezia",
@@ -737,7 +766,7 @@
    "titolo": "myPortal | Azienda ULSS n. 4 Veneto Orientale",
    "sha": "3436cb4ccb06982efa76a6f058e98451c4ee687e5cd4f825116d73204212fa0d",
    "caratteri": 3793,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "venezia",
@@ -848,9 +877,9 @@
    "http": 200,
    "file": "rovigo/ebfa4575c105.txt",
    "titolo": "Homepage - ULSS 5 Polesana",
-   "sha": "f9c73a0bbd4341fe820049d2a243af34261cbcaa8f86522418cc5730894a6736",
-   "caratteri": 5776,
-   "cambiata": false
+   "sha": "7b8ae78fe7220123a1aec884272b09f7347285144296737ca0884da7a94bda26",
+   "caratteri": 5718,
+   "cambiata": true
   },
   {
    "asl": "rovigo",
@@ -861,6 +890,17 @@
    "titolo": "Servizio di Continuità Assistenziale",
    "sha": "d703f0cdfd9428566ad2c14501c04366984421afe4587577a04ed606f33f3850",
    "caratteri": 11267,
+   "cambiata": false
+  },
+  {
+   "asl": "rovigo",
+   "url": "https://www.regione.veneto.it/web/rete-degli-urp-del-veneto/servizi-sanitari-digitali",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "rovigo/513a7cf5a2a6.txt",
+   "titolo": "servizi sanitari digitali - Regione del Veneto",
+   "sha": "2d82a72e7339784f528791e5e40ff553f25645fbab78a786d9ca4b7557679859",
+   "caratteri": 7334,
    "cambiata": false
   },
   {
@@ -883,6 +923,17 @@
    "titolo": "URP e Ufficio stampa",
    "sha": "407fc32f03ebd6b30f1df0941732b442f1f9230d31a5a138cedfbb80ade5590c",
    "caratteri": 5234,
+   "cambiata": false
+  },
+  {
+   "asl": "rovigo",
+   "url": "https://www.aulss5.veneto.it/Screening-mammografico",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "rovigo/defab0a31164.txt",
+   "titolo": "Screening mammografico",
+   "sha": "6a18459b038b0ca224052100b968bef6143c42e7bc15ca7809aee70b7ef06a98",
+   "caratteri": 6986,
    "cambiata": false
   },
   {
@@ -1026,17 +1077,6 @@
   },
   {
    "asl": "rovigo",
-   "url": "https://www.aulss5.veneto.it/Screening-mammografico",
-   "controllata": "2026-11-02",
-   "http": 200,
-   "file": "rovigo/defab0a31164.txt",
-   "titolo": "Screening mammografico",
-   "sha": "6a18459b038b0ca224052100b968bef6143c42e7bc15ca7809aee70b7ef06a98",
-   "caratteri": 6986,
-   "cambiata": false
-  },
-  {
-   "asl": "rovigo",
    "url": "https://www.aulss5.veneto.it/index.cfm?action=mys.apridoc&iddoc=764",
    "controllata": "2026-11-02",
    "http": 404
@@ -1061,6 +1101,17 @@
    "titolo": "116117",
    "sha": "b7705ee651914436808811fa4f2a172a11eaf37de93f0e12d10f34af4cd1465c",
    "caratteri": 5782,
+   "cambiata": false
+  },
+  {
+   "asl": "padova",
+   "url": "https://www.regione.veneto.it/web/rete-degli-urp-del-veneto/servizi-sanitari-digitali",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "padova/513a7cf5a2a6.txt",
+   "titolo": "servizi sanitari digitali - Regione del Veneto",
+   "sha": "2d82a72e7339784f528791e5e40ff553f25645fbab78a786d9ca4b7557679859",
+   "caratteri": 7334,
    "cambiata": false
   },
   {
@@ -1094,6 +1145,17 @@
    "titolo": "Centralini",
    "sha": "122b1d6e8afb5b76f911a1b43a246b119c15ec9ab26da46c429f3fc663d85e0a",
    "caratteri": 3884,
+   "cambiata": false
+  },
+  {
+   "asl": "padova",
+   "url": "https://www.aulss6.veneto.it/Screening-del-tumore-del-colon-retto",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "padova/bac18a9708cb.txt",
+   "titolo": "Screening del tumore del colon retto",
+   "sha": "7c7e0bd02bba22b05bec3ac77ef4adf21549aa80c34b44c646170706d32d4234",
+   "caratteri": 8342,
    "cambiata": false
   },
   {
@@ -1209,17 +1271,6 @@
    "cambiata": false
   },
   {
-   "asl": "padova",
-   "url": "https://www.aulss6.veneto.it/Screening-del-tumore-del-colon-retto",
-   "controllata": "2026-11-02",
-   "http": 200,
-   "file": "padova/bac18a9708cb.txt",
-   "titolo": "Screening del tumore del colon retto",
-   "sha": "7c7e0bd02bba22b05bec3ac77ef4adf21549aa80c34b44c646170706d32d4234",
-   "caratteri": 8342,
-   "cambiata": false
-  },
-  {
    "asl": "vicenza",
    "url": "https://www.aulss8.veneto.it/",
    "controllata": "2026-11-02",
@@ -1239,6 +1290,17 @@
    "titolo": "Servizio di continuità assistenziale – numero unico europeo 116117",
    "sha": "a4264400b80f0001242b87cb4124466c307bb39d453a1c16af0bc9c72cd82880",
    "caratteri": 6417,
+   "cambiata": false
+  },
+  {
+   "asl": "vicenza",
+   "url": "https://www.regione.veneto.it/web/rete-degli-urp-del-veneto/servizi-sanitari-digitali",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "vicenza/513a7cf5a2a6.txt",
+   "titolo": "servizi sanitari digitali - Regione del Veneto",
+   "sha": "2d82a72e7339784f528791e5e40ff553f25645fbab78a786d9ca4b7557679859",
+   "caratteri": 7334,
    "cambiata": false
   },
   {
@@ -1316,6 +1378,28 @@
    "titolo": "Impegnativa di Cura Domiciliare",
    "sha": "4e37b9fcbdc444b824f3cbfa61a84200f16d003a766e20ac238199e60c8f6cef",
    "caratteri": 4596,
+   "cambiata": false
+  },
+  {
+   "asl": "vicenza",
+   "url": "https://www.aulss8.veneto.it/servizio-di-epidemiologia",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "vicenza/e9374aa66201.txt",
+   "titolo": "Servizio di Epidemiologia - Screening Oncologici e Sorveglianza PFAS",
+   "sha": "33feb9ecee25b88a58bf3085edac566fb04908108116b0fe592380f42beeb182",
+   "caratteri": 9023,
+   "cambiata": false
+  },
+  {
+   "asl": "vicenza",
+   "url": "https://www.aulss7.veneto.it/programma-screening",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "vicenza/68ffdcddb8d9.txt",
+   "titolo": "Programmi di screening",
+   "sha": "9f12857311a06474f836288026b5b7f1e8187a24b4d42455c10915373e4b026a",
+   "caratteri": 7027,
    "cambiata": false
   },
   {
@@ -1602,28 +1686,6 @@
   },
   {
    "asl": "vicenza",
-   "url": "https://www.aulss8.veneto.it/servizio-di-epidemiologia",
-   "controllata": "2026-11-02",
-   "http": 200,
-   "file": "vicenza/e9374aa66201.txt",
-   "titolo": "Servizio di Epidemiologia - Screening Oncologici e Sorveglianza PFAS",
-   "sha": "33feb9ecee25b88a58bf3085edac566fb04908108116b0fe592380f42beeb182",
-   "caratteri": 9023,
-   "cambiata": false
-  },
-  {
-   "asl": "vicenza",
-   "url": "https://www.aulss7.veneto.it/programma-screening",
-   "controllata": "2026-11-02",
-   "http": 200,
-   "file": "vicenza/68ffdcddb8d9.txt",
-   "titolo": "Programmi di screening",
-   "sha": "9f12857311a06474f836288026b5b7f1e8187a24b4d42455c10915373e4b026a",
-   "caratteri": 7027,
-   "cambiata": false
-  },
-  {
-   "asl": "vicenza",
    "url": "https://www.aulss7.veneto.it/screening-colon-retto",
    "controllata": "2026-11-02",
    "http": 200,
@@ -1632,6 +1694,24 @@
    "sha": "2f8f813c0096c2835e4d280070681fb12a19358f7329bdf6a9b1ebce3321329d",
    "caratteri": 7432,
    "cambiata": false
+  },
+  {
+   "asl": "vicenza",
+   "url": "https://www.aulss8.veneto.it/nodo.php/4437",
+   "controllata": "2026-11-02",
+   "http": 404
+  },
+  {
+   "asl": "vicenza",
+   "url": "https://www.aulss8.veneto.it/apridoc/2100098805C94381B4BABAA30BFE6CE6262",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "vicenza/6817597abf86.txt",
+   "titolo": "ALLEGATO B DGR nr. 479 del 23 aprile 2019 pag. 1 di 50",
+   "sha": "4c70cfd8bacb66aa14c3b93bca3b80f543b4e15362bbb319a4d060b199b94ef5",
+   "caratteri": 109613,
+   "pdf": true,
+   "cambiata": true
   },
   {
    "asl": "verona",
@@ -1675,6 +1755,17 @@
    "titolo": "Servizi Assistenza Domiciliare Integrata",
    "sha": "ed537e704c098028d3fbae6de0e721e96ef95b007e481c500ae61a595bca3328",
    "caratteri": 9607,
+   "cambiata": false
+  },
+  {
+   "asl": "verona",
+   "url": "https://www.regione.veneto.it/web/rete-degli-urp-del-veneto/servizi-sanitari-digitali",
+   "controllata": "2026-11-02",
+   "http": 200,
+   "file": "verona/513a7cf5a2a6.txt",
+   "titolo": "servizi sanitari digitali - Regione del Veneto",
+   "sha": "2d82a72e7339784f528791e5e40ff553f25645fbab78a786d9ca4b7557679859",
+   "caratteri": 7334,
    "cambiata": false
   },
   {
@@ -1938,17 +2029,6 @@
    "titolo": "Aziende Ulss e ospedaliere - Regione del Veneto",
    "sha": "93d0c72c5f0b2bd69fec3fc0573e8d157cd39ccf4998018118001ee86c28351a",
    "caratteri": 2474,
-   "cambiata": false
-  },
-  {
-   "asl": "regione-veneto",
-   "url": "https://www.regione.veneto.it/web/rete-degli-urp-del-veneto/servizi-sanitari-digitali",
-   "controllata": "2026-11-02",
-   "http": 200,
-   "file": "regione-veneto/513a7cf5a2a6.txt",
-   "titolo": "servizi sanitari digitali - Regione del Veneto",
-   "sha": "2d82a72e7339784f528791e5e40ff553f25645fbab78a786d9ca4b7557679859",
-   "caratteri": 7334,
    "cambiata": false
   },
   {

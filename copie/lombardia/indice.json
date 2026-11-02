@@ -1,6 +1,6 @@
 {
  "regione": "lombardia",
- "aggiornato": "2026-11-02T03:29:52.245Z",
+ "aggiornato": "2026-11-02T06:29:10.014Z",
  "pagine": [
   {
    "asl": "bergamo",
@@ -159,7 +159,7 @@
    "http": 200,
    "file": "bergamo/1f85c98b9e36.txt",
    "titolo": "Home Page | ASST Papa Giovanni XXIII",
-   "sha": "e21446dac32c2940fa3fa4639862108d292fb772082a2baf15cefd52096d4258",
+   "sha": "387e515f9b56f4238acd698e4525a4c4786381b24719eb1a7a44fbe93c74d38e",
    "caratteri": 322025,
    "cambiata": true
   },
@@ -1066,9 +1066,9 @@
    "certificato": "non valido",
    "file": "brescia/24859285974c.txt",
    "titolo": "Prenotazioni di visite ed esami | AZIENDA SOCIO-SANITARIA TERRITORIALE DEL GARDA",
-   "sha": "8327c25a8d5ac1baa7721d961f29dc1bc1eb018acf4bf42448b229f29355ca10",
+   "sha": "35139f25f56f1d0f0856bccbad30d425b84b1d8e610154153af0999c1307c567",
    "caratteri": 6827,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "brescia",
@@ -2461,7 +2461,7 @@
      "testo": "Carta dei Servizi Casa di Comunità Introbio"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "lecco",
@@ -2472,7 +2472,7 @@
    "titolo": "ASST Lecco – Regione Lombardia",
    "sha": "40475e67ac943d3ea20fe91cbd9dfe7aeac6c6be55acd1e9c348ce21f1557ec2",
    "caratteri": 19930,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "lecco",
@@ -2513,7 +2513,7 @@
    "titolo": "PRENOTAZIONI – ASST Lecco",
    "sha": "116567a0d320206c2b8142b8b17cad3232041e8caf3c0271cb6ccfdc19266c76",
    "caratteri": 27126,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "lecco",
@@ -2606,7 +2606,7 @@
      "testo": "Questionari gradimento degenza anno 2018"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "lecco",
@@ -2629,7 +2629,7 @@
      "testo": "questa nota per i residenti fuori regione non iscritti al Servizio Sanitario Regionale"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "lecco",
@@ -2640,7 +2640,7 @@
    "titolo": "Cure domiciliari / Cure palliative",
    "sha": "df1cee82e5377c8c69b50be4ee71a2d0fc6f03c55ada6a1b1ed0d27b161feac5",
    "caratteri": 7458,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "lecco",
@@ -2665,7 +2665,7 @@
    "titolo": "ASST Lecco – Regione Lombardia",
    "sha": "40475e67ac943d3ea20fe91cbd9dfe7aeac6c6be55acd1e9c348ce21f1557ec2",
    "caratteri": 19930,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "lecco",
@@ -2677,7 +2677,7 @@
    "titolo": "ASST Lecco – Regione Lombardia",
    "sha": "40475e67ac943d3ea20fe91cbd9dfe7aeac6c6be55acd1e9c348ce21f1557ec2",
    "caratteri": 19930,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "lecco",
@@ -2810,7 +2810,7 @@
      "testo": "Monitoraggio aprile 2026"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "lecco",
@@ -4105,7 +4105,7 @@
    "titolo": "ASST Melegnano Martesana",
    "sha": "b354090fd48c32af0c41a926cb129890347df7809284d404153309353fe57c52",
    "caratteri": 8546,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "milano",
@@ -4628,7 +4628,7 @@
    "url": "http://www.asst-nordmilano.it/urp",
    "controllata": "2026-11-02",
    "http": 0,
-   "errore": "curl: (28) Connection timed out after 30001 milliseconds"
+   "errore": "curl: (28) Connection timed out after 30002 milliseconds"
   },
   {
    "asl": "milano",
@@ -5228,7 +5228,7 @@
    "http": 200,
    "file": "milano/91bb0d244f6b.txt",
    "titolo": "Liste di attesa - ASST Melegnano Martesana",
-   "sha": "71b744d092199aba8e36a184da690b005342aee7dab5bfa5bacd7c1782e69348",
+   "sha": "221d9c80442fd01fb232477ed3f9b27f22ea11f960016bb6523de60da8473796",
    "caratteri": 7290,
    "cambiata": true
   },
@@ -5773,7 +5773,7 @@
    "titolo": "Cure domiciliari / Cure palliative",
    "sha": "df1cee82e5377c8c69b50be4ee71a2d0fc6f03c55ada6a1b1ed0d27b161feac5",
    "caratteri": 7458,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "monza-brianza",
@@ -5862,7 +5862,7 @@
      "testo": "questa nota per i residenti fuori regione non iscritti al Servizio Sanitario Regionale"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "monza-brianza",
@@ -6971,8 +6971,8 @@
    "http": 200,
    "file": "varese/b23b552c097c.txt",
    "titolo": "PRENOTAZIONE visite e esami con SSN - ASST Settelaghi - ASST Settelaghi",
-   "sha": "515a81d0e600d46b234c8834975852ace0ee5976a695a68166e83cc082ac550b",
-   "caratteri": 12638,
+   "sha": "3849abec0560da4de04c28176fc0a4c167d1bd0e86ecc6ea2bedca20571097e8",
+   "caratteri": 12617,
    "cambiata": true
   },
   {
@@ -6982,8 +6982,8 @@
    "http": 200,
    "file": "varese/f68caec45730.txt",
    "titolo": "Contatti - ASST Valle Olona",
-   "sha": "6dbfd6dcd60a09eeb232d6d959d046a80ec5339a3a2ff02d7fc68167b83efec7",
-   "caratteri": 3476,
+   "sha": "7c666e04edaea8a5dc69fe04a52a8b929e964e9a632a318d384870ee4c4421d7",
+   "caratteri": 3475,
    "link_pdf": [
     {
      "url": "https://www.asst-valleolona.it/wp-content/uploads/2023/08/A0652_P13_Pd01_MS06-Opuscolo-rifiuti-sanitari-pericolosi.pdf",
@@ -7030,7 +7030,7 @@
      "testo": ""
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "varese",
@@ -7087,7 +7087,7 @@
      "testo": ""
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "varese",
@@ -7179,7 +7179,7 @@
    "titolo": "CUP - Ospedale di Circolo - ASST Settelaghi - ASST Settelaghi",
    "sha": "fe483fc819adb462543a447629cf5e9ab2bbab4c2f9c7cf4dbd8cb65e94ac617",
    "caratteri": 2597,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "varese",
@@ -7190,7 +7190,7 @@
    "titolo": "Continuità assistenziale - Casa di Comunità di Gazzada Schianno - ASST Settelaghi - ASST Settelaghi",
    "sha": "a84a9f7e282f6f3c248fd537c084a7b936be48b8c8c8fb7b2d227e90ded10641",
    "caratteri": 6411,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "varese",
@@ -7211,8 +7211,8 @@
    "http": 200,
    "file": "varese/625ee56036b9.txt",
    "titolo": "Home - ASST Valle Olona",
-   "sha": "8c4555e168ccecb1b276bb9152b41d020f9ac2e94930d46085ad3c4c3427ddf8",
-   "caratteri": 4084,
+   "sha": "c37642ce0740eba4c87680510561110f80ea09a807ec5f1e21a550af71398f95",
+   "caratteri": 4092,
    "link_pdf": [
     {
      "url": "https://www.asst-valleolona.it/wp-content/uploads/2026/09/Asst-Valleolona-Carta-dei-Servizi-Busto-Via-Stelvio-09.09.2026-Cartacea.pdf",
@@ -7430,8 +7430,8 @@
    "http": 200,
    "file": "varese/c27d02fae6a1.txt",
    "titolo": "Cure domiciliari - ASST Valle Olona",
-   "sha": "c7836eb64041c1708743a593cfb3d95dea6cf198f62521cc041201afaf617f46",
-   "caratteri": 5752,
+   "sha": "d699bfebd6cff6309e4bd5391412b632d83532dbf6da503f8042705103b0e620",
+   "caratteri": 5751,
    "link_pdf": [
     {
      "url": "https://www.asst-valleolona.it/wp-content/uploads/2023/08/A0652_P13_Pd01_MS06-Opuscolo-rifiuti-sanitari-pericolosi.pdf",
@@ -7478,7 +7478,7 @@
      "testo": ""
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "varese",

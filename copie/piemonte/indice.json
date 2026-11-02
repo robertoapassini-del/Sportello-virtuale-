@@ -1,6 +1,6 @@
 {
  "regione": "piemonte",
- "aggiornato": "2026-11-02T03:47:54.813Z",
+ "aggiornato": "2026-11-02T06:47:11.092Z",
  "pagine": [
   {
    "asl": "alessandria",
@@ -209,7 +209,7 @@
    "http": 200,
    "file": "alessandria/054a6c79664a.txt",
    "titolo": "Prevenzione Serena | Regione Piemonte",
-   "sha": "73c4a41adcb36000253bbe597351d053e139e7c62fda6eb5cf79578231c0a0e6",
+   "sha": "b577da8a0ab9752b9165c77830e1302d7dd1d5e8f82fdc16263dee15592ef339",
    "caratteri": 20959,
    "link_pdf": [
     {
@@ -574,7 +574,7 @@
    "titolo": "Urp e contatti - Asl At",
    "sha": "77616f3e58bed1a2fcff9b7c38c9ac91b7e2da41237f6dd9044d3c11ea1a4957",
    "caratteri": 12350,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asti",
@@ -611,7 +611,7 @@
    "http": 200,
    "file": "asti/054a6c79664a.txt",
    "titolo": "Prevenzione Serena | Regione Piemonte",
-   "sha": "73c4a41adcb36000253bbe597351d053e139e7c62fda6eb5cf79578231c0a0e6",
+   "sha": "b577da8a0ab9752b9165c77830e1302d7dd1d5e8f82fdc16263dee15592ef339",
    "caratteri": 20959,
    "link_pdf": [
     {
@@ -758,7 +758,7 @@
    "titolo": "Contatti - ASL Biella",
    "sha": "dc0f4a75e2d25dfad680c66949fd413fc878c480396789a35eda0ccbf88d68da",
    "caratteri": 1904,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "biella",
@@ -806,9 +806,9 @@
    "http": 200,
    "file": "biella/b814052848ef.txt",
    "titolo": "Cure Palliative - ASL Biella",
-   "sha": "9fc23ae684336326213bc9e1a28ad1b3f74400dbd57041990bf15137f62086d0",
-   "caratteri": 5397,
-   "cambiata": false
+   "sha": "8b30da2c594c8623a54455c7c30aeaf7b8306798ffcb8229808584fc7156c712",
+   "caratteri": 5399,
+   "cambiata": true
   },
   {
    "asl": "biella",
@@ -817,7 +817,7 @@
    "http": 200,
    "file": "biella/054a6c79664a.txt",
    "titolo": "Prevenzione Serena | Regione Piemonte",
-   "sha": "73c4a41adcb36000253bbe597351d053e139e7c62fda6eb5cf79578231c0a0e6",
+   "sha": "b577da8a0ab9752b9165c77830e1302d7dd1d5e8f82fdc16263dee15592ef339",
    "caratteri": 20959,
    "link_pdf": [
     {
@@ -1212,7 +1212,7 @@
    "http": 200,
    "file": "cuneo/054a6c79664a.txt",
    "titolo": "Prevenzione Serena | Regione Piemonte",
-   "sha": "73c4a41adcb36000253bbe597351d053e139e7c62fda6eb5cf79578231c0a0e6",
+   "sha": "b577da8a0ab9752b9165c77830e1302d7dd1d5e8f82fdc16263dee15592ef339",
    "caratteri": 20959,
    "link_pdf": [
     {
@@ -1766,7 +1766,7 @@
    "certificato": "non valido",
    "file": "novara/42ffdf775f1d.txt",
    "titolo": "Continuità assistenziale (ex Guardia medica) | A.S.L. TO3",
-   "sha": "6875665bf6c52e22a7805314f9b7d939104e8f4c8efcf229c6bced6d59c34f30",
+   "sha": "284b7c1bf81a6f0a90b29434c0cf66934aefd6386f9c4db818b2dede6b290e9f",
    "caratteri": 3105,
    "cambiata": true
   },
@@ -1822,7 +1822,7 @@
    "http": 200,
    "file": "novara/054a6c79664a.txt",
    "titolo": "Prevenzione Serena | Regione Piemonte",
-   "sha": "73c4a41adcb36000253bbe597351d053e139e7c62fda6eb5cf79578231c0a0e6",
+   "sha": "b577da8a0ab9752b9165c77830e1302d7dd1d5e8f82fdc16263dee15592ef339",
    "caratteri": 20959,
    "link_pdf": [
     {
@@ -1971,7 +1971,7 @@
    "caratteri": 6008,
    "link_pdf": [
     {
-     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2019/02/farmacup.pdf?x48286",
+     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2019/02/farmacup.pdf?x67906",
      "testo": "clicca qui"
     }
    ],
@@ -1985,7 +1985,7 @@
    "certificato": "non valido",
    "file": "torino/b838f80535f8.txt",
    "titolo": "Contatti | A.S.L. TO3",
-   "sha": "9be5e8dda0a6850f7449b73660d384cf1893ea8575573fe5aa83ea4aacb3a756",
+   "sha": "c519eaaa0b94c2edd2b75ecc6ac04e78ba961a1f76901716f418e95bdaac2e08",
    "caratteri": 2188,
    "cambiata": true
   },
@@ -2068,47 +2068,47 @@
    "caratteri": 8519,
    "link_pdf": [
     {
-     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2021/09/Presentazione-URP.pdf?x48286",
+     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2021/09/Presentazione-URP.pdf?x67906",
      "testo": "Scarica la locandina"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Modulo-segnalazioni-urp-settembre-2026.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Modulo-segnalazioni-urp-settembre-2026.pdf?x67906",
      "testo": "Modulo segnalazioni urp settembre 2026"
     },
     {
-     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2022/04/Procedura-gestione-ed-elaborazione-delle-segnalazioni.pdf?x48286",
+     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2022/04/Procedura-gestione-ed-elaborazione-delle-segnalazioni.pdf?x67906",
      "testo": "Procedura gestione ed elaborazione delle segnalazioni"
     },
     {
-     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2022/04/Delibera-454-del-1%C2%B0-aprile-2022-Regolamento-Pubblica-Tutela.pdf?x48286",
+     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2022/04/Delibera-454-del-1%C2%B0-aprile-2022-Regolamento-Pubblica-Tutela.pdf?x67906",
      "testo": "Delibera 454 del 1° aprile 2022 Regolamento Pubblica Tutela"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/10/Elogi-anno-2024.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/10/Elogi-anno-2024.pdf?x67906",
      "testo": "Elogi anno 2024"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Claim-Form.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Claim-Form.pdf?x67906",
      "testo": "Claim-Form"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Lettre-de-reclamation.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Lettre-de-reclamation.pdf?x67906",
      "testo": "Lettre-de-reclamation"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Modulo-de-registro.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Modulo-de-registro.pdf?x67906",
      "testo": "Modulo-de-registro"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2021/09/Presentazione-URP.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2021/09/Presentazione-URP.pdf?x67906",
      "testo": "Presentazione URP"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2022/04/Procedura-gestione-ed-elaborazione-delle-segnalazioni.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2022/04/Procedura-gestione-ed-elaborazione-delle-segnalazioni.pdf?x67906",
      "testo": "Procedura gestione ed elaborazione delle segnalazioni"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2022/04/Delibera-454-del-1%C2%B0-aprile-2022-Regolamento-Pubblica-Tutela.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2022/04/Delibera-454-del-1%C2%B0-aprile-2022-Regolamento-Pubblica-Tutela.pdf?x67906",
      "testo": "Delibera 454 del 1° aprile 2022 Regolamento Pubblica Tutela"
     }
    ],
@@ -2122,7 +2122,7 @@
    "certificato": "non valido",
    "file": "torino/53d58dce5be6.txt",
    "titolo": "U.R.P. | A.S.L. TO3",
-   "sha": "f7825290edc60c122db171bca9cc8e2cbeb9fa410dc783b80d053b86bef6ae39",
+   "sha": "492f86aa213fdde6904189675d6e0753cca91aeb65874bdcc9403bff206c0c0a",
    "caratteri": 7177,
    "link_pdf": [
     {
@@ -2188,7 +2188,7 @@
    "certificato": "non valido",
    "file": "torino/42ffdf775f1d.txt",
    "titolo": "Continuità assistenziale (ex Guardia medica) | A.S.L. TO3",
-   "sha": "6875665bf6c52e22a7805314f9b7d939104e8f4c8efcf229c6bced6d59c34f30",
+   "sha": "284b7c1bf81a6f0a90b29434c0cf66934aefd6386f9c4db818b2dede6b290e9f",
    "caratteri": 3105,
    "cambiata": true
   },
@@ -2239,7 +2239,7 @@
    "certificato": "non valido",
    "file": "torino/47f0299742b3.txt",
    "titolo": "Assistenza a domicilio | A.S.L. TO3",
-   "sha": "bf3eeb30f7068ef0e81b0a806eecb35679283ea5e4acb6c0efd34c5ec17b7b87",
+   "sha": "453cba5fe5b20961ccf2423739052d5e4293663e302f34daaf6da930464c1c80",
    "caratteri": 6252,
    "cambiata": true
   },
@@ -2356,7 +2356,7 @@
      "testo": ""
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -2389,7 +2389,7 @@
    "http": 200,
    "file": "torino/0df5ce662258.txt",
    "titolo": "Il Fascicolo Sanitario Elettronico 2.0 | Regione Piemonte",
-   "sha": "bd40f7670b5409622b1e2adade3e578098ad361dcd68614135c087a6d4f413ef",
+   "sha": "cfbfe762e8993e2701d844e039ec40befeadb1cb29fdb0f779027a7c6f4ed5fb",
    "caratteri": 20014,
    "cambiata": true
   },
@@ -2412,7 +2412,7 @@
    "http": 200,
    "file": "torino/83ce8b1bf05c.txt",
    "titolo": "L'ASL TO3 rinnova l'assistenza medica turistica nelle alte Valli Susa e Chisone | Regione Piemonte",
-   "sha": "4e0c486afed5486a8409db0752a2310811984bc72be951e0c98024c96da5d97e",
+   "sha": "a76c8034cadae9f0d3b2c981d50cdb36d94eb85cfda3b5e412099002528122cf",
    "caratteri": 14992,
    "cambiata": true
   },
@@ -2425,7 +2425,7 @@
    "titolo": "Sportello per il cittadino - URP di Torino | Regione Piemonte",
    "sha": "7427638d0b37bf7f7bed6acd2cd2aea2a4932da52eaeb8b12558caff0b9eb252",
    "caratteri": 17624,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "torino",
@@ -2449,35 +2449,35 @@
    "caratteri": 12824,
    "link_pdf": [
     {
-     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2020/09/Elenco-Farmacie-Aderenti.pdf?x48286",
+     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2020/09/Elenco-Farmacie-Aderenti.pdf?x67906",
      "testo": "Elenco Farmacie Aderenti)"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/09/Informativa-genitori.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/09/Informativa-genitori.pdf?x67906",
      "testo": "Informativa genitori"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/09/Consenso-informato.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/09/Consenso-informato.pdf?x67906",
      "testo": "Consenso informato"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/09/Consenso-informato-del-genitore-non-accompagnante.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/09/Consenso-informato-del-genitore-non-accompagnante.pdf?x67906",
      "testo": "Consenso informato del genitore non accompagnante"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/09/Dichiarazione-sostitutiva-atto-di-notorieta_.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/09/Dichiarazione-sostitutiva-atto-di-notorieta_.pdf?x67906",
      "testo": "Dichiarazione sostitutiva atto di notorietà"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/06/Allegato-1-Informativa-Privacy-CUP.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/06/Allegato-1-Informativa-Privacy-CUP.pdf?x67906",
      "testo": "Allegato 1 – Informativa Privacy CUP"
     },
     {
-     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2023/03/Guida-alla-lettura-Tempi-di-Attesa.pdf?x48286",
+     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2023/03/Guida-alla-lettura-Tempi-di-Attesa.pdf?x67906",
      "testo": "Guida alla lettura Tempi di Attesa"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/09/Elenco-Farmacie-Aderenti.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/09/Elenco-Farmacie-Aderenti.pdf?x67906",
      "testo": "Elenco Farmacie Aderenti"
     }
    ],
@@ -2516,31 +2516,31 @@
    "caratteri": 9547,
    "link_pdf": [
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/02/Mod.A-Richiesta-Valutazione-Geriatrica.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/02/Mod.A-Richiesta-Valutazione-Geriatrica.pdf?x67906",
      "testo": "Mod.A Richiesta Valutazione Geriatrica"
     },
     {
-     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2020/04/informativa-trattamento-dati-e-cambio-di-residenza.pdf?x48286",
+     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2020/04/informativa-trattamento-dati-e-cambio-di-residenza.pdf?x67906",
      "testo": "informativa trattamento dati e cambio di residenza"
     },
     {
-     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2020/03/Mod.B_Scheda-Informativa-Sanitaria.pdf?x48286",
+     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2020/03/Mod.B_Scheda-Informativa-Sanitaria.pdf?x67906",
      "testo": "Mod.B_Scheda Informativa Sanitaria"
     },
     {
-     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2023/05/Impegno-Rifiuto-ad-ottenere-ISEE.pdf?x48286",
+     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2023/05/Impegno-Rifiuto-ad-ottenere-ISEE.pdf?x67906",
      "testo": "Impegno / Rifiuto ad ottenere l’ISEE"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/03/Mod.B_Scheda-Informativa-Sanitaria.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/03/Mod.B_Scheda-Informativa-Sanitaria.pdf?x67906",
      "testo": "Mod.B_Scheda Informativa Sanitaria"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/informativa-trattamento-dati-e-cambio-di-residenza.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/04/informativa-trattamento-dati-e-cambio-di-residenza.pdf?x67906",
      "testo": "informativa trattamento dati e cambio di residenza"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2023/05/Impegno-Rifiuto-ad-ottenere-ISEE.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2023/05/Impegno-Rifiuto-ad-ottenere-ISEE.pdf?x67906",
      "testo": "Impegno Rifiuto ad ottenere ISEE"
     }
    ],
@@ -2554,7 +2554,7 @@
    "certificato": "non valido",
    "file": "torino/f6d0f76be991.txt",
    "titolo": "A.S.L. TO3",
-   "sha": "5df5cb344b061adab6e1152c414913d39d8a8eece7d2d00a178493cef67cb52d",
+   "sha": "c1f30c233649c4017cc34a78fdfb9c1ab7df7a0b3d885033b2e18f2ab43c5ddc",
    "caratteri": 2840,
    "cambiata": true
   },
@@ -2566,7 +2566,7 @@
    "certificato": "non valido",
    "file": "torino/58d10c286b3e.txt",
    "titolo": "Prenotazioni | A.S.L. TO3",
-   "sha": "1fee2598ba5b46261327d3de1a77e28c793eb5d81230b5737e06261267620162",
+   "sha": "4310130cca3719194bf75dc92f80d5c7c657837892fe3fd7c6dc4e4d7f707206",
    "caratteri": 6573,
    "cambiata": true
   },
@@ -2578,7 +2578,7 @@
    "certificato": "non valido",
    "file": "torino/b4f5a3c3ea56.txt",
    "titolo": "CUP – Centri Unici di Prenotazione | A.S.L. TO3",
-   "sha": "47f66da28c9db27e175575cfc456631805d1ed9c7f0cc1913a5fd674054c60f8",
+   "sha": "2945e66a3cefa27745185c3ab315edb7e1760e31326425c45d82cbc3a2519c85",
    "caratteri": 10026,
    "cambiata": true
   },
@@ -2590,7 +2590,7 @@
    "certificato": "non valido",
    "file": "torino/98d162d039ff.txt",
    "titolo": "Medico di famiglia & pediatra | A.S.L. TO3",
-   "sha": "e0303c4317acbc2e3f1d4094fa689cb1f49aa972f4419fdeadfac8e31d9ea0c1",
+   "sha": "465953d6fdc7ff6b3bcdb6b984d3139e76c43be2fdf9d03c13c6de4438a85b95",
    "caratteri": 10957,
    "link_pdf": [
     {
@@ -2714,23 +2714,23 @@
    "caratteri": 8873,
    "link_pdf": [
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Allegato-1-Istanza-attivazione-percorso-di-tutela-per-sito.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Allegato-1-Istanza-attivazione-percorso-di-tutela-per-sito.pdf?x67906",
      "testo": "Allegato 1 – Istanza attivazione percorso di tutela"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/04/Informativa-in-estratto.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/04/Informativa-in-estratto.pdf?x67906",
      "testo": "Informativa privacy"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/09/Elenco-Farmacie-Aderenti.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2020/09/Elenco-Farmacie-Aderenti.pdf?x67906",
      "testo": "Farmacie aderenti"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/Nota-Regione-Piemonte-26-aprile-2024.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/Nota-Regione-Piemonte-26-aprile-2024.pdf?x67906",
      "testo": "Nota Regione Piemonte 26 aprile 2024"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/12/Nota-Regione-Piemonte-25-giugno-2024.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/12/Nota-Regione-Piemonte-25-giugno-2024.pdf?x67906",
      "testo": "Nota Regione Piemonte 25 giugno 2024"
     }
    ],
@@ -2747,35 +2747,35 @@
    "caratteri": 8272,
    "link_pdf": [
     {
-     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2023/03/Guida-alla-lettura-Tempi-di-Attesa.pdf?x48286",
+     "url": "http://www.aslcittaditorino.it/wp-content/uploads/2023/03/Guida-alla-lettura-Tempi-di-Attesa.pdf?x67906",
      "testo": "Guida alla lettura Tempi di Attesa"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/PAA_ASL_CDT_2024-Deliberazione-1040_31-Luglio-2024.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/PAA_ASL_CDT_2024-Deliberazione-1040_31-Luglio-2024.pdf?x67906",
      "testo": "PAA_ASL_CDT_2024 Deliberazione 1040_31 Luglio 2024"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/PAA_ASL_CDT_2023_Aggiornamento-Deliberazione-1449_09-Novembre-2023.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/PAA_ASL_CDT_2023_Aggiornamento-Deliberazione-1449_09-Novembre-2023.pdf?x67906",
      "testo": "PAA_ASL_CDT_2023_Aggiornamento Deliberazione 1449_09 Novembre 2023"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/PAA_ASL_CDT_2023-Deliberazione-994_20-Luglio-2023.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/PAA_ASL_CDT_2023-Deliberazione-994_20-Luglio-2023.pdf?x67906",
      "testo": "PAA_ASL_CDT_2023 Deliberazione 994_20 Luglio 2023"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/PAA_ASL_CDT_2022_Aggiornamento-Deliberazione-2392_02-Dicembre-2022.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/PAA_ASL_CDT_2022_Aggiornamento-Deliberazione-2392_02-Dicembre-2022.pdf?x67906",
      "testo": "PAA_ASL_CDT_2022_Aggiornamento Deliberazione 2392_02 Dicembre 2022"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/PAA_ASL_CDT_2022-Deliberazione-581_29-Aprile-2022-.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/PAA_ASL_CDT_2022-Deliberazione-581_29-Aprile-2022-.pdf?x67906",
      "testo": "PAA_ASL_CDT_2022 Deliberazione 581_29 Aprile 2022"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/PAA_ASL_CDT_2021_Aggiornamento-Deliberazione-1520_16-Dicembre-2021.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/PAA_ASL_CDT_2021_Aggiornamento-Deliberazione-1520_16-Dicembre-2021.pdf?x67906",
      "testo": "PAA_ASL_CDT_2021_Aggiornamento Deliberazione 1520_16 Dicembre 2021"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/PAA_ASL_CDT_2021-Deliberazione-841_23-Luglio-2021.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2024/10/PAA_ASL_CDT_2021-Deliberazione-841_23-Luglio-2021.pdf?x67906",
      "testo": "PAA_ASL_CDT_2021 Deliberazione 841_23 Luglio 2021"
     }
    ],
@@ -2789,7 +2789,7 @@
    "certificato": "non valido",
    "file": "torino/90f61ae2b1aa.txt",
    "titolo": "Tempi di attesa | A.S.L. TO3",
-   "sha": "9e60812abfc07f2a6716cbc15dc33ae51149591a14c6d9dff82fc0d288b04d82",
+   "sha": "a387871861e097a572e039a9a8d4e1dab1791a33aeb653dd8d534f134ef2739e",
    "caratteri": 9447,
    "link_pdf": [
     {
@@ -2901,27 +2901,27 @@
    "caratteri": 10082,
    "link_pdf": [
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/11/Tariffario-1.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/11/Tariffario-1.pdf?x67906",
      "testo": "Tariffario"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/11/Delibera-1584-del-18.11.2025-Regolamento-accesso-1.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/11/Delibera-1584-del-18.11.2025-Regolamento-accesso-1.pdf?x67906",
      "testo": "Delibera 1584 del 18.11.2025 – Regolamento accesso"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/12/Allegato-3-Richiesta-di-accesso-alla-documentazione-sanitaria_firma-evidenziata.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/12/Allegato-3-Richiesta-di-accesso-alla-documentazione-sanitaria_firma-evidenziata.pdf?x67906",
      "testo": "Allegato 3 – Richiesta di accesso alla documentazione sanitaria_"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/12/Allegato-11-Delega-al-ritiro-di-documentazione.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/12/Allegato-11-Delega-al-ritiro-di-documentazione.pdf?x67906",
      "testo": "Allegato 11 – Delega al ritiro di documentazione"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/12/Allegato-12-Dichiarazione-sostitutiva-di-atto-di-notorieta-art.-47-DPR-445_2000.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/12/Allegato-12-Dichiarazione-sostitutiva-di-atto-di-notorieta-art.-47-DPR-445_2000.pdf?x67906",
      "testo": "Allegato 12 – Dichiarazione sostitutiva di atto di notorietà – art. 47 DPR 445_2000"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/12/Indicazioni-modalita-di-pagamento-PagoPA-su-Salute-Piemonte.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/12/Indicazioni-modalita-di-pagamento-PagoPA-su-Salute-Piemonte.pdf?x67906",
      "testo": "Indicazioni modalità di pagamento PagoPA su Salute Piemonte"
     }
    ],
@@ -2975,7 +2975,7 @@
    "certificato": "non valido",
    "file": "torino/b82056cf0d81.txt",
    "titolo": "Assistenza protesica e integrativa | A.S.L. TO3",
-   "sha": "dc20d86ea1a6bd0e9b4f03cf229539410f25e86177f83e305c1ae1b4e31391ac",
+   "sha": "1220518b9d8f91c268f73f576ac539860d2baaeb5ea02a3fbac899c9209bf5b7",
    "caratteri": 13642,
    "cambiata": true
   },
@@ -3029,7 +3029,7 @@
    "http": 200,
    "file": "torino/1df1dd473541.txt",
    "titolo": "Il medico di famiglia e il pediatra di libera scelta | Regione Piemonte",
-   "sha": "c06c3de7960e8c3f04804591a03b060ba29605fb282cf0c2374ffab565c15fc5",
+   "sha": "9e23abed1d6bb410b8258cdfc6f3bdf88a83f2da657e1f464835ccd06cb5a3d2",
    "caratteri": 15698,
    "cambiata": true
   },
@@ -3052,7 +3052,7 @@
    "http": 200,
    "file": "torino/054a6c79664a.txt",
    "titolo": "Prevenzione Serena | Regione Piemonte",
-   "sha": "73c4a41adcb36000253bbe597351d053e139e7c62fda6eb5cf79578231c0a0e6",
+   "sha": "b577da8a0ab9752b9165c77830e1302d7dd1d5e8f82fdc16263dee15592ef339",
    "caratteri": 20959,
    "link_pdf": [
     {
@@ -3106,11 +3106,11 @@
   },
   {
    "asl": "torino",
-   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Modulo-segnalazioni-urp-settembre-2026.pdf?x48286",
+   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Modulo-segnalazioni-urp-settembre-2026.pdf?x67906",
    "controllata": "2026-11-02",
    "da_pagina": "https://www.aslcittaditorino.it/urp/",
    "http": 200,
-   "file": "torino/217e997fbace.txt",
+   "file": "torino/1044e51f3e79.txt",
    "titolo": "AI Direttore Amministrativo",
    "sha": "e40f2e05e1c93205e75d387571d9d49186e831c59c91ec631e7ebe531145fe94",
    "caratteri": 3884,
@@ -3119,12 +3119,12 @@
   },
   {
    "asl": "torino",
-   "url": "http://www.aslcittaditorino.it/wp-content/uploads/2022/04/Delibera-454-del-1%C2%B0-aprile-2022-Regolamento-Pubblica-Tutela.pdf?x48286",
+   "url": "http://www.aslcittaditorino.it/wp-content/uploads/2022/04/Delibera-454-del-1%C2%B0-aprile-2022-Regolamento-Pubblica-Tutela.pdf?x67906",
    "controllata": "2026-11-02",
    "da_pagina": "https://www.aslcittaditorino.it/urp/",
    "http": 200,
-   "finale": "https://www.aslcittaditorino.it:443/wp-content/uploads/2022/04/Delibera-454-del-1%C2%B0-aprile-2022-Regolamento-Pubblica-Tutela.pdf?x48286",
-   "file": "torino/1cc0efa2fdac.txt",
+   "finale": "https://www.aslcittaditorino.it:443/wp-content/uploads/2022/04/Delibera-454-del-1%C2%B0-aprile-2022-Regolamento-Pubblica-Tutela.pdf?x67906",
+   "file": "torino/fac136994ae9.txt",
    "titolo": "SERVIZIO SANITARIO NAZIONALE",
    "sha": "078808276d77e7f6293935ac1f41dcd451e88a4eaf61eac9345d9926e240aa9f",
    "caratteri": 19523,
@@ -3133,11 +3133,11 @@
   },
   {
    "asl": "torino",
-   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Modulo-de-registro.pdf?x48286",
+   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Modulo-de-registro.pdf?x67906",
    "controllata": "2026-11-02",
    "da_pagina": "https://www.aslcittaditorino.it/urp/",
    "http": 200,
-   "file": "torino/1d08a74fbb0a.txt",
+   "file": "torino/310c0443d2ed.txt",
    "titolo": "AI Direttore Amministrativo",
    "sha": "ebe3a6eb2ee7d896570b2a293f05199c8d1ec97415c106c1d3198cc895ed5e34",
    "caratteri": 2279,
@@ -3146,11 +3146,11 @@
   },
   {
    "asl": "torino",
-   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2022/04/Delibera-454-del-1%C2%B0-aprile-2022-Regolamento-Pubblica-Tutela.pdf?x48286",
+   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2022/04/Delibera-454-del-1%C2%B0-aprile-2022-Regolamento-Pubblica-Tutela.pdf?x67906",
    "controllata": "2026-11-02",
    "da_pagina": "https://www.aslcittaditorino.it/urp/",
    "http": 200,
-   "file": "torino/24a2603dcb7e.txt",
+   "file": "torino/dde0664d8838.txt",
    "titolo": "SERVIZIO SANITARIO NAZIONALE",
    "sha": "078808276d77e7f6293935ac1f41dcd451e88a4eaf61eac9345d9926e240aa9f",
    "caratteri": 19523,
@@ -3173,12 +3173,12 @@
   },
   {
    "asl": "torino",
-   "url": "http://www.aslcittaditorino.it/wp-content/uploads/2023/03/Guida-alla-lettura-Tempi-di-Attesa.pdf?x48286",
+   "url": "http://www.aslcittaditorino.it/wp-content/uploads/2023/03/Guida-alla-lettura-Tempi-di-Attesa.pdf?x67906",
    "controllata": "2026-11-02",
    "da_pagina": "https://www.aslcittaditorino.it/come-fare-per/prenotare-una-visita/",
    "http": 200,
-   "finale": "https://www.aslcittaditorino.it:443/wp-content/uploads/2023/03/Guida-alla-lettura-Tempi-di-Attesa.pdf?x48286",
-   "file": "torino/e553e74d56e1.txt",
+   "finale": "https://www.aslcittaditorino.it:443/wp-content/uploads/2023/03/Guida-alla-lettura-Tempi-di-Attesa.pdf?x67906",
+   "file": "torino/10b341f62c18.txt",
    "titolo": "GUIDA ALLA LETTURA",
    "sha": "c260963f3d3fb673e0167733c68a101fc2f26ab079af6aadd58582d7db0e3719",
    "caratteri": 12128,
@@ -3201,11 +3201,11 @@
   },
   {
    "asl": "torino",
-   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Allegato-1-Istanza-attivazione-percorso-di-tutela-per-sito.pdf?x48286",
+   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2026/09/Allegato-1-Istanza-attivazione-percorso-di-tutela-per-sito.pdf?x67906",
    "controllata": "2026-11-02",
    "da_pagina": "https://www.aslcittaditorino.it/tempi-di-attesa-prestazioni-specialistiche/",
    "http": 200,
-   "file": "torino/f57575428016.txt",
+   "file": "torino/3685de0864b3.txt",
    "titolo": "AI Direttore Amministrativo",
    "sha": "9b086d58ac2dcf2d5a088215301677755d4ac07c3c1aa10063836a5cd862b777",
    "caratteri": 2587,
@@ -3320,7 +3320,7 @@
    "certificato": "non valido",
    "file": "verbano-cusio-ossola/42ffdf775f1d.txt",
    "titolo": "Continuità assistenziale (ex Guardia medica) | A.S.L. TO3",
-   "sha": "6875665bf6c52e22a7805314f9b7d939104e8f4c8efcf229c6bced6d59c34f30",
+   "sha": "284b7c1bf81a6f0a90b29434c0cf66934aefd6386f9c4db818b2dede6b290e9f",
    "caratteri": 3105,
    "cambiata": true
   },
@@ -3354,7 +3354,7 @@
    "http": 200,
    "file": "verbano-cusio-ossola/054a6c79664a.txt",
    "titolo": "Prevenzione Serena | Regione Piemonte",
-   "sha": "73c4a41adcb36000253bbe597351d053e139e7c62fda6eb5cf79578231c0a0e6",
+   "sha": "b577da8a0ab9752b9165c77830e1302d7dd1d5e8f82fdc16263dee15592ef339",
    "caratteri": 20959,
    "link_pdf": [
     {
@@ -3656,7 +3656,7 @@
    "http": 200,
    "file": "vercelli/054a6c79664a.txt",
    "titolo": "Prevenzione Serena | Regione Piemonte",
-   "sha": "73c4a41adcb36000253bbe597351d053e139e7c62fda6eb5cf79578231c0a0e6",
+   "sha": "b577da8a0ab9752b9165c77830e1302d7dd1d5e8f82fdc16263dee15592ef339",
    "caratteri": 20959,
    "link_pdf": [
     {
@@ -3816,7 +3816,7 @@
    "http": 200,
    "file": "regole/0df5ce662258.txt",
    "titolo": "Il Fascicolo Sanitario Elettronico 2.0 | Regione Piemonte",
-   "sha": "bd40f7670b5409622b1e2adade3e578098ad361dcd68614135c087a6d4f413ef",
+   "sha": "cfbfe762e8993e2701d844e039ec40befeadb1cb29fdb0f779027a7c6f4ed5fb",
    "caratteri": 20014,
    "cambiata": true
   },
@@ -4017,7 +4017,7 @@
    "http": 200,
    "file": "ticket-farmaci/d021709c72a2.txt",
    "titolo": "Ticket sui farmaci | Regione Piemonte",
-   "sha": "bf428cc93cc616ca6207d8dad7eab78d10b770ab3377b8130345e408165aa5a2",
+   "sha": "654d5989dd1eb9735f4ebbc8b5d8c17de7fcc001a768151c1b202cba13059f2f",
    "caratteri": 14298,
    "cambiata": true
   },
@@ -4043,19 +4043,19 @@
    "caratteri": 12942,
    "link_pdf": [
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/09/Guida-informativa-per-la-donna-operata-al-seno-1.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/09/Guida-informativa-per-la-donna-operata-al-seno-1.pdf?x67906",
      "testo": "Guida informativa per la donna operata al seno"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/09/Epicondilite.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/09/Epicondilite.pdf?x67906",
      "testo": "Epicondilite: il gomito del tennista"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/09/Lombalgia.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/09/Lombalgia.pdf?x67906",
      "testo": "Lombalgia"
     },
     {
-     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/09/Spalla.pdf?x48286",
+     "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/09/Spalla.pdf?x67906",
      "testo": "Spalla: lesione della cuffia dei rotatori"
     }
    ],
@@ -4063,11 +4063,11 @@
   },
   {
    "asl": "riabilitazione",
-   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/09/Guida-informativa-per-la-donna-operata-al-seno-1.pdf?x48286",
+   "url": "https://www.aslcittaditorino.it/wp-content/uploads/2025/09/Guida-informativa-per-la-donna-operata-al-seno-1.pdf?x67906",
    "controllata": "2026-11-02",
    "da_pagina": "https://www.aslcittaditorino.it/strutture/recupero-e-rieducazione-funzionale/",
    "http": 200,
-   "file": "riabilitazione/fc0cc6b1e68b.txt",
+   "file": "riabilitazione/3c8445083e73.txt",
    "titolo": "LA RIABILITAZIONE SENOLOGICA",
    "sha": "808e0e2bb3d7a715af67d6916896a4850a2df2c89f746c40fae18eeb74890b63",
    "caratteri": 15293,

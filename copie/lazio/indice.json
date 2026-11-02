@@ -1,6 +1,6 @@
 {
  "regione": "lazio",
- "aggiornato": "2026-11-02T03:06:48.797Z",
+ "aggiornato": "2026-11-02T06:06:14.386Z",
  "pagine": [
   {
    "asl": "frosinone",
@@ -38,9 +38,9 @@
    "http": 200,
    "file": "frosinone/4d0ac27ae2c7.txt",
    "titolo": "Fascicolo Sanitario",
-   "sha": "0eaf7bee949439aab6c3d401d169efa327ffaec7ec6d3efc7111829ffed21bdf",
+   "sha": "35d3aad05a7b0076371577c576aa4a5787bf713c630b0b4c273f9b2e68bbe902",
    "caratteri": 2358,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "frosinone",
@@ -382,7 +382,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -461,7 +461,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -478,7 +478,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -538,7 +538,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -595,7 +595,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -616,7 +616,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -654,7 +654,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -706,7 +706,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "latina",
@@ -1483,7 +1483,7 @@
    "titolo": "Fascicolo Sanitario",
    "sha": "eefc07f97ad9dcc276de92ead70fe36fd4e25bc671fba85deef57bd4d131bb12",
    "caratteri": 4010,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -1514,13 +1514,9 @@
    "http": 200,
    "file": "roma/e0d930024e6e.txt",
    "titolo": "Punto Unico di Accesso (PUA)",
-   "sha": "817d29ec32c34a2e6a9e683bd4439b032526073903f0eb5fd2236d7dfe2df065",
+   "sha": "885d352602faa57081b157f95fcde5ddaa1cda5f99a7926b2bab17a485d8d8eb",
    "caratteri": 22475,
    "link_pdf": [
-    {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ-Bangla-Rev.pdf",
-     "testo": "LEGEA 104/92"
-    },
     {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_Ucraino.pdf",
      "testo": "১০৪/৯২ আইন"
@@ -1528,6 +1524,14 @@
     {
      "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_romeno.pdf",
      "testo": "ЩОМІСЯЧНА ДОПОМОГА НА ШКОЛЯРІВ З ІНВАЛІДНІСТЮ"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ-Bangla-Rev.pdf",
+     "testo": "LEGEA 104/92"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_italiano_1_.pdf",
+     "testo": "মাসিক ভাতা"
     },
     {
      "url": "https://www.aslroma1.it/uploads/files/39_40_DISABILITY-1.pdf",
@@ -1538,8 +1542,12 @@
      "testo": "INDEMNIZAȚIA LUNARĂ DE FRECVENȚĂ"
     },
     {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_italiano_1_.pdf",
-     "testo": "মাসিক ভাতা"
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_-Spagnolo_CORRETTO.pdf",
+     "testo": "قانون 104 / 92"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_arabo.pdf",
+     "testo": "BUWANANG BENEPISYO PARA SA MAY KAPANSANAN"
     },
     {
      "url": "https://www.aslroma1.it/uploads/files/47_24_Legge_104_Ucraino.pdf",
@@ -1550,24 +1558,16 @@
      "testo": "SUBSIDIO MENSUAL DE FRECUENCIA"
     },
     {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_-Spagnolo_CORRETTO.pdf",
-     "testo": "قانون 104 / 92"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_arabo.pdf",
-     "testo": "BUWANANG BENEPISYO PARA SA MAY KAPANSANAN"
-    },
-    {
-     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_arabo.pdf",
-     "testo": "ЗАКОН 104/92"
-    },
-    {
      "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_Tagalog.pdf",
      "testo": "GUIDA SUI SERVIZI SOCIALI E SANITARI PER LA DISABILITÀ"
     },
     {
      "url": "https://www.aslroma1.it/uploads/files/47_24_LEGGE_104_-_Bangla.pdf",
      "testo": "LEGGE 104/92"
+    },
+    {
+     "url": "https://www.aslroma1.it/uploads/files/39_39_INDENN_FREQ_arabo.pdf",
+     "testo": "ЗАКОН 104/92"
     }
    ],
    "cambiata": true
@@ -1872,7 +1872,7 @@
    "http": 200,
    "file": "roma/2b46e5d8fe38.txt",
    "titolo": "ASL Roma 2 - Punto Unico di Accesso - PUA",
-   "sha": "68727c978a4145cec08a0f857b2ff405997f340637e81107be9b160a0b19a6cb",
+   "sha": "1f7e7c14db4bc193bc0a1ce8dc318d9faf428b7bb193c525ca4a742a32cee782",
    "caratteri": 11883,
    "email_nascoste": 11,
    "cambiata": true
@@ -1943,7 +1943,7 @@
    "http": 200,
    "file": "roma/3feb23bab29f.txt",
    "titolo": "ASL Roma 2 - UOSD Coordinamento Screening",
-   "sha": "44e096ebc038867715f34a1183a67f9d0b1b8a5af08f75da96df9aefbc197371",
+   "sha": "fc316753ed3a049f44d5ccc06573da6d40976987fe72a5d75e0aa82bbed4513a",
    "caratteri": 8743,
    "email_nascoste": 3,
    "cambiata": true
@@ -2035,7 +2035,7 @@
    "http": 200,
    "file": "roma/7e7cbafb32a1.txt",
    "titolo": "15.04.05 Liste di attesa",
-   "sha": "7fe1c4a3b459e837050787097cc931a0f1ec57d6264e169135a251b54d6b99a6",
+   "sha": "5460d4a70056ba1dff2265c0896507f1a3dd7dcd4c69532c94bbbf34b17de047",
    "caratteri": 8673,
    "link_pdf": [
     {
@@ -2366,7 +2366,7 @@
    "sha": "b6d17567a375716f650592d37d6feac83ee6b5d6c12ee3cd3cddaedb74c284c6",
    "caratteri": 2737,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "roma",
@@ -3409,7 +3409,7 @@
    "http": 200,
    "file": "asl-roma2/2e0f163ef6a3.txt",
    "titolo": "ASL Roma 2 - Guardia Medica",
-   "sha": "1dbc4de2fe691292156003d0fc72cebbe2daa9198d7aa625bc2988323073c0e7",
+   "sha": "86467cc873e3d2302d0d88f2673c00d2a8a918a525e47d09e8fe4d203ec619ff",
    "caratteri": 8091,
    "cambiata": true
   },
@@ -3602,7 +3602,7 @@
      "testo": "PARS 2026"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-roma5",
@@ -3798,7 +3798,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-latina",
@@ -3819,7 +3819,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-latina",
@@ -3836,7 +3836,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-latina",
@@ -3893,7 +3893,7 @@
      "testo": "Polizza RTCO"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asl-rieti",
@@ -4091,7 +4091,7 @@
    "http": 200,
    "file": "ticket-pronto-soccorso/6f2a28e1087b.txt",
    "titolo": "ASL Roma 2 - UOC Medicina d'Urgenza e Pronto Soccorso",
-   "sha": "31cf7f8abe679a974e36952f6d7bdbe15564696d22f2d194f577620e3da70370",
+   "sha": "ae4ce3d3bb26b6638b3574253f7214c7a4a80ea1e1ca0466032fb0a885580ca4",
    "caratteri": 14507,
    "email_nascoste": 4,
    "cambiata": true
