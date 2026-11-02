@@ -27,6 +27,10 @@ Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 - `data/regioni/index.json`: Marche, acceso `prevenzione`.
 ## 02/11/2026 — Puglia: accese assistenza a casa e cure palliative
 - `data/regioni/index.json`: in Puglia accesi `assistenza-domiciliare` e `cure-palliative`. Leggono solo URP e PEC di ogni ASL, già provati dalle copie del server (gli stessi della cartella clinica). Liste d'attesa resta spenta: solo l'ASL Brindisi spiega il percorso nei tempi della ricetta (copia del 01/11/2026 di «Modalità di prenotazione»); il motivo è nel `todo` di ogni ASL.
+## 02/11/2026 — Sardegna: accesi assistenza a casa e cure palliative; pagine nuove da copiare
+- `data/regioni/index.json`: accesi `assistenza-domiciliare` e `cure-palliative` per la Sardegna. Leggono solo la PEC dell'ASL, già provata dalle copie (ognuna delle 8 ASL ha `pec`).
+- `data/regioni/sardegna/asl.json`: in `pagine[]` la pagina «Percorso di tutela» dell'ASL Gallura e dell'ASL Oristano (link dal menu della home). Ogliastra e Sulcis: nessuna pagina trovata, annotato nel `todo`. Liste d'attesa resta spenta.
+- `data/regioni/sardegna/inps.json`: in `pagine[]` le pagine INPS dei messaggi n. 635 e n. 637 del 23/02/2026 (province della riforma della disabilità). Invalidità resta spenta finché le copie non dicono il regime di Olbia, Lanusei, Sanluri e Carbonia.
 
 ## 02/11/2026 — Campania: medico di famiglia e cure palliative accesi
 - `data/regioni/campania/asl.json`: `scelta_medico` in ogni ASL e zona di Napoli dalla pagina della Regione «Scelta e revoca del Medico» (regione.campania.it/node/32056, copia del 01/11/2026): portale Sinfonia, app Campania in Salute o ufficio Assistenza sanitaria di base del distretto. Contatti «screening» di Avellino (0825 292029) e Caserta (800 984043, 0823 210545) dalle copie del 01/11/2026. Nuove pagine da copiare: screening di Benevento e Napoli 1 Centro, liste d'attesa di Napoli 1 Centro e Napoli 2 Nord.
