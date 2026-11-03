@@ -126,7 +126,8 @@ test('parole corte solo intere: niente pezzi di parola', () => {
 
 test('le parole vuote non contano', () => {
   const r = ids('esenzione per reddito');
-  assert.ok(r.length <= 5, `${r.length} risultati: ${r.join(', ')}`);
+  // 6 dal 02/11/2026: c'è anche la pagina delle esenzioni delle Regioni (esenzione-ticket/regioni).
+  assert.ok(r.length <= 6, `${r.length} risultati: ${r.join(', ')}`);
   assert.equal(r[0], 'esenzione-ticket');
   assert.deepEqual(paroleRicerca('la mia carrozzina non arriva'), ['carrozzina', 'arriva']);
   assert.deepEqual(cerca('per non del', voci), []);

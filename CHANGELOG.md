@@ -2,6 +2,28 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 02/11/2026 — Esenzione ticket: i codici in più delle Regioni
+- Nuova pagina `esenzione-ticket/regioni/` («Le esenzioni in più di alcune Regioni»), linkata da «Chi ha diritto». Altroconsumo ne copre 4; qui 8, ognuna scritta «In <Regione>: …».
+- `data/rules-esenzione.json`: nuovo elenco `regionali` con le cifre e una scheda di provenienza per regione. Fonti ufficiali lette il 02/11/2026 (alcune da agenti, segnate «estratto»):
+  - Toscana E90, E91, E92 (pagina della Regione del 12/03/2026, riletta: ISEE fino a 18.000 euro, autocertificazione fino al 31/12/2026, solo in Toscana);
+  - Emilia-Romagna E99 (pagina della Regione del 04/09/2026: ISEE fino a 15.000 euro, prorogata al 31/12/2028; i contrasti con la DGR 1390/2025 su data della perdita del lavoro e farmaci di fascia C non sono scritti);
+  - Lombardia E05, E12, E13, E14 (pagina della Regione del 28/07/2026, riletta, e tabella collegata, del 2020: da ricontrollare);
+  - Valle d'Aosta IS01, IS02 (quota fissa sulle medicine, DGR 1899/2017 coordinata con la DGR 1124/2025);
+  - Provincia di Trento E99 (ASUIT, 09/03/2026), Provincia di Bolzano E11 ed E99 (tabella provinciale del 07/04/2026);
+  - Liguria EPF (ASL5 senza data e manifesto regionale del 2017, citato dalla ASL2 nel 2026: ricontrollo entro febbraio 2027);
+  - Campania E20-E24 (DGR 191/2023, Allegato 2).
+- Lasciate fuori: Puglia (E94-E96: i siti della sanità pugliese non si aprono da qui, solo estratti di ricerca), Basilicata (E05: la DGR 544/2026 non dice la soglia), Lazio (E10: probabilmente senza effetto dopo l'abolizione del superticket), i codici per il dentista di Veneto (6R0, 7RQ) e Calabria (E05-E07).
+- `tests/ricerca.test.mjs`: «esenzione per reddito» ora dà 6 risultati (c'è la pagina nuova), il limite passa da 5 a 6.
+
+## 02/11/2026 — Quello che i siti simili hanno e noi no: visita fiscale, esenzione, titoli
+- Confronto con altri siti (money.it, Altroconsumo, Studio Cataldi, deQuo e altri): le lacune vere, rilette sulla fonte ufficiale.
+- Visita fiscale (`visita-fiscale/se-non-ti-trovano/`): mancava la terza assenza. Scheda INPS «Indennità di malattia e visite mediche di controllo», aggiornata il 21/09/2026: alla terza assenza non giustificata si perde tutta l'indennità da quel giorno. Aggiunto anche che la perdita non tocca i giorni di ricovero né quelli già controllati (D.L. 463/1983, art. 5 c. 14). `data/rules-malattia.json`: campo `assenza_visita_terza_percent` con la provenienza, e la scheda INPS tra le fonti.
+- Esenzione per reddito (`esenzione-ticket/chi-ha-diritto/`): non è l'ISEE; conta la famiglia per il fisco, non lo stato di famiglia; il coniuge conta anche se non vive con te; chi vive con te con un reddito suo fa famiglia a parte. Fonte: FAQ del Sistema Tessera Sanitaria (lette il 02/11/2026). Le righe dei modelli citate dalla FAQ sono dei modelli 2014: non riportate.
+- Esenzione, i controlli (`esenzione-ticket/rinnovo/`, nuova parte «Se ti arriva la lettera dei controlli»): l'ASL controlla tutte le autocertificazioni entro 6 mesi; se l'esenzione non spettava manda la lettera con un termine da 30 a 120 giorni per pagare o portare i documenti; dopo, niente nuove visite specialistiche ed esami con il Servizio sanitario fino al pagamento. Fonte: D.M. 11/12/2009, art. 1 commi 10 e 11, letto per intero in Gazzetta Ufficiale. `data/rules-esenzione.json`: campi `controlli.*` con la provenienza. Nuove parole della ricerca in `data/moduli.json`.
+- Cifre che cambiano ogni anno (`accompagnamento/`, `invalidita/pensione-e-assegno/`): accanto agli importi, da dove vengono (schede INPS aggiornate a luglio 2026). `dateModified` nei dati strutturati c'era già.
+- Titoli e descrizioni con le parole che si cercano: «Visita fiscale: gli orari per dipendenti pubblici e privati», «Esenzione ticket: chi ne ha diritto, come si chiede, rinnovo», «Esenzione ticket: il rinnovo e la lettera dei controlli»; descrizione della pagina «se non ti trovano» con le tre assenze.
+- `tests/citazioni.txt`: «art. 1 | ?» (D.M. 11/12/2009, riletto sul testo).
+
 ## 02/11/2026 — Legge 104: l'accertamento provvisorio se la visita tarda
 - Mancava, e un sito simile (legge104.it) lo spiega: con la vecchia procedura, se la commissione non decide entro 45 giorni dalla domanda, un medico specialista dell'azienda sanitaria fa un accertamento provvisorio, valido solo per permessi, sede di lavoro e congedo straordinario fino al verbale; alla visita si può chiedere anche un certificato provvisorio. Fonte: D.L. 324/1993, art. 2, commi 2, 3 e 3-quater, letto per intero su Normattiva il 02/11/2026 (45 giorni dal D.L. 90/2014, art. 25 c. 4). Il D.Lgs. 62/2024 non cita il D.L. 324/1993: per il nuovo regime la pagina non ne parla.
 - `data/rules-legge-104.json`: nuovo campo `accertamento_provvisorio_giorni` (45) con la provenienza e la fonte nell'elenco. `legge-104/come-si-ottiene/`: nuovo paragrafo «Se la visita tarda e ti servono i permessi». `legge-104/permessi/`: rimando dal requisito del verbale. `data/moduli.json`: parole della ricerca («certificato provvisorio», «visita in ritardo»). `tests/citazioni.txt`: 5 citazioni rilette sul testo.
