@@ -24,6 +24,10 @@ Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 - Titoli e descrizioni con le parole che si cercano: «Visita fiscale: gli orari per dipendenti pubblici e privati», «Esenzione ticket: chi ne ha diritto, come si chiede, rinnovo», «Esenzione ticket: il rinnovo e la lettera dei controlli»; descrizione della pagina «se non ti trovano» con le tre assenze.
 - `tests/citazioni.txt`: «art. 1 | ?» (D.M. 11/12/2009, riletto sul testo).
 
+## 02/11/2026 — Legge 104: l'accertamento provvisorio se la visita tarda
+- Mancava, e un sito simile (legge104.it) lo spiega: con la vecchia procedura, se la commissione non decide entro 45 giorni dalla domanda, un medico specialista dell'azienda sanitaria fa un accertamento provvisorio, valido solo per permessi, sede di lavoro e congedo straordinario fino al verbale; alla visita si può chiedere anche un certificato provvisorio. Fonte: D.L. 324/1993, art. 2, commi 2, 3 e 3-quater, letto per intero su Normattiva il 02/11/2026 (45 giorni dal D.L. 90/2014, art. 25 c. 4). Il D.Lgs. 62/2024 non cita il D.L. 324/1993: per il nuovo regime la pagina non ne parla.
+- `data/rules-legge-104.json`: nuovo campo `accertamento_provvisorio_giorni` (45) con la provenienza e la fonte nell'elenco. `legge-104/come-si-ottiene/`: nuovo paragrafo «Se la visita tarda e ti servono i permessi». `legge-104/permessi/`: rimando dal requisito del verbale. `data/moduli.json`: parole della ricerca («certificato provvisorio», «visita in ritardo»). `tests/citazioni.txt`: 5 citazioni rilette sul testo.
+
 ## 02/11/2026 — Calabria: pagine dello screening e delle liste d'attesa da copiare
 
 - `data/regioni/calabria/asl.json`: in `pagine` lo screening dell'ASP di Catanzaro (asp.cz.it), di Cosenza (asp.cosenza.it) e di Crotone (sirio.aspkr.it, linkato da asp.crotone.it), la pagina «Liste di attesa» dell'ASP di Catanzaro e l'URP di Crotone. Moduli liste-attesa e prevenzione ancora spenti: motivo nel `todo`.
