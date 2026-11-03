@@ -167,6 +167,15 @@
      "proof": "pagina"
     },
     {
+     "topic": "casa",
+     "label": "PUA (Punto unico di accesso) della Regione Valle d'Aosta: accoglie e orienta sui servizi socio-assistenziali e socio-sanitari (email info.pua@regione.vda.it). Si può andare anche a uno degli sportelli: Aosta, Morgex, Châtillon, Villeneuve, Verrès, Gignod, Donnas, Nus",
+     "number": "800 066214",
+     "hours": "Lunedì–venerdì 8:30–16:30",
+     "url": "https://www.regione.vda.it/servsociali/famiglia/servizi/assistenti_sociali/default_i.asp",
+     "verified": "2026-11-01",
+     "proof": "pagina"
+    },
+    {
      "topic": "palliative",
      "label": "Cure palliative e hospice dell'USL della Valle d'Aosta: segreteria (email curepalliative@ausl.vda.it)",
      "number": "0165 545573",
@@ -271,12 +280,12 @@
     "CUP: c'è un solo CUP, quello dell'USL, 0165 548387 (lun–ven 8–16:30, da fisso e cellulare, anche dall'estero); numero verde 800 610061 solo per assistenza al CUP online. Non ho trovato un CUP regionale diverso. Alcune prestazioni (es. radiologia, oculistica) si prenotano direttamente nei reparti.",
     "Percorso di tutela (pagina «Tempi di attesa», copia del 21/10/2026): si chiede al CUP telefonico o agli sportelli CUP; non c'è un indirizzo email dedicato. Per questo send_to resta vuoto e la lettera si porta all'URP o al CUP; nella lettera c'è la PEC generale (protocollo@pec.ausl.vda.it, nel piè di pagina del sito). Da chiedere all'URP se si può mandare con la PEC.",
     "Scelta del medico (pagina copiata il 22/10/2026): online dal FSE solo per il cambio; prima scelta, 0–14 anni e fuori ambito allo sportello; anche via PEC con il modulo (non per prima iscrizione e cittadini stranieri). Ad Aosta (via Guido Rey 1) c'è anche la prenotazione garantita (lun, mer, ven 8:30–13:30; mar e gio 8:30–15:30) tramite CUP.",
-    "Invalidità civile in Valle d'Aosta: la seguono la Regione e l'USL con regole proprie (il sito della Regione ha la voce «Servizi per invalidi civili»), non solo l'INPS. Il modulo invalidità non va acceso finché non si legge come funziona qui.",
     "Copie del 22/10/2026 lette per i moduli (proof «pagina»): cartella clinica (Ufficio cartelle cliniche dell'Ospedale Parini, 0165 543240, martedì e giovedì 8:30–13; richiesta di persona, per posta alla Direzione medica di presidio, Viale Ginevra 3, o per email a ufficiocartellecliniche@ausl.vda.it con il documento; consegna entro 7 giorni se la cartella è disponibile), cure palliative (segreteria 0165 545573, curepalliative@ausl.vda.it, Beauregard; l'ADI-CP si attiva con richiesta alla SS Cure Palliative), protesica (0165 544806, servizio.ausili@ausl.vda.it, via Guido Rey 1; riparazioni 0165 545714 o 0165 545711), screening (0165 231205, screening.inva@invallee.it, via Guido Rey 5). Accesi cartella-clinica, cure-palliative e ausili. Prevenzione ha tutti i dati (numero dello screening) ma resta spenta: il giro generico di tests/browser.cjs clicca la provincia subito dopo il primo pulsante, mentre prevenzione chiede prima sesso ed età, e il percorso si ferma (da correggere nel test, non nei dati).",
-    "PUA / cure domiciliari: nessuna copia dà il numero o l'indirizzo di un PUA. La pagina «Assistenza domiciliare (ADI)» è solo la scheda del progetto PNRR; la pagina «Area territoriale» dice che l'ADI la segue l'Area territoriale, senza contatti. Per questo assistenza-domiciliare resta spenta: serve la pagina dei distretti con il punto di accesso (aggiunta in «pagine»).",
     "Le pagine regionali «Assistenza sanitaria» e «Servizi sul territorio» ora si copiano (22/10/2026): elencano le voci (Assistenza domiciliare integrata, Servizi per invalidi civili) ma senza numeri.",
     "Pagine aggiunte in «pagine» il 22/10/2026 (secondo giro, trovate con il motore di ricerca sui domini ufficiali; nessun dato preso dagli estratti): invalidita, medico, pua. Da leggere quando ci sono le copie.",
-    "Copie del 23/10/2026: nessun PDF e nessuna pagina nuova con un PUA o un punto di accesso alle cure a casa (la pagina Distretto 1 dà solo i numeri delle Case della Comunità di Aosta e Morgex, non del PUA). assistenza-domiciliare resta spenta. Tolte da «pagine» due pagine che rispondono 404 (vecchia pagina ADI datapage.asp?id=230 e accertamento handicap della Regione); aggiunte (url trovati con il motore di ricerca, nessun dato preso dagli estratti) la pagina ADI su www2.ausl.vda.it e tre pagine della Regione (assistenti sociali, accompagnamento e assistenza, assistenza sanitaria di base), che parlano del PUA."
+    "Copie del 23/10/2026: nessun PDF e nessuna pagina nuova con un PUA o un punto di accesso alle cure a casa (la pagina Distretto 1 dà solo i numeri delle Case della Comunità di Aosta e Morgex, non del PUA). assistenza-domiciliare resta spenta. Tolte da «pagine» due pagine che rispondono 404 (vecchia pagina ADI datapage.asp?id=230 e accertamento handicap della Regione); aggiunte (url trovati con il motore di ricerca, nessun dato preso dagli estratti) la pagina ADI su www2.ausl.vda.it e tre pagine della Regione (assistenti sociali, accompagnamento e assistenza, assistenza sanitaria di base), che parlano del PUA.",
+    "Copie del 01/11/2026: la pagina regionale «Assistenti sociali» dà il PUA (numero verde 800 066214, lun–ven 8:30–16:30, info.pua@regione.vda.it, sportelli in 8 comuni). Messo in contacts «casa»; acceso assistenza-domiciliare.",
+    "Invalidità civile in Valle d'Aosta (copia del 01/11/2026 della pagina regionale «Invalidi civili, ciechi e sordomuti»): per la legge regionale 7 giugno 1999, n. 11 la domanda delle provvidenze economiche va presentata alla Struttura invalidità civile, disabilità e tutele dell'Assessorato regionale alla sanità (Via Croix Noire 44, Saint-Christophe, 0165 274635, lun–ven 9–14), non all'INPS. Il modulo invalidità nazionale (lettere e PEC all'INPS) non si adatta: resta spento. Servirebbe una versione regionale del percorso."
    ],
    "fast_track": null,
    "how_to": "Chiama il CUP dell'USL allo 0165 548387 (dal lunedì al venerdì 8–16:30) o vai a uno sportello CUP. Chiedi di attivare il «percorso di tutela». Se non ti danno una data in tempo, stampa la lettera e portala all'URP dell'USL (via Guido Rey 1, Aosta) o a uno sportello CUP. Fatti dare una copia con timbro e data.",

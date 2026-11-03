@@ -55,9 +55,10 @@ const aree = JSON.parse(fs.readFileSync(path.join(SITE, 'data/moduli.json'), 'ut
 
 // Nel browser: le frasi siciliane senza «Sicilia» (fuori dal riquadro delle fonti).
 // aspOk: la regione chiama ASP anche le sue aziende (la Calabria): lì «ASP» da solo non è siciliano.
+// 02/11/2026: «Circonvallazione Ragusa 1, Teramo» (ASL di Teramo) è una strada, non la Sicilia.
 function fraseSiciliane(aspOk) {
-  const SIC = aspOk ? /SovraCUP|ASPConTe|Regione Siciliana|\b(Palermo|Catania|Messina|Trapani|Siracusa|Agrigento|Enna|Ragusa|Caltanissetta)\b/
-    : /\bASP\b|SovraCUP|ASPConTe|Regione Siciliana|\b(Palermo|Catania|Messina|Trapani|Siracusa|Agrigento|Enna|Ragusa|Caltanissetta)\b/;
+  const SIC = aspOk ? /SovraCUP|ASPConTe|Regione Siciliana|(?<!\b(?:Via|Viale|Piazza|Piazzale|Corso|Largo|Circonvallazione) )\b(Palermo|Catania|Messina|Trapani|Siracusa|Agrigento|Enna|Ragusa|Caltanissetta)\b/
+    : /\bASP\b|SovraCUP|ASPConTe|Regione Siciliana|(?<!\b(?:Via|Viale|Piazza|Piazzale|Corso|Largo|Circonvallazione) )\b(Palermo|Catania|Messina|Trapani|Siracusa|Agrigento|Enna|Ragusa|Caltanissetta)\b/;
   const out = [];
   let titoletto = '';
   for (const el of document.querySelectorAll('main h2, main h3, main h4, main p, main li, main dd, main td, main summary, section.guida h2, section.guida h3, section.guida p, section.guida li')) {
