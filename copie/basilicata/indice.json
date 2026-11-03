@@ -1,11 +1,11 @@
 {
  "regione": "basilicata",
- "aggiornato": "2026-11-02T08:08:34.972Z",
+ "aggiornato": "2026-11-03T02:38:43.776Z",
  "pagine": [
   {
    "asl": "matera",
    "url": "https://www.asmbasilicata.it/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "matera/0293f11dd9e7.txt",
    "titolo": "ASM Matera",
@@ -16,7 +16,7 @@
   {
    "asl": "matera",
    "url": "https://www.asmbasilicata.it/servizio/guardia-medica-servizio-di-continuita-assistenziale/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "matera/12322b897639.txt",
    "titolo": "Servizio di continuità assistenziale – guardia medica – ASM Matera",
@@ -27,7 +27,7 @@
   {
    "asl": "matera",
    "url": "https://www.asmbasilicata.it/servizio/cambiare-scegliere-il-medico-di-base-o-pediatra/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "matera/6ee2c8265d39.txt",
    "titolo": "Cambiare/scegliere il medico di base o pediatra – ASM Matera",
@@ -44,18 +44,18 @@
   {
    "asl": "matera",
    "url": "https://agr.regione.basilicata.it/post/latronico-sul-numero-europeo-armonizzato",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "matera/a4a72d01829e.txt",
    "titolo": "Latronico sul Numero europeo Armonizzato - AGR Basilicata",
-   "sha": "e5a5ca8fd3f22f37725cd9ef22a90effe34fa71cf254d9bc34279cae9a1707ed",
-   "caratteri": 5337,
-   "cambiata": false
+   "sha": "3f1904da1eb3051492f6d41dec8ec4d65a9b97d8ddffc623eb2c41737e781122",
+   "caratteri": 5368,
+   "cambiata": true
   },
   {
    "asl": "matera",
    "url": "https://www.asmbasilicata.it/servizio/prenotazioni-e-ticket/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "matera/96fc54a26520.txt",
    "titolo": "Prenotazioni e ticket – ASM Matera",
@@ -66,7 +66,7 @@
   {
    "asl": "matera",
    "url": "https://www.asmbasilicata.it/ufficio-relazioni-con-il-pubblico-urp/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "matera/6f68aa41f5f3.txt",
    "titolo": "Unità Operativa Semplice Dipartimentale “URP – Comunicazione – Ufficio Stampa – Privacy” – Prevenzione della Corruzione e Trasparenza” – ASM Matera",
@@ -83,7 +83,7 @@
   {
    "asl": "matera",
    "url": "https://www.asmbasilicata.it/chi-siamo/unita-organizzativa/punto-informativo-ufficio-relazioni-con-il-pubblico-urp-policoro/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "matera/73cdd7e1988e.txt",
    "titolo": "Punto Informativo “Ufficio Relazioni con il Pubblico – URP” – Policoro – ASM Matera",
@@ -94,7 +94,7 @@
   {
    "asl": "matera",
    "url": "https://old.asmbasilicata.it/servizi/Menu/dinamica.aspx?idSezione=616&idArea=17682&idCat=17691&ID=41146&TipoElemento=pagina",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "certificato": "non valido",
    "file": "matera/ba15fecc3c01.txt",
@@ -106,10 +106,10 @@
   {
    "asl": "matera",
    "url": "https://www.salute.basilicata.it/servizi-agli-assistiti/servizi-di-prevenzione/screening-oncologici/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "browser": true,
    "http": 200,
-   "finale": "https://idp.sanita.basilicata.it:9443/authenticationendpoint/login.do?RelayState=mFdI-yzQI4H7B_Ox6x7VaaO1Hrq1V80FiG-VdpjlDGw.clvvXjpO1vo.servizi.salute.basilicata.it&commonAuthCallerPath=%2Fsamlsso&forceAuth=true&passiveAuth=false&tenantDomain=carbon.super&sessionDataKey=4631aefa-7b18-45a9-a427-49e0cf87f054&relyingParty=id.salute.basilicata.it&type=samlsso&sp=id.salute.basilicata.it&isSaaSApp=false&authenticators=SAMLSSOAuthenticator:SPID_LIV_2:SPID_LIV_3:LOCAL",
+   "finale": "https://idp.sanita.basilicata.it:9443/authenticationendpoint/login.do?RelayState=uTHGAWF44c7FHkluWhkbB3_zmBLezM1J6bF99GqRZzg.qw8c1jf_NHE.servizi.salute.basilicata.it&commonAuthCallerPath=%2Fsamlsso&forceAuth=true&passiveAuth=false&tenantDomain=carbon.super&sessionDataKey=77f94ed5-7868-4a4c-bb73-cc07d56982bf&relyingParty=id.salute.basilicata.it&type=samlsso&sp=id.salute.basilicata.it&isSaaSApp=false&authenticators=SAMLSSOAuthenticator:SPID_LIV_2:SPID_LIV_3:LOCAL",
    "file": "matera/de4da2f6f01b.txt",
    "titolo": "SISIR",
    "sha": "e05eab48fb40c3ac25b451eb03c57e087cf5cd055d28a95424ac258b3f6fb579",
@@ -120,35 +120,35 @@
      "testo": "Manuale d'uso"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "matera",
    "url": "https://screening.regione.basilicata.it/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "certificato": "non valido",
    "file": "matera/5531e554e5bf.txt",
    "titolo": "Screening Basilicata",
    "sha": "d1bb237178bbb7a99dcb87a8b9a81671533c0050e28922f377728d9537e097d9",
    "caratteri": 20,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "matera",
    "url": "https://www.salute.basilicata.it/assistenza/screening-oncologici/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "matera/a258d18f1fc2.txt",
    "titolo": "Archivi Faq - Salute Basilicata",
    "sha": "554fbe77369c27058b3d11bbc6347542c9a2ceef4eb7c79d5ccc1eaf7e091dff",
    "caratteri": 5935,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "matera",
    "url": "https://old.asmbasilicata.it/servizi/Menu/dinamica.aspx?idSezione=17695&idArea=17697&idCat=17730&ID=18170&TipoElemento=pagina",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "certificato": "non valido",
    "file": "matera/36e845d8630f.txt",
@@ -160,7 +160,7 @@
   {
    "asl": "matera",
    "url": "https://www.asmbasilicata.it/servizio/cartella-clinica/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "matera/6352d970570b.txt",
    "titolo": "Richiesta cartella clinica – ASM Matera",
@@ -181,7 +181,7 @@
   {
    "asl": "matera",
    "url": "https://www.asmbasilicata.it/servizio/scelta-revoca-medico-di-famiglia-4/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "matera/d5b5b8700372.txt",
    "titolo": "Scelta / revoca Medico di Famiglia – ASM Matera",
@@ -210,7 +210,7 @@
   {
    "asl": "matera",
    "url": "https://www.asmbasilicata.it/tutti-i-come-fare-per/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "matera/d59ecd88dde3.txt",
    "titolo": "Tutti i come fare per – ASM Matera",
@@ -221,7 +221,7 @@
   {
    "asl": "matera",
    "url": "https://www.asmbasilicata.it/wp-content/uploads/2025/07/modelloreclamiurp_77_287.pdf",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "da_pagina": "https://www.asmbasilicata.it/ufficio-relazioni-con-il-pubblico-urp/",
    "http": 200,
    "file": "matera/a0d04701e3b2.txt",
@@ -234,7 +234,7 @@
   {
    "asl": "matera",
    "url": "https://idp.sanita.basilicata.it:9443/authenticationendpoint/resources/SISIR%20-%20Guida%20Accesso%20agli%20applicativi%20-%20v1%20-%20r2.pdf",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "da_pagina": "https://www.salute.basilicata.it/servizi-agli-assistiti/servizi-di-prevenzione/screening-oncologici/",
    "http": 200,
    "file": "matera/dbbea8c824ad.txt",
@@ -242,23 +242,23 @@
    "sha": "b48fa1241e96d63f1ac035b2475fd9567cb8468b3b696a7d63f5f35b40e5e8f2",
    "caratteri": 14229,
    "pdf": true,
-   "cambiata": true
-  },
-  {
-   "asl": "potenza",
-   "url": "https://www.aspbasilicata.it/",
-   "controllata": "2026-11-02",
-   "http": 200,
-   "file": "potenza/28b106b78182.txt",
-   "titolo": "ASP Basilicata",
-   "sha": "34e1a1188a4588769109804e4e17c08c765e4482b63b68dc522fd9f309cc2df7",
-   "caratteri": 5193,
    "cambiata": false
   },
   {
    "asl": "potenza",
+   "url": "https://www.aspbasilicata.it/",
+   "controllata": "2026-11-03",
+   "http": 200,
+   "file": "potenza/28b106b78182.txt",
+   "titolo": "ASP Basilicata",
+   "sha": "ecc0210f5e578cf35908f40d4c834474f92a3aac78383da74290d2379d27b311",
+   "caratteri": 5182,
+   "cambiata": true
+  },
+  {
+   "asl": "potenza",
    "url": "https://www.aspbasilicata.it/come-fare-per/continuita-assistenziale-ex-guardia-medica/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "potenza/2f4702700fe5.txt",
    "titolo": "Continuità Assistenziale (ex Guardia Medica) - ASP Basilicata",
@@ -269,7 +269,7 @@
   {
    "asl": "potenza",
    "url": "https://www.aspbasilicata.it/amministrazione-trasparente/attivita-e-procedimenti/tipologia-dei-procedimento/cure-domiciliari/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "potenza/f8fb0059f541.txt",
    "titolo": "Cure Domiciliari - ASP Basilicata",
@@ -280,7 +280,7 @@
   {
    "asl": "potenza",
    "url": "https://www.aspbasilicata.it/come-fare-per/scelta-e-revoca-del-medico-di-famiglia-e-del-pediatra/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "potenza/7a2c22c8c106.txt",
    "titolo": "Scelta e revoca del Medico di Famiglia e del Pediatra - ASP Basilicata",
@@ -305,29 +305,29 @@
   {
    "asl": "potenza",
    "url": "https://agr.regione.basilicata.it/post/latronico-sul-numero-europeo-armonizzato",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "potenza/a4a72d01829e.txt",
    "titolo": "Latronico sul Numero europeo Armonizzato - AGR Basilicata",
-   "sha": "e5a5ca8fd3f22f37725cd9ef22a90effe34fa71cf254d9bc34279cae9a1707ed",
-   "caratteri": 5337,
-   "cambiata": false
+   "sha": "3f1904da1eb3051492f6d41dec8ec4d65a9b97d8ddffc623eb2c41737e781122",
+   "caratteri": 5368,
+   "cambiata": true
   },
   {
    "asl": "potenza",
    "url": "https://www.regione.basilicata.it/centro-unico-di-prenotazione-centro-servizi-regione-basilicata/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "potenza/5dbc77a23557.txt",
    "titolo": "Centro Unico di Prenotazione | Centro Servizi Regione Basilicata - Regione Basilicata",
-   "sha": "6f2942ec712623b6f3592efa4c9aa972dd961f69b741d9bb1064d84a0fb881a1",
-   "caratteri": 9022,
-   "cambiata": false
+   "sha": "08a91efeca03e4d25cf73272948c117e904f1b43652f86b4682875782a2d6258",
+   "caratteri": 9053,
+   "cambiata": true
   },
   {
    "asl": "potenza",
    "url": "https://www.aspbasilicata.it/servizi-per-i-cittadini/urp-e-comunicazione/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "potenza/309c91a8b799.txt",
    "titolo": "URP e Comunicazione - ASP Basilicata",
@@ -368,7 +368,7 @@
   {
    "asl": "potenza",
    "url": "https://www.aspbasilicata.it/organizzazione/azienda/dipartimenti/dipartimento-post-acuzie-continuita-ospedale-territorio/oncologia-critica-territoriale-cure-domiciliari-e-palliative-adi/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "potenza/bc8319be1dd6.txt",
    "titolo": "UOC Oncologia Critica Territoriale, Cure Domiciliari e Palliative (ADI) - ASP Basilicata",
@@ -389,10 +389,10 @@
   {
    "asl": "potenza",
    "url": "https://www.salute.basilicata.it/servizi-agli-assistiti/servizi-di-prevenzione/screening-oncologici/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "browser": true,
    "http": 200,
-   "finale": "https://idp.sanita.basilicata.it:9443/authenticationendpoint/login.do?RelayState=DUJUgLBNdLoPMraycky24QcMvTMRNuTBNFJrGwO2oXc.cbyglC5DEKo.servizi.salute.basilicata.it&commonAuthCallerPath=%2Fsamlsso&forceAuth=true&passiveAuth=false&tenantDomain=carbon.super&sessionDataKey=cd0dbb4a-d539-434b-900f-0de3d81ea82d&relyingParty=id.salute.basilicata.it&type=samlsso&sp=id.salute.basilicata.it&isSaaSApp=false&authenticators=SAMLSSOAuthenticator:SPID_LIV_2:SPID_LIV_3:LOCAL",
+   "finale": "https://idp.sanita.basilicata.it:9443/authenticationendpoint/login.do?RelayState=Wmgn7y_kWok7miqN6ziebIADANPI7zolN9Zexg1ftS0.W_rbZSGsGzU.servizi.salute.basilicata.it&commonAuthCallerPath=%2Fsamlsso&forceAuth=true&passiveAuth=false&tenantDomain=carbon.super&sessionDataKey=227c502d-915c-403f-9dec-6463231ac4e1&relyingParty=id.salute.basilicata.it&type=samlsso&sp=id.salute.basilicata.it&isSaaSApp=false&authenticators=SAMLSSOAuthenticator:SPID_LIV_2:SPID_LIV_3:LOCAL",
    "file": "potenza/de4da2f6f01b.txt",
    "titolo": "SISIR",
    "sha": "e05eab48fb40c3ac25b451eb03c57e087cf5cd055d28a95424ac258b3f6fb579",
@@ -403,35 +403,35 @@
      "testo": "Manuale d'uso"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "potenza",
    "url": "https://screening.regione.basilicata.it/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "certificato": "non valido",
    "file": "potenza/5531e554e5bf.txt",
    "titolo": "Screening Basilicata",
    "sha": "d1bb237178bbb7a99dcb87a8b9a81671533c0050e28922f377728d9537e097d9",
    "caratteri": 20,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "potenza",
    "url": "https://www.salute.basilicata.it/assistenza/screening-oncologici/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "potenza/a258d18f1fc2.txt",
    "titolo": "Archivi Faq - Salute Basilicata",
    "sha": "554fbe77369c27058b3d11bbc6347542c9a2ceef4eb7c79d5ccc1eaf7e091dff",
    "caratteri": 5935,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "potenza",
    "url": "https://www.aspbasilicata.it/servizi-per-i-cittadini/liste-di-attesa/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "potenza/0a039cbc1d47.txt",
    "titolo": "Liste di attesa - ASP Basilicata",
@@ -484,18 +484,18 @@
   {
    "asl": "potenza",
    "url": "https://www.regione.basilicata.it/sanita-digitale-nuovi-servizi-online/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "potenza/772f6c77a4a7.txt",
    "titolo": "Sanità digitale, nuovi servizi online - Regione Basilicata",
-   "sha": "11dc37c60f7598e49bb19399d8701d3ea6c0454a5bd70786979890c84ead5ea4",
-   "caratteri": 11574,
-   "cambiata": false
+   "sha": "b96f36dcf4d7a194c65efdcdef2f639ae26c04d78d2bdbc93977b56af59192cf",
+   "caratteri": 11583,
+   "cambiata": true
   },
   {
    "asl": "potenza",
    "url": "https://www.aspbasilicata.it/come-fare-per/cartella-clinica/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "potenza/4f310d2d12aa.txt",
    "titolo": "Cartella clinica - ASP Basilicata",
@@ -506,7 +506,7 @@
   {
    "asl": "potenza",
    "url": "https://www.aspbasilicata.it/servizi-per-i-cittadini/modulistica/assistenza-ospedaliera-richiesta-copia-cartella-clinica-radiogrammi-0/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "potenza/10b9bf459839.txt",
    "titolo": "Assistenza Ospedaliera - richiesta copia Cartella Clinica / Radiogrammi - ASP Basilicata",
@@ -517,7 +517,7 @@
   {
    "asl": "potenza",
    "url": "https://www.aspbasilicata.it/servizi-per-i-cittadini/modulistica/assistenza-protesica/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "potenza/cab9f56d45a9.txt",
    "titolo": "Assistenza Protesica - ASP Basilicata",
@@ -534,7 +534,7 @@
   {
    "asl": "potenza",
    "url": "http://www.aspbasilicata.it/wp-content/uploads/Istanza-Esenzione.pdf",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "da_pagina": "https://www.aspbasilicata.it/come-fare-per/scelta-e-revoca-del-medico-di-famiglia-e-del-pediatra/",
    "http": 0,
    "errore": "curl: (28) Connection timed out after 60002 milliseconds"
@@ -542,7 +542,7 @@
   {
    "asl": "potenza",
    "url": "https://www.aspbasilicata.it/wp-content/uploads/Carta_dei_Servizi_ADI_ASP.pdf",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "da_pagina": "https://www.aspbasilicata.it/organizzazione/azienda/dipartimenti/dipartimento-post-acuzie-continuita-ospedale-territorio/oncologia-critica-territoriale-cure-domiciliari-e-palliative-adi/",
    "http": 200,
    "file": "potenza/06c1a9b353b5.txt",
@@ -555,7 +555,7 @@
   {
    "asl": "potenza",
    "url": "https://idp.sanita.basilicata.it:9443/authenticationendpoint/resources/SISIR%20-%20Guida%20Accesso%20agli%20applicativi%20-%20v1%20-%20r2.pdf",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "da_pagina": "https://www.salute.basilicata.it/servizi-agli-assistiti/servizi-di-prevenzione/screening-oncologici/",
    "http": 200,
    "file": "potenza/dbbea8c824ad.txt",
@@ -563,23 +563,23 @@
    "sha": "b48fa1241e96d63f1ac035b2475fd9567cb8468b3b696a7d63f5f35b40e5e8f2",
    "caratteri": 14229,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "regole",
    "url": "https://www.regione.basilicata.it/fascicolo-sanitario-elettronico-2-0/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "regole/3961077a0e4e.txt",
    "titolo": "Fascicolo Sanitario Elettronico 2.0 - Regione Basilicata",
-   "sha": "aa15ee00b9d735682d9b09f31760570d96ad2424b9513bf5d16cc32c5e160aec",
-   "caratteri": 10101,
-   "cambiata": false
+   "sha": "7a4e9a1a88b56ecfb811f35e94fb37a34fb9e31fed09448094d6c0b397c77e12",
+   "caratteri": 10120,
+   "cambiata": true
   },
   {
    "asl": "inps-basilicata",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.470000.470000-elencoStruttureInps.html",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "inps-basilicata/d37e344b6702.txt",
    "titolo": "Portale Inps - Matera",
@@ -590,7 +590,7 @@
   {
    "asl": "inps-basilicata",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.640000.640000-elencoStruttureInps.html",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "inps-basilicata/156c6d3cae70.txt",
    "titolo": "Portale Inps - Potenza",
@@ -601,7 +601,7 @@
   {
    "asl": "inps-basilicata",
    "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2024.12.accertamento-della-disabilit-avvio-sperimentazione-della-riforma.html",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "inps-basilicata/f9d950ca5afd.txt",
    "titolo": "Portale Inps - Accertamento della disabilità: avvio sperimentazione della riforma",
@@ -612,7 +612,7 @@
   {
    "asl": "inps-basilicata",
    "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2025.09.riforma-della-disabilit-in-avvio-la-seconda-fase-di-sperimentazione.html",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "inps-basilicata/3962e31a95f6.txt",
    "titolo": "Portale Inps - Riforma della disabilità: in avvio la seconda fase di sperimentazione",
@@ -623,7 +623,7 @@
   {
    "asl": "inps-basilicata",
    "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "inps-basilicata/aad63b63390a.txt",
    "titolo": "Portale Inps - Riforma della disabilità: al via la terza fase sperimentale",
@@ -634,24 +634,24 @@
   {
    "asl": "regione-basilicata",
    "url": "https://www.regione.basilicata.it/fanelli-cup-attiva-prenotazione-online-delle-prestazioni/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "regione-basilicata/2f606e3336a5.txt",
    "titolo": "Fanelli: “CUP, attiva prenotazione online delle prestazioni\" - Regione Basilicata",
-   "sha": "0246cf9ee1f9c0fa89adbf9583b6fdd82f457b1f1afb6e9fd2b84d3607fe03a5",
-   "caratteri": 12195,
-   "cambiata": false
+   "sha": "362eadc4981ea40cbed54b29724f096a5a94e469116ab794ba717902ea6d4f66",
+   "caratteri": 12204,
+   "cambiata": true
   },
   {
    "asl": "regione-basilicata",
    "url": "https://regione.basilicata.it/giunta/site/Giunta/detail.jsp?otype=1012&id=3077951",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "finale": "https://www.regione.basilicata.it/privacy/",
    "file": "regione-basilicata/8f50bf0e199f.txt",
    "titolo": "Trattamento dati personali e privacy - Regione Basilicata",
-   "sha": "a4d0e7d4172b57baa3dd079186efa83a036104a4f99ba8938721615a0f637249",
-   "caratteri": 16246,
+   "sha": "a4a6a3124cc4c2d2a2bd74eab23a8f64ba64632b994d447cc8b2b984162183f0",
+   "caratteri": 16252,
    "link_pdf": [
     {
      "url": "https://www.regione.basilicata.it/wp-content/uploads/2024/12/Privacy-Atto-designazione-responsabile-protezione-dati.pdf",
@@ -706,24 +706,24 @@
      "testo": "Sintesi informazioni sulla contitolarità - Lotto 2"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "regione-basilicata",
    "url": "https://www.regione.basilicata.it/giunta/site/Giunta/department.jsp?dep=100061&area=535615&level=0",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "finale": "https://www.regione.basilicata.it/?temi-spp=servizi-online",
    "file": "regione-basilicata/24e95f5e1ed6.txt",
    "titolo": "Servizi online - Regione Basilicata",
-   "sha": "4a81ccac6801a77d373c3d2e74635269aaecaa2494735626044cd7c0f7735ab5",
-   "caratteri": 9004,
-   "cambiata": false
+   "sha": "4033328748ab5a2d837315015d6931e0eacb6fd8fb614c596e7aa3d12d65f2cc",
+   "caratteri": 9005,
+   "cambiata": true
   },
   {
    "asl": "regione-basilicata",
    "url": "https://www.salute.basilicata.it/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "regione-basilicata/48632ed247cd.txt",
    "titolo": "Home - Salute Basilicata",
@@ -734,7 +734,7 @@
   {
    "asl": "regione-basilicata",
    "url": "https://digitalefacile.regione.basilicata.it/wp-content/uploads/2025/05/Fascicolo-Sanitario-Elettronico-e-Televisita.pdf",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "regione-basilicata/e1b3d8c64ab8.txt",
    "titolo": "Presentazione standard di PowerPoint",
@@ -746,30 +746,30 @@
   {
    "asl": "regione-basilicata",
    "url": "https://www.regione.basilicata.it/liste-dattesa-ok-a-piano-per-la-specialistica/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "regione-basilicata/6b0c6f848ed1.txt",
    "titolo": "Liste d’attesa, ok a piano per la specialistica - Regione Basilicata",
-   "sha": "e95eddcaa53529acfccead165bc5b05a17fb40f3781f876d9559946b59a5edc3",
-   "caratteri": 12177,
+   "sha": "01894d7f350154ff79ee19f70478a56706926b5f6c54bc3b0f5b59b5fc6a8495",
+   "caratteri": 12186,
    "cambiata": true
   },
   {
    "asl": "regione-basilicata",
    "url": "https://www.regione.basilicata.it/wp-content/uploads/giunta/docs/DOCUMENT_FILE_3084825.pdf",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "regione-basilicata/370c9dfdf61e.txt",
    "titolo": "Microsoft Word - Allegato 2 RELAZIONE SULLA GESTIONE Consolidato 2020_20apr2022",
    "sha": "26b171819d76fd08d583521d1368c8a7d1b37c3d4e0b1e47a270c0343f01054f",
    "caratteri": 84810,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "inps-basilicata",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.648000.648000-elencoStruttureInps.html",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "inps-basilicata/9ca54e087d23.txt",
    "titolo": "Portale Inps - Basilicata",
@@ -780,7 +780,7 @@
   {
    "asl": "asp-potenza",
    "url": "https://www.aspbasilicata.it/pec/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "asp-potenza/6e70da32bb46.txt",
    "titolo": "PEC - ASP Basilicata",
@@ -791,7 +791,7 @@
   {
    "asl": "asp-potenza",
    "url": "https://www.aspbasilicata.it/servizi-per-i-cittadini/servizi/ufficio-protocollo-generale-sedi-e-orari/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "asp-potenza/9199faa6f388.txt",
    "titolo": "Ufficio Protocollo Generale - sedi e orari - ASP Basilicata",
@@ -802,7 +802,7 @@
   {
    "asl": "asp-potenza",
    "url": "https://www.aspbasilicata.it/servizi-per-i-cittadini/cup-e-pagamento-ticket/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "asp-potenza/ada96eb89099.txt",
    "titolo": "Cup e Pagamento Ticket - ASP Basilicata",
@@ -819,7 +819,7 @@
   {
    "asl": "asp-potenza",
    "url": "https://www.aspbasilicata.it/servizi-per-i-cittadini/guardia-medica/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "asp-potenza/fb48b8b182b6.txt",
    "titolo": "Guardia medica - ASP Basilicata",
@@ -830,7 +830,7 @@
   {
    "asl": "asp-potenza",
    "url": "https://www.aspbasilicata.it/organizzazione/azienda/dipartimenti/dipartimento-emergenza-urgenza-118/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "asp-potenza/4f52c3091539.txt",
    "titolo": "Dipartimento Emergenza Urgenza - 118 - ASP Basilicata",
@@ -847,7 +847,7 @@
   {
    "asl": "asp-potenza",
    "url": "https://www.aspbasilicata.it/modulistica-cure-domiciliari/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "asp-potenza/79d9a9f70479.txt",
    "titolo": "modulistica cure domiciliari - ASP Basilicata",
@@ -872,7 +872,7 @@
   {
    "asl": "asp-potenza",
    "url": "https://www.aspbasilicata.it/organizzazione/azienda/distretti-della-salute/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "asp-potenza/e10a8d2fc625.txt",
    "titolo": "Distretti della Salute - ASP Basilicata",
@@ -883,7 +883,7 @@
   {
    "asl": "asp-potenza",
    "url": "https://www.aspbasilicata.it/wp-content/uploads/CARTA-DEI-SERVIZI-agg-al-17-02-2026.pdf",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "asp-potenza/3d7128597d39.txt",
    "titolo": "CARTA DEI SERVIZI",
@@ -895,7 +895,7 @@
   {
    "asl": "asp-potenza",
    "url": "https://www.aspbasilicata.it/wp-content/uploads/FronteRetro_-Autocerficazione-Esenzione-Reddito_2024-pdf.pdf",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "da_pagina": "https://www.aspbasilicata.it/servizi-per-i-cittadini/cup-e-pagamento-ticket/",
    "http": 200,
    "file": "asp-potenza/2672f88946af.txt",
@@ -908,7 +908,7 @@
   {
    "asl": "asm-matera",
    "url": "https://www.asmbasilicata.it/chi-siamo/punto-informativo-urp-matera/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "finale": "https://www.asmbasilicata.it/chi-siamo/unita-organizzativa/punto-informativo-urp-matera/",
    "file": "asm-matera/a8d700f42df2.txt",
@@ -920,7 +920,7 @@
   {
    "asl": "asm-matera",
    "url": "https://www.asmbasilicata.it/chi-siamo/punto-informativo-ufficio-relazioni-con-il-pubblico-urp-policoro/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "finale": "https://www.asmbasilicata.it/chi-siamo/unita-organizzativa/punto-informativo-ufficio-relazioni-con-il-pubblico-urp-policoro/",
    "file": "asm-matera/6e5142301a5e.txt",
@@ -932,7 +932,7 @@
   {
    "asl": "asm-matera",
    "url": "https://www.asmbasilicata.it/chi-siamo/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "asm-matera/9ffcee840716.txt",
    "titolo": "Chi siamo – ASM Matera",
@@ -949,7 +949,7 @@
   {
    "asl": "asm-matera",
    "url": "https://www.asmbasilicata.it/chi-siamo/sportello-cup-piazza-firenze-matera/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "finale": "https://www.asmbasilicata.it/chi-siamo/unita-organizzativa/sportello-cup-piazza-firenze-matera/",
    "file": "asm-matera/c07f7993bc3a.txt",
@@ -961,13 +961,13 @@
   {
    "asl": "asm-matera",
    "url": "https://www.asmbasilicata.it/servizi/Menu/dinamica.aspx?idSezione=616&idArea=17682&idCat=17691&ID=40324&TipoElemento=pagina",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 404
   },
   {
    "asl": "asm-matera",
    "url": "https://www.asmbasilicata.it/modalita-di-tutela/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "asm-matera/2cf7c4013706.txt",
    "titolo": "Modalità di tutela – ASM Matera",
@@ -992,7 +992,7 @@
   {
    "asl": "asm-matera",
    "url": "https://www.asmbasilicata.it/servizi-app-io/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "asm-matera/94497666f277.txt",
    "titolo": "Servizi App IO – ASM Matera",
@@ -1003,7 +1003,7 @@
   {
    "asl": "ticket-pronto-soccorso",
    "url": "https://www.aspbasilicata.it/2013/09/26/il-funzionamento-dei-codici-colore-presso-i-pronto-soccorso-degli-ospedali/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "ticket-pronto-soccorso/65ff21ae7fc6.txt",
    "titolo": "Il funzionamento dei codici-colore presso i Pronto Soccorso degli Ospedali - ASP Basilicata",
@@ -1014,7 +1014,7 @@
   {
    "asl": "medico-online",
    "url": "https://www.aspbasilicata.it/servizi-on-line/portale-anagrafe-web/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "medico-online/06817467c1bb.txt",
    "titolo": "Portale Anagrafe Web - ASP Basilicata",
@@ -1031,32 +1031,32 @@
   {
    "asl": "medico-online",
    "url": "http://www.aspbasilicata.it/wp-content/uploads/Guida-Utente-Portale-Anagrafe-Web-in-formato-pdf.pdf",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "da_pagina": "https://www.aspbasilicata.it/servizi-on-line/portale-anagrafe-web/",
    "http": 0,
-   "errore": "curl: (28) Connection timed out after 60003 milliseconds"
+   "errore": "curl: (28) Connection timed out after 60002 milliseconds"
   },
   {
    "asl": "ticket-farmaci",
    "url": "https://agr.regione.basilicata.it/post/farmaci-quota-di-250-euro-esenti-le-fasce-fragili",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "ticket-farmaci/ab50cb44dc0e.txt",
    "titolo": "Farmaci, quota di 2,50 euro: esenti le fasce fragili - AGR Basilicata",
-   "sha": "3c8a47edb0822fb0319568ca7c486850fb804db0e8ea461b47b64827150e1c39",
-   "caratteri": 6511,
-   "cambiata": false
+   "sha": "b8aa17737286a713f05b5d51af0b250a828e5ff147c438e4ee2a1c8ce1adfd53",
+   "caratteri": 6542,
+   "cambiata": true
   },
   {
    "asl": "ticket-farmaci",
    "url": "https://www.regione.basilicata.it/sanita-precisazioni-sui-2-50-a-ricetta/",
-   "controllata": "2026-11-02",
+   "controllata": "2026-11-03",
    "http": 200,
    "file": "ticket-farmaci/691ce0debd03.txt",
    "titolo": "Sanità, precisazioni sui 2.50 a ricetta - Regione Basilicata",
-   "sha": "ad965f657780108805aabb3eedede2392e2f2cc606d7ce3e9c8188537563332b",
-   "caratteri": 12518,
-   "cambiata": false
+   "sha": "8307bd3a8bd8944c7ac7c91c08508bc9a740810a8d2c4e4ca8729d2db5e40bb3",
+   "caratteri": 12527,
+   "cambiata": true
   }
  ]
 }
