@@ -1,6 +1,6 @@
 {
  "regione": "friuli-venezia-giulia",
- "aggiornato": "2026-11-03T03:00:09.861Z",
+ "aggiornato": "2026-11-03T20:46:12.094Z",
  "pagine": [
   {
    "asl": "gorizia",
@@ -18,7 +18,7 @@
      "testo": "Somministrazione farmaci in contesti extrafamiliari (indicazioni operative)"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "gorizia",
@@ -500,7 +500,7 @@
      "testo": "Asap - Ambulatori Sperimentali Di Assistenza Primaria"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "pordenone",
@@ -606,8 +606,8 @@
    "http": 200,
    "file": "pordenone/1c9a29335f63.txt",
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - 116117 Numero Unico Europeo per la Sanità NON Urgente",
-   "sha": "6e7a531be6d37b785894a02d4e48f2396a82019e80689ab8dfab4acd0b35431f",
-   "caratteri": 7634,
+   "sha": "2c0b487f2285c87dd73e04c39b03eacf938ddcd60a1b2fb40edd64d52ab4b46d",
+   "caratteri": 7618,
    "link_pdf": [
     {
      "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/servizi/documenti/Asap/26_08_26-ASAP.PDF",
@@ -1199,7 +1199,7 @@
      "testo": "Somministrazione farmaci in contesti extrafamiliari (indicazioni operative)"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trieste",
@@ -1742,7 +1742,7 @@
      "testo": "Somministrazione farmaci in contesti extrafamiliari (indicazioni operative)"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trieste",
@@ -2262,9 +2262,9 @@
    "finale": "https://asufc.sanita.fvg.it/it/",
    "file": "udine/bff5e064ca36.txt",
    "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC)",
-   "sha": "3c31daae0cd639b443cc60ed9a80c0d45940316ff668e231d174705dd08d62ed",
-   "caratteri": 6265,
-   "cambiata": false
+   "sha": "1d37bea6a0e8ca4911e94a5ca39f645b4e5c9bd08bb8cc518165237dbea8fcd5",
+   "caratteri": 6249,
+   "cambiata": true
   },
   {
    "asl": "udine",
@@ -2439,9 +2439,9 @@
    "http": 200,
    "file": "udine/dc6df4e8355e.txt",
    "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - Nuovo numero unico per prenotare le vaccinazioni",
-   "sha": "3dfd8a7ba5b3382189421959b8d8e88a0cccc9ffa43b17ac25435f3893fd1a45",
-   "caratteri": 5505,
-   "cambiata": false
+   "sha": "a65ae68886a41cb68f1fefd83185650a67e16cdeb43b0baaa4a7cc0dd853403a",
+   "caratteri": 5564,
+   "cambiata": true
   },
   {
    "asl": "udine",
@@ -2450,15 +2450,15 @@
    "http": 200,
    "file": "udine/af13b12ad9af.txt",
    "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - Attivazione del servizio 116117 dal 13 aprile 2026",
-   "sha": "c57fd08d6983a326d04cdc0b83ca6553fedeb407a2dd1f869a5425b5f423961d",
-   "caratteri": 6664,
+   "sha": "6f2b491170666191bdc514d05a3a318be991d6ff8b648258bb065cdc42785e3d",
+   "caratteri": 6723,
    "link_pdf": [
     {
      "url": "https://asufc.sanita.fvg.it/export/sites/asufc/it/documenti/privacy/informativa_116117.pdf",
      "testo": "informativa_116117 [pdf - 203 KB] (il link apre una nuova finestra)"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "udine",
@@ -2831,9 +2831,9 @@
    "http": 200,
    "file": "inps-friuli-venezia-giulia/0f101ec543ae.txt",
    "titolo": "Portale Inps - Gorizia",
-   "sha": "ba301d2177bac1d7b51d0a523b5dae535253481f6f200fb215a79d87cc81ac01",
-   "caratteri": 42729,
-   "cambiata": false
+   "sha": "09ff5c87fbd0832caffbd5649dd0cfd9e52da54762ceb17f5f0dc5e89d863e22",
+   "caratteri": 42775,
+   "cambiata": true
   },
   {
    "asl": "inps-friuli-venezia-giulia",
@@ -2842,9 +2842,9 @@
    "http": 200,
    "file": "inps-friuli-venezia-giulia/c931a590907a.txt",
    "titolo": "Portale Inps - Pordenone",
-   "sha": "dc959f1a9dabf994f529eb7187ae912a7e99fa8c4c1edfa95844d31bfbf0f748",
-   "caratteri": 42854,
-   "cambiata": false
+   "sha": "efcc2fed1457db93b8dfefd26d498d62125a04b9a4c9f7b7d9a032bb117fc62a",
+   "caratteri": 42900,
+   "cambiata": true
   },
   {
    "asl": "inps-friuli-venezia-giulia",
@@ -2853,9 +2853,9 @@
    "http": 200,
    "file": "inps-friuli-venezia-giulia/e8aa2b14ff29.txt",
    "titolo": "Portale Inps - Trieste",
-   "sha": "c569c0bce2668609b15410f63d72f4db32ee66b88e2567717000ff98275dd04e",
-   "caratteri": 42676,
-   "cambiata": false
+   "sha": "75c08f4d39ff6e8f226e4d906f22773033cd6ce365003ef831bed972e8e70f48",
+   "caratteri": 42722,
+   "cambiata": true
   },
   {
    "asl": "inps-friuli-venezia-giulia",
@@ -2864,9 +2864,9 @@
    "http": 200,
    "file": "inps-friuli-venezia-giulia/8e83496db5da.txt",
    "titolo": "Portale Inps - Udine",
-   "sha": "7f9aa59d0bb008786c55672a378c28c5b77f90f23a8012b38ab1699b9e69a171",
-   "caratteri": 43117,
-   "cambiata": false
+   "sha": "996240d5d8fb6e4f0a71c28ab7b5abd38799cdb08286e702e997e5e5dc4aee23",
+   "caratteri": 43163,
+   "cambiata": true
   },
   {
    "asl": "inps-friuli-venezia-giulia",
@@ -2908,9 +2908,9 @@
    "http": 200,
    "file": "inps-friuli-venezia-giulia/aad63b63390a.txt",
    "titolo": "Portale Inps - Riforma della disabilità: al via la terza fase sperimentale",
-   "sha": "c6930fc23272735701d365ad24f19e4fe8b2201d94f8d532a9f97b23835d22f0",
-   "caratteri": 46308,
-   "cambiata": false
+   "sha": "77671cb95f0698a9e41f6bf82b8085173a87732fe1918e4cd8b34fc8a885a652",
+   "caratteri": 46354,
+   "cambiata": true
   },
   {
    "asl": "medico-online",

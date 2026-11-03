@@ -1,6 +1,6 @@
 {
  "regione": "trentino-alto-adige",
- "aggiornato": "2026-11-03T05:15:04.040Z",
+ "aggiornato": "2026-11-03T22:19:10.055Z",
  "pagine": [
   {
    "asl": "bolzano",
@@ -11,8 +11,8 @@
    "finale": "https://www.asdaa.it/it/home",
    "file": "bolzano/a77b7ff470b2.txt",
    "titolo": "Azienda Sanitaria dell'Alto Adige",
-   "sha": "50edf3eb718317d2653bf466d65724d0abf50a1525fda190ca57019f1219b2ca",
-   "caratteri": 22965,
+   "sha": "0b0ebaed7112a37bfa59b37344747e29f633dd9ffa7b44d97bd219056f058994",
+   "caratteri": 23095,
    "cambiata": true
   },
   {
@@ -34,9 +34,9 @@
    "http": 200,
    "file": "bolzano/a351aa31949c.txt",
    "titolo": "Il numero 116117 | Provincia autonoma di Bolzano - Alto Adige",
-   "sha": "3c3f02f63c48d6410d2158adccd2b4fc033dcb780fbc4b1d7b0e14a8dced1e1d",
+   "sha": "bf840d876c5407e71eac311b836bae7301a12539f3a08150d71adb8b6c961a11",
    "caratteri": 9863,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "bolzano",
@@ -54,8 +54,12 @@
    "asl": "bolzano",
    "url": "https://home.sabes.it/it/prenotazione-me.asp",
    "controllata": "2026-11-03",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "http": 200,
+   "file": "bolzano/3eb4ebd291fc.txt",
+   "titolo": "Prenotazione | Azienda Sanitaria dell'Alto Adige",
+   "sha": "05ff7201f7b12e094c1b11e4feebf3363f00d4ab73cdbf1be189792578d66fb8",
+   "caratteri": 9264,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
@@ -64,8 +68,8 @@
    "http": 200,
    "file": "bolzano/436fa81472bf.txt",
    "titolo": "Servizi | Azienda Sanitaria dell'Alto Adige",
-   "sha": "79e80b4311ca50bfde2ae9a7d47d20e265cedac8f60b7f36f844cc244d76b774",
-   "caratteri": 6983,
+   "sha": "48f1cafcdc14d516937f9e0b287483ffbc26c86b964b78c08802360ed730cb0c",
+   "caratteri": 6984,
    "cambiata": true
   },
   {
@@ -77,8 +81,8 @@
    "finale": "https://www.asdaa.it/it/home",
    "file": "bolzano/9e045b839f76.txt",
    "titolo": "Azienda Sanitaria dell'Alto Adige",
-   "sha": "50edf3eb718317d2653bf466d65724d0abf50a1525fda190ca57019f1219b2ca",
-   "caratteri": 22965,
+   "sha": "0b0ebaed7112a37bfa59b37344747e29f633dd9ffa7b44d97bd219056f058994",
+   "caratteri": 23095,
    "cambiata": true
   },
   {
@@ -127,7 +131,7 @@
    "titolo": "Cerca | Azienda Sanitaria dell'Alto Adige",
    "sha": "29f6e726c6a96a355d66b1de50e9c9134becbb28db6fbe72d4919d89929834d0",
    "caratteri": 6973,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -150,9 +154,9 @@
    "http": 200,
    "file": "bolzano/55ed5d9f3c74.txt",
    "titolo": "Info per pazienti e visitatori | Ospedale di Bolzano",
-   "sha": "cad930a395f20aab03774f76b5825ac089c483fef2689c37b28f0d741d223b5d",
-   "caratteri": 24628,
-   "cambiata": false
+   "sha": "cb195177e5c65c7539b1654b7e1abb665289bff1d4983d971f720ba44625e630",
+   "caratteri": 24249,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
@@ -165,7 +169,7 @@
    "titolo": "Ospedali | Azienda Sanitaria dell’Alto Adige",
    "sha": "a9a8fabe6e682f9e90ebe587035c1fcae214a3becc23a95de435547184658c07",
    "caratteri": 20025,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -183,14 +187,13 @@
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/medicina-di-base.asp",
    "controllata": "2026-11-03",
-   "browser": true,
    "http": 200,
    "finale": "https://www.asdaa.it/it/servizio-di-medicina-di-base-territorio-bz",
    "file": "bolzano/aa3b128c6f97.txt",
-   "titolo": "Servizio di Medicina di base | Comprensorio Bolzano",
-   "sha": "9f63eccd18bf68b6497f3f3805f65acbf0102e407f3051776fe9f692e20a6813",
-   "caratteri": 31077,
-   "cambiata": false
+   "titolo": "Südtiroler Sanitätsbetrieb",
+   "sha": "392d4be341b5601bf3ac0de4fb35ecc68611c7c9a2e451ea79d9bec90721e5ed",
+   "caratteri": 38,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
@@ -220,14 +223,12 @@
    "asl": "bolzano",
    "url": "https://www.asdaa.it/it/comprensori-sanitari/merano/3181.asp",
    "controllata": "2026-11-03",
-   "browser": true,
    "http": 200,
-   "finale": "https://home.asdaa.it/it/comprensori-sanitari/merano/3181.asp",
    "file": "bolzano/f2819aebdf8b.txt",
-   "titolo": "Servizio infermieristico | Azienda Sanitaria dell'Alto Adige",
-   "sha": "63e2879d3d25cb6dbc1c59c0b1221e0fa551588ba75db555e10884ce450c7123",
-   "caratteri": 8725,
-   "cambiata": false
+   "titolo": "Südtiroler Sanitätsbetrieb",
+   "sha": "392d4be341b5601bf3ac0de4fb35ecc68611c7c9a2e451ea79d9bec90721e5ed",
+   "caratteri": 38,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
@@ -262,9 +263,9 @@
    "http": 200,
    "file": "bolzano/ea6b76cd97bf.txt",
    "titolo": "Ticket ed esenzioni",
-   "sha": "12077a06737ea6dae5c3a8c155be59bc498e9b83787094e4edca67eeee610972",
+   "sha": "8065757b045dab52d55316875cb923f00e38c29fb76d069cf00c195f3144cd26",
    "caratteri": 20777,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "bolzano",
@@ -296,14 +297,8 @@
    "asl": "bolzano",
    "url": "https://home.asdaa.it/prevenzione/prestazioni.asp?bnsv_svid=1008640",
    "controllata": "2026-11-03",
-   "browser": true,
-   "http": 200,
-   "finale": "https://www.asdaa.it/it/prevenzione-salute?bnsv_svid=1008640",
-   "file": "bolzano/fbeef31a6b03.txt",
-   "titolo": "Prevenzione e salute | Azienda Sanitaria dell'Alto Adige",
-   "sha": "96eb6e318aae09e2b0277cde6a3b7a4c8c72b0b77f023dc0a637c29b778e7a53",
-   "caratteri": 22011,
-   "cambiata": true
+   "http": 0,
+   "errore": "curl: (28) Operation timed out after 30001 milliseconds with 0 bytes received"
   },
   {
    "asl": "bolzano",
@@ -314,8 +309,8 @@
    "finale": "https://www.asdaa.it/it/servizi",
    "file": "bolzano/bbc0f1d38083.txt",
    "titolo": "I servizi in myCIVIS - Azienda Sanitaria dell'Alto Adige",
-   "sha": "32a44856d231784ae5408d03978bc689eadf647d3d98e9ba92b315e02222e674",
-   "caratteri": 22366,
+   "sha": "03019cd5f78ab4d095798945006209059c474056afe8404c6531335a2c141c30",
+   "caratteri": 20456,
    "cambiata": true
   },
   {
@@ -327,8 +322,8 @@
    "finale": "https://www.asdaa.it/it/servizi",
    "file": "bolzano/1a6f833fe6c4.txt",
    "titolo": "I servizi in myCIVIS - Azienda Sanitaria dell'Alto Adige",
-   "sha": "96f8242283232d625fdf01d9ac3bfec7ef26c62b3e961eea1cb6e6dfd0424e49",
-   "caratteri": 22366,
+   "sha": "03019cd5f78ab4d095798945006209059c474056afe8404c6531335a2c141c30",
+   "caratteri": 20456,
    "cambiata": true
   },
   {
@@ -347,8 +342,12 @@
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/amministrazione-trasparente/4056.asp",
    "controllata": "2026-11-03",
-   "http": 0,
-   "errore": "curl: (56) Recv failure: Connection reset by peer"
+   "http": 200,
+   "file": "bolzano/cf4cd0ccb41d.txt",
+   "titolo": "Telefono e posta elettronica | Azienda Sanitaria dell'Alto Adige",
+   "sha": "b9ca7a7600ce0c3184e1e32c33b404cea682e26c211907ca3194e16c8f24ef52",
+   "caratteri": 6919,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
@@ -358,9 +357,9 @@
    "http": 200,
    "file": "bolzano/fe7512b5a1bb.txt",
    "titolo": "Direzione amministrativa | Azienda Sanitaria dell’Alto Adige",
-   "sha": "96a6d5351e1f4e699bdee675f807f2d1a292078a35e35a2cf5aa7c8ce20cf276",
-   "caratteri": 21739,
-   "cambiata": false
+   "sha": "ed0510539c4b80d3a48bfba796c025327e8c055753505b86bc4668d4a05589b5",
+   "caratteri": 21583,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
@@ -389,37 +388,82 @@
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/comprensori-sanitari/bolzano/2852.asp?addt_apid=53058",
    "controllata": "2026-11-03",
-   "http": 503
+   "http": 200,
+   "file": "bolzano/f9e4fb907759.txt",
+   "titolo": "Amministrazione | Azienda Sanitaria dell'Alto Adige",
+   "sha": "709c68c9b91472b8f702a471fb12a1adb318f2961cd6b377eb0123429ebf393a",
+   "caratteri": 6752,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
    "url": "https://www.sabes.it/it/ospedali/bressanone/3779.asp?addt_apid=53297",
    "controllata": "2026-11-03",
+   "browser": true,
    "http": 200,
-   "finale": "https://www.asdaa.it/it/ospedali/bressanone/3779.asp?addt_apid=53297",
+   "finale": "https://www.asdaa.it/it/ospedali?addt_apid=53297",
    "file": "bolzano/992adf74401f.txt",
-   "titolo": "Südtiroler Sanitätsbetrieb",
-   "sha": "392d4be341b5601bf3ac0de4fb35ecc68611c7c9a2e451ea79d9bec90721e5ed",
-   "caratteri": 38,
+   "titolo": "Ospedali | Azienda Sanitaria dell’Alto Adige",
+   "sha": "a9a8fabe6e682f9e90ebe587035c1fcae214a3becc23a95de435547184658c07",
+   "caratteri": 20025,
    "cambiata": true
   },
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/tempi-di-prenotazione.asp",
    "controllata": "2026-11-03",
-   "http": 503
+   "browser": true,
+   "http": 200,
+   "finale": "https://www.asdaa.it/it/informazioni-sulle-liste-d-attesa-e-sulle-classi-di-priorita",
+   "file": "bolzano/28039e100121.txt",
+   "titolo": "Azienda Sanitaria dell’Alto Adige",
+   "sha": "d52b31d3feaefb7d6c46b0c8b90f9b259d927e3ac00bffcf7119da0388024aef",
+   "caratteri": 2297,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/amministrazione-trasparente/4070.asp",
    "controllata": "2026-11-03",
-   "http": 503
+   "http": 200,
+   "file": "bolzano/f3492fe57fb2.txt",
+   "titolo": "Liste di attesa | Azienda Sanitaria dell'Alto Adige",
+   "sha": "3be36ece77f7921ae9f89dba854521bbcd8aea50225269d0d2dd5f239099c065",
+   "caratteri": 8830,
+   "link_pdf": [
+    {
+     "url": "https://home.asdaa.it/download/DGP_n._915_del_05.11.2019_-_PPGLA_2019-2021(1).pdf",
+     "testo": "Deliberazione della Giunta provinciale n. 915 del 05.11.2019 - Piano Provinciale per il governo delle liste di attesa 20"
+    },
+    {
+     "url": "https://home.asdaa.it/download/SABES_2020.02.04_n._84_-_PAAGTA_2020-2022(1).pdf",
+     "testo": "Deliberazione aziendale n. 84 del 04.02.2020 - Piano Attuativo Aziendale per il governo dei tempi di attesa 2020-2022 de"
+    },
+    {
+     "url": "https://home.asdaa.it/download/1B_-_Esempio_della_rilevazione_-_Tempo_medio_di_attesa_effettivo(1).pdf",
+     "testo": "cliccare qui"
+    },
+    {
+     "url": "https://home.asdaa.it/download/Allegato_4A_-_Esempio_della_rilevazione_-_Indice_ministeriale_v2(1).pdf",
+     "testo": "cliccare qui"
+    },
+    {
+     "url": "https://home.asdaa.it/download/4B_-_Esempio_della_rilevazione_-_Indice_dell_offerta.pdf",
+     "testo": "cliccare qui"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/amministrazione-trasparente/cartadeiservizisanitari.asp",
    "controllata": "2026-11-03",
-   "http": 503
+   "http": 200,
+   "file": "bolzano/a5da44f29c93.txt",
+   "titolo": "Carta dei Servizi Sanitari | Azienda Sanitaria dell'Alto Adige",
+   "sha": "be947c6255ecb1d6025f860d1cfdfb8e2c8dc5840b2f2d33c8cac76f81858f97",
+   "caratteri": 8164,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
@@ -437,11 +481,13 @@
    "asl": "bolzano",
    "url": "https://www.asdaa.it/it/servizi-informazione.asp?bnsv_svid=1008061",
    "controllata": "2026-11-03",
+   "browser": true,
    "http": 200,
+   "finale": "https://www.asdaa.it/it/servizi",
    "file": "bolzano/9dafa4bd3a88.txt",
-   "titolo": "Südtiroler Sanitätsbetrieb",
-   "sha": "392d4be341b5601bf3ac0de4fb35ecc68611c7c9a2e451ea79d9bec90721e5ed",
-   "caratteri": 38,
+   "titolo": "I servizi in myCIVIS - Azienda Sanitaria dell'Alto Adige",
+   "sha": "98c310feb4b18fa1d44945074278d72fd7e8b27f8c182946cba860ae254630e7",
+   "caratteri": 20761,
    "cambiata": true
   },
   {
@@ -454,7 +500,7 @@
    "titolo": "Cerca | Azienda Sanitaria dell'Alto Adige",
    "sha": "29f6e726c6a96a355d66b1de50e9c9134becbb28db6fbe72d4919d89929834d0",
    "caratteri": 6973,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
@@ -502,7 +548,7 @@
    "sha": "cca6fb125bfbbe2b21f962b6a721d2028284e15e62c78e529d7e83d695b3f2f3",
    "caratteri": 239861,
    "pdf": true,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
@@ -511,8 +557,8 @@
    "http": 200,
    "file": "trento/731021dc4745.txt",
    "titolo": "Homepage | ASUIT Trento",
-   "sha": "7be296a4f1ca5c900ee2a8d03ffd32d0586fe4b300f73ab02b6af121c33c3cfc",
-   "caratteri": 12563,
+   "sha": "ad4712560345e48b71d5ff3fd363259c690612222c47d233ff489320eec621db",
+   "caratteri": 11848,
    "cambiata": true
   },
   {
@@ -744,8 +790,8 @@
    "finale": "https://www.asuit.tn.it/",
    "file": "trento/00438a822dda.txt",
    "titolo": "Homepage | ASUIT Trento",
-   "sha": "7be296a4f1ca5c900ee2a8d03ffd32d0586fe4b300f73ab02b6af121c33c3cfc",
-   "caratteri": 12563,
+   "sha": "ad4712560345e48b71d5ff3fd363259c690612222c47d233ff489320eec621db",
+   "caratteri": 11848,
    "cambiata": true
   },
   {
@@ -756,8 +802,8 @@
    "finale": "https://www.asuit.tn.it/",
    "file": "trento/89eb44173d6d.txt",
    "titolo": "Homepage | ASUIT Trento",
-   "sha": "7be296a4f1ca5c900ee2a8d03ffd32d0586fe4b300f73ab02b6af121c33c3cfc",
-   "caratteri": 12563,
+   "sha": "ad4712560345e48b71d5ff3fd363259c690612222c47d233ff489320eec621db",
+   "caratteri": 11848,
    "cambiata": true
   },
   {
@@ -779,7 +825,7 @@
    "finale": "https://www.trentinosalute.net/Argomenti/TEMPI-DI-ATTESA",
    "file": "trento/0d2b7924d034.txt",
    "titolo": "TEMPI DI ATTESA - Trentino Salute",
-   "sha": "1d4898ec7137e57bd87560f0e146b0b2ffc50f2ee35e253e2534ebb95f89aba9",
+   "sha": "a1bb8bb98f41504dd55c16d4d920b2392a24f640b9ee243d3cb1c8ae6559bc57",
    "caratteri": 7303,
    "cambiata": true
   },
@@ -790,7 +836,7 @@
    "http": 200,
    "file": "trento/80c54c57d0ca.txt",
    "titolo": "SERVIZI DI EMERGENZA E URGENZA E TRASPORTI SANITARI",
-   "sha": "d529b0c447f2cae8f61af4b52776dbbe82e4d2bc63b2ca8779f4435253d7691f",
+   "sha": "ec8438305fc1a8540a0b2150ce4e19eb4f23dee22f0a89a4d459127cb4e9a17e",
    "caratteri": 3355,
    "cambiata": true
   },
@@ -813,8 +859,8 @@
    "finale": "https://www.trentinosalute.net/Argomenti/INNOVAZIONE-E-SANITA-DIGITALE/Fascicolo-sanitario-elettronico-FSE",
    "file": "trento/0c85d7f8ec7e.txt",
    "titolo": "Fascicolo sanitario elettronico (FSE) - Trentino Salute",
-   "sha": "5151a19847ac60c382b8ba8c1cc199e7de117d889da0aa3a90d4cf376fc71315",
-   "caratteri": 16691,
+   "sha": "2b3f2f9a6b078f506982a1c4aa370ca4645bfaf1646621abdf624b0bb67ec661",
+   "caratteri": 17102,
    "link_pdf": [
     {
      "url": "https://www.trentinosalute.net/content/download/4260233/40818516/file/FSE_Informativa_trattamento_dati_2024_2.pdf",
@@ -837,7 +883,7 @@
      "testo": "Delibera_596_2018"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "trento",
@@ -927,8 +973,8 @@
    "finale": "https://www.trentinosalute.net/Argomenti/INNOVAZIONE-E-SANITA-DIGITALE/Fascicolo-sanitario-elettronico-FSE",
    "file": "regole/0c85d7f8ec7e.txt",
    "titolo": "Fascicolo sanitario elettronico (FSE) - Trentino Salute",
-   "sha": "5151a19847ac60c382b8ba8c1cc199e7de117d889da0aa3a90d4cf376fc71315",
-   "caratteri": 16691,
+   "sha": "2b3f2f9a6b078f506982a1c4aa370ca4645bfaf1646621abdf624b0bb67ec661",
+   "caratteri": 17102,
    "link_pdf": [
     {
      "url": "https://www.trentinosalute.net/content/download/4260233/40818516/file/FSE_Informativa_trattamento_dati_2024_2.pdf",
@@ -951,7 +997,7 @@
      "testo": "Delibera_596_2018"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "regole",
@@ -972,9 +1018,9 @@
    "http": 200,
    "file": "inps-trentino-alto-adige/a69e8cd675ec.txt",
    "titolo": "Portale Inps - Bolzano",
-   "sha": "dfd66f0d242afb0dccf6c2a3308277e0c7a5b71e74ceb4971560b6152f2dcde6",
-   "caratteri": 43600,
-   "cambiata": false
+   "sha": "9a2197c948139f42b86bab17fa6425b84c1d2504170f479b053719c2855fdaf7",
+   "caratteri": 43646,
+   "cambiata": true
   },
   {
    "asl": "inps-trentino-alto-adige",
@@ -983,9 +1029,9 @@
    "http": 200,
    "file": "inps-trentino-alto-adige/5f9dac6f2002.txt",
    "titolo": "Portale Inps - Trento",
-   "sha": "9ea55495fa2f86753fc413870d8e2b5388b9f33f16e7e6d3fd5dad50acb9141b",
-   "caratteri": 43432,
-   "cambiata": false
+   "sha": "66e253d5f4bfcc6372b7064ebf2fdee2c82bbf6eda84499b0b301091975f6973",
+   "caratteri": 43478,
+   "cambiata": true
   },
   {
    "asl": "inps-trentino-alto-adige",
@@ -1027,9 +1073,9 @@
    "http": 200,
    "file": "inps-trentino-alto-adige/aad63b63390a.txt",
    "titolo": "Portale Inps - Riforma della disabilità: al via la terza fase sperimentale",
-   "sha": "c6930fc23272735701d365ad24f19e4fe8b2201d94f8d532a9f97b23835d22f0",
-   "caratteri": 46308,
-   "cambiata": false
+   "sha": "77671cb95f0698a9e41f6bf82b8085173a87732fe1918e4cd8b34fc8a885a652",
+   "caratteri": 46354,
+   "cambiata": true
   },
   {
    "asl": "regione-trentino-alto-adige",
@@ -1046,8 +1092,8 @@
    "finale": "https://www.asuit.tn.it/",
    "file": "ticket-pronto-soccorso/ff272fc956d7.txt",
    "titolo": "Homepage | ASUIT Trento",
-   "sha": "7be296a4f1ca5c900ee2a8d03ffd32d0586fe4b300f73ab02b6af121c33c3cfc",
-   "caratteri": 12563,
+   "sha": "ad4712560345e48b71d5ff3fd363259c690612222c47d233ff489320eec621db",
+   "caratteri": 11848,
    "cambiata": true
   },
   {
@@ -1077,8 +1123,8 @@
    "finale": "https://www.asuit.tn.it/",
    "file": "medico-online/669b1d1e3c26.txt",
    "titolo": "Homepage | ASUIT Trento",
-   "sha": "7be296a4f1ca5c900ee2a8d03ffd32d0586fe4b300f73ab02b6af121c33c3cfc",
-   "caratteri": 12563,
+   "sha": "ad4712560345e48b71d5ff3fd363259c690612222c47d233ff489320eec621db",
+   "caratteri": 11848,
    "cambiata": true
   },
   {
@@ -1089,8 +1135,8 @@
    "finale": "https://www.asuit.tn.it/",
    "file": "ticket-farmaci/38a37c8ad3f4.txt",
    "titolo": "Homepage | ASUIT Trento",
-   "sha": "7be296a4f1ca5c900ee2a8d03ffd32d0586fe4b300f73ab02b6af121c33c3cfc",
-   "caratteri": 12563,
+   "sha": "ad4712560345e48b71d5ff3fd363259c690612222c47d233ff489320eec621db",
+   "caratteri": 11848,
    "cambiata": true
   }
  ]

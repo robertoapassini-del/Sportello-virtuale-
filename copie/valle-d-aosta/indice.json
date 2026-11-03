@@ -1,6 +1,6 @@
 {
  "regione": "valle-d-aosta",
- "aggiornato": "2026-11-03T05:22:01.284Z",
+ "aggiornato": "2026-11-03T22:25:52.589Z",
  "pagine": [
   {
    "asl": "aosta",
@@ -9,8 +9,8 @@
    "http": 200,
    "file": "aosta/8c0e7f3ef863.txt",
    "titolo": "Home",
-   "sha": "d397c7be78c8f14b97b2c884f8bf0dae93179b5966ef5c3162dbcc25697801b3",
-   "caratteri": 8634,
+   "sha": "2afc1429cdaac729b7196e69f131bb10aae0e0009683e1c130089e0721df3dd0",
+   "caratteri": 8458,
    "cambiata": true
   },
   {
@@ -733,7 +733,7 @@
    "controllata": "2026-11-03",
    "da_pagina": "https://www.ausl.vda.it/urp/urp-ufficio-relazioni-con-il-pubblico",
    "http": 0,
-   "errore": "curl: (28) Connection timed out after 60002 milliseconds"
+   "errore": "curl: (28) Connection timed out after 60003 milliseconds"
   },
   {
    "asl": "aosta",
@@ -782,9 +782,9 @@
    "http": 200,
    "file": "inps-valle-d-aosta/e6e8f6ff64ba.txt",
    "titolo": "Portale Inps - Aosta",
-   "sha": "20a393ccfec4e549f4606c08f0d363bbaad12c8f3a190a82db9acc6d51b12d07",
-   "caratteri": 43728,
-   "cambiata": false
+   "sha": "a936b22bfad969b25d4f8ed76d5df2ab3b91436b46e88dd37622a4ee10bf68c4",
+   "caratteri": 43774,
+   "cambiata": true
   },
   {
    "asl": "inps-valle-d-aosta",
@@ -826,9 +826,9 @@
    "http": 200,
    "file": "inps-valle-d-aosta/aad63b63390a.txt",
    "titolo": "Portale Inps - Riforma della disabilità: al via la terza fase sperimentale",
-   "sha": "c6930fc23272735701d365ad24f19e4fe8b2201d94f8d532a9f97b23835d22f0",
-   "caratteri": 46308,
-   "cambiata": false
+   "sha": "77671cb95f0698a9e41f6bf82b8085173a87732fe1918e4cd8b34fc8a885a652",
+   "caratteri": 46354,
+   "cambiata": true
   },
   {
    "asl": "ticket-pronto-soccorso",

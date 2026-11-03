@@ -1,6 +1,6 @@
 {
  "regione": "basilicata",
- "aggiornato": "2026-11-03T02:38:43.776Z",
+ "aggiornato": "2026-11-03T20:24:30.998Z",
  "pagine": [
   {
    "asl": "matera",
@@ -9,9 +9,9 @@
    "http": 200,
    "file": "matera/0293f11dd9e7.txt",
    "titolo": "ASM Matera",
-   "sha": "5c29b7e2e207805e079c1e108b90bbd622012957045c64204a60e8d492df8f6b",
-   "caratteri": 8415,
-   "cambiata": false
+   "sha": "f954d8a90d2fbe05dec7d108f139210e8fed55b9f69bbc6de898e41446224b48",
+   "caratteri": 8886,
+   "cambiata": true
   },
   {
    "asl": "matera",
@@ -48,8 +48,8 @@
    "http": 200,
    "file": "matera/a4a72d01829e.txt",
    "titolo": "Latronico sul Numero europeo Armonizzato - AGR Basilicata",
-   "sha": "3f1904da1eb3051492f6d41dec8ec4d65a9b97d8ddffc623eb2c41737e781122",
-   "caratteri": 5368,
+   "sha": "7955617391949a1feb6a16291bf4932808f5ee0413557cba92e0ada99f920ec6",
+   "caratteri": 5344,
    "cambiata": true
   },
   {
@@ -109,7 +109,7 @@
    "controllata": "2026-11-03",
    "browser": true,
    "http": 200,
-   "finale": "https://idp.sanita.basilicata.it:9443/authenticationendpoint/login.do?RelayState=uTHGAWF44c7FHkluWhkbB3_zmBLezM1J6bF99GqRZzg.qw8c1jf_NHE.servizi.salute.basilicata.it&commonAuthCallerPath=%2Fsamlsso&forceAuth=true&passiveAuth=false&tenantDomain=carbon.super&sessionDataKey=77f94ed5-7868-4a4c-bb73-cc07d56982bf&relyingParty=id.salute.basilicata.it&type=samlsso&sp=id.salute.basilicata.it&isSaaSApp=false&authenticators=SAMLSSOAuthenticator:SPID_LIV_2:SPID_LIV_3:LOCAL",
+   "finale": "https://idp.sanita.basilicata.it:9443/authenticationendpoint/login.do?RelayState=Moss6DSTSCA-CAMK4Ax-krKmWqpnyOdVUyUNHdX0rwQ.gYLEsTUwzzg.servizi.salute.basilicata.it&commonAuthCallerPath=%2Fsamlsso&forceAuth=true&passiveAuth=false&tenantDomain=carbon.super&sessionDataKey=829358ba-d3bd-400c-8d6a-9721b937d28c&relyingParty=id.salute.basilicata.it&type=samlsso&sp=id.salute.basilicata.it&isSaaSApp=false&authenticators=SAMLSSOAuthenticator:SPID_LIV_2:SPID_LIV_3:LOCAL",
    "file": "matera/de4da2f6f01b.txt",
    "titolo": "SISIR",
    "sha": "e05eab48fb40c3ac25b451eb03c57e087cf5cd055d28a95424ac258b3f6fb579",
@@ -153,9 +153,9 @@
    "certificato": "non valido",
    "file": "matera/36e845d8630f.txt",
    "titolo": "Liste di attesa - Azienda Sanitaria locale di Matera",
-   "sha": "0b2a1a437d0232aebae2f8961381c13e62ae6657babf8767b0f2d75863f3878e",
+   "sha": "a1e2e2b2c841213b0f9ea0ef77668096b92e8857bf74b62663373cbea2fa68b1",
    "caratteri": 9018,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "matera",
@@ -251,8 +251,8 @@
    "http": 200,
    "file": "potenza/28b106b78182.txt",
    "titolo": "ASP Basilicata",
-   "sha": "ecc0210f5e578cf35908f40d4c834474f92a3aac78383da74290d2379d27b311",
-   "caratteri": 5182,
+   "sha": "dfa5465b67944088abf12be7f5149d953f50369945ef5d071f0dd582443f667c",
+   "caratteri": 5232,
    "cambiata": true
   },
   {
@@ -309,8 +309,8 @@
    "http": 200,
    "file": "potenza/a4a72d01829e.txt",
    "titolo": "Latronico sul Numero europeo Armonizzato - AGR Basilicata",
-   "sha": "3f1904da1eb3051492f6d41dec8ec4d65a9b97d8ddffc623eb2c41737e781122",
-   "caratteri": 5368,
+   "sha": "7955617391949a1feb6a16291bf4932808f5ee0413557cba92e0ada99f920ec6",
+   "caratteri": 5344,
    "cambiata": true
   },
   {
@@ -320,8 +320,8 @@
    "http": 200,
    "file": "potenza/5dbc77a23557.txt",
    "titolo": "Centro Unico di Prenotazione | Centro Servizi Regione Basilicata - Regione Basilicata",
-   "sha": "08a91efeca03e4d25cf73272948c117e904f1b43652f86b4682875782a2d6258",
-   "caratteri": 9053,
+   "sha": "9ce65d02ac20adc4635eede71fb183870194aef8b483799378fcc98df76c81ca",
+   "caratteri": 9708,
    "cambiata": true
   },
   {
@@ -392,7 +392,7 @@
    "controllata": "2026-11-03",
    "browser": true,
    "http": 200,
-   "finale": "https://idp.sanita.basilicata.it:9443/authenticationendpoint/login.do?RelayState=Wmgn7y_kWok7miqN6ziebIADANPI7zolN9Zexg1ftS0.W_rbZSGsGzU.servizi.salute.basilicata.it&commonAuthCallerPath=%2Fsamlsso&forceAuth=true&passiveAuth=false&tenantDomain=carbon.super&sessionDataKey=227c502d-915c-403f-9dec-6463231ac4e1&relyingParty=id.salute.basilicata.it&type=samlsso&sp=id.salute.basilicata.it&isSaaSApp=false&authenticators=SAMLSSOAuthenticator:SPID_LIV_2:SPID_LIV_3:LOCAL",
+   "finale": "https://idp.sanita.basilicata.it:9443/authenticationendpoint/login.do?RelayState=Y_uHwbwzVBoCxwbSZrV5Dca2GE_uDRXw-xghu5jTMEk.bW_RNtwYfRk.servizi.salute.basilicata.it&commonAuthCallerPath=%2Fsamlsso&forceAuth=true&passiveAuth=false&tenantDomain=carbon.super&sessionDataKey=abb67d32-d7ff-4ccd-8697-bcbfc9ed3bf9&relyingParty=id.salute.basilicata.it&type=samlsso&sp=id.salute.basilicata.it&isSaaSApp=false&authenticators=SAMLSSOAuthenticator:SPID_LIV_2:SPID_LIV_3:LOCAL",
    "file": "potenza/de4da2f6f01b.txt",
    "titolo": "SISIR",
    "sha": "e05eab48fb40c3ac25b451eb03c57e087cf5cd055d28a95424ac258b3f6fb579",
@@ -488,8 +488,8 @@
    "http": 200,
    "file": "potenza/772f6c77a4a7.txt",
    "titolo": "Sanità digitale, nuovi servizi online - Regione Basilicata",
-   "sha": "b96f36dcf4d7a194c65efdcdef2f639ae26c04d78d2bdbc93977b56af59192cf",
-   "caratteri": 11583,
+   "sha": "28dc5135ae74bcb4d1279f2264c26b029c68218ffbf36abca59526c758b3912e",
+   "caratteri": 11568,
    "cambiata": true
   },
   {
@@ -537,7 +537,7 @@
    "controllata": "2026-11-03",
    "da_pagina": "https://www.aspbasilicata.it/come-fare-per/scelta-e-revoca-del-medico-di-famiglia-e-del-pediatra/",
    "http": 0,
-   "errore": "curl: (28) Connection timed out after 60002 milliseconds"
+   "errore": "curl: (28) Connection timed out after 60001 milliseconds"
   },
   {
    "asl": "potenza",
@@ -572,8 +572,8 @@
    "http": 200,
    "file": "regole/3961077a0e4e.txt",
    "titolo": "Fascicolo Sanitario Elettronico 2.0 - Regione Basilicata",
-   "sha": "7a4e9a1a88b56ecfb811f35e94fb37a34fb9e31fed09448094d6c0b397c77e12",
-   "caratteri": 10120,
+   "sha": "17cfaaf77699a089be38bdaa81e6c94fe89593ed7891f245576dbeb2f9baa1e4",
+   "caratteri": 10105,
    "cambiata": true
   },
   {
@@ -583,9 +583,9 @@
    "http": 200,
    "file": "inps-basilicata/d37e344b6702.txt",
    "titolo": "Portale Inps - Matera",
-   "sha": "d6fdc578b66ab47b9ffa2d62e64dbc7a982862a952e8dae1813e1136fe17854d",
-   "caratteri": 42748,
-   "cambiata": false
+   "sha": "41aefaf76970734db4ba1e1b76d50a3df9504caacb96e51cae65ee496e4bbd5c",
+   "caratteri": 42794,
+   "cambiata": true
   },
   {
    "asl": "inps-basilicata",
@@ -594,9 +594,9 @@
    "http": 200,
    "file": "inps-basilicata/156c6d3cae70.txt",
    "titolo": "Portale Inps - Potenza",
-   "sha": "70949b7a17b0e6453f663d3e3fc30310de0da9f450040b6969777f86b582e598",
-   "caratteri": 43025,
-   "cambiata": false
+   "sha": "aeae3b86e120bd99ecc0d1b7cb044d3c76fc808505c367563ff386420208ea0e",
+   "caratteri": 43071,
+   "cambiata": true
   },
   {
    "asl": "inps-basilicata",
@@ -605,9 +605,9 @@
    "http": 200,
    "file": "inps-basilicata/f9d950ca5afd.txt",
    "titolo": "Portale Inps - Accertamento della disabilità: avvio sperimentazione della riforma",
-   "sha": "cd79ea8ca23ead394002e4d202ee571f4bfb93d43d8694e209b64c8b2459e30a",
-   "caratteri": 45314,
-   "cambiata": false
+   "sha": "db9cc4b4fb2c4585a022edd1466d2e0ddb718938d2c96dcc016c5cf330f528a9",
+   "caratteri": 45360,
+   "cambiata": true
   },
   {
    "asl": "inps-basilicata",
@@ -616,9 +616,9 @@
    "http": 200,
    "file": "inps-basilicata/3962e31a95f6.txt",
    "titolo": "Portale Inps - Riforma della disabilità: in avvio la seconda fase di sperimentazione",
-   "sha": "db99171d9c0a42631c01e053128cd9c3e1f8337e0a0157b8c86ee60171a1c009",
-   "caratteri": 44378,
-   "cambiata": false
+   "sha": "f5a881bccfeb8b89b57bd01f5d577b5817f4888de4b05198a40b98a0bfbadbf4",
+   "caratteri": 44424,
+   "cambiata": true
   },
   {
    "asl": "inps-basilicata",
@@ -627,9 +627,9 @@
    "http": 200,
    "file": "inps-basilicata/aad63b63390a.txt",
    "titolo": "Portale Inps - Riforma della disabilità: al via la terza fase sperimentale",
-   "sha": "c6930fc23272735701d365ad24f19e4fe8b2201d94f8d532a9f97b23835d22f0",
-   "caratteri": 46308,
-   "cambiata": false
+   "sha": "77671cb95f0698a9e41f6bf82b8085173a87732fe1918e4cd8b34fc8a885a652",
+   "caratteri": 46354,
+   "cambiata": true
   },
   {
    "asl": "regione-basilicata",
@@ -638,8 +638,8 @@
    "http": 200,
    "file": "regione-basilicata/2f606e3336a5.txt",
    "titolo": "Fanelli: “CUP, attiva prenotazione online delle prestazioni\" - Regione Basilicata",
-   "sha": "362eadc4981ea40cbed54b29724f096a5a94e469116ab794ba717902ea6d4f66",
-   "caratteri": 12204,
+   "sha": "3d1c6a7b873d305222dc1bc5aaba9d590dc3a91fd3a63e2fec9cc9aa5f501bb6",
+   "caratteri": 12189,
    "cambiata": true
   },
   {
@@ -650,8 +650,8 @@
    "finale": "https://www.regione.basilicata.it/privacy/",
    "file": "regione-basilicata/8f50bf0e199f.txt",
    "titolo": "Trattamento dati personali e privacy - Regione Basilicata",
-   "sha": "a4a6a3124cc4c2d2a2bd74eab23a8f64ba64632b994d447cc8b2b984162183f0",
-   "caratteri": 16252,
+   "sha": "ba2ba29ac462350aa27457eb69127a0ca1e80402338882c757754deb26b9e20c",
+   "caratteri": 16250,
    "link_pdf": [
     {
      "url": "https://www.regione.basilicata.it/wp-content/uploads/2024/12/Privacy-Atto-designazione-responsabile-protezione-dati.pdf",
@@ -716,8 +716,8 @@
    "finale": "https://www.regione.basilicata.it/?temi-spp=servizi-online",
    "file": "regione-basilicata/24e95f5e1ed6.txt",
    "titolo": "Servizi online - Regione Basilicata",
-   "sha": "4033328748ab5a2d837315015d6931e0eacb6fd8fb614c596e7aa3d12d65f2cc",
-   "caratteri": 9005,
+   "sha": "f73d7ebaebc78381177d10e8dd632ad6da26bc55a49bc226d9931de9b92471d9",
+   "caratteri": 9002,
    "cambiata": true
   },
   {
@@ -750,8 +750,8 @@
    "http": 200,
    "file": "regione-basilicata/6b0c6f848ed1.txt",
    "titolo": "Liste d’attesa, ok a piano per la specialistica - Regione Basilicata",
-   "sha": "01894d7f350154ff79ee19f70478a56706926b5f6c54bc3b0f5b59b5fc6a8495",
-   "caratteri": 12186,
+   "sha": "0f4ac0b2e903d7362cb961d5c3b85e29943ee85eb7e6b08d54b27f6617c2df3f",
+   "caratteri": 12171,
    "cambiata": true
   },
   {
@@ -773,9 +773,9 @@
    "http": 200,
    "file": "inps-basilicata/9ca54e087d23.txt",
    "titolo": "Portale Inps - Basilicata",
-   "sha": "c349198f73a1b89b4be4a10bc292db3e9dcd98a322b118334e516c52595ca0ab",
-   "caratteri": 42215,
-   "cambiata": false
+   "sha": "186f2652bf2af7b0bae634725125eb74a1331ae07412c358a6a59becdcc8df2f",
+   "caratteri": 42261,
+   "cambiata": true
   },
   {
    "asl": "asp-potenza",
@@ -1034,7 +1034,7 @@
    "controllata": "2026-11-03",
    "da_pagina": "https://www.aspbasilicata.it/servizi-on-line/portale-anagrafe-web/",
    "http": 0,
-   "errore": "curl: (28) Connection timed out after 60002 milliseconds"
+   "errore": "curl: (28) Connection timed out after 60003 milliseconds"
   },
   {
    "asl": "ticket-farmaci",
@@ -1043,8 +1043,8 @@
    "http": 200,
    "file": "ticket-farmaci/ab50cb44dc0e.txt",
    "titolo": "Farmaci, quota di 2,50 euro: esenti le fasce fragili - AGR Basilicata",
-   "sha": "b8aa17737286a713f05b5d51af0b250a828e5ff147c438e4ee2a1c8ce1adfd53",
-   "caratteri": 6542,
+   "sha": "d6c0cba1571e529b208a485581a018cb02d953b7d95c34d1307c55d5ed9e9ae8",
+   "caratteri": 6518,
    "cambiata": true
   },
   {
@@ -1054,8 +1054,8 @@
    "http": 200,
    "file": "ticket-farmaci/691ce0debd03.txt",
    "titolo": "Sanità, precisazioni sui 2.50 a ricetta - Regione Basilicata",
-   "sha": "8307bd3a8bd8944c7ac7c91c08508bc9a740810a8d2c4e4ca8729d2db5e40bb3",
-   "caratteri": 12527,
+   "sha": "48c23dee6be3c33f0daf739cb20236562792aa1de53d9eb91f21fcc93a300547",
+   "caratteri": 12512,
    "cambiata": true
   }
  ]

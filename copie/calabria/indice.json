@@ -1,6 +1,6 @@
 {
  "regione": "calabria",
- "aggiornato": "2026-11-03T02:42:49.295Z",
+ "aggiornato": "2026-11-03T20:28:36.579Z",
  "pagine": [
   {
    "asl": "catanzaro",
@@ -631,7 +631,7 @@
      "testo": "Carta dei servizi"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "cosenza",
@@ -669,7 +669,7 @@
    "http": 200,
    "file": "cosenza/fe31bc8fb243.txt",
    "titolo": "Centro Unico di Prenotazione Online - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "3d050184d71f64a2e4b266124e167311b4beee18ae0fbddcf5e8cc7e76776128",
+   "sha": "7811b6ff89c853259fc414d2f0a5e9bf58cad983f7c5d4e97bffdd16d29fd7cc",
    "caratteri": 8094,
    "cambiata": true
   },
@@ -727,7 +727,7 @@
      "testo": "Carta dei servizi"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "cosenza",
@@ -779,7 +779,7 @@
    "http": 200,
    "file": "crotone/794ccfdda2f9.txt",
    "titolo": "Assistenza Domiciliare - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "2771d35297a7f3643731f8ccd54ab8a4d91b160780bd90996829a1e509aaf320",
+   "sha": "e0960e397cdf2a53f20c0e1cf70f2f73339b77a65867d53c91b96b7ef27eef38",
    "caratteri": 9089,
    "link_pdf": [
     {
@@ -808,7 +808,7 @@
    "http": 200,
    "file": "crotone/4ab485a670df.txt",
    "titolo": "contatti - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "673bd34a0d46c9a7970dee31fe3b1240cb22890de3cd6b0058f8d2a47ae659e0",
+   "sha": "52896928bfba854aebb2d94c9220a44be8e09cb6030d1890c21dd9f9a425523d",
    "caratteri": 7856,
    "cambiata": true
   },
@@ -831,7 +831,7 @@
    "http": 200,
    "file": "crotone/549a609e9a26.txt",
    "titolo": "Ufficio Relazioni con il Pubblico - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "c53521893f48dcab48ceda5feda2221abcbb0550824acbc47fe64ce33ab9ec96",
+   "sha": "3c76cc9d5d5dd16e7656111c745e36bfb321642fd0df21853a5128f4f7de71a0",
    "caratteri": 6557,
    "cambiata": true
   },
@@ -962,7 +962,7 @@
    "http": 200,
    "file": "reggio-calabria/9fdd24028cd4.txt",
    "titolo": "Azienda Sanitaria Provinciale di Reggio Calabria",
-   "sha": "b23e3aedb3ca07165c6853353e855e6d6fff26b3284b8dac9fb42809b078d5c9",
+   "sha": "75a11f4c5c92e4b88c7f39a4ef40539776a99ee7810b0911b002a400058f1992",
    "caratteri": 4810,
    "link_pdf": [
     {
@@ -990,7 +990,7 @@
      "testo": "Mod. esercizio diritti interessati"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "reggio-calabria",
@@ -1167,9 +1167,9 @@
    "http": 200,
    "file": "inps-calabria/2cdf96ccbd11.txt",
    "titolo": "Portale Inps - Catanzaro",
-   "sha": "58ce636905beedb90fb7d622b64e19cdd76dda05941556b32bbaafb4433a85db",
-   "caratteri": 42986,
-   "cambiata": false
+   "sha": "c87e16762ca725d210dcb31b7fac1f1ab3cd55b54d43d66ebdb618b810fa823a",
+   "caratteri": 43032,
+   "cambiata": true
   },
   {
    "asl": "inps-calabria",
@@ -1178,9 +1178,9 @@
    "http": 200,
    "file": "inps-calabria/08f56fe93380.txt",
    "titolo": "Portale Inps - Cosenza",
-   "sha": "325bd07b10e620810371a64d315041249b698a1a8385d20c045e35fa95ecf752",
-   "caratteri": 43742,
-   "cambiata": false
+   "sha": "03760fc521d715d4420561c2874fd0ec2dc99fbef84bbd082c01775ae31d3847",
+   "caratteri": 43788,
+   "cambiata": true
   },
   {
    "asl": "inps-calabria",
@@ -1189,9 +1189,9 @@
    "http": 200,
    "file": "inps-calabria/d47ccfa83bb7.txt",
    "titolo": "Portale Inps - Crotone",
-   "sha": "e6610ea44336c031dccbb39bcecd5e4a4cc8fef478218599209083c3ef7879e0",
-   "caratteri": 42702,
-   "cambiata": false
+   "sha": "8dea26fb40890fafec5193775f78fdf84f3f8ca8be2e472d9ac00d4488fa2c0a",
+   "caratteri": 42748,
+   "cambiata": true
   },
   {
    "asl": "inps-calabria",
@@ -1200,9 +1200,9 @@
    "http": 200,
    "file": "inps-calabria/80cdf6a50097.txt",
    "titolo": "Portale Inps - Reggio Calabria",
-   "sha": "8c4454fbcd51a239b8f8ef23d03250e63019c3ff422cf3796ca35fe90adb46f8",
-   "caratteri": 43150,
-   "cambiata": false
+   "sha": "70ea2f0ebac9d6f27ed953a3e4600d334c4ff651bfdb0c41c7047955ac15876c",
+   "caratteri": 43196,
+   "cambiata": true
   },
   {
    "asl": "inps-calabria",
@@ -1211,9 +1211,9 @@
    "http": 200,
    "file": "inps-calabria/38e0f1048510.txt",
    "titolo": "Portale Inps - Vibo Valentia",
-   "sha": "3521e9f1a236d607dff0638ea2580eb936f7b2b3cf04542018a30fda39e460fe",
-   "caratteri": 43120,
-   "cambiata": false
+   "sha": "3cff6e05579cde1f11f9246bc39ef7b34bf8af3c10a858a4037201743b78c609",
+   "caratteri": 43166,
+   "cambiata": true
   },
   {
    "asl": "inps-calabria",
@@ -1222,9 +1222,9 @@
    "http": 200,
    "file": "inps-calabria/f9d950ca5afd.txt",
    "titolo": "Portale Inps - Accertamento della disabilità: avvio sperimentazione della riforma",
-   "sha": "cd79ea8ca23ead394002e4d202ee571f4bfb93d43d8694e209b64c8b2459e30a",
-   "caratteri": 45314,
-   "cambiata": false
+   "sha": "db9cc4b4fb2c4585a022edd1466d2e0ddb718938d2c96dcc016c5cf330f528a9",
+   "caratteri": 45360,
+   "cambiata": true
   },
   {
    "asl": "inps-calabria",
@@ -1233,9 +1233,9 @@
    "http": 200,
    "file": "inps-calabria/3962e31a95f6.txt",
    "titolo": "Portale Inps - Riforma della disabilità: in avvio la seconda fase di sperimentazione",
-   "sha": "db99171d9c0a42631c01e053128cd9c3e1f8337e0a0157b8c86ee60171a1c009",
-   "caratteri": 44378,
-   "cambiata": false
+   "sha": "f5a881bccfeb8b89b57bd01f5d577b5817f4888de4b05198a40b98a0bfbadbf4",
+   "caratteri": 44424,
+   "cambiata": true
   },
   {
    "asl": "inps-calabria",
@@ -1244,9 +1244,9 @@
    "http": 200,
    "file": "inps-calabria/aad63b63390a.txt",
    "titolo": "Portale Inps - Riforma della disabilità: al via la terza fase sperimentale",
-   "sha": "c6930fc23272735701d365ad24f19e4fe8b2201d94f8d532a9f97b23835d22f0",
-   "caratteri": 46308,
-   "cambiata": false
+   "sha": "77671cb95f0698a9e41f6bf82b8085173a87732fe1918e4cd8b34fc8a885a652",
+   "caratteri": 46354,
+   "cambiata": true
   },
   {
    "asl": "regione-calabria",
@@ -1373,9 +1373,9 @@
    "http": 200,
    "file": "inps-calabria/ab4c7492d194.txt",
    "titolo": "Portale Inps - Calabria",
-   "sha": "5ac5a77efd4278b953e410787a548a4aa265b16b9f683f9fa5d80245b74c57d7",
-   "caratteri": 42172,
-   "cambiata": false
+   "sha": "cf4f279793916751114993a616dfdb9f780687fadda04fb6c597d241521844bd",
+   "caratteri": 42218,
+   "cambiata": true
   },
   {
    "asl": "asp-catanzaro",
@@ -1448,7 +1448,7 @@
      "testo": "Carta dei servizi"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asp-cosenza",
@@ -1465,7 +1465,7 @@
      "testo": "Carta dei servizi"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asp-cosenza",
@@ -1483,7 +1483,7 @@
      "testo": "Carta dei servizi"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asp-cosenza",
@@ -1500,7 +1500,7 @@
      "testo": "Carta dei servizi"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asp-cosenza",
@@ -1517,7 +1517,7 @@
      "testo": "Carta dei servizi"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asp-cosenza",
@@ -1534,7 +1534,7 @@
      "testo": "Carta dei servizi"
     }
    ],
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asp-cosenza",
@@ -1570,7 +1570,7 @@
    "titolo": "Contatti - Azienda Sanitaria Provinciale di Crotone",
    "sha": "cd993ac662afb9f389a177ed81cb110ca517fcbd219e082f33f3b04145f59a8a",
    "caratteri": 4521,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "asp-crotone",
@@ -1579,7 +1579,7 @@
    "http": 200,
    "file": "asp-crotone/a6bd80f5d25e.txt",
    "titolo": "La Guardia medica - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "32875201771a0a078cb7ac3548dc0e24a76faf5dad3f0ba408a8af0254fbbbbf",
+   "sha": "e920dae187e7b04966b4815995d0fe797398b933d58a9e2cba89d72e0b4e89b2",
    "caratteri": 5228,
    "link_pdf": [
     {
@@ -1596,7 +1596,7 @@
    "http": 200,
    "file": "asp-crotone/7cfbfca8e650.txt",
    "titolo": "Fascicolo sanitario elettronico - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "a138c0a973cb643a195f42cf1ad4f9a3d8b95a3265f4bf09a20bac19b917135a",
+   "sha": "1be53467d2b52602010b4d7e96962f03fd8d598172ba5659561d4a13934709b9",
    "caratteri": 10734,
    "cambiata": true
   },
@@ -1607,7 +1607,7 @@
    "http": 200,
    "file": "asp-crotone/2be36dc4bb78.txt",
    "titolo": "Area Sub-Distrettuale di Crotone - Azienda Sanitaria Provinciale di Crotone",
-   "sha": "7c606b3fb86fed4e193d4213d4d27f11afa01ae93f94348b46cbf2060290c351",
+   "sha": "fd358d6ee6244c1265785e04c602be90170a2e86b374c04f08894b2761afb0c1",
    "caratteri": 5230,
    "cambiata": true
   },

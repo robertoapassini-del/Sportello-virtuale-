@@ -73,15 +73,15 @@ Pubblicazioni
 
 Albi ed elenchi
 
+Elenco provinciale dei soggetti privati abilitati alla diagnosi e certificazione diagnostica di studenti e studentesse con disturbi specifici di ap...
+
 Elenco formatori nelle discipline bionaturali
 
-Elenco provinciale dei soggetti privati abilitati alla diagnosi e certificazione diagnostica di studenti e studentesse con disturbi specifici di ap...
+Elenco degli enti/soggetti autorizzati alla formazione all'uso del DAE
 
 Elenchi provinciali degli idonei alla nomina a direttore sanitario, direttore amministrativo e direttore assistenziale dell'Azienda provinciale per...
 
 TrentinoSalute+ Le iniziative sociali
-
-Elenco degli enti/soggetti autorizzati alla formazione all'uso del DAE
 
 Registro provinciale dei medici specialisti in medicina dello sport abilitati al rilascio di certificazione di idoneità all'attività sportiva agoni...
 
@@ -240,7 +240,11 @@ Attività in capo alle strutture sanitarie pubbliche, private autorizzate, accre
 L’evoluzione del FSE2.0 coinvolge in modo importante anche le strutture sanitarie private autorizzate, accreditate e convenzionate con il Servizio Sanitario, chiamate a mettere in atto tutta una serie di azioni, tecniche e organizzative, entro tempistiche precise.
 In particolare esse sono tenute a:
 
-produrre e trasmettere i documenti sanitari in formato strutturato (es. HL7 CDA2, FHIR), secondo gli standard definiti a livello nazionale;
+produrre e trasmettere i documenti sanitari in formato strutturato (es. HL7 CDA2, FHIR), secondo gli standard definiti a livello nazionale). I software utilizzati e le relative soluzioni applicative devono essere conformi agli standard di interoperabilità (CDA2 e FHIR) e alle specifiche documentali vigenti. A tal fine è previsto uno specifico processo di accreditamento dei software sanitari, da realizzarsi secondo le modalità descritte al seguente link
+
+https://github.com/ministero-salute/it-fse-support/blob/main/doc/accreditamento/README.md
+
+;
 
 garantire la tempestiva alimentazione del FSE per ciascun episodio assistenziale;
 
