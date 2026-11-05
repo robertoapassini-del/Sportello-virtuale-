@@ -1,11 +1,11 @@
 {
  "regione": "trentino-alto-adige",
- "aggiornato": "2026-11-04T04:29:02.080Z",
+ "aggiornato": "2026-11-05T04:42:01.937Z",
  "pagine": [
   {
    "asl": "bolzano",
    "url": "https://www.asdaa.it/",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "browser": true,
    "http": 200,
    "finale": "https://www.asdaa.it/it/home",
@@ -13,12 +13,12 @@
    "titolo": "Azienda Sanitaria dell'Alto Adige",
    "sha": "db374dd2184d93607b8d43cdcf0d4d76556c2fd49f811db58de7acbf376ae5a7",
    "caratteri": 23101,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
    "url": "https://home.sabes.it/it/comprensori-sanitari/merano/3026.asp",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "bolzano/5cedc1cec8ce.txt",
    "titolo": "Servizio di Medicina di base | Azienda Sanitaria dell'Alto Adige",
@@ -29,7 +29,7 @@
   {
    "asl": "bolzano",
    "url": "https://salute.provincia.bz.it/it/numero-116117",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "browser": true,
    "http": 200,
    "file": "bolzano/a351aa31949c.txt",
@@ -41,7 +41,7 @@
   {
    "asl": "bolzano",
    "url": "https://www.asdaa.it/it/centro-piani-rencio",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "browser": true,
    "http": 200,
    "file": "bolzano/023046b9a5bd.txt",
@@ -53,7 +53,7 @@
   {
    "asl": "bolzano",
    "url": "https://home.sabes.it/it/prenotazione-me.asp",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "bolzano/3eb4ebd291fc.txt",
    "titolo": "Prenotazione | Azienda Sanitaria dell'Alto Adige",
@@ -64,18 +64,14 @@
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/servizi.asp",
-   "controllata": "2026-11-04",
-   "http": 200,
-   "file": "bolzano/436fa81472bf.txt",
-   "titolo": "Servizi | Azienda Sanitaria dell'Alto Adige",
-   "sha": "48f1cafcdc14d516937f9e0b287483ffbc26c86b964b78c08802360ed730cb0c",
-   "caratteri": 6984,
-   "cambiata": false
+   "controllata": "2026-11-05",
+   "http": 0,
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "bolzano",
    "url": "https://www.asdaa.it/it/default.asp",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "browser": true,
    "http": 200,
    "finale": "https://www.asdaa.it/it/home",
@@ -83,12 +79,12 @@
    "titolo": "Azienda Sanitaria dell'Alto Adige",
    "sha": "db374dd2184d93607b8d43cdcf0d4d76556c2fd49f811db58de7acbf376ae5a7",
    "caratteri": 23101,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
    "url": "https://www.asdaa.it/it/comprensorio-sanitario-di-bolzano",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "browser": true,
    "http": 200,
    "file": "bolzano/6b56fb181413.txt",
@@ -100,7 +96,7 @@
   {
    "asl": "bolzano",
    "url": "https://www.asdaa.it/it/oltrisarco",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "browser": true,
    "http": 200,
    "file": "bolzano/b1256d744071.txt",
@@ -112,7 +108,7 @@
   {
    "asl": "bolzano",
    "url": "https://www.asdaa.it/it/bassa-atesina",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "browser": true,
    "http": 200,
    "file": "bolzano/6b75adaac397.txt",
@@ -124,7 +120,7 @@
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/m/it/contatti.asp",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "finale": "https://home.asdaa.it/ricerca/ricerca.asp?404;m/it/contatti.asp",
    "file": "bolzano/0374f6fa570c.txt",
@@ -136,7 +132,7 @@
   {
    "asl": "bolzano",
    "url": "https://www.sabes.it/it/contatti-sabes.asp?addt_apid=53001",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "browser": true,
    "http": 200,
    "finale": "https://www.asdaa.it/it/contatti",
@@ -149,19 +145,19 @@
   {
    "asl": "bolzano",
    "url": "https://www.asdaa.it/it/informazioni-per-pazienti-e-visitatori-bz",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "browser": true,
    "http": 200,
    "file": "bolzano/55ed5d9f3c74.txt",
    "titolo": "Info per pazienti e visitatori | Ospedale di Bolzano",
    "sha": "cad930a395f20aab03774f76b5825ac089c483fef2689c37b28f0d741d223b5d",
    "caratteri": 24628,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
    "url": "https://home.sabes.it/it/ospedali/bolzano/segnalazioni-e-reclami.asp",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "browser": true,
    "http": 200,
    "finale": "https://www.asdaa.it/it/ospedali",
@@ -174,7 +170,7 @@
   {
    "asl": "bolzano",
    "url": "https://www.asdaa.it/it/one/116-117",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "browser": true,
    "http": 200,
    "file": "bolzano/de01cc62c3cf.txt",
@@ -186,7 +182,7 @@
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/medicina-di-base.asp",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "browser": true,
    "http": 200,
    "finale": "https://www.asdaa.it/it/servizio-di-medicina-di-base-territorio-bz",
@@ -194,12 +190,12 @@
    "titolo": "Servizio di Medicina di base | Comprensorio Bolzano",
    "sha": "9f63eccd18bf68b6497f3f3805f65acbf0102e407f3051776fe9f692e20a6813",
    "caratteri": 31077,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "bolzano",
    "url": "https://www.asdaa.it/it/ambulatori-per-le-piccole-urgenze",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "browser": true,
    "http": 200,
    "file": "bolzano/469d29ce1d22.txt",
@@ -211,7 +207,7 @@
   {
    "asl": "bolzano",
    "url": "https://www.asdaa.it/it/temi/pronto-soccorso-solo-per-le-emergenze",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "browser": true,
    "http": 200,
    "file": "bolzano/71198a2983b8.txt",
@@ -223,18 +219,20 @@
   {
    "asl": "bolzano",
    "url": "https://www.asdaa.it/it/comprensori-sanitari/merano/3181.asp",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
+   "browser": true,
    "http": 200,
+   "finale": "https://home.asdaa.it/it/comprensori-sanitari/merano/3181.asp",
    "file": "bolzano/f2819aebdf8b.txt",
-   "titolo": "Südtiroler Sanitätsbetrieb",
-   "sha": "392d4be341b5601bf3ac0de4fb35ecc68611c7c9a2e451ea79d9bec90721e5ed",
-   "caratteri": 38,
-   "cambiata": false
+   "titolo": "Servizio infermieristico | Azienda Sanitaria dell'Alto Adige",
+   "sha": "63e2879d3d25cb6dbc1c59c0b1221e0fa551588ba75db555e10884ce450c7123",
+   "caratteri": 8725,
+   "cambiata": true
   },
   {
    "asl": "bolzano",
    "url": "https://pnrr.asdaa.it/progetti/centrali-operative-territoriali",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "bolzano/100f30a952c7.txt",
    "titolo": "Centrali operative territoriali",
@@ -245,21 +243,21 @@
   {
    "asl": "bolzano",
    "url": "https://www.provincia.bz.it/salute-benessere/salute/cittadini-utenti/tempi-di-prenotazione.asp",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 0,
    "errore": "curl: (47) Maximum (50) redirects followed"
   },
   {
    "asl": "bolzano",
    "url": "https://www.provincia.bz.it/salute-benessere/salute/cittadini-utenti/fascicolo-sanitario-elettronico-fse.asp",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 0,
    "errore": "curl: (47) Maximum (50) redirects followed"
   },
   {
    "asl": "bolzano",
    "url": "https://salute.provincia.bz.it/it/ticket-esenzioni",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "browser": true,
    "http": 200,
    "file": "bolzano/ea6b76cd97bf.txt",
@@ -271,7 +269,7 @@
   {
    "asl": "bolzano",
    "url": "https://www.provincia.bz.it/famiglia-sociale-comunita/anziani/sportelli-unici-assistenza-cura.asp",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "browser": true,
    "http": 200,
    "finale": "https://sociale.provincia.bz.it/it/persone-anziane",
@@ -284,7 +282,7 @@
   {
    "asl": "bolzano",
    "url": "https://www.provincia.bz.it/famiglia-sociale-comunita/anziani/assistenza-domiciliare/servizio-infermieristico.asp",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "browser": true,
    "http": 200,
    "finale": "https://sociale.provincia.bz.it/it/persone-anziane",
@@ -297,46 +295,40 @@
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/prevenzione/prestazioni.asp?bnsv_svid=1008640",
-   "controllata": "2026-11-04",
-   "browser": true,
-   "http": 200,
-   "finale": "https://www.asdaa.it/it/prevenzione-salute?bnsv_svid=1008640",
-   "file": "bolzano/fbeef31a6b03.txt",
-   "titolo": "Prevenzione e salute | Azienda Sanitaria dell'Alto Adige",
-   "sha": "96eb6e318aae09e2b0277cde6a3b7a4c8c72b0b77f023dc0a637c29b778e7a53",
-   "caratteri": 22011,
-   "cambiata": true
+   "controllata": "2026-11-05",
+   "http": 0,
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/servizi-informazione.asp?bnsv_svid=1032224",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "browser": true,
    "http": 200,
    "finale": "https://www.asdaa.it/it/servizi",
    "file": "bolzano/bbc0f1d38083.txt",
    "titolo": "I servizi in myCIVIS - Azienda Sanitaria dell'Alto Adige",
-   "sha": "4f8e19d82fc004c3caf5e4a8fb2f6ef512ff8cba3e9db29ab9c3c09c96fd77ec",
-   "caratteri": 22461,
+   "sha": "e1e19a98fe20de30937bf958ded4d908d4e4445a40a4086d4d1118e29b65ccdb",
+   "caratteri": 22375,
    "cambiata": true
   },
   {
    "asl": "bolzano",
    "url": "https://www.asdaa.it/it/servizi-informazione.asp?bnsv_svid=1033546",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "browser": true,
    "http": 200,
    "finale": "https://www.asdaa.it/it/servizi",
    "file": "bolzano/1a6f833fe6c4.txt",
    "titolo": "I servizi in myCIVIS - Azienda Sanitaria dell'Alto Adige",
-   "sha": "6fbc8eb96bfc2c61139923d463331db04b14e298d246b3265452933150b83067",
-   "caratteri": 22461,
+   "sha": "e1e19a98fe20de30937bf958ded4d908d4e4445a40a4086d4d1118e29b65ccdb",
+   "caratteri": 22375,
    "cambiata": true
   },
   {
    "asl": "bolzano",
    "url": "https://www.asdaa.it/it/one/fascicolo-sanitario-elettronico",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "browser": true,
    "http": 200,
    "file": "bolzano/be012c612438.txt",
@@ -348,7 +340,7 @@
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/amministrazione-trasparente/4056.asp",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "bolzano/cf4cd0ccb41d.txt",
    "titolo": "Telefono e posta elettronica | Azienda Sanitaria dell'Alto Adige",
@@ -359,7 +351,7 @@
   {
    "asl": "bolzano",
    "url": "https://www.asdaa.it/it/contatti/53004",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "browser": true,
    "http": 200,
    "file": "bolzano/fe7512b5a1bb.txt",
@@ -371,7 +363,7 @@
   {
    "asl": "bolzano",
    "url": "https://pnrr.asdaa.it/note_legali",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "bolzano/b857fb342b96.txt",
    "titolo": "Note legali",
@@ -382,7 +374,7 @@
   {
    "asl": "bolzano",
    "url": "https://www.asdaa.it/it/ospedale-di-bolzano",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "browser": true,
    "http": 200,
    "file": "bolzano/65ef60e7a915.txt",
@@ -394,7 +386,7 @@
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/comprensori-sanitari/bolzano/2852.asp?addt_apid=53058",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "bolzano/f9e4fb907759.txt",
    "titolo": "Amministrazione | Azienda Sanitaria dell'Alto Adige",
@@ -405,7 +397,7 @@
   {
    "asl": "bolzano",
    "url": "https://www.sabes.it/it/ospedali/bressanone/3779.asp?addt_apid=53297",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "browser": true,
    "http": 200,
    "finale": "https://www.asdaa.it/it/ospedali?addt_apid=53297",
@@ -418,7 +410,7 @@
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/tempi-di-prenotazione.asp",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "browser": true,
    "http": 200,
    "finale": "https://www.asdaa.it/it/informazioni-sulle-liste-d-attesa-e-sulle-classi-di-priorita",
@@ -431,40 +423,14 @@
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/amministrazione-trasparente/4070.asp",
-   "controllata": "2026-11-04",
-   "http": 200,
-   "file": "bolzano/f3492fe57fb2.txt",
-   "titolo": "Liste di attesa | Azienda Sanitaria dell'Alto Adige",
-   "sha": "3be36ece77f7921ae9f89dba854521bbcd8aea50225269d0d2dd5f239099c065",
-   "caratteri": 8830,
-   "link_pdf": [
-    {
-     "url": "https://home.asdaa.it/download/DGP_n._915_del_05.11.2019_-_PPGLA_2019-2021(1).pdf",
-     "testo": "Deliberazione della Giunta provinciale n. 915 del 05.11.2019 - Piano Provinciale per il governo delle liste di attesa 20"
-    },
-    {
-     "url": "https://home.asdaa.it/download/SABES_2020.02.04_n._84_-_PAAGTA_2020-2022(1).pdf",
-     "testo": "Deliberazione aziendale n. 84 del 04.02.2020 - Piano Attuativo Aziendale per il governo dei tempi di attesa 2020-2022 de"
-    },
-    {
-     "url": "https://home.asdaa.it/download/1B_-_Esempio_della_rilevazione_-_Tempo_medio_di_attesa_effettivo(1).pdf",
-     "testo": "cliccare qui"
-    },
-    {
-     "url": "https://home.asdaa.it/download/Allegato_4A_-_Esempio_della_rilevazione_-_Indice_ministeriale_v2(1).pdf",
-     "testo": "cliccare qui"
-    },
-    {
-     "url": "https://home.asdaa.it/download/4B_-_Esempio_della_rilevazione_-_Indice_dell_offerta.pdf",
-     "testo": "cliccare qui"
-    }
-   ],
-   "cambiata": false
+   "controllata": "2026-11-05",
+   "http": 0,
+   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
   },
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/it/amministrazione-trasparente/cartadeiservizisanitari.asp",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "bolzano/a5da44f29c93.txt",
    "titolo": "Carta dei Servizi Sanitari | Azienda Sanitaria dell'Alto Adige",
@@ -475,7 +441,7 @@
   {
    "asl": "bolzano",
    "url": "https://www.asdaa.it/it/contatti/53003",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "browser": true,
    "http": 200,
    "file": "bolzano/c7ac9f080e58.txt",
@@ -487,20 +453,20 @@
   {
    "asl": "bolzano",
    "url": "https://www.asdaa.it/it/servizi-informazione.asp?bnsv_svid=1008061",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "browser": true,
    "http": 200,
    "finale": "https://www.asdaa.it/it/servizi",
    "file": "bolzano/9dafa4bd3a88.txt",
    "titolo": "I servizi in myCIVIS - Azienda Sanitaria dell'Alto Adige",
-   "sha": "85761015bc7c6d46078829c8fb60d6b9fafa910b28068269f363dd9dfd4d5712",
+   "sha": "e7221277ef52a00703ad1c7303f843caa9b178816f8bfb38723f65af85ea7683",
    "caratteri": 22455,
    "cambiata": true
   },
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/m/it/servizi-informazione.asp?bnsv_svid=1008063",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "finale": "https://home.asdaa.it/ricerca/ricerca.asp?404;m/it/servizi-informazione.asp?bnsv_svid=1008063",
    "file": "bolzano/cd9896ab635e.txt",
@@ -512,7 +478,7 @@
   {
    "asl": "bolzano",
    "url": "https://home.sabes.it/download/Carta_servizi_MMG_ITA.pdf",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "bolzano/03b873f9b284.txt",
    "titolo": "Carta dei Servizi",
@@ -524,19 +490,19 @@
   {
    "asl": "bolzano",
    "url": "https://www.asdaa.it/it/distretti-sanitari",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "browser": true,
    "http": 200,
    "file": "bolzano/6087f8da8919.txt",
    "titolo": "I distretti sanitari in Alto Adige",
-   "sha": "02bc8ba39dc6009e04d84737d6b90bb90cf4c90f26dfcb29df4e4b63b0c6b114",
+   "sha": "910e6b24c39b93aea62d7c49b0ad1c1bbc581310e1ba05a8b3d8ee4da2aaf2ed",
    "caratteri": 24008,
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/download/SABES_2020.02.04_n._84_-_PAAGTA_2020-2022(1).pdf",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "bolzano/433c13c322fc.txt",
    "titolo": "BESCHLUSSNIEDERSCHRIFT DES A VERBALE DI DELIBERAZIONE DEL",
@@ -548,19 +514,14 @@
   {
    "asl": "bolzano",
    "url": "https://home.asdaa.it/download/DGP_n._915_del_05.11.2019_-_PPGLA_2019-2021(1).pdf",
-   "controllata": "2026-11-04",
-   "http": 200,
-   "file": "bolzano/b3428e868a63.txt",
-   "titolo": "ALLEGATO A",
-   "sha": "cca6fb125bfbbe2b21f962b6a721d2028284e15e62c78e529d7e83d695b3f2f3",
-   "caratteri": 239861,
-   "pdf": true,
-   "cambiata": false
+   "controllata": "2026-11-05",
+   "http": 0,
+   "errore": "curl: (56) Recv failure: Connection reset by peer"
   },
   {
    "asl": "trento",
    "url": "https://www.asuit.tn.it/",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "trento/731021dc4745.txt",
    "titolo": "Homepage | ASUIT Trento",
@@ -571,18 +532,18 @@
   {
    "asl": "trento",
    "url": "https://www.asuit.tn.it/servizi/continuita-assistenziale-ex-guardia-medica",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "trento/d01ebfbb01ff.txt",
    "titolo": "Continuità assistenziale (ex guardia medica) | ASUIT Trento",
-   "sha": "aa13cfb63d5341127cb6e32721f44f1e44433b927cdac89fcf7cdecdabe032d6",
-   "caratteri": 12906,
-   "cambiata": false
+   "sha": "e32ea487eab262a92db804da691c19d5286cb532461ba2413c0ac1fa08af48e6",
+   "caratteri": 12875,
+   "cambiata": true
   },
   {
    "asl": "trento",
    "url": "https://www.asuit.tn.it/servizi/punto-unico-di-accesso-pua",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "trento/080a714b1d36.txt",
    "titolo": "Punto unico di accesso PUA | ASUIT Trento",
@@ -593,7 +554,7 @@
   {
    "asl": "trento",
    "url": "https://www.asuit.tn.it/servizi/cambio-o-prima-scelta-del-medico-o-del-pediatra",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "trento/e2a7f985f628.txt",
    "titolo": "Cambio o prima scelta del medico o del pediatra | ASUIT Trento",
@@ -604,7 +565,7 @@
   {
    "asl": "trento",
    "url": "https://www.asuit.tn.it/servizi/prenotazione-visite-specialistiche-ed-esami-di-diagnostica",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "trento/43bdb1c702e9.txt",
    "titolo": "Prenotazione visite specialistiche ed esami di diagnostica | ASUIT Trento",
@@ -615,7 +576,7 @@
   {
    "asl": "trento",
    "url": "https://asuit.tn.it/servizi/segnalazioni-commissione-mista-conciliativa-cmc",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "trento/1ad777cff7f6.txt",
    "titolo": "Segnalazioni - Commissione mista conciliativa (Cmc) | ASUIT Trento",
@@ -626,7 +587,7 @@
   {
    "asl": "trento",
    "url": "https://www.asuit.tn.it/servizi/rilascio-documentazione-sanitaria",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "trento/57a43cf90b5c.txt",
    "titolo": "Rilascio documentazione sanitaria | ASUIT Trento",
@@ -637,7 +598,7 @@
   {
    "asl": "trento",
    "url": "https://asuit.tn.it/servizi/cure-palliative",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "trento/b4f8f7871930.txt",
    "titolo": "Cure Palliative | ASUIT Trento",
@@ -648,7 +609,7 @@
   {
    "asl": "trento",
    "url": "https://www.asuit.tn.it/servizi/screening-del-tumore-del-colon-retto",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "trento/3db482f038a7.txt",
    "titolo": "Screening del tumore del colon-retto | ASUIT Trento",
@@ -659,7 +620,7 @@
   {
    "asl": "trento",
    "url": "https://www.asuit.tn.it/servizi/screening-del-tumore-del-seno",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "trento/84d49604124e.txt",
    "titolo": "Screening del tumore del seno | ASUIT Trento",
@@ -670,18 +631,18 @@
   {
    "asl": "trento",
    "url": "https://www.asuit.tn.it/strutture",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "trento/e52df2567a2c.txt",
    "titolo": "Strutture | ASUIT Trento",
-   "sha": "f68c6ede61b0ae6962a394a6ced42aa4e83b158ce41f8405afeab200bd147508",
-   "caratteri": 73243,
-   "cambiata": false
+   "sha": "4ec42c60a42c0279224738c0db4fefecdb6b010129ffcb86b2d592b1acb41c61",
+   "caratteri": 73212,
+   "cambiata": true
   },
   {
    "asl": "trento",
    "url": "https://www.asuit.tn.it/faq/dove-posso-avere-ulteriori-informazioni",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "trento/db5a3700eb94.txt",
    "titolo": "Dove posso avere ulteriori informazioni? | ASUIT Trento",
@@ -692,7 +653,7 @@
   {
    "asl": "trento",
    "url": "https://www.asuit.tn.it/amministrazione-trasparente/telefono-e-posta-elettronica",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "trento/aa0ea1412a70.txt",
    "titolo": "Telefono e posta elettronica | ASUIT Trento",
@@ -703,7 +664,7 @@
   {
    "asl": "trento",
    "url": "https://www.asuit.tn.it/domande-frequenti/prenotazioni-online-di-prestazioni-sanitarie-domande-frequenti",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "trento/2199e15fa72c.txt",
    "titolo": "Prenotazioni online di prestazioni sanitarie: domande frequenti | ASUIT Trento",
@@ -714,7 +675,7 @@
   {
    "asl": "trento",
    "url": "https://www.asuit.tn.it/servizi/assistenza-specialistica-ambulatoriale",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "trento/677465bb07b0.txt",
    "titolo": "Assistenza specialistica ambulatoriale | ASUIT Trento",
@@ -725,7 +686,7 @@
   {
    "asl": "trento",
    "url": "https://www.asuit.tn.it/servizi/trec",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "trento/24ce2d2504aa.txt",
    "titolo": "TreC+ | ASUIT Trento",
@@ -736,19 +697,19 @@
   {
    "asl": "trento",
    "url": "https://asuit.tn.it/servizi/continuita-assistenziale-guardia-medica",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "finale": "https://asuit.tn.it/servizi/continuita-assistenziale-ex-guardia-medica",
    "file": "trento/80d3b78574b9.txt",
    "titolo": "Continuità assistenziale (ex guardia medica) | ASUIT Trento",
-   "sha": "aa13cfb63d5341127cb6e32721f44f1e44433b927cdac89fcf7cdecdabe032d6",
-   "caratteri": 12906,
-   "cambiata": false
+   "sha": "e32ea487eab262a92db804da691c19d5286cb532461ba2413c0ac1fa08af48e6",
+   "caratteri": 12875,
+   "cambiata": true
   },
   {
    "asl": "trento",
    "url": "https://www.asuit.tn.it/strutture/guardia-medica-trento",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "trento/7f87ccb9ad13.txt",
    "titolo": "Guardia medica - Trento | ASUIT Trento",
@@ -759,18 +720,18 @@
   {
    "asl": "trento",
    "url": "https://www.asuit.tn.it/strutture/guardia-medica-rovereto",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "trento/a70352728432.txt",
    "titolo": "Guardia medica - Rovereto | ASUIT Trento",
-   "sha": "f477de0550cf9242d1d040cb6a0a925336709a445c9c811f9131ae84505faf81",
-   "caratteri": 6189,
-   "cambiata": false
+   "sha": "ae721840f65d93da40943790a8e7acbe90fc1223f51a430f7314cd620c72ded9",
+   "caratteri": 6158,
+   "cambiata": true
   },
   {
    "asl": "trento",
    "url": "https://www.asuit.tn.it/servizi/assistenza-domiciliare",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "trento/eadfc8c86f9e.txt",
    "titolo": "Assistenza domiciliare | ASUIT Trento",
@@ -781,7 +742,7 @@
   {
    "asl": "trento",
    "url": "https://www.asuit.tn.it/servizi/impegnative-e-ricette",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "trento/fcb3c1e0caca.txt",
    "titolo": "Impegnative e ricette | ASUIT Trento",
@@ -792,7 +753,7 @@
   {
    "asl": "trento",
    "url": "https://www.apss.tn.it/Azienda/Unita-operative-e-strutture/Ufficio-rapporti-con-il-pubblico-URP",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "finale": "https://www.asuit.tn.it/",
    "file": "trento/00438a822dda.txt",
@@ -804,7 +765,7 @@
   {
    "asl": "trento",
    "url": "https://www.apss.tn.it/Servizi-e-Prestazioni/Assistenza-domiciliare",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "finale": "https://www.asuit.tn.it/",
    "file": "trento/89eb44173d6d.txt",
@@ -816,7 +777,7 @@
   {
    "asl": "trento",
    "url": "https://www.provincia.tn.it/Amministrazione/Enti-societa-e-fondazioni/Asuit-Azienda-sanitaria-universitaria-integrata-del-Trentino",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "trento/d28e2dedb1ce.txt",
    "titolo": "Asuit - Azienda sanitaria universitaria integrata del Trentino - Provincia autonoma di Trento",
@@ -827,30 +788,30 @@
   {
    "asl": "trento",
    "url": "https://www.trentinosalute.net/Argomenti/LISTE-DI-ATTESA",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "finale": "https://www.trentinosalute.net/Argomenti/TEMPI-DI-ATTESA",
    "file": "trento/0d2b7924d034.txt",
-   "titolo": "TEMPI DI ATTESA - Trentino Salute",
-   "sha": "a1bb8bb98f41504dd55c16d4d920b2392a24f640b9ee243d3cb1c8ae6559bc57",
-   "caratteri": 7303,
-   "cambiata": false
+   "titolo": "TEMPI DI ATTESA",
+   "sha": "00919278b13a221552a5df202f8fb6c3974d2900d8c818745a1d2eb908ff4e71",
+   "caratteri": 7285,
+   "cambiata": true
   },
   {
    "asl": "trento",
    "url": "https://www.trentinosalute.net/Argomenti/SERVIZI-DI-EMERGENZA-E-URGENZA-E-TRASPORTI-SANITARI",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "trento/80c54c57d0ca.txt",
    "titolo": "SERVIZI DI EMERGENZA E URGENZA E TRASPORTI SANITARI - Trentino Salute",
    "sha": "a977adde63ea462b12d0063e7bb0293103770c000d7e1a9e9a4a2028f372454d",
    "caratteri": 3373,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "trento",
    "url": "https://www.ufficiostampa.provincia.tn.it/Comunicati/Numero-unico-europeo-116117-oltre-240-mila-chiamate-nel-2025",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "trento/f70809a58f11.txt",
    "titolo": "Numero unico europeo 116117: oltre 240 mila chiamate nel 2025",
@@ -861,13 +822,13 @@
   {
    "asl": "trento",
    "url": "https://www.trentinosalute.net/Argomenti/INNOVAZIONE-E-RICERCA/Fascicolo-sanitario-elettronico-FSE",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "finale": "https://www.trentinosalute.net/Argomenti/INNOVAZIONE-E-SANITA-DIGITALE/Fascicolo-sanitario-elettronico-FSE",
    "file": "trento/0c85d7f8ec7e.txt",
-   "titolo": "Fascicolo sanitario elettronico (FSE) - Trentino Salute",
-   "sha": "2b3f2f9a6b078f506982a1c4aa370ca4645bfaf1646621abdf624b0bb67ec661",
-   "caratteri": 17102,
+   "titolo": "Fascicolo sanitario elettronico (FSE)",
+   "sha": "0daee4c007ef07e9d3c7029daceac168751cd3ac84b735b5b5dc4a668513a969",
+   "caratteri": 17084,
    "link_pdf": [
     {
      "url": "https://www.trentinosalute.net/content/download/4260233/40818516/file/FSE_Informativa_trattamento_dati_2024_2.pdf",
@@ -890,12 +851,12 @@
      "testo": "Delibera_596_2018"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "trento",
    "url": "https://trec.trentinosalute.net/",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "trento/9b7bec7f226f.txt",
    "titolo": "TreC",
@@ -906,7 +867,7 @@
   {
    "asl": "trento",
    "url": "https://trec.trentinosalute.net/domande-frequenti",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "trento/74e1a376be51.txt",
    "titolo": "TreC",
@@ -917,7 +878,7 @@
   {
    "asl": "trento",
    "url": "https://www.asuit.tn.it/faq/come-posso-richiedere-la-copia-della-mia-cartella-clinica-o-dei-referti",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "trento/a293d266e36a.txt",
    "titolo": "Come posso richiedere la copia della mia cartella clinica o dei referti? | ASUIT Trento",
@@ -928,13 +889,13 @@
   {
    "asl": "trento",
    "url": "https://www.asuit.tn.it/servizi/rilascio-documentazione-sanitaria-amministrativa-e-radiologica",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 403
   },
   {
    "asl": "trento",
    "url": "https://www.asuit.tn.it/strutture/ufficio-multizonale-assistenza-protesica-trento",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "trento/5bb9122867c3.txt",
    "titolo": "Ufficio multizonale assistenza protesica - Trento | ASUIT Trento",
@@ -945,7 +906,7 @@
   {
    "asl": "trento",
    "url": "https://www.asuit.tn.it/amministrazione-trasparente/liste-di-attesa",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "trento/1db60b0a0ef2.txt",
    "titolo": "Liste di attesa | ASUIT Trento",
@@ -956,7 +917,7 @@
   {
    "asl": "trento",
    "url": "https://www.asuit.tn.it/system/files/content/documento/5035/allegati/4491/Piano%20attuativo%20aziendale%20per%20il%20governo%20dei%20tempi%20di%20attesa%20per%20il%20triennio%202019-2021.pdf",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "trento/19769b6657bb.txt",
    "titolo": "Scaletta intesa Piano nazionale contenimento tempi di attesa 2006-2008",
@@ -968,20 +929,20 @@
   {
    "asl": "trento",
    "url": "https://www.trentinosalute.net/content/download/4609519/43685934/file/DeliberaGP_696_2019.pdf",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 0,
    "errore": "file più grande di 5 MB: non copiato"
   },
   {
    "asl": "regole",
    "url": "https://www.trentinosalute.net/Argomenti/INNOVAZIONE-E-RICERCA/Fascicolo-sanitario-elettronico-FSE",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "finale": "https://www.trentinosalute.net/Argomenti/INNOVAZIONE-E-SANITA-DIGITALE/Fascicolo-sanitario-elettronico-FSE",
    "file": "regole/0c85d7f8ec7e.txt",
-   "titolo": "Fascicolo sanitario elettronico (FSE) - Trentino Salute",
-   "sha": "2b3f2f9a6b078f506982a1c4aa370ca4645bfaf1646621abdf624b0bb67ec661",
-   "caratteri": 17102,
+   "titolo": "Fascicolo sanitario elettronico (FSE)",
+   "sha": "0daee4c007ef07e9d3c7029daceac168751cd3ac84b735b5b5dc4a668513a969",
+   "caratteri": 17084,
    "link_pdf": [
     {
      "url": "https://www.trentinosalute.net/content/download/4260233/40818516/file/FSE_Informativa_trattamento_dati_2024_2.pdf",
@@ -1004,12 +965,12 @@
      "testo": "Delibera_596_2018"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "regole",
    "url": "https://www.asdaa.it/it/one/fascicolo-sanitario-elettronico",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "browser": true,
    "http": 200,
    "file": "regole/be012c612438.txt",
@@ -1021,29 +982,29 @@
   {
    "asl": "inps-trentino-alto-adige",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.140000.140000-elencoStruttureInps.html",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "inps-trentino-alto-adige/a69e8cd675ec.txt",
    "titolo": "Portale Inps - Bolzano",
-   "sha": "9a2197c948139f42b86bab17fa6425b84c1d2504170f479b053719c2855fdaf7",
-   "caratteri": 43646,
-   "cambiata": false
+   "sha": "dfd66f0d242afb0dccf6c2a3308277e0c7a5b71e74ceb4971560b6152f2dcde6",
+   "caratteri": 43600,
+   "cambiata": true
   },
   {
    "asl": "inps-trentino-alto-adige",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.830000.830000-elencoStruttureInps.html",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "inps-trentino-alto-adige/5f9dac6f2002.txt",
    "titolo": "Portale Inps - Trento",
-   "sha": "66e253d5f4bfcc6372b7064ebf2fdee2c82bbf6eda84499b0b301091975f6973",
-   "caratteri": 43478,
-   "cambiata": false
+   "sha": "9ea55495fa2f86753fc413870d8e2b5388b9f33f16e7e6d3fd5dad50acb9141b",
+   "caratteri": 43432,
+   "cambiata": true
   },
   {
    "asl": "inps-trentino-alto-adige",
    "url": "https://www.disabilita.governo.it/it/notizie/individuate-le-9-province-per-sperimentare-la-riforma-disabilita/",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "inps-trentino-alto-adige/4016319a363c.txt",
    "titolo": "Individuate le 9 province per sperimentare la riforma disabilità",
@@ -1054,7 +1015,7 @@
   {
    "asl": "inps-trentino-alto-adige",
    "url": "https://www.disabilita.governo.it/it/notizie/individuate-le-altre-11-province-per-la-sperimentazione-della-riforma-della-disabilita/",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "inps-trentino-alto-adige/49a147b501cb.txt",
    "titolo": "Individuate le altre 11 province per la sperimentazione della riforma della disabilità",
@@ -1065,7 +1026,7 @@
   {
    "asl": "inps-trentino-alto-adige",
    "url": "https://www.disabilita.governo.it/it/notizie/al-via-sperimentazione-riforma-disabilita-in-altre-40-province/",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "inps-trentino-alto-adige/cb8037740243.txt",
    "titolo": "Al via sperimentazione riforma disabilità in altre 40 province",
@@ -1076,25 +1037,25 @@
   {
    "asl": "inps-trentino-alto-adige",
    "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "inps-trentino-alto-adige/aad63b63390a.txt",
    "titolo": "Portale Inps - Riforma della disabilità: al via la terza fase sperimentale",
-   "sha": "77671cb95f0698a9e41f6bf82b8085173a87732fe1918e4cd8b34fc8a885a652",
-   "caratteri": 46354,
-   "cambiata": false
+   "sha": "c6930fc23272735701d365ad24f19e4fe8b2201d94f8d532a9f97b23835d22f0",
+   "caratteri": 46308,
+   "cambiata": true
   },
   {
    "asl": "regione-trentino-alto-adige",
    "url": "https://trentinosalute.net/Argomenti/INNOVAZIONE-E-RICERCA/Ecosistema-sanita-digitale-TreC",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 404,
    "certificato": "non valido"
   },
   {
    "asl": "ticket-pronto-soccorso",
    "url": "https://www.apss.tn.it/Servizi-e-Prestazioni/Pronto-soccorso",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "finale": "https://www.asuit.tn.it/",
    "file": "ticket-pronto-soccorso/ff272fc956d7.txt",
@@ -1106,7 +1067,7 @@
   {
    "asl": "ticket-pronto-soccorso",
    "url": "https://www.ufficiostampa.provincia.tn.it/content/download/38838/647260/file/Tabella_nuovi_criteri_ticket_pronto_soccorso.pdf",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "file": "ticket-pronto-soccorso/8db9681e8b74.txt",
    "titolo": "Tabella nuovi criteri ticket pronto soccorso",
@@ -1118,14 +1079,14 @@
   {
    "asl": "ticket-pronto-soccorso",
    "url": "https://www.provincia.bz.it/salute-benessere/salute/cittadini-utenti/tariffe-e-compartecipazioni-alla-spesa-sanitaria-ticket-ed-esenzioni.asp",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 0,
    "errore": "curl: (47) Maximum (50) redirects followed"
   },
   {
    "asl": "medico-online",
    "url": "https://www.apss.tn.it/content/view/full/21609",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "finale": "https://www.asuit.tn.it/",
    "file": "medico-online/669b1d1e3c26.txt",
@@ -1137,7 +1098,7 @@
   {
    "asl": "ticket-farmaci",
    "url": "https://www.apss.tn.it/Servizi-e-Prestazioni/(view)/Farmaci%20-%20Ticket%20-%20Esenzioni",
-   "controllata": "2026-11-04",
+   "controllata": "2026-11-05",
    "http": 200,
    "finale": "https://www.asuit.tn.it/",
    "file": "ticket-farmaci/38a37c8ad3f4.txt",
