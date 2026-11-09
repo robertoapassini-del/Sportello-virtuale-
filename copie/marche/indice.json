@@ -1,74 +1,149 @@
 {
  "regione": "marche",
- "aggiornato": "2026-11-08T03:45:28.891Z",
+ "aggiornato": "2026-11-09T03:42:03.431Z",
  "pagine": [
   {
    "asl": "pesaro-urbino",
    "url": "https://www.astpu.marche.it/it",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "pesaro-urbino/e53107cf0668.txt",
    "titolo": "AST Pesaro Urbino",
    "sha": "278d0fad5f557b8d1e17ff16e9201c778410d4103cd8ed12093211f60939d48c",
    "caratteri": 6219,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "pesaro-urbino",
    "url": "https://www.astpu.marche.it/it/strutture/guardia-medica-continuita-assistenziale?sort=materializedName",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "pesaro-urbino/3d5819a831ee.txt",
    "titolo": "Guardia medica / Continuità assistenziale",
    "sha": "e92a91dc6628ff3d04d2c1247c1d0fc9764e6c6f2e69b95500f68dec7a4eab82",
    "caratteri": 2774,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "pesaro-urbino",
    "url": "https://www.astpu.marche.it/it/strutture/uffici-amministrativi/punto-unico-di-accesso-pua-pesaro",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "pesaro-urbino/12e66042a80f.txt",
    "titolo": "Punto Unico di Accesso (PUA) - Pesaro",
    "sha": "89f3db738719f4a726019bcd40c24514379e7cb8cb4e6129f9be8c3ea5dcdece",
    "caratteri": 4897,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "pesaro-urbino",
    "url": "https://www.astpu.marche.it/it/servizi-e-prestazioni/sportelli-front-office/anagrafe-sanitaria",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "pesaro-urbino/5fd0ad50f77a.txt",
    "titolo": "Anagrafe Sanitaria",
    "sha": "98e14c12c8a49068345267e37370ad64a3c72f967f0d99d3378c4de9f61d04f0",
    "caratteri": 5298,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "pesaro-urbino",
    "url": "https://www.astpu.marche.it/it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "pesaro-urbino/b31a1ce5459d.txt",
    "titolo": "Telefono e posta elettronica",
    "sha": "083f6c0a4623ecfef0d6df75c9ac7a27139d7b15c593024661497cdbec5a2e1d",
    "caratteri": 5318,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "pesaro-urbino",
    "url": "https://www.astpu.marche.it/it/come-fare-per/prenotare-disdire-o-spostare-una-visita-esame-diagnostico",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "pesaro-urbino/e086e0a89b7e.txt",
+   "titolo": "Prenotare, disdire o spostare una visita/esame diagnostico",
+   "sha": "8f42a1d7dfcf70bd5654b0ed5088a2f3898b83e580619c8221ffea6b99739410",
+   "caratteri": 3781,
+   "cambiata": false
+  },
+  {
+   "asl": "pesaro-urbino",
+   "url": "https://www.astpu.marche.it/it/organizzazione/ufficio-relazioni-con-il-pubblico",
+   "controllata": "2026-11-09",
+   "browser": true,
+   "http": 200,
+   "file": "pesaro-urbino/90e5ce90a0b4.txt",
+   "titolo": "Ufficio Relazioni con il Pubblico",
+   "sha": "a84e0981f096f17313248b2befca67551a0bbb8571ea36996a510f58c341528e",
+   "caratteri": 5008,
+   "cambiata": false
+  },
+  {
+   "asl": "pesaro-urbino",
+   "url": "https://www.astpu.marche.it/it/servizi-e-prestazioni/prevenzione-e-vaccini/screening-per-la-prevenzione-dei-tumori",
+   "controllata": "2026-11-09",
+   "browser": true,
+   "http": 200,
+   "file": "pesaro-urbino/3a938bf5550a.txt",
+   "titolo": "Screening per la prevenzione dei tumori",
+   "sha": "e680af775b3e59a69f866abec0b9d15e16879fe64bf617a013b5e2270fdddade",
+   "caratteri": 5263,
+   "cambiata": true
+  },
+  {
+   "asl": "pesaro-urbino",
+   "url": "https://www.astpu.marche.it/it/organizzazione/uffici-di-staff/urp-e-comunicazione",
+   "controllata": "2026-11-09",
+   "browser": true,
+   "http": 200,
+   "file": "pesaro-urbino/5c2860425ba4.txt",
+   "titolo": "Urp e Comunicazione",
+   "sha": "c3554eb3481102e3ceab5bf640841a29094836f1f83fec1edd5c34bb0d52b06c",
+   "caratteri": 6894,
+   "cambiata": true
+  },
+  {
+   "asl": "pesaro-urbino",
+   "url": "https://www.astpu.marche.it/it/strutture/uffici-amministrativi",
+   "controllata": "2026-11-09",
+   "browser": true,
+   "http": 200,
+   "finale": "https://www.astpu.marche.it/it/strutture/uffici-amministrativi?sort=materializedName",
+   "file": "pesaro-urbino/d8d17600e492.txt",
+   "titolo": "Uffici e sportelli aperti al pubblico",
+   "sha": "0063e002522f477985396ba52eb6dc04be1e80b965725434ed66e1d7348ed0a1",
+   "caratteri": 2711,
+   "cambiata": true
+  },
+  {
+   "asl": "pesaro-urbino",
+   "url": "https://www.astpu.marche.it/it/utenti/prestatori-di-cura",
+   "controllata": "2026-11-09",
+   "browser": true,
+   "http": 200,
+   "finale": "https://www.astpu.marche.it/it/utenti/prestatori-di-cura?sort=-createdAt",
+   "file": "pesaro-urbino/179629432be3.txt",
+   "titolo": "Prestatori di cura",
+   "sha": "3bd085524cbd861238ff48af2eedc31170d8b9313b3a56ed0d3b7746fa65a49d",
+   "caratteri": 2920,
+   "cambiata": true
+  },
+  {
+   "asl": "pesaro-urbino",
+   "url": "https://www.astpu.marche.it/come-fare-per/prenotare-disdire-o-spostare-una-visita-esame-diagnostico",
+   "controllata": "2026-11-09",
+   "browser": true,
+   "http": 200,
+   "finale": "https://www.astpu.marche.it/it/come-fare-per/prenotare-disdire-o-spostare-una-visita-esame-diagnostico",
+   "file": "pesaro-urbino/3701f447d9b1.txt",
    "titolo": "Prenotare, disdire o spostare una visita/esame diagnostico",
    "sha": "8f42a1d7dfcf70bd5654b0ed5088a2f3898b83e580619c8221ffea6b99739410",
    "caratteri": 3781,
@@ -76,83 +151,8 @@
   },
   {
    "asl": "pesaro-urbino",
-   "url": "https://www.astpu.marche.it/it/organizzazione/ufficio-relazioni-con-il-pubblico",
-   "controllata": "2026-11-08",
-   "browser": true,
-   "http": 200,
-   "file": "pesaro-urbino/90e5ce90a0b4.txt",
-   "titolo": "Ufficio Relazioni con il Pubblico",
-   "sha": "a84e0981f096f17313248b2befca67551a0bbb8571ea36996a510f58c341528e",
-   "caratteri": 5008,
-   "cambiata": true
-  },
-  {
-   "asl": "pesaro-urbino",
-   "url": "https://www.astpu.marche.it/it/servizi-e-prestazioni/prevenzione-e-vaccini/screening-per-la-prevenzione-dei-tumori",
-   "controllata": "2026-11-08",
-   "browser": true,
-   "http": 200,
-   "file": "pesaro-urbino/3a938bf5550a.txt",
-   "titolo": "Screening per la prevenzione dei tumori",
-   "sha": "5c5292f4e1fbf02b7f141a4eae74c96f2cf5bcdf6f8461c5a480fadbda5d197b",
-   "caratteri": 5263,
-   "cambiata": true
-  },
-  {
-   "asl": "pesaro-urbino",
-   "url": "https://www.astpu.marche.it/it/organizzazione/uffici-di-staff/urp-e-comunicazione",
-   "controllata": "2026-11-08",
-   "browser": true,
-   "http": 200,
-   "file": "pesaro-urbino/5c2860425ba4.txt",
-   "titolo": "Urp e Comunicazione",
-   "sha": "09b1d2b943684fbd9ebf9964f3fc89451acfbbef8b17fa19dff2bd793de59b1a",
-   "caratteri": 6894,
-   "cambiata": true
-  },
-  {
-   "asl": "pesaro-urbino",
-   "url": "https://www.astpu.marche.it/it/strutture/uffici-amministrativi",
-   "controllata": "2026-11-08",
-   "browser": true,
-   "http": 200,
-   "finale": "https://www.astpu.marche.it/it/strutture/uffici-amministrativi?sort=materializedName",
-   "file": "pesaro-urbino/d8d17600e492.txt",
-   "titolo": "Uffici e sportelli aperti al pubblico",
-   "sha": "f22ec4688a62847328ebd1178e88d3dc40eb0cf12b52bec7b0c013a08970f9e9",
-   "caratteri": 2711,
-   "cambiata": true
-  },
-  {
-   "asl": "pesaro-urbino",
-   "url": "https://www.astpu.marche.it/it/utenti/prestatori-di-cura",
-   "controllata": "2026-11-08",
-   "browser": true,
-   "http": 200,
-   "finale": "https://www.astpu.marche.it/it/utenti/prestatori-di-cura?sort=-createdAt",
-   "file": "pesaro-urbino/179629432be3.txt",
-   "titolo": "Prestatori di cura",
-   "sha": "c832b9c8622c1c3226ee478ca4105c9dee207ec2fc4fdc552aa7f488e4515df5",
-   "caratteri": 2920,
-   "cambiata": true
-  },
-  {
-   "asl": "pesaro-urbino",
-   "url": "https://www.astpu.marche.it/come-fare-per/prenotare-disdire-o-spostare-una-visita-esame-diagnostico",
-   "controllata": "2026-11-08",
-   "browser": true,
-   "http": 200,
-   "finale": "https://www.astpu.marche.it/it/come-fare-per/prenotare-disdire-o-spostare-una-visita-esame-diagnostico",
-   "file": "pesaro-urbino/3701f447d9b1.txt",
-   "titolo": "Prenotare, disdire o spostare una visita/esame diagnostico",
-   "sha": "b6b927aa4854aaf4db4c2e4133af3bbcdfbe78cad7a3c1b8fba0ee0f4667c0ee",
-   "caratteri": 3781,
-   "cambiata": true
-  },
-  {
-   "asl": "pesaro-urbino",
    "url": "https://www.astpu.marche.it/come-fare-per/prenotare-il-prelievo-del-sangue-o-consegnare-il-campione-biologico",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "finale": "https://www.astpu.marche.it/it/come-fare-per/prenotare-il-prelievo-del-sangue-o-consegnare-il-campione-biologico",
@@ -160,12 +160,12 @@
    "titolo": "Prenotare il prelievo del sangue o consegnare il campione biologico",
    "sha": "1be57ac8c789797bc2d3ef91a6bf1d88a38b98816fa61c8f4c269eff0b04e1f7",
    "caratteri": 2713,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "pesaro-urbino",
    "url": "https://www.astpu.marche.it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "finale": "https://www.astpu.marche.it/it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica",
@@ -173,12 +173,12 @@
    "titolo": "Telefono e posta elettronica",
    "sha": "8ae99d2802bd8569efbcf55f532efd9cfd5a7a0fd0f2fad31293dff059891bc4",
    "caratteri": 5318,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "pesaro-urbino",
    "url": "https://www.astpu.marche.it/organizzazione/ufficio-relazioni-con-il-pubblico",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "finale": "https://www.astpu.marche.it/it/organizzazione/ufficio-relazioni-con-il-pubblico",
@@ -186,24 +186,24 @@
    "titolo": "Ufficio Relazioni con il Pubblico",
    "sha": "6b1b44d8f1addff76228961a674d2f50babaa5e4b1e93140ab48c6245b5abcba",
    "caratteri": 5008,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "pesaro-urbino",
    "url": "https://www.astpu.marche.it/it/come-fare-per/richiedere-la-copia-della-cartella-clinica",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "pesaro-urbino/64da6e471cb6.txt",
    "titolo": "Richiedere la copia della cartella clinica",
    "sha": "c2d0be1546ec80f00b5c972e4f772addf07095ff5f8fb268abed15a4b0598323",
    "caratteri": 3746,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "pesaro-urbino",
    "url": "https://www.regione.marche.it/ars/Settori/Territorio-e-Integrazione-sociosanitaria/Tempi-di-attesa-prestazioni-specialistiche",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "http": 200,
    "file": "pesaro-urbino/afe6ab8f30b5.txt",
    "titolo": "Tempi di attesa prestazioni specialistiche",
@@ -336,7 +336,7 @@
   {
    "asl": "ancona",
    "url": "https://www.astancona.marche.it",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "finale": "https://www.astancona.marche.it/it",
@@ -349,7 +349,7 @@
   {
    "asl": "ancona",
    "url": "https://www.astancona.marche.it/it/servizi-e-prestazioni/servizi-territoriali/servizio-di-continuita-assistenziale",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "ancona/e18b39f675a5.txt",
@@ -361,7 +361,7 @@
   {
    "asl": "ancona",
    "url": "https://www.astancona.marche.it/it/servizi-e-prestazioni/servizi-territoriali/punto-unico-di-accesso-pua",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "ancona/b4c20b9cfa6c.txt",
@@ -373,7 +373,7 @@
   {
    "asl": "ancona",
    "url": "https://www.astancona.marche.it/it/come-fare-per/scegliere-cambiare-un-medico-di-medicina-generale-o-pediatra-di-libera-scelta",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "ancona/3ebf14e33302.txt",
@@ -385,7 +385,7 @@
   {
    "asl": "ancona",
    "url": "https://www.astancona.marche.it/it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "ancona/1938833274fe.txt",
@@ -397,7 +397,7 @@
   {
    "asl": "ancona",
    "url": "https://www.astancona.marche.it/it/organizzazione/centro-unico-prenotazioni",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "ancona/ec1120644b09.txt",
@@ -409,7 +409,7 @@
   {
    "asl": "ancona",
    "url": "https://www.astancona.marche.it/it/organizzazione/unita-operativa-complessa/comunicazione-formazione-e-urp",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "ancona/1d041baa2337.txt",
@@ -421,7 +421,7 @@
   {
    "asl": "ancona",
    "url": "https://www.astancona.marche.it/it/servizi-e-prestazioni/servizi-territoriali/cure-domiciliari-distretto-ancona",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "ancona/c58e3577c64e.txt",
@@ -433,7 +433,7 @@
   {
    "asl": "ancona",
    "url": "https://www.astancona.marche.it/it/servizi-e-prestazioni/screening/screening-oncologici-diagnosi-precoce-del-tumore-della-mammella",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "ancona/68de5b10ca14.txt",
@@ -445,7 +445,7 @@
   {
    "asl": "ancona",
    "url": "https://www.astancona.marche.it/it/come-fare-per/prenotare-visite-ed-esami",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "ancona/7249a8c04156.txt",
@@ -457,7 +457,7 @@
   {
    "asl": "ancona",
    "url": "https://www.astancona.marche.it/it/servizi-e-prestazioni/servizi-territoriali",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "finale": "https://www.astancona.marche.it/it/servizi-e-prestazioni/servizi-territoriali?sort=-createdAt",
@@ -465,12 +465,12 @@
    "titolo": "Servizi Territoriali",
    "sha": "ccb3a01ddb64e89ea39af75405cb14a220ee2e1816c8051a6ba19e6430c3423e",
    "caratteri": 4662,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ancona",
    "url": "https://www.astancona.marche.it/argomenti/cure-domiciliari",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "finale": "https://www.astancona.marche.it/it/argomenti/cure-domiciliari?sort=-createdAt",
@@ -483,7 +483,7 @@
   {
    "asl": "ancona",
    "url": "https://www.astancona.marche.it/argomenti/continuita-assistenziale-ex-guardia-medica",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "finale": "https://www.astancona.marche.it/it/argomenti/continuita-assistenziale-ex-guardia-medica?sort=-createdAt",
@@ -496,7 +496,7 @@
   {
    "asl": "ancona",
    "url": "https://www.astancona.marche.it/ast-comunica/notizie/zerocoda-esami-di-laboratorio-sistema-online-della-regione-marche-per-prenotare-prelievi-ematici-da-pc-o-mobile",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "finale": "https://www.astancona.marche.it/it/ast-comunica/notizie/zerocoda-esami-di-laboratorio-sistema-online-della-regione-marche-per-prenotare-prelievi-ematici-da-pc-o-mobile",
@@ -509,7 +509,7 @@
   {
    "asl": "ancona",
    "url": "https://www.astancona.marche.it/come-fare-per/prenotare-visite-ed-esami",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "finale": "https://www.astancona.marche.it/it/come-fare-per/prenotare-visite-ed-esami",
@@ -522,7 +522,7 @@
   {
    "asl": "ancona",
    "url": "https://www.astancona.marche.it/come-fare-per/prenotare-una-visita-presso-la-commissione-medica-locale-patenti",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "finale": "https://www.astancona.marche.it/it/come-fare-per/prenotare-una-visita-presso-la-commissione-medica-locale-patenti",
@@ -530,12 +530,12 @@
    "titolo": "Prenotare una visita presso la Commissione Medica Locale Patenti",
    "sha": "7e7561d42ed3eb260e65e371f19b24ea07f4d6b8cbda8f382e0d7ecaa3683bb2",
    "caratteri": 3475,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ancona",
    "url": "https://www.astancona.marche.it/ast-comunica/notizie/rimodulazione-orari-pua-di-jesi",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "finale": "https://www.astancona.marche.it/it/ast-comunica/notizie/rimodulazione-orari-pua-di-jesi",
@@ -548,7 +548,7 @@
   {
    "asl": "ancona",
    "url": "https://www.astancona.marche.it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "finale": "https://www.astancona.marche.it/it/amministrazione-trasparente/organizzazione/telefono-e-posta-elettronica",
@@ -561,7 +561,7 @@
   {
    "asl": "ancona",
    "url": "https://www.astancona.marche.it/organizzazione/centro-unico-prenotazioni",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "finale": "https://www.astancona.marche.it/it/organizzazione/centro-unico-prenotazioni",
@@ -574,7 +574,7 @@
   {
    "asl": "ancona",
    "url": "https://www.astancona.marche.it/organizzazione/ufficio-relazioni-con-il-pubblico",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "finale": "https://www.astancona.marche.it/it/organizzazione/ufficio-relazioni-con-il-pubblico",
@@ -587,7 +587,7 @@
   {
    "asl": "ancona",
    "url": "https://www.astancona.marche.it/it/servizi-e-prestazioni/sportelli-front-office/sportello-anagrafe-assistiti",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "ancona/6d2d67d3d702.txt",
@@ -599,7 +599,7 @@
   {
    "asl": "ancona",
    "url": "https://www.astancona.marche.it/it/amministrazione-trasparente/servizi-erogati/liste-di-attesa/liste-di-attesa-servizi-ambulatoriali",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "ancona/511063bea07c.txt",
@@ -617,26 +617,26 @@
   {
    "asl": "ancona",
    "url": "https://www.regione.marche.it/ars/Settori/Territorio-e-Integrazione-sociosanitaria/Tempi-di-attesa-prestazioni-specialistiche",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "http": 200,
    "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "macerata",
    "url": "https://www.astmc.marche.it/it",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "macerata/3d747ab10995.txt",
    "titolo": "AST Macerata",
    "sha": "901ce43790430d95f081ba5be957851cdbf8ab0219c8a9cbad28e2d6c9a5aabc",
    "caratteri": 3675,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "macerata",
    "url": "https://www.astmc.marche.it/it/servizi-e-prestazioni/sportelli-front-office/sedi-anagrafe-prenotazioni-cassa",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "macerata/f012ad894d81.txt",
@@ -648,7 +648,7 @@
   {
    "asl": "macerata",
    "url": "https://www.astmc.marche.it/it/contatti",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "macerata/d7e568e84c9c.txt",
@@ -660,7 +660,7 @@
   {
    "asl": "macerata",
    "url": "https://www.astmc.marche.it/it/ast-comunica/notizie/attenzione-sms-fraudolenti-a-nome-del-cup-marche",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "macerata/b78172b36a84.txt",
@@ -672,31 +672,31 @@
   {
    "asl": "macerata",
    "url": "https://www.astmc.marche.it/it/organizzazione/unita-operativa-complessa/ufficio-relazioni-con-il-pubblico-urp",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "macerata/89d6129266bc.txt",
    "titolo": "Ufficio Relazioni con il Pubblico (URP)",
-   "sha": "5e8cceda651e7d1e9c8d148f5d781e7666eb27c24d2630bf25e061f4d7573667",
-   "caratteri": 4618,
+   "sha": "c5358a73fb5f77716b3cd530c78dfcb3514a85fc075fc8e69532b75ce54fe395",
+   "caratteri": 4620,
    "cambiata": true
   },
   {
    "asl": "macerata",
    "url": "https://www.astmc.marche.it/it/organizzazione/unita-operativa-complessa/uoc-organizzazione-dei-servizi-sanitari-di-base-distretto-macerata",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "macerata/37e082ad2d3f.txt",
    "titolo": "UOC Organizzazione dei Servizi Sanitari di Base DISTRETTO MACERATA",
    "sha": "2aedb2f3e537768eae2f3ace140df0ab96f01aa5c8daf814ffe7c86d63c4dfb0",
    "caratteri": 18690,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "macerata",
    "url": "https://www.astmc.marche.it/it/organizzazione/unita-operativa-semplice-dipartimentale/uosd-screening-oncologici",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "macerata/5556b3a250f4.txt",
@@ -708,7 +708,7 @@
   {
    "asl": "macerata",
    "url": "https://www.astmc.marche.it/it/organizzazione/ufficio-relazioni-con-il-pubblico",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "macerata/c6a7df1a553e.txt",
@@ -720,7 +720,7 @@
   {
    "asl": "macerata",
    "url": "https://www.astmc.marche.it/it/strutture/altre-strutture",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "finale": "https://www.astmc.marche.it/it/strutture/altre-strutture?sort=materializedName",
@@ -728,12 +728,12 @@
    "titolo": "Altre strutture",
    "sha": "01a298fb7b3347dabc4f1efd7793a12ae32b2ae73391f78df426236156544874",
    "caratteri": 2850,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "macerata",
    "url": "https://www.astmc.marche.it/ast-comunica/notizie/da-venerdi-16-ottobre-la-guardia-medica-sara-attiva-presso-la-casa-di-comunita-di-corridonia",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "finale": "https://www.astmc.marche.it/it/ast-comunica/notizie/da-venerdi-16-ottobre-la-guardia-medica-sara-attiva-presso-la-casa-di-comunita-di-corridonia",
@@ -741,12 +741,12 @@
    "titolo": "Da venerdì 16 ottobre la Guardia Medica sarà attiva presso la Casa di Comunità di Corridonia",
    "sha": "7196b1d4b43fb0b2f7882c36f9a475d3da398fc877099c3b68b15f2b455f2458",
    "caratteri": 3494,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "macerata",
    "url": "https://www.astmc.marche.it/ast-comunica/comunicati-stampa/nuovo-percorso-cup-per-pazienti-maculopatici-all-ospedale-di-san-severino",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "finale": "https://www.astmc.marche.it/it/ast-comunica/comunicati-stampa/nuovo-percorso-cup-per-pazienti-maculopatici-all-ospedale-di-san-severino",
@@ -754,12 +754,12 @@
    "titolo": "Nuovo percorso CUP per pazienti maculopatici all’Ospedale di San Severino",
    "sha": "6b3b2ca55a88057cf75b9472afb9e019037acc57f87808af9f0cc045145830d6",
    "caratteri": 4824,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "macerata",
    "url": "https://www.astmc.marche.it/argomenti/cure-domiciliari",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "finale": "https://www.astmc.marche.it/it/argomenti/cure-domiciliari?sort=-createdAt",
@@ -767,12 +767,12 @@
    "titolo": "Cure domiciliari",
    "sha": "f805193f474cda5440115087e75af388ca421290eefeda1479b8ad75f5441d64",
    "caratteri": 2569,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "macerata",
    "url": "https://www.astmc.marche.it/organizzazione/ufficio-relazioni-con-il-pubblico",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "finale": "https://www.astmc.marche.it/it/organizzazione/ufficio-relazioni-con-il-pubblico",
@@ -780,38 +780,38 @@
    "titolo": "UFFICIO RELAZIONI CON IL PUBBLICO",
    "sha": "1893dd7838caebf537330657dfe8f806c5646c106792bcc4de867cb1a51eb76e",
    "caratteri": 4096,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "macerata",
    "url": "https://www.astmc.marche.it/it/come-fare-per/richiedere-cartelle-cliniche",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "macerata/9dc022db6de8.txt",
    "titolo": "RICHIEDERE CARTELLE CLINICHE",
    "sha": "a9343db0acddaa0d24c4989830a8f140c6c69c61f5cad033a00c76b585997356",
    "caratteri": 2237,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "macerata",
    "url": "https://www.regione.marche.it/ars/Settori/Territorio-e-Integrazione-sociosanitaria/Tempi-di-attesa-prestazioni-specialistiche",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "http": 200,
    "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "macerata",
    "url": "https://www.regione.marche.it/Regione-Utile/Salute/Screening-oncologici",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "http": 200,
    "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "fermo",
    "url": "https://www.astfm.marche.it",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "finale": "https://www.astfm.marche.it/it",
@@ -819,12 +819,12 @@
    "titolo": "AST Fermo",
    "sha": "0370a542b0070b63242b9af492a1bed9a5e101d44b851120548e51b36a6f8028",
    "caratteri": 3719,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "fermo",
    "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/visite-e-prestazioni-specialistiche/guardia-medica-turistica",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "fermo/2cc9bc7ed199.txt",
@@ -836,7 +836,7 @@
   {
    "asl": "fermo",
    "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/sportelli-front-office/p-u-a",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "fermo/f9defd5a982b.txt",
@@ -848,7 +848,7 @@
   {
    "asl": "fermo",
    "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/sportelli-front-office/anagrafe-assistiti",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "fermo/b91d1a416128.txt",
@@ -860,7 +860,7 @@
   {
    "asl": "fermo",
    "url": "https://www.astfm.marche.it/it/organizzazione/centro-unico-prenotazioni",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "fermo/25bbb56771b6.txt",
@@ -872,7 +872,7 @@
   {
    "asl": "fermo",
    "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/sportelli-front-office/sportelli-cup-presidio-ospedaliero-fermo",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "fermo/729dbd937658.txt",
@@ -884,19 +884,19 @@
   {
    "asl": "fermo",
    "url": "https://www.astfm.marche.it/it/organizzazione/uffici-di-staff/urp",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "fermo/e91cdc7ba5f5.txt",
    "titolo": "URP",
-   "sha": "91ffd7e4bce963d548b0ab74535de76b315c7d182c3dbda69562e7f4f6ad17fb",
-   "caratteri": 5350,
-   "cambiata": false
+   "sha": "d31a55ea24a9f719de406a3eb1a38655f417aaa1fb6f5cf193aa0b442c7be5ea",
+   "caratteri": 5348,
+   "cambiata": true
   },
   {
    "asl": "fermo",
    "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/servizi-domiciliari/cure-domiciliari",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "fermo/655130c0f67b.txt",
@@ -908,19 +908,19 @@
   {
    "asl": "fermo",
    "url": "https://www.astfm.marche.it/it/organizzazione/unita-operativa-semplice-dipartimentale/screening-oncologici",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "fermo/5319a9a16f31.txt",
    "titolo": "Screening Oncologici",
-   "sha": "0bbd17c2370628fe635f9e2a9b17a29564a554705e42c78d5845f7639de93753",
-   "caratteri": 3304,
+   "sha": "510e509f6d2075974933888d54fdf4a153c9e357a73c51a5848baca3bca9e184",
+   "caratteri": 3302,
    "cambiata": true
   },
   {
    "asl": "fermo",
    "url": "https://www.astfm.marche.it/it/organizzazione/ufficio-relazioni-con-il-pubblico",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "fermo/fed82508bfed.txt",
@@ -932,7 +932,7 @@
   {
    "asl": "fermo",
    "url": "https://www.astfm.marche.it/it/strutture/altre-strutture/santa-vittoria-in-matenano-sede-continuita-assistenziale",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "fermo/b4838cfaaa33.txt",
@@ -944,7 +944,7 @@
   {
    "asl": "fermo",
    "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/servizi-amministrativi/fascicolo-sanitario-elettronico",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "fermo/93ad46fe4f2d.txt",
@@ -956,7 +956,7 @@
   {
    "asl": "fermo",
    "url": "https://www.astfm.marche.it/argomenti/cure-domiciliari",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "finale": "https://www.astfm.marche.it/it/argomenti/cure-domiciliari?sort=-createdAt",
@@ -969,7 +969,7 @@
   {
    "asl": "fermo",
    "url": "https://www.astfm.marche.it/organizzazione/ufficio-relazioni-con-il-pubblico",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "finale": "https://www.astfm.marche.it/it/organizzazione/ufficio-relazioni-con-il-pubblico",
@@ -982,7 +982,7 @@
   {
    "asl": "fermo",
    "url": "https://www.astfm.marche.it/organizzazione/centro-unico-prenotazioni",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "finale": "https://www.astfm.marche.it/it/organizzazione/centro-unico-prenotazioni",
@@ -995,7 +995,7 @@
   {
    "asl": "fermo",
    "url": "https://www.astfm.marche.it/it/note-legali",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "fermo/3408ff7540cd.txt",
@@ -1007,159 +1007,159 @@
   {
    "asl": "fermo",
    "url": "https://www.regione.marche.it/ars/Settori/Territorio-e-Integrazione-sociosanitaria/Tempi-di-attesa-prestazioni-specialistiche",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "http": 200,
    "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "ascoli-piceno",
    "url": "https://www.astap.marche.it/it",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "ascoli-piceno/1ab10ff0fd99.txt",
    "titolo": "AST Ascoli Piceno",
    "sha": "a6b206b7c222c24aed7596a997d2ebcd83416695a29de9fc0e938f3aa93129b8",
    "caratteri": 5351,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ascoli-piceno",
    "url": "https://www.astap.marche.it/it/come-fare-per/come-prenotare-una-prestazione-con-priorita-urgente-u",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "ascoli-piceno/2c9113fe94ac.txt",
    "titolo": "Come prenotare una prestazione con priorità urgente (U)",
    "sha": "54d648e70af010b340aac3e2d0772c48c0d2d71bcd9345178ec0fc296b971e37",
    "caratteri": 4249,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ascoli-piceno",
    "url": "https://www.astap.marche.it/it/servizi-e-prestazioni/sportelli-front-office/anagrafe-assistiti",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "ascoli-piceno/1c18d66f0ac1.txt",
    "titolo": "ANAGRAFE ASSISTITI",
    "sha": "1dfd59ce6ba5f511fddc22e764c00bef8bcaed606a423c97d68f1827cf3b54b0",
    "caratteri": 9532,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ascoli-piceno",
    "url": "https://www.astap.marche.it/it/come-fare-per/prenotare-disdire-o-spostare-una-visita-esame-diagnostico",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "ascoli-piceno/22f558e05726.txt",
    "titolo": "Prenotare, disdire o spostare una visita/esame diagnostico",
-   "sha": "0fa500697fcfe795236c0c472383a58b12b8ab26c08f9059882c41f7bee0f580",
-   "caratteri": 5157,
+   "sha": "4e406300dead5f92fce9022af84020c609edf40cd74243594fff77641dc1d9b2",
+   "caratteri": 5155,
    "cambiata": true
   },
   {
    "asl": "ascoli-piceno",
    "url": "https://www.astap.marche.it/it/organizzazione/uffici-di-staff/ufficio-relazioni-con-il-pubblico-urp",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "ascoli-piceno/b4fa5a89477a.txt",
    "titolo": "Ufficio relazioni con il Pubblico (URP)",
    "sha": "a2e50d0113b57ef224e6784356c690f6307007b7aa86bcd154358e05471074ba",
    "caratteri": 5652,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ascoli-piceno",
    "url": "https://www.astap.marche.it/it/servizi-e-prestazioni/servizi-domiciliari/adi-assistenza-domiciliare-integrata-ap",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "ascoli-piceno/64f7cbcfbd32.txt",
    "titolo": "ADI - ASSISTENZA DOMICILIARE INTEGRATA - AP",
    "sha": "978872d610421e24dbc43a9b1947822a820b64838b3d258bc5d68e11a604306d",
    "caratteri": 9485,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ascoli-piceno",
    "url": "https://www.astap.marche.it/it/servizi-e-prestazioni/servizi-domiciliari/adi-assistenza-domiciliare-integrata-sbt",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "ascoli-piceno/23ee40d1e0d1.txt",
    "titolo": "ADI - ASSISTENZA DOMICILIARE INTEGRATA - SBT",
    "sha": "baea1f0902f3e0557ed2ef0008a6d8686f433967562e38e3dac2bfb1b1e350c0",
    "caratteri": 9529,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ascoli-piceno",
    "url": "https://www.astap.marche.it/it/servizi-e-prestazioni/screening/screening-oncologici",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "ascoli-piceno/305e4d49df06.txt",
    "titolo": "SCREENING ONCOLOGICI",
    "sha": "4680faa91abb73b0e91820fb96b98e10e24e107930aa086bb1ad836659959870",
    "caratteri": 5887,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ascoli-piceno",
    "url": "https://www.astap.marche.it/it/servizi-e-prestazioni/sportelli-front-office/centro-unico-prenotazioni",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "ascoli-piceno/f2534ada171d.txt",
    "titolo": "Centro Unico Prenotazioni",
    "sha": "bfd298de74d772d60a2957fb577bbfb1d3be4a4c317d88fa0fd8efaf5a3f86aa",
    "caratteri": 7558,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ascoli-piceno",
    "url": "https://www.astap.marche.it/it/organizzazione/unita-operativa-complessa/uoc-cure-primarie",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "ascoli-piceno/bae3369e1cf7.txt",
    "titolo": "UOC Cure Primarie",
    "sha": "9ac108218191a69b5c54433b73fcc41e549eea3ae8a1bfe768d7356e03d2a04d",
    "caratteri": 4803,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ascoli-piceno",
    "url": "https://www.astap.marche.it/it/organizzazione/unita-operativa-complessa/uoc-distretto-di-ascoli-piceno",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "ascoli-piceno/2ad480175639.txt",
    "titolo": "UOC Distretto di Ascoli Piceno",
-   "sha": "9963783e3ca71218c66fb340d7c5e1f424aea6649f6c7c7f44d8c778e1418b12",
+   "sha": "0bfbccc8b2cd84546f0a5f3b6231329e8f12c7d1074ce3342a0ed2dfe72287e2",
    "caratteri": 4357,
    "cambiata": true
   },
   {
    "asl": "ascoli-piceno",
    "url": "https://www.astap.marche.it/organizzazione/ufficio-relazioni-con-il-pubblico",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "finale": "https://www.astap.marche.it/it/organizzazione/ufficio-relazioni-con-il-pubblico",
    "file": "ascoli-piceno/c371cf5ed249.txt",
    "titolo": "Ufficio Relazioni con il Pubblico",
-   "sha": "f9f698c8930c3d06d70a471a53fe2c022b350b51923dc649c800d10fadf6aa3f",
+   "sha": "da652d5f0d31c0551be47a0d79434b0ee157a49a35e729385e887ec00ce42340",
    "caratteri": 10120,
    "cambiata": true
   },
   {
    "asl": "ascoli-piceno",
    "url": "https://www.astap.marche.it/organizzazione/centro-unico-prenotazioni",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "finale": "https://www.astap.marche.it/it/organizzazione/centro-unico-prenotazioni",
@@ -1167,67 +1167,67 @@
    "titolo": "Centro Unico Prenotazioni",
    "sha": "827dc1ff2fc6877d644f1f34387cad478fda7b2c91bcb147ed5c69c982431006",
    "caratteri": 7526,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ascoli-piceno",
    "url": "https://www.astap.marche.it/it/servizi-e-prestazioni/sportelli-front-office/ufficio-cartelle-cliniche",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "ascoli-piceno/3c0041753c2f.txt",
    "titolo": "Ufficio Cartelle Cliniche",
    "sha": "08563682b1efa0360170c1768eb2b7edc58923808b85e115daf605f72b436d10",
    "caratteri": 8827,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ascoli-piceno",
    "url": "https://www.astap.marche.it/it/organizzazione/unita-operativa-semplice-dipartimentale/uosd-screening",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "ascoli-piceno/0b792a88254f.txt",
    "titolo": "UOSD Screening",
    "sha": "4cd7524c43d8311a5fc96f83a053a40f88287e61c6f22eda0591a771f0c704ae",
    "caratteri": 3729,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ascoli-piceno",
    "url": "https://www.astap.marche.it/it/amministrazione-trasparente/servizi-erogati/liste-di-attesa",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "ascoli-piceno/bc178799cd21.txt",
    "titolo": "Liste di attesa",
    "sha": "5996ef02a6f1aa491825432311c92c8bf505c46446cb7f38e9228f8220a5731a",
    "caratteri": 6283,
-   "cambiata": true
+   "cambiata": false
   },
   {
    "asl": "ascoli-piceno",
    "url": "https://www.regione.marche.it/ars/Settori/Territorio-e-Integrazione-sociosanitaria/Tempi-di-attesa-prestazioni-specialistiche",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "http": 200,
    "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "ascoli-piceno",
    "url": "https://www.astap.marche.it/it/servizi-e-prestazioni/servizi-amministrativi/liste-di-attesa",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "ascoli-piceno/1ec99f9e2c67.txt",
    "titolo": "LISTE DI ATTESA",
-   "sha": "1f75e941c6a6097bce8b022ce0cc6f31815ce9b88070ed94038f35a8959f3ae4",
+   "sha": "ca8a5ef76c0fb36d86668219ba1d16042457a2d1255349f2086f055e9e00fec6",
    "caratteri": 3857,
    "cambiata": true
   },
   {
    "asl": "regole",
    "url": "https://www.astfm.marche.it/it/servizi-e-prestazioni/servizi-amministrativi/fascicolo-sanitario-elettronico",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "file": "regole/93ad46fe4f2d.txt",
@@ -1239,7 +1239,7 @@
   {
    "asl": "inps-marche",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.030000.030000-elencoStruttureInps.html",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "http": 200,
    "file": "inps-marche/afa97d94c733.txt",
    "titolo": "Portale Inps - Ancona",
@@ -1250,7 +1250,7 @@
   {
    "asl": "inps-marche",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.060000.060000-elencoStruttureInps.html",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "http": 200,
    "file": "inps-marche/495a3edb2803.txt",
    "titolo": "Portale Inps - Ascoli Piceno",
@@ -1261,7 +1261,7 @@
   {
    "asl": "inps-marche",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.060001.060001-elencoStruttureInps.html",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "http": 200,
    "file": "inps-marche/9a44f19a1fd3.txt",
    "titolo": "Portale Inps - Fermo",
@@ -1272,7 +1272,7 @@
   {
    "asl": "inps-marche",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.440000.440000-elencoStruttureInps.html",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "http": 200,
    "file": "inps-marche/09d8662c3c66.txt",
    "titolo": "Portale Inps - Macerata",
@@ -1283,7 +1283,7 @@
   {
    "asl": "inps-marche",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.590000.590000-elencoStruttureInps.html",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "http": 200,
    "file": "inps-marche/a2fd5f9de661.txt",
    "titolo": "Portale Inps - Pesaro",
@@ -1294,7 +1294,7 @@
   {
    "asl": "inps-marche",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.038000.038000-elencoStruttureInps.html",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "http": 200,
    "file": "inps-marche/8290ac49bb8e.txt",
    "titolo": "Portale Inps - Marche",
@@ -1305,7 +1305,7 @@
   {
    "asl": "inps-marche",
    "url": "https://www.disabilita.governo.it/it/notizie/individuate-le-9-province-per-sperimentare-la-riforma-disabilita/",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "http": 200,
    "file": "inps-marche/4016319a363c.txt",
    "titolo": "Individuate le 9 province per sperimentare la riforma disabilità",
@@ -1316,7 +1316,7 @@
   {
    "asl": "inps-marche",
    "url": "https://www.disabilita.governo.it/it/notizie/individuate-le-altre-11-province-per-la-sperimentazione-della-riforma-della-disabilita/",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "http": 200,
    "file": "inps-marche/49a147b501cb.txt",
    "titolo": "Individuate le altre 11 province per la sperimentazione della riforma della disabilità",
@@ -1327,7 +1327,7 @@
   {
    "asl": "inps-marche",
    "url": "https://www.disabilita.governo.it/it/notizie/al-via-sperimentazione-riforma-disabilita-in-altre-40-province/",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "http": 200,
    "file": "inps-marche/cb8037740243.txt",
    "titolo": "Al via sperimentazione riforma disabilità in altre 40 province",
@@ -1338,7 +1338,7 @@
   {
    "asl": "inps-marche",
    "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "http": 200,
    "file": "inps-marche/aad63b63390a.txt",
    "titolo": "Portale Inps - Riforma della disabilità: al via la terza fase sperimentale",
@@ -1349,84 +1349,84 @@
   {
    "asl": "regione-marche",
    "url": "https://www.regione.marche.it/Regione-Utile/Salute",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "http": 200,
    "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "regione-marche",
    "url": "https://www.regione.marche.it/Regione-Utile/Salute/Servizi-delle-AST",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "http": 200,
    "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "regione-marche",
    "url": "https://www.regione.marche.it/Regione-Utile/Salute/Strumenti-di-accesso-a-myCUPMarche",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "http": 200,
    "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "regione-marche",
    "url": "https://www.regione.marche.it/Entra-in-Regione/URP/La-Regione-risponde/Faq/Post/86528/Come-posso-prenotare-una-prestazione-sanitaria-on-line-tramite-il-portale-o-l-App-MyCupMarche",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "http": 200,
    "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "regione-marche",
    "url": "https://www.regione.marche.it/News-ed-Eventi/Post/111991/CUP-Marche-occhio-alle-truffe",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "http": 200,
    "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "regione-marche",
    "url": "https://www.regione.marche.it/News-ed-Eventi/Post/112848/Attenzione-a-falsi-SMS-e-chiamate-da-numeri-che-iniziano-per-899-e-si-spacciano-per-il-servizio-CUP-non-rispondere-n%C3%A9-richiamare",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "http": 200,
    "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "regione-marche",
    "url": "https://www.regione.marche.it/News-ed-Eventi/Post/112351/Progetto-definitivo-per-la-realizzazione-della-centrale-operativa-regionale-NEA-116117-Numero-europeo-armonizzato-per-cure-mediche-non-urgenti",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "http": 200,
    "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "regione-marche",
    "url": "https://www.regione.marche.it/ars/Aree-di-Attivit%C3%A0/Area-Emergenza",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "http": 200,
    "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "regione-marche",
    "url": "https://www.regione.marche.it/Regione-Utile/Salute/Fascicolo-Sanitario-Elettronico",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "http": 200,
    "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "regione-marche",
    "url": "https://www.regione.marche.it/Entra-in-Regione/URP/La-Regione-risponde/Faq/Post/86533/Cos-%C3%A8-il-Fascicolo-Sanitario-Elettronico",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "http": 200,
    "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "regione-marche",
    "url": "https://www.regione.marche.it/Entra-in-Regione/URP/La-Regione-risponde/Faq/Post/86534/Come-si-accede-al-Fascicolo-Sanitario-Elettronico",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "http": 200,
    "nota": "controllo anti-robot (CAPTCHA): non copiata"
   },
   {
    "asl": "regione-marche",
    "url": "https://fse-classic.sanita.marche.it/web/portal/fascicolo-sanitario-elettronico",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "http": 200,
    "file": "regione-marche/4cd8670f0d70.txt",
    "titolo": "FSE - Portale Sanità - Fascicolo Sanitario Elettronico",
@@ -1437,7 +1437,7 @@
   {
    "asl": "inps-marche",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.590004.590004-elencoStruttureInps.html",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "http": 200,
    "file": "inps-marche/c78676087094.txt",
    "titolo": "Portale Inps - Urbino",
@@ -1448,20 +1448,20 @@
   {
    "asl": "ast-pesaro-urbino",
    "url": "https://www.astpu.marche.it/it/strutture/guardia-medica-continuita-assistenziale",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "browser": true,
    "http": 200,
    "finale": "https://www.astpu.marche.it/it/strutture/guardia-medica-continuita-assistenziale?sort=materializedName",
    "file": "ast-pesaro-urbino/8a137e2be00a.txt",
    "titolo": "Guardia medica / Continuità assistenziale",
-   "sha": "e92a91dc6628ff3d04d2c1247c1d0fc9764e6c6f2e69b95500f68dec7a4eab82",
+   "sha": "a55bb8a6b3c80f4c45969b52d6e46cb4ddbce4ece758f89b9149ffa3ec437e69",
    "caratteri": 2774,
    "cambiata": true
   },
   {
    "asl": "ticket-pronto-soccorso",
    "url": "https://portale.ospedaliriuniti.marche.it/archivio13_reparti_0_289.html",
-   "controllata": "2026-11-08",
+   "controllata": "2026-11-09",
    "http": 200,
    "file": "ticket-pronto-soccorso/252945137e2b.txt",
    "titolo": "Azienda Ospedaliero Universitaria delle Marche - pronto soccorso e medicina d'urgenza",
