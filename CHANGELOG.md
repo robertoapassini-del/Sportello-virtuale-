@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 09/11/2026 — Ricorso invalidità: la pagina principale completa (prova per Google)
+- Search Console (export del 09/11/2026): dal 24/10 Google ha tolto 7 pagine su 10 dall'indice («scansionata, ma non indicizzata», sorgente «Sistemi di Google»), tra cui `ricorso-invalidita/`. Le pagine scartate avevano 100-470 parole di testo; il resto era nelle sottopagine o dietro il pulsante.
+- `ricorso-invalidita/`: da 204 a 837 parole. Passi numerati, i 6 mesi, cosa portare, quanto costa, cosa fare se i 6 mesi sono passati, 5 domande frequenti. Nessun fatto nuovo: tutte le frasi vengono dalle tre sottopagine e da `js/ricorso.js`, con le fonti di `data/rules-ricorso.json`. Titolo h1 con la procedura: «Ricorso contro il verbale di invalidità: come si fa».
+- Se Google la indicizza entro 2-3 settimane, si fa lo stesso con le altre pagine scartate.
+
 ## 02/11/2026 — Legge 104: l'accertamento provvisorio se la visita tarda
 - Mancava, e un sito simile (legge104.it) lo spiega: con la vecchia procedura, se la commissione non decide entro 45 giorni dalla domanda, un medico specialista dell'azienda sanitaria fa un accertamento provvisorio, valido solo per permessi, sede di lavoro e congedo straordinario fino al verbale; alla visita si può chiedere anche un certificato provvisorio. Fonte: D.L. 324/1993, art. 2, commi 2, 3 e 3-quater, letto per intero su Normattiva il 02/11/2026 (45 giorni dal D.L. 90/2014, art. 25 c. 4). Il D.Lgs. 62/2024 non cita il D.L. 324/1993: per il nuovo regime la pagina non ne parla.
 - `data/rules-legge-104.json`: nuovo campo `accertamento_provvisorio_giorni` (45) con la provenienza e la fonte nell'elenco. `legge-104/come-si-ottiene/`: nuovo paragrafo «Se la visita tarda e ti servono i permessi». `legge-104/permessi/`: rimando dal requisito del verbale. `data/moduli.json`: parole della ricerca («certificato provvisorio», «visita in ritardo»). `tests/citazioni.txt`: 5 citazioni rilette sul testo.
