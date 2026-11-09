@@ -2,6 +2,21 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 09/11/2026 — controllo automatico dei contatti
+
+- Copie del 09/11/2026 (branch `copie-siti`): 3364 pagine controllate in 20 regioni.
+- 1717 numeri confermati: il numero c'è nella copia della sua pagina. `verified` ora è 2026-11-09, `proof` resta «pagina». Nessun numero, indirizzo o orario cambiato.
+- Sul sito ora c'è un numero diverso (scritto nel `todo` dell'azienda, decide una persona):
+  - Campania, ASL Napoli 2 Nord, URP: noi 081 18840933, la pagina ha 081 18840226, 081 18840609, 081 18840248, 081 18840763, 081 18840764.
+  - Lazio, ASL Rieti, PUA di Magliano Sabina: noi 0744 912286, la pagina ha 0744 912222.
+  - Lombardia, ASST Melegnano e Martesana, PUA Rozzano: noi 02 9811 8990, la pagina ha 02 9805 8990 e 02 9805 8991.
+  - Sardegna, ASL Medio Campidano, centralino: noi 070 93841, la pagina ha 070 93781.
+  - Alto Adige, guardia medica di Bolzano: noi 0471 438288, la pagina del distretto ha 116117.
+- Pagine che non rispondono o rimandano altrove (numeri lasciati com'erano, `todo` aggiunto): Imola CAD_CAU (rimanda alla home), regione.liguria.it (403, 3 pagine), ASST Bergamo Ovest 68.asp e 642.asp (404), ASP Palermo distretto di Petralia Sottana (errore di rete), sabes.it e asdaa.it servizi (503, 3 pagine), ULSS 8 impegnativa di cura domiciliare (404). Già nei `todo`: ASST Brianza URP (rimanda alla home), San Gerardo di Monza URP (tempo scaduto).
+- Numeri non trovati, ma senza un numero nuovo chiaro: Enna (7 numeri: la copia non ha il testo dei riquadri «Mostra dettagli»), Ragusa (4 PUA, prova «estratto»), centralino di Caltanissetta (prova «estratto»), Ospedale Civico di Palermo (già nel `todo`), Firenze, segretariato sociale Nord Ovest (non c'è più nella home).
+- Orari diversi, da guardare: PUA di Maniago (la pagina dice mercoledì 12.30–15.30, noi 13:30–15:30); URP di Grosseto (la pagina ora dice «da mercoledì 28 ottobre su appuntamento», al 334 6938102); PUA di Augusta (la pagina non ha orari).
+- Link: www.aspvv.it (Vibo Valentia) e www.aslvco.it (Verbano-Cusio-Ossola) rispondono 403; le pagine di asp.cz.it rispondono ma senza titolo.
+
 ## 02/11/2026 — Legge 104: l'accertamento provvisorio se la visita tarda
 - Mancava, e un sito simile (legge104.it) lo spiega: con la vecchia procedura, se la commissione non decide entro 45 giorni dalla domanda, un medico specialista dell'azienda sanitaria fa un accertamento provvisorio, valido solo per permessi, sede di lavoro e congedo straordinario fino al verbale; alla visita si può chiedere anche un certificato provvisorio. Fonte: D.L. 324/1993, art. 2, commi 2, 3 e 3-quater, letto per intero su Normattiva il 02/11/2026 (45 giorni dal D.L. 90/2014, art. 25 c. 4). Il D.Lgs. 62/2024 non cita il D.L. 324/1993: per il nuovo regime la pagina non ne parla.
 - `data/rules-legge-104.json`: nuovo campo `accertamento_provvisorio_giorni` (45) con la provenienza e la fonte nell'elenco. `legge-104/come-si-ottiene/`: nuovo paragrafo «Se la visita tarda e ti servono i permessi». `legge-104/permessi/`: rimando dal requisito del verbale. `data/moduli.json`: parole della ricerca («certificato provvisorio», «visita in ritardo»). `tests/citazioni.txt`: 5 citazioni rilette sul testo.
