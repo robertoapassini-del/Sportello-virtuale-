@@ -164,3 +164,14 @@ test('titoli dei moduli e home: prima la procedura, non solo il problema', () =>
   const frequenti = home.match(/const FREQUENTI = \[([\s\S]*?)\];/)[1];
   assert.ok(!PROBLEMA.test(frequenti), 'js/home.js: «Le domande più frequenti» sono procedure; i problemi vanno in «Qualcosa non va?» (NON_VA)');
 });
+
+// 09/11/2026: sul telefono la home mostrava un muro di testo (descrizione e frase sulla regione) prima delle schede.
+// Sul telefono la fascia in alto resta corta; la frase sulla regione va nel riquadro in fondo.
+test('home sul telefono: le schede subito, senza muro di testo sopra', () => {
+  const css = fs.readFileSync(path.join(SITE, 'css/style.css'), 'utf8');
+  const mobile = css.match(/@media \(max-width: 639px\) \{([\s\S]*?)\n\}/);
+  assert.ok(mobile && /\.home-intro \.home-lead/.test(mobile[1]) && /\.home-intro \.home-copertura/.test(mobile[1]),
+    'css/style.css: sul telefono la descrizione (.home-lead) e la frase sulla regione (.home-copertura) vanno nascoste in alto');
+  const home = fs.readFileSync(path.join(SITE, 'js/home.js'), 'utf8');
+  assert.ok(home.includes('home-copertura-sotto'), 'js/home.js: la frase sulla regione deve restare nel riquadro in fondo (home-copertura-sotto)');
+});

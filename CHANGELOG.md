@@ -2,6 +2,11 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 09/11/2026 — Home sul telefono: le schede subito
+
+- Sul telefono, sopra le schede c'era un muro di testo. Ora in alto restano il titolo, «Siamo volontari» e la regione. La descrizione si nasconde; la frase sulla regione va nel riquadro in fondo (`js/home.js`, `css/style.css`). Controllo nuovo in `tests/errori-noti.test.mjs`.
+- Sul telefono anche le schede delle aree sono più basse (icona e testo più piccoli): se ne vedono di più senza scorrere.
+
 ## 02/11/2026 — Legge 104: l'accertamento provvisorio se la visita tarda
 - Mancava, e un sito simile (legge104.it) lo spiega: con la vecchia procedura, se la commissione non decide entro 45 giorni dalla domanda, un medico specialista dell'azienda sanitaria fa un accertamento provvisorio, valido solo per permessi, sede di lavoro e congedo straordinario fino al verbale; alla visita si può chiedere anche un certificato provvisorio. Fonte: D.L. 324/1993, art. 2, commi 2, 3 e 3-quater, letto per intero su Normattiva il 02/11/2026 (45 giorni dal D.L. 90/2014, art. 25 c. 4). Il D.Lgs. 62/2024 non cita il D.L. 324/1993: per il nuovo regime la pagina non ne parla.
 - `data/rules-legge-104.json`: nuovo campo `accertamento_provvisorio_giorni` (45) con la provenienza e la fonte nell'elenco. `legge-104/come-si-ottiene/`: nuovo paragrafo «Se la visita tarda e ti servono i permessi». `legge-104/permessi/`: rimando dal requisito del verbale. `data/moduli.json`: parole della ricerca («certificato provvisorio», «visita in ritardo»). `tests/citazioni.txt`: 5 citazioni rilette sul testo.

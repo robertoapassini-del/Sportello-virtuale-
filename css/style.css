@@ -394,6 +394,21 @@ table.fields th, table.fields td { border-bottom-color: var(--border); }
 .home-trust { font-size: 0.9rem; color: var(--muted); margin: 0 0 14px; }
 .home-trust strong { color: var(--text); }
 .home-about { margin-top: 24px; }
+/* Sul telefono: niente muro di testo sopra le schede (9/11/2026). Restano titolo, chi siamo e regione;
+   la frase sulla regione va nel riquadro in fondo (js/home.js, about). */
+.home-copertura-sotto { display: none; }
+@media (max-width: 639px) {
+  .home-intro h1 { font-size: 1.6rem; }
+  .home-intro .home-lead, .home-intro .home-copertura { display: none; }
+  .home-intro.page-band { padding: 14px 0 16px; margin-bottom: 16px; }
+  .home-intro .home-trust { font-size: 0.85rem; }
+  .home-copertura-sotto { display: block; }
+  /* Schede delle aree più basse: se ne vedono di più senza scorrere. */
+  .area-grid .btn.choice { min-height: 52px; padding: 12px 14px; gap: 12px; font-size: 1rem; margin-bottom: 8px; }
+  .area-grid .btn.choice .ico { width: 2.4rem; height: 2.4rem; font-size: 1.2rem; }
+  .area-grid .btn.choice .txt { line-height: 1.25; }
+  .area-grid .btn.choice small { font-size: 0.85rem; line-height: 1.3; }
+}
 /* Senza JavaScript si vede il contenuto scritto nella pagina (titolo, descrizione,
    elenco dei moduli); con JavaScript solo «Un momento…» finché la pagina è pronta. */
 /* «pronto» la mette js/common.js quando parte: se lo script non parte (file non arrivato, browser vecchio,
