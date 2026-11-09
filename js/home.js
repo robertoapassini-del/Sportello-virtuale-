@@ -33,8 +33,8 @@ function copertura() {
     ? `${dove} trovi anche i numeri utili e gli uffici della zona per: ${esc(elenco)}.`
     : `${dove} trovi anche i numeri utili.`;
   return r.attiva
-    ? `<p class="home-regione">Le regole nazionali valgono in tutta Italia; quelle di una sola regione lo dicono. ${qui}</p>`
-    : '<p class="home-regione">Le regole nazionali valgono in tutta Italia; quelle di una sola regione lo dicono.</p>';
+    ? `<p class="home-regione home-copertura">Le regole nazionali valgono in tutta Italia; quelle di una sola regione lo dicono. ${qui}</p>`
+    : '<p class="home-regione home-copertura">Le regole nazionali valgono in tutta Italia; quelle di una sola regione lo dicono.</p>';
 }
 
 // Sotto il titolo, la frase che dice a cosa serve il sito (è anche la descrizione per Google: senza, Google
@@ -62,8 +62,10 @@ const results = `
     <div id="q-results" aria-live="polite"></div>
   </section>`;
 
-const about = `
-  <div class="notice info home-about"><p>Tutto quello che serve sapere sulla sanità pubblica, con parole semplici. Ogni informazione viene da una fonte ufficiale. Ogni notte il sito copia le pagine ufficiali e controlla numeri e indirizzi.</p></div>`;
+// Sul telefono la fascia in alto resta corta (titolo, chi siamo, regione) e le schede si vedono subito:
+// la frase sulla regione (copertura) passa qui sotto, nel riquadro finale (css: .home-copertura).
+const about = () => `
+  <div class="notice info home-about">${regioniAttive().length > 1 ? copertura().replace('home-regione home-copertura', 'home-copertura-sotto') : ''}<p>Tutto quello che serve sapere sulla sanità pubblica, con parole semplici. Ogni informazione viene da una fonte ufficiale. Ogni notte il sito copia le pagine ufficiali e controlla numeri e indirizzi.</p></div>`;
 
 // Le domande più frequenti: link d'azione con la freccia verde, come NHS.uk. Prima come si fa (le ricerche più
 // frequenti su Google, docs/ricerche-frequenti.md, punto 3b), poi cosa fare se qualcosa non va (24/10/2026).
@@ -107,7 +109,7 @@ function render() {
     ${results}
     <div class="area-grid">${reg.groups.map((g) => card(`${g.page}/`, g.icon, g.title, g.small)).join('')}</div>
     <div class="home-row">${urgent}${frequent()}</div>
-    ${about}
+    ${about()}
     ${helpBox()}${sourcesBox(fontiNazionali(rulesSources), {})}`;
 }
 
