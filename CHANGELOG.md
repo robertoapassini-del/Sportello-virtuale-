@@ -2,6 +2,23 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 16/11/2026 — controllo automatico dei contatti
+- Copie del server del 16/11/2026 (branch `copie-siti`). Controllate 870 pagine: quelle dei contatti delle aziende e i link `site_url`, `info_url`, `guardia_medica_url`, `pua_url` di tutte le 20 regioni.
+- Confermati 1.718 numeri: sono nella copia della loro pagina. `verified` ora è 2026-11-16, `proof: "pagina"`. Nessun numero, indirizzo o orario cambiato.
+- Numeri diversi sulla pagina ufficiale (un `todo` nell'azienda, decide una persona):
+  - Campania, URP dell'ASL Napoli 2 Nord: nei dati 081 18840933, sulla pagina ora ci sono 081 18840226, 18840609, 18840248, 18840763, 18840764.
+  - Lazio, PUA di Magliano Sabina (ASL Rieti): nei dati 0744 912286, sulla pagina ora c'è 0744 912222. Anche l'orario è diverso: la pagina dice lunedì e giovedì 8.30–14.00, nei dati lunedì e venerdì 8.30–13.30.
+  - Sardegna, centralino dell'ASL Medio Campidano: nei dati 070 93841, sulla pagina «Contatti» ora c'è 070 93781.
+  - Alto Adige, guardia medica di Bolzano: nei dati 0471 438288, sulla pagina del distretto Centro-Piani-Rencio ora c'è il 116117 (piazza Loew Cadonna 12).
+  - Lombardia, PUA di Rozzano: ancora 02 9805.8990 – 02 9805.8991 sulla pagina (già segnalato il 26/10/2026).
+- Pagine non scaricate o spostate (numeri non ricontrollati, un `todo`): ASST Bergamo Ovest, 2 pagine con errore 404 (6 numeri); ASL di Vicenza, pagina dell'impegnativa di cura domiciliare 404; Regione Liguria, 3 pagine con errore 403 (Genova, Imperia, Savona); ASST Monza, pagina URP non risponde; ASST Brianza, URP porta alla homepage; AUSL Imola, pagina CAD_CAU porta alla homepage; ASL TO3, URP porta a `/urp-2/`; ASP di Trapani, homepage porta alle notizie (centralino 0923 805111). Homepage con errore 403: ASP di Vibo Valentia, ASL VCO.
+- Orari e indirizzi diversi, solo segnalati:
+  - Friuli-Venezia Giulia, PUA di Maniago: la pagina dice mercoledì 12.30–15.30, nei dati 13:30–15:30.
+  - Friuli-Venezia Giulia, PUA di San Vito al Tagliamento: la pagina dice via della Bontà 2, nei dati piazzale Linteris 4.
+  - Toscana, URP di Grosseto: dal 28 ottobre riceve su appuntamento (email o 334 6938102); nei dati l'orario 9.30–12.15.
+  - Già noti: Siracusa, PUA di Augusta «16:30»; Enna, orari degli screening e delle cartelle cliniche (pagine fatte con JavaScript).
+- Già noti, solo segnalati: numeri non trovati dell'ASP di Enna (7, pagine con JavaScript), dei PUA di Ragusa (4, `proof: "estratto"`), Ospedale Civico di Palermo, segretariato sociale di Firenze Nord Ovest, CUPP dell'Alto Adige (8, scritto «100 100» col prefisso a parte); titolo vuoto nelle pagine dell'ASP di Catanzaro e nel comunicato sul 116117 (Cosenza, Vibo Valentia).
+
 ## 09/11/2026 — Home sul telefono: le schede subito
 
 - Sul telefono, sopra le schede c'era un muro di testo. Ora in alto restano il titolo, «Siamo volontari» e la regione. La descrizione si nasconde; la frase sulla regione va nel riquadro in fondo (`js/home.js`, `css/style.css`). Controllo nuovo in `tests/errori-noti.test.mjs`.
