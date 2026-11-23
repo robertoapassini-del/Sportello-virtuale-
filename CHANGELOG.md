@@ -2,6 +2,24 @@
 
 Ogni modifica ai file `data/*.json` va annotata qui, con la fonte.
 
+## 23/11/2026 — controllo automatico dei contatti
+- Copie del server del 23/11/2026 (branch `copie-siti`). Controllate 870 pagine: quelle dei contatti delle aziende e i link `site_url`, `info_url`, `guardia_medica_url`, `pua_url` di tutte le 20 regioni.
+- Confermati 1.706 numeri: sono nella copia della loro pagina. `verified` ora è 2026-11-23, `proof: "pagina"`. Nessun numero, indirizzo o orario cambiato.
+- Dubbi (un `todo` nell'azienda, decide una persona):
+  - Numero diverso sulla pagina: Rieti, PUA di Magliano Sabina (nei dati 0744 912286, sulla pagina 0744/ 912222); Medio Campidano, centralino (nei dati 070 93841, sulla pagina 070/93781); Napoli 2 Nord, URP (nei dati 081 18840933, sulla pagina 081 18840226, 609, 248, 763, 764).
+  - Numero sparito: Palermo, archivio cartelle cliniche del Cervello (091 7802080) e di Villa Sofia (091 7804074). La pagina ora dà solo orari, email e il centralino 091 7801111.
+  - Orario diverso: Pordenone, PUA di Maniago (sulla pagina 9–12 e mercoledì 12:30–15:30); Caltanissetta, presidi e ausili di San Cataldo (sulla pagina martedì 9–12:30).
+  - Indirizzo diverso: Pordenone, PUA di San Vito al Tagliamento (sulla pagina «Via della Bontà, 2»; nei dati Piazzale Linteris 4).
+  - Pagine che ora portano alla homepage o a un altro indirizzo (numeri non ricontrollati): Imola, guardia medica (CAD_CAU); Lecce, centralino e 5 guardie mediche (portale sist); Taranto, 4 uffici protesi (portale aress); Torino, URP dell'ASL TO3 (ora `/urp-2/`).
+  - Pagine che non rispondono: Regione Liguria (403: 116117 del Tigullio, CUP Liguria, medici e PUA delle Case di Comunità di Imperia e Savona); ASST Bergamo Ovest (404: centralini, URP, cartelle cliniche, PUA); screening di Trapani (503); homepage dell'ASUGI per Gorizia (nessuna risposta).
+- Dubbi solo segnalati (già noti o senza un numero nuovo):
+  - Lombardia, PUA di Rozzano: sulla pagina c'è ancora 02 9805.8990 – 02 9805.8991 (già nel `todo` del 26/10/2026).
+  - Numeri non trovati, già noti: ASP di Enna (7 numeri, pagine con JavaScript); Palermo, Ospedale Civico cartelle cliniche; Ragusa, 4 PUA; Firenze, segretariato sociale Nord Ovest; Alto Adige, CUPP 100 100 (scritto a parte dal prefisso); Venezia, URP dell'ULSS 4 (la copia è vuota).
+  - Numero non trovato, nuovo ma senza un numero diverso sulla pagina: Alto Adige, guardia medica di Bolzano 0471 438288 (pagina «Centro Piani-Rencio»).
+  - Orari: Grosseto, URP (la pagina non dà più 9.30–12.15: dal 28 ottobre si riceve su appuntamento al 334 6938102, lo stesso numero dei dati); Siracusa, PUA di Augusta (già noto).
+  - Pagine già nel `todo`: ASST Brianza e ASST Monza (URP), ASP di Vibo Valentia e ASL VCO (403).
+  - Titolo vuoto (la pagina risponde 200 e ha il testo): ASP di Catanzaro, homepage, guardia medica e PUA; comunicato sul 116117 usato da Cosenza e Vibo Valentia.
+
 ## 09/11/2026 — Home sul telefono: le schede subito
 
 - Sul telefono, sopra le schede c'era un muro di testo. Ora in alto restano il titolo, «Siamo volontari» e la regione. La descrizione si nasconde; la frase sulla regione va nel riquadro in fondo (`js/home.js`, `css/style.css`). Controllo nuovo in `tests/errori-noti.test.mjs`.
