@@ -1,18 +1,33 @@
 {
  "regione": "friuli-venezia-giulia",
- "aggiornato": "2026-11-23T03:00:52.997Z",
+ "aggiornato": "2026-11-24T02:59:30.326Z",
  "pagine": [
   {
    "asl": "gorizia",
    "url": "https://asugi.sanita.fvg.it/",
-   "controllata": "2026-11-23",
-   "http": 0,
-   "errore": "curl: (28) Operation timed out after 30002 milliseconds with 0 bytes received"
+   "controllata": "2026-11-24",
+   "http": 200,
+   "finale": "https://asugi.sanita.fvg.it/it/",
+   "file": "gorizia/fd037280c738.txt",
+   "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI)",
+   "sha": "37639c3c693c28e4d3e9fe3bd135c3a70e7005ef87de4290961cd3e31290331e",
+   "caratteri": 6715,
+   "link_pdf": [
+    {
+     "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dir_san/all_farma/mat_info/somministrazione_farmaci.pdf",
+     "testo": "Somministrazione farmaci in contesti extrafamiliari (indicazioni operative)"
+    },
+    {
+     "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dip/mat_info/circolare_macellazione.pdf",
+     "testo": "Peste suina africana - Indicazioni per la macellazione 2026/2027"
+    }
+   ],
+   "cambiata": true
   },
   {
    "asl": "gorizia",
    "url": "https://asugi.sanita.fvg.it/it/amm_trasp_asugi/25_percorso_tutela/index.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "gorizia/a443796563a8.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Percorso di Tutela - Diritto di Garanzia",
@@ -37,7 +52,7 @@
   {
    "asl": "gorizia",
    "url": "https://asugi.sanita.fvg.it/it/servizi/gut_numero_unico.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "gorizia/4838597f60ea.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - 116117 Numero Unico Europeo per la Sanità Non Urgente",
@@ -58,7 +73,7 @@
   {
    "asl": "gorizia",
    "url": "https://asugi.sanita.fvg.it/it/servizi/dist_amm_scelta_revoca_mmg_pls.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "gorizia/d3d2756833ae.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Scelta / revoca Medico di Medicina Generale/Pediatria di Libera Scelta",
@@ -107,7 +122,7 @@
   {
    "asl": "gorizia",
    "url": "https://asugi.sanita.fvg.it/it/schede/menu_azienda/azienda_informa/contatti_principali.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "gorizia/a0d70020d9ec.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Contatti principali",
@@ -124,7 +139,7 @@
   {
    "asl": "gorizia",
    "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/sistema-sociale-sanitario/FOGLIA12/articolo.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "gorizia/b8b53e8e83f8.txt",
    "titolo": "Regione Autonoma Friuli Venezia Giulia - 116117 – Numero Europeo Armonizzato (NEA) per cure non urgenti",
@@ -145,7 +160,7 @@
   {
    "asl": "gorizia",
    "url": "https://asugi.sanita.fvg.it/it/schede/pagine_nuove/nuove_pagine/prenota_annulla_esame.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "gorizia/0114c00e1b95.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Prenota, annulla visita o esame",
@@ -162,7 +177,7 @@
   {
    "asl": "gorizia",
    "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/screening-prevenzione-tumori/FOGLIA7/aziende/asugi.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "gorizia/01a82917dd4b.txt",
    "titolo": "Regione Autonoma Friuli Venezia Giulia - Azienda Sanitaria Universitaria Giuliano Isontina",
@@ -173,7 +188,7 @@
   {
    "asl": "gorizia",
    "url": "https://asugi.sanita.fvg.it/it/servizi/dist_richiesta_documentazione.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "gorizia/a87577f3d73e.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Accesso alla documentazione prodotta dal Dipartimento dell'Assistenza Distrettuale",
@@ -198,13 +213,13 @@
   {
    "asl": "gorizia",
    "url": "https://asugi.sanita.fvg.it/it/strutture/direz_sanitaria/dad/area_isontina/go_dist_alto_isontino/pua_ai/",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 404
   },
   {
    "asl": "gorizia",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/amm_trasp_asugi/allegati/016_servizi_erogati/regolamento_diritto_garanzia.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "gorizia/d640fd63d719.txt",
    "titolo": "REGOLAMENTO AZIENDALE PER",
@@ -216,7 +231,7 @@
   {
    "asl": "gorizia",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/amm_trasp_asugi/allegati/001_disposizioni_generali/01_atti_generali/regolamenti/2024_regolamento_diritto_garanzia.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "gorizia/6a8f81a6d174.txt",
    "titolo": "REGOLAMENTO AZIENDALE PER ASSICURARE IL DIRITTO DI GARANZIA",
@@ -228,7 +243,7 @@
   {
    "asl": "gorizia",
    "url": "https://asugi.sanita.fvg.it/it/amm_trasp_asugi/23_liste_attesa/",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "gorizia/b6e841ddb160.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Tempi di attesa",
@@ -317,7 +332,7 @@
   {
    "asl": "gorizia",
    "url": "https://asugi.sanita.fvg.it/it/approfondimenti/onco_screen_regionali.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "gorizia/f4abbe4fc5bf.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Screening regionali per la prevenzione dei tumori",
@@ -338,7 +353,7 @@
   {
    "asl": "gorizia",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dir_amm/moduli/richiesta_cartelle_cliniche_isontina.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "gorizia/3d77a6f1779a.txt",
    "titolo": "Author:          Unknown User",
@@ -350,7 +365,7 @@
   {
    "asl": "gorizia",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dat/moduli/dist_amm_delega_per_sportelli_amministrativi_rev_00.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asugi.sanita.fvg.it/it/servizi/dist_amm_scelta_revoca_mmg_pls.html",
    "http": 200,
    "file": "gorizia/fa4993bb8b91.txt",
@@ -363,7 +378,7 @@
   {
    "asl": "gorizia",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dat/moduli/gen_dich_sost_atto_notorieta_00.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asugi.sanita.fvg.it/it/servizi/dist_amm_scelta_revoca_mmg_pls.html",
    "http": 200,
    "file": "gorizia/93c33f773aa8.txt",
@@ -376,7 +391,7 @@
   {
    "asl": "gorizia",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dat/moduli/dist_amm_mod_scelta_mmg_pls_residenti_editabile.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asugi.sanita.fvg.it/it/servizi/dist_amm_scelta_revoca_mmg_pls.html",
    "http": 200,
    "file": "gorizia/2fc1f9f72539.txt",
@@ -389,7 +404,7 @@
   {
    "asl": "gorizia",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dat/moduli/dist_amm_mod_scelta_mmg_pls_domiciliati_editabile.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asugi.sanita.fvg.it/it/servizi/dist_amm_scelta_revoca_mmg_pls.html",
    "http": 200,
    "file": "gorizia/29d00bc77e16.txt",
@@ -402,7 +417,7 @@
   {
    "asl": "gorizia",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dat/moduli_bilingue/dist_amm_delega_per_sportelli_amministrativi_BILINGUE_rev_00.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asugi.sanita.fvg.it/it/servizi/dist_amm_scelta_revoca_mmg_pls.html",
    "http": 200,
    "file": "gorizia/871a4d3b3468.txt",
@@ -415,7 +430,7 @@
   {
    "asl": "gorizia",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dat/moduli/dist_richiesta_doc_sanitaria_giul_edit.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asugi.sanita.fvg.it/it/servizi/dist_richiesta_documentazione.html",
    "http": 200,
    "file": "gorizia/9180b8765a17.txt",
@@ -428,7 +443,7 @@
   {
    "asl": "gorizia",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dat/moduli/dist_richiesta_doc_sanitaria_ison_edit.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asugi.sanita.fvg.it/it/servizi/dist_richiesta_documentazione.html",
    "http": 200,
    "file": "gorizia/0fafe295041d.txt",
@@ -441,7 +456,7 @@
   {
    "asl": "gorizia",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/amm_trasp_asugi/allegati/016_servizi_erogati/guida_lettura_tda.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asugi.sanita.fvg.it/it/amm_trasp_asugi/23_liste_attesa/",
    "http": 200,
    "file": "gorizia/d039e7b2c255.txt",
@@ -454,7 +469,7 @@
   {
    "asl": "gorizia",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/amm_trasp_asugi/allegati/016_servizi_erogati/spiegazione_metodo_2025.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asugi.sanita.fvg.it/it/amm_trasp_asugi/23_liste_attesa/",
    "http": 200,
    "file": "gorizia/ef6c89e76919.txt",
@@ -467,7 +482,7 @@
   {
    "asl": "gorizia",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dao/moduli/2025_esenzione_esami_screening.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asugi.sanita.fvg.it/it/approfondimenti/onco_screen_regionali.html",
    "http": 200,
    "file": "gorizia/c051f15e7468.txt",
@@ -480,25 +495,25 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "finale": "https://asfo.sanita.fvg.it/it/",
    "file": "pordenone/d6361f40166d.txt",
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Home",
-   "sha": "dc584bca811ff98fc380c392e9b1e10aa26584b31ad6bc6859093753c48fb341",
-   "caratteri": 7015,
+   "sha": "352d33cf6606f9a22018724df306226551cfb7e4cf3e768bd23f88ef2cba6923",
+   "caratteri": 6926,
    "link_pdf": [
     {
      "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/servizi/documenti/Asap/26_08_26-ASAP.PDF",
      "testo": "Asap - Ambulatori Sperimentali Di Assistenza Primaria"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/it/amministrazione_trasparente/16_servizi_erogati/04_liste_attesa.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "pordenone/de55ffec777e.txt",
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Liste di attesa",
@@ -523,7 +538,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/it/servizi/guardia_medica.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "pordenone/d7357607a07e.txt",
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Guardia Medica",
@@ -540,7 +555,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/it/servizi/punto_unico_accesso.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "pordenone/30232872b4a5.txt",
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Anziani/disabili non autosufficienti - Punto Unico di Accesso",
@@ -557,7 +572,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/it/schede/mmg-pls/cambio_medico_online.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "pordenone/202d046dcf92.txt",
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Servizio on line di scelta e revoca",
@@ -574,7 +589,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/it/strutture/direzione_generale/Ufficio-Comunicazione/urp/index.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "pordenone/07bdb36ef7b8.txt",
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Ufficio Relazioni con il Pubblico",
@@ -591,12 +606,12 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/it/news/2026_04_13-01.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "pordenone/1c9a29335f63.txt",
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - 116117 Numero Unico Europeo per la Sanità NON Urgente",
-   "sha": "48b4cded85a50061f2aa5ab581da6b6be4fa4fe40193f59a415af05d9f87879f",
-   "caratteri": 7874,
+   "sha": "b3fe8b64c9459d5634aa02184f9df4ceeb2cfb1572bb684c28937c427a96d730",
+   "caratteri": 7687,
    "link_pdf": [
     {
      "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/servizi/documenti/Asap/26_08_26-ASAP.PDF",
@@ -607,12 +622,12 @@
      "testo": "Informativa sul trattamento dei dati personali 116117"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/it/servizi/prenotazione_prestazioni_ambulatoriali.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "pordenone/d0617c1d0d84.txt",
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Prenotazioni prestazioni sanitarie ambulatoriali in ambito regionale",
@@ -641,7 +656,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/it/strutture/direzione_sanitaria/assist_territ/distretti/punto_unico_accesso/",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "pordenone/d6f66d291357.txt",
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Punto Unico di Accesso - PUA",
@@ -658,7 +673,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/it/avvisi/2026_08_24-00.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "pordenone/df388c9b7069.txt",
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Nuove modalità di contatto dell'Ufficio Anagrafe del Distretto Dolomiti Friulane, operative a partire dal 1 settembre 2026",
@@ -675,7 +690,7 @@
   {
    "asl": "pordenone",
    "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/screening-prevenzione-tumori/FOGLIA7/aziende/asfo.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "pordenone/f42683db18a8.txt",
    "titolo": "Regione Autonoma Friuli Venezia Giulia - Azienda Sanitaria Friuli Occidentale",
@@ -686,7 +701,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/it/servizi/richiesta_documentazione_sanitaria.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "pordenone/797fb03e264e.txt",
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Richiesta documentazione sanitaria",
@@ -719,7 +734,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/it/servizi/contatti.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "pordenone/83746c172214.txt",
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Contatti",
@@ -752,7 +767,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/it/servizi/prenotazione_prestazioni.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "pordenone/2f8e85679269.txt",
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Prenotazione prestazioni e verifica tempi di attesa",
@@ -769,7 +784,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/it/strutture/direzione_sanitaria/assist_territ/distretti/assist_inferm_territ/",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "pordenone/41f98e44de74.txt",
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Assistenza infermieristica territoriale/Domiciliare",
@@ -806,7 +821,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/it/strutture/direzione_sanitaria/assist_territ/distretti/",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "pordenone/5b983f7b31cf.txt",
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Distretti",
@@ -859,7 +874,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/it/schede/sesamo.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "pordenone/6d973f5d18a1.txt",
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - SESAMO",
@@ -884,7 +899,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/amministrazione_trasparente/16_servizi_erogati/_doc/ASFO_Regolamento_aziendale_per_il_diritto_di_garanzia1.0.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "pordenone/1a400a96884d.txt",
    "titolo": "S.C. GESTIONE OPERATIVA Ed. 1 Rev. 3",
@@ -896,7 +911,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/it/schede/screening_prevenzione_tumori.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "pordenone/2cb1a76a9e22.txt",
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Screening per la prevenzione dei tumori",
@@ -925,7 +940,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/it/servizi/cure_intermedie_2.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "pordenone/4fb3774ef419.txt",
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Palliative Cure",
@@ -946,7 +961,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/it/strutture/direzione_sanitaria/assist_territ/rete_cure_intermedie/hospice/",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "pordenone/52d639f7b902.txt",
    "titolo": "Azienda sanitaria Friuli Occidentale (AS FO) - Hospice \"Il Gabbiano\"",
@@ -967,7 +982,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/servizi/documenti/ospedali/richiesta_doc_sanitaria/Modulo-istanza-copia-doc.sanitaria.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asfo.sanita.fvg.it/it/servizi/richiesta_documentazione_sanitaria.html",
    "http": 200,
    "file": "pordenone/170b63b6eba7.txt",
@@ -980,7 +995,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/servizi/documenti/territorio/dapa/dip_dipendenze/gioco_dazzardo_guida_familiarii.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asfo.sanita.fvg.it/it/servizi/contatti.html",
    "http": 200,
    "file": "pordenone/7cd61448c67c.txt",
@@ -993,7 +1008,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/azienda_informa/azienda_informa_allegati/Carte-SID-2026/GUIDA_SID_SILE.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asfo.sanita.fvg.it/it/strutture/direzione_sanitaria/assist_territ/distretti/assist_inferm_territ/",
    "http": 200,
    "file": "pordenone/b354bf6a7ca4.txt",
@@ -1006,7 +1021,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/azienda_informa/azienda_informa_allegati/Carte-SID-2026/GUIDA_SID_TAGLIAMENTO.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asfo.sanita.fvg.it/it/strutture/direzione_sanitaria/assist_territ/distretti/assist_inferm_territ/",
    "http": 200,
    "file": "pordenone/4299c4e7c6ba.txt",
@@ -1019,7 +1034,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/azienda_informa/azienda_informa_allegati/Carte-SID-2026/GUIDA_SID_NONCELLO.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asfo.sanita.fvg.it/it/strutture/direzione_sanitaria/assist_territ/distretti/assist_inferm_territ/",
    "http": 200,
    "file": "pordenone/22a95bfba1ef.txt",
@@ -1032,7 +1047,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/azienda_informa/azienda_informa_allegati/Carte-SID-2026/GUIDA_SID_LIVENZA.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asfo.sanita.fvg.it/it/strutture/direzione_sanitaria/assist_territ/distretti/assist_inferm_territ/",
    "http": 200,
    "file": "pordenone/a9cf036350de.txt",
@@ -1045,7 +1060,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/azienda_informa/azienda_informa_allegati/Carte-SID-2026/GUIDA_SID_DOLOMITI.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asfo.sanita.fvg.it/it/strutture/direzione_sanitaria/assist_territ/distretti/assist_inferm_territ/",
    "http": 200,
    "file": "pordenone/af92faf9c4fc.txt",
@@ -1058,7 +1073,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/servizi/documenti/territorio/dapa/distretti/Modulistica/2024-MOD.-ISCRIZIONE-VOLONTARIA-ASFO-L.213-2023-RICHIESTA-INDICAZIONI.doc.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asfo.sanita.fvg.it/it/strutture/direzione_sanitaria/assist_territ/distretti/",
    "http": 200,
    "file": "pordenone/2c3e920209da.txt",
@@ -1071,7 +1086,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/servizi/documenti/territorio/dapa/distretti/Modulistica/MOD.-E1-AIRE-URGENZE-Dichiarazione-rev2017.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asfo.sanita.fvg.it/it/strutture/direzione_sanitaria/assist_territ/distretti/",
    "http": 200,
    "file": "pordenone/2e2af9a7acbb.txt",
@@ -1084,7 +1099,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/servizi/documenti/territorio/dapa/distretti/Modulistica/MOD.-E1-bis-AIRE-URGENZE-Dichiarazione-per-altri-rev2017.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asfo.sanita.fvg.it/it/strutture/direzione_sanitaria/assist_territ/distretti/",
    "http": 200,
    "file": "pordenone/685341197a2e.txt",
@@ -1097,7 +1112,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/servizi/documenti/territorio/dapa/distretti/Modulistica/MOD.ACCORDI-BILATERALI-temporaneo-soggiorno-estero-rev2025-ASFO.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asfo.sanita.fvg.it/it/strutture/direzione_sanitaria/assist_territ/distretti/",
    "http": 200,
    "file": "pordenone/bd712018513a.txt",
@@ -1110,7 +1125,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/servizi/documenti/territorio/dapa/distretti/Modulistica/MOD.ACCORDI-BILATERALI-situazioni-particolari-rev2025-ASFO.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asfo.sanita.fvg.it/it/strutture/direzione_sanitaria/assist_territ/distretti/",
    "http": 200,
    "file": "pordenone/4a4c79c310cb.txt",
@@ -1123,7 +1138,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/schede/opuscoli_informativi/definitivo-2.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asfo.sanita.fvg.it/it/schede/screening_prevenzione_tumori.html",
    "http": 200,
    "file": "pordenone/19f055895088.txt",
@@ -1136,7 +1151,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/schede/opuscoli_informativi/volantino-hpv-e-pap-definitivo-.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asfo.sanita.fvg.it/it/schede/screening_prevenzione_tumori.html",
    "http": 200,
    "file": "pordenone/62ed088b87c8.txt",
@@ -1149,7 +1164,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/schede/opuscoli_informativi/colon-definitivo.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asfo.sanita.fvg.it/it/schede/screening_prevenzione_tumori.html",
    "http": 200,
    "file": "pordenone/d7efd37682b0.txt",
@@ -1162,7 +1177,7 @@
   {
    "asl": "pordenone",
    "url": "https://asfo.sanita.fvg.it/export/sites/aas5/it/azienda_informa/azienda_informa_allegati/Carta-dei-servizi-2025-Hospice/Carta-servizi-HOSPICE-2025.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asfo.sanita.fvg.it/it/strutture/direzione_sanitaria/assist_territ/rete_cure_intermedie/hospice/",
    "http": 200,
    "file": "pordenone/4708090f1759.txt",
@@ -1175,25 +1190,29 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "finale": "https://asugi.sanita.fvg.it/it/",
    "file": "trieste/fd037280c738.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI)",
-   "sha": "798d370c1b36233e992fd4e20d794365d07237d7715a0342b56111d6f8b7532a",
-   "caratteri": 6710,
+   "sha": "37639c3c693c28e4d3e9fe3bd135c3a70e7005ef87de4290961cd3e31290331e",
+   "caratteri": 6715,
    "link_pdf": [
     {
      "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dir_san/all_farma/mat_info/somministrazione_farmaci.pdf",
      "testo": "Somministrazione farmaci in contesti extrafamiliari (indicazioni operative)"
+    },
+    {
+     "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dip/mat_info/circolare_macellazione.pdf",
+     "testo": "Peste suina africana - Indicazioni per la macellazione 2026/2027"
     }
    ],
-   "cambiata": false
+   "cambiata": true
   },
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/it/amm_trasp_asugi/25_percorso_tutela/index.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/a443796563a8.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Percorso di Tutela - Diritto di Garanzia",
@@ -1218,7 +1237,7 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/it/servizi/gut_numero_unico.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/4838597f60ea.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - 116117 Numero Unico Europeo per la Sanità Non Urgente",
@@ -1239,7 +1258,7 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/it/servizi/dist_amm_scelta_revoca_mmg_pls.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/d3d2756833ae.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Scelta / revoca Medico di Medicina Generale/Pediatria di Libera Scelta",
@@ -1288,7 +1307,7 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/it/schede/menu_azienda/azienda_informa/contatti_principali.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/a0d70020d9ec.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Contatti principali",
@@ -1305,7 +1324,7 @@
   {
    "asl": "trieste",
    "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/sistema-sociale-sanitario/FOGLIA12/articolo.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/b8b53e8e83f8.txt",
    "titolo": "Regione Autonoma Friuli Venezia Giulia - 116117 – Numero Europeo Armonizzato (NEA) per cure non urgenti",
@@ -1326,7 +1345,7 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/it/schede/pagine_nuove/nuove_pagine/prenota_annulla_esame.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/0114c00e1b95.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Prenota, annulla visita o esame",
@@ -1343,7 +1362,7 @@
   {
    "asl": "trieste",
    "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/screening-prevenzione-tumori/FOGLIA7/aziende/asugi.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/01a82917dd4b.txt",
    "titolo": "Regione Autonoma Friuli Venezia Giulia - Azienda Sanitaria Universitaria Giuliano Isontina",
@@ -1354,7 +1373,7 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/it/servizi/dist_richiesta_documentazione.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/a87577f3d73e.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Accesso alla documentazione prodotta dal Dipartimento dell'Assistenza Distrettuale",
@@ -1379,7 +1398,7 @@
   {
    "asl": "trieste",
    "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/sistema-sociale-sanitario/",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/dcae7812c898.txt",
    "titolo": "Regione Autonoma Friuli Venezia Giulia - Sistema sociale e sanitario",
@@ -1484,7 +1503,7 @@
   {
    "asl": "trieste",
    "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/interventi-socio-sanitari/FOGLIA24/",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/b59d54e0b7e7.txt",
    "titolo": "Regione Autonoma Friuli Venezia Giulia - Call center unico 0434 223522 per salute e sociale",
@@ -1495,7 +1514,7 @@
   {
    "asl": "trieste",
    "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/liste-di-attesa/argomento.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/55270edef327.txt",
    "titolo": "Regione Autonoma Friuli Venezia Giulia - Liste di attesa",
@@ -1512,7 +1531,7 @@
   {
    "asl": "trieste",
    "url": "https://arcs.sanita.fvg.it/it/servizio-sanitario-regionale-friuli-venezia-giulia-fvg/cup-regionale/call-center-per-la-prenotazioni-di-visite-ed-esami",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/5bc08799b6af.txt",
    "titolo": "Call center per la Prenotazioni di visite ed esami",
@@ -1529,7 +1548,7 @@
   {
    "asl": "trieste",
    "url": "https://arcs.sanita.fvg.it/it/servizio-sanitario-regionale-friuli-venezia-giulia-fvg/cup-regionale/prenotazione-di-esami-e-visite-ed-annullo",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/3067719cb7c8.txt",
    "titolo": "Prenotazione di esami e visite ed annullo",
@@ -1540,7 +1559,7 @@
   {
    "asl": "trieste",
    "url": "https://arcs.sanita.fvg.it/it/informazioni-per-i-cittadini/come-contattare-il-cup-e-prenotare-una-prestazione-sanitaria",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/52ef2e38ef05.txt",
    "titolo": "Come contattare il CUP e prenotare una prestazione sanitaria? | ARCS",
@@ -1551,7 +1570,7 @@
   {
    "asl": "trieste",
    "url": "https://arcs.sanita.fvg.it/it/notizie/116117-numero-unico-europeo-la-sanita-non-urgente",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/e9365f99946e.txt",
    "titolo": "116117 Numero Unico Europeo per la Sanità NON Urgente | ARCS",
@@ -1562,18 +1581,18 @@
   {
    "asl": "trieste",
    "url": "https://arcs.sanita.fvg.it/it/informazioni-per-i-cittadini/ufficio-relazioni-con-il-pubblico-urp",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/1b09baaf34f9.txt",
    "titolo": "Ufficio Relazioni con il Pubblico - URP",
-   "sha": "1142da6c501d082e8f0463437de067cbf42a0062411d122e1d37e03772d2f98d",
-   "caratteri": 5424,
-   "cambiata": false
+   "sha": "05ebf10667d8a060e3d2e9be53ce0f2d3ac3fc983c98383af49fe0083fa7cc91",
+   "caratteri": 5425,
+   "cambiata": true
   },
   {
    "asl": "trieste",
    "url": "https://arcs.sanita.fvg.it/en/aree-tematiche/sistema-sanitario-regionale/",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "finale": "https://arcs.sanita.fvg.it/it/servizio-sanitario-regionale-friuli-venezia-giulia-fvg/aziende-servizio-sanitario-regionale-fvg",
    "file": "trieste/606b036d7c08.txt",
@@ -1585,7 +1604,7 @@
   {
    "asl": "trieste",
    "url": "https://sesamo.sanita.fvg.it/",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "browser": true,
    "http": 200,
    "finale": "https://sesamo.sanita.fvg.it/sesamo/#/index",
@@ -1598,7 +1617,7 @@
   {
    "asl": "trieste",
    "url": "https://sesamo.sanita.fvg.it/sesamo/res/brochure/html_version/sesamo-brochure-a/pagina-4.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/f1d8b8739708.txt",
    "titolo": "DU FVG Sesamo Support Brochure A",
@@ -1615,7 +1634,7 @@
   {
    "asl": "trieste",
    "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/GEN/amministrazione-trasparente/FOGLIA16/FOGLIA5/",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/aa3c8bc67819.txt",
    "titolo": "Regione Autonoma Friuli Venezia Giulia - Servizi in rete",
@@ -1644,7 +1663,7 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/it/strutture/a_direz_generale/creaus/",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/2027d9d639df.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - SSD Comunicazione, URP, Relazioni Esterne e Ufficio Stampa",
@@ -1669,7 +1688,7 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/it/schede/s_dg_staff/creaus_numeroverde_sanita.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/0f336535efbc.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Numeri Utili",
@@ -1686,7 +1705,7 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/it/servizi/sportelli_cup.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/066a533de9ed.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Accesso agli sportelli CUP",
@@ -1703,7 +1722,7 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/it/news/2026_01_16_numero_unico_servizi_sanitari_non_urgenti.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/a2fb0e03a2de.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - ASUGI: cambia il numero unico per i servizi sanitari non urgenti",
@@ -1720,13 +1739,13 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/it/strutture/direz_sanitaria/dad/area_isontina/go_dist_alto_isontino/pua_ai/",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 404
   },
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/it/schede/pagine_nuove/nuove_pagine/SID.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/fb0246118bd5.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Servizio Infermieristico Domiciliare",
@@ -1743,7 +1762,7 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/it/strutture/direz_serv_sociosan/dad/area_giuliana/SC_Dist_Trieste1/sc_tut_sal_adulti_anziani_d1/ss_cure_amb_dom_d1",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/9e65c1f2608d.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Cure ambulatoriali e domiciliari continuità terapeutica - SC Distretto Trieste 1",
@@ -1760,7 +1779,7 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/it/servizi/index.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/2493a6531e0a.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Tutti i servizi dalla A alla Z",
@@ -1777,13 +1796,13 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/it/schede/medico/dist_amm_iscrizione_SSR.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 404
   },
   {
    "asl": "trieste",
    "url": "https://sesamo.sanita.fvg.it/sesamo/res/brochure/html_version/sesamo-brochure-b/pagina-3-1.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/d9e3eaa986a9.txt",
    "titolo": "DU FVG Sesamo Support Brochure B",
@@ -1794,7 +1813,7 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/it/schede/sesamo.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/7344f3a0032a.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Sesamo",
@@ -1819,7 +1838,7 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/amm_trasp_asugi/allegati/016_servizi_erogati/regolamento_diritto_garanzia.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/d640fd63d719.txt",
    "titolo": "REGOLAMENTO AZIENDALE PER",
@@ -1831,7 +1850,7 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/amm_trasp_asugi/allegati/001_disposizioni_generali/01_atti_generali/regolamenti/2024_regolamento_diritto_garanzia.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/6a8f81a6d174.txt",
    "titolo": "REGOLAMENTO AZIENDALE PER ASSICURARE IL DIRITTO DI GARANZIA",
@@ -1843,7 +1862,7 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/it/amm_trasp_asugi/23_liste_attesa/",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/b6e841ddb160.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Tempi di attesa",
@@ -1932,7 +1951,7 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/it/approfondimenti/onco_screen_regionali.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/f4abbe4fc5bf.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - Screening regionali per la prevenzione dei tumori",
@@ -1953,7 +1972,7 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dss/moduli/cup_mod_rich_cart_clin_rev00.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/e0ac616dd1cc.txt",
    "titolo": "Author:          Unknown User",
@@ -1965,7 +1984,7 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/it/strutture/direz_serv_sociosan/dad/area_giuliana/sc_cure_palliative_hospice/",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "trieste/6d3292c99340.txt",
    "titolo": "Azienda sanitaria universitaria Giuliano Isontina (ASU GI) - SC Rete Cure Palliative e Hospice (Area Giuliana)",
@@ -1994,13 +2013,13 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/carte_dei_servizi/2024_gs_cure_palliative_03.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 500
   },
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dat/moduli/dist_amm_delega_per_sportelli_amministrativi_rev_00.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asugi.sanita.fvg.it/it/servizi/dist_amm_scelta_revoca_mmg_pls.html",
    "http": 200,
    "file": "trieste/fa4993bb8b91.txt",
@@ -2013,7 +2032,7 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dat/moduli/gen_dich_sost_atto_notorieta_00.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asugi.sanita.fvg.it/it/servizi/dist_amm_scelta_revoca_mmg_pls.html",
    "http": 200,
    "file": "trieste/93c33f773aa8.txt",
@@ -2026,7 +2045,7 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dat/moduli/dist_amm_mod_scelta_mmg_pls_residenti_editabile.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asugi.sanita.fvg.it/it/servizi/dist_amm_scelta_revoca_mmg_pls.html",
    "http": 200,
    "file": "trieste/2fc1f9f72539.txt",
@@ -2039,7 +2058,7 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dat/moduli/dist_amm_mod_scelta_mmg_pls_domiciliati_editabile.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asugi.sanita.fvg.it/it/servizi/dist_amm_scelta_revoca_mmg_pls.html",
    "http": 200,
    "file": "trieste/29d00bc77e16.txt",
@@ -2052,7 +2071,7 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dat/moduli_bilingue/dist_amm_delega_per_sportelli_amministrativi_BILINGUE_rev_00.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asugi.sanita.fvg.it/it/servizi/dist_amm_scelta_revoca_mmg_pls.html",
    "http": 200,
    "file": "trieste/871a4d3b3468.txt",
@@ -2065,7 +2084,7 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dat/moduli/dist_richiesta_doc_sanitaria_giul_edit.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asugi.sanita.fvg.it/it/servizi/dist_richiesta_documentazione.html",
    "http": 200,
    "file": "trieste/9180b8765a17.txt",
@@ -2078,7 +2097,7 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dat/moduli/dist_richiesta_doc_sanitaria_ison_edit.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asugi.sanita.fvg.it/it/servizi/dist_richiesta_documentazione.html",
    "http": 200,
    "file": "trieste/0fafe295041d.txt",
@@ -2091,7 +2110,7 @@
   {
    "asl": "trieste",
    "url": "https://www.regione.fvg.it/rafvg/export/sites/default/RAFVG/salute-sociale/sistema-sociale-sanitario/FOGLIA19/allegati/04102024_Guida_alla_comprensione_dei_dati.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/liste-di-attesa/argomento.html",
    "http": 200,
    "file": "trieste/0f169cc0a956.txt",
@@ -2104,7 +2123,7 @@
   {
    "asl": "trieste",
    "url": "https://arcs.sanita.fvg.it/sites/default/files/migrated/documents/2026-02/informativa-cup_1.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://arcs.sanita.fvg.it/it/servizio-sanitario-regionale-friuli-venezia-giulia-fvg/cup-regionale/call-center-per-la-prenotazioni-di-visite-ed-esami",
    "http": 200,
    "file": "trieste/b67dd62d6c6b.txt",
@@ -2117,7 +2136,7 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/carte_dei_servizi/cds_asugi_generale_rev_010.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asugi.sanita.fvg.it/it/strutture/a_direz_generale/creaus/",
    "http": 200,
    "file": "trieste/e30cb20763c1.txt",
@@ -2130,7 +2149,7 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/amm_trasp_asugi/allegati/016_servizi_erogati/guida_lettura_tda.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asugi.sanita.fvg.it/it/amm_trasp_asugi/23_liste_attesa/",
    "http": 200,
    "file": "trieste/d039e7b2c255.txt",
@@ -2143,7 +2162,7 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/amm_trasp_asugi/allegati/016_servizi_erogati/spiegazione_metodo_2025.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asugi.sanita.fvg.it/it/amm_trasp_asugi/23_liste_attesa/",
    "http": 200,
    "file": "trieste/ef6c89e76919.txt",
@@ -2156,7 +2175,7 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/all_dao/moduli/2025_esenzione_esami_screening.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asugi.sanita.fvg.it/it/approfondimenti/onco_screen_regionali.html",
    "http": 200,
    "file": "trieste/c051f15e7468.txt",
@@ -2169,7 +2188,7 @@
   {
    "asl": "trieste",
    "url": "https://asugi.sanita.fvg.it/export/sites/aas1/it/documenti/carte_dei_servizi/2026_gs_cure_palliative_01.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asugi.sanita.fvg.it/it/strutture/direz_serv_sociosan/dad/area_giuliana/sc_cure_palliative_hospice/",
    "http": 200,
    "file": "trieste/d18aa5b3629f.txt",
@@ -2182,7 +2201,7 @@
   {
    "asl": "udine",
    "url": "https://asufc.sanita.fvg.it/",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "finale": "https://asufc.sanita.fvg.it/it/",
    "file": "udine/bff5e064ca36.txt",
@@ -2194,7 +2213,7 @@
   {
    "asl": "udine",
    "url": "https://asufc.sanita.fvg.it/it/amministrazione_trasparente/trasparenza_ASUFC/16_servizi_erogati/04_liste_attesa.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "udine/82bcb4e5f831.txt",
    "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - Liste di attesa",
@@ -2327,7 +2346,7 @@
   {
    "asl": "udine",
    "url": "https://asufc.sanita.fvg.it/it/schede/guardia_medica.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "udine/c64ec20c7cd8.txt",
    "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - Servizio di continuità assistenziale (ex Guardia Medica)",
@@ -2338,7 +2357,7 @@
   {
    "asl": "udine",
    "url": "https://asufc.sanita.fvg.it/it/schede/medici_pediatri/cambio_medico.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "udine/7239975d15d5.txt",
    "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - Scelta o cambio del Medico o del pediatra",
@@ -2349,7 +2368,7 @@
   {
    "asl": "udine",
    "url": "https://asufc.sanita.fvg.it/it/schede/contatti.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "udine/620859679628.txt",
    "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - Contatti",
@@ -2360,7 +2379,7 @@
   {
    "asl": "udine",
    "url": "https://asufc.sanita.fvg.it/it/news/nuovo_numero_unico_vaccinazioni.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "udine/dc6df4e8355e.txt",
    "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - Nuovo numero unico per prenotare le vaccinazioni",
@@ -2371,7 +2390,7 @@
   {
    "asl": "udine",
    "url": "https://asufc.sanita.fvg.it/it/news/116117.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "udine/af13b12ad9af.txt",
    "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - Attivazione del servizio 116117 dal 13 aprile 2026",
@@ -2388,7 +2407,7 @@
   {
    "asl": "udine",
    "url": "https://arcs.sanita.fvg.it/it/informazioni-per-i-cittadini/come-contattare-il-cup-e-prenotare-una-prestazione-sanitaria",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "udine/52ef2e38ef05.txt",
    "titolo": "Come contattare il CUP e prenotare una prestazione sanitaria? | ARCS",
@@ -2399,7 +2418,7 @@
   {
    "asl": "udine",
    "url": "https://asufc.sanita.fvg.it/de/strutture/dir_generale/strut_staff_dir_gen/ufficio_comunicazione/",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "udine/997e2e0ebcd1.txt",
    "titolo": "Sanitäre integrierte Universitätseinrichtung - Comunicazione e URP (Ufficio Relazioni con il Pubblico)",
@@ -2448,7 +2467,7 @@
   {
    "asl": "udine",
    "url": "https://asufc.sanita.fvg.it/it/servizi/anagrafe_sanitaria.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "udine/28fb6a5e452a.txt",
    "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - Anagrafe sanitaria, mobilità internazionale",
@@ -2459,7 +2478,7 @@
   {
    "asl": "udine",
    "url": "https://asufc.sanita.fvg.it/it/strutture/dir_sanitaria/dipartimento_prevenzione/screening_mal_cronico-degenerative/segreteria-screening.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "udine/d616d3fa1dec.txt",
    "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - Segreteria unica - Screening",
@@ -2470,7 +2489,7 @@
   {
    "asl": "udine",
    "url": "https://asufc.sanita.fvg.it/it/schede/cup.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "udine/e83a9f6fd870.txt",
    "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - CUP (Centro Unico di prenotazione) degli Ospedali - orari sportelli e sedi",
@@ -2481,7 +2500,7 @@
   {
    "asl": "udine",
    "url": "https://asufc.sanita.fvg.it/it/servizi/infermiere_comunita.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "udine/f742ae4079f7.txt",
    "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - Richiesta assistenza infermieristica",
@@ -2492,7 +2511,7 @@
   {
    "asl": "udine",
    "url": "https://asufc.sanita.fvg.it/it/schede/cdc.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "udine/a7b6fdfe6e0c.txt",
    "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - Casa della Comunità",
@@ -2503,7 +2522,7 @@
   {
    "asl": "udine",
    "url": "https://asufc.sanita.fvg.it/it/schede/distretti.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "udine/7b971fd96b2e.txt",
    "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - Distretti sanitari",
@@ -2520,7 +2539,7 @@
   {
    "asl": "udine",
    "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/liste-di-attesa/argomento.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "udine/55270edef327.txt",
    "titolo": "Regione Autonoma Friuli Venezia Giulia - Liste di attesa",
@@ -2537,7 +2556,7 @@
   {
    "asl": "udine",
    "url": "https://asufc.sanita.fvg.it/export/sites/asufc/it/amministrazione_trasparente/documenti_AT/16_servizi-erogati/liste_attesa/2024_706_regolamento_diritto_garanzia_REG.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "udine/b49486fb021e.txt",
    "titolo": "Versione n. 0.1",
@@ -2549,7 +2568,7 @@
   {
    "asl": "udine",
    "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/screening-prevenzione-tumori/FOGLIA1/",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "udine/3318ce395717.txt",
    "titolo": "Regione Autonoma Friuli Venezia Giulia - Il programma di screening",
@@ -2560,7 +2579,7 @@
   {
    "asl": "udine",
    "url": "https://asufc.sanita.fvg.it/export/sites/asufc/it/amministrazione_trasparente/documenti_AT/13_bilanci/2025_1184_PA2026_def-liste-attesa.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "udine/138684a4ab62.txt",
    "titolo": "PROGRAMMA ATTUATIVO AZIENDALE SUL",
@@ -2572,7 +2591,7 @@
   {
    "asl": "udine",
    "url": "https://asufc.sanita.fvg.it/it/strutture/dir_sanitaria/dip_assistenza_territoriale/distretto_udine/serv_ammin_ud/cup_dist_ud/index.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "udine/bc1a1b14d0e2.txt",
    "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - Centro unico di prenotazione (CUP) - Udine",
@@ -2583,7 +2602,7 @@
   {
    "asl": "udine",
    "url": "https://asufc.sanita.fvg.it/it/strutture/dir_sanitaria/dip_assistenza_territoriale/00_cure_palliative/",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "udine/201250116116.txt",
    "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - SOC Cure Palliative",
@@ -2594,7 +2613,7 @@
   {
    "asl": "udine",
    "url": "https://asufc.sanita.fvg.it/it/strutture/dir_sanitaria/dip_assistenza_territoriale/00_cure_palliative/hospice_UD/index.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "udine/140fc7d4d6ba.txt",
    "titolo": "Azienda sanitaria universitaria Friuli Centrale (ASU FC) - Hospice Udine",
@@ -2611,7 +2630,7 @@
   {
    "asl": "udine",
    "url": "https://asufc.sanita.fvg.it/export/sites/asufc/it/documenti/DMO_Santa-Maria/ALL_02_Modulo_rich_copia_cartella_docum_SMM.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "udine/77efa5515da0.txt",
    "titolo": "PRESIDIO OSPEDALIERO ALL_02_DMPUD_PR_18",
@@ -2623,7 +2642,7 @@
   {
    "asl": "udine",
    "url": "https://asufc.sanita.fvg.it/export/sites/asufc/it/strutture/dir_sanitaria/dip_assistenza_territoriale/distretto_udine/Distretto-Friuli-Centrale-cds_cure-domiciliari.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "udine/10c58de7f2d6.txt",
    "titolo": "Guida ai servizi cure domiciliari",
@@ -2635,7 +2654,7 @@
   {
    "asl": "udine",
    "url": "https://asufc.sanita.fvg.it/export/sites/asufc/it/amministrazione_trasparente/documenti_AT/16_servizi-erogati/liste_attesa/tempi_spec-amb_spiegazione-metodo.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asufc.sanita.fvg.it/it/amministrazione_trasparente/trasparenza_ASUFC/16_servizi_erogati/04_liste_attesa.html",
    "http": 200,
    "file": "udine/e3feb3d18d71.txt",
@@ -2648,7 +2667,7 @@
   {
    "asl": "udine",
    "url": "https://asufc.sanita.fvg.it/export/sites/asufc/it/strutture/dir_amministrativa/00_dip-to_affgen_e_org_amm_osp/AGO/ufficio_comunicazione/2025_Modulo-reclamo-ASUFC.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asufc.sanita.fvg.it/de/strutture/dir_generale/strut_staff_dir_gen/ufficio_comunicazione/",
    "http": 200,
    "file": "udine/fee50b487b8e.txt",
@@ -2661,7 +2680,7 @@
   {
    "asl": "udine",
    "url": "https://asufc.sanita.fvg.it/export/sites/asufc/it/strutture/dir_amministrativa/00_dip-to_affgen_e_org_amm_osp/AGO/ufficio_comunicazione/richiesta_rimborso_ASUFC.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asufc.sanita.fvg.it/de/strutture/dir_generale/strut_staff_dir_gen/ufficio_comunicazione/",
    "http": 200,
    "file": "udine/3fcba4a4d853.txt",
@@ -2674,7 +2693,7 @@
   {
    "asl": "udine",
    "url": "https://asufc.sanita.fvg.it/export/sites/asufc/it/documenti/modulo_delega_asufc.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asufc.sanita.fvg.it/de/strutture/dir_generale/strut_staff_dir_gen/ufficio_comunicazione/",
    "http": 200,
    "file": "udine/0df89a249c60.txt",
@@ -2687,7 +2706,7 @@
   {
    "asl": "udine",
    "url": "https://asufc.sanita.fvg.it/export/sites/asufc/it/amministrazione_trasparente/trasparenza_ASUFC/01_disposizioni_generali/02_atti_generali/011_atti_generali_def/06_regolamenti/categoria1/2026_525_regolamento_pubblica_tutela_20260520.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asufc.sanita.fvg.it/de/strutture/dir_generale/strut_staff_dir_gen/ufficio_comunicazione/",
    "http": 200,
    "file": "udine/5f8e42f84fc6.txt",
@@ -2700,7 +2719,7 @@
   {
    "asl": "udine",
    "url": "https://asufc.sanita.fvg.it/export/sites/asufc/it/documenti/2026_GS_GUARDIA-MEDICA_APRILE-2026-116117.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asufc.sanita.fvg.it/it/schede/distretti.html",
    "http": 200,
    "file": "udine/1477a7bbd379.txt",
@@ -2713,7 +2732,7 @@
   {
    "asl": "udine",
    "url": "https://www.regione.fvg.it/rafvg/export/sites/default/RAFVG/salute-sociale/sistema-sociale-sanitario/FOGLIA19/allegati/04102024_Guida_alla_comprensione_dei_dati.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://www.regione.fvg.it/rafvg/cms/RAFVG/salute-sociale/liste-di-attesa/argomento.html",
    "http": 200,
    "file": "udine/0f169cc0a956.txt",
@@ -2726,7 +2745,7 @@
   {
    "asl": "udine",
    "url": "https://asufc.sanita.fvg.it/export/sites/asufc/it/strutture/dir_sanitaria/guide_servizi_ASUFC/2026_Hospice.pdf",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "da_pagina": "https://asufc.sanita.fvg.it/it/strutture/dir_sanitaria/dip_assistenza_territoriale/00_cure_palliative/hospice_UD/index.html",
    "http": 200,
    "file": "udine/8ec8e20148df.txt",
@@ -2739,7 +2758,7 @@
   {
    "asl": "regole",
    "url": "https://sesamo.sanita.fvg.it/",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "browser": true,
    "http": 200,
    "finale": "https://sesamo.sanita.fvg.it/sesamo/#/index",
@@ -2752,7 +2771,7 @@
   {
    "asl": "inps-friuli-venezia-giulia",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.350000.350000-elencoStruttureInps.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "inps-friuli-venezia-giulia/0f101ec543ae.txt",
    "titolo": "Portale Inps - Gorizia",
@@ -2763,7 +2782,7 @@
   {
    "asl": "inps-friuli-venezia-giulia",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.930000.930000-elencoStruttureInps.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "inps-friuli-venezia-giulia/c931a590907a.txt",
    "titolo": "Portale Inps - Pordenone",
@@ -2774,7 +2793,7 @@
   {
    "asl": "inps-friuli-venezia-giulia",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.850000.850000-elencoStruttureInps.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "inps-friuli-venezia-giulia/e8aa2b14ff29.txt",
    "titolo": "Portale Inps - Trieste",
@@ -2785,7 +2804,7 @@
   {
    "asl": "inps-friuli-venezia-giulia",
    "url": "https://www.inps.it/it/it/sedi-e-contatti/sedi/ricerca-sede/dettaglio-sedi.it.sezione-sedi.sedi-inps.860000.860000-elencoStruttureInps.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "inps-friuli-venezia-giulia/8e83496db5da.txt",
    "titolo": "Portale Inps - Udine",
@@ -2796,7 +2815,7 @@
   {
    "asl": "inps-friuli-venezia-giulia",
    "url": "https://www.disabilita.governo.it/it/notizie/individuate-le-9-province-per-sperimentare-la-riforma-disabilita/",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "inps-friuli-venezia-giulia/4016319a363c.txt",
    "titolo": "Individuate le 9 province per sperimentare la riforma disabilità",
@@ -2807,7 +2826,7 @@
   {
    "asl": "inps-friuli-venezia-giulia",
    "url": "https://www.disabilita.governo.it/it/notizie/individuate-le-altre-11-province-per-la-sperimentazione-della-riforma-della-disabilita/",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "inps-friuli-venezia-giulia/49a147b501cb.txt",
    "titolo": "Individuate le altre 11 province per la sperimentazione della riforma della disabilità",
@@ -2818,7 +2837,7 @@
   {
    "asl": "inps-friuli-venezia-giulia",
    "url": "https://www.disabilita.governo.it/it/notizie/al-via-sperimentazione-riforma-disabilita-in-altre-40-province/",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "inps-friuli-venezia-giulia/cb8037740243.txt",
    "titolo": "Al via sperimentazione riforma disabilità in altre 40 province",
@@ -2829,7 +2848,7 @@
   {
    "asl": "inps-friuli-venezia-giulia",
    "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.02.riforma-della-disabilit-al-via-la-terza-fase-sperimentale.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "inps-friuli-venezia-giulia/aad63b63390a.txt",
    "titolo": "Portale Inps - Riforma della disabilità: al via la terza fase sperimentale",
@@ -2840,7 +2859,7 @@
   {
    "asl": "medico-online",
    "url": "https://sesamo.sanita.fvg.it/sesamo/res/brochure/html_version/sesamo-brochure-b/pagina-3.html",
-   "controllata": "2026-11-23",
+   "controllata": "2026-11-24",
    "http": 200,
    "file": "medico-online/376f11980454.txt",
    "titolo": "DU FVG Sesamo Support Brochure B",
