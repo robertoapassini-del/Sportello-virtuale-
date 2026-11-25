@@ -104,6 +104,30 @@ Rilevata campagna di phishing ai danni degli utenti del Sistema Tessera Sanitari
 Attenzione, si è venuti a conoscenza di una campagna di phishing attraverso un sito contraffatto del Sistema Tessera Sanitaria. L’operazione sfrutta riferimenti al Ministero dell’Economia e delle Finanze (MEF) per sottrarre credenziali SPID, codici OTP e documenti personali degli operatori sanitari. Si ricorda che il sistema Tessera Sanitaria, l'Anagrafe nazionale degli assistiti e i sistemi di fascicolo sanitario elettronico non richiedono mai attraverso e-mail la fornitura di dati personali .
 Si raccomanda la massima attenzione!
 
+RICETTA A CARICO SSN NON DEMATERIALIZZATA (RICETTA ROSSA)
+
+A seguito dell'attuazione del Regolamento (E) 2016/161, recepito nell'ordinamento italiano dal Decreto Legislativo n. 10 del 6 febbraio 2025, che integra la Direttiva 2001/83/CE, viene introdotto l'obbligo di serializzazione e di sistemi di sicurezza per i medicinali ad uso umano , in linea con gli standard europei di contrasto alla contraffazione.
+
+Cosa è stato definito : Il Decreto Ministeriale 6 marzo 2025, pubblicato nella Gazzetta Ufficiale n. 84 del 10 aprile 2025, ha definito i dati obbligatori da includere nel codice GS1 Data Matrix , realizzato secondo lo standard ISO/IEC 16022:2006.
+
+Tale c odice costituisce l'identificativo univoco da apporre sui medicinali per uso umano , in attuazione dell'articolo 3, comma 3 del D.Lgs. n. 10/2025.
+
+La tracciabilità dei medicinali è garantita attraverso la Banca Dati Nazionale degli identificativi univoci, gestita da NMVO Italia in collaborazione con l'Istituto Poligrafico e Zecca dello Stato (IPZS) e interconnessa con l'Hub europeo di verifica, consentendo il controllo e la validazione dei codici lungo la filiera distributiva.
+
+Web Service per le operazioni di dispensazione dei Data Matrix dei farmaci - (aggiornato al 18/11/2026)
+
+Tracciato wsdl ricettarossa (aggiornato il 10/11/2026)
+
+TESSERA SANITARIA
+Aggiornamento del software di gestione delle Tessere Sanitarie con le sigle ACe 2021 e ACx 2021
+
+Gli utenti in possesso di tessere sanitarie con le sigle ACe 2021 e ACx 2021 che hanno riscontrato problemi di accesso ai servizi online, possono scaricare e aggiornare la nuova versione del software di gestione della carta. Il download si può effettuare dalla pagina Elenco driver - Sistema Tessera Sanitaria oppure si può procedere con l’installazione del nuovo driver utilizzando l’applicazione “ Download driver ”. Procedere rimuovendo il driver precedentemente installato.
+
+Ricetta a carico SSN
+Autenticazione a 2 fattori
+
+Si informa che l’autenticazione esclusiva a 2 o più fattori per il servizio di PRESCRIZIONE della ricetta SSN dematerializzata , sia da applicazione web che da web-services (SAR compresi), sarà obbligatoria a partire dal giorno giovedì 30 aprile 2026 .
+
 Precedente Successivo
 
 Il Sistema TS
